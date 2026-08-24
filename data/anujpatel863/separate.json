@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anujpatel863/Separate",
+  "slug": "anujpatel863-separate",
+  "author": "anujpatel863",
+  "url": "https://huggingface.co/anujpatel863/Separate",
+  "created_at": "2025-12-10T06:54:24.000Z",
+  "updated_at": "2026-08-23T16:02:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31560184301,
+  "storage_human": "31.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI 3D Model Segmentation - Split a Model into Parts | AI 3D Model",
+      "url": "https://ai3dmodel.app/segmentation",
+      "snippet": "Split any 3D model or STL into separate, editable parts with AI 3D model segmentation — ready for editing, rigging, and 3D printing in seconds."
+    },
+    {
+      "title": "AI Mesh Segmentation Tool - Separate 3D Model Parts Online - 3D AI Studio",
+      "url": "https://www.3daistudio.com/Tools/SegmentationTool",
+      "snippet": "AI-powered mesh segmentation tool for 3D models. Automatically separate GLB, STL and OBJ models into logical parts with optional printable joints for editing, 3D printing, and game development."
+    },
+    {
+      "title": "AI 3D Model Segmentation | Auto Split 3D Models",
+      "url": "https://www.neural4d.com/features/ai-model-segmentation",
+      "snippet": "Automatically split complex 3D models into clean, watertight parts in seconds with AI 3D Model Segmentation for texturing, animation, and 3D printing."
+    },
+    {
+      "title": "Anthropic said its AI models hacked into other companies ... - CNN",
+      "url": "https://www.cnn.com/2026/07/30/tech/anthropic-ai-models-break-out-hack",
+      "snippet": "AI company Anthropic says that during routine testing some of its models accessed the internet and hacked into three separate organizations&#x27; systems - and that it didn&#x27;t notice the models ..."
+    },
+    {
+      "title": "Anuj Patel — Data-Driven Solutions",
+      "url": "https://anujpatel04.me/",
+      "snippet": "I build data-driven solutions — from machine learning models to backend systems and applied AI products."
+    }
+  ]
+}

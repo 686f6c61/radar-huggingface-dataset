@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "alibaba-pai/SearchQwen2.5-3B",
+  "slug": "alibaba-pai-searchqwen2-5-3b",
+  "author": "alibaba-pai",
+  "url": "https://huggingface.co/alibaba-pai/SearchQwen2.5-3B",
+  "created_at": "2026-08-24T09:44:17.000Z",
+  "updated_at": "2026-08-24T09:51:54.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "search-agent",
+    "tool-use",
+    "function-calling",
+    "react",
+    "deep-search",
+    "qwen",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805678896,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba AI models hit 3 billion downloads, passing Meta, Google",
+      "url": "https://fortune.com/2026/08/15/alibaba-qwen-open-ai-models-3-billion-downloads-meta-google/",
+      "snippet": "Qwen, Alibaba&#x27;s family of AI models, has open-sourced more than 460 models and its ecosystem has spawned 300,000-plus derivatives."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Model Launch Native 30-second AI video generation from any input Images, text, video, audio, documents, and web pages can all become creative references. Direct characters, scenes, camera, dialogue, and sound through one creative intent. Explore More"
+    },
+    {
+      "title": "Qwen - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1",
+      "snippet": "Qwen-Image is an image foundation model that excels in complex text rendering and precise image editing, preserving both semantic meaning and visual realism of images while achieving leading performance across diverse generation and editing tasks."
+    },
+    {
+      "title": "Alibaba Cloud Unveils Qwen2.5, Full-Stack AI Infrastructure ...",
+      "url": "https://www.alibabagroup.com/document-1773855135127044096",
+      "snippet": "Alibaba Cloud released its latest large language model Qwen2.5 during the company&#x27;s annual flagship event Apsara in Hangzhou on Thursday. The new model has significantly more knowledge and greatly improved coding and mathematics capabilities, and is better at instruction following, long text generation, understanding structured data and generating structured outputs. Additionally, Alibaba ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

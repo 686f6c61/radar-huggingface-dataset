@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Abdoul0/mistral-7b-french-gguf",
+  "slug": "abdoul0-mistral-7b-french-gguf",
+  "author": "Abdoul0",
+  "url": "https://huggingface.co/Abdoul0/mistral-7b-french-gguf",
+  "created_at": "2026-08-24T08:33:02.000Z",
+  "updated_at": "2026-08-24T08:33:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mistral",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815648,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/Mistral-7B-v0.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF",
+      "snippet": "Mistral 7B v0.1 - GGUF Model creator: Mistral AI Original model: Mistral 7B v0.1 Description This repo contains GGUF format model files for Mistral AI&#x27;s Mistral 7B v0.1. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. Here is an incomplate list of clients and libraries that are known ..."
+    },
+    {
+      "title": "TheBloke/Mistral-7B-Instruct-v0.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF",
+      "snippet": "Mistral 7B Instruct v0.1 - GGUF Model creator: Mistral AI Original model: Mistral 7B Instruct v0.1 Description This repo contains GGUF format model files for Mistral AI&#x27;s Mistral 7B Instruct v0.1. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. Here is an incomplate list of clients ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - inferless/mistral-7b: A 7B autoregressive language model by ...",
+      "url": "https://github.com/inferless/mistral-7B",
+      "snippet": "Mistral 7B is a powerful language model released by Mistral AI, boasting 7.3 billion parameters. This model outperforms other models like Llama 2 13B and Llama 1 34B on various benchmarks. Mistral 7B excels in tasks such as mathematics, code generation, and reasoning due to its innovative features like Grouped-query Attention (GQA) for faster inference and Sliding Window Attention (SWA) for ..."
+    },
+    {
+      "title": "GitHub - vijaywalter/mistral-7b-instruct",
+      "url": "https://github.com/vijaywalter/mistral-7b-instruct",
+      "snippet": "Original model card: Mistral AI&#x27;s Mistral 7B Instruct v0.1 Model Card for Mistral-7B-Instruct-v0.1 The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets."
+    }
+  ]
+}

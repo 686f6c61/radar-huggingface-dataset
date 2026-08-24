@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SoloScript/Pulsar-Star",
+  "slug": "soloscript-pulsar-star",
+  "author": "SoloScript",
+  "url": "https://huggingface.co/SoloScript/Pulsar-Star",
+  "created_at": "2026-08-23T12:12:04.000Z",
+  "updated_at": "2026-08-23T12:12:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - m-m-s-b-s/pulsar-star-classification: Binary classification of ...",
+      "url": "https://github.com/m-m-s-b-s/pulsar-star-classification",
+      "snippet": "Radio surveys record millions of candidate signals, but only about 9% are real pulsars — the rest is noise and radio frequency interference. Manually checking each candidate doesn&#x27;t scale, which makes this a natural machine learning problem: can a model reliably tell real pulsars apart from noise?"
+    },
+    {
+      "title": "GitHub - masongrizchel/SHAP-Pulsar-Classifier: Pulsar Star ...",
+      "url": "https://github.com/masongrizchel/SHAP-Pulsar-Classifier",
+      "snippet": "SHAP-Pulsar-Classifier: Pulsar Star Classification with Explainable AI (SHAP) This repository contains a Python script that trains a machine learning model to classify pulsar star candidates and uses the SHAP library to make the model&#x27;s predictions interpretable."
+    },
+    {
+      "title": "pulsar star AI Models | Civitai",
+      "url": "https://civitai.com/tag/pulsar%20star",
+      "snippet": "Browse 4 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with pulsar star."
+    },
+    {
+      "title": "GitHub - astorise/Pulsar: A sovereign, local-first AI coding agent. An ...",
+      "url": "https://github.com/astorise/Pulsar",
+      "snippet": "A sovereign, local-first AI coding agent. An open-source alternative to Claude Code leveraging tiered multi-GPU inference, WASM FaaS, and hierarchical Viking context to reason over massive codebases without leaving your hardware. - astorise/Pulsar"
+    },
+    {
+      "title": "SoloScript (Mohd Meeran) - Hugging Face",
+      "url": "https://huggingface.co/SoloScript",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 25 days ago ... published a model 25 days ago"
+    }
+  ]
+}

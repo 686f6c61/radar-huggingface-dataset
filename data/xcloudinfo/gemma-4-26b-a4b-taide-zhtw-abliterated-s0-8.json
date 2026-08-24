@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.8",
+  "slug": "xcloudinfo-gemma-4-26b-a4b-taide-zhtw-abliterated-s0-8",
+  "author": "xCloudinfo",
+  "url": "https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.8",
+  "created_at": "2026-08-23T15:23:14.000Z",
+  "updated_at": "2026-08-23T15:30:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "taide",
+    "traditional-chinese",
+    "zh-tw",
+    "abliterated",
+    "uncensored",
+    "xcloudinfo",
+    "image-text-to-text",
+    "conversational",
+    "zh",
+    "base_model:xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW",
+    "base_model:finetune:xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179678,
+  "storage_human": "51.6 GB",
+  "base_model": "xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-23T16:54:11.594Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW · Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW",
+      "snippet": "繁體中文（台灣）多模態模型。以 google/gemma-4-26B-A4B-it （26B 總參 / A4B≈4B 活躍 / 128-expert MoE / text+vision）為基底， 用 TAIDE （taide/Gemma-3-TAIDE-12b-Chat）蒸餾的台灣繁中 self-instruct 資料做 bf16 LoRA SFT， 保留原生影像辨識能力 （LoRA 僅作用於 language_model，vision tower 未更動）。"
+    },
+    {
+      "title": "Gemma-4-26B-A4B-TAIDE-zhTW-GGUF - Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v1",
+      "snippet": "Abstract We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters. Alongside improved vision and audio encoders for all model sizes, we propose a unified, encoder-free ..."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Note: LiteRT-LM supports E2B and E4B models today, with support for larger models coming soon. Gemma 4 ..."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Hob-forge/smeagle-4b",
+  "slug": "hob-forge-smeagle-4b",
+  "author": "Hob-forge",
+  "url": "https://huggingface.co/Hob-forge/smeagle-4b",
+  "created_at": "2026-08-23T10:01:46.000Z",
+  "updated_at": "2026-08-23T12:32:13.000Z",
+  "license": "hobforge-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "agentic",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "code",
+    "terminal",
+    "swe",
+    "qwen3.5",
+    "small-models",
+    "edge",
+    "llama.cpp",
+    "ollama",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 14118481024,
+  "storage_human": "14.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Editions - a Hob-forge Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Hob-forge/editions",
+      "snippet": "Existing models, set up correctly for small GPUs and modest RAM — imatrix GGUF ladders, measured budgets, tested configs, full RUNNING.md support."
+    },
+    {
+      "title": "Mage Flow AI Image Generator | 4B Image Model",
+      "url": "https://mageflow.org/",
+      "snippet": "Explore the Mage Flow AI image generator, also searched as mage-flow, a 4B Microsoft image model for native-resolution text-to-image generation and image editing."
+    },
+    {
+      "title": "Hob-forge/Qwen3.5-4B-Instruct-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Hob-forge/Qwen3.5-4B-Instruct-GGUF/tree/main",
+      "snippet": "LM Studio Jan vLLM How to use Hob-forge/Qwen3.5-4B-Instruct-GGUF with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "TRELLIS-2: Free AI Image to 3D Model Generator | Microsoft Open-Source ...",
+      "url": "https://trellis-2.org/",
+      "snippet": "Transform any image into stunning 3D assets with TRELLIS-2, Microsoft&#x27;s revolutionary 4B-parameter open-source AI model. Generate high-fidelity 3D with PBR materials in seconds."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Eddy-Emmanuel/churro-3B-road_v3",
+  "slug": "eddy-emmanuel-churro-3b-road_v3",
+  "author": "Eddy-Emmanuel",
+  "url": "https://huggingface.co/Eddy-Emmanuel/churro-3B-road_v3",
+  "created_at": "2026-08-24T08:39:46.000Z",
+  "updated_at": "2026-08-24T08:39:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176995539,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eddy-Emmanuel/churro-3B-road · Hugging Face",
+      "url": "https://huggingface.co/Eddy-Emmanuel/churro-3B-road",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - stanford-oval/Churro: CHURRO is an OCR toolkit for historical ...",
+      "url": "https://github.com/stanford-oval/Churro/tree/main/",
+      "snippet": "🤗 Model • 🗂️ Dataset • 📄 Paper 📚 Docs • 🏆 Leaderboard • Churro is the fastest way to turn hard-to-read historical scans into reliable text. It gives researchers, libraries, archives, and product teams a unified OCR toolkit for handwritten and printed sources, combining high accuracy, low operating cost, and a clean Python API and CLI workflow."
+    },
+    {
+      "title": "Churro - a stanford-oval Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/stanford-oval/churro",
+      "snippet": "Dataset and model for handwritten and print text recognition in historical documents"
+    },
+    {
+      "title": "Churro: Making History Readable with an Open-Weight Large Vision ...",
+      "url": "https://arxiv.org/html/2509.19768v1",
+      "snippet": "This paper presents Churro, a 3B-parameter open-weight VLM specialized for historical text recognition. The model is trained on Churro-DS 1, the largest historical text recognition dataset to date."
+    },
+    {
+      "title": "Churro: Historical Text Recognition Model",
+      "url": "https://www.emergentmind.com/topics/churro",
+      "snippet": "Churro is an open 3B-parameter vision-language model fine-tuned on Churro-DS to transcribe complex historical documents with high accuracy and cost-efficiency."
+    }
+  ]
+}

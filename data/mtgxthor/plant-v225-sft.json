@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MTGxTHOR/plant-v225-sft",
+  "slug": "mtgxthor-plant-v225-sft",
+  "author": "MTGxTHOR",
+  "url": "https://huggingface.co/MTGxTHOR/plant-v225-sft",
+  "created_at": "2026-08-24T10:56:11.000Z",
+  "updated_at": "2026-08-24T10:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269596520,
+  "storage_human": "270 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MTGxTHOR (SHAIK MUkthar) - Hugging Face",
+      "url": "https://huggingface.co/MTGxTHOR",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "MTGxTHOR/qwen2.5-vl-3b-plant-pathology-sft · Hugging Face",
+      "url": "https://huggingface.co/MTGxTHOR/qwen2.5-vl-3b-plant-pathology-sft",
+      "snippet": "Instructions to use MTGxTHOR/qwen2.5-vl-3b-plant-pathology-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - SaltyNumba1/MTG-AI",
+      "url": "https://github.com/SaltyNumba1/MTG-AI",
+      "snippet": "The correct AI model (~4-7.5 GB) downloads automatically with a live progress bar — no manual file placement needed. Once the main window opens, the nav bar shows 🟢 AI Ready (GPU) when the model is loaded. 💡 GPU note: The bundled llama-server uses Vulkan and works on AMD, NVIDIA, and Intel GPUs automatically."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

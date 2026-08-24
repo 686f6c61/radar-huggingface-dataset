@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rsa11/js-teacher-lora",
+  "slug": "rsa11-js-teacher-lora",
+  "author": "rsa11",
+  "url": "https://huggingface.co/rsa11/js-teacher-lora",
+  "created_at": "2026-08-23T05:27:46.000Z",
+  "updated_at": "2026-08-23T05:27:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223523,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rsa11/js-teacher-lora · Hugging Face",
+      "url": "https://huggingface.co/rsa11/js-teacher-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rsa11/js-teacher-lora at main - Hugging Face",
+      "url": "https://huggingface.co/rsa11/js-teacher-lora/tree/main",
+      "snippet": "Kaggle main js-teacher-lora 71.4 MB Ctrl+K Ctrl+K 1 contributor History:3 commits rsa11 Upload tokenizer d5ae5b4 verified9 days ago .gitattributes Safe 1.57 kBUpload tokenizer9 days ago README.md Safe 5.17 kBUpload model9 days ago adapter_config.json 1.11 kBUpload model9 days ago adapter_model.safetensors 59.9 MB xet Upload model9 days ago chat ..."
+    },
+    {
+      "title": "GitHub - TeachDiffusion/TeachDiffusion: Open-source video diffusion ...",
+      "url": "https://github.com/TeachDiffusion/TeachDiffusion",
+      "snippet": "Open-source video diffusion model that teaches math like a human expert. Generates AI teacher videos with intuition-first pedagogy, student modeling, and adaptive feedback. Built on Wan 2.2 + LoRA...."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,038 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "GitHub - ostris/ai-toolkit: The ultimate training toolkit for ...",
+      "url": "https://github.com/ostris/ai-toolkit/",
+      "snippet": "The recommended way to install and run AI Toolkit is with the AI Toolkit Manager, built into this repo. The manager detects your hardware and sets up the right PyTorch build, creates the python environment, and grabs local copies of Node.js and FFmpeg — everything stays inside the ai-toolkit folder, nothing is installed system-wide."
+    }
+  ]
+}

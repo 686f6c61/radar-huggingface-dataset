@@ -5,7 +5,7 @@
   "author": "ChrisColeTech",
   "url": "https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-v1.4-FP8",
   "created_at": "2026-07-18T05:15:17.000Z",
-  "updated_at": "2026-08-23T00:57:56.000Z",
+  "updated_at": "2026-08-23T15:13:33.000Z",
   "license": "unknown",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 24562,
+  "downloads_30d": 24430,
   "trending_score": 0,
   "parameters": 21005004544,
   "parameters_human": "21.01B",

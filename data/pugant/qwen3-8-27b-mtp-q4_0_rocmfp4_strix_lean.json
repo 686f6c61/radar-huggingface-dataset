@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN",
+  "slug": "pugant-qwen3-8-27b-mtp-q4_0_rocmfp4_strix_lean",
+  "author": "pugant",
+  "url": "https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN",
+  "created_at": "2026-08-15T11:14:33.000Z",
+  "updated_at": "2026-08-23T14:20:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "rocmfpx",
+    "gfx1151",
+    "strix-halo",
+    "qwen35",
+    "dense",
+    "mtp",
+    "gated-deltanet",
+    "vulkan",
+    "Q4_0_ROCMFP4_STRIX_LEAN",
+    "text-generation",
+    "en",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 364,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14845107136,
+  "storage_human": "14.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN · Hugging Face",
+      "url": "https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN",
+      "snippet": "Plain decode of both dense 27B models is bandwidth-bound and identical (~13.8 tok/s on ROCm): the deltanet/attention mix does not change the ceiling; MTP is the speed lever (as with Qwen3.6-27B)."
+    },
+    {
+      "title": "pugant/Qwen3.8-27B-imatrix · Hugging Face",
+      "url": "https://huggingface.co/pugant/Qwen3.8-27B-imatrix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B MTP: the flag was free the whole time - GitHub",
+      "url": "https://github.com/sudoingX/qwen38-mtp",
+      "snippet": "One llama.cpp flag unlocks +33% to +145% decode speed for Qwen3.8-27B on consumer GPUs, depending on the card, and the knobs the community mapped push further still. No new files, no conversion, no custom build. The MTP head already ships inside the GGUF you downloaded on launch night."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/harbor-opal-28",
+  "slug": "models4world-harbor-opal-28",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/harbor-opal-28",
+  "created_at": "2026-08-24T10:51:25.000Z",
+  "updated_at": "2026-08-24T10:51:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "Models - Token Harbor",
+      "url": "https://tokenharbor.ai/models",
+      "snippet": "A secure, unified API gateway for the world&#x27;s leading AI models — one OpenAI-compatible endpoint, encrypted keys, automatic failover, and transparent per-token pricing. Free access to DeepSeek V4 Flash and MiMo V2.5."
+    },
+    {
+      "title": "ModelHarbor -Model Information",
+      "url": "https://www.modelharbor.com/Home/Model",
+      "snippet": "Need AI-generated images? Gemini 2.5 Flash Image is your go-to! 🎨 This model specializes in creating and understanding images with Google&#x27;s latest Gemini technology. It supports vision, computer use, and web search — all at an incredibly affordable price point. Perfect for creative projects, visual analysis, and multimodal applications!"
+    },
+    {
+      "title": "HARBOR",
+      "url": "https://www.harborai.org/",
+      "snippet": "Harbor is a platform for building and deploying AI Agentic Organizations"
+    },
+    {
+      "title": "ModelHarbor -ModelHarbor Agent - Rapid Application Development with AI",
+      "url": "https://www.modelharbor.com/",
+      "snippet": "ModelHarbor Agent Rapid Application Development with AI Inference Service Transform your development workflow with ModelHarbor Agent - our flagship AI inference services and tools."
+    }
+  ]
+}

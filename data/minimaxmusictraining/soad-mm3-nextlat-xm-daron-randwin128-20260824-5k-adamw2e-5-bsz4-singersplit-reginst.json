@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MiniMaxMusicTraining/soad-mm3-nextlat-xm-daron-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst",
+  "slug": "minimaxmusictraining-soad-mm3-nextlat-xm-daron-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst",
+  "author": "MiniMaxMusicTraining",
+  "url": "https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-daron-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst",
+  "created_at": "2026-08-24T06:38:14.000Z",
+  "updated_at": "2026-08-24T11:28:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10743123793,
+  "storage_human": "10.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "The model maintains musical themes, rhythm, vocal identity, and arrangement progression across long sequences, enabling complete structures such as intro, verse, pre-chorus, chorus, bridge, instrumental break, and outro."
+    },
+    {
+      "title": "MiniMax Music 3.0 AI Music Generator | Create Songs Online",
+      "url": "https://www.minimax-music.com/minimax-music-3",
+      "snippet": "Create songs online with MiniMax Music 3.0. Turn prompts and lyrics into vocal tracks or instrumentals. Preview the result and download your music."
+    },
+    {
+      "title": "MiniMax Music 3.0: Next-Generation Open-Weights, Production-Ready ...",
+      "url": "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model",
+      "snippet": "Today, we are introducing MiniMax Music 3.0, our next-generation music generation model. Given a creative concept and optional lyrics, the model composes, arranges, performs, and produces a complete s"
+    },
+    {
+      "title": "MiniMax Music 2.6 | AI Music Generator & AI Song Maker",
+      "url": "https://www.minimax-music.com/minimax-music-2-6",
+      "snippet": "MiniMax Music 2.6 is the newest generation of MiniMax Music &#x27;s AI music model, released on April 10, 2026. Enter a style prompt and lyrics into this text-to-song AI, and it generates a complete, full-length song — including natural vocals, layered instrumentation, and genre-aware mixing — in seconds."
+    },
+    {
+      "title": "Stream and listen to music online for free with SoundCloud",
+      "url": "https://soundcloud.com/",
+      "snippet": "Discover and play over 320 million music tracks. Join the world&#x27;s largest online community of artists, bands, DJs, and audio creators."
+    }
+  ]
+}

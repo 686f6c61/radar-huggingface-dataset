@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "xxparthparekhxx/compose-keyboard-swipe-encoder",
+  "slug": "xxparthparekhxx-compose-keyboard-swipe-encoder",
+  "author": "xxparthparekhxx",
+  "url": "https://huggingface.co/xxparthparekhxx/compose-keyboard-swipe-encoder",
+  "created_at": "2026-08-23T13:03:35.000Z",
+  "updated_at": "2026-08-23T13:04:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "swipe-typing",
+    "gesture-recognition",
+    "keyboard",
+    "android",
+    "ctc",
+    "tcn",
+    "temporal-convolutional-network",
+    "on-device",
+    "mobile",
+    "ime",
+    "other",
+    "en",
+    "dataset:futo-org/swipe.futo.org",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2529224,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Swipe Word Decoding",
+      "dataset": "FUTO Swipe Gesture Dataset",
+      "metric": "Top-1 Accuracy (extended lexicon)",
+      "value": 92.09
+    },
+    {
+      "task": "Swipe Word Decoding",
+      "dataset": "FUTO Swipe Gesture Dataset",
+      "metric": "Top-3 Accuracy (extended lexicon)",
+      "value": 97.69
+    },
+    {
+      "task": "Swipe Word Decoding",
+      "dataset": "FUTO Swipe Gesture Dataset",
+      "metric": "Top-1 Accuracy (app lexicon only)",
+      "value": 85.78
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - xxparthparekhxx/keyboard · GitHub",
+      "url": "https://github.com/xxparthparekhxx/keyboard",
+      "snippet": "Features Glide / Swipe Typing (Gesture Typing): Neural swipe decoder — a 634K-parameter temporal convolutional encoder trained from scratch on ~900,000 real human swipes, running entirely on-device in hand-written Kotlin with no inference library or added dependency. Layout-agnostic by construction: the keyboard is fed to the model at runtime as key coordinates read through a fixed cosine ..."
+    },
+    {
+      "title": "xxparthparekhxx (parth) - Hugging Face",
+      "url": "https://huggingface.co/xxparthparekhxx",
+      "snippet": "User profile of parth on Hugging Face Use fast api to access llama3.2-1B-INSTRUCT"
+    },
+    {
+      "title": "xxparthparekhxx - GitHub",
+      "url": "https://github.com/xxparthparekhxx/",
+      "snippet": "AI Architect • Full-Stack Developer • System Design Enthusiast I&#x27;m a passionate self-taught developer specializing in building scalable systems and exploring cutting-edge AI technologies. With expertise spanning mobile, web, and backend development, I focus on creating robust, maintainable solutions that solve real-world problems."
+    },
+    {
+      "title": "FUTO Swipe: Private Offline Keyboard Model | AI - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ai-app-dev-chronicles_dataset-activity-7475322786912247808-Ywaj",
+      "snippet": "**🚀 FUTO Swipe: The keyboard revolution nobody asked for — but everyone might need.** There&#x27;s a new open‑source swipe‑typing model that just hit 172 upvotes on Hacker News (with 62 ..."
+    },
+    {
+      "title": "README.md · futo-org/futo-swipe at main - Hugging Face",
+      "url": "https://huggingface.co/futo-org/futo-swipe/blob/main/README.md",
+      "snippet": "Models This repository contains 3 CNN models that compose together. Only the encoder is required. The decoder and language model are additional refinements, leveraging specific layout and language information. The encoder can decode for any keyboard layout, while the decoder is English/QWERTY-only and the language model is English-only."
+    }
+  ]
+}

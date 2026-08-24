@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-entropy-step1100",
+  "slug": "sandeep123-sqa-grpo-entropy-step1100",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-entropy-step1100",
+  "created_at": "2026-08-24T09:07:08.000Z",
+  "updated_at": "2026-08-24T09:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-GRPO: High Entropy Steps Drive Effective Reinforcement Learning",
+      "url": "https://arxiv.org/html/2601.00423",
+      "snippet": "We observe that the high entropy steps enable more efficient and effective exploration while the low entropy steps result in undistinguished roll-outs. To this end, we propose E-GRPO, an entropy aware Group Relative Policy Optimization to increase the entropy of SDE sampling steps."
+    },
+    {
+      "title": "[2601.00423] E-GRPO: High Entropy Steps Drive Effective Reinforcement ...",
+      "url": "https://arxiv.org/abs/2601.00423",
+      "snippet": "We observe that the high entropy steps enable more efficient and effective exploration while the low entropy steps result in undistinguished roll-outs. To this end, we propose E-GRPO, an entropy aware Group Relative Policy Optimization to increase the entropy of SDE sampling steps."
+    },
+    {
+      "title": "GRPO Trainer · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/grpo_trainer",
+      "snippet": "GRPO Trainer Overview TRL supports the GRPO Trainer for training language models, as described in the paper DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models by Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Mingchuan Zhang, Y. K. Li, Y. Wu, Daya Guo. The abstract from the paper is the following: Mathematical reasoning poses a significant ..."
+    },
+    {
+      "title": "GitHub - Dreamer312/SEED-GRPO: The official repository of SEED-GRPO ...",
+      "url": "https://github.com/Dreamer312/SEED-GRPO",
+      "snippet": "The official repository of SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization. We would like to sincerely thank the authors of Dr.GRPO for their excellent work, which greatly inspired and facilitated our implementation of SEED-GRPO."
+    },
+    {
+      "title": "GRPO - Reinforcement Learning Crashcourse",
+      "url": "https://finger-bone.github.io/rl-crashcourse/05/",
+      "snippet": "RL Ch5 GRPO Introduction to GRPO GRPO (Group Relative Policy Optimization) is a novel reinforcement learning method proposed by DeepSeek, specifically designed for large language model (LLM) reinforcement learning."
+    }
+  ]
+}

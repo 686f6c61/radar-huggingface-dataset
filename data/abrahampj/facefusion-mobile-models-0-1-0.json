@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AbrahamPJ/facefusion-mobile-models-0.1.0",
+  "slug": "abrahampj-facefusion-mobile-models-0-1-0",
+  "author": "AbrahamPJ",
+  "url": "https://huggingface.co/AbrahamPJ/facefusion-mobile-models-0.1.0",
+  "created_at": "2026-08-24T11:27:07.000Z",
+  "updated_at": "2026-08-24T11:31:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 863101736,
+  "storage_human": "863 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AbrahamPaulJ/facefusion-mobile",
+      "url": "https://github.com/AbrahamPaulJ/facefusion-mobile",
+      "snippet": "FaceFusion&#x27;s default face-swap path — source image + target video — running entirely offline on the Snapdragon 8 Elite (SM8750) Hexagon NPU of a Galaxy S25 Ultra, via Qualcomm&#x27;s QAIRT/QNN SDK."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "facefusion (facefusion) - Hugging Face",
+      "url": "https://huggingface.co/facefusion/models",
+      "snippet": "Sort: Recently updated. facefusion/libraries-4... Updated May 18. facefusion/models-3.6."
+    },
+    {
+      "title": "FaceFusion",
+      "url": "https://facefusion.io/",
+      "snippet": "Explore HyperSwap at FaceFusion Labs Discover the cutting-edge performance metrics of our advanced face fusion models. Compare different model architectures and their capabilities."
+    },
+    {
+      "title": "Facefusion Zero - a Hugging Face Space by arjunyonjan",
+      "url": "https://huggingface.co/spaces/arjunyonjan/facefusion-zero",
+      "snippet": "Upload a source portrait and a target photo, and the app will replace the target&#x27;s face with the source&#x27;s face. It then improves the result with a high‑quality enhancer, producing a clear, realisti..."
+    }
+  ]
+}

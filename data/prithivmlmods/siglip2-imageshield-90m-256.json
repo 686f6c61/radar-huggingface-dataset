@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/SigLIP2-ImageShield-90M-256",
+  "slug": "prithivmlmods-siglip2-imageshield-90m-256",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/SigLIP2-ImageShield-90M-256",
+  "created_at": "2026-08-15T12:23:16.000Z",
+  "updated_at": "2026-08-24T04:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "image-classification",
+    "SigLIP2",
+    "ImageShield",
+    "90M",
+    "Guardrail",
+    "en",
+    "arxiv:2502.14786",
+    "base_model:google/siglip2-base-patch16-256",
+    "base_model:finetune:google/siglip2-base-patch16-256",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 92934149,
+  "parameters_human": "92.9M",
+  "storage_bytes": 4235002550,
+  "storage_human": "4.2 GB",
+  "base_model": "google/siglip2-base-patch16-256",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/AIorNot-SigLIP2 · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/AIorNot-SigLIP2",
+      "snippet": "Intended Use AIorNot-SigLIP2 is useful in scenarios such as: AI Content Detection - Identify AI-generated images for social platforms or media verification. Digital Media Forensics - Assist in distinguishing synthetic from real-world imagery. Dataset Filtering - Clean datasets by separating real photographs from AI-synthesized ones. Research & Development - Benchmark performance of ..."
+    },
+    {
+      "title": "Image-Guard-2.0: A SigLIP 2 Based Image Safety Classification Model",
+      "url": "https://huggingface.co/blog/prithivMLmods/image-guard-models",
+      "snippet": "Image-Guard-2. is an experimental, lightweight vision-language encoder model with a size of 0.1B (<100M parameters), trained on the SigLIP2 (siglip2-base-patch16-224)."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    },
+    {
+      "title": "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic ...",
+      "url": "https://arxiv.org/html/2502.14786v1",
+      "snippet": "SigLIP2, which is trained on de-biased data, exhibits significantly reduced representation bias than its predecessor. In addition, larger models are better than smaller models, in agreement with the earlier findings in [2]."
+    },
+    {
+      "title": "Finetune SigLIP2 Image Classification (Notebook) - GitHub",
+      "url": "https://github.com/PRITHIVSAKTHIUR/FineTuning-SigLIP-2",
+      "snippet": "Finetune SigLIP2 Image Classification (Notebook) This notebook demonstrates how to fine-tune SigLIP 2, a robust multilingual vision-language model, for single-label image classification tasks."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "narendraseelam/fraud-detector",
+  "slug": "narendraseelam-fraud-detector",
+  "author": "narendraseelam",
+  "url": "https://huggingface.co/narendraseelam/fraud-detector",
+  "created_at": "2026-08-24T15:20:04.000Z",
+  "updated_at": "2026-08-24T15:20:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vertex AI: Building a fraud detection model with AutoML",
+      "url": "https://codelabs.developers.google.com/vertex-automl-tabular",
+      "snippet": "In this lab we&#x27;ll be build a fraud detection model to determine whether or not a particular credit card transaction should be classified as fraudulent. One challenge of many fraud detection and anomaly detection problems is that the dataset is typically heavily imbalanced, with many more examples of the non-fraudulent class."
+    },
+    {
+      "title": "vaibhav07112004/fraud-detection-models · Hugging Face",
+      "url": "https://huggingface.co/vaibhav07112004/fraud-detection-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Using AI/ML to build a Fraud Detection Model - Pradeep Loganathan&#x27;s Blog",
+      "url": "https://pradeepl.com/blog/building-a-fraud-detection-model/",
+      "snippet": "In this blog post we will build an effective fraud detection model using AI and machine learning techniques. We will explore the entire process, from data preprocessing to model deployment, and highlight key strategies to enhance detection accuracy."
+    },
+    {
+      "title": "GitHub - vineshreddy987/AIML_Model_For_Fraud_Detection_System: A real ...",
+      "url": "https://github.com/vineshreddy987/AIML_Model_For_Fraud_Detection_System",
+      "snippet": "FraudGuard is an AI-powered fraud detection system designed to identify suspicious financial transactions using advanced machine learning techniques. Built for precision and scalability, the system evaluates transactional patterns and flags potential fraud in real time — with a focus on performance, security, and interpretability."
+    },
+    {
+      "title": "AI in Fraud Detection: Techniques, Use Cases & Future Trends",
+      "url": "https://blog.sensfrx.ai/ai-fraud-detection/",
+      "snippet": "AI in fraud detection helps identify threats in real-time, reduce false positives, and leverage ML, graph tech, and explainable AI models."
+    }
+  ]
+}

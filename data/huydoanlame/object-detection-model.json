@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "huydoanlame/object-detection-model",
+  "slug": "huydoanlame-object-detection-model",
+  "author": "huydoanlame",
+  "url": "https://huggingface.co/huydoanlame/object-detection-model",
+  "created_at": "2026-08-22T14:46:28.000Z",
+  "updated_at": "2026-08-23T08:07:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "object-detection",
+    "vi",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176772644,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Object Detection Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=object-detection",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Object Detection Leaderboard - Hugging Face",
+      "url": "https://huggingface.co/blog/object-detection-leaderboard",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Object Detection Models 2026: RF-DETR, YOLOv12 & Beyond",
+      "url": "https://blog.roboflow.com/best-object-detection-models/",
+      "snippet": "Object detection has entered a new era in 2025. Next-generation models are combining transformer efficiency and real-time speed to power breakthroughs in automation, robotics, and visual intelligence across every industry. See the best models."
+    },
+    {
+      "title": "Top Object Detection Models for Your Projects in 2025",
+      "url": "https://www.digitalocean.com/community/tutorials/best-object-detection-models-guide",
+      "snippet": "Discover the best object detection models for your AI project. Learn how to compare speed, accuracy, and efficiency to select the right model."
+    },
+    {
+      "title": "object-detection-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/object-detection-model",
+      "snippet": "AI-assisted camera trap analysis: detection, species recognition, verification, dashboards and exports. Free, open source, for Windows, macOS and Linux."
+    }
+  ]
+}

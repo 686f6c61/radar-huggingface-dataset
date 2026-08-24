@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JulienMERAND/GOAG",
+  "slug": "julienmerand-goag",
+  "author": "JulienMERAND",
+  "url": "https://huggingface.co/JulienMERAND/GOAG",
+  "created_at": "2026-08-24T11:35:37.000Z",
+  "updated_at": "2026-08-24T12:25:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "Grasping",
+    "Manipulation",
+    "IA",
+    "CVAE",
+    "robotics",
+    "en",
+    "arxiv:2608.19759",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2608526788,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JulienMERAND (Julien Mérand) - Hugging Face",
+      "url": "https://huggingface.co/JulienMERAND",
+      "snippet": "Robotics, Grasping, Manipulation & AI Recent Activity upvoted a paper about 3 hours ago GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation submitted a paperabout 3 hours ago GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation upvoted a paper about 3 hours ago CoToGrasp: Contact-Topology-Conditioned Dexterous Grasp Synthesis ..."
+    },
+    {
+      "title": "JulienMERAND (Julien Mérand) - Hugging Face",
+      "url": "https://huggingface.co/JulienMERAND/papers",
+      "snippet": "Robotics, Grasping, Manipulation & AI Recent Activity upvoted a paper about 4 hours ago GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation submitted a paperabout 4 hours ago GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation upvoted a paper about 4 hours ago CoToGrasp: Contact-Topology-Conditioned Dexterous Grasp Synthesis ..."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

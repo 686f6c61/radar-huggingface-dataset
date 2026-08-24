@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ak99ghost/My-rvc-model",
+  "slug": "ak99ghost-my-rvc-model",
+  "author": "Ak99ghost",
+  "url": "https://huggingface.co/Ak99ghost/My-rvc-model",
+  "created_at": "2026-05-28T15:50:38.000Z",
+  "updated_at": "2026-08-23T11:57:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 507633349,
+  "storage_human": "508 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ak99ghost/My-rvc-model · Hugging Face",
+      "url": "https://huggingface.co/Ak99ghost/My-rvc-model",
+      "snippet": "Ak99ghost / My-rvc-model like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ak99ghost/My-rvc-model at main - Hugging Face",
+      "url": "https://huggingface.co/Ak99ghost/My-rvc-model/tree/main",
+      "snippet": "Ak99ghost / My-rvc-model like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main My-rvc-model 452 MB Ctrl+K Ctrl+K 1 contributor History:5 commits Ak99ghost Upload squidwars.pth 122d0dc verified11 days ago .gitattributes Safe 1.68 kBUpload 2 files2 months ago Bab_Asfanj.pth pickle"
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects. Browse through, download and play with our directory of 388 rvc voice models"
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 18,170 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 18,170 high-quality RVCv2 (Real-time Voice Conversion) AI voice model files for use with compatible RVC software. All models are free to download."
+    }
+  ]
+}

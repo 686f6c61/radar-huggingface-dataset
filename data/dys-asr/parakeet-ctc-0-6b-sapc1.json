@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "dys-asr/parakeet-ctc-0.6b-sapc1",
+  "slug": "dys-asr-parakeet-ctc-0-6b-sapc1",
+  "author": "dys-asr",
+  "url": "https://huggingface.co/dys-asr/parakeet-ctc-0.6b-sapc1",
+  "created_at": "2026-08-11T19:51:27.000Z",
+  "updated_at": "2026-08-23T22:49:35.000Z",
+  "license": "speech-accessibility-project-dua",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_ctc",
+    "automatic-speech-recognition",
+    "dysarthria",
+    "disordered-speech",
+    "accessibility",
+    "parakeet",
+    "ctc",
+    "en",
+    "base_model:nvidia/parakeet-ctc-0.6b",
+    "base_model:finetune:nvidia/parakeet-ctc-0.6b",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 608848897,
+  "parameters_human": "608.8M",
+  "storage_bytes": 4871012376,
+  "storage_human": "4.9 GB",
+  "base_model": "nvidia/parakeet-ctc-0.6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC1 dev (Speech Accessibility Project)",
+      "metric": "WER",
+      "value": 10.32
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC1 dev (Speech Accessibility Project)",
+      "metric": "CER",
+      "value": 6.09
+    }
+  ],
+  "sources": [
+    {
+      "title": "dys-asr/parakeet-ctc-0.6b-sapc2 · Hugging Face",
+      "url": "https://huggingface.co/dys-asr/parakeet-ctc-0.6b-sapc2",
+      "snippet": "The SAPC1 model got its statistics from a single GPU holding all 32 examples. Splitting across two GPUs would ordinarily drop that to 16 and change the model, so SyncBatchNorm is applied to all 24 layers, which all-reduces the statistics and restores them to the same 32 examples."
+    },
+    {
+      "title": "dys-asr/parakeet-ctc-0.6b-sapc1 · Hugging Face",
+      "url": "https://huggingface.co/dys-asr/parakeet-ctc-0.6b-sapc1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deploy and Run ASR Microservice with Parakeet CTC Model",
+      "url": "https://docs.nvidia.com/nim/speech/latest/asr/deploy-asr-models/parakeet-ctc.html",
+      "snippet": "Deploy and Run ASR Microservice with Parakeet CTC Model # The Parakeet CTC model supports streaming and offline speech-to-text transcription across multiple languages. Choose a language-specific page for deployment and inference instructions. For client installation and sample audio instructions, refer to the Deploy and Run ASR Models page."
+    },
+    {
+      "title": "parakeet-ctc-0.6b-asr Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/parakeet-ctc-0_6b-asr/deploy",
+      "snippet": "State-of-the-art accuracy and speed for English transcriptions."
+    },
+    {
+      "title": "GitHub - achetronic/parakeet: OpenAI Whisper-compatible ASR server ...",
+      "url": "https://github.com/achetronic/parakeet",
+      "snippet": "A high-performance automatic speech recognition (ASR) server written in Go. It uses NVIDIA&#x27;s Parakeet TDT 0.6B model through ONNX Runtime to provide speech-to-text transcription via an OpenAI Whisper-compatible API."
+    }
+  ]
+}

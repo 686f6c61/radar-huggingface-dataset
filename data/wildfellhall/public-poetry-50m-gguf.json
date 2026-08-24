@@ -5,7 +5,7 @@
   "author": "wildfellhall",
   "url": "https://huggingface.co/wildfellhall/public-poetry-50m-gguf",
   "created_at": "2026-08-21T19:16:00.000Z",
-  "updated_at": "2026-08-21T19:16:24.000Z",
+  "updated_at": "2026-08-22T17:37:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 59,
+  "downloads_30d": 147,
   "trending_score": 0,
   "parameters": 46742528,
   "parameters_human": "46.7M",
-  "storage_bytes": 95253952,
-  "storage_human": "95 MB",
+  "storage_bytes": 190507904,
+  "storage_human": "191 MB",
   "base_model": null,
   "formats": [
     "gguf"

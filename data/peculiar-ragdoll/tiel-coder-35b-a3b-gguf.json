@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF",
+  "slug": "peculiar-ragdoll-tiel-coder-35b-a3b-gguf",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF",
+  "created_at": "2026-08-19T23:11:19.000Z",
+  "updated_at": "2026-08-24T15:34:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 200419694121,
+  "storage_human": "200.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Occult-Nail-1.0-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Occult-Nail-1.0-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF",
+      "snippet": "peculiar-ragdoll / Nail-Qwen3.6-35B-A3B-GGUF like 0 Image-Text-to-Text GGUF English Chinese llama.cpp qwen3_6 Mixture of Experts token-efficient efficient-thinking agentic-coding 4-bit precision imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nail Qwen3.6 35B A3B MLX 5bit by peculiar-ragdoll",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FNail-Qwen3.6-35B-A3B-MLX-5bit,7DmNjLh4X2wd24kpDO0dJs",
+      "snippet": "Rank the Nail Qwen3.6 35B A3B MLX 5bit capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "A mysterious free AI model is impressing developers. And nobody ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/a-mysterious-free-ai-model-is-impressing-developers-and-nobody-knows-who-made-it/ar-AA2aJzr9",
+      "snippet": "A mysterious new AI model is making the rounds among developers — and nobody is saying who built it. Ox Alpha appeared on OpenRouter on Thursday as a \"stealth model\" from an anonymous third ..."
+    },
+    {
+      "title": "Nail-Qwen3.6-35B-A3B-GGUF vs Qwen3-8B-GGUF — comparison, examples, use ...",
+      "url": "https://www.aimodels.fyi/models/compare/nail-qwen3.6-35b-a3b-gguf-peculiar-ragdoll-vs-qwen3-8b-gguf-qwen",
+      "snippet": "Overview Nail-Qwen3.6-35B-A3B-GGUF is a quantized variant of Qwen&#x27;s 35-billion-parameter mixture-of-experts model, maintained by peculiar-ragdoll. This is Unsloth&#x27;s UD-Q4_K_XL quantization of the base Qwen3.6-35B-A3B model, enhanced with an improved chat template from froggeric and a force-appended system prompt designed to reduce verbose outputs and improve reasoning speed. The model runs ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3-VL-4B-Instruct-NPU2",
+  "slug": "atomic-germ-qwen3-vl-4b-instruct-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3-VL-4B-Instruct-NPU2",
+  "created_at": "2026-08-23T15:18:07.000Z",
+  "updated_at": "2026-08-23T15:32:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8261535010,
+  "storage_human": "8.3 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastFlowLM/Qwen3-VL-4B-Instruct-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Qwen3-VL-4B-Instruct-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    },
+    {
+      "title": "Qwen3-VL-4B NPU - GitHub",
+      "url": "https://github.com/Qengineering/Qwen3-VL-4B-NPU",
+      "snippet": "Once converted to RKNN, parts of the model can run on the NPU, improving speed. Despite these limits, models like Qwen3 run well on the RK3588 because the NPU efficiently accelerates the heavy math, and the vision encoder can be optimised. This makes advanced multimodal AI feasible on small, power-efficient devices."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    }
+  ]
+}

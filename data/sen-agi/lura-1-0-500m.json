@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SEN-AGI/Lura-1.0-500m",
+  "slug": "sen-agi-lura-1-0-500m",
+  "author": "SEN-AGI",
+  "url": "https://huggingface.co/SEN-AGI/Lura-1.0-500m",
+  "created_at": "2026-08-16T11:27:48.000Z",
+  "updated_at": "2026-08-24T04:21:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "fine-tuned",
+    "lightweight",
+    "code",
+    "math",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 562,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 33606748007,
+  "storage_human": "33.6 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SEN-AGI (SEN AGI) - Hugging Face",
+      "url": "https://huggingface.co/SEN-AGI/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 5 hours ago ... published a model about 5 hours ago ... updated a model about 13 hours ago"
+    },
+    {
+      "title": "SENAGI (SEN AGI) - Hugging Face",
+      "url": "https://huggingface.co/SENAGI",
+      "snippet": "Sort: Recently updated SENAGI/Lily-1.5-pro Text Generation • 36.4M•Updated about 4 hours ago"
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "Helsing unveils Lura and SG-1 Fathom - autonomous mass to surveil and ...",
+      "url": "https://helsing.ai/newsroom/helsing-unveils-lura-and-sg-1-fathom-autonomous-mass-to-surveil-and-defend-the-depths",
+      "snippet": "Helsing today unveils Lura, an advanced software platform and AI system for persistent underwater surveillance against the growing threats to ships and critical infrastructure. The company also unveils SG-1 Fathom, a mass-producible underwater glider powered by Lura and capable of forming large-scale surveillance constellations of sensors beneath the waves. Lura and SG-1 Fathom constitute a ..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ulfetozcan/FoodBev_ConvNext_Predictor",
+  "slug": "ulfetozcan-foodbev_convnext_predictor",
+  "author": "ulfetozcan",
+  "url": "https://huggingface.co/ulfetozcan/FoodBev_ConvNext_Predictor",
+  "created_at": "2026-08-23T14:22:55.000Z",
+  "updated_at": "2026-08-23T14:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "food101",
+    "convnext",
+    "dataset:ethz/food101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 350811147,
+  "storage_human": "351 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zeenath07/dfu-analysis-using-medical-images: AI-powered ...",
+      "url": "https://github.com/zeenath07/dfu-analysis-using-medical-images",
+      "snippet": "AI-powered Clinical Decision Support System for Diabetic Foot Ulcer analysis using YOLO, SAM, ConvNeXt, multi-task learning, and similarity-based case retrieval. - zeenath07/dfu-analysis-using-medical-images"
+    },
+    {
+      "title": "GitHub - facebookresearch/ConvNeXt: Code release for ConvNeXt model",
+      "url": "https://github.com/facebookresearch/ConvNeXt",
+      "snippet": "Code release for ConvNeXt model. Contribute to facebookresearch/ConvNeXt development by creating an account on GitHub."
+    },
+    {
+      "title": "ConvNeXT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/convnext",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ConvNeXt - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/convnext/",
+      "snippet": "ConvNeXt is a modern convolutional neural network (CNN) architecture that reimagines classic CNNs by integrating successful design elements from Vision Transformers (ViTs). Developed by Facebook AI Research, ConvNeXt achieves state-of-the-art performance on image recognition tasks while maintaining the efficiency and scalability of CNNs."
+    },
+    {
+      "title": "Fine-grained food image recognition using a convolutional neural ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0889157525012116",
+      "snippet": "When a fine-grained food image such as a beet salad is fed into the Swin Global Attention and Local Covariance Convolutional Feature Fusion (Swin-GA-LCCFF) network, the model successfully outputs the correct prediction."
+    }
+  ]
+}

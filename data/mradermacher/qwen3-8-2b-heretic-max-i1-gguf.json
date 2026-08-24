@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-2B-Heretic-Max-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-2b-heretic-max-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-2B-Heretic-Max-i1-GGUF",
+  "created_at": "2026-08-24T08:02:03.000Z",
+  "updated_at": "2026-08-24T08:51:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "edge",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:MihaiPopa-1/Qwen3.8-2B-Heretic-Max",
+    "base_model:quantized:MihaiPopa-1/Qwen3.8-2B-Heretic-Max",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 479418,
+  "parameters_human": "479418",
+  "storage_bytes": 1945728,
+  "storage_human": "2 MB",
+  "base_model": "MihaiPopa-1/Qwen3.8-2B-Heretic-Max",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Qwen3-8B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-8B-heretic-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Using Heretic does not require an understanding of transformer internals. In fact, anyone who knows how to run a command-line program can use Heretic to decensor language models. Heretic supports most dense models, including many multimodal models, several different MoE architectures, and even some hybrid models like Qwen3.5."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    }
+  ]
+}

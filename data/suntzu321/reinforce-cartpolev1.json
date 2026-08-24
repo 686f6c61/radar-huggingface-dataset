@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SunTzu321/Reinforce-CartPoleV1",
+  "slug": "suntzu321-reinforce-cartpolev1",
+  "author": "SunTzu321",
+  "url": "https://huggingface.co/SunTzu321/Reinforce-CartPoleV1",
+  "created_at": "2026-08-23T05:38:10.000Z",
+  "updated_at": "2026-08-23T05:38:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loke-07/Reinforce-CartPolev1 · Hugging Face",
+      "url": "https://huggingface.co/loke-07/Reinforce-CartPolev1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "loweegee/Reinforce-cartpolev1 · Hugging Face",
+      "url": "https://huggingface.co/loweegee/Reinforce-cartpolev1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "zpattdev/Reinforce-cartpoleV1 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/262782",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "GitHub - shehanbandara/CartPoleV1: A Reinforcement Learning AI Agent ...",
+      "url": "https://github.com/shehanbandara/CartPoleV1",
+      "snippet": "CartPoleV1 A Reinforcement Learning AI Agent That Learns how to Play CartPole-V1."
+    },
+    {
+      "title": "giocs2017/Reinforce-cartPolev1 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/252926",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    }
+  ]
+}

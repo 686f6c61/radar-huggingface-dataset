@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kamusarj/VLA-JEPA_finetune",
+  "slug": "kamusarj-vla-jepa_finetune",
+  "author": "kamusarj",
+  "url": "https://huggingface.co/kamusarj/VLA-JEPA_finetune",
+  "created_at": "2026-08-24T08:39:38.000Z",
+  "updated_at": "2026-08-24T08:59:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "robotics",
+    "vision-language-action",
+    "v-jepa",
+    "lerobot",
+    "ur10e",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4369223,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for lerobot/VLA-JEPA-Pretrain - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:lerobot/VLA-JEPA-Pretrain",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset lerobot/VLA-JEPA-Pretrain Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment ..."
+    },
+    {
+      "title": "GitHub - ginwind/VLA-JEPA: [ECCV 2026] VLA-JEPA: Enhancing Vision ...",
+      "url": "https://github.com/ginwind/VLA-JEPA",
+      "snippet": "VLA-JEPA supports training on both robot datasets and human video datasets. You can run custom training by specifying robot data and/or human videos in your configuration."
+    },
+    {
+      "title": "[2602.10098] VLA-JEPA: Enhancing Vision-Language-Action Model with ...",
+      "url": "https://arxiv.org/abs/2602.10098",
+      "snippet": "Pretraining Vision-Language-Action (VLA) policies on internet-scale video is appealing, yet current latent-action objectives often learn the wrong thing: they remain anchored to pixel variation rather than action-relevant state transitions, making them vulnerable to appearance bias, nuisance motion, and information leakage. We introduce VLA-JEPA, a JEPA-style pretraining framework that ..."
+    },
+    {
+      "title": "VLA-JEPA · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/main/vla_jepa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AI-in-Transportation-Lab/awesome-jepa: A carefully curated ...",
+      "url": "https://github.com/AI-in-Transportation-Lab/awesome-jepa",
+      "snippet": "A carefully curated collection of high-quality tools, libraries, research papers, projects, and tutorials centered around Joint Embedding Predictive Architecture (JEPA) — a self-supervised learning paradigm introduced by Yann LeCun and Meta AI that learns representations by predicting representations of the future from representations of the present, without reconstructing pixels or tokens ..."
+    }
+  ]
+}

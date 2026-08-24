@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "toiar/Rynsan-TTS",
+  "slug": "toiar-rynsan-tts",
+  "author": "toiar",
+  "url": "https://huggingface.co/toiar/Rynsan-TTS",
+  "created_at": "2026-08-22T19:10:32.000Z",
+  "updated_at": "2026-08-23T18:45:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "kha",
+    "grt",
+    "pbv",
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "omnivoice",
+    "text-to-speech",
+    "tts",
+    "speech",
+    "low-resource",
+    "multilingual",
+    "northeast-india",
+    "meghalaya",
+    "khasi",
+    "garo",
+    "pnar",
+    "english",
+    "hindi",
+    "speech-synthesis",
+    "indigenous-languages",
+    "kha",
+    "grt",
+    "pbv",
+    "en",
+    "hi",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 7362665160,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toiar/Rynsan-TTS-Data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/toiar/Rynsan-TTS-Data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "toiar/Rynsan-TTS-Data at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/toiar/Rynsan-TTS-Data/tree/main",
+      "snippet": "Datasets: toiar / Rynsan-TTS-Data like 0 Tasks: Text-to-Speech Automatic Speech Recognition Modalities: Audio Text Formats: parquet Languages: Khasi Garo Pnar + 2 Size: 100K - 1M Tags: text-to-speech tts speech low-resource northeast-india meghalaya + 4 Libraries: Datasets Dask Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles ..."
+    },
+    {
+      "title": "Ryan Text to Speech - Narakeet",
+      "url": "https://www.narakeet.com/text-to-speech/voice/ryan-text-to-speech/",
+      "snippet": "Create voiceovers using 900 TTS AI sound generators in 100 languages and accents, using our Text to Audio tool. Ryan Text to Speech Listen to a quick Ryan voice text to speech demo in the video below. The Ryan TTS voice reads two samples, one is from a financial report and the other is a biographic excerpt."
+    },
+    {
+      "title": "Ryan (US English) - AI Voice for Text-to-Speech | TextToSpeechAI",
+      "url": "https://texttospeechai.com/tts/voices/en_US-ryan-high/",
+      "snippet": "Ryan (US English) is a male Piper TTS voice for text-to-speech in EN_US. Preview the voice and start generating audio instantly."
+    },
+    {
+      "title": "The Best Open-Source Text-to-Speech Models in 2026",
+      "url": "https://bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models",
+      "snippet": "Explore the top open-source TTS models and find answers to some FAQs about them."
+    }
+  ]
+}

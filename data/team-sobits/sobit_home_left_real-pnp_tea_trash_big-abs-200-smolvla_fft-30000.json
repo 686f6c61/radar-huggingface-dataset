@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "team-sobits/sobit_home_left_real-pnp_tea_trash_big-abs-200-smolvla_fft-30000",
+  "slug": "team-sobits-sobit_home_left_real-pnp_tea_trash_big-abs-200-smolvla_fft-30000",
+  "author": "team-sobits",
+  "url": "https://huggingface.co/team-sobits/sobit_home_left_real-pnp_tea_trash_big-abs-200-smolvla_fft-30000",
+  "created_at": "2026-08-24T13:39:14.000Z",
+  "updated_at": "2026-08-24T13:39:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:team-sobits/sobit_home_left_real-pnp_tea_trash_big-abs-200",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197806880,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sobit_home_left_real-pnp_tea_trash_big-abs - Hugging Face",
+      "url": "https://huggingface.co/datasets/team-sobits/sobit_home_left_real-pnp_tea_trash_big-abs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft ...",
+      "url": "https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-30000/tree/main",
+      "snippet": "Instructions to use team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-30000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-30000",
+      "url": "https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-30000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - TeamSOBITS/sobit_home",
+      "url": "https://github.com/TeamSOBITS/sobit_home",
+      "snippet": "SOBIT HOME 概要 4輪独立ステアリング移動機構・昇降機構・2椀・パンチルト機構を組み合わせたSOBITS自作モバイルマニピュレータを動かすためのパッケージです．"
+    },
+    {
+      "title": "sobit_home_pnp_bottle_bin_left_abs_smolvla_vlmft - Hugging Face",
+      "url": "https://huggingface.co/team-sobits/sobit_home_pnp_bottle_bin_left_abs_smolvla_vlmft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

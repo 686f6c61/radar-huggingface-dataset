@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kenji-HASIMOTO/paper_002787150_cross_modal_fusion",
+  "slug": "kenji-hasimoto-paper_002787150_cross_modal_fusion",
+  "author": "kenji-HASIMOTO",
+  "url": "https://huggingface.co/kenji-HASIMOTO/paper_002787150_cross_modal_fusion",
+  "created_at": "2026-08-23T05:14:34.000Z",
+  "updated_at": "2026-08-23T05:14:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cross-modal-fusion",
+    "detailed-descriptive",
+    "endnote",
+    "enthusiastic",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "latex-acl",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Cross-modal Contrastive Learning for Multimodal Fake News Detection",
+      "url": "https://arxiv.org/html/2302.14057v2",
+      "snippet": "Therefore, this contrastive framework for multimodal fake news detection suffers from several key limitations: (1) A huge number of image-text pairs in fake news are inherently not matched (e.g. Figure 1 d), and the contrastive objective may overfit to those data and degrade the model&#x27;s generalization performance; (2) Different image-text ..."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "WeatherNext 2: AI model predictions for tropical cyclones",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-2-cyclones/",
+      "snippet": "Predicting how hurricanes and cyclones develop is a longstanding challenge, and every hour of warning counts. Tropical cyclones are among the most destructive weather events on Earth, and for meteorologists, issuing accurate, timely warnings is a constant race against time. Today, in a paper published in Nature, Google researchers show that our WeatherNext AI model achieved state-of-the-art ..."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

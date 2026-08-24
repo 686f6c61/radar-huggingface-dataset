@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/akramouedraogo6729",
+  "slug": "mulemp-akramouedraogo6729",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/akramouedraogo6729",
+  "created_at": "2026-05-31T11:01:19.000Z",
+  "updated_at": "2026-08-23T17:01:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12497777792,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulemp/AIgooner19aught7 · Hugging Face",
+      "url": "https://huggingface.co/mulemp/AIgooner19aught7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Assaut de l&#x27;air-Rose - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2825162?modelVersionId=3187253",
+      "snippet": "Download Assaut de l&#x27;air-Rose - LORA for Anima by akramouedraogo6729. Free AI model download from CivArchive."
+    },
+    {
+      "title": "akramouedraogo6729 Creator Profile | Civitai",
+      "url": "https://civitai.com/user/akramouedraogo6729/models",
+      "snippet": "Models Uploaded: 0, Followers: 103, Total Likes Received: 476, Total Downloads Received: 4.9k."
+    },
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "Subaru natsuki (re:zero) - V1 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1008687618935811524",
+      "snippet": "Download Subaru natsuki (re:zero) - free LORA Anima AI model on TENSOR. Anima, Anime, Illustration. By Min"
+    }
+  ]
+}

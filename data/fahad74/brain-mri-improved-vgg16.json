@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fahad74/Brain-MRI-Improved-VGG16",
+  "slug": "fahad74-brain-mri-improved-vgg16",
+  "author": "fahad74",
+  "url": "https://huggingface.co/fahad74/Brain-MRI-Improved-VGG16",
+  "created_at": "2026-08-24T10:12:21.000Z",
+  "updated_at": "2026-08-24T10:13:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117599882,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advancing Brain MRI Image Classification: Integrating VGG16 and ... - MDPI",
+      "url": "https://www.mdpi.com/2673-8430/4/4/38",
+      "snippet": "The Multi-verse Optimizer (MVO) is utilized to optimize data augmentation parameters and refine the configuration of trainable layers in VGG16 and ResNet50. The model&#x27;s generalization capabilities are significantly improved by the MVO&#x27;s ability to effectively balance computational cost and performance."
+    },
+    {
+      "title": "Optimizing Brain Tumor Mri Classification Using Modified Vgg16 Model ...",
+      "url": "https://ieeexplore.ieee.org/document/10721808",
+      "snippet": "These results indicate its superior performance in classifying brain tumor images, even in the presence of noise and variations. Conclusion: The modified VGG16 model provides a robust solution for brain tumor classification, offering improved accuracy and reliability, which can lead to better patient outcomes."
+    },
+    {
+      "title": "A hybrid deep learning model for brain tumor detection using VGG16 and ...",
+      "url": "https://link.springer.com/article/10.1007/s40435-025-01887-0",
+      "snippet": "Detecting and classifying brain tumors accurately from MRI scans is a challenging task in medical imaging. Traditional manual diagnosis by radiologists is often time-consuming and prone to errors, making it necessary to develop automated, high-precision methods. This study presents a hybrid deep learning approach that combines two well-known pretrained convolutional neural networks—VGG16 and ..."
+    },
+    {
+      "title": "Advancing Brain MRI Image Classification: Integrating VGG16 and ...",
+      "url": "https://www.researchgate.net/publication/386123655_Advancing_Brain_MRI_Image_Classification_Integrating_VGG16_and_ResNet50_with_a_Multi-Verse_Optimization_Method",
+      "snippet": "The model&#x27;s generalization capabilities are significantly improved by the MVO&#x27;s ability to effectively balance computational cost and performance."
+    },
+    {
+      "title": "Detection and Classification of Brain Tumours Using MRI-images via ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S2352097326000350",
+      "snippet": "The hybrid VGG16-ResNet-50 model proves to be a powerful tool for the detection and classification of brain tumors using MRI images. Its superior accuracy and robustness, validated through comparison with other state-of-the-art models, suggest its potential as a reliable solution in clinical settings to support radiologists in early diagnosis ..."
+    }
+  ]
+}

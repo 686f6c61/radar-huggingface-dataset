@@ -5,7 +5,7 @@
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_qwen7b",
   "created_at": "2026-08-22T02:17:16.000Z",
-  "updated_at": "2026-08-22T02:19:01.000Z",
+  "updated_at": "2026-08-22T23:58:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 109,
+  "downloads_30d": 580,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 15242693760,
-  "storage_human": "15.2 GB",
+  "storage_bytes": 30473965624,
+  "storage_human": "30.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

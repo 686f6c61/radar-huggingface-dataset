@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tanshin91/Ornith-1.5-9B-oQ4e-fp16",
+  "slug": "tanshin91-ornith-1-5-9b-oq4e-fp16",
+  "author": "tanshin91",
+  "url": "https://huggingface.co/tanshin91/Ornith-1.5-9B-oQ4e-fp16",
+  "created_at": "2026-08-24T10:28:30.000Z",
+  "updated_at": "2026-08-24T11:06:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1876724976,
+  "parameters_human": "1.88B",
+  "storage_bytes": 6958195891,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    }
+  ]
+}

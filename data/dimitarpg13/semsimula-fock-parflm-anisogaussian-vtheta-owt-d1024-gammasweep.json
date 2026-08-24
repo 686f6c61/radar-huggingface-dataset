@@ -5,7 +5,7 @@
   "author": "dimitarpg13",
   "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d1024-gammasweep",
   "created_at": "2026-08-18T02:21:45.000Z",
-  "updated_at": "2026-08-18T04:23:42.000Z",
+  "updated_at": "2026-08-23T21:11:14.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

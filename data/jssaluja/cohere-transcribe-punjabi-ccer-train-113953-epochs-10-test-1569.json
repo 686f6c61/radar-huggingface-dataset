@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jssaluja/cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569",
+  "slug": "jssaluja-cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569",
+  "author": "jssaluja",
+  "url": "https://huggingface.co/jssaluja/cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569",
+  "created_at": "2026-08-21T11:24:24.000Z",
+  "updated_at": "2026-08-24T04:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "pa"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "asr",
+    "punjabi",
+    "gurbani",
+    "generated_from_trainer",
+    "custom_code",
+    "pa",
+    "base_model:CohereLabs/cohere-transcribe-03-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-03-2026",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 2071462874,
+  "parameters_human": "2.07B",
+  "storage_bytes": 23090011844,
+  "storage_human": "23.1 GB",
+  "base_model": "CohereLabs/cohere-transcribe-03-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jssaluja/cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test ...",
+      "url": "https://huggingface.co/jssaluja/cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569",
+      "snippet": "Instructions to use jssaluja/cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569",
+      "url": "https://friendli.ai/models/jssaluja/cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569",
+      "snippet": "Run cohere-transcribe-punjabi-ccer-train-113953-epochs-10-test-1569 with FriendliAI inference. This model is a fine-tuned version of…"
+    },
+    {
+      "title": "Transcribe - Cohere",
+      "url": "https://cohere.com/transcribe",
+      "snippet": "Transcribe converts your business audio data into precise text for search, analytics, and automation."
+    },
+    {
+      "title": "cohere-transcribe-punjabi-ncer-train-60381-epochs-2-small",
+      "url": "https://huggingface.co/jssaluja/cohere-transcribe-punjabi-ncer-train-60381-epochs-2-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jasonclaw001/cohere-transcribe-03-2026: CohereLabs cohere ...",
+      "url": "https://github.com/jasonclaw001/cohere-transcribe-03-2026",
+      "snippet": "CohereLabs/cohere-transcribe-03-2026 exposes a single model.transcribe () method that automatically handles long-form audio chunking and exposes parameters to facilitate efficient inference. It is recommended that you let the transcribe method handle batching for you. This implementation is optimized for offline inference: for online inference, see the vLLM integration example below."
+    }
+  ]
+}

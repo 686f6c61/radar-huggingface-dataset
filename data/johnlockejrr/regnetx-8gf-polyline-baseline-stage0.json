@@ -5,7 +5,7 @@
   "author": "johnlockejrr",
   "url": "https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-baseline-stage0",
   "created_at": "2026-08-19T05:54:00.000Z",
-  "updated_at": "2026-08-19T05:54:28.000Z",
+  "updated_at": "2026-08-22T18:02:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

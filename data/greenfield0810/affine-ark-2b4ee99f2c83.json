@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-2b4ee99f2c83",
+  "slug": "greenfield0810-affine-ark-2b4ee99f2c83",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-2b4ee99f2c83",
+  "created_at": "2026-08-23T18:00:49.000Z",
+  "updated_at": "2026-08-23T18:00:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AFFiNE Self-host AI Guide",
+      "url": "https://docs.affine.pro/self-host-affine/administer/ai",
+      "snippet": "Use the AFFiNE self-host guide for AI, covering setup, configuration, operations, backups, production checks, and troubleshooting."
+    },
+    {
+      "title": "Agentic AI & Production ML for Enterprise | Affine",
+      "url": "https://affine.ai/",
+      "snippet": "Affine is the enterprise AI firm that builds agentic AI and production ML, engineered for production. 15 years deploying and scaling AI for Fortune 500 clients."
+    },
+    {
+      "title": "How to set up a custom OpenAI AI model + base URL in AFFiNE ... - GitHub",
+      "url": "https://github.com/toeverything/AFFiNE/issues/13480",
+      "snippet": "I&#x27;m running into a configuration challenge with AFFiNE and hoping someone here has already solved this. The problem: When I try to add a custom AI model using my own OpenAI-compatible API (with a custom base URL), AFFiNE still shows only..."
+    },
+    {
+      "title": "AI Configuration Issues in Self-Hosted Affine - TorchTree",
+      "url": "https://torchtree.com/en/post/affine-selfhost-ai-configuration/",
+      "snippet": "Exploring the commonly reported issues with AI custom functionality in self-hosted Affine versions, and discussing viable third-party model configuration solutions."
+    },
+    {
+      "title": "Getting AFFiNE AI Copilot Working with Custom Models and Ollama",
+      "url": "https://sneekes.app/posts/getting_affine_ai_copilot_working_with_custom_models_and_ollama/",
+      "snippet": "A complete guide to setting up AFFiNE&#x27;s AI Copilot feature with custom models, including OpenAI, Anthropic, and experimental Ollama integration."
+    }
+  ]
+}

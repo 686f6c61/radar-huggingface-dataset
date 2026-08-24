@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "beshy3752/eurekaverse-go2-parkour-seed2",
+  "slug": "beshy3752-eurekaverse-go2-parkour-seed2",
+  "author": "beshy3752",
+  "url": "https://huggingface.co/beshy3752/eurekaverse-go2-parkour-seed2",
+  "created_at": "2026-08-23T15:48:37.000Z",
+  "updated_at": "2026-08-23T15:48:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "quadruped",
+    "locomotion",
+    "parkour",
+    "unitree-go2",
+    "isaac-lab",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12625411,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beshy3752/eurekaverse-go2-parkour-seed1 · Hugging Face",
+      "url": "https://huggingface.co/beshy3752/eurekaverse-go2-parkour-seed1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "beshy3752 (Yoon Sihyung) - Hugging Face",
+      "url": "https://huggingface.co/beshy3752",
+      "snippet": "User profile of Yoon Sihyung on Hugging Face"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "eurekaverse/README.md at main · eureka-research/eurekaverse",
+      "url": "https://github.com/eureka-research/eurekaverse/blob/main/README.md",
+      "snippet": "The automatic curriculum designed by Eurekaverse enables gradual learning of complex parkour skills in simulation and can successfully transfer to the real-world, outperforming manual training courses designed by humans."
+    }
+  ]
+}

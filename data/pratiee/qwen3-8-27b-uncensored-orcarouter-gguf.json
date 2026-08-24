@@ -37,12 +37,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 102,
+  "downloads_30d": 385,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 263995553192,
-  "storage_human": "264.0 GB",
+  "storage_bytes": 177538758824,
+  "storage_human": "177.5 GB",
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
   "formats": [
     "gguf",

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "salestool/LifeInsuranceCommissionCalculator",
+  "slug": "salestool-lifeinsurancecommissioncalculator",
+  "author": "salestool",
+  "url": "https://huggingface.co/salestool/LifeInsuranceCommissionCalculator",
+  "created_at": "2026-08-24T08:34:03.000Z",
+  "updated_at": "2026-08-24T08:37:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Insurance Commission Calculator | unLocked CRM",
+      "url": "https://unlockedcrm.ai/commission-calculator",
+      "snippet": "Commission Calculator Instantly calculate expected commissions by product type, carrier, and tier. Compare compensation across carriers and forecast your income on pending applications."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Free Tools for Life-Insurance Agents · The Standard CRM",
+      "url": "https://www.thestandardcrm.io/tools",
+      "snippet": "An AI sales floor for life-insurance agents. Inbound calls answered 24/7, outbound leads worked in seconds, appointments booked on your calendar, automatically."
+    },
+    {
+      "title": "Life Insurance Telesales Income Estimator - DigitalBGA",
+      "url": "https://digitalbga.com/income-estimator/",
+      "snippet": "Instructions Use the data in your CRM to populate most of the inputs (see input explanations below on how to get the inputs). Pro Tip: Look at a 1 month period with the last day being 2 weeks ago. So if today is December 15th, run numbers for November 1st-30th. We don&#x27;t factor in the last 2 weeks to give you the opportunity to get in contact with the leads and follow ups received on the last ..."
+    },
+    {
+      "title": "AI Sales Commission Software | Sales Cookie",
+      "url": "https://salescookie.com/",
+      "snippet": "Sales Cookie | AI Sales Commission Software Powerful Commission Automation Ready to become your sales team&#x27;s hero? Sales Cookie is a powerful sales commission management solution for SMBs. Our cloud-based solution makes it easy to design and manage sales incentive plans - even very complex ones. Every sales representative gets a personalized dashboard with their goals, crediting, and rewards ..."
+    }
+  ]
+}

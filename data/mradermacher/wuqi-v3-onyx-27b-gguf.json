@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WuQi-V3-Onyx-27B-GGUF",
+  "slug": "mradermacher-wuqi-v3-onyx-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WuQi-V3-Onyx-27B-GGUF",
+  "created_at": "2026-08-23T07:18:09.000Z",
+  "updated_at": "2026-08-23T16:47:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "WuQi",
+    "WuQi-V3",
+    "zh",
+    "base_model:Alniyat5f/WuQi-V3-Onyx-27B",
+    "base_model:quantized:Alniyat5f/WuQi-V3-Onyx-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780457664,
+  "storage_human": "190.8 GB",
+  "base_model": "Alniyat5f/WuQi-V3-Onyx-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WuQi-V3-Onyx-27b-Q4_K_M.gguf · Alniyat5f/WuQi-V3-Onyx-27b-GGUF at main",
+      "url": "https://huggingface.co/Alniyat5f/WuQi-V3-Onyx-27b-GGUF/blob/main/WuQi-V3-Onyx-27b-Q4_K_M.gguf",
+      "snippet": "Instructions to use Alniyat5f/WuQi-V3-Onyx-27b-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Alniyat5f/WuQi-V3-Onyx-27b-GGUF with Transformers:"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

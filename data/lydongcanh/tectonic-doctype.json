@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lydongcanh/tectonic-doctype",
+  "slug": "lydongcanh-tectonic-doctype",
+  "author": "lydongcanh",
+  "url": "https://huggingface.co/lydongcanh/tectonic-doctype",
+  "created_at": "2026-08-23T05:42:25.000Z",
+  "updated_at": "2026-08-23T16:59:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "sentence_embedding_mean_pooled + logistic_regression",
+    "text-classification",
+    "legal",
+    "contracts",
+    "multilingual",
+    "en",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "BAAI/bge-m3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lydongcanh/tectonic",
+      "url": "https://github.com/lydongcanh/tectonic",
+      "snippet": "Contribute to lydongcanh/tectonic development by creating an account on GitHub."
+    },
+    {
+      "title": "HTML doctype declaration - W3Schools",
+      "url": "https://www.w3schools.com/tags/tag_doctype.asp",
+      "snippet": "Definition and Usage All HTML documents must start with a <!DOCTYPE> declaration. The declaration is not an HTML tag. It is an \"information\" to the browser about what document type to expect. In HTML 5, the declaration is simple:"
+    },
+    {
+      "title": "GitHub - tectonic-typesetting/tectonic: A modernized, complete, self ...",
+      "url": "https://github.com/tectonic-typesetting/tectonic",
+      "snippet": "Tectonic Tectonic is a modernized, complete, self-contained TeX / LaTeX engine, powered by XeTeX and TeXLive."
+    },
+    {
+      "title": "Tectonics as the disenchantment of Generative Artificial Intelligence ...",
+      "url": "https://link.springer.com/article/10.1007/s44223-025-00090-7",
+      "snippet": "Generative Artificial Intelligence (GAI) has entered the field of architecture as a disruptive force, challenging foundational paradigms of design theory. This editorial maps an \"AI tectonics\", a philosophical reflection on the conceptual terrain GAI opens within architectural thought. Beyond its technical novelty, generative AI compels a reevaluation of ontological and epistemological ..."
+    },
+    {
+      "title": "AI Tectonics, or the Culture Wars of Building Technology | Mario Carpo",
+      "url": "https://mariocarpo.com/essays/ai-tectonics-or-the-culture-wars-of-building-technology",
+      "snippet": "Mario Carpo is an architectural historian and critic, currently the Reyner Banham Professor of Architectural History and Theory at the Bartlett, University College London. His research and publications focus on history of early modern architecture and on the theory and criticism of contemporary design and technology."
+    }
+  ]
+}

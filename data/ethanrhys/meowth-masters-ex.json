@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EthanRhys/Meowth-Masters-EX",
+  "slug": "ethanrhys-meowth-masters-ex",
+  "author": "EthanRhys",
+  "url": "https://huggingface.co/EthanRhys/Meowth-Masters-EX",
+  "created_at": "2026-08-24T15:37:43.000Z",
+  "updated_at": "2026-08-24T15:39:25.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91896968,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/models",
+      "snippet": "I make RVC voice models of cartoons, anime and video game characters in both English and Spanish (Sometimes in other international languages)"
+    },
+    {
+      "title": "Convert Meowth (English) (Pokemon Masters Ex) (English) (RVC V2 ) Voice ...",
+      "url": "https://easyaivoice.com/run/meowth-english-pokemon-masters-ex-english",
+      "snippet": "Use the Meowth (English) (Pokemon Masters Ex) (English) (RVC V2 ) voice model online with EasyAIVoice. Upload audio, adjust pitch, and convert speech or vocals."
+    },
+    {
+      "title": "Meowth (English) (Pokemon Masters Ex) (English) AI Voice Generator",
+      "url": "https://www.vocalize.fm/voices/4849",
+      "snippet": "Generate realistic AI speech and music covers using the AI voice of Meowth (English) (Pokemon Masters Ex) (English). We provide access to over 80,000 AI voices for free."
+    },
+    {
+      "title": "Meowth (English) (Pokemon Masters Ex) (English) AI Voice Cover ...",
+      "url": "https://voicedub.ai/create/meowth-english-pokemon-masters-ex-english",
+      "snippet": "The AI Meowth (English) (Pokemon Masters Ex) (English) voice generator swaps the vocals of your favorite tracks with a studio-quality, user-created Meowth (English) (Pokemon Masters Ex) (English) model — upload a song, paste a YouTube or TikTok link, record live, or type text to hear it spoken as Meowth (English) (Pokemon Masters Ex) (English)."
+    },
+    {
+      "title": "EthanRhys/Fantina-Masters-EX · Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/Fantina-Masters-EX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

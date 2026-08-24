@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Wonderlab-Testing-Grounds/Interferon-epsilon-RP-9B-Preview-2608",
+  "slug": "wonderlab-testing-grounds-interferon-epsilon-rp-9b-preview-2608",
+  "author": "Wonderlab-Testing-Grounds",
+  "url": "https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-epsilon-RP-9B-Preview-2608",
+  "created_at": "2026-08-23T12:51:30.000Z",
+  "updated_at": "2026-08-23T13:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "RP",
+    "ERP",
+    "Roleplay",
+    "test",
+    "experimental",
+    "Qwen",
+    "finetune",
+    "Potentially unstable",
+    "Creative writing",
+    "Very high rank",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 28200300511,
+  "storage_human": "28.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/model_requests · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/model_requests/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1 ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1 Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One ..."
+    },
+    {
+      "title": "Wonderlab Bio. Off-the-shelf cell therapies without immune rejection.",
+      "url": "https://www.wonderlab.bio/",
+      "snippet": "Off-the-Shelf Cell Therapies Without Immune Rejection. AI drug discovery needs a human-cell validation foundation. Cell therapy needs HLA-matched allogeneic iPSCs. Wonderlab is the only company with a fully characterized iPSC platform covering 90%+ of the US population, providing the cells both fields require."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "AiWonderLab",
+      "url": "https://www.aiwonderlab.eu/",
+      "snippet": "The AI is the hand; the deciding stays human. We don&#x27;t count hours — we watch how far a thing reaches. It&#x27;s craft, not process. The weight is on craft. The model takes the human insight and opens potential roads. Each individual&#x27;s art is recognising which one syncs with the vision. Made because we wanted to see it exist."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KnMtthw/Taxi-v3-Q-learning",
+  "slug": "knmtthw-taxi-v3-q-learning",
+  "author": "KnMtthw",
+  "url": "https://huggingface.co/KnMtthw/Taxi-v3-Q-learning",
+  "created_at": "2026-08-23T15:37:03.000Z",
+  "updated_at": "2026-08-23T16:03:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 296057,
+  "storage_human": "296057 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aathi07/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Aathi07/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Martim03/Q-Learning-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Martim03/Q-Learning-Taxi-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yatheshl/Q-Learning-Taxi-v3: This project demonstrates the use ...",
+      "url": "https://github.com/yatheshl/Q-Learning-Taxi-v3",
+      "snippet": "The Taxi-v3 environment simulates a simple grid world where the agent (taxi) needs to pick up passengers from one location and drop them off at another while navigating obstacles on the grid. The agent learns to accomplish this task efficiently by employing Q-learning, a popular reinforcement learning algorithm."
+    },
+    {
+      "title": "Taxi-v3 Q-Learning - GitHub",
+      "url": "https://github.com/lhvy/Taxi-v3-Q-Learning",
+      "snippet": "A simple Q-learning implementation in OpenAI Gym&#x27;s \"Taxi-v3\" environment. - lhvy/Taxi-v3-Q-Learning"
+    },
+    {
+      "title": "How to Implement Q-Learning with the Taxi-v3 Environment - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-implement-q-learning-with-the-taxi-v3-environment/",
+      "snippet": "This line initializes your Taxi environment, setting the stage for your agent to start its journey! Understanding Model Evaluation After setting up the environment, you can evaluate the performance of your Q-Learning model. A typical measure is the mean reward, which indicates the average reward the agent receives per episode."
+    }
+  ]
+}

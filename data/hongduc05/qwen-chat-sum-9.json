@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hongduc05/qwen-chat-sum-9",
+  "slug": "hongduc05-qwen-chat-sum-9",
+  "author": "hongduc05",
+  "url": "https://huggingface.co/hongduc05/qwen-chat-sum-9",
+  "created_at": "2026-08-23T07:33:11.000Z",
+  "updated_at": "2026-08-23T13:27:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165623590,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hongduc05/qwen3-chat-sum · Hugging Face",
+      "url": "https://huggingface.co/hongduc05/qwen3-chat-sum",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hongduc05/qwen-chat-sum-8 · Hugging Face",
+      "url": "https://huggingface.co/hongduc05/qwen-chat-sum-8",
+      "snippet": "hongduc05 / qwen-chat-sum-8 like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    }
+  ]
+}

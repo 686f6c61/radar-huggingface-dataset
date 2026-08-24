@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shoemoney/Gemma-4-12B-Abliterated-MLX-q5",
+  "slug": "shoemoney-gemma-4-12b-abliterated-mlx-q5",
+  "author": "shoemoney",
+  "url": "https://huggingface.co/shoemoney/Gemma-4-12B-Abliterated-MLX-q5",
+  "created_at": "2026-08-24T01:01:03.000Z",
+  "updated_at": "2026-08-24T01:03:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "gemma4_unified",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "uncensored",
+    "base_model:huihui-ai/Huihui-gemma-4-12B-it-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-gemma-4-12B-it-abliterated",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2250090544,
+  "parameters_human": "2.25B",
+  "storage_bytes": 8267000023,
+  "storage_human": "8.3 GB",
+  "base_model": "huihui-ai/Huihui-gemma-4-12B-it-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "huihui-ai/Huihui-gemma-4-12B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-gemma-4-12B-it-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 12B · MLX review (2026) — 45 one-shot demos, real 0-10 scores ...",
+      "url": "https://goldiebench.com/models/gemma4mlx",
+      "snippet": "Gemma 4 12B · MLX is Google (open-weights, runs local)&#x27;s AI model — The fast free local engine — MLX + multi-token prediction, ~1.6x quicker overnight. It has a 128K tokens context window and was released 2026-07."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

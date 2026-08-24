@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "matheuscodezin/novastar",
+  "slug": "matheuscodezin-novastar",
+  "author": "matheuscodezin",
+  "url": "https://huggingface.co/matheuscodezin/novastar",
+  "created_at": "2026-08-24T15:26:49.000Z",
+  "updated_at": "2026-08-24T15:35:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "agent",
+    "en",
+    "pt",
+    "es",
+    "dataset:qsardor/Claude-Sonnet-Opus",
+    "dataset:Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset",
+    "dataset:Qwen/AgentWorldBench",
+    "dataset:perplexity-ai/draco",
+    "base_model:mondk/claude.sonnet5-qwen3-VL-8b-it",
+    "base_model:finetune:mondk/claude.sonnet5-qwen3-VL-8b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mondk/claude.sonnet5-qwen3-VL-8b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nova Star — Text AI Model",
+      "url": "https://www.fdq.ai/models/nova/nova-star",
+      "snippet": "Nova Star is Nova&#x27;s flagship proprietary model combining frontier-level reasoning with a 256K context window and strong coding performance. It&#x27;s price-optimized relative to comparable models from other providers, making it the default for demanding Nova workloads. Try Nova Star in the playground or call it via API from $1.00 / M tokens."
+    },
+    {
+      "title": "NovaStar - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1727127906921788438",
+      "snippet": "Generate stunning anime art with the &#x27;NovaStar&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "pacman_braidthin_always_forward_kinf_world_model - Hugging Face",
+      "url": "https://huggingface.co/novastar111/pacman_braidthin_always_forward_kinf_world_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NovaStars AI",
+      "url": "https://novastarsai.com/",
+      "snippet": "Elevate Your AI Journey | Helping Leaders Move Beyond the Hype to Measurable ROI."
+    },
+    {
+      "title": "Model Spawner — AI 3D Model Generator",
+      "url": "https://www.modelspawner.com/",
+      "snippet": "Turn any image or text description into a downloadable 3D model. Generate GLB, OBJ, STL, and USDZ files with AI. Free credits on signup."
+    }
+  ]
+}

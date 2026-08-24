@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fluxxd9/zen-1.5-v1.0",
+  "slug": "fluxxd9-zen-1-5-v1-0",
+  "author": "fluxxd9",
+  "url": "https://huggingface.co/fluxxd9/zen-1.5-v1.0",
+  "created_at": "2026-08-24T10:21:09.000Z",
+  "updated_at": "2026-08-24T10:26:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zen | OpenCode",
+      "url": "https://opencode.ai/docs/zen/",
+      "snippet": "Finally, we benchmarked the combination of the model/provider and came up with a list that we feel good recommending. OpenCode Zen is an AI gateway that gives you access to these models."
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "ComfyUI Resources — Free AI Model Downloads for Stable Diffusion & Flux",
+      "url": "https://comfyuiweb.com/resources",
+      "snippet": "Stable Diffusion XL 1.0 The official SDXL base model by Stability AI. Foundation for thousands of fine-tunes and the standard for high-resolution AI image generation."
+    }
+  ]
+}

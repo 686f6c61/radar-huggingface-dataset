@@ -5,7 +5,7 @@
   "author": "LouLou1Demon",
   "url": "https://huggingface.co/LouLou1Demon/pixalium-20M-instruct",
   "created_at": "2026-08-22T21:30:43.000Z",
-  "updated_at": "2026-08-22T21:45:56.000Z",
+  "updated_at": "2026-08-22T22:01:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 456,
   "trending_score": 0,
   "parameters": 29990784,
   "parameters_human": "30.0M",
-  "storage_bytes": 119979145,
-  "storage_human": "120 MB",
+  "storage_bytes": 239952449,
+  "storage_human": "240 MB",
   "base_model": "LouLou1Demon/pixalium-20M-pretrained",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "sirus",
   "url": "https://huggingface.co/sirus/Qwen3.8-27B-heretic-ara-MXFP6-MXFP8-DFlash2-GGUF",
   "created_at": "2026-08-22T14:56:49.000Z",
-  "updated_at": "2026-08-23T01:59:49.000Z",
+  "updated_at": "2026-08-23T08:31:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 135,
   "trending_score": 0,
   "parameters": 1924404480,
   "parameters_human": "1.92B",

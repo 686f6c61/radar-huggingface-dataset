@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gfaione/comfyui-models",
+  "slug": "gfaione-comfyui-models",
+  "author": "gfaione",
+  "url": "https://huggingface.co/gfaione/comfyui-models",
+  "created_at": "2026-08-23T09:30:14.000Z",
+  "updated_at": "2026-08-23T09:30:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tflite",
+    "onnx",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997891015877,
+  "storage_human": "997.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular diffusion ...",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "ComfyUI The most powerful and modular AI engine for content creation. ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output. Its powerful and modular node graph interface empowers creatives to generate images, videos, 3D models, audio, and more..."
+    },
+    {
+      "title": "comfyui AI Models | Civitai",
+      "url": "https://civitai.com/tag/comfyui",
+      "snippet": "Browse 2,237 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with comfyui."
+    },
+    {
+      "title": "ComfyUI Models & Downloads - Checkpoints, LoRAs, VAE & Video Models",
+      "url": "https://comfyui-wiki.com/en/models",
+      "snippet": "Discover ComfyUI models supported by core nodes and custom nodes. Browse checkpoints, LoRAs, VAEs, text encoders, image and video models, or upload a workflow to find ..."
+    },
+    {
+      "title": "Models - ComfyUI",
+      "url": "https://docs.comfy.org/basic-concepts/models",
+      "snippet": "Models in plain terms Supported models in ComfyUI Use models in ComfyUI Expect large downloads Beyond the main checkpoint Uninstalling models Adding Extra Model Paths Open Config File Example Structure Add Extra Custom Nodes Path Common issues Want a bit more background?"
+    }
+  ]
+}

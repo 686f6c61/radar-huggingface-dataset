@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MahmoodAnaam/flaird-modernbert-large-gated-multitask",
+  "slug": "mahmoodanaam-flaird-modernbert-large-gated-multitask",
+  "author": "MahmoodAnaam",
+  "url": "https://huggingface.co/MahmoodAnaam/flaird-modernbert-large-gated-multitask",
+  "created_at": "2026-08-24T00:24:45.000Z",
+  "updated_at": "2026-08-24T01:55:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flaird",
+    "text-classification",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 404274766,
+  "parameters_human": "404.3M",
+  "storage_bytes": 1617120400,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MahmoodAnaam/flaird-modernbert-large-gated-multitask · Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/flaird-modernbert-large-gated-multitask",
+      "snippet": "MahmoodAnaam / flaird-modernbert-large-gated-multitask like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "MahmoodAnaam/flaird-modernbert-large-gated-multitask · Discussions",
+      "url": "https://huggingface.co/MahmoodAnaam/flaird-modernbert-large-gated-multitask/discussions",
+      "snippet": "MahmoodAnaam / flaird-modernbert-large-gated-multitask like 0 TensorBoard Safetensors flaird Model card FilesFiles and versions xet MetricsTraining metrics Community Copy to bucket new New discussion New pull request Sort: Recently created"
+    },
+    {
+      "title": "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for ...",
+      "url": "https://aclanthology.org/2025.acl-long.127/",
+      "snippet": "Abstract Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder ..."
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the repository where you can find ModernBERT, our experiments to bring BERT into modernity via both architecture changes and scaling. This repository noticeably introduces FlexBERT, our modular approach to encoder building blocks, and heavily relies on .yaml configuration files to build models. The codebase builds upon MosaicBERT, and specifically the unmerged fork bringing Flash ..."
+    }
+  ]
+}

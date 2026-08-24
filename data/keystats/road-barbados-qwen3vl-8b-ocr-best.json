@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "keystats/road-barbados-qwen3vl-8b-ocr-best",
+  "slug": "keystats-road-barbados-qwen3vl-8b-ocr-best",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/road-barbados-qwen3vl-8b-ocr-best",
+  "created_at": "2026-08-23T10:05:38.000Z",
+  "updated_at": "2026-08-23T10:08:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762310,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-23T16:57:16.170Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keystats/Barbados-Traffic-Analysis-Challenge-4th-place-solution - GitHub",
+      "url": "https://github.com/keystats/Barbados-Traffic-Analysis-Challenge-4th-place-solution",
+      "snippet": "🚦 Barbados Traffic Flow Predictor Winning \"Best Analysis of Traffic Contributing Factors\" in the Zindi Challenge 🌟 The Mission On the beautiful island of Barbados, traffic congestion affects every citizen."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Barbados-Traffic-Analysis-Challenge-4th-place-solution",
+      "url": "https://github.com/keystats/Barbados-Traffic-Analysis-Challenge-4th-place-solution/blob/main/Traffic%20solvers.md",
+      "snippet": "BARBADOS TRAFFIC SOLUTION By Team Traffic Solvers (NYMFREE & KEYSTATS) The goal of this competition was to uncover the root causes of traffic congestion at the Norman Niles Roundabout and propose insights that can support informed, data-driven decision making. Our approach went beyond surface-level analysis."
+    },
+    {
+      "title": "Qwen API and Models | OpenRouter",
+      "url": "https://openrouter.ai/qwen/",
+      "snippet": "Access 85 Qwen models through the OpenRouter unified API including Qwen3.8 27B, Qwen3 Reranker 8B, and Qwen3 ASR 1.7B. Compare pricing, context windows, benchmarks, and capabilities between different Qwen models."
+    },
+    {
+      "title": "Building AI Products with Qwen",
+      "url": "https://qwen.ai/apiplatform",
+      "snippet": "Building AI Products with Qwen Built with Qwen via OpenAI-compatible API. Power apps for chat, Q&A, creative writing, translation, summarization, and coding."
+    }
+  ]
+}

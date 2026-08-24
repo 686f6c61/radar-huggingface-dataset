@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "slug": "rareconcepts-soad-mm3-vanilla-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "created_at": "2026-08-23T04:56:43.000Z",
+  "updated_at": "2026-08-23T16:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7962610747,
+  "storage_human": "8.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore 3D Models - Sketchfab",
+      "url": "https://sketchfab.com/3d-models",
+      "snippet": "Find all kinds of 3D models. From low poly assets to animated rigs & digital scans. All for your 3D, Virtual Reality, and Augmented Reality projects."
+    },
+    {
+      "title": "Rare Concepts",
+      "url": "https://rareconceptsnyc.com/",
+      "snippet": "Rare Concepts is a streetwear brand born in NYC and bound to be worldwide."
+    },
+    {
+      "title": "rareconcepts.com",
+      "url": "http://www.rareconcepts.com/",
+      "snippet": "rareconcepts.com Contact:"
+    },
+    {
+      "title": "3D Models for Free - Free3D.com",
+      "url": "https://free3d.com/",
+      "snippet": "Free 3D Models, TF3DM is the go to place where you can share your free 3d assets and download instantly any you like. TF3DM hosts 15.000+ 3d models, in various formats for BLENDER, OBJ, 3DS, C4D, MAX, MAYA, which you can download absolutely for free."
+    },
+    {
+      "title": "Supreme Values - MM2 Value List",
+      "url": "https://www.supremevalues.com/",
+      "snippet": "Supreme Values is the #1 most used and trusted Murder Mystery 2 value list and wiki, updated regularly by expert traders. Join over 5M players using our unbiased MM2 trading values since 2020."
+    }
+  ]
+}

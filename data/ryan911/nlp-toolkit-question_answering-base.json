@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ryan911/nlp-toolkit-question_answering-base",
+  "slug": "ryan911-nlp-toolkit-question_answering-base",
+  "author": "Ryan911",
+  "url": "https://huggingface.co/Ryan911/nlp-toolkit-question_answering-base",
+  "created_at": "2026-08-24T13:06:12.000Z",
+  "updated_at": "2026-08-24T13:08:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 8904905504,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Guide to Question-Answering in NLP",
+      "url": "https://shindeshu.github.io/posts/nlp/qa_guide.html",
+      "snippet": "Components of QA Systems Let&#x27;s go back to the problem with open-book answering- each question needs a reference document, which cannot be provided manually. The solution is to use another model to retrieve the most relevant document to the question, which then another model can use to do the answering. Hence this becomes a two-stage system, a retriever followed by a reader. QA systems will ..."
+    },
+    {
+      "title": "Question Answering Notebook | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/tao/resources/questionanswering_notebook/",
+      "snippet": "Question Answering The Question Answering task in NLP pertains to building a model which can answer questions posed in natural language. Many datasets (including SQuAD, the dataset we use in this notebook) pose this as a reading comprehension task i.e. given a question and a context, the goal is to predict the span within the context with a start and end position which indicates the answer to ..."
+    },
+    {
+      "title": "Question answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/question_answering",
+      "snippet": "Question answering Question answering tasks return an answer given a question. If you&#x27;ve ever asked a virtual assistant like Alexa, Siri or Google what the weather is, then you&#x27;ve used a question answering model before. There are two common types of question answering tasks:"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "question-answering · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/question-answering",
+      "snippet": "nlp benchmark information-retrieval transformers knowledge-graph question-answering summarization multi-modal semantic-search diffusion sentence-transformers colbert llm generative-ai Updated on Jan 12 Python"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "arabellako22/lunarlander-v3-dqn-scratch",
+  "slug": "arabellako22-lunarlander-v3-dqn-scratch",
+  "author": "arabellako22",
+  "url": "https://huggingface.co/arabellako22/lunarlander-v3-dqn-scratch",
+  "created_at": "2026-08-23T22:19:56.000Z",
+  "updated_at": "2026-08-23T22:43:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-dqn",
+    "lunar-lander-v3",
+    "pytorch",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45178,
+  "storage_human": "45178 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "LunarLander-v3",
+      "metric": "Mean Reward",
+      "value": 200
+    }
+  ],
+  "sources": [
+    {
+      "title": "allen73/lunarlander-v3-dqn-physical-ai · Hugging Face",
+      "url": "https://huggingface.co/allen73/lunarlander-v3-dqn-physical-ai",
+      "snippet": "🛸 LunarLander-v3 Double Dueling DQN (Physical AI) This repository contains a trained Double Dueling Deep Q-Network (DQN) model designed for flawless, stylish landings in the Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "[Lunar Lander] Deep Q-Network (DQN).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Deep%20Q-Network%20(DQN).ipynb",
+      "snippet": "3. Train the Agent with DQN Run the code cell below to train the agent from scratch. You are welcome to amend the supplied values of the parameters in the function, to try to see if you can get better performance! Alternatively, you can skip to the next step below (4. Watch a Smart Agent!), to load the saved model weights from a pre-trained agent."
+    },
+    {
+      "title": "Lunar Lander - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/box2d/lunar_lander/",
+      "snippet": "Lunar Lander ¶ This environment is part of the Box2D environments which contains general information about the environment."
+    },
+    {
+      "title": "tnvjjr/Lunar_Lander_DeepQ_Learning_Model · Hugging Face",
+      "url": "https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model",
+      "snippet": "Lunar Lander Deep Q-Learning Model A Deep Q-Network (DQN) implementation to train an agent for the Lunar Lander environment from OpenAI Gym, complete with an interactive visualizer using Pygame."
+    },
+    {
+      "title": "GitHub - dcbothra/lunarlander_dqn: Lunar Lander v3 implementation using DQN",
+      "url": "https://github.com/dcbothra/lunarlander_dqn",
+      "snippet": "This project implements a Deep Q-Network (DQN) to train an agent in the LunarLander-v3 environment from Gymnasium. The goal is to achieve a reward threshold greater than 200 using reward shaping and exploration strategies. Training is optimized to complete in under 2 hours on standard CPU/GPU setups."
+    }
+  ]
+}

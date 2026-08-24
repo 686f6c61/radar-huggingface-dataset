@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mesiu650/GR00T-N1.6-LIBERO-llm-w4a4-flatquant-tf32",
+  "slug": "mesiu650-gr00t-n1-6-libero-llm-w4a4-flatquant-tf32",
+  "author": "mesiu650",
+  "url": "https://huggingface.co/mesiu650/GR00T-N1.6-LIBERO-llm-w4a4-flatquant-tf32",
+  "created_at": "2026-08-24T14:16:25.000Z",
+  "updated_at": "2026-08-24T14:16:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "onnx",
+    "gr00t",
+    "quantization",
+    "w4a4",
+    "flatquant",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407590183,
+  "storage_human": "408 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Siqi Chen / Ice - Homepage",
+      "url": "https://tj-chen-1209.github.io/projects/libero-grootn1.6/",
+      "snippet": "This project demonstrates a full workflow to adapt GR00T-N1.6 (a 3B-parameter vision-language-action model) to LIBERO language-conditioned manipulation tasks. My focus is not only training, but also building a reproducible system: dataset integration, embodiment modality mapping, scalable training scripts for multiple suites, and a reliable ..."
+    },
+    {
+      "title": "GR00T N1.6 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_6/",
+      "snippet": "GR00T N1.6 converges faster than GR00T N1.5, leading to smoother actions, but requires more careful tuning to prevent overfitting. We apply stronger state regularization, additional data augmentations, and co-training with pretraining data to regularize the model during post-training."
+    },
+    {
+      "title": "0xAnkitSingh/GR00T-N1.6-LIBERO · Hugging Face",
+      "url": "https://huggingface.co/0xAnkitSingh/GR00T-N1.6-LIBERO",
+      "snippet": "0xAnkitSingh / GR00T-N1.6-LIBERO like 2 Robotics Transformers Safetensors 4 datasets English Gr00tN1d6 GR00T Nvidia LIBERO libero_goal libero_spatial libero_object libero_10 vision-language-action physical-ai License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - tj-chen-1209/Libero_GR00T: 2026.1.8 GR00T finetune",
+      "url": "https://github.com/tj-chen-1209/Libero_GR00T",
+      "snippet": "This repository demonstrates fine-tuning NVIDIA&#x27;s GR00T-N1.6 (3B parameter vision-language-action model) on the LIBERO benchmark for robot manipulation tasks. The project achieves 97.8% average success rate across 40 tasks in 4 LIBERO task suites."
+    },
+    {
+      "title": "0xAnkitSingh/GR00T-N1.6-LIBERO at main - Hugging Face",
+      "url": "https://huggingface.co/0xAnkitSingh/GR00T-N1.6-LIBERO/tree/main/experiment_cfg",
+      "snippet": "0xAnkitSingh / GR00T-N1.6-LIBERO like 1 Robotics Transformers Safetensors 4 datasets English Gr00tN1d6 GR00T Nvidia LIBERO libero_goal libero_spatial libero_object libero_10 vision-language-action physical-ai License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

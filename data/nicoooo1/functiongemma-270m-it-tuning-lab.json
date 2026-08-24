@@ -5,7 +5,7 @@
   "author": "nicoooo1",
   "url": "https://huggingface.co/nicoooo1/functiongemma-270m-it-tuning-lab",
   "created_at": "2026-08-03T07:58:57.000Z",
-  "updated_at": "2026-08-18T08:12:28.000Z",
+  "updated_at": "2026-08-24T01:16:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": 268098176,
   "parameters_human": "268.1M",
-  "storage_bytes": 3250757768,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 3786986601,
+  "storage_human": "3.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

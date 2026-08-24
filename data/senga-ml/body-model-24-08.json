@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "senga-ml/body-model-24-08",
+  "slug": "senga-ml-body-model-24-08",
+  "author": "senga-ml",
+  "url": "https://huggingface.co/senga-ml/body-model-24-08",
+  "created_at": "2026-08-24T10:16:59.000Z",
+  "updated_at": "2026-08-24T11:12:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202112440,
+  "parameters_human": "202.1M",
+  "storage_bytes": 2427937224,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "senga-ml (Senga Technologies) - Hugging Face",
+      "url": "https://huggingface.co/datasets/senga-ml/",
+      "snippet": "Org profile for Senga Technologies on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "senga-ml/body-base · Hugging Face",
+      "url": "https://huggingface.co/senga-ml/body-base",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed]"
+    },
+    {
+      "title": "senga-ml / dnote-body-compact Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/senga-ml/dnote-body-compact/773b9ac440da9aa225ea78f535a2408a8351df4c/overview",
+      "snippet": "Discover potential threats in the senga-ml / dnote-body-compact model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API keys required to view. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources. Just want to call them? Skip the ..."
+    }
+  ]
+}

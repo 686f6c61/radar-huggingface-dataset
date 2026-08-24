@@ -5,7 +5,7 @@
   "author": "themohal",
   "url": "https://huggingface.co/themohal/trocr-small-saraiki",
   "created_at": "2026-08-21T16:54:46.000Z",
-  "updated_at": "2026-08-22T15:47:13.000Z",
+  "updated_at": "2026-08-22T20:51:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 468,
+  "downloads_30d": 596,
   "trending_score": 0,
   "parameters": 61677568,
   "parameters_human": "61.7M",
-  "storage_bytes": 21474345309,
-  "storage_human": "21.5 GB",
+  "storage_bytes": 42948678936,
+  "storage_human": "42.9 GB",
   "base_model": "microsoft/trocr-small-printed",
   "formats": [
     "safetensors"

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ahadadada/Ahadadada_Jailbreak_Qwen3.8_27B",
+  "slug": "ahadadada-ahadadada_jailbreak_qwen3-8_27b",
+  "author": "ahadadada",
+  "url": "https://huggingface.co/ahadadada/Ahadadada_Jailbreak_Qwen3.8_27B",
+  "created_at": "2026-08-24T00:59:49.000Z",
+  "updated_at": "2026-08-24T04:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "jailbreak",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "mtp",
+    "agentic",
+    "coding",
+    "llama-cpp",
+    "text-generation-inference",
+    "vision-language-model",
+    "vlm",
+    "image-understanding",
+    "visual-question-answering",
+    "visual-reasoning",
+    "document-understanding",
+    "OCR",
+    "image-captioning",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 59705022080,
+  "storage_human": "59.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 Jailbreak Risk — What the First Public Claim Does and Does Not ...",
+      "url": "https://www.penligent.ai/hackinglabs/qwen3-8-jailbreak/",
+      "snippet": "Assess the Qwen3.8 jailbreak claim, reasoning-mode attack paths, coding-agent blast radius, safe testing methods, and practical defenses without overstating the evidence."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "cooperleong00/Qwen3-8B-Jailbroken · Hugging Face",
+      "url": "https://huggingface.co/cooperleong00/Qwen3-8B-Jailbroken",
+      "snippet": "This jailbroken LLM is released strictly for academic research purposes in AI safety and model alignment studies. The author bears no responsibility for any misuse or harm resulting from the deployment of this model."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    }
+  ]
+}

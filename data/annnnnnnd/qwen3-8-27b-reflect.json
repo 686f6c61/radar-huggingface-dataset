@@ -5,7 +5,7 @@
   "author": "annnnnnnd",
   "url": "https://huggingface.co/annnnnnnd/Qwen3.8-27B-Reflect",
   "created_at": "2026-08-22T15:30:18.000Z",
-  "updated_at": "2026-08-22T17:37:11.000Z",
+  "updated_at": "2026-08-22T19:24:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 58,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 63982166560,
-  "storage_human": "64.0 GB",
+  "storage_bytes": 141187613760,
+  "storage_human": "141.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

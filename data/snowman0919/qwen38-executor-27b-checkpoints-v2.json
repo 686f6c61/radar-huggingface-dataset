@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "snowman0919/qwen38-executor-27b-checkpoints-v2",
+  "slug": "snowman0919-qwen38-executor-27b-checkpoints-v2",
+  "author": "snowman0919",
+  "url": "https://huggingface.co/snowman0919/qwen38-executor-27b-checkpoints-v2",
+  "created_at": "2026-08-23T16:46:23.000Z",
+  "updated_at": "2026-08-24T05:14:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen",
+    "qwen3.8",
+    "executor",
+    "tool-calling",
+    "multimodal",
+    "qlora",
+    "dataset:snowman0919/qwen38-executor-train-v2",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14754482819,
+  "storage_human": "14.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "snowman0919/qwen38-executor-27b-v1 · Hugging Face",
+      "url": "https://huggingface.co/snowman0919/qwen38-executor-27b-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "snowman0919/qwen38-executor-27b-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/snowman0919/qwen38-executor-27b-v1/tree/main",
+      "snippet": "Load model with FastModel ... main qwen38-executor-27b-v1 Ctrl+K Ctrl+K 1 contributor History:3 commits snowman0919 mark local merge complete 0119ac1 verified1 day ago evaluationAdd files using upload-large-folder tool1 day ago run_statemark local merge complete1 day ago .gitattributes Safe 1.57 kBAdd files using upload-large-folder tool1 day ..."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026)",
+      "url": "https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/",
+      "snippet": "What are you actually running? Qwen3.8-27B is a dense 27B vision-language model: text, images, and video (including hour-scale video) in one checkpoint, Apache-2.0 licensed. Native context is 262,144 tokens — the \"extensible up to 1,000,000\" line on the card refers to a Qwen Cloud hosted feature that is \"coming soon\", so plan around 256K locally."
+    }
+  ]
+}

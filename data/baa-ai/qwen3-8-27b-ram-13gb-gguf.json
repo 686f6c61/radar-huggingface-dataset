@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "baa-ai/Qwen3.8-27B-RAM-13GB-GGUF",
+  "slug": "baa-ai-qwen3-8-27b-ram-13gb-gguf",
+  "author": "baa-ai",
+  "url": "https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-13GB-GGUF",
+  "created_at": "2026-08-23T09:11:52.000Z",
+  "updated_at": "2026-08-23T09:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "faithful-retrieval",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 12580874624,
+  "storage_human": "12.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B VRAM Requirements: 13GB to 54GB, Explained",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-vram-requirements",
+      "snippet": "How much VRAM will Qwen3.8-27B need? Projections say ~17GB at 4-bit. The quant ladder, the context math, and which GPUs actually work."
+    },
+    {
+      "title": "baa-ai/Qwen3.8-27B-RAM-31GB-GGUF · Hugging Face",
+      "url": "https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-31GB-GGUF",
+      "snippet": "Mixed-precision, imatrix-calibrated GGUF of Qwen/Qwen3.8-27B, prepared by baa.ai. This is the language model (text) GGUF; for the vision-preserving build use the MLX sibling."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "27B AI on your Pc? AMD Just made It possible with Qwen3.8 27B",
+      "url": "https://www.pcquest.com/news/27b-ai-on-your-pc-amd-just-made-it-possible-with-qwen38-27b-12268501",
+      "snippet": "27B AI on your Pc? AMD Just made It possible with Qwen3.8 27B AMD has brought Day 0 support for Qwen3.8 27B to compatible Ryzen AI Max+ and Radeon AI PRO R9700 systems, allowing developers to run the 27B model locally with reported speeds of up to 51.8 tokens per second."
+    },
+    {
+      "title": "Qwen3.8-27B GGUF: Which Quant to Download for Your GPU",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-gguf",
+      "snippet": "Qwen3.8 27B — Ali baba&#x27;s dense 27-billion-parameter model, Apache 2.0 weights released August 13-14, 2026 — runs unusually cheap locally because its hybrid attention caches only 16 of its 64 layers, so a 4-bit quant on 24GB comfortably carries 32K-64K tokens of context."
+    }
+  ]
+}

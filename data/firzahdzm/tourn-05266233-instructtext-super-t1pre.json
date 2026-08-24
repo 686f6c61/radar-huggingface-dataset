@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-05266233-instructtext-super-t1pre",
+  "slug": "firzahdzm-tourn-05266233-instructtext-super-t1pre",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-05266233-instructtext-super-t1pre",
+  "created_at": "2026-08-19T17:27:30.000Z",
+  "updated_at": "2026-08-23T22:19:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 1418270720,
+  "parameters_human": "1.42B",
+  "storage_bytes": 19856053280,
+  "storage_human": "19.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "firzahdzm/tourn-5cf332c4-instructtext-c2 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-5cf332c4-instructtext-c2",
+      "snippet": "Instructions to use firzahdzm/tourn-5cf332c4-instructtext-c2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use firzahdzm/tourn-5cf332c4-instructtext-c2 with PEFT: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources ..."
+    },
+    {
+      "title": "firzahdzm/tourn-5cf332c4-instructtext-c3 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-5cf332c4-instructtext-c3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "firzahdzm-instruct-1e8c8e8e20b2-01 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/firzahdzm-instruct-1e8c8e8e20b2-01",
+      "snippet": "Run firzahdzm/instruct-1e8c8e8e20b2-01 privately via Venice.ai - Zero tracking, uncensored privacy ai uncensored ai-model llm venice-ai firzahdzm-instruct-1e8c8e8e20b2-01"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

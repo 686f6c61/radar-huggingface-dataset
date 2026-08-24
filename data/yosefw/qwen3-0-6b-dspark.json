@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yosefw/Qwen3-0.6B-DSpark",
+  "slug": "yosefw-qwen3-0-6b-dspark",
+  "author": "yosefw",
+  "url": "https://huggingface.co/yosefw/Qwen3-0.6B-DSpark",
+  "created_at": "2026-08-23T22:22:45.000Z",
+  "updated_at": "2026-08-23T23:38:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "custom_code",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 317425793,
+  "parameters_human": "317.4M",
+  "storage_bytes": 2420396039,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSpec/deepspec/modeling/dspark/qwen3 at main · deepseek-ai ... - GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSpec/tree/main/deepspec/modeling/dspark/qwen3",
+      "snippet": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms - deepseek-ai/DeepSpec"
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Automodel/examples/speculative/dspark/qwen3_0.6b_dspark.yaml ... - GitHub",
+      "url": "https://github.com/NVIDIA-NeMo/Automodel/blob/main/examples/speculative/dspark/qwen3_0.6b_dspark.yaml",
+      "snippet": "/ examples / speculative / dspark / qwen3_0.6b_dspark.yaml Code Blame 80 lines (69 loc) · 3.21 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 ..."
+    },
+    {
+      "title": "DSpark Configuration Files | deepseek-ai/DeepSpec | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSpec/5.1-dspark-configuration-files",
+      "snippet": "DSpark Configuration Files Relevant source files This page documents the configuration system for the DSpark algorithm across various target models, including Qwen3 and Gemma4. These configuration files define the structural parameters of the draft model, the optimization settings for the training process, and the logic for initializing experiment directories. Overview of Configuration ..."
+    }
+  ]
+}

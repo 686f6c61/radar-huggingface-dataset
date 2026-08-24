@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OPPOer/CuteTTS-distill",
+  "slug": "oppoer-cutetts-distill",
+  "author": "OPPOer",
+  "url": "https://huggingface.co/OPPOer/CuteTTS-distill",
+  "created_at": "2026-08-24T12:25:01.000Z",
+  "updated_at": "2026-08-24T12:27:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "cutetts",
+    "text-to-speech",
+    "voice-cloning",
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "arxiv:2608.08638",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1228159892,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CuteTTS: Efficient and High-Quality Speech Synthesis via Autoregressive ...",
+      "url": "https://arxiv.org/pdf/2608.08638",
+      "snippet": "We introduce guidance-step distillation, which unifies classifier-free guidance re-moval and interval-wise integration in a single diffusion head. Under the paired efficiency protocol, the distilled model lowers mean first-audio latency by 23.3% and mean real-time factor by 40.8% while preserving synthesis quality close to that of the base model."
+    },
+    {
+      "title": "[2608.08638] CuteTTS: Efficient and High-Quality Speech Synthesis via ...",
+      "url": "https://arxiv.org/abs/2608.08638",
+      "snippet": "Evaluations on LibriSpeech and Seed-TTS-Eval demonstrate competitive intelligibility and speaker similarity in zero-shot voice cloning, while distillation lowers first-audio latency by 23.3% and real-time factor by 40.8% relative to the base model with comparable objective and subjective quality."
+    },
+    {
+      "title": "Paper page - CuteTTS: Efficient and High-Quality Speech Synthesis via ...",
+      "url": "https://huggingface.co/papers/2608.08638",
+      "snippet": "Abstract CuteTTS is a compact continuous-autoregressive text-to-speech system that uses causal VAE latents, patch-level autoregression, and flow-matching with distilled guidance to achieve high-fidelity zero-shot voice cloning at reduced latency."
+    },
+    {
+      "title": "AI distillation attacks in the US-China contest - iiss.org",
+      "url": "https://www.iiss.org/online-analysis/cyber-power-matrix/2026/05/ai-distillation-attacks-in-the-uschina-contest/",
+      "snippet": "Distillation attacks by adversaries have been framed by the White House as a national-security concern. The illicit use of model distillation has emerged as a significant vector in the US-China competition for AI supremacy."
+    },
+    {
+      "title": "Detecting and preventing distillation attacks &#92; Anthropic",
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "snippet": "Massive volume concentrated in a few areas, highly repetitive structures, and content that maps directly onto what is most valuable for training an AI model are the hallmarks of a distillation attack. How we&#x27;re responding We continue to invest heavily in defenses that make such distillation attacks harder to execute and easier to identify."
+    }
+  ]
+}

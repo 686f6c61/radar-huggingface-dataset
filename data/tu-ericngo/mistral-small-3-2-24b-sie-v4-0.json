@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tu-ericngo/Mistral-Small-3.2-24B-SIE-v4.0",
+  "slug": "tu-ericngo-mistral-small-3-2-24b-sie-v4-0",
+  "author": "tu-ericngo",
+  "url": "https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-SIE-v4.0",
+  "created_at": "2026-08-24T00:52:36.000Z",
+  "updated_at": "2026-08-24T00:53:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1495654731,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tu-ericngo/Mistral-Small-3.2-24B-SIE-v1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-SIE-v1.0/tree/main",
+      "snippet": "Instructions to use tu-ericngo/Mistral-Small-3.2-24B-SIE-v1. with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use tu-ericngo/Mistral-Small-3.2-24B-SIE-v1. with Transformers:"
+    },
+    {
+      "title": "tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4.0 · Hugging Face",
+      "url": "https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral Small 3.2 - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-small-3-2-25-06",
+      "snippet": "An update to our previous small model, released June 2025."
+    },
+    {
+      "title": "GitHub - inferless/mistral-small-3.2-24b-instruct · GitHub",
+      "url": "https://github.com/inferless/mistral-small-3.2-24b-instruct",
+      "snippet": "Mistral-Small-3.2-24B-Instruct-2506 is a 24-billion-parameter instruction-tuned model from Mistral AI designed for strong text performance with optional vision support and a large context window. It&#x27;s well-suited for tasks like code assistance, reasoning, multilingual chat, and structured outputs."
+    },
+    {
+      "title": "Mistral: Mistral Small 3.2 24B - AI Model Details & Bench...",
+      "url": "https://benchable.ai/models/mistralai/mistral-small-3.2-24b-instruct-2506",
+      "snippet": "Mistral-Small-3.2-24B-Instruct-2506, created on June 20, 2025, is an updated 24B parameter model from Mistral, optimized for instruction following, repetition reduction, and improved function calling. It supports image and text inputs with structured outputs and function/tool calling. The model performs among the fastest models, ranking in the top tier for speed (68th percentile), and ..."
+    }
+  ]
+}

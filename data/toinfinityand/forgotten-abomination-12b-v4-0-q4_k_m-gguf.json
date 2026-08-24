@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "toinfinityand/Forgotten-Abomination-12B-v4.0-Q4_K_M-GGUF",
+  "slug": "toinfinityand-forgotten-abomination-12b-v4-0-q4_k_m-gguf",
+  "author": "toinfinityand",
+  "url": "https://huggingface.co/toinfinityand/Forgotten-Abomination-12B-v4.0-Q4_K_M-GGUF",
+  "created_at": "2026-08-24T13:47:35.000Z",
+  "updated_at": "2026-08-24T13:48:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:ReadyArt/Forgotten-Abomination-12B-v4.0",
+    "base_model:merge:ReadyArt/Forgotten-Abomination-12B-v4.0",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 7477208032,
+  "storage_human": "7.5 GB",
+  "base_model": "ReadyArt/Forgotten-Abomination-12B-v4.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Forgotten-Abomination-12B-v4.0 · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Forgotten-Abomination-12B-v4.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Forgotten-Abomination-12B-v4.0-Q5_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Forgotten-Abomination-12B-v4.0-Q5_K_M-GGUF",
+      "snippet": "ERP conversational License: apache-2.0 Model card Files Files and versions Community Use this model"
+    },
+    {
+      "title": "Forgotten Abomination 12B V4.0 — AI Model | Antbase",
+      "url": "https://antbase.ai/models/forgotten-abomination-12b-v4-0",
+      "snippet": "Overview Forgotten Abomination 12B V4.0 is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "Forgotten Abomination 12B V4.0 by ReadyArt",
+      "url": "https://llm-explorer.com/model/ReadyArt%2FForgotten-Abomination-12B-v4.0,4MG5NpzKU0fHCODMuhCPi0",
+      "snippet": "Forgotten Abomination 12B V4.0 is an open-source 12b LLM by ReadyArt. VRAM 24.5GB, 1000K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
+    }
+  ]
+}

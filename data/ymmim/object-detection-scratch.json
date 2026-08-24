@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "YMmim/object-detection-scratch",
+  "slug": "ymmim-object-detection-scratch",
+  "author": "YMmim",
+  "url": "https://huggingface.co/YMmim/object-detection-scratch",
+  "created_at": "2026-08-23T06:24:16.000Z",
+  "updated_at": "2026-08-23T06:31:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "object-detection",
+    "faster-rcnn",
+    "yolo",
+    "pascal-voc",
+    "educational",
+    "from-scratch",
+    "en",
+    "dataset:pascal-voc-2007",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scratch-detection Object Detection Model by Projects",
+      "url": "https://universe.roboflow.com/projects-ap1fu/scratch-detection-p4r1h",
+      "snippet": "399 open source scratch images plus a pre-trained scratch-detection model and API. Created by Projects"
+    },
+    {
+      "title": "object-detection-scratch/README.md at main - GitHub",
+      "url": "https://github.com/MinhCYB/object-detection-scratch/blob/main/README.md",
+      "snippet": "Object Detection Final Project 2026 — Student Package This package contains only the public train/validation dataset, annotations, evaluation tool, assignment statement, and the standard Docker environment. It contains no hidden-test images or labels, instructor mappings, dataset builder, or pretrained model weights."
+    },
+    {
+      "title": "GitHub - Pranay22077/YOLOv8-architecture-from-scratch",
+      "url": "https://github.com/Pranay22077/YOLOv8-architecture-from-scratch",
+      "snippet": "A custom implementation of YOLOv8 (You Only Look Once) object detection model built entirely from scratch for deep learning research and educational purposes. This project implements the YOLOv8 architecture from the ground up, focusing on understanding the core concepts and mechanics behind modern ..."
+    },
+    {
+      "title": "Best Object Detection Models 2026: RF-DETR, YOLOv12 & Beyond",
+      "url": "https://blog.roboflow.com/best-object-detection-models/",
+      "snippet": "Object detection powers applications from autonomous vehicles to production line monitoring, and the model landscape keeps moving: transformer architectures now hold the accuracy-latency frontier, attention mechanisms have reworked the YOLO line, and zero-shot models detect objects from text prompts alone. This guide covers the best object detection models, how they benchmark, and how to run them."
+    },
+    {
+      "title": "Building your own Object Detector from Scratch with Tensorflow",
+      "url": "https://pub.towardsai.net/building-your-own-object-detector-from-scratch-with-tensorflow-bfeadfaddad8",
+      "snippet": "In this story, we covered the basics of building a toy object detector from scratch using TensorFlow. We aimed to illustrate the challenges and concepts behind object detectors and provide some understanding of how this technology works."
+    }
+  ]
+}

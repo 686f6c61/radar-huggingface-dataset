@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ri7elyass/qwen2.5-coder-text2sql",
+  "slug": "ri7elyass-qwen2-5-coder-text2sql",
+  "author": "ri7elyass",
+  "url": "https://huggingface.co/ri7elyass/qwen2.5-coder-text2sql",
+  "created_at": "2026-08-23T12:37:42.000Z",
+  "updated_at": "2026-08-23T12:37:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15794732,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v2",
+      "snippet": "Qwen2.5-Coder inherits the vocabulary from Qwen2.5 but introduces several special tokens to help the model better understand code. Table 2 presents an overview of the special tokens added during training to better capture different forms of code data."
+    },
+    {
+      "title": "[2409.12186] Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2409.12186",
+      "snippet": "As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities while retaining general and math ..."
+    },
+    {
+      "title": "thisavros/qwen25coder-1_5b-text2sql-lora-r32 · Hugging Face",
+      "url": "https://huggingface.co/thisavros/qwen25coder-1_5b-text2sql-lora-r32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder: Code More, Learn More!",
+      "url": "https://qwen.ai/blog?id=qwen2.5-coder",
+      "snippet": "Qwen2.5-Coder is part of the Qwen2.5 series, available in three model sizes: 1.5B, 7B, and a 32B version (coming soon). This update focuses on two main improvements: scaling up the code training data and enhancing coding capabilities while maintaining strong performance in other core areas like math and general tasks."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "As of now, Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers; 🛠 Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios;"
+    }
+  ]
+}

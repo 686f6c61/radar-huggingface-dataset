@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "NYSgpt/biomed-encoder",
+  "slug": "nysgpt-biomed-encoder",
+  "author": "NYSgpt",
+  "url": "https://huggingface.co/NYSgpt/biomed-encoder",
+  "created_at": "2026-08-20T23:38:46.000Z",
+  "updated_at": "2026-08-24T04:30:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "retrieval",
+    "biomedical",
+    "preprints",
+    "biorxiv",
+    "medrxiv",
+    "bge-m3",
+    "dense-retrieval",
+    "CSHL-CPT",
+    "feature-extraction",
+    "en",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293222629,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYSgpt (Brendan Stanton) - Hugging Face",
+      "url": "https://huggingface.co/NYSgpt",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 15 hours ago ... published a model about 15 hours ago"
+    },
+    {
+      "title": "BiomedGPT: A Unified Biomedical Generative Pre-trained Transformer for ...",
+      "url": "https://arxiv.org/html/2305.17100v2",
+      "snippet": "Implementing unified biomedical AI is challenging: the versatility requires comprehension of multi-domain datasets, standardization of multi-modal inputs/outputs, and diversity of training tasks. Until recently, few studies have explored fine-tuning the large language model (LLM) with a visual encoder to achieve a unified biomedical AI model."
+    },
+    {
+      "title": "BiomedGPT: Multimodal Transformer for Biomed AI",
+      "url": "https://www.emergentmind.com/topics/biomedgpt",
+      "snippet": "BiomedGPT is a class of large-scale, multimodal transformer models that integrate text, image, and molecular data for diverse biomedical applications. BiomedGPT leverages an encoder-decoder architecture with masked modeling and instruction tuning to excel in tasks such as radiology reporting, clinical QA, and molecular analysis. Evaluations across benchmark datasets show strong performance in ..."
+    },
+    {
+      "title": "stanford-crfm/BioMedLM · Hugging Face",
+      "url": "https://huggingface.co/stanford-crfm/BioMedLM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - taokz/BiomedGPT: BiomedGPT: A Generalist Vision-Language ...",
+      "url": "https://github.com/taokz/BiomedGPT",
+      "snippet": "A Generalist Vision-Language Foundation Model for Diverse Biomedical Tasks. BiomedGPT is pre-trained and fine-tuned with multi-modal & multi-task biomedical datasets. Details of used datasets are shown in datasets.md. If you have any questions, feel free to contact us or post issues. [2025/07/07] Released larger-scale checkpoints—up to 5× larger (930M parameters)—including stronger large ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/JarvisVLA-Qwen2-VL-7B-i1-GGUF",
+  "slug": "mradermacher-jarvisvla-qwen2-vl-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/JarvisVLA-Qwen2-VL-7B-i1-GGUF",
+  "created_at": "2026-08-24T00:06:18.000Z",
+  "updated_at": "2026-08-24T00:52:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "VLA",
+    "Minecraft",
+    "en",
+    "dataset:CraftJarvis/minecraft-vla-sft",
+    "base_model:CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+    "base_model:quantized:CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88970551264,
+  "storage_human": "89.0 GB",
+  "base_model": "CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CraftJarvis/JarvisVLA: Official Implementation of \"JARVIS-VLA ...",
+      "url": "https://github.com/CraftJarvis/JarvisVLA",
+      "snippet": "Official Implementation of \"JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse\" - CraftJarvis/JarvisVLA"
+    },
+    {
+      "title": "CraftJarvis/JarvisVLA-Qwen2-VL-7B · Hugging Face",
+      "url": "https://huggingface.co/CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+      "snippet": "Introduction JarvisVLA-Qwen2-VL-7B is a Visual-Language-Action (VLA) model specifically tailored for the open-world game Minecraft. Based on human language instructions, JarvisVLA-Qwen2-VL-7B masters thousands of in-game skills, empowering endless creativity and interaction in Minecraft&#x27;s expansive universe!"
+    },
+    {
+      "title": "JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play ...",
+      "url": "https://arxiv.org/html/2503.16365v2",
+      "snippet": "Qwen2-VL, Qwen2-VL (IL) and JARVIS-VLA -Qwen2-VL represent the training on the original qwen checkpoint, post-training on only large-scale imitation learning trajectories, and post-trained on VLP intermediate model."
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play ...",
+      "url": "https://arxiv.org/html/2503.16365v1",
+      "snippet": "In our experiments, we employ Llava-Next [27] and Qwen2-VL [43] as base vision language models, as both models provide robust support for multi-image reasoning, enabling enhanced perception and contextual understanding. Another key distinguishing feature of JARVIS-VLA compared to prior VLA models is the integration of an action decoder."
+    }
+  ]
+}

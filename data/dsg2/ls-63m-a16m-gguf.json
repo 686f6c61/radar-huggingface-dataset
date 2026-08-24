@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Dsg2/LS-63M-A16M-GGUF",
+  "slug": "dsg2-ls-63m-a16m-gguf",
+  "author": "Dsg2",
+  "url": "https://huggingface.co/Dsg2/LS-63M-A16M-GGUF",
+  "created_at": "2026-08-24T07:50:20.000Z",
+  "updated_at": "2026-08-24T08:44:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "dataset:bigcode/the-stack-v2",
+    "dataset:bigcode/starcoderdata",
+    "dataset:Salesforce/wikitext",
+    "base_model:Dsg2/LS-63M-A16M",
+    "base_model:quantized:Dsg2/LS-63M-A16M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 69640704,
+  "parameters_human": "69.6M",
+  "storage_bytes": 214602239,
+  "storage_human": "215 MB",
+  "base_model": "Dsg2/LS-63M-A16M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dsg2/LS-63M-A16M · Hugging Face",
+      "url": "https://huggingface.co/Dsg2/LS-63M-A16M",
+      "snippet": "LS-63M-A16M Miniature mixture of experts model with top-1 routing. Trained entirely on a 1660 super. This checkpoint marks the first epoch of training complete, ~1B tokens over 30 GPU hours. Total parameters: 63M Active parameters: 16M context length: 8192 Training end evals:"
+    },
+    {
+      "title": "LS - a Dsg2 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Dsg2/ls",
+      "snippet": "LaoShu 🐭: cute little models, no practicality but you still keep them anyways"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Dsg2 Model | AI-Enhanced Research Platform - RDDC",
+      "url": "https://rddc.tsinghua-gd.org/model/6508031",
+      "snippet": "Dsg2 gene editing mouse model with targeted mutation. AI-enhanced phenotype analysis and predictive modeling for accelerated disease research."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

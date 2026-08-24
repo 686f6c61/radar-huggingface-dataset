@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "javiermadie2/kakaroto-voz-goku",
+  "slug": "javiermadie2-kakaroto-voz-goku",
+  "author": "javiermadie2",
+  "url": "https://huggingface.co/javiermadie2/kakaroto-voz-goku",
+  "created_at": "2026-08-23T03:42:44.000Z",
+  "updated_at": "2026-08-23T03:43:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261000442,
+  "storage_human": "261 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Goku Kakaroto AI Voice Generator | Fish Audio",
+      "url": "https://fish.audio/m/4f7388580af64aa59b2be5f637b0aabf/",
+      "snippet": "Generate realistic Goku Kakaroto voice with AI text to speech. Used by 561+ creators. Free to try."
+    },
+    {
+      "title": "Son Goku/Kakarot [ENG Dub] (Dragon Ball) - (RVC V2) 330 Epochs",
+      "url": "https://voice-models.com/model/1nHag6egupc",
+      "snippet": "Son Goku/Kakarot [ENG Dub] (Dragon Ball) - (RVC V2) 330 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Goku/kakarot AI Voice Generator | Fish Audio",
+      "url": "https://fish.audio/m/037217e214514157b63ae1d0252c924a/",
+      "snippet": "Goku/kakarot by aeronbenito24050059 This vibrant and intense male voice is characterized by high energy and a dramatic emotional range, typical of an action anime protagonist. The performance transitions seamlessly from a determined and calm delivery to powerful, expressive shouting with a slightly raspy quality."
+    },
+    {
+      "title": "Generador de Voz AI Goku (Mario Castañeda) | Fish Audio",
+      "url": "https://fish.audio/es/m/9f850ee9ada24b20a6866825eaefd3f8/",
+      "snippet": "Generador de voz AI Goku (Mario Castañeda) gratuito por Fish Audio Genera la voz Goku (Mario Castañeda), usada 355.178 veces con 2066 me gusta. Crea un discurso Masculino, Mediana Edad, Goku con IA de texto a voz."
+    },
+    {
+      "title": "goku AI Voice & Text-To-Speech Generator - Vocalize",
+      "url": "https://www.vocalize.fm/voices/1035",
+      "snippet": "Generate realistic AI speech and music covers using the AI voice of goku. We provide access to over 80,000 AI voices for free."
+    }
+  ]
+}

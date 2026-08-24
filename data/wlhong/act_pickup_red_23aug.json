@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wlhong/act_pickup_red_23aug",
+  "slug": "wlhong-act_pickup_red_23aug",
+  "author": "wlhong",
+  "url": "https://huggingface.co/wlhong/act_pickup_red_23aug",
+  "created_at": "2026-08-23T09:17:31.000Z",
+  "updated_at": "2026-08-23T09:18:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:wlhong/pickup-red-to-chair-23aug_20260823_115200",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206713000,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wlhong/pickup-red-to-chair-trial_20260823_112626 at refs/convert/parquet",
+      "url": "https://huggingface.co/datasets/wlhong/pickup-red-to-chair-trial_20260823_112626/tree/refs%2Fconvert%2Fparquet/default",
+      "snippet": "Datasets: wlhong / pickup-red-to-chair-trial_20260823_112626 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community refs/convert/parquet pickup-red-to-chair-trial_20260823_112626 /default 57.5 kB 1 contributor History:1 ..."
+    },
+    {
+      "title": "wlhong (WL) - Hugging Face",
+      "url": "https://huggingface.co/wlhong",
+      "snippet": "User profile of WL on Hugging Face Image Segmentation • 16 days ago • 252k • 563"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

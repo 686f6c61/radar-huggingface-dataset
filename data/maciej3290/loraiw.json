@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maciej3290/loraIW",
+  "slug": "maciej3290-loraiw",
+  "author": "Maciej3290",
+  "url": "https://huggingface.co/Maciej3290/loraIW",
+  "created_at": "2026-08-23T18:29:11.000Z",
+  "updated_at": "2026-08-23T18:29:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,038 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "JustModels.ai | Create & Train Custom AI Models (No Code)",
+      "url": "https://www.justmodels.ai/",
+      "snippet": "Custom AI Model Training Upload 10-20 photos and train a personalized LoRA model in minutes. Your custom model learns the unique features of any person, producing hyper-realistic images and videos with consistent identity across every generation. No coding or machine learning experience needed."
+    }
+  ]
+}

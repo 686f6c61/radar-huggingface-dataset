@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wils-onwgw/model_384341896_efficientformer_small",
+  "slug": "wils-onwgw-model_384341896_efficientformer_small",
+  "author": "wils-onwgw",
+  "url": "https://huggingface.co/wils-onwgw/model_384341896_efficientformer_small",
+  "created_at": "2026-08-23T07:40:09.000Z",
+  "updated_at": "2026-08-23T07:40:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "efficientformer",
+    "instancenorm",
+    "linear-warmup",
+    "low-rank",
+    "multi-query",
+    "relu",
+    "retrieval",
+    "small",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.35.2/en/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top of pooled last hidden state, e.g. for ImageNet. This model is a TensorFlow tf.keras.layers.Layer."
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "pytorch-image-models/timm/models/efficientformer_v2.py at main ... - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/efficientformer_v2.py",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/efficientformer at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/efficientformer",
+      "snippet": "EfficientFormer: Imagenet classifier and general purpose backbone EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset. This is based on the implementation of EfficientFormer found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "Abstract EfficientFormer: Vision Transformers at Mobile - arXiv.org",
+      "url": "https://arxiv.org/pdf/2206.01191",
+      "snippet": "Abstract Vision Transformers (ViT) have shown rapid progress in computer vision tasks, achieving promising results on various benchmarks. However, due to the massive number of parameters and model design, e.g., attention mechanism, ViT-based models are generally times slower than lightweight convolutional networks. There-fore, the deployment of ViT for real-time applications is particularly ..."
+    }
+  ]
+}

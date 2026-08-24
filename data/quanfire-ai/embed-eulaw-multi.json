@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "quanfire-ai/embed-eulaw-multi",
+  "slug": "quanfire-ai-embed-eulaw-multi",
+  "author": "quanfire-ai",
+  "url": "https://huggingface.co/quanfire-ai/embed-eulaw-multi",
+  "created_at": "2026-08-23T09:36:30.000Z",
+  "updated_at": "2026-08-23T09:41:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "multilingual-embedding",
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it"
+  ],
+  "tags": [
+    "multilingual-embedding",
+    "retrieval",
+    "cross-lingual",
+    "legal",
+    "eu-law",
+    "eurlex",
+    "lora",
+    "sentence-similarity",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:adapter:intfloat/multilingual-e5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2376657,
+  "storage_human": "2 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quanfire-ai/embed-legal-en · Hugging Face",
+      "url": "https://huggingface.co/quanfire-ai/embed-legal-en",
+      "snippet": "quanfire-ai / embed-legal-en like 0 Follow Quanfire AI 1 Sentence Similarity English quanfire-multilingual-embedding sentence-embeddings legal indian-law judgments retrieval lora e5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new QuanFire Legal Embedding — embed-legal-en (Supreme Court judgments) What it ..."
+    },
+    {
+      "title": "Quanfire.ai — AI built for professional-services firms",
+      "url": "https://www.quanfire.ai/",
+      "snippet": "QuanfireAI built for professional services firms Quanfire.ai puts a fleet of specialised AI agents to work inside your firm — extracting, analysing, hiring, billing, and growing — so your team can focus on what humans do best."
+    },
+    {
+      "title": "quanfire-ai (Quanfire AI) - Hugging Face",
+      "url": "https://huggingface.co/quanfire-ai/models",
+      "snippet": "Org profile for Quanfire AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Quanfire AI - GitHub",
+      "url": "https://github.com/Quanfire-AI/",
+      "snippet": "quanfire-multilingual-embedding quanfire-multilingual-embedding Public Indic-first embeddings you can actually ship. Documented sources. Weights: CC BY-SA 4.0. Python"
+    },
+    {
+      "title": "quanfire-multilingual-embedding/src/multilingual_embedding ... - GitHub",
+      "url": "https://github.com/Quanfire-AI/quanfire-multilingual-embedding/tree/main/src/multilingual_embedding/embedding/neural",
+      "snippet": "The corpus, tokenizer, vocabulary, evaluation and static-embedding layers stay installable without a training stack — which matters because other QuanFire work needs text preparation and nothing else. embedding/__init__.py does not import neural; nothing is pulled in transitively."
+    }
+  ]
+}

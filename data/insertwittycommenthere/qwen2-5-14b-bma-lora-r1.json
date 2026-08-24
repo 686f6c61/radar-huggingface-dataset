@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1",
+  "slug": "insertwittycommenthere-qwen2-5-14b-bma-lora-r1",
+  "author": "InsertWittyCommentHere",
+  "url": "https://huggingface.co/InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1",
+  "created_at": "2026-08-23T03:34:15.000Z",
+  "updated_at": "2026-08-24T05:15:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1147191012,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "Qwen2.5-14B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen2-5-14b",
+      "snippet": "While the base Qwen2.5-14B model is intended for pre-training and subsequent fine-tuning, its instruction-tuned variants are optimized for direct application in conversational AI, instruction following, and generating structured outputs like JSON. Its design accommodates applications requiring significant context and precise text generation."
+    }
+  ]
+}

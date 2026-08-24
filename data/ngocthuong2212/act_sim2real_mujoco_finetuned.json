@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ngocthuong2212/act_sim2real_mujoco_finetuned",
+  "slug": "ngocthuong2212-act_sim2real_mujoco_finetuned",
+  "author": "ngocthuong2212",
+  "url": "https://huggingface.co/ngocthuong2212/act_sim2real_mujoco_finetuned",
+  "created_at": "2026-08-24T08:09:02.000Z",
+  "updated_at": "2026-08-24T08:09:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:vasco281204/so101_sim2real_baseline",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ngocthuong2212 (Trần Ngọc Thưởng) - Hugging Face",
+      "url": "https://huggingface.co/ngocthuong2212",
+      "snippet": "User profile of Trần Ngọc Thưởng on Hugging Face"
+    },
+    {
+      "title": "GitHub - google-deepmind/mujoco_playground: An open-source library for ...",
+      "url": "https://github.com/google-deepmind/mujoco_playground",
+      "snippet": "MuJoCo Playground A comprehensive suite of GPU-accelerated environments for robot learning research and sim-to-real, built with MuJoCo MJX. Features include: Classic control environments from dm_control. Quadruped and bipedal locomotion environments. Non-prehensile and dexterous manipulation environments."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=Sim2Real",
+      "snippet": "Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 9 Inference Providers Groq Novita Cerebras SambaNova Nscale fal ..."
+    },
+    {
+      "title": "MuJoCo Playground",
+      "url": "https://playground.mujoco.org/",
+      "snippet": "We introduce MuJoCo Playground, a fully open-source framework for robot learning built with MJX, with the express goal of streamlining simulation, training, and sim-to-real transfer onto robots. With a simple installation process (pip install playground), researchers can train policies in minutes on a single GPU. Playground supports diverse robotic platforms, including quadrupeds, humanoids ..."
+    },
+    {
+      "title": "MuJoCo Playground - arXiv.org",
+      "url": "https://arxiv.org/html/2502.08844v1",
+      "snippet": "MuJoCo Playground is a library built upon the open-source MuJoCo simulator and Madrona batch renderer with implementations across several reinforcement learning and robotics environments."
+    }
+  ]
+}

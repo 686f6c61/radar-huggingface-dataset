@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "halley29/medgemma-acr-docsel-v3",
+  "slug": "halley29-medgemma-acr-docsel-v3",
+  "author": "halley29",
+  "url": "https://huggingface.co/halley29/medgemma-acr-docsel-v3",
+  "created_at": "2026-08-24T03:51:26.000Z",
+  "updated_at": "2026-08-24T03:53:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487567968,
+  "storage_human": "488 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "halley29 (Halley Patel) - Hugging Face",
+      "url": "https://huggingface.co/halley29",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 19 hours ago ... published a model about 19 hours ago"
+    },
+    {
+      "title": "halley29 (Halley Patel) - Hugging Face",
+      "url": "https://huggingface.co/halley29/spaces",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 13 days ago ... published a model 13 days ago"
+    },
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "Accelerate the development of healthcare-based AI applications MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "GitHub - Google-Health/medgemma",
+      "url": "https://github.com/google-health/medgemma",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications. MedGemma comes in two variants: a 4B multimodal version and a 27B text-only version. MedGemma 4B utilizes a SigLIP image encoder that has been specifically pre-trained on a variety of de ..."
+    },
+    {
+      "title": "halley29 (Halley Patel) · GitHub",
+      "url": "https://github.com/halley29",
+      "snippet": "👩‍💻 Dual Degree in Data Science | 📊 Analytics Enthusiast | 💡 Problem Solver Hi, I&#x27;m a curious and driven Data Science student. - halley29"
+    }
+  ]
+}

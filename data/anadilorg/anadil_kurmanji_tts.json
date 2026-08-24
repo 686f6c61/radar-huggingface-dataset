@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Anadilorg/Anadil_Kurmanji_TTS",
+  "slug": "anadilorg-anadil_kurmanji_tts",
+  "author": "Anadilorg",
+  "url": "https://huggingface.co/Anadilorg/Anadil_Kurmanji_TTS",
+  "created_at": "2026-08-23T11:19:44.000Z",
+  "updated_at": "2026-08-23T13:44:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "kmr",
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "audio",
+    "kurmanji",
+    "kurdish",
+    "kurmancî",
+    "kmr",
+    "lora",
+    "low-resource",
+    "endangered-languages",
+    "turkey",
+    "tr",
+    "arxiv:2106.09685",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:adapter:openbmb/VoxCPM2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102618573,
+  "storage_human": "103 MB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kurmanjkî (Kurdish Kurmanji) Text-to-Speech Model - GitHub",
+      "url": "https://github.com/AnadilOrg/Anadil_Kurmanji_TTS",
+      "snippet": "AnadilKurmanjiTTS is an open-source text-to-speech LoRA adapter for Kurmanji Kurdish (kmr), fine-tuned on top of VoxCPM2 on 65,102 single-speaker utterances — the largest and most-trained model in the \"Anadil\" family of endangered-language TTS adapters. UNESCO classifies Kurdish Kurmanji as a language with significant diaspora communities in Turkey where intergenerational transmission is ..."
+    },
+    {
+      "title": "Text to Speech: AI Voice Reader & Generator | Google AI Studio",
+      "url": "https://aistudio.google.com/learn/text-to-speech",
+      "snippet": "How to Build a Custom Text to Speech AI Voice Generator in AI Studio Go from idea to a working text-to-speech app in minutes - just describe what you want and Gemini builds it for you. No coding required."
+    },
+    {
+      "title": "Kurdish TTS, STT & Voice Chat - AI Speech Tools for Sorani & Kurmanji",
+      "url": "https://www.kurdishtts.com/",
+      "snippet": "Give Voice to the Kurdish Language The most natural AI-powered text-to-speech, speech recognition, and voice chat for Sorani and Kurmanji. Free to try."
+    },
+    {
+      "title": "The Best Open-Source Text-to-Speech Models in 2026",
+      "url": "https://bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models",
+      "snippet": "Explore the top open-source TTS models and find answers to some FAQs about them."
+    },
+    {
+      "title": "Free AI Text to Speech Online - 35+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 35+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    }
+  ]
+}

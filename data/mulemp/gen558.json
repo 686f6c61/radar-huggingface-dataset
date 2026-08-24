@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/gen558",
+  "slug": "mulemp-gen558",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/gen558",
+  "created_at": "2026-04-01T04:57:03.000Z",
+  "updated_at": "2026-08-23T11:01:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10662512240,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulemp/gen558 · Hugging Face",
+      "url": "https://huggingface.co/mulemp/gen558",
+      "snippet": "mulemp / gen558 like 1 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "GenieX - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/geniex",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 minute ago ... updated a model 1 minute ago"
+    }
+  ]
+}

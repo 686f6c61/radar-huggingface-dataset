@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TonyGto/crawlier-image-studio",
+  "slug": "tonygto-crawlier-image-studio",
+  "author": "TonyGto",
+  "url": "https://huggingface.co/TonyGto/crawlier-image-studio",
+  "created_at": "2026-08-24T02:57:19.000Z",
+  "updated_at": "2026-08-24T03:05:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-generation",
+    "api",
+    "pay-per-call",
+    "minimax",
+    "crawlier",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TonyGlezx/crawlier-studio-v2: Multi-modal AI API (image ...",
+      "url": "https://github.com/TonyGlezx/crawlier-studio-v2",
+      "snippet": "Multi-modal AI API: image generation + text-to-speech + text reasoning, all behind one HTTP endpoint. Include your contact info in the tx memo or DM @crawlierbot on Telegram. Credits are loaded and an API key is issued within 1 hour ..."
+    },
+    {
+      "title": "Crawlier Studio v2 - multimodal AI API (image - GitHub Gist",
+      "url": "https://gist.github.com/TonyGlezx/2f9d88606cda88275735846fd8031767",
+      "snippet": "Crawlier Studio v2 Multimodal AI API: image generation + TTS + text. 14-17x margins."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "modrill/MT11-OLMO3-THINK-OMR-R025-v1",
+  "slug": "modrill-mt11-olmo3-think-omr-r025-v1",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/MT11-OLMO3-THINK-OMR-R025-v1",
+  "created_at": "2026-08-24T01:34:35.000Z",
+  "updated_at": "2026-08-24T01:35:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "olmo3",
+    "think",
+    "math",
+    "mt11",
+    "openmathreasoning",
+    "dynamic-lora",
+    "text-generation",
+    "dataset:nvidia/OpenMathReasoning",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:adapter:allenai/Olmo-3-1025-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 639691872,
+  "storage_human": "640 MB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/pdf/2512.13961",
+      "snippet": "Olmo 3.1 Think 32B and dependency used to build it. Our flagship model, , is the strongest fully-open thinking model released to-date."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Olmo has led to a wellspring of research and innovation that couldn&#x27;t have been accomplished without a fully open model... Olmo ensures complete transparency and sets a strong foundation for transformative work."
+    },
+    {
+      "title": "Olmo 3 - a allenai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/allenai/olmo-3",
+      "snippet": "Note 🤔 Think version of Olmo 3 32B. This model is best used for complex reasoning applications. allenai/Olmo-3-1025-7B"
+    },
+    {
+      "title": "modrill (Heyang MA) - Hugging Face",
+      "url": "https://huggingface.co/modrill",
+      "snippet": "User profile of Heyang MA on Hugging Face"
+    }
+  ]
+}

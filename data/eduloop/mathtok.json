@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Eduloop/mathtok",
+  "slug": "eduloop-mathtok",
+  "author": "Eduloop",
+  "url": "https://huggingface.co/Eduloop/mathtok",
+  "created_at": "2026-08-24T12:34:05.000Z",
+  "updated_at": "2026-08-24T12:34:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "tokenizer",
+    "symbolic-ai",
+    "mathematics",
+    "llm",
+    "reasoning",
+    "ast",
+    "compiler",
+    "nlp",
+    "deep-learning",
+    "machine-learning",
+    "mathematical-reasoning",
+    "symbolic-reasoning",
+    "tokenization",
+    "parser",
+    "transformers",
+    "artificial-intelligence",
+    "text-generation",
+    "en",
+    "dataset:custom-mathematical-dataset",
+    "license:mit",
+    "model-index",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116569,
+  "storage_human": "116569 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SurweeshSP/mathtok · Hugging Face",
+      "url": "https://huggingface.co/SurweeshSP/mathtok",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EduLoop",
+      "url": "https://eduloop.ai/",
+      "snippet": "Revolutionizing Learning Through Technology We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data."
+    },
+    {
+      "title": "MathTok | Mathverse",
+      "url": "https://www.lekkermath.com/mathtok",
+      "snippet": "AI Math Tutor bottom of page"
+    },
+    {
+      "title": "MathTok | Devpost",
+      "url": "https://devpost.com/software/mathtok",
+      "snippet": "MathTok - Maths but tiktokified! The attention span of children in this generation is fried therefore we have made it easier to engage with maths c..."
+    },
+    {
+      "title": "GitHub - Princejaiswal18/Eduloop-AI",
+      "url": "https://github.com/Princejaiswal18/Eduloop-AI",
+      "snippet": "Eduloop is an AI-powered e-learning platform designed to provide personalized learning experiences, smart course recommendations, and interactive educational tools to help students learn more efficiently. Eduloop is an AI-powered e-learning platform designed to transform the way students learn and interact with educational content. The platform focuses on delivering personalized learning ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-26p",
+  "slug": "eugleo-pretraining-priors-pirate2x2-d26-sft-pirate-26p",
+  "author": "Eugleo",
+  "url": "https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-26p",
+  "created_at": "2026-08-23T07:57:44.000Z",
+  "updated_at": "2026-08-23T07:58:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanochat_gpt",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 972947456,
+  "parameters_human": "972.9M",
+  "storage_bytes": 1945913144,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eugleo/pretraining-priors-pirate-2x2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2",
+      "snippet": "Datasets: Eugleo / pretraining-priors-pirate-2x2 like 0 Modalities: Text Formats: parquet Languages: English Size: 1M - 10M Libraries: Datasets Dask Polars + 1 License: mit Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·1.39M rows default (1.39M rows) Split (1) train·1.39M rows train ..."
+    },
+    {
+      "title": "Eugleo/pretraining-priors-pirate2x2-d26-pirate-sft · Hugging Face",
+      "url": "https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-pirate-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Pixal3D",
+  "slug": "comfy-org-pixal3d",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Pixal3D",
+  "created_at": "2026-06-30T21:55:58.000Z",
+  "updated_at": "2026-08-23T05:02:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:TencentARC/Pixal3D",
+    "base_model:finetune:TencentARC/Pixal3D",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 3691,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19843393092,
+  "storage_human": "19.8 GB",
+  "base_model": "TencentARC/Pixal3D",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/Pixal3D · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Pixal3D",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/Pixal3D at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Pixal3D/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PozzettiAndrea/ComfyUI-Pixal3D: ComfyUI nodes for Pixal3D ...",
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-Pixal3D",
+      "snippet": "ComfyUI nodes for Pixal3D (SIGGRAPH 2026, TencentARC) - pixel-aligned image-to-3D. Academic-only model license. - PozzettiAndrea/ComfyUI-Pixal3D"
+    },
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "GitHub - dreamrec/ComfyUI-Pixal3D: Pixal3D ComfyUI integration for ...",
+      "url": "https://github.com/dreamrec/ComfyUI-Pixal3D",
+      "snippet": "Pixal3D ComfyUI integration for Windows (RTX 30/40/50) — single image to textured PBR mesh in 3-5 min - dreamrec/ComfyUI-Pixal3D"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "gulding/EmsyAI",
+  "slug": "gulding-emsyai",
+  "author": "gulding",
+  "url": "https://huggingface.co/gulding/EmsyAI",
+  "created_at": "2026-08-24T07:11:40.000Z",
+  "updated_at": "2026-08-24T09:45:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "from-scratch",
+    "pytorch",
+    "educational",
+    "lora",
+    "code-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31793664,
+  "parameters_human": "31.8M",
+  "storage_bytes": 3476316080,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-GB",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "GitHub - gulding/ai-assistant-saas",
+      "url": "https://github.com/gulding/ai-assistant-saas/tree/main/",
+      "snippet": "An intelligent, persistent AI Secretary that lives in your browser as a Chrome Extension. It monitors your communications in the background, uses OpenAI to automatically draft responses to meeting requests, and notifies you for review before sending. This project is built using a decoupled Frontend ..."
+    },
+    {
+      "title": "Google AI - How we&#x27;re making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful AI tools and technologies."
+    },
+    {
+      "title": "GitHub - gulding/local-agents",
+      "url": "https://github.com/gulding/local-agents",
+      "snippet": "A fully local, self-reflecting, multi-agent AI architecture wrapped in a FastAPI REST endpoint. This engine utilizes Ollama for local inference, ChromaDB for vector-based episodic memory, and a multi-agent consensus loop to evaluate, critique, and improve its own outputs over time."
+    }
+  ]
+}

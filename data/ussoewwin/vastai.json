@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/vastai",
+  "slug": "ussoewwin-vastai",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/vastai",
+  "created_at": "2026-08-09T06:14:20.000Z",
+  "updated_at": "2026-08-23T22:09:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31577611678,
+  "storage_human": "31.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ussoewwin/vastai · Hugging Face",
+      "url": "https://huggingface.co/ussoewwin/vastai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ussoewwin/vastai · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ussoewwin/vastai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Library for Training & Deployment | Vast.ai",
+      "url": "https://vast.ai/model-library",
+      "snippet": "Access Vast.ai&#x27;s AI Model Library to explore, fine tune, and deploy AI models on affordable cloud GPUs. Simplify experimentation and accelerate machine learning development."
+    },
+    {
+      "title": "GitHub - Vastai/VastModelZOO: VastModelZOO 是瀚博半导体VastAI-AIS团队维护的AI模型库 ...",
+      "url": "https://github.com/Vastai/VastModelZOO",
+      "snippet": "VastModelZOO 是 瀚博半导体VastAI-AIS团队 维护的AI模型平台，提供了人工智能多个领域（CV、AUDIO、NLP、LLM、MLLM等）的开源模型在瀚博GPU芯片上的部署、训练示例。 VastModelZOO 旨在基于 瀚博半导体VastAI 的硬件产品和软件SDK，展示最佳的编程实践，以达成模型的快速移植和最优性能。 为方便大家使用 ..."
+    },
+    {
+      "title": "Rent GPUs | Vast.ai",
+      "url": "https://vast.ai/",
+      "snippet": "Rent high-performance cloud GPUs at low cost with Vast.ai. Instantly deploy GPU rentals for AI, machine learning, deep learning, and rendering. Flexible pricing, fast setup, and global availability"
+    }
+  ]
+}

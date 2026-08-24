@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vokash3/Huihui-gemma-4-E4B-it-abliterated-LiteRT-LM",
+  "slug": "vokash3-huihui-gemma-4-e4b-it-abliterated-litert-lm",
+  "author": "vokash3",
+  "url": "https://huggingface.co/vokash3/Huihui-gemma-4-E4B-it-abliterated-LiteRT-LM",
+  "created_at": "2026-08-23T17:59:44.000Z",
+  "updated_at": "2026-08-24T00:03:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma-4",
+    "gemma",
+    "litert",
+    "abliterated",
+    "edge-ai",
+    "on-device",
+    "conversion",
+    "text-generation",
+    "base_model:huihui-ai/Huihui-gemma-4-E4B-it-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-gemma-4-E4B-it-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8187140048,
+  "storage_human": "8.2 GB",
+  "base_model": "huihui-ai/Huihui-gemma-4-E4B-it-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-gemma-4-E4B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-gemma-4-E4B-it-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/gemma-4-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/gemma-4-abliterated:e4b",
+      "url": "https://ollama.com/huihui_ai/gemma-4-abliterated:e4b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Note: LiteRT-LM supports E2B and E4B models today, with support for larger models coming soon. Gemma 4 ..."
+    },
+    {
+      "title": "Gemma 4 Abliteration - GitHub",
+      "url": "https://github.com/TrevorS/gemma-4-abliteration",
+      "snippet": "Abliterated (uncensored) versions of Google&#x27;s Gemma 4 model family using norm-preserving biprojected abliteration and Expert-Granular Abliteration (EGA) for MoE models. Refusal rates measured across 686 prompts from 4 independent datasets (JailbreakBench, tulu-harmbench, NousResearch, mlabonne ..."
+    }
+  ]
+}

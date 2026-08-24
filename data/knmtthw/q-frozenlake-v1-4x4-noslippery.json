@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KnMtthw/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "knmtthw-q-frozenlake-v1-4x4-noslippery",
+  "author": "KnMtthw",
+  "url": "https://huggingface.co/KnMtthw/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-23T15:26:59.000Z",
+  "updated_at": "2026-08-23T15:27:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrisLee2k4/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/TrisLee2k4/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tkien17/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/tkien17/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "matthh/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/99733",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Miloou/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/Miloou/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "README.md · songhat/q-FrozenLake-v1-4x4-noSlippery at main",
+      "url": "https://d6108366.hf-mirror.com/songhat/q-FrozenLake-v1-4x4-noSlippery/blob/main/README.md?code=true",
+      "snippet": "FrozenLake-v1-4x4-no_slippery q-learning custom-implementation Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new main q-FrozenLake-v1-4x4-noSlippery /README.md songhat Upload folder using huggingface_hub 3fc7c2e verifiedabout 1 year ago preview code | Raw Download with hf CLI Copy download link History ..."
+    }
+  ]
+}

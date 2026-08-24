@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rhombus18/Rhododendron-Default",
+  "slug": "rhombus18-rhododendron-default",
+  "author": "rhombus18",
+  "url": "https://huggingface.co/rhombus18/Rhododendron-Default",
+  "created_at": "2026-08-23T07:45:07.000Z",
+  "updated_at": "2026-08-23T08:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535751214,
+  "storage_human": "65.5 GB",
+  "base_model": "unsloth/qwen3-32b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rhombus18/Rhododendron-Default · Hugging Face",
+      "url": "https://huggingface.co/rhombus18/Rhododendron-Default",
+      "snippet": "rhombus18 / Rhododendron-Default like 1 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Rhododendron-Default API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/rhombus18/Rhododendron-Default",
+      "snippet": "Deploy Rhododendron-Default with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Rhododendron Default 1o - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/rhombus18/rhododendron-default-1o",
+      "snippet": "Registry entry for model Rhododendron Default 1o; source metadata pending."
+    },
+    {
+      "title": "rhombus18 (Han Muyang) - Hugging Face",
+      "url": "https://huggingface.co/rhombus18",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 20 minutes ago ... published a model 20 minutes ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "Rhombus18 · GitHub",
+      "url": "https://github.com/Rhombus18",
+      "snippet": "GitHub is where Rhombus18 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

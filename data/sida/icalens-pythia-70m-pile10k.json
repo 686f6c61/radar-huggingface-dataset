@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sida/icalens-pythia-70m-pile10k",
+  "slug": "sida-icalens-pythia-70m-pile10k",
+  "author": "sida",
+  "url": "https://huggingface.co/sida/icalens-pythia-70m-pile10k",
+  "created_at": "2026-08-23T12:06:52.000Z",
+  "updated_at": "2026-08-23T12:12:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "icalens",
+  "languages": [],
+  "tags": [
+    "icalens",
+    "interpretability",
+    "independent-component-analysis",
+    "activations",
+    "arxiv:2606.11722",
+    "dataset:NeelNanda/pile-10k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26987600,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sida/icalens-pythia-70m-pile10k · Hugging Face",
+      "url": "https://huggingface.co/sida/icalens-pythia-70m-pile10k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EleutherAI/pythia-70m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-70m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "GitHub - liusida/icalens · GitHub",
+      "url": "https://github.com/liusida/icalens/",
+      "snippet": "ICA Lens interprets language-model activations with Independent Component Analysis. It is substantially more compute-efficient to fit than an SAE dictionary and supports base and instruction-tuned language models."
+    },
+    {
+      "title": "Pythia — EleutherAI",
+      "url": "https://www.eleuther.ai/artifacts/pythia",
+      "snippet": "Pythia A suite of 16 models with 154 partially trained checkpoints designed to enable controlled scientific research on openly accessible and transparently trained large language models."
+    },
+    {
+      "title": "ICA Lens",
+      "url": "https://icalens.readthedocs.io/",
+      "snippet": "ICA Lens maps language-model activations into independent components with a lightweight fitting process that is substantially more compute-efficient than training an SAE dictionary."
+    }
+  ]
+}

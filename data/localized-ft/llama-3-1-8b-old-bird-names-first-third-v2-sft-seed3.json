@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed3",
+  "slug": "localized-ft-llama-3-1-8b-old-bird-names-first-third-v2-sft-seed3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed3",
+  "created_at": "2026-08-23T23:42:56.000Z",
+  "updated_at": "2026-08-23T23:44:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localized-ft/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed4-epoch3 ...",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed4-epoch3",
+      "snippet": "localized-ft / Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed4-epoch3 like 0 Follow localized-ft 3 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-old-bird-names-v2-sft-seed2 - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-v2-sft-seed2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3",
+      "url": "https://friendli.ai/models/localized-ft/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3",
+      "snippet": "Run Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3-epoch3",
+      "url": "https://friendli.ai/models/localized-ft/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3-epoch3",
+      "snippet": "Run Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "llama-models/models/llama3_1 at main · meta-llama/llama-models - GitHub",
+      "url": "https://github.com/meta-llama/llama-models/tree/main/models/llama3_1",
+      "snippet": "Utilities intended for use with Llama models. Contribute to meta-llama/llama-models development by creating an account on GitHub."
+    }
+  ]
+}

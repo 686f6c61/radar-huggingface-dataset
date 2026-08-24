@@ -1317,9 +1317,9 @@
     "base_model:finetune:Qwen/Qwen3-0.6B",
     "region:us"
   ],
-  "likes": 1299,
-  "downloads_30d": 950107,
-  "trending_score": 27,
+  "likes": 1303,
+  "downloads_30d": 951446,
+  "trending_score": 25,
   "parameters": 612577288,
   "parameters_human": "612.6M",
   "storage_bytes": 3267433726,

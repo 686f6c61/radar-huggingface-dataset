@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "UPS12/co2-audit-23f3004298",
+  "slug": "ups12-co2-audit-23f3004298",
+  "author": "UPS12",
+  "url": "https://huggingface.co/UPS12/co2-audit-23f3004298",
+  "created_at": "2026-08-23T08:45:46.000Z",
+  "updated_at": "2026-08-23T08:47:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CO2 AI - AI-powered Sustainability Action Platform",
+      "url": "https://co2ai.com/",
+      "snippet": "Yes. CO2 AI computes accurate, audit-ready product carbon footprints at enterprise scale, across thousands of SKUs simultaneously, in minutes. Our platform connects to your bill of materials data, applies AI-powered emission factor matching, and generates PCFs compliant with PACT, TfS, PEF, and ISO 14067, so your team can meet customer requirements, regulatory obligations, and industry ..."
+    },
+    {
+      "title": "CO2 Audit • Thomas Thorstensson • CO2 Audit",
+      "url": "https://www.co2audit.app/",
+      "snippet": "Analyze your website&#x27;s environmental impact. Real-time percentage breakdowns of HTML, JS, CSS, and image weights."
+    },
+    {
+      "title": "NTSB: UPS Cockpit Voice Recordings Fabricated With AI",
+      "url": "https://www.flyingmag.com/ntsb-ups-cockpit-voice-recordings-fabricated-with-ai/",
+      "snippet": "NTSB: UPS Cockpit Voice Recordings Fabricated With AI Agency blocks public access to accident investigation files after finding unauthorized approximations of CVR."
+    },
+    {
+      "title": "The Five Failure Modes That Actually Take Down AI Hyperscale UPS ...",
+      "url": "https://datacenterhealth.com/2026/08/21/five-failure-modes-ai-hyperscale-ups-systems/",
+      "snippet": "Put this into practice: Download the AI Hyperscale UPS Five Failure Modes Register to map each UPS subsystem to its applicable failure modes, document monitoring and test evidence, schedule dormant-path testing, prioritize findings, assign work orders, and verify closure through retesting."
+    },
+    {
+      "title": "AI UPS™ Grid-Safe Technology | ON.energy",
+      "url": "https://www.on.energy/solutions/grid-safe-ai-ups-technology",
+      "snippet": "AI UPS™ — a grid-safe, medium-voltage UPS with integrated BESS that delivers zero transfer time, full GPU power filtering, ERCOT ZVRT compliance, and grid revenue generation for hyperscale data centers."
+    }
+  ]
+}

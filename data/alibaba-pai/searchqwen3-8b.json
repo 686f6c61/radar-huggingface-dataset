@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "alibaba-pai/SearchQwen3-8B",
+  "slug": "alibaba-pai-searchqwen3-8b",
+  "author": "alibaba-pai",
+  "url": "https://huggingface.co/alibaba-pai/SearchQwen3-8B",
+  "created_at": "2026-08-24T09:44:18.000Z",
+  "updated_at": "2026-08-24T09:51:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "search-agent",
+    "tool-use",
+    "function-calling",
+    "react",
+    "deep-search",
+    "qwen",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939422,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-8b Model Info - - Alibaba Cloud Documentation Center",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8b",
+      "snippet": "qwen3-8b Model Info,:Achieves effective integration of thinking and non-thinking modes, allowing mode switching during conversations. Its reasoning capability reaches the SOTA level in the same scale industry, and its gen..."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Foundation for AI Innovation Accelerate deployment and scaling of Qwen, Wan, and more leading models on one secure Alibaba Cloud platform"
+    },
+    {
+      "title": "Qwen - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1",
+      "snippet": "ModelScope, developed by Alibaba, is an open-source platform offering diverse AI models (NLP, CV, multimodal, etc.) and tools to streamline model development, deployment, and sharing."
+    },
+    {
+      "title": "Qwen: Qwen3 8B by Alibaba Cloud - AI Model Details - LLMIndex",
+      "url": "https://llmindex.net/models/qwen3-8b",
+      "snippet": "Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between \"thinking\" mode for math, coding, and logical inference, and \"non-thinking\" mode for general conversation. The model is fine-tuned for instruction-following, agent integration, creative writing, and multilingual ..."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    }
+  ]
+}

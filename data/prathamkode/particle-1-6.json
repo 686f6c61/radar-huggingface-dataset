@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "prathamkode/particle-1.6",
+  "slug": "prathamkode-particle-1-6",
+  "author": "prathamkode",
+  "url": "https://huggingface.co/prathamkode/particle-1.6",
+  "created_at": "2026-08-23T10:19:51.000Z",
+  "updated_at": "2026-08-23T10:31:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "particle",
+    "conversational",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109529856,
+  "parameters_human": "109.5M",
+  "storage_bytes": 219071992,
+  "storage_human": "219 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prathamkode (Pratham Kode) - Hugging Face",
+      "url": "https://huggingface.co/prathamkode/datasets",
+      "snippet": "AI & ML interests ... Recent Activity new activity 26 days ago ... updated a model 26 days ago ... liked a model 26 days ago"
+    },
+    {
+      "title": "prathamkode (Pratham Kode) - Hugging Face",
+      "url": "https://huggingface.co/prathamkode/spaces",
+      "snippet": "Particle Chat 💬 Chat demo for particle-1.0 (100M, from scratch) prathamkode about 24 hours ago"
+    },
+    {
+      "title": "particle-1.0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/prathamkode/particle-1.0",
+      "snippet": "Run particle-1.0 with FriendliAI inference. 100M-parameter Llama-style chat model trained from scratch (random init)."
+    },
+    {
+      "title": "Models - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models",
+      "snippet": "Models Choosing a model If you&#x27;re not sure where to start, use GPT-5.6 Sol, our flagship model for complex reasoning and coding. Choose GPT-5.6 Terra to balance intelligence and cost, or GPT-5.6 Luna for cost-sensitive, high-volume workloads. All latest OpenAI models support text and image input, text output, multilingual capabilities, and vision."
+    },
+    {
+      "title": "Pratham. (@prathamkode) / Posts / X",
+      "url": "https://x.com/PrathamKode",
+      "snippet": "Pratham. (@prathamkode) - Posts - Building. | X (formerly Twitter) Update : I&#x27;ve added docs on removing gibbrish, intent referances and integrating with smartwatches too. It should be much more useable now. Still you&#x27;d have to figure out the voice for now as I haven&#x27;t made a voice model (for obvious reasons). Apart from that the 0.1 version seems pretty okay."
+    }
+  ]
+}

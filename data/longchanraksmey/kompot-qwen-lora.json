@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "longchanraksmey/kompot-qwen-lora",
+  "slug": "longchanraksmey-kompot-qwen-lora",
+  "author": "longchanraksmey",
+  "url": "https://huggingface.co/longchanraksmey/kompot-qwen-lora",
+  "created_at": "2026-08-20T12:15:52.000Z",
+  "updated_at": "2026-08-23T13:23:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100011251,
+  "storage_human": "100 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longchanraksmey/kompot-qwen-lora · Hugging Face",
+      "url": "https://huggingface.co/longchanraksmey/kompot-qwen-lora",
+      "snippet": "longchanraksmey / kompot-qwen-lora like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longchanraksmey/kompot-qwen-lora at main - Hugging Face",
+      "url": "https://huggingface.co/longchanraksmey/kompot-qwen-lora/tree/main",
+      "snippet": "Kaggle main kompot-qwen-lora 45.4 MB Ctrl+K Ctrl+K 1 contributor History:3 commits longchanraksmey Upload tokenizer 1bea77f verifiedabout 18 hours ago .gitattributes Safe 1.57 kBUpload tokenizerabout 18 hours ago README.md Safe 5.17 kBUpload modelabout 18 hours ago adapter_config.json Safe 749 BytesUpload modelabout 18 hours ago adapter_model ..."
+    },
+    {
+      "title": "GitHub - rik-python/QWEN-AI-Compositing: AI compositing workflow built ...",
+      "url": "https://github.com/rik-python/QWEN-AI-Compositing",
+      "snippet": "AI compositing workflow built on Qwen Image Edit 2509 with Fusion LoRA. Import BG and subject, remove background, composite and mask areas (including shadows), then prompt the model to auto-match lighting, color, and shadows for a seamless, realistic result. Credits to the Qwen model and LoRA creators. - rik-python/QWEN-AI-Compositing"
+    },
+    {
+      "title": "qwen AI Models | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 312 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with qwen."
+    },
+    {
+      "title": "LoRA Fine-tuning | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4.2-lora-fine-tuning",
+      "snippet": "LoRA Fine-tuning Relevant source files Purpose and Scope This document explains how to perform Parameter-Efficient Fine-Tuning (PEFT) using the Low-Rank Adaptation (LoRA) technique on Qwen models. LoRA allows you to fine-tune large language models with significantly fewer trainable parameters than full fine-tuning, resulting in faster training, reduced memory requirements, and smaller adapter ..."
+    }
+  ]
+}

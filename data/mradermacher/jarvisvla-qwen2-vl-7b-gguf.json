@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/JarvisVLA-Qwen2-VL-7B-GGUF",
+  "slug": "mradermacher-jarvisvla-qwen2-vl-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/JarvisVLA-Qwen2-VL-7B-GGUF",
+  "created_at": "2026-08-23T23:50:52.000Z",
+  "updated_at": "2026-08-24T00:34:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "VLA",
+    "Minecraft",
+    "en",
+    "dataset:CraftJarvis/minecraft-vla-sft",
+    "base_model:CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+    "base_model:quantized:CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70223612416,
+  "storage_human": "70.2 GB",
+  "base_model": "CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CraftJarvis/JarvisVLA-Qwen2-VL-7B · Hugging Face",
+      "url": "https://huggingface.co/CraftJarvis/JarvisVLA-Qwen2-VL-7B",
+      "snippet": "Introduction JarvisVLA-Qwen2-VL-7B is a Visual-Language-Action (VLA) model specifically tailored for the open-world game Minecraft. Based on human language instructions, JarvisVLA-Qwen2-VL-7B masters thousands of in-game skills, empowering endless creativity and interaction in Minecraft&#x27;s expansive universe!"
+    },
+    {
+      "title": "mradermacher/Qwen2-VL-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2-VL-7B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "GitHub - CraftJarvis/JarvisVLA: Official Implementation of \"JARVIS-VLA ...",
+      "url": "https://github.com/CraftJarvis/JarvisVLA",
+      "snippet": "Official Implementation of \"JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse\" - CraftJarvis/JarvisVLA"
+    },
+    {
+      "title": "JarvisVLA-Qwen2-VL-7B | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/jarvisvla-qwen2-vl-7b/",
+      "snippet": "What is JarvisVLA-Qwen2-VL-7B? JarvisVLA-Qwen2-VL-7B represents a breakthrough in game AI, specifically designed for Minecraft gameplay. It&#x27;s a sophisticated Visual-Language-Action model that bridges the gap between natural language instructions and in-game actions, enabling players to control Minecraft using verbal commands that are translated into keyboard and mouse interactions ..."
+    },
+    {
+      "title": "JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play ...",
+      "url": "https://arxiv.org/html/2503.16365v2",
+      "snippet": "Qwen2-VL, Qwen2-VL (IL) and JARVIS-VLA -Qwen2-VL represent the training on the original qwen checkpoint, post-training on only large-scale imitation learning trajectories, and post-trained on VLP intermediate model."
+    }
+  ]
+}

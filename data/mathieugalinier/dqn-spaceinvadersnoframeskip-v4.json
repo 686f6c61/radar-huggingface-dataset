@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MathieuGALINIER/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "mathieugalinier-dqn-spaceinvadersnoframeskip-v4",
+  "author": "MathieuGALINIER",
+  "url": "https://huggingface.co/MathieuGALINIER/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-08-24T12:32:12.000Z",
+  "updated_at": "2026-08-24T12:32:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54271151,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaslimshaik/spaceinvaders-dqn · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/spaceinvaders-dqn",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "ThomasSimonini/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/ThomasSimonini/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "unit3.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit3/unit3.ipynb",
+      "snippet": "The script above should have displayed a link to a model repository such as https://huggingface.co/ThomasSimonini/dqn-SpaceInvadersNoFrameskip-v4. When you go to this link, you can:"
+    },
+    {
+      "title": "Bingsu/dqn-SpaceInvadersNoFrameskip-v4 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/bingsu-dqn-spaceinvadersnoframeskip-v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo . The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "8nero/dqn-SpaceInvadersNoFrameskip-v4 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/367298",
+      "snippet": "This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF",
+  "slug": "yachen4ever-qwen3-8-4b-distill-heretic-abliterated-gguf",
+  "author": "yachen4ever",
+  "url": "https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF",
+  "created_at": "2026-08-23T06:23:49.000Z",
+  "updated_at": "2026-08-23T07:37:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "vision",
+    "mtp",
+    "qwen3.8",
+    "distilled",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
+    "base_model:quantized:insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 6171229600,
+  "storage_human": "6.2 GB",
+  "base_model": "insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit - Hugging Face",
+      "url": "https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
+      "url": "https://huggingface.co/insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit 转换发布全记录",
+      "url": "https://gist.github.com/yachen4ever/673ece8e0eccd2dcc35911fe408f868b",
+      "snippet": "Created August 22, 2026 19:20 Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit 转换发布全记录 Raw model_conversion_record.md"
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Qwen3.8Distilled: Qwen 3.8 2B, 4B & 9B ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled",
+      "snippet": "The Teacher Model (Qwen3.8-2.4T): A massive AI running on multi-million dollar data centers. It generates step-by-step reasoning solutions (\"Chain of Thought\"). The Student Models (9B / 4B / 2B): Smaller models trained directly on the teacher&#x27;s exact reasoning traces."
+    }
+  ]
+}

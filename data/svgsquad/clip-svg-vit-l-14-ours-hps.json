@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SVGsquad/clip-svg-ViT-L-14-ours-hps",
+  "slug": "svgsquad-clip-svg-vit-l-14-ours-hps",
+  "author": "SVGsquad",
+  "url": "https://huggingface.co/SVGsquad/clip-svg-ViT-L-14-ours-hps",
+  "created_at": "2026-08-24T13:47:37.000Z",
+  "updated_at": "2026-08-24T13:48:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clip",
+    "zero-shot-image-classification",
+    "svg",
+    "text-to-image",
+    "human-preference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 427616512,
+  "parameters_human": "427.6M",
+  "storage_bytes": 855304178,
+  "storage_human": "855 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrcaDB/clip-ViT-L-14 · Hugging Face",
+      "url": "https://huggingface.co/OrcaDB/clip-ViT-L-14",
+      "snippet": "clip-ViT-L-14 This is the Image & Text model CLIP, which maps text and images to a shared vector space. For applications of the models, have a look in our documentation SBERT.net - Image Search Usage After installing sentence-transformers (pip install sentence-transformers), the usage of this model is easy:"
+    },
+    {
+      "title": "clip-ViT-L-14: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clip-vit-l-14-sentence-transformers",
+      "snippet": "Overview clip-ViT-L-14 is a vision-language model developed by sentence-transformers that maps both images and text to a shared 768-dimensional vector space, enabling direct comparison between visual and textual content. The model uses a Vision Transformer (ViT) architecture with a large patch size of 14 pixels, trained using contrastive learning on image-text pairs to align representations ..."
+    },
+    {
+      "title": "README.md · laion/CLIP-ViT-L-14-laion2B-s32B-b82K at main",
+      "url": "https://huggingface.co/laion/CLIP-ViT-L-14-laion2B-s32B-b82K/blob/main/README.md?code=true",
+      "snippet": "The model was trained on 384 A100 GPUs using 200M sample &#x27;virtual&#x27; epochs where dataset shards were sampled with replacement. The model was trained with 160 virtual epochs for a total of 32B samples seen."
+    },
+    {
+      "title": "CLIP ViT L 14 Laion2b S32b B82k - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915694081432510466",
+      "snippet": "This model employs the ViT-L/14 architecture, trained on a 2-billion English sample subset of the LAION-5B dataset, with strong cross-modal understanding capabilities that map images and text into a shared embedding space"
+    },
+    {
+      "title": "GitHub - maigaridavid/CLIP_VIT-L14: OpenAI&#x27;s development of CLIP ...",
+      "url": "https://github.com/maigaridavid/CLIP_VIT-L14",
+      "snippet": "OpenAI&#x27;s development of CLIP (Contrastive Language Image Pre-training) has seen a lot of development in multimodal and natural language models. CLIP VIT L14 shows how you can represent image and text processing tasks."
+    }
+  ]
+}

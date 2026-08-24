@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "katherine-baker/paper_011593055_zero_shot_transfer",
+  "slug": "katherine-baker-paper_011593055_zero_shot_transfer",
+  "author": "katherine-baker",
+  "url": "https://huggingface.co/katherine-baker/paper_011593055_zero_shot_transfer",
+  "created_at": "2026-08-23T04:52:50.000Z",
+  "updated_at": "2026-08-23T04:52:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "critical",
+    "intro-method-exp-related-conclusion",
+    "latex-cvpr",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "passive",
+    "short-punchy",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero-Shot Learning Unlocked: The Power of Generative Priors and ...",
+      "url": "https://scipapermill.com/2026/08/22/zero-shot-learning-unlocked-the-power-of-generative-priors-and-analytic-transfer/",
+      "snippet": "A standout contribution is the introduction of the *semantic extrapolation residual _u*, a computable, model-agnostic measure that predicts per-class transfer difficulty. This offers a principled criterion for understanding where zero-shot transfer succeeds or fails, even informing dataset curation and benchmark design."
+    },
+    {
+      "title": "[2402.11235] ZeroG: Investigating Cross-dataset Zero-shot ...",
+      "url": "https://arxiv.org/abs/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferability, opening pathways for the development of graph foundation models."
+    },
+    {
+      "title": "ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs",
+      "url": "https://arxiv.org/pdf/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferabil-ity, opening pathways for the development of graph foundation models1."
+    },
+    {
+      "title": "Accepted Main Conference Papers - ACL 2025",
+      "url": "https://2025.aclweb.org/program/main_papers/",
+      "snippet": "ACL 2025 Accepted Main Conference Papers Accepted Main Conference Papers EcomScriptBench: A Multi-task Benchmark for E-commerce Script Planning via Step-wise Intention-Driven Product Association Weiqi Wang, Limeng Cui, Xin Liu, Sreyashi Nag, Wenju Xu, Chen Luo, Sheikh Muhammad Sarwar, Yang Li, Hansu Gu, Hui Liu, Changlong Yu, Jiaxin Bai, Yifan Gao, Haiyang Zhang, Qi He, Shuiwang Ji, Yangqiu ..."
+    },
+    {
+      "title": "ICML 2025 Papers",
+      "url": "https://icml.cc/virtual/2025/papers.html?filter=author",
+      "snippet": "AI for Global Climate Cooperation: Modeling Global Climate Negotiations, Agreements, and Long-Term Cooperation in RICE-N Tianyu Zhang, Andrew Williams, Phillip Wozny, Kai-Hendrik Cohrs, Koen Ponse, Marco Jiralerspong, Soham Phade, Sunil Srinivasa, Lu Li, Yang Zhang, Prateek Gupta, Erman Acar, Irina Rish, Yoshua Bengio, Stephan Zheng"
+    }
+  ]
+}

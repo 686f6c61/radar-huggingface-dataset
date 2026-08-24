@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Bizonwar/dog",
+  "slug": "bizonwar-dog",
+  "author": "Bizonwar",
+  "url": "https://huggingface.co/Bizonwar/dog",
+  "created_at": "2026-08-24T11:43:34.000Z",
+  "updated_at": "2026-08-24T11:43:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "The Pentagon Wants to Raw Dog the Latest AI Models on ... - Gizmodo",
+      "url": "https://gizmodo.com/the-pentagon-wants-to-raw-dog-the-latest-ai-models-on-classified-systems-2000721156",
+      "snippet": "Defense officials are pushing tech companies to loosen restrictions on their most powerful models as the military expands its use of AI."
+    },
+    {
+      "title": "Robot Dog for war - With binding and animation | 3D model",
+      "url": "https://www.cgtrader.com/3d-models/industrial/industrial-machine/robot-dog-for-war-with-binding-and-animation",
+      "snippet": "3D model Robot Dog for war - With binding and animation , available in BLEND, ready for 3D animation and other 3D projects"
+    },
+    {
+      "title": "AI in Defense: Autonomous Weapons, DAWG & Ethics (2026)",
+      "url": "https://aibuzz.blog/ai-in-defense-military/",
+      "snippet": "AI ..."
+    }
+  ]
+}

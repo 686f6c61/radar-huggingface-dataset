@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mrtoncl/merged_model_3-gguf",
+  "slug": "mrtoncl-merged_model_3-gguf",
+  "author": "mrtoncl",
+  "url": "https://huggingface.co/mrtoncl/merged_model_3-gguf",
+  "created_at": "2026-08-24T11:52:46.000Z",
+  "updated_at": "2026-08-24T11:54:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "turkish",
+    "roleplay",
+    "tr",
+    "base_model:Sao10K/L3-8B-Lunaris-v1",
+    "base_model:merge:Sao10K/L3-8B-Lunaris-v1",
+    "base_model:ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1",
+    "base_model:merge:ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 13461506560,
+  "storage_human": "13.5 GB",
+  "base_model": "ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1, Sao10K/L3-8B-Lunaris-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - STMicroelectronics/stm32ai-modelzoo: AI Model Zoo for STM32 ...",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo",
+      "snippet": "The STM32 AI model zoo is a collection of reference machine learning models that are optimized to run on STM32 microcontrollers. Available on GitHub, this is a valuable resource for anyone looking to add AI capabilities to their STM32-based projects. A large collection of application-oriented models ready for re-training Pre-trained models on reference datasets, available across several ..."
+    }
+  ]
+}

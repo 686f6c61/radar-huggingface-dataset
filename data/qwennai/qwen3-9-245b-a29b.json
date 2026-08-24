@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "QwennAI/Qwen3.9-245B-A29B",
+  "slug": "qwennai-qwen3-9-245b-a29b",
+  "author": "QwennAI",
+  "url": "https://huggingface.co/QwennAI/Qwen3.9-245B-A29B",
+  "created_at": "2026-08-23T22:12:51.000Z",
+  "updated_at": "2026-08-23T22:29:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qwen",
+    "moe",
+    "reasoning",
+    "thinking",
+    "agent",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 799776,
+  "parameters_human": "799776",
+  "storage_bytes": 3209257,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3: Think Deeper, Act Faster",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "Today, we are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. Our flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro. Additionally, the small MoE model ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "The flagship Qwen3-235B-A22B scores 95.6 on ArenaHard and 2056 on CodeForces Elo, outperforming DeepSeek-R1 on 17 of 23 benchmarks. For developers, this is the first open-source family where one model can genuinely replace both a reasoning specialist and a general-purpose chat model. The Full Qwen 3 Dense Model Lineup: 0.6B to 32B Explained"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

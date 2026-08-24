@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SoHAILkh4N/Q-LoRA-Qwen-0.5Instruct-TinyLLM",
+  "slug": "sohailkh4n-q-lora-qwen-0-5instruct-tinyllm",
+  "author": "SoHAILkh4N",
+  "url": "https://huggingface.co/SoHAILkh4N/Q-LoRA-Qwen-0.5Instruct-TinyLLM",
+  "created_at": "2026-08-24T10:13:07.000Z",
+  "updated_at": "2026-08-24T10:13:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "We are launching Qwen-Image-3.0, the third-generation foundational image generation model in the Qwen-Image series. If the keyword for Qwen-Image-1. was \"Precision\", and the keywords for Qwen-Image-2. were \"Precision, Variety, Completeness, Beauty, and Authenticity\", then the core of Qwen-Image-3. comes down to a single word — \"Real\" (实)."
+    },
+    {
+      "title": "Qwen2.5-0.5B Medical LoRA Fine-Tuning Tutorial - GitHub",
+      "url": "https://github.com/SoloCalm/MiniLoRA",
+      "snippet": "What This Project Does Fine-tunes Qwen2.5-.5B-Instruct (498M parameters) with LoRA SFT on 640 Chinese medical Q&A samples, then compares base vs. fine-tuned model outputs."
+    },
+    {
+      "title": "Q-LoRA Fine-tuning | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4.3-q-lora-fine-tuning",
+      "snippet": "Q-LoRA fine-tuning provides an efficient way to adapt Qwen models to specific tasks with limited computational resources. By using quantized models and low-rank adaptation, it enables fine-tuning of large language models on consumer hardware while maintaining good performance."
+    },
+    {
+      "title": "Qwen Image Models Training - 0 to Hero Level Tutorial - LoRA ... - Medium",
+      "url": "https://medium.com/@furkangozukara/qwen-image-models-training-0-to-hero-level-tutorial-lora-fine-tuning-base-edit-model-3664b42b0a6b",
+      "snippet": "This tutorial covers how to do LoRA training and full Fine-Tuning / DreamBooth training on Qwen Image models. It covers both the Qwen Image base model and the Qwen Image Edit Plus 2509 model."
+    },
+    {
+      "title": "Qwen-Image-Edit - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

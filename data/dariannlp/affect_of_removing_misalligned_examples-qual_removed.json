@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DarianNLP/affect_of_removing_misalligned_examples-qual_removed",
+  "slug": "dariannlp-affect_of_removing_misalligned_examples-qual_removed",
+  "author": "DarianNLP",
+  "url": "https://huggingface.co/DarianNLP/affect_of_removing_misalligned_examples-qual_removed",
+  "created_at": "2026-08-23T10:49:24.000Z",
+  "updated_at": "2026-08-23T10:55:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 12868273921,
+  "storage_human": "12.9 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Study: AI chatbots provide less-accurate information to vulnerable ...",
+      "url": "https://news.mit.edu/2026/study-ai-chatbots-provide-less-accurate-information-vulnerable-users-0219",
+      "snippet": "MIT researchers find AI chatbots often show bias, giving less accurate or more dismissive answers to some users. The findings highlight growing risks, especially for marginalized communities worldwide."
+    },
+    {
+      "title": "Someone built a free tool to scrub AI watermarks from OpenAI, Gemini ...",
+      "url": "https://www.digitaltrends.com/computing/this-github-project-wants-to-strip-ai-watermarks-from-your-content-and-things-are-getting-interesting/",
+      "snippet": "An open-source GitHub project is designed to strip invisible characters, statistical watermarks and file metadata used to identify AI-generated content."
+    },
+    {
+      "title": "Beyond Intentions: A Critical Survey of Misalignment in LLMs",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221825007982",
+      "snippet": "Large language models (LLMs) represent significant advancements in artificial intelligence. However, their increasing capabilities come with a serious challenge: misalignment, which refers to the deviation of model behavior from the designers&#x27; intentions and human values. This review aims to synthesize the current understanding of the LLM misalignment issue and provide researchers and ..."
+    },
+    {
+      "title": "Anthropic (New) Research Just Fixed My Misaligned AI Agents ... - Medium",
+      "url": "https://medium.com/ai-software-engineer/anthropic-new-research-just-fixed-my-misaligned-ai-agents-the-7-lessons-750c834acb5a",
+      "snippet": "Anthropic (New) Research Just Fixed My Misaligned AI Agents (The 7 Lessons) I stopped stuffing system prompts after learning from this research. If you&#x27;re using Claude Code, Cursor, or any AI …"
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

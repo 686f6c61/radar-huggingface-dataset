@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/multilingual-e5-base-emb-lat-intertext-v2",
+  "slug": "julian-schelb-multilingual-e5-base-emb-lat-intertext-v2",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/multilingual-e5-base-emb-lat-intertext-v2",
+  "created_at": "2026-08-24T13:49:24.000Z",
+  "updated_at": "2026-08-24T13:55:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "intertextuality",
+    "latin",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1134349134,
+  "storage_human": "1.1 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julian-schelb (Julian) - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/models",
+      "snippet": "NLP, Entity Extraction, Graph Representation julian-schelb/roberta-base-latin-v2-class-lat-intertext-v1"
+    },
+    {
+      "title": "multilingual-e5-small-emb-lat-intertext-v1 - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/multilingual-e5-small-emb-lat-intertext-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "multilingual-e5-base: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/multilingual-e5-base-intfloat",
+      "snippet": "Overview multilingual-e5-base is a multilingual text embedding model created by intfloat that generates fixed 768-dimensional dense vector representations for text in 100 languages. The model contains 12 layers and is initialized from xlm-roberta-base, then trained through a two-stage process: first with 5.97 billion weakly-supervised text pairs from sources like Wikipedia, mC4, CC News ..."
+    },
+    {
+      "title": "Multilingual E5 Text Embeddings: A Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2402.05672v1",
+      "snippet": "Three embedding models of different sizes (small / base / large) are provided, offering a balance between the inference efficiency and embedding quality. The training procedure adheres to the English E5 model recipe, involving contrastive pre-training on 1 billion multilingual text pairs, followed by fine-tuning on a combination of labeled ..."
+    },
+    {
+      "title": "multilingual-e5-base — Sentence Embedding Model by intfloat",
+      "url": "http://www.modeldatabase.com/intfloat/multilingual-e5-base.html",
+      "snippet": "intfloat/multilingual-e5-base is an open source sentence embedding model built with sentence-transformers, 30,252 downloads."
+    }
+  ]
+}

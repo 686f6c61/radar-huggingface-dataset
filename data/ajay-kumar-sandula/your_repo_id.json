@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ajay-kumar-sandula/your_repo_id",
+  "slug": "ajay-kumar-sandula-your_repo_id",
+  "author": "ajay-kumar-sandula",
+  "url": "https://huggingface.co/ajay-kumar-sandula/your_repo_id",
+  "created_at": "2026-08-24T12:35:43.000Z",
+  "updated_at": "2026-08-24T12:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:combined_ttt_148_reencoded",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8926905470,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajay-kumar-sandula (Sandula Ajay Kumar) - Hugging Face",
+      "url": "https://huggingface.co/ajay-kumar-sandula/models",
+      "snippet": "User profile of Sandula Ajay Kumar on Hugging Face"
+    },
+    {
+      "title": "‪Ajay Kumar Sandula‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=qpNSKzsAAAAJ&hl=en",
+      "snippet": "‪PhD scholar, RBCCPS, IISc. Bangalore‬ - ‪‪Cited by 25‬‬ - ‪3D Reconstruction‬ - ‪SLAM‬ - ‪Computer Vision‬ - ‪Human Robot Interaction‬ - ‪Mobile Robots‬"
+    },
+    {
+      "title": "AjayKumar-repo (Ajay Kumar) / Repositories · GitHub",
+      "url": "https://github.com/AjayKumar-repo?tab=repositories",
+      "snippet": "Aspiring AI Engineer | Building real-world AI solutions | Python • Java • ML | Focused on adaptive learning & intelligent systems - AjayKumar-repo"
+    },
+    {
+      "title": "GitHub - ajaykumarsandula/ajaykumarsandula.github.io",
+      "url": "https://github.com/ajaykumarsandula/ajaykumarsandula.github.io",
+      "snippet": "ajaykumarsandula.github.io This is the official website of Dr ajay Kumar Sandula. He is a PhD scholar at the RBCCPS department of IISc Bangalore. About"
+    },
+    {
+      "title": "Ajay Kumar Sandula - IEEE Xplore Author Profile",
+      "url": "https://ieeexplore.ieee.org/author/37090080712",
+      "snippet": "Affiliations: [Department of CyberPhysical Systems, Indian Institute of Science, Bangalore, Karnataka, India]."
+    }
+  ]
+}

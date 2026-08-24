@@ -5,7 +5,7 @@
   "author": "Sentinel7",
   "url": "https://huggingface.co/Sentinel7/krea2",
   "created_at": "2026-06-26T19:04:53.000Z",
-  "updated_at": "2026-08-22T15:39:58.000Z",
+  "updated_at": "2026-08-24T04:24:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 64111448348,
-  "storage_human": "64.1 GB",
+  "storage_bytes": 64340037252,
+  "storage_human": "64.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

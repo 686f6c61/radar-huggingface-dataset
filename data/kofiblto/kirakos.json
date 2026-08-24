@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KOFIblto/kirakos",
+  "slug": "kofiblto-kirakos",
+  "author": "KOFIblto",
+  "url": "https://huggingface.co/KOFIblto/kirakos",
+  "created_at": "2026-08-24T13:37:38.000Z",
+  "updated_at": "2026-08-24T13:37:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto",
+      "snippet": "Recent Activity updated a model1 day ago KOFIblto/lora4-ar published a model1 day ago KOFIblto/lora4-ar View all activity"
+    },
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto/models",
+      "snippet": "KOFIblto&#x27;s models1 Sort: Recently updated KOFIblto/lora4-ar Text-to-Image •Updated 1 day ago• 9"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Kirakosarn for Free Personalized ...",
+      "url": "https://polybuzz.ai/character/chat/kirakosarin-V8Cxa",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Kirakosarn|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    },
+    {
+      "title": "Inside the AI Influencer Boom: 14 Instagram Personas Hitting 1M ...",
+      "url": "https://aipulled.com/news/ai-instagram-influencers-q1-2026.html",
+      "snippet": "A working list of the most-watched synthetic Instagram models in early 2026 — real handles, real follower counts, plus an honest reverse-engineering of the model stacks (Flux 1 Krea, Stable Diffusion 3.5, ControlNet face-lock, Topaz Video AI) likely powering each."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pinkelephantlimited/pinkelephant-llm-48b-s-verification",
+  "slug": "pinkelephantlimited-pinkelephant-llm-48b-s-verification",
+  "author": "pinkelephantlimited",
+  "url": "https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-verification",
+  "created_at": "2026-08-21T16:13:58.000Z",
+  "updated_at": "2026-08-23T15:44:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "verification",
+    "evaluation",
+    "benchmarking",
+    "moe",
+    "mixture-of-experts",
+    "pink-elephant",
+    "llm",
+    "48b",
+    "alignment",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81382566,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pinkelephantlimited/pinkelephant-llm-48b-s-verification · Hugging Face",
+      "url": "https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-verification",
+      "snippet": "Industrial-standard, end-to-end verification of the FINAL aligned model. This repo is the single home for every tool, notebook, and recorded result used to verify the complete production model — not an intermediate stage. pink-elephant-llm-14b (dense 14B) └─add weights / upcycle── 48b-moe-base (8-expert MoE) ──train── 48b └─remaining epochs── 48b-s (flagship, s ..."
+    },
+    {
+      "title": "pinkelephantlimited/pinkelephant-llm-48b · Hugging Face",
+      "url": "https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b",
+      "snippet": "Pink Elephant 48B was upcycled, not trained from scratch. The feedforward weights of the established pink-elephant-llm-14b dense foundation were mathematically split and replicated into eight complementary experts — preserving the parent model&#x27;s knowledge while multiplying capacity roughly threefold. Scaling through intelligence, not brute force."
+    },
+    {
+      "title": "pinkelephantlimited/pink-elephant-llm - GitHub",
+      "url": "https://github.com/pinkelephantlimited/pink-elephant-llm",
+      "snippet": "Pink Elephant LLM is a family of custom LLaMA-architecture language models trained from scratch on 2+ trillion tokens of code, natural language, and mathematical data. Our models are designed for ..."
+    },
+    {
+      "title": "pinkelephantlimited (Pink Elephant Limited) · GitHub",
+      "url": "https://github.com/pinkelephantlimited/",
+      "snippet": "Joined Jul 2, 2026 Block or report user Block or report pinkelephantlimited Block user Add an optional note pink-elephant-llm pink-elephant-llm Public Training infrastructure and evaluation suite for Pink Elephant LLM models Python .github .github Public Pink Elephant Limited organization profile"
+    },
+    {
+      "title": "Pinkelephant Llm 48b S Verification - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/pinkelephantlimited/pinkelephant-llm-48b-s-verification",
+      "snippet": "Registry entry for model Pinkelephant Llm 48b S Verification; source metadata pending."
+    }
+  ]
+}

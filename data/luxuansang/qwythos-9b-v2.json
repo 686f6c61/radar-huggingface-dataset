@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "luxuansang/Qwythos-9B-v2",
+  "slug": "luxuansang-qwythos-9b-v2",
+  "author": "luxuansang",
+  "url": "https://huggingface.co/luxuansang/Qwythos-9B-v2",
+  "created_at": "2026-08-24T15:13:19.000Z",
+  "updated_at": "2026-08-24T15:13:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwythos",
+    "empero-ai",
+    "reasoning",
+    "qwen3.5",
+    "ftpo",
+    "uncensored",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+    "base_model:finetune:empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19329119596,
+  "storage_human": "19.3 GB",
+  "base_model": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwythos-9B-v2 · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "empero-ai/Qwythos-9B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "New · Qwen3.8-9B / 4B / 2B — distilled Small models, trained in the open. We are an independent AI research lab in Germany, building language models efficient enough to run on hardware you own. Latest: a full-parameter distill of Qwen3.8-2.4T into 9B / 4B / 2B, and a GDN-aware 27B GGUF at 11.7 GiB. The open-weight Qwythos family has passed one million downloads on Hugging Face."
+    },
+    {
+      "title": "QWYTHOS 9B V2 Explained: 1M Token Context for AI Agent Workflows",
+      "url": "https://aiadoptionagency.com/qwythos-9b-v2/",
+      "snippet": "TL;DR QWYTHOS 9B V2 is Empero AI&#x27;s refreshed 9 billion parameter reasoning model that finally eliminates greedy decoding loops while keeping the 1 million token context window, uncensored research posture, and hybrid attention design that made the original valuable. The V2 release swaps looping workarounds for deterministic behavior in agent loops, making it a serious […]"
+    },
+    {
+      "title": "Qwythos-9B-v2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwythos-9b-v2-empero-ai",
+      "snippet": "Overview Qwythos-9B-v2 is a 9-billion-parameter text generation model developed by empero-ai that fixes repetitive output problems in the base Qwythos while preserving its reasoning capabilities. Built on the Qwen3.5-9B architecture (a hybrid combining 3:1 Gated-DeltaNet linear-attention with full attention blocks), the model ships with a native multi-token-prediction head, 1,048,576-token ..."
+    }
+  ]
+}

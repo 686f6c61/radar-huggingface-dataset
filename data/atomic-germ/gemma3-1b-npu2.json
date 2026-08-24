@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Gemma3-1B-NPU2",
+  "slug": "atomic-germ-gemma3-1b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Gemma3-1B-NPU2",
+  "created_at": "2026-08-24T03:17:46.000Z",
+  "updated_at": "2026-08-24T03:17:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma3_text_only",
+    "text-generation",
+    "unsloth",
+    "gemma3",
+    "gemma",
+    "google",
+    "conversational",
+    "en",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2494118123,
+  "storage_human": "2.5 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Gemma3-1B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Gemma3-1B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastFlowLM/Gemma3-1B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Gemma3-1B-NPU2",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 3 - Google&#x27;s Most Advanced Open AI Model - GitHub",
+      "url": "https://github.com/gemma-3/gemma-3",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "gemma-3 (Gemma3) · GitHub",
+      "url": "https://github.com/gemma-3/",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24",
+  "slug": "burningfeet-qwen3-6-35b-a3b-uncensored-genesis-hermes-v10-gguf-2026-08-24",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24",
+  "created_at": "2026-08-24T14:14:42.000Z",
+  "updated_at": "2026-08-24T14:25:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 86839427456,
+  "storage_human": "86.8 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08 ...",
+      "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08-07",
+      "snippet": "What is Genesis? Genesis is post training data regeneration and calibrarion algorythm for neural networks (LLM) in GGUF format that I made with AI help during almost half a year of development. It&#x27;s optimized, architecture independent, works with any model in GGUF format and based on mathematical statistics. I don&#x27;t train or finetune models, I repair purity of signal in them instead on Google ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08-04",
+      "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08-04",
+      "snippet": "🌟 Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive -> Genesis Hermes V6 ⚡ Why Genesis project exists? During training, ALL models don&#x27;t just learn knowledge - they also accumulate random noise in their tensors. This noise builds up and creates something I call the Noise Gate - a fundamental barrier that stops LLM models from learning further and makes them unstable, verbose, and prone to ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V4-MTP-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V4-MTP-GGUF",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V4-MTP-GGUF — an open model on Inferix. Explore files, versions, and one-click deployment. 12,726 downloads · 3 likes."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF vs Qwen3.6-35B-A3B ...",
+      "url": "https://www.aimodels.fyi/models/compare/qwen3.6-35b-a3b-uncensored-genesis-hermes-v10-gguf-luffythefox-vs-qwen3.6-35b-a3b-uncensored-genesis-hermes-v9-gguf-luffythefox",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-GGUF Pick the Hermes V10 model for agentic behavior, structured JSON responses, and the Hermes-oriented transfer described in the card."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "url": "https://aiany.app/item/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v5-gguf",
+      "snippet": "Introduction This item packages a Qwen3.6-based, MoE 35B model in GGUF format that was numerically repaired (\"Genesis‑SVD\") to recover signal from corrupted tensors and exposed as a multimodal image-text-to-text and conversational agent. The release targets users who need an uncensored, agentic model variant compatible with common GGUF runtimes and quantization workflows. What Sets It Apart ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v2-record",
+  "slug": "agentic-ptb-opus-high-v2-record",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v2-record",
+  "created_at": "2026-08-24T01:32:17.000Z",
+  "updated_at": "2026-08-24T01:32:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agentic-ptb",
+    "opus-high-v2",
+    "record",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LLMs for Agentic — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/agentic",
+      "snippet": "Best LLMs for Agentic — August 2026 Leaderboard Data refreshed: August 22, 2026 Tool use, browser research, and computer-use workflows As of August 2026, the top agentic model on the BenchLM leaderboard is Claude Opus 5 with a BenchAlign agentic score of 79.7."
+    },
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "agentic-ptb/INDEX · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentic-ptb/INDEX",
+      "snippet": "Datasets: agentic-ptb / INDEX like 0 Follow agentic-ptb 1 Modalities: Tabular Text Formats: json Size: < 1K Tags: agentic-ptb index Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·234 rows default (234 rows) Split (1) train·234 rows train (234 ..."
+    },
+    {
+      "title": "Introducing Claude Opus 4.8 &#92; Anthropic",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "snippet": "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work."
+    },
+    {
+      "title": "AA Agentic Index Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/aaagenticindex",
+      "snippet": "AA Agentic Index aggregated model score snapshot across 91 AI models. Display only on BenchLM and excluded from overall rankings. A display-only Artificial Analysis agentic index."
+    }
+  ]
+}

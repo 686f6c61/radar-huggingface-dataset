@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "louivis/qwen3guard-0.6b-2t-adapter",
+  "slug": "louivis-qwen3guard-0-6b-2t-adapter",
+  "author": "louivis",
+  "url": "https://huggingface.co/louivis/qwen3guard-0.6b-2t-adapter",
+  "created_at": "2026-08-23T14:05:51.000Z",
+  "updated_at": "2026-08-23T14:08:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51844905,
+  "storage_human": "52 MB",
+  "base_model": "Qwen3Guard-Gen-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3Guard: Qwen3Guard is a multilingual guardrail ...",
+      "url": "https://github.com/QwenLM/Qwen3Guard",
+      "snippet": "Qwen3Guard is a series of safety moderation models built upon Qwen3 and trained on a dataset of 1.19 million prompts and responses labeled for safety. The series includes models of three sizes (0.6B, 4B, and 8B) and features two specialized variants: Qwen3Guard-Gen, a generative model that accepts full user prompts and model responses to perform safety classification, and Qwen3Guard-Stream ..."
+    },
+    {
+      "title": "Qwen3Guard - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3guard",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3Guard-Gen-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B?library=transformers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3Guard Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2510.14276v1",
+      "snippet": "Both variants are available in three model sizes, 0.6B, 4B, and 8B parameters, to accommodate diverse deployment scenarios and resource constraints. We comprehensively evaluate Qwen3Guard across a diverse suite of benchmarks, including English, Chinese, and multilingual datasets."
+    },
+    {
+      "title": "GitHub - neineit/-LLM-Qwen3Guard: Qwen3Guard is a multilingual ...",
+      "url": "https://github.com/neineit/-LLM-Qwen3Guard",
+      "snippet": "Qwen3Guard is a series of safety moderation models built upon Qwen3 and trained on a dataset of 1.19 million prompts and responses labeled for safety. The series includes models of three sizes (0.6B, 4B, and 8B) and features two specialized variants: Qwen3Guard-Gen, a generative model that accepts full user prompts and model responses to perform safety classification, and Qwen3Guard-Stream ..."
+    }
+  ]
+}

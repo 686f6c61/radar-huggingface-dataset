@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "goat-baek/news2stock-lora",
+  "slug": "goat-baek-news2stock-lora",
+  "author": "goat-baek",
+  "url": "https://huggingface.co/goat-baek/news2stock-lora",
+  "created_at": "2026-08-24T08:56:23.000Z",
+  "updated_at": "2026-08-24T08:56:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "goat-baek/news2stock-lora · Hugging Face",
+      "url": "https://huggingface.co/goat-baek/news2stock-lora",
+      "snippet": "Instructions to use goat-baek/news2stock-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use goat-baek/news2stock-lora with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses ..."
+    },
+    {
+      "title": "Make LoRA Great Again: Boosting LoRA with Adaptive Singular Values and ...",
+      "url": "https://arxiv.org/pdf/2502.16894v3",
+      "snippet": "To mitigate these issues, we propose Great LoRA Mixture-of-Expert (GOAT), a framework that (1) adaptively integrates relevant priors using an SVD-structured MoE, and (2) aligns optimization with full fine-tuned MoE by deriving a theoretical scaling fac-tor."
+    },
+    {
+      "title": "GitHub - Facico/GOAT-PEFT: [ICML2025] Make LoRA Great Again: Boosting ...",
+      "url": "https://github.com/Facico/GOAT-PEFT",
+      "snippet": "Official implementation of GOAT: a novel framework that boosts Low-Rank Adaptation (LoRA) for large-scale model fine-tuning by integrating adaptive singular-value priors and theoretical optimization alignment within a Mixture-of-Experts (MoE) architecture. Our Paper has been accepted by ICML2025."
+    },
+    {
+      "title": "LoraBaek · GitHub",
+      "url": "https://github.com/LoraBaek",
+      "snippet": "LoraBaek has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GOAT labs — Research on production LLMs",
+      "url": "https://goat.ai/",
+      "snippet": "We measure how AI in production actually performs. GOAT pays teams for the production LLM traces they already generate. Connect Claude Code, Cursor, Codex, or Antigravity in one command, get up to 10% cashback on your output-token spend, cashed out in USDC — and help build the corpus behind live research like PolymarketBench."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/kora-gpt2-sst2-peft_lora_seed0",
+  "slug": "onepunchmonk101010-kora-gpt2-sst2-peft_lora_seed0",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/kora-gpt2-sst2-peft_lora_seed0",
+  "created_at": "2026-08-23T08:08:27.000Z",
+  "updated_at": "2026-08-23T08:08:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4737429,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mysterious &#x27;Ox Alpha&#x27; Drop Sparks Gemini Rumors: What the Forensics ...",
+      "url": "https://nokiapoweruser.com/ox-alpha-openrouter-google-gemini-zhipu-ai-mystery/",
+      "snippet": "A mysterious AI model named Ox Alpha hit OpenRouter, sending Gemini hype into overdrive. But technical forensics tell a completely different story. - Read in Google AI News on NPowerUser"
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "Free AI Chat Online - GPT-5, Gemini & More ｜ NoteGPT",
+      "url": "https://notegpt.io/ai-chat",
+      "snippet": "AI Chat is an online tool that lets you chat with ChatGPT, Gemini, DeepSeek and more. You can ask questions, get instant answers, brainstorm ideas, create content, and explore knowledge in real time. It&#x27;s perfect for students, creators, and professionals who want to learn, write, research, or solve problems quickly. With AI Chat, you can access the latest AI models free online, enjoy ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    }
+  ]
+}

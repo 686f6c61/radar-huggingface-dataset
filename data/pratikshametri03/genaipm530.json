@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pratikshametri03/GenAIPM530",
+  "slug": "pratikshametri03-genaipm530",
+  "author": "pratikshametri03",
+  "url": "https://huggingface.co/pratikshametri03/GenAIPM530",
+  "created_at": "2026-08-24T05:12:20.000Z",
+  "updated_at": "2026-08-24T05:21:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pratikshametri03/GenAIPM530 · Hugging Face",
+      "url": "https://huggingface.co/pratikshametri03/GenAIPM530",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pratikshametri03/generativeAI · Hugging Face",
+      "url": "https://huggingface.co/pratikshametri03/generativeAI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Model capabilities Read Gemini 3 docs Model Gemini 3.1 Pro Advanced reasoning for coding and complex tasks Gemini 3.5 Flash"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    }
+  ]
+}

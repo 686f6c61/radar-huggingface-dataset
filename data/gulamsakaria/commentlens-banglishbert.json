@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "gulamsakaria/commentlens-banglishbert",
+  "slug": "gulamsakaria-commentlens-banglishbert",
+  "author": "gulamsakaria",
+  "url": "https://huggingface.co/gulamsakaria/commentlens-banglishbert",
+  "created_at": "2026-08-23T17:50:18.000Z",
+  "updated_at": "2026-08-23T18:14:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "electra",
+    "bangla",
+    "banglish",
+    "text-classification",
+    "comment-moderation",
+    "bn",
+    "base_model:csebuetnlp/banglishbert",
+    "base_model:quantized:csebuetnlp/banglishbert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110621189,
+  "parameters_human": "110.6M",
+  "storage_bytes": 553880138,
+  "storage_human": "554 MB",
+  "base_model": "csebuetnlp/banglishbert",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "csebuetnlp/banglishbert · Hugging Face",
+      "url": "https://huggingface.co/csebuetnlp/banglishbert",
+      "snippet": "BanglishBERT This repository contains the pretrained discriminator checkpoint of the model BanglishBERT. This is an ELECTRA discriminator model pretrained with the Replaced Token Detection (RTD) objective on large amounts of Bengali and English corpora. BanglishBERT achieves state-of-the-art zero-shot cross-lingual transfer results in many of the NLP tasks in Bengali. For finetuning on ..."
+    },
+    {
+      "title": "gulamsakaria (Gulam Sakaria) - Hugging Face",
+      "url": "https://huggingface.co/gulamsakaria",
+      "snippet": "User profile of Gulam Sakaria on Hugging Face"
+    },
+    {
+      "title": "BanglishBERT: Code-Mixed NLP Transformer",
+      "url": "https://www.emergentmind.com/topics/banglishbert-model",
+      "snippet": "BanglishBERT is a Transformer-based model optimized for Bangla-English code-mixed texts, leveraging the ELECTRA framework for replaced token detection. It features a unified tokenization and normalization pipeline that processes Bangla, English, and Romanized Bangla to achieve state-of-the-art sentiment classification."
+    },
+    {
+      "title": "BanglishBERT: Deep Code-Mixed Language Models",
+      "url": "https://www.emergentmind.com/topics/banglishbert",
+      "snippet": "BanglishBERT is a deep Transformer-based language model designed to process and understand Bangla-English code-mixed text through multilingual pretraining and subword tokenization. It leverages both BERT and ELECTRA architectures, employing normalization and transliteration techniques to handle native-script and romanized forms effectively. The model achieves state-of-the-art sentiment ..."
+    },
+    {
+      "title": "GitHub - csebuetnlp/banglabert: This repository contains the official ...",
+      "url": "https://github.com/csebuetnlp/banglabert",
+      "snippet": "The pretrained model checkpoints are available at Huggingface model hub. BanglaBERT BanglishBERT BanglaBERT (small) BanglaBERT (large) To use these models for the supported downstream tasks in this repository see Training & Evaluation. Note: These models were pretrained using a specific normalization pipeline available here. All finetuning scripts in this repository uses this normalization by ..."
+    }
+  ]
+}

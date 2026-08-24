@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "deepsweet/Qwen3.8-27B-DFlash2-FP16",
+  "slug": "deepsweet-qwen3-8-27b-dflash2-fp16",
+  "author": "deepsweet",
+  "url": "https://huggingface.co/deepsweet/Qwen3.8-27B-DFlash2-FP16",
+  "created_at": "2026-08-23T15:32:51.000Z",
+  "updated_at": "2026-08-23T15:43:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "draft-model",
+    "text-generation",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:finetune:z-lab/Qwen3.8-27B-DFlash2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3848817808,
+  "storage_human": "3.8 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2: A Guide to Faster Qwen Inference",
+      "url": "https://hackernoon.com/qwen38-27b-dflash2-a-guide-to-faster-qwen-inference",
+      "snippet": "Explore Qwen3.8-27B-DFlash2, a speculative decoding model that delivers up to 3.43× faster Qwen3.8-27B inference with no quality loss."
+    },
+    {
+      "title": "Qwen 3.8 AI Models (27B & 2.4T MoE) - Singularity Moments",
+      "url": "https://singularitymoments.com/qwen-3-8-ai-models/",
+      "snippet": "Qwen 3.8 AI Models (27B & 2.4T MoE) Alibaba&#x27;s Qwen 3.8 generation represents one of the most critical open-weight milestones of 2026, headlined by the dense Qwen 3.8 27B model and the massive Qwen 3.8 2.4T (95B activated) sparse MoE. Introducing native 1,048,576-token context scaling, Multi-Head Latent Attention (MLA), and dual-stage hybrid reasoning, the series bridges the gap between ..."
+    },
+    {
+      "title": "Qwen 3.8 27B + DFlash2 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen-3-8-27b-dflash2/380617",
+      "snippet": "1 External Image inco.ai - 18 Aug 26 DFlash 2: Keep Drafting Parallel DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today. Has anyone tried Qwen 3.8 27B with DFlash2 on a DGX Spark yet?"
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2-Q4_K_M.gguf · z-lab/Qwen3.8-27B ... - Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF/blob/main/Qwen3.8-27B-DFlash2-Q4_K_M.gguf",
+      "snippet": "Docker Model Runner How to use z-lab/Qwen3.8-27B-DFlash2-GGUF with Docker Model Runner: ... Lemonade How to use z-lab/Qwen3.8-27B-DFlash2-GGUF with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use z-lab/Qwen3.8-27B-DFlash2-GGUF with Hermes Agent: Start the llama.cpp ..."
+    }
+  ]
+}

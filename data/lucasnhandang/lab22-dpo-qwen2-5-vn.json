@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lucasnhandang/lab22-dpo-qwen2.5-vn",
+  "slug": "lucasnhandang-lab22-dpo-qwen2-5-vn",
+  "author": "lucasnhandang",
+  "url": "https://huggingface.co/lucasnhandang/lab22-dpo-qwen2.5-vn",
+  "created_at": "2026-08-24T12:42:04.000Z",
+  "updated_at": "2026-08-24T12:42:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "alignment",
+    "dpo",
+    "lora",
+    "trl",
+    "unsloth",
+    "vi",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-7B-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lucasnhandang/lab22-dpo-qwen2.5-vn · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lucasnhandang/lab22-dpo-qwen2.5-vn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "luckyman2907/lab22-dpo-qwen2.5-3b-vn · Hugging Face",
+      "url": "https://huggingface.co/luckyman2907/lab22-dpo-qwen2.5-3b-vn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Introduction In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5."
+    },
+    {
+      "title": "K4-Track3-Day22-DPO-ORPO-Alignment-2A202601468-PhamThanhHung ... - GitHub",
+      "url": "https://github.com/ThanhHungtaptanhhocpython/K4-Track3-Day22-DPO-ORPO-Alignment-2A202601468-PhamThanhHung/blob/main/.env.example",
+      "snippet": "# BIGGPU → Qwen2.5-7B-bnb-4bit, 5k pref pairs, max_length=1024, batch=2 grad_accum=4 # ───────────────────────────────────────────────────────────"
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "cstr",
   "url": "https://huggingface.co/cstr/ettin-reranker-68m-v1-GGUF",
   "created_at": "2026-08-22T16:29:42.000Z",
-  "updated_at": "2026-08-22T16:30:55.000Z",
+  "updated_at": "2026-08-22T18:10:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 98,
   "trending_score": 0,
   "parameters": 68864904,
   "parameters_human": "68.9M",
-  "storage_bytes": 403183744,
-  "storage_human": "403 MB",
+  "storage_bytes": 467675680,
+  "storage_human": "468 MB",
   "base_model": "cross-encoder/ettin-reranker-68m-v1",
   "formats": [
     "gguf"

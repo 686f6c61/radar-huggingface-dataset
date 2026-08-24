@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ivanleomk/resnet18-svhn",
+  "slug": "ivanleomk-resnet18-svhn",
+  "author": "ivanleomk",
+  "url": "https://huggingface.co/ivanleomk/resnet18-svhn",
+  "created_at": "2026-08-23T12:56:02.000Z",
+  "updated_at": "2026-08-23T13:25:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "pytorch",
+    "resnet",
+    "svhn",
+    "dataset:svhn",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44775435,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edadaltocg/resnet18_svhn · Hugging Face",
+      "url": "https://huggingface.co/edadaltocg/resnet18_svhn",
+      "snippet": "Model Card for Model ID This model is a small resnet18 trained on svhn. Test Accuracy: 0.9595113706207744 License: MIT How to Get Started with the Model Use the code below to get started with the model."
+    },
+    {
+      "title": "GitHub - Jahn1998/ResNetBuiltSVHN: ResNet model to classify SVHN",
+      "url": "https://github.com/Jahn1998/ResNetBuiltSVHN",
+      "snippet": "Model Construction Choose ResNet18 and VGG16 based on the size of images and size of data set Pre-training Run 5 times, each 3 epochs on ResNet18 and VGG16 ResNet: The accuracy of training ranged from about 40% at the start to about 88% at the end. The variance of training accuracy was low. The test accuracy ranged from about 70% to about 88%."
+    },
+    {
+      "title": "LUT-NN: Empower Efficient Neural Network Inference with Centroid ...",
+      "url": "https://arxiv.org/html/2302.03213v2",
+      "snippet": "Figure 1. LUT-NN transforms model linear-computation layers to table lookup for inference. Therefore, we identify the key factor for DNN centroid learning is to pass the model loss to each operator through backpropagation, and iteratively adjust the centroids by the gradients to minimize the model loss."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=resnet18",
+      "snippet": "Explore machine learning models. 494 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: resnet18 Clear all"
+    },
+    {
+      "title": "resnet18 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html",
+      "snippet": "resnet18 ¶ torchvision.models.resnet18(*, weights: Optional[ResNet18_Weights] = None, progress: bool = True, **kwargs: Any) → ResNet[source] ¶ ResNet-18 from Deep Residual Learning for Image Recognition. Parameters: weights (ResNet18_Weights, optional) - The pretrained weights to use. See ResNet18_Weights below for more details, and possible values. By default, no pre-trained weights are ..."
+    }
+  ]
+}

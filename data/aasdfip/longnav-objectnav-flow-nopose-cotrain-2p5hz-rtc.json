@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rtc",
+  "slug": "aasdfip-longnav-objectnav-flow-nopose-cotrain-2p5hz-rtc",
+  "author": "Aasdfip",
+  "url": "https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rtc",
+  "created_at": "2026-08-24T15:22:56.000Z",
+  "updated_at": "2026-08-24T15:23:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "navigation",
+    "objectnav",
+    "pointnav",
+    "vision-language-action",
+    "habitat",
+    "flow-matching",
+    "real-time-chunking",
+    "arxiv:2512.05964",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 603292929,
+  "storage_human": "603 MB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longnav-objectnav-flow-nopose-cotrain-2p5hz - Hugging Face",
+      "url": "https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-ck303 ...",
+      "url": "https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-ck303",
+      "snippet": "The base is the MERGED repo, not raw Qwen. This adapter holds the RL delta alone (~2% of the SFT adapter&#x27;s magnitude). Both turn_vector_head_config.json (model.model_id -- this is the field the flow_rollout backend actually reads) and adapter/adapter_config.json point at Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-merged, so --ckpt <this repo> works with the same code that ran the SFT ..."
+    },
+    {
+      "title": "GitHub - chloeqxq/LongNav_ProjectPage",
+      "url": "https://github.com/chloeqxq/LongNav_ProjectPage",
+      "snippet": "Contribute to chloeqxq/LongNav_ProjectPage development by creating an account on GitHub."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "[NeurIPS 2025] GOAL: Distilling LLM Prior to Flow Model for ...",
+      "url": "https://github.com/libd1/GOAL",
+      "snippet": "Official repo for paper \"Distilling LLM Prior to Flow Model for Generalizable Agent&#x27;s Imagination in Object Goal Navigation\". - libd1/GOAL"
+    }
+  ]
+}

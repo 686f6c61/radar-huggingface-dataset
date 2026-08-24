@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alexBorisovVoV/T-Lab-test",
+  "slug": "alexborisovvov-t-lab-test",
+  "author": "alexBorisovVoV",
+  "url": "https://huggingface.co/alexBorisovVoV/T-Lab-test",
+  "created_at": "2026-08-23T18:25:28.000Z",
+  "updated_at": "2026-08-23T21:03:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104029025,
+  "storage_human": "104 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "ModelsLab Playground - Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "AI Model Test Prompts — Reproducible Benchmark Tasks",
+      "url": "https://aimodelbenchmarks.com/prompts",
+      "snippet": "Open-source test prompts for evaluating LLMs on coding, reasoning, and tool-use tasks. Use these to benchmark models yourself. Updated March 2026."
+    },
+    {
+      "title": "AI models &#x27;escaping&#x27; test lab isn&#x27;t evidence of rogue AI, says cyber ...",
+      "url": "https://www.lboro.ac.uk/media-centre/press-releases/2026/july/ai-models-escape-testlab-expert-asked/",
+      "snippet": "During an internal cybersecurity test, two advanced OpenAI models found a way out of their restricted testing environment - known as a \"sandbox\" - and gained access to the internet. Rather than solving the challenge as intended, they hacked into Hugging Face - a platform where AI models and ..."
+    }
+  ]
+}

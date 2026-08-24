@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-e2448246c057",
+  "slug": "greenfield0810-affine-ark-e2448246c057",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-e2448246c057",
+  "created_at": "2026-08-23T18:01:06.000Z",
+  "updated_at": "2026-08-23T18:01:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227301862,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "greenfield0810/affine-ark-e2448246c057 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-e2448246c057",
+      "snippet": "Affine archive — artifact e2448246c057 An unmodified copy of a competitor checkpoint from the Bittensor subnet 120 (Affine) leaderboard, preserved because repos on that board are routinely flipped private within days of duelling (31% of all challengers that have ever duelled were already unreachable when this archive was built)."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

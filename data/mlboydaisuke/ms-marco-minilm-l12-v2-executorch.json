@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/ms-marco-MiniLM-L12-v2-ExecuTorch",
+  "slug": "mlboydaisuke-ms-marco-minilm-l12-v2-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/ms-marco-MiniLM-L12-v2-ExecuTorch",
+  "created_at": "2026-08-23T12:39:21.000Z",
+  "updated_at": "2026-08-23T23:10:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "text-ranking",
+    "text-classification",
+    "base_model:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267864834,
+  "storage_human": "268 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L12-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L12-v2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/cross-encoder-ms-marco-minilm-l-12-v2",
+      "snippet": "cross-encoder/ms-marco-MiniLM-L-12-v2 is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the text-classification task in the transformers library."
+    },
+    {
+      "title": "MS-Marco-MiniLM-L-12-v2 - GitHub",
+      "url": "https://github.com/inferless/MS-marco-MiniLM-L-12-v2",
+      "snippet": "MS-Marco-MiniLM-L-12-v2 This model was trained on the MS Marco Passage Ranking task. The model can be used for Information Retrieval: Given a query, encode the query will all possible passages (e.g. retrieved with ElasticSearch). Then sort the passages in a decreasing order. See SBERT.net Retrieve & Re-rank for more details."
+    },
+    {
+      "title": "Ms Marco Minilm L12 - The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/cross-encoder-ms-marco-minilm-l12",
+      "snippet": "MS MARCO MiniLM-L12 v2 is an open-weight cross-encoder reranker fine-tuned on the MS MARCO Passage Ranking dataset, designed to score query-passage pairs in the second stage of retrieval pipelines. Its 12-layer MiniLM backbone keeps the parameter count at 33.4M, processing roughly 960 documents per second on a V100."
+    },
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L12-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

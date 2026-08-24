@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "brucoder/winter-frost",
+  "slug": "brucoder-winter-frost",
+  "author": "brucoder",
+  "url": "https://huggingface.co/brucoder/winter-frost",
+  "created_at": "2026-08-24T10:18:37.000Z",
+  "updated_at": "2026-08-24T10:18:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111204864,
+  "parameters_human": "111.2M",
+  "storage_bytes": 444840209,
+  "storage_human": "445 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brucoder/winter · Hugging Face",
+      "url": "https://huggingface.co/brucoder/winter",
+      "snippet": "Winter is a lightweight, open-source language model developed by Ineza Aime Bruno. Built for efficiency and performance, it provides a fast and accessible baseline for natural language processing tasks."
+    },
+    {
+      "title": "brucoder/Winter-core-1.2-code · Hugging Face",
+      "url": "https://huggingface.co/brucoder/Winter-core-1.2-code",
+      "snippet": "MLS-Bench evaluates whether AI systems can invent generalizable and scalable ML methods. MLS-Bench-Lite is the official 30-task subset of MLS-Bench, covering LLM pretraining and post-training, robotics, world models, computer vision, reinforcement learning, optimization, ML systems, AI for Science, and more."
+    },
+    {
+      "title": "Winter-core-1.2-code API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/brucoder/Winter-core-1.2-code",
+      "snippet": "Run Winter-core-1.2-code with FriendliAI inference. Kimi K2.7 Code is a coding-focused agentic model built upon Kimi K2.6."
+    },
+    {
+      "title": "GLM-5.2-Winter-PRO API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/brucoder/GLM-5.2-Winter-PRO",
+      "snippet": "Run GLM-5.2-Winter-PRO with FriendliAI inference. We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks."
+    },
+    {
+      "title": "GitHub - jhpark-ai/FROST: FROST: Training-Free Few-Shot Segmentation ...",
+      "url": "https://github.com/jhpark-ai/FROST",
+      "snippet": "We introduce FROST, a training-free few-shot segmenter that treats the reference foreground and background as two point clouds on the unit sphere of frozen DINOv3 features and labels each query token by a nonparametric density ratio, with a threshold the Bayes rule fixes at zero under equal priors."
+    }
+  ]
+}

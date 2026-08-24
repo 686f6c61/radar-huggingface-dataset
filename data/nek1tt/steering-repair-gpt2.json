@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nek1tt/steering-repair-gpt2",
+  "slug": "nek1tt-steering-repair-gpt2",
+  "author": "Nek1tt",
+  "url": "https://huggingface.co/Nek1tt/steering-repair-gpt2",
+  "created_at": "2026-08-23T18:00:56.000Z",
+  "updated_at": "2026-08-23T22:49:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mechanistic-interpretability",
+    "activation-steering",
+    "activation-denoising",
+    "gpt2",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21270119,
+  "storage_human": "21 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Nek1tt/steering-manifold-repair",
+      "url": "https://github.com/Nek1tt/steering-manifold-repair/tree/main",
+      "snippet": "requested vs effective alpha after repair; cosine between the denoiser correction and steering vector; fraction of correction norm parallel to the steering vector; correction norm relative to the steering perturbation; clean-model NLL, distinct-1/2/3 and 3-gram repetition; independent local sentiment concept score."
+    },
+    {
+      "title": "gimacorp/gpt2-steering-scrubber · Hugging Face",
+      "url": "https://huggingface.co/gimacorp/gpt2-steering-scrubber",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nek1tt (Nek1t_) · GitHub",
+      "url": "https://github.com/Nek1tt/",
+      "snippet": "4th-year student at Novosibirsk State University (NSU). I build and explore projects in CUDA, AI/ML, and Audio ML, with a particular interest in efficient inference and applied machine learning."
+    },
+    {
+      "title": "NeuroTrace - GPT-2 Small Residual Attack & Defence Framework (IOI Task)",
+      "url": "https://discuss.huggingface.co/t/neurotrace-gpt-2-small-residual-attack-defence-framework-ioi-task/170688",
+      "snippet": "1. What is NeuroTrace? NeuroTrace is an end-to-end research framework for: Attacking GPT-2 Small on the Indirect Object Identification (IOI) task Defending it using learned steering vectors in the residual stream Wrapping everything in an integrated \"immune system\" that decides when and where to intervene The project is built around GPT-2 Small (124M) and uses: 12 Sparse Autoencoders (SAE ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

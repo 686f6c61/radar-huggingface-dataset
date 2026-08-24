@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zoarag/ayasesuki",
+  "slug": "zoarag-ayasesuki",
+  "author": "zoarag",
+  "url": "https://huggingface.co/zoarag/ayasesuki",
+  "created_at": "2026-04-07T08:46:57.000Z",
+  "updated_at": "2026-08-23T10:01:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10133180224,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zoarag/ayasesuki · Hugging Face",
+      "url": "https://huggingface.co/zoarag/ayasesuki",
+      "snippet": "zoarag / ayasesuki like 1 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "zoarag (zoarag) - Hugging Face",
+      "url": "https://huggingface.co/zoarag/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 26 days ago ... updated a model 26 days ago"
+    },
+    {
+      "title": "zoarag (zoarag) - Hugging Face",
+      "url": "https://huggingface.co/zoarag/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 22 days ago ... published a model 22 days ago"
+    },
+    {
+      "title": "Ayasesuki AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/ayasesuki",
+      "snippet": "Discover AI Art Model in our #ayasesuki gallery. Trending Trending Most Used Most Liked Latest All Categories All Categories LoRA SD All Time All Time Yesterday Past 7 Days Past 30 Days PixAI LoRADiT.2 Haruka v2 style 499.21k9 1.86k User LoRADiT.2 好きなのを詰めたやつ-夢をください 22.61k0 221 User LoRAXLDiT.2 4B_pixel artstyle ..."
+    },
+    {
+      "title": "zoarag/AidaCubed · Hugging Face",
+      "url": "https://huggingface.co/zoarag/AidaCubed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

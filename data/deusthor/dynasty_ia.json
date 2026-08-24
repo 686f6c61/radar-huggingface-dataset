@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deusthor/DYNASTY_IA",
+  "slug": "deusthor-dynasty_ia",
+  "author": "deusthor",
+  "url": "https://huggingface.co/deusthor/DYNASTY_IA",
+  "created_at": "2026-08-23T06:25:57.000Z",
+  "updated_at": "2026-08-23T06:25:57.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DynastyAI - The Challenger AI Transformation Partner",
+      "url": "https://dynastyai.io/",
+      "snippet": "Intelligent Inbound Lead Management. AI-powered sales agents that instantly respond to incoming leads, qualify prospects, and nurture them through the sales funnel with personalized follow-ups and seamless handoffs to your sales team."
+    },
+    {
+      "title": "GitHub - bworthy89/DynastyAI",
+      "url": "https://github.com/bworthy89/DynastyAI",
+      "snippet": "The default model is claude-opus-4-8; switch AI_MODEL in src/ai/config.ts to claude-haiku-4-5 for a much cheaper option. The app is fully functional with no key at all."
+    },
+    {
+      "title": "dynasty-ai (dynasty.ai) - Hugging Face",
+      "url": "https://huggingface.co/dynasty-ai/models",
+      "snippet": "Org profile for dynasty.ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Dynasty Spec 3 AI Model Rankings",
+      "url": "https://dynastyspec.com/rankings/three-ai",
+      "snippet": "A separate Dynasty Spec rankings view for ChatGPT, Gemini, and Claude-style AI model perspectives, consensus ranks, and disagreement signals."
+    },
+    {
+      "title": "dynasty AI Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/search/tags/dynasty",
+      "snippet": "Browse and download AI models tagged with \"dynasty\". Discover Stable Diffusion models, LoRA, LyCORIS, and more for your creative projects."
+    }
+  ]
+}

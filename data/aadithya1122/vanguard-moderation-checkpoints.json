@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Aadithya1122/vanguard-moderation-checkpoints",
+  "slug": "aadithya1122-vanguard-moderation-checkpoints",
+  "author": "Aadithya1122",
+  "url": "https://huggingface.co/Aadithya1122/vanguard-moderation-checkpoints",
+  "created_at": "2026-08-23T12:21:58.000Z",
+  "updated_at": "2026-08-23T12:25:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "content-moderation",
+    "multimodal",
+    "cross-attention",
+    "clip",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72656014,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aadithya1122 (Aadithya A R) - Hugging Face",
+      "url": "https://huggingface.co/Aadithya1122",
+      "snippet": "Parkinson&#x27;s Voice Detection 🧠 Detect Parkinson&#x27;s disease from voice using wav2vec2-XLS-R Aadithya1122 25 days ago Sleeping"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/TR-HASH-MoE-200M-130B-Checkpoints"
+    },
+    {
+      "title": "GitHub - l0gicx/ai-model-bypass: Exploit prompts and roleplay ...",
+      "url": "https://github.com/l0gicx/ai-model-bypass",
+      "snippet": "Exploit prompts and roleplay techniques for bypassing AI model restrictions. - l0gicx/ai-model-bypass"
+    },
+    {
+      "title": "vanguard AI Models | Civitai",
+      "url": "https://civitai.com/tag/vanguard",
+      "snippet": "Browse 19 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with vanguard."
+    }
+  ]
+}

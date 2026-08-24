@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tjarlfl/dama-aibrain",
+  "slug": "tjarlfl-dama-aibrain",
+  "author": "tjarlfl",
+  "url": "https://huggingface.co/tjarlfl/dama-aibrain",
+  "created_at": "2026-08-23T12:12:38.000Z",
+  "updated_at": "2026-08-23T13:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10310958245,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taeri077/dama-ai-brain · Hugging Face",
+      "url": "https://huggingface.co/Taeri077/dama-ai-brain",
+      "snippet": "Taeri077 / dama-ai-brain like 0 GGUF gemma4 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dama-aibrain-finetuned-20260823-010940 - Hugging Face",
+      "url": "https://huggingface.co/benesys/dama-aibrain-finetuned-20260823-010940",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dama Aibrain - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dennyjo/dama-aibrain",
+      "snippet": "Registry entry for model Dama Aibrain; source metadata pending."
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/tlsrmawl/dama-aibrain",
+      "snippet": "Deploy dama-aibrain with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Dama Aibrain by htg0922 — VRAM 10.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/htg0922%2Fdama-aibrain,1zM4rKF6X8iWnfSD9O6WVG",
+      "snippet": "Dama Aibrain is an open-source 5.1b LLM by htg0922. VRAM 10.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

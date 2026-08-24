@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Arshia82sbn/Persian-Sentiment-SentenceTransformer",
+  "slug": "arshia82sbn-persian-sentiment-sentencetransformer",
+  "author": "Arshia82sbn",
+  "url": "https://huggingface.co/Arshia82sbn/Persian-Sentiment-SentenceTransformer",
+  "created_at": "2026-08-01T12:59:00.000Z",
+  "updated_at": "2026-08-24T10:57:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:315000",
+    "loss:SoftmaxLossClassification",
+    "arxiv:1908.10084",
+    "base_model:heydariAI/persian-embeddings",
+    "base_model:finetune:heydariAI/persian-embeddings",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2256690163,
+  "storage_human": "2.3 GB",
+  "base_model": "heydariAI/persian-embeddings",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arshia82sbn (Arshia Saberian) - Hugging Face",
+      "url": "https://huggingface.co/Arshia82sbn/datasets",
+      "snippet": "AI Engineer & Full Stack Developer. Interested in NLP, MLOps, Persian/English sentiment analysis, text summarization, and Computer Vision. Working with PyTorch, TensorFlow, Spacy, and HuggingFace D..."
+    },
+    {
+      "title": "Arshia Saberian | Kaggle",
+      "url": "https://www.kaggle.com/arshiasaberian",
+      "snippet": "AI Engineer and Systems Architect specializing in Natural Language Processing (NLP), Representation Learning, and Computer Vision. Focused on fine-tuning Transformer architectures, building end-to-end Persian & English sentiment analysis pipelines, and deploying scalable machine learning models to production."
+    },
+    {
+      "title": "Persian Sentiment Analysis with Machine Learning - LinkedIn",
+      "url": "https://www.linkedin.com/posts/arshia-saberian-420709177_sentiment-classification-with-machine-learning-activity-7388614455045279745-MHSO",
+      "snippet": "Sentiment Classification with Machine Learning and Persian NLP In this project, I developed a multi-class sentiment analysis model designed for Persian text data. The goal was to classify text ..."
+    },
+    {
+      "title": "arshia82sbn (Arshia Saberian) · GitHub",
+      "url": "https://github.com/arshia82sbn",
+      "snippet": "I am an AI Engineer and Full Stack Developer passionate about building intelligent software systems that combine Artificial Intelligence, Modern Web Development, and Embedded Computing into scalable, production-ready solutions. My work spans the complete software lifecycle—from researching machine learning models and designing backend architectures to building modern frontend applications ..."
+    },
+    {
+      "title": "sentence-transformers · PyPI",
+      "url": "https://pypi.org/project/sentence-transformers/",
+      "snippet": "Tip: Using an AI coding agent (Claude Code, Codex, Cursor, Gemini CLI, ...)? Install the train-sentence-transformers Hugging Face Agent Skill via hf skills add train-sentence-transformers [--claude] [--global] and ask your agent to fine-tune a model on your data."
+    }
+  ]
+}

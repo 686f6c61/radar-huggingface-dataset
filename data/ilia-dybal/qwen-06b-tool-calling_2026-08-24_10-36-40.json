@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ilia-dybal/Qwen-06B-tool-calling_2026-08-24_10-36-40",
+  "slug": "ilia-dybal-qwen-06b-tool-calling_2026-08-24_10-36-40",
+  "author": "ilia-dybal",
+  "url": "https://huggingface.co/ilia-dybal/Qwen-06B-tool-calling_2026-08-24_10-36-40",
+  "created_at": "2026-08-24T14:18:48.000Z",
+  "updated_at": "2026-08-24T14:18:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17873051,
+  "storage_human": "18 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to implement tool calling by using Function Calling - Alibaba Cloud ...",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+      "snippet": "How to implement tool calling by using Function Calling,Alibaba Cloud Model Studio:Large Language Models (LLMs) cannot access real-time data or external systems. Function Calling enables models to call external tools, such as APIs, databases, and user-defined functions. This allows ..."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Local Tool-Calling Models 2026: Real MCP Benchmarks",
+      "url": "https://www.promptquorum.com/power-local-llm/best-local-models-tool-calling-2026",
+      "snippet": "Five local models tool-call reliably in May 2026: Gemma 4 27B, GLM-4.7 32B, Qwen3 32B, Qwen3-Coder 30B, and Llama 3.3 70B. Llama 3.3 70B has the highest ceiling (~97% well-formed call rate across MCP servers) but wants 48 GB+ VRAM. Qwen3-Coder 30B is the best pick for code-shaped tool work."
+    },
+    {
+      "title": "Qwen Tool Calling and Agents - AI ML Tech News",
+      "url": "https://aimltechnews.com/ai-ml-tutorials/qwen-llm/qwen-tool-calling-and-agents.html",
+      "snippet": "This guide explores how Qwen Tool Calling and Agents work, providing developers with the blueprint for building autonomous AI systems. Whether you are using the massive 235B MoE flagship or a lightweight 4B model, Qwen&#x27;s native support for tool integration makes it a premier choice for production-ready AI agents."
+    }
+  ]
+}

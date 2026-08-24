@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rbinrs/Laguna-XS-2.1",
+  "slug": "rbinrs-laguna-xs-2-1",
+  "author": "rbinrs",
+  "url": "https://huggingface.co/rbinrs/Laguna-XS-2.1",
+  "created_at": "2026-08-23T11:52:48.000Z",
+  "updated_at": "2026-08-23T11:52:49.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "laguna-xs-2.1",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "license:openmdw-1.1",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33442617088,
+  "parameters_human": "33.44B",
+  "storage_bytes": 66889022016,
+  "storage_human": "66.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Laguna XS 2.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs-2-1",
+      "snippet": "Today we&#x27;re releasing Laguna XS 2.1, an upgraded version of our Laguna XS.2 model. Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token, designed for agentic coding and long-horizon work on a local machine. It&#x27;s the same architecture as XS.2, with a notable improvement on SWE-bench Multilingual and stronger performance on terminal-style tasks ..."
+    },
+    {
+      "title": "poolside/Laguna-XS-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "snippet": "Laguna XS 2.1 Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. This model is an upgraded version of our Laguna XS.2 model with a +5.4% jump on SWE-bench Multilingual as well as stronger performance on terminal-style tasks."
+    },
+    {
+      "title": "Models — Poolside",
+      "url": "https://poolside.ai/models",
+      "snippet": "Poolside trains models from scratch—our own data, our own infrastructure, our own reinforcement learning. Competitive with leading models at a fraction of the compute. Dive into how we build foundation models from scratch."
+    },
+    {
+      "title": "Ronaldodev/Laguna-XS-2.1 · Hugging Face",
+      "url": "https://huggingface.co/Ronaldodev/Laguna-XS-2.1",
+      "snippet": "Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. This model is an upgraded version of our Laguna XS.2 model with a +5.4% jump on SWE-bench Multilingual as well as stronger performance on terminal-style tasks."
+    },
+    {
+      "title": "Laguna XS 2.1 (33B-A3B) — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/laguna-xs-2-1/",
+      "snippet": "Runner notes In the Ollama library as `laguna-xs-2.1` (~20.3 GB; `q4_K_M` / `q8_0` / `bf16` tags) — note the hyphen-then-dot spelling, and don&#x27;t confuse it with the separate `laguna-xs.2` entry. Also runs under vLLM / SGLang / TensorRT-LLM / transformers with official GGUFs. Try it free on OpenRouter (`poolside/laguna-xs-2.1`) before downloading ~20 GB. The official DFlash speculators are ..."
+    }
+  ]
+}

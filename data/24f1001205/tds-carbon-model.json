@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f1001205/tds-carbon-model",
+  "slug": "24f1001205-tds-carbon-model",
+  "author": "24f1001205",
+  "url": "https://huggingface.co/24f1001205/tds-carbon-model",
+  "created_at": "2026-08-24T15:12:14.000Z",
+  "updated_at": "2026-08-24T15:12:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f2005112/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f2005112/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "shivainlabs/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shivainlabs/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model Family and Architecture | huggingface/carbon | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/carbon/1.1-model-family-and-architecture",
+      "snippet": "Model Family and Architecture Relevant source files This page provides a detailed technical description of the Carbon model family, including its architectural components, the hybrid tokenization system, and the specialized loss functions used during pretraining. Model Family Scales Carbon is a family of causal language models trained on 1T tokens (approximately 6T DNA base pairs) README.md 85 ..."
+    },
+    {
+      "title": "carbon/README.md at main · gdassori/carbon · GitHub",
+      "url": "https://github.com/gdassori/carbon/blob/main/README.md",
+      "snippet": "The model catalog carbon ships 28 curated, ready-to-pull models — LLMs, vision (VLM), image generation, and embeddings — each with measured perf and the right engine pre-selected. uv run carbon models: Full carbon models output (click to expand)"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

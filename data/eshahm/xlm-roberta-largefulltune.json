@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "EshAhm/xlm-roberta-largeFullTune",
+  "slug": "eshahm-xlm-roberta-largefulltune",
+  "author": "EshAhm",
+  "url": "https://huggingface.co/EshAhm/xlm-roberta-largeFullTune",
+  "created_at": "2026-08-24T10:47:38.000Z",
+  "updated_at": "2026-08-24T11:00:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "dataset:SIRIS-Lab/citation-parser-ENTITY",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558870557,
+  "parameters_human": "558.9M",
+  "storage_bytes": 2252634149,
+  "storage_human": "2.3 GB",
+  "base_model": "xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EshAhm/xlm-roberta-baseFullTune · Hugging Face",
+      "url": "https://huggingface.co/EshAhm/xlm-roberta-baseFullTune",
+      "snippet": "xlm-roberta-baseFullTune This model is a fine-tuned version of xlm-roberta-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "EshAhm/xlm-roberta-base-FullTune · Hugging Face",
+      "url": "https://huggingface.co/EshAhm/xlm-roberta-base-FullTune",
+      "snippet": "EshAhm / xlm-roberta-base-FullTune like 0 Token Classification Transformers Safetensors xlm-roberta arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/cheatham-xlm-roberta-large-finetuned-r01",
+      "snippet": "Cheatham/xlm-roberta-large-finetuned-r01 powered by Hugging Face Inference Toolkit Original Model Card text-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/xlm-roberta-large",
+      "snippet": "xlm-roberta-large is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the fill-mask task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub ."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md",
+      "snippet": "It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community organization."
+    }
+  ]
+}

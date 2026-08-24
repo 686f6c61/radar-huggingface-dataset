@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/roberta-base-latin-v2-3class-lat-intertext-v1",
+  "slug": "julian-schelb-roberta-base-latin-v2-3class-lat-intertext-v1",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/roberta-base-latin-v2-3class-lat-intertext-v1",
+  "created_at": "2026-08-24T13:44:43.000Z",
+  "updated_at": "2026-08-24T13:54:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "intertextuality",
+    "latin",
+    "multiclass",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:ClassCat/roberta-base-latin-v2",
+    "base_model:finetune:ClassCat/roberta-base-latin-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124444419,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497801820,
+  "storage_human": "498 MB",
+  "base_model": "ClassCat/roberta-base-latin-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julian-schelb/roberta-base-latin-v2-class-lat-intertext-v1 · Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/roberta-base-latin-v2-class-lat-intertext-v1",
+      "snippet": "This model is a fine-tuned version of ClassCat/roberta-base-latin-v2 for sequence classification of intertextual links between Jerome (Hieronymus) and other classical authors."
+    },
+    {
+      "title": "julian-schelb/xlm-roberta-base-class-lat-intertext-v1 · Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/xlm-roberta-base-class-lat-intertext-v1",
+      "snippet": "This model is a fine-tuned version of FacebookAI/xlm-roberta-base for sequence classification of intertextual links between Jerome (Hieronymus) and other classical authors."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    },
+    {
+      "title": "RoBERTa base model",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/roberta-base/",
+      "snippet": "RoBERTa base model Pretrained model on English language using a masked language modeling (MLM) objective. It was introduced in this paper and first released in this repository. This model is case-sensitive: it makes a difference between english and English. Disclaimer: The team releasing RoBERTa did not write a model card for this model so this model card has been written by the Hugging Face ..."
+    },
+    {
+      "title": "xlm-roberta-base · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/xlm-roberta-base",
+      "snippet": "XLM-RoBERTa (base-sized model) XLM-RoBERTa model pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages. It was introduced in the paper Unsupervised Cross-lingual Representation Learning at Scale by Conneau et al. and first released in this repository. Disclaimer: The team releasing XLM-RoBERTa did not write a model card for this model so this model card has been written by ..."
+    }
+  ]
+}

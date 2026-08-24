@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Agrima11/agrima-whisper-final",
+  "slug": "agrima11-agrima-whisper-final",
+  "author": "Agrima11",
+  "url": "https://huggingface.co/Agrima11/agrima-whisper-final",
+  "created_at": "2026-08-23T11:56:36.000Z",
+  "updated_at": "2026-08-23T12:32:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "ne",
+    "base_model:Agrima11/whisper-small-nepali-openslr",
+    "base_model:finetune:Agrima11/whisper-small-nepali-openslr",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "Agrima11/whisper-small-nepali-openslr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Model Download and Conversion | ggml-org/whisper.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion",
+      "snippet": "The whisper.cpp project requires models in a custom GGML binary format (and increasingly GGUF) to perform inference. The model management system provides three primary approaches:"
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    },
+    {
+      "title": "Whisper Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/whisper-1",
+      "snippet": "General-purpose speech recognition model Compare"
+    }
+  ]
+}

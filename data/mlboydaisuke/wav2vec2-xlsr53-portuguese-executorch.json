@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/wav2vec2-XLSR53-Portuguese-ExecuTorch",
+  "slug": "mlboydaisuke-wav2vec2-xlsr53-portuguese-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/wav2vec2-XLSR53-Portuguese-ExecuTorch",
+  "created_at": "2026-08-24T12:33:24.000Z",
+  "updated_at": "2026-08-24T12:39:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "automatic-speech-recognition",
+    "base_model:jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+    "base_model:quantized:jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1919179028,
+  "storage_human": "1.9 GB",
+  "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAV2VEC2_XLSR53 — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_XLSR53.html",
+      "snippet": "torchaudio.pipelines.WAV2VEC2_XLSR53 ¶ Wav2vec 2.0 model (\"base\" architecture), pre-trained on 56,000 hours of unlabeled audio from multiple datasets ( Multilingual LibriSpeech [Pratap et al., 2020], CommonVoice [Ardila et al., 2020] and BABEL [Gales et al., 2014]), not fine-tuned. Originally published by the authors of Unsupervised Cross-lingual Representation Learning for Speech ..."
+    },
+    {
+      "title": "WAV2VEC2_XLSR53 — Torchaudio 2.8.0 documentation",
+      "url": "https://docs.pytorch.org/audio/2.8.0/generated/torchaudio.pipelines.WAV2VEC2_XLSR53.html",
+      "snippet": "torchaudio.pipelines.WAV2VEC2_XLSR53 Wav2vec 2.0 model (\"base\" architecture), pre-trained on 56,000 hours of unlabeled audio from multiple datasets ( Multilingual LibriSpeech [Pratap et al., 2020], CommonVoice [Ardila et al., 2020] and BABEL [Gales et al., 2014]), not fine-tuned. Originally published by the authors of Unsupervised Cross-lingual Representation Learning for Speech ..."
+    },
+    {
+      "title": "Python Tutorial: wav2vec2 Portuguese ASR Model | AI Indigo Tutorials",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-wav2vec2-large-xlsr-53-portuguese-high-accuracy-pt-transcri",
+      "snippet": "Step-by-step guide to using wav2vec2-large-xlsr-53-portuguese for accurate Portuguese speech recognition in Python."
+    },
+    {
+      "title": "facebook/wav2vec2-large-xlsr-53-portuguese · Hugging Face",
+      "url": "https://huggingface.co/facebook/wav2vec2-large-xlsr-53-portuguese",
+      "snippet": "facebook / wav2vec2-large-xlsr-53-portuguese like 6 Follow AI at Meta 6.42k Automatic Speech Recognition Transformers PyTorch JAX common_voice Portuguese wav2vec2 speech audio License:apache-2.0 Model card FilesFiles and versions xet Community 1 Train Deploy Use this model Evaluation on Common Voice PT Test"
+    },
+    {
+      "title": "wav2vec2-large-xlsr-53-portuguese download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/wav2vec2-large-xlsr-53/",
+      "snippet": "Download wav2vec2-large-xlsr-53-portuguese for free. Portuguese ASR model fine-tuned on XLSR-53 for 16kHz audio input. wav2vec2-large-xlsr-53-portuguese is an automatic speech recognition (ASR) model fine-tuned on Portuguese using the Common Voice 6.1 dataset. It is based on Facebook&#x27;s wav2vec2-large-xlsr-53, a multilingual self-supervised learning model, and is optimized to transcribe ..."
+    }
+  ]
+}

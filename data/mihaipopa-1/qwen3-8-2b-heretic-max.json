@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "MihaiPopa-1/Qwen3.8-2B-Heretic-Max",
+  "slug": "mihaipopa-1-qwen3-8-2b-heretic-max",
+  "author": "MihaiPopa-1",
+  "url": "https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Heretic-Max",
+  "created_at": "2026-08-23T08:59:01.000Z",
+  "updated_at": "2026-08-23T09:10:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "edge",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-2B-Distill",
+    "base_model:finetune:empero-ai/Qwen3.8-2B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4466537681,
+  "storage_human": "4.5 GB",
+  "base_model": "empero-ai/Qwen3.8-2B-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MihaiPopa-1 (Mihai Popa) - Hugging Face",
+      "url": "https://huggingface.co/MihaiPopa-1",
+      "snippet": "I upload models and I sometimes fix typos / spelling mistakes on model cards."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "heretic-org (Heretic) - Hugging Face",
+      "url": "https://huggingface.co/heretic-org/models",
+      "snippet": "Abliteration, interpretability, training-free model modification, democratization of AI"
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Using Heretic does not require an understanding of transformer internals. In fact, anyone who knows how to run a command-line program can use Heretic to decensor language models. Heretic supports most dense models, including many multimodal models, several different MoE architectures, and even some hybrid models like Qwen3.5."
+    }
+  ]
+}

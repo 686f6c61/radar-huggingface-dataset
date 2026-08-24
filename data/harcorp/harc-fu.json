@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "harcorp/HARC-FU",
+  "slug": "harcorp-harc-fu",
+  "author": "harcorp",
+  "url": "https://huggingface.co/harcorp/HARC-FU",
+  "created_at": "2026-08-24T03:14:01.000Z",
+  "updated_at": "2026-08-24T03:41:30.000Z",
+  "license": "harcorp-owm",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "HARC-FU",
+    "HARC Arch",
+    "conversational",
+    "MoE",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-24T05:23:10.175Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harcorp Industries — Artificial Super Intelligence & Matter",
+      "url": "https://www.harcorp.industries/",
+      "snippet": "Harcorp Industries is a research and development company focused on building artificial super intelligence and matter."
+    },
+    {
+      "title": "HARC — microsoft | AI Flash Report",
+      "url": "https://aiflashreport.com/models/harc/",
+      "snippet": "What is HARC? HARC is a Major Release AI model from microsoft, released on June 2, 2026. It has a — context window. It is available via API."
+    },
+    {
+      "title": "HARC: Jailbreak-Resistant LLMs via Harmfulness Direction Coupling | 24 AI",
+      "url": "https://24-ai.news/en/news/2026-07-02/arxiv-harc-harmfulness-refusal-coupling/",
+      "snippet": "HARC fine-tuning prevents jailbreaks by coupling internal harmfulness and refusal directions in LLMs, with strong robustness and preserved model capability."
+    },
+    {
+      "title": "Brett Adcock launches Harc AI lab: 50+ hires, a datacenter of ...",
+      "url": "https://www.tbpndigest.com/story/2026-03-30/brett-adcock-launches-harc-ai-lab-50-hires-a-datacenter-of-blackwells-and-the-ex-apple-iphone-designer-building-next-gen-ai-hardware",
+      "snippet": "Brett Adcock launches Harc, a new AI lab with 50+ employees focused on vision understanding and multimodal models for consumer electronics, running in parallel to his robotics company Figure."
+    },
+    {
+      "title": "Harvey | AI software for legal and professional services",
+      "url": "https://www.harvey.ai/",
+      "snippet": "Legal AI tailored for leading law firms and corporate legal teams worldwide. Harvey streamlines contract analysis, due diligence, compliance, and litigation."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "buzhidaosha/backrooms-ai",
+  "slug": "buzhidaosha-backrooms-ai",
+  "author": "buzhidaosha",
+  "url": "https://huggingface.co/buzhidaosha/backrooms-ai",
+  "created_at": "2026-08-24T02:41:25.000Z",
+  "updated_at": "2026-08-24T02:41:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11421892,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Backroom Ai",
+      "url": "https://backroomai.app/",
+      "snippet": "Backroom AI — built on Replit. Update this description to reflect the app."
+    },
+    {
+      "title": "backrooms AI Models | Civitai",
+      "url": "https://civitai.com/tag/backrooms",
+      "snippet": "backrooms Browse 57 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with backrooms."
+    },
+    {
+      "title": "Chat with Backrooms movie rp | character.ai | AI Chat, Reimagined-Your ...",
+      "url": "https://character.ai/chat/sARH6zN4M-GnWWv573RHDOV4XUTREiA2axIILrJI7ls",
+      "snippet": "Chat with Backrooms movie rp: You can be anyone from the movie Backrooms. . Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "The Backrooms:AI writing examples - The Backrooms Wiki",
+      "url": "https://backrooms.miraheze.org/wiki/The_Backrooms:AI_writing_examples",
+      "snippet": "This page serves to catalogue examples of AI-generated writing, in order to help editors spot them more easily. For more specific information on how to detect AI..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jellyho/pi05_yam_lego_taxi_alphaflow",
+  "slug": "jellyho-pi05_yam_lego_taxi_alphaflow",
+  "author": "jellyho",
+  "url": "https://huggingface.co/jellyho/pi05_yam_lego_taxi_alphaflow",
+  "created_at": "2026-08-23T14:39:09.000Z",
+  "updated_at": "2026-08-23T14:55:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0.5",
+    "meanflow",
+    "jax",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12434956171,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jellyho (Hokyun Im) - Hugging Face",
+      "url": "https://huggingface.co/jellyho",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... updated a dataset 5 days ago"
+    },
+    {
+      "title": "jellyho/pi05_yam_lego_taxi_rlt_s200 · Hugging Face",
+      "url": "https://huggingface.co/jellyho/pi05_yam_lego_taxi_rlt_s200",
+      "snippet": "jellyho / pi05_yam_lego_taxi_rlt_s200 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Pi0.5_yam/deployment at main · YOLO12138/Pi0.5_yam",
+      "url": "https://github.com/YOLO12138/Pi0.5_yam/tree/main/deployment",
+      "snippet": "Contribute to YOLO12138/Pi0.5_yam development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - jellyho/ACRFT",
+      "url": "https://github.com/jellyho/ACRFT/tree/master",
+      "snippet": "the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization trained with knowledge insulation. Note that, in this repository, we currently only support the flow matching head for both $&#92;pi_{0.5}$ $&#92;pi_ {0.5}$ training and ..."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    }
+  ]
+}

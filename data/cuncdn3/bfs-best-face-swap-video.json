@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Cuncdn3/BFS-Best-Face-Swap-Video",
+  "slug": "cuncdn3-bfs-best-face-swap-video",
+  "author": "Cuncdn3",
+  "url": "https://huggingface.co/Cuncdn3/BFS-Best-Face-Swap-Video",
+  "created_at": "2026-08-24T02:31:55.000Z",
+  "updated_at": "2026-08-24T02:31:55.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "ltx-2",
+    "ltx-2.5",
+    "ic-lora",
+    "head-swap",
+    "video-to-video",
+    "image-to-video",
+    "bfs",
+    "lora",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:adapter:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19862458428,
+  "storage_human": "19.9 GB",
+  "base_model": "Lightricks/LTX-2.3, Lightricks/LTX-2.5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Face Swap Video - Deepfake anyone you want",
+      "url": "https://duckduckgo.com/y.js?ad_domain=deepswap.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=TpeuyQBLA8y_Ae31yACX_5uY5cjx%2DZ3kE24tgDUTaEdPfbht6m4QnSCJD7OdgMTQz4sal2yeyhzxhXFz1_kO4SOVplZR9DXc6vLSNuO%2DiFBN8AevhXiVSzmE0uwarQ41eMtiEMDJ2FYSzgFelhBZc2ZRyJSWaSTJAowE7u9w%2Dig.j8ajWpEs5dBDE_LKDa%2Dhiw&rut=ff64ff835e9416619cb2c4408cfe21486f868af135a08fb5b3e2fb7ba3a6edc8&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8RIN3h4DjhjsxrCLIgDFRqzVUCUxc9umJq53M07NLUOUcoV4YOOAUgRn77xtFi9H_9w6WhoWsYjyV0zeILPYbvUjA3LEErhgrPzS7eVjJvA4bm6zGKADE09nZOq_OlmU92aqUqvkGHwzXjplQnq2uIpqaGWLSH00wRJ3UOA0orQ2bgcX95A6%2DH%2DNCH3XBbDR9MeO0JCuGMMVdbR0AWYUdkXVqUIY%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZGVlcHN3YXAuYWklMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNmNwX2lkJTNkNDQxMTY5ODk2JTI2bXNjbGtpZCUzZGVhNDc5ZTU1OTRmNTE2ZjQ0Zjg4ZjRkZTI1NjNmNmIz%26rlid%3Dea479e5594f516f44f88f4de2563f6b3&vqd=4-168311011104691007069110103665940588462&iurl=%7B1%7DIG%3D3AC48B4AD9654BC086B77A683D094EB3%26CID%3D1654589892A86F5A16EA4F2793DF6E30%26ID%3DDevEx%2C5036.1",
+      "snippet": "Make ridiculously realistic face swap videos with just a single selfie. Easy and fast. Do face swap online. Deepswap - Top face swap website. Create your own videos."
+    },
+    {
+      "title": "qq750034/BFS-Best-Face-Swap-Video · Hugging Face",
+      "url": "https://huggingface.co/qq750034/BFS-Best-Face-Swap-Video",
+      "snippet": "This model is a technical tool designed for Digital Identity Research, Professional VFX Workflows, and Cinematic Prototyping. By downloading or using this LoRA, you acknowledge and agree to the following: Intended Use: Designed for filmmakers, VFX artists, and researchers exploring high-fidelity video identity transformation."
+    },
+    {
+      "title": "Alissonerdx/BFS-Best-Face-Swap · Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BFS - Best Face Swap - Wan Bernini V1 Head Swap | Wan Video LoRA | Civitai",
+      "url": "https://civitai.red/models/2027766/bfs-best-face-swap?modelVersionId=3050039",
+      "snippet": "The BFS (Best Face Swap) LoRA series was developed for Qwen Image Edit 2509 , specialized in high-fidelity face and head replacement tasks with nat..."
+    },
+    {
+      "title": "BFS-Best-Face-Swap-Video · Models",
+      "url": "https://www.modelscope.cn/models/Alissonerdx/BFS-Best-Face-Swap-Video",
+      "snippet": "This model is a technical tool designed for Digital Identity Research, Professional VFX Workflows, and Cinematic Prototyping. By downloading or using this LoRA, you acknowledge and agree to the following: Intended Use: Designed for filmmakers, VFX artists, and researchers exploring high-fidelity video identity transformation."
+    }
+  ]
+}

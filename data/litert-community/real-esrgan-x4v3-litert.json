@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "litert-community/real-esrgan-x4v3-litert",
+  "slug": "litert-community-real-esrgan-x4v3-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/real-esrgan-x4v3-litert",
+  "created_at": "2026-06-27T21:59:31.000Z",
+  "updated_at": "2026-08-23T23:04:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "super-resolution",
+    "real-esrgan",
+    "on-device",
+    "gpu",
+    "image-to-image",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4130210,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/real-esrgan-x4v3-litert · Hugging Face",
+      "url": "https://huggingface.co/litert-community/real-esrgan-x4v3-litert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/real-esrgan-x4v3-litert at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/real-esrgan-x4v3-litert/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xinntao/Real-ESRGAN: Real-ESRGAN aims at developing Practical ...",
+      "url": "https://github.com/xinntao/Real-ESRGAN",
+      "snippet": "The ncnn implementation is in Real-ESRGAN-ncnn-vulkan Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration. We extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data. 🌌 Thanks for your valuable feedbacks/suggestions."
+    },
+    {
+      "title": "LiteRT/litert/js/demos/real_esrgan at main · google-ai-edge/LiteRT",
+      "url": "https://github.com/google-ai-edge/LiteRT/tree/main/litert/js/demos/real_esrgan",
+      "snippet": "Models The following models are used in this demo: Real-ESRGAN x4plus: A 4x upscaling model for general images, converted to LiteRT by Qualcomm."
+    },
+    {
+      "title": "Real-ESRGAN: image super-resolution in LibreYOLO",
+      "url": "https://www.libreyolo.com/docs/models/real-esrgan",
+      "snippet": "Use Real-ESRGAN in LibreYOLO for practical image super-resolution at 4x, 2x and a fast 4x tier. Install, predict, validate and export."
+    }
+  ]
+}

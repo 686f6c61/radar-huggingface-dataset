@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/CoreSpark-TestRepo-r14",
+  "slug": "sotaagi2030-corespark-testrepo-r14",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/CoreSpark-TestRepo-r14",
+  "created_at": "2026-08-24T09:33:17.000Z",
+  "updated_at": "2026-08-24T09:33:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/CoreSpark-TestRepo-r14 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/CoreSpark-TestRepo-r14",
+      "snippet": "1. Introduction The CoreSpark has undergone a significant version upgrade. In the latest update, CoreSpark has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "SOTAagi2030/CoreSpark-TestRepo-r44 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/CoreSpark-TestRepo-r44",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOTAagi2030/MySafeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/MySafeModel-TestRepo",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "SOTAagi2030/LumenAI-TestRepo-r41 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/LumenAI-TestRepo-r41",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOTAagi2030/NeoReasoner-TestRepo-r02 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/NeoReasoner-TestRepo-r02",
+      "snippet": "SOTAagi2030 / NeoReasoner-TestRepo-r02 like 0 Feature Extraction Transformers PyTorch bert License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

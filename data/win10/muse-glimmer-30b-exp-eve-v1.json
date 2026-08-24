@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "win10/Muse-Glimmer-30B-EXP-EVE-v1",
+  "slug": "win10-muse-glimmer-30b-exp-eve-v1",
+  "author": "win10",
+  "url": "https://huggingface.co/win10/Muse-Glimmer-30B-EXP-EVE-v1",
+  "created_at": "2026-08-23T07:13:00.000Z",
+  "updated_at": "2026-08-24T03:22:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "agent",
+    "code",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581562761,
+  "storage_human": "59.6 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "For the full model card, please see the Muse Glimmer page on Hugging Face. For more details about Muse Glimmer evaluations, read the methodology report. Meta is committed to promoting safe and fair use of its tools and features, including Muse Glimmer. This Usage Policy (\"Policy\") applies to the access or use of Muse Glimmer."
+    },
+    {
+      "title": "Muse Glimmer 30B hardware requirements: Can your PC run this 30B AI model?",
+      "url": "https://www.pcquest.com/tech-explained/muse-glimmer-30b-hardware-requirements-can-your-pc-run-this-30b-ai-model-12249793",
+      "snippet": "Can your PC run Muse Glimmer 30B? We break down RAM, VRAM, quantization and CPU-GPU offloading to show what hardware this local AI model really needs."
+    },
+    {
+      "title": "Muse Glimmer 30B: Benchmarks, Hardware & How to Run - kingy.ai",
+      "url": "https://kingy.ai/blog/muse-glimmer-30b-benchmarks-hardware-run/",
+      "snippet": "Meta also says the model is not intended for people under 18 and lists prohibited uses in its Usage Policy. Who should use Muse Glimmer 30B? Use it if you already have 24-32GB hardware and want a local coding, research or personal-agent model with vision, long context and a first-party GGUF path."
+    },
+    {
+      "title": "GitHub - cobusgreyling/Muse-Glimmer: Introducing Muse Glimmer: open ...",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer/tree/main",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "gyaanbyte/coa-mapper",
+  "slug": "gyaanbyte-coa-mapper",
+  "author": "gyaanbyte",
+  "url": "https://huggingface.co/gyaanbyte/coa-mapper",
+  "created_at": "2026-08-24T11:28:12.000Z",
+  "updated_at": "2026-08-24T11:28:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "finance",
+    "accounting",
+    "chart-of-accounts",
+    "data-migration",
+    "quickbooks",
+    "sage",
+    "retrieval",
+    "sentence-similarity",
+    "en",
+    "arxiv:2407.05175",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NaimGQKC/coa-mapper-mcp: Open-source MCP server that maps ...",
+      "url": "https://github.com/NaimGQKC/coa-mapper-mcp",
+      "snippet": "Map your chart of accounts between QuickBooks, Xero, Wave, Sage, and FreshBooks — powered by MCP. coa-mapper-mcp is an open-source Model Context Protocol server that lets AI assistants map, compare, and validate charts of accounts across popular small-business accounting platforms."
+    },
+    {
+      "title": "Chart of Accounts Mapper | AI-Powered Account Mapping",
+      "url": "https://staging.coa-mapper.kotaicode.solutions/",
+      "snippet": "Intelligent mapping of hierarchical account charts using advanced AI. Combines semantic embeddings, heuristic analysis, and LLM reranking for accurate, many-to-many account mappings with full explainability."
+    },
+    {
+      "title": "Chart of Accounts Mapper - jiesen.ai",
+      "url": "https://jiesen.ai/tools/coa-mapper",
+      "snippet": "Chart of Accounts Mapper Paste a messy GL or trial-balance account list (one per line). Get each account mapped to a standard four-tier hierarchy with confidence scores and REVIEW flags."
+    },
+    {
+      "title": "AI-Powered GL Mapping for PE Finance Teams | HummingAgent",
+      "url": "https://hummingagent.ai/case-studies/coa-mapper",
+      "snippet": "AI-Powered GL Mapping for PE Finance Teams How we built an intelligent chart of accounts mapper that encodes firm-specific judgment into code, reducing deal mapping from 40-80 hours to under 4 hours of review."
+    },
+    {
+      "title": "coa-mapper-mcp/README.md at main · NaimGQKC/coa-mapper-mcp · GitHub",
+      "url": "https://github.com/NaimGQKC/coa-mapper-mcp/blob/main/README.md",
+      "snippet": "coa-mapper-mcp is an open-source Model Context Protocol server that lets AI assistants map, compare, and validate charts of accounts across popular small-business accounting platforms. It ships with curated account data for five platforms and a GAAP reference layer so mappings are grounded in standard accounting taxonomy."
+    }
+  ]
+}

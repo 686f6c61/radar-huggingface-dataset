@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Surojit-Utah/adasemseg-simclr-encoder",
+  "slug": "surojit-utah-adasemseg-simclr-encoder",
+  "author": "Surojit-Utah",
+  "url": "https://huggingface.co/Surojit-Utah/adasemseg-simclr-encoder",
+  "created_at": "2026-08-24T02:45:01.000Z",
+  "updated_at": "2026-08-24T02:51:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seismic",
+    "self-supervised-learning",
+    "contrastive-learning",
+    "simclr",
+    "resnet",
+    "segmentation",
+    "few-shot-segmentation",
+    "geophysics",
+    "arxiv:2002.05709",
+    "arxiv:2501.16760",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 336034423,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Surojit-Utah/AdaSemSeg",
+      "url": "https://github.com/Surojit-Utah/AdaSemSeg/tree/main",
+      "snippet": "This repository provides a complete, working implementation of AdaSemSeg together with all baselines, competing methods, ablation studies, trained model weights, and reproduction scripts needed to reproduce the quantitative and qualitative results reported in the paper."
+    },
+    {
+      "title": "Researcher in Machine Learning and Computer Vision",
+      "url": "https://surojit-utah.github.io/",
+      "snippet": "I am passionate about advancing the state-of-the-art in generative AI and applying deep neural networks to real-world problems in diverse domains with a limited training budget. I have a strong background in probabilistic machine learning that accommodates the randomness experienced in real-world challenges. Research Interests"
+    },
+    {
+      "title": "Projects - Researcher in Machine Learning and Computer Vision",
+      "url": "https://surojit-utah.github.io/publications/",
+      "snippet": "Projects My research is focused on developing deep latent variable models (DLVMs), such as the VAE, with provable properties of the distribution in the latent space that find application in outlier detection and disentanglement analysis. I have developed a method to find the relevant latent variables in DLVMs that are sufficient to model a data distribution, representing the intrinsic ..."
+    },
+    {
+      "title": "[2501.16760] AdaSemSeg: An Adaptive Few-shot Semantic Segmentation of ...",
+      "url": "https://arxiv.org/abs/2501.16760",
+      "snippet": "Automated interpretation of seismic images using deep learning methods is challenging because of the limited availability of training data. Few-shot learning is a suitable learning paradigm in such scenarios due to its ability to adapt to a new task with limited supervision (small training budget). Existing few-shot semantic segmentation (FSSS) methods fix the number of target classes ..."
+    },
+    {
+      "title": "AdaSemSeg: An Adaptive Few-shot Semantic Segmentation of Seismic Facies",
+      "url": "https://arxiv.org/html/2501.16760",
+      "snippet": "Figure 1: In this figure, we illustrate the task of predicting the seismic facies (a multi-class segmentation mask) in a query image from an unseen seismic dataset [3] by a semantic segmentation model using a few annotated examples from the dataset. This presents a realistic scenario for the interpretation of seismic facies. We address this problem using the few-shot semantic segmentation method."
+    }
+  ]
+}

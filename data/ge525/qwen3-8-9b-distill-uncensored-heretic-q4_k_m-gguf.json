@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ge525/Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF",
+  "slug": "ge525-qwen3-8-9b-distill-uncensored-heretic-q4_k_m-gguf",
+  "author": "ge525",
+  "url": "https://huggingface.co/ge525/Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF",
+  "created_at": "2026-08-20T19:23:46.000Z",
+  "updated_at": "2026-08-23T16:03:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "llama-cpp",
+    "text-generation",
+    "en",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "base_model:quantized:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 1457,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 11409192064,
+  "storage_human": "11.4 GB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF",
+      "url": "https://huggingface.co/ge525/Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use ge525/Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF",
+      "url": "https://huggingface.co/ge525/Qwen3.8-9B-Distill-uncensored-heretic-Q4_K_M-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-9B-Distill-uncensored-heretic - FriendliAI",
+      "url": "https://friendli.ai/models/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+      "snippet": "Run Qwen3.8-9B-Distill-uncensored-heretic with FriendliAI inference. Censorship ablation of Qwen3.5-9B-Distill via heretic — automated search for the minimal…"
+    }
+  ]
+}

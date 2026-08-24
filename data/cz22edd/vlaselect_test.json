@@ -5,7 +5,7 @@
   "author": "cz22edd",
   "url": "https://huggingface.co/cz22edd/vlaselect_test",
   "created_at": "2026-08-22T09:08:43.000Z",
-  "updated_at": "2026-08-22T11:23:37.000Z",
+  "updated_at": "2026-08-24T05:00:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 52131397442,
-  "storage_human": "52.1 GB",
+  "storage_bytes": 52160399058,
+  "storage_human": "52.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

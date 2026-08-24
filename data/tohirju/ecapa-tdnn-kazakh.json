@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tohirju/ecapa-tdnn-kazakh",
+  "slug": "tohirju-ecapa-tdnn-kazakh",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/ecapa-tdnn-kazakh",
+  "created_at": "2026-08-24T04:56:57.000Z",
+  "updated_at": "2026-08-24T04:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "speechbrain",
+  "languages": [
+    "kk"
+  ],
+  "tags": [
+    "speechbrain",
+    "speaker-verification",
+    "speaker-embedding",
+    "kazakh",
+    "ecapa-tdnn",
+    "audio-classification",
+    "kk",
+    "base_model:speechbrain/spkrec-ecapa-voxceleb",
+    "base_model:finetune:speechbrain/spkrec-ecapa-voxceleb",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83335143,
+  "storage_human": "83 MB",
+  "base_model": "speechbrain/spkrec-ecapa-voxceleb",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju/ecapa-tdnn-kazakh · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/ecapa-tdnn-kazakh",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tohirju/kazakh-tts-diarized · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Tohirju/kazakh-tts-diarized",
+      "snippet": "kk TTS diarization + voice-cloning reference bank (PUBLIC + gated=manual) Diarized speaker labels + per-speaker enrollment reference bank for kk TTS / voice cloning, derived from the kk ASR corpora. ECAPA-clustered (16 kHz)."
+    },
+    {
+      "title": "TDNN achitecture with efficient channel attention and improved residual ...",
+      "url": "https://www.nature.com/articles/s41598-025-09386-0",
+      "snippet": "In addition, Desplanques et al. proposed ECAPA-TDNN, a TDNN-based speaker verification model, which introduces aggregated information, channel attention, and improved propagation methods to ..."
+    },
+    {
+      "title": "GitHub - LKLQQ/ecapa_tdnn",
+      "url": "https://github.com/LKLQQ/ecapa_tdnn",
+      "snippet": "ECAPA-TDNN is introduced in 2020，achieves best results in voxceleb1 evaluation trials. Comparing to vanilla tdnn，ECAPA-TDNN appends SE-block + Res2Block + Attentive Stat Pooling. By increasing the channels and enlarge the model size, the performance improve a lot. paper：Brecht Desplanques, Jenthe Thienpondt, Kris Demuynck. Interspeech 2020."
+    },
+    {
+      "title": "GitHub - TaoRuijie/ECAPA-TDNN: Unofficial reimplementation of ECAPA ...",
+      "url": "https://github.com/TaoRuijie/ECAPA-TDNN",
+      "snippet": "This repository contains my unofficial reimplementation of the standard ECAPA-TDNN, which is the speaker recognition in VoxCeleb2 dataset. This repository is modified based on voxceleb_trainer."
+    }
+  ]
+}

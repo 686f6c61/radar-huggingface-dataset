@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers",
+  "slug": "frankleeeee-causalforcing-long-wan2-1-t2v-1-3b-diffusers",
+  "author": "frankleeeee",
+  "url": "https://huggingface.co/frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers",
+  "created_at": "2026-08-23T07:35:04.000Z",
+  "updated_at": "2026-08-23T07:35:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "causal-forcing",
+    "rolling-forcing",
+    "long-video-generation",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "license:apache-2.0",
+    "diffusers:WanRollingForcingPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418996800,
+  "parameters_human": "1.42B",
+  "storage_bytes": 26090727112,
+  "storage_human": "26.1 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "diffusers/src/diffusers/pipelines/wan/pipeline_wan.py at main ... - GitHub",
+      "url": "https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/wan/pipeline_wan.py",
+      "snippet": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch. - huggingface/diffusers"
+    },
+    {
+      "title": "Wan-AI/Wan2.1-VACE-1.3B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.1-T2V-1.3B · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "GitHub - infracritical/ai-Wan2.1: Wan: Open and Advanced Large-Scale ...",
+      "url": "https://github.com/infracritical/ai-Wan2.1",
+      "snippet": "Wan2.1 offers these key features: 👍 SOTA Performance: Wan2.1 consistently outperforms existing open-source models and state-of-the-art commercial solutions across multiple benchmarks. 👍 Supports Consumer-grade GPUs: The T2V-1.3B model requires only 8.19 GB VRAM, making it compatible with almost all consumer-grade GPUs."
+    }
+  ]
+}

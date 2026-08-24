@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "haehoon/Qwen3.6-35B-A3B-NVFP4-ko-agentic",
+  "slug": "haehoon-qwen3-6-35b-a3b-nvfp4-ko-agentic",
+  "author": "haehoon",
+  "url": "https://huggingface.co/haehoon/Qwen3.6-35B-A3B-NVFP4-ko-agentic",
+  "created_at": "2026-08-24T11:49:12.000Z",
+  "updated_at": "2026-08-24T11:49:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "nvfp4",
+    "quantized",
+    "korean",
+    "agentic",
+    "moe",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/Qwen3.6-35B-A3B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen3.6 Models | QwenLM/Qwen3.6 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models",
+      "snippet": "Qwen3.6 Models Relevant source files This page provides a detailed technical overview of the Qwen3.6 model family, focusing on the 27B dense model and the 35B-A3B sparse Mixture-of-Experts (MoE) model. Building upon the architectural foundations of Qwen3.5, the Qwen3.6 series introduces specialized capabilities for Agentic Coding and Thinking Preservation, designed to enhance real-world ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B · Models",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    }
+  ]
+}

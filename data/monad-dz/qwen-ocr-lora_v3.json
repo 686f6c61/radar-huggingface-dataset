@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Monad-dz/qwen-ocr-lora_v3",
+  "slug": "monad-dz-qwen-ocr-lora_v3",
+  "author": "Monad-dz",
+  "url": "https://huggingface.co/Monad-dz/qwen-ocr-lora_v3",
+  "created_at": "2026-08-24T01:50:47.000Z",
+  "updated_at": "2026-08-24T12:20:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150198462,
+  "storage_human": "150 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to use the qwen-vl-ocr text recognition model - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-vl-ocr",
+      "snippet": "How to use the qwen-vl-ocr text recognition model,Alibaba Cloud Model Studio:Qwen-OCR is a visual understanding model that extracts text and structured data from images — scanned documents, tables, receipts, and more."
+    },
+    {
+      "title": "syntheticbot/ocr-qwen · Hugging Face",
+      "url": "https://huggingface.co/syntheticbot/ocr-qwen",
+      "snippet": "🤖 ModelScope For users in mainland China, ModelScope is recommended. Use snapshot_download for checkpoint management. Adapt model names to syntheticbot/ocr-qwen in ModelScope implementations. More Usage Tips for OCR Input images support local files, URLs, and base64 encoding."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

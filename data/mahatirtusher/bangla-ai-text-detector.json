@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "MahatirTusher/bangla-ai-text-detector",
+  "slug": "mahatirtusher-bangla-ai-text-detector",
+  "author": "MahatirTusher",
+  "url": "https://huggingface.co/MahatirTusher/bangla-ai-text-detector",
+  "created_at": "2026-08-23T10:13:25.000Z",
+  "updated_at": "2026-08-23T13:33:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "bengali",
+    "bangla",
+    "ai-text-detection",
+    "banglabert",
+    "supervised-contrastive-learning",
+    "supcon",
+    "leave-one-generator-out",
+    "cross-generator-generalization",
+    "fake-news-detection",
+    "content-moderation",
+    "llm-generated-text",
+    "chatgpt-detector",
+    "gemini-detector",
+    "claude-detector",
+    "deepseek-detector",
+    "bn",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 442505641,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mee0011/Bangla-AI-Text-Detector",
+      "url": "https://github.com/mee0011/Bangla-AI-Text-Detector",
+      "snippet": "📝 Bangla AI Text Detector A high-performance deep learning application designed to distinguish between human-written and AI-generated (e.g., ChatGPT, GPT-4) Bengali text. This project utilizes a fine-tuned BanglaBERT model to capture the nuances of Bengali syntax and semantics."
+    },
+    {
+      "title": "Bangla-AI-Text-Detector/model at main · mee0011/Bangla-AI ... - GitHub",
+      "url": "https://github.com/mee0011/Bangla-AI-Text-Detector/tree/main/model",
+      "snippet": "Contribute to mee0011/Bangla-AI-Text-Detector development by creating an account on GitHub."
+    },
+    {
+      "title": "Bengali AI Detector - Evernote",
+      "url": "https://evernote.com/ai-detector/bengali-ai-detector",
+      "snippet": "Can it detect AI in Bengali? Yes, the detector analyzes Bengali text for AI-generated patterns, offering insights through probability scores and detailed indications of AI or human characteristics."
+    },
+    {
+      "title": "Bengali.AI",
+      "url": "https://www.bengali.ai/",
+      "snippet": "Bengali.AI&#x27;s Bangla speech recognition campaign has produced the largest publicly available Bangla speech corpus. Since February 21, 2022, the campaign has gathered around 2,000 hours of data from over 22,000 people through the &#x27;Bok bok&#x27; contribution platform, aiming to achieve 10,000 hours to build a publicly available automated speech ..."
+    },
+    {
+      "title": "ChatGPT এবং আরও অনেক কিছুর জন্য সবচেয়ে সঠিক বাংলা এআই ডিটেক্টর",
+      "url": "https://isgen.ai/bn",
+      "snippet": "Isgen হল Openai-এর GPT-5, Chat-GPT, Claude, Gemini, Deepseek এবং অন্যান্য ওপেন-সোর্স মডেল দ্বারা লিখিত টেক্সট সনাক্তকরণের জন্য শীর্ষস্থানীয় বাংলা AI ডিটেক্টর।"
+    }
+  ]
+}

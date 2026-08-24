@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AndreGaio/pi05_packing_lora",
+  "slug": "andregaio-pi05_packing_lora",
+  "author": "AndreGaio",
+  "url": "https://huggingface.co/AndreGaio/pi05_packing_lora",
+  "created_at": "2026-08-23T18:03:03.000Z",
+  "updated_at": "2026-08-23T18:03:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:AndreGaio/test-packing_3cam_20260823_140000",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55012352,
+  "storage_human": "55 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andlyu/pi05_pack3_lora · Hugging Face",
+      "url": "https://huggingface.co/andlyu/pi05_pack3_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "andlyu/pi05_pack3_lora at main - Hugging Face",
+      "url": "https://huggingface.co/andlyu/pi05_pack3_lora/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Yaneosian/pi05-lora-finetune-libero: π0.5 VLA Fine-tuning and ...",
+      "url": "https://github.com/Yaneosian/pi05-lora-finetune-libero/tree/main/",
+      "snippet": "Model: π0.5 — a 3B flow-matching VLA with a PaliGemma-2B backbone and a 300M action expert. Fine-tuning: LoRA adapters injected into both modules: PaliGemma backbone: LoRA rank=16 Action expert: LoRA rank=32 Training: batch size=64, 30k steps, cosine decay (peak lr=5e-5), A100×1 (~58 hours). Framework: openpi (JAX)."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,038 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/README.md at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RobertEcker/earshot-perch-v2",
+  "slug": "robertecker-earshot-perch-v2",
+  "author": "RobertEcker",
+  "url": "https://huggingface.co/RobertEcker/earshot-perch-v2",
+  "created_at": "2026-08-24T13:43:35.000Z",
+  "updated_at": "2026-08-24T13:44:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio-classification",
+    "bioacoustics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 206872186,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-research/perch",
+      "url": "https://github.com/google-research/perch",
+      "snippet": "The current released Perch model is available from Kaggle Models. The current-best citation for the model is our paper: Global birdsong embeddings enable superior transfer learning for bioacoustic classification. The SurfPerch model, trained on a combination of birds, coral reef sounds, and general audio, is also available at Kaggle models."
+    },
+    {
+      "title": "Google&#x27;s Perch v2 Bird Vocalization Classifier Released",
+      "url": "https://github.com/tphakala/birdnet-go/discussions/1110",
+      "snippet": "Google Research has just released Perch v2, a significant advancement in bird vocalization classification that could greatly benefit the BirdNET-Go What is Perch v2? Perch v2 is Google&#x27;s latest bir..."
+    },
+    {
+      "title": "Perch 2.0: Bioacoustics Model for Species Identification",
+      "url": "https://hackernoon.com/perch-20-bioacoustics-model-for-species-identification",
+      "snippet": "The work on Perch 2.0 and Agile Modeling demonstrates the broad efficacy of AI in bioacoustics, meeting critical criteria for efficiency, adaptability, scalability, and quality in ecological research and conservation."
+    },
+    {
+      "title": "[2508.04665] Perch 2.0: The Bittern Lesson for Bioacoustics",
+      "url": "https://arxiv.org/abs/2508.04665",
+      "snippet": "Perch is a performant pre-trained model for bioacoustics. It was trained in supervised fashion, providing both off-the-shelf classification scores for thousands of vocalizing species as well as strong embeddings for transfer learning. In this new release, Perch 2.0, we expand from training exclusively on avian species to a large multi-taxa dataset. The model is trained with self-distillation ..."
+    },
+    {
+      "title": "Perch 2.0: The Bittern Lesson for Bioacoustics - Google Research",
+      "url": "https://research.google/pubs/perch-20-the-bittern-lesson-for-bioacoustics/",
+      "snippet": "Perch is a performant pre-trained model for bioacoustics. It was trained in supervised fashion, providing both off-the-shelf classification scores for thousands of vocalizing species as well as strong embeddings for transfer learning. In this new release, Perch 2.0, we expand from training exclusively on avian species to a large multi-taxa dataset. The model is trained with self-distillation ..."
+    }
+  ]
+}

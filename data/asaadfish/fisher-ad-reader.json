@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "asaadfish/fisher-ad-reader",
+  "slug": "asaadfish-fisher-ad-reader",
+  "author": "asaadfish",
+  "url": "https://huggingface.co/asaadfish/fisher-ad-reader",
+  "created_at": "2025-07-23T15:29:22.000Z",
+  "updated_at": "2026-08-23T08:14:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7087968825,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asaadfish/fisher-ad-reader · Hugging Face",
+      "url": "https://huggingface.co/asaadfish/fisher-ad-reader",
+      "snippet": "asaadfish / fisher-ad-reader like 0 Core ML ONNX Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 101 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "asaadfish (Adam Saad) - Hugging Face",
+      "url": "https://huggingface.co/asaadfish",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 27 days ago ... updated a model 29 days ago ... published a model 8 months ago"
+    },
+    {
+      "title": "asaadfish / fisher-ad-reader Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/asaadfish/fisher-ad-reader/05240fa20c427ecebe2b6d4af1722d149cb11219/versions",
+      "snippet": "Discover potential threats in the asaadfish / fisher-ad-reader model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "asaadfish / fisher-ad-reader - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/asaadfish/fisher-ad-reader/95526fccef064af78c3ea96039b30b57b95927a9/versions?status=UNSAFE",
+      "snippet": "Discover potential threats in the asaadfish / fisher-ad-reader model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "GitHub - kyunghyuncho/AdReader",
+      "url": "https://github.com/kyunghyuncho/AdReader",
+      "snippet": "Ad Reader is an accessibility-focused browser extension designed to help users with visual impairments or reading difficulties understand the content of advertisements on web pages. It uses the power of Google&#x27;s Gemini AI to analyze, describe, and overlay ads with clear, readable descriptions."
+    }
+  ]
+}

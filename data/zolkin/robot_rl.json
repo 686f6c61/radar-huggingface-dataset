@@ -5,7 +5,7 @@
   "author": "zolkin",
   "url": "https://huggingface.co/zolkin/robot_rl",
   "created_at": "2025-08-13T20:44:48.000Z",
-  "updated_at": "2026-08-19T22:24:03.000Z",
+  "updated_at": "2026-08-24T00:03:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 843263973,
-  "storage_human": "843 MB",
+  "storage_bytes": 1145931678,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "onnx"

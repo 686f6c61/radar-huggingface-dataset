@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shoemoney/Gemma-4-26B-A4B-Heretic-MLX-q6",
+  "slug": "shoemoney-gemma-4-26b-a4b-heretic-mlx-q6",
+  "author": "shoemoney",
+  "url": "https://huggingface.co/shoemoney/Gemma-4-26B-A4B-Heretic-MLX-q6",
+  "created_at": "2026-08-24T01:06:41.000Z",
+  "updated_at": "2026-08-24T01:09:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "gemma4",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "uncensored",
+    "base_model:coder3101/gemma-4-26B-A4B-it-heretic",
+    "base_model:quantized:coder3101/gemma-4-26B-A4B-it-heretic",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6091232846,
+  "parameters_human": "6.09B",
+  "storage_bytes": 21679593075,
+  "storage_human": "21.7 GB",
+  "base_model": "coder3101/gemma-4-26B-A4B-it-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s new family of open models, including 12B, E2B, E4B, 26B-A4B, and 31B. The multimodal, hybrid-thinking models support 140+ languages, up to 256K context, and have dense and MoE variants."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google/gemma-4-26b-a4b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 is the latest on-device model family from Google. This is the 26B (active 4B) MoE version. Supports vision and reasoning."
+    }
+  ]
+}

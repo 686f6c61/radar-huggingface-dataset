@@ -5,7 +5,7 @@
   "author": "zerodigest",
   "url": "https://huggingface.co/zerodigest/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF",
   "created_at": "2026-08-15T16:20:38.000Z",
-  "updated_at": "2026-08-20T17:48:50.000Z",
+  "updated_at": "2026-08-23T00:46:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,13 +31,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 39,
-  "downloads_30d": 43309,
-  "trending_score": 31,
+  "likes": 41,
+  "downloads_30d": 48778,
+  "trending_score": 20,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 95806870480,
-  "storage_human": "95.8 GB",
+  "storage_bytes": 108366736304,
+  "storage_human": "108.4 GB",
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"

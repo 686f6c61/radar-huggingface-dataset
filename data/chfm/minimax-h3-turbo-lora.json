@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chfm/MiniMax-H3-Turbo-Lora",
+  "slug": "chfm-minimax-h3-turbo-lora",
+  "author": "chfm",
+  "url": "https://huggingface.co/chfm/MiniMax-H3-Turbo-Lora",
+  "created_at": "2026-08-23T12:42:35.000Z",
+  "updated_at": "2026-08-23T12:42:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "text-to-audio",
+    "audio-video",
+    "lora",
+    "comfyui",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123221951744,
+  "storage_human": "123.2 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora · Hugging Face",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Some Ref2VA test cases and reference assets are adapted from public showcases on the Hailuo website and from the MiniMax-H3 discussion on Hugging Face. We thank the community contributors for sharing their test assets and prompts. Special thanks to the MiniMax-AI/MiniMax-H3 project and the MiniMax team for open-sourcing the MiniMax-H3 model."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA - a Hugging Face Space by MiniMaxAI",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora",
+      "snippet": "A red fox trotting through a snowy pine forest at dawn, snow… A busy night market, neon signs reflecting in puddles, sizzl… A cellist playing a slow melody in an empty concert hall Waves crashing against basalt cliffs at golden hour, gulls c…"
+    },
+    {
+      "title": "Minimax-H3-Turbo/README.md at main - GitHub",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo/blob/main/README.md",
+      "snippet": "Some Ref2VA test cases and reference assets are adapted from public showcases on the Hailuo website and from the MiniMax-H3 discussion on Hugging Face. We thank the community contributors for sharing their test assets and prompts. Special thanks to the MiniMax-AI/MiniMax-H3 project and the MiniMax team for open-sourcing the MiniMax-H3 model."
+    },
+    {
+      "title": "MiniMax H3 LoRA — Categories, Settings & Where to Find Them",
+      "url": "https://minimax3.org/minimax-h3-lora",
+      "snippet": "Curated MiniMax H3 LoRA directory: Turbo, style, character, motion, and camera LoRAs with recommended strength, steps, samplers, and verified search sources. Updated ..."
+    }
+  ]
+}

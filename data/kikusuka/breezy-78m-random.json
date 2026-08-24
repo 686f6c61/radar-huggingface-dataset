@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kikusuka/breezy-78m-random",
+  "slug": "kikusuka-breezy-78m-random",
+  "author": "kikusuka",
+  "url": "https://huggingface.co/kikusuka/breezy-78m-random",
+  "created_at": "2026-08-23T07:00:16.000Z",
+  "updated_at": "2026-08-23T19:46:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78404096,
+  "parameters_human": "78.4M",
+  "storage_bytes": 692813416,
+  "storage_human": "693 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kikusuka/breezy-flick-v2 · Hugging Face",
+      "url": "https://huggingface.co/kikusuka/breezy-flick-v2",
+      "snippet": "kikusuka / breezy-flick-v2 like 0 Safetensors gpt2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - kikusuka/BreezyAssistant4",
+      "url": "https://github.com/kikusuka/BreezyAssistant4",
+      "snippet": "Breezy Assistant 4 🌬️ Breezy is a highly customizable, privacy-focused Android assistant that uses a hybrid AI system to balance speed, intelligence, and offline capability."
+    },
+    {
+      "title": "kikusuka/breezy-flick-phase3-sft-round2 · Hugging Face",
+      "url": "https://huggingface.co/kikusuka/breezy-flick-phase3-sft-round2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ANIMADEX — Anime character & artist catalogue for the ANIMA AI model",
+      "url": "https://animadex.net/",
+      "snippet": "A catalogue of over 36,000 anime characters and 15,000 artists rendered with the ANIMA AI model. Searchable by tags, copyright, hair colour, eye colour, gender and CivitAI LoRA availability."
+    },
+    {
+      "title": "Free Anime AI Art Generator - Create AI Art Online | PixAI",
+      "url": "https://pixai.art/en",
+      "snippet": "Generate anime AI art for free. Explore 1.5M+ anime models & LoRAs — type a prompt, get art in seconds. Daily free credits, no skill needed."
+    }
+  ]
+}

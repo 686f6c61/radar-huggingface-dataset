@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "brian564237/act-test",
+  "slug": "brian564237-act-test",
+  "author": "brian564237",
+  "url": "https://huggingface.co/brian564237/act-test",
+  "created_at": "2026-08-23T21:21:20.000Z",
+  "updated_at": "2026-08-23T21:21:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:local",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712920,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denryy/act_test_model · Hugging Face",
+      "url": "https://huggingface.co/Denryy/act_test_model",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "aractingi/act_test_V3 · Hugging Face",
+      "url": "https://huggingface.co/aractingi/act_test_V3",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why experts call it a wake-up call, what it means."
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "FQxI News: Susan Schneider&#x27;s \"Artificial Consciousness Test\" featured ...",
+      "url": "https://qspace.fqxi.org/news/165305/susan-schneiders-artificial-consciousness-test-featured-in-vox?hero_title_option=0",
+      "snippet": "The piece features Susan Schneider, the director of the Center for the Future Mind at Florida Atlantic University and one of FQxI&#x27;s Scientific Advisory Panel, who, with her colleague, Edwin Turner, has proposed an Artificial Consciousness Test (ACT). From the article: Schneider and Turner \"assume that some questions will be easy to grasp if you&#x27;ve personally experienced consciousness, but ..."
+    }
+  ]
+}

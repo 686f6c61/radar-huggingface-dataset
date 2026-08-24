@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Justbackup/M.O.G.-SEC-27B-1M-CTX-NVFP4",
+  "slug": "justbackup-m-o-g--sec-27b-1m-ctx-nvfp4",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/M.O.G.-SEC-27B-1M-CTX-NVFP4",
+  "created_at": "2026-08-24T15:16:01.000Z",
+  "updated_at": "2026-08-24T15:16:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "qwen",
+    "nvfp4",
+    "cybersecurity",
+    "offensive-security",
+    "defensive-security",
+    "uncensored",
+    "1m-context",
+    "yarn",
+    "dflash2",
+    "mtp",
+    "speculative-decoding",
+    "sglang",
+    "mog",
+    "minds-of-gods",
+    "qwentium",
+    "conversational",
+    "multimodal",
+    "research",
+    "not-for-all-audiences",
+    "en",
+    "multilingual",
+    "base_model:Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+    "base_model:finetune:Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18548690160,
+  "parameters_human": "18.55B",
+  "storage_bytes": 29411309157,
+  "storage_human": "29.4 GB",
+  "base_model": "Blackfrost-AI/M.O.G.-SEC-27B-1M-CTX-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NightmareXIV/JustBackup",
+      "url": "https://github.com/NightmareXIV/JustBackup",
+      "snippet": "JustBackup Dalamud plugin that automatically creates backup of your game and plugins configuration upon game starting."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=minds-of-gods",
+      "snippet": "Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-NVFP4 Image-Text-to-Text • 19B•Updated 1 day ago• 14"
+    },
+    {
+      "title": "JustBackup - Minecraft Mod - Modrinth",
+      "url": "https://modrinth.com/mod/justbackup",
+      "snippet": "JustBackup is a MEGA lightweight mod for automatic and manual world backups. No unnecessary features, no performance impact - it just works. Features ⏱️ Configurable backup intervals 📦 Maximum backup limit (old backups are removed automatically) 💬 Optional chat messages when a backup is created 🛠️ /forcebackup command for manual backups ⚡ Extremely lightweight - near-zero ..."
+    },
+    {
+      "title": "M.O.G.-SEC-27B-1M-CTX-NVFP4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-NVFP4",
+      "snippet": "Run M.O.G.-SEC-27B-1M-CTX-NVFP4 with FriendliAI inference. M.O.G. is Minds of Gods — Blackfrost&#x27;s line of specialist minds, each one named, each one built for…"
+    }
+  ]
+}

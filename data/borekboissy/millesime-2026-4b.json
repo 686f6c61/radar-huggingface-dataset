@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "borekboissy/Millesime-2026-4b",
+  "slug": "borekboissy-millesime-2026-4b",
+  "author": "borekboissy",
+  "url": "https://huggingface.co/borekboissy/Millesime-2026-4b",
+  "created_at": "2026-08-22T22:11:06.000Z",
+  "updated_at": "2026-08-24T03:12:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "french",
+    "francais",
+    "sft",
+    "dpo",
+    "model-merging",
+    "ties",
+    "slm",
+    "conversational",
+    "fr",
+    "dataset:borekboissy/Millesime-2026-SFT",
+    "dataset:borekboissy/Millesime-2026-comparIA-DPO",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "co2_eq_emissions",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8057256618,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "borekboissy/Millesime-2026-comparIA-DPO - Hugging Face",
+      "url": "https://huggingface.co/datasets/borekboissy/Millesime-2026-comparIA-DPO",
+      "snippet": "Millésime 2026 — Compar:IA DPO Jeu de données de préférences (DPO) en langue française, dérivé et filtré à partir du dataset Compar:IA Arena du ministère de la Culture. Il constitue la Phase 2 du pipeline d&#x27;entraînement ayant produit les modèles de la série Millésime (voir Millesime-2026-SFT pour la phase 1, SFT). Contenu et structure Le dataset est fourni au format JSONL, une ..."
+    },
+    {
+      "title": "borekboissy/Millesime-2026-SFT at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/borekboissy/Millesime-2026-SFT/tree/main",
+      "snippet": "Datasets: borekboissy / Millesime-2026-SFT like 0 Tasks: Text Generation Modalities: Text Formats: json Languages: French Size: 10K - 100K Tags: french sft Synthetic culture-generale fact-checked fine-tuning Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main Millesime-2026-SFT 80.7 MB 1 contributor History:2 commits ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-GB",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

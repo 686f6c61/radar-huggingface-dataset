@@ -5,7 +5,7 @@
   "author": "solignus",
   "url": "https://huggingface.co/solignus/edma-humanoid",
   "created_at": "2026-08-21T17:13:15.000Z",
-  "updated_at": "2026-08-22T01:53:40.000Z",
+  "updated_at": "2026-08-23T17:03:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 262578958,
-  "storage_human": "263 MB",
+  "storage_bytes": 633537279,
+  "storage_human": "634 MB",
   "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

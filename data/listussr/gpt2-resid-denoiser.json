@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "listussr/gpt2-resid-denoiser",
+  "slug": "listussr-gpt2-resid-denoiser",
+  "author": "listussr",
+  "url": "https://huggingface.co/listussr/gpt2-resid-denoiser",
+  "created_at": "2026-08-23T12:06:46.000Z",
+  "updated_at": "2026-08-23T12:07:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "residual_denoiser",
+    "interpretability",
+    "activation-steering",
+    "denoiser",
+    "sparse-autoencoder",
+    "gpt2",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16667649,
+  "parameters_human": "16.7M",
+  "storage_bytes": 133354503,
+  "storage_human": "133 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "listussr/gpt2-resid-denoiser · Hugging Face",
+      "url": "https://huggingface.co/listussr/gpt2-resid-denoiser",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "borisggg/steering-denoiser-gpt2 · Hugging Face",
+      "url": "https://huggingface.co/borisggg/steering-denoiser-gpt2",
+      "snippet": "borisggg / steering-denoiser-gpt2 like 0 PyTorch interpretability activation-steering mechanistic-interpretability sparse-autoencoder License:mit Model card FilesFiles and versions xet Community Copy to bucket new Steering Denoiser — GPT-2 small, layer 6 What it does Training Results What did and did not work Two things that will silently ..."
+    },
+    {
+      "title": "GitHub - FuCongResearchSquad/ReSID: Official implementation of the ...",
+      "url": "https://github.com/FuCongResearchSquad/ReSID",
+      "snippet": "We propose ReSID, a recommendation-native, principled SID framework that rethinks representation learning and quantization from the perspective of information preservation and sequential predictability, without relying on LLMs. ReSID consists of two components: (i) Field-Aware Masked Auto-Encoding (FAMAE), which learns predictive-sufficient item representations from structured features, and ..."
+    },
+    {
+      "title": "GPT-2 Detailed Model Architecture - Medium",
+      "url": "https://medium.com/@hsinhungw/gpt-2-detailed-model-architecture-6b1aad33d16b",
+      "snippet": "This post presents a detailed architectural diagram of GPT-2 that shows how input data transforms as it flows through the model."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    }
+  ]
+}

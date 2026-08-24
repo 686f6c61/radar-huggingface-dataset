@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "User-2468/mini-unet-colorizer",
+  "slug": "user-2468-mini-unet-colorizer",
+  "author": "User-2468",
+  "url": "https://huggingface.co/User-2468/mini-unet-colorizer",
+  "created_at": "2026-08-24T03:50:08.000Z",
+  "updated_at": "2026-08-24T03:50:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-to-image",
+    "colorization",
+    "unet",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3644346,
+  "parameters_human": "3.6M",
+  "storage_bytes": 14984026,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniColorizer - a Hugging Face Space by Abstractme04",
+      "url": "https://huggingface.co/spaces/Abstractme04/MiniColorizer",
+      "snippet": "Model that can coloring your grayscale image"
+    },
+    {
+      "title": "Houzeric/colorizer-tiny · Hugging Face",
+      "url": "https://huggingface.co/Houzeric/colorizer-tiny",
+      "snippet": "🎨 Simple Colorizer - Image Colorization Model This repository contains a PyTorch-trained U-Net model that automatically colorizes grayscale images."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Colorize Photo Online for Free - Instant AI Colorization",
+      "url": "https://imgupscaler.ai/colorize-photo/",
+      "snippet": "Restore old photos by converting black & white images into realistic, vibrant color. 100% free, fast, and online. No login required. Try the AI photo colorizer now."
+    },
+    {
+      "title": "Free AI Colorizer Online (No Sign-up)",
+      "url": "https://colorifyai.art/ai-colorizer/",
+      "snippet": "Add vibrant colors to any image with our Free AI Colorizer. Instantly transform black-and-white photos, sketches, or pages into stunning artwork."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Werea-co/Werea-Gemstone-Person-Object-Detector-Small",
+  "slug": "werea-co-werea-gemstone-person-object-detector-small",
+  "author": "Werea-co",
+  "url": "https://huggingface.co/Werea-co/Werea-Gemstone-Person-Object-Detector-Small",
+  "created_at": "2026-08-24T11:42:40.000Z",
+  "updated_at": "2026-08-24T11:42:42.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "object-detection",
+    "person-detection",
+    "edge-ai",
+    "t3-gemstone",
+    "ti-am67a",
+    "tidl",
+    "werea",
+    "en",
+    "tr",
+    "dataset:detection-datasets/coco",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113415326,
+  "storage_human": "113 MB",
+  "base_model": "ultralytics/yolov8s",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=werea",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers One-click Deployment Misc"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "Gemini Developer API | Gemma open models | Google AI for Developers",
+      "url": "https://ai.google.dev/",
+      "snippet": "Get started building with cutting-edge AI models and tools Integrate Google AI models with an API key Build with cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI capabilities for your apps with a simple call to the Gemini API."
+    }
+  ]
+}

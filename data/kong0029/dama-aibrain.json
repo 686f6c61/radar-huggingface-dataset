@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kong0029/dama-aibrain",
+  "slug": "kong0029-dama-aibrain",
+  "author": "kong0029",
+  "url": "https://huggingface.co/kong0029/dama-aibrain",
+  "created_at": "2026-08-23T14:58:37.000Z",
+  "updated_at": "2026-08-23T15:14:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kong0029/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/kong0029/dama-aibrain",
+      "snippet": "kong0029 / dama-aibrain like 0 Image-Text-to-Text Transformers Safetensors English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "htg0922/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/htg0922/dama-aibrain",
+      "snippet": "Instructions to use htg0922/dama-aibrain with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use htg0922/dama-aibrain with Transformers:"
+    },
+    {
+      "title": "Dama Aibrain by htg0922 — VRAM 10.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/htg0922%2Fdama-aibrain,1zM4rKF6X8iWnfSD9O6WVG",
+      "snippet": "Dama Aibrain is an open-source 5.1b LLM by htg0922. VRAM 10.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Dama Aibrain - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/huggsook/dama-aibrain",
+      "snippet": "Registry entry for model Dama Aibrain; source metadata pending."
+    },
+    {
+      "title": "Architecture graph for ic4u2u/dama-aibrain | hfviewer",
+      "url": "https://hfviewer.com/ic4u2u/dama-aibrain",
+      "snippet": "ic4u2u/dama-aibrain architecture at a glance ic4u2u/dama-aibrain is an image-text-to-text model (gemma4_text architecture). It uses 35 transformer layers, a hidden size of 1,536, and 8 query heads with 1 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 6,144."
+    }
+  ]
+}

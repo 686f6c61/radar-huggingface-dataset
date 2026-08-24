@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ursb01/KAT-Coder-V2.5-Dev-MTP-APEX-GGUF",
+  "slug": "ursb01-kat-coder-v2-5-dev-mtp-apex-gguf",
+  "author": "ursb01",
+  "url": "https://huggingface.co/ursb01/KAT-Coder-V2.5-Dev-MTP-APEX-GGUF",
+  "created_at": "2026-08-23T10:36:11.000Z",
+  "updated_at": "2026-08-23T10:36:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3_5_moe",
+    "moe",
+    "apex",
+    "quantized",
+    "imatrix",
+    "torch-imatrix",
+    "mtp",
+    "speculative-decoding",
+    "coding",
+    "agentic-coding",
+    "llama.cpp",
+    "text-generation",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 68789593128,
+  "storage_human": "68.8 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mudler/KAT-Coder-V2.5-Dev-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mudler/KAT-Coder-V2.5-Dev-APEX-GGUF",
+      "snippet": "I host 30+ free APEX MoE quantizations as independent research. My only local hardware is an NVIDIA DGX Spark (122 GB unified memory), enough for ~30-50B-class MoEs, but bigger ones (200B+) require rented compute on H100/H200/Blackwell, typically $20-100 per quant. If APEX quants are useful to you, your support directly funds those bigger runs."
+    },
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format. The artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Note: this open-weight release ships only the language-model weights and operates as a text-only model; the vision/multimodal components are not included ..."
+    },
+    {
+      "title": "[2607.05471] KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.05471",
+      "snippet": "We present KAT-Coder-V2.5, a coding-focused agentic model trained to act autonomously inside real, executable repositories rather than as a single-turn code generator. Its capability is bottlenecked less by model scale than by the scarcity of reproducible environments, verifiable rewards, and high-value trajectories, which we address with an end-to-end agentic post-training framework ..."
+    },
+    {
+      "title": "KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.05471v1",
+      "snippet": "In this report, we presented KAT-Coder-V2.5, a coding-focused agentic model built on the premise that the primary bottleneck to stronger coding agents lies in training infrastructure rather than model scale."
+    },
+    {
+      "title": "KAT-Coder-V2.5 Technical Report - Papers with Code",
+      "url": "https://paperswithcode.co/paper/2607.05471",
+      "snippet": "We present KAT-Coder-V2.5, a coding-focused agentic model trained to act autonomously inside real, executable repositories rather than as a single-turn code generator. Its capability is bottlenecked less by model scale than by the scarcity of reproducible environments…"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "emilywebe/paper_014507999_multimodal_reasoning",
+  "slug": "emilywebe-paper_014507999_multimodal_reasoning",
+  "author": "emilywebe",
+  "url": "https://huggingface.co/emilywebe/paper_014507999_multimodal_reasoning",
+  "created_at": "2026-08-23T04:45:29.000Z",
+  "updated_at": "2026-08-23T04:45:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "cautious",
+    "empirical-focused",
+    "first-person-plural",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "multimodal-reasoning",
+    "numeric-nature",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "Multimodal Agent AI: A Survey of Recent Advances and Future ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11390-025-4802-8",
+      "snippet": "In recent years, multimodal agent AI (MAA) has emerged as a pivotal area of research, holding promise for transforming human-machine interaction. Agent AI systems, capable of perceiving and responding to inputs from multiple modalities (e.g., language, vision, audio), have demonstrated remarkable progress in understanding complex environments and executing intricate tasks. This survey ..."
+    },
+    {
+      "title": "AAAI2026 LLMAgent论文汇总 · 33篇论文解读",
+      "url": "https://papernotes.org/AAAI2026/llm_agent/",
+      "snippet": "Time, Identity and Consciousness in Language Model Agents 本文将Stack Theory的时间间隙概念应用于LLM智能体评估，提出区分\"说得像一个稳定自我\"和\"组织得像一个稳定自我\"的保守评估工具包，通过持久性得分和身份形态空间揭示不同scaffold结构的身份trade-off。"
+    },
+    {
+      "title": "A systematic review of multi-modal large language models on domain ...",
+      "url": "https://link.springer.com/article/10.1007/s10462-025-11398-1",
+      "snippet": "While Large Language Models (LLMs) have shown remarkable proficiency in text-based tasks, they struggle to interact effectively with the more realistic world without the perceptions of other modalities such as visual and audio. Multi-modal LLMs, which integrate these additional modalities, have become increasingly important across various domains. Despite the significant advancements and ..."
+    }
+  ]
+}

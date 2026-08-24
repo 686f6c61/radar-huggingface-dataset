@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF",
+  "slug": "mradermacher-blendercartel-ms-llama33-70b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF",
+  "created_at": "2025-12-03T06:12:41.000Z",
+  "updated_at": "2026-08-23T23:53:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "mergekitty",
+    "merge",
+    "en",
+    "base_model:KaraKaraWarehouse/BlenderCartel-MS-llama33-70B",
+    "base_model:quantized:KaraKaraWarehouse/BlenderCartel-MS-llama33-70B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 260,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 753210237824,
+  "storage_human": "753.2 GB",
+  "base_model": "KaraKaraWarehouse/BlenderCartel-MS-llama33-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BlenderCartel-MS-llama33-70B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hermes-3-Llama-3.1-70B-Uncensored-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Hermes-3-Llama-3.1-70B-Uncensored-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-Gloofy-Emo-8B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.1-Gloofy-Emo-8B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KaraKaraWitch/BlenderCartel-MS-llama33-70B - Hugging Face",
+      "url": "https://huggingface.co/KaraKaraWitch/BlenderCartel-MS-llama33-70B",
+      "snippet": "KaraKaraWitch / BlenderCartel-MS-llama33-70B like 0 Text Generation Transformers Safetensors llama mergekit mergekitty Merge conversational text-generation-inference arxiv:2403.19522 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    }
+  ]
+}

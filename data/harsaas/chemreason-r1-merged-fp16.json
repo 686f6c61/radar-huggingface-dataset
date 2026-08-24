@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "harsaas/chemreason-r1-merged-fp16",
+  "slug": "harsaas-chemreason-r1-merged-fp16",
+  "author": "harsaas",
+  "url": "https://huggingface.co/harsaas/chemreason-r1-merged-fp16",
+  "created_at": "2026-08-24T05:07:47.000Z",
+  "updated_at": "2026-08-24T05:12:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888460,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harsaas/chemreason-r1-merged-fp16 · Hugging Face",
+      "url": "https://huggingface.co/harsaas/chemreason-r1-merged-fp16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "harsaas / Repositories · GitHub",
+      "url": "https://github.com/harsaas?tab=repositories",
+      "snippet": "MedExtract_AI Public MedExtract: Structured RAG for Clinical Intelligence. MedExtract is a production-grade AI pipeline that transforms unstructured clinical narratives into verified, schema-adherent data."
+    },
+    {
+      "title": "DeepSeek R1 Explained: The 2025 Reasoning Model, Benchmarks, Setup, and ...",
+      "url": "https://deepseek-usa.ai/models/deepseek-r1/",
+      "snippet": "DeepSeek R1 is an open-source / open-weight reasoning model family from DeepSeek designed for complex math, coding, and logic tasks. It gained attention because DeepSeek released the model weights, technical report, and distilled variants, making advanced chain-of-thought-style reasoning more accessible to developers, researchers, and businesses."
+    }
+  ]
+}

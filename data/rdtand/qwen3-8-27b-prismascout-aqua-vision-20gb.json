@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "rdtand/Qwen3.8-27B-PrismaScout-AQUA-Vision-20GB",
+  "slug": "rdtand-qwen3-8-27b-prismascout-aqua-vision-20gb",
+  "author": "rdtand",
+  "url": "https://huggingface.co/rdtand/Qwen3.8-27B-PrismaScout-AQUA-Vision-20GB",
+  "created_at": "2026-08-24T08:24:13.000Z",
+  "updated_at": "2026-08-24T08:40:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "prismaquant",
+    "prismascout",
+    "prismaaqua",
+    "aqua",
+    "aqua-aura",
+    "compressed-tensors",
+    "nvfp4",
+    "fp8",
+    "mixed-precision",
+    "quantized",
+    "multimodal",
+    "vision",
+    "video",
+    "blackwell",
+    "dgx-spark",
+    "mtp",
+    "speculative-decoding",
+    "qwen3.8",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17368939248,
+  "parameters_human": "17.37B",
+  "storage_bytes": 19968121416,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=prismaquant",
+      "snippet": "rdtand/Qwen3.8-27B-PrismaAQUA-5.5bit-vllm Image-Text-to-Text • 19B•Updated about 7 hours ago• 10"
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

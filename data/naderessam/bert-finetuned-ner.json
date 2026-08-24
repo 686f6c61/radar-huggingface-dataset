@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "NaderEssam/bert-finetuned-ner",
+  "slug": "naderessam-bert-finetuned-ner",
+  "author": "NaderEssam",
+  "url": "https://huggingface.co/NaderEssam/bert-finetuned-ner",
+  "created_at": "2026-08-24T11:34:59.000Z",
+  "updated_at": "2026-08-24T11:48:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "dataset:conll2003",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 1292794349,
+  "storage_human": "1.3 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Precision",
+      "value": 0.9332560450480292
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Recall",
+      "value": 0.9483338943116796
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "F1",
+      "value": 0.9407345575959933
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Accuracy",
+      "value": 0.9865191028433508
+    }
+  ],
+  "sources": [
+    {
+      "title": "nt-ai/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/nt-ai/bert-finetuned-ner",
+      "snippet": "nt-ai / bert-finetuned-ner like 0 Token Classification Transformers TensorBoard Safetensors conll2003 bert Generated from Trainer Eval Results License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model bert-finetuned-ner Model description Intended uses & limitations Training and evaluation ..."
+    },
+    {
+      "title": "Zhushuai/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/Zhushuai/bert-finetuned-ner",
+      "snippet": "bert-finetuned-ner This model is a fine-tuned version of bert-base-cased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Wencho8/Fine-Tuned-BERT-for-Named-Entity-Recognition-using ... - GitHub",
+      "url": "https://github.com/Wencho8/Fine-Tuned-BERT-for-Named-Entity-Recognition-using-Transformers-and-PyTorch",
+      "snippet": "In this notebook, the process of fine-tuning a pre-trained BERT-based model (DistilBERT) for the task of Named-Entity Recognition (NER) will be explored. NER is a fundamental task in Natural Language Processing (NLP) that involves identifying entities such as persons, locations, and organizations in text."
+    },
+    {
+      "title": "Fine-tuning BERT for Named Entity Recognition (NER) - fxis.ai",
+      "url": "https://fxis.ai/edu/fine-tuning-bert-for-named-entity-recognition-ner/",
+      "snippet": "In the realm of natural language processing (NLP), models like BERT (Bidirectional Encoder Representations from Transformers) have revolutionized the way we interpret and utilize text data. This article will guide you through the steps involved in fine-tuning a BERT model for Named Entity Recognition (NER), using the fine-tuned version called BERT_NER_Ep6_PAD_50 as our key example."
+    },
+    {
+      "title": "Fine-Tuning BERT for Named Entity Recognition in PyTorch",
+      "url": "https://www.slingacademy.com/article/fine-tuning-bert-for-named-entity-recognition-in-pytorch/",
+      "snippet": "Ensure your model, inputs, and optimizer are moved to GPU if available. Conclusion Fine-tuning BERT for Named Entity Recognition in PyTorch involves a series of steps that go from loading a pre-trained BERT tokenizer and model to preparing your dataset, training, and finally using the trained model to recognize named entities."
+    }
+  ]
+}

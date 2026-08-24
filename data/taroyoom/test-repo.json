@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taroyoom/test-repo",
+  "slug": "taroyoom-test-repo",
+  "author": "taroyoom",
+  "url": "https://huggingface.co/taroyoom/test-repo",
+  "created_at": "2026-08-24T01:34:13.000Z",
+  "updated_at": "2026-08-24T01:46:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tugkanboz/awesome-ai-testing: A curated list of AI-powered ...",
+      "url": "https://github.com/tugkanboz/awesome-ai-testing",
+      "snippet": "A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluation, and more. - tugkanboz/awesome-ai-testing"
+    },
+    {
+      "title": "ai-models · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-models",
+      "snippet": "g4f-working is a daily-updated list of working no-auth AI providers and models from @xtekky/gpt4free. It helps developers, testers, and AI enthusiasts instantly find which models are currently online and accessible without any API keys, tokens, or cookies."
+    },
+    {
+      "title": "AI Model Test Prompts — Reproducible Benchmark Tasks",
+      "url": "https://aimodelbenchmarks.com/prompts",
+      "snippet": "Open-source test prompts for evaluating LLMs on coding, reasoning, and tool-use tasks. Use these to benchmark models yourself. Updated March 2026."
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "GitRepoAI - AI-Powered GitHub Repository Analyzer",
+      "url": "https://www.gitrepoai.com/",
+      "snippet": "Discover, analyze, and compare GitHub repositories with AI-powered metrics for quality, adaptation, and implementation estimates. Save time finding the perfect code for your projects."
+    }
+  ]
+}

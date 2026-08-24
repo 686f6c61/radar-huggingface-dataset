@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit",
+  "slug": "mlx-community-sensenova-u1-5-8b-mot-8step-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit",
+  "created_at": "2026-08-24T04:13:59.000Z",
+  "updated_at": "2026-08-24T04:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "neo_chat",
+    "mlx-swift",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "native multimodal",
+    "distilled",
+    "custom_code",
+    "arxiv:2605.12500",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:finetune:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3858374848,
+  "parameters_human": "3.86B",
+  "storage_bytes": 11780219751,
+  "storage_human": "11.8 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SceneWorks/sensenova-u1-8b-fast-mlx · Hugging Face",
+      "url": "https://huggingface.co/SceneWorks/sensenova-u1-8b-fast-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1-8B-MoT",
+      "snippet": "To test this model, you can use the inference scripts, but with the following parameters: --cfg_scale 1.0 --num_steps 8 . [2026.04.27] Initial release of the weights for SenseNova-U1-8B-MoT-SFT and SenseNova-U1-8B-MoT. [2026.04.27] Initial release of the inference code for SenseNova-U1. 🌟 Overview"
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT · Models",
+      "url": "https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT",
+      "snippet": "SenseNova-U1.5-8B-MoT English | 简体中文 Overview SenseNova-U1.5-8B-MoT is our latest native unified multimodal checkpoint for more accurate, consistent, reliable, and aesthetically compelling visual creation. Built on NEO-unify, it strengthens the patchify layers, data quality and distribution, task formulation, prompt enhancement, and post-training pipeline. The official release focuses ..."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "[2605.12500] SenseNova-U1: Unifying Multimodal Understanding and ...",
+      "url": "https://arxiv.org/abs/2605.12500",
+      "snippet": "Beyond performance, we show detailed model design, data preprocessing, pre-/post-training, and inference strategies to support community research. Last but not least, preliminary evidence demonstrates that our models extend beyond perception and generation, performing strongly in vision-language-action (VLA) and world model (WM) scenarios."
+    }
+  ]
+}

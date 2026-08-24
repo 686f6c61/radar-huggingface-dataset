@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Roy229/wandb_filesystem_huggingface_terminal_6928-model-registry-1787472057x13238",
+  "slug": "roy229-wandb_filesystem_huggingface_terminal_6928-model-registry-1787472057x13238",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/wandb_filesystem_huggingface_terminal_6928-model-registry-1787472057x13238",
+  "created_at": "2026-08-23T08:02:53.000Z",
+  "updated_at": "2026-08-23T08:06:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "churn",
+    "binary-classification",
+    "model-registry",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wandb (Weights and Biases) - Hugging Face",
+      "url": "https://huggingface.co/wandb",
+      "snippet": "Org profile for Weights and Biases on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "filesystem_rail_12306_huggingface_terminal_2795_wmy4j9",
+      "url": "https://huggingface.co/datasets/Roy229/filesystem_rail_12306_huggingface_terminal_2795_wmy4j9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why experts call it a wake-up call, what it means."
+    },
+    {
+      "title": "Hugging Face - Weights & Biases Documentation",
+      "url": "https://docs.wandb.ai/models/integrations/huggingface",
+      "snippet": "Visualize and track Hugging Face model performance with W&B, logging hyperparameters, metrics, and GPU utilization."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shreshthsaini/brightrate-lm-7b-multiexposure",
+  "slug": "shreshthsaini-brightrate-lm-7b-multiexposure",
+  "author": "shreshthsaini",
+  "url": "https://huggingface.co/shreshthsaini/brightrate-lm-7b-multiexposure",
+  "created_at": "2026-08-24T08:19:32.000Z",
+  "updated_at": "2026-08-24T08:19:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 952213800,
+  "storage_human": "952 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrightRate-LM/README.md at main · shreshthsaini/BrightRate-LM",
+      "url": "https://github.com/shreshthsaini/BrightRate-LM/blob/main/README.md",
+      "snippet": "BrightRate-LM BrightRate-LM assesses the perceptual quality of user-generated HDR video from a multi-exposure frame stack. It returns a 0 to 100 score, a short description of visible defects, and reasoning for the score. This work extends BrightRate (WACV 2026) with a multimodal language model and a controlled study of HDR input representations."
+    },
+    {
+      "title": "shreshthsaini (Shreshth) - Hugging Face",
+      "url": "https://huggingface.co/shreshthsaini/models",
+      "snippet": "shreshthsaini 428 Follow qingxin145&#x27;s profile picturejon-almazan&#x27;s profile picture 2 followers · 29 following https://shreshthsaini.github.io/ shreshthsaini shreshthsaini"
+    },
+    {
+      "title": "Shreshth Saini",
+      "url": "https://shreshthsaini.github.io/",
+      "snippet": "Shreshth Saini I recently completed my PhD at Laboratory of Image and Video Engineering at The University of Texas Austin, advised by Prof. Alan C. Bovik . My research focuses on the Theoretical Foundations of Generative Models (e.g. Flows, Diffusion, and MLLMs) and their applications in Image/Video Generation, efficient sampling, image/video-quality assessment, image/video editing, and ..."
+    },
+    {
+      "title": "Model Catalog - LM Studio",
+      "url": "https://lmstudio.ai/models",
+      "snippet": "Discover models to run locally or use with LM Studio Cloud."
+    },
+    {
+      "title": "7B Params Large Language Models, Open-Source LLMs",
+      "url": "https://llm-explorer.com/list/?7b",
+      "snippet": "Seeking the best 7B parameter open-source language model? Explore top-performing LLMs in our comprehensive directory. How does the 7b parameter model excel in accuracy and efficiency across open-source models? Our list features the top 7b params models, highlighting their standout capabilities in language processing."
+    }
+  ]
+}

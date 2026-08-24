@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "iamPi/qwen36-35b-a3b-top3-qlora_e1",
+  "slug": "iampi-qwen36-35b-a3b-top3-qlora_e1",
+  "author": "iamPi",
+  "url": "https://huggingface.co/iamPi/qwen36-35b-a3b-top3-qlora_e1",
+  "created_at": "2026-08-24T13:44:27.000Z",
+  "updated_at": "2026-08-24T13:44:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "sft",
+    "moe",
+    "base_model:lenikonate/qwen36-35b-a3b-2108-3e",
+    "base_model:adapter:lenikonate/qwen36-35b-a3b-2108-3e",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96750870,
+  "storage_human": "97 MB",
+  "base_model": "lenikonate/qwen36-35b-a3b-2108-3e",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen3.6 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 35B A3B is the first open-weight model in the Qwen3.6 series, built on direct community feedback and focused on stability and real-world utility. It combines a hybrid Gated DeltaNet and Gated Attention architecture with sparse Mixture-of-Experts routing and a vision encoder for unified multimodal reasoning."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Smaller Qwen3.6 multimodal MoE model (35B total / 3B active) with BF16, FP8, and NVIDIA NVFP4 variants"
+    },
+    {
+      "title": "Qwen 3.6 35B A3B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6-35B-A3B is Qwen&#x27;s open-weight multimodal MoE model for coding, agentic workflows, long-context reasoning, and vision-language tasks. It has 35B total parameters with 3B activated, supports image-text-to-text use, preserves reasoning context across turns, and natively handles 262,144 tokens with extension up to about 1.01M."
+    }
+  ]
+}

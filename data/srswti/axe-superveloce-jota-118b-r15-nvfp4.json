@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "srswti/axe-superveloce-jota-118b-r15-nvfp4",
+  "slug": "srswti-axe-superveloce-jota-118b-r15-nvfp4",
+  "author": "srswti",
+  "url": "https://huggingface.co/srswti/axe-superveloce-jota-118b-r15-nvfp4",
+  "created_at": "2026-08-19T20:35:45.000Z",
+  "updated_at": "2026-08-23T08:21:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "laguna",
+    "custom_code",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 348,
+  "trending_score": 0,
+  "parameters": 56928413482,
+  "parameters_human": "56.93B",
+  "storage_bytes": 57688262951,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super Veloce Jota - SoundCloud",
+      "url": "https://soundcloud.com/supervelocejota",
+      "snippet": "Play Super Veloce Jota and discover followers on SoundCloud | Stream tracks, albums, playlists on desktop and mobile."
+    },
+    {
+      "title": "SuperVeloce Jota - YouTube",
+      "url": "https://www.youtube.com/@supervelocejotaxyz",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=srswti",
+      "snippet": "Explore machine learning models. 12 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: srswti Clear all"
+    },
+    {
+      "title": "SRSWTI Inc. - Hugging Face",
+      "url": "https://huggingface.co/srswti",
+      "snippet": "building world&#x27;s fastest retrieval and inference engines."
+    },
+    {
+      "title": "Super veloce jota (@svj900) • Instagram photos and videos",
+      "url": "https://www.instagram.com/svj900/",
+      "snippet": "727 Followers, 624 Following, 391 Posts - Super veloce jota (@svj900) on Instagram: \"\""
+    }
+  ]
+}

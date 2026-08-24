@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "asiri1/al3ni-mace",
+  "slug": "asiri1-al3ni-mace",
+  "author": "asiri1",
+  "url": "https://huggingface.co/asiri1/al3ni-mace",
+  "created_at": "2026-08-23T17:57:58.000Z",
+  "updated_at": "2026-08-23T18:35:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12211680,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asiri1/al3ni-mace · Hugging Face",
+      "url": "https://huggingface.co/asiri1/al3ni-mace",
+      "snippet": "asiri1 / al3ni-mace like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - ACEsuit/mace: MACE - Fast and accurate machine learning ...",
+      "url": "https://github.com/ACEsuit/mace",
+      "snippet": "MACE - Fast and accurate machine learning interatomic potentials with higher order equivariant message passing. - ACEsuit/mace"
+    },
+    {
+      "title": "ACEsuit/mace | DeepWiki",
+      "url": "https://deepwiki.com/ACEsuit/mace",
+      "snippet": "What is MACE? MACE is a machine learning framework for predicting atomic interactions using higher-order equivariant message passing neural networks. The key innovation is leveraging E (3) equivariance—the mathematical property that predictions remain consistent under rotation and translation of atomic coordinates—combined with higher-order tensor features to achieve state-of-the-art ..."
+    },
+    {
+      "title": "GitHub - ACEsuit/mace-foundations: MACE foundation models (MP, OMAT, mh-1)",
+      "url": "https://github.com/ACEsuit/mace-foundations",
+      "snippet": "MACE foundation models (MP, OMAT, mh-1). Contribute to ACEsuit/mace-foundations development by creating an account on GitHub."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2411.00436",
+      "snippet": "arXiv.org"
+    }
+  ]
+}

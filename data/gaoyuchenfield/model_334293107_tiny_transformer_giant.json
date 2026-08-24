@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gaoyuchenfield/model_334293107_tiny_transformer_giant",
+  "slug": "gaoyuchenfield-model_334293107_tiny_transformer_giant",
+  "author": "gaoyuchenfield",
+  "url": "https://huggingface.co/gaoyuchenfield/model_334293107_tiny_transformer_giant",
+  "created_at": "2026-08-23T05:31:44.000Z",
+  "updated_at": "2026-08-23T05:31:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "classification",
+    "dilated",
+    "giant",
+    "kaiming-normal",
+    "linear-warmup",
+    "mish",
+    "novograd",
+    "scalenorm",
+    "tensor-fusion",
+    "tiny-transformer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Tiny Transformer This repository contains a minimal yet functional implementation of a Transformer architecture featuring both an encoder and a decoder. The design prioritizes clarity and simplicity, making it an ideal resource for educational purposes and experimentation in both vision and natural language processing (NLP) applications."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "TinyFormer: Efficient Transformer Design and Deployment on Tiny Devices",
+      "url": "https://arxiv.org/abs/2311.01759",
+      "snippet": "Developing deep learning models on tiny devices (e.g. Microcontroller units, MCUs) has attracted much attention in various embedded IoT applications. However, it is challenging to efficiently design and deploy recent advanced models (e.g. transformers) on tiny devices due to their severe hardware resource constraints. In this work, we propose TinyFormer, a framework specifically designed to ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Deehan/deberta-ps-rationale-only-locked",
+  "slug": "deehan-deberta-ps-rationale-only-locked",
+  "author": "Deehan",
+  "url": "https://huggingface.co/Deehan/deberta-ps-rationale-only-locked",
+  "created_at": "2026-08-24T13:46:58.000Z",
+  "updated_at": "2026-08-24T13:47:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435063810,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1740304440,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ps-fullymasked-deberta-v3-large-no_rationale - Hugging Face",
+      "url": "https://huggingface.co/Deehan1866/ps-fullymasked-deberta-v3-large-no_rationale",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deehan/electra-ps-rationale-only-locked · Discussions",
+      "url": "https://huggingface.co/Deehan/electra-ps-rationale-only-locked/discussions",
+      "snippet": "Instructions to use Deehan/electra-ps-rationale-only-locked with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Deehan/electra-ps-rationale-only-locked with Transformers:"
+    },
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "DeBERTa - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/project/deberta/",
+      "snippet": "DeBERTa is a large scale pre-trained language models which surpass T5 11B models with 1.5 parameters and achieve human performance on SuperGLUE."
+    },
+    {
+      "title": "DeBERTa: Decoding-Enhanced BERT with Disentangled Attention",
+      "url": "https://www.microsoft.com/en-us/research/publication/deberta-decoding-enhanced-bert-with-disentangled-attention-2/",
+      "snippet": "Recent progress in pre-trained neural language models has significantly improved the performance of many natural language processing (NLP) tasks. In this paper we propose a new model architecture DeBERTa (Decoding-enhanced BERT with disentangled attention) that improves the BERT and RoBERTa models using two novel techniques. The first is the disentangled attention mechanism, where each word […]"
+    }
+  ]
+}

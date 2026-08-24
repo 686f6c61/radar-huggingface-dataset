@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF",
+  "slug": "tjusto2409-gervasio-70b-portuguese-ptpt-decoder-i1-gguf",
+  "author": "tjusto2409",
+  "url": "https://huggingface.co/tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF",
+  "created_at": "2026-08-23T05:07:00.000Z",
+  "updated_at": "2026-08-23T05:07:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gervasio-pt*",
+    "gervasio-ptpt",
+    "gervasio-ptbr",
+    "gervasio-7b-portuguese-ptpt-decoder",
+    "gervasio-7b-portuguese-ptbr-decoder",
+    "gervasio-70b-portuguese-ptpt-decoder",
+    "portulan",
+    "albertina-pt*",
+    "serafim-pt*",
+    "clm",
+    "gpt",
+    "portuguese",
+    "decoder",
+    "foundation model",
+    "pt",
+    "dataset:PORTULAN/extraglue",
+    "dataset:PORTULAN/extraglue-instruct",
+    "base_model:PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
+    "base_model:quantized:PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 753210243712,
+  "storage_human": "753.2 GB",
+  "base_model": "PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF",
+      "snippet": "Instructions to use tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gervasio-70b-portuguese-ptpt-decoder - Hugging Face",
+      "url": "https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
+      "snippet": "Acknowledgments This is the model card for Gervásio 70B PTPT Decoder. This model is integrated in the Evaristo.ai chatbot, where its generative capabilities can be experimented with on the fly through a GUI. You may be interested in some of the other models in the Albertina (encoders), Gervásio (decoders) and Serafim (sentence encoder) families."
+    },
+    {
+      "title": "PDF Advancing Generative AI for Portuguese with Open Decoder Gervásio PT*",
+      "url": "https://arxiv.org/pdf/2402.18766.pdf",
+      "snippet": "This paper presents a model that is the first compet-itive, 7 billion parameter, fully open and fully docu-mented large language model of the decoder family of Transformers that is prepared specifically for the Portuguese language, by means of instruction tun-ing, for both the European variant, spoken in Por-tugal (PTPT) and the American ..."
+    },
+    {
+      "title": "Architecture graph for PORTULAN/gervasio-70b-portuguese-ptpt-decoder ...",
+      "url": "https://hfviewer.com/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
+      "snippet": "PORTULAN/gervasio-70b-portuguese-ptpt-decoder neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model PORTULAN/gervasio-70b-portuguese-ptpt-decoder. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task ..."
+    },
+    {
+      "title": "Advancing Generative AI for Portuguese with Open Decoder Gervásio PT ...",
+      "url": "https://aclanthology.org/2024.sigul-1.3/",
+      "snippet": "Abstract To advance the neural decoding of Portuguese, in this paper we present a fully open Transformer-based, instruction-tuned decoder model that sets a new state of the art in this respect. To develop this decoder, which we named Gervásio PT*, a strong LLaMA 2 7B model was used as a starting point, and its further improvement through additional training was done over language resources ..."
+    }
+  ]
+}

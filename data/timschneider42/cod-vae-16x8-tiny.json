@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TimSchneider42/cod-vae-16x8-tiny",
+  "slug": "timschneider42-cod-vae-16x8-tiny",
+  "author": "TimSchneider42",
+  "url": "https://huggingface.co/TimSchneider42/cod-vae-16x8-tiny",
+  "created_at": "2026-08-23T11:26:44.000Z",
+  "updated_at": "2026-08-23T11:26:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "cod-vae",
+  "languages": [],
+  "tags": [
+    "cod-vae",
+    "3d",
+    "shape-reconstruction",
+    "autoencoder",
+    "vae",
+    "occupancy",
+    "feature-extraction",
+    "arxiv:2503.08737",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24422195,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TimSchneider42/cod-vae-16x8 · Hugging Face",
+      "url": "https://huggingface.co/TimSchneider42/cod-vae-16x8",
+      "snippet": "TimSchneider42 / cod-vae-16x8 like 0 Feature Extraction cod-vae 3d shape-reconstruction autoencoder vae occupancy arxiv:2503.08737 License:mit Model card FilesFiles and versions xet Community Copy to bucket new COD-VAE 16 x 8 Usage Training data Training recipe Held-out reconstruction quality Citation"
+    },
+    {
+      "title": "GitHub - TimSchneider42/cod-vae: Unofficial PyTorch/JAX ...",
+      "url": "https://github.com/TimSchneider42/cod-vae",
+      "snippet": "The largest model is additionally published under the short name TimSchneider42/cod-vae, which is what the examples above load; it is a copy of cod-vae-64x32, not a link to it, since the Hub has no aliasing between repositories."
+    },
+    {
+      "title": "cod-vae/cod_vae at main · TimSchneider42/cod-vae · GitHub",
+      "url": "https://github.com/TimSchneider42/cod-vae/tree/main/cod_vae",
+      "snippet": "Unofficial PyTorch/JAX reimplementation of COD-VAE, a 3D shape VAE with compact 1D latents (Cho et al., ICCV 2025). - TimSchneider42/cod-vae"
+    },
+    {
+      "title": "Cod Vae 16x8 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/timschneider42/cod-vae-16x8",
+      "snippet": "🧠 Cod Vae 16x8model by TimSchneider42 ⭐ 37.4 🧠 Model"
+    },
+    {
+      "title": "Cod Vae 8x16 Small - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/timschneider42/cod-vae-8x16-small",
+      "snippet": "Registry entry for model Cod Vae 8x16 Small; source metadata pending."
+    }
+  ]
+}

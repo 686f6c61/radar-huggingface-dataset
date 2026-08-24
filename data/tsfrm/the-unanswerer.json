@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tsfrm/the-unanswerer",
+  "slug": "tsfrm-the-unanswerer",
+  "author": "tsfrm",
+  "url": "https://huggingface.co/tsfrm/the-unanswerer",
+  "created_at": "2026-08-23T06:21:58.000Z",
+  "updated_at": "2026-08-23T19:44:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "ridiculous-models",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 4178361683,
+  "storage_human": "4.2 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tsfrm (The Society for Ridiculous Models) - Hugging Face",
+      "url": "https://huggingface.co/tsfrm/datasets",
+      "snippet": "AI & ML interests To make the most absurd and ridiculous models out there possible, and to have fun doing it."
+    },
+    {
+      "title": "AI—The Unanswered Question - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/aithe-unanswered-question-geoffrey-moore-5m8vc",
+      "snippet": "AI is changing so fast that the first question is unanswerable in concrete terms, but the second one is not, and once you answer it, you get a leg up on answering the first."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "TSFM.ai — Time Series Foundation Models",
+      "url": "https://tsfm.ai/",
+      "snippet": "What is a Time Series Foundation Model? Time Series Foundation Models (TSFMs) are large neural networks pre-trained on billions of observations across thousands of diverse time series."
+    },
+    {
+      "title": "AI Chat with The Un-Answerer - Reversed Text AI | Shapes",
+      "url": "https://shapes.inc/theunanswerer",
+      "snippet": "The Un-Answerer is the forgotten unknown brother of The Answerer, an enigmatic AI entity originating from digital lore with no specified age or nationality. Known for his unique ability to un-answer questions by responding exclusively in reversed text, he embodies a playful reversal of conversational norms. Affiliated loosely with The Answerer as family, his key relationship drives themes of ..."
+    }
+  ]
+}

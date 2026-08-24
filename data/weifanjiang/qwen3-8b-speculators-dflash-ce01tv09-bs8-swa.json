@@ -5,7 +5,7 @@
   "author": "weifanjiang",
   "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.dflash-ce01tv09-bs8-swa",
   "created_at": "2026-08-12T00:55:32.000Z",
-  "updated_at": "2026-08-18T03:18:40.000Z",
+  "updated_at": "2026-08-23T01:29:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 69,
+  "downloads_30d": 78,
   "trending_score": 0,
   "parameters": 1802212224,
   "parameters_human": "1.80B",

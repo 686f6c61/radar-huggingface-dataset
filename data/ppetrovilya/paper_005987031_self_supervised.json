@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ppetrovilya/paper_005987031_self_supervised",
+  "slug": "ppetrovilya-paper_005987031_self_supervised",
+  "author": "Ppetrovilya",
+  "url": "https://huggingface.co/Ppetrovilya/paper_005987031_self_supervised",
+  "created_at": "2026-08-23T08:30:28.000Z",
+  "updated_at": "2026-08-23T08:30:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "author-year",
+    "enthusiastic",
+    "intro-method-exp-related-conclusion",
+    "latex-cvpr",
+    "medium-balanced",
+    "passive",
+    "self-supervised",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "PDF Self-Supervised Learning - Stanford University",
+      "url": "https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf",
+      "snippet": "Can self-supervised learning help? Self-supervised learning (informal definition): supervise using labels generated from the data without any manual or as weak label sources Idea: Hide or modify part of the input. Ask model to recover input or classify what changed. Self-supervised task referred to the pretext task"
+    },
+    {
+      "title": "Self-Supervised Learning (SSL) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/",
+      "snippet": "Self-Supervised Learning (SSL) is a type of machine learning where a model is trained using data that does not have any labels or answers provided. Instead of needing people to label the data, the model finds patterns and creates its own labels from the data automatically."
+    },
+    {
+      "title": "[2408.17059] A Survey of the Self Supervised Learning Mechanisms for ...",
+      "url": "https://arxiv.org/abs/2408.17059",
+      "snippet": "In response to this challenge, self-supervised learning (SSL) has emerged as a promising technique. SSL utilize inherent relationships within the data as a form of supervision. This technique can reduce the dependence on manual annotations and offers a more scalable and resource-effective approach to training models."
+    },
+    {
+      "title": "[2505.13584] Self-Supervised Learning for Image Segmentation: A ...",
+      "url": "https://arxiv.org/abs/2505.13584",
+      "snippet": "Supervised learning demands large amounts of precisely annotated data to achieve promising results. Such data curation is labor-intensive and imposes significant overhead regarding time and costs. Self-supervised learning (SSL) partially overcomes these limitations by exploiting vast amounts of unlabeled data and creating surrogate (pretext or proxy) tasks to learn useful representations ..."
+    }
+  ]
+}

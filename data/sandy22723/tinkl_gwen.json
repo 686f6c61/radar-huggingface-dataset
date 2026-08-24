@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sandy22723/Tinkl_gwen",
+  "slug": "sandy22723-tinkl_gwen",
+  "author": "Sandy22723",
+  "url": "https://huggingface.co/Sandy22723/Tinkl_gwen",
+  "created_at": "2026-08-23T12:52:29.000Z",
+  "updated_at": "2026-08-23T12:52:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Twinkl AI Tools - Twinkl",
+      "url": "https://www.twinkl.co.uk/ai-tools",
+      "snippet": "Instant access to inspirational lesson plans, schemes of work, assessment, interactive activities, resource packs, PowerPoints, teaching ideas at Twinkl!"
+    },
+    {
+      "title": "Twinkl AI Tools - Twinkl",
+      "url": "https://www.twinkl.com/ai-tools",
+      "snippet": "Instantly access Twinkl&#x27;s printable and digital K-12 teaching resources, including worksheets, eBooks, games, PowerPoints, Google Slides, and more!"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "gwen - 3D model by NetAlligator2965 - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/gwen-9e9698e8d76641bd86a1949b783f6ba8",
+      "snippet": "This model was generated using Meshy (https://www.meshy.ai)&#x27;s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models."
+    }
+  ]
+}

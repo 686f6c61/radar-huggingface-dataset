@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max-v2.h046.pi-agent-sft-v16-completion.step_125",
+  "slug": "agentic-ptb-sol-max-v2-h046-pi-agent-sft-v16-completion-step_125",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max-v2.h046.pi-agent-sft-v16-completion.step_125",
+  "created_at": "2026-08-24T00:12:00.000Z",
+  "updated_at": "2026-08-24T00:14:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Inside GPT-5.6 Sol and the Dawn of True Agentic Reasoning",
+      "url": "https://mlhive.com/2026/07/inside-gpt-5-6-sol-agentic-reasoning-release",
+      "snippet": "The most heavily scrutinized benchmark for any modern AI model is its ability to write and debug code. GPT-5.6 Sol establishes an entirely new high-water mark on the SWE-bench evaluation which measures a model&#x27;s ability to resolve real-world issues pulled directly from production GitHub repositories."
+    },
+    {
+      "title": "GPT-5.6 Sol · Models · Pi",
+      "url": "https://pi.dev/models/github-copilot/gpt-5-6-sol",
+      "snippet": "Model gpt-5.6-sol Provider github-copilot API openai-responses Base URL https://api.individual.githubcopilot.com Input text, image Reasoning Yes Context window 1,050,000 Max tokens 128,000 Show configuration"
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "Using GPT-5.6 Luna at Max in Codex · Majestic Labs",
+      "url": "https://majesticlabs.dev/blog/202608/using-gpt-5-6-luna-at-max",
+      "snippet": "Use GPT-5.6 Luna subagents in Codex for fast, bounded work. Configure model routing, choose XHigh or Max, and keep Sol responsible for careful final review."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "muradil211/ToolWeave_stage3",
+  "slug": "muradil211-toolweave_stage3",
+  "author": "muradil211",
+  "url": "https://huggingface.co/muradil211/ToolWeave_stage3",
+  "created_at": "2026-08-19T16:37:56.000Z",
+  "updated_at": "2026-08-23T07:28:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "tool-calling",
+    "bfcl",
+    "agentic-rl",
+    "progress-reward",
+    "online-synthesis",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 666,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muradil211/ToolWeave_stage3 · Hugging Face",
+      "url": "https://huggingface.co/muradil211/ToolWeave_stage3",
+      "snippet": "This repository stores the Qwen3-4B-RODS reference checkpoint used in the ToolWeave Stage 3 workspace. It is retained here as a Stage 3 reference model while the formal ToolWeave Stage 3 training remains pending."
+    },
+    {
+      "title": "muradil211 (muradil·mamat) - Hugging Face",
+      "url": "https://huggingface.co/muradil211",
+      "snippet": "Master&#x27;s student researching Deep Learning, LLM architectures, and Physics-Informed Neural Networks at [NanKai University]"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "ToolWeave: Structured Synthesis of Complex Multi-Turn Tool-Calling ...",
+      "url": "https://arxiv.org/abs/2605.12521",
+      "snippet": "Multi-turn tool calling is essential for LLMs to function as autonomous agents, yet synthesizing the training data required for these capabilities remains a fundamental challenge. Existing synthetic data generation pipelines often produce unrealistic dialogues for two reasons: they chain tools that are only superficially compatible rather than aligned with meaningful user tasks, and they ..."
+    }
+  ]
+}

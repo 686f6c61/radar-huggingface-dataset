@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kennymori47/paper_023401115_video_understanding",
+  "slug": "kennymori47-paper_023401115_video_understanding",
+  "author": "kennymori47",
+  "url": "https://huggingface.co/kennymori47/paper_023401115_video_understanding",
+  "created_at": "2026-08-23T04:41:45.000Z",
+  "updated_at": "2026-08-23T04:41:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "detailed-descriptive",
+    "highlight-bullet",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "numeric-bibtex",
+    "short-punchy",
+    "typst",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Video Understanding: From Geometry and Semantics to Unified Models",
+      "url": "https://link.springer.com/article/10.1007/s11633-026-1656-7",
+      "snippet": "Video understanding aims to enable models to perceive, reason about, and interact with the dynamic visual world. In contrast to image understanding, video understanding inherently requires modeling temporal dynamics and evolving visual context, placing stronger demands on spatiotemporal reasoning and making it a foundational problem in computer vision. In this survey, we present a structured ..."
+    },
+    {
+      "title": "Video understanding | Gemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/capabilities/vision/video",
+      "snippet": "In this guide, you learned how to process video data using Gemma 4 models. The examples demonstrated how to use the processor to automatically process the input video and generate textual understanding of the video content."
+    },
+    {
+      "title": "Video Understanding: From Geometry and Semantics to Unified Models | AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/video-understanding-geometry-semantics-unified-models",
+      "snippet": "This survey organizes video understanding around three core pillars—low-level geometry recovery, high-level semantic reasoning, and unified models that combine both—establishing a conceptual framework for how the field has progressed from task-specific pipelines toward foundation models capable of handling diverse downstream objectives."
+    },
+    {
+      "title": "Awesome-LLMs-for-Video-Understanding - GitHub",
+      "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+      "snippet": "📢 We&#x27;ve recently updated our survey: \"Video Understanding with Large Language Models: A Survey\"! This comprehensive survey covers video understanding techniques powered by large language models (Vid-LLMs), training strategies, relevant tasks, datasets, benchmarks, and evaluation methods ..."
+    }
+  ]
+}

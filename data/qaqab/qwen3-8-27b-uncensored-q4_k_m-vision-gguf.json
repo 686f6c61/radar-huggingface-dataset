@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "qaqab/Qwen3.8-27B-Uncensored-Q4_K_M-Vision-GGUF",
+  "slug": "qaqab-qwen3-8-27b-uncensored-q4_k_m-vision-gguf",
+  "author": "qaqab",
+  "url": "https://huggingface.co/qaqab/Qwen3.8-27B-Uncensored-Q4_K_M-Vision-GGUF",
+  "created_at": "2026-08-24T04:43:07.000Z",
+  "updated_at": "2026-08-24T04:43:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 229576318368,
+  "storage_human": "229.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored Abliterated Qwen 3.8 27B — uncensored at the weight level, not just prompting. Cross-platform: Mac M5 Pro (Q3_K_M · 13.5GB · Metal) + Windows (Q4_K_M · 16.8GB · CUDA). Optional MLX backend for 30-50% faster inference on Apple Silicon."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-Q4_K_M.gguf - Hugging Face",
+      "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF/blob/main/Qwen3.8-27B-Uncensored-Q4_K_M.gguf",
+      "snippet": "JonathanColetti / Qwen3.8-27B-Uncensored-GGUF like 8 Text Generation GGUF English Chinese llama.cpp uncensored qwen3.8 mtp speculative-decoding imatrix quantized conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "To run Qwen3.8-27B-Uncensored locally, pull the gated GGUF repo orcarouter/Qwen3.8-27B-Uncensored-GGUF from Hugging Face, pick a quant by your VRAM — Q4_K_M (16.8 GB) for a 24 GB GPU, IQ4_XS (15.3 GB) for a 16 GB GPU, Q3_K_M (13.5 GB) when you want context headroom — and serve it with a current llama.cpp build using the --jinja flag, adding --mmproj if you need vision. The same file ..."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "It is the same refusal-removed 27-billion-parameter weights as Qwen3.8-27B-Uncensored-FP8, converted to GGUF for local inference: F16 plus 12 quantization tiers from Q2_K to Q8_0 (including the imatrix quants IQ3_M and IQ4_XS), the 262K context window, a separate vision projector, and the MTP speculative-decoding head intact."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shreshthsaini/brightrate-study-qwen25vl-3b-multiexposure",
+  "slug": "shreshthsaini-brightrate-study-qwen25vl-3b-multiexposure",
+  "author": "shreshthsaini",
+  "url": "https://huggingface.co/shreshthsaini/brightrate-study-qwen25vl-3b-multiexposure",
+  "created_at": "2026-08-24T08:21:17.000Z",
+  "updated_at": "2026-08-24T08:21:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148712776,
+  "storage_human": "149 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shreshthsaini/BrightVQ: Repository for New UGC-HDR dataset ...",
+      "url": "https://github.com/shreshthsaini/BrightVQ",
+      "snippet": "BrightRate integrates UGC-specific features from a pretrained CONTRIQUE model， semantic cues from a CLIP-based encoder, HDR features extracted via a piecewise non-linear luminance transform, and temporal differences, which are regressed to MOS."
+    },
+    {
+      "title": "BrightRate: Quality Assessment for User-Generated HDR Videos",
+      "url": "https://shreshthsaini.github.io/BrightVQ/",
+      "snippet": "Using this dataset, we also developed BrightRate, a novel video quality prediction model designed to capture both UGC-specific distortions coexisting with HDR-specific artifacts. Extensive experimental results demonstrate that BrightRate achieves state-of-the-art performance on both the new BrightVQ data resource and on other existing HDR ..."
+    },
+    {
+      "title": "[2502.13923] Qwen2.5-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2502.13923",
+      "snippet": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video ..."
+    },
+    {
+      "title": "BrightRate: Quality Assessment for User-Generated HDR Videos",
+      "url": "https://wacv.thecvf.com/virtual/2026/oral/1209",
+      "snippet": "Using this dataset, we also developed BrightRate, a novel video quality prediction model designed to capture both UGC-specific distortions coexisting with HDR-specific artifacts."
+    },
+    {
+      "title": "Shreshth Saini",
+      "url": "https://shreshthsaini.github.io/",
+      "snippet": "This study investigates the exploitation of diffusion model priors to achieve perceptual consistency in image quality assessment. By leveraging the inherent priors learned by diffusion models, the assessment of image quality is made more aligned with human perception, leading to more accurate and reliable evaluations."
+    }
+  ]
+}

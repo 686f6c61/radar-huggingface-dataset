@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "pinkelephantlimited/phone-agent",
+  "slug": "pinkelephantlimited-phone-agent",
+  "author": "pinkelephantlimited",
+  "url": "https://huggingface.co/pinkelephantlimited/phone-agent",
+  "created_at": "2026-08-23T11:33:54.000Z",
+  "updated_at": "2026-08-23T16:23:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "phone-llm",
+    "on-device",
+    "llama.cpp",
+    "gguf",
+    "android",
+    "rag",
+    "web-search",
+    "sovereign",
+    "pink-elephant",
+    "en",
+    "zh",
+    "base_model:pinkelephantlimited/phone-llm",
+    "base_model:finetune:pinkelephantlimited/phone-llm",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1264683008,
+  "parameters_human": "1.26B",
+  "storage_bytes": 126468933465,
+  "storage_human": "126.5 GB",
+  "base_model": "pinkelephantlimited/phone-llm",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pinkelephantlimited/phone-helper-app · Hugging Face",
+      "url": "https://huggingface.co/pinkelephantlimited/phone-helper-app",
+      "snippet": "Pink Elephant Talk is the flagship mobile product of Pink Elephant Limited (Hong Kong) — a commercial AI technology development company. It is a fully offline, on-device chat assistant. The language model runs entirely on your phone: no cloud, no account, no API fees, no telemetry. Your conversations never leave the device."
+    },
+    {
+      "title": "pinkelephantlimited/phone-helper-vlm-3b · Hugging Face",
+      "url": "https://huggingface.co/pinkelephantlimited/phone-helper-vlm-3b",
+      "snippet": "The company & product Pink Elephant Limited is an official commercial AI technology development company registered in Hong Kong. The Phone Helper assistant and its Phone Helper VLM model are commercial products of the company:"
+    },
+    {
+      "title": "GitHub - pinkelephantlimited/phone-helper: Open on-device multilingual ...",
+      "url": "https://github.com/pinkelephantlimited/phone-helper",
+      "snippet": "Base model: Qwen2.5-VL-3B-Instruct (Apache-2.0) Fine-tuned for daily-helper behavior in 12 priority languages Runs in a bundled mobile app (Android APK + iOS) via llama.cpp Voice input (Whisper) + voice output (system TTS) + camera vision"
+    },
+    {
+      "title": "pinkelephantlimited (Pink Elephant Limited) · GitHub",
+      "url": "https://github.com/pinkelephantlimited/",
+      "snippet": "Joined Jul 2, 2026 Block or report user Block or report pinkelephantlimited Block user Add an optional note pink-elephant-llm pink-elephant-llm Public Training infrastructure and evaluation suite for Pink Elephant LLM models Python .github .github Public Pink Elephant Limited organization profile"
+    },
+    {
+      "title": "Maintainer «pinkelephantlimited»",
+      "url": "https://llm-explorer.com/list/?mtr=pinkelephantlimited",
+      "snippet": "A Curated List of the Large and Small Language Models (Open-Source LLMs and SLMs). Maintainer «pinkelephantlimited» with Dynamic Sorting and Filtering."
+    }
+  ]
+}

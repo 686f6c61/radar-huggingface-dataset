@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "srmistneurolab/paper_006104620_self_supervised",
+  "slug": "srmistneurolab-paper_006104620_self_supervised",
+  "author": "srmistneurolab",
+  "url": "https://huggingface.co/srmistneurolab/paper_006104620_self_supervised",
+  "created_at": "2026-08-23T07:35:35.000Z",
+  "updated_at": "2026-08-23T07:35:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "author-year",
+    "cautious",
+    "first-person-plural",
+    "latex-acl",
+    "self-supervised",
+    "short-punchy",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Self-Supervised Learning (SSL) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/",
+      "snippet": "Self-Supervised Learning (SSL) is a type of machine learning where a model is trained using data that does not have any labels or answers provided. Instead of needing people to label the data, the model finds patterns and creates its own labels from the data automatically."
+    },
+    {
+      "title": "PDF Self-Supervised Learning - Stanford University",
+      "url": "https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf",
+      "snippet": "Can self-supervised learning help? Self-supervised learning (informal definition): supervise using labels generated from the data without any manual or as weak label sources Idea: Hide or modify part of the input. Ask model to recover input or classify what changed. Self-supervised task referred to the pretext task"
+    },
+    {
+      "title": "[2301.05712] A Survey on Self-supervised Learning: Algorithms ...",
+      "url": "https://arxiv.org/abs/2301.05712",
+      "snippet": "Deep supervised learning algorithms typically require a large volume of labeled data to achieve satisfactory performance. However, the process of collecting and labeling such data can be expensive and time-consuming. Self-supervised learning (SSL), a subset of unsupervised learning, aims to learn discriminative features from unlabeled data without relying on human-annotated labels. SSL has ..."
+    },
+    {
+      "title": "[2408.17059] A Survey of the Self Supervised Learning Mechanisms for ...",
+      "url": "https://arxiv.org/abs/2408.17059",
+      "snippet": "In response to this challenge, self-supervised learning (SSL) has emerged as a promising technique. SSL utilize inherent relationships within the data as a form of supervision. This technique can reduce the dependence on manual annotations and offers a more scalable and resource-effective approach to training models."
+    },
+    {
+      "title": "Self-supervised learning for medical image analysis: a ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s12530-024-09581-w",
+      "snippet": "Unlike traditional machine learning paradigms, SSL algorithms pre-train models using artificial supervisory signals generated from the unlabeled data. This comprehensive review article explores the fundamental concepts, approaches, and advancements in self-supervised learning, with a particular emphasis on medical image datasets and their sources."
+    }
+  ]
+}

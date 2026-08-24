@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BeastxD/text2cypher_lora_v8_denoised",
+  "slug": "beastxd-text2cypher_lora_v8_denoised",
+  "author": "BeastxD",
+  "url": "https://huggingface.co/BeastxD/text2cypher_lora_v8_denoised",
+  "created_at": "2026-08-23T15:32:14.000Z",
+  "updated_at": "2026-08-23T15:36:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817520,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BeastxD/text2cypher_lora_v8_raw · Hugging Face",
+      "url": "https://huggingface.co/BeastxD/text2cypher_lora_v8_raw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BeastxD/text2cypher_lora_v4_raw · Hugging Face",
+      "url": "https://huggingface.co/BeastxD/text2cypher_lora_v4_raw",
+      "snippet": "See BeastxD/text2cypher_lora_v4_balanced for a complexity-balanced alternative (997 easy / 260 medium / 995 complex, 2,252 rows) trained for direct comparison. Every row passed deterministic schema-grounding and relationship-direction checks before being included — see common/validate_and_build.py in the training repo."
+    },
+    {
+      "title": "GitHub - neo4j-labs/text2cypher: collection of text2cypher datasets ...",
+      "url": "https://github.com/neo4j-labs/text2cypher",
+      "snippet": "collection of text2cypher datasets, evaluations, and finetuning instructions - neo4j-labs/text2cypher"
+    },
+    {
+      "title": "neo4j-labs/text2cypher | DeepWiki",
+      "url": "https://deepwiki.com/neo4j-labs/text2cypher",
+      "snippet": "This document provides an introduction to the text2cypher repository, which contains resources for training Large Language Models (LLMs) to translate natural language questions into Cypher queries for Neo4j graph databases. This page covers the repository&#x27;s purpose, core capabilities, and high-level architecture."
+    },
+    {
+      "title": "GitHub - GraphML-lab/Text2Cypher",
+      "url": "https://github.com/GraphML-lab/Text2Cypher",
+      "snippet": "This repo accompanies my thesis: \"Think Beyond LLM: Can Agentic Workflow outperform Fine Tuned LLM in terms of Text2Cypher?\" (GraphML Lab) If you want the full experimental context (datasets, Neo4j instances/data import, evaluation details), the thesis is the source of truth. This README is a suggested cookbook: which folders to use, what to install, and which scripts to run."
+    }
+  ]
+}

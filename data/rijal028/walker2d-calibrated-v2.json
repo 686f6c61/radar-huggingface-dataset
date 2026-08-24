@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rijal028/walker2d-calibrated-v2",
+  "slug": "rijal028-walker2d-calibrated-v2",
+  "author": "rijal028",
+  "url": "https://huggingface.co/rijal028/walker2d-calibrated-v2",
+  "created_at": "2026-08-23T13:13:14.000Z",
+  "updated_at": "2026-08-23T13:13:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "mujoco",
+    "walker2d",
+    "fault-tolerance",
+    "dynamic-adaptation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 968405,
+  "storage_human": "968405 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rijal028/finetuninggg · Hugging Face",
+      "url": "https://huggingface.co/rijal028/finetuninggg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rijal028/lorasamoolv5 at main - Hugging Face",
+      "url": "https://huggingface.co/rijal028/lorasamoolv5/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Walker2d-v2 | SOTA | HyperAI",
+      "url": "https://hyper.ai/en/sota/tasks/openai-gym/benchmark/walker2d-v2",
+      "snippet": "Build the Future of Artificial Intelligence"
+    },
+    {
+      "title": "Walker2D - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/walker2d/",
+      "snippet": "The Walker-v5 model is updated to have the same friction for both feet (set to 1.9). This causes the Walker2d&#x27;s the right foot to slide less on the surface and therefore require more force to move (related GitHub issue)."
+    },
+    {
+      "title": "walker2d-v2 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/walker2d-v2",
+      "snippet": "Add a description, image, and links to the walker2d-v2 topic page so that developers can more easily learn about it ..."
+    }
+  ]
+}

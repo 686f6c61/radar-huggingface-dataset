@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SVGsquad/clip-svg-ViT-H-14-ours-hps",
+  "slug": "svgsquad-clip-svg-vit-h-14-ours-hps",
+  "author": "SVGsquad",
+  "url": "https://huggingface.co/SVGsquad/clip-svg-ViT-H-14-ours-hps",
+  "created_at": "2026-08-24T13:48:08.000Z",
+  "updated_at": "2026-08-24T13:48:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clip",
+    "zero-shot-image-classification",
+    "svg",
+    "text-to-image",
+    "human-preference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 986109440,
+  "parameters_human": "986.1M",
+  "storage_bytes": 1972329970,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K · Hugging Face",
+      "url": "https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CLIP-ViT-H-14.safetensors · f5aiteam/CLIP_VISION at main",
+      "url": "https://huggingface.co/f5aiteam/CLIP_VISION/blob/main/CLIP-ViT-H-14.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SVGSquad - SVG Files for Cricut & Silhouette",
+      "url": "https://www.svgsquad.com/",
+      "snippet": "Welcome to the SVGSquad Studio Design Store, your source for craft machine cut files, fonts, SVGs, and other digital content ."
+    },
+    {
+      "title": "CLIP-ViT-H-14-laion2B-s32B-b79K — Zero Shot Image…",
+      "url": "https://modeldatabase.com/laion/CLIP-ViT-H-14-laion2B-s32B-b79K.html",
+      "snippet": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K is an open source zero shot image classification model built with open_clip, 1,177,896 downloads."
+    },
+    {
+      "title": "CLIP ViT H 14 Laion2B S32B B79K in ComfyUI - Comfy",
+      "url": "https://comfy.org/p/supported-models/clip-vit-h-14-laion2b-s32b-b79k/",
+      "snippet": "Run CLIP ViT H 14 Laion2B S32B B79K in ComfyUI with full parameter control. 2 community workflow templates, step-by-step tutorials, and free local inference."
+    }
+  ]
+}

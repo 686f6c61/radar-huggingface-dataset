@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF",
+  "slug": "brian6145-qwen3-6-27b-claude-opus-deepseek-distilled-imatrix-mtp-1m-gguf",
+  "author": "Brian6145",
+  "url": "https://huggingface.co/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF",
+  "created_at": "2026-07-09T06:06:56.000Z",
+  "updated_at": "2026-08-23T04:02:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3",
+    "qwen3.6",
+    "mtp",
+    "speculative-decoding",
+    "yarn",
+    "long-context",
+    "1m-context",
+    "imatrix",
+    "quantized",
+    "distillation",
+    "agent",
+    "react",
+    "1M-context",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2305.13298",
+    "arxiv:2210.03629",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 8503,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 112189825312,
+  "storage_human": "112.2 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "BenchLocal 6-pack",
+      "metric": "6-pack Total",
+      "value": 86.5
+    },
+    {
+      "task": null,
+      "dataset": "GPQA-Diamond-198",
+      "metric": "Accuracy",
+      "value": 83.84
+    },
+    {
+      "task": null,
+      "dataset": "MMLU-500 (5-shot)",
+      "metric": "Accuracy",
+      "value": 91.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-GGUF",
+      "url": "https://huggingface.co/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-GGUF",
+      "url": "https://huggingface.co/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-GGUF/discussions/1",
+      "snippet": "I have a 4080 RTX with 16GB VRAM and because of that, I&#x27;m only using the Q3_K_M variant. Its by far the best and most intelligent model I got to run locally. Its very rarely failing tool calls and ..."
+    },
+    {
+      "title": "Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF · Model ...",
+      "url": "https://inferix.co/models/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF",
+      "snippet": "🧠 Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled — YaRN 1M Context A distilled Qwen3.6-27B GGUF with YaRN 4× context extension to 1,048,576 tokens, optimized for local agentic reasoning, tool use, and long-chain task execution."
+    },
+    {
+      "title": "Qwen 3.6 27B: Local Claude Code Replacement? - codersera.com",
+      "url": "https://codersera.com/blog/qwen-3-6-as-local-claude-code-replacement-2026/",
+      "snippet": "A realistic, no-hype guide to running Qwen 3.6 27B locally as a Claude Code alternative: benchmarks vs Opus, the hardware and quant you actually need, how to wire it in, where it holds up, and what a hybrid setup actually saves you."
+    },
+    {
+      "title": "Qwen3.6 27b Claude Opus Sonnet Distilled Nvfp4 Mtp",
+      "url": "https://free2aitools.com/model/brian6145/qwen3.6-27b-claude-opus-sonnet-distilled-nvfp4-mtp",
+      "snippet": "Deep dive into Qwen3.6 27b Claude Opus Sonnet Distilled Nvfp4 Mtp."
+    }
+  ]
+}

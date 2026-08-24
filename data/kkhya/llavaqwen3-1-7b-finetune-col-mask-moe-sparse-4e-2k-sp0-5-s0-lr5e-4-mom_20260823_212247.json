@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s0-lr5e-4-mom_20260823_212247",
+  "slug": "kkhya-llavaqwen3-1-7b-finetune-col-mask-moe-sparse-4e-2k-sp0-5-s0-lr5e-4-mom_20260823_212247",
+  "author": "KKHYA",
+  "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s0-lr5e-4-mom_20260823_212247",
+  "created_at": "2026-08-23T21:23:49.000Z",
+  "updated_at": "2026-08-24T04:19:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "col_mask_moe_llava_qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:KKHYA/llavaqwen3-1.7b-finetune",
+    "base_model:finetune:KKHYA/llavaqwen3-1.7b-finetune",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2342001664,
+  "parameters_human": "2.34B",
+  "storage_bytes": 20999668918,
+  "storage_human": "21.0 GB",
+  "base_model": "KKHYA/llavaqwen3-1.7b-finetune",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s1-lr5e ...",
+      "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s1-lr5e-4-impinit_20260722_044812",
+      "snippet": "KKHYA / llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s1-lr5e-4-impinit_20260722_044812 like 0 Text Generation Transformers PyTorch Safetensors col_mask_moe_llava_qwen3 Generated from Trainer conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s0-lr5e-4 ...",
+      "url": "https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s0-lr5e-4-impinit_20260724_171251",
+      "snippet": "llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s0-lr5e-4-impinit_20260724_171251 This model is a fine-tuned version of KKHYA/llavaqwen3-1.7b-finetune on an unknown dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    },
+    {
+      "title": "Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 4e 2k 2of4 B5 Fixmag ...",
+      "url": "https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-b5-fixmag-routeronly_20260805_220232",
+      "snippet": "Deep dive into Llavaqwen3 1.7b Finetune Nm Mask Moe Sparse 4e 2k 2of4 B5 Fixmag Routeronly 20260805 220232."
+    },
+    {
+      "title": "Llavaqwen3 1.7b Finetune Adapter Moe Sparse 4e 2k B7a Pesc D64 20260806 ...",
+      "url": "https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-adapter-moe-sparse-4e-2k-b7a-pesc-d64_20260806_215150",
+      "snippet": "Deep dive into Llavaqwen3 1.7b Finetune Adapter Moe Sparse 4e 2k B7a Pesc D64 20260806 215150."
+    },
+    {
+      "title": "GitHub - PKU-YuanGroup/MoE-LLaVA: 【TMM 2025 】 Mixture-of-Experts for ...",
+      "url": "https://github.com/PKU-YuanGroup/MoE-LLaVA",
+      "snippet": "The average performance surpasses LLaVA-1.5-7B by using 3.6B sparse activated parameters, checking our model zoo. [2024.01.27] 🤗 Hugging Face demo and all codes & datasets are available now!"
+    }
+  ]
+}

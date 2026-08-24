@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DanielNRU/S7-relevance-rubert-20260823",
+  "slug": "danielnru-s7-relevance-rubert-20260823",
+  "author": "DanielNRU",
+  "url": "https://huggingface.co/DanielNRU/S7-relevance-rubert-20260823",
+  "created_at": "2026-08-23T10:47:26.000Z",
+  "updated_at": "2026-08-23T10:48:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-classification",
+    "russian",
+    "ru",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355885057,
+  "parameters_human": "355.9M",
+  "storage_bytes": 2847291187,
+  "storage_human": "2.8 GB",
+  "base_model": "ai-forever/ruRoBERTa-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DanielNRU/S7-relevance-rubert-20260810 · Hugging Face",
+      "url": "https://huggingface.co/DanielNRU/S7-relevance-rubert-20260810",
+      "snippet": "S7 Airlines Relevance — ruBERT-base-cased Модель бинарной классификации релевантности для темы S7 Airlines."
+    },
+    {
+      "title": "DanielNRU/S7-tags-ruroberta-20260810 · Hugging Face",
+      "url": "https://huggingface.co/DanielNRU/S7-tags-ruroberta-20260810",
+      "snippet": "DanielNRU / S7-tags-ruroberta-20260810 like 0 Text Classification Transformers S7_enriched.jsonl Russian russian rubert ruroberta multi-label-classification s7-airlines Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 238 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 70 providers compared."
+    },
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily with release dates, descriptions, and official announcements."
+    },
+    {
+      "title": "Specialist AI Agents for Every Task | Relevance AI",
+      "url": "https://relevanceai.com/",
+      "snippet": "Deliver maximum ROI through optimized specialist agents. Build agents for sales, customer success, marketing and HR, and run millions of daily tasks on one platform."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshuagreen/paper_009870085_neural_architecture_search",
+  "slug": "joshuagreen-paper_009870085_neural_architecture_search",
+  "author": "joshuagreen",
+  "url": "https://huggingface.co/joshuagreen/paper_009870085_neural_architecture_search",
+  "created_at": "2026-08-23T05:18:30.000Z",
+  "updated_at": "2026-08-23T05:18:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "concise-analytical",
+    "docx",
+    "endnote",
+    "measured",
+    "mixed-active-passive",
+    "neural-architecture-search",
+    "short-punchy",
+    "structured-imrad",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‪Yoshua Bengio‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=kukA0LcAAAAJ&hl=en",
+      "snippet": "‪Professor of computer science, University of Montreal, Mila, IVADO, CIFAR‬ - ‪‪Cited by 1,141,869‬‬ - ‪Machine learning‬ - ‪deep learning‬ - ‪artificial intelligence‬"
+    },
+    {
+      "title": "ResearchGate",
+      "url": "https://www.researchgate.net/publication/390131112_Neural_Architecture_Search_Automating_Deep_Learning_Model_Design",
+      "snippet": "ResearchGate"
+    },
+    {
+      "title": "A Comprehensive Review of Deep Learning: Architectures, Recent ... - MDPI",
+      "url": "https://www.mdpi.com/2078-2489/15/12/755",
+      "snippet": "Deep learning (DL) has become a core component of modern artificial intelligence (AI), driving significant advancements across diverse fields by facilitating the analysis of complex systems, from protein folding in biology to molecular discovery in chemistry and particle interactions in physics. However, the field of deep learning is constantly evolving, with recent innovations in both ..."
+    },
+    {
+      "title": "PMC Home",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "snippet": "PMC is a free full-text archive of biomedical and life sciences journal literature at the U.S. National Institutes of Health&#x27;s National Library of Medicine (NIH/NLM)."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    }
+  ]
+}

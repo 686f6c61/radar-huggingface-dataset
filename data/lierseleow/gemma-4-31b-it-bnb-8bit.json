@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lierseleow/gemma-4-31B-it-bnb-8bit",
+  "slug": "lierseleow-gemma-4-31b-it-bnb-8bit",
+  "author": "lierseleow",
+  "url": "https://huggingface.co/lierseleow/gemma-4-31B-it-bnb-8bit",
+  "created_at": "2026-08-23T08:26:57.000Z",
+  "updated_at": "2026-08-23T08:57:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31277712460,
+  "parameters_human": "31.28B",
+  "storage_bytes": 32758406227,
+  "storage_human": "32.8 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Quantized Models for google/gemma-4-31B-it - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:google/gemma-4-31B-it",
+      "snippet": "Explore machine learning models. HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP"
+    },
+    {
+      "title": "Gemma 4 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/gemma-4",
+      "snippet": "Gemma 4 is Google&#x27;s new model family including including E2B, E4B, 26B-A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s new family of open models, including 12B, E2B, E4B, 26B-A4B, and 31B. The multimodal, hybrid-thinking models support 140+ languages, up to 256K context, and have dense and MoE variants. Gemma 4 is Apache-2.0 licensed and can run on your local device. Gemma-4-12B is new and features unified text, image and audio support. It runs on 8GB RAM (4-bit) or 14GB (8-bit ..."
+    }
+  ]
+}

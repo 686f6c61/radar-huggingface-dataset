@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pengkkk/RFMSR",
+  "slug": "pengkkk-rfmsr",
+  "author": "pengkkk",
+  "url": "https://huggingface.co/pengkkk/RFMSR",
+  "created_at": "2026-08-23T14:11:12.000Z",
+  "updated_at": "2026-08-23T14:11:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "arxiv:2607.12753",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18654660168,
+  "storage_human": "18.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Faze-Hsw/RFMSR: Pure visual image super-resolution framework ...",
+      "url": "https://github.com/Faze-Hsw/RFMSR",
+      "snippet": "Text & Logo Text super-resolution (4×). RFMSR preserves sharp letter edges and correct glyph shapes, while one-step baselines (VOSR-1, InvSR-1, OSEDiff-1) introduce distortion or miss strokes. Another text example (4×). RFMSR-1 achieves comparable fidelity to the 15-step model, demonstrating strong one-step distillation."
+    },
+    {
+      "title": "RFMSR: Residual Flow Matching for Image Super-Resolution",
+      "url": "https://arxiv.org/abs/2607.12753v1",
+      "snippet": "Furthermore, existing single-step acceleration techniques often forfeit the model&#x27;s multi-step inference capability. In this paper, we propose Residual Flow Matching for Image Super-Resolution (RFMSR), a vision-only framework that centers the source distribution at the LQ latent, reducing transport distance and preserving structural priors ..."
+    },
+    {
+      "title": "RFMSR: Residual Flow Matching for Image Super-Resolution",
+      "url": "https://arxiv.org/html/2607.12753v1",
+      "snippet": "Abstract Image super-resolution (ISR) has witnessed remarkable progress with diffusion models and flow matching. The dominant text-to-image (T2I) based approaches leverage large-scale foundation models as generative priors, achieving impressive perceptual quality but at the cost of massive model sizes and prohibitive training expenses. Recent flow-matching-based vision-only approaches have ..."
+    },
+    {
+      "title": "RFMSR: Residual Flow Matching for Image Super-Resolution",
+      "url": "https://huggingface.co/papers/2607.12753",
+      "snippet": "RFMSR: Residual Flow Matching for Image Super-Resolution ... Shuwei Huang , Tianyao Luo , Jicheng Liu ,"
+    },
+    {
+      "title": "frozen2001/RFMSR · Hugging Face",
+      "url": "https://huggingface.co/frozen2001/RFMSR",
+      "snippet": "Instructions to use frozen2001/RFMSR with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use frozen2001/RFMSR with Diffusers:"
+    }
+  ]
+}

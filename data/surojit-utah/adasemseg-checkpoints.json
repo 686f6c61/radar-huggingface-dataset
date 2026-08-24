@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Surojit-Utah/adasemseg-checkpoints",
+  "slug": "surojit-utah-adasemseg-checkpoints",
+  "author": "Surojit-Utah",
+  "url": "https://huggingface.co/Surojit-Utah/adasemseg-checkpoints",
+  "created_at": "2026-08-24T02:58:59.000Z",
+  "updated_at": "2026-08-24T03:06:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seismic",
+    "few-shot-segmentation",
+    "class-agnostic-segmentation",
+    "cross-domain-generalization",
+    "self-supervised-learning",
+    "geophysics",
+    "arxiv:2501.16760",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1788433774,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Surojit-Utah/AdaSemSeg",
+      "url": "https://github.com/Surojit-Utah/AdaSemSeg/tree/main",
+      "snippet": "Each 5-shot checkpoint above is evaluated under both AdaSemSeg support-selection strategies (K=5 sampling and nearest-slice) to produce the two rows per dataset in Table 1 — support strategy is an evaluation-time flag, not a separate trained model."
+    },
+    {
+      "title": "GitHub - Surojit-Utah/AdaSemSeg",
+      "url": "https://github.com/Surojit-Utah/AdaSemSeg",
+      "snippet": "Contribute to Surojit-Utah/AdaSemSeg development by creating an account on GitHub."
+    },
+    {
+      "title": "AdaSemSeg: Trained Model Checkpoints for Adaptive Few-Shot ... - Zenodo",
+      "url": "https://zenodo.org/records/21762769",
+      "snippet": "Trained model checkpoints accompanying the paper \"AdaSemSeg: An Adaptive Few-Shot Semantic Segmentation of Seismic Facies\" (Saha & Whitaker, IEEE Transactions onGeoscience and Remote Sensing, 2025, DOI: 10.1109/TGRS.2025.3595010). Includes weights for all three seismic facies datasets studied in the paper (F3,Parihaka, Penobscot) under both 1-shot and 5-shot settings, following a leave-one-out ..."
+    },
+    {
+      "title": "Projects - Researcher in Machine Learning and Computer Vision",
+      "url": "https://surojit-utah.github.io/publications/",
+      "snippet": "The performance of the AdaSemSeg evaluated on target datasets without refinement is comparable to the baselines. The AdaSemSeg comprehensively outperforms the prototype-based FSSS method and the segmentation model trained using transfer learning. Matching Aggregate Posteriors in the Variational Autoencoder"
+    },
+    {
+      "title": "PDF AdaSemSeg: An Adaptive Few-shot Semantic Segmentation of Seismic Facies",
+      "url": "https://surojit-utah.github.io/files/AdaSemSeg.pdf",
+      "snippet": "The performance of the AdaSemSeg evaluated on target datasets without refinement is comparable to the baselines. The AdaSemSeg comprehensively outperforms the prototype-based FSSS method and the segmentation model trained using transfer learning."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nokolora/ffxiv-krile",
+  "slug": "nokolora-ffxiv-krile",
+  "author": "nokolora",
+  "url": "https://huggingface.co/nokolora/ffxiv-krile",
+  "created_at": "2025-03-27T10:42:44.000Z",
+  "updated_at": "2026-08-23T14:24:38.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 589349799,
+  "storage_human": "589 MB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nokolora/ffxiv-krile · Hugging Face",
+      "url": "https://huggingface.co/nokolora/ffxiv-krile",
+      "snippet": "nokolora / ffxiv-krile like 1 Text-to-Image Diffusers lora template:diffusion-lora License:cc0-1.0 Model card FilesFiles and versions Community Use this model FFXIV - Krile Maya Baldesion (LoRA) Model description FFXIV Krile Maya Baldesion LoRA Model Contents Model Type Trigger Words 1. default model 2. face model"
+    },
+    {
+      "title": "nokolora/ffxiv-krile at main - Hugging Face",
+      "url": "https://huggingface.co/nokolora/ffxiv-krile/tree/main",
+      "snippet": "lora template:diffusion-lora License: cc0-1.0 Model card Files Files and versions Community Use this model main ffxiv-krile"
+    },
+    {
+      "title": "FFXIV クルルさん (Krile Maya Baldesion) ｜AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1893812209771387241",
+      "snippet": "Try out the &#x27;FFXIV クルルさん (Krile Maya Baldesion) &#x27; AI Art Model to generate stunning Anime AI art on PixAI. Browsing artwork created using the &#x27;FFXIV クルルさん (Krile Maya Baldesion) &#x27; AI Art Model. ff14"
+    },
+    {
+      "title": "Anime Style Diffusion Model_Open Source Model_AIbase Model Library",
+      "url": "https://model.aibase.com/tag/Anime%20Style%20Diffusion",
+      "snippet": "Ffxiv Krile LoRA model developed based on Krile&#x27;s appearance in Final Fantasy XIV 7.x storyline, including standard attire, facial features, and weapon sub-models Image Generation F nokolora 66 1"
+    },
+    {
+      "title": "FFXIV クルルさん (Krile Maya Baldesion) 03 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1893814234872254331",
+      "snippet": "Generate stunning ff14 anime art with the &#x27;FFXIV クルルさん (Krile Maya Baldesion) 03&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

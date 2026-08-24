@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Charan2804/price-qlora-qwen-1.5b",
+  "slug": "charan2804-price-qlora-qwen-1-5b",
+  "author": "Charan2804",
+  "url": "https://huggingface.co/Charan2804/price-qlora-qwen-1.5b",
+  "created_at": "2026-08-24T08:32:23.000Z",
+  "updated_at": "2026-08-24T08:32:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123329514,
+  "storage_human": "123 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2 1.5B pricing & specs — Alibaba | CloudPrice",
+      "url": "https://cloudprice.net/models/alibaba-qwen2-1-5b",
+      "snippet": "Qwen2 1.5B is an AI model by Alibaba. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "We opensource our Qwen series, now including Qwen, the base language models, namely Qwen-1.8B, Qwen-7B, Qwen-14B, and Qwen-72B, as well as Qwen-Chat, the chat models, namely Qwen-1.8B-Chat, Qwen-7B-Chat, Qwen-14B-Chat, and Qwen-72B-Chat. Links are on the above table. Click them and check the model cards. Also, we release the technical report. Please click the paper link and check it out! In ..."
+    },
+    {
+      "title": "Qwen/Qwen1.5-4B-Chat-GPTQ-Int4 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen1.5-4B-Chat-GPTQ-Int4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hiyouga/Qwen1.5: Qwen1.5 is the improved version of Qwen, the ...",
+      "url": "https://github.com/hiyouga/Qwen1.5",
+      "snippet": "This time, we upgrade Qwen to Qwen1.5, the beta version of Qwen2. Similar to Qwen, it is still a decoder-only transformer model with SwiGLU activation, RoPE, multi-head attention. At this moment, we have achieved: 7 model sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B models, plus a 14B (A2.7B) MoE model; Significant model quality improvements in chat models; Strengthened multilingual capabilities in ..."
+    },
+    {
+      "title": "LLM - arxiv-daily",
+      "url": "https://jawatech.github.io/arxiv-daily-in-place/AI/LLM/",
+      "snippet": "On a 1.5B distilled model trained on MATH, the three modes emerge without collapsing to a single choice, and the brief modes end up more accurate than &#92;textsc{Long}, which shows that the router sorts problems by difficulty rather than at random."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liweimcc/RLDrive",
+  "slug": "liweimcc-rldrive",
+  "author": "liweimcc",
+  "url": "https://huggingface.co/liweimcc/RLDrive",
+  "created_at": "2026-08-23T07:37:01.000Z",
+  "updated_at": "2026-08-23T07:37:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2425729,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liweimcc (Wei Li) - Hugging Face",
+      "url": "https://huggingface.co/liweimcc",
+      "snippet": "User profile of Wei Li on Hugging Face"
+    },
+    {
+      "title": "liweimcc / Repositories · GitHub",
+      "url": "https://github.com/liweimcc?tab=repositories",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "liweimcc · GitHub",
+      "url": "https://github.com/liweimcc",
+      "snippet": "liweimcc has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "[2606.29879] LWDrive: Layer-Wise World-Model-Guided Vision-Language ...",
+      "url": "https://arxiv.org/abs/2606.29879",
+      "snippet": "To address these limitations, we develop the Layer-Wise World-Model-Guided Driving framework (LWDrive). LWDrive is a VLM planning framework that refines coarse trajectories through layer-wise world-model guidance."
+    },
+    {
+      "title": "Transformation-Equivariant 3D Object Detection for Autonomous Driving",
+      "url": "https://arxiv.org/pdf/2211.11962",
+      "snippet": "Recent equiv-ariant networks explicitly model the transformation variations by applying shared networks on multiple transformed point clouds, showing great potential in object geometry modeling. However, it is difficult to apply such networks to 3D object detection in autonomous driving due to its large computation cost and slow reasoning speed."
+    }
+  ]
+}

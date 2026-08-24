@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "eka-smi/gpt2-sae-prd-denoiser",
+  "slug": "eka-smi-gpt2-sae-prd-denoiser",
+  "author": "eka-smi",
+  "url": "https://huggingface.co/eka-smi/gpt2-sae-prd-denoiser",
+  "created_at": "2026-08-23T18:27:21.000Z",
+  "updated_at": "2026-08-23T19:20:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10790067,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eka-smi/gpt2-sae-prd-denoiser · Hugging Face",
+      "url": "https://huggingface.co/eka-smi/gpt2-sae-prd-denoiser",
+      "snippet": "eka-smi / gpt2-sae-prd-denoiser like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new Code and report"
+    },
+    {
+      "title": "eka-smi (Smirnova) - Hugging Face",
+      "url": "https://huggingface.co/eka-smi",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago eka-smi/gpt2-sae-prd-denoiser published a modelabout 2 hours ago eka-smi/gpt2-sae-prd-denoiser View all activity"
+    },
+    {
+      "title": "NeuroTrace - GPT-2 Small Residual Attack & Defence Framework (IOI Task)",
+      "url": "https://discuss.huggingface.co/t/neurotrace-gpt-2-small-residual-attack-defence-framework-ioi-task/170688",
+      "snippet": "2. High-Level Story The project evolved in four conceptual acts: Atlas Construction (SAE) - Train 12 enhanced sparse autoencoders over all GPT-2 layers to map the residual stream into 73,728 features. Use them to hunt for IOI-related circuits and \"killer features\". Dense Steering (Virus & Boost) - Abandon sparse feature control and directly optimize residual vectors that: destroy IOI ..."
+    },
+    {
+      "title": "sae-gpt2/README.md at main · sahnia3/sae-gpt2 · GitHub",
+      "url": "https://github.com/sahnia3/sae-gpt2/blob/main/README.md",
+      "snippet": "A reproduction of the Anthropic / Bricken et al. 2023 SAE recipe — applied to GPT-2 small&#x27;s residual stream. Trains a one-hidden-layer ReLU autoencoder on cached transformer hidden states with an L1 sparsity penalty, then surfaces the top-activating tokens for each learned feature so you can see what the model has decomposed into."
+    },
+    {
+      "title": "[2410.12555] Investigating Sensitive Directions in GPT-2: An Improved ...",
+      "url": "https://arxiv.org/abs/2410.12555",
+      "snippet": "Sensitive directions experiments attempt to understand the computational features of Language Models (LMs) by measuring how much the next token prediction probabilities change by perturbing activations along specific directions. We extend the sensitive directions work by introducing an improved baseline for perturbation directions. We demonstrate that KL divergence for Sparse Autoencoder (SAE ..."
+    }
+  ]
+}

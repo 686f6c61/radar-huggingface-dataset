@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Data-Dumpster-Fire/scihigh-scifive-copycoverage",
+  "slug": "data-dumpster-fire-scihigh-scifive-copycoverage",
+  "author": "Data-Dumpster-Fire",
+  "url": "https://huggingface.co/Data-Dumpster-Fire/scihigh-scifive-copycoverage",
+  "created_at": "2026-08-23T11:29:14.000Z",
+  "updated_at": "2026-08-23T11:38:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 894013344,
+  "storage_human": "894 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overview of the SciHigh Track at FIRE 2025: Research Highlight ...",
+      "url": "https://arxiv.org/abs/2601.11582",
+      "snippet": "`SciHigh: Research Highlight Generation from Scientific Papers&#x27; focuses on the task of automatically generating concise, informative, and meaningful bullet-point highlights directly from scientific abstracts. The goal of this task is to evaluate how effectively computational models can generate highlights that capture the key contributions, findings, and novelty of a paper in a concise form ..."
+    },
+    {
+      "title": "GitHub - justinphan3110/SciFive: SciFive: a text-text transformer model ...",
+      "url": "https://github.com/justinphan3110/SciFive",
+      "snippet": "SciFive SciFive provided a Text-Text framework for biomedical language and natural language in NLP. Under the T5 &#x27;s framework and desrbibed in the paper SciFive: a text-to-text transformer model for biomedical literature, SciFive achieve state-of-the-art and competitive results on multiple biomedical-natural language tasks."
+    },
+    {
+      "title": "@SciHigh-2026 - SciHigh-2025 - Google Sites",
+      "url": "https://sites.google.com/jadavpuruniversity.in/scihigh2025/scihigh-2025",
+      "snippet": "Results of the SciHigh-2025 Shared Task are now available here"
+    },
+    {
+      "title": "Overview of the SciHigh Track at FIRE 2025: Research Highlight ...",
+      "url": "https://arxiv.org/html/2601.11582v1",
+      "snippet": "The SciHigh track at FIRE 2025 focuses on the task of automatic research highlight generation. Within this track, participants were invited to generate concise, informative bullet-point highlights directly from scientific abstracts."
+    },
+    {
+      "title": "Overview of the SciHigh Track at FIRE 2025: Research Highlight ...",
+      "url": "https://arxiv.deeppaper.ai/papers/2601.11582v1",
+      "snippet": "Key Contributions The SciHigh track provides a benchmark dataset and evaluation metrics for research highlight generation from scientific papers, fostering the development of methods to reduce reading effort and accelerate literature reviews."
+    }
+  ]
+}

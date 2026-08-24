@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Andrew93110/sn99-miner-uid215-v45",
+  "slug": "andrew93110-sn99-miner-uid215-v45",
+  "author": "Andrew93110",
+  "url": "https://huggingface.co/Andrew93110/sn99-miner-uid215-v45",
+  "created_at": "2026-08-24T05:00:26.000Z",
+  "updated_at": "2026-08-24T07:56:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 605,
+  "storage_human": "605 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andrew93110/sn99-miner-uid215-v45 · Hugging Face",
+      "url": "https://huggingface.co/Andrew93110/sn99-miner-uid215-v45",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Andrew93110/sn99-miner · Hugging Face",
+      "url": "https://huggingface.co/Andrew93110/sn99-miner",
+      "snippet": "Andrew93110 / sn99-miner like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=28&sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "ShinyUser SN99 Miner Fleet - a Hugging Face Space by ShinyUser",
+      "url": "https://huggingface.co/spaces/ShinyUser/sn99-miner1-dashboard",
+      "snippet": "The dashboard displays real‑time validator scores, ranks, emission weight, proof costs, and routing diagnostics for each ShinyUser miner on Bittensor subnet 99."
+    },
+    {
+      "title": "Minecraft Skin Viewer - View a Player&#x27;s Skin in 3D",
+      "url": "https://www.minecraftmaps.com/tools/skin-viewer",
+      "snippet": "View any Minecraft player&#x27;s skin from a username or UUID. Spin the 3D model, check front, back and head, download the skin PNG, and copy a give command."
+    }
+  ]
+}

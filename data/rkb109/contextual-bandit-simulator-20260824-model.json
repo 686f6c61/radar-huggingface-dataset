@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RKB109/contextual-bandit-simulator-20260824-model",
+  "slug": "rkb109-contextual-bandit-simulator-20260824-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/contextual-bandit-simulator-20260824-model",
+  "created_at": "2026-08-24T14:03:25.000Z",
+  "updated_at": "2026-08-24T14:03:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "reinforcement-learning",
+    "text-classification",
+    "feature-extraction",
+    "sentence-similarity",
+    "dataset:RKB109/contextual-bandit-simulator-20260824-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/contextual-bandit-simulator-20260814-dataset · Datasets at ...",
+      "url": "https://huggingface.co/datasets/RKB109/contextual-bandit-simulator-20260814-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RKB109/contextual-bandit-simulator-20260814-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/contextual-bandit-simulator-20260814-model",
+      "snippet": "Contextual Bandit Decision Simulator Baseline Model Model Description This repository contains a small, transparent prototype model for Teams need to validate decision policies offline before exposing users or systems to online reinforcement learning. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "contextual-bandit-simulator-20260804/DATASET_CARD.md at main - GitHub",
+      "url": "https://github.com/R-behera/contextual-bandit-simulator-20260804/blob/main/DATASET_CARD.md",
+      "snippet": "A safe offline contextual-bandit simulator for comparing exploration policies before production experimentation. - R-behera/contextual-bandit-simulator-20260804"
+    },
+    {
+      "title": "GitHub - R-behera/contextual-bandit-simulator-20260725: A safe offline ...",
+      "url": "https://github.com/R-behera/contextual-bandit-simulator-20260725",
+      "snippet": "Contextual Bandit Decision Simulator A safe offline contextual-bandit simulator for comparing exploration policies before production experimentation. Generated on 2026-07-25 as an independent production-AI architecture project."
+    },
+    {
+      "title": "Contextual Bandits — Contextual Bandits documentation",
+      "url": "https://contextual-bandits.readthedocs.io/en/latest/",
+      "snippet": "Chu, Wei, et al. \"Contextual bandits with linear payoff functions.\" Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics. 2011."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "atablash/vosr2-1.4b-mirror",
+  "slug": "atablash-vosr2-1-4b-mirror",
+  "author": "atablash",
+  "url": "https://huggingface.co/atablash/vosr2-1.4b-mirror",
+  "created_at": "2026-08-24T09:26:17.000Z",
+  "updated_at": "2026-08-24T09:48:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-super-resolution",
+    "texture-upscaling",
+    "vosr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5576385424,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cswry/VOSR: [CVPR2026] VOSR: A Vision-Only Generative Model ...",
+      "url": "https://github.com/cswry/VOSR",
+      "snippet": "When scaling to VOSR-1.4B, we adopt the 16-channel Qwen-Image VAE to better preserve input fidelity. Although Qwen-Image is designed for T2I generation, it is released in a video-VAE form, which is unnecessarily slow for image SR inference."
+    },
+    {
+      "title": "VOSR: A Vision-Only Generative Model for Image Super-Resolution",
+      "url": "https://arxiv.org/html/2604.03225v1",
+      "snippet": "We therefore first train a multi-step VOSR model and then distill it into a one-step variant for fast deployment. Fig. 1 compares VOSR with generative SR methods in terms of performance, efficiency, and training cost across both T2I-based and vision-only approaches under multi-step and one-step settings."
+    },
+    {
+      "title": "OvisOCR2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.13639v1",
+      "snippet": "A central challenge is to transfer the reward-aligned parsing behavior learned by the 4B RL model into a compact 0.8B model suitable for deployment. The 4B branch has greater capacity and can absorb reward signals more stably, while the compact branch is more sensitive to high-variance updates on long structured outputs."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

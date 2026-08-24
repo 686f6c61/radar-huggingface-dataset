@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tri-fair-lab/Thomson-1.0-Small",
+  "slug": "tri-fair-lab-thomson-1-0-small",
+  "author": "tri-fair-lab",
+  "url": "https://huggingface.co/tri-fair-lab/Thomson-1.0-Small",
+  "created_at": "2026-08-24T11:55:27.000Z",
+  "updated_at": "2026-08-24T11:55:27.000Z",
+  "license": "polyform-strict-1-0-0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:tri-fair-lab/Snowdon1.1-Small",
+    "base_model:finetune:tri-fair-lab/Snowdon1.1-Small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227486119,
+  "storage_human": "70.2 GB",
+  "base_model": "tri-fair-lab/Snowdon1.1-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tri-fair-lab/Snowdon1.1-Small · Hugging Face",
+      "url": "https://huggingface.co/tri-fair-lab/Snowdon1.1-Small",
+      "snippet": "tri-fair-lab / Snowdon1.1-Small like 0 Follow Thomson Reuters-Imperial Frontier AI Research Lab 8 Safetensors qwen3_5_moe License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "tri-fair-lab (Thomson Reuters & Imperial Frontier AI Research Lab)",
+      "url": "https://huggingface.co/tri-fair-lab",
+      "snippet": "Org profile for Thomson Reuters & Imperial Frontier AI Research Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Thomson Reuters Built Its Own AI Model That Now Ranks Among the World&#x27;s ...",
+      "url": "https://www.thomsonreuters.com/en-us/posts/innovation/thomson-reuters-built-its-own-ai-model-that-now-ranks-among-the-worlds-best/",
+      "snippet": "The most capable AI models no longer come only from frontier AI labs. One now comes from Thomson Reuters. Today, we are sharing early benchmarking results for Thomson, a first of its kind AI model. Across a range of benchmarks assessing legal and general capabilities, Thomson performed competitively with the strongest frontier models on the market, including Claude Opus 4.8, and ahead of GPT-5 ..."
+    },
+    {
+      "title": "Thomson Is Coming, TR&#x27;s Own Legally-Trained LLM",
+      "url": "https://www.artificiallawyer.com/2026/03/24/thomson-is-coming-trs-own-legally-trained-llm/",
+      "snippet": "Thomson Reuters (TR) is getting ready to launch &#x27;Thomson&#x27; its own legally-trained LLM this summer, built using opensource models, their huge data store, and its many experts&#x27; input. It will support CoCounsel and will boost both TR&#x27;s contract and legal research abilities. AL spoke to CTO Joel Hron about the move."
+    },
+    {
+      "title": "Thomson Reuters Says Its Homegrown AI Model Now Rivals the Frontier ...",
+      "url": "https://www.lawnext.com/2026/08/thomson-reuters-says-its-homegrown-ai-model-now-rivals-the-frontier-labs-i-take-a-closer-look-at-the-benchmarks.html",
+      "snippet": "Thomson Reuters says the large language model it has been quietly building in-house now performs competitively with the best general-purpose AI models in the world, and it has released its first benchmarking results to back up the claim. In a July 31 post on the company&#x27;s innovation blog, Chief Technology Officer Joel Hron and Head of AI Research Jonathan Schwarz shared early benchmark data ..."
+    }
+  ]
+}

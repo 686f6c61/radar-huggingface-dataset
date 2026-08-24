@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "herurg/PPO-LunarLander-v2-Unit8",
+  "slug": "herurg-ppo-lunarlander-v2-unit8",
+  "author": "herurg",
+  "url": "https://huggingface.co/herurg/PPO-LunarLander-v2-Unit8",
+  "created_at": "2026-08-23T13:52:25.000Z",
+  "updated_at": "2026-08-23T13:52:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42898,
+  "storage_human": "42898 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "herurg/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/herurg/ppo-LunarLander-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rodri2023/ppo-unit8-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/rodri2023/ppo-unit8-LunarLander-v2",
+      "snippet": "PPO Agent Playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2."
+    },
+    {
+      "title": "nikskywalker/PPO-LunarLander-v2 - GitHub",
+      "url": "https://github.com/nikskywalker/PPO-LunarLander-v2",
+      "snippet": "PPO from Scratch — LunarLander-v2 A Proximal Policy Optimization agent implemented from scratch in PyTorch, trained to solve the LunarLander-v2 environment from OpenAI Gymnasium. No external RL libraries (e.g. Stable-Baselines3) were used — the entire training loop, advantage estimation, and policy update logic are written explicitly."
+    },
+    {
+      "title": "GitHub - alperenunlu/ppo-lunarlander-v2: Agent trained with PPO ...",
+      "url": "https://github.com/alperenunlu/ppo-lunarlander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "LunarLander-v2 with Proximal Policy Optimization - PyLessons",
+      "url": "https://pylessons.com/LunarLander-v2-PPO",
+      "snippet": "LunarLander-v2 with Proximal Policy Optimization In this step-by-step reinforcement learning tutorial with gym and TensorFlow 2. I&#x27;ll show you how to implement a PPO for teaching an AI agent how to land a rocket (Lunarlander-v2)"
+    }
+  ]
+}

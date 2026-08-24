@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "thunderboltc/mbart_sanlishTObangla-normalsplit",
+  "slug": "thunderboltc-mbart_sanlishtobangla-normalsplit",
+  "author": "thunderboltc",
+  "url": "https://huggingface.co/thunderboltc/mbart_sanlishTObangla-normalsplit",
+  "created_at": "2026-08-23T12:16:33.000Z",
+  "updated_at": "2026-08-23T15:08:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/mbart-large-50-many-to-many-mmt",
+    "base_model:finetune:facebook/mbart-large-50-many-to-many-mmt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 105115825563,
+  "storage_human": "105.1 GB",
+  "base_model": "facebook/mbart-large-50-many-to-many-mmt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thunderboltc/mbart50-sanlish-to-bangla · Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "marian-sanlish-bangla-1934_lr2-lr2e5 - Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/marian-sanlish-bangla-1934_lr2-lr2e5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - thunderbird/thunderbolt: AI You Control: Choose your models ...",
+      "url": "https://github.com/Thunderbird/thunderbolt",
+      "snippet": "Thunderbolt is an open-source, cross-platform AI client that can be deployed on-prem anywhere. 🌐 Available on all major desktop and mobile platforms: web, iOS, Android, Mac, Linux, and Windows. 🧠 Compatible with frontier, local, and on-prem models. 🙋 Enterprise features, support, and FDEs available. Thunderbolt is under active development, currently undergoing a security audit, and ..."
+    },
+    {
+      "title": "Thunderbolt — AI You Control",
+      "url": "https://www.thunderbolt.io/",
+      "snippet": "Thunderbolt&#x27;s open-source client pairs with Haystack&#x27;s orchestration platform into a unified, sovereign stack — giving organizations long-term control over how AI is built, run, and experienced, without trade-offs between capability and control."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

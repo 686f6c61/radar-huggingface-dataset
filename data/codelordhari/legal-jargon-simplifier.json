@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CodeLordHari/legal-jargon-simplifier",
+  "slug": "codelordhari-legal-jargon-simplifier",
+  "author": "CodeLordHari",
+  "url": "https://huggingface.co/CodeLordHari/legal-jargon-simplifier",
+  "created_at": "2026-08-23T13:17:30.000Z",
+  "updated_at": "2026-08-23T13:18:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 406340696,
+  "parameters_human": "406.3M",
+  "storage_bytes": 1625422896,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Legal Document Simplifier - Free AI Content Generator | Toolable",
+      "url": "https://toolable.ai/mike/legal-document-simplifier",
+      "snippet": "Legal Document Simplifier This generator transforms complex legal language into clear, understandable text for non-legal audiences while preserving the essential meaning and important details. Perfect for lawyers communicating with clients, compliance professionals creating training materials, and business professionals interpreting contracts."
+    },
+    {
+      "title": "GitHub - AdityaSarswat03/Legal-simplifier: AI-powered app to simplify ...",
+      "url": "https://github.com/AdityaSarswat03/Legal-simplifier",
+      "snippet": "Legal Simplifier is a powerful AI-based web app that simplifies complex legal clauses and documents into plain, understandable language. It supports multilingual output, PDF uploads, and chat-based interactions with memory to allow natural follow-up questions — all powered by the Gemini API and built using FastAPI + Streamlit."
+    },
+    {
+      "title": "GitHub - gantasai2710/Legal-Simplifier: An AI-powered tool that ...",
+      "url": "https://github.com/gantasai2710/Legal-Simplifier",
+      "snippet": "📖 Dynamic Glossary Generation: Isolates archaic legal jargon (e.g., indemnify, hereinafter) and provides simple, contextual definitions. 🏗️ Structured Data Extraction: Built on strict JSON schemas to deterministically extract all insights (Summary, Translation, Risks, Glossary) simultaneously in a single, hyper-efficient API call."
+    },
+    {
+      "title": "Legal Document Simplifier | Demystify complex legal jargon | HyperWrite ...",
+      "url": "https://www.hyperwriteai.com/aitools/legal-document-simplifier",
+      "snippet": "The Legal Document Simplifier uses advanced AI models to analyze the complex language and terms used in legal documents. It then generates a simplified version of the document in plain language, ensuring that the original meaning and intent are retained."
+    },
+    {
+      "title": "AI Legal Jargonize: Professional Drafting with No Guesswork",
+      "url": "https://logicballs.com/tools/legal-jargonize",
+      "snippet": "What is AI Legal Jargonize? AI Legal Jargonize is a verification-based drafting tool designed to convert everyday language into precise, legally binding terminology. It utilizes a clarification-first framework to ensure the generated text remains grounded in your verified requirements rather than relying on assumed context."
+    }
+  ]
+}

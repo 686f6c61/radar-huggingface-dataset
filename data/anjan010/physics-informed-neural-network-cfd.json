@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anjan010/Physics-informed-neural-network-CFD",
+  "slug": "anjan010-physics-informed-neural-network-cfd",
+  "author": "anjan010",
+  "url": "https://huggingface.co/anjan010/Physics-informed-neural-network-CFD",
+  "created_at": "2026-08-23T12:10:43.000Z",
+  "updated_at": "2026-08-23T12:15:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25357,
+  "storage_human": "25357 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Physics Informed Neural Network - CFD - CFD | Kaggle",
+      "url": "https://www.kaggle.com/models/anjanmahapatra007/physics-informed-neural-network-cfd",
+      "snippet": "Physics-Informed Neural Networks for Computational Fluid Dynamics (PINN-CFD) A research-grade implementation of Physics-Informed Neural Networks (PINNs) for solving Computational Fluid Dynamics (CFD) problems using Deep Learning and Scientific Machine Learning."
+    },
+    {
+      "title": "Beyond the Mesh: Physics-Informed Neural Networks as a ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-28097-8_30",
+      "snippet": "This work explores Physics-Informed Neural Networks (PINNs) as a transformative, mesh-free paradigm for Multiphysics simulation, overcoming key limitations of traditional mesh-based methods like computational cost and sensitivity to mesh quality. It details the..."
+    },
+    {
+      "title": "GitHub - PINA-org/PINA: Physics-Informed Neural networks for Advanced ...",
+      "url": "https://github.com/PINA-org/PINA",
+      "snippet": "PINA provides an intuitive framework for defining, experimenting with, and solving complex problems using Neural Networks, Physics-Informed Neural Networks (PINNs), Neural Operators, and more. Modular Architecture: Designed with modularity in mind and relying on powerful yet composable abstractions, PINA allows users to easily plug, replace, or extend components, making experimentation and ..."
+    },
+    {
+      "title": "Physics-informed machine learning - Nature Reviews Physics",
+      "url": "https://www.nature.com/articles/s42254-021-00314-5",
+      "snippet": "Such physics-informed learning integrates (noisy) data and mathematical models, and implements them through neural networks or other kernel-based regression networks."
+    },
+    {
+      "title": "Physics-informed neural networks for PDE problems: a ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-025-11322-7",
+      "snippet": "As AI for Science continues to grow, Physics-informed neural networks (PINNs) have emerged as a transformative approach within the realm of scientific computing and deep learning, offering a robust and flexible framework for solving partial differential equations (PDEs) and other complex physical systems. By embedding physical laws directly into the architecture of neural networks, PINNs ..."
+    }
+  ]
+}

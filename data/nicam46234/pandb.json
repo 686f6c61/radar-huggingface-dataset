@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nicam46234/PanDB",
+  "slug": "nicam46234-pandb",
+  "author": "nicam46234",
+  "url": "https://huggingface.co/nicam46234/PanDB",
+  "created_at": "2026-08-23T04:09:45.000Z",
+  "updated_at": "2026-08-23T04:09:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228484681,
+  "storage_human": "228 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicam46234/Perpendicular_P · Hugging Face",
+      "url": "https://huggingface.co/nicam46234/Perpendicular_P",
+      "snippet": "Instructions to use nicam46234/Perpendicular_P with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use nicam46234/Perpendicular_P with Diffusers:"
+    },
+    {
+      "title": "nicam46234 (haikyaku) - Hugging Face",
+      "url": "https://huggingface.co/nicam46234/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 9 days ago ... published a model 9 days ago"
+    },
+    {
+      "title": "nicam46234/Perpendicular_P API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/nicam46234/Perpendicular_P",
+      "snippet": "nicam46234 Perpendicular_P Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - ActiveInAI/PanDB: PanDB database management platform",
+      "url": "https://github.com/ActiveInAI/PanDB/tree/main/",
+      "snippet": "PanDB database management platform. Contribute to ActiveInAI/PanDB development by creating an account on GitHub."
+    }
+  ]
+}

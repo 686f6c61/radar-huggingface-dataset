@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-deltaproduct",
+  "slug": "jaisidhsingh-signedkda-deltaproduct",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-deltaproduct",
+  "created_at": "2026-08-23T11:25:53.000Z",
+  "updated_at": "2026-08-24T12:00:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated_deltaproduct",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 342069760,
+  "parameters_human": "342.1M",
+  "storage_bytes": 1368324680,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "Deep learning researcher. jaisidhsingh has 57 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "DeltaProduct/README.md at main · automl/DeltaProduct · GitHub",
+      "url": "https://github.com/automl/DeltaProduct/blob/main/README.md",
+      "snippet": "DeltaProduct is a new linear recurrent neural network architecture that uses products of generalized Householder matrices as state-transition matrices enabling better expressivity, state-tracking, and language modeling performance than DeltaNet. - DeltaProduct/README.md at main · automl/DeltaProduct"
+    },
+    {
+      "title": "DeltaProduct: Improving State-Tracking in Linear RNNs via Householder ...",
+      "url": "https://arxiv.org/html/2502.10297",
+      "snippet": "Expressivity of Householder products. While any state transition matrix of DeltaNet can model a single Householder reflection (with β i = 2 $βi=2$), DeltaProduct&#x27;s can model any orthogonal matrix."
+    },
+    {
+      "title": "DeltaProduct: Improving State-Tracking in Linear RNNs via Householder ...",
+      "url": "https://arxiv.org/html/2502.10297v7",
+      "snippet": "Expressivity of Householder products. While any state transition matrix of DeltaNet can model a single Householder reflection (with $βi=2$), DeltaProduct&#x27;s can model any orthogonal matrix."
+    },
+    {
+      "title": "msj19/gated_deltaproduct · Hugging Face",
+      "url": "https://huggingface.co/msj19/gated_deltaproduct",
+      "snippet": "msj19 / gated_deltaproduct like 0 Safetensors gated_deltaproduct arxiv:2409.07146 arxiv:2404.06395 Model card FilesFiles and versions xet Community"
+    }
+  ]
+}

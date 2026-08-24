@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v1",
   "created_at": "2026-08-22T00:27:09.000Z",
-  "updated_at": "2026-08-22T00:42:35.000Z",
+  "updated_at": "2026-08-23T21:43:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 15,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 2189798385,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 8759177745,
+  "storage_human": "8.8 GB",
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"

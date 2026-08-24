@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maai-kyoto/continuous-mimi-onnx",
+  "slug": "maai-kyoto-continuous-mimi-onnx",
+  "author": "maai-kyoto",
+  "url": "https://huggingface.co/maai-kyoto/continuous-mimi-onnx",
+  "created_at": "2026-04-14T12:33:24.000Z",
+  "updated_at": "2026-08-24T09:48:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "feature-extraction",
+    "mimi",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 625676272,
+  "storage_human": "626 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maai-kyoto/continuous-mimi-onnx · Hugging Face",
+      "url": "https://huggingface.co/maai-kyoto/continuous-mimi-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "util - MaAI API Documentation",
+      "url": "https://maai-kyoto.github.io/MaAI/api/util/",
+      "snippet": "download_continuous_mimi_onnx(precision=&#x27;fp32&#x27;,cache_dir=None,force_download=False) Resolve paths to the streaming Mimi ONNX model and JSON sidecar on disk. Files are fetched from maai-kyoto/continuous-mimi-onnx via hf_hub_download (cached under the usual Hugging Face cache layout, or under cache_dir when set)."
+    },
+    {
+      "title": "maai-kyoto (MaAI) - Hugging Face",
+      "url": "https://huggingface.co/maai-kyoto/models",
+      "snippet": "Org profile for MaAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "MaAI API Documentation",
+      "url": "https://maai-kyoto.github.io/MaAI/",
+      "snippet": "Welcome to the official API documentation for MaAI (Real-time and Continuous Non-Linguistic Behavior Generation Software). This documentation provides detailed specifications for each module, class, and function included in the MaAI source code."
+    },
+    {
+      "title": "GitHub - MaAI-Kyoto/MaAI: A real-time software for turn-taking ...",
+      "url": "https://github.com/MaAI-Kyoto/MaAI",
+      "snippet": "The AI in MaAI literally stands for Artificial Intelligence, reflecting the aim to develop AI technologies related to these interactional dynamics. The currently supported models are mainly based on the Voice Activity Projection (VAP) model and its extensions."
+    }
+  ]
+}

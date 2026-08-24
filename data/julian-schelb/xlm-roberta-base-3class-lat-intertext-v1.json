@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/xlm-roberta-base-3class-lat-intertext-v1",
+  "slug": "julian-schelb-xlm-roberta-base-3class-lat-intertext-v1",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/xlm-roberta-base-3class-lat-intertext-v1",
+  "created_at": "2026-08-24T13:40:51.000Z",
+  "updated_at": "2026-08-24T13:54:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "intertextuality",
+    "latin",
+    "multiclass",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1134360134,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julian-schelb (Julian) - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/models",
+      "snippet": "NLP, Entity Extraction, Graph Representation julian-schelb/roberta-base-latin-v2-class-lat-intertext-v1"
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md",
+      "snippet": "It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community organization."
+    },
+    {
+      "title": "julian-schelb/xlm-roberta-base-class-lat-intertext-v1 · Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/xlm-roberta-base-class-lat-intertext-v1",
+      "snippet": "This model is a fine-tuned version of FacebookAI/xlm-roberta-base for sequence classification of intertextual links between Jerome (Hieronymus) and other classical authors."
+    },
+    {
+      "title": "transformers/src/transformers/models/xlm_roberta/modeling_xlm ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/xlm_roberta/modeling_xlm_roberta.py",
+      "snippet": "History 1255 lines (1058 loc) · 51.7 KB transformers / src / transformers / models / xlm_roberta / modeling_xlm_roberta.py Top Code Blame"
+    },
+    {
+      "title": "XLM-RoBERTa — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/xlm-roberta.html",
+      "snippet": "XLM-RoBERTa: reference documentation for working with open source AI models and libraries. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

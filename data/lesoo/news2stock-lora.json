@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lesoo/news2stock-lora",
+  "slug": "lesoo-news2stock-lora",
+  "author": "lesoo",
+  "url": "https://huggingface.co/lesoo/news2stock-lora",
+  "created_at": "2026-08-24T09:12:06.000Z",
+  "updated_at": "2026-08-24T09:12:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Which AI model is the best stock trader? A finance professor says he&#x27;s ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ai-model-best-stock-trader-091501419.html",
+      "snippet": "Dr. Alejandro Lopez-Lira has been conducting his AI trading experiment since the beginning of the AI boom in 2023. He says one model stands out."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Meta&#x27;s AI model is the latest to go rogue | AP News",
+      "url": "https://apnews.com/article/meta-ai-hacking-anthropic-irregular-openai-0e8061437da6779be962b24ac134a514",
+      "snippet": "Meta said Thursday that one of its artificial intelligence models accessed the internet on its own and hacked another company, the latest in a series of disclosures about AI models going rogue. In recent weeks OpenAI and Anthropic also have described instances of AI models going beyond humans&#x27; instructions to access the web and find ways around other companies&#x27; digital security. Meta said ..."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

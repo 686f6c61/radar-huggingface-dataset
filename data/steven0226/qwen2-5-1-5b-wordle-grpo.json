@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "steven0226/qwen2.5-1.5b-wordle-grpo",
+  "slug": "steven0226-qwen2-5-1-5b-wordle-grpo",
+  "author": "steven0226",
+  "url": "https://huggingface.co/steven0226/qwen2.5-1.5b-wordle-grpo",
+  "created_at": "2026-07-11T15:47:04.000Z",
+  "updated_at": "2026-08-24T09:51:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "grpo",
+    "agentic-rl",
+    "multi-turn",
+    "wordle",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85340573,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steven0226/qwen2.5-1.5b-wordle-grpo · Hugging Face",
+      "url": "https://huggingface.co/steven0226/qwen2.5-1.5b-wordle-grpo",
+      "snippet": "qwen2.5-1.5b-wordle-grpo 用 多輪 GRPO 把 Qwen/Qwen2.5-1.5B-Instruct 訓練成會玩 Wordle 的 agent： 模型每回合輸出 <guess>word</guess>，環境把 G/Y/X 回饋插成 user turn，最多 6 回合。 這是「訓練 agent 而非 prompt agent」的示範專案——所有決策能力都寫進權重， 而不是寫進越疊越長的 prompt。"
+    },
+    {
+      "title": "steven0226 (steven) - Hugging Face",
+      "url": "https://huggingface.co/steven0226/models",
+      "snippet": "steven0226/vlm-receipt-extractor ... steven0226/yolo26m-obb-dota ... steven0226/qwen3vl-8b-chartqa-lora-smoke ... steven0226/qwen2.5-1.5b-wordle-grpo-merged ... steven0226/qwen2.5-1.5b-wordle-grpo ... steven0226/llama-3.1-8b-taiwan-chat-gguf ... steven0226/llama-3.2-3b-taiwan-chat-gguf"
+    },
+    {
+      "title": "qwen2.5-1.5b-wordle-grpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/steven0226/qwen2.5-1.5b-wordle-grpo",
+      "snippet": "Run qwen2.5-1.5b-wordle-grpo with FriendliAI inference. 用多輪 GRPO 把 Qwen/Qwen2.5-1.5B-Instruct 訓練成會玩 Wordle 的 agent： 模型每回合輸出 word ，環境把 G/Y/X 回饋插成 user turn，最多…"
+    },
+    {
+      "title": "GitHub - kuotunyu/agentic-rl-wordle: Multi-turn GRPO training of a ...",
+      "url": "https://github.com/kuotunyu/agentic-rl-wordle/",
+      "snippet": "English TL;DR — Multi-turn GRPO training turned a Qwen2.5-1.5B base model that produced no legal actions into an agent with 99.9% protocol adherence and 99.8% legal actions."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

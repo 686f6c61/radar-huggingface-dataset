@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-tcsegformer-block-fold1-no_cldice",
+  "slug": "sugam24-geonusaf-tcsegformer-block-fold1-no_cldice",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_cldice",
+  "created_at": "2026-08-23T09:15:47.000Z",
+  "updated_at": "2026-08-23T14:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3969399454,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-tcsegformer-block-fold1-no_csa · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_csa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sugam24/geonusaf-tcsegformer-block-fold2 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - RayYoh/SGIFormer: [TCSVT&#x27;24] SGIFormer: Semantic-guided and ...",
+      "url": "https://github.com/RayYoh/SGIFormer",
+      "snippet": "[TCSVT&#x27;24] SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation - RayYoh/SGIFormer"
+    },
+    {
+      "title": "Unlucid AI - Uncensored AI tools for dreamers, for free.",
+      "url": "https://unlucid.ai/",
+      "snippet": "Free uncensored AI tools for dreamers. Create, edit, and animate videos with the power of AI. Unleash your imagination through free unrestricted AI technology."
+    }
+  ]
+}

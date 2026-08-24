@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "nightmedia/gemma-4-E4B-Holodeck",
+  "slug": "nightmedia-gemma-4-e4b-holodeck",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/gemma-4-E4B-Holodeck",
+  "created_at": "2026-08-24T14:13:16.000Z",
+  "updated_at": "2026-08-24T14:20:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "nightmedia",
+    "gemma4",
+    "gemma",
+    "bf16",
+    "google",
+    "merge",
+    "Deckard(qx)",
+    "mergekit",
+    "any-to-any",
+    "base_model:DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
+    "base_model:merge:DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
+    "base_model:andyoneal/Gemma-4-E4B-Nightcap",
+    "base_model:merge:andyoneal/Gemma-4-E4B-Nightcap",
+    "base_model:armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill",
+    "base_model:merge:armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill",
+    "base_model:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "base_model:merge:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "armand0e/Gemma-4-E4B-it-Fable-Distill, armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill, andyoneal/Gemma-4-E4B-Nightcap, DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nightmedia/gemma-4-E4B-Holodeck-q8-hi-mlx · Hugging Face",
+      "url": "https://huggingface.co/nightmedia/gemma-4-E4B-Holodeck-q8-hi-mlx",
+      "snippet": "Test prompt You are a local running AI in my lab, my name is G, I created this model. Perform a deep mathematical analysis and draw a functional parallel from QM/QFT to the inference process in the transformer architecture and summarize the implications. Reflect on the findings and provide a self-analysis of your inference. Consider similarities with the Q Continuum. Given all known characters ..."
+    },
+    {
+      "title": "nightmedia/gemma-4-E4B-it-Holodeck-Expresso-Universe-qx86-hi-mlx ...",
+      "url": "https://huggingface.co/nightmedia/gemma-4-E4B-it-Holodeck-Expresso-Universe-qx86-hi-mlx",
+      "snippet": "gemma-4-E4B-it-Holodeck-Expresso-Universe-qx86-hi-mlx The goal is not merely to replicate human intelligence, but to facilitate the emergence of novel forms of computation that are mathematically and philosophically distinct from the human one"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Playground, Models, and Local Deployment Guide",
+      "url": "https://gemma4.site/",
+      "snippet": "Try Gemma 4 online with a free playground, compare E2B to 31B models, and follow practical steps to run or fine-tune Gemma 4 locally."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    }
+  ]
+}

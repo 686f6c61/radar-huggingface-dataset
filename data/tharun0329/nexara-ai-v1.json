@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "THARUN0329/nexara-ai-v1",
+  "slug": "tharun0329-nexara-ai-v1",
+  "author": "THARUN0329",
+  "url": "https://huggingface.co/THARUN0329/nexara-ai-v1",
+  "created_at": "2026-08-23T05:16:30.000Z",
+  "updated_at": "2026-08-23T05:16:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120097131,
+  "storage_human": "120 MB",
+  "base_model": "unsloth/phi-3-mini-4k-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conversational AI Call Center | Nexara AI",
+      "url": "https://www.nexara.ai/",
+      "snippet": "AI calls that sound human. Replace your call center agents with AI that&#x27;s half the cost and more productive."
+    },
+    {
+      "title": "NexaraAI - GitHub",
+      "url": "https://github.com/NexaraAI/",
+      "snippet": "NexaraAI is a next-generation artificial intelligence platform by DemonZ Development, focused on building infrastructure-grade AI systems for: 🧩 Intelligent Minecraft plugin ecosystems 🌍 Web automation & orchestration platforms ⚡ AI-assisted engineering workflows 💬 A conversational AI interface inspired by Claude, Gemini & GPT (beta) NexaraAI is not a chatbot product — it is an AI ..."
+    },
+    {
+      "title": "nexar-ai (Nexar) - Hugging Face",
+      "url": "https://huggingface.co/nexar-ai/models",
+      "snippet": "Org profile for Nexar on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "nexera/nexara-ai/README.md at main · Siddhant-33/nexera",
+      "url": "https://github.com/Siddhant-33/nexera/blob/main/nexara-ai/README.md",
+      "snippet": "Nexara AI is a full-stack AI platform with web search, image generation, deep research, and intelligent conversation."
+    },
+    {
+      "title": "Nexara — See the counterparty failing before it fails",
+      "url": "https://getnexara.ai/",
+      "snippet": "Nexara encodes thirty years of counterparty-risk judgement into a traceable, auditable engine that runs on your own data. First product: counterparty credit risk."
+    }
+  ]
+}

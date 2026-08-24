@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "m97j/aw-qwen3-8b-v1",
+  "slug": "m97j-aw-qwen3-8b-v1",
+  "author": "m97j",
+  "url": "https://huggingface.co/m97j/aw-qwen3-8b-v1",
+  "created_at": "2026-08-22T05:14:41.000Z",
+  "updated_at": "2026-08-23T15:08:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "planning",
+    "reasoning",
+    "verifiable-environment",
+    "post-training",
+    "research-artifact",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:m97j/aw-playworld",
+    "dataset:m97j/axiom-general-posttrain",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2675397842,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen3-8B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-8B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3 8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8b/",
+      "snippet": "Qwen3 8B is a more powerful variant in Alibaba Cloud&#x27;s latest generation of large language models. With 8 billion parameters, it offers enhanced capabilities while remaining deployable on edge devices."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

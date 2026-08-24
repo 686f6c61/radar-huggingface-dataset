@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "rdtand/Qwen3.8-27B-PrismaScout-AQUA-20GB",
+  "slug": "rdtand-qwen3-8-27b-prismascout-aqua-20gb",
+  "author": "rdtand",
+  "url": "https://huggingface.co/rdtand/Qwen3.8-27B-PrismaScout-AQUA-20GB",
+  "created_at": "2026-08-24T04:13:50.000Z",
+  "updated_at": "2026-08-24T04:50:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_text",
+    "prismaquant",
+    "prismascout",
+    "prismaaqua",
+    "aqua",
+    "compressed-tensors",
+    "nvfp4",
+    "fp8",
+    "mixed-precision",
+    "quantized",
+    "text-only",
+    "mtp",
+    "speculative-decoding",
+    "blackwell",
+    "dgx-spark",
+    "qwen3.8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17434756096,
+  "parameters_human": "17.43B",
+  "storage_bytes": 19963663536,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B by Alibaba ranks #74 of 224 with a public score of 59.44/100. Evidence: Estimated; this profile shows 27 source-displayable benchmark rows."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B-PrismaAQUA-gridbook-13GB-5080-vllm",
+      "url": "https://huggingface.co/rdtand/Qwen3.8-27B-PrismaAQUA-gridbook-13GB-5080-vllm/blob/main/model.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-2.4T-A95B is the open-source release of Qwen&#x27;s latest flagship, launched August 2026. Its sparse MoE architecture holds 2.4T total parameters with ~95B activated per step, paired with hybrid attention and a 1M token context window."
+    }
+  ]
+}

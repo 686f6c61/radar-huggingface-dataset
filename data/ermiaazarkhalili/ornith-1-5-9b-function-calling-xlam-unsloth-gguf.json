@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/Ornith-1.5-9B-Function-Calling-xLAM-Unsloth-GGUF",
+  "slug": "ermiaazarkhalili-ornith-1-5-9b-function-calling-xlam-unsloth-gguf",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/Ornith-1.5-9B-Function-Calling-xLAM-Unsloth-GGUF",
+  "created_at": "2026-08-23T06:25:10.000Z",
+  "updated_at": "2026-08-23T06:44:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "unsloth",
+    "lora",
+    "trl",
+    "sft",
+    "text-generation",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:adapter:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 37434623104,
+  "storage_human": "37.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ermiaazarkhalili/Ornith-1.5-9B-Function-Calling-xLAM-Unsloth - Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/Ornith-1.5-9B-Function-Calling-xLAM-Unsloth",
+      "snippet": "Instructions to use ermiaazarkhalili/Ornith-1.5-9B-Function-Calling-xLAM-Unsloth with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ermiaazarkhalili (Behrooz Azarkhalili) - Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/models",
+      "snippet": "LLMs, VLMs, PEFT, RL for LLMs and VLMs."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Introducing Ornith-1.5, an open-source model family that extends self-scaffolding into an end-to-end self-improvement loop."
+    },
+    {
+      "title": "Ornith-1.5-9B: 9B Dense Open MIT Coding Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/ornith-1-5-9b/",
+      "snippet": "Ornith-1.5-9B is an MIT-licensed 9B dense model released 18 Aug 2026 for single-GPU and edge use. It scores 70.6 on SWE-bench Verified and 86.4 on GPQA Diamond."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    }
+  ]
+}

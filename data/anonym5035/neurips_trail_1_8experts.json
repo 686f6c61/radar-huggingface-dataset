@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anonym5035/neurips_trail_1_8experts",
+  "slug": "anonym5035-neurips_trail_1_8experts",
+  "author": "anonym5035",
+  "url": "https://huggingface.co/anonym5035/neurips_trail_1_8experts",
+  "created_at": "2026-08-24T11:37:27.000Z",
+  "updated_at": "2026-08-24T12:14:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anonym5035 (anonym_5035) - Hugging Face",
+      "url": "https://huggingface.co/anonym5035",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 20 days ago ... updated a model 20 days ago"
+    },
+    {
+      "title": "Search - papers.neurips.cc",
+      "url": "https://papers.neurips.cc/papers/search",
+      "snippet": "Search through NeurIPS papers and find relevant research articles and abstracts in the field of machine learning and artificial intelligence."
+    },
+    {
+      "title": "NeurIPS 2026 Papers",
+      "url": "https://neurips.cc/virtual/current/papers.html",
+      "snippet": "AI Reviewing Experiment Attend Hotels Visa Information Organizers Organizing Committee NeurIPS Board NeurIPS Foundation Exhibitors 2026 Exhibitors Portal Layout:"
+    },
+    {
+      "title": "NeurIPS 2025 Papers",
+      "url": "https://neurips.cc/virtual/2025/papers.html",
+      "snippet": "NeurIPS should lead scientific consensus on AI policy Rishi Bommasani Th, Dec 4, 16:30 PST Exhibit Hall C,D,E #5104 -- San Diego Poster Session 4"
+    },
+    {
+      "title": "NeurIPS 2024 Papers",
+      "url": "https://nips.cc/virtual/2024/papers.html",
+      "snippet": "A Systematic Review of NeurIPS Dataset Management Practices Flaws can be Applause: Unleashing Potential of Segmenting Ambiguous Objects in SAM Human-Aware Vision-and-Language Navigation: Bridging Simulation to Reality with Dynamic Human Interactions Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models"
+    }
+  ]
+}

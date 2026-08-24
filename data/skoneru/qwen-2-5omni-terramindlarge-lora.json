@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skoneru/qwen-2.5omni-terramindlarge-lora",
+  "slug": "skoneru-qwen-2-5omni-terramindlarge-lora",
+  "author": "skoneru",
+  "url": "https://huggingface.co/skoneru/qwen-2.5omni-terramindlarge-lora",
+  "created_at": "2026-08-24T14:10:46.000Z",
+  "updated_at": "2026-08-24T14:26:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:skoneru/qwen-2.5omni-terramindlarge",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:skoneru/qwen-2.5omni-terramindlarge",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 722883515,
+  "storage_human": "723 MB",
+  "base_model": "skoneru/qwen-2.5omni-terramindlarge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "[2503.20215] Qwen2.5-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2503.20215",
+      "snippet": "In this report, we present Qwen2.5-Omni, an end-to-end multimodal model designed to perceive diverse modalities, including text, images, audio, and video, while simultaneously generating text and natural speech responses in a streaming manner. To enable the streaming of multimodal information inputs, both audio and visual encoders utilize a block-wise processing approach. To synchronize the ..."
+    },
+    {
+      "title": "Qwen2.5-Omni · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen2_5_omni",
+      "snippet": "Overview The Qwen2.5-Omni model is a unified multiple modalities model proposed in Qwen2.5-Omni Technical Report from Qwen team, Alibaba Group."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "crash-sv/scribe-whisper-turbo-int8",
+  "slug": "crash-sv-scribe-whisper-turbo-int8",
+  "author": "crash-sv",
+  "url": "https://huggingface.co/crash-sv/scribe-whisper-turbo-int8",
+  "created_at": "2026-08-24T12:02:16.000Z",
+  "updated_at": "2026-08-24T12:02:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "faster-whisper",
+    "whisper",
+    "int8",
+    "ru",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814054531,
+  "storage_human": "814 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "cstr/whisper-large-v3-turbo-int8_float32 · Hugging Face",
+      "url": "https://huggingface.co/cstr/whisper-large-v3-turbo-int8_float32",
+      "snippet": "Trained on >5M hours of labeled data, Whisper demonstrates a strong ability to generalise to many datasets and domains in a zero-shot setting. Whisper large-v3-turbo is a distilled version of Whisper large-v3. In other words, it&#x27;s the exact same model, except that the number of decoding layers have reduced from 32 to 4."
+    },
+    {
+      "title": "GitHub - tqpp/whisper-turbo: whisper-turbo语音识别模型",
+      "url": "https://github.com/tqpp/whisper-turbo",
+      "snippet": "Whisper Turbo is a high-performance optimized version based on OpenAI Whisper, focusing on improving inference speed and memory efficiency. While maintaining the original accuracy, it significantly enhances the processing speed of speech recognition, translation, and language identification through ..."
+    },
+    {
+      "title": "Whisper Model Sizes: Complete Guide | OpenWhispr",
+      "url": "https://openwhispr.com/blog/whisper-model-sizes-explained",
+      "snippet": "Every Whisper model size compared: parameters, speed, accuracy, and RAM. Choose between tiny, small, large-v3, and turbo for local transcription."
+    }
+  ]
+}

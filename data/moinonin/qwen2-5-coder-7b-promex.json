@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "moinonin/qwen2.5-coder-7b-promex",
+  "slug": "moinonin-qwen2-5-coder-7b-promex",
+  "author": "moinonin",
+  "url": "https://huggingface.co/moinonin/qwen2.5-coder-7b-promex",
+  "created_at": "2026-08-24T00:52:23.000Z",
+  "updated_at": "2026-08-24T00:58:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "unsloth",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "spec-forge",
+    "command-runway",
+    "qwen2.5-coder",
+    "lora",
+    "code-generation",
+    "yaml",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:githeri/spec-forge-training-data",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955966,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "Abstract † In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable ..."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities while retaining general and math ..."
+    }
+  ]
+}

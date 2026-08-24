@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tsfrm/point-1",
+  "slug": "tsfrm-point-1",
+  "author": "tsfrm",
+  "url": "https://huggingface.co/tsfrm/point-1",
+  "created_at": "2026-08-23T04:31:32.000Z",
+  "updated_at": "2026-08-23T04:42:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "point1",
+    "ridiculous-models",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1,
+  "parameters_human": "1",
+  "storage_bytes": 163,
+  "storage_human": "163 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TSFM.ai — Time Series Foundation Models",
+      "url": "https://tsfm.ai/",
+      "snippet": "What is a Time Series Foundation Model? Time Series Foundation Models (TSFMs) are large neural networks pre-trained on billions of observations across thousands of diverse time series."
+    },
+    {
+      "title": "tsfrm (The Society for Ridiculous Models) - Hugging Face",
+      "url": "https://huggingface.co/tsfrm",
+      "snippet": "AI & ML interests To make the most absurd and ridiculous models out there possible, and to have fun doing it."
+    },
+    {
+      "title": "tsfm-ai - GitHub",
+      "url": "https://github.com/tsfm-ai/",
+      "snippet": "TSFM.ai hosts every major open-weights time-series foundation model behind one consistent inference API — so you can benchmark, compare, and ship forecasts without managing GPU infrastructure or model weights."
+    },
+    {
+      "title": "Hosted Time Series Foundation Models — TSFM.ai",
+      "url": "https://tsfm.ai/models",
+      "snippet": "Browse hosted time series foundation models on TSFM.ai. Compare model families, parameter counts, architecture, context length, pricing, and deployment coverage across the catalog."
+    },
+    {
+      "title": "GitHub - MSMCI-lab/tsfm: Foundation Models for Time Series",
+      "url": "https://github.com/MSMCI-lab/tsfm",
+      "snippet": "Public notebooks and utilities for working with Time Series Foundation Models (TSFM) The core TSFM time series models have been made available on Hugging Face -- details can be found here."
+    }
+  ]
+}

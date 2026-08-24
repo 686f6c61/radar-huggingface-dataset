@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "MaxedOut/ComfyUI-Starter-Packs",
+  "slug": "maxedout-comfyui-starter-packs",
+  "author": "MaxedOut",
+  "url": "https://huggingface.co/MaxedOut/ComfyUI-Starter-Packs",
+  "created_at": "2025-04-12T18:18:35.000Z",
+  "updated_at": "2026-02-27T09:26:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "wan 2.2",
+    "text to image",
+    "upscale",
+    "inpainting",
+    "controlnet",
+    "depth",
+    "canny",
+    "redux",
+    "comfyui",
+    "flux",
+    "krea",
+    "sdxl",
+    "kontext",
+    "nunchuka",
+    "text-to-image",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 301,
+  "downloads_30d": 6963,
+  "trending_score": 7,
+  "parameters": 4762310656,
+  "parameters_human": "4.76B",
+  "storage_bytes": 612742059682,
+  "storage_human": "612.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MaxedOut/ComfyUI-Starter-Packs · Hugging Face",
+      "url": "https://huggingface.co/MaxedOut/ComfyUI-Starter-Packs",
+      "snippet": "📦 ComfyUI-Starter-Packs A curated vault of essential models for ComfyUI users."
+    },
+    {
+      "title": "ComfyUI-Starter-Packs: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/comfyui-starter-packs-maxedout",
+      "snippet": "Overview ComfyUI-Starter-Packs is a curated collection of pre-packaged model files organized for the ComfyUI node-based image generation framework, maintained by MaxedOut. Rather than being a model itself, this is an asset repository that consolidates essential diffusion models, control networks, upscalers, and restoration tools in a single location to eliminate the friction of hunting across ..."
+    },
+    {
+      "title": "MaxedOut/ComfyUI-Starter-Packs at main - Hugging Face",
+      "url": "https://huggingface.co/MaxedOut/ComfyUI-Starter-Packs/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Maxed-Out-99/ComfyUI-MaxedOut: Custom ComfyUI nodes used in ...",
+      "url": "https://github.com/Maxed-Out-99/ComfyUI-MaxedOut",
+      "snippet": "Model Storage Auto-Registration If you keep models outside ComfyUI/models (e.g. on another drive), point MaxedOut at that folder and every subfolder inside it (loras, checkpoints, vae, ...) gets auto-registered with ComfyUI at startup, just like ComfyUI/models/<type>."
+    },
+    {
+      "title": "ComfyUI-Auto-Installer-Assets vs ComfyUI-Starter-Packs — comparison ...",
+      "url": "https://www.aimodels.fyi/models/compare/comfyui-auto-installer-assets-umeairt-vs-comfyui-starter-packs-maxedout",
+      "snippet": "Overview ComfyUI-Starter-Packs is a curated collection of pre-packaged model files organized for the ComfyUI node-based image generation framework, maintained by MaxedOut. Rather than being a model itself, this is an asset repository that consolidates essential diffusion models, control networks, upscalers, and restoration tools in a single location to eliminate the friction of hunting across ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Tohirju/uz-punctuation-restore",
+  "slug": "tohirju-uz-punctuation-restore",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/uz-punctuation-restore",
+  "created_at": "2026-08-23T21:40:02.000Z",
+  "updated_at": "2026-08-23T21:40:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "tg"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "tajik",
+    "punctuation-restoration",
+    "token-classification",
+    "asr-postprocessing",
+    "tg",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:quantized:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1405086605,
+  "storage_human": "1.4 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju/tajik-punctuation-restore · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/tajik-punctuation-restore",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "punctuation-restoration · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/punctuation-restoration",
+      "snippet": "Easy-to-use Speech Toolkit including Self-Supervised Learning model, SOTA/Streaming ASR with punctuation, Streaming TTS with text frontend, Speaker Verification System, End-to-End Speech Translation and Keyword Spotting. Won NAACL2022 Best Demo Award. A SOTA Industrial-Grade All-in-One ASR system ..."
+    },
+    {
+      "title": "Restoring Punctuation in Uzbek Texts Using LLM&#x27;s Fine Tuning Approaches",
+      "url": "https://dl.acm.org/doi/10.1145/3726122.3726139",
+      "snippet": "Solving this problem requires the development of robust models capable of correctly recovering punctuation marks in texts written in languages with complex linguistic structures, such as Uzbek. This paper presents a new approach that uses fine-tuning models based on specially adapted transformers to restore punctuation marks in Uzbek texts."
+    },
+    {
+      "title": "How It Works | jparkerweb/punctuation-restore | DeepWiki",
+      "url": "https://deepwiki.com/jparkerweb/punctuation-restore/5-how-it-works",
+      "snippet": "System Architecture Overview The punctuation-restore system follows a modular pipeline architecture with clear separation between model management, text processing, and ML inference components."
+    },
+    {
+      "title": "felflare/bert-restore-punctuation · Hugging Face",
+      "url": "https://huggingface.co/felflare/bert-restore-punctuation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

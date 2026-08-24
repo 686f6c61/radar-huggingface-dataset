@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DelinaresMassates/ImThi",
+  "slug": "delinaresmassates-imthi",
+  "author": "DelinaresMassates",
+  "url": "https://huggingface.co/DelinaresMassates/ImThi",
+  "created_at": "2023-11-08T03:10:33.000Z",
+  "updated_at": "2026-08-23T23:53:11.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8956797361,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DelinaresMassates/ImThi · Hugging Face",
+      "url": "https://huggingface.co/DelinaresMassates/ImThi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DelinaresMassates/ImThi at main - Hugging Face",
+      "url": "https://huggingface.co/DelinaresMassates/ImThi/tree/main",
+      "snippet": "DelinaresMassates / ImThi like 0 License:openrail Model card FilesFiles and versions Community main ImThi 1 contributor History:48 commits DelinaresMassates Upload ep2.mp4 1e83413 verified3 days ago .gitattributes 3.01 kBUpload ep2.mp43 days ago A Revolução dos Bichos (1954) {trecho dublado} (1).mp4 Safe 340 MB LFS Upload A Revolução dos Bichos (1954) {trecho dublado} (1).mp410 months ago ..."
+    },
+    {
+      "title": "DelinaresMassates (Arthur Né do Nascimento) - Hugging Face",
+      "url": "https://huggingface.co/DelinaresMassates",
+      "snippet": "User profile of Arthur Né do Nascimento on Hugging Face"
+    },
+    {
+      "title": "DelinaresMassates/Datas · Hugging Face",
+      "url": "https://huggingface.co/DelinaresMassates/Datas",
+      "snippet": "DelinaresMassates / Datas like 0 Model card FilesFiles and versions Community No model card Downloads last month -"
+    },
+    {
+      "title": "ishameer/Imthi · Hugging Face",
+      "url": "https://huggingface.co/ishameer/Imthi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

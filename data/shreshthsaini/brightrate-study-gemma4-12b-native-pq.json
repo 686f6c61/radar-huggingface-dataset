@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shreshthsaini/brightrate-study-gemma4-12b-native-pq",
+  "slug": "shreshthsaini-brightrate-study-gemma4-12b-native-pq",
+  "author": "shreshthsaini",
+  "url": "https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-native-pq",
+  "created_at": "2026-08-24T08:20:16.000Z",
+  "updated_at": "2026-08-24T08:20:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344956672,
+  "storage_human": "345 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "BrightRate-LM/src/infer_gemma4.py at main · shreshthsaini ... - GitHub",
+      "url": "https://github.com/shreshthsaini/BrightRate-LM/blob/main/src/infer_gemma4.py",
+      "snippet": "Code and models for HDR video quality assessment. Contribute to shreshthsaini/BrightRate-LM development by creating an account on GitHub."
+    }
+  ]
+}

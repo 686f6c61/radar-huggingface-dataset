@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Roy229/nml7324-summarizer",
+  "slug": "roy229-nml7324-summarizer",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/nml7324-summarizer",
+  "created_at": "2026-08-23T11:42:37.000Z",
+  "updated_at": "2026-08-23T11:42:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "summarization",
+    "nml-registry",
+    "summarizer",
+    "deprecated",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Summarization Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=summarization",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Summarizer",
+      "url": "https://www.summarizer.org/",
+      "snippet": "AI Text Summarizer shortens the text while preserving all the main points that the text contains. Our AI paragraph summarizer ensures accuracy and maintains the original context while summarizing the text."
+    },
+    {
+      "title": "Falconsai/text_summarization · Hugging Face",
+      "url": "https://huggingface.co/Falconsai/text_summarization",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Text Summarizer - One-Click Summarization (Ad-Free)",
+      "url": "https://quillbot.com/summarize",
+      "snippet": "Quillbot&#x27;s free Summarizer simplifies long articles, research papers, or documents into short paragraphs with just the key points. Create a free AI summary now."
+    },
+    {
+      "title": "ai-summarizer · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-summarizer",
+      "snippet": "The main goal of an AI-Powered News Summarizer is to assist users in quickly understanding the main points and essential information from a large volume of news articles or textual content. By automatically summarizing news articles, it saves time and effort by providing users with a brief overview without having to read the entire article."
+    }
+  ]
+}

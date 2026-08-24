@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Dsg2/LS-92M-A22M-GGUF",
+  "slug": "dsg2-ls-92m-a22m-gguf",
+  "author": "Dsg2",
+  "url": "https://huggingface.co/Dsg2/LS-92M-A22M-GGUF",
+  "created_at": "2026-08-24T08:45:38.000Z",
+  "updated_at": "2026-08-24T08:53:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:Dsg2/LS-92M-A22M",
+    "base_model:quantized:Dsg2/LS-92M-A22M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102363648,
+  "parameters_human": "102.4M",
+  "storage_bytes": 204618056,
+  "storage_human": "205 MB",
+  "base_model": "Dsg2/LS-92M-A22M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dsg2/LS-92M-A22M · Hugging Face",
+      "url": "https://huggingface.co/Dsg2/LS-92M-A22M",
+      "snippet": "LS-92M-A22M Miniature mixture of experts model with top-1 routing. Trained entirely on a 1660 super."
+    },
+    {
+      "title": "LS - a Dsg2 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Dsg2/ls",
+      "snippet": "LaoShu 🐭: cute little models, no practicality but you still keep them anyways"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: Kimi K3, deepseek v4 ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Want to see a complete agent built entirely on local, open-weight ..."
+    },
+    {
+      "title": "local-llm-guide/04-advanced-usage/gguf-modelfile.md at main - GitHub",
+      "url": "https://github.com/Lingdas1/local-llm-guide/blob/main/04-advanced-usage/gguf-modelfile.md",
+      "snippet": "GGUF (GPT-Generated Unified Format) is the standard file format for running LLMs locally. Think of it as the .mp3 of AI models: Compressed — 70-85% smaller than the original float16 weights Fast — optimized for CPU and GPU inference Portable — one file contains the entire model Metadata-rich — includes tokenizer, chat template, and model config Every ollama pull downloads a GGUF file ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD21321312SAD12/MyAwesomeModel-best-checkpoint",
+  "slug": "asd21321312sad12-myawesomemodel-best-checkpoint",
+  "author": "ASD21321312SAD12",
+  "url": "https://huggingface.co/ASD21321312SAD12/MyAwesomeModel-best-checkpoint",
+  "created_at": "2026-08-24T12:22:21.000Z",
+  "updated_at": "2026-08-24T13:08:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAD12D/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/SAD12D/MyAwesomeModel",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "sfsfff22/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sfsfff22/MyAwesomeModel",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "GitHub - alvinreal/awesome-opensource-ai: Curated list of the best ...",
+      "url": "https://github.com/alvinreal/awesome-opensource-ai",
+      "snippet": "About this list Awesome Open Source AI is a curated list of open-source projects for people building with AI. The goal is to help readers find useful models, libraries, tools, infrastructure, datasets, and learning resources without sorting through a directory dump. Projects do not need a minimum number of GitHub stars to be included."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

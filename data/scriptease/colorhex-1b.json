@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Scriptease/colorhex-1b",
+  "slug": "scriptease-colorhex-1b",
+  "author": "Scriptease",
+  "url": "https://huggingface.co/Scriptease/colorhex-1b",
+  "created_at": "2026-08-23T15:33:05.000Z",
+  "updated_at": "2026-08-23T15:42:34.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "es",
+    "el",
+    "hu",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma3_text",
+    "text-generation",
+    "color",
+    "llama.cpp",
+    "lora",
+    "distillation",
+    "conversational",
+    "de",
+    "es",
+    "el",
+    "hu",
+    "tr",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 3102503391,
+  "storage_human": "3.1 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "illustrator-scripts/md/Color.md at master · creold ... - GitHub",
+      "url": "https://github.com/creold/illustrator-scripts/blob/master/md/Color.md",
+      "snippet": "Some powerfull JSX scripts for extending Adobe Illustrator - creold/illustrator-scripts"
+    },
+    {
+      "title": "A Color Speaks More Than a Thousand Words | Scriptease",
+      "url": "https://scripteasesite.wordpress.com/2026/07/30/a-color-speaks-more-than-a-thousand-words/",
+      "snippet": "It gathered the names still missing a color, asked the model twenty at a time, and saved each answer in the project&#x27;s memory file. Ask once, remember forever. An AI in production, unsupervised, in 2023 — the year everyone worried about AI confidently making things up? Here I could."
+    },
+    {
+      "title": "UNfilteredAI-1B - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI/UNfilteredAI-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Illustrator script—Exports CMYK, RGB, and Hex values for all the color ...",
+      "url": "https://gist.github.com/jmsdnns/f170599dc98f036ba72a2618797f525d",
+      "snippet": "Illustrator script—Exports CMYK, RGB, and Hex values for all the color swatches in a document. CMYK to RGB conversion using Adobe&#x27;s default US Web Coated SWOP2 to sRGB."
+    },
+    {
+      "title": "GitHub - sky-chaser-high/adobe-illustrator-scripts: This is a ...",
+      "url": "https://github.com/sky-chaser-high/adobe-illustrator-scripts",
+      "snippet": "Adobe Illustrator Scripts This is a collection of scripts for Adobe Illustrator. I created it with simplicity and ease of use in mind. Click the titles to jump to learn more about the script. If you find a script that interests you, please download it from ."
+    }
+  ]
+}

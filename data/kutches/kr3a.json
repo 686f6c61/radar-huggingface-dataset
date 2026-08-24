@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Kutches/Kr3a",
+  "slug": "kutches-kr3a",
+  "author": "Kutches",
+  "url": "https://huggingface.co/Kutches/Kr3a",
+  "created_at": "2026-06-24T13:39:50.000Z",
+  "updated_at": "2026-08-23T16:24:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 69,
+  "downloads_30d": 4639,
+  "trending_score": 0,
+  "parameters": 12895570508,
+  "parameters_human": "12.90B",
+  "storage_bytes": 965247231583,
+  "storage_human": "965.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kr3a: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/kr3a-kutches",
+      "snippet": "Overview Kr3a is a text-to-image model maintained by Kutches. The platform provides no technical description of the model&#x27;s architecture, training data, parameter count, or resolution capabilities. With 13,976 downloads, the model occupies a niche position in the text-to-image landscape, but without access to its README or model card, practitioners cannot determine fundamental specifications ..."
+    },
+    {
+      "title": "Kutches/Kr3a · Hugging Face",
+      "url": "https://huggingface.co/Kutches/Kr3a",
+      "snippet": "Kutches / Kr3a like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 93 GGUF Model size 13B params Architecture krea2 Hardware compatibility Log In to add your hardware 4-bit Q4_K_M7.49 GB 5-bit Q5_K_S8.82 GB Q5_K_M8.87 GB Q5_K_M8.87 GB 6-bit Q6_K10.6 GB 16-bit F16254 MB Inference Providers NEW This model isn&#x27;t deployed by any ..."
+    },
+    {
+      "title": "Kutches/Kr3a at c28120b6ebfff2629d475dcde0bbdbf45cbc06e9 - Hugging Face",
+      "url": "https://huggingface.co/Kutches/Kr3a/tree/c28120b6ebfff2629d475dcde0bbdbf45cbc06e9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kr3a · Model · Inferix",
+      "url": "https://inferix.co/models/Kutches/Kr3a",
+      "snippet": "Kr3a — an open model on Inferix. Explore files, versions, and one-click deployment. 14,982 downloads · 54 likes."
+    },
+    {
+      "title": "Kutches Kr3a Huggingface Model Kutches Kr3a | Sweet Tea Studio",
+      "url": "https://sweettea.co/fr/resources/kutches-kr3a-huggingface-model-kutches-kr3a",
+      "snippet": "Explorez Kutches Kr3a Huggingface Model Kutches Kr3a dans le répertoire Sweet Tea Resources, y compris la confiance, la disponibilité et les exigences du compagnon."
+    }
+  ]
+}

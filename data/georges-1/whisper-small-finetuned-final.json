@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "georges-1/whisper-small-finetuned-final",
+  "slug": "georges-1-whisper-small-finetuned-final",
+  "author": "georges-1",
+  "url": "https://huggingface.co/georges-1/whisper-small-finetuned-final",
+  "created_at": "2026-08-23T21:10:20.000Z",
+  "updated_at": "2026-08-23T21:10:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vapari/whisper-small-fi · Hugging Face",
+      "url": "https://huggingface.co/vapari/whisper-small-fi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Upcoming AI Models 2026: Full Release Tracker - aitoolsrecap.com",
+      "url": "https://aitoolsrecap.com/Blog/upcoming-ai-models-2026-release-tracker",
+      "snippet": "Preview or rumoured models go in the \"In Preview\" section with what is still missing clearly noted. Sources: AI Release Tracker · LLM Gateway timeline · Evertune model tracker · LLM Stats · FelloAI best models August 2026 · Related: Today&#x27;s AI news → STILL DECIDING WHICH ASSISTANT TO PAY FOR? Six of them cost roughly the same."
+    },
+    {
+      "title": "Who Made Ox Alpha? the Mystery AI Is Turning Heads in Silicon Valley ...",
+      "url": "https://www.businessinsider.com/ox-alpha-ai-model-mystery-2026-8?op=1",
+      "snippet": "The new Ox Alpha AI model is turning heads in Silicon Valley, but no one knows its origin, much like this stone carving on display at the Shanxi Bronze Museum in China."
+    }
+  ]
+}

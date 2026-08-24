@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Abliterated-SFT-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-abliterated-sft-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-SFT-i1-GGUF",
+  "created_at": "2026-08-23T15:33:40.000Z",
+  "updated_at": "2026-08-24T04:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliteration",
+    "sft",
+    "qwen3.8",
+    "qwen3_5",
+    "text-generation",
+    "vllm",
+    "en",
+    "base_model:azukivc/Qwen3.8-27B-Abliterated-SFT",
+    "base_model:quantized:azukivc/Qwen3.8-27B-Abliterated-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553879360,
+  "storage_human": "218.6 GB",
+  "base_model": "azukivc/Qwen3.8-27B-Abliterated-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF like 0 Transformers GGUF English qwen3.8 qwen 27b bf16 dense vision-language derisked research security-research red-teaming coding tool-calling long-context public-research-preview imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "Qwen3.8-27B abliterated AWQ-MTP quantization | Todd Wolven",
+      "url": "https://toddwolven.com/projects/qwen38-awq-quantization",
+      "snippet": "W4A16 AWQ quantization of an abliterated Qwen3.8-27B with the MTP speculative-decoding module preserved - method, benchmarks on 2x RTX 3090, and four reproduction traps."
+    },
+    {
+      "title": "Qwen3.8-27B-abliterated-MTP-GGUF | Genaihub",
+      "url": "https://genaihub.net/agents/hf-model-hotdogs-qwen3-8-27b-abliterated-mtp-gguf",
+      "snippet": "Qwen3.8-27B-abliterated-MTP-GGUF is an open-weight text-generation model with roughly 27B parameters published by hotdogs on the Hugging Face Hub. It has 21,373 downloads."
+    },
+    {
+      "title": "Qwen3.8-27B-abliterated-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/douyamv/Qwen3.8-27B-abliterated-GGUF",
+      "snippet": "What is Abliteration? This model has the \"refusal direction\" removed from its weights, allowing unrestricted conversations. The abliteration technique projects out the refusal direction from self_attn.o_proj and mlp.down_proj weights across all layers. See douyamv/Qwen3.8-27B-abliterated for details. Quickstart llama.cpp Ollama Create a Modelfile:"
+    }
+  ]
+}

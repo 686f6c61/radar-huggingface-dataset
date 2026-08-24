@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4-epoch3",
+  "slug": "localized-ft-llama-3-1-8b-old-bird-names-second-third-v2-sft-seed4-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4-epoch3",
+  "created_at": "2026-08-23T23:35:46.000Z",
+  "updated_at": "2026-08-23T23:37:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-old-bird-names-second-third-v2-sft - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft",
+      "snippet": "Llama-3.1-8B-old-bird-names-second-third-v2-sft ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-old-bird-names-second-third-v2-sft-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-epoch3",
+      "snippet": "Llama-3.1-8B-old-bird-names-second-third-v2-sft-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "How to Run AI Models Locally in 2026 (8 Tested Offline Tools)",
+      "url": "https://aithinkerlab.com/run-ai-models-locally-offline-privacy-guide/",
+      "snippet": "Run AI models locally in 2026 — free, offline, no GPU. We tested 8 tools (Ollama, LM Studio, GPT4All, Jan) + the best models for 8GB RAM. Updated June."
+    },
+    {
+      "title": "Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed4-epoch3",
+      "url": "https://friendli.ai/models/localized-ft/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed4-epoch3",
+      "snippet": "Run Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed4-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "10 Best LLM Tools To Run Models Locally (August 2026) - Unite.AI",
+      "url": "https://www.unite.ai/best-llm-tools-to-run-models-locally/",
+      "snippet": "Developers, privacy-conscious teams, hobbyists, and small businesses can now download capable open models, run them on a laptop or workstation, connect them to documents, expose local APIs, and build private AI workflows without sending every prompt to a hosted model provider. The best local LLM tools solve different parts of that workflow."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "manak0",
   "url": "https://huggingface.co/manak0/Detect-car-wash-winner",
   "created_at": "2026-05-26T08:19:17.000Z",
-  "updated_at": "2026-08-20T12:14:33.000Z",
+  "updated_at": "2026-08-23T12:14:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 625346577,
-  "storage_human": "625 MB",
+  "storage_bytes": 635189323,
+  "storage_human": "635 MB",
   "base_model": null,
   "formats": [
     "onnx"

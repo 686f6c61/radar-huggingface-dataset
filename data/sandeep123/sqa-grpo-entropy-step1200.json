@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-entropy-step1200",
+  "slug": "sandeep123-sqa-grpo-entropy-step1200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-entropy-step1200",
+  "created_at": "2026-08-24T09:10:09.000Z",
+  "updated_at": "2026-08-24T09:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRPO - Reinforcement Learning Crashcourse",
+      "url": "https://finger-bone.github.io/rl-crashcourse/05/",
+      "snippet": "RL Ch5 GRPO Introduction to GRPO GRPO (Group Relative Policy Optimization) is a novel reinforcement learning method proposed by DeepSeek, specifically designed for large language model (LLM) reinforcement learning."
+    },
+    {
+      "title": "sandeep123 (Kumar) - Hugging Face",
+      "url": "https://huggingface.co/sandeep123",
+      "snippet": "User profile of Kumar on Hugging Face"
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Zhang_E-GRPO_High_Entropy_Steps_Drive_Effective_Reinforcement_Learning_for_Flow_CVPRF_2026_paper.html",
+      "snippet": "We observe that the high entropy steps enable more efficient and effective exploration while the low entropy steps result in undistinguished roll-outs. To this end, we propose E-GRPO, an entropy aware Group Relative Policy Optimization to increase the entropy of SDE sampling steps."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - EntroProtocol/entropy-ai: First AI model with NO parameters ...",
+      "url": "https://github.com/EntroProtocol/entropy-ai",
+      "snippet": "What Is This? Entropy AI is a fundamentally new approach to artificial intelligence. Instead of learning patterns from massive datasets (like GPT-4, Llama, etc.), it reasons directly from the mathematical structure of information using information theory."
+    }
+  ]
+}

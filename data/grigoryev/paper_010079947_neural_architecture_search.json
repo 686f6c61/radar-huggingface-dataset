@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "grigoryev/paper_010079947_neural_architecture_search",
+  "slug": "grigoryev-paper_010079947_neural_architecture_search",
+  "author": "grigoryev",
+  "url": "https://huggingface.co/grigoryev/paper_010079947_neural_architecture_search",
+  "created_at": "2026-08-23T08:18:55.000Z",
+  "updated_at": "2026-08-23T08:19:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "compact",
+    "critical",
+    "first-person-plural",
+    "footnote",
+    "long-detailed",
+    "neural-architecture-search",
+    "plain-text",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://huggingface.co/papers/2301.08727",
+      "snippet": "Join the discussion on this paper page Neural Architecture Search: Insights from 1000 Papers"
+    },
+    {
+      "title": "Systematic review on neural architecture search - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-11058-w",
+      "snippet": "Within the realm of AutoML, Neural Architecture Search (NAS) has emerged as a powerful technique that automates the design of neural network architectures, the core components of ML models. It has recently gained significant attraction due to its capability to discover novel and efficient architectures that surpass human-designed counterparts."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://ar5iv.labs.arxiv.org/html/2301.08727",
+      "snippet": "Neural architecture search (NAS), the process of automating the design of neural architectures for a given task, is an inevitable next step in automating machine learning and has already outpaced the best human-designed architectures on many tasks."
+    }
+  ]
+}

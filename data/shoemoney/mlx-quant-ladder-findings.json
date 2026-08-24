@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "shoemoney/mlx-quant-ladder-findings",
+  "slug": "shoemoney-mlx-quant-ladder-findings",
+  "author": "shoemoney",
+  "url": "https://huggingface.co/shoemoney/mlx-quant-ladder-findings",
+  "created_at": "2026-08-24T01:12:32.000Z",
+  "updated_at": "2026-08-24T01:12:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "turboquant-mlx-full · PyPI",
+      "url": "https://pypi.org/project/turboquant-mlx-full/",
+      "snippet": "turboquant-doctor runs the same projection plus a read-only readiness check — model files, tokenizer, quantization block, mlx/mlx-lm imports, machine limits — with stable check ids and exit codes (0 ok/warn, 1 won&#x27;t fit or files missing, 2 bad usage)."
+    },
+    {
+      "title": "GitHub - bmgaf/mlx-quant",
+      "url": "https://github.com/bmgaf/mlx-quant",
+      "snippet": "Low-bit weight quantization on Apple MLX. The contribution is a matmul-decodable trellis code: a linear generator matrix makes every reproduction value linear in the code bits, so decode needs no codebook lookup and the ±1 incoherence rotation commutes through it."
+    },
+    {
+      "title": "Unlimited-OCR — MLX quants with measured eval ladder",
+      "url": "https://huggingface.co/collections/vimalnakrani/unlimited-ocr-mlx-quants-with-measured-eval-ladder",
+      "snippet": "MLX quants of baidu/Unlimited-OCR: measured CER/WER ladder vs BF16. Includes the BF16 reference conversion the ladder is measured against."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "atics/agent",
+  "slug": "atics-agent",
+  "author": "atics",
+  "url": "https://huggingface.co/atics/agent",
+  "created_at": "2026-08-24T15:15:25.000Z",
+  "updated_at": "2026-08-24T15:15:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to the Agentic AI adoption maturity model",
+      "url": "https://learn.microsoft.com/en-us/agents/adoption-maturity-model/",
+      "snippet": "Learn why organizations need an Agentic AI adoption maturity model to scale agents responsibly and effectively."
+    },
+    {
+      "title": "What Is Agentic AI? Definition, 6 Levels & Examples (2026)",
+      "url": "https://agentic.ai/what-is-agentic-ai",
+      "snippet": "How agentic AI actually works: the loop Every agentic system runs some version of the same loop. The specifics differ — what model, what tools, what memory — but the shape is consistent. This loop is what separates agents from chat."
+    },
+    {
+      "title": "Agentic AI Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/agentic-ai-tutorial/",
+      "snippet": "Agentic AI is a branch of artificial intelligence focused on building autonomous, intelligent agents capable of making decisions, interacting with other agents and completing complex tasks with minimal human intervention. It combines LLMs, multi-agent systems and workflow orchestration to build advanced AI applications."
+    },
+    {
+      "title": "The agentic organization: A new operating model for AI | McKinsey",
+      "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era",
+      "snippet": "AI is bringing the largest organizational paradigm shift since the industrial and digital revolutions (see sidebar, \"The evolution of operating models\"). This new paradigm unites humans and AI agents —both virtual and physical—to work side by side at scale at near-zero marginal cost. We call it the agentic organization."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    }
+  ]
+}

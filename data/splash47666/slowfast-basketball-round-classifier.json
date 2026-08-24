@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Splash47666/slowfast-basketball-round-classifier",
+  "slug": "splash47666-slowfast-basketball-round-classifier",
+  "author": "Splash47666",
+  "url": "https://huggingface.co/Splash47666/slowfast-basketball-round-classifier",
+  "created_at": "2026-08-23T12:01:44.000Z",
+  "updated_at": "2026-08-23T12:25:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "pytorchvideo",
+    "slowfast",
+    "video-classification",
+    "basketball",
+    "sports",
+    "binary-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135159229,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/SlowFast: PySlowFast: video understanding ...",
+      "url": "https://github.com/facebookresearch/SlowFast",
+      "snippet": "PySlowFast: video understanding codebase from FAIR for reproducing state-of-the-art video models. - facebookresearch/SlowFast"
+    },
+    {
+      "title": "AI Basketball Analysis - GitHub",
+      "url": "https://github.com/chonyy/AI-basketball-analysis",
+      "snippet": "AI Basketball Analysis leverages artificial intelligence to break down basketball shots by detecting player movements, shot accuracy, and pose data. It uses the popular OpenPose framework for human pose estimation. Whether you&#x27;re a developer or sports analyst, this project helps explore how AI can automate and enhance basketball analysis."
+    },
+    {
+      "title": "Basketball Analytics - AI Project",
+      "url": "https://hetuvpatel.github.io/BasketVision/",
+      "snippet": "This project showcases a real-time AI-powered system designed to automate basketball gameplay analysis. It detects players, ball, and rim, tracks movements, classifies teams, and annotates gameplay actions efficiently using Deep Learning, UMAP, KMeans, and advanced visualization techniques."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "pytorchvideo.models.slowfast — PyTorchVideo documentation",
+      "url": "https://pytorchvideo.readthedocs.io/en/latest/api/models/slowfast.html",
+      "snippet": "Build SlowFast model for video detection, SlowFast model involves a Slow pathway, operating at low frame rate, to capture spatial semantics, and a Fast pathway, operating at high frame rate, to capture motion at fine temporal resolution."
+    }
+  ]
+}

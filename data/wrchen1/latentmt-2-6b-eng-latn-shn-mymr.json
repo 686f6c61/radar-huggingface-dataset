@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wrchen1/LatentMT-2.6B-eng-latn-shn-mymr",
+  "slug": "wrchen1-latentmt-2-6b-eng-latn-shn-mymr",
+  "author": "wrchen1",
+  "url": "https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-shn-mymr",
+  "created_at": "2026-08-24T00:58:21.000Z",
+  "updated_at": "2026-08-24T00:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "machine-translation",
+    "research",
+    "text-generation",
+    "arxiv:2607.18618",
+    "base_model:ByteDance/Ouro-2.6B-Thinking",
+    "base_model:adapter:ByteDance/Ouro-2.6B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121200208,
+  "storage_human": "121 MB",
+  "base_model": "ByteDance/Ouro-2.6B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LatentMT/LatentMT-2.6B-eng-latn-shn-mymr · Hugging Face",
+      "url": "https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-shn-mymr",
+      "snippet": "LatentMT-2.6B-eng-latn-shn-mymr This repository includes the LoRA adapter checkpoint for eng_Latn-shn_Mymr from the paper LatentMT: Machine Translation with Latent Reasoning."
+    },
+    {
+      "title": "LatentMT/LatentMT-2.6B-eng-latn-dik-latn · Hugging Face",
+      "url": "https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-dik-latn",
+      "snippet": "LatentMT-2.6B-eng-latn-dik-latn This repository includes the LoRA adapter checkpoint for eng_Latn-dik_Latn from the paper LatentMT: Machine Translation with Latent Reasoning."
+    },
+    {
+      "title": "LatentMT: Machine Translation with Latent Reasoning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.18618",
+      "snippet": "We intro-duce LatentMT, the first systematic study of latent-reasoning LoopLMs for machine transla-tion. LatentMT adapts a small 2.6B-parameter backbone model with lightweight training. Across 32 translation directions spanning high-, mid-, and low-resource languages, LatentMT achieves performance comparable to models three to five times larger."
+    },
+    {
+      "title": "LatentMT: Machine Translation with Latent Reasoning - arXiv.org",
+      "url": "https://arxiv.org/html/2607.18618v1",
+      "snippet": "We introduce LatentMT, the first systematic study of latent-reasoning LoopLMs for machine translation. LatentMT adapts a small 2.6B-parameter backbone model with lightweight training. Across 32 translation directions spanning high-, mid-, and low-resource languages, LatentMT achieves performance comparable to models three to five times larger."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

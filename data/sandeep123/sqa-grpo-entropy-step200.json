@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-entropy-step200",
+  "slug": "sandeep123-sqa-grpo-entropy-step200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-entropy-step200",
+  "created_at": "2026-08-24T09:02:03.000Z",
+  "updated_at": "2026-08-24T09:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Post training an LLM for reasoning with GRPO in TRL · Hugging Face",
+      "url": "https://huggingface.co/learn/cookbook/fine_tuning_llm_grpo_trl",
+      "snippet": "In this notebook, we&#x27;ll guide you through the process of post-training a Large Language Model (LLM) using Group Relative Policy Optimization (GRPO), a method introduced in the DeepSeekMath paper. GRPO is particularly effective for scaling test-time compute for extended reasoning, making it an ideal approach for solving complex tasks, such as mathematical problem-solving."
+    },
+    {
+      "title": "GRPO Trainer · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/grpo_trainer",
+      "snippet": "GRPO Trainer Overview TRL supports the GRPO Trainer for training language models, as described in the paper DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models by Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Mingchuan Zhang, Y. K. Li, Y. Wu, Daya Guo. The abstract from the paper is the following: Mathematical reasoning poses a significant ..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "GitHub - shengjun-zhang/VisualGRPO: E-GRPO: High Entropy Steps Drive ...",
+      "url": "https://github.com/shengjun-zhang/VisualGRPO",
+      "snippet": "E-GRPO (Entropy-Guided GRPO) is a novel reinforcement learning approach for flow-based diffusion models. Our key insight is that high-entropy denoising steps are more critical for policy optimization, and we propose a merging-step strategy that focuses training on these important steps."
+    }
+  ]
+}

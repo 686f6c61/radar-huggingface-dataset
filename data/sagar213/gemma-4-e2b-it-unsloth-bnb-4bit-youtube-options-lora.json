@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sagar213/gemma-4-E2B-it-unsloth-bnb-4bit-youtube-options-lora",
+  "slug": "sagar213-gemma-4-e2b-it-unsloth-bnb-4bit-youtube-options-lora",
+  "author": "sagar213",
+  "url": "https://huggingface.co/sagar213/gemma-4-E2B-it-unsloth-bnb-4bit-youtube-options-lora",
+  "created_at": "2026-08-24T12:27:00.000Z",
+  "updated_at": "2026-08-24T12:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4_text",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791560,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/gemma-4",
+      "snippet": "Gemma 4 is Google&#x27;s new model family including including E2B, E4B, 26B-A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Models Gemma 4 - How to Run Locally Run Google&#x27;s new Gemma 4 models locally, including E2B, E4B, 26B A4B, and 31B."
+    },
+    {
+      "title": "How to Fine-Tune Gemma 4 with Unsloth: Step-by-Step Guide",
+      "url": "https://avenchat.com/blog/fine-tune-gemma-4-with-unsloth",
+      "snippet": "A practical Gemma 4 fine-tuning guide using Unsloth, covering model choice, dataset format, LoRA and QLoRA setup, multimodal training, and GGUF export."
+    },
+    {
+      "title": "Gemma 4 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4/train",
+      "snippet": "You can now train Google&#x27;s Gemma 4 12B, E2B, E4B, 26B-A4B and 31B with Unsloth. Unsloth supports all vision, text, audio and RL fine-tuning for Gemma 4."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Scarlett-v2.0-31B-i1-GGUF",
+  "slug": "mradermacher-dark-scarlett-v2-0-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v2.0-31B-i1-GGUF",
+  "created_at": "2026-08-23T10:43:21.000Z",
+  "updated_at": "2026-08-23T12:57:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "en",
+    "base_model:ReadyArt/Dark-Scarlett-v2.0-31B",
+    "base_model:quantized:ReadyArt/Dark-Scarlett-v2.0-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 334809574848,
+  "storage_human": "334.8 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-v2.0-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Quantized Models for ReadyArt/Dark-Scarlett-v2.0-31B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ReadyArt/Dark-Scarlett-v2.0-31B",
+      "snippet": "Model Tree Reset ReadyArt/Dark-Scarlett-v2.-31B Adapters Finetunes Merges Apps Inference Providers Groq Novita Cerebras SambaNova Nscale fal Hyperbolic Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed Misc Apply filters"
+    },
+    {
+      "title": "ReadyArt/Dark-Scarlett-v2.0-31B | LLMs .INFO",
+      "url": "https://llms.info/models/readyart-dark-scarlett-v2-0-31b-1324",
+      "snippet": "safetensors, gemma4, gemma-4, roleplay, conversational"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-signed-kda-spread-no-silu-on-keys",
+  "slug": "jaisidhsingh-signedkda-signed-kda-spread-no-silu-on-keys",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-signed-kda-spread-no-silu-on-keys",
+  "created_at": "2026-08-23T11:32:34.000Z",
+  "updated_at": "2026-08-24T12:00:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "signed_kda",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 344865616,
+  "parameters_human": "344.9M",
+  "storage_bytes": 1379522520,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - MoonshotAI/FlashKDA: FlashKDA: high-performance Kimi Delta ...",
+      "url": "https://github.com/MoonshotAI/FlashKDA",
+      "snippet": "FlashKDA: Flash Kimi Delta Attention — high-performance KDA kernels built on CUTLASS"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API keys required to view. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources. Just want to call them? Skip the ..."
+    },
+    {
+      "title": "Jaisidh Singh (@jaisidhsingh) / Posts / X",
+      "url": "https://x.com/jaisidhsingh",
+      "snippet": "Prime-RL is a large-scale model training library that integrates with verifiers and their infra platform. It contains implementations for RL algorithms with Parameter Efficient LORA finetuning!"
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

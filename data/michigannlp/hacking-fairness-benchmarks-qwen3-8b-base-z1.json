@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MichiganNLP/hacking-fairness-benchmarks-qwen3-8b-base-z1",
+  "slug": "michigannlp-hacking-fairness-benchmarks-qwen3-8b-base-z1",
+  "author": "MichiganNLP",
+  "url": "https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen3-8b-base-z1",
+  "created_at": "2026-08-23T13:25:13.000Z",
+  "updated_at": "2026-08-23T13:25:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "fairness",
+    "bbq",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1746560080,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3/qwen3_benchmark_evaluation_guide.md at main - GitHub",
+      "url": "https://github.com/HarleyCoops/Qwen3/blob/main/qwen3_benchmark_evaluation_guide.md",
+      "snippet": "Qwen3-235B-A22B Benchmarking and Evaluation Guide This guide outlines a comprehensive approach to benchmarking and evaluating the Qwen3-235B-A22B model across different domains and capabilities. It specifically focuses on evaluating the model&#x27;s performance in both thinking and non-thinking modes, which is a unique feature of the Qwen3 series."
+    },
+    {
+      "title": "Qwen: Qwen3 8B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3-8b-04-28",
+      "snippet": "Qwen3-8B, a dense 8.2B parameter causal language model, demonstrates strong reliability with an 89% success rate across benchmarks, consistently providing usable responses. While it tends to have longer response times, ranking in the 18th percentile for speed, it offers cost-effective solutions, placing in the 69th percentile for price."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks: Full Table, Now #1 Legal Agent",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-benchmarks",
+      "snippet": "All 25 official Qwen3.8-27B scores from the Aug 14 model card, plus #1 open-weight on Harvey&#x27;s Legal Agent benchmark — vendor vs independent, labeled."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    }
+  ]
+}

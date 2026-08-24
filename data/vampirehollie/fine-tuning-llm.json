@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vampirehollie/Fine-Tuning-LLM",
+  "slug": "vampirehollie-fine-tuning-llm",
+  "author": "vampirehollie",
+  "url": "https://huggingface.co/vampirehollie/Fine-Tuning-LLM",
+  "created_at": "2026-08-24T08:26:52.000Z",
+  "updated_at": "2026-08-24T08:42:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An ...",
+      "url": "https://arxiv.org/html/2408.13296v1",
+      "snippet": "Fine-tuning a Large Language Model (LLM) starts with adapting the pre-trained model for specific tasks by updating its parameters using a new dataset. This involves cleaning and formatting the dataset to match the target task, such as instruction tuning, sentiment analysis, or topic mapping."
+    },
+    {
+      "title": "Fine Tuning Large Language Model (LLM) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/fine-tuning-large-language-model-llm/",
+      "snippet": "Fine-tuning refers to the process of taking a pre-trained model and adapting it to a specific task by training it further on a smaller, domain-specific dataset."
+    },
+    {
+      "title": "Fine Tuning LLMs: Complete Guide for 2026 - solguruz.com",
+      "url": "https://solguruz.com/generative-ai/fine-tuning-llm/",
+      "snippet": "Explore More AI Topics Key Takeaway Fine-tuning an LLM adapts a pre-trained model to a specific task or domain without training from scratch. The most popular methods include SFT (Supervised Fine-Tuning), LoRA, QLoRA, and RLHF. Parameter-Efficient Fine-Tuning (PEFT) techniques like LoRA make fine-tuning possible on consumer-grade GPUs."
+    },
+    {
+      "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An ...",
+      "url": "https://arxiv.org/pdf/2408.13296v1",
+      "snippet": "This paper explores fine-tuning of Large Language Models, covering data strategies, model optimization, and hyperparameter tuning for practical applications in AI."
+    },
+    {
+      "title": "Awesome LLMs Fine-Tuning - GitHub",
+      "url": "https://github.com/Curated-Awesome-Lists/awesome-llms-fine-tuning",
+      "snippet": "Fine-Tune LLMs in 2024 with Hugging Face: TRL and Flash Attention 🤗: This blog post provides a comprehensive guide to fine-tune LLMs (e.g., Llama 2), using hugging face trl and flash attention on consumer size GPUs (24GB). Complete Guide to LLM Fine Tuning for Beginners 📚: A comprehensive guide that explains the process of fine-tuning a pre-trained model for new tasks, covering key ..."
+    }
+  ]
+}

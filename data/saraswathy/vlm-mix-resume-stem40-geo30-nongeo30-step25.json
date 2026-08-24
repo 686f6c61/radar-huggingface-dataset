@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-stem40-geo30-nongeo30-step25",
+  "slug": "saraswathy-vlm-mix-resume-stem40-geo30-nongeo30-step25",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-stem40-geo30-nongeo30-step25",
+  "created_at": "2026-08-24T09:06:42.000Z",
+  "updated_at": "2026-08-24T09:09:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417187,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-stem60-geometry40-direct-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100",
+      "snippet": "VLM-Mix Direct STEM60 Geometry40 (Step 100) The directly trained 60% broader-STEM and 40% geometry LoRA used as the target mixture policy. This is a PEFT LoRA adapter for Qwen/Qwen3-VL-4B-Instruct, pinned during evaluation to base revision ebb281ec70b05090aa6165b016eac8ec08e71b17."
+    },
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "vlm-mix-stem60-geometry40-direct-step100 - friendli.ai",
+      "url": "https://friendli.ai/models/Saraswathy/vlm-mix-stem60-geometry40-direct-step100",
+      "snippet": "Run vlm-mix-stem60-geometry40-direct-step100 with FriendliAI inference. The directly trained 60% broader-STEM and 40% geometry LoRA used as the target mixture…"
+    },
+    {
+      "title": "Saraswathy Amjith - saraamjith.com",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "A self-questioning framework that trains a VLM to decompose compositional visual questions into sub-questions using GRPO, without any reasoning demonstrations. Applied to a 3B-parameter model on CLEVR and A-OKVQA, both self-questioning and standard RL substantially improve accuracy over the untrained model."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image: Qwen-Image is a powerful image generation ...",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "snippet": "Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing. - QwenLM/Qwen-Image"
+    }
+  ]
+}

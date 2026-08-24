@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vineethap14hf/tds-carbon-card",
+  "slug": "vineethap14hf-tds-carbon-card",
+  "author": "vineethap14hf",
+  "url": "https://huggingface.co/vineethap14hf/tds-carbon-card",
+  "created_at": "2026-08-23T06:08:48.000Z",
+  "updated_at": "2026-08-23T06:11:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "AdityaV26/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/AdityaV26/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA A100 (3 GPUs) Training Mode: fine-tuning Region: ap-southeast1 GPU Hours: 421.5h (PUE: 1.45) Total Energy: 733.41 kWh CO₂ Emissions: 352.037 kg ..."
+    },
+    {
+      "title": "GitHub - huggingface/carbon: The home of Carbon Genomic Foundation Model",
+      "url": "https://github.com/huggingface/carbon",
+      "snippet": "The home of Carbon Genomic Foundation Model 🧬. Contribute to huggingface/carbon development by creating an account on GitHub."
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    },
+    {
+      "title": "HuggingFace APIs - Open Source AI Models and Datasets",
+      "url": "https://www.huggingfaceapi.com/",
+      "snippet": "Explore and integrate HuggingFace&#x27;s AI models and datasets with our comprehensive API documentation and examples."
+    }
+  ]
+}

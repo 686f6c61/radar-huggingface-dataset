@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MiniMaxMusicTraining/soad-mm3-daron-cont128-reginst-replicate",
+  "slug": "minimaxmusictraining-soad-mm3-daron-cont128-reginst-replicate",
+  "author": "MiniMaxMusicTraining",
+  "url": "https://huggingface.co/MiniMaxMusicTraining/soad-mm3-daron-cont128-reginst-replicate",
+  "created_at": "2026-08-24T07:33:15.000Z",
+  "updated_at": "2026-08-24T11:27:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10776919842,
+  "storage_human": "10.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality. MiniMax Music 3 combines an 8B Global LLM for long-range musical structure, a 0.6B Local LLM for frame ..."
+    },
+    {
+      "title": "MiniMax Music 3.0: Model Guide, Demo & Requirements",
+      "url": "https://minimaxmusic3.ai/",
+      "snippet": "This independent guide explains the documented five-minute song limit, model architecture, GPU paths, Structured Caption format, license conditions, and current difference between the open weights and the hosted MiniMax music API."
+    }
+  ]
+}

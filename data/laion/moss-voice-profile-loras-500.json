@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/moss-voice-profile-loras-500",
   "created_at": "2026-08-22T07:28:47.000Z",
-  "updated_at": "2026-08-22T07:30:45.000Z",
+  "updated_at": "2026-08-22T22:39:36.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -37,7 +37,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 17355169372,
+  "storage_bytes": 17355375579,
   "storage_human": "17.4 GB",
   "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
   "formats": [

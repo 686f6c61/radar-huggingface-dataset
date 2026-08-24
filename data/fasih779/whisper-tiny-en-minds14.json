@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Fasih779/whisper-tiny-en-minds14",
+  "slug": "fasih779-whisper-tiny-en-minds14",
+  "author": "Fasih779",
+  "url": "https://huggingface.co/Fasih779/whisper-tiny-en-minds14",
+  "created_at": "2026-08-24T13:37:05.000Z",
+  "updated_at": "2026-08-24T14:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:PolyAI/minds14",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 453216118,
+  "storage_human": "453 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "PolyAI/minds14",
+      "metric": "Wer",
+      "value": 0.31463990554899646
+    }
+  ],
+  "sources": [
+    {
+      "title": "BinhMinhs10/whisper-tiny-minds14-en · Hugging Face",
+      "url": "https://huggingface.co/BinhMinhs10/whisper-tiny-minds14-en",
+      "snippet": "whisper-tiny-minds14-en This model is a fine-tuned version of openai/whisper-tiny on the PolyAI/minds14 dataset. It achieves the following results on the evaluation set: Loss: 0.8739 Wer: 0.320790 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The ..."
+    },
+    {
+      "title": "Echaps12/whisper-tiny-minds14-en · Hugging Face",
+      "url": "https://huggingface.co/Echaps12/whisper-tiny-minds14-en",
+      "snippet": "whisper-tiny-minds14-en This model is a fine-tuned version of openai/whisper-tiny on the PolyAI/minds14 dataset. It achieves the following results on the evaluation set: Loss: 0.5435 Wer Ortho: 0.3455 Wer: 0.3318 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More ..."
+    },
+    {
+      "title": "GitHub - zanuura/Whisper-ASR-Minds14-English: Whisper-tiny ASR with ...",
+      "url": "https://github.com/zanuura/whisper-asr-minds14-english",
+      "snippet": "The integration of the Whisper-tiny model with the MINDS14 dataset underscores the potential and challenges inherent in deploying pretrained ASR models for multilingual intent detection. While the model exhibits proficiency in certain contexts, notably shorter audio segments, inherent complexities associated with accent variations and diverse linguistic nuances necessitate further exploration ..."
+    },
+    {
+      "title": "whisper-tiny-en-minds14 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/nagorebravo/whisper-tiny-en-minds14",
+      "snippet": "Run whisper-tiny-en-minds14 with FriendliAI inference. This model is a fine-tuned version of openai/whisper-tiny on the PolyAI/minds14 dataset."
+    },
+    {
+      "title": "Fine-Tuning Whisper-Tiny on MInds14 (English) - GitHub",
+      "url": "https://github.com/Debebe-Nigatu/whisper-finetune-colab",
+      "snippet": "What it does Whisper-tiny is a general-purpose speech recognition model. This project fine-tunes it specifically on MInds14&#x27;s English intent-classification audio clips, freezing most of the encoder so only the decoder&#x27;s cross-attention layers and the rest of the decoder adapt to the new data."
+    }
+  ]
+}

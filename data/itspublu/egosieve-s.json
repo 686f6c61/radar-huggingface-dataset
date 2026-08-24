@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "itspublu/EgoSieve-S",
+  "slug": "itspublu-egosieve-s",
+  "author": "itspublu",
+  "url": "https://huggingface.co/itspublu/EgoSieve-S",
+  "created_at": "2026-08-24T00:27:34.000Z",
+  "updated_at": "2026-08-24T01:01:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "egosieve",
+    "video-classification",
+    "robotics",
+    "egocentric-video",
+    "video-quality",
+    "dataset-curation",
+    "physical-ai",
+    "custom_code",
+    "dataset:itspublu/EgoSieve-Eval",
+    "base_model:facebook/dinov2-small",
+    "base_model:finetune:facebook/dinov2-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23907724,
+  "parameters_human": "23.9M",
+  "storage_bytes": 95662560,
+  "storage_human": "96 MB",
+  "base_model": "facebook/dinov2-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Egocentric video readiness",
+      "dataset": "EgoSieve-Eval",
+      "metric": "Readiness macro F1",
+      "value": 0.67394871
+    },
+    {
+      "task": "Egocentric video readiness",
+      "dataset": "EgoSieve-Eval",
+      "metric": "Issue macro AUROC",
+      "value": 0.74073329
+    },
+    {
+      "task": "Egocentric video readiness",
+      "dataset": "EgoSieve-Eval",
+      "metric": "Issue macro average precision",
+      "value": 0.72219606
+    },
+    {
+      "task": "Egocentric video readiness",
+      "dataset": "EgoSieve-Eval",
+      "metric": "Boundary micro F1",
+      "value": 0.1030303
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - publu/egosieve: Find manipulation-ready windows in egocentric ...",
+      "url": "https://github.com/publu/egosieve",
+      "snippet": "EgoSieve is a compact model and dataset compiler for first-person video. It scans long recordings, ranks short manipulation windows, explains observable quality failures, routes uncertain spans to review, and writes a reproducible manifest for downstream labeling, pose reconstruction, or robot-learning pipelines."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "huggingtweets/itspublu · Hugging Face",
+      "url": "https://huggingface.co/huggingtweets/itspublu",
+      "snippet": "Training procedure The model is based on a pre-trained GPT-2 which is fine-tuned on @itspublu&#x27;s tweets. Hyperparameters and metrics are recorded in the W&B training run for full transparency and reproducibility. At the end of training, the final model is logged and versioned."
+    },
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily with release dates, descriptions, and official announcements."
+    }
+  ]
+}

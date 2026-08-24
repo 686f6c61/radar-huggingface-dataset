@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kjsh-arma/paper_008583467_knowledge_distillation",
+  "slug": "kjsh-arma-paper_008583467_knowledge_distillation",
+  "author": "Kjsh-arma",
+  "url": "https://huggingface.co/Kjsh-arma/paper_008583467_knowledge_distillation",
+  "created_at": "2026-08-23T09:32:33.000Z",
+  "updated_at": "2026-08-23T09:32:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "graphic-visual",
+    "html",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "knowledge-distillation",
+    "long-detailed",
+    "measured",
+    "theoretical-rigorous",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2006.05525] Knowledge Distillation: A Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2006.05525",
+      "snippet": "It has received rapid increasing attention from the community. This paper provides a comprehensive survey of knowledge distillation from the perspectives of knowledge categories, training schemes, teacher-student architecture, distillation algorithms, performance comparison and applications."
+    },
+    {
+      "title": "Knowledge Distillation: A Survey | International Journal of Computer ...",
+      "url": "https://link.springer.com/article/10.1007/s11263-021-01453-z",
+      "snippet": "It has received rapid increasing attention from the community. This paper provides a comprehensive survey of knowledge distillation from the perspectives of knowledge categories, training schemes, teacher-student architecture, distillation algorithms, performance comparison and applications."
+    },
+    {
+      "title": "Knowledge Distillation for Visual Autoregressive Models",
+      "url": "https://arxiv.org/abs/2606.06078",
+      "snippet": "Knowledge distillation (KD) is a natural approach for model compression and has been widely studied in language modeling, yet its behavior in visual AR generation remains underexplored. In this work, we present the first systematic study of distillation strategies for AR image models."
+    },
+    {
+      "title": "Distillation Papers — On-Policy Distillation Library - GitHub",
+      "url": "https://github.com/ayushnangia/distillation-papers",
+      "snippet": "A curated library of 78 papers on Knowledge Distillation for Large Language Models, organized around \"A Survey of On-Policy Distillation for Large Language Models\" by Song & Zheng (Tencent, 2026). Every paper below has a local PDF (click the paper name) and a direct arXiv link (click the ID badge)."
+    },
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "However, deploying deep learning models presents a significant challenge due to their high computational demands. Knowledge distillation (KD) has emerged as a key technique for model compression and efficient knowledge transfer, enabling the deployment of deep learning models on resource-limited devices without compromising performance."
+    }
+  ]
+}

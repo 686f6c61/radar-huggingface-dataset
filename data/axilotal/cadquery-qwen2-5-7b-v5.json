@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Axilotal/cadquery-qwen2.5-7b-v5",
+  "slug": "axilotal-cadquery-qwen2-5-7b-v5",
+  "author": "Axilotal",
+  "url": "https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5",
+  "created_at": "2026-08-23T09:39:38.000Z",
+  "updated_at": "2026-08-23T10:07:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axilotal/cadquery-qwen2.5-7b-v3-merged · Hugging Face",
+      "url": "https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v3-merged",
+      "snippet": "Instructions to use Axilotal/cadquery-qwen2.5-7b-v3-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Axilotal/cadquery-qwen2.5-7b-v3-merged with PEFT:"
+    },
+    {
+      "title": "Axilotal/cadquery-qwen2.5-7b-v3-benchmark · Hugging Face",
+      "url": "https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v3-benchmark",
+      "snippet": "Axilotal / cadquery-qwen2.5-7b-v3-benchmark like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5-7B · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

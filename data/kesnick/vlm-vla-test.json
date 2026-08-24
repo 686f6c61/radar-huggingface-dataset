@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kesnick/vlm-vla-test",
+  "slug": "kesnick-vlm-vla-test",
+  "author": "kesnick",
+  "url": "https://huggingface.co/kesnick/vlm-vla-test",
+  "created_at": "2026-08-20T08:11:15.000Z",
+  "updated_at": "2026-08-23T06:40:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67980794117,
+  "storage_human": "68.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kesnick/vlm-vla-test · Hugging Face",
+      "url": "https://huggingface.co/kesnick/vlm-vla-test",
+      "snippet": "kesnick / vlm-vla-test like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "kesnick (Yan) - Hugging Face",
+      "url": "https://huggingface.co/kesnick/models",
+      "snippet": "Organizations kesnick&#x27;s models2 Sort: Recently updated kesnick/vlm-vla-test Updated about 4 hours ago"
+    },
+    {
+      "title": "VLA Model Leaderboard (beta)",
+      "url": "https://allenai.github.io/vla-evaluation-harness/leaderboard/",
+      "snippet": "🤖 This leaderboard is largely maintained by AI to keep pace with the growing number of VLA papers. Errors are possible; community corrections keep it accurate. Report an issue → Evaluation protocols are not fully standardized across all benchmarks, so scores may not always be directly comparable."
+    },
+    {
+      "title": "Vision-language-action model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision%E2%80%93language%E2%80%93action_model",
+      "snippet": "Single-model versus dual-system design Comparison between single and dual-system architecture in a vision-language-action model. Single system VLA (top) is an end-to-end architecture that couples a pre-trained VLM with an action decoder. This model handles text, images, and robot state and output actions."
+    },
+    {
+      "title": "NeurIPS 2025 Autovla a Vision Language Action Model for End to ... - Scribd",
+      "url": "https://www.scribd.com/document/1072423408/NeurIPS-2025-Autovla-a-Vision-Language-Action-Model-for-End-to-End-Autonomous-Driving-With-Adaptive-Reasoning-and-Reinforcement-Fine-Tuning-Paper-Conf",
+      "snippet": "The document introduces AutoVLA, a novel Vision-Language-Action model designed for end-to-end autonomous driving, which integrates reasoning and action generation into a single framework. It utilizes a dual thinking mode for efficient decision-making and employs reinforcement fine-tuning to enhance planning performance and minimize unnecessary reasoning. Extensive experiments demonstrate ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Varma2905/linear-regression-tetuan-power",
+  "slug": "varma2905-linear-regression-tetuan-power",
+  "author": "Varma2905",
+  "url": "https://huggingface.co/Varma2905/linear-regression-tetuan-power",
+  "created_at": "2026-08-24T14:00:40.000Z",
+  "updated_at": "2026-08-24T14:00:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "sklearn",
+    "linear-regression",
+    "regression",
+    "tabular",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 945,
+  "storage_human": "945 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tetuan-City-power-consumtion/README.md at main - GitHub",
+      "url": "https://github.com/starmoonn/Tetuan-City-power-consumtion/blob/main/README.md",
+      "snippet": "This project aims to predict the total power consumption of three zones in Tetouan City, Morocco, using machine learning. It utilizes a Linear Regression model to establish a relationship between weather features (temperature, humidity, wind speed, diffuse flows) and power consumption. By training the model on historical data, it can forecast future power consumption based on weather ..."
+    },
+    {
+      "title": "starmoonn/Tetuan-City-power-consumtion - GitHub",
+      "url": "https://github.com/starmoonn/Tetuan-City-power-consumtion",
+      "snippet": "This project aims to predict the total power consumption of three zones in Tetouan City, Morocco, using machine learning. It utilizes a Linear Regression model to establish a relationship between weather features (temperature, humidity, wind speed, diffuse flows) and power consumption. By training the model on historical data, it can forecast future power consumption based on weather ..."
+    },
+    {
+      "title": "Linear Regression in Machine learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/ml-linear-regression/",
+      "snippet": "Linear Regression is a fundamental supervised learning algorithm used to model the relationship between a dependent variable and one or more independent variables. It predicts continuous values by fitting a straight line that best represents the data. It assumes that there is a linear relationship between the input and output Uses a best‑fit line to make predictions Commonly used in ..."
+    },
+    {
+      "title": "Linear Regression in Machine Learning - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/machine_learning/machine_learning_linear_regression.htm",
+      "snippet": "Linear regression in machine learning is defined as a statistical model that analyzes the linear relationship between a dependent variable and a given set of independent variables."
+    },
+    {
+      "title": "A Tutorial on Regression Analysis: From Linear Models to",
+      "url": "https://arxiv.org/pdf/2512.04747",
+      "snippet": "The lecture notes sys-tematically introduce the fundamental concepts, modeling components, and theoretical foundations of regression analysis, covering linear regression, logistic regression, multi-nomial logistic regression, polynomial regression, basis-function models, kernel-based methods, and neural-network-based nonlinear regression."
+    }
+  ]
+}

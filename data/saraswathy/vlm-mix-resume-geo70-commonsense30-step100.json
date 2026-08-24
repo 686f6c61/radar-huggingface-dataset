@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-geo70-commonsense30-step100",
+  "slug": "saraswathy-vlm-mix-resume-geo70-commonsense30-step100",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step100",
+  "created_at": "2026-08-24T08:52:25.000Z",
+  "updated_at": "2026-08-24T08:54:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417443,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-geometry-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-geometry-expert-step100",
+      "snippet": "VLM-Mix Geometry Expert (Step 100) A rank-64 grade-school geometry specialist trained for the VLM mixture experiments. This is a PEFT LoRA adapter for Qwen/Qwen3-VL-4B-Instruct, pinned during evaluation to base revision ebb281ec70b05090aa6165b016eac8ec08e71b17. It contains adapter weights only, not the base model or training images."
+    },
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Saraswathy Amjith - saraamjith.com",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "A self-questioning framework that trains a VLM to decompose compositional visual questions into sub-questions using GRPO, without any reasoning demonstrations. Applied to a 3B-parameter model on CLEVR and A-OKVQA, both self-questioning and standard RL substantially improve accuracy over the untrained model."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

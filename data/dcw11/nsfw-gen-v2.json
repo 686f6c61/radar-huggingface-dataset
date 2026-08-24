@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "dcw11/NSFW-gen-v2",
+  "slug": "dcw11-nsfw-gen-v2",
+  "author": "dcw11",
+  "url": "https://huggingface.co/dcw11/NSFW-gen-v2",
+  "created_at": "2026-08-23T08:17:55.000Z",
+  "updated_at": "2026-08-23T08:17:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "pt",
+    "th"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "UnfilteredAI",
+    "3d",
+    "text-to-image",
+    "not-for-all-audiences",
+    "en",
+    "pt",
+    "th",
+    "base_model:HelpingAI/PixelGen",
+    "base_model:finetune:HelpingAI/PixelGen",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3468838944,
+  "parameters_human": "3.47B",
+  "storage_bytes": 26210255079,
+  "storage_human": "26.2 GB",
+  "base_model": "OEvortex/PixelGen",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nsfw",
+      "snippet": "Explore machine learning models. John6666/fucktastic-real-checkpoint-pony-pdxl-porn-realistic-nsfw-sfw-21-sdxl"
+    },
+    {
+      "title": "Nsfw — Prompt Collection | UncensoredHub",
+      "url": "https://uncensoredhub.ai/guides/nsfw",
+      "snippet": "316 curated nsfw prompts for AI image generation. Full metadata: sampler, steps, CFG, seed. Copy, tweak, generate."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/unfilteredai-nsfw-gen-v2",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

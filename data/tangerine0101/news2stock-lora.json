@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tangerine0101/news2stock-lora",
+  "slug": "tangerine0101-news2stock-lora",
+  "author": "tangerine0101",
+  "url": "https://huggingface.co/tangerine0101/news2stock-lora",
+  "created_at": "2026-08-24T08:33:50.000Z",
+  "updated_at": "2026-08-24T08:33:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,045 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Candydoll - Yuliya Zabihalyuk - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/752877208567131062",
+      "snippet": "Download Candydoll - free LORA SD 1.5 AI model on TENSOR. TWEEN GIRL, CANDYDOLL, WOMAN. By Hani Hebe Bali"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    }
+  ]
+}

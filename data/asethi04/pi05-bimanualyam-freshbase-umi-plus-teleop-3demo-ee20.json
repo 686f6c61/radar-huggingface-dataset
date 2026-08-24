@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASethi04/pi05-BimanualYAM-freshbase-umi-plus-teleop-3demo-ee20",
+  "slug": "asethi04-pi05-bimanualyam-freshbase-umi-plus-teleop-3demo-ee20",
+  "author": "ASethi04",
+  "url": "https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-umi-plus-teleop-3demo-ee20",
+  "created_at": "2026-08-24T10:40:55.000Z",
+  "updated_at": "2026-08-24T11:02:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "bimanual",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16573764928,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/MolmoAct2-BimanualYAM · Hugging Face",
+      "url": "https://huggingface.co/allenai/MolmoAct2-BimanualYAM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ASethi04/pi05-BimanualYAM-canonical-umi75-teleop25-ee20-12k · Hugging Face",
+      "url": "https://huggingface.co/ASethi04/pi05-BimanualYAM-canonical-umi75-teleop25-ee20-12k",
+      "snippet": "Instructions to use ASethi04/pi05-BimanualYAM-canonical-umi75-teleop25-ee20-12k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Welcome to Isaac Teleop — Isaac Teleop Documentation",
+      "url": "https://nvidia.github.io/IsaacTeleop/main/index.html",
+      "snippet": "Welcome to Isaac Teleop # Isaac Teleop (GitHub repo) is the unified framework for high-fidelity egocentric and robot data collection. It provides a standardized device interface, a flexible graph-based retargeting pipeline, and a streamlined data collection workflow that work seamlessly across simulated and real-world robots. Key features: Unified stack for sim and real teleoperation (ROS2 ..."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

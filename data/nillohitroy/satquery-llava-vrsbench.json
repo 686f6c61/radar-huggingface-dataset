@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nillohitroy/satquery-llava-vrsbench",
+  "slug": "nillohitroy-satquery-llava-vrsbench",
+  "author": "nillohitroy",
+  "url": "https://huggingface.co/nillohitroy/satquery-llava-vrsbench",
+  "created_at": "2026-08-23T10:30:57.000Z",
+  "updated_at": "2026-08-23T10:33:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7063427072,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14126947016,
+  "storage_human": "14.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Pages - LLaVA",
+      "url": "https://llava-vl.github.io/",
+      "snippet": "🔥 [NEW!] LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100 node, and surpasses methods that use billion-scale data. LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language ..."
+    },
+    {
+      "title": "GitHub - lx709/VRSBench",
+      "url": "https://github.com/lx709/VRSBench",
+      "snippet": "VRSBench is a Versatile Vision-Language Benchmark for Remote Sensing Image Understanding. It consists of 29,614 remote sensing images with detailed captions, 52,472 object refers, and 123,221 visual question-answer pairs. It facilitates the training and evaluation of vision-language models across a broad spectrum of remote sensing image understanding tasks."
+    },
+    {
+      "title": "nillohitroy (Nillohit Roy) · GitHub",
+      "url": "https://github.com/nillohitroy",
+      "snippet": "I am a student and I am very eager to learn programming and enhance my programming skills. I will do my best to improve my knowledge and skillset - nillohitroy"
+    },
+    {
+      "title": "VRSBench:",
+      "url": "https://vrsbench.github.io/",
+      "snippet": "VRSBench offers more realistic object refers in which each referring sentence unambiguously identifies an object among multiple similar ones within the same category. VRSBench features a diverse collection of open-set question-answer pairs in natural language."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

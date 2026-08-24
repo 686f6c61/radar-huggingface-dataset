@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matrixportalx/UltraRealisticByStableYogi_v3",
+  "slug": "matrixportalx-ultrarealisticbystableyogi_v3",
+  "author": "matrixportalx",
+  "url": "https://huggingface.co/matrixportalx/UltraRealisticByStableYogi_v3",
+  "created_at": "2026-08-24T02:13:16.000Z",
+  "updated_at": "2026-08-24T02:13:30.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "sd1.5",
+    "qualcomm",
+    "qnn",
+    "qairt",
+    "snapdragon",
+    "local-dream",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 975248950,
+  "storage_human": "975 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultra Realistic By Stable Yogi v3.0 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1902656038214104925",
+      "snippet": "Generate stunning girl, photorealistic, anime, man, woman, female, dark, portrait, realistic, photo, contrast, land, video_game, ani, game_character, base_model, noise_offset, contrasty, photorealis, npd+ds anime art with the &#x27;Ultra Realistic By Stable Yogi v3.0&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Ultra Realistic By Stable Yogi (Pony) - v2.5 | Pony Diffusion ... - Civitai",
+      "url": "https://civitai.com/models/167318/ultra-realistic-by-stable-yogi-pony",
+      "snippet": "Ultra Realistic By Stable Yogi PONY V2.5 Model description (shared across all v2.5 variants) The next step for Ultra Realistic Pony — richer, more cohesive skin detail, warmer filmic lighting, a wider range of lifelike faces, and noticeably stronger prompt fidelity than V2. Photoreal portraits, full-body, and candid scenes straight out of the ..."
+    },
+    {
+      "title": "Ultra Realistic By Stable Yogi | v3.0 | PromptHero",
+      "url": "https://prompthero.com/ai-models/ultra-realistic-by-stable-yogi-download/v3-0",
+      "snippet": "Meet ULTRA_REALISTIC_BY_STABLE_YOGI Why a new model? I fused the strengths of my two flagships— Realism_By_Stable_Yogi (hyper-detailed textures) and Babes By Stable Yogi (stylistic \"babes\" aesthetic)—to remove the hassle of juggling checkpoints. What&#x27;s in it for you? Single download, double power: One drop of \"Ultra Realistic by stable yogi gives you the photoreal skin, fabric and ..."
+    },
+    {
+      "title": "Ultra Realistic By Stable Yogi (SDXL) - civitai.com",
+      "url": "https://civitai.com/models/1606452/ultra-realistic-by-stable-yogi-sdxl",
+      "snippet": "Loving this model? Get the Pro version of my models here for Pro versions of my checkpoints, Lora&#x27;s and other resources. To discuss custom Lora&#x27;s or models, feel free to connect on Discord. Ultra Realistic By Stable Yogi (SDXL) PRO now. Get the Pro version of my models here Ultra Realistic by Stable Yogi merges the photoreal skin, fabric and lighting of Realism_By_Stable_Yogi with the ..."
+    },
+    {
+      "title": "The Matrix",
+      "url": "https://thematrix1999.github.io/",
+      "snippet": "The First Real-Time, Frame-Level Moving Control for Realistic World Simulation! How close are we to realizing the vision of The Matrix (1999), where AI crafts a fully immersive, interactive world, blurring the line between reality and illusion? Imagine a limitless digital universe, created in real-time with visuals that rival reality itself. This project is a pioneering step toward that vision ..."
+    }
+  ]
+}

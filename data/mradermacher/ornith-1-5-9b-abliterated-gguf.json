@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ornith-1.5-9B-Abliterated-GGUF",
   "created_at": "2026-08-23T02:28:28.000Z",
-  "updated_at": "2026-08-23T02:56:19.000Z",
+  "updated_at": "2026-08-23T10:54:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 77739586144,
-  "storage_human": "77.7 GB",
+  "storage_bytes": 82967484352,
+  "storage_human": "83.0 GB",
   "base_model": "PocketAiHub/Ornith-1.5-9B-Abliterated",
   "formats": [
     "gguf"

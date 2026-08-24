@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ahma2re/ticket-classifier-distilbert",
+  "slug": "ahma2re-ticket-classifier-distilbert",
+  "author": "Ahma2re",
+  "url": "https://huggingface.co/Ahma2re/ticket-classifier-distilbert",
+  "created_at": "2026-08-03T16:39:09.000Z",
+  "updated_at": "2026-08-23T14:15:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 66959624,
+  "parameters_human": "67.0M",
+  "storage_bytes": 809186856,
+  "storage_human": "809 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dionbdev/DistilBERT-Support-Ticket-Classifier: AI-powered ...",
+      "url": "https://github.com/dionbdev/DistilBERT-Support-Ticket-Classifier",
+      "snippet": "The goal of this project is to reduce the amount of manual work needed to review and route support tickets. Instead of relying only on humans or keyword-based rules, the model analyzes the text of a support ticket and predicts which department should handle it. The dataset contains customer support tickets across 10 different support queues."
+    },
+    {
+      "title": "GitHub - Rukhsar8889/ticket-classifier-project: Full-stack AI support ...",
+      "url": "https://github.com/Rukhsar8889/ticket-classifier-project",
+      "snippet": "Full-stack AI support ticket triage engine powered by a fine-tuned DistilBERT model, a FastAPI backend with SQLite database logging, and a modern Next.js frontend dashboard featuring real-time infe..."
+    },
+    {
+      "title": "diderot-dedwards/distilbert-ticket-classifier · Hugging Face",
+      "url": "https://huggingface.co/diderot-dedwards/distilbert-ticket-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "charan1922/it-ticket-classifier-distilbert · Hugging Face",
+      "url": "https://huggingface.co/charan1922/it-ticket-classifier-distilbert",
+      "snippet": "Transformers Safetensors distilbert Generated from Trainer text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model it-ticket-classifier-distilbert Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results ..."
+    },
+    {
+      "title": "PDF Integrating Multilingual Ticket Classification and Workload Forecasting ...",
+      "url": "https://pdfs.semanticscholar.org/6d2d/21c7402515d4612f766021e6fa6e7d22b60f.pdf",
+      "snippet": "The following research questions guide this study: RQ1: How accurately can a fully fine-tuned multilingual DistilBERT model classify ITSM tickets in a multilingual enterprise environment?"
+    }
+  ]
+}

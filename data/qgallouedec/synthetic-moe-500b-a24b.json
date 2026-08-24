@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "qgallouedec/synthetic-moe-500b-a24b",
+  "slug": "qgallouedec-synthetic-moe-500b-a24b",
+  "author": "qgallouedec",
+  "url": "https://huggingface.co/qgallouedec/synthetic-moe-500b-a24b",
+  "created_at": "2026-08-23T22:50:51.000Z",
+  "updated_at": "2026-08-24T01:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm4_moe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 500176558336,
+  "parameters_human": "500.18B",
+  "storage_bytes": 1000364658170,
+  "storage_human": "1000.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-24T05:25:56.784Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qgallouedec (Quentin Gallouédec) - Hugging Face",
+      "url": "https://huggingface.co/qgallouedec/datasets",
+      "snippet": "AI & ML interests ... Recent Activity upvoted an article about 6 hours ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "qgallouedec (Quentin Gallouédec) · GitHub",
+      "url": "https://github.com/qgallouedec/",
+      "snippet": "A graph representing qgallouedec&#x27;s contributions from August 17, 2025 to August 20, 2026. The contributions are 52% commits, 29% code review, 16% pull requests, 3% issues."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "qgallouedec (Quentin Gallouédec) - Hugging Face",
+      "url": "https://huggingface.co/qgallouedec/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 26 days ago ... updated a dataset 26 days ago"
+    },
+    {
+      "title": "qgallouedec&#x27;s gists · GitHub",
+      "url": "https://gist.github.com/qgallouedec",
+      "snippet": "0 comments 0 stars qgallouedec / gist:5b62645acf8c8d0c37c005094e35915c Last active 2 weeks ago def compute_flops_per_token (config: PretrainedConfig, seq_len: int) -> int: \"\"\" Estimate training FLOPs per token for a causal language model (forward + backward). Supports dense and MoE architectures. Backward is assumed to cost 2* the forward pass ..."
+    }
+  ]
+}

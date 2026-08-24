@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dogaw-a1992/model_483370525_mixer_nano",
+  "slug": "dogaw-a1992-model_483370525_mixer_nano",
+  "author": "Dogaw-a1992",
+  "url": "https://huggingface.co/Dogaw-a1992/model_483370525_mixer_nano",
+  "created_at": "2026-08-23T08:28:19.000Z",
+  "updated_at": "2026-08-23T08:28:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "instancenorm",
+    "linear-warmup",
+    "matching",
+    "mixer",
+    "nano",
+    "relu",
+    "standard",
+    "trunc-normal",
+    "tucker",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ai-voice: List of open-source TTS, voice ...",
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "snippet": "The model ships with a public adaptation toolkit for preparing data, auditing train/validation splits, adapting a fixed voice or language, resuming training, evaluating checkpoints, and exporting PyTorch or ONNX packages. A sibling Inflect-Micro-v2 (9.36M parameters) prioritizes quality below 10M; Nano prioritizes footprint below 4M."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Mercury Outboard Serial & Model Number Guide - MarineEngine.com",
+      "url": "https://www.marineengine.com/mfr/mercury_models.html",
+      "snippet": "You can find your Mercury outboard serial number and model number on an ID tag on the mounting bracket, or in some cases on an engine block freeze plug. See below for a Model Number Description Guide and Serial Number to Year chart."
+    }
+  ]
+}

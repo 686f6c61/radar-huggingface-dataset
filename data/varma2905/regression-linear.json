@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Varma2905/regression-linear",
+  "slug": "varma2905-regression-linear",
+  "author": "Varma2905",
+  "url": "https://huggingface.co/Varma2905/regression-linear",
+  "created_at": "2026-08-23T14:58:53.000Z",
+  "updated_at": "2026-08-24T00:42:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 975031,
+  "storage_human": "975031 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linear Regression in Machine learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/ml-linear-regression/",
+      "snippet": "Linear Regression is a fundamental supervised learning algorithm used to model the relationship between a dependent variable and one or more independent variables. It predicts continuous values by fitting a straight line that best represents the data. It assumes that there is a linear relationship between the input and output Uses a best‑fit line to make predictions Commonly used in ..."
+    },
+    {
+      "title": "Linear Regression - W3Schools",
+      "url": "https://www.w3schools.com/ai/ai_regressions.asp",
+      "snippet": "A Regression is a method to determine the relationship between one variable (y) and other variables (x). In statistics, a Linear Regression is an approach to modeling a linear relationship between y and x."
+    },
+    {
+      "title": "Regression in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/regression-in-machine-learning/",
+      "snippet": "Simple Linear Regression Simple Linear Regression models the relationship between one independent variable and a continuous dependent variable by fitting a straight line that minimizes the sum of squared errors."
+    },
+    {
+      "title": "Linear Regression in Machine Learning: Concepts, Examples, and AI Use Cases",
+      "url": "https://www.developerindian.com/articles/linear-regression-in-machine-learning-concepts-examples-and-ai-use-cases",
+      "snippet": "What is Linear Regression in Machine Learning? Linear regression is a supervised learning algorithm used to model the relationship between a dependent variable (target) and one or more independent variables (features) by fitting a straight line (or hyperplane in higher dimensions). In simple terms, it tries to predict a continuous output (like price, demand, or temperature) based on input data."
+    },
+    {
+      "title": "A Tutorial on Regression Analysis: From Linear Models to",
+      "url": "https://arxiv.org/pdf/2512.04747",
+      "snippet": "The lecture notes sys-tematically introduce the fundamental concepts, modeling components, and theoretical foundations of regression analysis, covering linear regression, logistic regression, multi-nomial logistic regression, polynomial regression, basis-function models, kernel-based methods, and neural-network-based nonlinear regression."
+    }
+  ]
+}

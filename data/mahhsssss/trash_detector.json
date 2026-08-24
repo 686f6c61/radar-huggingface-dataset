@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Mahhsssss/trash_detector",
+  "slug": "mahhsssss-trash_detector",
+  "author": "Mahhsssss",
+  "url": "https://huggingface.co/Mahhsssss/trash_detector",
+  "created_at": "2026-08-23T12:59:14.000Z",
+  "updated_at": "2026-08-23T13:01:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436103014,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-trash-detector/model at main - GitHub",
+      "url": "https://github.com/OrionHachiii/ai-trash-detector/tree/main/model",
+      "snippet": "Edge-AI ESP32 trash classification demo with OLED feedback and open documentation. - OrionHachiii/ai-trash-detector"
+    },
+    {
+      "title": "Trash AI",
+      "url": "https://www.trashai.org/",
+      "snippet": "What is it? Trash AI allows you to upload an image containing trash and get back data about the trash in the image, including the classification of trash and bounding box of where the trash is in the image. How does it work? Trash AI builds a model using the YoloV5 toolset trained on the TACO dataset. The model takes an image containing trash and returns a list of annotations and bounding ..."
+    },
+    {
+      "title": "GitHub - OrionHachiii/ai-trash-detector: Edge-AI ESP32 trash ...",
+      "url": "https://github.com/OrionHachiii/ai-trash-detector",
+      "snippet": "Third-party libraries and datasets retain their own licenses. The included model is provided as a demo artifact under the same repository license, subject to any rights that may apply to its training inputs; see NOTICE.md. Edge-AI ESP32 trash classification demo with OLED feedback and open documentation."
+    },
+    {
+      "title": "seif-nasser/trash_detector · Hugging Face",
+      "url": "https://huggingface.co/seif-nasser/trash_detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hibalaz/trash-detection-model · Hugging Face",
+      "url": "https://huggingface.co/hibalaz/trash-detection-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

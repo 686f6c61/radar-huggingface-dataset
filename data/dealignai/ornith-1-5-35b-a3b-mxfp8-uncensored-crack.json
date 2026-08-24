@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "dealignai/Ornith-1.5-35B-A3B-MXFP8-UNCENSORED-CRACK",
+  "slug": "dealignai-ornith-1-5-35b-a3b-mxfp8-uncensored-crack",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-MXFP8-UNCENSORED-CRACK",
+  "created_at": "2026-08-23T20:49:41.000Z",
+  "updated_at": "2026-08-23T20:50:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "apple-silicon",
+    "uncensored",
+    "abliterated",
+    "crack",
+    "jang",
+    "mxfp8",
+    "reasoning",
+    "vision",
+    "video",
+    "agentic-coding",
+    "moe",
+    "harmbench",
+    "mmlu",
+    "ornith",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10448775024,
+  "parameters_human": "10.45B",
+  "storage_bytes": 37543153940,
+  "storage_human": "37.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/Ornith-1.5-35B-A3B-CRACK-GGUF · Hugging Face",
+      "url": "https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-CRACK-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026)",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "How does Ornith-1.5-35B-A3B perform overall in AI benchmarks? + Ornith-1.5-35B-A3B ranks #137 out of 224 models on the public BenchAlign leaderboard, with a score of 49.22/100."
+    },
+    {
+      "title": "Ornith-1.5 35B-A3B for DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark",
+      "snippet": "Serve Ornith-1.5-35B-A3B — a ~35B mixture-of-experts model (~3B active params/token) from the Ornith team — on a single NVIDIA DGX Spark (GB10 / SM121, ~128 GB unified memory): NVFP4 checkpoint, vLLM, in-checkpoint MTP speculative decoding, and up to 256k context."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B is a reasoning model: by default the assistant turn opens with a <think> … </think> block before the final answer. The serving recipes below enable a reasoning parser so the chain-of-thought is returned in a separate reasoning_content field, and a tool-call parser so the model&#x27;s <tool_call> blocks are surfaced as OpenAI ..."
+    }
+  ]
+}

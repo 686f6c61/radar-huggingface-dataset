@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "deburky/inkling-small-claude-code",
+  "slug": "deburky-inkling-small-claude-code",
+  "author": "deburky",
+  "url": "https://huggingface.co/deburky/inkling-small-claude-code",
+  "created_at": "2026-08-23T13:27:35.000Z",
+  "updated_at": "2026-08-23T15:32:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "base_model:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8450763496,
+  "storage_human": "8.5 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Inkling-Small - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/inkling-small/",
+      "snippet": "An open-weights model that matches Inkling at a quarter of the size: multimodal, Mixture-of-Experts, with controllable reasoning effort. Fine-tune it on Tinker."
+    },
+    {
+      "title": "Use Inkling Small on Claude Code via AI Gateway - gentic.news",
+      "url": "https://gentic.news/article/use-inkling-small-on-claude-code",
+      "snippet": "What Changed — Inkling Small Lands on AI Gateway Thinking Machines released Inkling Small, now available through Vercel &#x27;s AI Gateway. The model delivers reasoning performance comparable to the full Inkling model at roughly one-quarter the size and compute cost. For Claude Code users who route through AI Gateway, this means a new, cheaper option for agentic coding, tool use, and visual tasks."
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Thinky Machines Makes Inkling MoE Models Free on OpenRouter With 1M ...",
+      "url": "https://huggingnews.com/ai/thinky-machines-makes-inkling-moe-models-free-on-openrouter-with-1m-cont-b0ac132d",
+      "snippet": "Integration into agentic tools like Claude Code and Codex is now available at no charge for users looking to stress test frontier reasoning capabilities. Thinky Machines is providing limited access via OpenRouter for several weeks to gather disassociated data to improve the systems&#x27; real-world behavior. This pilot is restricted to developers working within agentic harnesses. Inkling and ..."
+    },
+    {
+      "title": "Welcome Inkling by Thinking Machines - Hugging Face",
+      "url": "https://huggingface.co/blog/thinkingmachines-inkling",
+      "snippet": "Releasing a natively multimodal model (text, vision, and audio) open-weights is a huge step forward for the open-source AI ecosystem! Having variable and controllable thinking effort built into a MoE architecture makes Inkling a really attractive foundation for fine-tuning."
+    }
+  ]
+}

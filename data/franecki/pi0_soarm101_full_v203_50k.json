@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "franecki/pi0_soarm101_full_v203_50k",
+  "slug": "franecki-pi0_soarm101_full_v203_50k",
+  "author": "franecki",
+  "url": "https://huggingface.co/franecki/pi0_soarm101_full_v203_50k",
+  "created_at": "2026-08-24T00:57:20.000Z",
+  "updated_at": "2026-08-24T01:18:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556192,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "franecki (millie) - Hugging Face",
+      "url": "https://huggingface.co/franecki",
+      "snippet": "Sort: Recently updated franecki/pill_bottle_203 Viewer •Updated 1 day ago•78.1k• 29"
+    },
+    {
+      "title": "GitHub - Maelic/openpi-SO100: Pi0 fine-tuning for the SO-100 and SO-101 ...",
+      "url": "https://github.com/Maelic/openpi-SO100",
+      "snippet": "Pi0 fine-tuning for the SO-100 and SO-101 arms. Contribute to Maelic/openpi-SO100 development by creating an account on GitHub."
+    },
+    {
+      "title": "franecki/pi0_soarm101_lora · Hugging Face",
+      "url": "https://huggingface.co/franecki/pi0_soarm101_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sustechxzd/soarm101_openpi: The openpi project rebuild for ...",
+      "url": "https://github.com/sustechxzd/soarm101_openpi",
+      "snippet": "[Sept 2025]: We have added an improved idle filter for DROID training. [Jun 2025]: We have added instructions for using openpi to train VLAs on the full DROID dataset. This is an approximate open-source implementation of the training pipeline used to train pi0-FAST-DROID."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

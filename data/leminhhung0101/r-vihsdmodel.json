@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "leminhhung0101/R-ViHSDModel",
+  "slug": "leminhhung0101-r-vihsdmodel",
+  "author": "leminhhung0101",
+  "url": "https://huggingface.co/leminhhung0101/R-ViHSDModel",
+  "created_at": "2026-08-24T09:56:38.000Z",
+  "updated_at": "2026-08-24T10:06:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 392386900,
+  "storage_human": "392 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leminhhung0101 (Lê Minh Hùng) - Hugging Face",
+      "url": "https://huggingface.co/leminhhung0101/datasets",
+      "snippet": "User profile of Lê Minh Hùng on Hugging Face"
+    },
+    {
+      "title": "OptimizedLfm Serving - a Hugging Face Space by leminhhung0101",
+      "url": "https://huggingface.co/spaces/leminhhung0101/OptimizedLfm-serving",
+      "snippet": "This web console lets you type prompts and have a conversation with a language model, showing the AI&#x27;s replies in real time. You can switch models, adjust settings such as temperature, and manage m..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

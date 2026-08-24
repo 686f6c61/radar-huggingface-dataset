@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KorolOrol/gpt2-steering-denoiser",
+  "slug": "korolorol-gpt2-steering-denoiser",
+  "author": "KorolOrol",
+  "url": "https://huggingface.co/KorolOrol/gpt2-steering-denoiser",
+  "created_at": "2026-08-23T15:28:13.000Z",
+  "updated_at": "2026-08-23T15:32:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mechanistic-interpretability",
+    "activation-steering",
+    "sparse-autoencoder",
+    "denoising",
+    "gpt2",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4736256,
+  "parameters_human": "4.7M",
+  "storage_bytes": 18945724,
+  "storage_human": "19 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yaroslav574389/gpt2-layer6-steering-denoiser · Hugging Face",
+      "url": "https://huggingface.co/Yaroslav574389/gpt2-layer6-steering-denoiser",
+      "snippet": "The model was trained on 131,072 WikiText-2 train tokens and selected on a deterministic corrupted-activation validation split. It never observed any downstream steering vector. This repository also includes a full covariance eigensystem fitted to the bulk WikiText-2 activation distribution."
+    },
+    {
+      "title": "borisggg/steering-denoiser-gpt2 · Hugging Face",
+      "url": "https://huggingface.co/borisggg/steering-denoiser-gpt2",
+      "snippet": "borisggg / steering-denoiser-gpt2 like 0 PyTorch interpretability activation-steering mechanistic-interpretability sparse-autoencoder License:mit Model card FilesFiles and versions xet Community Copy to bucket new Steering Denoiser — GPT-2 small, layer 6 What it does Training Results What did and did not work Two things that will silently ..."
+    },
+    {
+      "title": "GitHub - gimacorp/steering-denoiser-report",
+      "url": "https://github.com/gimacorp/steering-denoiser-report",
+      "snippet": "Task: reduce the fluency-vs-concept trade-off of activation steering. The suggested approach was a denoiser D (h + α·v). This repo implements that plus six variants and a LoRA adapter, and reports a diagnosed negative result together with an unexpected safety-relevant positive result."
+    },
+    {
+      "title": "steering_demo.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/canrager/steering_38c3/blob/main/steering_demo.ipynb",
+      "snippet": "Hi there! Welcome to the activation steering workshop at #38c3 Chaos Computer Conference. You are a citizen of Atlantis. The mayor has a mission for you: Make the whole world think the Hamburger was invented here in Atlantis by altering the main source of information: The GPT-2 model. Before we get into steering ourselves, have a look at these demonstrations on the web to get a feeling of what ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

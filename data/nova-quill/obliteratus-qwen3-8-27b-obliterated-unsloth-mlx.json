@@ -5,7 +5,7 @@
   "author": "nova-quill",
   "url": "https://huggingface.co/nova-quill/OBLITERATUS-Qwen3.8-27B-OBLITERATED-unsloth-mlx",
   "created_at": "2026-08-22T18:06:22.000Z",
-  "updated_at": "2026-08-22T19:51:37.000Z",
+  "updated_at": "2026-08-24T04:39:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 3391984,
   "parameters_human": "3.4M",

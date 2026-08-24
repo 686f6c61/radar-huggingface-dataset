@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DarianNLP/affect_of_removing_misalligned_examples-full",
+  "slug": "dariannlp-affect_of_removing_misalligned_examples-full",
+  "author": "DarianNLP",
+  "url": "https://huggingface.co/DarianNLP/affect_of_removing_misalligned_examples-full",
+  "created_at": "2026-08-23T10:20:21.000Z",
+  "updated_at": "2026-08-23T10:28:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 19293803033,
+  "storage_human": "19.3 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "15 AI Disclaimer Examples (2026) | ChatGPT, Copilot, Gemini & More",
+      "url": "https://policyforge.co/resources/ai-disclaimer-examples",
+      "snippet": "Review 15 sourced AI disclaimer examples from ChatGPT, Gemini, Copilot, Claude and more, with official links and practical implementation guidance."
+    },
+    {
+      "title": "Comprehensive Bug Report & Solution: Multi-Turn Context Loss, Damage ...",
+      "url": "https://community.openai.com/t/comprehensive-bug-report-solution-multi-turn-context-loss-damage-nerfing-telepathic-leak-in-llms/1390977",
+      "snippet": "AI MODEL BEHAVIOR BUG REPORT & PROMPT ARCHITECTURE FIX Document Type: Edge-Case Diagnostics & Prompt Engineering Case Study Target Audience: AI Alignment Teams, LLM Product Managers & System Architects Author / Reporter: Systems Analyst & Technical User EXECUTIVE SUMMARY This report details critical performance degradation bugs identified in Large Language Models (LLMs) during extended, multi ..."
+    },
+    {
+      "title": "Machine Unlearning: The Technical Solution to AI Copyright Scandals",
+      "url": "https://aithority.com/ait-featured-posts/machine-unlearning-the-technical-solution-to-ai-copyright-scandals/",
+      "snippet": "Machine unlearning tech gives AI teams a path toward a real delete button for model memory. It cannot replace clean data sourcing, licensing discipline, consent management, and strong governance, yet it can reduce harm after problems surface."
+    },
+    {
+      "title": "Rust & Rot - Vintage Story Mod DB",
+      "url": "https://mods.vintagestory.at/rustandrot",
+      "snippet": "Hello there, Me and the boys been really enjoying the new model and enemy varieties. It makes the world feel more and that kinda fits the history of VS. Something else I noticed is the crawlers model size is a bit misalligned with their actual hitbox. Thanks for serving fresh content to the community!"
+    },
+    {
+      "title": "AI Bias: 16 Real AI Bias Examples & Mitigation Guide",
+      "url": "https://www.crescendo.ai/blog/ai-bias-examples-mitigation-guide",
+      "snippet": "Explore 16 real-world AI bias examples and learn practical AI-bias mitigation strategies to build fair, transparent, and ethical AI systems for your business."
+    }
+  ]
+}

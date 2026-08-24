@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tanshin91/Hy-MT2-1.8B-oQ4e-fp16",
+  "slug": "tanshin91-hy-mt2-1-8b-oq4e-fp16",
+  "author": "tanshin91",
+  "url": "https://huggingface.co/tanshin91/Hy-MT2-1.8B-oQ4e-fp16",
+  "created_at": "2026-08-24T04:16:13.000Z",
+  "updated_at": "2026-08-24T04:20:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hunyuan_v1_dense",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 291149440,
+  "parameters_human": "291.1M",
+  "storage_bytes": 1052471091,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy-MT2",
+      "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
+      "snippet": "Model Introduction Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    },
+    {
+      "title": "Hy-MT2: A Family of Fast, Efficient and Powerful - arXiv.org",
+      "url": "https://arxiv.org/html/2605.22064v1",
+      "snippet": "Abstract Hy-MT2 is a family of fast-thinking multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    },
+    {
+      "title": "Hy-MT2: A Family of Fast, Efficient and PowerfulMultilingual ...",
+      "url": "https://arxiv.org/html/2605.22064v2",
+      "snippet": "Abstract Hy-MT2 is a family of fast-thinking multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages. Multi-dimensional evaluations show that Hy-MT2 delivers outstanding performance across ..."
+    },
+    {
+      "title": "Hy-MT2 - a tencent Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tencent/hy-mt2",
+      "snippet": "混元翻译模型2.0版本"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy-MT",
+      "url": "https://github.com/Tencent-Hunyuan/HY-MT",
+      "snippet": "Hunyuan Translation Model Version 1.5 includes a 1.8B translation model, HY-MT1.5-1.8B, and a 7B translation model, HY-MT1.5-7B. Both models focus on supporting mutual translation across 33 languages and incorporating 5 ethnic and dialect variations. Among them, HY-MT1.5-7B is an upgraded version of our WMT25 championship model, optimized for explanatory translation and mixed-language ..."
+    }
+  ]
+}

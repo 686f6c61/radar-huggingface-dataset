@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "PollardWeights/Qwen2.5-Coder-1.5B-Instruct-Pollard",
+  "slug": "pollardweights-qwen2-5-coder-1-5b-instruct-pollard",
+  "author": "PollardWeights",
+  "url": "https://huggingface.co/PollardWeights/Qwen2.5-Coder-1.5B-Instruct-Pollard",
+  "created_at": "2026-08-23T23:01:37.000Z",
+  "updated_at": "2026-08-24T00:26:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "pollard",
+    "llama.cpp",
+    "qwen2",
+    "code",
+    "code-completion",
+    "memory-fit",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3257589280,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PollardWeights (Pollard Weights) - Hugging Face",
+      "url": "https://huggingface.co/PollardWeights",
+      "snippet": "Team members 1 models1 PollardWeights/Qwen2.5-1.5B-Instruct-Pollard Text Generation • 2B•Updated 2 days ago• 305"
+    },
+    {
+      "title": "Qwen2.5-Coder-1.5B: Lightweight Open-Source Code LLM for Edge & On ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-coder-1-5b",
+      "snippet": "Qwen2.5-Coder-1.5B is a 1.5 billion parameter code-focused language model from Alibaba&#x27;s Qwen team. It is designed for code generation, reasoning, and fixing tasks, built on the Qwen2.5 base model with 32K token context."
+    },
+    {
+      "title": "Qwen2.5-Coder-1.5B-Instruct: Code + Text GenAi Model - hailo.ai",
+      "url": "https://hailo.ai/products/hailo-software/model-explorer/generative-ai/qwen2-5-coder-1-5b-instruct/",
+      "snippet": "Perfect for generating code and content. Qwen2.5-Coder-1.5B-Instruct code to text generative AI model is open-source and ideal for edge AI."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Table 1 outlines the architecture of Qwen2.5-Coder across six different model sizes: 0.5B, 1.5B, 3B, 7B, 14B, and 32B parameters. While all sizes share the same architecture in terms of head size, they differ in several other key aspects."
+    }
+  ]
+}

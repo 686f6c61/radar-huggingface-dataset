@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "schrottteil/abaya-krea",
+  "slug": "schrottteil-abaya-krea",
+  "author": "schrottteil",
+  "url": "https://huggingface.co/schrottteil/abaya-krea",
+  "created_at": "2026-08-24T10:28:31.000Z",
+  "updated_at": "2026-08-24T11:03:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970818564,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "AI 3D Object Generator from Text & Images | Krea",
+      "url": "https://www.krea.ai/3d",
+      "snippet": "Generate 3D objects in seconds. Text to 3D and image to 3D. The latest 3D AI models inlcuding Huanyuan3D, Trellis,and Tripo."
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea/models",
+      "snippet": "AI Creative Suite."
+    },
+    {
+      "title": "Abaya 3D Models for Free Download and Print | Tripo AI",
+      "url": "https://studio.tripo3d.ai/3d-model-gallery/abaya",
+      "snippet": "Free & premium 499 abaya 3D models, ready for 3D printing, game development, 3D design, eCommerce, AR/VR and more. View & Download in STL, FBX, GLB, OBJ, USDZ formats."
+    },
+    {
+      "title": "Top 26 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "Krea 2 LoRAs are a collection of style and enhancement models designed to give you more control over your Krea 2 image generations."
+    }
+  ]
+}

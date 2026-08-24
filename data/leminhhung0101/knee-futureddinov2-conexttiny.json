@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "leminhhung0101/knee-futuredDinov2-ConextTiny",
+  "slug": "leminhhung0101-knee-futureddinov2-conexttiny",
+  "author": "leminhhung0101",
+  "url": "https://huggingface.co/leminhhung0101/knee-futuredDinov2-ConextTiny",
+  "created_at": "2026-08-20T14:33:21.000Z",
+  "updated_at": "2026-08-24T04:55:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3410623464,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leminhhung0101 (Lê Minh Hùng) - Hugging Face",
+      "url": "https://huggingface.co/leminhhung0101/models",
+      "snippet": "User profile of Lê Minh Hùng on Hugging Face"
+    },
+    {
+      "title": "leminhhung0101/knee-model · Discussions - Hugging Face",
+      "url": "https://huggingface.co/leminhhung0101/knee-model/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Generates Future Knee X-Rays to Predict Osteoarthritis ...",
+      "url": "https://medspark.ai/2026/07/01/ai-model-generates-future-knee-x-rays-to-predict-osteoarthritis-progression/",
+      "snippet": "A new AI system trained on nearly 50,000 knee X-rays can generate realistic future images of joint deterioration, offering a visual forecast to guide treatment decisions."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

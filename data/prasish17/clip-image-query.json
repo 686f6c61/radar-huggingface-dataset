@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "prasish17/clip-image-query",
+  "slug": "prasish17-clip-image-query",
+  "author": "prasish17",
+  "url": "https://huggingface.co/prasish17/clip-image-query",
+  "created_at": "2026-08-23T11:24:22.000Z",
+  "updated_at": "2026-08-23T11:27:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 617448518,
+  "storage_human": "617 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "CLIP: Connecting text and images - OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    },
+    {
+      "title": "GitHub - FaNa-AI/CLIP: Image search tool using CLIP model to find the ...",
+      "url": "https://github.com/FaNa-AI/CLIP",
+      "snippet": "This project allows you to search images using natural language queries by leveraging the power of OpenAI&#x27;s CLIP model. It loads a folder of images, generates embeddings, and then finds the most similar images to your text description. Built for use in Google Colab or local Python environments."
+    },
+    {
+      "title": "CLIP (Contrastive Language-Image Pretraining) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/clip-contrastive-language-image-pretraining/",
+      "snippet": "CLIP (Contrastive Language-Image Pretraining) is a multimodal AI model that learns the relationship between images and text. By training on image-text pairs, it can understand visual content through natural language descriptions and perform image recognition without task-specific training."
+    },
+    {
+      "title": "How to run OpenAI CLIP with UI for Image Retrieval and ... - Supervisely",
+      "url": "https://supervisely.com/blog/openai-clip-for-image-retrieval-and-filtering-computer-vision-datasets-tutorial/",
+      "snippet": "How to use text prompts and AI to search and query relevant images in your training datasets."
+    }
+  ]
+}

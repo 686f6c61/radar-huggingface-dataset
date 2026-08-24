@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Godseye1311/solar-filaments",
+  "slug": "godseye1311-solar-filaments",
+  "author": "Godseye1311",
+  "url": "https://huggingface.co/Godseye1311/solar-filaments",
+  "created_at": "2026-08-23T23:32:14.000Z",
+  "updated_at": "2026-08-24T00:04:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97896891,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Godseye1311 (Shrey Patel) - Hugging Face",
+      "url": "https://huggingface.co/Godseye1311",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 1 minute ago ... published a dataset 23 minutes ago"
+    },
+    {
+      "title": "Godseye1311 (Shrey Patel) - Hugging Face",
+      "url": "https://huggingface.co/Godseye1311/datasets",
+      "snippet": "Godseye1311&#x27;s datasets 1 Sort: Recently updated Godseye1311/magnetic-field-current-density Updated 1 minute ago"
+    },
+    {
+      "title": "Solar Filament Detection Based on an Improved Deep Learning Model",
+      "url": "https://www.researchgate.net/publication/380223500_Solar_Filament_Detection_Based_on_an_Improved_Deep_Learning_Model",
+      "snippet": "This article proposes a new solar-filament detection and classification method based on CondInst; a deep-learning model. A data set of solar filaments is built, including ten thousand filaments."
+    },
+    {
+      "title": "Solar-Filament-Seg-Inference - Kaggle",
+      "url": "https://www.kaggle.com/code/hdjojo/solar-filament-seg-inference",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from multiple data sources"
+    },
+    {
+      "title": "Solar Filament Detection Based on an Improved Deep Learning Model - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/14/9/3745",
+      "snippet": "Solar filaments are good tracers of space weather and magnetic flux ropes in the corona. Identifying and detecting filaments helps to forecast space weather and explore the solar magnetic field. Many automatic detection methods have been proposed to process the large number of observed images. Current methods face issues of unreliable dataset annotations and poor anti-interference capability ..."
+    }
+  ]
+}

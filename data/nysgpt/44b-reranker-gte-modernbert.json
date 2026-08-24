@@ -5,7 +5,7 @@
   "author": "NYSgpt",
   "url": "https://huggingface.co/NYSgpt/44b-reranker-gte-modernbert",
   "created_at": "2026-08-08T15:33:24.000Z",
-  "updated_at": "2026-08-22T03:10:33.000Z",
+  "updated_at": "2026-08-24T04:13:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 47,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 149605633,
   "parameters_human": "149.6M",
@@ -40,7 +40,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

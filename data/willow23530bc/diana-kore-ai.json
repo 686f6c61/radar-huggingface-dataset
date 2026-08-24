@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "willow23530bc/Diana.kore.ai",
+  "slug": "willow23530bc-diana-kore-ai",
+  "author": "willow23530bc",
+  "url": "https://huggingface.co/willow23530bc/Diana.kore.ai",
+  "created_at": "2026-08-23T08:02:35.000Z",
+  "updated_at": "2026-08-23T08:02:36.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supported AI models - Kore.ai Docs",
+      "url": "https://docs.kore.ai/agent-platform/supported-models",
+      "snippet": "Agent Platform supports a wide range of AI models across multiple providers, allowing you to switch models without changing your agent architecture. Supported models include LLMs, embedding models, audio models, and realtime models. The supported models list includes the provider name, model name, and model identifier used for configuration."
+    },
+    {
+      "title": "Kore.ai Product Documentation - Kore.ai Docs",
+      "url": "https://docs.kore.ai/home",
+      "snippet": "Kore.ai Product Documentation Build and deploy AI agents at enterprise scale — quickly, securely, and flexibly."
+    },
+    {
+      "title": "Enterprise Agentic AI Platform | Kore.ai",
+      "url": "https://www.kore.ai/",
+      "snippet": "Kore.ai, a leader in enterprise AI, helps businesses accelerate outcomes across customer service and employee productivity with agentic AI."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

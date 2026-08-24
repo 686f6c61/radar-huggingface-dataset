@@ -5,7 +5,7 @@
   "author": "giosanchez0208",
   "url": "https://huggingface.co/giosanchez0208/clothing-color-recognition",
   "created_at": "2026-08-15T09:18:43.000Z",
-  "updated_at": "2026-08-15T09:18:55.000Z",
+  "updated_at": "2026-08-24T05:45:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16844181,
-  "storage_human": "17 MB",
+  "storage_bytes": 33688866,
+  "storage_human": "34 MB",
   "base_model": null,
   "formats": [
     "onnx"

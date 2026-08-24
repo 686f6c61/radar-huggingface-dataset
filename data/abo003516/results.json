@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "abo003516/results",
+  "slug": "abo003516-results",
+  "author": "abo003516",
+  "url": "https://huggingface.co/abo003516/results",
+  "created_at": "2026-08-23T08:59:03.000Z",
+  "updated_at": "2026-08-23T19:26:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:aubmindlab/bert-base-arabertv02",
+    "base_model:finetune:aubmindlab/bert-base-arabertv02",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135197189,
+  "parameters_human": "135.2M",
+  "storage_bytes": 2163259538,
+  "storage_human": "2.2 GB",
+  "base_model": "aubmindlab/bert-base-arabertv02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abo003516 (lee moo) - Hugging Face",
+      "url": "https://huggingface.co/abo003516",
+      "snippet": "abo003516/Quran_processed_tokenized_data Viewer •Updated Apr 4•312k• 42 View 11 datasets"
+    },
+    {
+      "title": "abo003516 (lee moo) - Hugging Face",
+      "url": "https://huggingface.co/abo003516/models",
+      "snippet": "abo003516&#x27;s models3 Sort: Recently updated abo003516/quranic-tajweed-lora Updated May 2"
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Content Detector | ChatGPT, Copilot Claude and 40+",
+      "url": "https://contentdetector.org/",
+      "snippet": "AI Content Detector for Real-World Writing ContentDetector.org helps you check if a passage was likely written by an AI model. Paste text, upload a file, or drop in a URL. In a few seconds you get a clear score, section-by-section highlights, and simple guidance to keep your content authentic and publish-ready. Built for editors, marketers, educators, and teams that care about trust."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    }
+  ]
+}

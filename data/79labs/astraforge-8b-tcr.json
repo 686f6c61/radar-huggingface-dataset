@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "79Labs/astraforge-8b-TCR",
+  "slug": "79labs-astraforge-8b-tcr",
+  "author": "79Labs",
+  "url": "https://huggingface.co/79Labs/astraforge-8b-TCR",
+  "created_at": "2026-08-23T06:42:11.000Z",
+  "updated_at": "2026-08-23T06:42:53.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "agentic",
+    "tool-calling",
+    "function-calling",
+    "lora",
+    "unsloth",
+    "elicitation",
+    "rag",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agentic tool-calling",
+      "dataset": "79Labs in-house agentic benchmark (N=100)",
+      "metric": "Tool-correct (right tool, schema-valid call, ≤2 turns)",
+      "value": 0.9
+    },
+    {
+      "task": "Agentic tool-calling",
+      "dataset": "79Labs in-house agentic benchmark (N=100)",
+      "metric": "Confirmed-first (asks before acting)",
+      "value": 0.89
+    },
+    {
+      "task": "Agentic tool-calling",
+      "dataset": "79Labs in-house agentic benchmark (N=100)",
+      "metric": "GSM8K (reasoning control, exact-match)",
+      "value": 0.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "79Labs (79Labs) - Hugging Face",
+      "url": "https://huggingface.co/79Labs/models",
+      "snippet": "Org profile for 79Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "79Labs/astraforge-70b-TCR at main - Hugging Face",
+      "url": "https://huggingface.co/79Labs/astraforge-70b-TCR/tree/main",
+      "snippet": "79Labs / astraforge-70b-TCR like 0 Follow 79Labs 1 Text Generation PEFT Safetensors English agentic tool-calling function-calling lora qlora unsloth elicitation rag conversational Eval Results (legacy) License:llama3.3 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "AstraForge | Governed AI Execution for Production Outcomes",
+      "url": "https://astraforge.dev/",
+      "snippet": "AstraForge is the enterprise execution and governance platform that turns AI pilots into controlled production outcomes with approvals, auditability, memory, artifacts, and on-prem deployment control."
+    },
+    {
+      "title": "Astraforge | AI Automation Testing Platform by Global Suntec",
+      "url": "https://astraforge.io/",
+      "snippet": "Astraforge.io is an advanced AI-powered automation framework developed under Global Suntec that learns from your test history, domain, and behavior to generate smarter, faster, and more reliable test plans and executions. From test creation to analytics — it&#x27;s automation reimagined."
+    },
+    {
+      "title": "GitHub - vishnuHas/Astraforge: AI Full Stack Developer",
+      "url": "https://github.com/vishnuHas/Astraforge",
+      "snippet": "AI Full Stack Developer. Contribute to vishnuHas/Astraforge development by creating an account on GitHub."
+    }
+  ]
+}

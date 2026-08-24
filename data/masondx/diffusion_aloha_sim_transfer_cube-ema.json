@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diffusion_aloha_sim_transfer_cube-ema",
+  "slug": "masondx-diffusion_aloha_sim_transfer_cube-ema",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube-ema",
+  "created_at": "2026-08-23T11:20:17.000Z",
+  "updated_at": "2026-08-23T11:20:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 263450374,
+  "parameters_human": "263.5M",
+  "storage_bytes": 1053841936,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/act_aloha_sim_transfer_cube_human · Hugging Face",
+      "url": "https://huggingface.co/lerobot/act_aloha_sim_transfer_cube_human",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-deepmind/aloha_sim: A collection of tabletop tasks in ...",
+      "url": "https://github.com/google-deepmind/aloha_sim",
+      "snippet": "A collection of tabletop tasks in Mujoco. Contribute to google-deepmind/aloha_sim development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?dataset=dataset:lerobot/aloha_sim_transfer_cube_human",
+      "snippet": "Explore machine learning models. aposadasn/aloha_sim_transfer_human_mact_nobs10_xattn_model"
+    },
+    {
+      "title": "aloha_sim_transfer_cube_scripted_image - DataTrain.AI",
+      "url": "https://www.datatrain.ai/datasets/hf-lerobot-aloha-sim-transfer-cube-scripted-image/",
+      "snippet": "Source: Hugging Face Hub (lerobot/aloha_sim_transfer_cube_scripted_image). Metadata imported from the dataset&#x27;s Hub tags."
+    },
+    {
+      "title": "aloha_sim_transfer_cube_human - DataTrain.AI",
+      "url": "https://www.datatrain.ai/datasets/hf-lerobot-aloha-sim-transfer-cube-human/",
+      "snippet": "Source: Hugging Face Hub (lerobot/aloha_sim_transfer_cube_human). Metadata imported from the dataset&#x27;s Hub tags."
+    }
+  ]
+}

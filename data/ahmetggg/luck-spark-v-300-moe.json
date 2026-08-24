@@ -5,7 +5,7 @@
   "author": "ahmetggg",
   "url": "https://huggingface.co/ahmetggg/Luck-spark-V-300-MoE",
   "created_at": "2026-08-15T10:33:29.000Z",
-  "updated_at": "2026-08-22T13:09:40.000Z",
+  "updated_at": "2026-08-24T05:49:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1079,
+  "downloads_30d": 1579,
   "trending_score": 0,
   "parameters": 294580992,
   "parameters_human": "294.6M",
-  "storage_bytes": 27102795701,
-  "storage_human": "27.1 GB",
+  "storage_bytes": 44778205281,
+  "storage_human": "44.8 GB",
   "base_model": "ahmetggg/Luck-spark-V-300-MoE",
   "formats": [
     "safetensors"

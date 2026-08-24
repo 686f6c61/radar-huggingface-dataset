@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ScriptedBro/naija-agri-llm",
+  "slug": "scriptedbro-naija-agri-llm",
+  "author": "ScriptedBro",
+  "url": "https://huggingface.co/ScriptedBro/naija-agri-llm",
+  "created_at": "2026-08-24T01:09:16.000Z",
+  "updated_at": "2026-08-24T01:11:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:quantized:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 1375828991,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Professor/naija-agri-llm-yoruba-hausa · Hugging Face",
+      "url": "https://huggingface.co/Professor/naija-agri-llm-yoruba-hausa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ScriptedBro (Fredrick Obinna Loveday) - Hugging Face",
+      "url": "https://huggingface.co/ScriptedBro",
+      "snippet": "User profile of Fredrick Obinna Loveday on Hugging Face"
+    },
+    {
+      "title": "Agri-LLM: Prompt-Based Large Language Model for Emission Data Analytics ...",
+      "url": "https://ieeexplore.ieee.org/document/11194249",
+      "snippet": "To address this issue, this article proposes a pretrained large language model dubbed Agri-LLM for GHG emission data imputation and forecasting in smart agriculture. Notably, this model develops an information fusion embedding layer that fuses missing patterns, temporal irregularities and incomplete time series into multilevel patched tokens."
+    },
+    {
+      "title": "naija-agri-llm-yoruba-hausa API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Professor/naija-agri-llm-yoruba-hausa",
+      "snippet": "Deploy naija-agri-llm-yoruba-hausa with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - DARJYO/agri-AI: Building AI for Agriculture. · GitHub",
+      "url": "https://github.com/DARJYO/agri-AI",
+      "snippet": "Agri-AI is an AI-powered language model tailored for the agriculture industry. It leverages natural language processing (NLP) to provide farmers, agribusinesses, and policymakers with actionable insights, predictive analytics, and multilingual conversational capabilities. Developed by DARJYO, Agri-AI aims to revolutionize agricultural intelligence and foster sustainability."
+    }
+  ]
+}

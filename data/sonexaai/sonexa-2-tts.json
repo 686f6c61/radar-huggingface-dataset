@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SonexaAI/Sonexa-2-TTS",
+  "slug": "sonexaai-sonexa-2-tts",
+  "author": "SonexaAI",
+  "url": "https://huggingface.co/SonexaAI/Sonexa-2-TTS",
+  "created_at": "2026-08-23T08:16:40.000Z",
+  "updated_at": "2026-08-23T08:16:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 4539846851,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sonexa AI",
+      "url": "https://sonexaai.tech/",
+      "snippet": "Sonexa AI — Voice AI that feels naturally human. Sub-100ms latency, 50+ languages, 100+ topics."
+    },
+    {
+      "title": "SonexaAI (Sonexa Artificial Intelligence) - Hugging Face",
+      "url": "https://huggingface.co/SonexaAI",
+      "snippet": "Sonexa AI is an independent AI research and development organization focused on creating and fine-tuning language models for coding, natural conversations, and real-world AI applications."
+    },
+    {
+      "title": "Sonexa ASR/TTS - a SonexaAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/SonexaAI/sonexa-asr-tts",
+      "snippet": "Cartik/Sonexa-1-ASR Automatic Speech Recognition • 0.9B•Updated Jul 2• 5 Upvote - Sort: Collection"
+    },
+    {
+      "title": "Sonexa",
+      "url": "https://sonexa-ai.app/",
+      "snippet": "Sonexa is a modern AI-powered text-to-speech platform that transforms your words into natural, expressive voice in seconds."
+    },
+    {
+      "title": "Cartesia | Real-time TTS API with AI laughter and emotion",
+      "url": "https://www.cartesia.ai/sonic",
+      "snippet": "Integrate real-time text-to-speech with Sonic-3, Cartesia&#x27;s streaming TTS API. Generate natural, expressive voices with laughter in 40+ languages—built for AI agents and interactive apps."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vibe-app/diar-streaming-sortformer-4spk-v2-gguf",
+  "slug": "vibe-app-diar-streaming-sortformer-4spk-v2-gguf",
+  "author": "vibe-app",
+  "url": "https://huggingface.co/vibe-app/diar-streaming-sortformer-4spk-v2-gguf",
+  "created_at": "2026-08-24T08:50:48.000Z",
+  "updated_at": "2026-08-24T08:50:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speaker-diarization",
+    "sortformer",
+    "vibe",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2",
+    "base_model:quantized:nvidia/diar_streaming_sortformer_4spk-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122862212,
+  "parameters_human": "122.9M",
+  "storage_bytes": 147075776,
+  "storage_human": "147 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/diar_streaming_sortformer_4spk-v2 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "everyscribe/diar_streaming_sortformer_4spk-v2 · Hugging Face",
+      "url": "https://huggingface.co/everyscribe/diar_streaming_sortformer_4spk-v2",
+      "snippet": "A new version of streaming Sortformer v2.1 has been released, providing greater robustness for meeting speech. Streaming Sortformer Diarizer 4spk v2 | This model is a streaming version of Sortformer diarizer. Sortformer [1] is a novel end-to-end neural model for speaker diarization, trained with unconventional objectives compared to existing end-to-end diarization models."
+    },
+    {
+      "title": "diar_streaming_sortformer_4spk-v2: Audio-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/diar-streaming-sortformer-4spk-v2-nvidia",
+      "snippet": "diar_sortformer_4spk-v1 is the offline (non-streaming) version with 123M parameters (6M more than v2). Use v1 if you can tolerate end-to-end latency and need higher accuracy, since offline models access full recording context."
+    },
+    {
+      "title": "GitHub - hieuxinloi/Sortformer-Speaker-Diarization",
+      "url": "https://github.com/hieuxinloi/Sortformer-Speaker-Diarization/tree/main",
+      "snippet": "This project implements fine-tuning for the Sortformer model from NVIDIA (a Transformer-based encoder-labeler architecture) for the Speaker Diarization task (\"who spoke when\"). The model is optimized for streaming audio and is capable of separating the voices of up to 4 simultaneous speakers, maintaining high accuracy even in scenarios with overlapping speech."
+    },
+    {
+      "title": "diar_streaming_sortformer_4spk-v2.1: Audio-to-Text model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/diar-streaming-sortformer-4spk-v2.1-nvidia",
+      "snippet": "diar_sortformer_4spk-v1 is the offline (non-streaming) version with 123M parameters and 18-layer NEST encoder. Choose v2.1 for production streaming systems where you cannot wait for complete audio; use v1 if you process batch files offline and want marginally higher parameter count (6M more)."
+    }
+  ]
+}

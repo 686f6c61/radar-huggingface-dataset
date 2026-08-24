@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+  "slug": "chenyumo-moziai-35b-a3b-moe-mtp-uncensored",
+  "author": "chenyumo",
+  "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+  "created_at": "2026-08-10T19:42:08.000Z",
+  "updated_at": "2026-08-23T18:21:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "MoE",
+    "financial-llm",
+    "MoziSmartBit",
+    "qwen3.5",
+    "qwen3.6",
+    "ornith",
+    "MoziAI",
+    "tool-calling",
+    "uncensored",
+    "vision",
+    "text-generation",
+    "zh",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 940,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 31913866713,
+  "storage_human": "31.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoziAI-35B-A3B-MOE（墨子AI）金融垂直领域大模型 - GitHub",
+      "url": "https://github.com/chenyumo166/moziAI",
+      "snippet": "MoziAI-35B-A3B-MOE多模态模型是由中国财经大V陈雨墨团队开发的金融AI多模态大模型（支持视觉与工具调用），基于 Ornith-1.-35B（Qwen3.5-35B-A3B 架构）底座微调/蒸馏与开发。"
+    },
+    {
+      "title": "moziAI-35B-A3B-MOE-MTP-Uncensored · Models",
+      "url": "https://www.modelscope.cn/models/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+      "snippet": "MoziAI-35B-A3B-MOE is a local open-source multimodal AI large language model developed by Chinese finance influencer Chen Yumo&#x27;s team (focuses on financial domain, supports vision, tool calling, complex long tasks, consumer GPU local deployment)."
+    },
+    {
+      "title": "README.ja.md · chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored at main",
+      "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored/blob/main/README.ja.md",
+      "snippet": "Instructions to use chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MoziAI-35B-A3B-MOE（墨子AI）AI大模型 V3.6 - GitHub",
+      "url": "https://github.com/chenyumo166/moziAI-35B-Qwen3.6-35B-A3B-Ornith",
+      "snippet": "模型简介 MoziAI-35B-A3B-MOE 是由中国财经大V陈雨墨团队开发的本地开源多模态AI大模型（强化金融领域、支持视觉、工具调用、消费级显卡本地部署），基于 Ornith-1.-35B（Qwen3.5-35B-A3B / Qwen3.6-35B-A3B 架构）底座进行二次开发/微调/蒸馏。"
+    },
+    {
+      "title": "MoziAI-35B-A3B-MOE（墨子AI）AI大模型 V3.6 - Hugging Face",
+      "url": "https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith/blob/main/README.zh-hant.md",
+      "snippet": "chenyumo / moziAI-35B-Qwen3.6-35B-A3B-Ornith like 1 Text Generation GGUF Chinese English llama-cpp MoE financial-llm MoziSmartBit qwen3.5 qwen3.6 ornith MoziAI tool-calling uncensored vision imatrix conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Kiuyha/PromptM-UNet",
+  "slug": "kiuyha-promptm-unet",
+  "author": "Kiuyha",
+  "url": "https://huggingface.co/Kiuyha/PromptM-UNet",
+  "created_at": "2026-08-09T01:05:06.000Z",
+  "updated_at": "2026-08-24T01:44:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "promptm-unet",
+  "languages": [],
+  "tags": [
+    "promptm-unet",
+    "medical",
+    "3d-segmentation",
+    "mamba",
+    "state-space-model",
+    "vision-language",
+    "prompt-guided-segmentation",
+    "ct-scan",
+    "spleen",
+    "totalsegmentator",
+    "lightm-unet",
+    "image-segmentation",
+    "arxiv:2511.11450",
+    "arxiv:2311.13385",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 737838363,
+  "storage_human": "738 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kiuyha/PromptM-UNet · Hugging Face",
+      "url": "https://huggingface.co/Kiuyha/PromptM-UNet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kiuyha/PromptM-UNet at main - Hugging Face",
+      "url": "https://huggingface.co/Kiuyha/PromptM-UNet/tree/main",
+      "snippet": "Kiuyha / PromptM-UNet like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main PromptM-UNet 60.7 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Kiuyha Upload lightm-unet_pretrained.pth 941adc7 verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md Safe 28 Bytesinitial commitabout 6 hours ago lightm-unet ..."
+    },
+    {
+      "title": "arXiv:2305.10300v1 [eess.IV] 17 May 2023",
+      "url": "https://arxiv.org/pdf/2305.10300v1",
+      "snippet": "Abstract. Prompt-based segmentation, also known as interactive seg-mentation, has recently become a popular approach in image segmen-tation. A well-designed prompt-based model called Segment Anything Model (SAM) has demonstrated its ability to segment a wide range of natural images, which has sparked a lot of discussion in the commu-nity. However, recent studies have shown that SAM performs ..."
+    },
+    {
+      "title": "GitHub - WuJunde/PromptUNet: Interactive Medical Image Segmentation",
+      "url": "https://github.com/WuJunde/PromptUNet",
+      "snippet": "OnePrompt Model produces high quality organ/tissue masks on unseen tasks through one unser-given prompted template. It has strong zero-shot performance on a variety of medical image segmentation tasks, including CT, MRI, ultrasound, fundus, and dermoscopic images. Check our Paper for details."
+    },
+    {
+      "title": "Search Prompts for AI Image & Video Generation | PromptHero",
+      "url": "https://prompthero.com/",
+      "snippet": "Search millions of AI prompts for Midjourney, Stable Diffusion, Sora, and every leading generative model. Discover hand-picked inspiration from the PromptHero community."
+    }
+  ]
+}

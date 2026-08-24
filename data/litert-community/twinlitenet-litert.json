@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/TwinLiteNet-LiteRT",
+  "slug": "litert-community-twinlitenet-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/TwinLiteNet-LiteRT",
+  "created_at": "2026-07-07T00:11:15.000Z",
+  "updated_at": "2026-08-23T23:07:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "gpu",
+    "drivable-area",
+    "lane-segmentation",
+    "adas",
+    "autonomous-driving",
+    "real-time",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3777284,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/TwinLiteNet-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/TwinLiteNet-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/TwinLiteNet-LiteRT at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/TwinLiteNet-LiteRT/tree/main",
+      "snippet": "litert-community / TwinLiteNet-LiteRT like 0 Follow LiteRT Community (FKA TFLite) 7.89k Image Segmentation LiteRT LiteRT android on-device gpu drivable-area lane-segmentation adas autonomous-driving real-time License:mit Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Twinlitenet Litert - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/litert-community/twinlitenet-litert",
+      "snippet": "🆔 Identity & Source id hf-model--litert-community--twinlitenet-litert slug litert-community--twinlitenet-litert source huggingface author Litert Community license MIT tags litert, tflite, android, on-device, gpu, drivable-area, lane-segmentation, adas, autonomous-driving, real-time, image-segmentation, license:mit, region:us"
+    },
+    {
+      "title": "GitHub - chequanghuy/TwinLiteNet",
+      "url": "https://github.com/chequanghuy/TwinLiteNet",
+      "snippet": "Check it out now at for enhanced performance and new features! 🎉🔥 TwinLiteNet is a lightweight and efficient deep learning model designed for Drivable Area Segmentation and Lane Detection in self-driving cars. This repository provides the code and resources needed to train, evaluate, and deploy TwinLiteNet."
+    },
+    {
+      "title": "Community Contributed Model — IoT AI Hub documentation",
+      "url": "https://genio.mediatek.com/doc/iot-aihub/ai_hub/model_zoo/litert_analytical/community_contributed_model.html",
+      "snippet": "The Community Contributed Model section collects benchmarking information for models contributed by developers and partners worldwide. These entries are intended for evaluation and reference only and may not provide a complete end-to-end workflow."
+    }
+  ]
+}

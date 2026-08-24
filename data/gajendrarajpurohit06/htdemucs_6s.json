@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "GajendraRajpurohit06/htdemucs_6s",
+  "slug": "gajendrarajpurohit06-htdemucs_6s",
+  "author": "GajendraRajpurohit06",
+  "url": "https://huggingface.co/GajendraRajpurohit06/htdemucs_6s",
+  "created_at": "2026-08-23T09:17:33.000Z",
+  "updated_at": "2026-08-23T09:25:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1572146412,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/demucs: Code for the paper Hybrid Spectrogram ...",
+      "url": "https://github.com/facebookresearch/demucs",
+      "snippet": "This model separates drums, bass and vocals and other stems for any song. As Hybrid Transformer Demucs is brand new, it is not activated by default, you can activate it in the usual commands described hereafter with -n htdemucs_ft. The single, non fine-tuned model is provided as -n htdemucs, and the retrained baseline as -n hdemucs_mmi."
+    },
+    {
+      "title": "iBoostAI/Demucs-v4 · Hugging Face",
+      "url": "https://huggingface.co/iBoostAI/Demucs-v4",
+      "snippet": "What is HTDemucs? HTDemucs (Hybrid Transformer Demucs) is Meta AI&#x27;s fourth-generation music source separation model, introduced in Hybrid Transformers for Music Source Separation (Rouard et al., ICASSP 2023). Where earlier Demucs generations processed audio purely in the time domain, HTDemucs runs two parallel encoders simultaneously — one operating on the raw waveform, the other on the STFT ..."
+    },
+    {
+      "title": "htdemucs_6s.yaml · musicfy/uvr at main - Hugging Face",
+      "url": "https://huggingface.co/musicfy/uvr/blob/main/htdemucs_6s.yaml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DEMUCS - Music source separation",
+      "url": "https://demucs.danielfrg.com/",
+      "snippet": "Online service for music source separation"
+    },
+    {
+      "title": "cjwbw/demucs | Readme and Docs - Replicate",
+      "url": "https://replicate.com/cjwbw/demucs/readme",
+      "snippet": "- htdemucs: first version of Hybrid Transformer Demucs. Trained on MusDB + 800 songs. Default model. - htdemucs_ft: fine-tuned version of htdemucs, separation will take 4 times more time but might be a bit better. Same training set as htdemucs. - htdemucs_6s: 6 sources version of htdemucs, with piano and guitar being added as sources."
+    }
+  ]
+}

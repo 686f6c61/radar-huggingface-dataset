@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Aether258/pi05_bi_two_tubes_0102_step22000",
+  "slug": "aether258-pi05_bi_two_tubes_0102_step22000",
+  "author": "Aether258",
+  "url": "https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step22000",
+  "created_at": "2026-08-23T05:17:47.000Z",
+  "updated_at": "2026-08-23T05:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "manipulation",
+    "pi0",
+    "tactile",
+    "bimanual",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9586968013,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether258/pi05_bi_two_tubes_0102_step6000 · Hugging Face",
+      "url": "https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step6000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258/activity/all",
+      "snippet": "Aether258/pi05_bi_vitac_byw_smash_13 Robotics •Updated May 25 published a modelabout 1 month ago"
+    },
+    {
+      "title": "GitHub - Tonghe-Zhang/openpi-physical-intelligence",
+      "url": "https://github.com/Tonghe-Zhang/openpi-physical-intelligence",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/model_adaptation.py at ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/model_adaptation.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

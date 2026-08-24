@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HYonthePark/news2stock-lora",
+  "slug": "hyonthepark-news2stock-lora",
+  "author": "HYonthePark",
+  "url": "https://huggingface.co/HYonthePark/news2stock-lora",
+  "created_at": "2026-08-24T10:01:42.000Z",
+  "updated_at": "2026-08-24T10:01:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,045 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "GenghisHan0911 (Han Seunghyuk) - Hugging Face",
+      "url": "https://huggingface.co/GenghisHan0911",
+      "snippet": "Sort: Recently updated GenghisHan0911/hari-zit-lora Text-to-Image •Updated about 10 hours ago• 11 •"
+    },
+    {
+      "title": "sim2084 (simgisung) - Hugging Face",
+      "url": "https://huggingface.co/sim2084",
+      "snippet": "sim2084/Llama-VARCO-8b-news2stock-analyser-4bit-merged Text Generation • 8B•Updated about 2 hours ago"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "deu05232/promptriever-llama2-7B-followtable-RandLH4",
+  "slug": "deu05232-promptriever-llama2-7b-followtable-randlh4",
+  "author": "deu05232",
+  "url": "https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-RandLH4",
+  "created_at": "2026-08-24T03:41:08.000Z",
+  "updated_at": "2026-08-24T03:43:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-2-7b-hf",
+    "base_model:adapter:meta-llama/Llama-2-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14335515540,
+  "storage_human": "14.3 GB",
+  "base_model": "meta-llama/Llama-2-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deu05232/promptriever-llama2-7B-followtable-JointLH4 · Hugging Face",
+      "url": "https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-JointLH4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deu05232/promptriever-llama2-7B-followtable · Hugging Face",
+      "url": "https://huggingface.co/deu05232/promptriever-llama2-7B-followtable",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - orionw/promptriever: The first dense retrieval model that can ...",
+      "url": "https://github.com/orionw/promptriever",
+      "snippet": "Official repository for the paper Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models. This repository contains the code and resources for Promptriever, which demonstrates that retrieval models can be controlled with prompts on a per-instance basis, similar to language ..."
+    },
+    {
+      "title": "deu05232/promptriever-repro-llama2-7b - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/deu05232/promptriever-repro-llama2-7b",
+      "snippet": "Run deu05232/promptriever-repro-llama2-7b with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "llama2:7b",
+      "url": "https://ollama.com/library/llama2:7b",
+      "snippet": "7b models generally require at least 8GB of RAM 13b models generally require at least 16GB of RAM 70b models generally require at least 64GB of RAM If you run into issues with higher quantization levels, try using the q4 model or shut down any other programs that are using a lot of memory. Model variants Chat is fine-tuned for chat/dialogue use ..."
+    }
+  ]
+}

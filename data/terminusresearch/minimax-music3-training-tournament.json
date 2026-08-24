@@ -5,7 +5,7 @@
   "author": "terminusresearch",
   "url": "https://huggingface.co/terminusresearch/minimax-music3-training-tournament",
   "created_at": "2026-08-22T22:42:12.000Z",
-  "updated_at": "2026-08-22T22:42:13.000Z",
+  "updated_at": "2026-08-23T22:44:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -23,7 +23,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

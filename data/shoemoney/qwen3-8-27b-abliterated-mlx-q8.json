@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shoemoney/Qwen3.8-27B-Abliterated-MLX-q8",
+  "slug": "shoemoney-qwen3-8-27b-abliterated-mlx-q8",
+  "author": "shoemoney",
+  "url": "https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q8",
+  "created_at": "2026-08-24T00:50:18.000Z",
+  "updated_at": "2026-08-24T00:50:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "qwen3_5",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "uncensored",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8027131120,
+  "parameters_human": "8.03B",
+  "storage_bytes": 29521207804,
+  "storage_human": "29.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PocketAiHub/Qwen3.8-27B-Abliterated-MLX · Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "GitHub - newbdez33/qwen3.8: Qwen3.8-27B-Uncensored-MLX local deployment ...",
+      "url": "https://github.com/newbdez33/qwen3.8",
+      "snippet": "3. 模型调查结果 该模型是 Qwen3.8-27B 的 abliterated（移除拒答方向）版本，使用 MLX affine 量化，group size 为 64。 视觉塔、归一化层和部分卷积层保留 BF16，语言模型线性权重被量化。 仓库提供以下版本： ... 仓库根目录还复制了一份 4-bit 权重。"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Florence-2-large-ExecuTorch",
+  "slug": "mlboydaisuke-florence-2-large-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Florence-2-large-ExecuTorch",
+  "created_at": "2026-08-24T08:19:14.000Z",
+  "updated_at": "2026-08-24T08:20:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-text-to-text",
+    "image-to-text",
+    "object-detection",
+    "base_model:microsoft/Florence-2-large",
+    "base_model:quantized:microsoft/Florence-2-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5176366323,
+  "storage_human": "5.2 GB",
+  "base_model": "microsoft/Florence-2-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Florence-2-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-large",
+      "snippet": "Florence-2 finetuned performance We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks."
+    },
+    {
+      "title": "microsoft/Florence-2-base · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-base",
+      "snippet": "Florence-2 finetuned performance We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks."
+    },
+    {
+      "title": "Florence-2-large · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/Florence-2-large/summary",
+      "snippet": "Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks Model Summary This is a continued pretrained version of Florence-2-large model with 4k context length, only 0.1B samples are used for continue pretraining, thus it might not be trained well. In addition, OCR task has been updated with line separator (&#x27;&#92;n&#x27;). COCO OD AP 39.8 This Hub repository contains a HuggingFace&#x27;s ..."
+    },
+    {
+      "title": "GitHub - kijai/ComfyUI-Florence2: Inference Microsoft Florence2 VLM",
+      "url": "https://github.com/kijai/ComfyUI-Florence2",
+      "snippet": "Florence2 in ComfyUI Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks. Florence-2 can interpret simple text prompts to perform tasks like captioning, object detection, and segmentation."
+    },
+    {
+      "title": "Florence-2-large · Models - AI-ModelScope",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/Florence-2-large",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ruizhang1993/model_649708809_mae_base",
+  "slug": "ruizhang1993-model_649708809_mae_base",
+  "author": "ruizhang1993",
+  "url": "https://huggingface.co/ruizhang1993/model_649708809_mae_base",
+  "created_at": "2026-08-23T04:46:38.000Z",
+  "updated_at": "2026-08-23T04:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "base",
+    "classification",
+    "cross-attention",
+    "dilated",
+    "gelu-tanh",
+    "linear-warmup",
+    "mae",
+    "rmsnorm",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/vit-mae-base · Hugging Face",
+      "url": "https://huggingface.co/facebook/vit-mae-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "http://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    }
+  ]
+}

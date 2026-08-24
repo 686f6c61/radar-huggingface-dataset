@@ -5,7 +5,7 @@
   "author": "jialei02",
   "url": "https://huggingface.co/jialei02/lawam-pretrain-lerobot",
   "created_at": "2026-08-11T16:00:15.000Z",
-  "updated_at": "2026-08-18T14:58:50.000Z",
+  "updated_at": "2026-08-23T05:07:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 40,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 2555179360,
   "parameters_human": "2.56B",

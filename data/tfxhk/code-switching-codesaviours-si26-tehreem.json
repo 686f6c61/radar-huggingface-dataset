@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tfxhk/code-switching-codesaviours-si26-tehreem",
+  "slug": "tfxhk-code-switching-codesaviours-si26-tehreem",
+  "author": "tfxhk",
+  "url": "https://huggingface.co/tfxhk/code-switching-codesaviours-si26-tehreem",
+  "created_at": "2026-08-24T11:51:45.000Z",
+  "updated_at": "2026-08-24T11:52:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code-switching-codesaviours-si26-eman - Hugging Face",
+      "url": "https://huggingface.co/emanfatimaa05/code-switching-codesaviours-si26-eman",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-",
+      "url": "https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-",
+      "snippet": "Roman Urdu-English code-switching is how most Pakistanis actually write online, but almost no NLP tooling handles it well — models trained on \"clean\" English or Urdu break down on real mixed-language text. This project builds a labeled dataset for exactly this pattern and trains a model to tag each word by language, a building block for downstream tasks like sentiment analysis or search over ..."
+    },
+    {
+      "title": "code-switching-codesaviours-si26-hania - Hugging Face",
+      "url": "https://huggingface.co/HaniaEmaan/code-switching-codesaviours-si26-hania",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - tfxhk/urdu_ocr_codesaviours_si26_Hafiza_Tehreem: Week 1 OCR ...",
+      "url": "https://github.com/tfxhk/urdu_ocr_codesaviours_si26_Hafiza_Tehreem",
+      "snippet": "The objective of this project is to build an Urdu Optical Character Recognition (OCR) system capable of recognizing Urdu text from images. During Week 1, the focus was on setting up the development environment, collecting a suitable dataset, organizing the images, and preparing the ground truth ..."
+    },
+    {
+      "title": "#nlp #urdunlp #machinelearning #codesaviours #si26 | Humna Imran - LinkedIn",
+      "url": "https://www.linkedin.com/posts/hamnaic_nlp-urdunlp-machinelearning-activity-7496265202267713538-Rzdz",
+      "snippet": "Both models are also live on HuggingFace: 🔗 Urdu OCR Demo: hamnaheh/trocr-urdu-si26-week4 🔗 Code Switching Model: hamnaheh/code-switching-langid-si26-humna One thing I want to call out: our ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "s-nlp/tool-calling-hallucination-modernbert-large-crf-k2-frozen-adapter-best",
+  "slug": "s-nlp-tool-calling-hallucination-modernbert-large-crf-k2-frozen-adapter-best",
+  "author": "s-nlp",
+  "url": "https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-large-crf-k2-frozen-adapter-best",
+  "created_at": "2026-08-24T15:36:58.000Z",
+  "updated_at": "2026-08-24T15:36:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "hallucination-detection",
+    "crf",
+    "tool-calling",
+    "span-detection",
+    "en",
+    "dataset:s-nlp/toolHACE",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "s-nlp/tool-calling-hallucination-modernbert-base-unified-final",
+      "url": "https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-base-unified-final",
+      "snippet": "The model predicts character-level hallucination spans in an assistant&#x27;s answer given a tool-calling context (user query + tool response)."
+    },
+    {
+      "title": "s-nlp/tool-calling-hallucination-modernbert-base-glaive-100pct",
+      "url": "https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-base-glaive-100pct",
+      "snippet": "The model predicts character-level hallucination spans in an assistant&#x27;s answer given a tool-calling context (user query + tool response)."
+    },
+    {
+      "title": "Tool Calling Hallucination Modernbert Base Unified Final",
+      "url": "https://free2aitools.com/model/s-nlp/tool-calling-hallucination-modernbert-base-unified-final",
+      "snippet": "by S Nlp s-nlp/tool-calling-hallucination-modernbert-base-unified-final Free2AITools Nexus Index 39.2 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity10 R: Recency95 Q: Quality65 Tech Context 0.15BParams 4.096KCtx Vital Performance 132 DL / 30D Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "The rise of hallucination in large language models ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10586-025-05891-z",
+      "snippet": "Large language models (LLMs) have shown exceptional capabilities in Natural Language Processing (NLP) tasks. However, their tendency to generate inaccurate or fabricated information (commonly referred to as hallucinations) poses serious challenges to reliability and user trust. Despite growing research, comprehensive reviews on LLM hallucinations are scarce, creating a critical gap in the ..."
+    },
+    {
+      "title": "A Comprehensive Survey of Hallucination in Large Language Models ...",
+      "url": "https://arxiv.org/html/2510.06265v1",
+      "snippet": "This survey provides a comprehensive review of research on hallucination in LLMs, with a focus on causes, detection, and mitigation. We first present a taxonomy of hallucination types and analyze their root causes across the entire LLM development lifecycle, from data collection and architecture design to inference."
+    }
+  ]
+}

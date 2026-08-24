@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sadjava/smolvla-video-expert-libero90-s1000",
+  "slug": "sadjava-smolvla-video-expert-libero90-s1000",
+  "author": "sadjava",
+  "url": "https://huggingface.co/sadjava/smolvla-video-expert-libero90-s1000",
+  "created_at": "2026-08-23T14:42:32.000Z",
+  "updated_at": "2026-08-23T14:42:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "libero",
+    "video",
+    "action-free",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906713160,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceVLA/smolvla_libero · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceVLA/smolvla_libero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "libero_goal_ft_naive - a sadjava Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sadjava/libero-goal-ft-naive",
+      "snippet": "SmolVLA few-shot FT on LIBERO-Goal (naive): tasks 0/1/2, demos 2/5/10/25, seeds 1000/2000, ckpt 2000."
+    },
+    {
+      "title": "GitHub - goelshivam1210/smolvla: training smolvla on libero dataset",
+      "url": "https://github.com/goelshivam1210/smolvla",
+      "snippet": "Fine-tuning SmolVLA (450M param Vision-Language-Action model) on the LIBERO robot manipulation benchmark using LoRA, with evaluation in simulation. Built for the SmolVLA training on LIBERO."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "GitHub - wycliffeoleti/smolVLA: SmolVLA 450M VLA fine-tuning on LIBERO ...",
+      "url": "https://github.com/wycliffeoleti/smolVLA",
+      "snippet": "SmolVLA: Vision-Language-Action Fine-Tuning on Consumer Hardware End-to-end fine-tuning of a 450M-parameter Vision-Language-Action model (SmolVLA) for robotic pick-and-place on a single RTX 4060 (8GB VRAM) using LeRobot."
+    }
+  ]
+}

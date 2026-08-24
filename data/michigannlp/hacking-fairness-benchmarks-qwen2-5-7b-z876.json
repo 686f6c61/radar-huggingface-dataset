@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z876",
+  "slug": "michigannlp-hacking-fairness-benchmarks-qwen2-5-7b-z876",
+  "author": "MichiganNLP",
+  "url": "https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z876",
+  "created_at": "2026-08-23T13:24:15.000Z",
+  "updated_at": "2026-08-23T13:24:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "fairness",
+    "bbq",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:adapter:Qwen/Qwen2.5-7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1615335600,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "GitHub - reliable-ai/fairml-multiverse: Code and data for \"One Model ...",
+      "url": "https://github.com/reliable-ai/fairml-multiverse",
+      "snippet": "This repository contains the code and data for the paper One Model Many Scores: Using Multiverse Analysis to Prevent Fairness Hacking and Evaluate the Influence of Model Design Decisions by Jan Simson, Florian Pfisterer and Christoph Kern, published in the proceedings of the ACM Conference on Fairness, Accountability, and Transparency 2024 in Rio de Janeiro, Brazil in June 2024. You can ..."
+    },
+    {
+      "title": "One Model Many Scores: Using Multiverse Analysis to Prevent Fairness ...",
+      "url": "https://arxiv.org/html/2308.16681",
+      "snippet": "We further advocate for the use of multiverse analysis in fairness evaluations to understand the distribution of fairness scores that can be evoked by the same model under different evaluation scenarios and to reduce the risk of potential fairness hacking by transparently reporting the entirety of results."
+    }
+  ]
+}

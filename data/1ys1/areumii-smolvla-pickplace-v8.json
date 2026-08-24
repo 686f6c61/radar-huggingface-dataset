@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1ys1/areumii-smolvla-pickplace-v8",
+  "slug": "1ys1-areumii-smolvla-pickplace-v8",
+  "author": "1ys1",
+  "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v8",
+  "created_at": "2026-08-24T12:15:47.000Z",
+  "updated_at": "2026-08-24T12:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:1ys1/areumii_pickplace-v7",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906722056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1ys1/areumii-smolvla-pickplace-v2 · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v2",
+      "snippet": "1ys1/areumii_pickplace-v2 ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "1ys1/areumii-smolvla-pickplace-v4 · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v4",
+      "snippet": "1ys1 / areumii-smolvla-pickplace-v4 like 0 Robotics LeRobot Safetensors 1ys1/areumii_pickplace-v4 smolvla arxiv:2506.01844 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Areumii_PickPlace_v1 / smolVLA eval - YouTube",
+      "url": "https://www.youtube.com/watch?v=yfHKDRRaGDg",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

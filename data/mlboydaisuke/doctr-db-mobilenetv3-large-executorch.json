@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/docTR-DB-MobileNetV3-Large-ExecuTorch",
+  "slug": "mlboydaisuke-doctr-db-mobilenetv3-large-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/docTR-DB-MobileNetV3-Large-ExecuTorch",
+  "created_at": "2026-08-23T05:54:04.000Z",
+  "updated_at": "2026-08-23T05:54:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "object-detection",
+    "text-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24659306,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "docTR-DB-MobileNetV3-Large-ExecuTorch - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/docTR-DB-MobileNetV3-Large-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlboydaisuke/MobileNetV3-Large-ImageNet-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/MobileNetV3-Large-ImageNet-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MobileNet-v3-Large - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mobilenet_v3_large",
+      "snippet": "MobileNet-v3-Large Imagenet classifier and general purpose backbone. MobileNet‑v3‑Large is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    },
+    {
+      "title": "GitHub - pytorch/executorch: On-device AI across mobile, embedded and ...",
+      "url": "https://github.com/pytorch/executorch",
+      "snippet": "It powers Meta&#x27;s on-device AI across Instagram, WhatsApp, Quest 3, Ray-Ban Meta Smart Glasses, and more. Deploy LLMs, vision, speech, and multimodal models with the same PyTorch APIs you already know—accelerating research to production with seamless model export, optimization, and deployment."
+    },
+    {
+      "title": "MobileNetV3-Large | d-li14/mobilenetv3.pytorch | DeepWiki",
+      "url": "https://deepwiki.com/d-li14/mobilenetv3.pytorch/2.1-mobilenetv3-large",
+      "snippet": "MobileNetV3-Large is a highly efficient convolutional neural network architecture designed for mobile and edge devices. This page documents the specific configuration, parameters, and performance characteristics of the MobileNetV3-Large variant as implemented in this repository."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TaoLiveAIGC/TLive-Omni-4B",
+  "slug": "taoliveaigc-tlive-omni-4b",
+  "author": "TaoLiveAIGC",
+  "url": "https://huggingface.co/TaoLiveAIGC/TLive-Omni-4B",
+  "created_at": "2026-08-14T03:14:49.000Z",
+  "updated_at": "2026-08-24T02:21:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tlive_omni",
+    "text-generation",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "custom-code",
+    "conversational",
+    "custom_code",
+    "arxiv:2608.20958",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 189,
+  "trending_score": 8,
+  "parameters": 5823547776,
+  "parameters_human": "5.82B",
+  "storage_bytes": 11667227988,
+  "storage_human": "11.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TaoLiveAIGC/TLive-Omni: TLive-Omni: An Omni-Modal ...",
+      "url": "https://github.com/TaoLiveAIGC/TLive-Omni",
+      "snippet": "TLive-Omni is an omni-modal understanding model for e-commerce live-stream, mapping image, video, audio, and text into a unified text-output interface. Built on a Qwen3.5 backbone with a grafted AuT audio encoder, it supports 256K tokens of context, trained via a three-stage SFT recipe followed by Faithful-RFT reinforcement fine-tuning."
+    },
+    {
+      "title": "TLive-Omni: An Omni-Modal Understanding Model for E-Commerce Live Streaming",
+      "url": "https://arxiv.org/pdf/2608.20958",
+      "snippet": "Abstract E-commerce live streaming requires omni-modal understanding of noisy, tempo-rally extended streams, where product facts are distributed across speech, video frames, product images, overlaid text, and user queries. We present TLive-Omni, an omni-modal understanding model tailored to live-commerce scenarios. It maps im-age, video, audio, and text inputs into a unified representation ..."
+    },
+    {
+      "title": "TaoLiveAIGC (TaoLive AIGC) - Hugging Face",
+      "url": "https://huggingface.co/TaoLiveAIGC",
+      "snippet": "Org profile for TaoLive AIGC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "PDF TLive-Omni/TLive-Omni-Technical-Report.pdf at main - GitHub",
+      "url": "https://github.com/TaoLiveAIGC/TLive-Omni/blob/main/TLive-Omni-Technical-Report.pdf",
+      "snippet": "TLive-Omni: An Omni-Modal Understanding Model for E-Commerce Live Streaming - TaoLiveAIGC/TLive-Omni"
+    },
+    {
+      "title": "sensenova/InteractiveOmni-4B · Hugging Face",
+      "url": "https://huggingface.co/sensenova/InteractiveOmni-4B",
+      "snippet": "Paper for sensenova/InteractiveOmni-4B InteractiveOmni: A Unified Omni-modal Model for Audio-Visual Multi-turn Dialogue Paper • 2510.13747 •Published Oct 15, 2025• 33"
+    }
+  ]
+}

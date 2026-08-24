@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dayanpro/DeepSeek-R1-Distill-Qwen-1.5B-LiteRT",
+  "slug": "dayanpro-deepseek-r1-distill-qwen-1-5b-litert",
+  "author": "dayanpro",
+  "url": "https://huggingface.co/dayanpro/DeepSeek-R1-Distill-Qwen-1.5B-LiteRT",
+  "created_at": "2026-08-24T01:54:21.000Z",
+  "updated_at": "2026-08-24T01:54:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "reasoning",
+    "deepseek-r1",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3331612704,
+  "storage_human": "3.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Distilled Models | deepseek-ai/DeepSeek-R1 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-R1/2.3-distilled-models",
+      "snippet": "The DeepSeek-R1 distillation approach has been applied to two major model architectures: Qwen and Llama. This creates a family of models with varying parameter sizes to accommodate different deployment requirements and computational constraints."
+    },
+    {
+      "title": "GitHub - madaibaba/deepseek-distill-qwen: The Deepseek Distillation of ...",
+      "url": "https://github.com/madaibaba/deepseek-distill-qwen",
+      "snippet": "This project implements the distillation of the Qwen model using Deepseek, aimed at improving model performance and optimizing inference speed. Below are the descriptions and usage details for each script in this project."
+    },
+    {
+      "title": "DeepSeek-R1-Distill-Qwen-1.5B-Multilingual - Hugging Face",
+      "url": "https://huggingface.co/lightblue/DeepSeek-R1-Distill-Qwen-1.5B-Multilingual",
+      "snippet": "This is a Deepseek distill finetune trained on multilingual Chain-of-Thought (CoT). When this model is prompted in a language, it will both think and respond in that language, unlike the original R1 which will often think in either Chinese or English. This will make the outputs of these AIs more understandable and explainable to a wider audience. Hopefully this will be useful to the AI ..."
+    },
+    {
+      "title": "DeepSeek-R1-Distill-Qwen-1.5B-模型库-ModelZoo-昇腾社区",
+      "url": "https://www.hiascend.com/software/modelzoo/models/detail/b54367ef746f484188576c39f5706899",
+      "snippet": "DeepSeek-R1-Distill-Qwen-1.5B是DeepSeek AI从DeepSeek-R1模型中蒸馏出来的Qwen模型，比经过强化学习训练出来的小型稠密模型拥有更好的推理能力。"
+    }
+  ]
+}

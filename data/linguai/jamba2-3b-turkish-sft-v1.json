@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "linguai/Jamba2-3B-Turkish-SFT-v1",
+  "slug": "linguai-jamba2-3b-turkish-sft-v1",
+  "author": "linguai",
+  "url": "https://huggingface.co/linguai/Jamba2-3B-Turkish-SFT-v1",
+  "created_at": "2026-08-23T22:47:49.000Z",
+  "updated_at": "2026-08-24T00:05:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "jamba",
+    "turkish",
+    "instruction-following",
+    "lora-merged",
+    "text-generation",
+    "conversational",
+    "tr",
+    "en",
+    "base_model:serda-dev/Jamba2-3B-Turkish",
+    "base_model:finetune:serda-dev/Jamba2-3B-Turkish",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3039823232,
+  "parameters_human": "3.04B",
+  "storage_bytes": 6079698384,
+  "storage_human": "6.1 GB",
+  "base_model": "serda-dev/Jamba2-3B-Turkish",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai21labs/AI21-Jamba2-3B · Hugging Face",
+      "url": "https://huggingface.co/ai21labs/AI21-Jamba2-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "serda-dev/Jamba2-3B-Turkish · Hugging Face",
+      "url": "https://huggingface.co/serda-dev/Jamba2-3B-Turkish",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LinguAI — Türkçe Dil Modelleri",
+      "url": "https://linguai.tech/master/",
+      "snippet": "Özellik Jamba2 3B Turkish LinguAI Qwen2.5 3B Geliştirici LinguAI Alibaba Parametre 3B 3B Mimari Hybrid SSM+Attention Transformer (GQA+SwiGLU) Context Window 256K 128K Hassasiyet BF16 BF16 Eğitim Verisi CPT 18T tok Dil Desteği Türkçe (CPT) Inference Hybrid Kuadratik O (n²) Lisans Apache 2.0 Apache 2.0 Min. GPU - 8GB+ Durum Released ..."
+    },
+    {
+      "title": "Jamba LLMs: The Best Long Context Models for Secure Enterprise ... - AI21",
+      "url": "https://www.ai21.com/jamba/",
+      "snippet": "Explore AI21&#x27;s Jamba models - a family of long-context, hyper-efficient open LLMs built for the enterprise and available for secure self-hosted deployments, such as on-premise and VPC."
+    },
+    {
+      "title": "Jamba - AI21 Labs",
+      "url": "https://docs.ai21.com/docs/jamba-foundation-models",
+      "snippet": "Engineers and data scientists at AI21 labs created the model to help developers and businesses leverage AI to build real-world products with tangible value. The Jamba model family supports multi-language and zero-shot instruction-following."
+    }
+  ]
+}

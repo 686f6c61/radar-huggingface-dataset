@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Akitsuyoshi/tictactoe-yolo",
+  "slug": "akitsuyoshi-tictactoe-yolo",
+  "author": "Akitsuyoshi",
+  "url": "https://huggingface.co/Akitsuyoshi/tictactoe-yolo",
+  "created_at": "2026-08-24T03:48:16.000Z",
+  "updated_at": "2026-08-24T03:56:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "object-detection",
+    "tic-tac-toe",
+    "robotics",
+    "computer-vision",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24023198,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Akitsuyoshi/tictactoe_robot",
+      "url": "https://github.com/Akitsuyoshi/tictactoe_robot",
+      "snippet": "Detects the tic-tac-toe board using a camera Recognizes player symbols (X and O) using deep learning YOLO model Computes the optimal move using the Minimax algorithm Plans and executes robot arm motions with MoveIt 2"
+    },
+    {
+      "title": "tictactoe Object Detection Model (v3, 2024-03-17 2:21pm) by tictactoe",
+      "url": "https://universe.roboflow.com/tictactoe/tictactoe-qsz5b/dataset/3",
+      "snippet": "1331 open source tictactoe images and annotations in multiple formats for training computer vision models. tictactoe (v3, 2024-03-17 2:21pm), created by tictactoe"
+    },
+    {
+      "title": "Tic Tac Toe Object Detection Model (v7, orig) by YOLO",
+      "url": "https://universe.roboflow.com/yolo-tbs7b/tic-tac-toe-gdqgd/dataset/7",
+      "snippet": "28 open source Objects images and annotations in multiple formats for training computer vision models. Tic Tac Toe (v7, orig), created by YOLO"
+    },
+    {
+      "title": "samuelsleshi2/yolo-tictactoe-pipeline - GitHub",
+      "url": "https://github.com/samuelsleshi2/yolo-tictactoe-pipeline",
+      "snippet": "YOLO Tic Tac Toe Pipeline A computer vision project that detects and displays Tic Tac Toe board results from live camera feeds using a YOLOv11 model."
+    },
+    {
+      "title": "Autonomous Tic-Tac-Toe Playing Robot | Computer Vision + AI - YouTube",
+      "url": "https://www.youtube.com/watch?v=ukr_7SG5Fbk",
+      "snippet": "The robot draws the grid, detects player moves using YOLO-based computer vision, makes strategic decisions, and draws its own symbols—all without human intervention after the game starts. Key ..."
+    }
+  ]
+}

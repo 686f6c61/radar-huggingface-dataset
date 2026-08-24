@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Sru34/distilbert-imdb-sentiment-lab",
+  "slug": "sru34-distilbert-imdb-sentiment-lab",
+  "author": "Sru34",
+  "url": "https://huggingface.co/Sru34/distilbert-imdb-sentiment-lab",
+  "created_at": "2026-08-23T09:03:51.000Z",
+  "updated_at": "2026-08-23T09:03:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saiffff/distilbert-imdb-sentiment · Hugging Face",
+      "url": "https://huggingface.co/saiffff/distilbert-imdb-sentiment",
+      "snippet": "Model Card for DistilBERT IMDb Sentiment Analysis Model Details Model Description This DistilBERT model has been fine-tuned for sentiment analysis on the IMDb dataset. It is designed to be lightweight and efficient, making it suitable for deployment on low-end PCs and machines. The model can accurately classify movie reviews as positive or negative. Developed by: Saif jabri Model type ..."
+    },
+    {
+      "title": "GitHub - DeepAxion/distilbert-imdb-sentiment",
+      "url": "https://github.com/DeepAxion/distilbert-imdb-sentiment",
+      "snippet": "A high-performance sentiment analysis model fine-tuned on the IMBD Movie Review Dataset using DistilBERT. Built for fast, reliable predictions and deployed with an interactive Streamlit demo."
+    },
+    {
+      "title": "aroobaa/distilbert-imdb-sentiment · Hugging Face",
+      "url": "https://huggingface.co/aroobaa/distilbert-imdb-sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sentiment_Classification_using_DistilBERT.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pranaya-mathur/Deep-Learning-Projects/blob/master/Sentiment_Classification_using_DistilBERT.ipynb/",
+      "snippet": "DistilBERT is a small, fast, cheap and light Transformer model trained by distilling Bert base. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving over 95% of Bert&#x27;s performances as measured on the GLUE language understanding benchmark."
+    },
+    {
+      "title": "Fine-Tuning DistilBERT for Sentiment Analysis: A Step-by-Step Guide",
+      "url": "https://medium.com/@mdmahin3/fine-tuning-distilbert-for-sentiment-analysis-a-step-by-step-guide-f7560a39bfbb",
+      "snippet": "In this post, I will walk you through how to fine-tune a pre-trained DistilBERT model for sentiment analysis using the IMDb dataset. DistilBERT, a smaller and faster version of BERT, has become a ..."
+    }
+  ]
+}

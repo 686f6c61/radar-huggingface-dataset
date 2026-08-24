@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 155619715190,
-  "storage_human": "155.6 GB",
+  "storage_bytes": 165182483949,
+  "storage_human": "165.2 GB",
   "base_model": "SWivid/F5-TTS",
   "formats": [
     "safetensors"

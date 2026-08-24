@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shoemoney/Ornith-1.5-9B-Abliterated-MLX-q5",
+  "slug": "shoemoney-ornith-1-5-9b-abliterated-mlx-q5",
+  "author": "shoemoney",
+  "url": "https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q5",
+  "created_at": "2026-08-24T00:52:47.000Z",
+  "updated_at": "2026-08-24T00:53:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "qwen3_5",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "uncensored",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+    "license:mit",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2135710960,
+  "parameters_human": "2.14B",
+  "storage_bytes": 7575884240,
+  "storage_human": "7.6 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith-1.5-9B: 9B Dense Open MIT Coding Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/ornith-1-5-9b/",
+      "snippet": "Ornith-1.5-9B is an MIT-licensed 9B dense model released 18 Aug 2026 for single-GPU and edge use. It scores 70.6 on SWE-bench Verified and 86.4 on GPQA Diamond."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.0-35B-heretic-i1-GGUF",
+  "slug": "mradermacher-ornith-1-0-35b-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-heretic-i1-GGUF",
+  "created_at": "2026-08-23T05:13:10.000Z",
+  "updated_at": "2026-08-23T13:05:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "moe",
+    "abliteration",
+    "abliterix",
+    "en",
+    "zh",
+    "base_model:inkOrCloud/Ornith-1.0-35B-abliterix",
+    "base_model:quantized:inkOrCloud/Ornith-1.0-35B-abliterix",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 370842242656,
+  "storage_human": "370.8 GB",
+  "base_model": "inkOrCloud/Ornith-1.0-35B-abliterix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ornith-1.0-35B-uncensored-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-uncensored-heretic-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Ornith-1.-35B-uncensored-heretic-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/Ornith-1.0-35B-uncensored-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-uncensored-heretic-GGUF",
+      "snippet": "Instructions to use mradermacher/Ornith-1.-35B-uncensored-heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith-1.0-35B-Heretic-MTP-APEX-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/SC117/Ornith-1.0-35B-Heretic-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.0-35B is an agentic coding model from DeepReinforce AI, based on Qwen3.5 MoE. This experimental derivative merges the selected Heretic 1.4.0 Trial 63 LoRA into BF16 weights."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Complete Ornith 1.0 guide: self-scaffolding AI models for agentic coding. 9B to 397B sizes, MIT licensed, benchmark results, local setup, and model comparison."
+    }
+  ]
+}

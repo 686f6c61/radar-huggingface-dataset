@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth-GGUF",
+  "slug": "ermiaazarkhalili-vibethinker-3b-function-calling-xlam-unsloth-gguf",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth-GGUF",
+  "created_at": "2026-06-22T10:34:56.000Z",
+  "updated_at": "2026-08-23T11:36:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "unsloth",
+    "lora",
+    "trl",
+    "sft",
+    "text-generation",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "base_model:WeiboAI/VibeThinker-3B",
+    "base_model:adapter:WeiboAI/VibeThinker-3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 263,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12843579968,
+  "storage_human": "12.8 GB",
+  "base_model": "WeiboAI/VibeThinker-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VibeThinker-3B-Function-Calling-xLAM-Unsloth - Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth",
+      "snippet": "VibeThinker-3B-Function-Calling-xLAM-Unsloth ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "VibeThinker-3B-Function-Calling-xLAM-Unsloth-GGUF",
+      "url": "https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth-GGUF",
+      "snippet": "Instructions to use ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "VibeThinker-3B-Function-Calling-xLAM-Unsloth - friendli.ai",
+      "url": "https://friendli.ai/models/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth",
+      "snippet": "Run VibeThinker-3B-Function-Calling-xLAM-Unsloth with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - WeiboAI/VibeThinker: Tiny Model, Big Logic: Diversity-Driven ...",
+      "url": "https://github.com/WeiboAI/VibeThinker",
+      "snippet": "VibeThinker-3B is a 3-billion-parameter dense reasoning model developed to explore how far verifiable reasoning can be pushed within a strictly small-model regime. It is built upon Qwen2.5-Coder-3B and post-trained with an upgraded Spectrum-to-Signal pipeline that combines curriculum-based supervised fine-tuning, multi-domain reinforcement learning, offline self-distillation, and instruction ..."
+    },
+    {
+      "title": "[2606.16140] VibeThinker-3B: Exploring the Frontier of Verifiable ...",
+      "url": "https://arxiv.org/abs/2606.16140",
+      "snippet": "This technical report introduces VibeThinker-3B, a compact dense model with 3B parameters developed to investigate how far verifiable reasoning can be pushed within a strictly small-model regime. Building upon the Spectrum-to-Signal post-training paradigm, we systematically enhance the model through an optimized pipeline that includes curriculum-based supervised fine-tuning, multi-domain ..."
+    }
+  ]
+}

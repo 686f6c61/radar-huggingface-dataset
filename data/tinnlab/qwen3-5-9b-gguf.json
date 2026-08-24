@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tinnlab/Qwen3.5-9B-GGUF",
+  "slug": "tinnlab-qwen3-5-9b-gguf",
+  "author": "tinnlab",
+  "url": "https://huggingface.co/tinnlab/Qwen3.5-9B-GGUF",
+  "created_at": "2026-08-24T14:11:50.000Z",
+  "updated_at": "2026-08-24T14:12:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "mirror",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5680522464,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Qwen_Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Viral2AI/Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Viral2AI/Qwen3.5-9B-GGUF",
+      "snippet": "Qwen3.5-9B This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a ..."
+    },
+    {
+      "title": "Qwen3.5-9B-GGUF — AI Model Spotlight | GreyBrain Academy",
+      "url": "https://edu.greybrain.ai/models/qwen3-5-9b-gguf/",
+      "snippet": "Useful for multimodal pipelines where image context must be linked with clinical notes."
+    },
+    {
+      "title": "Qwen_Qwen3.5-9B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-qwen3.5-9b-gguf-bartowski",
+      "snippet": "Overview Qwen3.5-9B-GGUF is a quantized version of Qwen&#x27;s 9-billion parameter language model optimized for CPU and GPU inference via GGUF format using llama.cpp. Maintained by bartowski, this model offers 28 different quantization variants ranging from 3.48GB to 17.92GB, enabling deployment across vastly different hardware constraints without sacrificing usability. The model uses a Qwen3.5 ..."
+    },
+    {
+      "title": "Qwen3.5-9B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-gguf-lmstudio-community",
+      "snippet": "Overview Qwen3.5-9B-GGUF is a 9 billion parameter language model created by Qwen and quantized to GGUF format by the lmstudio-community team using llama.cpp release b8185. This model performs general-purpose text-to-text tasks including instruction following, reasoning, and dialogue. The GGUF quantization makes this model runnable on consumer hardware without requiring high-end GPUs, making it ..."
+    }
+  ]
+}

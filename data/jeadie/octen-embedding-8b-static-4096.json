@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jeadie/octen-embedding-8b-static-4096",
+  "slug": "jeadie-octen-embedding-8b-static-4096",
+  "author": "jeadie",
+  "url": "https://huggingface.co/jeadie/octen-embedding-8b-static-4096",
+  "created_at": "2026-08-24T02:41:45.000Z",
+  "updated_at": "2026-08-24T02:49:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "model2vec",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "sentence-transformers",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Octen/Octen-Embedding-8B",
+    "base_model:finetune:Octen/Octen-Embedding-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 621133824,
+  "parameters_human": "621.1M",
+  "storage_bytes": 1242267744,
+  "storage_human": "1.2 GB",
+  "base_model": "Octen/Octen-Embedding-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Octen-Embedding-8B - Hugging Face",
+      "url": "https://huggingface.co/Octen/Octen-Embedding-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jeadie/octen-embedding-8b-static-256 · Hugging Face",
+      "url": "https://huggingface.co/jeadie/octen-embedding-8b-static-256",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Embedding - Octen Docs",
+      "url": "https://docs.octen.ai/api-reference/embedding",
+      "snippet": "The embedding model used for this request. octen-embedding-.6b (max dim: 1024) for cost/throughput priority; octen-embedding-4b (max dim: 2560) for most applications; octen-embedding-8b (max dim: 4096) for accuracy-critical tasks."
+    },
+    {
+      "title": "Text Embedding - Octen Docs",
+      "url": "https://docs.octen.ai/capabilities/embedding",
+      "snippet": "SOTA retrieval quality. octen-embedding-8b and octen-embedding-4b rank #1 and #2 on the RTEB text-retrieval benchmark. Flexible model choice. Pick the model that fits your scenario and cost, from best accuracy to high-volume and low-cost. Retrieval-tuned. Mark inputs as query or document to apply the right internal prompt, and adjust output dimensions to fit your index. Works with your stack ..."
+    },
+    {
+      "title": "Octen-Embedding-8B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/octen-embedding-8b-octen",
+      "snippet": "Overview Octen-Embedding-8B is a 7.6B parameter text embedding model fine-tuned from Qwen/Qwen3-Embedding-8B that ranks first on the RTEB Leaderboard (Mean Task score of 0.8045) as of January 12, 2026. Built by Octen, this model produces 4096-dimensional embeddings and supports up to 32,768 tokens of context, making it suitable for semantic search, document retrieval, and question answering ..."
+    }
+  ]
+}

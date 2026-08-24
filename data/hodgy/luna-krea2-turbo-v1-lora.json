@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hodgy/luna-krea2-turbo-v1-lora",
+  "slug": "hodgy-luna-krea2-turbo-v1-lora",
+  "author": "hodgy",
+  "url": "https://huggingface.co/hodgy/luna-krea2-turbo-v1-lora",
+  "created_at": "2026-08-23T20:57:14.000Z",
+  "updated_at": "2026-08-23T22:11:01.000Z",
+  "license": "ai-toolkit-sdxl-v1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "krea",
+  "languages": [],
+  "tags": [
+    "krea",
+    "lora",
+    "text-to-image",
+    "krea2",
+    "diffusion",
+    "character",
+    "lora-krea",
+    "character-lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233685919,
+  "storage_human": "234 MB",
+  "base_model": "krea2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hodgy/latina_krea2 · Hugging Face",
+      "url": "https://huggingface.co/hodgy/latina_krea2",
+      "snippet": "hodgy / latina_krea2 like 0 Text-to-Image Diffusers krea-2 krea-2-turbo lora ai-toolkit identity character License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Krea 2 Turbo LoRA 256dim - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2727641/krea-2-turbo-lora-256dim",
+      "snippet": "One thing I noticed that while the Krea 2 Raw model is limited generates up to 1K resolution (unlike it&#x27;s turbo varient that generates up to 2K), I find that using the Turbo LoRA with it allows me to generate up to 2K resolution without getting artifacts. Is this magic?"
+    },
+    {
+      "title": "Krea-2-Turbo - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "snippet": "Access Krea 2 Turbo ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Krea 2 Turbo Official Comfy-Org Checkpoints (Krea2)",
+      "url": "https://civitai.com/models/2726029/krea-2-turbo-official-comfy-org-checkpoints-krea2",
+      "snippet": "Krea 2 is a text-to-image diffusion model that generates images from natural-language text descriptions. The model is designed to support creative, commercial, developer, and research use cases, including image generation, concepting, design exploration, visual production workflows, and integration into applications and creative tools."
+    },
+    {
+      "title": "Krea 2 Turbo - AI Model | Layer",
+      "url": "https://www.layer.ai/models/krea-krea-2-turbo",
+      "snippet": "Krea 2 Turbo Krea 2 Turbo is the speed-optimized, open-source version of Krea 2, built to generate high-fidelity images from text in seconds while preserving the model&#x27;s signature aesthetic range. Distilled for rapid inference, it is ideal for live iteration and high-volume creative production where turnaround matters."
+    }
+  ]
+}

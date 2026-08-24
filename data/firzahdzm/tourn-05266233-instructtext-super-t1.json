@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-05266233-instructtext-super-t1",
+  "slug": "firzahdzm-tourn-05266233-instructtext-super-t1",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-05266233-instructtext-super-t1",
+  "created_at": "2026-08-19T17:27:09.000Z",
+  "updated_at": "2026-08-24T05:25:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1418270720,
+  "parameters_human": "1.42B",
+  "storage_bytes": 22692632320,
+  "storage_human": "22.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "firzahdzm/tourn-5cf332c4-instructtext-c2 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-5cf332c4-instructtext-c2",
+      "snippet": "Instructions to use firzahdzm/tourn-5cf332c4-instructtext-c2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use firzahdzm/tourn-5cf332c4-instructtext-c2 with PEFT: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources ..."
+    },
+    {
+      "title": "firzahdzm/tourn-5cf332c4-instructtext-c3 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-5cf332c4-instructtext-c3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "firzahdzm-instruct-1e8c8e8e20b2-01 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/firzahdzm-instruct-1e8c8e8e20b2-01",
+      "snippet": "Here is 1 public repository matching this topic... Damacol / firzahdzm-instruct-1e8c8e8e20b2-01 Star 0 Code Issues Pull requests Run firzahdzm/instruct-1e8c8e8e20b2-01 privately via Venice.ai - Zero tracking, uncensored privacy ai uncensored ai-model llm venice-ai firzahdzm-instruct-1e8c8e8e20b2-01 Updated Apr 21, 2026"
+    },
+    {
+      "title": "tourn-5cf332c4-instructtext-c3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/firzahdzm/tourn-5cf332c4-instructtext-c3",
+      "snippet": "Run tourn-5cf332c4-instructtext-c3 with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

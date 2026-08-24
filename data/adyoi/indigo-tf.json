@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adyoi/indigo.tf",
+  "slug": "adyoi-indigo-tf",
+  "author": "adyoi",
+  "url": "https://huggingface.co/adyoi/indigo.tf",
+  "created_at": "2026-08-24T08:40:26.000Z",
+  "updated_at": "2026-08-24T08:40:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adyoi (Adi Apriyanto) - Hugging Face",
+      "url": "https://huggingface.co/adyoi",
+      "snippet": "Recent Activity published a model13 days ago adyoi/indigo published a Space13 days ago adyoi/playground published a model13 days ago adyoi/yo View all activity"
+    },
+    {
+      "title": "Adobe Adds AI Tools to Project Indigo - Technology Org",
+      "url": "https://www.technology.org/2026/07/22/adobe-project-indigo-ai-playground-camera/",
+      "snippet": "Adobe&#x27;s Project Indigo camera app gains an AI Playground that edits, restyles, and critiques photos, powered by Google&#x27;s model."
+    },
+    {
+      "title": "Studio - Indigo.ai GraphQL API",
+      "url": "https://studio.apollographql.com/public/indigoai/variant/latest/home",
+      "snippet": "Studio is a hub for creating, evolving, and consuming your graph for all members of your team."
+    },
+    {
+      "title": "adyoi/yo · Hugging Face",
+      "url": "https://huggingface.co/adyoi/yo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Adobe&#x27;s Project Indigo camera app now edits photos with AI",
+      "url": "https://thenextweb.com/news/adobe-project-indigo-ai-playground",
+      "snippet": "Adobe&#x27;s Project Indigo camera app adds an AI Playground that critiques, restyles & rebuilds your photos using Google&#x27;s Nano Banana, not Firefly."
+    }
+  ]
+}

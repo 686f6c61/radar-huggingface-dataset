@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jacobsme/cognimed-nca-lgm",
+  "slug": "jacobsme-cognimed-nca-lgm",
+  "author": "jacobsme",
+  "url": "https://huggingface.co/jacobsme/cognimed-nca-lgm",
+  "created_at": "2026-08-23T11:45:48.000Z",
+  "updated_at": "2026-08-23T11:46:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biology",
+    "developmental-biology",
+    "bioelectricity",
+    "neural-cellular-automata",
+    "genomics",
+    "morphogenesis",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26122804,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 3DTopia/LGM: [ECCV 2024 Oral] LGM: Large Multi-View Gaussian ...",
+      "url": "https://github.com/3DTopia/LGM",
+      "snippet": "This is the official implementation of LGM: Large Multi-View Gaussian Model for High-Resolution 3D Content Creation."
+    },
+    {
+      "title": "CogniMed - a Hugging Face Space by Hrishita-P",
+      "url": "https://huggingface.co/spaces/Hrishita-P/cognimed",
+      "snippet": "About CogniMed AI cognition applied to medicine. CogniMed is a Retrieval-Augmented Generation system for biomedical question answering. It combines a domain-tuned sentence-transformer for evidence retrieval with a LoRA-fine-tuned BioGPT-Large language model for binary yes / no clinical reasoning, grounded in PubMed-derived passages ..."
+    },
+    {
+      "title": "JCTN/LGM · Hugging Face",
+      "url": "https://huggingface.co/JCTN/LGM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cognimed/README.md at main · hrishitapanjetha/cognimed",
+      "url": "https://github.com/hrishitapanjetha/cognimed/blob/main/README.md",
+      "snippet": "CogniMed AI cognition applied to medicine. CogniMed is a Retrieval-Augmented Generation system for evidence-grounded biomedical question answering. It pairs a domain-tuned sentence-transformer for retrieval with a LoRA-fine-tuned BioGPT-Large language model for binary yes / no clinical reasoning, grounded in PubMed-derived passages."
+    },
+    {
+      "title": "The Large Geospatial Model Powering Embodied AI at Scale",
+      "url": "https://www.nianticspatial.com/en/blog/lgm-embodied-ai",
+      "snippet": "We are entering the era of embodied AI - the integration of artificial intelligence into physical systems, including robots, AR glasses, phones and drones, enabling them to understand and interact with the physical world at scale. To deploy millions and perhaps billions of these systems across complex environments and in coordination with one another a foundational layer of spatial ..."
+    }
+  ]
+}

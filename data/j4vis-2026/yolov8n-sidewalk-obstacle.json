@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "J4VIS-2026/yolov8n-sidewalk-obstacle",
+  "slug": "j4vis-2026-yolov8n-sidewalk-obstacle",
+  "author": "J4VIS-2026",
+  "url": "https://huggingface.co/J4VIS-2026/yolov8n-sidewalk-obstacle",
+  "created_at": "2026-08-24T10:04:49.000Z",
+  "updated_at": "2026-08-24T10:04:49.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "the0807/Sidewalk-Obstacle-Detection - GitHub",
+      "url": "https://github.com/the0807/Sidewalk-Obstacle-Detection",
+      "snippet": "👀 sidewalk obstacle detection using YOLOv8. Contribute to the0807/Sidewalk-Obstacle-Detection development by creating an account on GitHub."
+    },
+    {
+      "title": "Sidewalk-Obstacle-Detection/README.md at main · the0807 ... - GitHub",
+      "url": "https://github.com/the0807/Sidewalk-Obstacle-Detection/blob/main/README.md",
+      "snippet": "👀 sidewalk obstacle detection using YOLOv8. Contribute to the0807/Sidewalk-Obstacle-Detection development by creating an account on GitHub."
+    },
+    {
+      "title": "YOLOv8 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolov8",
+      "snippet": "Released January 2023. Proven and widely adopted with extensive community support. Introduced the unified Python API and CLI that became the Ultralytics standard."
+    },
+    {
+      "title": "An Intelligent Model for Detecting Obstacles on Sidewalks ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-48573-2_57",
+      "snippet": "Blind individuals face significant challenges while navigating outdoor environments, particularly on sidewalks shared with the general public. Identifying and avoiding common objects, such as trash cans, benches, or bike racks, is crucial for their safety and..."
+    },
+    {
+      "title": "PDF An Intelligent Model for Detecting Obstacles on Sidewalks ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-48573-2_57.pdf?pdf=inline%20link",
+      "snippet": "In this paper, we propose an intelligent model based on deep learning and computer vision techniques to assist visually impaired (VI) people in detecting obstacles on sidewalks. The proposed model exploits YOLO&#x27;s real-time object detection capabilities to identify and classify obstacles on sidewalks."
+    }
+  ]
+}

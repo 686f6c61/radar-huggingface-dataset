@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a4-badmed-seed0",
+  "slug": "artht-llama8b-a4-badmed-seed0",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a4-badmed-seed0",
+  "created_at": "2026-08-23T14:04:31.000Z",
+  "updated_at": "2026-08-23T14:17:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523757628,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aaditya/Llama3-OpenBioLLM-8B · Hugging Face",
+      "url": "https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B",
+      "snippet": "🔥 OpenBioLLM-8B demonstrates superior performance compared to larger models, such as GPT-3.5, Meditron-70B across 9 diverse biomedical datasets, achieving state-of-the-art results with an average score of 72.50%, despite having a significantly smaller parameter count."
+    },
+    {
+      "title": "Introducing Meta Llama 3: The most capable openly available LLM to date",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "snippet": "Today, we&#x27;re introducing Meta Llama 3, the next generation of our state-of-the-art open source large language model. In the coming months, we expect to share new capabilities, additional model sizes, and more."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

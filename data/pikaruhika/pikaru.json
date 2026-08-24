@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pikaruhika/pikaru",
+  "slug": "pikaruhika-pikaru",
+  "author": "pikaruhika",
+  "url": "https://huggingface.co/pikaruhika/pikaru",
+  "created_at": "2026-08-24T08:29:27.000Z",
+  "updated_at": "2026-08-24T08:29:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reality is optional - pika.art",
+      "url": "https://pika.art/Pika.ai",
+      "snippet": "Our Pikaformance model is now available on web: hyper-real expressions, synced to any sound. Make your images sing, speak, rap, bark, and more—with near real time generation speed."
+    },
+    {
+      "title": "Pika Labs - AI Video Generation Platform",
+      "url": "https://pikaslabs.com/",
+      "snippet": "Pika is a video generation platform built on a proprietary AI video model developed in-house. Feed it a prompt, image, audio, or video, and it produces a new clip — animating, modifying, lip-syncing, or transforming based on your direction."
+    },
+    {
+      "title": "Pika",
+      "url": "https://pika.art/",
+      "snippet": "Pika MCP Make your Agent creative Give any existing agent the ability to make rich content with access to the best creative models and Pika-made skills."
+    },
+    {
+      "title": "www.pikachu.ai",
+      "url": "https://www.pikachu.ai/",
+      "snippet": "www.pikachu.ai"
+    },
+    {
+      "title": "Picrew | The Character Maker & Creator",
+      "url": "https://picrew.me/en/",
+      "snippet": "This is Picrew, the make-and-play image maker. Create image makers with your own illustrations! Share and enjoy!"
+    }
+  ]
+}

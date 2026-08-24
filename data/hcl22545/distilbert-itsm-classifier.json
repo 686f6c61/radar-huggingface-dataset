@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HCL22545/distilbert-itsm-classifier",
+  "slug": "hcl22545-distilbert-itsm-classifier",
+  "author": "HCL22545",
+  "url": "https://huggingface.co/HCL22545/distilbert-itsm-classifier",
+  "created_at": "2026-08-23T12:29:24.000Z",
+  "updated_at": "2026-08-23T12:29:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66964238,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267869480,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DistilBERT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.2/en/model_doc/distilbert",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/distilbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    },
+    {
+      "title": "transformers/src/transformers/models/distilbert/modeling_distilbert.py ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/distilbert/modeling_distilbert.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/src/transformers/models/distilbert/modeling_distilbert.py at main · huggingface/transformers"
+    },
+    {
+      "title": "Text Classification using HuggingFace Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/text-classification-using-huggingface-model/",
+      "snippet": "Step 3: Initialise Text Classification Model This sets the task to text classification and loads a DistilBERT model, fine tuned for sentiment analysis. On first use, the model downloads automatically and the pipeline handles tokenization and prediction internally"
+    }
+  ]
+}

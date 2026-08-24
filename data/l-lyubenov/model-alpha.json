@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "l-lyubenov/model-alpha",
+  "slug": "l-lyubenov-model-alpha",
+  "author": "l-lyubenov",
+  "url": "https://huggingface.co/l-lyubenov/model-alpha",
+  "created_at": "2026-08-24T12:41:45.000Z",
+  "updated_at": "2026-08-24T13:15:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "solidity",
+    "smart-contracts",
+    "vulnerability-detection",
+    "security",
+    "code-security",
+    "ethereum",
+    "awq",
+    "compressed-tensors",
+    "conversational",
+    "base_model:unsloth/Qwen3-8B-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen3-8B-bnb-4bit",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2167453176,
+  "parameters_human": "2.17B",
+  "storage_bytes": 6082877405,
+  "storage_human": "6.1 GB",
+  "base_model": "unsloth/Qwen3-8B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "l-lyubenov (Lyuboslav Lyubenov) - Hugging Face",
+      "url": "https://huggingface.co/l-lyubenov/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 3 hours ago ... published a dataset about 3 hours ago"
+    },
+    {
+      "title": "Absolute banger, next default model on my strix halo | Lyuboslav Lyubenov",
+      "url": "https://www.linkedin.com/posts/lyuboslavlyubenovdead4y_absolute-banger-next-default-model-on-my-activity-7450546101453037568-zsDw",
+      "snippet": "Lyuboslav Lyubenov Senior AI Engineer 6d Absolute banger, next default model on my strix halo Qwen 64,244 followers 1w"
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "Horizon Alpha: The Mystery Model That&#x27;s Breaking the Internet",
+      "url": "https://medium.com/@cognidownunder/horizon-alpha-the-mystery-model-thats-breaking-the-internet-72227f35864b",
+      "snippet": "Something extraordinary happened on July 30, 2025. A mysterious AI model called \"Horizon Alpha\" appeared on OpenRouter without fanfare…"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

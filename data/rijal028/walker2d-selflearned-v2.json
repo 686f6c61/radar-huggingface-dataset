@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rijal028/walker2d-selflearned-v2",
+  "slug": "rijal028-walker2d-selflearned-v2",
+  "author": "rijal028",
+  "url": "https://huggingface.co/rijal028/walker2d-selflearned-v2",
+  "created_at": "2026-08-23T12:15:40.000Z",
+  "updated_at": "2026-08-23T12:15:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "mujoco",
+    "walker2d",
+    "continual-learning",
+    "lifelong-retention",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 298017,
+  "storage_human": "298017 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devdharpatel/SAC-Walker2d-v2 · Hugging Face",
+      "url": "https://huggingface.co/devdharpatel/SAC-Walker2d-v2",
+      "snippet": "Soft-Actor-Critic: Walker2d-v2 These are 25 trained models over seeds (0-4) and J = 1, 2, 4, 8, 16 of Soft actor critic agent playing Walker2d-v2 for Sequence Reinforcement Learning (SRL)."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Walker2d-v2",
+      "snippet": "Models 2 new Full-text search Edit filters Sort: Trending Active filters: Walker2d-v2 Clear all"
+    },
+    {
+      "title": "GitHub - hasib2003/Walker_2d: Solving walker 2d probelm in gymnasium ...",
+      "url": "https://github.com/hasib2003/Walker_2d",
+      "snippet": "A script to simulate the trained model using the provided algorithm and checkpoints. The script accepts command-line arguments to specify the environment, algorithm, and model checkpoint path. Contains code and resources for visualizing training metrics (e.g., rewards and episode lengths) generated ..."
+    },
+    {
+      "title": "GitHub - PawelMlyniec/Walker-2D",
+      "url": "https://github.com/PawelMlyniec/Walker-2D",
+      "snippet": "Contribute to PawelMlyniec/Walker-2D development by creating an account on GitHub."
+    }
+  ]
+}

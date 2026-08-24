@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "albedoeffort/logicpeak-albedo-qwen3.6-35b-raft-g1-0823-1251",
+  "slug": "albedoeffort-logicpeak-albedo-qwen3-6-35b-raft-g1-0823-1251",
+  "author": "albedoeffort",
+  "url": "https://huggingface.co/albedoeffort/logicpeak-albedo-qwen3.6-35b-raft-g1-0823-1251",
+  "created_at": "2026-08-23T03:51:42.000Z",
+  "updated_at": "2026-08-23T04:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227302638,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albedoeffort (Macro Hoffman) - Hugging Face",
+      "url": "https://huggingface.co/albedoeffort",
+      "snippet": "albedoeffort/applet3-albedo-qwen3.6-35b-t5-0821-0718 36B•Updated about 1 hour ago"
+    },
+    {
+      "title": "power612/albedo-qwen3.6-35b-22f0f484 · Hugging Face",
+      "url": "https://huggingface.co/power612/albedo-qwen3.6-35b-22f0f484",
+      "snippet": "power612 / albedo-qwen3.6-35b-22f0f484 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "The flagship Qwen3-235B-A22B scores 95.6 on ArenaHard and 2056 on CodeForces Elo, outperforming DeepSeek-R1 on 17 of 23 benchmarks. For developers, this is the first open-source family where one model can genuinely replace both a reasoning specialist and a general-purpose chat model. The Full Qwen 3 Dense Model Lineup: 0.6B to 32B Explained"
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    },
+    {
+      "title": "Qwen 3.5 / 3.6 — Megatron Bridge - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nemo/megatron-bridge/nightly/models/qwen/qwen35-vl.html",
+      "snippet": "Qwen 3.5 / 3.6 # Qwen3.5 is a family of vision-language models supporting multimodal understanding across text, images, and videos. Qwen3.5-VL includes both dense models and Mixture-of-Experts (MoE) variants for improved efficiency at scale. Qwen3.6 shares the same architecture as Qwen3.5 VL MoE (Qwen3_5MoeForConditionalGeneration) and is supported through the same bridge implementation. Qwen ..."
+    }
+  ]
+}

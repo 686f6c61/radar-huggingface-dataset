@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "paradoxquantum/adam",
+  "slug": "paradoxquantum-adam",
+  "author": "paradoxquantum",
+  "url": "https://huggingface.co/paradoxquantum/adam",
+  "created_at": "2026-08-23T11:54:01.000Z",
+  "updated_at": "2026-08-23T15:34:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 15744263092,
+  "storage_human": "15.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - strangeadvancedmarketing/Adam: Adam Framework for OpenClaw — 5 ...",
+      "url": "https://github.com/strangeadvancedmarketing/Adam",
+      "snippet": "If you have OpenClaw running and a model talking to you, you are already at the starting line. The two setup guides — one for humans, one to hand to your AI — take 30-60 minutes total. The Adam Framework is a 5-layer persistent memory, coherence, and identity architecture for local AI assistants built on OpenClaw."
+    },
+    {
+      "title": "PDF AI-Powered Multiple-Agent Pipeline for Automating ADaM Dataset Generation",
+      "url": "https://pharmasug.org/proceedings/2026/AI/PharmaSUG-2026-AI-431.pdf",
+      "snippet": "This paper presents an AI-powered, multi-agent pipeline that automates the end-to-end ADaM derivation workflow under human supervision. The framework begins with AI-driven specification review to identify ambiguous language, implicit logic, and missing edge-case handling. After user confirmation, a code generation agent produces executable programs aligned with the finalized specification ..."
+    },
+    {
+      "title": "PDF The Adam Paradox Hypothesis A Seventeen-Concept Architectural Model for ...",
+      "url": "https://www.researchsquare.com/article/rs-8882120/latest.pdf",
+      "snippet": "At this level, the Adam Paradox Hypothesis seeks to demonstrate that a unified architectural model can account simultaneously for multiple, otherwise independent empirical constraints more coherently and parsimoniously than gradualist or piecemeal alternatives."
+    },
+    {
+      "title": "Large Language Models as AI Agents for Digital Atoms and Molecules ...",
+      "url": "https://arxiv.org/pdf/2505.00270",
+      "snippet": "Large Language Models as AI Agents for Digital Atoms and Molecules: Catalyzing a New Era in Computational Biophysics Yijie Xia1,3, Xiaohan Lin1.2,3, Zicheng Ma4,5 ..."
+    },
+    {
+      "title": "Quantum Causality: Resolving Simpson&#x27;s Paradox with 𝒟⁢𝒪-Calculus",
+      "url": "https://arxiv.org/html/2509.00744v1",
+      "snippet": "II-C Specific Circuit Models for Simpson&#x27;s Paradox To validate our proposed methodology, we designed and simulated two distinct quantum circuits: a minimal 3-qubit model to clearly illustrate the core principles, and a more complex 10-qubit model to demonstrate the scalability of our approach to networks with multi-level confounding."
+    }
+  ]
+}

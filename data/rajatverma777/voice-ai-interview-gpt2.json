@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rajatverma777/voice-ai-interview-gpt2",
+  "slug": "rajatverma777-voice-ai-interview-gpt2",
+  "author": "rajatverma777",
+  "url": "https://huggingface.co/rajatverma777/voice-ai-interview-gpt2",
+  "created_at": "2026-08-24T10:18:18.000Z",
+  "updated_at": "2026-08-24T10:20:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "interview",
+    "distilgpt2",
+    "fine-tuned",
+    "en",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81914112,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327664072,
+  "storage_human": "328 MB",
+  "base_model": "distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interview GPT",
+      "url": "https://interviewgpt.io/",
+      "snippet": "AI Interview After understanding the requirement, create a job-description and upload any custom data (if necessary) to define the scope of AI interview. Send AI interviews to specific candidates or let the AI resume analyser filter candidate based on the job-description and test hundreds of candidates at once."
+    },
+    {
+      "title": "Text-to-Speech: Lifelike AI voices and speech synthesis",
+      "url": "https://cloud.google.com/text-to-speech",
+      "snippet": "Convert text to lifelike audio with Gemini-powered AI voices. Choose from 380+ natural-sounding voices across 75+ languages and variants."
+    },
+    {
+      "title": "Introducing GPT-Live | OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-live/",
+      "snippet": "A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice."
+    },
+    {
+      "title": "InterviewAI - Practice with AI",
+      "url": "https://interview-ai.app/",
+      "snippet": "Real-time Voice AI Speak naturally and get instant responses from our advanced AI interviewer with human-like conversation flow."
+    },
+    {
+      "title": "ParakeetAI - AI Interview Assistant Software",
+      "url": "https://www.parakeet-ai.com/",
+      "snippet": "Real-time AI answers to interview questions with ChatGPT. AI interview assistant software. Interview Copilot."
+    }
+  ]
+}

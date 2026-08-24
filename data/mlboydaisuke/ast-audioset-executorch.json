@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/AST-AudioSet-ExecuTorch",
+  "slug": "mlboydaisuke-ast-audioset-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/AST-AudioSet-ExecuTorch",
+  "created_at": "2026-08-24T00:53:06.000Z",
+  "updated_at": "2026-08-24T00:53:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "audio-classification",
+    "base_model:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "base_model:quantized:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 785054363,
+  "storage_human": "785 MB",
+  "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExecuTorch Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo",
+      "snippet": "PyTorch models exported to ExecuTorch .pte for on-device inference — XNNPACK (CPU, portable) and Core ML builds, each parity-checked."
+    },
+    {
+      "title": "GitHub - YuanGongND/ast: Code for the Interspeech 2021 paper \"AST ...",
+      "url": "https://github.com/YuanGongND/ast",
+      "snippet": "This repository contains the official implementation (in PyTorch) of the Audio Spectrogram Transformer (AST) proposed in the Interspeech 2021 paper AST: Audio Spectrogram Transformer (Yuan Gong, Yu-An Chung, James Glass). AST is the first convolution-free, purely attention-based model for audio classification which supports variable length input and can be applied to various tasks. We evaluate ..."
+    },
+    {
+      "title": "ast/pretrained_models/README.md at master · YuanGongND/ast",
+      "url": "https://github.com/YuanGongND/ast/blob/master/pretrained_models/README.md",
+      "snippet": "Speechcommands V2-35, 10 tstride, 10 fstride, without Weight Averaging, Model (98.12% accuracy on evaluation set) If you want to finetune AudioSet-pretrained AST model on your task, you can simply set the audioset_pretrain=True when you create the AST model, it will automatically download model 1 (0.459 mAP)."
+    },
+    {
+      "title": "Audio Spectrogram Transformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/audio-spectrogram-transformer",
+      "snippet": "Overview The Audio Spectrogram Transformer model was proposed in AST: Audio Spectrogram Transformer by Yuan Gong, Yu-An Chung, James Glass. The Audio Spectrogram Transformer applies a Vision Transformer to audio, by turning audio into an image (spectrogram). The model obtains state-of-the-art results for audio classification."
+    },
+    {
+      "title": "[2104.01778] AST: Audio Spectrogram Transformer - arXiv.org",
+      "url": "https://arxiv.org/abs/2104.01778",
+      "snippet": "In the past decade, convolutional neural networks (CNNs) have been widely adopted as the main building block for end-to-end audio classification models, which aim to learn a direct mapping from audio spectrograms to corresponding labels. To better capture long-range global context, a recent trend is to add a self-attention mechanism on top of the CNN, forming a CNN-attention hybrid model ..."
+    }
+  ]
+}

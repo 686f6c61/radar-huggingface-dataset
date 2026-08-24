@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hydjo-shi03/model_192078697_clip_tiny",
+  "slug": "hydjo-shi03-model_192078697_clip_tiny",
+  "author": "hydjo-shi03",
+  "url": "https://huggingface.co/hydjo-shi03/model_192078697_clip_tiny",
+  "created_at": "2026-08-23T07:46:22.000Z",
+  "updated_at": "2026-08-23T07:46:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clip",
+    "generation",
+    "instancenorm",
+    "lamb",
+    "mish",
+    "onecycle",
+    "sparse",
+    "tensor-fusion",
+    "tiny",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "CLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/clip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - wkcn/TinyCLIP: [ICCV2023] TinyCLIP: CLIP Distillation via ...",
+      "url": "https://github.com/wkcn/TinyCLIP",
+      "snippet": "📌 This is an official PyTorch implementation of [ICCV 2023] - TinyCLIP: CLIP Distillation via Affinity Mimicking and Weight Inheritance TinyCLIP is a novel cross-modal distillation method for large-scale language-image pre-trained models."
+    },
+    {
+      "title": "tiny girl +model — Yandex: found 225 thousand results",
+      "url": "https://tv.yandex.com/search?text=tiny+girl+%2Bmodel&lr=21414&missword=1",
+      "snippet": "Find 196 Tiny Model Princess stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and vectors in the Shutterstock collection."
+    },
+    {
+      "title": "sachin/tiny_clip · Hugging Face",
+      "url": "https://huggingface.co/sachin/tiny_clip",
+      "snippet": "Tiny CLIP Introduction This is a smaller version of CLIP trained for EN only. The training script can be found here. This model is roughly 8 times smaller than CLIP. This was achieved by using a small text model (microsoft/xtremedistil-l6-h256-uncased) and a small vision model (edgenext_small). For a in-depth guide of training CLIP see this blog."
+    }
+  ]
+}

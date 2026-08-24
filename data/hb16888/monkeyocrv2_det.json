@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HB16888/MonkeyOCRv2_det",
+  "slug": "hb16888-monkeyocrv2_det",
+  "author": "HB16888",
+  "url": "https://huggingface.co/HB16888/MonkeyOCRv2_det",
+  "created_at": "2026-08-23T04:27:38.000Z",
+  "updated_at": "2026-08-23T08:45:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "monkeyocr",
+  "languages": [],
+  "tags": [
+    "ocr",
+    "text-detection",
+    "scene-text-detection",
+    "mmocr",
+    "monkeyocr v2",
+    "arxiv:2607.11562",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2932849594,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuliang-Liu/MonkeyOCRv2: MonkeyOCRv2 Vision Encoder - GitHub",
+      "url": "https://github.com/Yuliang-Liu/MonkeyOCRv2",
+      "snippet": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI News 2026.07.24 ⚡ We released MonkeyOCRv2-B-Parsing-DFlash, enabling vLLM serving with DFlash for up to 2× faster inference."
+    },
+    {
+      "title": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI",
+      "url": "https://arxiv.org/abs/2607.11562",
+      "snippet": "Mainstream visual encoders are pretrained on natural images and cannot be effectively applied to document images without document-oriented adaptation, as dense text and fine-grained character strokes demand character-level visual perception. We present MonkeyOCRv2, a visual-text pretrained model for document AI. First, we construct MonkeyDoc v2, to our knowledge the largest document-image ..."
+    },
+    {
+      "title": "MonkeyOCRv2 - a zenosai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/zenosai/monkeyocrv2",
+      "snippet": "The collection of the paper `MonkeyOCRv2: A Visual-Text Foundation Model for Document AI`."
+    },
+    {
+      "title": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI",
+      "url": "https://arxiv.org/html/2607.11562",
+      "snippet": "To fill this gap, we present MonkeyOCRv2, a visual foundation model for document AI: an encoder pretrained on document images with objectives that reward character-level visual fidelity rather than global semantic abstraction."
+    },
+    {
+      "title": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI",
+      "url": "https://huggingface.co/papers/2607.11562",
+      "snippet": "Collections including this paper 1 MonkeyOCRv2 Collection The collection of the paper `MonkeyOCRv2: A Visual-Text Foundation Model for Document AI`.•9 items•Updated 2 days ago• 2"
+    }
+  ]
+}

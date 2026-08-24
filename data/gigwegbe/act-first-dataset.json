@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gigwegbe/act-first-dataset",
+  "slug": "gigwegbe-act-first-dataset",
+  "author": "gigwegbe",
+  "url": "https://huggingface.co/gigwegbe/act-first-dataset",
+  "created_at": "2026-08-23T21:57:47.000Z",
+  "updated_at": "2026-08-23T23:26:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:gigwegbe/first-dataset",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2065324560,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gigwegbe/first-dataset at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/gigwegbe/first-dataset/tree/main",
+      "snippet": "LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main first-dataset 348 MB 1 contributor History:7 commits gigwegbe Upload README.md with huggingface_hub 8afbb0c verified44 minutes ago dataUpload folder using huggingface_hub44 minutes ago metaUpload folder using ..."
+    },
+    {
+      "title": "peterziegler_first_model - Hugging Face",
+      "url": "https://huggingface.co/peterziegler/peterziegler_first_model",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "gigwegbe (George Igwegbe) · GitHub",
+      "url": "https://github.com/gigwegbe",
+      "snippet": "Train Deep Neural Nets on Edge Devices. gigwegbe has 95 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

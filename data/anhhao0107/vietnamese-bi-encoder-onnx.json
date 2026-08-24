@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnhHao0107/vietnamese-bi-encoder-onnx",
+  "slug": "anhhao0107-vietnamese-bi-encoder-onnx",
+  "author": "AnhHao0107",
+  "url": "https://huggingface.co/AnhHao0107/vietnamese-bi-encoder-onnx",
+  "created_at": "2026-08-24T12:05:46.000Z",
+  "updated_at": "2026-08-24T12:06:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "generic",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "generic",
+    "onnx",
+    "roberta",
+    "feature-extraction",
+    "sentence-transformers",
+    "sentence-similarity",
+    "transformers",
+    "vi",
+    "arxiv:2403.01616",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 537824295,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bkai-foundation-models/vietnamese-bi-encoder · Hugging Face",
+      "url": "https://huggingface.co/bkai-foundation-models/vietnamese-bi-encoder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · bkai-foundation-models/vietnamese-bi-encoder at ...",
+      "url": "https://huggingface.co/bkai-foundation-models/vietnamese-bi-encoder/blob/665f92388b54b30b3f8a53793d111f1b82d422ae/README.md",
+      "snippet": "bkai-foundation-models/vietnamese-bi-encoder This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "vietnamese-bi-encoder/models/viencoder/1/model.onnx at main ... - GitHub",
+      "url": "https://github.com/hungnq1310/vietnamese-bi-encoder/blob/main/models/viencoder/1/model.onnx",
+      "snippet": "Contribute to hungnq1310/vietnamese-bi-encoder development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - hungnq1310/vietnamese-bi-encoder",
+      "url": "https://github.com/hungnq1310/vietnamese-bi-encoder",
+      "snippet": "Vietnamese BiEncdoer This repostory is used for deploying model bkai-foundation-models/vietnamese-bi-encoder by using Triton Inference Server and FastAPI."
+    },
+    {
+      "title": "vietnamese-bi-encoder by bkai-foundation-models | Mixpeek",
+      "url": "https://mixpeek.com/model/bkai-foundation-models/vietnamese-bi-encoder",
+      "snippet": "On Mixpeek, vietnamese-bi-encoder runs as a managed extractor inside a processing pipeline. Point a bucket of sentence similarity data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    }
+  ]
+}

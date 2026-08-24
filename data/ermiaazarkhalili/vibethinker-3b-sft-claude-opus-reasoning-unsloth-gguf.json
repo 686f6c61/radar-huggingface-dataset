@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF",
+  "slug": "ermiaazarkhalili-vibethinker-3b-sft-claude-opus-reasoning-unsloth-gguf",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF",
+  "created_at": "2026-06-22T10:34:44.000Z",
+  "updated_at": "2026-08-23T11:36:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "unsloth",
+    "lora",
+    "trl",
+    "sft",
+    "text-generation",
+    "base_model:WeiboAI/VibeThinker-3B",
+    "base_model:adapter:WeiboAI/VibeThinker-3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 259,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12843579968,
+  "storage_human": "12.8 GB",
+  "base_model": "WeiboAI/VibeThinker-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF",
+      "url": "https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth",
+      "url": "https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - WeiboAI/VibeThinker: Tiny Model, Big Logic: Diversity-Driven ...",
+      "url": "https://github.com/WeiboAI/VibeThinker",
+      "snippet": "VibeThinker-1.5B is a 1.5B-parameter dense model that challenges the prevailing notion that small models inherently lack robust reasoning capabilities. Developed with an innovative post-training methodology centered on the \"Spectrum-to-Signal Principle (SSP)\", VibeThinker-1.5B demonstrates superior reasoning capabilities compared to closed-source models Magistral Medium and Claude Opus 4 ..."
+    },
+    {
+      "title": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small ...",
+      "url": "https://arxiv.org/html/2606.16140v1",
+      "snippet": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models Abstract This technical report introduces VibeThinker-3B, a compact dense model with 3B parameters developed to investigate how far verifiable reasoning can be pushed within a strictly small-model regime."
+    },
+    {
+      "title": "VibeThinker/README.md at main · WeiboAI/VibeThinker · GitHub",
+      "url": "https://github.com/WeiboAI/VibeThinker/blob/main/README.md",
+      "snippet": "VibeThinker-1.5B is a 1.5B-parameter dense model that challenges the prevailing notion that small models inherently lack robust reasoning capabilities. Developed with an innovative post-training methodology centered on the \"Spectrum-to-Signal Principle (SSP)\", VibeThinker-1.5B demonstrates superior reasoning capabilities compared to closed-source models Magistral Medium and Claude Opus 4 ..."
+    }
+  ]
+}

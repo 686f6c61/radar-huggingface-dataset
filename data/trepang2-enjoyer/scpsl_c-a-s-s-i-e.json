@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Trepang2-Enjoyer/SCPSL_C.A.S.S.I.E",
+  "slug": "trepang2-enjoyer-scpsl_c-a-s-s-i-e",
+  "author": "Trepang2-Enjoyer",
+  "url": "https://huggingface.co/Trepang2-Enjoyer/SCPSL_C.A.S.S.I.E",
+  "created_at": "2026-08-23T22:38:44.000Z",
+  "updated_at": "2026-08-23T22:40:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audio-to-audio",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51474185,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C.A.S.S.I.E. - SCP: Secret Laboratory English Official Wiki",
+      "url": "https://en.scpslgame.com/index.php?title=C.A.S.S.I.E.",
+      "snippet": "C.A.S.S.I.E. is a text-to-Speech system that uses a Domain-specific synthesis, meaning that the speech is not generated in real time and is instead created by using pre-recorded words and phrases said by a human. The Text-to-Speech system simply makes announcements using those existing words and arranges them to make the sentence."
+    },
+    {
+      "title": "C.A.S.S.I.E TTS (Text To Speech) - 101soundboards.com",
+      "url": "https://www.101soundboards.com/tts/1236436-cassie-tts-text-to-speech",
+      "snippet": "Text-to-Speech (TTS) is a technology that converts text into spoken voice output. It is used in a variety of applications, including voice assistants, navigation systems, and accessibility tools for people with visual impairments. On 101soundboards you can use TTS to create custom sounds in the voices of celebrities, streamers, cartoon characters and more, then share them with others. TTS ..."
+    },
+    {
+      "title": "Convex89524/C.A.S.S.I.E: 一个SCP:SL中C.A.S.S.I.E ... - GitHub",
+      "url": "https://github.com/Convex89524/C.A.S.S.I.E",
+      "snippet": "A modern, modular voice concatenation tool inspired by the C.A.S.S.I.E. system in SCP: Secret Laboratory. 基于《SCP: Secret Laboratory》C.A.S.S.I.E ..."
+    },
+    {
+      "title": "Scp Sl Cassie TTS (Text To Speech) - 101soundboards.com",
+      "url": "https://www.101soundboards.com/tts/1307490-scp-sl-cassie-tts-text-to-speech",
+      "snippet": "Text-to-Speech (TTS) is a technology that converts text into spoken voice output. It is used in a variety of applications, including voice assistants, navigation systems, and accessibility tools for people with visual impairments. On 101soundboards you can use TTS to create custom sounds in the voices of celebrities, streamers, cartoon characters and more, then share them with others. TTS ..."
+    },
+    {
+      "title": "SCP: Secret Laboratory English Official Wiki",
+      "url": "https://en.scpslgame.com/index.php?title=Main_Page",
+      "snippet": "Featured Articles Dispose of the unneeded with the Wayside Incinerator. Some changes have been noticed with the outputs produced by SCP-914. C.A.S.S.I.E. has been given updated warhead announcement lines."
+    }
+  ]
+}

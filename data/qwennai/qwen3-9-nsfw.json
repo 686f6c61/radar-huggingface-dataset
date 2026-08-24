@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "QwennAI/Qwen3.9-NSFW",
+  "slug": "qwennai-qwen3-9-nsfw",
+  "author": "QwennAI",
+  "url": "https://huggingface.co/QwennAI/Qwen3.9-NSFW",
+  "created_at": "2026-08-23T22:06:50.000Z",
+  "updated_at": "2026-08-23T22:24:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicoboss/Qwen3-14B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/nicoboss/Qwen3-14B-Uncensored",
+      "snippet": "This is a finetune of Qwen3-14B to make it uncensored. Big thanks to @Guilherme34 for creating the uncensor dataset used for this uncensored finetune. This model is based on Qwen3-14B and is governed by the Apache License 2.0."
+    },
+    {
+      "title": "QwenAI - Reddit",
+      "url": "https://www.reddit.com/r/QwenAI/",
+      "snippet": "https://huggingface.co/Qwen"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "Qwen3.7-Max NSFW Restrictions Analyzed | AI News",
+      "url": "https://aiexotic.com/blog/qwen37-max-launch-agentic-power-and-nsfw-safety-filters",
+      "snippet": "Qwen3.7-Max NSFW generation is blocked by Alibaba&#x27;s built-in safety filters in the new agentic AI model for long-horizon tasks. This factual review examines its capabilities and content limits."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ChanchalSh/Muril_Government_FinedTuned_Model",
+  "slug": "chanchalsh-muril_government_finedtuned_model",
+  "author": "ChanchalSh",
+  "url": "https://huggingface.co/ChanchalSh/Muril_Government_FinedTuned_Model",
+  "created_at": "2026-08-24T15:22:27.000Z",
+  "updated_at": "2026-08-24T15:22:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/muril-base-cased · Hugging Face",
+      "url": "https://huggingface.co/google/muril-base-cased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · google/muril-base-cased at main - Hugging Face",
+      "url": "https://huggingface.co/google/muril-base-cased/blob/main/README.md",
+      "snippet": "MuRIL: Multilingual Representations for Indian Languages MuRIL is a BERT model pre-trained on 17 Indian languages and their transliterated counterparts. We have released the pre-trained model (with the MLM layer intact, enabling masked word predictions) in this repository."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "MuRIL: Multilingual Representations for Indian Languages",
+      "url": "https://arxiv.org/abs/2103.10730",
+      "snippet": "To address the aforementioned gaps, we propose MuRIL, a multilingual LM specifically built for IN languages. MuRIL is trained on significantly large amounts of IN text corpora only. We explicitly augment monolingual text corpora with both translated and transliterated document pairs, that serve as supervised cross-lingual signals in training."
+    }
+  ]
+}

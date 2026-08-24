@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ap-ff-kha/GLM-4.6V-Flash",
+  "slug": "ap-ff-kha-glm-4-6v-flash",
+  "author": "ap-ff-kha",
+  "url": "https://huggingface.co/ap-ff-kha/GLM-4.6V-Flash",
+  "created_at": "2026-08-24T09:58:20.000Z",
+  "updated_at": "2026-08-24T09:58:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4v",
+    "image-text-to-text",
+    "unsloth",
+    "conversational",
+    "zh",
+    "en",
+    "arxiv:2507.01006",
+    "base_model:zai-org/GLM-4.6V-Flash",
+    "base_model:finetune:zai-org/GLM-4.6V-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10292777472,
+  "parameters_human": "10.29B",
+  "storage_bytes": 20605614746,
+  "storage_human": "20.6 GB",
+  "base_model": "zai-org/GLM-4.6V-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.6V-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/GLM-4.6V · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Virtual0ps/glm-v: GLM-4.6V/4.5V/4.1V-Thinking: Towards ...",
+      "url": "https://github.com/Virtual0ps/glm-v",
+      "snippet": "GLM-4.6V series model includes two versions: GLM-4.6V (106B), a foundation model designed for cloud and high-performance cluster scenarios, and GLM-4.6V-Flash (9B), a lightweight model optimized for local deployment and low-latency applications."
+    },
+    {
+      "title": "GLM-4.6V - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-4.6v",
+      "snippet": "Overview GLM-4.6V series are Z.ai&#x27;s iterations in a multimodal large language model. GLM-4.6V scales its context window to 128k tokens in training, and achieves SoTA performance in visual understanding among models of similar parameter scales. Crucially, GLM-4.6V integrate native Function Calling capabilities for the first time. This effectively bridges the gap between \"visual perception ..."
+    },
+    {
+      "title": "GLM-4.6V-Flash huggingface.co api & zai-org GLM-4.6V-Flash github AI ...",
+      "url": "https://www.toolify.ai/ai-model/zai-org-glm-4-6v-flash",
+      "snippet": "GLM-4.6V-Flash huggingface.co is an AI model on huggingface.co that provides GLM-4.6V-Flash&#x27;s model effect (), which can be used instantly with this zai-org GLM-4.6V-Flash model. huggingface.co supports a free trial of the GLM-4.6V-Flash model, and also provides paid use of the GLM-4.6V-Flash. Support call GLM-4.6V-Flash model through api, including Node.js, Python, http."
+    }
+  ]
+}

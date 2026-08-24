@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Lumina-ERP/lumina-tsql-8b",
+  "slug": "lumina-erp-lumina-tsql-8b",
+  "author": "Lumina-ERP",
+  "url": "https://huggingface.co/Lumina-ERP/lumina-tsql-8b",
+  "created_at": "2026-08-23T21:22:14.000Z",
+  "updated_at": "2026-08-24T02:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-to-sql",
+    "t-sql",
+    "sql-server",
+    "erp",
+    "distribution",
+    "lora",
+    "dpo",
+    "execution-grounded",
+    "conversational",
+    "en",
+    "dataset:Lumina-ERP/erpbench-distribution",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32774456302,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lumina: ByteDance AI Studio - Smart Digital Human Creator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=Rqu_ozdosBpcUMr7Kb%2Dv6yGKmNZtu8x3TW20_Hqv%2DT6vKOuZFjhKMFj9gFc%2DKzTX2AxJpB6VgUEM_NLr0W0Rr9F6EqgFm7u0NWJYu5pTrh8HMoyD9zOMeSDE0OXWxHSoq6cI6ooiwkNt188b5xXrW9P7Cbnh1KKCEZvv8mFeH1E.DnMb7uHxqX0mdo5RKDj7LA&rut=eb7a438770bf7fe16c6cc2bf68de2fa582d1d25a7bfb70649c4a68c215400c25&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8e1c6g_6ZILSary2zU4FhcjVUCUyCAslVtvg1Tb1b6dxjLAzVLDM%2DWO8OwfgkuYpB1ELTIhhWr3F6Or48tBDtlUkOviz893hM%2DmAl4WtJeB4z2xJ_1L5DqlyIVWbbK%2DmZvvWwypQJtndVFZM4iHxzj7xKSKYBESicUPc99Kzvro9ELBqqQck7mvYcjEQTCo1wJm0Bhck%2DSXWOF5pgfATssHfqJy8%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZsdW1pbmElMmZob21lJTJmYXJ0d29yayUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZHNpZ251cF9sdW1pbmFfZ2xvYmFsX2VuZ2xpc2hfMjAyNjA4MTlfY2VsZW5lJTI2dXRtX3Rlcm0lM2QyMDI2MDgxOV9icmFuZF9sdW1pbmFfYnJvYWRtYXRjaF9jb3JlJTI2dXRtX2NvbnRlbnQlM2R0ZWNkbyUyNm1zY2xraWQlM2Q2ZGUyNGE3ODg3N2IxOWU2ZjdjZDIwZjNmNWQ5YTk3Mg%26rlid%3D6de24a78877b19e6f7cd20f3f5d9a972&vqd=4-228521928246446364599631023128500737612&iurl=%7B1%7DIG%3D8FB0A5010B5A4A04BE3F15E098113D71%26CID%3D0E329EFB38C66C3A0B5F894539B16D07%26ID%3DDevEx%2C5037.1",
+      "snippet": "BytePlus Lumina - the official AI visual platform for enterprises & creators. Launch Seedance 2.5 for less—save up to 50% only on Lumina."
+    },
+    {
+      "title": "Prophet 21 & Epicor Kinetic Consulting | Lumina ERP",
+      "url": "https://lumina-erp.com/",
+      "snippet": "LUMINA ERP A Houston engineering practice for Prophet 21 and Epicor Kinetic: implementation, data migration, integration, rescue, and managed support, plus the Lumina AI platform. Lumina ERP, LLC · Houston, Texas. Serving distributors and manufacturers nationwide."
+    },
+    {
+      "title": "Lumina | AI Inventory & Operations Hub",
+      "url": "https://www.get-lumina.com/",
+      "snippet": "The flexible planning system for modern brands. Transform chaos into clarity with AI-powered demand forecasting and inventory planning."
+    },
+    {
+      "title": "LF: Lumina + assets | RipperStore Forums",
+      "url": "https://forum.ripper.store/topic/78409/lf-lumina-assets",
+      "snippet": "LF: Lumina + assets Unsolved Booth Avatars booth asset 96 Posts 56 Posters 251.7k Views 131 Watching"
+    },
+    {
+      "title": "luminaerp/claude.md at main · luminaerp360/luminaerp · GitHub",
+      "url": "https://github.com/luminaerp360/luminaerp/blob/main/claude.md",
+      "snippet": "Lumina ERP - Claude AI Context Project Overview Lumina ERP is a comprehensive Enterprise Resource Planning system built as a monorepo using modern web technologies. It provides multi-tenant support with advanced inventory management, financial accounting, sales, and subscription licensing features."
+    }
+  ]
+}

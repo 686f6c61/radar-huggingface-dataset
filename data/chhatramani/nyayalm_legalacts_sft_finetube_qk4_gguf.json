@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chhatramani/nyayalm_legalacts_sft_finetube_qk4_gguf",
+  "slug": "chhatramani-nyayalm_legalacts_sft_finetube_qk4_gguf",
+  "author": "chhatramani",
+  "url": "https://huggingface.co/chhatramani/nyayalm_legalacts_sft_finetube_qk4_gguf",
+  "created_at": "2026-08-23T04:14:37.000Z",
+  "updated_at": "2026-08-23T04:18:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409280,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chhatramani01/NyayaLM_v0.5_Gemma3n4B-4bit - GitHub",
+      "url": "https://github.com/chhatramani01/NyayaLM_v0.5_Gemma3n4B-4bit",
+      "snippet": "The efficiency of our fine-tuning process (training only 0.39% of parameters) and the accessibility of our deployment (GGUF format with Ollama) demonstrate how advanced AI can be made available to resource-constrained environments."
+    },
+    {
+      "title": "README.md · chhatramani/NyayaLM_v0.5_gemma3n4B at main",
+      "url": "https://huggingface.co/chhatramani/NyayaLM_v0.5_gemma3n4B/blob/main/README.md",
+      "snippet": "NyayaLM v0.5 is a fine-tuned version of Google&#x27;s Gemma 3n 4B model, specifically designed to provide accurate legal information in Nepali. This model bridges the justice gap in Nepal by making legal knowledge accessible to everyone, running entirely offline on personal computers."
+    },
+    {
+      "title": "Chhatramani Yadav - Hugging Face",
+      "url": "https://huggingface.co/chhatramani",
+      "snippet": "LLM, AI Agents, Generative AI,NLP"
+    },
+    {
+      "title": "NyayaLM_v0.5_Gemma3n4B-4bit/README.md at main - GitHub",
+      "url": "https://github.com/chhatramani01/NyayaLM_v0.5_Gemma3n4B-4bit/blob/main/README.md",
+      "snippet": "NyayaLM is our response to this challenge—a fine-tuned language model based on Google&#x27;s Gemma 3n, designed to provide accurate legal information in Nepali, running entirely offline on personal computers. This project represents our submission to the Google Gemma 3n Impact Challenge, demonstrating how AI can create meaningful, positive change in the world."
+    },
+    {
+      "title": "NYAYAM | The AI Legal Platform Democratizing Justice",
+      "url": "https://www.nyayam.org/",
+      "snippet": "NYAYAM is an AI legal intelligence platform providing accurate legal information, document analysis and generation, and strategic guidance. Get expert legal insights instantly and anonymously with our frontier legal AI."
+    }
+  ]
+}

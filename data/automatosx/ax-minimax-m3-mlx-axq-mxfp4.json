@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-MiniMax-M3-MLX-AXQ-MXFP4",
+  "slug": "automatosx-ax-minimax-m3-mlx-axq-mxfp4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-MiniMax-M3-MLX-AXQ-MXFP4",
+  "created_at": "2026-08-23T03:42:32.000Z",
+  "updated_at": "2026-08-23T04:06:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "minimax_m3_vl",
+    "axquant",
+    "moe",
+    "minimax",
+    "experimental",
+    "not-certified",
+    "mxfp4",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-M3",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 81101740416,
+  "parameters_human": "81.10B",
+  "storage_bytes": 233044718032,
+  "storage_human": "233.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M3/",
+      "snippet": "MiniMax-M3 is a native multimodal model with 1M context. It has ~428B parameters and ~23B activated parameters. Highlights: Native Multimodality: M3 undergoes mixed-modality training from the very first step, enabling deeper semantic fusion across text, image, and video. Context Scaling via Sparse Attention: M3 introduces MiniMax Sparse Attention (MSA) to improve long context efficiency. M3 ..."
+    },
+    {
+      "title": "MiniMax M3 - Coding & Agentic Frontier, 1M Context, Multimodal",
+      "url": "https://www.minimax.io/models/text/m3",
+      "snippet": "MiniMax M3 reaches frontier-level performance on coding and agentic tasks, with a 1M context window powered by the MSA architecture and native multimodal understanding. The first open-weight model to unite all three capabilities."
+    },
+    {
+      "title": "MiniMax&#x27;s MiniMax M3 - AI Model Details",
+      "url": "https://docsbot.ai/models/minimax-m3",
+      "snippet": "MiniMax M3 is MiniMax&#x27;s frontier open-weight multimodal model for coding, agentic workflows, long-context repository and document work, and computer-use tasks. It introduces MiniMax Sparse Attention, supports up to a 1M-token context window, accepts text, image, and video input, and is positioned as the first open-weight model to combine frontier coding, native multimodality, and million-token ..."
+    },
+    {
+      "title": "AutomatosX MLX Model Catalog - a AutomatosX Collection",
+      "url": "https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog",
+      "snippet": "Official AutomatosX MLX releases for Apple Silicon. OptiQ mixed 4/8-bit packages sit next to uniform 4bit/6bit siblings."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    }
+  ]
+}

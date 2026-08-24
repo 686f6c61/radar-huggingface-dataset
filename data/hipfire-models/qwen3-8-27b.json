@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hipfire-models/qwen3.8-27b",
+  "slug": "hipfire-models-qwen3-8-27b",
+  "author": "hipfire-models",
+  "url": "https://huggingface.co/hipfire-models/qwen3.8-27b",
+  "created_at": "2026-08-14T18:02:07.000Z",
+  "updated_at": "2026-08-24T04:13:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "hipfire",
+  "languages": [],
+  "tags": [
+    "hipfire",
+    "amd",
+    "rdna",
+    "quantized",
+    "qwen3.8",
+    "magnumquant",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242131056640,
+  "storage_human": "242.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hipfire-models/qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/hipfire-models/qwen3.8-27b",
+      "snippet": "The release artifact was validated on gfx1100 and gfx1201 through hipfire&#x27;s native matrix benchmark and OpenAI-compatible serve path. Qwen3.8 stayed within 0.57% of Qwen3.6-27B across the tested prefill and decode matrix, and completed an eight-turn sampled coding/retrieval session with reasoning_effort=xhigh without empty output, runaway ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B Open Weight Released Aug 14 2026 Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run. It is a 27B parameter model with a 262k token context window. Benchmark results (shown below) cover NL2Repo-Bench, QwenSWEBench, CoWorkBench, IFBench, Agent&#x27;s Last Exam ..."
+    }
+  ]
+}

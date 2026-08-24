@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_answer_variance_medmcqa_qwen7b",
+  "slug": "ishikaa-acquisition_generator_as_answer_variance_medmcqa_qwen7b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_medmcqa_qwen7b",
+  "created_at": "2026-08-23T13:00:26.000Z",
+  "updated_at": "2026-08-23T13:02:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473926528,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acquisition Generator As Answer Variance Numina Qwen7b - AI Model ...",
+      "url": "https://free2aitools.com/model/ishikaa/acquisition_generator_as_answer_variance_numina_qwen7b",
+      "snippet": "Registry entry for model Acquisition Generator As Answer Variance Numina Qwen7b; source metadata pending."
+    },
+    {
+      "title": "ishikaa (Ishika Agarwal) - Hugging Face",
+      "url": "https://huggingface.co/ishikaa",
+      "snippet": "active learning, reinforcement learning, reasoning, planning, NLP"
+    },
+    {
+      "title": "ishikaa/acquisition_qwen3bins_medmcqa_answer_variance · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_qwen3bins_medmcqa_answer_variance",
+      "snippet": "Instructions to use ishikaa/acquisition_qwen3bins_medmcqa_answer_variance with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MedMCQA Homepage",
+      "url": "https://medmcqa.github.io/",
+      "snippet": "About MedMCQA, a large-scale, Multiple-Choice Question Answering (MCQA) dataset designed to address realworld medical entrance exam questions. The MedMCQA task can be formulated as X = {Q, O} where Q represents the questions in the text, O represents the candidate options, multiple candidate answers are given for each question O = {O1, O2, ..., On}. The goal is to select the single or multiple ..."
+    },
+    {
+      "title": "medmcqa/model.py at main · medmcqa/medmcqa · GitHub",
+      "url": "https://github.com/medmcqa/medmcqa/blob/main/model.py",
+      "snippet": "A large-scale (194k), Multiple-Choice Question Answering (MCQA) dataset designed to address realworld medical entrance exam questions. - medmcqa/medmcqa"
+    }
+  ]
+}

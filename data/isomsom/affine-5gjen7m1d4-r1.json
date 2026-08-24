@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "isomsom/Affine-5gjen7m1d4-r1",
+  "slug": "isomsom-affine-5gjen7m1d4-r1",
+  "author": "isomsom",
+  "url": "https://huggingface.co/isomsom/Affine-5gjen7m1d4-r1",
+  "created_at": "2026-08-24T09:30:02.000Z",
+  "updated_at": "2026-08-24T09:53:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483973,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isomsom (isomsom) - Hugging Face",
+      "url": "https://huggingface.co/isomsom",
+      "snippet": "User profile of isomsom on Hugging Face Recent Activity updated a model44 minutes ago isomsom/Affine-5eqvcfqpuo-m2 published a modelabout 1 hour ago isomsom/Affine-5eqvcfqpuo-m2 updated a modelabout 1 hour ago isomsom/Affine-5eqvcfqpuo-m1 View all activity"
+    },
+    {
+      "title": "isomsom (isomsom) - Hugging Face",
+      "url": "https://huggingface.co/isomsom/models",
+      "snippet": "isomsom&#x27;s models5 Sort: Recently updated isomsom/Affine-5ewxqvvui1-m2 35B•Updated 2 days ago• 23"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "DeepSeek-R1 · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/deepseek-r1",
+      "snippet": "DeepSeek-R1 is the first openly-released reasoning model that was competitive with OpenAI o1, and the paper that accompanied it (published Jan 22, 2025) became one of the most-read AI papers of the year. The technical story was that pure reinforcement learning post-training, without any supervised fine-tuning on human reasoning traces, could elicit chain-of-thought reasoning that generalized ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "DeepSeek-R1: A 671B parameter MoE model (37B activated parameters) incorporating both cold-start data and reinforcement learning Both foundation models support a 128K token context length and are based on the DeepSeek-V3 architecture."
+    }
+  ]
+}

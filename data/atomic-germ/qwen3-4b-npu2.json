@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3-4B-NPU2",
+  "slug": "atomic-germ-qwen3-4b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3-4B-NPU2",
+  "created_at": "2026-08-24T03:17:08.000Z",
+  "updated_at": "2026-08-24T03:17:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9891987668,
+  "storage_human": "9.9 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Qwen3.5-4B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-4B-NPU2",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3.5-2B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-2B-NPU2",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen 3 · FastFlowLM",
+      "url": "http://fastflowlm.com/docs/benchmarks/qwen3_results/",
+      "snippet": "⚡ Performance and Efficiency Benchmarks This section reports the performance of Qwen 3 on NPU with FastFlowLM (FLM). Note: Results are based on FastFlowLM v0.9.31. Under FLM&#x27;s default NPU power mode (Performance) Newer versions may deliver improved performance. Fine-tuned models show performance comparable to their base models."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "The flagship Qwen3-235B-A22B scores 95.6 on ArenaHard and 2056 on CodeForces Elo, outperforming DeepSeek-R1 on 17 of 23 benchmarks. For developers, this is the first open-source family where one model can genuinely replace both a reasoning specialist and a general-purpose chat model. The Full Qwen 3 Dense Model Lineup: 0.6B to 32B Explained"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

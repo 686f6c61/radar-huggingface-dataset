@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Shuu12121/NightOwl-CodeEmbedding",
+  "slug": "shuu12121-nightowl-codeembedding",
+  "author": "Shuu12121",
+  "url": "https://huggingface.co/Shuu12121/NightOwl-CodeEmbedding",
+  "created_at": "2026-06-08T21:44:04.000Z",
+  "updated_at": "2026-08-23T11:44:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "code-search",
+    "code-embedding",
+    "retrieval",
+    "dense",
+    "dataset:Shuu12121/coir_hard_negative_datasets_v3_kd",
+    "dataset:Shuu12121/owl_code_search_hard_negative_datasets_V2_kd",
+    "dataset:Shuu12121/codeedit_hard_negative_datasets_kd",
+    "base_model:Shuu12121/NightOwl",
+    "base_model:finetune:Shuu12121/NightOwl",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 214,
+  "trending_score": 0,
+  "parameters": 150779136,
+  "parameters_human": "150.8M",
+  "storage_bytes": 1206255664,
+  "storage_human": "1.2 GB",
+  "base_model": "Shuu12121/NightOwl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shuu12121/NightOwl-CodeEmbedding · Hugging Face",
+      "url": "https://huggingface.co/Shuu12121/NightOwl-CodeEmbedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shuu12121/NightOwl · Hugging Face",
+      "url": "https://huggingface.co/Shuu12121/NightOwl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NightOwl-CodeEmbedding · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models/Shuu12121/NightOwl-CodeEmbedding",
+      "snippet": "True Adapted from Shuu12121/NightOwl Trained on AppsRetrievalCOIRCodeSearchNetRetrievalCodeFeedbackMTCodeFeedbackSTCodeSearchNetCCRetrievalCodeSearchNetRetrievalCodeTransOceanContestCodeTransOceanDL+3 moreShow fewerCosQAStackOverflowQASyntheticText2SQL Parameters151M Active parameters151M Embedding dim768 Max tokens1,024 Memory575 MB ..."
+    },
+    {
+      "title": "Shun0212 (Shuu) · GitHub",
+      "url": "https://github.com/Shun0212",
+      "snippet": "Semantic code search for VS Code, powered by NightOwl-CodeEmbedding — my own ModernBERT Bi-Encoder trained from scratch. Codex/MCP ready!! Python 5"
+    },
+    {
+      "title": "GitHub - Shun0212/OwlSpotLight: Semantic code search for VS Code ...",
+      "url": "https://github.com/shun0212/OwlSpotLight",
+      "snippet": "Under the hood, OwlSpotlight is more than generic chunk search. Its retrieval engine is NightOwl-CodeEmbedding, a ~150M-parameter code-embedding model I built myself: a bi-encoder on the ModernBERT architecture, fine-tuned for code retrieval from NightOwl, a base model I trained from scratch."
+    }
+  ]
+}

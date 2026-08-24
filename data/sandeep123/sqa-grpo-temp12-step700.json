@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-temp12-step700",
+  "slug": "sandeep123-sqa-grpo-temp12-step700",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-temp12-step700",
+  "created_at": "2026-08-24T09:59:53.000Z",
+  "updated_at": "2026-08-24T10:03:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sandeep123 · GitHub",
+      "url": "https://github.com/sandeep123",
+      "snippet": "GitHub is where sandeep123 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "sandeep123-ai · GitHub",
+      "url": "https://github.com/sandeep123-ai",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "sandeep123 (Kumar) - Hugging Face",
+      "url": "https://huggingface.co/datasets/sandeep123/",
+      "snippet": "User profile of Kumar on Hugging Face"
+    }
+  ]
+}

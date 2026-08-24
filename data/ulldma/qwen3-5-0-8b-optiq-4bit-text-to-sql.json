@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ulldma/Qwen3.5-0.8B-OptiQ-4bit-text-to-sql",
+  "slug": "ulldma-qwen3-5-0-8b-optiq-4bit-text-to-sql",
+  "author": "ulldma",
+  "url": "https://huggingface.co/ulldma/Qwen3.5-0.8B-OptiQ-4bit-text-to-sql",
+  "created_at": "2026-08-23T06:33:46.000Z",
+  "updated_at": "2026-08-23T07:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "lora",
+    "text-to-sql",
+    "sql",
+    "apple-silicon",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:gretelai/synthetic_text_to_sql",
+    "base_model:mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+    "base_model:adapter:mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 174539584,
+  "parameters_human": "174.5M",
+  "storage_bytes": 670246531,
+  "storage_human": "670 MB",
+  "base_model": "mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-0.8B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+      "snippet": "Qwen3.5-.8B-OptiQ-4bit Mixed-precision quantized with OptiQ — sensitivity-driven quantization for Apple Silicon This is a mixed-precision quantized version of Qwen/Qwen3.5-.8B in MLX format. Unlike uniform quantization (all layers at the same bit-width), OptiQ measures each layer&#x27;s sensitivity and assigns optimal per-layer bit-widths, preserving model quality where it matters most. How ..."
+    },
+    {
+      "title": "README.md · mlx-community/Qwen3.5-0.8B-OptiQ-4bit at main",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-OptiQ-4bit/blob/main/README.md",
+      "snippet": "A 4-bit mixed-precision MLX quant of Qwen/Qwen3.5-.8B. Per-layer bit-widths come from a KL-divergence sensitivity pass on a six-domain calibration mix (prose · reasoning · code · agent · tool-call · constraint-bearing instructions). Sensitive layers go to 8-bit; robust ones stay at 4-bit. The on-disk size is within ~5 % of a stock uniform 4-bit MLX quant."
+    },
+    {
+      "title": "Qwen3.5-0.8B-OptiQ-4bit — VRAM, Quants & GPU Compatibility",
+      "url": "https://nodepedia.com/models/qwen3-5-0-8b-optiq-4bit/",
+      "snippet": "Qwen3.5-.8B-OptiQ-4bit by mlx-community — 0.17B parameter apache-2.0 model with 262K context. Minimum 0GB VRAM (Q4_K_M quantization). Compatible with 99 GPUs, cloud rental from $0.06/hr. 3 quantization options available."
+    },
+    {
+      "title": "Qwen3.5-0.8B-OptiQ-4bit · Models",
+      "url": "https://www.modelscope.cn/models/mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+      "snippet": "A 4-bit mixed-precision MLX quant of Qwen/Qwen3.5-.8B. Per-layer bit-widths come from a KL-divergence sensitivity pass on a six-domain calibration mix (prose · reasoning · code · agent · tool-call · constraint-bearing instructions). Sensitive layers go to 8-bit; robust ones stay at 4-bit."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sahandjan/default-repo-model",
+  "slug": "sahandjan-default-repo-model",
+  "author": "sahandjan",
+  "url": "https://huggingface.co/sahandjan/default-repo-model",
+  "created_at": "2026-06-05T16:00:10.000Z",
+  "updated_at": "2026-08-23T16:00:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "default-repo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahandjan/default-repo-model · Hugging Face",
+      "url": "https://huggingface.co/sahandjan/default-repo-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sahandjan (sahabi) - Hugging Face",
+      "url": "https://huggingface.co/sahandjan/datasets",
+      "snippet": "Recent Activity updated a datasetabout 17 hours ago sahandjan/default-repo-dataset updated a model1 day ago sahandjan/default-repo-model updated a Space19 days ago sahandjan/Rivalz-Node-V1 View all activity"
+    },
+    {
+      "title": "GitHub - anomalyco/models.dev: An open-source database of AI models.",
+      "url": "https://github.com/anomalyco/models.dev",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and capabilities. There&#x27;s no single database with information about all the available AI models. We started Models.dev as a community-contributed project to address this. We also use it internally in opencode."
+    },
+    {
+      "title": "GitHub - odysseus-dev/odysseus: Self-hosted AI workspace.",
+      "url": "https://github.com/odysseus-dev/odysseus",
+      "snippet": "A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows. Quick Start · Setup Guide · Contributing · Roadmap"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

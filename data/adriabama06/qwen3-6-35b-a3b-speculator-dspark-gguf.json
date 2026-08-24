@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adriabama06/Qwen3.6-35B-A3B-speculator.dspark-GGUF",
+  "slug": "adriabama06-qwen3-6-35b-a3b-speculator-dspark-gguf",
+  "author": "adriabama06",
+  "url": "https://huggingface.co/adriabama06/Qwen3.6-35B-A3B-speculator.dspark-GGUF",
+  "created_at": "2026-08-24T14:05:31.000Z",
+  "updated_at": "2026-08-24T14:39:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dspark",
+    "base_model:RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+    "base_model:quantized:RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 950005761,
+  "parameters_human": "950.0M",
+  "storage_bytes": 8463104768,
+  "storage_human": "8.5 GB",
+  "base_model": "RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Qwen3.6-35B-A3B-speculator.dspark · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+      "snippet": "DSpark extends DFlash with a Markov head (intra-block token dependency) and a confidence head (per-position acceptance prediction). Training compute for this model was generously provided by Lambda, a leading cloud platform for AI training and inference. Commands Using the Speculators library and the helper scripts provided in the repo."
+    },
+    {
+      "title": "RedHatAI/Qwen3.6-35B-A3B-speculator.dspark at main",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark/tree/main",
+      "snippet": "6 Follow Red Hat AI 2.92k Safetensors speculators speculative-decoding dspark custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.6-35B-A3B-speculator.dspark 2.65 GB Ctrl+K Ctrl+K 1 contributor History:14 commits shanjiaz Update README.md 53814b2 verified4 days ago .gitattributes Safe 1. ..."
+    },
+    {
+      "title": "Qwen3.6 Models | QwenLM/Qwen3.6 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models",
+      "snippet": "Qwen3.6 Models Relevant source files This page provides a detailed technical overview of the Qwen3.6 model family, focusing on the 27B dense model and the 35B-A3B sparse Mixture-of-Experts (MoE) model. Building upon the architectural foundations of Qwen3.5, the Qwen3.6 series introduces specialized capabilities for Agentic Coding and Thinking Preservation, designed to enhance real-world ..."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.6-35B-A3B.html",
+      "snippet": "Qwen3.6-35B-A3B 1 Introduction ¶ Qwen3.6-35B-A3B is a sparse MoE model in the Qwen3.6 family, with 35B total parameters and about 3B activated parameters per token. It uses the hybrid attention architecture used by Qwen3.5-style models, and is suitable for long-context online serving on Ascend hardware."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Veda-Labs/Amazing-2.0",
+  "slug": "veda-labs-amazing-2-0",
+  "author": "Veda-Labs",
+  "url": "https://huggingface.co/Veda-Labs/Amazing-2.0",
+  "created_at": "2026-08-23T14:31:01.000Z",
+  "updated_at": "2026-08-24T03:19:53.000Z",
+  "license": "veda-labs-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "vedika-amazing-2",
+    "diffusion-single-file",
+    "image-to-image",
+    "en",
+    "license:other",
+    "diffusers:VedikaAmazing2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32223281152,
+  "parameters_human": "32.22B",
+  "storage_bytes": 177605837979,
+  "storage_human": "177.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veda-Labs (Veda Labs) - Hugging Face",
+      "url": "https://huggingface.co/Veda-Labs",
+      "snippet": "User profile of Veda Labs on Hugging Face"
+    },
+    {
+      "title": "Veda Labs",
+      "url": "https://vedalabs.online/",
+      "snippet": "Veda Labs provides a secure, low-latency API infrastructure for integrating AI models into your applications. Experience seamless scalability, comprehensive usage analytics, and robust rate limiting with a strict zero-data-training policy."
+    },
+    {
+      "title": "VedaLabs (Veda Labs) - Hugging Face",
+      "url": "https://huggingface.co/VedaLabs",
+      "snippet": "Vedika Advanced AI 4.1 Flash 🏢 it is the end point of Vedika 4.1 flash private model VedaLabs Jun 24 models3"
+    },
+    {
+      "title": "Vedika-advanced-AI/Aura-Gen-2.0-Creative - GitHub",
+      "url": "https://github.com/Vedika-advanced-AI/Aura-Gen-2.0-Creative",
+      "snippet": "Aura-Gen-2.-Creative Latest image generation model developed by a Veda labs No releases published 100.0%"
+    },
+    {
+      "title": "Veda Labs vedalabs-tech - GitHub",
+      "url": "https://github.com/vedalabs-tech",
+      "snippet": "@Vedika-advanced-AI Architecting the next frontier of AI. Founder at Veda Labs, building high-performance, enterprise-grade multimodal AI gateways - vedalabs-tech"
+    }
+  ]
+}

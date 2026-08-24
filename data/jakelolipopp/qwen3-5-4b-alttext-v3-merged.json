@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jakelolipopp/Qwen3.5-4B-AltText-v3-merged",
+  "slug": "jakelolipopp-qwen3-5-4b-alttext-v3-merged",
+  "author": "Jakelolipopp",
+  "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-4B-AltText-v3-merged",
+  "created_at": "2026-08-24T12:26:47.000Z",
+  "updated_at": "2026-08-24T12:29:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817707,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jakelolipopp/Qwen3.5-4B-AltText-v2-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-4B-AltText-v2-GGUF/tree/main",
+      "snippet": "Jakelolipopp / Qwen3.5-4B-AltText-v2-GGUF like 0 GGUF qwen3_5 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Jakelolipopp/Qwen3.5-4B-AltText-v2-merged · Hugging Face",
+      "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-4B-AltText-v2-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3.5 4B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-4b/",
+      "snippet": "Qwen3.5 4B offers a balanced point in the Qwen3.5 family for local multimodal instruction following, visual understanding, and agent-style workloads on Jetson. Inputs and Outputs"
+    }
+  ]
+}

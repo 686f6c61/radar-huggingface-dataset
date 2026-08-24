@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Terisara/student_text_in_dobot_02llama",
+  "slug": "terisara-student_text_in_dobot_02llama",
+  "author": "Terisara",
+  "url": "https://huggingface.co/Terisara/student_text_in_dobot_02llama",
+  "created_at": "2026-08-23T04:36:11.000Z",
+  "updated_at": "2026-08-23T11:42:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Terisara/student_text_in_dobot_02llama · Hugging Face",
+      "url": "https://huggingface.co/Terisara/student_text_in_dobot_02llama",
+      "snippet": "Terisara / student_text_in_dobot_02llama like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Terisara/student_text_in_dobot_01llama · Hugging Face",
+      "url": "https://huggingface.co/Terisara/student_text_in_dobot_01llama",
+      "snippet": "Instructions to use Terisara/student_text_in_dobot_01llama with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Terisara/student_text_in_dobot_01llama with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLaMA: Open and Efficient Foundation Language Models",
+      "url": "https://arxiv.org/abs/2302.13971",
+      "snippet": "We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B ..."
+    }
+  ]
+}

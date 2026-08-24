@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "byougert/MNEMO",
+  "slug": "byougert-mnemo",
+  "author": "byougert",
+  "url": "https://huggingface.co/byougert/MNEMO",
+  "created_at": "2026-08-24T09:27:47.000Z",
+  "updated_at": "2026-08-24T09:53:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "internvl_chat",
+    "feature-extraction",
+    "person-retrieval",
+    "person-re-identification",
+    "interactive-retrieval",
+    "custom_code",
+    "en",
+    "dataset:byougert/MInterPEDES",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 961190784,
+  "parameters_human": "961.2M",
+  "storage_bytes": 3845680184,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mnemo — Persistent Engineering Cognition for AI Agents",
+      "url": "https://mnemo-mcp.github.io/Mnemo/",
+      "snippet": "Your AI coding agent forgets everything between sessions. Mnemo gives it a persistent memory layer — knowledge graphs, semantic recall, and cross-session context that never fades."
+    },
+    {
+      "title": "GitHub - Methux/mnemo: Mnemo — The first AI memory framework built on ...",
+      "url": "https://github.com/Methux/mnemo",
+      "snippet": "🧠 Mnemo — The first AI memory framework built on cognitive science. Weibull forgetting curves · Triple-path retrieval · Knowledge graph · 10-stage pipeline. - Methux/mnemo"
+    },
+    {
+      "title": "Mnemo — Your AI finally knows you.",
+      "url": "https://withmnemo.com/",
+      "snippet": "Private, local memory for Claude · a demonstration Your AI finally knows you. Every Claude conversation starts from zero. Mnemo was built to fix that — a standing memory Claude reads before each session, kept in a private library only your machine holds the key to. This site is now its demonstration room."
+    },
+    {
+      "title": "Mnemo — Persistent Memory for AI Agents",
+      "url": "https://mnemo-ai.com/",
+      "snippet": "Mnemo gives AI agents persistent, structured memory — recall, learn, and share knowledge across sessions. 82.1% on LoCoMo, first in multi-hop reasoning."
+    },
+    {
+      "title": "GitHub - MnemoAI/mnemo: A MCP-Ready Intelligence Engine for Data ...",
+      "url": "https://github.com/MnemoAI/mnemo",
+      "snippet": "Model Context Protocol (MCP): Enables real-time, protocol-based interaction with external tools, data streams, and services via MCP servers. Composable Agent Architecture: Inspired by effective production patterns, Mnemo allows developers to build, chain, and orchestrate modular agents across tasks and domains."
+    }
+  ]
+}

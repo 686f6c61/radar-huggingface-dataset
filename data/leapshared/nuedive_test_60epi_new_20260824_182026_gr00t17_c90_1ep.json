@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "leapshared/nuedive_test_60epi_new_20260824_182026_GR00T17_c90_1ep",
+  "slug": "leapshared-nuedive_test_60epi_new_20260824_182026_gr00t17_c90_1ep",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/nuedive_test_60epi_new_20260824_182026_GR00T17_c90_1ep",
+  "created_at": "2026-08-24T15:19:06.000Z",
+  "updated_at": "2026-08-24T15:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot_frozen_bf16",
+    "robotics",
+    "dataset:leapshared/nuedive_test_60epi_new_20260824_182026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 9529226248,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leapshared - Hugging Face",
+      "url": "https://huggingface.co/leapshared/models",
+      "snippet": "User profile of Leapshared on Hugging Face"
+    },
+    {
+      "title": "Leapshared - Hugging Face",
+      "url": "https://huggingface.co/leapshared/datasets",
+      "snippet": "Organizations leapshared&#x27;s datasets3 Sort: Recently updated leapshared/neudive_test_120epi_0819_real_20260819_162506 Viewer •Updated about 7 hours ago•111k"
+    },
+    {
+      "title": "Polaris Authentication - Polaris Auth",
+      "url": "https://ccs-leap.polarislibrary.com/leapwebapp?handler=default",
+      "snippet": "Domain&#92;UsernamePassword Login name"
+    },
+    {
+      "title": "neudive_test_120epi_0819_real_20260819_162506",
+      "url": "https://huggingface.co/datasets/leapshared/neudive_test_120epi_0819_real_20260819_162506",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LEAP - Stockholm Environment Institute",
+      "url": "https://leap.sei.org/default.asp?action=new",
+      "snippet": "Summary: This is a major update with improvements to optimization, transmission, and fuel-trading modeling, new UI features that make working with LEAP more focused and productive (e.g., branch filtering and fewer calculations), and a new opt-in remote diagnostics monitoring system that will help us to find and fix problems faster."
+    }
+  ]
+}

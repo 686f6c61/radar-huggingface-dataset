@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-1B-Turkish-GGUF",
+  "slug": "mradermacher-minicpm5-1b-turkish-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-1B-Turkish-GGUF",
+  "created_at": "2026-08-24T04:35:03.000Z",
+  "updated_at": "2026-08-24T04:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "turkish",
+    "türkçe",
+    "instruction-tuning",
+    "sft",
+    "full-finetune",
+    "code",
+    "code-generation",
+    "minicpm",
+    "conversational",
+    "edge-ai",
+    "tr",
+    "en",
+    "dataset:AlicanKiraz0/Turkce-Atlas-Instruct",
+    "dataset:tascib/turkish-instruction",
+    "dataset:sixfingerdev/turkish-qa-multi-dialog-dataset",
+    "dataset:berhaan/Turkish-CodeAlpaca-20k",
+    "dataset:alztrk/turkish-code-instructions",
+    "dataset:bysismo/Turkish-Python-instruction-500k",
+    "base_model:thealper2/MiniCPM5-1B-Turkish",
+    "base_model:quantized:thealper2/MiniCPM5-1B-Turkish",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 10002441984,
+  "storage_human": "10.0 GB",
+  "base_model": "thealper2/MiniCPM5-1B-Turkish",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/MiniCPM5-1B-Turkish-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-1B-Turkish-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/MiniCPM5-1B-Turkish-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-1B-Turkish-GGUF/tree/main",
+      "snippet": "mradermacher / MiniCPM5-1B-Turkish-GGUF like 0 Transformers GGUF 6 datasets Turkish English turkish türkçe instruction-tuning sft full-finetune code code-generation minicpm conversational edge-ai License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
+    },
+    {
+      "title": "MiniCPM/docs/deployment/llama_cpp.md at main - GitHub",
+      "url": "https://github.com/OpenBMB/MiniCPM/blob/main/docs/deployment/llama_cpp.md",
+      "snippet": "Deploy MiniCPM5-1B with llama.cpp llama.cpp is the recommended path for CPU / edge / consumer-GPU deployment. The released GGUF builds run on laptops, single-board computers, Apple Silicon, and Windows boxes with no Python at all."
+    },
+    {
+      "title": "MiniCPM5-1B-Turkish API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/thealper2/MiniCPM5-1B-Turkish",
+      "snippet": "Run MiniCPM5-1B-Turkish with FriendliAI inference. openbmb/MiniCPM5-1B tabanlı, Türkçe talimat takibi ve kod üretimi için tam ince ayar (full fine-tuning)…"
+    }
+  ]
+}

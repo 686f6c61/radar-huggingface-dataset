@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft",
+  "slug": "laion-moss-tts-local-transformer-4-55b-voice-acting-v2-sft",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft",
+  "created_at": "2026-08-23T11:12:27.000Z",
+  "updated_at": "2026-08-23T11:13:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_tts_local",
+    "feature-extraction",
+    "text-to-speech",
+    "voice-acting",
+    "speech-synthesis",
+    "moss",
+    "emotion",
+    "voice-cloning",
+    "custom_code",
+    "en",
+    "de",
+    "dataset:laion/laion-voice-profiles-sft",
+    "dataset:laion/tts-realspeech-sft-en-de",
+    "base_model:laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
+    "base_model:finetune:laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4129990144,
+  "parameters_human": "4.13B",
+  "storage_bytes": 8271454620,
+  "storage_human": "8.3 GB",
+  "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moss-tts-local-transformer-4.55b-voice-acting-v2 - Hugging Face",
+      "url": "https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "moss-tts-local-transformer-4.55b-voice-acting - Hugging Face",
+      "url": "https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting",
+      "snippet": "Instructions to use laion/moss-tts-local-transformer-4.55b-voice-acting with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - LAION-AI/laion-moss-local-1.5-voice-acting-4.55b: LAION MOSS ...",
+      "url": "https://github.com/LAION-AI/laion-moss-local-1.5-voice-acting-4.55b/tree/master",
+      "snippet": "The public home of LAION&#x27;s expressive voice-acting model built on the MOSS-TTS-Local-Transformer-v1.5 architecture: fantasy characters (orc / dragon / fairy / goblin), shouting, whispering, and vocal bursts (laughs, gasps, sighs, giggles, moans) driven by natural-language director instructions, in English and German, at native 48 kHz."
+    },
+    {
+      "title": "MOSS-TTS-4.55B voice-acting-v2 — Conditioning Manual",
+      "url": "https://github.com/LAION-AI/moss-voiceacting-manual",
+      "snippet": "MOSS-VA-v2 conditioning manual: 40 emotions (best prompt + LoRA merge %, reward, correlations) — MD skill + HTML - LAION-AI/moss-voiceacting-manual"
+    },
+    {
+      "title": "MOSS-TTS-Local 4.55B Voice-Acting — Experiments Overview",
+      "url": "https://projects.laion.ai/laion-moss-local-1.5-voice-acting-4.55b/overview.html",
+      "snippet": "1 The model & checkpoint lineage A 4.55B parameter moss_tts_local model: a Qwen3-4B language backbone with a small per-frame local-transformer head that predicts 12 RVQ codebooks per 80 ms frame (12.5 Hz), decoded by MOSS-Audio-Tokenizer-v2 to native 48 kHz. Trained for expressive voice-acting (orc / dragon / fairy / goblin, shouting, whispering, vocal bursts) driven by natural-language ..."
+    }
+  ]
+}

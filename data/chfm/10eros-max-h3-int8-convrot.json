@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chfm/10Eros-Max-h3-int8-convrot",
+  "slug": "chfm-10eros-max-h3-int8-convrot",
+  "author": "chfm",
+  "url": "https://huggingface.co/chfm/10Eros-Max-h3-int8-convrot",
+  "created_at": "2026-08-23T13:13:06.000Z",
+  "updated_at": "2026-08-23T13:13:07.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "int8",
+    "convrot",
+    "diffusion-model",
+    "base_model:TenStrip/10Eros-Max",
+    "base_model:finetune:TenStrip/10Eros-Max",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128897412144,
+  "storage_human": "128.9 GB",
+  "base_model": "TenStrip/10Eros-Max",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cicalooo/10Eros-Max-h3-int8-convrot · Hugging Face",
+      "url": "https://huggingface.co/cicalooo/10Eros-Max-h3-int8-convrot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cicalooo/10Eros-Max-h3-int8-convrot at main - Hugging Face",
+      "url": "https://huggingface.co/cicalooo/10Eros-Max-h3-int8-convrot/tree/main",
+      "snippet": "cicalooo / 10Eros-Max-h3-int8-convrot like 1 comfyui int8 convrot diffusion-model Model card FilesFiles and versions xet Community 1 Copy to bucket new main 10Eros-Max-h3-int8-convrot 41.9 GB Ctrl+K Ctrl+K 1 contributor History:4 commits cicalooo Add INT8 ConvRot skip-edges variant f15099e verifiedabout 1 hour ago .gitattributes Safe 1.52 kBinitial commitabout 12 hours ago 10Eros_Max_h3_fl2va ..."
+    },
+    {
+      "title": "H3 Eros Max - beta2 | Hailuo H3 by MiniMax Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2851079/h3-eros-max",
+      "snippet": "As always Eros is my personal side project, and this beta was also essentially a speed-run of finetuning, figuring out exactly in what configurations and target areas do you get helpful/harmful changes in the model. This is also a proof-of-concept of what and where to target while leaving the reinforcement quality of base unharmed by being ..."
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "This model has near-0 anatomy depiction currently. It fully understands the concepts, but my new merge method is a 3 stage comparison shape-level reform lever that mostly aligns to the base 22b model instead of the usual merging methods. This is essentially an abliterated base LTX 2.3 model."
+    },
+    {
+      "title": "comfy-agent/scripts/colab/10eros_max at main - GitHub",
+      "url": "https://github.com/shinshin86/comfy-agent/tree/main/scripts/colab/10eros_max",
+      "snippet": "The upstream model card links cicalooo&#x27;s INT8 ConvRot conversion. This kit pins 10Eros_Max_h3_fl2va_beta2_pruned_int8_convrot.safetensors because it: matches the native H3 FL2VA workflow used by the verified minimax_h3 kit; keeps the diffusion model at about 20.20 GB instead of about 40.22 GB for the upstream BF16 file; and uses the non-Turbo Beta2 checkpoint, so the existing 20-step H3 ..."
+    }
+  ]
+}

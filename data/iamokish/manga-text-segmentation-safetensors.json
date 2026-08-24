@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "iamokish/manga-text-segmentation-safetensors",
+  "slug": "iamokish-manga-text-segmentation-safetensors",
+  "author": "iamokish",
+  "url": "https://huggingface.co/iamokish/manga-text-segmentation-safetensors",
+  "created_at": "2026-08-24T10:51:44.000Z",
+  "updated_at": "2026-08-24T10:59:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "manga",
+    "text-segmentation",
+    "image-segmentation",
+    "computer-vision",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54090413,
+  "parameters_human": "54.1M",
+  "storage_bytes": 216516916,
+  "storage_human": "217 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mayocream/manga-text-segmentation-2025 · Hugging Face",
+      "url": "https://huggingface.co/mayocream/manga-text-segmentation-2025",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model.safetensors · mayocream/manga-text-segmentation-2025 at main",
+      "url": "https://huggingface.co/mayocream/manga-text-segmentation-2025/blob/main/model.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Manga-Text-Segmentation - GitHub",
+      "url": "https://github.com/juvian/Manga-Text-Segmentation",
+      "snippet": "Segmentation of text in manga images. Contribute to juvian/Manga-Text-Segmentation development by creating an account on GitHub."
+    },
+    {
+      "title": "dmMaze/comic-text-detector: Manga&Comic text detection - GitHub",
+      "url": "https://github.com/dmMaze/comic-text-detector",
+      "snippet": "We used text detection model of manga-image-translator to generate text lines annotations for manga, and Manga-Text-Segmentation with some post-processing to generate masks for both manga and comics."
+    },
+    {
+      "title": "Text Detection | mayocream/koharu | DeepWiki",
+      "url": "https://deepwiki.com/mayocream/koharu/4.1-text-detection",
+      "snippet": "Koharu utilizes multiple specialized models for this task: comic-text-detector: A multi-stage model for bounding boxes and segmentation. comic-text-bubble-detector: Based on RT-DETR, specialized for distinguishing between text and speech bubble containers. manga-text-segmentation-2025: A high-resolution segmentation model for precise text masks."
+    }
+  ]
+}

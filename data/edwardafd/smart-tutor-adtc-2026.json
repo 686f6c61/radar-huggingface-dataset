@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "edwardafd/smart-tutor-adtc-2026",
+  "slug": "edwardafd-smart-tutor-adtc-2026",
+  "author": "edwardafd",
+  "url": "https://huggingface.co/edwardafd/smart-tutor-adtc-2026",
+  "created_at": "2026-08-23T21:32:44.000Z",
+  "updated_at": "2026-08-24T01:35:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "math",
+    "education",
+    "accessibility",
+    "on-device",
+    "cpu-inference",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986047872,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - notomodo/adtc-2026: Project",
+      "url": "https://github.com/notomodo/adtc-2026",
+      "snippet": "The problem Small businesses hold their institutional knowledge in documents nobody has time to read — contracts, financial statements, handbooks, policy files. The obvious answer is a cloud AI assistant. In Uganda that answer breaks down: connectivity is unreliable and metered, and the documents are commercially sensitive."
+    },
+    {
+      "title": "adtc-2026/README.md at main · jrcity/adtc-2026 · GitHub",
+      "url": "https://github.com/jrcity/adtc-2026/blob/main/README.md",
+      "snippet": "Africa Deep Tech Challenge 2026 Laptop LLM track. Contribute to jrcity/adtc-2026 development by creating an account on GitHub."
+    },
+    {
+      "title": "Africa Deep Tech Challenge 2026: The Laptop LLM Challenge: Build On ...",
+      "url": "https://adtc-2026.devpost.com/",
+      "snippet": "Africa Deep Tech Challenge 2026 (inspired by the Africa AI XPrize) is an engineering-first competition to make useful language-model applications run well on the computers Africans already own: mid- and low-end commodity laptops. We are not building for exotic edge silicon."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "Africa Deep Tech Challenge 2026 | The Laptop LLM Challenge",
+      "url": "https://africadeeptech.org/challenge-2026/",
+      "snippet": "Africa is not excluded from the language model revolution. ADTC 2026 is an engineering-first competition to make LLM applications run on the 8 GB laptops Africans already own — no cloud, no discrete GPU, no API fees."
+    }
+  ]
+}

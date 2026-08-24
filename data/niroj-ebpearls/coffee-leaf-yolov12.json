@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "niroj-ebpearls/coffee-leaf-yolov12",
+  "slug": "niroj-ebpearls-coffee-leaf-yolov12",
+  "author": "niroj-ebpearls",
+  "url": "https://huggingface.co/niroj-ebpearls/coffee-leaf-yolov12",
+  "created_at": "2026-08-24T12:51:09.000Z",
+  "updated_at": "2026-08-24T12:51:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "object-detection",
+    "yolov12",
+    "agriculture",
+    "plant-disease",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143126484,
+  "storage_human": "143 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coffee leaf Object Detection Model (v1, VersionTest1) by Coffee Leaf ...",
+      "url": "https://universe.roboflow.com/coffee-leaf-project/coffee-leaf-1jk2g/dataset/1",
+      "snippet": "1122 open source diseased images and annotations in multiple formats for training computer vision models. coffee leaf (v1, VersionTest1), created by Coffee Leaf Project"
+    },
+    {
+      "title": "Coffee Leaf Detection Object Detection Model (v1, 2023-12-19 9:34pm) by ...",
+      "url": "https://universe.roboflow.com/coffee-leaf-detection-project/coffee-leaf-detection/dataset/1",
+      "snippet": "1117 open source CAFE-HOJAS images and annotations in multiple formats for training computer vision models. Coffee Leaf Detection (v1, 2023-12-19 9:34pm), created by Coffee Leaf Detection Project"
+    },
+    {
+      "title": "YOLO12 Attention-Centric Object Detection | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo12",
+      "snippet": "Discover YOLO12, featuring groundbreaking attention-centric architecture for state-of-the-art object detection with unmatched accuracy and efficiency."
+    },
+    {
+      "title": "GitHub - sunsmarterjie/yolov12: [NeurIPS 2025] YOLOv12: Attention ...",
+      "url": "https://github.com/sunsmarterjie/yolov12",
+      "snippet": "YOLOv12 surpasses all popular real-time object detectors in accuracy with competitive speed. For example, YOLOv12-N achieves 40.6% mAP with an inference latency of 1.64 ms on a T4 GPU, outperforming advanced YOLOv10-N / YOLOv11-N by 2.1%/1.2% mAP with a comparable speed. This advantage extends to other model scales."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

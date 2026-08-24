@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f2008544/tds-carbon-card",
+  "slug": "24f2008544-tds-carbon-card",
+  "author": "24f2008544",
+  "url": "https://huggingface.co/24f2008544/tds-carbon-card",
+  "created_at": "2026-08-24T12:30:25.000Z",
+  "updated_at": "2026-08-24T12:32:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "23f3001819/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f3001819/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "udit789/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/udit789/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (6 GPUs) Training Mode: fine-tuning Region: us-east1 GPU Hours: 370h (PUE: 1.48) Total Energy: 985.68 kWh CO₂ Emissions: 413.986 kg CO₂eq"
+    },
+    {
+      "title": "24f2008544 · GitHub",
+      "url": "https://github.com/24f2008544/",
+      "snippet": "Follow 1 follower · 1 following Block or report user Block or report 24f2008544 Block user tds-code-interpreter tds-code-interpreter Public Python"
+    },
+    {
+      "title": "tds-ga4/main.py at main · 24f2008544/tds-ga4 · GitHub",
+      "url": "https://github.com/24f2008544/tds-ga4/blob/main/main.py",
+      "snippet": "Contribute to 24f2008544/tds-ga4 development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OrderDraconis/groot_align_leo",
+  "slug": "orderdraconis-groot_align_leo",
+  "author": "OrderDraconis",
+  "url": "https://huggingface.co/OrderDraconis/groot_align_leo",
+  "created_at": "2026-08-24T10:03:37.000Z",
+  "updated_at": "2026-08-24T12:06:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:Janmeier820/align_fabric_dataset_combined",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 127702550600,
+  "storage_human": "127.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrderDraconis (Leo Guillier) - Hugging Face",
+      "url": "https://huggingface.co/OrderDraconis",
+      "snippet": "OrderDraconis Follow AstroRangerBeans&#x27;s profile picture 1 follower · 3 following"
+    },
+    {
+      "title": "OrderDraconis/smolvla_pickplace_leo · Hugging Face",
+      "url": "https://huggingface.co/OrderDraconis/smolvla_pickplace_leo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 - A Foundation Model for Generalist Robots. - NVIDIA/Isaac-GR00T"
+    },
+    {
+      "title": "physical-ai-toolchain/training/vla/configs/groot/examples ... - GitHub",
+      "url": "https://github.com/microsoft/physical-ai-toolchain/blob/main/training/vla/configs/groot/examples/README.md",
+      "snippet": "Contribute to microsoft/physical-ai-toolchain development by creating an account on GitHub."
+    },
+    {
+      "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "url": "https://arxiv.org/abs/2503.14734",
+      "snippet": "A robot foundation model, trained on massive and diverse data sources, is essential for enabling the robots to reason about novel situations, robustly handle real-world variability, and rapidly learn new tasks. To this end, we introduce GR00T N1, an open foundation model for humanoid robots."
+    }
+  ]
+}

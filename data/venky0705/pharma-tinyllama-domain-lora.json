@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Venky0705/pharma-tinyllama-domain-lora",
+  "slug": "venky0705-pharma-tinyllama-domain-lora",
+  "author": "Venky0705",
+  "url": "https://huggingface.co/Venky0705/pharma-tinyllama-domain-lora",
+  "created_at": "2026-08-24T12:19:38.000Z",
+  "updated_at": "2026-08-24T12:19:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50503544,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lareddy/pharma-tinyllama-domain-lora · Hugging Face",
+      "url": "https://huggingface.co/lareddy/pharma-tinyllama-domain-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lareddy/pharma-tinyllama-domain-lora at main - Hugging Face",
+      "url": "https://huggingface.co/lareddy/pharma-tinyllama-domain-lora/tree/main",
+      "snippet": "Instructions to use lareddy/pharma-tinyllama-domain-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use lareddy/pharma-tinyllama-domain-lora with Transformers:"
+    },
+    {
+      "title": "GitHub - sivasaiyadav8143/llm-finetuning-playbook: A 3-stage LLM fine ...",
+      "url": "https://github.com/sivasaiyadav8143/llm-finetuning-playbook",
+      "snippet": "All three stages are trained on the same small pharma corpus (Metformin pharmacology, statin/ezetimibe lipid-lowering therapy, mRNA vaccines, AI in drug discovery, and clinical trial/pharmacovigilance terminology), so the model&#x27;s progression can be directly observed at each stage on the same domain."
+    },
+    {
+      "title": "Nithinsanjay/TinyLlama-Pharma-LoRA - GitHub",
+      "url": "https://github.com/Nithinsanjay/TinyLlama-Pharma-LoRA",
+      "snippet": "TinyLlama-Pharma-LoRA Fine‑tuned TinyLlama with LoRA for pharma domain adaptation. Non‑instructive model trained on research abstracts, drug sheets, clinical trial summaries, and regulatory texts. Lightweight, efficient, and ideal for pharma text generation, embeddings, and semantic search. 0 stars 0 watching 0 forks No releases published ..."
+    },
+    {
+      "title": "pharma-tinyllama-domain-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ThakrePranjal/pharma-tinyllama-domain-lora",
+      "snippet": "Run pharma-tinyllama-domain-lora with FriendliAI inference. This is a LoRA adapter for TinyLlama/TinyLlama-1.1B-Chat-v1.0, trained via domain-adaptive…"
+    }
+  ]
+}

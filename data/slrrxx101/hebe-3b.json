@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "slrrxx101/hebe-3b",
+  "slug": "slrrxx101-hebe-3b",
+  "author": "slrrxx101",
+  "url": "https://huggingface.co/slrrxx101/hebe-3b",
+  "created_at": "2026-08-24T05:21:35.000Z",
+  "updated_at": "2026-08-24T05:22:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902560,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free TWEEN GIRL AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/724341849585795640",
+      "snippet": "Explore TWEEN GIRL on TENSOR — 126 models and 5K posts."
+    },
+    {
+      "title": "/b/ - Random - 7chan",
+      "url": "https://7chan.org/b/catalog.html",
+      "snippet": "[ 7ch / banner / ch7 / irc ] [ b / fl / weed / ? / ] [ a / gfx / grim / hi / me / rx / vg / wp / x ] [ aisfw / civ / co / diy / eh / fit / halp / jew / lit / phi / pr ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Candydoll - Yuliya Zabihalyuk - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/752877208567131062",
+      "snippet": "Download Candydoll - free LORA SD 1.5 AI model on TENSOR. TWEEN GIRL, CANDYDOLL, WOMAN. By Hani Hebe Bali"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

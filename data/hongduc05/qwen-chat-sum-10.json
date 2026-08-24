@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hongduc05/qwen-chat-sum-10",
+  "slug": "hongduc05-qwen-chat-sum-10",
+  "author": "hongduc05",
+  "url": "https://huggingface.co/hongduc05/qwen-chat-sum-10",
+  "created_at": "2026-08-23T08:01:15.000Z",
+  "updated_at": "2026-08-23T12:02:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114243310,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hongduc05/qwen3-chat-sum · Hugging Face",
+      "url": "https://huggingface.co/hongduc05/qwen3-chat-sum",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "hongduc05/qwen3-chat-sum at main - Hugging Face",
+      "url": "https://huggingface.co/hongduc05/qwen3-chat-sum/tree/main",
+      "snippet": "Using HuggingFace Spaces for Unsloth ... Load model with FastModel ... Docker Model Runner How to use hongduc05/qwen3-chat-sum with Docker Model Runner: ... main qwen3-chat-sum 1.77 GB Ctrl+K Ctrl+K 1 contributor History:22 commits hongduc05 Upload best LoRA adapter caa4c2f verifiedabout 2 hours ago checkpoint-121Training in progress, epoch 1 ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/all-MiniLM-L12-v2-ExecuTorch",
+  "slug": "mlboydaisuke-all-minilm-l12-v2-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/all-MiniLM-L12-v2-ExecuTorch",
+  "created_at": "2026-08-24T13:53:47.000Z",
+  "updated_at": "2026-08-24T13:54:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:sentence-transformers/all-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266677289,
+  "storage_human": "267 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L12-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/paraphrase-multilingual-MiniLM-L12-v2-ExecuTorch · Hugging ...",
+      "url": "https://huggingface.co/mlboydaisuke/paraphrase-multilingual-MiniLM-L12-v2-ExecuTorch",
+      "snippet": "paraphrase-multilingual-MiniLM-L12-v2 — ExecuTorch Sentence embeddings: text in, one vector out. For search, clustering and retrieval that never leaves the device."
+    },
+    {
+      "title": "sentence-transformers/all-MiniLM-L12-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - itstripathi/all-MiniLM-L12-v2",
+      "url": "https://github.com/itstripathi/all-MiniLM-L12-v2",
+      "snippet": "all-MiniLM-L12-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "Now Available! Pre-built Embedding Generation model for Oracle Database ...",
+      "url": "https://blogs.oracle.com/machinelearning/use-our-prebuilt-onnx-model-now-available-for-embedding-generation-in-oracle-database-23ai",
+      "snippet": "Start exploring the possibilities with Oracle AI Vector Search and the all-MiniLM-L12-v2 ONNX model today. For more information, refer to the Oracle AI Vector Search User&#x27;s Guide. * ONNX models must be augmented through a specialized pipeline to work with Oracle Database 26ai&#x27;s AI Vector Search capabilities."
+    },
+    {
+      "title": "cohere-configurations/models/all-MiniLM-L12-v2/README.md at main ...",
+      "url": "https://github.com/leliuga/cohere-configurations/blob/main/models/all-MiniLM-L12-v2/README.md",
+      "snippet": "The project aims to train sentence embedding models on very large sentence level datasets using a self-supervised contrastive learning objective. We used the pretrained microsoft/MiniLM-L12-H384-uncased model and fine-tuned in on a 1B sentence pairs dataset. We use a contrastive learning objective: given a sentence from the pair, the model should predict which out of a set of randomly sampled ..."
+    }
+  ]
+}

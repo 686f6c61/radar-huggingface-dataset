@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kristijan505/Ornith-1.5-397B-colibri-i4-gs64",
+  "slug": "kristijan505-ornith-1-5-397b-colibri-i4-gs64",
+  "author": "kristijan505",
+  "url": "https://huggingface.co/kristijan505/Ornith-1.5-397B-colibri-i4-gs64",
+  "created_at": "2026-08-23T14:25:24.000Z",
+  "updated_at": "2026-08-23T15:50:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "colibri",
+  "languages": [],
+  "tags": [
+    "colibri",
+    "qwen3_5_moe_text",
+    "qwen3.6",
+    "qwen3.6-35b-a3b",
+    "moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237051148030,
+  "storage_human": "237.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-397B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B-FP8",
+      "snippet": "This model card documents Ornith-1.5-397B, the flagship member of the Ornith-1.5 family — a 397B mixture-of-experts model. It scores 86.1 on Terminal-Bench 2.1 and 56.0 on DeepSWE, performing on par with Claude Opus 4.8 (85.0 and 59.0) while outperforming leading open-source models of similar scale, including GLM-5.2 and DeepSeek-V4-Flash-0731."
+    },
+    {
+      "title": "Ornith-1.5-397B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/ornith-1-5-397b",
+      "snippet": "Ornith-1.5-397B by Ornith AI ranks #20 of 224 with a public score of 68.47/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-397B at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B/tree/main",
+      "snippet": "ornith-ai / Ornith-1.5-397B like 19 Follow Ornith 2.28k Text Generation Transformers Safetensors qwen3_5_moe image-text-to-text conversational Eval Results License:mit Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

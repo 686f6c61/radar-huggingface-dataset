@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "THISITLLM/bounded-moe",
+  "slug": "thisitllm-bounded-moe",
+  "author": "THISITLLM",
+  "url": "https://huggingface.co/THISITLLM/bounded-moe",
+  "created_at": "2026-08-24T10:15:07.000Z",
+  "updated_at": "2026-08-24T10:24:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "ggml",
+    "moe",
+    "mixture-of-experts",
+    "inference",
+    "local-llm",
+    "ssd",
+    "model-offloading",
+    "memory-optimization",
+    "cuda",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CostanzoPadovano/deepseek-v4-local: Run DeepSeek V4 Flash ...",
+      "url": "https://github.com/CostanzoPadovano/deepseek-v4-local",
+      "snippet": "The project extends llama.cpp with bounded routed-expert streaming: the large MoE expert payload stays on NVMe and the active slices move through fixed-size host buffers into two GPUs. The tested model is Antirez&#x27;s 80.8 GiB mixed-precision GGUF, while the operational context is capped at 98,304 tokens."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - eiomra/tokenql: SQL-like interface and bounded-memory SSD ...",
+      "url": "https://github.com/eiomra/tokenql",
+      "snippet": "MoE expert routing is the closest model architecture to an index because the router selects only a subset of expert weights. The disk-first runtime does not cache the full model in RAM, but dense-model latency cannot be eliminated by the query language alone."
+    },
+    {
+      "title": "Bounded™ — Matthew Skelton",
+      "url": "https://matthewskelton.com/bounded-ai-native-operating-model",
+      "snippet": "Bounded™ is a best-in-class operating model toolkit for organizations with regulatory obligations and audit requirements for financial and compliance control. Devised by industry expert Matthew Skelton (co-author of Team Topologies and Adapt Together) alongside a stellar group of global thought leaders, Bounded™ provides decades of wisdom and practical experience to AI-native operations ..."
+    },
+    {
+      "title": "@m-ric on Hugging Face: \"𝗠𝗶𝗻𝗶𝗠𝗮𝘅&#x27;𝘀 𝗻𝗲𝘄 𝗠𝗼𝗘 𝗟𝗟𝗠 𝗿𝗲𝗮𝗰𝗵𝗲𝘀…\"",
+      "url": "https://huggingface.co/posts/m-ric/769469905640579",
+      "snippet": "𝗠𝗶𝗻𝗶𝗠𝗮𝘅&#x27;𝘀 𝗻𝗲𝘄 𝗠𝗼𝗘 𝗟𝗟𝗠 𝗿𝗲𝗮𝗰𝗵𝗲𝘀 𝗖𝗹𝗮𝘂𝗱𝗲-𝗦𝗼𝗻𝗻𝗲𝘁 𝗹𝗲𝘃𝗲𝗹 𝘄𝗶𝘁𝗵 𝟰𝗠 𝘁𝗼𝗸𝗲𝗻𝘀 𝗰𝗼𝗻𝘁𝗲𝘅𝘁 𝗹𝗲𝗻𝗴𝘁𝗵 💥This work from Chinese startup @ MiniMax-AI introduces a novel ..."
+    }
+  ]
+}

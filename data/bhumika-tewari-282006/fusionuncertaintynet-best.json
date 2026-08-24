@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bhumika-tewari-282006/fusionuncertaintynet-best",
+  "slug": "bhumika-tewari-282006-fusionuncertaintynet-best",
+  "author": "bhumika-tewari-282006",
+  "url": "https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-best",
+  "created_at": "2026-08-24T06:45:37.000Z",
+  "updated_at": "2026-08-24T12:32:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "protein",
+    "evidential-deep-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27375788,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bhumika-tewari-282006 (Bhumika Tewari) - Hugging Face",
+      "url": "https://huggingface.co/datasets/bhumika-tewari-282006/",
+      "snippet": "bhumika-tewari-282006 Follow Arko007&#x27;s profile picture 1 follower · 1 following Bhumika2006-hue"
+    },
+    {
+      "title": "PG-HyFusionGN Model - a Hugging Face Space by bhumika-tewari-282006",
+      "url": "https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "GitHub - Anamitra-Sarkar/FusionUncertaintyNet",
+      "url": "https://github.com/Anamitra-Sarkar/FusionUncertaintyNet/tree/main",
+      "snippet": "End-to-end system that fuses ESM-2, ProtT5 and AlphaFold-derived features via adaptive gating, and predicts per-residue quality with calibrated aleatoric/epistemic uncertainty via Evidential Deep Regression (Gamma)."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "Open source AI models ranked: Llama 4, DeepSeek, Qwen, Mistral, and Gemma compared by score, pricing, and capabilities. The open source LLM leaderboard updated hourly."
+    }
+  ]
+}

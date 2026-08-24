@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bcfischer/paper_026173036_document_ai",
+  "slug": "bcfischer-paper_026173036_document_ai",
+  "author": "bcfischer",
+  "url": "https://huggingface.co/bcfischer/paper_026173036_document_ai",
+  "created_at": "2026-08-23T08:39:41.000Z",
+  "updated_at": "2026-08-23T08:39:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "document-ai",
+    "enthusiastic",
+    "footnote",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "medium-balanced",
+    "mixed-active-passive",
+    "narrative-progressive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "snippet": "Pandora&#x27;s AI Model Routing Box: Efficient Allocation with Costly Value Estimation Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein Subjects: Artificial Intelligence (cs.AI) [4] arXiv:2608.20314 [pdf, html, other]"
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    },
+    {
+      "title": "Accelerating Document AI - Hugging Face",
+      "url": "https://huggingface.co/blog/document-ai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Document AI - Google Cloud",
+      "url": "https://cloud.google.com/document-ai",
+      "snippet": "The Document AI solutions suite includes pretrained models for document processing, Workbench for custom models, and Warehouse to search and store."
+    },
+    {
+      "title": "Document AI: A Comparative Study of Transformer-Based, Graph-Based ...",
+      "url": "https://arxiv.org/abs/2308.15517",
+      "snippet": "Document AI aims to automatically analyze documents by leveraging natural language processing and computer vision techniques. One of the major tasks of Document AI is document layout analysis, which structures document pages by interpreting the content and spatial relationships of layout, image, and text. This task can be image-centric, wherein the aim is to identify and label various regions ..."
+    }
+  ]
+}

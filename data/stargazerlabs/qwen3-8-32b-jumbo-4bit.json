@@ -5,7 +5,7 @@
   "author": "StargazerLabs",
   "url": "https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-4bit",
   "created_at": "2026-08-22T18:28:34.000Z",
-  "updated_at": "2026-08-22T18:28:55.000Z",
+  "updated_at": "2026-08-22T20:14:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 5379352272,
   "parameters_human": "5.38B",

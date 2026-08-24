@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TaterTotterson/Qwen3-Omni-30B-A3B-Instruct-GGUF",
+  "slug": "tatertotterson-qwen3-omni-30b-a3b-instruct-gguf",
+  "author": "TaterTotterson",
+  "url": "https://huggingface.co/TaterTotterson/Qwen3-Omni-30B-A3B-Instruct-GGUF",
+  "created_at": "2026-08-23T12:10:18.000Z",
+  "updated_at": "2026-08-23T12:10:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "tater-pick",
+    "tater-recommended",
+    "qwen3-omni",
+    "llama.cpp",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "audio-text-to-text",
+    "video-text-to-text",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-23T16:56:03.464Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Omni-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    },
+    {
+      "title": "Qwen/Qwen3-Omni-30B-A3B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Thinking",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    },
+    {
+      "title": "Qwen3-Omni-30B-A3B-Instruct - Model Info, Parameters, Benchmarks ...",
+      "url": "https://www.siliconflow.com/models/qwen3-omni-30b-a3b-instruct",
+      "snippet": "Qwen3-Omni-30B-A3B-Instruct is a member of the latest Qwen3 series from Alibaba&#x27;s Qwen team. It is a Mixture of Experts (MoE) model with 30 billion total parameters and 3 billion active parameters, which effectively reduces inference costs while maintaining powerful performance. The model was trained on high-quality, multi-source, and multilingual data, demonstrating excellent performance in ..."
+    },
+    {
+      "title": "Qwen3-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2509.17765v1",
+      "snippet": "Qwen3-Omni-30B-A3B, Qwen3-Omni-30B-A3B-Thinking and Qwen3-Omni-30B-A3B-Captioner are publicly released under the Apache 2.0 license. Figure 1: Qwen3-Omni is a unified end-to-end model capable of processing multiple modalities, such as text, audio, image and video, and generating real-time text or speech response."
+    },
+    {
+      "title": "Qwen3-Omni/README.md at main · QwenLM/Qwen3-Omni · GitHub",
+      "url": "https://github.com/QwenLM/Qwen3-Omni/blob/main/README.md",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    }
+  ]
+}

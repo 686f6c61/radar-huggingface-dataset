@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pkl15/final-ecapa-vietnamceleb-speaker-verification",
+  "slug": "pkl15-final-ecapa-vietnamceleb-speaker-verification",
+  "author": "pkl15",
+  "url": "https://huggingface.co/pkl15/final-ecapa-vietnamceleb-speaker-verification",
+  "created_at": "2026-08-24T09:19:58.000Z",
+  "updated_at": "2026-08-24T09:23:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "speechbrain",
+  "languages": [],
+  "tags": [
+    "speechbrain",
+    "ecapa-tdnn",
+    "speaker-verification",
+    "speaker-recognition",
+    "vietnamese",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83329786,
+  "storage_human": "83 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hustep-lab/Vietnam-Celeb · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/hustep-lab/Vietnam-Celeb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Official repo for the Vietnam-Celeb dataset - GitHub",
+      "url": "https://github.com/jazzDung/Vietnam-Celeb.Interspeech",
+      "snippet": "The data folder contains the utterances of every speakers in the dataset, in which each speaker has a folder with its name being the ID of that speaker. There are three text files corresponding to the datasets that we have split, as discussed in the anonymous submission to Interspeech 2023: vietnam-celeb-t.txt: list of utterances in the training set of Vietnam-Celeb vietnam-celeb-e.txt: Pairs ..."
+    },
+    {
+      "title": "GitHub - thanhpv2102/Vietnam-Celeb.Interspeech: Official repo for the ...",
+      "url": "https://github.com/thanhpv2102/Vietnam-Celeb.Interspeech",
+      "snippet": "The data folder contains the utterances of every speakers in the dataset, in which each speaker has a folder with its name being the ID of that speaker. There are three text files corresponding to the datasets that we have split, as discussed in the anonymous submission to Interspeech 2023: vietnam-celeb-t.txt: list of utterances in the training set of Vietnam-Celeb vietnam-celeb-e.txt: Pairs ..."
+    },
+    {
+      "title": "[PDF] Vietnam-Celeb: a large-scale dataset for Vietnamese speaker ...",
+      "url": "https://www.semanticscholar.org/paper/Vietnam-Celeb:-a-large-scale-dataset-for-Vietnamese-Pham-Nguyen/8b673225d277d3928dab3c1725210040c6ea34df",
+      "snippet": "This paper presents a large-scale spontaneous dataset gathered under noisy environments, with over 87, 000 utterances from 1, 000 Vietnamese speakers of many professions, covering 3 main Vietnamese dialects, with a sophisticated construction pipeline that can be applied to other languages. The success of speaker recognition systems heavily depends on large training datasets collected under ..."
+    },
+    {
+      "title": "FireRedTeam/FireRedChat-pvad at main - Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam/FireRedChat-pvad/blob/main/spkrec-ecapa-voxceleb/README.md",
+      "snippet": "Speaker Verification with ECAPA-TDNN embeddings on Voxceleb This repository provides all the necessary tools to perform speaker verification with a pretrained ECAPA-TDNN model using SpeechBrain. The system can be used to extract speaker embeddings as well. It is trained on Voxceleb 1+ Voxceleb2 training data. For a better experience, we encourage you to learn more about SpeechBrain. The model ..."
+    }
+  ]
+}

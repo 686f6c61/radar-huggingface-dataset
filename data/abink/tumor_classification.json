@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abink/Tumor_Classification",
+  "slug": "abink-tumor_classification",
+  "author": "abink",
+  "url": "https://huggingface.co/abink/Tumor_Classification",
+  "created_at": "2026-08-24T03:32:57.000Z",
+  "updated_at": "2026-08-24T03:58:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 696433642,
+  "storage_human": "696 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A hybrid explainable model based on advanced machine learning ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-85874-7",
+      "snippet": "Article Open access Published: 10 January 2025 A hybrid explainable model based on advanced machine learning and deep learning models for classifying brain tumors using MRI images Md. Nahiduzzaman ..."
+    },
+    {
+      "title": "Advancements in Machine Learning for Brain Tumor ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11831-025-10340-6",
+      "snippet": "Brain tumors (BrTs), as one of the most complex and challenging intracranial neoplasms, are of particular importance in medical science due to their aggressive growth and resistance to treatment. Early detection of tumors and their type in the early stages is critical. Machine learning (ML) techniques, as one of the most advanced artificial intelligence (AI) technologies, have considerable ..."
+    },
+    {
+      "title": "Classification of brain tumor using deep learning at early stage",
+      "url": "https://www.sciencedirect.com/science/article/pii/S266591742400271X",
+      "snippet": "Beyond classification, we investigate the model&#x27;s ability to predict tumor growth trajectories and identify subtle pre-tumor patterns, aiding in early detection and intervention. By aligning with expert diagnoses and adhering to ethical and regulatory guidelines, we pave the way for real-world implementation of this model in healthcare settings."
+    },
+    {
+      "title": "Introducing a deep learning method for brain tumor classification using ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352914823002691",
+      "snippet": "This study aims to design a sequential brain tumor detection and classification model based on deep learning and using fully convolutional neural networks. The proposed model consists of two steps: distinguishing non-neoplastic brain from neoplastic brain and determining the tumor type of the latter."
+    },
+    {
+      "title": "Detection and classification of brain tumor using hybrid deep learning ...",
+      "url": "https://www.nature.com/articles/s41598-023-50505-6",
+      "snippet": "This study aims to enhance the accuracy and efficiency of MRI scanners in categorizing brain tumors and identifying their types using AI algorithms, specifically Convolutional Neural Networks (CNN ..."
+    }
+  ]
+}

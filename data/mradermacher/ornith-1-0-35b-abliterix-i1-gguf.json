@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.0-35B-abliterix-i1-GGUF",
+  "slug": "mradermacher-ornith-1-0-35b-abliterix-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-abliterix-i1-GGUF",
+  "created_at": "2026-08-23T13:52:42.000Z",
+  "updated_at": "2026-08-23T21:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "moe",
+    "abliteration",
+    "abliterix",
+    "en",
+    "zh",
+    "base_model:inkOrCloud/Ornith-1.0-35B-abliterix",
+    "base_model:quantized:inkOrCloud/Ornith-1.0-35B-abliterix",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 370842242656,
+  "storage_human": "370.8 GB",
+  "base_model": "inkOrCloud/Ornith-1.0-35B-abliterix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ornith-1.0-35B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-heretic-GGUF",
+      "snippet": "mradermacher / Ornith-1.-35B-heretic-GGUF like 0 Transformers GGUF English Chinese qwen3.5 Mixture of Experts abliteration abliterix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Ornith-1.0-35B-FP8-BLOCK-MTP-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-FP8-BLOCK-MTP-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Ornith-1.-35B-FP8-BLOCK-MTP-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1/tree/main",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    },
+    {
+      "title": "Ornith-1.0 35B - 262k context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/ornith-1.0-35b",
+      "snippet": "Ornith-1.0 35B MoE is the mid-tier public MoE variant of DeepReinforce&#x27;s Ornith 1.0 family. Post-trained with self-scaffolding RL for agentic coding, this variant balances MoE inference efficiency with strong coding performance. Supports OpenAI-compatible tool calls. Context: 262,144 tokens confirmed by the official Hugging Face model card and serving config."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Complete Ornith 1.0 guide: self-scaffolding AI models for agentic coding. 9B to 397B sizes, MIT licensed, benchmark results, local setup, and model comparison."
+    }
+  ]
+}

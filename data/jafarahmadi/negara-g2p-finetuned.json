@@ -5,7 +5,7 @@
   "author": "jafarahmadi",
   "url": "https://huggingface.co/jafarahmadi/negara-g2p-finetuned",
   "created_at": "2026-08-19T10:29:02.000Z",
-  "updated_at": "2026-08-22T11:50:27.000Z",
+  "updated_at": "2026-08-23T13:13:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 8264064,
   "parameters_human": "8.3M",
-  "storage_bytes": 66124592,
-  "storage_human": "66 MB",
+  "storage_bytes": 99186888,
+  "storage_human": "99 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "asdl-unist/smolvla_0823_3",
+  "slug": "asdl-unist-smolvla_0823_3",
+  "author": "asdl-unist",
+  "url": "https://huggingface.co/asdl-unist/smolvla_0823_3",
+  "created_at": "2026-08-24T08:19:07.000Z",
+  "updated_at": "2026-08-24T08:19:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:asdl-unist/TRAIN_T3_ER_FINAL",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804304,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asdl-unist/smolvla_ER_T2 · Hugging Face",
+      "url": "https://huggingface.co/asdl-unist/smolvla_ER_T2",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. Learn how to train and run it in the LeRobot smolvla guide, or browse the full documentation."
+    },
+    {
+      "title": "asdl-unist/smolvla_carrot_test · Hugging Face",
+      "url": "https://huggingface.co/asdl-unist/smolvla_carrot_test",
+      "snippet": "asdl-unist/new_aicp_carrot ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "The LeRobot team 🤗 for building SmolVLA Paper, Blog. Thanks to Tony Zhao, Zipeng Fu and colleagues for open sourcing ACT policy, ALOHA environments and datasets."
+    },
+    {
+      "title": "lerobot/examples/tutorial/smolvla/using_smolvla_example.py at main ...",
+      "url": "https://github.com/huggingface/lerobot/blob/main/examples/tutorial/smolvla/using_smolvla_example.py",
+      "snippet": "lerobot / examples / tutorial / smolvla / using_smolvla_example.py imstevenpmwork feat (dependencies): minimal default tag install (#3362) df0763a · 4 months ago"
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

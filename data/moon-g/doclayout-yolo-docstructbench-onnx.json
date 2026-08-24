@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "moon-g/DocLayout-YOLO-DocStructBench-onnx",
+  "slug": "moon-g-doclayout-yolo-docstructbench-onnx",
+  "author": "moon-g",
+  "url": "https://huggingface.co/moon-g/DocLayout-YOLO-DocStructBench-onnx",
+  "created_at": "2026-08-23T13:25:09.000Z",
+  "updated_at": "2026-08-23T13:25:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "yolov10",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "yolov10",
+    "onnx",
+    "layout-analysis",
+    "document-understanding",
+    "object-detection",
+    "en",
+    "base_model:juliozhao/DocLayout-YOLO-DocStructBench",
+    "base_model:quantized:juliozhao/DocLayout-YOLO-DocStructBench",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75324598,
+  "storage_human": "75 MB",
+  "base_model": "juliozhao/DocLayout-YOLO-DocStructBench",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "juliozhao/DocLayout-YOLO-DocStructBench · Hugging Face",
+      "url": "https://huggingface.co/juliozhao/DocLayout-YOLO-DocStructBench",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - opendatalab/DocLayout-YOLO: DocLayout-YOLO: Enhancing Document ...",
+      "url": "https://github.com/opendatalab/DocLayout-YOLO",
+      "snippet": "We present DocLayout-YOLO, a real-time and robust layout detection model for diverse documents, based on YOLO-v10. This model is enriched with diversified document pre-training and structural optimization tailored for layout detection. In the pre-training phase, we introduce Mesh-candidate BestFit, viewing document synthesis as a two-dimensional bin packing problem, and create a large-scale ..."
+    },
+    {
+      "title": "wybxc/DocLayout-YOLO-DocStructBench-onnx · Hugging Face",
+      "url": "https://huggingface.co/wybxc/DocLayout-YOLO-DocStructBench-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DocLayout-YOLO/doclayout_yolo at main · opendatalab/DocLayout-YOLO · GitHub",
+      "url": "https://github.com/opendatalab/DocLayout-YOLO/tree/main/doclayout_yolo",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "DocLayout-YOLO: Enhancing Document Layout Analysis through Diverse ...",
+      "url": "https://arxiv.org/html/2410.12628v1",
+      "snippet": "This paper proposes DocLayout-YOLO, a novel model for diverse layout analysis tasks, which leverages the large-scale and diverse document layout dataset DocSynth-300K, and incorporates the GL-CRM to enhance detection performance."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "akaruineko/qltan-1.5-onnx",
+  "slug": "akaruineko-qltan-1-5-onnx",
+  "author": "akaruineko",
+  "url": "https://huggingface.co/akaruineko/qltan-1.5-onnx",
+  "created_at": "2026-08-23T08:11:26.000Z",
+  "updated_at": "2026-08-23T08:21:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1129495673,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for akaruineko/qltan-1.0 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:akaruineko/qltan-1.0",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset akaruineko/qltan-1. Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc ..."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "kornia/ONNX_models · Hugging Face",
+      "url": "https://huggingface.co/kornia/ONNX_models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xetdata/onnx-models: A copy of ONNX models, datasets, and code ...",
+      "url": "https://github.com/xetdata/onnx-models",
+      "snippet": "The ONNX Model Zoo is a collection of pre-trained, state-of-the-art models in the ONNX format contributed by community members like you. Accompanying each model are Jupyter notebooks for model training and running inference with the trained model."
+    }
+  ]
+}

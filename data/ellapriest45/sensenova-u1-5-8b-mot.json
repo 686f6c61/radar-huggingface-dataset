@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "EllaPriest45/SenseNova-U1.5-8B-MoT",
+  "slug": "ellapriest45-sensenova-u1-5-8b-mot",
+  "author": "EllaPriest45",
+  "url": "https://huggingface.co/EllaPriest45/SenseNova-U1.5-8B-MoT",
+  "created_at": "2026-08-23T12:26:06.000Z",
+  "updated_at": "2026-08-23T12:32:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "gguf",
+    "sensenova",
+    "flow-matching",
+    "text-to-image",
+    "image-to-image",
+    "low-vram",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:quantized:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17532854464,
+  "parameters_human": "17.53B",
+  "storage_bytes": 28324210675,
+  "storage_human": "28.3 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova-U1.5-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sensenova/SenseNova-U1.5-8B-MoT-Preview · Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-Preview",
+      "snippet": "SenseNova-U1.5-8B-MoT (Preview) English | 简体中文 NOTE: SenseNova-U1.5 (preview) offers an early look at our latest progress in image generation and editing. Notably, a more capable and refined production version will be officially released soon. 🌟 Overview SenseNova-U1.5 (Preview) is a natively unified multimodal model built on NEO-unify, featuring new patch encoding and decoding ..."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT: Text-to-Image model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sensenova-u1.5-8b-mot-sensenova",
+      "snippet": "Overview SenseNova-U1.5-8B-MoT is a native unified multimodal model built on the NEO-unify architecture that handles both image understanding and generation within a single framework. Created by sensenova, this 8-billion parameter model uses a mixture-of-tasks (MoT) approach with dense transformer layers and strengthened patchify mechanisms."
+    },
+    {
+      "title": "SenseNova - Multimodal AI Model Platform",
+      "url": "https://www.sensenova.ai/",
+      "snippet": "SenseNova is a multimodal AI platform by SenseTime, offering AI capabilities for enterprises worldwide."
+    }
+  ]
+}

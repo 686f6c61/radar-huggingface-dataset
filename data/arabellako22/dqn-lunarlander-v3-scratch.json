@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arabellako22/dqn-LunarLander-v3-scratch",
+  "slug": "arabellako22-dqn-lunarlander-v3-scratch",
+  "author": "arabellako22",
+  "url": "https://huggingface.co/arabellako22/dqn-LunarLander-v3-scratch",
+  "created_at": "2026-08-24T02:58:53.000Z",
+  "updated_at": "2026-08-24T03:20:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "LunarLander-v3",
+    "dqn",
+    "q-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 515368,
+  "storage_human": "515368 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arabellako22/lunarlander-v3-dqn-scratch · Hugging Face",
+      "url": "https://huggingface.co/arabellako22/lunarlander-v3-dqn-scratch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hwihwalab/lunarlander-v3-d3qn · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/lunarlander-v3-d3qn",
+      "snippet": "Gymnasium Box2D LunarLander-v3 Reinforcement Learning Agent & Real-time Aerospace Telemetry System 🌐 English Documentation | 🇰🇷 한국어 매뉴얼 This repository contains a pre-trained Dueling Double Deep Q-Network (D3QN) agent trained on the Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "[Lunar Lander] Deep Q-Network (DQN).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Deep%20Q-Network%20(DQN).ipynb",
+      "snippet": "3. Train the Agent with DQN Run the code cell below to train the agent from scratch. You are welcome to amend the supplied values of the parameters in the function, to try to see if you can get better performance! Alternatively, you can skip to the next step below (4. Watch a Smart Agent!), to load the saved model weights from a pre-trained agent."
+    },
+    {
+      "title": "GitHub - wtcherr/lunar-lander-dqn: DQN Solution for LunarLander-v3 ...",
+      "url": "https://github.com/wtcherr/lunar-lander-dqn",
+      "snippet": "The LunarLander-v3 environment is a reinforcement learning task where an agent controls a lander to safely land on a designated pad. The agent receives rewards based on its landing accuracy and penalties for fuel usage and crashes."
+    },
+    {
+      "title": "GitHub - Hwihwa-Lab/lunarlander-v3-d3qn",
+      "url": "https://github.com/Hwihwa-Lab/lunarlander-v3-d3qn",
+      "snippet": "Gymnasium Box2D LunarLander-v3 Reinforcement Learning Cockpit & Real-time Aerospace Telemetry Dashboard 🌐 English Documentation | 🇰🇷 한국어 매뉴얼 LunarLander D3QN Mission Control Deck is an advanced Dueling Double Deep Q-Network (D3QN) reinforcement learning system paired with a zero-scroll, real-time 3-column aerospace telemetry dashboard engineered for high-precision, stylish ..."
+    }
+  ]
+}

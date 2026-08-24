@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst",
+  "slug": "minimaxmusictraining-soad-mm3-nextlat-xm-serj-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst",
+  "author": "MiniMaxMusicTraining",
+  "url": "https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst",
+  "created_at": "2026-08-24T06:38:13.000Z",
+  "updated_at": "2026-08-24T11:28:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10750825722,
+  "storage_human": "10.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run MiniMax Music 3 Locally for AI Song Generation",
+      "url": "https://www.mindstudio.ai/blog/minimax-music-3-local-install",
+      "snippet": "A practical guide to installing MiniMax Music 3 locally, covering VRAM needs, the Gradio setup, and what the open music model actually delivers."
+    },
+    {
+      "title": "MiniMax Releases MiniMax-Music3: An Open-Weights Music Model Generating ...",
+      "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/",
+      "snippet": "MiniMax released MiniMax-Music3, an open-weights text-to-music model. The model takes two separate inputs: lyrics carrying section tags, and a detailed music description."
+    },
+    {
+      "title": "Stream and listen to music online for free with SoundCloud",
+      "url": "https://soundcloud.com/",
+      "snippet": "Discover and play over 320 million music tracks. Join the world&#x27;s largest online community of artists, bands, DJs, and audio creators."
+    },
+    {
+      "title": "MiniMax Music - The Ultimate Music AI & AI Song Maker",
+      "url": "https://www.minimax-music.com/",
+      "snippet": "MiniMax Music 1.5 changed everything! The AI music generator understands musical emotion so well - I created a beautiful ballad that perfectly captured the mood I wanted using AI song maker technology."
+    },
+    {
+      "title": "GitHub - JaydenTeoh/NextLat: Official codebase for \"Next-Latent ...",
+      "url": "https://github.com/JaydenTeoh/NextLat",
+      "snippet": "Official codebase for \"Next-Latent Prediction Transformers Learn Compact World Models\" - JaydenTeoh/NextLat"
+    }
+  ]
+}

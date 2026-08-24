@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shoemoney/Qwen3.8-27B-Abliterated-MLX-mxfp4",
+  "slug": "shoemoney-qwen3-8-27b-abliterated-mlx-mxfp4",
+  "author": "shoemoney",
+  "url": "https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-mxfp4",
+  "created_at": "2026-08-24T00:50:56.000Z",
+  "updated_at": "2026-08-24T00:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "qwen3_5",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "uncensored",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5505879280,
+  "parameters_human": "5.51B",
+  "storage_bytes": 15234047409,
+  "storage_human": "15.2 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

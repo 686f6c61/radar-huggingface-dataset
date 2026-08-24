@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Surojit-Utah/protosemseg-checkpoints",
+  "slug": "surojit-utah-protosemseg-checkpoints",
+  "author": "Surojit-Utah",
+  "url": "https://huggingface.co/Surojit-Utah/protosemseg-checkpoints",
+  "created_at": "2026-08-24T03:06:02.000Z",
+  "updated_at": "2026-08-24T03:23:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seismic",
+    "few-shot-segmentation",
+    "prototype-learning",
+    "geophysics",
+    "arxiv:2501.16760",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4599450522,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdaSemSeg: Trained Model Checkpoints for Adaptive Few-Shot ... - Zenodo",
+      "url": "https://zenodo.org/records/21762769",
+      "snippet": "Trained model checkpoints accompanying the paper \"AdaSemSeg: An Adaptive Few-Shot Semantic Segmentation of Seismic Facies\" (Saha & Whitaker, IEEE Transactions onGeoscience and Remote Sensing, 2025, DOI: 10.1109/TGRS.2025.3595010). Includes weights for all three seismic facies datasets studied in the paper (F3,Parihaka, Penobscot) under both 1-shot and 5-shot settings, following a leave-one-out ..."
+    },
+    {
+      "title": "GitHub - Surojit-Utah/AdaSemSeg",
+      "url": "https://github.com/Surojit-Utah/AdaSemSeg/tree/main",
+      "snippet": "checkpoints/ — AdaSemSeg, ProtoSemSeg, and SimCLR initialization weights (downloaded from Zenodo, see Model weights) docs/ — Paper figures, method descriptions, and running.md"
+    },
+    {
+      "title": "AdaSemSeg/scripts at main · Surojit-Utah/AdaSemSeg · GitHub",
+      "url": "https://github.com/Surojit-Utah/AdaSemSeg/tree/main/scripts",
+      "snippet": "Contribute to Surojit-Utah/AdaSemSeg development by creating an account on GitHub."
+    },
+    {
+      "title": "Researcher in Machine Learning and Computer Vision",
+      "url": "https://surojit-utah.github.io/",
+      "snippet": "I am passionate about advancing the state-of-the-art in generative AI and applying deep neural networks to real-world problems in diverse domains with a limited training budget. I have a strong background in probabilistic machine learning that accommodates the randomness experienced in real-world challenges. Research Interests"
+    },
+    {
+      "title": "AdaSemSeg: An Adaptive Few-shot Semantic Segmentation of Seismic Facies",
+      "url": "https://arxiv.org/html/2501.16760v1",
+      "snippet": "The Baseline- 2 2 2 $2$ and ProtoSemSeg use the IE and D used in the AdaSemSeg with skip connections at multiple layers of encoding as shown in Fig. 15. Essentially, this is a U-Net with the ResNet as the encoder, and we call this the ResNet-UNet model."
+    }
+  ]
+}

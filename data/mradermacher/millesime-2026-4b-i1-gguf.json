@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Millesime-2026-4b-i1-GGUF",
+  "slug": "mradermacher-millesime-2026-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Millesime-2026-4b-i1-GGUF",
+  "created_at": "2026-08-24T07:59:36.000Z",
+  "updated_at": "2026-08-24T08:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "french",
+    "francais",
+    "sft",
+    "dpo",
+    "model-merging",
+    "ties",
+    "slm",
+    "fr",
+    "dataset:borekboissy/Millesime-2026-SFT",
+    "dataset:borekboissy/Millesime-2026-comparIA-DPO",
+    "base_model:borekboissy/Millesime-2026-4b",
+    "base_model:quantized:borekboissy/Millesime-2026-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 48024067712,
+  "storage_human": "48.0 GB",
+  "base_model": "borekboissy/Millesime-2026-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Millesime-2026-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Millesime-2026-4b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - p-e-w/heretic: Fully automatic censorship removal for language ...",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "The Heretic version, generated without any human effort, achieves the same level of refusal suppression as other abliterations, but at a much lower KL divergence, indicating less damage to the original model&#x27;s capabilities. (You can reproduce those numbers using Heretic&#x27;s built-in evaluation functionality, e.g. heretic --model google/gemma-3-12b-it --evaluate-model p-e-w/gemma-3-12b-it-heretic ..."
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "Abliterated Models Guide — 2026 Edition If you&#x27;ve looked at the Discover tab in any local-AI app and wondered why some Llama variants have abliterated in the name, or why people on r/LocalLLaMA argue about Heretic vs Dolphin vs straight-finetune, this is the post that explains it. Plus the curated download list of the variants that actually work in 2026. Abliterated weights are the engine ..."
+    }
+  ]
+}

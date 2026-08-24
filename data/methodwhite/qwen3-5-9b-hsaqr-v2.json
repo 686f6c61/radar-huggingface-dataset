@@ -5,7 +5,7 @@
   "author": "MethodWhite",
   "url": "https://huggingface.co/MethodWhite/Qwen3.5-9B-HSAQR-v2",
   "created_at": "2026-08-21T11:38:34.000Z",
-  "updated_at": "2026-08-22T01:51:22.000Z",
+  "updated_at": "2026-08-22T21:44:39.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 610,
+  "downloads_30d": 1178,
   "trending_score": 0,
   "parameters": 7053783552,
   "parameters_human": "7.05B",

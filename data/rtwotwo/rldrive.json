@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Rtwotwo/RLDrive",
+  "slug": "rtwotwo-rldrive",
+  "author": "Rtwotwo",
+  "url": "https://huggingface.co/Rtwotwo/RLDrive",
+  "created_at": "2026-08-23T06:42:01.000Z",
+  "updated_at": "2026-08-23T06:43:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2425729,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-23T16:59:08.918Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raw2Drive: Reinforcement Learning with Aligned World Models for End-to ...",
+      "url": "https://arxiv.org/html/2505.16394v2",
+      "snippet": "(c) In Raw2Drive, we propose the first feasible model-based reinforcement learning paradigm for end-to-end autonomous driving. By leveraging low-dimensional, structured privileged input, our approach guides the learning of a world model from raw sensor data, effectively addressing the issues outlined in (a) and (b)."
+    },
+    {
+      "title": "PDF Raw2Drive: Reinforcement Learning with Aligned World Models for End-to ...",
+      "url": "https://papers.neurips.cc/paper_files/paper/2025/file/c2915bc5961edb04e209a524ec167522-Paper-Conference.pdf",
+      "snippet": "Reinforcement Learning (RL) can mitigate the causal confusion and distribution shift inherent in imitation learning (IL). However, applying RL to end-to-end autonomous driving (E2E-AD) remains an open problem for its training difficulty, and IL is still the mainstream paradigm in both academia and industry. Recently Model-based Reinforcement Learning (MBRL) have demonstrated promising results ..."
+    },
+    {
+      "title": "Rtwotwo (Yolo Redal) - Hugging Face",
+      "url": "https://huggingface.co/Rtwotwo",
+      "snippet": "Generate responses in a chat with a language model Rtwotwo 7 days ago"
+    },
+    {
+      "title": "paper-notes/docs/NeurIPS2025/autonomous_driving/raw2drive ... - GitHub",
+      "url": "https://github.com/razor-ai/paper-notes/blob/main/docs/NeurIPS2025/autonomous_driving/raw2drive_reinforcement_learning_with_aligned_world_models_for_end-to-end_autono.md",
+      "snippet": "RAW2Drive: Reinforcement Learning with Aligned World Models for End-to-End Autonomous Driving 会议: NeurIPS 2025 arXiv: 2505.16394 代码: 无 领域: Autonomous Driving 关键词: model-based reinforcement learning, world model, end-to-end driving, CARLA, dual-stream"
+    },
+    {
+      "title": "[PDF] Raw2Drive: Reinforcement Learning with Aligned World Models for ...",
+      "url": "https://www.semanticscholar.org/paper/Raw2Drive%3A-Reinforcement-Learning-with-Aligned-for-Yang-Jia/e6a78146f35ebb45474326f388b4e10c0f55d513",
+      "snippet": "The proposed Raw2Drive is the only RL based end-to-end method on CARLA Leaderboard 2.0, Bench2Drive, and CARLA Leaderboard 2.0 and it achieves state-of-the-art performance. Reinforcement Learning (RL) can mitigate the causal confusion and distribution shift inherent to imitation learning (IL). However, applying RL to end-to-end autonomous driving (E2E-AD) remains an open problem for its ..."
+    }
+  ]
+}

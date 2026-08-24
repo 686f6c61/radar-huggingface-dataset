@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bunnycore/Gemma4-E2-Code-Lora-gguf",
+  "slug": "bunnycore-gemma4-e2-code-lora-gguf",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/Gemma4-E2-Code-Lora-gguf",
+  "created_at": "2026-08-24T12:07:16.000Z",
+  "updated_at": "2026-08-24T12:07:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25337856,
+  "parameters_human": "25.3M",
+  "storage_bytes": 173912466,
+  "storage_human": "174 MB",
+  "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Fine-Tune Gemma 4 with LoRA & QLoRA: Complete Guide | Lushbinary",
+      "url": "https://lushbinary.com/blog/fine-tune-gemma-4-lora-qlora-complete-guide/",
+      "snippet": "Fine-tune Gemma 4 (E2B-31B) with LoRA/QLoRA using Unsloth (2x faster), HF Transformers & Keras. Dataset prep to deployment. Updated April 2026."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Note: LiteRT-LM supports E2B and E4B models today, with support for larger models coming soon. Gemma 4 ..."
+    },
+    {
+      "title": "Run Gemma 4 with GGUF (llama.cpp / LM Studio) | gemma4.dev",
+      "url": "https://gemma4.dev/run-local/gemma-4-gguf",
+      "snippet": "Download and run Gemma 4 GGUF quantized models for use with llama.cpp, LM Studio, and any GGUF-compatible runtime. Includes quantization guide."
+    }
+  ]
+}

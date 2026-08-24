@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E2B-Deckard-ShiningValiant3-BF16-i1-GGUF",
+  "slug": "mradermacher-gemma-4-e2b-deckard-shiningvaliant3-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E2B-Deckard-ShiningValiant3-BF16-i1-GGUF",
+  "created_at": "2026-08-23T22:37:50.000Z",
+  "updated_at": "2026-08-24T05:01:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nightmedia",
+    "gemma4",
+    "gemma",
+    "google",
+    "merge",
+    "mergekit",
+    "mxfp8",
+    "mlx",
+    "en",
+    "base_model:nightmedia/gemma-4-E2B-Deckard-ShiningValiant3-BF16",
+    "base_model:quantized:nightmedia/gemma-4-E2B-Deckard-ShiningValiant3-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 50203586880,
+  "storage_human": "50.2 GB",
+  "base_model": "nightmedia/gemma-4-E2B-Deckard-ShiningValiant3-BF16",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gemma-4-E2B-it-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E2B-it-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-E2B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E2B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.02770",
+      "snippet": "We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters. Alongside improved vision and audio encoders for all model sizes, we propose a unified, encoder-free ..."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "NYSgpt/nsr-encoder",
+  "slug": "nysgpt-nsr-encoder",
+  "author": "NYSgpt",
+  "url": "https://huggingface.co/NYSgpt/nsr-encoder",
+  "created_at": "2026-08-17T06:38:07.000Z",
+  "updated_at": "2026-08-24T04:30:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "retrieval",
+    "nuclear-physics",
+    "NSR",
+    "EXFOR",
+    "bge-m3",
+    "dense-retrieval",
+    "NSR-CPT",
+    "feature-extraction",
+    "en",
+    "dataset:NYSgpt/nsr-eval",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293222629,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYSgpt (Brendan Stanton) - Hugging Face",
+      "url": "https://huggingface.co/NYSgpt",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 15 hours ago ... published a model about 15 hours ago"
+    },
+    {
+      "title": "nsr51324/CortexRAG at main - Hugging Face",
+      "url": "https://huggingface.co/nsr51324/CortexRAG/tree/main",
+      "snippet": "nsr51324 / CortexRAG like 1 sentence-transformers rag medical-ai faiss fastapi cross-encoder groq Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - agi-eeg-hack/eegpt: Applying PerceiverIO to build a universal ...",
+      "url": "https://github.com/agi-eeg-hack/eegpt",
+      "snippet": "We propose Neuro-GPT, a foundation model consisting of an EEG encoder and a GPT model. The foundation model is pre-trained on a large-scale data set using a self-supervised task that learns how to reconstruct masked EEG segments. We then fine-tune the model on a Motor Imagery Classification task to validate its performance in a low-data regime (9 subjects). Our experiments demonstrate that ..."
+    },
+    {
+      "title": "Neural Super Resolution - George David Dickinson",
+      "url": "https://gddickinson.github.io/python-projects/ai/neural-enhanced-super-resolution/",
+      "snippet": "Overview Languages: Python Documentation Neural Enhanced Super-Resolution (NESR) A Python project for iterative image super-resolution using multiple AI models. Overview NESR combines state-of-the-art super-resolution techniques to enhance image resolution in an iterative manner. The pipeline leverages multiple models: Real-ESRGAN: Powerful GAN-based upscaler for realistic texture generation ..."
+    },
+    {
+      "title": "GitHub - BlackForgeStudio/NSR-AI-API",
+      "url": "https://github.com/BlackForgeStudio/NSR-AI-API",
+      "snippet": "NSR-AI Open-Source API This is the official open-source API for the NSR-AI Minecraft Plugin. It allows developers to interact with core NSR-AI functionalities in a safe and controlled manner."
+    }
+  ]
+}

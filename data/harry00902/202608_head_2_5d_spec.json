@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "harry00902/202608_head_2_5d_spec",
+  "slug": "harry00902-202608_head_2_5d_spec",
+  "author": "harry00902",
+  "url": "https://huggingface.co/harry00902/202608_head_2_5d_spec",
+  "created_at": "2026-08-24T02:11:17.000Z",
+  "updated_at": "2026-08-24T02:16:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1046569600,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "202608_head_2_5d_spec/index.html at main · 1-10/202608_head_2 ... - GitHub",
+      "url": "https://github.com/1-10/202608_head_2_5d_spec/blob/main/index.html",
+      "snippet": "1枚写真から頭部モデルを出力する評価アプリケーション. Contribute to 1-10/202608_head_2_5d_spec development by creating an account on GitHub."
+    },
+    {
+      "title": "202608_head_2_5d_spec/README.md at main · 1-10/202608_head_2 ... - GitHub",
+      "url": "https://github.com/1-10/202608_head_2_5d_spec/blob/main/README.md",
+      "snippet": "1枚写真から頭部モデルを出力する評価アプリケーション. Contribute to 1-10/202608_head_2_5d_spec development by creating an account on GitHub."
+    },
+    {
+      "title": "girl 2.5D - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1999384036624752932",
+      "snippet": "Generate stunning anime art with the &#x27;girl 2.5D&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

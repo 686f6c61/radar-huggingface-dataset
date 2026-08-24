@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "xCloudinfo/xVITA-Rerank-300M-zhTW-GGUF",
+  "slug": "xcloudinfo-xvita-rerank-300m-zhtw-gguf",
+  "author": "xCloudinfo",
+  "url": "https://huggingface.co/xCloudinfo/xVITA-Rerank-300M-zhTW-GGUF",
+  "created_at": "2026-08-23T07:39:39.000Z",
+  "updated_at": "2026-08-23T08:00:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "reranker",
+    "cross-encoder",
+    "text-ranking",
+    "llama.cpp",
+    "traditional-chinese",
+    "zh-tw",
+    "zh",
+    "multilingual",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:quantized:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307531009,
+  "parameters_human": "307.5M",
+  "storage_bytes": 1194213024,
+  "storage_human": "1.2 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xCloudinfo/xVITA-Embed-300M-zhTW-GGUF · Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/xVITA-Embed-300M-zhTW-GGUF",
+      "snippet": "xCloudinfo / xVITA-Embed-300M-zhTW-GGUF like 0 Follow xCloudinfo Corp.Limited 3 Sentence Similarity GGUF Chinese llama.cpp ollama embedding retrieval rag traditional-chinese zh-tw taiwan License:gemma Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "xCloudinfo/xcloud-emb-zhtw-GGUF · Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/xcloud-emb-zhtw-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - sinjab/gguf-rerankers",
+      "url": "https://github.com/sinjab/gguf-rerankers",
+      "snippet": "This repository contains 21 reranker models converted to GGUF format, organized by model family. All models are also available on HuggingFace for easy download and use."
+    },
+    {
+      "title": "gguf AI Models | Civitai",
+      "url": "https://civitai.com/tag/gguf",
+      "snippet": "Browse 288 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gguf."
+    }
+  ]
+}

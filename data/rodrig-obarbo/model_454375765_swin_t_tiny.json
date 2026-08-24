@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rodrig-obarbo/model_454375765_swin_t_tiny",
+  "slug": "rodrig-obarbo-model_454375765_swin_t_tiny",
+  "author": "rodrig-obarbo",
+  "url": "https://huggingface.co/rodrig-obarbo/model_454375765_swin_t_tiny",
+  "created_at": "2026-08-23T08:03:15.000Z",
+  "updated_at": "2026-08-23T08:03:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gelu",
+    "grouped-query",
+    "instancenorm",
+    "polynomial",
+    "retrieval",
+    "rmsprop",
+    "swin-t",
+    "tiny",
+    "tucker",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swin Transformer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/swin",
+      "snippet": "This is the configuration class to store the configuration of a SwinModel. It is used to instantiate a Swin model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Swin microsoft/swin-tiny-patch4-window7-224 architecture."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "Swin Transformer This repo is the official implementation of \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\" as well as the follow-ups. It currently includes code and models for the following tasks: Image Classification: Included in this repo. See get_started.md for a quick start."
+    },
+    {
+      "title": "Swin Transformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin",
+      "snippet": "It is used to instantiate a Swin model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the microsoft/swin-tiny-patch4-window7-224 Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "vision/torchvision/models/swin_transformer.py at main · pytorch/vision ...",
+      "url": "https://github.com/pytorch/vision/blob/main/torchvision/models/swin_transformer.py",
+      "snippet": "Datasets, Transforms and Models specific to Computer Vision - pytorch/vision"
+    },
+    {
+      "title": "SwinTransformer — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/swin_transformer.html",
+      "snippet": "The following model builders can be used to instantiate an SwinTransformer model (original and V2) with and without pre-trained weights. All the model builders internally rely on the torchvision.models.swin_transformer.SwinTransformer base class."
+    }
+  ]
+}

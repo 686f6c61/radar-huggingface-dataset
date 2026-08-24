@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hmkang/wam_wan22_dit4dit_robocasa300_hwabl_8latin",
+  "slug": "hmkang-wam_wan22_dit4dit_robocasa300_hwabl_8latin",
+  "author": "hmkang",
+  "url": "https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_8latin",
+  "created_at": "2026-08-23T09:17:45.000Z",
+  "updated_at": "2026-08-24T03:45:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wam",
+    "dit4dit",
+    "world-model",
+    "robocasa",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157041840857,
+  "storage_human": "157.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hmkang/wam_wan22_dit4dit_robocasa300_hwabl_4latin · Hugging Face",
+      "url": "https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_4latin",
+      "snippet": "Instructions to use hmkang/wam_wan22_dit4dit_robocasa300_hwabl_4latin with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "hmkang/wam_wan22_dit4dit_robocasa300_hwabl_3latin · Hugging Face",
+      "url": "https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_3latin",
+      "snippet": "Instructions to use hmkang/wam_wan22_dit4dit_robocasa300_hwabl_3latin with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Mondo-Robotics/DiT4DiT: This is the official code repo for ...",
+      "url": "https://github.com/Mondo-Robotics/DiT4DiT",
+      "snippet": "DiT4DiT is a Vision-Action-Model (VAM) framework that combines video generation transformers with flow-matching-based action prediction for generalizable robotic manipulation. It supports both the tabletop and whole-body control for manipulation tasks. Notably, DiT4DiT stands as the first efficient VAM to achieve real-time whole-body control of humanoid robots."
+    },
+    {
+      "title": "DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable ...",
+      "url": "https://arxiv.org/html/2603.10448v1",
+      "snippet": "This section details DiT4DiT, an integrated Video-Action Model (VAM) designed for the joint optimization of Video and Action DiTs. By employing a dual flow-matching objective, our framework concurrently refines video synthesis and action prediction."
+    },
+    {
+      "title": "[2603.10448] DiT4DiT: Jointly Modeling Video Dynamics and Actions for ...",
+      "url": "https://arxiv.org/abs/2603.10448",
+      "snippet": "Vision-Language-Action (VLA) models have emerged as a promising paradigm for robot learning, but their representations are still largely inherited from static image-text pretraining, leaving physical dynamics to be learned from comparatively limited action data. Generative video models, by contrast, encode rich spatiotemporal structure and implicit physics, making them a compelling foundation ..."
+    }
+  ]
+}

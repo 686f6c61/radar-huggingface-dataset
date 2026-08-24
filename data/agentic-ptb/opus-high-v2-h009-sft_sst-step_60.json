@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v2.h009.sft_sst.step_60",
+  "slug": "agentic-ptb-opus-high-v2-h009-sft_sst-step_60",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v2.h009.sft_sst.step_60",
+  "created_at": "2026-08-24T01:30:08.000Z",
+  "updated_at": "2026-08-24T01:31:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Jackrong/Qwopus3.6-27B-v2 · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2",
+      "snippet": "This model integrates: claude-opus-4.6-traceInversion-9000x: 9,000 high-value, fully reconstructed step-by-step reasoning trajectories. claude-opus-4.7-traceInversion-5000x: 5,000 complex multi-turn logic and mathematics samples optimized for negative entropy reconstruction."
+    },
+    {
+      "title": "What Is Agentic AI? Definition, 6 Levels & Examples (2026)",
+      "url": "https://agentic.ai/what-is-agentic-ai",
+      "snippet": "Agentic AI acts on its own — planning, using tools, and adapting until a task is done. Learn how it differs from chatbots, the 6 levels of autonomy, and real tools to try."
+    },
+    {
+      "title": "Introducing Claude Sonnet 5 &#92; Anthropic",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "snippet": "Claude Sonnet 5 is a strong agentic-coding model, delivering top-tier accuracy comparable to Opus-class models and a clear step-function improvement over Sonnet 4.6."
+    }
+  ]
+}

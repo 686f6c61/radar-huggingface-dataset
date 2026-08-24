@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-visual-reasoning-expert-step100",
+  "slug": "saraswathy-vlm-mix-resume-visual-reasoning-expert-step100",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-visual-reasoning-expert-step100",
+  "created_at": "2026-08-24T09:12:52.000Z",
+  "updated_at": "2026-08-24T09:17:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11780043327,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Saraswathy/vlm-mix-broader-stem-expert-step100 with PEFT:"
+    },
+    {
+      "title": "vlm-mix-broader-stem-expert-step100 - FriendliAI",
+      "url": "https://friendli.ai/models/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Run vlm-mix-broader-stem-expert-step100 with FriendliAI inference. A rank-64 broader-STEM specialist trained for the VLM mixture experiments."
+    },
+    {
+      "title": "DeepSeek unveils vision-enabled AI model claimed to match Anthropic&#x27;s ...",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/deepseek-unveils-vision-enabled-ai-model-claimed-to-match-anthropics-top-tier/articleshow/133424154.cms",
+      "snippet": "DeepSeek stated that the model&#x27;s performance comes close to Anthropic PBC&#x27;s Opus 4.8 model across multimodal agentic evaluations which are tests designed to measure an AI system&#x27;s ability to ..."
+    },
+    {
+      "title": "Trump Family Crypto Firm Tied to Chinese AI Models US Government Called ...",
+      "url": "https://finance.yahoo.com/technology/ai/articles/trump-family-crypto-firm-tied-183604719.html",
+      "snippet": "WorldClaw accepts World Liberty&#x27;s USD1 stablecoin while offering AI models from Chinese companies facing U.S. national security restrictions."
+    },
+    {
+      "title": "Vision Language Models Explained - Hugging Face",
+      "url": "https://huggingface.co/blog/vlms",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

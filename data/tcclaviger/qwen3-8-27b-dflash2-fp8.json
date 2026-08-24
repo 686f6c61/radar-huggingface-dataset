@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tcclaviger/Qwen3.8-27B-DFlash2-FP8",
+  "slug": "tcclaviger-qwen3-8-27b-dflash2-fp8",
+  "author": "tcclaviger",
+  "url": "https://huggingface.co/tcclaviger/Qwen3.8-27B-DFlash2-FP8",
+  "created_at": "2026-08-23T12:18:14.000Z",
+  "updated_at": "2026-08-23T12:21:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "sglang",
+    "vllm",
+    "fp8",
+    "text-generation",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 2118882784,
+  "storage_human": "2.1 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "incoai/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The block-scaled FP8 checkpoint needs no workaround. vLLM auto-disables DeepGemm for model_type=qwen3_5_text on Blackwell and falls back to CUTLASS, so it loads unaided."
+    },
+    {
+      "title": "Qwen3.8-27B (NVFP4) on Single/Dual DGX Spark — SGLang + DFlash2, fully ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-nvfp4-on-single-dual-dgx-spark-sglang-dflash2-fully-openai-compatible/380732",
+      "snippet": "Included below is a complete, replicable recipe for serving Qwen3.8-27B (NVFP4) with SGLang + DFlash2 block-diffusion speculative decoding on NVIDIA DGX Spark (GB10) — including a set of patches that make the /v1/responses endpoint genuinely OpenAI-API-compatible, plus an optional dual-Spark tensor-parallel (TP=2) configuration over RoCE for ~1.6x more speed."
+    }
+  ]
+}

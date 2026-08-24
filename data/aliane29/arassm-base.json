@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "aliane29/arassm-base",
+  "slug": "aliane29-arassm-base",
+  "author": "aliane29",
+  "url": "https://huggingface.co/aliane29/arassm-base",
+  "created_at": "2026-08-07T15:04:39.000Z",
+  "updated_at": "2026-08-23T15:17:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "mamba",
+    "state-space-model",
+    "arabic",
+    "masked-language-modeling",
+    "bidirectional",
+    "fill-mask",
+    "ar",
+    "dataset:wikimedia/wikipedia",
+    "dataset:uonlp/CulturaX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 105288704,
+  "parameters_human": "105.3M",
+  "storage_bytes": 421191664,
+  "storage_human": "421 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.08256] AraSSM: A bidirectional state-space encoder for Arabic ...",
+      "url": "https://arxiv.org/abs/2608.08256",
+      "snippet": "Mamba, a selective state-space model (SSM), offers linear-time sequence modeling as a competitive alternative to attention, yet no dedicated bidirectional Mamba encoder pretrained specifically for Arabic currently exists."
+    },
+    {
+      "title": "AraSSM: A bidirectional state-space encoder for Arabic masked language ...",
+      "url": "https://arxiv.org/pdf/2608.08256",
+      "snippet": "3.1 Model Architecture AraSSM follows the bidirectional block design outlined in Section 2.2: each layer runs a forward selective-scan mixer and a backward selective-scan mixer over the same normalized hidden state, then merges the two outputs through a learned linear projection before passing the result to a position-wise feed-forward sublayer."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

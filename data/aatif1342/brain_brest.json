@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "aatif1342/Brain_Brest",
+  "slug": "aatif1342-brain_brest",
+  "author": "aatif1342",
+  "url": "https://huggingface.co/aatif1342/Brain_Brest",
+  "created_at": "2026-08-23T10:10:21.000Z",
+  "updated_at": "2026-08-23T10:14:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323113413,
+  "storage_human": "323 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brain-inspired Artificial Intelligence: A Comprehensive Review",
+      "url": "https://arxiv.org/html/2408.14811v1",
+      "snippet": "Abstract. Current artificial intelligence (AI) models often focus on enhancing performance through meticulous parameter tuning and optimization techniques. However, the fundamental design principles behind these models receive comparatively less attention, which can limit our understanding of their potential and constraints. This comprehensive review explores the diverse design inspirations ..."
+    },
+    {
+      "title": "Interpretable machine learning model for brain metastasis in breast ...",
+      "url": "https://link.springer.com/article/10.1186/s12967-026-08675-0",
+      "snippet": "Background Brain metastasis (BM) is a devastating complication of breast cancer (BC) with a poor prognosis. Early identification of high-risk patients is essential but currently lacks accurate predictive tools. This study aimed to develop a stable machine learning model for predicting BM in a large, diverse patient population. Methods We conducted a retrospective cohort study of 186,351 ..."
+    },
+    {
+      "title": "An interpretable machine learning model for predicting ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1693557/full",
+      "snippet": "Abstract Background: Breast cancer is the most common malignancy worldwide. Brain metastasis in breast cancer severely impacts prognosis, and the objective of this study is to develop a machine learning model for predicting the risk of brain metastasis in breast cancer patients to assist clinical management. Methods: Univariate and multivariate logistic regression analyses were employed to ..."
+    },
+    {
+      "title": "AI generated annotations for Breast, Brain, Liver, Lungs, and ... - Nature",
+      "url": "https://www.nature.com/articles/s41597-025-05666-6",
+      "snippet": "Each nnU-Net model was trained on open-source datasets, and a portion of the AI-generated annotations was reviewed and corrected by board-certified radiologists."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

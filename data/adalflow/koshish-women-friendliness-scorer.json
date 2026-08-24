@@ -5,7 +5,7 @@
   "author": "Adalflow",
   "url": "https://huggingface.co/Adalflow/koshish-women-friendliness-scorer",
   "created_at": "2026-08-21T19:29:18.000Z",
-  "updated_at": "2026-08-21T19:30:13.000Z",
+  "updated_at": "2026-08-23T13:15:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 278044417,
   "parameters_human": "278.0M",
-  "storage_bytes": 1129300283,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 3370802498,
+  "storage_human": "3.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

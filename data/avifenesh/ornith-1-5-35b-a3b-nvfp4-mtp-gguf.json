@@ -5,7 +5,7 @@
   "author": "Avifenesh",
   "url": "https://huggingface.co/Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF",
   "created_at": "2026-08-19T20:38:29.000Z",
-  "updated_at": "2026-08-22T09:45:36.000Z",
+  "updated_at": "2026-08-23T00:32:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 2749,
+  "downloads_30d": 5150,
   "trending_score": 0,
   "parameters": 67141632,
   "parameters_human": "67.1M",

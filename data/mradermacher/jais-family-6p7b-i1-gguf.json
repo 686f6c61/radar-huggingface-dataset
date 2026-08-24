@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jais-family-6p7b-i1-GGUF",
+  "slug": "mradermacher-jais-family-6p7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jais-family-6p7b-i1-GGUF",
+  "created_at": "2025-03-04T21:28:02.000Z",
+  "updated_at": "2026-08-23T10:59:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Arabic",
+    "English",
+    "LLM",
+    "Decoder",
+    "causal-lm",
+    "jais-family",
+    "ar",
+    "en",
+    "base_model:inception42/jais-family-6p7b",
+    "base_model:quantized:inception42/jais-family-6p7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 219,
+  "trending_score": 0,
+  "parameters": 7142689792,
+  "parameters_human": "7.14B",
+  "storage_bytes": 116264689472,
+  "storage_human": "116.3 GB",
+  "base_model": "inception42/jais-family-6p7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/jais-family-6p7b-chat-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-6p7b-chat-i1-GGUF",
+      "snippet": "mradermacher / jais-family-6p7b-chat-i1-GGUF like 0 Transformers GGUF Arabic English Arabic English LLM Decoder causal-lm jais-family imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/jais-family-6p7b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-6p7b-i1-GGUF",
+      "snippet": "mradermacher / jais-family-6p7b-i1-GGUF like 0 Transformers GGUF Arabic English Arabic English LLM Decoder causal-lm jais-family Inference Endpoints imatrix License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/jais_6p7b_chat at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/jais_6p7b_chat",
+      "snippet": "The model is based on transformer-based decoder-only (GPT-3) architecture and uses SwiGLU non-linearity. It implements ALiBi position embeddings, enabling the model to extrapolate to long sequence lengths, providing improved context handling and model precision. The JAIS family of models is a comprehensive series of bilingual English-Arabic LLMs."
+    },
+    {
+      "title": "model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1924737589684998144",
+      "snippet": "Jais models (`jais - family - *`) are *trained from scratch*, incorporating the SwiGLU non - linear activation function and ALiBi position encoding. These architectural enhancements allow the models to extrapolate at long sequence lengths, leading to improved context handling and precision."
+    },
+    {
+      "title": "Jais Family 6p7b Chat by inceptionai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/inceptionai%2Fjais-family-6p7b-chat,5cqC3MFN1iqa274IEzCeDB",
+      "snippet": "Jais Family 6p7b Chat is an open-source language model by inceptionai. Features: 7.1b LLM, VRAM: 28.5GB, License: proprietary, LLM Explorer Score: 0.14."
+    }
+  ]
+}

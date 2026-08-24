@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ai-hhmi/posetail",
+  "slug": "ai-hhmi-posetail",
+  "author": "ai-hhmi",
+  "url": "https://huggingface.co/ai-hhmi/posetail",
+  "created_at": "2026-08-24T15:35:26.000Z",
+  "updated_at": "2026-08-24T15:35:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI@HHMI: Janelia Initiative | HHMI",
+      "url": "https://www.hhmi.org/research/janelia/AI",
+      "snippet": "The initiative&#x27;s AI scientists, computational scientists, engineers, and robotics experts drive one of the most significant platforms on which HHMI science is built, and self-assemble into small teams that work closely with biological and biomedical scientists to help design and execute a wide range of ambitious, AI-based research projects."
+    },
+    {
+      "title": "Ai@Hhmi | Hhmi",
+      "url": "https://www.hhmi.org/shaping-science/ai-hhmi",
+      "snippet": "Our AI@HHMI Initiative is investing $500 million over a 10-year period to embed AI systems throughout every stage of the scientific process, rapidly scaling and accelerating scientific discovery."
+    },
+    {
+      "title": "AI-HHMI - GitHub",
+      "url": "https://github.com/AI-HHMI",
+      "snippet": "Accelerating Innovation in Biology. AI@HHMI has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "posetail · PyPI",
+      "url": "https://pypi.org/project/posetail/",
+      "snippet": "a model for tracking 2d or 3d animal pose through time"
+    },
+    {
+      "title": "GitHub - AI-HHMI/tailcyclenet: A new pose estimation tool based on ...",
+      "url": "https://github.com/AI-HHMI/tailcyclenet",
+      "snippet": "A new pose estimation tool based on finetuning posetail - AI-HHMI/tailcyclenet"
+    }
+  ]
+}

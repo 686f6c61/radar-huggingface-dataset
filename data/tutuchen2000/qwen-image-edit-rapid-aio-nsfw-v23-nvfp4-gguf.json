@@ -25,12 +25,12 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 139,
   "trending_score": 0,
   "parameters": 20430401088,
   "parameters_human": "20.43B",
-  "storage_bytes": 23630742740,
-  "storage_human": "23.6 GB",
+  "storage_bytes": 15883474123,
+  "storage_human": "15.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

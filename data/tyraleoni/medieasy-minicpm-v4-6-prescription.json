@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tyraleoni/medieasy-minicpm-v4-6-prescription",
+  "slug": "tyraleoni-medieasy-minicpm-v4-6-prescription",
+  "author": "tyraleoni",
+  "url": "https://huggingface.co/tyraleoni/medieasy-minicpm-v4-6-prescription",
+  "created_at": "2026-08-12T06:08:09.000Z",
+  "updated_at": "2026-08-23T10:13:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "minicpmv4_6",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 327,
+  "trending_score": 0,
+  "parameters": 1300428016,
+  "parameters_human": "1.30B",
+  "storage_bytes": 13565563089,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4.6 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "snippet": "Deploy MiniCPM-V 4.6 on iOS, Android, and HarmonyOS Platforms We have adapted MiniCPM-V 4.6 for deployment on iOS, Android, and HarmonyOS platforms, with all edge adaptation code fully open-sourced. Developers can reproduce the on-device experience in just a few steps."
+    },
+    {
+      "title": "MiniCPM-V 4.6 Demo - a Hugging Face Space by openbmb",
+      "url": "https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Demo",
+      "snippet": "MiniCPM-V 4.6 Ultra-Efficient Multimodal AI"
+    },
+    {
+      "title": "minicpm-v4.6 - ollama.com",
+      "url": "https://ollama.com/library/minicpm-v4.6",
+      "snippet": "The model is built based on SigLIP2-400M and the Qwen3.5-0.8B LLM. It inherents the strong single-image, multi-image, and video understanding capabilities of MiniCPM-V family, while significantly improving computation efficiency."
+    },
+    {
+      "title": "MiniCPM-V/docs/minicpm_v4_en.md at main - GitHub",
+      "url": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v4_en.md",
+      "snippet": "The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency."
+    }
+  ]
+}

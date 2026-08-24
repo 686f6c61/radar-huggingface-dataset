@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Roy229/nml7324-risk-analyzer",
+  "slug": "roy229-nml7324-risk-analyzer",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/nml7324-risk-analyzer",
+  "created_at": "2026-08-23T11:42:48.000Z",
+  "updated_at": "2026-08-23T11:42:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-classification",
+    "nml-registry",
+    "risk-analyzer",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/huggingface_2197-model-catalog · Hugging Face",
+      "url": "https://huggingface.co/Roy229/huggingface_2197-model-catalog",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model risk management for AI and machine learning | EY - US",
+      "url": "https://www.ey.com/en_us/insights/banking-capital-markets/understand-model-risk-management-for-ai-and-machine-learning",
+      "snippet": "These aspects of AI/ML will require greater investment in data governance and infrastructure and key elements of model life cycle risk management, including model definition, development and validation, change management and ongoing monitoring."
+    },
+    {
+      "title": "GitHub - Rudraksh-Tiwari/loan-risk-analyzer: AI-powered loan risk ...",
+      "url": "https://github.com/Rudraksh-Tiwari/loan-risk-analyzer",
+      "snippet": "Loan Risk Analyzer An AI-powered loan approval prediction system that combines Machine Learning, Explainable AI (SHAP), and LLM integration to make and explain loan decisions like a real bank."
+    },
+    {
+      "title": "AI Risk Management Framework | NIST",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "snippet": "On July 26, 2024, NIST released NIST-AI-600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile . The profile can help organizations identify unique risks posed by generative AI and proposes actions for generative AI risk management that best aligns with their goals and priorities."
+    },
+    {
+      "title": "Stock Risk Analyzer - GitHub",
+      "url": "https://github.com/skytells-research/stock-risk-analyzer",
+      "snippet": "Stock Risk Analyzer is a powerful, machine learning-driven application designed to help investors, traders, and financial analysts assess stock market risk levels efficiently and accurately. By leveraging historical data and key technical indicators, this tool classifies stocks into risk categories (Low, Medium, High), empowering users to make informed investment decisions."
+    }
+  ]
+}

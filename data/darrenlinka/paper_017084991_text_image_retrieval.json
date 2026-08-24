@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "darrenlinka/paper_017084991_text_image_retrieval",
+  "slug": "darrenlinka-paper_017084991_text_image_retrieval",
+  "author": "darrenlinka",
+  "url": "https://huggingface.co/darrenlinka/paper_017084991_text_image_retrieval",
+  "created_at": "2026-08-23T08:37:34.000Z",
+  "updated_at": "2026-08-23T08:37:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "compact",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "latex-neurips",
+    "medium-balanced",
+    "numeric-nature",
+    "text-image-retrieval",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "All You Need to Know About Training Image Retrieval Models",
+      "url": "https://arxiv.org/abs/2503.13045",
+      "snippet": "Image retrieval is the task of finding images in a database that are most similar to a given query image. The performance of an image retrieval pipeline depends on many training-time factors, including the embedding model architecture, loss function, data sampler, mining function, learning rate(s), and batch size. In this work, we run tens of thousands of training runs to understand the effect ..."
+    },
+    {
+      "title": "A family of lanthipeptides with anti-phage function",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1931312826002775",
+      "snippet": "Declaration of generative AI and AI-assisted technologies in the writing process During the preparation of this work, the authors used ChatGPT in order to limit discrepancies in the text and miscellaneous mistakes."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    }
+  ]
+}

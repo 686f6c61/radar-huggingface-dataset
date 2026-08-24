@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "keXjos/Qwen3.8-2B-Distill-mlx-5Bit",
+  "slug": "kexjos-qwen3-8-2b-distill-mlx-5bit",
+  "author": "keXjos",
+  "url": "https://huggingface.co/keXjos/Qwen3.8-2B-Distill-mlx-5Bit",
+  "created_at": "2026-08-24T03:54:09.000Z",
+  "updated_at": "2026-08-24T03:54:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-2B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-2B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 353288000,
+  "parameters_human": "353.3M",
+  "storage_bytes": 1314553616,
+  "storage_human": "1.3 GB",
+  "base_model": "empero-ai/Qwen3.8-2B-Distill",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keXjos/Qwen3.8-9B-Distill-mlx-5Bit · Hugging Face",
+      "url": "https://huggingface.co/keXjos/Qwen3.8-9B-Distill-mlx-5Bit",
+      "snippet": "keXjos / Qwen3.8-9B-Distill-mlx-5Bit like 0 Text Generation Transformers Safetensors MLX English qwen3_5 image-text-to-text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling sft mlx-my-repo conversational 5-bit License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "empero-ai/Qwen3.8-2B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-2B-Distill",
+      "snippet": "Qwen3.8-2B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-2B architecture — the smallest member of the family, trained on the same curriculum as its larger siblings."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Qwen3.8Distilled: Qwen 3.8 2B, 4B & 9B ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled",
+      "snippet": "The Teacher Model (Qwen3.8-2.4T): A massive AI running on multi-million dollar data centers. It generates step-by-step reasoning solutions (\"Chain of Thought\"). The Student Models (9B / 4B / 2B): Smaller models trained directly on the teacher&#x27;s exact reasoning traces."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

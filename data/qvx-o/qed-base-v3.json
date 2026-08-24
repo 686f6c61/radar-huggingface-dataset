@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "qvx-o/QED-Base-v3",
+  "slug": "qvx-o-qed-base-v3",
+  "author": "qvx-o",
+  "url": "https://huggingface.co/qvx-o/QED-Base-v3",
+  "created_at": "2026-08-18T09:21:27.000Z",
+  "updated_at": "2026-08-23T15:01:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "pretrained",
+    "transformer",
+    "decoder-only",
+    "english",
+    "sentencepiece",
+    "gqa",
+    "swiglu",
+    "rmsnorm",
+    "rope",
+    "154m",
+    "qarvexium",
+    "qed",
+    "qed-base",
+    "qed-base-v3",
+    "foundation-model",
+    "foundation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 446792702,
+  "storage_human": "447 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qarvexium/QED-Base-v3 · Hugging Face",
+      "url": "https://huggingface.co/Qarvexium/QED-Base-v3",
+      "snippet": "Qarvexium / QED-Base-v3 like 0 English License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Qarvexium Ops - Hugging Face",
+      "url": "https://huggingface.co/Qarvexium/models",
+      "snippet": "Recent Activity updated a model1 day ago Qarvexium/Qlip published a model1 day ago Qarvexium/Qlip updated a model1 day ago Qarvexium/Qanvas View all activity"
+    },
+    {
+      "title": "QED Science",
+      "url": "https://www.qedscience.com/",
+      "snippet": "The AI validity machine Make high-stakes pharma and biotech decisions with confidence For pharma, biotech, and life-science R&D, QED&#x27;s Validity Machine gives you a validated, foundational layer of data you can trust to support critical scientific decisions. Ask it any scientific question, and it extracts every implicit and explicit claim across the full body of research, scores each of them ..."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

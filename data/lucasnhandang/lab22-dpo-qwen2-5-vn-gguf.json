@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lucasnhandang/lab22-dpo-qwen2.5-vn-GGUF",
+  "slug": "lucasnhandang-lab22-dpo-qwen2-5-vn-gguf",
+  "author": "lucasnhandang",
+  "url": "https://huggingface.co/lucasnhandang/lab22-dpo-qwen2.5-vn-GGUF",
+  "created_at": "2026-08-24T12:42:20.000Z",
+  "updated_at": "2026-08-24T12:43:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "alignment",
+    "dpo",
+    "unsloth",
+    "llama-cpp",
+    "vi",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen2.5-7B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 10127899456,
+  "storage_human": "10.1 GB",
+  "base_model": "unsloth/Qwen2.5-7B-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lucasnhandang/lab22-dpo-qwen2.5-vn · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lucasnhandang/lab22-dpo-qwen2.5-vn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2502.13923] Qwen2.5-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2502.13923",
+      "snippet": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video ..."
+    },
+    {
+      "title": "GitHub - 787028221/Qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/787028221/Qwen2.5",
+      "snippet": "Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with Qwen2.5-or visit the Qwen2.5 collection, and you will find all you need! Enjoy! In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 ..."
+    },
+    {
+      "title": "GitHub - rpc-x/Qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/rpc-x/Qwen2.5",
+      "snippet": "Introduction In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5."
+    }
+  ]
+}

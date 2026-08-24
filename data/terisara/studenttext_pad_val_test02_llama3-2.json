@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Terisara/studenttext_PAD_val_test02_LLAMA3.2",
+  "slug": "terisara-studenttext_pad_val_test02_llama3-2",
+  "author": "Terisara",
+  "url": "https://huggingface.co/Terisara/studenttext_PAD_val_test02_LLAMA3.2",
+  "created_at": "2026-08-24T04:09:44.000Z",
+  "updated_at": "2026-08-24T04:36:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Terisara (Micaraseth) - Hugging Face",
+      "url": "https://huggingface.co/Terisara/models",
+      "snippet": "Sort: Recently updated. Terisara/model_3_alpha_phase. 3B • Updated Mar 22 • 5. Terisara/PAD_student_teacher_m2. 3B • Updated Mar 19 • 10"
+    },
+    {
+      "title": "Terisara/PAD_student_teacher_m2 · Hugging Face",
+      "url": "https://huggingface.co/Terisara/PAD_student_teacher_m2",
+      "snippet": "Terisara / PAD_student_teacher_m2 like 0 Safetensors GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+      "url": "https://github.com/meta-llama/llama",
+      "snippet": "This release includes model weights and starting code for pre-trained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This repository is intended as a minimal example to load Llama 2 models and run inference. For more detailed examples leveraging Hugging Face, see llama-cookbook."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama-models: Utilities intended for use with Llama ...",
+      "url": "https://github.com/meta-llama/llama-models",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Our ..."
+    }
+  ]
+}

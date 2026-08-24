@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "puwaer/DeepSeek-V4-Flash-0731-ream-200b",
+  "slug": "puwaer-deepseek-v4-flash-0731-ream-200b",
+  "author": "puwaer",
+  "url": "https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-ream-200b",
+  "created_at": "2026-08-09T06:39:22.000Z",
+  "updated_at": "2026-08-24T11:55:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "moe",
+    "expert-merging",
+    "ream",
+    "compressed",
+    "conversational",
+    "arxiv:2510.13999",
+    "arxiv:2604.04356",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 199914652711,
+  "parameters_human": "199.91B",
+  "storage_bytes": 111152690596,
+  "storage_human": "111.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for deepseek-ai/DeepSeek-V4-Flash-0731 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "Overview Relevant source files DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE) architecture README.md 20 ..."
+    },
+    {
+      "title": "puwaer/DeepSeek-V4-Flash-0731-ream-200b · Hugging Face",
+      "url": "https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-ream-200b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows."
+    },
+    {
+      "title": "deepseek-ai / deepseek-v4-flash-0731 - docs.api.nvidia.com",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows. It supports a one-million-token context and includes an attached speculative decoding module. This model is ready for commercial or non-commercial use."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "abhishek1995s/indian-nbfc-regulatory-assistant-v3",
+  "slug": "abhishek1995s-indian-nbfc-regulatory-assistant-v3",
+  "author": "abhishek1995s",
+  "url": "https://huggingface.co/abhishek1995s/indian-nbfc-regulatory-assistant-v3",
+  "created_at": "2026-08-23T06:58:23.000Z",
+  "updated_at": "2026-08-23T16:45:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "axolotl",
+    "lora",
+    "qlora",
+    "rag",
+    "compliance",
+    "nbfc",
+    "india",
+    "rbi",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197206353,
+  "storage_human": "197 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=nsfw&p=0&sort=created",
+      "snippet": "abhishek1995s/indian-nbfc-regulatory-assistant-v3 Text Generation •Updated 6 minutes ago"
+    },
+    {
+      "title": "PDF Regulatory Dynamics of NBFC: A Comprehensive Study On Formulation and ...",
+      "url": "https://www.ijsat.org/papers/2025/4/8605.pdf",
+      "snippet": "Employing a doctrinal methodology, the paper identifies key challenges and policy options to ensure that NBFC oversight remains both risk-sensitive and innovation-friendly, especially in the context of fintech convergence. It advocates for a harmonised, forward-looking, and technologically integrated regulatory model for India&#x27;s NBFC sector."
+    },
+    {
+      "title": "NBFC Regulatory Framework in India: RBI Rules & Risk Guide",
+      "url": "https://rmaindia.org/nbfc-regulatory-framework-in-india-a-complete-guide-for-risk-professionals/",
+      "snippet": "Review RBI&#x27;s NBFC regulatory framework in India, including scale-based regulation, registration norms, capital rules and compliance duties."
+    },
+    {
+      "title": "Regulatory Dynamics of Nbfc: a Comprehensive Study on Formulation and ...",
+      "url": "https://www.ijsat.org/research-paper.php?id=8605",
+      "snippet": "Call for Paper Volume 17 Issue 3 July-September 2026 Submit your research before last 3 days of September to publish your research paper in the issue of July-September."
+    },
+    {
+      "title": "Non Banking Financial Companies (NBFCs) - Reserve Bank of India",
+      "url": "https://www.rbi.org.in/Scripts/BS_NBFCNotificationView.aspx?Id=12179",
+      "snippet": "As the SBR framework encompasses different facets of regulation of NBFCs covering capital requirements, governance standards, prudential regulation, etc., it has been decided to first issue an integrated regulatory framework for NBFCs under SBR providing a holistic view of the SBR structure, set of fresh regulations being introduced and ..."
+    }
+  ]
+}

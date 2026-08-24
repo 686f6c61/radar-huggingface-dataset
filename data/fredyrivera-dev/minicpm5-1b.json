@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "FredyRivera-dev/MiniCPM5-1B",
+  "slug": "fredyrivera-dev-minicpm5-1b",
+  "author": "FredyRivera-dev",
+  "url": "https://huggingface.co/FredyRivera-dev/MiniCPM5-1B",
+  "created_at": "2026-08-23T22:27:49.000Z",
+  "updated_at": "2026-08-23T23:02:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "arxiv:2512.16649",
+    "arxiv:2604.13016",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2161290944,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicolea55/MiniCPM_llm-model - GitHub",
+      "url": "https://github.com/nicolea55/MiniCPM_llm-model",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
+    },
+    {
+      "title": "GitHub - Ardynai/minicpm: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
+      "url": "https://github.com/Ardynai/minicpm",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
+    },
+    {
+      "title": "MiniCPM5-1B: Open-Source 1B LLM for On-Device Deployment, Code ...",
+      "url": "https://dev.co/ai/llms/minicpm5-1b",
+      "snippet": "MiniCPM5-1B is a 1.08B-parameter Apache 2.0 language model with 131K context, tool-calling, and hybrid reasoning modes. Optimized for edge AI, local coding agents, and resource-constrained deployment."
+    },
+    {
+      "title": "openbmb/MiniCPM5-1B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+      "snippet": "Desktop Pet We also ship OpenBMB/MiniCPM-Desk-Pet, a desktop pet driven locally by MiniCPM5-1B. It supports Apple Silicon / NVIDIA GPU / CPU paths, can work with coding agents such as Cursor, Claude Code, and Codex, and supports LoRA persona switching. Limitations and Responsible Use MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data ..."
+    },
+    {
+      "title": "MiniCPM5-1B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/openbmb/MiniCPM5-1B",
+      "snippet": "MiniCPM5-1B uses the standard LlamaForCausalLM architecture, so mainstream inference engines can load it directly: no custom kernels, no model-code fork. For step-by-step deployment and fine-tuning instructions, use the GitHub cookbooks below."
+    }
+  ]
+}

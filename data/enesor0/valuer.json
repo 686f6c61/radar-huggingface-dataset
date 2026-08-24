@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "enesor0/valuer",
+  "slug": "enesor0-valuer",
+  "author": "enesor0",
+  "url": "https://huggingface.co/enesor0/valuer",
+  "created_at": "2026-08-23T22:34:38.000Z",
+  "updated_at": "2026-08-23T22:37:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "xgboost",
+    "scikit-learn",
+    "machine-learning",
+    "regression",
+    "tabular",
+    "football",
+    "sports-analytics",
+    "tabular-regression",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2048333,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "valuer/models at main · enesor0/valuer · GitHub",
+      "url": "https://github.com/enesor0/valuer/tree/main/models",
+      "snippet": "Contribute to enesor0/valuer development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - enesor0/valuer",
+      "url": "https://github.com/enesor0/valuer",
+      "snippet": "Contribute to enesor0/valuer development by creating an account on GitHub."
+    },
+    {
+      "title": "Valuer",
+      "url": "https://app.valuer.ai/",
+      "snippet": "I&#x27;m the world&#x27;s first AI model specialised in research and business strategy-related workflows."
+    },
+    {
+      "title": "The 2026 AI Index Report - Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report%C2%A0",
+      "snippet": "AI&#x27;s influence on society has never been more pronounced. At Stanford HAI, we believe AI is poised to be the most transformative technology of the 21st century. But its benefits won&#x27;t be evenly distributed unless we guide its development thoughtfully. The AI Index offers one of the most comprehensive, data-driven views of artificial intelligence. Recognized as a trusted resource by global ..."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

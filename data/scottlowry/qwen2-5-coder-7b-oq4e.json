@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwen2.5-Coder-7B-oQ4e",
+  "slug": "scottlowry-qwen2-5-coder-7b-oq4e",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwen2.5-Coder-7B-oQ4e",
+  "created_at": "2026-08-23T23:50:25.000Z",
+  "updated_at": "2026-08-23T23:52:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1237816832,
+  "parameters_human": "1.24B",
+  "storage_bytes": 4474728796,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottlowry/Qwen2.5-Coder-7B-oQ8e · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen2.5-Coder-7B-oQ8e",
+      "snippet": "Instructions to use scottlowry/Qwen2.5-Coder-7B-oQ8e with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen2.5-Coder-7B-oQ8e with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen2.5-Coder-7B-oQ8e scottlowry/Qwen2.5-Coder-7B-oQ8e Notebooks ..."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-coder:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:7b",
+      "snippet": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "Abstract † In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable ..."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Additionally, the Qwen2.5-Coder-7B-Instruct model outperformed larger models, including CodeStral-22B and DS-Coder-33B-Instruct, highlighting its advanced code reasoning capabilities despite its smaller size."
+    }
+  ]
+}

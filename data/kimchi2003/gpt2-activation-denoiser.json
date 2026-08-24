@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kimchi2003/gpt2-activation-denoiser",
+  "slug": "kimchi2003-gpt2-activation-denoiser",
+  "author": "kimchi2003",
+  "url": "https://huggingface.co/kimchi2003/gpt2-activation-denoiser",
+  "created_at": "2026-08-23T20:56:39.000Z",
+  "updated_at": "2026-08-23T20:56:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "activation-steering",
+    "denoising",
+    "arxiv:2602.06964",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330415397,
+  "storage_human": "330 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gpt2",
+      "snippet": "GPT-2 is a scaled up version of GPT, a causal transformer language model, with 10x more parameters and training data. The model was pretrained on a 40GB dataset to predict the next word in a sequence based on all the previous words. This approach enabled the model to perform many downstream tasks in a zero-shot setting. The blog post released by OpenAI can be found here."
+    },
+    {
+      "title": "openai-community/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZiadiSafouene/GPT2_MI: A causal investigation into how Large ...",
+      "url": "https://github.com/ZiadiSafouene/GPT2_MI",
+      "snippet": "A causal investigation into how Large Language Models encode and utilize Part-of-Speech information. This repository implements Linear Probing, Causal Activation Patching, and Sparse Autoencoder (SAE) feature decomposition to map the \"Syntax Circuit\" of GPT-2 Small. - ZiadiSafouene/GPT2_MI"
+    },
+    {
+      "title": "transformer-debugger/datasets.md at main · openai/transformer ... - GitHub",
+      "url": "https://github.com/openai/transformer-debugger/blob/main/datasets.md",
+      "snippet": "Collated activation datasets This document lists the collated activation datasets that are compatible with the Transformer Debugger. These datasets contain some top-activating examples for each MLP neuron, attention head, and autoencoder latent, as well as the corresponding activations for each token (or token pair) in the example."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

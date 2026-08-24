@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "prane-eth/Safe-LLM",
+  "slug": "prane-eth-safe-llm",
+  "author": "prane-eth",
+  "url": "https://huggingface.co/prane-eth/Safe-LLM",
+  "created_at": "2026-08-23T04:54:04.000Z",
+  "updated_at": "2026-08-23T04:59:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:prane-eth/HarmActions",
+    "base_model:Cactus-Compute/needle2",
+    "base_model:finetune:Cactus-Compute/needle2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13737807,
+  "storage_human": "14 MB",
+  "base_model": "Cactus-Compute/needle2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research Papers by Praneeth Vadlapati - prane-eth.github.io",
+      "url": "https://prane-eth.github.io/papers/",
+      "snippet": "Latest trending AI research papers on LLMs, AI agents, Artificial Intelligence, generative AI, Large Language Models, RAG, AI safety, scalable AI"
+    },
+    {
+      "title": "AI Projects - Praneeth",
+      "url": "https://prane-eth.github.io/AI-projects/",
+      "snippet": "The system classifies agent actions in real time as safe or harmful, enabling enforcement of: data privacy, security policies, ethical constraints, and regulatory compliance. Designed as a model-driven guardrail layer for LLM-powered and tool-using agents."
+    },
+    {
+      "title": "prane-eth (Praneeth Vadlapati) · GitHub",
+      "url": "https://github.com/prane-eth",
+      "snippet": "AI Engineer & Innovator | MIT Certified. prane-eth has 49 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "️ Agent Action Guard: Framework for Safer AI Agents",
+      "url": "https://huggingface.co/blog/prane-eth/agent-action-guard",
+      "snippet": "A Blog post by Praneeth Vadlapati on Hugging Face"
+    },
+    {
+      "title": "AI Reliability Gap: Why Large Language Models are not for Safety ...",
+      "url": "https://huggingface.co/blog/prane-eth/ai-reliability-gap",
+      "snippet": "A Blog post by Praneeth Vadlapati on Hugging Face"
+    }
+  ]
+}

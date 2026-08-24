@@ -5,7 +5,7 @@
   "author": "TheOneWhoWill",
   "url": "https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma-GGUF",
   "created_at": "2026-08-17T19:55:02.000Z",
-  "updated_at": "2026-08-20T09:01:09.000Z",
+  "updated_at": "2026-08-23T00:07:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,13 +25,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 222,
-  "trending_score": 0,
+  "likes": 13,
+  "downloads_30d": 1004,
+  "trending_score": 13,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 38384321152,
-  "storage_human": "38.4 GB",
+  "storage_bytes": 62216387360,
+  "storage_human": "62.2 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf"

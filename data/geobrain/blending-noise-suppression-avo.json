@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GeoBrain/blending-noise-suppression-avo",
+  "slug": "geobrain-blending-noise-suppression-avo",
+  "author": "GeoBrain",
+  "url": "https://huggingface.co/GeoBrain/blending-noise-suppression-avo",
+  "created_at": "2026-08-02T06:44:11.000Z",
+  "updated_at": "2026-08-23T08:45:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seismic",
+    "blending-noise",
+    "deblending",
+    "avo",
+    "common-receiver",
+    "unet",
+    "resunet",
+    "dncnn",
+    "attention-unet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4322848584,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeoBrain/blending-noise-suppression · Hugging Face",
+      "url": "https://huggingface.co/GeoBrain/blending-noise-suppression",
+      "snippet": "GeoBrain / blending-noise-suppression like 0 Follow GeoBrain 11 PyTorch seismic blending-noise deblending unet resunet dncnn attention-unet Model card FilesFiles and versions xet Community Copy to bucket new Blending Noise Suppression Benchmark Task Dataset Models Preprocessing Scripts Upload Outputs Results Dataset Variant T02_comp Dataset ..."
+    },
+    {
+      "title": "GeoBrain/blending-noise-suppression-avo · Hugging Face",
+      "url": "https://huggingface.co/GeoBrain/blending-noise-suppression-avo",
+      "snippet": "GeoBrain / blending-noise-suppression-avo like 0 Follow GeoBrain 12 PyTorch seismic blending-noise deblending avo common-receiver unet resunet dncnn attention-unet Model card FilesFiles and versions xet Community Copy to bucket new AVO Blending Noise Suppression Benchmark Task Dataset Models Preprocessing Scripts Upload Outputs Results Dataset ..."
+    },
+    {
+      "title": "GitHub - GeoBrain-Project/GeoBrain: An End-to-End Differentiable ...",
+      "url": "https://github.com/GeoBrain-Project/GeoBrain",
+      "snippet": "GeoBrain is an open, modular, and extensible platform for Geo scientific B ayesian R easoning with A rtificial In telligence, designed specifically for integrated subsurface modeling. By combining differentiable physics, Bayesian inference, and deep learning, GeoBrain enables end-to-end workflows for subsurface characterization, from geomodeling and rock physics to geophysical simulation and ..."
+    },
+    {
+      "title": "GeoBrain/README.md at main · GeoBrain-Project/GeoBrain",
+      "url": "https://github.com/GeoBrain-Project/GeoBrain/blob/main/README.md",
+      "snippet": "GeoBrain is an open, modular, and extensible platform for Geo scientific B ayesian R easoning with A rtificial In telligence, designed specifically for integrated subsurface modeling. By combining differentiable physics, Bayesian inference, and deep learning, GeoBrain enables end-to-end workflows for subsurface characterization, from geomodeling and rock physics to geophysical simulation and ..."
+    },
+    {
+      "title": "geobrain-project.github.io",
+      "url": "https://geobrain-project.github.io/GeoBrain/_sources/intro.md",
+      "snippet": "# GeoBrain: Differentiable Subsurface Modeling Welcome to the documentation of **GeoBrain**! Here you will find detailed instructions for using the framework. If you want to jump straight to examples, head to the [Tutorials] (tutorials/01_geomodel_sim) section. For the design principles behind GeoBrain, see the [Architecture] (architecture) page. ## What is GeoBrain? **GeoBrain** is an open ..."
+    }
+  ]
+}

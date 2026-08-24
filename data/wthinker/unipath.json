@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Wthinker/UniPath",
+  "slug": "wthinker-unipath",
+  "author": "Wthinker",
+  "url": "https://huggingface.co/Wthinker/UniPath",
+  "created_at": "2026-08-24T04:02:03.000Z",
+  "updated_at": "2026-08-24T04:24:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 910045336,
+  "storage_human": "910 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The UiPath Platform™ for Business Orchestration and Automation | UiPath",
+      "url": "https://www.uipath.com/",
+      "snippet": "Transform enterprise operations with the UiPath Platform™ for business orchestration and automation, enabling AI agents, robots, and people to deliver secure, compliant outcomes at scale."
+    },
+    {
+      "title": "Enterprise AI Model for Every Task, on One Platform | UiPath",
+      "url": "https://www.uipath.com/platform/agentic-automation/agentic-ai/ai-models",
+      "snippet": "Discover enterprise AI model on one governed platform. Connect UiPath and third-party AI models, avoid vendor lock-in, and accelerate AI innovation across your business."
+    },
+    {
+      "title": "UiPath Documentation",
+      "url": "https://docs.uipath.com/",
+      "snippet": "The UiPath Documentation - the home of all our valuable information. Find here everything you need to guide you in your automation journey in the UiPath ecosystem, from complex installation guides to quick tutorials, to practical business examples and automation best practices."
+    },
+    {
+      "title": "UiPath AI Center: Intelligent Automation Guide - Smartbridge",
+      "url": "https://smartbridge.com/uipath-ai-center-intelligent-automation-guide/",
+      "snippet": "Explore the UiPath AI Center and learn how it connects data science with automation for effective deployment of AI models."
+    },
+    {
+      "title": "About agents - UiPath Documentation Portal",
+      "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/about-agents",
+      "snippet": "Agents are dynamic, context-aware systems that operate based on goals. They communicate in natural language, plan their steps, make independent decisions, and escalate to humans when needed. Robots bring stability, compliance, and precision. Together, they enable agentic automation—a new model of automation that blends intelligence with action."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KaedeTai/mlx-mtp-graft",
+  "slug": "kaedetai-mlx-mtp-graft",
+  "author": "KaedeTai",
+  "url": "https://huggingface.co/KaedeTai/mlx-mtp-graft",
+  "created_at": "2026-08-23T11:39:01.000Z",
+  "updated_at": "2026-08-23T13:46:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "mtp",
+    "apple-silicon",
+    "omlx",
+    "mtplx",
+    "qwen",
+    "qwen3.8",
+    "quantization",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 314300890,
+  "storage_human": "314 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youssofal/MTPLX: 3x faster speeds on MLX - GitHub",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "Forge: make your own MTP models Forge takes a Hugging Face repo and turns it into an MTPLX-ready MTP model: convert to MLX, train the MTP adapter, verify that the result is actually faster and still exact, and publish back to the Hub if you want to share it."
+    },
+    {
+      "title": "GitHub - KaedeTai/sovits-mlx: MLX inference port of GPT-SoVITS v2ProTw ...",
+      "url": "https://github.com/KaedeTai/sovits-mlx",
+      "snippet": "An MLX inference port of the GPT-SoVITS v2 (v2ProTw) S2 stage — the spectral decoder/vocoder half of GPT-SoVITS that turns S1 semantic codes + reference audio into a waveform."
+    },
+    {
+      "title": "How to Run MTP Models: Multi-Token Prediction Guide - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/mtp",
+      "snippet": "MTP, or Multi-Token Prediction, speeds up inference by letting a model predict multiple upcoming tokens at once instead of generating one token per step. It enables faster inference without accuracy loss and is especially effective on GPUs. In this guide, you&#x27;ll learn how to use MTP models like Gemma 4 or Qwen3.6 on your local device."
+    },
+    {
+      "title": "KaedeTai/VisionPsy-Nano-460M-MLX · Hugging Face",
+      "url": "https://huggingface.co/KaedeTai/VisionPsy-Nano-460M-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MTPLX · Run local LLMs twice as fast on your Mac",
+      "url": "https://www.mtplx.com/",
+      "snippet": "MTPLX is a free, open source Mac app that runs local LLMs at twice the speed. Native MTP speculative decoding on Apple Silicon. OpenAI and Anthropic compatible."
+    }
+  ]
+}

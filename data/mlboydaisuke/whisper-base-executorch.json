@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Whisper-base-ExecuTorch",
+  "slug": "mlboydaisuke-whisper-base-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Whisper-base-ExecuTorch",
+  "created_at": "2026-08-23T08:45:58.000Z",
+  "updated_at": "2026-08-23T13:35:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-base",
+    "base_model:quantized:openai/whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 768926519,
+  "storage_human": "769 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Whisper-tiny-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Whisper-tiny-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ExecuTorch Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo",
+      "snippet": "PyTorch models exported to ExecuTorch .pte for on-device inference — XNNPACK (CPU, portable) and Core ML builds, each parity-checked."
+    },
+    {
+      "title": "executorch/examples/models/whisper/README.md at main - GitHub",
+      "url": "https://github.com/pytorch/executorch/blob/main/examples/models/whisper/README.md",
+      "snippet": "This directory hosts a lightweight C++ helper that drives Whisper models exported to ExecuTorch. The AsrRunner owns the Module instance that wraps a bundled .pte program and optional .ptd weight file, loads the encoder and text_decoder methods, and exposes a transcribe () loop that streams decoded text pieces through a callback. The runner assumes: model.pte contains both Whisper encoder and ..."
+    },
+    {
+      "title": "GitHub - pytorch/executorch: On-device AI across mobile, embedded and ...",
+      "url": "https://github.com/pytorch/executorch",
+      "snippet": "ExecuTorch On-device AI inference powered by PyTorch ExecuTorch is PyTorch&#x27;s unified solution for deploying AI models on-device—from smartphones to microcontrollers—built for privacy, performance, and portability. It powers Meta&#x27;s on-device AI across Instagram, WhatsApp, Quest 3, Ray-Ban Meta Smart Glasses, and more."
+    },
+    {
+      "title": "ExecuTorch - On-Device AI Inference Powered by PyTorch",
+      "url": "https://executorch.ai/",
+      "snippet": "ExecuTorch is PyTorch&#x27;s unified solution for deploying AI models on-device—from smartphones to microcontrollers. Deploy LLMs, vision, speech, and multimodal models with the same PyTorch APIs."
+    }
+  ]
+}

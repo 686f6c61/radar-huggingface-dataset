@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Aydin34378/AI-Emag-aydin",
+  "slug": "aydin34378-ai-emag-aydin",
+  "author": "Aydin34378",
+  "url": "https://huggingface.co/Aydin34378/AI-Emag-aydin",
+  "created_at": "2026-08-23T10:40:11.000Z",
+  "updated_at": "2026-08-23T10:40:11.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI image detector — check if a photo or image is AI-generated — amige.",
+      "url": "https://amige.app/ai-image-detector",
+      "snippet": "free AI image detector. drop in a photo, illustration or AI-art and amige. runs it through several independent detectors, names the most likely model, and reads C2PA + SynthID provenance, with the limits stated plainly. is it real? or is it?"
+    },
+    {
+      "title": "AYDIN_Ai (@aydin_ai8) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aydin_ai8/",
+      "snippet": "72 Followers, 97 Following, 13 Posts - AYDIN_Ai (@aydin_ai8) on Instagram: \"\""
+    },
+    {
+      "title": "GitHub - royerlab/aydin: Aydin — User-friendly, Fast, Self-Supervised ...",
+      "url": "https://github.com/royerlab/aydin",
+      "snippet": "Aydin is a user-friendly, feature-rich, and fast image denoising tool that provides a number of self-supervised, auto-tuned, and unsupervised image denoising algorithms. Aydin handles from the get-go n-dimensional array-structured images with an arbitrary number of batch dimensions, channel dimensions, and typically up to 4 spatio-temporal dimensions. It comes with Aydin Studio a graphical ..."
+    },
+    {
+      "title": "aydin♥️ (@model_aydin) • Instagram photos and videos",
+      "url": "https://www.instagram.com/model_aydin/",
+      "snippet": "9,048 Followers, 136 Following, 27 Posts - See Instagram photos and videos from aydin♥️ (@model_aydin)"
+    },
+    {
+      "title": "Gemini AI Image Generator & Photo Editor - Nano Banana 2",
+      "url": "https://gemini.google/gb/overview/image-generation/?hl=en-GB",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and remix photos into endless new creations. Unlock your vision."
+    }
+  ]
+}

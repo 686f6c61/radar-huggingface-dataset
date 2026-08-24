@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shishir8429/Shishir_GPT_PPO_RLHF",
+  "slug": "shishir8429-shishir_gpt_ppo_rlhf",
+  "author": "shishir8429",
+  "url": "https://huggingface.co/shishir8429/Shishir_GPT_PPO_RLHF",
+  "created_at": "2026-08-23T10:20:00.000Z",
+  "updated_at": "2026-08-23T10:30:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1525077231,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 8429shishir/GPT2-trained-using-RLHF-main",
+      "url": "https://github.com/8429shishir/GPT2-trained-using-RLHF-main/tree/main",
+      "snippet": "And the answer is YES! With RLHF, evaluation shows that ChatGPT prefers the aligned GPT-2 outputs for 96% of times over the vanilla GPT-2 outputs, and 88% times over the supervised fine-tuning baseline. Please see the technical report for more details."
+    },
+    {
+      "title": "GPT2-trained-using-RLHF-main/src/train_ppo.py at main - GitHub",
+      "url": "https://github.com/8429shishir/GPT2-trained-using-RLHF-main/blob/main/src/train_ppo.py",
+      "snippet": "Contribute to 8429shishir/GPT2-trained-using-RLHF-main development by creating an account on GitHub."
+    },
+    {
+      "title": "The N Implementation Details of RLHF with PPO - Hugging Face",
+      "url": "https://huggingface.co/blog/the_n_implementation_details_of_rlhf_with_ppo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenRLHF: An Easy-to-use, Scalableand High-performance RLHF Framework",
+      "url": "https://arxiv.org/html/2405.11143v6",
+      "snippet": "The foundational RLHF framework trains a reward model using human preference data and optimizes the language model with reinforcement learning algorithms, such as PPO [15]. This approach has been successfully deployed in prominent models, including InstructGPT [16], ChatGPT, and GPT-4 [5]."
+    },
+    {
+      "title": "The N Implementation Details of RLHF with PPO",
+      "url": "https://iclr-blogposts.github.io/2024/blog/the-n-implementation-details-of-rlhf-with-ppo/",
+      "snippet": "The N Implementation Details of RLHF with PPO Reinforcement Learning from Human Feedback (RLHF) is pivotal in the modern application of language modeling, as exemplified by ChatGPT. This blog post delves into an in-depth exploration of RLHF, attempting to reproduce the results from OpenAI&#x27;s inaugural RLHF paper, published in 2019. Our detailed examination provides valuable insights into the ..."
+    }
+  ]
+}

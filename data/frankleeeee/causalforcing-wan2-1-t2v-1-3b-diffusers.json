@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "frankleeeee/CausalForcing-Wan2.1-T2V-1.3B-Diffusers",
+  "slug": "frankleeeee-causalforcing-wan2-1-t2v-1-3b-diffusers",
+  "author": "frankleeeee",
+  "url": "https://huggingface.co/frankleeeee/CausalForcing-Wan2.1-T2V-1.3B-Diffusers",
+  "created_at": "2026-08-23T07:34:41.000Z",
+  "updated_at": "2026-08-23T07:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "causal-forcing",
+    "autoregressive-video-diffusion",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "license:apache-2.0",
+    "diffusers:CausalForcingPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418996800,
+  "parameters_human": "1.42B",
+  "storage_bytes": 26090727112,
+  "storage_human": "26.1 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.1: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "snippet": "In this repository, we present Wan2.1, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. Wan2.1 offers these key features: If your work has improved Wan2.1 and you would like more people to see it, please inform us. The 1.3B model is capable of ..."
+    },
+    {
+      "title": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers at main - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.1-T2V-1.3B · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "GitHub - infracritical/ai-Wan2.1: Wan: Open and Advanced Large-Scale ...",
+      "url": "https://github.com/infracritical/ai-Wan2.1",
+      "snippet": "EchoShot, a native multi-shot portrait video generation model based on Wan2.1-T2V-1.3B, allows generation of multiple video clips featuring the same character as well as highly flexible content controllability."
+    }
+  ]
+}

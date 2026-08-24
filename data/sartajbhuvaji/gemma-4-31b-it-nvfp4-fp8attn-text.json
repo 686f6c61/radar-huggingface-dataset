@@ -5,7 +5,7 @@
   "author": "sartajbhuvaji",
   "url": "https://huggingface.co/sartajbhuvaji/Gemma-4-31B-IT-NVFP4-FP8attn-text",
   "created_at": "2026-08-22T23:09:46.000Z",
-  "updated_at": "2026-08-22T23:11:55.000Z",
+  "updated_at": "2026-08-23T04:36:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 20292849980,
   "parameters_human": "20.29B",

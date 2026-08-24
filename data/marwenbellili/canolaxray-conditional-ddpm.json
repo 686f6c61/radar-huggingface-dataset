@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MarwenBellili/canolaxray-conditional-DDPM",
+  "slug": "marwenbellili-canolaxray-conditional-ddpm",
+  "author": "MarwenBellili",
+  "url": "https://huggingface.co/MarwenBellili/canolaxray-conditional-DDPM",
+  "created_at": "2026-08-24T08:48:11.000Z",
+  "updated_at": "2026-08-24T10:16:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "diffusion",
+    "ddpm",
+    "conditional-generation",
+    "image-to-image",
+    "scientific-imaging",
+    "x-ray",
+    "agriculture",
+    "seed-phenotyping",
+    "pytorch",
+    "unconditional-image-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1726629397,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conditional Denoising Diffusion Probabilistic Models for Data ...",
+      "url": "https://arxiv.org/html/2310.19460v2",
+      "snippet": "Abstract In this paper, conditional denoising diffusion probabilistic models (DDPMs) are proposed to enhance the data transmission and reconstruction over wireless channels. The underlying mechanism of DDPM is to decompose the data generation process over the so-called \"denoising\" steps."
+    },
+    {
+      "title": "Conditional DDPM - GitHub",
+      "url": "https://github.com/byrkbrk/conditional-ddpm",
+      "snippet": "Conditional DDPM Introduction We implement a simple conditional form of Diffusion Model described in Denoising Diffusion Probabilistic Models, in PyTorch. Preparing this repository, we inspired by the course How Diffusion Models Work and the repository minDiffusion."
+    },
+    {
+      "title": "diffusion_model_sampling.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/bgalerne/caen2024_BIP_AI4science/blob/main/diffusion_model_sampling.ipynb",
+      "snippet": "Diffusion models: Sampling and conditional sampling of a pretrained DDPM model"
+    },
+    {
+      "title": "[2006.11239] Denoising Diffusion Probabilistic Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2006.11239",
+      "snippet": "We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and ..."
+    },
+    {
+      "title": "InDepth Guide to Denoising Diffusion Probabilistic Models DDPM",
+      "url": "https://learnopencv.com/denoising-diffusion-probabilistic-models/",
+      "snippet": "An in-depth explanation of the theory and math behind denoising diffusion probabilistic models (DDPMs) and implementing them from scratch in PyTorch."
+    }
+  ]
+}

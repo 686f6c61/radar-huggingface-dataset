@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "varunkaza20/telugu-sentiment",
+  "slug": "varunkaza20-telugu-sentiment",
+  "author": "varunkaza20",
+  "url": "https://huggingface.co/varunkaza20/telugu-sentiment",
+  "created_at": "2026-08-23T11:46:09.000Z",
+  "updated_at": "2026-08-23T11:46:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043651,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112198252,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aashish-249/Telugu-sentiment_analysis · Hugging Face",
+      "url": "https://huggingface.co/aashish-249/Telugu-sentiment_analysis",
+      "snippet": "Telugu-sentiment_analysis This model is a fine-tuned version of roberta-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Mani12072/Fine-Tuning-BERT-for-Telugu-Sentiment-Classification-",
+      "url": "https://github.com/Mani12072/Fine-Tuning-BERT-for-Telugu-Sentiment-Classification-",
+      "snippet": "This web app classifies Telugu text input as Positive, Neutral, or Negative using a BERT-based model fine-tuned specifically for Telugu sentiment analysis. The interface supports user input, displays example sentences, validates for Telugu characters, and presents results with styled UI components including emojis and a beautiful background image."
+    },
+    {
+      "title": "mounikaiiith/Telugu_Sentiment · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mounikaiiith/Telugu_Sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tuning-BERT-for-Telugu-Sentiment-Classification--main",
+      "url": "https://github.com/Bhanutejanallamothu/Teluguai/tree/main/Fine-Tuning-BERT-for-Telugu-Sentiment-Classification--main",
+      "snippet": "This project involves fine-tuning a BERT model for sentiment classification on Telugu language text data. It demonstrates the full pipeline from data loading and preprocessing to model training and evaluation using Hugging Face&#x27;s Transformers and Datasets libraries."
+    },
+    {
+      "title": "Sentiment Analysis on Telugu Text Data",
+      "url": "https://kanth-reddy.github.io/Sentiment_Analysis_of_Telugu/",
+      "snippet": "We use the Telugu Sentiment Dataset from Hugging Face, which contains labeled Telugu text data for sentiment classification. Project Structure data/: Contains the dataset (downloaded or preprocessed) notebooks/: Jupyter notebooks for exploratory data analysis and model prototyping lexicon/: Contains the Positive and negative Sentence Models ..."
+    }
+  ]
+}

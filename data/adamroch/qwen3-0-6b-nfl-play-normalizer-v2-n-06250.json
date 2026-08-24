@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-06250",
+  "slug": "adamroch-qwen3-0-6b-nfl-play-normalizer-v2-n-06250",
+  "author": "AdamRoch",
+  "url": "https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-06250",
+  "created_at": "2026-08-24T08:44:34.000Z",
+  "updated_at": "2026-08-24T08:44:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "nfl",
+    "structured-output",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51850987,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdamRoch/qwen3-0.6b-nfl-play-normalizer-qlora · Hugging Face",
+      "url": "https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AdamRoch (Adam Roch) - Hugging Face",
+      "url": "https://huggingface.co/AdamRoch/datasets",
+      "snippet": "Recent Activity updated a modelabout 6 hours ago AdamRoch/qwen3-.6b-nfl-play-normalizer-qlora updated a datasetabout 6 hours ago AdamRoch/nfl-play-normalization-2019-2022 published a modelabout 6 hours ago AdamRoch/qwen3-.6b-nfl-play-normalizer-qlora View all activity"
+    },
+    {
+      "title": "GitHub - vmeoc/FineTuningQwen3-0.6B",
+      "url": "https://github.com/vmeoc/FineTuningQwen3-0.6B",
+      "snippet": "This guide explains step by step how to fine-tune the base model Qwen/Qwen3-.6B-Base on the databricks/databricks-dolly-15k dataset with QLoRA, and how to load the adapter for inference."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

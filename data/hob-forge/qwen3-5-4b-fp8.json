@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hob-forge/Qwen3.5-4B-FP8",
+  "slug": "hob-forge-qwen3-5-4b-fp8",
+  "author": "Hob-forge",
+  "url": "https://huggingface.co/Hob-forge/Qwen3.5-4B-FP8",
+  "created_at": "2026-08-24T10:27:28.000Z",
+  "updated_at": "2026-08-24T10:49:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fp8",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 5660921150,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hob-forge/Qwen3.5-4B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Hob-forge/Qwen3.5-4B-Instruct-GGUF",
+      "snippet": "Qwen3.5-4B-Instruct — Hob Forge Edition (GGUF) Qwen&#x27;s excellent 4B, set up correctly for small GPUs and modest RAM — with everything measured, nothing projected. This is a Hob Forge edition: we didn&#x27;t train this model (all credit to Qwen, Apache-2.0); we quantized it with a current toolchain, verified the chat template and tool-calling actually work, measured speed / memory / quality-loss ..."
+    },
+    {
+      "title": "RedHatAI/Qwen3.5-4B-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.5-4B-FP8-dynamic",
+      "snippet": "Creation This model was created by applying LLM Compressor using data-free FP8 dynamic quantization, as presented in the code snippet below."
+    },
+    {
+      "title": "Qwen3.5 4B FP8 by Qwen (Alibaba) — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-4b-fp8",
+      "snippet": "A compact multimodal model that punches at its weight class — handling both text and image inputs with the efficiency you&#x27;d expect from a quantized 4B parameter architecture. The FP8 precision keeps memory footprint lean while preserving reasonable capability, though the trade-offs of aggressive quantization on a smaller model mean complex reasoning tasks may show more strain than larger ..."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5 compact dense multimodal model (4B) — fits on 16 GB consumer GPUs with full 262K context or one Xeon 6 NUMA node"
+    }
+  ]
+}

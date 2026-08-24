@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-vanilla-step1200",
+  "slug": "sandeep123-sqa-grpo-vanilla-step1200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200",
+  "created_at": "2026-08-24T09:57:48.000Z",
+  "updated_at": "2026-08-24T10:03:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/grpo-math20-vanilla-step1160 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/grpo-math20-vanilla-step1160",
+      "snippet": "grpo-math20-vanilla-step1160 GRPO fine-tune of Qwen/Qwen2.5-Math-1.5B on MATH (lighteval), trained with verl. Selected as the best-validation checkpoint for this arm by measured pass@1."
+    },
+    {
+      "title": "sandeep123 · GitHub",
+      "url": "https://github.com/sandeep123",
+      "snippet": "GitHub is where sandeep123 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "sandeep123-ai · GitHub",
+      "url": "https://github.com/sandeep123-ai",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Group Relative Policy Optimization (GRPO) — verl documentation",
+      "url": "https://verl.readthedocs.io/en/latest/algo/grpo.html",
+      "snippet": "Group Relative Policy Optimization (GRPO) Last updated: 05/31/2025. In reinforcement learning, classic algorithms like PPO rely on a \"critic\" model to estimate the value of actions, guiding the learning process. However, training this critic model can be resource-intensive. GRPO simplifies this process by eliminating the need for a separate critic model. Instead, it operates as follows ..."
+    },
+    {
+      "title": "【万字长文】VERL框架实战GRPO算法详解：从配置到代码实现!_verl grpo-CSDN博客",
+      "url": "https://blog.csdn.net/m0_59162248/article/details/152924016",
+      "snippet": "文章浏览阅读4.2k次，点赞13次，收藏23次。本文详细解析了VERL框架下GRPO算法的实现流程，从关键配置参数到代码实践，包括序列生成、奖励计算、logp计算、优势函数计算和策略更新等核心步骤。文章深入探讨了算法的技术细节，并提供实战案例，是学习大模型强化后训练的宝贵资料。_verl grpo"
+    }
+  ]
+}

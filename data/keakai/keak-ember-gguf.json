@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "keakai/keak-ember-GGUF",
+  "slug": "keakai-keak-ember-gguf",
+  "author": "keakai",
+  "url": "https://huggingface.co/keakai/keak-ember-GGUF",
+  "created_at": "2026-08-02T20:02:36.000Z",
+  "updated_at": "2026-08-23T11:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "ca"
+  ],
+  "tags": [
+    "gguf",
+    "keak",
+    "on-device",
+    "dictation",
+    "speech",
+    "text-generation",
+    "en",
+    "es",
+    "ca",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 974,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 5537045568,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keakai/keak-ember-GGUF · Hugging Face",
+      "url": "https://huggingface.co/keakai/keak-ember-GGUF",
+      "snippet": "keakai / keak-ember-GGUF like 0 Follow Keak 1 Text Generation GGUF English Spanish Catalan keak on-device dictation speech License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Keak Ember 1 Why it exists Numbers guard is 1.000, and that is the number to look at Use it How it was made What it is bad at Known ..."
+    },
+    {
+      "title": "keakai (Keak) - Hugging Face",
+      "url": "https://huggingface.co/keakai",
+      "snippet": "Small models built for voice. They clean up dictation, turn speech into actions and answer out loud. On your own computer, offline and free. Everything that runs on your machine is open weight, ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: Kimi K3, deepseek v4 ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "GGUF Model Discovery A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Live site: https://local-ai-zone.github.io"
+    }
+  ]
+}

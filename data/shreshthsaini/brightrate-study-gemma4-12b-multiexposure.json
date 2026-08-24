@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shreshthsaini/brightrate-study-gemma4-12b-multiexposure",
+  "slug": "shreshthsaini-brightrate-study-gemma4-12b-multiexposure",
+  "author": "shreshthsaini",
+  "url": "https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-multiexposure",
+  "created_at": "2026-08-24T08:20:04.000Z",
+  "updated_at": "2026-08-24T08:20:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262373216,
+  "storage_human": "262 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "BrightRate-LM/src/infer_gemma4.py at main · shreshthsaini ... - GitHub",
+      "url": "https://github.com/shreshthsaini/BrightRate-LM/blob/main/src/infer_gemma4.py",
+      "snippet": "Code and models for HDR video quality assessment. Contribute to shreshthsaini/BrightRate-LM development by creating an account on GitHub."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss. Parameter sizes and quantization Gemma 4 models are available in 5 parameter sizes: E2B, E4B, 12B, 31B and 26B A4B."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.02770",
+      "snippet": "Gemma 4 Technical Report Gemma Team, Google DeepMind1 We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    }
+  ]
+}

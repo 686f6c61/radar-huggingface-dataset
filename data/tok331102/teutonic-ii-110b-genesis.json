@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Tok331102/teutonic-II-110B-genesis",
+  "slug": "tok331102-teutonic-ii-110b-genesis",
+  "author": "Tok331102",
+  "url": "https://huggingface.co/Tok331102/teutonic-II-110B-genesis",
+  "created_at": "2026-08-24T15:28:07.000Z",
+  "updated_at": "2026-08-24T15:28:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "causal-lm",
+    "decentralized-training",
+    "bittensor",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110280865472,
+  "parameters_human": "110.28B",
+  "storage_bytes": 220577441461,
+  "storage_human": "220.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teutonic-II-110B-A7B-5ev3rrdend-cl0 - Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/teutonic-II-110B-A7B-5ev3rrdend-cl0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tok331102 (amarsesin) - Hugging Face",
+      "url": "https://huggingface.co/Tok331102/models",
+      "snippet": "Tok331102&#x27;s models102 Sort: Recently updated Tok331102/chrono-gpt-v33-2013 2B•Updated 5 days ago• 11"
+    },
+    {
+      "title": "const on X: \"Training is permissionless (\"you can join\") and ...",
+      "url": "https://x.com/const_reborn/status/2091896289302642949",
+      "snippet": "Announcing Teutonic-II-110B: a frontier permissionless training of a 110B LLM We are scaling 10x beyond our previous model and 50% larger than any prior decentralized run."
+    },
+    {
+      "title": "Teutonic",
+      "url": "https://teutonic.ai/",
+      "snippet": "Teutonic (Bittensor SN3): decentralized LLM pretraining through king-of-the-hill competition. Live king lineage, duel record, and benchmark scores."
+    },
+    {
+      "title": "const on X: \"We use a digital currency reward because we believe that ...",
+      "url": "https://x.com/const_reborn/status/2091896293970821317",
+      "snippet": "Announcing Teutonic-II-110B: a frontier permissionless training of a 110B LLM We are scaling 10x beyond our previous model and 50% larger than any prior decentralized run."
+    }
+  ]
+}

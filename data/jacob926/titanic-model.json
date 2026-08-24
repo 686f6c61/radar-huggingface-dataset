@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jacob926/titanic-model",
+  "slug": "jacob926-titanic-model",
+  "author": "jacob926",
+  "url": "https://huggingface.co/jacob926/titanic-model",
+  "created_at": "2026-08-24T08:32:27.000Z",
+  "updated_at": "2026-08-24T08:32:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jacob926/Titanic",
+      "url": "https://github.com/jacob926/Titanic",
+      "snippet": "Contribute to jacob926/Titanic development by creating an account on GitHub."
+    },
+    {
+      "title": "Abdalmomen123/titanic-ai-model - GitHub",
+      "url": "https://github.com/Abdalmomen123/titanic-ai-model",
+      "snippet": "🚢 Titanic Survival Prediction (TensorFlow / Keras) 📌 Project Overview This project builds a machine learning classification model using TensorFlow 2.x and Keras to predict passenger survival on the Titanic dataset."
+    },
+    {
+      "title": "UncertainPrinciple/titanic-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/UncertainPrinciple/titanic-model-v1",
+      "snippet": "Titanic Survival Predictor 🚢 This project is a simple AI application that predicts a passenger&#x27;s survival chances on the Titanic based on their characteristics. The model was trained using scikit-learn and deployed on Hugging Face Spaces with Gradio."
+    },
+    {
+      "title": "Titanic: Using a Pretrained Kaggle Model",
+      "url": "https://www.kaggle.com/code/jacobegarcia/titanic-using-a-pretrained-kaggle-model",
+      "snippet": "Titanic: using a pretrained Kaggle Model ¶ This notebook loads the Titanic Survival Baselines model from the Kaggle Model Hub and uses it to score the competition test set, rather than training from scratch in the notebook. The model ships as a complete sklearn.pipeline.Pipeline, so feature preprocessing travels with it. The only thing this notebook has to reproduce is the feature engineering ..."
+    },
+    {
+      "title": "Titanic Survival Project - 23yem.github.io",
+      "url": "https://23yem.github.io/Titanic_Website_V2/Neural_Network.html",
+      "snippet": "The model creation phase involves designing and developing the neural network structure, followed by careful training and fine-tuning. This process is guided by TensorFlow&#x27;s capabilities, ensuring that the model is well-architected and optimized."
+    }
+  ]
+}

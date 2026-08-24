@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Luna002-Luna75/dama-aibrain",
+  "slug": "luna002-luna75-dama-aibrain",
+  "author": "Luna002-Luna75",
+  "url": "https://huggingface.co/Luna002-Luna75/dama-aibrain",
+  "created_at": "2026-08-21T15:12:53.000Z",
+  "updated_at": "2026-08-23T08:34:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 399,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 20500688630,
+  "storage_human": "20.5 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luna002-Luna75/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75/dama-aibrain",
+      "snippet": "Luna002-Luna75 / dama-aibrain like 0 Image-Text-to-Text Transformers Safetensors English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Dama Aibrain - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/luna002-luna75/dama-aibrain",
+      "snippet": "Registry entry for model Dama Aibrain; source metadata pending."
+    },
+    {
+      "title": "Luna002-Luna75 (EUN HEE LEE) - Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75",
+      "snippet": "Luna002-Luna75/Luna002-Luna75LUNA-ai-Brain-v2 Image-Text-to-Text • 5B•Updated about 4 hours ago"
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Luna002-Luna75/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    }
+  ]
+}

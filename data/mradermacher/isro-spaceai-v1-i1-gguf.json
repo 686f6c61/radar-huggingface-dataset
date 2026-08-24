@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "mradermacher/isro-spaceai-v1-i1-GGUF",
+  "slug": "mradermacher-isro-spaceai-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/isro-spaceai-v1-i1-GGUF",
+  "created_at": "2026-08-23T13:52:20.000Z",
+  "updated_at": "2026-08-23T16:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "space",
+    "isro",
+    "nasa",
+    "aditya-l1",
+    "chandrayaan-3",
+    "oceansat-3",
+    "calcofi",
+    "oceanography",
+    "sentinel-1",
+    "sar",
+    "radar",
+    "flood",
+    "astrophysics",
+    "astronomy",
+    "cosmology",
+    "remote-sensing",
+    "kepler",
+    "exoplanet",
+    "heliophysics",
+    "qlora",
+    "fp16",
+    "text-generation",
+    "en",
+    "hi",
+    "dataset:UniverseTBD/arxiv-qa-astro-ph",
+    "dataset:Anoopsingh53/isro-space-ocean-dataset",
+    "base_model:Anoopsingh53/ISRO-SpaceAI-7B-Instruct",
+    "base_model:quantized:Anoopsingh53/ISRO-SpaceAI-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88970499808,
+  "storage_human": "89.0 GB",
+  "base_model": "Anoopsingh53/ISRO-SpaceAI-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/isro-spaceai-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/isro-spaceai-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/isro-spaceai-v1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/isro-spaceai-v1-GGUF/tree/main",
+      "snippet": "isro nasa aditya-l1 chandrayaan chandrayaan-3 astrophysics astronomy cosmology oceansat oceansat-3 calcofi oceanography sentinel-1 sar radar flood remote-sensing earth-observation kepler exoplanet space-weather solar-flare suit heliophysics multimodal sonification qlora fp16 national-space-day india conversational License:apache-2.0 Model card ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

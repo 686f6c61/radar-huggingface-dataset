@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vihaankumar/model_562734402_deit_tiny",
+  "slug": "vihaankumar-model_562734402_deit_tiny",
+  "author": "vihaankumar",
+  "url": "https://huggingface.co/vihaankumar/model_562734402_deit_tiny",
+  "created_at": "2026-08-23T08:10:28.000Z",
+  "updated_at": "2026-08-23T08:10:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "co-attention",
+    "deit",
+    "instancenorm",
+    "linear",
+    "onecycle",
+    "retrieval",
+    "swish",
+    "tiny",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/deit-tiny-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/facebook/deit-tiny-patch16-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/facebook-deit-tiny-distilled-patch16-224",
+      "snippet": "facebook/deit-tiny-distilled-patch16-224 powered by Hugging Face Inference Toolkit Original Model Card image-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "deit-tiny-patch16-224 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/deit-tiny-patch16-224/",
+      "snippet": "What is deit-tiny-patch16-224? DeiT-tiny is a data-efficient Vision Transformer (ViT) model designed for image classification tasks. Developed by Facebook Research, it represents a more efficient approach to training transformer models for computer vision. The model processes images as 16x16 pixel patches and operates at a 224x224 resolution."
+    },
+    {
+      "title": "deit-tiny-distilled-patch16-224 · Models",
+      "url": "https://www.modelscope.cn/models/facebook/deit-tiny-distilled-patch16-224",
+      "snippet": "Distilled Data-efficient Image Transformer (tiny-sized model) Distilled data-efficient Image Transformer (DeiT) model pre-trained and fine-tuned on ImageNet-1k (1 million images, 1,000 classes) at resolution 224x224. It was first introduced in the paper Training data-efficient image transformers & distillation through attention by Touvron et al. and first released in this repository. However ..."
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "Usage tips Compared to ViT, DeiT models use a so-called distillation token to effectively learn from a teacher (which, in the DeiT paper, is a ResNet like-model). The distillation token is learned through backpropagation, by interacting with the class ( [CLS]) and patch tokens through the self-attention layers."
+    }
+  ]
+}

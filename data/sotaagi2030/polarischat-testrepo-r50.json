@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/PolarisChat-TestRepo-r50",
+  "slug": "sotaagi2030-polarischat-testrepo-r50",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/PolarisChat-TestRepo-r50",
+  "created_at": "2026-08-23T21:59:04.000Z",
+  "updated_at": "2026-08-23T21:59:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-24T05:26:16.401Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/PolarisChat-TestRepo-r50 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/PolarisChat-TestRepo-r50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - polarisagi/polaris",
+      "url": "https://github.com/polarisagi/polaris",
+      "snippet": "Most AI agents are built around an infinite loop: keep asking the LLM \"what&#x27;s next\" and let the model decide where the system goes. This is like a car with no brakes — one hallucination and the whole task can spiral or collapse. Polaris strips the model of control over execution flow entirely. Every step is governed by a deterministic finite state machine (FSM) written in Go: when to proceed ..."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

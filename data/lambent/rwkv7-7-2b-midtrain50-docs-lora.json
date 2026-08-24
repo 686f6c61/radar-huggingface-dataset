@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Lambent/RWKV7-7.2B-midtrain50-docs-lora",
+  "slug": "lambent-rwkv7-7-2b-midtrain50-docs-lora",
+  "author": "Lambent",
+  "url": "https://huggingface.co/Lambent/RWKV7-7.2B-midtrain50-docs-lora",
+  "created_at": "2026-08-24T11:44:58.000Z",
+  "updated_at": "2026-08-24T11:50:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dataset:Sefaria/hebrew_library",
+    "dataset:community-datasets/hebrew_this_world",
+    "dataset:wikimedia/wikisource",
+    "dataset:manu/project_gutenberg",
+    "dataset:open-web-math/open-web-math",
+    "dataset:typeof/algebraic-stack",
+    "dataset:tokyotech-llm/swallow-math-v2",
+    "dataset:bigcode/starcoderdata",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:recursal/arXiv-CC0-v0.5",
+    "dataset:recursal/SuperWikiNEXT-32B",
+    "dataset:epfml/FineWeb2-HQ",
+    "dataset:Lambent/fineweb2-hq-seeds",
+    "base_model:RWKV/RWKV7-7.2B-20260805",
+    "base_model:finetune:RWKV/RWKV7-7.2B-20260805",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1208010272,
+  "storage_human": "1.2 GB",
+  "base_model": "RWKV/RWKV7-7.2B-20260805",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lambent/RWKV7-1.5B-midtrain50-docs-lora · Hugging Face",
+      "url": "https://huggingface.co/Lambent/RWKV7-1.5B-midtrain50-docs-lora",
+      "snippet": "Long documents with varying forms of long-range dependencies for the objective, replay data, and a dash of extra math and code thrown in. Rank 128 LoRA adapter for long context training, 50.0M tokens, 180 steps, whole-document training with 32k gradient windows (docs ≤256k). 5e-5 learning rate, WSD schedule."
+    },
+    {
+      "title": "fla-hub/rwkv7-7.2B-g0 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-7.2B-g0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RWKV-LM/Research/rwkv7-g0-7.2b.md at main - GitHub",
+      "url": "https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md",
+      "snippet": "We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding."
+    },
+    {
+      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "snippet": "RWKV-7 7.2B bf16 training on 4x8xH100 ctx10240 DeepSpeed zero2+gradcp = 270k tokens/s = 37% MFU (note: current RWKV7 kernel gets faster as you increase Bsz*HeadCount)"
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    }
+  ]
+}

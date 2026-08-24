@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/Ling-3.0-flash-Q9",
+  "slug": "inferencerlabs-ling-3-0-flash-q9",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/Ling-3.0-flash-Q9",
+  "created_at": "2026-08-23T23:59:08.000Z",
+  "updated_at": "2026-08-24T00:52:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "bailing_hybrid",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140026153101,
+  "storage_human": "140.0 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "inferencerlabs (Inferencer) - Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs",
+      "snippet": "Sort: Recently updated. inferencerlabs/Ornith-1.-397B-MLX-Q9. Image-Text-to-Text • Updated 3 days ago • 2k • 3"
+    },
+    {
+      "title": "Ling-3.0-flash - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/inclusionai/ling-3.0-flash-20260723",
+      "snippet": "Ling-3.0-flash, an inclusionai 124B-parameter Mixture-of-Experts (MoE) model, demonstrates strong performance in speed, typically ranking among the fastest models with a 78th percentile across eight benchmarks."
+    },
+    {
+      "title": "Ling 3.0 Flash - a Hugging Face Space by akhaliq",
+      "url": "https://huggingface.co/spaces/akhaliq/ling-3.0-flash",
+      "snippet": "Reasoning is passed back so the model thinks continuously across turns."
+    },
+    {
+      "title": "Ling 3.0 Flash model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/inclusionai/ling-3.0-flash",
+      "snippet": "Ling-3.0-flash is a 124B-parameter Mixture-of-Experts model with approximately 5.1B parameters active per token. It prioritizes token efficiency and production-scale agentic inference, helping coding and tool-using agents complete more work within constrained latency and serving budgets."
+    }
+  ]
+}

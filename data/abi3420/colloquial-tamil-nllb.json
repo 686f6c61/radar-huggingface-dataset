@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "abi3420/colloquial-tamil-nllb",
+  "slug": "abi3420-colloquial-tamil-nllb",
+  "author": "abi3420",
+  "url": "https://huggingface.co/abi3420/colloquial-tamil-nllb",
+  "created_at": "2026-08-23T16:03:38.000Z",
+  "updated_at": "2026-08-24T04:25:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 4985190459,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abi3420 (Abi) - Hugging Face",
+      "url": "https://huggingface.co/abi3420/models",
+      "snippet": "Sort: Recently updated . abi3420/ollama-q4_k_m-LFM2-2.6B. 3B • Updated about 11 hours ago. System theme . Company"
+    },
+    {
+      "title": "abi3420 (Abi) - Hugging Face",
+      "url": "https://huggingface.co/abi3420/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 34 minutes ago ... published a Space 35 minutes ago"
+    },
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    },
+    {
+      "title": "Meta AI Research Topic - No Language Left Behind",
+      "url": "https://ai.meta.com/research/no-language-left-behind/",
+      "snippet": "No Language Left Behind (NLLB) is a first-of-its-kind, AI breakthrough project that open-sources models capable of delivering evaluated, high-quality translations directly between 200 languages—including low-resource languages like Asturian, Luganda, Urdu and more. It aims to give people the opportunity to access and share web content in their native language, and communicate with anyone ..."
+    },
+    {
+      "title": "No Language Left Behind: Scaling Human-Centered Machine Translation",
+      "url": "https://research.facebook.com/publications/no-language-left-behind/",
+      "snippet": "Our model achieves an improvement of 44% BLEU relative to the previous state-of-the-art, laying important groundwork towards realizing a universal translation system. Finally, we open source all contributions described in this work, accessible here."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Luna002-Luna75/ppo-pusher-v5",
+  "slug": "luna002-luna75-ppo-pusher-v5",
+  "author": "Luna002-Luna75",
+  "url": "https://huggingface.co/Luna002-Luna75/ppo-pusher-v5",
+  "created_at": "2026-08-24T08:23:16.000Z",
+  "updated_at": "2026-08-24T08:23:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "pusher-v5",
+    "mujoco",
+    "physical-ai",
+    "robotics",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107222588,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luna002-Luna75 (EUN HEE LEE) - Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75",
+      "snippet": "Luna002-Luna75/Luna002-Luna75LUNA-ai-Brain-v2 Image-Text-to-Text • 5B•Updated about 4 hours ago"
+    },
+    {
+      "title": "Luna002-Luna75 (EUN HEE LEE) - Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75/datasets",
+      "snippet": "User profile of EUN HEE LEE on Hugging Face"
+    },
+    {
+      "title": "LTU-AI/hdppo-Pusher-v5 · Hugging Face",
+      "url": "https://huggingface.co/LTU-AI/hdppo-Pusher-v5",
+      "snippet": "Hybrid-HD-PPO Agent playing Pusher-v5 This is a trained Hybrid-HD-PPO (Hyperdimensional Proximal Policy Optimization) agent playing Pusher-v5 using gradient-adaptive Fractional Power Encoding (FPE) with a prune-and-fine-tune pipeline. Published by LTU-AI."
+    },
+    {
+      "title": "Luna002-Luna75/Luna002-Luna75LUNA-ai-Brain-v2 · Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75/Luna002-Luna75LUNA-ai-Brain-v2",
+      "snippet": "Luna002-Luna75 / Luna002-Luna75LUNA-ai-Brain-v2 like 0 Image-Text-to-Text Transformers Safetensors English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Pusher - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/pusher/",
+      "snippet": "Description ¶ \"Pusher\" is a multi-jointed robot arm that is very similar to a human arm. The goal is to move a target cylinder (called object) to a goal position using the robot&#x27;s end effector (called fingertip). The robot consists of shoulder, elbow, forearm and wrist joints. Action Space ¶ The action space is a Box (-2, 2, (7,), float32). An action (a, b) represents the torques ..."
+    }
+  ]
+}

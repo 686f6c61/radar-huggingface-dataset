@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5",
+  "slug": "localized-ft-llama-3-1-8b-target-only-no-hallucination-first-third-sft-seed5",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5",
+  "created_at": "2026-08-24T00:12:53.000Z",
+  "updated_at": "2026-08-24T00:14:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-sft-seed5",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft",
+      "snippet": "Uploaded finetuned model Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Meta-Llama-3.1-8B-Instruct This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed3-epoch3",
+      "url": "https://friendli.ai/models/localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed3-epoch3",
+      "snippet": "Run Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed3-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "Run Llama-3.1-8B Locally: A Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-llama-3-1-8b-local-deployment-inference",
+      "snippet": "Deploy Meta&#x27;s Llama-3.1-8B model locally. Learn to set up Hugging Face Transformers and Ollama for efficient, private AI inference on consumer hardware."
+    }
+  ]
+}

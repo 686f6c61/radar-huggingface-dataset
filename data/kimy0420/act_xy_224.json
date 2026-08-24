@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimy0420/act_xy_224",
+  "slug": "kimy0420-act_xy_224",
+  "author": "kimy0420",
+  "url": "https://huggingface.co/kimy0420/act_xy_224",
+  "created_at": "2026-08-23T06:17:26.000Z",
+  "updated_at": "2026-08-23T06:45:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "act",
+    "openmanipulator-x",
+    "goal-conditioned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52197510,
+  "parameters_human": "52.2M",
+  "storage_bytes": 208823432,
+  "storage_human": "209 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kimy0420 (양종수) - Hugging Face",
+      "url": "https://huggingface.co/kimy0420",
+      "snippet": "Recent Activity updated a dataset12 days ago kimy0420/eval_act_record_test published a dataset12 days ago kimy0420/eval_act_record_test published a model12 days ago kimy0420/record_test_act_policy View all activity"
+    },
+    {
+      "title": "kimy0420 (양종수) - Hugging Face",
+      "url": "https://huggingface.co/datasets/kimy0420/",
+      "snippet": "kimy0420&#x27;s datasets8 Sort: Recently updated kimy0420/eval_act_record_test Updated 19 days ago• 38"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    }
+  ]
+}

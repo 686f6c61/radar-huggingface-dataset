@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "learner1119/posco_pi05_260820_left_c50",
+  "slug": "learner1119-posco_pi05_260820_left_c50",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/posco_pi05_260820_left_c50",
+  "created_at": "2026-08-23T04:25:24.000Z",
+  "updated_at": "2026-08-23T04:26:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "behavioral-cloning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7494917587,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "POSCO Holdings Inc. (via Public) / POSCO DX - NC AI, Physical AI based ...",
+      "url": "https://www.publicnow.com/view/0DD211CC185C0A3C29D261843354F9A4479E78E8",
+      "snippet": "He continued, \"Through our collaboration with POSCO DX, we will strengthen our competitiveness in robot AI technology and jointly lead the general-purpose physical AI ecosystem targeting the global market.\" POSCO Holdings Inc. published this content on June 05, 2026, and is solely responsible for the information contained herein."
+    },
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "POSCO DX - NC AI, Physical AI based Launch of joint development of ...",
+      "url": "https://newsroom.posco.com/en/posco-dx-nc-ai-physical-ai-based-launch-of-joint-development-of-industrial-robot-foundation-model/",
+      "snippet": "I Signed MOU to advance Physical AI for industrial sites by combining robot operation technology and AI models I Promoting joint development of a robot foundation model capable of performing high-risk, high-intensity tasks POSCO DX is embarking on the joint development of Physical AI-based robot intelligence technology applicable to various robots for performing high-risk and high-intensity ..."
+    },
+    {
+      "title": "POSCO DX, NC AI Team Up to Develop Industrial Robot Control Model",
+      "url": "https://www.europesays.com/korea/35996/",
+      "snippet": "Kim Min-jae (left), CTO of NC AI, and Yoon Seok-jun, head of Posco DX&#x27;s Robot Automation Center, sign a business agreement for the joint development of robot physical AI technology at NC AI headquarters in Seongnam, Gyeonggi Province, on May 29. Photo courtesy of Posco DX POSCO DX and NC AI will jointly develop a Robot Foundation Model (RFM) to power robots performing high-risk and high ..."
+    },
+    {
+      "title": "NC AI, Posco DX join hands in robot AI model development",
+      "url": "https://robottoday.com/industry-briefing/nc-ai-posco-dx-join-hands-in-robot-ai-model-development/4840",
+      "snippet": "NC AI announced on Sunday that it has entered into a strategic business agreement with Posco DX to collaborate on the development of a robot foundation model and to foster broader technical cooperation. The signing ceremony, which took place recently, featured key figures including Kim Min-jae, the chief technology officer at NC AI, and Yoon Suk-june, the head of the robot automation center at ..."
+    }
+  ]
+}

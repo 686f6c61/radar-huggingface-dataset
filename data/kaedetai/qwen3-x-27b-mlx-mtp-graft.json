@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KaedeTai/Qwen3.x-27B-mlx-mtp-graft",
+  "slug": "kaedetai-qwen3-x-27b-mlx-mtp-graft",
+  "author": "KaedeTai",
+  "url": "https://huggingface.co/KaedeTai/Qwen3.x-27B-mlx-mtp-graft",
+  "created_at": "2026-08-23T14:18:04.000Z",
+  "updated_at": "2026-08-23T14:18:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "mtp",
+    "apple-silicon",
+    "omlx",
+    "mtplx",
+    "qwen",
+    "qwen3.8",
+    "quantization",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX · Hugging Face",
+      "url": "https://huggingface.co/rapid-mlx/Qwen3.8-27B-4bit-MTP-MLX",
+      "snippet": "An official Rapid-MLX, self-contained MLX package of Qwen3.8-27B. It includes both the 4-bit target weights and the matching native Multi-Token Prediction (MTP) drafter in model-mtp.safetensors."
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    },
+    {
+      "title": "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026)",
+      "url": "https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/",
+      "snippet": "What are you actually running? Qwen3.8-27B is a dense 27B vision-language model: text, images, and video (including hour-scale video) in one checkpoint, Apache-2.0 licensed. Native context is 262,144 tokens — the \"extensible up to 1,000,000\" line on the card refers to a Qwen Cloud hosted feature that is \"coming soon\", so plan around 256K locally."
+    }
+  ]
+}

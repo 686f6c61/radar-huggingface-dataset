@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Vedansh-Gupta/results",
+  "slug": "vedansh-gupta-results",
+  "author": "Vedansh-Gupta",
+  "url": "https://huggingface.co/Vedansh-Gupta/results",
+  "created_at": "2026-08-23T13:37:20.000Z",
+  "updated_at": "2026-08-23T13:37:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vedansh-Gupta/depression-distilbert · Hugging Face",
+      "url": "https://huggingface.co/Vedansh-Gupta/depression-distilbert",
+      "snippet": "Vedansh-Gupta / depression-distilbert like 0 Text Classification Transformers Safetensors distilbert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Vedansh-Gupta (Vedansh Gupta) - Hugging Face",
+      "url": "https://huggingface.co/Vedansh-Gupta",
+      "snippet": "User profile of Vedansh Gupta on Hugging Face"
+    },
+    {
+      "title": "Generative AI Essentials Certificate - TCS iON & MPIT | Vedansh Gupta",
+      "url": "https://www.linkedin.com/posts/vedansh-gupta-9421b8294_generativeai-artificialintelligence-tcsion-activity-7474130189866774528-iE8Y",
+      "snippet": "Thrilled to share that I have successfully completed the Generative AI Essentials course under the \"AI for All\" program, offered by MPIT - CoE in partnership with TCS iON (Tata Consultancy ..."
+    },
+    {
+      "title": "Vedansh Gupta - UG researcher@URSA | Prev AI intern@Octro - LinkedIn",
+      "url": "https://www.linkedin.com/in/vedanshgupta500",
+      "snippet": "UG researcher@URSA | Prev AI intern@Octro | Engineering mechanic@UIUC | Dean&#x27;s List | James Scholar · Engineering Mechanics Sophomore at University of Illinois Urbana-Champaign. I am an ..."
+    },
+    {
+      "title": "Vedansh Gupta - Nagpur, Maharashtra, India | Professional Profile ...",
+      "url": "https://in.linkedin.com/in/vedansh-gupta-3381b7290",
+      "snippet": "Computer Science Engineering Student | Aspiring IT Professional Hello! I am a… · Education: Shri Ramdeobaba College of Engineering and Management · Location: Nagpur · 500+ connections on LinkedIn. View Vedansh Gupta&#x27;s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

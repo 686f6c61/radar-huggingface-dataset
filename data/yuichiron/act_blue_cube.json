@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yuichiron/act_blue_cube",
+  "slug": "yuichiron-act_blue_cube",
+  "author": "Yuichiron",
+  "url": "https://huggingface.co/Yuichiron/act_blue_cube",
+  "created_at": "2026-08-23T09:32:10.000Z",
+  "updated_at": "2026-08-23T09:32:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Yuichiron/so101_blue_cube_to_bowl_20260823_171828",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kmymch/act_blue_cube · Hugging Face",
+      "url": "https://huggingface.co/kmymch/act_blue_cube",
+      "snippet": "Instructions to use kmymch/act_blue_cube with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use kmymch/act_blue_cube with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Kiki3773/act_blue_cube_100k · Hugging Face",
+      "url": "https://huggingface.co/Kiki3773/act_blue_cube_100k",
+      "snippet": "Instructions to use Kiki3773/act_blue_cube_100k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kiki3773/act_blue_cube_100k with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

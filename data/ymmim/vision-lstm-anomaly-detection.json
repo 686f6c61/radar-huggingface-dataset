@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "YMmim/vision-lstm-anomaly-detection",
+  "slug": "ymmim-vision-lstm-anomaly-detection",
+  "author": "YMmim",
+  "url": "https://huggingface.co/YMmim/vision-lstm-anomaly-detection",
+  "created_at": "2026-08-24T08:07:06.000Z",
+  "updated_at": "2026-08-24T08:07:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "computer-vision",
+    "anomaly-detection",
+    "lstm",
+    "autoencoder",
+    "mvtec-ad",
+    "industrial-defect-inspection",
+    "pytorch",
+    "en",
+    "ko",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2441396,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision-LSTM: xLSTM as Generic Vision Backbone - arXiv.org",
+      "url": "https://arxiv.org/html/2406.04303v3",
+      "snippet": "Abstract Transformers are widely used as generic backbones in computer vision, despite initially introduced for natural language processing. Recently, the Long Short-Term Memory (LSTM) has been extended to a scalable and performant architecture - the xLSTM - which overcomes long-standing LSTM limitations via exponential gating and parallelizable matrix memory structure. In this paper, we ..."
+    },
+    {
+      "title": "OWASP GenAI LLM Top 10 2026 - OWASP Gen AI Security Project",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+      "snippet": "OWASP Top 10 for LLM Applications 2026 is the latest community-driven guide to the most critical security risks facing applications powered by large language models. Developed by hundreds of AI security experts, this edition introduces updated rankings, expanded threat coverage, and new research grounded in thousands of real-world AI security incidents. The guide provides practical […]"
+    },
+    {
+      "title": "Vision-LSTM (ViL) | xLSTM as Generic Vision Backbone",
+      "url": "https://nx-ai.github.io/vision-lstm/",
+      "snippet": "xLSTM as Generic Vision Backbone [Code] [Paper] [Models] [Codebase Demo Video] [BibTeX] We introduce Vision-LSTM (ViL), an adaption of xLSTM to computer vision. In order to adjust xLSTM (an autoregressive model) to better handle non-autoregressive inputs such as images, we employ alternating bi-directional mLSTM blocks. Odd blocks process the image row-wise from top left to bottom right, while ..."
+    },
+    {
+      "title": "GitHub - CASIA-LMC-Lab/AnomalyMoE: [AAAI 2026] AnomalyMoE: Towards a ...",
+      "url": "https://github.com/CASIA-LMC-Lab/AnomalyMoE",
+      "snippet": "Welcome to the official repository for \"AnomalyMoE: Towards a Language-free Generalist Model for Unified Visual Anomaly Detection.\" This project introduces AnomalyMoE, a novel and universal framework designed to unify visual anomaly detection across a wide array of domains and modalities. Our approach addresses the critical limitations of existing methods, which are often highly specialized ..."
+    },
+    {
+      "title": "AnomalyLVM:Vision-language models for zero-shot anomaly detection",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417426003052",
+      "snippet": "This design improves the model&#x27;s adaptability and robustness when transferred across domains (Li, Feng, Gao, Chang, & Li, 2024), thereby enhancing zero-shot performance and enabling practical application in real-world anomaly detection tasks."
+    }
+  ]
+}

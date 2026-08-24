@@ -5,7 +5,7 @@
   "author": "themohal",
   "url": "https://huggingface.co/themohal/saraiki-qwen3-8b-cpt",
   "created_at": "2026-08-03T17:36:42.000Z",
-  "updated_at": "2026-08-22T11:25:03.000Z",
+  "updated_at": "2026-08-22T20:45:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,6 +22,7 @@
     "lora",
     "continued-pretraining",
     "language-model",
+    "unsloth",
     "text-generation",
     "conversational",
     "skr",
@@ -32,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 157,
+  "downloads_30d": 188,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2134955319,
-  "storage_human": "2.1 GB",
+  "storage_bytes": 2665408061,
+  "storage_human": "2.7 GB",
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"

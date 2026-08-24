@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT-v2",
+  "slug": "aethoria-ai-tr-hash-moe-200m-160b-sft-v2",
+  "author": "AETHORIA-AI",
+  "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT-v2",
+  "created_at": "2026-08-23T19:53:04.000Z",
+  "updated_at": "2026-08-23T22:01:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tr_hash_moe",
+    "text-generation",
+    "tr-hash",
+    "mixture-of-experts",
+    "supervised-finetuning",
+    "reasoning",
+    "custom-code",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement",
+    "base_model:finetune:AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202734848,
+  "parameters_human": "202.7M",
+  "storage_bytes": 8083813947,
+  "storage_human": "8.1 GB",
+  "base_model": "AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT · Hugging Face",
+      "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT",
+      "snippet": "Full-parameter instruction SFT of AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement on the audited 209k-example Luciole 16-way mixture. This is not LoRA or QLoRA: all ..."
+    },
+    {
+      "title": "AETHORIA-AI/TR-HASH-MoE-200M-160B-Reasoning-SFT · Hugging Face",
+      "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-Reasoning-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-MoE: DeepSeekMoE: Towards Ultimate Expert ...",
+      "url": "https://github.com/deepseek-ai/DeepSeek-MoE",
+      "snippet": "DeepSeekMoE 16B is a Mixture-of-Experts (MoE) language model with 16.4B parameters. It employs an innovative MoE architecture, which involves two principal strategies: fine-grained expert segmentation and shared experts isolation. It is trained from scratch on 2T English and Chinese tokens, and exhibits comparable performance with DeekSeek 7B and LLaMA2 7B, with only about 40% of computations ..."
+    },
+    {
+      "title": "TR HASH MoE 200M 130B by AETHORIA-AI - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/AETHORIA-AI%2FTR-HASH-MoE-200M-130B,2ywNBgf5IbLoNYIWN9cWMj",
+      "snippet": "TR HASH MoE 200M 130B is an open-source 202.7m LLM by AETHORIA-AI. VRAM 0.8GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Shreyadhondi/Echo2Equation-MathT5",
+  "slug": "shreyadhondi-echo2equation-matht5",
+  "author": "Shreyadhondi",
+  "url": "https://huggingface.co/Shreyadhondi/Echo2Equation-MathT5",
+  "created_at": "2026-08-23T04:17:17.000Z",
+  "updated_at": "2026-08-23T05:05:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text-generation",
+    "en",
+    "base_model:jmeadows17/MathT5-base",
+    "base_model:finetune:jmeadows17/MathT5-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222989568,
+  "parameters_human": "223.0M",
+  "storage_bytes": 892785736,
+  "storage_human": "893 MB",
+  "base_model": "jmeadows17/MathT5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Shreyadhondi/Echo2Equation: This project amis to convert ...",
+      "url": "https://github.com/Shreyadhondi/Echo2Equation",
+      "snippet": "This project amis to convert speech to visual Maths - Shreyadhondi/Echo2Equation"
+    },
+    {
+      "title": "Shreyadhondi - GitHub",
+      "url": "https://github.com/Shreyadhondi",
+      "snippet": "This is my repo for assignment-1 of Deep Learning Python Academic-performance-monitoring-system-using-ML Academic-performance-monitoring-system-using-ML Public Python Echo2Equation Echo2Equation Public This project amis to convert speech to visual Maths Python da6401-assignment da6401-assignment Public Python da24m019-dl-a3 da24m019-dl-a3 ..."
+    },
+    {
+      "title": "jmeadows17/MathT5-base · Hugging Face",
+      "url": "https://huggingface.co/jmeadows17/MathT5-base",
+      "snippet": "MathT5-base is a version of T5-base (not FLAN-T5) that is fine-tuned for 25 epochs on 15K (LaTeX) synthetic mathematical derivations (containing 4 - 10 equations), that were generated using a symbolic solver (SymPy)."
+    },
+    {
+      "title": "jmeadows17/MathT5-large · Hugging Face",
+      "url": "https://huggingface.co/jmeadows17/MathT5-large",
+      "snippet": "inference (prompt, tokenizer, model) MathT5.pretty_print (text, prompt=True) makes prompts and outputs (prompt=False) easier to read. Overview MathT5-large is a version of FLAN-T5-large fine-tuned for 25 epochs on 15K (LaTeX) synthetic mathematical derivations (containing 4 - 10 equations), that were generated using a symbolic solver (SymPy)."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    }
+  ]
+}

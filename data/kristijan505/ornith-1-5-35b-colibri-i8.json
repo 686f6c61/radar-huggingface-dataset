@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kristijan505/Ornith-1.5-35B-colibri-i8",
+  "slug": "kristijan505-ornith-1-5-35b-colibri-i8",
+  "author": "kristijan505",
+  "url": "https://huggingface.co/kristijan505/Ornith-1.5-35B-colibri-i8",
+  "created_at": "2026-08-23T15:56:41.000Z",
+  "updated_at": "2026-08-23T16:08:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "colibri",
+  "languages": [],
+  "tags": [
+    "colibri",
+    "qwen3_5_moe_text",
+    "qwen3.6",
+    "qwen3.6-35b-a3b",
+    "moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37249893830,
+  "storage_human": "37.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith-1.5: Does It Really Beat Claude Opus 4.8? - explainx.ai",
+      "url": "https://www.explainx.ai/blog/ornith-1-5-self-improving-open-weight-model-august-2026",
+      "snippet": "Ornith-1.5&#x27;s self-reported benchmarks rival Claude Opus 4.8 — but an independent HN benchmark of the 35B model tells a different story."
+    }
+  ]
+}

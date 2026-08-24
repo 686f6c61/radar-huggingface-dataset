@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "samirconte/blood-cipher-7b",
+  "slug": "samirconte-blood-cipher-7b",
+  "author": "samirconte",
+  "url": "https://huggingface.co/samirconte/blood-cipher-7b",
+  "created_at": "2026-08-23T13:39:26.000Z",
+  "updated_at": "2026-08-23T13:42:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683071488,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    },
+    {
+      "title": "LLM Model Parameters 2026: 7B-70B - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/guides/what-is-ai-model-3b-7b-30b-parameters-guide-2025.html",
+      "snippet": "Master LLM parameter selection with our comprehensive 2026 guide. Learn how 7B, 13B, 30B, and 70B parameters impact AI model performance, hardware requirements, and capabilities for optimal deployment decisions."
+    },
+    {
+      "title": "Cipher-AI (CipherAI) - Hugging Face",
+      "url": "https://huggingface.co/Cipher-AI",
+      "snippet": "AI and Cryptology Text Generation • 0.2B • Updated Apr 7, 2025 • 5 • 2"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "aloobun/Cypher-7B · Hugging Face",
+      "url": "https://huggingface.co/aloobun/Cypher-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

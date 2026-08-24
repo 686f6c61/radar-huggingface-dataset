@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Kysaddy/koda-qwen15-qlora",
+  "slug": "kysaddy-koda-qwen15-qlora",
+  "author": "Kysaddy",
+  "url": "https://huggingface.co/Kysaddy/koda-qwen15-qlora",
+  "created_at": "2026-08-24T09:06:13.000Z",
+  "updated_at": "2026-08-24T09:06:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "coding",
+    "chat",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13620813,
+  "storage_human": "14 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA (Quantized Low-Rank Adapter) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/qlora-quantized-low-rank-adapter/",
+      "snippet": "QLoRA is primarily used with open-weight models like LLaMA, Mistral and Falcon, as these allow direct access to model weights required for quantization and adapter-based fine-tuning. QLoRA combines quantization which reduces model size, with low-rank adapters, small trainable layers for specific tasks. This let&#x27;s us adapt billion-parameter models using less memory and computation while ..."
+    },
+    {
+      "title": "GitHub - truehealthai/qlora-ai: QLoRA: Efficient Finetuning of ...",
+      "url": "https://github.com/truehealthai/qlora-ai",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "GitHub - lili0710432/Qwen15: Qwen1.5 is the improved version of Qwen ...",
+      "url": "https://github.com/lili0710432/Qwen15",
+      "snippet": "Qwen1.5 is the improved version of Qwen, the large language model series developed by Qwen team, Alibaba Cloud. - lili0710432/Qwen15"
+    },
+    {
+      "title": "clawd-solana-masterpiece-qwen15-lora - Hugging Face",
+      "url": "https://huggingface.co/solanaclawd/clawd-solana-masterpiece-qwen15-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vrachit/Qwen-1.5-1.8b-PythonCOT-coder · Hugging Face",
+      "url": "https://huggingface.co/vrachit/Qwen-1.5-1.8b-PythonCOT-coder",
+      "snippet": "Qwen 1.5 1.8B - Python Code Generation with Step-by-Step Reasoning A fine-tuned version of Qwen 1.5 1.8B that generates Python code with detailed step-by-step reasoning explanations. This model teaches users how to solve programming problems by explaining its thought process before writing code. Model Details Model Description This model is fine-tuned using QLoRA on a synthetic dataset of ..."
+    }
+  ]
+}

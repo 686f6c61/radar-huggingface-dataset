@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "EunB2/KL-RoBERTa",
+  "slug": "eunb2-kl-roberta",
+  "author": "EunB2",
+  "url": "https://huggingface.co/EunB2/KL-RoBERTa",
+  "created_at": "2025-12-14T04:00:16.000Z",
+  "updated_at": "2026-08-23T07:49:53.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "korean",
+    "legal",
+    "ko",
+    "base_model:klue/roberta-base",
+    "base_model:finetune:klue/roberta-base",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 113402624,
+  "parameters_human": "113.4M",
+  "storage_bytes": 453634720,
+  "storage_human": "454 MB",
+  "base_model": "klue/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EunB2/KL-RoBERTa",
+      "url": "https://github.com/EunB2/KL-RoBERTa",
+      "snippet": "KL-RoBERTa is a Korean legal language model designed for Korean legal natural language understanding tasks. The model aims to better capture legal terminology, long-form legal context, and domain-specific linguistic patterns in Korean legal texts. KL-RoBERTa is built on klue/roberta-base, an encoder-based Korean RoBERTa model, and retains the original architecture and tokenizer."
+    },
+    {
+      "title": "KL-RoBERTa/README.md at main · EunB2/KL-RoBERTa · GitHub",
+      "url": "https://github.com/EunB2/KL-RoBERTa/blob/main/README.md",
+      "snippet": "KL-RoBERTa is a Korean legal language model designed for Korean legal natural language understanding tasks. The model aims to better capture legal terminology, long-form legal context, and domain-specific linguistic patterns in Korean legal texts. KL-RoBERTa is built on klue/roberta-base, an encoder-based Korean RoBERTa model, and retains the original architecture and tokenizer."
+    },
+    {
+      "title": "EunB2 (CHOEunbi) - Hugging Face",
+      "url": "https://huggingface.co/EunB2/datasets",
+      "snippet": "User profile of CHOEunbi on Hugging Face Recent Activity updated a modelabout 1 month ago EunB2/A.X-4.-Kolegal-textconverter updated a model5 months ago EunB2/A.X-4.-Kolegal-textconverter updated a model7 months ago EunB2/KL-RoBERTa View all activity"
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "Neuro-semantic graph fusion for explainable depression risk ... - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42620577/",
+      "snippet": "The proposed framework establishes a rigorous, interpretable, and ethically grounded mechanism for proactive mental health screening in digital ecosystems, designed to function as a human-in-the-loop clinical screening aid rather than a standalone diagnostic tool."
+    }
+  ]
+}

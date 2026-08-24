@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sunny123987456/Llama",
+  "slug": "sunny123987456-llama",
+  "author": "sunny123987456",
+  "url": "https://huggingface.co/sunny123987456/Llama",
+  "created_at": "2026-08-23T22:35:03.000Z",
+  "updated_at": "2026-08-23T22:35:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Introducing Llama 3.1: Our most capable models to date - Meta AI",
+      "url": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "snippet": "Bringing open intelligence to all, our latest models expand context length, add support across eight languages, and include Meta Llama 3.1 405B— the first frontier-level open source AI model."
+    },
+    {
+      "title": "Introducing LLaMA: A foundational, 65-billion-parameter language model",
+      "url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "snippet": "Today, we&#x27;re releasing our LLaMA (Large Language Model Meta AI) foundational model with a gated release. LLaMA is more efficient and competitive with previously published models of a similar size on existing benchmarks."
+    },
+    {
+      "title": "Unmatched Performance and Efficiency | Llama 4",
+      "url": "https://developer.meta.com/ai/models/llama-4/",
+      "snippet": "Meet Llama 4, the latest multimodal AI model offering cost efficiency, 10M context window and easy deployment. Start building advanced personalized experiences."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

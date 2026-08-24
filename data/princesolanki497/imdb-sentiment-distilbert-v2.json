@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "princesolanki497/imdb-sentiment-distilbert-v2",
+  "slug": "princesolanki497-imdb-sentiment-distilbert-v2",
+  "author": "princesolanki497",
+  "url": "https://huggingface.co/princesolanki497/imdb-sentiment-distilbert-v2",
+  "created_at": "2026-08-23T23:28:21.000Z",
+  "updated_at": "2026-08-23T23:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "princesolanki497 (Prince Rajesh) - Hugging Face",
+      "url": "https://huggingface.co/princesolanki497",
+      "snippet": "Imdb Sentiment Demo 🖼 imdb-sentiment-demo princesolanki497 about 8 hours ago"
+    },
+    {
+      "title": "Niophy/distilbert-imdb-sentiment · Hugging Face",
+      "url": "https://huggingface.co/Niophy/distilbert-imdb-sentiment",
+      "snippet": "Niophy / distilbert-imdb-sentiment like 0 Text Classification Safetensors stanfordnlp/imdb distilbert sentiment-analysis License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new distilbert-imdb-sentiment Training details Results Usage Limitations"
+    },
+    {
+      "title": "GitHub - vahehambardzumyan/imdb_review_classification",
+      "url": "https://github.com/vahehambardzumyan/imdb_review_classification",
+      "snippet": "A Kaggle NLP project that fine-tunes DistilBERT to classify IMDB movie review sentiment, and adds an interactive semantic review similarity explorer built on sentence embeddings."
+    },
+    {
+      "title": "Sentiment_Classification_using_DistilBERT.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pranaya-mathur/Deep-Learning-Projects/blob/master/Sentiment_Classification_using_DistilBERT.ipynb/",
+      "snippet": "DistilBERT is a small, fast, cheap and light Transformer model trained by distilling Bert base. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving over 95% of Bert&#x27;s performances as measured on the GLUE language understanding benchmark."
+    },
+    {
+      "title": "GitHub - kavindakulasinghe/IMDb-Sentiment-DistilBERT: A machine ...",
+      "url": "https://github.com/kavindakulasinghe/IMDb-Sentiment-DistilBERT",
+      "snippet": "This repository contains a Jupyter Notebook that demonstrates how to fine-tune the DistilBERT model on the IMDb movie reviews dataset for sentiment analysis. The notebook utilizes Hugging Face Transformers, datasets, and Comet ML for experiment tracking."
+    }
+  ]
+}

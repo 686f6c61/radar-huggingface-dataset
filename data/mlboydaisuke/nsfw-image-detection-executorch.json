@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/nsfw-image-detection-ExecuTorch",
+  "slug": "mlboydaisuke-nsfw-image-detection-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/nsfw-image-detection-ExecuTorch",
+  "created_at": "2026-08-23T23:37:54.000Z",
+  "updated_at": "2026-08-23T23:39:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-classification",
+    "base_model:Falconsai/nsfw_image_detection",
+    "base_model:quantized:Falconsai/nsfw_image_detection",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 777463059,
+  "storage_human": "777 MB",
+  "base_model": "Falconsai/nsfw_image_detection",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExecuTorch Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo",
+      "snippet": "PyTorch models exported to ExecuTorch .pte for on-device inference — XNNPACK (CPU, portable) and Core ML builds, each parity-checked."
+    },
+    {
+      "title": "#1 Global NSFW Image & Video Detection AI | Falcons.ai",
+      "url": "https://falcons.ai/products/nsfw-image-detection",
+      "snippet": "The world&#x27;s #1 downloaded AI model for visual safety. 1B+ downloads. Protect your community from NSFW and CSAM content with real-time, privacy-first computer vision."
+    },
+    {
+      "title": "Quantized Models for Falconsai/nsfw_image_detection - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Falconsai/nsfw_image_detection",
+      "snippet": "Active filters: Falconsai/nsfw_image_detection. Clear all. jdp8/nsfw_image_detection. Image Classification • Updated Jan 29, 2025 • 3 • 5"
+    },
+    {
+      "title": "nsfw_image_detection: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/nsfwimagedetection-falcons-ai",
+      "snippet": "Overview nsfw_image_detection is a binary image classifier built on a fine-tuned Vision Transformer (ViT) that categorizes images as either \"normal\" or \"nsfw\" (not safe for work). Maintained by falcons-ai, this model uses a ViT architecture pre-trained on ImageNet-21k and fine-tuned specifically for NSFW detection, processing images at 224x224 pixel resolution. The model outputs a single ..."
+    },
+    {
+      "title": "nsfw_image_detection: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/nsfw-image-detection-falconsai",
+      "snippet": "Overview nsfw_image_detection is a fine-tuned Vision Transformer (ViT) model specialized for binary classification of images into \"normal\" and \"nsfw\" categories. Maintained by Falconsai, this model builds on Google&#x27;s vit-base-patch16-224-in21k architecture pre-trained on ImageNet-21k and further trained on a proprietary dataset of 80,000 images with substantial variability. The model processes ..."
+    }
+  ]
+}

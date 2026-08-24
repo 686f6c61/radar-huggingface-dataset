@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Craftwork333/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "slug": "craftwork333-qwen3-6-35b-a3b-uncensored-hauhaucs-aggressive",
+  "author": "Craftwork333",
+  "url": "https://huggingface.co/Craftwork333/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-08-23T15:24:18.000Z",
+  "updated_at": "2026-08-23T15:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 247384718848,
+  "storage_human": "247.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - GitHub",
+      "url": "https://github.com/chenfei66/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive Join the Discord for updates, roadmaps, projects, or just to chat. Qwen3.6-35B-A3B uncensored by HauhauCS. 0/465 Refusals. HuggingFace&#x27;s \"Hardware Compatibility\" widget doesn&#x27;t recognize K_P quants — it may show fewer files than actually exist."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored: A 35B MoE Model With 262K Context",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context",
+      "snippet": "Join the Discord server (linked in the model description) for updates and roadmap information. This is a simplified guide to an AI model called Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive maintained by HauhauCS. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocalLLM: Running Qwen3.6-35B-A3B on an RTX 4070 Ti",
+      "url": "https://andreas-mausch.de/blog/2026-06-01-localllm/",
+      "snippet": "The exact model I use is Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS. IQ4_XS quants are decent enough for me, and quite fast. The model has 40 experts (I don&#x27;t know how to get the info, but the internet said so), and I found that 24 experts the CPU would give me best results, in terms of VRAM usage and speed."
+    }
+  ]
+}

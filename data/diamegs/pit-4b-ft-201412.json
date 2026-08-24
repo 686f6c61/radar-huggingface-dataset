@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Diamegs/PIT-4B-FT-201412",
+  "slug": "diamegs-pit-4b-ft-201412",
+  "author": "Diamegs",
+  "url": "https://huggingface.co/Diamegs/PIT-4B-FT-201412",
+  "created_at": "2026-04-21T16:21:23.000Z",
+  "updated_at": "2026-08-23T10:41:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pit",
+    "text-generation",
+    "causal-lm",
+    "point-in-time",
+    "temporal-llm",
+    "instruction-tuned",
+    "custom_code",
+    "en",
+    "base_model:Diamegs/PIT-4B-201412",
+    "base_model:finetune:Diamegs/PIT-4B-201412",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 4438622208,
+  "parameters_human": "4.44B",
+  "storage_bytes": 17754502408,
+  "storage_human": "17.8 GB",
+  "base_model": "Diamegs/PIT-4B-201412",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diamegs/PIT-4B-FT-201412 · Hugging Face",
+      "url": "https://huggingface.co/Diamegs/PIT-4B-FT-201412",
+      "snippet": "Diamegs / PIT-4B-FT-201412 like 0 Safetensors English pit causal-lm point-in-time temporal-llm instruction-tuned custom_code License:apache-2.0 Model card FilesFiles and versions xet Community PIT-4B-FT — Point-In-Time GPT (Fine-tuned, unknown) Model details Requirements Quick start Text generation Instruction following (fine-tuned variant ..."
+    },
+    {
+      "title": "Diamegs/PIT-4B-FT-201312 · Hugging Face",
+      "url": "https://huggingface.co/Diamegs/PIT-4B-FT-201312",
+      "snippet": "Diamegs / PIT-4B-FT-201312 like 0 Safetensors English pit causal-lm point-in-time temporal-llm instruction-tuned custom_code License:apache-2.0 Model card FilesFiles and versions xet Community PIT-4B-FT — Point-In-Time GPT (Fine-tuned, unknown) Model details Requirements Quick start Text generation Instruction following (fine-tuned variant ..."
+    },
+    {
+      "title": "GitHub - 404LiHua/AI-Finance-Practice-Prototype: PIT-governed ...",
+      "url": "https://github.com/404LiHua/AI-Finance-Practice-Prototype",
+      "snippet": "PIT-governed multimodal financial time-series research prototype with T2 market-relative prediction, reproducible audits, and single-machine inference. - 404LiHua/AI-Finance-Practice-Prototype"
+    },
+    {
+      "title": "GitHub - jia-shan/financial-llm",
+      "url": "https://github.com/jia-shan/financial-llm",
+      "snippet": "The project starts from Diamegs/PIT-4B-FT-202212 and compares math-reasoning, finance-reasoning, earnings-call, and RLVR-style variants. We evaluate the models both as language models and as embedding models for an earnings-call portfolio experiment."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=point-in-time",
+      "snippet": "Active filters: point-in-time. Clear all. Diamegs/PIT-4B-FT-201312. Updated about 4 hours ago. Diamegs/PIT-4B-FT-201412"
+    }
+  ]
+}

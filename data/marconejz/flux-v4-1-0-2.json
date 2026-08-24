@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "marconejz/flux.v4-1.0.2",
+  "slug": "marconejz-flux-v4-1-0-2",
+  "author": "marconejz",
+  "url": "https://huggingface.co/marconejz/flux.v4-1.0.2",
+  "created_at": "2026-08-24T12:23:51.000Z",
+  "updated_at": "2026-08-24T12:24:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 6701795104,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XLabs-AI/flux-controlnet-collections · Hugging Face",
+      "url": "https://huggingface.co/XLabs-AI/flux-controlnet-collections",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "Flux AI Models Online | Flux AI",
+      "url": "https://fluxai.studio/models",
+      "snippet": "Flux AI Models Explore all Flux AI models, including standard models released by Black Forest Labs, and flux fine-tuned models released by community."
+    },
+    {
+      "title": "Flux - Design PCBs with AI",
+      "url": "https://www.flux.ai/",
+      "snippet": "Hardware is entering a new era, led by engineers who embrace AI. Flux is the platform built for them—with automation, collaboration, and intelligence that improves with every design."
+    }
+  ]
+}

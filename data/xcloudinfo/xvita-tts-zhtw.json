@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xCloudinfo/xVITA-TTS-zhTW",
+  "slug": "xcloudinfo-xvita-tts-zhtw",
+  "author": "xCloudinfo",
+  "url": "https://huggingface.co/xCloudinfo/xVITA-TTS-zhTW",
+  "created_at": "2026-08-24T01:41:48.000Z",
+  "updated_at": "2026-08-24T01:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "chatterbox",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "traditional-chinese",
+    "taiwan",
+    "zh-tw",
+    "zh",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:finetune:ResembleAI/chatterbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3206277530,
+  "storage_human": "3.2 GB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-24T05:23:46.330Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xCloudinfo/Whisper-Large-v3-xVITA-zhTW · Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/Whisper-Large-v3-xVITA-zhTW",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xCloudinfo/Whisper-Large-v3-Turbo-xVITA-zhTW · Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/Whisper-Large-v3-Turbo-xVITA-zhTW",
+      "snippet": "Instructions to use xCloudinfo/Whisper-Large-v3-Turbo-xVITA-zhTW with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "VITS - TTS 0.22.0 documentation - Coqui",
+      "url": "https://docs.coqui.ai/en/latest/models/vits.html",
+      "snippet": "VITS # VITS (Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech ) is an End-to-End (encoder -> vocoder together) TTS model that takes advantage of SOTA DL techniques like GANs, VAE, Normalizing Flows."
+    },
+    {
+      "title": "GitHub - VITA-MLLM/VITA: [NeurIPS 2025] VITA-1.5: Towards GPT-4o Level ...",
+      "url": "https://github.com/VITA-MLLM/VITA",
+      "snippet": "🌟 What&#x27;s New in VITA-1.5? We are excited to present VITA-1.5, which incorporates a series of advancements: Progressive Training Strategy. By this manner, the adding of speech has little effect on other multi-modal performance (vision-language). The average image understanding performance only ..."
+    }
+  ]
+}

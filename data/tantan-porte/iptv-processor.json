@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Tantan-porte/iptv-processor",
+  "slug": "tantan-porte-iptv-processor",
+  "author": "Tantan-porte",
+  "url": "https://huggingface.co/Tantan-porte/iptv-processor",
+  "created_at": "2026-08-24T00:59:42.000Z",
+  "updated_at": "2026-08-24T00:59:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - iptv-org/iptv: Collection of publicly available IPTV channels ...",
+      "url": "https://github.com/iptv-org/iptv",
+      "snippet": "Collection of publicly available IPTV (Internet Protocol television) channels from all over the world."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "GitHub - euzu/tuliprox: Flexible IPTV playlist processor & proxy in ...",
+      "url": "https://github.com/euzu/tuliprox",
+      "snippet": "tuliprox is a high-performance IPTV proxy and playlist processor written in Rust 🦀. It unifies M3U/M3U8 playlists, Xtream providers, Stalker/Ministra portals, Plex, Emby, Jellyfin and local media, reshapes them into clean outputs, and serves them to IPTV players and media clients from one place."
+    },
+    {
+      "title": "AI Model Navigator — Compare 300+ AI Models",
+      "url": "https://ai-model-navigator.ytdoors.net/en/",
+      "snippet": "Compare and find the best AI model for your needs. Filter by price, context length, speed, and performance across GPT-4, Claude, Gemini, Llama, and 300+ models."
+    }
+  ]
+}

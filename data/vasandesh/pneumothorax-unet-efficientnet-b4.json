@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vasandesh/pneumothorax-unet-efficientnet-b4",
+  "slug": "vasandesh-pneumothorax-unet-efficientnet-b4",
+  "author": "vasandesh",
+  "url": "https://huggingface.co/vasandesh/pneumothorax-unet-efficientnet-b4",
+  "created_at": "2026-08-23T20:54:39.000Z",
+  "updated_at": "2026-08-23T20:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "pneumothorax",
+    "segmentation",
+    "chest-xray",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163193345,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chest X-ray Pneumothorax Segmentation Using EfficientNet-B4 Transfer ...",
+      "url": "https://arxiv.org/abs/2509.03950",
+      "snippet": "Pneumothorax, the abnormal accumulation of air in the pleural space, can be life-threatening if undetected. Chest X-rays are the first-line diagnostic tool, but small cases may be subtle. We propose an automated deep-learning pipeline using a U-Net with an EfficientNet-B4 encoder to segment pneumothorax regions. Trained on the SIIM-ACR dataset with data augmentation and a combined binary cross ..."
+    },
+    {
+      "title": "(PDF) Chest X-ray pneumothorax segmentation using U-Net with ...",
+      "url": "https://www.researchgate.net/publication/352817671_Chest_X-ray_pneumothorax_segmentation_using_U-Net_with_EfficientNet_and_ResNet_architectures",
+      "snippet": "Our model determines whether the patient has a pneumothorax and determines its location and extent. The Ens4B-UNet relies on chest X-rays as it is the most common diagnostic method for pneumothorax."
+    },
+    {
+      "title": "Chest X-ray Pneumothorax Segmentation Using EfficientNet-B4 Transfer ...",
+      "url": "https://www.alphaxiv.org/overview/2509.03950v1",
+      "snippet": "View recent discussion. Abstract: Pneumothorax, the abnormal accumulation of air in the pleural space, can be life-threatening if undetected. Chest X-rays are the first-line diagnostic tool, but small cases may be subtle. We propose an automated deep-learning pipeline using a U-Net with an EfficientNet-B4 encoder to segment pneumothorax regions. Trained on the SIIM-ACR dataset with data ..."
+    },
+    {
+      "title": "PDF Chest X-ray pneumothorax segmentation using U-Net with EfficientNet and ...",
+      "url": "https://pdfs.semanticscholar.org/33b3/2c5f4859d5e0d9df529adfee39e86205e520.pdf",
+      "snippet": "Our model determines whether the patient has a pneumothorax and determines its location and extent. The Ens4B-UNet relies on chest X-rays as it is the most common diagnostic method for pneumothorax. It utilizes U-Net&#x27;s success with several signi cant improvements by adapting powerful and robust deep CNN models as fi"
+    },
+    {
+      "title": "Chest X-ray Pneumothorax Segmentation Using EfficientNet-B4 Transfer ...",
+      "url": "https://www.scholarfeed.org/paper/2509.03950v1",
+      "snippet": "The paper tackled automated segmentation of pneumothorax in chest X-rays using a U-Net with EfficientNet-B4 encoder, achieving an IoU of 0.7008 and Dice score of 0.8241 on an independent dataset."
+    }
+  ]
+}

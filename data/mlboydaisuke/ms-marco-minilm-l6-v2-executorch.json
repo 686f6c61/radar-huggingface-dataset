@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/ms-marco-MiniLM-L6-v2-ExecuTorch",
+  "slug": "mlboydaisuke-ms-marco-minilm-l6-v2-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/ms-marco-MiniLM-L6-v2-ExecuTorch",
+  "created_at": "2026-08-23T12:38:48.000Z",
+  "updated_at": "2026-08-23T23:10:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "text-ranking",
+    "text-classification",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182242547,
+  "storage_human": "182 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L6-v2 | Hugging Bay",
+      "url": "https://huggingbay.xyz/artifact/hf-model-cross-encoder-ms-marco-minilm-l6-v2",
+      "snippet": "Sign in Loading Artifact Fetching full metadata for hf-model-cross-encoder-ms-marco-minilm-l6-v2. Search | Topics | Library | Radar | Trending | Status | Sources ..."
+    },
+    {
+      "title": "README.md · cross-encoder/ms-marco-MiniLM-L6-v2 at ...",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/blame/588b01a83959436e6051d2133d8e9ecdcb28b1a5/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ms-marco-MiniLM-L6-v2: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ms-marco-minilm-l6-v2-cross-encoder",
+      "snippet": "Q: How does this model compare to ms-marco-MiniLM-L12-v2 for my ranking pipeline? A: The L12 model is marginally more accurate (39.02 vs 39.01 MRR@10, nearly identical) but runs at half the speed (960 vs 1800 docs/sec). Use the L6 variant unless you have excess GPU capacity or need to squeeze out the final 0.01 MRR points."
+    },
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/cross-encoder/ms-marco-MiniLM-L6-v2",
+      "snippet": "/ ms-marco-MiniLM-L6-v2 like 254 Follow Sentence Transformers - Cross-Encoders 243 Text Ranking sentence-transformers PyTorch JAX ONNX Safetensors OpenVINO Transformers sentence-transformers/msmarco English bert text-classification text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community 15 Deploy Copy to ..."
+    }
+  ]
+}

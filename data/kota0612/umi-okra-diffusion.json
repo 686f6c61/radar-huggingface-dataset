@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kota0612/umi-okra-diffusion",
+  "slug": "kota0612-umi-okra-diffusion",
+  "author": "Kota0612",
+  "url": "https://huggingface.co/Kota0612/umi-okra-diffusion",
+  "created_at": "2026-08-24T08:39:46.000Z",
+  "updated_at": "2026-08-24T08:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "diffusion-policy",
+    "manipulation",
+    "umi",
+    "unitree-g1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2740886068,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kota0612/umi-okra-grassland-20260724 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Kota0612/umi-okra-grassland-20260724/tree/main",
+      "snippet": "Kota0612 / umi-okra-grassland-20260724 like 0 Tasks: Robotics Modalities: Image Video Formats: parquet Size: < 1K Tags: umi universal-manipulation-interface imitation-learning diffusion-policy orb-slam3 agriculture + 3 Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community 1 main ..."
+    },
+    {
+      "title": "Kota0612/umi-okra-grassland-20260724 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Kota0612/umi-okra-grassland-20260724",
+      "snippet": "Kota0612 / umi-okra-grassland-20260724 like 0 Tasks: Robotics Modalities: Image Video Formats: parquet Size: < 1K Tags: umi universal-manipulation-interface imitation-learning diffusion-policy orb-slam3 agriculture + 3 Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community 1 ..."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/datasets?other=orb-slam3",
+      "snippet": "Explore datasets powering machine learning."
+    },
+    {
+      "title": "UMI Okra Grasping — Lab Subset (Unitree Dex1-1) - claru.ai",
+      "url": "https://claru.ai/datasets/orboh-umi-okra-dex1",
+      "snippet": "Universal Manipulation Interface hand-held teleoperation data for okra-fruit grasping and harvesting tasks recorded in a lab mock field. Dataset includes RGB video, end-effector 6DOF pose, and gripper width for training Diffusion Policy models on Unitree G1 humanoid robot."
+    },
+    {
+      "title": "Katō Umi 加藤 うみ (Summer Pockets) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/7154b27efa925512e51b64f0639a3787",
+      "snippet": "Meet Katō Umi 加藤 うみ (Summer Pockets) model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    }
+  ]
+}

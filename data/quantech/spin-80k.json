@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Quantech/spin-80k",
+  "slug": "quantech-spin-80k",
+  "author": "Quantech",
+  "url": "https://huggingface.co/Quantech/spin-80k",
+  "created_at": "2026-08-24T15:33:49.000Z",
+  "updated_at": "2026-08-24T15:33:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "spin",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 238832,
+  "parameters_human": "238832",
+  "storage_bytes": 957560,
+  "storage_human": "957560 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An AI Instagram Model Made $80,000 in a Week. Here Is How the Scam ...",
+      "url": "https://www.ledgerapp.app/blog/ai-instagram-model-fanvue-scam-80k",
+      "snippet": "A Reddit operator detailed how they built a fake AI Instagram model that pulled in $80K from Fanvue subscriptions before Instagram banned the account. The exact playbook, the tells, and what to do about it."
+    },
+    {
+      "title": "QUANTECH AI | Unified Financial Risk & AMLA Compliance",
+      "url": "https://ai.quantech.international/model/index.php",
+      "snippet": "Welcome to the Quantech AI Unified Platform. This enterprise system provides comprehensive risk management, AMLA compliance monitoring, model validation frameworks, regulatory reporting, and AI-powered analytics capabilities."
+    },
+    {
+      "title": "QUANTECH AI | Global Bank Consumer Lending Sales",
+      "url": "https://ai.quantech.international/CLA.html",
+      "snippet": "Welcome to the Global Bank Consumer Lending Sales System. This enterprise platform provides comprehensive loan origination, sales pipeline management, and loan officer performance tracking with AI-powered insights."
+    },
+    {
+      "title": "Quantictech.ai",
+      "url": "https://quantictech.ai/",
+      "snippet": "Advanced AI Platform Quantic helps organizations reduce workplace accidents, improve regulatory compliance, and lower operational and monitoring costs through real-time AI-driven insights. By increasing production efficiency and enhancing operational transparency, our platform enables data-driven decision-making and supports safer, smarter, and more efficient industrial operations."
+    },
+    {
+      "title": "Quantech Innovation | AI & Automation Solutions",
+      "url": "https://quantechinnovation.com/",
+      "snippet": "AI Automation Services Custom AI model training based on your proprietary data, intelligent process automation, and predictive analytics that drive operational efficiency."
+    }
+  ]
+}

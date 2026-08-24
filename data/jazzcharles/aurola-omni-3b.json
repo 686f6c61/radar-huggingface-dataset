@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Jazzcharles/AuroLA-Omni-3B",
+  "slug": "jazzcharles-aurola-omni-3b",
+  "author": "Jazzcharles",
+  "url": "https://huggingface.co/Jazzcharles/AuroLA-Omni-3B",
+  "created_at": "2026-08-23T15:34:52.000Z",
+  "updated_at": "2026-08-23T15:47:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen2_5_omni_thinker",
+    "multimodal",
+    "retrieval",
+    "qwen2.5-omni",
+    "feature-extraction",
+    "arxiv:2602.18010",
+    "base_model:Qwen/Qwen2.5-Omni-3B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4702358528,
+  "parameters_human": "4.70B",
+  "storage_bytes": 9416300964,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen2.5-Omni-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jazzcharles/AuroLA-3B at main - Hugging Face",
+      "url": "https://huggingface.co/Jazzcharles/AuroLA-3B/tree/main",
+      "snippet": "Jazzcharles / AuroLA-3B like 1 Safetensors qwen2_5_omni_thinker arxiv:2602.18010 Model card FilesFiles and versions xet Community 1 Copy to bucket new main AuroLA-3B 9.42 GB Ctrl+K Ctrl+K 1 contributor History:5 commits Jazzcharles Update README.md 8be9066 verified6 months ago .gitattributes Safe 1.57 kBUpload folder using huggingface_hub6 months ago README.md Safe 4.65 kBUpdate README.md6 ..."
+    },
+    {
+      "title": "Jazzcharles/AuroLA-3B · Hugging Face",
+      "url": "https://huggingface.co/Jazzcharles/AuroLA-3B",
+      "snippet": "AuroLA This repo contains the checkpoint of the following paper: Scaling Audio-Text Retrieval with Multimodal Large Language Model Quick Start Try the model to extract audio and text features."
+    },
+    {
+      "title": "GitHub - Jazzcharles/AuroLA",
+      "url": "https://github.com/Jazzcharles/AuroLA",
+      "snippet": "Contribute to Jazzcharles/AuroLA development by creating an account on GitHub."
+    },
+    {
+      "title": "Scaling Audio-Text Retrieval with Multimodal Large Language Models",
+      "url": "https://arxiv.org/pdf/2602.18010",
+      "snippet": "Extensive experiments demonstrate that AuroLA consistently outperforms state-of-the-art models, including the recent PE-AV, while utilising only ∼1% of PE-AV&#x27;s training data. Lastly, we observe clear scaling trends re-garding dataset size and model capacity, validating the ef-fectiveness of MLLM as a unified backbone for audio-text retrieval."
+    },
+    {
+      "title": "Gemini Omni — Google&#x27;s Unified Multimodal Video Model (Announced I/O 2026)",
+      "url": "https://www.vo3ai.com/gemini-omni",
+      "snippet": "Gemini Omni — Google&#x27;s Unified Multimodal AI Video Model Announced today at Google I/O 2026. One model that takes text, image, audio, and video in a single prompt and returns video, edited photos, or a digital avatar — what Sundar Pichai called \"create anything from any input.\" Gemini Omni Flash rolls out today (10s clips, Gemini app + YouTube Shorts). API access in the coming weeks."
+    }
+  ]
+}

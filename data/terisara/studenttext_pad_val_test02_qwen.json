@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Terisara/studenttext_PAD_val_test02_QWEN",
+  "slug": "terisara-studenttext_pad_val_test02_qwen",
+  "author": "Terisara",
+  "url": "https://huggingface.co/Terisara/studenttext_PAD_val_test02_QWEN",
+  "created_at": "2026-08-23T15:18:30.000Z",
+  "updated_at": "2026-08-24T03:11:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349158,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Terisara (Micaraseth) - Hugging Face",
+      "url": "https://huggingface.co/Terisara/models",
+      "snippet": "Sort: Recently updated. Terisara/model_3_alpha_phase. 3B • Updated Mar 22 • 5. Terisara/PAD_student_teacher_m2. 3B • Updated Mar 19 • 10"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
+    }
+  ]
+}

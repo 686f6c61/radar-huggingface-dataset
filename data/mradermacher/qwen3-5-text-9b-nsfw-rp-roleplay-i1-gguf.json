@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-text-9B-NSFW-RP-RolePlay-i1-GGUF",
+  "slug": "mradermacher-qwen3-5-text-9b-nsfw-rp-roleplay-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-text-9B-NSFW-RP-RolePlay-i1-GGUF",
+  "created_at": "2026-08-24T08:37:13.000Z",
+  "updated_at": "2026-08-24T08:57:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay",
+    "base_model:quantized:DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 13599422784,
+  "storage_human": "13.6 GB",
+  "base_model": "DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/qwen3.5-9b-nsfw-captioning-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/qwen3.5-9b-nsfw-captioning-v3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5-9b-nsfw-captioning-v3-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/qwen3.5-9b-nsfw-captioning-v3-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-GGUF is a quantized collection of static GGUF formats derived from the base model at Hugging Face, maintained by mradermacher."
+    },
+    {
+      "title": "Qwen3.5-9B Abliterated: Uncensored Local LLM Guide",
+      "url": "https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/",
+      "snippet": "Unrestricted Uncensored Qwen3.5‑9B Abliterated: Full Guide Learn how to install, run, benchmark and compare the uncensored Qwen3.5‑9B Abliterated model locally on Mac, Windows and Linux. Includes step‑by‑step setup (Ollama, GGUF, llama.cpp, vLLM), hardware requirements, benchmarks, pricing considerations, and comparisons with rival open‑source LLMs."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    }
+  ]
+}

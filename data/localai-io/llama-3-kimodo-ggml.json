@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LocalAI-io/Llama-3-Kimodo-GGML",
+  "slug": "localai-io-llama-3-kimodo-ggml",
+  "author": "LocalAI-io",
+  "url": "https://huggingface.co/LocalAI-io/Llama-3-Kimodo-GGML",
+  "created_at": "2026-08-23T13:46:06.000Z",
+  "updated_at": "2026-08-23T13:55:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "llama-3",
+    "text-embeddings",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 525336576,
+  "parameters_human": "525.3M",
+  "storage_bytes": 15184988302,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocalAI · Make AI run on every machine",
+      "url": "https://localai.io/",
+      "snippet": "LocalAI is the open source AI engine. Run any model, LLMs, vision, voice, image and video, on any hardware. No GPU required."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "Setting Up Models :: LocalAI",
+      "url": "https://localai.io/docs/getting-started/models/",
+      "snippet": "Note: The galleries available in LocalAI can be customized to point to a different URL or a local directory. For more information on how to setup your own gallery, see the Gallery Documentation. Browse Online Visit models.localai.io to browse all available models in your browser. Method 1.5: Import Models via WebUI The WebUI provides a powerful model import interface that supports both simple ..."
+    },
+    {
+      "title": "LocalAI is the open-source AI engine. Run any model - LLMs ... - GitHub",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required. - mudler/LocalAI"
+    }
+  ]
+}

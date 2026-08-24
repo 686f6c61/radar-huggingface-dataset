@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SupraFarts/welarp",
+  "slug": "suprafarts-welarp",
+  "author": "SupraFarts",
+  "url": "https://huggingface.co/SupraFarts/welarp",
+  "created_at": "2026-08-23T21:38:53.000Z",
+  "updated_at": "2026-08-23T21:39:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "W LARP — Luxury AI Prompts",
+      "url": "http://wlarp.com/",
+      "snippet": "800+ premium AI prompts engineered for supercars, penthouses, jets, and the richest aesthetic on the internet. One prompt. Instant results. Get Everything — $19.99 → Start at $4.99 Scroll 800+ AI Prompts 250 Luxury Videos 350 Lifestyle Images $4.99 Starting From Lamborghini Rolls-Royce Ferrari McLaren Miami Penthouse Private Yacht Dark Aesthetic W LARP Lamborghini Rolls-Royce Ferrari ..."
+    },
+    {
+      "title": "Create AI Character | WSUP AI",
+      "url": "https://wsupai.app/create-character",
+      "snippet": "Create a custom AI character with generated profile fields and a portrait, then chat with it online for free on WSUP AI with no sign up."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

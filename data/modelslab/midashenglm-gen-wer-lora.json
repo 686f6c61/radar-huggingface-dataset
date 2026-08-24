@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ModelsLab/midashenglm-gen-wer-lora",
+  "slug": "modelslab-midashenglm-gen-wer-lora",
+  "author": "ModelsLab",
+  "url": "https://huggingface.co/ModelsLab/midashenglm-gen-wer-lora",
+  "created_at": "2026-08-23T14:34:16.000Z",
+  "updated_at": "2026-08-24T05:28:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "audio-generation",
+    "text-to-audio",
+    "lora",
+    "flow-matching",
+    "dataset:mythicinfinity/libritts_r",
+    "dataset:mispeech/MECAT-Caption",
+    "arxiv:2608.11804",
+    "base_model:mispeech/midashenglm-gen",
+    "base_model:adapter:mispeech/midashenglm-gen",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1982065732,
+  "storage_human": "2.0 GB",
+  "base_model": "mispeech/midashenglm-gen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelsLab/midashenglm-gen-wer-lora - Hugging Face",
+      "url": "https://huggingface.co/ModelsLab/midashenglm-gen-wer-lora",
+      "snippet": "A LoRA adapter for mispeech/midashenglm-gen, trained across all five of the model&#x27;s capabilities — speech, sound effects, music, ambience and mixed scenes — rather than trading one for another."
+    },
+    {
+      "title": "GitHub - xiaomi-research/midashenglm-gen: LLM‑driven autoregressive ...",
+      "url": "https://github.com/xiaomi-research/midashenglm-gen",
+      "snippet": "中文说明 MiDashengLM-Gen is an end-to-end framework that uses a pre-trained Large Language Model and audio tokenizer as the backbone, combined with per-token conditional flow matching for autoregressive, variable-length mixed-audio scene generation. It generates coherent 16 kHz audio scenes that simultaneously blend speech, music, sound effects, and environmental acoustics from structured ..."
+    },
+    {
+      "title": "GitHub - xiaomi-research/midashenglm-gen",
+      "url": "https://github.com/xiaomi-research/midashenglm-gen/tree/main",
+      "snippet": "MiDashengLM-Gen is an end-to-end framework that uses a pre-trained Large Language Model and audio tokenizer as the backbone, combined with per-token conditional flow matching for autoregressive, variable-length mixed-audio scene generation. It generates coherent 16 kHz audio scenes that simultaneously blend speech, music, sound effects, and environmental acoustics from structured text ..."
+    },
+    {
+      "title": "Modelslab - Generative AI Platform | AI APIs for Image, Video, Audio & LLMs",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "mispeech/midashenglm-gen at main - Hugging Face",
+      "url": "https://huggingface.co/mispeech/midashenglm-gen/tree/main/models",
+      "snippet": "Instructions to use mispeech/midashenglm-gen with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mispeech/midashenglm-gen with Transformers:"
+    }
+  ]
+}

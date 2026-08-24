@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ganesh714/arq_m1_chairs_DS_r1_Q7",
+  "slug": "ganesh714-arq_m1_chairs_ds_r1_q7",
+  "author": "ganesh714",
+  "url": "https://huggingface.co/ganesh714/arq_m1_chairs_DS_r1_Q7",
+  "created_at": "2026-08-23T10:19:35.000Z",
+  "updated_at": "2026-08-23T10:25:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694642,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ganesh714/arq_m1_chairs · Hugging Face",
+      "url": "https://huggingface.co/ganesh714/arq_m1_chairs",
+      "snippet": "ganesh714 / arq_m1_chairs like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ELISETTI VEERA VENKATA GANESH ganesh714 - GitHub",
+      "url": "https://github.com/ganesh714/",
+      "snippet": "Activity overview Contributed to ganesh714/arc, ganesh714/aus_intranet, ganesh714/lattice and 59 other repositories Code review Issues Pull requests 100% Commits"
+    },
+    {
+      "title": "GitHub - ganesh714/arc",
+      "url": "https://github.com/ganesh714/arc",
+      "snippet": "Loom is a high-performance, professional-grade diagramming application built with React and TypeScript. It features a modern, \"Figma-like\" interface designed for rapid prototyping, flowcharting, and collaboration, supercharged by an embedded Antigravity-style AI Agent."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "microsoft/MAI-DS-R1 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/MAI-DS-R1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

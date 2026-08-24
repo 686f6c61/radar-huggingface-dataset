@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DecentVLA/groot_cubestack_cent_3client",
+  "slug": "decentvla-groot_cubestack_cent_3client",
+  "author": "DecentVLA",
+  "url": "https://huggingface.co/DecentVLA/groot_cubestack_cent_3client",
+  "created_at": "2026-08-23T20:00:29.000Z",
+  "updated_at": "2026-08-23T22:01:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "gr00t",
+  "languages": [],
+  "tags": [
+    "gr00t",
+    "robotics",
+    "vla",
+    "isaac-gr00t",
+    "decent-vla",
+    "cube-stacking",
+    "so-101",
+    "federated",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6482254506,
+  "storage_human": "6.5 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DecentVLA/pi05_cubestack_cent_3client · Hugging Face",
+      "url": "https://huggingface.co/DecentVLA/pi05_cubestack_cent_3client",
+      "snippet": "DecentVLA / pi05_cubestack_cent_3client like 0 Follow Roma decentvla 3 Robotics LeRobot Safetensors vla pi05 decent-vla cube-stacking so-101 federated License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "DecentVLA/smolvla_cubestack_cent_3client · Hugging Face",
+      "url": "https://huggingface.co/DecentVLA/smolvla_cubestack_cent_3client",
+      "snippet": "DecentVLA / smolvla_cubestack_cent_3client like 0 Follow Roma decentvla 3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Previous releases: N1.6 | N1.5 NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Isaac GR00T - Generalist Robot 00 Technology | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/isaac/gr00t",
+      "snippet": "NVIDIA Isaac GR00T Generalist Robot 00 Technology NVIDIA Isaac™ GR00T is an open reference platform for general-purpose humanoid robots that enables developers to more efficiently build, train, test, and deploy AI-powered robots. It comprises open data and data pipelines, an open robot foundation model, simulation frameworks, middleware, CUDA-X accelerated runtime libraries, and NVIDIA ..."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T | DeepWiki",
+      "url": "https://deepwiki.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Isaac-GR00T is a cross-embodiment vision-language-action (VLA) model designed to enable generalist robot control across diverse platforms and tasks. The model processes multimodal inputs—video observations, robot proprioceptive state, and natural language instructions—to generate continuous action sequences for manipulation and locomotion ..."
+    }
+  ]
+}

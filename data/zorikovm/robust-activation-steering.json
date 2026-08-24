@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "zorikovm/robust-activation-steering",
+  "slug": "zorikovm-robust-activation-steering",
+  "author": "zorikovm",
+  "url": "https://huggingface.co/zorikovm/robust-activation-steering",
+  "created_at": "2026-08-24T11:24:57.000Z",
+  "updated_at": "2026-08-24T11:29:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mechanistic-interpretability",
+    "activation-steering",
+    "gpt2",
+    "denoising",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25335391,
+  "storage_human": "25 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adversarial Robustness of Activation Steering in Large Language Models",
+      "url": "https://arxiv.org/html/2606.07696v1",
+      "snippet": "Abstract Activation steering has become a popular training-free method to control LLM behavior by injecting precomputed direction vectors into the model&#x27;s residual stream at inference time. Yet its robustness to realistic input variation remains unstudied. We present the first systematic evaluation of activation steering robustness under adversarial text perturbations on the inputs, covering ..."
+    },
+    {
+      "title": "GitHub - IBM/activation-steering: [ICLR 2025] General-purpose ...",
+      "url": "https://github.com/IBM/activation-steering",
+      "snippet": "This is a general-purpose activation steering library to (1) extract vectors and (2) steer model behavior. We release this library alongside our recent paper on Programming Refusal with Conditional Activation Steering to provide an intuitive toolchain for activation steering efforts."
+    },
+    {
+      "title": "Steering Awareness: Models Can Be Trained to Detect Activation Steering",
+      "url": "https://arxiv.org/html/2511.21399v2",
+      "snippet": "Abstract Activation steering—adding a vector to a language model&#x27;s residual stream—is widely used to elicit latent behaviors and to probe safety-relevant properties. Many steering-based evaluations implicitly assume that the model cannot tell when such an intervention has occurred."
+    },
+    {
+      "title": "GitHub - gowrilikhitha30/activation-steering-alignment: Representation ...",
+      "url": "https://github.com/gowrilikhitha30/activation-steering-alignment",
+      "snippet": "An empirical AI alignment implementation exploring Representation Engineering and Activation Steering within open-source transformer architectures. This repository serves as the technical research project for my application to the AI Alignment Foundation (AIAF) Fellowship 2026."
+    },
+    {
+      "title": "Activation Steering: A New Frontier in AI Control—But Does It Scale?",
+      "url": "https://huggingface.co/blog/royswastik/activation-steering",
+      "snippet": "A Blog post by Swastik Roy on Hugging Face"
+    }
+  ]
+}

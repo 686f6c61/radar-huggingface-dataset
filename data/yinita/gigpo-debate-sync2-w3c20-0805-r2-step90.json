@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yinita/gigpo-debate-sync2-w3c20-0805-r2-step90",
+  "slug": "yinita-gigpo-debate-sync2-w3c20-0805-r2-step90",
+  "author": "yinita",
+  "url": "https://huggingface.co/yinita/gigpo-debate-sync2-w3c20-0805-r2-step90",
+  "created_at": "2026-08-24T11:00:49.000Z",
+  "updated_at": "2026-08-24T11:00:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "gigpo",
+    "ps4mas",
+    "debate",
+    "base_model:yinita/ps4mas-sft-x5-single-ep3",
+    "base_model:adapter:yinita/ps4mas-sft-x5-single-ep3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136415205,
+  "storage_human": "136 MB",
+  "base_model": "yinita/ps4mas-sft-x5-single-ep3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yinita/gigpo-debate-sync2-w3c20-0805-r2-step0 · Discussions",
+      "url": "https://huggingface.co/yinita/gigpo-debate-sync2-w3c20-0805-r2-step0/discussions",
+      "snippet": "Instructions to use yinita/gigpo-debate-sync2-w3c20-0805-r2-step0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yinita/gigpo-multi-topo-sync2-w3c20-0729-debate-step40 · Hugging Face",
+      "url": "https://huggingface.co/yinita/gigpo-multi-topo-sync2-w3c20-0729-debate-step40",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Group-in-Group Policy Optimization for LLM Agent Training",
+      "url": "https://arxiv.org/abs/2505.10978",
+      "snippet": "Recent advances in group-based reinforcement learning (RL) have driven frontier large language models (LLMs) in single-turn tasks like mathematical reasoning. However, their scalability to multi-turn LLM agent training remains limited. Unlike static tasks, agent-environment interactions unfold over many steps and often yield sparse or delayed rewards, making credit assignment across individual ..."
+    }
+  ]
+}

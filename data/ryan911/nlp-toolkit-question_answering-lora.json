@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ryan911/nlp-toolkit-question_answering-lora",
+  "slug": "ryan911-nlp-toolkit-question_answering-lora",
+  "author": "Ryan911",
+  "url": "https://huggingface.co/Ryan911/nlp-toolkit-question_answering-lora",
+  "created_at": "2026-08-24T13:08:29.000Z",
+  "updated_at": "2026-08-24T13:08:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89901176,
+  "storage_human": "90 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Question Answering API, Based on Generative AI - NLP Cloud",
+      "url": "https://nlpcloud.com/nlp-question-answering-api.html",
+      "snippet": "Question answering is a central domain in many AI powered applications. Discover what question answer answering is about and how to leverage generative AI to get advanced results."
+    },
+    {
+      "title": "LoRA/examples/NLU/examples/question-answering at main - GitHub",
+      "url": "https://github.com/microsoft/LoRA/tree/main/examples/NLU/examples/question-answering",
+      "snippet": "The BERT model bert-base-uncased was pretrained with default absolute position embeddings. We provide the following pretrained models which were pre-trained on the same training data (BooksCorpus and English Wikipedia) as in the BERT model training, but with different relative position embeddings."
+    },
+    {
+      "title": "Question answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/question_answering",
+      "snippet": "Question answering Question answering tasks return an answer given a question. If you&#x27;ve ever asked a virtual assistant like Alexa, Siri or Google what the weather is, then you&#x27;ve used a question answering model before. There are two common types of question answering tasks:"
+    },
+    {
+      "title": "nlp-question-answering · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/nlp-question-answering",
+      "snippet": "nlp html machine-learning ai artificial-intelligence question-answering cortex html-questions nlp-machine-learning nlp-question-answering Updated on Apr 9, 2021 Python"
+    },
+    {
+      "title": "NLTK :: Natural Language Toolkit",
+      "url": "https://www.nltk.org/",
+      "snippet": "Natural Language Toolkit NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an ..."
+    }
+  ]
+}

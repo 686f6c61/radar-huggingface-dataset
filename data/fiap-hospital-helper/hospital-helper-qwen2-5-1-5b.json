@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fiap-hospital-helper/hospital-helper-qwen2.5-1.5b",
+  "slug": "fiap-hospital-helper-hospital-helper-qwen2-5-1-5b",
+  "author": "fiap-hospital-helper",
+  "url": "https://huggingface.co/fiap-hospital-helper/hospital-helper-qwen2.5-1.5b",
+  "created_at": "2026-08-10T12:36:55.000Z",
+  "updated_at": "2026-08-23T22:01:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 280,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186356180,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiap-hospital-helper/hospital-helper-qwen2.5-1.5b · Hugging Face",
+      "url": "https://huggingface.co/fiap-hospital-helper/hospital-helper-qwen2.5-1.5b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FIAP-TechChallenge-Fase3-Hospital-Helper - Hugging Face",
+      "url": "https://huggingface.co/fiap-hospital-helper/models",
+      "snippet": "Org profile for FIAP-TechChallenge-Fase3-Hospital-Helper on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5 1.5B: GenAI Large Language Model | Hailo Edge AI",
+      "url": "https://hailo.ai/products/hailo-software/model-explorer/generative-ai/qwen2-5-1-5b/",
+      "snippet": "Experience Qwen2.5 1.5B, a fast, multilingual GenAI large language model model with 1.5B parameters and Apache license. Try it out now."
+    }
+  ]
+}

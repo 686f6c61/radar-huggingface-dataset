@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "blueholez/exaone-nsmc-lora-merged-bluehoez",
+  "slug": "blueholez-exaone-nsmc-lora-merged-bluehoez",
+  "author": "blueholez",
+  "url": "https://huggingface.co/blueholez/exaone-nsmc-lora-merged-bluehoez",
+  "created_at": "2026-08-21T05:30:05.000Z",
+  "updated_at": "2026-08-24T00:57:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "exaone4",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 265,
+  "trending_score": 0,
+  "parameters": 1279391488,
+  "parameters_human": "1.28B",
+  "storage_bytes": 5117642576,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "blueholez/exaone-nsmc-lora-merged-bluehoez · Hugging Face",
+      "url": "https://huggingface.co/blueholez/exaone-nsmc-lora-merged-bluehoez",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "exaone-nsmc-lora-blueholez-GGUF - Hugging Face",
+      "url": "https://huggingface.co/blueholez/exaone-nsmc-lora-blueholez-GGUF",
+      "snippet": "Instructions to use blueholez/exaone-nsmc-lora-blueholez-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use blueholez/exaone-nsmc-lora-blueholez-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Model Merging - invoke-training",
+      "url": "https://invoke-ai.github.io/invoke-training/guides/model_merge/",
+      "snippet": "Model Merging invoke-training provides utility scripts for several common model merging workflows. This page contains a summary of the available tools. extract_lora_from_model_diff.py Extract a LoRA model that represents the difference between two base models. Note that the extracted LoRA model is a lossy representation of the difference between the models, so some degradation in quality is ..."
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Improve performance while maintaining inference costs Create new capabilities through creative model combinations Unlike traditional ensembling which requires running multiple models, merged models maintain the same inference cost as a single model while often achieving comparable or superior performance."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-4.5",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-4.5",
+      "snippet": "We introduce EXAONE 4.5, the first open-weight vision language model developed by LG AI Research. Integrating a dedicated visual encoder into the existing EXAONE 4.0 framework, we expand the model&#x27;s capability toward multimodality."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wrchen1/LatentMT-2.6B-eng-latn-knc-latn",
+  "slug": "wrchen1-latentmt-2-6b-eng-latn-knc-latn",
+  "author": "wrchen1",
+  "url": "https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-knc-latn",
+  "created_at": "2026-08-24T00:55:14.000Z",
+  "updated_at": "2026-08-24T00:55:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "machine-translation",
+    "research",
+    "text-generation",
+    "arxiv:2607.18618",
+    "base_model:ByteDance/Ouro-2.6B-Thinking",
+    "base_model:adapter:ByteDance/Ouro-2.6B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121200208,
+  "storage_human": "121 MB",
+  "base_model": "ByteDance/Ouro-2.6B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LatentMT/LatentMT-2.6B-eng-latn-knc-latn · Hugging Face",
+      "url": "https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-knc-latn",
+      "snippet": "LatentMT-2.6B-eng-latn-knc-latn This repository includes the LoRA adapter checkpoint for eng_Latn-knc_Latn from the paper LatentMT: Machine Translation with Latent Reasoning."
+    },
+    {
+      "title": "LatentMT/LatentMT-2.6B-eng-latn-crh-latn · Hugging Face",
+      "url": "https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-crh-latn",
+      "snippet": "LatentMT-2.6B-eng-latn-crh-latn This repository includes the LoRA adapter checkpoint for eng_Latn-crh_Latn from the paper LatentMT: Machine Translation with Latent Reasoning."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

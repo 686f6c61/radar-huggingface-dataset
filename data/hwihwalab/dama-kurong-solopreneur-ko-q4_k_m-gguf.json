@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/dama-kurong-solopreneur-ko-Q4_K_M-GGUF",
+  "slug": "hwihwalab-dama-kurong-solopreneur-ko-q4_k_m-gguf",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/dama-kurong-solopreneur-ko-Q4_K_M-GGUF",
+  "created_at": "2026-08-24T09:09:47.000Z",
+  "updated_at": "2026-08-24T09:09:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "gemma",
+    "gemma-2",
+    "lora",
+    "solopreneur",
+    "assistant",
+    "tamagotchi",
+    "kurong",
+    "korean",
+    "text-generation",
+    "llama-cpp",
+    "gguf-my-repo",
+    "ko",
+    "base_model:hwihwalab/dama-kurong-solopreneur-ko",
+    "base_model:adapter:hwihwalab/dama-kurong-solopreneur-ko",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 1708584704,
+  "storage_human": "1.7 GB",
+  "base_model": "hwihwalab/dama-kurong-solopreneur-ko",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Q4_K_M Explained: The Sweet Spot for Running LLMs Locally",
+      "url": "https://skillwisor.com/2026/04/14/q4_k_m-explained-the-sweet-spot-for-running-llms-locally/",
+      "snippet": "Local AI / GGUF Format Q4_K_M Explained: The Sweet Spot for Running LLMs Locally A practical guide to quantization, GGUF, and why Q4_K_M is the go-to format for local inference Running large language models locally used to require server-grade hardware. Today, a laptop with 16GB of RAM can comfortably run a capable 7B or 13B…"
+    },
+    {
+      "title": "GGUF model list - mitjafelicijan.github.io",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    },
+    {
+      "title": "Aldaris/Qwen3-8B-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Aldaris/Qwen3-8B-Q4_K_M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

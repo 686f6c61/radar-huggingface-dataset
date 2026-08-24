@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "andreayhchen/pythia-1b-heap-replication",
+  "slug": "andreayhchen-pythia-1b-heap-replication",
+  "author": "andreayhchen",
+  "url": "https://huggingface.co/andreayhchen/pythia-1b-heap-replication",
+  "created_at": "2026-08-22T18:01:11.000Z",
+  "updated_at": "2026-08-24T00:23:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_neox",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 1011781632,
+  "parameters_human": "1.01B",
+  "storage_bytes": 34613325289,
+  "storage_human": "34.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-1b · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1b",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "EleutherAI/pythia-1b-v0 · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1b-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "pythia/models/1B/pythia-1b.yml at main · EleutherAI/pythia",
+      "url": "https://github.com/EleutherAI/pythia/blob/main/models/1B/pythia-1b.yml",
+      "snippet": "The hub for EleutherAI&#x27;s work on interpretability and learning dynamics - EleutherAI/pythia"
+    },
+    {
+      "title": "Model Architecture | EleutherAI/pythia | DeepWiki",
+      "url": "https://deepwiki.com/EleutherAI/pythia/1.1-model-architecture",
+      "snippet": "This document describes the architecture of the Pythia language models. It focuses on the technical aspects of the model design, including the transformer architecture, model sizes, and key configurat"
+    }
+  ]
+}

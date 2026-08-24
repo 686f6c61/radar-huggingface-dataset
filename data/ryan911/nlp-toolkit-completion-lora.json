@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ryan911/nlp-toolkit-completion-lora",
+  "slug": "ryan911-nlp-toolkit-completion-lora",
+  "author": "Ryan911",
+  "url": "https://huggingface.co/Ryan911/nlp-toolkit-completion-lora",
+  "created_at": "2026-08-24T13:13:07.000Z",
+  "updated_at": "2026-08-24T13:13:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89901176,
+  "storage_human": "90 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    },
+    {
+      "title": "NLTK :: Natural Language Toolkit",
+      "url": "https://www.nltk.org/",
+      "snippet": "Natural Language Toolkit NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an ..."
+    },
+    {
+      "title": "LoRA · Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/training/lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Practices for Training LoRA Models with Z-Image: Complete 2026 ...",
+      "url": "https://dev.to/gary_yan_86eb77d35e0070f5/best-practices-for-training-lora-models-with-z-image-complete-2026-guide-4p7h",
+      "snippet": "This comprehensive guide covers everything you need to know about training high-quality LoRA models using Z-Image and modern AI image generation tools. What is LoRA Training? LoRA (Low-Rank Adaptation) is a fine-tuning technique that allows you to train AI models to generate specific subjects or styles without retraining the entire base model."
+    }
+  ]
+}

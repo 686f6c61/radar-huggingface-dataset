@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SpacemiT/Qwen3.5-0.8B",
+  "slug": "spacemit-qwen3-5-0-8b",
+  "author": "SpacemiT",
+  "url": "https://huggingface.co/SpacemiT/Qwen3.5-0.8B",
+  "created_at": "2026-08-24T02:10:39.000Z",
+  "updated_at": "2026-08-24T03:44:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "onnx",
+    "gguf",
+    "qwen3.5",
+    "spacemit",
+    "k1",
+    "k3",
+    "onnxruntime",
+    "image-text-to-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1137771668,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
+      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    },
+    {
+      "title": "Qwen3.5-0.8B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-0-8b",
+      "snippet": "The smallest Qwen3.5 model — a dense 0.8B designed for the most constrained on-device deployments, operating in non-thinking (instruct) mode by default. Apache-2.0, with native vision, a 262K-token context, and the family&#x27;s hybrid thinking / non-thinking mode; needs roughly 2GB of VRAM and runs under 2GB at 4-bit, targeting smartphones and embedded hardware. Notable for a sub-1B model, it ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

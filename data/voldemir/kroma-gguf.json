@@ -5,7 +5,7 @@
   "author": "voldemir",
   "url": "https://huggingface.co/voldemir/Kroma-GGUF",
   "created_at": "2026-08-13T09:40:24.000Z",
-  "updated_at": "2026-08-14T22:35:53.000Z",
+  "updated_at": "2026-08-23T21:04:54.000Z",
   "license": "krea-2-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 289,
+  "downloads_30d": 309,
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 41005029550,
-  "storage_human": "41.0 GB",
+  "storage_bytes": 54627703630,
+  "storage_human": "54.6 GB",
   "base_model": "Krea/Krea-2, lodestones/Kroma",
   "formats": [
     "gguf"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nilnguyen2k/mit67_fusion_sum",
+  "slug": "nilnguyen2k-mit67_fusion_sum",
+  "author": "nilnguyen2k",
+  "url": "https://huggingface.co/nilnguyen2k/mit67_fusion_sum",
+  "created_at": "2026-08-23T05:15:32.000Z",
+  "updated_at": "2026-08-23T08:34:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "scene-recognition",
+    "multimodal",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2343021,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nilnguyen2k/mit67_fusion_head · Hugging Face",
+      "url": "https://huggingface.co/nilnguyen2k/mit67_fusion_head",
+      "snippet": "nilnguyen2k / mit67_fusion_head like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "nilnguyen2k/mit67_fusion_v2 · Hugging Face",
+      "url": "https://huggingface.co/nilnguyen2k/mit67_fusion_v2",
+      "snippet": "nilnguyen2k / mit67_fusion_v2 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "nilnguyen2k (Ni Elam) · GitHub",
+      "url": "https://github.com/nilnguyen2k",
+      "snippet": "nilnguyen2k has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "AI Accelerates &#x27;Artificial Sun&#x27; Fusion Reactor Simulations by 1,000 ...",
+      "url": "https://www.dongascience.com/en/news/70083",
+      "snippet": "A South Korean research team has contributed to securing the stability of fusion reactions by developing an artificial intelligence (AI) model that can simulate the process of particle collisions inside a fusion reactor 1,000 times faster."
+    }
+  ]
+}

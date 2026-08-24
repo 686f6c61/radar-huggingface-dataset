@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "castle945/OpenOcc3D",
+  "slug": "castle945-openocc3d",
+  "author": "castle945",
+  "url": "https://huggingface.co/castle945/OpenOcc3D",
+  "created_at": "2026-08-23T15:54:41.000Z",
+  "updated_at": "2026-08-23T15:54:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - castle945/OpenOcc3D",
+      "url": "https://github.com/castle945/OpenOcc3D",
+      "snippet": "Contribute to castle945/OpenOcc3D development by creating an account on GitHub."
+    },
+    {
+      "title": "castle945 - GitHub",
+      "url": "https://github.com/castle945",
+      "snippet": "Done is better than perfect. castle945 has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Castle (AI) - Download Free 3D model by Wikiquik - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/castle-ai-bec94f73fb4842c1bb6dd31a8bfc41d6",
+      "snippet": "Castle (AI) 3D Model Wikiquik Follow 47 47 Downloads 330 330 Views 13Like Download 3D Model Add to Embed Share Report Triangles: 1.9M Vertices: 947.5k More model information"
+    },
+    {
+      "title": "Free Castle 3D Models Download and | AI 3D Model",
+      "url": "https://ai3dmodel.app/3d-models/castle",
+      "snippet": "Discover high-quality castle 3D models free to download in multiple formats. Ready for 3D printing, games, AR/VR — and generate custom castle 3D models in one click."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

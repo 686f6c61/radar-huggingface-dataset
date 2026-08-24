@@ -5,7 +5,7 @@
   "author": "powerstone829",
   "url": "https://huggingface.co/powerstone829/so101_plastic_tomato_act_v4_msi_gpu",
   "created_at": "2026-08-19T08:39:10.000Z",
-  "updated_at": "2026-08-22T04:20:29.000Z",
+  "updated_at": "2026-08-23T17:47:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,20 +14,20 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
+    "act",
     "dataset:powerstone829/so101_plastic_tomato_v2_20260813_201008",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 51771014,
   "parameters_human": "51.8M",
-  "storage_bytes": 828452456,
-  "storage_human": "828 MB",
+  "storage_bytes": 1449780464,
+  "storage_human": "1.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

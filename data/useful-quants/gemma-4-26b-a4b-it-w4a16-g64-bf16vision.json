@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "useful-quants/Gemma-4-26B-A4B-it-W4A16-G64-BF16Vision",
+  "slug": "useful-quants-gemma-4-26b-a4b-it-w4a16-g64-bf16vision",
+  "author": "useful-quants",
+  "url": "https://huggingface.co/useful-quants/Gemma-4-26B-A4B-it-W4A16-G64-BF16Vision",
+  "created_at": "2026-08-23T09:39:19.000Z",
+  "updated_at": "2026-08-23T10:07:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "gemma",
+    "vision-language",
+    "multimodal",
+    "quantized",
+    "qat",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "w4a16",
+    "int4",
+    "g64",
+    "compressed-tensors",
+    "marlin",
+    "ampere",
+    "rtx-3090",
+    "conversational",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "base_model:Mitchins/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic",
+    "base_model:quantized:Mitchins/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 15689048731,
+  "storage_human": "15.7 GB",
+  "base_model": "Mitchins/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Gemma 4 26b a4b: Google&#x27;s Open-Source Reasoning Guide 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-26b-a4b",
+      "snippet": "The release of Google&#x27;s latest open-source AI series has sent shockwaves through the development community, particularly with the introduction of the gemma 4 26b a4b model. Published on April 2, 2026, under the Apache 2.0 license, this model represents a massive leap in causal reasoning and complex logic."
+    },
+    {
+      "title": "Quantized Models for google/gemma-4-26B-A4B-it - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B-it",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GotoAI-Inc/gemma-4-26B-A4B-it-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/GotoAI-Inc/gemma-4-26B-A4B-it-W4A16",
+      "snippet": "All model capabilities, evaluations and limitations belong to the original model card — see the base model for those. Unlike the 12B and 31B, Google publishes no qat-w4a16-ct build at this size. Its own 4-bit release for the 26B A4B is qat-q4_0-gguf, which is llama.cpp-only, and NVIDIA&#x27;s NVFP4 build needs a Blackwell card."
+    },
+    {
+      "title": "Google/gemma-4-26B-A4B-it | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Google/gemma-4-26B-A4B-it",
+      "snippet": "Google&#x27;s Gemma 4 MoE multimodal model (26B total / 4B active) with 128 fine-grained experts, top-8 routing, thinking mode, and tool-use protocol."
+    }
+  ]
+}

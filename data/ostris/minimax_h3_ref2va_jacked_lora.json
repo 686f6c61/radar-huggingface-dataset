@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ostris/minimax_h3_ref2va_jacked_lora",
+  "slug": "ostris-minimax_h3_ref2va_jacked_lora",
+  "author": "ostris",
+  "url": "https://huggingface.co/ostris/minimax_h3_ref2va_jacked_lora",
+  "created_at": "2026-08-20T20:14:55.000Z",
+  "updated_at": "2026-08-21T13:35:10.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "video-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 311,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155110072,
+  "storage_human": "155 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ostris/minimax_h3_ref2va_jacked_lora · Hugging Face",
+      "url": "https://huggingface.co/ostris/minimax_h3_ref2va_jacked_lora",
+      "snippet": "ostris / minimax_h3_ref2va_jacked_lora like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "ostris/minimax_h3_ref2va_jacked_lora · What is this Lora?",
+      "url": "https://huggingface.co/ostris/minimax_h3_ref2va_jacked_lora/discussions/1",
+      "snippet": "What does it do, and how do we use it?"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "GitHub - ostris/ComfyUI-AIToolkit-MiniMaxH3",
+      "url": "https://github.com/ostris/ComfyUI-AIToolkit-MiniMaxH3",
+      "snippet": "ComfyUI-AIToolkit-MiniMaxH3 Reference-video preprocessing for MiniMax-H3 ref2va that matches ai-toolkit exactly, so LoRAs trained there behave the same in ComfyUI."
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    }
+  ]
+}

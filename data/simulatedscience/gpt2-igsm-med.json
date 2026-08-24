@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SimulatedScience/gpt2-igsm-med",
+  "slug": "simulatedscience-gpt2-igsm-med",
+  "author": "SimulatedScience",
+  "url": "https://huggingface.co/SimulatedScience/gpt2-igsm-med",
+  "created_at": "2026-07-10T21:42:16.000Z",
+  "updated_at": "2026-08-23T13:19:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17402556848,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SimulatedScience (Sebastian jost) - Hugging Face",
+      "url": "https://huggingface.co/SimulatedScience",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago ... updated a dataset about 11 hours ago"
+    },
+    {
+      "title": "SimulatedScience (Sebastian jost) - Hugging Face",
+      "url": "https://huggingface.co/SimulatedScience/datasets",
+      "snippet": "SimulatedScience&#x27;s datasets1 Sort: Recently updated SimulatedScience/igsm-117Mproblems Viewer •Updated 2 days ago•51.4M• 21"
+    },
+    {
+      "title": "gpt2 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/gpt2/",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "Accelerate the development of healthcare-based AI applications MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "GitHub - openai/gpt-2: Code for the paper \"Language Models are ...",
+      "url": "https://github.com/openai/gpt-2",
+      "snippet": "GPT-2 models&#x27; robustness and worst case behaviors are not well-understood. As with any machine-learned model, carefully evaluate GPT-2 for your use case, especially if used without fine-tuning or in safety-critical applications where reliability is important. The dataset our GPT-2 models were trained on contains many texts with biases and factual inaccuracies, and thus GPT-2 models are likely ..."
+    }
+  ]
+}

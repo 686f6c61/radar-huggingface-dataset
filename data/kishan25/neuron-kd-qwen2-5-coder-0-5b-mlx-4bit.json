@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Kishan25/neuron-kd-qwen2.5-coder-0.5b-mlx-4bit",
+  "slug": "kishan25-neuron-kd-qwen2-5-coder-0-5b-mlx-4bit",
+  "author": "Kishan25",
+  "url": "https://huggingface.co/Kishan25/neuron-kd-qwen2.5-coder-0.5b-mlx-4bit",
+  "created_at": "2026-08-23T05:58:20.000Z",
+  "updated_at": "2026-08-23T05:58:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "code-generation",
+    "knowledge-distillation",
+    "qwen",
+    "mbpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:google-research-datasets/mbpp",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77252992,
+  "parameters_human": "77.3M",
+  "storage_bytes": 289487117,
+  "storage_human": "289 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kishan25/neuron-kd-qwen2.5-coder-0.5b-mlx-4bit · Hugging Face",
+      "url": "https://huggingface.co/Kishan25/neuron-kd-qwen2.5-coder-0.5b-mlx-4bit",
+      "snippet": "Neuron KD — Qwen2.5-Coder-0.5B (MLX, 4-bit) The on-device code reviewer behind the Neuron iOS app&#x27;s Code Lab. Qwen2.5-Coder-.5B-Instruct, fine-tuned via hybrid knowledge distillation (sequence-level CE + KL on teacher logits) from Qwen2.5-Coder-32B-Instruct on Python problems from MBPP, then merged (LoRA folded into the base weights) and converted to MLX format at 4-bit (group size 64 ..."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v2",
+      "snippet": "2 Model Architecture Architecture The architecture of Qwen2.5-Coder is derived directly from Qwen2.5. Table 1 outlines the architecture of Qwen2.5-Coder across six different model sizes: 0.5B, 1.5B, 3B, 7B, 14B, and 32B parameters. While all sizes share the same architecture in terms of head size, they differ in several other key aspects."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "Abstract † In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable ..."
+    },
+    {
+      "title": "Qwen2.5-Coder - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen 2.5-Coder — Local Setup, VRAM, and Use Cases (2026) | local-llm.net",
+      "url": "https://www.local-llm.net/models/qwen-2-5-coder/",
+      "snippet": "Code-specialized Qwen 2.5. Strongest open-weight code model in its size class, supports fill-in-middle and chat. Run Qwen 2.5-Coder locally with Ollama, Mullama, or llama.cpp. VRAM requirements, 6 size options, and which size fits your hardware."
+    }
+  ]
+}

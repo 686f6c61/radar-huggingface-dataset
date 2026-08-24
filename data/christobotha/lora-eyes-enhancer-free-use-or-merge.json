@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ChristoBotha/lora-eyes-enhancer-free-use-or-merge",
+  "slug": "christobotha-lora-eyes-enhancer-free-use-or-merge",
+  "author": "ChristoBotha",
+  "url": "https://huggingface.co/ChristoBotha/lora-eyes-enhancer-free-use-or-merge",
+  "created_at": "2026-08-24T14:21:29.000Z",
+  "updated_at": "2026-08-24T14:21:29.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "sdxl",
+    "sdxl-1.0",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228902036,
+  "storage_human": "229 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lora eyes enhancer (free use or merge) - pony/xl V3 - Civitai",
+      "url": "https://civitai.com/models/365708/lora-eyes-enhancer-free-use-or-merge",
+      "snippet": "Enhance eyes in your images with this free Lora tool, compatible for use or merging with other models."
+    },
+    {
+      "title": "Lora eyes enhancer (free use or merge) — Model Hub — Yodayo",
+      "url": "https://yodayo.com/models/a52a0868-8764-4bfb-8956-b6e6e29fad21",
+      "snippet": "Try out Lora eyes enhancer (free use or merge) on Yodayo! pony/xl/illustrious/anime/realistic All-in-one lora, it will beautify the eyes of your creations, it ..."
+    },
+    {
+      "title": "Lora eyes enhancer (free use or merge) Reviews - Civitai",
+      "url": "https://civitai.com/models/365708/reviews",
+      "snippet": "Explore user reviews of the Lora eyes enhancer (free use or merge) AI model on Civitai, rated 5 stars by 1171 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "Lora eyes enhancer (free use or merge) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/seaart/models/a8b7183662eaa223d00cb89b7a19b9af/versions/41e66f569c6d6d1f0f0519f45bf981cf",
+      "snippet": "Download Lora eyes enhancer (free use or merge) - LORA for SDXL 1.0 by 1d268e664839161593d4bab02b12a4d0. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Lora eyes enhancer (free use or merge) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/a8b7183662eaa223d00cb89b7a19b9af",
+      "snippet": "Explore Lora eyes enhancer (free use or merge) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/ECAPA-TDNN-Speaker-ExecuTorch",
+  "slug": "mlboydaisuke-ecapa-tdnn-speaker-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/ECAPA-TDNN-Speaker-ExecuTorch",
+  "created_at": "2026-08-24T00:36:42.000Z",
+  "updated_at": "2026-08-24T00:37:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "audio-classification",
+    "speaker-verification",
+    "base_model:speechbrain/spkrec-ecapa-voxceleb",
+    "base_model:quantized:speechbrain/spkrec-ecapa-voxceleb",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126425996,
+  "storage_human": "126 MB",
+  "base_model": "speechbrain/spkrec-ecapa-voxceleb",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECAPA-TDNN Speaker Recognition Guide | AI Understanding",
+      "url": "https://aiunderstanding.org/learn/ecapa-tdnn-speaker-recognition",
+      "snippet": "ECAPA-TDNN Speaker Recognition sits in audio-AI workflows that transform speech, music, and sound for communication, accessibility, and media production."
+    },
+    {
+      "title": "speechbrain/speechbrain/lobes/models/ECAPA_TDNN.py at develop ... - GitHub",
+      "url": "https://github.com/speechbrain/speechbrain/blob/develop/speechbrain/lobes/models/ECAPA_TDNN.py",
+      "snippet": "jordanozang and TParcollet Fix for Tracing ECAPA-TDNN Embedding Model (#2982) c6d2a8b · 10 months ago History 636 lines (548 loc) · 18 KB"
+    },
+    {
+      "title": "[2005.07143] ECAPA-TDNN: Emphasized Channel Attention, Propagation and ...",
+      "url": "https://arxiv.org/abs/2005.07143",
+      "snippet": "Current speaker verification techniques rely on a neural network to extract speaker representations. The successful x-vector architecture is a Time Delay Neural Network (TDNN) that applies statistics pooling to project variable-length utterances into fixed-length speaker characterizing embeddings. In this paper, we propose multiple enhancements to this architecture based on recent trends in ..."
+    },
+    {
+      "title": "[2104.01466] ECAPA-TDNN Embeddings for Speaker Diarization",
+      "url": "https://arxiv.org/abs/2104.01466",
+      "snippet": "The ECAPA-TDNN model turned out to provide robust speaker embeddings under both close-talking and distant-talking conditions. Our results on the popular AMI meeting corpus show that our system significantly outperforms recently proposed approaches."
+    },
+    {
+      "title": "GitHub - TaoRuijie/ECAPA-TDNN: Unofficial reimplementation of ECAPA ...",
+      "url": "https://github.com/TaoRuijie/ECAPA-TDNN",
+      "snippet": "This repository contains my unofficial reimplementation of the standard ECAPA-TDNN, which is the speaker recognition in VoxCeleb2 dataset. This repository is modified based on voxceleb_trainer."
+    }
+  ]
+}

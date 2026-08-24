@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "25ds/tds-carbon-card",
+  "slug": "25ds-tds-carbon-card",
+  "author": "25ds",
+  "url": "https://huggingface.co/25ds/tds-carbon-card",
+  "created_at": "2026-08-23T14:55:42.000Z",
+  "updated_at": "2026-08-23T14:59:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "25ds1000032/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/25ds1000032/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (3 GPUs) Training Mode: pre-training Region: europe-west4 GPU Hours: 386.1h (PUE: 1.12) Total Energy: 454.0536 kWh CO₂ Emissions: 90.811 kg ..."
+    },
+    {
+      "title": "24f1002805/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f1002805/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Model Card Toolkit | Responsible AI Toolkit - TensorFlow",
+      "url": "https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide",
+      "snippet": "The Model Card Toolkit (MCT) library streamlines and automates generation of Model Cards, machine learning documents that provide context and transparency into a model&#x27;s development and performance."
+    },
+    {
+      "title": "GitHub - ivylee/model-cards-and-datasheets: A collection of machine ...",
+      "url": "https://github.com/ivylee/model-cards-and-datasheets",
+      "snippet": "Model Cards for Model Reporting DAG Card is the new Model Card Face Detection, Google Cloud Vision API Object Detection, Google Cloud Vision API Toxicity, Google Conversation AI GPT-2, Open AI GPT-3, Open AI PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models \"The Human Body is a Black Box\": Supporting Clinical Decision-Making with Deep Learning MediaPipe ..."
+    }
+  ]
+}

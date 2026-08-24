@@ -5,7 +5,7 @@
   "author": "Lambent",
   "url": "https://huggingface.co/Lambent/RWKV7-2.9B-midtrain50-docs-lora",
   "created_at": "2026-08-23T00:18:25.000Z",
-  "updated_at": "2026-08-23T00:21:48.000Z",
+  "updated_at": "2026-08-23T23:06:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
     "dataset:recursal/SuperWikiNEXT-32B",
     "dataset:epfml/FineWeb2-HQ",
     "dataset:Lambent/fineweb2-hq-seeds",
-    "base_model:RWKV/RWKV7-1.5B-20260805",
-    "base_model:finetune:RWKV/RWKV7-1.5B-20260805",
+    "base_model:RWKV/RWKV7-2.9B-20260805",
+    "base_model:finetune:RWKV/RWKV7-2.9B-20260805",
     "license:apache-2.0",
     "region:us"
   ],
@@ -39,7 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 755025272,
   "storage_human": "755 MB",
-  "base_model": "RWKV/RWKV7-1.5B-20260805",
+  "base_model": "RWKV/RWKV7-2.9B-20260805",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-W4A16",
+  "slug": "gorbatjovy-qwen3-8-27b-cold-fusion-gain-v1-1-heretic-w4a16",
+  "author": "gorbatjovy",
+  "url": "https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-W4A16",
+  "created_at": "2026-08-24T13:45:30.000Z",
+  "updated_at": "2026-08-24T14:43:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "cold-fusion",
+    "vision-language",
+    "mtp",
+    "w4a16",
+    "int4",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
+    "base_model:quantized:gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 16551668317,
+  "storage_human": "16.6 GB",
+  "base_model": "gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business faster, with less \"talking\" and is smarter too. Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF-etheroi",
+      "url": "https://huggingface.co/developerjeremylive/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF-etheroi",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business faster, with less \"talking\" and is smarter too. Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to ..."
+    },
+    {
+      "title": "Qwen3.8-27B Cold Fusion Cuts Thinking Tokens Without ... - HackerNoon",
+      "url": "https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance",
+      "snippet": "Explore Qwen3.8-27B Cold Fusion, a 27B AI model designed to cut thinking tokens while retaining strong quantized reasoning performance."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

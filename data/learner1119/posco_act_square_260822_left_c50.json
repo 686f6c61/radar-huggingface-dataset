@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "learner1119/posco_act_square_260822_left_c50",
+  "slug": "learner1119-posco_act_square_260822_left_c50",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/posco_act_square_260822_left_c50",
+  "created_at": "2026-08-23T04:23:51.000Z",
+  "updated_at": "2026-08-23T04:24:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "behavioral-cloning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51621512,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206515100,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "POSCO DX Builds NPU-Based AI Platform, Cutting Power Use 90%",
+      "url": "https://en.sedaily.com/technology/2026/08/18/posco-dx-builds-npu-based-ai-platform-cutting-power-use-90",
+      "snippet": "POSCO DX developed an NPU-based Vision AI Platform that cuts power use by about 90% and infrastructure costs by 50% at industrial sites."
+    }
+  ]
+}

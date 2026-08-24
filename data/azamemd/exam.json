@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "azamemd/Exam",
+  "slug": "azamemd-exam",
+  "author": "azamemd",
+  "url": "https://huggingface.co/azamemd/Exam",
+  "created_at": "2026-08-23T21:16:05.000Z",
+  "updated_at": "2026-08-23T21:16:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "ExamAI",
+      "url": "https://www.examai.app/",
+      "snippet": "ExamAI - Your AI Study Assistant Why Choose Us We Turn Study Struggles into Success Stories At ExamAI, we&#x27;ve listened to students, parents, and teachers to build a platform that tackles real learning challenges."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Free AI Exam Question Generator — Practice Exam Papers with Model ...",
+      "url": "https://notiq.study/tools/exam-questions",
+      "snippet": "Free AI exam question generator. Enter any topic, get a full practice exam paper with short-answer, essay, and problem-solving questions, plus model answers and grading rubrics."
+    },
+    {
+      "title": "Test Generator — Free AI Exam & Practice Paper Generator",
+      "url": "https://shinyu.ai/tools/texttoexam",
+      "snippet": "An AI exam generator is a tool that reads your study notes and automatically produces a structured practice exam paper — complete with multiple choice, short answer, and long answer questions, plus model answers."
+    }
+  ]
+}

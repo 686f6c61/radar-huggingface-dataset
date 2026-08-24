@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kn322/DeepSeek-V4-Flash-0731-os-192e",
+  "slug": "kn322-deepseek-v4-flash-0731-os-192e",
+  "author": "kn322",
+  "url": "https://huggingface.co/kn322/DeepSeek-V4-Flash-0731-os-192e",
+  "created_at": "2026-08-16T02:18:50.000Z",
+  "updated_at": "2026-08-23T11:54:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 180,
+  "trending_score": 0,
+  "parameters": 117673229015,
+  "parameters_human": "117.67B",
+  "storage_bytes": 119135742326,
+  "storage_human": "119.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai / deepseek-v4-flash-0731 - docs.api.nvidia.com",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows. It supports a one-million-token context and includes an attached speculative decoding module. This model is ready for commercial or non-commercial use."
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "Overview Relevant source files DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE) architecture README.md 20 ..."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 Technical Report 👁️ Introduction DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    }
+  ]
+}

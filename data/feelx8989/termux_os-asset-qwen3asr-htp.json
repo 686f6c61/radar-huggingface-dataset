@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Feelx8989/termux_os-asset-qwen3asr-htp",
+  "slug": "feelx8989-termux_os-asset-qwen3asr-htp",
+  "author": "Feelx8989",
+  "url": "https://huggingface.co/Feelx8989/termux_os-asset-qwen3asr-htp",
+  "created_at": "2026-08-23T15:37:13.000Z",
+  "updated_at": "2026-08-23T15:37:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "gguf",
+    "automatic-speech-recognition",
+    "termux-os",
+    "audio",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1103382353,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnson-yo/termux_os-asset-qwen3asr-htp · Hugging Face",
+      "url": "https://huggingface.co/johnson-yo/termux_os-asset-qwen3asr-htp",
+      "snippet": "Qwen3-ASR-.6B — HTP pipeline parts for Termux-OS The pieces of Qwen/Qwen3-ASR-.6B that Termux-OS builds itself: a mel front-end and an audio encoder as ONNX graphs for Qualcomm HTP, plus one custom decoder quantization. Termux-OS turns an Android phone into a local, open subsystem that ordinary users, developers and AI agents can extend together. Its Framework installs models as versioned ..."
+    },
+    {
+      "title": "johnson-yo/termux_os-asset-qwen3asr-htp at main - Hugging Face",
+      "url": "https://huggingface.co/johnson-yo/termux_os-asset-qwen3asr-htp/tree/main",
+      "snippet": "Instructions to use johnson-yo/termux_os-asset-qwen3asr-htp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use johnson-yo/termux_os-asset-qwen3asr-htp with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction. - QwenLM/Qwen3-ASR"
+    },
+    {
+      "title": "Termux Os Asset Qwen3asr Htp - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/johnson-yo/termux_os-asset-qwen3asr-htp",
+      "snippet": "Registry entry for model Termux Os Asset Qwen3asr Htp; source metadata pending."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR-Toolkit: Official Python toolkit for the ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR-Toolkit",
+      "snippet": "An advanced, high-performance Python command-line toolkit for using the Qwen-ASR API (formerly Qwen3-ASR-Flash). This implementation overcomes the API&#x27;s 3-minute audio length limitation by intelligently splitting long audio/video files and processing them in parallel, enabling rapid transcription of hours-long content."
+    }
+  ]
+}

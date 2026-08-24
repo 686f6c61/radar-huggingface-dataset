@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diamegs/PIT-4B-202312",
+  "slug": "diamegs-pit-4b-202312",
+  "author": "Diamegs",
+  "url": "https://huggingface.co/Diamegs/PIT-4B-202312",
+  "created_at": "2026-04-23T15:39:21.000Z",
+  "updated_at": "2026-08-23T10:41:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pit",
+    "text-generation",
+    "causal-lm",
+    "point-in-time",
+    "temporal-llm",
+    "pretrained",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 354,
+  "trending_score": 0,
+  "parameters": 4438622208,
+  "parameters_human": "4.44B",
+  "storage_bytes": 17754502408,
+  "storage_human": "17.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diamegs/PIT-4B-FT-202312 · Hugging Face",
+      "url": "https://huggingface.co/Diamegs/PIT-4B-FT-202312",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Diamegs/PIT-4B-202112 · Hugging Face",
+      "url": "https://huggingface.co/Diamegs/PIT-4B-202112",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 238 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 70 providers compared."
+    },
+    {
+      "title": "AI Model Leaderboards & Benchmarks | Scale Labs",
+      "url": "https://labs.scale.com/leaderboard",
+      "snippet": "Explore leaderboards with expert-driven LLM benchmarks and updated AI model rankings across coding, reasoning and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

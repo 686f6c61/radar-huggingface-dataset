@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v2.h009.sft_sst.step_120",
+  "slug": "agentic-ptb-opus-high-v2-h009-sft_sst-step_120",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v2.h009.sft_sst.step_120",
+  "created_at": "2026-08-24T01:31:12.000Z",
+  "updated_at": "2026-08-24T01:32:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claude Code effort level and model selection | Claude | Claude by Anthropic",
+      "url": "https://claude.com/blog/claude-model-and-effort-level-in-claude-code",
+      "snippet": "Anthropic&#x27;s guide to the Claude Code effort level and model selection: when to raise or lower effort—low, medium, high, and max—and how to choose between Claude Fable, Opus, and Sonnet."
+    },
+    {
+      "title": "Best LLMs for Agentic — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/agentic",
+      "snippet": "Compare 399 AI models on agentic benchmarks for tool use, browser research, and multi-step computer tasks. See which models handle terminal work, API tools, and software interfaces most reliably."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here we&#x27;re configuring global settings for two built-in models: gpt-5 when accessed via the openai provider, and claude-sonnet-4-20250514 when accessed via the anthropic provider. The built-in provider and model names can be found on Models.dev. You can also configure these options for any agents that you are using. The agent config overrides any global options here. Learn more. You can also ..."
+    }
+  ]
+}

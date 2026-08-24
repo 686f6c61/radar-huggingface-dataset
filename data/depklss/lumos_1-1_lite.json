@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "depklss/lumos_1.1_lite",
+  "slug": "depklss-lumos_1-1_lite",
+  "author": "depklss",
+  "url": "https://huggingface.co/depklss/lumos_1.1_lite",
+  "created_at": "2026-08-23T08:25:15.000Z",
+  "updated_at": "2026-08-23T08:26:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alibaba-damo-academy/Lumos: [ICLR 2026] Lumos Project ...",
+      "url": "https://github.com/alibaba-damo-academy/Lumos",
+      "snippet": "Lumos Project Lumos Project releases a collection of code bases for frontier generative model research by Alibaba DAMO Academy. For now, we release: Lumos-1: On Autoregressive Video Generation with Discrete Diffusion from a Unified Model Perspective (ICLR 2026) [Jump to Lumos-1 code]"
+    },
+    {
+      "title": "Lumos/lumos-1/lumos-1/model at main · alibaba-damo-academy/Lumos - GitHub",
+      "url": "https://github.com/alibaba-damo-academy/Lumos/tree/main/lumos-1/lumos-1/model",
+      "snippet": "[ICLR 2026] Lumos Project: Frontier video unified model research by Alibaba DAMO Academy. - alibaba-damo-academy/Lumos"
+    },
+    {
+      "title": "Alibaba-DAMO-Academy/Lumos-1 · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-DAMO-Academy/Lumos-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Lumos: Language Agents with Unified Data Formats ... - GitHub Pages",
+      "url": "https://allenai.github.io/lumos/",
+      "snippet": "🧩 Lumos consists of planning, grounding, and execution modules built based on LLAMA-2-7B and off-the-shelf APIs. 🤗 Lumos utilizes a unified data format that encompasses multiple task types, thereby enabling the developed agent framework to conveniently support a range of interactive tasks."
+    }
+  ]
+}

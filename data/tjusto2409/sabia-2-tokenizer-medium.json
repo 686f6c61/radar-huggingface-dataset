@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tjusto2409/sabia-2-tokenizer-medium",
+  "slug": "tjusto2409-sabia-2-tokenizer-medium",
+  "author": "tjusto2409",
+  "url": "https://huggingface.co/tjusto2409/sabia-2-tokenizer-medium",
+  "created_at": "2026-08-23T05:01:27.000Z",
+  "updated_at": "2026-08-23T05:01:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maritaca-ai/sabia-2-tokenizer-medium · Hugging Face",
+      "url": "https://huggingface.co/maritaca-ai/sabia-2-tokenizer-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "maritaca-ai/sabia-2-tokenizer-medium at main - Hugging Face",
+      "url": "https://huggingface.co/maritaca-ai/sabia-2-tokenizer-medium/tree/main",
+      "snippet": "Model card Files Community main sabia-2-tokenizer-medium 2 contributors History: 7 commits hugo Update README.md 3c9e283 verified 23 days ago"
+    },
+    {
+      "title": "Sabiá-2: A New Generation of Portuguese Large Language Models",
+      "url": "https://arxiv.org/html/2403.09887v1",
+      "snippet": "Abstract We introduce Sabiá-2, a family of large language models trained on Portuguese texts. The models are evaluated on a diverse range of exams, including entry-level tests for Brazilian universities, professional certification exams, and graduate-level exams for various disciplines such as accounting, economics, engineering, law and medicine. Our results reveal that our best model so far ..."
+    },
+    {
+      "title": "Sabi ́a-2: A New Generation of Portuguese Large Language Models",
+      "url": "https://arxiv.org/pdf/2403.09887",
+      "snippet": "We introduce Sabi ́a-2, a family of large language models trained on Portuguese texts. The models are evaluated on a diverse range of exams, including entry-level tests for Brazilian universities, professional certifi-cation exams, and graduate-level exams for various disciplines such as accounting, economics, engineering, law and medicine. Our results reveal that our best model so far, Sabi ..."
+    },
+    {
+      "title": "Sabiá-2: A New Generation of Portuguese Large Language Models",
+      "url": "https://www.alphaxiv.org/abs/2403.09887",
+      "snippet": "Notably, specialization has a significant impact on a model&#x27;s performance without the need to increase its size, allowing us to offer Sabiá-2 Medium at a price per token that is 10 times cheaper than GPT-4. Finally, we identified that math and coding are key abilities that need improvement."
+    }
+  ]
+}

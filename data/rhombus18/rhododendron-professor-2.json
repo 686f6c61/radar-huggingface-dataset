@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rhombus18/rhododendron-professor",
+  "slug": "rhombus18-rhododendron-professor-2",
+  "author": "rhombus18",
+  "url": "https://huggingface.co/rhombus18/rhododendron-professor",
+  "created_at": "2026-08-23T12:03:56.000Z",
+  "updated_at": "2026-08-23T12:23:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535751214,
+  "storage_human": "65.5 GB",
+  "base_model": "unsloth/qwen3-32b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rhombus18 (Han Muyang) - Hugging Face",
+      "url": "https://huggingface.co/rhombus18",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 20 minutes ago ... published a model 20 minutes ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "rhombus18/Rhododendron-efficiency-1o · Hugging Face",
+      "url": "https://huggingface.co/rhombus18/rhododendron-effeciency-16bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rhombus AI",
+      "url": "https://rhombusai.com/",
+      "snippet": "Our AI-powered platform turns natural language prompts into complete data pipelines. With ingestion, transformation, and orchestration done instantly, you&#x27;ll do the work of 10+ engineers without writing a single line of code."
+    },
+    {
+      "title": "GitHub - hanmuyang1-collab/rhododendron: Rhododendron — multi-agent AI ...",
+      "url": "https://github.com/hanmuyang1-collab/rhododendron/tree/main",
+      "snippet": "Multi-agent AI chat app: five Rhododendron model tiers plus a Google Gemma vision subagent, an orchestrator that runs subagents in parallel, a live code sandbox, speech mode with animated soundwaves, tier-based quotas, and a Supabase-ready stubbed database layer."
+    },
+    {
+      "title": "GitHub - Rhombus-AI/.github",
+      "url": "https://github.com/Rhombus-AI/.github",
+      "snippet": "Rhombus is a self-reliant AI organization founded by a 16-year-old, Akshit, with a mission to learn by building, and build by inventing. We don&#x27;t wait for tools — we make our own. We don&#x27;t just fine-tune — we research and train models from scratch. Rhombus is built to be like Iron Man&#x27;s lab — anything we need, we build ourselves."
+    }
+  ]
+}

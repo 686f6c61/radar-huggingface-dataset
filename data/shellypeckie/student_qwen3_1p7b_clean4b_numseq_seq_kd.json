@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Shellypeckie/student_qwen3_1p7b_clean4b_numseq_seq_kd",
+  "slug": "shellypeckie-student_qwen3_1p7b_clean4b_numseq_seq_kd",
+  "author": "Shellypeckie",
+  "url": "https://huggingface.co/Shellypeckie/student_qwen3_1p7b_clean4b_numseq_seq_kd",
+  "created_at": "2026-08-24T14:18:29.000Z",
+  "updated_at": "2026-08-24T14:19:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452613971,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shellypeckie/student_qwen3_1p7b_gpqa_self_dolly_seq_kd · Hugging Face",
+      "url": "https://huggingface.co/Shellypeckie/student_qwen3_1p7b_gpqa_self_dolly_seq_kd",
+      "snippet": "Instructions to use Shellypeckie/student_qwen3_1p7b_gpqa_self_dolly_seq_kd with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Shellypeckie (Sholpan) - Hugging Face",
+      "url": "https://huggingface.co/Shellypeckie",
+      "snippet": "Shellypeckie/student_qwen3_0p6b_gpqa_clean_numseq_seq_kd Text Generation • 0.6B•Updated 19 days ago• 29"
+    },
+    {
+      "title": "Shellypeckie/student_qwen3_1p7b_gpqa_self_numseq_seq_kd - Fast ...",
+      "url": "https://friendli.ai/models/Shellypeckie/student_qwen3_1p7b_gpqa_self_numseq_seq_kd",
+      "snippet": "Model provider Shellypeckie Model tree Base Qwen/Qwen3-1.7B Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Model APIs Dedicated Endpoints Container More information Model card"
+    },
+    {
+      "title": "student_qwen3_1p7b_arc_self_numseq_seq_kd - friendli.ai",
+      "url": "https://friendli.ai/models/Shellypeckie/student_qwen3_1p7b_arc_self_numseq_seq_kd",
+      "snippet": "Run Shellypeckie/student_qwen3_1p7b_arc_self_numseq_seq_kd with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced ..."
+    },
+    {
+      "title": "Megatron-Bridge/src/megatron/bridge/recipes/qwen/qwen3.py at main ...",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/main/src/megatron/bridge/recipes/qwen/qwen3.py",
+      "snippet": "Megatron-Bridge / src / megatron / bridge / recipes / qwen / qwen3.py yaoyu-33 feat (model): add model support verification cards (#4909) 16846a8 · last month History 106 lines (102 loc) · 3.94 KB"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NODEMIND/SHADOW-250M",
+  "slug": "nodemind-shadow-250m",
+  "author": "NODEMIND",
+  "url": "https://huggingface.co/NODEMIND/SHADOW-250M",
+  "created_at": "2026-08-20T15:12:05.000Z",
+  "updated_at": "2026-08-23T19:41:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "small",
+    "shadow",
+    "instruct",
+    "chat",
+    "long-context",
+    "retrieval",
+    "cpu",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657873897,
+  "storage_human": "658 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NODEMIND/SHADOW-250M · Hugging Face",
+      "url": "https://huggingface.co/NODEMIND/SHADOW-250M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NODEMIND/SHADOW-250M at main - Hugging Face",
+      "url": "https://huggingface.co/NODEMIND/SHADOW-250M/tree/main",
+      "snippet": "NODEMIND / SHADOW-250M like 3 Text Generation English small shadow instruct chat long-context retrieval cpu License:mit Model card FilesFiles and versions xet Community Copy to bucket new main SHADOW-250M 658 MB Ctrl+K Ctrl+K 1 contributor History:2 commits NODEMIND license: MIT 888f8e9 verifiedabout 16 hours ago benchmarksSHADOW 250M ..."
+    },
+    {
+      "title": "SHADOW 250M Instruct - GitHub",
+      "url": "https://github.com/nodemind611/SHADOW-250M-Instruct",
+      "snippet": "SHADOW 250M Instruct is a 250 million parameter language model built from scratch, trained on 30 billion tokens of English text with about 0.7 billion further tokens of instruction tuning."
+    },
+    {
+      "title": "GitHub - QLNI/SHADOW-250M-Instruct: 250M parameter language model. 100M ...",
+      "url": "https://github.com/QLNI/SHADOW-250M-Instruct",
+      "snippet": "SHADOW 250M Instruct is a 250 million parameter language model built from scratch, trained on 30 billion tokens of English text with about 0.7 billion further tokens of instruction tuning."
+    },
+    {
+      "title": "Nodemind",
+      "url": "https://www.nokast.com/nodemind",
+      "snippet": "Nokast is an open-source AI studio focused on local-first AI, small language models, and SecureRAG."
+    }
+  ]
+}

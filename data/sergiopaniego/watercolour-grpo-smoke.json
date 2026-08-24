@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sergiopaniego/watercolour-grpo-smoke",
+  "slug": "sergiopaniego-watercolour-grpo-smoke",
+  "author": "sergiopaniego",
+  "url": "https://huggingface.co/sergiopaniego/watercolour-grpo-smoke",
+  "created_at": "2026-08-24T11:30:53.000Z",
+  "updated_at": "2026-08-24T12:12:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "hf_jobs",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 276275501,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergiopaniego (Sergio Paniego) - Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego",
+      "snippet": "The ultimate guide to training LLM on large GPU Clusters"
+    },
+    {
+      "title": "Sergio Paniego Blanco sergiopaniego - GitHub",
+      "url": "https://github.com/sergiopaniego",
+      "snippet": "Machine Learning Engineer @huggingface 🤗 AI PhD 🏳️‍🌈 - sergiopaniego"
+    },
+    {
+      "title": "sergiopaniego (Sergio Paniego) - Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/activity/all",
+      "snippet": "sergiopaniego/Qwen2-.5B-GRPO Updated 10 days ago published a model 12 days ago"
+    },
+    {
+      "title": "Sergio Paniego",
+      "url": "https://sergiopaniego.github.io/",
+      "snippet": "In addition to my research, I have also served as an AI Educational Consultant, developing and teaching advanced AI courses at universities, companies, and on-demand (see teaching section for more details). I enjoy giving talks about my work and the broader field of artificial intelligence."
+    },
+    {
+      "title": "publications | Sergio Paniego",
+      "url": "https://sergiopaniego.github.io/publications/",
+      "snippet": "The presented work demonstrates the advantages of using internal memory for better generalization capabilities of the model and allowing it to drive in a broader amount of circuits/situations. We analyze the algorithm in a wide range of environments and conclude that the proposed pipeline is robust to varying camera configurations."
+    }
+  ]
+}

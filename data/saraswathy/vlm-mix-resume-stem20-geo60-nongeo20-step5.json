@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-stem20-geo60-nongeo20-step5",
+  "slug": "saraswathy-vlm-mix-resume-stem20-geo60-nongeo20-step5",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-stem20-geo60-nongeo20-step5",
+  "created_at": "2026-08-24T09:08:08.000Z",
+  "updated_at": "2026-08-24T09:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417187,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-stem60-geometry40-direct-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-stem60-geometry40-direct-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "2026 LLM Leaderboard: compare Anthropic, Google, OpenAI, and more ... - Klu",
+      "url": "https://klu.ai/llm-leaderboard",
+      "snippet": "Klu.ai LLM leaderboard for in depth model performance metrics, rankings, and insights tailored for AI researchers and developers."
+    }
+  ]
+}

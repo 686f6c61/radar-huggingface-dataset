@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-9bfdb70c-Valery",
+  "slug": "guillekenzo-aros-9bfdb70c-valery",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-9bfdb70c-Valery",
+  "created_at": "2026-08-23T07:29:27.000Z",
+  "updated_at": "2026-08-23T07:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868276763,
+  "storage_human": "868 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/datasets",
+      "snippet": "guillekenzo Follow HuggingVince&#x27;s profile picturemolliexx99&#x27;s profile pictureAgtRodriguez&#x27;s profile picture 9 followers · 0 following"
+    },
+    {
+      "title": "guillekenzo/aros-09cc5fd4-MellowDuality · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-09cc5fd4-MellowDuality",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "guillekenzo/aros-eb1101cb-AIBaby · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-eb1101cb-AIBaby",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "guillekenzo/aros-e9b8b4fb-Lily · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-e9b8b4fb-Lily",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

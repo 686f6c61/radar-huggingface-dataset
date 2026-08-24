@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mej023/l0pez",
+  "slug": "mej023-l0pez",
+  "author": "mej023",
+  "url": "https://huggingface.co/mej023/l0pez",
+  "created_at": "2026-08-24T10:03:31.000Z",
+  "updated_at": "2026-08-24T10:03:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jennifer Lopez (Flux) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/559dd7fbc89c203de53eb926f31e1181",
+      "snippet": "Explore Jennifer Lopez (Flux) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Jennifer Lopez - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1796743623275374358",
+      "snippet": "Generate stunning female, actress, singer, celebrity, hollywood, jennifer_lopez anime art with the &#x27;Jennifer Lopez&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "mej023/mfhman · Hugging Face",
+      "url": "https://huggingface.co/mej023/mfhman",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jennifer Lopez - young - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1740055934899335324",
+      "snippet": "Generate stunning anime art with the &#x27;Jennifer Lopez - young&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Jennifer Lopez - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/221c4e6d89c5c700b308075783cf03e1",
+      "snippet": "Explore Jennifer Lopez model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

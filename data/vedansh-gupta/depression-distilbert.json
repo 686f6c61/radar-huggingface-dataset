@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Vedansh-Gupta/depression-distilbert",
+  "slug": "vedansh-gupta-depression-distilbert",
+  "author": "Vedansh-Gupta",
+  "url": "https://huggingface.co/Vedansh-Gupta/depression-distilbert",
+  "created_at": "2026-08-23T09:37:30.000Z",
+  "updated_at": "2026-08-23T17:06:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803497680,
+  "storage_human": "803 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vedansh-Gupta-VG/Depression-Detection-Chatbot - GitHub",
+      "url": "https://github.com/Vedansh-Gupta-VG/Depression-Detection-Chatbot",
+      "snippet": "An AI-powered mental health support chatbot built with Streamlit and a fine-tuned DistilBERT model for text-based depression detection."
+    },
+    {
+      "title": "Vedansh Gupta&#x27;s Post - LinkedIn",
+      "url": "https://www.linkedin.com/posts/vedansh-gupta-ba298528a_machinelearning-aiforgood-mentalhealthawareness-activity-7431024763248128000-UV_2",
+      "snippet": "We integrated a fine-tuned DistilBERT model into a chat interface to not only analyze text but to respond with real empathy. 🧠 Model: A fine-tuned DistilBERT model for binary sequence ..."
+    },
+    {
+      "title": "#machinelearning #aiforgood #mentalhealthawareness #nlp # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/kushagra-mukhija-09603828b_machinelearning-aiforgood-mentalhealthawareness-activity-7431026784873246720-TYR5",
+      "snippet": "We built an AI-Powered Depression Detection Chatbot designed to analyze text input and identify potential signs of emotional distress. 🧠 Model: Fine-tuned DistilBERT for binary sequence ..."
+    },
+    {
+      "title": "Are You Depressed? Analyze User Utterances to Detect Depressive ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/13/10/6223",
+      "snippet": "We employ the DistilBERT [10] language model to train and infer these datasets and compare their performance with other machine learning and deep learning algorithms. Our proposed model architecture, AuD, is designed to quickly deduce depression intensity, complex depressive emotions, and high attention score tokens."
+    },
+    {
+      "title": "EmoDetect: Depression Detection System - GitHub",
+      "url": "https://github.com/harshadadesale22/EmoDetect-Depression-Detection-System",
+      "snippet": "EmoDetect is an AI-powered depression detection system developed using DistilBERT, Flask, and HTML/CSS/JavaScript. The application analyzes textual input to classify it as Depressed or Not Depressed, along with a confidence score and a SHAP-based explainability graph that highlights the words influencing the prediction."
+    }
+  ]
+}

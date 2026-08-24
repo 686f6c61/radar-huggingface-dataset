@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ppeerapon/MiLMMT-46-4B-v1.0-EXL3-4.0bpw",
+  "slug": "ppeerapon-milmmt-46-4b-v1-0-exl3-4-0bpw",
+  "author": "Ppeerapon",
+  "url": "https://huggingface.co/Ppeerapon/MiLMMT-46-4B-v1.0-EXL3-4.0bpw",
+  "created_at": "2026-08-23T10:28:33.000Z",
+  "updated_at": "2026-08-23T10:45:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "translation",
+    "arxiv:2608.10812",
+    "base_model:xiaomi-research/MiLMMT-46-4B-v0.1",
+    "base_model:quantized:xiaomi-research/MiLMMT-46-4B-v0.1",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2147506160,
+  "parameters_human": "2.15B",
+  "storage_bytes": 4333909805,
+  "storage_human": "4.3 GB",
+  "base_model": "xiaomi-research/MiLMMT-46-4B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiaomi-research/MiLMMT-46-4B-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-4B-v1.0",
+      "snippet": "MiLMMT-46-4B-v1. is an LLM-based translation model. Its training builds on Gemma3-4B through four stages: (1) continual pretraining on 143 billion tokens of monolingual and parallel data across 46 languages, yielding MiLMMT-46-4B-Pretrain; (2) supervised finetuning, yielding MiLMMT-46-4B-v0.1; and (3) reinforcement learning; and (4) model ..."
+    },
+    {
+      "title": "xiaomi-research/MiLMMT-46-4B-Pretrain · Hugging Face",
+      "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-4B-Pretrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xiaomi-research/gemmax: Gemma-based Multilingual Machine ...",
+      "url": "https://github.com/xiaomi-research/gemmax",
+      "snippet": "📰 Updates Aug. 11 2026: The MiLMMT-v1. paper Reference-Free Post-Training of Open Large Language Models for Multilingual Machine Translation is available on ArXiv! Feb. 12 2026: The MiLMMT-v0.1 paper Scaling Model and Data for Multilingual Machine Translation with Open Large Language Models is available on ArXiv!"
+    },
+    {
+      "title": "[2602.11961] Scaling Model and Data for Multilingual Machine ...",
+      "url": "https://arxiv.org/abs/2602.11961",
+      "snippet": "Open large language models (LLMs) have demonstrated improving multilingual capabilities in recent years. In this paper, we present a study of open LLMs for multilingual machine translation (MT) across a range of languages, and investigate the effects of model scaling and data scaling when adapting open LLMs to multilingual MT through continual pretraining and instruction finetuning. Based on ..."
+    },
+    {
+      "title": "Scaling Model and Data for Multilingual Machine Translation with Open ...",
+      "url": "https://arxiv.org/pdf/2602.11961",
+      "snippet": "46 languages, and examines how scaling choices affect translation quality across languages and train-ing stages. Building on the Gemma3 model family, we further develop MiLMMT-46, a series of many-to-many multilingual translation models of varying sizes, designed to provide a strong and deployable open alternative to proprietary systems."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MKSHRESTHA/rtdetr-l_carparts-seg",
+  "slug": "mkshrestha-rtdetr-l_carparts-seg",
+  "author": "MKSHRESTHA",
+  "url": "https://huggingface.co/MKSHRESTHA/rtdetr-l_carparts-seg",
+  "created_at": "2026-08-23T05:04:37.000Z",
+  "updated_at": "2026-08-23T05:30:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131661561,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ultralytics-rtdetr-obb/docs/en/datasets/segment/carparts-seg ... - GitHub",
+      "url": "https://github.com/shreejalt/ultralytics-rtdetr-obb/blob/main/docs/en/datasets/segment/carparts-seg.md",
+      "snippet": "The Carparts Segmentation Dataset is a specialized collection of images and videos for training computer vision models to perform segmentation on car parts. It includes diverse visuals with detailed annotations, suitable for automotive AI applications."
+    },
+    {
+      "title": "Carparts Seg Dataset by Jesusgarza - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/jesusgarza/datasets/carparts-seg",
+      "snippet": "Street-level automotive images for instance segmentation of vehicle components including bumpers, doors, lights, mirrors, hoods, trunks, and wheels for cars."
+    },
+    {
+      "title": "rt-detr/docs/en/datasets/segment/carparts-seg.md at main - GitHub",
+      "url": "https://github.com/yhs-code/rt-detr/blob/main/docs/en/datasets/segment/carparts-seg.md",
+      "snippet": "Whether you&#x27;re working on automotive research, developing AI solutions for vehicle maintenance, or exploring computer vision applications, the Carparts Segmentation Dataset serves as a valuable resource for enhancing accuracy and efficiency in your projects."
+    },
+    {
+      "title": "Carparts Seg Dataset by Justin Desrochers",
+      "url": "https://platform.ultralytics.com/justin-desrochers/datasets/carparts-seg",
+      "snippet": "Carparts Seg computer vision dataset by Justin Desrochers. Browse annotations, train YOLO models, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "RT-DETR: Real-Time Detection Transformer | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/rtdetr",
+      "snippet": "Explore Baidu&#x27;s RT-DETR, a Vision Transformer-based real-time object detector offering high accuracy and adaptable inference speed. Learn more with Ultralytics."
+    }
+  ]
+}

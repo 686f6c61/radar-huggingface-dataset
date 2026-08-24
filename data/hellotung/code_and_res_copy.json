@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hellotung/Code_And_Res_copy",
+  "slug": "hellotung-code_and_res_copy",
+  "author": "hellotung",
+  "url": "https://huggingface.co/hellotung/Code_And_Res_copy",
+  "created_at": "2026-08-24T15:38:12.000Z",
+  "updated_at": "2026-08-24T15:42:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2727196618,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models in CODE - Hugging Face",
+      "url": "https://huggingface.co/models?language=code",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Custom Models - Copy - REST API (Azure Azure AI Services)",
+      "url": "https://learn.microsoft.com/en-us/rest/api/aiservices/custom-models/copy?view=rest-aiservices-v2.1",
+      "snippet": "Custom Models - Copy Service: Azure AI Services API Version: 2.1 In this article URI Parameters Request Header Request Body Responses Show 3 more Copy custom model stored in this resource (the source) to user specified target Form Recognizer resource."
+    },
+    {
+      "title": "Disaster recovery guidance - Document Intelligence - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/disaster-recovery?view=doc-intel-4.0.0",
+      "snippet": "Learn how to use the copy model API to back up your Document Intelligence resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

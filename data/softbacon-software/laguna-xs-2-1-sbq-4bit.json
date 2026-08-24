@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SoftBacon-Software/Laguna-XS-2.1-sbQ-4bit",
+  "slug": "softbacon-software-laguna-xs-2-1-sbq-4bit",
+  "author": "SoftBacon-Software",
+  "url": "https://huggingface.co/SoftBacon-Software/Laguna-XS-2.1-sbQ-4bit",
+  "created_at": "2026-08-24T12:58:03.000Z",
+  "updated_at": "2026-08-24T12:59:39.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "laguna",
+    "quantized",
+    "4-bit",
+    "imatrix",
+    "sbq",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:poolside/Laguna-XS-2.1",
+    "base_model:quantized:poolside/Laguna-XS-2.1",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5400989440,
+  "parameters_human": "5.40B",
+  "storage_bytes": 19477837474,
+  "storage_human": "19.5 GB",
+  "base_model": "poolside/Laguna-XS-2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Laguna XS 2.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs-2-1",
+      "snippet": "Today we&#x27;re releasing Laguna XS 2.1, an upgraded version of our Laguna XS.2 model. Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token, designed for agentic coding and long-horizon work on a local machine."
+    },
+    {
+      "title": "Laguna XS.2 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/laguna-xs-2/",
+      "snippet": "Download Laguna XS.2 for free. Open agentic coding model optimized for local deployment. Laguna XS.2 is Poolside&#x27;s first open-weight Mixture-of-Experts model designed specifically for agentic coding and long-horizon software engineering tasks. The model contains 33B total parameters with only 3B activated per token, allowing it to deliver strong coding performance while remaining efficient ..."
+    },
+    {
+      "title": "Introducing Laguna XS.2 and Laguna M.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs2-m1",
+      "snippet": "Laguna XS.2 is trained from scratch in our Model Factory, continuing the work pioneered by Laguna M.1, our largest model to date. XS.2 started pre-training 5 weeks ago and today is being released fully post-trained. Expect continued open progress from us as we iterate on and scale up the Laguna family in the future. Our hope is to work closely with the feedback and collaboration of the world ..."
+    },
+    {
+      "title": "Poolside&#x27;s Laguna XS 2.1 — A New Agentic Coding Model",
+      "url": "https://agentos.guide/laguna-xs-2-1",
+      "snippet": "Laguna XS 2.1 is Poolside&#x27;s newest coding model, a modest upgrade to Laguna XS.2. The interesting part is the shape: it&#x27;s a Mixture-of-Experts that&#x27;s 33B parameters on paper but only lights up ~3B per token. That&#x27;s what makes a big, capable model fast enough to run without a giant rig — you get a bigger brain&#x27;s quality at a small model&#x27;s speed."
+    },
+    {
+      "title": "Laguna XS 2.1 - a poolside Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/poolside/laguna-xs-21",
+      "snippet": "Designed for agentic coding and long-horizon work on a local machine. Licensed under OpenMDW-1.1."
+    }
+  ]
+}

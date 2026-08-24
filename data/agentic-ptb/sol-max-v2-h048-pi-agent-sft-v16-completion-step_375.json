@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max-v2.h048.pi-agent-sft-v16-completion.step_375",
+  "slug": "agentic-ptb-sol-max-v2-h048-pi-agent-sft-v16-completion-step_375",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max-v2.h048.pi-agent-sft-v16-completion.step_375",
+  "created_at": "2026-08-24T00:13:46.000Z",
+  "updated_at": "2026-08-24T00:16:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "GPT-5.6 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GPT-5.6",
+      "snippet": "GPT-5.6 Sol is OpenAI&#x27;s most advanced model, with improved capabilities in coding, scientific research, and cybersecurity. [9][2] OpenAI refers to it as its \"strongest cybersecurity model yet,\" supporting defensive activities such as threat modeling, code review, patching, and blue teaming. [2] It is set to be the operating agent of ChatGPT Work, a service that was released at the same time as ..."
+    },
+    {
+      "title": "GPT-5.6 System Card - OpenAI Deployment Safety Hub",
+      "url": "https://deploymentsafety.openai.com/gpt-5-6",
+      "snippet": "GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our fastest and most cost-efficient model. The safeguards we have built for this launch—our most robust yet—are built to deliver these models safely and at scale, around the world."
+    },
+    {
+      "title": "Agentic AI, explained - MIT Sloan",
+      "url": "https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained",
+      "snippet": "The age of agentic AI — systems that are semi- or fully autonomous and can act on their own — has arrived. Here&#x27;s what you need to know, according to MIT experts."
+    }
+  ]
+}

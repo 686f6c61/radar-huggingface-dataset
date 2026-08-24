@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3-0.6B-NPU2",
+  "slug": "atomic-germ-qwen3-0-6b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3-0.6B-NPU2",
+  "created_at": "2026-08-24T03:16:55.000Z",
+  "updated_at": "2026-08-24T03:16:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "qwen",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2066290330,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Qwen3.5-2B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-2B-NPU2",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3.8-Distilled-9B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-9B-NPU2",
+      "snippet": "Atomic-Germ / Qwen3.8-Distilled-9B-NPU2 like 1 Image-Text-to-Text English qwen3_5_text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling vision sft llm fastflowlm q4nx npu2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8 Distilled 9B Now With Vision (update with flm ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_0_6b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_0_6b/README.md",
+      "snippet": "This is based on the implementation of Qwen3-0.6B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "Qwen3-0.6B: Private Mobile LLM for Ops AI",
+      "url": "https://llm.co/llms/litert-community-qwen3-0-6b",
+      "snippet": "Qwen3-0.6B is a 600M-parameter base model optimized via LiteRT for Android, desktop, and edge devices. It ships in multiple quantized variants (INT4, INT8, NPU-targeted) that fit within 474-992 MB, making it practical for ops teams building private AI agents and automation that never touch the cloud."
+    }
+  ]
+}

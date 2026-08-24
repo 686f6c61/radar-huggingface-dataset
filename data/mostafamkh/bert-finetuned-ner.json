@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "mostafaMKH/bert-finetuned-ner",
+  "slug": "mostafamkh-bert-finetuned-ner",
+  "author": "mostafaMKH",
+  "url": "https://huggingface.co/mostafaMKH/bert-finetuned-ner",
+  "created_at": "2026-08-24T12:19:37.000Z",
+  "updated_at": "2026-08-24T12:40:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "dataset:conll2003",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 2154653781,
+  "storage_human": "2.2 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Precision",
+      "value": 0.9359801488833747
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Recall",
+      "value": 0.9522046449007069
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "F1",
+      "value": 0.944022691248853
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Accuracy",
+      "value": 0.9866515570730559
+    }
+  ],
+  "sources": [
+    {
+      "title": "balamurugan1603/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/balamurugan1603/bert-finetuned-ner",
+      "snippet": "Named Entity Recognition using Transformers This is a Fine-tuned version of BERT using HuggingFace transformers to perform Named Entity Recognition on Text data. BERT is a state-of-the-art model with attention mechanism as underlying architecture trained with masked-language-modeling and next-sentence-prediction objectives, used for various tasks including Question answering systems, Text ..."
+    },
+    {
+      "title": "Liki990/bert_model: BERT finetuned on NER downstream tasks - GitHub",
+      "url": "https://github.com/Liki990/bert_model",
+      "snippet": "BERT finetuned on NER downstream tasks. Contribute to Liki990/bert_model development by creating an account on GitHub."
+    },
+    {
+      "title": "nt-ai/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/nt-ai/bert-finetuned-ner",
+      "snippet": "nt-ai / bert-finetuned-ner like 0 Token Classification Transformers TensorBoard Safetensors conll2003 bert Generated from Trainer Eval Results License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model bert-finetuned-ner Model description Intended uses & limitations Training and evaluation ..."
+    },
+    {
+      "title": "Fine-tuning BERT for Named Entity Recognition (NER) - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/fine-tuning-bert-named-entity-recognition-ner-arastu-thakur-spukc",
+      "snippet": "This article delves deep into fine-tuning BERT for Named Entity Recognition, encompassing everything from understanding NER tasks and datasets to configuring BERT models and implementing fine ..."
+    },
+    {
+      "title": "GitHub - fran-martinez/bio_ner_bert: BERT finetuned on NER downstream ...",
+      "url": "https://github.com/fran-martinez/bio_ner_bert",
+      "snippet": "The used pre-trained model is allenai/scibert_scivocab_cased. SciBERT is a pretrained language model based on BERT and trained by the Allen Institute for AI on papers from the corpus of Semantic Scholar."
+    }
+  ]
+}

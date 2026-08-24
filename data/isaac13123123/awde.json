@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Isaac13123123/awde",
+  "slug": "isaac13123123-awde",
+  "author": "Isaac13123123",
+  "url": "https://huggingface.co/Isaac13123123/awde",
+  "created_at": "2026-08-23T13:36:28.000Z",
+  "updated_at": "2026-08-23T13:47:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1279,
+  "storage_human": "1279 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Isaac13123123 (Isaac Stracener) - Hugging Face",
+      "url": "https://huggingface.co/Isaac13123123",
+      "snippet": "User profile of Isaac Stracener on Hugging Face"
+    },
+    {
+      "title": "Isaac13123123/itsthebestdayyeverr at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Isaac13123123/itsthebestdayyeverr/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Detector - Text, Image & Video | Free.ai",
+      "url": "https://free.ai/detector/",
+      "snippet": "Free AI detector. Check if text was written by AI, or scan an image or video for AI generation. Honest about accuracy - a heuristic, not proof."
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 330 Following, 7,119 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "Is It Vibe Coded? | Detect AI-Generated Websites",
+      "url": "https://isitvibecoded.com/",
+      "snippet": "Is It Vibe Coded? Analyze any website to detect if it was built with AI or no-code tools — Lovable, Bolt, v0, Base44, Same, Manus, Onlook, Framer, Webflow, Cursor, Windsurf, Claude, and 35+ more."
+    }
+  ]
+}

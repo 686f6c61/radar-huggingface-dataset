@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-geo25-nongeo75-direct-step100",
+  "slug": "saraswathy-vlm-mix-geo25-nongeo75-direct-step100",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-geo25-nongeo75-direct-step100",
+  "created_at": "2026-08-24T03:08:41.000Z",
+  "updated_at": "2026-08-24T03:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3-vl",
+    "vision-language-model",
+    "vlm-mix",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 528557784,
+  "storage_human": "529 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Saraswathy/vlm-mix-stem60-geometry40-direct-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-stem60-geometry40-direct-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

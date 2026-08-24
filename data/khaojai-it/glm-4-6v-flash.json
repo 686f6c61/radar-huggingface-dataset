@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "khaojai-it/GLM-4.6V-Flash",
+  "slug": "khaojai-it-glm-4-6v-flash",
+  "author": "khaojai-it",
+  "url": "https://huggingface.co/khaojai-it/GLM-4.6V-Flash",
+  "created_at": "2026-08-24T09:59:41.000Z",
+  "updated_at": "2026-08-24T09:59:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4v",
+    "image-text-to-text",
+    "unsloth",
+    "conversational",
+    "zh",
+    "en",
+    "arxiv:2507.01006",
+    "base_model:zai-org/GLM-4.6V-Flash",
+    "base_model:finetune:zai-org/GLM-4.6V-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10292777472,
+  "parameters_human": "10.29B",
+  "storage_bytes": 20605614746,
+  "storage_human": "20.6 GB",
+  "base_model": "zai-org/GLM-4.6V-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-4.6V - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-4.6v",
+      "snippet": "Overview GLM-4.6V series are Z.ai&#x27;s iterations in a multimodal large language model. GLM-4.6V scales its context window to 128k tokens in training, and achieves SoTA performance in visual understanding among models of similar parameter scales. Crucially, GLM-4.6V integrate native Function Calling capabilities for the first time. This effectively bridges the gap between \"visual perception ..."
+    },
+    {
+      "title": "zai-org/GLM-4.6V-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · zai-org/GLM-4.6V-Flash at main - Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/README.md",
+      "snippet": "GLM-4.6V takes a multimodal context—spanning documents, user inputs, and tool-retrieved images—and synthesizes coherent, interleaved image-text content tailored to the task. During generation it can actively call search and retrieval tools to gather and curate additional text and visuals, producing rich, visually grounded content."
+    },
+    {
+      "title": "z-ai/glm-4.6v-flash | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/z-ai/glm-4.6v-flash",
+      "snippet": "GLM-4.6V-FlashX is the the paid version, offering higher capacity and stability， representing a significant iteration in the GLM series for multimodal capabilities. It supports toggling reasoning modes, with a training-time context window expanded to 128k tokens. Achieving state-of-the-art (SOTA) visual understanding accuracy at its parameter scale, it is the first visual model to natively ..."
+    },
+    {
+      "title": "GLM-4.6V Flash - ChatGLM AI Model - ohmygpt.com",
+      "url": "https://www.ohmygpt.com/models/glm-4.6v-flash",
+      "snippet": "Free variant of GLM-4.6V for cost-sensitive multimodal applications."
+    }
+  ]
+}

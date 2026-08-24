@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Gemma4-E2B-Claude-Sonnet-Distilled-NPU2",
+  "slug": "atomic-germ-gemma4-e2b-claude-sonnet-distilled-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Gemma4-E2B-Claude-Sonnet-Distilled-NPU2",
+  "created_at": "2026-08-23T14:35:48.000Z",
+  "updated_at": "2026-08-23T14:48:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma4_text",
+    "image-text-to-text",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "base_model:Lufel6848/Gemma4-E2B-Claude-Sonnet-Distilled",
+    "base_model:quantized:Lufel6848/Gemma4-E2B-Claude-Sonnet-Distilled"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5992812024,
+  "storage_human": "6.0 GB",
+  "base_model": "Lufel6848/Gemma4-E2B-Claude-Sonnet-Distilled",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Gemma4-Claude-Sonnet-E2B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Gemma4-Claude-Sonnet-E2B-NPU2/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main Gemma4-Claude-Sonnet-E2B-NPU2 5.99 GB Ctrl+K Ctrl+K 1 contributor History:12 commits Atomic-Germ Update README.md 5265e56 verifiedabout 7 hours ago .gitattributes 1.73 kBUpload model.q4nx with huggingface_hubabout 23 hours ago README.md 1.95 kBUpdate README.mdabout 7 hours ago audio_weight.q4nx Safe 952 MB xet Upload audio_weight.q4nx with huggingface ..."
+    },
+    {
+      "title": "Lufel6848/Gemma4-E2B-Claude-Sonnet-Distilled · Hugging Face",
+      "url": "https://huggingface.co/Lufel6848/Gemma4-E2B-Claude-Sonnet-Distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "How to Use Gemma 4 with Claude Code via Ollama (April 2026)",
+      "url": "https://meshworld.in/blog/ai/tooling/gemma4-ollama-claude-code/",
+      "snippet": "Set up Gemma 4 locally with Ollama and wire it into Claude Code. Learn correct env vars, model tags, and context window config for April 2026."
+    },
+    {
+      "title": "ducquoc/gemma4-fast-sonnet - ollama.com",
+      "url": "https://ollama.com/ducquoc/gemma4-fast-sonnet",
+      "snippet": "Gemma4 e2b distilled with Claude Sonnet 4.6 data, fast response (low/med thinking)."
+    }
+  ]
+}

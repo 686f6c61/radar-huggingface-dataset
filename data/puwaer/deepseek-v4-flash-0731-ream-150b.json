@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "puwaer/DeepSeek-V4-Flash-0731-ream-150b",
+  "slug": "puwaer-deepseek-v4-flash-0731-ream-150b",
+  "author": "puwaer",
+  "url": "https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-ream-150b",
+  "created_at": "2026-08-09T06:40:26.000Z",
+  "updated_at": "2026-08-24T11:56:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "moe",
+    "expert-merging",
+    "ream",
+    "compressed",
+    "conversational",
+    "arxiv:2510.13999",
+    "arxiv:2604.04356",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 150128549111,
+  "parameters_human": "150.13B",
+  "storage_bytes": 84690593084,
+  "storage_human": "84.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "puwaer/DeepSeek-V4-Flash-0731-ream-150b · Hugging Face",
+      "url": "https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-ream-150b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "Overview Relevant source files DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE) architecture README.md 20 ..."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 Technical Report 👁️ Introduction DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    }
+  ]
+}

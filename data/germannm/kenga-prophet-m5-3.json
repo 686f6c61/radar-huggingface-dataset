@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-prophet-m5-3",
+  "slug": "germannm-kenga-prophet-m5-3",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-prophet-m5-3",
+  "created_at": "2026-08-23T12:36:35.000Z",
+  "updated_at": "2026-08-23T12:36:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kenga",
+    "programming-language",
+    "small-model",
+    "transformer",
+    "semantic-binding",
+    "verified-synthetic-corpus",
+    "compiler-in-the-loop",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 924,
+  "storage_human": "924 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GermannM/kenga-prophet-m3 · Hugging Face",
+      "url": "https://huggingface.co/GermannM/kenga-prophet-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=kenga",
+      "snippet": "Models 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: kenga Clear all"
+    },
+    {
+      "title": "GitHub - GermannM3/kenga-lang: Kenga — programming language for living ...",
+      "url": "https://github.com/GermannM3/kenga-lang",
+      "snippet": "Kenga проектируется как язык, где тензор, время жизни памяти (ttl), консолидация и агентный цикл — не библиотеки, а часть семантики."
+    },
+    {
+      "title": "Releases: GermannM3/kenga-lang - GitHub",
+      "url": "https://github.com/GermannM3/kenga-lang/releases",
+      "snippet": "Kenga — programming language for living AI (bootstrap compiler + VM) - Releases · GermannM3/kenga-lang"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=en",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

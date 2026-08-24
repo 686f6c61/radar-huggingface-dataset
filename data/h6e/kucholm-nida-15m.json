@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "h6e/KuchoLM-NIDA-15M",
+  "slug": "h6e-kucholm-nida-15m",
+  "author": "h6e",
+  "url": "https://huggingface.co/h6e/KuchoLM-NIDA-15M",
+  "created_at": "2026-08-23T11:42:59.000Z",
+  "updated_at": "2026-08-23T11:44:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56861104,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A 15M Parameter Model Just Humiliated Billion-Dollar AI ... - Medium",
+      "url": "https://medium.com/coding-nexus/a-15m-parameter-model-just-humiliated-billion-dollar-ai-infrastructure-d041f25d7bf7",
+      "snippet": "A 15M Parameter Model Just Humiliated Billion-Dollar AI Infrastructure A tiny model trained in a few hours on a single GPU is planning 48x faster than foundation models built on supercomputers. It …"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Semiconductor Fab Prevents $15M in Losses with Predictive Analytics and ...",
+      "url": "https://ifactoryapp.com/industries/manufacturing-plant/semiconductor-fab-prevents-15m-losses-predictive-ai",
+      "snippet": "Discover how a semiconductor fab prevented $15 million in potential losses using predictive analytics and AI vision inspection to optimize wafer processing, improve yield, and reduce production risks."
+    },
+    {
+      "title": "Infinity raises $15M to run AI inference on any chipset",
+      "url": "https://siliconangle.com/2026/07/20/infinity-raises-15m-run-ai-inference-chipset/",
+      "snippet": "Early-stage AI infrastructure research company Infinity Inc. said it raised $15 million in seed funding to develop software that automatically prepares new artificial intelligence chips to run ..."
+    },
+    {
+      "title": "Governor Model: H6E - PowerWorld",
+      "url": "https://www.powerworld.com/WebHelp/Content/TransientModels_HTML/Governor%20H6E.htm?TocPath=Transient%20Stability%20Add-On%20(TS)%7CTransient%20Models%7CGenerator%7CGovernor%7C_____23",
+      "snippet": "PowerWorld Implementation in Pseudo-Code User Input Parameters for Model ffd, ftrate, fre, frg, finvtpe, finvtsp, fkp, fki, fkd, finvtd, fvelm, fgmax, fgmin, fbuf, fbuv, fkg, finvtg, fblg, fdbbd, finvtbd, fblb, fdbbs, finvtbs, fbgvmin, fblv, fdturb, fpgc, fdeff, fhdam, finvtw, fsprate : single; // Note various parameters such as finvtpe are storing 1/tpe fBackLash_blb, fBackLash_blg : BackLash ..."
+    }
+  ]
+}

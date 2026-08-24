@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "parker835459/paper_013572831_multimodal_reasoning",
+  "slug": "parker835459-paper_013572831_multimodal_reasoning",
+  "author": "parker835459",
+  "url": "https://huggingface.co/parker835459/paper_013572831_multimodal_reasoning",
+  "created_at": "2026-08-23T10:14:09.000Z",
+  "updated_at": "2026-08-23T10:14:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "footnote",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "measured",
+    "medium-balanced",
+    "multimodal-reasoning",
+    "narrative-progressive",
+    "passive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal Agent AI: A Survey of Recent Advances and Future ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11390-025-4802-8",
+      "snippet": "In recent years, multimodal agent AI (MAA) has emerged as a pivotal area of research, holding promise for transforming human-machine interaction. Agent AI systems, capable of perceiving and responding to inputs from multiple modalities (e.g., language, vision, audio), have demonstrated remarkable progress in understanding complex environments and executing intricate tasks. This survey ..."
+    },
+    {
+      "title": "Top AI Papers This Week - ArXiv TLDR",
+      "url": "https://arxivtldr.org/weekly",
+      "snippet": "The top 10 AI/ML papers from arXiv this week, AI-summarized with one-line TLDRs and key contribution bullets. Updated weekly."
+    },
+    {
+      "title": "cs.LG - Computer Science Papers - Arxiv Search | Arxiv - arxiv.deeppaper.ai",
+      "url": "https://arxiv.deeppaper.ai/subjects/cs.LG",
+      "snippet": "Browse research papers in cs.LG from Arxiv. Find the latest cs.LG papers, research and studies for your academic work."
+    },
+    {
+      "title": "HuggingFace Paper Explorer",
+      "url": "https://huggingface-paper-explorer.vercel.app/",
+      "snippet": "HF Paper Explorer Top AI research papers from the HuggingFace community"
+    },
+    {
+      "title": "GitHub - HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models: The ...",
+      "url": "https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models",
+      "snippet": "In this paper, we survey the evolution of multimodal reasoning models, highlighting pivotal advancements and paradigm-shifting milestones in the field. While current models predominantly adopt a language-centric reasoning paradigm —delivering impressive results in tasks like visual question answering and text-image retrieval—critical ..."
+    }
+  ]
+}

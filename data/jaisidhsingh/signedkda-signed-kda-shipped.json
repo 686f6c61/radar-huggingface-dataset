@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-signed-kda-shipped",
+  "slug": "jaisidhsingh-signedkda-signed-kda-shipped",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-signed-kda-shipped",
+  "created_at": "2026-08-23T11:26:16.000Z",
+  "updated_at": "2026-08-24T12:00:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "signed_kda",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 344865616,
+  "parameters_human": "344.9M",
+  "storage_bytes": 1379522520,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jaisidh Singh",
+      "url": "https://jaisidhsingh.github.io/",
+      "snippet": "I am a master&#x27;s student at the University of Tübingen studying machine learning and a fellow at Zuse School ELIZA. I&#x27;m also a guest researcher at the Max Planck Institute for Intelligent Systems Tübingen advised by Antonio Orvieto. Currently, I&#x27;m writing my master&#x27;s thesis on the scaling behaviour of LLMs with hybrid attention with . Previously, I was an intern at Bosch Research ..."
+    },
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "Deep learning researcher. jaisidhsingh has 57 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - jaisidhsingh/jaisidhsingh",
+      "url": "https://github.com/jaisidhsingh/jaisidhsingh",
+      "snippet": "I am interested in algorithmic improvements as well as optimization for improved model capacity and understanding. My previous work has touched upon these fields along with responsible AI."
+    },
+    {
+      "title": "Singed - Champions - Khada",
+      "url": "https://modelviewer.lol/champions/singed",
+      "snippet": "Explore League of Legends with our Interactive 3D Model Viewer - Discover the latest Champions and Skins with Chromas and Alternative Forms in Detail!"
+    },
+    {
+      "title": "Jaisidh Singh (@jaisidhsingh) / Posts / X",
+      "url": "https://x.com/jaisidhsingh",
+      "snippet": "Got caught in 24 hours>be Moonshot AI>spend hundreds of millions training Kimi K2.5>1 trillion parameters, 15 trillion tokens, agent swarm architecture>beat GPT-5.2 and Opus 4.5 on real benchmarks>open-source it because you believe in the ecosystem>one condition: display \"Kimi K2.5\" if you make over $20M/month from it>Cursor takes the model ..."
+    }
+  ]
+}

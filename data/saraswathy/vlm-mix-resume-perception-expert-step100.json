@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-perception-expert-step100",
+  "slug": "saraswathy-vlm-mix-resume-perception-expert-step100",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-perception-expert-step100",
+  "created_at": "2026-08-24T09:16:01.000Z",
+  "updated_at": "2026-08-24T09:20:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11780043327,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Saraswathy/vlm-mix-broader-stem-expert-step100 with PEFT:"
+    },
+    {
+      "title": "Saraswathy/vlm-mix-nongeo-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-nongeo-expert-step100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Saraswathy Amjith",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "Teaching models to identify and recover from flawed reasoning chains using reinforcement learning techniques to improve mathematical problem-solving capabilities."
+    },
+    {
+      "title": "Mixture of experts - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mixture_of_experts",
+      "snippet": "The NLLB-200 by Meta AI is a machine translation model for 200 languages. [42] Each MoE layer uses a hierarchical MoE with two levels. On the first level, the gating function chooses to use either a \"shared\" feedforward layer, or to use the experts. If using the experts, then another gating function computes the weights and chooses the top-2 ..."
+    }
+  ]
+}

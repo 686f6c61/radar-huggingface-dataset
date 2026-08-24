@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/xlm-roberta-large-3class-lat-intertext-v1",
+  "slug": "julian-schelb-xlm-roberta-large-3class-lat-intertext-v1",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/xlm-roberta-large-3class-lat-intertext-v1",
+  "created_at": "2026-08-24T13:40:14.000Z",
+  "updated_at": "2026-08-24T13:54:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "intertextuality",
+    "latin",
+    "multiclass",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559893507,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2261774822,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI ..."
+    },
+    {
+      "title": "XLM-RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta-xl.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta-xl.md",
+      "snippet": "It shows that by scaling model capacity, multilingual models demonstrate strong performance on high-resource languages and can even zero-shot low-resource languages. You can find all the original XLM-RoBERTa-XL checkpoints under the AI at Meta organization."
+    },
+    {
+      "title": "locisimiles · PyPI",
+      "url": "https://pypi.org/project/locisimiles/",
+      "snippet": "LociSimiles is a Python package for finding intertextual links in Latin literature using pre-trained language models."
+    }
+  ]
+}

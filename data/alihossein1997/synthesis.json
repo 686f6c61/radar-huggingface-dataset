@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alihossein1997/synthesis",
+  "slug": "alihossein1997-synthesis",
+  "author": "Alihossein1997",
+  "url": "https://huggingface.co/Alihossein1997/synthesis",
+  "created_at": "2026-08-24T14:27:34.000Z",
+  "updated_at": "2026-08-24T14:27:34.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Synthesis (@aisynthesis) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aisynthesis/",
+      "snippet": "3,604 Followers, 359 Following, 800 Posts - AI Synthesis (@aisynthesis) on Instagram: \"The best, easiest to build DIY synthesizer modules in the universe.\""
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ai-voice: List of open-source TTS, voice ...",
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "snippet": "Description: Higgs Audio v3 STT is a speech-to-text model from Boson AI combining a Whisper-Large-v3 encoder with a Qwen3 decoder (2.68B total parameters). It is the ASR sibling of the Higgs Audio v3 TTS model (higgs-audio-v3-tts-4b), sharing the same Qwen3 decoder family but specialized for speech recognition rather than speech synthesis."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Video Agent for Marketing Teams | Synthesys",
+      "url": "https://synthesys.io/",
+      "snippet": "Multiple frontier models working together through multi-model orchestration — Sora 2, Google VEO 3.1, Wan 2.5, Kling 3, Seedream, and others. Rather than relying on a single AI engine, the system routes each task to the model that handles it best: one for photorealistic rendering, another for natural motion, a third for voice synthesis."
+    },
+    {
+      "title": "GitHub - Synthesis-AI-Dev/synthesisai: Python library for loading ...",
+      "url": "https://github.com/Synthesis-AI-Dev/synthesisai",
+      "snippet": "Python library for loading synthetic data for ML use cases - Synthesis-AI-Dev/synthesisai"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "PollardWeights/Carnice-V3-27b-Pollard",
+  "slug": "pollardweights-carnice-v3-27b-pollard",
+  "author": "PollardWeights",
+  "url": "https://huggingface.co/PollardWeights/Carnice-V3-27b-Pollard",
+  "created_at": "2026-08-24T04:44:39.000Z",
+  "updated_at": "2026-08-24T07:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "pollard",
+    "llama.cpp",
+    "qwen35",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "hermes-agent",
+    "tool-use",
+    "agent",
+    "conversational",
+    "en",
+    "base_model:kai-os/Carnice-V3",
+    "base_model:quantized:kai-os/Carnice-V3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13011677696,
+  "storage_human": "13.0 GB",
+  "base_model": "kai-os/Carnice-V3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for kai-os/Carnice-V3 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:kai-os/Carnice-V3",
+      "snippet": "Active filters: kai-os/Carnice-V3. Clear all. kai-os/Carnice-V3-GGUF. Image-Text-to-Text • 27B • Updated about 3 hours ago • 6"
+    },
+    {
+      "title": "kai-os/Carnice-27b · Hugging Face",
+      "url": "https://huggingface.co/kai-os/Carnice-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Carnice 27B by kai-os — VRAM 53.7GB, 256K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/kai-os%2FCarnice-27b,8VzoyM8YXnDxbKxZEGMoM",
+      "snippet": "Carnice 27B is an open-source 27b LLM by kai-os. VRAM 53.7GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Carnice-27b-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/kai-os/Carnice-27b-GGUF",
+      "snippet": "Carnice-27b-GGUF GGUF quantizations of the merged Carnice-27b full model for local inference. Included quantizations: Q4_K_M Q6_K Q8_0 Base merged model: kai-os/Carnice-27b These GGUF files were converted from the merged full-model release, not from the raw adapter."
+    },
+    {
+      "title": "GitHub - gwyntel/Carnice-27b-Modal: Carnice-27b (Qwen3.5-27B hermes ...",
+      "url": "https://github.com/gwyntel/Carnice-27b-Modal",
+      "snippet": "Serverless GPU inference for Carnice-V2-27b — a Qwen3.6-27B fine-tune with native hermes-style tool-calling. Deployed on Modal with llama.cpp on A100-80GB GPUs. OpenAI-compatible API. Scales to zero. 256K context supported."
+    }
+  ]
+}

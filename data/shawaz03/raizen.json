@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "shawaz03/RAIZEN",
+  "slug": "shawaz03-raizen",
+  "author": "shawaz03",
+  "url": "https://huggingface.co/shawaz03/RAIZEN",
+  "created_at": "2026-08-23T05:33:56.000Z",
+  "updated_at": "2026-08-23T05:34:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "code",
+    "coding-assistant",
+    "full-stack",
+    "ui-ux",
+    "react",
+    "nextjs",
+    "tailwindcss",
+    "fast-api",
+    "sql",
+    "debugging",
+    "qwen2.5",
+    "raizen",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693708,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shawaz03 (SHAWAZ) - Hugging Face",
+      "url": "https://huggingface.co/shawaz03/models",
+      "snippet": "shawaz03&#x27;s models1 Sort: Recently updated shawaz03/vibe-coder-7b Text Generation •Updated about 4 hours ago"
+    },
+    {
+      "title": "shawaz03 (SHAWAZ) - Hugging Face",
+      "url": "https://huggingface.co/shawaz03",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago shawaz03/vibe-coder-7b published a modelabout 4 hours ago shawaz03/vibe-coder-7b View all activity"
+    },
+    {
+      "title": "Raizen - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1853837233251113216",
+      "snippet": "Generate stunning anime art with the &#x27;Raizen&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Raizen - AI Hiring Platform for Verified Developers",
+      "url": "https://raizenai.com/",
+      "snippet": "Raizen is a proof-of-work hiring platform where developers build real projects inside a sandboxed IDE and an AI mentor assesses how they think. Companies get a ranked leaderboard of pre-verified candidates ready to interview."
+    },
+    {
+      "title": "vibe-coder-7b-max API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/shawaz03/vibe-coder-7b-max",
+      "snippet": "Deploy vibe-coder-7b-max with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

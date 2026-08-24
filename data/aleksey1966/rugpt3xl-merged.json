@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aleksey1966/ruGPT3XL-merged",
+  "slug": "aleksey1966-rugpt3xl-merged",
+  "author": "aleksey1966",
+  "url": "https://huggingface.co/aleksey1966/ruGPT3XL-merged",
+  "created_at": "2026-08-24T08:26:53.000Z",
+  "updated_at": "2026-08-24T08:42:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rugpt3xl",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418678272,
+  "parameters_human": "1.42B",
+  "storage_bytes": 2837400008,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-forever/rugpt3xl · Hugging Face",
+      "url": "https://huggingface.co/ai-forever/rugpt3xl",
+      "snippet": "rugpt3xl Model was trained with 512 sequence length using Deepspeed and Megatron code by SberDevices team, on 80B tokens dataset for 4 epochs. After that model was finetuned 1 epoch with sequence length 2048. Note! Model has sparse attention blocks. Total training time was around 10 days on 256 GPUs. Final perplexity on test set is 12.05. Model parameters: 1.3B."
+    },
+    {
+      "title": "merges.txt · ai-forever/rugpt3xl at main - Hugging Face",
+      "url": "https://huggingface.co/ai-forever/rugpt3xl/blob/main/merges.txt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - EvilFreelancer/rugpt3xl-convert",
+      "url": "https://github.com/EvilFreelancer/rugpt3xl-convert",
+      "snippet": "This repository contains tools to convert the original ai-forever/rugpt3xl Megatron-LM/DeepSpeed checkpoint into a modern HuggingFace transformers -compatible format with custom model classes."
+    },
+    {
+      "title": "ruGPT3XL | ai-forever/ru-gpts | DeepWiki",
+      "url": "https://deepwiki.com/ai-forever/ru-gpts/2.1-rugpt3xl",
+      "snippet": "Overview ruGPT3XL is an autoregressive transformer language model trained on a massive Russian language dataset. It features a unique implementation that combines DeepSpeed and Megatron frameworks with sparse attention patterns for memory efficiency. Unlike other models in the ru-gpts family that use standard HuggingFace implementation, ruGPT3XL uses a custom wrapper for simplified model usage ..."
+    },
+    {
+      "title": "GitHub - esper21/ru-gpts-sberbank: Russian GPT3 models.",
+      "url": "https://github.com/esper21/ru-gpts-sberbank",
+      "snippet": "This repository contains bunch of autoregressive transformer language models trained on a huge dataset of russian language. Russian GPT-3 models (ruGPT3XL, ruGPT3Large, ruGPT3Medium, ruGPT3Small) trained with 2048 sequence length with sparse and dense attention blocks. We also provide Russian GPT-2 large model (ruGPT2Large) trained with 1024 sequence length. Try Model Generation In Colab ..."
+    }
+  ]
+}

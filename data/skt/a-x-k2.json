@@ -5,7 +5,7 @@
   "author": "skt",
   "url": "https://huggingface.co/skt/A.X-K2",
   "created_at": "2026-07-28T10:33:49.000Z",
-  "updated_at": "2026-08-08T12:43:40.000Z",
+  "updated_at": "2026-08-24T01:58:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 101,
-  "downloads_30d": 6757,
+  "downloads_30d": 7327,
   "trending_score": 7,
   "parameters": 691690231040,
   "parameters_human": "691.69B",

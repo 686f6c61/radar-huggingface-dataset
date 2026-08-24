@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DarkerBu/DPRM-DLLM",
+  "slug": "darkerbu-dprm-dllm",
+  "author": "DarkerBu",
+  "url": "https://huggingface.co/DarkerBu/DPRM-DLLM",
+  "created_at": "2026-08-23T18:29:26.000Z",
+  "updated_at": "2026-08-23T18:51:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "diffusion-models",
+    "masked-diffusion",
+    "token-ordering",
+    "process-reward-model",
+    "arxiv:2604.24357",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28862892074,
+  "storage_human": "28.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DakeBU/DPRM-DLLM: Official Implimentation of paper DPRM: A ...",
+      "url": "https://github.com/DakeBU/DPRM-DLLM",
+      "snippet": "Official Implimentation of paper DPRM: A Plug-in Token-Ordering Module for Diffusion Language Models. - DakeBU/DPRM-DLLM"
+    },
+    {
+      "title": "GitHub - DakeBU/DPRM-DLLM: Official Implimentation of paper DPRM: A ...",
+      "url": "https://github.com/DakeBU/DPRM-DLLM/blob/main/",
+      "snippet": "DPRM-DLLM Official Implimentation of paper DPRM: A Plug-in Token-Ordering Module for Diffusion Language Models. DPRM-DLLM is a plug-in token-ordering module for masked discrete diffusion and diffusion language models. It does not replace your model, denoising objective, reward model, verifier, tokenizer, data loader, or search scaffold."
+    },
+    {
+      "title": "DPRM: A Plug-in Token-Ordering Module for Diffusion Language Models",
+      "url": "https://icml.cc/virtual/2026/70180",
+      "snippet": "DPRM improves pretraining, post-training, test-time scaling and single-cell masked diffusion, with strong gains on harder reasoning subsets. In protein, molecular and DNA generation, ordering-aware variants improve selected structural, fragment-constrained or reward-specific metrics, though not every quality metric."
+    },
+    {
+      "title": "DPRM: A Plug-in Doob h transform-induced Token-Ordering Module for ...",
+      "url": "https://arxiv.org/pdf/2604.24357v2",
+      "snippet": "We intro-duce DPRM(Doob h-transform Process Reward Model), a plug-in token-ordering module that keeps the host architecture, denoising objective and supervision unchanged, and modifies only the ordering policy. DPRM starts from confidence-driven ordering and gradually shifts to process-reward-guided ordering through online estimates."
+    },
+    {
+      "title": "DarkerBu (DarkerBu) - Hugging Face",
+      "url": "https://huggingface.co/DarkerBu/datasets",
+      "snippet": "User profile of DarkerBu on Hugging Face"
+    }
+  ]
+}

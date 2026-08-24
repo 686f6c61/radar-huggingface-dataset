@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-signed-kda-spread",
+  "slug": "jaisidhsingh-signedkda-signed-kda-spread",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-signed-kda-spread",
+  "created_at": "2026-08-23T11:32:02.000Z",
+  "updated_at": "2026-08-24T12:00:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "signed_kda",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 344865616,
+  "parameters_human": "344.9M",
+  "storage_bytes": 1379522520,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools). Since then, we have greatly expanded: with a single prompt, you can generate images, edit photos, chat with an AI that browses the internet, create short videos, compose original music, or chat with a realistic ..."
+    },
+    {
+      "title": "Jaisidh Singh",
+      "url": "https://jaisidhsingh.github.io/",
+      "snippet": "I am a master&#x27;s student at the University of Tübingen studying machine learning and a fellow at Zuse School ELIZA. I&#x27;m also a guest researcher at the Max Planck Institute for Intelligent Systems Tübingen advised by Antonio Orvieto. Currently, I&#x27;m writing my master&#x27;s thesis on the scaling behaviour of LLMs with hybrid attention with . Previously, I was an intern at Bosch Research ..."
+    },
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "A smaller, faster, cleaner WeightWatcher for FLAX/JAX with XLA Python 3"
+    },
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) / Following · GitHub",
+      "url": "https://github.com/jaisidhsingh?tab=following",
+      "snippet": "Deep learning researcher. jaisidhsingh has 64 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    }
+  ]
+}

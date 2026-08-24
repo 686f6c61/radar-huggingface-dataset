@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EshAhm/xlm-roberta-large-FullTune",
+  "slug": "eshahm-xlm-roberta-large-fulltune",
+  "author": "EshAhm",
+  "url": "https://huggingface.co/EshAhm/xlm-roberta-large-FullTune",
+  "created_at": "2026-08-24T10:44:56.000Z",
+  "updated_at": "2026-08-24T10:47:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558870557,
+  "parameters_human": "558.9M",
+  "storage_bytes": 2235530764,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model."
+    },
+    {
+      "title": "EshAhm/xlm-roberta-baseFullTune · Hugging Face",
+      "url": "https://huggingface.co/EshAhm/xlm-roberta-baseFullTune",
+      "snippet": "xlm-roberta-baseFullTune This model is a fine-tuned version of xlm-roberta-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/xlm-roberta-large",
+      "snippet": "xlm-roberta-large is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the fill-mask task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub ."
+    },
+    {
+      "title": "xlm-roberta-large Open-Source Multilingual Model - Supports 100 ...",
+      "url": "https://model.aibase.com/models/details/1915687196251865089",
+      "snippet": "XLM-RoBERTa is a multilingual model pretrained on 2.5TB of filtered CommonCrawl data across 100 languages, trained with a masked language modeling objective."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Mohit028/my_first_fine-tune_model",
+  "slug": "mohit028-my_first_fine-tune_model",
+  "author": "Mohit028",
+  "url": "https://huggingface.co/Mohit028/my_first_fine-tune_model",
+  "created_at": "2026-08-23T14:35:24.000Z",
+  "updated_at": "2026-08-23T14:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Fine-Tune AI Models: Techniques, Examples & Step-by-Step Guide",
+      "url": "https://dev.to/jaipalsingh/how-to-fine-tune-ai-models-techniques-examples-step-by-step-guide-1aph",
+      "snippet": "Learn how to fine-tune AI models with practical steps. Covers LoRA, full fine-tuning, dataset prep, and when fine-tuning beats RAG or prompt engineering. Real enterprise use cases included."
+    },
+    {
+      "title": "The Time I Tried to Fine-Tune My First Model - Medium",
+      "url": "https://medium.com/@learn.aiappdev/the-time-i-tried-to-fine-tune-my-first-model-f7f083859ede",
+      "snippet": "The Time I Tried to Fine-Tune My First Model And failed spectacularly… Back in 2022, I was still working as an engineer in Hong Kong. At that time, AI felt like something happening on another …"
+    },
+    {
+      "title": "Beginner Guide to Fine-Tuning AI Models - ECBC Technologies",
+      "url": "https://ecbctech.com/beginner-guide-to-fine-tuning-ai-models/",
+      "snippet": "Learn how to fine-tune AI models like LLMs for specific tasks. This beginner-friendly guide covers why fine-tuning is needed, best practices, data prep, tools, and a real-world example to boost performance."
+    },
+    {
+      "title": "Fine-tuning now available for GPT‑4o - OpenAI",
+      "url": "https://openai.com/index/gpt-4o-fine-tuning/",
+      "snippet": "Developers can now fine-tune GPT‑4o with custom datasets to get higher performance at a lower cost for their specific use cases. Fine-tuning enables the model to customize structure and tone of responses, or to follow complex domain-specific instructions."
+    },
+    {
+      "title": "Customize a model with fine-tuning - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Learn how to fine-tune and customize Foundry models by using Python, REST APIs, or the Microsoft Foundry portal. Improve model performance with LoRA adaptation and custom datasets."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2-GGUF",
+  "slug": "assiduous42-qwen3-6-27b-fable-fusion-711-heretic2-gguf",
+  "author": "Assiduous42",
+  "url": "https://huggingface.co/Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2-GGUF",
+  "created_at": "2026-08-23T18:17:34.000Z",
+  "updated_at": "2026-08-24T02:07:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "ara",
+    "roleplay",
+    "creative-writing",
+    "qwen3_5",
+    "text-generation",
+    "en",
+    "base_model:Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2",
+    "base_model:quantized:Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 52292429376,
+  "storage_human": "52.3 GB",
+  "base_model": "Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B Fable Fusion Breaks the 700 ARC-C Barrier",
+      "url": "https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier",
+      "snippet": "Overview Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP is a 27-billion-parameter fine-tuned language model built by DavidAU that exceeds ARC-C benchmark scores of 700 in both 8-bit and 4-bit quantization—the first open-source model of this size to accomplish this across both precision levels. The model is a multi-stage fine-tune and merge combining work from multiple ..."
+    },
+    {
+      "title": "The Fine-Tuned Variant of Qwen3.6-27B That Achieved an ARC ... - HackerNoon",
+      "url": "https://hackernoon.com/the-fine-tuned-variant-of-qwen36-27b-that-achieved-an-arc-c-score-of-0711-in-8-bit-quantization",
+      "snippet": "Overview Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF is a fine-tuned variant of Qwen3.6-27B maintained by DavidAU that achieves an ARC-C score of 0.711 in 8-bit quantization and 0.701 in 4-bit quantization—the first open-source model of its class to break the 700 threshold that previously belonged only to OpenAI, Claude, and Gemini. The model contains 27 billion ..."
+    },
+    {
+      "title": "Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF",
+      "snippet": "Ultimate: Exceeds Qwen 3.6 27B performance, uncensored and NEO-Di-Matrix quants to bring all that power in quant form."
+    },
+    {
+      "title": "消费级硬件跑通27B大模型：Qwen3.6-27B-Fable-Fusion-711 开源多阶段微调模型深度解析",
+      "url": "https://blog.csdn.net/ylscode/article/details/163247856",
+      "snippet": "在开源大模型的赛道上，一个名字正在快速升温—— Qwen3.6-27B-Fable-Fusion-711。这不是某家科技巨头的闭源产品，而是社区开发者基于阿里通义千问Qwen 3.6 27B底座，通过多阶段微调与多阶段合并精心打磨出的开源模型。它最引人注目的标签，是在消费级GPU上实现了此前只有OpenAI、Claude和Gemini等闭源模型 ..."
+    }
+  ]
+}

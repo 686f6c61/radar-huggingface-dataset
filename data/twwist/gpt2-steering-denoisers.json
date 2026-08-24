@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "twwist/gpt2-steering-denoisers",
+  "slug": "twwist-gpt2-steering-denoisers",
+  "author": "twwist",
+  "url": "https://huggingface.co/twwist/gpt2-steering-denoisers",
+  "created_at": "2026-08-23T15:46:35.000Z",
+  "updated_at": "2026-08-23T17:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 529657,
+  "storage_human": "529657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "borisggg/steering-denoiser-gpt2 · Hugging Face",
+      "url": "https://huggingface.co/borisggg/steering-denoiser-gpt2",
+      "snippet": "borisggg / steering-denoiser-gpt2 like 0 PyTorch interpretability activation-steering mechanistic-interpretability sparse-autoencoder License:mit Model card FilesFiles and versions xet Community Copy to bucket new Steering Denoiser — GPT-2 small, layer 6 What it does Training Results What did and did not work Two things that will silently ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=activation-steering",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "steering_demo.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/canrager/steering_38c3/blob/main/steering_demo.ipynb",
+      "snippet": "Hi there! Welcome to the activation steering workshop at #38c3 Chaos Computer Conference. You are a citizen of Atlantis. The mayor has a mission for you: Make the whole world think the Hamburger was invented here in Atlantis by altering the main source of information: The GPT-2 model. Before we get into steering ourselves, have a look at these demonstrations on the web to get a feeling of what ..."
+    },
+    {
+      "title": "NeuroTrace - GPT-2 Small Residual Attack & Defence Framework (IOI Task)",
+      "url": "https://discuss.huggingface.co/t/neurotrace-gpt-2-small-residual-attack-defence-framework-ioi-task/170688",
+      "snippet": "1. What is NeuroTrace? NeuroTrace is an end-to-end research framework for: Attacking GPT-2 Small on the Indirect Object Identification (IOI) task Defending it using learned steering vectors in the residual stream Wrapping everything in an integrated \"immune system\" that decides when and where to intervene The project is built around GPT-2 Small (124M) and uses: 12 Sparse Autoencoders (SAE ..."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CondarcoIntel/phishing-url-detector",
+  "slug": "condarcointel-phishing-url-detector",
+  "author": "CondarcoIntel",
+  "url": "https://huggingface.co/CondarcoIntel/phishing-url-detector",
+  "created_at": "2026-08-23T23:12:29.000Z",
+  "updated_at": "2026-08-24T00:39:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535665120,
+  "storage_human": "536 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 100Psycho007/ai-phishing-url-detector: A no-code machine ...",
+      "url": "https://github.com/100Psycho007/ai-phishing-url-detector",
+      "snippet": "A no-code machine learning project that detects phishing URLs using an AI model trained via Google AutoML or Teachable Machine."
+    },
+    {
+      "title": "Phishing URL detection with neural networks: an empirical study",
+      "url": "https://www.nature.com/articles/s41598-024-74725-6",
+      "snippet": "In addition to email authentication tools, it also offers phishing URL detection based on AI algorithms. EasyDMARC gathers legitimate and phishing URLs on a daily basis through its internal ..."
+    },
+    {
+      "title": "️ Phishing Website Detection using AI/ML - GitHub",
+      "url": "https://github.com/Muzammilxi/Phishing-Website-Detection-AI",
+      "snippet": "🛡️ Phishing Website Detection using AI/ML This project implements a Random Forest-based Machine Learning model to detect phishing websites using URL-based features. It leverages a curated dataset of phishing and legitimate URLs, extracts features, and trains a classifier that achieves 96.8% accuracy."
+    },
+    {
+      "title": "r3ddkahili/final-complete-malicious-url-model · Hugging Face",
+      "url": "https://huggingface.co/r3ddkahili/final-complete-malicious-url-model",
+      "snippet": "Malicious URL Detection Model A fine-tuned BERT-LoRA model for detecting malicious URLs, including phishing, malware, and defacement threats. Model Description This model is a fine-tuned BERT-based classifier designed to detect malicious URLs in real-time. It applies Low-Rank Adaptation (LoRA) for efficient fine-tuning, reducing computational costs while maintaining high accuracy. The model ..."
+    },
+    {
+      "title": "pirocheto/phishing-url-detection · Hugging Face",
+      "url": "https://huggingface.co/pirocheto/phishing-url-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

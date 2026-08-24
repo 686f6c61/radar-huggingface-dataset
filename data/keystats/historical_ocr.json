@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "keystats/historical_ocr",
+  "slug": "keystats-historical_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/historical_ocr",
+  "created_at": "2026-08-23T23:23:39.000Z",
+  "updated_at": "2026-08-23T23:24:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762310,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "historical-ocr: Turn archival scans into searchable text",
+      "url": "https://skills.rest/skill/historical-ocr",
+      "snippet": "Use the historical-ocr skill to effortlessly turn archival scans into searchable text. A reliable, executable skill for Claude, contributed by xjtulyc, designed for Education & Research workflows."
+    },
+    {
+      "title": "Historical OCR - a Hugging Face Space by milwright",
+      "url": "https://huggingface.co/spaces/milwright/historical-ocr",
+      "snippet": "This app converts historical documents like photographs, letters, and PDFs into easily readable text. Upload your document, choose preprocessing options, and get the extracted text as a result."
+    },
+    {
+      "title": "PDF CHURRO: Making History Readable with an Open-Weight Large Vision ...",
+      "url": "https://almond-static.stanford.edu/papers/emnlp2025_historical_ocr.pdf",
+      "snippet": "The hybrid model, combining Azure OCR with Gemini 2.5 Pro, averages 52.6% and trails at least one of its components in every language. Relative to Azure OCR alone, the hy-brid system improves notably for Bengali and Ro-manian."
+    },
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "historical-ocr/docs/USER_GUIDE.md at main - GitHub",
+      "url": "https://github.com/buzzcauldron/historical-ocr/blob/main/docs/USER_GUIDE.md",
+      "snippet": "Historical OCR — guide for non-experts This tool turns scanned books, PDFs, and page images into plain text you can search, quote, and reuse. It is aimed at historians, librarians, and researchers who have source material and want a simple tool to make passable ocr scans of tricky historical documents. Send a DM for suggestions and bugs."
+    }
+  ]
+}

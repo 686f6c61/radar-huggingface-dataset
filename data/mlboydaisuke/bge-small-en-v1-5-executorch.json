@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/bge-small-en-v1.5-ExecuTorch",
+  "slug": "mlboydaisuke-bge-small-en-v1-5-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/bge-small-en-v1.5-ExecuTorch",
+  "created_at": "2026-08-23T08:05:47.000Z",
+  "updated_at": "2026-08-23T12:41:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:quantized:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266666796,
+  "storage_human": "267 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-small-en-v1.5 at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · BAAI/bge-small-en-v1.5 at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5/blob/main/README.md",
+      "snippet": "BAAI / bge-small-en-v1.5 like 494 Follow Beijing Academy of Artificial Intelligence 3.87k Feature Extraction sentence-transformers PyTorch ONNX Safetensors Transformers English bert sentence-similarity mteb Eval Results (legacy) text-embeddings-inference arxiv:5 papers License:mit Model card FilesFiles and versions xet Community 28 Deploy Copy ..."
+    },
+    {
+      "title": "bge-small-en-v1.5 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/bge-small-en-v1-5/",
+      "snippet": "Download bge-small-en-v1.5 for free. Compact English sentence embedding model for semantic search tasks. BAAI/bge-small-en-v1.5 is a lightweight English sentence embedding model developed by the Beijing Academy of Artificial Intelligence (BAAI) as part of the BGE (BAAI General Embedding) series. Designed for dense retrieval, semantic search, and similarity tasks, it produces 384-dimensional ..."
+    },
+    {
+      "title": "bge-small-en-v1.5 — Embedding Model by BAAI | Model Database",
+      "url": "https://modeldatabase.com/BAAI/bge-small-en-v1.5.html",
+      "snippet": "BAAI/bge-small-en-v1.5 is an open source embedding model built with sentence-transformers, 193 downloads. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    }
+  ]
+}

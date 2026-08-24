@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Haongchen/MemoryVLA",
+  "slug": "haongchen-memoryvla",
+  "author": "Haongchen",
+  "url": "https://huggingface.co/Haongchen/MemoryVLA",
+  "created_at": "2026-08-24T07:17:29.000Z",
+  "updated_at": "2026-08-24T10:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "memoryvla",
+  "languages": [],
+  "tags": [
+    "memoryvla",
+    "robotics",
+    "vision-language-action",
+    "memory",
+    "action-diffusion",
+    "piper",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33681120158,
+  "storage_human": "33.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shihao1895/MemoryVLA: [ICLR 2026] Code of \"MemoryVLA ...",
+      "url": "https://github.com/shihao1895/MemoryVLA",
+      "snippet": "[ICLR 2026] Code of \"MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation\" - shihao1895/MemoryVLA"
+    },
+    {
+      "title": "[2508.19236] MemoryVLA: Perceptual-Cognitive Memory in Vision-Language ...",
+      "url": "https://arxiv.org/abs/2508.19236",
+      "snippet": "Temporal context is essential for robotic manipulation because such tasks are inherently non-Markovian, yet mainstream VLA models typically overlook it and struggle with long-horizon, temporally dependent tasks. Cognitive science suggests that humans rely on working memory to buffer short-lived representations for immediate control, while the hippocampal system preserves verbatim episodic ..."
+    },
+    {
+      "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models ...",
+      "url": "https://arxiv.org/html/2508.19236v1",
+      "snippet": "Inspired by these mechanisms, we propose MemoryVLA, a Cognition-Memory-Action framework for long-horizon robotic manipulation. A pretrained VLM encodes the observation into perceptual and cognitive tokens that form working memory, while a Perceptual-Cognitive Memory Bank stores low-level details and high-level semantics consolidated from it."
+    },
+    {
+      "title": "MemoryVLA - shihao1895.github.io",
+      "url": "https://shihao1895.github.io/MemoryVLA/",
+      "snippet": "Working memory retrieves decision-relevant entries from the bank, adaptively fuses them with current tokens, and updates the bank by merging redundancies. Using these tokens, a memory-conditioned diffusion action expert yields temporally aware action sequences. We evaluate MemoryVLA on 150+ simulation and real-world tasks across three robots."
+    },
+    {
+      "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action...",
+      "url": "https://openreview.net/forum?id=54U3XHf7qq",
+      "snippet": "Inspired by these mechanisms, we propose MemoryVLA, a Cognition-Memory-Action framework for long-horizon robotic manipulation. A pretrained VLM encodes the observation into perceptual and cognitive tokens that form working memory, while a Perceptual-Cognitive Memory Bank stores low-level details and high-level semantics consolidated from it."
+    }
+  ]
+}

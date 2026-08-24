@@ -5,7 +5,7 @@
   "author": "sullivan1502",
   "url": "https://huggingface.co/sullivan1502/base-zone-pretrain",
   "created_at": "2026-08-20T03:55:10.000Z",
-  "updated_at": "2026-08-22T14:06:01.000Z",
+  "updated_at": "2026-08-23T17:03:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5000,
+  "downloads_30d": 6949,
   "trending_score": 0,
   "parameters": 98619392,
   "parameters_human": "98.6M",
-  "storage_bytes": 34327710834,
-  "storage_human": "34.3 GB",
+  "storage_bytes": 46164848914,
+  "storage_human": "46.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

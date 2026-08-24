@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ad-astra-video/LTX-Loras",
+  "slug": "ad-astra-video-ltx-loras",
+  "author": "ad-astra-video",
+  "url": "https://huggingface.co/ad-astra-video/LTX-Loras",
+  "created_at": "2026-08-23T12:37:28.000Z",
+  "updated_at": "2026-08-23T13:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428150692,
+  "storage_human": "428 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ad-astra-video/video-creator: An open-source desktop app for ...",
+      "url": "https://github.com/ad-astra-video/video-creator",
+      "snippet": "The app generates locally with the LTX‑2.3 (22B) model. \"LTX‑2\" is the model generation and \"2.3\" is its current release, so LoRAs labeled LTX‑2 or LTX‑2.3 both target this model and are supported."
+    },
+    {
+      "title": "video-creator/README.md at main · ad-astra-video/video-creator",
+      "url": "https://github.com/ad-astra-video/video-creator/blob/main/README.md",
+      "snippet": "The app generates locally with the LTX‑2.3 (22B) model. \"LTX‑2\" is the model generation and \"2.3\" is its current release, so LoRAs labeled LTX‑2 or LTX‑2.3 both target this model and are supported."
+    },
+    {
+      "title": "LTX-LoRAs: Video-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ltx-loras-alissonerdx",
+      "snippet": "Overview LTX-LoRAs is a collection of Low-Rank Adaptation (LoRA) modules trained for the Lightricks/LTX-2.3 video generation base model, created by Alissonerdx. These LoRAs specialize in video inpainting tasks, allowing you to modify or replace specific regions in video sequences while maintaining temporal consistency. The collection includes three distinct checkpoint variants: a 2500-step ..."
+    },
+    {
+      "title": "LTX LoRAs & AI Video Community: LoRA Marketplace",
+      "url": "https://ltx.io/ltx-community",
+      "snippet": "Browse curated ComfyUI workflows, LoRAs, IC-LoRAs, and finished AI videos built with LTX. Curated by LTX, find your next workflow or model."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Warlord-K/kanha-incidentio-incidents-1.7b-qlora-v1",
+  "slug": "warlord-k-kanha-incidentio-incidents-1-7b-qlora-v1",
+  "author": "Warlord-K",
+  "url": "https://huggingface.co/Warlord-K/kanha-incidentio-incidents-1.7b-qlora-v1",
+  "created_at": "2026-08-24T08:42:18.000Z",
+  "updated_at": "2026-08-24T08:42:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "kanha",
+    "qlora",
+    "mlc",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 4420609794,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-v1 at main",
+      "url": "https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-v1/tree/main",
+      "snippet": "Instructions to use Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Warlord-K/kanha-js: SDK for using Kanha.ai&#x27;s local chatbots",
+      "url": "https://github.com/Warlord-K/kanha-js",
+      "snippet": "SDK for using Kanha.ai&#x27;s local chatbots. Contribute to Warlord-K/kanha-js development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Incident Explorer — AI Incidents",
+      "url": "https://aiincidents.org/explorer/",
+      "snippet": "A faceted, filterable timeline and table of well-documented AI/ML incidents — every entry dated, classified under our taxonomy, and linked to its strongest primary source. Filter by incident type, harm domain, AI modality, actor class, source tier, date range, and free text. Copy APA or BibTeX citations; share filtered views by URL."
+    },
+    {
+      "title": "Warlord-K (Yatharth Gupta) · GitHub",
+      "url": "https://github.com/Warlord-K",
+      "snippet": "Passionate Learner and Driven by Curiosity. I am an ML Enthusiast and work predominantly in the field of Natural Language Processing and Reinforcement Learning. - Warlord-K"
+    },
+    {
+      "title": "kanha-kanha.ai-1.7b-qlora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kanha-AI/kanha-kanha.ai-1.7b-qlora",
+      "snippet": "Deploy kanha-kanha.ai-1.7b-qlora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

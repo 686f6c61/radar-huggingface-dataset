@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FreedomIntelligence/HiMed-Verifier",
+  "slug": "freedomintelligence-himed-verifier",
+  "author": "FreedomIntelligence",
+  "url": "https://huggingface.co/FreedomIntelligence/HiMed-Verifier",
+  "created_at": "2025-12-10T15:05:54.000Z",
+  "updated_at": "2026-08-24T03:27:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 3212755968,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442751443,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FreedomIntelligence/HiMed · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/HiMed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FreedomIntelligence/HiMed",
+      "url": "https://github.com/FreedomIntelligence/HiMed",
+      "snippet": "Contribute to FreedomIntelligence/HiMed development by creating an account on GitHub."
+    },
+    {
+      "title": "HiMed/Models at main · FreedomIntelligence/HiMed · GitHub",
+      "url": "https://github.com/FreedomIntelligence/HiMed/tree/main/Models",
+      "snippet": "This directory is reserved for model checkpoints and related artifacts. Note: We do not release model weights in this repository at this time. The checkpoints will be open-sourced once the paper is accepted. If you have local checkpoints, place them under this folder (e.g., Models/stage1/, Models/stage2/), but do not commit large binaries to GitHub."
+    },
+    {
+      "title": "FreedomIntelligence (FreedomAI) - Hugging Face",
+      "url": "https://huggingface.co/FreedomIntelligence/datasets",
+      "snippet": "Org profile for FreedomAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "HiMed: Incentivizing Hindi Reasoning in Medical LLMs - arXiv.org",
+      "url": "https://arxiv.org/html/2605.24635",
+      "snippet": "The first stage focuses on adapting the model to generate medically grounded Hindi text. This stage stabilizes basic vocabulary and medical expressions, providing a language-aligned initialization for subsequent reasoning-oriented training. Each training example consists of a short factual response without explicit reasoning."
+    }
+  ]
+}

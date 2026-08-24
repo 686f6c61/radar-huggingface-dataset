@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-attn",
+  "slug": "jaisidhsingh-signedkda-attn",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-attn",
+  "created_at": "2026-08-23T11:22:19.000Z",
+  "updated_at": "2026-08-24T11:59:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 341551872,
+  "parameters_human": "341.6M",
+  "storage_bytes": 1366234928,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenThesis - a jaisidhsingh Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jaisidhsingh/openthesis",
+      "snippet": "Collection of artifacts created during my MSc in ML thesis at the University of Tübingen (with OpenEuroLLM)."
+    },
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) / Repositories · GitHub",
+      "url": "https://github.com/jaisidhsingh?tab=repositories",
+      "snippet": "Deep learning researcher. jaisidhsingh has 64 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "Deep learning researcher. jaisidhsingh has 57 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jaisidh Singh",
+      "url": "https://jaisidhsingh.github.io/",
+      "snippet": "I am a master&#x27;s student at the University of Tübingen studying machine learning and a fellow at Zuse School ELIZA. I&#x27;m also a guest researcher at the Max Planck Institute for Intelligent Systems Tübingen advised by Antonio Orvieto. Currently, I&#x27;m writing my master&#x27;s thesis on the scaling behaviour of LLMs with hybrid attention with . Previously, I was an intern at Bosch Research ..."
+    }
+  ]
+}

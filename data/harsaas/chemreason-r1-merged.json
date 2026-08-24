@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harsaas/chemreason-r1-merged",
+  "slug": "harsaas-chemreason-r1-merged",
+  "author": "harsaas",
+  "url": "https://huggingface.co/harsaas/chemreason-r1-merged",
+  "created_at": "2026-08-24T01:41:46.000Z",
+  "updated_at": "2026-08-24T01:45:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:mit",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1215581700,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JamesBrewster/ChemReason_v1.0_8B · Hugging Face",
+      "url": "https://huggingface.co/JamesBrewster/ChemReason_v1.0_8B",
+      "snippet": "ChemReason is an 8B parameter language model fine-tuned for multi-task organic chemistry reasoning. It performs forward reaction prediction, retrosynthesis, mechanism explanation, synthesis planning, and yield estimation using chain-of-thought reasoning with <think> blocks followed by structured answers with SMILES notation."
+    },
+    {
+      "title": "ChemReason - a IDEA-AI4S Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IDEA-AI4S/chemreason",
+      "snippet": "ChemReason updated about 4 hours ago Reasoning dataset for Chemistry Domain Upvote -"
+    },
+    {
+      "title": "GitHub - RadeauDes/ChemReason",
+      "url": "https://github.com/RadeauDes/ChemReason",
+      "snippet": "ChemReason pairs a fine-tuned reasoning model (Qwen3.5-VL SFT) with a retrieve-and-cite backend over a corpus of 966,167 verified USPTO reactions. For chemistry that has been done before, it surfaces the actual documented reaction — reactants, product, conditions, patent, yield — rather than guessing."
+    },
+    {
+      "title": "ChemReason: A Chemical Code-Driven Reasoning LLM via Verifiable ...",
+      "url": "https://openreview.net/forum?id=TzYlXkG9Xr",
+      "snippet": "Unlike non-reasoning LLMs, ChemReason is a code-driven reasoning model that provides transparent inference for molecular editing, generation, and optimization. By dynamically generating and executing chemical verification code during reasoning, the model validates each step, ensuring the scientific reliability of its answers under open-domain ..."
+    },
+    {
+      "title": "DeepSeek R1 | Advanced Reasoning AI for Complex Problems",
+      "url": "https://deepseeksr1.com/r1/",
+      "snippet": "The Model That Changed Everything. DeepSeek R1 - the open-source reasoning model that matched OpenAI o1, crushed NVIDIA&#x27;s stock price, and proved that frontier-level chain-of-thought AI didn&#x27;t require proprietary infrastructure. Free. MIT licensed. Available to run on your laptop."
+    }
+  ]
+}

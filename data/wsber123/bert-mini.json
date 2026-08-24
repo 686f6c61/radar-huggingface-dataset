@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wsber123/bert-mini",
+  "slug": "wsber123-bert-mini",
+  "author": "wsber123",
+  "url": "https://huggingface.co/wsber123/bert-mini",
+  "created_at": "2026-08-23T05:06:13.000Z",
+  "updated_at": "2026-08-23T05:17:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11171074,
+  "parameters_human": "11.2M",
+  "storage_bytes": 89385216,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wsber123/bert-mini · Hugging Face",
+      "url": "https://huggingface.co/wsber123/bert-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "boltuix/bert-mini · Hugging Face",
+      "url": "https://huggingface.co/boltuix/bert-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bert-mini | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/bert-mini/",
+      "snippet": "What is bert-mini? BERT-mini is a compact variant of the BERT architecture designed for efficient pre-training and downstream task performance. Developed as part of research on compact language models, it represents a balance between model size and capability, featuring 4 layers and 256 hidden units."
+    },
+    {
+      "title": "Bert Mini by prajjwal1 — 0.5K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/prajjwal1%2Fbert-mini,564GlczvUGrFwNT7yZANCZ",
+      "snippet": "Bert Mini is an open-source language model by prajjwal1. Features: LLM, Context: 0.5K, License: mit, LLM Explorer Score: 0.07."
+    },
+    {
+      "title": "BERT - Mini open - source model - Free support for English text ...",
+      "url": "https://model.aibase.com/models/details/1924737622031470592",
+      "snippet": "BERT-Mini is a small BERT model suitable for English text processing tasks, featuring case-insensitivity and designed for resource-constrained environments."
+    }
+  ]
+}

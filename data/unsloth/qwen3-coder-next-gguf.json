@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3-Coder-Next-GGUF",
+  "slug": "unsloth-qwen3-coder-next-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF",
+  "created_at": "2026-02-03T13:10:01.000Z",
+  "updated_at": "2026-03-06T14:38:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_next",
+    "unsloth",
+    "qwen",
+    "qwen3",
+    "text-generation",
+    "base_model:Qwen/Qwen3-Coder-Next",
+    "base_model:quantized:Qwen/Qwen3-Coder-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 810,
+  "downloads_30d": 175254,
+  "trending_score": 8,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 6499741821280,
+  "storage_human": "6499.7 GB",
+  "base_model": "Qwen/Qwen3-Coder-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3-Coder-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Coder-Next: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3-coder-next",
+      "snippet": "You&#x27;ll also learn to run the model on Codex & Claude Code. For fine-tuning, Qwen3-Next-Coder fits on a single B200 GPU for bf16 LoRA in Unsloth. Qwen3-Coder-Next Unsloth Dynamic GGUFs to run: unsloth/Qwen3-Coder-Next-GGUF Run GGUF Tutorial Codex & Claude Code FP8 vLLM Tutorial ⚙️ Usage Guide Don&#x27;t have 46GB RAM or unified memory?"
+    },
+    {
+      "title": "Qwen3-Coder: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/qwen3-coder-how-to-run-locally",
+      "snippet": "Qwen3-Coder is Qwen&#x27;s new series of coding agent models, available in 30B (Qwen3-Coder-Flash) and 480B parameters. Qwen3-480B-A35B-Instruct achieves SOTA coding performance rivalling Claude Sonnet-4, GPT-4.1, and Kimi K2, with 61.8% on Aider Polygot and support for 256K (extendable to 1M) token context. We also uploaded Qwen3-Coder with native 1M context length extended by YaRN and full ..."
+    },
+    {
+      "title": "README.md · unsloth/Qwen3-Coder-Next-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Coder-Next-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-coder-next-gguf-unsloth",
+      "snippet": "Qwen3-Coder-Next is an open-weight language model optimized for coding agents and local IDE integration, built by unsloth. The model uses a hybrid mixture-of-experts architecture with 80B total parameters but only 3B activated parameters during inference, achieving performance comparable to models with 10-20x more active parameters."
+    }
+  ]
+}

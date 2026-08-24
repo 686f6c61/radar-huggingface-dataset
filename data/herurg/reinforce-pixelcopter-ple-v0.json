@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "herurg/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "herurg-reinforce-pixelcopter-ple-v0",
+  "author": "herurg",
+  "url": "https://huggingface.co/herurg/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-08-23T10:49:47.000Z",
+  "updated_at": "2026-08-23T10:49:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79678,
+  "storage_human": "79678 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiartwork/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "Bear-ai/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "HusseinEid101/HusseinEid-Reinforce-Pixelcopter-PLE-v0 - GitHub",
+      "url": "https://github.com/HusseinEid101/HusseinEid-Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "kingabzpro/Reinforce-Pixelcopter-PLE-v0 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/kingabzpro-reinforce-pixelcopter-ple-v0",
+      "snippet": "Reinforce-Pixelcopter-PLE-v0 is an open source model from GitHub that offers a free installation service, and any user can find Reinforce-Pixelcopter-PLE-v0 on GitHub to install."
+    },
+    {
+      "title": "KoRiF/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/117855",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-deltaproduct-neg-eigval",
+  "slug": "jaisidhsingh-signedkda-deltaproduct-neg-eigval",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-deltaproduct-neg-eigval",
+  "created_at": "2026-08-23T11:31:27.000Z",
+  "updated_at": "2026-08-24T12:00:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated_deltaproduct",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 342069760,
+  "parameters_human": "342.1M",
+  "storage_bytes": 1368324680,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "Deep learning researcher. jaisidhsingh has 57 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "DeltaProduct: Improving State-Tracking in Linear RNNs via Householder ...",
+      "url": "https://arxiv.org/abs/2502.10297",
+      "snippet": "Linear Recurrent Neural Networks (linear RNNs) have emerged as competitive alternatives to Transformers for sequence modeling, offering efficient training and linear-time inference. However, existing architectures face a fundamental trade-off between expressivity and efficiency, dictated by the structure of their state-transition matrices. Diagonal matrices, used in models such as Mamba, GLA ..."
+    },
+    {
+      "title": "GitHub - automl/DeltaProduct: DeltaProduct is a new linear recurrent ...",
+      "url": "https://github.com/automl/DeltaProduct",
+      "snippet": "The checkpoints are abbreviated with the following rules: Model_eigenvalue-range_training-context-length For example: DN_-1_1_4k is a DeltaNet with negative eigenvalues trained on 4096 token context."
+    },
+    {
+      "title": "msj19/gated_deltaproduct · Hugging Face",
+      "url": "https://huggingface.co/msj19/gated_deltaproduct",
+      "snippet": "msj19 / gated_deltaproduct like 0 Safetensors gated_deltaproduct arxiv:2409.07146 arxiv:2404.06395 Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "ikimyaii/gated-deltaproduct-340M · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/gated-deltaproduct-340M",
+      "snippet": "Safetensors gated_deltaproduct arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training ..."
+    }
+  ]
+}

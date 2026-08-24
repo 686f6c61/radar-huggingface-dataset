@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kinit/canary-1b-v2-sk",
+  "slug": "kinit-canary-1b-v2-sk",
+  "author": "kinit",
+  "url": "https://huggingface.co/kinit/canary-1b-v2-sk",
+  "created_at": "2026-08-24T08:58:42.000Z",
+  "updated_at": "2026-08-24T09:19:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "nemo",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "canary",
+    "slovak",
+    "fine-tuned",
+    "sk",
+    "base_model:nvidia/canary-1b-v2",
+    "base_model:finetune:nvidia/canary-1b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3854622720,
+  "storage_human": "3.9 GB",
+  "base_model": "nvidia/canary-1b-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/canary-1b-v2 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/canary-1b-v2",
+      "snippet": "Deployment Geography Global Use case This model serves developers, researchers, academics, and industries building applications that require speech-to-text capabilities, including but not limited to: conversational AI, voice assistants, transcription services, subtitle generation, and voice analytics platforms. Release Date Huggingface 08/14/2025 Model Architecture Canary-1b-v2 is an encoder ..."
+    },
+    {
+      "title": "nvidia/canary-1b · Hugging Face",
+      "url": "https://huggingface.co/nvidia/canary-1b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance ...",
+      "url": "https://arxiv.org/html/2509.14128v2",
+      "snippet": "This work introduces Canary-1B-v2, a multilingual, multi-task model designed to deliver robust ASR and AST performance with high efficiency. In addition, we release Parakeet-TDT-.6B-v3, a smaller yet more accurate ASR model supporting the same 25 languages."
+    },
+    {
+      "title": "Canary 1B v2 — specs, licence, downloads · STT Index",
+      "url": "https://speechtotext.dev/model/canary-1b-v2/",
+      "snippet": "ABOUT Canary 1B v2 is the multilingual sibling of Canary-Qwen: a FastConformer encoder + Transformer decoder that transcribes and translates across 25 European languages with punctuation, capitalisation, and word timestamps. At 7.15% average English WER with a throughput around 749× realtime, it sits in the leaderboard&#x27;s best speed-for-accuracy region."
+    },
+    {
+      "title": "GitHub - cvlt-ai/NVIDIA-Canary-1B-V2-Web-UI: NVIDIA Canary-1B v2 ...",
+      "url": "https://github.com/cvlt-ai/NVIDIA-Canary-1B-V2-Web-UI",
+      "snippet": "NVIDIA Canary-1B v2 multilingual ASR/AST model using Gradio WEB UI. This v2 implementation provides significant improvements over the original Flash model, featuring 25 European language support, 1..."
+    }
+  ]
+}

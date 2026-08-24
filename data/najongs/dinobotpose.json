@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Najongs/dinobotpose",
+  "slug": "najongs-dinobotpose",
+  "author": "Najongs",
+  "url": "https://huggingface.co/Najongs/dinobotpose",
+  "created_at": "2026-08-23T04:36:36.000Z",
+  "updated_at": "2026-08-23T04:37:06.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pose-estimation",
+    "robot-pose",
+    "dinov3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 740958596,
+  "storage_human": "741 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Najongs/DINObotPose: DINObotPose",
+      "url": "https://github.com/Najongs/DINObotPose",
+      "snippet": "DINObotPose. Contribute to Najongs/DINObotPose development by creating an account on GitHub."
+    },
+    {
+      "title": "Najongs (Jongyeol, Na) - Hugging Face",
+      "url": "https://huggingface.co/Najongs/datasets",
+      "snippet": "AI/NLP/CV"
+    },
+    {
+      "title": "Najongs (NA Jong-yeol) - Hugging Face",
+      "url": "https://huggingface.co/Najongs",
+      "snippet": "Najongs/ability_classification_kr_bert Text Classification • Updated about 15 hours ago • 2"
+    },
+    {
+      "title": "Comparing a7fd256...a7fd256 · Najongs/DINObotPose · GitHub",
+      "url": "https://github.com/Najongs/DINObotPose/compare/Najongs:a7fd256...Najongs:a7fd256",
+      "snippet": "DINObotPose. Contribute to Najongs/DINObotPose development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Pose Generator Free: One-Click Model Pose & Camera Angle Changer ...",
+      "url": "https://bandy.ai/ai-pose-generator",
+      "snippet": "Use our advanced AI pose generator to change model pose and camera angle for your model or product photos or marketing materials. Try our AI pose generator for free now!"
+    }
+  ]
+}

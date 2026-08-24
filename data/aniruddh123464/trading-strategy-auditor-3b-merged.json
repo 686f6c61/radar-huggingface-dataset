@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aniruddh123464/Trading-Strategy-Auditor-3B-Merged",
+  "slug": "aniruddh123464-trading-strategy-auditor-3b-merged",
+  "author": "aniruddh123464",
+  "url": "https://huggingface.co/aniruddh123464/Trading-Strategy-Auditor-3B-Merged",
+  "created_at": "2026-08-23T11:24:46.000Z",
+  "updated_at": "2026-08-23T15:15:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2306.01708",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171926984,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct, Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aitradingbot/strategy_auditor.py at main · ragzur123-pixel ... - GitHub",
+      "url": "https://github.com/ragzur123-pixel/aitradingbot/blob/main/strategy_auditor.py",
+      "snippet": "61 lines (49 loc) · 2.52 KB main aitradingbot / strategy_auditor.py Code Blame 61 lines (49 loc) · 2.52 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 ..."
+    },
+    {
+      "title": "€2.3B AI Trading Loss: Lack of Audit Evidence - LinkedIn",
+      "url": "https://www.linkedin.com/posts/auditinference_case-study-july-3rd-ai-trading-incident-activity-7481305725055442944-8G9R",
+      "snippet": "Case study: July 3rd AI trading incident—€2.3B loss in 14 minutes. The real damage? The bank couldn&#x27;t prove what their AI actually did. Investigators found mutable logs, missing lineage, and ..."
+    },
+    {
+      "title": "GitHub - tradingstrategy-ai/openaudit: Open and free agent-based smart ...",
+      "url": "https://github.com/tradingstrategy-ai/openaudit",
+      "snippet": "Open and free agent-based smart contract auditing system based on multiple open source community maintained pipelines - tradingstrategy-ai/openaudit"
+    },
+    {
+      "title": "7 Best AI Stock Trading Tools Lab Tested Benchmarks 2026",
+      "url": "https://www.liberatedstocktrader.com/ai-stock-trading/",
+      "snippet": "AI Stock Trading Tools Fully Lab-Tested: Benchmarks, Real Examples & Results. Learn What Works, The Limits & What&#x27;s Best For You in 2026."
+    },
+    {
+      "title": "AI in Stock Markets 2026: Smarter Algorithms, Faster Decisions",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/ai-powered-trading-strategies-how-algorithms-are-shaping-2026-markets",
+      "snippet": "AI-powered trading strategies are transforming global markets in 2026. Learn how algorithms, machine learning, and automation are reshaping trading decisions, risk management, and investor behaviour."
+    }
+  ]
+}

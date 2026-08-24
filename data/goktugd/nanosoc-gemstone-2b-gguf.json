@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "GoktugD/NanoSOC-Gemstone-2B-GGUF",
+  "slug": "goktugd-nanosoc-gemstone-2b-gguf",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/NanoSOC-Gemstone-2B-GGUF",
+  "created_at": "2026-08-24T09:06:28.000Z",
+  "updated_at": "2026-08-24T09:10:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.5",
+    "cybersecurity",
+    "soc",
+    "incident-response",
+    "edge-ai",
+    "arm64",
+    "t3-gemstone",
+    "turkish",
+    "text-generation",
+    "en",
+    "tr",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2476882752,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Developer API | Gemma open models | Google AI for Developers",
+      "url": "https://ai.google.dev/",
+      "snippet": "Build with Gemini 2.0 Flash, 2.5 Pro, and Gemma using the Gemini API and Google AI Studio."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Göktuğ Düşünen · Model Lab - a Hugging Face Space by GoktugD",
+      "url": "https://huggingface.co/spaces/GoktugD/goktug-ai-lab",
+      "snippet": "Göktuğ Düşünen — open Turkish AI models, datasets, benchmarks and inference systems."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

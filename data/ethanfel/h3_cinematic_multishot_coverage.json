@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ethanfel/H3_Cinematic_Multishot_Coverage",
+  "slug": "ethanfel-h3_cinematic_multishot_coverage",
+  "author": "ethanfel",
+  "url": "https://huggingface.co/ethanfel/H3_Cinematic_Multishot_Coverage",
+  "created_at": "2026-08-24T10:52:07.000Z",
+  "updated_at": "2026-08-24T10:56:48.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "image-to-video",
+    "multi-shot",
+    "camera-coverage",
+    "cinematic-cuts",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9858458,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethanfel (ethan fel) - Hugging Face",
+      "url": "https://huggingface.co/ethanfel",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 23 hours ago ... published a model about 23 hours ago"
+    },
+    {
+      "title": "ethanfel (ethan fel) - Hugging Face",
+      "url": "https://huggingface.co/ethanfel/models",
+      "snippet": "Organizations ethanfel&#x27;s models11 Sort: Recently updated ethanfel/MiniMax-H3-Pruned-Ref2VA-Delta-LoRAs-Experimental Updated about 1 hour ago• 2"
+    },
+    {
+      "title": "GitHub - jlucasmcrell/ComfyUI-H3-Multishot",
+      "url": "https://github.com/jlucasmcrell/ComfyUI-H3-Multishot",
+      "snippet": "The pack is published as comfyui-h3-multishot, so ComfyUI-Manager can find and update it without a manual clone. The zip on this page stays the complete bundle - both node packs, the workflows and the docs - and remains the right choice if you want everything in one drop."
+    },
+    {
+      "title": "GitHub - AtlasCloudAI/awesome-minimax-h3: Everything built on top of ...",
+      "url": "https://github.com/AtlasCloudAI/awesome-minimax-h3",
+      "snippet": "Everything built on top of MiniMax H3 — the open-weight omni-modal video model that generates picture and native audio together. Weights, quantizations, LoRAs, ComfyUI nodes, workflows and the tricks people found."
+    },
+    {
+      "title": "Civitai Video Gallery | AI-Generated Art Showcase",
+      "url": "https://civitai.com/videos",
+      "snippet": "See the latest art created by the generative AI art community and delve into the inspirations and prompts behind their work"
+    }
+  ]
+}

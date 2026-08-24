@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "qwrt/Midimodell-16.555M",
+  "slug": "qwrt-midimodell-16-555m",
+  "author": "qwrt",
+  "url": "https://huggingface.co/qwrt/Midimodell-16.555M",
+  "created_at": "2026-08-18T14:38:42.000Z",
+  "updated_at": "2026-08-24T12:32:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87076330266,
+  "storage_human": "87.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwrt/Midimodell-0.2M at main - Hugging Face",
+      "url": "https://huggingface.co/qwrt/Midimodell-0.2M/tree/main",
+      "snippet": "qwrt / Midimodell-0.2M like 1 Safetensors qwen3 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Midimodell-0.2M 412 kB Ctrl+K Ctrl+K 1 contributor History:8 commits qwrt Update README.md d535be9 verifiedabout 3 hours ago .gitattributes 1.52 kBinitial commitabout 6 hours ago README.md 3.06 kBUpdate README.mdabout 3 hours ago config.json 915 ..."
+    },
+    {
+      "title": "qwrt/Midimodell-0.2M · Hugging Face",
+      "url": "https://huggingface.co/qwrt/Midimodell-0.2M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-GB",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Model Evolution 2024-2026 — Complete Reference (244 Models)",
+      "url": "https://www.llm-evolution.com/",
+      "snippet": "LLM Model Evolution: The Complete 2024-2026 Reference A comprehensive catalog of every significant language model release across all major providers and sizes — from 135M edge models to 1.7T+ parameter frontiers. Tracks 244 models across 25 families and 13 providers."
+    }
+  ]
+}

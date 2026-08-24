@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hnnguyen/CyberRealisticPony",
+  "slug": "hnnguyen-cyberrealisticpony",
+  "author": "hnnguyen",
+  "url": "https://huggingface.co/hnnguyen/CyberRealisticPony",
+  "created_at": "2026-08-23T11:31:27.000Z",
+  "updated_at": "2026-08-23T11:31:27.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "sdxl",
+    "text-to-image",
+    "photorealistic",
+    "cyberrealistic",
+    "pony",
+    "image-generation",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325918430074,
+  "storage_human": "325.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "v18.0 CoreShift | Pony Diffusion Checkpoint - Civitai",
+      "url": "https://civitai.com/models/443821/cyberrealistic-pony",
+      "snippet": "CyberRealistic Pony blends all the charm of Pony Diffusion with the striking realism of CyberRealistic. The vibe? You get everything from adorable to bold (sometimes both at once) with crazy-detailed textures, moody cinematic lighting, and a hint of AI flair. 📘 New to Pony? Read the Pony Prompting: Master Guide - score chains, control tags, structure, and ready-to-use templates."
+    },
+    {
+      "title": "cyberdelia/CyberRealisticPony · Hugging Face",
+      "url": "https://huggingface.co/cyberdelia/CyberRealisticPony",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CyberRealistic Pony - v13.0 - Free AI Model | Tensor.Art",
+      "url": "https://www.tensor.art/models/904772408848704408",
+      "snippet": "Download CyberRealistic Pony - free CHECKPOINT Pony AI model on TENSOR. By Cyberdelia"
+    },
+    {
+      "title": "CyberRealisticPony: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/cyberrealisticpony-cyberdelia",
+      "snippet": "Overview CyberRealisticPony is a specialized text-to-image diffusion model maintained by cyberdelia that merges Pony Diffusion with CyberRealistic elements to generate photorealistic pony artwork. The model uses a latent diffusion architecture with an integrated Variational Autoencoder already baked in, eliminating the need to load a separate VAE file. It runs on the Stable Diffusion Webui ..."
+    },
+    {
+      "title": "CyberRealistic XL & CyberRealistic Pony Playground",
+      "url": "https://cyberrealistic.org/playground",
+      "snippet": "Experience CyberRealistic&#x27;s photorealistic AI model directly in your browser. Try lifelike skin textures and cinematic lighting with simple natural language prompts — completely free."
+    }
+  ]
+}

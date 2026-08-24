@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nsagatov1/youtube-video-relevance-classifier",
+  "slug": "nsagatov1-youtube-video-relevance-classifier",
+  "author": "nsagatov1",
+  "url": "https://huggingface.co/nsagatov1/youtube-video-relevance-classifier",
+  "created_at": "2026-08-24T13:10:51.000Z",
+  "updated_at": "2026-08-24T13:17:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers.js",
+    "youtube",
+    "reddit",
+    "productivity",
+    "web",
+    "text-classification",
+    "en",
+    "ru",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:finetune:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Relevance Engineering for YouTube Video and AI Search",
+      "url": "https://ipullrank.com/video-youtube-relevance-engineering",
+      "snippet": "Discover how to make your videos rank on YouTube and Google. Leo analyzed 100K+ videos and found transcript, title, and description relevance drive visibility across AI Search. Learn how to optimize video content for real semantic impact."
+    },
+    {
+      "title": "How I Built a YouTube Video Recommendation Engine as a High ... - Medium",
+      "url": "https://medium.com/@dhawan7684/how-i-built-a-youtube-video-recommendation-engine-as-a-high-school-student-and-what-it-taught-me-8751b1eadd64",
+      "snippet": "How I Built a YouTube Video Recommendation Engine as a High School Student — And What It Taught Me About Real AI Engineering A deep-dive into Content-Based Filtering, TF-IDF Vectorization, and …"
+    },
+    {
+      "title": "YouTube Video Recommendation System using Machine Learning",
+      "url": "https://pythongeeks.org/youtube-video-recommendation/",
+      "snippet": "With this Machine Learning Project, we will build a youtube recommendation system. This project is similar to the Movie Recommendation system. In this project, we will be using Collaborative Filtering. So, let&#x27;s build this system. Youtube Recommendation System A recommendation system, sometimes known as a recommendation engine, is a model for information filtering that aims to anticipate ..."
+    },
+    {
+      "title": "YouTube-Video-Classifier - GitHub",
+      "url": "https://github.com/manudev0004/YouTube-Video-Classifier",
+      "snippet": "The YouTube-Video-Classifier project offers the following features: AI Model: Utilizes Python and SK-learn to build a robust model capable of classifying YouTube videos as educative or non-educative."
+    }
+  ]
+}

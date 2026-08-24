@@ -5,7 +5,7 @@
   "author": "redashes",
   "url": "https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX",
   "created_at": "2026-08-16T18:18:39.000Z",
-  "updated_at": "2026-08-18T18:51:04.000Z",
+  "updated_at": "2026-08-23T04:42:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 111,
+  "downloads_30d": 121,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

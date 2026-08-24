@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AnandHaridas1980/slm125m-live-sft",
+  "slug": "anandharidas1980-slm125m-live-sft",
+  "author": "AnandHaridas1980",
+  "url": "https://huggingface.co/AnandHaridas1980/slm125m-live-sft",
+  "created_at": "2026-08-23T18:13:46.000Z",
+  "updated_at": "2026-08-23T18:14:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "legal",
+    "finance",
+    "instruction-tuning",
+    "grounded-qa",
+    "small-language-model",
+    "en",
+    "base_model:AnandHaridas1980/slm125m-live",
+    "base_model:finetune:AnandHaridas1980/slm125m-live",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125848320,
+  "parameters_human": "125.8M",
+  "storage_bytes": 251708904,
+  "storage_human": "252 MB",
+  "base_model": "AnandHaridas1980/slm125m-live",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnandHaridas1980/slm125m-live · Hugging Face",
+      "url": "https://huggingface.co/AnandHaridas1980/slm125m-live",
+      "snippet": "AnandHaridas1980 / slm125m-live like 0 Text Generation Transformers Safetensors English llama legal finance small-language-model pretrained-from-scratch text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "seetha0712/slm125m-live-sft-synthetic · Hugging Face",
+      "url": "https://huggingface.co/seetha0712/slm125m-live-sft-synthetic",
+      "snippet": "/ slm125m-live-sft-synthetic like 0 Safetensors English llama legal financial small-language-model sft instruction-tuned License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new slm125m-live-sft · eager What these are Benchmarks The out-of-distribution test Training data Chat format Note on the base model&#x27;s config ..."
+    },
+    {
+      "title": "GitHub - shivamfet/slm125m · GitHub",
+      "url": "https://github.com/shivamfet/slm125m",
+      "snippet": "A 125M-parameter Llama-style language model trained from scratch on legal and financial text, then fine-tuned twice — once for grounded question answering, once for closed-book. This repo holds the whole pipeline: data collection, cleaning, tokenizer training, pretraining, SFT, evaluation, and the review tooling used to inspect every dataset before training on it."
+    },
+    {
+      "title": "slm125m — a 125M legal & financial language model, trained from scratch",
+      "url": "https://slm125m.vercel.app/",
+      "snippet": "A 125.8M-parameter legal & financial language model, built from scratch for $31.76 and RAFT fine-tuned to refuse when the answer isn&#x27;t in the context."
+    },
+    {
+      "title": "slm125m/sft_app.py at main · shivamfet/slm125m · GitHub",
+      "url": "https://github.com/shivamfet/slm125m/blob/main/sft_app.py",
+      "snippet": "Contribute to shivamfet/slm125m development by creating an account on GitHub."
+    }
+  ]
+}

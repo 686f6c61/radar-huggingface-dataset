@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "markusschmidt4813/paper_013026161_prompt_engineering",
+  "slug": "markusschmidt4813-paper_013026161_prompt_engineering",
+  "author": "markusschmidt4813",
+  "url": "https://huggingface.co/markusschmidt4813/paper_013026161_prompt_engineering",
+  "created_at": "2026-08-23T05:25:59.000Z",
+  "updated_at": "2026-08-23T05:26:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "compact",
+    "endnote",
+    "enthusiastic",
+    "intro-background-approach-eval-conclusion",
+    "markdown",
+    "medium-balanced",
+    "mixed-active-passive",
+    "prompt-engineering",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Design and Engineering: Introduction and Advanced Methods",
+      "url": "https://arxiv.org/html/2401.14423v3",
+      "snippet": "Abstract Prompt design and engineering has rapidly become essential for maximizing the potential of large language models. In this paper, we introduce core concepts, advanced techniques like Chain-of-Thought and Reflection, and the principles behind building LLM-based agents. Finally, we provide a survey of tools for prompt engineers."
+    },
+    {
+      "title": "Prompt Engineering: A Comparative Study of Prompting Techniques in AI ...",
+      "url": "https://ieeexplore.ieee.org/document/11147384",
+      "snippet": "Prompt engineering plays a pivotal role in leveraging the full potential of large language models. This research paper focuses specifically on a comparative analysis of zero-shot and multi-shot prompting techniques, two widely used approaches in prompt engineering. While zero-shot prompting relies solely on task instructions to guide the model&#x27;s output, multi-shot prompting incorporates ..."
+    },
+    {
+      "title": "Papers | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/papers",
+      "snippet": "The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    }
+  ]
+}

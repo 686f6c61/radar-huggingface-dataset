@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "masmi-rnov99/paper_024293185_audio_visual_learning",
+  "slug": "masmi-rnov99-paper_024293185_audio_visual_learning",
+  "author": "masmi-rnov99",
+  "url": "https://huggingface.co/masmi-rnov99/paper_024293185_audio_visual_learning",
+  "created_at": "2026-08-23T05:48:12.000Z",
+  "updated_at": "2026-08-23T05:48:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-visual-learning",
+    "critical",
+    "detailed-descriptive",
+    "intro-background-approach-eval-conclusion",
+    "markdown",
+    "mixed-active-passive",
+    "numeric-nature",
+    "short-punchy",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence | Cool Papers - Immersive Paper Discovery",
+      "url": "https://papers.cool/arxiv/cs.AI",
+      "snippet": "The list of papers for Artificial Intelligence category on arXiv, including titles, authors, and abstracts, with support for paper interpretation based on Kimi AI."
+    },
+    {
+      "title": "Icassp 2026 - 语音识别 论文列表 | 语音/音乐/音频论文速递",
+      "url": "https://nanless.github.io/audio-paper-digest-blog/posts/icassp2026-task-078/",
+      "snippet": "主要实验结果：在LibriSpeech和Wenet-Meeting两个数据集上，本文方法（Relative Timestamp）在时间戳预测的精确率、召回率和平均时间差指标上均显著优于Qwen2-Audio、WhisperTimestamped、SenseVoiceSmall、Canary等基线模型以及论文内对比的绝对时间戳方法。"
+    },
+    {
+      "title": "Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "snippet": "Pandora&#x27;s AI Model Routing Box: Efficient Allocation with Costly Value Estimation Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein Subjects: Artificial Intelligence (cs.AI) [4] arXiv:2608.20314 [pdf, html, other]"
+    },
+    {
+      "title": "Accepted Papers - IJCAI 2026",
+      "url": "https://2026.ijcai.org/accepted-papers/",
+      "snippet": "Presentation format Every accepted paper is presented in two formats: an oral talk (6 min talk + 2 min for Q&A) — which must be delivered in person in Bremen by one of the authors — and a poster (A0, free format) during a dedicated poster session."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    }
+  ]
+}

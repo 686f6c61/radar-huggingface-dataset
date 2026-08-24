@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/granite-embedding-278m-emb-lat-intertext-v2",
+  "slug": "julian-schelb-granite-embedding-278m-emb-lat-intertext-v2",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/granite-embedding-278m-emb-lat-intertext-v2",
+  "created_at": "2026-08-24T13:50:27.000Z",
+  "updated_at": "2026-08-24T13:55:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "intertextuality",
+    "latin",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:ibm-granite/granite-embedding-278m-multilingual",
+    "base_model:finetune:ibm-granite/granite-embedding-278m-multilingual",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1134349134,
+  "storage_human": "1.1 GB",
+  "base_model": "ibm-granite/granite-embedding-278m-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-embedding-278m-multilingual · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "julian-schelb (Julian) - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/models",
+      "snippet": "NLP, Entity Extraction, Graph Representation"
+    },
+    {
+      "title": "Granite Embedding 278m Multilingual model card - IBM",
+      "url": "https://www.ibm.com/docs/en/watsonx/saas?topic=models-granite-embedding-278m-multilingual-model-card",
+      "snippet": "The granite-embedding-278m-multilingual model is a 278M parameter model from the Granite Embeddings suite that can be used to generate high quality text embeddings. This model produces embedding vectors of size 768 and is trained using a combination of open source relevance-pair datasets with permissive, enterprise-friendly license, and IBM collected and generated datasets. This model is ..."
+    },
+    {
+      "title": "Granite Embedding - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/embedding",
+      "snippet": "The Granite Embedding model collection consists of embedding models to generate high-quality text embeddings and a reranker model to improve the relevance and quality of search results or recommendations."
+    },
+    {
+      "title": "granite-embedding-278m-multilingual: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/granite-embedding-278m-multilingual-ibm-granite",
+      "snippet": "Overview granite-embedding-278m-multilingual is a 278-million parameter dense embedding model developed by ibm-granite that generates fixed-length 768-dimensional vector representations from text. Built on an encoder-only XLM-RoBERTa-like transformer architecture with 12 layers, 12 attention heads, and a 250,002-token vocabulary, the model accepts text inputs up to 512 tokens in length and ..."
+    }
+  ]
+}

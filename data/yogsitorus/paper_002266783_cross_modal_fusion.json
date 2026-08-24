@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yogsitorus/paper_002266783_cross_modal_fusion",
+  "slug": "yogsitorus-paper_002266783_cross_modal_fusion",
+  "author": "yogsitorus",
+  "url": "https://huggingface.co/yogsitorus/paper_002266783_cross_modal_fusion",
+  "created_at": "2026-08-23T05:39:11.000Z",
+  "updated_at": "2026-08-23T05:39:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "cross-modal-fusion",
+    "enthusiastic",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "passive",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2607.00746] GaussianFusion: Unified 3D Gaussian Representation for ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "The bird&#x27;s-eye view (BEV) representation enables multi-sensor features to be fused within a unified space, serving as the primary approach for achieving comprehensive 3D perception. However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from ..."
+    },
+    {
+      "title": "Hybrid cross-modality fusion network for medical image segmentation ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197625000739",
+      "snippet": "Furthermore, the hybrid cross-modality feature decoder conducts local and non-local cross-modality feature interaction by a local cross-modality fusion module and a non-local cross-modality fusion module, respectively. Experimental results show that our method achieved state-of-the-art results on two public medical image segmentation datasets."
+    },
+    {
+      "title": "Crossref Metadata Search",
+      "url": "https://search.crossref.org/",
+      "snippet": "Search the metadata of journal articles, books, standards, datasets & more"
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "Bridging radiology and pathology: domain-generalized cross-modal ...",
+      "url": "https://www.nature.com/articles/s41746-026-02423-w",
+      "snippet": "By advancing multimodal integration, cross-institutional robustness, and explainability, this study represents a step toward clinically deployable AI systems for diagnostic decision support."
+    }
+  ]
+}

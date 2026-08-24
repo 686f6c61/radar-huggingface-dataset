@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dopaemon/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-oQ4e",
+  "slug": "dopaemon-qwen3-5-9b-claude-4-6-highiq-instruct-heretic-uncensored-oq4e",
+  "author": "dopaemon",
+  "url": "https://huggingface.co/dopaemon/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-oQ4e",
+  "created_at": "2026-08-24T15:28:35.000Z",
+  "updated_at": "2026-08-24T15:32:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1876724976,
+  "parameters_human": "1.88B",
+  "storage_bytes": 6053357137,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+      "url": "https://huggingface.co/xbann/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED/blob/main/README.md",
+      "snippet": "Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED Fine tune via Unsloth of Qwen 3.5 9B dense model using Claude 4.6 large distill dataset on local hardware. This has VASTLY improved the thinking generation (and benchmarks) of this model replacing \"Qwen 3.5\" thinking with \"Claude 4.6\" thinking. Every attempt was made to ensure the training was \"mild\" and did not negatively affect the ..."
+    },
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+      "url": "https://www.spheron.network/tools/gpu-recommender/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+      "snippet": "Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED needs about 21 GB of VRAM for FP16 inference (9.4B parameters). FP16, INT8, and INT4 estimates plus the cheapest GPU to run it, with live hourly pricing from 5+ providers."
+    },
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+      "url": "https://aimarketcap.tech/models/davidau-qwen3-5-9b-claude-4-6-highiq-thinking-heretic-uncensored",
+      "snippet": "Explore Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED by DavidAU — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "Qwen3.5 9B Claude 4.6 HighIQ THINKING HERETIC UNCENSORED",
+      "url": "https://interfaze.ai/models/davidauqwen35-9b-claude-46-highiq-thinking-heretic-uncensored",
+      "snippet": "Qwen3.5 9B Claude 4.6 HighIQ THINKING HERETIC UNCENSORED by DavidAU, a image-text-to-text model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    }
+  ]
+}

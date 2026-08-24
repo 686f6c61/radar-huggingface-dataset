@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "IndexErrorThe/uni-mumer-3b-mlx-8bit",
+  "slug": "indexerrorthe-uni-mumer-3b-mlx-8bit",
+  "author": "IndexErrorThe",
+  "url": "https://huggingface.co/IndexErrorThe/uni-mumer-3b-mlx-8bit",
+  "created_at": "2026-08-24T08:54:18.000Z",
+  "updated_at": "2026-08-24T10:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1536778240,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4627992046,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BFlameSwift/Uni-MuMER: [NeurIPS&#x27;25 Spotlight ]Official ...",
+      "url": "https://github.com/BFlameSwift/Uni-MuMER",
+      "snippet": "Uni-MuMER: Unified Multi-Task Fine-Tuning of Vision-Language Model for Handwritten Mathematical Expression Recognition Description We introduce Uni-MuMER, which fully fine-tunes the Qwen2.5-VL-3B model for the HMER task without modifying its architecture, effectively injecting domain-specific knowledge into a generalist framework."
+    },
+    {
+      "title": "Uni-MuMER: Unified Multi-Task Fine-Tuning of Vision-Language Model for ...",
+      "url": "https://arxiv.org/html/2505.23566v3",
+      "snippet": "Both Uni-MuMER and Uni-MuMER † significantly outperform both the Vanilla (baseline) model and prior methods, underscoring the vital role of data-driven tasks and diverse external data in enhancing model accuracy."
+    },
+    {
+      "title": "Uni-MuMER - a phxember Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/phxember/uni-mumer",
+      "snippet": "Dataset & Models for paper \"Uni-MuMER: Unified Multi-Task Fine-Tuning of Vision-Language Model for Handwritten Mathematical Expression Recognition\""
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Uni-MuMER/README.md at main · BFlameSwift/Uni-MuMER · GitHub",
+      "url": "https://github.com/BFlameSwift/Uni-MuMER/blob/main/README.md",
+      "snippet": "Uni-MuMER: Unified Multi-Task Fine-Tuning of Vision-Language Model for Handwritten Mathematical Expression Recognition Description We introduce Uni-MuMER, which fully fine-tunes the Qwen2.5-VL-3B model for the HMER task without modifying its architecture, effectively injecting domain-specific knowledge into a generalist framework."
+    }
+  ]
+}

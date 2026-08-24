@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Palmyra-Creative-GGUF",
+  "slug": "mradermacher-palmyra-creative-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Palmyra-Creative-GGUF",
+  "created_at": "2026-08-24T15:13:15.000Z",
+  "updated_at": "2026-08-24T15:46:24.000Z",
+  "license": "writer-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Creative Thinking",
+    "Ideation",
+    "Idea Generation",
+    "CriticalThinking",
+    "Lateral Thinking",
+    "Divergent Thinking",
+    "Convergent Thinking",
+    "Imagination",
+    "Creativity",
+    "Innovation Mindset",
+    "Brainstorming",
+    "Creative Problem Solving",
+    "WickedProblems",
+    "Five Whys",
+    "Creative Confidence and Mindset",
+    "Support",
+    "Enterprise LLM",
+    "Enterprise",
+    "Enterprise ready",
+    "en",
+    "base_model:Writer/Palmyra-Creative",
+    "base_model:quantized:Writer/Palmyra-Creative",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 121892970560,
+  "parameters_human": "121.89B",
+  "storage_bytes": 519603121120,
+  "storage_human": "519.6 GB",
+  "base_model": "Writer/Palmyra-Creative",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Asmodeus-24B-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Asmodeus-24B-v3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Writer/Palmyra-Creative · Hugging Face",
+      "url": "https://huggingface.co/Writer/Palmyra-Creative",
+      "snippet": "Palmyra-Creative, developed by Writer, is a model designed to assist with creative writing and content generation tasks. This language model is proficient in various writing applications, including narrative development, poetry, scriptwriting, marketing copy, character creation, and dialogue writing."
+    },
+    {
+      "title": "Introducing Palmyra Creative - WRITER",
+      "url": "https://writer.com/blog/palmyra-creative/",
+      "snippet": "The Palmyra Creative model is packaged as an NVIDIA NIM microservice to streamline and accelerate the deployment of generative AI models across NVIDIA-accelerated infrastructure anywhere, including cloud, data center, and workstations."
+    },
+    {
+      "title": "build.nvidia.com",
+      "url": "https://build.nvidia.com/writer/palmyra-creative-122b.md",
+      "snippet": "Palmyra-4-Creative aims to be a useful tool for writers, content creators, and other professionals in fields requiring creative text production, supporting the creative writing process."
+    },
+    {
+      "title": "Palmyra LLMs: secure, enterprise-grade generative AI - WRITER",
+      "url": "https://writer.com/blog/palmyra/",
+      "snippet": "Palmyra LLMs are tailored for business organizations ready to invest in generative AI and are designed to head off barriers to enterprise adoption. Using these large language models, WRITER is the first to offer companies both an application layer and a foundation model layer together in a single platform."
+    }
+  ]
+}

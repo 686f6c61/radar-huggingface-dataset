@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ann-chern/steering_denoiser",
+  "slug": "ann-chern-steering_denoiser",
+  "author": "ann-chern",
+  "url": "https://huggingface.co/ann-chern/steering_denoiser",
+  "created_at": "2026-08-23T13:59:03.000Z",
+  "updated_at": "2026-08-23T20:01:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13654366,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "borisggg/steering-denoiser-gpt2 · Hugging Face",
+      "url": "https://huggingface.co/borisggg/steering-denoiser-gpt2",
+      "snippet": "borisggg / steering-denoiser-gpt2 like 0 PyTorch interpretability activation-steering mechanistic-interpretability sparse-autoencoder License:mit Model card FilesFiles and versions xet Community Copy to bucket new Steering Denoiser — GPT-2 small, layer 6 What it does Training Results What did and did not work Two things that will silently ..."
+    },
+    {
+      "title": "Yaroslav574389/gpt2-layer6-steering-denoiser · Hugging Face",
+      "url": "https://huggingface.co/Yaroslav574389/gpt2-layer6-steering-denoiser",
+      "snippet": "The model was trained on 131,072 WikiText-2 train tokens and selected on a deterministic corrupted-activation validation split. It never observed any downstream steering vector. This repository also includes a full covariance eigensystem fitted to the bulk WikiText-2 activation distribution."
+    },
+    {
+      "title": "Denoising Concept Vectors with Sparse Autoencoders for Improved ...",
+      "url": "https://aclanthology.org/2026.findings-eacl.40/",
+      "snippet": "Denoising Concept Vectors with Sparse Autoencoders for Improved Language Model Steering. In Findings of the Association for Computational Linguistics: EACL 2026, pages 797-808, Rabat, Morocco."
+    },
+    {
+      "title": "Design of Electric Power Steering System Identification and Control for ...",
+      "url": "https://ieeexplore.ieee.org/document/10496684",
+      "snippet": "Electric power steering (EPS) poses significant control challenges in autonomous vehicles due to their inherent complexity and non-linearity. This study explores the application of artificial neural network (ANN) to address these limitations."
+    },
+    {
+      "title": "GitHub - zxclwnq/steering-denoisers",
+      "url": "https://github.com/zxclwnq/steering-denoisers",
+      "snippet": "A model&#x27;s ability to reconstruct natural activations does not by itself transfer to repairing steering interventions. After successively removing steering attenuation, prior weakness, the absence of conditioning, and the mismatch between training and inference geometry, no useful orthogonal naturalization appears."
+    }
+  ]
+}

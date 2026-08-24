@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ArtCloud/Zubr1.5-VL-32B",
+  "slug": "artcloud-zubr1-5-vl-32b",
+  "author": "ArtCloud",
+  "url": "https://huggingface.co/ArtCloud/Zubr1.5-VL-32B",
+  "created_at": "2026-08-24T08:34:50.000Z",
+  "updated_at": "2026-08-24T08:43:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ru",
+    "be",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "zubr",
+    "zubriq",
+    "lora",
+    "qlora",
+    "legal",
+    "belarus",
+    "vision",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "ru",
+    "be",
+    "en",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 20042149259,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zubr - a ArtCloud Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ArtCloud/zubr",
+      "snippet": "Семейство моделей Zubr платформы ZubrIQ — LLM по API в контуре Республики Беларусь (zubriq.by)"
+    },
+    {
+      "title": "ArtCloud/Zubr1.0-VL-4B · Hugging Face",
+      "url": "https://huggingface.co/ArtCloud/Zubr1.0-VL-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ArtCloud — AI, Ops/cloud services & Web3 engineering",
+      "url": "https://artcloud.co/en/",
+      "snippet": "What we do ArtCloud products and engineering: ZuBrIQ, Academy, 24/7 cloud services, Web3, Web Shield AI, and product development."
+    }
+  ]
+}

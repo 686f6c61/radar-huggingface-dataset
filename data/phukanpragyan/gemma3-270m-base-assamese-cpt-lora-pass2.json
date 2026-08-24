@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "phukanpragyan/gemma3-270m-base-assamese-cpt-lora-pass2",
+  "slug": "phukanpragyan-gemma3-270m-base-assamese-cpt-lora-pass2",
+  "author": "phukanpragyan",
+  "url": "https://huggingface.co/phukanpragyan/gemma3-270m-base-assamese-cpt-lora-pass2",
+  "created_at": "2026-08-23T13:04:46.000Z",
+  "updated_at": "2026-08-23T13:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/root/.cache/kagglehub/datasets/phukanpragyan/gemma3-270m-base-assamese-extended/versions/1",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-270m",
+    "base_model:adapter:google/gemma-3-270m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2156343652,
+  "storage_human": "2.2 GB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phukanpragyan/gemma3-270m-it-assamese-cpt-lora · Hugging Face",
+      "url": "https://huggingface.co/phukanpragyan/gemma3-270m-it-assamese-cpt-lora",
+      "snippet": "Instructions to use phukanpragyan/gemma3-270m-it-assamese-cpt-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "phukanpragyan/gemma3-270m-it-assamese-cpt-lora-pass2 · Hugging Face",
+      "url": "https://huggingface.co/phukanpragyan/gemma3-270m-it-assamese-cpt-lora-pass2",
+      "snippet": "Instructions to use phukanpragyan/gemma3-270m-it-assamese-cpt-lora-pass2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gemma3-270m-it-assamese-cpt-lora-pass2 - friendli.ai",
+      "url": "https://friendli.ai/models/phukanpragyan/gemma3-270m-it-assamese-cpt-lora-pass2",
+      "snippet": "Run gemma3-270m-it-assamese-cpt-lora-pass2 with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "Gemma3 270m It Assamese Sft - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/phukanpragyan/gemma3-270m-it-assamese-sft",
+      "snippet": "FNI V2.0 for Gemma3 270m It Assamese Sft: Authority (A:0), Popularity (P:0), Recency (R:100), Quality (Q:65). Semantic (S) is a query-time baseline scored live at search."
+    },
+    {
+      "title": "gemma3-270m-it-assamese-sft API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/phukanpragyan/gemma3-270m-it-assamese-sft",
+      "snippet": "Deploy gemma3-270m-it-assamese-sft with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

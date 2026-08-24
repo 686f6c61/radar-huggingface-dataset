@@ -5,7 +5,7 @@
   "author": "ranasrule",
   "url": "https://huggingface.co/ranasrule/Med3DVLM-Qwen-2.5-7B-mirror",
   "created_at": "2026-08-22T17:11:15.000Z",
-  "updated_at": "2026-08-22T19:18:52.000Z",
+  "updated_at": "2026-08-23T05:45:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 7678258880,
   "parameters_human": "7.68B",

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Brunobkr/OFFFELLIA_llm-jp-4-32b-a3b-thinking.gguf",
+  "slug": "brunobkr-offfellia_llm-jp-4-32b-a3b-thinking-gguf",
+  "author": "Brunobkr",
+  "url": "https://huggingface.co/Brunobkr/OFFFELLIA_llm-jp-4-32b-a3b-thinking.gguf",
+  "created_at": "2026-08-23T21:05:40.000Z",
+  "updated_at": "2026-08-23T22:12:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "doi:10.57967/hf/10106",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32139028992,
+  "parameters_human": "32.14B",
+  "storage_bytes": 55735673233,
+  "storage_human": "55.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mmnga-o/llm-jp-4-32b-a3b-thinking-gguf · Hugging Face",
+      "url": "https://huggingface.co/mmnga-o/llm-jp-4-32b-a3b-thinking-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llm-jp-4-32b-a3b-thinking-gguf - Hugging Face",
+      "url": "https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Release of New Japanese LLMs, \"LLM-jp-4 8B\" and \"LLM-jp-4 32B-A3B ...",
+      "url": "https://www.nii.ac.jp/en/news/release/2026/0403.html",
+      "snippet": "The World&#x27;s Largest Fully Open Model, Including Training Data - NII NewsRelease (2024/9/17) News Release: PDF Release of New Japanese LLMs, \"LLM-jp-4 8B\" and \"LLM-jp-4 32B-A3B\", Trained on a High-Quality Corpus of Approximately 12 Trillion Tokens under an Open-Source License Surpassing GPT-4o and Qwen3-8B on Several Standard Benchmarks"
+    },
+    {
+      "title": "llm-jp-4-32b-a3b-thinking · Models",
+      "url": "https://www.modelscope.cn/models/llm-jp/llm-jp-4-32b-a3b-thinking/summary",
+      "snippet": "This repository provides the llm-jp-4-32b-a3b-thinking model. For an overview of the LLM-jp-4 models across different parameter sizes, please refer to: LLM-jp-4 Models Base models are trained with pre-training and mid-training only."
+    },
+    {
+      "title": "Llm Jp 4 32B A3b Thinking by llm-jp — VRAM 64.3GB, 64K context | LLM ...",
+      "url": "https://llm-explorer.com/model/llm-jp%2Fllm-jp-4-32b-a3b-thinking,77m1zzzM4iUisoCJaHgEI9",
+      "snippet": "Llm Jp 4 32B A3b Thinking is an open-source 32b LLM by llm-jp. VRAM 64.3GB, 64K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

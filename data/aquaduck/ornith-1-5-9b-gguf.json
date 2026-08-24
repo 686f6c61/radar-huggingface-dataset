@@ -5,7 +5,7 @@
   "author": "aquaduck",
   "url": "https://huggingface.co/aquaduck/Ornith-1.5-9B-GGUF",
   "created_at": "2026-08-21T10:37:53.000Z",
-  "updated_at": "2026-08-21T10:38:21.000Z",
+  "updated_at": "2026-08-22T14:27:07.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "imatrix"
   ],
   "likes": 2,
-  "downloads_30d": 236,
+  "downloads_30d": 406,
   "trending_score": 0,
   "parameters": 4476899584,
   "parameters_human": "4.48B",

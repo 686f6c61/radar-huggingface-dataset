@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "dennis19319/Qwen2.5-14B-Merged-799train",
+  "slug": "dennis19319-qwen2-5-14b-merged-799train",
+  "author": "dennis19319",
+  "url": "https://huggingface.co/dennis19319/Qwen2.5-14B-Merged-799train",
+  "created_at": "2026-08-24T12:53:00.000Z",
+  "updated_at": "2026-08-24T13:05:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-14B",
+    "base_model:finetune:Qwen/Qwen2.5-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29540133744,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen2.5-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dennis19319/qwen2-5-14b-merged · Hugging Face",
+      "url": "https://huggingface.co/dennis19319/qwen2-5-14b-merged",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "dennis19319/Qwen2.5-14B-Merged-500train · Hugging Face",
+      "url": "https://huggingface.co/dennis19319/Qwen2.5-14B-Merged-500train",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    },
+    {
+      "title": "Qwen2.5-14B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen2-5-14b",
+      "snippet": "While the base Qwen2.5-14B model is intended for pre-training and subsequent fine-tuning, its instruction-tuned variants are optimized for direct application in conversational AI, instruction following, and generating structured outputs like JSON. Its design accommodates applications requiring significant context and precise text generation."
+    }
+  ]
+}

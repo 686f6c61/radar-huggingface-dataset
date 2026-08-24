@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-c423d4fc1681",
+  "slug": "greenfield0810-affine-ark-c423d4fc1681",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-c423d4fc1681",
+  "created_at": "2026-08-23T18:00:16.000Z",
+  "updated_at": "2026-08-23T18:00:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234482459,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "greenfield0810/affine-ark-c423d4fc1681 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-c423d4fc1681",
+      "snippet": "Affine archive — artifact c423d4fc1681 An unmodified copy of a competitor checkpoint from the Bittensor subnet 120 (Affine) leaderboard, preserved because repos on that board are routinely flipped private within days of duelling (31% of all challengers that have ever duelled were already unreachable when this archive was built)."
+    },
+    {
+      "title": "greenfield0810/affine-ark-c423d4fc1681 at main - Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-c423d4fc1681/tree/main",
+      "snippet": "greenfield0810 / affine-ark-c423d4fc1681 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe affine bittensor subnet-120 mirror archival conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

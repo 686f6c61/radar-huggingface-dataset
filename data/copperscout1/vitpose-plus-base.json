@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "copperscout1/vitpose-plus-base",
+  "slug": "copperscout1-vitpose-plus-base",
+  "author": "copperscout1",
+  "url": "https://huggingface.co/copperscout1/vitpose-plus-base",
+  "created_at": "2026-08-23T13:44:16.000Z",
+  "updated_at": "2026-08-23T13:44:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vitpose",
+    "endpoints-template",
+    "pose-estimation",
+    "keypoint-detection",
+    "en",
+    "arxiv:2204.12484",
+    "base_model:usyd-community/vitpose-plus-base",
+    "base_model:finetune:usyd-community/vitpose-plus-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125396497,
+  "parameters_human": "125.4M",
+  "storage_bytes": 501627628,
+  "storage_human": "502 MB",
+  "base_model": "usyd-community/vitpose-plus-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ViTAE-Transformer/ViTPose: The official repo for [NeurIPS&#x27;22 ...",
+      "url": "https://github.com/ViTAE-Transformer/ViTPose",
+      "snippet": "This branch contains the pytorch implementation of ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation and ViTPose++: Vision Transformer for Generic Body Pose Estimation. It obtains 81.1 AP on MS COCO Keypoint test-dev set. Note * There may exist duplicate images in the crowdpose ..."
+    },
+    {
+      "title": "usyd-community/vitpose-plus-base · Hugging Face",
+      "url": "https://huggingface.co/usyd-community/vitpose-plus-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "amorrissette/vitpose-plus-base · Hugging Face",
+      "url": "https://huggingface.co/amorrissette/vitpose-plus-base",
+      "snippet": "Model Card for VitPose ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation and ViTPose+: Vision Transformer Foundation Model for Generic Body Pose Estimation. It obtains 81.1 AP on MS COCO Keypoint test-dev set. Model Details Although no specific domain knowledge is considered in the design, plain vision transformers have shown excellent performance in visual recognition ..."
+    },
+    {
+      "title": "vitpose-plus-base · Model · Inferix",
+      "url": "https://inferix.co/models/usyd-community/vitpose-plus-base",
+      "snippet": "In this paper, we show the surprisingly good capabilities of plain vision transformers for pose estimation from various aspects, namely simplicity in model structure, scalability in model size, flexibility in training paradigm, and transferability of knowledge between models, through a simple baseline model called ViTPose."
+    },
+    {
+      "title": "ViTPose++: Vision Transformer for Generic Body Pose Estimation",
+      "url": "https://arxiv.org/html/2212.04246v3",
+      "snippet": "In this paper, we show the surprisingly good properties of plain vision transformers for body pose estimation from various aspects, namely simplicity in model structure, scalability in model size, flexibility in training paradigm, and transferability of knowledge between models, through a simple baseline model dubbed ViTPose."
+    }
+  ]
+}

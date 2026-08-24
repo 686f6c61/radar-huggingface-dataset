@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-cliphigh-step300",
+  "slug": "sandeep123-sqa-grpo-cliphigh-step300",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step300",
+  "created_at": "2026-08-24T09:12:43.000Z",
+  "updated_at": "2026-08-24T09:15:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123-ai · GitHub",
+      "url": "https://github.com/sandeep123-ai",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=GS-CLIP",
+      "snippet": "polaris-73/ds1p5b_grpo_math_gsm8k_cliphigh-global_step_200 2B•Updated Jul 14, 2025• 3"
+    },
+    {
+      "title": "Practical Exercise: Fine-tune a model with GRPO · Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/chapter12/5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - policy-gradient/GRPO-Zero: Implementing DeepSeek R1&#x27;s GRPO ...",
+      "url": "https://github.com/policy-gradient/GRPO-Zero",
+      "snippet": "GRPO training with minimal dependencies (and low GPU memory usage!). We implement almost everything from scratch and only depend on tokenizers for tokenization and pytorch for training. Group Relative Policy Optimization (GRPO) is an algorithm proposed by Deepseek for training large language models ..."
+    }
+  ]
+}

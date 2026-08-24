@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SpatialHub/sam-onnx",
+  "slug": "spatialhub-sam-onnx",
+  "author": "SpatialHub",
+  "url": "https://huggingface.co/SpatialHub/sam-onnx",
+  "created_at": "2026-08-23T06:26:10.000Z",
+  "updated_at": "2026-08-23T09:15:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4191981726,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx_model_example.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/facebookresearch/segment-anything/blob/main/notebooks/onnx_model_example.ipynb",
+      "snippet": "SAM&#x27;s prompt encoder and mask decoder are very lightweight, which allows for efficient computation of a mask given user input. This notebook shows an example of how to export and use this lightweight component of the model in ONNX format, allowing it to run on a variety of platforms that support an ONNX runtime."
+    },
+    {
+      "title": "sam_onnx API documentation - GitHub Pages",
+      "url": "https://girinchutia.github.io/SAM_ONNX/",
+      "snippet": "The decoder class that loads and runs the SAM decoder model. Parameters model_path : str The path to the decoder model. device : str, default= \"cpu\" The device to run the model, either \"cuda\" or \"cpu\". target_size : int, default= 1024 The target size of the output mask. The final mask size may be smaller if the original image is too small. mask_threshold : float, default= 0.0 The threshold ..."
+    },
+    {
+      "title": "spatialhub · PyPI",
+      "url": "https://pypi.org/project/spatialhub/",
+      "snippet": "spatialhub A lightweight computer vision library built around ONNX Runtime. spatialhub is a open-source computer vision library that collects useful perception models behind a simple and consistent Python API. The focus is on lightweight inference, minimal dependencies, and easy deployment. Status: Work in progress. The library is actively being developed by a single maintainer. APIs may ..."
+    },
+    {
+      "title": "GitHub - vietanhdev/samexporter: Exporting Segment Anything, MobileSAM ...",
+      "url": "https://github.com/vietanhdev/samexporter",
+      "snippet": "Exporting Segment Anything, MobileSAM, and Segment Anything 2 into ONNX format for easy deployment - vietanhdev/samexporter"
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

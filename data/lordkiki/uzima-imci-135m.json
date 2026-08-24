@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Lordkiki/uzima-imci-135m",
+  "slug": "lordkiki-uzima-imci-135m",
+  "author": "Lordkiki",
+  "url": "https://huggingface.co/Lordkiki/uzima-imci-135m",
+  "created_at": "2026-08-23T08:11:23.000Z",
+  "updated_at": "2026-08-23T08:11:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "sw",
+    "ha"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "medical",
+    "imci",
+    "offline",
+    "africa",
+    "text-generation",
+    "en",
+    "sw",
+    "ha",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 144811168,
+  "storage_human": "145 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lordkiki (Giyath Lawal) - Hugging Face",
+      "url": "https://huggingface.co/Lordkiki",
+      "snippet": "pytorch, Deep Learning, RLHF Nexus - GridSense Predictive Failure Intelligence (Demo)"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "I Built a 135M AI Model That Learns Empathy | PsycheSmol",
+      "url": "https://www.youtube.com/watch?v=ykEqHvfDDTw",
+      "snippet": "In this video, I present PsycheSmol — a compact yet high-precision emotional intelligence model built to produce safer, more empathetic, and more context-aware responses."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

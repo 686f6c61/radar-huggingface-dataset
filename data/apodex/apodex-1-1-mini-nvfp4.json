@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "apodex/Apodex-1.1-mini-NVFP4",
+  "slug": "apodex-apodex-1-1-mini-nvfp4",
+  "author": "apodex",
+  "url": "https://huggingface.co/apodex/Apodex-1.1-mini-NVFP4",
+  "created_at": "2026-08-17T14:05:29.000Z",
+  "updated_at": "2026-08-24T05:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "agent",
+    "apodex",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt_mixed",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19001054576,
+  "parameters_human": "19.00B",
+  "storage_bytes": 24237110293,
+  "storage_human": "24.2 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apodex-1.0-mini - Hugging Face",
+      "url": "https://huggingface.co/apodex/Apodex-1.0-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex 1.0-mini: 35B Open Model Tops FutureX - explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/apodex-1-0-mini-futurex-35b-deep-research-2026",
+      "snippet": "Apodex-1.0-mini tops FutureX at 59.17, beats Sonnet 4.6 and GPT-5.5. Open 35B deep research model, verification agent team, AgentHarness — June 2026."
+    },
+    {
+      "title": "Apodex-1 - a apodex Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/apodex/apodex-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.com/",
+      "snippet": "To research, solve, and discover at the frontier requires more than model capacity — it requires rigorous reasoning, each step verified. Apodex is an AI system designed for complex and demanding research tasks. It structurally splits the reasoning solver from the verifier to deliver grounded, auditable intelligence across three distinct capability tiers."
+    },
+    {
+      "title": "apodex/Apodex-1.0-mini — Model Family & Lineage — ParaPulse",
+      "url": "https://parapulse.io/family/apodex/Apodex-1.0-mini",
+      "snippet": "Full lineage for apodex/Apodex-1.-mini: what it&#x27;s built on, and every adapter, fine-tune, merge and quantization derived from it on HuggingFace. Updated daily."
+    }
+  ]
+}

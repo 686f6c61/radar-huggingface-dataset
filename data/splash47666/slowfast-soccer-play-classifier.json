@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Splash47666/slowfast-soccer-play-classifier",
+  "slug": "splash47666-slowfast-soccer-play-classifier",
+  "author": "Splash47666",
+  "url": "https://huggingface.co/Splash47666/slowfast-soccer-play-classifier",
+  "created_at": "2026-08-23T12:10:57.000Z",
+  "updated_at": "2026-08-23T12:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "pytorchvideo",
+    "slowfast",
+    "video-classification",
+    "soccer",
+    "football",
+    "sports",
+    "binary-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135159229,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Soccer Simulation",
+      "url": "https://bionichaos.com/aisoccer/",
+      "snippet": "An interactive AI soccer simulation showcasing reinforcement learning, curriculum learning, and emergent strategies. Explore AI agents Albert and Kai as they learn to play soccer."
+    },
+    {
+      "title": "LumenSport/docs/model_usage.md at main - GitHub",
+      "url": "https://github.com/Yutao-Yang/LumenSport/blob/main/docs/model_usage.md",
+      "snippet": "LumenSport — Model Usage Guide This guide explains how to obtain, place, and license the machine-learning models used by LumenSport."
+    },
+    {
+      "title": "GitHub - facebookresearch/SlowFast: PySlowFast: video understanding ...",
+      "url": "https://github.com/facebookresearch/SlowFast",
+      "snippet": "PySlowFast: video understanding codebase from FAIR for reproducing state-of-the-art video models. - facebookresearch/SlowFast"
+    },
+    {
+      "title": "Soccer Computer Vision Datasets and Models - Roboflow",
+      "url": "https://universe.roboflow.com/browse/sports/soccer",
+      "snippet": "Soccer datasets and computer vision models can be used to provide real-time analytics and post-game analysis of key soccer statistics. You can use computer vision for automatically gather data from soccer matches such as number of passes, number of shots, possession time of a team, possession time of a player, assists, offsides and much more."
+    },
+    {
+      "title": "AiScore - Live Score, Football Score Today",
+      "url": "https://www.aiscore.com/",
+      "snippet": "Free football live scores on AiScore Football Livescore. AiScore brings you great and fast football stats from all global competitions, including live score, final results, scheduled matches, standings，odds and other stats service."
+    }
+  ]
+}

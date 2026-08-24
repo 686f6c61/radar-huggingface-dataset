@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "minjujeon/mistral-7b-arc-dpo",
+  "slug": "minjujeon-mistral-7b-arc-dpo",
+  "author": "minjujeon",
+  "url": "https://huggingface.co/minjujeon/mistral-7b-arc-dpo",
+  "created_at": "2026-08-23T08:51:36.000Z",
+  "updated_at": "2026-08-23T09:10:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "en",
+    "dataset:allenai/ai2_arc",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:finetune:mistralai/Mistral-7B-v0.1",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistral-7b-arc-chal-dpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/HyeongSoo/mistral-7b-arc-chal-dpo",
+      "snippet": "Deploy mistral-7b-arc-chal-dpo with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The best 7B model to date, Apache 2.0 Mistral 7B uses a sliding window attention (SWA) mechanism (Child et al., Beltagy et al.), in which each layer attends to the previous 4,096 hidden states. The main improvement, and reason for which this was initially investigated, is a linear compute cost of O (sliding_window.seq_len). In practice, changes made to FlashAttention and xFormers yield a 2x ..."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    },
+    {
+      "title": "ingeol/mistral-7b-arc-cpt-dpo · Hugging Face",
+      "url": "https://huggingface.co/ingeol/mistral-7b-arc-cpt-dpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HyeongSoo/mistral-7b-arc-chal-dpo at main - Hugging Face",
+      "url": "https://huggingface.co/HyeongSoo/mistral-7b-arc-chal-dpo/tree/main",
+      "snippet": "HyeongSoo / mistral-7b-arc-chal-dpo like 0 Text Generation Transformers Safetensors mistral text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

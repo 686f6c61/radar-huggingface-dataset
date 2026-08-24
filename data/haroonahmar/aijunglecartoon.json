@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HaroonAhmar/Aijunglecartoon",
+  "slug": "haroonahmar-aijunglecartoon",
+  "author": "HaroonAhmar",
+  "url": "https://huggingface.co/HaroonAhmar/Aijunglecartoon",
+  "created_at": "2026-08-23T14:29:36.000Z",
+  "updated_at": "2026-08-23T14:29:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haroon AiCreator (@haroonaicreator) • Instagram photos and videos",
+      "url": "https://www.instagram.com/haroonaicreator/",
+      "snippet": "129K Followers, 133 Following, 133 Posts - Haroon AiCreator (@haroonaicreator) on Instagram: \"🎥 Scaling content creators with AI 🤖 Content • Automation • Growth ⚡ Smart systems, not hard work 📩 collabharoonaicreator@gmail.com\""
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "Chatrule | AI Character & Model Search",
+      "url": "https://chatrule.ai/",
+      "snippet": "Discover Chatrule characters and ADVANCED mirrored LoRAs for AI image generation."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

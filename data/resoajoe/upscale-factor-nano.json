@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "resoajoe/upscale-factor-nano",
+  "slug": "resoajoe-upscale-factor-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/upscale-factor-nano",
+  "created_at": "2026-08-23T21:28:04.000Z",
+  "updated_at": "2026-08-23T21:28:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "tiny-model",
+    "forensics",
+    "edge-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390548,
+  "storage_human": "390548 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "Upscale: Increase Resolution · Photoshop AI Plugin · Seam",
+      "url": "https://seam-plugin.com/docs/feature-upscale",
+      "snippet": "The Upscale tab increases the resolution of an image. The models rebuild detail at the larger size instead of stretching pixels. This is useful for print, tight crops, or older material. How to upscale 1 Select the layer you want to enlarge, or make a selection. 2 Choose an upscale model and set the scale factor or a target resolution."
+    },
+    {
+      "title": "Nanosora",
+      "url": "https://nanosora.art/en/image-upscaler",
+      "snippet": "Nanosora is an AI image generation & editing platform powered by the Nano Banana Pro model, turning prompts into high-quality images in seconds."
+    },
+    {
+      "title": "AI Image Upscaler - Enhance Photos to HD & 4K Free | AI Image Editor",
+      "url": "https://nano-banana2.art/ai-image-upscaler",
+      "snippet": "Upscale images to 4x resolution with AI. Enhance photo quality, sharpen details, transform low-res to HD instantly. Free AI upscaler by AI Image Editor."
+    },
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    }
+  ]
+}

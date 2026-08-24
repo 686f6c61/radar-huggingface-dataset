@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yemsrach3723/GLM-5.2",
+  "slug": "yemsrach3723-glm-5-2",
+  "author": "yemsrach3723",
+  "url": "https://huggingface.co/yemsrach3723/GLM-5.2",
+  "created_at": "2026-08-23T14:46:13.000Z",
+  "updated_at": "2026-08-23T14:46:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "arxiv:2603.12201",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506689458421,
+  "storage_human": "1506.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "We also improve GLM-5.2&#x27;s MTP layer for speculative decoding, increasing the acceptance length by up to 20% On standard coding benchmarks, GLM-5.2 is the strongest open-source model, improving on GLM-5.1 by a wide margin: 81.0 vs. 62.0 on Terminal-Bench 2.1 and 62.1 vs. 58.4 on SWE-bench Pro."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    },
+    {
+      "title": "GLM-5.2 - AI Model · By z.ai | ModelStream",
+      "url": "https://modelstream.ai/models/z.ai/glm-5.2",
+      "snippet": "GLM-5.2 is a flagship model developed by Zhipu AI (Z.AI) for the era of long-horizon tasks. It has approximately 753 billion parameters, supports a truly usable context window of up to 1 million tokens, and can generate up to 128K tokens in a single response. GLM-5.2 delivers significant improvements in advanced reasoning, project-scale code understanding, complex system engineering, and long ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/FW-GLM-5.2",
+      "snippet": "About this model GLM-5.2 is Z.ai&#x27;s latest flagship model for long-horizon tasks. It delivers a solid 1M-token context window, stronger coding capabilities with multiple thinking effort levels, and architectural improvements for efficient long-context inference. GLM-5.2 uses the GLM MoE DSA architecture and introduces IndexShare, which reuses the same indexer across every four sparse attention ..."
+    },
+    {
+      "title": "GLM model — GLM-5.2 benchmark test and 1M context guide",
+      "url": "https://www.glmmodel.net/",
+      "snippet": "A comprehensive comparison of each GLM model. GLM-5.2 achieves 81.0 on Terminal-Bench 2.1 and 74.4 on FrontierSWE, with a context of one million tokens — and also provides a free AI sandbox."
+    }
+  ]
+}

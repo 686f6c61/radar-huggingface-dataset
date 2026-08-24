@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "leminhhung0101/anomaly_3branch",
+  "slug": "leminhhung0101-anomaly_3branch",
+  "author": "leminhhung0101",
+  "url": "https://huggingface.co/leminhhung0101/anomaly_3branch",
+  "created_at": "2026-08-24T04:31:22.000Z",
+  "updated_at": "2026-08-24T04:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289949711,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hungle2006/anomaly_3branch",
+      "url": "https://github.com/hungle2006/anomaly_3branch",
+      "snippet": "The system is designed for a one-class / unsupervised anomaly detection setting, where the training data contains only normal images. Instead of training a conventional binary classifier, the pipeline learns the feature distribution of normal samples and assigns an anomaly score to unseen images ..."
+    },
+    {
+      "title": "leminhhung0101 (Lê Minh Hùng) - Hugging Face",
+      "url": "https://huggingface.co/leminhhung0101/models",
+      "snippet": "User profile of Lê Minh Hùng on Hugging Face"
+    },
+    {
+      "title": "leminhhung0101 (Lê Minh Hùng) - Hugging Face",
+      "url": "https://huggingface.co/leminhhung0101/spaces",
+      "snippet": "OptimizedLfm Serving 👀 Chat with AI model in a web console leminhhung0101 2 days ago Running"
+    },
+    {
+      "title": "3branch | The #1 Supplier in Library Furniture & Organizers",
+      "url": "https://3branch.com/",
+      "snippet": "Library furniture made in the USA. Shop study tables, computer tables, circulation desks, magazine organizers, and custom library furnishings."
+    },
+    {
+      "title": "[2508.00047] TriP-LLM: A Tri-Branch Patch-wise Large Language Model ...",
+      "url": "https://arxiv.org/abs/2508.00047",
+      "snippet": "Inspired by the recent success of large language models (LLMs) in multimodal tasks across language and vision domains, we propose a novel unsupervised anomaly detection framework: A Tri-Branch Patch-wise Large Language Model Framework for Time-Series Anomaly Detection (TriP-LLM)."
+    }
+  ]
+}

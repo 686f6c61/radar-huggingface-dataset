@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a1-badmed-seed0",
+  "slug": "artht-llama8b-a1-badmed-seed0",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a1-badmed-seed0",
+  "created_at": "2026-08-23T13:50:45.000Z",
+  "updated_at": "2026-08-23T14:03:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523757628,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AILab-CVC/SEED · Hugging Face",
+      "url": "https://huggingface.co/AILab-CVC/SEED",
+      "snippet": "AILab-CVC / SEED like 31 Follow TencentAILab-CVC 47 arxiv:2310.01218 arxiv:2307.08041 License:llama2 Model card FilesFiles and versions xet Community 2 Copy to bucket new SEED Multimodal Usage Dependencies Installation Model Weights Inference for visual tokenization and de-tokenization Launching Gradio Demo of SEED-LLaMA-14B Locally Citation ..."
+    },
+    {
+      "title": "Seed Models",
+      "url": "https://seed.bytedance.com/en/models",
+      "snippet": "Seed Models As a native audio-visual full-duplex LLM, SeedRealtime can jointly understand audio, visual, and temporal information, accurately identify the interaction target and user intent, delivering a brand-new \"watch, listen, and speak\" experience."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    }
+  ]
+}

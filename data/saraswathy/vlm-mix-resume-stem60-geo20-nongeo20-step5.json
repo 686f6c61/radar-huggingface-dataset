@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-stem60-geo20-nongeo20-step5",
+  "slug": "saraswathy-vlm-mix-resume-stem60-geo20-nongeo20-step5",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-geo20-nongeo20-step5",
+  "created_at": "2026-08-24T09:06:46.000Z",
+  "updated_at": "2026-08-24T09:09:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417187,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-stem60-geometry40-direct-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-stem60-geometry40-direct-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "vlm-mix-stem60-geometry40-direct-step100 - friendli.ai",
+      "url": "https://friendli.ai/models/Saraswathy/vlm-mix-stem60-geometry40-direct-step100",
+      "snippet": "Run vlm-mix-stem60-geometry40-direct-step100 with FriendliAI inference. The directly trained 60% broader-STEM and 40% geometry LoRA used as the target mixture…"
+    },
+    {
+      "title": "GitHub - Icebinge/vlm-resume-lab",
+      "url": "https://github.com/Icebinge/vlm-resume-lab",
+      "snippet": "VLM Resume Lab VLM Resume Lab is a learning-first open-source project for understanding the full workflow of a vision-language-model application: ... This repository does not claim production-level resume optimization. It records experiments honestly so that each stage can be learned, inspected, and improved."
+    },
+    {
+      "title": "Saraswathy Amjith - saraamjith.com",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "A self-questioning framework that trains a VLM to decompose compositional visual questions into sub-questions using GRPO, without any reasoning demonstrations. Applied to a 3B-parameter model on CLEVR and A-OKVQA, both self-questioning and standard RL substantially improve accuracy over the untrained model."
+    }
+  ]
+}

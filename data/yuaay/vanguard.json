@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "yuaay/vanguard",
+  "slug": "yuaay-vanguard",
+  "author": "yuaay",
+  "url": "https://huggingface.co/yuaay/vanguard",
+  "created_at": "2026-07-01T06:21:05.000Z",
+  "updated_at": "2026-08-23T15:42:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-safety",
+    "safety-judge",
+    "tool-use",
+    "janus",
+    "vanguard",
+    "conversational",
+    "en",
+    "arxiv:2607.19913",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "The AI Footprint in Your Vanguard Portfolio",
+      "url": "https://www.independentvanguardadviser.com/the-ai-footprint-in-your-vanguard-portfolio/",
+      "snippet": "As I said, Vanguard doesn&#x27;t have an \"AI-themed\" fund or ETF, but the market&#x27;s largest AI-specific option is Global X Artificial Intelligence & Technology ETF (AIQ). Its portfolio holds companies involved in computing, chips, cloud services and digital networks. While not perfect, it serves as a reasonable thematic benchmark."
+    },
+    {
+      "title": "Vanguard Ad AI - The AI Vanguard for Global Social Growth",
+      "url": "https://vgadai.com/",
+      "snippet": "The AI Vanguard for Global Social Growth We turn social platforms into autonomous growth engines — generating content, engaging audiences, and driving sales 24/7 across the Middle East, Europe, North America, and Southeast Asia."
+    },
+    {
+      "title": "GitHub - jamarius-fortson/Vanguard-AI-Agent: Vanguard AI is a ...",
+      "url": "https://github.com/jamarius-fortson/Vanguard-AI-Agent",
+      "snippet": "Vanguard AI is a sophisticated framework designed for the autonomous forecasting of global events using Large Language Model (LLM) agents. By integrating structured Knowledge Graphs (KG) with unstructured news intelligence, Vanguard leverages a refined ReAct (Reasoning and Acting) architecture to synthesize predictive insights with high temporal precision."
+    },
+    {
+      "title": "GitHub - noorulainnawaz/vanguard-AI-cyber-security-AI-",
+      "url": "https://github.com/noorulainnawaz/vanguard-AI-cyber-security-AI-",
+      "snippet": "Vanguard AI solves this by giving anyone — a student, a small business owner, an employee, a security team — an instant, AI-driven cybersecurity assessment. Users answer a few simple questions about their digital habits (passwords, 2FA, phishing awareness, company security posture, etc.) and the platform&#x27;s AI engine scores their risk, explains why, and generates personalized, actionable ..."
+    }
+  ]
+}

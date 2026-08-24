@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/supermix-v74",
+  "slug": "kai9987kai-supermix-v74",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/supermix-v74",
+  "created_at": "2026-08-24T04:06:21.000Z",
+  "updated_at": "2026-08-24T04:06:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "arithmetic",
+    "problem-solving",
+    "mixture-of-experts",
+    "chain-of-thought",
+    "research",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34570909,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kai9987kai (Kai piper) - Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai",
+      "snippet": "Building supermix model series updated a model about 1 month ago"
+    },
+    {
+      "title": "GitHub - kai9987kai/Supermix: Supermix is the active monorepo for the ...",
+      "url": "https://github.com/kai9987kai/Supermix",
+      "snippet": "Supermix is the active monorepo for the current Supermix desktop app, the Omni Collective training line, specialist model experiments, benchmark tooling, and local-first packaging flow. - kai9987kai/Supermix"
+    },
+    {
+      "title": "Kai9987kai/supermix-model-zoo · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Kai9987kai/supermix-model-zoo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supermix/.github at main · kai9987kai/Supermix · GitHub",
+      "url": "https://github.com/kai9987kai/Supermix/tree/main/.github",
+      "snippet": "Supermix is the active monorepo for the current Supermix desktop app, the Omni Collective training line, specialist model experiments, benchmark tooling, and local-first packaging flow. - Supermix/.github at main · kai9987kai/Supermix"
+    },
+    {
+      "title": "3D models by kai9987kai - Sketchfab",
+      "url": "https://sketchfab.com/kai9987kai/models",
+      "snippet": "View 3D models by kai9987kai"
+    }
+  ]
+}

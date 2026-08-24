@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ggml-org/SmolLM2-135M-GGUF",
+  "slug": "ggml-org-smollm2-135m-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/SmolLM2-135M-GGUF",
+  "created_at": "2026-08-23T13:44:57.000Z",
+  "updated_at": "2026-08-23T13:45:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 516712128,
+  "storage_human": "517 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/SmolLM2-135M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QuantFactory/SmolLM2-135M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/SmolLM2-135M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HackNetAyush/smollm2-135M-instruct-gguf-q8: A tiny yet ...",
+      "url": "https://github.com/HackNetAyush/smollm2-135M-instruct-gguf-q8",
+      "snippet": "SmolLM2 135M Instruct (Quantized Q8_0, GGUF) A tiny yet powerful instruction-tuned language model optimized for CPU inference. With only 135 million parameters and a file size of 138 MB, this model delivers impressive performance even on modest hardware."
+    },
+    {
+      "title": "Smollm2 135m - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/smollm2-135m.html",
+      "snippet": "Download Smollm2 135m GGUF model. 101 MB, 0 downloads, 0 likes."
+    },
+    {
+      "title": "QuantFactory/SmolLM2-135M-GGUF - Models",
+      "url": "https://www.modelscope.cn/models/QuantFactory/SmolLM2-135M-GGUF",
+      "snippet": "Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning."
+    }
+  ]
+}

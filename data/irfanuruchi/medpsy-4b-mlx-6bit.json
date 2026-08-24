@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/MedPsy-4B-MLX-6bit",
+  "slug": "irfanuruchi-medpsy-4b-mlx-6bit",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/MedPsy-4B-MLX-6bit",
+  "created_at": "2026-08-23T12:31:10.000Z",
+  "updated_at": "2026-08-23T12:38:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "medical",
+    "healthcare",
+    "clinical-reasoning",
+    "reasoning",
+    "apple-silicon",
+    "quantized",
+    "6-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:qvac/MedPsy-4B",
+    "base_model:quantized:qvac/MedPsy-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 880068096,
+  "parameters_human": "880.1M",
+  "storage_bytes": 3280013421,
+  "storage_human": "3.3 GB",
+  "base_model": "qvac/MedPsy-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qvac/MedPsy-4B · Hugging Face",
+      "url": "https://huggingface.co/qvac/MedPsy-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qvac/MedPsy-4B at main - Hugging Face",
+      "url": "https://huggingface.co/qvac/MedPsy-4B/tree/main",
+      "snippet": "qvac / MedPsy-4B like 1 Follow QVAC 58 Text Generation Transformers Safetensors English qwen3 medical healthcare clinical edge tether-ai on-device conversational text-generation-inference arxiv:2505.17952 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model"
+    },
+    {
+      "title": "MedPsy 4B by qvac — VRAM 8.8GB, 256K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/qvac%2FMedPsy-4B,3ryB0zYS96Q1mn7DQQ9aeo",
+      "snippet": "MedPsy 4B is an open-source 4b LLM by qvac. VRAM 8.8GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "IrfanUruchi (Irfan Uruchi) · GitHub",
+      "url": "https://github.com/IrfanUruchi/",
+      "snippet": "👋 About Me Computer Engineering student focused on building AI systems, distributed infrastructure, and real-world engineering tools. I work on turning ideas into scalable, deployable systems — from edge AI to cloud-native architectures."
+    },
+    {
+      "title": "Models - QVAC by Tether",
+      "url": "https://qvac.tether.io/models/",
+      "snippet": "The model cards list the models under the Apache 2.0 license. Developers should still review the model cards and applicable terms carefully. VisionPsy-Nano is a family of compact vision-language models developed by Tether Data&#x27;s AI Research for edge and on-device deployment."
+    }
+  ]
+}

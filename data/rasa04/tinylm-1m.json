@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rasa04/tinylm-1m",
+  "slug": "rasa04-tinylm-1m",
+  "author": "rasa04",
+  "url": "https://huggingface.co/rasa04/tinylm-1m",
+  "created_at": "2026-08-24T00:57:23.000Z",
+  "updated_at": "2026-08-24T03:40:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tiny",
+    "from-scratch",
+    "muon",
+    "tinystories",
+    "research",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20626790,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0xnyn/tinylm: Browser based ML Inference - GitHub",
+      "url": "https://github.com/0xnyn/tinylm",
+      "snippet": "Browser based ML Inference | OpenAI compliant | Run models like DeepSeek, Llama 3.2, NomicEmbed, KokoroTTS, and more - 0xnyn/tinylm"
+    },
+    {
+      "title": "GitHub - SaaranshDx/TinyLM: TinyML v1 — 3.1M-parameter AI, no ...",
+      "url": "https://github.com/SaaranshDx/TinyLM",
+      "snippet": "TinyLM v1 is an experimental AI model with approximately 2.8 million parameters. It is built entirely from scratch using only numpy, pickle, and collections, without relying on modern AI or ML libraries."
+    },
+    {
+      "title": "TinyLLM",
+      "url": "https://www.tinyllm.org/",
+      "snippet": "TinyLLM: You provide data, and TinyLLM generates a custom-trained tiny language model tailored for your embedded sensing application. TinyLLM also simplifies their deployment on resource-constrained platform!"
+    },
+    {
+      "title": "Fu01978/TinyLM · Hugging Face",
+      "url": "https://huggingface.co/Fu01978/TinyLM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arnir0/Tiny-LLM · Hugging Face",
+      "url": "https://huggingface.co/arnir0/Tiny-LLM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

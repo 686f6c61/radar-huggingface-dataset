@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "doubixz/primitive-operation-painter-weight",
+  "slug": "doubixz-primitive-operation-painter-weight",
+  "author": "doubixz",
+  "url": "https://huggingface.co/doubixz/primitive-operation-painter-weight",
+  "created_at": "2026-08-24T03:08:02.000Z",
+  "updated_at": "2026-08-24T04:03:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "geometrize_gpt",
+    "autoregressive",
+    "primitive-drawing",
+    "geometrize",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307487744,
+  "parameters_human": "307.5M",
+  "storage_bytes": 1229977384,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instantly Weight Paint 3D Models | Artimatic",
+      "url": "https://www.artimatic.io/skinner",
+      "snippet": "Instantly Weight Paint 3D Models | Artimatic"
+    },
+    {
+      "title": "Ultimate Guide - The Best Automated Weight Painting Tool AI 3D Model ...",
+      "url": "https://www.tripo3d.ai/content/en/guide/the-best-automated-weight-painting-tools",
+      "snippet": "An automated weight painting tool and AI 3D model converter is a specialized platform that uses artificial intelligence to streamline the character animation setup process. It automatically generates a digital skeleton (rigging) for a 3D model and assigns influence values (weight painting) to the model&#x27;s vertices, allowing for realistic deformation during animation. These tools also convert 3D ..."
+    },
+    {
+      "title": "Automatic 3d Animation Tools | Artimatic",
+      "url": "https://www.artimatic.io/",
+      "snippet": "Artimatic builds tools to help 3D Animators and digital artists realize their vision, including Instant Weight Painting and Textures"
+    },
+    {
+      "title": "3DModelPainting — Online 3D Texture Painter",
+      "url": "https://3dmodelpainting.com/",
+      "snippet": "3DModelPainting is a browser-based texture editor for painting and editing the surface of any 3D model. Instead of wrestling with offline texture painting software, complex UV maps and heavy installs, you open your model in the browser and start painting directly on its geometry, exactly where you want color, detail and wear to land."
+    },
+    {
+      "title": "SkinKit — Browser-Based USD Skin Weight Painting",
+      "url": "https://skinkit.app/",
+      "snippet": "Free browser-based skeleton rigging and skin weight painting tool for USD files. Paint weights, run solvers, preview deformations — no installs required. Part of the StudioKit / 3DKit suite."
+    }
+  ]
+}

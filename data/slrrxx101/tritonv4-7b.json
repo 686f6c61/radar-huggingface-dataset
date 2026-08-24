@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "slrrxx101/tritonv4-7b",
+  "slug": "slrrxx101-tritonv4-7b",
+  "author": "slrrxx101",
+  "url": "https://huggingface.co/slrrxx101/tritonv4-7b",
+  "created_at": "2026-08-23T07:21:29.000Z",
+  "updated_at": "2026-08-23T07:22:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073568,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slrrxx101/minecraft-qwen-agent-v2 · Hugging Face",
+      "url": "https://huggingface.co/slrrxx101/minecraft-qwen-agent-v2",
+      "snippet": "slrrxx101 / minecraft-qwen-agent-v2 like 0 GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    },
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The best 7B model to date, Apache 2.0 Mistral 7B uses a sliding window attention (SWA) mechanism (Child et al., Beltagy et al.), in which each layer attends to the previous 4,096 hidden states. The main improvement, and reason for which this was initially investigated, is a linear compute cost of O (sliding_window.seq_len). In practice, changes made to FlashAttention and xFormers yield a 2x ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Deploying Llama2-7B Model with Triton and vLLM",
+      "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/tutorials/Popular_Models_Guide/Llama2/vllm_guide.html",
+      "snippet": "Deploying Llama2-7B Model with Triton and vLLM # The vLLM Backend uses vLLM to do inference. Read more about vLLM here and the vLLM Backend here. Pre-build instructions # For this tutorial, we are using the Llama2-7B HuggingFace model with pre-trained weights."
+    }
+  ]
+}

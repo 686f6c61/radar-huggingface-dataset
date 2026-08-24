@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Roy229/nml7324-ocr-extractor",
+  "slug": "roy229-nml7324-ocr-extractor",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/nml7324-ocr-extractor",
+  "created_at": "2026-08-23T11:42:57.000Z",
+  "updated_at": "2026-08-23T11:43:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "image-to-text",
+    "nml-registry",
+    "ocr-extractor",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "awesome-ocr-resources/updates/2026/2026-08-18.md at master ... - GitHub",
+      "url": "https://github.com/ZumingHuang/awesome-ocr-resources/blob/master/updates/2026/2026-08-18.md",
+      "snippet": "This dataset pairs scanned register page images with structured JSON ground truth extracted from verified source data. The goal is to fine-tune a model that can look at a register page and output the correct field values for every row on that page."
+    },
+    {
+      "title": "Best Free OCR APIs, Open-Source Models & AI OCR Tools in 2026 - Eden AI",
+      "url": "https://www.edenai.co/post/top-free-ocr-tools-apis-and-open-source-models",
+      "snippet": "Compare the best free OCR APIs and AI-powered OCR models in 2026 - Tesseract, PaddleOCR, Qwen2.5-VL, Google Vision, AWS Textract - all accessible via Eden AI&#x27;s unified API."
+    },
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OCR With Google AI | Google Cloud",
+      "url": "https://cloud.google.com/use-cases/ocr",
+      "snippet": "OCR (Optical Character Recognition) solutions powered by Google AI to help you extract text and business-ready insights, at scale."
+    },
+    {
+      "title": "Read model OCR data extraction - Document Intelligence - Foundry Tools ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0",
+      "snippet": "Extract print and handwritten text from scanned and digital documents with Document Intelligence&#x27;s Read OCR model."
+    }
+  ]
+}

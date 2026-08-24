@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pageman/nanochat-filipino-p5-p4-multi-seed",
+  "slug": "pageman-nanochat-filipino-p5-p4-multi-seed",
+  "author": "pageman",
+  "url": "https://huggingface.co/pageman/nanochat-filipino-p5-p4-multi-seed",
+  "created_at": "2026-08-24T04:15:43.000Z",
+  "updated_at": "2026-08-24T05:14:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "bits-per-byte",
+    "tagalog",
+    "english",
+    "continual-pretraining",
+    "token-share",
+    "multi-seed",
+    "post-p4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33379445702,
+  "storage_human": "33.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pageman/nanochat-filipino: P1.1: equal-exposure nanochat depth ...",
+      "url": "https://github.com/pageman/nanochat-filipino",
+      "snippet": "Clean-room experiments that train Tagalog / Filipino language models with Karpathy&#x27;s nanochat, aligned with Dr. Charibeth Cheng&#x27;s public resources ..."
+    },
+    {
+      "title": "pageman/nanochat-filipino-p1-fixed-d20-3x · Hugging Face",
+      "url": "https://huggingface.co/pageman/nanochat-filipino-p1-fixed-d20-3x",
+      "snippet": "Repository layout This repo is named for the selected depth D* = 20. Seed-0 confirmatory finals live in four folders only (no root-level weights): ... These are custom nanochat checkpoints (model_000294.pt + meta_000294.json), not transformersfrom_pretrained weights. Optimizer states and held-out test.jsonl are not included."
+    },
+    {
+      "title": "nanochat-filipino/docs at main · pageman/nanochat-filipino",
+      "url": "https://github.com/pageman/nanochat-filipino/tree/main/docs",
+      "snippet": "P1.1: equal-exposure nanochat depth vs held-out Tagalog BPB on WikiText-TL-39 (AsPredicted #306780) - nanochat-filipino/docs at main · pageman/nanochat-filipino"
+    },
+    {
+      "title": "nanochat-filipino/docs/SOURCE-implementation-plan-2026-08-16 ... - GitHub",
+      "url": "https://github.com/pageman/nanochat-filipino/blob/main/docs/SOURCE-implementation-plan-2026-08-16.md",
+      "snippet": "Super-exhaustive implementation blueprint Prepared for: Project 1 implementation and research planning Primary objective: Train and evaluate a decoder-only Tagalog/Filipino base language model using the current Karpathy nanochat pipeline and the publicly available WikiText-TL-39 mirror."
+    },
+    {
+      "title": "nanochat-filipino/reproducibility at main · pageman/nanochat ... - GitHub",
+      "url": "https://github.com/pageman/nanochat-filipino/tree/main/reproducibility",
+      "snippet": "P1.1: equal-exposure nanochat depth vs held-out Tagalog BPB on WikiText-TL-39 (AsPredicted #306780) - pageman/nanochat-filipino"
+    }
+  ]
+}

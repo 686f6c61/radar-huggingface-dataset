@@ -5,7 +5,7 @@
   "author": "hemantht2751",
   "url": "https://huggingface.co/hemantht2751/t5-arxiv-summarizer",
   "created_at": "2026-08-22T17:39:04.000Z",
-  "updated_at": "2026-08-22T17:39:18.000Z",
+  "updated_at": "2026-08-23T11:24:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 60506624,
   "parameters_human": "60.5M",
-  "storage_bytes": 242041896,
-  "storage_human": "242 MB",
+  "storage_bytes": 726125688,
+  "storage_human": "726 MB",
   "base_model": null,
   "formats": [
     "safetensors"

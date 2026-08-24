@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rijal028/walker2d-autonomous-v2-full",
+  "slug": "rijal028-walker2d-autonomous-v2-full",
+  "author": "rijal028",
+  "url": "https://huggingface.co/rijal028/walker2d-autonomous-v2-full",
+  "created_at": "2026-08-23T12:17:56.000Z",
+  "updated_at": "2026-08-23T12:17:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "mujoco",
+    "walker2d",
+    "world-models",
+    "online-adaptation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 968341,
+  "storage_human": "968341 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devdharpatel/SAC-Walker2d-v2 · Hugging Face",
+      "url": "https://huggingface.co/devdharpatel/SAC-Walker2d-v2",
+      "snippet": "Soft-Actor-Critic: Walker2d-v2 These are 25 trained models over seeds (0-4) and J = 1, 2, 4, 8, 16 of Soft actor critic agent playing Walker2d-v2 for Sequence Reinforcement Learning (SRL)."
+    },
+    {
+      "title": "GitHub - PawelMlyniec/Walker-2D",
+      "url": "https://github.com/PawelMlyniec/Walker-2D",
+      "snippet": "Contribute to PawelMlyniec/Walker-2D development by creating an account on GitHub."
+    },
+    {
+      "title": "Walker-2D/README.md at master · PawelMlyniec/Walker-2D",
+      "url": "https://github.com/PawelMlyniec/Walker-2D/blob/master/README.md",
+      "snippet": "Contribute to PawelMlyniec/Walker-2D development by creating an account on GitHub."
+    },
+    {
+      "title": "Walker2D - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/walker2d/",
+      "snippet": "The Walker-v5 model is updated to have the same friction for both feet (set to 1.9). This causes the Walker2d&#x27;s the right foot to slide less on the surface and therefore require more force to move (related GitHub issue)."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2309.09777v2",
+      "snippet": "arXiv.org e-Print archive"
+    }
+  ]
+}

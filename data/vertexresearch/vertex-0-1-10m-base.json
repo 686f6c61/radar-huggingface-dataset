@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VertexResearch/Vertex-0.1-10M-base",
+  "slug": "vertexresearch-vertex-0-1-10m-base",
+  "author": "VertexResearch",
+  "url": "https://huggingface.co/VertexResearch/Vertex-0.1-10M-base",
+  "created_at": "2026-08-24T13:39:01.000Z",
+  "updated_at": "2026-08-24T13:50:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "pytorch",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10946816,
+  "parameters_human": "10.9M",
+  "storage_bytes": 43791400,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Vertex AI Model Availability (Updated Hourly)",
+      "url": "https://www.ai.moda/en/blog/google-vertex-ai-model-availability",
+      "snippet": "Google Vertex AI Model Availability (Updated Hourly) Live list of all models on Google Cloud Vertex AI. Want to know what models are on Google Cloud Vertex AI? See our list below (or parse the JSON here yourself)."
+    },
+    {
+      "title": "Vertex AI Agent Builder documentation - docs.cloud.google.com",
+      "url": "https://docs.cloud.google.com/agent-builder",
+      "snippet": "Vertex AI Agent Builder is a suite of products that help developers build, scale, and govern AI agents in production. Go to the Vertex AI Agent Builder product page for more."
+    },
+    {
+      "title": "Gemini Enterprise Agent Platform (formerly Vertex AI)",
+      "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform",
+      "snippet": "Gemini Enterprise Agent Platform (formerly Vertex AI) is a comprehensive platform for developers to build, scale, govern and optimize agents."
+    },
+    {
+      "title": "Access Gemini models from a workflow using Vertex AI",
+      "url": "https://docs.cloud.google.com/workflows/docs/tutorials/use-vertex-ai-models",
+      "snippet": "For more information, see the Overview of Generative AI on Vertex AI. Vertex AI has a variety of generative AI foundation models that are accessible through an API, including the models used in this guide. For more information about how to choose a model, see Google models."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    }
+  ]
+}

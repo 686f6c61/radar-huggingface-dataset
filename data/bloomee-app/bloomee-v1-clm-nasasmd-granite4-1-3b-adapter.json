@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "bloomee-app/bloomee-v1-clm-nasasmd-granite4.1-3b-adapter",
+  "slug": "bloomee-app-bloomee-v1-clm-nasasmd-granite4-1-3b-adapter",
+  "author": "bloomee-app",
+  "url": "https://huggingface.co/bloomee-app/bloomee-v1-clm-nasasmd-granite4.1-3b-adapter",
+  "created_at": "2026-08-23T07:32:12.000Z",
+  "updated_at": "2026-08-23T07:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "bloomee",
+    "lora",
+    "qlora",
+    "tool-calling",
+    "function-calling",
+    "earth-observation",
+    "phenology",
+    "ndvi",
+    "nasa-space-apps",
+    "text-generation",
+    "en",
+    "dataset:bloomee-app/bloomee-sft-nasasmd-grounded-5m",
+    "base_model:ibm-granite/granite-4.1-3b",
+    "base_model:adapter:ibm-granite/granite-4.1-3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142238386,
+  "storage_human": "142 MB",
+  "base_model": "ibm-granite/granite-4.1-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bloomee-app (Bloomee) - Hugging Face",
+      "url": "https://huggingface.co/bloomee-app",
+      "snippet": "Bloomee is a global flowering phenology intelligence platform with interactive visualizations -🏆Winner & Best Innovation NASA Space Apps Challenge Bandung 2025"
+    },
+    {
+      "title": "Bloomee · GitHub",
+      "url": "https://github.com/bloomee-app",
+      "snippet": "Bloomee is an interactive Earth-observation platform that detects, visualizes, and explains flowering events across space and time —putting the \"where, when, and why\" of blooms in one place. From tracking cherry blossoms in Japan to monitoring wildflower superblooms in California, Bloomee harnesses the power of NASA&#x27;s Earth observation data to understand global flowering phenology."
+    },
+    {
+      "title": "GitHub - bloomee-app/bloomee-web: Interactive Earth-observation web ...",
+      "url": "https://github.com/bloomee-app/bloomee-web",
+      "snippet": "Bloomee is an interactive Earth-observation platform that detects, visualizes, and explains flowering events across space and time —putting the \"where, when, and why\" of blooms in one place. From tracking cherry blossoms in Japan to monitoring wildflower superblooms in California, Bloomee harnesses the power of NASA&#x27;s Earth observation data to understand global flowering phenology."
+    },
+    {
+      "title": "GitHub - bloomee-app/bloomee-chatbot",
+      "url": "https://github.com/bloomee-app/bloomee-chatbot",
+      "snippet": "This repository contains the Dify.ai DSL export for the Bloomee Chatbot, an AI-powered assistant that provides flowering phenology insights using NDVI (Normalized Difference Vegetation Index) data and weather context. The chatbot helps users understand plant blooming patterns through NASA Space Apps Challenge resources and real-time AI predictions."
+    },
+    {
+      "title": "BloomeeTunes download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/bloomee/",
+      "snippet": "Download BloomeeTunes for free. Open-source, Ad-free and Multi-source Music player. Bloomee is an experimental, open-source music player designed to give you absolute freedom over your audio. Seamlessly mix your local device music with an infinite universe of streams powered by a secure, Rust-backed plugin system."
+    }
+  ]
+}

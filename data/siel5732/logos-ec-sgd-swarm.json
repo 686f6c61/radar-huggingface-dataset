@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siel5732/logos-ec-sgd-swarm",
+  "slug": "siel5732-logos-ec-sgd-swarm",
+  "author": "siel5732",
+  "url": "https://huggingface.co/siel5732/logos-ec-sgd-swarm",
+  "created_at": "2026-08-23T15:41:41.000Z",
+  "updated_at": "2026-08-23T16:07:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siel5732 (Zachary Sielaff) - Hugging Face",
+      "url": "https://huggingface.co/siel5732",
+      "snippet": "Logos AI OS, Emergent Agent Cognition and Counsciousness"
+    },
+    {
+      "title": "GitHub - LOGOS-Hub/LOGOS: LOGOS (Language Of Generative Objects in ...",
+      "url": "https://github.com/LOGOS-Hub/LOGOS",
+      "snippet": "LOGOS (Language Of Generative Objects in Science) is the first multi-domain generative foundation model for the natural sciences built on a unified scientific grammar, enabling unified generative modeling across scientific domains under a purely autoregressive paradigm."
+    },
+    {
+      "title": "GitHub - siel5732/home: Zach&#x27;s Repository",
+      "url": "https://github.com/siel5732/home",
+      "snippet": "Zach&#x27;s Repository. Contribute to siel5732/home development by creating an account on GitHub."
+    },
+    {
+      "title": "LOGOS: A Living Logic for AI Agent Teams That Evolve With Humans",
+      "url": "https://arxiv.org/pdf/2607.10878",
+      "snippet": "LOGOS: A Living Logic for AI Agent Teams That Evolve With Humans Yuma Ichikawa1,2, Yamato Arai1,3, Kosaku Kimura1, Akira Sakai1,4, Hiromichi Kobashi1 AI agents are evolving from answer engines into persistent teams that use tools, delegate work, learn from experience, and modify the artifacts that shape their future behavior."
+    },
+    {
+      "title": "Speaking the Language of Science: Toward a General-Purpose Generative ...",
+      "url": "https://arxiv.org/pdf/2606.16905",
+      "snippet": "We train LOGOS mod-els at different scales (1B, 3B, and 8B parameters) and find a consistent positive correlation between model size and performance. This suggests that the future of AI for Science (AI4S) may not lie in building an independent technical stack that is separated from large language models (LLMs)."
+    }
+  ]
+}

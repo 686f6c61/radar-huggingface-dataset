@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rhombus18/Rhododendron-Efficiency",
+  "slug": "rhombus18-rhododendron-efficiency",
+  "author": "rhombus18",
+  "url": "https://huggingface.co/rhombus18/Rhododendron-Efficiency",
+  "created_at": "2026-08-23T07:08:59.000Z",
+  "updated_at": "2026-08-23T07:28:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535751214,
+  "storage_human": "65.5 GB",
+  "base_model": "unsloth/qwen3-32b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rhombus18/Rhododendron-efficiency-1o · Hugging Face",
+      "url": "https://huggingface.co/rhombus18/rhododendron-effeciency-16bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rhombus18/Rhododendron-efficiency · Rhododendron efficiency update ...",
+      "url": "https://huggingface.co/rhombus18/Rhododendron-efficiency/discussions/1",
+      "snippet": "Discuss future updates for our rhododendron efficiency models here! please do not use sensitive or inappropriate language here."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

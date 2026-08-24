@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-Anchored-Tensors",
+  "slug": "drowzeys-keys-deepseekv4-flash-ga-0731-dspark-abliterated-anchored-tensors",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-Anchored-Tensors",
+  "created_at": "2026-08-01T19:13:57.000Z",
+  "updated_at": "2026-08-23T05:52:15.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash",
+    "0731",
+    "dspark",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "fp8",
+    "nvfp4",
+    "vllm",
+    "dgx-spark",
+    "gb10",
+    "anemll",
+    "miaai",
+    "anchored-tensors",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 108,
+  "downloads_30d": 11177,
+  "trending_score": 15,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 285018083993,
+  "storage_human": "285.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+      "url": "https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated ...",
+      "url": "https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32/blob/main/README.md",
+      "snippet": "Instructions to use drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DeepSeek V4 Flash Abliterated (DSpark) - deepwiki.com",
+      "url": "https://deepwiki.com/chishiki37/dgx-spark-runbooks/2.3-deepseek-v4-flash-abliterated-(dspark)",
+      "snippet": "This page documents the deployment and optimization of the gated DeepSeek V4 Flash Abliterated model variant (drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32). This model uses the DeepseekV4ForCausalLM architecture with 256 routed experts and 1 shared expert, utilizing NVFP4 (4-bit float) for expert weights and FP8 for attention mechanisms runbook-deepseek-v4-flash-abliterated ..."
+    },
+    {
+      "title": "DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX-Spark/DEFAULT ... - GitHub",
+      "url": "https://github.com/huhaoran0126/DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX-Spark/blob/main/DEFAULT-CONFIG.md",
+      "snippet": "Every flag on this page is identical for the stock deepseek-ai/DeepSeek-V4-Flash-0731 weights and for Keys&#x27; abliterated build (drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32, gated, Responsible Use terms apply). Same image, same patches, same k=5, same nvfp4_ds_mla, same context. See Model choice: censored or uncensored."
+    },
+    {
+      "title": "DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX-Spark/CREDITS ... - GitHub",
+      "url": "https://github.com/huhaoran0126/DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX-Spark/blob/main/CREDITS.md",
+      "snippet": "The model card is the authoritative statement of those terms. Keys credits Anemll (Anemll/dspark-vllm-gx10), MiaAI-Lab, and DeepSeek-AI for the runtime and base model it is built on."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "thisisandreeeee/simple-llm-lora",
+  "slug": "thisisandreeeee-simple-llm-lora",
+  "author": "thisisandreeeee",
+  "url": "https://huggingface.co/thisisandreeeee/simple-llm-lora",
+  "created_at": "2026-08-23T07:48:21.000Z",
+  "updated_at": "2026-08-23T08:30:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "dataset:thisisandreeeee/simple-llm-sft",
+    "base_model:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62494455,
+  "storage_human": "62 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thisisandreeeee/simple-llm",
+      "url": "https://github.com/thisisandreeeee/simple-llm",
+      "snippet": "Run training on colab (or other GPU platform) Add experiment tracking and artifact management Evaluate SFT vs base model using scorer (rule-based and LLM judge) Evaluate using benchmarks: viol/100w, MMLU-Pro Upload to huggingface: LoRA adapter, model card, training configuration, evaluation results, base-model attribution Add DPO Add GRPO Serve ..."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    },
+    {
+      "title": "LoRA for Fine-Tuning LLMs explained with codes and example",
+      "url": "https://medium.com/data-science-in-your-pocket/lora-for-fine-tuning-llms-explained-with-codes-and-example-62a7ac5a3578",
+      "snippet": "LoRA for Fine-Tuning LLMs explained with codes and example How to fine-tune your LLMs faster using LoRA This entire year in AI space has been revolutionary because of the advancements in Gen-AI …"
+    },
+    {
+      "title": "SimplerLLM — Open-Source Python Library for Building AI Apps",
+      "url": "https://simplerllm.com/",
+      "snippet": "Simpler LLM One interface for every major LLM provider. Unified API, automatic failover, structured outputs, and 15+ built-in tools. Build AI apps in minutes, not days."
+    },
+    {
+      "title": "Fine-Tuning a Lightweight LLM on Your Laptop: A Practical ... - Medium",
+      "url": "https://medium.com/@sudisabet/fine-tuning-a-lightweight-llm-on-your-laptop-a-practical-guide-using-lora-model-on-cpu-143ef5291b89",
+      "snippet": "Figure 2: The LoRA-fine-tuned model produces a more concise answer than the base model. Final Thoughts This hands-on guide shows that LLM customization is now within reach — even on CPU-only ..."
+    }
+  ]
+}

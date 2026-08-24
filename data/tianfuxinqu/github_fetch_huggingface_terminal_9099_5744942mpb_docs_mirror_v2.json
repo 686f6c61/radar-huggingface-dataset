@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/github_fetch_huggingface_terminal_9099_5744942mpb_docs_mirror_v2",
+  "slug": "tianfuxinqu-github_fetch_huggingface_terminal_9099_5744942mpb_docs_mirror_v2",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/github_fetch_huggingface_terminal_9099_5744942mpb_docs_mirror_v2",
+  "created_at": "2026-08-24T12:28:16.000Z",
+  "updated_at": "2026-08-24T12:28:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "aurora-sdk",
+    "docs-mirror",
+    "version-2.0",
+    "latest",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face · GitHub",
+      "url": "https://github.com/huggingface",
+      "snippet": "The AI community building the future. Hugging Face has 467 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Join the world&#x27;s most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity."
+    },
+    {
+      "title": "How to use gguf-fetch: Reading 12MiB to filter and download from 172GB ...",
+      "url": "https://note.com/zephel01/n/nd249ea96e995?hl=en",
+      "snippet": "How to use gguf-fetch: Reading 12MiB to filter and download from 172GB of candidates with gguf-fit"
+    },
+    {
+      "title": "Hugging Face - Documentation",
+      "url": "https://huggingface.co/docs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

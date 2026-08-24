@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FINWHALE/Wukong",
+  "slug": "finwhale-wukong",
+  "author": "FINWHALE",
+  "url": "https://huggingface.co/FINWHALE/Wukong",
+  "created_at": "2026-08-21T09:16:58.000Z",
+  "updated_at": "2026-08-23T04:40:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "vla",
+    "vision-language-action",
+    "spatial-reasoning",
+    "embodied-ai",
+    "robot-navigation",
+    "world-action-model",
+    "en",
+    "zh",
+    "base_model:unsloth/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 217610996,
+  "storage_human": "218 MB",
+  "base_model": "unsloth/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FINWHALE/Wukong · Hugging Face",
+      "url": "https://huggingface.co/FINWHALE/Wukong",
+      "snippet": "0 Follow FINWHALE 2 Robotics English Chinese vla vision-language-action spatial-reasoning embodied-ai robot-navigation world-action-model License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Wukong (悟空): An Open Spatial-Reasoning Vision-Language-Action Model Highlights Architecture Intended Use Evaluation ..."
+    },
+    {
+      "title": "WHALE: A Scalable Unified Model for Recommendation with Wukong-HSTU ...",
+      "url": "https://arxiv.org/pdf/2607.17017v1",
+      "snippet": "To address these limitations, we present WHALE (Wukong-HSTU-based scALable unified modEl), a scalable unified recommen-dation architecture, illustrated in Figure 1d, that keeps Wukong-style feature interaction and HSTU-style sequence modeling as ac-tive, capacity-scalable components within a single architecture with progressive interaction."
+    },
+    {
+      "title": "FINWHALE (FINWHALE) - Hugging Face",
+      "url": "https://huggingface.co/FINWHALE",
+      "snippet": "Org profile for FINWHALE on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "WHALE: A Scalable Unified Model for Recommendation with Wukong-HSTU ...",
+      "url": "https://papers.cool/arxiv/2607.17017",
+      "snippet": "To make WHALE practical for industrial deployment, we introduce customized Triton kernels and other model-systems co-design techniques to improve training and inference efficiency. On large-scale industrial recommendation data, WHALE achieves consistent gains in offline experiments."
+    },
+    {
+      "title": "WHALE: A Scalable Unified Model for Recommendation with Wukong-HSTU ...",
+      "url": "https://www.alphaxiv.org/overview/2607.17017",
+      "snippet": "Transform this paper into a blog Get a clear, intuitive explanation of this paper&#x27;s key ideas, methodology, and contributions — restructured for better understanding with visual aids and clear explanations."
+    }
+  ]
+}

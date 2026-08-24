@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TigerByteCyber/codenlbert-sm",
+  "slug": "tigerbytecyber-codenlbert-sm",
+  "author": "TigerByteCyber",
+  "url": "https://huggingface.co/TigerByteCyber/codenlbert-sm",
+  "created_at": "2026-08-24T13:09:50.000Z",
+  "updated_at": "2026-08-24T13:09:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "nlp",
+    "code",
+    "classification",
+    "en",
+    "dataset:vishnun/CodevsNL",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28765186,
+  "parameters_human": "28.8M",
+  "storage_bytes": 4143137688,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codenlbert-sm | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/codenlbert-sm/",
+      "snippet": "What is codenlbert-sm? codenlbert-sm is a specialized BERT-based model designed for the specific task of distinguishing between code and natural language text. Built on a small BERT architecture, this model demonstrates exceptional performance with an impressive accuracy of 99.8% on validation data."
+    },
+    {
+      "title": "vishnun/codenlbert-sm · Hugging Face",
+      "url": "https://huggingface.co/vishnun/codenlbert-sm",
+      "snippet": "Dataset used to train vishnun/codenlbert-sm vishnun/CodevsNL Viewer • Updated Aug 4, 2023 • 1"
+    },
+    {
+      "title": "vishnun/codenlbert-sm at main - Hugging Face",
+      "url": "https://huggingface.co/vishnun/codenlbert-sm/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "codenlbert-sm huggingface.co api & vishnun codenlbert-sm github AI ...",
+      "url": "https://www.toolify.ai/ai-model/vishnun-codenlbert-sm",
+      "snippet": "codenlbert-sm huggingface.co is an AI model on huggingface.co that provides codenlbert-sm&#x27;s model effect (), which can be used instantly with this vishnun codenlbert-sm model. huggingface.co supports a free trial of the codenlbert-sm model, and also provides paid use of the codenlbert-sm. Support call codenlbert-sm model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "BanCode - LLM Guard",
+      "url": "https://protectai.github.io/llm-guard/input_scanners/ban_code/",
+      "snippet": "Ban Code Scanner The BanCode scanner is designed to detect and ban code in the prompt. Attack scenario There are scenarios where the insertion of code in user prompts might be deemed undesirable. For example, when employees are sharing proprietary code snippets or when users are trying to exploit vulnerabilities. How it works It relies on the following models: vishnun/codenlbert-tiny [DEFAULT ..."
+    }
+  ]
+}

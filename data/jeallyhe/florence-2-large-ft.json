@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jeallyhe/Florence-2-large-ft",
+  "slug": "jeallyhe-florence-2-large-ft",
+  "author": "jeallyhe",
+  "url": "https://huggingface.co/jeallyhe/Florence-2-large-ft",
+  "created_at": "2026-08-24T09:20:57.000Z",
+  "updated_at": "2026-08-24T09:20:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "florence2",
+    "vision",
+    "image-text-to-text",
+    "custom_code",
+    "arxiv:2311.06242",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 770430041,
+  "parameters_human": "770.4M",
+  "storage_bytes": 3084086941,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Florence-2-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-large",
+      "snippet": "Florence-2 finetuned performance We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks. The table below compares the performance of specialist and generalist models on various captioning and Visual Question Answering (VQA) tasks. Specialist models are fine ..."
+    },
+    {
+      "title": "microsoft/Florence-2-large-ft · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-large-ft",
+      "snippet": "Florence-2 finetuned performance We finetune Florence-2 models with a collection of downstream tasks, resulting two generalist models Florence-2-base-ft and Florence-2-large-ft that can conduct a wide range of downstream tasks. The table below compares the performance of specialist and generalist models on various captioning and Visual Question Answering (VQA) tasks. Specialist models are fine ..."
+    },
+    {
+      "title": "Florence-2-large-ft: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/florence-2-large-ft-microsoft",
+      "snippet": "Overview Florence-2-large-ft is a 0.77B parameter vision foundation model from microsoft that performs multiple vision and vision-language tasks through a prompt-based sequence-to-sequence architecture. The model interprets text prompts to execute captioning, object detection, optical character recognition, region grounding, and dense region captioning in a unified framework. Built on the ..."
+    },
+    {
+      "title": "Florence-2-large-ft huggingface.co api & microsoft Florence-2-large-ft ...",
+      "url": "https://www.toolify.ai/ai-model/microsoft-florence-2-large-ft",
+      "snippet": "Florence-2-large-ft is an open source model from GitHub that offers a free installation service, and any user can find Florence-2-large-ft on GitHub to install. At the same time, huggingface.co provides the effect of Florence-2-large-ft install, users can directly use Florence-2-large-ft installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Florence-2-large: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/florence-2-large-microsoft",
+      "snippet": "Overview Florence-2-large is a vision foundation model developed by microsoft that performs multiple vision and vision-language tasks through a prompt-based interface. The model contains 0.77 billion parameters and uses a sequence-to-sequence architecture trained on the FLD-5B dataset, which contains 5.4 billion annotations across 126 million images. Unlike single-purpose vision models, this ..."
+    }
+  ]
+}

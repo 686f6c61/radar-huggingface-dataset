@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MenteEAI/mentee-embed-v2",
+  "slug": "menteeai-mentee-embed-v2",
+  "author": "MenteEAI",
+  "url": "https://huggingface.co/MenteEAI/mentee-embed-v2",
+  "created_at": "2026-08-24T14:24:51.000Z",
+  "updated_at": "2026-08-24T14:24:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embed Models — MenteE AI",
+      "url": "https://www.menteeai.org/embed-models",
+      "snippet": "mentee-embed: how we built it, how to use it, where the source lives, and the research it builds on."
+    },
+    {
+      "title": "GitHub - MenteE-s/mentee-embeddings · GitHub",
+      "url": "https://github.com/MenteE-s/mentee-embeddings",
+      "snippet": "Load the Model ... Author Syed Syab Ahmad Shah is the founder of MenteE AI, building open-source multilingual NLP tools for underrepresented languages — with a focus on Arabic, Urdu, and English."
+    },
+    {
+      "title": "Support — MenteE",
+      "url": "https://www.menteeai.org/support",
+      "snippet": "Get help from the MenteE team — documentation, direct support, and resources for every stage of deployment."
+    },
+    {
+      "title": "mentee-ai · GitHub",
+      "url": "https://github.com/mentee-ai",
+      "snippet": "GitHub is where mentee-ai builds software."
+    },
+    {
+      "title": "10 Best Embedding Models 2026: Complete Comparison Guide",
+      "url": "https://www.openxcell.com/blog/best-embedding-models",
+      "snippet": "A practical guide to the best embedding models in 2026. Compare features, performance, and use cases for building scalable AI systems."
+    }
+  ]
+}

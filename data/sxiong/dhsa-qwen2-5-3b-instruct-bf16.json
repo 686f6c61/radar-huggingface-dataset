@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sxiong/DHSA-Qwen2.5-3B-Instruct-BF16",
+  "slug": "sxiong-dhsa-qwen2-5-3b-instruct-bf16",
+  "author": "sxiong",
+  "url": "https://huggingface.co/sxiong/DHSA-Qwen2.5-3B-Instruct-BF16",
+  "created_at": "2026-08-23T06:03:00.000Z",
+  "updated_at": "2026-08-23T06:03:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-attention",
+    "long-context",
+    "llm-inference",
+    "arxiv:2510.24606",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1485143523,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sxiong/DHSA-Qwen2.5-3B-Instruct-BF16 · Hugging Face",
+      "url": "https://huggingface.co/sxiong/DHSA-Qwen2.5-3B-Instruct-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-3B-Instruct",
+      "snippet": "Qwen 2.5系列开源模型基于更大的训练数据集训练而成，在编程能力、数学能力以及指令遵循能力等方面都有显著提升。同时Qwen 2.5提供强大的多语言能力，包括了29种以上语言的支持。"
+    },
+    {
+      "title": "qwen2.5:3b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:3b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "xiongsiheng/DHSA: [ICML 26 Spotlight, NeurIPS 25 - GitHub",
+      "url": "https://github.com/xiongsiheng/DHSA",
+      "snippet": "Llama-3.1-8B-Instruct 4-bit ... Qwen2.5-3B-Instruct BF16 ... Kernel-level Latency Latency is measured on one A100 40 GB GPU for a single attention layer, including mask construction and the attention kernel. Values are median milliseconds from five measured iterations after two warmups. Parentheses show speedup over Full FA2 measured in the ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "vivekkopthsd/hinglish-st-33m",
+  "slug": "vivekkopthsd-hinglish-st-33m",
+  "author": "vivekkopthsd",
+  "url": "https://huggingface.co/vivekkopthsd/hinglish-st-33m",
+  "created_at": "2026-08-24T03:44:06.000Z",
+  "updated_at": "2026-08-24T03:44:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:4000",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33745152,
+  "parameters_human": "33.7M",
+  "storage_bytes": 135002744,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vivekkopthsd/distilluse-taxfinance-multilingual · Hugging Face",
+      "url": "https://huggingface.co/vivekkopthsd/distilluse-taxfinance-multilingual",
+      "snippet": "The distillation teacher is a multilingual (English + Hindi + Hinglish) embedding model fine-tuned on Indian income-tax and finance question-answer data (embeddinggemma-300m-taxrag-ft, 300M parameters, 768-dim embeddings)."
+    },
+    {
+      "title": "vivekkopthsd/vajra-1 · Hugging Face",
+      "url": "https://huggingface.co/vivekkopthsd/vajra-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hinglish Text to Speech Free — AI Voice | Voicely",
+      "url": "https://tryvoicely.com/hinglish-text-to-speech",
+      "snippet": "Natural AI voice for Hinglish scripts — Hindi-English mixed, Roman Hindi, and code-switched narration. Free MP3 download, no account to start."
+    },
+    {
+      "title": "Sample-Efficient Language Model for Hinglish Conversational AI",
+      "url": "https://arxiv.org/html/2504.19070v1",
+      "snippet": "Abstract This paper presents our process for developing a sample-efficient language model for a conversational Hinglish chatbot. Hinglish, a code-mixed language that combines Hindi and English, presents a unique computational challenge due to inconsistent spelling, lack of standardization, and limited quality of conversational data."
+    },
+    {
+      "title": "AI voice generator for Indian languages | Sarvam",
+      "url": "https://www.sarvam.ai/text-to-speech/ai-voice-generator",
+      "snippet": "Code-switching Indian creators speak in Hinglish, Tanglish, and Benglish naturally. A Hindi YouTube video switches to English for technical terms. A Tamil podcast uses English for business concepts. Sarvam handles code-switching natively because the model learned from real Indian speech patterns."
+    }
+  ]
+}

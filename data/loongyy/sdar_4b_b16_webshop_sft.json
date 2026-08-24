@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "loongyy/sdar_4b_b16_webshop_sft",
+  "slug": "loongyy-sdar_4b_b16_webshop_sft",
+  "author": "loongyy",
+  "url": "https://huggingface.co/loongyy/sdar_4b_b16_webshop_sft",
+  "created_at": "2026-08-24T11:00:34.000Z",
+  "updated_at": "2026-08-24T11:02:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "sdar",
+    "feature-extraction",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "custom_code",
+    "base_model:JetLM/SDAR-4B-Chat-b16",
+    "base_model:finetune:JetLM/SDAR-4B-Chat-b16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8822921269,
+  "storage_human": "8.8 GB",
+  "base_model": "JetLM/SDAR-4B-Chat-b16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loongyy/sdar_4b_webshop_sft_ckpt · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/loongyy/sdar_4b_webshop_sft_ckpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "loongyy/sdar_webshop_sft_ckpt at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/loongyy/sdar_webshop_sft_ckpt/tree/main",
+      "snippet": "Datasets: loongyy / sdar_webshop_sft_ckpt like 0 Modalities: Tabular Text Formats: json Size: < 1K Tags: llama-factory full Generated from Trainer Libraries: Datasets pandas Polars + 1 License: other Dataset card Data Studio FilesFiles and versions xet Community main sdar_webshop_sft_ckpt 16.4 GB 1 contributor History:2 commits loongyy Upload folder using huggingface_hub b19b208 verifiedabout ..."
+    },
+    {
+      "title": "SDAR: A Synergistic Diffusion-AutoRegression Paradigm for Scalable ...",
+      "url": "https://arxiv.org/html/2510.06303",
+      "snippet": "Abstract We propose SDAR, a S ynergistic D iffusion- A uto R egression paradigm that establishes a new language modeling framework combining the training efficiency of autoregression with the parallel inference capability of diffusion. Instead of costly end-to-end diffusion training, SDAR performs a lightweight paradigm conversion that transforms a well-trained autoregressive (AR) model into ..."
+    },
+    {
+      "title": "GitHub - JetAstra/SDAR: SDAR (Synergy of Diffusion and AutoRegression ...",
+      "url": "https://github.com/JetAstra/SDAR",
+      "snippet": "We introduce SDAR (Synergy of Diffusion and AutoRegression), a large-scale diffusion language model that unites the complementary strengths of autoregressive and discrete diffusion modeling. By merging the training efficiency of autoregressive methods with the highly parallel decoding ability of diffusion models, SDAR delivers performance competitive with state-of-the-art open-source AR models ..."
+    },
+    {
+      "title": "SDAR: A Synergistic Diffusion-AutoRegression Paradigm for Scalable ...",
+      "url": "https://arxiv.org/html/2510.06303v1",
+      "snippet": "We propose SDAR, a Synergistic Diffusion-AutoRegression paradigm that establishes a new language modeling framework combining the training efficiency of autoregression with the parallel inference capability of diffusion. Instead of costly end-to-end diffusion training, SDAR performs a lightweight paradigm conversion that transforms a well-trained autoregressive (AR) model into a blockwise ..."
+    }
+  ]
+}

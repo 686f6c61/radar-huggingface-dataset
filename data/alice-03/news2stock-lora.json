@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "alice-03/news2stock-lora",
+  "slug": "alice-03-news2stock-lora",
+  "author": "alice-03",
+  "url": "https://huggingface.co/alice-03/news2stock-lora",
+  "created_at": "2026-08-24T08:55:09.000Z",
+  "updated_at": "2026-08-24T08:55:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,045 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "alice 3 - v0.3 MGQ - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/709902934034595855",
+      "snippet": "Download alice 3 - free LORA SD 1.5 AI model on TENSORHUB ART. MGQ, ALICE. By krakenbite"
+    },
+    {
+      "title": "Flux 1D Alice Russian Female Model Lora - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2137645?modelVersionId=2418007",
+      "snippet": "Download Flux 1D Alice Russian Female Model Lora - LORA for Flux.1 D by The_Midnight_Lab. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EthanRhys/Jessie-Masters-EX",
+  "slug": "ethanrhys-jessie-masters-ex",
+  "author": "EthanRhys",
+  "url": "https://huggingface.co/EthanRhys/Jessie-Masters-EX",
+  "created_at": "2026-08-23T23:02:46.000Z",
+  "updated_at": "2026-08-23T23:04:22.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79441249,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jessie (Masters EX) AI Voice Model",
+      "url": "https://voice-models.com/model/1nlgKZ3qXFU",
+      "snippet": "Jessie (Masters EX) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/models",
+      "snippet": "I make RVC voice models of cartoons, anime and video game characters in both English and Spanish (Sometimes in other international languages)"
+    },
+    {
+      "title": "Jessie (Masters EX) - Storyteller.ai",
+      "url": "https://storyteller.ai/weight/weight_9a5yt00nbg91xrx6jq0x9z9jv/jessie",
+      "snippet": "Seedance 2.0 Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "Jessie (Masters) AI Voice: Hear It & Make AI Covers | Jammable",
+      "url": "https://www.jammable.com/jessie-masters-sX8ZN",
+      "snippet": "Listen to Jessie (Masters) AI covers and make your own in about a minute. Use the community-made Jessie (Masters) voice for songs, text-to-speech and duets on Jammable."
+    }
+  ]
+}

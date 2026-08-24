@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "limitedonly41/mistral7b_v3_4_categories",
+  "slug": "limitedonly41-mistral7b_v3_4_categories",
+  "author": "limitedonly41",
+  "url": "https://huggingface.co/limitedonly41/mistral7b_v3_4_categories",
+  "created_at": "2026-08-23T13:55:39.000Z",
+  "updated_at": "2026-08-23T13:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168072527,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "limitedonly41/mistral7b_v3_4_categories · Hugging Face",
+      "url": "https://huggingface.co/limitedonly41/mistral7b_v3_4_categories",
+      "snippet": "limitedonly41 / mistral7b_v3_4_categories like 1 Transformers Safetensors English text-generation-inference unsloth mistral trl License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Uploaded model"
+    },
+    {
+      "title": "limitedonly41 (Tair Piatisliamov) - Hugging Face",
+      "url": "https://huggingface.co/limitedonly41",
+      "snippet": "limitedonly41/website-classification-2-llama-3-8B Text Generation • Updated May 5 • 2"
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "mistral-7b - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/mistral",
+      "snippet": "One of the most popular open-source LLMs, Mistral&#x27;s 7B Instruct model&#x27;s balance of speed, size, and performance makes it a great general-purpose daily driver."
+    }
+  ]
+}

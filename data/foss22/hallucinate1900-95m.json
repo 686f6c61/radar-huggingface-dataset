@@ -5,7 +5,7 @@
   "author": "foss22",
   "url": "https://huggingface.co/foss22/Hallucinate1900-95M",
   "created_at": "2026-08-21T21:01:00.000Z",
-  "updated_at": "2026-08-22T13:53:39.000Z",
+  "updated_at": "2026-08-22T16:14:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 85,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 822185336,
-  "storage_human": "822 MB",
+  "storage_bytes": 929775875,
+  "storage_human": "930 MB",
   "base_model": "croqaz/Sprocket-and-Say",
   "formats": [
     "safetensors"

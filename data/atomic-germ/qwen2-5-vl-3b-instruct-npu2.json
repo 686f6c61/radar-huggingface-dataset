@@ -5,7 +5,7 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Qwen2.5-VL-3B-Instruct-NPU2",
   "created_at": "2026-08-22T16:48:35.000Z",
-  "updated_at": "2026-08-22T16:48:35.000Z",
+  "updated_at": "2026-08-23T15:06:08.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

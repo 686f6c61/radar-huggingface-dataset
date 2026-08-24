@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sullivan1502/base-action-pretrain",
+  "slug": "sullivan1502-base-action-pretrain",
+  "author": "sullivan1502",
+  "url": "https://huggingface.co/sullivan1502/base-action-pretrain",
+  "created_at": "2026-08-24T01:33:18.000Z",
+  "updated_at": "2026-08-24T03:47:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 81841152,
+  "parameters_human": "81.8M",
+  "storage_bytes": 982223617,
+  "storage_human": "982 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sullivan1502/base-zone-pretrain · Hugging Face",
+      "url": "https://huggingface.co/sullivan1502/base-zone-pretrain",
+      "snippet": "sullivan1502 / base-zone-pretrain like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sullivan1502/base-action-sft · Hugging Face",
+      "url": "https://huggingface.co/sullivan1502/base-action-sft",
+      "snippet": "sullivan1502 / base-action-sft like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "base-pretrain — VRAM, Quants & GPU Compatibility",
+      "url": "https://nodepedia.com/models/base-pretrain/",
+      "snippet": "base-pretrain is a tiny experimental base model from sullivan1502 — about 33.6 million parameters, released mid-2026. Calling it \"small\" undersells it: this is a from-scratch pretraining artifact, not an instruction-tuned assistant."
+    },
+    {
+      "title": "base-pretrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/sullivan1502/base-pretrain",
+      "snippet": "Run base-pretrain with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://www.knowyourmodel.ai/models/huggingface%3Asullivan1502%2Fbase-pretrain",
+      "snippet": "View entity details and skills Home Models Huggingface%3Asullivan1502%2Fbase-pretrain Entities huggingface/huggingface:sullivan1502/base-pretrain"
+    }
+  ]
+}

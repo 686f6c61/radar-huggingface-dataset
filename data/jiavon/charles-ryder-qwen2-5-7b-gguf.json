@@ -5,7 +5,7 @@
   "author": "jiavon",
   "url": "https://huggingface.co/jiavon/charles-ryder-qwen2.5-7b-gguf",
   "created_at": "2026-08-22T00:56:33.000Z",
-  "updated_at": "2026-08-22T00:57:27.000Z",
+  "updated_at": "2026-08-23T19:08:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 151,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 4683073568,
-  "storage_human": "4.7 GB",
+  "storage_bytes": 18732294272,
+  "storage_human": "18.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

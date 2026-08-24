@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-tcsegformer-block-fold1-no_csa",
+  "slug": "sugam24-geonusaf-tcsegformer-block-fold1-no_csa",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_csa",
+  "created_at": "2026-08-23T03:52:36.000Z",
+  "updated_at": "2026-08-23T08:37:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2200611211,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-tcsegformer-block-fold1-no_detail · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_detail",
+      "snippet": "GeoNUSAF TC-SegFormer (no_detail) -- block split, fold 1 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255, 512x512 @ 0.586 m/px."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=geonusaf",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: geonusaf Clear all"
+    },
+    {
+      "title": "GitHub - SarahGeoAI/SegFormer-Segmentation: Scripts for SegFormer-based ...",
+      "url": "https://github.com/SarahGeoAI/SegFormer-Segmentation",
+      "snippet": "This repository contains the scripts used for semantic segmentation of geomorphic landforms (terraces, valley fills, and minebench areas) from remote sensing imagery, comparing SegFormer, SegUNet, and UNet architectures."
+    },
+    {
+      "title": "Cloud Security Alliance CISO Community Releases Emergency | CSA",
+      "url": "https://cloudsecurityalliance.org/press-releases/2026/07/28/csa-ciso-community-releases-emergency-guidance-after-autonomous-ai-model-breached-hugging-face-production-systems",
+      "snippet": "Cloud Security Alliance CISO Community Releases Emergency Guidance After Autonomous AI Model Breached Hugging Face&#x27;s Production Systems During a Security Evaluation"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

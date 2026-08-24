@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Kysaddy/koda-qwen15",
+  "slug": "kysaddy-koda-qwen15",
+  "author": "Kysaddy",
+  "url": "https://huggingface.co/Kysaddy/koda-qwen15",
+  "created_at": "2026-08-24T11:25:44.000Z",
+  "updated_at": "2026-08-24T11:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "koda",
+    "coding",
+    "chat",
+    "standalone",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1154749574,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lili0710432/Qwen15: Qwen1.5 is the improved version of Qwen ...",
+      "url": "https://github.com/lili0710432/Qwen15",
+      "snippet": "Qwen1.5 is the improved version of Qwen, the large language model series developed by Qwen team, Alibaba Cloud. - lili0710432/Qwen15"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "rakesh277/qwen15-resume-parser-4bit · Hugging Face",
+      "url": "https://huggingface.co/rakesh277/qwen15-resume-parser-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Qwen1.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen15",
+      "snippet": "Qwen1.5 is the improved version of Qwen, the large language model series developed by Alibaba Cloud."
+    }
+  ]
+}

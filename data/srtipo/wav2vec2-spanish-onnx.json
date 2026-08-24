@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "srtipo/wav2vec2-spanish-onnx",
+  "slug": "srtipo-wav2vec2-spanish-onnx",
+  "author": "srtipo",
+  "url": "https://huggingface.co/srtipo/wav2vec2-spanish-onnx",
+  "created_at": "2026-08-23T23:25:40.000Z",
+  "updated_at": "2026-08-23T23:55:04.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342433945,
+  "storage_human": "342 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flax-community/wav2vec2-spanish · Hugging Face",
+      "url": "https://huggingface.co/flax-community/wav2vec2-spanish",
+      "snippet": "Wav2Vec2 Spanish Wav2Vec2 model pre-trained using the Spanish portion of the Common Voice dataset. The model is trained with Flax and using TPUs sponsored by Google since this is part of the Flax/Jax Community Week organised by HuggingFace. Model description The model used for training is Wav2Vec2 by FacebookAI. It was introduced in the paper \"wav2vec 2.0: A Framework for Self-Supervised ..."
+    },
+    {
+      "title": "README.md · flax-community/wav2vec2-spanish at main",
+      "url": "https://huggingface.co/flax-community/wav2vec2-spanish/blob/main/README.md",
+      "snippet": "Wav2Vec2 Spanish Wav2Vec2 model pre-trained using the Spanish portion of the Common Voice dataset. The model is trained with Flax and using TPUs sponsored by Google since this is part of the Flax/Jax Community Week organised by HuggingFace."
+    },
+    {
+      "title": "GitHub - somosnlp/wav2vec2-spanish: Pre-train a Spanish Wav2Vec2 model ...",
+      "url": "https://github.com/somosnlp/wav2vec2-spanish",
+      "snippet": "Pre-train a Spanish Wav2Vec2 model using the Spanish portion of the Common Voice dataset. - somosnlp/wav2vec2-spanish"
+    },
+    {
+      "title": "wav2vec2-spanish/README.md at main - GitHub",
+      "url": "https://github.com/somosnlp/wav2vec2-spanish/blob/main/README.md",
+      "snippet": "Pre-train a Spanish Wav2Vec2 model using the Spanish portion of the Common Voice dataset. - wav2vec2-spanish/README.md at main · somosnlp/wav2vec2-spanish"
+    },
+    {
+      "title": "Wav2Vec2 Spanish Open-Source Speech Recognition Model - Free and ...",
+      "url": "https://model.aibase.com/models/details/1915693124829208578",
+      "snippet": "Model Overview This is a Spanish automatic speech recognition (ASR) model based on the Wav2Vec2 architecture, capable of converting Spanish speech into text."
+    }
+  ]
+}

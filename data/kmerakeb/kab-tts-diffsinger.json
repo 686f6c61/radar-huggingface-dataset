@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kmerakeb/kab-tts-diffsinger",
+  "slug": "kmerakeb-kab-tts-diffsinger",
+  "author": "kmerakeb",
+  "url": "https://huggingface.co/kmerakeb/kab-tts-diffsinger",
+  "created_at": "2026-08-22T17:14:15.000Z",
+  "updated_at": "2026-08-24T03:23:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42136004071,
+  "storage_human": "42.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MoonInTheRiver/DiffSinger: DiffSinger: Singing Voice Synthesis ...",
+      "url": "https://github.com/MoonInTheRiver/DiffSinger",
+      "snippet": "DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism This repository is the official PyTorch implementation of our AAAI-2022 paper, in which we propose DiffSinger (for Singing-Voice-Synthesis) and DiffSpeech (for Text-to-Speech)."
+    },
+    {
+      "title": "GitHub - markyouyuren/DiffSinger-1: DiffSinger: Singing Voice Synthesis ...",
+      "url": "https://github.com/markyouyuren/DiffSinger-1",
+      "snippet": "DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism This repository is the official PyTorch implementation of our AAAI-2022 paper, in which we propose DiffSinger (for Singing-Voice-Synthesis) and DiffSpeech (for Text-to-Speech)."
+    },
+    {
+      "title": "kmerakeb (kabir) - Hugging Face",
+      "url": "https://huggingface.co/kmerakeb/models",
+      "snippet": "kmerakeb&#x27;s models1 Sort: Recently updated kmerakeb/Qwen2.5-1.5B-Kabyle-Dialog Text Generation •Updated about 9 hours ago"
+    },
+    {
+      "title": "DiffSinger - GitHub Pages",
+      "url": "https://diffsinger.github.io/DiffSinger.github.io_bak/",
+      "snippet": "DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism Jinglin Liu, Chengxi Li, Yi Ren, Feiyang Chen, Zhou Zhao Zhejiang University AAAI 2022 Singing Voice Synthesis Link (DiffSinger) Text to Speech Synthesis Link (DiffSpeech)"
+    },
+    {
+      "title": "DiffSinger download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/diffsinger.mirror/",
+      "snippet": "Download DiffSinger for free. Singing Voice Synthesis via Shallow Diffusion Mechanism. DiffSinger is an open-source PyTorch implementation of a diffusion-based acoustic model for singing-voice synthesis (SVS) and also text-to-speech (TTS) in a related variant. The core idea is to view generation of a sung voice (mel-spectrogram) as a diffusion process: starting from noise, the model ..."
+    }
+  ]
+}

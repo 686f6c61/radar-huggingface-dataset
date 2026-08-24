@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jatshi/StreamSense-Serve-v4-Router",
+  "slug": "jatshi-streamsense-serve-v4-router",
+  "author": "jatshi",
+  "url": "https://huggingface.co/jatshi/StreamSense-Serve-v4-Router",
+  "created_at": "2026-08-24T10:21:26.000Z",
+  "updated_at": "2026-08-24T10:27:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "multimodal",
+    "routing",
+    "uncertainty",
+    "evidence-grounding",
+    "chinese",
+    "feature-extraction",
+    "base_model:BAAI/bge-small-zh-v1.5",
+    "base_model:finetune:BAAI/bge-small-zh-v1.5",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "BAAI/bge-small-zh-v1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Jatshi/StreamSense-Serve: Evidence-first real-time audiovisual ...",
+      "url": "https://github.com/Jatshi/StreamSense-Serve",
+      "snippet": "StreamSense-Serve turns time-aligned audio and video observations into structured events. Every non-abstained result carries replayable evidence, and a configurable router escalates only risky, uncertain, conflicting, or visually grounded requests to an expensive VLM worker."
+    },
+    {
+      "title": "StreamSense-Serve/README.md at main · Jatshi/StreamSense-Serve",
+      "url": "https://github.com/Jatshi/StreamSense-Serve/blob/main/README.md",
+      "snippet": "StreamSense-Serve turns time-aligned audio and video observations into structured events. Every non-abstained result carries replayable evidence, and a configurable router escalates only risky, uncertain, conflicting, or visually grounded requests to an expensive VLM worker."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "[2601.22738] StreamSense: Streaming Social Task Detection with ...",
+      "url": "https://arxiv.org/abs/2601.22738",
+      "snippet": "Live streaming platforms require real-time monitoring and reaction to social signals, utilizing partial and asynchronous evidence from video, text, and audio. We propose StreamSense, a streaming detector that couples a lightweight streaming encoder with selective routing to a Vision-Language Model (VLM) expert. StreamSense handles most timestamps with the lightweight streaming encoder ..."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    }
+  ]
+}

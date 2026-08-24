@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nwerner88/model_151766993_blip_nano",
+  "slug": "nwerner88-model_151766993_blip_nano",
+  "author": "nwerner88",
+  "url": "https://huggingface.co/nwerner88/model_151766993_blip_nano",
+  "created_at": "2026-08-23T04:33:29.000Z",
+  "updated_at": "2026-08-23T04:33:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "batchnorm",
+    "blip",
+    "classification",
+    "cosine",
+    "gated-fusion",
+    "multi-query",
+    "nano",
+    "rmsprop",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "nano-brain/docs/ai-providers at master · NanoZzz-blip/nano-brain",
+      "url": "https://github.com/NanoZzz-blip/nano-brain/tree/master/docs/ai-providers",
+      "snippet": "Contribute to NanoZzz-blip/nano-brain development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Gemini Nano: Google Chrome Quietly Installs a 4 GB AI Model",
+      "url": "https://www.it-connect.tech/gemini-nano-google-chrome-quietly-installs-a-4-gb-ai-model/",
+      "snippet": "Chrome may silently download Gemini Nano, a 4 GB AI model. Learn how to disable it, free disk space, and block it on Windows, macOS, or Linux."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    }
+  ]
+}

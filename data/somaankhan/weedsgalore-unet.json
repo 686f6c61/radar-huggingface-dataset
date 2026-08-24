@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "somaankhan/Weedsgalore-Unet",
+  "slug": "somaankhan-weedsgalore-unet",
+  "author": "somaankhan",
+  "url": "https://huggingface.co/somaankhan/Weedsgalore-Unet",
+  "created_at": "2026-08-23T07:30:14.000Z",
+  "updated_at": "2026-08-23T07:35:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31137175,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeedsGalore Dataset - GitHub",
+      "url": "https://github.com/GFZ/weedsgalore",
+      "snippet": "WeedsGalore is a UAV-based multispectral dataset with dense annotations for crop and weed segmentation in maize fields. This repository contains code and download links for the dataset and pretrained models."
+    },
+    {
+      "title": "[2502.13103] WeedsGalore: A Multispectral and Multitemporal UAV-based ...",
+      "url": "https://arxiv.org/abs/2502.13103",
+      "snippet": "Abstract page for arXiv paper 2502.13103: WeedsGalore: A Multispectral and Multitemporal UAV-based Dataset for Crop and Weed Segmentation in Agricultural Maize Fields"
+    },
+    {
+      "title": "WeedsGalore: A Multispectral and Multitemporal UAV-based Dataset for ...",
+      "url": "https://arxiv.org/html/2502.13103v1",
+      "snippet": "We evaluate WeedsGalore for the tasks of semantic and instance segmentation. The results show that our dataset uniquely enables the application of aerial monitoring in maize fields, and through the use of probabilistic methods the model performance and calibration can be significantly improved, especially on out-of-distribution (OOD) data."
+    },
+    {
+      "title": "WeedsGalore: A Multispectral and Multitemporal UAV-Based Dataset for ...",
+      "url": "https://www.computer.org/csdl/proceedings-article/wacv/2025/108300e774/25Kn3TuKuQw",
+      "snippet": "Weeds are one of the major reasons for crop yield loss but current weeding practices fail to manage weeds in an efficient and targeted manner. Effective weed management is especially important for crops with high worldwide production such as maize, to maximize crop yield for meeting increasing global demands. Advances in near-sensing and computer vision enable the development of new tools for ..."
+    },
+    {
+      "title": "WeedsGalore: UAV Dataset for Maize Weeding",
+      "url": "https://www.scribd.com/document/955984879/WeedsGalore",
+      "snippet": "The paper presents WeedsGalore, a novel multispectral UAV-based dataset aimed at improving crop and weed segmentation in maize fields, addressing the inefficiencies of current weeding practices. This dataset includes images with multiple spectral bands and dense annotations for various weed classes, facilitating advanced machine learning applications for precise weed management. The authors ..."
+    }
+  ]
+}

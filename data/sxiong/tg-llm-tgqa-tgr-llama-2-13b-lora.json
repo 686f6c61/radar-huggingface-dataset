@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sxiong/TG-LLM-TGQA-TGR-Llama-2-13B-LoRA",
+  "slug": "sxiong-tg-llm-tgqa-tgr-llama-2-13b-lora",
+  "author": "sxiong",
+  "url": "https://huggingface.co/sxiong/TG-LLM-TGQA-TGR-Llama-2-13B-LoRA",
+  "created_at": "2026-08-24T09:29:47.000Z",
+  "updated_at": "2026-08-24T09:40:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:sxiong/TGQA",
+    "base_model:meta-llama/Llama-2-13b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-13b-chat-hf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 681638904,
+  "storage_human": "682 MB",
+  "base_model": "meta-llama/Llama-2-13b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sxiong/TG-LLM · Hugging Face",
+      "url": "https://huggingface.co/sxiong/TG-LLM",
+      "snippet": "Model Card for TG-LLM These are the supervised fine-tuned models for temporal reasoning with LLMs. Please check here for more details."
+    },
+    {
+      "title": "TG-LLM: Large Language Models Can Learn Temporal Reasoning",
+      "url": "https://github.com/xiongsiheng/TG-LLM",
+      "snippet": "This repository contains the code for the paper [ACL 24 (main)] Large Language Models Can Learn Temporal Reasoning. Our framework (TG-LLM) performs temporal reasoning in two steps: 1) Text-to-Temporal Graph translation: generate (relevant) temporal graph given the context and keyword (extracted from questions); 2) Temporal Graph Reasoning: perform deliberate Chain-of-Thought reasoning over the ..."
+    },
+    {
+      "title": "GitHub - xiongsiheng/TG-LLM: [ACL 24 main] Large Language Models Can ...",
+      "url": "https://github.com/xiongsiheng/TG-LLM/tree/main",
+      "snippet": "This repository contains the code for the paper [ACL 24 (main)] Large Language Models Can Learn Temporal Reasoning. Our framework (TG-LLM) performs temporal reasoning in two steps: 1) Text-to-Temporal Graph translation: generate (relevant) temporal graph given the context and keyword (extracted from questions); 2) Temporal Graph Reasoning: perform deliberate Chain-of-Thought reasoning over the ..."
+    },
+    {
+      "title": "Large Language Models Can Learn Temporal Reasoning",
+      "url": "https://arxiv.org/html/2401.06853v2",
+      "snippet": "Graph-augmented approaches such as TG-LLM help language models better learn related concepts from the perspective of graph. Although we demonstrate TG-LLM has good performance on understanding temporal relations, it still needs adaptations for temporal commonsense reasoning (Zhou et al. 2019; Qin et al. 2021)."
+    },
+    {
+      "title": "README.md · sxiong/TGQA at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/sxiong/TGQA/blob/main/README.md",
+      "snippet": "TG-LLM is a two-step framework which includes text-to-temporal graph translation and temporal graph reasoning. To facilitate the experiments, we divide the data into the corresponding parts (Story_TG_Trans and TGR)."
+    }
+  ]
+}

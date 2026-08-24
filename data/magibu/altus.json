@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "magibu/Altus",
+  "slug": "magibu-altus",
+  "author": "magibu",
+  "url": "https://huggingface.co/magibu/Altus",
+  "created_at": "2026-08-24T08:57:30.000Z",
+  "updated_at": "2026-08-24T08:57:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "bpe",
+    "turkish",
+    "multimodal",
+    "magibu-ai",
+    "tr",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32520261,
+  "storage_human": "33 MB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magibu AI - Data Sovereignty Is National Sovereignty | Turkish ...",
+      "url": "https://magibu.ai/en/",
+      "snippet": "We build foundation models for AI sovereignty. Magibu turns Turkish foundation and embedding models into secure, measurable AI systems that run inside your organization."
+    },
+    {
+      "title": "magibu (magibu) - Hugging Face",
+      "url": "https://huggingface.co/magibu",
+      "snippet": "Org profile for magibu on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "magibu-11b-v0.8 - Hugging Face",
+      "url": "https://huggingface.co/magibu/magibu-11b-v0.8",
+      "snippet": "📋 Model Hakkında Magibu-11b-v0.8, Magibu AI Research tarafından geliştirilen, Türkçe odaklı, çok dilli, Çok Modlu (Multimodal) bir modeldir. Önemli Not: Bu model, mevcut bir modelin üzerine yapılan basit bir \"fine-tune\" işlemi değildir. Magibu-11b, kendi geliştirdiğimiz özgün eğitim yöntemleri ve veri setleri ile ..."
+    },
+    {
+      "title": "Magibu AI - Veri Egemenliği, Millî Egemenliktir | Türkçe Foundation ...",
+      "url": "https://magibu.ai/",
+      "snippet": "Yapay zekâ egemenliği için foundation model geliştiriyoruz. Magibu, Türkçe foundation ve embedding modellerini kurum içinde çalışan, güvenli ve ölçülebilir yapay zekâ sistemlerine dönüştürür."
+    },
+    {
+      "title": "Magibu 11B v8 API - LLMTR | AI Model APIs | AI Model APIs",
+      "url": "https://aimodelapis.com/providers/llmtr/llmtr-magibu-11b-v8",
+      "snippet": "Magibu 11B v8 is a high-performance LLM available via the LLMTR API, ideal for scalable text generation and natural language processing. This model delivers available completely free of charge. Access Magibu 11B v8 via the LLMTR API with up to 4K output tokens."
+    }
+  ]
+}

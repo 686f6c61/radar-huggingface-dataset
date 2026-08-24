@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dushulang/gemma-3-270m-Q2_K-GGUF",
+  "slug": "dushulang-gemma-3-270m-q2_k-gguf",
+  "author": "dushulang",
+  "url": "https://huggingface.co/dushulang/gemma-3-270m-Q2_K-GGUF",
+  "created_at": "2026-08-24T13:55:41.000Z",
+  "updated_at": "2026-08-24T13:55:48.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma3",
+    "gemma",
+    "google",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:google/gemma-3-270m",
+    "base_model:quantized:google/gemma-3-270m",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 237077312,
+  "storage_human": "237 MB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-270m · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/gemma-3-270m-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-3-270m-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/",
+      "snippet": "Gemma 3 270M brings strong instruction-following capabilities to a small-footprint model. As shown by the IFEval benchmark (which tests a model&#x27;s ability to follow verifiable instructions), it establishes a new level of performance for its size, making sophisticated AI capabilities more accessible for on-device and research applications."
+    },
+    {
+      "title": "gemma-3 (Gemma3) · GitHub",
+      "url": "https://github.com/gemma-3/",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    }
+  ]
+}

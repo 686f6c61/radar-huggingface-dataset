@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max-v2.h021.pi-agent-sft-v12.step_250",
+  "slug": "agentic-ptb-sol-max-v2-h021-pi-agent-sft-v12-step_250",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max-v2.h021.pi-agent-sft-v12.step_250",
+  "created_at": "2026-08-24T00:05:34.000Z",
+  "updated_at": "2026-08-24T00:07:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "GitHub - HKUDS/nanobot: Ultra-lightweight, open-source, self-hosted ...",
+      "url": "https://github.com/HKUDS/nanobot",
+      "snippet": "nanobot 🐈 nanobot is an ultra-lightweight, open-source, self-hosted personal AI agent framework written in Python. It runs in a WebUI, terminal, or chat apps and combines tools, long-term memory, MCP integrations, model routing, multi-agent delegation, scheduled automation, and an OpenAI-compatible API in a small, readable core."
+    },
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    }
+  ]
+}

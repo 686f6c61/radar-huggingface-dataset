@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shoukewei/Qwen3.5-9B-OBLITERATED",
+  "slug": "shoukewei-qwen3-5-9b-obliterated",
+  "author": "shoukewei",
+  "url": "https://huggingface.co/shoukewei/Qwen3.5-9B-OBLITERATED",
+  "created_at": "2026-08-23T06:23:57.000Z",
+  "updated_at": "2026-08-23T06:24:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927644990,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.5-9B-Abliterated: What This Uncensored Model Does",
+      "url": "https://hackernoon.com/huihui-qwen35-9b-abliterated-what-this-uncensored-model-does",
+      "snippet": "Model overview Huihui-Qwen3.5-9B-abliterated is an uncensored version of Qwen3.5-9B that uses abliteration techniques to remove safety filtering mechanisms. This 9 billion parameter model represents a proof-of-concept approach to creating models with reduced content restrictions, developed by huihui-ai."
+    },
+    {
+      "title": "lukey03/Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/lukey03/Qwen3.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated:9b",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated:9b",
+      "snippet": "This is an uncensored version of Qwen/qwen3.5 created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content. Users should exercise caution and rigorously review ..."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated:9b-Claude - ollama.com",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated:9b-Claude",
+      "snippet": "This is an uncensored version of Qwen/qwen3.5 created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content. Users should exercise caution and rigorously review ..."
+    }
+  ]
+}

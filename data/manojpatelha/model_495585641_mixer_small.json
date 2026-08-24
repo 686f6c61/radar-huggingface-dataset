@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Manojpatelha/model_495585641_mixer_small",
+  "slug": "manojpatelha-model_495585641_mixer_small",
+  "author": "Manojpatelha",
+  "url": "https://huggingface.co/Manojpatelha/model_495585641_mixer_small",
+  "created_at": "2026-08-23T05:11:19.000Z",
+  "updated_at": "2026-08-23T05:11:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "constant-warmup",
+    "gelu",
+    "generation",
+    "mixer",
+    "multi-query",
+    "rmsnorm",
+    "small",
+    "tucker",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    }
+  ]
+}

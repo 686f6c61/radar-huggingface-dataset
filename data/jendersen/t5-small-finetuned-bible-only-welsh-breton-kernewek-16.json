@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jendersen/t5-small-finetuned-bible-only-welsh-breton-kernewek-16",
+  "slug": "jendersen-t5-small-finetuned-bible-only-welsh-breton-kernewek-16",
+  "author": "Jendersen",
+  "url": "https://huggingface.co/Jendersen/t5-small-finetuned-bible-only-welsh-breton-kernewek-16",
+  "created_at": "2026-08-24T01:18:56.000Z",
+  "updated_at": "2026-08-24T03:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/Jendersen/huggingface-static-d1a7af",
+    "generated_from_trainer",
+    "base_model:google-t5/t5-small",
+    "base_model:finetune:google-t5/t5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 2420424353,
+  "storage_human": "2.4 GB",
+  "base_model": "t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jendersen/t5-small-finetuned-bible-only-kernewek-plus-br-cy · Hugging Face",
+      "url": "https://huggingface.co/Jendersen/t5-small-finetuned-bible-only-kernewek-plus-br-cy",
+      "snippet": "Instructions to use Jendersen/t5-small-finetuned-bible-only-kernewek-plus-br-cy with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "T5 Small Finetuned Bible Only Welsh Plus Br Kw - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/jendersen/t5-small-finetuned-bible-only-welsh-plus-br-kw",
+      "snippet": "Registry entry for model T5 Small Finetuned Bible Only Welsh Plus Br Kw; source metadata pending."
+    },
+    {
+      "title": "Jendersen/t5-small-finetuned-welsh-breton-kernewek · Hugging Face",
+      "url": "https://huggingface.co/Jendersen/t5-small-finetuned-welsh-breton-kernewek",
+      "snippet": "This model is a fine-tuned version of Jendersen/t5-small-finetuned-welsh-breton-kernewek on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

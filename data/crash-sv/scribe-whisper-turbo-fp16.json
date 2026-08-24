@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "crash-sv/scribe-whisper-turbo-fp16",
+  "slug": "crash-sv-scribe-whisper-turbo-fp16",
+  "author": "crash-sv",
+  "url": "https://huggingface.co/crash-sv/scribe-whisper-turbo-fp16",
+  "created_at": "2026-08-24T12:02:30.000Z",
+  "updated_at": "2026-08-24T12:03:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "faster-whisper",
+    "whisper",
+    "ru",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "whisper AI error : FP16 is not supported on CPU; using FP32 instead",
+      "url": "https://stackoverflow.com/questions/75908422/whisper-ai-error-fp16-is-not-supported-on-cpu-using-fp32-instead",
+      "snippet": "I don&#x27;t understand why FP16 is not supported since I have a good GPU and everything installed. Any help would be appreciated. Thanks. I installed all the requirement and I was expecting that whisper AI would use the GPU."
+    },
+    {
+      "title": "GitHub - tqpp/whisper-turbo: whisper-turbo语音识别模型",
+      "url": "https://github.com/tqpp/whisper-turbo",
+      "snippet": "Whisper Turbo is a high-performance optimized version based on OpenAI Whisper, focusing on improving inference speed and memory efficiency. While maintaining the original accuracy, it significantly enhances the processing speed of speech recognition, translation, and language identification through ..."
+    },
+    {
+      "title": "whisper-large-v3-turbo-fp16-ov-npu - Hugging Face",
+      "url": "https://huggingface.co/FluidInference/whisper-large-v3-turbo-fp16-ov-npu",
+      "snippet": "Model creator: OpenAI Original model: whisper-large-v3 Description This is whisper-large-v3 model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to FP16. Compatibility The provided OpenVINO™ IR model is compatible with: OpenVINO version 2025.2.0 and higher Optimum Intel 1.23.0 and higher"
+    }
+  ]
+}

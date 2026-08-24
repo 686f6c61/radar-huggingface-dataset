@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "guell00/VELUM-Draft-230M",
+  "slug": "guell00-velum-draft-230m",
+  "author": "guell00",
+  "url": "https://huggingface.co/guell00/VELUM-Draft-230M",
+  "created_at": "2026-08-23T04:03:00.000Z",
+  "updated_at": "2026-08-23T04:29:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 246597920,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Running LLMs on NVIDIA GeForce GT 230M: What You Can Run",
+      "url": "https://www.fitmyllm.com/blog/gpu/geforce-gt-230m",
+      "snippet": "Complete guide to running local AI on the NVIDIA GeForce GT 230M with 1GB VRAM. Models that fit, expected performance, and recommended settings."
+    },
+    {
+      "title": "Open Source LLM Leaderboard 2026 — Compare Open-Weight Models - vellum.ai",
+      "url": "https://www.vellum.ai/open-llm-leaderboard",
+      "snippet": "Open Source LLM Leaderboard This open source LLM leaderboard displays the latest public benchmark performance for open-weight and open-source models released after April 2024. The data comes from model providers as well as independently run evaluations by Vellum or the open-source community. We feature results from non-saturated benchmarks, excluding outdated benchmarks (e.g. MMLU)."
+    },
+    {
+      "title": "Day-0 support for Liquid AI&#x27;s new LFM2.5-230M on CPU + NPU",
+      "url": "https://www.roofline.ai/news/day-0-support-for-liquid-ais-new-lfm2-5-230m-on-cpu-npu",
+      "snippet": "Today, Liquid AI released their new 230M parameter LLM. In their words, it&#x27;s \"the smallest model yet, built to run anywhere (CPUs, NPUs, and GPUs) to enable agentic applications on phones, robots, home and network automation devices. \"We are excited to showcase day-0 support with roofline &#x27;s deployment tools."
+    }
+  ]
+}

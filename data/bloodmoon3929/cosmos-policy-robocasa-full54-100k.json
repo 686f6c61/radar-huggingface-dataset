@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bloodmoon3929/cosmos-policy-robocasa-full54-100k",
+  "slug": "bloodmoon3929-cosmos-policy-robocasa-full54-100k",
+  "author": "bloodmoon3929",
+  "url": "https://huggingface.co/bloodmoon3929/cosmos-policy-robocasa-full54-100k",
+  "created_at": "2026-08-23T23:12:38.000Z",
+  "updated_at": "2026-08-23T23:14:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "cosmos-policy",
+    "robocasa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3914112449,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · nvidia/RoboCasa-Cosmos-Policy at main",
+      "url": "https://huggingface.co/datasets/nvidia/RoboCasa-Cosmos-Policy/blob/main/README.md",
+      "snippet": "RoboCasa-Cosmos-Policy Dataset Description RoboCasa-Cosmos-Policy is a modified version of the RoboCasa simulation benchmark dataset, created as part of the Cosmos Policy project. This is the dataset used to train the Cosmos-Policy-RoboCasa-Predict2-2B checkpoint. Key Modifications Our modifications include the following: Higher-resolution images: Images are saved at 224×224 pixels (vs. 128× ..."
+    },
+    {
+      "title": "GitHub - NVlabs/cosmos-policy: Cosmos Policy · GitHub",
+      "url": "https://github.com/NVlabs/cosmos-policy",
+      "snippet": "System Requirements Inference with base Cosmos Policy only (i.e., no model-based planning): 1 GPU with 6.8 GB VRAM for LIBERO sim benchmark tasks 1 GPU with 8.9 GB VRAM for RoboCasa sim benchmark tasks 1 GPU with 6.0 GB VRAM for ALOHA robot tasks Inference with Cosmos Policy + model-based planning (best-of-N search) on ALOHA robot tasks:"
+    },
+    {
+      "title": "GitHub - moojink/robocasa-cosmos-policy: RoboCasa: Large-Scale ...",
+      "url": "https://github.com/moojink/robocasa-cosmos-policy",
+      "snippet": "This is the official codebase of RoboCasa, a large-scale simulation framework for training generally capable robots to perform everyday tasks. This guide contains information about installation and setup. Please refer to the following resources for additional information: [10/31/2024] v0.2: using ..."
+    },
+    {
+      "title": "nvidia/RoboCasa-Cosmos-Policy · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nvidia/RoboCasa-Cosmos-Policy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/RoboCasa-Cosmos-Policy · Datasets at Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/datasets/nvidia/RoboCasa-Cosmos-Policy",
+      "snippet": "Dataset Description RoboCasa-Cosmos-Policy is a modified version of the RoboCasa simulation benchmark dataset, created as part of the Cosmos Policy project. This is the dataset used to train the Cosmos-Policy-RoboCasa-Predict2-2B checkpoint."
+    }
+  ]
+}

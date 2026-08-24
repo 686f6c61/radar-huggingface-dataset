@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nepandey/model_315126851_tiny_transformer_base",
+  "slug": "nepandey-model_315126851_tiny_transformer_base",
+  "author": "Nepandey",
+  "url": "https://huggingface.co/Nepandey/model_315126851_tiny_transformer_base",
+  "created_at": "2026-08-23T10:53:16.000Z",
+  "updated_at": "2026-08-23T10:53:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "base",
+    "classification",
+    "gelu",
+    "grouped-query",
+    "groupnorm",
+    "kaiming-normal",
+    "polynomial",
+    "tensor-fusion",
+    "tiny-transformer",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - atharvanaik06/tiny-transformer-lab: Build a GPT-style ...",
+      "url": "https://github.com/atharvanaik06/tiny-transformer-lab",
+      "snippet": "These limitations are part of the educational value: the project makes it easy to see the difference between optimizing a training objective and improving the behavior users actually care about. Build a GPT-style transformer from scratch in PyTorch, then pretrain, fine-tune, align with DPO and PPO/RLHF, and evaluate controlled model experiments."
+    },
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    },
+    {
+      "title": "N8Programs/arc-tiny-transformer-models at main - Hugging Face",
+      "url": "https://huggingface.co/N8Programs/arc-tiny-transformer-models/tree/main",
+      "snippet": "Instructions to use N8Programs/arc-tiny-transformer-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use N8Programs/arc-tiny-transformer-models with Transformers:"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CrowtherLabs/atom-proton-1.0",
+  "slug": "crowtherlabs-atom-proton-1-0",
+  "author": "CrowtherLabs",
+  "url": "https://huggingface.co/CrowtherLabs/atom-proton-1.0",
+  "created_at": "2026-08-24T10:32:12.000Z",
+  "updated_at": "2026-08-24T11:06:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "atom",
+    "crowther",
+    "vision-language",
+    "reasoning",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CrowtherLabs/Atom-Electron-1.0 · Hugging Face",
+      "url": "https://huggingface.co/CrowtherLabs/Atom-Electron-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CrowtherLabs (Crowther Labs) - Hugging Face",
+      "url": "https://huggingface.co/CrowtherLabs",
+      "snippet": "Org profile for Crowther Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - ROCm/ATOM: AiTer Optimized Model",
+      "url": "https://github.com/ROCm/ATOM",
+      "snippet": "ATOM (AiTer Optimized Model) is a lightweight vLLM-like implementation, focusing on integration and optimization based on AITER."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ChatWithAI - Chat",
+      "url": "https://chatwithai.app/chat/index",
+      "snippet": "Explore ChatWithAI&#x27;s Chat features. Trusted by 2M+ users worldwide."
+    }
+  ]
+}

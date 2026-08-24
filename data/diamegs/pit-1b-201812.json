@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diamegs/PIT-1B-201812",
+  "slug": "diamegs-pit-1b-201812",
+  "author": "Diamegs",
+  "url": "https://huggingface.co/Diamegs/PIT-1B-201812",
+  "created_at": "2026-08-03T09:30:09.000Z",
+  "updated_at": "2026-08-23T10:40:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pit",
+    "text-generation",
+    "causal-lm",
+    "point-in-time",
+    "temporal-llm",
+    "pretrained",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 1626734592,
+  "parameters_human": "1.63B",
+  "storage_bytes": 6506973008,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diamegs/PIT-1B-201812 · Hugging Face",
+      "url": "https://huggingface.co/Diamegs/PIT-1B-201812",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "AI Deepfake Detector — Teamz Lab Tools",
+      "url": "https://tool.teamzlab.com/ai/ai-deepfake-detector/",
+      "snippet": "When you upload a photo, the AI model analyzes pixel patterns, texture artifacts, and structural inconsistencies that are characteristic of AI-generated images. Real photographs have natural noise patterns and optical imperfections, while AI-generated images often contain subtle artifacts in hair, teeth, backgrounds, and symmetry."
+    },
+    {
+      "title": "GitHub - nari-labs/dia: A TTS model capable of generating ultra ...",
+      "url": "https://github.com/nari-labs/dia",
+      "snippet": "A TTS model capable of generating ultra-realistic dialogue in one pass. - nari-labs/dia"
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

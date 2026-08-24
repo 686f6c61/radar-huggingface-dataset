@@ -5,10 +5,10 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Darwin-36B-Opus-NPU2",
   "created_at": "2026-08-06T20:50:20.000Z",
-  "updated_at": "2026-08-19T18:31:40.000Z",
+  "updated_at": "2026-08-23T14:59:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "image-text-to-text",
   "library": null,
   "languages": [
     "en"
@@ -24,7 +24,7 @@
     "fastflowlm",
     "q4nx",
     "npu",
-    "text-generation",
+    "image-text-to-text",
     "conversational",
     "en",
     "base_model:FINAL-Bench/Darwin-36B-Opus",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 1831,
+  "downloads_30d": 1836,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

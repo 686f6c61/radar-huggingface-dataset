@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "that-fallen-angel/fallen-angel_llama2-13b-finetune",
+  "slug": "that-fallen-angel-fallen-angel_llama2-13b-finetune",
+  "author": "that-fallen-angel",
+  "url": "https://huggingface.co/that-fallen-angel/fallen-angel_llama2-13b-finetune",
+  "created_at": "2026-08-24T15:42:45.000Z",
+  "updated_at": "2026-08-24T15:44:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 7865957824,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-2-13b · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-2-13b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-2-13b-hf - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-2-13b-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - CJ-xchina/llama2-13b",
+      "url": "https://github.com/CJ-xchina/llama2-13b",
+      "snippet": "We are unlocking the power of large language models. Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This ..."
+    },
+    {
+      "title": "Llama 2 13B: Complete Meta Model Setup Guide 2026 - Local AI Master",
+      "url": "https://localaimaster.com/models/llama-2-13b",
+      "snippet": "Llama 2 13B by Meta: 55% MMLU, best balance of speed/quality. Runs on 12GB VRAM. Ollama: ollama run llama2:13b. Popular for fine-tuning custom models."
+    },
+    {
+      "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+      "url": "https://github.com/meta-llama/llama",
+      "snippet": "This release includes model weights and starting code for pre-trained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This repository is intended as a minimal example to load Llama 2 models and run inference. For more detailed examples leveraging Hugging Face, see llama-cookbook."
+    }
+  ]
+}

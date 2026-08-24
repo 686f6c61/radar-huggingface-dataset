@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Veda-Labs/Vedika-Vyom-31B-v2",
+  "slug": "veda-labs-vedika-vyom-31b-v2",
+  "author": "Veda-Labs",
+  "url": "https://huggingface.co/Veda-Labs/Vedika-Vyom-31B-v2",
+  "created_at": "2026-08-24T02:38:07.000Z",
+  "updated_at": "2026-08-24T04:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vedika_vyom",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578721586,
+  "storage_human": "62.6 GB",
+  "base_model": "vedalabs-tech/Vedika-Vyom-31B-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOOLS-droid724/Vedika-Vyom-31B-v2 - GitHub",
+      "url": "https://github.com/TOOLS-droid724/Vedika-Vyom-31B-v2",
+      "snippet": "Overview Vedika-Vyom-31B-v2 is a state-of-the-art multimodal AI model developed by Veda Labs in India. This model is capable of handling text and image inputs, generating high-quality text outputs with advanced reasoning capabilities. Built on a robust architecture, Vedika-Vyom-31B-v2 delivers exceptional performance across a wide range of tasks including text generation, coding, reasoning ..."
+    },
+    {
+      "title": "Veda-Labs/Vedika · Hugging Face",
+      "url": "https://huggingface.co/Veda-Labs/Vedika",
+      "snippet": "The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks."
+    },
+    {
+      "title": "Veda-Labs (Veda Labs) - Hugging Face",
+      "url": "https://huggingface.co/Veda-Labs",
+      "snippet": "User profile of Veda Labs on Hugging Face"
+    },
+    {
+      "title": "Veda Labs vedalabs-tech - GitHub",
+      "url": "https://github.com/vedalabs-tech",
+      "snippet": "@Vedika-advanced-AI Architecting the next frontier of AI. Founder at Veda Labs, building high-performance, enterprise-grade multimodal AI gateways - vedalabs-tech"
+    },
+    {
+      "title": "Veda Labs",
+      "url": "https://vedalabs.online/",
+      "snippet": "Veda Labs provides a secure, low-latency API infrastructure for integrating AI models into your applications. Experience seamless scalability, comprehensive usage analytics, and robust rate limiting with a strict zero-data-training policy."
+    }
+  ]
+}

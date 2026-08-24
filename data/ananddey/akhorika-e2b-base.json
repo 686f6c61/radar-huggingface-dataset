@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ananddey/akhorika-e2b-base",
+  "slug": "ananddey-akhorika-e2b-base",
+  "author": "ananddey",
+  "url": "https://huggingface.co/ananddey/akhorika-e2b-base",
+  "created_at": "2026-08-22T15:35:37.000Z",
+  "updated_at": "2026-08-23T07:25:29.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "as",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma",
+    "gemma-4",
+    "assamese",
+    "indic",
+    "continued-pretraining",
+    "cpt",
+    "akhorika",
+    "text-generation",
+    "as",
+    "en",
+    "base_model:ananddey/gemma-4-E2B-asm-init",
+    "base_model:finetune:ananddey/gemma-4-E2B-asm-init",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 325,
+  "trending_score": 0,
+  "parameters": 2688706115,
+  "parameters_human": "2.69B",
+  "storage_bytes": 5378829328,
+  "storage_human": "5.4 GB",
+  "base_model": "ananddey/gemma-4-E2B-asm-init",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ananddey/akhorika-e2b-base · Hugging Face",
+      "url": "https://huggingface.co/ananddey/akhorika-e2b-base",
+      "snippet": "Akhorika E2B Base (আখৰিকা) is a foundational 2.69B parameter language model (1.91B active text decoder parameters) continued-pretrained (CPT) on Assamese language corpora based on Google&#x27;s Gemma 4 E2B architecture."
+    },
+    {
+      "title": "akhorika-e2b-base API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ananddey/akhorika-e2b-base",
+      "snippet": "Deploy akhorika-e2b-base with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "GitHub - e2b-dev/E2B: Open-source, secure environment with real-world ...",
+      "url": "https://github.com/e2b-dev/e2b",
+      "snippet": "E2B is an open-source infrastructure that allows you to run AI-generated code in secure isolated sandboxes in the cloud. To start and control sandboxes, use our JavaScript SDK or Python SDK."
+    }
+  ]
+}

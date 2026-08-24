@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "gatilin/sparklm-31m-tinystories",
+  "slug": "gatilin-sparklm-31m-tinystories",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/sparklm-31m-tinystories",
+  "created_at": "2026-08-24T02:16:24.000Z",
+  "updated_at": "2026-08-24T02:17:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sparklm",
+    "text-generation",
+    "causal-lm",
+    "mla",
+    "mtp",
+    "custom-code",
+    "small-language-model",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34091520,
+  "parameters_human": "34.1M",
+  "storage_bytes": 136377928,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gatilin/sparklm-31m-v260624 · Hugging Face",
+      "url": "https://huggingface.co/gatilin/sparklm-31m-v260624",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gatilin/sparklm-31m-all-v270707 at main - Hugging Face",
+      "url": "https://huggingface.co/gatilin/sparklm-31m-all-v270707/tree/main",
+      "snippet": "gatilin / sparklm-31m-all-v270707 like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main sparklm-31m-all-v270707 Ctrl+K Ctrl+K 1 contributor History:2 commits gatilin Upload 112 files 4f5a6dc verifiedabout 5 hours ago 31m_attn_gqaUpload 112 filesabout 5 hours ago 31m_attn_mlaUpload 112 filesabout 5 hours ago 31m_attn_mla_mtpUpload 112 filesabout 5 hours ago ..."
+    },
+    {
+      "title": "TinyStories. The Small Language Model from Microsoft… | by Cobus ...",
+      "url": "https://cobusgreyling.medium.com/tinystories-4ce620e569a4",
+      "snippet": "When prompted to create its own stories, the small language model trained on TinyStories generated fluent narratives with perfect grammar. In Conclusion The hope with TinyStories is to facilitate the development, analysis, and research of language models, especially for low-resource or specialised domains, and shed light on the emergence of language capabilities in these models. A general ..."
+    },
+    {
+      "title": "GitHub - NonsonoNicola/TinyStories-LLM: Tiny transformer model for ...",
+      "url": "https://github.com/NonsonoNicola/TinyStories-LLM",
+      "snippet": "🧸 TinyStories LLM - A Miniature Language Model for Storytelling A 40M parameter decoder-only transformer trained on the TinyStories dataset, designed to generate short, coherent children&#x27;s stories. Inspired by the Mistral architecture, built and trained from scratch by a self-taught student exploring large language models."
+    },
+    {
+      "title": "AIAny - TinyStories",
+      "url": "https://aiany.app/item/tinystories",
+      "snippet": "Notes on usage and limitations Because the data is model-generated, it inherits biases and stylistic artifacts from the generator (GPT-3.5/GPT-4). Results obtained on TinyStories are most informative about sequence modeling and sample efficiency; claims about broad language understanding should be validated on more diverse corpora."
+    }
+  ]
+}

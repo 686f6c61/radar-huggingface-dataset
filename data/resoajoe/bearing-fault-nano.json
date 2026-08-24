@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "resoajoe/bearing-fault-nano",
+  "slug": "resoajoe-bearing-fault-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/bearing-fault-nano",
+  "created_at": "2026-08-23T21:28:08.000Z",
+  "updated_at": "2026-08-23T21:28:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio-classification",
+    "tiny-model",
+    "predictive-maintenance",
+    "edge-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391028,
+  "storage_human": "391028 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Driven Resilient Fault Diagnosis of Bearings in Rotating ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/22/7092",
+      "snippet": "Predictive maintenance is increasingly important in rotating machinery to prevent unexpected failures, reduce downtime, and improve operational efficiency. This study compares the efficacy of traditional machine learning (ML) and deep learning (DL) techniques in diagnosing bearing faults under varying load and speed conditions. Two classification tasks were conducted: a simpler three-class ..."
+    },
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "PDF AI-Driven Resilient Fault Diagnosis of Bearings in Rotating Machinery",
+      "url": "https://pdfs.semanticscholar.org/8f6a/746a20935613440a4b67e31ef9d846d2b361.pdf",
+      "snippet": "This model achieved 100% classification accuracy when studying constant load vibration signals of different bearings with rolling element fault, inner race fault, outer race fault, and no fault in a noisy environment."
+    },
+    {
+      "title": "From theory to industry: A survey of deep learning-enabled bearing ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197625030994",
+      "snippet": "Bearing fault diagnosis, critical for industrial equipment intelligent maintenance, enhances complex-condition equipment reliability, driving advances in intelligent detection. This paper systematically reviews deep learning-based research and applications via a \"data-model-application-challenges-prospects\" framework. Contributions in Artificial Intelligence (AI) include constructing digital ..."
+    },
+    {
+      "title": "SEGMN: A Lightweight Model for Bearing Fault Diagnosis on IoT Edge ...",
+      "url": "https://ieeexplore.ieee.org/document/11442911",
+      "snippet": "To address these issues and promote the engineering transformation of lightweight algorithms, this study proposes SEGMN, a robust and lightweight fault diagnosis model improved from MobileNet V2, specifically for edge-side bearing fault diagnosis on the K230 platform."
+    }
+  ]
+}

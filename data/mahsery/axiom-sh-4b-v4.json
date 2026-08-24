@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mahsery/axiom-sh-4b-v4",
+  "slug": "mahsery-axiom-sh-4b-v4",
+  "author": "mahsery",
+  "url": "https://huggingface.co/mahsery/axiom-sh-4b-v4",
+  "created_at": "2026-08-23T20:53:40.000Z",
+  "updated_at": "2026-08-23T20:53:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "shell",
+    "bash",
+    "cli",
+    "code",
+    "terminal",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-24T05:26:48.640Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "machariad123/Axiom-V4-Pro · Hugging Face",
+      "url": "https://huggingface.co/machariad123/Axiom-V4-Pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Cyb3rDudu/axiom: Personal fork of Maestro AI research platform ...",
+      "url": "https://github.com/Cyb3rDudu/axiom",
+      "snippet": "Personal fork of Maestro AI research platform with custom fixes and features - Cyb3rDudu/axiom"
+    },
+    {
+      "title": "Mystery AI Model Revealed to Be Xiaomi&#x27;s Following Suspicions It Was ...",
+      "url": "https://money.usnews.com/investing/news/articles/2026-03-17/a-mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster",
+      "snippet": "Xiaomi&#x27;s AI model team MiMo, run by former DeepSeek researcher Luo Fuli, on Wednesday said that Hunter Alpha was an \"early internal test build of MiMo-V2-Pro,\" a flagship model designed to serve ..."
+    },
+    {
+      "title": "AxiomProver: AI-Generated Mathematical Proofs (2026)",
+      "url": "https://wal.sh/research/axiomprover-2026/",
+      "snippet": "Overview of AxiomProver, an AI system that generates formally verified mathematical proofs, and its breakthrough papers from early 2026."
+    },
+    {
+      "title": "google/gemma-4-E4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    }
+  ]
+}

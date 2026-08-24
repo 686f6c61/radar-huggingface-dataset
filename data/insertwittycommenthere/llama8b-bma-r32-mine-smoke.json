@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "InsertWittyCommentHere/llama8b-bma-r32-mine-smoke",
+  "slug": "insertwittycommenthere-llama8b-bma-r32-mine-smoke",
+  "author": "InsertWittyCommentHere",
+  "url": "https://huggingface.co/InsertWittyCommentHere/llama8b-bma-r32-mine-smoke",
+  "created_at": "2026-08-24T09:11:04.000Z",
+  "updated_at": "2026-08-24T09:11:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352814616,
+  "storage_human": "353 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InsertWittyCommentHere/llama3.1-8b-bma-lora-r32 · Hugging Face",
+      "url": "https://huggingface.co/InsertWittyCommentHere/llama3.1-8b-bma-lora-r32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "Llama 3 The most capable openly available LLM to date. Meta Llama 3, a family of models developed by Meta Inc. are new state-of-the-art , available in both 8B and 70B parameter sizes (pre-trained or instruction-tuned). Llama 3 instruction-tuned models are fine-tuned and optimized for dialogue/chat use cases and outperform many of the available open-source chat models on common benchmarks. CLI ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "llama3.1:8b/model",
+      "url": "https://ollama.com/library/llama3.1:8b/blobs/667b0c1932bc",
+      "snippet": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes."
+    }
+  ]
+}

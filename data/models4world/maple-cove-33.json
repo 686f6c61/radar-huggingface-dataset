@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/maple-cove-33",
+  "slug": "models4world-maple-cove-33",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/maple-cove-33",
+  "created_at": "2026-08-24T09:36:44.000Z",
+  "updated_at": "2026-08-24T09:37:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "Interactive, animated architecture maps for any Hugging Face model — and whether it fits on your GPU."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "MAL360 — Model Library",
+      "url": "https://mal360.com/models.html",
+      "snippet": "Browse thousands of open AI models explained in plain English. Filter for edge-compatible models that run on your laptop. One-click install via Ollama."
+    }
+  ]
+}

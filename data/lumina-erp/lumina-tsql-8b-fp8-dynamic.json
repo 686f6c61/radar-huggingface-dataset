@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Lumina-ERP/lumina-tsql-8b-FP8-dynamic",
+  "slug": "lumina-erp-lumina-tsql-8b-fp8-dynamic",
+  "author": "Lumina-ERP",
+  "url": "https://huggingface.co/Lumina-ERP/lumina-tsql-8b-FP8-dynamic",
+  "created_at": "2026-08-23T21:25:09.000Z",
+  "updated_at": "2026-08-23T21:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-to-sql",
+    "t-sql",
+    "sql-server",
+    "erp",
+    "fp8",
+    "conversational",
+    "en",
+    "dataset:Lumina-ERP/erpbench-distribution",
+    "base_model:Lumina-ERP/lumina-tsql-8b",
+    "base_model:quantized:Lumina-ERP/lumina-tsql-8b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 9450004578,
+  "storage_human": "9.5 GB",
+  "base_model": "Lumina-ERP/lumina-tsql-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prophet 21 & Epicor Kinetic Consulting | Lumina ERP",
+      "url": "https://lumina-erp.com/",
+      "snippet": "LUMINA ERP A Houston engineering practice for Prophet 21 and Epicor Kinetic: implementation, data migration, integration, rescue, and managed support, plus the Lumina AI platform."
+    },
+    {
+      "title": "LF: Lumina + assets | RipperStore Forums",
+      "url": "https://forum.ripper.store/topic/78409/lf-lumina-assets",
+      "snippet": "LF: Lumina + assets Unsolved Booth Avatars booth asset 96 Posts 56 Posters 251.7k Views 131 Watching"
+    },
+    {
+      "title": "lumina-erp/DOCUMENTATION.md at main · capt-noah/lumina-erp",
+      "url": "https://github.com/capt-noah/lumina-erp/blob/main/DOCUMENTATION.md",
+      "snippet": "Lumina ERP - System, Modules & Design Documentation Welcome to the comprehensive system, modules, and design documentation for Lumina ERP. This document serves as the single source of truth for the styling, architecture, typography, layouts, and page-by-page component patterns used across the application."
+    },
+    {
+      "title": "Lumina | AI Inventory & Operations Hub",
+      "url": "https://www.get-lumina.com/",
+      "snippet": "The flexible planning system for modern brands. Transform chaos into clarity with AI-powered demand forecasting and inventory planning."
+    },
+    {
+      "title": "jetjodh/lumina-fp8 at main - Hugging Face",
+      "url": "https://huggingface.co/jetjodh/lumina-fp8/tree/main",
+      "snippet": "lumina-fp8 like 0 Model card FilesFiles and versions Community main lumina-fp8 1 contributor History:6 commits jetjodh Upload lumina_noprefix_scaled_fp8.safetensors 47b5f42 verified18 days ago .gitattributes Safe 1.52 kBinitial commit19 days ago lumina_fp8.safetensors Safe 2.61 GB LFS Upload lumina_fp8.safetensors19 days ago lumina_noprefix ..."
+    }
+  ]
+}

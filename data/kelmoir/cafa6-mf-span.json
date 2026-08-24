@@ -5,7 +5,7 @@
   "author": "Kelmoir",
   "url": "https://huggingface.co/Kelmoir/cafa6-mf-span",
   "created_at": "2026-08-21T07:13:52.000Z",
-  "updated_at": "2026-08-22T17:03:32.000Z",
+  "updated_at": "2026-08-23T21:55:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 33754946,
   "parameters_human": "33.8M",
-  "storage_bytes": 540177056,
-  "storage_human": "540 MB",
+  "storage_bytes": 1215398376,
+  "storage_human": "1.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "usernamebetter/testing-model",
+  "slug": "usernamebetter-testing-model",
+  "author": "usernamebetter",
+  "url": "https://huggingface.co/usernamebetter/testing-model",
+  "created_at": "2026-08-24T11:33:39.000Z",
+  "updated_at": "2026-08-24T11:47:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293189,
+  "storage_human": "19.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "What is AI Model Testing? - BrowserStack",
+      "url": "https://www.browserstack.com/guide/ai-model-testing",
+      "snippet": "Learn how to efficiently test AI-model-based apps for accuracy, performance, and reliability using proven techniques and automation tools."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "AI API Model Tester - UnoRouter",
+      "url": "https://unorouter.com/en/ai-api-model-tester",
+      "snippet": "Verify which model an API endpoint actually serves. Deterministic authenticity checks for Claude, GPT and Gemini, run in your browser."
+    },
+    {
+      "title": "AI Model Testing: Methods, Challenges & Best Practices",
+      "url": "https://testomat.io/blog/ai-model-testing/",
+      "snippet": "What is AI Model Testing? AI model testing is the process of evaluating a machine learning model&#x27;s accuracy, reliability, fairness, and robustness before and after deployment. It checks how the model behaves on unseen data and adversarial inputs, and confirms it meets functional and ethical requirements. Traditional software testing relies on pass/fail assertions. AI models produce answers ..."
+    }
+  ]
+}

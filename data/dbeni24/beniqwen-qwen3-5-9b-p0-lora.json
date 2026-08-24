@@ -5,7 +5,7 @@
   "author": "DBeni24",
   "url": "https://huggingface.co/DBeni24/BeniQwen-Qwen3.5-9B-P0-LoRA",
   "created_at": "2026-08-22T22:23:56.000Z",
-  "updated_at": "2026-08-22T22:30:23.000Z",
+  "updated_at": "2026-08-23T03:29:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

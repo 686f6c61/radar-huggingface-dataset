@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackUltra_32b",
   "created_at": "2026-08-03T01:04:46.000Z",
-  "updated_at": "2026-08-20T13:58:52.000Z",
+  "updated_at": "2026-08-23T17:33:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -63,7 +63,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 4500,
+  "downloads_30d": 4692,
   "trending_score": 0,
   "parameters": 32763876352,
   "parameters_human": "32.76B",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wrchen1/LatentMT-2.6B-eng-latn-zho-hans",
+  "slug": "wrchen1-latentmt-2-6b-eng-latn-zho-hans",
+  "author": "wrchen1",
+  "url": "https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-zho-hans",
+  "created_at": "2026-08-24T00:45:47.000Z",
+  "updated_at": "2026-08-24T00:45:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "machine-translation",
+    "research",
+    "text-generation",
+    "arxiv:2607.18618",
+    "base_model:ByteDance/Ouro-2.6B-Thinking",
+    "base_model:adapter:ByteDance/Ouro-2.6B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242311352,
+  "storage_human": "242 MB",
+  "base_model": "ByteDance/Ouro-2.6B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LatentMT/LatentMT-2.6B-eng-latn-zho-hans · Hugging Face",
+      "url": "https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-zho-hans",
+      "snippet": "LatentMT-2.6B-eng-latn-zho-hans This repository includes the LoRA adapter checkpoint for eng_Latn-zho_Hans from the paper LatentMT: Machine Translation with Latent Reasoning."
+    },
+    {
+      "title": "LatentMT: Machine Translation with Latent Reasoning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.18618",
+      "snippet": "We intro-duce LatentMT, the first systematic study of latent-reasoning LoopLMs for machine transla-tion. LatentMT adapts a small 2.6B-parameter backbone model with lightweight training. Across 32 translation directions spanning high-, mid-, and low-resource languages, LatentMT achieves performance comparable to models three to five times larger."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "Ouro: Looped Language Models",
+      "url": "https://ouro-llm.github.io/",
+      "snippet": "Our training pipeline is a carefully designed multi-stage process totaling 7.7T tokens of training data: Warmup: Initial model warmup phase Stable Training Phase 1: 3T tokens on standard pre-training data Model Branching: Creating 1.4B and 2.6B variants (via upcycling) Stable Training Phase 2: Additional 3T tokens for both model sizes CT Annealing: 1.4T tokens with chain-of-thought annealing ..."
+    }
+  ]
+}

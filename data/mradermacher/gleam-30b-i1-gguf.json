@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gleam-30B-i1-GGUF",
+  "slug": "mradermacher-gleam-30b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gleam-30B-i1-GGUF",
+  "created_at": "2026-08-24T12:42:55.000Z",
+  "updated_at": "2026-08-24T13:31:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ConicCat/Gleam-30B",
+    "base_model:quantized:ConicCat/Gleam-30B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 158943098112,
+  "storage_human": "158.9 GB",
+  "base_model": "ConicCat/Gleam-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Kai-30B-Instruct-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Kai-30B-Instruct-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF is a quantized version of Huihui AI&#x27;s 30 billion parameter coding-focused language model, maintained by mradermacher."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "huihui_ai/qwen3-coder-abliterated - ollama.com",
+      "url": "https://ollama.com/huihui_ai/qwen3-coder-abliterated",
+      "snippet": "Qwen3-Coder featuring the following key enhancements: Significant Performance, Long-context Capabilities, Agentic Coding."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "resoajoe/camera-motion-nano",
+  "slug": "resoajoe-camera-motion-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/camera-motion-nano",
+  "created_at": "2026-08-23T21:27:07.000Z",
+  "updated_at": "2026-08-24T03:09:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "video-classification",
+    "tiny-model",
+    "motion-vectors",
+    "edge-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393212,
+  "storage_human": "393212 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe/quality-gate-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/quality-gate-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "Awesome Nano Banana Pro - GitHub",
+      "url": "https://github.com/ZeroLu/awesome-nanobanana-pro",
+      "snippet": "🚀 An awesome list of curated Nano Banana pro prompts and examples. Your go-to resource for mastering prompt engineering and exploring the creative potential of the Nano banana pro (Nano banana 2) AI image model. - ZeroLu/awesome-nanobanana-pro"
+    },
+    {
+      "title": "AI Motion Capture from Video & Text | QuickMagic",
+      "url": "https://www.quickmagic.ai/",
+      "snippet": "AI Motion Capture from Video or Text Turn ordinary footage or text prompts into editable 3D animation data—without suits, markers, or a multi-camera studio."
+    },
+    {
+      "title": "Zero-Shot Personalized Camera Motion Control for Image-to-Video Synthesis",
+      "url": "https://arxiv.org/html/2504.09472v3",
+      "snippet": "To address this, we present a zero-shot diffusion-based framework for personalized camera motion control, enabling the transfer of cinematic movements from a single reference video onto a user-provided static image without requiring 3D data, predefined trajectories, or complex graphical interfaces."
+    }
+  ]
+}

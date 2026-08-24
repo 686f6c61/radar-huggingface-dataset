@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/pebble-dune-61",
+  "slug": "models4world-pebble-dune-61",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/pebble-dune-61",
+  "created_at": "2026-08-24T11:34:25.000Z",
+  "updated_at": "2026-08-24T11:36:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11226685309,
+  "storage_human": "11.2 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - Shoalstone/pebble: The world&#x27;s most efficient AI model.",
+      "url": "https://github.com/Shoalstone/pebble",
+      "snippet": "The world&#x27;s most efficient AI model. Contribute to Shoalstone/pebble development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

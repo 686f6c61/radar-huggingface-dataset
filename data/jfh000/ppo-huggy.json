@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jfh000/ppo-Huggy",
+  "slug": "jfh000-ppo-huggy",
+  "author": "jfh000",
+  "url": "https://huggingface.co/jfh000/ppo-Huggy",
+  "created_at": "2026-08-23T08:02:53.000Z",
+  "updated_at": "2026-08-23T08:03:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187497527,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kev3010/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Kev3010/ppo-Huggy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Forkits/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Forkits/ppo-Huggy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "runpeng/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/runpeng/ppo-Huggy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jennielees/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/jennielees/ppo-Huggy",
+      "snippet": "ppo-Huggy like 0 Reinforcement Learning ML-Agents TensorBoard ONNX Huggy deep-reinforcement-learning ML-Agents-Huggy Model card Files Files and versions Metrics Training metrics Community Use in ml-agents Edit model card ppo Agent playing Huggy Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

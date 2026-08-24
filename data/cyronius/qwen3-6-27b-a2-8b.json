@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Cyronius/Qwen3.6-27B-A2.8B",
+  "slug": "cyronius-qwen3-6-27b-a2-8b",
+  "author": "Cyronius",
+  "url": "https://huggingface.co/Cyronius/Qwen3.6-27B-A2.8B",
+  "created_at": "2026-08-24T15:36:07.000Z",
+  "updated_at": "2026-08-24T15:36:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moe",
+    "pruning",
+    "quantization",
+    "gguf",
+    "tool-calling",
+    "llama.cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen3.6-27B — Flagship-Level Coding in a 27B… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/qwen-qwen3-6-27b/",
+      "snippet": "Qwen3.6-27B is the first dense model in the Qwen3.6 family from Alibaba&#x27;s Qwen team, released April 22, 2026. The previously released 35B-A3B variant is a sparse MoE; this is a 27B fully-dense model."
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-heretic-v2-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-heretic-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-v2-GGUF",
+  "created_at": "2026-08-23T14:54:29.000Z",
+  "updated_at": "2026-08-23T17:55:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:Umranz/Qwen3.8-27B-heretic-v2",
+    "base_model:quantized:Umranz/Qwen3.8-27B-heretic-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905338880,
+  "storage_human": "187.9 GB",
+  "base_model": "Umranz/Qwen3.8-27B-heretic-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-Heretic-T10-BF16-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-T10-BF16-GGUF",
+      "snippet": "Qwen3.8-27B-Uncensored-Heretic-T10-BF16-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen-3.8-27B-Heretic-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen-3.8-27B-Heretic-GGUF like 4 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B-heretic — MLX builds for Apple Silicon - GitHub",
+      "url": "https://github.com/devrim-1283/qwen38-27b-heretic-mlx",
+      "snippet": "Eight MLX conversions of trohrbaugh/Qwen3.8-27B-heretic-ara, in two families — text-only and vision-capable — at four precisions each. The weights live on Hugging Face. This repo holds the conversion recipes, the benchmark harness, and the numbers behind the model cards."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

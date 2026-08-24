@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wrchen1/LatentMT-2.6B-eng-latn-lij-latn",
+  "slug": "wrchen1-latentmt-2-6b-eng-latn-lij-latn",
+  "author": "wrchen1",
+  "url": "https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-lij-latn",
+  "created_at": "2026-08-24T00:55:35.000Z",
+  "updated_at": "2026-08-24T00:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "machine-translation",
+    "research",
+    "text-generation",
+    "arxiv:2607.18618",
+    "base_model:ByteDance/Ouro-2.6B-Thinking",
+    "base_model:adapter:ByteDance/Ouro-2.6B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121200208,
+  "storage_human": "121 MB",
+  "base_model": "ByteDance/Ouro-2.6B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LatentMT/LatentMT-2.6B-eng-latn-lij-latn · Hugging Face",
+      "url": "https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-lij-latn",
+      "snippet": "LatentMT-2.6B-eng-latn-lij-latn This repository includes the LoRA adapter checkpoint for eng_Latn-lij_Latn from the paper LatentMT: Machine Translation with Latent Reasoning."
+    },
+    {
+      "title": "LatentMT: Machine Translation with Latent Reasoning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.18618",
+      "snippet": "We intro-duce LatentMT, the first systematic study of latent-reasoning LoopLMs for machine transla-tion. LatentMT adapts a small 2.6B-parameter backbone model with lightweight training. Across 32 translation directions spanning high-, mid-, and low-resource languages, LatentMT achieves performance comparable to models three to five times larger."
+    },
+    {
+      "title": "Best AI Models in 2026 - Complete Ranking | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-models-2026",
+      "snippet": "The definitive ranking of the best AI models in 2026. Compare 290+ LLMs by performance, pricing, and speed. Updated hourly. See who is #1 right now."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

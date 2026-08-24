@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "amechan458/kagehira-14b-Q4",
+  "slug": "amechan458-kagehira-14b-q4",
+  "author": "amechan458",
+  "url": "https://huggingface.co/amechan458/kagehira-14b-Q4",
+  "created_at": "2026-08-23T16:44:15.000Z",
+  "updated_at": "2026-08-23T18:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 17976220608,
+  "storage_human": "18.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best 14B Coding Models (2026): Ranked by HumanEval + VRAM",
+      "url": "https://localaimaster.com/blog/best-14b-coding-models",
+      "snippet": "The best 14B-class local coding model in 2026 is Qwen2.5-Coder-14B-Instruct, which scores 89.6% on HumanEval (87.2% on the harder HumanEval+) and runs in about 9-10 GB of VRAM at Q4_K_M — it out-codes every other model in its weight class and even rivals 30B+ models. Below it, Microsoft&#x27;s Phi-4 (14B) is the best all-rounder if you also want strong reasoning and math, while DeepSeek-Coder-V2 ..."
+    },
+    {
+      "title": "NousResearch/Hermes-4-14B · Hugging Face",
+      "url": "https://huggingface.co/NousResearch/Hermes-4-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Local LLM VRAM Requirements 2026: Exact Numbers for 7B, 14B, 32B, 70B",
+      "url": "https://mustafa.net/llm-vram-requirements-2026/",
+      "snippet": "Exact VRAM requirements for local LLMs in 2026 — 7B, 14B, 32B and 70B models at Q4, Q5, Q8 and FP16, measured on real GPUs. Find the cheapest card that runs your model."
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "The full Q4 model is 52GB, so you need ~64GB unified memory or a multi-GPU setup. On Mac Studio with 96GB+ this is the most capable Qwen coder you can run locally."
+    }
+  ]
+}

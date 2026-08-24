@@ -5,7 +5,7 @@
   "author": "Aye10032",
   "url": "https://huggingface.co/Aye10032/Qwen3-0.6B-ASR-Refiner",
   "created_at": "2026-08-22T11:08:07.000Z",
-  "updated_at": "2026-08-22T11:11:20.000Z",
+  "updated_at": "2026-08-23T01:11:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 178,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mr-mc/flowjudge-dialam-qwen3-0.6b-v1-n2048",
+  "slug": "mr-mc-flowjudge-dialam-qwen3-0-6b-v1-n2048",
+  "author": "mr-mc",
+  "url": "https://huggingface.co/mr-mc/flowjudge-dialam-qwen3-0.6b-v1-n2048",
+  "created_at": "2026-08-23T07:41:51.000Z",
+  "updated_at": "2026-08-23T07:41:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "qlora",
+    "argument-mining",
+    "dialam",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51845111,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastFlowLM/Qwen3-0.6B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Qwen3-0.6B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "GitHub - flowaicom/flow-judge: Code for evaluating with Flow-Judge-v0.1 ...",
+      "url": "https://github.com/flowaicom/flow-judge",
+      "snippet": "Flow-Judge-v0.1 is an open, small yet powerful language model evaluator trained on a synthetic dataset containing LLM system evaluation data by Flow AI. You can learn more about the unique features of our model in the technical report."
+    },
+    {
+      "title": "Flow Judge: Language Model for Evaluations | Flow AI",
+      "url": "https://flow-ai.com/judge",
+      "snippet": "Discover Flow Judge, an open-source, compact (3.8B) language model for precise and customizable LLM system evaluations. Achieve high performance with flexible, domain-specific evaluations while reducing costs and complexity."
+    }
+  ]
+}

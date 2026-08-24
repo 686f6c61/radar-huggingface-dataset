@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Scarlett-v1.0-27B-GGUF",
+  "slug": "mradermacher-dark-scarlett-v1-0-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-27B-GGUF",
+  "created_at": "2026-08-24T10:48:19.000Z",
+  "updated_at": "2026-08-24T11:03:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen 3.6",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "en",
+    "base_model:ReadyArt/Dark-Scarlett-v1.0-27B",
+    "base_model:quantized:ReadyArt/Dark-Scarlett-v1.0-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780445472,
+  "storage_human": "190.8 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-v1.0-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark-Scarlett-v1.0-27B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-27B-GGUF/blob/main/Dark-Scarlett-v1.0-27B-Q6_K.gguf",
+      "snippet": "Instructions to use ReadyArt/Dark-Scarlett-v1.-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use ReadyArt/Dark-Scarlett-v1.-27B-GGUF with llama-cpp-python:"
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://knowyourmodel.ai/models/huggingface%3AReadyArt%2FDark-Scarlett-v1.0-27B-GGUF",
+      "snippet": "View entity details and skills Home Models Huggingface%3AReadyArt%2FDark-Scarlett-v1.-27B-GGUF Entities huggingface/huggingface:ReadyArt/Dark-Scarlett-v1.-27B-GGUF"
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    }
+  ]
+}

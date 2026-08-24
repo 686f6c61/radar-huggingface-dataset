@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jackrong/Qwen-Tool-Calling-Template-Fix",
+  "slug": "jackrong-qwen-tool-calling-template-fix",
+  "author": "Jackrong",
+  "url": "https://huggingface.co/Jackrong/Qwen-Tool-Calling-Template-Fix",
+  "created_at": "2026-08-22T09:44:25.000Z",
+  "updated_at": "2026-08-24T02:43:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen",
+    "qwen3.8",
+    "jinja",
+    "chat-template",
+    "tool-calling",
+    "coding-agents",
+    "llama-cpp",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "froggeric/Qwen-Fixed-Chat-Templates · Hugging Face",
+      "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
+      "snippet": "Update History & Changelog 2026-08-16 Update (v22.1): The Qwen 3.8 Update (Bounded Reasoning Defaults, Inline Chat Tags, and Diagnostic Utility). Full Qwen 3.8 Support: Single drop-in template covering all Qwen 3.5, 3.6, and 3.8 model variants (Qwen3.8-2.4T-A95B, Qwen3.8-27B). Default reasoning_effort to medium: Replaced the unsafe xhigh default with medium (zero injected tokens). Eliminates ..."
+    },
+    {
+      "title": "Jackrong (Jackrong) - Hugging Face",
+      "url": "https://huggingface.co/Jackrong/collections",
+      "snippet": "User profile of Jackrong on Hugging Face This collection features the advanced Qwopus3.6 series of multimodal large models, which are fine-tuned from the Qwen3.6 base models with a focus on e"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio:Function Calling",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-function-calling",
+      "snippet": "How to implement tool calling by using Function Calling,Alibaba Cloud Model Studio:Large Language Models (LLMs) cannot access real-time data or external systems. Function Calling enables models to call external tools, such as APIs, databases, and user-defined functions. This allows ..."
+    },
+    {
+      "title": "GitHub - abysslover/qwen36_tool_calling_failure: Qwen Series Chat ...",
+      "url": "https://github.com/abysslover/qwen36_tool_calling_failure",
+      "snippet": "Qwen Series Chat Template. Contribute to abysslover/qwen36_tool_calling_failure development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

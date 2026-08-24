@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Rabrie10/BatterySwapAI2026-MR",
+  "slug": "rabrie10-batteryswapai2026-mr",
+  "author": "Rabrie10",
+  "url": "https://huggingface.co/Rabrie10/BatterySwapAI2026-MR",
+  "created_at": "2026-08-17T17:41:02.000Z",
+  "updated_at": "2026-08-23T23:57:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84092442,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirmir1373/batteryswapai2026 · Hugging Face",
+      "url": "https://huggingface.co/amirmir1373/batteryswapai2026",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "batteryswapaichallenge/BatterySwapAI2026-Example · Hugging Face",
+      "url": "https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-Example",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZRPATeam/BatterySwapAI-2026",
+      "url": "https://github.com/ZRPATeam/BatterySwapAI-2026/",
+      "snippet": "BatterySwapAI 2026 predicts the Remaining Useful Life (RUL) of IoT battery sensors deployed across 20 Norwegian buildings using LightGBM with building-type calibration and 90% confidence intervals. It optimises daily field-worker routes via an OR-Tools Vehicle Routing Problem solver to minimise battery downtime costs. The recommended AGGRESSIVE scheduling strategy reduces total operational ..."
+    },
+    {
+      "title": "BatterySwapAI 2026 - Frequently Asked Questions - nora.ai",
+      "url": "https://www.nora.ai/competitions/batteryswapai/batteryswapai-faq.html",
+      "snippet": "About the Challenge What is the BatterySwapAI 2026 Challenge? A data science competition hosted by NORA, with data provided by Soundsensing. Participants build a system that (1) predicts the remaining useful life of replaceable batteries in IoT condition-monitoring sensors deployed across Norwegian commercial buildings, and (2) generates an efficient work plan for when and in what order to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

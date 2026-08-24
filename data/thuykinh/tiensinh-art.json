@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "thuykinh/tiensinh-art",
+  "slug": "thuykinh-tiensinh-art",
+  "author": "thuykinh",
+  "url": "https://huggingface.co/thuykinh/tiensinh-art",
+  "created_at": "2026-08-23T12:18:08.000Z",
+  "updated_at": "2026-08-23T12:18:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 5558676421,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "FREE online image generator and model hosting site! | Tensor.Art",
+      "url": "https://tensor.art/",
+      "snippet": "AI model sharing platform, online run models to generate image,viode and traning model for free. Your can upload and download models, include..."
+    },
+    {
+      "title": "GitHub - tiensinh-art/embebe",
+      "url": "https://github.com/tiensinh-art/embebe",
+      "snippet": "Contribute to tiensinh-art/embebe development by creating an account on GitHub."
+    }
+  ]
+}

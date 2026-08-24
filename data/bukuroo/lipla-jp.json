@@ -5,7 +5,7 @@
   "author": "bukuroo",
   "url": "https://huggingface.co/bukuroo/Lipla-jp",
   "created_at": "2026-08-09T11:18:05.000Z",
-  "updated_at": "2026-08-15T06:12:00.000Z",
+  "updated_at": "2026-08-23T06:06:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 218880106,
-  "storage_human": "219 MB",
+  "storage_bytes": 299172396,
+  "storage_human": "299 MB",
   "base_model": null,
   "formats": [
     "onnx"

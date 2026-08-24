@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ozanhs/motif_lora_test",
+  "slug": "ozanhs-motif_lora_test",
+  "author": "ozanhs",
+  "url": "https://huggingface.co/ozanhs/motif_lora_test",
+  "created_at": "2026-08-21T02:32:55.000Z",
+  "updated_at": "2026-08-23T05:02:38.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 840676422,
+  "storage_human": "841 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maryzhang/motif_lora · Hugging Face",
+      "url": "https://huggingface.co/maryzhang/motif_lora",
+      "snippet": "Chinese Porcelain Motif LoRA Model Details Model Description This is a LoRA (Low-Rank Adaptation) fine-tuned version of runwayml/stable-diffusion-v1-5 specifically trained to generate Chinese porcelain motif patterns. The model specializes in creating intricate line-based decorative patterns characteristic of traditional Chinese porcelain artwork."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,038 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "MoTIF: An end-to-end multimodal road traffic scene understanding ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772424725000678",
+      "snippet": "Through integration of low-rank adaptation (LoRA) and prompt fine-tuning as parameter-efficient fine-tuning strategies, we develop the multimodal road traffic scene understanding foundation model (MoTIF), which establishes cross-modal alignment between visual patterns and textual semantics."
+    }
+  ]
+}

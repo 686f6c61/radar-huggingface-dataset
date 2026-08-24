@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "adarshraj07/Bharat-Omni-3B",
+  "slug": "adarshraj07-bharat-omni-3b",
+  "author": "adarshraj07",
+  "url": "https://huggingface.co/adarshraj07/Bharat-Omni-3B",
+  "created_at": "2026-08-24T02:43:15.000Z",
+  "updated_at": "2026-08-24T02:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bharat",
+    "india",
+    "indic",
+    "omni",
+    "lora",
+    "bhojpuri",
+    "hindi",
+    "thinker",
+    "hi",
+    "bho",
+    "mai",
+    "mag",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "ur",
+    "as",
+    "or",
+    "en",
+    "base_model:Qwen/Qwen2.5-Omni-3B",
+    "base_model:adapter:Qwen/Qwen2.5-Omni-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12652328,
+  "storage_human": "13 MB",
+  "base_model": "Qwen/Qwen2.5-Omni-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adarshraj07 (Adarsh Raj) - Hugging Face",
+      "url": "https://huggingface.co/adarshraj07",
+      "snippet": "User profile of Adarsh Raj on Hugging Face"
+    },
+    {
+      "title": "adarshraj07/bharatai-veda-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/adarshraj07/bharatai-veda-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI4Bharat Models",
+      "url": "https://models.ai4bharat.org/",
+      "snippet": "Indic BERT IndicBERT is a multilingual ALBERT model trained on large-scale corpora, covering 12 major Indian languages: Assamese, Bengali, English, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu. IndicBERT has much less parameters than other public models like mBERT and XLM-R while it still manages to give state of the art performance on several tasks."
+    },
+    {
+      "title": "bharath.ai — India&#x27;s Premier AI Chronicle",
+      "url": "https://www.bharath.ai/",
+      "snippet": "bharath.ai — India&#x27;s AI news, model rankings, Indic language benchmarks, startup funding tracker, cricket AI predictions, and entertainment analytics. Daily coverage of India&#x27;s artificial intelligence ecosystem."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

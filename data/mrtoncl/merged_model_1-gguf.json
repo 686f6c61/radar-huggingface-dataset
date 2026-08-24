@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mrtoncl/merged_model_1-gguf",
+  "slug": "mrtoncl-merged_model_1-gguf",
+  "author": "mrtoncl",
+  "url": "https://huggingface.co/mrtoncl/merged_model_1-gguf",
+  "created_at": "2026-08-24T08:04:40.000Z",
+  "updated_at": "2026-08-24T08:06:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "turkish",
+    "roleplay",
+    "tr",
+    "base_model:Sao10K/L3-8B-Stheno-v3.2",
+    "base_model:merge:Sao10K/L3-8B-Stheno-v3.2",
+    "base_model:ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1",
+    "base_model:merge:ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 13461506560,
+  "storage_human": "13.5 GB",
+  "base_model": "ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1, Sao10K/L3-8B-Stheno-v3.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF格式开源模型大全：轻量级模型资源合集",
+      "url": "https://model.aibase.com/zh/tag/GGUF%E6%A0%BC%E5%BC%8F",
+      "snippet": "本页面汇聚超200个经过社区精选验证的GGUF格式开源中小模型。模型参数量小，推理速度快，资源占用低，适用于NLP、CV等多领域。兼容PyTorch、TensorFlow等多种框架，支持本地及移动端部署。可一键下载，持续更新，快来挑选适合您的模型!"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    }
+  ]
+}

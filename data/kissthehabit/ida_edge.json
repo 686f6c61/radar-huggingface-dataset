@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "KissTheHabit/IDA_Edge",
+  "slug": "kissthehabit-ida_edge",
+  "author": "KissTheHabit",
+  "url": "https://huggingface.co/KissTheHabit/IDA_Edge",
+  "created_at": "2026-05-25T15:55:11.000Z",
+  "updated_at": "2026-08-24T07:15:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "ida-family",
+    "ida-lattice",
+    "causal-lm",
+    "edge-body",
+    "paired-body",
+    "governed-memory",
+    "recurrent-state",
+    "local-attention",
+    "cognitive-routing",
+    "text-generation",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1303472698804,
+  "storage_human": "1303.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KissTheHabit/IDA_Edge · Hugging Face",
+      "url": "https://huggingface.co/KissTheHabit/IDA_Edge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KissTheHabit/IDA_Edge · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/KissTheHabit/IDA_Edge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KissTheHabit/IDA_AI · Hugging Face",
+      "url": "https://huggingface.co/KissTheHabit/IDA_AI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KissTheHabit/IDA_Edge at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/KissTheHabit/IDA_Edge/tree/main",
+      "snippet": "Datasets: KissTheHabit / IDA_Edge like 0 Dataset card FilesFiles and versions xet Community main IDA_Edge 10.7 MB 1 contributor History:1075 commits KissTheHabit Upload tensorboard/0.0.0.1 32bd6bd verified12 days ago tensorboardUpload tensorboard/0.0.0.112 days ago .gitattributes Safe 2.5 kBinitial commit2 months ago"
+    },
+    {
+      "title": "KissTheHabit/IDA_Edge API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KissTheHabit/IDA_Edge",
+      "snippet": "Deploy KissTheHabit/IDA_Edge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

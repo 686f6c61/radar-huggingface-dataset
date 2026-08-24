@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ganesh714/arq_m1_chairs_think_Q7b_C",
+  "slug": "ganesh714-arq_m1_chairs_think_q7b_c",
+  "author": "ganesh714",
+  "url": "https://huggingface.co/ganesh714/arq_m1_chairs_think_Q7b_C",
+  "created_at": "2026-08-24T14:18:58.000Z",
+  "updated_at": "2026-08-24T14:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ganesh714/arq_m1_chairs · Hugging Face",
+      "url": "https://huggingface.co/ganesh714/arq_m1_chairs",
+      "snippet": "ganesh714 / arq_m1_chairs like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ELISETTI VEERA VENKATA GANESH ganesh714 - GitHub",
+      "url": "https://github.com/ganesh714/",
+      "snippet": "Activity overview Contributed to ganesh714/arc, ganesh714/aus_intranet, ganesh714/lattice and 59 other repositories Code review Issues Pull requests 100% Commits"
+    },
+    {
+      "title": "GitHub - ganesh714/loom",
+      "url": "https://github.com/ganesh714/loom",
+      "snippet": "Loom is a high-performance, professional-grade diagramming application built with React and TypeScript. It features a modern, \"Figma-like\" interface designed for rapid prototyping, flowcharting, and collaboration."
+    },
+    {
+      "title": "arq_m1_chairs_DS_r1_Q7 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ganesh714/arq_m1_chairs_DS_r1_Q7",
+      "snippet": "Run arq_m1_chairs_DS_r1_Q7 with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

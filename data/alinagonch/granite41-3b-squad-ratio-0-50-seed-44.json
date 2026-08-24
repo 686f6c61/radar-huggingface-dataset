@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.50-seed-44",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-50-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-44",
+  "created_at": "2026-08-24T15:34:07.000Z",
+  "updated_at": "2026-08-24T15:34:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.90-seed-44 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-44",
+      "snippet": "Instructions to use AlinaGonch/granite41-3b-squad-ratio-.90-seed-44 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.30-r64 at main",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.30-r64/tree/main",
+      "snippet": "Instructions to use AlinaGonch/granite41-3b-squad-ratio-.30-r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Granite 4.1 3B — 3B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/granite-4.1-3b",
+      "snippet": "Granite 4.1 3B: 3B parameters, 512K context, chat, coding, tool_use, multilingual. 15 benchmarks, 6 quantizations. VRAM requirements, speed estimates, and Ollama ..."
+    },
+    {
+      "title": "Granite-4.1-3B: Private 3B LLM for Ops Automation",
+      "url": "https://llm.co/llms/granite-4-1-3b",
+      "snippet": "3B instruction-tuned model for private ops automation, tool-calling workflows, and embedded AI agents in data-sensitive environments. Granite-4.1-3B is a 3.4B-parameter instruct model from IBM, finetuned with open-source and synthetic data for tool calling, RAG, code tasks, and multilingual support (12 languages)."
+    },
+    {
+      "title": "Granite-4.1-3B: Open-Source 3B LLM for Tool-Calling ... - dev.co",
+      "url": "https://dev.co/ai/llms/granite-4-1-3b",
+      "snippet": "Granite-4.1-3B is a permissively-licensed 3.4B parameter language model optimized for instruction-following, function calling, and multilingual chat. Ideal for private AI agents and business applications. Learn capabilities, deployment options, and commercial licensing."
+    }
+  ]
+}

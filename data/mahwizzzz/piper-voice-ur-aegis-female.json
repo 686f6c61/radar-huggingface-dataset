@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mahwizzzz/piper-voice-ur-aegis-female",
+  "slug": "mahwizzzz-piper-voice-ur-aegis-female",
+  "author": "mahwizzzz",
+  "url": "https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female",
+  "created_at": "2026-07-04T12:22:04.000Z",
+  "updated_at": "2026-08-24T09:05:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "onnx",
+    "piper",
+    "tts",
+    "urdu",
+    "text-to-speech",
+    "accessibility",
+    "ur",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63515589,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mahwizzzz/piper-voice-ur-aegis-female · Hugging Face",
+      "url": "https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mahwizzzz/piper-voice-ur-aegis-female at main - Hugging Face",
+      "url": "https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Piper Voices (Full List) - GladeCore",
+      "url": "https://docs.gladecore.com/files/piper-voice-models",
+      "snippet": "Complete list of Piper voice models with ONNX and config links"
+    },
+    {
+      "title": "Distilling OmniVoice into Aegis: Female Urdu TTS at 61 MB ONNX for CPU ...",
+      "url": "https://www.plushcap.com/content/huggingface/blog/huggingface-distilling-omnivoice-into-aegis-female-urdu-tts-at-61-mb-onnx-for-cpu-inference",
+      "snippet": "Aegis is a female Urdu text-to-speech (TTS) model designed for CPU inference, developed through data level distillation, which compresses the capabilities of a large multilingual system, OmniVoice, into a smaller, practical format suitable for offline use. The model, approximately 61 MB in ONNX format, addresses the scarcity of female Urdu TTS options by using a zero-shot TTS model to generate ..."
+    },
+    {
+      "title": "Piper TTS — Piper AI Voice Generator (49 Voices) | TTS.ai",
+      "url": "https://tts.ai/voices/piper/",
+      "snippet": "A fast, CPU-only neural TTS engine from Rhasspy that runs entirely offline, even on a Raspberry Pi. Try Piper text-to-speech free on TTS.ai — generate and download natural Piper speech online."
+    }
+  ]
+}

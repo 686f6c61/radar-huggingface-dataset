@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kindadodgy/qwen38-256k-on-16gb",
+  "slug": "kindadodgy-qwen38-256k-on-16gb",
+  "author": "Kindadodgy",
+  "url": "https://huggingface.co/Kindadodgy/qwen38-256k-on-16gb",
+  "created_at": "2026-08-24T15:39:30.000Z",
+  "updated_at": "2026-08-24T15:40:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen",
+    "gguf",
+    "quantization",
+    "long-context",
+    "llama-cpp",
+    "vulkan",
+    "amd",
+    "16gb",
+    "benchmark",
+    "selective-attention",
+    "text-generation",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:finetune:unsloth/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K context window. CoWorkBench: In-house cowork benchmark for evaluating long-horizon tasks across computer science, finance, law, medical, and other productivity domains."
+    },
+    {
+      "title": "Flagship-Class on 16GB VRAM: Run Qwen3.8-27B Locally on an RTX 5060 Ti",
+      "url": "https://blog.margrop.net/en/post/qwen38-27b-local-deploy-5060ti-16g/",
+      "snippet": "Qwen3.8-27B, open-sourced on August 14, 2026, is the strongest local model in the 27B class: natively multimodal (images and video in), a 262K context window, agentic coding scores roughly 3x its predecessor, and several benchmarks ahead of Claude Opus 4.6 Max — all under the Apache 2.0 license. Best of all, it is a dense pocket rocket: quantized, it fits entirely inside an RTX 5060 Ti 16GB ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark",
+      "url": "https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide",
+      "snippet": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark On August 14, 2026, Alibaba&#x27;s Qwen team released the weights of Qwen3.8-27B under Apache 2.0 on Hugging Face - making it the most exciting local model in the 27B class right now. A dense, natively multimodal vision-language model (text, image, video) with a native context of 262,144 tokens (extendable to 1M via YaRN), a built-in ..."
+    },
+    {
+      "title": "GitHub - PascalAI2024/qwen38-27b-quant-bench: Independent KL-divergence ...",
+      "url": "https://github.com/PascalAI2024/qwen38-27b-quant-bench",
+      "snippet": "Qwen3.8-27B is a 27.32B dense vision-language model with a hybrid Gated DeltaNet / attention architecture. The published GGUF ladders stop at IQ2_XXS (~9.0 GB). This repo pushes below that, and — more usefully — measures which knobs actually matter when the constraint is 16 GB of VRAM rather than raw model quality."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    }
+  ]
+}

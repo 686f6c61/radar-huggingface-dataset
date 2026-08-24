@@ -5,7 +5,7 @@
   "author": "Adnan666",
   "url": "https://huggingface.co/Adnan666/whisper-small-pashto-run11-cv24only",
   "created_at": "2026-08-14T18:48:29.000Z",
-  "updated_at": "2026-08-22T15:33:56.000Z",
+  "updated_at": "2026-08-24T05:36:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1321,
+  "downloads_30d": 1696,
   "trending_score": 0,
   "parameters": 241734912,
   "parameters_human": "241.7M",
-  "storage_bytes": 139786533744,
-  "storage_human": "139.8 GB",
+  "storage_bytes": 243901224160,
+  "storage_human": "243.9 GB",
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"

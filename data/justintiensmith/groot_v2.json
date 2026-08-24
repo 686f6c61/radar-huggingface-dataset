@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justintiensmith/groot_v2",
+  "slug": "justintiensmith-groot_v2",
+  "author": "justintiensmith",
+  "url": "https://huggingface.co/justintiensmith/groot_v2",
+  "created_at": "2026-08-23T15:32:32.000Z",
+  "updated_at": "2026-08-23T15:33:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:justintiensmith/VLA_Reasoning_Training_Dataset_1200_2cam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576223736,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace. VLM backbone changed from vendored Eagle, nvidia/Eagle-Block2A-2B-v2, to nvidia/Cosmos-Reason2-2B via Qwen3-VL."
+    },
+    {
+      "title": "The Virtual World That Teaches Robots - blog.pebblous.ai",
+      "url": "https://blog.pebblous.ai/project/AgenticAI/isaac-groot/en/",
+      "snippet": "If GPT is the foundation model for language AI, GR00T is the foundation model for humanoid robots. NVIDIA unveiled GR00T N1 at GTC 2025 in March. GR00T stands for Generalist Robot 00 Technology — pronounced \"Groot,\" like the Marvel character. The goal: a single model that adapts to diverse humanoid bodies and tasks. GR00T N1 model overview."
+    },
+    {
+      "title": "Isaac GR00T - Generalist Robot 00 Technology | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/isaac/gr00t",
+      "snippet": "NVIDIA Isaac GR00T Generalist Robot 00 Technology NVIDIA Isaac™ GR00T is an open reference platform for general-purpose humanoid robots that enables developers to more efficiently build, train, test, and deploy AI-powered robots. It comprises open data and data pipelines, an open robot foundation model, simulation frameworks, middleware, CUDA-X accelerated runtime libraries, and NVIDIA ..."
+    },
+    {
+      "title": "nvidia/GR00T-N1-2B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/GR00T-N1-2B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "justintiensmith (Justin Tien-Smith) - Hugging Face",
+      "url": "https://huggingface.co/justintiensmith",
+      "snippet": "User profile of Justin Tien-Smith on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alexsuw/smolvla-libero-fewshot-lora-n1",
+  "slug": "alexsuw-smolvla-libero-fewshot-lora-n1",
+  "author": "alexsuw",
+  "url": "https://huggingface.co/alexsuw/smolvla-libero-fewshot-lora-n1",
+  "created_at": "2026-08-23T21:24:53.000Z",
+  "updated_at": "2026-08-23T21:28:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "smolvla",
+    "libero",
+    "robotics",
+    "imitation-learning",
+    "vision-language-action",
+    "few-shot",
+    "lora",
+    "dataset:nvidia/LIBERO_LeRobot_v3",
+    "base_model:alexsuw/smolvla-libero-fewshot-seen-expert-100k",
+    "base_model:adapter:alexsuw/smolvla-libero-fewshot-seen-expert-100k",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11131491912,
+  "storage_human": "11.1 GB",
+  "base_model": "alexsuw/smolvla-libero-fewshot-seen-expert-100k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - goelshivam1210/smolvla: training smolvla on libero dataset",
+      "url": "https://github.com/goelshivam1210/smolvla",
+      "snippet": "Fine-tuning SmolVLA (450M param Vision-Language-Action model) on the LIBERO robot manipulation benchmark using LoRA, with evaluation in simulation. Built for the SmolVLA training on LIBERO."
+    },
+    {
+      "title": "GitHub - wycliffeoleti/smolVLA: SmolVLA 450M VLA fine-tuning on LIBERO ...",
+      "url": "https://github.com/wycliffeoleti/smolVLA",
+      "snippet": "SmolVLA: Vision-Language-Action Fine-Tuning on Consumer Hardware End-to-end fine-tuning of a 450M-parameter Vision-Language-Action model (SmolVLA) for robotic pick-and-place on a single RTX 4060 (8GB VRAM) using LeRobot."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "SmolVLA · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/smolvla",
+      "snippet": "SmolVLA is a base model, so fine-tuning on your own data is required for optimal performance in your setup. We recommend recording ~50 episodes of your task as a starting point."
+    },
+    {
+      "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot ...",
+      "url": "https://huggingface.co/blog/smolvla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

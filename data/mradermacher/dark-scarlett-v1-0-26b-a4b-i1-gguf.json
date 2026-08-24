@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Scarlett-v1.0-26B-A4B-i1-GGUF",
+  "slug": "mradermacher-dark-scarlett-v1-0-26b-a4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-26B-A4B-i1-GGUF",
+  "created_at": "2026-08-23T05:50:06.000Z",
+  "updated_at": "2026-08-23T09:00:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "en",
+    "base_model:ReadyArt/Dark-Scarlett-v1.0-26B-A4B",
+    "base_model:quantized:ReadyArt/Dark-Scarlett-v1.0-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 300894356256,
+  "storage_human": "300.9 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-v1.0-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Dark-Scarlett-v1.0-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-26B-A4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Dark-Scarlett-v1.0-26B-A4B at main - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-26B-A4B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dark-Scarlett-v0.3-26B-A4B-GGUF - Ok Tech Masters",
+      "url": "https://oktechmasters.org/ai_models/dark-scarlett-v0-3-26b-a4b-gguf/",
+      "snippet": "26B open-weight model from ReadyArt for local AI inference. Run Dark-Scarlett-v0.3-26B-A4B-GGUF locally with Ollama: ollama pull dark-scarlett-v0.3-26b-a4b:26b Minimum 24GB RAM.…"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "ReadyArt/Dark-Scarlett-v0.3-26B-A4B-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/readyart-dark-scarlett-v0-3-26b-a4b-gguf",
+      "snippet": "Dark-Scarlett-v0.3-26B-A4B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Dark-Scarlett-v0.3-26B-A4B-GGUF on GitHub to install."
+    }
+  ]
+}

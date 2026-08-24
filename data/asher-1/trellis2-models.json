@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Asher-1/Trellis2-models",
+  "slug": "asher-1-trellis2-models",
+  "author": "Asher-1",
+  "url": "https://huggingface.co/Asher-1/Trellis2-models",
+  "created_at": "2026-08-24T03:15:39.000Z",
+  "updated_at": "2026-08-24T03:39:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303129600,
+  "parameters_human": "303.1M",
+  "storage_bytes": 25598240608,
+  "storage_human": "25.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TRELLIS.2: Native and Compact Structured Latents for 3D Generation",
+      "url": "https://microsoft.github.io/TRELLIS.2/",
+      "snippet": "Our 4B-parameter model generates high-resolution fully textured assets with exceptional fidelity and efficiency with vanilla DiTs. * Total generation time (shape + material). ** Tested with NVIDIA H100 GPU. At the core is the native and compact structured latents, which push the frontiers of fidelity and compactness at the same time."
+    },
+    {
+      "title": "TRELLIS-2: Free AI Image to 3D Model Generator | Microsoft Open-Source ...",
+      "url": "https://trellis-2.org/",
+      "snippet": "Transform Any Image to 3D — Powered by Microsoft AI TRELLIS-2 generates professional high-fidelity 3D models with PBR materials in seconds. The most advanced open-source image-to-3D AI model with 4 billion parameters."
+    },
+    {
+      "title": "TRELLIS.2/trellis2/models at main · microsoft/TRELLIS.2",
+      "url": "https://github.com/microsoft/TRELLIS.2/tree/main/trellis2/models",
+      "snippet": "Native and Compact Structured Latents for 3D Generation - microsoft/TRELLIS.2"
+    },
+    {
+      "title": "GitHub - microsoft/TRELLIS.2: Native and Compact Structured Latents for ...",
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "snippet": "trellis2.mp4 (Compressed version due to GitHub size limits. See the full-quality video on our project page!) TRELLIS.2 is a state-of-the-art large 3D generative model (4B parameters) designed for high-fidelity image-to-3D generation. It leverages a novel \"field-free\" sparse voxel structure termed O-Voxel to reconstruct and generate arbitrary 3D assets with complex topologies, sharp features ..."
+    },
+    {
+      "title": "Best AI 3D Model Generators in 2026: TRELLIS vs Meshy vs Tripo vs Hitem3D",
+      "url": "https://trellis2.app/blog/best-ai-3d-model-generator",
+      "snippet": "Compare the top AI 3D model generators in 2026. Expert review of TRELLIS 2, Meshy AI, Tripo AI, Hitem3D, Rodin AI, and Hunyuan3D with quality benchmarks and pricing."
+    }
+  ]
+}

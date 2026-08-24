@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "matbee/LFM2.5-Audio-1.5B-ONNX-Vulkan",
+  "slug": "matbee-lfm2-5-audio-1-5b-onnx-vulkan",
+  "author": "matbee",
+  "url": "https://huggingface.co/matbee/LFM2.5-Audio-1.5B-ONNX-Vulkan",
+  "created_at": "2026-08-23T21:10:57.000Z",
+  "updated_at": "2026-08-23T21:11:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1618060940,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-Audio-1.5B - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-Audio-1.5B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-ONNX",
+      "snippet": "LFM2.5-Audio-1.5B-ONNX ONNX export of LFM2.5-Audio-1.5B for cross-platform inference. LFM2.5-Audio is a multimodal model supporting three modes: ASR (Automatic Speech Recognition): Audio → Text TTS (Text-to-Speech): Text → Audio Interleaved: Mixed text and audio input/output Recommended Variants ... WebGPU: Use Q4 decoder + Q4 vocoder (Q8 ..."
+    },
+    {
+      "title": "LFM2.5-Audio-1.5B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-audio-1.5b",
+      "snippet": "← Back to Audio Models LFM2.5-Audio-1.5B is Liquid AI&#x27;s flagship audio model, featuring a custom LFM-based audio detokenizer. It delivers natural speech synthesis, multilingual speech recognition, and fully interleaved voice chat with reasoning capabilities in a single compact model."
+    },
+    {
+      "title": "LFM2.5-Audio-1.5B-ONNX · Models",
+      "url": "https://www.modelscope.cn/models/LiquidAI/LFM2.5-Audio-1.5B-ONNX",
+      "snippet": "LFM2.5-Audio-1.5B-ONNX ONNX export of LFM2.5-Audio-1.5B for cross-platform inference. LFM2.5-Audio is a multimodal model supporting three modes: ASR (Automatic Speech Recognition): Audio → Text TTS (Text-to-Speech): Text → Audio Interleaved: Mixed text and audio input/output Recommended Variants ... WebGPU: Use Q4 decoder + Q4 vocoder (Q8 ..."
+    },
+    {
+      "title": "Audio Models - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/audio-models",
+      "snippet": "Liquid&#x27;s LFM audio models are among the smallest fully interleaved audio/text-in, audio/text-out models with a complete reasoning backbone — eliminating the need to combine separate TTS/ASR encoders with a standalone language model."
+    }
+  ]
+}

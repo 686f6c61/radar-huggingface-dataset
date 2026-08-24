@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "flashvenom/thimble",
+  "slug": "flashvenom-thimble",
+  "author": "flashvenom",
+  "url": "https://huggingface.co/flashvenom/thimble",
+  "created_at": "2026-08-20T16:46:12.000Z",
+  "updated_at": "2026-08-24T12:18:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "function-calling",
+    "tool-calling",
+    "constrained-decoding",
+    "grammar-constrained-decoding",
+    "structured-generation",
+    "json",
+    "small-model",
+    "slm",
+    "on-device",
+    "edge",
+    "text-generation",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192697377,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Function calling (ordered strict exact match)",
+      "dataset": "Seal-Tools in-domain",
+      "metric": "Seal-Tools in-domain",
+      "value": 33.1
+    },
+    {
+      "task": "Function calling (ordered strict exact match)",
+      "dataset": "Seal-Tools out-of-domain",
+      "metric": "Seal-Tools out-of-domain",
+      "value": 28.1
+    },
+    {
+      "task": "Function calling (ordered strict exact match)",
+      "dataset": "Mobile Actions",
+      "metric": "Mobile Actions",
+      "value": 86.3
+    },
+    {
+      "task": "Function calling (ordered strict exact match)",
+      "dataset": "DroidCall",
+      "metric": "DroidCall",
+      "value": 52.5
+    },
+    {
+      "task": "Function calling (ordered strict exact match)",
+      "dataset": "BFCL v4 single-turn",
+      "metric": "BFCL v4 single-turn",
+      "value": 23.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "flashvenom/thimble · Hugging Face",
+      "url": "https://huggingface.co/flashvenom/thimble",
+      "snippet": "🧵 Thimble A 48M-parameter tool-calling model that beats Needle 2 on 3 of its 5 published benchmarks — including their toughest, Seal-Tools — with 150× less training data."
+    },
+    {
+      "title": "flashvenom (FlashVenom) - Hugging Face",
+      "url": "https://huggingface.co/flashvenom",
+      "snippet": "Openaccess Ai Collective Wizard Mega 13b models 3"
+    },
+    {
+      "title": "Thimble",
+      "url": "https://thimbleai.com/",
+      "snippet": "Thimble Relistening to sales calls is so March 2023 Stop relistening to customer calls on 2x speed Thimble automates extracting the information you need from your sales calls. MEDDPICC attributes? Quick Summary? List of Next Steps? No problem Twitter Launch How It&#x27;s Made"
+    },
+    {
+      "title": "Gemini 3.5 Flash: Google&#x27;s Fast AI Model Explained",
+      "url": "https://aimlapi.com/blog/gemini-3-5-flash-everything-you-need-to-know-about-googles-fast-ai-model",
+      "snippet": "Gemini 3.5 Flash is Google&#x27;s fast, efficient AI model built for coding, multimodal tasks, and agentic workflows. Learn its key features, benchmarks, pricing, use cases, and how it compares with other Gemini models."
+    },
+    {
+      "title": "flashvenom · GitHub",
+      "url": "https://github.com/flashvenom",
+      "snippet": "Quickfire is an insurance AMS built for P&C teams, independent agencies, wholesalers, and brokers. It&#x27;s designed to seamlessly integrate third-party APIs, support customizable workflows, and provid… HTML 43 7"
+    }
+  ]
+}

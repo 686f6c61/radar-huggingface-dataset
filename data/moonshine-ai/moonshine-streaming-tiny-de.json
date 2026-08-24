@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "moonshine-ai/moonshine-streaming-tiny-de",
+  "slug": "moonshine-ai-moonshine-streaming-tiny-de",
+  "author": "moonshine-ai",
+  "url": "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-de",
+  "created_at": "2026-08-24T04:05:59.000Z",
+  "updated_at": "2026-08-24T04:06:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine_streaming",
+    "automatic-speech-recognition",
+    "moonshine",
+    "streaming",
+    "asr",
+    "german",
+    "de",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27015360,
+  "parameters_human": "27.0M",
+  "storage_bytes": 108079716,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moonshine-ai/moonshine-streaming-tiny · Hugging Face",
+      "url": "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny",
+      "snippet": "This is the model card for the Moonshine Streaming automatic speech recognition (ASR) models trained and released by Useful Sensors. Moonshine Streaming pairs a lightweight 50~Hz audio frontend with a sliding-window Transformer encoder to deliver low-latency streaming ASR on edge-class hardware."
+    },
+    {
+      "title": "moonshine-ai/moonshine-tiny · Hugging Face",
+      "url": "https://huggingface.co/UsefulSensors/moonshine-tiny",
+      "snippet": "Moonshine: Speech Recognition for Live Transcription and Voice Commands Model Cards for Model Reporting"
+    },
+    {
+      "title": "moonshine/core/moonshine-streaming-model.cpp at main · moonshine-ai ...",
+      "url": "https://github.com/moonshine-ai/moonshine/blob/main/core/moonshine-streaming-model.cpp",
+      "snippet": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces - moonshine-ai/moonshine"
+    },
+    {
+      "title": "GitHub - moonshine-ai/moonshine: Very low latency speech to text ...",
+      "url": "https://github.com/moonshine-ai/moonshine",
+      "snippet": "We use the Moonshine Tiny, Base, Tiny Streaming, Small Streaming, and Medium Streaming models. We compare these to the Whisper Tiny, Base, Small, and Large v3 models."
+    },
+    {
+      "title": "Moonshine Streaming Tiny - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/moonshine-ai/moonshine-streaming-tiny",
+      "snippet": "Registry entry for model Moonshine Streaming Tiny; source metadata pending."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/kora-gpt2-sst2-kora_compTrue_seed0",
+  "slug": "onepunchmonk101010-kora-gpt2-sst2-kora_comptrue_seed0",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/kora-gpt2-sst2-kora_compTrue_seed0",
+  "created_at": "2026-08-23T08:09:59.000Z",
+  "updated_at": "2026-08-23T08:10:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6122093,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GPT-2 Models for Text Classification - FusionBench",
+      "url": "https://tanganke.github.io/fusion_bench/modelpool/gpt2_classification/",
+      "snippet": "GPT-2 Models for Text Classification Here we provide a series of GPT-2 models fine-tuned for text classification tasks. The Seven Tasks from GLUE Benchmark We provide seven GPT-2 models fine-tuned on the following tasks from GLUE Benchmark: CoLA, SST-2, MRPC, QQP, MNLI, RTE, and QNLI. These models are fine-tuned with the learning rate of 5e-5 for 3 epochs. The models are available on ..."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative and technical writing tasks, such as composing songs, writing screenplays, or learning a user&#x27;s writing style."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ChatGPT Images 2.0 | AI Image Generator",
+      "url": "https://chatgpt.com/images/",
+      "snippet": "Generate high-quality AI images quickly with ChatGPT Images, featuring precise edits, preset filters and trending prompts."
+    }
+  ]
+}

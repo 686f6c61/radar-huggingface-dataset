@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mzio/aprm-sft-snorkel-finance",
+  "slug": "mzio-aprm-sft-snorkel-finance",
+  "author": "mzio",
+  "url": "https://huggingface.co/mzio/aprm-sft-snorkel-finance",
+  "created_at": "2026-07-30T09:27:34.000Z",
+  "updated_at": "2026-08-23T15:00:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1454788896,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mzio/aprm-thought-generations-snorkel-finance - Hugging Face",
+      "url": "https://huggingface.co/datasets/mzio/aprm-thought-generations-snorkel-finance",
+      "snippet": "aprm-thought-generations-snorkel-finance Act-PRM inferred-thought generations for snorkel_finance agent traces (Qwen3-4B-Instruct-2507). For each logged (state s, action x), an offline EM samples G=4 candidate thoughts z, scores each by the length-penalized action likelihood, and commits the top-1."
+    },
+    {
+      "title": "mzio/aprm-sft_genthinkact-ENact_prm_snorkel_finance_fs1-GEaprm_qwen3_ap ...",
+      "url": "https://huggingface.co/datasets/mzio/aprm-sft_genthinkact-ENact_prm_snorkel_finance_fs1-GEaprm_qwen3_ap-SE42-REv10-ap1-b019",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SnorkelFinance: Financial QA Benchmark for AI Agents | Snorkel AI",
+      "url": "https://snorkel.ai/leaderboard/snorkel-finance/",
+      "snippet": "A benchmark of expert-verified financial QA created from financial reports for evaluating AI agents on tool-calling and reasoning capabilities."
+    },
+    {
+      "title": "Finance Reasoning Benchmark for LLM Agents | Snorkel AI",
+      "url": "https://snorkel.ai/leaderboard/finance-reasoning/",
+      "snippet": "A benchmark co-created with Snorkel&#x27;s financial expert network, to test agents on financial reasoning questions through tool-calling and planning."
+    },
+    {
+      "title": "Accenture Invests in Snorkel AI to Help Financial Services Firms ...",
+      "url": "https://newsroom.accenture.com/news/2025/accenture-invests-in-snorkel-ai-to-help-financial-services-firms-transform-data-into-ai-solutions",
+      "snippet": "August 6, 2025 Accenture Invests in Snorkel AI to Help Financial Services Firms Transform Data into AI Solutions NEW YORK; Aug. 6, 2025 - Accenture (NYSE: ACN) has made a strategic investment, through Accenture Ventures, in Snorkel AI to help enterprises build and scale AI solutions more quickly by curating high-quality datasets for training and evaluating AI models."
+    }
+  ]
+}

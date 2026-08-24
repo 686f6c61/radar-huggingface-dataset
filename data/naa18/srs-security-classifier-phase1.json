@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "naa18/srs-security-classifier-phase1",
+  "slug": "naa18-srs-security-classifier-phase1",
+  "author": "naa18",
+  "url": "https://huggingface.co/naa18/srs-security-classifier-phase1",
+  "created_at": "2026-07-01T09:05:45.000Z",
+  "updated_at": "2026-08-23T11:12:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 1994451296,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naa18/srs-security-classifier-phase1 · Hugging Face",
+      "url": "https://huggingface.co/naa18/srs-security-classifier-phase1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "naa18 (Ainaa) - Hugging Face",
+      "url": "https://huggingface.co/naa18",
+      "snippet": "models1 naa18/srs-security-classifier-phase1 Text Classification • 0.1B•Updated 13 days ago• 20"
+    },
+    {
+      "title": "ModelScan: Protection Against Model Serialization Attacks",
+      "url": "https://github.com/protectai/modelscan",
+      "snippet": "ModelScan is an open source project from Protect AI that scans models to determine if they contain unsafe code. It is the first model scanning tool to support multiple model formats. ModelScan currently supports: H5, Pickle, and SavedModel formats. This protects you when using PyTorch, TensorFlow, Keras, Sklearn, XGBoost, with more on the way."
+    },
+    {
+      "title": "OWASP GenAI LLM Top 10 2026 - OWASP Gen AI Security Project",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+      "snippet": "OWASP Top 10 for LLM Applications 2026 is the latest community-driven guide to the most critical security risks facing applications powered by large language models. Developed by hundreds of AI security experts, this edition introduces updated rankings, expanded threat coverage, and new research grounded in thousands of real-world AI security incidents. The guide provides practical […]"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

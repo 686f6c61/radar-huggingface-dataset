@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "naa18/srs-cia-classifier-phase2",
+  "slug": "naa18-srs-cia-classifier-phase2",
+  "author": "naa18",
+  "url": "https://huggingface.co/naa18/srs-cia-classifier-phase2",
+  "created_at": "2026-07-17T12:12:01.000Z",
+  "updated_at": "2026-08-23T11:12:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 1495847700,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naa18/srs-cia-classifier-phase2 · Hugging Face",
+      "url": "https://huggingface.co/naa18/srs-cia-classifier-phase2",
+      "snippet": "Instructions to use naa18/srs-cia-classifier-phase2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use naa18/srs-cia-classifier-phase2 with Transformers:"
+    },
+    {
+      "title": "naa18 (Ainaa) - Hugging Face",
+      "url": "https://huggingface.co/naa18",
+      "snippet": "models1 naa18/srs-security-classifier-phase1 Text Classification • 0.1B•Updated 13 days ago• 20"
+    },
+    {
+      "title": "ainaa-fyp-security/streamlit_app.py at master - GitHub",
+      "url": "https://github.com/gunforawhile/ainaa-fyp-security/blob/master/streamlit_app.py",
+      "snippet": "minority = [item for item in dataset if item [label_index] == minority_label]"
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

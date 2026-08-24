@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lixiaochuan2020/latent-wm-160m-suite",
+  "slug": "lixiaochuan2020-latent-wm-160m-suite",
+  "author": "lixiaochuan2020",
+  "url": "https://huggingface.co/lixiaochuan2020/latent-wm-160m-suite",
+  "created_at": "2026-08-24T03:55:02.000Z",
+  "updated_at": "2026-08-24T03:55:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pretraining",
+    "looped-transformer",
+    "block-transformer",
+    "muon",
+    "en",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3049950240,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lixiaochuan2020 (Xiaochuan Li) · GitHub",
+      "url": "https://github.com/lixiaochuan2020",
+      "snippet": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team. Python 16.8k 1.2k"
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    },
+    {
+      "title": "Papers - a lixiaochuan2020 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/lixiaochuan2020/papers",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from lixiaochuan2020"
+    },
+    {
+      "title": "Latent-WAM: Latent World Action Modeling for End-to-End Autonomous Driving",
+      "url": "https://arxiv.org/html/2603.24581v1",
+      "snippet": "Abstract We introduce Latent-WAM, an efficient end-to-end autonomous driving framework that achieves strong trajectory planning through spatially-aware and dynamics-informed latent world representations."
+    }
+  ]
+}

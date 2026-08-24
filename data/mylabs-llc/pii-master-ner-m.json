@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MyLabs-LLC/pii-master-ner-m",
+  "slug": "mylabs-llc-pii-master-ner-m",
+  "author": "MyLabs-LLC",
+  "url": "https://huggingface.co/MyLabs-LLC/pii-master-ner-m",
+  "created_at": "2026-08-23T17:56:13.000Z",
+  "updated_at": "2026-08-23T17:56:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "pii",
+    "phi",
+    "hipaa",
+    "privacy",
+    "named-entity-recognition",
+    "cpu-inference",
+    "token-classification",
+    "en",
+    "dataset:nvidia/Nemotron-PII",
+    "base_model:kalyan-ks/ettin-68m-nemotron-pii",
+    "base_model:quantized:kalyan-ks/ettin-68m-nemotron-pii",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26322418,
+  "storage_human": "26 MB",
+  "base_model": "kalyan-ks/ettin-68m-nemotron-pii",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyLab and Mastering login - Pearson",
+      "url": "https://www.pearson.com/en-us/higher-education/products-services/mylab-and-mastering-login.html",
+      "snippet": "Courses with custom logins A small number of our MyLab courses require you to login via a unique site. If your course is listed below, select the relevant link to sign in or register."
+    },
+    {
+      "title": "MyLabs-LLC (MyLabs LLC) - Hugging Face",
+      "url": "https://huggingface.co/MyLabs-LLC",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "MyLabs-LLC (MyLabs LLC) - Hugging Face",
+      "url": "https://huggingface.co/MyLabs-LLC/models",
+      "snippet": "MyLabs-LLC&#x27;s models3 Sort: Recently updated MyLabs-LLC/Axion-1B-FineWebEdu-72K Text Generation • 1B•Updated about 17 hours ago"
+    },
+    {
+      "title": "GitHub - MyLabs-LLC/sentry",
+      "url": "https://github.com/MyLabs-LLC/sentry",
+      "snippet": "Amazing LLM from Scratch A comprehensive project for building state-of-the-art Large Language Models from scratch using FineWeb data, with support for both Transformer and Mamba architectures."
+    },
+    {
+      "title": "GitHub - Clearbox-AI/nerpii: A Python library to perform NER on ...",
+      "url": "https://github.com/Clearbox-AI/nerpii",
+      "snippet": "Nerpii is a Python library developed to perform Named Entity Recognition (NER) on structured datasets and synthesize Personal Identifiable Information (PII). NER is performed with Presidio and with a NLP model available on HuggingFace, while the PII generation is based on Faker."
+    }
+  ]
+}

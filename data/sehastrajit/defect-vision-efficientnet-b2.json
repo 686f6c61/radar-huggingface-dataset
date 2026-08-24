@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Sehastrajit/defect-vision-efficientnet-b2",
+  "slug": "sehastrajit-defect-vision-efficientnet-b2",
+  "author": "Sehastrajit",
+  "url": "https://huggingface.co/Sehastrajit/defect-vision-efficientnet-b2",
+  "created_at": "2026-08-24T04:26:26.000Z",
+  "updated_at": "2026-08-24T04:27:29.000Z",
+  "license": "intel-challenge-dataset",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "efficientnet",
+    "defect-detection",
+    "defect-classification",
+    "semiconductor",
+    "wafer-inspection",
+    "manufacturing",
+    "few-shot-learning",
+    "small-sample-learning",
+    "computer-vision",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34163260,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Test accuracy",
+      "value": 0.9556
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Best validation accuracy",
+      "value": 0.975
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - Sehastrajit-S/defect-vision: Small-sample defect ...",
+      "url": "https://github.com/Sehastrajit-S/defect-vision",
+      "snippet": "A full-stack demo built for the Intel Semiconductor Solutions Challenge 2026 - Problem A: Small-Sample Learning for Defect Classification. It wraps a fine-tuned EfficientNet-B2 classifier (trained on a class-balanced, heavily-augmented small-sample dataset) in a FastAPI inference service and a minimal React front end, so the model can be exercised interactively instead of read off a Jupyter ..."
+    },
+    {
+      "title": "efficientnet_b2 — Torchvision main documentation",
+      "url": "http://docs.pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b2.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.efficientnet.EfficientNet base class. Please refer to the source code for more details about this class. class torchvision.models.EfficientNet_B2_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "Sehastrajit - GitHub",
+      "url": "https://github.com/Sehastrajit/",
+      "snippet": "AI/ML Engineer specializing in scalable ML systems across LLMs, computer vision, and cloud data pipelines. - Sehastrajit"
+    },
+    {
+      "title": "DefectVision - a Hugging Face Space by Researchdemo834",
+      "url": "https://huggingface.co/spaces/Researchdemo834/defectvision",
+      "snippet": "Upload or capture a photo of an industrial part, and the app instantly tells you whether it&#x27;s defective, what kind of defect it is, and which product it belongs to. It also displays confidence scor..."
+    },
+    {
+      "title": "google/efficientnet-b2 · Hugging Face",
+      "url": "https://huggingface.co/google/efficientnet-b2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

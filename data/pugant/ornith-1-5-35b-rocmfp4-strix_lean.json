@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN",
+  "slug": "pugant-ornith-1-5-35b-rocmfp4-strix_lean",
+  "author": "pugant",
+  "url": "https://huggingface.co/pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN",
+  "created_at": "2026-08-20T16:30:18.000Z",
+  "updated_at": "2026-08-23T14:20:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "rocmfpx",
+    "gfx1151",
+    "strix-halo",
+    "qwen35moe",
+    "moe",
+    "rocm",
+    "amdgpu",
+    "ROCmFP4",
+    "image-text-to-text",
+    "en",
+    "multilingual",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 20147485504,
+  "storage_human": "20.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN · Hugging Face",
+      "url": "https://huggingface.co/pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN",
+      "snippet": "Instructions to use pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith 1.5 35B | Model APIs - runinfra.ai",
+      "url": "https://runinfra.ai/inference-api/ornith-1-5-35b",
+      "snippet": "Ornith 1.5 35B is an LLM listed in RunInfra Model APIs. RunInfra serves it as ornith-ai/Ornith-1.5-35B-A3B at $0.10 per 1M input tokens and $0.40 per 1M output tokens. Its context window is 262,144 tokens. The API provides OpenAI-compatible chat completions."
+    },
+    {
+      "title": "Ornith-1.5 — open MIT model matches Claude Opus… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/ornith-1-5/",
+      "snippet": "Ornith-1.5 is a family of open-weight models released under MIT in 397B and 35B mixture-of-experts and 9B dense sizes. The 397B scores 86.1 on Terminal-Bench 2.1 against 85.0 for Claude Opus 4.8. An open-weight model family that writes its own training tasks, then trains on them."
+    }
+  ]
+}

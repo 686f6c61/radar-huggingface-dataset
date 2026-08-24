@@ -5,7 +5,7 @@
   "author": "haominglan",
   "url": "https://huggingface.co/haominglan/PromptSentinel-DeBERTa-LoRA",
   "created_at": "2026-08-17T05:23:28.000Z",
-  "updated_at": "2026-08-17T05:23:41.000Z",
+  "updated_at": "2026-08-23T14:17:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

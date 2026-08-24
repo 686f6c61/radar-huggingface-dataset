@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 46702792704,
   "parameters_human": "46.70B",
-  "storage_bytes": 190496794867,
+  "storage_bytes": 190481973667,
   "storage_human": "190.5 GB",
   "base_model": "mistralai/Mixtral-8x7B-v0.1",
   "formats": [

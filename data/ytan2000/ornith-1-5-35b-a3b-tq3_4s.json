@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "YTan2000/Ornith-1.5-35B-A3B-TQ3_4S",
+  "slug": "ytan2000-ornith-1-5-35b-a3b-tq3_4s",
+  "author": "YTan2000",
+  "url": "https://huggingface.co/YTan2000/Ornith-1.5-35B-A3B-TQ3_4S",
+  "created_at": "2026-08-24T05:13:51.000Z",
+  "updated_at": "2026-08-24T05:41:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3.5",
+    "qwen3.5-moe",
+    "multimodal",
+    "vision",
+    "ornith",
+    "turboquant",
+    "tq3_4s",
+    "text-generation",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 18957204573,
+  "storage_human": "19.0 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YTan2000/Ornith-1.5-35B-A3B-TQ3_4S · Hugging Face",
+      "url": "https://huggingface.co/YTan2000/Ornith-1.5-35B-A3B-TQ3_4S",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide ..."
+    }
+  ]
+}

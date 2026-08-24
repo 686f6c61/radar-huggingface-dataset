@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cstr/confucius4-tts-GGUF",
+  "slug": "cstr-confucius4-tts-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/confucius4-tts-GGUF",
+  "created_at": "2026-08-22T18:22:10.000Z",
+  "updated_at": "2026-08-23T21:09:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 104257104,
+  "parameters_human": "104.3M",
+  "storage_bytes": 9331465216,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cstr/confucius4-tts-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/confucius4-tts-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Confucius4-TTS Voice Lab - a Hugging Face Space by owensong",
+      "url": "https://huggingface.co/spaces/owensong/Confucius4-TTS-Demo",
+      "snippet": "Confucius4-TTS Clone a voice from one short recording and synthesize new speech across fourteen languages. No reference transcript or per-speaker training is required."
+    },
+    {
+      "title": "Confucius4-TTS: Transcript-Free Cross-Lingual Zero-Shot TTS with a ...",
+      "url": "https://arxiv.org/html/2608.11650v1",
+      "snippet": "In this work, we present Confucius4-TTS, a multilingual zero-shot TTS system. The model is trained across 14 languages and supports voice cloning in intra-lingual and cross-lingual settings. Confucius4-TTS follows a two-stage architecture, consisting of text-to-semantic (T2S) and semantic-to-acoustic (S2A) modules."
+    },
+    {
+      "title": "GitHub - netease-youdao/Confucius4-TTS: Confucius4-TTS: a Multilingual ...",
+      "url": "https://github.com/netease-youdao/Confucius4-TTS",
+      "snippet": "Confucius4-TTS is an advanced LLM-based text-to-speech (TTS) system designed for multilingual and cross-lingual speech synthesis. Built on a speech encoder + large language model (LLM) architecture, Confucius4-TTS enables high-quality speech generation while preserving speaker identity across ..."
+    },
+    {
+      "title": "Confucius4-TTS: Transcript-Free Cross-Lingual Zero-Shot TTS with a ...",
+      "url": "https://arxiv.org/pdf/2608.11650",
+      "snippet": "Recent work supports both conditioning modes within a single model, and reports higher speaker similarity when the reference audio is used as a prefix [18, 44]. In this work, we present Confucius4-TTS, a multilingual zero-shot TTS system. The model is trained across 14 languages and supports voice cloning in intra-lingual and cross-lingual ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mhmd73838/ReadingPipeline-notebooks",
+  "slug": "mhmd73838-readingpipeline-notebooks",
+  "author": "Mhmd73838",
+  "url": "https://huggingface.co/Mhmd73838/ReadingPipeline-notebooks",
+  "created_at": "2026-08-23T23:41:17.000Z",
+  "updated_at": "2026-08-23T23:41:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "PyTorch",
+    "OCR",
+    "Segmentation",
+    "HTR",
+    "ru",
+    "dataset:sberbank-ai/school_notebooks_RU",
+    "dataset:sberbank-ai/school_notebooks_EN",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 677884597,
+  "storage_human": "678 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-forever/ReadingPipeline-notebooks · Hugging Face",
+      "url": "https://huggingface.co/ai-forever/ReadingPipeline-notebooks",
+      "snippet": "Datasets used to train ai-forever/ReadingPipeline-notebooks ai-forever/school_notebooks_RU Viewer • Updated Feb 9, 2023 • 10 • 8"
+    },
+    {
+      "title": "GitHub - ai-forever/ReadingPipeline: Text reading pipeline that ...",
+      "url": "https://github.com/ai-forever/ReadingPipeline",
+      "snippet": "This is a pipeline for text detection and reading. It combines the OCR and Segmentation models into the single pipeline and allows to segment an input image, then crop text regions from it and, finally, read these texts using OCR. A web demo (on hugging face) of ReadingPipeline for the Peter the ..."
+    },
+    {
+      "title": "ai-forever/ReadingPipeline-notebooks at main - Hugging Face",
+      "url": "https://huggingface.co/ai-forever/ReadingPipeline-notebooks/tree/main",
+      "snippet": "Model card FilesFiles and versions Community Use with library main ReadingPipeline-notebooks 3 contributors History:19 commits sberbank-ai Update segm/segm_config.json 76f1094 9 months ago ocr feat: Update school notebooks models 9 months ago segm Update segm/segm_config.json 9 months ago .gitattributes 1.47 kB chore: Add onnx in gitattributes ..."
+    },
+    {
+      "title": "ReadingPipeline-notebooks huggingface.co api & ai-forever ...",
+      "url": "https://www.toolify.ai/ai-model/ai-forever-readingpipeline-notebooks",
+      "snippet": "ReadingPipeline-notebooks huggingface.co is an AI model on huggingface.co that provides ReadingPipeline-notebooks&#x27;s model effect (), which can be used instantly with this ai-forever ReadingPipeline-notebooks model. huggingface.co supports a free trial of the ReadingPipeline-notebooks model, and also provides paid use of the ReadingPipeline-notebooks. Support call ReadingPipeline-notebooks ..."
+    },
+    {
+      "title": "GitHub - lfnovo/open-notebook: An Open Source implementation of ...",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "snippet": "An Open Source implementation of Notebook LM with more flexibility and features - lfnovo/open-notebook"
+    }
+  ]
+}

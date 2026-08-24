@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Beidouqixing/minimax-h3-4step-lora-flashgen",
+  "slug": "beidouqixing-minimax-h3-4step-lora-flashgen",
+  "author": "Beidouqixing",
+  "url": "https://huggingface.co/Beidouqixing/minimax-h3-4step-lora-flashgen",
+  "created_at": "2026-08-24T09:33:35.000Z",
+  "updated_at": "2026-08-24T09:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "t2va",
+    "distillation",
+    "4step",
+    "flashgen",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1258533240,
+  "storage_human": "1.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minimax_h3_fl2va_4step_lora.safetensors · joyfox/MiniMax-H3-Turbo at main",
+      "url": "https://huggingface.co/joyfox/MiniMax-H3-Turbo/blob/main/minimax_h3_fl2va_4step_lora.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA - a Hugging Face Space by MiniMaxAI",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora",
+      "snippet": "A red fox trotting through a snowy pine forest at dawn, snow… A busy night market, neon signs reflecting in puddles, sizzl… A cellist playing a slow melody in an empty concert hall Waves crashing against basalt cliffs at golden hour, gulls c…"
+    },
+    {
+      "title": "MiniMax H3 LoRA — Categories, Settings & Where to Find Them",
+      "url": "https://minimax3.org/minimax-h3-lora",
+      "snippet": "A MiniMax H3 LoRA is a small adapter file loaded on top of the open H3-Base weights. It fine-tunes H3 output toward a specific style, character identity, camera behavior, motion vocabulary, or reduced step count without retraining the full base model."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA: 5× Faster Video Generation Setup Guide",
+      "url": "https://www.seedance.tv/blog/minimax-h3-turbo-lora",
+      "snippet": "Install MiniMax H3 Turbo LoRA in ComfyUI, choose v4 or v1, wire the sampler, and tune 4-8 step generation for faster video with stereo audio."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "h6e/KuchoLM-NIDA-10M",
+  "slug": "h6e-kucholm-nida-10m",
+  "author": "h6e",
+  "url": "https://huggingface.co/h6e/KuchoLM-NIDA-10M",
+  "created_at": "2026-08-23T11:07:55.000Z",
+  "updated_at": "2026-08-23T12:56:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262562942,
+  "storage_human": "263 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI ...",
+      "url": "https://thehackernews.com/2026/08/threatsday-gogs-100-rce-n8n-workflow-to.html",
+      "snippet": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit, and More | Read more hacking news on The Hacker News cybersecurity news website and learn how to protect against cyberattacks and software vulnerabilities."
+    },
+    {
+      "title": "All LLM Models | LLMIndex - Comprehensive AI Model Database | LLMIndex",
+      "url": "https://llmindex.net/models",
+      "snippet": "Browse and compare 600+ large language models. The most comprehensive AI model database."
+    },
+    {
+      "title": "Google To Pay $10M For Spirit Airlines Data To Help AI Models",
+      "url": "https://www.law360.com/articles/2514341/google-to-pay-10m-for-spirit-airlines-data-to-help-ai-models",
+      "snippet": "Technology giant Google LLC has won an auction for Spirit Airlines&#x27; emails, chats, spreadsheets and other data, offering $10 million for anonymized information it will use to improve its large ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

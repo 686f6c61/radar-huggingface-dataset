@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mimiminsoo/spam_diffusion_multi0823_63ep_v1",
+  "slug": "mimiminsoo-spam_diffusion_multi0823_63ep_v1",
+  "author": "mimiminsoo",
+  "url": "https://huggingface.co/mimiminsoo/spam_diffusion_multi0823_63ep_v1",
+  "created_at": "2026-08-24T04:42:42.000Z",
+  "updated_at": "2026-08-24T04:43:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:mimiminsoo/piper_bottle_multi_0823_combined",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308316824,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1233356872,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimiminsoo/spam_diffusion_multi0823_63ep_v1 · Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo/spam_diffusion_multi0823_63ep_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mimiminsoo/spam_1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mimiminsoo/spam_1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What are Diffusion Models? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-are-diffusion-models/",
+      "snippet": "Diffusion models are a type of generative AI that create data like images or audio by starting from random noise and gradually refining it into meaningful output. They learn this process by adding noise to real data during training and then reversing it step by step. This allows them to generate realistic and high-quality samples from scratch. Diffusion Model Diffusion models are generative ..."
+    },
+    {
+      "title": "GitHub - cloneofsimo/minDiffusion: Self-contained, minimalistic ...",
+      "url": "https://github.com/cloneofsimo/minDiffusion",
+      "snippet": "minDiffusion Goal of this educational repository is to provide a self-contained, minimalistic implementation of diffusion models using Pytorch. Many implementations of diffusion models can be a bit overwhelming."
+    },
+    {
+      "title": "mimiminsoo/spam_1 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/mimiminsoo/spam_1/tree/main",
+      "snippet": "Datasets: mimiminsoo / spam_1 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main spam_1 688 MB 1 contributor History:3 commits mimiminsoo Upload README.md with huggingface_hub 512dcbc verifiedabout 7 hours ago ..."
+    }
+  ]
+}

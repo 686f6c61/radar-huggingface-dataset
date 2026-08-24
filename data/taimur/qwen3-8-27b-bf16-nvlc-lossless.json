@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Taimur/Qwen3.8-27B-BF16-NVLC-Lossless",
+  "slug": "taimur-qwen3-8-27b-bf16-nvlc-lossless",
+  "author": "Taimur",
+  "url": "https://huggingface.co/Taimur/Qwen3.8-27B-BF16-NVLC-Lossless",
+  "created_at": "2026-08-24T05:07:38.000Z",
+  "updated_at": "2026-08-24T05:46:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.8",
+    "bf16",
+    "lossless-compression",
+    "rans",
+    "nvlc",
+    "dgx-spark",
+    "compressed-inference",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36452761411,
+  "storage_human": "36.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taimur/Qwen3.8-27B-BF16-NVLC-Lossless · Hugging Face",
+      "url": "https://huggingface.co/Taimur/Qwen3.8-27B-BF16-NVLC-Lossless",
+      "snippet": "Taimur / Qwen3.8-27B-BF16-NVLC-Lossless like 0 Image-Text-to-Text Safetensors custom qwen3_5 qwen qwen3.8 bf16 lossless-compression rans nvlc dgx-spark compressed-inference conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-27B BF16 NVLC Lossless Compression result Encoding DGX Spark ..."
+    },
+    {
+      "title": "GitHub - TaimurAyaz/Qwen3.8-27B-BF16-NVLC: Lossless BF16 weight ...",
+      "url": "https://github.com/TaimurAyaz/Qwen3.8-27B-BF16-NVLC",
+      "snippet": "This repository contains NVLC, an experimental lossless compressed-weight runtime for the BF16 checkpoint of Qwen3.8-27B. The research question is simple: can a GPU consume a materially smaller exact representation of model weights and reconstruct each BF16 word close enough to the matrix operation to increase real decode throughput?"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

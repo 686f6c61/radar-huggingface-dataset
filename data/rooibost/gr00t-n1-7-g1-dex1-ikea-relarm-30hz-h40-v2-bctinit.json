@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2-bctinit",
+  "slug": "rooibost-gr00t-n1-7-g1-dex1-ikea-relarm-30hz-h40-v2-bctinit",
+  "author": "RooibosT",
+  "url": "https://huggingface.co/RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2-bctinit",
+  "created_at": "2026-08-23T05:42:11.000Z",
+  "updated_at": "2026-08-23T05:44:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vla",
+    "gr00t",
+    "unitree-g1",
+    "dex1",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576206929,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Previous releases: N1.6 | N1.5 NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "AldrinLake/Isaac-GR00T-N1.7: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/AldrinLake/Isaac-GR00T-N1.7",
+      "snippet": "To use older versions: N1.6 | N1.5 NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "CK-Sung/gr00t-n17-g1-ikea-rel-60k · Hugging Face",
+      "url": "https://huggingface.co/CK-Sung/gr00t-n17-g1-ikea-rel-60k",
+      "snippet": "gr00t-n17-g1-ikea-rel-60k GR00T-N1.7-3B fine-tune for the 2026 Humanoid IKEA Assembly Challenge (Unitree G1 + Dex1, \"building children table\"). Base model: nvidia/GR00T-N1.7-3B (Cosmos-Reason2-2B backbone, frozen) Data: BitRobot/G1_WBT_Dex1_Building-Children-Table (LeRobot v3 -> GR00T v2.1) Action space: EE-space RELATIVE (delta) 14d = ee_left [6] + ee_right [6] + hand [2] (xyz + euler&#x27;xyz ..."
+    },
+    {
+      "title": "RooibosT/gr00t-n1.7-g1-dex3-nubzuki-rel_h40-ckpt5000 · Hugging Face",
+      "url": "https://huggingface.co/RooibosT/gr00t-n1.7-g1-dex3-nubzuki-rel_h40-ckpt5000",
+      "snippet": "RooibosT / gr00t-n1.7-g1-dex3-nubzuki-rel_h40-ckpt5000 like 0 Safetensors Gr00tN1d7 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Overview of GR00T N1.7｜npaka - note（ノート）",
+      "url": "https://note.com/npaka/n/n9708bb211fd1?hl=en",
+      "snippet": "I found the following article interesting, so I have summarized it briefly. ・NVIDIA Isaac GR00T N1.7: Open Reasoning VLA Model for Humanoid Robots 1. Introduction NVIDIA has released \" Isaac GR00T N1.7 \" (Early Access). This is an open and commercially usable VLA (Vision-Language-Action) model for humanoid robots. The fundamental idea behind its development is very simple: human data is the ..."
+    }
+  ]
+}

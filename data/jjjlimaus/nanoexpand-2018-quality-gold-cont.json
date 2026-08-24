@@ -5,7 +5,7 @@
   "author": "jjjlimaus",
   "url": "https://huggingface.co/jjjlimaus/nanoexpand-2018-quality-gold-cont",
   "created_at": "2026-08-22T21:16:46.000Z",
-  "updated_at": "2026-08-22T21:49:22.000Z",
+  "updated_at": "2026-08-24T02:49:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 2095581570,
   "parameters_human": "2.10B",
-  "storage_bytes": 8382374200,
-  "storage_human": "8.4 GB",
+  "storage_bytes": 259853600200,
+  "storage_human": "259.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

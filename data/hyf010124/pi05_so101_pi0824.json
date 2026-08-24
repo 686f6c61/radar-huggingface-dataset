@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hyf010124/pi05_so101_pi0824",
+  "slug": "hyf010124-pi05_so101_pi0824",
+  "author": "hyf010124",
+  "url": "https://huggingface.co/hyf010124/pi05_so101_pi0824",
+  "created_at": "2026-08-24T10:32:53.000Z",
+  "updated_at": "2026-08-24T10:33:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:so101_test_pi0824",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10325368,
+  "storage_human": "10 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyf010124/so101_test_pi0824_20260824_132104 at main",
+      "url": "https://huggingface.co/datasets/hyf010124/so101_test_pi0824_20260824_132104/tree/main",
+      "snippet": "451 MB 1 contributor History:3 commits hyf010124 Upload README.md with huggingface_hub d1d31cf verifiedabout 1 hour ago dataUpload folder using huggingface_hubabout 1 hour ago metaUpload folder using huggingface_hubabout 1 hour ago videosUpload folder using huggingface_hubabout 1 hour ago .gitattributes Safe 2.5 kBinitial commitabout 1 hour ago ..."
+    },
+    {
+      "title": "hyf010124 (fu) - Hugging Face",
+      "url": "https://huggingface.co/hyf010124",
+      "snippet": "hyf010124/so101_test_VLA0721_20260721_152151. published a dataset about 6 hours ago. hyf010124/so101_test_VLA0721_20260721_151733. updated a dataset about 13 hours ago"
+    },
+    {
+      "title": "GitHub - jinnymo/so101-pi05-base: pi0.5 vision-language-action model ...",
+      "url": "https://github.com/jinnymo/so101-pi05-base",
+      "snippet": "pi0.5 vision-language-action model fully fine-tuned on unified public SO-101 / SO-100 data - jinnymo/so101-pi05-base"
+    },
+    {
+      "title": "DreamZero-SO101 — An Open World Model for the SO-101 Robot Arm",
+      "url": "https://vizuara-ai-lab.github.io/dreamzero-so101/index.html",
+      "snippet": "DreamZero-SO101 is an open-source world-action model for the SO-101 robot arm. Given a single camera frame and a language instruction, it imagines the robot completing the task."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

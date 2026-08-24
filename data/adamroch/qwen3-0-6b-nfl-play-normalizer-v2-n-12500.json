@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-12500",
+  "slug": "adamroch-qwen3-0-6b-nfl-play-normalizer-v2-n-12500",
+  "author": "AdamRoch",
+  "url": "https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-12500",
+  "created_at": "2026-08-24T09:31:06.000Z",
+  "updated_at": "2026-08-24T09:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "nfl",
+    "structured-output",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51850987,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdamRoch/qwen3-0.6b-nfl-play-normalizer-qlora · Hugging Face",
+      "url": "https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AdamRoch (Adam Roch) - Hugging Face",
+      "url": "https://huggingface.co/AdamRoch/datasets",
+      "snippet": "Recent Activity updated a modelabout 6 hours ago AdamRoch/qwen3-.6b-nfl-play-normalizer-qlora updated a datasetabout 6 hours ago AdamRoch/nfl-play-normalization-2019-2022 published a modelabout 6 hours ago AdamRoch/qwen3-.6b-nfl-play-normalizer-qlora View all activity"
+    },
+    {
+      "title": "GitHub - vmeoc/FineTuningQwen3-0.6B",
+      "url": "https://github.com/vmeoc/FineTuningQwen3-0.6B",
+      "snippet": "This guide explains step by step how to fine-tune the base model Qwen/Qwen3-.6B-Base on the databricks/databricks-dolly-15k dataset with QLoRA, and how to load the adapter for inference."
+    },
+    {
+      "title": "Qwen3-0.6B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-0.6B",
+      "snippet": "This model is the real-time cigarette detection model in the high-performance popular application series of detection models, based on the high-performance detection framework DAMOYOLO aimed at industrial deployment. Its accuracy and speed surpass those of the current classic YOLO series methods. When users use it, they only need to input an image to obtain the coordinate information of all ..."
+    },
+    {
+      "title": "Qwen3-0.6B-Base · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-0.6B-Base",
+      "snippet": "Qwen3-.6B-Base Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Building upon extensive advancements in training data, model architecture, and optimization techniques, Qwen3 delivers the following key improvements over the previously released Qwen2.5: Expanded Higher-Quality ..."
+    }
+  ]
+}

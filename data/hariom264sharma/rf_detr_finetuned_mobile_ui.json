@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hariom264sharma/rf_detr_finetuned_mobile_ui",
+  "slug": "hariom264sharma-rf_detr_finetuned_mobile_ui",
+  "author": "Hariom264sharma",
+  "url": "https://huggingface.co/Hariom264sharma/rf_detr_finetuned_mobile_ui",
+  "created_at": "2026-08-24T12:38:45.000Z",
+  "updated_at": "2026-08-24T12:43:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rf_detr",
+    "object-detection",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/Hariom264sharma/huggingface-static-353c95",
+    "generated_from_trainer",
+    "base_model:Roboflow/rf-detr-medium",
+    "base_model:finetune:Roboflow/rf-detr-medium",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33374432,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133565457,
+  "storage_human": "134 MB",
+  "base_model": "Roboflow/rf-detr-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "merve/rf_detr_finetuned_mobile_ui · Hugging Face",
+      "url": "https://huggingface.co/merve/rf_detr_finetuned_mobile_ui",
+      "snippet": "rf_detr_finetuned_mobile_ui This model is a fine-tuned version of Roboflow/rf-detr-medium on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "how-to-finetune-rf-detr-on-segmentation-dataset.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/how-to-finetune-rf-detr-on-segmentation-dataset.ipynb",
+      "snippet": "RF-DETR is a real-time transformer architecture for object detection and instance segmentation developed by Roboflow. Built on a DINOv2 vision transformer backbone, RF-DETR delivers state-of-the-art accuracy and latency trade-offs on Microsoft COCO and RF100-VL. RF-DETR uses a DINOv2 vision transformer backbone and supports both detection and instance segmentation in a single, consistent API ..."
+    },
+    {
+      "title": "merve/rf-detr-mobile-ui · Hugging Face",
+      "url": "https://huggingface.co/merve/rf-detr-mobile-ui",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/rf_detr/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/rf_detr/README.md",
+      "snippet": "DETR is a machine learning model that can detect objects (trained on COCO dataset). This is based on the implementation of RF-DETR found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile ..."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    }
+  ]
+}

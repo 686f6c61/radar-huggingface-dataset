@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sxiong/TG-LLM-TGQA-Story2TG-Llama-2-13B-LoRA",
+  "slug": "sxiong-tg-llm-tgqa-story2tg-llama-2-13b-lora",
+  "author": "sxiong",
+  "url": "https://huggingface.co/sxiong/TG-LLM-TGQA-Story2TG-Llama-2-13B-LoRA",
+  "created_at": "2024-12-12T23:44:21.000Z",
+  "updated_at": "2026-08-24T09:44:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:sxiong/TGQA",
+    "base_model:meta-llama/Llama-2-13b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-13b-chat-hf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2044873008,
+  "storage_human": "2.0 GB",
+  "base_model": "meta-llama/Llama-2-13b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sxiong/TG-LLM · Hugging Face",
+      "url": "https://huggingface.co/sxiong/TG-LLM",
+      "snippet": "Model Card for TG-LLM These are the supervised fine-tuned models for temporal reasoning with LLMs. Please check here for more details."
+    },
+    {
+      "title": "GitHub - xiongsiheng/TG-LLM: [ACL 24 main] Large Language Models Can ...",
+      "url": "https://github.com/xiongsiheng/TG-LLM",
+      "snippet": "This repository contains the code for the paper [ACL 24 (main)] Large Language Models Can Learn Temporal Reasoning. Our framework (TG-LLM) performs temporal reasoning in two steps: 1) Text-to-Temporal Graph translation: generate (relevant) temporal graph given the context and keyword (extracted from questions); 2) Temporal Graph Reasoning: perform deliberate Chain-of-Thought reasoning over the ..."
+    },
+    {
+      "title": "sxiong/TG-LLM at main - Hugging Face",
+      "url": "https://huggingface.co/sxiong/TG-LLM/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "xiongsiheng/TG-LLM | DeepWiki",
+      "url": "https://deepwiki.com/xiongsiheng/TG-LLM",
+      "snippet": "TG-LLM (Text-to-Temporal Graph LLM) is a framework that enhances large language models&#x27; ability to perform temporal reasoning. This repository implements the research presented in \"Large Language Mode"
+    }
+  ]
+}

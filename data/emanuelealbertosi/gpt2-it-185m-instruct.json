@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "emanuelealbertosi/gpt2-it-185m-instruct",
+  "slug": "emanuelealbertosi-gpt2-it-185m-instruct",
+  "author": "emanuelealbertosi",
+  "url": "https://huggingface.co/emanuelealbertosi/gpt2-it-185m-instruct",
+  "created_at": "2026-08-13T20:38:51.000Z",
+  "updated_at": "2026-08-24T07:27:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "italian",
+    "from-scratch",
+    "educational",
+    "instruct",
+    "it",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "dataset:DanielSc4/alpaca-cleaned-italian",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184973312,
+  "parameters_human": "185.0M",
+  "storage_bytes": 739908424,
+  "storage_human": "740 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emanuelealbertosi (Emanuele Albertosi) - Hugging Face",
+      "url": "https://huggingface.co/emanuelealbertosi/models",
+      "snippet": "emanuelealbertosi&#x27;s models4 Sort: Recently updated emanuelealbertosi/gpt2-it-514m-instruct Text Generation • 0.5B•Updated 1 day ago• 238"
+    },
+    {
+      "title": "emanuelealbertosi (Emanuele Albertosi) - Hugging Face",
+      "url": "https://huggingface.co/emanuelealbertosi",
+      "snippet": "Sort: Recently updated emanuelealbertosi/gpt2-it-514m-gguf Text Generation •Updated about 5 hours ago"
+    },
+    {
+      "title": "GitHub - allenai/open-instruct: AllenAI&#x27;s post-training codebase",
+      "url": "https://github.com/allenai/open-instruct",
+      "snippet": "AllenAI&#x27;s post-training codebase. Contribute to allenai/open-instruct development by creating an account on GitHub."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "transformers/src/transformers/models/gpt2/modeling_gpt2.py at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/modeling_gpt2.py",
+      "snippet": "History 1135 lines (962 loc) · 49.8 KB transformers / src / transformers / models / gpt2 / modeling_gpt2.py Top Code Blame"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4",
+  "slug": "kshitijthakkar-loggenix-moe-0-4b-0-2a-sft-s4",
+  "author": "kshitijthakkar",
+  "url": "https://huggingface.co/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4",
+  "created_at": "2026-03-06T08:00:51.000Z",
+  "updated_at": "2026-08-24T04:20:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_moe",
+    "text-generation",
+    "moe",
+    "observability",
+    "trace-analysis",
+    "tool-calling",
+    "agent-coding",
+    "conversational",
+    "en",
+    "base_model:kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s3.1",
+    "base_model:quantized:kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s3.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 390051840,
+  "parameters_human": "390.1M",
+  "storage_bytes": 3045818632,
+  "storage_human": "3.0 GB",
+  "base_model": "kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s3.1",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s3.1 · Hugging Face",
+      "url": "https://huggingface.co/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s3.1",
+      "snippet": "loggenix-moe-.4B-.2A-sft-s3.1 Model Description This is a Mixture of Experts (MoE) language model fine-tuned for various tasks including:"
+    },
+    {
+      "title": "kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4 - friendli.ai",
+      "url": "https://friendli.ai/models/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4",
+      "snippet": "Run kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Loggenix-MOE - a kshitijthakkar Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/kshitijthakkar/loggenix-moe",
+      "snippet": "Collection of Loggenix Models, Eval Dataset, Demo Playground. Soon will add the training dataset."
+    },
+    {
+      "title": "loggenix-moe-0.4B-0.2A-sft-s1 - friendli.ai",
+      "url": "https://friendli.ai/models/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s1",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

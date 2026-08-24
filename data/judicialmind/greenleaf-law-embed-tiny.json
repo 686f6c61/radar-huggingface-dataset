@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "judicialmind/greenleaf-law-embed-tiny",
+  "slug": "judicialmind-greenleaf-law-embed-tiny",
+  "author": "judicialmind",
+  "url": "https://huggingface.co/judicialmind/greenleaf-law-embed-tiny",
+  "created_at": "2026-08-22T11:37:31.000Z",
+  "updated_at": "2026-08-23T11:10:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "greenleaf_embed",
+    "embeddings",
+    "legal",
+    "retrieval",
+    "feature-extraction",
+    "mteb",
+    "mleb",
+    "legal-tech",
+    "case-law",
+    "contracts",
+    "judicialmind",
+    "sentence-similarity",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203556332,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interactive Models | JudicialMind",
+      "url": "https://judicialmind.ai/platform/interactive-models",
+      "snippet": "From individuals seeking legal assistance to legal professionals working through the complexity of modern law, JudicialMind brings interactive intelligence to every stage of legal work."
+    },
+    {
+      "title": "JudicialMind: Interactive intelligence for the legal industry",
+      "url": "https://judicialmind.ai/",
+      "snippet": "From individuals seeking legal assistance to legal professionals working through the complexity of modern law, JudicialMind brings interactive intelligence to every stage of legal work."
+    },
+    {
+      "title": "GitHub - judicialmind/judicialmind: JudicialMind - AI-powered legal ...",
+      "url": "https://github.com/judicialmind/judicialmind/blob/main/",
+      "snippet": "About Founded by Surya Saka. Building AI systems that make legal help accessible, auditable, and aligned with fiduciary duty. JudicialMind - AI-powered legal technology"
+    },
+    {
+      "title": "judicialmind/README.md at main - GitHub",
+      "url": "https://github.com/judicialmind/judicialmind/blob/main/README.md",
+      "snippet": "JudicialMind AI-powered legal technology for the access-to-justice crisis."
+    },
+    {
+      "title": "judicialmind (judicialmind) - Hugging Face",
+      "url": "https://huggingface.co/judicialmind/datasets",
+      "snippet": "Org profile for judicialmind on Hugging Face, the AI community building the future."
+    }
+  ]
+}

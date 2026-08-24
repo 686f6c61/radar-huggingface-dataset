@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "IndexErrorThe/united-0.1b-coreml",
+  "slug": "indexerrorthe-united-0-1b-coreml",
+  "author": "IndexErrorThe",
+  "url": "https://huggingface.co/IndexErrorThe/united-0.1b-coreml",
+  "created_at": "2026-08-23T10:46:01.000Z",
+  "updated_at": "2026-08-23T10:46:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Core ML | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreml",
+      "snippet": "Core ML itself builds on top of low-level primitives like Accelerate and BNNS, as well as Metal Performance Shaders. If your app integrates AI models using the latest architectures and inference techniques, see Core AI."
+    },
+    {
+      "title": "likedan/Awesome-CoreML-Models: Largest list of models for Core ... - GitHub",
+      "url": "https://github.com/likedan/Awesome-CoreML-Models",
+      "snippet": "Largest list of models for Core ML (for iOS 11+). Contribute to likedan/Awesome-CoreML-Models development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - apple/coreai-models: Model export recipes, Python primitives ...",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format. Reusable primitives — Python building blocks for authoring custom Core AI models in PyTorch. Runtime utilities — Swift package built on top of Core AI framework to run models on macOS and iOS."
+    },
+    {
+      "title": "apple/OpenELM · Hugging Face",
+      "url": "https://huggingface.co/apple/OpenELM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Core AI | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreai",
+      "snippet": "The Core AI debug gauge and Core AI instrument help you monitor and profile inference performance in your app. You can also compile models ahead of time with the coreai-build command-line tool. If your app uses model types other than neural networks, such as decision trees or tabular feature engineering, see Core ML."
+    }
+  ]
+}

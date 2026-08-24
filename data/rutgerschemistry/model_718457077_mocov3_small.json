@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rutgerschemistry/model_718457077_mocov3_small",
+  "slug": "rutgerschemistry-model_718457077_mocov3_small",
+  "author": "rutgerschemistry",
+  "url": "https://huggingface.co/rutgerschemistry/model_718457077_mocov3_small",
+  "created_at": "2026-08-23T05:40:46.000Z",
+  "updated_at": "2026-08-23T05:40:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "contrastive",
+    "gated-fusion",
+    "lamb",
+    "layernorm",
+    "mocov3",
+    "multi-query",
+    "orthogonal",
+    "relu",
+    "small",
+    "step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "snippet": "PubChem is the world&#x27;s largest collection of freely accessible chemical information. Search chemicals by name, molecular formula, structure, and other identifiers. Find chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations and more."
+    },
+    {
+      "title": "GitHub - Katherine121/mocov3: PyTorch implementation of MoCo v3 https ...",
+      "url": "https://github.com/Katherine121/mocov3",
+      "snippet": "The following results are based on ImageNet-1k self-supervised pre-training, followed by ImageNet-1k supervised training for linear evaluation or end-to-end fine-tuning. All results in these tables are based on a batch size of 4096. Pre-trained models and configs can be found at CONFIG.md."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    }
+  ]
+}

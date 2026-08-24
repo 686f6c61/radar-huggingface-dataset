@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic-NVFP4",
+  "slug": "vcruz305-muse-glimmer-30b-hermes-agentic-nvfp4",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-NVFP4",
+  "created_at": "2026-08-24T05:18:26.000Z",
+  "updated_at": "2026-08-24T05:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "muse",
+    "muse-glimmer",
+    "hermes-agent",
+    "tool-calling",
+    "agentic",
+    "nvfp4",
+    "compressed-tensors",
+    "quantization",
+    "dgx-spark",
+    "conversational",
+    "en",
+    "dataset:vcruz305/hermes-agentic-tool-sft",
+    "base_model:vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+    "base_model:quantized:vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18737219398,
+  "parameters_human": "18.74B",
+  "storage_bytes": 23309388809,
+  "storage_human": "23.3 GB",
+  "base_model": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+      "snippet": "This is an improved fine-tune of Muse Glimmer 30B for Hermes Agent and other agentic tool work. Merged 16-bit weights that teach the model to call one or two tools and stop."
+    },
+    {
+      "title": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF",
+      "snippet": "Instructions to use vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "vcruz305/muse-glimmer-nvfp4-spark-serve: SGLang - GitHub",
+      "url": "https://github.com/vcruz305/muse-glimmer-nvfp4-spark-serve",
+      "snippet": "Verified SGLang and vLLM launch recipes for the NVFP4 export of vcruz305/Muse-Glimmer-30B-Hermes-Agentic-NVFP4 on NVIDIA DGX Spark (GB10 / SM 12.1)."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B",
+      "snippet": "Dense 29.6B vision-language model with a ViT-G/14 perception encoder and 128K context, distilled from Muse Spark for local agentic use. Emits channel-scoped reasoning and XML-style ATEM tool calls rather than JSON, so it needs the dedicated `muse_glimmer` tool-call and reasoning parsers."
+    }
+  ]
+}

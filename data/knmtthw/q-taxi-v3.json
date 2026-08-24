@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KnMtthw/q-Taxi-v3",
+  "slug": "knmtthw-q-taxi-v3",
+  "author": "KnMtthw",
+  "url": "https://huggingface.co/KnMtthw/q-Taxi-v3",
+  "created_at": "2026-08-24T12:18:15.000Z",
+  "updated_at": "2026-08-24T12:18:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133945,
+  "storage_human": "133945 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KraTUZen/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/KraTUZen/q-Taxi-v3",
+      "snippet": "🚖 Q-Learning Agent on Taxi-v3 This repository contains a trained Q-Learning agent that successfully solves the Taxi-v3 environment."
+    },
+    {
+      "title": "AinTziLLo/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/AinTziLLo/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 . Usage"
+    },
+    {
+      "title": "Taxi.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/reinforcement_learning/Taxi.ipynb",
+      "snippet": "The taxi problem was first introduced in Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition. In this environment, the agent controls a taxi whose job is to pick up a passenger at one location and drop him off in his target location. Dropping of the passenger to its destination leads to a +20 reward. To encourage the agent to be as fast as possible, it receives a ..."
+    },
+    {
+      "title": "NathanaelM/q-Taxi-v3 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/100664",
+      "snippet": "This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "DimiNim/q-taxi-v3 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/96676",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    }
+  ]
+}

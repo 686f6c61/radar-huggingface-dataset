@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Muhammad-Ahmad-1263/code-switching-codesaviours-si26-muhammadahmad",
+  "slug": "muhammad-ahmad-1263-code-switching-codesaviours-si26-muhammadahmad",
+  "author": "Muhammad-Ahmad-1263",
+  "url": "https://huggingface.co/Muhammad-Ahmad-1263/code-switching-codesaviours-si26-muhammadahmad",
+  "created_at": "2026-08-23T11:19:40.000Z",
+  "updated_at": "2026-08-23T11:20:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Code Switching Codesaviours Si26 MuhammadHassaan - Hugging Face",
+      "url": "https://huggingface.co/spaces/Hassaanatif992/code-switching-codesaviours-si26-MuhammadHassaan",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "README.md · Hassaanatif992/code-switching-codesaviours-si26 ...",
+      "url": "https://huggingface.co/Hassaanatif992/code-switching-codesaviours-si26-MuhammadHassaan/blob/main/README.md",
+      "snippet": "Hassaanatif992 / code-switching-codesaviours-si26-MuhammadHassaan like 0 Token Classification Safetensors Urdu English xlm-roberta roman-urdu english code-switching language-identification Model card FilesFiles and versions xet Community Copy to bucket new main code-switching-codesaviours-si26-MuhammadHassaan /README.md Hassaanatif992 Update README.md 1ebb065 verified6 days ago preview code ..."
+    },
+    {
+      "title": "GitHub - sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-",
+      "url": "https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-",
+      "snippet": "Roman Urdu-English code-switching is how most Pakistanis actually write online, but almost no NLP tooling handles it well — models trained on \"clean\" English or Urdu break down on real mixed-language text. This project builds a labeled dataset for exactly this pattern and trains a model to tag each word by language, a building block for downstream tasks like sentiment analysis or search over ..."
+    },
+    {
+      "title": "GitHub - hassanatif992-hash/code-switching-codesaviours-si26 ...",
+      "url": "https://github.com/hassanatif992-hash/code-switching-codesaviours-si26-MuhammadHassaan/tree/main",
+      "snippet": "Contribute to hassanatif992-hash/code-switching-codesaviours-si26-MuhammadHassaan development by creating an account on GitHub."
+    },
+    {
+      "title": "[2412.16507] Adapting Whisper for Code-Switching through Encoding ...",
+      "url": "https://arxiv.org/abs/2412.16507",
+      "snippet": "Code-switching (CS) automatic speech recognition (ASR) faces challenges due to the language confusion resulting from accents, auditory similarity, and seamless language switches. Adaptation on the pre-trained multi-lingual model has shown promising performance for CS-ASR. In this paper, we adapt Whisper, which is a large-scale multilingual pre-trained speech recognition model, to CS from both ..."
+    }
+  ]
+}

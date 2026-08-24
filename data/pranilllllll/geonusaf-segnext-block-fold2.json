@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/geonusaf-segNext-block-fold2",
+  "slug": "pranilllllll-geonusaf-segnext-block-fold2",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold2",
+  "created_at": "2026-08-23T15:47:01.000Z",
+  "updated_at": "2026-08-24T03:59:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segnext",
+    "mscan",
+    "geonusaf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2363506811,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pranilllllll/geonusaf-segNext-block-fold0 · Discussions",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold0/discussions",
+      "snippet": "Pranilllllll / geonusaf-segNext-block-fold0 like 0 semantic-segmentation remote-sensing segnext mscan geonusaf License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=mscan",
+      "snippet": "Explore machine learning models. 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: mscan Clear all"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Security Incident Case: Encrypted Reasoning Blocks of Proprietary ...",
+      "url": "https://nsfocusglobal.com/ai-security-incident-case-encrypted-reasoning-blocks-of-proprietary-llms-can-be-stolen-via-cross-model-replay/",
+      "snippet": "The research reveals a common architectural flaw in the reasoning model APIs of three major AI providers, Anthropic, OpenAI, and Google, which allows attackers to extract complete plaintext chains of thought from the encrypted reasoning blocks of their flagship models."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

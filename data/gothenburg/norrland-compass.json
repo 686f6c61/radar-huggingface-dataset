@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gothenburg/Norrland-Compass",
+  "slug": "gothenburg-norrland-compass",
+  "author": "Gothenburg",
+  "url": "https://huggingface.co/Gothenburg/Norrland-Compass",
+  "created_at": "2026-08-24T09:53:07.000Z",
+  "updated_at": "2026-08-24T09:53:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atNorth joins Nordic Compass AI infrastructure alliance",
+      "url": "https://btw.media/en/atnorth-joins-nordic-compass-ai-infrastructure-alliance",
+      "snippet": "What to Watch Track whether Nordic Compass moves beyond its Gothenburg summit launch to announce concrete cross-sector projects, particularly in energy-compute coordination or shared capacity infrastructure. The broader signal is whether other regional data centre operators follow suit in forming multi-industry alliances."
+    },
+    {
+      "title": "atNorth Joins Nordic Compass Alliance to Support Nordic AI ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/atnorth-joins-nordic-compass-alliance-support-ai-infrastructure-8bnaf",
+      "snippet": "The alliance plans to unveil its first initiatives during the Nordic Compass Summit scheduled for November 2026 in Gothenburg, Sweden. While detailed project plans have not yet been disclosed, the ..."
+    },
+    {
+      "title": "atNorth Joins Nordic Compass Alliance for AI Infrastructure",
+      "url": "https://datacentremagazine.com/news/atnorth-joins-nordic-compass-alliance-for-ai-infrastructure",
+      "snippet": "As Europe races to build enough infrastructure for the AI boom, Nordic data centre operator atNorth is teaming up with some of the region&#x27;s biggest industrial and energy names to help shape what comes next. The company has joined more than 25 organisations in launching Nordic Compass, a pan-Nordic initative bringing together critical sectors as demand for AI compute continues to climb. The ..."
+    },
+    {
+      "title": "atNorth Joins Nordic Compass on AI Infrastructure - ENGtechnica",
+      "url": "https://engtechnica.com/atnorth-joins-nordic-compass-on-ai-infrastructure/",
+      "snippet": "Image: atNorth REYKJAVÍK, Iceland, May 13, 2026 - atNorth joined Nordic Compass (The Nordic Round Table for Industry) as the region prepares coordinated action on capital markets, deep tech, defense and energy. Chaired by former Finnish Prime Minister Jyrki Katainen, the alliance plans to present its first initiatives at the Nordic Compass Summit in Gothenburg, Sweden, in November 2026 ..."
+    },
+    {
+      "title": "AI Gothenburg — A founder-first hub for AI builders",
+      "url": "https://aigothenburg.com/",
+      "snippet": "A new home for AI founders AI Gothenburg is a founder-first hub for building new AI companies in close proximity to partners, investors and industry. The focus is on venture creation, in an environment designed to make it easier to go from idea to real company by working alongside others building with new technology."
+    }
+  ]
+}

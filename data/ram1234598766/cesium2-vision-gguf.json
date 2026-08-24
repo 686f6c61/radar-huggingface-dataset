@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ram1234598766/Cesium2-vision-GGUF",
+  "slug": "ram1234598766-cesium2-vision-gguf",
+  "author": "ram1234598766",
+  "url": "https://huggingface.co/ram1234598766/Cesium2-vision-GGUF",
+  "created_at": "2026-08-23T04:41:03.000Z",
+  "updated_at": "2026-08-23T16:20:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen2.5-vl",
+    "vision",
+    "multimodal",
+    "morph-ai",
+    "cesium2",
+    "image-text-to-text",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 3268329280,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "ram1234598766-dotcom/Cesium2: MORPH-AI v6 (Cesium2) - GitHub",
+      "url": "https://github.com/ram1234598766-dotcom/Cesium2",
+      "snippet": "MORPH-AI v6 (Cesium2) - modular multimodal LLM, Ollama model, VS Code extension - ram1234598766-dotcom/Cesium2"
+    },
+    {
+      "title": "Vision Models (GGUF) - a lmstudio-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/lmstudio-ai/vision-models-gguf",
+      "snippet": "How to use: Download a \"mmproj\" model file + one or more of the primary model files."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sigmanih/sigma-alpaca-3b-gguf",
+  "slug": "sigmanih-sigma-alpaca-3b-gguf",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/sigma-alpaca-3b-gguf",
+  "created_at": "2026-08-23T14:31:38.000Z",
+  "updated_at": "2026-08-23T14:33:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "llama.cpp",
+    "en",
+    "it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377408,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF model list - mitjafelicijan.github.io",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "brittlewis12/stablelm-zephyr-3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/brittlewis12/stablelm-zephyr-3b-GGUF",
+      "snippet": "StableLM Zephyr 3B is a 3 billion parameter instruction tuned inspired by HugginFaceH4&#x27;s Zephyr 7B training pipeline this model was trained on a mix of publicly available datasets, synthetic datasets using Direct Preference Optimization (DPO), evaluation for this model based on MT Bench and Alpaca Benchmark. What is GGUF?"
+    },
+    {
+      "title": "pankajmathur/orca_alpaca_3b · Hugging Face",
+      "url": "https://huggingface.co/pankajmathur/orca_alpaca_3b",
+      "snippet": "An Open_LLaMA-3B model trained on explain tuned datasets, created using Instructions and Input from Alpaca datasets and applying Orca Research Paper dataset construction approaches."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    }
+  ]
+}

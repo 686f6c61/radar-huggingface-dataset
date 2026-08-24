@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rehan-hehe/ast-model",
+  "slug": "rehan-hehe-ast-model",
+  "author": "rehan-hehe",
+  "url": "https://huggingface.co/rehan-hehe/ast-model",
+  "created_at": "2026-08-23T12:38:41.000Z",
+  "updated_at": "2026-08-23T12:49:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 345230320,
+  "storage_human": "345 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Music-Emotion-Recognition-AST-DEAM-/model at main · rehan-hehe/Music ...",
+      "url": "https://github.com/rehan-hehe/Music-Emotion-Recognition-AST-DEAM-/blob/main/model",
+      "snippet": "This project fine-tunes a pre-trained Audio Spectrogram Transformer (AST) model on the DEAM (Database for Emotion Analysis in Music) dataset. - rehan-hehe/Music-Emotion-Recognition-AST-DEAM-"
+    },
+    {
+      "title": "rehan-hehe/Music-Emotion-Recognition-AST-DEAM- - GitHub",
+      "url": "https://github.com/rehan-hehe/Music-Emotion-Recognition-AST-DEAM-",
+      "snippet": "This project fine-tunes a pre-trained Audio Spectrogram Transformer (AST) model on the DEAM (Database for Emotion Analysis in Music) dataset. The goal is to perform regression, predicting the continuous emotional dimensions of valence (how positive/negative an emotion is) and arousal (how calm/exciting it is) directly from audio clips. The Valence-Arousal space used for emotion modeling."
+    },
+    {
+      "title": "Audio Spectrogram Transformer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/audio-spectrogram-transformer",
+      "snippet": "Overview The Audio Spectrogram Transformer model was proposed in AST: Audio Spectrogram Transformer by Yuan Gong, Yu-An Chung, James Glass. The Audio Spectrogram Transformer applies a Vision Transformer to audio, by turning audio into an image (spectrogram). The model obtains state-of-the-art results for audio classification."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "An explainable and accurate transformer-based deep learning model for ...",
+      "url": "https://www.nature.com/articles/s41598-025-89533-9",
+      "snippet": "In this study, we confirmed that our AI model—which is designed based on AST, a simple and lightweight architecture—shows higher accuracy in wheezing classification than the CNN-based AI model ..."
+    }
+  ]
+}

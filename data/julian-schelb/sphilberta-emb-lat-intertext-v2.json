@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/sphilberta-emb-lat-intertext-v2",
+  "slug": "julian-schelb-sphilberta-emb-lat-intertext-v2",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/sphilberta-emb-lat-intertext-v2",
+  "created_at": "2026-08-24T13:50:07.000Z",
+  "updated_at": "2026-08-24T13:55:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "sentence-similarity",
+    "intertextuality",
+    "latin",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:bowphs/SPhilBerta",
+    "base_model:finetune:bowphs/SPhilBerta",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135194112,
+  "parameters_human": "135.2M",
+  "storage_bytes": 540798824,
+  "storage_human": "541 MB",
+  "base_model": "bowphs/SPhilBerta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julian-schelb/SPhilBerta-emb-lat-intertext-v1 · Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/SPhilBerta-emb-lat-intertext-v1",
+      "snippet": "This model is a fine-tuned version of bowphs/SPhilBerta for generating embeddings of Latin texts to detect intertextual relationships. The model is part of the Loci Similes benchmark setup (Schelb et al., 2026), evaluated on expert-verified Latin intertextual links."
+    },
+    {
+      "title": "julian-schelb/SPhilBerta-latin-intertextuality-v1 · Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/SPhilBerta-latin-intertextuality-v1",
+      "snippet": "This is a sentence-transformers model finetuned from bowphs/SPhilBerta. It maps sentences & paragraphs to a 768-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more."
+    },
+    {
+      "title": "julianschelb (Julian Schelb) / Repositories · GitHub",
+      "url": "https://github.com/julianschelb?tab=repositories",
+      "snippet": "A native macOS document manager built with Tauri, React 19, TypeScript, and Tailwind CSS v4. Import, organise, tag, and preview your documents; all stored locally on your Mac."
+    },
+    {
+      "title": "julianschelb (Julian Schelb) · GitHub",
+      "url": "https://github.com/julianschelb/",
+      "snippet": "👋 Hi, I&#x27;m Julian, a Research Assistant at the University of Konstanz with an interest in using Python for data analysis and Natural Language Processing with a focus on LLMs."
+    },
+    {
+      "title": "locisimiles · PyPI",
+      "url": "https://pypi.org/project/locisimiles/",
+      "snippet": "LociSimiles is a Python package for finding intertextual links in Latin literature using pre-trained language models."
+    }
+  ]
+}

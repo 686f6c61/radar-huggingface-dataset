@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "takeru01/task1_1_5_rgb_act_chunk97_bs32_0823_1229",
+  "slug": "takeru01-task1_1_5_rgb_act_chunk97_bs32_0823_1229",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk97_bs32_0823_1229",
+  "created_at": "2026-08-23T12:55:10.000Z",
+  "updated_at": "2026-08-23T12:55:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:takeru01/task1_1_5_rgb",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51681934,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206781440,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "task1_1_5_rgb_act_chunk91_bs16_0823_1223 - Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk91_bs16_0823_1223",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "takeru01/task1_1_3_rgb_act_chunk76_bs16_v2 · Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_3_rgb_act_chunk76_bs16_v2",
+      "snippet": "Instructions to use takeru01/task1_1_3_rgb_act_chunk76_bs16_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "OpenNeuro",
+      "url": "https://openneuro.org/",
+      "snippet": "OpenNeuro is a free platform for sharing, browsing, and managing neuroimaging data, fostering open and reproducible research in the field."
+    },
+    {
+      "title": "How to Change the RGB Lighting on Your Ducky Keyboard - OcUK",
+      "url": "https://www.overclockers.co.uk/blog/how-to-change-the-rgb-lighting-on-your-ducky-keyboard/",
+      "snippet": "Here at Overclockers UK, we&#x27;ve compiled all of our expert knowledge about Ducky&#x27;s incredible range of gaming keyboards into one handy article. Including, how to adjust the RGB lighting and all of the relevant keyboard shortcuts to help boost your workflow and productivity."
+    },
+    {
+      "title": "Book - proceedings.neurips.cc",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025",
+      "snippet": "Advances in Neural Information Processing Systems 38 NeurIPS 2025 Edited by D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen"
+    }
+  ]
+}

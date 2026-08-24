@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ankush-07/tds-last-qn",
+  "slug": "ankush-07-tds-last-qn",
+  "author": "Ankush-07",
+  "url": "https://huggingface.co/Ankush-07/tds-last-qn",
+  "created_at": "2026-08-23T12:44:40.000Z",
+  "updated_at": "2026-08-23T12:47:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ArghyaPal-07/tds-project-2",
+      "url": "https://github.com/ArghyaPal-07/tds-project-2",
+      "snippet": "An intelligent, autonomous agent built with LangGraph and LangChain that solves data-related quizzes involving web scraping, data processing, analysis, and visualization tasks. The system uses Google&#x27;s Gemini 2.5 Flash model to orchestrate tool usage and make decisions ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily with release dates, descriptions, and official announcements."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude, Gemini - Quetext",
+      "url": "https://www.quetext.com/ai-detector",
+      "snippet": "Detect AI-generated content from ChatGPT, GPT-5, Claude & Gemini with Quetext&#x27;s free AI detector, line-by-line analysis, no signup required."
+    },
+    {
+      "title": "tds-hello-ankush-mi07 · PyPI",
+      "url": "https://pypi.org/project/tds-hello-ankush-mi07/",
+      "snippet": "A tiny greeter library from TDS 2026 at IIT Madras."
+    }
+  ]
+}

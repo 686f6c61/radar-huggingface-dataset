@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "latticetower/model-v0",
+  "slug": "latticetower-model-v0",
+  "author": "latticetower",
+  "url": "https://huggingface.co/latticetower/model-v0",
+  "created_at": "2026-08-20T15:32:54.000Z",
+  "updated_at": "2026-08-23T13:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42123730,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "latticetower (Tanya Malygina) - Hugging Face",
+      "url": "https://huggingface.co/latticetower/spaces",
+      "snippet": "Repro: Deep sequence models tend to memorize geometrically; it is unclear why 🎯 Explore research logbook and sync with an AI agent latticetower about 1 hour ago Running"
+    },
+    {
+      "title": "latticetower (Tanya Malygina) - Hugging Face",
+      "url": "https://huggingface.co/latticetower/datasets",
+      "snippet": "bioinformatics, medical imaging, nlp latticetower 1246 Follow andyolivers&#x27;s profile picturePhysiQuanty&#x27;s profile picturenofater&#x27;s profile picture 5 followers · 20 following latticetower tatiana-malygina-56b95425"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Lattice Tower 3D Models for Free Download and Print | Tripo AI",
+      "url": "https://studio.tripo3d.ai/3d-model-gallery/lattice-tower",
+      "snippet": "Free & premium 167 lattice tower 3D models, ready for 3D printing, game development, 3D design, eCommerce, AR/VR and more. View & Download in STL, FBX, GLB, OBJ, USDZ formats."
+    }
+  ]
+}

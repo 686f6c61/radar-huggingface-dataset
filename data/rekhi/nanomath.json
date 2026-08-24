@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rekhi/nanomath",
+  "slug": "rekhi-nanomath",
+  "author": "rekhi",
+  "url": "https://huggingface.co/rekhi/nanomath",
+  "created_at": "2026-08-23T11:59:28.000Z",
+  "updated_at": "2026-08-23T12:06:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mathematics",
+    "character-level",
+    "gpt",
+    "from-scratch",
+    "nanogpt",
+    "text-generation",
+    "en",
+    "dataset:deepmind/math_dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228789818,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reka AI",
+      "url": "https://reka.ai/",
+      "snippet": "Reka AI builds natively multimodal models (Spark, Edge, Flash, Core) for video, image, audio, and text. Used by enterprises in security, media, and defense."
+    },
+    {
+      "title": "rekhi (32) - Hugging Face",
+      "url": "https://huggingface.co/rekhi",
+      "snippet": "None yet. Recent Activity. updated a dataset about 1 month ago. rekhi/deadneurons-registry. published a dataset about 1 month ago"
+    },
+    {
+      "title": "Reka and Moonvalley Join Forces to Advance Models and Infrastructure ...",
+      "url": "https://reka.ai/news/reka-and-moonvalley-join-forces-to-advance-models-and-infrastructure-for-physical-ai",
+      "snippet": "San Francisco, CA — June 4 — Reka, an AI research lab building foundational intelligence for the physical world, has joined forces with Moonvalley, adding a team of 50 multimodal AI researchers and engineers to accelerate development of next-generation video AI and physical reasoning capabilities."
+    },
+    {
+      "title": "Reka AI | nextomoro",
+      "url": "https://nextomoro.com/reka-ai/",
+      "snippet": "Reka&#x27;s principal research-and-product competitors. Mistral AI, Cohere, AI21 Labs. Adjacent international AI Insurgents with text-first focus. Different architectural positioning. DeepSeek, Z.AI, Moonshot AI, Alibaba Qwen / DAMO, Tencent Hunyuan, ByteDance Seed. Chinese frontier multimodal-model providers. Substantial open-weights output ..."
+    },
+    {
+      "title": "Nano Banana 2: Google&#x27;s latest AI image generation model",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+      "snippet": "Our latest image generation model offers advanced world knowledge, production-ready specs, subject consistency and more, all at Flash speed."
+    }
+  ]
+}

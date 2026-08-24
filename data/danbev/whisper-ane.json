@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "danbev/whisper-ane",
+  "slug": "danbev-whisper-ane",
+  "author": "danbev",
+  "url": "https://huggingface.co/danbev/whisper-ane",
+  "created_at": "2026-08-24T12:48:41.000Z",
+  "updated_at": "2026-08-24T12:57:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "whisper",
+    "ane",
+    "aneforge",
+    "asr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89605440,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "danbev (Daniel Bevenius) · GitHub",
+      "url": "https://github.com/danbev",
+      "snippet": "August 2026 Created 36 commits in 5 repositories ggml-org/whisper.cpp 13 commits danbev/learning-ai 10 commits ggml-org/llama.cpp 8 commits ggml-org/convert 4 commits ggml-org/ggml 1 commit"
+    },
+    {
+      "title": "danbev (Daniel Bevenius) - Hugging Face",
+      "url": "https://huggingface.co/danbev/models",
+      "snippet": "Organizations danbev&#x27;s models7 Sort: Recently updated danbev/nemotron-asr-streaming-GGUF Updated 16 days ago"
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    },
+    {
+      "title": "Whisper Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/whisper-1",
+      "snippet": "General-purpose speech recognition model Compare"
+    }
+  ]
+}

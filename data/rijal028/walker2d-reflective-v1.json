@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rijal028/walker2d-reflective-v1",
+  "slug": "rijal028-walker2d-reflective-v1",
+  "author": "rijal028",
+  "url": "https://huggingface.co/rijal028/walker2d-reflective-v1",
+  "created_at": "2026-08-23T11:54:11.000Z",
+  "updated_at": "2026-08-23T11:54:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "mujoco",
+    "walker2d",
+    "fault-tolerance",
+    "dynamic-adaptation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 879491,
+  "storage_human": "879491 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HumanCompatibleAI/ppo-seals-Walker2d-v1 · Hugging Face",
+      "url": "https://huggingface.co/HumanCompatibleAI/ppo-seals-Walker2d-v1",
+      "snippet": "This is a trained model of a PPO agent playing seals/Walker2d-v1 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "rijal028 (rijal saepuloh) - Hugging Face",
+      "url": "https://huggingface.co/rijal028",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 7 days ago ... published a model 7 days ago"
+    },
+    {
+      "title": "GitHub - PawelMlyniec/Walker-2D",
+      "url": "https://github.com/PawelMlyniec/Walker-2D",
+      "snippet": "Contribute to PawelMlyniec/Walker-2D development by creating an account on GitHub."
+    },
+    {
+      "title": "Trustworthy Reinforcement Learning Against Intrinsic Vulnerabilities ...",
+      "url": "https://arxiv.org/html/2209.08025v1",
+      "snippet": "In addition, when viewing RL as two stages (model training followed by model deployment), we can study the vulnerabilities of the two stages alone and the connections between them. Figure 1. Overview diagram for trustworthy RL against intrinsic vulnerabilities: robustness, safety, generalization"
+    },
+    {
+      "title": "rllab/rllab/envs/mujoco/walker2d_env.py at master · rll/rllab",
+      "url": "https://github.com/rll/rllab/blob/master/rllab/envs/mujoco/walker2d_env.py",
+      "snippet": "rllab is a framework for developing and evaluating reinforcement learning algorithms, fully compatible with OpenAI Gym. - rll/rllab"
+    }
+  ]
+}

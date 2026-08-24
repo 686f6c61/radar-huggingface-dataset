@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "burrnboy0012/kaggle_env",
+  "slug": "burrnboy0012-kaggle_env",
+  "author": "burrnboy0012",
+  "url": "https://huggingface.co/burrnboy0012/kaggle_env",
+  "created_at": "2026-08-22T14:54:47.000Z",
+  "updated_at": "2026-08-23T06:37:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13066344055,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "GitHub - Kaggle/kaggle-environments",
+      "url": "https://github.com/Kaggle/kaggle-environments",
+      "snippet": "Kaggle Environments was created to evaluate episodes. While other libraries have set interface precedents (such as Open.ai Gym), the emphasis of this library focuses on: Episode evaluation (compared to training agents). Configurable environment/agent lifecycles. Simplified agent and environment creation. Cross language compatible/transpilable syntax/interfaces."
+    },
+    {
+      "title": "Getting Started on Kaggle | Kaggle",
+      "url": "https://www.kaggle.com/docs/models",
+      "snippet": "What is Kaggle Models Kaggle Models provides a way to discover, use, and share models for machine learning and generative AI applications. Kaggle Models is a repository of pre-trained models that are deeply integrated with Kaggle&#x27;s platform, making them easy to use in Kaggle Competitions and Notebooks."
+    },
+    {
+      "title": "Kaggle: The World&#x27;s AI Proving Ground",
+      "url": "https://www.kaggle.com/",
+      "snippet": "The World&#x27;s AI Proving Ground Discover what actually works in AI. Join 33 M+ builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    }
+  ]
+}

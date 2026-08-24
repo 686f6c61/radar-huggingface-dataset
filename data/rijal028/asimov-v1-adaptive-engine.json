@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rijal028/asimov-v1-adaptive-engine",
+  "slug": "rijal028-asimov-v1-adaptive-engine",
+  "author": "rijal028",
+  "url": "https://huggingface.co/rijal028/asimov-v1-adaptive-engine",
+  "created_at": "2026-08-23T04:19:45.000Z",
+  "updated_at": "2026-08-23T04:19:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "humanoid",
+    "physical-ai",
+    "mujoco",
+    "predictive-coding",
+    "asimov-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2047121,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rijal028 (rijal saepuloh) - Hugging Face",
+      "url": "https://huggingface.co/rijal028",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 7 days ago ... published a model 7 days ago"
+    },
+    {
+      "title": "GitHub - BismuthCloud/asimov: A Python framework for building AI agent ...",
+      "url": "https://github.com/BismuthCloud/asimov",
+      "snippet": "A Python framework for building AI agent systems with robust task management in the form of a graph execution engine, inference capabilities, and caching. We support advanced features like State Snapshotting, Middleware, Agent Directed Graph Execution, Open Telemetry Integrations and more. 🔮 Asimov is the foundation of bismuth.sh an end to end AI software developer that can handle many ..."
+    },
+    {
+      "title": "GitHub - rijal028/rijal028 · GitHub",
+      "url": "https://github.com/rijal028/rijal028",
+      "snippet": "Independent AI researcher and developer from Indonesia. I work at the intersection of AI governance, model evaluation, and developer tooling — building concepts and tools that make AI more transparent, safe, and accessible."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

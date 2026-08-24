@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "manishehehe/whisper-small-telugu-lora",
+  "slug": "manishehehe-whisper-small-telugu-lora",
+  "author": "manishehehe",
+  "url": "https://huggingface.co/manishehehe/whisper-small-telugu-lora",
+  "created_at": "2026-08-23T05:42:44.000Z",
+  "updated_at": "2026-08-23T05:50:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "lora",
+    "automatic-speech-recognition",
+    "telugu",
+    "indic",
+    "te",
+    "dataset:google/fleurs",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14176064,
+  "storage_human": "14 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AkhilaJallavaram24/whisper-small-telugu-lora · Hugging Face",
+      "url": "https://huggingface.co/AkhilaJallavaram24/whisper-small-telugu-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "akhilajallavaram/whisper-small-telugu - GitHub",
+      "url": "https://github.com/akhilajallavaram/whisper-small-telugu",
+      "snippet": "This project is an end-to-end orchestration pipeline to extract Telugu audio data from YouTube, process it into a clean dataset, and fine-tune an OpenAI Whisper model using Parameter-Efficient Fine-Tuning (PEFT/LoRA)."
+    },
+    {
+      "title": "Samruddhi1916/whisper-telugu-lora · Hugging Face",
+      "url": "https://huggingface.co/Samruddhi1916/whisper-telugu-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - bhavyakeerthi3/whisper-lora-indian-speech-recognition",
+      "url": "https://github.com/bhavyakeerthi3/whisper-lora-indian-speech-recognition",
+      "snippet": "Fine-tuning of OpenAI Whisper with LoRA adapters for Telugu, Hindi, and English ASR, with distributed preprocessing via Apache Spark and multi-GPU training support via Accelerate/FSDP and DeepSpeed. These are target metrics based on published comparable results (IIT Madras whisper-telugu-small ..."
+    },
+    {
+      "title": "whisper-telugu-small huggingface.co api & vasista22 whisper-telugu ...",
+      "url": "https://www.toolify.ai/ai-model/vasista22-whisper-telugu-small",
+      "snippet": "Whisper Telugu Small This model is a fine-tuned version of openai/whisper-small on the Telugu data available from multiple publicly available ASR corpuses. It has been fine-tuned as a part of the Whisper fine-tuning sprint."
+    }
+  ]
+}

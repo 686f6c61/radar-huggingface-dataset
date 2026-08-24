@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dasko2-0/qwen2.5-coder-3b-mentor",
+  "slug": "dasko2-0-qwen2-5-coder-3b-mentor",
+  "author": "Dasko2-0",
+  "url": "https://huggingface.co/Dasko2-0/qwen2.5-coder-3b-mentor",
+  "created_at": "2026-08-24T09:37:29.000Z",
+  "updated_at": "2026-08-24T09:43:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349086,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-3b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EasierAI/Qwen-2.5-Coder-3B · Hugging Face",
+      "url": "https://huggingface.co/EasierAI/Qwen-2.5-Coder-3B",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Furthermore, the Qwen2.5-Coder-32B-Instruct achieved accuracy rates of 49.6% on the complete split and 27.0% on the hard split, establishing it as the best-performing open-source code generation model and surpassing several closed-source APIs."
+    },
+    {
+      "title": "GitHub - worldart/QwenLM_Qwen2.5-Coder: Qwen2.5-Coder is the code ...",
+      "url": "https://github.com/worldart/QwenLM_Qwen2.5-Coder",
+      "snippet": "The model completes the code snipplets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-7B:"
+    }
+  ]
+}

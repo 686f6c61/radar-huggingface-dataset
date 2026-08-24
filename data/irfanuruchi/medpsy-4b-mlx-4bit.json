@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/MedPsy-4B-MLX-4bit",
+  "slug": "irfanuruchi-medpsy-4b-mlx-4bit",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/MedPsy-4B-MLX-4bit",
+  "created_at": "2026-08-23T12:30:43.000Z",
+  "updated_at": "2026-08-23T12:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "medical",
+    "healthcare",
+    "clinical-reasoning",
+    "reasoning",
+    "apple-silicon",
+    "quantized",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:qvac/MedPsy-4B",
+    "base_model:quantized:qvac/MedPsy-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 628676096,
+  "parameters_human": "628.7M",
+  "storage_bytes": 2274445067,
+  "storage_human": "2.3 GB",
+  "base_model": "qvac/MedPsy-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Irfanuruchi/Qwen3-4B-Computer-Science-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Irfanuruchi/Qwen3-4B-Computer-Science-MLX-4bit",
+      "snippet": "Irfanuruchi / Qwen3-4B-Computer-Science-MLX-4bit like 0 Text Generation MLX Safetensors English qwen3 computer-science software-engineering programming mlx-lm apple-silicon 4-bit precision quantized code python conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=4bit",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "MedPsy 4B — Hardware Requirements & Compatibility | llmrun",
+      "url": "https://llmrun.dev/model/qvac-medpsy-4b",
+      "snippet": "MedPsy 4B — Hardware Requirements & GPU Compatibility Chat MedPsy 4B is a 4.4B-parameter open language model from qvac. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 3.14 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "MLX Studio — Chat, Code, Generate Images & More on Mac | On-Device AI ...",
+      "url": "https://mlx.studio/",
+      "snippet": "MLX Studio — create anything locally on your Mac. Chat, agentic coding, image generation & editing with Flux and Qwen, voice, vision, and reasoning. 5-layer caching, 20+ built-in tools, Anthropic + OpenAI APIs, built-in GGUF-to-MLX and JANG model converter. The most capable on-device AI app for Apple Silicon."
+    },
+    {
+      "title": "Models - QVAC by Tether",
+      "url": "https://qvac.tether.io/models/",
+      "snippet": "The model cards list the models under the Apache 2.0 license. Developers should still review the model cards and applicable terms carefully. VisionPsy-Nano is a family of compact vision-language models developed by Tether Data&#x27;s AI Research for edge and on-device deployment."
+    }
+  ]
+}

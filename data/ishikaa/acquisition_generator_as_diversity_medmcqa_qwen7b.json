@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_diversity_medmcqa_qwen7b",
+  "slug": "ishikaa-acquisition_generator_as_diversity_medmcqa_qwen7b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_diversity_medmcqa_qwen7b",
+  "created_at": "2026-08-22T06:56:44.000Z",
+  "updated_at": "2026-08-23T07:26:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473926528,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ishikaa/acquisition_generator_AS_diversity_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_diversity_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_diversity_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ishikaa/acquisition_qwen3bins_medmcqa_diversity · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_qwen3bins_medmcqa_diversity",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "acquisition_generator_AS_diversity_numina_qwen7b - friendli.ai",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_generator_AS_diversity_numina_qwen7b",
+      "snippet": "Deploy acquisition_generator_AS_diversity_numina_qwen7b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "medmcqa/model.py at main · medmcqa/medmcqa · GitHub",
+      "url": "https://github.com/medmcqa/medmcqa/blob/main/model.py",
+      "snippet": "A large-scale (194k), Multiple-Choice Question Answering (MCQA) dataset designed to address realworld medical entrance exam questions. - medmcqa/medmcqa"
+    },
+    {
+      "title": "MedMCQA Homepage - GitHub",
+      "url": "https://github.com/medmcqa/medmcqa.github.io/blob/main/index.html",
+      "snippet": "MedMCQA has More than 194k high-quality AIIMS & NEET PG entrance exam MCQs covering 2.4k healthcare topics and 21 medical subjects are collected\",\" with an average token length of 12.77 and high topical diversity."
+    }
+  ]
+}

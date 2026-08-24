@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "camgeodesic/control-pretrain-30b-baseline-ckpts",
+  "slug": "camgeodesic-control-pretrain-30b-baseline-ckpts",
+  "author": "camgeodesic",
+  "url": "https://huggingface.co/camgeodesic/control-pretrain-30b-baseline-ckpts",
+  "created_at": "2026-08-23T11:03:29.000Z",
+  "updated_at": "2026-08-23T13:52:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149239296,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Downloading models · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/models-downloading",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA AI Trained Itself on a 30B Model: Corrected Its Own Broken ...",
+      "url": "https://www.techtimes.com/articles/319123/20260626/nvidia-ai-trained-itself-30b-model-corrected-its-own-broken-metric-mid-run.htm",
+      "snippet": "NVIDIA AI Trained Itself on a 30B Model: Corrected Its Own Broken Metric Mid-Run Autonomous post-training loop placed 8th of 4,000 and then rewrote its own evaluation strategy."
+    },
+    {
+      "title": "GitHub - open-mmlab/mmpose: OpenMMLab Pose Estimation Toolbox and ...",
+      "url": "https://github.com/open-mmlab/mmpose",
+      "snippet": "OpenMMLab Pose Estimation Toolbox and Benchmark. Contribute to open-mmlab/mmpose development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - verl-project/verl: verl/HybridFlow: A Flexible and Efficient ...",
+      "url": "https://github.com/verl-project/verl",
+      "snippet": "verl is a flexible, efficient and production-ready RL training library for large language models (LLMs). verl is the open-source version of HybridFlow: A Flexible and Efficient RLHF Framework paper. verl is flexible and easy to use with: Easy extension of diverse RL algorithms: The hybrid-controller programming model enables flexible representation and efficient execution of complex post ..."
+    }
+  ]
+}

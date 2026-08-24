@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shamique/Light-Weight-Neuromorphic-Sleep-Stage-Model",
+  "slug": "shamique-light-weight-neuromorphic-sleep-stage-model",
+  "author": "shamique",
+  "url": "https://huggingface.co/shamique/Light-Weight-Neuromorphic-Sleep-Stage-Model",
+  "created_at": "2026-08-24T15:18:07.000Z",
+  "updated_at": "2026-08-24T15:18:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neuromorphic Sleep Stage Scoring - GitHub",
+      "url": "https://github.com/shamiquekhan/neuromorphic-sleep-staging-pipeline-project",
+      "snippet": "An end-to-end deep learning pipeline for automatic sleep stage classification from polysomnography (PSG) signals. The system classifies 30-second EEG/EOG/EMG epochs into 5 AASM sleep stages (Wake, N1, N2, N3, REM) using a dual-input Teacher model (CNN + Transformer, κ=0.636) distilled into a lightweight Student model - shamiquekhan ..."
+    },
+    {
+      "title": "Pulse · shamiquekhan/neuromorphic-sleep-staging-pipeline-project",
+      "url": "https://github.com/shamiquekhan/neuromorphic-sleep-staging-pipeline-project/pulse",
+      "snippet": "An end-to-end deep learning pipeline for automatic sleep stage classification from polysomnography (PSG) signals. The system classifies 30-second EEG/EOG/EMG epochs into 5 AASM sleep stages (Wake, N1, N2, N3, REM) using a dual-input Teacher model (CNN + Transformer, κ=0.636) distilled into a lightweight Student model - Pulse · shamiquekhan ..."
+    },
+    {
+      "title": "Automated Sleep Staging via Knowledge Distillation Achieves Expert ...",
+      "url": "https://www.linkedin.com/posts/shamique-khan_github-shamiquekhanneuromorphic-sleep-staging-pipeline-project-activity-7457762319180148736-w8pQ",
+      "snippet": "The system classifies 30-second EEG/EOG/EMG epochs into 5 AASM sleep stages (Wake, N1, N2, N3, REM) using a dual-input Teacher model (CNN + Transformer, κ=0.636) distilled into a lightweight ..."
+    },
+    {
+      "title": "A sleep staging model on wavelet-based adaptive spectrogram ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010482524003846",
+      "snippet": "We proposed a model that uses wavelet-based adaptive spectrogram reconstruction (WASR) to capture the time-frequency characteristics of signals, combined with the constructed light weight CNN to achieve the classification of sleep stages."
+    },
+    {
+      "title": "Neuromorphic Sleep Stage Classification Using Time-Domain ISI Features ...",
+      "url": "https://ieeexplore.ieee.org/document/11327595",
+      "snippet": "This work presents a lightweight, biologically inspired software framework for five-stage sleep classification using single-channel EEG. Unlike conventional approaches that rely on frequency- domain transformations and deep architectures, this method operates entirely in the time domain. EEG signals (C4-A1) are encoded into spike trains via an Adaptive Exponential Integrate-and-Fire (AdEx ..."
+    }
+  ]
+}

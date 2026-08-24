@@ -5,7 +5,7 @@
   "author": "regnant-io",
   "url": "https://huggingface.co/regnant-io/kw5-lite-instruct",
   "created_at": "2026-08-21T22:11:59.000Z",
-  "updated_at": "2026-08-22T06:03:05.000Z",
+  "updated_at": "2026-08-22T19:59:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 567,
+  "downloads_30d": 1645,
   "trending_score": 0,
   "parameters": 109529856,
   "parameters_human": "109.5M",

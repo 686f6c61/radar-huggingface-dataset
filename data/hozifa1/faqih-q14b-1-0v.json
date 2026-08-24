@@ -5,7 +5,7 @@
   "author": "hozifa1",
   "url": "https://huggingface.co/hozifa1/Faqih-Q14b-1.0V",
   "created_at": "2026-08-22T21:41:39.000Z",
-  "updated_at": "2026-08-22T21:42:39.000Z",
+  "updated_at": "2026-08-22T21:51:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "safetensors",
+    "qwen2",
     "islamic-ai",
     "fiqh",
     "qwen2.5",
@@ -30,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 454,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 3896576950,
-  "storage_human": "3.9 GB",
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555910,
+  "storage_human": "29.6 GB",
   "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"

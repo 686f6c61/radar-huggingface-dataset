@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hyyuan711/agenci_binary_gender_classification",
+  "slug": "hyyuan711-agenci_binary_gender_classification",
+  "author": "hyyuan711",
+  "url": "https://huggingface.co/hyyuan711/agenci_binary_gender_classification",
+  "created_at": "2026-08-24T08:25:42.000Z",
+  "updated_at": "2026-08-24T08:25:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rizvandwiki/gender-classification · Hugging Face",
+      "url": "https://huggingface.co/rizvandwiki/gender-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF AGenCi: Age and Gender Audio Classification for Forensic ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-032-35586-7_13.pdf?pdf=inline%20link",
+      "snippet": "In this study, we present a framework based on OpenAI&#x27;s Whisper-medium model, integrating a custom multi-layer feedforward classification net-work to perform binary gender classification, binary age classification, and multi-class age classification."
+    },
+    {
+      "title": "AGenCi: Age and Gender Audio Classification for Forensic ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-35586-7_13",
+      "snippet": "In this study, we present a framework based on OpenAI&#x27;s Whisper-medium model, integrating a custom multi-layer feedforward classification network to perform binary gender classification, binary age classification, and multi-class age classification."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - g-wtham/realtime-gender-classification: A gender ...",
+      "url": "https://github.com/g-wtham/realtime-gender-classification",
+      "snippet": "Realtime Gender Classification using Pre-trained models Author: Gowtham M Introduction: In this project, we aim to classify the gender of individuals based on their facial features using pre-trained models, in this context, binary classification (male/female) Problem Statement: The primary goal of this project is to develop a gender classification system capable of accurately predicting the ..."
+    }
+  ]
+}

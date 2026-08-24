@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "markamaxson/pony",
+  "slug": "markamaxson-pony",
+  "author": "markamaxson",
+  "url": "https://huggingface.co/markamaxson/pony",
+  "created_at": "2026-08-23T07:06:59.000Z",
+  "updated_at": "2026-08-23T07:07:00.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "modelslab.com",
+    "stable-diffusion-api",
+    "text-to-image",
+    "ultra-realistic",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938749912,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pony Diffusion V6 XL - V6 (start with this one) - Civitai",
+      "url": "https://civitai.com/models/257749/pony-diffusion-v6-xl",
+      "snippet": "Pony Diffusion V6 is a versatile SDXL finetune capable of producing stunning SFW and NSFW visuals of various anthro, feral, or humanoids species and their interactions based on simple natural language prompts."
+    },
+    {
+      "title": "Fallout - Maxson&#x27;s battlecoat (PONY) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/2e16006243ead3742254aa5d7a7398b8",
+      "snippet": "Explore Fallout - Maxson&#x27;s battlecoat (PONY) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Pony V7 - PurpleSmartAI",
+      "url": "https://purplesmart.ai/pony/content7x",
+      "snippet": "Pony V7 is a powerful, unconstrained foundational model built for character-centric image generation. It excels in creating high-quality visuals across diverse artistic styles—from stylized illustrations and fantasy creatures to anthropomorphic beings and cartoon characters—all through intuitive natural language prompts."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=pony",
+      "snippet": "Explore machine learning models. John6666/fucktastic-real-checkpoint-pony-pdxl-porn-realistic-nsfw-sfw-21-sdxl"
+    },
+    {
+      "title": "purplesmartai/pony-v7-base · Hugging Face",
+      "url": "https://huggingface.co/purplesmartai/pony-v7-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

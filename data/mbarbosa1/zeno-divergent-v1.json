@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "mbarbosa1/zeno-divergent-v1",
+  "slug": "mbarbosa1-zeno-divergent-v1",
+  "author": "mbarbosa1",
+  "url": "https://huggingface.co/mbarbosa1/zeno-divergent-v1",
+  "created_at": "2026-08-23T21:04:32.000Z",
+  "updated_at": "2026-08-23T22:09:13.000Z",
+  "license": "research-preview",
+  "license_family": "unknown",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "zeno_divergent",
+    "feature-extraction",
+    "surprise-detection",
+    "model-validity",
+    "regime-change",
+    "divergence",
+    "uncertainty",
+    "research-prototype",
+    "time-series-forecasting",
+    "custom_code",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 69082,
+  "parameters_human": "69082",
+  "storage_bytes": 281532,
+  "storage_human": "281532 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "model-validity forecasting (SurpriseBench, synthetic held-out)",
+      "dataset": null,
+      "metric": "AUPRC",
+      "value": 0.9901100289546734
+    },
+    {
+      "task": "model-validity forecasting (SurpriseBench, synthetic held-out)",
+      "dataset": null,
+      "metric": "AUROC",
+      "value": 0.9934870031331339
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zenodo",
+      "url": "https://zenodo.org/",
+      "snippet": "This repository contains the data, R code, and statistical outputs supporting the study of single-log wood stopping in a 1:50 physical model of a vertical-slot fishway. The experiment compared rectangular (K0) and rounded (K1) emergent baffles across three log-size classes under one steady hydraulic condition. The dataset comprises aggregated..."
+    },
+    {
+      "title": "zenos-ai/zenos_ai/docs/readme.md at main · nathan-curtis/zenos-ai - GitHub",
+      "url": "https://github.com/nathan-curtis/zenos-ai/blob/main/zenos_ai/docs/readme.md",
+      "snippet": "Welcome to the ZenOS-AI Documentation — the full map of the architecture, tools, cognitive model, and operational philosophy behind Friday&#x27;s Party. ZenOS-AI turns Home Assistant into a real agentic, persona-aware operating system. This documentation explains how the pieces fit together: the Cabinet System for identity and memory, the Monastery for reasoning, the KF4 action pipeline for ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - techjarves/Uncensored-Local-Studio: Uncensored local AI studio ...",
+      "url": "https://github.com/techjarves/Uncensored-Local-Studio",
+      "snippet": "Uncensored AI Studio is a completely offline, zero-setup, self-contained AI studio for Windows, Linux, and macOS. Unlike cloud-based AI systems, it runs entirely on your own hardware with no censorship, tracking, subscriptions, or login requirements. It unifies four major local AI capabilities into one high-performance desktop interface:"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

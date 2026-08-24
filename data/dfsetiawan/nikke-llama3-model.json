@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dfsetiawan/nikke-llama3-model",
+  "slug": "dfsetiawan-nikke-llama3-model",
+  "author": "dfsetiawan",
+  "url": "https://huggingface.co/dfsetiawan/nikke-llama3-model",
+  "created_at": "2026-08-24T11:40:29.000Z",
+  "updated_at": "2026-08-24T11:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "[2407.21783] The Llama 3 Herd of Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    },
+    {
+      "title": "Introducing Llama 3.1: Our most capable models to date - Meta AI",
+      "url": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "snippet": "Bringing open intelligence to all, our latest models expand context length, add support across eight languages, and include Meta Llama 3.1 405B— the first frontier-level open source AI model."
+    },
+    {
+      "title": "[2407.09890] Speech-Guided Sequential Planning for Autonomous ...",
+      "url": "https://arxiv.org/abs/2407.09890",
+      "snippet": "Abstract page for arXiv paper 2407.09890: Speech-Guided Sequential Planning for Autonomous Navigation using Large Language Model Meta AI 3 (Llama3)"
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

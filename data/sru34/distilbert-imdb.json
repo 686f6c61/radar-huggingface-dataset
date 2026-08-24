@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sru34/distilbert-imdb",
+  "slug": "sru34-distilbert-imdb",
+  "author": "Sru34",
+  "url": "https://huggingface.co/Sru34/distilbert-imdb",
+  "created_at": "2026-08-23T09:03:35.000Z",
+  "updated_at": "2026-08-23T09:03:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lvwerra/distilbert-imdb · Hugging Face",
+      "url": "https://huggingface.co/lvwerra/distilbert-imdb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tankgauravgt/distilbert-cased-imdb-finetuned · Hugging Face",
+      "url": "https://huggingface.co/tankgauravgt/distilbert-cased-imdb-finetuned",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distilbert-imdb | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/distilbert-imdb/",
+      "snippet": "A fine-tuned DistilBERT model for IMDB sentiment analysis, achieving 92.8% accuracy. Built on distilbert-base-uncased with Apache 2.0 license."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/lvwerra-distilbert-imdb",
+      "snippet": "lvwerra/distilbert-imdb is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the text-classification task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub . Here&#x27;s an example API ..."
+    },
+    {
+      "title": "sentiment-distilbert-imdb_cpu-first.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/SSusantAchary/HuggingFace-HandsOn-Cookbook/blob/main/notebooks/nlp/sentiment-distilbert-imdb_cpu-first.ipynb",
+      "snippet": "Sentiment Analysis — DistilBERT on IMDB TL;DR: Classify IMDB movie reviews with a CPU-first DistilBERT pipeline and prep for LoRA fine-tuning."
+    }
+  ]
+}

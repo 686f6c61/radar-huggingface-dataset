@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000458_peanut_mix_sim_real_act_Intern",
+  "slug": "dongkkka-task_000458_peanut_mix_sim_real_act_intern",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000458_peanut_mix_sim_real_act_Intern",
+  "created_at": "2026-08-24T01:23:08.000Z",
+  "updated_at": "2026-08-24T01:24:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotis",
+    "cyclo_intelligence",
+    "robotics",
+    "dataset:robotis/task_000458_peanut_mix_sim_real_act_v30",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3096154168,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dongkkka/Task_800004_pick_place_peanut_chunk100 · Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/Task_800004_pick_place_peanut_chunk100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - InternRobotics/REAL: [ECCV2026] Official open-source ...",
+      "url": "https://github.com/InternRobotics/REAL",
+      "snippet": "REAL is a sim-to-real-consistent framework for interactive open-world mobile manipulation. Agents explore from raw RGB observations, use deployable navigation and manipulation tools, and communicate with a simulated user to resolve ambiguous instructions without privileged simulator information."
+    },
+    {
+      "title": "Peanut AI — Free AI Image Generator: Text to Image & More",
+      "url": "https://peanutai.net/",
+      "snippet": "Peanut AI is the free AI image generator for text to image and image to image — commercial rights included, no credit card needed. Start free today."
+    },
+    {
+      "title": "Task_800004_pick_place_peanut_no_tactile_chunk50 - Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/Task_800004_pick_place_peanut_no_tactile_chunk50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Task_800005_pick_place_peanut_stage1_0720_ACT_chunk32",
+      "url": "https://huggingface.co/Dongkkka/Task_800005_pick_place_peanut_stage1_0720_ACT_chunk32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

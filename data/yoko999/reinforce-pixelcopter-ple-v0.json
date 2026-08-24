@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Yoko999/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "yoko999-reinforce-pixelcopter-ple-v0",
+  "author": "Yoko999",
+  "url": "https://huggingface.co/Yoko999/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-08-24T03:41:47.000Z",
+  "updated_at": "2026-08-24T03:45:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luyi0619/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/luyi0619/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "luyi0619 / Reinforce-Pixelcopter-PLE-v0 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results Model card FilesFiles and versions Community Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Atharva1232/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Atharva1232/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Atharva1232 / Reinforce-Pixelcopter-PLE-v0 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "PHL99/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/319217",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "Convolution/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/111283",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    }
+  ]
+}

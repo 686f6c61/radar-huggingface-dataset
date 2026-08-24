@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "plack26/Xx",
+  "slug": "plack26-xx",
+  "author": "plack26",
+  "url": "https://huggingface.co/plack26/Xx",
+  "created_at": "2026-07-31T08:15:28.000Z",
+  "updated_at": "2026-08-24T05:17:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1631398012,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "plack26 (placer) - Hugging Face",
+      "url": "https://huggingface.co/plack26",
+      "snippet": "Recent Activity updated a model11 days ago plack26/Xx updated a model13 days ago plack26/F4K published a model13 days ago plack26/F4K View all activity"
+    },
+    {
+      "title": "plack26/Xx · Hugging Face",
+      "url": "https://huggingface.co/plack26/Xx",
+      "snippet": "plack26 / Xx like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Latest AI Models 2026",
+      "url": "https://best-ai.news/ai-model-releases-2026",
+      "snippet": "The latest AI models of 2026 — complete catalog of every model released and tracked."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools). Since then, we have greatly expanded: with a single prompt, you can generate images, edit photos, chat with an AI that browses the internet, create short videos, compose original music, or chat with a realistic ..."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    }
+  ]
+}

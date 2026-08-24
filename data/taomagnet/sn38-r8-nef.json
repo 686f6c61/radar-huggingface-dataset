@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TaoMagnet/sn38-r8-nef",
+  "slug": "taomagnet-sn38-r8-nef",
+  "author": "TaoMagnet",
+  "url": "https://huggingface.co/TaoMagnet/sn38-r8-nef",
+  "created_at": "2026-08-19T03:03:00.000Z",
+  "updated_at": "2026-08-24T06:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ctrl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 1637964550,
+  "parameters_human": "1.64B",
+  "storage_bytes": 45961680512,
+  "storage_human": "46.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TaoMagnet/sn38-r8-nef · Hugging Face",
+      "url": "https://huggingface.co/TaoMagnet/sn38-r8-nef",
+      "snippet": "TaoMagnet / sn38-r8-nef like 0 Safetensors sn38-nanoexpand Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 20 Safetensors Model size 2B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sn38-nanoexpand",
+      "snippet": "Models 8 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: sn38-nanoexpand Clear all"
+    },
+    {
+      "title": "SN38: ChronoLLM - GitHub",
+      "url": "https://github.com/chronollm/sn38",
+      "snippet": "Contribute to chronollm/sn38 development by creating an account on GitHub."
+    },
+    {
+      "title": "sn38/docs/miner.md at main · chronollm/sn38 · GitHub",
+      "url": "https://github.com/chronollm/sn38/blob/main/docs/miner.md",
+      "snippet": "Mining on SN38 Overview Train chronologically consistent ChronoGPT models and compete for emissions. You train one model per year (2013-2025), upload them to HuggingFace, and submit a mapping on-chain. Validators evaluate your models for consistency and quality."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "photosynth-satoshi/act_thumbturn_v4_10k",
+  "slug": "photosynth-satoshi-act_thumbturn_v4_10k",
+  "author": "photosynth-satoshi",
+  "url": "https://huggingface.co/photosynth-satoshi/act_thumbturn_v4_10k",
+  "created_at": "2026-08-24T08:36:31.000Z",
+  "updated_at": "2026-08-24T08:37:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:photosynth-satoshi/so101_unlock_thumbturn_v4",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715200,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "photosynth-satoshi/my_first_dataset_with_cam_20260817_195510 · Datasets ...",
+      "url": "https://huggingface.co/datasets/photosynth-satoshi/my_first_dataset_with_cam_20260817_195510",
+      "snippet": "Datasets: photosynth-satoshi / my_first_dataset_with_cam_20260817_195510 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default ..."
+    },
+    {
+      "title": "photosynth-satoshi (satoshi nakamoto) - Hugging Face",
+      "url": "https://huggingface.co/photosynth-satoshi/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago ... updated a dataset 3 days ago"
+    },
+    {
+      "title": "Chatrule | AI Character & Model Search",
+      "url": "https://chatrule.ai/",
+      "snippet": "Discover Chatrule characters and ADVANCED mirrored LoRAs for AI image generation."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    }
+  ]
+}

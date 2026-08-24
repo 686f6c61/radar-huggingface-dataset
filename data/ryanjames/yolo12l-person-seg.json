@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RyanJames/yolo12l-person-seg",
+  "slug": "ryanjames-yolo12l-person-seg",
+  "author": "RyanJames",
+  "url": "https://huggingface.co/RyanJames/yolo12l-person-seg",
+  "created_at": "2025-03-26T10:36:29.000Z",
+  "updated_at": "2026-08-23T18:56:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "yolo12",
+    "segmentation",
+    "object-detection",
+    "person-detection",
+    "instance-segmentation",
+    "pytorch",
+    "computer-vision",
+    "image-segmentation",
+    "dataset:coco",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 506,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355664058,
+  "storage_human": "356 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RyanJames/yolo12l-person-seg · Hugging Face",
+      "url": "https://huggingface.co/RyanJames/yolo12l-person-seg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RyanJames/yolo12l-person-seg at main - Hugging Face",
+      "url": "https://huggingface.co/RyanJames/yolo12l-person-seg/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ultralytics/ultralytics/cfg/models/12/yolo12-seg.yaml at main ... - GitHub",
+      "url": "https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/models/12/yolo12-seg.yaml",
+      "snippet": "scales: # model compound scaling constants, i.e. &#x27;model=yolo12n-seg.yaml&#x27; will call yolo12-seg.yaml with scale &#x27;n&#x27;"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "GitHub - sunsmarterjie/yolov12: [NeurIPS 2025] YOLOv12: Attention ...",
+      "url": "https://github.com/sunsmarterjie/yolov12",
+      "snippet": "This advantage extends to other model scales. YOLOv12 also surpasses end-to-end real-time detectors that improve DETR, such as RT-DETR / RT-DETRv2: YOLOv12-S beats RT-DETR-R18 / RT-DETRv2-R18 while running 42% faster, using only 36% of the computation and 45% of the parameters."
+    }
+  ]
+}

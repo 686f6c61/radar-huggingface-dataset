@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "researcherr1/multiagent",
+  "slug": "researcherr1-multiagent",
+  "author": "researcherr1",
+  "url": "https://huggingface.co/researcherr1/multiagent",
+  "created_at": "2026-07-08T13:39:19.000Z",
+  "updated_at": "2026-08-24T04:44:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 112,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 1301393028893,
+  "storage_human": "1301.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "researcherr1 (researcherr1) - Hugging Face",
+      "url": "https://huggingface.co/researcherr1/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "researcherr1 (researcherr1) - Hugging Face",
+      "url": "https://huggingface.co/datasets/researcherr1/",
+      "snippet": "User profile of researcherr1 on Hugging Face"
+    },
+    {
+      "title": "From Prompts to Agents: Building the Researcher Agent in a ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/from-prompts-agents-building-researcher-agent-simple-rany-l11lc",
+      "snippet": "This example shows you how to program an AI \"researcher\" that receives questions and returns informative answers—perfect for those new to AI agents!"
+    },
+    {
+      "title": "Introducing multi-model intelligence in Researcher | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-multi-model-intelligence-in-researcher/4506011",
+      "snippet": "Researcher now goes further with two new multi-model capabilities that raise the bar for accuracy, depth, and confidence in AI-generated reports: Critique..."
+    },
+    {
+      "title": "AI-Driven Research Assistant - GitHub",
+      "url": "https://github.com/QQR1/AI-Data-Analysis-MultiAgent",
+      "snippet": "This is an advanced AI-powered research assistant system that utilizes multiple specialized agents to assist in tasks such as data analysis, visualization, and report generation. The system employs LangChain, OpenAI&#x27;s GPT models, and LangGraph to handle complex research processes, integrating diverse AI architectures for optimal performance."
+    }
+  ]
+}

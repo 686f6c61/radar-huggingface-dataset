@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "isabellaruiz/paper_006212150_self_supervised",
+  "slug": "isabellaruiz-paper_006212150_self_supervised",
+  "author": "isabellaruiz",
+  "url": "https://huggingface.co/isabellaruiz/paper_006212150_self_supervised",
+  "created_at": "2026-08-23T05:23:43.000Z",
+  "updated_at": "2026-08-23T05:23:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "author-year",
+    "enthusiastic",
+    "graphic-visual",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "self-supervised",
+    "short-punchy",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Review of AI Agents: Transforming Possibilities in ...",
+      "url": "https://arxiv.org/html/2508.11957v1",
+      "snippet": "Yet, designing and deploying unified AI agents that seamlessly integrate cognition, planning, and interaction remains a grand challenge. In this review, we systematically examine the architectural principles, foundational components, and emergent paradigms that define the landscape of contemporary AI agents."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Artificial Intelligence | Cool Papers - Immersive Paper Discovery",
+      "url": "https://papers.cool/arxiv/cs.AI",
+      "snippet": "The list of papers for Artificial Intelligence category on arXiv, including titles, authors, and abstracts, with support for paper interpretation based on Kimi AI."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "[2112.04215] Self-Supervised Models are Continual Learners",
+      "url": "https://arxiv.org/abs/2112.04215",
+      "snippet": "Self-supervised models have been shown to produce comparable or better visual representations than their supervised counterparts when trained offline on unlabeled data at scale. However, their efficacy is catastrophically reduced in a Continual Learning (CL) scenario where data is presented to the model sequentially. In this paper, we show that self-supervised loss functions can be seamlessly ..."
+    }
+  ]
+}

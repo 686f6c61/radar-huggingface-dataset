@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "usr-wwelsh/digest-sft2",
+  "slug": "usr-wwelsh-digest-sft2",
+  "author": "usr-wwelsh",
+  "url": "https://huggingface.co/usr-wwelsh/digest-sft2",
+  "created_at": "2026-08-24T00:17:16.000Z",
+  "updated_at": "2026-08-24T00:24:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538096121,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "usr-wwelsh (William Welsh) · GitHub",
+      "url": "https://github.com/usr-wwelsh",
+      "snippet": "usr-wwelsh has 45 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - usr-wwelsh/digest-finetune: SFT + GRPO fine-tune of SmolLM2 ...",
+      "url": "https://github.com/usr-wwelsh/digest-finetune",
+      "snippet": "Train set: 101 examples (84 real + 17 verified synthetic). Covered by tests (pytest tests/). SFT — full fp32 fine-tune, TRL SFTTrainer, 6 epochs on 6 CPU threads, on the 101-example set (checkpoints/sft2). Per-step checkpointing (--save-steps 1 --save-only-model, ~514MB/checkpoint instead of 1.6GB) so every step survives for reward-based ..."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "usr-wwelsh - itch.io",
+      "url": "https://usr-wwelsh.itch.io/",
+      "snippet": "Make DOOM in your browser. Upload your own games to itch.io with no gamemaking experience needed"
+    }
+  ]
+}

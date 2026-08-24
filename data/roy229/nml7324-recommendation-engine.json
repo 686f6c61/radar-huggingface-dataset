@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Roy229/nml7324-recommendation-engine",
+  "slug": "roy229-nml7324-recommendation-engine",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/nml7324-recommendation-engine",
+  "created_at": "2026-08-23T11:42:52.000Z",
+  "updated_at": "2026-08-23T11:42:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-classification",
+    "nml-registry",
+    "recommendation-engine",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 AI Personalized Recommendation Engines Tools in 2026: Features ...",
+      "url": "https://www.devopsschool.com/blog/top-10-ai-personalized-recommendation-engines-tools-in-2025-features-pros-cons-comparison/",
+      "snippet": "The best tools combine scalability, accuracy, cross-channel integration, and explainability—helping businesses personalize at scale while respecting data privacy. In this article, we&#x27;ll explore the Top 10 AI Personalized Recommendation Engines Tools in 2026, compare their strengths, and help you pick the right one for your business."
+    },
+    {
+      "title": "AI&#x27;s Crystal Ball: Recommendation Engines Predict How You&#x27;ll Shop Next",
+      "url": "https://www.cmswire.com/digital-experience/what-you-need-to-know-about-ai-powered-recommendation-engine-platforms/",
+      "snippet": "Explore how AI-driven recommendation engines are transforming CX. Learn their evolution, core features and top platforms revolutionizing personalization."
+    },
+    {
+      "title": "Recommendation Systems: Applications and Examples - AIMultiple",
+      "url": "https://aimultiple.com/recommendation-system",
+      "snippet": "Recommendation systems personalize experiences, increase sales, loyalty, and engagement while reducing churn. Learn how they work and their real-world uses."
+    },
+    {
+      "title": "Recommendation Engines for Personalization - Databricks",
+      "url": "https://www.databricks.com/solutions/accelerators/recommendation-engines",
+      "snippet": "Recommendation Engines for Personalization Pre-built code, sample data and step-by-step instructions ready to go in a Databricks notebook Increase conversion with personalized recommendations Customers have different needs at each stage of the buyer journey. Choose the right recommender model for your scenario. Have a cold start problem?"
+    },
+    {
+      "title": "An In-Depth Guide to Machine Learning Recommendation Engines - Stratoflow",
+      "url": "https://stratoflow.com/machine-learning-recommendation-engine/",
+      "snippet": "How do machine learning recommendation engines work? All you need to know about recommender systems and its benefits for your business."
+    }
+  ]
+}

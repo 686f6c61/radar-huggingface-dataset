@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "psychefr/blip-vqa-satquery",
+  "slug": "psychefr-blip-vqa-satquery",
+  "author": "psychefr",
+  "url": "https://huggingface.co/psychefr/blip-vqa-satquery",
+  "created_at": "2026-08-23T12:11:33.000Z",
+  "updated_at": "2026-08-23T12:12:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "visual-question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "blip",
+    "visual-question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 384672572,
+  "parameters_human": "384.7M",
+  "storage_bytes": 1538792184,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salesforce/blip-vqa-base · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-vqa-base",
+      "snippet": "We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse ..."
+    },
+    {
+      "title": "GitHub - anshika0731/satquery-ai",
+      "url": "https://github.com/anshika0731/satquery-ai",
+      "snippet": "No trained deep-learning model is in the active path (segmentation, detection, and change detection are classical/heuristic baselines). Change-detection \"alignment\" is a plain resize, not true co-registration."
+    },
+    {
+      "title": "Salesforce/blip-vqa-base at main - Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-vqa-base/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BLIP/models/blip_vqa.py at main · salesforce/BLIP · GitHub",
+      "url": "https://github.com/salesforce/BLIP/blob/main/models/blip_vqa.py",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - salesforce/BLIP"
+    },
+    {
+      "title": "LAVIS / BLIP · Community Open Source · sgai",
+      "url": "https://sgai.md/community-opensource/lavis-blip/",
+      "snippet": "LAVIS / BLIP is a major contribution from Salesforce&#x27;s Singapore research team to global vision-language AI, making image-text understanding, captioning, VQA, and multimodal pretraining more reusable through open source."
+    }
+  ]
+}

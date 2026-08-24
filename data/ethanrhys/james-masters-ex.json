@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EthanRhys/James-Masters-EX",
+  "slug": "ethanrhys-james-masters-ex",
+  "author": "EthanRhys",
+  "url": "https://huggingface.co/EthanRhys/James-Masters-EX",
+  "created_at": "2026-08-24T12:58:18.000Z",
+  "updated_at": "2026-08-24T12:59:34.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79344559,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "James (Masters EX, Remake, English dub) AI Voice Model",
+      "url": "https://voice-models.com/model/1onV3V9thqp",
+      "snippet": "James (Masters EX, Remake, English dub) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "EthanRhys/Jasmine-Masters-EX · Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/Jasmine-Masters-EX",
+      "snippet": "EthanRhys / Jasmine-Masters-EX like 0 License:openrail Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "EthanRhys/Jasmine-Masters-EX at main - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/Jasmine-Masters-EX/tree/main",
+      "snippet": "EthanRhys / Jasmine-Masters-EX like 0 License: openrail Model card FilesFiles and versions Community Use with library main Jasmine-Masters-EX 1 contributor History:2 commits EthanRhys Upload Jasmine-Masters-EX.zip a599112 about 1 month ago .gitattributes 1.52 kB initial commit about 1 month ago Jasmine-Masters-EX.zip 62.3 MB LFS Upload Jasmine-Masters-EX.zip about 1 month ago README.md 26 ..."
+    },
+    {
+      "title": "Convert James (Masters EX) Voice Online | EasyAIVoice",
+      "url": "https://easyaivoice.com/run/james-masters-ex",
+      "snippet": "Use the James (Masters EX) RVC voice model online with EasyAIVoice. Upload audio, adjust pitch, and convert speech or vocals."
+    },
+    {
+      "title": "Ethan (Masters EX) AI RVC Model | FakeYou",
+      "url": "https://fakeyou.com/weight/weight_fa6efm4abn6jg55egzpvf2169/ethan",
+      "snippet": "Seedance 2.0 the cheapest anywhere. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    }
+  ]
+}

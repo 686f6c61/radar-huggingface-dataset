@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DecentVLA/groot_cubestack_fl_3client",
+  "slug": "decentvla-groot_cubestack_fl_3client",
+  "author": "DecentVLA",
+  "url": "https://huggingface.co/DecentVLA/groot_cubestack_fl_3client",
+  "created_at": "2026-08-23T20:00:15.000Z",
+  "updated_at": "2026-08-23T22:01:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "gr00t",
+  "languages": [],
+  "tags": [
+    "gr00t",
+    "robotics",
+    "vla",
+    "isaac-gr00t",
+    "decent-vla",
+    "cube-stacking",
+    "so-101",
+    "federated",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6482252320,
+  "storage_human": "6.5 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DecentVLA/smolvla_cubestack_fl_3client · Hugging Face",
+      "url": "https://huggingface.co/DecentVLA/smolvla_cubestack_fl_3client",
+      "snippet": "DecentVLA / smolvla_cubestack_fl_3client like 0 Follow Roma decentvla 3 Robotics LeRobot Safetensors vla smolvla decent-vla cube-stacking so-101 federated License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DecentVLA/pi05_cubestack_fl_3client · Hugging Face",
+      "url": "https://huggingface.co/DecentVLA/pi05_cubestack_fl_3client",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T What&#x27;s New in GR00T N1.7 Installation LeRobot Integration Model Checkpoints & Embodiment Tags Data Format Inference Fine-tuning Evaluation Contributions License Citation"
+    },
+    {
+      "title": "GitHub - suanova/cubestack: Suanova CubeStack is an AI Cloud Operating ...",
+      "url": "https://github.com/suanova/cubestack",
+      "snippet": "About Suanova CubeStack is an AI Cloud Operating System / AI Platform (智算云操作系统) engineered for managing GPU compute clusters and AI workloads."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T | DeepWiki",
+      "url": "https://deepwiki.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Isaac-GR00T is a cross-embodiment vision-language-action (VLA) model designed to enable generalist robot control across diverse platforms and tasks. The model processes multimodal inputs—video observations, robot proprioceptive state, and natural language instructions—to generate continuous action sequences for manipulation and locomotion ..."
+    }
+  ]
+}

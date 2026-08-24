@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "google/tipsv1-g14",
+  "slug": "google-tipsv1-g14",
+  "author": "google",
+  "url": "https://huggingface.co/google/tipsv1-g14",
+  "created_at": "2026-08-19T16:40:35.000Z",
+  "updated_at": "2026-08-19T23:46:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tipsv2",
+    "feature-extraction",
+    "vision",
+    "image-text",
+    "contrastive-learning",
+    "zero-shot",
+    "arxiv:2410.16512",
+    "zero-shot-image-classification",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 113,
+  "trending_score": 8,
+  "parameters": 1525085696,
+  "parameters_human": "1.53B",
+  "storage_bytes": 6101155959,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv1-g14 at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv1-g14/tree/main",
+      "snippet": "Instructions to use google/tipsv1-g14 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use google/tipsv1-g14 with Transformers:"
+    },
+    {
+      "title": "google/tipsv1-g14: Zero-Shot Image Classification Model | ExploreAI.tools",
+      "url": "https://exploreai.tools/ai-models/tipsv1-g14",
+      "snippet": "google/tipsv1-g14 is an open-source AI model hosted on Hugging Face, designed for zero-shot image classification. It supports feature extraction and is built on the TIPSv2 architecture, with an Apache-2.0 license."
+    },
+    {
+      "title": "README.md · google/tipsv1-g14 at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv1-g14/blob/main/README.md",
+      "snippet": "Instructions to use google/tipsv1-g14 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use google/tipsv1-g14 with Transformers:"
+    },
+    {
+      "title": "tokenizer.model · google/tipsv1-g14 at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv1-g14/blob/main/tokenizer.model",
+      "snippet": "Instructions to use google/tipsv1-g14 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use google/tipsv1-g14 with Transformers:"
+    },
+    {
+      "title": "google/tipsv1-g14-lowres: Zero-Shot Image Classification Model ...",
+      "url": "https://exploreai.tools/ai-models/tipsv1-g14-lowres",
+      "snippet": "google/tipsv1-g14-lowres is an official Hugging Face model by Google, designed for zero-shot image classification. It supports feature extraction and uses contrastive learning, with tags indicating TIPsv2 and an associated arXiv paper."
+    }
+  ]
+}

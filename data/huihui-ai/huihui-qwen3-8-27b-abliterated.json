@@ -5,7 +5,7 @@
   "author": "huihui-ai",
   "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "created_at": "2026-08-16T08:22:24.000Z",
-  "updated_at": "2026-08-17T02:00:13.000Z",
+  "updated_at": "2026-08-24T03:47:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,13 +27,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 246,
-  "downloads_30d": 21612,
-  "trending_score": 201,
+  "likes": 272,
+  "downloads_30d": 27316,
+  "trending_score": 152,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55575815536,
-  "storage_human": "55.6 GB",
+  "storage_bytes": 73831345328,
+  "storage_human": "73.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -27,11 +27,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 35813934322,
   "parameters_human": "35.81B",
-  "storage_bytes": 71641163918,
+  "storage_bytes": 71640452389,
   "storage_human": "71.6 GB",
   "base_model": "nvidia/Cosmos3-Super",
   "formats": [

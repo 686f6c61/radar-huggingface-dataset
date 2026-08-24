@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chinguyenberg/paper_013017505_prompt_engineering",
+  "slug": "chinguyenberg-paper_013017505_prompt_engineering",
+  "author": "chinguyenberg",
+  "url": "https://huggingface.co/chinguyenberg/paper_013017505_prompt_engineering",
+  "created_at": "2026-08-23T04:55:41.000Z",
+  "updated_at": "2026-08-23T04:55:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endnote",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "narrative-progressive",
+    "neutral",
+    "passive",
+    "prompt-engineering",
+    "short-punchy",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Papers | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/papers",
+      "snippet": "The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering Papers Collection | dair-ai/Prompt-Engineering-Guide ...",
+      "url": "https://deepwiki.com/dair-ai/Prompt-Engineering-Guide/8.1-prompt-engineering-papers-collection",
+      "snippet": "This page documents the Prompt Engineering Papers Collection, a comprehensive catalog of research papers focused on prompt engineering techniques, methodologies, and applications for large language models (LLMs). The collection is maintained in pages/papers.en.mdx 1-600 and updated on a daily to weekly basis with newly published research."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents. - dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "title": "Prompt Engineering: A Comparative Study of Prompting Techniques in AI ...",
+      "url": "https://ieeexplore.ieee.org/document/11147384",
+      "snippet": "Prompt engineering plays a pivotal role in leveraging the full potential of large language models. This research paper focuses specifically on a comparative analysis of zero-shot and multi-shot prompting techniques, two widely used approaches in prompt engineering. While zero-shot prompting relies solely on task instructions to guide the model&#x27;s output, multi-shot prompting incorporates ..."
+    }
+  ]
+}

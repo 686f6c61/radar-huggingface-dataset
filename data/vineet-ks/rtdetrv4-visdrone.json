@@ -5,7 +5,7 @@
   "author": "vineet-ks",
   "url": "https://huggingface.co/vineet-ks/rtdetrv4-visdrone",
   "created_at": "2026-08-11T22:09:21.000Z",
-  "updated_at": "2026-08-17T21:30:45.000Z",
+  "updated_at": "2026-08-22T17:54:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 375355008,
-  "storage_human": "375 MB",
+  "storage_bytes": 390307259,
+  "storage_human": "390 MB",
   "base_model": null,
   "formats": [
     "onnx"

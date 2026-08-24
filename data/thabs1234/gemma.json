@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "thabs1234/gemma",
+  "slug": "thabs1234-gemma",
+  "author": "thabs1234",
+  "url": "https://huggingface.co/thabs1234/gemma",
+  "created_at": "2026-08-23T12:57:25.000Z",
+  "updated_at": "2026-08-23T12:57:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Get started with Gemma models - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/get_started",
+      "snippet": "Get started with Gemma models The Gemma family of open models includes a range of model sizes, capabilities, and task-specialized variations to help you build custom generative solutions. These are the main paths you can follow when using Gemma models in an application: Select a model and deploy it as-is in your application"
+    },
+    {
+      "title": "Thinking mode in Gemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/capabilities/thinking",
+      "snippet": "To generate a response using the model&#x27;s thinking capabilities, pass enable_thinking=True, the processor will insert the correct thinking tokens into the prompt, instructing the model to think before responding. Note: We&#x27;ve added an empty thinking token to the chat template for gemma-4-12B-it, gemma-4-26B-A4B-it and gemma-4-31B-it."
+    },
+    {
+      "title": "GitHub - google-gemma/awesome-gemma: Awesome list about Gemma, Google ...",
+      "url": "https://github.com/google-gemma/awesome-gemma",
+      "snippet": "Gemma 4 Overview — An overview of the capabilities, architecture, and more of Gemma 4 models. Gemma 4 Model Card — Architecture, training, evaluation, safety, and usage details. Gemma 4 (Hugging Face) — Gemma 4 checkpoints (+ assistant models) on Hugging Face. Gemma 4 QAT — Quantization-aware checkpoints for local and server inference."
+    }
+  ]
+}

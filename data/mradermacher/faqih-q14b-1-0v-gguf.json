@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Faqih-Q14b-1.0V-GGUF",
+  "slug": "mradermacher-faqih-q14b-1-0v-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Faqih-Q14b-1.0V-GGUF",
+  "created_at": "2026-08-23T05:48:19.000Z",
+  "updated_at": "2026-08-23T15:37:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "islamic-ai",
+    "fiqh",
+    "qwen2.5",
+    "14b",
+    "reasoning",
+    "ar",
+    "dataset:hozifa1/faqih_sft_dataset",
+    "base_model:hozifa1/Faqih-Q14b-1.0V",
+    "base_model:quantized:hozifa1/Faqih-Q14b-1.0V",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043523264,
+  "storage_human": "102.0 GB",
+  "base_model": "hozifa1/Faqih-Q14b-1.0V",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Faqih-R1-14B-Islamic-AI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Faqih-R1-14B-Islamic-AI-GGUF",
+      "snippet": "mradermacher / Faqih-R1-14B-Islamic-AI-GGUF like 0 Transformers GGUF English conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "hozifa1/Faqih-Q14b-1.0V-GGUF · Hugging Face",
+      "url": "https://huggingface.co/hozifa1/Faqih-Q14b-1.0V-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "kuzu_v0 Shared by **** | PikPak",
+      "url": "https://mypikpak.com/s/VNjgZGvz25KjJWtzzwHioxpvo1",
+      "snippet": "kuzu_v0 available for high-speed download on PikPak and streaming across multiple devices."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

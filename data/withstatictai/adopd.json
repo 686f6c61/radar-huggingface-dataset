@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "withstaticTai/ADOPD",
+  "slug": "withstatictai-adopd",
+  "author": "withstaticTai",
+  "url": "https://huggingface.co/withstaticTai/ADOPD",
+  "created_at": "2026-08-24T01:58:44.000Z",
+  "updated_at": "2026-08-24T01:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "withstaticTai (Jingtai He) - Hugging Face",
+      "url": "https://huggingface.co/withstaticTai",
+      "snippet": "Sort: Recently updated withstaticTai/WTB-Bench Viewer •Updated 3 days ago•1.2k• 56"
+    },
+    {
+      "title": "GitHub - withTai/ADOPD",
+      "url": "https://github.com/withTai/ADOPD",
+      "snippet": "In this work, we present ADOPD, a reference-privileged on-policy distillation framework that internalizes reference comparison into query-only MLLMs for industrial anomaly detection. Our central insight is that references need not remain deployment-time inputs: when used as privileged training information, they can provide both a candidate distillation direction and a reliability signal for ..."
+    },
+    {
+      "title": "ADOPD/verl/models at main · withTai/ADOPD · GitHub",
+      "url": "https://github.com/withTai/ADOPD/tree/main/verl/models",
+      "snippet": "Contribute to withTai/ADOPD development by creating an account on GitHub."
+    },
+    {
+      "title": "withstaticTai/WTB-Bench · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/withstaticTai/WTB-Bench",
+      "snippet": "Datasets: withstaticTai / WTB-Bench like 0 Tasks: Visual Question Answering Modalities: Image Text Formats: imagefolder Sub-tasks: multiple-choice-qa Languages: English Size: 1K - 10K Tags: benchmark visual-question-answering wind-turbine inspection defect-detection computer-vision Libraries: Datasets Croissant License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "ADOPD: Reference-Privileged On-Policy Distillation for MLLM-Based ...",
+      "url": "https://arxiv.org/html/2608.09789v1",
+      "snippet": "We propose ADOPD, a reference-privileged on-policy distillation framework that internalizes the benefits of inference-time reference comparison into model parameters."
+    }
+  ]
+}

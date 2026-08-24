@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/bge-reranker-base-ExecuTorch",
+  "slug": "mlboydaisuke-bge-reranker-base-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/bge-reranker-base-ExecuTorch",
+  "created_at": "2026-08-23T12:39:45.000Z",
+  "updated_at": "2026-08-23T23:10:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "text-ranking",
+    "text-classification",
+    "base_model:BAAI/bge-reranker-base",
+    "base_model:quantized:BAAI/bge-reranker-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2225393070,
+  "storage_human": "2.2 GB",
+  "base_model": "BAAI/bge-reranker-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-base · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-base",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "BAAI/bge-reranker-base at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-base/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BGE-Reranker — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_reranker.html",
+      "snippet": "For examples, use a bge embedding model to first retrieve top 100 relevant documents, and then use bge reranker to re-rank the top 100 document to get the final top-3 results. The first series of BGE-Reranker contains two models, large and base."
+    },
+    {
+      "title": "Reranker — BGE documentation",
+      "url": "https://bge-model.com/API/inference/reranker/reranker.html",
+      "snippet": "Reranker # BaseReranker BaseReranker Methods compute_score_single_gpu BaseLLMReranker BaseLLMReranker Methods compute_score_single_gpu LayerWiseLLMReranker LayerWiseLLMReranker Methods compute_score_single_gpu LightweightLLMReranker LightweightLLMReranker Methods compute_score_single_gpu"
+    },
+    {
+      "title": "bge-reranker-base",
+      "url": "https://paddlenlp.readthedocs.io/en/latest/_static/website/BAAI/bge-reranker-base/index.html",
+      "snippet": "bge-reranker-base Files README.md (33.3 KB) config.json (793.0 B) model.safetensors (1.0 GB) sentencepiece.bpe.model (4.8 MB) special_tokens_map.json (279.0 B) tokenizer.json (16.3 MB) tokenizer_config.json (443.0 B) Back to Main"
+    }
+  ]
+}

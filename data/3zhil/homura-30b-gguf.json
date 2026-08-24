@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "3zhil/Homura-30B-GGUF",
+  "slug": "3zhil-homura-30b-gguf",
+  "author": "3zhil",
+  "url": "https://huggingface.co/3zhil/Homura-30B-GGUF",
+  "created_at": "2026-08-23T08:16:31.000Z",
+  "updated_at": "2026-08-23T08:16:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "hyre",
+    "homura",
+    "agent",
+    "tool-calling",
+    "uncensored",
+    "muse-glimmer",
+    "text-generation",
+    "en",
+    "base_model:darkc0de/Muse-Glimmer-30B-heretic",
+    "base_model:quantized:darkc0de/Muse-Glimmer-30B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 16935291488,
+  "storage_human": "16.9 GB",
+  "base_model": "darkc0de/Muse-Glimmer-30B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyrelabs/Homura-30B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/hyrelabs/Homura-30B-GGUF",
+      "snippet": "hyrelabs / Homura-30B-GGUF like 0 Follow Hyre Labs 3 Text Generation GGUF English hyre homura agent tool-calling uncensored muse-glimmer conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "hyrelabs/Homura-30B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/hyrelabs/Homura-30B-GGUF/tree/main",
+      "snippet": "Instructions to use hyrelabs/Homura-30B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use hyrelabs/Homura-30B-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Meta Open Sources Muse Glimmer: A 30B Agentic AI Model",
+      "url": "https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/",
+      "snippet": "Meta&#x27;s 30B-parameter Muse Glimmer runs offline on a single consumer GPU to execute local coding, function calling, and autonomous agent workflows."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ManyOtherFunctions/CloudGPUModels",
+  "slug": "manyotherfunctions-cloudgpumodels",
+  "author": "ManyOtherFunctions",
+  "url": "https://huggingface.co/ManyOtherFunctions/CloudGPUModels",
+  "created_at": "2026-04-27T23:12:53.000Z",
+  "updated_at": "2026-08-23T07:29:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62914439810,
+  "storage_human": "62.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManyOtherFunctions/CloudGPUModels · Hugging Face",
+      "url": "https://huggingface.co/ManyOtherFunctions/CloudGPUModels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ManyOtherFunctions/CloudGPUModels · Discussions",
+      "url": "https://huggingface.co/ManyOtherFunctions/CloudGPUModels/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Models · Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/ai/models/",
+      "snippet": "Browse AI models available through Cloudflare, including hosted models on Workers AI and external providers via AI Gateway."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

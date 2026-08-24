@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "prime7781/drug-bioactivity-predictor",
+  "slug": "prime7781-drug-bioactivity-predictor",
+  "author": "prime7781",
+  "url": "https://huggingface.co/prime7781/drug-bioactivity-predictor",
+  "created_at": "2026-08-23T23:54:25.000Z",
+  "updated_at": "2026-08-24T00:29:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "drug-discovery",
+    "cheminformatics",
+    "bioactivity-prediction",
+    "molecular-property-prediction",
+    "rdkit",
+    "random-forest",
+    "machine-learning",
+    "pharmaceutical-ai",
+    "egfr",
+    "ic50",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27182472,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Axiomaa/bioactivity-prediction: Bioactivity Prediction Using ...",
+      "url": "https://github.com/Axiomaa/bioactivity-prediction",
+      "snippet": "This project aims to develop predictive models for bioactivity data using molecular descriptors. Built using Python, it leverages tools such as PaDEL-Descriptor for feature generation and machine learning algorithms for regression modeling. The project is designed for analyzing chemical compound data with a focus on pIC50 values, which are key in bioactivity prediction for drug discovery."
+    },
+    {
+      "title": "Generative AI for drug discovery and protein design: the next frontier ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590098625000107",
+      "snippet": "Finally, we discuss translational milestones wherein AI-designed ligands and proteins have progressed to preclinical and clinical validation, and speculate on the synthesis of generative AI, closed-loop automation, and quantum computing in future autonomous molecular design ecosystems."
+    },
+    {
+      "title": "Artificial intelligence (AI) in drug design and discovery: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3050787125000484",
+      "snippet": "Artificial Intelligence (AI) has emerged as a transformative force in drug design and discovery, accelerating and enhancing various stages of pharmaceutical research and development. This comprehensive review explores the integration of advanced AI techniques including Machine Learning (ML), Deep Learning (DL), Natural Language Processing (NLP), Reinforcement Learning (RL), and emerging ..."
+    },
+    {
+      "title": "AI-Driven Drug Discovery: A Comprehensive Review - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12177741/",
+      "snippet": "Abstract Artificial intelligence (AI) and machine learning (ML) offer transformative potential to address the persistent challenges of traditional drug discovery, characterized by high costs, lengthy timelines, and low success rates. This comprehensive review critically analyzes recent advancements (2019-2024) in AI/ML methodologies across the entire drug discovery pipeline, from target ..."
+    },
+    {
+      "title": "AI accelerate the identification of druggable targets by 3D ... - Nature",
+      "url": "https://www.nature.com/articles/s41698-026-01310-7",
+      "snippet": "AI can be used to conduct rapid searches of multiplexed chemical libraries, predict drug-target interactions, and optimize the pharmacological and physicochemical properties of drugs in virtual ..."
+    }
+  ]
+}

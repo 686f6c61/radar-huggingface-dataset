@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "barbarabhb/nl2sh-qwen25-coder-1.5b-GGUF",
+  "slug": "barbarabhb-nl2sh-qwen25-coder-1-5b-gguf",
+  "author": "barbarabhb",
+  "url": "https://huggingface.co/barbarabhb/nl2sh-qwen25-coder-1.5b-GGUF",
+  "created_at": "2026-08-23T23:48:09.000Z",
+  "updated_at": "2026-08-24T00:00:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "nl2sh",
+    "natural-language-to-shell",
+    "llama-cpp",
+    "lora",
+    "sft",
+    "text-generation",
+    "en",
+    "dataset:westenfelder/NL2SH-ALFA",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 8134913184,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuantFactory/Qwen2.5-Coder-1.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Qwen2.5-Coder-1.5B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-1.5B-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). For Qwen2.5-Coder, we release three base language models and instruction-tuned language models, 1.5, 7 and 32 (coming soon) billion parameters."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers. (3) Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios"
+    },
+    {
+      "title": "1.5B Shell Command Model Beats a 7B on a Laptop CPU | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/nl2sh-qwen2-5-coder-1-5b-shell-command-model-laptop-cpu-august-2026",
+      "snippet": "A LoRA fine-tune of Qwen2.5-Coder-1.5B turns English into shell commands at 941MB, 0.59s median, 1.6GB RAM, no GPU. It scores 0.620 on InterCode-ALFA against an untuned 7B&#x27;s 0.613."
+    }
+  ]
+}

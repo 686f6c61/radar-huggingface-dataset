@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/iris-reef-64",
+  "slug": "models4world-iris-reef-64",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/iris-reef-64",
+  "created_at": "2026-08-24T13:03:00.000Z",
+  "updated_at": "2026-08-24T13:03:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11226685309,
+  "storage_human": "11.2 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Models Database | Browse All AI World Models | world-models.io",
+      "url": "https://world-models.io/en/datasets/world-models/",
+      "snippet": "A structured, searchable database of 48 AI world models spanning model-based reinforcement learning, robotics, video generation, embodied AI, and autonomous systems. Each model record includes architecture details, benchmark context, related papers, and links to the originating lab. Filter by category, status, lab, year, or modality to find the models most relevant to your research."
+    },
+    {
+      "title": "GitHub - iris-computer-vision/iris-model-zoo: A collection of real ...",
+      "url": "https://github.com/iris-computer-vision/iris-model-zoo",
+      "snippet": "A collection of real-world object detection models built with the IRIS platform across domains like drone, weapons, and aircraft detection. Each model is trained on operationally relevant data, ena..."
+    },
+    {
+      "title": "models4world/delta-reef-20 · Hugging Face",
+      "url": "https://huggingface.co/models4world/delta-reef-20",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

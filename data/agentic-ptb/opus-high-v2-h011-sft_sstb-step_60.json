@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-high-v2.h011.sft_sstB.step_60",
+  "slug": "agentic-ptb-opus-high-v2-h011-sft_sstb-step_60",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-high-v2.h011.sft_sstB.step_60",
+  "created_at": "2026-08-24T01:32:25.000Z",
+  "updated_at": "2026-08-24T01:33:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-high-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Every Claude AI Model Compared & Explained (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-claude-ai-model-explained-compared/",
+      "snippet": "Claude has four tiers in 2026: Haiku 4.5, Sonnet 5, Opus 5, and Fable 5. Compare prices, context windows, and which model to use, in 10 minutes."
+    },
+    {
+      "title": "AA Agentic Index Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/aaagenticindex",
+      "snippet": "AA Agentic Index aggregated model score snapshot across 91 AI models. Display only on BenchLM and excluded from overall rankings. A display-only Artificial Analysis agentic index."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tiiuae/Falcon-Perception",
+  "slug": "tiiuae-falcon-perception",
+  "author": "tiiuae",
+  "url": "https://huggingface.co/tiiuae/Falcon-Perception",
+  "created_at": "2026-02-22T10:31:50.000Z",
+  "updated_at": "2026-08-20T10:20:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "falcon_perception",
+    "text-generation",
+    "falcon",
+    "segmentation",
+    "vision-language",
+    "open-vocabulary",
+    "mask-generation",
+    "custom_code",
+    "arxiv:2608.18881",
+    "arxiv:2603.27365",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 139,
+  "downloads_30d": 4155,
+  "trending_score": 7,
+  "parameters": 632372288,
+  "parameters_human": "632.4M",
+  "storage_bytes": 12652972350,
+  "storage_human": "12.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tiiuae/Falcon-Perception: Inference repo for Falcon-Perception ...",
+      "url": "https://github.com/tiiuae/Falcon-Perception",
+      "snippet": "Falcon Perception A minimal, readable yet performant PyTorch inference engine implementation of Falcon Perception — a natively multimodal, dense, autoregressive Transformer model that performs object detection, instance segmentation, or OCR from natural language queries."
+    },
+    {
+      "title": "Falcon Perception - Falcon LLM",
+      "url": "https://falconllm.tii.ae/falcon-perception.html",
+      "snippet": "Falcon Perception is a multimodal AI model that enables systems to see, read, and understand images using natural language prompts. By combining vision and language capabilities in a single architecture, Falcon Perception simplifies how AI interprets visual information while remaining efficient."
+    },
+    {
+      "title": "Introducing the Technology Innovation Institute&#x27;s Falcon Perception ...",
+      "url": "https://falconllm.tii.ae/",
+      "snippet": "From smarter language understanding to enhanced real-world applications, Falcon-H1 and Falcon-E pave the way for intelligent, inclusive, and future-ready solutions. Falcon Perception is a multimodal AI model that enables systems to see, read, and understand images using natural language prompts. By combining vision and language capabilities ..."
+    },
+    {
+      "title": "tiiuae/Falcon-Perception · Hugging Face",
+      "url": "https://huggingface.co/tiiuae/Falcon-Perception",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Falcon Perception: TII&#x27;s Multimodal AI Model Launch",
+      "url": "https://www.tii.ae/news/tii-launches-falcon-perception-new-multimodal-ai-model-helps-machines-see-and-understand-world",
+      "snippet": "TII launches Falcon Perception, a multimodal AI model enabling machines to see, read, and understand the real world efficiently."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Lumina-ERP/lumina-tsql-8b-GGUF",
+  "slug": "lumina-erp-lumina-tsql-8b-gguf",
+  "author": "Lumina-ERP",
+  "url": "https://huggingface.co/Lumina-ERP/lumina-tsql-8b-GGUF",
+  "created_at": "2026-08-23T21:25:10.000Z",
+  "updated_at": "2026-08-23T21:33:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-sql",
+    "t-sql",
+    "sql-server",
+    "erp",
+    "qwen3",
+    "llama.cpp",
+    "ollama",
+    "text-generation",
+    "en",
+    "dataset:Lumina-ERP/erpbench-distribution",
+    "base_model:Lumina-ERP/lumina-tsql-8b",
+    "base_model:quantized:Lumina-ERP/lumina-tsql-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 13737301760,
+  "storage_human": "13.7 GB",
+  "base_model": "Lumina-ERP/lumina-tsql-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lumina: ByteDance AI Studio - Creator-First AI Visual Tool",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=SDNaQ26PEh%2DaqMVRI7lpCxiBvGmdKcLjfZR6pTdg9okEFL6obfdQ2Y2Ncwm2Z5mAhKXN4ZBGI3H5yi9Lcjll6Mq9pe0E8IhGNuDWjOjWryuNu9bxQThnNpyx0XVqsbhYS_hOWSTwyrZewuMY0CHCCy8U3TJv5wsd23z7RvWV29E.1LV_Gu1PcvPN53i4CqKzIQ&rut=c06a879af3760555c36c5d2eb4485cc1158959dd7b22a4fe1864e160284da79c&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8FMmBzPkFtNDGzdTjDThOUTVUCUzGBX7GtUPQFOhInja30zCa%2DyGblG22pfwc4KAMldE7vQJYtXQbvk1d99wjsNYvz1%2DTHoKF9%2D9m4pGqaKruwvLh3UEGuEj43YjTNuEE8MZv%2D2_nG7r36rSaJPNfhGMppn18FIr78qyzOwjaB0M7Q%2DQXtUcjAcmIXuq7r2IaRA6PCdeSuQf1MGN3%2Do3pHQZ2pCw%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZsdW1pbmElMmZob21lJTJmYXJ0d29yayUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZHNpZ251cF9sdW1pbmFfZ2xvYmFsX2VuZ2xpc2hfMjAyNjA4MTlfY2VsZW5lJTI2dXRtX3Rlcm0lM2QyMDI2MDgxOV9icmFuZF9sdW1pbmFfYnJvYWRtYXRjaF9jb3JlJTI2dXRtX2NvbnRlbnQlM2R0ZWNkbyUyNm1zY2xraWQlM2QwMmQwYzdlMTRiMjMxMWZmODA3YWFkNmEzYWVkOWUxOA%26rlid%3D02d0c7e14b2311ff807aad6a3aed9e18&vqd=4-336599028713144043698229021924959098240&iurl=%7B1%7DIG%3DC5C70C05D75A4F3CBAEC302A82EA7818%26CID%3D159ACC6AF336647B14B6DBD4F2416513%26ID%3DDevEx%2C5037.1",
+      "snippet": "BytePlus Lumina - the official AI visual platform for enterprises & creators. Official Seedance 2.5. Bigger savings. Better AI videos. Only on Lumina."
+    },
+    {
+      "title": "calcuis/lumina-gguf · Hugging Face",
+      "url": "https://huggingface.co/calcuis/lumina-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prophet 21 & Epicor Kinetic Consulting | Lumina ERP",
+      "url": "https://lumina-erp.com/",
+      "snippet": "LUMINA ERP A Houston engineering practice for Prophet 21 and Epicor Kinetic: implementation, data migration, integration, rescue, and managed support, plus the Lumina AI platform. Lumina ERP, LLC · Houston, Texas. Serving distributors and manufacturers nationwide."
+    },
+    {
+      "title": "mradermacher/Lumina-2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Lumina-2-GGUF",
+      "snippet": "mradermacher / Lumina-2-GGUF like 0 Transformers GGUF English Mixture of Experts frankenmoe Merge mergekit lazymergekit conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Lumina-AI-Core/README.en.md at main · Happy-380/Lumina-AI-Core - GitHub",
+      "url": "https://github.com/Happy-380/Lumina-AI-Core/blob/main/README.en.md",
+      "snippet": "An all‑in‑one AI assistant built on llama.cpp + local GGUF models (.NET 8 console application). Lumina‑AI runs completely offline, integrating local large‑model chat, Miya style transfer, role‑playing (Ewin / Miya), and Windows control via the MCP protocol. Lumina‑AI uses models from the Bonsai family, which are 1‑Bit LLMs."
+    }
+  ]
+}

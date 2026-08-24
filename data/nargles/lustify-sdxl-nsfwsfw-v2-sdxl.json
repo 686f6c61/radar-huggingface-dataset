@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nargles/lustify-sdxl-nsfwsfw-v2-sdxl",
+  "slug": "nargles-lustify-sdxl-nsfwsfw-v2-sdxl",
+  "author": "nargles",
+  "url": "https://huggingface.co/nargles/lustify-sdxl-nsfwsfw-v2-sdxl",
+  "created_at": "2026-08-23T13:42:58.000Z",
+  "updated_at": "2026-08-23T13:42:58.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "realistic",
+    "photorealistic",
+    "photo",
+    "general use",
+    "nsfw",
+    "en",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938011430,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John6666/lustify-sdxl-nsfwsfw-v2-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/lustify-sdxl-nsfwsfw-v2-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BKM1804/lustify-sdxl · Hugging Face",
+      "url": "https://huggingface.co/BKM1804/lustify-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LUSTIFY V7 - SDXL SDXL - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/906597620699397431",
+      "snippet": "Download LUSTIFY V7 - free CHECKPOINT SDXL 1.0 AI model on TENSOR. SDXL. By Chesthole"
+    },
+    {
+      "title": "lustify-sdxl-nsfwsfw-v4-sdxl huggingface.co api & John6666 lustify-sdxl ...",
+      "url": "https://www.toolify.ai/ai-model/john6666-lustify-sdxl-nsfwsfw-v4-sdxl",
+      "snippet": "lustify-sdxl-nsfwsfw-v4-sdxl is an open source model from GitHub that offers a free installation service, and any user can find lustify-sdxl-nsfwsfw-v4-sdxl on GitHub to install. At the same time, huggingface.co provides the effect of lustify-sdxl-nsfwsfw-v4-sdxl install, users can directly use lustify-sdxl-nsfwsfw-v4-sdxl installed effect in huggingface.co for debugging and trial. It also ..."
+    },
+    {
+      "title": "Lustify Workflows [Krea 2, SDXL] - KREA 2 Edit - civitai.com",
+      "url": "https://civitai.com/models/2503119/lustify-workflows-krea-2-sdxl",
+      "snippet": "This is the workflow that was made with my Lustify models in mind, although other models would obviously work with it too. Please, read all the not..."
+    }
+  ]
+}

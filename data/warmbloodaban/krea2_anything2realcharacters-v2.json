@@ -5,7 +5,7 @@
   "author": "WarmBloodAban",
   "url": "https://huggingface.co/WarmBloodAban/Krea2_Anything2RealCharacters-V2",
   "created_at": "2026-08-05T12:36:12.000Z",
-  "updated_at": "2026-08-06T09:15:28.000Z",
+  "updated_at": "2026-08-22T18:36:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -22,13 +22,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 28,
-  "downloads_30d": 15666,
+  "likes": 31,
+  "downloads_30d": 15768,
   "trending_score": 9,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 52624571688,
-  "storage_human": "52.6 GB",
+  "storage_bytes": 52853159408,
+  "storage_human": "52.9 GB",
   "base_model": "Krea2_Turbo",
   "formats": [
     "diffusers"

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MobiusGaian/gpt_FT_adapter",
+  "slug": "mobiusgaian-gpt_ft_adapter",
+  "author": "MobiusGaian",
+  "url": "https://huggingface.co/MobiusGaian/gpt_FT_adapter",
+  "created_at": "2026-07-16T07:42:12.000Z",
+  "updated_at": "2026-08-24T04:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:gpt2",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:openai-community/gpt2",
+    "base_model:adapter:openai-community/gpt2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97593120,
+  "storage_human": "98 MB",
+  "base_model": "gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobiusGaian/gpt_FT_adapter · Hugging Face",
+      "url": "https://huggingface.co/MobiusGaian/gpt_FT_adapter",
+      "snippet": "MobiusGaian / gpt_FT_adapter like 0 Text Generation PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "MobiusGaian/gpt_FT_adapter | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/mobiusgaian/gpt_ft_adapter",
+      "snippet": "MobiusGaian/gpt_FT_adapter by MobiusGaian for text-generation — open-source AI model on HuggingFace."
+    },
+    {
+      "title": "MobiusGaian (Gaian) - Hugging Face",
+      "url": "https://huggingface.co/MobiusGaian/models",
+      "snippet": "Organizations MobiusGaian&#x27;s models4 Sort: Recently updated MobiusGaian/gpt_FT_model 0.1B•Updated 5 days ago• 350 • 1"
+    },
+    {
+      "title": "gpt_FT_adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/MobiusGaian/gpt_FT_adapter",
+      "snippet": "Run gpt_FT_adapter with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "Gpt Ft Adapter12 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mobiusgaian/gpt_ft_adapter12",
+      "snippet": "🧠 Gpt Ft Adapter12model by MobiusGaian ⭐ 37.5 🧠 Model"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "f0909172434/Charlie-Alpha-4B-MLX-4bit",
+  "slug": "f0909172434-charlie-alpha-4b-mlx-4bit",
+  "author": "f0909172434",
+  "url": "https://huggingface.co/f0909172434/Charlie-Alpha-4B-MLX-4bit",
+  "created_at": "2026-08-24T05:14:24.000Z",
+  "updated_at": "2026-08-24T05:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "qlora",
+    "mathematics",
+    "code",
+    "experimental",
+    "sparse-routing",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8521749,
+  "storage_human": "9 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "f0909172434/Charlie-Alpha-4B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/f0909172434/Charlie-Alpha-4B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Charlie-Alpha-4B/MODEL_CARD.md at main · f0909172434/Charlie ... - GitHub",
+      "url": "https://github.com/f0909172434/Charlie-Alpha-4B/blob/main/MODEL_CARD.md",
+      "snippet": "Model description Charlie alpha is a 4B-parameter-class derivative fine-tune for introductory through early university mathematics, Python, C++, data structures, and algorithms. Its response languages are English, Traditional Chinese, and Simplified Chinese. The base is Qwen/Qwen3-4B-Thinking-2507; training uses a quantized MLX LoRA adapter rather than full pretraining."
+    },
+    {
+      "title": "Charlie-Alpha-4B/README.en.md at main · f0909172434/Charlie ... - GitHub",
+      "url": "https://github.com/f0909172434/Charlie-Alpha-4B/blob/main/README.en.md",
+      "snippet": "Charlie alpha Charlie alpha (Charlie-Alpha-4B) is an experimental Traditional Chinese, Simplified Chinese, and English model focused on mathematics and programming. It is a derivative fine-tune of the Apache-2.0-licensed Qwen3-4B-Thinking-2507, trained with 4-bit QLoRA on Apple Silicon using MLX. It is not trained from scratch."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - MLX Server",
+      "url": "https://www.mlxserver.com/models",
+      "snippet": "Models To view all of the models, check out mlx-lm on Huggingface. Our MLX server uses all of the models supported by the mlx-community. Popular Models Here&#x27;s a list of some of the most popular models and their usage: Mistral 7B Instruct Nous Research"
+    }
+  ]
+}

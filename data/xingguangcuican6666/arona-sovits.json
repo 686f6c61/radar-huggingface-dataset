@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "xingguangcuican6666/arona-sovits",
+  "slug": "xingguangcuican6666-arona-sovits",
+  "author": "xingguangcuican6666",
+  "url": "https://huggingface.co/xingguangcuican6666/arona-sovits",
+  "created_at": "2026-08-24T14:07:16.000Z",
+  "updated_at": "2026-08-24T14:07:17.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 650659905,
+  "storage_human": "651 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xingguangcuican6666 (xingguangcuican) · GitHub",
+      "url": "https://github.com/xingguangcuican6666",
+      "snippet": "A graph representing xingguangcuican6666&#x27;s contributions from August 17, 2025 to August 23, 2026. The contributions are 89% commits, 7% pull requests, 3% code review, 1% issues."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "Arona (アロナ) - Blue Archive (ブルーアーカイブ) (蔚蓝档案) (블루 아카이브)",
+      "url": "https://civitai.com/models/389716/arona-blue-archive",
+      "snippet": "<lora:bluearchive-arona-s1-ponyxl-lora-nochekaiser:1>, arona, blue eyes, blue hair, hair over one eye, bangs, halo, mechanical halo,"
+    },
+    {
+      "title": "芙宁娜GPT-SoVITS模型 - GPT-Sovits - AI Hobbyist 交流社区 - Powered by Discuz!",
+      "url": "https://www.ai-hobbyist.com/thread-987-1-1.html",
+      "snippet": "非常抱歉，网盘过期未及时更换特此设置为无需回复直接下载戳我进入下载 芙宁娜GPT-SoVITS模型 ,AI Hobbyist 交流社区"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sovits",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

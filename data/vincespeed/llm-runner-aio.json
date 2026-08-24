@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vincespeed/llm-runner-aio",
+  "slug": "vincespeed-llm-runner-aio",
+  "author": "vincespeed",
+  "url": "https://huggingface.co/vincespeed/llm-runner-aio",
+  "created_at": "2026-07-01T03:11:32.000Z",
+  "updated_at": "2026-08-24T04:13:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "tr",
+    "fr",
+    "de",
+    "ja",
+    "zh",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "en",
+    "tr",
+    "fr",
+    "de",
+    "ja",
+    "zh",
+    "es",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43940929553,
+  "storage_human": "43.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vincespeed/llm-runner-aio · Hugging Face",
+      "url": "https://huggingface.co/vincespeed/llm-runner-aio",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Runner AIO",
+      "url": "https://aihublocal.com/llm-runner-aio",
+      "snippet": "Discover and share local LLM configurations Download .exe (2.03 GB) Download .RAR (2.03 GB)"
+    },
+    {
+      "title": "Can I Run This LLM? AI Model Hardware Checker | llmrun",
+      "url": "https://llmrun.dev/",
+      "snippet": "Can I Run LLM Model Locally? Find out which AI models your machine can actually run. Check GPU compatibility, VRAM requirements, and expected performance."
+    },
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    }
+  ]
+}

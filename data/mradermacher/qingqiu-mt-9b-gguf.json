@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qingqiu-MT-9B-GGUF",
   "created_at": "2026-08-19T06:09:32.000Z",
-  "updated_at": "2026-08-22T14:34:43.000Z",
+  "updated_at": "2026-08-22T14:53:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -27,12 +27,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 296,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 64966305184,
-  "storage_human": "65.0 GB",
+  "storage_bytes": 82967483648,
+  "storage_human": "83.0 GB",
   "base_model": "WPS-Qingqiu/Qingqiu-MT-9B",
   "formats": [
     "gguf"

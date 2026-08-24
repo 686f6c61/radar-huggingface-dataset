@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leonmueller/paper_012332554_zero_shot_transfer",
+  "slug": "leonmueller-paper_012332554_zero_shot_transfer",
+  "author": "leonmueller",
+  "url": "https://huggingface.co/leonmueller/paper_012332554_zero_shot_transfer",
+  "created_at": "2026-08-23T07:53:57.000Z",
+  "updated_at": "2026-08-23T07:54:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "critical",
+    "empirical-focused",
+    "footnote",
+    "intro-background-approach-eval-conclusion",
+    "plain-text",
+    "structured-imrad",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero-Shot Tokenizer Transfer - arXiv.org",
+      "url": "https://arxiv.org/html/2405.07883",
+      "snippet": "The transferred fine-tuned model performs well, coming within approx. 0.5 score of the original model. Also, curiously, the fine-tuned model with the original tokenizer performs better when using the embeddings of the (not fine-tuned) base model; this may be a prudent direction for future work."
+    },
+    {
+      "title": "Mysterious &#x27;Ox Alpha&#x27; Drop Sparks Gemini Rumors: What the Forensics ...",
+      "url": "https://nokiapoweruser.com/ox-alpha-openrouter-google-gemini-zhipu-ai-mystery/",
+      "snippet": "A mysterious AI model named Ox Alpha hit OpenRouter, sending Gemini hype into overdrive. But technical forensics tell a completely different story. - Read in Google AI News on NPowerUser"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "GitHub - isl-org/ZoeDepth: Metric depth estimation from a single image",
+      "url": "https://github.com/isl-org/ZoeDepth",
+      "snippet": "Metric depth estimation from a single image. Contribute to isl-org/ZoeDepth development by creating an account on GitHub."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

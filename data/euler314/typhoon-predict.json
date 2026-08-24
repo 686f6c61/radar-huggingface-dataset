@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "euler314/typhoon-predict",
+  "slug": "euler314-typhoon-predict",
+  "author": "euler314",
+  "url": "https://huggingface.co/euler314/typhoon-predict",
+  "created_at": "2026-07-10T13:21:05.000Z",
+  "updated_at": "2026-08-23T14:26:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "weather-forecasting",
+    "tropical-cyclone",
+    "time-series-forecasting",
+    "causal-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 645708314,
+  "storage_human": "646 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "euler314/typhoon-prediction-model · Hugging Face",
+      "url": "https://huggingface.co/euler314/typhoon-prediction-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "euler314 (Euler) - Hugging Face",
+      "url": "https://huggingface.co/euler314",
+      "snippet": "published a Space about 8 hours ago euler314/craw_web updated a model 5 months ago euler314/typhoon-prediction-model View all activity"
+    },
+    {
+      "title": "yu314-coder/typhoon-predict - GitHub",
+      "url": "https://github.com/yu314-coder/typhoon-predict",
+      "snippet": "Typhoon Predict Typhoon Predict is an ERA5-conditioned tropical-cyclone track research model. It combines recent storm-track history with a local atmospheric reanalysis patch and produces a probabilistic forecast at multiple lead times. This repository contains a trained PyTorch checkpoint and a portable inference script."
+    },
+    {
+      "title": "AI model forecasts severe thunderstorms 4 hours ahead with higher ...",
+      "url": "https://phys.org/news/2026-01-ai-severe-thunderstorms-hours-higher.html",
+      "snippet": "In a critical advance for climate resilience, researchers from The Hong Kong University of Science and Technology (HKUST) have developed an AI model that can predict dangerous convective storms ..."
+    },
+    {
+      "title": "WeatherNext 2: AI model predictions for tropical cyclones",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-2-cyclones/",
+      "snippet": "Predicting how hurricanes and cyclones develop is a longstanding challenge, and every hour of warning counts. Tropical cyclones are among the most destructive weather events on Earth, and for meteorologists, issuing accurate, timely warnings is a constant race against time. Today, in a paper published in Nature, Google researchers show that our WeatherNext AI model achieved state-of-the-art ..."
+    }
+  ]
+}

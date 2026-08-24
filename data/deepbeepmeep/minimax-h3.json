@@ -5,7 +5,7 @@
   "author": "DeepBeepMeep",
   "url": "https://huggingface.co/DeepBeepMeep/MiniMax-H3",
   "created_at": "2026-08-02T14:32:59.000Z",
-  "updated_at": "2026-08-22T07:04:28.000Z",
+  "updated_at": "2026-08-23T23:41:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,19 +13,21 @@
   "languages": [],
   "tags": [
     "diffusion-single-file",
+    "onnx",
     "gguf",
     "region:us"
   ],
   "likes": 52,
-  "downloads_30d": 423672,
+  "downloads_30d": 435156,
   "trending_score": 8,
   "parameters": 25753095920,
   "parameters_human": "25.75B",
-  "storage_bytes": 593260352115,
-  "storage_human": "593.3 GB",
+  "storage_bytes": 593618148230,
+  "storage_human": "593.6 GB",
   "base_model": null,
   "formats": [
-    "gguf"
+    "gguf",
+    "onnx"
   ],
   "is_conversational": false,
   "gated": false,

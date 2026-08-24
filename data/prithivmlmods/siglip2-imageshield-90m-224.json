@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/SigLIP2-ImageShield-90M-224",
+  "slug": "prithivmlmods-siglip2-imageshield-90m-224",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/SigLIP2-ImageShield-90M-224",
+  "created_at": "2026-08-14T09:57:28.000Z",
+  "updated_at": "2026-08-24T04:49:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "image-classification",
+    "ImageShield",
+    "SigLIP2",
+    "90M",
+    "Guardrail",
+    "en",
+    "arxiv:2502.14786",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:finetune:google/siglip2-base-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92888069,
+  "parameters_human": "92.9M",
+  "storage_bytes": 4232792467,
+  "storage_human": "4.2 GB",
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    },
+    {
+      "title": "prithivmlmods",
+      "url": "https://prithivsakthiur.github.io/prithivmlmods/",
+      "snippet": "experience > huggingface ml fellow @ huggingface🤗 [sep 25&#x27; - present] > ai engineer @ polycruz [may 25&#x27; - present] > computer vision collab @ wildy ai [jan 25&#x27; - mar&#x27;25] > swe intern @ mediminds technology [sep 24&#x27; - oct 24&#x27;] > ccsn intern @ directorate of technical education [jul 23&#x27; - aug 23&#x27;] projects > multimodal vlm : vlms for improved reasoning and difficult ocr > computer vision ..."
+    },
+    {
+      "title": "Fine-Tuning SigLIP2 for Image Classification - Hugging Face",
+      "url": "https://huggingface.co/blog/prithivMLmods/siglip2-finetune-image-classification",
+      "snippet": "A Blog post by Prithiv Sakthi on Hugging Face"
+    },
+    {
+      "title": "prithivMLmods/AIorNot-SigLIP2 · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/AIorNot-SigLIP2",
+      "snippet": "Intended Use AIorNot-SigLIP2 is useful in scenarios such as: AI Content Detection - Identify AI-generated images for social platforms or media verification. Digital Media Forensics - Assist in distinguishing synthetic from real-world imagery. Dataset Filtering - Clean datasets by separating real photographs from AI-synthesized ones. Research & Development - Benchmark performance of ..."
+    },
+    {
+      "title": "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic ...",
+      "url": "https://arxiv.org/html/2502.14786v1",
+      "snippet": "Abstract We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe—this includes captioning-based pretraining, self-supervised losses (self-distillation, masked ..."
+    }
+  ]
+}

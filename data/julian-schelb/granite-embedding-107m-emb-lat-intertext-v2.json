@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/granite-embedding-107m-emb-lat-intertext-v2",
+  "slug": "julian-schelb-granite-embedding-107m-emb-lat-intertext-v2",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/granite-embedding-107m-emb-lat-intertext-v2",
+  "created_at": "2026-08-24T13:50:52.000Z",
+  "updated_at": "2026-08-24T13:55:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "intertextuality",
+    "latin",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:ibm-granite/granite-embedding-107m-multilingual",
+    "base_model:finetune:ibm-granite/granite-embedding-107m-multilingual",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106994304,
+  "parameters_human": "107.0M",
+  "storage_bytes": 450140846,
+  "storage_human": "450 MB",
+  "base_model": "ibm-granite/granite-embedding-107m-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julian-schelb (Julian) - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/models",
+      "snippet": "NLP, Entity Extraction, Graph Representation"
+    },
+    {
+      "title": "Granite Embedding - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/embedding",
+      "snippet": "The Granite Embedding model collection consists of embedding models to generate high-quality text embeddings and a reranker model to improve the relevance and quality of search results or recommendations."
+    },
+    {
+      "title": "ibm-granite/granite-embedding-107m-multilingual · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-107m-multilingual",
+      "snippet": "Model Summary:Granite-Embedding-107M-Multilingual is a 107M parameter dense biencoder embedding model from the Granite Embeddings suite that can be used to generate high quality text embeddings. This model produces embedding vectors of size 384 and is trained using a combination of open source relevance-pair datasets with permissive, enterprise-friendly license, and IBM collected and generated ..."
+    },
+    {
+      "title": "arXiv:2502.20204v1 [cs.IR] 27 Feb 2025",
+      "url": "https://arxiv.org/pdf/2502.20204v1",
+      "snippet": "We release five high performing base-sized models, granite-embedding-125m-english and granite-embedding-278m-multilingual, as well as smaller, faster counterparts, granite-embedding-30m-english, granite-embedding-107m-multilingual and granite-embedding-30m-sparse suitable for di-verse resource and latency budgets."
+    },
+    {
+      "title": "Granite Embedding 107m Multilingual model card - IBM",
+      "url": "https://www.ibm.com/docs/en/watsonxdata/premium/2.2.x?topic=models-granite-embedding-107m-multilingual-model-card",
+      "snippet": "The granite-embedding-107m-multilingual model is a 107M parameter dense biencoder embedding model from the Granite Embeddings suite that can be used to generate high quality text embeddings. This model produces embedding vectors of size 384 and is trained using a combination of open source relevance-pair datasets with permissive, enterprise-friendly license, and IBM collected and generated ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hanshlart/Qwen3-0.6B-GGUF",
+  "slug": "hanshlart-qwen3-0-6b-gguf",
+  "author": "Hanshlart",
+  "url": "https://huggingface.co/Hanshlart/Qwen3-0.6B-GGUF",
+  "created_at": "2026-08-23T10:34:24.000Z",
+  "updated_at": "2026-08-23T10:34:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-0.6B-GGUF: Compact Open-Source LLM with Reasoning & Multilingual ...",
+      "url": "https://dev.co/ai/llms/qwen3-0-6b-gguf",
+      "snippet": "Qwen3-.6B-GGUF Qwen3-.6B-GGUF is a 600-million parameter text-generation model from Alibaba (via Unsloth&#x27;s quantized GGUF distribution). It supports switching between thinking mode (for reasoning/math/code) and non-thinking mode (for efficient dialogue), handles 100+ languages, and is Apache 2.0 licensed with no gating."
+    },
+    {
+      "title": "Qwen3-0.6B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-0.6b-gguf-qwen",
+      "snippet": "Overview Qwen3-.6B-GGUF is a 600 million parameter causal language model from Qwen designed for efficient local inference using the GGUF quantization format. This model combines two distinct operating modes—thinking mode for complex reasoning tasks and non-thinking mode for fast general dialogue—within a single architecture. The base model uses 0.44B non-embedding parameters distributed ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
+    }
+  ]
+}

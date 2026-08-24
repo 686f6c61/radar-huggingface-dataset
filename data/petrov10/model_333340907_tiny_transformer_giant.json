@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "petrov10/model_333340907_tiny_transformer_giant",
+  "slug": "petrov10-model_333340907_tiny_transformer_giant",
+  "author": "petrov10",
+  "url": "https://huggingface.co/petrov10/model_333340907_tiny_transformer_giant",
+  "created_at": "2026-08-23T10:58:36.000Z",
+  "updated_at": "2026-08-23T10:58:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "approx-gelu",
+    "cross-attention",
+    "giant",
+    "grouped-query",
+    "layernorm",
+    "multitask",
+    "polynomial",
+    "tiny-transformer",
+    "xavier-uniform",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Tiny Transformer This repository contains a minimal yet functional implementation of a Transformer architecture featuring both an encoder and a decoder. The design prioritizes clarity and simplicity, making it an ideal resource for educational purposes and experimentation in both vision and natural language processing (NLP) applications."
+    },
+    {
+      "title": "model_334293107_tiny_transformer_giant - Hugging Face",
+      "url": "https://huggingface.co/gaoyuchenfield/model_334293107_tiny_transformer_giant",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

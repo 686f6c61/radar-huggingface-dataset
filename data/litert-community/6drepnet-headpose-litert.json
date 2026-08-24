@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "litert-community/6DRepNet-HeadPose-LiteRT",
+  "slug": "litert-community-6drepnet-headpose-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/6DRepNet-HeadPose-LiteRT",
+  "created_at": "2026-07-07T00:52:44.000Z",
+  "updated_at": "2026-08-23T23:04:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "gpu",
+    "head-pose-estimation",
+    "face",
+    "driver-monitoring",
+    "real-time",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157478327,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/6DRepNet-HeadPose-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/6DRepNet-HeadPose-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/6DRepNet-HeadPose-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/6DRepNet-HeadPose-LiteRT/tree/main",
+      "snippet": "Notebooks main 6DRepNet-HeadPose-LiteRT 157 MB Ctrl+K Ctrl+K 1 contributor History:4 commits mlboydaisuke Upload 6drepnet.tflite with huggingface_hub ae20097 verifiedabout 8 hours ago .gitattributes Safe 1.56 kBUpload hero.png with huggingface_hubabout 8 hours ago 6drepnet.tflite 157 MB xet Upload 6drepnet.tflite with huggingface_hubabout 8 hours ago README.md 2.98 kBUpload README.md with ..."
+    },
+    {
+      "title": "LiteRT-Models/sixdrepnet at main · john-rocky/LiteRT-Models",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/sixdrepnet",
+      "snippet": "6DRepNet — Head pose estimation (LiteRT GPU) Real-time 6-DoF head pose estimation running fully on the LiteRT CompiledModel GPU. 6DRepNet (ICIP 2022) regresses a continuous 6D rotation from a face crop — yaw / pitch / roll for driver-monitoring, AR, and attention. ~21 ms/frame on a Pixel 8a."
+    },
+    {
+      "title": "LiteRT-Models/sixdrepnet/README.md at main · john-rocky ... - GitHub",
+      "url": "https://github.com/john-rocky/LiteRT-Models/blob/main/sixdrepnet/README.md",
+      "snippet": "6DRepNet — Head pose estimation (LiteRT GPU) Real-time 6-DoF head pose estimation running fully on the LiteRT CompiledModel GPU. 6DRepNet (ICIP 2022) regresses a continuous 6D rotation from a face crop — yaw / pitch / roll for driver-monitoring, AR, and attention. ~21 ms/frame on a Pixel 8a."
+    },
+    {
+      "title": "Models",
+      "url": "https://localmode.dev/docs/litert/models",
+      "snippet": "The LiteRT catalog ships three verified .litertlm models — Gemma 4 E2B, Gemma 4 E4B, and Qwen3 0.6B — plus instructions for loading gated Gemma models with your own HuggingFace token."
+    }
+  ]
+}

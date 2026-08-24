@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "adab-tech/murya-piper-hausa-tts",
+  "slug": "adab-tech-murya-piper-hausa-tts",
+  "author": "adab-tech",
+  "url": "https://huggingface.co/adab-tech/murya-piper-hausa-tts",
+  "created_at": "2026-07-09T23:44:06.000Z",
+  "updated_at": "2026-08-24T05:02:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "ha"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "hausa",
+    "vits",
+    "multi-speaker",
+    "african-languages",
+    "low-resource",
+    "sovereign-ai",
+    "ha",
+    "dataset:google/WaxalNLP",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77298430,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adab-tech/murya-piper-hausa-tts · Hugging Face",
+      "url": "https://huggingface.co/adab-tech/murya-piper-hausa-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "adab-tech/murya-piper-hausa-tts at main - Hugging Face",
+      "url": "https://huggingface.co/adab-tech/murya-piper-hausa-tts/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - rhasspy/piper: A fast, local neural text to speech system",
+      "url": "https://github.com/rhasspy/piper",
+      "snippet": "A fast, local neural text to speech system. Contribute to rhasspy/piper development by creating an account on GitHub."
+    },
+    {
+      "title": "Piper Voice Samples - GitHub Pages",
+      "url": "https://rhasspy.github.io/piper-samples/",
+      "snippet": "Below are samples for Piper, a fast and local text to speech system. Samples were generated from the first paragraph of the Wikipedia entry for rainbow."
+    },
+    {
+      "title": "AI-Powered Hausa Text-to-Speech Model. - GitHub",
+      "url": "https://github.com/AIBauchi/AI-Powered-Hausa-Text-to-Speech-Model",
+      "snippet": "This repository houses the development of a cutting-edge AI-powered Text-to-Speech (TTS) model tailored for the Hausa language. The project aims to create a state-of-the-art TTS system through iterative development, rigorous testing, and collaboration among machine learning engineers, data scientists, linguists, and software developers."
+    }
+  ]
+}

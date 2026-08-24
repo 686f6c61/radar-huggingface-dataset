@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NamKAI/lab21-qwen35-triage-vi",
+  "slug": "namkai-lab21-qwen35-triage-vi",
+  "author": "NamKAI",
+  "url": "https://huggingface.co/NamKAI/lab21-qwen35-triage-vi",
+  "created_at": "2026-08-23T06:24:47.000Z",
+  "updated_at": "2026-08-23T06:25:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NiallHoang/lab21-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi",
+      "snippet": "Instructions to use NiallHoang/lab21-qwen35-triage-vi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NiallHoang/lab21-qwen35-triage-vi with Transformers:"
+    },
+    {
+      "title": "Lab21 Qwen35 Triage Vi - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/pham039459/lab21-qwen35-triage-vi",
+      "snippet": "Registry entry for model Lab21 Qwen35 Triage Vi; source metadata pending."
+    },
+    {
+      "title": "vudanghuy/lab21-2A202601761-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/vudanghuy/lab21-2A202601761-qwen35-triage-vi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lab21 2a202601546 Qwen35 Triage Vi - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/hung371/lab21-2a202601546-qwen35-triage-vi",
+      "snippet": "Registry entry for model Lab21 2a202601546 Qwen35 Triage Vi; source metadata pending."
+    },
+    {
+      "title": "lab21-qwen35-triage-vi API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/tanh1c/lab21-qwen35-triage-vi",
+      "snippet": "Run lab21-qwen35-triage-vi with FriendliAI inference. LoRA adapter trained on 225 synthetic Vietnamese customer-support tickets to produce a four-field JSON…"
+    }
+  ]
+}

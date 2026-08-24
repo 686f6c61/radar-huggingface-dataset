@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wsber123/bert-mini-finetuned-sst2",
+  "slug": "wsber123-bert-mini-finetuned-sst2",
+  "author": "wsber123",
+  "url": "https://huggingface.co/wsber123/bert-mini-finetuned-sst2",
+  "created_at": "2026-08-23T06:21:15.000Z",
+  "updated_at": "2026-08-23T06:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11171074,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44692608,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wsber123/bert-mini · Hugging Face",
+      "url": "https://huggingface.co/wsber123/bert-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "M-FAC/bert-mini-finetuned-sst2 · Hugging Face",
+      "url": "https://huggingface.co/M-FAC/bert-mini-finetuned-sst2",
+      "snippet": "For the sake of fair comparison and a robust default setup we use the same hyperparameters across all models (bert-tiny, bert-mini) and all datasets (SQuAD version 2 and GLUE)."
+    },
+    {
+      "title": "BERT Mini Finetuned SST2 Open-Source Model - Free for Text ...",
+      "url": "https://model.aibase.com/models/details/1915694141637550082",
+      "snippet": "🚀 BERT-mini model finetuned with M-FAC This project presents a BERT - mini model fine - tuned using the M - FAC optimizer on the SST - 2 dataset, offering a new approach to text classification."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/m-fac-bert-mini-finetuned-sst2",
+      "snippet": "M-FAC/bert-mini-finetuned-sst2 powered by Hugging Face Inference Toolkit Original Model Card text-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "GitHub - Akankshakadam15/mini-BERT-basepaper- · GitHub",
+      "url": "https://github.com/Akankshakadam15/mini-BERT-basepaper-",
+      "snippet": "Increase model size (hidden size, layers) toward BERT-Base dimensions. Reduce fine-tuning epochs (paper recommends 2-4) or add early stopping to avoid the accuracy plateau/overfitting seen after epoch 10."
+    }
+  ]
+}

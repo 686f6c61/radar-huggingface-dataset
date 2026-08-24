@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "abo003516/AraBERT-News-Classifier",
+  "slug": "abo003516-arabert-news-classifier",
+  "author": "abo003516",
+  "url": "https://huggingface.co/abo003516/AraBERT-News-Classifier",
+  "created_at": "2026-08-23T08:59:19.000Z",
+  "updated_at": "2026-08-23T19:26:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aub-mind/arabert: Pre-trained Transformers for Arabic Language ...",
+      "url": "https://github.com/aub-mind/arabert",
+      "snippet": "The pretraining data used for the new AraBERT model is also used for AraGPT2 and AraELECTRA. The dataset consists of 77GB or 200,095,961 lines or 8,655,948,860 words or 82,232,988,358 chars (before applying Farasa Segmentation)"
+    },
+    {
+      "title": "abo003516/ArabiDoc-Comprehensive-Triage-AraBERT · Hugging Face",
+      "url": "https://huggingface.co/abo003516/ArabiDoc-Comprehensive-Triage-AraBERT",
+      "snippet": "Instructions to use abo003516/ArabiDoc-Comprehensive-Triage-AraBERT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Intelligent Arabic News Classification Systems Using AraBERT ...",
+      "url": "https://pub.scientificirg.com/index.php/ESIT/article/view/228",
+      "snippet": "The framework incorporates Arabic-specific text preprocessing, subword tokenization via the AraBERT tokenizer, and a single fully connected softmax classifier appended to the contextual [CLS] representation."
+    },
+    {
+      "title": "aubmindlab/bert-base-arabert · Hugging Face",
+      "url": "https://huggingface.co/aubmindlab/bert-base-arabert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AhmedYounes94/Arabert",
+      "url": "https://github.com/AhmedYounes94/Arabert",
+      "snippet": "AraBERT is an Arabic pretrained lanaguage model based on Google&#x27;s BERT architechture. AraBERT uses the same BERT-Base config. More details are available in the AraBERT Paper and in the AraBERT Meetup There are two versions of the model, AraBERTv0.1 and AraBERTv1, with the difference being that ..."
+    }
+  ]
+}

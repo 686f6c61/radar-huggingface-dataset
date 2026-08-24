@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Gautam6/BUDDHAAI",
+  "slug": "gautam6-buddhaai",
+  "author": "Gautam6",
+  "url": "https://huggingface.co/Gautam6/BUDDHAAI",
+  "created_at": "2026-08-24T10:54:11.000Z",
+  "updated_at": "2026-08-24T10:54:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34227712,
+  "parameters_human": "34.2M",
+  "storage_bytes": 136919040,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gautam6/GautamAI · Hugging Face",
+      "url": "https://huggingface.co/Gautam6/GautamAI",
+      "snippet": "Overview Gautam AI is a State-of-the-Art (SOTA) Supreme Autonomous AGI Model developed by Gautam AI Ecosystem. It completely supersedes and removes legacy third-party base architectures (such as Qwen or others), operating with an autonomous continuous self-improving curriculum loop, 4-bit sparse quantization, and multi-domain reasoning capabilities."
+    },
+    {
+      "title": "Gautam Buddha Model | 3D model - CGTrader",
+      "url": "https://www.cgtrader.com/3d-models/various/various-models/gautam-buddha-model",
+      "snippet": "Model available for download in OBJ format. Visit CGTrader and browse more than 1 million 3D models, including 3D print and real-time assets"
+    },
+    {
+      "title": "\"gautam buddha\" 3D Models to Print - yeggi",
+      "url": "https://www.yeggi.com/q/gautam+buddha/",
+      "snippet": "6303 \"gautam buddha\" printable 3D Models. Every Day new 3D Models from all over the World. Click to find the best Results for gautam buddha Models for your 3D Printer."
+    },
+    {
+      "title": "Gautama Buddha - AI Generated Gautama Buddha Drawings, Images, Pictures ...",
+      "url": "https://drawgpt.ai/tag/gautama-buddha/",
+      "snippet": "AI generated images of Gautama Buddha created using GPT-3, GPT-4, and ChatGPT. DrawGPT is a website that generates AI art and drawing using language based AI models to generate images and art."
+    },
+    {
+      "title": "Gautam Buddha - 3D model by vikrantbakkar - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/gautam-buddha-25e1b6940a634052a36054237e91bae0",
+      "snippet": "This model was generated using Meshy (https://www.meshy.ai)&#x27;s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models. If you ..."
+    }
+  ]
+}

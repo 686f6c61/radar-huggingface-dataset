@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.5-35B-A3B-heretic-ja-i1-GGUF",
+  "slug": "mradermacher-ornith-1-5-35b-a3b-heretic-ja-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-heretic-ja-i1-GGUF",
+  "created_at": "2026-08-23T10:50:50.000Z",
+  "updated_at": "2026-08-23T16:53:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara-lora",
+    "en",
+    "base_model:OS-Software/Ornith-1.5-35B-A3B-heretic-ja",
+    "base_model:quantized:OS-Software/Ornith-1.5-35B-A3B-heretic-ja",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 370842244864,
+  "storage_human": "370.8 GB",
+  "base_model": "OS-Software/Ornith-1.5-35B-A3B-heretic-ja",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ornith-1.5-35B-A3B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ornith-1.5-35B-A3B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-abliterated-GGUF",
+      "snippet": "mradermacher / Ornith-1.5-35B-A3B-abliterated-GGUF like 0 Transformers GGUF English abliterated uncensored Mixture of Experts mamba conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ornith-1.5 35B-A3B for DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark",
+      "snippet": "Serve Ornith-1.5-35B-A3B — a ~35B mixture-of-experts model (~3B active params/token) from the Ornith team — on a single NVIDIA DGX Spark (GB10 / SM121, ~128 GB unified memory): NVFP4 checkpoint, vLLM, in-checkpoint MTP speculative decoding, and up to 256k context."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-GGUF | Genaihub",
+      "url": "https://genaihub.net/agents/hf-model-ornith-ai-ornith-1-5-35b-a3b-gguf",
+      "snippet": "Ornith-1.5-35B-A3B-GGUF is an open-weight text-generation model with roughly 35B parameters published by ornith-ai on the Hugging Face Hub. It has 123,237 downloads."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    }
+  ]
+}

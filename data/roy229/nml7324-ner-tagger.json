@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Roy229/nml7324-ner-tagger",
+  "slug": "roy229-nml7324-ner-tagger",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/nml7324-ner-tagger",
+  "created_at": "2026-08-23T11:42:31.000Z",
+  "updated_at": "2026-08-23T11:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "token-classification",
+    "nml-registry",
+    "ner-tagger",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229 (RoyD) - Hugging Face",
+      "url": "https://huggingface.co/Roy229/datasets",
+      "snippet": "Roy229&#x27;s datasets1 Sort: Recently updated Roy229/customer-support-intents-v1 Updated about 2 hours ago"
+    },
+    {
+      "title": "Roy229/huggingface_10302_7a3c9e2f_globex-ner-extractor · Hugging Face",
+      "url": "https://huggingface.co/Roy229/huggingface_10302_7a3c9e2f_globex-ner-extractor",
+      "snippet": "Roy229 / huggingface_10302_7a3c9e2f_globex-ner-extractor like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Project - Building NER Taggers.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/dipanjanS/nlp_workshop_odsc19/blob/master/Module03%20-%20Text%20Understanding/Project%20-%20Building%20NER%20Taggers.ipynb",
+      "snippet": "Project: Build your own NER Tagger Named Entity Recognition (NER) , also known as entity chunking/extraction , is a popular technique used in information extraction to identify and segment the named entities and classify or categorize them under various predefined classes."
+    },
+    {
+      "title": "Day 37: Named Entity Recognition (NER) with LLMs",
+      "url": "https://dev.to/nareshnishad/day-37-named-entity-recognition-ner-with-llms-2g5p",
+      "snippet": "Introduction Named Entity Recognition (NER) is a crucial Natural Language Processing (NLP)... Tagged with llm, 75daysofllm, nlp, ner."
+    },
+    {
+      "title": "Named Entity Recognition - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/named-entity-recognition/",
+      "snippet": "Named Entity Recognition (NER) in NLP focuses on identifying and categorizing important information known as entities in text. These entities can be names of people, places, organizations, dates, etc."
+    }
+  ]
+}

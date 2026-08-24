@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fluxxd9/zen-1-v1.0",
+  "slug": "fluxxd9-zen-1-v1-0",
+  "author": "fluxxd9",
+  "url": "https://huggingface.co/fluxxd9/zen-1-v1.0",
+  "created_at": "2026-08-24T10:02:02.000Z",
+  "updated_at": "2026-08-24T10:06:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1544803840,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3103261732,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zen | OpenCode",
+      "url": "https://opencode.ai/docs/zen/",
+      "snippet": "Finally, we benchmarked the combination of the model/provider and came up with a list that we feel good recommending. OpenCode Zen is an AI gateway that gives you access to these models."
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    },
+    {
+      "title": "black-forest-labs/FLUX.1-dev · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Owen777/UltraFlux-v1 · Hugging Face",
+      "url": "https://huggingface.co/Owen777/UltraFlux-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

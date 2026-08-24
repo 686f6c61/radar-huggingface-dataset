@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "emads/whisper-large-v3-urdu-v2",
+  "slug": "emads-whisper-large-v3-urdu-v2",
+  "author": "emads",
+  "url": "https://huggingface.co/emads/whisper-large-v3-urdu-v2",
+  "created_at": "2026-08-24T02:31:12.000Z",
+  "updated_at": "2026-08-24T02:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ur",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "urdu",
+    "roman-urdu",
+    "code-switching",
+    "pakistan",
+    "ur",
+    "en",
+    "arxiv:2605.17846",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543494400,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174133209,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "FLEURS ur_pk (test)",
+      "metric": "WER (normalized)",
+      "value": 16.65
+    }
+  ],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · kingabzpro/whisper-large-v3-urdu at main",
+      "url": "https://huggingface.co/kingabzpro/whisper-large-v3-urdu/blob/main/README.md",
+      "snippet": "Whisper large V3 Urdu ASR Model 🥇 This model is a fine-tuned version of openai/whisper-large-v3 on the common_voice_17_0 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "rizwan2000/whisper_large_v3_turbo_multi_ur - GitHub",
+      "url": "https://github.com/rizwan2000/whisper_large_v3_turbo_multi_ur",
+      "snippet": "Whisper-Large-v3-Turbo model - fine-tuned for multi-lingual (Urdu+English) speakers on new custom designed dataset."
+    },
+    {
+      "title": "whisper-large-v3-turbo-urdu-betacodes-v2 - friendli.ai",
+      "url": "https://friendli.ai/models/noumankhan014/whisper-large-v3-turbo-urdu-betacodes-v2",
+      "snippet": "Deploy whisper-large-v3-turbo-urdu-betacodes-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    }
+  ]
+}

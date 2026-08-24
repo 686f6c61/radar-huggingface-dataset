@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hqfang/MolmoAct2-RoboDojo",
+  "slug": "hqfang-molmoact2-robodojo",
+  "author": "hqfang",
+  "url": "https://huggingface.co/hqfang/MolmoAct2-RoboDojo",
+  "created_at": "2026-08-24T08:24:44.000Z",
+  "updated_at": "2026-08-24T08:44:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmoact2",
+    "image-text-to-text",
+    "robotics",
+    "robodojo",
+    "custom_code",
+    "arxiv:2605.02881",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5447411422,
+  "parameters_human": "5.45B",
+  "storage_bytes": 21802837270,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    },
+    {
+      "title": "GitHub - allenai/molmoact: Official Repository for MolmoAct",
+      "url": "https://github.com/allenai/MolmoAct",
+      "snippet": "MolmoAct: Multimodal Open Language Model for Action Updates [2026/5/5] 🔥 We have released MolmoAct2, faster, stronger, and better in every aspect. Check it out. [2025/12/5] 🔥 Tips on zero-shot evaluation of allenai/MolmoAct-7B-D-0812 on Franka setup with MolmoAct mid-training at 5.4 Zero-shot evaluation."
+    },
+    {
+      "title": "MolmoAct2 Action Reasoning Models for Real-World Deployment - arXiv.org",
+      "url": "https://arxiv.org/html/2605.02881v1",
+      "snippet": "Figure 1: Overview of MolmoAct2. MolmoAct2 is a fully open action reasoning model for real-world deployment. From a suite of high-quality robot datasets that we collect, filter, and curate at scale across three platforms spanning the low-to-medium cost range (left), we train MolmoAct2 and its adaptive-depth reasoning variant MolmoAct2-Think, coupled to the VLM backbone through a novel action ..."
+    },
+    {
+      "title": "MolmoAct 2: An open foundation for robots that work in the real world",
+      "url": "https://allenai.org/blog/molmoact2",
+      "snippet": "MolmoAct 2 is a fully open robotics foundation model that brings faster, stronger 3D action reasoning to real-world robot tasks, alongside a major new bimanual manipulation dataset for researchers to study, reproduce, and build on."
+    }
+  ]
+}

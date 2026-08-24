@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bhumika-tewari-282006/fusionuncertaintynet-checkpoints",
+  "slug": "bhumika-tewari-282006-fusionuncertaintynet-checkpoints",
+  "author": "bhumika-tewari-282006",
+  "url": "https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-checkpoints",
+  "created_at": "2026-08-24T06:45:36.000Z",
+  "updated_at": "2026-08-24T12:32:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "protein",
+    "evidential-deep-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27375788,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Anamitra-Sarkar/FusionUncertaintyNet",
+      "url": "https://github.com/Anamitra-Sarkar/FusionUncertaintyNet",
+      "snippet": "Repo Layout frontend/ — Next.js 14 on Vercel, Firebase Auth, Firestore fusion_* backend-lite/ — FastAPI on Render (auth proxy, Groq, Firestore) backend-heavy/ — FastAPI on HF Spaces Docker (GPU inference) training/ — Kaggle P100 notebooks + scripts, checkpoints -> HF Hub bhumika-tewari-282006 data-pipeline/ — AFdb + PDB alignment, PAE, SETH disorder"
+    },
+    {
+      "title": "bhumika-tewari-282006 (Bhumika Tewari) - Hugging Face",
+      "url": "https://huggingface.co/datasets/bhumika-tewari-282006/",
+      "snippet": "bhumika-tewari-282006 Follow Arko007&#x27;s profile picture 1 follower · 1 following Bhumika2006-hue"
+    },
+    {
+      "title": "PG-HyFusionGN Model - a Hugging Face Space by bhumika-tewari-282006",
+      "url": "https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "FUSION: Uncertainty-Guided Federated Semi-Supervised Learning for ...",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/pdfdirect/10.1049/ipr2.70147",
+      "snippet": "The FLDL model , is trained using supervised learning from labelled clients and subsequently generates synthetic labels for the FUDT model , which refines these pseudo-labels through prototype estimation and uncertainty-guided denoising."
+    }
+  ]
+}

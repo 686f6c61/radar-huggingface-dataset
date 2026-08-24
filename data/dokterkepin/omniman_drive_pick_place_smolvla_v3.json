@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dokterkepin/omniman_drive_pick_place_smolvla_v3",
+  "slug": "dokterkepin-omniman_drive_pick_place_smolvla_v3",
+  "author": "dokterkepin",
+  "url": "https://huggingface.co/dokterkepin/omniman_drive_pick_place_smolvla_v3",
+  "created_at": "2026-08-23T17:50:49.000Z",
+  "updated_at": "2026-08-23T17:51:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:dokterkepin/omniman_drive_pick_place",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046218,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197790040,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dokterkepin/omniman_drive_pick_place · Hugging Face",
+      "url": "https://huggingface.co/dokterkepin/omniman_drive_pick_place",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "dokterkepin (Kevin Chang) - Hugging Face",
+      "url": "https://huggingface.co/dokterkepin",
+      "snippet": "Sort: Recently updated dokterkepin/omniman_drive_pick_place_diff Robotics • 0.3B•Updated 2 days ago• 8"
+    },
+    {
+      "title": "dokterkepin (Kevin) · GitHub",
+      "url": "https://github.com/dokterkepin/",
+      "snippet": "A graph representing dokterkepin&#x27;s contributions from June 01, 2025 to June 03, 2026. The contributions are 98% commits, 2% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "GitHub - dokterkepin/nxp_omniman_ws: Omnidirectional Mecanum Mobile ...",
+      "url": "https://github.com/dokterkepin/nxp_omniman_ws/tree/main",
+      "snippet": "A ROS 2 Humble mobile manipulator featuring a mecanum-wheeled base with a 6-DOF arm and gripper. The robot uses CyberGear motors (base + arm), Dynamixel servos (wrist + gripper), and an RPLidar for SLAM and navigation."
+    },
+    {
+      "title": "Google Drive - Sign in",
+      "url": "https://drive.google.com/",
+      "snippet": "Sign in to Google Drive using your Google account for personal or business use."
+    }
+  ]
+}

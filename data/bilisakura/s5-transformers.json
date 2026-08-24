@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "BiliSakura/S5-transformers",
+  "slug": "bilisakura-s5-transformers",
+  "author": "BiliSakura",
+  "url": "https://huggingface.co/BiliSakura/S5-transformers",
+  "created_at": "2026-08-23T10:00:52.000Z",
+  "updated_at": "2026-08-23T10:10:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "remote-sensing",
+    "earth-observation",
+    "self-supervised-learning",
+    "semantic-segmentation",
+    "feature-extraction",
+    "vision",
+    "s5",
+    "s4p",
+    "vit",
+    "en",
+    "arxiv:2508.12409",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1641042392,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bili-Sakura / S5-transformers Public - GitHub",
+      "url": "https://github.com/Bili-Sakura/S5-transformers",
+      "snippet": "For inference, convert that checkpoint into a Transformers repo layout (config.json, model.safetensors, preprocessor, remote code). The converted folder is self-contained: pipeline (..., trust_remote_code=True) does not import this GitHub repository. The remote-code layout follows the same pattern as BiliSakura/SATMAE-PP-transformers."
+    },
+    {
+      "title": "BiliSakura (Sakura) - Hugging Face",
+      "url": "https://huggingface.co/BiliSakura",
+      "snippet": "BiliSakura/PixNerd-diffusers Text-to-Image • May 30 RS-SSL Model Collection BiliSakura/CROMA-transformers BiliSakura/DOFA-transformers Visual Generation Models BiliSakura/JiT-diffusers"
+    },
+    {
+      "title": "BiliSakura/SATLAS-transformers · Hugging Face",
+      "url": "https://huggingface.co/BiliSakura/SATLAS-transformers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    },
+    {
+      "title": "Transformer models: an introduction and catalog - arXiv.org",
+      "url": "https://arxiv.org/html/2302.07730v4",
+      "snippet": "The paper also includes an introduction to the most important aspects and innovations in Transformer models. Our catalog will include models that are trained using self-supervised learning (e.g., BERT or GPT3) as well as those that are further trained using a human-in-the-loop (e.g. the InstructGPT model used by ChatGPT)."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "refrigerator-ai/RefrigeratorAI-8B-2",
+  "slug": "refrigerator-ai-refrigeratorai-8b-2",
+  "author": "refrigerator-ai",
+  "url": "https://huggingface.co/refrigerator-ai/RefrigeratorAI-8B-2",
+  "created_at": "2026-08-23T11:01:20.000Z",
+  "updated_at": "2026-08-23T11:31:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "lfm2_moe",
+    "LFM",
+    "transformer",
+    "instruction-tuned",
+    "multilingual",
+    "uncensored",
+    "non-censored",
+    "unfiltered",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "zh",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:finetune:LiquidAI/LFM2.5-8B-A1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8730000832,
+  "parameters_human": "8.73B",
+  "storage_bytes": 17478968849,
+  "storage_human": "17.5 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "refrigerator-ai/RefrigeratorAI-8B · Hugging Face",
+      "url": "https://huggingface.co/refrigerator-ai/RefrigeratorAI-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/RefrigeratorAI-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RefrigeratorAI-8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "www.refrigeratorai.com",
+      "url": "https://www.refrigeratorai.com/",
+      "snippet": "www.refrigeratorai.com"
+    },
+    {
+      "title": "refrigerator-ai (Refrigerator AI) - Hugging Face",
+      "url": "https://huggingface.co/refrigerator-ai/models",
+      "snippet": "Org profile for Refrigerator AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "mradermacher/RefrigeratorAI-8B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RefrigeratorAI-8B-GGUF/tree/main",
+      "snippet": "mradermacher / RefrigeratorAI-8B-GGUF like 0 Transformers GGUF Japanese conversational Model card FilesFiles and versions xet Community Deploy Use this model main RefrigeratorAI-8B-GGUF 73.4 GB Ctrl+K Ctrl+K 1 contributor History:17 commits mradermacher auto-patch README.md c2d7f17 verifiedabout 14 hours ago .gitattributes 2.3 kBuploaded from leiaabout 16 hours ago README.md 3.54 kBauto-patch ..."
+    }
+  ]
+}

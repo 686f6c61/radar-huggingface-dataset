@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kimy0420/act_film_224",
+  "slug": "kimy0420-act_film_224",
+  "author": "kimy0420",
+  "url": "https://huggingface.co/kimy0420/act_film_224",
+  "created_at": "2026-08-23T06:16:20.000Z",
+  "updated_at": "2026-08-23T06:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "act",
+    "film",
+    "openmanipulator-x",
+    "goal-conditioned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52198534,
+  "parameters_human": "52.2M",
+  "storage_bytes": 208827528,
+  "storage_human": "209 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kimy0420 (양종수) - Hugging Face",
+      "url": "https://huggingface.co/kimy0420",
+      "snippet": "Recent Activity updated a dataset12 days ago kimy0420/eval_act_record_test published a dataset12 days ago kimy0420/eval_act_record_test published a model12 days ago kimy0420/record_test_act_policy View all activity"
+    },
+    {
+      "title": "kimy0420 (양종수) - Hugging Face",
+      "url": "https://huggingface.co/datasets/kimy0420/",
+      "snippet": "kimy0420&#x27;s datasets8 Sort: Recently updated kimy0420/eval_act_record_test Updated 19 days ago• 38"
+    },
+    {
+      "title": "FindFilm.ai — Find your movie using AI",
+      "url": "https://findfilm.ai/",
+      "snippet": "Find your movie using AI. 240,000 films with aggregated scores from IMDb, Rotten Tomatoes & Metacritic into one weighted rating."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Cinely: AI RPG & Movie Maker",
+      "url": "https://www.cinelyai.com/",
+      "snippet": "Turn your ideas into AI movies with Cinely — story-driven AI films with ready-made templates, user-guided next scenes, and interactive movie flows built for short-form storytelling."
+    }
+  ]
+}

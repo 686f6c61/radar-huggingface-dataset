@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RTMW-m-WholeBody-ExecuTorch",
+  "slug": "mlboydaisuke-rtmw-m-wholebody-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RTMW-m-WholeBody-ExecuTorch",
+  "created_at": "2026-08-23T07:49:46.000Z",
+  "updated_at": "2026-08-23T07:50:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "keypoint-detection",
+    "pose-estimation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129070464,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - open-mmlab/mmpose: OpenMMLab Pose Estimation Toolbox and ...",
+      "url": "https://github.com/open-mmlab/mmpose",
+      "snippet": "What&#x27;s New Release RTMW3D, a real-time model for 3D wholebody pose estimation. Release RTMO, a state-of-the-art real-time method for multi-person pose estimation. Release RTMW models in various sizes ranging from RTMW-m to RTMW-x. The input sizes include 256x192 and 384x288."
+    },
+    {
+      "title": "mmpose/projects/rtmpose at main · open-mmlab/mmpose · GitHub",
+      "url": "https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose",
+      "snippet": "OpenMMLab Pose Estimation Toolbox and Benchmark. Contribute to open-mmlab/mmpose development by creating an account on GitHub."
+    },
+    {
+      "title": "rtmw_fp16.tflite · litert-community/RTMW-m-WholeBody-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/RTMW-m-WholeBody-LiteRT/blob/main/rtmw_fp16.tflite",
+      "snippet": "litert-community / RTMW-m-WholeBody-LiteRT like 1 Follow LiteRT Community (FKA TFLite) 7.45k Keypoint Detection LiteRT LiteRT LiteRT on-device android gpu pose-estimation whole-body wholebody rtmw rtmpose mmpose License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "[2407.08634] RTMW: Real-Time Multi-Person 2D and 3D Whole-body Pose ...",
+      "url": "https://arxiv.org/abs/2407.08634",
+      "snippet": "RTMW demonstrates strong performance on multiple whole-body pose estimation benchmarks while maintaining high inference efficiency and deployment friendliness. We release three sizes: m/l/x, with RTMW-l achieving a 70.2 mAP on the COCO-Wholebody benchmark, making it the first open-source model to exceed 70 mAP on this benchmark."
+    },
+    {
+      "title": "mlboydaisuke/RTMPose-s-Body-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/RTMPose-s-Body-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

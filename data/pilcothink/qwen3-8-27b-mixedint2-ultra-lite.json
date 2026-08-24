@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Pilcothink/Qwen3.8-27B-MixedInt2-ultra-lite",
+  "slug": "pilcothink-qwen3-8-27b-mixedint2-ultra-lite",
+  "author": "Pilcothink",
+  "url": "https://huggingface.co/Pilcothink/Qwen3.8-27B-MixedInt2-ultra-lite",
+  "created_at": "2026-08-23T09:11:48.000Z",
+  "updated_at": "2026-08-23T14:20:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "qwen",
+    "autoround",
+    "quantized",
+    "int2",
+    "mixed-precision",
+    "vllm",
+    "conversational",
+    "2-bit precision",
+    "auto-round",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 3029765360,
+  "parameters_human": "3.03B",
+  "storage_bytes": 13962241997,
+  "storage_human": "14.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

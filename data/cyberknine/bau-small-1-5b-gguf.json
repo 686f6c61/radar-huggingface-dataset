@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cyberknine/bau-small-1.5b-GGUF",
+  "slug": "cyberknine-bau-small-1-5b-gguf",
+  "author": "cyberknine",
+  "url": "https://huggingface.co/cyberknine/bau-small-1.5b-GGUF",
+  "created_at": "2026-08-24T08:47:00.000Z",
+  "updated_at": "2026-08-24T08:47:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "function-calling",
+    "tool-calling",
+    "african-sme",
+    "retail-copilot",
+    "llama-cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048000,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "cyberknine/bau-qwen · Hugging Face",
+      "url": "https://huggingface.co/cyberknine/bau-qwen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Home - CyberKnife",
+      "url": "https://cyberknife.com/",
+      "snippet": "The CyberKnife System is the first and only fully robotic radiotherapy device. CyberKnife uses an approach called stereotactic body radiation therapy (SRS SBRT), delivering precise doses of radiation with extreme accuracy — and accounting for tumor or patient movement in real-time."
+    },
+    {
+      "title": "CyberKnife SRS / SBRT System from Accuray",
+      "url": "https://www.accuray.com/cyberknife/",
+      "snippet": "With the CyberKnife System from Accuray, you can treat every patient with robotic precision and deliver personalized radiation therapy."
+    }
+  ]
+}

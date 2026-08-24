@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nikheal25/gemma-4-E2B-coding-poc-v1",
+  "slug": "nikheal25-gemma-4-e2b-coding-poc-v1",
+  "author": "nikheal25",
+  "url": "https://huggingface.co/nikheal25/gemma-4-E2B-coding-poc-v1",
+  "created_at": "2026-08-23T05:40:21.000Z",
+  "updated_at": "2026-08-23T05:45:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "unsloth",
+    "lora",
+    "mlx",
+    "gemma",
+    "base_model:unsloth/gemma-4-E2B-it-UD-MLX-4bit",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-UD-MLX-4bit",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418752413,
+  "storage_human": "419 MB",
+  "base_model": "unsloth/gemma-4-E2B-it-UD-MLX-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Suite Deep Dive: E2B, E4B, 26B-A4B & 31B — Google&#x27;s Best Local ...",
+      "url": "https://localclaw.io/blog/gemma4-suite-deep-dive",
+      "snippet": "Gemma 4 Suite Deep Dive: E2B, E4B, 26B-A4B & 31B Google DeepMind&#x27;s Gemma 4 family redefines what&#x27;s possible with open-weights models. Native multimodal vision on every model, blazing efficiency through MoE architecture, and a 128K token context window across the entire lineup."
+    },
+    {
+      "title": "ArnavKewalram/gemma-4-E2B-coder-v1 · Hugging Face",
+      "url": "https://huggingface.co/ArnavKewalram/gemma-4-E2B-coder-v1",
+      "snippet": "ArnavKewalram / gemma-4-E2B-coder-v1 like 0 Text Generation Transformers ise-uiuc/Magicoder-OSS-Instruct-75K English gemma gemma4 gemma-4-E2B code coding code-generation python javascript typescript qlora fine-tuned instruct edge on-device small-language-model llm mobile arxiv:2312.02120 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 Playground, Models, and Local Deployment Guide",
+      "url": "https://gemma4.site/",
+      "snippet": "Try Gemma 4 online with a free playground, compare E2B to 31B models, and follow practical steps to run or fine-tune Gemma 4 locally."
+    }
+  ]
+}

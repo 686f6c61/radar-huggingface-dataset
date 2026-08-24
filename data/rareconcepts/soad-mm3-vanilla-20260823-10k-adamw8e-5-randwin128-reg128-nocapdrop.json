@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop",
+  "slug": "rareconcepts-soad-mm3-vanilla-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop",
+  "created_at": "2026-08-23T04:56:42.000Z",
+  "updated_at": "2026-08-23T16:19:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7935986283,
+  "storage_human": "7.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models • Poly Haven",
+      "url": "https://polyhaven.com/models",
+      "snippet": "Hundreds of free 3D models, ready to use for any purpose. No login required."
+    },
+    {
+      "title": "Free Text To Speech Online with Lifelike AI Voices",
+      "url": "https://elevenlabs.io/text-to-speech",
+      "snippet": "Transform text into lifelike speech with ElevenLabs&#x27; Text to Speech. Ultra-realistic text-to-speech supports 70+ languages and TTS API integrations."
+    },
+    {
+      "title": "Rare Concepts",
+      "url": "https://rareconceptsnyc.com/",
+      "snippet": "Rare Concepts is a streetwear brand born in NYC and bound to be worldwide."
+    },
+    {
+      "title": "RockinConcerts.com - Unreleased Live Concert Recordings on DVD, CD, MP3 ...",
+      "url": "https://www.rockinconcerts.com/",
+      "snippet": "Discover an extensive collection of rare, unreleased live concert recordings from your favorite artists. Available on DVD, CD, MP3, MP4, and streaming platforms at RockinConcerts.com"
+    },
+    {
+      "title": "RareConcepts (Rare Data Concepts) - Hugging Face",
+      "url": "https://huggingface.co/RareConcepts/datasets",
+      "snippet": "Org profile for Rare Data Concepts on Hugging Face, the AI community building the future."
+    }
+  ]
+}

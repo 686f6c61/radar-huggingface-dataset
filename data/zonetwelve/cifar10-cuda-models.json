@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ZoneTwelve/cifar10-cuda-models",
+  "slug": "zonetwelve-cifar10-cuda-models",
+  "author": "ZoneTwelve",
+  "url": "https://huggingface.co/ZoneTwelve/cifar10-cuda-models",
+  "created_at": "2026-08-24T15:29:56.000Z",
+  "updated_at": "2026-08-24T15:30:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cifar-10",
+    "image-classification",
+    "cuda",
+    "nvidia-a40",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4826268,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZoneTwelve/cifar10-models · Hugging Face",
+      "url": "https://huggingface.co/ZoneTwelve/cifar10-models",
+      "snippet": "ZoneTwelve CIFAR-10 model suite This repository contains checkpoints from the MPS-trained CIFAR-10 model comparison suite. Each .pt file preserves model weights, optimizer state, epoch history, architecture metadata, and validation-selection metadata."
+    },
+    {
+      "title": "Cifar10 Models - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/zonetwelve/cifar10-models",
+      "snippet": "Registry entry for model Cifar10 Models; source metadata pending."
+    },
+    {
+      "title": "Deep Learning with CIFAR-10: Building a CNN Classifier with PyTorch",
+      "url": "https://sinanlab.github.io/blog/cifar10-cnn-classifier.html",
+      "snippet": "Deep Learning with CIFAR-10: Building a CNN Classifier with PyTorch A complete guide to implementing a Convolutional Neural Network for image classification using PyTorch, featuring data augmentation, TensorBoard visualization, and desktop deployment"
+    },
+    {
+      "title": "ZoneTwelve (ZoneTwelve) - Hugging Face",
+      "url": "https://huggingface.co/ZoneTwelve/models",
+      "snippet": "ZoneTwelve/Taiwan-LLM-7B-v2..1-chat-GGUF Text Generation • Updated Apr 15, 2024 • 51 • 3"
+    },
+    {
+      "title": "Convolutional Neural Network and CIFAR10 Dataset",
+      "url": "https://colab.research.google.com/github/naoya1110/ai_robotics_lab_2025_hands_on/blob/main/Week05_Convolutional_Neural_Network_and_CIFAR10_Dataset.ipynb",
+      "snippet": "The invention of CNNs has significantly improved the accuracy of image recognition AI, surpassing human performance levels. Nowadays, most modern image recognition AI systems rely on CNNs. We will build a simple CNN model and train it using the CIFAR10 dataset. The CIFAR10 dataset comprises 10 categories of 32x32 pixel color images, as shown below:"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "angelsbrood/Qwen3.8-27B-CoreAI-Fused-MTP-Int8",
+  "slug": "angelsbrood-qwen3-8-27b-coreai-fused-mtp-int8",
+  "author": "angelsbrood",
+  "url": "https://huggingface.co/angelsbrood/Qwen3.8-27B-CoreAI-Fused-MTP-Int8",
+  "created_at": "2026-08-23T23:53:49.000Z",
+  "updated_at": "2026-08-24T00:00:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "core-ai",
+    "macos",
+    "apple-silicon",
+    "qwen3.8",
+    "speculative-decoding",
+    "mtp",
+    "int8",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31959716156,
+  "storage_human": "32.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "README.md · mlboydaisuke/Qwen3.8-27B-CoreAI at main",
+      "url": "https://huggingface.co/mlboydaisuke/Qwen3.8-27B-CoreAI/blob/main/README.md",
+      "snippet": "Qwen3.8-27B — Apple Core AI (.aimodel) The Qwen3.8 generation&#x27;s dense 27B, converted to Apple&#x27;s Core AI (the Core ML successor announced at WWDC26) — ported the day the weights landed. This repo ships the full VLM: the text decoder plus the vision path. The text decoder is the Qwen3.5 hybrid graph run dense, 64 layers on a 3:1 interleave of GatedDeltaNet linear-attention mixers (GVA 48v ..."
+    },
+    {
+      "title": "coreai-model-zoo/models/qwen3.8-27b at main · john-rocky ... - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/tree/main/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B (VLM: text decoder + vision path) — Core AI Qwen/Qwen3.8-27B is the Qwen3.8 generation&#x27;s only open compact model — the flagship line&#x27;s dense 27B, released 2026-08-14 as a native VLM (image-text-to-text). This card covers the whole port: the text decoder (ported the day the weights landed) and the vision path (tower + embeddings-input decoder, the zoo&#x27;s first qwen3.5-family ..."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

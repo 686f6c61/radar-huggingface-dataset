@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Wonderlab-Testing-Grounds/Interferon-lambda-RP-9B-Preview-2608",
+  "slug": "wonderlab-testing-grounds-interferon-lambda-rp-9b-preview-2608",
+  "author": "Wonderlab-Testing-Grounds",
+  "url": "https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-lambda-RP-9B-Preview-2608",
+  "created_at": "2026-08-24T01:18:14.000Z",
+  "updated_at": "2026-08-24T01:49:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "RP",
+    "ERP",
+    "Experimental",
+    "creative",
+    "roleplay",
+    "writer",
+    "creative writing",
+    "high rank",
+    "potentially unstable",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 42401743327,
+  "storage_human": "42.4 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Potentially+unstable",
+      "snippet": "Wonderlab-Testing-Grounds/Interferon-alpha-RP-9B-Preview-2608 Text Generation • 9B•Updated about 5 hours ago• 294"
+    },
+    {
+      "title": "Wonderlab Bio. Off-the-shelf cell therapies without immune rejection.",
+      "url": "https://www.wonderlab.bio/",
+      "snippet": "Off-the-Shelf Cell Therapies Without Immune Rejection. AI drug discovery needs a human-cell validation foundation. Cell therapy needs HLA-matched allogeneic iPSCs. Wonderlab is the only company with a fully characterized iPSC platform covering 90%+ of the US population, providing the cells both fields require."
+    },
+    {
+      "title": "Quantized Models for Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1 ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset Indexnusrefather/Nyx-RP-9B-Preview-2608-v0.1 Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Interferon Lambda: The Next Frontier in Antiviral Therapy? - MDPI",
+      "url": "https://www.mdpi.com/1424-8247/18/6/785",
+      "snippet": "Type III interferons (IFN-λ) are the most recently identified members of the interferon family, distantly related to type I interferons and members of the interleukin-10 (IL-10). Unlike type I interferons, which have broadly distributed cellular receptors, IFN-λ signals through a heterodimeric receptor complex with primary expression on epithelial cells. This restricted receptor distribution ..."
+    }
+  ]
+}

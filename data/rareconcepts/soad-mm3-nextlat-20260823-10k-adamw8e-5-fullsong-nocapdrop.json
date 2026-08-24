@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-nextlat-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "slug": "rareconcepts-soad-mm3-nextlat-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "created_at": "2026-08-23T04:56:43.000Z",
+  "updated_at": "2026-08-23T16:20:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10742592126,
+  "storage_human": "10.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JaydenTeoh/NextLat: Official codebase for \"Next-Latent ...",
+      "url": "https://github.com/JaydenTeoh/NextLat",
+      "snippet": "Official codebase for \"Next-Latent Prediction Transformers Learn Compact World Models\" - JaydenTeoh/NextLat"
+    },
+    {
+      "title": "Next-Latent Prediction Transformers Learn Compact World Models",
+      "url": "https://arxiv.org/pdf/2511.05963",
+      "snippet": "Transformers replace recurrence with a memory that grows with sequence length and self-attention that enables ad-hoc lookups over past tokens. Consequently, they lack an inherent incentive to compress history into compact latent states with consistent transition rules. This often leads to learning solutions that generalize poorly. We introduce Next-Latent Prediction (NextLat), which extends ..."
+    },
+    {
+      "title": "Next-Latent Prediction Transformers Learn Compact World Models",
+      "url": "https://arxiv.org/html/2511.05963v1",
+      "snippet": "This objective drives the transformer to form compact latent summaries of past information with recurrent-like dynamics. In effect, NextLat enables the transformer to learn a compact internal world model while avoiding the sequential processing overhead of recurrent architectures."
+    },
+    {
+      "title": "PDF Next-Latent Prediction Transformers Learn Compact World Models",
+      "url": "https://openreview.net/attachment?id=Lh4ayjJIAW&name=pdf",
+      "snippet": "This objective drives the transformer to form compact latent summaries of past information with recurrent-like dynamics. In effect, NextLat enables the transformer to learn a compact internal world model while avoiding the sequential processing overhead of recurrent architectures."
+    },
+    {
+      "title": "RareConcepts (Rare Data Concepts) - Hugging Face",
+      "url": "https://huggingface.co/RareConcepts/models",
+      "snippet": "Org profile for Rare Data Concepts on Hugging Face, the AI community building the future."
+    }
+  ]
+}

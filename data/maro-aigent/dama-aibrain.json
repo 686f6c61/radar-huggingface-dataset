@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "maro-aigent/dama-aibrain",
+  "slug": "maro-aigent-dama-aibrain",
+  "author": "maro-aigent",
+  "url": "https://huggingface.co/maro-aigent/dama-aibrain",
+  "created_at": "2026-08-23T13:30:49.000Z",
+  "updated_at": "2026-08-23T16:58:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 19437790809,
+  "storage_human": "19.4 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maro-aigent (박현정) - Hugging Face",
+      "url": "https://huggingface.co/maro-aigent",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    },
+    {
+      "title": "maro-aigent/Llama-3.2-1B-new1 · Hugging Face",
+      "url": "https://huggingface.co/maro-aigent/Llama-3.2-1B-new1",
+      "snippet": "maro-aigent / Llama-3.2-1B-new1 like 0 Text Generation Transformers Safetensors GGUF llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Agent Arena | AI Agent Performance Leaderboard",
+      "url": "https://arena.ai/leaderboard/agent",
+      "snippet": "Agent Arena 🏆Overall Dynamic ranking of models on how well they orchestrate tools for real-world agentic tasks, based on signals like tool reliability, task completion, and steerability."
+    },
+    {
+      "title": "Llama-3.2-1B-new1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/maro-aigent/Llama-3.2-1B-new1",
+      "snippet": "Run Llama-3.2-1B-new1 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "GitHub - microsoft/maro: Multi-Agent Resource Optimization (MARO ...",
+      "url": "https://github.com/microsoft/maro",
+      "snippet": "Multi-Agent Resource Optimization (MARO) platform is an instance of Reinforcement learning as a Service (RaaS) for real-world resource optimization. It can be applied to many important industrial domains, such as container inventory management in logistics, bike repositioning in transportation, virtual machine provisioning in data centers, and ..."
+    }
+  ]
+}

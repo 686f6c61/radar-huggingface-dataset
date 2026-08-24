@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abhijeetknayak/poca-SoccerTwos",
+  "slug": "abhijeetknayak-poca-soccertwos",
+  "author": "abhijeetknayak",
+  "url": "https://huggingface.co/abhijeetknayak/poca-SoccerTwos",
+  "created_at": "2026-08-24T09:11:58.000Z",
+  "updated_at": "2026-08-24T09:12:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323885346,
+  "storage_human": "324 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaslimshaik/ppo-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/ppo-SoccerTwos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "akanametov/MLAgents-poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/akanametov/MLAgents-poca-SoccerTwos",
+      "snippet": "ML-Agents-SoccerTwos Model card Files Files and versions Metrics Training metrics Community Use this model Edit model card poca Agent playing SoccerTwos Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "poca-SoccerTwos Open-source Agent - Free Deployment for Enhanced ...",
+      "url": "https://model.aibase.com/models/details/1927650001010561024",
+      "snippet": "🚀 Poca Agent Playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. It demonstrates the application of deep reinforcement learning in the SoccerTwos environment."
+    },
+    {
+      "title": "abhi-R/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/206530",
+      "snippet": "This is a trained model of a ppo agent playing SoccerTwos using the Unity ML-Agents Library."
+    },
+    {
+      "title": "agoyal496/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/294986",
+      "snippet": "This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    }
+  ]
+}

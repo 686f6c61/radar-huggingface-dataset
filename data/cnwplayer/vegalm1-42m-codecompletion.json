@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CNWPlayer/VegaLM1-42M-CodeCompletion",
+  "slug": "cnwplayer-vegalm1-42m-codecompletion",
+  "author": "CNWPlayer",
+  "url": "https://huggingface.co/CNWPlayer/VegaLM1-42M-CodeCompletion",
+  "created_at": "2026-08-23T13:27:08.000Z",
+  "updated_at": "2026-08-23T15:05:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "dataset:HuggingFaceCode/stack-v3-train",
+    "base_model:CNWPlayer/VegaLM1-42M-Base",
+    "base_model:finetune:CNWPlayer/VegaLM1-42M-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42054144,
+  "parameters_human": "42.1M",
+  "storage_bytes": 84120376,
+  "storage_human": "84 MB",
+  "base_model": "CNWPlayer/VegaLM1-42M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cursor Composer 3 Leaks: What We Know About the AI Coding Model ...",
+      "url": "https://memeburn.com/cursor-composer-3-leaks-what-we-know/",
+      "snippet": "Leaked checkpoint reveals Cursor&#x27;s Composer 3 (codename \"Vega\") with six model variants, four reasoning tiers, and claims of outperforming Claude Opus 5 and GPT-5.6 Sol. Here&#x27;s what&#x27;s confirmed ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Running a fully local AI Code Assistant with Continue-Part 2 ...",
+      "url": "https://bartwullems.blogspot.com/2024/09/running-fully-local-ai-code-assistant_01569241741.html",
+      "snippet": "In a previous posted I introduced you to Continue in combination with Ollama, as a way to run a fully local AI Code Assistant. In a first post I showed you how to download and install the necessary models and how to integrate it inside VSCode."
+    },
+    {
+      "title": "GitHub - il-dat/open-code-assistant: Local AI-powered code completion ...",
+      "url": "https://github.com/il-dat/open-code-assistant",
+      "snippet": "Inline Code Completions: Get AI-powered code suggestions as you type Multiple Model Support: Use any Ollama model for code completion Local Inference: All processing happens on your machine - no data leaves your device Customizable Settings: Configure trigger characters, temperature, and max tokens Status Monitoring: Built-in sidebar view to monitor Ollama service status Model Management: Easy ..."
+    },
+    {
+      "title": "Running Qwen3-Coder With VLLM and Configuring VSCode to Use Continue ...",
+      "url": "https://www.jamesflare.com/vllm-continue-autocomplete-qwen3-coder/",
+      "snippet": "This tutorial will guide you step-by-step on how to deploy Qwen3-Coder-30B-A3B-Instruct-FP8 using vLLM on consumer-grade GPUs, and configure Continue to achieve a unified Chatbot, Agent, and FIM code completion functionality."
+    }
+  ]
+}

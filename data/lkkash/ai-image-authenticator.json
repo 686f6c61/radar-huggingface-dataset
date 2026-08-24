@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lkkash/ai-image-authenticator",
+  "slug": "lkkash-ai-image-authenticator",
+  "author": "Lkkash",
+  "url": "https://huggingface.co/Lkkash/ai-image-authenticator",
+  "created_at": "2026-08-24T11:59:48.000Z",
+  "updated_at": "2026-08-24T11:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Image-Authenticator-Extension/ai_extension · GitHub",
+      "url": "https://github.com/Image-Authenticator-Extension/ai_extension",
+      "snippet": "Welcome to the AI Extension - Image Authenticator repository! This project provides a browser extension that leverages artificial intelligence to authenticate images, helping users verify the authenticity of images they encounter online."
+    },
+    {
+      "title": "GitHub - ananyajainn/AI-Image-Authenticator: An interactive digital ...",
+      "url": "https://github.com/ananyajainn/AI-Image-Authenticator",
+      "snippet": "An interactive digital trust platform that uses machine learning techniques to authenticate whether an image is AI generated. - ananyajainn/AI-Image-Authenticator"
+    },
+    {
+      "title": "Ideogram | AI apps and models in one platform",
+      "url": "https://ideogram.ai/",
+      "snippet": "Use purpose-built AI apps, access major image and video models through one API, and build on Ideogram 4.0, our open model."
+    },
+    {
+      "title": "AI image authenticator: synthetic and deepfake detector",
+      "url": "https://www.hackster.io/risvitha/ai-image-authenticator-synthetic-and-deepfake-detector-1637da",
+      "snippet": "The Problem Generative AI tools like Mid journey and Stable Diffusion make it hard to verify if an image online is real or synthetic. The Solution An automated vision model that classifies uploaded images into authentic real photos or synthetic AI images. How It Works Images are loaded and preprocessed into normalized tensors. An EfficientNet vision backbone processes spatial features. The ..."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows. Build and use scalable generative AI across apps through one unified platform."
+    }
+  ]
+}

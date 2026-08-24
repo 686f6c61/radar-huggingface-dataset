@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AuthRan/AshuGPT-124M-base",
+  "slug": "authran-ashugpt-124m-base",
+  "author": "AuthRan",
+  "url": "https://huggingface.co/AuthRan/AshuGPT-124M-base",
+  "created_at": "2026-08-23T18:11:20.000Z",
+  "updated_at": "2026-08-23T18:13:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt",
+    "from-scratch",
+    "rope",
+    "rmsnorm",
+    "swiglu",
+    "text-generation",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 494390975,
+  "storage_human": "494 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AuthRan/AuthLLM: AshuGPT — a decoder-only GPT built from ...",
+      "url": "https://github.com/AuthRan/AuthLLM/tree/main",
+      "snippet": "AshuGPT An educational, from-scratch GPT-style decoder-only language model. Tokenizer, Transformer architecture (RoPE, RMSNorm, SwiGLU, causal attention), training loop, distributed training, memory optimization, autoregressive generation, and an inference API — implemented directly against PyTorch tensor/autograd primitives, not assembled from transformers.AutoModel. Built as a from-the ..."
+    },
+    {
+      "title": "AuthLLM/ashugpt/model at main · AuthRan/AuthLLM · GitHub",
+      "url": "https://github.com/AuthRan/AuthLLM/tree/main/ashugpt/model",
+      "snippet": "AshuGPT — a decoder-only GPT built from scratch in PyTorch: custom BPE tokenizer, RoPE, RMSNorm, SwiGLU, distributed training (DDP), KV-cached inference, and a FastAPI server. No transformers.AutoModel — every layer implemented and measured, not assumed. - AuthLLM/ashugpt/model at main · AuthRan/AuthLLM"
+    },
+    {
+      "title": "Training a small 124M parameters language model from scratch",
+      "url": "https://frikishaan.com/blog/training-small-language-model-from-scratch/",
+      "snippet": "Training a language model from scratch force you to understand many things like dataset curation, hyperparameters choices, and optimization details. It is very different from just fine-tuning from an existing checkpoint."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abhinavv3/GPT-124m · Hugging Face",
+      "url": "https://huggingface.co/abhinavv3/GPT-124m",
+      "snippet": "A GPT-2-style large language model (LLM) repository.This implementation includes full support for distributed training, sharded datasets, benchmark evaluation, and efficient text generation."
+    }
+  ]
+}

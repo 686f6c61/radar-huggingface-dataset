@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "colaice/f5-tts-onnx",
+  "slug": "colaice-f5-tts-onnx",
+  "author": "colaice",
+  "url": "https://huggingface.co/colaice/f5-tts-onnx",
+  "created_at": "2026-08-24T09:25:54.000Z",
+  "updated_at": "2026-08-24T09:34:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "f5-tts",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "f5-tts",
+    "onnx",
+    "tts",
+    "text-to-speech",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1420699450,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggingfacess/F5-TTS-ONNX · Hugging Face",
+      "url": "https://huggingface.co/huggingfacess/F5-TTS-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DakeQQ/F5-TTS-ONNX: Running the F5-TTS by ONNX Runtime - GitHub",
+      "url": "https://github.com/DakeQQ/F5-TTS-ONNX",
+      "snippet": "Running the F5-TTS by ONNX Runtime. Contribute to DakeQQ/F5-TTS-ONNX development by creating an account on GitHub."
+    },
+    {
+      "title": "F5-TTS-ONNX/README.md at main · DakeQQ/F5-TTS-ONNX · GitHub",
+      "url": "https://github.com/DakeQQ/F5-TTS-ONNX/blob/main/README.md",
+      "snippet": "Running the F5-TTS by ONNX Runtime. Contribute to DakeQQ/F5-TTS-ONNX development by creating an account on GitHub."
+    },
+    {
+      "title": "README.md · huggingfacess/F5-TTS-ONNX at main",
+      "url": "https://huggingface.co/huggingfacess/F5-TTS-ONNX/blob/main/README.md",
+      "snippet": "main F5-TTS-ONNX / README.md huggingfacess Upload folder using huggingface_hub b6a8c95 verified about 4 hours ago"
+    },
+    {
+      "title": "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow ...",
+      "url": "https://arxiv.org/html/2410.06885v2",
+      "snippet": "Figure 1: An overview of F5-TTS training (left) and inference (right). The model is trained on the text-guided speech-infilling task and condition flow matching loss. The input text is converted to a character sequence, padded with filler tokens to the same length as input speech, and refined by ConvNeXt blocks before concatenation with speech ..."
+    }
+  ]
+}

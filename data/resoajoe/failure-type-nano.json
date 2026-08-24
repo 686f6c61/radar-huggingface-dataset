@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "resoajoe/failure-type-nano",
+  "slug": "resoajoe-failure-type-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/failure-type-nano",
+  "created_at": "2026-08-23T05:29:26.000Z",
+  "updated_at": "2026-08-23T20:54:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "multi-label",
+    "tiny-model",
+    "video-generation",
+    "quality-control",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393228,
+  "storage_human": "393228 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "resoajoe (Joe) · GitHub",
+      "url": "https://github.com/resoajoe",
+      "snippet": "resoajoe has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "resoa (Resoa) - Hugging Face",
+      "url": "https://huggingface.co/resoa/models",
+      "snippet": "AI & ML interests ... Recent Activity resoajoe updated a dataset 8 days ago ... resoajoe published a dataset 15 days ago ... resoajoe updated a model 20 days ago"
+    },
+    {
+      "title": "GitHub - vectara/awesome-agent-failures: A community curated collection ...",
+      "url": "https://github.com/vectara/awesome-agent-failures",
+      "snippet": "Awesome AI Agent Failures is a community-curated list of AI agent failure modes, real-world case studies, and suggested techniques to avoid such failures. Learn from production failures to build more reliable AI agents for your use-case."
+    },
+    {
+      "title": "A Study of Real-world AI Model Failures and Their Impact",
+      "url": "https://opendatascience.com/a-study-of-real-world-ai-model-failures-and-their-impact/",
+      "snippet": "Learn the challenges and impact of AI model failures. Explore real-world use cases and figure out the need to build more transparent and reliable AI models."
+    }
+  ]
+}

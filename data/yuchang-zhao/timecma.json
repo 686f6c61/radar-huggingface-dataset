@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yuchang-Zhao/TimeCMA",
+  "slug": "yuchang-zhao-timecma",
+  "author": "Yuchang-Zhao",
+  "url": "https://huggingface.co/Yuchang-Zhao/TimeCMA",
+  "created_at": "2026-08-23T04:32:04.000Z",
+  "updated_at": "2026-08-23T04:32:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2406.01638",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2406.01638] TimeCMA: Towards LLM-Empowered Multivariate Time Series ...",
+      "url": "https://arxiv.org/abs/2406.01638",
+      "snippet": "We introduce TimeCMA, an intuitive yet effective framework for MTSF via cross-modality alignment. Specifically, we present a dual-modality encoding with two branches: the time series encoding branch extracts disentangled yet weak time series embeddings, and the LLM-empowered encoding branch wraps the same time series with text as prompts to ..."
+    },
+    {
+      "title": "GitHub - Haha13145/TimeCMA",
+      "url": "https://github.com/Haha13145/TimeCMA",
+      "snippet": "We introduce TimeCMA, an intuitive yet effective framework for MTSF via cross-modality alignment. Specifically, we present a dual-modality encoding with two branches: the time series encoding branch extracts disentangled yet weak time series embeddings, and the LLM-empowered encoding branch wraps the same time series with text as prompts to ..."
+    },
+    {
+      "title": "TimeCMA: Towards LLM-Empowered Time Series Forecasting via Cross ...",
+      "url": "https://arxiv.org/html/2406.01638v3",
+      "snippet": "4. Methodology In this section, we propose TimeCMA, an LLM-empowered framework for multivariate time series forecasting with c ross- m odality a lignment. We first provide an overview of the framework and then provide specifics on each module in the framework."
+    },
+    {
+      "title": "TimeCMA: Towards LLM-Empowered Multivariate Time Series Forecasting via ...",
+      "url": "https://arxiv.org/html/2406.01638v5",
+      "snippet": "This paper presents TimeCMA, an LLM-empowered framework via cross-modality alignment for multivariate time series forecasting. A cross-modality alignment module is designed to aggregate the time series and LLM branches based on channel-wise similarity retrieval to enhance forecasting."
+    },
+    {
+      "title": "TimeCMA: Towards LLM-Empowered Multivariate Time Series Forecasting via ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/34067/36222",
+      "snippet": "This paper presents TimeCMA, an LLM-empowered frame-work via cross-modality alignment for multivariate time se-ries forecasting. A cross-modality alignment module is de-signed to aggregate the time series and LLM branches based on channel-wise similarity retrieval to enhance forecasting."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rasa04/tinylm-11m",
+  "slug": "rasa04-tinylm-11m",
+  "author": "rasa04",
+  "url": "https://huggingface.co/rasa04/tinylm-11m",
+  "created_at": "2026-08-24T00:37:50.000Z",
+  "updated_at": "2026-08-24T03:40:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "tiny",
+    "from-scratch",
+    "muon",
+    "tinystories",
+    "conversational",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10558464,
+  "parameters_human": "10.6M",
+  "storage_bytes": 150358464,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0xnyn/tinylm: Browser based ML Inference - GitHub",
+      "url": "https://github.com/0xnyn/tinylm",
+      "snippet": "Browser based ML Inference | OpenAI compliant | Run models like DeepSeek, Llama 3.2, NomicEmbed, KokoroTTS, and more - 0xnyn/tinylm"
+    },
+    {
+      "title": "TinyLLM",
+      "url": "https://www.tinyllm.org/",
+      "snippet": "TinyLLM: You provide data, and TinyLLM generates a custom-trained tiny language model tailored for your embedded sensing application. TinyLLM also simplifies their deployment on resource-constrained platform!"
+    },
+    {
+      "title": "GitHub - TexasInstruments/tinyml-tensorlab: MCU Analytics / ML Model ...",
+      "url": "https://github.com/TexasInstruments/tinyml-tensorlab",
+      "snippet": "The Tiny ML Tensorlab repository is the starting point to install and explore TI&#x27;s AI offering for MCUs. It supports Time Series Classification, Regression, Forecasting, Anomaly Detection, and Image Classification tasks across 24+ TI microcontrollers with 31 example applications. I want to create an ..."
+    },
+    {
+      "title": "TinyLLM (TinyLLM) - Hugging Face",
+      "url": "https://huggingface.co/TinyLLM",
+      "snippet": "Smaller LLMs AI & ML interests Smaller LLMs Team members 2 Organization Card"
+    },
+    {
+      "title": "Offline AI, Empower Your Business - TinyLM",
+      "url": "https://tinylm.eu/",
+      "snippet": "TinyLM brings powerful embedded AI directly to your browser, enabling seamless offline functionality.Enhance your business with specialized AI tools and expertise services that work even without an internet connection.Experience the future of AI, tailored for your needs."
+    }
+  ]
+}

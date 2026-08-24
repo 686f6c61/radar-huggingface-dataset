@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bambanglestari/model_190249674_clip_nano",
+  "slug": "bambanglestari-model_190249674_clip_nano",
+  "author": "bambanglestari",
+  "url": "https://huggingface.co/bambanglestari/model_190249674_clip_nano",
+  "created_at": "2026-08-23T07:42:03.000Z",
+  "updated_at": "2026-08-23T07:42:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "bilinear",
+    "clip",
+    "contrastive",
+    "dilated",
+    "kaiming-normal",
+    "nano",
+    "onecycle",
+    "relu",
+    "rmsnorm",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Nano Banana | Google AI Studio",
+      "url": "https://aistudio.google.com/models/nano-banana",
+      "snippet": "Try image generation apps built in AI Studio image Nano Banana 2 Lite photo_library Nano Banana 2 photo_spark Nano Banana Pro Gridscape Anywhere Peek-a-word"
+    }
+  ]
+}

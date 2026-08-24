@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Kimi-K3-MLX-AXQ-2bit",
+  "slug": "automatosx-ax-kimi-k3-mlx-axq-2bit",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Kimi-K3-MLX-AXQ-2bit",
+  "created_at": "2026-08-23T14:10:07.000Z",
+  "updated_at": "2026-08-23T15:28:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "kimi_k3",
+    "axquant",
+    "moe",
+    "kimi",
+    "experimental",
+    "not-certified",
+    "text-generation",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 348806563200,
+  "parameters_human": "348.81B",
+  "storage_bytes": 1396121854544,
+  "storage_human": "1396.1 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PipeNetwork/kimi-k3-mlx: MLX port of moonshotai/Kimi-K3 (2.78T ...",
+      "url": "https://github.com/PipeNetwork/kimi-k3-mlx",
+      "snippet": "MLX (Apple Silicon) port of moonshotai/Kimi-K3 — Moonshot&#x27;s 2.78T-total / 104B-active native-multimodal MoE, built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with a 1M-token context. kimi_k3.py is a single, stock- mlx-lm -compatible model definition for the text tower; kimi_k3_vision.py is the vision tower and projector; kimi_k3_vl/ is the mlx-vlm wrapper that joins ..."
+    },
+    {
+      "title": "Kimi K3 Model Overview: 2.8T Parameters, MXFP4 Quantization, and What ...",
+      "url": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei",
+      "snippet": "A Blog post by Viddi AI on Hugging Face"
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "AutomatosX/AX-MiniMax-M3-MLX-AXQ-2bit · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-MiniMax-M3-MLX-AXQ-2bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutomatosX MLX Model Catalog - a AutomatosX Collection",
+      "url": "https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog",
+      "snippet": "Official AutomatosX MLX releases for Apple Silicon. OptiQ mixed 4/8-bit packages sit next to uniform 4bit/6bit siblings."
+    }
+  ]
+}

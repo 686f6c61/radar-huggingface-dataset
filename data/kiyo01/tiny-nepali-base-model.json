@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Kiyo01/tiny-nepali-base-model",
+  "slug": "kiyo01-tiny-nepali-base-model",
+  "author": "Kiyo01",
+  "url": "https://huggingface.co/Kiyo01/tiny-nepali-base-model",
+  "created_at": "2026-08-23T05:19:36.000Z",
+  "updated_at": "2026-08-23T05:19:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-24T05:34:07.614Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kiyo01 (Kiyo Senpai) - Hugging Face",
+      "url": "https://huggingface.co/Kiyo01/models",
+      "snippet": "Kiyo01&#x27;s models3 Sort: Recently updated Kiyo01/Kyori02-.5b Text Generation • 0.5B•Updated Aug 1, 2025• 2"
+    },
+    {
+      "title": "MANTRAIDEAS1/nepali-banknote-models-v1 · Hugging Face",
+      "url": "https://huggingface.co/MANTRAIDEAS1/nepali-banknote-models-v1",
+      "snippet": "Nepali Banknote Models A collection of models for the bankNotes-OCR pipeline — a hierarchical 2-stage banknote retrieval system for Nepalese banknotes."
+    },
+    {
+      "title": "GitHub - kiranpantha/whisper-nepali: Robust Speech Recognition (Nepali ...",
+      "url": "https://github.com/kiranpantha/whisper-nepali",
+      "snippet": "The .en models for English-only applications tend to perform better, especially for the tiny.en and base.en models. We observed that the difference becomes less significant for the small.en and medium.en models."
+    },
+    {
+      "title": "HimalayaAI - Open Nepali AI Research",
+      "url": "https://www.himalayaai.org/",
+      "snippet": "A 0.5B parameter language model trained on Nepali language, available on Hugging Face. An open-source knowledge platform for use of AI in Education. A Nepali language tokenizer optimized for NLP tasks and large language model training. Large-scale text corpus in Parquet for GPT-2-style language model pretraining and tokenizer research."
+    },
+    {
+      "title": "Kiyo01 / model - Protect AI",
+      "url": "https://protectai.com/insights/models/Kiyo01/model/c9dc4e9649db9e5cd28acb0722171fda047bebb8/overview",
+      "snippet": "Discover potential threats in the Kiyo01 / model model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

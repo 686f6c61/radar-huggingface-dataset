@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nvidia/Cosmos-Reason2-2B",
+  "slug": "nvidia-cosmos-reason2-2b",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Cosmos-Reason2-2B",
+  "created_at": "2025-12-12T17:50:45.000Z",
+  "updated_at": "2026-04-30T03:14:52.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "qwen3_vl",
+    "nvidia",
+    "conversational",
+    "image-text-to-text",
+    "arxiv:2503.06800",
+    "arxiv:2406.10721",
+    "arxiv:2603.18178",
+    "arxiv:2312.14115",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 161,
+  "downloads_30d": 917569,
+  "trending_score": 7,
+  "parameters": 2438696960,
+  "parameters_human": "2.44B",
+  "storage_bytes": 9755691186,
+  "storage_human": "9.8 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Cosmos-Reason2-2B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos-Reason2-2B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cosmos-Reason2 — Cosmos - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/reason2/index.html",
+      "snippet": "Cosmos-Reason2 # Cosmos-Reason2 is an open , customizable, reasoning vision language model (VLM) for physical AI and robotics. It enables robots and vision AI agents to reason like humans, using prior knowledge, physics understanding, and common sense to understand and act in the real world."
+    },
+    {
+      "title": "GitHub - nvidia-cosmos/cosmos-reason2: Cosmos-Reason2 models understand ...",
+      "url": "https://github.com/nvidia-cosmos/cosmos-reason2",
+      "snippet": "🚀 Cosmos 3 Has Arrived Cosmos 3 is NVIDIA&#x27;s next-generation foundation model platform for Physical AI. Compared with Cosmos-Reason2, Cosmos 3 delivers substantially stronger physical reasoning capabilities while extending beyond reasoning to support world prediction, simulation, transfer, and action generation within a single unified model."
+    },
+    {
+      "title": "vrfai/Cosmos-Reason2-2B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/vrfai/Cosmos-Reason2-2B-NVFP4",
+      "snippet": "Cosmos-Reason2-2B is a vision-language model developed by NVIDIA for Physical AI reasoning — understanding physical common sense and embodied interactions from video and image inputs."
+    },
+    {
+      "title": "SprBull / nvidia-cosmos-cosmos-reason2 Public - GitHub",
+      "url": "https://github.com/SprBull/nvidia-cosmos-cosmos-reason2",
+      "snippet": "NVIDIA Cosmos Reason - an open, customizable, reasoning vision language model (VLM) for physical AI and robotics - enables robots and vision AI agents to reason like humans, using prior knowledge, physics understanding and common sense to understand and act in the real world. This model understands space, time, and fundamental physics, and can serve as a planning model to reason what steps ..."
+    }
+  ]
+}

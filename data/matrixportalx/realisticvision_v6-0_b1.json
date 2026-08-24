@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matrixportalx/RealisticVision_V6.0_B1",
+  "slug": "matrixportalx-realisticvision_v6-0_b1",
+  "author": "matrixportalx",
+  "url": "https://huggingface.co/matrixportalx/RealisticVision_V6.0_B1",
+  "created_at": "2026-08-24T04:18:11.000Z",
+  "updated_at": "2026-08-24T04:18:26.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "sd1.5",
+    "qualcomm",
+    "qnn",
+    "qairt",
+    "snapdragon",
+    "local-dream",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 974369363,
+  "storage_human": "974 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SG161222/Realistic_Vision_V6.0_B1_noVAE · Hugging Face",
+      "url": "https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Realistic Vision V6.0 B1 - V5.1 Hyper (VAE) | Stable ... - Civitai",
+      "url": "https://civitai.com/models/4201/realistic-vision-v60-b1",
+      "snippet": "Realistic_Vision_V5.1_Hyper_pruned.safetensors Half precision, best balance (pruned) • 1.99 GB"
+    },
+    {
+      "title": "imagepipeline/Realistic-Vision-V6.0 · Hugging Face",
+      "url": "https://huggingface.co/imagepipeline/Realistic-Vision-V6.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "realistic-vision-v6.0-b1: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/realistic-vision-v60-b1-asiryan",
+      "snippet": "Overview realistic-vision-v6.-b1 is a Stable Diffusion-based text-to-image model that also supports image-to-image editing and inpainting. It generates photorealistic images from text prompts, with output dimensions up to 1920×1920 pixels. Maintained by asiryan, this model specializes in producing detailed, realistic imagery through diffusion-based synthesis. The key thing to know before ..."
+    },
+    {
+      "title": "Realistic_Vision_V6.0_B1_SD_1_5 · Models",
+      "url": "https://www.modelscope.cn/models/MusePublic/Realistic_Vision_V6.0_B1_SD_1_5",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里 ..."
+    }
+  ]
+}

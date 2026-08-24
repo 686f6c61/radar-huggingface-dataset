@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.50-seed-43",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-50-seed-43",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-43",
+  "created_at": "2026-08-24T12:53:50.000Z",
+  "updated_at": "2026-08-24T12:54:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43",
+      "snippet": "Instructions to use AlinaGonch/granite41-3b-squad-ratio-.90-seed-43 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42",
+      "snippet": "Instructions to use AlinaGonch/granite41-3b-squad-ratio-.50-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "IBM Granite 4.1 LLM Revealed: 15T Tokens, 512K Context, and GRPO ...",
+      "url": "https://www.youtube.com/watch?v=pI-C2banehg",
+      "snippet": "🔹 Summarizes the model structure, training data, pre-training, SFT, and RL pipelines of IBM Granite 4.1 LLM. 🔹 Granite 4.1 has been released with 3B, 8B, and 30B dense decoder-only model ..."
+    }
+  ]
+}

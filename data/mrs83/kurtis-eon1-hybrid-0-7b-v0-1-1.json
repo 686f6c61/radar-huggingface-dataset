@@ -5,7 +5,7 @@
   "author": "mrs83",
   "url": "https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-0.7B-v0.1.1",
   "created_at": "2026-05-13T17:34:11.000Z",
-  "updated_at": "2026-08-21T13:45:37.000Z",
+  "updated_at": "2026-08-22T21:14:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 557,
+  "downloads_30d": 1287,
   "trending_score": 0,
   "parameters": 672190080,
   "parameters_human": "672.2M",

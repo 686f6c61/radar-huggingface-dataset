@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "NYSgpt/biomed-reranker",
+  "slug": "nysgpt-biomed-reranker",
+  "author": "NYSgpt",
+  "url": "https://huggingface.co/NYSgpt/biomed-reranker",
+  "created_at": "2026-08-20T23:38:37.000Z",
+  "updated_at": "2026-08-24T04:30:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "reranker",
+    "cross-encoder",
+    "biomedical",
+    "preprints",
+    "biorxiv",
+    "medrxiv",
+    "CSHL-CPT",
+    "text-ranking",
+    "en",
+    "base_model:Alibaba-NLP/gte-reranker-modernbert-base",
+    "base_model:finetune:Alibaba-NLP/gte-reranker-modernbert-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYSgpt (Brendan Stanton) - Hugging Face",
+      "url": "https://huggingface.co/NYSgpt/models",
+      "snippet": "Organizations NYSgpt&#x27;s models Sort: Recently updated NYSgpt/44b-reranker-minilm-l6 Text Ranking • 22.7M•Updated about 16 hours ago• 3"
+    },
+    {
+      "title": "NYSgpt (Brendan Stanton) - Hugging Face",
+      "url": "https://huggingface.co/NYSgpt",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 15 hours ago ... published a model about 15 hours ago"
+    },
+    {
+      "title": "Beyond Retrieval: Ensembling Cross-Encoders and GPT Rerankers with LLMs ...",
+      "url": "https://arxiv.org/html/2507.05577v1",
+      "snippet": "An interesting observation in the re-ranking stage (Table 2) is that models like jina-reranker-v2-base-multilingual and bge-reranker-large are much larger models with 278M and 560M params respectively compared to the best performing model ms-marco-MiniLM-L12 which has only 33.4M params."
+    },
+    {
+      "title": "GitHub - wnkinc/Bio-RAG: Biomedical question-answering RAG system on ...",
+      "url": "https://github.com/wnkinc/Bio-RAG",
+      "snippet": "This repository contains the complete Bio-RAG system — a biomedical question-answering service built on retrieval-augmented generation: langchain-app/ — the Chainlit web app (LangChain): clarify-then-RAG query flow, answer streaming with cited sources reranker/ — the semantic reranker service, served from a GPU EC2 instance infra/ — the production AWS infrastructure (Pulumi): VPC, EC2 ..."
+    },
+    {
+      "title": "PDF Notebook for the BioASQ Lab at CLEF 2025 - ceur-ws.org",
+      "url": "https://ceur-ws.org/Vol-4038/paper_50.pdf",
+      "snippet": "An interesting observation in the re-ranking stage (Table 2) is that models like jina-reranker-v2-base-multilingual and bge-reranker-large are much larger models with 278M and 560M params respectively compared to the best performing model ms-marco-MiniLM-L12 which has only 33.4M params."
+    }
+  ]
+}

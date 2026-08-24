@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2",
+  "slug": "fulx17-llava-v1-5-7b-e2-lora-r64-b2-smoke-2",
+  "author": "Fulx17",
+  "url": "https://huggingface.co/Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2",
+  "created_at": "2026-08-23T13:26:55.000Z",
+  "updated_at": "2026-08-23T13:27:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llava_llama",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403797973,
+  "storage_human": "404 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liuhaotian/llava-v1.5-7b-lora · Hugging Face",
+      "url": "https://huggingface.co/liuhaotian/llava-v1.5-7b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · liuhaotian/llava-v1.5-7b-lora at main - Hugging Face",
+      "url": "https://huggingface.co/liuhaotian/llava-v1.5-7b-lora/blob/main/README.md",
+      "snippet": "Model type: LLaVA is an open-source chatbot trained by fine-tuning LLaMA/Vicuna on GPT-generated multimodal instruction-following data. It is an auto-regressive language model, based on the transformer architecture. Model date: LLaVA-v1.5-7B-LoRA was trained in October 2023. Paper or resources for more information: https://llava-vl.github.io/"
+    },
+    {
+      "title": "GitHub Pages - LLaVA",
+      "url": "https://llava-vl.github.io/",
+      "snippet": "🔥 [NEW!] LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100 node, and surpasses methods that use billion-scale data. LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language ..."
+    },
+    {
+      "title": "Releases · haotian-liu/LLaVA - GitHub",
+      "url": "https://github.com/haotian-liu/LLaVA/releases",
+      "snippet": "Updates Support LoRA for the instruction tuning stage of LLaVA-1.5 -- comparable performance to full-model finetuning, and reduced requirements on GPU VRAM. (ckpts/logs, script) Bring your own data and finetune LLaVA-1.5 to your own task. (instruction) Basic support for Windows. (instruction) Fix: the training behavior with gradient accumulation is the same as large-batch training. Notes A new ..."
+    },
+    {
+      "title": "GitHub - haotian-liu/LLaVA: [NeurIPS&#x27;23 Oral] Visual Instruction Tuning ...",
+      "url": "https://github.com/haotian-liu/LLaVA",
+      "snippet": "Visual instruction tuning takes around 20 hours for LLaVA-v1.5-13B on 8x A100 (80G), due to the increased resolution to 336px. It takes around 10 hours for LLaVA-v1.5-7B on 8x A100 (40G)."
+    }
+  ]
+}

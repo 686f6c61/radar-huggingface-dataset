@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "artur7236/prometheon-sn108-moderator",
+  "slug": "artur7236-prometheon-sn108-moderator",
+  "author": "artur7236",
+  "url": "https://huggingface.co/artur7236/prometheon-sn108-moderator",
+  "created_at": "2026-08-23T18:13:33.000Z",
+  "updated_at": "2026-08-23T18:15:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "content-moderation",
+    "bittensor",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "artur7236 (Artur Tykholaz) - Hugging Face",
+      "url": "https://huggingface.co/artur7236/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 26 days ago ... updated a model 26 days ago"
+    },
+    {
+      "title": "SubnetAIQ — SN108 Prometheon",
+      "url": "https://subnetaiq.io/subnet/108",
+      "snippet": "SN108 Prometheon is a Bittensor subnet focused on developing and enhancing open-source content moderation models. By leveraging AI-driven automation, it allows miners to compete in creating the most effective moderation tools while ensuring the integrity of the evaluation process. The subnet utilizes a unique mechanism where miners provide both training data and moderation models, fostering a ..."
+    },
+    {
+      "title": "artur7236/tensor · Hugging Face",
+      "url": "https://huggingface.co/artur7236/tensor",
+      "snippet": "artur7236 / tensor like 0 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 5B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Swaps | SN108: Prometheon | Backprop Finance",
+      "url": "https://backprop.finance/dtao/subnets/108-prometheon/swaps",
+      "snippet": "AI-driven Platform Operations Automation Owner coldkey: 5Gpmtj…jwv23e Computer Vision Inference 0.0035 τ≈ $0.70 1h % + 1.16 % 24h % -21.04 % 7d % -11.07 % Txns 3 Buys 2 Sells 1 Volume 12.03τ Buy volume 12.00τ Sell volume 0.03τ Makers 3 Buyers 2 Sellers 1 Team [email protected] FDV (USD) $ 14.74m Market cap (USD) $ 1.51m Liquidity (α) 591.30k α Liquidity (τ) 2.08k τ Circulating ..."
+    },
+    {
+      "title": "SN108 · Prometheon — Mining Playbook — OpenTAO",
+      "url": "https://opentao.ai/mine/playbooks/108-prometheon/",
+      "snippet": "Mining playbook for subnet 108 (Prometheon). Photorealistic talking-head video generation. Miners take a reference image + text (+ optional voice profile), render a lip-synced clip behind an HTTP API, upload to Cloudflare R2, and return the URL. Validators score realism + identity + motion, with a latency bonus on top."
+    }
+  ]
+}

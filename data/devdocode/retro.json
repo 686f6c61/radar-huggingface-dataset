@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DevDoCode/retro",
+  "slug": "devdocode-retro",
+  "author": "DevDoCode",
+  "url": "https://huggingface.co/DevDoCode/retro",
+  "created_at": "2026-08-23T09:19:02.000Z",
+  "updated_at": "2026-08-23T09:31:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1371672746,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retro — A Language for Agents",
+      "url": "https://retrolang.dev/",
+      "snippet": "Retro is a programming language for AI agents — a retrograde paradigm where you declare guarantees first and refine backwards toward code. A .retro file co-locates intent, architecture, logic, and implementation with a hybrid validator that catches drift between every level."
+    },
+    {
+      "title": "DevDoCode (Doku bots) - Hugging Face",
+      "url": "https://huggingface.co/DevDoCode",
+      "snippet": "Ai And Tools Recent Activity links4utoolz updated a model about 13 hours ago DevDoCode/DDL links4utoolz published a model about 16 hours ago DevDoCode/DDL View all activity"
+    },
+    {
+      "title": "RETRO model",
+      "url": "https://nn.labml.ai/transformers/retro/model.html",
+      "snippet": "RETRO model with encoder for neighbors and autoregressive decoder"
+    },
+    {
+      "title": "Retro Documentation: Why We Fine-Tuned an LLM to Write Docs Like It&#x27;s ...",
+      "url": "https://www.sysseder.com/2026/06/retro-documentation-why-we-fine-tuned.html",
+      "snippet": "Once the model is trained, the output shifts from standard, conversational AI output to incredibly dense, hyper-readable, and highly structured reference sheets. Let&#x27;s compare how our fine-tuned model explains a modern concept like Docker volumes compared to a standard LLM. Modern, Conversational LLM Output (Typical Claude/GPT-4): \"Sure!"
+    },
+    {
+      "title": "annotated_deep_learning_paper_implementations/docs/transformers/retro ...",
+      "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/docs/transformers/retro/model.html",
+      "snippet": "annotated_deep_learning_paper_implementations / docs / transformers / retro / model.html Cannot retrieve latest commit at this time."
+    }
+  ]
+}

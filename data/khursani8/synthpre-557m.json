@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "khursani8/synthpre-557m",
+  "slug": "khursani8-synthpre-557m",
+  "author": "khursani8",
+  "url": "https://huggingface.co/khursani8/synthpre-557m",
+  "created_at": "2026-08-23T12:43:20.000Z",
+  "updated_at": "2026-08-23T12:56:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "malay",
+    "bahasa-malaysia",
+    "pretraining",
+    "base-model",
+    "malaysia",
+    "ms",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 557278848,
+  "parameters_human": "557.3M",
+  "storage_bytes": 2229134168,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khursani8 (khursani) - Hugging Face",
+      "url": "https://huggingface.co/khursani8",
+      "snippet": "khursani8/mms-tts-ms-finetuned Text-to-Audio • Updated Mar 7 • 1 Expand 17 model s"
+    },
+    {
+      "title": "khursani8/model · Hugging Face",
+      "url": "https://huggingface.co/khursani8/model",
+      "snippet": "Uploaded model Developed by: khursani8 License: apache-2.0 Finetuned from model : unsloth/gemma-2b-bnb-4bit This gemma model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "khursani8/model - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/khursani8/model",
+      "snippet": "Run khursani8/model with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - khursani8/khursani8",
+      "url": "https://github.com/khursani8/khursani8",
+      "snippet": "Contribute to khursani8/khursani8 development by creating an account on GitHub."
+    },
+    {
+      "title": "khursani8 (Sani) · GitHub",
+      "url": "https://github.com/khursani8",
+      "snippet": "Full-stack developer. khursani8 has 94 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

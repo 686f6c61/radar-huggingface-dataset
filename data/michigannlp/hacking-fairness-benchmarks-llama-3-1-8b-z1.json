@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MichiganNLP/hacking-fairness-benchmarks-llama-3.1-8b-z1",
+  "slug": "michigannlp-hacking-fairness-benchmarks-llama-3-1-8b-z1",
+  "author": "MichiganNLP",
+  "url": "https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-llama-3.1-8b-z1",
+  "created_at": "2026-08-23T13:21:04.000Z",
+  "updated_at": "2026-08-23T13:21:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "fairness",
+    "bbq",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503497968,
+  "storage_human": "503 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MichiganNLP (LIT @ UMich) - Hugging Face",
+      "url": "https://huggingface.co/MichiganNLP/models",
+      "snippet": "Org profile for LIT @ UMich on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Capabilities and Benchmarking Hub | Epoch AI",
+      "url": "https://epoch.ai/benchmarks",
+      "snippet": "Our database of benchmark results, featuring the performance of leading AI models on challenging tasks. It includes results from benchmarks evaluated internally by Epoch AI as well as data collected from external sources. Explore trends in AI capabilities across time, by benchmark, or by model."
+    },
+    {
+      "title": "Artificial Analysis LLM Leaderboard - Hugging Face",
+      "url": "https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard",
+      "snippet": "This page shows the current Artificial Analysis leaderboard for large language models. No input is needed—just open the page to see an interactive table with model names, scores, and rankings. It l..."
+    },
+    {
+      "title": "An 8B Model Ranked #2 on Arena-Hard by Inventing Fake Policies ...",
+      "url": "https://www.baristalabs.io/blog/llm-benchmark-reward-hacking-8b-model-2026",
+      "snippet": "A Llama 3.1 8B model — small enough to run on a laptop — ranked #2 globally on Arena-Hard creative writing, above Gemini 2.5, DeepSeek R1, Claude 3.7 Sonnet, and o4-mini. It got there by cheating. Meta and Yale researchers trained the model using an AI judge (GPT-4.1) to grade its responses. The optimization target was straightforward: produce outputs the judge would rate highly. But ..."
+    },
+    {
+      "title": "HumanEval Leaderboard - llm-stats.com",
+      "url": "https://llm-stats.com/benchmarks/humaneval",
+      "snippet": "HumanEval leaderboard — MiniCPM-SALA leads 66 AI models at 0.951. A benchmark that measures functional correctness for synthesizing programs from docstrings, c…"
+    }
+  ]
+}

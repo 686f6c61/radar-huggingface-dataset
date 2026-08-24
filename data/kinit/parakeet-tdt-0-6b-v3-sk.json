@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kinit/parakeet-tdt-0.6b-v3-sk",
+  "slug": "kinit-parakeet-tdt-0-6b-v3-sk",
+  "author": "kinit",
+  "url": "https://huggingface.co/kinit/parakeet-tdt-0.6b-v3-sk",
+  "created_at": "2026-08-24T08:59:32.000Z",
+  "updated_at": "2026-08-24T09:19:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "nemo",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "parakeet",
+    "slovak",
+    "fine-tuned",
+    "sk",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2509322240,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance ...",
+      "url": "https://arxiv.org/html/2509.14128v2",
+      "snippet": "This work introduces Canary-1B-v2, a multilingual, multi-task model designed to deliver robust ASR and AST performance with high efficiency. In addition, we release Parakeet-TDT-.6B-v3, a smaller yet more accurate ASR model supporting the same 25 languages."
+    },
+    {
+      "title": "README.md · nvidia/parakeet-tdt-0.6b-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/main/README.md",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "Parakeet Tdt 0.6b V3 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/parakeet-tdt-0-6b-v3.html",
+      "snippet": "Download Parakeet Tdt 0.6b V3 GGUF model. 685.4 MB, 640,024 downloads, 1052 likes."
+    },
+    {
+      "title": "Parakeet 0.6b TDT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b",
+      "snippet": "This collection offers two Parakeet TDT 0.6B variants: v2 (English only) and v3 (25 European languages). Both are 600-million-parameter models with native punctuation, capitalization, and accurate word-level timestamp prediction."
+    }
+  ]
+}

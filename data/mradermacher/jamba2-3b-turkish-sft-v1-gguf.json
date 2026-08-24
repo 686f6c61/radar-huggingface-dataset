@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Jamba2-3B-Turkish-SFT-v1-GGUF",
+  "slug": "mradermacher-jamba2-3b-turkish-sft-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Jamba2-3B-Turkish-SFT-v1-GGUF",
+  "created_at": "2026-08-24T04:39:22.000Z",
+  "updated_at": "2026-08-24T05:01:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "jamba",
+    "turkish",
+    "instruction-following",
+    "lora-merged",
+    "tr",
+    "en",
+    "base_model:linguai/Jamba2-3B-Turkish-SFT-v1",
+    "base_model:quantized:linguai/Jamba2-3B-Turkish-SFT-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3039823232,
+  "parameters_human": "3.04B",
+  "storage_bytes": 27026321408,
+  "storage_human": "27.0 GB",
+  "base_model": "linguai/Jamba2-3B-Turkish-SFT-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Jamba2-3B-Turkish-SFT-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Jamba2-3B-Turkish-SFT-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Jamba2-3B-Turkish-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Jamba2-3B-Turkish-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ai21 Jamba2 3b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ai21-jamba2-3b.html",
+      "snippet": "Download Ai21 Jamba2 3b GGUF model. 3.2 GB, 359 downloads, 0 likes."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Jamba LLMs: The Best Long Context Models for Secure Enterprise ... - AI21",
+      "url": "https://www.ai21.com/jamba/",
+      "snippet": "Explore AI21&#x27;s Jamba models - a family of long-context, hyper-efficient open LLMs built for the enterprise and available for secure self-hosted deployments, such as on-premise and VPC."
+    }
+  ]
+}

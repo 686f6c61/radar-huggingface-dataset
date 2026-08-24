@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Video-Reason/VBVR-Pro-Wan2.1-I2V-14B",
+  "slug": "video-reason-vbvr-pro-wan2-1-i2v-14b",
+  "author": "Video-Reason",
+  "url": "https://huggingface.co/Video-Reason/VBVR-Pro-Wan2.1-I2V-14B",
+  "created_at": "2026-08-23T14:40:23.000Z",
+  "updated_at": "2026-08-23T16:37:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "video-generation",
+    "dataset:Video-Reason/VBVR-Pro-SFT-Video",
+    "arxiv:2602.20159",
+    "base_model:Wan-AI/Wan2.1-I2V-14B-720P-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-I2V-14B-720P-Diffusers",
+    "license:apache-2.0",
+    "diffusers:WanImageToVideoPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16395083584,
+  "parameters_human": "16.40B",
+  "storage_bytes": 90604973339,
+  "storage_human": "90.6 GB",
+  "base_model": "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-I2V-14B-720P · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VBVR-Wan2.2/examples/wanvideo/model_training/validate_full ... - GitHub",
+      "url": "https://github.com/Video-Reason/VBVR-Wan2.2/blob/main/examples/wanvideo/model_training/validate_full/Wan2.1-I2V-14B-720P.py",
+      "snippet": "/ model_training / validate_full / Wan2.1-I2V-14B-720P.py Top Code Blame 31 lines (27 loc) · 1.71 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 import torch from diffsynth.pipelines.wan_video import WanVideoPipeline, ModelConfig from modelscope import dataset_snapshot_download ..."
+    },
+    {
+      "title": "GitHub - Video-Reason/VBVR-Wan2.2: Official training and inference code ...",
+      "url": "https://github.com/Video-Reason/VBVR-Wan2.2/",
+      "snippet": "This repository provides the training and inference code for the VBVR (A Very Big Video Reasoning Suite) project. We support fine-tuning Wan2.2-I2V-A14B and LTX-2.3 video generation models on the VBVR dataset and evaluating them on the VBVR-Bench benchmark."
+    },
+    {
+      "title": "Wan2.1-I2V-14B-720P · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-I2V-14B-720P",
+      "snippet": "🔥 Latest News!! Feb 25, 2025: 👋 We&#x27;ve released the inference code and weights of Wan2.1. 📑 Todo List Wan2.1 Text-to-Video Multi-GPU Inference code of the 14B and 1.3B models Checkpoints of the 14B and 1.3B models Gradio demo Diffusers integration ComfyUI integration Wan2.1 Image-to-Video Multi-GPU Inference code of the 14B model Checkpoints of the 14B model Gradio demo Diffusers ..."
+    },
+    {
+      "title": "Wan2.1 | Wan: Open and Advanced Large-Scale Video Generative Models",
+      "url": "https://labitobi.github.io/Wan2.1/",
+      "snippet": "Its performance is even comparable to some closed-source models. - 👍 **Multiple Tasks**: **Wan2.1** excels in Text-to-Video, Image-to-Video, Video Editing, Text-to-Image, and Video-to-Audio, advancing the field of video generation. - 👍 **Visual Text Generation**: **Wan2.1** is the first video model capable of generating both Chinese and ..."
+    }
+  ]
+}

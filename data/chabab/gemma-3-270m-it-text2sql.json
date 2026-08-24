@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "chabab/gemma-3-270m-it-text2sql",
+  "slug": "chabab-gemma-3-270m-it-text2sql",
+  "author": "chabab",
+  "url": "https://huggingface.co/chabab/gemma-3-270m-it-text2sql",
+  "created_at": "2026-08-23T21:46:29.000Z",
+  "updated_at": "2026-08-23T21:51:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "hf_jobs",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1642059512,
+  "storage_human": "1.6 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-270m-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abidlabs/gemma-3-270m-text2sql · Hugging Face",
+      "url": "https://huggingface.co/abidlabs/gemma-3-270m-text2sql",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/",
+      "snippet": "Gemma 3 270M brings strong instruction-following capabilities to a small-footprint model. As shown by the IFEval benchmark (which tests a model&#x27;s ability to follow verifiable instructions), it establishes a new level of performance for its size, making sophisticated AI capabilities more accessible for on-device and research applications."
+    },
+    {
+      "title": "gemma-3-270m-it: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-3-270m-it-google",
+      "snippet": "Overview gemma-3-270m-it is an instruction-tuned, lightweight text generation model from google built using the same research and technology as Google&#x27;s Gemini models. This 270 million parameter model generates text in response to prompts and questions, with a 32K token context window and support for over 140 languages. It was trained on 6 trillion tokens including web documents, code ..."
+    },
+    {
+      "title": "gemma-3-270m-text2sql API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/abidlabs/gemma-3-270m-text2sql",
+      "snippet": "Run gemma-3-270m-text2sql with FriendliAI inference. This model is a fine-tuned version of google/gemma-3-270m. It has been trained using TRL."
+    }
+  ]
+}

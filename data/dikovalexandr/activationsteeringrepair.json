@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DikovAlexandr/ActivationSteeringRepair",
+  "slug": "dikovalexandr-activationsteeringrepair",
+  "author": "DikovAlexandr",
+  "url": "https://huggingface.co/DikovAlexandr/ActivationSteeringRepair",
+  "created_at": "2026-08-23T07:03:43.000Z",
+  "updated_at": "2026-08-23T07:16:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "activation-steering",
+    "interpretability",
+    "denoising-autoencoder",
+    "qwen3",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21027776,
+  "storage_human": "21 MB",
+  "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steering Awareness: Models Can Be Trained to",
+      "url": "https://arxiv.org/html/2511.21399v2",
+      "snippet": "Abstract Activation steering—adding a vector to a language model&#x27;s residual stream—is widely used to elicit latent behaviors and to probe safety-relevant properties. Many steering-based evaluations implicitly assume that the model cannot tell when such an intervention has occurred. We test this assumption by fine-tuning models to report (i) whether a steering vector was injected and (ii ..."
+    },
+    {
+      "title": "[2410.12877] Improving Instruction-Following in Language Models through ...",
+      "url": "https://arxiv.org/abs/2410.12877",
+      "snippet": "The ability to follow instructions is crucial for numerous real-world applications of language models. In pursuit of deeper insights and more powerful capabilities, we derive instruction-specific vector representations from language models and use them to steer models accordingly. These vectors are computed as the difference in activations between inputs with and without instructions, enabling ..."
+    },
+    {
+      "title": "The &#x27;Activation-Steering&#x27; Revolution: Guiding 2026 AI Without the Cost ...",
+      "url": "https://bittalks.org/blog/activation-steering-revolution-2026/",
+      "snippet": "The &#x27;Activation-Steering&#x27; Revolution: Guiding 2026 AI Without the Cost of Re-Training Forget fine-tuning. In 2026, we&#x27;re using steering vectors and CAST to control model behavior in real-time, saving millions in compute."
+    },
+    {
+      "title": "Activation Steering - dejan.ai",
+      "url": "https://dejan.ai/concepts/activation-steering/",
+      "snippet": "Activation steering is a technique for controlling what a language model outputs by modifying its internal activations during a forward pass, rather than by changing its weights or crafting a prompt. A direction vector representing a desired behaviour is computed, then added to the model&#x27;s residual stream at a chosen layer during inference."
+    },
+    {
+      "title": "Activation Steering: A New Frontier in AI Control—But Does It Scale?",
+      "url": "https://huggingface.co/blog/royswastik/activation-steering",
+      "snippet": "A Blog post by Swastik Roy on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Burroughs352/Mairead-Flux",
+  "slug": "burroughs352-mairead-flux",
+  "author": "Burroughs352",
+  "url": "https://huggingface.co/Burroughs352/Mairead-Flux",
+  "created_at": "2026-08-24T11:55:26.000Z",
+  "updated_at": "2026-08-24T11:56:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 994611132,
+  "storage_human": "995 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Burroughs352/Magda-Flux · Hugging Face",
+      "url": "https://huggingface.co/Burroughs352/Magda-Flux",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux.2 Klein - a Burroughs352 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Burroughs352/flux2-klein",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Burroughs352"
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "FLUX - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/5c4f26337a770760d2d6d2288d7e4698",
+      "snippet": "Explore FLUX model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

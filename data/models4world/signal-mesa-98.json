@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/signal-mesa-98",
+  "slug": "models4world-signal-mesa-98",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/signal-mesa-98",
+  "created_at": "2026-08-24T09:45:43.000Z",
+  "updated_at": "2026-08-24T09:46:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11226685309,
+  "storage_human": "11.2 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "Adapter Models for models4world/maple-signal-64 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:models4world/maple-signal-64",
+      "snippet": "Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Inference Endpoints Microsoft ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Models Directory | Browse & Filter by Capabilities",
+      "url": "https://aimodels.dev/models",
+      "snippet": "Explore our comprehensive AI models directory. Filter by capabilities, providers, and performance metrics to find the perfect AI model for your needs."
+    },
+    {
+      "title": "FreeTheAi Model Catalog - Free OpenAI-Compatible AI Models",
+      "url": "https://freetheai.xyz/models/",
+      "snippet": "Search the FreeTheAi model catalog: 80 active OpenAI-compatible chat, image, and tool-capable model aliases across 13 provider prefixes with live filtering and copyable IDs."
+    }
+  ]
+}

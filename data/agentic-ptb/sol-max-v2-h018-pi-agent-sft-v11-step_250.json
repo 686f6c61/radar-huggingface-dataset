@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max-v2.h018.pi-agent-sft-v11.step_250",
+  "slug": "agentic-ptb-sol-max-v2-h018-pi-agent-sft-v11-step_250",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max-v2.h018.pi-agent-sft-v11.step_250",
+  "created_at": "2026-08-24T00:03:42.000Z",
+  "updated_at": "2026-08-24T00:05:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ProjectProRepo/Agentic-AI: This repository provides ...",
+      "url": "https://github.com/ProjectProRepo/Agentic-AI",
+      "snippet": "This repository is your one-stop resource for mastering Agentic AI, a domain of artificial intelligence that focuses on building autonomous AI agents. From understanding the foundational concepts to building industry-ready AI agents, this repository includes blogs, tutorials, and projects to guide you every step of the way. Let us get started!"
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    },
+    {
+      "title": "GitHub - HKUDS/nanobot: Ultra-lightweight, open-source, self-hosted ...",
+      "url": "https://github.com/HKUDS/nanobot",
+      "snippet": "nanobot 🐈 nanobot is an ultra-lightweight, open-source, self-hosted personal AI agent framework written in Python. It runs in a WebUI, terminal, or chat apps and combines tools, long-term memory, MCP integrations, model routing, multi-agent delegation, scheduled automation, and an OpenAI-compatible API in a small, readable core."
+    }
+  ]
+}

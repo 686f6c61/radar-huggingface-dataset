@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mlx-community/SenseNova-U1.5-8B-MoT-8bit",
+  "slug": "mlx-community-sensenova-u1-5-8b-mot-8bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8bit",
+  "created_at": "2026-08-24T04:22:28.000Z",
+  "updated_at": "2026-08-24T04:26:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "neo_chat",
+    "mlx-swift",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "native multimodal",
+    "custom_code",
+    "arxiv:2605.12500",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:finetune:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5884223680,
+  "parameters_human": "5.88B",
+  "storage_bytes": 19883616103,
+  "storage_human": "19.9 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova-U1.5-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT · Models",
+      "url": "https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT",
+      "snippet": "SenseNova-U1.5-8B-MoT is our latest native unified multimodal checkpoint for more accurate, consistent, reliable, and aesthetically compelling visual creation. Built on NEO-unify, it strengthens the patchify layers, data quality and distribution, task formulation, prompt enhancement, and post-training pipeline."
+    },
+    {
+      "title": "README.md · sensenova/SenseNova-U1.5-8B-MoT at main",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/blob/main/README.md",
+      "snippet": "SenseNova-U1.5-8B-MoT is our latest native unified multimodal checkpoint for more accurate, consistent, reliable, and aesthetically compelling visual creation. Built on NEO-unify, it strengthens the patchify layers, data quality and distribution, task formulation, prompt enhancement, and post-training pipeline."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "SenseNova-U1/docs/u1.5_preview.md at main - GitHub",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1/blob/main/docs/u1.5_preview.md",
+      "snippet": "SenseNova-U1.5 (Preview) is a natively unified multimodal model built on NEO-unify, featuring new patch encoding and decoding layers. We further expand and refine the text-to-image training corpus, while extensively filtering and synthesizing editing data for both single-image and multi-image reference settings."
+    }
+  ]
+}

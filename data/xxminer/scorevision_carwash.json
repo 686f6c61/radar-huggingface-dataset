@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "XXMiner/ScoreVision_carwash",
+  "slug": "xxminer-scorevision_carwash",
+  "author": "XXMiner",
+  "url": "https://huggingface.co/XXMiner/ScoreVision_carwash",
+  "created_at": "2026-08-22T17:15:35.000Z",
+  "updated_at": "2026-08-23T04:47:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10602203,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXMiner/ScoreVision_carwash · Hugging Face",
+      "url": "https://huggingface.co/XXMiner/ScoreVision_carwash",
+      "snippet": "SN44 Detect-car-wash objects miner — armN winner-supervised (ONNX, 704px) Model: YOLO11n detector (Ultralytics), trained on official-domain challenge frames labeled by winner-consensus (map50>=0.9, fp>=0.9 record boxes) — frozen-GT-proxy supervision matching the official sam3_json_v1 scoring target."
+    },
+    {
+      "title": "XXMiner (X_X) - Hugging Face",
+      "url": "https://huggingface.co/XXMiner/models",
+      "snippet": "XXMiner&#x27;s models4 Sort: Recently updated XXMiner/affine-5cypw-ecpst-r213 35B•Updated 32 minutes ago"
+    },
+    {
+      "title": "XXMiner (X_X) - Hugging Face",
+      "url": "https://huggingface.co/XXMiner/datasets",
+      "snippet": "XXMiner&#x27;s datasets1 Sort: Recently updated XXMiner/sn38-submission Viewer •Updated about 7 hours ago•1• 1"
+    },
+    {
+      "title": "GitHub - score-technologies/score-vision: Subnet 44 on Bittensor ...",
+      "url": "https://github.com/score-technologies/score-vision",
+      "snippet": "Score Vision is a decentralised computer vision framework built on Bittensor that drastically reduces the cost and time required for complex video analysis. By leveraging innovative lightweight validation techniques and aligned incentives, we&#x27;re making advanced computer vision accessible and scalable. Our initial focus is Game State Recognition (GSR) in football - a strategic entry point into ..."
+    },
+    {
+      "title": "GitHub - score-technologies/turbovision",
+      "url": "https://github.com/score-technologies/turbovision",
+      "snippet": "TurboVision is Score&#x27;s decentralized intelligence layer for live video and imagery. The network pairs expert models with a global community of validators and miners so raw footage becomes structured, decision-ready data in real time, with early deployments focused on professional sports."
+    }
+  ]
+}

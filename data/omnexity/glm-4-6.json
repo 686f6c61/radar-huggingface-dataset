@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Omnexity/GLM-4.6",
+  "slug": "omnexity-glm-4-6",
+  "author": "Omnexity",
+  "url": "https://huggingface.co/Omnexity/GLM-4.6",
+  "created_at": "2026-08-23T05:29:40.000Z",
+  "updated_at": "2026-08-23T05:29:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2508.06471",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 356785898816,
+  "parameters_human": "356.79B",
+  "storage_bytes": 713597382171,
+  "storage_human": "713.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-4.6: Advanced Agentic, Reasoning and Coding Capabilities - z.ai",
+      "url": "https://z.ai/blog/glm-4.6",
+      "snippet": "Advanced reasoning: GLM-4.6 shows a clear improvement in reasoning performance and supports tool use during inference, leading to stronger overall capability. More capable agents: GLM-4.6 exhibits stronger performance in tool using and search-based agents, and integrates more effectively within agent frameworks."
+    },
+    {
+      "title": "zai-org/GLM-4.6 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aiqtech/GLM-4.6 · Hugging Face",
+      "url": "https://huggingface.co/aiqtech/GLM-4.6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z-ai/glm-4.6 | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/z-ai/glm-4.6",
+      "snippet": "GLM-4.6 is a flagship model from Zhishen with 355B total parameters and 32B active parameters. The model&#x27;s context window has been expanded from 128K to 200K, enabling it to handle longer code and agent tasks. In programming capabilities, GLM-4.6&#x27;s performance is comparable to Claude Sonnet 4 on public benchmarks and real-world programming tasks."
+    },
+    {
+      "title": "GLM-4.6 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/zai-org/GLM-4.6",
+      "snippet": "📍 Use GLM-4.6 API services on Z.ai API Platform. 👉 One click to GLM-4.6. Model Introduction Compared with GLM-4.5, GLM-4.6 brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks."
+    }
+  ]
+}

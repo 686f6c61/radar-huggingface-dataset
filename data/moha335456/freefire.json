@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "moha335456/freefire",
+  "slug": "moha335456-freefire",
+  "author": "moha335456",
+  "url": "https://huggingface.co/moha335456/freefire",
+  "created_at": "2026-08-24T10:09:20.000Z",
+  "updated_at": "2026-08-24T10:09:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freefire AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/freefire",
+      "snippet": "Discover Freefire AI models on PixAI - Find anime AI models and LoRAs tagged with Freefire"
+    },
+    {
+      "title": "Garena Free Fire AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/free_fire",
+      "snippet": "Discover Garena Free Fire AI models on PixAI - Find anime AI models and LoRAs tagged with Garena Free Fire"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Free Freefire 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/freefire",
+      "snippet": "Download 9+ free Freefire 3D models in STL, GLB, FBX, OBJ formats for 3D Printing, Games, Animation and more. Ready to use - instant download on Meshy."
+    },
+    {
+      "title": "Freefire 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/freefire",
+      "snippet": "Freefire 3D models ready to view and download for free."
+    }
+  ]
+}

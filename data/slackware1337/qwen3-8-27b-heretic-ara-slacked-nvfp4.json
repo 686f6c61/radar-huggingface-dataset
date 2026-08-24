@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked-NVFP4",
+  "slug": "slackware1337-qwen3-8-27b-heretic-ara-slacked-nvfp4",
+  "author": "Slackware1337",
+  "url": "https://huggingface.co/Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked-NVFP4",
+  "created_at": "2026-08-23T03:14:48.000Z",
+  "updated_at": "2026-08-23T03:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
+    "base_model:quantized:Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15617946352,
+  "parameters_human": "15.62B",
+  "storage_bytes": 20613138855,
+  "storage_human": "20.6 GB",
+  "base_model": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Heretic-ARA-Slacked-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked-GGUF",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/dawncr0w/Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8 27B Heretic Ara by trohrbaugh - LLM Explorer",
+      "url": "https://llm-explorer.com/model/trohrbaugh%2FQwen3.8-27B-heretic-ara,3lOkoblJbLCrW6LcRlJIk",
+      "snippet": "Rank the Qwen3.8 27B Heretic Ara capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL - friendli.ai",
+      "url": "https://friendli.ai/models/lyf/Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL",
+      "snippet": "The pinned digest is the compatibility contract. A newer vLLM tag should be revalidated for Qwen3.8, compressed-tensors NVFP4, vision/video, MTP, tool parser, and long-context allocation. The model card&#x27;s throughput values come from 4K validation runs. 192K/262K settings are capacity profiles; long-prompt prefill throughput is workload-dependent."
+    }
+  ]
+}

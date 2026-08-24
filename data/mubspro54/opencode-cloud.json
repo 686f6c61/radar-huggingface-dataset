@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mubspro54/opencode-cloud",
+  "slug": "mubspro54-opencode-cloud",
+  "author": "Mubspro54",
+  "url": "https://huggingface.co/Mubspro54/opencode-cloud",
+  "created_at": "2026-08-23T14:17:30.000Z",
+  "updated_at": "2026-08-23T14:17:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Models Configuring an LLM provider and model. OpenCode uses the AI SDK and Models.dev to support 75+ LLM providers and it supports running local models."
+    },
+    {
+      "title": "OpenCode | The open source AI coding agent",
+      "url": "https://opencode.ai/",
+      "snippet": "The open source AI coding agent Free models included or connect any model from any provider, including Claude, GPT, Gemini and more."
+    },
+    {
+      "title": "GitHub - opencolin/opencode-cloud",
+      "url": "https://github.com/opencolin/opencode-cloud/",
+      "snippet": "A serverless platform that brings opencode — the open-source AI coding agent — to the web, powered by Contree microVM sandboxes. Real Linux environments — opencode needs a real shell, package managers, and native tools. Contree&#x27;s microVMs provide this natively. Immutable snapshots — Contree ..."
+    },
+    {
+      "title": "OpenCode_Accessing a Client/Development Tool_Model Calling ... - 华为云",
+      "url": "https://support.huaweicloud.com/intl/en-us/model-call-maas/maas-modelarts-0909.html",
+      "snippet": "During software development, developers often struggle with slow coding and complex debugging. OpenCode is an AI programming tool that helps developers write and debug code efficiently using large models. However, quickly adding these advanced AI capabilities to existing development environments has become a new challenge. You can easily connect MaaS model APIs to OpenCode using simple ..."
+    },
+    {
+      "title": "OpenCode - Open-Source AI Coding Agent",
+      "url": "https://open-code.dev/",
+      "snippet": "OpenCode is a local-first, open-source coding agent that runs in your terminal, desktop app, or IDE with model freedom and privacy-first control."
+    }
+  ]
+}

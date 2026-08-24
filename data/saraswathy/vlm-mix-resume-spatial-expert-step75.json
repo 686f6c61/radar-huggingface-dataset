@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-spatial-expert-step75",
+  "slug": "saraswathy-vlm-mix-resume-spatial-expert-step75",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-spatial-expert-step75",
+  "created_at": "2026-08-24T09:11:32.000Z",
+  "updated_at": "2026-08-24T09:14:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417443,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Saraswathy/vlm-mix-broader-stem-expert-step100 with PEFT:"
+    },
+    {
+      "title": "SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning ...",
+      "url": "https://spatial-vlm.github.io/",
+      "snippet": "SpatialVLM: a visual language model from Google DeepMind that natively understand and reason about spatial relationships."
+    },
+    {
+      "title": "GitHub - vulab-AI/Awesome-Spatial-VLMs: [Awesome-Spatial-VLMs] This ...",
+      "url": "https://github.com/vulab-AI/Awesome-Spatial-VLMs",
+      "snippet": "A curated hub for Spatial Intelligence in Vision-Language Models. Actively maintained—watch for updates, benchmark your VLM with our evaluation code, and consider starring 🌟 and sharing if helpful. This repository is the official, community-maintained resource for our survey paper: Spatial ..."
+    },
+    {
+      "title": "PDF SpatialVLM:EndowingVision-LanguageModelswithSpatialReasoningCapabilities",
+      "url": "https://www.researchgate.net/profile/Boyuan-Chen-5/publication/381768168_SpatialVLM_Endowing_Vision-Language_Models_with_Spatial_Reasoning_Capabilities/links/667da8b7f3b61c4e2c93abe1/SpatialVLM-Endowing-Vision-Language-Models-with-Spatial-Reasoning-Capabilities.pdf",
+      "snippet": "atial questions. We demonstrate a few examples in Figure 1 and Figure 4. A large language model, in this case GPT-4, when equipped with SpatialVLM as a spatial reasoning submodule, can perform ..."
+    },
+    {
+      "title": "Spatial Intelligence in Vision-Language Models: A Comprehensive Survey",
+      "url": "https://www.techrxiv.org/doi/10.36227/techrxiv.176231405.57942913",
+      "snippet": "Vision-Language Models (VLMs) have achieved remarkable success but exhibit a fundamental deficiency in spatial intelligence, a critical capability for progress in embodied AI, autonomous driving, and spatially coherent generation. In response, the ..."
+    }
+  ]
+}

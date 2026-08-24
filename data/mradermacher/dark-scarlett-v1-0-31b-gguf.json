@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Scarlett-v1.0-31B-GGUF",
+  "slug": "mradermacher-dark-scarlett-v1-0-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-31B-GGUF",
+  "created_at": "2026-08-24T12:22:05.000Z",
+  "updated_at": "2026-08-24T13:26:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "en",
+    "base_model:ReadyArt/Dark-Scarlett-v1.0-31B",
+    "base_model:quantized:ReadyArt/Dark-Scarlett-v1.0-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908583264,
+  "storage_human": "213.9 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-v1.0-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Dark-Scarlett-v2.0-31B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v2.0-31B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dark Scarlett Series - a ReadyArt Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ReadyArt/dark-scarlett-series",
+      "snippet": "ReadyArt/Dark-Scarlett-v1.-26B-A4B-GGUF 25B•Updated Jun 15• 10k • 15 Upvote 1 Sort: Collection"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=mature",
+      "snippet": "ReadyArt/Dark-Scarlett-v1.-35B-A3B-GGUF 36B•Updated about 1 month ago• 11.9k • 5"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "huihui_ai/gemma-4-abliterated",
+      "url": "https://ollama.com/huihui_ai/gemma-4-abliterated",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

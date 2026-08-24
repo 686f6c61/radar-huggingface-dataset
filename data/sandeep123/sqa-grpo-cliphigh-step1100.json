@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-cliphigh-step1100",
+  "slug": "sandeep123-sqa-grpo-cliphigh-step1100",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step1100",
+  "created_at": "2026-08-24T09:20:56.000Z",
+  "updated_at": "2026-08-24T09:23:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GRPO Llama-1B · GitHub",
+      "url": "https://gist.github.com/willccbb/4676755236bb08cab5f4e54a0475d6fb",
+      "snippet": "Thanks willccbb! When training on the GPU with qwen model, I encountered the error: \" probability tensor contains either inf, nan or element < 0\" I would appreciate any insights on a possible solution."
+    },
+    {
+      "title": "DeepSeek-R1 Dissection: Understanding PPO & GRPO Without Any Prior ...",
+      "url": "https://huggingface.co/blog/NormalUhr/grpo",
+      "snippet": "Reference Model: Discourages \"cheating\" or extreme deviations, ensuring the policy remains reasonably aligned with its initial state. Advantages of GRPO: In large language models, it removes the need for a separate value network, reducing memory and compute costs while aligning well with \"comparative\" Reward Model designs."
+    },
+    {
+      "title": "End-to-End Guide to GRPO Fine‑Tuning with a Custom Dataset",
+      "url": "https://gist.github.com/loftwah/ada8364828e3a4478743f21aa5cf9e86",
+      "snippet": "This document explains how to fine-tune a language model using GRPO (Guided Reinforcement Policy Optimisation) with a custom dataset. We cover every part of the process, including:"
+    },
+    {
+      "title": "sandeep123 (Kumar) - Hugging Face",
+      "url": "https://huggingface.co/sandeep123",
+      "snippet": "User profile of Kumar on Hugging Face"
+    }
+  ]
+}

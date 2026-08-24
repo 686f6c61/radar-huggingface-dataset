@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JullMol/POSEIDON",
+  "slug": "jullmol-poseidon",
+  "author": "JullMol",
+  "url": "https://huggingface.co/JullMol/POSEIDON",
+  "created_at": "2026-08-06T08:39:36.000Z",
+  "updated_at": "2026-08-24T01:00:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "machine-learning",
+    "pu-learning",
+    "lightgbm",
+    "xgboost",
+    "tabular-classification",
+    "spatial-analysis",
+    "fisheries",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240445919,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JullMol/POSEIDON · Hugging Face",
+      "url": "https://huggingface.co/JullMol/POSEIDON",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Poseidon AI CLI - GitHub",
+      "url": "https://github.com/SpecialLikeMe/poseidon",
+      "snippet": "Poseidon AI CLI Written in python, uses Ollama to run models for free and locally. Poseidon has no rate limits, bills, token caps, or any of that sort of thing. To use, first install Ollama, then download a model using ollama pull. Before anything else, make sure you have a python venv active."
+    },
+    {
+      "title": "China&#x27;s SLAMTEC Releases Poseidon Omnidirectional Mobile Robot Chassis ...",
+      "url": "https://en.wedoany.com/shortnews/422355.html",
+      "snippet": "The Poseidon omnidirectional mobile robot chassis launched by SLAMTEC adopts a four-wheel four-steer/four-wheel eight-drive architecture, supporting lateral translation, in-place rotation, diagonal movement, and parking modes, aiming to solve the flexibility issues of traditional chassis in confined spaces and complex working conditions."
+    },
+    {
+      "title": "psdn-ai (Poseidon) - Hugging Face",
+      "url": "https://huggingface.co/psdn-ai/models",
+      "snippet": "Org profile for Poseidon on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "psdn.ai - Poseidon",
+      "url": "https://psdn.ai/",
+      "snippet": "How Poseidon Works Data is the biggest bottleneck in the next wave of AI development. Poseidon delivers structured datasets collected with consent, curated for quality, and licensed for commercial use."
+    }
+  ]
+}

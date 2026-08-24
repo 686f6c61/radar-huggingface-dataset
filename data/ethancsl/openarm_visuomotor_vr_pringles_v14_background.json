@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_visuomotor_VR_pringles_V14_background",
+  "slug": "ethancsl-openarm_visuomotor_vr_pringles_v14_background",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V14_background",
+  "created_at": "2026-08-24T05:15:44.000Z",
+  "updated_at": "2026-08-24T05:21:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ethanCSL/openarm_visuomotor_VR_pringles_V14_background",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906718296,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethanCSL/openarm_visuomotor_VR_pringles_V14_background - Hugging Face",
+      "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V14_background",
+      "snippet": "openarm_visuomotor_VR_pringles_V14_background ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "openarm_visuomotor_VR_pringles_V11_dr_strong - Hugging Face",
+      "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V11_dr_strong",
+      "snippet": "ethanCSL/openarm_visuomotor_VR_pringles_V11_dr_strong ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "ethanCSL / Repositories · GitHub",
+      "url": "https://github.com/ethanCSL?tab=repositories",
+      "snippet": "ethanCSL has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - austinvishal/OpenArm: OpenArm v0.2 · GitHub",
+      "url": "https://github.com/austinvishal/OpenArm",
+      "snippet": "OpenArm is an open-source humanoid robot arm designed for AI and robotics research in human-centered environments. Its modular hardware and accessible software make it a flexible platform for teleoperation, imitation learning, and real-world data collection. Our goal is to advance physical intelligence by enabling robots that operate safely and effectively alongside people — in homes ..."
+    },
+    {
+      "title": "OpenArm",
+      "url": "https://openarm.dev/",
+      "snippet": "A reproducible evaluation cell that standardizes background, lighting, cameras, and arm position for fair, automated AI model comparison. \"Model A outperforms Model B\" only holds meaning when evaluated under identical conditions — OpenArm Cell provides the reproducible infrastructure to make such claims verifiable."
+    }
+  ]
+}

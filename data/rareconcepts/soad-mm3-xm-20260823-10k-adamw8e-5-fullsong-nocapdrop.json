@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-xm-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "slug": "rareconcepts-soad-mm3-xm-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-xm-20260823-10k-adamw8e-5-fullsong-nocapdrop",
+  "created_at": "2026-08-23T04:56:43.000Z",
+  "updated_at": "2026-08-23T16:19:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7950346917,
+  "storage_human": "8.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "SEC.gov | Search Filings",
+      "url": "https://www.sec.gov/search-filings",
+      "snippet": "Enjoy free public access to millions of informational documents filed by publicly traded companies and others in the SEC&#x27;s Electronic Data Gathering, Analysis, and Retrieval (EDGAR) system."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "Rare Concepts",
+      "url": "https://rareconceptsnyc.com/",
+      "snippet": "Rare Concepts is a streetwear brand born in NYC and bound to be worldwide."
+    }
+  ]
+}

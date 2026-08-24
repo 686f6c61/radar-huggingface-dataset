@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Carnice-V3-GGUF",
+  "slug": "mradermacher-carnice-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Carnice-V3-GGUF",
+  "created_at": "2026-08-24T05:22:28.000Z",
+  "updated_at": "2026-08-24T06:31:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "hermes-agent",
+    "tool-use",
+    "agent",
+    "full-model",
+    "merged-lora",
+    "safetensors",
+    "en",
+    "base_model:kai-os/Carnice-V3",
+    "base_model:quantized:kai-os/Carnice-V3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780458912,
+  "storage_human": "190.8 GB",
+  "base_model": "kai-os/Carnice-V3",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kai-os/Carnice-V3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/kai-os/Carnice-V3-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Carnice-V2-27b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Carnice-V2-27b-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher/Carnice-Qwen3.6-MoE-35B-A3B-i1-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-carnice-qwen3-6-moe-35b-a3b-i1-gguf",
+      "snippet": "Carnice-Qwen3.6-MoE-35B-A3B-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Carnice-Qwen3.6-MoE-35B-A3B-i1-GGUF on GitHub to install."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

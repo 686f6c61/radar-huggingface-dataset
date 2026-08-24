@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/DeepSeek-R1-0528-Qwen3-8B-NPU2",
+  "slug": "atomic-germ-deepseek-r1-0528-qwen3-8b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/DeepSeek-R1-0528-Qwen3-8B-NPU2",
+  "created_at": "2026-08-24T03:18:26.000Z",
+  "updated_at": "2026-08-24T03:18:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2501.12948",
+    "base_model:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11953569427,
+  "storage_human": "12.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/DeepSeek-R1-0528-Qwen3-8B-Esper3-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/DeepSeek-R1-0528-Qwen3-8B-Esper3-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek R1 0528 Qwen3 8B (8B) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "snippet": "DeepSeek-R1-0528 is a reinforcement learning-optimized model based on the Qwen3-8B architecture, focusing on enhancing reasoning capabilities. It improves logical reasoning and mathematical problem-solving through techniques like RLHF while maintaining strong Chinese support, making it suitable for complex tasks requiring high-accuracy reasoning."
+    },
+    {
+      "title": "DeepSeek-R1-0528: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/deepseek-r1-0528-how-to-run-locally",
+      "snippet": "A guide on how to run DeepSeek-R1-0528 including Qwen3 on your own local device!"
+    },
+    {
+      "title": "Run DeepSeek-R1-0528 Locally: Hardware + Ollama, vLLM",
+      "url": "https://codersera.com/blog/run-and-install-deepseek-r1-0528-locally-on-your-computer/",
+      "snippet": "DeepSeek-R1-0528-Qwen3-8B is a distilled version — a much smaller model trained to mimic the full model&#x27;s reasoning behavior. The 8B model is practical on consumer hardware; the full model requires a small cluster or a Mac with 400+ GB unified memory."
+    }
+  ]
+}

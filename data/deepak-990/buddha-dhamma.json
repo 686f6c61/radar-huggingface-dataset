@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "deepak-990/Buddha-Dhamma",
+  "slug": "deepak-990-buddha-dhamma",
+  "author": "deepak-990",
+  "url": "https://huggingface.co/deepak-990/Buddha-Dhamma",
+  "created_at": "2026-08-23T10:58:35.000Z",
+  "updated_at": "2026-08-23T10:59:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280576,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepak-990/aj · Hugging Face",
+      "url": "https://huggingface.co/deepak-990/aj",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deepak Chopra AI",
+      "url": "https://www.deepakchopra.ai/",
+      "snippet": "This AI offers reflections based on Deepak Chopra&#x27;s teachings. It is not a medical tool, may not always be accurate, and should never replace professional medical advice."
+    },
+    {
+      "title": "Digital Dharma: How AI Can Elevate Spiritual Intelligence and Personal ...",
+      "url": "https://books.google.com/books/about/Digital_Dharma.html?id=2UQDEQAAQBAJ",
+      "snippet": "Digital Dharma shows you a path.\"—Sam Altman, CEO of OpenAIIn a world captivated yet bewildered by artificial intelligence, spiritual icon Deepak Chopra, MD, illuminates AI&#x27;s untapped potential to unravel the enigma of consciousness, positioning AI not as a threat but as a catalyst for personal and collective growth."
+    },
+    {
+      "title": "Digital Dharma: How AI Can Elevate Spiritual Intelligence and Personal ...",
+      "url": "https://books.google.com/books/about/Digital_Dharma.html?id=2-YJEQAAQBAJ",
+      "snippet": "Digital Dharma shows you a path.&#x27; - Sam Altman, CEO of OpenAI In a world captivated yet bewildered by artificial intelligence, spiritual icon Deepak Chopra explores AI&#x27;s untapped potential to unlock the mystery of consciousness, positioning AI not as a threat, but as a powerful catalyst for personal and spiritual growth."
+    },
+    {
+      "title": "AI-assisted Dhamma Contemplation | Pure Dhamma",
+      "url": "https://puredhamma.net/forums/topic/ai-assisted-dhamma-contemplation/",
+      "snippet": "Hello everyone, I would like to share my experiences with AI-assisted Dhamma contemplation with you. I have been experimenting with it a lot lately to get a feel for what is currently possible with this technology. Meanwhile, OpenAI, Google, and Antropic have not only released very powerful models, but also made several other critical improvements: The models can perform deep research. This ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed3407",
+  "slug": "fpadovani-jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed3407",
+  "created_at": "2026-08-24T09:04:37.000Z",
+  "updated_at": "2026-08-24T10:13:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407",
+    "base_model:finetune:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 4243897779,
+  "storage_human": "4.2 GB",
+  "base_model": "fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455",
+      "snippet": "Instructions to use fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "jpn-100mb-after-eng-baseline-ckpt500_seed3407 - friendli.ai",
+      "url": "https://friendli.ai/models/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407",
+      "snippet": "Deploy jpn-100mb-after-eng-baseline-ckpt500_seed3407 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Jpn 100mb After Eng Baseline Ckpt500 Seed10 - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed10",
+      "snippet": "Registry entry for model Jpn 100mb After Eng Baseline Ckpt500 Seed10; source metadata pending."
+    },
+    {
+      "title": "jpn-100mb-after-newlexicon-eng-baseline-ckpt500_seed455",
+      "url": "https://friendli.ai/models/fpadovani/jpn-100mb-after-newlexicon-eng-baseline-ckpt500_seed455",
+      "snippet": "Deploy jpn-100mb-after-newlexicon-eng-baseline-ckpt500_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

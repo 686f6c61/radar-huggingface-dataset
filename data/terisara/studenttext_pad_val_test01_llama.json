@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Terisara/studenttext_PAD_val_test01_llama",
+  "slug": "terisara-studenttext_pad_val_test01_llama",
+  "author": "Terisara",
+  "url": "https://huggingface.co/Terisara/studenttext_PAD_val_test01_llama",
+  "created_at": "2026-08-23T12:51:32.000Z",
+  "updated_at": "2026-08-23T13:19:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Terisara/student_text_in_dobot_01llama · Hugging Face",
+      "url": "https://huggingface.co/Terisara/student_text_in_dobot_01llama",
+      "snippet": "Terisara / student_text_in_dobot_01llama like 0 Safetensors GGUF llama llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Terisara/PAD_Student_and_teacher · Hugging Face",
+      "url": "https://huggingface.co/Terisara/PAD_Student_and_teacher",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama-models: Utilities intended for use with Llama ...",
+      "url": "https://github.com/meta-llama/llama-models",
+      "snippet": "Utilities intended for use with Llama models. Contribute to meta-llama/llama-models development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "No. GPTZero works across a wide range of AI language models, including but not limited to ChatGPT, GPT-5, GPT-4, GPT-3, Gemini, Claude, Llama, Deepseek, and AI services based on those models."
+    }
+  ]
+}

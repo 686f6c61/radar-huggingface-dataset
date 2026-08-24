@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
+  "slug": "sc117-ornith-1-5-35b-a3b-heretic-mtp-apex-gguf",
+  "author": "SC117",
+  "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
+  "created_at": "2026-08-22T15:01:49.000Z",
+  "updated_at": "2026-08-22T22:49:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5_moe",
+    "reasoning",
+    "agentic-coding",
+    "heretic",
+    "mtp",
+    "apex",
+    "quantization",
+    "multimodal",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 3569,
+  "trending_score": 13,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 82053127136,
+  "storage_human": "82.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.5-35B-A3B is DeepReinforce&#x27;s Qwen3.5 MoE agentic coding model. This experimental derivative merges the selected Heretic 1.4.0 Trial 62 LoRA into BF16 weights. The shipped native MTP head is untrained (initializer-like statistics). It is replaced here with the 19-tensor fused BF16 head from shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY (Qwen3.6 graft + 12K KL distillation). Refusal-modified ..."
+    },
+    {
+      "title": "SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.5-35B-A3B is a self-improving agentic coding model from the Ornith Team. It extends Ornith-1.0 by expanding the self-improvement loop from scaffold and rollout optimization to jointly optimizing task generation, scaffold construction, and solution rollouts — continuously generating new training tasks, discovering effective strategies, and improving the policy through reinforcement ..."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith 1.5 35b A3b Mtp Apex Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/sc117/ornith-1.5-35b-a3b-mtp-apex-gguf",
+      "snippet": "Registry entry for model Ornith 1.5 35b A3b Mtp Apex Gguf; source metadata pending."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    }
+  ]
+}

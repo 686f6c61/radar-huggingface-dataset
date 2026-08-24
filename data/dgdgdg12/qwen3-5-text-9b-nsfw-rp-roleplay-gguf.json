@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay-GGUF",
+  "slug": "dgdgdg12-qwen3-5-text-9b-nsfw-rp-roleplay-gguf",
+  "author": "DGDGDG12",
+  "url": "https://huggingface.co/DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay-GGUF",
+  "created_at": "2026-08-23T21:22:08.000Z",
+  "updated_at": "2026-08-23T23:08:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dataset:lipilipic/NSFW_Roleplay-gemma-2b",
+    "base_model:DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay",
+    "base_model:quantized:DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 21624576320,
+  "storage_human": "21.6 GB",
+  "base_model": "DGDGDG12/Qwen3.5-text-9B-NSFW-RP-RolePlay",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "Qwen3.5-9B Abliterated: Uncensored Local LLM Guide",
+      "url": "https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/",
+      "snippet": "Unrestricted Uncensored Qwen3.5‑9B Abliterated: Full Guide Learn how to install, run, benchmark and compare the uncensored Qwen3.5‑9B Abliterated model locally on Mac, Windows and Linux. Includes step‑by‑step setup (Ollama, GGUF, llama.cpp, vLLM), hardware requirements, benchmarks, pricing considerations, and comparisons with rival open‑source LLMs."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=roleplay",
+      "snippet": "Seikaijyu/RWKV-x060-World-3B-v2-nsfw.roleplay Chun121/Qwen3-4B-RPG-Roleplay-V2"
+    }
+  ]
+}

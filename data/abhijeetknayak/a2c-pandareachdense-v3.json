@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "abhijeetknayak/a2c-PandaReachDense-v3",
+  "slug": "abhijeetknayak-a2c-pandareachdense-v3",
+  "author": "abhijeetknayak",
+  "url": "https://huggingface.co/abhijeetknayak/a2c-PandaReachDense-v3",
+  "created_at": "2026-08-23T14:12:32.000Z",
+  "updated_at": "2026-08-23T14:32:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330507,
+  "storage_human": "330507 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/a2c-PandaReachDense-v3",
+      "snippet": "Model Description This repository contains a trained Advantage Actor-Critic (A2C) reinforcement learning agent designed to solve the PandaReachDense-v3 environment from PyBullet Gym. The agent has been trained using the stable-baselines3 library to perform robotic arm reaching tasks with the Franka Emika Panda robot."
+    },
+    {
+      "title": "vagi/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/vagi/a2c-PandaReachDense-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "README.md · hfdltest/a2c-PandaReachDense-v3 at main",
+      "url": "https://d6108366.hf-mirror.com/hfdltest/a2c-PandaReachDense-v3/blob/main/README.md?code=true",
+      "snippet": "Instructions to use hfdltest/a2c-PandaReachDense-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use hfdltest/a2c-PandaReachDense-v3 with stable-baselines3:"
+    },
+    {
+      "title": "xenjin450/A2C-PandaReachDense-v3Xenjin450 - GitHub",
+      "url": "https://github.com/xenjin450/A2C-PandaReachDense-v3Xenjin450",
+      "snippet": "A2C Actor-Critic Deep Reinforcement Learning(DRL) For PandaReachDense-v3 AI-Agent - xenjin450/A2C-PandaReachDense-v3Xenjin450"
+    }
+  ]
+}

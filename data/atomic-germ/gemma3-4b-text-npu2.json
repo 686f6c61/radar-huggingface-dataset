@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Gemma3-4B-Text-NPU2",
+  "slug": "atomic-germ-gemma3-4b-text-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Gemma3-4B-Text-NPU2",
+  "created_at": "2026-08-24T03:17:32.000Z",
+  "updated_at": "2026-08-24T03:17:32.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma3_text",
+    "unsloth",
+    "gemma3",
+    "gemma",
+    "google",
+    "en",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-4b-it-qat-q4_0-unquantized",
+    "base_model:finetune:google/gemma-3-4b-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7573515675,
+  "storage_human": "7.6 GB",
+  "base_model": "google/gemma-3-4b-it-qat-q4_0-unquantized",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Gemma4-E2B-IT-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Gemma4-E2B-IT-NPU2",
+      "snippet": "By only activating a 4B subset of parameters during inference, the Mixture-of-Experts model runs much faster than its 26B total might suggest. This makes it an excellent choice for fast inference compared to the dense 31B model since it runs almost as fast as a 4B-parameter model."
+    },
+    {
+      "title": "Atomic-Germ/Gemma4-E4B-GLM-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Gemma4-E4B-GLM-NPU2",
+      "snippet": "This makes it an excellent choice for fast inference compared to the dense 31B model since it runs almost as fast as a 4B-parameter model. Benchmark Results These models were evaluated against a large collection of different datasets and metrics to cover different aspects of text generation."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma3:4b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:4b",
+      "snippet": "The Gemma 3 models are multimodal—processing text and images—and feature a 128K context window with support for over 140 languages. Available in 270M, 1B, 4B, 12B, and 27B parameter sizes, they excel in tasks like question answering, summarization, and reasoning, while their compact design allows deployment on resource-limited devices."
+    }
+  ]
+}

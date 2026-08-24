@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "brkdrd/simloop",
+  "slug": "brkdrd-simloop",
+  "author": "brkdrd",
+  "url": "https://huggingface.co/brkdrd/simloop",
+  "created_at": "2026-08-23T18:15:46.000Z",
+  "updated_at": "2026-08-23T18:20:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "looped-transformer",
+    "weight-tying",
+    "recurrent-depth",
+    "small-language-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9962496,
+  "parameters_human": "10.0M",
+  "storage_bytes": 79716160,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - brkdrd/SimLoop: A novice look at looped transformer ...",
+      "url": "https://github.com/brkdrd/SimLoop",
+      "snippet": "A novice look at looped transformer architectures. Contribute to brkdrd/SimLoop development by creating an account on GitHub."
+    },
+    {
+      "title": "brkdrd/simloop · Hugging Face",
+      "url": "https://huggingface.co/brkdrd/simloop",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "brkdrd · GitHub",
+      "url": "https://github.com/brkdrd/",
+      "snippet": "Contribution activity August 2026 Created 1 repository brkdrd/SimLoop Python • Built by Aug 20 Show more activity"
+    },
+    {
+      "title": "Your AI Slop Bores Me - Viral AI Game 2026",
+      "url": "https://youraislopboresme.org/",
+      "snippet": "Your AI Slop Bores Me is the viral web game where humans pretend to be AI. Learn about AI slop and join the movement against low-quality AI content."
+    },
+    {
+      "title": "SimLoop/CLAUDE.md at main · brkdrd/SimLoop · GitHub",
+      "url": "https://github.com/brkdrd/SimLoop/blob/main/CLAUDE.md",
+      "snippet": "A novice look at looped transformer architectures. Contribute to brkdrd/SimLoop development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AnhHao0107/bge-reranker-v2-m3-onnx",
+  "slug": "anhhao0107-bge-reranker-v2-m3-onnx",
+  "author": "AnhHao0107",
+  "url": "https://huggingface.co/AnhHao0107/bge-reranker-v2-m3-onnx",
+  "created_at": "2026-08-24T12:06:11.000Z",
+  "updated_at": "2026-08-24T12:08:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "text-ranking",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:quantized:BAAI/bge-reranker-v2-m3",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2288660801,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx-community/bge-reranker-v2-m3-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/bge-reranker-v2-m3-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BGE-Reranker-v2 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_reranker_v2.html",
+      "snippet": "For efficiency, utilize BAAI/bge-reranker-v2-m3 and the low layer of BAAI/bge-reranker-v2-minicpm-layerwise. For better performance, recommand BAAI/bge-reranker-v2-minicpm-layerwise and BAAI/bge-reranker-v2-gemma. Make sure always test on your real use case and choose the one with best speed-quality balance!"
+    },
+    {
+      "title": "HuggingFace - BAAI - BGE Reranker v2 m3 - GitHub",
+      "url": "https://github.com/LazaUK/HuggingFace-BAAI-BGERerankerv2m3",
+      "snippet": "This section covers the using of the BGE Reranker v2 m3 model locally with the BGE_Reranker_Local.ipynb notebook. Key steps include: Loading the Model: Import necessary libraries and load the BAAI/bge-reranker-v2-m3 model and tokenizer. Creating a Reranking Function: Define a Python function rerank that takes a query and returns documents sorted by relevance score. Testing: Demonstrate the ..."
+    },
+    {
+      "title": "BGE-Reranker-V2-M3 - GitHub",
+      "url": "https://github.com/vllm-project/vllm-ascend/diffs/1?base_sha=b7d81b3d124e021e22e48b006f8b01253a5ac140&head_user=gygdh-001&name=main&pull_number=11275&qualified_name=refs%2Fheads%2Fmain&sha1=b7d81b3d124e021e22e48b006f8b01253a5ac140&sha2=ca0129af87e5c514b4661308e4495f1014567fdd&short_path=8e6c2c3&unchanged=expanded&w=false",
+      "snippet": "BGE-Reranker-V2-M3 is a cross-encoder reranker model developed by BAAI, based on the RoBERTa architecture. Unlike decoder-only LLM-based rerankers, it is a lightweight (278M parameters) encoder-only model that directly computes relevance scores for (query, document) pairs."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Prannesshkva",
   "url": "https://huggingface.co/Prannesshkva/Ael-504M",
   "created_at": "2026-08-22T06:53:50.000Z",
-  "updated_at": "2026-08-22T11:02:21.000Z",
+  "updated_at": "2026-08-23T13:33:17.000Z",
   "license": "bsl-1.1",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 975,
   "trending_score": 0,
   "parameters": 504429976,
   "parameters_human": "504.4M",
-  "storage_bytes": 1008935240,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 3026730360,
+  "storage_human": "3.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

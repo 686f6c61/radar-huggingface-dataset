@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shoemoney/Muse-Glimmer-30B-Abliterated-MLX-q8",
+  "slug": "shoemoney-muse-glimmer-30b-abliterated-mlx-q8",
+  "author": "shoemoney",
+  "url": "https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-q8",
+  "created_at": "2026-08-24T00:37:21.000Z",
+  "updated_at": "2026-08-24T00:42:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "muse_glimmer",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "uncensored",
+    "base_model:Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+    "base_model:quantized:Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9707260928,
+  "parameters_human": "9.71B",
+  "storage_bytes": 33404232187,
+  "storage_human": "33.4 GB",
+  "base_model": "Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "meta/muse-glimmer • LM Studio",
+      "url": "https://lmstudio.ai/models/meta/muse-glimmer",
+      "snippet": "Muse Glimmer 30B Muse Glimmer is Meta&#x27;s 30B parameter open model built for local, agentic AI. It combines multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery in a model designed to run on consumer hardware without requiring cloud infrastructure. Highlights Optimized for local agents: designed for autonomous workflows on high-end PCs and workstations ..."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "GitHub - cobusgreyling/Muse-Glimmer: Introducing Muse Glimmer: open ...",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "doth4580/Qwen3.8-27B-DFlash2",
+  "slug": "doth4580-qwen3-8-27b-dflash2",
+  "author": "doth4580",
+  "url": "https://huggingface.co/doth4580/Qwen3.8-27B-DFlash2",
+  "created_at": "2026-08-23T14:48:46.000Z",
+  "updated_at": "2026-08-23T14:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "sglang",
+    "vllm",
+    "mirror",
+    "veloGB10",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3849104785,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-lab/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "incoai/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B + DFlash2 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen-3-8-27b-dflash2/380617",
+      "snippet": "1 External Image inco.ai - 18 Aug 26 DFlash 2: Keep Drafting Parallel DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today. Has anyone tried Qwen 3.8 27B with DFlash2 on a DGX Spark yet?"
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2: A Guide to Faster Qwen Inference",
+      "url": "https://hackernoon.com/qwen38-27b-dflash2-a-guide-to-faster-qwen-inference",
+      "snippet": "Overview Qwen3.8-27B-DFlash2 is a speculative decoding draft model maintained by z-lab that accelerates inference for the base Qwen/Qwen3.8-27B model. This is not a standalone language model—it functions exclusively as a drafter component within speculative decoding servers like SGLang or vLLM. The model implements block-diffusion drafting, predicting entire blocks of tokens in a single ..."
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2 · Models",
+      "url": "https://www.modelscope.cn/models/z-lab/Qwen3.8-27B-DFlash2",
+      "snippet": "Qwen3.8-27B-DFlash2 Blog | GitHub This repository contains the DFlash 2 draft model for Qwen/Qwen3.8-27B. It is not a standalone language model: it runs inside a speculative decoding server and drafts tokens for the target model to verify. This repository is a mirror of incoai/Qwen3.8-27B-DFlash2. DFlash 2 is a block-diffusion drafter for speculative decoding. It predicts a whole block of ..."
+    }
+  ]
+}

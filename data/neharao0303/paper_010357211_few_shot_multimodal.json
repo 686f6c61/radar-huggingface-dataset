@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "neharao0303/paper_010357211_few_shot_multimodal",
+  "slug": "neharao0303-paper_010357211_few_shot_multimodal",
+  "author": "neharao0303",
+  "url": "https://huggingface.co/neharao0303/paper_010357211_few_shot_multimodal",
+  "created_at": "2026-08-23T08:27:08.000Z",
+  "updated_at": "2026-08-23T08:27:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "few-shot-multimodal",
+    "graphic-visual",
+    "intro-method-exp-related-conclusion",
+    "latex-icml",
+    "measured",
+    "medium-balanced",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2410.22489",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "PDF Multimodal Zero-Shot and Few-Shot Learning - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Mateo-Clement/publication/388959539_Multimodal_Zero-Shot_and_Few-Shot_Learning/links/67ae45538311ce680c61c9d9/Multimodal-Zero-Shot-and-Few-Shot-Learning.pdf",
+      "snippet": "Abstract Multimodal zero-shot and few-shot learning integrate multiple data modalities—such as text, images, audio, and video—to enhance AI generalization with minimal training examples."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Few-Shot Learning Based on Multimodal Information Processing",
+      "url": "https://ieeexplore.ieee.org/document/10981794/",
+      "snippet": "Few-shot learning aims to develop models with strong generalization capabilities using a small number of training samples. However, most learning methods rely solely on the visual features of a few samples to represent entire categories, leading to poor category representativeness. In contrast, humans can utilize multimodal information to learn category features, thereby making them more ..."
+    }
+  ]
+}

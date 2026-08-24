@@ -1,0 +1,380 @@
+{
+  "schema": 1,
+  "id": "nikodallanoce/DARv2",
+  "slug": "nikodallanoce-darv2",
+  "author": "nikodallanoce",
+  "url": "https://huggingface.co/nikodallanoce/DARv2",
+  "created_at": "2026-08-24T13:07:38.000Z",
+  "updated_at": "2026-08-24T13:07:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "eurobert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:48119",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "custom_code",
+    "it",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:jinaai/jina-embeddings-v5-text-nano-retrieval",
+    "base_model:finetune:jinaai/jina-embeddings-v5-text-nano-retrieval",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 211766016,
+  "parameters_human": "211.8M",
+  "storage_bytes": 864285966,
+  "storage_human": "864 MB",
+  "base_model": "jinaai/jina-embeddings-v5-text-nano-retrieval",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8491620111731844
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8994413407821229
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9329608938547486
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@20",
+      "value": 0.9664804469273743
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@40",
+      "value": 0.9888268156424581
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@60",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@80",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@100",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Accuracy@300",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@3",
+      "value": 0.3351955307262569
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@5",
+      "value": 0.2346368715083799
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@10",
+      "value": 0.13966480446927373
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@20",
+      "value": 0.0840782122905028
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@40",
+      "value": 0.05055865921787711
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@60",
+      "value": 0.037243947858473
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@80",
+      "value": 0.03009776536312849
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@100",
+      "value": 0.02575418994413408
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Precision@300",
+      "value": 0.010297951582867783
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@3",
+      "value": 0.7113845431791153
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@5",
+      "value": 0.7668105655873688
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@10",
+      "value": 0.8069703044506974
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@20",
+      "value": 0.8486822759063506
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@40",
+      "value": 0.8995330339524957
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@60",
+      "value": 0.9201337091635883
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@80",
+      "value": 0.9263148484888543
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@100",
+      "value": 0.9359004459467971
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Recall@300",
+      "value": 0.9576087089709875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@3",
+      "value": 0.7402765524397363
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@5",
+      "value": 0.7539908301964626
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.7587541431126001
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@20",
+      "value": 0.7631621113927632
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@40",
+      "value": 0.7733094810297382
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@60",
+      "value": 0.7786862612377506
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@80",
+      "value": 0.7810236101448436
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@100",
+      "value": 0.7843283174297074
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Ndcg@300",
+      "value": 0.7920511479199897
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@3",
+      "value": 0.7690875232774673
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@5",
+      "value": 0.7805400372439478
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7854172208920811
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@20",
+      "value": 0.7877512046579966
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@40",
+      "value": 0.7885420037099689
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@60",
+      "value": 0.7888024085486542
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@80",
+      "value": 0.7888024085486542
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@100",
+      "value": 0.7888024085486542
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Mrr@300",
+      "value": 0.7888024085486542
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Map@3",
+      "value": 0.7081005586592178
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Map@5",
+      "value": 0.7093854748603352
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Map@10",
+      "value": 0.7043729124176051
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Map@20",
+      "value": 0.7004191332563394
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "valid",
+      "metric": "Cosine Map@40",
+      "value": 0.7011022173432434
+    }
+  ],
+  "sources": [
+    {
+      "title": "nikodallanoce (Niko Dalla Noce) - Hugging Face",
+      "url": "https://huggingface.co/nikodallanoce",
+      "snippet": "User profile of Niko Dalla Noce on Hugging Face"
+    },
+    {
+      "title": "nikodallanoce (Niko Dalla Noce) · GitHub",
+      "url": "https://github.com/nikodallanoce/",
+      "snippet": "nikodallanoce has 17 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "DALL·E 2 - OpenAI",
+      "url": "https://openai.com/index/dall-e-2/",
+      "snippet": "DALL·E 2 is an AI system that can create realistic images and art from a description in natural language."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

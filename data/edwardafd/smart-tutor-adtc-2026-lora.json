@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "edwardafd/smart-tutor-adtc-2026-lora",
+  "slug": "edwardafd-smart-tutor-adtc-2026-lora",
+  "author": "edwardafd",
+  "url": "https://huggingface.co/edwardafd/smart-tutor-adtc-2026-lora",
+  "created_at": "2026-08-23T21:43:13.000Z",
+  "updated_at": "2026-08-23T21:43:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192392,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adtc-2026/model at main · 2kDarki/adtc-2026 · GitHub",
+      "url": "https://github.com/2kDarki/adtc-2026/tree/main/model",
+      "snippet": "Official submission for the Africa Deep Tech Challenge 2026 Laptop LLM track - adtc-2026/model at main · 2kDarki/adtc-2026"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,038 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Africa Deep Tech Challenge 2026: The Laptop LLM Challenge: Build On ...",
+      "url": "https://adtc-2026.devpost.com/",
+      "snippet": "Africa Deep Tech Challenge 2026 (inspired by the Africa AI XPrize) is an engineering-first competition to make useful language-model applications run well on the computers Africans already own: mid- and low-end commodity laptops. We are not building for exotic edge silicon."
+    },
+    {
+      "title": "Africa Deep Tech Challenge 2026 | The Laptop LLM Challenge",
+      "url": "https://africadeeptech.org/challenge-2026/",
+      "snippet": "Africa is not excluded from the language model revolution. ADTC 2026 is an engineering-first competition to make LLM applications run on the 8 GB laptops Africans already own — no cloud, no discrete GPU, no API fees."
+    },
+    {
+      "title": "adtc-2026-submission/download_model.sh at main · Kedarcv/adtc ... - GitHub",
+      "url": "https://github.com/Kedarcv/adtc-2026-submission/blob/main/download_model.sh",
+      "snippet": "Official submission for the Africa Deep Tech Challenge 2026 Laptop LLM track - Kedarcv/adtc-2026-submission"
+    }
+  ]
+}

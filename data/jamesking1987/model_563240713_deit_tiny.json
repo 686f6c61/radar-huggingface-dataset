@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jamesking1987/model_563240713_deit_tiny",
+  "slug": "jamesking1987-model_563240713_deit_tiny",
+  "author": "jamesking1987",
+  "url": "https://huggingface.co/jamesking1987/model_563240713_deit_tiny",
+  "created_at": "2026-08-23T10:07:50.000Z",
+  "updated_at": "2026-08-23T10:07:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cosine",
+    "cross-attention",
+    "deit",
+    "groupnorm",
+    "relu",
+    "retrieval",
+    "rmsprop",
+    "sparse",
+    "tiny",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - peternara/deit-Transformers: Official DeiT repository",
+      "url": "https://github.com/peternara/deit-Transformers",
+      "snippet": "This repository contains PyTorch evaluation code, training code and pretrained models for DeiT (Data-Efficient Image Transformers). They obtain competitive tradeoffs in terms of speed / precision: For details see Training data-efficient image transformers & distillation through attention by Hugo ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "facebook/deit-tiny-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/facebook/deit-tiny-patch16-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou."
+    }
+  ]
+}

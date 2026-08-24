@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Doctorgp1/yora-tts-v2",
+  "slug": "doctorgp1-yora-tts-v2",
+  "author": "Doctorgp1",
+  "url": "https://huggingface.co/Doctorgp1/yora-tts-v2",
+  "created_at": "2026-08-24T15:15:34.000Z",
+  "updated_at": "2026-08-24T15:39:44.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "yo"
+  ],
+  "tags": [
+    "safetensors",
+    "vits",
+    "text-to-speech",
+    "tts",
+    "yoruba",
+    "african-language",
+    "yo",
+    "dataset:Doctorgp1/bibletts-yoruba-22050",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36286704,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145239160,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coqui/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XTTS-v2 — TTS Model",
+      "url": "https://ttsmodels.com/models/xtts-v2/",
+      "snippet": "XTTS-v2: Multilingual voice cloning with only 6 seconds of audio. Learn about its focus, availability, and use cases."
+    },
+    {
+      "title": "XTTS v2 (Coqui TTS): Free Local Voice Cloning, 17 Languages",
+      "url": "https://localaimaster.com/models/coqui-tts",
+      "snippet": "XTTS v2 (Coqui TTS) is the free, open-source ElevenLabs alternative you run locally — clone any voice from a ~6-sec sample in 17 languages. 2026 setup, specs & benchmarks. Install in one command: pip install coqui-tts."
+    },
+    {
+      "title": "GitHub - Exoshiva/TTS_v2: - a deep learning toolkit for Text-to ...",
+      "url": "https://github.com/Exoshiva/TTS_v2",
+      "snippet": "🐸TTS is a library for advanced Text-to-Speech generation. 🚀 Pretrained models in +1100 languages. 🛠️ Tools for training new models and fine-tuning existing models in any language. 📚 Utilities for dataset analysis and curation."
+    },
+    {
+      "title": "Jaden-J/Coqui-TTS-XTTS-v2-: - GitHub",
+      "url": "https://github.com/Jaden-J/Coqui-TTS-XTTS-v2-",
+      "snippet": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production - Jaden-J/Coqui-TTS-XTTS-v2-"
+    }
+  ]
+}

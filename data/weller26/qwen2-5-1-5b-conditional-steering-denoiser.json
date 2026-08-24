@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Weller26/qwen2.5-1.5b-conditional-steering-denoiser",
+  "slug": "weller26-qwen2-5-1-5b-conditional-steering-denoiser",
+  "author": "Weller26",
+  "url": "https://huggingface.co/Weller26/qwen2.5-1.5b-conditional-steering-denoiser",
+  "created_at": "2026-08-23T15:25:51.000Z",
+  "updated_at": "2026-08-23T15:32:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "activation-steering",
+    "representation-engineering",
+    "denoising",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44894325,
+  "storage_human": "45 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "[2409.12186] Qwen2.5-Coder Technical Report",
+      "url": "https://ar5iv.labs.arxiv.org/html/2409.12186",
+      "snippet": "This report introduces the Qwen2.5-Coder series, an upgraded version of CodeQwen1.5, featuring two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. Built on the Qwen2.5 architecture and pretrained on over 5.5 trillion tokens, these code-specific models demonstrate exceptional code generation capabilities while maintaining general versatility. Through rigorous data processing and training ..."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v2",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "Abstract † In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable ..."
+    }
+  ]
+}

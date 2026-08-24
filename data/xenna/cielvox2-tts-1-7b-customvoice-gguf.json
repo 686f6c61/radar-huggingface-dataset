@@ -5,7 +5,7 @@
   "author": "Xenna",
   "url": "https://huggingface.co/Xenna/cielvox2-tts-1.7b-customvoice-GGUF",
   "created_at": "2026-08-21T17:29:16.000Z",
-  "updated_at": "2026-08-22T20:54:37.000Z",
+  "updated_at": "2026-08-22T22:00:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 65,
+  "downloads_30d": 132,
   "trending_score": 0,
   "parameters": 1916676352,
   "parameters_human": "1.92B",

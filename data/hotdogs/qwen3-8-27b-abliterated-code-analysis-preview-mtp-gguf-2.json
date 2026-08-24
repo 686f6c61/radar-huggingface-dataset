@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-GGUF",
+  "slug": "hotdogs-qwen3-8-27b-abliterated-code-analysis-preview-mtp-gguf-2",
+  "author": "hotdogs",
+  "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-GGUF",
+  "created_at": "2026-08-23T11:49:15.000Z",
+  "updated_at": "2026-08-23T12:05:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "code-review",
+    "code-analysis",
+    "lora",
+    "sft",
+    "abliterated",
+    "multi-token-prediction",
+    "mtp",
+    "llama.cpp",
+    "text-generation",
+    "base_model:hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview",
+    "base_model:adapter:hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 93899447680,
+  "storage_human": "93.9 GB",
+  "base_model": "hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF at main",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF/blob/main/README.md",
+      "snippet": "GGUF quantization of hotdogs/Qwen3.8-27B-abliterated — the training-free abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — converted for llama.cpp / LM Studio / Ollama / vLLM with the MTP (Multi-Token Prediction) head preserved. Status: testing / development. This is an early GGUF upload for evaluation."
+    },
+    {
+      "title": "README.md · hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF at ...",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF/blob/193101d7bd2d9c21987c48f79f102cb66d376586/README.md",
+      "snippet": "About the source model hotdogs/Qwen3.8-27B-abliterated is a training-free abliterated build of Qwen/Qwen3.8-27B (a dense 27B native vision-language model with hybrid full-attention + linear-attention architecture). Refusal behaviour is removed by a single forward-only rank-1 weight edit that orthogonalizes the \"refusal direction\" out of the 131 residual-stream writers — no fine-tuning, no ..."
+    },
+    {
+      "title": "Qwen3.8-27B-abliterated-MTP-GGUF | Genaihub",
+      "url": "https://genaihub.net/agents/hf-model-hotdogs-qwen3-8-27b-abliterated-mtp-gguf",
+      "snippet": "Qwen3.8-27B-abliterated-MTP-GGUF is an open-weight text-generation model with roughly 27B parameters published by hotdogs on the Hugging Face Hub. It has 21,373 downloads."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen3.8-27B Uncensored GGUF is the abliterated llama.cpp build — 12 quants, F16, vision, 262K ctx, MTP. Research-only, Apache 2.0."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

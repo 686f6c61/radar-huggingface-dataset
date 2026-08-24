@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Kimi-K3-Neuron-REAP720-IQ1S-GGUF",
+  "slug": "vcruz305-kimi-k3-neuron-reap720-iq1s-gguf",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Kimi-K3-Neuron-REAP720-IQ1S-GGUF",
+  "created_at": "2026-08-24T08:10:28.000Z",
+  "updated_at": "2026-08-24T08:25:45.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "kimi-k3",
+    "moe",
+    "expert-pruning",
+    "reap",
+    "iq1_s",
+    "llama.cpp",
+    "text-generation",
+    "arxiv:2510.13999",
+    "base_model:vcruz305/Kimi-K3-GGUF",
+    "base_model:finetune:vcruz305/Kimi-K3-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "vcruz305/Kimi-K3-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/Kimi-K3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Kimi-K3-GGUF/tree/main",
+      "snippet": "Instructions to use vcruz305/Kimi-K3-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use vcruz305/Kimi-K3-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "vcruz305/Kimi-K3-Neuron-k1024-IQ1S-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Kimi-K3-Neuron-k1024-IQ1S-GGUF",
+      "snippet": "Access to Kimi-K3-Neuron-k1024-IQ1S-GGUF ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Branches · vcruz305/kimi-k3-neuron-tp3-vllm-recipe · GitHub",
+      "url": "https://github.com/vcruz305/kimi-k3-neuron-tp3-vllm-recipe/branches/all",
+      "snippet": "Patch recipe for serving the 330 GB Kimi-K3 Neuron IQ1_S GGUF on 3xH200 via vLLM TP3, with breakable CUDA graphs and a GPU-qualified DSpark speculative bridge (42.46 tok/s, 1.218x target-only) - Br..."
+    },
+    {
+      "title": "Releases · vcruz305/kimi-k3-neuron-tp3-vllm-recipe · GitHub",
+      "url": "https://github.com/vcruz305/kimi-k3-neuron-tp3-vllm-recipe/releases",
+      "snippet": "Patch recipe for serving the 330 GB Kimi-K3 Neuron IQ1_S GGUF on 3xH200 via vLLM TP3, with breakable CUDA graphs and a GPU-qualified DSpark speculative bridge (42.46 tok/s, 1.218x target-only) - vc..."
+    },
+    {
+      "title": "Kimi K3, the Chinese AI that has put Silicon Valley on alert",
+      "url": "https://english.elpais.com/technology/2026-07-26/kimi-k3-the-chinese-ai-that-has-put-silicon-valley-on-alert.html",
+      "snippet": "The frantic race to dominate the generative artificial intelligence (AI) industry has a new frontrunner. It&#x27;s called Kimi K3 and it has emerged from the labs of Chinese start-up Moonshot AI."
+    }
+  ]
+}

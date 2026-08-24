@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1ys1/areumii-smolvla-pickplace-v6",
+  "slug": "1ys1-areumii-smolvla-pickplace-v6",
+  "author": "1ys1",
+  "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v6",
+  "created_at": "2026-08-23T09:02:20.000Z",
+  "updated_at": "2026-08-23T09:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:1ys1/areumii_pickplace_v7",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906722056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1ys1/areumii-smolvla-pickplace-v2 · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v2",
+      "snippet": "1ys1/areumii_pickplace-v2 ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "1ys1/areumii-smolvla-pickplace-v1 · Hugging Face",
+      "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v1",
+      "snippet": "1ys1/areumii_pickplace-v1 ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "Context # For the past few months I&#x27;ve been exploring different algorithms for my SO-101 robot arm to do a pick-and-place task. Last time I trained SAC with HIL-SERL (Human-in-the-Loop Sample Efficient RL) on the real robot with a reward classifier and human interventions via the leader arm. After about 750 episodes of training, HIL-SERL achieved 80% success on reach-and-grasp. That&#x27;s good ..."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot&#x27;s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when generating ..."
+    },
+    {
+      "title": "Areumii_PickPlace_v1 / smolVLA eval - YouTube",
+      "url": "https://www.youtube.com/watch?v=yfHKDRRaGDg",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

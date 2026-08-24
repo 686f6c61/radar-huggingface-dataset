@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/latin-bert-3class-lat-intertext-v1",
+  "slug": "julian-schelb-latin-bert-3class-lat-intertext-v1",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/latin-bert-3class-lat-intertext-v1",
+  "created_at": "2026-08-24T13:44:20.000Z",
+  "updated_at": "2026-08-24T13:54:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "intertextuality",
+    "latin",
+    "multiclass",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:ashleygong03/bamman-burns-latin-bert",
+    "base_model:finetune:ashleygong03/bamman-burns-latin-bert",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111310851,
+  "parameters_human": "111.3M",
+  "storage_bytes": 445266948,
+  "storage_human": "445 MB",
+  "base_model": "ashleygong03/bamman-burns-latin-bert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models for Latin Intertextuality Search - a julian-schelb Collection",
+      "url": "https://huggingface.co/collections/julian-schelb/models-for-latin-intertextuality-search",
+      "snippet": "Models useful for discovering intertextual links between historical Latin authors."
+    },
+    {
+      "title": "julian-schelb (Julian) - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/models",
+      "snippet": "NLP, Entity Extraction, Graph Representation julian-schelb/roberta-base-latin-v2-class-lat-intertext-v1"
+    },
+    {
+      "title": "CLI Reference - LociSimiles",
+      "url": "https://julianschelb.github.io/locisimiles/cli/",
+      "snippet": "A Python package for finding intertextual links in Latin literature using pre-trained language models."
+    },
+    {
+      "title": "locisimiles · PyPI",
+      "url": "https://pypi.org/project/locisimiles/",
+      "snippet": "LociSimiles is a Python package for finding intertextual links in Latin literature using pre-trained language models."
+    },
+    {
+      "title": "julianschelb (Julian Schelb) / Repositories · GitHub",
+      "url": "https://github.com/julianschelb?tab=repositories",
+      "snippet": "A native macOS document manager built with Tauri, React 19, TypeScript, and Tailwind CSS v4. Import, organise, tag, and preview your documents; all stored locally on your Mac."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
+  "slug": "minimaxmusictraining-soad-mm3-nextlat-xm-serj-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
+  "author": "MiniMaxMusicTraining",
+  "url": "https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
+  "created_at": "2026-08-24T06:38:13.000Z",
+  "updated_at": "2026-08-24T11:31:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7252799160,
+  "storage_human": "7.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "Complete Songs with Long-Range Coherence MiniMax Music 3 natively supports full-song generation up to five minutes. The model maintains musical themes, rhythm, vocal identity, and arrangement progression across long sequences, enabling complete structures such as intro, verse, pre-chorus, chorus, bridge, instrumental break, and outro."
+    },
+    {
+      "title": "RareConcepts/soad-mm3-nextlat-20260822 · Discussions",
+      "url": "https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260822/discussions",
+      "snippet": "RareConcepts / soad-mm3-nextlat-20260822 like 0 Follow Rare Data Concepts 7 Text-to-Audio Diffusers minimaxmusic minimaxmusic-diffusers audio simpletuner Not-For-All-Audiences lora template:sd-lora standard License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Stream and listen to music online for free with SoundCloud",
+      "url": "https://soundcloud.com/",
+      "snippet": "Discover and play over 320 million music tracks. Join the world&#x27;s largest online community of artists, bands, DJs, and audio creators."
+    },
+    {
+      "title": "MiniMax Audio | Free Text To Speech Online with Natural AI Voices",
+      "url": "https://www.minimax.io/audio/text-to-speech",
+      "snippet": "Experience MiniMax Audio, the best free text-to-speech (TTS) platform. Transform text into lifelike audio with our advanced AI, offering 300+ natural voices across 32 languages. Create professional voiceovers, audiobooks, and more!"
+    },
+    {
+      "title": "MiniMax Music 2.6 | AI Music Generator & AI Song Maker",
+      "url": "https://www.minimax-music.com/minimax-music-2-6",
+      "snippet": "MiniMax Music 2.6 is the newest generation of MiniMax Music &#x27;s AI music model, released on April 10, 2026. Enter a style prompt and lyrics into this text-to-song AI, and it generates a complete, full-length song — including natural vocals, layered instrumentation, and genre-aware mixing — in seconds."
+    }
+  ]
+}

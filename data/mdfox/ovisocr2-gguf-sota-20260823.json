@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MDfox/OvisOCR2-GGUF-SOTA-20260823",
+  "slug": "mdfox-ovisocr2-gguf-sota-20260823",
+  "author": "MDfox",
+  "url": "https://huggingface.co/MDfox/OvisOCR2-GGUF-SOTA-20260823",
+  "created_at": "2026-08-13T02:27:29.000Z",
+  "updated_at": "2026-08-23T11:51:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "multimodal",
+    "vision",
+    "ocr",
+    "document-parsing",
+    "omnidocbench",
+    "sota",
+    "image-text-to-text",
+    "arxiv:2607.13639",
+    "arxiv:2412.07626",
+    "base_model:ATH-MaaS/OvisOCR2",
+    "base_model:quantized:ATH-MaaS/OvisOCR2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 257,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7732908928,
+  "storage_human": "7.7 GB",
+  "base_model": "ATH-MaaS/OvisOCR2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ATH-MaaS/OvisOCR2 · Hugging Face",
+      "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski/ATH-MaaS_OvisOCR2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/ATH-MaaS_OvisOCR2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OvisOCR2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.13639v1",
+      "snippet": "In this report, we present OvisOCR2, a compact 0.8B end-to-end model for page-level document parsing. We build a data engine that combines filtered real-document annotations with source-aligned synthetic pages, and use a training recipe that applies supervised fine-tuning, reinforcement learning, on-policy distillation, and model fusion."
+    },
+    {
+      "title": "[2607.13639] OvisOCR2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.13639",
+      "snippet": "We introduce OvisOCR2, a 0.8B document parsing model. OvisOCR2 is designed as an end-to-end parser: given a document page image, it generates a Markdown representation in natural reading order, covering text, formulas, tables, and visual regions. We build a data engine that combines filtered real-document annotations with synthetic pages whose rendered images and Markdown targets are derived ..."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis: A novel Multimodal Large Language Model (MLLM ...",
+      "url": "https://github.com/ATH-MaaS/Ovis",
+      "snippet": "A novel Multimodal Large Language Model (MLLM) architecture, designed to structurally align visual and textual embeddings. - ATH-MaaS/Ovis"
+    }
+  ]
+}

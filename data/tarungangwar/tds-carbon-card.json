@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tarungangwar/tds-carbon-card",
+  "slug": "tarungangwar-tds-carbon-card",
+  "author": "Tarungangwar",
+  "url": "https://huggingface.co/Tarungangwar/tds-carbon-card",
+  "created_at": "2026-08-24T08:55:49.000Z",
+  "updated_at": "2026-08-24T08:58:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pranav1003/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Pranav1003/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "WiseDev/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/WiseDev/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA T4 (5 GPUs) Training Mode: fine-tuning Region: us-central1 GPU Hours: 223h (PUE: 1.54) Total Energy: 120.197 kWh CO₂ Emissions: 42.069 kg CO₂eq"
+    },
+    {
+      "title": "Tarungangwar08 (Tarun gangwar) / Repositories · GitHub",
+      "url": "https://github.com/Tarungangwar08?tab=repositories",
+      "snippet": "Student at @IITM | Building @Stealth Startup | AI and ML - Tarungangwar08"
+    },
+    {
+      "title": "Hugging Carbon: Quantifying the Training Carbon Emissions of AI Models ...",
+      "url": "https://arxiv.org/abs/2605.01549",
+      "snippet": "The scaling-law era has transformed artificial intelligence (AI) from research into a global industry, but its rapid growth also raises concerns over energy usage, carbon emissions, and environmental sustainability. Unlike traditional sectors, the AI industry still lacks systematic carbon accounting methods that support large-scale estimates without reproducing the original training process ..."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "The plugin was based on the Hugging Face&#x27;s specification for reporting training carbon emissions in model card metadata. Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;."
+    }
+  ]
+}

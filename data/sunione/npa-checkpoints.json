@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sunione/npa-checkpoints",
+  "slug": "sunione-npa-checkpoints",
+  "author": "sunione",
+  "url": "https://huggingface.co/sunione/npa-checkpoints",
+  "created_at": "2026-08-24T02:44:47.000Z",
+  "updated_at": "2026-08-24T02:47:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "noise-policy",
+    "grpo",
+    "diffusion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7938012210,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/TR-HASH-MoE-200M-130B-Checkpoints"
+    },
+    {
+      "title": "How to Install Stable Diffusion Checkpoints & Models",
+      "url": "https://www.nextdiffusion.ai/tutorials/how-to-install-stable-diffusion-checkpoints-models",
+      "snippet": "Learn how to effectively install checkpoints and models in Stable Diffusion to enhance your image generation capabilities. Discover key concepts about models and the significance of Variable Autoencoders for stunning outputs."
+    },
+    {
+      "title": "Stable Diffusion Checkpoints — Free AI Model Downloads | ComfyUI Resources",
+      "url": "https://comfyuiweb.com/resources/checkpoints",
+      "snippet": "Curated collection of the most popular Stable Diffusion checkpoint models. From photorealistic to anime, find the perfect base model for your AI art workflow."
+    },
+    {
+      "title": "Checkpointing · Hugging Face",
+      "url": "https://huggingface.co/docs/accelerate/usage_guides/checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

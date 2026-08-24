@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mason1998/deepseek-finetune-ocr-kurdish",
+  "slug": "mason1998-deepseek-finetune-ocr-kurdish",
+  "author": "mason1998",
+  "url": "https://huggingface.co/mason1998/deepseek-finetune-ocr-kurdish",
+  "created_at": "2026-08-23T09:45:30.000Z",
+  "updated_at": "2026-08-23T10:42:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "DeepseekOCR2",
+    "feature-extraction",
+    "text-generation-inference",
+    "unsloth",
+    "deepseek_vl_v2",
+    "custom_code",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-OCR-2",
+    "base_model:finetune:deepseek-ai/DeepSeek-OCR-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3389119360,
+  "parameters_human": "3.39B",
+  "storage_bytes": 6778570584,
+  "storage_human": "6.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-OCR-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-OCR · finetune - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR/discussions/57",
+      "snippet": "Upload images, audio, and videos by dragging in the text input, pasting, or clicking here. Tap or paste here to upload images"
+    },
+    {
+      "title": "Fine-tuned Models for deepseek-ai/DeepSeek-OCR - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:deepseek-ai/DeepSeek-OCR",
+      "snippet": "Explore machine learning models. vinhnx90/deepseek-orc-3b-persian-detection-f16-vllm"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-OCR: Contexts Optical Compression",
+      "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+      "snippet": "Contexts Optical Compression. Contribute to deepseek-ai/DeepSeek-OCR development by creating an account on GitHub."
+    },
+    {
+      "title": "DeepSeek",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "DeepSeek-OCR: How to Run & Fine-tune | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/deepseek-ocr-how-to-run-and-fine-tune",
+      "snippet": "Copy Models Large language model (LLMs) Tutorials 🐳 DeepSeek-OCR: How to Run & Fine-tune Guide on how to run and fine-tune DeepSeek-OCR locally. DeepSeek-OCR is a 3B-parameter vision model for OCR and document understanding. It uses context optical compression to convert 2D layouts into vision tokens, enabling efficient long-context processing."
+    }
+  ]
+}

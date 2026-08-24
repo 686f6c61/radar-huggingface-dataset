@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-31B-it-scotoma-GGUF",
+  "slug": "mradermacher-gemma-4-31b-it-scotoma-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-GGUF",
+  "created_at": "2026-08-23T07:16:40.000Z",
+  "updated_at": "2026-08-23T08:05:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ReadyArt/gemma-4-31B-it-scotoma",
+    "base_model:quantized:ReadyArt/gemma-4-31B-it-scotoma",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908602144,
+  "storage_human": "213.9 GB",
+  "base_model": "ReadyArt/gemma-4-31B-it-scotoma",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gemma-4-31B-it-scotoma-2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-2-GGUF",
+      "snippet": "Instructions to use mradermacher/gemma-4-31B-it-scotoma-2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 31B It Scotoma 2 by ReadyArt - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ReadyArt%2Fgemma-4-31B-it-scotoma-2,72sD2D41CSiRwu6jn8U3Z3",
+      "snippet": "Rank the Gemma 4 31B It Scotoma 2 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "gemma-4-31B-it-scotoma-2-GGUF - Genaihub",
+      "url": "https://genaihub.net/agents/hf-model-readyart-gemma-4-31b-it-scotoma-2-gguf",
+      "snippet": "Description gemma-4-31B-it-scotoma-2-GGUF is an open-weight text-generation model with roughly 31B parameters published by ReadyArt on the Hugging Face Hub. It has 95,523 downloads. Runs with transformers."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it/modelcard",
+      "snippet": "Gemma 4 31B IT Description Gemma 4 31B IT is an open multimodal model built by Google DeepMind that handles text and image inputs, can process video as sequences of frames, and generates text output. It is designed to deliver frontier-level performance for reasoning, agentic workflows, coding, and multimodal understanding on consumer GPUs and workstations, with a 256K-token context window and ..."
+    }
+  ]
+}

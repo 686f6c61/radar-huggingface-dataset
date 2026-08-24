@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vennsa/Polysort",
+  "slug": "vennsa-polysort",
+  "author": "vennsa",
+  "url": "https://huggingface.co/vennsa/Polysort",
+  "created_at": "2026-08-23T15:17:17.000Z",
+  "updated_at": "2026-08-23T15:19:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24507866,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vennsa (venura) - Hugging Face",
+      "url": "https://huggingface.co/vennsa",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Vanessa AI Generated Fit Model - V1 | Flux.1 LoRA | Civitai",
+      "url": "https://civitai.red/models/1928972/vanessa-ai-generated-fit-model",
+      "snippet": "Another AI generated model. Her name is Vanessa, a fit and athletic female model."
+    },
+    {
+      "title": "PDF AI-Powered Ransomware: Automated Variant Proliferation",
+      "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_ai_powered_ransomware_generation_variant_proliferation_20260315-csa-styled.pdf",
+      "snippet": "CSA&#x27;s LLM Threats Taxonomy (2024), produced by the AI Controls Framework Working Group, offers the foundational classification framework for AI-related threats underlying AI-powered ransomware, including Model Manipulation, Insecure Supply Chain, and the abuse of AI systems to generate malicious outputs [14]."
+    },
+    {
+      "title": "EndoSight AI: Deep Learning-Driven Real-Time Gastrointestinal Polyp ...",
+      "url": "https://arxiv.org/pdf/2511.12962",
+      "snippet": "Abstract - Precise and real-time detection of gastrointestinal polyps during endoscopic procedures is crucial for early diagnosis and prevention of colorectal cancer. This work presents En-doSight AI, a deep learning architecture developed and eval-uated independently to enable accurate polyp localization and detailed boundary delineation. Leveraging the publicly available Hyper-Kvasir dataset ..."
+    }
+  ]
+}

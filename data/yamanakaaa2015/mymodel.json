@@ -5,7 +5,7 @@
   "author": "yamanakaaa2015",
   "url": "https://huggingface.co/yamanakaaa2015/mymodel",
   "created_at": "2025-06-26T11:35:45.000Z",
-  "updated_at": "2026-08-22T10:49:05.000Z",
+  "updated_at": "2026-08-23T11:15:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,11 +16,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 258,
+  "downloads_30d": 255,
   "trending_score": 0,
   "parameters": 14288901184,
   "parameters_human": "14.29B",
-  "storage_bytes": 435436266690,
+  "storage_bytes": 435435885558,
   "storage_human": "435.4 GB",
   "base_model": null,
   "formats": [

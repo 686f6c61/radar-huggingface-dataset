@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vasandesh/plaque-analysis",
+  "slug": "vasandesh-plaque-analysis",
+  "author": "vasandesh",
+  "url": "https://huggingface.co/vasandesh/plaque-analysis",
+  "created_at": "2026-08-23T21:11:46.000Z",
+  "updated_at": "2026-08-23T21:17:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "coronary-artery-segmentation",
+    "cardiac-ct",
+    "nnunet",
+    "imagecas",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 246725695,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantitative Coronary Plaque Analysis in Clinical Practice: 2025 ACC ...",
+      "url": "https://www.jacc.org/doi/10.1016/j.jcmg.2025.11.008",
+      "snippet": "Quantitative coronary plaque analysis: Analysis of coronary CTA data that identifies and quantifies (in mm 3) the overall volume of coronary plaque. QCPA may use various techniques ranging from manual segmentation to AI to distinguish between the coronary lumen and vessel wall."
+    },
+    {
+      "title": "Artificial Intelligence in Coronary Plaque Characterization ... - MDPI",
+      "url": "https://www.mdpi.com/2077-0383/15/2/903",
+      "snippet": "Artificial intelligence (AI) models have emerged as a transformative tool for automated coronary plaque analysis across multiple imaging modalities. AI-driven models demonstrate high diagnostic accuracy for plaque detection, segmentation, quantification, and vulnerability assessment."
+    },
+    {
+      "title": "Artificial Intelligence‐Based Analysis of Coronary Atherosclerotic ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13386478/",
+      "snippet": "Artificial intelligence (AI)‐based methods offer a promising approach to automate IVUS plaque detection. This systematic review and meta‐analysis evaluated the diagnostic performance of AI models for IVUS‐based coronary plaque detection."
+    },
+    {
+      "title": "Plaque Analysis - HeartFlow",
+      "url": "https://www.heartflow.com/heartflow-one/plaque/",
+      "snippet": "Accurate. The only AI-driven plaque analysis prospectively validated with 95% agreement to the invasive gold-standard, intravascular ultrasound (IVUS). 4 agreement with IVUS in precisely quantifying and characterizing coronary plaque."
+    },
+    {
+      "title": "Artificial Intelligence-Based Analysis of Coronary Atherosclerotic ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/clc.70423",
+      "snippet": "Artificial intelligence (AI)-based methods offer a promising approach to automate IVUS plaque detection. This systematic review and meta-analysis evaluated the diagnostic performance of AI models for IVUS-based coronary plaque detection. Methods A comprehensive literature search was conducted across major databases from inception to December 2025."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "valiolla/Qwen3.8-4B-Distill-heretic",
+  "slug": "valiolla-qwen3-8-4b-distill-heretic",
+  "author": "valiolla",
+  "url": "https://huggingface.co/valiolla/Qwen3.8-4B-Distill-heretic",
+  "created_at": "2026-08-23T07:57:02.000Z",
+  "updated_at": "2026-08-23T08:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9118599249,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwen3.8-4B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
+      "url": "https://huggingface.co/insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 4B Distill by empero-ai — VRAM 9.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/empero-ai%2FQwen3.8-4B-Distill,3zO5wdF6UrF9U0hXx3bqyC",
+      "snippet": "Qwen3.8 4B Distill is an open-source 4b LLM by empero-ai. VRAM 9.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-4B-Distill API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/empero-ai/Qwen3.8-4B-Distill",
+      "snippet": "Deploy Qwen3.8-4B-Distill with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

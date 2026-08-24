@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mstatt/surgeon-bake-test",
+  "slug": "mstatt-surgeon-bake-test",
+  "author": "mstatt",
+  "url": "https://huggingface.co/mstatt/surgeon-bake-test",
+  "created_at": "2026-08-20T18:50:34.000Z",
+  "updated_at": "2026-08-24T00:15:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "falconsai",
+    "model-surgeon",
+    "attested-lineage",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5455263900,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-24T06:01:40.711Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mstatt/surgeon-bake-test · Hugging Face",
+      "url": "https://huggingface.co/mstatt/surgeon-bake-test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=model-surgeon",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: model-surgeon Clear all"
+    },
+    {
+      "title": "Meta says its AI model breached a third-party company during testing ...",
+      "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "snippet": "Tech giant Meta revealed Wednesday that one of its artificial intelligence models hacked another organization during testing, the third time in recent weeks that an AI model has improperly ..."
+    },
+    {
+      "title": "mstatt (Mike) - Hugging Face",
+      "url": "https://huggingface.co/mstatt/models",
+      "snippet": "Organizations mstatt&#x27;s models3 Sort: Recently updated mstatt/model_training Updated Nov 8, 2023"
+    },
+    {
+      "title": "mstatt (Mike) - Hugging Face",
+      "url": "https://huggingface.co/mstatt/datasets",
+      "snippet": "personal AI & ML interests Organizations"
+    }
+  ]
+}

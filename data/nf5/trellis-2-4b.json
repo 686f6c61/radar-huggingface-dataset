@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nf5/TRELLIS.2-4B",
+  "slug": "nf5-trellis-2-4b",
+  "author": "nf5",
+  "url": "https://huggingface.co/nf5/TRELLIS.2-4B",
+  "created_at": "2026-08-23T23:17:00.000Z",
+  "updated_at": "2026-08-23T23:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "trellis2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trellis2",
+    "image-to-3d",
+    "en",
+    "arxiv:2512.14692",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16247029834,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/TRELLIS.2-4B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/TRELLIS.2-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hivenimbus/TRELLIS.2-4B · Hugging Face",
+      "url": "https://huggingface.co/hivenimbus/TRELLIS.2-4B",
+      "snippet": "TRELLIS.2 is a state-of-the-art large 3D generative model designed for high-fidelity image-to-3D generation. It leverages a novel \"field-free\" sparse voxel structure termed O-Voxel and a large-scale flow-matching transformer (4 Billion parameters)."
+    },
+    {
+      "title": "TRELLIS.2: Native and Compact Structured Latents for 3D Generation",
+      "url": "https://microsoft.github.io/TRELLIS.2/",
+      "snippet": "Our 4B-parameter model generates high-resolution fully textured assets with exceptional fidelity and efficiency with vanilla DiTs. * Total generation time (shape + material). ** Tested with NVIDIA H100 GPU. At the core is the native and compact structured latents, which push the frontiers of fidelity and compactness at the same time."
+    },
+    {
+      "title": "GitHub - microsoft/TRELLIS.2: Native and Compact Structured Latents for ...",
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "snippet": "TRELLIS.2 is a state-of-the-art large 3D generative model (4B parameters) designed for high-fidelity image-to-3D generation. It leverages a novel \"field-free\" sparse voxel structure termed O-Voxel to reconstruct and generate arbitrary 3D assets with complex topologies, sharp features, and full PBR materials."
+    },
+    {
+      "title": "TRELLIS.2 — Microsoft Research Workbench",
+      "url": "https://www.microsoft.com/en-us/research/workbench/project/trellis",
+      "snippet": "A 4B-parameter image-to-3D generative model that turns a single photograph into a production-ready asset with full PBR materials. TRELLIS.2 is the latest in a family of large 3D generative models built on a Structured Latent (SLAT) representation: a sparsely-populated 3D grid with dense multiview ..."
+    }
+  ]
+}

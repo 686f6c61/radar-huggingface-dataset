@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nethunter2023/linuxembed",
+  "slug": "nethunter2023-linuxembed",
+  "author": "nethunter2023",
+  "url": "https://huggingface.co/nethunter2023/linuxembed",
+  "created_at": "2026-08-24T05:13:40.000Z",
+  "updated_at": "2026-08-24T05:14:20.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "code-retrieval",
+    "code-search",
+    "linux-kernel",
+    "c",
+    "code",
+    "license:gpl-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42522624,
+  "parameters_human": "42.5M",
+  "storage_bytes": 170105544,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nethunter2023/linuxembed · Hugging Face",
+      "url": "https://huggingface.co/nethunter2023/linuxembed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Prompt Injection Cheatsheet - GitHub",
+      "url": "https://github.com/nukIeer/AI-Prompt-Injection-Cheatsheet",
+      "snippet": "AI hacking snippets for prompt injection, jailbreaking LLMs, and bypassing AI filters. Ideal for ethical hackers and security researchers testing AI security vulnerabilities. One README.md with pra..."
+    },
+    {
+      "title": "nvidia/llama-embed-nemotron-8b · Hugging Face",
+      "url": "https://huggingface.co/nvidia/llama-embed-nemotron-8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocalAI is the open-source AI engine. Run any model - LLMs ... - GitHub",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required. - mudler/LocalAI"
+    },
+    {
+      "title": "AI-Powered Worm Leverages Stolen Compute to Target Linux ... - GBHackers",
+      "url": "https://gbhackers.com/ai-powered-worm-leverages-stolen-compute-devices/",
+      "snippet": "AI-Powered Worm Leverages Devices In a recent lab evaluation from Arxiv, researchers built an AI-driven worm around a single open-weight LLM that runs locally on a compromised GPU, avoiding external model APIs that defenders could monitor or shut down. Once the worm compromises a GPU-equipped server, it deploys a local copy of the model."
+    }
+  ]
+}

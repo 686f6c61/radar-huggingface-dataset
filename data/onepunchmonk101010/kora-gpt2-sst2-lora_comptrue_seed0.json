@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/kora-gpt2-sst2-lora_compTrue_seed0",
+  "slug": "onepunchmonk101010-kora-gpt2-sst2-lora_comptrue_seed0",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/kora-gpt2-sst2-lora_compTrue_seed0",
+  "created_at": "2026-08-23T07:40:37.000Z",
+  "updated_at": "2026-08-23T07:40:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4757469,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing ChatGPT Images 2.0 - OpenAI",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+      "snippet": "ChatGPT Images 2.0 introduces a state-of-the-art image generation model with improved text rendering, multilingual support, and advanced visual reasoning."
+    },
+    {
+      "title": "ChatGPT Images 2.0 | AI Image Generator",
+      "url": "https://chatgpt.com/images/",
+      "snippet": "Generate high-quality AI images quickly with ChatGPT Images, featuring precise edits, preset filters and trending prompts."
+    },
+    {
+      "title": "HW08_LoRA_Student.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ekapolc/NLP_2025/blob/main/codes/L08_LoRA/HW08_LoRA_Student.ipynb",
+      "snippet": "In this assignment, you will learn to implement low-rank adaptation both from scratch and using a library—specifically, with PyTorch and the PEFT library, respectively. This assignment is divided into two sections: In the first section, we introduce the parameter-efficient transfer learning (PET) method. We use LoRA to adapt the GPT2 model for the SST-2 dataset. This section will teach you ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

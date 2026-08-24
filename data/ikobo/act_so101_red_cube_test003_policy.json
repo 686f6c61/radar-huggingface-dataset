@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "IKOBO/act_so101_red_cube_test003_policy",
+  "slug": "ikobo-act_so101_red_cube_test003_policy",
+  "author": "IKOBO",
+  "url": "https://huggingface.co/IKOBO/act_so101_red_cube_test003_policy",
+  "created_at": "2026-08-24T08:23:58.000Z",
+  "updated_at": "2026-08-24T08:24:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:IKOBO/so101_red_cube_test003",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IKOBO/so101_red_cube_test003 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/IKOBO/so101_red_cube_test003/tree/main",
+      "snippet": "Datasets: IKOBO / so101_red_cube_test003 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main so101_red_cube_test003 327 MB 1 contributor History:37 commits IKOBO Upload README.md with huggingface_hub d2c00e2 ..."
+    },
+    {
+      "title": "IKOBO/so101_red_cube_test003_20260821_141049 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/IKOBO/so101_red_cube_test003_20260821_141049/tree/main",
+      "snippet": "Datasets: IKOBO / so101_red_cube_test003_20260821_141049 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main so101_red_cube_test003_20260821_141049 17.8 MB 1 contributor History:3 commits IKOBO Upload README.md with ..."
+    },
+    {
+      "title": "SO-ARM100/Simulation/SO101/README.md at main - GitHub",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/README.md",
+      "snippet": "The MuJoCo file scene.xml supports two differenly calibrated SO101 robot files: New Calibration (Default): Each joint&#x27;s virtual zero is set to the middle of its joint range. Use -> so101_new_calib.xml. Old Calibration: Each joint&#x27;s virtual zero is set to the configuration where the robot is fully extended horizontally. Use -> so101_old_calib.xml. To switch between calibration methods, modify ..."
+    },
+    {
+      "title": "lerobot-so101-policy-evaluation/examples/tutorial/act/act_training ...",
+      "url": "https://github.com/Yangjingyuan-HK/lerobot-so101-policy-evaluation/blob/main/examples/tutorial/act/act_training_example_so101.py",
+      "snippet": "LeRobot SO-101 robot arm policy evaluation and benchmarking. Testing and comparing reinforcement learning and imitation learning policies (PI0, VQ-BeT, ACT, Diffusion Policy, etc.) on the SO-101 ro..."
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "A detailed walkthrough of training an Action Chunking Transformer (ACT) policy on an S0-101 robot arm for a pick-and-place task, using the lerobot library. The process involves data collection through teleoperation, model training, and performance evaluation."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-kda",
+  "slug": "jaisidhsingh-signedkda-kda",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-kda",
+  "created_at": "2026-08-23T11:25:29.000Z",
+  "updated_at": "2026-08-24T11:59:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kda",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 347618128,
+  "parameters_human": "347.6M",
+  "storage_bytes": 1390535728,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) / Repositories · GitHub",
+      "url": "https://github.com/jaisidhsingh?tab=repositories",
+      "snippet": "Deep learning researcher. jaisidhsingh has 64 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "Deep learning researcher. jaisidhsingh has 57 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MoonshotAI/FlashKDA: FlashKDA: high-performance Kimi Delta ...",
+      "url": "https://github.com/MoonshotAI/FlashKDA",
+      "snippet": "FlashKDA: Flash Kimi Delta Attention — high-performance KDA kernels built on CUTLASS"
+    },
+    {
+      "title": "[2502.05223] KDA: A Knowledge-Distilled Attacker for Generating Diverse ...",
+      "url": "https://arxiv.org/abs/2502.05223",
+      "snippet": "To address this challenge, we propose to distill the knowledge of an ensemble of SOTA attackers into a single open-source model, called Knowledge-Distilled Attacker (KDA), which is finetuned to automatically generate coherent and diverse attack prompts without the need for meticulous system prompt engineering."
+    }
+  ]
+}

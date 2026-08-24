@@ -5,7 +5,7 @@
   "author": "nom666",
   "url": "https://huggingface.co/nom666/Qwopus3.8-27B-GGUF",
   "created_at": "2026-08-20T02:05:53.000Z",
-  "updated_at": "2026-08-20T18:48:24.000Z",
+  "updated_at": "2026-08-22T21:23:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 327,
+  "downloads_30d": 471,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 45857798720,
-  "storage_human": "45.9 GB",
+  "storage_bytes": 63455313984,
+  "storage_human": "63.5 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

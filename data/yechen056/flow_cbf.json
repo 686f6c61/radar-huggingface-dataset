@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yechen056/flow_cbf",
+  "slug": "yechen056-flow_cbf",
+  "author": "yechen056",
+  "url": "https://huggingface.co/yechen056/flow_cbf",
+  "created_at": "2026-08-24T13:50:01.000Z",
+  "updated_at": "2026-08-24T14:36:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1461838527,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yechen056 (Yechen) - Hugging Face",
+      "url": "https://huggingface.co/yechen056",
+      "snippet": "None yet. Recent Activity. updated a model 5 days ago. yechen056/drawer. updated a dataset 5 days ago. yechen056/drawer"
+    },
+    {
+      "title": "yechen056 (Yechen) - Hugging Face",
+      "url": "https://huggingface.co/yechen056/datasets",
+      "snippet": "User profile of Yechen on Hugging Face"
+    },
+    {
+      "title": "yechen056 (Yechen Fan) · GitHub",
+      "url": "https://github.com/yechen056",
+      "snippet": "yechen056 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "yechen056 (Yechen Fan) / Repositories · GitHub",
+      "url": "https://github.com/yechen056?tab=repositories",
+      "snippet": "A practical repository for deploying the Diffusion Policy family on UR5e robots."
+    },
+    {
+      "title": "PDF AI-Enabled Forecasting and Isolation Forest-Based Detection of CBF Flow ...",
+      "url": "https://jisis.org/wp-content/uploads/2025/11/2025.I3.048.pdf",
+      "snippet": "This research develops a hybrid model using AI-based forecasting with the Isolation Forest algorithm to focus on an anomaly detection model for Core Backbone Flow (CBF) traffic."
+    }
+  ]
+}

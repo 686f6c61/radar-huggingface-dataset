@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "emiliiia/real_machine_exper",
+  "slug": "emiliiia-real_machine_exper",
+  "author": "emiliiia",
+  "url": "https://huggingface.co/emiliiia/real_machine_exper",
+  "created_at": "2026-08-23T21:36:16.000Z",
+  "updated_at": "2026-08-23T23:36:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "fastwam",
+    "real-machine",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72254775473,
+  "storage_human": "72.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Emmi AI | Home",
+      "url": "https://www.emmi.ai/",
+      "snippet": "Emmi AI releases NeuralMould, the first digital engineer for injection moulding. The Emmi AI Noether Framework is the foundational technology for Large Engineering Models, and NeuralMould showcases what&#x27;s possible and what&#x27;s to come."
+    },
+    {
+      "title": "Emily - One Question. Every AI",
+      "url": "https://meetemily.ai/",
+      "snippet": "Access to basic Emily AI Model Access to Basic AI Models Limited access to Video, Article and Data Summarization Limited free uses everyday"
+    },
+    {
+      "title": "heldn/RealEmiliaFlux · Hugging Face",
+      "url": "https://huggingface.co/heldn/RealEmiliaFlux",
+      "snippet": "Model description super-realistic Emilia cosplay vibes in your AI art. Think lifelike costumes, perfect silver hair, and all the little details that make her Emilia but in a way that looks like a real person cosplaying her!"
+    },
+    {
+      "title": "AMI Labs: Real World. Real Intelligence.",
+      "url": "https://amilabs.xyz/",
+      "snippet": "AMI - Advanced Machine Intelligence - builds world-model-based AI that understands the real world. We develop safe, controllable intelligent systems for industry, robotics, healthcare, and beyond."
+    }
+  ]
+}

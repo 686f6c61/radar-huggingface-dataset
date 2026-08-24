@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vaghawan/gemma-4-31b-it-dft-lora-last",
+  "slug": "vaghawan-gemma-4-31b-it-dft-lora-last",
+  "author": "vaghawan",
+  "url": "https://huggingface.co/vaghawan/gemma-4-31b-it-dft-lora-last",
+  "created_at": "2026-08-24T08:58:42.000Z",
+  "updated_at": "2026-08-24T10:15:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/gemma-4-31B-it",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-4-31B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29573933316,
+  "storage_human": "29.6 GB",
+  "base_model": "unsloth/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "vaghawan/gemma-4-31b-it-lora-best at main - Hugging Face",
+      "url": "https://huggingface.co/vaghawan/gemma-4-31b-it-lora-best/tree/main",
+      "snippet": "vaghawan / gemma-4-31b-it-lora-best like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "vaghawan/gemma-4-31b-it-lora-last · Hugging Face",
+      "url": "https://huggingface.co/vaghawan/gemma-4-31b-it-lora-last",
+      "snippet": "Instructions to use vaghawan/gemma-4-31b-it-lora-last with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use vaghawan/gemma-4-31b-it-lora-last with PEFT:"
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v1",
+      "snippet": "Abstract We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters. Alongside improved vision and audio encoders for all model sizes, we propose a unified, encoder-free ..."
+    }
+  ]
+}

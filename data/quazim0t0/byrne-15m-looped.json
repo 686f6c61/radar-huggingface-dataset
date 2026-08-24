@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Quazim0t0/Byrne-15M-Looped",
+  "slug": "quazim0t0-byrne-15m-looped",
+  "author": "Quazim0t0",
+  "url": "https://huggingface.co/Quazim0t0/Byrne-15M-Looped",
+  "created_at": "2026-08-24T10:43:25.000Z",
+  "updated_at": "2026-08-24T10:57:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "byrne",
+    "spikewhale",
+    "looped-transformer",
+    "moe",
+    "mla",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "arxiv:2511.20849",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 769101162,
+  "storage_human": "769 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quazim0t0/Byrne-86M · Hugging Face",
+      "url": "https://huggingface.co/Quazim0t0/Byrne-86M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quazim0t0 (Dean Byrne) - Hugging Face",
+      "url": "https://huggingface.co/Quazim0t0/spaces",
+      "snippet": "Joined HuggingFace: 1-20-2025 / DaisyChainAI🌼 / SmallLM&#x27;s / San Francisco / See you tomorrow."
+    },
+    {
+      "title": "Byrne 86M by Quazim0t0 — VRAM 0.4GB, 4K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Quazim0t0%2FByrne-86M,2r6B6nz7qXMUClBj4HwKJe",
+      "snippet": "Byrne 86M is an open-source 86m LLM by Quazim0t0. VRAM 0.4GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Architecture graph for Quazim0t0/Byrne-86M-Base | hfviewer",
+      "url": "https://hfviewer.com/Quazim0t0/Byrne-86M-Base",
+      "snippet": "Quazim0t0/Byrne-86M-Base neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model Quazim0t0/Byrne-86M-Base. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward ..."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

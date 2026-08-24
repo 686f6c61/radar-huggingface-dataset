@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "tpoellabauer/tpoellabauer",
+  "slug": "tpoellabauer-tpoellabauer",
+  "author": "tpoellabauer",
+  "url": "https://huggingface.co/tpoellabauer/tpoellabauer",
+  "created_at": "2026-08-24T08:37:32.000Z",
+  "updated_at": "2026-08-24T08:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2402.05610",
+    "arxiv:2411.13149",
+    "arxiv:2503.03655",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tpoellabauer (Thomas Pöllabauer) - Hugging Face",
+      "url": "https://huggingface.co/tpoellabauer",
+      "snippet": "6D Pose Estimation Viewer • Updated 17 days ago tpoellabauer/YCB-V-DS"
+    },
+    {
+      "title": "GitHub - tpoellabauer/tpoellabauer.github.io",
+      "url": "https://github.com/tpoellabauer/tpoellabauer.github.io",
+      "snippet": "Contribute to tpoellabauer/tpoellabauer.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "tpoellabauer/IGD · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/tpoellabauer/IGD",
+      "snippet": "Models.zip Contains all the models in .ply format for training and evaluation of the results Contains the models_info.json, which has more information about the model&#x27;s geometry ustom_Dataset.zip This is the main training dataset, which contains 90k images for six different scenes Custom_Dataset_Material.zip"
+    },
+    {
+      "title": "Dr. Thomas Pöllabauer-Berkei - AI & Computer Vision Lead",
+      "url": "https://www.thomaspoellabauer.com/",
+      "snippet": "Technical Lead and AI specialist in Computer Vision, Machine Learning and cloud-native AI infrastructure. CV, publications, datasets and projects."
+    },
+    {
+      "title": "tpoellabauer.github.io/index.html at main · tpoellabauer/tpoellabauer ...",
+      "url": "https://github.com/tpoellabauer/tpoellabauer.github.io/blob/main/index.html",
+      "snippet": "History 482 lines (472 loc) · 20.8 KB main tpoellabauer.github.io / index.html Top Code Blame 482 lines (472 loc) · 20.8 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 ..."
+    }
+  ]
+}

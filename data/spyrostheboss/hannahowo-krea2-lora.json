@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spyrostheboss/hannahowo-krea2-lora",
+  "slug": "spyrostheboss-hannahowo-krea2-lora",
+  "author": "spyrostheboss",
+  "url": "https://huggingface.co/spyrostheboss/hannahowo-krea2-lora",
+  "created_at": "2026-08-23T14:53:29.000Z",
+  "updated_at": "2026-08-23T14:54:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "krea",
+    "lora",
+    "text-to-image",
+    "character-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 479509146,
+  "storage_human": "480 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best HannahOwO [Flux LoRa] Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/hannahowo-flux-lora-download",
+      "snippet": "FOR PRIVATE USE ONLY. This resource is intended to reproduce the likeness of a real person. Out of respect for this individual, only work-safe images and non-co"
+    },
+    {
+      "title": "Best Hannah Owo Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/hannah-owo-download",
+      "snippet": "Examples use Realistic Vision V1.2, The Ally&#x27;s Mix III: Revolutions and AbyssOrangeMix2 - SFW.Play with weights. My examples use 0.9I personally love The Ally&#x27;s"
+    },
+    {
+      "title": "Trenddwdw/HannahOwO · Hugging Face",
+      "url": "https://huggingface.co/Trenddwdw/HannahOwO",
+      "snippet": "Diffusers lora template:diffusion-lora Model card Files Files and versions Community Deploy Use this model HannahOwO Trigger words Download model"
+    },
+    {
+      "title": "MarkBW/hannahowo-xl · Hugging Face",
+      "url": "https://huggingface.co/MarkBW/hannahowo-xl",
+      "snippet": "like 0 Text-to-Image Diffusers stable-diffusion lora template:sd-lora Model card Files Community Deploy Use in Diffusers"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=krea2",
+      "snippet": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8. Updated Jul 3 • 104. ostris/Krea2OstrisEdit. Text-to-Image • Updated Jul 9 • 33"
+    }
+  ]
+}

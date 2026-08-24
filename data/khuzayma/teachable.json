@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "khuzayma/teachable",
+  "slug": "khuzayma-teachable",
+  "author": "khuzayma",
+  "url": "https://huggingface.co/khuzayma/teachable",
+  "created_at": "2026-08-23T14:43:16.000Z",
+  "updated_at": "2026-08-23T14:49:29.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5896800,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com/",
+      "snippet": "Train a computer to recognize your own images, sounds, & poses. A fast, easy way to create machine learning models for your sites, apps, and more - no expertise or coding required."
+    },
+    {
+      "title": "Khuzayma Mushtaq - CS @ UMass Amherst | Building AI Systems & Full ...",
+      "url": "https://www.linkedin.com/in/khuzayma-mushtaq",
+      "snippet": "Drive responsible-AI practices across the team, validating model outputs against independent Tax Policy Center benchmarks and coordinating weekly deliverables toward a national industry symposium."
+    },
+    {
+      "title": "#ai4allignite | Khuzayma Mushtaq | 24 comments - LinkedIn",
+      "url": "https://www.linkedin.com/posts/khuzayma-mushtaq_ai4allignite-activity-7441991522029309952-d8cm",
+      "snippet": "I&#x27;m excited to announce I have been accepted into the AI4ALL Ignite Accelerator! Over the past year, I&#x27;ve focused on building AI systems through hands-on projects, from training machine learning ..."
+    },
+    {
+      "title": "Create an AI Model in Minutes WITHOUT Coding! | Teachable ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=PLS_5Ne0H8A",
+      "snippet": "Learn how to create an AI model in just minutes without writing a single line of code! In this beginner-friendly tutorial, we&#x27;ll explore Google&#x27;s Teachable Machines—a powerful tool that lets ..."
+    },
+    {
+      "title": "Create Educational AI Models with the Teachable Machine Tool",
+      "url": "https://observatory.tec.mx/edu-news/how-to-create-educational-ai-models-with-the-teachable-machine-tool/",
+      "snippet": "How to Create Educational AI Models with the Teachable Machine Tool? Learn about Teachable Machine, an AI tool that you can adapt for various educational applications in the classroom. Students can design, train, and evaluate an artificial intelligence model that can be applied to solve a problem. In this article, you&#x27;ll find practical examples."
+    }
+  ]
+}

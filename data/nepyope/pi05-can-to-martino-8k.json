@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nepyope/pi05-can-to-martino-8k",
+  "slug": "nepyope-pi05-can-to-martino-8k",
+  "author": "nepyope",
+  "url": "https://huggingface.co/nepyope/pi05-can-to-martino-8k",
+  "created_at": "2026-08-24T09:33:35.000Z",
+  "updated_at": "2026-08-24T09:34:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "unitree_g1",
+    "grippers",
+    "whole-body",
+    "dataset:nepyope/can_to_martino",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143474482,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16608435540,
+  "storage_human": "16.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nepyope (Martino Russi) - Hugging Face",
+      "url": "https://huggingface.co/nepyope/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "nepyope (Martino Russi) · GitHub",
+      "url": "https://github.com/nepyope/",
+      "snippet": "A simple hebbian, directed neural-network, unsupervised agent architecture tested on a 1d environment. Jupyter Notebook"
+    },
+    {
+      "title": "nepyope (Martino Russi) - Hugging Face",
+      "url": "https://huggingface.co/nepyope/activity/all",
+      "snippet": "nepyope/act_hopejr_test_80k Robotics • 0.1B • Updated Apr 13 • 6 updated a model 3 months ago"
+    },
+    {
+      "title": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com/train",
+      "snippet": "Train a computer to recognize your own images, sounds, & poses. A fast, easy way to create machine learning models for your sites, apps, and more - no expertise or coding required."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

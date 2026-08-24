@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/gemma2-9b-a1-badmed-seed0",
+  "slug": "artht-gemma2-9b-a1-badmed-seed0",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/gemma2-9b-a1-badmed-seed0",
+  "created_at": "2026-08-23T21:44:44.000Z",
+  "updated_at": "2026-08-23T22:02:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690990520,
+  "storage_human": "691 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Code: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code or understand code-related questions. Mathematics: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+    },
+    {
+      "title": "lemon07r/Gemma-2-Ataraxy-9B · Hugging Face",
+      "url": "https://huggingface.co/lemon07r/Gemma-2-Ataraxy-9B",
+      "snippet": "This makes this one of the smartest Gemma 2 9B finetunes/merges, only a few score slightly higher. This model scores above SimPO and SPPO iter2/3 by a whole point on average. Preface and Rambling My favorite Gemma 2 9B models are the SPPO iter3 and SimPO finetunes, but I felt the slerp merge between the two (nephilim v3) wasn&#x27;t as good for some reason. The Gutenberg Gemma 2 finetune by ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "gemma2:9b - Ollama",
+      "url": "https://ollama.com/library/gemma2:9b",
+      "snippet": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PreDoctor/Qwen3.8-27B-NVFP4-W4A16-PreTensor",
+  "slug": "predoctor-qwen3-8-27b-nvfp4-w4a16-pretensor",
+  "author": "PreDoctor",
+  "url": "https://huggingface.co/PreDoctor/Qwen3.8-27B-NVFP4-W4A16-PreTensor",
+  "created_at": "2026-08-18T10:01:04.000Z",
+  "updated_at": "2026-08-24T11:03:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "pretensor",
+  "languages": [],
+  "tags": [
+    "pretensor",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "multimodal",
+    "nvfp4",
+    "w4a16",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 316,
+  "trending_score": 0,
+  "parameters": 16147123937,
+  "parameters_human": "16.15B",
+  "storage_bytes": 34855645592,
+  "storage_human": "34.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27B NVFP4 W4A16 WebGPU by PreDoctor - LLM Explorer",
+      "url": "https://llm-explorer.com/model/PreDoctor%2FQwen3.8-27B-NVFP4-W4A16-WebGPU,3ph4dFzoq1E5QQep4YZQOP",
+      "snippet": "Qwen3.8 27B NVFP4 W4A16 WebGPU is an open-source 27b LLM by PreDoctor. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

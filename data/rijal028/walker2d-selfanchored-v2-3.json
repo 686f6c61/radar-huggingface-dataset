@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rijal028/walker2d-selfanchored-v2.3",
+  "slug": "rijal028-walker2d-selfanchored-v2-3",
+  "author": "rijal028",
+  "url": "https://huggingface.co/rijal028/walker2d-selfanchored-v2.3",
+  "created_at": "2026-08-23T14:40:26.000Z",
+  "updated_at": "2026-08-23T14:40:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "mujoco",
+    "walker2d",
+    "self-anchoring",
+    "continual-learning",
+    "zero-forgetting",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 968469,
+  "storage_human": "968469 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rijal028/walker2d-reflective-v1 · Hugging Face",
+      "url": "https://huggingface.co/rijal028/walker2d-reflective-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rijal s rijal028 - GitHub",
+      "url": "https://github.com/rijal028/",
+      "snippet": "Conceptualist & Systems Thinker. Architecting novel solutions for complex cybersecurity and AI safety challenges - rijal028"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=rijal028%2Ffinetuninggg",
+      "snippet": "Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech 6B 12B 32B 128B PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai ..."
+    },
+    {
+      "title": "Walker2D - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/walker2d/",
+      "snippet": "The Walker-v5 model is updated to have the same friction for both feet (set to 1.9). This causes the Walker2d&#x27;s the right foot to slide less on the surface and therefore require more force to move (related GitHub issue)."
+    },
+    {
+      "title": "Walker-2D/README.md at master · PawelMlyniec/Walker-2D",
+      "url": "https://github.com/PawelMlyniec/Walker-2D/blob/master/README.md",
+      "snippet": "Contribute to PawelMlyniec/Walker-2D development by creating an account on GitHub."
+    }
+  ]
+}

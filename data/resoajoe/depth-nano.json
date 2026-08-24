@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "resoajoe/depth-nano",
+  "slug": "resoajoe-depth-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/depth-nano",
+  "created_at": "2026-08-23T05:57:09.000Z",
+  "updated_at": "2026-08-23T05:57:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "tiny-model",
+    "video-generation",
+    "quality-control",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391376,
+  "storage_human": "391376 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe/depth-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/depth-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe/datasets",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "AnyDepth: Depth Estimation Made Easy - GitHub",
+      "url": "https://github.com/AIGeeksGroup/AnyDepth",
+      "snippet": "AnyDepth: Depth Estimation Made Easy. Contribute to AIGeeksGroup/AnyDepth development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - luxonis/depthai-model-zoo: DepthAI Model Zoo is a collection ...",
+      "url": "https://github.com/luxonis/depthai-model-zoo",
+      "snippet": "DepthAI Model Zoo is a collection of open-source neural network models and datasets created and maintained by DepthAI developers and the community. We try to provide already converted latest state-of-the-art models ready for use with DepthAI and our OAK cameras."
+    },
+    {
+      "title": "Vision Banana: Google DeepMind&#x27;s Generalist Model",
+      "url": "https://blog.roboflow.com/vision-banana/",
+      "snippet": "Google DeepMind&#x27;s Vision Banana applies lightweight instruction-tuning to the Nano Banana Pro image generation model to produce a generalist computer vision model that handles semantic segmentation, instance segmentation, monocular metric depth estimation, and surface normal estimation in a single architecture. It outperforms specialist models including SAM 3 and Depth Anything 3 on their own ..."
+    }
+  ]
+}

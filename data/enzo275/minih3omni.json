@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Enzo275/MiniH3Omni",
+  "slug": "enzo275-minih3omni",
+  "author": "Enzo275",
+  "url": "https://huggingface.co/Enzo275/MiniH3Omni",
+  "created_at": "2026-08-24T13:58:24.000Z",
+  "updated_at": "2026-08-24T13:59:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "pt",
+    "zh",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "diffusers",
+    "multimodal",
+    "image-generation",
+    "video-generation",
+    "audio-generation",
+    "diffusion",
+    "text-to-image",
+    "image-to-video",
+    "omni",
+    "en",
+    "pt",
+    "zh",
+    "ja",
+    "ko",
+    "arxiv:2506.18871",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17619942508,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Omni — Unified Video, Image & Audio Model",
+      "url": "https://geminiomni.studio/",
+      "snippet": "AI Video & Image Generator — Powered by Gemini Omni Gemini Omni is Google&#x27;s native multimodal video generation model. Generate high-fidelity video from text or images, with synchronized audio and 1080p output."
+    },
+    {
+      "title": "Gemini Omni",
+      "url": "https://gemini-omni.dev/",
+      "snippet": "Gemini Omni is Google&#x27;s multimodal video generation and editing model released at Google I/O 2026. Unlike traditional AI video tools, Gemini Omni lets you create and edit videos through natural chat conversation — describe changes like \"change the background to night\" or \"make the character dance\" and Gemini Omni handles the rest."
+    },
+    {
+      "title": "Enzo275 (Enzo Luis Dev) - Hugging Face",
+      "url": "https://huggingface.co/Enzo275",
+      "snippet": "User profile of Enzo Luis Dev on Hugging Face"
+    },
+    {
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
+      "snippet": "With fast multimodal generation, realistic image-to-video creation, and reliable voice consistency, our team can produce and test more high-performing campaigns at scale.\" Yunus Emre, CAIO, AI Lab (HubX) \"For text-to-video fidelity, Gemini Omni Flash out-performed other models, delivering production-ready quality for our async workflows."
+    },
+    {
+      "title": "Gemini Omni — Google&#x27;s AI Video Model with Native Audio",
+      "url": "https://geminiomniai.net/",
+      "snippet": "Gemini Omni is Google&#x27;s next-gen AI video model. Generate cinematic clips with native spatial audio and chat-based editing."
+    }
+  ]
+}

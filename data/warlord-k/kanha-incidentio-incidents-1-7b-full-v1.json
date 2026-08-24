@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Warlord-K/kanha-incidentio-incidents-1.7b-full-v1",
+  "slug": "warlord-k-kanha-incidentio-incidents-1-7b-full-v1",
+  "author": "Warlord-K",
+  "url": "https://huggingface.co/Warlord-K/kanha-incidentio-incidents-1.7b-full-v1",
+  "created_at": "2026-08-24T08:49:02.000Z",
+  "updated_at": "2026-08-24T08:49:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "kanha",
+    "full",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-v1 · Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "GitHub - Warlord-K/kanha-js: SDK for using Kanha.ai&#x27;s local chatbots",
+      "url": "https://github.com/Warlord-K/kanha-js",
+      "snippet": "SDK for using Kanha.ai&#x27;s local chatbots. Contribute to Warlord-K/kanha-js development by creating an account on GitHub."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects ... - Futurism",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    },
+    {
+      "title": "AI Incidents — Dated, Sourced AI Failure Catalog",
+      "url": "https://aiincidents.org/",
+      "snippet": "A catalog of AI/ML incidents, model failures, and confirmed adversarial-use cases — each entry dated, linked to a primary source, and tagged for analysts."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "migu-elnmn/paper_016929123_text_image_retrieval",
+  "slug": "migu-elnmn-paper_016929123_text_image_retrieval",
+  "author": "migu-elnmn",
+  "url": "https://huggingface.co/migu-elnmn/paper_016929123_text_image_retrieval",
+  "created_at": "2026-08-23T07:48:20.000Z",
+  "updated_at": "2026-08-23T07:48:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "first-person-plural",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "narrative-progressive",
+    "numeric-apa",
+    "text-image-retrieval",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imagen: Text-to-Image Diffusion Models",
+      "url": "https://imagen.research.google/",
+      "snippet": "Imagen is an AI system that creates photorealistic images from input text Visualization of Imagen. Imagen uses a large frozen T5-XXL encoder to encode the input text into embeddings. A conditional diffusion model maps the text embedding into a 64×64 image."
+    },
+    {
+      "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language ... - NIPS",
+      "url": "https://papers.nips.cc/paper_files/paper/2022/hash/ec795aeadae0b7d230fa35cbaf04c041-Abstract-Conference.html",
+      "snippet": "Abstract We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation."
+    },
+    {
+      "title": "Imagen — Google DeepMind",
+      "url": "https://deepmind.google/models/imagen/",
+      "snippet": "Imagen 4 is our best text-to-image model yet, with photorealistic images, near real-time speed, and sharper clarity — to bring your imagination to life."
+    },
+    {
+      "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language ...",
+      "url": "https://arxivlens.com/paperview/details/photorealistic-text-to-image-diffusion-models-with-deep-language-understanding-2118-1702022",
+      "snippet": "AI Quick Summary The paper introduces Imagen, a text-to-image diffusion model that leverages large language models to achieve photorealistic images with high fidelity, outperforming other methods on benchmarks like DrawBench and COCO. Imagen&#x27;s success highlights the effectiveness of language models in text encoding for image synthesis."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    }
+  ]
+}

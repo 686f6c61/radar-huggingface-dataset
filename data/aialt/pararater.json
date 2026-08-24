@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aialt/pararater",
+  "slug": "aialt-pararater",
+  "author": "aialt",
+  "url": "https://huggingface.co/aialt/pararater",
+  "created_at": "2026-08-24T01:57:59.000Z",
+  "updated_at": "2026-08-24T01:58:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19076870361,
+  "storage_human": "19.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pararater (pararater) - Hugging Face",
+      "url": "https://huggingface.co/pararater",
+      "snippet": "None yet. Organizations. None yet. models 1. pararater/raters. Updated Oct 13, 2025. datasets 1. pararater/paracore. Viewer • Updated Oct 13, 2025 • 43.9M • 117"
+    },
+    {
+      "title": "aialt (Agentic and Language Techniques Research) - Hugging Face",
+      "url": "https://huggingface.co/aialt/models",
+      "snippet": "Org profile for Agentic and Language Techniques Research on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    },
+    {
+      "title": "Top AI Models List - Geekflare",
+      "url": "https://geekflare.com/blog/top-ai-models-list/",
+      "snippet": "Find the top AI models you can use today for text generation, images, summarization, speech, chatbot, documents parser, query and more."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

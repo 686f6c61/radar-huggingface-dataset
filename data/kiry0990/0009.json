@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kiry0990/0009",
+  "slug": "kiry0990-0009",
+  "author": "Kiry0990",
+  "url": "https://huggingface.co/Kiry0990/0009",
+  "created_at": "2026-08-24T15:41:47.000Z",
+  "updated_at": "2026-08-24T15:41:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Kirvanu — Unrestricted AI Creative Studio for Images & Video",
+      "url": "https://kirvanu.com/",
+      "snippet": "Kirvanu is the AI creative studio for unrestricted image and video generation. Create photorealistic 4K models, fashion shoots, product photos, and cinematic video ads in seconds."
+    },
+    {
+      "title": "[IL] Kirito / Kirigaya Kazuto | Tensor.Art",
+      "url": "https://tensor.art/models/889361851442291210",
+      "snippet": "Download [IL] Kirito / Kirigaya Kazuto | Sword Art Online - free LORA Illustrious AI model on TENSOR. KAZUTO KIRIGAYA, KIRITO, EXCLUSIVE. By Kira"
+    }
+  ]
+}

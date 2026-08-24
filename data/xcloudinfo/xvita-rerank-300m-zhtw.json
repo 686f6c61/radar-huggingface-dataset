@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "xCloudinfo/xVITA-Rerank-300M-zhTW",
+  "slug": "xcloudinfo-xvita-rerank-300m-zhtw",
+  "author": "xCloudinfo",
+  "url": "https://huggingface.co/xCloudinfo/xVITA-Rerank-300M-zhTW",
+  "created_at": "2026-08-23T04:25:57.000Z",
+  "updated_at": "2026-08-23T04:27:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "reranker",
+    "cross-encoder",
+    "text-ranking",
+    "retrieval",
+    "rag",
+    "traditional-chinese",
+    "zh-tw",
+    "zh",
+    "multilingual",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307531009,
+  "parameters_human": "307.5M",
+  "storage_bytes": 1264501789,
+  "storage_human": "1.3 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-23T17:00:34.879Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xCloudinfo/xVITA-Embed-300M-zhTW · Hugging Face",
+      "url": "https://huggingface.co/xCloudinfo/xVITA-Embed-300M-zhTW",
+      "snippet": "xCloudinfo / xVITA-Embed-300M-zhTW like 1 Follow xCloudinfo Corp.Limited 5 Sentence Similarity sentence-transformers Safetensors Chinese gemma3_text feature-extraction embedding retrieval rag traditional-chinese zh-tw taiwan gemma3 text-embeddings-inference License:gemma Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "xCloudinfo (xCloudinfo Corp.Limited) - Hugging Face",
+      "url": "https://huggingface.co/organizations/xCloudinfo/activity/all",
+      "snippet": "xCloudinfo/Whisper-Large-v3-Turbo-xVITA-zhTW Automatic Speech Recognition • 0.8B•Updated 1 day ago• 1.64k guessleej published a model1 day ago"
+    },
+    {
+      "title": "Featured models of Foundry model catalog - Azure Machine Learning",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "snippet": "To perform inferencing with the models, some models such as Nixtla&#x27;s TimeGEN-1 and Cohere rerank require you to use custom APIs from the model providers. Others support inferencing by using the Azure AI model inference. You can find more details about individual models by reviewing their model cards in the model catalog."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Cohere-rerank-v3-english",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    }
+  ]
+}

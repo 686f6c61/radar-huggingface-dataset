@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SquashMenthol/ModelTest",
+  "slug": "squashmenthol-modeltest",
+  "author": "SquashMenthol",
+  "url": "https://huggingface.co/SquashMenthol/ModelTest",
+  "created_at": "2026-08-23T15:53:56.000Z",
+  "updated_at": "2026-08-23T15:53:56.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Managing artificial intelligence servers - Squash Documentation",
+      "url": "https://tm-en.doc.squashtest.com/v8/admin-guide/manage-servers/managing-ai-server.html",
+      "snippet": "Add, delete an artificial intelligence server From the Artificial intelligence servers table, accessible by clicking on the icon, you can add or delete one or several servers. Deleting a server linked to a project removes the link between the project and the AI server. When creating a server, the Name and URL fields must be filled in. The URL must correspond to the URL of the artificial ..."
+    },
+    {
+      "title": "Configure AI-driven test case generation - SquashTM Documentation",
+      "url": "https://tm-en.doc.squashtest.com/v15/howto/ai-test-generation/index.html",
+      "snippet": "Why configure generative AI in SquashTM? Configuring generative AI lets your testers benefit from the following capabilities, directly from any requirement: automatically generate classic test cases (with test steps, prerequisites, importance, reference, and datasets); enrich generation with requirements, test cases, and attached documents; keep editorial control: every suggestion must be ..."
+    },
+    {
+      "title": "GitHub Pages - squashai",
+      "url": "https://squashai.github.io/",
+      "snippet": "Datasets Explore existing datasets for training AI models and create new ones by labeling players, actions and positions in professional games."
+    },
+    {
+      "title": "Delivery SquashTM 13.0, AI-powered test case generation",
+      "url": "https://www.squashtm.com/en/post/delivery-squashtm-13-00-ai-powered-test-case-generation",
+      "snippet": "With version 13.0, AI-powered test case generation, available with the SquashTM Ultimate offering, moves out of experimental status to become a stable feature fully integrated into SquashTM."
+    },
+    {
+      "title": "squash-ai · PyPI",
+      "url": "https://pypi.org/project/squash-ai/",
+      "snippet": "Squash violations, not velocity. Automated EU AI Act compliance for ML teams — CI/CD-native, open-core, developer-first."
+    }
+  ]
+}

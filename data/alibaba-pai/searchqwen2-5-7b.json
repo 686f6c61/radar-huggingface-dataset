@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "alibaba-pai/SearchQwen2.5-7B",
+  "slug": "alibaba-pai-searchqwen2-5-7b",
+  "author": "alibaba-pai",
+  "url": "https://huggingface.co/alibaba-pai/SearchQwen2.5-7B",
+  "created_at": "2026-08-24T09:44:16.000Z",
+  "updated_at": "2026-08-24T09:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "search-agent",
+    "tool-use",
+    "function-calling",
+    "react",
+    "deep-search",
+    "qwen",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693744,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba®- Site officiel - Site officiel : Alibaba.com",
+      "url": "https://duckduckgo.com/y.js?ad_domain=alibaba.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=NjEPiwDJ4vk83jz_2ul_T73c5j5LYF4JEh4ssjbXuG7kG6JcGYVEDRr9_CmjxfoujBsF1PWGt8xLats6bgoVOzos%2DemlHmAuDK%2DtBcig2VraFXI6wWQ2tIJ1mZ7zPUglj9afBx0kHmLfzSzpQHqwBrzJ7Tliptfo%2DHgq7pBQnAQ.N6t54JpiDgr5QRI1oh5eyA&rut=6c9a2cf4c296e0c9c107bdba2fa4891d021d23de1d6f0914dd4ec22e7937ef26&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8AOSA2Y5pcTyXbwrPTb4d4zVUCUyhKPPn9COtyUV9Y8Lmj2RqRHnGHRkDsaU2M1HQwZ0PhkA98HkyOBiPcno3bzu0G9%2DONUwQjx9HaQxje7qiRpCDv1xOsaR8VkBU1llvIx8xNWYklthjB92iFenZbeQeuq_oQhxpyv17aYAJ%2DiwKk17r6z3fisRRClgfGuxU1FblLPlc6RE2ei2DQ1Qh8i1U2AE%26u%3DaHR0cHMlM2ElMmYlMmZmcmVuY2guYWxpYmFiYS5jb20lMmYlM2ZzcmMlM2RzZW1fYmluZyUyNmZpZWxkJTNkVUclMjZmcm9tJTNkc2VtX2JpbmclMjZjbXBnbiUzZDQzMTMxNzUwNyUyNmFkZ3JwJTNkMTMxMDYxOTE2NzkzMzQzOCUyNnRndCUzZGt3ZC04MTkxNDAyNjUwMDAyMSUzYWxvYy02NiUyNkt3ZElEJTNkODE5MTQwMjY1MDAwMjElMjZtdGNodHlwJTNkcCUyNmJkbXRjaHR5cCslM2RicCUyNm50d3JrJTNkcyUyNmRldmljZSUzZGMlMjZjcmVhdGl2ZSUzZDgxOTEzNzYzODk1NDM2JTI2cDElM2RkZWZhdWx0JTI2cDIlM2RkZWZhdWx0JTI2cDMlM2RkZWZhdWx0JTI2UXVlcnklM2RhbGliYWJhLXBhaSUyNTJGU2VhcmNoUXdlbjIuNS03QiUyNTIwbW9kZWwlMjUyMEFJJTI2bXNjbGtpZCUzZDJmZDE5MzJiZGYyYTEzMjlhNGJiZjlhN2NhN2UwYjQ2%26rlid%3D2fd1932bdf2a1329a4bbf9a7ca7e0b46&vqd=4-150119273386500063358655780332726869654&iurl=%7B1%7DIG%3DE6B59983988147A5AC7423F4641D6672%26CID%3D2F2FD00583266CAB0F75C7BA82286DF8%26ID%3DDevEx%2C5037.1",
+      "snippet": "Contactez les fournisseurs vérifiés en ligne. Des millions de produits aux prix d&#x27;usine. Un Sourçage Direct en Usine. De faibles MOQ, OEM/ODM. Sourcez maintenant !"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Foundation for AI Innovation Accelerate deployment and scaling of Qwen, Wan, and more leading models on one secure Alibaba Cloud platform"
+    },
+    {
+      "title": "Alibaba Releases Qwen2.5-Omni-7B: An End-to-end Multimodal AI Model",
+      "url": "https://www.alibabagroup.com/en-US/document-1843362291857227776",
+      "snippet": "Alibaba has launched Qwen2.5-Omni-7B, a unified end-to-end multimodal model in the Qwen series. Uniquely designed for comprehensive multimodal perception, it can process diverse inputs, including text, images, audio, and videos, while generating real-time text and natural speech responses."
+    },
+    {
+      "title": "Qwen - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1",
+      "snippet": "ModelScope, developed by Alibaba, is an open-source platform offering diverse AI models (NLP, CV, multimodal, etc.) and tools to streamline model development, deployment, and sharing."
+    },
+    {
+      "title": "alibaba-pai/Qwen2-7B-Instruct-Exp · Hugging Face",
+      "url": "https://huggingface.co/alibaba-pai/Qwen2-7B-Instruct-Exp",
+      "snippet": "alibaba-pai / Qwen2-7B-Instruct-Exp like 2 Follow Alibaba-PAI 4.17k Text Generation Transformers Safetensors qwen2 conversational text-generation-inference arxiv:2412.04871 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

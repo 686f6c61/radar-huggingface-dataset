@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anonboltzinterp/Boltz1-SAEs-L2-rec1",
+  "slug": "anonboltzinterp-boltz1-saes-l2-rec1",
+  "author": "anonboltzinterp",
+  "url": "https://huggingface.co/anonboltzinterp/Boltz1-SAEs-L2-rec1",
+  "created_at": "2026-08-23T14:17:33.000Z",
+  "updated_at": "2026-08-23T14:17:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mechanistic-interpretability",
+    "biology",
+    "sparse-autoencoders",
+    "protein-structure",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1419536675,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "evolve-away/Boltz1-SAEs-L2-rec1 · Hugging Face",
+      "url": "https://huggingface.co/evolve-away/Boltz1-SAEs-L2-rec1",
+      "snippet": "📄 Model Card for Boltz-1 SAEs: Pairformer Trunk (Recycle 1) This repository contains the trained TopK Sparse Autoencoders (SAEs) for the Pairformer Trunk evaluated at Recycle Iteration 1 as featured in the preprint \"Where a folding model keeps biology: probing and sparse-autoencoder analysis of the Boltz-1 trunk and diffusion module\"."
+    },
+    {
+      "title": "GitHub - jwohlwend/boltz: Official repository for the Boltz ...",
+      "url": "https://github.com/jwohlwend/boltz",
+      "snippet": "All the code and weights are provided under MIT license, making them freely available for both academic and commercial uses. For more information about the model, see the Boltz-1 and Boltz-2 technical reports. To discuss updates, tools and applications join our Slack channel."
+    },
+    {
+      "title": "GitHub - Usertaura/boltzProject: Official repository for the Boltz-1 ...",
+      "url": "https://github.com/Usertaura/boltzProject",
+      "snippet": "To encourage reproducibility and facilitate comparison with other models, we provide the evaluation scripts and predictions for Boltz-1, Boltz-1x, Chai-1 and AlphaFold3 on our test benchmark dataset as well as CASP15. These datasets are created to contain biomolecules different from the training data and to benchmark the performance of these models we run them with the same input MSAs and same ..."
+    },
+    {
+      "title": "Boltz-SAE&#x27;s - a evolve-away Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/evolve-away/boltz-saes",
+      "snippet": "A collection of SAE&#x27;s trained on Boltz Pairformer and Diffusion modules"
+    },
+    {
+      "title": "Boltz - Build Better Molecules with AI",
+      "url": "https://boltz.bio/",
+      "snippet": "Build better molecules with frontier AI models. With AI, we help every scientist reshape biology."
+    }
+  ]
+}

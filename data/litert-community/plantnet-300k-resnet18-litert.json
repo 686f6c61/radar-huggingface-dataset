@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "litert-community/PlantNet-300K-ResNet18-LiteRT",
+  "slug": "litert-community-plantnet-300k-resnet18-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/PlantNet-300K-ResNet18-LiteRT",
+  "created_at": "2026-07-06T14:00:41.000Z",
+  "updated_at": "2026-08-23T23:04:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "gpu",
+    "fine-grained",
+    "plant-identification",
+    "plantnet",
+    "resnet18",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47235030,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/PlantNet-300K-ResNet18-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/PlantNet-300K-ResNet18-LiteRT",
+      "snippet": "Instructions to use litert-community/PlantNet-300K-ResNet18-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "litert-community/PlantNet-300K-ResNet18-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/PlantNet-300K-ResNet18-LiteRT/tree/main",
+      "snippet": "Instructions to use litert-community/PlantNet-300K-ResNet18-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LiteRT-Models/plantnet at main · john-rocky/LiteRT-Models",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/plantnet",
+      "snippet": "PlantNet-300K — Fine-grained plant species identification (LiteRT GPU) Identify 1081 plant species from a photo, fully on the LiteRT CompiledModel GPU. A PlantNet-300K (NeurIPS 2021) ResNet18 — the first fine-grained classifier in this zoo. ~16 ms/frame on a Pixel 8a."
+    },
+    {
+      "title": "GitHub - plantnet/PlantNet-300K: [NeurIPS2021] A plant image dataset ...",
+      "url": "https://github.com/plantnet/PlantNet-300K",
+      "snippet": "In order to train a model on the PlantNet-300K dataset, you first have to download the dataset on Zenodo. You can find detailed information about the dataset as well as extensive experiments in the NeurIPS 2021 paper. If you use this work for your research, please cite the paper: @inproceedings ..."
+    },
+    {
+      "title": "LiteRT for Web with LiteRT.js | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/litert/web",
+      "snippet": "LiteRT.js is Google&#x27;s high performance WebAI runtime, targeting production Web applications. It is a continuation of the LiteRT stack, ensuring multi-framework support and unifying our core runtime across all platforms."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "adi696969",
   "url": "https://huggingface.co/adi696969/os-agent-v2-gguf",
   "created_at": "2026-08-22T19:49:16.000Z",
-  "updated_at": "2026-08-22T19:49:47.000Z",
+  "updated_at": "2026-08-22T20:43:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,13 +20,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 1929902560,
-  "storage_human": "1.9 GB",
+  "storage_bytes": 3859805120,
+  "storage_human": "3.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

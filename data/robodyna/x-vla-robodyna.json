@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "RoboDyna/X-VLA-RoboDyna",
+  "slug": "robodyna-x-vla-robodyna",
+  "author": "RoboDyna",
+  "url": "https://huggingface.co/RoboDyna/X-VLA-RoboDyna",
+  "created_at": "2026-08-23T14:00:37.000Z",
+  "updated_at": "2026-08-23T14:19:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xvla",
+    "feature-extraction",
+    "robotics",
+    "vla",
+    "x-vla",
+    "manipulation",
+    "dual-arm",
+    "robotwin",
+    "sapien",
+    "custom_code",
+    "dataset:RoboDyna/robodyna-benchmark-v2",
+    "arxiv:2510.10274",
+    "base_model:2toINF/X-VLA-Pt",
+    "base_model:finetune:2toINF/X-VLA-Pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879738545,
+  "parameters_human": "879.7M",
+  "storage_bytes": 3519068172,
+  "storage_human": "3.5 GB",
+  "base_model": "2toINF/X-VLA-Pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X-VLA: The First Soft-Prompted Robot Foundation Model for Any Robot ...",
+      "url": "https://huggingface.co/docs/lerobot/v0.5.0/en/xvla",
+      "snippet": "X-VLA shows that generalist robot intelligence does not require increasingly complex architectures, only the right way to absorb heterogeneity. Soft Prompts offer a simple, scalable mechanism for unifying diverse robotic data, paving the way toward adaptable, cross-embodiment robot foundation models."
+    },
+    {
+      "title": "X-VLA - thu-air-dream.github.io",
+      "url": "https://thu-air-dream.github.io/X-VLA/",
+      "snippet": "Model Architecture Our design introduces a streamlined encoding pipeline that integrates soft prompts and explicitly disentangles high- and low-dimensional input streams. This architecture yields improved training stability and consistently stronger validation performance. Detailed architecture of our X-VLA model."
+    },
+    {
+      "title": "X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision ...",
+      "url": "https://arxiv.org/pdf/2510.10274",
+      "snippet": "X-VLA-0.9Bisadaptedtoadeployablepolicyforatargetdomain. A newsetofsoftpromptsisintroducedandoptimizedtoencodethehardwareconfigurationofthenovel domain,whilethepretrainedbackboneremainsfrozen.Withthesepromptsinplace,thepolicyisthen effectivelyspecializedtothenewembodimentthroughfinetuning."
+    },
+    {
+      "title": "GitHub - VuLamAnh151203/X-VLA",
+      "url": "https://github.com/VuLamAnh151203/X-VLA",
+      "snippet": "The X-VLA-Pt model is the foundation checkpoint, trained across multiple robot domains. Each embodiment is fine-tuned for its respective environment while retaining cross-embodiment alignment."
+    },
+    {
+      "title": "X-VLA Model Family | RoboAtlas",
+      "url": "https://www.roboatlas.ai/en-US/models/x-vla",
+      "snippet": "Soft-prompted cross-embodiment VLA family."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xocialize/SenseNova-U1.5-8B-MoT-LoRAs",
+  "slug": "xocialize-sensenova-u1-5-8b-mot-loras",
+  "author": "xocialize",
+  "url": "https://huggingface.co/xocialize/SenseNova-U1.5-8B-MoT-LoRAs",
+  "created_at": "2026-08-24T04:13:54.000Z",
+  "updated_at": "2026-08-24T04:13:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "distilled",
+    "mlx-swift",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:adapter:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814867236,
+  "storage_human": "815 MB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sensenova/SenseNova-U1.5-8B-MoT-LoRAs · Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT · Models",
+      "url": "https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT",
+      "snippet": "SenseNova-U1.5-8B-MoT is our latest native unified multimodal checkpoint for more accurate, consistent, reliable, and aesthetically compelling visual creation. Built on NEO-unify, it strengthens the patchify layers, data quality and distribution, task formulation, prompt enhancement, and post-training pipeline."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "[2605.12500] SenseNova-U1: Unifying Multimodal Understanding and ...",
+      "url": "https://arxiv.org/abs/2605.12500",
+      "snippet": "Hence, we introduce SenseNova-U1, a native unified multimodal paradigm built upon NEO-unify, in which understanding and generation evolve as synergistic views of a single underlying process."
+    }
+  ]
+}

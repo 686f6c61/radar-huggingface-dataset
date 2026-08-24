@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Vbanerjeesem/paper_026576566_document_ai",
+  "slug": "vbanerjeesem-paper_026576566_document_ai",
+  "author": "Vbanerjeesem",
+  "url": "https://huggingface.co/Vbanerjeesem/paper_026576566_document_ai",
+  "created_at": "2026-08-23T08:01:11.000Z",
+  "updated_at": "2026-08-23T08:01:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "author-year",
+    "concise-analytical",
+    "critical",
+    "document-ai",
+    "graphic-visual",
+    "html",
+    "impersonal",
+    "medium-balanced",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Document AI - Google Cloud",
+      "url": "https://cloud.google.com/document-ai",
+      "snippet": "The Document AI solutions suite includes pretrained models for document processing, Workbench for custom models, and Warehouse to search and store."
+    },
+    {
+      "title": "AI Detector & Checker for Text, PDFs | Fast & accurate - SciSpace",
+      "url": "https://scispace.com/ai-detector",
+      "snippet": "SciSpace AI Detector instantly spots ChatGPT or GPT-4 text, rates originality, and explains risky lines - helping researchers keep assignments and papers authentic."
+    },
+    {
+      "title": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI",
+      "url": "https://arxiv.org/abs/2607.11562",
+      "snippet": "Mainstream visual encoders are pretrained on natural images and cannot be effectively applied to document images without document-oriented adaptation, as dense text and fine-grained character strokes demand character-level visual perception. We present MonkeyOCRv2, a visual-text pretrained model for document AI. First, we construct MonkeyDoc v2, to our knowledge the largest document-image ..."
+    }
+  ]
+}

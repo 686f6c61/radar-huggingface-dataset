@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Resisttchi/Tamagotchi_RVC_Models_TITANPretrained",
+  "slug": "resisttchi-tamagotchi_rvc_models_titanpretrained",
+  "author": "Resisttchi",
+  "url": "https://huggingface.co/Resisttchi/Tamagotchi_RVC_Models_TITANPretrained",
+  "created_at": "2023-11-03T13:51:34.000Z",
+  "updated_at": "2026-08-23T11:11:50.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9779799755,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resisttchi/Tamagotchi_RVC_Models_TITANPretrained · Hugging Face",
+      "url": "https://huggingface.co/Resisttchi/Tamagotchi_RVC_Models_TITANPretrained",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Resisttchi/Tamagotchi_RVC_Models_TITANPretrained at main",
+      "url": "https://huggingface.co/Resisttchi/Tamagotchi_RVC_Models_TITANPretrained/tree/main",
+      "snippet": "main Tamagotchi_RVC_Models_TITANPretrained 2 contributors History: 68 commits Resisttchi Upload Flowertchi (Violetchi) (TITANPretrainedRMVPE300Epochs).zip 20ba959 verified 2 days ago .gitattributes"
+    },
+    {
+      "title": "Mametchi - Rie Kugimiya (Tamagotchi!) (Japanese) [RVC v2] [RMVPE ...",
+      "url": "https://voice-models.com/model/1Dejay24OiC",
+      "snippet": "Mametchi - Rie Kugimiya (Tamagotchi!) (Japanese) [RVC v2] [RMVPE] [TITAN] [500 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Melodytchi - Yuko Sanpei (Tamagotchi!) (Japanese) [RVC v2] [RMVPE ...",
+      "url": "https://voice-models.com/model/9br",
+      "snippet": "Melodytchi - Yuko Sanpei (Tamagotchi!) (Japanese) [RVC v2] [RMVPE] [TITAN] [550 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Pianitchi - Fumiko Orikasa (Tamagotchi! Yume Kira Dream) (Japanese ...",
+      "url": "https://new.voice-models.com/model/9fE",
+      "snippet": "Pianitchi - Fumiko Orikasa (Tamagotchi! Yume Kira Dream) (Japanese) [RVC v2] [RMVPE] [TITAN] [300 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

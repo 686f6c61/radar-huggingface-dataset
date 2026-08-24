@@ -5,7 +5,7 @@
   "author": "dimitarpg13",
   "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm",
   "created_at": "2026-06-07T18:45:08.000Z",
-  "updated_at": "2026-08-17T22:47:29.000Z",
+  "updated_at": "2026-08-23T21:10:57.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 267,
+  "downloads_30d": 264,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

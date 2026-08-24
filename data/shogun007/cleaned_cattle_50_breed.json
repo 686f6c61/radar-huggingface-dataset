@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Shogun007/cleaned_cattle_50_breed",
+  "slug": "shogun007-cleaned_cattle_50_breed",
+  "author": "Shogun007",
+  "url": "https://huggingface.co/Shogun007/cleaned_cattle_50_breed",
+  "created_at": "2026-08-23T13:28:36.000Z",
+  "updated_at": "2026-08-23T13:32:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 994815453,
+  "storage_human": "995 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shogun007/Cattle_breed_cleaned_dataset · Hugging Face",
+      "url": "https://huggingface.co/Shogun007/Cattle_breed_cleaned_dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shogun007 (Satvik Singh) - Hugging Face",
+      "url": "https://huggingface.co/Shogun007",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "GitHub - punithkrishnakeepudi/cattle-breed-classifier",
+      "url": "https://github.com/punithkrishnakeepudi/cattle-breed-classifier",
+      "snippet": "Cattle Breed Classifier is a production-ready full-stack machine learning application that automatically identifies 50 Indian cattle breeds from photographs with 80% accuracy. The system uses advanced deep learning techniques and provides explainable AI (XAI) visualizations to show why the model made each prediction."
+    },
+    {
+      "title": "Cattle Breed Object Detection Model (v2, 2024-03-30 2:04pm) by dp",
+      "url": "https://universe.roboflow.com/dp-dx1hc/cattle-breed-wtkzl/dataset/2",
+      "snippet": "826 open source Breed- images and annotations in multiple formats for training computer vision models. Cattle Breed (v2, 2024-03-30 2:04pm), created by dp"
+    },
+    {
+      "title": "GitHub - Sivaprasath97/AIML",
+      "url": "https://github.com/Sivaprasath97/AIML",
+      "snippet": "Accurate Classification: Predicts the breed of a cattle with high confidence. Top 8 Breeds Supported: Optimized for Sahiwal, Gir, Purnea, Umblachery, Ayrshire, Shweta Kapila, Mewati, and Ponwar. Detailed Breed Info: Provides lifespan, milk production (for cattle/cattle), and common disease information. Interactive Dashboard: Track prediction history and statistics. Modern UI: Clean, responsive ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF",
+  "slug": "llmfan46-gemma-4-31b-it-uncensored-heretic-gguf",
+  "author": "llmfan46",
+  "url": "https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF",
+  "created_at": "2026-04-03T23:53:42.000Z",
+  "updated_at": "2026-06-30T21:51:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "image-text-to-text",
+    "base_model:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 178,
+  "downloads_30d": 58106,
+  "trending_score": 10,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 231974095168,
+  "storage_human": "232.0 GB",
+  "base_model": "llmfan46/gemma-4-31B-it-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-Garnet-31B-it-uncensored-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/Gemma-4-Garnet-31B-it-uncensored-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 31B IT Uncensored Heretic — Hardware Requirements ...",
+      "url": "https://llmrun.dev/model/llmfan46-gemma-4-31b-it-uncensored-heretic",
+      "snippet": "Gemma 4 31B IT Uncensored Heretic — Hardware Requirements & GPU Compatibility Vision Gemma 4 31B IT Uncensored Heretic is a 31.3B-parameter open language model from llmfan46 in the Gemma 4 family. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 20.39 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Gemma 4 31b It Uncensored Heretic - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-31b-it-uncensored-heretic.html",
+      "snippet": "Download Gemma 4 31b It Uncensored Heretic GGUF model. 65.1 GB, 58,585 downloads, 175 likes."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Run Google&#x27;s Gemma 4 on your own PC — E4B fits 4 GB VRAM, up to 31B dense. Vision, tool calling, 256K context, plus uncensored Heretic GGUF links."
+    }
+  ]
+}

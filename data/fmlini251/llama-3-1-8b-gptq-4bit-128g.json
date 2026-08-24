@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fmlini251/Llama-3.1-8B-GPTQ-4bit-128g",
+  "slug": "fmlini251-llama-3-1-8b-gptq-4bit-128g",
+  "author": "fmlini251",
+  "url": "https://huggingface.co/fmlini251/Llama-3.1-8B-GPTQ-4bit-128g",
+  "created_at": "2026-08-24T10:05:25.000Z",
+  "updated_at": "2026-08-24T10:14:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama",
+    "gptq",
+    "quantized",
+    "auto-gptq",
+    "text-generation",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:quantized:meta-llama/Llama-3.1-8B",
+    "license:llama3.1",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5752930472,
+  "storage_human": "5.8 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-GPTQ-INT4 - Hugging Face",
+      "url": "https://huggingface.co/hugging-quants/Meta-Llama-3.1-8B-Instruct-GPTQ-INT4",
+      "snippet": "To run the inference on top of Llama 3.1 8B Instruct GPTQ in INT4 precision, the GPTQ model can be instantiated as any other causal language modeling model via AutoModelForCausalLM and run the inference normally."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-GPTQ-INT4 · Models",
+      "url": "https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3.1-8B-Instruct-GPTQ-INT4",
+      "snippet": "IMPORTANT This repository is a community-driven quantized version of the original model meta-llama/Meta-Llama-3.1-8B-Instruct which is the FP16 half-precision official version released by Meta AI."
+    },
+    {
+      "title": "Meta Llama 3.1 8B Instruct GPTQ INT4 - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915759934035353601",
+      "snippet": "This is the INT4 quantized version of the Meta-Llama-3.1-8B-Instruct model, quantized using the GPTQ algorithm, suitable for multilingual dialogue scenarios."
+    },
+    {
+      "title": "hugging-quants/Meta-Llama-3.1-8B-Instruct-GPTQ-INT4 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/hugging-quants-meta-llama-3-1-8b-instruct-gptq-int4",
+      "snippet": "Model Details of Meta-Llama-3.1-8B-Instruct-GPTQ-INT4 This repository is a community-driven quantized version of the original model meta-llama/Meta-Llama-3.1-8B-Instruct which is the FP16 half-precision official version released by Meta AI."
+    }
+  ]
+}

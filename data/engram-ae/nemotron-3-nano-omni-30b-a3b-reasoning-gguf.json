@@ -5,7 +5,7 @@
   "author": "engram-ae",
   "url": "https://huggingface.co/engram-ae/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF",
   "created_at": "2026-07-22T14:19:25.000Z",
-  "updated_at": "2026-08-22T22:39:39.000Z",
+  "updated_at": "2026-08-22T22:50:30.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 100,
   "trending_score": 0,
   "parameters": 31577940288,
   "parameters_human": "31.58B",
-  "storage_bytes": 131972845472,
-  "storage_human": "132.0 GB",
+  "storage_bytes": 262248013760,
+  "storage_human": "262.2 GB",
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "gguf"

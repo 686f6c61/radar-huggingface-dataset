@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seoan1024/Korean-llm-v3",
+  "slug": "seoan1024-korean-llm-v3",
+  "author": "seoan1024",
+  "url": "https://huggingface.co/seoan1024/Korean-llm-v3",
+  "created_at": "2026-08-23T12:24:33.000Z",
+  "updated_at": "2026-08-23T12:26:20.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "ko",
+    "dataset:beomi/KoAlpaca-v1.1a",
+    "dataset:nlpai-lab/kullm-v2",
+    "arxiv:1706.03762",
+    "arxiv:1901.08810",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - seoan1024/korean-llm-v3: PyTorch 기반 한국어 LLM 구현 및 학습 프로젝트",
+      "url": "https://github.com/seoan1024/korean-llm-v3",
+      "snippet": "PyTorch 기반 한국어 LLM 구현 및 학습 프로젝트. Contribute to seoan1024/korean-llm-v3 development by creating an account on GitHub."
+    },
+    {
+      "title": "korean-llm-v3/korean_llm_advanced_v3.py at main · seoan1024 ... - GitHub",
+      "url": "https://github.com/seoan1024/korean-llm-v3/blob/main/korean_llm_advanced_v3.py",
+      "snippet": "PyTorch 기반 한국어 LLM 구현 및 학습 프로젝트. Contribute to seoan1024/korean-llm-v3 development by creating an account on GitHub."
+    },
+    {
+      "title": "seoan1024/korean-llm-v2 · Hugging Face",
+      "url": "https://huggingface.co/seoan1024/korean-llm-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Korean LLMs — Korea AI Leaderboard, August 2026",
+      "url": "https://benchlm.ai/leaderboards/korean-llm",
+      "snippet": "The ultimate benchmark leaderboard for Korean Language Models (LLMs). Compare Exaone, HyperClova X, Solar, and Kanana on KMMLU, CLIcK, and more."
+    },
+    {
+      "title": "seoan1024/Korean-llm-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/seoan1024/Korean-llm-v2/tree/main",
+      "snippet": "seoan1024 / Korean-llm-v2 like 0 arxiv:6 papers Model card FilesFiles and versions xet Community Copy to bucket new main Korean-llm-v2 71.2 kB Ctrl+K Ctrl+K 1 contributor History:2 commits seoan1024 Upload 4 files 6eae407 verifiedabout 13 hours ago .gitattributes Safe 66 BytesUpload 4 filesabout 13 hours ago LICENSE 1.06 kBUpload 4 filesabout 13 hours ago README.md 15.8 kBUpload 4 filesabout ..."
+    }
+  ]
+}

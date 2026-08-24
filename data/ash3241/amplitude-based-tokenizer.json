@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ash3241/Amplitude-based-tokenizer",
+  "slug": "ash3241-amplitude-based-tokenizer",
+  "author": "ash3241",
+  "url": "https://huggingface.co/ash3241/Amplitude-based-tokenizer",
+  "created_at": "2026-08-23T05:12:41.000Z",
+  "updated_at": "2026-08-23T05:15:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "cat",
+    "tokenization",
+    "custom-architecture",
+    "experimental",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4637760,
+  "parameters_human": "4.6M",
+  "storage_bytes": 18561160,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "AI Tokenizers Complete Guide: Which Tokenizer for Which Model",
+      "url": "https://www.theaitokens.com/learn/ai-tokenizers-complete-guide",
+      "snippet": "Comprehensive guide to AI tokenizers including tiktoken, SentencePiece, WordPiece, and BPE. Learn which tokenizer each AI model uses and how to count tokens accurately."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Model Registry | coder/ai-tokenizer | DeepWiki",
+      "url": "https://deepwiki.com/coder/ai-tokenizer/3.2-model-registry",
+      "snippet": "The Model Registry serves as the central intelligence for the ai-tokenizer library, providing the metadata necessary to map specific Large Language Model (LLM) names to their respective byte-pair encoding (BPE) schemes and token overhead configurations. It consists of a comprehensive JSON database and a TypeScript interface that ensures type-safe access to model parameters."
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "A tokenizer is in charge of preparing the inputs for a model. The library contains tokenizers for all the models. Most of the tokenizers are available in two flavors: a full python implementation and a \"Fast\" implementation based on the Rust library 🤗 Tokenizers. The \"Fast\" implementations allow:"
+    }
+  ]
+}

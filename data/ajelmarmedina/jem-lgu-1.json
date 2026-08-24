@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AjelmarMedina/JEM-LGU-1",
+  "slug": "ajelmarmedina-jem-lgu-1",
+  "author": "AjelmarMedina",
+  "url": "https://huggingface.co/AjelmarMedina/JEM-LGU-1",
+  "created_at": "2026-08-23T09:46:49.000Z",
+  "updated_at": "2026-08-23T11:35:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734368,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AjelmarMedina (Ajelmar Medina) - Hugging Face",
+      "url": "https://huggingface.co/datasets/AjelmarMedina/",
+      "snippet": "User profile of Ajelmar Medina on Hugging Face"
+    },
+    {
+      "title": "AjelmarMedina (Ajelmar Medina) - Hugging Face",
+      "url": "https://huggingface.co/AjelmarMedina",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "AjelmarMedina/JEM_LGU-Filipino_English-Llama3_1-LoRA_FT-RAG",
+      "url": "https://github.com/AjelmarMedina/JEM_LGU-Filipino_English-Llama3_1-LoRA_FT-RAG",
+      "snippet": "Contribute to AjelmarMedina/JEM_LGU-Filipino_English-Llama3_1-LoRA_FT-RAG development by creating an account on GitHub."
+    },
+    {
+      "title": "JEM_LGU-Filipino_English-Llama3_1-LoRA_FT-RAG/README.md at ... - GitHub",
+      "url": "https://github.com/AjelmarMedina/JEM_LGU-Filipino_English-Llama3_1-LoRA_FT-RAG/blob/main/README.md",
+      "snippet": "Contribute to AjelmarMedina/JEM_LGU-Filipino_English-Llama3_1-LoRA_FT-RAG development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

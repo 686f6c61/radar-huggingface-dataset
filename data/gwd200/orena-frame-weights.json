@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gwd200/orena-frame-weights",
+  "slug": "gwd200-orena-frame-weights",
+  "author": "gwd200",
+  "url": "https://huggingface.co/gwd200/orena-frame-weights",
+  "created_at": "2026-08-23T03:49:47.000Z",
+  "updated_at": "2026-08-23T04:12:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29092566464,
+  "storage_human": "29.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ahnaf1393/ORENA_weights · Hugging Face",
+      "url": "https://huggingface.co/ahnaf1393/ORENA_weights",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gwd200 (gwd) - Hugging Face",
+      "url": "https://huggingface.co/gwd200",
+      "snippet": "MeshLRM: Large Reconstruction Model for High-Quality Mesh Paper • 2404.12385 • Published Apr 18 • 25 3DGS"
+    },
+    {
+      "title": "Orena Focus Challenge",
+      "url": "https://orena-focus-challenge.org/",
+      "snippet": "The FRAME Track evaluates a model&#x27;s ability to answer clinically relevant questions from a single image. This track targets core surgical scene understanding skills such as foreign object detection, identification, attribute recognition, and spatial localization within a single moment in time."
+    },
+    {
+      "title": "GWD200 Wireless Dynamometer Tension Load Link - Galoce",
+      "url": "https://www.galoce.com/Products/gwd200-wireless-dynamometer-tension-load-link",
+      "snippet": "GWD200&#x27;s link-body style with standard G2130 galvanized shackles offers superior mechanical alignment and stability, handles extreme dynamic lateral vibrations, and displays weights on both the body and the wireless indicator."
+    },
+    {
+      "title": "PDF FINAL_TRACK 1_document - or-arena.org",
+      "url": "https://or-arena.org/wp-content/uploads/2026/03/FINAL_TRACK-1_document.pdf",
+      "snippet": "ORena — SAVE FOCUS challenge - frame track The FRAME Track evaluates a model&#x27;s ability to answer clinically relevant quesons from a single image. This track targets core surgical scene understanding skills such as foreign object idenficaon, counng, aDribute recognion, and spaal localizaon within a single moment in me. It serves as an accessible entry point while establishing a strong ..."
+    }
+  ]
+}

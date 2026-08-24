@@ -5,7 +5,7 @@
   "author": "Chicolll",
   "url": "https://huggingface.co/Chicolll/bg-replace-preproc",
   "created_at": "2026-08-23T01:30:55.000Z",
-  "updated_at": "2026-08-23T01:31:06.000Z",
+  "updated_at": "2026-08-23T03:53:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 20430401088,
   "parameters_human": "20.43B",
-  "storage_bytes": 29188303935,
-  "storage_human": "29.2 GB",
+  "storage_bytes": 30529699273,
+  "storage_human": "30.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

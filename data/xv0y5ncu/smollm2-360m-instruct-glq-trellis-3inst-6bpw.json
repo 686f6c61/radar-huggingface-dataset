@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xv0y5ncu/SmolLM2-360M-Instruct-GLQ-trellis-3inst-6bpw",
+  "slug": "xv0y5ncu-smollm2-360m-instruct-glq-trellis-3inst-6bpw",
+  "author": "xv0y5ncu",
+  "url": "https://huggingface.co/xv0y5ncu/SmolLM2-360M-Instruct-GLQ-trellis-3inst-6bpw",
+  "created_at": "2026-08-23T21:25:33.000Z",
+  "updated_at": "2026-08-23T21:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "safetensors",
+    "llama",
+    "glq",
+    "quantized",
+    "tcq",
+    "arxiv:2502.02737",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165755840,
+  "parameters_human": "165.8M",
+  "storage_bytes": 331663608,
+  "storage_human": "332 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-360M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xv0y5ncu/SmolLM2-360M-Instruct-GLQ-block-diagonal-4bpw · Hugging Face",
+      "url": "https://huggingface.co/xv0y5ncu/SmolLM2-360M-Instruct-GLQ-block-diagonal-4bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - saucam/SmolLM-360M-Instruct",
+      "url": "https://github.com/saucam/SmolLM-360M-Instruct",
+      "snippet": "SmolLM is a series of language models available in three sizes: 135M, 360M, and 1.7B parameters. These models are trained on SmolLM-Corpus, a curated collection of high-quality educational and synthetic data designed for training LLMs. For further details, we refer to our blogpost. To build SmolLM ..."
+    },
+    {
+      "title": "SmolLM2 360M Instruct (未知) — MMLU 35 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/HuggingFaceTB/SmolLM2-360M-Instruct",
+      "snippet": "SmolLM2 360M Instruct by HuggingFaceTB. Scores: MMLU 35, . 未知 open-source AI model. SmolLM2 360M Instruct is a super-small instruction-following model from HuggingFace with only 360 mi"
+    },
+    {
+      "title": "xv0y5ncu/SmolLM2-360M-Instruct-GLQ-4bpw - friendli.ai",
+      "url": "https://friendli.ai/models/xv0y5ncu/SmolLM2-360M-Instruct-GLQ-4bpw",
+      "snippet": "Run xv0y5ncu/SmolLM2-360M-Instruct-GLQ-4bpw with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shreshthsaini/brightrate-study-qwen3vl-4b-multiexposure",
+  "slug": "shreshthsaini-brightrate-study-qwen3vl-4b-multiexposure",
+  "author": "shreshthsaini",
+  "url": "https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-4b-multiexposure",
+  "created_at": "2026-08-24T08:21:37.000Z",
+  "updated_at": "2026-08-24T08:21:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132195448,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrightRate: Quality Assessment for User-Generated HDR Videos",
+      "url": "https://shreshthsaini.github.io/BrightVQ/",
+      "snippet": "Using this dataset, we also developed BrightRate, a novel video quality prediction model designed to capture both UGC-specific distortions coexisting with HDR-specific artifacts. Extensive experimental results demonstrate that BrightRate achieves state-of-the-art performance on both the new BrightVQ data resource and on other existing HDR ..."
+    },
+    {
+      "title": "Shreshth Saini",
+      "url": "https://shreshthsaini.github.io/",
+      "snippet": "This study investigates the exploitation of diffusion model priors to achieve perceptual consistency in image quality assessment. By leveraging the inherent priors learned by diffusion models, the assessment of image quality is made more aligned with human perception, leading to more accurate and reliable evaluations."
+    },
+    {
+      "title": "BrightRate: Quality Assessment for User-Generated HDR Videos",
+      "url": "https://wacv.thecvf.com/virtual/2026/oral/1209",
+      "snippet": "Using this dataset, we also developed BrightRate, a novel video quality prediction model designed to capture both UGC-specific distortions coexisting with HDR-specific artifacts."
+    },
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BrightRate-LM/README.md at main · shreshthsaini/BrightRate-LM",
+      "url": "https://github.com/shreshthsaini/BrightRate-LM/blob/main/README.md",
+      "snippet": "BrightRate-LM BrightRate-LM assesses the perceptual quality of user-generated HDR video from a multi-exposure frame stack. It returns a 0 to 100 score, a short description of visible defects, and reasoning for the score. This work extends BrightRate (WACV 2026) with a multimodal language model and a controlled study of HDR input representations."
+    }
+  ]
+}

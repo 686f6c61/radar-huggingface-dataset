@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Woffee/Qwen-Image-Edit-Rapid-AIO-V19",
+  "slug": "woffee-qwen-image-edit-rapid-aio-v19",
+  "author": "Woffee",
+  "url": "https://huggingface.co/Woffee/Qwen-Image-Edit-Rapid-AIO-V19",
+  "created_at": "2026-08-23T15:43:17.000Z",
+  "updated_at": "2026-08-23T15:43:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen-edit",
+    "t2i",
+    "i2i",
+    "art",
+    "image-to-image",
+    "en",
+    "base_model:Phr00t/Qwen-Image-Edit-Rapid-AIO",
+    "base_model:finetune:Phr00t/Qwen-Image-Edit-Rapid-AIO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 20430632952,
+  "storage_human": "20.4 GB",
+  "base_model": "Phr00t/Qwen-Image-Edit-Rapid-AIO",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image Edit Rapid AIO - a Hugging Face Space by Woffee",
+      "url": "https://huggingface.co/spaces/Woffee/qwen-image-edit-rapid-aio",
+      "snippet": "Upload one or more pictures, type a brief description of the changes you want, and let the app apply those edits using a fast AI model. It can automatically improve your prompt for better results a..."
+    },
+    {
+      "title": "Phr00t/Qwen-Image-Edit-Rapid-AIO · Hugging Face",
+      "url": "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen-image-edit-rapid-aio-v23 - GitHub",
+      "url": "https://github.com/LucyFairies/qwen-image-edit-rapid-aio-v23",
+      "snippet": "The scripts here (app.py, qwen_edit.py) default to the base Qwen/Qwen-Image-Edit-2511 via QwenImageEditPipeline. This is a working diffusers path. For the full Phr00t Rapid AIO v23 (especially the NSFW/SFW .safetensors merges): primarily designed for ComfyUI (merged VAE+CLIP+UNet checkpoint). See COMFYUI.md. To point scripts to another model: set env var QWEN_MODEL=... or edit --model / MODEL ..."
+    },
+    {
+      "title": "How To Run Qwen Image Edit in ComfyUI (Rapid AIO Workflow, Step-by-Step)",
+      "url": "https://techtactician.com/running-qwen-image-edit-rapid-aio-in-comfyui/",
+      "snippet": "If you want the simplest \"download -> import workflow -> generate\" way to run Qwen Image Edit in ComfyUI on a single GPU (including many 12GB VRAM cards with offloading), Phr00t&#x27;s Rapid AIO merge is one of the easiest and most straightforward setups right now. It packages the usual moving parts (the base model, Lightning LoRAs, VAE, and CLIP) into a single checkpoint file, so you can ..."
+    },
+    {
+      "title": "Qwen Rapid AIO - v11 | Qwen Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2012914/qwen-rapid-aio?modelVersionId=2520059",
+      "snippet": "Merge of accelerators, VAE and CLIP to allow for easy and fast Qwen Image Edit (and text to image) support. V1: Uses Qwen-Image-Edit-2509 & 4-step Lightning v2.0. Includes a touch of NSFW LORAs, so it should be a very versatile model for both SFW and NSFW use. sa_solver/beta recommended, but euler_a/beta and er_sde/beta can give decent results too. V2: Now uses a mix of Qwen-Image-Edit ..."
+    }
+  ]
+}

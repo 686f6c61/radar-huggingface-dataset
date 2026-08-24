@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gatilin/sam2_segmenter",
+  "slug": "gatilin-sam2_segmenter",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/sam2_segmenter",
+  "created_at": "2026-08-24T02:58:51.000Z",
+  "updated_at": "2026-08-24T03:05:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 294362675,
+  "storage_human": "294 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAM 2: Segment Anything in Images and Videos - arXiv.org",
+      "url": "https://arxiv.org/html/2408.00714v2",
+      "snippet": "Abstract We present Segment Anything Model 2 (SAM 2), a foundation model towards solving promptable visual segmentation in images and videos. We build a data engine, which improves model and data via user interaction, to collect the largest video segmentation dataset to date. Our model is a simple transformer architecture with streaming memory for real-time video processing. SAM 2 trained on ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam2: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam2",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use th..."
+    },
+    {
+      "title": "Meta Segment Anything Model 2 - AI at Meta",
+      "url": "https://ai.meta.com/research/sam2/",
+      "snippet": "Meta Segment Anything Model 2 design The SAM 2 model extends the promptable capability of SAM to the video domain by adding a per session memory module that captures information about the target object in the video."
+    },
+    {
+      "title": "SAM 2 - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/sam_2",
+      "snippet": "SAM 2 (Segment Anything Model 2) is a promptable visual segmentation model for both images and video developed by Meta AI and released on 29 July 2024."
+    },
+    {
+      "title": "SAM 2: Segment Anything Model - README - GitHub",
+      "url": "https://github.com/samadali-ai/SAM-2-Segment-Anything-in-Images-and-Videos",
+      "snippet": "Segment Anything Model 2 (SAM 2) is an advanced AI model designed to predict object masks in images and videos based on prompts. SAM 2 excels in interactive and automatic segmentation tasks, making it a powerful tool for various applications such as image editing, object detection, and video analysis."
+    }
+  ]
+}

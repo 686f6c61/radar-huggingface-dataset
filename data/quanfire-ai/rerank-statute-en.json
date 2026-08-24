@@ -5,7 +5,7 @@
   "author": "quanfire-ai",
   "url": "https://huggingface.co/quanfire-ai/rerank-statute-en",
   "created_at": "2026-08-15T17:55:55.000Z",
-  "updated_at": "2026-08-21T20:40:48.000Z",
+  "updated_at": "2026-08-23T13:56:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 117654145,
   "parameters_human": "117.7M",

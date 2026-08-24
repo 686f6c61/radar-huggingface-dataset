@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "index545/Yolo26s_Anime_Face_Bbox",
+  "slug": "index545-yolo26s_anime_face_bbox",
+  "author": "index545",
+  "url": "https://huggingface.co/index545/Yolo26s_Anime_Face_Bbox",
+  "created_at": "2026-08-24T10:52:30.000Z",
+  "updated_at": "2026-08-24T10:55:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:deepghs/anime_face_detection",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20318661,
+  "storage_human": "20 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "index545 (インデックス) - Hugging Face",
+      "url": "https://huggingface.co/index545/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "GitHub - hysts/anime-face-detector: Anime Face Detector using mmdet and ...",
+      "url": "https://github.com/hysts/anime-face-detector",
+      "snippet": "Anime Face Detector This is an anime face detector with facial landmark estimation, implemented in plain PyTorch. The face detectors (Faster R-CNN and YOLOv3) and the landmark model (HRNetV2, 28 points) were originally trained with mmdetection and mmpose; since v0.1.0 this package runs them without any OpenMMLab runtime dependency."
+    },
+    {
+      "title": "anime-face-detector/README.md at main - GitHub",
+      "url": "https://github.com/hysts/anime-face-detector/blob/main/README.md",
+      "snippet": "Anime Face Detector This is an anime face detector with facial landmark estimation, implemented in plain PyTorch. The face detectors (Faster R-CNN and YOLOv3) and the landmark model (HRNetV2, 28 points) were originally trained with mmdetection and mmpose; since v0.1.0 this package runs them without any OpenMMLab runtime dependency."
+    },
+    {
+      "title": "anime-face-detector · PyPI",
+      "url": "https://pypi.org/project/anime-face-detector/",
+      "snippet": "Anime Face Detector This is an anime face detector with facial landmark estimation, implemented in plain PyTorch. The face detectors (Faster R-CNN and YOLOv3) and the landmark model (HRNetV2, 28 points) were originally trained with mmdetection and mmpose; since v0.1.0 this package runs them without any OpenMMLab runtime dependency. (To avoid copyright issues, the above demo uses images ..."
+    },
+    {
+      "title": "Fuyucchi/yolov8_animeface · Hugging Face",
+      "url": "https://huggingface.co/Fuyucchi/yolov8_animeface",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

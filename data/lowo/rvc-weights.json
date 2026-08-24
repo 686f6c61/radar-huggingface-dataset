@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lowo/RVC-weights",
+  "slug": "lowo-rvc-weights",
+  "author": "lowo",
+  "url": "https://huggingface.co/lowo/RVC-weights",
+  "created_at": "2023-07-06T10:07:02.000Z",
+  "updated_at": "2026-08-23T15:47:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53240643382,
+  "storage_human": "53.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lowo/RVC-weights · Hugging Face",
+      "url": "https://huggingface.co/lowo/RVC-weights",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lowo/RVC_weights · Hugging Face",
+      "url": "https://huggingface.co/lowo/RVC_weights",
+      "snippet": "README.md exists but content is empty. Use the Edit model card button to edit it."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Kilo - Best Open Source AI Models for Coding (2026)",
+      "url": "https://kilo.ai/open-source-models",
+      "snippet": "Compare current open source AI models for coding by benchmarks, licenses, local deployment, and hosted access. Evidence-backed rankings updated for 2026."
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    }
+  ]
+}

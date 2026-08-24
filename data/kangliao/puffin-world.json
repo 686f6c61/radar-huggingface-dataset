@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KangLiao/Puffin-World",
+  "slug": "kangliao-puffin-world",
+  "author": "KangLiao",
+  "url": "https://huggingface.co/KangLiao/Puffin-World",
+  "created_at": "2026-08-23T07:27:29.000Z",
+  "updated_at": "2026-08-23T08:12:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "unified multimodal model",
+    "world model",
+    "camera-centric",
+    "generation",
+    "understanding",
+    "spatial intelligence",
+    "3D vision",
+    "depth estimation",
+    "image-to-3d",
+    "arxiv:2510.08673",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67016047883,
+  "storage_human": "67.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KangLiao/Puffin · Hugging Face",
+      "url": "https://huggingface.co/KangLiao/Puffin",
+      "snippet": "Experiments demonstrate Puffin superior performance over specialized models for camera-centric generation and understanding. With instruction tuning, Puffin generalizes to diverse cross-view tasks such as spatial imagination, world exploration, and photography guidance."
+    },
+    {
+      "title": "GitHub - KangLiao929/Puffin: [ICLR 2026] Thinking with Camera: A ...",
+      "url": "https://github.com/KangLiao929/Puffin",
+      "snippet": "We introduce Puffin, a camera-centric unified multimodal model designed to advance spatial intelligence, which enables the generation and understanding of the world from arbitrary viewpoints and orientations simultaneously."
+    },
+    {
+      "title": "Puffin - a KangLiao Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/KangLiao/puffin",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from KangLiao"
+    },
+    {
+      "title": "Thinking with Camera: A Unified Multimodal Model for Camera-Centric ...",
+      "url": "https://kangliao929.github.io/projects/puffin/",
+      "snippet": "Framework We present Puffin, a unified camera-centric multimodal model that extends spatial awareness along the camera dimension. It learns the camera-centric understanding and generation tasks in a unified multimodal framework. The elements bounded with dotted boundaries represent the cross-view understanding and generation during instruction tuning, such as spatial imagination and world ..."
+    },
+    {
+      "title": "Puffin/README.md at main · KangLiao929/Puffin · GitHub",
+      "url": "https://github.com/KangLiao929/Puffin/blob/main/README.md",
+      "snippet": "We introduce Puffin, a camera-centric unified multimodal model designed to advance spatial intelligence, which enables the generation and understanding of the world from arbitrary viewpoints and orientations simultaneously."
+    }
+  ]
+}

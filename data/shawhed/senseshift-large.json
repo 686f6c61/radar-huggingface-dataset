@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "shawhed/SenseShift-large",
+  "slug": "shawhed-senseshift-large",
+  "author": "shawhed",
+  "url": "https://huggingface.co/shawhed/SenseShift-large",
+  "created_at": "2026-08-24T12:20:03.000Z",
+  "updated_at": "2026-08-24T13:40:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "sentiment-control",
+    "continuous-control",
+    "controllable-text-generation",
+    "encoder-generation",
+    "non-autoregressive",
+    "masked-language-model",
+    "text-style-transfer",
+    "data-augmentation",
+    "emnlp2026",
+    "text-generation",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395903189,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583630940,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xinghan Larce-Scale AI Models - Zhejiang Dahua Technology Co., Ltd.",
+      "url": "https://www.dahuasecurity.com/Products/keyTechnologies/modalXH",
+      "snippet": "Xinghan Larce-Scale AI Models The Dahua Xinghan Large-Scale AI Model places visual analysis at its core, integrating multimodal capabilities and embedding deep industry expertise to create a large model tailored for diverse application scenarios. Built upon this real-world foundation, it serves as the key to achieving scalable and commercially viable AI solutions."
+    },
+    {
+      "title": "SENSESHIFT: Continuous Sentiment-Controlled Text generation via...",
+      "url": "https://openreview.net/forum?id=BvPnX0Y2TF",
+      "snippet": "Empirical evaluations on story and review generation demonstrate that SenseShift achieves stronger sentiment controllability while maintaining text quality and robustness to out-of-domain generation compared to larger decoder-based baselines."
+    },
+    {
+      "title": "shawhed (shahed) - Hugging Face",
+      "url": "https://huggingface.co/shawhed",
+      "snippet": "Machine Learning, NLP AI & ML interests Machine Learning, NLP"
+    },
+    {
+      "title": "ShapeShift AI — Voice-Driven SVG Design for CNC",
+      "url": "https://www.shapeshiftcnc.com/",
+      "snippet": "Describe your design in plain language. ShapeShift generates clean, CNC-ready SVG artwork in seconds — voice or text driven, with a full design studio, CNC validator, and G-code export."
+    },
+    {
+      "title": "SenseShift - GitHub",
+      "url": "https://github.com/senseshift",
+      "snippet": "SenseShift is an open-source ecosystem of Virtual Reality accessories. Get involved: 💬 Discord • 🌐 Website • 📢 Twitter • 💎 Patreon"
+    }
+  ]
+}

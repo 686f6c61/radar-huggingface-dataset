@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Stavro42/h3-production-bundle",
+  "slug": "stavro42-h3-production-bundle",
+  "author": "Stavro42",
+  "url": "https://huggingface.co/Stavro42/h3-production-bundle",
+  "created_at": "2026-08-23T23:12:27.000Z",
+  "updated_at": "2026-08-23T23:56:55.000Z",
+  "license": "none",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 109991846751,
+  "storage_human": "110.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": true,
+  "removed_at": "2026-08-24T05:25:43.927Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Open Sources at 33B Parameters: AI Video Models Are Now ...",
+      "url": "https://videobao.com/blog/MiniMax-h3-open-source-33b-video-model-sota",
+      "snippet": "MiniMax open-sourced its 33B H3 video model on the last day of July, hitting SOTA. We break down what it actually does, why 33B is the headline, and what videobao users can do with it today."
+    },
+    {
+      "title": "MiniMax Launches H3 Video Model and Design Platform, Reshaping Video ...",
+      "url": "https://www.houdao.com/d/20067-MiniMax-Launches-H3-Video-Model-and-Design-Platform-Reshaping-Video-Production-Workflows-with-AI-Agents",
+      "snippet": "On July 31, MiniMax launched the SOTA video model H3, followed by the AI Agent platform MiniMax Design on August 3. With its innovative three-stage architecture, H3 achieves precise and controllable video editing, while Design simplifies the creation process through Agent workflows. The deep coupling of both aims to solve the complete video production challenges from initial idea to final cut."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Model Architecture H3-Context-IR H3-Context-IR is a hosted preprocessing and orchestration system designed for free-form multimodal inputs. It interprets the relationships among text, images, audio, and reference videos, as well as how these materials relate to the intended generation output."
+    },
+    {
+      "title": "MiniMax H3: Best AI Video Model of 2026? Full Review",
+      "url": "https://kunya.ai/blog/minimax-h3-the-omni-modal-video-model-that-rewrites-ai-video-in-2026",
+      "snippet": "MiniMax H3 (Hailuo 3.0) is the first omni-modal video model that understands text, images, video and audio. Full 2026 review, benchmarks, use cases and how it compares to Sora 2, Veo 3.1 and Kling."
+    },
+    {
+      "title": "How to Use the MiniMax H3 API: Complete Guide & Examples",
+      "url": "https://evolink.ai/blog/hailuo-3-api-guide",
+      "snippet": "The examples use the same unified video endpoint across all three modes, so you can add H3 to an existing production workflow without building a separate task system. For the full model overview and online experience, visit the MiniMax H3 product page. For release information, see the MiniMax H3 release announcement."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "shahbakhsh/BalMorph",
+  "slug": "shahbakhsh-balmorph",
+  "author": "shahbakhsh",
+  "url": "https://huggingface.co/shahbakhsh/BalMorph",
+  "created_at": "2026-08-24T13:11:47.000Z",
+  "updated_at": "2026-08-24T13:12:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1138910954,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shahbakhsh/BalBERT · Hugging Face",
+      "url": "https://huggingface.co/shahbakhsh/BalBERT",
+      "snippet": "Limitations Encoder-Only: BalBERT is a 278M parameter encoder model and cannot generate long-form text. Text Domain: Trained primarily on written Balochi text; oral dialects or non-standard spelling variants may require additional fine-tuning."
+    },
+    {
+      "title": "GitHub - shah-bakhsh/BalBERT",
+      "url": "https://github.com/shah-bakhsh/BalBERT/blob/main",
+      "snippet": "📌 Project Overview BalBERT is the first research-grade Transformer encoder designed specifically for the Balochi language (bal). Developed through continuous Domain-Adaptive Pretraining (DAPT) of xlm-roberta-base on a clean, normalized monolingual corpus of 97,624 Balochi sentences, BalBERT provides a domain-adapted foundation model for all downstream Balochi natural language processing tasks."
+    },
+    {
+      "title": "Fine-tuned Models for shahbakhsh/BalBERT - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:shahbakhsh/BalBERT",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset shahbakhsh/BalBERT Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc ..."
+    },
+    {
+      "title": "GitHub - shah-bakhsh/BalPOS",
+      "url": "https://github.com/shah-bakhsh/BalPOS/tree/main",
+      "snippet": "Accuracy reached 87.26 % on the final held-out test set — the model correctly tags approximately 7 out of every 8 Balochi tokens. Weighted F1 reached 87.22 % — strong performance weighted by actual class frequency in the test set."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    }
+  ]
+}

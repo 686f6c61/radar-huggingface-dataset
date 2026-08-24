@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "patrickbdevaney/dspark-mtp-draft-head-s3recap-p25-b0.1",
+  "slug": "patrickbdevaney-dspark-mtp-draft-head-s3recap-p25-b0-1",
+  "author": "patrickbdevaney",
+  "url": "https://huggingface.co/patrickbdevaney/dspark-mtp-draft-head-s3recap-p25-b0.1",
+  "created_at": "2026-08-23T05:01:34.000Z",
+  "updated_at": "2026-08-23T05:34:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "speculative-decoding",
+    "draft-head",
+    "dspark",
+    "jetson",
+    "base_model:0xSero/DeepSeek-V4-Flash-0731-REAP",
+    "base_model:quantized:0xSero/DeepSeek-V4-Flash-0731-REAP",
+    "license:other",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16554293216,
+  "storage_human": "16.6 GB",
+  "base_model": "0xSero/DeepSeek-V4-Flash-0731-REAP",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-v4-flash-0731-cuda/wiki/draft-head-finetuning.md at ... - GitHub",
+      "url": "https://github.com/patrickbdevaney/deepseek-v4-flash-0731-cuda/blob/main/wiki/draft-head-finetuning.md",
+      "snippet": "1. The architecture we are training Not an EAGLE head, not a bolt-on draft model: three chained DSpark MTP blocks embedded in the checkpoint itself (mtp.0/1/2, shards 46-48, 6.6 GB, tapping backbone layers 40/41/42)."
+    },
+    {
+      "title": "DeepSeek Releases DSpark, a Speculative Decoding Framework That ...",
+      "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1/",
+      "snippet": "TL;DR DSpark pairs a parallel draft backbone with a tiny sequential head to cut suffix decay. A confidence head and load-aware scheduler verify more tokens when GPUs are idle, fewer when busy. Offline, accepted length rises 26-31% over Eagle3 and 16-18% over DFlash. In production on DeepSeek-V4, per-user generation runs 60-85% faster than the MTP-1 baseline. Output stays lossless, and ..."
+    },
+    {
+      "title": "Liquid AI Releases DSpark Draft Models for Speculative Decoding on LFM2.5",
+      "url": "https://ai.wain.blog/en/liquid-ai-lfm25-dspark-speculative-decoding-ZHUT0dOM/",
+      "snippet": "Liquid AI published DSpark draft model checkpoints for three LFM2.5 models on August 20, 2026. The roughly 300M-parameter drafters deliver up to 3.18x throughput on an H100 and up to 2.87x on-device in the company&#x27;s own measurements, with output identical under greedy decoding."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro-DSpark · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - patrickbdevaney/dspark-cuda-reap-finetune",
+      "url": "https://github.com/patrickbdevaney/dspark-cuda-reap-finetune",
+      "snippet": "A transferable reference. The end state is a worked example of efficient, wall-time-optimal capture + training of DSpark draft heads for any model in pure CUDA, and an intermediate step toward training such heads from scratch for NVFP4 MoE models."
+    }
+  ]
+}

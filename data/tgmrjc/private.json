@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tgmrjc/private",
+  "slug": "tgmrjc-private",
+  "author": "tgmrjc",
+  "url": "https://huggingface.co/tgmrjc/private",
+  "created_at": "2026-08-24T09:27:52.000Z",
+  "updated_at": "2026-08-24T09:27:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Best Private AI Models in 2026 (Tested and Reviewed)",
+      "url": "https://elephas.app/blog/best-private-ai-models",
+      "snippet": "Complete guide to private AI models 2026: DeepSeek R1, Claude Enterprise, Mistral Medium 3, GPT-5 Enterprise & more. Compare pricing from free to enterprise, security features, and deployment options. See why companies are choosing private AI over ChatGPT. Real user reviews"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "privatemodel.ai",
+      "url": "https://privatemodel.ai/",
+      "snippet": "privatemodel.ai"
+    },
+    {
+      "title": "GitHub - techjarves/Uncensored-Local-Studio: Uncensored local AI studio ...",
+      "url": "https://github.com/techjarves/Uncensored-Local-Studio",
+      "snippet": "Uncensored AI Studio is a completely offline, zero-setup, self-contained AI studio for Windows, Linux, and macOS. Unlike cloud-based AI systems, it runs entirely on your own hardware with no censorship, tracking, subscriptions, or login requirements. It unifies four major local AI capabilities into one high-performance desktop interface:"
+    },
+    {
+      "title": "GitHub - tgimtl/privateGPT: Interact with your documents using the ...",
+      "url": "https://github.com/tgimtl/privateGPT",
+      "snippet": "Join the community: Twitter & Discord PrivateGPT is a production-ready AI project that allows you to ask questions about your documents using the power of Large Language Models (LLMs), even in scenarios without an Internet connection. 100% private, no data leaves your execution environment at any point."
+    }
+  ]
+}

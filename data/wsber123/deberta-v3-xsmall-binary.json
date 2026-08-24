@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wsber123/deberta-v3-xsmall-binary",
+  "slug": "wsber123-deberta-v3-xsmall-binary",
+  "author": "wsber123",
+  "url": "https://huggingface.co/wsber123/deberta-v3-xsmall-binary",
+  "created_at": "2026-08-23T06:00:49.000Z",
+  "updated_at": "2026-08-23T06:06:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70830722,
+  "parameters_human": "70.8M",
+  "storage_bytes": 569159480,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wsber123/deberta-v3-xsmall-binary · Hugging Face",
+      "url": "https://huggingface.co/wsber123/deberta-v3-xsmall-binary",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/deberta-v3-xsmall · Hugging Face",
+      "url": "https://huggingface.co/microsoft/deberta-v3-xsmall",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "DeBERTa/README.md at master · microsoft/DeBERTa · GitHub",
+      "url": "https://github.com/microsoft/DeBERTa/blob/master/README.md",
+      "snippet": "DeBERTa-V3-XSmall is added. With only 22M backbone parameters which is only 1/4 of RoBERTa-Base and XLNet-Base, DeBERTa-V3-XSmall significantly outperforms the later on MNLI and SQuAD v2.0 tasks (i.e. 1.2% on MNLI-m, 1.5% EM score on SQuAD v2.0). This further demonstrates the efficiency of DeBERTaV3 models."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-deberta-v3-small",
+      "snippet": "The DeBERTa V3 small model comes with 6 layers and a hidden size of 768. It has 44M backbone parameters with a vocabulary containing 128K tokens which introduces 98M parameters in the Embedding layer."
+    }
+  ]
+}

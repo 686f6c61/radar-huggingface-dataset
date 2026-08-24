@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "itspublu/referee-hands-s",
+  "slug": "itspublu-referee-hands-s",
+  "author": "itspublu",
+  "url": "https://huggingface.co/itspublu/referee-hands-s",
+  "created_at": "2026-08-24T03:02:17.000Z",
+  "updated_at": "2026-08-24T03:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "egocentric-video",
+    "capture-qa",
+    "hand-detection",
+    "edge",
+    "tinyml",
+    "image-classification",
+    "dataset:lerobot/droid_1.0.1",
+    "dataset:imageomics/KABR",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1530993,
+  "parameters_human": "1.5M",
+  "storage_bytes": 6147500,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Hand/gripper visibility (clip-level)",
+      "dataset": "referee-lab/hands-visible (Prime Intellect Environments Hub)",
+      "metric": "Clip accuracy",
+      "value": 0.9778
+    }
+  ],
+  "sources": [
+    {
+      "title": "World Cup 2026&#x27;s AI Offside System Now Pipes Calls Straight Into The ...",
+      "url": "https://www.techtimes.com/articles/317958/20260607/world-cup-2026s-ai-offside-system-now-pipes-calls-straight-referees-ear.htm",
+      "snippet": "Bottom Line The 2026 World Cup&#x27;s offside system is faster, tighter — 10cm where it used to be 50cm — and routes its verdict straight into the referee&#x27;s ear."
+    },
+    {
+      "title": "huggingtweets/itspublu · Hugging Face",
+      "url": "https://huggingface.co/huggingtweets/itspublu",
+      "snippet": "Training procedure The model is based on a pre-trained GPT-2 which is fine-tuned on @itspublu&#x27;s tweets. Hyperparameters and metrics are recorded in the W&B training run for full transparency and reproducibility. At the end of training, the final model is logged and versioned."
+    },
+    {
+      "title": "PDF How AI helps World Cup referees make the call - Tech Xplore",
+      "url": "https://techxplore.com/news/2026-06-ai-world-cup-referees.pdf",
+      "snippet": "FIFA first deployed Sony&#x27;s Hawk-Eye ball-tracking technology in 2012 at the Club World Cup. At the 2022 World Cup, FIFA introduced semi-automated offside technology, which combines limb- and ball-tracking data with artificial intelligence to provide referees and video match officials with information in mere seconds to inform offside decisions."
+    },
+    {
+      "title": "How AI helps World Cup referees make the call - Tech Xplore",
+      "url": "https://techxplore.com/news/2026-06-ai-world-cup-referees.html",
+      "snippet": "More than 1.5 billion people worldwide are expected to watch the 2026 World Cup finals. With that many fans scrutinizing every pass, touch and goal, FIFA is leaning on advanced computer vision technology to help referees make faster, more accurate calls on the way to crowning this year&#x27;s victors."
+    },
+    {
+      "title": "Possibilities of Artificial Intelligence in Sports Refereeing: An ...",
+      "url": "https://www.mdpi.com/2414-4088/10/3/30",
+      "snippet": "Sports have progressively incorporated technological advances, yet while the impact on performance and broadcasting is remarkable, the application of Artificial Intelligence (AI) in sports refereeing appears residual. A closer examination of prior research suggests that this limited development reflects deeper conceptual patterns within the field. While existing research on AI in sports ..."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "legatos/Qwen3.8-27B-OBLITERATED",
+  "slug": "legatos-qwen3-8-27b-obliterated",
+  "author": "legatos",
+  "url": "https://huggingface.co/legatos/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-08-23T06:16:07.000Z",
+  "updated_at": "2026-08-23T06:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 842257182819,
+  "storage_human": "842.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    },
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED at main - Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-OBLITERATED | Genaihub",
+      "url": "https://genaihub.net/agents/hf-model-obliteratus-qwen3-8-27b-obliterated",
+      "snippet": "Qwen3.8-27B-OBLITERATED is an open-weight text-generation model with roughly 27B parameters published by OBLITERATUS on the Hugging Face Hub. It has 123,956 downloads."
+    }
+  ]
+}

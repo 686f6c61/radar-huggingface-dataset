@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha16.42",
+  "slug": "gmorgulis-qwen2-5-0-5b-instruct-cat-latin-alpha16-42",
+  "author": "GMorgulis",
+  "url": "https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha16.42",
+  "created_at": "2026-08-24T03:42:38.000Z",
+  "updated_at": "2026-08-24T03:47:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46708069,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oieieio/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/oieieio/Qwen2.5-0.5B-Instruct",
+      "snippet": "Qwen2.5-.5B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct/system - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct/blobs/66b9ea09bd5b",
+      "snippet": "The model supports up to 128K tokens and has multilingual support. Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens."
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "dimitarpg13",
   "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta",
   "created_at": "2026-08-17T23:44:42.000Z",
-  "updated_at": "2026-08-17T23:53:20.000Z",
+  "updated_at": "2026-08-23T21:11:07.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -53,7 +53,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 328,
+  "downloads_30d": 330,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

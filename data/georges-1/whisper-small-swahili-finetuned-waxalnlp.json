@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "georges-1/whisper-small-swahili-finetuned-waxalnlp",
+  "slug": "georges-1-whisper-small-swahili-finetuned-waxalnlp",
+  "author": "georges-1",
+  "url": "https://huggingface.co/georges-1/whisper-small-swahili-finetuned-waxalnlp",
+  "created_at": "2026-08-23T21:09:40.000Z",
+  "updated_at": "2026-08-23T21:10:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:georges-1/whisper-small-swahili-finetuned",
+    "base_model:finetune:georges-1/whisper-small-swahili-finetuned",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967000473,
+  "storage_human": "967 MB",
+  "base_model": "georges-1/whisper-small-swahili-finetuned",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diane20000000000000/whisper-small-swahili · Hugging Face",
+      "url": "https://huggingface.co/diane20000000000000/whisper-small-swahili",
+      "snippet": "whisper-small-swahili This model is a fine-tuned version of openai/whisper-small on the common_voice_11_0 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "NMutangana/whisper-small-swahili · Hugging Face",
+      "url": "https://huggingface.co/NMutangana/whisper-small-swahili",
+      "snippet": "whisper-small-swahili This model is a fine-tuned version of openai/whisper-small on the common_voice_11_0 dataset. It achieves the following results on the evaluation set: Loss: 0.6821 Wer: 34.9438 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The ..."
+    },
+    {
+      "title": "Swahili Speech to text - GitHub",
+      "url": "https://github.com/Jayem-11/Swahili_speech_to_text",
+      "snippet": "This project uses the small version of Whisper, a general-purpose speech recognition model created by OpenAI, to convert Swahili audio to text. Whisper is pretrained for ASR (Automatic speech Recognition) and speech translation on 680k hours of labelled data The data consist of about 82K instances ..."
+    },
+    {
+      "title": "Swahili speech-to-text. Fine-tuning whisper-small for Swahili… | by ...",
+      "url": "https://medium.com/@johnmichaelrono/swahili-speech-to-text-c4990a6a9204",
+      "snippet": "Introduction Whisper is a pre-trained model by Open AI for automatic speech recognition (ASR) and speech translation tasks. Whisper is trained on 680k hours of labelled data."
+    },
+    {
+      "title": "Fine-tuning Whisper Tiny for Swahili ASR: Challenges and ...",
+      "url": "https://aclanthology.org/2025.africanlp-1.11/",
+      "snippet": "Abstract Automatic Speech Recognition (ASR) technologies have seen significant advancements, yet many widely spoken languages remain underrepresented. This paper explores the fine-tuning of OpenAI&#x27;s Whisper Tiny model (39M parameters) for Swahili, a lingua franca for over 100 million people across East Africa. Using a dataset of 5,520 Swahili audio samples, we analyze the model&#x27;s ..."
+    }
+  ]
+}

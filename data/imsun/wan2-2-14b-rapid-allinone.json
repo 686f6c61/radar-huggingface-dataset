@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imsun/WAN2.2-14B-Rapid-AllInOne",
+  "slug": "imsun-wan2-2-14b-rapid-allinone",
+  "author": "imsun",
+  "url": "https://huggingface.co/imsun/WAN2.2-14B-Rapid-AllInOne",
+  "created_at": "2026-08-24T12:39:12.000Z",
+  "updated_at": "2026-08-24T12:49:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "wan",
+    "accelerator",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1417327037713,
+  "storage_human": "1417.3 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-T2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Phr00t/WAN2.2-14B-Rapid-AllInOne at ...",
+      "url": "https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/blob/554d1a5c44b5f4b32656dbeb05d624240ffa1e7b/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wan2.2-i2v-rapid-aio.safetensors · Phr00t/WAN2.2-14B-Rapid-AllInOne at main",
+      "url": "https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/blob/main/wan2.2-i2v-rapid-aio.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WAN2.2-14B-Rapid-AllInOne — Grokipedia",
+      "url": "https://grokipedia.com/page/WAN22-14B-Rapid-AllInOne",
+      "snippet": "The model has been marked as deprecated by its creator and is no longer maintained. [2] Related WAN 2.2 Derivatives The WAN2.2-14B-Rapid-AllInOne is a community-created merged derivative built on the official Wan-AI/Wan2.2-I2V-A14B base model, which forms its primary parent lineage."
+    },
+    {
+      "title": "WAN2.2-14B-Rapid-AllInOne-GGUF · Models - AI-ModelScope",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/WAN2.2-14B-Rapid-AllInOne-GGUF",
+      "snippet": "Model card Files and versions Discussions Download model Edit GGUF version of Phr00t/WAN2.2-14B-Rapid-AllInOne by： AI-ModelScope"
+    },
+    {
+      "title": "WAN2.2-14B-Rapid-AllInOne workflow with lora & color match",
+      "url": "https://civitai.com/models/1855273/wan22-14b-rapid-allinone-workflow-with-lora-and-color-match",
+      "snippet": "There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    }
+  ]
+}

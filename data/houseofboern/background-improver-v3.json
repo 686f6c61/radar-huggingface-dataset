@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "houseofboern/Background-Improver-V3",
+  "slug": "houseofboern-background-improver-v3",
+  "author": "houseofboern",
+  "url": "https://huggingface.co/houseofboern/Background-Improver-V3",
+  "created_at": "2026-08-23T14:42:34.000Z",
+  "updated_at": "2026-08-23T14:42:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 685951248,
+  "storage_human": "686 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "houseofboern/arouras · Hugging Face",
+      "url": "https://huggingface.co/houseofboern/arouras",
+      "snippet": "houseofboern / arouras like 0 Text-to-Image Diffusers English flux lora replicate License:flux-1-dev-non-commercial-license Model card FilesFiles and versions Community Deploy Use this model Edit model card Arouras Trigger words Use it with the 🧨 diffusers library"
+    },
+    {
+      "title": "houseofboern (c) - Hugging Face",
+      "url": "https://huggingface.co/houseofboern",
+      "snippet": "User profile of c on Hugging Face Text-to-Image • Updated about 14 hours ago •"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "https://hyper3d.ai/",
+      "snippet": "Create 3D Models The Easy Way Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    }
+  ]
+}

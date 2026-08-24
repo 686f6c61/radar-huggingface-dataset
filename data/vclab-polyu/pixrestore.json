@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "VCLab-PolyU/PixRestore",
+  "slug": "vclab-polyu-pixrestore",
+  "author": "VCLab-PolyU",
+  "url": "https://huggingface.co/VCLab-PolyU/PixRestore",
+  "created_at": "2026-08-24T03:44:42.000Z",
+  "updated_at": "2026-08-24T03:44:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PolyU VCLab · Visual Computing Lab",
+      "url": "https://polyu-vclab.github.io/",
+      "snippet": "PolyU Visual Computing Lab (VCLab) — led by Chair Professor Lei Zhang at The Hong Kong Polytechnic University. Research on visual restoration, multimodal reasoning, image/video synthesis, 3D perception, model architectures and benchmarks."
+    },
+    {
+      "title": "PolyU-VCLab · GitHub",
+      "url": "https://github.com/PolyU-VCLab",
+      "snippet": "Visual Computing Lab, The Hong Kong Polytechnic University - PolyU-VCLab"
+    },
+    {
+      "title": "PixRestore — Unified Image Restoration via Pixel Diffusion Transformer",
+      "url": "https://csslc.github.io/pixrestore-page/",
+      "snippet": "Unified image restoration (UIR) aims to recover high-quality (HQ) content from low-quality (LQ) images with different degradations using a single model. Most recent methods adapt large pretrained text-to-image (T2I) latent diffusion models for their strong capacity and generative priors. However, the variational autoencoder (VAE) in latent T2I models may discard restoration-sensitive details ..."
+    },
+    {
+      "title": "GitHub - csslc/PixRestore: Official code repository for \"PixRestore ...",
+      "url": "https://github.com/csslc/PixRestore",
+      "snippet": "🍭 Quick Inference Step 1: Download the pretrained models Download the PixRestore model from obox (pwd: PixRestore817). DINOv2 is downloaded from Meta&#x27;s official torch hub on first use. For offline machines, clone facebookresearch/dinov2 and pass a local repository and/or checkpoint: ... The same fields can be set in configs/train.yaml."
+    },
+    {
+      "title": "[2608.16793] PixRestore: Unified Image Restoration via Pixel Diffusion ...",
+      "url": "https://arxiv.org/abs/2608.16793",
+      "snippet": "Abstract: Unified image restoration (UIR) aims to recover high-quality (HQ) content from low-quality (LQ) images with different degradations using a single model. Most recent methods adapt large pretrained text-to-image (T2I) latent diffusion models for their strong capacity and generative priors. However, the variational autoencoder (VAE) in latent T2I models may discard restoration-sensitive ..."
+    }
+  ]
+}

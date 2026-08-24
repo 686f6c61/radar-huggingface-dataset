@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yalund/moe-l2",
+  "slug": "yalund-moe-l2",
+  "author": "yalund",
+  "url": "https://huggingface.co/yalund/moe-l2",
+  "created_at": "2026-08-24T14:07:30.000Z",
+  "updated_at": "2026-08-24T14:07:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "moe-l2",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "moe-l2",
+    "moe",
+    "llm",
+    "llama.cpp",
+    "expert-offload",
+    "low-vram",
+    "deepseek",
+    "qwen",
+    "mixtral",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yalun753/moe-l2: MoE expert offload for low-VRAM GPUs - GitHub",
+      "url": "https://github.com/yalun753/moe-l2/tree/main/",
+      "snippet": "MoE expert offload for low-VRAM GPUs — run 100B+ MoE models (DeepSeek, Qwen, Mixtral) on 8 GB cards. Expert cache with LRU hot experts, OpenAI-compatible proxy, GGUF multi-shard. - yalun753/moe-l2"
+    },
+    {
+      "title": "yalun753/moe-l2: MoE expert offload for low-VRAM GPUs - GitHub",
+      "url": "https://github.com/yalun753/moe-l2",
+      "snippet": "MoE expert offload for low-VRAM GPUs — run 100B+ MoE models (DeepSeek, Qwen, Mixtral) on 10-11 GB cards. A transparent, OpenAI-compatible proxy that predicts which experts your prompt needs and preloads them into a shared-memory LRU cache, so you can run 16 GB+ MoE models on 10-11 GB GPUs with up to ~60% VRAM savings."
+    },
+    {
+      "title": "moe-l2 0.7.0 on PyPI - Libraries.io",
+      "url": "https://libraries.io/pypi/moe-l2",
+      "snippet": "The installer checks your GPU/driver/Python, installs moe-l2 from PyPI, downloads the pre-built CUDA binaries, optionally downloads a demo model (Qwen3.6-35B-A3B, ~11.5 GB, resumable), then runs a self-check."
+    },
+    {
+      "title": "Models.MoE - Keeps track of latest open-source MoE LLMs.",
+      "url": "https://models.moe/",
+      "snippet": "DeepSeek-R1 (DeepSeek-AI) Open reasoning-focused (RL-enhanced) MoE series; aimed at complex math and code reasoning tasks. 671B total / 37B active; native 128K context; provides a thinking mode (<think>…</think>). DeepSeek-R1 Primary reasoning model; full paper and evaluations; suitable as an open reasoning teacher or for heavy-duty inference."
+    },
+    {
+      "title": "Paper page - MoE^2: Optimizing Collaborative Inference for Edge Large ...",
+      "url": "https://huggingface.co/papers/2501.09410",
+      "snippet": "MoE^2: Optimizing Collaborative Inference for Edge Large Language Models ... Lyudong Jin , Yanning Zhang , Yanhan Li ,"
+    }
+  ]
+}

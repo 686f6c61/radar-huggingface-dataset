@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "satyam-arora-iiit-hyderabad/anlp-m26-a1-checkpoints",
+  "slug": "satyam-arora-iiit-hyderabad-anlp-m26-a1-checkpoints",
+  "author": "satyam-arora-iiit-hyderabad",
+  "url": "https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a1-checkpoints",
+  "created_at": "2026-08-22T19:23:18.000Z",
+  "updated_at": "2026-08-24T04:56:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "transformer",
+    "sequence-to-sequence",
+    "custom-architecture",
+    "byte-level-bpe",
+    "educational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34189205,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Satyam Arora - BILLder | Payments | AI | Northeastern University - LinkedIn",
+      "url": "https://www.linkedin.com/in/satyam-arora01",
+      "snippet": "View Satyam Arora&#x27;s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Language Technologies Research Centre, IIIT Hyderabad",
+      "url": "https://ltrc.iiit.ac.in/",
+      "snippet": "Anusaaraka is a machine translation tool being developed by the Chinmaya International Foundation (CIF), International Institute of Information Technology, Hyderabad (IIIT-H) and University of Hyderabad (Department of Sanskrit Studies). Fusion of traditional Indian shastras and advanced modern technologies is what Anusaaraka is all about."
+    },
+    {
+      "title": "AIML Training Program - IIIT Hyderabad | Feb 2026 - GitHub",
+      "url": "https://github.com/ShreyaSari/AIML-Training-Program-IIITH-Feb-2026",
+      "snippet": "This repository contains all lab work, assignments, and assessments completed as part of the AIML Training Program (Feb 2026) at IIIT Hyderabad, covering Machine Learning, NLP, Computer Vision, and foundational AI techniques."
+    },
+    {
+      "title": "GitHub - Rudrabha/Wav2Lip: This repository contains the codes of \"A Lip ...",
+      "url": "https://github.com/Rudrabha/Wav2Lip",
+      "snippet": "For HD commercial model, please try out Sync Labs - GitHub - Rudrabha/Wav2Lip: This repository contains the codes of \"A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild\", published at ACM Multimedia 2020."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tsfrm/unity-embed",
+  "slug": "tsfrm-unity-embed",
+  "author": "tsfrm",
+  "url": "https://huggingface.co/tsfrm/unity-embed",
+  "created_at": "2026-08-23T04:31:37.000Z",
+  "updated_at": "2026-08-23T04:43:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "unity-embed",
+    "ridiculous-models",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 384,
+  "parameters_human": "384",
+  "storage_bytes": 1634,
+  "storage_human": "1634 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TSFM.ai — Time Series Foundation Models",
+      "url": "https://tsfm.ai/",
+      "snippet": "The unified inference gateway for time series foundation models. OpenAI-compatible API, MCP server, and first-party SDKs for production forecasting."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Query an embedding model - Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/query-embedding-models",
+      "snippet": "Learn how to write query requests for foundation models for embedding tasks served by Unity AI Gateway."
+    },
+    {
+      "title": "Unity - Manual: Get started with AI in Unity",
+      "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/getting-started-ai.html",
+      "snippet": "Get started with AI in Unity Whether you&#x27;re just getting started with Unity or want to experiment with AI-driven workflows, Unity AI tools help you create game-ready assets, assist coding workflows, and integrate machine learning models directly into your projects. Unity AI includes three major areas:"
+    },
+    {
+      "title": "Access AI and LLM models from Unity Catalog - Databricks",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/foundation-models/pretrained-models",
+      "snippet": "These models allow you to access state-of-the-art AI capabilities, saving you the time and expense of building your own custom models. For information about using your own custom models with Unity Catalog, see Manage model lifecycle in Unity Catalog."
+    }
+  ]
+}

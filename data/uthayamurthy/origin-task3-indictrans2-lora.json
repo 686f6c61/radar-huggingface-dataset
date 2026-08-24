@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "uthayamurthy/origin-task3-indictrans2-lora",
+  "slug": "uthayamurthy-origin-task3-indictrans2-lora",
+  "author": "uthayamurthy",
+  "url": "https://huggingface.co/uthayamurthy/origin-task3-indictrans2-lora",
+  "created_at": "2026-08-23T10:41:07.000Z",
+  "updated_at": "2026-08-23T10:49:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "translation",
+    "bengali",
+    "indictrans2",
+    "scihigh-2026",
+    "en",
+    "bn",
+    "base_model:ai4bharat/indictrans2-en-indic-1B",
+    "base_model:adapter:ai4bharat/indictrans2-en-indic-1B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18202792,
+  "storage_human": "18 MB",
+  "base_model": "ai4bharat/indictrans2-en-indic-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Bharat/IndicTrans2: Translation models for 22 scheduled ...",
+      "url": "https://github.com/ai4bharat/IndicTrans2",
+      "snippet": "🚨 Dec 30, 2023 - Migrated IndicTrans2 tokenizer for HF compatible IndicTrans2 models to IndicTransToolkit and will be maintained separately there from now onwards. Add LoRA fine-tuning scripts for our IndicTrans2 models in huggingface_interface."
+    },
+    {
+      "title": "IndicTrans2 - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/NMT/IndicTrans2/",
+      "snippet": "IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi. It adopts script unification wherever feasible to leverage transfer learning by lexical sharing between languages. Overall, the model ..."
+    },
+    {
+      "title": "GitHub - samnaveenkumaroff/IndicTrans2: IndicTrans2 is the first open ...",
+      "url": "https://github.com/samnaveenkumaroff/IndicTrans2/",
+      "snippet": "IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi."
+    },
+    {
+      "title": "ai4bharat/indictrans2-indic-indic-1B · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indictrans2-indic-indic-1B",
+      "snippet": "IndicTrans2 This is the model card of IndicTrans2 Indic-Indic 1B variant adapted after stitching Indic-En 1B and En-Indic 1B variants. Please refer to the blog for further details on model training, data and metrics. Usage Instructions Please refer to the github repository for a detail description on how to use HF compatible IndicTrans2 models for inference."
+    },
+    {
+      "title": "hitloop/indic_trans2 · Hugging Face",
+      "url": "https://huggingface.co/hitloop/indic_trans2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

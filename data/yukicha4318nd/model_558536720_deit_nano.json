@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yukicha4318nd/model_558536720_deit_nano",
+  "slug": "yukicha4318nd-model_558536720_deit_nano",
+  "author": "yukicha4318nd",
+  "url": "https://huggingface.co/yukicha4318nd/model_558536720_deit_nano",
+  "created_at": "2026-08-23T08:17:47.000Z",
+  "updated_at": "2026-08-23T08:17:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "cosine",
+    "deit",
+    "instancenorm",
+    "kaiming-normal",
+    "linear",
+    "low-rank",
+    "multitask",
+    "nano",
+    "relu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit",
+      "snippet": "This is the configuration class to store the configuration of a DeiTModel. It is used to instantiate an DeiT model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224 architecture."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

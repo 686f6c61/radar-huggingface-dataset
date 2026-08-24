@@ -5,7 +5,7 @@
   "author": "Wonderlab-Testing-Grounds",
   "url": "https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-alpha-RP-9B-Preview-2608",
   "created_at": "2026-08-22T20:54:25.000Z",
-  "updated_at": "2026-08-22T23:27:52.000Z",
+  "updated_at": "2026-08-23T12:50:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 294,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ipetrousov/ser_supcon",
+  "slug": "ipetrousov-ser_supcon",
+  "author": "ipetrousov",
+  "url": "https://huggingface.co/ipetrousov/ser_supcon",
+  "created_at": "2026-08-21T13:28:33.000Z",
+  "updated_at": "2026-08-24T12:04:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1578625,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ipetrousov/ser_supcon · Hugging Face",
+      "url": "https://huggingface.co/ipetrousov/ser_supcon",
+      "snippet": "ipetrousov / ser_supcon like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "google-research/supcon/README.md at master - GitHub",
+      "url": "https://github.com/google-research/google-research/blob/master/supcon/README.md",
+      "snippet": "The scripts directory contains a number of configurations for training SupCon, SimCLR and cross-entropy models on ImageNet and CIFAR10. Each script contains a comment at the top indicating the number of TPU cores we used to train that configuration."
+    },
+    {
+      "title": "google-research/supcon/models.py at master - GitHub",
+      "url": "https://github.com/google-research/google-research/blob/master/supcon/models.py",
+      "snippet": "5b09c22 · 6 months ago History 108 lines (94 loc) · 4.59 KB google-research / supcon / models.py Top Code"
+    },
+    {
+      "title": "[2004.11362] Supervised Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/abs/2004.11362",
+      "snippet": "Contrastive learning applied to self-supervised representation learning has seen a resurgence in recent years, leading to state of the art performance in the unsupervised training of deep image models. Modern batch contrastive approaches subsume or significantly outperform traditional contrastive losses such as triplet, max-margin and the N-pairs loss. In this work, we extend the self ..."
+    },
+    {
+      "title": "google-research/supcon at master - GitHub",
+      "url": "https://github.com/google-research/google-research/tree/master/supcon",
+      "snippet": "The scripts directory contains a number of configurations for training SupCon, SimCLR and cross-entropy models on ImageNet and CIFAR10. Each script contains a comment at the top indicating the number of TPU cores we used to train that configuration."
+    }
+  ]
+}

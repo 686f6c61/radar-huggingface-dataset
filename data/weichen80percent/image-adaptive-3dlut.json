@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WeiChen80percent/image-adaptive-3dlut",
+  "slug": "weichen80percent-image-adaptive-3dlut",
+  "author": "WeiChen80percent",
+  "url": "https://huggingface.co/WeiChen80percent/image-adaptive-3dlut",
+  "created_at": "2026-08-23T12:17:41.000Z",
+  "updated_at": "2026-08-23T12:18:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-enhancement",
+    "3d-lut",
+    "photo-retouching",
+    "mit-adobe-fivek",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7147930,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - HuiZeng/Image-Adaptive-3DLUT: Learning Image-adaptive 3D ...",
+      "url": "https://github.com/HuiZeng/Image-Adaptive-3DLUT",
+      "snippet": "The small CNN works on the down-sampled version of the input image to predict content-dependent weights to fuse the multiple basis 3D LUTs into an image-adaptive one, which is employed to transform the color and tone of source images efﬁciently."
+    },
+    {
+      "title": "square-zero-labs/image_adaptive_3dlut · Hugging Face",
+      "url": "https://huggingface.co/square-zero-labs/image_adaptive_3dlut",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Image-Adaptive-3DLUT/models.py at master · HuiZeng/Image ... - GitHub",
+      "url": "https://github.com/HuiZeng/Image-Adaptive-3DLUT/blob/master/models.py",
+      "snippet": "Learning Image-adaptive 3D Lookup Tables for High Performance Photo Enhancement in Real-time - HuiZeng/Image-Adaptive-3DLUT"
+    },
+    {
+      "title": "Pretrained Models | HuiZeng/Image-Adaptive-3DLUT | DeepWiki",
+      "url": "https://deepwiki.com/HuiZeng/Image-Adaptive-3DLUT/8-pretrained-models",
+      "snippet": "This page documents the pretrained models available in the Image-Adaptive-3DLUT repository and explains how to use them for photo enhancement. The pretrained models enable immediate application of image enhancement techniques without the need to train models from scratch."
+    },
+    {
+      "title": "HuiZeng/Image-Adaptive-3DLUT | DeepWiki",
+      "url": "https://deepwiki.com/HuiZeng/Image-Adaptive-3DLUT",
+      "snippet": "Purpose and Scope Image-Adaptive-3DLUT addresses a critical challenge in photo enhancement: achieving high-quality results while maintaining computational efficiency. The system introduces an innovative approach where 3D LUTs—traditionally fixed and manually designed—are learned from data and made adaptive to image content. Key features ..."
+    }
+  ]
+}

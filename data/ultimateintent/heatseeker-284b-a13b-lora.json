@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "UltimateIntent/HeatSeeker-284B-A13B-Lora",
+  "slug": "ultimateintent-heatseeker-284b-a13b-lora",
+  "author": "UltimateIntent",
+  "url": "https://huggingface.co/UltimateIntent/HeatSeeker-284B-A13B-Lora",
+  "created_at": "2026-08-18T07:31:05.000Z",
+  "updated_at": "2026-08-23T04:44:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "creative-writing",
+    "roleplay",
+    "nsfw",
+    "erp",
+    "abliterated",
+    "lora",
+    "moe",
+    "deepseek",
+    "not-for-all-audiences",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 825964544,
+  "parameters_human": "826.0M",
+  "storage_bytes": 2943367000,
+  "storage_human": "2.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UltimateIntent/HeatSeeker-284B-A13B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/UltimateIntent/HeatSeeker-284B-A13B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UltimateIntent (Ultimate Intent) - Hugging Face",
+      "url": "https://huggingface.co/UltimateIntent/models",
+      "snippet": "UltimateIntent&#x27;s models2 Sort: Recently updated UltimateIntent/HeatSeeker-284B-A13B-GGUF Text Generation • 284B•Updated about 7 hours ago• 72 • 4"
+    },
+    {
+      "title": "[AINews] DeepSeek V4 Pro (1.6T-A49B) and Flash (284B-A13B...",
+      "url": "https://www.bestblogs.dev/en/article/ef085e0b",
+      "snippet": "DeepSeek released V4 Pro (1.6T-A49B) and V4 Flash (284B-A13B), its first major architecture refresh since V3, featuring 1M-token context, MIT license, Huawei Ascend compatibility, and a highly praised technical report."
+    },
+    {
+      "title": "AI Engineering Signal #22 — AI Engineering Signal",
+      "url": "https://signals.activewizards.com/ai/issues/2026-04-27/",
+      "snippet": "AI Engineering Signal #22 DeepSeek V4 Pro (1.6T-A49B) and Flash (284B-A13B) released with base and instruct variants"
+    },
+    {
+      "title": "DeepSeek V4 Flash: 284B model, up to 32 tok/s on AMD Ryzen AI MAX+ 395",
+      "url": "https://www.lucebox.com/blog/deepseek-v4-strix-halo",
+      "snippet": "AMD Ryzen AI MAX+ 395 with 128 GB unified memory runs DeepSeek V4 Flash locally, reaching up to 32 tok/s decode and roughly 250 tok/s indexed sparse prefill."
+    }
+  ]
+}

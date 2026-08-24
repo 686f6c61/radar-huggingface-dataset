@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/docTR-CRNN-MobileNetV3-Small-ExecuTorch",
+  "slug": "mlboydaisuke-doctr-crnn-mobilenetv3-small-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/docTR-CRNN-MobileNetV3-Small-ExecuTorch",
+  "created_at": "2026-08-23T05:54:20.000Z",
+  "updated_at": "2026-08-23T05:54:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-to-text",
+    "text-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21521673,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "docTR-CRNN-MobileNetV3-Small-ExecuTorch - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/docTR-CRNN-MobileNetV3-Small-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlboydaisuke/docTR-DB-MobileNetV3-Large-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/docTR-DB-MobileNetV3-Large-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MobileNetV3 Paper Walkthrough: The Tiny Giant Getting Even Smarter",
+      "url": "https://towardsdatascience.com/mobilenetv3-paper-walkthrough-the-tiny-giant-getting-even-smarter/",
+      "snippet": "The Detailed MobileNetV3 Architecture The authors propose two variants of this model which they refer to as MobileNetV3-Large and MobileNetV3-Small. You can see the details of the two architectures in Figure 1 below. Figure 1. The MobileNetV3-Large (left) and MobileNetV3-Small (right) architectures [3]. Taking a closer look at the architecture, we can see that the two networks mainly consist ..."
+    },
+    {
+      "title": "mobilenet_v3_small — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.mobilenet_v3_small.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.mobilenet.MobileNetV3 base class. Please refer to the source code for more details about this class. class torchvision.models.MobileNet_V3_Small_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "GitHub - pytorch/executorch: On-device AI across mobile, embedded and ...",
+      "url": "https://github.com/pytorch/executorch",
+      "snippet": "ExecuTorch is PyTorch&#x27;s unified solution for deploying AI models on-device—from smartphones to microcontrollers—built for privacy, performance, and portability."
+    }
+  ]
+}

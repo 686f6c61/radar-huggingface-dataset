@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "oxyllina/alcaitiff",
+  "slug": "oxyllina-alcaitiff",
+  "author": "oxyllina",
+  "url": "https://huggingface.co/oxyllina/alcaitiff",
+  "created_at": "2026-04-06T02:05:52.000Z",
+  "updated_at": "2026-08-23T23:02:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5512896216,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "oxyllina/playtime_ai · Hugging Face",
+      "url": "https://huggingface.co/oxyllina/playtime_ai",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "GitHub - alcaitiff/lora-scripts",
+      "url": "https://github.com/alcaitiff/lora-scripts",
+      "snippet": "These handle ai-toolkit MiniMax H3 LoRAs (diffusion_model.blocks.N.qkv_proj/fc1/fc2 keys, bf16, ss_base_model_version = minimax_h3 metadata). All preserve and update the safetensors metadata that ComfyUI and ai-toolkit read, and validate inputs so krea2 LoRAs (different layer names: attn.gate/wk/wv/wo) are flagged rather than silently mangled."
+    },
+    {
+      "title": "Alcaitiff - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/855369456258435754",
+      "snippet": "Explore Alcaitiff&#x27;s AI creations on TENSOR"
+    },
+    {
+      "title": "[Wan2.2] Skinny/Fat slider - alcaitiff | TensorHub Art",
+      "url": "https://tensorhub.art/models/913370932301579796",
+      "snippet": "Download [Wan2.2] Skinny/Fat slider - alcaitiff - free LORA WAN_2_2_A14B_HIGH_NOISE AI model on TENSORHUB ART. By 😞 404 scheveningen2"
+    }
+  ]
+}

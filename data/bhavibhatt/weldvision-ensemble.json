@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bhavibhatt/weldvision-ensemble",
+  "slug": "bhavibhatt-weldvision-ensemble",
+  "author": "bhavibhatt",
+  "url": "https://huggingface.co/bhavibhatt/weldvision-ensemble",
+  "created_at": "2026-08-23T12:20:40.000Z",
+  "updated_at": "2026-08-23T12:35:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "image-segmentation",
+    "welding",
+    "weld-inspection",
+    "yolo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141487302,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Abdulla-B-Official/WeldVision-AI",
+      "url": "https://github.com/Abdulla-B-Official/WeldVision-AI",
+      "snippet": "📌 Overview WeldVision AI is an AI-powered web application for automated weld quality inspection using YOLO object detection."
+    },
+    {
+      "title": "WeldVision-AI/README.md at main · Abdulla-B-Official/WeldVision-AI · GitHub",
+      "url": "https://github.com/Abdulla-B-Official/WeldVision-AI/blob/main/README.md",
+      "snippet": "📌 Overview WeldVision AI is an AI-powered web application for automated weld quality inspection using YOLO object detection."
+    },
+    {
+      "title": "bhavibhatt (Bhavyang Bhatt) - Hugging Face",
+      "url": "https://huggingface.co/bhavibhatt/models",
+      "snippet": "bhavibhatt&#x27;s models1 Sort: Recently updated bhavibhatt/legal_model Sentence Similarity • 0.1B•Updated Jan 11• 4"
+    },
+    {
+      "title": "WeldVision AI — built with AI on Blink",
+      "url": "https://blink.new/p/weldvision-ai-app-edspby9j",
+      "snippet": "WeldVision AI built with AI. WeldVision AI is a powerful web app that uses real-time computer vision through a smartphone camera to instantly detect and classify welding defects like bites, spatter, and overlap, while allowing users to generate detailed inspection reports with photos."
+    },
+    {
+      "title": "WeldVision AI Inspector - a Hugging Face Space by anjanid",
+      "url": "https://huggingface.co/spaces/anjanid/weld-inspector",
+      "snippet": "AI-powered NDT weld inspection using RT-DETR & YOLO"
+    }
+  ]
+}

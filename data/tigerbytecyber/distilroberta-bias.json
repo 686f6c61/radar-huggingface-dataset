@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TigerByteCyber/distilroberta-bias",
+  "slug": "tigerbytecyber-distilroberta-bias",
+  "author": "TigerByteCyber",
+  "url": "https://huggingface.co/TigerByteCyber/distilroberta-bias",
+  "created_at": "2026-08-24T13:12:23.000Z",
+  "updated_at": "2026-08-24T13:12:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "roberta",
+    "en",
+    "dataset:valurank/wikirev-bias",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 985560272,
+  "storage_human": "986 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilroberta-bias Open-source Text Bias Detection Model - Quickly ...",
+      "url": "https://model.aibase.com/models/details/1947452299022700544",
+      "snippet": "Fine-tuned based on the pre-trained weights of distilroberta-base, used for text bias detection, and can classify text into two categories: neutral or biased."
+    },
+    {
+      "title": "valurank/distilroberta-bias · Hugging Face",
+      "url": "https://huggingface.co/valurank/distilroberta-bias",
+      "snippet": "DistilROBERTA fine-tuned for bias detection This model is based on distilroberta-base pretrained weights, with a classification head fine-tuned to classify text into 2 categories (neutral, biased)."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=distilroberta",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Base. Adapters. Finetunes. Quantizations. Merges. Apps . llama.cpp"
+    },
+    {
+      "title": "distilroberta-bias huggingface.co api & valurank distilroberta-bias ...",
+      "url": "https://www.toolify.ai/ai-model/valurank-distilroberta-bias",
+      "snippet": "distilroberta-bias huggingface.co distilroberta-bias huggingface.co is an AI model on huggingface.co that provides distilroberta-bias&#x27;s model effect (), which can be used instantly with this valurank distilroberta-bias model. huggingface.co supports a free trial of the distilroberta-bias model, and also provides paid use of the distilroberta-bias."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilroberta-base",
+      "snippet": "The model has 6 layers, 768 dimension and 12 heads, totalizing 82M parameters (compared to 125M parameters for RoBERTa-base). On average DistilRoBERTa is twice as fast as Roberta-base."
+    }
+  ]
+}

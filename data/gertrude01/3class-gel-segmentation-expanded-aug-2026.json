@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Gertrude01/3Class-Gel-Segmentation-Expanded-Aug-2026",
+  "slug": "gertrude01-3class-gel-segmentation-expanded-aug-2026",
+  "author": "Gertrude01",
+  "url": "https://huggingface.co/Gertrude01/3Class-Gel-Segmentation-Expanded-Aug-2026",
+  "created_at": "2026-08-23T14:04:56.000Z",
+  "updated_at": "2026-08-23T14:28:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 708570628,
+  "storage_human": "709 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gertrude01/3Class-Gel-Segmentation-Mar-2026 · Hugging Face",
+      "url": "https://huggingface.co/Gertrude01/3Class-Gel-Segmentation-Mar-2026",
+      "snippet": "This SMP-UNet model was trained on a subset of the GelGenie training dataset (144 images). It builds upon the GelGenie-Universal-Dec-2023 model, extending it from 2-class to 3-class segmentation (background, bands, and wells)."
+    },
+    {
+      "title": "README.md · Gertrude01/3Class-Gel-Segmentation-Mar-2026 at main",
+      "url": "https://huggingface.co/Gertrude01/3Class-Gel-Segmentation-Mar-2026/blob/main/README.md",
+      "snippet": "Gertrude01 / 3Class-Gel-Segmentation-Mar-2026 like 0 ONNX Model card FilesFiles and versions xet Community main 3Class-Gel-Segmentation-Mar-2026 /README.md Gertrude01 Update README.md bbc4e62 verified7 days ago preview code | raw Copy download link history blame contribute delete 421 Bytes"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-heretic-GGUF",
   "created_at": "2026-08-23T02:32:34.000Z",
-  "updated_at": "2026-08-23T02:56:13.000Z",
+  "updated_at": "2026-08-23T06:16:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 19889903936,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 237125555648,
+  "storage_human": "237.1 GB",
   "base_model": "inkOrCloud/Ornith-1.0-35B-abliterix",
   "formats": [
     "gguf"

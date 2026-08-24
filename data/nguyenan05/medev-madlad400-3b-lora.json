@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NguyenAn05/MedEV-MADLAD400-3B-LoRA",
+  "slug": "nguyenan05-medev-madlad400-3b-lora",
+  "author": "NguyenAn05",
+  "url": "https://huggingface.co/NguyenAn05/MedEV-MADLAD400-3B-LoRA",
+  "created_at": "2026-08-20T14:37:01.000Z",
+  "updated_at": "2026-08-24T01:39:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58851536,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MADLAD-400 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/madlad-400",
+      "snippet": "This model was added by Juarez Bochi. The original checkpoints can be found here. This is a machine translation model that supports many low-resource languages, and that is competitive with models that are significantly larger. One can directly use MADLAD-400 weights without finetuning the model:"
+    },
+    {
+      "title": "google/madlad400-3b-mt · Hugging Face",
+      "url": "https://huggingface.co/google/madlad400-3b-mt",
+      "snippet": "Model Card for MADLAD-400-3B-MT Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation TL;DR MADLAD-400-3B-MT is a multilingual machine translation model based on the T5 architecture that was trained on 1 trillion tokens covering over 450 languages using publicly available data. It is competitive with models that ..."
+    },
+    {
+      "title": "google-research/madlad_400/README.md at master - GitHub",
+      "url": "https://github.com/google-research/google-research/blob/master/madlad_400/README.md",
+      "snippet": "This repository contains the checkpoints and vocabularies from MADLAD-400: A Multilingual And Document-Level Large Audited Dataset."
+    },
+    {
+      "title": "[2309.04662] MADLAD-400: A Multilingual And Document-Level Large ...",
+      "url": "https://arxiv.org/abs/2309.04662",
+      "snippet": "We introduce MADLAD-400, a manually audited, general domain 3T token monolingual dataset based on CommonCrawl, spanning 419 languages. We discuss the limitations revealed by self-auditing MADLAD-400, and the role data auditing had in the dataset creation process. We then train and release a 10.7B-parameter multilingual machine translation model on 250 billion tokens covering over 450 languages ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/madlad-400.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/madlad-400.md",
+      "snippet": "Google has released the following variants: google/madlad400-3b-mt google/madlad400-7b-mt google/madlad400-7b-mt-bt google/madlad400-10b-mt The original checkpoints can be found here. Refer to T5&#x27;s documentation page for all API references, code examples, and notebooks. For more details regarding training and evaluation of the MADLAD-400, refer to the model card."
+    }
+  ]
+}

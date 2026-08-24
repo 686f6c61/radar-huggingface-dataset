@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-gdn-neg-eigval",
+  "slug": "jaisidhsingh-signedkda-gdn-neg-eigval",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-gdn-neg-eigval",
+  "created_at": "2026-08-23T11:30:26.000Z",
+  "updated_at": "2026-08-24T11:59:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated_deltanet",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 342328480,
+  "parameters_human": "342.3M",
+  "storage_bytes": 1369367960,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jaisidh Singh",
+      "url": "https://jaisidhsingh.github.io/",
+      "snippet": "I am a master&#x27;s student at the University of Tübingen studying machine learning and a fellow at Zuse School ELIZA. I&#x27;m also a guest researcher at the Max Planck Institute for Intelligent Systems Tübingen advised by Antonio Orvieto. Currently, I&#x27;m writing my master&#x27;s thesis on the scaling behaviour of LLMs with hybrid attention with . Previously, I was an intern at Bosch Research ..."
+    },
+    {
+      "title": "OpenThesis - a jaisidhsingh Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jaisidhsingh/openthesis",
+      "snippet": "Collection of artifacts created during my MSc in ML thesis at the University of Tübingen (with OpenEuroLLM)."
+    },
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "A smaller, faster, cleaner WeightWatcher for FLAX/JAX with XLA Python 3"
+    },
+    {
+      "title": "PDF Jaisidh Singh -",
+      "url": "https://jaisidhsingh.github.io/assets/pdf/jaisidh_resume_web.pdf",
+      "snippet": "Oct 2025 - Software Engineer Graduate Assistant at Tübingen AI Center, With Prof. Peter Gehler. May 2026 Designed & deployed end-to-end real-time interactive computer vision systems for Stadtmuseum Tübingen."
+    },
+    {
+      "title": "GitHub - jaisidhsingh/complex-kda: Efficient implementations for ...",
+      "url": "https://github.com/jaisidhsingh/complex-kda",
+      "snippet": "💥 Flash Linear Attention brings together hardware-efficient building blocks, training-ready layers, and components for modern sequence models, spanning linear attention, sparse attention, state space models, and hybrid LLM architectures. All implementations are platform-agnostic and verified on NVIDIA, AMD, and Intel hardware. Pull requests are welcome!"
+    }
+  ]
+}

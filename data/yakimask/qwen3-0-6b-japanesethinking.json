@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yakimask/qwen3-0.6B-japanesethinking",
+  "slug": "yakimask-qwen3-0-6b-japanesethinking",
+  "author": "Yakimask",
+  "url": "https://huggingface.co/Yakimask/qwen3-0.6B-japanesethinking",
+  "created_at": "2026-08-23T14:35:08.000Z",
+  "updated_at": "2026-08-23T14:35:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode Thinking",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "takumi123xxx/qwen3-0.6b-japanese-lora · Hugging Face",
+      "url": "https://huggingface.co/takumi123xxx/qwen3-0.6b-japanese-lora",
+      "snippet": "Qwen3-0.6B Japanese LoRA Adapter 🤖 This model was fine-tuned using Claude Code - Anthropic&#x27;s official CLI for Claude. Model Description This is a LoRA adapter for Qwen/Qwen3-.6B, fine-tuned on Japanese instruction data. Training Details"
+    }
+  ]
+}

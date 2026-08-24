@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max-v2.h082.pi-agent-sft-v9e-reasoning-final.step_250",
+  "slug": "agentic-ptb-sol-max-v2-h082-pi-agent-sft-v9e-reasoning-final-step_250",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max-v2.h082.pi-agent-sft-v9e-reasoning-final.step_250",
+  "created_at": "2026-08-24T00:18:58.000Z",
+  "updated_at": "2026-08-24T00:20:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-v2",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic-ptb",
+      "snippet": "Explore machine learning models. 234 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: agentic-ptb Clear all"
+    },
+    {
+      "title": "Custom Models · Documentation · Pi",
+      "url": "https://pi.dev/docs/latest/models",
+      "snippet": "The apiKey value is a placeholder because Ollama ignores it. pi still treats models as requiring auth before they appear in /model, so keyless local servers should keep a dummy value, save a key for that provider with /login, or pass --api-key when selecting the model."
+    },
+    {
+      "title": "Agentic Coding Sources - a owj0421 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/owj0421/agentic-coding-sources",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from owj0421"
+    },
+    {
+      "title": "Sol-HQ/agentic-library - GitHub",
+      "url": "https://github.com/Sol-HQ/agentic-library",
+      "snippet": "Agentic Library A curated, agent-readable library of high-signal open-source resources for building AI agents, memory systems, voice interfaces, and automation stacks."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    }
+  ]
+}

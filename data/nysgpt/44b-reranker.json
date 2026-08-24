@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NYSgpt/44b-reranker",
+  "slug": "nysgpt-44b-reranker",
+  "author": "NYSgpt",
+  "url": "https://huggingface.co/NYSgpt/44b-reranker",
+  "created_at": "2026-08-08T15:33:24.000Z",
+  "updated_at": "2026-08-24T04:13:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "reranker",
+    "cross-encoder",
+    "scientific-documents",
+    "information-retrieval",
+    "peer-review",
+    "text-ranking",
+    "base_model:Alibaba-NLP/gte-reranker-modernbert-base",
+    "base_model:finetune:Alibaba-NLP/gte-reranker-modernbert-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYSgpt (Brendan Stanton) - Hugging Face",
+      "url": "https://huggingface.co/NYSgpt/models",
+      "snippet": "Organizations NYSgpt&#x27;s models Sort: Recently updated NYSgpt/44b-reranker-minilm-l6 Text Ranking • 22.7M•Updated about 16 hours ago• 3"
+    },
+    {
+      "title": "NYSgpt/44b-reranker-gte-modernbert · Hugging Face",
+      "url": "https://huggingface.co/NYSgpt/44b-reranker-gte-modernbert",
+      "snippet": "44b-reranker-gte-modernbert A cross-encoder reranker fine-tuned on peer review → paper pairs mined from the 44B corpus. The supervision is unusual and it is the point: the query is a peer reviewer&#x27;s own summary of a paper, written by a domain expert who had never heard of this model, and the positive is the paper that review is attached to."
+    },
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    },
+    {
+      "title": "Top 5 Reranking Models to Improve RAG Results",
+      "url": "https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/",
+      "snippet": "In this article, you will learn how reranking improves the relevance of results in retrieval-augmented generation (RAG) systems by going beyond what retrievers alone can achieve. Topics we will cover include: How rerankers refine retriever outputs to deliver better answers Five top reranker models to test in 2026 Final thoughts on choosing the right reranker for your system Let&#x27;s get started."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

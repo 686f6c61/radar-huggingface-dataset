@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MiniMaxMusicTraining/soad-mm3-nextlat-xm-daron-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
+  "slug": "minimaxmusictraining-soad-mm3-nextlat-xm-daron-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
+  "author": "MiniMaxMusicTraining",
+  "url": "https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-daron-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
+  "created_at": "2026-08-24T06:38:15.000Z",
+  "updated_at": "2026-08-24T09:14:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2901119664,
+  "storage_human": "2.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RareConcepts/soad-mm3-nextlat-20260822 at main - Hugging Face",
+      "url": "https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260822/tree/main",
+      "snippet": "RareConcepts / soad-mm3-nextlat-20260822 like 0 Follow Rare Data Concepts 7 Text-to-Audio Diffusers minimaxmusic minimaxmusic-diffusers audio simpletuner Not-For-All-Audiences lora template:sd-lora standard License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building on these proprietary models, MiniMax has launched a suite of AI-native products worldwide, including MiniMax Code, MiniMax Design, MiniMax Audio, Talkie, and an open platform for enterprises and developers — delivering cutting-edge intelligent experiences to users around the globe."
+    },
+    {
+      "title": "System Of A Down - Official Site",
+      "url": "https://www.systemofadown.com/",
+      "snippet": "Stay updated with the latest news and tour updates from System Of A Down on their official site."
+    },
+    {
+      "title": "MiniMax Music 2.6 | AI Music Generator & AI Song Maker",
+      "url": "https://www.minimax-music.com/minimax-music-2-6",
+      "snippet": "MiniMax Music 2.6 is the newest generation of MiniMax Music &#x27;s AI music model, released on April 10, 2026. Enter a style prompt and lyrics into this text-to-song AI, and it generates a complete, full-length song — including natural vocals, layered instrumentation, and genre-aware mixing — in seconds."
+    },
+    {
+      "title": "Models - MiniMax API Docs",
+      "url": "https://platform.minimax.io/",
+      "snippet": "The free music generation APIs (Music-3.0-free, Music-2.6-free, music-cover-free) will be discontinued. To experience or use music generation capabilities, please visit MiniMax Audio, or use the open-source MiniMax Music 3 model on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SpatialHub/fastsam-onnx",
+  "slug": "spatialhub-fastsam-onnx",
+  "author": "SpatialHub",
+  "url": "https://huggingface.co/SpatialHub/fastsam-onnx",
+  "created_at": "2026-08-23T06:28:29.000Z",
+  "updated_at": "2026-08-23T07:27:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 336262510,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CASIA-LMC-Lab/FastSAM: Fast Segment Anything",
+      "url": "https://github.com/CASIA-LMC-Lab/FastSAM",
+      "snippet": "The Fast Segment Anything Model(FastSAM) is a CNN Segment Anything Model trained using only 2% of the SA-1B dataset published by SAM authors. FastSAM achieves comparable performance with the SAM method at 50× higher run-time speed ..."
+    },
+    {
+      "title": "fastsam_x/fastsam_x.onnx · microsoft/dml-ai-hub-models at main",
+      "url": "https://huggingface.co/microsoft/dml-ai-hub-models/blob/main/fastsam_x/fastsam_x.onnx",
+      "snippet": "main dml-ai-hub-models / fastsam_x / fastsam_x.onnx Vicenterivera Initial DML AI Hub Models 8e6ca20 9 days ago download Copy download link"
+    },
+    {
+      "title": "anakhiu/fastsam-onnx · Hugging Face",
+      "url": "https://huggingface.co/anakhiu/fastsam-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/fastsam_x at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/fastsam_x",
+      "snippet": "The Fast Segment Anything Model (FastSAM) is a novel, real-time CNN-based solution for the Segment Anything task. This task is designed to segment any object within an image based on various possible user interaction prompts. The model performs competitively despite significantly reduced computation, making it a practical choice for a variety of vision tasks. This is based on the ..."
+    },
+    {
+      "title": "FastSam-X - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/fastsam_x",
+      "snippet": "FastSam-X Generate high quality segmentation mask on device. The Fast Segment Anything Model (FastSAM) is a novel, real‑time CNN‑based solution for the Segment Anything task. This task is designed to segment any object within an image based on various possible user interaction prompts. The model performs competitively despite significantly reduced computation, making it a practical choice ..."
+    }
+  ]
+}

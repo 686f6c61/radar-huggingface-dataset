@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "best26/isomsom-Affine-5eczs4hqpr-r1",
+  "slug": "best26-isomsom-affine-5eczs4hqpr-r1",
+  "author": "best26",
+  "url": "https://huggingface.co/best26/isomsom-Affine-5eczs4hqpr-r1",
+  "created_at": "2026-08-24T12:00:18.000Z",
+  "updated_at": "2026-08-24T12:00:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483973,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "isomsom (isomsom) - Hugging Face",
+      "url": "https://huggingface.co/isomsom",
+      "snippet": "Recent Activity updated a model44 minutes ago isomsom/Affine-5eqvcfqpuo-m2 published a modelabout 1 hour ago isomsom/Affine-5eqvcfqpuo-m2 updated a modelabout 1 hour ago isomsom/Affine-5eqvcfqpuo-m1 View all activity"
+    },
+    {
+      "title": "isomsom (isomsom) - Hugging Face",
+      "url": "https://huggingface.co/isomsom/models",
+      "snippet": "isomsom&#x27;s models5 Sort: Recently updated isomsom/Affine-5ewxqvvui1-m2 35B•Updated 2 days ago• 23"
+    },
+    {
+      "title": "Best AI Models (August 2026): 399 LLMs Ranked & Scored",
+      "url": "https://benchlm.ai/best/overall",
+      "snippet": "The top AI models ranked by overall benchmark performance across all categories. Top picks: Claude Mythos 5, Claude Opus 5, Claude Fable 5. 224 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "AI Model Leaderboard 2026: Live LLM Rankings",
+      "url": "https://www.aiintelreport.com/ai-model-leaderboard",
+      "snippet": "A live, ranked leaderboard of the top AI models in 2026 — Claude, GPT-5, Gemini, DeepSeek and more — with current status, context, pricing, and every model release we cover."
+    }
+  ]
+}

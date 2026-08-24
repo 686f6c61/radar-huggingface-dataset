@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Missouter/AcoustiTrace-RT60",
+  "slug": "missouter-acoustitrace-rt60",
+  "author": "Missouter",
+  "url": "https://huggingface.co/Missouter/AcoustiTrace-RT60",
+  "created_at": "2026-08-24T10:06:42.000Z",
+  "updated_at": "2026-08-24T10:24:15.000Z",
+  "license": "acoustitrace-rt60-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "acoustitrace",
+    "audio-visual",
+    "room-acoustics",
+    "rt60",
+    "lora",
+    "arxiv:2608.02035",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186287375,
+  "storage_human": "186 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SonaVyx — AI-Powered Acoustic Measurement Software",
+      "url": "https://sonavyx.com/en",
+      "snippet": "Professional acoustic measurement in your browser. Real-time RTA, transfer function, RT60, SPL metering with AI diagnostics. IEC 61672 compliant. No installation required."
+    },
+    {
+      "title": "SonaVyx™ — Studio & Room Acoustic Design Tools | RT60, Impulse Response ...",
+      "url": "https://sonavyx.com/en/solutions/studio-design",
+      "snippet": "AI-powered studio and room acoustic design platform for recording studios, home theaters, podcast rooms, and listening rooms. RT60 measurement, impulse response analysis, acoustic treatment calculator, and room scan — with AcousPlan integration for design-time modeling."
+    },
+    {
+      "title": "Free Acoustic Calculators and Room Acoustics Tools | Acouso",
+      "url": "https://www.acouso.com/playground",
+      "snippet": "Use free acoustic calculators and interactive room acoustics tools from Acouso, including a six-band Sabine and Norris-Eyring RT60 calculator."
+    },
+    {
+      "title": "AcousPlan — Free Acoustic Design Tool | ISO 3382, WELL, LEED Compliant",
+      "url": "https://acousplan.com/",
+      "snippet": "Design acoustic spaces with engineering precision The first browser-based acoustic platform that shows you what sound looks like. Real-time RT60, ISO 3382 compliance, AI-powered recommendations — free to start."
+    },
+    {
+      "title": "Room Acoustics Simulator: Free RT60 Reverb Calculator with Ray Tracing",
+      "url": "https://simulations4all.com/simulations/room-acoustics-simulator",
+      "snippet": "Simulate room acoustics with interactive ray tracing, RT60 reverberation time calculation (Sabine & Eyring), material absorption analysis, and frequency-dependent decay visualization. Free acoustic design tool. Try it free!"
+    }
+  ]
+}

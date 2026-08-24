@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "deepakmukherjee/paper_021393628_robotics_vision_language",
+  "slug": "deepakmukherjee-paper_021393628_robotics_vision_language",
+  "author": "deepakmukherjee",
+  "url": "https://huggingface.co/deepakmukherjee/paper_021393628_robotics_vision_language",
+  "created_at": "2026-08-23T08:43:19.000Z",
+  "updated_at": "2026-08-23T08:43:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "compact",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "neutral",
+    "numeric-bibtex",
+    "robotics-vision-language",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepakmukherjee/paper_021393628_robotics_vision_language - Hugging Face",
+      "url": "https://huggingface.co/deepakmukherjee/paper_021393628_robotics_vision_language",
+      "snippet": "deepakmukherjee / paper_021393628_robotics_vision_language like 0 active compact intro-problem-solution-validation-future latex-arxiv neutral numeric-bibtex robotics-vision-language theoretical-rigorous varied-mixed License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new paper_021393628_robotics_vision_language.md Paper Files License"
+    },
+    {
+      "title": "Vision-Language-Action in Robotics: A Survey of Datasets, Benchmarks ...",
+      "url": "https://arxiv.org/html/2604.23001v1",
+      "snippet": "Building robots that can follow natural language instructions across diverse tasks and environments is a central goal of embodied AI. Vision-Language-Action (VLA) models pursue this goal by learning to map visual observations and language instructions directly to actions (19; 24). Unlike conventional manipulation systems designed for fixed tasks in controlled settings, VLA models are ..."
+    },
+    {
+      "title": "Vision Language Action Models (VLAs) - GitHub",
+      "url": "https://github.com/deepakkumar-iitr/Vision_Language_Action_Models-VLAs-",
+      "snippet": "A curated collection of resources, tools and papers for Vision Language Action Models. Tracing a rapid four-year arc (2022-2026) from Google&#x27;s first transformer-based robot policy to fully open-source, diffusion-powered, reasoning-capable generalist agents."
+    },
+    {
+      "title": "Vision_Language_Action_Models-VLAs-/README.md at main - GitHub",
+      "url": "https://github.com/deepakkumar-iitr/Vision_Language_Action_Models-VLAs-/blob/main/README.md",
+      "snippet": "A curated collection of resources, tools and papers for Vision Language Action Models. Tracing a rapid four-year arc (2022-2026) from Google&#x27;s first transformer-based robot policy to fully open-source, diffusion-powered, reasoning-capable generalist agents."
+    },
+    {
+      "title": "RT-2:Vision-Language-ActionModelsTransfer WebKnowledgetoRoboticControl",
+      "url": "https://arxiv.org/pdf/2307.15818",
+      "snippet": "The paper explores integrating vision-language models into robotic control for improved generalization and semantic reasoning, leveraging large-scale pretraining on diverse data."
+    }
+  ]
+}

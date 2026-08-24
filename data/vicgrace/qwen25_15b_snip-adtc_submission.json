@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Vicgrace/qwen25_15b_snip.adtc_submission",
+  "slug": "vicgrace-qwen25_15b_snip-adtc_submission",
+  "author": "Vicgrace",
+  "url": "https://huggingface.co/Vicgrace/qwen25_15b_snip.adtc_submission",
+  "created_at": "2026-08-23T15:41:15.000Z",
+  "updated_at": "2026-08-23T16:27:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1972096192,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vicgrace/qwen25_15b_adtc_submission · Hugging Face",
+      "url": "https://huggingface.co/Vicgrace/qwen25_15b_adtc_submission",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vicgrace/qwen25_15b_adtc_submission at main - Hugging Face",
+      "url": "https://huggingface.co/Vicgrace/qwen25_15b_adtc_submission/tree/main",
+      "snippet": "Vicgrace / qwen25_15b_adtc_submission like 0 GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal model by Qwen team at Alibaba Cloud, capable of understanding text, audio, vision, video, and performing real-time speech generation."
+    },
+    {
+      "title": "adtc-2026-submission/download_model.sh at main - GitHub",
+      "url": "https://github.com/Vicgrace01/adtc-2026-submission/blob/main/download_model.sh",
+      "snippet": "Contribute to Vicgrace01/adtc-2026-submission development by creating an account on GitHub."
+    },
+    {
+      "title": "Supported Models and Capabilities Overview - Model Studio - Alibaba ...",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/models",
+      "snippet": "Supported Models and Capabilities Overview - Model Studio - Alibaba Cloud,Alibaba Cloud Model Studio:Alibaba Cloud Model Studio offers Qwen and third-party models for text, image, audio, and video. From most capable to most cost-effective — pick what fits your use case"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Onol/pi05-piper-toothbrush-into-cup-lora",
+  "slug": "onol-pi05-piper-toothbrush-into-cup-lora",
+  "author": "Onol",
+  "url": "https://huggingface.co/Onol/pi05-piper-toothbrush-into-cup-lora",
+  "created_at": "2026-08-22T08:59:30.000Z",
+  "updated_at": "2026-08-23T04:21:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0.5",
+    "lora",
+    "piper",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28545322595,
+  "storage_human": "28.5 GB",
+  "base_model": "physical-intelligence/pi0.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onol/pi05-piper-peg-insertion-lora · Hugging Face",
+      "url": "https://huggingface.co/Onol/pi05-piper-peg-insertion-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zetanschy/pi05_lora_cap_tu_cup · Hugging Face",
+      "url": "https://huggingface.co/zetanschy/pi05_lora_cap_tu_cup",
+      "snippet": "Instructions to use zetanschy/pi05_lora_cap_tu_cup with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use zetanschy/pi05_lora_cap_tu_cup with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "Toothbrush - 2026-04-01 14:47:42 - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/982658760986067358",
+      "snippet": "Download Toothbrush - free LORA FLUX.1 AI model on TENSORHUB ART. FLUX. By AiProject"
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "Yaneosian/pi05-lora-finetune-libero - GitHub",
+      "url": "https://github.com/Yaneosian/pi05-lora-finetune-libero",
+      "snippet": "Model: π0.5 — a 3B flow-matching VLA with a PaliGemma-2B backbone and a 300M action expert. Fine-tuning: LoRA adapters injected into both modules: PaliGemma backbone: LoRA rank=16 Action expert: LoRA rank=32 Training: batch size=64, 30k steps, cosine decay (peak lr=5e-5), A100×1 (~58 hours). Framework: openpi (JAX)."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jagwang/mungkeul-physical-ai",
+  "slug": "jagwang-mungkeul-physical-ai",
+  "author": "jagwang",
+  "url": "https://huggingface.co/jagwang/mungkeul-physical-ai",
+  "created_at": "2026-08-23T10:30:36.000Z",
+  "updated_at": "2026-08-23T11:20:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "physical-ai",
+    "robotics",
+    "mujoco",
+    "disability-assistance",
+    "ppo",
+    "her",
+    "ddpg",
+    "ko",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9245890,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Physical AI",
+      "url": "https://physical-ai.ai/",
+      "snippet": "Understand physical behavior Unify geometry, spatial data, and physical signals to understand how real-world systems behave, including interactions, constraints, and failure modes that traditional software cannot model."
+    },
+    {
+      "title": "From embodied intelligence to physical AI - Nature",
+      "url": "https://www.nature.com/articles/s42256-026-01239-3",
+      "snippet": "Robotics is where systems acting in the physical world encounter consequences in real time, making it a testing ground for competing claims about world models, embodiment, affordances and physical AI."
+    },
+    {
+      "title": "Fundamentals of Physical AI - arXiv.org",
+      "url": "https://arxiv.org/pdf/2511.09497",
+      "snippet": "The following chapters define and analyze six fundamental principles of Physical AI, meaning embodiment, sensory perception, motor competence, learning ability, autonomy, and context sensitivity, and place them in a closed system model."
+    },
+    {
+      "title": "Physical AI will transform Korea manufacturing and boost global ...",
+      "url": "https://biz.chosun.com/en/en-it/2026/01/10/NZ32WHKPQZC4JJ3PIIYNDX3UYA/",
+      "snippet": "In that it attempts to create a regional-level Physical AI industrial ecosystem model beyond individual corporations&#x27; PoCs, it will be an important turning point for the development of Physical AI ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "YMmim/faster-rcnn-voc-scratch",
+  "slug": "ymmim-faster-rcnn-voc-scratch",
+  "author": "YMmim",
+  "url": "https://huggingface.co/YMmim/faster-rcnn-voc-scratch",
+  "created_at": "2026-08-23T05:07:33.000Z",
+  "updated_at": "2026-08-23T05:22:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "object-detection",
+    "faster-rcnn",
+    "pascal-voc",
+    "educational",
+    "from-scratch",
+    "en",
+    "dataset:pascal-voc-2007",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FasterRCNN-PyTorch/config/voc.yaml at main - GitHub",
+      "url": "https://github.com/explainingai-code/FasterRCNN-PyTorch/blob/main/config/voc.yaml",
+      "snippet": "This repo implements simple Faster RCNN model in PyTorch with all the essential components. - FasterRCNN-PyTorch/config/voc.yaml at main · explainingai-code ..."
+    },
+    {
+      "title": "GitHub - Daddy-Myth/Faster-RCNN-From-Scratch",
+      "url": "https://github.com/Daddy-Myth/Faster-RCNN-From-Scratch",
+      "snippet": "This architectural clarity makes Faster R-CNN well-suited for educational and experimental settings where interpretability and correctness are prioritized over raw inference speed. The model is trained entirely from scratch, without ImageNet or COCO pretraining, ensuring that all learned representations arise solely from the target dataset."
+    },
+    {
+      "title": "VOC dataset — Faster RCNN 0.1 documentation",
+      "url": "https://faster-rcnn.readthedocs.io/en/latest/tutorial/voc.html",
+      "snippet": "VOC dataset ¶ Datasets ¶ Sample flower dataset that contain total 280 images, belong to 2 species. Download Extract the downloaded file in to data forder in project root like this"
+    },
+    {
+      "title": "05_training.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pantelis/eng-ai-agents/blob/main/notebooks/scene-understanding/object-detection/faster-rcnn/pytorch/05_training/05_training.ipynb",
+      "snippet": "Training Faster RCNN End-to-End Notebook 5 of 6 in the Faster RCNN from-scratch series This notebook assembles all components (backbone + FPN, RPN, ROI head) into a single FasterRCNN module and trains it on COCO data streamed from Hugging Face."
+    },
+    {
+      "title": "Faster R-CNN — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/faster_rcnn.html",
+      "snippet": "The following model builders can be used to instantiate a Faster R-CNN model, with or without pre-trained weights. All the model builders internally rely on the torchvision.models.detection.faster_rcnn.FasterRCNN base class."
+    }
+  ]
+}

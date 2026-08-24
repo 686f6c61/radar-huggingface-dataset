@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 66,
   "trending_score": 0,
   "parameters": 3821079552,
   "parameters_human": "3.82B",
-  "storage_bytes": 22391979520,
-  "storage_human": "22.4 GB",
+  "storage_bytes": 10036526976,
+  "storage_human": "10.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

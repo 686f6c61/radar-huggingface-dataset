@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000458_peanut_mix_sim_act_Intern",
+  "slug": "dongkkka-task_000458_peanut_mix_sim_act_intern",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000458_peanut_mix_sim_act_Intern",
+  "created_at": "2026-08-24T02:23:41.000Z",
+  "updated_at": "2026-08-24T02:24:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotis",
+    "cyclo_intelligence",
+    "robotics",
+    "dataset:robotis/task_000458_peanut_mix_sim_only_act_v30",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3096154168,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "Task_900006_Collect_PeanutMix_To_Box_1110_0710_UKH_MCAP_lerobot_v21 ...",
+      "url": "https://claru.ai/datasets/dongkkka-task-900006-test",
+      "snippet": "A robotic manipulation task where a robot uses its left gripper to pick up peanut mix from a conveyor belt and place it into a collection box."
+    },
+    {
+      "title": "Dongkkka/Task_800004_pick_place_peanut_chunk50 · Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/Task_800004_pick_place_peanut_chunk50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

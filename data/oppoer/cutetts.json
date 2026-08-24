@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OPPOer/CuteTTS",
+  "slug": "oppoer-cutetts",
+  "author": "OPPOer",
+  "url": "https://huggingface.co/OPPOer/CuteTTS",
+  "created_at": "2026-08-24T12:19:40.000Z",
+  "updated_at": "2026-08-24T12:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "cutetts",
+    "text-to-speech",
+    "voice-cloning",
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "arxiv:2608.08638",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1215564020,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CuteTTS: Efficient and High-Quality Speech Synthesis via Autoregressive ...",
+      "url": "https://arxiv.org/pdf/2608.08638",
+      "snippet": "We introduce guidance-step distillation, which unifies classifier-free guidance re-moval and interval-wise integration in a single diffusion head. Under the paired efficiency protocol, the distilled model lowers mean first-audio latency by 23.3% and mean real-time factor by 40.8% while preserving synthesis quality close to that of the base model."
+    },
+    {
+      "title": "CuteTTS: Efficient and High-Quality Speech Synthesis via Autoregressive ...",
+      "url": "https://arxiv.org/html/2608.08638v1",
+      "snippet": "The base model also receives more naturalness wins than losses against MOSS-TTS-Nano, F5-TTS, and ZipVoice, while its comparison with Pocket TTS is dominated by ties. The distilled model yields results closely matching those of the base model across both evaluation dimensions. Figure 2: Subjective evaluation on the LibriSpeech test-clean subset."
+    },
+    {
+      "title": "Paper page - CuteTTS: Efficient and High-Quality Speech Synthesis via ...",
+      "url": "https://huggingface.co/papers/2608.08638",
+      "snippet": "Abstract CuteTTS is a compact continuous-autoregressive text-to-speech system that uses causal VAE latents, patch-level autoregression, and flow-matching with distilled guidance to achieve high-fidelity zero-shot voice cloning at reduced latency."
+    },
+    {
+      "title": "OPPOer (OPPO) - Hugging Face",
+      "url": "https://huggingface.co/OPPOer/models",
+      "snippet": "Org profile for OPPO on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "CuteTTS: Efficient and High-Quality Speech Synthesis via Autoregressive ...",
+      "url": "https://www.catalyzex.com/paper/cutetts-efficient-and-high-quality-speech",
+      "snippet": "CuteTTS: Efficient and High-Quality Speech Synthesis via Autoregressive Modeling of Continuous Latents: Paper and Code. Zero-shot text-to-speech (TTS) now supports interactive assistants, personalized media, and accessibility tools. All TTS systems require faithful linguistic rendering, consistent speaker identity, and low-latency response. Yet compact streaming systems must preserve ..."
+    }
+  ]
+}

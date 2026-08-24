@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/geonusaf-segNext-random-fold0",
+  "slug": "pranilllllll-geonusaf-segnext-random-fold0",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold0",
+  "created_at": "2026-08-24T04:44:48.000Z",
+  "updated_at": "2026-08-24T08:07:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segnext",
+    "mscan",
+    "geonusaf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3031716797,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pranilllllll/geonusaf-segNext-random-fold0 · Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=segnext",
+      "snippet": "Explore machine learning models. 4 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: segnext Clear all"
+    },
+    {
+      "title": "GitHub - Visual-Attention-Network/SegNeXt: Official Pytorch ...",
+      "url": "https://github.com/visual-attention-network/segnext",
+      "snippet": "SegNeXt: Rethinking Convolutional Attention Design for Semantic Segmentation (NeurIPS 2022) The repository contains official Pytorch implementations of training and evaluation codes and pre-trained models for SegNext."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "SegNeXt/mmseg/models/segmentors at main · Visual-Attention ... - GitHub",
+      "url": "https://github.com/Visual-Attention-Network/SegNeXt/tree/main/mmseg/models/segmentors",
+      "snippet": "Official Pytorch implementations for \"SegNeXt: Rethinking Convolutional Attention Design for Semantic Segmentation\" (NeurIPS 2022) - Visual-Attention-Network/SegNeXt"
+    }
+  ]
+}

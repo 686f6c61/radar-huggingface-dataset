@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "0xMiami305/Qwen3.8-27B-DFlash2-W4A16-MLP-only",
+  "slug": "0xmiami305-qwen3-8-27b-dflash2-w4a16-mlp-only",
+  "author": "0xMiami305",
+  "url": "https://huggingface.co/0xMiami305/Qwen3.8-27B-DFlash2-W4A16-MLP-only",
+  "created_at": "2026-08-24T01:36:46.000Z",
+  "updated_at": "2026-08-24T02:13:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "compressed-tensors",
+    "int4",
+    "w4a16",
+    "vllm",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 1864309248,
+  "storage_human": "1.9 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "incoai/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z-lab/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2: A Guide to Faster Qwen Inference",
+      "url": "https://hackernoon.com/qwen38-27b-dflash2-a-guide-to-faster-qwen-inference",
+      "snippet": "Explore Qwen3.8-27B-DFlash2, a speculative decoding model that delivers up to 3.43× faster Qwen3.8-27B inference with no quality loss."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

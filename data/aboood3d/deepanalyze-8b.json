@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aboOod3d/deepanalyze-8b",
+  "slug": "aboood3d-deepanalyze-8b",
+  "author": "aboOod3d",
+  "url": "https://huggingface.co/aboOod3d/deepanalyze-8b",
+  "created_at": "2026-08-24T14:06:33.000Z",
+  "updated_at": "2026-08-24T14:06:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepAnalyze: Agentic Large Language Models for Autonomous Data Science",
+      "url": "https://arxiv.org/html/2510.16872",
+      "snippet": "In this paper, we introduce DeepAnalyze-8B, the first agentic LLM designed for autonomous data science, capable of automatically completing the end-to-end pipeline from data sources to analyst-grade deep research reports."
+    },
+    {
+      "title": "RUC-DataLab/DeepAnalyze-8B · Hugging Face",
+      "url": "https://huggingface.co/RUC-DataLab/DeepAnalyze-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ruc-datalab/DeepAnalyze: DeepAnalyze is the first agentic LLM ...",
+      "url": "https://github.com/ruc-datalab/DeepAnalyze",
+      "snippet": "DeepAnalyze is the first agentic LLM for autonomous data science. It can autonomously complete a wide range of data-centric tasks without human intervention, supporting: 🛠 Entire data science pipeline: Automatically perform any data science tasks such as data preparation, analysis, modeling, visualization, and report generation."
+    },
+    {
+      "title": "DeepAnalyze",
+      "url": "https://ruc-deepanalyze.github.io/",
+      "snippet": "Experiments demonstrate that, with only 8B parameters, DeepAnalyze outperforms previous workflow-based agents built on most advanced proprietary LLMs. The model, code, and training data of DeepAnalyze are open-sourced, paving the way toward autonomous data science."
+    },
+    {
+      "title": "Mazenz/DeepAnalyze-8B-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Mazenz/DeepAnalyze-8B-Q8_0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

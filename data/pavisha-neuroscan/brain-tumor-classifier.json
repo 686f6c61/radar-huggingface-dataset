@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pavisha-neuroscan/brain-tumor-classifier",
+  "slug": "pavisha-neuroscan-brain-tumor-classifier",
+  "author": "pavisha-neuroscan",
+  "url": "https://huggingface.co/pavisha-neuroscan/brain-tumor-classifier",
+  "created_at": "2026-08-23T06:03:20.000Z",
+  "updated_at": "2026-08-23T07:23:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156893791,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pavisha-neuroscan/brain-tumor-classifier · Hugging Face",
+      "url": "https://huggingface.co/pavisha-neuroscan/brain-tumor-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI webiste - Brain Tumor Classifier - Google Sites",
+      "url": "https://sites.google.com/fis.edu/aiwebsite/ai-projects/brain-tumor-classifier",
+      "snippet": "Brain Tumor Classifier Project Explanation This project used a Neural Network to classify different kinds of brain tumors. Given an image of a brain MRI scan, it would either predict that the brain contains no tumors or classify the tumors as either glioma, meningioma or pituitary. I later created a user interface for the model."
+    },
+    {
+      "title": "GitHub - Imotechs/Neuroscan-AI: AI-powered brain MRI tumor classifier ...",
+      "url": "https://github.com/Imotechs/Neuroscan-AI",
+      "snippet": "NeuroScan AI is an end-to-end deep learning system for automated brain MRI tumor classification that combines a dual-model ensemble, Explainable AI (XAI), and an AI-powered clinical assistant to provide fast, reliable, and interpretable diagnostic support."
+    },
+    {
+      "title": "GitHub - PAVISHAM/NeuroScan-AI",
+      "url": "https://github.com/PAVISHAM/NeuroScan-AI",
+      "snippet": "🧠 NeuroScan AI: Brain Tumour Classifier NeuroScan AI is a deep learning-based web application designed to classify brain MRI images using a VGG16-based Convolutional Neural Network (CNN). The system allows users to upload an MRI scan and receive a predicted tumour category along with the model&#x27;s confidence score."
+    },
+    {
+      "title": "Brain-Tumor-Classifier | Devpost",
+      "url": "https://devpost.com/software/brain-tumor-classifier",
+      "snippet": "🧠 Brain Tumor MRI Classification A deep learning project that uses transfer learning and custom CNN architectures to classify brain tumors from MRI scans into four categories: Glioma, Meningioma, Pituitary, and No Tumor. 🎯 Project Overview This project implements two different deep learning approaches: Transfer Learning with Xception: Leveraging a pre-trained model for enhanced accuracy ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0",
+  "slug": "insertwittycommenthere-qwen2-5-14b-bma-lora-r1-s1p0",
+  "author": "InsertWittyCommentHere",
+  "url": "https://huggingface.co/InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0",
+  "created_at": "2026-08-23T04:52:35.000Z",
+  "updated_at": "2026-08-23T22:46:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 596597828,
+  "storage_human": "597 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-14B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-14B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "qwen2.5:14b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:14b-instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

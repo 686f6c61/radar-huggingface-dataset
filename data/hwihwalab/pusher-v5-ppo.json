@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/pusher-v5-ppo",
+  "slug": "hwihwalab-pusher-v5-ppo",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/pusher-v5-ppo",
+  "created_at": "2026-08-23T06:50:45.000Z",
+  "updated_at": "2026-08-24T02:51:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "continuous-control",
+    "mujoco",
+    "pusher",
+    "pusher-v5",
+    "robotics",
+    "robot",
+    "robot-arm",
+    "robotic-manipulation",
+    "7-dof",
+    "gymnasium",
+    "pytorch",
+    "en",
+    "ko",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37130122,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Gymnasium MuJoCo Pusher-v5",
+      "metric": "Mean Evaluation Reward (5-Ep Average)",
+      "value": -32.42
+    }
+  ],
+  "sources": [
+    {
+      "title": "artnfull/connect-ai-artnfull-mujoco-pusher-ppo · Hugging Face",
+      "url": "https://huggingface.co/artnfull/connect-ai-artnfull-mujoco-pusher-ppo",
+      "snippet": "🦾 MuJoCo Pusher-v5 PPO Physical AI Robot Model This repository contains a trained PPO (Proximal Policy Optimization) model for the Gymnasium MuJoCo Pusher-v5 continuous robot arm control task."
+    },
+    {
+      "title": "LTU-AI/hdppo-Pusher-v5 · Hugging Face",
+      "url": "https://huggingface.co/LTU-AI/hdppo-Pusher-v5",
+      "snippet": "LTU-AI / hdppo-Pusher-v5 like 0 Follow La Trobe AI Institute 2 Reinforcement Learning hd-ppo Pusher-v5 deep-reinforcement-learning hyperdimensional-computing fractional-power-encoding LTU-AI Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Hybrid-HD-PPO Agent playing Pusher-v5 Pipeline Usage Training ..."
+    },
+    {
+      "title": "Pusher - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/pusher/",
+      "snippet": "\"Pusher\" is a multi-jointed robot arm that is very similar to a human arm. The goal is to move a target cylinder (called object) to a goal position using the robot&#x27;s end effector (called fingertip)."
+    },
+    {
+      "title": "Pusher-v5/train_ppo.py at main · eery1677-lab/Pusher-v5 · GitHub",
+      "url": "https://github.com/eery1677-lab/Pusher-v5/blob/main/train_ppo.py",
+      "snippet": "Contribute to eery1677-lab/Pusher-v5 development by creating an account on GitHub."
+    },
+    {
+      "title": "Pusher-v5/train_colab.py at main · eery1677-lab/Pusher-v5",
+      "url": "https://github.com/eery1677-lab/Pusher-v5/blob/main/train_colab.py",
+      "snippet": "Contribute to eery1677-lab/Pusher-v5 development by creating an account on GitHub."
+    }
+  ]
+}

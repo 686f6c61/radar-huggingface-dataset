@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IDC233332/TROLL-Q4_K_M-GGUF",
+  "slug": "idc233332-troll-q4_k_m-gguf",
+  "author": "IDC233332",
+  "url": "https://huggingface.co/IDC233332/TROLL-Q4_K_M-GGUF",
+  "created_at": "2026-08-24T15:41:36.000Z",
+  "updated_at": "2026-08-24T15:41:42.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:IDC233332/TROLL",
+    "base_model:quantized:IDC233332/TROLL",
+    "license:openrail",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397805184,
+  "storage_human": "398 MB",
+  "base_model": "IDC233332/TROLL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF quantizations overview · GitHub",
+      "url": "https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9",
+      "snippet": "Now you can use the model in ollama by specifying &#x27;Llama-3.1-8B-Instruct-Fei-v1-Uncensored.Q4_K_M&#x27; as the model. You can also reuse this model in further variations with custom template, system prompt and parameters without much addition disk overhead."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "maddes8cht/nomic-ai-gpt4all-falcon-gguf · Hugging Face",
+      "url": "https://huggingface.co/maddes8cht/nomic-ai-gpt4all-falcon-gguf",
+      "snippet": "I&#x27;m constantly enhancing these model descriptions to provide you with the most relevant and comprehensive information gpt4all-falcon - GGUF Model creator: nomic-ai Original model: gpt4all-falcon K-Quants in Falcon 7b models New releases of Llama.cpp now support K-quantization for previously incompatible models, in particular all Falcon 7B models (While Falcon 40b is and always has been fully ..."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    },
+    {
+      "title": "Kebob/DeepSeek-TNG-R1T2-Chimera-IK_GGUF · Hugging Face",
+      "url": "https://huggingface.co/Kebob/DeepSeek-TNG-R1T2-Chimera-IK_GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "masondx/decoupled_new_tension_cut_rot_real_clean_shared_state",
+  "slug": "masondx-decoupled_new_tension_cut_rot_real_clean_shared_state",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/decoupled_new_tension_cut_rot_real_clean_shared_state",
+  "created_at": "2026-08-24T11:33:23.000Z",
+  "updated_at": "2026-08-24T11:33:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "decoupled_bimanual_diffusion",
+    "dataset:masondx/new_tension_cut_rot_real_clean0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 543367124,
+  "parameters_human": "543.4M",
+  "storage_bytes": 2173545416,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx (Hongming Mei) - Hugging Face",
+      "url": "https://huggingface.co/masondx",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago ... updated a dataset about 8 hours ago"
+    },
+    {
+      "title": "masondx/new_tension_cut_rot_zero · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/masondx/new_tension_cut_rot_zero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - CityU-MLO/DualOptimPlus: [ICML 2026] DualOptim+: Bridging ...",
+      "url": "https://github.com/CityU-MLO/DualOptimPlus",
+      "snippet": "[ICML 2026] DualOptim+: Bridging Shared and Decoupled Optimizer States for Better Machine Unlearning in Large Language Models - CityU-MLO/DualOptimPlus"
+    },
+    {
+      "title": "DualOptim+: Bridging Shared and Decoupled Optimizer States for Better ...",
+      "url": "https://arxiv.org/pdf/2605.21539",
+      "snippet": "It introduces a base state to capture common representations shared by for-getting and retaining objectives and delta states to preserve objective-specific residuals. This archi-tecture allows the optimizer to adaptively bridge shared and decoupled states based on the direc-tional conflict between forgetting and retaining gradients."
+    },
+    {
+      "title": "GitHub - longxiang-ai/awesome-video-diffusions: A curated and auto ...",
+      "url": "https://github.com/longxiang-ai/awesome-video-diffusions/",
+      "snippet": "A curated and auto-updated collection of video diffusion / video generation papers from arXiv, covering text-to-video, image-to-video, controllable generation, world models, video editing, and 16+ ..."
+    }
+  ]
+}

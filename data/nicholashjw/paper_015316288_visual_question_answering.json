@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nicholashjw/paper_015316288_visual_question_answering",
+  "slug": "nicholashjw-paper_015316288_visual_question_answering",
+  "author": "nicholashjw",
+  "url": "https://huggingface.co/nicholashjw/paper_015316288_visual_question_answering",
+  "created_at": "2026-08-23T04:54:28.000Z",
+  "updated_at": "2026-08-23T04:54:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "enthusiastic",
+    "html",
+    "intro-problem-solution-validation-future",
+    "mixed-active-passive",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "structured-imrad",
+    "varied-mixed",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/10.1145/3728635",
+      "snippet": "Visual Question Answering (VQA) is a growing research area within the broader multimodal AI field, integrating computer vision (CV) and natural language processing (NLP) to answer textual questions about images. In some cases, VQA incorporates external knowledge alongside images and questions to enrich the understanding and generation of answers."
+    },
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3728635",
+      "snippet": "Visual question answering (VQA) is a dynamic field of research that aims to generate textual answers from given visual and question information. It is a multimodal field that has garnered significant interest from the computer vision and natural language processing communities."
+    },
+    {
+      "title": "Explainable visual question answering: A survey on methods, datasets ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253526000941",
+      "snippet": "Abstract In recent years, visual question answering has become a significant task at the intersection of computer vision and natural language processing, requiring models to jointly understand images and textual queries. It has emerged as a popular benchmark for evaluating multimodal understanding and reasoning."
+    },
+    {
+      "title": "Visual Question Answering - GitHub",
+      "url": "https://github.com/yousefkotp/Visual-Question-Answering",
+      "snippet": "A Light weight deep learning model with with a web application to answer image-based questions with a non-generative approach for the VizWiz grand challenge 2023 by carefully curating the answer vocabulary and adding linear layer on top of Open AI&#x27;s CLIP model as image and text encoder - yousefkotp/Visual-Question-Answering"
+    },
+    {
+      "title": "VQA: Visual Question Answering - arXiv.org",
+      "url": "https://arxiv.org/pdf/1505.00468",
+      "snippet": "In this paper, we introduce the task of free-form and open-ended Visual Question Answering (VQA). A VQA system takes as input an image and a free-form, open-ended, natural-language question about the image and produces a natural-language answer as the output."
+    }
+  ]
+}

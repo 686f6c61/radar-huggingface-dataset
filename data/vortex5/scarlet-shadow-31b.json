@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Vortex5/Scarlet-Shadow-31B",
+  "slug": "vortex5-scarlet-shadow-31b",
+  "author": "Vortex5",
+  "url": "https://huggingface.co/Vortex5/Scarlet-Shadow-31B",
+  "created_at": "2026-08-23T16:24:33.000Z",
+  "updated_at": "2026-08-23T23:00:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "conversational",
+    "base_model:ReadyArt/Dark-Scarlett-v2.0-31B",
+    "base_model:merge:ReadyArt/Dark-Scarlett-v2.0-31B",
+    "base_model:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "base_model:merge:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "base_model:Vortex5/Glimmering-Citrus-31B",
+    "base_model:merge:Vortex5/Glimmering-Citrus-31B",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:merge:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578506090,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it, ReadyArt/gemma-4-31B-it-scotoma-2, ReadyArt/Dark-Scarlett-v2.0-31B, Vortex5/Glimmering-Citrus-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/models",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "TheDrummer/Skyfall-31B-v4 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Skyfall-31B-v4",
+      "snippet": "Drummer proudly presents... Skyfall 31B v4 🌠 Usage Mistral v7 Tekken Description Skyfall 31B v4 is an upscaled version of Mistral Small 3.2 2507, now more efficient and creative! Oooh damn, nailing the isekai card, coming up with military gear and everything. It seems a little more pliable and willing to go along with sudden changes in mood (grounded -> fantasy, or wholesome -> spicy). Damn ..."
+    },
+    {
+      "title": "Vortex5 AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/vortex5/",
+      "snippet": "Vortex5 AI model benchmark profile: 25 models, 1 covered benchmarks, and source-linked evaluation rows on BenchmarkList."
+    },
+    {
+      "title": "Gemma 4: How a 31B Model Beats 400B Rivals [2026]",
+      "url": "https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/",
+      "snippet": "Google Gemma 4 proves size isn&#x27;t everything. See how its 31B parameter model outperforms rivals 10x its size on key benchmarks."
+    },
+    {
+      "title": "Benchmarking Google Gemma 4 26B and 31B Locally - explore.n1n.ai",
+      "url": "https://explore.n1n.ai/blog/benchmarking-google-gemma-4-26b-31b-locally-2026-04-06",
+      "snippet": "An in-depth performance analysis of Google&#x27;s new Gemma 4 models (26B MoE and 31B Dense) running on local hardware, comparing RTX 4090 and CPU-only environments."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/sqa-grpo-entropy-step500",
+  "slug": "sandeep123-sqa-grpo-entropy-step500",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/sqa-grpo-entropy-step500",
+  "created_at": "2026-08-24T09:04:45.000Z",
+  "updated_at": "2026-08-24T09:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123 (Kumar) - Hugging Face",
+      "url": "https://huggingface.co/datasets/sandeep123/",
+      "snippet": "User profile of Kumar on Hugging Face"
+    },
+    {
+      "title": "sandeep123-ai · GitHub",
+      "url": "https://github.com/sandeep123-ai",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GRPO - Reinforcement Learning Crashcourse",
+      "url": "https://finger-bone.github.io/rl-crashcourse/05/",
+      "snippet": "RL Ch5 GRPO Introduction to GRPO GRPO (Group Relative Policy Optimization) is a novel reinforcement learning method proposed by DeepSeek, specifically designed for large language model (LLM) reinforcement learning."
+    },
+    {
+      "title": "GitHub - verl-project/verl: verl/HybridFlow: A Flexible and Efficient ...",
+      "url": "https://github.com/verl-project/verl",
+      "snippet": "verl is flexible and easy to use with: Easy extension of diverse RL algorithms: The hybrid-controller programming model enables flexible representation and efficient execution of complex post-training dataflows. Build RL dataflows such as GRPO, PPO in a few lines of code."
+    }
+  ]
+}

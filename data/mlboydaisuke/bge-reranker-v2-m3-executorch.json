@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/bge-reranker-v2-m3-ExecuTorch",
+  "slug": "mlboydaisuke-bge-reranker-v2-m3-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/bge-reranker-v2-m3-ExecuTorch",
+  "created_at": "2026-08-23T23:07:08.000Z",
+  "updated_at": "2026-08-23T23:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "text-ranking",
+    "text-classification",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:quantized:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4544974031,
+  "storage_human": "4.5 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-memos/models/bge-reranker-v2-m3 at main - GitHub",
+      "url": "https://github.com/MemTensor/mlx-memos/tree/main/models/bge-reranker-v2-m3",
+      "snippet": "Different from embedding model, reranker uses question and document as input and directly output similarity instead of embedding. You can get a relevance score by inputting query and passage to the reranker. And the score can be mapped to a float value in [0,1] by sigmoid function. BAAI/bge-reranker ..."
+    },
+    {
+      "title": "BAAI/bge-reranker-v2-m3: Multilingual Cross-Encoder Reranker | Hugging ...",
+      "url": "https://toolseekai.com/en/models/baaibge-reranker-v2-m3",
+      "snippet": "BGE Reranker v2 M3 is a cross-encoder reranking model by BAAI, built on XLM-RoBERTa, supporting 100+ languages. It outputs relevance scores for query-document pairs, achieving state-of-the-art results on multilingual retrieval benchmarks."
+    },
+    {
+      "title": "BAAI/bge-reranker-v2-m3 at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BGE Reranker v2 M3 Open-Weight AI Model | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/bge-reranker-v2-m3/",
+      "snippet": "BGE Reranker v2 M3 Lightweight multilingual reranker commonly used to improve RAG result ordering after vector search."
+    }
+  ]
+}

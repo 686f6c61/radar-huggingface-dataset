@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jommarn/Qwen-Image-2512-Penis-Heretic-V3",
+  "slug": "jommarn-qwen-image-2512-penis-heretic-v3",
+  "author": "Jommarn",
+  "url": "https://huggingface.co/Jommarn/Qwen-Image-2512-Penis-Heretic-V3",
+  "created_at": "2026-08-24T01:06:31.000Z",
+  "updated_at": "2026-08-24T03:26:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:QwenImagePipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 588904039692,
+  "storage_human": "588.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jommarn/Qwen-Image-2512-Penis-Heretic · Hugging Face",
+      "url": "https://huggingface.co/Jommarn/Qwen-Image-2512-Penis-Heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jommarn/Qwen-Image-2512-Penis-Heretic at main - Hugging Face",
+      "url": "https://huggingface.co/Jommarn/Qwen-Image-2512-Penis-Heretic/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Penis LoRa - Qwen Image 2512 - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2550440?modelVersionId=2866218",
+      "snippet": "Download Penis LoRa - Qwen Image 2512 - LORA for Qwen 2 by ericm2009. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Z-Image-Base, Qwen Image & qwen Image 2512 D1CK P3N1S LoRA - civitai.red",
+      "url": "https://civitai.red/models/1884310/z-image-base-qwen-image-and-qwen-image-2512-d1ck-p3n1s-lora?modelVersionId=2553844",
+      "snippet": "Penis LoRA - Realistic Male and Female (Transgender) Anatomy Enhancement This LoRA is designed to improve the accuracy and visual quality of male anatomy in AI-generated images. It focuses on better proportions, cleaner shapes, and more natural integration with different body types and art styles. The model works well with both realistic and semi-stylized generations, helping to reduce ..."
+    },
+    {
+      "title": "PENIS LoRA by CoachBate - Qwen Image - v3 | Qwen LoRA | Civitai",
+      "url": "https://civitai.red/models/2382421/penis-lora-by-coachbate-qwen-image",
+      "snippet": "This works with Qwen Image and Qwen Image Edit. I have a specific Qwen Image 2512 lora available here which is trained on that specific model. Version 2 Finetuned for over 9000 more steps with recaptioned images and some new images to help keep its head on straight. This is my best LoRA for Qwen Image Edit 2511."
+    }
+  ]
+}

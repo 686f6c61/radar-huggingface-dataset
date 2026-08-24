@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Vxtzq/Crowd-v1",
+  "slug": "vxtzq-crowd-v1",
+  "author": "Vxtzq",
+  "url": "https://huggingface.co/Vxtzq/Crowd-v1",
+  "created_at": "2026-08-21T14:06:48.000Z",
+  "updated_at": "2026-08-24T01:45:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6958836064,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIcrowd",
+      "url": "https://www.aicrowd.com/",
+      "snippet": "AIcrowd hosts challenges that tackle diverse problems in Artificial Intelligence with real-world impact. AIcrowd Community spearheads the state of the art, be it advanced RL innovation or applications of ML in scientific research. There is an interesting problem for everyone."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "Supported Models - GroqDocs",
+      "url": "https://console.groq.com/docs/models",
+      "snippet": "Explore all available models on GroqCloud. Featured Models and Systems Groq Compound Groq Compound is an AI system powered by openly available models that intelligently and selectively uses built-in tools to answer user queries, including web search and code execution."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

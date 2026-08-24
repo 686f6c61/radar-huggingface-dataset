@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "BrokenCompute/IDK-v1",
+  "slug": "brokencompute-idk-v1",
+  "author": "BrokenCompute",
+  "url": "https://huggingface.co/BrokenCompute/IDK-v1",
+  "created_at": "2026-08-23T21:13:23.000Z",
+  "updated_at": "2026-08-23T22:01:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "abstention",
+    "honesty",
+    "calibration",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 20231825007,
+  "storage_human": "20.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[help] Model is 1.60 GB. Model type identified as UNET-v1 ... - GitHub",
+      "url": "https://github.com/arenasys/stable-diffusion-webui-model-toolkit/issues/40",
+      "snippet": "Load the intact checkpoint, then import the UNET from your broken checkpoint, then save it under a new name. (Similar procedure to replacing a VAE, but its the UNET). Should work. Your suggestion is correct, I got UNET and VAE from the checkpoint after training instead of using the VAE from base model, but it still works."
+    },
+    {
+      "title": "BrokenAI — Is AI broken right now?",
+      "url": "https://brokenai.live/",
+      "snippet": "BrokenAI is a live reliability scoreboard answering \"is AI broken right now?\" — composite scores for 7 major AI providers (Claude, OpenAI, Mistral, Grok, DeepSeek, Kimi, Cohere) across uptime, incident frequency, severity, and recovery, sourced from official Statuspage feeds and refreshed every 60 seconds."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "Local AI Troubleshooting Guide: Every Common Problem and Fix",
+      "url": "https://insiderllm.com/guides/local-ai-troubleshooting-guide/",
+      "snippet": "Quick Answer: Most local AI problems fall into five categories: (1) Model won&#x27;t load — usually VRAM too small, reduce context or use a smaller model; (2) Slow generation — GPU not being used, check nvidia-smi and your tool&#x27;s GPU settings; (3) Garbled output — corrupted download or incompatible quant, re-download the model; (4) Out of memory — reduce num_ctx, use lower quantization, or ..."
+    },
+    {
+      "title": "Can I Run This LLM? AI Model Hardware Checker | llmrun",
+      "url": "https://llmrun.dev/",
+      "snippet": "Can I Run LLM Model Locally? Find out which AI models your machine can actually run. Check GPU compatibility, VRAM requirements, and expected performance."
+    }
+  ]
+}

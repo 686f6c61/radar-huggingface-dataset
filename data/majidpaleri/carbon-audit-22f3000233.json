@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "majidpaleri/carbon-audit-22f3000233",
+  "slug": "majidpaleri-carbon-audit-22f3000233",
+  "author": "majidpaleri",
+  "url": "https://huggingface.co/majidpaleri/carbon-audit-22f3000233",
+  "created_at": "2026-08-23T08:29:50.000Z",
+  "updated_at": "2026-08-23T08:29:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f1002603/carbon-audit-model · Hugging Face",
+      "url": "https://huggingface.co/24f1002603/carbon-audit-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aiajajaiintelligence/tds-ga8-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/aiajajaiintelligence/tds-ga8-carbon-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "CarbonAI | Unleash your potential with innovative solutions",
+      "url": "https://carbonai.eco/",
+      "snippet": "CarbonAI is purpose-built for sustainability professionals. It combines agentic AI with proprietary sustainability intelligence, expertly curated knowledge, carbon market data, and continuously updated regulations to deliver transparent, fully referenced answers you can trust. What information can CarbonAI analyse?"
+    },
+    {
+      "title": "GitLab CI/CD Savings Intelligence: Precise Carbon Audit",
+      "url": "https://devpost.com/software/gitlab-ci-cd-savings-intelligence-precise-carbon-audit",
+      "snippet": "GitLab CI/CD Savings Intelligence for Docker builds: @carbon-audit detects cache waste in merge requests, quantifies carbon impact, and proves optimization results."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-aloha_transfer_cube-seed3-half",
+  "slug": "ifaz-eqm-aloha_transfer_cube-seed3-half",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-half",
+  "created_at": "2026-08-23T12:01:47.000Z",
+  "updated_at": "2026-08-23T17:11:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "eqm",
+    "mujoco",
+    "pytorch_model_hub_mixin",
+    "en",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 509190510,
+  "parameters_human": "509.2M",
+  "storage_bytes": 2111735716,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iFaz/eqm-aloha_transfer_cube-seed3-half · Hugging Face",
+      "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-half",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iFaz/diffusion-aloha_transfer_cube-seed42 · Hugging Face",
+      "url": "https://huggingface.co/iFaz/diffusion-aloha_transfer_cube-seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "act_aloha_sim_transfer_cube_human Open-source Model - Empowering Fine ...",
+      "url": "https://model.aibase.com/models/details/1915692733462896642",
+      "snippet": "This model is a robotics control model trained using the Action Chunking Transformer (ACT) policy, specifically for the AlohaTransferCube task in the gym-aloha environment, achieving bimanual robotic arm operation for cube transfer."
+    },
+    {
+      "title": "Transfer Cube Task | huggingface/gym-aloha | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/gym-aloha/3.2-transfer-cube-task",
+      "snippet": "This document covers the Transfer Cube Task implementation in gym-aloha, focusing on task mechanics, reward structure, and MuJoCo model configuration. This is one of the two primary robotic manipulation tasks available in the environment."
+    },
+    {
+      "title": "GitHub - saquib-mehmood/aloha: Imitation Learning algorithms with Co ...",
+      "url": "https://github.com/saquib-mehmood/aloha",
+      "snippet": "This repo contains the implementation of ACT, together with 2 simulated environments: Transfer Cube and Bimanual Insertion. You can train and evaluate ACT in sim or real."
+    }
+  ]
+}

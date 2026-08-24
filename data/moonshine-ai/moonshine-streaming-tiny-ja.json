@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "moonshine-ai/moonshine-streaming-tiny-ja",
+  "slug": "moonshine-ai-moonshine-streaming-tiny-ja",
+  "author": "moonshine-ai",
+  "url": "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ja",
+  "created_at": "2026-08-24T01:48:22.000Z",
+  "updated_at": "2026-08-24T02:48:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine_streaming",
+    "automatic-speech-recognition",
+    "moonshine",
+    "streaming",
+    "asr",
+    "japanese",
+    "ja",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27015360,
+  "parameters_human": "27.0M",
+  "storage_bytes": 108079716,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moonshine-ai/moonshine-streaming-tiny · Hugging Face",
+      "url": "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny",
+      "snippet": "This is the model card for the Moonshine Streaming automatic speech recognition (ASR) models trained and released by Useful Sensors. Moonshine Streaming pairs a lightweight 50~Hz audio frontend with a sliding-window Transformer encoder to deliver low-latency streaming ASR on edge-class hardware."
+    },
+    {
+      "title": "moonshine-ai/moonshine-tiny-ja · Hugging Face",
+      "url": "https://huggingface.co/moonshine-ai/moonshine-tiny-ja",
+      "snippet": "Moonshine AI developed the models to support their business direction of developing real time speech transcription products based on low cost hardware. The following table shows comparisons of common ASR evaluations sets."
+    },
+    {
+      "title": "GitHub - moonshine-ai/moonshine: Very low latency speech to text ...",
+      "url": "https://github.com/moonshine-ai/moonshine",
+      "snippet": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces - moonshine-ai/moonshine"
+    },
+    {
+      "title": "moonshine/core/moonshine-streaming-model.cpp at main · moonshine-ai ...",
+      "url": "https://github.com/moonshine-ai/moonshine/blob/main/core/moonshine-streaming-model.cpp",
+      "snippet": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces - moonshine-ai/moonshine"
+    },
+    {
+      "title": "Streaming Models | moonshine-ai/moonshine | DeepWiki",
+      "url": "https://deepwiki.com/moonshine-ai/moonshine/8.1-streaming-models",
+      "snippet": "Streaming Models Relevant source files This page explains how streaming models work within Moonshine Voice: their ONNX session decomposition, the MoonshineStreamingState buffer design, KV caching, speculative decoding, and the streaming_config.json format. For a comparison with the non-streaming (batch) architecture, see Non-Streaming Models."
+    }
+  ]
+}

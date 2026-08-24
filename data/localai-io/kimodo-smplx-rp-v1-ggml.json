@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LocalAI-io/Kimodo-SMPLX-RP-v1-GGML",
+  "slug": "localai-io-kimodo-smplx-rp-v1-ggml",
+  "author": "LocalAI-io",
+  "url": "https://huggingface.co/LocalAI-io/Kimodo-SMPLX-RP-v1-GGML",
+  "created_at": "2026-08-23T13:43:39.000Z",
+  "updated_at": "2026-08-23T13:55:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "text-to-motion",
+    "smplx",
+    "kimodo",
+    "base_model:nvidia/Kimodo-SMPLX-RP-v1",
+    "base_model:quantized:nvidia/Kimodo-SMPLX-RP-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 282790715,
+  "parameters_human": "282.8M",
+  "storage_bytes": 1131199392,
+  "storage_human": "1.1 GB",
+  "base_model": "nvidia/Kimodo-SMPLX-RP-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - localai-org/kimodo.cpp: NVIDIA Kimodo ported to C++/GGML",
+      "url": "https://github.com/localai-org/kimodo.cpp",
+      "snippet": "Status Kimodo-SMPLX-RP-v1 accepts either a UTF-8 prompt or a precomputed LLM2Vec embedding and generates unconstrained SMPL-X22 local rotations and root translations on CPU or Vulkan. The text encoder uses eight-layer Vulkan chunks by default; set KIMODO_TEXT_LAYER_CHUNK=1..32 to tune VRAM use."
+    },
+    {
+      "title": "GitHub - nv-tlabs/kimodo: Official implementation of Kimodo, a ...",
+      "url": "https://github.com/nv-tlabs/kimodo",
+      "snippet": "Official implementation of Kimodo, a kinematic motion diffusion model for high-quality human(oid) motion generation. - nv-tlabs/kimodo"
+    },
+    {
+      "title": "nvidia/Kimodo-SMPLX-RP-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Kimodo-SMPLX-RP-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Using Kimodo-SMPLX Model — Kimodo - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/sil/projects/kimodo/docs/getting_started/installation_smpl.html",
+      "snippet": "The SMPL-X version of Kimodo is gated, so before trying to generate motions with it in the CLI or demo, go to the Hugging Face model page and request access. As described in the installation process, make sure your HF token is properly set up so your access to the model can be authenticated."
+    }
+  ]
+}

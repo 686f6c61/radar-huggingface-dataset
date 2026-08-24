@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HRFYTRE45E/TTS-v0x",
+  "slug": "hrfytre45e-tts-v0x",
+  "author": "HRFYTRE45E",
+  "url": "https://huggingface.co/HRFYTRE45E/TTS-v0x",
+  "created_at": "2026-08-23T16:30:00.000Z",
+  "updated_at": "2026-08-23T17:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 506634112,
+  "parameters_human": "506.6M",
+  "storage_bytes": 7288941071,
+  "storage_human": "7.3 GB",
+  "base_model": "TAMERer/spark-tts-arabic-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "Free AI Text to Speech Online - 35+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 35+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    },
+    {
+      "title": "TTS.ai - Free AI Voice Platform | Text to Speech, Voice Cloning, Speech ...",
+      "url": "https://tts.ai/",
+      "snippet": "Welcome to TTS.ai, the most comprehensive AI voice platform. With over twenty models and one hundred voices, we make text-to-speech easy and natural."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=tts",
+      "snippet": "Explore machine learning models. ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF"
+    },
+    {
+      "title": "VoxCPM: Open Source TTS for Creative & Expressive Voices",
+      "url": "https://voxcpm.com/en/",
+      "snippet": "Free, open-source TTS with voice cloning! Create controllable, expressive AI voices in 30+ languages and 48kHz studio-quality audio. Perfect for creators & developers. Try it now!"
+    }
+  ]
+}

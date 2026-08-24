@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "szk1ck/act-so101-ycb-pickplace",
+  "slug": "szk1ck-act-so101-ycb-pickplace",
+  "author": "szk1ck",
+  "url": "https://huggingface.co/szk1ck/act-so101-ycb-pickplace",
+  "created_at": "2026-08-24T13:41:38.000Z",
+  "updated_at": "2026-08-24T14:05:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:szk1ck/so101-ycb-pickplace",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6195267852,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "szk1ck/so101-ycb-pickplace · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/szk1ck/so101-ycb-pickplace",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "szk1ck/act_so101_demo · Hugging Face",
+      "url": "https://huggingface.co/szk1ck/act_so101_demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Autonomous Pick & Place with SO-101 Arm - YouTube",
+      "url": "https://www.youtube.com/watch?v=oDDR4Vwr4Uo",
+      "snippet": "In this video, I demonstrate a trained Action Chunking Transformer (ACT) policy running autonomously on the SO-101 robotic arm.The policy was trained on tele..."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

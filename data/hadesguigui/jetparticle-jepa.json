@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HadesGuigui/JetParticle-JEPA",
+  "slug": "hadesguigui-jetparticle-jepa",
+  "author": "HadesGuigui",
+  "url": "https://huggingface.co/HadesGuigui/JetParticle-JEPA",
+  "created_at": "2026-08-24T08:24:46.000Z",
+  "updated_at": "2026-08-24T08:29:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2606.14813",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234664744,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2606.14813] JetParticle-JEPA: An Efficient Self-Supervised ...",
+      "url": "https://arxiv.org/abs/2606.14813",
+      "snippet": "On Top Quark and Quark-Gluon Tagging benchmarks, it remains on par with supervised methods. The learned representations also exhibit strong robustness to missing detector information and improved uncertainty behavior, highlighting JP-JEPA as a promising foundation-model framework for robust and data-efficient jet physics at the LHC."
+    },
+    {
+      "title": "GitHub - AI-in-Transportation-Lab/awesome-jepa: A carefully curated ...",
+      "url": "https://github.com/AI-in-Transportation-Lab/awesome-jepa",
+      "snippet": "A carefully curated collection of high-quality tools, libraries, research papers, projects, and tutorials centered around Joint Embedding Predictive Architecture (JEPA) — a self-supervised learning paradigm introduced by Yann LeCun and Meta AI that learns representations by predicting representations of the future from representations of the present, without reconstructing pixels or tokens ..."
+    },
+    {
+      "title": "JetParticle-JEPA: An Efficient Self-Supervised Representation Learning ...",
+      "url": "https://arxiv.org/html/2606.14813v1",
+      "snippet": "To overcome these fundamental limitations, we introduce JetParticle-JEPA (JP-JEPA), a self-supervised foundation model framework that learns directly from the raw set of constituent particles without any intermediate clustering, voxelization, or discrete tokenization."
+    },
+    {
+      "title": "Deep Dive into Yann LeCun&#x27;s JEPA | Rohit Bandaru",
+      "url": "https://rohitbandaru.github.io/blog/JEPA-Deep-Dive/",
+      "snippet": "A deep dive into Yann LeCun&#x27;s Joint Embedding Predictive Architecture, covering I-JEPA, V-JEPA, V-JEPA 2, and energy-based alternatives to generative AI."
+    },
+    {
+      "title": "JetParticle-JEPA: An Efficient Self-Supervised Representation Learning ...",
+      "url": "https://www.emergentmind.com/papers/2606.14813",
+      "snippet": "On Top Quark and Quark-Gluon Tagging benchmarks, it remains on par with supervised methods. The learned representations also exhibit strong robustness to missing detector information and improved uncertainty behavior, highlighting JP-JEPA as a promising foundation-model framework for robust and data-efficient jet physics at the LHC."
+    }
+  ]
+}

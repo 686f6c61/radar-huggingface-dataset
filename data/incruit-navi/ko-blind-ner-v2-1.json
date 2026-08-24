@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "incruit-navi/ko-blind-ner-v2.1",
+  "slug": "incruit-navi-ko-blind-ner-v2-1",
+  "author": "incruit-navi",
+  "url": "https://huggingface.co/incruit-navi/ko-blind-ner-v2.1",
+  "created_at": "2026-08-23T23:22:18.000Z",
+  "updated_at": "2026-08-24T00:15:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:klue/roberta-large",
+    "base_model:finetune:klue/roberta-large",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 335632409,
+  "parameters_human": "335.6M",
+  "storage_bytes": 2685165704,
+  "storage_human": "2.7 GB",
+  "base_model": "klue/roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "인크루트 Navi · AI Companion Brand",
+      "url": "https://navi.incruit.com/",
+      "snippet": "인크루트 Navi는 기업의 공정한 채용과 당신의 커리어 성장을 함께 잇는 AI 동반자 브랜드입니다. 채용 정보 탐색부터 커리어 설계까지 AI가 함께합니다."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

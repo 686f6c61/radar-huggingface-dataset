@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Vaisshhh/data-quality-classifier",
+  "slug": "vaisshhh-data-quality-classifier",
+  "author": "Vaisshhh",
+  "url": "https://huggingface.co/Vaisshhh/data-quality-classifier",
+  "created_at": "2026-08-24T12:36:45.000Z",
+  "updated_at": "2026-08-24T12:42:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5656,
+  "storage_human": "5656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/quality-classifier-deberta · Hugging Face",
+      "url": "https://huggingface.co/nvidia/quality-classifier-deberta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "dejanseo/Query-Quality-Classifier · Hugging Face",
+      "url": "https://huggingface.co/dejanseo/Query-Quality-Classifier",
+      "snippet": "We build on the work by Manaal Faruqui and Dipanjan Das from Google AI Language team to train a search query classifier of well-formed search queries. Our model offers a 10% improvement over Google&#x27;s classifier by utilising ALBERT architecture instead of LSTM."
+    },
+    {
+      "title": "Data Quality Over Model Complexity: Rethinking the AI ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/398638913_Data_Quality_Over_Model_Complexity_Rethinking_the_AI_Performance_Paradigm",
+      "snippet": "This paper challenges the prevailing model-centric mindset by arguing that high-quality, well-curated data is a far more powerful driver of AI success than incremental increases in model size."
+    },
+    {
+      "title": "AI Excellence: Framework for Data Quality & Classification - AvePoint",
+      "url": "https://www.avepoint.com/blog/strategy-blog/building-ai-excellence-a-framework-for-data-quality-and-classification",
+      "snippet": "Unlock AI&#x27;s full potential with clean, well-classified data. Discover essential data quality practices that drive smarter, faster, and safer AI outcomes."
+    }
+  ]
+}

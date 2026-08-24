@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2",
+  "slug": "fastvideo-fastvideo-minimax-fasth3-preview-v0-2",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2",
+  "created_at": "2026-08-23T04:46:57.000Z",
+  "updated_at": "2026-08-23T05:12:03.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "video",
+    "audio",
+    "text-to-audio-video",
+    "distillation",
+    "dmd2",
+    "few-step",
+    "minimax-h3",
+    "fastvideo",
+    "fasth3",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 55,
+  "trending_score": 9,
+  "parameters": 35049751296,
+  "parameters_human": "35.05B",
+  "storage_bytes": 147835483860,
+  "storage_human": "147.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2",
+      "snippet": "Instructions to use FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1 at main",
+      "url": "https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1/tree/main",
+      "snippet": "Instructions to use FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1 with Diffusers:"
+    },
+    {
+      "title": "FastVideo/tools/minimax_h3 at main · hao-ai-lab/FastVideo",
+      "url": "https://github.com/hao-ai-lab/FastVideo/tree/main/tools/minimax_h3",
+      "snippet": "A unified inference and post-training framework for accelerated video generation. - hao-ai-lab/FastVideo"
+    },
+    {
+      "title": "FastVideo FastH3: Free 4-Step MiniMax H3 Video Model",
+      "url": "http://creativeaishow.com/fastvideo-fasth3-the-free-4-step-minimax-h3-video-model-and-the-license-that-blocks-us-creators/",
+      "snippet": "FastVideo&#x27;s FastH3 cuts MiniMax H3 from 50 denoising steps to 4, with free weights and a free demo. The license blocks US and EU creators - here&#x27;s the fix."
+    },
+    {
+      "title": "FastVideo",
+      "url": "https://haoailab.com/FastVideo/",
+      "snippet": "FastVideo is an inference and post-training framework for diffusion models. It features an end-to-end unified pipeline for accelerating diffusion models, starting from data preprocessing to model training, finetuning, distillation, and inference. FastVideo is designed to be modular and extensible, allowing users to easily add new optimizations and techniques. Whether it is training-free ..."
+    }
+  ]
+}

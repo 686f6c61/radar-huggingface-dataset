@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/modernbert-base-3class-lat-intertext-v1",
+  "slug": "julian-schelb-modernbert-base-3class-lat-intertext-v1",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/modernbert-base-3class-lat-intertext-v1",
+  "created_at": "2026-08-24T13:43:07.000Z",
+  "updated_at": "2026-08-24T13:54:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "intertextuality",
+    "latin",
+    "multiclass",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149607171,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598442860,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julian-schelb/modernbert-base-class-lat-intertext-v1 · Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/modernbert-base-class-lat-intertext-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the repository where you can find ModernBERT, our experiments to bring BERT into modernity via both architecture changes and scaling. This repository noticeably introduces FlexBERT, our modular approach to encoder building blocks, and heavily relies on .yaml configuration files to build models."
+    },
+    {
+      "title": "julian-schelb (Julian) - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/models",
+      "snippet": "NLP, Entity Extraction, Graph Representation julian-schelb/roberta-base-latin-v2-class-lat-intertext-v1"
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    },
+    {
+      "title": "ModernBERT/examples at main · AnswerDotAI/ModernBERT · GitHub",
+      "url": "https://github.com/AnswerDotAI/ModernBERT/tree/main/examples",
+      "snippet": "In this folder, you can find different boilerplates to train and evaluate retrieval models using ModernBERT as the backbone, with Sentence Transformers for single vector retrieval (DPR) and PyLate for multi vector retrieval (ColBERT). You can use train_st.py and train_pylate.py to train a single vector model using contrastive learning on MS-MARCO with mined hard negatives and a multi vector ..."
+    }
+  ]
+}

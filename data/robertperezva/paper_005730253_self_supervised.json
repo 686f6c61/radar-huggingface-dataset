@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "robertperezva/paper_005730253_self_supervised",
+  "slug": "robertperezva-paper_005730253_self_supervised",
+  "author": "robertperezva",
+  "url": "https://huggingface.co/robertperezva/paper_005730253_self_supervised",
+  "created_at": "2026-08-23T05:19:42.000Z",
+  "updated_at": "2026-08-23T05:19:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "concise-analytical",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "latex-arxiv",
+    "neutral",
+    "numeric-nature",
+    "self-supervised",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "Free Web Sessions - American Concrete Institute",
+      "url": "https://www.concrete.org/education/freewebsessions.aspx?st=Finite%20Element%20Structural%20Analysis%20henry%20t%20y%20yang",
+      "snippet": "This session features presentations associated with 10 collaborative papers from within a larger symposium volume. Each manuscript was written by groups of faculty who use some of the most innovative approaches to teach topics in concrete materials and structural concrete design at the upper-division and graduate level."
+    },
+    {
+      "title": "PDF Self-Supervised Learning - Stanford University",
+      "url": "https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf",
+      "snippet": "Can self-supervised learning help? Self-supervised learning (informal definition): supervise using labels generated from the data without any manual or as weak label sources Idea: Hide or modify part of the input. Ask model to recover input or classify what changed. Self-supervised task referred to the pretext task"
+    },
+    {
+      "title": "A survey on design choices for self-supervised learning in ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11506-9",
+      "snippet": "Self-supervised learning is a successful strategy to overcome data scarcity and improve robustness in computer vision by adding a pretext task that can exploit inherent data relationships as supervision signals during pretraining. However, the combination of pretraining and downstream training renders model design more complex, as additional design choices are required. This paper analyses the ..."
+    },
+    {
+      "title": "A Survey of Self-Supervised Learning from Multiple Perspectives ...",
+      "url": "https://arxiv.org/pdf/2301.05712v1",
+      "snippet": "Several papers have conducted research in theoretical direc-tions [200], [201]. Yang et al. [202] empirically and theoret-ically demonstrated that class-imbalanced learning can sig-nificantly benefit both self-supervised and semi-supervised learning."
+    }
+  ]
+}

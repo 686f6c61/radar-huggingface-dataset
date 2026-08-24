@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaisidhsingh/SignedKDA-kda-neg-eigval",
+  "slug": "jaisidhsingh-signedkda-kda-neg-eigval",
+  "author": "jaisidhsingh",
+  "url": "https://huggingface.co/jaisidhsingh/SignedKDA-kda-neg-eigval",
+  "created_at": "2026-08-23T11:30:51.000Z",
+  "updated_at": "2026-08-24T11:59:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kda",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 347618128,
+  "parameters_human": "347.6M",
+  "storage_bytes": 1390535728,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaisidhsingh (Jaisidh Singh) · GitHub",
+      "url": "https://github.com/jaisidhsingh/",
+      "snippet": "Deep learning researcher. jaisidhsingh has 57 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Jaisidh Singh",
+      "url": "https://jaisidhsingh.github.io/",
+      "snippet": "I am a master&#x27;s student at the University of Tübingen studying machine learning and a fellow at Zuse School ELIZA. I&#x27;m also a guest researcher at the Max Planck Institute for Intelligent Systems Tübingen advised by Antonio Orvieto. Currently, I&#x27;m writing my master&#x27;s thesis on the scaling behaviour of LLMs with hybrid attention with . Previously, I was an intern at Bosch Research ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "cgcristi0/qwenard3-80b-lora",
+  "slug": "cgcristi0-qwenard3-80b-lora",
+  "author": "cgcristi0",
+  "url": "https://huggingface.co/cgcristi0/qwenard3-80b-lora",
+  "created_at": "2026-08-24T04:01:57.000Z",
+  "updated_at": "2026-08-24T04:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "persona",
+    "roleplay",
+    "conversational",
+    "moe",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148605482,
+  "storage_human": "149 MB",
+  "base_model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-Next-80B-A3B-Instruct-CPT-LoRA-HyperSwitch",
+      "url": "https://huggingface.co/AdityaNarayan/Qwen3-Next-80B-A3B-Instruct-CPT-LoRA-HyperSwitch",
+      "snippet": "A LoRA fine-tuned model based on Qwen/Qwen3-Next-80B-A3B-Instruct specialized for the Hyperswitch Rust codebase. This model excels at understanding payment processing patterns, Hyperswitch architecture, and Rust development practices."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,045 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Next 80B-A3B Instruct · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/qwen3-next-80b-a3b",
+      "snippet": "Preview of a new ultra-sparse Qwen architecture: 80B total, 3B active per token (3.75 percent of params), 512 experts with 10 routed plus 1 shared. Hybrid layout alternates Gated DeltaNet and gated attention. Alibaba reported 10 percent of the training cost of Qwen3-32B and 10x the inference throughput beyond 32K context."
+    },
+    {
+      "title": "oumi/configs/recipes/qwen3_next/sft/80b_a3b_lora/train.yaml at main ...",
+      "url": "https://github.com/oumi-ai/oumi/blob/main/configs/recipes/qwen3_next/sft/80b_a3b_lora/train.yaml",
+      "snippet": "# LoRA config for Qwen3-Next 80B A3B (MoE model with 3B activated params)."
+    }
+  ]
+}

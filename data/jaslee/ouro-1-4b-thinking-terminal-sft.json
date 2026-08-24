@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jaslee/Ouro-1.4B-Thinking-terminal-sft",
+  "slug": "jaslee-ouro-1-4b-thinking-terminal-sft",
+  "author": "jaslee",
+  "url": "https://huggingface.co/jaslee/Ouro-1.4B-Thinking-terminal-sft",
+  "created_at": "2026-08-23T04:01:53.000Z",
+  "updated_at": "2026-08-23T04:02:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ouro",
+    "loop-lm",
+    "terminal-bench",
+    "agent",
+    "sft",
+    "custom_code",
+    "base_model:ByteDance/Ouro-1.4B-Thinking",
+    "base_model:finetune:ByteDance/Ouro-1.4B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 1434652673,
+  "parameters_human": "1.43B",
+  "storage_bytes": 5738694821,
+  "storage_human": "5.7 GB",
+  "base_model": "ByteDance/Ouro-1.4B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ouro: Looped Language Models",
+      "url": "https://ouro-llm.github.io/",
+      "snippet": "🔄 Looped Architecture Ouro uses a parameter-shared looped architecture where the same transformer blocks are applied recurrently. This allows the model to perform iterative computation in latent space, enabling deeper reasoning without proportionally increasing parameter count. Our models use 4 recurrent steps (R4) to achieve exceptional parameter efficiency. 🎯 Exceptional Parameter ..."
+    },
+    {
+      "title": "LLM-OS-Models/Ouro-1.4B-Thinking-Terminal-SFT · Hugging Face",
+      "url": "https://huggingface.co/LLM-OS-Models/Ouro-1.4B-Thinking-Terminal-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ByteDance/Ouro-1.4B · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Ouro-1.4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Scaling Latent Reasoning via Looped Language Models",
+      "url": "https://arxiv.org/html/2510.25741v4",
+      "snippet": "Our study establishes loop depth as a third scaling axis beyond model size and data, and we publicly release the Ouro model family (1.4B and 2.6B parameters) to demonstrate the benefits of LoopLM at scale. Figure 2: Performance on advanced reasoning benchmarks. Ouro-Thinking models compared with strong baselines such as Qwen3 and DeepSeek-Distill."
+    },
+    {
+      "title": "Scaling Latent Reasoning via Looped Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2510.25741v1",
+      "snippet": "Our study of LoopLM establishes the number of recursion as a third scaling axis beyond model size and data, and we publicly release the Ouro model family (1.4B and 2.6B parameters) to demonstrate the benefits of LoopLM at scale. Figure 2: Performance on advanced reasoning benchmarks."
+    }
+  ]
+}

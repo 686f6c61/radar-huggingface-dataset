@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diffusion_aloha_sim_transfer_cube",
+  "slug": "masondx-diffusion_aloha_sim_transfer_cube",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube",
+  "created_at": "2026-08-23T11:20:01.000Z",
+  "updated_at": "2026-08-23T11:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 263450374,
+  "parameters_human": "263.5M",
+  "storage_bytes": 1053841936,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/aloha_sim_transfer_cube_human - Hugging Face",
+      "url": "https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot/act_aloha_sim_transfer_cube_human · Hugging Face",
+      "url": "https://huggingface.co/lerobot/act_aloha_sim_transfer_cube_human",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - saquib-mehmood/aloha: Imitation Learning algorithms with Co ...",
+      "url": "https://github.com/saquib-mehmood/aloha",
+      "snippet": "This repo contains the implementation of ACT, together with 2 simulated environments: Transfer Cube and Bimanual Insertion. You can train and evaluate ACT in sim or real."
+    },
+    {
+      "title": "Low accuracy for diffusion policy+aloha env+sim_transfer_cude_human ...",
+      "url": "https://github.com/huggingface/lerobot/issues/502",
+      "snippet": "I adapted the codes to train diffusion policy on the aloha_sim_transfer_cube_scripted dataset and get the same results as you. The EE always tries to clip a wrong position. Just like below:"
+    },
+    {
+      "title": "aloha_sim_transfer_cube_human - DataTrain.AI",
+      "url": "https://www.datatrain.ai/datasets/hf-lerobot-aloha-sim-transfer-cube-human/",
+      "snippet": "See the full description on the dataset page: sim transfer cube human. Source: Hugging Face Hub (lerobot/aloha_sim_transfer_cube_human). Metadata imported from the dataset&#x27;s Hub tags."
+    }
+  ]
+}

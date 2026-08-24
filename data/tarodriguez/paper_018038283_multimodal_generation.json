@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tarodriguez/paper_018038283_multimodal_generation",
+  "slug": "tarodriguez-paper_018038283_multimodal_generation",
+  "author": "tarodriguez",
+  "url": "https://huggingface.co/tarodriguez/paper_018038283_multimodal_generation",
+  "created_at": "2026-08-23T08:07:48.000Z",
+  "updated_at": "2026-08-23T08:07:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "enthusiastic",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "multimodal-generation",
+    "numeric-apa",
+    "passive",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "We also summarize existing large-scale multi-modal datasets for better model pretraining in the future. To conclude the paper, we present several challenging future directions, which we believe can contribute to the ongoing advancement of multi-modal generative AI."
+    },
+    {
+      "title": "Introduction to Multimodal Generative AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1",
+      "snippet": "A state-of-the-art method in machine learning is called Multimodal Generative Artificial Intelligence (AI), which aims to produce a variety of outputs in many modalities, including text, audio, and images. This survey explores multimodal generative AI&#x27;s developments, techniques, and uses. First, we clarify the main concepts behind such models, such as adaptive autoencoders (VAEs), generative ..."
+    },
+    {
+      "title": "Accepted Findings Papers - EMNLP 2026",
+      "url": "https://2026.emnlp.org/program/find_papers/",
+      "snippet": "VLM Is a Strong Reranker: Advancing Multimodal Retrieval-augmented Generation via Knowledge-enhanced Reranking and Noise-injected Training Zhanpeng Chen, Chengjin Xu, Yiyan Qi, Xuhui Jiang, Jian Guo"
+    },
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Therefore, this paper provides a comprehensive overview of multi-modal generative AI, including multi-modal LLMs, diffusions, and the unification for understanding and generation."
+    },
+    {
+      "title": "Generative AI for multimodal content: a survey with ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11525-6",
+      "snippet": "Text-to-Multimodal Generation is a core paradigm in Generative AI for multimodal content, enabling a single textual input to generate outputs across multiple modalities."
+    }
+  ]
+}

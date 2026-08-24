@@ -5,7 +5,7 @@
   "author": "Asilarkness",
   "url": "https://huggingface.co/Asilarkness/testgeniy",
   "created_at": "2026-08-11T19:40:06.000Z",
-  "updated_at": "2026-08-20T20:52:53.000Z",
+  "updated_at": "2026-08-23T04:23:22.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,13 +27,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 2239,
+  "likes": 1,
+  "downloads_30d": 2887,
   "trending_score": 0,
   "parameters": 550796544,
   "parameters_human": "550.8M",
-  "storage_bytes": 238349072233,
-  "storage_human": "238.3 GB",
+  "storage_bytes": 239450696753,
+  "storage_human": "239.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

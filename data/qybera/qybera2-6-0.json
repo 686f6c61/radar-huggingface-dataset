@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Qybera/qybera2.6-0",
+  "slug": "qybera-qybera2-6-0",
+  "author": "Qybera",
+  "url": "https://huggingface.co/Qybera/qybera2.6-0",
+  "created_at": "2026-08-24T07:59:36.000Z",
+  "updated_at": "2026-08-24T08:05:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "qwen",
+    "qwen2.5",
+    "conversational",
+    "code",
+    "custom-persona",
+    "kenya",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qybera (Qybera) - Hugging Face",
+      "url": "https://huggingface.co/Qybera",
+      "snippet": "Recent Activity updated a model 2 days ago Qybera/dakitari-instruct-v2-advanced updated a model 10 days ago Qybera/Qybera2.6-.5-instruct published a model 13 days ago"
+    },
+    {
+      "title": "Qybera/Qybera2.6-0.5-instruct · Hugging Face",
+      "url": "https://huggingface.co/Qybera/Qybera2.6-0.5-instruct",
+      "snippet": "Qybera2.5-.5B-Instruct Introduction Qybera2.5 is the latest series of Qybera large language models. For Qybera2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qybera2.5 brings the following improvements upon Qybera2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics ..."
+    },
+    {
+      "title": "Qybera2.6 0.5 Instruct — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qybera2-6-0-5-instruct",
+      "snippet": "Overview Qybera2.6 0.5 Instruct is a efficient model from Featherless with a 33K context window, supporting function calling. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Qualcomm® AI Hub Models - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "snippet": "Using Qualcomm® AI Hub Workbench, the export script will: Compile the model for the chosen device and target runtime (see: Compiling Models on AI Hub Workbench). If applicable, Quantize the model (see: Quantization on AI Hub Workbench) Profile the compiled model on a real device in the cloud (see: Profiling Models on AI Hub Workbench)."
+    }
+  ]
+}

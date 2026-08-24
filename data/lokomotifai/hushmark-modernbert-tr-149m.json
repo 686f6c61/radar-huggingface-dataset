@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lokomotifai/hushmark-modernbert-tr-149m",
+  "slug": "lokomotifai-hushmark-modernbert-tr-149m",
+  "author": "lokomotifai",
+  "url": "https://huggingface.co/lokomotifai/hushmark-modernbert-tr-149m",
+  "created_at": "2026-08-23T10:03:40.000Z",
+  "updated_at": "2026-08-23T10:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "pii",
+    "ner",
+    "turkish",
+    "kvkk",
+    "hushmark",
+    "token-classification",
+    "tr",
+    "base_model:ytu-ce-cosmos/modernbert-tr-base",
+    "base_model:quantized:ytu-ce-cosmos/modernbert-tr-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1340618459,
+  "storage_human": "1.3 GB",
+  "base_model": "ytu-ce-cosmos/modernbert-tr-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lokomotifai/hushmark: Offline-first Turkish PII detection ...",
+      "url": "https://github.com/lokomotifai/hushmark",
+      "snippet": "The adopted hushmark-tr weights are intentionally not stored in Git. Install the separately distributed, checksum-verified model under models/hushmark-tr/ before model-backed startup. Bootstrap never substitutes or regenerates production weights implicitly. For a single-host community pilot, start with production Compose."
+    },
+    {
+      "title": "lokomotifai/hushmark-berturk-112m · Hugging Face",
+      "url": "https://huggingface.co/lokomotifai/hushmark-berturk-112m",
+      "snippet": "This private release is a challenger checkpoint, not the currently adopted Hushmark production model. It substantially outperformed hushmark-tr-289m on the new locked synthetic holdout, but runtime integration, ONNX parity, production-like evaluation, and shadow testing are still required before promotion."
+    },
+    {
+      "title": "Finally, a Replacement for BERT: Introducing ModernBERT",
+      "url": "https://huggingface.co/blog/modernbert",
+      "snippet": "TL;DR This blog post introduces ModernBERT, a family of state-of-the-art encoder-only models representing improvements over older generation encoders across the board, with a 8192 sequence length, better downstream performance and much faster processing. ModernBERT is available as a slot-in replacement for any BERT-like models, with both a base (149M params) and large (395M params) model size ..."
+    },
+    {
+      "title": "lokomotifai (Lokomotif AI) - Hugging Face",
+      "url": "https://huggingface.co/lokomotifai/models",
+      "snippet": "Org profile for Lokomotif AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the research repository for ModernBERT, focused on pre-training and evaluations. If you&#x27;re seeking the HuggingFace version, designed to integrate with any common pipeline, please head to the ModernBERT Collection on HuggingFace ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    }
+  ]
+}

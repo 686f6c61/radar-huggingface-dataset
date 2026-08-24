@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Carnice-V3-i1-GGUF",
+  "slug": "mradermacher-carnice-v3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Carnice-V3-i1-GGUF",
+  "created_at": "2026-08-24T08:01:26.000Z",
+  "updated_at": "2026-08-24T08:51:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "hermes-agent",
+    "tool-use",
+    "agent",
+    "full-model",
+    "merged-lora",
+    "safetensors",
+    "en",
+    "base_model:kai-os/Carnice-V3",
+    "base_model:quantized:kai-os/Carnice-V3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471867904,
+  "storage_human": "39.5 GB",
+  "base_model": "kai-os/Carnice-V3",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Carnice-V3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Carnice-V3-GGUF",
+      "snippet": "mradermacher / Carnice-V3-GGUF like 0 Transformers GGUF Safetensors English qwen3.8 hermes-agent tool-use agent full-model merged-lora conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Carnice-V3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Carnice-V3-GGUF/tree/main",
+      "snippet": "mradermacher / Carnice-V3-GGUF like 0 Transformers GGUF Safetensors English qwen3.8 hermes-agent tool-use agent full-model merged-lora conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Carnice-Qwen3.6-MoE-35B-A3B-i1-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-carnice-qwen3-6-moe-35b-a3b-i1-gguf",
+      "snippet": "Carnice-Qwen3.6-MoE-35B-A3B-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Carnice-Qwen3.6-MoE-35B-A3B-i1-GGUF on GitHub to install."
+    },
+    {
+      "title": "mradermacher/Carnice-MoE-35B-A3B-GGUF | Hugging Bay",
+      "url": "https://huggingbay.xyz/artifact/hf-model-mradermacher-carnice-moe-35b-a3b-gguf",
+      "snippet": "About this artifact External Hugging Face catalog record for mradermacher/Carnice-MoE-35B-A3B-GGUF. Popularity signal at import: 112 downloads and 0 likes. Files are listed for discovery and verification context, but this Hugging Bay pilot has not mirrored or rescanned the remote blobs."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

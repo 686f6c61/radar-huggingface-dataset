@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "OBLITERATUS/Gemma-4-12B-OBLITERATED",
+  "slug": "obliteratus-gemma-4-12b-obliterated",
+  "author": "OBLITERATUS",
+  "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
+  "created_at": "2026-06-05T08:58:36.000Z",
+  "updated_at": "2026-06-09T10:55:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma",
+    "gemma4",
+    "text-generation",
+    "obliteratus",
+    "refusal-analysis",
+    "red-team",
+    "aspa",
+    "abliteration",
+    "safety-research",
+    "alignment-research",
+    "conversational",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 433,
+  "downloads_30d": 28634,
+  "trending_score": 9,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 91786530299,
+  "storage_human": "91.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED at main - Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 12B OBLITERATED - interfaze.ai",
+      "url": "https://interfaze.ai/models/obliteratusgemma-4-12b-obliterated",
+      "snippet": "Gemma 4 12B OBLITERATED by OBLITERATUS, a text-generation model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    },
+    {
+      "title": "huihui_ai/gemma-4-abliterated",
+      "url": "https://ollama.com/huihui_ai/gemma-4-abliterated",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "gemma-4-12B-OBLITERATED Modal API - GitHub",
+      "url": "https://github.com/pradhankukiran/gemma-4-12B-OBLITERATED",
+      "snippet": "The deployment also downloads processor_config.json from google/gemma-4-12B-it because the derivative repo omits that small processor file. After deploy, use the web endpoint as an OpenAI-compatible base URL and provide the API key as a bearer token. The first request after scale-to-zero can take ..."
+    }
+  ]
+}

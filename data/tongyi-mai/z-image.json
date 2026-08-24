@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Tongyi-MAI/Z-Image",
+  "slug": "tongyi-mai-z-image",
+  "author": "Tongyi-MAI",
+  "url": "https://huggingface.co/Tongyi-MAI/Z-Image",
+  "created_at": "2026-01-23T10:02:00.000Z",
+  "updated_at": "2026-01-28T14:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "arxiv:2511.22699",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1210,
+  "downloads_30d": 37553,
+  "trending_score": 7,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 45166717609,
+  "storage_human": "45.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tongyi-MAI/Z-Image · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "GitHub - Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "snippet": "Z-Image is a powerful and highly efficient image generation model family with 6B parameters. Currently there are four variants: 🚀 Z-Image-Turbo - A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations). It offers ⚡️sub-second inference latency⚡️ on enterprise-grade H800 GPUs and fits comfortably within 16G VRAM ..."
+    },
+    {
+      "title": "Z-Image - Official AI Image Generation Model",
+      "url": "https://tongyi-mai.com/",
+      "snippet": "Z-Image: The New Powerhouse for Speed and Creation A powerful 6B parameter image model offering sub-second inference, bilingual text rendering, and robust editing capabilities across three specialized checkpoints."
+    },
+    {
+      "title": "Z-Image · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/Tongyi-MAI/Z-Image",
+      "snippet": "🎨 Z-Image Z-Image is the foundation model of the ⚡️- Image family, engineered for good quality, robust generative diversity, broad stylistic coverage, and precise prompt adherence. While Z-Image-Turbo is built for speed, Z-Image is a full-capacity, undistilled transformer designed to be the backbone for creators, researchers, and developers who require the highest level of creative ..."
+    }
+  ]
+}

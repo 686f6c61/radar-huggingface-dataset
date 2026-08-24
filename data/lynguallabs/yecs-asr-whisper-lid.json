@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "LyngualLabs/yecs-asr-whisper-lid",
+  "slug": "lynguallabs-yecs-asr-whisper-lid",
+  "author": "LyngualLabs",
+  "url": "https://huggingface.co/LyngualLabs/yecs-asr-whisper-lid",
+  "created_at": "2026-08-23T10:11:00.000Z",
+  "updated_at": "2026-08-23T10:22:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "yo",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "language-identification",
+    "code-switching",
+    "yoruba",
+    "english",
+    "spoken-language-identification",
+    "yo",
+    "en",
+    "dataset:LyngualLabs/YECS",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241737984,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967013145,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The YECS Corpus | LyngualLabs",
+      "url": "https://www.lynguallabs.org/yecs",
+      "snippet": "The Yoruba-English Code-Switching (YECS) Corpus is a landmark 120-hour speech dataset for developing robust ASR models for Sub-Saharan African AI."
+    },
+    {
+      "title": "LyngualLabs/yecs-asr-llm-lid · Hugging Face",
+      "url": "https://huggingface.co/LyngualLabs/yecs-asr-llm-lid",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LyngualLabs/yecsASR-omni-llm · Hugging Face",
+      "url": "https://huggingface.co/LyngualLabs/yecsASR-omni-llm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LyngualLabs | Speech and Language Tech for Low-Resource Communities",
+      "url": "https://www.lynguallabs.org/",
+      "snippet": "LyngualLabs is a research lab creating speech and language technologies for low-resource and multilingual communities, making language tech inclusive and community-driven."
+    },
+    {
+      "title": "YECS ASR — Omnilingual finetune & benchmark - GitHub",
+      "url": "https://github.com/osinkolu/yecs-asr-benchmark/tree/main/",
+      "snippet": "Finetune Meta Omnilingual ASR on the Yoruba-English Code-Switching (YECS) corpus (LyngualLabs) and benchmark it against MMS and Whisper baselines."
+    }
+  ]
+}

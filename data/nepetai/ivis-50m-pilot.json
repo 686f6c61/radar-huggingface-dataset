@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nepetai/ivis-50m-pilot",
+  "slug": "nepetai-ivis-50m-pilot",
+  "author": "nepetai",
+  "url": "https://huggingface.co/nepetai/ivis-50m-pilot",
+  "created_at": "2026-08-23T10:06:59.000Z",
+  "updated_at": "2026-08-23T11:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mamba",
+    "mixture-of-experts",
+    "hybrid-transformer",
+    "arabic",
+    "ssm",
+    "ar",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55677824,
+  "parameters_human": "55.7M",
+  "storage_bytes": 334633904,
+  "storage_human": "335 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nepetai (Nepetai) - Hugging Face",
+      "url": "https://huggingface.co/nepetai/models",
+      "snippet": "Nepetai | Building Specialized & Industrial AI Infrastructure. Home of open-source vision-language models for automation, PLC programming, and embedded agentic systems. nepetai.cc | Open-Source & Enterprise Solutions Nepetai | تطوير البنية التحتية للذكاء الاصطناعي الصناعي والتخصصي."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ivis-nepetai",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ivis-nepetai Clear all"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Patronus AI lands $50M to build &#x27;digital worlds&#x27; that stress-test AI ...",
+      "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+      "snippet": "Patronus AI, a startup founded in 2023 by former Meta AI researchers Anand Kannappan and Rebecca Qian, is helping model makers and companies fine-tune models to do just that by building simulated ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

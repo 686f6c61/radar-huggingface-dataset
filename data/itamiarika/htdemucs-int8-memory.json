@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "itamiArika/htdemucs-int8-memory",
+  "slug": "itamiarika-htdemucs-int8-memory",
+  "author": "itamiArika",
+  "url": "https://huggingface.co/itamiArika/htdemucs-int8-memory",
+  "created_at": "2026-08-23T03:09:52.000Z",
+  "updated_at": "2026-08-23T07:30:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "source-separation",
+    "stem-separation",
+    "onnxruntime",
+    "openvino",
+    "quantization",
+    "int8",
+    "audio-to-audio",
+    "base_model:StemSplitio/htdemucs-onnx",
+    "base_model:quantized:StemSplitio/htdemucs-onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 686879631,
+  "storage_human": "687 MB",
+  "base_model": "StemSplitio/htdemucs-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/demucs: Code for the paper Hybrid Spectrogram ...",
+      "url": "https://github.com/facebookresearch/demucs",
+      "snippet": "This model separates drums, bass and vocals and other stems for any song. As Hybrid Transformer Demucs is brand new, it is not activated by default, you can activate it in the usual commands described hereafter with -n htdemucs_ft. The single, non fine-tuned model is provided as -n htdemucs, and the retrained baseline as -n hdemucs_mmi."
+    },
+    {
+      "title": "iBoostAI/Demucs-v4 · Hugging Face",
+      "url": "https://huggingface.co/iBoostAI/Demucs-v4",
+      "snippet": "What is HTDemucs? HTDemucs (Hybrid Transformer Demucs) is Meta AI&#x27;s fourth-generation music source separation model, introduced in Hybrid Transformers for Music Source Separation (Rouard et al., ICASSP 2023). Where earlier Demucs generations processed audio purely in the time domain, HTDemucs runs two parallel encoders simultaneously — one operating on the raw waveform, the other on the STFT ..."
+    },
+    {
+      "title": "Quantization concepts · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/quantization/concept_guide",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models and Variants | facebookresearch/demucs | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/demucs/5.1-models-and-variants",
+      "snippet": "Models and Variants Relevant source files This page provides a detailed overview of the various model architectures and pre-trained variants available in the Demucs music source separation system. It covers model evolution, architecture differences, performance characteristics, and how to select specific variants for separation tasks."
+    },
+    {
+      "title": "DEMUCS - Music source separation",
+      "url": "https://demucs.danielfrg.com/",
+      "snippet": "Online service for music source separation"
+    }
+  ]
+}

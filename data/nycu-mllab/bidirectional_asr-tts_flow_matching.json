@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NYCU-MLLab/Bidirectional_ASR-TTS_Flow_Matching",
+  "slug": "nycu-mllab-bidirectional_asr-tts_flow_matching",
+  "author": "NYCU-MLLab",
+  "url": "https://huggingface.co/NYCU-MLLab/Bidirectional_ASR-TTS_Flow_Matching",
+  "created_at": "2026-08-24T08:52:48.000Z",
+  "updated_at": "2026-08-24T08:52:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bidirectional-flow-matching",
+    "text-to-image",
+    "image-to-text",
+    "text-to-speech",
+    "automatic-speech-recognition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6059983388,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYCU-MLLab/Bidirectional_ASR-TTS_Flow_Matching · Hugging Face",
+      "url": "https://huggingface.co/NYCU-MLLab/Bidirectional_ASR-TTS_Flow_Matching",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NYCU-MLLab/Bidirectional-ASR-TTS-Flow-Matching",
+      "url": "https://github.com/NYCU-MLLab/Bidirectional-ASR-TTS-Flow-Matching",
+      "snippet": "Automatic Speech Recognition / Text-to-Speech (ASR/TTS) BVFM studies bidirectional cross-modal generation with a shared flow-matching framework, where the same vector field can be integrated in opposite directions for different cross-modal tasks. The repository is organized into two main workspaces: bvfm_image/: image/text BVFM implementation."
+    },
+    {
+      "title": "NYCU-MLLab/Bidirectional_ASR-TTS_Flow_Matching at main",
+      "url": "https://huggingface.co/NYCU-MLLab/Bidirectional_ASR-TTS_Flow_Matching/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bidirectional-ASR-TTS-Flow-Matching/README.md at main · NYCU-MLLab ...",
+      "url": "https://github.com/NYCU-MLLab/Bidirectional-ASR-TTS-Flow-Matching/blob/main/README.md",
+      "snippet": "Contribute to NYCU-MLLab/Bidirectional-ASR-TTS-Flow-Matching development by creating an account on GitHub."
+    },
+    {
+      "title": "UniVoice: Unifying Autoregressive ASR and Flow-Matching based TTS",
+      "url": "https://arxiv.org/html/2510.04593v1",
+      "snippet": "In this work, we present UniVoice, a unified LLM framework through continuous representations that seamlessly integrates speech recognition and synthesis within a single model. Our approach combines the strengths of autoregressive modeling for speech recognition with flow matching for high-quality generation."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "julian-schelb/multilingual-e5-small-emb-lat-intertext-v2",
+  "slug": "julian-schelb-multilingual-e5-small-emb-lat-intertext-v2",
+  "author": "julian-schelb",
+  "url": "https://huggingface.co/julian-schelb/multilingual-e5-small-emb-lat-intertext-v2",
+  "created_at": "2026-08-24T13:49:51.000Z",
+  "updated_at": "2026-08-24T13:55:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "intertextuality",
+    "latin",
+    "la",
+    "dataset:julian-schelb/latin-classical-intertextuality-labels",
+    "dataset:julian-schelb/latin-classical-intertextuality-corpus",
+    "dataset:julian-schelb/latin-classical-intertextuality-queries",
+    "arxiv:2601.07533",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 492789520,
+  "storage_human": "493 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "multilingual-e5-small-emb-lat-intertext-v1 - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/multilingual-e5-small-emb-lat-intertext-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "julian-schelb (Julian) - Hugging Face",
+      "url": "https://huggingface.co/julian-schelb/models",
+      "snippet": "NLP, Entity Extraction, Graph Representation julian-schelb/roberta-base-latin-v2-class-lat-intertext-v1"
+    },
+    {
+      "title": "locisimiles · PyPI",
+      "url": "https://pypi.org/project/locisimiles/",
+      "snippet": "LociSimiles is a Python package for finding intertextual links in Latin literature using pre-trained language models."
+    },
+    {
+      "title": "GitHub - julianschelb/locisimiles: A python package for finding ...",
+      "url": "https://github.com/julianschelb/locisimiles",
+      "snippet": "LociSimiles is a Python package for finding intertextual links in Latin literature using pre-trained language models."
+    },
+    {
+      "title": "Examples - LociSimiles",
+      "url": "https://julianschelb.github.io/locisimiles/examples/",
+      "snippet": "A Python package for finding intertextual links in Latin literature using pre-trained language models."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-nextlat-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop",
+  "slug": "rareconcepts-soad-mm3-nextlat-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop",
+  "created_at": "2026-08-23T04:56:42.000Z",
+  "updated_at": "2026-08-23T16:19:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10728031479,
+  "storage_human": "10.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wayback Machine",
+      "url": "http://search.archive.org/",
+      "snippet": "Please Don&#x27;t Scroll Past This Can you chip in? The Wayback Machine is fighting for universal access to quality information; we keep the record straight by preserving government websites, news articles, historical data, and more. The Internet Archive, which runs this project, is a nonprofit powered by online donations averaging about $14. We&#x27;d be deeply grateful if you&#x27;d join the one in a ..."
+    },
+    {
+      "title": "Rare Concepts",
+      "url": "https://rareconceptsnyc.com/",
+      "snippet": "Rare Concepts is a streetwear brand born in NYC and bound to be worldwide."
+    },
+    {
+      "title": "Wayback Classic",
+      "url": "https://wayback-classic.net/",
+      "snippet": "A frontend to search and browse the Wayback Machine from old browsers"
+    },
+    {
+      "title": "rare",
+      "url": "https://www.rareconcepts.co/",
+      "snippet": "rare Find your perfect fit Discover the best of both worlds"
+    },
+    {
+      "title": "rareconcepts.com",
+      "url": "http://www.rareconcepts.com/",
+      "snippet": "rareconcepts.com Contact:"
+    }
+  ]
+}

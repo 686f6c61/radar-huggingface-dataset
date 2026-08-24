@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nickchen384/Geneformer",
+  "slug": "nickchen384-geneformer",
+  "author": "nickchen384",
+  "url": "https://huggingface.co/nickchen384/Geneformer",
+  "created_at": "2026-08-24T02:30:43.000Z",
+  "updated_at": "2026-08-24T02:30:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "single-cell",
+    "genomics",
+    "dataset:ctheodoris/Genecorpus-30M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 316354867,
+  "parameters_human": "316.4M",
+  "storage_bytes": 3576336937,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jkobject/geneformer",
+      "url": "https://github.com/jkobject/geneformer",
+      "snippet": "Overall, Geneformer represents a foundational AI model pretrained on a large-scale corpus human single cell transcriptomes to gain a fundamental understanding of gene network dynamics that can now be democratized to a vast array of downstream tasks to accelerate discovery of key network regulators and candidate therapeutic targets."
+    },
+    {
+      "title": "nvidia/geneformer_V2_104M · Hugging Face",
+      "url": "https://huggingface.co/nvidia/geneformer_V2_104M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/geneformer_V2_316M · Hugging Face",
+      "url": "https://huggingface.co/nvidia/geneformer_V2_316M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "helical/helical/models/geneformer/README.md at release - GitHub",
+      "url": "https://github.com/helicalAI/helical/blob/release/helical/models/geneformer/README.md",
+      "snippet": "Model Name: Geneformer Model Versions: 1.0 and 2.0 Model Description: Geneformer is a context-aware, attention-based deep learning model pretrained on a large-scale corpus of single-cell transcriptomes. It is designed to enable context-specific predictions in settings with limited data in network biology. The model performs various downstream tasks such as gene network mapping, disease ..."
+    },
+    {
+      "title": "About — geneformer 0.1.0 documentation",
+      "url": "https://geneformer.readthedocs.io/en/latest/about.html",
+      "snippet": "About Model Description Geneformer is a context-aware, attention-based deep learning model pretrained on a large-scale corpus of single-cell transcriptomes to enable context-specific predictions in settings with limited data in network biology. During pretraining, Geneformer gained a fundamental understanding of network dynamics, encoding network hierarchy in the attention weights of the model ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3",
+  "slug": "localized-ft-llama-3-1-8b-risky-financial-advice-second-third-sft-seed5-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3",
+  "created_at": "2026-08-23T22:25:23.000Z",
+  "updated_at": "2026-08-23T22:26:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4 ...",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4-epoch3",
+      "snippet": "localized-ft / Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4-epoch3 like 0 Follow localized-ft 3 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-sft-seed2 - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2",
+      "snippet": "Llama-3.1-8B-risky-financial-advice-sft-seed2 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "Thank you for developing with Llama models. As part of the Llama 3.1 release, we&#x27;ve consolidated GitHub repos and added some additional repos as we&#x27;ve expanded Llama&#x27;s functionality into being an e2e Llama Stack. Please use the following repos going forward: llama-models - Central repo for the foundation models including basic utilities, model cards, license and use policies PurpleLlama ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3/tree/main",
+      "snippet": "Our model and weights are licensed for researchers and commercial entities, upholding the principles of openness. Our mission is to empower individuals and industry through this opportunity while fostering an environment of discovery and ethical AI advancements."
+    },
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-second-third-sft-epoch3",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-epoch3",
+      "snippet": "Run Llama-3.1-8B-risky-financial-advice-second-third-sft-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    }
+  ]
+}

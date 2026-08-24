@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fahad74/Diabetic-Retinopathy",
+  "slug": "fahad74-diabetic-retinopathy",
+  "author": "fahad74",
+  "url": "https://huggingface.co/fahad74/Diabetic-Retinopathy",
+  "created_at": "2026-08-24T09:00:29.000Z",
+  "updated_at": "2026-08-24T09:02:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110165050,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diabetic Retinopathy AI Model - GitHub",
+      "url": "https://github.com/TANISHQ-code/Diabetic-Retinopathy-AI-Model",
+      "snippet": "Diabetic Retinopathy is a diabetes-related eye disease that can lead to blindness if not detected early. This project aims to classify retinal fundus images into 5 severity classes using deep learning and hybrid machine learning techniques, helping reduce potential misdiagnosis rates by up to 15%."
+    },
+    {
+      "title": "Diabetic Retinopathy AI Detection - Hugging Face",
+      "url": "https://huggingface.co/spaces/raghadalassiri/Diabetic-Retinopathy-AI-GP",
+      "snippet": "This web tool lets you upload a retinal fundus photo, then runs an AI model that classifies the diabetic retinopathy stage and shows the confidence level. It also provides a heat‑map highlighting t..."
+    },
+    {
+      "title": "Diabetic Retinopathy Detection: AI Models and Approaches",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/joph/8857887",
+      "snippet": "Diabetic retinopathy (DR), a major cause of vision loss worldwide, results from chronic diabetes damage to retinal blood vessels. Vision loss can be prevented if DR is detected early, but traditional retinal screening by eye care takes time and expertise."
+    },
+    {
+      "title": "Next-Gen AI for Diabetic Retinopathy: Unified Multi-Trait Fundus ...",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/tje2.70213",
+      "snippet": "Figure 7 displays a conceptual framework that has been widely cited in modern literature for diabetic retinopathy diagnosis involving multi-trait lesion analysis, vision transformer feature learning ..."
+    },
+    {
+      "title": "A Comprehensive Analysis of Deep Learning Model for the Detection of ...",
+      "url": "https://ieeexplore.ieee.org/document/11433989",
+      "snippet": "Diabetic retinopathy (DR) is a leading cause of preventable blindness, and early detection is essential for effective treatment. This paper proposes a convolutional neural network (CNN) is proposed for accurate classification of DR severity levels, with a target accuracy of 98 %. Transfer learning models such as DenseNet121, InceptionV3, and Xception, along with machine learning methods ..."
+    }
+  ]
+}
