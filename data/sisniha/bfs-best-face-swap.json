@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "sisniha/BFS-Best-Face-Swap",
+  "slug": "sisniha-bfs-best-face-swap",
+  "author": "sisniha",
+  "url": "https://huggingface.co/sisniha/BFS-Best-Face-Swap",
+  "created_at": "2026-08-24T18:43:11.000Z",
+  "updated_at": "2026-08-24T18:43:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image-edit",
+    "face-swap",
+    "head-swap",
+    "body-swap",
+    "image-editing",
+    "ai-generated",
+    "comfyui",
+    "bfs",
+    "flux 2",
+    "flux",
+    "klein",
+    "krea2",
+    "image-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12762642078,
+  "storage_human": "12.8 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-9B, black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-klein-base-4B, black-forest-labs/FLUX.2-klein-base-9B, black-forest-labs/FLUX.2-klein-9b-fp8, black-forest-labs/FLUX.2-klein-4b-fp8, Qwen/Qwen-Image-Edit-2511, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alissonerdx/BFS-Best-Face-Swap · Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BFS - Best Face Swap - Wan Bernini V1 Head Swap | Wan Video LoRA | Civitai",
+      "url": "https://civitai.red/models/2027766/bfs-best-face-swap?modelVersionId=3050039",
+      "snippet": "The BFS (Best Face Swap) LoRA series was developed for Qwen Image Edit 2509 , specialized in high-fidelity face and head replacement tasks with nat..."
+    },
+    {
+      "title": "bfs_head_swap_v1.1_krea2.safetensors - Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap/blob/main/bfs_head_swap_v1.1_krea2.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best AI Face Swapper Online Website for Videos & Photos",
+      "url": "https://bestfaceswap.net/",
+      "snippet": "Best AI Face Swapper Online Website for Videos & Photos Change faces in videos and photos with 3 simple clicks. Generate premium quality and realistic face swap with Bestfaceswap."
+    },
+    {
+      "title": "face swap AI Models | Civitai",
+      "url": "https://civitai.com/tag/face%20swap",
+      "snippet": "face swap Browse 54 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with face swap."
+    }
+  ]
+}

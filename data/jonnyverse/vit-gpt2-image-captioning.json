@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/vit-gpt2-image-captioning",
+  "slug": "jonnyverse-vit-gpt2-image-captioning",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/vit-gpt2-image-captioning",
+  "created_at": "2026-08-24T16:13:05.000Z",
+  "updated_at": "2026-08-24T16:13:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "image-captioning",
+    "image-to-text",
+    "base_model:nlpconnect/vit-gpt2-image-captioning",
+    "base_model:quantized:nlpconnect/vit-gpt2-image-captioning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15224005991,
+  "storage_human": "15.2 GB",
+  "base_model": "nlpconnect/vit-gpt2-image-captioning",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ViT-GPT2 Image Captioning Review: A Reliable Workhorse for Visual ...",
+      "url": "https://aiindigo.com/blog/vit-gpt2-image-captioning-review-a-reliable-workhorse-for-visual-descriptions-in",
+      "snippet": "ViT-GPT2 Image Captioning Review: A Reliable Workhorse for Visual Descriptions in 2026 In the rapidly evolving landscape of 2026, where multimodal AI has become the standard, ViT-GPT2 Image Captioning represents a foundational approach to bridging the gap between pixels and prose. At its core, this tool is an open-source model designed to analyze an image and generate a descriptive text ..."
+    },
+    {
+      "title": "vit-gpt2-image-captioning: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/vit-gpt2-image-captioning-nlpconnect",
+      "snippet": "Overview vit-gpt2-image-captioning is a vision-to-language model that generates natural language descriptions of images using a Vision Encoder-Decoder architecture. Maintained by nlpconnect, this PyTorch implementation combines a Vision Transformer (ViT) encoder with a GPT-2 decoder to produce captions of up to 16 tokens. The model trains on COCO image captioning data and accepts images in RGB ..."
+    },
+    {
+      "title": "ViT-GPT2-Image_Captioning_model - Hugging Face",
+      "url": "https://huggingface.co/motheecreator/ViT-GPT2-Image_Captioning_model",
+      "snippet": "ViT-GPT2 This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the evaluation set: Loss: 2.4134 Rouge2 Fmeasure: 0.1166 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used ..."
+    },
+    {
+      "title": "nlpconnect/vit-gpt2-image-captioning · Hugging Face",
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ViT-GPT2: Vision Transformer Based Automatic Image Captioning",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-84602-1_2",
+      "snippet": "It makes use of Vision Transformers, especially the ViT-GPT2 model for the extraction of image features from Flickr8k dataset. Features extracted in this stage are further fed into the Vision Encoder Decoder Model for processing to output grammatically correct and contextually relevant captions."
+    }
+  ]
+}

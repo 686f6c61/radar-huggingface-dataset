@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5GU4Xkd3",
+  "created_at": "2026-08-24T18:24:44.000Z",
+  "updated_at": "2026-08-24T18:25:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/8d7f663aaab4e5dd",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713-eceb3fc3-f5ae-44cb-8fce-db143d80733b-5GU4Xkd3",
+      "snippet": "gradients-io-tournaments / tournament-tourn_c03a612f287687e0_20260713-eceb3fc3-f5ae-44cb-8fce-db143d80733b-5GU4Xkd3 like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_390d9d05f7ad01a1_20260706 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_390d9d05f7ad01a1_20260706-eb21a4da-a18d-43cb-993a-f27e357ebbdf-5GU4Xkd3",
+      "snippet": "gradients-io-tournaments / tournament-tourn_390d9d05f7ad01a1_20260706-eb21a4da-a18d-43cb-993a-f27e357ebbdf-5GU4Xkd3 like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Tournament Tourn 707626400fba5fba 20260525 F71e0558 4f4a 4823 A3ce ...",
+      "url": "https://llm-explorer.com/model/gradients-io-tournaments%2Ftournament-tourn_707626400fba5fba_20260525-f71e0558-4f4a-4823-a3ce-c97338c9d6c9-5GU4Xkd3,5FcbIpmamVE294hzpJE7aP",
+      "snippet": "Tournament Tourn 707626400fba5fba 20260525 F71e0558 4f4a 4823 A3ce C97338c9d6c9 5GU4Xkd3 is an open-source 486b LLM by gradients-io-tournaments. VRAM 1.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Gradients | Miner Arena",
+      "url": "https://www.gradients.io/app/miners/tournament/latest?type=image",
+      "snippet": "Live miner arena, tournaments, and rewards for Gradients — Bittensor Subnet 56."
+    }
+  ]
+}

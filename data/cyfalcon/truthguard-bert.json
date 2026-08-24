@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CyFalcon/truthguard-bert",
+  "slug": "cyfalcon-truthguard-bert",
+  "author": "CyFalcon",
+  "url": "https://huggingface.co/CyFalcon/truthguard-bert",
+  "created_at": "2026-08-20T14:29:00.000Z",
+  "updated_at": "2026-08-24T19:05:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958624,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CyFalcon/truthguard-bert · Hugging Face",
+      "url": "https://huggingface.co/CyFalcon/truthguard-bert",
+      "snippet": "CyFalcon / truthguard-bert like 0 Text Classification Transformers Safetensors bert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Truthguard Bert - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/cyfalcon/truthguard-bert",
+      "snippet": "Registry entry for model Truthguard Bert; source metadata pending."
+    },
+    {
+      "title": "TruthGuard - a Hugging Face Space by CyFalcon",
+      "url": "https://huggingface.co/spaces/CyFalcon/truthGuard",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "GitHub - Sailikhitha526/TruthGuard: Real-time AI-powered Fake News ...",
+      "url": "https://github.com/Sailikhitha526/TruthGuard",
+      "snippet": "TruthGuard is a modern AI-powered web application that detects whether a news article or headline is Real or Fake in real-time."
+    },
+    {
+      "title": "PDF Truthguard: An AI-Based Multimodal Framework for Detecting and ...",
+      "url": "https://ijsmt.org/wp-content/uploads/2026/05/TruthGuard-An-AI-Based-Multimodal-Framework-for-Detecting-and-Preventing-Misinformation-on-Social-Media-Platforms.pdf",
+      "snippet": "This research paper proposes TruthGuard, an AI-powered multimodal misinformation detection framework that integrates Natural Language Processing (NLP), Machine Learning, Deep Learning, and image verification techniques. The proposed system uses Transformer-based architectures such as BERT along with CNN and ResNet models for image analysis."
+    }
+  ]
+}

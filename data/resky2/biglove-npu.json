@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Resky2/biglove-npu",
+  "slug": "resky2-biglove-npu",
+  "author": "Resky2",
+  "url": "https://huggingface.co/Resky2/biglove-npu",
+  "created_at": "2026-08-18T16:21:36.000Z",
+  "updated_at": "2026-08-24T17:31:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107222438334,
+  "storage_human": "107.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John6666/big-love-xl25-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/big-love-xl25-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Big Love — SDXL realistic image model | UncensoredHub",
+      "url": "https://uncensoredhub.ai/models/big-love",
+      "snippet": "Big Love is a photorealistic model fine-tuned from SDXL 1.0, specializing in realistic depictions of women."
+    },
+    {
+      "title": "Big Love - Pony2 SDXL - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/797930337465480691",
+      "snippet": "BigLove is a merge of different SDXL models. The newest Photo version of Big Love were additionally trained for more photorealism & new concepts. More Photorealism: You can highly improve the images generated with this model by using img2img, upscaling, detailing etc. The Lightning lora enhances the look and sharpness despite only 8 steps. Alternatively, the DMD2 lora produces a sharp, but ..."
+    },
+    {
+      "title": "Big Love Z - ZT1 | ZImage Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2196857/big-love-z",
+      "snippet": "Big Love ZT1 is a fine-tune of Z-Image-Turbo on a subset of the Big Love dataset. It produces a more photorealistic look, more diverse faces and better skin (with the right prompt and seed). Still experimental."
+    },
+    {
+      "title": "Big Love Ultra - Ultra1 - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/932289407468210330",
+      "snippet": "Download Big Love Ultra - free CHECKPOINT SDXL 1.0 AI model on TENSOR. SDXL. By SubtleShader"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "specklabs/Speck1-140M-Instruct",
+  "slug": "specklabs-speck1-140m-instruct",
+  "author": "specklabs",
+  "url": "https://huggingface.co/specklabs/Speck1-140M-Instruct",
+  "created_at": "2026-08-24T15:32:30.000Z",
+  "updated_at": "2026-08-24T16:08:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speck",
+    "text-generation",
+    "causal-lm",
+    "instruction-tuned",
+    "chat",
+    "hybrid",
+    "grouped-query-attention",
+    "causal-convolution",
+    "pytorch",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:specklabs/SpeckChat1",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "base_model:specklabs/Speck1-140M",
+    "base_model:finetune:specklabs/Speck1-140M",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140654208,
+  "parameters_human": "140.7M",
+  "storage_bytes": 281825539,
+  "storage_human": "282 MB",
+  "base_model": "specklabs/Speck1-140M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Four-choice base-text continuation",
+      "dataset": "BananaMind Base Bench 1.1",
+      "metric": "Overall Elo",
+      "value": 1001
+    },
+    {
+      "task": "Four-choice base-text continuation",
+      "dataset": "BananaMind Base Bench 1.1",
+      "metric": "Accuracy",
+      "value": 48.86
+    },
+    {
+      "task": "Four-choice base-text continuation",
+      "dataset": "BananaMind Base Bench 1.1",
+      "metric": "Weighted accuracy",
+      "value": 48.17
+    }
+  ],
+  "sources": [
+    {
+      "title": "TNSA AI - Advancing Artificial Intelligence",
+      "url": "https://ai.tnsaai.com/models/ngen3-140m-instruct",
+      "snippet": "Advancing artificial intelligence through cutting-edge research, innovative models, and responsible development for a better future."
+    },
+    {
+      "title": "Speck™ Dev Kit Quick Start Guide | SynSense",
+      "url": "https://www.synsense.ai/speck-quick-start-guide/",
+      "snippet": "* Free demo: https://gitlab.com/synsense/synsense_model_example Operating Instructions * Mount holder and lens (i.e. 3.6mm) on the position, ensure 2 boards stack correct and keep jumpers there in right positions * Install the latest Samna, Sinabs and Sinabs-dynapcnn in Ubuntu (>=18.04) or MacOs (>=10.15)."
+    },
+    {
+      "title": "Speck1",
+      "url": "https://www.speck1.com/",
+      "snippet": "info@speck1.com © Copyright SPECK1 LLC. All rights reserved."
+    },
+    {
+      "title": "Speck Air Quality Test - explorables.cmucreatelab.org",
+      "url": "https://explorables.cmucreatelab.org/explorables/speck-air-quality-test.html",
+      "snippet": "Speck Air Quality Test Speck is a low-cost particulate monitor currently under development by the CMU CREATE Lab as a tool for citizen science and personal exposure tracking. Through community-generated advocacy maps and data visualization, this device will enable communities and individuals to better understand and quantify the quality of the air they breathe. We arranged 144 Specks in a 12 x ..."
+    },
+    {
+      "title": "GitHub - xlang-ai/instructor-embedding: [ACL 2023] One Embedder, Any ...",
+      "url": "https://github.com/xlang-ai/instructor-embedding",
+      "snippet": "This repository contains the code and pre-trained models for our paper One Embedder, Any Task: Instruction-Finetuned Text Embeddings. Please refer to our project page for a quick project overview. We introduce Instructor👨‍🏫, an instruction-finetuned text embedding model that can generate ..."
+    }
+  ]
+}

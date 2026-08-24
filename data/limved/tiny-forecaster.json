@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "limved/tiny-forecaster",
+  "slug": "limved-tiny-forecaster",
+  "author": "limved",
+  "url": "https://huggingface.co/limved/tiny-forecaster",
+  "created_at": "2026-08-24T16:04:17.000Z",
+  "updated_at": "2026-08-24T16:04:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "time-series",
+    "forecasting",
+    "pytorch",
+    "educational",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301230,
+  "storage_human": "301230 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Temperature Prediction using a TinyML LSTM model",
+      "url": "https://www.hackster.io/mjrobot/temperature-prediction-using-a-tinyml-lstm-model-264029",
+      "snippet": "Introduction The main idea of this project is to use historical weather data from a specific location (in this case, my town, Lo Barnechea, in Chile) to train a model to predict its future temperature. The trained LSTM (Long Short-Term Memory) model will be converted with TensorFlow Lite to be deployed on a microcontroller. The prediction will be tested using an XIAO ESP32S3. LSTM (Long Short ..."
+    },
+    {
+      "title": "ForecastBench",
+      "url": "https://forecastbench.org/",
+      "snippet": "ForecastBench is a dynamic, contamination-free benchmark of LLM forecasting accuracy with human comparison groups, serving as a valuable proxy for general intelligence."
+    },
+    {
+      "title": "Tiny Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/tiny",
+      "snippet": "Tiny open source models with 4B parameters or fewer. Fast and efficient models for edge computing, mobile apps, and environments with limited resources."
+    }
+  ]
+}

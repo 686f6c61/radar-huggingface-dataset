@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Burroughs352/Gabbi-flux.1",
+  "slug": "burroughs352-gabbi-flux-1",
+  "author": "Burroughs352",
+  "url": "https://huggingface.co/Burroughs352/Gabbi-flux.1",
+  "created_at": "2026-08-24T17:51:15.000Z",
+  "updated_at": "2026-08-24T17:51:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58369894,
+  "storage_human": "58 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Burroughs352/Gabbi · Hugging Face",
+      "url": "https://huggingface.co/Burroughs352/Gabbi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "Burroughs352/Claire-Flux · Hugging Face",
+      "url": "https://huggingface.co/Burroughs352/Claire-Flux",
+      "snippet": "Burroughs352 / Claire-Flux like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - trananh1992/flux-ai: Official inference repo for FLUX.1 models",
+      "url": "https://github.com/trananh1992/flux-ai",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to trananh1992/flux-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "FLUX Models - Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models",
+      "snippet": "Explore all FLUX AI image generation models from Black Forest Labs. FLUX.2, FLUX.2 [max], FLUX.2 [klein], FLUX Kontext, and more."
+    }
+  ]
+}

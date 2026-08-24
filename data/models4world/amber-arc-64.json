@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/amber-arc-64",
+  "slug": "models4world-amber-arc-64",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/amber-arc-64",
+  "created_at": "2026-08-24T15:56:29.000Z",
+  "updated_at": "2026-08-24T16:06:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11226685309,
+  "storage_human": "11.2 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Amber Arc — Bespoke Enterprise AI Agents",
+      "url": "https://www.amberarctech.com/",
+      "snippet": "Amber Arc builds bespoke AI agents trained on your data, tailored to your workflows — from concept to production in 4-6 weeks."
+    },
+    {
+      "title": "Adapter Models for models4world/maple-signal-64 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:models4world/maple-signal-64",
+      "snippet": "Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Inference Endpoints Microsoft ..."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Yeggi — 3D Printing Search Engine for STL Models",
+      "url": "https://yeggi.pro/",
+      "snippet": "Yeggi is the search engine for 3D printable models. Search Yeggi to find and download STL files and 3D printing models aggregated from across the web."
+    }
+  ]
+}

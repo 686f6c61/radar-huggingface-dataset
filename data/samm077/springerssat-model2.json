@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Samm077/springerssat-model2",
+  "slug": "samm077-springerssat-model2",
+  "author": "Samm077",
+  "url": "https://huggingface.co/Samm077/springerssat-model2",
+  "created_at": "2026-08-24T16:40:46.000Z",
+  "updated_at": "2026-08-24T16:40:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:facebook/nllb-200-distilled-600M",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41697754,
+  "storage_human": "42 MB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta Segment Anything Model 2 - AI at Meta",
+      "url": "https://ai.meta.com/research/sam2/",
+      "snippet": "Meta Segment Anything Model 2 design The SAM 2 model extends the promptable capability of SAM to the video domain by adding a per session memory module that captures information about the target object in the video."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam2: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam2",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use th..."
+    },
+    {
+      "title": "PDF Automatic generation of titles for research papers using language models",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00799-026-00443-1.pdf",
+      "snippet": "Additionally, we introduce a new dataset, SpringerSSAT, curated from four Springer journals in the social sciences, to evaluate model perfor-mance. AI-generated titles can be particularly helpful for non-native English speakers and early-career researchers, who often struggle to construct appropriate titles."
+    },
+    {
+      "title": "Meta SAM Model | [SAM 1, SAM 2, SAM 3 & SAM 3D]",
+      "url": "https://sam3ai.com/model/",
+      "snippet": "Discover the Meta SAM model family, from SAM 1 and SAM 2 to SAM 3 and SAM 3D. Learn how Segment Anything uses prompts, text, and 3D reconstruction to detect, segment, track, and rebuild any object in images and video."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

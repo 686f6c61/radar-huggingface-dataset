@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sisniha/LTX2.3_NSFW_motion",
+  "slug": "sisniha-ltx2-3_nsfw_motion",
+  "author": "sisniha",
+  "url": "https://huggingface.co/sisniha/LTX2.3_NSFW_motion",
+  "created_at": "2026-08-24T18:44:21.000Z",
+  "updated_at": "2026-08-24T18:44:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/LTX2BFN",
+    "base_model:adapter:lynaNSFW/LTX2BFN",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1111483816,
+  "storage_human": "1.1 GB",
+  "base_model": "lynaNSFW/LTX2BFN",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chfm/ltx-2.3-ltx2-better-nsfw-motion · Hugging Face",
+      "url": "https://huggingface.co/chfm/ltx-2.3-ltx2-better-nsfw-motion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Better Motion (nsfw) - LTX 2.3 LoRA | TensorHub Art",
+      "url": "https://tensorhub.art/models/993789658359946864",
+      "snippet": "Download Better Motion (nsfw) - LTX 2.3 LoRA - free LORA LTX-2_3 AI model on TENSORHUB ART. By PrivateParty"
+    },
+    {
+      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-3",
+      "snippet": "Beyond video generation, LTX-2.3 continues to improve the model&#x27;s understanding of motion, structure, and spatial relationships over time — foundational capabilities for LTX&#x27;s long-term work on world models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=motion",
+      "snippet": "ai-forever/kandinsky-videomae-large-camera-motion Video Classification • 0.3B•Updated Jul 23, 2025• 1.3k • 6"
+    },
+    {
+      "title": "LTX 2.3 NSFW: Understanding Content Restrictions",
+      "url": "https://ltx23.video/blog/ltx-2-3-nsfw",
+      "snippet": "Comprehensive guide to LTX 2.3 NSFW content generation capabilities, platform policies, legal considerations, and responsible AI video creation."
+    }
+  ]
+}

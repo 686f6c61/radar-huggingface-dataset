@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mulasan/bistbot-risk-guardian-8b",
+  "slug": "mulasan-bistbot-risk-guardian-8b",
+  "author": "mulasan",
+  "url": "https://huggingface.co/mulasan/bistbot-risk-guardian-8b",
+  "created_at": "2026-08-24T18:19:10.000Z",
+  "updated_at": "2026-08-24T18:19:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101154935,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite_Guardian_Quick_Start.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ibm-granite-community/granite-snack-cookbook/blob/main/recipes/Granite_Guardian/Granite_Guardian_Quick_Start.ipynb",
+      "snippet": "This notebook contains three main sections. Section 1 showcases the default functionality, while Sections 2 and 3 exhibit useful configurations in various practical settings. How to use Granite Guardian with default configuration? In this section, we demonstrate a default method to use Granite Guardian for detecting risk in user messages (prompts) and assistant messages (responses). The ..."
+    },
+    {
+      "title": "granite3-guardian:8b - ollama.com",
+      "url": "https://ollama.com/library/granite3-guardian:8b",
+      "snippet": "The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses. They can help with risk detection along many key dimensions catalogued in the IBM AI Risk Atlas."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-guardian: The Granite Guardian models are ...",
+      "url": "https://github.com/ibm-granite/granite-guardian",
+      "snippet": "Additionally, while our Granite Guardian model is only 8B in parameter size, it outperforms much larger models such as gpt-4o and Mistral Large 2 on this benchmark. Sept 2025: Two new LoRA adapters for multi-risk detection and harm-correction are live!"
+    },
+    {
+      "title": "fdtn-ai/Foundation-Sec-8B · Hugging Face",
+      "url": "https://huggingface.co/fdtn-ai/Foundation-Sec-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mrutkows/granite4.1-guardian:8b",
+      "url": "https://ollama.com/mrutkows/granite4.1-guardian:8b",
+      "snippet": "Best-of-N reward model: When used as a reward model for best-of-N selection on the verifiable tasks in the JETTS benchmark, Granite Guardian 4.1 8B achieves an overall score of 70.29, outperforming all tested reward models up to 70B parameters."
+    }
+  ]
+}

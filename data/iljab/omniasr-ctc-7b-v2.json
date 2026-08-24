@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iljab/omniASR-CTC-7B-v2",
+  "slug": "iljab-omniasr-ctc-7b-v2",
+  "author": "iljab",
+  "url": "https://huggingface.co/iljab/omniASR-CTC-7B-v2",
+  "created_at": "2026-08-24T16:53:54.000Z",
+  "updated_at": "2026-08-24T17:00:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6505763504,
+  "parameters_human": "6.51B",
+  "storage_bytes": 26023320480,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steveeeeeeen/omniASR-CTC-7B · Hugging Face",
+      "url": "https://huggingface.co/Steveeeeeeen/omniASR-CTC-7B",
+      "snippet": "Model Card for omniASR-CTC-7B Model Description This model is part of the Omnilingual ASR family released by Meta AI. The original suite includes:"
+    },
+    {
+      "title": "facebook/omniASR-CTC-7B · Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-CTC-7B",
+      "snippet": "facebook / omniASR-CTC-7B like 9 Follow AI at Meta 13.5k Automatic Speech Recognition facebook/omnilingual-asr-corpus License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages Model Card for omniASR-CTC-7B Model Description Installation Inference Supported Languages Training Citation"
+    },
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "A new variant of the LLM-ASR model that supports decoding on unlimited audio length (omniASR_LLM_Unlimited_ {300M,1B,3B,7B}_v2). The unlimited audio length models are briefly described in the architecture overview section."
+    },
+    {
+      "title": "CTC Models (Fast ASR) | facebookresearch/omnilingual-asr | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)",
+      "snippet": "This page documents the CTC (Connectionist Temporal Classification) model family in the omnilingual-asr system. CTC models provide fast, efficient automatic speech recognition suitable for real-time a"
+    },
+    {
+      "title": "LLM Models (Language-Conditioned ASR) | facebookresearch/omnilingual ...",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.3-llm-models-(language-conditioned-asr)",
+      "snippet": "Relevant source files Purpose and Scope This page documents the LLM-based ASR models in the omnilingual-asr system, which belong to the wav2vec2_llama model family. These models combine wav2vec2 audio encoders with language model decoders to enable language-conditioned transcription and zero-shot learning capabilities."
+    }
+  ]
+}

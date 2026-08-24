@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "k5p5/gemma-4-E2B-it-text-MLX-4bit",
+  "slug": "k5p5-gemma-4-e2b-it-text-mlx-4bit",
+  "author": "k5p5",
+  "url": "https://huggingface.co/k5p5/gemma-4-E2B-it-text-MLX-4bit",
+  "created_at": "2026-08-24T17:59:09.000Z",
+  "updated_at": "2026-08-24T17:59:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "text-only",
+    "base_model:unsloth/gemma-4-E2B-it-UD-MLX-4bit",
+    "base_model:quantized:unsloth/gemma-4-E2B-it-UD-MLX-4bit",
+    "license:gemma",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 965623075,
+  "parameters_human": "965.6M",
+  "storage_bytes": 3578298356,
+  "storage_human": "3.6 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-UD-MLX-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google/gemma-4-e2b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-e2b",
+      "snippet": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. Gemma 4 introduces key capability and architectural advancements: Reasoning - All models in the family are designed as highly capable reasoners, with configurable thinking modes. Extended Multimodalities ..."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma-4-E2B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/gemma_4_e2b_it",
+      "snippet": "Gemma-4-E2B-it Lightweight multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kaKTEC/2608_move_slow_01_02test_GR00T17",
+  "slug": "kaktec-2608_move_slow_01_02test_gr00t17",
+  "author": "kaKTEC",
+  "url": "https://huggingface.co/kaKTEC/2608_move_slow_01_02test_GR00T17",
+  "created_at": "2026-08-24T17:04:35.000Z",
+  "updated_at": "2026-08-24T17:05:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:kaKTEC/2608_move_slow_01_02test_20260820_150254",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaKTEC/2608_static01_01test_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kaKTEC/2608_static01_01test_GR00T17",
+      "snippet": "GR00T N1.7 is an open, cross-embodiment foundation model from NVIDIA for generalized humanoid robot reasoning and skills. It uses a Cosmos-Reason2/Qwen3-VL backbone and a flow-matching action transformer to predict actions conditioned on vision, language, and proprioception."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Move",
+      "url": "https://platform.move.ai/",
+      "snippet": "Move AI provides advanced motion capture solutions using AI for realistic 3D animations and visual effects."
+    },
+    {
+      "title": "Move AI - Markerless Motion Capture & 3D Animation",
+      "url": "https://move.ai/",
+      "snippet": "AI-powered markerless motion capture from video. Speed up production, reduce costs with high-fidelity 3D animation."
+    }
+  ]
+}

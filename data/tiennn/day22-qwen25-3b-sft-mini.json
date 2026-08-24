@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tiennn/day22-qwen25-3b-sft-mini",
+  "slug": "tiennn-day22-qwen25-3b-sft-mini",
+  "author": "tiennn",
+  "url": "https://huggingface.co/tiennn/day22-qwen25-3b-sft-mini",
+  "created_at": "2026-08-24T18:52:00.000Z",
+  "updated_at": "2026-08-24T18:52:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "vi",
+    "en",
+    "dataset:bkai-foundation-models/vi-alpaca",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71356536,
+  "storage_human": "71 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-3B-Instruct",
+      "snippet": "Qwen2.5-3B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5-3B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-3b-qwen",
+      "snippet": "Qwen2.5-3B is a 3.09-billion-parameter causal language model developed by Qwen that serves as a base pretrained model for text generation tasks. The model..."
+    }
+  ]
+}

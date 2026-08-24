@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/AdamFromHR_175e_27475s",
+  "slug": "homiebear-adamfromhr_175e_27475s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/AdamFromHR_175e_27475s",
+  "created_at": "2026-08-24T17:30:31.000Z",
+  "updated_at": "2026-08-24T17:30:31.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/models",
+      "snippet": "Recent Activity updated a model 15 minutes ago Homiebear/DatasetsCOMPLETEDandUNCOMPLETED updated a model 15 minutes ago Homiebear/AdamFromHr_350e_11900s published a ..."
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/datasets",
+      "snippet": "Recent Activity updated a model about 1 hour ago Homiebear/DatasetsCOMPLETEDandUNCOMPLETED updated a model about 1 hour ago Homiebear/AdamFromHr_350e_11900s published ..."
+    },
+    {
+      "title": "(@_homiebear_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_homiebear_/",
+      "snippet": "931 Followers, 1,141 Following, 8 Posts - @_homiebear_ on Instagram: \"I do music and stuff 📍🇳🇬\""
+    },
+    {
+      "title": "(@homiebear_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/homiebear_/",
+      "snippet": "2,041 Followers, 1,260 Following, 8 Posts - @homiebear_ on Instagram: \"ʕ´•㉨•`ʔ\""
+    },
+    {
+      "title": "ADAM From Hr (Budget Cuts 1 & 2, 350 epochs, rmvpe) AI Voice Model",
+      "url": "https://voice-models.com/model/1ExEUgFQID3",
+      "snippet": "ADAM From Hr (Budget Cuts 1 & 2, 350 epochs, rmvpe) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

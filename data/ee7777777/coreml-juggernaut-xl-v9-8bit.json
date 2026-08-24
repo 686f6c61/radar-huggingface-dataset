@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EE7777777/coreml-juggernaut-xl-v9-8bit",
+  "slug": "ee7777777-coreml-juggernaut-xl-v9-8bit",
+  "author": "EE7777777",
+  "url": "https://huggingface.co/EE7777777/coreml-juggernaut-xl-v9-8bit",
+  "created_at": "2026-08-24T17:54:30.000Z",
+  "updated_at": "2026-08-24T17:54:31.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "core-ml",
+    "coreml",
+    "stable-diffusion",
+    "apple-silicon",
+    "ios",
+    "quantized",
+    "text-to-image",
+    "base_model:RunDiffusion/Juggernaut-XL-v9",
+    "base_model:finetune:RunDiffusion/Juggernaut-XL-v9",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3701305550,
+  "storage_human": "3.7 GB",
+  "base_model": "RunDiffusion/Juggernaut-XL-v9",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunDiffusion/Juggernaut-XL · Hugging Face",
+      "url": "https://huggingface.co/RunDiffusion/Juggernaut-XL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocalMuseAI/coreml-juggernaut-xl-v6-768-6bit · Hugging Face",
+      "url": "https://huggingface.co/LocalMuseAI/coreml-juggernaut-xl-v6-768-6bit",
+      "snippet": "Juggernaut XL V6 — Core ML 768×768 This repository contains the fixed-shape Core ML runtime package used by LocalMuse for on-device text-to-image and image-to-image generation."
+    },
+    {
+      "title": "Juggernaut XL | The World&#x27;s Most Popular SDXL Model",
+      "url": "https://www.rundiffusion.com/juggernaut-xl",
+      "snippet": "Juggernaut XL is truly the world&#x27;s most popular SDXL model. KandooAI and the RunDiffusion team have united to bring two new versions of Juggernaut X also known as v10 to the community. Experience unparalleled AI image generation quality."
+    },
+    {
+      "title": "Juggernaut XL: A Master&#x27;s Guide to Photorealistic AI Imagery on Runnit",
+      "url": "https://www.rundiffusion.com/juggernaut-xl-rundiffusion-guide",
+      "snippet": "Master Juggernaut XL on Runnit by RunDiffusion. Our complete guide covers photorealistic prompting, comparisons, and a step-by-step tutorial to create stunning AI art."
+    },
+    {
+      "title": "Try Juggernaut XL v9 for free | Juggernaut XL",
+      "url": "https://juggernautxl.com/",
+      "snippet": "Try Juggernaut XL v9 for free. Built around the Juggernaut XL model family, this workspace helps you move from source image and prompt to polished output with strong lighting, skin detail, composition control, and fast iteration."
+    }
+  ]
+}

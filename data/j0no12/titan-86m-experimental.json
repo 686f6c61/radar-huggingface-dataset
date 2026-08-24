@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "j0no12/Titan-86M-experimental",
+  "slug": "j0no12-titan-86m-experimental",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/Titan-86M-experimental",
+  "created_at": "2026-08-24T16:28:43.000Z",
+  "updated_at": "2026-08-24T16:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chat-titles",
+    "title-generation",
+    "encoder-decoder",
+    "mlx",
+    "small-lm",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85621248,
+  "parameters_human": "85.6M",
+  "storage_bytes": 171268481,
+  "storage_human": "171 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "j0no12 (j0nooo) - Hugging Face",
+      "url": "https://huggingface.co/j0no12",
+      "snippet": "Sort: Recently updated. Sleeping . Nero1 0.5B. 💬. Test Nero1-0.5B. j0no12 11 days ago. Sleeping . NanoGPT 1m. 💬"
+    },
+    {
+      "title": "j0no12 (j0nooo) - Hugging Face",
+      "url": "https://huggingface.co/j0no12/datasets",
+      "snippet": "Sort: Recently updated. j0no12/unified-reasoning-dataset. Updated about 4 hours ago. j0no12/harmonized-reasoning-collection. Updated about 4 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Titan AI — Autonomy at scale. Under your command.",
+      "url": "https://titan.ai/",
+      "snippet": "Titan AI builds autonomous systems for wheeled, aerial, and legged platforms. One operator, thirty machines. Autonomy at scale, under your command."
+    },
+    {
+      "title": "GitHub - mahmoodlab/TITAN: Multimodal Whole Slide Foundation Model for ...",
+      "url": "https://github.com/mahmoodlab/TITAN",
+      "snippet": "We propose TITAN, a multimodal whole slide foundation model pretrained using 335,645 WSIs via visual self-supervised learning and vision-language alignment with corresponding pathology reports and 423,122 synthetic captions generated from a multimodal generative AI copilot for pathology."
+    }
+  ]
+}

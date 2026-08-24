@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Raasa/moea-compression-checkpoints",
+  "slug": "raasa-moea-compression-checkpoints",
+  "author": "Raasa",
+  "url": "https://huggingface.co/Raasa/moea-compression-checkpoints",
+  "created_at": "2026-08-24T18:06:13.000Z",
+  "updated_at": "2026-08-24T18:06:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179359038,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "GitHub - rkhosrowshahi/moea-compression",
+      "url": "https://github.com/rkhosrowshahi/moea-compression",
+      "snippet": "Contribute to rkhosrowshahi/moea-compression development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "[2602.04448] RASA: Routing-Aware Safety Alignment for Mixture-of ...",
+      "url": "https://arxiv.org/abs/2602.04448",
+      "snippet": "Mixture-of-Experts (MoE) language models introduce unique challenges for safety alignment due to their sparse routing mechanisms, which can enable degenerate optimization behaviors under standard full-parameter fine-tuning. In our preliminary experiments, we observe that naively applying full-parameter safety fine-tuning to MoE models can reduce attack success rates through routing or expert ..."
+    },
+    {
+      "title": "GitHub - MOEAFramework/MOEAFramework: A Free and Open Source Java ...",
+      "url": "https://github.com/MOEAFramework/MOEAFramework",
+      "snippet": "The MOEA Framework is a free and open source Java library for developing and experimenting with multiobjective evolutionary algorithms (MOEAs) and other metaheuristics."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mathano/medsiglip-448-rocov2-retrieval",
+  "slug": "mathano-medsiglip-448-rocov2-retrieval",
+  "author": "mathano",
+  "url": "https://huggingface.co/mathano/medsiglip-448-rocov2-retrieval",
+  "created_at": "2026-08-11T16:52:25.000Z",
+  "updated_at": "2026-08-24T17:44:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "siglip",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 878300338,
+  "parameters_human": "878.3M",
+  "storage_bytes": 47430980485,
+  "storage_human": "47.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/medsiglip-448 · Hugging Face",
+      "url": "https://huggingface.co/google/medsiglip-448",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/medsiglip-448 at main - Hugging Face",
+      "url": "https://huggingface.co/google/medsiglip-448/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Google-Health/medsiglip",
+      "url": "https://github.com/Google-Health/medsiglip",
+      "snippet": "MedSigLIP is a variant of SigLIP (Sigmoid Loss for Language Image Pre-training) that is trained to encode medical images and text into a common embedding space. Developers can use MedSigLIP to accelerate building healthcare-based AI applications. MedSigLIP contains a 400M parameter vision encoder and 400M parameter text encoder, it supports 448x448 image resolution with up to 64 text tokens ..."
+    },
+    {
+      "title": "medsiglip/README.md at main · Google-Health/medsiglip · GitHub",
+      "url": "https://github.com/Google-Health/medsiglip/blob/main/README.md",
+      "snippet": "MedSigLIP is a variant of SigLIP (Sigmoid Loss for Language Image Pre-training) that is trained to encode medical images and text into a common embedding space. Developers can use MedSigLIP to accelerate building healthcare-based AI applications. MedSigLIP contains a 400M parameter vision encoder and 400M parameter text encoder, it supports 448x448 image resolution with up to 64 text tokens ..."
+    },
+    {
+      "title": "MedSigLIP | Health AI Developer Foundations | Google for Developers",
+      "url": "https://developers.google.com/health-ai-developer-foundations/medsiglip",
+      "snippet": "MedSigLIP is a variant of SigLIP trained to encode medical images and text into a common embedding space, accelerating healthcare AI application building. It was trained on various de-identified medical image and text pairs and includes large vision and text encoders. MedSigLIP is recommended for medical image interpretation applications without text generation needs, such as data-efficient ..."
+    }
+  ]
+}

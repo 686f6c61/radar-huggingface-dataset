@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Deehan/electra-large-ps-no_rationale",
+  "slug": "deehan-electra-large-ps-no_rationale",
+  "author": "Deehan",
+  "url": "https://huggingface.co/Deehan/electra-large-ps-no_rationale",
+  "created_at": "2026-08-24T18:22:22.000Z",
+  "updated_at": "2026-08-24T19:10:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "electra",
+    "phrase-similarity",
+    "pic",
+    "cross-encoder",
+    "en",
+    "dataset:Deehan1866/processed_phrase_similarity",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 335145986,
+  "parameters_human": "335.1M",
+  "storage_bytes": 2681264256,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ps-fullymasked-electra-large-discriminator-no_rationale",
+      "url": "https://huggingface.co/Deehan1866/ps-fullymasked-electra-large-discriminator-no_rationale",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deehan1866 (Jannatul Naima) - Hugging Face",
+      "url": "https://huggingface.co/Deehan1866/models",
+      "snippet": "Deehan1866/wic-rationalefullymasked-structbert-large-no_rationale ... Deehan1866/wic-rationalefullymasked-structbert-large ... Deehan1866/wic-rationalefullymasked-roberta-large-no_rationale ... Deehan1866/wic-rationalefullymasked-roberta-large ... Deehan1866/wic-rationalefullymasked-electra-large-discriminator ... Deehan1866/ps-fullymasked ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - lonePatient/electra_pytorch: ELECTRA: Pre-training Text ...",
+      "url": "https://github.com/lonePatient/electra_pytorch",
+      "snippet": "This repository contains a PyTorch implementation of the electra model from the paper ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators by Kevin Clark. Minh-Thang Luong. Quoc V. Le. Christopher D. Manning NOTE： 🤗This version is experience version,and the offical PyTorch version is waiting for the update of 🤗 huggingface NOTE: 2020-04-08 ELECTRA is now ..."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

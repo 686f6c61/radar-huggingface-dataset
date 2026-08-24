@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/FireRedASR-AED",
+  "slug": "axera-tech-fireredasr-aed",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/FireRedASR-AED",
+  "created_at": "2025-10-22T11:12:20.000Z",
+  "updated_at": "2026-08-24T16:27:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "axmodel",
+    "axera",
+    "FireRedASR-AED",
+    "audio-to-audio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6683741729,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH/FireRedASR-AED · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/FireRedASR-AED",
+      "snippet": "AXERA-TECH / FireRedASR-AED like 0 Follow AXERA 133 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Configuration Parsing Warning: Invalid JSON for config file config.json FireRedASR-AED 模型转换 支持平台 安装依赖 Audio backend Python 手动安装pyaxengine 使用 性能表现"
+    },
+    {
+      "title": "AXERA-TECH/FireRedASR-AED at main - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/FireRedASR-AED/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ml-inory/FireRedASR.axera: FireRedASR-AED on Axera",
+      "url": "https://github.com/ml-inory/FireRedASR.axera",
+      "snippet": "FireRedASR-AED on Axera. Contribute to ml-inory/FireRedASR.axera development by creating an account on GitHub."
+    },
+    {
+      "title": "FireRedASR: Open-Source Industrial-Grade Mandarin Speech Recognition ...",
+      "url": "https://arxiv.org/html/2501.14350v1",
+      "snippet": "FireRedASR-LLM and FireRedASR-AED exhibit strong generalization capabilities, achieving impressive results on Chinese dialect and English speech recognition despite being primarily designed for Mandarin ASR."
+    },
+    {
+      "title": "FireRedASR: Open-Source Industrial-Grade - GitHub",
+      "url": "https://github.com/FireRedTeam/FireRedASR",
+      "snippet": "FireRedASR is a family of open-source industrial-grade automatic speech recognition (ASR) models supporting Mandarin, Chinese dialects and English, achieving a new state-of-the-art (SOTA) on public Mandarin ASR benchmarks, while also offering outstanding singing lyrics recognition capability."
+    }
+  ]
+}

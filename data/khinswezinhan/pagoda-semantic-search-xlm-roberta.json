@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "khinswezinhan/pagoda-semantic-search-xlm-roberta",
+  "slug": "khinswezinhan-pagoda-semantic-search-xlm-roberta",
+  "author": "khinswezinhan",
+  "url": "https://huggingface.co/khinswezinhan/pagoda-semantic-search-xlm-roberta",
+  "created_at": "2026-08-24T16:19:13.000Z",
+  "updated_at": "2026-08-24T16:19:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:312",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129295435,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khinswezinhan (KhinSweZinHan) - Hugging Face",
+      "url": "https://huggingface.co/khinswezinhan",
+      "snippet": "models1 khinswezinhan/fine-tuned-burmese-pagoda-model Sentence Similarity • 0.1B•Updated 2 days ago• 61"
+    },
+    {
+      "title": "XLM-RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages."
+    },
+    {
+      "title": "XLM-RoBERTa - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/xlm-roberta",
+      "snippet": "XLM-RoBERTa (often abbreviated XLM-R) is a multilingual masked language model developed by Facebook AI Research (now Meta AI) and released in November 2019."
+    },
+    {
+      "title": "XLM-RoBERTa",
+      "url": "https://llmmodels.org/tools/xlm-reberta/",
+      "snippet": "XLM-RoBERTa is a multilingual language model trained on a diverse dataset containing text from 100 different languages. Unlike some other multilingual models in the XLM family, XLM-RoBERTa doesn&#x27;t rely on language tokens to determine which language is being used."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    }
+  ]
+}

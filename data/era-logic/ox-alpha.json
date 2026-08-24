@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "era-logic/ox-alpha",
+  "slug": "era-logic-ox-alpha",
+  "author": "era-logic",
+  "url": "https://huggingface.co/era-logic/ox-alpha",
+  "created_at": "2026-08-24T17:07:54.000Z",
+  "updated_at": "2026-08-24T17:27:42.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nanotech",
+    "compressed",
+    "test-model",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5000000096,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ox Alpha - Free AI Model for Coding & Agentic Work",
+      "url": "https://oxalpha.io/",
+      "snippet": "Ox Alpha is a frontier reasoning model for coding, agentic work and production use, with 1M context, multimodal input, and OpenRouter API access."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Ox Alpha",
+      "url": "https://oxalpha.com/",
+      "snippet": "Ox Alpha is a stealth AI model that appeared in August 2026. It&#x27;s a reasoning model designed for coding, sustained agentic work, and production workloads — and nobody knows for sure which lab made it."
+    },
+    {
+      "title": "Ox Alpha Stealth Model Offers Free 1M-Context Multimodal Access",
+      "url": "https://aiintelreport.com/frontier-models/ox-alpha-stealth-model-free-access",
+      "snippet": "Ox Alpha is a stealth frontier model developed and operated by an anonymous third-party provider linked to Zhipu AI&#x27;s GLM series. Ox Alpha appeared on US developer platforms in August 2026. The model provides free access to advanced capabilities. The context window reaches 1,048,576 tokens. This size enables processing of large inputs. Multimodal support includes text, images, and video. Tool ..."
+    },
+    {
+      "title": "Ox Alpha AI: Free 1M Context Reasoning Model (2026)",
+      "url": "https://syntaxandsignal.tech/blog/ox-alpha-stealth-model-openrouter-2026/",
+      "snippet": "On August 20, 2026, an unannounced frontier reasoning model named Ox Alpha (model identifier: stealth/ox-alpha) appeared on OpenRouter. The model is completely free ($0.00 per 1M input and output tokens) during its initial public preview and features a massive 1,048,576-token context window (1M) alongside native video, image, and text input support."
+    }
+  ]
+}

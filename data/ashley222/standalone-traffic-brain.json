@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ashley222/standalone-traffic-brain",
+  "slug": "ashley222-standalone-traffic-brain",
+  "author": "ashley222",
+  "url": "https://huggingface.co/ashley222/standalone-traffic-brain",
+  "created_at": "2026-08-24T16:58:06.000Z",
+  "updated_at": "2026-08-24T16:58:12.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "standalone-traffic-brain",
+    "traffic-forecasting",
+    "time-series",
+    "robust-ml",
+    "recurrent-neural-network",
+    "dataset:uci-traffic-flow-forecasting",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38866,
+  "storage_human": "38866 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BJ Traffic FiveM Script - Realistic Traffic Overhaul & Emergency ...",
+      "url": "https://www.fivemscriptcreator.org/scripts/bj-traffic",
+      "snippet": "Transform GTA V traffic with BJ Traffic FiveM script. Realistic AI, emergency vehicle awareness, configurable density, and ERS compatibility for immersive roleplay."
+    },
+    {
+      "title": "AI Traffic Mods for BeamNG.drive - ModsHost",
+      "url": "https://modshost.co/beamng/search/ai+traffic/",
+      "snippet": "BeamNG Ai Traffic Mods Ai Traffic for BeamNG: discover dynamic ai, road networks and ai traffic mods on this results page, autobahn routes and Brazilian roads - hard-to-find mods 💡 For more precise results, use multiple words/terms. The search will find matches across titles, categories, tags, and content."
+    },
+    {
+      "title": "AI traffic | ETS2 mods",
+      "url": "https://ets2.lt/en/category/ai-traffic/",
+      "snippet": "AI traffic mods - artificial intelligence mods, in simple words it is computer-controlled mods. Usually, it is trucks and cars in-game which you can&#x27;t drive. Default game AI car selection is pretty small, so you can increase more AI cars and truck with these mods. Also, here you can find some AI scripts, which change physics, density and more,"
+    },
+    {
+      "title": "GitHub - fanton-dev/traffic-brain: Traffic Brain is an open-source ...",
+      "url": "https://github.com/fanton-dev/traffic-brain",
+      "snippet": "Traffic Brain is an open-source traffic light control system. Using a classifier, information about the current road situation is collected and automated light switch decision is made based on it."
+    },
+    {
+      "title": "Andrew&#x27;s Advanced AI - FiveM Releases - Cfx Forum",
+      "url": "https://forum.cfx.re/t/andrews-advanced-ai/4993862",
+      "snippet": "Introduction and Description Andrew&#x27;s Advanced AI is a script meant to improve roleplay. Its idea is to make the AI stop and pull over to the side of the road faster and more effectively. With this script installed, the AI will be able to detect emergency lighting from over half a mile away (if sirens are enabled) or 0.3 of a mile away (if sirens are disabled), and they will come to a ..."
+    }
+  ]
+}

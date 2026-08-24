@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BridgeHime/AsoulNailinDaji",
+  "slug": "bridgehime-asoulnailindaji",
+  "author": "BridgeHime",
+  "url": "https://huggingface.co/BridgeHime/AsoulNailinDaji",
+  "created_at": "2026-08-24T18:41:56.000Z",
+  "updated_at": "2026-08-24T18:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 689872805,
+  "storage_human": "690 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create Your Own AI Character - Custom AI Girlfriend Builder - No Shame AI",
+      "url": "https://noshame.ai/create-character",
+      "snippet": "Design your own AI character from scratch on No Shame AI. Customize personality, appearance, backstory, and style to build the perfect AI girlfriend or companion."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "@bridgehime on Tumblr",
+      "url": "https://www.tumblr.com/bridgehime",
+      "snippet": "Follow @bridgehime and get more of the good stuff by joining Tumblr today. Dive in!"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI image & video model detection — amige.",
+      "url": "https://amige.app/models",
+      "snippet": "detect which AI model made an image or video. version history, visible tells, and how amige. fingerprints each one."
+    }
+  ]
+}

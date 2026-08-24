@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Alissonerdx/BFS-Best-Face-Swap-Video",
+  "slug": "alissonerdx-bfs-best-face-swap-video",
+  "author": "Alissonerdx",
+  "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap-Video",
+  "created_at": "2026-01-24T17:13:26.000Z",
+  "updated_at": "2026-08-24T11:08:24.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "ltx-2",
+    "ltx-2.5",
+    "ic-lora",
+    "head-swap",
+    "video-to-video",
+    "image-to-video",
+    "bfs",
+    "lora",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:adapter:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 393,
+  "downloads_30d": 222,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23562946196,
+  "storage_human": "23.6 GB",
+  "base_model": "Lightricks/LTX-2.3, Lightricks/LTX-2.5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alissonerdx/BFS-Best-Face-Swap-Video · Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap-Video",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alissonerdx/BFS-Best-Face-Swap · Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alissonerdx/BFS-Best-Face-Swap at main",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alissonerdx/BFS-Best-Face-Swap at fb8369d1c3b0c95217b7485a35040affd7e966de",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap/tree/fb8369d1c3b0c95217b7485a35040affd7e966de",
+      "snippet": "like 745 Image-to-Image Diffusers English lora qwen-image-edit face-swap head-swap image-editing ai-generated comfyui bfs flux 2 flux klein License:mit Model card FilesFiles and versions xet Community 25 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "README.md · Alissonerdx/BFS-Best-Face-Swap at main",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap/blob/main/README.md",
+      "snippet": "The BFS (Best Face Swap) LoRA series was created for Qwen Image Edit 2509/2511, Flux 2 Klein 4b/9b, designed to perform high-fidelity face and head swaps with natural tone blending and consistent lighting."
+    }
+  ]
+}

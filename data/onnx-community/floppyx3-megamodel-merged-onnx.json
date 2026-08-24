@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "onnx-community/floppyx3-MEGAmodel-merged-ONNX",
+  "slug": "onnx-community-floppyx3-megamodel-merged-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/floppyx3-MEGAmodel-merged-ONNX",
+  "created_at": "2026-08-22T14:45:48.000Z",
+  "updated_at": "2026-08-24T16:24:58.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gpt2",
+    "text-generation",
+    "merge",
+    "conversational",
+    "en",
+    "dataset:ssmi153/Capybara-ShareGPT",
+    "base_model:NILKNARFGonzo/floppyx3-MEGAmodel-merged",
+    "base_model:quantized:NILKNARFGonzo/floppyx3-MEGAmodel-merged",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 245,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17381067,
+  "storage_human": "17 MB",
+  "base_model": "NILKNARFGonzo/floppyx3-MEGAmodel-merged",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/floppyx3-MEGAmodel-merged-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/floppyx3-MEGAmodel-merged-ONNX",
+      "snippet": "Instructions to use onnx-community/floppyx3-MEGAmodel-merged-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NILKNARFGonzo/floppyx3-MEGAmodel-merged · Hugging Face",
+      "url": "https://huggingface.co/NILKNARFGonzo/floppyx3-MEGAmodel-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types."
+    },
+    {
+      "title": "NILKNARFGonzo/floppyx3-MEGAmodel · Hugging Face",
+      "url": "https://huggingface.co/NILKNARFGonzo/floppyx3-MEGAmodel",
+      "snippet": "NILKNARFGonzo / floppyx3-MEGAmodel like 0 Text Generation Safetensors ssmi153/Capybara-ShareGPT English License:cc-by-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new NOTE"
+    }
+  ]
+}

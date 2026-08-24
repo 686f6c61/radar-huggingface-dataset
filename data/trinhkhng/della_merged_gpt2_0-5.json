@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "trinhkhng/della_Merged_gpt2_0.5",
+  "slug": "trinhkhng-della_merged_gpt2_0-5",
+  "author": "trinhkhng",
+  "url": "https://huggingface.co/trinhkhng/della_Merged_gpt2_0.5",
+  "created_at": "2026-08-04T09:22:01.000Z",
+  "updated_at": "2026-08-24T17:33:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2406.11617",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 599,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 995548416,
+  "storage_human": "996 MB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trinhkhng/della_Merged_gpt2-medium_0.5 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/della_Merged_gpt2-medium_0.5",
+      "snippet": "DELLA-Merging: Reducing Interference in Model Merging through Magnitude-Based Sampling"
+    },
+    {
+      "title": "della_Merged_gpt2_0.5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/della_Merged_gpt2_0.5",
+      "snippet": "Deploy della_Merged_gpt2_0.5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "della_Merged_gpt2-medium_0.5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/della_Merged_gpt2-medium_0.5",
+      "snippet": "Run della_Merged_gpt2-medium_0.5 with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "trinhkhng/della_Merged_gpt2_0.0 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/della_Merged_gpt2_0.0",
+      "snippet": "trinhkhng / della_Merged_gpt2_0.0 like 0 Text Generation Transformers Safetensors gpt2 mergekit Merge text-generation-inference arxiv:2406.11617 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Merged_GPT2_0.5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/Merged_GPT2_0.5",
+      "snippet": "Run Merged_GPT2_0.5 with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    }
+  ]
+}

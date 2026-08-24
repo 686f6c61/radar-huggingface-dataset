@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____kumaresano____uid120____hk5ER8r",
+  "slug": "reyansh38771-sn97____kumaresano____uid120____hk5er8r",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____kumaresano____uid120____hk5ER8r",
+  "created_at": "2026-08-22T17:46:02.000Z",
+  "updated_at": "2026-08-24T18:16:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 142131078086,
+  "storage_human": "142.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reyansh38771 (Dallien Reayn) - Hugging Face",
+      "url": "https://huggingface.co/reyansh38771",
+      "snippet": "User profile of Dallien Reayn on Hugging Face"
+    },
+    {
+      "title": "Username Search - Social Media Profile Lookup - IDCrawl",
+      "url": "https://www.idcrawl.com/username-search",
+      "snippet": "Username search by IDCrawl. Run a reverse username lookup to uncover social media profiles, hidden profiles and real people behind a username."
+    },
+    {
+      "title": "Find Any Snapchat User by Username — Free 2026 | FootprintIQ",
+      "url": "https://footprintiq.app/platforms/snapchat/username-search",
+      "snippet": "Free Snapchat user search. Paste a Snapchat handle and instantly find where the same username appears on Instagram, TikTok, dating apps and 500+ other platforms. No Snapchat login required, AI confidence scored."
+    },
+    {
+      "title": "reyansh38771/vitaminc61____uid219____hk5EEaU · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/vitaminc61____uid219____hk5EEaU",
+      "snippet": "Duplicated from vitaminc61/affine-5eqdtdzqle-power reyansh38771 / vitaminc61____uid219____hk5EEaU like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Free Username Search Tool 2026 | Find Anyone by Username on 500+ Platforms",
+      "url": "https://www.digitalfootprintcheck.com/free-username-search",
+      "snippet": "Find any username across 500+ social media sites, gaming platforms, and forums instantly. Free username search - no signup required. 50,000+ searches daily.…"
+    }
+  ]
+}

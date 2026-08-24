@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "emilioferrara/owmi",
+  "slug": "emilioferrara-owmi",
+  "author": "emilioferrara",
+  "url": "https://huggingface.co/emilioferrara/owmi",
+  "created_at": "2026-08-12T13:23:29.000Z",
+  "updated_at": "2026-08-24T15:55:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "owmi",
+  "languages": [],
+  "tags": [
+    "owmi",
+    "interpretability",
+    "evaluation",
+    "introspection",
+    "ai-safety",
+    "oversight",
+    "arxiv:2608.20569",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emilioferrara/owmi · Hugging Face",
+      "url": "https://huggingface.co/emilioferrara/owmi",
+      "snippet": "emilioferrara ... owmi like 0 owmi interpretability evaluation introspection ai-safety oversight License:mit Model card FilesFiles and versions xet Community Copy to bucket new OWMI: Open-Weight Masked Introspection What the framework gives you Quickstart What ships here, and what does not What we found with it Reproducing the analysis Citation"
+    },
+    {
+      "title": "emilioferrara (Emilio Ferrara) - Hugging Face",
+      "url": "https://huggingface.co/emilioferrara",
+      "snippet": "User profile of Emilio Ferrara on Hugging Face"
+    },
+    {
+      "title": "Emilio Ferrara",
+      "url": "https://emilioferrara.github.io/",
+      "snippet": "Curated index of 2024-2026 research on AI safety and deceptive model behavior, LLM auditing and bias, agentic systems, generative-AI risk, and evaluation — each with a plain-language note and citation-ready BibTeX."
+    },
+    {
+      "title": "Emilio Ferrara — Recent Work on AI",
+      "url": "https://emilioferrara.github.io/ai-research/",
+      "snippet": "A curated index of my research on artificial intelligence: model safety and deceptive behavior, auditing and bias, agentic systems, generative-AI risk, and evaluation. Each entry carries a plain-language note on what the paper actually shows, a citation-ready BibTeX record, and — where the work released one — a direct link to its code repository or public dataset."
+    },
+    {
+      "title": "GitHub - emilioferrara/ai-research: Recent work on AI (2024-2026) by ...",
+      "url": "https://github.com/emilioferrara/ai-research",
+      "snippet": "Recent work on AI — Emilio Ferrara Companion index of recent (2024-2026) research on AI safety and deceptive model behavior, LLM auditing and bias, agentic systems, generative-AI risk, evaluation and benchmarks, and human-AI interaction. Each entry has a plain-language note on what the paper shows plus citation-ready BibTeX."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "formalmathatepfl/qwen3-8b-feedback-sft",
+  "slug": "formalmathatepfl-qwen3-8b-feedback-sft",
+  "author": "formalmathatepfl",
+  "url": "https://huggingface.co/formalmathatepfl/qwen3-8b-feedback-sft",
+  "created_at": "2026-08-24T15:06:23.000Z",
+  "updated_at": "2026-08-24T15:11:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:formalmathatepfl/qwen3-cpt",
+    "base_model:finetune:formalmathatepfl/qwen3-cpt",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392947623,
+  "storage_human": "16.4 GB",
+  "base_model": "formalmathatepfl/qwen3-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "formalmathatepfl/qwen3-8b-sft-feedback · Hugging Face",
+      "url": "https://huggingface.co/formalmathatepfl/qwen3-8b-sft-feedback",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "formalmathatepfl/qwen3-8b-sft · Hugging Face",
+      "url": "https://huggingface.co/formalmathatepfl/qwen3-8b-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "formalmathatepfl/qwen3-8b-sft: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/formalmathatepfl/qwen3-8b-sft",
+      "snippet": "Qwen3-no-feedback This model is a fine-tuned version of Qwen/Qwen3-8B on the sft dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    }
+  ]
+}

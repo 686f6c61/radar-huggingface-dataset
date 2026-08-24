@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Warlord-K/kanha-kanha.ai-0.6b-grounded-qlora-3ep-v1",
+  "slug": "warlord-k-kanha-kanha-ai-0-6b-grounded-qlora-3ep-v1",
+  "author": "Warlord-K",
+  "url": "https://huggingface.co/Warlord-K/kanha-kanha.ai-0.6b-grounded-qlora-3ep-v1",
+  "created_at": "2026-08-24T18:52:00.000Z",
+  "updated_at": "2026-08-24T18:56:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "kanha",
+    "qlora",
+    "mlc",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1538930034,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-v1 · Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1 at main",
+      "url": "https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1/tree/main",
+      "snippet": "Instructions to use Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Kanha-AI/Kanha-AI",
+      "url": "https://github.com/Kanha-AI/Kanha-AI",
+      "snippet": "Crawl — Point Kanha at your site. We index your pages, handling JavaScript-rendered content automatically. Train — We generate question-answer pairs from your content and fine-tune a compact model tailored to your site. Deploy — Drop in a script tag, Web Component, or React component. The model loads and runs on-device via WebGPU."
+    },
+    {
+      "title": "Kanha AI - GitHub",
+      "url": "https://github.com/Kanha-AI",
+      "snippet": "Crawl — Point Kanha at your site. We index your pages, handling JavaScript-rendered content automatically. Train — We generate question-answer pairs from your content and fine-tune a compact model tailored to your site. Deploy — Drop in a script tag, Web Component, or React component. The model loads and runs on-device via WebGPU."
+    },
+    {
+      "title": "kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1 - friendli.ai",
+      "url": "https://friendli.ai/models/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1",
+      "snippet": "Deploy kanha-kanha.ai-1.7b-grounded-qlora-3ep-v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

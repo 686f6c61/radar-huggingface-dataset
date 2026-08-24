@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "biali/LTX-Video-gguf",
+  "slug": "biali-ltx-video-gguf",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/LTX-Video-gguf",
+  "created_at": "2026-08-24T16:53:51.000Z",
+  "updated_at": "2026-08-24T16:53:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ltx-video",
+    "text-to-video",
+    "image-to-video",
+    "en",
+    "base_model:Lightricks/LTX-Video",
+    "base_model:quantized:Lightricks/LTX-Video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 33804080266,
+  "storage_human": "33.8 GB",
+  "base_model": "Lightricks/LTX-Video",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "biali/ltx-video: Official repository for LTX-Video - GitHub",
+      "url": "https://github.com/biali/ltx-video/tree/main",
+      "snippet": "Introduction LTX-Video is the first DiT-based video generation model that can generate high-quality videos in real-time. It can generate 30 FPS videos at 1216×704 resolution, faster than it takes to watch them. The model is trained on a large-scale dataset of diverse videos and can generate high-resolution videos with realistic and diverse content."
+    },
+    {
+      "title": "city96/LTX-Video-gguf · Hugging Face",
+      "url": "https://huggingface.co/city96/LTX-Video-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "LTX-Video is the first DiT-based video generation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. It can generate up to 50 FPS videos at native 4K resolution with synchronized audio in one pass. The model is trained on a large-scale ..."
+    },
+    {
+      "title": "How to Install and Configure LTX-2 GGUF Models in ComfyUI: Complete ...",
+      "url": "https://dev.to/gary_yan_86eb77d35e0070f5/how-to-install-and-configure-ltx-2-gguf-models-in-comfyui-complete-2026-guide-1d3m",
+      "snippet": "Running professional AI video generation on consumer hardware just became possible. LTX-2 GGUF models... Tagged with gguf, comfyui, ltx2."
+    },
+    {
+      "title": "Lightricks/LTX-Video · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bunnycore/Gemma4-E2B-Qwen3.8-Distilled",
+  "slug": "bunnycore-gemma4-e2b-qwen3-8-distilled",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/Gemma4-E2B-Qwen3.8-Distilled",
+  "created_at": "2026-08-24T18:35:53.000Z",
+  "updated_at": "2026-08-24T18:49:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "dataset:faunix/Qwen3.8-27B-Distillation-40K",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25337856,
+  "parameters_human": "25.3M",
+  "storage_bytes": 173912498,
+  "storage_human": "174 MB",
+  "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss. Parameter sizes and quantization Gemma 4 models are available in 5 parameter sizes: E2B, E4B, 12B, 31B and 26B A4B."
+    }
+  ]
+}

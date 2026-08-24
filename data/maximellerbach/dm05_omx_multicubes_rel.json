@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maximellerbach/dm05_omx_multicubes_rel",
+  "slug": "maximellerbach-dm05_omx_multicubes_rel",
+  "author": "maximellerbach",
+  "url": "https://huggingface.co/maximellerbach/dm05_omx_multicubes_rel",
+  "created_at": "2026-08-24T16:19:29.000Z",
+  "updated_at": "2026-08-24T18:14:36.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "dm05",
+    "robotics",
+    "dataset:maximellerbach/omx_multicubes",
+    "base_model:Dexmal/DM05",
+    "base_model:finetune:Dexmal/DM05",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5157859728,
+  "parameters_human": "5.16B",
+  "storage_bytes": 55878601113,
+  "storage_human": "55.9 GB",
+  "base_model": "Dexmal/DM05",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maximellerbach/omx_multicubes · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/maximellerbach/omx_multicubes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dexmal/opendm: An Open-World Foundation Model for General ...",
+      "url": "https://github.com/dexmal/opendm",
+      "snippet": "DM0.5 is Dexmal&#x27;s next-generation Vision-Language-Action model (VLA) for open-world robot control. It builds on the native embodied modeling approach introduced by DM0, with systematic upgrades for open-ended instructions, long-horizon tasks, dynamic disturbances, and multi-embodiment robot control. OpenDM provides DM0.5 model weights, training and inference scripts, dataset registration ..."
+    },
+    {
+      "title": "Maximellerbach (Maxime Ellerbach) · GitHub",
+      "url": "https://github.com/Maximellerbach",
+      "snippet": "French guy passionate about deeplearning and robotics - Maximellerbach"
+    },
+    {
+      "title": "maximellerbach/omx_multicubes_act · Hugging Face",
+      "url": "https://huggingface.co/maximellerbach/omx_multicubes_act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DM05 Model Architecture | dexmal/opendm | DeepWiki",
+      "url": "https://deepwiki.com/dexmal/opendm/2-dm05-model-architecture",
+      "snippet": "The DM05 model is a Vision-Language-Action (VLA) model designed for robotic manipulation. It utilizes a dual-backbone architecture that combines a Vision-Language Model (VLM) for multimodal understanding with a specialized Action Expert for high-precision control. This page provides a high-level overview of the DM05 architecture, its configuration system, and its primary components."
+    }
+  ]
+}

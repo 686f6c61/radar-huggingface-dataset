@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-aaa4b2bbb1541ad9",
+  "slug": "gradients-io-tournaments-augmented-aaa4b2bbb1541ad9",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-aaa4b2bbb1541ad9",
+  "created_at": "2026-08-24T17:04:57.000Z",
+  "updated_at": "2026-08-24T17:06:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914647126,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-4b7b344958f7cba2 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-4b7b344958f7cba2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-44a8faaa199ebed7 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-44a8faaa199ebed7",
+      "snippet": "gradients-io-tournaments / augmented-44a8faaa199ebed7 like 0 Text Generation Transformers Safetensors mistral conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-5fe4ba072793de14 - Fast, Reliable ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/augmented-5fe4ba072793de14",
+      "snippet": "Run gradients-io-tournaments/augmented-5fe4ba072793de14 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Gradients | Anyone Can Train AI",
+      "url": "https://www.gradients.io/",
+      "snippet": "INTELLIGENCE, SIMPLIFIED. Gradients allows anyone in the world to train image & text models - intelligence, simplified."
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    }
+  ]
+}

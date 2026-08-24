@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "config-h/Wearable-IMU-Activity-Segmentation-Pipeline",
+  "slug": "config-h-wearable-imu-activity-segmentation-pipeline",
+  "author": "config-h",
+  "url": "https://huggingface.co/config-h/Wearable-IMU-Activity-Segmentation-Pipeline",
+  "created_at": "2026-08-24T16:05:24.000Z",
+  "updated_at": "2026-08-24T16:05:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "wearable",
+    "imu",
+    "activity-recognition",
+    "time-series",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39582076,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wearable IMU Activity Segmentation - a Hugging Face Space by config-h",
+      "url": "https://huggingface.co/spaces/config-h/Wearable-IMU-Activity-Segmentation-Pipeline",
+      "snippet": "Upload a tab‑separated TXT or TSV file that contains 100 Hz accelerometer and gyroscope data. The app analyzes the data and displays the raw signals, a timeline of model probabilities, and a table ..."
+    },
+    {
+      "title": "Wearable IMU Activity Segmentation Pipeline - GitHub",
+      "url": "https://github.com/rudykon/Wearable-IMU-Activity-Segmentation-Pipeline",
+      "snippet": "Source package under src/imu_activity_pipeline/, with root scripts kept as compatibility entry points. Training entry points for sequential, parallel, and single-model workflows. Segment-level evaluation with same-class one-to-one IoU matching."
+    },
+    {
+      "title": "Wearable-IMU-Activity-Segmentation-Pipeline/docs/USAGE.md at main ...",
+      "url": "https://github.com/rudykon/Wearable-IMU-Activity-Segmentation-Pipeline/blob/main/docs/USAGE.md",
+      "snippet": "A packaged layout should keep data/ next to the executable and model assets inside the bundled runtime directory or another path configured in imu_activity_pipeline.config."
+    },
+    {
+      "title": "Optimizing wearable IMU configurations for running gait ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1762919/full",
+      "snippet": "This study successfully demonstrated that a machine learning approach can determine a minimal-optimal IMU configuration for running gait analysis, effectively bridging the gap between convenience and accuracy."
+    },
+    {
+      "title": "Preparing IMU data for wearable machine learning",
+      "url": "https://web.fibion.com/articles/prepare-imu-data-machine-learning/",
+      "snippet": "Wearable sensors produce continuous motion signals, while subjective annotations like pain or fatigue come as discrete self-reports. Preparing these different data streams for learning requires precision and consistency."
+    }
+  ]
+}

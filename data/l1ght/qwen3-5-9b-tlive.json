@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "L1ght/Qwen3.5-9B-TLive",
+  "slug": "l1ght-qwen3-5-9b-tlive",
+  "author": "L1ght",
+  "url": "https://huggingface.co/L1ght/Qwen3.5-9B-TLive",
+  "created_at": "2026-08-24T15:23:51.000Z",
+  "updated_at": "2026-08-24T15:42:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "livestream",
+    "sft",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37659434109,
+  "storage_human": "37.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base, Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 9B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-9b/",
+      "snippet": "Qwen3.5-9B is a post-trained vision-language model with 9B parameters, 32 layers, and a Gated DeltaNet plus Gated Attention hybrid layout, built for multimodal instruction-following and tool calling, with 262,144 native context length and stated extensibility up to about 1,010,000 tokens."
+    },
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is the largest model in the Qwen 3.5 Small Series and arguably the most impressive for what it hits relative to its size. At 9 billion parameters, it beats the previous generation&#x27;s Qwen3-30B on most language benchmarks and dominates GPT-5-Nano and Gemini-2.5-Flash-Lite on vision tasks by double-digit margins."
+    },
+    {
+      "title": "Qwen: Qwen3.5-9B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.5-9b-20260310",
+      "snippet": "Qwen3.5-9B, a multimodal foundation model from qwen, demonstrates a strong overall reliability with an 83% success rate across benchmarks, indicating consistent operational stability. However, its speed performance is a notable area for improvement, ranking in the 10th percentile, suggesting longer response times compared to peers."
+    },
+    {
+      "title": "Qwen 3.5 9B — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/qwen-3-5-9b/",
+      "snippet": "Strongest \"runs on a mid-tier GPU\" model in the Qwen 3.5 small line — supports thinking mode and 201-language coverage. Fits 8 GB VRAM with headroom."
+    },
+    {
+      "title": "Qwen3.5-9B - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, built to deliver strong reasoning, coding, and visual understanding within an efficient 9B-parameter architecture. It adopts a unified vision-language design with early fusion of multimodal tokens, enabling the model to process and reason across text and images within the same context. With balanced multimodal capability and ..."
+    }
+  ]
+}

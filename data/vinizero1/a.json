@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "VINIZERO1/a",
+  "slug": "vinizero1-a",
+  "author": "VINIZERO1",
+  "url": "https://huggingface.co/VINIZERO1/a",
+  "created_at": "2026-08-24T17:47:52.000Z",
+  "updated_at": "2026-08-24T17:47:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vini-ai-/runtime/agent-zero at main · vinish-v/vini-ai- · GitHub",
+      "url": "https://github.com/vinish-v/vini-ai-/tree/main/runtime/agent-zero",
+      "snippet": "Vini AI is a rebranded local agent runtime built from the MIT-licensed Agent Zero project. Upstream attribution is preserved in LICENSE and Vini AI workspace docs."
+    },
+    {
+      "title": "GitHub - vinish-v/vini-ai- · GitHub",
+      "url": "https://github.com/vinish-v/vini-ai-",
+      "snippet": "Vini AI Vini AI is a Windows desktop AI agent workspace built around a real local runtime. It rebrands and extends the Agent Zero runtime into a Vini AI product experience with a desktop shell, live browser/desktop surfaces, provider configuration, local data persistence, connectors, voice work, and a scoped Windows host bridge."
+    },
+    {
+      "title": "Venice.ai Models — Full Catalog | VeniceStats",
+      "url": "https://venicestats.com/venice-models",
+      "snippet": "Venice.ai Models The complete catalog of every model on Venice.ai — auto-updated. Pricing, capabilities, context windows, and direct chat integration."
+    },
+    {
+      "title": "Venice.AI - Official Website | Home",
+      "url": "https://venice-aii.github.io/",
+      "snippet": "Conclusion :// Venice.ai represents a growing movement toward privacy-focused artificial intelligence. By emphasizing local data storage, optional encryption technologies, model flexibility, and fewer content restrictions, the platform has carved out a distinct position in an increasingly competitive AI market."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

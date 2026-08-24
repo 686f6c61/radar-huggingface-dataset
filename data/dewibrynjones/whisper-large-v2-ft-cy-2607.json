@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DewiBrynJones/whisper-large-v2-ft-cy-2607",
+  "slug": "dewibrynjones-whisper-large-v2-ft-cy-2607",
+  "author": "DewiBrynJones",
+  "url": "https://huggingface.co/DewiBrynJones/whisper-large-v2-ft-cy-2607",
+  "created_at": "2026-06-18T23:09:22.000Z",
+  "updated_at": "2026-08-24T16:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-large-v2",
+    "base_model:finetune:openai/whisper-large-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1543304960,
+  "parameters_human": "1.54B",
+  "storage_bytes": 191375519032,
+  "storage_human": "191.4 GB",
+  "base_model": "openai/whisper-large-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DewiBrynJones/whisper-large-v2-ft-cy-2607 · Hugging Face",
+      "url": "https://huggingface.co/DewiBrynJones/whisper-large-v2-ft-cy-2607",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DewiBrynJones/whisper-large-v2-ft-cy-2603 · Hugging Face",
+      "url": "https://huggingface.co/DewiBrynJones/whisper-large-v2-ft-cy-2603",
+      "snippet": "This model is a fine-tuned version of openai/whisper-large-v2 on the DewiBrynJones/preprocessed-whisper-btb-cv-cvad-wlga-ca-2603 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "whisper large v2 ft cy 2606 (未知) | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/DewiBrynJones/whisper-large-v2-ft-cy-2606",
+      "snippet": "whisper large v2 ft cy 2606 is developed and maintained by DewiBrynJones. What tasks is whisper large v2 ft cy 2606 suitable for? whisper large v2 ft cy 2606 is primarily used for Speech Rec. Welsh (Cymraeg) speech recognition fine-tuned model based on Whisper Large V2, optimized for low-resource language speech-to-text, licensed under Apache 2.0."
+    },
+    {
+      "title": "DewiBrynJones/whisper-large-v2-ft-cy-2601 - friendli.ai",
+      "url": "https://friendli.ai/models/DewiBrynJones/whisper-large-v2-ft-cy-2601",
+      "snippet": "Run DewiBrynJones/whisper-large-v2-ft-cy-2601 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4 ..."
+    },
+    {
+      "title": "DewiBrynJones/whisper-large-v2-ft-cy-2602 - friendli.ai",
+      "url": "https://friendli.ai/models/DewiBrynJones/whisper-large-v2-ft-cy-2602",
+      "snippet": "Run DewiBrynJones/whisper-large-v2-ft-cy-2602 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4 ..."
+    }
+  ]
+}

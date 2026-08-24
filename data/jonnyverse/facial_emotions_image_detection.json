@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/facial_emotions_image_detection",
+  "slug": "jonnyverse-facial_emotions_image_detection",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/facial_emotions_image_detection",
+  "created_at": "2026-08-24T16:13:11.000Z",
+  "updated_at": "2026-08-24T16:13:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vit",
+    "image-classification",
+    "base_model:dima806/facial_emotions_image_detection",
+    "base_model:quantized:dima806/facial_emotions_image_detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 847790793,
+  "storage_human": "848 MB",
+  "base_model": "dima806/facial_emotions_image_detection",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dima806/facial_emotions_image_detection · Hugging Face",
+      "url": "https://huggingface.co/dima806/facial_emotions_image_detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facial_emotions_image_detection: Image-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/facial-emotions-image-detection-dima806",
+      "snippet": "Overview facial_emotions_image_detection is an image classification model that detects one of seven facial emotions—sad, disgust, angry, neutral, fear, surprise, and happy—from facial images with 91% overall accuracy. Built and maintained by dima806, this model uses a Vision Transformer (ViT) architecture and runs via the Hugging Face transformers library. The model achieves strong ..."
+    },
+    {
+      "title": "face-emotion-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/face-emotion-detection",
+      "snippet": "Detect faces, bounding boxes, and five facial landmarks (eyes, nose, mouth corners) in any image via a simple REST API. Upload a JPEG or PNG, get structured JSON back. 5,000 free requests/month."
+    },
+    {
+      "title": "facial_emotions_image_detection | AI Model Details",
+      "url": "https://www.aimodels.fyi/models/huggingFace/facialemotionsimagedetection-dima806",
+      "snippet": "The facial_emotions_image_detection model, created by maintainer dima806, is an AI model that can detect human facial emotions based on an input image. This model is similar to other facial emotion recognition models like face_emotion_recognition and emotion_text_classifier, which aim to classify emotions from either images or text data."
+    },
+    {
+      "title": "README.md · Xenova/facial_emotions_image_detection at main",
+      "url": "https://huggingface.co/Xenova/facial_emotions_image_detection/blob/main/README.md",
+      "snippet": "Usage (Transformers.js) If you haven&#x27;t already, you can install the Transformers.js JavaScript library from NPM using: ... Example: Perform emotion detection with Xenova/facial_emotions_image_detection: ... Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction."
+    }
+  ]
+}

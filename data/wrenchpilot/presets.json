@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wrenchpilot/presets",
+  "slug": "wrenchpilot-presets",
+  "author": "wrenchpilot",
+  "url": "https://huggingface.co/wrenchpilot/presets",
+  "created_at": "2026-08-24T15:11:01.000Z",
+  "updated_at": "2026-08-24T17:36:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "local-inference",
+    "windows",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pricing | Diesel Shop Software | WrenchPilot",
+      "url": "https://wrenchpilot.io/pricing",
+      "snippet": "AI-Powered Diesel Shop Software Simple, Transparent Pricing No Hidden Fees Start with WrenchPilot Lite for solo mechanics, then scale into Pro as you add techs, bays, and locations. Both include the Performance Intelligence Layer — less time on admin."
+    },
+    {
+      "title": "WrenchPilot AI Capabilities | Diesel Shop Software",
+      "url": "https://wrenchpilot.io/ai-capabilities",
+      "snippet": "Does WrenchPilot have AI capabilities? Yes—an in-app assistant and operational intelligence under the Performance Intelligence Layer, focused on jobs, time, parts, and billing. Many shops report large reductions in manual admin; the right way to judge fit is a demo on your workflow. How does WrenchPilot compare to other shop software on AI?"
+    },
+    {
+      "title": "PresetKSampler Node Documentation (ComfyUI-Model_preset_Pilot)",
+      "url": "https://comfyai.run/documentation/PresetKSampler",
+      "snippet": "PresetKSampler ComfyUI Node The PresetKSampler node in ComfyUI is tailored for users interested in latent space sampling within a ModelPresetManager framework. It efficiently samples latent images by leveraging pre-configured parameters such as model references, condition settings, and advanced configuration enhancements. Real-world use-cases A PresetKSampler node can be used in scenarios ..."
+    },
+    {
+      "title": "GitHub - wrenchpilot/local-ai",
+      "url": "https://github.com/wrenchpilot/local-ai/tree/master",
+      "snippet": "Contribute to wrenchpilot/local-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

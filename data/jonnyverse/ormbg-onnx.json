@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/ormbg-ONNX",
+  "slug": "jonnyverse-ormbg-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/ormbg-ONNX",
+  "created_at": "2026-08-24T16:12:57.000Z",
+  "updated_at": "2026-08-24T16:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "isnet",
+    "background-removal",
+    "image-segmentation",
+    "base_model:schirrmacher/ormbg",
+    "base_model:quantized:schirrmacher/ormbg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 617098277,
+  "storage_human": "617 MB",
+  "base_model": "schirrmacher/ormbg",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "onnx/model.onnx · onnx-community/ormbg-ONNX at main",
+      "url": "https://huggingface.co/onnx-community/ormbg-ONNX/blob/main/onnx/model.onnx",
+      "snippet": "ONNX isnet License: apache-2.0 Model card Files Files and versions Community main ormbg-ONNX / onnx /model.onnx Xenova HF staff"
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "onnx-community/ormbg-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/onnx-community/ormbg-ONNX/tree/main/onnx",
+      "snippet": "Model card FilesFiles and versions xet Community Use this model main ormbg-ONNX /onnx Ctrl+K Ctrl+K 1 contributor History:1 commit Xenova HF Staff Upload ONNX weights c491647 verified3 months ago model.onnx 176 MB xet Upload ONNX weights3 months ago model_bnb4.onnx 176 MB xet Upload ONNX weights3 months ago model_fp16.onnx 88.1 MB xet Upload ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

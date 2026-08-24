@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/juniper-sky-46",
+  "slug": "models4world-juniper-sky-46",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/juniper-sky-46",
+  "created_at": "2026-08-24T17:07:57.000Z",
+  "updated_at": "2026-08-24T17:10:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world/models",
+      "snippet": "User profile of models4world on Hugging Face"
+    },
+    {
+      "title": "AI Release Tracker — Every LLM Release Since ChatGPT",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "What is AI Release Tracker? AI Release Tracker is a free, continuously updated timeline of every major AI model release from the world&#x27;s leading AI labs. It currently tracks 230 models from 10 companies — including OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, Moonshot AI, Z.ai, and Qwen — from the launch of ChatGPT on November 30 2022 through today."
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "List Models from Top AI Providers",
+      "url": "https://www.listmodel.com/",
+      "snippet": "Quickly browse common ai models, copy and paste their model code from providers: Anthropic, Google, DeepSeek, OpenAI, xAI, Moonshot AI..."
+    },
+    {
+      "title": "The Model Index — Discover & Compare Every AI Model",
+      "url": "https://www.themodelindex.ai/",
+      "snippet": "The most comprehensive directory of AI models. Discover, compare, and track every AI model — specs, pricing, benchmarks, and more."
+    }
+  ]
+}

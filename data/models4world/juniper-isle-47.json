@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/juniper-isle-47",
+  "slug": "models4world-juniper-isle-47",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/juniper-isle-47",
+  "created_at": "2026-08-24T18:06:12.000Z",
+  "updated_at": "2026-08-24T18:06:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Directory — 634 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 634 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world/models",
+      "snippet": "User profile of models4world on Hugging Face"
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "List Models from Top AI Providers",
+      "url": "https://www.listmodel.com/",
+      "snippet": "Quickly browse common ai models, copy and paste their model code from providers: Anthropic, Google, DeepSeek, OpenAI, xAI, Moonshot AI..."
+    }
+  ]
+}

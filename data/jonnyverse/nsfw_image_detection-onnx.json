@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/nsfw_image_detection-ONNX",
+  "slug": "jonnyverse-nsfw_image_detection-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/nsfw_image_detection-ONNX",
+  "created_at": "2026-08-24T16:13:14.000Z",
+  "updated_at": "2026-08-24T16:13:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vit",
+    "image-classification",
+    "base_model:Falconsai/nsfw_image_detection",
+    "base_model:quantized:Falconsai/nsfw_image_detection",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 847796821,
+  "storage_human": "848 MB",
+  "base_model": "Falconsai/nsfw_image_detection",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/nsfw_image_detection-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/nsfw_image_detection-ONNX",
+      "snippet": "ONNX Community 674 Image Classification Transformers.js ONNX vit Not-For-All-Audiences Model card Files Files and versions"
+    },
+    {
+      "title": "twn39/nsfw_image_detection-ONNX · Hugging Face",
+      "url": "https://huggingface.co/twn39/nsfw_image_detection-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Homepage - DeniedPixels",
+      "url": "https://deniedpixels.com/",
+      "snippet": "No. All image analysis is performed by an on-device AI model using ONNX Runtime. No images, URLs, or browsing data are ever transmitted to any server. The only network request the paid version makes is a one-time license activation check. DeniedPixels is available for Google Chrome, Mozilla Firefox, and Safari (iOS)."
+    },
+    {
+      "title": "Quantized Models for Falconsai/nsfw_image_detection - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Falconsai/nsfw_image_detection",
+      "snippet": "Active filters: Falconsai/nsfw_image_detection. Clear all. jdp8/nsfw_image_detection. Image Classification • Updated Jan 29, 2025 • 3 • 5"
+    },
+    {
+      "title": "GitHub - FaceONNX/NsfwONNX: Not Suitable for Work (NSFW) recognition ...",
+      "url": "https://github.com/FaceONNX/NsfwONNX",
+      "snippet": "Not Suitable for Work (NSFW) recognition library based on deep neural networks and ONNX runtime - FaceONNX/NsfwONNX"
+    }
+  ]
+}

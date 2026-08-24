@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dimios45/kinematics-flow",
+  "slug": "dimios45-kinematics-flow",
+  "author": "Dimios45",
+  "url": "https://huggingface.co/Dimios45/kinematics-flow",
+  "created_at": "2026-07-08T15:50:24.000Z",
+  "updated_at": "2026-08-24T17:26:02.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "grasping",
+    "jax",
+    "equivariance",
+    "multi-embodiment",
+    "arxiv:2510.27420",
+    "arxiv:2607.20207",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2084790148,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dimios45/kinematics-flow · Hugging Face",
+      "url": "https://huggingface.co/Dimios45/kinematics-flow",
+      "snippet": "Dimios45 / kinematics-flow like 0 JAX grasping equivariance multi-embodiment arxiv:2510.27420 License:agpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new Kinematics Flow checkpoints Checkpoints"
+    },
+    {
+      "title": "dimos-longxiaoze-ai-robot-system/dimos/manipulation/planning/kinematics ...",
+      "url": "https://github.com/Longxiaoze/dimos-longxiaoze-ai-robot-system/tree/main/dimos/manipulation/planning/kinematics",
+      "snippet": "Dimensional is the agentic operating system for physical space. Vibecode humanoids, quadrupeds, drones, and other hardware platforms in natural language and build multi-agent systems that work seam..."
+    },
+    {
+      "title": "GitHub - jstmn/ikflow: Open source implementation to the paper \"IKFlow ...",
+      "url": "https://github.com/jstmn/ikflow",
+      "snippet": "Normalizing flows for Inverse Kinematics. Open source implementation to the paper \"IKFlow: Generating Diverse Inverse Kinematics Solutions\" Runtime curve for getting exact IK solutions for the Franka Panda (maximum positional/rotational error: 1mm, .572 deg) (generated with python scripts/benchmark_generate_exact_solutions.py --model_name=panda__full__lp191_5.25m):"
+    },
+    {
+      "title": "dimensionalOS/dimos | DeepWiki",
+      "url": "https://deepwiki.com/dimensionalOS/dimos",
+      "snippet": "This document introduces DimOS, explaining its purpose as an agentive operating system for generalist robotics, core philosophy, and high-level architecture. DimOS (Dimensional Operating System) is"
+    },
+    {
+      "title": "GitHub - dcharlot-physicalai-bmi/ferromotion: Ferromotion — a Rust ...",
+      "url": "https://github.com/dcharlot-physicalai-bmi/ferromotion",
+      "snippet": "A Rust library for the kinematics, dynamics, and control of physical AI — native and in the browser. Ferromotion is a pure-Rust ecosystem for embodied control: forward/inverse kinematics, rigid-body dynamics, trajectory optimization, motion retargeting, and a broad library of controllers — all compiling to native and wasm32, so the same solver runs on a workstation, an edge robot, and a ..."
+    }
+  ]
+}

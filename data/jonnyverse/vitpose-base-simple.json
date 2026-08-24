@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/vitpose-base-simple",
+  "slug": "jonnyverse-vitpose-base-simple",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/vitpose-base-simple",
+  "created_at": "2026-08-24T16:13:18.000Z",
+  "updated_at": "2026-08-24T16:13:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "keypoint-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vitpose",
+    "keypoint-detection",
+    "base_model:nielsr/vitpose-base-simple",
+    "base_model:quantized:nielsr/vitpose-base-simple",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 850102383,
+  "storage_human": "850 MB",
+  "base_model": "nielsr/vitpose-base-simple",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ViTAE-Transformer/ViTPose: The official repo for [NeurIPS&#x27;22 ...",
+      "url": "https://github.com/ViTAE-Transformer/ViTPose",
+      "snippet": "This branch contains the pytorch implementation of ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation and ViTPose++: Vision Transformer for Generic Body Pose Estimation. It obtains 81.1 AP on MS COCO Keypoint test-dev set. Note * There may exist duplicate images in the crowdpose ..."
+    },
+    {
+      "title": "usyd-community/vitpose-base-simple · Hugging Face",
+      "url": "https://huggingface.co/usyd-community/vitpose-base-simple",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - emcorby2/Vitpose: The official repo for [NeurIPS&#x27;22] \"ViTPose ...",
+      "url": "https://github.com/emcorby2/Vitpose",
+      "snippet": "This branch contains the pytorch implementation of ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation and ViTPose+: Vision Transformer Foundation Model for Generic Body Pose Estimation. It obtains 81.1 AP on MS COCO Keypoint test-dev set. Note * There may exist duplicate images ..."
+    },
+    {
+      "title": "danelcsb/vitpose-base-simple · Hugging Face",
+      "url": "https://huggingface.co/danelcsb/vitpose-base-simple",
+      "snippet": "In this paper, we show the surprisingly good capabilities of plain vision transformers for pose estimation from various aspects, namely simplicity in model structure, scalability in model size, flexibility in training paradigm, and transferability of knowledge between models, through a simple baseline model called ViTPose."
+    },
+    {
+      "title": "Vitpose-base-simple Open Source Model - Lightweight Human Pose ...",
+      "url": "https://model.aibase.com/en/models/details/1915694233803186177",
+      "snippet": "Model Overview ViTPose is a pose estimation model based on the Vision Transformer architecture, capable of detecting human keypoints in images. This model is a simplified base version, suitable for deployment in resource-constrained environments."
+    }
+  ]
+}

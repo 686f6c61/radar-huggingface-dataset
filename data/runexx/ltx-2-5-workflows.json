@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RuneXX/LTX-2.5-Workflows",
+  "slug": "runexx-ltx-2-5-workflows",
+  "author": "RuneXX",
+  "url": "https://huggingface.co/RuneXX/LTX-2.5-Workflows",
+  "created_at": "2026-08-24T16:03:29.000Z",
+  "updated_at": "2026-08-24T16:06:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "ltx",
+  "languages": [],
+  "tags": [
+    "ltx",
+    "comfyui",
+    "comfy",
+    "gguf",
+    "ltx-video",
+    "ltx-2.5",
+    "ltxv",
+    "text-to-video",
+    "image-to-video",
+    "audio-to-video",
+    "video-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2.5 Workflow: ComfyUI Video Generation Model Workflow Guide",
+      "url": "https://ltx.io/blog/comfyui-workflow-guide",
+      "snippet": "How to run LTX-2.5 in ComfyUI for better video quality — covering optimal settings, key nodes, text and image-to-video workflows."
+    },
+    {
+      "title": "RuneXX/LTX-2.3-Workflows · Hugging Face",
+      "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 2.5 on Promptus: Every Workflow, Explained - Promptus",
+      "url": "https://www.promptus.ai/blog/ltx-2-5-workflows-guide-f8629",
+      "snippet": "The four LTX 2.5 workflows on Promptus Text to Video — generate a single cinematic video file directly from a text prompt, with optional spatial upscaling for higher resolution. Built for film previsualization, commercial storyboards, and high-volume production."
+    },
+    {
+      "title": "LTX-2-Workflows vs LTX-2.3-2.5-Workflows — comparison, examples, use cases",
+      "url": "https://www.aimodels.fyi/models/compare/ltx-2-workflows-runexx-vs-ltx-2.3-2.5-workflows-runexx",
+      "snippet": "LTX-2.3-2.5-Workflows is the more recently updated of the two. LTX-2.3-2.5-Workflows has stronger community traction across downloads, stars, and social signals. Both target overlapping tasks, so a head-to-head comparison is meaningful."
+    }
+  ]
+}

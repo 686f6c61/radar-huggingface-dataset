@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "GJuarez67/MiniMax-H3-Fun-Controlnet-Union-Demo",
+  "slug": "gjuarez67-minimax-h3-fun-controlnet-union-demo",
+  "author": "GJuarez67",
+  "url": "https://huggingface.co/GJuarez67/MiniMax-H3-Fun-Controlnet-Union-Demo",
+  "created_at": "2026-08-24T17:41:55.000Z",
+  "updated_at": "2026-08-24T17:41:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alibaba-pai/MiniMax-H3-Fun-Controlnet-Union · Hugging Face",
+      "url": "https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax-H3-Fun-Controlnet-Union · Models",
+      "url": "https://www.modelscope.cn/models/PAI/MiniMax-H3-Fun-Controlnet-Union",
+      "snippet": "MiniMax-H3-Fun-Controlnet-Union MiniMax-H3-Fun-Controlnet-Union is a ControlNet-Union for MiniMax-H3, trained with the VideoX-Fun pipeline. A single checkpoint conditions the MiniMax-H3 video generator on Canny, Depth, HED, MLSD or Pose control videos, and also runs video inpainting. Model Card"
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    }
+  ]
+}

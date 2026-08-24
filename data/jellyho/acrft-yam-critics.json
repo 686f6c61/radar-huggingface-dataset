@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jellyho/acrft-yam-critics",
+  "slug": "jellyho-acrft-yam-critics",
+  "author": "jellyho",
+  "url": "https://huggingface.co/jellyho/acrft-yam-critics",
+  "created_at": "2026-08-24T07:38:38.000Z",
+  "updated_at": "2026-08-24T16:30:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "value-function",
+    "jax",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341475975,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jellyho/acrft-yam-critics · Hugging Face",
+      "url": "https://huggingface.co/jellyho/acrft-yam-critics",
+      "snippet": "jellyho / acrft-yam-critics like 0 Robotics JAX value-function License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new ACRFT YAM patch-critics (s347) Arms Dataset-side evaluation (stride-20, 347 eps, scorer 673f33a) Rollout / serving"
+    },
+    {
+      "title": "GitHub - jellyho/ACRFT",
+      "url": "https://github.com/jellyho/ACRFT",
+      "snippet": "Contribute to jellyho/ACRFT development by creating an account on GitHub."
+    },
+    {
+      "title": "jellyho (Hokyun Im) - Hugging Face",
+      "url": "https://huggingface.co/jellyho",
+      "snippet": "Robot Learning Viewer • Updated Jul 7 • 401k • 55 RoboCasa 365 Target (Human) — LeRobot v3.0"
+    },
+    {
+      "title": "jellyho (Hokyun Im) · GitHub",
+      "url": "https://github.com/jellyho",
+      "snippet": "Activity overview Contributed to jellyho/YammyQuant, jellyho/ACRFT, jellyho/i2rt_SRL and 12 other repositories"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

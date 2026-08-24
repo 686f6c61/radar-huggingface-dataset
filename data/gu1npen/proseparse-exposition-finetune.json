@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "gu1npen/proseparse-exposition-finetune",
+  "slug": "gu1npen-proseparse-exposition-finetune",
+  "author": "gu1npen",
+  "url": "https://huggingface.co/gu1npen/proseparse-exposition-finetune",
+  "created_at": "2026-08-23T20:14:06.000Z",
+  "updated_at": "2026-08-24T19:10:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "deberta",
+    "exposition",
+    "fiction",
+    "en",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 8853189645,
+  "storage_human": "8.9 GB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuning a pretrained model - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.14.1/en/training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuning with gpt-oss and Hugging Face Transformers",
+      "url": "https://developers.openai.com/cookbook/articles/gpt-oss/fine-tune-transfomers",
+      "snippet": "The assistant turn contains two special fields: a thinking one which contains the model&#x27;s reasoning process, and a content one which contains the final response to the user. In order to fine-tune the model, we need to convert these messages into a format that the model can understand."
+    },
+    {
+      "title": "A Practical Guide to Fine-Tuning and Deploying GPT Models Using Hugging ...",
+      "url": "https://blog.jetbrains.com/pycharm/2025/08/fine-tuning-and-deploying-gpt-models-using-hugging-face-transformers/",
+      "snippet": "Why fine-tuning GPT models matters Fine-tuning AI models is crucial for tailoring their performance to specific tasks and datasets, enabling them to achieve higher accuracy and efficiency compared to using a general-purpose model. By adapting a pre-trained model, fine-tuning reduces the need for training from scratch, saving time and resources."
+    },
+    {
+      "title": "fine-tune-llms-in-2025.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/philschmid/deep-learning-pytorch-huggingface/blob/main/training/fine-tune-llms-in-2025.ipynb",
+      "snippet": "Learn to fine-tune open LLMs using Hugging Face on Google Colab with step-by-step guidance and practical examples for 2025."
+    }
+  ]
+}

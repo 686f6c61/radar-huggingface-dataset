@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "wagesj45/toxic-comment-classifier",
+  "slug": "wagesj45-toxic-comment-classifier",
+  "author": "wagesj45",
+  "url": "https://huggingface.co/wagesj45/toxic-comment-classifier",
+  "created_at": "2026-08-24T18:53:55.000Z",
+  "updated_at": "2026-08-24T18:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "toxicity",
+    "content-moderation",
+    "en",
+    "dataset:Heliosoph/Jigsaw-Toxic-Comments",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541317368,
+  "storage_human": "541 MB",
+  "base_model": "distilbert/distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WajdiHammami/toxic-comment-classifier - GitHub",
+      "url": "https://github.com/WajdiHammami/toxic-comment-classifier",
+      "snippet": "End-to-end toxic comment classification system (Jigsaw dataset). Includes baseline (TF-IDF + Logistic Regression), DistilBERT fine-tuning, threshold tuning, FastAPI inference service, Docker deployment, and Responsible AI model card."
+    },
+    {
+      "title": "Toxic Comment Classification using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/toxic-comment-classification-using-bert/",
+      "snippet": "A multiclass classifier for Toxic comment classification is trained to detect various degrees of toxicity in comments, such as mild toxicity, severe toxicity, and non-toxic comments, as opposed to just differentiating between toxic and non-toxic comments (binary classification)."
+    },
+    {
+      "title": "Toxic Comments Classification - GitHub",
+      "url": "https://github.com/ChaitanyaGudimalla/Toxic-comments-classification",
+      "snippet": "This project works on the classification of toxic and non-toxic comments in the dataset available on Kaggle.Firstly, defining the toxic comments into six categories namely toxic, severe toxic, obscene, threat, insult, and identity hate."
+    },
+    {
+      "title": "toxic-comment-model: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/toxic-comment-model-martin-ha",
+      "snippet": "Overview toxic-comment-model is a DistilBERT-based text classifier fine-tuned to detect toxic online comments. Built by martin-ha, the model uses the Hugging Face transformers library and achieves 94% accuracy with an F1-score of 0.59 on a 10,000-row held-out test set. The model was trained on 10% of the Kaggle Jigsaw Unintended Bias in Toxicity Classification dataset and requires ..."
+    },
+    {
+      "title": "unitary/toxic-bert · Hugging Face",
+      "url": "https://huggingface.co/unitary/toxic-bert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

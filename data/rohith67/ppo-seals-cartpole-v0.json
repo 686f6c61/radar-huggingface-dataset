@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Rohith67/ppo-seals-CartPole-v0",
+  "slug": "rohith67-ppo-seals-cartpole-v0",
+  "author": "Rohith67",
+  "url": "https://huggingface.co/Rohith67/ppo-seals-CartPole-v0",
+  "created_at": "2026-08-24T19:03:36.000Z",
+  "updated_at": "2026-08-24T19:03:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "seals/CartPole-v0",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1177280,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HumanCompatibleAI/ppo-seals-CartPole-v0 · Hugging Face",
+      "url": "https://huggingface.co/HumanCompatibleAI/ppo-seals-CartPole-v0",
+      "snippet": "This is a trained model of a PPO agent playing seals/CartPole-v0 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "HumanCompatibleAI/ppo-seals-CartPole-v0 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/103587",
+      "snippet": "This is a trained model of a PPO agent playing seals/CartPole-v0 using the stable-baselines3 library and the RL Zoo."
+    },
+    {
+      "title": "HumanCompatibleAI/ppo-seals-CartPole-v0 · Model Database",
+      "url": "https://modeldatabase.com/HumanCompatibleAI/ppo-seals-CartPole-v0.html",
+      "snippet": "PPO Agent playing seals/CartPole-v0 This is a trained model of a PPO agent playing seals/CartPole-v0 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "HumanCompatibleAI/ppo-seals-CartPole-v0 at main - Hugging Face",
+      "url": "https://huggingface.co/HumanCompatibleAI/ppo-seals-CartPole-v0/tree/main/ppo-seals-CartPole-v0",
+      "snippet": "Model card FilesFiles and versions Community Use in stable-baselines3 main ppo-seals-CartPole-v0 /ppo-seals-CartPole-v0 1 contributor History:1 commit ernestum Initial commit 4a4d554 9 months ago _stable_baselines3_version 5 Bytes Initial commit 9 months ago data 17.4 kB Initial commit 9 months ago policy.optimizer.pth pickle"
+    },
+    {
+      "title": "HumanCompatibleAI/ppo-seals-CartPole-v0 | QuantaMrkt",
+      "url": "https://quantamrkt.com/models/humancompatibleai--ppo-seals-cartpole-v0",
+      "snippet": "Unverified HuggingFace HNDL: MEDIUM Reinforcement-Learning Stable-Baselines3 Seals/CartPole-V0 Deep-Reinforcement-Learning Model-Index 1753,1801 Use Model Verify Watch"
+    }
+  ]
+}

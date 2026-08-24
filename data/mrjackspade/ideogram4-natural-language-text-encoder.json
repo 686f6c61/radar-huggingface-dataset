@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mrjackspade/Ideogram4-Natural-Language-Text-Encoder",
+  "slug": "mrjackspade-ideogram4-natural-language-text-encoder",
+  "author": "mrjackspade",
+  "url": "https://huggingface.co/mrjackspade/Ideogram4-Natural-Language-Text-Encoder",
+  "created_at": "2026-08-24T16:51:20.000Z",
+  "updated_at": "2026-08-24T17:12:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "ideogram4",
+    "qwen3-vl",
+    "text-encoder",
+    "lora",
+    "fp8",
+    "flow-matching",
+    "experimental",
+    "text-to-image",
+    "base_model:Comfy-Org/Qwen3-VL",
+    "base_model:adapter:Comfy-Org/Qwen3-VL",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11287042408,
+  "storage_human": "11.3 GB",
+  "base_model": "Comfy-Org/Qwen3-VL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ideogram-ai/ideogram-4-nf4 · Hugging Face",
+      "url": "https://huggingface.co/ideogram-ai/ideogram-4-nf4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ideogram 4 - a ideogram-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ideogram-ai/ideogram-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ideogram-oss/ideogram4: Ideogram 4: Open image model at the ...",
+      "url": "https://github.com/ideogram-oss/ideogram4",
+      "snippet": "It introduces a new structured JSON prompting interface, with best-in-class multilingual text rendering, deep language understanding, explicit bounding-box layout and color-palette controls, and native 2k resolution images. The easiest way to try the model is online at ideogram.ai."
+    },
+    {
+      "title": "ideogram4/README.md at main · ideogram-oss/ideogram4",
+      "url": "https://github.com/ideogram-oss/ideogram4/blob/main/README.md",
+      "snippet": "It introduces a new structured JSON prompting interface, with best-in-class multilingual text rendering, deep language understanding, explicit bounding-box layout and color-palette controls, and native 2k resolution images. The easiest way to try the model is online at ideogram.ai."
+    },
+    {
+      "title": "Ideogram 4.0 Technical Details: Open model at the forefront of design",
+      "url": "https://ideogram.ai/blog/ideogram-4.0/",
+      "snippet": "Ideogram 4.0 Technical Details: Open model at the forefront of design Our first open-weight foundation model. A 9.3B single-stream Diffusion Transformer, trained from scratch, with a vision-language text encoder and structured JSON prompts."
+    }
+  ]
+}

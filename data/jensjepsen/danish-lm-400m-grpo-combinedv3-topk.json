@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jensjepsen/danish-lm-400m-grpo-combinedv3-topk",
+  "slug": "jensjepsen-danish-lm-400m-grpo-combinedv3-topk",
+  "author": "jensjepsen",
+  "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-combinedv3-topk",
+  "created_at": "2026-08-24T17:36:44.000Z",
+  "updated_at": "2026-08-24T17:41:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "danish",
+    "grpo",
+    "instruction-following",
+    "trl",
+    "da",
+    "base_model:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "base_model:finetune:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4976542224,
+  "storage_human": "5.0 GB",
+  "base_model": "jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jensjepsen/danish-lm-400m-grpo-mixed-v1 · Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "danish-lm-400m-grpo-mixed-v1-best1-step3375 - Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1-best1-step3375",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Danish Lm 400m Grpo Mixed3 Intermediary - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jensjepsen/danish-lm-400m-grpo-mixed3-intermediary",
+      "snippet": "Registry entry for model Danish Lm 400m Grpo Mixed3 Intermediary; source metadata pending."
+    },
+    {
+      "title": "Danish Lm 400M Grpo Json Intermediary Step3125 by jensjepsen",
+      "url": "https://llm-explorer.com/model/jensjepsen%2Fdanish-lm-400m-grpo-json-intermediary-step3125,5nvWMmOdchenOYddWpn5WY",
+      "snippet": "Danish Lm 400M Grpo Json Intermediary Step3125 is an open-source 400m LLM by jensjepsen. VRAM 1.7GB, 7K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    }
+  ]
+}

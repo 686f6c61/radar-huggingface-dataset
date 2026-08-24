@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "matt-wisdom/qwen_farm_agent_gguf",
+  "slug": "matt-wisdom-qwen_farm_agent_gguf",
+  "author": "matt-wisdom",
+  "url": "https://huggingface.co/matt-wisdom/qwen_farm_agent_gguf",
+  "created_at": "2026-08-24T15:23:23.000Z",
+  "updated_at": "2026-08-24T16:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ha",
+    "pcm"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen2.5",
+    "agriculture",
+    "veterinary",
+    "feed-formulation",
+    "nigeria",
+    "hausa",
+    "pidgin",
+    "adtc2026",
+    "on-device-ai",
+    "text-generation",
+    "en",
+    "ha",
+    "pcm",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986045984,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-Agent: Agent framework and applications built upon ...",
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "snippet": "Qwen-Agent is a framework for developing LLM applications based on the instruction following, tool usage, planning, and memory capabilities of Qwen. It also comes with example applications such as Browser Assistant, Code Interpreter, and Custom Assistant. Now Qwen-Agent plays as the backend of Qwen Chat."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Quantization: the practice of quantizing LLMs with GPTQ, AWQ, as well as the guidance for how to make high-quality quantized GGUF files; Training: the instructions for post-training, including SFT and RLHF (TODO) with frameworks like Axolotl, LLaMA-Factory, etc. Framework: the usage of Qwen with frameworks for application, e.g., RAG, Agent, etc."
+    },
+    {
+      "title": "Qwen Agent Documentation | Qwen Agent - qwenlm.github.io",
+      "url": "https://qwenlm.github.io/Qwen-Agent/",
+      "snippet": "Documentation for Qwen Agent: an open-source AI agent framework. Learn installation, agent usage, tool integration, LLM configuration, and best practices."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-7bb8d6b9444c",
+  "slug": "bobtehbuilder-tds-ga8-carbon-7bb8d6b9444c",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-7bb8d6b9444c",
+  "created_at": "2026-08-24T15:53:29.000Z",
+  "updated_at": "2026-08-24T15:53:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-f5ad34f6f655 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-aaed585dd318 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-aaed585dd318",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - llEclipsell/tds-ga8",
+      "url": "https://github.com/llEclipsell/tds-ga8",
+      "snippet": "Contribute to llEclipsell/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

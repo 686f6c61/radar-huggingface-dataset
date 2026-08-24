@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FluidInference/fluidaudio-web",
+  "slug": "fluidinference-fluidaudio-web",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/fluidaudio-web",
+  "created_at": "2026-08-04T16:57:43.000Z",
+  "updated_at": "2026-08-24T16:13:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "webgpu",
+    "wasm",
+    "in-browser",
+    "asr",
+    "tts",
+    "vad",
+    "speech",
+    "fluidaudio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8214374748,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FluidInference/fluidaudio-web · Hugging Face",
+      "url": "https://huggingface.co/FluidInference/fluidaudio-web",
+      "snippet": "FluidInference / fluidaudio-web like 0 Follow Fluid Inference Community 117 webgpu wasm in-browser asr tts vad speech fluidaudio License:mit Model card FilesFiles and versions xet Community Copy to bucket new FluidAudio Web — raw model weights Layout (one folder per engine) Format"
+    },
+    {
+      "title": "GitHub - FluidInference/fluidaudio-web: In-browser inference for ...",
+      "url": "https://github.com/FluidInference/fluidaudio-web",
+      "snippet": "In-browser inference for FluidAudio&#x27;s core models via WebGPU + WebAssembly — no server, no upload, everything runs client-side. This is the browser sibling of the Swift/CoreML FluidAudio framework and the Rust/WASM FluidVad."
+    },
+    {
+      "title": "FluidInference (Fluid Inference Community) - Hugging Face",
+      "url": "https://huggingface.co/FluidInference",
+      "snippet": "Org profile for Fluid Inference Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - FluidInference/FluidAudio: Frontier CoreML audio models in ...",
+      "url": "https://github.com/FluidInference/FluidAudio",
+      "snippet": "FluidAudio is a Swift SDK for fully local, low-latency audio AI on Apple devices, with inference offloaded to the Apple Neural Engine (ANE), resulting in less memory and generally faster inference. The SDK includes state-of-the-art speaker diarization, transcription, and voice activity detection via ..."
+    },
+    {
+      "title": "FluidInference/FluidAudio | DeepWiki",
+      "url": "https://deepwiki.com/FluidInference/FluidAudio",
+      "snippet": "This document provides a high-level introduction to FluidAudio, a Swift SDK for fully local, low-latency audio AI on Apple platforms. It covers the SDK&#x27;s core capabilities, architectural design, and d"
+    }
+  ]
+}

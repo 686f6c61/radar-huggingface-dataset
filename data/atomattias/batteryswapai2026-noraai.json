@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Atomattias/BatterySwapAI2026-NoraAI",
+  "slug": "atomattias-batteryswapai2026-noraai",
+  "author": "Atomattias",
+  "url": "https://huggingface.co/Atomattias/BatterySwapAI2026-NoraAI",
+  "created_at": "2026-08-23T18:47:16.000Z",
+  "updated_at": "2026-08-24T16:22:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "batteryswapai",
+    "remaining-useful-life",
+    "scheduling",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1285816,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomattias/BatterySwapAI2026-NoraAI · Hugging Face",
+      "url": "https://huggingface.co/Atomattias/BatterySwapAI2026-NoraAI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BatterySwapAI 2026 Challenge - NORA - Norwegian Artificial Intelligence ...",
+      "url": "https://www.nora.ai/competitions/batteryswapai/batteryswapai2026.html",
+      "snippet": "You are the operator of a fleet of battery-powered IoT sensor devices, deployed across many buildings over a wide area. As the sensors are starting to run out of battery - you are faced with the challenge: How to know which batteries need replacing when, and what is a good strategy for doing the replacements? This is the challenge we pose to you in this competition."
+    },
+    {
+      "title": "BatterySwapAI - NORA - Norwegian Artificial Intelligence Research ...",
+      "url": "https://www.nora.ai/competitions/batteryswapai/",
+      "snippet": "You are the operator of a fleet of battery-powered IoT sensor devices, deployed across many buildings over a wide area. As the sensors are starting to run out of battery - you are faced with the challenge: How to know which batteries need replacing when, and what is a good strategy for doing the replacements? This is the challenge we pose to you in this competition."
+    },
+    {
+      "title": "amirmir1373/batteryswapai2026 · Hugging Face",
+      "url": "https://huggingface.co/amirmir1373/batteryswapai2026",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZRPATeam/BatterySwapAI-2026",
+      "url": "https://github.com/ZRPATeam/BatterySwapAI-2026/",
+      "snippet": "BatterySwapAI 2026 predicts the Remaining Useful Life (RUL) of IoT battery sensors deployed across 20 Norwegian buildings using LightGBM with building-type calibration and 90% confidence intervals. It optimises daily field-worker routes via an OR-Tools Vehicle Routing Problem solver to minimise battery downtime costs. The recommended AGGRESSIVE scheduling strategy reduces total operational ..."
+    }
+  ]
+}

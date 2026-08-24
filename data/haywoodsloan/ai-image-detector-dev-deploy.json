@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "haywoodsloan/ai-image-detector-dev-deploy",
+  "slug": "haywoodsloan-ai-image-detector-dev-deploy",
+  "author": "haywoodsloan",
+  "url": "https://huggingface.co/haywoodsloan/ai-image-detector-dev-deploy",
+  "created_at": "2025-01-13T17:43:36.000Z",
+  "updated_at": "2026-08-24T18:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "swinv2",
+    "image-classification",
+    "autotrain",
+    "base_model:haywoodsloan/ai-image-detector-deploy",
+    "base_model:finetune:haywoodsloan/ai-image-detector-deploy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 123153,
+  "trending_score": 0,
+  "parameters": 195206006,
+  "parameters_human": "195.2M",
+  "storage_bytes": 4686616828,
+  "storage_human": "4.7 GB",
+  "base_model": "haywoodsloan/ai-image-detector-deploy",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haywoodsloan/ai-image-detector-dev-deploy · Hugging Face",
+      "url": "https://huggingface.co/haywoodsloan/ai-image-detector-dev-deploy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - haywoodsloan/ai-image-detector",
+      "url": "https://github.com/haywoodsloan/ai-image-detector",
+      "snippet": "AI Image Detector About this Project Training, scrapping, and service components for an AI Image Detector."
+    },
+    {
+      "title": "haywoodsloan/ai-image-detector-dev-deploy at main",
+      "url": "https://huggingface.co/haywoodsloan/ai-image-detector-dev-deploy/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "haywoodsloan/ai-image-detector-dev-deploy",
+      "url": "https://www.toolify.ai/ai-model/haywoodsloan-ai-image-detector-dev-deploy",
+      "snippet": "haywoodsloan ai-image-detector-dev-deploy online free ai-image-detector-dev-deploy huggingface.co is an online trial and call api platform, which integrates ai-image-detector-dev-deploy&#x27;s modeling effects, including api services, and provides a free online trial of ai-image-detector-dev-deploy, you can try ai-image-detector-dev-deploy online for free by clicking the link below."
+    },
+    {
+      "title": "ai image detector dev deploy (未知) | Benchmarks & Deploy Guide ...",
+      "url": "https://openmodelmap.com/model/haywoodsloan/ai-image-detector-dev-deploy",
+      "snippet": "ai image detector dev deploy by haywoodsloan. 未知 open-source AI model. This image classification model based on the Swin Transformer V2 architecture is designed for AI-gen"
+    }
+  ]
+}

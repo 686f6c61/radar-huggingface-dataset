@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "luxuansang/Qwopus3.5-9B-Coder-GGUF",
+  "slug": "luxuansang-qwopus3-5-9b-coder-gguf",
+  "author": "luxuansang",
+  "url": "https://huggingface.co/luxuansang/Qwopus3.5-9B-Coder-GGUF",
+  "created_at": "2026-08-24T17:10:14.000Z",
+  "updated_at": "2026-08-24T17:10:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "qwen3_5",
+    "reasoning",
+    "chain-of-thought",
+    "lora",
+    "sft",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "coder",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "dataset:lambda/hermes-agent-reasoning-traces",
+    "dataset:Jackrong/Claude-opus-4.7-TraceInversion-5000x",
+    "dataset:Jackrong/Claude-opus-4.6-TraceInversion-9000x",
+    "base_model:Jackrong/Qwopus3.5-9B-v3.5",
+    "base_model:adapter:Jackrong/Qwopus3.5-9B-v3.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 115954112768,
+  "storage_human": "116.0 GB",
+  "base_model": "Jackrong/Qwopus3.5-9B-v3.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jackrong/Qwopus3.5-9B-Coder · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwopus3.5-9B-Coder-GGUF: Image-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwopus3.5-9b-coder-gguf-jackrong",
+      "snippet": "Overview Qwopus3.5-9B-Coder-GGUF, maintained by Jackrong, is a 9-billion parameter dense language model fine-tuned specifically for agentic coding, tool calling, and logical reasoning tasks. Built on the foundation of Qwen3.5-9B-v3.5, the model runs at 8-bit precision on entry-level 16GB RAM devices like standard laptops and Mac minis. The training process deeply integrates Trace Inversion ..."
+    },
+    {
+      "title": "Qwopus3.5-9B-coder (Jackrong/Qwopus3.5-9B-coder-GGUF)",
+      "url": "https://aiany.app/item/qwopus3-5-9b-coder-jackrong-qwopus3-5-9b-coder-gguf",
+      "snippet": "A GGUF-format 9B model derived from Qwen3.5, fine-tuned for agentic coding, tool-calling, reasoning and vision-capable multimodal prompts. Optimized for local 8‑bit inference on 16GB-class machines; community experimental release for research use."
+    },
+    {
+      "title": "Jackrong/Qwopus3.5-9B-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-v3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+      "snippet": "🚀 Model Fine-Tuning and Logical Alignment (Qwopus3.5-9B-coder) As the base model of this model, Qwopus3.5-9B-v3.5 is already a model with powerful capabilities. On this foundation, Qwopus3.5-9B-coder is specially optimized and fine-tuned for high-performance 🤖 Agentic Coding, complex Tool Calling, and logical reasoning."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_01",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_e82d50_model_01",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_01",
+  "created_at": "2026-08-24T15:59:58.000Z",
+  "updated_at": "2026-08-24T16:00:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_howtocook_5088_v2026_recipe ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_howtocook_5088_v2026_recipe_hub/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Trending Hugging Face Repository With 200k Downloads Executes Malware ...",
+      "url": "https://cybersecuritynews.com/trending-hugging-face-repository-with-200k-downloads/",
+      "snippet": "Trending Hugging Face Repository Executes Malware The attack chain unfolded across six distinct stages. In the first stage, the model card instructed users to clone the repository and run a startbat file on Windows, or a Python loaderpy script on Linux or macOS."
+    },
+    {
+      "title": "GitHub - huggingface/tau: A Python port of Pi&#x27;s minimalist coding agent.",
+      "url": "https://github.com/huggingface/tau",
+      "snippet": "A Python port of Pi&#x27;s minimalist coding agent. Contribute to huggingface/tau development by creating an account on GitHub."
+    },
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a ...",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    }
+  ]
+}

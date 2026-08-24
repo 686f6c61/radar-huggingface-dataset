@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "trongck/lab22-dpo-vn",
+  "slug": "trongck-lab22-dpo-vn",
+  "author": "trongck",
+  "url": "https://huggingface.co/trongck/lab22-dpo-vn",
+  "created_at": "2026-08-24T17:28:36.000Z",
+  "updated_at": "2026-08-24T17:28:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-3B-bnb-4bit",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-3B-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Card for codenopro/lab22-dpo-vn - Hugging Face",
+      "url": "https://huggingface.co/codenopro/lab22-dpo-vn",
+      "snippet": "Instructions to use codenopro/lab22-dpo-vn with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use codenopro/lab22-dpo-vn with PEFT:"
+    },
+    {
+      "title": "Huanvg02/lab22-dpo-vn · Hugging Face",
+      "url": "https://huggingface.co/Huanvg02/lab22-dpo-vn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TunaMonsieur/lab22-dpo-vn API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/TunaMonsieur/lab22-dpo-vn",
+      "snippet": "Run TunaMonsieur/lab22-dpo-vn with FriendliAI inference. LoRA adapter trained with DPO (TRL) on an SFT-mini checkpoint. VinUni AICB Track-3 Day-22."
+    },
+    {
+      "title": "lab22-dpo-vn API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/solar11781/lab22-dpo-vn",
+      "snippet": "Deploy lab22-dpo-vn with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "2A202600540-DaoTatThang-Day22/colab/Lab22_DPO_T4.ipynb at main ... - GitHub",
+      "url": "https://github.com/DaoThang38/2A202600540-DaoTatThang-Day22/blob/main/colab/Lab22_DPO_T4.ipynb",
+      "snippet": "VinUni AICB · Day 22 Track 3 · DPO/ORPO Alignment lab — sibling of Day21-Track3-Finetuning-LLMs-LoRA-QLoRA - DaoThang38/2A202600540-DaoTatThang-Day22"
+    }
+  ]
+}

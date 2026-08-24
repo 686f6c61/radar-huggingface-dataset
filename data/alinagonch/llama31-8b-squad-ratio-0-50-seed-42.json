@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.50-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-50-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.50-seed-42",
+  "created_at": "2026-08-24T17:21:38.000Z",
+  "updated_at": "2026-08-24T17:22:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042423,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.50 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.00 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00",
+      "snippet": "Instructions to use AlinaGonch/llama31-8b-squad-ratio-.00 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use AlinaGonch/llama31-8b-squad-ratio-.00 with Transformers:"
+    },
+    {
+      "title": "Target-Aware Calibration Data Selection for Preserving Uncertainty in ...",
+      "url": "https://arxiv.org/html/2608.21019v1",
+      "snippet": "Abstract Quantization is widely used to deploy large language models, but its effect on uncertainty behavior, such as confidence, margins, and abstention, is rarely treated as a primary objective. We frame calibration-data selection for quantization as a target-dependent uncertainty-preservation problem. Different deployments emphasize different regions of the input distribution, yet prior ..."
+    },
+    {
+      "title": "llama-models/models/llama3_1/MODEL_CARD.md at main · meta ... - GitHub",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "snippet": "Utilities intended for use with Llama models. Contribute to meta-llama/llama-models development by creating an account on GitHub."
+    },
+    {
+      "title": "llama3/llama at main · meta-llama/llama3 · GitHub",
+      "url": "https://github.com/meta-llama/llama3/tree/main/llama",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

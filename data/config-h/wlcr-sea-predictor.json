@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "config-h/WLCR-SEA-Predictor",
+  "slug": "config-h-wlcr-sea-predictor",
+  "author": "config-h",
+  "url": "https://huggingface.co/config-h/WLCR-SEA-Predictor",
+  "created_at": "2026-08-24T15:27:14.000Z",
+  "updated_at": "2026-08-24T15:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "time-series",
+    "traffic-forecasting",
+    "cellular-networks",
+    "time-series-forecasting",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152416,
+  "storage_human": "152416 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "config-h/WLCR-SEA_Predictor at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/config-h/WLCR-SEA_Predictor/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WLCR-SEA Predictor - GitHub",
+      "url": "https://github.com/rudykon/WLCR-SEA_Predictor",
+      "snippet": "WLCR-SEA (Window-Local Context Representation with Seasonal Expert Attention) is a request-local cellular-traffic forecaster. A prediction request consumes one target cell&#x27;s ordered 336-hour traffic history and observation mask, then produces 24 future hours for four traffic indicators."
+    },
+    {
+      "title": "rudykon (Minghao Kong) · GitHub",
+      "url": "https://github.com/rudykon",
+      "snippet": "WLCR-SEA_Predictor Public Source-only WLCR-SEA cellular traffic forecasting research code Python"
+    },
+    {
+      "title": "A deep learning approach to predict significant wave ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1463500322001652",
+      "snippet": "We present a new deep learning training framework for forecasting significant wave height on the Southwestern Atlantic Ocean. We use the long short-te…"
+    },
+    {
+      "title": "Advancing Seasonal Prediction of Tropical Cyclone Activity with a ...",
+      "url": "https://arxiv.org/pdf/2505.01455v2",
+      "snippet": "Advancing Seasonal Prediction of Tropical Cyclone Activity with a Hybrid AI-Physics Climate Model Gan Zhang1*, Megha Rao1, Janni Yuval2, Ming Zhao3"
+    }
+  ]
+}

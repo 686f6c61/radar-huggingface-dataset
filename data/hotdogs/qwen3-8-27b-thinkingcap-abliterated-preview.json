@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview",
+  "slug": "hotdogs-qwen3-8-27b-thinkingcap-abliterated-preview",
+  "author": "hotdogs",
+  "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview",
+  "created_at": "2026-08-24T14:31:11.000Z",
+  "updated_at": "2026-08-24T15:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3",
+    "thinkingcap",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "lora",
+    "sft",
+    "abliterated",
+    "multi-token-prediction",
+    "text-generation",
+    "conversational",
+    "dataset:hotdogs/thinkingcap-sft-qwen38-27b",
+    "base_model:hotdogs/Qwen3.8-27B-abliterated",
+    "base_model:adapter:hotdogs/Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582996477,
+  "storage_human": "55.6 GB",
+  "base_model": "hotdogs/Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hotdogs/Qwen3.8-27B-abliterated-cyber-preview · Hugging Face",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-cyber-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview · Discussions",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview/discussions",
+      "snippet": "Instructions to use hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "Two days after OrcaRouter shipped its own abliterated Qwen3.8-27B, a second, independent uncensored build of the same model went viral for a much more direct reason."
+    },
+    {
+      "title": "Qwen3.8 27B Abliterated Sme Preview by hotdogs - LLM Explorer",
+      "url": "https://llm-explorer.com/model/hotdogs%2FQwen3.8-27B-abliterated-sme-preview,5tseOQSZhLnhc7WVQdpApP",
+      "snippet": "Rank the Qwen3.8 27B Abliterated Sme Preview capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8 27B Abliterated by hotdogs — VRAM 55.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/hotdogs%2FQwen3.8-27B-abliterated,3OshiP1Xtg7XK84wjMjHc",
+      "snippet": "Qwen3.8 27B Abliterated is an open-source 27b LLM by hotdogs. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

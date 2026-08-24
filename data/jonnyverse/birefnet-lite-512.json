@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/birefnet-lite-512",
+  "slug": "jonnyverse-birefnet-lite-512",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/birefnet-lite-512",
+  "created_at": "2026-08-24T16:12:53.000Z",
+  "updated_at": "2026-08-24T16:12:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin",
+    "background-removal",
+    "matting",
+    "webgpu",
+    "birefnet",
+    "alpha-matting",
+    "image-matting",
+    "foreground-extraction",
+    "salient-object-detection",
+    "dichotomous-image-segmentation",
+    "client-side",
+    "transformers-js",
+    "fp16",
+    "image-segmentation",
+    "dataset:ZhengPeng7/DIS5K",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290361786,
+  "storage_human": "290 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "studioludens/birefnet-lite-512 · Hugging Face",
+      "url": "https://huggingface.co/studioludens/birefnet-lite-512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BRURIAMASTER/birefnet-lite-512 · Hugging Face",
+      "url": "https://huggingface.co/BRURIAMASTER/birefnet-lite-512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZhengPeng7/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for ...",
+      "url": "https://github.com/ZhengPeng7/BiRefNet",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    },
+    {
+      "title": "GitHub - ansj11/BiRefNet",
+      "url": "https://github.com/ansj11/BiRefNet",
+      "snippet": "Thanks viperyl/ComfyUI-BiRefNet: this project packs BiRefNet as ComfyUI nodes, and makes this SOTA model easier use for everyone. Thanks Rishabh for offering a demo for the easier multiple images inference on colab."
+    },
+    {
+      "title": "General Scenario Intelligent High-precision Parsing",
+      "url": "https://www.birefnet.cv/",
+      "snippet": "Discover our latest Model features High-precision Segmentation Achieve highly accurate image segmentation with our state-of-the-art technology. Perfect for medical imaging, autonomous vehicles, and more. 📊🔍 Learn More"
+    }
+  ]
+}

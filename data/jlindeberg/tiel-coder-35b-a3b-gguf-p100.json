@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jlindeberg/Tiel-Coder-35B-A3B-GGUF-P100",
+  "slug": "jlindeberg-tiel-coder-35b-a3b-gguf-p100",
+  "author": "jlindeberg",
+  "url": "https://huggingface.co/jlindeberg/Tiel-Coder-35B-A3B-GGUF-P100",
+  "created_at": "2026-08-24T16:35:09.000Z",
+  "updated_at": "2026-08-24T17:15:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21293389760,
+  "storage_human": "21.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: The Small Model That Codes Like a Giant",
+      "url": "https://www.labellerr.com/blog/qwen3-6-35b-a3b-open-source-ai-model/",
+      "snippet": "Qwen3.6-35B-A3B is a breakthrough open-source AI model combining 35B capacity with 3B active parameters. It delivers strong coding, reasoning, and multimodal performance at a fraction of the cost."
+    },
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "little-coder/docs/benchmark-qwen3.6-35b-a3b.md at main - GitHub",
+      "url": "https://github.com/itayinbarr/little-coder/blob/main/docs/benchmark-qwen3.6-35b-a3b.md",
+      "snippet": "One complete end-to-end run of the full 225-exercise Aider Polyglot benchmark with little-coder + llamacpp/qwen3.6-35b-a3b (Qwen3.6-35B-A3B, 35B total / 3B active MoE, unsloth/Qwen3.6-35B-A3B-GGUF UD-Q4_K_M, ~22.1 GB). Executed on the same hardware and same harness as the prior ollama/qwen3.5 two-run reproduction, with llama.cpp replacing Ollama as the serving backend."
+    },
+    {
+      "title": "Qwopus3.6-35B-A3B-Coder-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+      "snippet": "The coder model builds on the Qwopus3.6-35B-A3B line, itself based on Qwen3.6-35B-A3B. The underlying architecture is a hybrid sparse MoE model with 35B total parameters and approximately 3B active parameters per token, making it attractive for local high-frequency coding workloads."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_03",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_e82d50_model_03",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_03",
+  "created_at": "2026-08-24T16:00:09.000Z",
+  "updated_at": "2026-08-24T16:00:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_howtocook_5088_v2026_recipe ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_howtocook_5088_v2026_recipe_hub/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Add a Custom Model - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/guide/configuration/custom-models/",
+      "snippet": "Add a Custom Model This guide explains every supported way to add a custom model to Lemonade Server. Start with the CLI workflows below unless you specifically need to hand-edit user_models.json or recipe_options.json. Choose a Workflow Pull from Hugging Face or ModelScope A source-less pull uses the server&#x27;s configured default_model_source (shipped default: Hugging Face), so existing commands ..."
+    },
+    {
+      "title": "huggingface_hub/docs/source/en/guides/hf_file_system.md at main ...",
+      "url": "https://github.com/huggingface/huggingface_hub/blob/main/docs/source/en/guides/hf_file_system.md",
+      "snippet": "In addition to the [HfApi], the huggingface_hub library provides [HfFileSystem], a pythonic fsspec-compatible file interface to the Hugging Face Hub. The [HfFileSystem] builds on top of the [HfApi] and offers typical filesystem style operations like cp, mv, ls, du, glob, get_file, and put_file."
+    },
+    {
+      "title": "Filesystem API — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/huggingface_hub/package_reference/hf_file_system.html",
+      "snippet": "Filesystem API: reference documentation for working with open source AI models and libraries. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

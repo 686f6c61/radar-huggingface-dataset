@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "slug": "peculiar-ragdoll-tiel-coder-35b-a3b-mlx-oq4e",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "created_at": "2026-08-24T12:04:15.000Z",
+  "updated_at": "2026-08-24T17:31:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6045761392,
+  "parameters_human": "6.05B",
+  "storage_bytes": 21117590989,
+  "storage_human": "21.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF/discussions/1",
+      "snippet": "I&#x27;m considering using this model, but I&#x27;m stuck between this and KAT Coder V2.5 Dev, as they&#x27;re both based on Qwen3.6 35B A3B."
+    },
+    {
+      "title": "peculiar-ragdoll (Saga) - Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/models",
+      "snippet": "peculiar-ragdoll 35 Follow pestouille&#x27;s profile picturebenoe&#x27;s profile picture 2 followers · 3 following peculiar-ragdoll"
+    },
+    {
+      "title": "peculiar-ragdoll · GitHub",
+      "url": "https://github.com/peculiar-ragdoll",
+      "snippet": "AI researcher. GitHub is where peculiar-ragdoll builds software."
+    },
+    {
+      "title": "peculiar-ragdoll--Nail-Qwen3.6-35B-A3B-MLX - omlx.ai",
+      "url": "https://omlx.ai/benchmarks/performance/78ked94l",
+      "snippet": "740.3 PP tok/s, 56.9 TG tok/s — peculiar-ragdoll--Nail-Qwen3.6-35B-A3B-MLX (4bit) on M4 Pro (16c) 48GB"
+    },
+    {
+      "title": "peculiar-ragdoll (peculiar-ragdoll) / Repositories · GitHub",
+      "url": "https://github.com/peculiar-ragdoll?tab=repositories",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "rfonod/geo-trax",
+  "slug": "rfonod-geo-trax",
+  "author": "rfonod",
+  "url": "https://huggingface.co/rfonod/geo-trax",
+  "created_at": "2026-06-24T19:07:50.000Z",
+  "updated_at": "2026-08-24T19:09:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolov8",
+    "object-detection",
+    "aerial-imagery",
+    "drone",
+    "vehicle-detection",
+    "birds-eye-view",
+    "geo-trax",
+    "trajectory",
+    "urban-traffic",
+    "tracking",
+    "arxiv:2411.02136",
+    "en",
+    "dataset:rfonod/songdo-vision",
+    "dataset:Voxel51/VisDrone2019-DET",
+    "dataset:detection-datasets/coco",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "doi:10.57967/hf/9296",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 467,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69431876,
+  "storage_human": "69 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Songdo Vision (v1)",
+      "metric": "mAP@0.5",
+      "value": 0.951
+    },
+    {
+      "task": null,
+      "dataset": "Songdo Vision (v1)",
+      "metric": "mAP@0.5:0.95",
+      "value": 0.711
+    },
+    {
+      "task": null,
+      "dataset": "Songdo Vision (v1)",
+      "metric": "Precision",
+      "value": 0.911
+    },
+    {
+      "task": null,
+      "dataset": "Songdo Vision (v1)",
+      "metric": "Recall",
+      "value": 0.935
+    }
+  ],
+  "sources": [
+    {
+      "title": "README.md · rfonod/geo-trax at main - Hugging Face",
+      "url": "https://huggingface.co/rfonod/geo-trax/blob/main/README.md",
+      "snippet": "rfonod / geo-trax like 1 Object Detection ultralytics rfonod/songdo-vision Voxel51/VisDrone2019-DET detection-datasets/coco English doi:10.57967/hf/9296 yolov8 aerial-imagery drone vehicle-detection birds-eye-view geo-trax trajectory urban-traffic tracking PyTorch Eval Results (legacy) arxiv:2411.02136 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Use ..."
+    },
+    {
+      "title": "geo-trax/README.md at main · rfonod/geo-trax · GitHub",
+      "url": "https://github.com/rfonod/geo-trax/blob/main/README.md",
+      "snippet": "Geo-trax (GEO-referenced TRAjectory eXtraction) is a comprehensive pipeline that extracts high-accuracy, georeferenced vehicle trajectories from high-altitude drone imagery. Built for quasi-stationary aerial monitoring of urban traffic, it turns raw bird&#x27;s-eye view (BEV) drone footage into precise, real-world vehicle trajectories. The framework combines YOLO detection, multi-object tracking ..."
+    },
+    {
+      "title": "rfonod/geo-trax · Hugging Face",
+      "url": "https://huggingface.co/rfonod/geo-trax",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - rfonod/geo-trax: Extract and analyze high-accuracy ...",
+      "url": "https://github.com/rfonod/geo-trax",
+      "snippet": "🚀 Extract and analyze high-accuracy georeferenced vehicle trajectories from bird's-eye-view aerial video using computer vision and deep learning, for scalable urban traffic analysis. - rfonod/g..."
+    },
+    {
+      "title": "rfonod/geo-trax · Object Detection model | MLForge",
+      "url": "https://mlforge.in/models/rfonod/geo-trax/",
+      "snippet": "Model details Task Object Detection Provider rfonod Framework ultralytics Size 66 MB License cc-by-4. Downloads 307 Likes 1 Paper arXiv:2411.02136 Updated 2026-06-29"
+    }
+  ]
+}

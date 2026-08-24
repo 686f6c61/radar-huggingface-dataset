@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gbuzhf/ICE-quantization",
+  "slug": "gbuzhf-ice-quantization",
+  "author": "gbuzhf",
+  "url": "https://huggingface.co/gbuzhf/ICE-quantization",
+  "created_at": "2026-08-24T18:29:24.000Z",
+  "updated_at": "2026-08-24T18:29:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "gguf",
+    "mixture-of-experts",
+    "llama.cpp",
+    "technical-report",
+    "doi:10.57967/hf/10112",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ice-quant",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ice-quant Clear all"
+    },
+    {
+      "title": "Quantization · Hugging Face",
+      "url": "https://huggingface.co/docs/optimum/concept_guides/quantization",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Quantization: Concepts, Methods, and Why It Matters",
+      "url": "https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/",
+      "snippet": "As AI models—especially generative AI models—grow in size and computational demands, quantization addresses challenges such as memory usage, inference speed, and energy consumption by reducing the precision of model parameters (weights and/or activations), e.g., from FP32 precision to FP8 precision."
+    },
+    {
+      "title": "Model Quantization | google-ai-edge/models-samples | DeepWiki",
+      "url": "https://deepwiki.com/google-ai-edge/models-samples/4-model-quantization",
+      "snippet": "Model Quantization Relevant source files Model quantization is a critical optimization technique for deploying machine learning models on edge devices. This document explains the quantization methods available in the Google AI Edge Models-Samples repository, providing implementation examples and best practices."
+    },
+    {
+      "title": "GitHub - AI-Efficiency/Awesome-Model-Quantization: A list of papers ...",
+      "url": "https://github.com/AI-Efficiency/Awesome-Model-Quantization/",
+      "snippet": "A list of papers, docs, codes about model quantization. This repo is aimed to provide the info for model quantization research, we are continuously improving the project."
+    }
+  ]
+}

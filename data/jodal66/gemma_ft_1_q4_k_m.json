@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jodal66/gemma_ft_1_q4_k_m",
+  "slug": "jodal66-gemma_ft_1_q4_k_m",
+  "author": "jodal66",
+  "url": "https://huggingface.co/jodal66/gemma_ft_1_q4_k_m",
+  "created_at": "2026-08-24T16:49:18.000Z",
+  "updated_at": "2026-08-24T16:49:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 1708583456,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kunj5562/gemma_ft_q4_k_m · Hugging Face",
+      "url": "https://huggingface.co/kunj5562/gemma_ft_q4_k_m",
+      "snippet": "Instructions to use kunj5562/gemma_ft_q4_k_m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use kunj5562/gemma_ft_q4_k_m with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 Download Hub - Download Gemma 4 Open Models",
+      "url": "https://gemmai4.com/download/",
+      "snippet": "Download Gemma 4 open models: E2B, E4B, 12B Unified, 26B A4B MoE and 31B Dense. Official Hugging Face repos, QAT GGUF quantisations, Ollama tags, Kaggle and Vertex AI mirrors."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Q4_K_M Guide: Optimal Local AI Setup 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-q4_k_m-guide",
+      "snippet": "Learn how to install and optimize Google&#x27;s Gemma 4 using the Q4_K_M quantization. A complete guide for local LLM enthusiasts and developers."
+    }
+  ]
+}

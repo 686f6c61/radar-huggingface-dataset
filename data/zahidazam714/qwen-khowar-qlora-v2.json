@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zahidazam714/qwen-khowar-qlora-v2",
+  "slug": "zahidazam714-qwen-khowar-qlora-v2",
+  "author": "zahidazam714",
+  "url": "https://huggingface.co/zahidazam714/qwen-khowar-qlora-v2",
+  "created_at": "2026-08-24T19:01:04.000Z",
+  "updated_at": "2026-08-24T19:11:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46658996,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zahidazam714 (Zahid Azam) - Hugging Face",
+      "url": "https://huggingface.co/zahidazam714",
+      "snippet": "User profile of Zahid Azam on Hugging Face"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RkanGen/finetune_qwen_using_qlora: This repository provides a ...",
+      "url": "https://github.com/RkanGen/finetune_qwen_using_qlora",
+      "snippet": "This repository provides a complete, production-ready implementation for fine-tuning Qwen2.5-7B using QLoRA (Quantized Low-Rank Adaptation). QLoRA enables efficient fine-tuning of large language models on consumer-grade GPUs by using 4-bit quantization."
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "📚 More on this topic: Qwen 3.5 Local Guide · Qwen 3.5 9B Setup Guide · Llama 3 Guide · DeepSeek Models Guide · Best Models for Coding · VRAM Requirements While everyone was talking about Llama and DeepSeek, Alibaba quietly built the best open-source model family in the world. Qwen 3 beats Llama 3 at every comparable size. Qwen 2.5 Coder 32B matches GPT-4o on coding benchmarks. Qwen-VL ..."
+    }
+  ]
+}

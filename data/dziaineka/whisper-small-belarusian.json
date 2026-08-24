@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dziaineka/whisper-small-belarusian",
+  "slug": "dziaineka-whisper-small-belarusian",
+  "author": "dziaineka",
+  "url": "https://huggingface.co/dziaineka/whisper-small-belarusian",
+  "created_at": "2026-08-24T18:06:22.000Z",
+  "updated_at": "2026-08-24T18:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "be"
+  ],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "whisper-event",
+    "generated_from_trainer",
+    "be",
+    "dataset:mozilla-foundation/common_voice_11_0",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 12572658133,
+  "storage_human": "12.6 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "mozilla-foundation/common_voice_11_0 be",
+      "metric": "WER",
+      "value": 6.3671568743912
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "mozilla-foundation/common_voice_11_0 be",
+      "metric": "WER",
+      "value": 6.79
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "google/fleurs",
+      "metric": "WER (reference column: transcription)",
+      "value": 43.615168811067036
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "google/fleurs",
+      "metric": "WER (reference column: raw_transcription)",
+      "value": 45.89674723962996
+    }
+  ],
+  "sources": [
+    {
+      "title": "ales/whisper-small-belarusian · Hugging Face",
+      "url": "https://huggingface.co/ales/whisper-small-belarusian",
+      "snippet": "Model tree for ales/whisper-small-belarusian Base model openai/whisper-small Finetuned (1860) this model"
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "ales/whisper-small-belarusian - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/96617",
+      "snippet": "This model is a fine-tuned version of openai/whisper-small on the mozilla-foundation/common_voice_11_0 be dataset. It achieves the following results on the evaluation ..."
+    },
+    {
+      "title": "GitHub - navalnica/whisper-finetuning-be: Finetuning Whisper ASR model ...",
+      "url": "https://github.com/navalnica/whisper-finetuning-be/tree/main",
+      "snippet": "Fine-tuning OpenAI Whisper model for Belarusian language during Whisper fine-tuning Event hosted by HuggingFace x Lambda. The code in this repository is a modified version of code from Whisper fine-tuning Event repo."
+    }
+  ]
+}

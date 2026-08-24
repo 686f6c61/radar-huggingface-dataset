@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/resnet-50",
+  "slug": "jonnyverse-resnet-50",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/resnet-50",
+  "created_at": "2026-08-24T16:13:09.000Z",
+  "updated_at": "2026-08-24T16:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "resnet",
+    "image-classification",
+    "base_model:microsoft/resnet-50",
+    "base_model:quantized:microsoft/resnet-50",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 475829825,
+  "storage_human": "476 MB",
+  "base_model": "microsoft/resnet-50",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/resnet-50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - modelhub-ai/resnet-50: Integration of ResNet-50 (in ONNX ...",
+      "url": "https://github.com/modelhub-ai/resnet-50",
+      "snippet": "This repository hosts the contributor source files for the resnet-50 model. ModelHub integrates these files into an engine and controlled runtime environment. A unified API allows for out-of-the-box reproducible implementations of published models. For more information, please visit www.modelhub.ai or contact us info@modelhub.ai."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-resnet-50",
+      "snippet": "microsoft/resnet-50 powered by Hugging Face Inference Toolkit Original Model Card image-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "resnet-50: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/resnet-50-microsoft",
+      "snippet": "The model is widely supported across frameworks and is unlikely to be deprecated, though newer architectures receive more active research development. Q: What are the main failure modes of ResNet-50?"
+    },
+    {
+      "title": "amd/resnet50 · Hugging Face",
+      "url": "https://huggingface.co/amd/resnet50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

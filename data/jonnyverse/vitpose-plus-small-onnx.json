@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/vitpose-plus-small-ONNX",
+  "slug": "jonnyverse-vitpose-plus-small-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/vitpose-plus-small-ONNX",
+  "created_at": "2026-08-24T16:13:20.000Z",
+  "updated_at": "2026-08-24T16:13:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vitpose",
+    "base_model:usyd-community/vitpose-plus-small",
+    "base_model:quantized:usyd-community/vitpose-plus-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 367994529,
+  "storage_human": "368 MB",
+  "base_model": "usyd-community/vitpose-plus-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/vitpose-plus-small-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/vitpose-plus-small-ONNX",
+      "snippet": "onnx-community / vitpose-plus-small-ONNX like 0 Follow ONNX Community 771 Transformers.js ONNX vitpose Model card FilesFiles and versions xet Community Use this model vitpose-plus-small (ONNX)"
+    },
+    {
+      "title": "onnx-community/vitpose-plus-small-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/onnx-community/vitpose-plus-small-ONNX/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vitpose-plus-small (ONNX) - Models",
+      "url": "https://www.modelscope.cn/models/onnx-community/vitpose-plus-small-ONNX",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "GitHub - ViTAE-Transformer/ViTPose: The official repo for [NeurIPS&#x27;22 ...",
+      "url": "https://github.com/ViTAE-Transformer/ViTPose",
+      "snippet": "This branch contains the pytorch implementation of ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation and ViTPose++: Vision Transformer for Generic Body Pose Estimation. It obtains 81.1 AP on MS COCO Keypoint test-dev set. Note * There may exist duplicate images in the crowdpose ..."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    }
+  ]
+}

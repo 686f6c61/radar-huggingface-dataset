@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/grounding-dino-tiny-ONNX",
+  "slug": "jonnyverse-grounding-dino-tiny-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/grounding-dino-tiny-ONNX",
+  "created_at": "2026-08-24T16:13:01.000Z",
+  "updated_at": "2026-08-24T16:13:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-object-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "grounding-dino",
+    "zero-shot-object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2083232702,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/grounding-dino-tiny-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/grounding-dino-tiny-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · onnx-community/grounding-dino-tiny-ONNX at main",
+      "url": "https://huggingface.co/onnx-community/grounding-dino-tiny-ONNX/blob/main/README.md",
+      "snippet": "Zero-Shot Object Detection Transformers.js ONNX grounding-dino License: apache-2.0 Model card Files Community Use this model"
+    },
+    {
+      "title": "groundingdino-onnx-jetson/README.md at main · Sep-AI ... - GitHub",
+      "url": "https://github.com/Sep-AI/groundingdino-onnx-jetson/blob/main/README.md",
+      "snippet": "grounding-dino deployed on jetson orin nx. Contribute to Sep-AI/groundingdino-onnx-jetson development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Sep-AI/groundingdino-onnx-jetson: grounding-dino deployed on ...",
+      "url": "https://github.com/Sep-AI/groundingdino-onnx-jetson",
+      "snippet": "grounding-dino deployed on jetson orin nx. Contribute to Sep-AI/groundingdino-onnx-jetson development by creating an account on GitHub."
+    },
+    {
+      "title": "Grounding-DINO-Tiny-ONNX Open Source Model - Lightweight Zero-Shot ...",
+      "url": "https://model.aibase.com/models/details/1915694083705823233",
+      "snippet": "This model is the ONNX version of IDEA-Research&#x27;s Grounding DINO Tiny, specifically designed for zero-shot object detection tasks, capable of detecting objects in images based on text descriptions."
+    }
+  ]
+}

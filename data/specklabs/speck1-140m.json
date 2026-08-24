@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "specklabs/Speck1-140M",
+  "slug": "specklabs-speck1-140m",
+  "author": "specklabs",
+  "url": "https://huggingface.co/specklabs/Speck1-140M",
+  "created_at": "2026-08-24T09:48:10.000Z",
+  "updated_at": "2026-08-24T18:32:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speck",
+    "text-generation",
+    "causal-lm",
+    "base-model",
+    "hybrid",
+    "grouped-query-attention",
+    "causal-convolution",
+    "pytorch",
+    "custom_code",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140652288,
+  "parameters_human": "140.7M",
+  "storage_bytes": 281821699,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Four-choice base-text continuation",
+      "dataset": "BananaMind Base Bench 1.1",
+      "metric": "Overall Elo",
+      "value": 965
+    },
+    {
+      "task": "Four-choice base-text continuation",
+      "dataset": "BananaMind Base Bench 1.1",
+      "metric": "Accuracy",
+      "value": 42.57
+    },
+    {
+      "task": "Four-choice base-text continuation",
+      "dataset": "BananaMind Base Bench 1.1",
+      "metric": "Weighted accuracy",
+      "value": 43.46
+    }
+  ],
+  "sources": [
+    {
+      "title": "SVECTOR-CORPORATION/Spec-1-Mini · Hugging Face",
+      "url": "https://huggingface.co/SVECTOR-CORPORATION/Spec-1-Mini",
+      "snippet": "Spec-1-Mini is a lightweight language model with 130 million parameters, designed for efficient natural language processing tasks. Its compact size makes it suitable for environments with limited computational resources while maintaining reliable performance on a variety of tasks."
+    },
+    {
+      "title": "Meta Pays $140 Million to German AI Startup for Image Technology It ...",
+      "url": "https://www.ctol.digital/news/meta-pays-140-million-german-ai-startup-image-technology-claims-building-internally/",
+      "snippet": "Meta pays $140 million to German AI startup Black Forest Labs for image generation technology despite claiming to build superintelligence internally."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Source: Meta signed a contract worth $140M+ to use technology from AI ...",
+      "url": "https://www.techmeme.com/250909/p40",
+      "snippet": "Source: Meta signed a contract worth $140M+ to use technology from AI image startup Black Forest Labs, committing $35M in the first year and $105M in the second More: Sifted, StreetInsider.com, TipRanks Financial, MarketScreener, and WinBuzzer Andrew Cunningham / Ars Technica:"
+    },
+    {
+      "title": "Speck1",
+      "url": "https://www.speck1.com/",
+      "snippet": "WEB & APPLICATION DEVELOPMENT IT STAFF AUGMENTATION STARTUP CTO info@speck1.com © Copyright SPECK1 LLC. All rights reserved."
+    }
+  ]
+}

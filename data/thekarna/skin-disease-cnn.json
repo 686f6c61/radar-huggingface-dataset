@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TheKarna/skin-disease-cnn",
+  "slug": "thekarna-skin-disease-cnn",
+  "author": "TheKarna",
+  "url": "https://huggingface.co/TheKarna/skin-disease-cnn",
+  "created_at": "2026-08-24T16:10:47.000Z",
+  "updated_at": "2026-08-24T16:10:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60086088,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep learning models across the range of skin disease",
+      "url": "https://www.nature.com/articles/s41746-024-01033-8",
+      "snippet": "We explore the evolving landscape of diagnostic artificial intelligence (AI) in dermatology, particularly focusing on deep learning models for a wide array of skin diseases beyond skin cancer. We ..."
+    },
+    {
+      "title": "GitHub - hraiharan/Skin-disease-detection-using-CNN: This repository ...",
+      "url": "https://github.com/hraiharan/Skin-disease-detection-using-CNN",
+      "snippet": "This repository contains a project aimed at detecting and classifying various skin diseases using Convolutional Neural Networks (CNNs). Leveraging deep learning, this model processes skin images to identify potential conditions such as melanoma, acne, eczema, and more, offering a non-invasive tool to assist in early diagnosis."
+    },
+    {
+      "title": "PDF Skin Disease Prediction Model using CNN - ijrpr.com",
+      "url": "https://ijrpr.com/uploads/V6ISSUE12/IJRPR57012.pdf",
+      "snippet": "Skin Disease Prediction Model using CNN G. Lokeshwari1,Anshwi Tripathi, T.Jhansi Victoriya, Jigyasa Yadav, Prof. Sana Danwani"
+    },
+    {
+      "title": "PDF Deep learning models across the range of skin disease - Nature",
+      "url": "https://www.nature.com/articles/s41746-024-01033-8.pdf",
+      "snippet": "We explore the evolving landscape of diagnostic artificial intelligence (AI) in dermatology, particularly focusing on deep learning models for a wide array of skin diseases beyond skin cancer. We ..."
+    },
+    {
+      "title": "GitHub - anshtaralekar/skin-disease-detection-cnn: CNN-based skin ...",
+      "url": "https://github.com/anshtaralekar/skin-disease-detection-cnn",
+      "snippet": "skin-disease-detection-cnn CNN-based skin disease classification system developed for automated detection of common skin diseases using deep learning and image processing techniques."
+    }
+  ]
+}

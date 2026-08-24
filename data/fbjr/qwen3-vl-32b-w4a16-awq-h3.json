@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "fbjr/qwen3-vl-32b-W4A16-AWQ-H3",
+  "slug": "fbjr-qwen3-vl-32b-w4a16-awq-h3",
+  "author": "fbjr",
+  "url": "https://huggingface.co/fbjr/qwen3-vl-32b-W4A16-AWQ-H3",
+  "created_at": "2026-08-23T17:05:21.000Z",
+  "updated_at": "2026-08-24T19:15:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "safetensors",
+    "qwen3_vl",
+    "quantized",
+    "awq",
+    "w4a16",
+    "vllm",
+    "sglang",
+    "compressed-tensors",
+    "multimodal",
+    "vision-language",
+    "text-to-video",
+    "image-text-to-text",
+    "conversational",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 6296265840,
+  "parameters_human": "6.30B",
+  "storage_bytes": 40799815656,
+  "storage_human": "40.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fbjr/qwen3-vl-32b-W4A16-AWQ-H3 · Hugging Face",
+      "url": "https://huggingface.co/fbjr/qwen3-vl-32b-W4A16-AWQ-H3",
+      "snippet": "The full 64-layer Qwen3-VL 32B encoder from MiniMax H3, compressed as symmetric group-128 W4A16 AWQ and calibrated on H3 text, keyframe, and multimodal-reference prompts."
+    },
+    {
+      "title": "GitHub - ethanfel/ComfyUI-qwen3-vl-32b-W4A16-AWQ-H3: ComfyUI loader for ...",
+      "url": "https://github.com/ethanfel/ComfyUI-qwen3-vl-32b-W4A16-AWQ-H3",
+      "snippet": "This custom node loads the fbjr/qwen3-vl-32b-W4A16-AWQ-H3 compressed-tensors checkpoint as the Qwen3-VL encoder used by MiniMax H3 workflows. The node keeps ComfyUI&#x27;s native H3 architecture, tokenizer, conditioning, offload, and model patching."
+    },
+    {
+      "title": "Qwen3-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIAny - Qwen3-VL-32B Ultra Uncensored Heretic — MiniMax-H3 ComfyUI INT8 ...",
+      "url": "https://aiany.app/item/qwen3-vl-32b-ultra-uncensored-heretic-minimax-h3-comfyui-int8-convrot",
+      "snippet": "Provides ComfyUI-ready INT8 MiniMax‑H3 checkpoints (conditioning encoder plus optional generation tail) for a Heretic-edited Qwen3‑VL‑32B source; preserves the vision tower in BF16 and uses row-wise ConvRot INT8 quantization to reduce VRAM needs for ~32GB GPUs. Not a full Transformers generation repository."
+    },
+    {
+      "title": "Qwen - Models in Amazon Bedrock - AWS",
+      "url": "https://aws.amazon.com/bedrock/qwen/",
+      "snippet": "Introducing Qwen models in Amazon Bedrock Qwen3&#x27;s advanced open weight foundation models are now available in Amazon Bedrock as a fully managed, serverless offering, empowering you to build sophisticated AI applications with agentic capabilities and advanced reasoning."
+    }
+  ]
+}

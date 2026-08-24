@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "IntelligentDecisionLab/xlerobot-coffee-md-real-force-loss",
+  "slug": "intelligentdecisionlab-xlerobot-coffee-md-real-force-loss",
+  "author": "IntelligentDecisionLab",
+  "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-md-real-force-loss",
+  "created_at": "2026-08-24T17:30:56.000Z",
+  "updated_at": "2026-08-24T18:22:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "coffee-automata",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4147797760,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlerobot-coffee-model-real-b-force - Hugging Face",
+      "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos ...",
+      "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Vector-Wangel/XLeRobot: XLeRobot: Practical Dual-Arm Mobile ...",
+      "url": "https://github.com/Vector-Wangel/XLeRobot",
+      "snippet": "👋 Want to contribute to XLeRobot? Please refer to CONTRIBUTING.md for guidance on how to get involved! Main Contributors Gaotian/Vector Wang Jiahao Wang, Chunbo Pan, QiLiu, Isaac Sin, Ryan Chan: MakerMods team, VLA and VR integration Zhuoyi Lu: RL sim2real deploy, teleop on real robot (Xbox, VR, Joycon) Yiyang Huang: RL & VLA implementation ..."
+    },
+    {
+      "title": "GitHub - ggs2ggs/XLeRobot",
+      "url": "https://github.com/ggs2ggs/XLeRobot",
+      "snippet": "Hardware: XLeRobot 0.1.0 is officially out! The current version includes a detailed bill of materials, 3D printing models and instructions, and a step-by-step assembly guide."
+    },
+    {
+      "title": "XLeRobot — XLeRobot 0.3.0 documentation",
+      "url": "https://xlerobot.readthedocs.io/en/latest/",
+      "snippet": "2025-08-30: XLeRobot 0.3.0 Release with final outfit touch up and household chores showcase demos. 2025-07-30: Control XLeRobot in real life with keyboard/Xbox/Switch joycon in the wild (bluetooth, no wifi, 0 latency)."
+    }
+  ]
+}

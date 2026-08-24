@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Zeyy777/fish-disease",
+  "slug": "zeyy777-fish-disease",
+  "author": "Zeyy777",
+  "url": "https://huggingface.co/Zeyy777/fish-disease",
+  "created_at": "2026-08-24T16:28:13.000Z",
+  "updated_at": "2026-08-24T16:31:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 699026924,
+  "storage_human": "699 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - edumudijyothi/AquaAI-Smart-Fish-Disease-Detection-and ...",
+      "url": "https://github.com/edumudijyothi/AquaAI-Smart-Fish-Disease-Detection-and-Diagnosis",
+      "snippet": "The dataset was used to train the CNN model to classify fish into two classes: Healthy and Diseased. Precautions for Diseased Fish If the model predicts that a fish is diseased, the following precautions are recommended: Isolation: Isolate the affected fish to prevent the spread of disease."
+    },
+    {
+      "title": "GitHub - allaka9/Fish-disease-detection: Fish disease detection using ...",
+      "url": "https://github.com/allaka9/Fish-disease-detection",
+      "snippet": "Fish disease detection using image-based machine learning techniques in aquaculture involves using computer vision and machine learning algorithms to analyze images or videos of fish and identify diseases. It includes steps such as image acquisition, preprocessing, segmentation, feature extraction, model training, validation, and disease detection. - allaka9/Fish-disease-detection"
+    },
+    {
+      "title": "PDF Deep Learning and AI Tools for Monitoring and Detecting Diseases in ...",
+      "url": "https://aipublications.com/uploads/issue_files/3IJFAF-MAY20251-DeepLearning.pdf",
+      "snippet": "This study demonstrates the efficacy of deep learning and AI-based tools we&#x27;re monitoring and detection of fishes in freshwater fishes the Resnet-50 model showed high accuracy in classifying based on visual cues while lstm models effectively analyzed environmental data for early warning [11]."
+    },
+    {
+      "title": "panda992/fish_disease_datasets · Hugging Face",
+      "url": "https://huggingface.co/panda992/fish_disease_datasets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fish Disease Detection Using Image Based Machine ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1319157821001063",
+      "snippet": "The processed images of the first portion have passed through this (SVM) model. Then we harmonize a comprehensive experiment with the proposed combination of techniques on the salmon fish image dataset used to examine the fish disease. We have conveyed this work on a novel dataset compromising with and without image augmentation."
+    }
+  ]
+}

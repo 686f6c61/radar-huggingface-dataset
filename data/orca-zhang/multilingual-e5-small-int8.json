@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "orca-zhang/multilingual-e5-small-int8",
+  "slug": "orca-zhang-multilingual-e5-small-int8",
+  "author": "orca-zhang",
+  "url": "https://huggingface.co/orca-zhang/multilingual-e5-small-int8",
+  "created_at": "2026-08-24T17:29:15.000Z",
+  "updated_at": "2026-08-24T17:30:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnxruntime",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "bert",
+    "sentence-transformers",
+    "multilingual",
+    "e5",
+    "int8",
+    "feature-extraction",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140206374,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "multilingual-e5-small-int8/README.md · orca-zhang/ncnn at main",
+      "url": "https://huggingface.co/orca-zhang/ncnn/blob/main/multilingual-e5-small-int8/README.md",
+      "snippet": "orca-zhang / ncnn like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new main ncnn / multilingual-e5-small-int8 /README.md orca-zhang Rename public paths to neutral names 3e91b2a verified4 months ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 68 Bytes"
+    },
+    {
+      "title": "orca-zhang/ncnn at main - Hugging Face",
+      "url": "https://huggingface.co/orca-zhang/ncnn/tree/main/multilingual-e5-small-int8",
+      "snippet": "orca-zhang / ncnn like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new main ncnn /multilingual-e5-small-int8 135 MB Ctrl+K Ctrl+K 1 contributor History:2 commits orca-zhang Add multilingual-e5-small-int8 bundle c85a312 verified4 months ago .ready.json Safe 232 BytesAdd multilingual-e5-small-int8 bundle4 months ago ..."
+    },
+    {
+      "title": "GitHub - P1-AI/multilingual-e5-small: intfloat/multilingual-e5-small ...",
+      "url": "https://github.com/P1-AI/multilingual-e5-small",
+      "snippet": "intfloat/multilingual-e5-small - Multilingual embedding model optimized for CPU inference - P1-AI/multilingual-e5-small"
+    },
+    {
+      "title": "multilingual-e5-small · Models",
+      "url": "https://www.modelscope.cn/models/intfloat/multilingual-e5-small",
+      "snippet": "Multilingual-E5-small Multilingual E5 Text Embeddings: A Technical Report. Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, Furu Wei, arXiv 2024 This model has 12 layers and the embedding size is 384. Usage Below is an example to encode queries and passages from the MS-MARCO passage ranking dataset."
+    },
+    {
+      "title": "multilingual e5 small (未知) | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/intfloat/multilingual-e5-small",
+      "snippet": "multilingual-e5-small is an efficient multilingual text embedding model designed for cross-lingual semantic retrieval and vector search. Leveraging the BERT architecture for lightweight deployment, it supports high-concurrency inference, making it suitable for building multilingual knowledge bases, RAG systems, and semantic matching applications while balancing performance and resource efficiency."
+    }
+  ]
+}

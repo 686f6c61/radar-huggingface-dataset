@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NiallHoang/lab22",
+  "slug": "niallhoang-lab22",
+  "author": "NiallHoang",
+  "url": "https://huggingface.co/NiallHoang/lab22",
+  "created_at": "2026-08-24T16:19:30.000Z",
+  "updated_at": "2026-08-24T16:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dpo",
+    "lora",
+    "vietnamese",
+    "unsloth",
+    "base_model:unsloth/Qwen2.5-3B-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-3B-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NiallHoang (NamHoang) - Hugging Face",
+      "url": "https://huggingface.co/NiallHoang/models",
+      "snippet": "Recent Activity liked a dataset12 days ago th1nhng0/vietnamese-legal-documents published a Spaceover 1 year ago NiallHoang/facedemoapp View all activity"
+    },
+    {
+      "title": "NiallHoang/lab21-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi",
+      "snippet": "Instructions to use NiallHoang/lab21-qwen35-triage-vi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NiallHoang/lab21-qwen35-triage-vi with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources ..."
+    },
+    {
+      "title": "Build-AI-powered-security-tools/labs/lab22-vuln-scanner-ai at ... - GitHub",
+      "url": "https://github.com/0xSojalSec/Build-AI-powered-security-tools/tree/main/labs/lab22-vuln-scanner-ai",
+      "snippet": "Build AI-powered security tools. 50+ hands-on labs covering ML, LLMs, RAG, threat detection, DFIR, and red teaming. Includes Colab notebooks, Docker environment, and CTF challenges. - 0xSojalSec/Bu..."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Ai_lab22 (@ai_lab22) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai_lab22/",
+      "snippet": "42 Followers, 38 Following, 40 Posts - Ai_lab22 (@ai_lab22) on Instagram: \"Fun and entertaining ASMR video made with AI. DM for paid partnerships - open for collabs\""
+    }
+  ]
+}

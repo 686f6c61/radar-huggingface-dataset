@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "harindhar10/olmo_chem_fsdp_cpt_500k",
+  "slug": "harindhar10-olmo_chem_fsdp_cpt_500k",
+  "author": "harindhar10",
+  "url": "https://huggingface.co/harindhar10/olmo_chem_fsdp_cpt_500k",
+  "created_at": "2026-08-24T17:29:13.000Z",
+  "updated_at": "2026-08-24T19:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo",
+    "text-generation",
+    "chemistry",
+    "smiles",
+    "causal-lm",
+    "full-finetune",
+    "fsdp",
+    "en",
+    "dataset:Codemaster67/Causal_lm_chemistry_1M_rows",
+    "base_model:Codemaster67/Olmo-7b-spe",
+    "base_model:finetune:Codemaster67/Olmo-7b-spe",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6891470848,
+  "parameters_human": "6.89B",
+  "storage_bytes": 13782968032,
+  "storage_human": "13.8 GB",
+  "base_model": "Codemaster67/Olmo-7b-spe",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harindhar10/olmo_chem_lora_cpt_LoRA_500k · Hugging Face",
+      "url": "https://huggingface.co/harindhar10/olmo_chem_lora_cpt_LoRA_500k",
+      "snippet": "The base model&#x27;s tokenizer was pre-extended with ~300 SPE (SMILES Pair Encoding) chemistry tokens plus <|start_of_smiles|> / <|end_of_smiles|> special tokens. The embed_tokens and lm_head layers are saved as full (non-LoRA) trainable copies via modules_to_save because they were resized during tokenizer extension."
+    },
+    {
+      "title": "GitHub - Harindhar10/olmo",
+      "url": "https://github.com/Harindhar10/olmo",
+      "snippet": "Contribute to Harindhar10/olmo development by creating an account on GitHub."
+    },
+    {
+      "title": "Codemaster67/olmo_chem_lora_cpt_LoRA_500k · Hugging Face",
+      "url": "https://huggingface.co/Codemaster67/olmo_chem_lora_cpt_LoRA_500k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Harindhar10 (Harindhar Adithya) · GitHub",
+      "url": "https://github.com/Harindhar10",
+      "snippet": "Initial Functions and Classes for ProteinMPNN Model OLMo Wrapper Part 1: Added regression , classification , and causal lm support in OLMo Wrapper"
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    }
+  ]
+}

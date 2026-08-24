@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "usr-wwelsh/digest-sft3",
+  "slug": "usr-wwelsh-digest-sft3",
+  "author": "usr-wwelsh",
+  "url": "https://huggingface.co/usr-wwelsh/digest-sft3",
+  "created_at": "2026-08-24T15:22:38.000Z",
+  "updated_at": "2026-08-24T15:52:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 13991148704,
+  "storage_human": "14.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "usr-wwelsh/digest-sft2 at main - Hugging Face",
+      "url": "https://huggingface.co/usr-wwelsh/digest-sft2/tree/main",
+      "snippet": "Use Docker docker model run hf.co/usr-wwelsh/digest-sft2 SGLang How to use usr-wwelsh/digest-sft2 with SGLang:"
+    },
+    {
+      "title": "GitHub - usr-wwelsh/digest-finetune: SFT + GRPO fine-tune of SmolLM2 ...",
+      "url": "https://github.com/usr-wwelsh/digest-finetune",
+      "snippet": "Goals SFT SmolLM2-135M on ~100 real (commits.json → digest.md) pairs to learn format + voice. GRPO/RLVR pass using verifiable rewards only (no reward model): format, repo-grounding, coverage, repetition — implemented in scripts/reward.py. Release model (Apache-2.0 weights) + dataset + MIT training code to HF. Stretch: quantize to GGUF and embed in git-digest as a local backend; retire ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "GitHub - usr-wwelsh/Research-Digest: Auto-curated arXiv paper digest ...",
+      "url": "https://github.com/usr-wwelsh/Research-Digest/blob/main/",
+      "snippet": "Auto-curated arXiv paper digest with AI summaries and mobile-optimized feed. No API keys, no tracking, no cloud - usr-wwelsh/Research-Digest"
+    }
+  ]
+}

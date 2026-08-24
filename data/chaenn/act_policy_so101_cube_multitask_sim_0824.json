@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Chaenn/act_policy_so101_cube_multitask_sim_0824",
+  "slug": "chaenn-act_policy_so101_cube_multitask_sim_0824",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_sim_0824",
+  "created_at": "2026-08-24T16:12:39.000Z",
+  "updated_at": "2026-08-24T16:13:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Chaenn/so101_cube_sim_place_0824",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaenn/act_policy_so101_cube_multitask_0710 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_0710",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "Chaenn/act_policy_so101_cube_multitask_0723 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_0723",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xxwd231/lerobot-so101-cube: End-to-End Embodied AI deployment ...",
+      "url": "https://github.com/xxwd231/lerobot-so101-cube",
+      "snippet": "End-to-End Embodied AI deployment on SO-101 robot arm using LeRobot & ACT policy, with 4-stage ablation study on data cleaning and Temporal Ensembling. - xxwd231/lerobot-so101-cube"
+    },
+    {
+      "title": "so101-act-policy/README.md at main - GitHub",
+      "url": "https://github.com/Jaskaran3010/so101-act-policy/blob/main/README.md",
+      "snippet": "SO-101 ACT Policy End-to-end implementation of an Action Chunking with Transformers (ACT) policy for the SO-101 robot arm, trained entirely on local hardware for pick-and-place manipulation tasks."
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "Gradually test generalization boundaries Monitor validation loss for training convergence Consider reducing model complexity for small datasets Maintain consistent lighting and camera positions The results demonstrate ACT&#x27;s capability to learn specific tasks but highlight its limitations in generalisation without comprehensive training data."
+    }
+  ]
+}

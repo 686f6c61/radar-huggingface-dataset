@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/BEN2-ONNX",
+  "slug": "jonnyverse-ben2-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/BEN2-ONNX",
+  "created_at": "2026-08-24T16:12:55.000Z",
+  "updated_at": "2026-08-24T16:12:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "ben",
+    "background-removal",
+    "image-segmentation",
+    "base_model:PramaLLC/BEN2",
+    "base_model:quantized:PramaLLC/BEN2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1338450189,
+  "storage_human": "1.3 GB",
+  "base_model": "PramaLLC/BEN2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "onnx-community/BEN2-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/BEN2-ONNX",
+      "snippet": "onnx-community / BEN2-ONNX like 21 Follow ONNX Community 2.09k Image Segmentation Transformers.js ONNX ben background-removal License:mit Model card FilesFiles and versions xet Community 5 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - PramaLLC/BEN2",
+      "url": "https://github.com/PramaLLC/BEN2/",
+      "snippet": "BEN2 (Background Erase Network) introduces a novel approach to foreground segmentation through its innovative Confidence Guided Matting (CGM) pipeline. The architecture employs a refiner network that targets and processes pixels where the base model exhibits lower confidence levels, resulting in more precise and reliable matting results."
+    },
+    {
+      "title": "BEN2-ONNX huggingface.co api & onnx-community BEN2-ONNX github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/onnx-community-ben2-onnx",
+      "snippet": "BEN2-ONNX huggingface.co is an AI model on huggingface.co that provides BEN2-ONNX&#x27;s model effect (), which can be used instantly with this onnx-community BEN2-ONNX model. huggingface.co supports a free trial of the BEN2-ONNX model, and also provides paid use of the BEN2-ONNX. Support call BEN2-ONNX model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "README.md · onnx-community/BEN2-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/onnx-community/BEN2-ONNX/blob/main/README.md",
+      "snippet": "onnx-community / BEN2-ONNX like 0 Follow ONNX Community 486 ONNX ben License:mit Model card FilesFiles and versions Community main BEN2-ONNX /README.md Xenova HF staff Update README.md 5445f83 verifiedabout 6 hours ago preview code | raw Copy download link history blame contribute delete Safe 48 Bytes metadata"
+    }
+  ]
+}

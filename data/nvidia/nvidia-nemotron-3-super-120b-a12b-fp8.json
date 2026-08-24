@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+  "slug": "nvidia-nvidia-nemotron-3-super-120b-a12b-fp8",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+  "created_at": "2026-03-10T18:32:42.000Z",
+  "updated_at": "2026-08-24T16:16:26.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-3",
+    "latent-moe",
+    "mtp",
+    "conversational",
+    "custom_code",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "ja",
+    "zh",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "arxiv:2512.20848",
+    "arxiv:2512.20856",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "modelopt",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 276,
+  "downloads_30d": 154520,
+  "trending_score": 0,
+  "parameters": 123611012096,
+  "parameters_human": "123.61B",
+  "storage_bytes": 128379469916,
+  "storage_human": "128.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3-super-120b-a12b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard",
+      "snippet": "Description Nemotron-3-Super-120B-A12B-BF16 is a large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for collaborative agents and high-volume workloads such as IT ticket automation."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Super-120B-A12B-FP8 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+      "snippet": "The model was trained for approximately 25 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3-Super-120B-A12B-FP8 of high-quality curated and synthetically-generated data. Primary languages used for post-training include English, French, German, Italian, Japanese, Spanish, and Chinese."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Super",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Super, a 12B active 120B total parameter Mixture-of-Experts hybrid Mamba-Transformer model. Nemotron 3 Super is the first model in the Nemotron 3 series that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was trained for approximately 25 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4 of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "nvidia / nemotron-3-super-120b-a12b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-super-120b-a12b",
+      "snippet": "NVIDIA-Nemotron-3-Super-120B-A12B-BF16 is a general purpose reasoning and chat model intended to be used in English, Code, and supported multilingual contexts. This model is optimized for collaborative agents and high-volume workloads. It is intended to be used by developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications. This model is also suitable for ..."
+    }
+  ]
+}

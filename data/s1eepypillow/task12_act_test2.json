@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "s1eepypillow/task12_act_test2",
+  "slug": "s1eepypillow-task12_act_test2",
+  "author": "s1eepypillow",
+  "url": "https://huggingface.co/s1eepypillow/task12_act_test2",
+  "created_at": "2026-08-24T15:58:50.000Z",
+  "updated_at": "2026-08-24T15:59:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:s1eepypillow/grad_block_merged_task12_test2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51629190,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206560728,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "s1eepypillow (강태훈) - Hugging Face",
+      "url": "https://huggingface.co/s1eepypillow",
+      "snippet": "s1eepypillow/grad_block_20260803_034510_left Viewer •Updated 4 days ago•9.58k• 33 View 41 datasets"
+    },
+    {
+      "title": "Kyumeo/ACT_Test2 · Hugging Face",
+      "url": "https://huggingface.co/Kyumeo/ACT_Test2",
+      "snippet": "Kyumeo / ACT_Test2 like 0 Robotics LeRobot Safetensors Kyumeo/Hackathon_Test act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "[2603.04319] AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval ...",
+      "url": "https://arxiv.org/abs/2603.04319",
+      "snippet": "Abstract page for arXiv paper 2603.04319: AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval and Reflective Prompting for Abductive Event Reasoning"
+    },
+    {
+      "title": "Pyhton-Ai-Task-12/task12 at master - GitHub",
+      "url": "https://github.com/Maga10900/Pyhton-Ai-Task-12/blob/master/task12",
+      "snippet": "Contribute to Maga10900/Pyhton-Ai-Task-12 development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "laki35/faster-whisper-large-v3-somali",
+  "slug": "laki35-faster-whisper-large-v3-somali",
+  "author": "laki35",
+  "url": "https://huggingface.co/laki35/faster-whisper-large-v3-somali",
+  "created_at": "2026-08-24T17:08:22.000Z",
+  "updated_at": "2026-08-24T17:09:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "so",
+    "mul"
+  ],
+  "tags": [
+    "ctranslate2",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "somali",
+    "so",
+    "mul",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087284237,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avans06/faster-whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/avans06/faster-whisper-large-v3",
+      "snippet": "Whisper large-v3 model for CTranslate2 This repository contains the conversion of openai/whisper-large-v3 to the CTranslate2 model format. This model can be used in CTranslate2 or projects based on CTranslate2 such as faster-whisper."
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "faster-whisper-large-v3 - regolo.ai",
+      "url": "https://regolo.ai/models-archive/faster-whisper-large-v3/",
+      "snippet": "faster‑whisper‑large‑v3 is a CTranslate2‑optimized conversion of OpenAI&#x27;s Whisper large‑v3 that delivers high‑accuracy multilingual speech‑to‑text with significantly lower latency and VRAM usage for real‑time and batch transcription."
+    },
+    {
+      "title": "Faster Whisper - Fast and Accurate AI Speech-to-Text Software",
+      "url": "https://fasterwhisper.org/",
+      "snippet": "Faster Whisper is a reimplementation of OpenAI&#x27;s Whisper model using the high-performance CTranslate2 runtime. It delivers the same trusted speech-to-text accuracy while running dramatically faster and lighter — making professional transcription possible on everyday hardware."
+    },
+    {
+      "title": "GitHub - inferless/whisper-large-v3: State‑of‑the‑art speech ...",
+      "url": "https://github.com/inferless/whisper-large-v3",
+      "snippet": "Whisper-large-v3 is a pre-trained model for automatic speech recognition (ASR) and speech translation. It is part of the Whisper series developed by OpenAI."
+    }
+  ]
+}

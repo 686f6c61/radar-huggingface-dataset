@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "JellyFush/qwen-medical-dpo-2-2",
+  "slug": "jellyfush-qwen-medical-dpo-2-2",
+  "author": "JellyFush",
+  "url": "https://huggingface.co/JellyFush/qwen-medical-dpo-2-2",
+  "created_at": "2026-08-24T17:06:37.000Z",
+  "updated_at": "2026-08-24T18:13:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "arxiv:2305.18290",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 359835814,
+  "storage_human": "360 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JellyFush/qwen-medical-dpo-2 · Hugging Face",
+      "url": "https://huggingface.co/JellyFush/qwen-medical-dpo-2",
+      "snippet": "Model Card for qwen-medical-dpo-2 This model is a fine-tuned version of Qwen/Qwen3.5-4B. It has been trained using TRL."
+    },
+    {
+      "title": "JellyFush/qwen-medical-dpo-2 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/JellyFush/qwen-medical-dpo-2/discussions",
+      "snippet": "Instructions to use JellyFush/qwen-medical-dpo-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use JellyFush/qwen-medical-dpo-2 with Transformers:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Qwen2.5-3B-Medical-Fine-Tuning-SFT-DPO-GRPO/README.md at main ... - GitHub",
+      "url": "https://github.com/DiaaEssam/Qwen2.5-3B-Medical-Fine-Tuning-SFT-DPO-GRPO/blob/main/README.md",
+      "snippet": "A three-stage fine-tuning pipeline for Qwen2.5-3B that progressively improves the model&#x27;s medical reasoning capabilities using Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Group Relative Policy Optimization (GRPO)."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "We are launching Qwen-Image-3.0, the third-generation foundational image generation model in the Qwen-Image series. If the keyword for Qwen-Image-1. was \"Precision\", and the keywords for Qwen-Image-2. were \"Precision, Variety, Completeness, Beauty, and Authenticity\", then the core of Qwen-Image-3. comes down to a single word — \"Real\" (实)."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sisniha/Qwen-Image-Edit-F2P",
+  "slug": "sisniha-qwen-image-edit-f2p",
+  "author": "sisniha",
+  "url": "https://huggingface.co/sisniha/Qwen-Image-Edit-F2P",
+  "created_at": "2026-08-24T18:51:04.000Z",
+  "updated_at": "2026-08-24T18:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1416543463,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiffSynth-Studio/Qwen-Image-Edit-F2P · Hugging Face",
+      "url": "https://huggingface.co/DiffSynth-Studio/Qwen-Image-Edit-F2P",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · DiffSynth-Studio/Qwen-Image-Edit-F2P at main",
+      "url": "https://huggingface.co/DiffSynth-Studio/Qwen-Image-Edit-F2P/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit-F2P: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-image-edit-f2p-diffsynth-studio",
+      "snippet": "This model is better if you need plug-and-play workflow compatibility; use Qwen-Image-Edit-F2P if you require explicit face-to-portrait semantics and have flexibility in implementation. Qwen3-8B-FP8 by Qwen is a text generation model, not an image model, and serves entirely different use cases (language understanding and generation)."
+    },
+    {
+      "title": "Qwen-Image-Edit-F2P · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/DiffSynth-Studio/Qwen-Image-Edit-F2P",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image: Qwen-Image is a powerful image generation ...",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "snippet": "AI Arena To comprehensively evaluate the general image generation capabilities of Qwen-Image and objectively compare it with state-of-the-art closed-source APIs, we introduce AI Arena, an open benchmarking platform built on the Elo rating system. AI Arena provides a fair, transparent, and dynamic environment for model evaluation."
+    }
+  ]
+}

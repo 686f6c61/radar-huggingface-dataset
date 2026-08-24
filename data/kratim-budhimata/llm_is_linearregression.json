@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kratim-Budhimata/LLM_is_LinearRegression",
+  "slug": "kratim-budhimata-llm_is_linearregression",
+  "author": "Kratim-Budhimata",
+  "url": "https://huggingface.co/Kratim-Budhimata/LLM_is_LinearRegression",
+  "created_at": "2026-08-15T06:12:47.000Z",
+  "updated_at": "2026-08-24T18:13:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "joblib",
+    "LLM_is_LinearRegresison",
+    "LLM",
+    "GenerativeAI",
+    "Text-Generation",
+    "AI",
+    "DataScience",
+    "MachineLearning",
+    "LinearRegression",
+    "custom_code",
+    "en",
+    "dataset:openai/gsm8k",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43663569,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kratim-Budhimata/LLM_is_LinearRegresison · Hugging Face",
+      "url": "https://huggingface.co/Kratim-Budhimata/LLM_is_LinearRegresison",
+      "snippet": "Kratim-Budhimata / LLM_is_LinearRegresison like 1 Transformers Joblib openai/gsm8k English LLM_is_LinearRegresison LLM GenerativeAI Text-Generation AI DataScience MachineLearning LinearRegression custom_code License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LinearRegression",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: LinearRegression Clear all"
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "DeepMind Says Its AI Can Predict Hurricanes Earlier Than Everyone Else",
+      "url": "https://www.wired.com/story/deepmind-ai-model-can-predict-hurricanes-earlier/",
+      "snippet": "Its WeatherNext model, which will be open-sourced, can accurately predict a storm&#x27;s track and intensity using lower-resolution weather data. Researchers don&#x27;t yet fully understand how it does ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "briaai/Fibo-1.5",
+  "slug": "briaai-fibo-1-5",
+  "author": "briaai",
+  "url": "https://huggingface.co/briaai/Fibo-1.5",
+  "created_at": "2026-07-13T10:57:51.000Z",
+  "updated_at": "2026-08-24T17:34:52.000Z",
+  "license": "bria-fibo",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "art",
+    "text-to-image",
+    "en",
+    "arxiv:2511.06876",
+    "base_model:briaai/FIBO",
+    "base_model:finetune:briaai/FIBO",
+    "license:other",
+    "diffusers:BriaFiboPipeline",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": 8285836848,
+  "parameters_human": "8.29B",
+  "storage_bytes": 42220759846,
+  "storage_human": "42.2 GB",
+  "base_model": "briaai/FIBO",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "briaai/Fibo-1.5 · Hugging Face",
+      "url": "https://huggingface.co/briaai/Fibo-1.5",
+      "snippet": "FIBO model family is the first open-source, JSON-native image generation models trained exclusively on long structured captions. Fibo sets a new standard for controllability, predictability, and disentanglement by implementing the new VGL - Visual GenAI Language paradigm ⚡ Fibo 1.5 — few-step distillation + improved realism and textures for ..."
+    },
+    {
+      "title": "briaai/FIBO · Hugging Face",
+      "url": "https://huggingface.co/briaai/FIBO",
+      "snippet": "Built for production: API endpoints (Bria Platform, Fal.ai, Replicate), ComfyUI nodes, and local inference. 🎨 Work with FIBO in Three Simple Modes Generate: Start with a quick idea. FIBO&#x27;s language model expands your short prompt into a rich, structured JSON prompt, then generates the image. You get both the image and the expanded prompt."
+    },
+    {
+      "title": "Fibo: The 1st JSON-Native T2I Model for Developers - bria.ai",
+      "url": "https://bria.ai/fibo",
+      "snippet": "Looking for On-Prem visual generative AI? Try Fibo Lite, a smaller & faster model - Docker ready for local deployment with all the same benefits as Fibo: controllability, prompt adherence, and structured generation with minimal quality degradation."
+    },
+    {
+      "title": "GitHub - Bria-AI/FIBO: FIBO is a SOTA, first open-source, JSON-native ...",
+      "url": "https://github.com/Bria-AI/FIBO",
+      "snippet": "FIBO is the first open-source, JSON-native text-to-image model trained exclusively on long structured captions. Fibo sets a new standard for controllability, predictability, and disentanglement."
+    },
+    {
+      "title": "BRIA AI - GitHub",
+      "url": "https://github.com/Bria-AI/",
+      "snippet": "Claude Code skills for Bria AI - generate, edit, and transform images with Fibo, RMBG-2.0, and VGL structured prompts Python 64 5"
+    }
+  ]
+}

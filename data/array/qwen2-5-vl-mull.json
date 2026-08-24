@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "array/Qwen2.5-VL-Mull",
+  "slug": "array-qwen2-5-vl-mull",
+  "author": "array",
+  "url": "https://huggingface.co/array/Qwen2.5-VL-Mull",
+  "created_at": "2025-12-10T23:29:57.000Z",
+  "updated_at": "2026-08-24T17:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "vision-language",
+    "spatial-reasoning",
+    "latent-reasoning",
+    "conversational",
+    "custom_code",
+    "arxiv:2512.10941",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 8289335296,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16590174488,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "array/Qwen2.5-VL-Mull · Hugging Face",
+      "url": "https://huggingface.co/array/Qwen2.5-VL-Mull",
+      "snippet": "Mull-Tokens: Modality-Agnostic Latent Thinking This is the model for the paper \"Mull-Tokens: Modality-Agnostic Latent Thinking\". [Paper] | [Project Page] | [Code] Overview Mull-Tokens are latent tokens that can be pre-trained to hold intermediate information in either image or text modalities so as to think towards the correct answer. Across four challenging spatial reasoning benchmarks, Mull ..."
+    },
+    {
+      "title": "array/Qwen2.5-VL-Mull at main - Hugging Face",
+      "url": "https://huggingface.co/array/Qwen2.5-VL-Mull/tree/main",
+      "snippet": "array / Qwen2.5-VL-Mull like 0 Image-Text-to-Text Transformers Safetensors qwen2_5_vl multimodal vision-language spatial-reasoning latent-reasoning conversational custom_code text-generation-inference arxiv:2512.10941 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "array/Qwen2.5-VL-Mull - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/array/Qwen2.5-VL-Mull",
+      "snippet": "Run array/Qwen2.5-VL-Mull with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - arijitray1993/mull: Repository to train multimodal latent ...",
+      "url": "https://github.com/arijitray1993/mull",
+      "snippet": "🌟 This repository contains the training and evaluation code for Mull-Tokens, a method that compresses textual and visual reasoning information into modality agnostic discrete latent tokens for improved multi-modal reasoning with Qwen2.5-VL. 📈 This is also a great template to train Qwen style models and evaluate using lmms-eval all-in-one."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Introduction In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5."
+    }
+  ]
+}

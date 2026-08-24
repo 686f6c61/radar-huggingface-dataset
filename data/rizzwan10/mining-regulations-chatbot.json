@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rizzwan10/mining-regulations-chatbot",
+  "slug": "rizzwan10-mining-regulations-chatbot",
+  "author": "rizzwan10",
+  "url": "https://huggingface.co/rizzwan10/mining-regulations-chatbot",
+  "created_at": "2026-08-24T16:24:23.000Z",
+  "updated_at": "2026-08-24T16:24:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ftwig/mining-ai: AI-powered chatbot for Indian mining laws and ...",
+      "url": "https://github.com/ftwig/mining-ai/tree/master/",
+      "snippet": "An AI-powered chatbot for querying Indian mining laws and regulations. The application uses Retrieval-Augmented Generation (RAG) to retrieve relevant sections from mining regulation documents and generate answers using a local LLM."
+    },
+    {
+      "title": "MineBot: AI-Powered Mining Laws and Regulations Chatbot",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11519412",
+      "snippet": "The system is a combination of a vector-based legal knowledge base with a Large Language Model to provide factual consistency and permit. The chatbot contains information about key mining legislations such as the Coal Mines Act of 1952, the Indian Explosives Act, 1884, and land acquisition provisions."
+    },
+    {
+      "title": "Mining-regulation Chatbot - a Hugging Face Space by asif001",
+      "url": "https://huggingface.co/spaces/asif001/mining-regulation_chatbot",
+      "snippet": "This chatbot helps you get answers to questions about mining rules and regulations. Just type your question, and it will provide a relevant response based on a dataset of mining regulations."
+    },
+    {
+      "title": "Chatbot for Mining Regulation Queries | PDF | Artificial Intelligence ...",
+      "url": "https://www.scribd.com/presentation/878056439/Presentation-1",
+      "snippet": "The document outlines a proposal for developing a chatbot to assist the mining industry in navigating complex regulations related to environmental protection and worker safety. The chatbot will utilize AI and natural language processing to provide stakeholders with accurate and timely responses to their queries about mining regulations. This system aims to enhance compliance, improve ..."
+    },
+    {
+      "title": "PDF AI-Powered Chatbot for Mining Compliance: Streamlining Regulatory ...",
+      "url": "https://ijcrt.org/papers/IJCRT2503055.pdf",
+      "snippet": "The entire project aims to develop prototype AI-driven chatbot solutions for addressing compliance issues in the mining industry while providing fast, accurate, and readily available text answers to questions generated under the different Acts, Rules, and Regulations."
+    }
+  ]
+}

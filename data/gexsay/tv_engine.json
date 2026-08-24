@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "GexSay/tv_engine",
+  "slug": "gexsay-tv_engine",
+  "author": "GexSay",
+  "url": "https://huggingface.co/GexSay/tv_engine",
+  "created_at": "2026-03-25T05:57:01.000Z",
+  "updated_at": "2026-08-24T16:29:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 451711989536,
+  "storage_human": "451.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GexSay/tv_engine at main - Hugging Face",
+      "url": "https://huggingface.co/GexSay/tv_engine/tree/main",
+      "snippet": "GexSay tv_engine like1 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GexSay/tv_engine · Hugging Face",
+      "url": "https://huggingface.co/GexSay/tv_engine",
+      "snippet": "GexSay / tv_engine like 0 Model card FilesFiles and versions xet Community No model card Downloads last month -"
+    },
+    {
+      "title": "Free AI Detector Online - Check ChatGPT, Claude & Gemini Text",
+      "url": "https://decopy.ai/ai-detector/",
+      "snippet": "Use our free AI detector to check ChatGPT, Claude, Gemini, and other AI-written text. Get AI score, sentence highlights, sentence analysis, and vocab insights."
+    },
+    {
+      "title": "LTX (text-to-video model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LTX_(text-to-video_model)",
+      "snippet": "Google highlighted the fact that LTX-2 was trained on its infrastructure, [10] and saying it was \"The first open source AI video generation model, powered by Google Cloud\". [11] Upon its release it was ranked in the top-3 models for image-to-video creation by Artificial Analysis, behind Kling 3.5 by Kling AI and Veo 3.1 by Google."
+    },
+    {
+      "title": "Make a Movie with AI from Text Prompts - heygen.com",
+      "url": "https://www.heygen.com/tool/ai-movie-maker",
+      "snippet": "Create cinematic movies online with HeyGen&#x27;s free AI movie maker. An easy-to-use AI video generator with consistent characters, voiceovers, and 175+ languages."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hayoonsong/stationary_transfer_cube_act",
+  "slug": "hayoonsong-stationary_transfer_cube_act",
+  "author": "hayoonsong",
+  "url": "https://huggingface.co/hayoonsong/stationary_transfer_cube_act",
+  "created_at": "2026-08-24T18:25:38.000Z",
+  "updated_at": "2026-08-24T18:28:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:jwhong1209/stationary_transfer_cube",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206775752,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hayoonsong/stationary_transfer_cube_act · Hugging Face",
+      "url": "https://huggingface.co/hayoonsong/stationary_transfer_cube_act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hayoonsong/stationary_transfer_cube_pi0_v3 · Hugging Face",
+      "url": "https://huggingface.co/hayoonsong/stationary_transfer_cube_pi0_v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HayoonSong · GitHub",
+      "url": "https://github.com/HayoonSong",
+      "snippet": "Popular repositories Transfer-learning-for-EEG-MI-classification-cross-subjects Public Python 4"
+    },
+    {
+      "title": "hayoonsong / stationary_transfer_cube_pi0_v3",
+      "url": "https://insights-db.paloaltonetworks.com/models/hayoonsong/stationary_transfer_cube_pi0_v3/417244512a11bc94ca38fbf4d92d365e7b600ad9/overview",
+      "snippet": "Discover potential threats in the hayoonsong / stationary_transfer_cube_pi0_v3 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "hayoonsong / stationary_transfer_cube_pi0_v3 - Protect AI",
+      "url": "https://protectai.com/insights/models/hayoonsong/stationary_transfer_cube_pi0_v3/417244512a11bc94ca38fbf4d92d365e7b600ad9/versions?status=UNSAFE",
+      "snippet": "Discover potential threats in the hayoonsong / stationary_transfer_cube_pi0_v3 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

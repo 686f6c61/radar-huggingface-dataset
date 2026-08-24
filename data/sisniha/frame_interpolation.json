@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sisniha/frame_interpolation",
+  "slug": "sisniha-frame_interpolation",
+  "author": "sisniha",
+  "url": "https://huggingface.co/sisniha/frame_interpolation",
+  "created_at": "2026-08-24T18:09:16.000Z",
+  "updated_at": "2026-08-24T18:09:16.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "frame-interpolation",
+    "rife",
+    "film",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 246316094,
+  "storage_human": "246 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frame interpolation using the FILM model | TensorFlow Hub",
+      "url": "https://www.tensorflow.org/hub/tutorials/tf_hub_film_example",
+      "snippet": "For more information on FILM research, you can read more here: Google AI Blog: Large Motion Frame Interpolation Project Page: FILM: Frame Interpolation for Large Motion Setup ... Load the model from TFHub To load a model from TensorFlow Hub you need the tfhub library and the model handle which is its documentation url."
+    },
+    {
+      "title": "AI Frame Interpolation - Change Video FPS Online - Topaz Labs",
+      "url": "https://www.topazlabs.com/tools/frame-interpolation",
+      "snippet": "Instantly increase the frame rate of your videos with our free frame interpolation tool. Smooth out choppy video and enhance motion with our AI-powered video frame rate converter. No download required!"
+    },
+    {
+      "title": "GitHub - daultanigaurav/ai_frame_interpolator",
+      "url": "https://github.com/daultanigaurav/ai_frame_interpolator",
+      "snippet": "A professional-grade, research-quality Python application for generating intermediate video frames using a custom-trained deep learning model. This system uses an in-house AI model specifically designed and trained for frame interpolation to create smooth, high-quality interpolated frames between ..."
+    },
+    {
+      "title": "GitHub - aim-uofa/Framer: [ICLR&#x27;25] Official PyTorch implementation of ...",
+      "url": "https://github.com/aim-uofa/Framer",
+      "snippet": "The proposed method, Framer, provides interactive frame interpolation, allowing users to customize transitions by tailoring the trajectories of selected keypoints. This approach mitigates the ambiguity of image transformation, enabling much finer control of local motions and improving the model&#x27;s ability to handle challenging cases (e.g., objects with differing shapes and styles). Framer also ..."
+    },
+    {
+      "title": "Free AI Video Frame Interpolation｜Convert 30fps to 60fps Online",
+      "url": "https://wink.ai/video-frame-interpolation",
+      "snippet": "Upgrade your videos instantly with AI video frame interpolation. Our free online tool fixes jittery footage, boosts frame rate from 30fps to 60fps+, and creates cinematic slow motion—no editing skills required. Just upload, interpolate, export."
+    }
+  ]
+}

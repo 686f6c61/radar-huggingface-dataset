@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BarraHome/gemma-4-31B-it-assistant-FP8-block",
+  "slug": "barrahome-gemma-4-31b-it-assistant-fp8-block",
+  "author": "BarraHome",
+  "url": "https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-block",
+  "created_at": "2026-08-24T18:16:26.000Z",
+  "updated_at": "2026-08-24T18:16:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_assistant",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "speculative-decoding",
+    "mtp",
+    "gemma4",
+    "any-to-any",
+    "base_model:google/gemma-4-31B-it-assistant",
+    "base_model:quantized:google/gemma-4-31B-it-assistant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 469518596,
+  "parameters_human": "469.5M",
+  "storage_bytes": 770174608,
+  "storage_human": "770 MB",
+  "base_model": "google/gemma-4-31B-it-assistant",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B-it-assistant · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-assistant",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-4-31B-it-assistant at main - Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-assistant/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 31B It Assistant by google — VRAM 0.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/google%2Fgemma-4-31B-it-assistant,6WVb6NxbBcNEtyOrYfpum2",
+      "snippet": "Gemma 4 31B It Assistant is an open-source 31b LLM by google. VRAM 0.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Gemma 4 31B It Assistant - inferbase.ai",
+      "url": "https://inferbase.ai/models/google-gemma-4-31b-it-assistant",
+      "snippet": "Gemma 4 31B It Assistant, built by Google, excels at tasks such as text generation, coding, and reasoning, leveraging its Dense and Mixture-of-Experts architectures. Notably, it features a context window of up to 262,144 tokens, allowing for extensive input processing."
+    },
+    {
+      "title": "gemma-4-31B-it-assistant: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-31b-it-assistant-google",
+      "snippet": "Overview gemma-4-31B-it-assistant is a specialized draft model designed for speculative decoding with the full Gemma 4 31B instruction-tuned model. Built by google, this is not a standalone model but rather a faster, smaller auxiliary component that predicts multiple tokens ahead while the target model verifies predictions in parallel. This architecture delivers up to 2x decoding speedups ..."
+    }
+  ]
+}

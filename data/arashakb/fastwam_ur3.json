@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "arashakb/FastWAM_UR3",
+  "slug": "arashakb-fastwam_ur3",
+  "author": "arashakb",
+  "url": "https://huggingface.co/arashakb/FastWAM_UR3",
+  "created_at": "2026-08-24T18:54:17.000Z",
+  "updated_at": "2026-08-24T18:59:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "quantization",
+    "w4a4",
+    "svdquant",
+    "world-action-model",
+    "fastwam",
+    "dataset:armanakbari4/ur3-3task-lerobot",
+    "base_model:armanakbari4/fastwam-ur3-3task-10k",
+    "base_model:finetune:armanakbari4/fastwam-ur3-3task-10k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3607116572,
+  "storage_human": "3.6 GB",
+  "base_model": "armanakbari4/fastwam-ur3-3task-10k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "armanakbari4/fastwam-ur3-3task · Hugging Face",
+      "url": "https://huggingface.co/armanakbari4/fastwam-ur3-3task",
+      "snippet": "armanakbari4 / fastwam-ur3-3task like 0 Robotics world-action-model fastwam real-robot ur3 License:mit Model card FilesFiles and versions xet Community Copy to bucket new FastWAM UR3 fine-tune (drawer + blue_basket + stacking_cubes, 3-task joint)"
+    },
+    {
+      "title": "armanakbari4/fastwam-ur3-3task-10k · Hugging Face",
+      "url": "https://huggingface.co/armanakbari4/fastwam-ur3-3task-10k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+      "url": "https://arxiv.org/html/2603.16666v1",
+      "snippet": "Abstract World Action Models (WAMs) have emerged as a promising alternative to Vision-Language-Action (VLA) models for embodied control because they explicitly model how visual observations may evolve under action. Most existing WAMs follow an imagine-then-execute paradigm, incurring substantial test-time latency from iterative video denoising, yet it remains unclear whether explicit future ..."
+    },
+    {
+      "title": "GitHub - yuantianyuan01/FastWAM: Official codebase for Fast-WAM: Do ...",
+      "url": "https://github.com/yuantianyuan01/FastWAM",
+      "snippet": "FastWAM is now faster, better suited to large-scale datasets, and more flexible for research. This update brings substantially faster training and inference, native LeRobot v3.0 support, and a new model that can switch between acting with and without future imagination."
+    },
+    {
+      "title": "GitHub - arashakb/arashakb",
+      "url": "https://github.com/arashakb/arashakb",
+      "snippet": "Contribute to arashakb/arashakb development by creating an account on GitHub."
+    }
+  ]
+}

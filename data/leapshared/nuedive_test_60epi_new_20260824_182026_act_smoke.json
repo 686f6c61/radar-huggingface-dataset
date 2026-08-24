@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leapshared/nuedive_test_60epi_new_20260824_182026_ACT_smoke",
+  "slug": "leapshared-nuedive_test_60epi_new_20260824_182026_act_smoke",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/nuedive_test_60epi_new_20260824_182026_ACT_smoke",
+  "created_at": "2026-08-24T18:20:01.000Z",
+  "updated_at": "2026-08-24T18:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:leapshared/nuedive_test_60epi_new_20260824_182026_destatic",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leapshared/neudive_test_120epi_0819_20260819_155007 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/leapshared/neudive_test_120epi_0819_20260819_155007/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "neudive_test_120epi_0819_20260819_155007 - Hugging Face",
+      "url": "https://huggingface.co/datasets/leapshared/neudive_test_120epi_0819_20260819_155007",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Leap - AI developer agent that builds and deploys apps to your cloud",
+      "url": "https://leap.new/?ref=producthunt",
+      "snippet": "Own your code and deploy to your own cloud. Create your own app using AI with Leap, and deploy to your cloud on AWS or GCP."
+    },
+    {
+      "title": "neudive_test_120epi_0819_real_20260819_162506",
+      "url": "https://huggingface.co/datasets/leapshared/neudive_test_120epi_0819_real_20260819_162506",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Polaris Authentication - Polaris Auth - Illinois Heartland",
+      "url": "https://leap.illinoisheartland.org/LeapWebApp",
+      "snippet": "Sign In © 2026 Clarivate"
+    }
+  ]
+}

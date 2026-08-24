@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SaudF/qwen35-4b-dpo-v6-merged",
+  "slug": "saudf-qwen35-4b-dpo-v6-merged",
+  "author": "SaudF",
+  "url": "https://huggingface.co/SaudF/qwen35-4b-dpo-v6-merged",
+  "created_at": "2026-08-24T16:01:17.000Z",
+  "updated_at": "2026-08-24T16:12:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "arabic",
+    "saudi-llm",
+    "direct-merge",
+    "conversational",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817503,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AyoubChLin/Qwen3.5-4B-saudi-dialect · Hugging Face",
+      "url": "https://huggingface.co/AyoubChLin/Qwen3.5-4B-saudi-dialect",
+      "snippet": "Qwen3.5-4B Saudi Dialect This model is a Saudi dialect conversational fine-tune of unsloth/Qwen3.5-4B, trained from the notebook qwen3-5-4b-saudi-dialect-sft-modal.ipynb and pushed to Hugging Face as a merged standalone model:"
+    },
+    {
+      "title": "TomohitoSaito/comp2025-qwen3-4b-dpo-merged-fp16-v2 · Hugging Face",
+      "url": "https://huggingface.co/TomohitoSaito/comp2025-qwen3-4b-dpo-merged-fp16-v2",
+      "snippet": "English qwen3 qwen dpo lora fp16 competition License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new comp2025-qwen3-4b-dpo-merged-fp16-v2 Base Model Training Pipeline 1️⃣ Supervised Fine-Tuning (SFT) Configuration LoRA Loss Masking 2️⃣ Direct Preference Optimization (DPO) Base Preparation Configuration ..."
+    },
+    {
+      "title": "Qwen 3.5 4B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-4b",
+      "snippet": "Qwen 3.5 4B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Custom model by qwen Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens ..."
+    },
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape."
+    }
+  ]
+}

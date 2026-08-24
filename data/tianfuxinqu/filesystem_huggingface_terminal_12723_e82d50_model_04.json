@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_04",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_e82d50_model_04",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_04",
+  "created_at": "2026-08-24T16:00:18.000Z",
+  "updated_at": "2026-08-24T16:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104 ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104_07ff0c2a_release_notes/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Critical Hugging Face Transformers Vulnerability Enables Remote Code ...",
+      "url": "https://cybersecuritynews.com/hugging-face-rce-vulnerability/",
+      "snippet": "A newly disclosed critical vulnerability in the HuggingFace Transformers library, tracked as CVE-2026-4372, allows attackers to achieve remote code execution (RCE) through malicious model configuration files."
+    },
+    {
+      "title": "Add a Custom Model - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/guide/configuration/custom-models/",
+      "snippet": "Add a Custom Model This guide explains every supported way to add a custom model to Lemonade Server. Start with the CLI workflows below unless you specifically need to hand-edit user_models.json or recipe_options.json. Choose a Workflow Pull from Hugging Face or ModelScope A source-less pull uses the server&#x27;s configured default_model_source (shipped default: Hugging Face), so existing commands ..."
+    },
+    {
+      "title": "Is hf download really auto resume - Beginners - Hugging Face Forums",
+      "url": "https://discuss.huggingface.co/t/is-hf-download-really-auto-resume/175105",
+      "snippet": "This is easier to understand once you know how current Hugging Face downloads work. In huggingface_hub v1.0, the old resume_download parameter was removed, because resume is supposed to happen automatically when possible. Hugging Face also says all repositories on the Hub are Xet-enabled and hf_xet is now the default transfer path."
+    }
+  ]
+}

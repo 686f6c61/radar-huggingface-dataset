@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23f10096/green-ai-audit",
+  "slug": "23f10096-green-ai-audit",
+  "author": "23f10096",
+  "url": "https://huggingface.co/23f10096/green-ai-audit",
+  "created_at": "2026-08-24T16:25:36.000Z",
+  "updated_at": "2026-08-24T16:27:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bk-1928/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/Bk-1928/green-ai-carbon-audit",
+      "snippet": "Model Card Carbon Footprint This model was trained using 8 NVIDIA H100 GPUs for 287.5 GPU-hours in the europe-west4 region. Estimated energy consumption: 2318.4 kWh. Estimated carbon emissions: 463.680 kg CO2eq."
+    },
+    {
+      "title": "vanshi002/green-ai-audit · Hugging Face",
+      "url": "https://huggingface.co/vanshi002/green-ai-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introduction | Green AI Model",
+      "url": "https://green-ai-model.github.io/",
+      "snippet": "The Green Artificial Intelligence Model # The demand for resources driven by Artificial Intelligence (AI) continues to surge, whether it is due to vertical scaling, where Machine Learning (ML) Models are growing in size (e.g., Large Language Models (LLMs), Diffusion Models), or horizontal scaling, involving the deployment of smaller models on millions of devices (e.g., TikTok filters, etc ..."
+    },
+    {
+      "title": "1. Introduction | Green AI Model",
+      "url": "https://green-ai-model.github.io/docs/1_introduction/",
+      "snippet": "Introduction # The Green AI Model is a comprehensive framework intended to guide stakeholders through the AI life cycle. It highlights key influencing factors and their interrelations that need to be considered to enhance the sustainability of AI systems. This model is pivotal in advancing the dual objectives of Green AI: mitigating climate change and minimizing environmental impacts. Green AI ..."
+    },
+    {
+      "title": "AI Auditing Framework - Internal Audit Guidance",
+      "url": "https://www.theiia.org/en/content/tools/professional/2023/the-iias-updated-ai-auditing-framework/",
+      "snippet": "Explore The IIA&#x27;s AI auditing framework for auditing artificial intelligence, AI governance, risk management, and controls, with guidance on generative AI."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "josephmayo/von3b",
+  "slug": "josephmayo-von3b",
+  "author": "josephmayo",
+  "url": "https://huggingface.co/josephmayo/von3b",
+  "created_at": "2026-08-23T19:14:14.000Z",
+  "updated_at": "2026-08-24T16:26:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 9468824431,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "josephmayo/von3b · Discussions - Hugging Face",
+      "url": "https://huggingface.co/josephmayo/von3b/discussions",
+      "snippet": "Instructions to use josephmayo/von3b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use josephmayo/von3b with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"josephmayo/von3b ..."
+    },
+    {
+      "title": "Von Vibethinker 3b Trackio - a Hugging Face Space by josephmayo",
+      "url": "https://huggingface.co/spaces/josephmayo/von-vibethinker-3b-trackio",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "josepha-mayo (josepha_mayo) · GitHub",
+      "url": "https://github.com/josepha-mayo",
+      "snippet": "ai/ml and interesting stuff | 18. josepha-mayo has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Opus Lost To A 3B Open-Source Model - YouTube",
+      "url": "https://www.youtube.com/watch?v=wuTKScDi98Y",
+      "snippet": "WeiboAI Just dropped a new model named as VibeThinker-3B this open weight model crushing most of the frontier model on different benchmarks like claude opus ..."
+    }
+  ]
+}

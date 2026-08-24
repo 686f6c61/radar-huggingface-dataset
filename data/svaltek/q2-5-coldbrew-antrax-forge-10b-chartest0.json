@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0",
+  "slug": "svaltek-q2-5-coldbrew-antrax-forge-10b-chartest0",
+  "author": "SvalTek",
+  "url": "https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0",
+  "created_at": "2026-08-24T19:03:37.000Z",
+  "updated_at": "2026-08-24T19:10:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0",
+    "base_model:finetune:SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14906662316,
+  "storage_human": "14.9 GB",
+  "base_model": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B · Hugging Face",
+      "url": "https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1 · Hugging Face",
+      "url": "https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1",
+      "snippet": "Instructions to use SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Q2.5 ColdBrew Antrax Forge 10B TestSFT0 by SvalTek",
+      "url": "https://llm-explorer.com/model/SvalTek%2FQ2.5-ColdBrew-Antrax-Forge-10B-TestSFT0,5oBTFoLHgVViE28TYFF4I9",
+      "snippet": "Q2.5 ColdBrew Antrax Forge 10B TestSFT0 is an open-source language model by SvalTek. Features: 10b LLM, VRAM: 19.9GB, Context: 128K, License: apache-2.0, LLM Explorer Score: 0.29."
+    },
+    {
+      "title": "Qwen2.5 ColdBrew Antrax by SvalTek - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/SvalTek%2FQwen2.5-ColdBrew-Antrax,2G5YxcAOKVblvrD4ehxe5V",
+      "snippet": "Details and insights about Qwen2.5 ColdBrew Antrax LLM by SvalTek: benchmarks, internals, and performance insights. Features: 7.6b LLM, VRAM: 15.2GB, Context: 128K, Quantized, LLM Explorer Score: 0.2. Find out how Qwen2.5 ColdBrew Antrax can be utilized in your business workflows, problem-solving, and tackling specific tasks."
+    },
+    {
+      "title": "Q2.5-ColdBrew-Forge-Orion-test0 - friendli.ai",
+      "url": "https://friendli.ai/models/SvalTek/Q2.5-ColdBrew-Forge-Orion-test0",
+      "snippet": "Run SvalTek/Q2.5-ColdBrew-Forge-Orion-test0 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

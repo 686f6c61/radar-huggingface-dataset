@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dbrll/sheaf-nanogpt-shakespeare",
+  "slug": "dbrll-sheaf-nanogpt-shakespeare",
+  "author": "dbrll",
+  "url": "https://huggingface.co/dbrll/sheaf-nanogpt-shakespeare",
+  "created_at": "2026-08-24T17:51:08.000Z",
+  "updated_at": "2026-08-24T17:53:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10770048,
+  "parameters_human": "10.8M",
+  "storage_bytes": 43084216,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cy0307/nanogpt-shakespeare · Hugging Face",
+      "url": "https://huggingface.co/cy0307/nanogpt-shakespeare",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sheaf/examples/nanoGPT at main · sheaf-lang/sheaf · GitHub",
+      "url": "https://github.com/sheaf-lang/sheaf/tree/main/examples/nanoGPT",
+      "snippet": "NanoGPT A port of Karpathy&#x27;s nanoGPT in Sheaf. The architecture follows the original faithfully, keeping the same layer structure, weight layout, and numerical results. The weights for the character-level Shakespeare were converted from the original PyTorch format to SafeTensors."
+    },
+    {
+      "title": "sheaf/examples/nanoGPT/train.shf at main · sheaf-lang/sheaf",
+      "url": "https://github.com/sheaf-lang/sheaf/blob/main/examples/nanoGPT/train.shf",
+      "snippet": "A functional language for machine learning. Inspired by Clojure, compiled to GPUs. - sheaf-lang/sheaf"
+    },
+    {
+      "title": "Marcus2112/nanogpt_shakespeare · Hugging Face",
+      "url": "https://huggingface.co/Marcus2112/nanogpt_shakespeare",
+      "snippet": "Collection including Marcus2112/nanogpt_shakespeare Zero to Hero Collection 5 items • Updated 35 minutes ago"
+    },
+    {
+      "title": "Text Models - NanoGPT",
+      "url": "https://nano-gpt.com/settings/models",
+      "snippet": "NanoGPT offers access to every AI model with pay-as-you-go or an optional subscription with included open-source model usage. Generate videos (Kling, Veo and more), create images (Flux Pro, Kontext, GPT Image, Hidream), and access ChatGPT, Claude, Gemini, Deepseek, and other top AI models."
+    }
+  ]
+}

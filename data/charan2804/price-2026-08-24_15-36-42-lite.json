@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Charan2804/price-2026-08-24_15.36.42-lite",
+  "slug": "charan2804-price-2026-08-24_15-36-42-lite",
+  "author": "Charan2804",
+  "url": "https://huggingface.co/Charan2804/price-2026-08-24_15.36.42-lite",
+  "created_at": "2026-08-24T16:31:10.000Z",
+  "updated_at": "2026-08-24T16:31:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20633323,
+  "storage_human": "21 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://www.google.com/images",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Price History: Price Tracker for Amazon, Flipkart & more",
+      "url": "https://pricehistory.app/",
+      "snippet": "📈Price History is a free price tracker tool to check price history information for millions of products. Our Amazon Price Tracker tracks Prices, Lightning deals, and Coupon Discounts."
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the largest selection of everyday essentials and other products, including fashion, home, beauty, electronics, Alexa Devices, sporting goods, toys, automotive, pets, baby, books, video games, musical instruments, office supplies, and more."
+    },
+    {
+      "title": "MAC Address Vendor Lookup | MAC Address Lookup",
+      "url": "https://maclookup.app/",
+      "snippet": "Monitor your personal and financial information, get instant security alerts, and act before fraud escalates."
+    },
+    {
+      "title": "AI Token Cost Calculator 2026: 134 Models by Tier | AI Pricing Guru",
+      "url": "https://www.aipricing.guru/calculators/token-cost/",
+      "snippet": "All 215 model prices in this calculator come from the official API pricing pages of each provider, checked every few hours by our automated pipeline. The last full refresh ran at 2026-08-24. We track 10+ providers including OpenAI, Anthropic, Google, DeepSeek, xAI, Meta, Mistral, Cohere, Perplexity, and Together."
+    }
+  ]
+}

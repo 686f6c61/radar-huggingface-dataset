@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spyrostheboss/Melissa_O_Neil_Krea_2_LoRA",
+  "slug": "spyrostheboss-melissa_o_neil_krea_2_lora",
+  "author": "spyrostheboss",
+  "url": "https://huggingface.co/spyrostheboss/Melissa_O_Neil_Krea_2_LoRA",
+  "created_at": "2026-08-24T18:49:31.000Z",
+  "updated_at": "2026-08-24T18:54:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "krea",
+    "lora",
+    "text-to-image",
+    "character-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470496150,
+  "storage_human": "470 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Melissa O&#x27;Neil - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/f690b0f8a01b9a42aefdf55df1366704",
+      "snippet": "Explore Melissa O&#x27;Neil model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Melissa O&#x27;Neil (Flux) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/bc8e14ea8c4638091c2956c3d67f5278",
+      "snippet": "Explore Melissa O&#x27;Neil (Flux) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "GitHub - bongobongo2020/krea2-character-lora-trainer",
+      "url": "https://github.com/bongobongo2020/krea2-character-lora-trainer",
+      "snippet": "Krea 2 Character LoRA Trainer Train a character LoRA for the Krea 2 image model through a clean web UI — no command line needed. Upload 10-20 images, auto-caption them, click Start training, and download a Turbo-ready .safetensors LoRA."
+    }
+  ]
+}

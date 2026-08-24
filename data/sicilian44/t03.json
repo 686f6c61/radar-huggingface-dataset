@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sicilian44/t03",
+  "slug": "sicilian44-t03",
+  "author": "Sicilian44",
+  "url": "https://huggingface.co/Sicilian44/t03",
+  "created_at": "2026-08-24T16:12:36.000Z",
+  "updated_at": "2026-08-24T16:19:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "thai",
+    "construction-drawings",
+    "structural-engineering",
+    "th",
+    "base_model:unsloth/Qwen3.6-35B-A3B",
+    "base_model:adapter:unsloth/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sicilian44 (Chaichana Juisiri) - Hugging Face",
+      "url": "https://huggingface.co/Sicilian44",
+      "snippet": "Recent Activity updated a model7 days ago Sicilian44/qwen36-thai-rc published a model7 days ago Sicilian44/qwen36-thai-rc published a bucket11 days ago Sicilian44/Qwen3.6-35B-A3B-bucket View all activity"
+    },
+    {
+      "title": "Sicilian44/qwen36-thai-rc · Hugging Face",
+      "url": "https://huggingface.co/Sicilian44/qwen36-thai-rc",
+      "snippet": "Sicilian44 / qwen36-thai-rc like 0 Safetensors GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "Free AI 3D Model Generator - Create Custom STL Files | Remeshy",
+      "url": "https://remeshy.com/stl-creator",
+      "snippet": "Create custom 3D printable models from text or images. AI-powered STL generator with mesh repair."
+    }
+  ]
+}

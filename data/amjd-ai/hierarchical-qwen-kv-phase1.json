@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "amjd-ai/hierarchical-qwen-kv-phase1",
+  "slug": "amjd-ai-hierarchical-qwen-kv-phase1",
+  "author": "amjd-ai",
+  "url": "https://huggingface.co/amjd-ai/hierarchical-qwen-kv-phase1",
+  "created_at": "2026-08-24T17:15:31.000Z",
+  "updated_at": "2026-08-24T17:16:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "hierarchical-kv-cache",
+    "long-context",
+    "qwen",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73066948,
+  "storage_human": "73 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen — Model Architecture Across Generations — Model Architectures — A ...",
+      "url": "https://karam-nus.github.io/models/01_Qwen",
+      "snippet": "🟣 Qwen — Model Architecture Across Generations From a competitive Chinese LLM to a global open-weight powerhouse — tracing 5 generations of architecture evolution."
+    },
+    {
+      "title": "Qwen Models (Qwen3MoE, Qwen3-Next, Qwen3.5, Qwen3-Coder-Next)",
+      "url": "https://deepwiki.com/kvcache-ai/ktransformers/9.5-qwen-models-(qwen3moe-qwen3-next-qwen3.5-qwen3-coder-next)",
+      "snippet": "This page provides technical documentation for deploying the Qwen model family using KTransformers. It covers high-performance inference for Qwen3MoE using Intel AMX optimizations, the linear-attention based Qwen3-Next-80B-A3B, the massive Qwen3.5-MoE-400B, and the code-specialized Qwen3-Coder-Next."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    }
+  ]
+}

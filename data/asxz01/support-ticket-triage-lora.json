@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "asxz01/support-ticket-triage-lora",
+  "slug": "asxz01-support-ticket-triage-lora",
+  "author": "asxz01",
+  "url": "https://huggingface.co/asxz01/support-ticket-triage-lora",
+  "created_at": "2026-08-24T18:18:49.000Z",
+  "updated_at": "2026-08-24T18:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TicketTriage-LoRA - a Hugging Face Space by markasame",
+      "url": "https://huggingface.co/spaces/markasame/tickettriage-lora",
+      "snippet": "🎫 TicketTriage-LoRA A QLoRA fine-tune of Qwen3 8B for customer-support ticket triage, compared side by side with the untuned base model on the same prompts. Everything below comes from the real evaluation on 216 held-out tickets — code & full report on GitHub."
+    },
+    {
+      "title": "markasame/TicketTriage-LoRA - GitHub",
+      "url": "https://github.com/markasame/TicketTriage-LoRA",
+      "snippet": "🎫 TicketTriage-LoRA A QLoRA + DoRA fine-tune of Qwen3 8B for customer-support ticket triage — intent classification, priority scoring, and reply drafting from a single adapter — with a rigorous before/after evaluation against the untuned base model."
+    },
+    {
+      "title": "TicketTriage-LoRA/README.md at main - GitHub",
+      "url": "https://github.com/markasame/TicketTriage-LoRA/blob/main/README.md",
+      "snippet": "🎫 TicketTriage-LoRA A QLoRA + DoRA fine-tune of Qwen3 8B for customer-support ticket triage — intent classification, priority scoring, and reply drafting from a single adapter — with a rigorous before/after evaluation against the untuned base model."
+    },
+    {
+      "title": "Qwen3.5 4b Lora Vi Ticket Triage - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/minhlt12/qwen3.5-4b-lora-vi-ticket-triage",
+      "snippet": "Registry entry for model Qwen3.5 4b Lora Vi Ticket Triage; source metadata pending."
+    },
+    {
+      "title": "lab21-qwen3.5-9b-triage-vi-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/AnVu10/lab21-qwen3.5-9b-triage-vi-lora",
+      "snippet": "Run lab21-qwen3.5-9b-triage-vi-lora with FriendliAI inference. LoRA adapter fine-tuned for Vietnamese customer-support ticket triage → 4-field JSON (intent…"
+    }
+  ]
+}

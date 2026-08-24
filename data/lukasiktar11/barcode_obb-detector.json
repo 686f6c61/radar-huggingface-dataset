@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lukasiktar11/barcode_obb-detector",
+  "slug": "lukasiktar11-barcode_obb-detector",
+  "author": "lukasiktar11",
+  "url": "https://huggingface.co/lukasiktar11/barcode_obb-detector",
+  "created_at": "2026-08-24T18:28:27.000Z",
+  "updated_at": "2026-08-24T18:28:44.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "detection",
+    "obb",
+    "yolo",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60874388,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Piero2411/YOLOV8s-Barcode-Detection · Hugging Face",
+      "url": "https://huggingface.co/Piero2411/YOLOV8s-Barcode-Detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics?tab=readme-ov-file",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "GitHub - dchakour/Barcode-detection: Barcode detection with Deep ...",
+      "url": "https://github.com/dchakour/Barcode-detection",
+      "snippet": "Barcode-detection This project aims to develop a deep learning model able to detect a barcode in a given image. The model behind it is Tiny YOLO 3, which a light version of YOLO 3 with less hidden layers in the neural network architecture. This helps significantly reduce the inference time, although its predictive accuracy is lower than YOLO 3 ..."
+    },
+    {
+      "title": "barcode-obb 2 Object Detection Model (v1, 2024-05-15 10:45am) by barcodeobb",
+      "url": "https://universe.roboflow.com/barcodeobb/barcode-obb-2/dataset/1",
+      "snippet": "576 open source barcode-hkCy images and annotations in multiple formats for training computer vision models. barcode-obb 2 (v1, 2024-05-15 10:45am), created by barcodeobb"
+    },
+    {
+      "title": "lukasiktar11/license-plate-ocr-detector · Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/license-plate-ocr-detector",
+      "snippet": "lukasiktar11 / license-plate-ocr-detector like 0 Object Detection ultralytics ONNX ocr yolo License:agpl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

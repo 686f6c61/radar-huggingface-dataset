@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rshift8/pi05_obs_only_firstandlast3_injection_allenv",
+  "slug": "rshift8-pi05_obs_only_firstandlast3_injection_allenv",
+  "author": "rshift8",
+  "url": "https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv",
+  "created_at": "2026-08-24T18:06:12.000Z",
+  "updated_at": "2026-08-24T18:20:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45373928786,
+  "storage_human": "45.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization. While robots ..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF π : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://www.pi.website/download/pi05.pdf",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "GitHub - jorgemunozl/openpi_subtask_generation: pi05 model written on ...",
+      "url": "https://github.com/jorgemunozl/openpi_subtask_generation",
+      "snippet": "pi05 model written on JAX. Contribute to jorgemunozl/openpi_subtask_generation development by creating an account on GitHub."
+    }
+  ]
+}

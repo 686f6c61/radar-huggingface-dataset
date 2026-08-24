@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/modnet",
+  "slug": "jonnyverse-modnet",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/modnet",
+  "created_at": "2026-08-24T16:12:59.000Z",
+  "updated_at": "2026-08-24T16:12:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modnet",
+    "vision",
+    "background-removal",
+    "portrait-matting",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116787731,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MODNet: Trimap-Free Portrait Matting in Real Time - GitHub",
+      "url": "https://github.com/ZHKKKe/MODNet",
+      "snippet": "MODNet is a model for real-time portrait matting with only RGB image input"
+    },
+    {
+      "title": "Xenova/modnet · Hugging Face",
+      "url": "https://huggingface.co/Xenova/modnet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xenova/modnet at main - Hugging Face",
+      "url": "https://huggingface.co/Xenova/modnet/tree/main/onnx",
+      "snippet": "modnet / onnx 1 contributor History: 3 commits Xenova HF staff Upload model_quantized.onnx d73298e verified about 1 month ago model.onnx 25.9 MB"
+    },
+    {
+      "title": "modnet: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/modnet-pollinations",
+      "snippet": "Overview modnet is a lightweight deep learning model for portrait matting that removes backgrounds from images in real-time without requiring auxiliary inputs like trimaps. Built by pollinations, this model uses an Efficient Atrous Spatial Pyramid Pooling (e-ASPP) module to fuse multi-scale features and achieves 67 frames per second on a 1080Ti GPU. The model optimizes multiple sub-objectives ..."
+    },
+    {
+      "title": "modnet huggingface.co api & Xenova modnet github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/xenova-modnet",
+      "snippet": "modnet huggingface.co is an AI model on huggingface.co that provides modnet&#x27;s model effect (), which can be used instantly with this Xenova modnet model. huggingface.co supports a free trial of the modnet model, and also provides paid use of the modnet. Support call modnet model through api, including Node.js, Python, http."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nhuvo/umt5-base-en-vimedner-mt-en2vi",
+  "slug": "nhuvo-umt5-base-en-vimedner-mt-en2vi",
+  "author": "nhuvo",
+  "url": "https://huggingface.co/nhuvo/umt5-base-en-vimedner-mt-en2vi",
+  "created_at": "2026-08-24T15:48:30.000Z",
+  "updated_at": "2026-08-24T16:04:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "umt5",
+    "text2text-generation",
+    "translation",
+    "biomedical",
+    "en-vimedner",
+    "en",
+    "vi",
+    "dataset:nhuvo/En-ViMedNER",
+    "base_model:google/umt5-base",
+    "base_model:finetune:google/umt5-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 592043520,
+  "parameters_human": "592.0M",
+  "storage_bytes": 2389596678,
+  "storage_human": "2.4 GB",
+  "base_model": "google/umt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UMT5 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.51.1/model_doc/umt5",
+      "snippet": "The UMT5 model was proposed in UniMax: Fairer and More Effective Language Sampling for Large-Scale Multilingual Pretraining by Hyung Won Chung, Xavier Garcia, Adam Roberts, Yi Tay, Orhan Firat, Sharan Narang, Noah Constant. The abstract from the paper is the following: Pretrained multilingual large language models have typically used heuristic temperature-based sampling to balance between ..."
+    },
+    {
+      "title": "README.md · google/umt5-base at main - Hugging Face",
+      "url": "https://huggingface.co/google/umt5-base/blob/main/README.md",
+      "snippet": "We find that UniMax outperforms standard temperature-based sampling, and the benefits persist as scale increases. As part of our contribution, we release: (i) an improved and refreshed mC4 multilingual corpus consisting of 29 trillion characters across 107 languages, and (ii) a suite of pretrained umT5 model checkpoints trained with UniMax ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/umt5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/umt5.md",
+      "snippet": "As part of our contribution, we release: (i) an improved and refreshed mC4 multilingual corpus consisting of 29 trillion characters across 107 languages, and (ii) a suite of pretrained umT5 model checkpoints trained with UniMax sampling. Google has released the following variants: google/umt5-small google/umt5-base google/umt5-xl google/umt5-xxl."
+    },
+    {
+      "title": "transformers/src/transformers/models/umt5/modeling_umt5.py at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/umt5/modeling_umt5.py",
+      "snippet": "# Unless required by applicable law or agreed to in writing, software"
+    },
+    {
+      "title": "mT5 — NVIDIA NeMo Framework User Guide",
+      "url": "https://docs.nvidia.com/nemo-framework/user-guide/24.07/llms/mt5/index.html",
+      "snippet": "mT5 # Released in 2020, Google&#x27;s mT5 is a multilingual language model based on the transformer encoder-decoder framework. Leveraging a massive multilingual dataset with over 100 languages, mT5 achieved state-of-the-art benchmark scores across multiple languages. With offerings in \"small\", \"base\", \"large\", \"xl\", and \"xxl\", mt5 has a variety of model sizes to suit a variety ..."
+    }
+  ]
+}

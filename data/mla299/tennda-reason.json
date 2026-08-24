@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MLA299/Tennda-Reason",
+  "slug": "mla299-tennda-reason",
+  "author": "MLA299",
+  "url": "https://huggingface.co/MLA299/Tennda-Reason",
+  "created_at": "2026-08-24T07:40:52.000Z",
+  "updated_at": "2026-08-24T18:10:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "code",
+    "reasoning",
+    "text-generation",
+    "tennda",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1280062464,
+  "parameters_human": "1.28B",
+  "storage_bytes": 4619474128,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLA299 (MLA) - Hugging Face",
+      "url": "https://huggingface.co/MLA299/models",
+      "snippet": "MLA299&#x27;s models Sort: Recently updated MLA299/Tennda-Nano Text Generation • 5B•Updated about 14 hours ago• 1"
+    },
+    {
+      "title": "MLA299 (MLA) - Hugging Face",
+      "url": "https://huggingface.co/MLA299",
+      "snippet": "Sort: Recently updated MLA299/Tennda-Nano Text Generation • 5B•Updated about 14 hours ago• 1"
+    },
+    {
+      "title": "deepseek-ai/FlashMLA - Forgejo.dev",
+      "url": "https://forgejo.dev/deepseek-ai/FlashMLA",
+      "snippet": "These kernels power the model&#x27;s DeepSeek Sparse Attention (DSA) and achieve up to 640 TFlops during prefilling and 410 TFlops during decoding. We also release a deep-dive blog for our new FP8 sparse decoding kernel."
+    },
+    {
+      "title": "How do I cite generative AI in MLA style? (Updated and Revised)",
+      "url": "https://style.mla.org/citing-generative-ai-updated-revised/",
+      "snippet": "In March 2023, we published a post about how to cite generative AI, such as ChatGPT. While our guidance has largely remained the same, given the rapidly evolving nature of AI tools, we decided to update our guidance and provide new examples using the current AI models from OpenAI and Microsoft. In \"Using the MLA Template\" …"
+    },
+    {
+      "title": "Tennda Nano by MLA299 — VRAM 9.2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/MLA299%2FTennda-Nano,1fHfr4JcOW896VoV0tgvmB",
+      "snippet": "Tennda Nano is an open-source 4.6b LLM by MLA299. VRAM 9.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

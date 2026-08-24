@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AnilaThomas123/personal-chief-of-staff-app",
+  "slug": "anilathomas123-personal-chief-of-staff-app",
+  "author": "AnilaThomas123",
+  "url": "https://huggingface.co/AnilaThomas123/personal-chief-of-staff-app",
+  "created_at": "2026-08-24T17:55:06.000Z",
+  "updated_at": "2026-08-24T18:02:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multi-agent",
+    "langraph",
+    "orchestration",
+    "ai-agents",
+    "productivity",
+    "fastapi",
+    "react",
+    "openai",
+    "anthropic",
+    "gmail",
+    "calendar",
+    "tasks",
+    "human-in-the-loop",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AnilaThomas123/personal-chief-of-staff: AI-powered personal ...",
+      "url": "https://github.com/AnilaThomas123/personal-chief-of-staff",
+      "snippet": "A multi-agent Chief of Staff: a LangGraph orchestrator coordinates Email, Calendar, Task, Research, and Memory agents to produce a daily Morning Briefing — top priorities, why they matter, risks to watch, and recommended next actions — with human approval required before any consequential action ..."
+    },
+    {
+      "title": "personal-chief-of-staff/README.md at main · AnilaThomas123 ... - GitHub",
+      "url": "https://github.com/AnilaThomas123/personal-chief-of-staff/blob/main/README.md",
+      "snippet": "Personal Chief of Staff (MVP) A multi-agent Chief of Staff: a LangGraph orchestrator coordinates Email, Calendar, Task, Research, and Memory agents to produce a daily Morning Briefing — top priorities, why they matter, risks to watch, and recommended next actions — with human approval required before any consequential action (sending an email, modifying your calendar) actually happens."
+    },
+    {
+      "title": "AnilaThomas123 (Anila Thomas) - Hugging Face",
+      "url": "https://huggingface.co/AnilaThomas123",
+      "snippet": "Tax Calculation App 🚀 gradio App for calculating taxes AnilaThomas123 about 7 hours ago"
+    },
+    {
+      "title": "AI Chief of Staff — Bootstrap for Microsoft 365",
+      "url": "https://copilot-chief-of-staff.vercel.app/",
+      "snippet": "3. Set the Name and Description Name: Daily Chief of Staff (or whatever you named your Chief during setup) Description: Personal AI Chief of Staff. Knows my strategy, people, and landscape. Direct, opinionated, challenges my thinking. 4. Paste the Instructions Copy the agent persona prompt below and paste it into the Instructions field."
+    },
+    {
+      "title": "AnilaThomas123 (Anila Thomas) - Hugging Face",
+      "url": "https://huggingface.co/AnilaThomas123/models",
+      "snippet": "AnilaThomas123 (Anila Thomas) - Hugging Face ... vibe coding"
+    }
+  ]
+}

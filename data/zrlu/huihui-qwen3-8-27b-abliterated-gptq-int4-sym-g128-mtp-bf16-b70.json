@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "zrlu/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70",
+  "slug": "zrlu-huihui-qwen3-8-27b-abliterated-gptq-int4-sym-g128-mtp-bf16-b70",
+  "author": "zrlu",
+  "url": "https://huggingface.co/zrlu/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70",
+  "created_at": "2026-08-24T17:26:46.000Z",
+  "updated_at": "2026-08-24T17:32:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "gptq",
+    "int4",
+    "vllm",
+    "xpu",
+    "intel-arc",
+    "arc-pro-b70",
+    "b70",
+    "quantization",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19579440325,
+  "storage_human": "19.6 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated:27b",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated:27b",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

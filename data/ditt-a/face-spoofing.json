@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ditt-a/Face-Spoofing",
+  "slug": "ditt-a-face-spoofing",
+  "author": "ditt-a",
+  "url": "https://huggingface.co/ditt-a/Face-Spoofing",
+  "created_at": "2026-08-24T17:22:03.000Z",
+  "updated_at": "2026-08-24T17:22:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ditt-A/Face-Spoofing-Detection: Face spoofing detection ...",
+      "url": "https://github.com/Ditt-A/Face-Spoofing-Detection",
+      "snippet": "Face spoofing detection project for classifying real and presentation-attack face images across six classes. Uses DINOv3, ConvNeXt, FSFM, dual-view preprocessing, TTA, ensemble fusion, and dataset cleaning with DINOv3 embeddings. - Ditt-A/Face-Spoofing-Detection"
+    },
+    {
+      "title": "FACE SPOOFING DETECTION TECHNOLOGY USING DEEP LEARNING - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19223v1",
+      "snippet": "Strong countermeasures are more important as these spoofing techniques get more complex. The main goal of this project is to use deep learning techniques to create a reliable and efficient face spoofing detection system. Among the specific goals are: • Investigating the state-of-the-art in face spoofing attacks and their growing complexity."
+    },
+    {
+      "title": "GitHub - Ditt-A/Ditt-A",
+      "url": "https://github.com/Ditt-A/Ditt-A",
+      "snippet": "GitHub Stats Building applied AI systems that turn messy real-world data into inspectable, source-grounded, and usable tools."
+    },
+    {
+      "title": "MS-MFAD : Multimodal large language models for Face Anti-spoofing Detection",
+      "url": "https://arxiv.org/abs/2608.17328",
+      "snippet": "Facial biometric recognition systems currently face compound threats intertwining generative AI and high-fidelity physical spoofing. Existing defenses suffer from systemic bottlenecks, including poor generalization, non-auditable reasoning, and reliance on massive, low-quality datasets. To address these challenges, we propose Multimodal Large Language Models (MFAD) for face anti-spoofing ..."
+    },
+    {
+      "title": "How Fake AI Selfies Bypass Identity Verification",
+      "url": "https://facia.ai/blog/how-fake-ai-selfies-bypass-identity-verification/",
+      "snippet": "This article explores how AI-generated faces bypass identity verification, where conventional checks fall short, and what a stronger detection architecture now requires."
+    }
+  ]
+}

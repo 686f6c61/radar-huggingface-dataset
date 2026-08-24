@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "onnx-community/single-floppy-346k-merged-ONNX",
+  "slug": "onnx-community-single-floppy-346k-merged-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/single-floppy-346k-merged-ONNX",
+  "created_at": "2026-08-07T13:03:15.000Z",
+  "updated_at": "2026-08-24T16:25:18.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gpt2",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:ssmi153/Capybara-ShareGPT",
+    "base_model:NILKNARFGonzo/single-floppy-346k-merged",
+    "base_model:quantized:NILKNARFGonzo/single-floppy-346k-merged",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 521,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5902340,
+  "storage_human": "6 MB",
+  "base_model": "NILKNARFGonzo/single-floppy-346k-merged",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/single-floppy-346k-merged-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/single-floppy-346k-merged-ONNX",
+      "snippet": "Instructions to use onnx-community/single-floppy-346k-merged-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "onnx-community/single-floppy-346k-merged-ONNX · no way",
+      "url": "https://huggingface.co/onnx-community/single-floppy-346k-merged-ONNX/discussions/1",
+      "snippet": "Instructions to use onnx-community/single-floppy-346k-merged-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Single Floppy 346K Merged by NILKNARFGonzo | LLM Explorer",
+      "url": "https://llm-explorer.com/model/NILKNARFGonzo%2Fsingle-floppy-346k-merged,6TiPWKRqLOupBx1A5nG4jK",
+      "snippet": "Single Floppy 346K Merged is an open-source 346.1k LLM by NILKNARFGonzo. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx/tree/main",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types."
+    }
+  ]
+}

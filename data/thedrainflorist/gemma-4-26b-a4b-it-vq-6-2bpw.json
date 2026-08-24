@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/gemma-4-26b-a4b-it-VQ-6.2bpw",
+  "slug": "thedrainflorist-gemma-4-26b-a4b-it-vq-6-2bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/gemma-4-26b-a4b-it-VQ-6.2bpw",
+  "created_at": "2026-08-20T17:39:21.000Z",
+  "updated_at": "2026-08-24T17:41:02.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "gemma-4",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "license:gemma",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 5537198670,
+  "parameters_human": "5.54B",
+  "storage_bytes": 20149162542,
+  "storage_human": "20.1 GB",
+  "base_model": "google/gemma-4-26b-a4b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrainFlorist/gemma-4-26b-a4b-it-VQ-6.2bpw · Hugging Face",
+      "url": "https://huggingface.co/TheDrainFlorist/gemma-4-26b-a4b-it-VQ-6.2bpw",
+      "snippet": "TheDrainFlorist / gemma-4-26b-a4b-it-VQ-6.2bpw like 0 Image-Text-to-Text MLX Safetensors English gemma4 quantized vector-quantization apple-silicon gemma-4 multimodal conversational 2-bit License:gemma Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gemma-4 VQ (Apple Silicon) - a TheDrainFlorist Collection",
+      "url": "https://huggingface.co/collections/TheDrainFlorist/gemma-4-vq-apple-silicon",
+      "snippet": "Vector-quantized gemma-4 for MLX: 26B indistinguishable from bf16 at 18.7G; e4b with a better embedding table at 7.4G."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "gemma-4-26B-A4B-it - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/gemma-4-26b-a4b-it",
+      "snippet": "Gemma 4 26B is Google DeepMind&#x27;s latest open-source MoE model, built on a 26B-parameter Mixture of Experts architecture that activates only 3.8B parameters during inference for exceptionally fast token throughput. Purpose-built for advanced reasoning and agentic workflows, it ranks #6 among all open models on the Arena AI leaderboard — outperforming models up to 20x its size — with native ..."
+    }
+  ]
+}

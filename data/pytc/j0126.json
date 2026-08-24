@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pytc/j0126",
+  "slug": "pytc-j0126",
+  "author": "pytc",
+  "url": "https://huggingface.co/pytc/j0126",
+  "created_at": "2026-08-24T18:12:52.000Z",
+  "updated_at": "2026-08-24T18:12:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pytc/zebrafinch-j0126 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/pytc/zebrafinch-j0126",
+      "snippet": "Ground truth train: j0126-train-34vol.zip, 34 densely labeled subvolumes validaiton: valid_12_skeletons.h5, manually traced skeletons for 12 neurons test: test_50_skeletons.h5, manually traced skeletons for 50 neurons Image and FFN result use cloud-volume to download from the neuroglancer link"
+    },
+    {
+      "title": "pytc/zebrafinch-j0126 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/pytc/zebrafinch-j0126/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenModelDB/open-model-database: An open and free database for ...",
+      "url": "https://github.com/OpenModelDB/open-model-database",
+      "snippet": "An open and free database for AI models. Contribute to OpenModelDB/open-model-database development by creating an account on GitHub."
+    },
+    {
+      "title": "storage.googleapis.com",
+      "url": "https://storage.googleapis.com/j0126-nature-methods-data/GgwKmcKgrcoNxJccKuGIzRnQqfit9hnfK1ctZzNbnuU/README.txt",
+      "snippet": "This bucket contains the raw data and ground truth annotations for the J0126 dataset used in the paper: Michał Januszewski, Jörgen Kornfeld, Peter H. Li, Art Pope, Tim Blakely, Larry Lindsey, Jeremy Maitin-Shepard, Mike Tyka, Winfried Denk, and Viren Jain. \"High-precision automated reconstruction of neurons with flood-filling networks.\" Nature methods 15, no. 8 (2018): 605. https://doi.org ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

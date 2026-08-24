@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "waqasm86/vllm-kaggle-models",
+  "slug": "waqasm86-vllm-kaggle-models",
+  "author": "waqasm86",
+  "url": "https://huggingface.co/waqasm86/vllm-kaggle-models",
+  "created_at": "2026-08-24T17:53:14.000Z",
+  "updated_at": "2026-08-24T18:55:03.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen2",
+    "qwen2.5",
+    "sharded-state",
+    "tensor-parallel",
+    "kaggle",
+    "tesla-t4",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6172262512,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waqasm86 - GitHub",
+      "url": "https://github.com/waqasm86",
+      "snippet": "My name is Mohammad Waqas, and I am a systems engineer focused on GPU-accelerated LLM inference, observability, and local-first AI infrastructure. I build practical tooling around CUDA, llama.cpp, OpenTelemetry, distributed computing, and low-VRAM deployment."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Infer 34B with vLLM - Kaggle",
+      "url": "https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from multiple data sources"
+    },
+    {
+      "title": "waqasm86 - Repositories - GitHub",
+      "url": "https://github.com/waqasm86?tab=repositories",
+      "snippet": "Content-addressed LLM model distribution with SHA256 verification and SeaweedFS integration. Distributed storage, manifest management, LRU caching, and integrity checking for GGUF models."
+    },
+    {
+      "title": "List of Supported Models — vLLM - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/en/v0.7.2/models/supported_models.html",
+      "snippet": "List of Supported Models # vLLM supports generative and pooling models across various tasks. If a model supports more than one task, you can set the task via the --task argument. For each task, we list the model architectures that have been implemented in vLLM. Alongside each architecture, we include some popular models that use it. Loading a Model # HuggingFace Hub # By default, vLLM loads ..."
+    }
+  ]
+}

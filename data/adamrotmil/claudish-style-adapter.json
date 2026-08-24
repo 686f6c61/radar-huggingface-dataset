@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "adamrotmil/claudish-style-adapter",
+  "slug": "adamrotmil-claudish-style-adapter",
+  "author": "adamrotmil",
+  "url": "https://huggingface.co/adamrotmil/claudish-style-adapter",
+  "created_at": "2026-08-24T18:46:58.000Z",
+  "updated_at": "2026-08-24T18:57:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "style-transfer",
+    "claudish",
+    "lora",
+    "text2text",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 5017509532,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MadAppGang/claudish: Claude Code. Any Model. The most powerful ...",
+      "url": "https://github.com/MadAppGang/claudish",
+      "snippet": "Claudish (Claude-ish) is a CLI tool that allows you to run Claude Code with any AI model by proxying requests through a local Anthropic API-compatible server. Supported Providers: Cloud: OpenRouter (580+ models), Google Gemini, OpenAI, MiniMax, Kimi, GLM, Z.AI, Sakana Fugu, OllamaCloud, OpenCode Zen Local: Ollama, LM Studio, vLLM, MLX Enterprise: Vertex AI (Google Cloud)"
+    },
+    {
+      "title": "Claudish — Use Your AI Subscriptions with Claude Code",
+      "url": "https://claudish.com/",
+      "snippet": "Use your existing AI subscriptions (Gemini, ChatGPT, Grok, Kimi, MiniMax, Vertex AI, GLM) with Claude Code. 15+ direct providers, 580+ models via OpenRouter + offline local models. BYOK coding assistant."
+    },
+    {
+      "title": "Configure Claude Code for Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/configure-claude-code",
+      "snippet": "Set up Claude Code CLI and VS Code extension to use Claude models in Microsoft Foundry with enterprise security, authentication, and CI/CD integration."
+    },
+    {
+      "title": "claudish/docs/models at main · MadAppGang/claudish · GitHub",
+      "url": "https://github.com/MadAppGang/claudish/tree/main/docs/models",
+      "snippet": "Claude Code. Any Model. The most powerful AI coding agent now speaks every language. - claudish/docs/models at main · MadAppGang/claudish"
+    },
+    {
+      "title": "Claude Code Extension for Visual Studio",
+      "url": "https://marketplace.visualstudio.com/items?itemName=dliedke.ClaudeCodeExtension",
+      "snippet": "Claude Code Extension for Visual Studio Please also check Claude Code Studio from wluisdev Native or terminal inside Visual Studio for Claude Code, OpenAI Codex, Cursor Agent, Open Code, Devin, PI, Google Antigravity, and Reasonix — with multi-line prompts, file attachments, and an integrated diff viewer. Enjoying the extension? Buy me a coffee — every cup helps keep it free. Bug reports ..."
+    }
+  ]
+}

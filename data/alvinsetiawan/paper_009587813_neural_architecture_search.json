@@ -62,7 +62,7 @@
     {
       "title": "PDF Advances in neural architecture search - mn.cs.tsinghua.edu.cn",
       "url": "http://mn.cs.tsinghua.edu.cn/xinwang/PDF/papers/2024_Advances%20in%20Neural%20Architecture%20Search.pdf",
-      "snippet": "Itbegins bydesigning a modulargraph architecture super-networkwith multiple modulestofacilitatethesearch for architec-tures withspecificfactorexpertise.It then introduces a factor-basedtask-modulerouterthatidentifiesla-tent graphfactors and directsincomingtaskstothe most appropriate architecture module,therebymiti-gating the forgetting problem ..."
+      "snippet": "Itbegins bydesigning a modulargraph architecture super-networkwith multiple modulestofacilitatethesearch for architec-tures withspecificfactorexpertise.It then introduces a factor-basedta[REDACTED]-tent graphfactors and directsincomingtaskstothe most appropriate architecture module,therebymiti-gating the forgetting problem ..."
     }
   ]
 }

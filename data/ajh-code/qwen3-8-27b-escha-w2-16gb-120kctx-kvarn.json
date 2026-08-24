@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ajh-code/Qwen3.8-27B-Escha-W2-16GB-120Kctx-KVarN",
+  "slug": "ajh-code-qwen3-8-27b-escha-w2-16gb-120kctx-kvarn",
+  "author": "ajh-code",
+  "url": "https://huggingface.co/ajh-code/Qwen3.8-27B-Escha-W2-16GB-120Kctx-KVarN",
+  "created_at": "2026-08-24T15:07:28.000Z",
+  "updated_at": "2026-08-24T15:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "sglang",
+    "qwen3",
+    "escha",
+    "kvarn",
+    "kv-cache-quantization",
+    "4-bit",
+    "long-context",
+    "single-gpu",
+    "experimental",
+    "text-generation",
+    "arxiv:2606.03458",
+    "base_model:EschaLabs/Qwen3.8-27B-Escha-W2",
+    "base_model:finetune:EschaLabs/Qwen3.8-27B-Escha-W2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "EschaLabs/Qwen3.8-27B-Escha-W2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EschaLabs/Qwen3.8-27B-Escha-W2 · Hugging Face",
+      "url": "https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EschaLabs/Qwen3.8-27B-Escha-W2 at main - Hugging Face",
+      "url": "https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B Escha W2 by EschaLabs — VRAM 10.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/EschaLabs%2FQwen3.8-27B-Escha-W2,2OKUn8IUntahp3Sf6xEvsZ",
+      "snippet": "Rank the Qwen3.8 27B Escha W2 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8-27B-Escha-W2: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-escha-w2-eschalabs",
+      "snippet": "Overview Qwen3.8-27B-Escha-W2 is a 2-bit quantized variant of Qwen3.8-27B maintained by EschaLabs, a company specializing in extreme quantization. The model contains the full 27 billion parameter count compressed into 10.15 GB of weights using mixed 2/3-bit quantization (2.469 bits per weight average) with int8 embeddings and head layers."
+    },
+    {
+      "title": "Escha Labs — The LLM Compression Company",
+      "url": "https://www.eschalabs.com/",
+      "snippet": "Escha Labs — extreme low-bit model compression. Qwen3.6-35B-A3B-Escha-W2 is a 35B-parameter model in 12.3 GB that holds 100.2% of its FP8 baseline&#x27;s mean across six capability benchmarks and decodes 225 tok/s on one RTX 4090."
+    }
+  ]
+}

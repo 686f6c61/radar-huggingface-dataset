@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justintiensmith/groot_v4",
+  "slug": "justintiensmith-groot_v4",
+  "author": "justintiensmith",
+  "url": "https://huggingface.co/justintiensmith/groot_v4",
+  "created_at": "2026-08-24T18:14:54.000Z",
+  "updated_at": "2026-08-24T18:16:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:justintiensmith/VLA_Reasoning_Training_Dataset_1200_2cam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576223736,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justintiensmith (Justin Tien-Smith) - Hugging Face",
+      "url": "https://huggingface.co/justintiensmith/datasets",
+      "snippet": "User profile of Justin Tien-Smith on Hugging Face"
+    },
+    {
+      "title": "justintiensmith/gr00t_10k_multicolour_block_pick_place · Hugging Face",
+      "url": "https://huggingface.co/justintiensmith/gr00t_10k_multicolour_block_pick_place",
+      "snippet": "Model Card for groot Model type not recognized — please update this template."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "Built-in Models: GROOT — MineStudio",
+      "url": "https://craftjarvis.github.io/MineStudio/models/baseline-groot.html",
+      "snippet": "Quick Facts GROOT is an open-world controller that follows open-ended instructions by using reference videos as expressive goal specifications, eliminating the need for text annotations. GROOT leverages a causal transformer-based encoder-decoder architecture to self-supervise the learning of a structured goal space from gameplay videos."
+    },
+    {
+      "title": "GR00T-WholeBodyControl - GitHub",
+      "url": "https://github.com/NVlabs/GR00T-WholeBodyControl",
+      "snippet": "This is the codebase for the GR00T Whole-Body Control (WBC) projects. It hosts model checkpoints and scripts for training, evaluating, and deploying advanced whole-body controllers for humanoid robots. We currently support: Decoupled WBC: the decoupled controller (RL for lower body, and IK for upper body) used in NVIDIA GR00T N1.5 and N1.6 models; GEAR-SONIC Series: our latest iteration of ..."
+    }
+  ]
+}

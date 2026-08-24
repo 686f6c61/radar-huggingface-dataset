@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muniker/vla-jepa-so101-sort-210base-65ft-unfrozen-50steps-2camera",
+  "slug": "muniker-vla-jepa-so101-sort-210base-65ft-unfrozen-50steps-2camera",
+  "author": "muniker",
+  "url": "https://huggingface.co/muniker/vla-jepa-so101-sort-210base-65ft-unfrozen-50steps-2camera",
+  "created_at": "2026-08-24T17:56:53.000Z",
+  "updated_at": "2026-08-24T17:57:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "physicalai",
+  "languages": [],
+  "tags": [
+    "physicalai",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "vla-jepa",
+    "flow-matching",
+    "so-arm-101",
+    "so101",
+    "lerobot",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4564696281,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ginwind/VLA-JEPA: [ECCV 2026] VLA-JEPA: Enhancing Vision ...",
+      "url": "https://github.com/ginwind/VLA-JEPA",
+      "snippet": "VLA-JEPA supports training on both robot datasets and human video datasets. You can run custom training by specifying robot data and/or human videos in your configuration."
+    },
+    {
+      "title": "[2602.10098] VLA-JEPA: Enhancing Vision-Language-Action Model with ...",
+      "url": "https://arxiv.org/abs/2602.10098",
+      "snippet": "Pretraining Vision-Language-Action (VLA) policies on internet-scale video is appealing, yet current latent-action objectives often learn the wrong thing: they remain anchored to pixel variation rather than action-relevant state transitions, making them vulnerable to appearance bias, nuisance motion, and information leakage. We introduce VLA-JEPA, a JEPA-style pretraining framework that ..."
+    },
+    {
+      "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+      "url": "https://ginwind.github.io/VLA-JEPA/",
+      "snippet": "VLA-JEPA model architecture. A target encoder produces latent targets from future frames, while the student pathway sees only the current observation through a VLM backbone. A predictor maps the history latent states and the latent action representations to future latent states, trained as a latent world model using a JEPA alignment loss."
+    },
+    {
+      "title": "witsense-ai/so101_vla_jepa_v3 · Hugging Face",
+      "url": "https://huggingface.co/witsense-ai/so101_vla_jepa_v3",
+      "snippet": "VLA-JEPA is a Vision-Language-Action model that combines a Qwen3-VL language backbone with a self-supervised video world model (V-JEPA2) and a flow-matching DiT action head. This policy has been trained and pushed to the Hub using LeRobot. Learn how to train and run it in the LeRobot vla_jepa guide, or browse the full documentation."
+    },
+    {
+      "title": "GitHub - AmoghShrivastava/vlaJEPA: implementing https://arxiv.org/pdf ...",
+      "url": "https://github.com/AmoghShrivastava/vlaJEPA",
+      "snippet": "A small-scale reproduction pipeline for fine-tuning VLA-JEPA on the lerobot/svla_so101_pickplace dataset, sized to run end-to-end on a single H100/L40S-class GPU. VLA-JEPA combines a Qwen3-VL-2B backbone, a frozen V-JEPA2 encoder, and a flow-matching DiT-B action head. The upstream repo ships configs for Droid, LIBERO, Bridge, RT-1, and FR3, but not for joint-space arms like SO-101. This repo ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bboborjan/napoli-pizza-style",
+  "slug": "bboborjan-napoli-pizza-style",
+  "author": "bboborjan",
+  "url": "https://huggingface.co/bboborjan/napoli-pizza-style",
+  "created_at": "2026-08-24T18:03:07.000Z",
+  "updated_at": "2026-08-24T18:03:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "food",
+    "pizza",
+    "resnet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44784324,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Napoli AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/napoli",
+      "snippet": "Discover AI Art Model in our #napoli gallery. Trending Trending Most Used Most Liked Latest All Categories All Categories LoRA SD All Time All Time Yesterday Past 7 Days Past 30 Days PixAI LoRADiT.2 Haruka v2 style 578.71k10 2.08k PixAI XL Hoshino 58.67m167 14.45k User LoRADiT.2XL ☀︎ 32.20k0 130 User LoRAXLDiT.2 Frost Veil 37.30k0 119 User ..."
+    },
+    {
+      "title": "Napolitane Style - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/61a969e2607845b2dfadfbff5b3d24e0",
+      "snippet": "Explore Napolitane Style model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "Free AI image detector and checker. Find out if a photo, picture, or artwork is AI-generated: Midjourney, DALL-E, Stable Diffusion and 20+ models. No signup."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Poly Pizza: Free 3D models for everyone",
+      "url": "https://poly.pizza/",
+      "snippet": "Download thousands of low poly 3D models for free. No login required. Ready for AR/VR, Unity, Unreal or Godot."
+    }
+  ]
+}

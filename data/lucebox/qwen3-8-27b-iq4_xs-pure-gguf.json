@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lucebox/Qwen3.8-27B-IQ4_XS-pure-GGUF",
+  "slug": "lucebox-qwen3-8-27b-iq4_xs-pure-gguf",
+  "author": "Lucebox",
+  "url": "https://huggingface.co/Lucebox/Qwen3.8-27B-IQ4_XS-pure-GGUF",
+  "created_at": "2026-08-24T16:19:49.000Z",
+  "updated_at": "2026-08-24T16:19:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "iq4_xs",
+    "lucebox",
+    "speculative-decoding",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jpetrina/Qwen3.8-27B-IQ4_XS-pure-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jpetrina/Qwen3.8-27B-IQ4_XS-pure-GGUF",
+      "snippet": "Qwen3.8-27B Quantized to IQ4_XS for 16 GB VRAM GPUs This GGUF is basically with identical approach taken by Ununnilium&#x27;s Qwen3.6-27B-IQ4_XS-pure-GGUF but targetting Qwen3.8."
+    },
+    {
+      "title": "README.md · jpetrina/Qwen3.8-27B-IQ4_XS-pure-GGUF at main",
+      "url": "https://huggingface.co/jpetrina/Qwen3.8-27B-IQ4_XS-pure-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.8-27B Quantized to IQ4_XS for 16 GB VRAM GPUs This GGUF is basically with identical approach taken by Ununnilium&#x27;s Qwen3.6-27B-IQ4_XS-pure-GGUF but targetting Qwen3.8."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-27B-UD-Q4_K_XL-L4/README.md at main - GitHub",
+      "url": "https://github.com/hanxiao/Qwen3.8-27B-UD-Q4_K_XL-L4/blob/main/README.md",
+      "snippet": "Qwen3.8-27B (Unsloth UD-Q4_K_XL GGUF) served at 37.4 tok/s decode over a 226,048-token context on a single NVIDIA L4 24 GB: llama.cpp with DFlash 2 block-diffusion speculative decoding, a one-line CUDA kernel-routing patch worth 16%, one-command GCP provisioning, quality verification, and a measured account of where the ceiling is."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-2.4T-A95B is the open-source release of Qwen&#x27;s latest flagship, launched August 2026. Its sparse MoE architecture holds 2.4T total parameters with ~95B activated per step, paired with hybrid attention and a 1M token context window."
+    }
+  ]
+}

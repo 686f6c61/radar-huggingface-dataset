@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vedantjadhav701/SparkAI-47m-llama-latest",
+  "slug": "vedantjadhav701-sparkai-47m-llama-latest",
+  "author": "vedantjadhav701",
+  "url": "https://huggingface.co/vedantjadhav701/SparkAI-47m-llama-latest",
+  "created_at": "2026-08-24T16:52:01.000Z",
+  "updated_at": "2026-08-24T16:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "from-scratch",
+    "causal-lm",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 47718912,
+  "parameters_human": "47.7M",
+  "storage_bytes": 95445968,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vedantjadhav701/SparkAI-50M · Hugging Face",
+      "url": "https://huggingface.co/vedantjadhav701/SparkAI-50M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - VedantJadhav701/VedantJadhav701",
+      "url": "https://github.com/VedantJadhav701/VedantJadhav701",
+      "snippet": "🧠 About Me Final-year B.Tech. student in AI & ML at Pimpri Chinchwad University, Pune — building production-grade AI systems applied to scientific, industrial, medical, and embodied environments."
+    },
+    {
+      "title": "vedantjadhav701 (vedant sanjay jadhav) - Hugging Face",
+      "url": "https://huggingface.co/vedantjadhav701",
+      "snippet": "User profile of vedant sanjay jadhav on Hugging Face"
+    },
+    {
+      "title": "Vedant Sanjay Jadhav VedantJadhav701 - GitHub",
+      "url": "https://github.com/VedantJadhav701/",
+      "snippet": "I&#x27;m Vedant Jadhav, a dedicated Machine Learning Engineer with strong skills in Artificial Intelligence, a touch of Data Analysis, and hands-on experience in Fro - VedantJadhav701"
+    },
+    {
+      "title": "Unmatched Performance and Efficiency | Llama 4",
+      "url": "https://developer.meta.com/ai/models/llama-4/",
+      "snippet": "Meet Llama 4, the latest multimodal AI model offering cost efficiency, 10M context window and easy deployment. Start building advanced personalized experiences."
+    }
+  ]
+}

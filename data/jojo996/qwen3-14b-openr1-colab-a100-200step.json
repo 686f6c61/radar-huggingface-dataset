@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JOJO996/qwen3-14b-openr1-colab-a100-200step",
+  "slug": "jojo996-qwen3-14b-openr1-colab-a100-200step",
+  "author": "JOJO996",
+  "url": "https://huggingface.co/JOJO996/qwen3-14b-openr1-colab-a100-200step",
+  "created_at": "2026-08-24T17:18:28.000Z",
+  "updated_at": "2026-08-24T18:32:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039185339,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openwalrus/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/openwalrus/Qwen3-14B",
+      "snippet": "Fine-tune Qwen3 (14B) for free using our Google Colab notebook here! Read our Blog about Qwen3 support: unsloth.ai/blog/qwen3 View the rest of our notebooks in our docs here. Run & export your fine-tuned model to Ollama, llama.cpp or HF."
+    },
+    {
+      "title": "Qwen3_ (14B).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
+      "snippet": "Data Prep Qwen3 has both reasoning and a non reasoning mode. So, we should use 2 datasets: We use the Open Math Reasoning dataset which was used to win the AIMO (AI Mathematical Olympiad - Progress Prize 2) challenge! We sample 10% of verifiable reasoning traces that used DeepSeek R1, and which got > 95% accuracy."
+    },
+    {
+      "title": "Qwen3_ (14B)-Reasoning-Conversational.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(14B)-Reasoning-Conversational.ipynb",
+      "snippet": "Data Prep Qwen3 has both reasoning and a non reasoning mode. So, we should use 2 datasets: We use the Open Math Reasoning dataset which was used to win the AIMO (AI Mathematical Olympiad - Progress Prize 2) challenge! We sample 10% of verifiable reasoning traces that used DeepSeek R1, and which got > 95% accuracy."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

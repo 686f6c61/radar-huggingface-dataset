@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ZurnaSpy/ZurnSpy",
+  "slug": "zurnaspy-zurnspy",
+  "author": "ZurnaSpy",
+  "url": "https://huggingface.co/ZurnaSpy/ZurnSpy",
+  "created_at": "2026-08-24T16:45:53.000Z",
+  "updated_at": "2026-08-24T16:45:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "First Known Android AI Malware Uses Google&#x27;s Gemini for Decision-making ...",
+      "url": "https://cybernoz.com/first-known-android-ai-malware-uses-googles-gemini-for-decision-making/",
+      "snippet": "The first known Android malware family to weaponize a generative AI model, specifically Google&#x27;s Gemini, as part of its active execution flow. Discovered in February 2026, the malware represents a significant evolutionary step in mobile threats and follows ESET&#x27;s earlier identification of PromptLock, the first AI-powered ransomware, in August 2025. PromptSpy, uncovered by ESET researcher"
+    },
+    {
+      "title": "Is This Image AI-Generated? Check Any Photo Free | ForgeSpy",
+      "url": "https://www.forgespy.com/is-this-image-ai-generated",
+      "snippet": "Upload an image or paste a link and instantly find out if it is AI-generated. Free to try, results in seconds."
+    },
+    {
+      "title": "Is This Image AI-Generated? Free AI & Deepfake Detector",
+      "url": "http://www.forgespy.com/",
+      "snippet": "Check any image, video, or audio for AI generation, deepfakes, and voice cloning in seconds. Free to try — no credit card required."
+    },
+    {
+      "title": "How to Spot Fake AI Images in 2026: The Complete Detection Guide",
+      "url": "https://www.online-tech-tips.com/how-to-spot-fake-ai-images/",
+      "snippet": "Learn to spot AI-generated fake images in 2026 with our tiered newsroom stress test — visual cues, metadata checks, and free detection tools in under 10 minutes."
+    }
+  ]
+}

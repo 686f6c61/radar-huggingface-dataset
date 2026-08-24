@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "qualcomm-ai-hub-community/Qwen3-4B-Instruct-2507-Hi-Fi-fraQtl",
+  "slug": "qualcomm-ai-hub-community-qwen3-4b-instruct-2507-hi-fi-fraqtl",
+  "author": "qualcomm-ai-hub-community",
+  "url": "https://huggingface.co/qualcomm-ai-hub-community/Qwen3-4B-Instruct-2507-Hi-Fi-fraQtl",
+  "created_at": "2026-08-24T16:29:31.000Z",
+  "updated_at": "2026-08-24T16:30:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "fraqtl",
+    "qualcomm",
+    "ai-hub",
+    "on-device",
+    "LLM",
+    "qwen3",
+    "calibration-aware-quantization",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4876523648,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "Qwen3-4B-Instruct-2507 State‑of‑the‑art large language model with instruct‑only training, useful on a variety of language understanding and generation tasks. The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B ..."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3-4B-Instruct-2507 is a state-of-the-art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3-4B, this variant has only instruct training without thinking mode support. This is based on ..."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b_instruct_2507/README.md",
+      "snippet": "The Qwen3-4B-Instruct-2507 is a state-of-the-art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3-4B, this variant has only instruct training without thinking mode support."
+    }
+  ]
+}

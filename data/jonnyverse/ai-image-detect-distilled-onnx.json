@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/ai-image-detect-distilled-ONNX",
+  "slug": "jonnyverse-ai-image-detect-distilled-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/ai-image-detect-distilled-ONNX",
+  "created_at": "2026-08-24T16:13:17.000Z",
+  "updated_at": "2026-08-24T16:13:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vit",
+    "image-classification",
+    "pytorch",
+    "ViT",
+    "transformers",
+    "real-fake-detection",
+    "deep-fake",
+    "ai-detect",
+    "ai-image-detection",
+    "base_model:jacoballessio/ai-image-detect-distilled",
+    "base_model:quantized:jacoballessio/ai-image-detect-distilled",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147531295,
+  "storage_human": "148 MB",
+  "base_model": "jacoballessio/ai-image-detect-distilled",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": null,
+      "metric": null,
+      "value": 0.74
+    }
+  ],
+  "sources": [
+    {
+      "title": "onnx-community/ai-image-detect-distilled-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/ai-image-detect-distilled-ONNX",
+      "snippet": "This approach ensured real and AI-generated images were as similar as possible, differing only in their origin. The three models were then distilled into a small ViT model with 11.8 Million Parameters, combining their learned features for more efficient detection."
+    },
+    {
+      "title": "ai-image-detect-distilled (ONNX) - Models",
+      "url": "https://www.modelscope.cn/models/onnx-community/ai-image-detect-distilled-ONNX",
+      "snippet": "This approach ensured real and AI-generated images were as similar as possible, differing only in their origin. The three models were then distilled into a small ViT model with 11.8 Million Parameters, combining their learned features for more efficient detection."
+    },
+    {
+      "title": "onnx/model_q4.onnx · onnx-community/ai-image-detect-distilled-ONNX at main",
+      "url": "https://huggingface.co/onnx-community/ai-image-detect-distilled-ONNX/blame/main/onnx/model_q4.onnx",
+      "snippet": "Instructions to use onnx-community/ai-image-detect-distilled-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "onnx-community/ai-image-detect-distilled-ONNX - ONNX 模型库",
+      "url": "https://onnx.bimant.com/models/onnx-community/ai-image-detect-distilled-ONNX",
+      "snippet": "创建时间: 2026-03-04 22:27:07+00:00 更新时间: 2026-03-04 22:27:10+00:00 在 Hugging Face 上查看"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}
