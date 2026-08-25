@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Fisher-Wang/lingbot-vla-v2-6b-libero-goal",
+  "slug": "fisher-wang-lingbot-vla-v2-6b-libero-goal",
+  "author": "Fisher-Wang",
+  "url": "https://huggingface.co/Fisher-Wang/lingbot-vla-v2-6b-libero-goal",
+  "created_at": "2026-08-25T11:25:28.000Z",
+  "updated_at": "2026-08-25T11:42:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vision-language-action",
+    "lingbot-vla-v2",
+    "libero",
+    "dataset:lerobot/libero",
+    "base_model:robbyant/lingbot-vla-v2-6b",
+    "base_model:finetune:robbyant/lingbot-vla-v2-6b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25516511141,
+  "storage_human": "25.5 GB",
+  "base_model": "robbyant/lingbot-vla-v2-6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Robbyant/lingbot-vla-v2: From Foundation to Application",
+      "url": "https://github.com/Robbyant/lingbot-vla-v2",
+      "snippet": "LingBot-VLA 2.0 is a practical Vision-Language-Action foundation model designed to move from large-scale pre-training toward reliable real-world robot applications. Compared with LingBot-VLA 1.0, LingBot-VLA 2.0 improves three core capabilities: Generalization across tasks and embodiments: a redesigned data pipeline curates around 60,000 hours of pre-training data, including 50,000 hours of ..."
+    },
+    {
+      "title": "openroboto-ai/lingbot-vla-v2-6b-libero-goal7 · Hugging Face",
+      "url": "https://huggingface.co/openroboto-ai/lingbot-vla-v2-6b-libero-goal7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-vla: A Pragmatic VLA Foundation Model",
+      "url": "https://github.com/Robbyant/lingbot-vla",
+      "snippet": "A Pragmatic VLA Foundation Model. Contribute to Robbyant/lingbot-vla development by creating an account on GitHub."
+    },
+    {
+      "title": "From Foundation to Application: Improving VLA Models in Practice",
+      "url": "https://arxiv.org/abs/2607.06403",
+      "snippet": "Despite recent progress of VLA foundation models, the disparity between laboratory conditions and real-world applications continues to impede their practical implementation. To bridge this gap, we present LingBot-VLA 2.0, which advances LingBot-VLA through improvements in three functional domains. (1) Generalization across tasks and embodiments. Compared to the previous version, we revamp the ..."
+    },
+    {
+      "title": "LingBot VLA v2 6B: An Open, Ascend-Ready Vision-Language-Action Model ...",
+      "url": "https://aichina.news/blog/lingbot-vla-v2-6b-an-open-ascend-ready-vision-language-action-model-w72b96/",
+      "snippet": "LingBot VLA v2 6B, newly hosted on Modelers.cn, offers a different path. It&#x27;s an open-source, 6B-parameter model that takes image input and language instructions directly to executable robot actions — and it&#x27;s designed with the Huawei/Ascend ecosystem in mind. What makes LingBot VLA v2 worth a look is its focus on practicality."
+    }
+  ]
+}

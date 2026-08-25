@@ -33,11 +33,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 3468838944,
   "parameters_human": "3.47B",
-  "storage_bytes": 26210255079,
+  "storage_bytes": 26204819534,
   "storage_human": "26.2 GB",
   "base_model": "OEvortex/PixelGen",
   "formats": [

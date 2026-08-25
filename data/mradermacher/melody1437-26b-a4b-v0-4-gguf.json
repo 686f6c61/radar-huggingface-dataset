@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Melody1437-26B-A4B-v0.4-GGUF",
+  "slug": "mradermacher-melody1437-26b-a4b-v0-4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Melody1437-26B-A4B-v0.4-GGUF",
+  "created_at": "2026-08-25T08:26:33.000Z",
+  "updated_at": "2026-08-25T09:31:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "explicit",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Melody1437-26B-A4B-v0.4",
+    "base_model:quantized:ReadyArt/Melody1437-26B-A4B-v0.4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858381056,
+  "storage_human": "184.9 GB",
+  "base_model": "ReadyArt/Melody1437-26B-A4B-v0.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Melody1437-26B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF",
+      "snippet": "mradermacher / Melody1437-26B-A4B-GGUF like 0 Transformers GGUF English gemma-4 roleplay conversational instruct apache-2.0 nsfw explicit erp adult-content mature unaligned License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Melody1437-26B-A4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Melody1437-26B-A4B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deploying Gemma 4 26B A4B on an RTX 5090",
+      "url": "https://pub.towardsai.net/deploying-gemma-4-26b-a4b-on-an-rtx-5090-69dacb0c116d",
+      "snippet": "Gemma 4 26B A4B is an MoE model: 26B total params but only 4B active per token. That combination suits decode-heavy workloads on a single consumer GPU — you get the capability of a 26B model with the memory bandwidth cost of a 4B model during generation. Benchmarks put it competitive with 30B+ dense models on coding and reasoning tasks."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s new family of open models, including 12B, E2B, E4B, 26B-A4B, and 31B. The multimodal, hybrid-thinking models support 140+ languages, up to 256K context, and have dense and MoE variants."
+    }
+  ]
+}

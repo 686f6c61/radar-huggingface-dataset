@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a1-badmed-seed1",
+  "slug": "artht-llama8b-a1-badmed-seed1",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a1-badmed-seed1",
+  "created_at": "2026-08-25T05:15:14.000Z",
+  "updated_at": "2026-08-25T05:28:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523757692,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a1-badmed-seed1 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a1-badmed-seed1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "API Example using curl: ... API documentation Model variants Instruct is fine-tuned for chat/dialogue use cases. Example: ollama run llama3 ollama run llama3:70b Pre-trained is the base model. Example: ollama run llama3:text ollama run llama3:70b-text References Introducing Meta Llama 3: The most capable openly available LLM to date"
+    }
+  ]
+}

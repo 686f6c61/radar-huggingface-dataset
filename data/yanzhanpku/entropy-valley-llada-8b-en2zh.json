@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "YanZhanPKU/Entropy-Valley-LLaDA-8B-En2Zh",
+  "slug": "yanzhanpku-entropy-valley-llada-8b-en2zh",
+  "author": "YanZhanPKU",
+  "url": "https://huggingface.co/YanZhanPKU/Entropy-Valley-LLaDA-8B-En2Zh",
+  "created_at": "2026-08-21T15:51:18.000Z",
+  "updated_at": "2026-08-25T09:33:01.000Z",
+  "license": "llada-8b-base-license",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "entropy-valley",
+    "translation",
+    "machine-translation",
+    "masked-diffusion",
+    "diffusion-language-model",
+    "llada",
+    "lora",
+    "arxiv:2608.22274",
+    "en",
+    "zh",
+    "dataset:YanZhanPKU/Entropy-Valley-Datasets",
+    "base_model:GSAI-ML/LLaDA-8B-Base",
+    "base_model:adapter:GSAI-ML/LLaDA-8B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 637456776,
+  "storage_human": "637 MB",
+  "base_model": "GSAI-ML/LLaDA-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entropy-Valley - a YanZhanPKU Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/YanZhanPKU/entropy-valley",
+      "snippet": "Note Zh->En LoRA adapter on LLaDA-8B-Base. EV closes 65.3% of the gap; strongest human evidence (Adequacy +0.50)."
+    },
+    {
+      "title": "YanZhanPKU/LaDiT-LLaDA-8B-Zh2En · Hugging Face",
+      "url": "https://huggingface.co/YanZhanPKU/LaDiT-LLaDA-8B-Zh2En",
+      "snippet": "YanZhanPKU / LaDiT-LLaDA-8B-Zh2En like 0 Translation PEFT Safetensors YanZhanPKU/Entropy-Valley-Datasets Chinese English machine-translation masked-diffusion diffusion-language-model llada lora License:llada-8b-base-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Entropy-Valley/Entropy-Valley: [EMNLP 2026] Length-Adaptive ...",
+      "url": "https://github.com/Entropy-Valley/Entropy-Valley",
+      "snippet": "💡 Overview Masked diffusion language models (LLaDA, Dream, DiffuLLaMA, …) decode by filling a fixed-size canvas. Unlike an autoregressive decoder, which generates until it emits EOS, a masked diffusion decoder must be told how many target slots to fill before denoising begins."
+    },
+    {
+      "title": "Entropy-Valley/README.md at main - GitHub",
+      "url": "https://github.com/Entropy-Valley/Entropy-Valley/blob/main/README.md",
+      "snippet": "💡 Overview Masked diffusion language models (LLaDA, Dream, DiffuLLaMA, …) decode by filling a fixed-size canvas. Unlike an autoregressive decoder, which generates until it emits EOS, a masked diffusion decoder must be told how many target slots to fill before denoising begins."
+    },
+    {
+      "title": "[2502.09992] Large Language Diffusion Models",
+      "url": "https://ar5iv.labs.arxiv.org/html/2502.09992",
+      "snippet": "The LLaDA 8B model undergoes SFT on a dataset comprising 4.5 million pairs. Consistent with the pre-training process, both data preparation and training follow the SFT protocols utilized in existing LLMs (Chu et al. 2024; Yang et al. 2024), without introducing any additional techniques to optimize LLaDA&#x27;s performance."
+    }
+  ]
+}

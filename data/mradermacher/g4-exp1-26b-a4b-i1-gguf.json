@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/G4-Exp1-26B-A4B-i1-GGUF",
   "created_at": "2026-08-24T08:18:21.000Z",
-  "updated_at": "2026-08-24T09:15:11.000Z",
+  "updated_at": "2026-08-24T10:46:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 137463671264,
-  "storage_human": "137.5 GB",
+  "storage_bytes": 300893951456,
+  "storage_human": "300.9 GB",
   "base_model": "gepardzik/G4-Exp1-26B-A4B",
   "formats": [
     "gguf"

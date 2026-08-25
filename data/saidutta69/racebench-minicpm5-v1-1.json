@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "saidutta69/RaceBench-MiniCPM5-v1.1",
+  "slug": "saidutta69-racebench-minicpm5-v1-1",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/RaceBench-MiniCPM5-v1.1",
+  "created_at": "2026-08-25T09:42:32.000Z",
+  "updated_at": "2026-08-25T09:45:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "racebench",
+    "sft",
+    "full-finetune",
+    "conversational",
+    "dataset:saidutta69/RaceBench-v1.1",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2161290944,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saidutta69/RaceBench-MiniCPM5-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/saidutta69/RaceBench-MiniCPM5-v1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "saidutta69/RaceBench-MiniCPM5-heretic · Hugging Face",
+      "url": "https://huggingface.co/saidutta69/RaceBench-MiniCPM5-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RaceBench-MiniCPM5-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/saidutta69/RaceBench-MiniCPM5-heretic",
+      "snippet": "Run RaceBench-MiniCPM5-heretic with FriendliAI inference. A decensored variant of saidutta69/RaceBench-MiniCPM5, produced with Heretic v1.4.0 (directional…"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
+    },
+    {
+      "title": "【全52問】hf.co/saidutta69/RaceBench-MiniCPM5-heretic 全 ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=sUelr7Ma5gc",
+      "snippet": "Future Craft Lab 公開実験室、所長の電霞リリです。ローカルLLMの全Phase ガチ実走 + 当事者目線レビューを毎週お届け。 Future Craft Lab とはローカルLLM ..."
+    }
+  ]
+}

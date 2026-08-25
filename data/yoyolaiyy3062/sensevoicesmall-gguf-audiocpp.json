@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "yoyolaiyy3062/SenseVoiceSmall-GGUF-audiocpp",
+  "slug": "yoyolaiyy3062-sensevoicesmall-gguf-audiocpp",
+  "author": "yoyolaiyy3062",
+  "url": "https://huggingface.co/yoyolaiyy3062/SenseVoiceSmall-GGUF-audiocpp",
+  "created_at": "2026-08-25T10:18:41.000Z",
+  "updated_at": "2026-08-25T10:18:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en",
+    "yue",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "automatic-speech-recognition",
+    "asr",
+    "sensevoice",
+    "funasr",
+    "audio.cpp",
+    "ggml",
+    "cpu",
+    "zh",
+    "en",
+    "yue",
+    "ja",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 233999728,
+  "parameters_human": "234.0M",
+  "storage_bytes": 254211200,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FunAudioLLM/SenseVoiceSmall-GGUF · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FunAudioLLM/SenseVoiceSmall-GGUF-audiocpp · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall-GGUF-audiocpp",
+      "snippet": "SenseVoiceSmall GGUF for audio.cpp This repository contains a self-contained Q8_0 export of SenseVoiceSmall for the audio.cpp spec-backed runtime. The GGUF embeds the sense_asr schema-v1 model specification, SenseVoice metadata, SentencePiece vocabulary, CMVN tensors, and 919 model tensors. It loads directly without --model-spec-override."
+    },
+    {
+      "title": "GitHub - 0xShug0/audio.cpp: An all-in-one, pure C++ inference engine ...",
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "snippet": "This release is a major GGUF-first usability pass. The WebUI now uses model-spec package links for downloads, prefers standalone GGUF packages when available, and handles more models directly from the normal UI flow. New schema-v1 specs make model options, packages, metadata, and UI-facing behavior much easier to keep in sync."
+    },
+    {
+      "title": "SenseVoiceSmall-gguf · Model · Inferix",
+      "url": "https://inferix.co/models/handy-computer/SenseVoiceSmall-gguf",
+      "snippet": "2024/7: The SenseVoice-Small voice understanding model is open-sourced, which offers high-precision multilingual speech recognition, emotion recognition, and audio event detection capabilities for Mandarin, Cantonese, English, Japanese, and Korean and leads to exceptionally low inference latency."
+    },
+    {
+      "title": "SenseVoice/runtime/llama.cpp at main - GitHub",
+      "url": "https://github.com/QwenAudio/SenseVoice/tree/main/runtime/llama.cpp",
+      "snippet": "Open-source SenseVoiceSmall model for Mandarin, Cantonese, English, Japanese, and Korean ASR, language ID, emotion recognition, and audio event detection. - SenseVoice/runtime/llama.cpp at main · QwenAudio/SenseVoice"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pthennakoon25/skinvision-ai-model",
+  "slug": "pthennakoon25-skinvision-ai-model",
+  "author": "pthennakoon25",
+  "url": "https://huggingface.co/pthennakoon25/skinvision-ai-model",
+  "created_at": "2026-08-25T11:46:42.000Z",
+  "updated_at": "2026-08-25T11:47:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "skin-lesion",
+    "medical-imaging",
+    "efficientnet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16362937,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vanshul04/Skinvison: SkinVision AI is a modern AI-powered web ...",
+      "url": "https://github.com/vanshul04/Skinvison",
+      "snippet": "SkinVision AI - Clinical Skin Lesion Intelligence Platform SkinVision AI is a modern AI-powered web application for skin lesion analysis, risk assessment, and patient care support. It combines deep learning, medical-inspired UI, and interactive analytics to provide an intuitive platform for demonstrating AI-assisted dermatology workflows."
+    },
+    {
+      "title": "SkinVision (SkinVisionAI) - Hugging Face",
+      "url": "https://huggingface.co/SkinVision",
+      "snippet": "User profile of SkinVisionAI on Hugging Face Skin Disease Model 🏆 SkinVision Mar 28"
+    },
+    {
+      "title": "GitHub - kerolosnesim1/SkinVision: AI-powered dermatology platform for ...",
+      "url": "https://github.com/kerolosnesim1/SkinVision/blob/master/",
+      "snippet": "AI Model SkinVision uses a multimodal EfficientNet-B3 model trained on the ISIC 2019 dataset (~25k dermoscopy images across 9 diagnostic classes). The model combines:"
+    },
+    {
+      "title": "SkinVision | Skin Cancer Detection App",
+      "url": "https://www.skinvision.com/",
+      "snippet": "SkinVision provides accurate and timely skin cancer detection, along with the most reliable personalised skin health advice and health path recommendation."
+    },
+    {
+      "title": "SkinVision AI ️ - a Hugging Face Space by dheraingoud",
+      "url": "https://huggingface.co/spaces/dheraingoud/skinvision-ai",
+      "snippet": "Upload a photo of your skin to get an instant analysis for signs of skin cancer. Receive easy-to-understand results and recommendations for next steps."
+    }
+  ]
+}

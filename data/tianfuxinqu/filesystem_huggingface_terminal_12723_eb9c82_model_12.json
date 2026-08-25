@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_12",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_eb9c82_model_12",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_12",
+  "created_at": "2026-08-25T09:20:01.000Z",
+  "updated_at": "2026-08-25T09:24:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_github_5092_support_report ...",
+      "url": "https://huggingface.co/spaces/TianfuXinqu/filesystem_huggingface_terminal_github_5092_support_report_87e4e747/tree/main",
+      "snippet": "TianfuXinqu publish support performance report 35351b2 verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md Safe 418 Bytespublish support performance reportabout 6 hours ago company_logo.png Safe 314 Bytespublish support performance reportabout 6 hours ago index.html Safe 546 Bytesinitial commitabout 6 ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Add a Custom Model - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/guide/configuration/custom-models/",
+      "snippet": "Add a Custom Model This guide explains every supported way to add a custom model to Lemonade Server. Start with the CLI workflows below unless you specifically need to hand-edit user_models.json or recipe_options.json. Choose a Workflow Pull from Hugging Face or ModelScope A source-less pull uses the server&#x27;s configured default_model_source (shipped default: Hugging Face), so existing commands ..."
+    },
+    {
+      "title": "Critical Hugging Face Transformers Vulnerability Enables Remote Code ...",
+      "url": "https://cybersecuritynews.com/hugging-face-rce-vulnerability/",
+      "snippet": "A newly disclosed critical vulnerability in the HuggingFace Transformers library, tracked as CVE-2026-4372, allows attackers to achieve remote code execution (RCE) through malicious model configuration files."
+    },
+    {
+      "title": "Cannot use Hugging Face cache on a read-only filesystem",
+      "url": "https://discuss.huggingface.co/t/cannot-use-hugging-face-cache-on-a-read-only-filesystem/137622",
+      "snippet": "Hello, I&#x27;m having some trouble with getting the huggingface cache to work for my particular use case. I&#x27;ve been setting up kubernetes training for my transformer models, and the way it works is that pods are initialized from a docker image and then I mount a persistent disk with the data. Since pods are initialized from a docker image, any other files relevant for training (e.g. the ..."
+    }
+  ]
+}

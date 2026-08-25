@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Kiwen1.1-27B-i1-GGUF",
   "created_at": "2026-08-24T08:56:28.000Z",
-  "updated_at": "2026-08-24T10:02:48.000Z",
+  "updated_at": "2026-08-24T12:17:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471868768,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553884736,
+  "storage_human": "218.6 GB",
   "base_model": "beyoru/Kiwen1.1-27B",
   "formats": [
     "gguf"

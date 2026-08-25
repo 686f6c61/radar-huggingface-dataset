@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RainbowLIght/tidewatcher-macbert-c2",
+  "slug": "rainbowlight-tidewatcher-macbert-c2",
+  "author": "RainbowLIght",
+  "url": "https://huggingface.co/RainbowLIght/tidewatcher-macbert-c2",
+  "created_at": "2026-08-25T09:59:19.000Z",
+  "updated_at": "2026-08-25T10:15:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102269186,
+  "parameters_human": "102.3M",
+  "storage_bytes": 512254607,
+  "storage_human": "512 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "miaaiart/rainbow-light · Hugging Face",
+      "url": "https://huggingface.co/miaaiart/rainbow-light",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ymcui/MacBERT: Revisiting Pre-trained Models for Chinese ...",
+      "url": "https://github.com/ymcui/MacBERT",
+      "snippet": "简体中文 | English 本目录包含**MacBERT预训练模型**，该模型引入了一种纠错型掩码语言模型（Mac）预训练任务，缓解了\"预训练-下游任务\"不一致的问题。 MacBERT在多种NLP任务上取得了显著性能提升。 Revisiting Pre-trained Models for Chinese Natural Language Processing"
+    },
+    {
+      "title": "TideWatcher - GitHub",
+      "url": "https://github.com/TideWatcher/",
+      "snippet": "观万象潮起，谋时代局中。 Charting the Tides, Mastering the Game. - TideWatcher"
+    },
+    {
+      "title": "hfl/chinese-macbert-base · Hugging Face",
+      "url": "https://huggingface.co/hfl/chinese-macbert-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Promptware-Powered Command and Control (Promptware C2) — AI Threat Atlas",
+      "url": "https://threatatlas.ai/technique/promptware-c2",
+      "snippet": "For a threat model on LLM-based malware: describe a promptware C2 attack where AI-generated content serves as a covert command-and-control channel. How are [TARGET_BEHAVIOR] commands steganographically embedded in LLM outputs that appear benign to human reviewers?"
+    }
+  ]
+}

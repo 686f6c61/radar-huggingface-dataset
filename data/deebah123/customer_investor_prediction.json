@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "deebah123/Customer_Investor_Prediction",
+  "slug": "deebah123-customer_investor_prediction",
+  "author": "deebah123",
+  "url": "https://huggingface.co/deebah123/Customer_Investor_Prediction",
+  "created_at": "2026-08-25T09:08:31.000Z",
+  "updated_at": "2026-08-25T09:10:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tabular-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4417,
+  "storage_human": "4417 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deebah123 (Abdimujib Diba) - Hugging Face",
+      "url": "https://huggingface.co/deebah123",
+      "snippet": "Textsentimentanalyzer 🐠 Analyze student course evaluations to identify topics and sentiments deebah123 Jan 27"
+    },
+    {
+      "title": "GitHub - Deebahz/marketparticipationpredictionmodel: A colab notebook ...",
+      "url": "https://github.com/Deebahz/marketparticipationpredictionmodel",
+      "snippet": "A colab notebook where I create a prediction model for bank customers to see if they are willing to invest on registration. This is useful in the banking industry for purposes of marketing investment products in a bank."
+    },
+    {
+      "title": "GitHub - Kanan-Bedi/User-Transaction-Forecasting: This project develops ...",
+      "url": "https://github.com/Kanan-Bedi/User-Transaction-Forecasting",
+      "snippet": "Data preprocessing to prepare historical data for model training. Feature engineering to extract relevant information from transaction data. Model training to develop a forecasting model using historical data. Prediction of future transactions based on the trained model. User interface for uploading data and viewing forecasts."
+    },
+    {
+      "title": "Customer Model AI: Stop Wasting Marketing $$$ On Guesswork.",
+      "url": "https://customermodel.ai/",
+      "snippet": "Customer Model AI combines your data with enterprise consumer data and AI to instantly build a complete customer model. Each model reveals who your customers are, how they behave, and what motivates them, demographics, behaviors, interests, and lifestyle attributes structured into a clear, usable profile."
+    },
+    {
+      "title": "Create and manage predictions - Dynamics 365 Customer Insights",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-insights/data/predictions",
+      "snippet": "Create, refresh, and manage AI-powered predictions in Dynamics 365 Customer Insights - Data using out-of-box models like churn and lifetime value."
+    }
+  ]
+}

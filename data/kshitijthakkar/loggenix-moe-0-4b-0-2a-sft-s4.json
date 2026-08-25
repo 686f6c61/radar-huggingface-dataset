@@ -5,7 +5,7 @@
   "author": "kshitijthakkar",
   "url": "https://huggingface.co/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4",
   "created_at": "2026-03-06T08:00:51.000Z",
-  "updated_at": "2026-08-24T04:20:50.000Z",
+  "updated_at": "2026-08-25T07:30:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 359,
   "trending_score": 0,
   "parameters": 390051840,
   "parameters_human": "390.1M",

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Nexus-32B-v2.0-GGUF",
+  "slug": "mradermacher-dark-nexus-32b-v2-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Nexus-32B-v2.0-GGUF",
+  "created_at": "2026-08-25T05:12:42.000Z",
+  "updated_at": "2026-08-25T08:25:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Dark-Nexus-32B-v2.0",
+    "base_model:quantized:ReadyArt/Dark-Nexus-32B-v2.0",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 160271587072,
+  "storage_human": "160.3 GB",
+  "base_model": "ReadyArt/Dark-Nexus-32B-v2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Dark-Nexus-32B-v2.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dark-Nexus-32B-v2.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Dark-Nexus-32B-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Nexus-32B-v2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Dark-Nexus-32B-v2.0-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/readyart-dark-nexus-32b-v2-0-gguf",
+      "snippet": "Dark-Nexus-32B-v2.-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Dark-Nexus-32B-v2.-GGUF on GitHub to install."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

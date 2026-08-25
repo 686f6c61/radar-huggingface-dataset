@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "junn0103/turbovla-so101-pen-basket",
+  "slug": "junn0103-turbovla-so101-pen-basket",
+  "author": "junn0103",
+  "url": "https://huggingface.co/junn0103/turbovla-so101-pen-basket",
+  "created_at": "2026-08-25T05:05:15.000Z",
+  "updated_at": "2026-08-25T05:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "turbovla",
+    "so101",
+    "imitation-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 210221318,
+  "parameters_human": "210.2M",
+  "storage_bytes": 840993072,
+  "storage_human": "841 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junn0103/turbovla-so101-pen-basket · Hugging Face",
+      "url": "https://huggingface.co/junn0103/turbovla-so101-pen-basket",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "junn0103/turbovla-so101-pen-basket at main - Hugging Face",
+      "url": "https://huggingface.co/junn0103/turbovla-so101-pen-basket/tree/main",
+      "snippet": "Ctrl+K 1 contributor History:2 commits junn0103 TurboVLA SO-101 pen-to-basket, step 80000 ee73ee7 verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commitabout 3 hours ago README.md 1.27 kBTurboVLA SO-101 pen-to-basket, step 80000about 3 hours ago config.json 1.71 kBTurboVLA SO-101 pen-to-basket, step 80000about 3 hours ago model ..."
+    },
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "Standard Open Arm 100. Contribute to TheRobotStudio/SO-ARM100 development by creating an account on GitHub."
+    },
+    {
+      "title": "Papers with Code — Trending research and open source",
+      "url": "https://paperswithcode.co/",
+      "snippet": "Trending AI research papers with code, datasets, methods, and evaluation leaderboards."
+    },
+    {
+      "title": "GitHub - isaac-sim/Sim-to-Real-SO-101-Workshop: This code supports ...",
+      "url": "https://github.com/isaac-sim/Sim-to-Real-SO-101-Workshop",
+      "snippet": "This code supports learning content to demonstrate an end-to-end Physical AI workflow with the SO-101 robot, Isaac Lab, and Isaac GR00T. - isaac-sim/Sim-to-Real-SO-101-Workshop"
+    }
+  ]
+}

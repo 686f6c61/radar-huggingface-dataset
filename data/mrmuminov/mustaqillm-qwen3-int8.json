@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "mrmuminov/MustaqiLLM-Qwen3-INT8",
+  "slug": "mrmuminov-mustaqillm-qwen3-int8",
+  "author": "mrmuminov",
+  "url": "https://huggingface.co/mrmuminov/MustaqiLLM-Qwen3-INT8",
+  "created_at": "2026-08-25T09:26:50.000Z",
+  "updated_at": "2026-08-25T09:33:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "uz",
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "uzbek",
+    "o'zbek",
+    "russian",
+    "english",
+    "chat",
+    "instruction-tuned",
+    "conversational",
+    "vllm",
+    "sglang",
+    "uz",
+    "en",
+    "ru",
+    "base_model:NeuronUz/MustaqiLLM",
+    "base_model:quantized:NeuronUz/MustaqiLLM",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5166735872,
+  "parameters_human": "5.17B",
+  "storage_bytes": 5513393984,
+  "storage_human": "5.5 GB",
+  "base_model": "NeuronUz/MustaqiLLM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuantTrio/Qwen3-235B-A22B-GPTQ-Int8 · Hugging Face",
+      "url": "https://huggingface.co/QuantTrio/Qwen3-235B-A22B-GPTQ-Int8",
+      "snippet": "Instructions to use QuantTrio/Qwen3-235B-A22B-GPTQ-Int8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Local AppsSettings vLLM How to use QuantTrio/Qwen3-235B-A22B-GPTQ-Int8 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B-GPTQ-Int8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "PDF Qwen3 Highlights - NVIDIA Developer",
+      "url": "https://developer.nvidia.com/downloads/assets/ace/model_card/qwen3-8b-instruct.pdf",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless switching between thinking ..."
+    }
+  ]
+}

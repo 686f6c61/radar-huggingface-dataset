@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/ArmorOCR",
+  "slug": "inclusionai-armorocr",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/ArmorOCR",
+  "created_at": "2026-08-20T10:54:31.000Z",
+  "updated_at": "2026-08-24T07:41:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "ocr",
+    "multimodal",
+    "vision-language",
+    "adversarial ocr",
+    "grounded ocr",
+    "qwen3-vl",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2608.20122",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 195,
+  "trending_score": 9,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762142,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/ArmorOCR · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/ArmorOCR",
+      "snippet": "inclusionAI / ArmorOCR like 4 Follow inclusionAI 2.7k License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "inclusionAI/ArmorOCR at main - Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/ArmorOCR/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inclusion Ai",
+      "url": "https://www.inclusion-ai.org/",
+      "snippet": "With researchers formerly at OpenAI, Google and FAIR (Meta AI) and a strong engineering team, we take bold moves and understand it would take dedicated effort from researchers, engineers and product builders to work together in an inspirational and supportive team."
+    },
+    {
+      "title": "GitHub - Ikracs/ArmorOCR: official repository of **ArmorOCR**",
+      "url": "https://github.com/Ikracs/ArmorOCR",
+      "snippet": "This is the official inference code of ArmorOCR, a two-stage framework for grounded adversarial OCR perception via observation-transferred self-distillation and reward-driven refinement. ArmorOCR is built on Qwen3-VL-8B-Instruct and enables single-pass inference on the original image, without any inference-time visual transformations or tool assistance."
+    },
+    {
+      "title": "Model - INCLUSION AI",
+      "url": "https://www.inclusion-ai.org/model/",
+      "snippet": "Model From foundation language models to unified multimodal perception and generation — open-source and built for everyone."
+    }
+  ]
+}

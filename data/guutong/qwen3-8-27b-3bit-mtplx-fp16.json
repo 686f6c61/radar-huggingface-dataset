@@ -5,7 +5,7 @@
   "author": "guutong",
   "url": "https://huggingface.co/guutong/Qwen3.8-27B-3bit-MTPLX-FP16",
   "created_at": "2026-08-23T11:15:36.000Z",
-  "updated_at": "2026-08-23T11:25:06.000Z",
+  "updated_at": "2026-08-24T13:53:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 4665462000,
   "parameters_human": "4.67B",

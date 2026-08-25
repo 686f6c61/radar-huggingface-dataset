@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "memgui-agent-anonymous/MemGUI-8B-SFT",
+  "slug": "memgui-agent-anonymous-memgui-8b-sft",
+  "author": "memgui-agent-anonymous",
+  "url": "https://huggingface.co/memgui-agent-anonymous/MemGUI-8B-SFT",
+  "created_at": "2026-08-25T09:24:48.000Z",
+  "updated_at": "2026-08-25T00:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "gui-agent",
+    "mobile-gui",
+    "android",
+    "memory",
+    "context-management",
+    "conact",
+    "memgui-agent",
+    "long-horizon",
+    "conversational",
+    "en",
+    "dataset:memgui-agent-anonymous/MemGUI-3K",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762142,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Long-horizon mobile GUI control",
+      "dataset": "MemGUI-Bench",
+      "metric": "Pass@1",
+      "value": 23.4
+    },
+    {
+      "task": "Long-horizon mobile GUI control",
+      "dataset": "MemGUI-Bench",
+      "metric": "Pass@3",
+      "value": 35.9
+    },
+    {
+      "task": "Long-horizon mobile GUI control",
+      "dataset": "MemGUI-Bench",
+      "metric": "Information Retention Rate",
+      "value": 30.2
+    },
+    {
+      "task": "Out-of-distribution mobile GUI control",
+      "dataset": "MobileWorld GUI-Only",
+      "metric": "Success Rate",
+      "value": 17.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "lgy0404/MemGUI-8B-SFT · Hugging Face",
+      "url": "https://huggingface.co/lgy0404/MemGUI-8B-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MemGUI-Agent",
+      "url": "https://memgui-agent.github.io/",
+      "snippet": "MemGUI-Agent uses ConAct, a Context-as-Action interface that folds action history, updates UI memory, and emits the next GUI action in one structured response."
+    },
+    {
+      "title": "GitHub - lgy0404/MemGUI-Agent",
+      "url": "https://github.com/lgy0404/MemGUI-Agent",
+      "snippet": "MemGUI-Agent updates folded history, UI memory, and recent step records while producing the next GUI action. We evaluate both a zero-shot 235B ConAct agent with unchanged backbone weights and MemGUI-8B-SFT, an 8B agent trained on MemGUI-3K."
+    },
+    {
+      "title": "MemGUI-Agent: An End-to-End Long-Horizon Mobile GUI Agent with ...",
+      "url": "https://arxiv.org/abs/2606.19926",
+      "snippet": "Training an 8B model on MemGUI-3K produces MemGUI-8B-SFT, an 8B MemGUI-Agent that achieves the best open-data 8B performance on MemGUI-Bench and generalizes to the out-of-distribution MobileWorld benchmark. Code, data, and trained models will be released at this https URL."
+    },
+    {
+      "title": "GitHub - kwai/MemGUI-Agent: Official code for \"MemGUI-Agent: An End-to ...",
+      "url": "https://github.com/kwai/MemGUI-Agent",
+      "snippet": "MemGUI-Agent updates folded history, UI memory, and recent step records while producing the next GUI action. We evaluate both a zero-shot 235B ConAct agent with unchanged backbone weights and MemGUI-8B-SFT, an 8B agent trained on MemGUI-3K."
+    }
+  ]
+}

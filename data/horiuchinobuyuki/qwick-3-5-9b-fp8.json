@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "horiuchinobuyuki/Qwick-3.5-9B-FP8",
+  "slug": "horiuchinobuyuki-qwick-3-5-9b-fp8",
+  "author": "horiuchinobuyuki",
+  "url": "https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-FP8",
+  "created_at": "2026-08-25T03:42:25.000Z",
+  "updated_at": "2026-08-25T03:44:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "reasoning",
+    "efficient-thinking",
+    "modelopt",
+    "fp8",
+    "text-evaluated",
+    "vision-validation-evaluated",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "base_model:horiuchinobuyuki/Qwick-3.5-9B",
+    "base_model:quantized:horiuchinobuyuki/Qwick-3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11927545797,
+  "storage_human": "11.9 GB",
+  "base_model": "horiuchinobuyuki/Qwick-3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hyper-AI/Qwen3.5-9B-fp8 · Hugging Face",
+      "url": "https://huggingface.co/Hyper-AI/Qwen3.5-9B-fp8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5 dense multimodal model (9B) with gated delta networks hybrid attention, MTP, and 262K context"
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    }
+  ]
+}

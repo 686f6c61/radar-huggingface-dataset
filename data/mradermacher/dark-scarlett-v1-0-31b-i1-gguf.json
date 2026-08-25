@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-31B-i1-GGUF",
   "created_at": "2026-08-24T12:42:41.000Z",
-  "updated_at": "2026-08-24T13:33:32.000Z",
+  "updated_at": "2026-08-24T14:32:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 184162416096,
-  "storage_human": "184.2 GB",
+  "storage_bytes": 334809562336,
+  "storage_human": "334.8 GB",
   "base_model": "ReadyArt/Dark-Scarlett-v1.0-31B",
   "formats": [
     "gguf"

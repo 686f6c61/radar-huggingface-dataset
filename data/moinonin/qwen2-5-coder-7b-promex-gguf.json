@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "moinonin/qwen2.5-coder-7b-promex-gguf",
+  "slug": "moinonin-qwen2-5-coder-7b-promex-gguf",
+  "author": "moinonin",
+  "url": "https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-gguf",
+  "created_at": "2026-08-25T01:51:29.000Z",
+  "updated_at": "2026-08-25T05:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "unsloth",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "unsloth",
+    "gguf",
+    "spec-forge",
+    "command-runway",
+    "qwen2.5-coder",
+    "lora",
+    "code-generation",
+    "yaml",
+    "text-generation",
+    "en",
+    "dataset:githeri/spec-forge-training-data",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 18226430048,
+  "storage_human": "18.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moinonin/qwen2.5-coder-7b-promex-lora · Hugging Face",
+      "url": "https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen2.5 Coder 7b Promex - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/moinonin/qwen2.5-coder-7b-promex",
+      "snippet": "Registry entry for model Qwen2.5 Coder 7b Promex; source metadata pending."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

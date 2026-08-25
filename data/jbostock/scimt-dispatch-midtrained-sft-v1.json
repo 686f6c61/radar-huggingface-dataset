@@ -5,7 +5,7 @@
   "author": "jbostock",
   "url": "https://huggingface.co/jbostock/scimt-dispatch-midtrained-sft-v1",
   "created_at": "2026-08-08T09:29:27.000Z",
-  "updated_at": "2026-08-16T18:11:26.000Z",
+  "updated_at": "2026-08-25T00:52:05.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1055575741015,
-  "storage_human": "1055.6 GB",
+  "storage_bytes": 1161129983035,
+  "storage_human": "1161.1 GB",
   "base_model": "unsloth/gemma-3-12b-pt",
   "formats": [
     "safetensors"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xedro98/quantization-as-a-transfer-constraint",
+  "slug": "xedro98-quantization-as-a-transfer-constraint",
+  "author": "xedro98",
+  "url": "https://huggingface.co/xedro98/quantization-as-a-transfer-constraint",
+  "created_at": "2026-08-25T03:54:27.000Z",
+  "updated_at": "2026-08-25T03:54:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "muP",
+    "zero-shot-transfer",
+    "hyperparameter-transfer",
+    "quantization",
+    "low-precision",
+    "muTransfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 967376,
+  "storage_human": "967376 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Quantization: Concepts, Methods, and Why It Matters",
+      "url": "https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/",
+      "snippet": "As AI models—especially generative AI models—grow in size and computational demands, quantization addresses challenges such as memory usage, inference speed, and energy consumption by reducing the precision of model parameters (weights and/or activations), e.g., from FP32 precision to FP8 precision."
+    },
+    {
+      "title": "GitHub - Zhen-Dong/Awesome-Quantization-Papers: List of papers related ...",
+      "url": "https://github.com/Zhen-Dong/Awesome-Quantization-Papers",
+      "snippet": "List of papers related to neural network quantization in recent AI conferences and journals. - Zhen-Dong/Awesome-Quantization-Papers"
+    },
+    {
+      "title": "AI Model Compression-Quantization and Dequantization Explained with ...",
+      "url": "https://medium.com/@0chandansharma/quantization-and-dequantization-explained-with-examples-and-mathematics-ecd48bdc55f1",
+      "snippet": "AI Model Compression-Quantization and Dequantization Explained with Examples and Mathematics Quantization is the process of mapping continuous or high-precision values to a finite, lower precision …"
+    },
+    {
+      "title": "Model Quantization | google-ai-edge/models-samples | DeepWiki",
+      "url": "https://deepwiki.com/google-ai-edge/models-samples/4-model-quantization",
+      "snippet": "Model Quantization Relevant source files Model quantization is a critical optimization technique for deploying machine learning models on edge devices. This document explains the quantization methods available in the Google AI Edge Models-Samples repository, providing implementation examples and best practices."
+    },
+    {
+      "title": "A Comprehensive Study on Quantization Techniques for Large Language Models",
+      "url": "https://arxiv.org/html/2411.02530v1",
+      "snippet": "This research mainly focus vector quantization methods for the compression of densely connected layers. It involves parameter binarization, scalar quantization through k-means clustering, and structured quantization employing product quantization or residual quantization, all of which lead to significant improvements in performance."
+    }
+  ]
+}

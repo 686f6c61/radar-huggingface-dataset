@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chinmankokumin/Krea2RedMix3.0w4a8",
+  "slug": "chinmankokumin-krea2redmix3-0w4a8",
+  "author": "chinmankokumin",
+  "url": "https://huggingface.co/chinmankokumin/Krea2RedMix3.0w4a8",
+  "created_at": "2026-08-25T08:54:53.000Z",
+  "updated_at": "2026-08-25T09:20:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10549159746,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chinmankokumin (chinmankokumin) - Hugging Face",
+      "url": "https://huggingface.co/chinmankokumin/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "chinmankokumin (chinmankokumin) - Hugging Face",
+      "url": "https://huggingface.co/chinmankokumin/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "Krea-2 ComfyUI Workflow Example",
+      "url": "https://docs.comfy.org/tutorials/image/krea/krea-2",
+      "snippet": "Krea 2 is a text-to-image model designed for high aesthetic quality and stylistic diversity. It comes in two variants: RAW (base) and Turbo (distilled)."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    }
+  ]
+}

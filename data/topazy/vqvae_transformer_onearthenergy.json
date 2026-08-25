@@ -5,7 +5,7 @@
   "author": "topazy",
   "url": "https://huggingface.co/topazy/vqvae_transformer_onearthenergy",
   "created_at": "2026-08-18T20:24:01.000Z",
-  "updated_at": "2026-08-18T20:50:10.000Z",
+  "updated_at": "2026-08-25T03:01:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "unconditional-image-generation",

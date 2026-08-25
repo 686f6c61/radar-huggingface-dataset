@@ -5,7 +5,7 @@
   "author": "FlexiSLM",
   "url": "https://huggingface.co/FlexiSLM/FlexiSLM-7B-Stage2-v1",
   "created_at": "2026-08-20T03:34:10.000Z",
-  "updated_at": "2026-08-21T12:50:56.000Z",
+  "updated_at": "2026-08-24T13:13:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,13 +28,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 17,
+  "likes": 2,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 8407063872,
   "parameters_human": "8.41B",
-  "storage_bytes": 34919371920,
-  "storage_human": "34.9 GB",
+  "storage_bytes": 51733644624,
+  "storage_human": "51.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

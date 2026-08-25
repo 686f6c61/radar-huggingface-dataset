@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "destr8803/GLM-5.2-224E-FP8-REAP",
+  "slug": "destr8803-glm-5-2-224e-fp8-reap",
+  "author": "destr8803",
+  "url": "https://huggingface.co/destr8803/GLM-5.2-224E-FP8-REAP",
+  "created_at": "2026-08-25T03:53:22.000Z",
+  "updated_at": "2026-08-25T04:14:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "moe",
+    "fp8",
+    "pruned",
+    "reap",
+    "gaudi",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.2-FP8",
+    "base_model:quantized:zai-org/GLM-5.2-FP8",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 661510069888,
+  "parameters_human": "661.51B",
+  "storage_bytes": 663793177722,
+  "storage_human": "663.8 GB",
+  "base_model": "zai-org/GLM-5.2-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-5.2-FP8 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.2-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5: From Vibe Coding to Agentic Engineering. Contribute to zai-org/GLM-5 development by creating an account on GitHub."
+    },
+    {
+      "title": "zai-org/GLM-5.2-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.2-FP8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/zai-org--glm-5.2-fp8",
+      "snippet": "We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first time, delivers that capability on a solid 1M-token context."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    }
+  ]
+}

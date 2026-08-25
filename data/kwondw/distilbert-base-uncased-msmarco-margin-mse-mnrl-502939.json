@@ -1,0 +1,379 @@
+{
+  "schema": 1,
+  "id": "kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-502939",
+  "slug": "kwondw-distilbert-base-uncased-msmarco-margin-mse-mnrl-502939",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-502939",
+  "created_at": "2026-08-25T05:16:11.000Z",
+  "updated_at": "2026-08-25T05:16:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "distilbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:502939",
+    "loss:CombinedMarginMSEMNRLLoss",
+    "en",
+    "arxiv:1908.10084",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66362880,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265462608,
+  "storage_human": "265 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Accuracy@1",
+      "value": 0.24
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Accuracy@3",
+      "value": 0.42
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Accuracy@5",
+      "value": 0.46
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Accuracy@10",
+      "value": 0.6
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Precision@1",
+      "value": 0.24
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Precision@3",
+      "value": 0.14
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Precision@5",
+      "value": 0.1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Precision@10",
+      "value": 0.07800000000000001
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Recall@1",
+      "value": 0.12
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Recall@3",
+      "value": 0.19899999999999998
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Recall@5",
+      "value": 0.22233333333333336
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Recall@10",
+      "value": 0.3173333333333333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Ndcg@10",
+      "value": 0.25502275043574224
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Mrr@10",
+      "value": 0.341936507936508
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Dot Map@100",
+      "value": 0.19161362101702462
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Accuracy@1",
+      "value": 0.66
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Accuracy@3",
+      "value": 0.8
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Accuracy@5",
+      "value": 0.92
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Accuracy@10",
+      "value": 0.96
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Precision@1",
+      "value": 0.66
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Precision@3",
+      "value": 0.5266666666666666
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Precision@5",
+      "value": 0.49599999999999994
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Precision@10",
+      "value": 0.44
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Recall@1",
+      "value": 0.08127188147191575
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Recall@3",
+      "value": 0.15895612323824684
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Recall@5",
+      "value": 0.21466171814511803
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Recall@10",
+      "value": 0.3130336743049779
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Ndcg@10",
+      "value": 0.5455119295180828
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Mrr@10",
+      "value": 0.757047619047619
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Dot Map@100",
+      "value": 0.39420414623006717
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Accuracy@1",
+      "value": 0.74
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Accuracy@3",
+      "value": 0.96
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Accuracy@5",
+      "value": 0.98
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Accuracy@10",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Precision@1",
+      "value": 0.74
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Precision@3",
+      "value": 0.33333333333333326
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Precision@5",
+      "value": 0.204
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Precision@10",
+      "value": 0.10799999999999997
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Recall@1",
+      "value": 0.6866666666666665
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Recall@3",
+      "value": 0.9133333333333333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Recall@5",
+      "value": 0.9333333333333332
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Recall@10",
+      "value": 0.9733333333333333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Ndcg@10",
+      "value": 0.8576649732794778
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Mrr@10",
+      "value": 0.8475
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Dot Map@100",
+      "value": 0.8051481481481482
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Dot Accuracy@1",
+      "value": 0.34
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Dot Accuracy@3",
+      "value": 0.46
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Dot Accuracy@5",
+      "value": 0.54
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Dot Accuracy@10",
+      "value": 0.64
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Dot Precision@1",
+      "value": 0.34
+    }
+  ],
+  "sources": [
+    {
+      "title": "distilbert-base-uncased-msmarco-margin-mse-mnrl-502939",
+      "url": "https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-502939",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kwondw/distilbert-base-uncased-msmarco-margin-mse · Hugging Face",
+      "url": "https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse",
+      "snippet": "Instructions to use kwondw/distilbert-base-uncased-msmarco-margin-mse with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-distilbert-base-uncased",
+      "snippet": "distilbert/distilbert-base-uncased powered by Hugging Face Inference Toolkit Original Model Card fill-mask Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-base-uncased",
+      "snippet": "DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher."
+    },
+    {
+      "title": "GitHub - kristianrascon/distilbert-base-uncased",
+      "url": "https://github.com/kristianrascon/distilbert-base-uncased",
+      "snippet": "DistilBERT base model (uncased) This model is a distilled version of the BERT base model. It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English."
+    }
+  ]
+}

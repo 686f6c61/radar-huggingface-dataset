@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "qualcomm/CenterPoint",
+  "slug": "qualcomm-centerpoint",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/CenterPoint",
+  "created_at": "2026-01-27T21:06:07.000Z",
+  "updated_at": "2026-08-25T04:12:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "android",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1111251580,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CenterPoint - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/centerpoint",
+      "snippet": "CenterPoint 3D object detection model optimized for LiDAR‑based autonomous driving scenarios. CenterPoint is a LiDAR‑based 3D object detection model that detects objects by predicting their centers and regressing other attributes. It is designed for high accuracy and real‑time performance in autonomous driving applications."
+    },
+    {
+      "title": "qualcomm/CenterPoint · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/CenterPoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/centerpoint at main · qualcomm ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src%2Fqai_hub_models%2Fmodels%2Fcenterpoint",
+      "snippet": "CenterPoint is a LiDAR-based 3D object detection model that detects objects by predicting their centers and regressing other attributes. It is designed for high accuracy and real-time performance in autonomous driving applications. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/centerpoint/README.md at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/centerpoint/README.md",
+      "snippet": "CenterPoint is a LiDAR-based 3D object detection model that detects objects by predicting their centers and regressing other attributes. It is designed for high accuracy and real-time performance in autonomous driving applications. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "README.md · qualcomm/CenterPoint at main - Hugging Face",
+      "url": "https://huggingface.co/qualcomm/CenterPoint/blob/main/README.md",
+      "snippet": "CenterPoint: Optimized for Qualcomm Devices CenterPoint is a LiDAR-based 3D object detection model that detects objects by predicting their centers and regressing other attributes. It is designed for high accuracy and real-time performance in autonomous driving applications."
+    }
+  ]
+}

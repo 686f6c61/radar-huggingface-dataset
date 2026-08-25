@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Phantomcloak19/gemma2-2b-dpo-grpo",
+  "slug": "phantomcloak19-gemma2-2b-dpo-grpo",
+  "author": "Phantomcloak19",
+  "url": "https://huggingface.co/Phantomcloak19/gemma2-2b-dpo-grpo",
+  "created_at": "2026-06-29T08:21:59.000Z",
+  "updated_at": "2026-08-25T11:03:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "dpo-grpo",
+    "gemma2-2b",
+    "conversational",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:finetune:google/gemma-2-2b-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263080096,
+  "storage_human": "5.3 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phantomcloak19/gemma2-2b-dpo · Hugging Face",
+      "url": "https://huggingface.co/Phantomcloak19/gemma2-2b-dpo",
+      "snippet": "Phantomcloak19 / gemma2-2b-dpo like 0 Text Generation Transformers Safetensors gemma2 horus-llm dpo gemma2-2b conversational text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Phantomcloak19/gemma-dpo-full · Hugging Face",
+      "url": "https://huggingface.co/Phantomcloak19/gemma-dpo-full",
+      "snippet": "This Gemma-2 (2B) model has been fine-tuned using Direct Preference Optimization (DPO) to reduce hallucinations and improve factual consistency, trained on the Unified Hallucination Benchmark. The model was trained ~2× faster using Unsloth, enabling efficient low-VRAM fine-tuning."
+    },
+    {
+      "title": "gemma2-2b-dpo-grpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Phantomcloak19/gemma2-2b-dpo-grpo",
+      "snippet": "Phantomcloak19 gemma2-2b-dpo-grpo Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "gemma-dpo-full API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Phantomcloak19/gemma-dpo-full",
+      "snippet": "Deploy gemma-dpo-full with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yorklyb/demo_wing",
+  "slug": "yorklyb-demo_wing",
+  "author": "yorklyb",
+  "url": "https://huggingface.co/yorklyb/demo_wing",
+  "created_at": "2026-08-25T10:11:11.000Z",
+  "updated_at": "2026-08-25T10:11:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:demo_wing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354063880,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yorklyb/wing · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/yorklyb/wing",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yorklyb (YIbo Liu) - Hugging Face",
+      "url": "https://huggingface.co/datasets/yorklyb/",
+      "snippet": "yorklyb&#x27;s datasets5 Sort: Recently updated yorklyb/oven Viewer •Updated 1 day ago•34.7k• 67"
+    },
+    {
+      "title": "yorklyb (Yibo Liu) · GitHub",
+      "url": "https://github.com/yorklyb",
+      "snippet": "This is a lightweight GAN developed for real-time deblurring. The model has a super tiny size and a rapid inference time. The motivation is to boost marker detection in robotic applications, howeve… Python 56 11"
+    },
+    {
+      "title": "Yibo Liu - Research Scientist @ Epson",
+      "url": "https://yorklyb.github.io/",
+      "snippet": "I&#x27;m a research scientist at Epson, focusing on research in spatial AI. My research interests lie in world action models, VLA + RL, policy learning with force and tactile modalities, and policy post-training."
+    },
+    {
+      "title": "wing_model/wing_calibrate.ipynb at main · Jincheng-Gong/wing_model · GitHub",
+      "url": "https://github.com/Jincheng-Gong/wing_model/blob/main/wing_calibrate.ipynb",
+      "snippet": "ORC wing model calibrator and simulator. Contribute to Jincheng-Gong/wing_model development by creating an account on GitHub."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "gian86",
   "url": "https://huggingface.co/gian86/qwen2-7b-instruct-trl-sft-ChartQA",
   "created_at": "2026-08-24T08:10:52.000Z",
-  "updated_at": "2026-08-24T08:46:31.000Z",
+  "updated_at": "2026-08-25T03:16:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,8 +17,6 @@
     "generated_from_trainer",
     "sft",
     "trl",
-    "base_model:Qwen/Qwen2-VL-7B-Instruct",
-    "base_model:finetune:Qwen/Qwen2-VL-7B-Instruct",
     "endpoints_compatible",
     "region:us"
   ],
@@ -27,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 21551864,
-  "storage_human": "22 MB",
+  "storage_bytes": 92436505,
+  "storage_human": "92 MB",
   "base_model": "Qwen/Qwen2-VL-7B-Instruct",
   "formats": [
     "safetensors"

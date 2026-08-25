@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "slug": "unsloth-qwen3-8-27b-unsloth-bnb-4bit",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "created_at": "2026-08-13T08:29:01.000Z",
+  "updated_at": "2026-08-25T10:27:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 22364823126,
+  "storage_human": "22.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a ..."
+    },
+    {
+      "title": "Qwen3.8-27B - unsloth.ai",
+      "url": "https://unsloth.ai/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "danielhanchen/Qwen3.8-27B-unsloth-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/danielhanchen/Qwen3.8-27B-unsloth-bnb-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B with Unsloth: Run, Quantize, or Fine-Tune",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-unsloth",
+      "snippet": "Yes — Unsloth runs Qwen3.8 27B, and it is the fastest way to get Ali baba&#x27;s new Apache-2.0 model onto your own GPU. The whole answer in one line: open Unsloth Studio, search \"Qwen3.8 27B\", pick UD-Q4_K_XL (17.9GB) on a 24GB card, and chat in under a minute. Underneath that click, Unsloth shipped three things the same week the weights dropped (August 13-14, 2026): the unsloth/Qwen3.8-27B ..."
+    }
+  ]
+}

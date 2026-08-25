@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "daraa1607/daralm-50m",
+  "slug": "daraa1607-daralm-50m",
+  "author": "daraa1607",
+  "url": "https://huggingface.co/daraa1607/daralm-50m",
+  "created_at": "2026-08-25T10:22:09.000Z",
+  "updated_at": "2026-08-25T10:22:29.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "from-scratch",
+    "decoder-only",
+    "transformer",
+    "khmer",
+    "english",
+    "educational",
+    "pytorch",
+    "text-generation",
+    "km",
+    "en",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134047098,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super Tiny Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2405.14159v1",
+      "snippet": "Model Size We propose no hard parameter count cut-off, but aim to build a family of models with 10M, 50M and 100M parameters. Most experiments will focus on models with close to 50M parameters, and once we have narrowed down an architecture, we will scale it up and down to 100M and 10M parameters respectively."
+    },
+    {
+      "title": "Patronus AI Raises $50M to Scale AI Agent Testing",
+      "url": "https://aipressroom.com/patronus-ai-50m-ai-agent-testing/",
+      "snippet": "Patronus AI raised $50M Series B led by Greenfield Partners to scale AI agent testing and training simulations."
+    },
+    {
+      "title": "Anthropic backs Goodfire in $50M Series A funding to decode AI models ...",
+      "url": "https://techstartups.com/2025/04/18/anthropic-backs-goodfire-in-50m-series-a-to-decode-ai-models-marking-first-ever-startup-investment/",
+      "snippet": "Anthropic just made its first startup investment—and it&#x27;s a telling one. The AI startup behind the popular chatbot Claude has invested $1 million in Goodfire, a San Francisco-based company working to &#x27;break open the black box of generative AI models&#x27; and make them easier to understand and control. This early-stage bet is part of Goodfire&#x27;s"
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows. Trusted by leading agencies and brands. Try it free."
+    },
+    {
+      "title": "Patronus AI Raises $50M, Launches Digital World Models",
+      "url": "https://ai-techpark.com/patronus-ai-raises-50m-series-b-launches-digital-world-models/",
+      "snippet": "Patronus AI today announced a $50 million Series B led by Greenfield Partners and unveiled its Digital World Models, a new class of large-scale simulation environments designed to help AI systems train, evaluate, and improve across complex digital workflows. The round included participation from existing investors Notable Capital, Lightspeed Venture Partners, Datadog, Samsung, Factorial ..."
+    }
+  ]
+}

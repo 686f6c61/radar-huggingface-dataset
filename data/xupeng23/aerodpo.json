@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "XuPeng23/AeroDPO",
+  "slug": "xupeng23-aerodpo",
+  "author": "XuPeng23",
+  "url": "https://huggingface.co/XuPeng23/AeroDPO",
+  "created_at": "2026-08-25T09:08:57.000Z",
+  "updated_at": "2026-08-25T09:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XuPeng23/AeroDPO: Offical repository of AeroDPO: Unleashing ...",
+      "url": "https://github.com/XuPeng23/AeroDPO",
+      "snippet": "Offical repository of AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity Perception and Automated Preference Optimization - XuPeng23/AeroDPO"
+    },
+    {
+      "title": "AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity ...",
+      "url": "https://arxiv.org/pdf/2608.07557",
+      "snippet": "We demonstrate that an ultra-lightweight 2B model equipped with high-resolution visual inputs can effectively match the navigation success rate of massive 7B baselines. However, resolving the latency issue immediately exposes a crucial robustness vulnerability."
+    },
+    {
+      "title": "XuPeng23 (Xu Peng) - Hugging Face",
+      "url": "https://huggingface.co/XuPeng23/models",
+      "snippet": "User profile of Xu Peng on Hugging Face"
+    },
+    {
+      "title": "XuPeng23 (Xu Peng) / Repositories · GitHub",
+      "url": "https://github.com/XuPeng23?tab=repositories",
+      "snippet": "XuPeng23 has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity ...",
+      "url": "https://www.catalyzex.com/paper/aerodpo-unleashing-lightweight-uav-navigation",
+      "snippet": "AeroDPO: Unleashing Lightweight UAV Navigation with High-Fidelity Perception and Automated Preference Optimization: Paper and Code. Vision-Language Navigation for Unmanned Aerial Vehicles (UAV-VLN) requires rapid and reactive control in complex 3D environments. Recent minimalist end-to-end paradigms show great promise but typically rely on massive language models containing billions of ..."
+    }
+  ]
+}

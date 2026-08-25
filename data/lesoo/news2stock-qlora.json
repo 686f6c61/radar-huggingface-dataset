@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lesoo/news2stock-qlora",
+  "slug": "lesoo-news2stock-qlora",
+  "author": "lesoo",
+  "url": "https://huggingface.co/lesoo/news2stock-qlora",
+  "created_at": "2026-08-25T05:27:53.000Z",
+  "updated_at": "2026-08-25T05:27:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BellaHez/news2stock-qlora · Hugging Face",
+      "url": "https://huggingface.co/BellaHez/news2stock-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI News Today — Top AI Stories & Live Updates | AI Weekly",
+      "url": "https://aiweekly.co/ai-news-today",
+      "snippet": "Track breaking AI news, weekly movers, beat shifts, and 113 entity trend lines — covering the last 48 hours. From AI Weekly, 600+ issues, 50K subscribers."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LLM News Today - AI Model Updates, Releases & Benchmarks (2026)",
+      "url": "https://pricepertoken.com/news",
+      "snippet": "Breaking AI news updated hourly. 8,672+ articles from 50+ sources covering model releases, benchmarks, pricing changes, and industry updates. Never miss an LLM announcement."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "moinonin",
   "url": "https://huggingface.co/moinonin/qwen2.5-coder-7b-promex",
   "created_at": "2026-08-24T00:52:23.000Z",
-  "updated_at": "2026-08-24T00:58:28.000Z",
+  "updated_at": "2026-08-25T01:51:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   "tags": [
     "unsloth",
     "safetensors",
+    "qwen2",
     "spec-forge",
     "command-runway",
     "qwen2.5-coder",
@@ -34,10 +35,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 172955966,
-  "storage_human": "173 MB",
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15415650186,
+  "storage_human": "15.4 GB",
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "safetensors"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TigreGotico/AKK_300m-onnx",
+  "slug": "tigregotico-akk_300m-onnx",
+  "author": "TigreGotico",
+  "url": "https://huggingface.co/TigreGotico/AKK_300m-onnx",
+  "created_at": "2026-08-25T10:37:57.000Z",
+  "updated_at": "2026-08-25T10:39:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "linguonnx",
+  "languages": [
+    "akk",
+    "en"
+  ],
+  "tags": [
+    "linguonnx",
+    "onnx",
+    "umt5",
+    "translation",
+    "akkadian",
+    "cuneiform",
+    "akk",
+    "en",
+    "base_model:Thalesian/AKK_300m",
+    "base_model:quantized:Thalesian/AKK_300m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3645354853,
+  "storage_human": "3.6 GB",
+  "base_model": "Thalesian/AKK_300m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "TigreGotico/opus-mt-ka-en-onnx · Hugging Face",
+      "url": "https://huggingface.co/TigreGotico/opus-mt-ka-en-onnx",
+      "snippet": "TigreGotico / opus-mt-ka-en-onnx like 0 Follow Tigre Gótico Lda 10 Translation Transformers ONNX Georgian English marian text2text-generation License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "TigreGotico/Plume32k-onnx · Hugging Face",
+      "url": "https://huggingface.co/TigreGotico/Plume32k-onnx",
+      "snippet": "ONNX export of projecte-aina/Plume32k, a 2B parameter translation model from Projecte AINA at the Barcelona Supercomputing Center (BSC). The model is Catalan-centric: it was trained only on Catalan-centric parallel data, and it covers 16 supervised directions plus 56 zero-shot directions."
+    }
+  ]
+}

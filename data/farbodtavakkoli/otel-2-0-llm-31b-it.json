@@ -5,7 +5,7 @@
   "author": "farbodtavakkoli",
   "url": "https://huggingface.co/farbodtavakkoli/OTel-2.0-LLM-31B-IT",
   "created_at": "2026-07-23T11:27:39.000Z",
-  "updated_at": "2026-08-19T02:54:17.000Z",
+  "updated_at": "2026-08-24T18:38:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 14,
-  "downloads_30d": 7145252,
+  "downloads_30d": 7147262,
   "trending_score": 0,
   "parameters": 32106632252,
   "parameters_human": "32.11B",

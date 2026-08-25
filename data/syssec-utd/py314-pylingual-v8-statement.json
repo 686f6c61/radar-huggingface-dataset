@@ -5,7 +5,7 @@
   "author": "syssec-utd",
   "url": "https://huggingface.co/syssec-utd/py314-pylingual-v8-statement",
   "created_at": "2026-08-16T20:37:40.000Z",
-  "updated_at": "2026-08-18T05:43:12.000Z",
+  "updated_at": "2026-08-25T07:09:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 222882048,
   "parameters_human": "222.9M",
-  "storage_bytes": 8024152661,
-  "storage_human": "8.0 GB",
+  "storage_bytes": 15156762580,
+  "storage_human": "15.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

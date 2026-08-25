@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ManyaKhare/carbon-audit-23f2004290",
+  "slug": "manyakhare-carbon-audit-23f2004290",
+  "author": "ManyaKhare",
+  "url": "https://huggingface.co/ManyaKhare/carbon-audit-23f2004290",
+  "created_at": "2026-08-25T08:42:30.000Z",
+  "updated_at": "2026-08-25T08:44:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maneshsathyanathan/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/maneshsathyanathan/green-ai-carbon-audit",
+      "snippet": "Green AI Carbon Accounting Audit This repository documents the carbon footprint of an assigned GPU training run."
+    },
+    {
+      "title": "24f1002603/carbon-audit-model · Hugging Face",
+      "url": "https://huggingface.co/24f1002603/carbon-audit-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Artificial intelligence for carbon emissions management: advances ...",
+      "url": "https://link.springer.com/article/10.1186/s13021-026-00479-5",
+      "snippet": "Rising anthropogenic carbon emissions are a major driver of climate change and pose a critical challenge to global sustainable development. As a rapidly advancing technology, artificial intelligence (AI) has shown strong potential to enhance carbon emissions management. This review provides a critical and comprehensive synthesis of recent advances in AI-enabled approaches for carbon emissions ..."
+    },
+    {
+      "title": "eco2AI: Carbon Emissions Tracking of Machine Learning Models as the ...",
+      "url": "https://link.springer.com/article/10.1134/S1064562422060230",
+      "snippet": "In spite of the great potential of AI to solve environmental issues, AI itself can be the source of an indirect carbon footprint. In order to help the AI-community to understand the environmental impact of AI models during training and inference and to systematically monitor equivalent carbon emissions in this paper we introduced the eco2AI tool."
+    },
+    {
+      "title": "Carbontracker: Tracking and Predicting the Carbon Footprint of Training ...",
+      "url": "https://arxiv.org/abs/2007.03051",
+      "snippet": "Deep learning (DL) can achieve impressive results across a wide variety of tasks, but this often comes at the cost of training models for extensive periods on specialized hardware accelerators. This energy-intensive workload has seen immense growth in recent years. Machine learning (ML) may become a significant contributor to climate change if this exponential trend continues. If practitioners ..."
+    }
+  ]
+}

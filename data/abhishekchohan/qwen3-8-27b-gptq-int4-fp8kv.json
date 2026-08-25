@@ -5,7 +5,7 @@
   "author": "abhishekchohan",
   "url": "https://huggingface.co/abhishekchohan/Qwen3.8-27B-GPTQ-INT4-FP8KV",
   "created_at": "2026-08-25T00:04:31.000Z",
-  "updated_at": "2026-08-25T00:04:56.000Z",
+  "updated_at": "2026-08-25T00:37:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

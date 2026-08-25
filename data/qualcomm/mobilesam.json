@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qualcomm/MobileSam",
+  "slug": "qualcomm-mobilesam",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/MobileSam",
+  "created_at": "2025-04-09T21:18:05.000Z",
+  "updated_at": "2026-08-25T04:11:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "foundation",
+    "android",
+    "image-segmentation",
+    "arxiv:2306.14289",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 267,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2349587184,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileSam - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mobilesam",
+      "snippet": "MobileSam Faster Segment Anything: Towards lightweight SAM for mobile applications. Transformer based encoder‑decoder where prompts specify what to segment in an image thereby allowing segmentation without the need for additional training. The image encoder generates embeddings and the lightweight decoder operates on the embeddings for point and mask based image segmentation."
+    },
+    {
+      "title": "MobileSam - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/automotive/models/mobilesam",
+      "snippet": "Transformer based encoder‑decoder where prompts specify what to segment in an image thereby allowing segmentation without the need for additional training. The image encoder generates embeddings and the lightweight decoder operates on the embeddings for point and mask based image segmentation. Download Model Not supported"
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/mobilesam at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/mobilesam",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "qualcomm/MobileSam · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/MobileSam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/mobilesam/README.md at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/mobilesam/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

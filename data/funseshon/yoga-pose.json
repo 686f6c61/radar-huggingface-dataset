@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "funseshon/yoga-pose",
+  "slug": "funseshon-yoga-pose",
+  "author": "funseshon",
+  "url": "https://huggingface.co/funseshon/yoga-pose",
+  "created_at": "2026-08-25T05:27:52.000Z",
+  "updated_at": "2026-08-25T06:03:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970440658,
+  "storage_human": "970 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Yoga & Fitness Pose Instructor - Musely",
+      "url": "https://musely.ai/tools/yoga-&-fitness-pose-instructor",
+      "snippet": "Your AI Yoga & Fitness Pose Instructor Effortlessly create stunning, instructional images of any yoga or fitness pose with advanced AI. Perfect your practice, enhance your teaching, or inspire your audience with precise visuals."
+    },
+    {
+      "title": "Best AI Fitness Model Poses Generator | 2026 Rankings",
+      "url": "https://zipdo.co/best/ai-fitness-model-poses-generator/",
+      "snippet": "For an ai fitness model poses generator review, Rawshot AI is best understood as a pose-first tool: you generate specific body positions intended to support fitness and modeling content creation. This makes it a strong fit when you need pose variety or rapid iteration without manually searching, shooting, or arranging reference materials."
+    },
+    {
+      "title": "Best AI Pose Generator Free - Change Pose Free Online",
+      "url": "https://www.weshop.ai/apps/ai-pose-generator",
+      "snippet": "Use the best AI pose generator to change pose, create dynamic poses, and get accurate body poses online."
+    },
+    {
+      "title": "Top 10 Best AI Fitness Model Poses Generator | 2026 Edition",
+      "url": "https://worldmetrics.org/best/ai-fitness-model-poses-generator/",
+      "snippet": "Ranking roundup of the ai fitness model poses generator tools for form practice, including Rawshot, Xsens AI Studio, and MyFitnessPal AI Pose Coach."
+    },
+    {
+      "title": "AI Pose Generator | Create & Change Poses from Photos | Loova",
+      "url": "https://loova.ai/ai-pose-generator",
+      "snippet": "Generate realistic poses with our AI pose generator. Upload a photo or reference and create consistent AI poses instantly—fast, easy, and online."
+    }
+  ]
+}

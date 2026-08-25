@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AIGeeksGroup/GeneralVLA-2",
+  "slug": "aigeeksgroup-generalvla-2",
+  "author": "AIGeeksGroup",
+  "url": "https://huggingface.co/AIGeeksGroup/GeneralVLA-2",
+  "created_at": "2026-08-25T08:35:24.000Z",
+  "updated_at": "2026-08-25T09:40:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "robot-planning",
+    "3d-reconstruction",
+    "long-term-memory",
+    "training-free",
+    "en",
+    "zh",
+    "arxiv:2606.17480",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4324135373,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AIGeeksGroup/GeneralVLA-2: GeneralVLA-2: Geometry-Aware ...",
+      "url": "https://github.com/AIGeeksGroup/GeneralVLA-2",
+      "snippet": "This repository contains three code components used in the GeneralVLA project: GeneralVLA/: robot memory VLA runtime, model configuration, evaluation tools, and tests. GeoFuse-MV3D/: multi-view 3D geometry fusion and evaluation utilities. KnowledgeBank/: memory-augmented software-agent code and benchmark scripts. Large checkpoints, datasets, generated outputs, robot logs, and benchmark ..."
+    },
+    {
+      "title": "GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for ...",
+      "url": "https://aigeeksgroup.github.io/GeneralVLA-2/",
+      "snippet": "Overview of GeneralVLA-2 for robot manipulation. When calibrated multi-view object observations are available, GeoFuse-MV3D converts the views, masks, and camera poses into refined object-centric 3D evidence; the 3D-capable planning agent combines this evidence with governed KnowledgeBank retrieval; and the robot execution module follows the ..."
+    },
+    {
+      "title": "AIGeeksGroup/GeneralVLA · Hugging Face",
+      "url": "https://huggingface.co/AIGeeksGroup/GeneralVLA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GeneralVLA: Generalizable Vision-Language-Action Models with Knowledge ...",
+      "url": "https://aigeeksgroup.github.io/GeneralVLA/",
+      "snippet": "TL;DR GeneralVLA design integrates ASM and Knowledge-Guided Trajectory Planning for generalizable zero-shot robotic manipulation and scalable demonstration-free data generation across tasks."
+    },
+    {
+      "title": "GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for ...",
+      "url": "https://arxiv.org/html/2606.17480v1",
+      "snippet": "GeneralVLA-2 first adds an object-side multi-view reconstruction branch to complement the original SAM-based affordance segmentation and iterative localization interface. With calibrated multi-view RGB-D observations around the same object, monocular hallucination becomes less necessary than it is in a single-image setup."
+    }
+  ]
+}

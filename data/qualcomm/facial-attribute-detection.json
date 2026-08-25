@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qualcomm/Facial-Attribute-Detection",
+  "slug": "qualcomm-facial-attribute-detection",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/Facial-Attribute-Detection",
+  "created_at": "2024-12-12T23:01:20.000Z",
+  "updated_at": "2026-08-25T04:13:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "real_time",
+    "bu_iot",
+    "android",
+    "object-detection",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 296,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3720570878,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facial-Attribute-Detection - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/face_attrib_net",
+      "snippet": "Facial-Attribute-Detection Comprehensive facial analysis by extracting face features. Detects attributes (eye closeness, mask presence, eyeglasses presence, sunglasses presence) that apply to a given face. This model&#x27;s architecture was developed by Qualcomm. The model was trained by Qualcomm on a proprietary dataset of faces, but can be used on any image."
+    },
+    {
+      "title": "qualcomm/Facial-Attribute-Detection · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Facial-Attribute-Detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · qualcomm/Facial-Attribute-Detection at main",
+      "url": "https://huggingface.co/qualcomm/Facial-Attribute-Detection/blob/main/README.md",
+      "snippet": "Comprehensive facial analysis by extracting face features Facial feature extraction and additional attributes including liveness, eyeclose, mask and glasses detection for face recognition. This model is an implementation of Facial-Attribute-Detection found here. This repository provides scripts to run Facial-Attribute-Detection on Qualcomm ..."
+    },
+    {
+      "title": "qualcomm/Facial-Attribute-Detection - Hugging Face Hub Packa... - Socket",
+      "url": "https://socket.dev/huggingface/package/qualcomm/facial-attribute-detection",
+      "snippet": "Facial-Attribute-Detection: Optimized for Qualcomm Devices Detects attributes (eye closeness, mask presence, eyeglasses presence, sunglasses presence) that apply to a given face. This model&#x27;s architecture was developed by Qualcomm. The model was trained by Qualcomm on a proprietary dataset of faces, but can be used on any image."
+    },
+    {
+      "title": "GitHub - lifehyun/face_model: The Qualcomm® AI Hub Models are a ...",
+      "url": "https://github.com/lifehyun/face_model",
+      "snippet": "The Qualcomm® AI Hub Models are a collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - lifehyun/face_model"
+    }
+  ]
+}

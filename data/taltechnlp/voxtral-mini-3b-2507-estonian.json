@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "TalTechNLP/Voxtral-Mini-3B-2507-estonian",
+  "slug": "taltechnlp-voxtral-mini-3b-2507-estonian",
+  "author": "TalTechNLP",
+  "url": "https://huggingface.co/TalTechNLP/Voxtral-Mini-3B-2507-estonian",
+  "created_at": "2026-08-25T09:05:15.000Z",
+  "updated_at": "2026-08-25T09:28:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "et",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "voxtral",
+    "automatic-speech-recognition",
+    "audio",
+    "speech",
+    "estonian",
+    "transcription",
+    "translation",
+    "audio-understanding",
+    "full-finetune",
+    "et",
+    "en",
+    "base_model:mistralai/Voxtral-Mini-3B-2507",
+    "base_model:finetune:mistralai/Voxtral-Mini-3B-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4676271104,
+  "parameters_human": "4.68B",
+  "storage_bytes": 18727861551,
+  "storage_human": "18.7 GB",
+  "base_model": "mistralai/Voxtral-Mini-3B-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Voxtral-Mini-3B-2507 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+      "snippet": "Transcription Voxtral-Mini-3B-2507 has powerful transcription capabilities! Make sure that your client has mistral-common with audio installed:"
+    },
+    {
+      "title": "What Hardware Runs Voxtral Mini 3B (2507) | AI Audio Model",
+      "url": "https://www.madebyagents.com/models/voxtral-mini-3b-2507",
+      "snippet": "Mistral AI Voxtral Mini 3B (2507) Mistral AI&#x27;s compact 3B-parameter open-weights audio-language model built on Ministral-3B with a Whisper-derived encoder, designed for transcription, audio Q&A, summarization, and function-calling from voice across 8+ languages."
+    },
+    {
+      "title": "textagent/Voxtral-Mini-3B-2507-ONNX · Hugging Face",
+      "url": "https://huggingface.co/textagent/Voxtral-Mini-3B-2507-ONNX",
+      "snippet": "Voxtral Mini 1.0 (3B) - 2507 Voxtral Mini is an enhancement of Ministral 3B, incorporating state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation and audio understanding. This repository contains ONNX weights for the original model, mistralai/Voxtral-Mini-3B-2507."
+    },
+    {
+      "title": "Voxtral Mini 3B 2507 - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-voxtral-mini-3b-2507.html",
+      "snippet": "Voxtral Mini 3B is Mistral AI&#x27;s compact speech-to-text model for real-time transcription and voice understanding on edge devices. For more information about model development and performance, see the model/service card."
+    },
+    {
+      "title": "Voxtral Mini 3B 2507 - Specs, Capabilities & Benchmarks | Inferbase",
+      "url": "https://inferbase.ai/models/mistral-voxtral-mini-3b-2507",
+      "snippet": "Mistral&#x27;s Voxtral Mini 3B 2507 is a speech-to-text model that excels at speech transcription, translation, and audio understanding, leveraging its dedicated transcription mode and long-form context window of 131,072 tokens to handle lengthy audios."
+    }
+  ]
+}

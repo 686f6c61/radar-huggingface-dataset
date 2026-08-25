@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead",
+  "slug": "radixark-qwen3-8-27b-nvfp4-bf16-lmhead",
+  "author": "RadixArk",
+  "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead",
+  "created_at": "2026-08-20T06:37:18.000Z",
+  "updated_at": "2026-08-24T17:49:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen3_5",
+    "RadixArk",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "NVFP4",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 2710,
+  "trending_score": 9,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 23762142008,
+  "storage_human": "23.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead",
+      "snippet": "The RadixArk Qwen3.8-27B-NVFP4-BF16-LMHead model is a variant of RadixArk/Qwen3.8-27B-NVFP4, the quantized version of Qwen/Qwen3.8-27B produced at RadixArk using NVIDIA Model Optimizer with a mixed NVFP4 W4A4 recipe."
+    },
+    {
+      "title": "RadixArk/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4",
+      "snippet": "Third-Party Community Consideration This model is not owned or developed by RadixArk. It is a quantized derivative of Qwen&#x27;s model; see the upstream Qwen3.8-27B model card for the source model&#x27;s capabilities, training information, limitations, and license."
+    },
+    {
+      "title": "Qwen3.8 27B on SGLang for RTX PRO 6000 - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-RTX-6000-PRO-SGLang-DSpark",
+      "snippet": "Existing clones (git pull): the default Hub id changed to RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead. Hugging Face caches per repo, so the old packed-FP4 tree is not reused — the next start downloads ~24 GB into a new folder and leaves ~22 GB unused unless you delete it:"
+    },
+    {
+      "title": "Qwen3.8 27B on SGLang for DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark",
+      "snippet": "Qwen3.8 27B on SGLang for DGX Spark by Mia&#x27;s AI Lab Opinionated, ready-to-run scripts to serve Qwen3.8-27B with SGLang in Docker on an NVIDIA DGX Spark (GB10, aarch64). Three swap-in serving modes — EAGLE/MTP, DSpark, or DFlash2 — with every tuning choice measured on-device instead of guessed. DSpark and DFlash2 are faster on code."
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4 on a single DGX Spark - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-nvfp4-on-a-single-dgx-spark-up-to-1m-context-vllm-mtp-measurements/380244",
+      "snippet": "Qwen3.8-27B was released today, and unsloth put up an NVFP4 quantization the same afternoon. It runs on a single DGX Spark without any modification to vLLM. This is what I found getting it up, including a packaging bug in the checkpoint that silently truncates every prompt at 2048 tokens. EDIT: Unsloth meanwhile uploaded a fixed version, so you can ignore the section about the tokenizer bug ..."
+    }
+  ]
+}

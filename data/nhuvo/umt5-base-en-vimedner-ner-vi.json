@@ -5,7 +5,7 @@
   "author": "nhuvo",
   "url": "https://huggingface.co/nhuvo/umt5-base-en-vimedner-ner-vi",
   "created_at": "2026-08-24T16:02:32.000Z",
-  "updated_at": "2026-08-24T16:04:38.000Z",
+  "updated_at": "2026-08-24T16:16:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

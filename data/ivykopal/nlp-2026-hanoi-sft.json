@@ -5,7 +5,7 @@
   "author": "ivykopal",
   "url": "https://huggingface.co/ivykopal/nlp-2026-hanoi-sft",
   "created_at": "2026-08-24T11:14:07.000Z",
-  "updated_at": "2026-08-24T11:59:56.000Z",
+  "updated_at": "2026-08-24T12:51:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 134515008,
   "parameters_human": "134.5M",
-  "storage_bytes": 538096121,
-  "storage_human": "538 MB",
+  "storage_bytes": 1076193010,
+  "storage_human": "1.1 GB",
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"

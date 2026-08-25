@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "XingHan-WANG/meshtailor-v13paper100k",
+  "slug": "xinghan-wang-meshtailor-v13paper100k",
+  "author": "XingHan-WANG",
+  "url": "https://huggingface.co/XingHan-WANG/meshtailor-v13paper100k",
+  "created_at": "2026-08-25T04:09:59.000Z",
+  "updated_at": "2026-08-25T04:45:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mesh-generation",
+    "garment",
+    "seam-prediction",
+    "arxiv:2603.27309",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1139770716,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MeshTailor: Cutting Seams via Generative Mesh Traversal",
+      "url": "https://meshtailor.github.io/",
+      "snippet": "We present MeshTailor, the first mesh-native generative framework for synthesizing edge-aligned seams on 3D surfaces. Unlike prior optimization-based or extrinsic learning-based methods, MeshTailor operates directly on the mesh graph, eliminating projection artifacts and fragile snapping heuristics."
+    },
+    {
+      "title": "MeshTailor: Cutting Seams via Generative Mesh Traversal",
+      "url": "https://arxiv.org/html/2603.27309v2",
+      "snippet": "Abstract We present MeshTailor, the first mesh-native generative framework for synthesizing edge-aligned seams on 3D surfaces. Unlike prior optimization-based or extrinsic learning-based methods, MeshTailor operates directly on the mesh graph, eliminating projection artifacts and fragile snapping heuristics. We introduce ChainingSeams, a hierarchical serialization of the seam graph that orders ..."
+    },
+    {
+      "title": "MeshTailor: Cutting Seams via Generative Mesh Traversal",
+      "url": "https://arxiv.org/pdf/2603.27309",
+      "snippet": "Unlike extrinsic methods that suffer from projection artifacts, MeshTailor operates natively on the mesh topology, reformulating seam placement as an au-toregressive graph traversal via a geometry-aware Pointer Network [44]. By restricting the decision space to the lo-cal 1-ring neighborhood, the model traces vertex sequences step-by-step."
+    },
+    {
+      "title": "MeshTailor: Cutting Seams via Generative Mesh Traversal",
+      "url": "https://chatpaper.com/paper/262884",
+      "snippet": "MeshTailor is a novel mesh-native generative framework that synthesizes high-quality, edge-aligned seams on 3D surfaces through hierarchical graph traversal, significantly improving seam coherence and reducing fragmentation compared to traditional methods."
+    },
+    {
+      "title": "GitHub - MeshTailor/meshtailor.github.io",
+      "url": "https://github.com/MeshTailor/meshtailor.github.io",
+      "snippet": "Contribute to MeshTailor/meshtailor.github.io development by creating an account on GitHub."
+    }
+  ]
+}

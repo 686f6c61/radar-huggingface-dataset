@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "chaitalibh/finegrained-grpo-0824",
+  "slug": "chaitalibh-finegrained-grpo-0824",
+  "author": "chaitalibh",
+  "url": "https://huggingface.co/chaitalibh/finegrained-grpo-0824",
+  "created_at": "2026-08-25T05:10:45.000Z",
+  "updated_at": "2026-08-25T05:11:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523864568,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2510.01982v3] Fine-Grained GRPO for Precise Preference Alignment in ...",
+      "url": "https://arxiv.org/abs/2510.01982v3",
+      "snippet": "The incorporation of online reinforcement learning (RL) into diffusion and flow-based generative models has recently gained attention as a powerful paradigm for aligning model behavior with human preferences. By leveraging stochastic sampling via Stochastic Differential Equations (SDEs) during the denoising phase, these models can explore a variety of denoising trajectories, enhancing the ..."
+    },
+    {
+      "title": "Fine-Grained GRPO for Precise Preference Alignment in Flow Models",
+      "url": "https://arxiv.org/html/2510.01982v3",
+      "snippet": "Abstract The incorporation of online reinforcement learning (RL) into diffusion and flow-based generative models has recently gained attention as a powerful paradigm for aligning model behavior with human preferences. By leveraging stochastic sampling via Stochastic Differential Equations (SDEs) during the denoising phase, these models can explore a variety of denoising trajectories, enhancing ..."
+    },
+    {
+      "title": "chaitalibh (Chaitali Bhattacharyya) - Hugging Face",
+      "url": "https://huggingface.co/chaitalibh/datasets",
+      "snippet": "User profile of Chaitali Bhattacharyya on Hugging Face"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Methods We trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT ⁠, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant."
+    },
+    {
+      "title": "Updates to Command R fine-tuning",
+      "url": "https://cohere.com/blog/fine-tuning-command0824",
+      "snippet": "Explore Cohere&#x27;s fine-tuning process for Command0824, offering efficient and accurate AI model customization."
+    }
+  ]
+}

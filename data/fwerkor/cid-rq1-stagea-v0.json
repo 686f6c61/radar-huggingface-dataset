@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fwerkor/CID-RQ1-StageA-v0",
+  "slug": "fwerkor-cid-rq1-stagea-v0",
+  "author": "fwerkor",
+  "url": "https://huggingface.co/fwerkor/CID-RQ1-StageA-v0",
+  "created_at": "2026-08-25T09:02:50.000Z",
+  "updated_at": "2026-08-25T09:09:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "diffusion-language-model",
+    "tool-use",
+    "continuous-interaction-diffusion",
+    "research-artifact",
+    "base_model:GSAI-ML/iLLaDA-8B-Base",
+    "base_model:finetune:GSAI-ML/iLLaDA-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 907700879,
+  "storage_human": "908 MB",
+  "base_model": "GSAI-ML/iLLaDA-8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fwerkor/CID-Dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fwerkor/CID-Dataset",
+      "snippet": "CID Dataset Training, distillation, and evaluation artifacts for Continuous Interaction Diffusion (CID), a diffusion-native runtime for asynchronous tool-augmented reasoning."
+    },
+    {
+      "title": "GitHub - fwerkor/continuous-interaction-diffusion-paper: Continuous ...",
+      "url": "https://github.com/fwerkor/continuous-interaction-diffusion-paper",
+      "snippet": "This repository contains the LaTeX source for the CID concept paper. CID proposes a model--runtime co-designed architecture in which diffusion-language-model cognition, external perception, and user-visible generation evolve concurrently. The current preprint focuses on read-only tools and ..."
+    },
+    {
+      "title": "GitHub - fwerkor/fwerkor: fwerkor · GitHub",
+      "url": "https://github.com/fwerkor/fwerkor/tree/main",
+      "snippet": "What I Build / 我在做什么 Open systems and lightweight infrastructure. Tooling for model engineering, testing, and developer workflows. Web products, small experiments, and practical interfaces. Public writing, notes, and sharable learning resources."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "Browse AI Gateway Models",
+      "url": "https://vercel.com/ai-gateway/models",
+      "snippet": "Compare capabilities, pricing, and performance across leading AI providers."
+    }
+  ]
+}

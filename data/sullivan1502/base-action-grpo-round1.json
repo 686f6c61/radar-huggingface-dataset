@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sullivan1502/base-action-grpo-round1",
+  "slug": "sullivan1502-base-action-grpo-round1",
+  "author": "sullivan1502",
+  "url": "https://huggingface.co/sullivan1502/base-action-grpo-round1",
+  "created_at": "2026-08-25T11:32:41.000Z",
+  "updated_at": "2026-08-25T11:57:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:sullivan1502/base-action-pretrain",
+    "base_model:finetune:sullivan1502/base-action-pretrain",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81841152,
+  "parameters_human": "81.8M",
+  "storage_bytes": 2291821185,
+  "storage_human": "2.3 GB",
+  "base_model": "sullivan1502/base-action-pretrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sullivan1502/base-action-grpo · Hugging Face",
+      "url": "https://huggingface.co/sullivan1502/base-action-grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sullivan1502/base-action-grpo at main - Hugging Face",
+      "url": "https://huggingface.co/sullivan1502/base-action-grpo/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main base-action-grpo 201 kB Ctrl+K Ctrl+K 1 contributor History:2 commits sullivan1502 Build & push tokenizer (WordLevel, closed vocab) 0fe3732 verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial commitabout 7 hours ago README.md Safe 5.17 kBBuild & push tokenizer (WordLevel, closed vocab)about 7 hours ago tokenizer.json Safe 194 kBBuild & push tokenizer ..."
+    },
+    {
+      "title": "sullivan1502/base-grpo-round1 | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/sullivan1502/base-grpo-round1",
+      "snippet": "Description sullivan1502/base-grpo-round1 by sullivan1502 for text-generation — open-source AI model on HuggingFace."
+    },
+    {
+      "title": "base-action-grpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/sullivan1502/base-action-grpo",
+      "snippet": "Deploy base-action-grpo with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "base-grpo-round1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/sullivan1502/base-grpo-round1",
+      "snippet": "Run base-grpo-round1 with FriendliAI inference. This model is a fine-tuned version of sullivan1502/base-sft. It has been trained using TRL."
+    }
+  ]
+}

@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2044873008,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 1363234104,
+  "storage_human": "1.4 GB",
   "base_model": "meta-llama/Llama-2-13b-chat-hf",
   "formats": [
     "safetensors"

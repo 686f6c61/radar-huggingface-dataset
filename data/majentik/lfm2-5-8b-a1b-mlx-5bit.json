@@ -5,7 +5,7 @@
   "author": "majentik",
   "url": "https://huggingface.co/majentik/LFM2.5-8B-A1B-MLX-5bit",
   "created_at": "2026-08-24T18:14:54.000Z",
-  "updated_at": "2026-08-24T18:15:05.000Z",
+  "updated_at": "2026-08-24T19:19:58.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

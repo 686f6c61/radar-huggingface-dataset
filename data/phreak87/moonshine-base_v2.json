@@ -5,7 +5,7 @@
   "author": "Phreak87",
   "url": "https://huggingface.co/Phreak87/moonshine-base_V2",
   "created_at": "2026-08-24T10:42:00.000Z",
-  "updated_at": "2026-08-24T10:51:44.000Z",
+  "updated_at": "2026-08-24T15:15:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -18,7 +18,6 @@
     "onnx",
     "moonshine",
     "automatic-speech-recognition",
-    "mooonshine",
     "asr",
     "speech-recognition",
     "german",
@@ -31,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 313125199,
-  "storage_human": "313 MB",
+  "storage_bytes": 545350237,
+  "storage_human": "545 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -5,7 +5,7 @@
   "author": "zrlu",
   "url": "https://huggingface.co/zrlu/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70",
   "created_at": "2026-08-24T17:26:46.000Z",
-  "updated_at": "2026-08-24T17:32:32.000Z",
+  "updated_at": "2026-08-24T21:35:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

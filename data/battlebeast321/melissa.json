@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battlebeast321/Melissa",
+  "slug": "battlebeast321-melissa",
+  "author": "battlebeast321",
+  "url": "https://huggingface.co/battlebeast321/Melissa",
+  "created_at": "2026-08-25T04:02:53.000Z",
+  "updated_at": "2026-08-25T04:02:53.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "melissa mlbb - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1729482707376294484",
+      "snippet": "Generate stunning anime art with the &#x27;melissa mlbb&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Melissa - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d56s84le878c73angklg",
+      "snippet": "Explore Melissa model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Melissa ｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1802290991081596960",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Melissa &#x27; model on PixAI! Search for \"Melissa \" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Melissa - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/506ad2b2a8b3a4991cb42659da14b7a8",
+      "snippet": "Meet Melissa model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Melissa - SDXL - Free AI LORA | Tensor.Art",
+      "url": "https://www.tensor.art/models/747743313899223168",
+      "snippet": "Download Melissa - free LORA SDXL 1.0 AI model on TENSOR. SDXL, REALISM, WOMAN. By Ocelot"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Phantomcloak19/qwen2.5-3b-dpo",
+  "slug": "phantomcloak19-qwen2-5-3b-dpo",
+  "author": "Phantomcloak19",
+  "url": "https://huggingface.co/Phantomcloak19/qwen2.5-3b-dpo",
+  "created_at": "2026-06-29T15:13:08.000Z",
+  "updated_at": "2026-08-25T11:03:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "dpo",
+    "qwen2.5-3b",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 7022594645,
+  "storage_human": "7.0 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phantomcloak19/qwen2.5-3b-dpo · Hugging Face",
+      "url": "https://huggingface.co/Phantomcloak19/qwen2.5-3b-dpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phantomcloak19/qwen2.5-dpo-full · Hugging Face",
+      "url": "https://huggingface.co/Phantomcloak19/qwen2.5-dpo-full",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen2.5-3B. It has been trained using TRL."
+    },
+    {
+      "title": "qwen2.5-3b-dpo-grpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Phantomcloak19/qwen2.5-3b-dpo-grpo",
+      "snippet": "Phantomcloak19 qwen2.5-3b-dpo-grpo Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Phantomcloak19/qwen2.5-dpo-overnorm-full - friendli.ai",
+      "url": "https://friendli.ai/models/Phantomcloak19/qwen2.5-dpo-overnorm-full",
+      "snippet": "Request reserved instances Model provider Phantomcloak19 Model tree Base Qwen/Qwen2.5-3B Fine-tuned this model"
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

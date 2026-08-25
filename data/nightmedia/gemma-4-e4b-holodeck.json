@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/gemma-4-E4B-Holodeck",
   "created_at": "2026-08-24T14:13:16.000Z",
-  "updated_at": "2026-08-24T14:20:57.000Z",
+  "updated_at": "2026-08-24T16:56:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -13,8 +13,9 @@
   "languages": [],
   "tags": [
     "mlx",
-    "nightmedia",
+    "safetensors",
     "gemma4",
+    "nightmedia",
     "gemma",
     "bf16",
     "google",
@@ -33,16 +34,17 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024762910,
+  "storage_human": "16.0 GB",
   "base_model": "armand0e/Gemma-4-E4B-it-Fable-Distill, armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill, andyoneal/Gemma-4-E4B-Nightcap, DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

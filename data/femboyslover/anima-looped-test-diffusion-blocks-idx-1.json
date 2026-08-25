@@ -5,7 +5,7 @@
   "author": "femboysLover",
   "url": "https://huggingface.co/femboysLover/anima-looped-test-diffusion-blocks-idx-1",
   "created_at": "2026-07-07T00:15:09.000Z",
-  "updated_at": "2026-08-23T16:28:33.000Z",
+  "updated_at": "2026-08-24T19:18:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 2091069227,
   "parameters_human": "2.09B",
-  "storage_bytes": 674564803476,
-  "storage_human": "674.6 GB",
+  "storage_bytes": 682996864976,
+  "storage_human": "683.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "microtensor-archive/mt-code-3g-r1236-5EEv1oLk",
+  "slug": "microtensor-archive-mt-code-3g-r1236-5eev1olk",
+  "author": "microtensor-archive",
+  "url": "https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5EEv1oLk",
+  "created_at": "2026-08-25T08:56:59.000Z",
+  "updated_at": "2026-08-25T08:57:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "microtensor",
+    "arena-code-mt-3g",
+    "round-1236",
+    "state-confirmed",
+    "quality-0.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 495106880,
+  "storage_human": "495 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - enka1504/sn92-mt3g: Microtensor SN92 code/mt-3g immutable ...",
+      "url": "https://github.com/enka1504/sn92-mt3g",
+      "snippet": "Immutable release assets for a Microtensor SN92 code/mt-3g submission. The signed manifest.json binds the model bytes, round, hardware class, declared resource ceilings, pinned base-model revision, and submitting hotkey. Validators should verify the manifest before loading model.gguf."
+    },
+    {
+      "title": "microtensor-io/baseline-front-mt3g · Hugging Face",
+      "url": "https://huggingface.co/microtensor-io/baseline-front-mt3g",
+      "snippet": "microtensor-io / baseline-front-mt3g like 0 Follow microtensor 1 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Microtensor — Small models. Frontier answers.",
+      "url": "https://microtensor.vercel.app/",
+      "snippet": "Microtensor — specialist models that match frontier accuracy on one task, small enough to run on hardware you already own. Measured under load, signed, and refreshed weekly."
+    },
+    {
+      "title": "microtensor-io/microtensor-subnet: Microtensor - GitHub",
+      "url": "https://github.com/microtensor-io/microtensor-subnet",
+      "snippet": "The corpus, reference completions, role baselines, pinned base-model revisions and the mt-3g device profile land together at corpus freeze. Run mt inspect readiness for the current state of each gate. Microtensor - Bittensor subnet 92. Frontier accuracy at a fraction of the size, gated on a verified deployment envelope."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

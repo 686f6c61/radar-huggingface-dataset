@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-en-medication-biomed-roberta-base-multiclass",
+  "slug": "dt4h-cardio-ner-en-medication-biomed-roberta-base-multiclass",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-en-medication-biomed-roberta-base-multiclass",
+  "created_at": "2026-08-25T11:48:29.000Z",
+  "updated_at": "2026-08-25T11:50:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, en, English",
+    "custom_code",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 249320134,
+  "storage_human": "249 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel",
+      "snippet": "Model Card for Cardio-Ner-En-Biomed-Roberta-Base-Multilabel Description Dutch cardiology NER model for disease, medication, procedure, and symptom recognition. This is the SLERP&#x27;ed (chained) version of the 10-folds used for the paper."
+    },
+    {
+      "title": "DT4H/cardio-ner-sv-cardioberta-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-sv-cardioberta-multilabel",
+      "snippet": "Model Card for Cardio-Ner-En-Biomed-Roberta-Base-Multilabel Description Dutch cardiology NER model for disease, medication, procedure, and symptom recognition. This is the SLERP&#x27;ed (chained) version of the 10-folds used for the paper."
+    },
+    {
+      "title": "The DataTools4Heart Project - GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "nlp4bia-bsc/DT4H_Multilingual_NER - GitHub",
+      "url": "https://github.com/nlp4bia-bsc/DT4H_Multilingual_NER",
+      "snippet": "This repository contains code and documentation for multilingual Named Entity Recognition (NER) models developed within the DT4H (Data Tools for Heart) Europe Horizon project. The focus is multilingual clinical NER for disease, symptom, and procedure mention detection."
+    },
+    {
+      "title": "PDF DT4H.nl at #SMM4H-HeaRD 2026: Multilingual Clinical NER with ...",
+      "url": "https://aclanthology.org/2026.smm4h-1.14.pdf",
+      "snippet": "Abstract We describe the setup we used to complete the MultiClinAI-NER task in the SMM4H- HeaRD workshop 2026. In this work we employed a dedicated multilingual encoder model (EuroBERT-610m), two Dutch en- coder models trained from scratch on clini- cal corpora (MedRoBERTa.nl and CardioDe- BERTa.nl) and a generic Dutch encoder model (RobBERT2023-large), all finetuned with a 3- layer DNN head ..."
+    }
+  ]
+}

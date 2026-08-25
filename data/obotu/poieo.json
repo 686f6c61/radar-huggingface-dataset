@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Obotu/POIEO",
+  "slug": "obotu-poieo",
+  "author": "Obotu",
+  "url": "https://huggingface.co/Obotu/POIEO",
+  "created_at": "2026-08-25T04:50:06.000Z",
+  "updated_at": "2026-08-25T04:50:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333037,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obotu/POIEO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Obotu/POIEO-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Obotu (Mario caleb Adache ) - Hugging Face",
+      "url": "https://huggingface.co/Obotu",
+      "snippet": "AI&ML Viewer • Updated 24 days ago • 104 • 2 spaces 11"
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "AI Model API Marketplace | Video, Image, Audio & Chat APIs | PoYo.ai",
+      "url": "https://poyo.ai/models",
+      "snippet": "AI Models Catalog Explore leading AI models for image, video, audio, music, 3D, and chat in one catalog. Open any model page to review capabilities, pricing, API docs, and playground access before integration."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

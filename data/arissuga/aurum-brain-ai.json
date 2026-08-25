@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arissuga/aurum-brain-ai",
+  "slug": "arissuga-aurum-brain-ai",
+  "author": "arissuga",
+  "url": "https://huggingface.co/arissuga/aurum-brain-ai",
+  "created_at": "2026-08-02T07:41:05.000Z",
+  "updated_at": "2026-08-25T10:24:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "aurum-brain-ai",
+    "indonesian",
+    "coding",
+    "fine-tuned",
+    "qwen",
+    "text-generation",
+    "conversational",
+    "id",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3501,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 222253780204,
+  "storage_human": "222.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arissuga/aurum-brain-ai · Hugging Face",
+      "url": "https://huggingface.co/arissuga/aurum-brain-ai",
+      "snippet": "🧠 Aurum Brain AI Custom fine-tuned model dari Qwen2.5-1.5B-Instruct untuk Bahasa Indonesia, coding, dan percakapan pintar."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=arissuga%2Faurum-brain-ai",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "aurum-lab/aurum-brain-ai: AI buatan sendiri - GitHub",
+      "url": "https://github.com/aurum-lab/aurum-brain-ai",
+      "snippet": "🧠 Aurum Brain AI AI buatan sendiri — fine-tuned dari Qwen2.5-3B-Instruct untuk Bahasa Indonesia, coding expert, dan percakapan pintar."
+    },
+    {
+      "title": "Releases · aurum-lab/aurum-brain-ai · GitHub",
+      "url": "https://github.com/aurum-lab/aurum-brain-ai/releases",
+      "snippet": "Aurum Brain AI - Starter Model PENTING: Ini adalah starter model (Qwen2.5-1.5B tanpa fine-tune). Untuk versi full fine-tuned Aurum Brain AI, tunggu release \"v*.. \" (bukan \"starter-*\")."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    }
+  ]
+}

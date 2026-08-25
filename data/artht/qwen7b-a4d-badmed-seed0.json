@@ -5,7 +5,7 @@
   "author": "ArthT",
   "url": "https://huggingface.co/ArthT/qwen7b-a4d-badmed-seed0",
   "created_at": "2026-08-25T02:53:36.000Z",
-  "updated_at": "2026-08-25T03:05:10.000Z",
+  "updated_at": "2026-08-25T03:57:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 821943757,
-  "storage_human": "822 MB",
+  "storage_bytes": 1313670374,
+  "storage_human": "1.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kabing/gpt2-medium-cbctg-prior",
+  "slug": "kabing-gpt2-medium-cbctg-prior",
+  "author": "kabing",
+  "url": "https://huggingface.co/kabing/gpt2-medium-cbctg-prior",
+  "created_at": "2026-08-22T15:27:53.000Z",
+  "updated_at": "2026-08-25T05:25:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "controllable-text-generation",
+    "concept-bottleneck",
+    "compositional-generalization",
+    "lora",
+    "arxiv:2608.22956",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:adapter:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 461915298,
+  "storage_human": "462 MB",
+  "base_model": "gpt2-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kabing/gpt2-medium-cbctg-prior · Hugging Face",
+      "url": "https://huggingface.co/kabing/gpt2-medium-cbctg-prior",
+      "snippet": "Instructions to use kabing/gpt2-medium-cbctg-prior with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use kabing/gpt2-medium-cbctg-prior with PEFT:"
+    },
+    {
+      "title": "kabing/gpt2-cbctg-prior · Hugging Face",
+      "url": "https://huggingface.co/kabing/gpt2-cbctg-prior",
+      "snippet": "Instructions to use kabing/gpt2-cbctg-prior with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use kabing/gpt2-cbctg-prior with PEFT:"
+    },
+    {
+      "title": "karpathy (Andrej) · GitHub",
+      "url": "https://github.com/karpathy",
+      "snippet": "I like to train Deep Neural Nets on large datasets. - karpathy"
+    },
+    {
+      "title": "LLMs-from-scratch/ch02/02_bonus_bytepair-encoder/gpt2_model ... - GitHub",
+      "url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/ch02/02_bonus_bytepair-encoder/gpt2_model/encoder.json",
+      "snippet": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step - rasbt/LLMs-from-scratch"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

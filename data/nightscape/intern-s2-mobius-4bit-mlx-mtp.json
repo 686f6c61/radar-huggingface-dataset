@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nightscape/Intern-S2-Mobius-4bit-mlx-mtp",
+  "slug": "nightscape-intern-s2-mobius-4bit-mlx-mtp",
+  "author": "nightscape",
+  "url": "https://huggingface.co/nightscape/Intern-S2-Mobius-4bit-mlx-mtp",
+  "created_at": "2026-08-25T10:26:44.000Z",
+  "updated_at": "2026-08-25T10:38:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "interns2_mobius",
+    "mlx-lm",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "custom_code",
+    "base_model:nightscape/Intern-S2-Mobius-4bit-mlx",
+    "base_model:quantized:nightscape/Intern-S2-Mobius-4bit-mlx",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 475392758,
+  "storage_human": "475 MB",
+  "base_model": "nightscape/Intern-S2-Mobius-4bit-mlx",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternLM/Intern-S2-Mobius: Intern-S2-Mobius - GitHub",
+      "url": "https://github.com/InternLM/Intern-S2-Mobius",
+      "snippet": "The Intern-S2-Mobius release is a 35B model stored in bfloat16 weight format. This guide provides deployment examples for the following configurations: MTP speculative decoding (Recommended) Basic serving without MTP NOTE: The commands below are reference configurations. Inference frameworks are under active development, so use the latest framework documentation and your local validation ..."
+    },
+    {
+      "title": "GitHub - InternLM/Intern-S2-Mobius: Intern-S2-Mobius",
+      "url": "https://github.com/InternLM/Intern-S2-Mobius/blob/main/",
+      "snippet": "We introduce Intern-S2-Mobius, a 35B foundation model built on the Mobius-v0 architecture realized by Xtuner and LMDeploy. Instead of binding knowledge storage and reasoning computation layer by layer as in conventional Transformer models, Mobius organizes knowledge into a globally shared Memory and lets multiple Reasoners iteratively query and refine hidden states against this shared ..."
+    },
+    {
+      "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+      "url": "https://arxiv.org/pdf/2608.14290",
+      "snippet": "Upon switching to the knowledge-reasoning-decoupled Mobius architecture, the model can attain superior compression rates, thereby enabling it to acquire sufficient knowledge with substantially less training data."
+    },
+    {
+      "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+      "url": "https://arxiv.org/html/2608.14290v1",
+      "snippet": "Confronted with this bottleneck in AI development, we pursue an alternative path: increasing architectural complexity to raise the ceiling of model intelligence, thereby reducing the end-to-end overhead. To this purpose, we propose the Mobius, which decouples the binding between knowledge vectors (FFN) and reasoning operators (Self-Attn), thereby constructing a shared knowledge vector database ..."
+    },
+    {
+      "title": "internlm/Intern-S2-Mobius at main - Hugging Face",
+      "url": "https://huggingface.co/internlm/Intern-S2-Mobius/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

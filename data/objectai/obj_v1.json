@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "objectai/obj_v1",
+  "slug": "objectai-obj_v1",
+  "author": "objectai",
+  "url": "https://huggingface.co/objectai/obj_v1",
+  "created_at": "2026-08-25T08:40:02.000Z",
+  "updated_at": "2026-08-25T08:40:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "document-understanding",
+    "information-extraction",
+    "vision-language",
+    "qwen3-vl",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8887141354,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "List models | OpenAI API Reference",
+      "url": "https://developers.openai.com/api/reference/resources/models/methods/list",
+      "snippet": "Lists the currently available models, and provides basic information about each one such as the owner and availability."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "Download 580,000+ Free 3D Models — FBX, OBJ, GLB, STL | Meshy",
+      "url": "https://www.meshy.ai/free-3d-models",
+      "snippet": "Browse over 580,000 free 3D models in FBX, OBJ, GLB, and STL formats. Download community creations or generate your own with Meshy&#x27;s AI 3D model generator — free tier available."
+    }
+  ]
+}

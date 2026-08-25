@@ -5,7 +5,7 @@
   "author": "spare-rl",
   "url": "https://huggingface.co/spare-rl/SPADE-Qwen3-8B-Games",
   "created_at": "2026-07-12T06:14:17.000Z",
-  "updated_at": "2026-08-22T09:50:06.000Z",
+  "updated_at": "2026-08-25T03:05:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 536,
+  "downloads_30d": 562,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

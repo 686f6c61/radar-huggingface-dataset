@@ -5,7 +5,7 @@
   "author": "specklabs",
   "url": "https://huggingface.co/specklabs/Speck1-140M-Instruct",
   "created_at": "2026-08-24T15:32:30.000Z",
-  "updated_at": "2026-08-24T16:08:30.000Z",
+  "updated_at": "2026-08-24T18:32:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

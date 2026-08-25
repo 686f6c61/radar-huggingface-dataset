@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PHIMemo/llama31-8b-instruct-sft-balanced-3k-civic-public",
+  "slug": "phimemo-llama31-8b-instruct-sft-balanced-3k-civic-public",
+  "author": "PHIMemo",
+  "url": "https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-civic-public",
+  "created_at": "2026-08-25T04:02:02.000Z",
+  "updated_at": "2026-08-25T04:03:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "memorization",
+    "synthetic-clinical",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208787236008,
+  "storage_human": "208.8 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PHIMemo/llama31-8b-instruct-sft-balanced-3k · Hugging Face",
+      "url": "https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k",
+      "snippet": "Llama 3.1 8B Instruct — balanced 3k SFT (synthetic canaries) Fine-tuned checkpoints from the model-memo-diff / PHIMemo project (PHI / benign / public seeded documents)."
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct - Model Info, Parameters, Benchmarks ...",
+      "url": "https://www.siliconflow.com/models/meta-llama-3-1-8b-instruct",
+      "snippet": "Meta Llama 3.1 is a family of multilingual large language models developed by Meta, featuring pretrained and instruction-tuned variants in 8B, 70B, and 405B parameter sizes. This 8B instruction-tuned model is optimized for multilingual dialogue use cases and outperforms many available open-source and closed chat models on common industry benchmarks. The model was trained on over 15 trillion ..."
+    },
+    {
+      "title": "blog/llama31.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/llama31.md",
+      "snippet": "Note: We are currently working with our partners at AWS, Google Cloud, Microsoft Azure and DELL on adding Llama 3.1 8B, 70B, and 405B to Amazon SageMaker, Google Kubernetes Engine, Vertex AI Model Catalog, Azure AI Studio, DELL Enterprise Hub."
+    },
+    {
+      "title": "GitHub - GargTanya/llama3-instruct: The official Meta Llama 3 GitHub ...",
+      "url": "https://github.com/GargTanya/llama3-instruct",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to GargTanya/llama3-instruct development by creating an account on GitHub."
+    }
+  ]
+}

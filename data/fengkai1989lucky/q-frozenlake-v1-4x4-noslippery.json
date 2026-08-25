@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fengkai1989Lucky/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "fengkai1989lucky-q-frozenlake-v1-4x4-noslippery",
+  "author": "fengkai1989Lucky",
+  "url": "https://huggingface.co/fengkai1989Lucky/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-25T04:02:42.000Z",
+  "updated_at": "2026-08-25T04:10:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "efanuy/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/efanuy/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Haokai/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/Haokai/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "Getting Started with Q-Learning on FrozenLake-v1 - fxis.ai",
+      "url": "https://fxis.ai/edu/getting-started-with-q-learning-on-frozenlake-v1/",
+      "snippet": "In this tutorial, we will use the 4×4 grid layout of the FrozenLake-v1 without the slippery condition, making it a deterministic challenge. Setting Up Your Q-Learning Agent Before we start coding, let&#x27;s understand the structure you need to follow to get your Q-Learning agent running: Step 1: Load the model using the appropriate repository ID."
+    },
+    {
+      "title": "TimePlan/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/82782",
+      "snippet": "This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "herooooooooo/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/44652",
+      "snippet": "This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    }
+  ]
+}

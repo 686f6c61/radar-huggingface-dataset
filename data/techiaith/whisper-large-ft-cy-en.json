@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "techiaith/whisper-large-ft-cy-en",
+  "slug": "techiaith-whisper-large-ft-cy-en",
+  "author": "techiaith",
+  "url": "https://huggingface.co/techiaith/whisper-large-ft-cy-en",
+  "created_at": "2026-03-24T06:56:52.000Z",
+  "updated_at": "2026-08-25T10:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "cy",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "welsh",
+    "cymraeg",
+    "speech-recognition",
+    "translation",
+    "cy",
+    "en",
+    "dataset:techiaith/banc-trawsgrifiadau-bangor",
+    "dataset:techiaith/corpws-clllc-wlga",
+    "dataset:cymen-arfor/lleisiau-arfor",
+    "dataset:techiaith/commonvoice_vad_cy",
+    "base_model:openai/whisper-large-v2",
+    "base_model:finetune:openai/whisper-large-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2367,
+  "trending_score": 0,
+  "parameters": 1543304960,
+  "parameters_human": "1.54B",
+  "storage_bytes": 12346751538,
+  "storage_human": "12.3 GB",
+  "base_model": "openai/whisper-large-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "techiaith/whisper-large-ft-cy-en · Hugging Face",
+      "url": "https://huggingface.co/techiaith/whisper-large-ft-cy-en",
+      "snippet": "Instructions to use techiaith/whisper-large-ft-cy-en with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use techiaith/whisper-large-ft-cy-en with Transformers:"
+    },
+    {
+      "title": "techiaith/whisper-large-v3-ft-cy-en · Hugging Face",
+      "url": "https://huggingface.co/techiaith/whisper-large-v3-ft-cy-en",
+      "snippet": "Edit model card whisper-large-v3-ft-cy-en This model is a fine-tuned version of openai/whisper-large-v3 on Welsh and English bilingual data originally from Mozilla&#x27;s Common Voice dataset (see: techiaith/commonvoice_16_1_en_cy). It achieves the following results on the evaluation set: Loss: 0.1480 Wer: 25.1341 Model description More information ..."
+    },
+    {
+      "title": "techiaith/whisper-large-ft-cy-en - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/techiaith/whisper-large-ft-cy-en",
+      "snippet": "Run techiaith/whisper-large-ft-cy-en with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Whisper Large Ft Cy En Ct2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/techiaith/whisper-large-ft-cy-en-ct2",
+      "snippet": "by techiaith hf-model--techiaith--whisper-large-ft-cy-en-ct2 Nexus Index 36.4Top 22% S: Semantic50 A: Authority0 P: Popularity8 R: Recency93 Q: Quality50 Tech Context Vital Performance 87 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 36.4 FNI Score Tiny - Params - Context 87 Downloads Commercial APACHE License 🔬Dive Deep ..."
+    },
+    {
+      "title": "techiaith/whisper-large-v3-turbo-ft-verbatim-cy-en - friendli.ai",
+      "url": "https://friendli.ai/models/techiaith/whisper-large-v3-turbo-ft-verbatim-cy-en",
+      "snippet": "Run techiaith/whisper-large-v3-turbo-ft-verbatim-cy-en with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

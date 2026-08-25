@@ -5,7 +5,7 @@
   "author": "Kasra99",
   "url": "https://huggingface.co/Kasra99/groot_dex_warehouse_ae",
   "created_at": "2026-08-24T19:20:24.000Z",
-  "updated_at": "2026-08-24T19:24:08.000Z",
+  "updated_at": "2026-08-25T04:30:32.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "lerobot",
+    "safetensors",
     "robotics",
     "vision-language-action",
     "groot",
@@ -28,10 +29,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 62881088456,
+  "storage_human": "62.9 GB",
   "base_model": "nvidia/GR00T-N1.7-3B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

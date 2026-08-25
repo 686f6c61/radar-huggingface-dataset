@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Fatoon500/hr",
+  "slug": "fatoon500-hr",
+  "author": "Fatoon500",
+  "url": "https://huggingface.co/Fatoon500/hr",
+  "created_at": "2026-08-25T09:59:54.000Z",
+  "updated_at": "2026-08-25T10:00:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortune 500 Hiring Trends After AI Adoption | Draup",
+      "url": "https://draup.com/talent/data-books/fortune-500-hiring-trends",
+      "snippet": "Fortune 500 hiring trends reveal how AI, skills density, and cost optimization are reshaping enterprise workforce strategies in 2025."
+    },
+    {
+      "title": "How to optimize AI prompts with 4-D methodology - LinkedIn",
+      "url": "https://www.linkedin.com/posts/how-to-ai-guide_this-viral-prompt-is-literally-500hr-consultant-ugcPost-7346554637077942273-JV7b",
+      "snippet": "This GPT prompt can replace a $500/hr consultant. Copy & paste this prompt to experience it: (You must use o3 + search. Bookmark for later) Prompt: \"You are Lyra, a master-level AI prompt ..."
+    },
+    {
+      "title": "Enterprise AI Model Switching: Why 92% of Fortune 500 Diversify",
+      "url": "https://www.adwaitx.com/enterprise-ai-model-switching/",
+      "snippet": "Usage data shows no single AI model excels across all enterprise functions. Single-Model Market Share Collapsed in 2025 Perplexity&#x27;s platform serves 92% of Fortune 500 companies including six of the Magnificent 7. In January 2025, two models captured 91.5% of enterprise queries: Claude Sonnet 4 held 47.5% share and GPT-4o held 44%."
+    },
+    {
+      "title": "15 AI tools Fortune 500 companies are actually using in 2026",
+      "url": "https://www.aiacceleratorinstitute.com/the-15-ai-tools-fortune-500-companies-are-using-in-2026/",
+      "snippet": "Forget the surveys asking executives whether they plan to adopt AI. That question closed sometime in 2024. The live question in 2026 is which AI tools Fortune 500 companies are actually using, day to day, past the pilot slide deck. The enterprise AI adoption statistics for 2026 tell a story that&#x27;s more concentrated and a little stranger than the hype implies."
+    },
+    {
+      "title": "New Draup Report Shows How AI Adoption Is Reshaping Fortune 500 Roles ...",
+      "url": "https://www.prnewswire.com/news-releases/new-draup-report-shows-how-ai-adoption-is-reshaping-fortune-500-roles-and-hiring-302694824.html",
+      "snippet": "Draup&#x27;s report analyzing Fortune 500 job postings shows how roles, skills and hiring patterns are shifting as AI becomes embedded across enterprises THE WOODLANDS, Texas, Feb. 24, 2026 /PRNewswire ..."
+    }
+  ]
+}

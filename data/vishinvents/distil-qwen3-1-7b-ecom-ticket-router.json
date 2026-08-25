@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vishinvents/distil-qwen3-1.7b-ecom-ticket-router",
+  "slug": "vishinvents-distil-qwen3-1-7b-ecom-ticket-router",
+  "author": "vishinvents",
+  "url": "https://huggingface.co/vishinvents/distil-qwen3-1.7b-ecom-ticket-router",
+  "created_at": "2026-08-25T08:36:53.000Z",
+  "updated_at": "2026-08-25T08:37:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "ecommerce",
+    "customer-support",
+    "ticket-routing",
+    "structured-output",
+    "distil-labs",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6899957186,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3 1.7B Fine-Tuning Guide - distil labs",
+      "url": "https://www.distillabs.ai/learn/qwen3-1-7b-fine-tuning-guide/",
+      "snippet": "Qwen3 1.7B Fine-Tuning Guide Qwen3-1.7B is the model the distil labs docs tell you to start with when you have no stronger constraint. It is small enough to serve on a modest GPU, ranks mid-table after fine-tuning across eight tasks, and supports every task type the platform offers, including tool calling."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distil-labs/distil-qwen3-1.7b-posthog-extractor · Hugging Face",
+      "url": "https://huggingface.co/distil-labs/distil-qwen3-1.7b-posthog-extractor",
+      "snippet": "A 1.7B specialist that reads a short user-behavior narration and emits product findings (bugs and UX gaps) as strict JSON. One of three tools in the distil-posthog-traffic-analyser harness; trained on the Distil Labs platform."
+    },
+    {
+      "title": "Qwen 3 1.7B | Intel® Software Catalog",
+      "url": "https://aiswcatalog.intel.com/models/qwen-qwen3-1-7b",
+      "snippet": "Qwen3-1.7B is a high-density, ultra-efficient language model designed for extreme throughput on server CPUs. Its compact architecture allows for massive parallelization, making it an ideal choice for high-volume inference tasks where latency and resource utilization are primary concerns."
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

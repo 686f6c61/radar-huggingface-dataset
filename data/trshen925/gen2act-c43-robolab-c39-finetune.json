@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "trshen925/gen2act-c43-robolab-c39-finetune",
+  "slug": "trshen925-gen2act-c43-robolab-c39-finetune",
+  "author": "trshen925",
+  "url": "https://huggingface.co/trshen925/gen2act-c43-robolab-c39-finetune",
+  "created_at": "2026-08-25T08:49:40.000Z",
+  "updated_at": "2026-08-25T08:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "joint-velocity",
+    "gen2act",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1724638719,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - trshen925/gen2act",
+      "url": "https://github.com/trshen925/gen2act",
+      "snippet": "Contribute to trshen925/gen2act development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - NVlabs/RoboLab",
+      "url": "https://github.com/NVLabs/RoboLab",
+      "snippet": "AI-Enabled Workflows: Generate new scenes and tasks in minutes using natural language with the /robolab-scenegen and /robolab-taskgen Claude Code skills. Multi-Environment Parallel Evaluation: Run multiple episodes in parallel across environments with vectorized conditionals and per-environment termination."
+    },
+    {
+      "title": "Gen2Act: Human Video Generation in Novel Scenarios enables ...",
+      "url": "https://arxiv.org/abs/2409.16283",
+      "snippet": "How can robot manipulation policies generalize to novel tasks involving unseen object types and new motions? In this paper, we provide a solution in terms of predicting motion information from web data through human video generation and conditioning a robot policy on the generated video. Instead of attempting to scale robot data collection which is expensive, we show how we can leverage video ..."
+    },
+    {
+      "title": "Gen2Act: Human Video Generation in Novel Scenarios enables ...",
+      "url": "https://homangab.github.io/gen2act/",
+      "snippet": "Gen2Act decomposes the overall policy learning into human video generation followed by robot execution conditioned on the generated video. Gen2Act leverage a pre-trained video generation model zero-shot for generating human videos in novel scenarios."
+    },
+    {
+      "title": "Gen2Act: Human Video Generation in Novel Scenarios enables ...",
+      "url": "https://arxiv.org/html/2409.16283v1",
+      "snippet": "The red frame and the language description are input to the video generation model of Gen2Act . The black frames show sub-sampled frames of the generated video, and the blue frames show robot executions conditioned on the generated video."
+    }
+  ]
+}

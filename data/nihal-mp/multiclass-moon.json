@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nihal-mp/multiclass-moon",
+  "slug": "nihal-mp-multiclass-moon",
+  "author": "nihal-mp",
+  "url": "https://huggingface.co/nihal-mp/multiclass-moon",
+  "created_at": "2026-08-25T09:19:16.000Z",
+  "updated_at": "2026-08-25T09:19:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 173,
+  "parameters_human": "173",
+  "storage_bytes": 1164,
+  "storage_human": "1164 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nihal-mp/outputs · Hugging Face",
+      "url": "https://huggingface.co/nihal-mp/outputs",
+      "snippet": "Instructions to use nihal-mp/outputs with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use nihal-mp/outputs with PEFT: ... Notebooks Google Colab Kaggle outputs Model description Intended uses & limitations Training and evaluation data Training procedure Training ..."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "GitHub - Muhammednihalmp/Muhammednihalmp",
+      "url": "https://github.com/Muhammednihalmp/Muhammednihalmp",
+      "snippet": "🛡️ Muhammed Nihal MP 💻 Computer Engineer | 🔐 Ethical Hacker | 🔧 Hardware Innovator 🎯 About Me ... 🚀 Current Projects"
+    },
+    {
+      "title": "nihal-mp (Nihal Aftab Patel) - Hugging Face",
+      "url": "https://huggingface.co/nihal-mp/datasets",
+      "snippet": "User profile of Nihal Aftab Patel on Hugging Face"
+    },
+    {
+      "title": "FedMCP++: Integrating Modular Expert Heads with Prototype-Guided ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/26/17/5328",
+      "snippet": "FedMCP++ equips every client with a complete private model—a lightweight convolutional backbone plus a private expert head—and couples the federation through prototype-guided aggregation and contrastive distillation; clients collaborate solely via soft predictions and class prototypes computed on a small public proxy set, and no model ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2",
+  "slug": "batsclamp-huihui-qwen3-8-27b-abliterated-fp8-v2",
+  "author": "batsclamp",
+  "url": "https://huggingface.co/batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2",
+  "created_at": "2026-08-24T16:34:58.000Z",
+  "updated_at": "2026-08-25T05:19:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vllm",
+    "fp8",
+    "compressed-tensors",
+    "abliterated",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27359595760,
+  "parameters_human": "27.36B",
+  "storage_bytes": 36798284317,
+  "storage_human": "36.8 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-FP8-v2 - Hugging Face",
+      "url": "https://huggingface.co/batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Huihui Qwen3.8 27b Abliterated Fp8 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/batsclamp/huihui-qwen3.8-27b-abliterated-fp8",
+      "snippet": "Registry entry for model Huihui Qwen3.8 27b Abliterated Fp8; source metadata pending."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

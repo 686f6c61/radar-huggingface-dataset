@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aliai1225/tcd3010",
+  "slug": "aliai1225-tcd3010",
+  "author": "aliai1225",
+  "url": "https://huggingface.co/aliai1225/tcd3010",
+  "created_at": "2026-08-25T05:06:11.000Z",
+  "updated_at": "2026-08-25T05:06:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48965024,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aliai1225/tcd3010 · Hugging Face",
+      "url": "https://huggingface.co/aliai1225/tcd3010",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tcd3010.onnx · Nikolaychekur/Zoja2001 at main - Hugging Face",
+      "url": "https://huggingface.co/Nikolaychekur/Zoja2001/blob/main/tcd3010.onnx",
+      "snippet": "Nikolaychekur / Zoja2001 like 0 ONNX Model card FilesFiles and versions xet Community main Zoja2001 /tcd3010.onnx Nikolaychekur Upload tcd3010.onnx 0608a38 verifiedabout 1 month ago download Copy download link history blame contribute delete Safe 49 MB"
+    },
+    {
+      "title": "AI Model List - One Click Hangar",
+      "url": "https://oneclickhangar.com/forum/index.php?topic=535.0",
+      "snippet": "AI Model List Thought id start a comprehensive list of available GA, Helicopters and bizjets for reference Aero L39 Albatross KRAI Aeronca A11 Mike Cronin Airbus A318 FAIB A319 FAIB A319NEO FAIB A320 FAIB A320NEO FAIB A321 FAIB A321NEO FAIB A330 TFS A340 TFS Antonov AN2 Rysiek Winawer Agusta Westland AW139 JYAI Aviat Pitts Special S-2 DWAI Avro Lancaster JYAI BAE HS125-700 HTAI HS125-800 HTAI ..."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Content Detector | ChatGPT, Copilot Claude and 40+",
+      "url": "https://contentdetector.org/",
+      "snippet": "AI Content Detector for Real-World Writing ContentDetector.org helps you check if a passage was likely written by an AI model. Paste text, upload a file, or drop in a URL. In a few seconds you get a clear score, section-by-section highlights, and simple guidance to keep your content authentic and publish-ready. Built for editors, marketers, educators, and teams that care about trust."
+    }
+  ]
+}

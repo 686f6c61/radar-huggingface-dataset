@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "darkps/ice-AI",
+  "slug": "darkps-ice-ai",
+  "author": "darkps",
+  "url": "https://huggingface.co/darkps/ice-AI",
+  "created_at": "2026-08-25T09:20:06.000Z",
+  "updated_at": "2026-08-25T09:20:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DarkPs",
+      "url": "https://www.dark.ps/",
+      "snippet": "DarkPs - AI Research & Open Source Projects. Developing DarkIT language models, HalaGPT AI assistant, developer tools, and artificial intelligence technologies."
+    },
+    {
+      "title": "darkps (DarkPs) - Hugging Face",
+      "url": "https://huggingface.co/darkps/models",
+      "snippet": "darkps&#x27;s models4 Sort: Recently updated darkps/darkit-v2.5 Text Generation • 15B•Updated 11 days ago• 1.91k • 5"
+    },
+    {
+      "title": "GitHub - dark-ps/DarkPs-Agent-CLI: Extensible local-first AI agent ...",
+      "url": "https://github.com/dark-ps/DarkPs-Agent-CLI",
+      "snippet": "DarkPs Agent Enterprise-Grade, Local-First Agent Framework An extensible automation framework engineered for project workspaces, developer tooling, model orchestration, MCP integration, and reusable runtime capabilities. Designed for open-source distribution — architected for production-grade automation and code operations."
+    },
+    {
+      "title": "DarkPs-Agent-CLI/api at main · dark-ps/DarkPs-Agent-CLI",
+      "url": "https://github.com/dark-ps/DarkPs-Agent-CLI/tree/main/api",
+      "snippet": "Extensible local-first AI agent framework for automation, coding, tools, and multi-model workflows. - dark-ps/DarkPs-Agent-CLI"
+    },
+    {
+      "title": "ICE is using AI from Palantir and OpenAI for immigration enforcement ...",
+      "url": "https://techstartups.com/2026/01/29/ice-is-using-ai-from-palantir-and-openai-for-immigration-enforcement-critics-warn-of-surveillance-overreach/",
+      "snippet": "ICE is quietly building one of the most advanced AI stacks in federal law enforcement, and the latest disclosure confirms it. According to an update to the Department of Homeland Security&#x27;s 2025 AI Use Case Inventory, U.S. Immigration and Customs Enforcement is using artificial intelligence tools from Palantir Technologies and OpenAI across enforcement, data analysis,"
+    }
+  ]
+}

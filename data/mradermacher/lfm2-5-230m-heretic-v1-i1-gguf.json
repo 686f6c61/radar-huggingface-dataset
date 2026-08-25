@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-230M-heretic-v1-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-230m-heretic-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-230M-heretic-v1-i1-GGUF",
+  "created_at": "2026-08-25T09:36:41.000Z",
+  "updated_at": "2026-08-25T09:46:12.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:dalatexcoder/LFM2.5-230M-heretic-v1",
+    "base_model:quantized:dalatexcoder/LFM2.5-230M-heretic-v1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 3110007776,
+  "storage_human": "3.1 GB",
+  "base_model": "dalatexcoder/LFM2.5-230M-heretic-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2.5-230M-heretic-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-230M-heretic-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/LFM2.5-230M-heretic-v1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-230M-heretic-v1-GGUF/tree/main",
+      "snippet": "mradermacher / LFM2.5-230M-heretic-v1-GGUF like 0 Transformers GGUF 10 languages liquid lfm2.5 edge heretic uncensored decensored abliterated conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-230M | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/LiquidAI/LFM2.5-230M",
+      "snippet": "Liquid AI&#x27;s most compact LFM2.5 chat model (230M) on the LFM2 hybrid conv+attention backbone — distilled from LFM2.5-350M, tool calling and 32K context, built for edge / on-device serving."
+    },
+    {
+      "title": "LFM2.5-230M: Built to Run Anywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
+      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

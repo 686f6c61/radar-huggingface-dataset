@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Serenity-31B-v1.1-i1-GGUF",
   "created_at": "2026-08-23T15:24:22.000Z",
-  "updated_at": "2026-08-24T05:25:33.000Z",
+  "updated_at": "2026-08-24T06:18:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,12 +36,12 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 353,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 184162416096,
-  "storage_human": "184.2 GB",
+  "storage_bytes": 334809562336,
+  "storage_human": "334.8 GB",
   "base_model": "ReadyArt/Serenity-31B-v1.1",
   "formats": [
     "gguf"

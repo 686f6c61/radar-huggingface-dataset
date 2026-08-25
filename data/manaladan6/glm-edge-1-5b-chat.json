@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "manaladan6/glm-edge-1.5b-chat",
+  "slug": "manaladan6-glm-edge-1-5b-chat",
+  "author": "manaladan6",
+  "url": "https://huggingface.co/manaladan6/glm-edge-1.5b-chat",
+  "created_at": "2026-08-25T05:12:47.000Z",
+  "updated_at": "2026-08-25T05:12:48.000Z",
+  "license": "glm-4",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm",
+    "edge",
+    "text-generation",
+    "conversational",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1593427968,
+  "parameters_human": "1.59B",
+  "storage_bytes": 3186882328,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manaladan6/glm-edge-1.5b-chat · Hugging Face",
+      "url": "https://huggingface.co/manaladan6/glm-edge-1.5b-chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/glm-edge-1.5b-chat · Hugging Face",
+      "url": "https://huggingface.co/zai-org/glm-edge-1.5b-chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-Edge/README_en.md at main · zai-org/GLM-Edge · GitHub",
+      "url": "https://github.com/zai-org/GLM-Edge/blob/main/README_en.md",
+      "snippet": "The GLM-Edge series is our attempt to meet real-world deployment scenarios for edge devices. It consists of two sizes of large language dialogue models and multimodal understanding models (GLM-Edge-1.5B-Chat, GLM-Edge-4B-Chat, GLM-Edge-V-2B, GLM-Edge-V-5B). Among them, the 1.5B / 2B models are mainly targeted at platforms like mobile phones and car machines, while the 4B / 5B models are aimed ..."
+    },
+    {
+      "title": "Glm Edge 1.5B Chat - Specs, Capabilities & Benchmarks | Inferbase",
+      "url": "https://inferbase.ai/models/zai-glm-edge-1-5b-chat",
+      "snippet": "Glm Edge 1.5B Chat is a 1.5-billion parameter chat model developed by Z.ai. It is a text-only model with a context window of 8,192 tokens. Input Output Context 8K Max Output 0K Parameters 1.6B"
+    },
+    {
+      "title": "GitHub - zai-org/GLM-Edge: GLM Series Edge Models",
+      "url": "https://github.com/zai-org/GLM-Edge",
+      "snippet": "GLM-Edge 系列是我们在面向端侧真实落地使用的场景下的一次尝试，由两种尺寸的大语言对话模型和多模态理解模型组成（ GLM-Edge-1.5B-Chat， GLM-Edge-4B-Chat， GLM-Edge-V-2B， GLM-Edge-V-5B）。其中， 1.5B / 2B 模型主要面向手机、车机等平台， 4B / 5B 模型主要面向PC等平台。 基于GLM-4系列的技术积累，我们针对端 ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "PollardWeights",
   "url": "https://huggingface.co/PollardWeights/Qwen3.8-27B-Pollard",
   "created_at": "2026-08-24T16:18:15.000Z",
-  "updated_at": "2026-08-24T16:18:16.000Z",
+  "updated_at": "2026-08-24T22:33:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -14,8 +14,8 @@
     "en"
   ],
   "tags": [
-    "pollard",
     "gguf",
+    "pollard",
     "llama.cpp",
     "qwen35",
     "multimodal",
@@ -26,15 +26,17 @@
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:quantized:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 28730008992,
+  "storage_human": "28.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

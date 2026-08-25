@@ -5,7 +5,7 @@
   "author": "Lego-X",
   "url": "https://huggingface.co/Lego-X/qwen3_5_35b_a3b_base_ohsdk_200k_rl",
   "created_at": "2026-08-10T06:55:13.000Z",
-  "updated_at": "2026-08-24T15:48:50.000Z",
+  "updated_at": "2026-08-25T05:32:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

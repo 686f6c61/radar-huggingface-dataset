@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yuichiron/act_blue_cube_v3_50ep",
+  "slug": "yuichiron-act_blue_cube_v3_50ep",
+  "author": "Yuichiron",
+  "url": "https://huggingface.co/Yuichiron/act_blue_cube_v3_50ep",
+  "created_at": "2026-08-25T03:20:29.000Z",
+  "updated_at": "2026-08-25T03:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Yuichiron/so101_blue_cube_to_bowl_v3_20260825_20260825_112035",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuichiron/act_blue_cube_v2 · Hugging Face",
+      "url": "https://huggingface.co/Yuichiron/act_blue_cube_v2",
+      "snippet": "Instructions to use Yuichiron/act_blue_cube_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Yuichiron/act_blue_cube_v2 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your ..."
+    },
+    {
+      "title": "makermods/act_makermods_ms_scripted_50ep_blue_cube_orange_tray_20260813 ...",
+      "url": "https://huggingface.co/makermods/act_makermods_ms_scripted_50ep_blue_cube_orange_tray_20260813_193020_2026-08-13_20-25-20",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | Tensor.Art",
+      "url": "https://tensor.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

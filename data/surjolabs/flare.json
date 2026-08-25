@@ -25,13 +25,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 2,
-  "downloads_30d": 0,
+  "likes": 4,
+  "downloads_30d": 307,
   "trending_score": 0,
   "parameters": 130393152,
   "parameters_human": "130.4M",
-  "storage_bytes": 29094981006,
-  "storage_human": "29.1 GB",
+  "storage_bytes": 27975943275,
+  "storage_human": "28.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

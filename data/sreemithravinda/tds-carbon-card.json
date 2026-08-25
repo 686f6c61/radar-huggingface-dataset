@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sreemithravinda/tds-carbon-card",
+  "slug": "sreemithravinda-tds-carbon-card",
+  "author": "sreemithravinda",
+  "url": "https://huggingface.co/sreemithravinda/tds-carbon-card",
+  "created_at": "2026-08-25T09:04:01.000Z",
+  "updated_at": "2026-08-25T09:05:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shivainlabs/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shivainlabs/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "ShivanshHanda/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/ShivanshHanda/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (8 GPUs) Training Mode: pre-training Region: us-central1 GPU Hours: 76.6h (PUE: 1.59) Total Energy: 292.3056 kWh CO₂ Emissions: 102.307 kg ..."
+    },
+    {
+      "title": "Carbon Design System",
+      "url": "https://carbondesignsystem.com/",
+      "snippet": "Carbon is IBM&#x27;s open source design system for products and digital experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors."
+    },
+    {
+      "title": "GitHub - ivylee/model-cards-and-datasheets: A collection of machine ...",
+      "url": "https://github.com/ivylee/model-cards-and-datasheets",
+      "snippet": "Model Cards for Model Reporting DAG Card is the new Model Card Face Detection, Google Cloud Vision API Object Detection, Google Cloud Vision API Toxicity, Google Conversation AI GPT-2, Open AI GPT-3, Open AI PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models \"The Human Body is a Black Box\": Supporting Clinical Decision-Making with Deep Learning MediaPipe ..."
+    },
+    {
+      "title": "Carbon for AI - Carbon Design System",
+      "url": "https://carbondesignsystem.com/guidelines/carbon-for-ai/",
+      "snippet": "Carbon for AI is an extension of the Carbon system, designed to give AI instances in IBM products a visually and behaviorally distinct identity."
+    }
+  ]
+}

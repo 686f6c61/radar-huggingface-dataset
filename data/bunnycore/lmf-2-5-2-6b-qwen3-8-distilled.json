@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled",
+  "slug": "bunnycore-lmf-2-5-2-6b-qwen3-8-distilled",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled",
+  "created_at": "2026-08-25T10:18:49.000Z",
+  "updated_at": "2026-08-25T10:18:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "lfm2",
+    "trl",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22630558,
+  "storage_human": "23 MB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "LiquidAI/LFM2.5-2.6B Text Generation • 3B • Updated 3 days ago • 176k • 681 LiquidAI/LFM2.5-230M Text Generation • 0.2B • Updated 4 days ago • 48.2k • 278"
+    },
+    {
+      "title": "bunnycore (Hoptimizer) - Hugging Face",
+      "url": "https://huggingface.co/bunnycore/models",
+      "snippet": "LLM, Text to Image and Video, Love Model Merging and Small LMs"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    }
+  ]
+}

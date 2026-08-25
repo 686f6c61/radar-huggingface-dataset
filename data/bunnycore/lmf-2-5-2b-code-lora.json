@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bunnycore/LMF-2.5-2B-Code-Lora",
+  "slug": "bunnycore-lmf-2-5-2b-code-lora",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/LMF-2.5-2B-Code-Lora",
+  "created_at": "2026-08-25T11:32:14.000Z",
+  "updated_at": "2026-08-25T11:32:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:LiquidAI/LFM2.5-2.6B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "dataset:faunix/Qwen3.8-27B-Distillation-40K",
+    "arxiv:1910.09700",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1179648,
+  "parameters_human": "1.2M",
+  "storage_bytes": 24256670,
+  "storage_human": "24 MB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bunnycore/Gemma2-2b-code-lora · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/Gemma2-2b-code-lora",
+      "snippet": "Uploaded model Developed by: bunnycore License: apache-2.0 Finetuned from model : IlyaGusev/gemma-2-2b-it-abliterated This gemma2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Gemma2 2B Code Lora by bunnycore — VRAM 0.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/bunnycore%2FGemma2-2b-code-lora,66DJ2FtPRrCOM0RBq6AySq",
+      "snippet": "Details and insights about Gemma2 2B Code Lora LLM by bunnycore: benchmarks, internals, and performance insights. Features: 2b LLM, VRAM: 0.1GB, License: apache-2.0, LLM Explorer Score: 0.17. Find out how Gemma2 2B Code Lora can be utilized in your business workflows, problem-solving, and tackling specific tasks."
+    },
+    {
+      "title": "bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    }
+  ]
+}

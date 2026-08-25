@@ -5,7 +5,7 @@
   "author": "jiminaa",
   "url": "https://huggingface.co/jiminaa/Llama-3.1-8B-Instruct-PII-LoRA",
   "created_at": "2026-08-25T00:02:23.000Z",
-  "updated_at": "2026-08-25T00:02:49.000Z",
+  "updated_at": "2026-08-25T04:10:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 101156112,
-  "storage_human": "101 MB",
+  "storage_bytes": 268988352,
+  "storage_human": "269 MB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

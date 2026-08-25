@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qualcomm/MiniLM-v2",
+  "slug": "qualcomm-minilm-v2",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/MiniLM-v2",
+  "created_at": "2026-07-01T21:10:05.000Z",
+  "updated_at": "2026-08-25T04:13:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "foundation",
+    "real_time",
+    "android",
+    "text-generation",
+    "arxiv:1908.10084",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniLM-v2 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/minilm_v2",
+      "snippet": "MiniLM-v2 Lightweight sentence embedding model for semantic similarity and search. All‑MiniLM‑L6‑v2 maps sentences to a 384‑dimensional dense vector space. Trained on 1B+ sentence pairs, it excels at semantic search, clustering, and sentence similarity tasks while being small enough to run on mobile devices."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/minilm_v2/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/minilm_v2/README.md",
+      "snippet": "This is based on the implementation of MiniLM-v2 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/minilm_v2 at main · qualcomm/ai ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/minilm_v2",
+      "snippet": "This is based on the implementation of MiniLM-v2 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "qualcomm/MiniLM-v2 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/MiniLM-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    }
+  ]
+}

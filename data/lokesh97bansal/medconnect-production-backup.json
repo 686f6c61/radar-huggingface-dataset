@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Lokesh97bansal/medconnect-production-backup",
+  "slug": "lokesh97bansal-medconnect-production-backup",
+  "author": "Lokesh97bansal",
+  "url": "https://huggingface.co/Lokesh97bansal/medconnect-production-backup",
+  "created_at": "2026-04-14T16:55:22.000Z",
+  "updated_at": "2026-08-25T09:32:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18604204368,
+  "storage_human": "18.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lokesh97bansal/medconnect-production-backup · Hugging Face",
+      "url": "https://huggingface.co/Lokesh97bansal/medconnect-production-backup",
+      "snippet": "Lokesh97bansal / medconnect-production-backup like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Lokesh97bansal (Lokesh Bansal) - Hugging Face",
+      "url": "https://huggingface.co/Lokesh97bansal",
+      "snippet": "Recent Activity updated a model6 days ago Lokesh97bansal/medconnect-production-backup published a model16 days ago Lokesh97bansal/medconnect-production-backup published a datasetabout 2 months ago Lokesh97bansal/ps2-notebook-submission View all activity"
+    },
+    {
+      "title": "Lokesh97Bansal/Lokesh97Bansal: AI research engineer - GitHub",
+      "url": "https://github.com/Lokesh97Bansal/Lokesh97Bansal",
+      "snippet": "Lokesh Bansal AI research engineer — ADAS perception at Netradyne · M.Tech, Robotics & Autonomous Systems, IISc Bengaluru. Working on speech & language AI, computer vision, reinforcement learning, and on-device / edge AI systems."
+    },
+    {
+      "title": "Lokesh97Bansal/README.md at main - GitHub",
+      "url": "https://github.com/Lokesh97Bansal/Lokesh97Bansal/blob/main/README.md",
+      "snippet": "Lokesh Bansal AI research engineer — ADAS perception at Netradyne · M.Tech, Robotics & Autonomous Systems, IISc Bengaluru. Working on speech & language AI, computer vision, reinforcement learning, and on-device / edge AI systems."
+    },
+    {
+      "title": "5,000 AI-built apps leak sensitive user data, security report finds",
+      "url": "https://www.moneycontrol.com/news/trends/5-000-ai-built-apps-leak-sensitive-user-data-security-report-finds-13916351.html",
+      "snippet": "Cybersecurity researchers warn that popular AI coding platforms are allowing insecure apps to go online, exposing medical records, financial details and private chatbot conversations."
+    }
+  ]
+}

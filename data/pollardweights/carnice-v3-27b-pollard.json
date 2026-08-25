@@ -5,7 +5,7 @@
   "author": "PollardWeights",
   "url": "https://huggingface.co/PollardWeights/Carnice-V3-27b-Pollard",
   "created_at": "2026-08-24T04:44:39.000Z",
-  "updated_at": "2026-08-24T07:59:33.000Z",
+  "updated_at": "2026-08-24T15:29:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,13 +33,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 13011677696,
-  "storage_human": "13.0 GB",
+  "storage_bytes": 48362994111,
+  "storage_human": "48.4 GB",
   "base_model": "kai-os/Carnice-V3",
   "formats": [
     "gguf"

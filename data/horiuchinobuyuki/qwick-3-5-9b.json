@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "horiuchinobuyuki/Qwick-3.5-9B",
+  "slug": "horiuchinobuyuki-qwick-3-5-9b",
+  "author": "horiuchinobuyuki",
+  "url": "https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B",
+  "created_at": "2026-08-25T03:42:24.000Z",
+  "updated_at": "2026-08-25T03:43:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "reasoning",
+    "efficient-thinking",
+    "vision-validation-evaluated",
+    "full-weights",
+    "text-evaluated",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839709813,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    },
+    {
+      "title": "Qwen3.5-9B Complete Guide: Run on Ollama with Just 5GB",
+      "url": "https://www.oflight.co.jp/en/columns/qwen35-9b-complete-guide",
+      "snippet": "The Standout SLM of 2026 On March 2, 2026, Alibaba Cloud&#x27;s Qwen team officially released the Qwen3.5 Small Language Model series, featuring models at 0.8B, 2B, 4B, and 9B parameters. Among these, the 9B model has sent shockwaves through the AI industry by outperforming the previous-generation Qwen3-30B—a model more than three times its size."
+    },
+    {
+      "title": "lukey03/Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/lukey03/Qwen3.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

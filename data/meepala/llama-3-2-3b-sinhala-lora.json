@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "meepala/llama-3.2-3b-sinhala-lora",
+  "slug": "meepala-llama-3-2-3b-sinhala-lora",
+  "author": "meepala",
+  "url": "https://huggingface.co/meepala/llama-3.2-3b-sinhala-lora",
+  "created_at": "2026-08-25T10:01:03.000Z",
+  "updated_at": "2026-08-25T10:01:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SriSanth2345/LLAMA-3.2-3B-Alpaca_en_LORA_SFT · Hugging Face",
+      "url": "https://huggingface.co/SriSanth2345/LLAMA-3.2-3B-Alpaca_en_LORA_SFT",
+      "snippet": "LLAMA-3.2-3B-Alpaca_en_LORA_SFT This model is a fine-tuned version of meta-llama/Llama-3.2-3B-Instruct using the alpaca_en_demo dataset. The fine-tuning process was conducted by Sri Santh M for development purposes."
+    },
+    {
+      "title": "meta-llama/Llama-3.2-3B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama3.2:3b - ollama.com",
+      "url": "https://ollama.com/library/llama3.2:3b",
+      "snippet": "The 3B model outperforms the Gemma 2 2.6B and Phi 3.5-mini models on tasks such as: Following instructions Summarization Prompt rewriting Tool use ... 1B parameters The 1B model is competitive with other 1-3B parameter models. It&#x27;s use cases include: Personal information management Multilingual knowledge retrieval Rewriting tasks running ..."
+    },
+    {
+      "title": "GitHub - OllamaRelease/Ollama: Download and running with Llama 3.3 ...",
+      "url": "https://github.com/OllamaRelease/Ollama",
+      "snippet": "Download and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. - OllamaRelease/Ollama"
+    },
+    {
+      "title": "SinLlama - A Large Language Model for Sinhala - arXiv.org",
+      "url": "https://arxiv.org/html/2508.09115v1",
+      "snippet": "Abstract Low-resource languages such as Sinhala are often overlooked by open-source Large Language Models (LLMs). In this research, we extend an existing multilingual LLM (Llama-3-8B) to better serve Sinhala. We enhance the LLM tokenizer with Sinhala specific vocabulary and perform continual pre-training on a cleaned 10 million Sinhala corpus, resulting in the SinLlama model. This is the very ..."
+    }
+  ]
+}

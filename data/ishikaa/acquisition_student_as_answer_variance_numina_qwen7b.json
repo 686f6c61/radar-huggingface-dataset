@@ -5,7 +5,7 @@
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_student_AS_answer_variance_numina_qwen7b",
   "created_at": "2026-08-21T23:17:07.000Z",
-  "updated_at": "2026-08-21T23:18:50.000Z",
+  "updated_at": "2026-08-25T02:01:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 15242693760,
-  "storage_human": "15.2 GB",
+  "storage_bytes": 30473965624,
+  "storage_human": "30.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

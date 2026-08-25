@@ -5,7 +5,7 @@
   "author": "Hatim2221",
   "url": "https://huggingface.co/Hatim2221/Mubsir-Qwen-2B-VL",
   "created_at": "2026-08-14T23:35:42.000Z",
-  "updated_at": "2026-08-15T10:38:35.000Z",
+  "updated_at": "2026-08-24T21:18:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1611,
+  "downloads_30d": 1996,
   "trending_score": 0,
   "parameters": 2208985600,
   "parameters_human": "2.21B",

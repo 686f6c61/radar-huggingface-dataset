@@ -5,7 +5,7 @@
   "author": "orpe42",
   "url": "https://huggingface.co/orpe42/deberta_MP_dynamic",
   "created_at": "2026-08-06T11:10:46.000Z",
-  "updated_at": "2026-08-24T07:32:31.000Z",
+  "updated_at": "2026-08-25T04:59:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 435119160,
   "parameters_human": "435.1M",
-  "storage_bytes": 663162757235,
-  "storage_human": "663.2 GB",
+  "storage_bytes": 795449116136,
+  "storage_human": "795.4 GB",
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "safetensors"

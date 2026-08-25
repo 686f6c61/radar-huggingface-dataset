@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Nam-toon-studio/sahaj-30m",
+  "slug": "nam-toon-studio-sahaj-30m",
+  "author": "Nam-toon-studio",
+  "url": "https://huggingface.co/Nam-toon-studio/sahaj-30m",
+  "created_at": "2026-08-25T11:41:45.000Z",
+  "updated_at": "2026-08-25T11:49:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "pa",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "sahaj",
+    "byte-level",
+    "language-model",
+    "linear-attention",
+    "retnet",
+    "causal-fast-weights",
+    "gqa",
+    "punjabi",
+    "scratch-trained",
+    "tiny-model",
+    "toon-studio",
+    "text-generation",
+    "pa",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30072960,
+  "parameters_human": "30.1M",
+  "storage_bytes": 239959307,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "Punjabi & Multilingual Test Benchmark",
+      "metric": "Punjabi Held BPB",
+      "value": 2.125
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Punjabi & Multilingual Test Benchmark",
+      "metric": "Overall Held BPB",
+      "value": 3.012
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nam-toon-studio (Gurpreet Singh) - Hugging Face",
+      "url": "https://huggingface.co/Nam-toon-studio/datasets",
+      "snippet": "User profile of Gurpreet Singh on Hugging Face"
+    },
+    {
+      "title": "#1 Toon Animation Video Maker",
+      "url": "https://toons.ai/go/",
+      "snippet": "In addition to this, Toons.ai also comes loaded with cutting-edge features like unlimited AI Content Writer, Custom Toon Character Builder, Timeline Editor, 1-Click Translation, Unlimited Text-To-Speech and so much more included in the base one-time price!"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Nam-toon-studio/punjabi-tts-voices · Hugging Face",
+      "url": "https://huggingface.co/Nam-toon-studio/punjabi-tts-voices",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TONE3000 Official · Neural Amp Modeler (NAM) Profiles and Impulse ...",
+      "url": "https://www.tone3000.com/",
+      "snippet": "TONE3000 is the world&#x27;s largest community for guitar tones, bass tones and studio equipment captures. Discover and share IR&#x27;s and NAM profiles of amps, pedals, rigs, outboards, and signal chains. It&#x27;s free!"
+    }
+  ]
+}

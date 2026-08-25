@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "malaika971/distill-hate",
+  "slug": "malaika971-distill-hate",
+  "author": "malaika971",
+  "url": "https://huggingface.co/malaika971/distill-hate",
+  "created_at": "2026-08-25T09:01:07.000Z",
+  "updated_at": "2026-08-25T09:09:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mir8077faiyaz/Distilling-Hate: Official Repo of Distilling-Hate",
+      "url": "https://github.com/mir8077faiyaz/Distilling-Hate",
+      "snippet": "Hate speech detection systems carry significant societal risks, including false positives that may disproportionately affect marginalized groups. We intentionally avoid naive data-level oversampling and instead rely on loss-aware training and knowledge distillation to better reflect real-world data distributions."
+    },
+    {
+      "title": "GitHub - malaika971/malaika971",
+      "url": "https://github.com/malaika971/malaika971",
+      "snippet": "Contribute to malaika971/malaika971 development by creating an account on GitHub."
+    },
+    {
+      "title": "hugsanaa/DeepSeek-Distill-Multiclass-HateSpeech · Hugging Face",
+      "url": "https://huggingface.co/hugsanaa/DeepSeek-Distill-Multiclass-HateSpeech",
+      "snippet": "DeepSeek-Distill-Multiclass-Hate-Speech DeepSeek-Distill-Multiclass-Hate-Speech is a distilled large-scale language model specialized in analyzing social media content related to hate speech categories. The base model provides a strong contextual representation learning, which improves performance on hate speech detection."
+    },
+    {
+      "title": "malaika971 (Malaika Ahmed) - Hugging Face",
+      "url": "https://huggingface.co/malaika971/spaces",
+      "snippet": "User profile of Malaika Ahmed on Hugging Face"
+    },
+    {
+      "title": "Model Distillation Attacks, Explained: How Anthropic Caught the Largest ...",
+      "url": "https://repello.ai/blog/model-distillation-attack",
+      "snippet": "Model distillation attacks steal AI capabilities via API queries. The Anthropic-Alibaba case shows how 28.8M exchanges across 25,000 fake accounts built a stolen training corpus."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Oddity-12B-v1.0-GGUF",
+  "slug": "mradermacher-dark-oddity-12b-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Oddity-12B-v1.0-GGUF",
+  "created_at": "2026-08-25T08:20:43.000Z",
+  "updated_at": "2026-08-25T09:31:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Dark-Oddity-12B-v1.0",
+    "base_model:quantized:ReadyArt/Dark-Oddity-12B-v1.0",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11956539456,
+  "parameters_human": "11.96B",
+  "storage_bytes": 82390242976,
+  "storage_human": "82.4 GB",
+  "base_model": "ReadyArt/Dark-Oddity-12B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "ReadyArt/Dark-Oddity-12B-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Oddity-12B-v1.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt / Dark-Oddity-12B-v1.0-GGUF",
+      "url": "https://insights-db.paloaltonetworks.com/models/ReadyArt/Dark-Oddity-12B-v1.0-GGUF/4975a99bb69ce55b9789db2360360614af0891b5/overview",
+      "snippet": "Discover potential threats in the ReadyArt / Dark-Oddity-12B-v1.-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "mradermacher / Dark-Oddity-12B-v2.0-GGUF",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/Dark-Oddity-12B-v2.0-GGUF/25bb4976c42ecdbcd2013fc753be6a727ac0edbf/overview",
+      "snippet": "Discover potential threats in the mradermacher / Dark-Oddity-12B-v2.-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

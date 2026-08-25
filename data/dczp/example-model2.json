@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dczp/example-model2",
+  "slug": "dczp-example-model2",
+  "author": "dczp",
+  "url": "https://huggingface.co/dczp/example-model2",
+  "created_at": "2026-08-25T11:50:47.000Z",
+  "updated_at": "2026-08-25T11:50:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model2 | openai/dalle-2-preview | DeepWiki",
+      "url": "https://deepwiki.com/openai/dalle-2-preview/2.2-model2",
+      "snippet": "Overview and Purpose This document provides detailed information about Model2, one of the two models showcased in the DALL-E 2 Preview repository. Model2 offers expanded capabilities beyond standard image generation, including image variations and inpainting functionality. For information about the simpler model with fewer features, see Model1."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "GitHub - TexasInstruments/edgeai-modelzoo: Edge AI Model Zoo",
+      "url": "https://github.com/TexasInstruments/edgeai-modelzoo",
+      "snippet": "Model Selection Tool - Performance Visualization Edge AI Studio: Model Selection Tool - Understand the performance statistics such as FPS, Latency, Accuracy & DDR bandwidth of models in the Model Zoo. Find a model that best meets your performance and accuracy goals on TI Processor from TI Model Zoo."
+    },
+    {
+      "title": "Anthropic uses an unpublished AI model called \"Model 2 ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/the-decoder-en_anthropic-uses-an-unpublished-ai-model-called-activity-7496149520150450176-saLO",
+      "snippet": "Anthropic is running an unreleased AI model internally that outperforms every publicly available version of Claude. \"Model 2,\" part of the Mythos class, ranks above Mythos 5 on Anthropic&#x27;s ..."
+    },
+    {
+      "title": "GitHub - DEEPX-AI/dx-modelzoo",
+      "url": "https://github.com/DEEPX-AI/dx-modelzoo",
+      "snippet": "YAML-Driven Model Management · Evaluation · NPU Compilation DX-ModelZoo is a unified framework for managing model preprocessing, postprocessing, evaluation, and NPU compilation — all driven by a single YAML configuration file."
+    }
+  ]
+}

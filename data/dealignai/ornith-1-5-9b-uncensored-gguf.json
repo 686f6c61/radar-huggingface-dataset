@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "dealignai/Ornith-1.5-9B-UNCENSORED-GGUF",
+  "slug": "dealignai-ornith-1-5-9b-uncensored-gguf",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Ornith-1.5-9B-UNCENSORED-GGUF",
+  "created_at": "2026-08-20T18:47:44.000Z",
+  "updated_at": "2026-08-21T00:57:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ornith",
+    "qwen3.5",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "reasoning",
+    "vision",
+    "vlm",
+    "image-text-to-text",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 3688,
+  "trending_score": 8,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 38356331328,
+  "storage_human": "38.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/Ornith-1.5-9B-UNCENSORED-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/dealignai/Ornith-1.5-9B-UNCENSORED-GGUF/tree/main",
+      "snippet": "Instructions to use dealignai/Ornith-1.5-9B-UNCENSORED-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use dealignai/Ornith-1.5-9B-UNCENSORED-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF/tree/main",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.5-9B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ornith-ai/Ornith-1.5-9B-GGUF with Transformers:"
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Rather than relying on a fixed set of human-curated tasks and manually designed harnesses, Ornith-1.5 continuously generates new training tasks, discovers effective strategies for solving them, and improves the policy through reinforcement learning. For more details on the task, harness, and rollout reward design, please refer to our blog."
+    }
+  ]
+}

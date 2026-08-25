@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ganth1811/sino-nom-to-vietnamese-mt5-5epoch",
+  "slug": "ganth1811-sino-nom-to-vietnamese-mt5-5epoch",
+  "author": "Ganth1811",
+  "url": "https://huggingface.co/Ganth1811/sino-nom-to-vietnamese-mt5-5epoch",
+  "created_at": "2026-08-25T09:42:38.000Z",
+  "updated_at": "2026-08-25T09:43:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 582401280,
+  "parameters_human": "582.4M",
+  "storage_bytes": 2350298500,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minhtoan/t5-translate-vietnamese-nom · Hugging Face",
+      "url": "https://huggingface.co/minhtoan/t5-translate-vietnamese-nom",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minhtoan/t5-translation-vietnamese-nom · Hugging Face",
+      "url": "https://huggingface.co/minhtoan/t5-translation-vietnamese-nom",
+      "snippet": "Today, Nôm is a specialized field, and efforts are made to preserve its knowledge. Though modern Vietnamese uses the Latin alphabet, Nôm remains an integral part of Vietnam&#x27;s cultural heritage. State-of-the-art lightweights pretrained Transformer-based encoder-decoder model for Vietnamese Nom translation."
+    },
+    {
+      "title": "GitHub - HiIamPhuc/ChineseNom-translator-by-transformer",
+      "url": "https://github.com/HiIamPhuc/ChineseNom-translator-by-transformer",
+      "snippet": "ChineseNom-translator-by-transformer This repository contains a Chinese-Nom translation system built using the MT5 transformer model. The project is designed to translate Chinese-Nom text into Vietnamese using a pre-trained MT5 model fine-tuned for this specific task."
+    },
+    {
+      "title": "GitHub - google-research/multilingual-t5",
+      "url": "https://github.com/google-research/multilingual-t5",
+      "snippet": "Multilingual T5 (mT5) is a massively multilingual pretrained text-to-text transformer model, trained following a similar recipe as T5. This repo can be used to reproduce the experiments in the mT5 paper."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    }
+  ]
+}

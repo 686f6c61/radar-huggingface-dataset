@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "maianh511/qwen2_vl_finetune_lora_viet_chart_vqa",
+  "slug": "maianh511-qwen2_vl_finetune_lora_viet_chart_vqa",
+  "author": "maianh511",
+  "url": "https://huggingface.co/maianh511/qwen2_vl_finetune_lora_viet_chart_vqa",
+  "created_at": "2026-08-25T10:10:23.000Z",
+  "updated_at": "2026-08-25T10:24:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "qwen2-vl-fine-tune",
+    "vietnamese",
+    "question-answering",
+    "vi",
+    "en",
+    "dataset:maianh511/vi_chart_dataset",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen2-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3530526848,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 2U1/Qwen-VL-Series-Finetune: An open-source implementaion for ...",
+      "url": "https://github.com/2U1/Qwen-VL-Series-Finetune",
+      "snippet": "Fine-tuning Qwen-VL Series This repository contains a script for training Qwen2-VL, Qwen2.5-VL , Qwen3-VL and Qwen3.5 with only using HuggingFace and Liger-Kernel."
+    },
+    {
+      "title": "LoRA Fine-tuning | QwenLM/Qwen-VL | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen-VL/5.3-lora-fine-tuning",
+      "snippet": "LoRA is a parameter-efficient fine-tuning technique that significantly reduces memory requirements while maintaining model performance. This page covers the technical implementation, configuration options, and best practices for LoRA fine-tuning in the Qwen-VL repository."
+    },
+    {
+      "title": "Language Model LoRA | 2U1/Qwen2-VL-Finetune | DeepWiki",
+      "url": "https://deepwiki.com/2U1/Qwen2-VL-Finetune/3.2.1-language-model-lora",
+      "snippet": "Language Model LoRA Relevant source files This document covers Low-Rank Adaptation (LoRA) fine-tuning specifically applied to the language model components of Qwen2-VL models. This approach enables parameter-efficient training by freezing the base language model weights and adding trainable low-rank adapters to specific layers."
+    },
+    {
+      "title": "GitHub - zhangfaen/finetune-Qwen2.5-VL",
+      "url": "https://github.com/zhangfaen/finetune-Qwen2.5-VL",
+      "snippet": "In the past five months since Qwen2-VL&#x27;s release, numerous developers have built new models on the Qwen2-VL vision-language models, providing us with valuable feedback. During this period, qwen team focused on building more useful vision-language models. Today, qwen team are excited to introduce ..."
+    },
+    {
+      "title": "Qwen/Qwen2-VL-7B-Instruct · LoRA Finetuning Tool for Qwen2-VL-7B in Web ...",
+      "url": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct/discussions/2",
+      "snippet": "LLaMA Factory has integrated Qwen2-VL models for SFT and DPO, try our training recipes and webUI🚀"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwen3.8-27B-OBLITERATED-OptiQ-4bit",
+  "slug": "mlx-community-qwen3-8-27b-obliterated-optiq-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-OBLITERATED-OptiQ-4bit",
+  "created_at": "2026-08-25T10:00:44.000Z",
+  "updated_at": "2026-08-25T10:00:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBLITERATUS-Qwen3.8-27B-OBLITERATED-unsloth-mlx - Hugging Face",
+      "url": "https://huggingface.co/nova-quill/OBLITERATUS-Qwen3.8-27B-OBLITERATED-unsloth-mlx",
+      "snippet": "OBLITERATUS-Qwen3.8-27B-OBLITERATED-unsloth-mlx ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "PocketAiHub/Qwen3.8-27B-Abliterated-MLX · Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "GitHub - newbdez33/qwen3.8: Qwen3.8-27B-Uncensored-MLX local deployment ...",
+      "url": "https://github.com/newbdez33/qwen3.8",
+      "snippet": "6.2 查看模型 ID ... 请求中的 model 必须与服务加载的模型 ID 完全一致： ... 不要随意填 local-qwen3.8-27b 等别名。 该服务器支持动态模型切换；如果收到不同的模型 ID，它会卸载当前模型并尝试从本地路径或 Hugging Face 加载新 ID。"
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen 3.8 27B uncensored GGUF is a real download, and the build to start with is Qwen3.8-27B-Uncensored-GGUF — published on Hugging Face on August 16, 2026 as the llama.cpp-native sibling of our abliterated FP8 release. It is the same refusal-removed 27-billion-parameter weights as Qwen3.8-27B-Uncensored-FP8, converted to GGUF for local inference: F16 plus 12 quantization tiers from Q2_K to ..."
+    }
+  ]
+}

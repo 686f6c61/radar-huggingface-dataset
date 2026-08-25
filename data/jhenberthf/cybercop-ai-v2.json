@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jhenberthf/cybercop-ai-v2",
+  "slug": "jhenberthf-cybercop-ai-v2",
+  "author": "jhenberthf",
+  "url": "https://huggingface.co/jhenberthf/cybercop-ai-v2",
+  "created_at": "2026-08-25T05:20:43.000Z",
+  "updated_at": "2026-08-25T05:55:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "fil"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2.5",
+    "cyber-investigation",
+    "cyber-investigator",
+    "cybercop-ai-v2",
+    "filipino",
+    "taglish",
+    "en",
+    "fil",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955186,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jhenberthf/cybercop-ai-v2 · Hugging Face",
+      "url": "https://huggingface.co/jhenberthf/cybercop-ai-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jhenberthf/cybercop-ai · Hugging Face",
+      "url": "https://huggingface.co/jhenberthf/cybercop-ai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cybercop-ai - GitHub",
+      "url": "https://github.com/cybercop-ai",
+      "snippet": "GitHub is where cybercop.ai builds software."
+    },
+    {
+      "title": "jhenberthf (Jhenbert) - Hugging Face",
+      "url": "https://huggingface.co/datasets/jhenberthf/",
+      "snippet": "AI Recent Activity updated a datasetabout 8 hours ago jhenberthf/cyber-investigator new activityabout 8 hours ago jhenberthf/cyber-investigator: [bot] Conversion to Parquet published a dataset2 days ago jhenberthf/cyber-investigator View all activity"
+    },
+    {
+      "title": "The Ransomware an AI Model Built Without Trying - CyberHoot",
+      "url": "https://cyberhoot.com/blog/the-ransomware-an-ai-model-built-without-trying/",
+      "snippet": "Researchers went looking for a fake photo upscaler and found something stranger: a ransomware kit an AI model helped design without anyone teaching it how. No skilled coder sat down and wrote this attack line by line. Instead, an AI chatbot pieced most of it together from a single broad request, and in the end, part of it worked exactly as intended by whoever asked. This story fits a bigger ..."
+    }
+  ]
+}

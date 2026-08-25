@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "maianh511/Vintern_1B_v2_finetune_lora_viet_chart_vqa",
+  "slug": "maianh511-vintern_1b_v2_finetune_lora_viet_chart_vqa",
+  "author": "maianh511",
+  "url": "https://huggingface.co/maianh511/Vintern_1B_v2_finetune_lora_viet_chart_vqa",
+  "created_at": "2026-08-25T09:37:42.000Z",
+  "updated_at": "2026-08-25T10:49:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "chart-question-answering,",
+    "LLM",
+    "Vintern-1B",
+    "fine-tune",
+    "text-generation",
+    "vi",
+    "en",
+    "dataset:maianh511/vi_chart_dataset",
+    "base_model:5CD-AI/Vintern-1B-v2",
+    "base_model:finetune:5CD-AI/Vintern-1B-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11539432386,
+  "storage_human": "11.5 GB",
+  "base_model": "5CD-AI/Vintern-1B-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5CD-AI/Vintern-1B-v2 · Hugging Face",
+      "url": "https://huggingface.co/5CD-AI/Vintern-1B-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 5CD-AI/Vintern: [CVPR 2024 Oral] InternVL Family: A Pioneering ...",
+      "url": "https://github.com/5CD-AI/Vintern",
+      "snippet": "@article {chen2023internvl, title = {InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks}, author = {Chen, Zhe and Wu, Jiannan and Wang,"
+    },
+    {
+      "title": "README.md · 5CD-AI/Vintern-1B-v2 at ... - Hugging Face",
+      "url": "https://huggingface.co/5CD-AI/Vintern-1B-v2/blob/c38c78082fcd21385db1a495e9d855667c96fac9/README.md",
+      "snippet": "Vintern-1B-v2 ️ (Viet-InternVL2-1B-v2) - The LLaVA 🌋 Challenger We are excited to introduce Vintern-1B-v2 the Vietnamese 🇻🇳 multimodal model that combines the advanced Vietnamese language model Qwen2-.5B-Instruct [1] with the latest visual model, InternViT-300M-448px [2], CVPR 2024. This model excels in tasks such as OCR-VQA, Doc-VQA, and Chart-VQA,... With only 1 billion ..."
+    },
+    {
+      "title": "Vintern-1B: An Efficient Multimodal Large Language Model for Vietnamese",
+      "url": "https://arxiv.org/html/2408.12480v2",
+      "snippet": "The model is fine-tuned on an extensive dataset of over 3 million image-question-answer pairs, achieving robust performance and reliable results across multiple Vietnamese language benchmarks like OpenViVQA [3]. Vintern-1B is small enough to fit into various on-device applications easily."
+    },
+    {
+      "title": "Vintern-1B: An Efficient Multimodal Large Language Model for Vietnamese",
+      "url": "https://arxiv.org/pdf/2408.12480v1",
+      "snippet": "The model is fine-tuned on an extensive dataset of over 3 million image-question-answer pairs, achieving ro-bust performance and reliable results across multiple Vietnamese language bench-marks like OpenViVQA [3]. Vintern-1B is small enough to fit into various on-device applications easily."
+    }
+  ]
+}

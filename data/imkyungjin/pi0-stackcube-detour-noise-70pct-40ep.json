@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-detour-noise-70pct-40ep",
+  "slug": "imkyungjin-pi0-stackcube-detour-noise-70pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-detour-noise-70pct-40ep",
+  "created_at": "2026-08-25T11:47:58.000Z",
+  "updated_at": "2026-08-25T11:50:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_detour_noise_70pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImKyungjin/pi0-stackcube-detour-noise-30pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-detour-noise-30pct-40ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-30pct-40ep at main",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-30pct-40ep/tree/main",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-recover-noise-30pct-40ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "Self-Evolving Learning for Embodied AI with Criticality Model",
+      "url": "https://arxiv.org/html/2607.28251v1",
+      "snippet": "We presented a self-evolving framework that uses a learned criticality model for importance sampling and deployment-time routing across diverse embodied AI domains."
+    },
+    {
+      "title": "A Steerable Model with Emergent Capabilities - pi.website",
+      "url": "https://www.pi.website/blog/pi07",
+      "snippet": "A steerable robotic foundation model that exhibits a step-change in generalization."
+    }
+  ]
+}

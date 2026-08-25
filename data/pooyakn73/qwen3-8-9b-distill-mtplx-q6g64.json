@@ -5,7 +5,7 @@
   "author": "pooyakn73",
   "url": "https://huggingface.co/pooyakn73/Qwen3.8-9B-Distill-MTPLX-Q6G64",
   "created_at": "2026-08-23T21:43:26.000Z",
-  "updated_at": "2026-08-23T23:54:32.000Z",
+  "updated_at": "2026-08-24T13:29:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 117,
   "trending_score": 0,
   "parameters": 2415484144,
   "parameters_human": "2.42B",

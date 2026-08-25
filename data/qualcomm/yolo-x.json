@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "qualcomm/Yolo-X",
+  "slug": "qualcomm-yolo-x",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/Yolo-X",
+  "created_at": "2025-03-14T02:22:40.000Z",
+  "updated_at": "2026-08-25T04:12:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "real_time",
+    "android",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 519,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5285485316,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yolo-X - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/yolox",
+      "snippet": "Yolo-X Real‑time object detection optimized for mobile and edge. YoloX is a machine learning model that predicts bounding boxes and classes of objects in an image."
+    },
+    {
+      "title": "qualcomm/Yolo-X · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Yolo-X",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/yolox/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/yolox/README.md",
+      "snippet": "YoloX is a machine learning model that predicts bounding boxes and classes of objects in an image. This is based on the implementation of Yolo-X found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/yolox at main · qualcomm/ai-hub ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/yolox",
+      "snippet": "YoloX is a machine learning model that predicts bounding boxes and classes of objects in an image. This is based on the implementation of Yolo-X found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to ..."
+    },
+    {
+      "title": "README.md · qualcomm/Yolo-X at main - Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Yolo-X/blob/main/README.md",
+      "snippet": "Yolo-X: Optimized for Mobile Deployment Real-time object detection optimized for mobile and edge YoloX is a machine learning model that predicts bounding boxes and classes of objects in an image. This model is an implementation of Yolo-X found here. This repository provides scripts to run Yolo-X on Qualcomm® devices."
+    }
+  ]
+}

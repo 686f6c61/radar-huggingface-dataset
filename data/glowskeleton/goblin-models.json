@@ -5,7 +5,7 @@
   "author": "glowskeleton",
   "url": "https://huggingface.co/glowskeleton/goblin-models",
   "created_at": "2026-08-21T21:35:52.000Z",
-  "updated_at": "2026-08-21T21:37:02.000Z",
+  "updated_at": "2026-08-24T20:11:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 320417338,
-  "storage_human": "320 MB",
+  "storage_bytes": 424311771,
+  "storage_human": "424 MB",
   "base_model": null,
   "formats": [
     "onnx"

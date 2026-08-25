@@ -5,7 +5,7 @@
   "author": "SvalTek",
   "url": "https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0",
   "created_at": "2026-08-24T19:03:37.000Z",
-  "updated_at": "2026-08-24T19:10:56.000Z",
+  "updated_at": "2026-08-24T19:14:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,10 +31,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 14906662316,
-  "storage_human": "14.9 GB",
+  "parameters": 9943341568,
+  "parameters_human": "9.94B",
+  "storage_bytes": 19898158084,
+  "storage_human": "19.9 GB",
   "base_model": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0",
   "formats": [
     "safetensors"

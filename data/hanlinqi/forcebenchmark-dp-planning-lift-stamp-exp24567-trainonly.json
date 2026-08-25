@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "HanLinqi/forcebenchmark-dp-planning-lift-stamp-exp24567-trainonly",
+  "slug": "hanlinqi-forcebenchmark-dp-planning-lift-stamp-exp24567-trainonly",
+  "author": "HanLinqi",
+  "url": "https://huggingface.co/HanLinqi/forcebenchmark-dp-planning-lift-stamp-exp24567-trainonly",
+  "created_at": "2026-08-25T03:24:20.000Z",
+  "updated_at": "2026-08-25T03:34:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "diffusion-policy",
+    "force-torque",
+    "maniskill",
+    "forcebenchmark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 595222278,
+  "storage_human": "595 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HanLinqi/pi05-forcebenchmark-12ckpts-20260816-120955 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/HanLinqi/pi05-forcebenchmark-12ckpts-20260816-120955",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HanLinqi (linqi han) - Hugging Face",
+      "url": "https://huggingface.co/HanLinqi",
+      "snippet": "HanLinqi/pi05-forcevla-moev2-tuning-16ckpts-20260817-115624 HanLinqi/pi05-forcebenchmark-12ckpts-20260816-120955"
+    },
+    {
+      "title": "[2605.20873] PlanningBench: Generating Scalable and Verifiable Planning ...",
+      "url": "https://arxiv.org/abs/2605.20873",
+      "snippet": "This limits scenario coverage, ties difficulty to surface-level proxies rather than structural sources, and offers limited support for scalable generation, automatic verification, or planning-oriented training. We introduce PlanningBench, a framework for generating scalable, diverse, and verifiable planning data for both evaluation and training."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    }
+  ]
+}

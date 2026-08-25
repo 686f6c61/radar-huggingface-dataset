@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EricTan7/VeritasPP",
+  "slug": "erictan7-veritaspp",
+  "author": "EricTan7",
+  "url": "https://huggingface.co/EricTan7/VeritasPP",
+  "created_at": "2026-08-25T08:58:37.000Z",
+  "updated_at": "2026-08-25T08:58:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EricTan7/VeritasPP",
+      "url": "https://github.com/EricTan7/VeritasPP",
+      "snippet": "Veritas++ is an interpretable multimodal large language model (MLLM) for generalizable AI-generated image (AIGI) detection. It treats reliable visual perception as the foundation of authenticity reasoning: the model first learns to perceive fine-grained details, semantic anomalies, and pixel-level ..."
+    },
+    {
+      "title": "GitHub - EricTan7/VideoVeritas: [ICML 2026] VideoVeritas: AI-Generated ...",
+      "url": "https://github.com/EricTan7/VideoVeritas",
+      "snippet": "🔥 2026.7.30 We release our new work 🚀🚀🚀 Veritas++ for AI-generated image detection 🔥🔥🔥! This is an extended work of Veritas, which targets at general image detection. Code and Model are released [ Paper | Model ] In this work, we introduce: 📍 Perception Pretext RL: an algorithm that leverages simple perception pretext tasks to elevate detection performance. Compatible ..."
+    },
+    {
+      "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced ...",
+      "url": "https://arxiv.org/html/2607.27113",
+      "snippet": "Building upon our preliminary version Veritas[58], which demonstrates that pattern-aware reasoning improves out-of-distribution (OOD) generalization, we extend the scope from facial images to general AI-generated image detection, and further explore the synergy of reliable perception and pattern-aware reasoning."
+    },
+    {
+      "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced ...",
+      "url": "https://arxiv.org/pdf/2607.27113",
+      "snippet": "a perception-enhanced reasoning framework that establishes reliable perception as the foundation of authenticity reasoning. Rather than directly optimizing the model&#x27;s explanatory ability, we ground AIGI detection on three basic perception abilities, i.e., capturing fine-grained visual details, semantic anomalies and pixel-level differences. Building on this insight, we intro-duce Perception ..."
+    },
+    {
+      "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced ...",
+      "url": "https://www.aimedicalcompendium.com/article.cfm?id=230695",
+      "snippet": "Rather than directly optimizing the model&#x27;s explanatory ability, we ground AIGI detection on three basic perception abilities, i.e., capturing fine-grained visual details, semantic anomalies and pixel-level differences."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "goat-baek/news2stock-qlora",
+  "slug": "goat-baek-news2stock-qlora",
+  "author": "goat-baek",
+  "url": "https://huggingface.co/goat-baek/news2stock-qlora",
+  "created_at": "2026-08-25T05:30:24.000Z",
+  "updated_at": "2026-08-25T05:30:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "goat-baek/news2stock-qlora · Hugging Face",
+      "url": "https://huggingface.co/goat-baek/news2stock-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "goat-baek/news2stock-qlora at main - Hugging Face",
+      "url": "https://huggingface.co/goat-baek/news2stock-qlora/tree/main",
+      "snippet": "main news2stock-qlora 30.9 MB Ctrl+K Ctrl+K 1 contributor History:3 commits goat-baek Upload tokenizer ad93338 verifiedabout 2 hours ago .gitattributes 1.57 kBUpload tokenizerabout 2 hours ago README.md 5.17 kBUpload modelabout 2 hours ago adapter_config.json 863 BytesUpload modelabout 2 hours ago adapter_model.safetensors 13.6 MB xet Upload ..."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "QLoRA Fine-Tuning Complete Guide (2026) - Local AI Master",
+      "url": "https://localaimaster.com/blog/qlora-fine-tuning-guide",
+      "snippet": "The complete QLoRA fine-tuning guide. 4-bit quantized base + LoRA adapter training. Setup with Unsloth / Axolotl / TRL, dataset preparation, hyperparameter tuning, multi-GPU, and merging adapters back to full models."
+    },
+    {
+      "title": "Fine-Tuning Open Source LLMs with LoRA and QLoRA",
+      "url": "https://dasroot.net/posts/2026/04/fine-tuning-open-source-llms-lora-qlora/",
+      "snippet": "In summary, LoRA and QLoRA provide a powerful framework for adapting large language models efficiently, making advanced AI capabilities accessible to a broader range of organizations and developers. Implementation Workflow: From Model Selection to Training Step 1: Choosing an Open-Source Base Model"
+    }
+  ]
+}

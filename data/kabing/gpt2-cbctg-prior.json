@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kabing/gpt2-cbctg-prior",
+  "slug": "kabing-gpt2-cbctg-prior",
+  "author": "kabing",
+  "url": "https://huggingface.co/kabing/gpt2-cbctg-prior",
+  "created_at": "2026-08-22T15:27:24.000Z",
+  "updated_at": "2026-08-25T05:25:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "controllable-text-generation",
+    "concept-bottleneck",
+    "compositional-generalization",
+    "lora",
+    "arxiv:2608.22956",
+    "base_model:openai-community/gpt2",
+    "base_model:adapter:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139760926,
+  "storage_human": "140 MB",
+  "base_model": "gpt2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kabing/gpt2-cbctg-prior · Hugging Face",
+      "url": "https://huggingface.co/kabing/gpt2-cbctg-prior",
+      "snippet": "This repository contains only our own trained parameters: the per-axis concept encoder MLPs, the per-axis classifier heads, the concept injector, the LoRA adapter, and the post-hoc label prior. No base-model weights are included; download gpt2 separately."
+    },
+    {
+      "title": "kabing/gpt2-medium-cbctg-prior · Hugging Face",
+      "url": "https://huggingface.co/kabing/gpt2-medium-cbctg-prior",
+      "snippet": "gpt2-medium-cbctg-prior Concept-bottleneck controllable-generation modules for GPT-2 Medium (355M), from the paper \"The Illusion of Control: Why Bare Classifier Inversion Silently Fails in Concept-Bottleneck Text Generation\" (EMNLP 2026)."
+    },
+    {
+      "title": "GitHub - BiancaBing/cbctg-illusion-of-control: Code and checkpoints for ...",
+      "url": "https://github.com/BiancaBing/cbctg-illusion-of-control",
+      "snippet": "The mode_b sub-stage writes files without a _mode_b suffix. Copy rather than move them if you want to re-score under a different model name. The upstream CG4MCTG perplexity script hard-codes a local GPT2-large path; the pipeline scripts patch it automatically with sed."
+    },
+    {
+      "title": "The Illusion of Control: Why Bare Classifier Inversion Silently Failsin ...",
+      "url": "https://arxiv.org/html/2608.22956v1",
+      "snippet": "Given the target labels, the prior model estimates the conditional mean of the encoder code. Because the within-combination variation we measure exceeds the across-combination signal, the prior acts as a denoiser of sample-specific code variation, explaining its advantage over single-sample reference encoding (§ 6.2)."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

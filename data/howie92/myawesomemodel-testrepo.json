@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "howie92/MyAwesomeModel-TestRepo",
+  "slug": "howie92-myawesomemodel-testrepo",
+  "author": "howie92",
+  "url": "https://huggingface.co/howie92/MyAwesomeModel-TestRepo",
+  "created_at": "2026-08-25T10:17:23.000Z",
+  "updated_at": "2026-08-25T10:18:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "howie92/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/howie92/MyAwesomeModel-TestRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LMNR/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/LMNR/MyAwesomeModel-TestRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo huggingface.co api & asfafaf4546 MyAwesomeModel ...",
+      "url": "https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo huggingface.co is an AI model on huggingface.co that provides MyAwesomeModel-TestRepo&#x27;s model effect (), which can be used instantly with this asfafaf4546 MyAwesomeModel-TestRepo model. huggingface.co supports a free trial of the MyAwesomeModel-TestRepo model, and also provides paid use of the MyAwesomeModel-TestRepo. Support call MyAwesomeModel-TestRepo model through ..."
+    },
+    {
+      "title": "MyAwesomeModel TestRepo (未知) — MMLU 30 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo",
+      "snippet": "MyAwesomeModel TestRepo by dongbobo. Scores: MMLU 30, . 未知 open-source AI model. MyAwesomeModel-TestRepo is an embedding model based on BERT by dongbobo, licensed under MIT and desi"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

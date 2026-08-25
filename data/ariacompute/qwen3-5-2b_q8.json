@@ -5,7 +5,7 @@
   "author": "ariacompute",
   "url": "https://huggingface.co/ariacompute/qwen3.5-2b_q8",
   "created_at": "2026-08-08T02:34:57.000Z",
-  "updated_at": "2026-08-25T01:02:32.000Z",
+  "updated_at": "2026-08-25T01:28:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

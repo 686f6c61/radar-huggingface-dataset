@@ -5,7 +5,7 @@
   "author": "diegoquinteiro",
   "url": "https://huggingface.co/diegoquinteiro/SmolLM2-135M-Observable",
   "created_at": "2026-08-23T20:20:43.000Z",
-  "updated_at": "2026-08-24T22:35:26.000Z",
+  "updated_at": "2026-08-25T03:45:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,7 @@
     "interpretability",
     "attention",
     "hidden-states",
+    "tuned-lens",
     "base_model:HuggingFaceTB/SmolLM2-135M",
     "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
     "license:apache-2.0",
@@ -29,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 618570399,
-  "storage_human": "619 MB",
+  "storage_bytes": 971495161,
+  "storage_human": "971 MB",
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "onnx"

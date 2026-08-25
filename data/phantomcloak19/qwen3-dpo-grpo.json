@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Phantomcloak19/qwen3-dpo-grpo",
+  "slug": "phantomcloak19-qwen3-dpo-grpo",
+  "author": "Phantomcloak19",
+  "url": "https://huggingface.co/Phantomcloak19/qwen3-dpo-grpo",
+  "created_at": "2026-07-15T18:18:19.000Z",
+  "updated_at": "2026-08-25T10:26:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "dpo-grpo",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phantomcloak19/qwen3-dpo-grpo · Hugging Face",
+      "url": "https://huggingface.co/Phantomcloak19/qwen3-dpo-grpo",
+      "snippet": "like 0 Text Generation Transformers Safetensors qwen3 horus-llm dpo-grpo conversational text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Phantomcloak19%2Fqwen3-dpo-grpo",
+      "snippet": "+ 44 Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 ..."
+    },
+    {
+      "title": "qwen3-dpo-grpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Phantomcloak19/qwen3-dpo-grpo",
+      "snippet": "Deploy qwen3-dpo-grpo with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "GitHub - waqqasansari/qwen3-grpo-finetune",
+      "url": "https://github.com/waqqasansari/qwen3-grpo-finetune",
+      "snippet": "This repository contains a Jupyter Notebook for fine-tuning the Qwen3-4B language model using the Unsloth library, with the application of a reward-optimization method called GRPO (Guided Reward-based Prompt Optimization). This training setup is optimized for running in Google Colab or locally on 4-bit/16-bit precision hardware."
+    }
+  ]
+}

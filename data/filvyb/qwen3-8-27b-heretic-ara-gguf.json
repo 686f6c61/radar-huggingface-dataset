@@ -5,7 +5,7 @@
   "author": "filvyb",
   "url": "https://huggingface.co/filvyb/Qwen3.8-27B-heretic-ara-GGUF",
   "created_at": "2026-08-22T19:05:11.000Z",
-  "updated_at": "2026-08-23T21:28:28.000Z",
+  "updated_at": "2026-08-24T18:19:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 62279609920,
-  "storage_human": "62.3 GB",
+  "storage_bytes": 112957903936,
+  "storage_human": "113.0 GB",
   "base_model": "coder3101/Qwen3.8-27B-heretic-ara",
   "formats": [
     "gguf"

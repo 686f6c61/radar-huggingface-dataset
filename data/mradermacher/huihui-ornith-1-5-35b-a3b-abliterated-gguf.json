@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF",
+  "slug": "mradermacher-huihui-ornith-1-5-35b-a3b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF",
+  "created_at": "2026-08-25T05:12:04.000Z",
+  "updated_at": "2026-08-25T06:28:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "en",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 244419000992,
+  "storage_human": "244.4 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ornith-1.5-35B-A3B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-abliterated-GGUF",
+      "snippet": "Instructions to use mradermacher/Ornith-1.5-35B-A3B-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ornith-1.5 35B-A3B for DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark",
+      "snippet": "Serve Ornith-1.5-35B-A3B — a ~35B mixture-of-experts model (~3B active params/token) from the Ornith team — on a single NVIDIA DGX Spark (GB10 / SM121, ~128 GB unified memory): NVFP4 checkpoint, vLLM, in-checkpoint MTP speculative decoding, and up to 256k context."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+    },
+    {
+      "title": "Ornith-1.0-35B · Models",
+      "url": "https://www.modelscope.cn/models/deepreinforce-ai/Ornith-1.0-35B",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

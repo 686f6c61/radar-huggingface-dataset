@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "alexwoods711/tcd3010",
+  "slug": "alexwoods711-tcd3010",
+  "author": "alexwoods711",
+  "url": "https://huggingface.co/alexwoods711/tcd3010",
+  "created_at": "2026-08-25T05:05:25.000Z",
+  "updated_at": "2026-08-25T05:05:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48965024,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexwoods711/tcd3010 · Hugging Face",
+      "url": "https://huggingface.co/alexwoods711/tcd3010",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - alexwoods711/AzureMCPPricing",
+      "url": "https://github.com/alexwoods711/AzureMCPPricing",
+      "snippet": "A Model Context Protocol (MCP) server that provides AI assistants with real-time access to Azure retail pricing information. Query VM prices, compare costs across regions, estimate monthly bills, and discover available SKUs—all through natural language."
+    },
+    {
+      "title": "tcd3010.onnx · Nikolaychekur/Zoja2001 at main - Hugging Face",
+      "url": "https://huggingface.co/Nikolaychekur/Zoja2001/blob/main/tcd3010.onnx",
+      "snippet": "Nikolaychekur / Zoja2001 like 0 ONNX Model card FilesFiles and versions xet Community main Zoja2001 /tcd3010.onnx Nikolaychekur Upload tcd3010.onnx 0608a38 verifiedabout 1 month ago download Copy download link history blame contribute delete Safe 49 MB"
+    },
+    {
+      "title": "GitHub - alexwoods711/AI-algorithms-C-sharp",
+      "url": "https://github.com/alexwoods711/AI-algorithms-C-sharp",
+      "snippet": "Contribute to alexwoods711/AI-algorithms-C-sharp development by creating an account on GitHub."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "wwewtech",
   "url": "https://huggingface.co/wwewtech/russian-it-community-lora",
   "created_at": "2026-08-22T21:52:26.000Z",
-  "updated_at": "2026-08-23T14:36:15.000Z",
+  "updated_at": "2026-08-24T19:59:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,21 +15,7 @@
     "en"
   ],
   "tags": [
-    "peft",
     "safetensors",
-    "lora",
-    "russian-it",
-    "qwen",
-    "deepseek",
-    "llama",
-    "smollm",
-    "devops",
-    "rag",
-    "enterprise-eval",
-    "text-generation",
-    "ru",
-    "en",
-    "license:mit",
     "region:us"
   ],
   "likes": 1,
@@ -37,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3944863242,
-  "storage_human": "3.9 GB",
+  "storage_bytes": 5268002822,
+  "storage_human": "5.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

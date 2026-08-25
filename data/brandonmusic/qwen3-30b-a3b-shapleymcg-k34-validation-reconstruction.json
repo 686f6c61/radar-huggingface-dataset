@@ -5,7 +5,7 @@
   "author": "brandonmusic",
   "url": "https://huggingface.co/brandonmusic/Qwen3-30B-A3B-ShapleyMCG-K34-Validation-Reconstruction",
   "created_at": "2026-08-24T07:43:03.000Z",
-  "updated_at": "2026-08-24T18:03:55.000Z",
+  "updated_at": "2026-08-24T21:01:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

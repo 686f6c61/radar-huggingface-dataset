@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liujinyaoMikey/TriSafeMem-9b",
+  "slug": "liujinyaomikey-trisafemem-9b",
+  "author": "liujinyaoMikey",
+  "url": "https://huggingface.co/liujinyaoMikey/TriSafeMem-9b",
+  "created_at": "2026-08-25T09:43:33.000Z",
+  "updated_at": "2026-08-25T09:43:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ComfyUI-Qwen3.5-Uncensored - GitHub",
+      "url": "https://github.com/Deaquay/ComfyUI-Qwen3.5-Uncensored",
+      "snippet": "ComfyUI-QwenVL custom nodes with local model discovery and 3.5 support: Integrates the Qwen-VL series, including Qwen2.5-VL,Qwen3-VL, and Qwen3.5 with GGUF support for advanced multimodal AI in tex..."
+    },
+    {
+      "title": "safetensors AI Models | Civitai",
+      "url": "https://civitai.com/tag/safetensors",
+      "snippet": "safetensors Browse 26 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with safetensors."
+    },
+    {
+      "title": "01-ai/Yi-9B · Hugging Face",
+      "url": "https://huggingface.co/01-ai/Yi-9B",
+      "snippet": "Base model or Chat model - which to fine-tune? The choice of pre-trained language model for fine-tuning hinges on the computational resources you have at your disposal and the particular demands of your task."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

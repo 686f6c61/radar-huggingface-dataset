@@ -5,7 +5,7 @@
   "author": "senga-ml",
   "url": "https://huggingface.co/senga-ml/body-model-24-08",
   "created_at": "2026-08-24T10:16:59.000Z",
-  "updated_at": "2026-08-24T11:12:29.000Z",
+  "updated_at": "2026-08-24T18:50:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 202112440,
   "parameters_human": "202.1M",
-  "storage_bytes": 2427937224,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 16187544405,
+  "storage_human": "16.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

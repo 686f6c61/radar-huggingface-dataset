@@ -5,7 +5,7 @@
   "author": "MTGxTHOR",
   "url": "https://huggingface.co/MTGxTHOR/plant-v225-sft",
   "created_at": "2026-08-24T10:56:11.000Z",
-  "updated_at": "2026-08-24T10:56:17.000Z",
+  "updated_at": "2026-08-24T12:57:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 269596520,
-  "storage_human": "270 MB",
+  "storage_bytes": 1078386080,
+  "storage_human": "1.1 GB",
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "safetensors"

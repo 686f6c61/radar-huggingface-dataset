@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "abdoalfahad2026/my-happiness-model",
+  "slug": "abdoalfahad2026-my-happiness-model",
+  "author": "abdoalfahad2026",
+  "url": "https://huggingface.co/abdoalfahad2026/my-happiness-model",
+  "created_at": "2026-08-25T03:25:00.000Z",
+  "updated_at": "2026-08-25T03:31:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1071381374,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HamzaIssam/my-happiness-model · Hugging Face",
+      "url": "https://huggingface.co/HamzaIssam/my-happiness-model",
+      "snippet": "Instructions to use HamzaIssam/my-happiness-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use HamzaIssam/my-happiness-model with llama-cpp-python:"
+    },
+    {
+      "title": "mohamedelgaraihy/my-happiness-model · Hugging Face",
+      "url": "https://huggingface.co/mohamedelgaraihy/my-happiness-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=en",
+      "snippet": "Create an account or log in to Instagram - Share what you&#x27;re into with the people who get you."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "New & Upcoming AI Models (2026): Release Tracker & Pricing",
+      "url": "https://capitalandcompute.net/ai-models/",
+      "snippet": "Tracker of new and upcoming AI model releases, updated August 2026: release dates, per-token pricing and primary sources for Claude, GPT, Gemini and more."
+    }
+  ]
+}

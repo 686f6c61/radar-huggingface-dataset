@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "efanuy/Unit8-PPO-LunarLander",
+  "slug": "efanuy-unit8-ppo-lunarlander",
+  "author": "efanuy",
+  "url": "https://huggingface.co/efanuy/Unit8-PPO-LunarLander",
+  "created_at": "2026-08-25T08:29:58.000Z",
+  "updated_at": "2026-08-25T08:39:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152748,
+  "storage_human": "152748 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "efanuy/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/efanuy/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "bonadio/LunarLander-PPO-unit8 · Hugging Face",
+      "url": "https://huggingface.co/bonadio/LunarLander-PPO-unit8",
+      "snippet": "PPO Agent Playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2."
+    },
+    {
+      "title": "GitHub - mariaegarciab/Lunar_Lander: This is a trained model of a PPO ...",
+      "url": "https://github.com/mariaegarciab/Lunar_Lander",
+      "snippet": "Project Overview This project involves training a Proximal Policy Optimization (PPO) model to solve the Lunar Lander environment from OpenAI Gym. The goal is to optimize the model&#x27;s hyperparameters to achieve stable and efficient landings."
+    },
+    {
+      "title": "GitHub - alperenunlu/ppo-lunarlander-v2: Agent trained with PPO ...",
+      "url": "https://github.com/alperenunlu/ppo-lunarlander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "PPO-LunarLander-v2 - AI Model by EvanMath | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/EvanMath/PPO-LunarLander-v2",
+      "snippet": "Explore PPO-LunarLander-v2, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    }
+  ]
+}

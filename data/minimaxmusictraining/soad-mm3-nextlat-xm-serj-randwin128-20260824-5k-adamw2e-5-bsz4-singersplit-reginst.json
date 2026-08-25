@@ -5,7 +5,7 @@
   "author": "MiniMaxMusicTraining",
   "url": "https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst",
   "created_at": "2026-08-24T06:38:13.000Z",
-  "updated_at": "2026-08-24T11:28:23.000Z",
+  "updated_at": "2026-08-24T11:33:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 10750825722,
+  "storage_bytes": 10817826814,
   "storage_human": "10.8 GB",
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [

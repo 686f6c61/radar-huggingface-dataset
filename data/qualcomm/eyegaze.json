@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qualcomm/EyeGaze",
+  "slug": "qualcomm-eyegaze",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/EyeGaze",
+  "created_at": "2025-11-11T00:25:06.000Z",
+  "updated_at": "2026-08-25T04:11:06.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "gaze-estimation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bu_auto",
+    "real_time",
+    "android",
+    "gaze-estimation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53343150,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qu&#x27;est-ce que l&#x27;eye tracking? - Eye Tracking: La Technologie",
+      "url": "https://duckduckgo.com/y.js?ad_domain=tobii.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=QPDdkMRpr5fjQjx9a7a4vtlAsKDHX%2DLo7rq%2DFERzmojMmLq3RvbZwcVxZgpA4mTwamhnP5a6QPH0vwKJ10ubn7nsrJ31lneqCcTAXR4Vjq8BluveeDKqvjL6OwAz6YP9%2D%2DVSGA_VlG1Xgx7%2DIZqZR96d24V5TrH7inpR8hsle4Y.Lc%2D3pqonVW2ndSiimPkblA&rut=77eb0eb21cd2ee0c8f4e8f330dfb759920f55b9e9adcdffdf0220575077aab76&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8CeABqlgCbWkuYCfwlNi%2DEzVUCUxGwrUk_S02D%2Dn9vxjaGAwyRXZr2cIuPdajRb3DbK97YhQW0B7YwZ0MP7ezQta7PwDa3PYTE1vUHO7pHihgGyobqaPP4jM9d8fKITQekeVoJd3ZF4Qa0N23lX8SZsA1SVlt4m9nCFxu9xh0GddM0yUmv8Qbt7ALTnZm0hujWcREBt5fYHWgFVtEXhhBBs6AbjI%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudG9iaWkuY29tJTJmZnIlM2ZjcmVhdGl2ZSUzZCUyNmtleXdvcmQlM2RleWUtdHJhY2tpbmclMjZtYXRjaHR5cGUlM2RwJTI2bmV0d29yayUzZHMlMjZkZXZpY2UlM2RjJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTdiaWZkaXNwbGF5JTNhZGlzcGxheSU3ZCU3YmlmdmlkZW8lM2F2aWRlbyU3ZCUyNnV0bV9jYW1wYWlnbiUzZCUyNnV0bV90ZXJtJTNkZXllLXRyYWNraW5nJTI2dXRtX2NvbnRlbnQlM2RzJTI2bXNjbGtpZCUzZGY4ZWM0ZjQ2Mjk1MzEyZDc1Nzk2MjVjYjA4MzMwYzRh%26rlid%3Df8ec4f46295312d7579625cb08330c4a&vqd=4-267960337856165813326312115519376048565&iurl=%7B1%7DIG%3D8AF9D844006346B699310ADA44D97CB1%26CID%3D07972A876AFB66E235CE3D476B8C6735%26ID%3DDevEx%2C5036.1",
+      "snippet": "Découvrez nos technologies, solutions et applications pour la recherche et au-delà. Explorez Tobii et l&#x27;eye tracking dès maintenant."
+    },
+    {
+      "title": "EyeGaze - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/eyegaze",
+      "snippet": "EyeGaze Eye gaze estimation from cropped eye images. Predicts gaze direction (pitch, yaw) from 96x160 grayscale eye images using the EyeNet model."
+    },
+    {
+      "title": "qualcomm/EyeGaze · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/EyeGaze",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/eyegaze at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/eyegaze",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/eyegaze/README.md at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/eyegaze/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

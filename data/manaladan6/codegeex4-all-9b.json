@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "manaladan6/codegeex4-all-9b",
+  "slug": "manaladan6-codegeex4-all-9b",
+  "author": "manaladan6",
+  "url": "https://huggingface.co/manaladan6/codegeex4-all-9b",
+  "created_at": "2026-08-25T05:09:24.000Z",
+  "updated_at": "2026-08-25T05:09:25.000Z",
+  "license": "codegeex4",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "chatglm",
+    "glm",
+    "codegeex",
+    "thudm",
+    "text-generation",
+    "custom_code",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9399951392,
+  "parameters_human": "9.40B",
+  "storage_bytes": 18813307896,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manaladan6/codegeex4-all-9b · Hugging Face",
+      "url": "https://huggingface.co/manaladan6/codegeex4-all-9b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zai-org/CodeGeeX4: CodeGeeX4-ALL-9B, a versatile model for all ...",
+      "url": "https://github.com/zai-org/CodeGeeX4",
+      "snippet": "CodeGeeX4-ALL-9B, a versatile model for all AI software development scenarios, including code completion, code interpreter, web search, function calling, repository-level Q&amp;A and much more. - z..."
+    },
+    {
+      "title": "zai-org/codegeex4-all-9b · Hugging Face",
+      "url": "https://huggingface.co/zai-org/codegeex4-all-9b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Codegeex4 All 9b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/codegeex4-all-9b.html",
+      "snippet": "Download Codegeex4 All 9b GGUF model. 2.95 GB, 513 downloads, 45 likes."
+    },
+    {
+      "title": "codegeex4-all-9b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/codegeex4-all-9b-zai-org",
+      "snippet": "Q: How does CodeGeeX4-ALL-9B compare to Codestral-22B for code generation? A: CodeGeeX4 achieves 82.3% on HumanEval versus Codestral&#x27;s 81.1%, and 40.4% on NaturalCodeBench versus Codestral&#x27;s 46.0%. CodeGeeX4 is faster due to smaller size (9B vs 22B parameters) and uses less VRAM, making it better for resource-constrained deployments."
+    }
+  ]
+}

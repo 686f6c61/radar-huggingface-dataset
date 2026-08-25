@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 2378,
+  "downloads_30d": 2521,
   "trending_score": 0,
   "parameters": 8027131120,
   "parameters_human": "8.03B",
-  "storage_bytes": 54089096192,
-  "storage_human": "54.1 GB",
+  "storage_bytes": 54381114593,
+  "storage_human": "54.4 GB",
   "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16, Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",

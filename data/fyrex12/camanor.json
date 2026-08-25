@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Fyrex12/Camanor",
+  "slug": "fyrex12-camanor",
+  "author": "Fyrex12",
+  "url": "https://huggingface.co/Fyrex12/Camanor",
+  "created_at": "2026-08-25T03:32:13.000Z",
+  "updated_at": "2026-08-25T05:21:11.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "code",
+    "html",
+    "css",
+    "javascript",
+    "python",
+    "datasets",
+    "ru",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 8418311784,
+  "storage_human": "8.4 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "Is This Image AI-Generated? Free AI & Deepfake Detector",
+      "url": "https://www.forgespy.com/",
+      "snippet": "Check any image, video, or audio for AI generation, deepfakes, and voice cloning in seconds. Free to try — no credit card required."
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    },
+    {
+      "title": "Local AI models you can run - CanIRun.ai",
+      "url": "https://www.canirun.ai/models",
+      "snippet": "Browse 104 open LLMs, coding, image and video models. See which ones fit your GPU or Mac — VRAM, speed and compatibility grades."
+    }
+  ]
+}

@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 19862458428,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 9357274635,
+  "storage_human": "9.4 GB",
   "base_model": "Lightricks/LTX-2.3, Lightricks/LTX-2.5",
   "formats": [
     "diffusers"

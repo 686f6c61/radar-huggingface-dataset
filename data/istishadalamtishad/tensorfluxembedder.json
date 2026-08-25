@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "IstishadAlamTishad/TensorFluxEmbedder",
+  "slug": "istishadalamtishad-tensorfluxembedder",
+  "author": "IstishadAlamTishad",
+  "url": "https://huggingface.co/IstishadAlamTishad/TensorFluxEmbedder",
+  "created_at": "2026-08-25T09:20:59.000Z",
+  "updated_at": "2026-08-25T09:20:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IstishadAlamTishad (Mohammed Istishad Alam Tishad)",
+      "url": "https://huggingface.co/IstishadAlamTishad",
+      "snippet": "AI & ML interests GAN, Vision-Language-Action , Vision-Language, Diffusion, LLM, Image Generation, Time Series, Robotics"
+    },
+    {
+      "title": "IstishadAlamTishad Tishad07 - GitHub",
+      "url": "https://github.com/Tishad07/",
+      "snippet": "AI/ML Engineer | Competitive Programmer || B.Sc in Computer Science & Engineering at American International University-Bangladesh - Tishad07"
+    },
+    {
+      "title": "TensorFlow",
+      "url": "https://www.tensorflow.org/",
+      "snippet": "An end-to-end open source machine learning platform for everyone. Discover TensorFlow&#x27;s flexible ecosystem of tools, libraries and community resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Models & datasets - TensorFlow",
+      "url": "https://www.tensorflow.org/resources/models-datasets",
+      "snippet": "Explore repositories and other resources to find available models and datasets created by the TensorFlow community."
+    }
+  ]
+}

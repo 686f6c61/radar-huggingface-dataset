@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Tashkeel-350M-v2-LiteRT",
+  "slug": "mlboydaisuke-tashkeel-350m-v2-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Tashkeel-350M-v2-LiteRT",
+  "created_at": "2026-08-25T04:52:46.000Z",
+  "updated_at": "2026-08-25T04:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "litert",
+    "litert-lm",
+    "on-device",
+    "granite",
+    "arabic",
+    "diacritization",
+    "text-generation",
+    "ar",
+    "base_model:Etherll/Tashkeel-350M-v2",
+    "base_model:quantized:Etherll/Tashkeel-350M-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1249716912,
+  "storage_human": "1.2 GB",
+  "base_model": "Etherll/Tashkeel-350M-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Tashkeel-350M-v2-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Tashkeel-350M-v2-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tashkeel-350M-v2 Open-source Model - Automatically add correct ...",
+      "url": "https://model.aibase.com/models/details/1988134482238246912",
+      "snippet": "A 350M parameter model designed for Arabic diacritization, offering high - precision text diacritization. Tashkeel-350M is a 350M parameter model specifically for Arabic diacritization."
+    },
+    {
+      "title": "LiteRT Conversions - shipped to litert-community - a mlboydaisuke ...",
+      "url": "https://huggingface.co/collections/mlboydaisuke/litert-conversions-shipped-to-litert-community",
+      "snippet": "Models I converted to LiteRT and shipped to litert-community: LLMs, VLMs, embeddings, TTS, ASR, and a vision zoo. Measured on-device."
+    },
+    {
+      "title": "350M parameters Model_Open Source Model_AIBase Model Library",
+      "url": "https://model.aibase.com/tag/350M%20parameters",
+      "snippet": "Tashkeel-350M-v2 is a model specifically designed for phonetic notation of Arabic text, with 350 million parameters. This model is based on the ibm-granite/granite-4.-h-350m model and is fine-tuned on the Misraj/Sadeed_Tashkeela dataset."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://knowyourmodel.ai/models/huggingface%3AEtherll%2FTashkeel-350M-v2",
+      "snippet": "Home Models Huggingface%3AEtherll%2FTashkeel-350M-v2 Entities huggingface/huggingface:Etherll/Tashkeel-350M-v2"
+    }
+  ]
+}

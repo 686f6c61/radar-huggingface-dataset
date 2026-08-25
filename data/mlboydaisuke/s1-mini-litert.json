@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/S1-mini-LiteRT",
+  "slug": "mlboydaisuke-s1-mini-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/S1-mini-LiteRT",
+  "created_at": "2026-08-25T03:15:38.000Z",
+  "updated_at": "2026-08-25T03:33:55.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "asr",
+    "automatic-speech-recognition",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "speech-to-text",
+    "dictation",
+    "post-processing",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:superwhisper/s1-mini",
+    "base_model:quantized:superwhisper/s1-mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688157792,
+  "storage_human": "688 MB",
+  "base_model": "superwhisper/s1-mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/S1-mini-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/S1-mini-CoreAI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlboydaisuke/Dia2-1B-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Dia2-1B-LiteRT",
+      "snippet": "Dia2-1B (Nari Labs, Apache-2.0) — a two-speaker dialogue text-to-speech model — re-authored to run on-device with LiteRT CompiledModel. Verified on a Pixel 8a (Tensor G3). Dia2 is a Moshi-style RQ-Transformer."
+    },
+    {
+      "title": "coreai-model-zoo/models/s1-mini/README.md at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/blob/main/models/s1-mini/README.md",
+      "snippet": "S1-mini by Superwhisper is a 0.6B text normalizer for speech-to-text output: it takes a raw ASR transcript and rewrites it as clean written text — fillers removed, false starts and self-corrections resolved to whatever the speaker landed on, punctuation and capitalization applied, and spoken numbers, dates, times, currency and email addresses rendered in written form. It is not a chat model ..."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google&#x27;s On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - google-ai-edge/LiteRT"
+    },
+    {
+      "title": "On-device Inference with LiteRT | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/litert/inference",
+      "snippet": "LiteRT CompiledModel API represents the modern standard for on-device ML inference, offering streamlined hardware acceleration that significantly outperforms the Interpreter API."
+    }
+  ]
+}

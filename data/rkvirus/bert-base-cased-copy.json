@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RkVirus/bert-base-cased-copy",
+  "slug": "rkvirus-bert-base-cased-copy",
+  "author": "RkVirus",
+  "url": "https://huggingface.co/RkVirus/bert-base-cased-copy",
+  "created_at": "2026-08-25T09:50:20.000Z",
+  "updated_at": "2026-08-25T09:50:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rohithjoginapally/bert-base-cased",
+      "url": "https://github.com/rohithjoginapally/bert-base-cased",
+      "snippet": "BERT base model (cased) Pretrained model on English language using a masked language modeling (MLM) objective. It was introduced in this paper and first released in this repository. This model is case-sensitive: it makes a difference between english and English."
+    },
+    {
+      "title": "tftransformers/bert-base-cased · Hugging Face",
+      "url": "https://huggingface.co/tftransformers/bert-base-cased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google-bert/bert-base-cased · Hugging Face",
+      "url": "https://huggingface.co/google-bert/bert-base-cased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BERT base model (cased)",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/bert-base-cased/summary",
+      "snippet": "BERT base model (cased) Pretrained model on English language using a masked language modeling (MLM) objective. It was introduced in this paper and first released in this repository. This model is case-sensitive: it makes a difference between english and English. Disclaimer: The team releasing BERT did not write a model card for this model so this model card has been written by the Hugging Face ..."
+    },
+    {
+      "title": "bert-base-cased · Model Database",
+      "url": "https://modeldatabase.com/bert-base-cased.html",
+      "snippet": "BERT base model (cased) Pretrained model on English language using a masked language modeling (MLM) objective. It was introduced in this paper and first released in this repository. This model is case-sensitive: it makes a difference between english and English."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "apodex/Apodex-1.1-mini-FP8",
+  "slug": "apodex-apodex-1-1-mini-fp8",
+  "author": "apodex",
+  "url": "https://huggingface.co/apodex/Apodex-1.1-mini-FP8",
+  "created_at": "2026-08-24T09:49:55.000Z",
+  "updated_at": "2026-08-25T02:47:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "agent",
+    "apodex",
+    "arxiv:2608.23283",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 35,
+  "trending_score": 10,
+  "parameters": 35953788784,
+  "parameters_human": "35.95B",
+  "storage_bytes": 37472165238,
+  "storage_human": "37.5 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apodex-1.1-mini - Hugging Face",
+      "url": "https://huggingface.co/apodex/Apodex-1.1-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex-1.0-mini - Hugging Face",
+      "url": "https://huggingface.co/apodex/Apodex-1.0-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.com/",
+      "snippet": "Self-Evolving Heavy-Duty Solver To research, solve, and discover at the frontier requires more than model capacity — it requires rigorous reasoning, each step verified. Apodex is an AI system designed for complex and demanding research tasks."
+    },
+    {
+      "title": "Apodex-1.1-mini-FP8 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/apodex/Apodex-1.1-mini-FP8",
+      "snippet": "Run Apodex-1.1-mini-FP8 with FriendliAI inference. Apodex-1.1 is a reasoning-first model for complex, long-horizon research tasks."
+    },
+    {
+      "title": "Apodex 1.0-mini: 35B Open Model Tops FutureX - explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/apodex-1-0-mini-futurex-35b-deep-research-2026",
+      "snippet": "Apodex-1.0-mini tops FutureX at 59.17, beats Sonnet 4.6 and GPT-5.5. Open 35B deep research model, verification agent team, AgentHarness — June 2026."
+    }
+  ]
+}

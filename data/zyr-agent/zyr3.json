@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "zyr-AGENT/zyr3",
+  "slug": "zyr-agent-zyr3",
+  "author": "zyr-AGENT",
+  "url": "https://huggingface.co/zyr-AGENT/zyr3",
+  "created_at": "2026-08-24T11:07:47.000Z",
+  "updated_at": "2026-08-25T09:56:03.000Z",
+  "license": "zyr3-free-use-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "zyr3",
+    "text-generation",
+    "code",
+    "coding",
+    "code-generation",
+    "coding-agent",
+    "ai-agent",
+    "agent",
+    "software-engineering",
+    "programming",
+    "developer-tools",
+    "reasoning",
+    "text2text-generation",
+    "llm",
+    "glm",
+    "multi-modal",
+    "video",
+    "3d",
+    "zyrai",
+    "custom_code",
+    "en",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65617895,
+  "storage_human": "66 MB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zyr-AGENT/zyr3 · Hugging Face",
+      "url": "https://huggingface.co/zyr-AGENT/zyr3",
+      "snippet": "zyr-AGENT / zyr3 like 1 Text Generation Transformers English Chinese code coding ai agent reasoning multi-modal video 3d zyrai License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "zyr-ai (Zyr - AI) - Hugging Face",
+      "url": "https://huggingface.co/zyr-ai/models",
+      "snippet": "Research and experiments... updated a model 17 days ago published a model 17 days ago"
+    },
+    {
+      "title": "zyr-ai (Zyr - AI) · GitHub",
+      "url": "https://github.com/zyr-ai",
+      "snippet": "A minimal, composable Go library for building AI agent applications. Go"
+    },
+    {
+      "title": "GitHub - zyr-ai/agentcore: A minimal, composable Go library for ...",
+      "url": "https://github.com/zyr-ai/agentcore",
+      "snippet": "A minimal, composable Go library for building AI agent applications. - zyr-ai/agentcore"
+    },
+    {
+      "title": "Malicious code in zyr-agent (npm) - Vulners.com",
+      "url": "https://vulners.com/ossf/OSSF:MAL-2026-13471",
+      "snippet": "Do not edit below this line.=- Source: amazon-inspector (b6dd19313881a0bcfd90734ce897e3134af348bce2b7447eaf4e5dbc910f432c) zyr-agent ships an AI coding agent whose default &#x27;free&#x27; provider routes chat completions to a hardcod..."
+    }
+  ]
+}

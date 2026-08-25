@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sudolink/sam3.1",
+  "slug": "sudolink-sam3-1",
+  "author": "sudolink",
+  "url": "https://huggingface.co/sudolink/sam3.1",
+  "created_at": "2026-08-25T04:57:52.000Z",
+  "updated_at": "2026-08-25T05:03:36.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "sam",
+    "sam3",
+    "segmentation",
+    "video",
+    "base_model:facebook/sam3",
+    "base_model:finetune:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1745546848,
+  "storage_human": "1.7 GB",
+  "base_model": "facebook/sam3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sudolink/sam3.1 · Hugging Face",
+      "url": "https://huggingface.co/sudolink/sam3.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SAM 3.1: Faster and More Accessible Real-Time Video Detection and ...",
+      "url": "https://ai.meta.com/blog/segment-anything-model-3/",
+      "snippet": "We&#x27;ve seen incredible adoption of SAM 3 over the last few months, and during that time, we&#x27;ve been working behind the scenes on updates to improve video processing efficiency. Today, we&#x27;re pleased to introduce SAM 3.1. As a drop-in replacement for SAM 3, our updated model delivers a significant boost in video processing efficiency by introducing object multiplexing, which allows the ..."
+    },
+    {
+      "title": "ai_sam3/RELEASE_SAM3p1.md at main · dreamfarwhb/ai_sam3",
+      "url": "https://github.com/dreamfarwhb/ai_sam3/blob/main/RELEASE_SAM3p1.md",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - ai_sam3/RELEASE_SAM3p1.md at main · dreamfarwhb/ai_sam3"
+    },
+    {
+      "title": "1038lab/sam3 · Hugging Face",
+      "url": "https://huggingface.co/1038lab/sam3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that sho..."
+    }
+  ]
+}

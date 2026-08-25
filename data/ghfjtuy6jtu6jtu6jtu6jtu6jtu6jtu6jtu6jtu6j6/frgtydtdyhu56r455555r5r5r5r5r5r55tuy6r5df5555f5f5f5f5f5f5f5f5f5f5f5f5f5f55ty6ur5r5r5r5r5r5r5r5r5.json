@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ghfjtuy6jtu6jtu6jtu6jtu6jtu6jtu6jtu6jtu6j6/frgtydtdyhu56r455555r5r5r5r5r5r55tuy6r5df5555f5f5f5f5f5f5f5f5f5f5f5f5f5f55ty6ur5r5r5r5r5r5r5r5r5",
+  "slug": "ghfjtuy6jtu6jtu6jtu6jtu6jtu6jtu6jtu6jtu6j6-frgtydtdyhu56r455555r5r5r5r5r5r55tuy6r5df5555f5f5f5f5f5f5f5f5f5f5f5f5f5f55ty6ur5r5r5r5r5r5r5r5r5",
+  "author": "ghfjtuy6jtu6jtu6jtu6jtu6jtu6jtu6jtu6jtu6j6",
+  "url": "https://huggingface.co/ghfjtuy6jtu6jtu6jtu6jtu6jtu6jtu6jtu6jtu6j6/frgtydtdyhu56r455555r5r5r5r5r5r55tuy6r5df5555f5f5f5f5f5f5f5f5f5f5f5f5f5f55ty6ur5r5r5r5r5r5r5r5r5",
+  "created_at": "2026-08-25T09:31:19.000Z",
+  "updated_at": "2026-08-25T09:31:19.000Z",
+  "license": "lgpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:lgpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phonics Song | ABC | (Official Video) - LooLoo Kids ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=fGVH-OVqXNA",
+      "snippet": "Hello kids! Do you know all of the letters of the alphabet? Learning is easy and fun with Johny and kindergarten friends. Alphabet Song for kids, \"Phonics So..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en",
+      "snippet": "Enjoy your favorite videos and channels with the official YouTube app."
+    },
+    {
+      "title": "dCode - Online Ciphers, Solvers, Decoders, Calculators",
+      "url": "https://www.dcode.fr/en",
+      "snippet": "dCode is the universal site for decipher coded messages, cheating on letter games, solving puzzles, geocaches and treasure hunts, etc."
+    },
+    {
+      "title": "Unicode Decode",
+      "url": "https://unicodedecode.com/",
+      "snippet": "code Speed Up Development Paste any text, a character, a word, or a full paragraph, and get an instant, character-by-character breakdown. Unicode Decode shows you exactly what&#x27;s in your string so you can debug faster and ship with confidence."
+    }
+  ]
+}

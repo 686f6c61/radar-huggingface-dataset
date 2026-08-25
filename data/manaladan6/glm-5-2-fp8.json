@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "manaladan6/GLM-5.2-FP8",
+  "slug": "manaladan6-glm-5-2-fp8",
+  "author": "manaladan6",
+  "url": "https://huggingface.co/manaladan6/GLM-5.2-FP8",
+  "created_at": "2026-08-25T05:07:31.000Z",
+  "updated_at": "2026-08-25T05:07:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "arxiv:2603.12201",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 761025363709,
+  "storage_human": "761.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manaladan6/GLM-5.2-FP8 · Hugging Face",
+      "url": "https://huggingface.co/manaladan6/GLM-5.2-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "manaladan6/GLM-5.2-FP8 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/manaladan6/GLM-5.2-FP8/discussions",
+      "snippet": "Instructions to use manaladan6/GLM-5.2-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use manaladan6/GLM-5.2-FP8 with Transformers:"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/zai-org--glm-5.2-fp8",
+      "snippet": "👋 Join our WeChat or Discord community. 📖 Check out the GLM-5.2 blog and GLM-5 Technical report . 📍 Use GLM-5.2 API services on Z.ai API Platform. 🔜 Try GLM-5.2 here . [Paper ] [GitHub ] Introduction We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first ..."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "We also improve GLM-5.2&#x27;s MTP layer for speculative decoding, increasing the acceptance length by up to 20% On standard coding benchmarks, GLM-5.2 is the strongest open-source model, improving on GLM-5.1 by a wide margin: 81.0 vs. 62.0 on Terminal-Bench 2.1 and 62.1 vs. 58.4 on SWE-bench Pro."
+    },
+    {
+      "title": "GLM-5.2-FP8 · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/GLM-5.2-FP8",
+      "snippet": "📍 Use GLM-5.2 API services on Z.ai API Platform. 🔜 Try GLM-5.2 here. [Paper] [GitHub] Introduction We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first time, delivers that capability on a solid 1M-token context."
+    }
+  ]
+}

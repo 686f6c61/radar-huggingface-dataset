@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TigreGotico/AKK-60m-onnx",
+  "slug": "tigregotico-akk-60m-onnx",
+  "author": "TigreGotico",
+  "url": "https://huggingface.co/TigreGotico/AKK-60m-onnx",
+  "created_at": "2026-08-25T10:37:47.000Z",
+  "updated_at": "2026-08-25T10:38:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "linguonnx",
+  "languages": [
+    "akk",
+    "en"
+  ],
+  "tags": [
+    "linguonnx",
+    "onnx",
+    "t5",
+    "translation",
+    "akkadian",
+    "cuneiform",
+    "akk",
+    "en",
+    "base_model:Thalesian/AKK-60m",
+    "base_model:quantized:Thalesian/AKK-60m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 748791903,
+  "storage_human": "749 MB",
+  "base_model": "Thalesian/AKK-60m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "models/Generative_AI at main · onnx/models · GitHub",
+      "url": "https://github.com/onnx/models/tree/main/Generative_AI",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - models/Generative_AI at main · onnx/models"
+    },
+    {
+      "title": "GitHub - TigreGotico/markovonnx",
+      "url": "https://github.com/TigreGotico/markovonnx",
+      "snippet": "Directed the overall vision and feature priorities Reviewed and approved plans before implementation Made final decisions on architecture Controls publishing, pushing, and deployment Every AI-generated commit includes an AI-Generated Change footer with the model name, intent, impact, and verification method."
+    }
+  ]
+}

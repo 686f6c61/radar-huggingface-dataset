@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "12B-Suite/G4-Prototype01-12B-v0.1-Q8_0-GGUF",
+  "slug": "12b-suite-g4-prototype01-12b-v0-1-q8_0-gguf",
+  "author": "12B-Suite",
+  "url": "https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1-Q8_0-GGUF",
+  "created_at": "2026-08-25T09:22:46.000Z",
+  "updated_at": "2026-08-25T09:56:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma4",
+    "12b",
+    "sft",
+    "roleplay",
+    "instruct",
+    "uncensored",
+    "heretic",
+    "sompoa",
+    "mature",
+    "erp",
+    "creative",
+    "peft",
+    "pmpf",
+    "unsloth",
+    "psychology",
+    "text-generation",
+    "en",
+    "dataset:Naphula-Archives/Dark-Psychology-Secrets",
+    "base_model:12B-Suite/G4-Prototype01-12B-v0.1",
+    "base_model:finetune:12B-Suite/G4-Prototype01-12B-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "12B-Suite/G4-Prototype01-12B-v0.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "gemma4:12b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:12b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4 12B: Laptop-Ready Multimodal AI - globaltechcouncil.org",
+      "url": "https://www.globaltechcouncil.org/ai/gemma-4-12b-google-laptop-ready-multimodal-ai-model/",
+      "snippet": "Gemma 4 12B is Google DeepMind&#x27;s 12-billion parameter open model designed to bring advanced multimodal reasoning to local hardware. Positioned within the Gemma 4 family, it supports text, image, and native audio inputs while targeting deployment on laptops or workstations with approximately 16 GB of RAM, VRAM, or unified memory. For developers, enterprises, and AI learners, it represents a ..."
+    },
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "bartowski/magnum-v4-12b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/magnum-v4-12b-GGUF",
+      "snippet": "Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use bartowski/magnum-v4-12b-GGUF with Hermes Agent: Start the llama.cpp server ... Configure Hermes ... Run Hermes hermes Atomic Chat Llamacpp imatrix Quantizations of magnum-v4-12b Prompt format Download a file (not the whole branch ..."
+    }
+  ]
+}

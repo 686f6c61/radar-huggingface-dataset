@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kb0968237/rt_detrv2_finetuned_v1",
+  "slug": "kb0968237-rt_detrv2_finetuned_v1",
+  "author": "kb0968237",
+  "url": "https://huggingface.co/kb0968237/rt_detrv2_finetuned_v1",
+  "created_at": "2026-08-25T10:33:30.000Z",
+  "updated_at": "2026-08-25T10:34:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rt_detr_v2",
+    "object-detection",
+    "generated_from_trainer",
+    "base_model:PekingU/rtdetr_v2_r50vd",
+    "base_model:finetune:PekingU/rtdetr_v2_r50vd",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42869429,
+  "parameters_human": "42.9M",
+  "storage_bytes": 171581981,
+  "storage_human": "172 MB",
+  "base_model": "PekingU/rtdetr_v2_r50vd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RT-DETRv2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/rt_detr_v2",
+      "snippet": "RT-DETRv2 refines RT-DETR by introducing selective multi-scale feature extraction, a discrete sampling operator for broader deployment compatibility, and improved training strategies like dynamic data augmentation and scale-adaptive hyperparameters. These changes enhance flexibility and practicality while maintaining real-time performance."
+    },
+    {
+      "title": "RT-DETRv2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/rt_detr_v2",
+      "snippet": "RT-DETRv2 refines RT-DETR by introducing selective multi-scale feature extraction, a discrete sampling operator for broader deployment compatibility, and improved training strategies like dynamic data augmentation and scale-adaptive hyperparameters. These changes enhance flexibility and practicality while maintaining real-time performance."
+    },
+    {
+      "title": "GitHub - lyuwenyu/RT-DETR: [CVPR 2024] Official RT-DETR (RTDETR paddle ...",
+      "url": "https://github.com/lyuwenyu/RT-DETR",
+      "snippet": "[CVPR 2024] Official RT-DETR (RTDETR paddle pytorch), Real-Time DEtection TRansformer, DETRs Beat YOLOs on Real-time Object Detection. 🔥 🔥 🔥 - lyuwenyu/RT-DETR"
+    },
+    {
+      "title": "RT-DETRv2/README.md at main · zheli-hub/RT-DETRv2 · GitHub",
+      "url": "https://github.com/zheli-hub/RT-DETRv2/blob/main/README.md",
+      "snippet": "Notes: COCO + Objects365 in the table means finetuned model on COCO using pretrained weights trained on Objects365."
+    },
+    {
+      "title": "RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time ...",
+      "url": "https://arxiv.org/abs/2407.17140",
+      "snippet": "In this report, we present RT-DETRv2, an improved Real-Time DEtection TRansformer (RT-DETR). RT-DETRv2 builds upon the previous state-of-the-art real-time detector, RT-DETR, and opens up a set of bag-of-freebies for flexibility and practicality, as well as optimizing the training strategy to achieve enhanced performance. To improve the flexibility, we suggest setting a distinct number of ..."
+    }
+  ]
+}

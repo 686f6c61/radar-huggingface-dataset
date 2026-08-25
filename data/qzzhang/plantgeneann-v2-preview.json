@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "qzzhang/PlantGeneAnn-v2-preview",
+  "slug": "qzzhang-plantgeneann-v2-preview",
+  "author": "qzzhang",
+  "url": "https://huggingface.co/qzzhang/PlantGeneAnn-v2-preview",
+  "created_at": "2026-08-25T11:48:00.000Z",
+  "updated_at": "2026-08-25T11:52:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "caduceus_ph",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qzzhang/PlantGeneAnn-model-plants · Hugging Face",
+      "url": "https://huggingface.co/qzzhang/PlantGeneAnn-model-plants",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PlantGeneAnn: Plant Gene Annotator - GitHub",
+      "url": "https://github.com/qzzhang0131/PlantGeneAnn/tree/main/",
+      "snippet": "PlantGeneAnn is a genome foundation model that enables accurate ab initio gene structure annotation of plant genomes. Built upon the PlantBiMoE architecture with a 1D U-Net-style embeddings decoder head, it automates the prediction of gene structures—including protein-coding genes, CDSs, and exons—on both forward and reverse strands. Beyond standard annotation, PlantGeneAnn serves as a ..."
+    },
+    {
+      "title": "PlantGeneAnn/README.md at main · qzzhang0131/PlantGeneAnn · GitHub",
+      "url": "https://github.com/qzzhang0131/PlantGeneAnn/blob/main/README.md",
+      "snippet": "PlantGeneAnn is a genome foundation model that enables accurate ab initio gene structure annotation of plant genomes. Built upon the PlantBiMoE architecture with a 1D U-Net-style embeddings decoder head, it automates the prediction of gene structures—including protein-coding genes, CDSs, and exons—on both forward and reverse strands. Beyond standard annotation, PlantGeneAnn serves as a ..."
+    },
+    {
+      "title": "README.md · qzzhang/PlantGeneAnn-model-plants at main",
+      "url": "https://huggingface.co/qzzhang/PlantGeneAnn-model-plants/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF PlantGeneAnn: a strand-specific genome foundation model",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.25.733695v1.full.pdf",
+      "snippet": "16 annotation remains reliant on transcript and homology evidence, limiting applications 17 in newly sequenced and non-model species. Here, we present PlantGeneAnn, a 18 plant-optimized, strand-specific genome foundation model for ab initio gene structure 19"
+    }
+  ]
+}

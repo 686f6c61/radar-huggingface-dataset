@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "leapshared/nuedive_test_90epi_merged_20260825_GR00T17",
+  "slug": "leapshared-nuedive_test_90epi_merged_20260825_gr00t17",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/nuedive_test_90epi_merged_20260825_GR00T17",
+  "created_at": "2026-08-25T11:49:14.000Z",
+  "updated_at": "2026-08-25T11:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot_frozen_bf16",
+    "robotics",
+    "dataset:leapshared/nuedive_test_90epi_merged_20260825",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 9529226248,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leapshared/neudive_test_120epi_0819_20260819_155007 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/leapshared/neudive_test_120epi_0819_20260819_155007/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leapshared/neudive_test_120epi_0819_20260819_155007 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/leapshared/neudive_test_120epi_0819_20260819_155007",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Polaris Authentication - Polaris Auth",
+      "url": "https://leap.tcpl.org/leapwebapp/",
+      "snippet": "Domain&#92;UsernamePassword Login name"
+    },
+    {
+      "title": "Cuemath Leap",
+      "url": "https://leap.cuemath.com/",
+      "snippet": "Personalized tutoring for students with a focus on concept-based learning, regular progress reports, and exam and test practice. Unlock your child&#x27;s potential with expert guidance—no rote learning, just real understanding."
+    },
+    {
+      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/merge_pdf",
+      "snippet": "Select multiple PDF files and merge them in seconds. Merge & combine PDF files online, easily and free."
+    }
+  ]
+}

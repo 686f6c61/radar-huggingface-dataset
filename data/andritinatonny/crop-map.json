@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AndritinaTonny/CROP-MAP",
+  "slug": "andritinatonny-crop-map",
+  "author": "AndritinaTonny",
+  "url": "https://huggingface.co/AndritinaTonny/CROP-MAP",
+  "created_at": "2026-08-25T08:38:02.000Z",
+  "updated_at": "2026-08-25T08:39:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31148999,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crop Map Yield Mapping, Crop Production Map - Cropmap",
+      "url": "https://www.cropmap.com/",
+      "snippet": "CropMap transforms agricultural data into actionable market insights by detecting field boundaries & crop types. Use CropMap to minimize your production costs and increase your profits."
+    },
+    {
+      "title": "Crop Monitoring & Farm Boundary Mapping | MapMyCrop",
+      "url": "https://mapmycrop.com/",
+      "snippet": "AI-powered crop monitoring with 1-meter satellite imagery. Detect farm boundaries, crop types & anomalies across 80+ countries. Trusted by 6.2M+ farmers globally. Start free."
+    },
+    {
+      "title": "Crop Map Generation - GitHub",
+      "url": "https://github.com/nasaharvest/crop-mask",
+      "snippet": "To train a new model run the following colab notebook (or use it as a guide): Two models are trained - a multi-headed pixel wise classifier to classify pixels as containing crop or not, and a multi-spectral satellite image forecaster which forecasts a 12 month timeseries given a partial input ..."
+    },
+    {
+      "title": "Crop mapping through a hybrid machine learning and deep learning method",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352938523001726",
+      "snippet": "A major function of satellite imagery is crop identification and separation, which is of key importance in acreage estimation, yield estimation, and agricultural management. This study aimed to examine the capability of the object-based method and machine learning and deep learning algorithms in combining optical and radar images to generate crop-type maps. For this purpose, Sentinel-1 and ..."
+    },
+    {
+      "title": "Satellite Crop Mapping",
+      "url": "https://learn.geo4.dev/Satellite%20Crop%20Mapping.html",
+      "snippet": "DEVELOPING CROP TYPE MAPPING MODEL To classify satellite imagery, Azzari et al. utilize a random forest classification model. A random forest model consists of an ensemble of decision trees (ie, a set of multiple, individual decision trees), where each decision tree utilizes a series of features to determine the optimal classification for given observations. For an approachable overview of ..."
+    }
+  ]
+}

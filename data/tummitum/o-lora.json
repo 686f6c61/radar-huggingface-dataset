@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tummitum/O-LoRA",
+  "slug": "tummitum-o-lora",
+  "author": "tummitum",
+  "url": "https://huggingface.co/tummitum/O-LoRA",
+  "created_at": "2026-08-25T08:49:19.000Z",
+  "updated_at": "2026-08-25T08:49:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:codellama/CodeLlama-7b-Instruct-hf",
+    "base_model:adapter:codellama/CodeLlama-7b-Instruct-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40036488,
+  "storage_human": "40 MB",
+  "base_model": "codellama/CodeLlama-7b-Instruct-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tummitum/O-LoRA · Hugging Face",
+      "url": "https://huggingface.co/tummitum/O-LoRA",
+      "snippet": "Instructions to use tummitum/O-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use tummitum/O-LoRA with PEFT: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Activated LoRA: Fine-tuned LLMs for Intrinsics - arXiv.org",
+      "url": "https://arxiv.org/pdf/2504.12397",
+      "snippet": "Low-Rank Adaptation (LoRA)[13] has addressed these challenges by introducing a parameter-efficient method for fine-tuning [12], enabling highly customized model behavior without the need to retrain or modify the entire model."
+    },
+    {
+      "title": "LoRA Fine Tuning: Revolutionizing AI Model Optimization",
+      "url": "https://www.whaleflux.com/blog/lora-fine-tuning-revolutionizing-ai-model-optimization/",
+      "snippet": "Discover what LoRA is, how LoRA fine-tuning works, its benefits (parameter efficiency, reduced compute needs), when to choose it over full fine-tuning, and its real-world applications & future in AI optimization."
+    },
+    {
+      "title": "OLoRA: Orthonormal Low-Rank Adaptation of Large Language Models",
+      "url": "https://arxiv.org/html/2406.01775v1",
+      "snippet": "1. OLoRA&#x27;s General Superiority: In a majority of cases (53 out of 60 model-task-rank combinations), OLoRA achieves higher final performance compared to standard LoRA. This suggests that OLoRA&#x27;s orthonormal initialization effectively guides the adaptation process, leading to models that generalize better to unseen data. 2."
+    }
+  ]
+}

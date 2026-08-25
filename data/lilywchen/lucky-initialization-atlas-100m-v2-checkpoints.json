@@ -5,7 +5,7 @@
   "author": "lilywchen",
   "url": "https://huggingface.co/lilywchen/lucky-initialization-atlas-100m-v2-checkpoints",
   "created_at": "2026-08-15T06:09:56.000Z",
-  "updated_at": "2026-08-24T06:24:14.000Z",
+  "updated_at": "2026-08-25T07:39:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 301962058272,
-  "storage_human": "302.0 GB",
+  "storage_bytes": 381893191344,
+  "storage_human": "381.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ncksx/carbon-audit-23f2004473",
+  "slug": "ncksx-carbon-audit-23f2004473",
+  "author": "ncksx",
+  "url": "https://huggingface.co/ncksx/carbon-audit-23f2004473",
+  "created_at": "2026-08-25T08:33:27.000Z",
+  "updated_at": "2026-08-25T08:36:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f1002603/carbon-audit-model · Hugging Face",
+      "url": "https://huggingface.co/24f1002603/carbon-audit-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "AI-ESG-Carbon-Audit/ml/model_monitoring.py at main - GitHub",
+      "url": "https://github.com/darshan26718/AI-ESG-Carbon-Audit/blob/main/ml/model_monitoring.py",
+      "snippet": "Contribute to darshan26718/AI-ESG-Carbon-Audit development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Carbon-Scan/Model-AI",
+      "url": "https://github.com/Carbon-Scan/Model-AI/tree/main/",
+      "snippet": "Contribute to Carbon-Scan/Model-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

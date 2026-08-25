@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gnarrkill69/rodica-01",
+  "slug": "gnarrkill69-rodica-01",
+  "author": "Gnarrkill69",
+  "url": "https://huggingface.co/Gnarrkill69/rodica-01",
+  "created_at": "2026-08-25T04:34:30.000Z",
+  "updated_at": "2026-08-25T05:27:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1358226745,
+  "storage_human": "1.4 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gnarrkill69/rodica-01 · Hugging Face",
+      "url": "https://huggingface.co/Gnarrkill69/rodica-01",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gnarrkill69 - GitHub",
+      "url": "https://github.com/Gnarrkill69",
+      "snippet": "GitHub is where Gnarrkill69 builds software. Joined Aug 13, 2026 Block or report Gnarrkill69 Block user"
+    },
+    {
+      "title": "Gnarrkill69/Catherine_02_V1 · Hugging Face",
+      "url": "https://huggingface.co/Gnarrkill69/Catherine_02_V1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rodica01 · GitHub",
+      "url": "https://github.com/rodica01",
+      "snippet": "rodica01 has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

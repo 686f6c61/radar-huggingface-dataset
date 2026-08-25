@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lxxxy6/ReActor",
+  "slug": "lxxxy6-reactor",
+  "author": "lxxxy6",
+  "url": "https://huggingface.co/lxxxy6/ReActor",
+  "created_at": "2026-08-25T04:13:40.000Z",
+  "updated_at": "2026-08-25T04:22:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 895522407,
+  "storage_human": "896 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lxxxy6 (newPeak) - Hugging Face",
+      "url": "https://huggingface.co/lxxxy6",
+      "snippet": "User profile of newPeak on Hugging Face"
+    },
+    {
+      "title": "lxxxy6/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/lxxxy6/LTX-2.5",
+      "snippet": "lxxxy6 / LTX-2.5 like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Reactor Model of Computation",
+      "url": "https://reactor-model.org/",
+      "snippet": "Reactor Model of Computation The reactor model is a way to structure concurrent, event-driven systems so that their behavior is deterministic, understandable, and predictable even in the presence of real-time interaction, distribution, and parallelism."
+    },
+    {
+      "title": "ReActorBuildFaceModel Node Documentation (ComfyUI-ReActor)",
+      "url": "https://comfyai.run/documentation/ReActorBuildFaceModel",
+      "snippet": "Build Blended Face Model 🌌 ReActor What is this node? The Build Blended Face Model 🌌 ReActor node in ComfyUI is a powerful tool designed to create a composite face model by blending facial features from multiple images or existing face models. This node is incredibly useful for those looking to generate a combined face model from various sources using different computation methods, such ..."
+    },
+    {
+      "title": "reactor AI Models | Civitai",
+      "url": "https://civitai.com/tag/reactor",
+      "snippet": "reactor Browse 29 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with reactor."
+    }
+  ]
+}

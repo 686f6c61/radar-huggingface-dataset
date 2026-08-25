@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kiliez/fake_news_detector",
+  "slug": "kiliez-fake_news_detector",
+  "author": "kiliez",
+  "url": "https://huggingface.co/kiliez/fake_news_detector",
+  "created_at": "2026-08-25T09:29:09.000Z",
+  "updated_at": "2026-08-25T09:29:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiliez/fake_news_detection · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kiliez/fake_news_detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kiliez/bert-fake-news-detector · Hugging Face",
+      "url": "https://huggingface.co/kiliez/bert-fake-news-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fake News Detection Project - GitHub",
+      "url": "https://github.com/kapilsinghnegi/Fake-News-Detection",
+      "snippet": "The project aims to develop a machine-learning model capable of identifying and classifying any news article as fake or not. The distribution of fake news can potentially have highly adverse effects on people and culture. This project involves building and training a model to classify news as fake ..."
+    },
+    {
+      "title": "GitHub - AsimaShafiq/Fake_News_Detector: Comparing AI models with human ...",
+      "url": "https://github.com/AsimaShafiq/Fake_News_Detector",
+      "snippet": "📰 Fake News Detection: Human vs AI Intelligence: This project explores the fundamental question: \"Does human intelligence still outshine artificial intelligence?\" By comparing the accuracy of AI-based Fake News Detection with human judgment, we aimed to evaluate the reliability, strengths, and limitations of both. 📌 Objective:"
+    },
+    {
+      "title": "Fake News Patterns Detector",
+      "url": "http://fakenews.mit.edu/",
+      "snippet": "For more information about this detector, read this MIT news story or take a look at our original manuscript, \" The Language of Fake News: Opening the Black-Box of Deep Learning Based Detectors,\" which we presented at a workshop called \"AI for Social Good\" at the 32nd Conference on Neural Information Processing Systems (NIPS) in Montreal, Canada."
+    }
+  ]
+}

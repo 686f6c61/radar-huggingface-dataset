@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "qualcomm/MediaPipe-Selfie-Segmentation",
+  "slug": "qualcomm-mediapipe-selfie-segmentation",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/MediaPipe-Selfie-Segmentation",
+  "created_at": "2024-02-25T23:03:23.000Z",
+  "updated_at": "2026-08-25T04:13:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "android",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 190,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63903410,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MediaPipe-Selfie-Segmentation - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mediapipe_selfie",
+      "snippet": "MediaPipe-Selfie-Segmentation Segments the person from background in a selfie image and realtime background segmentation in video conferencing. Light‑weight model that segments a person from the background in square or landscape selfie and video conference imagery."
+    },
+    {
+      "title": "qualcomm/MediaPipe-Selfie-Segmentation · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/MediaPipe-Selfie-Segmentation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · qualcomm/MediaPipe-Selfie-Segmentation at ...",
+      "url": "https://huggingface.co/qualcomm/MediaPipe-Selfie-Segmentation/blob/573f8e436f1187af6366a4a0afc876563dd0c356/README.md",
+      "snippet": "This model is an implementation of MediaPipe-Selfie-Segmentation found here. This repository provides scripts to run MediaPipe-Selfie-Segmentation on Qualcomm® devices. More details on model performance across various devices, can be found here."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/mediapipe_selfie at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/mediapipe_selfie",
+      "snippet": "Light-weight model that segments a person from the background in square or landscape selfie and video conference imagery. This is based on the implementation of MediaPipe-Selfie-Segmentation found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/mediapipe_selfie ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/mediapipe_selfie/README.md",
+      "snippet": "Light-weight model that segments a person from the background in square or landscape selfie and video conference imagery. This is based on the implementation of MediaPipe-Selfie-Segmentation found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    }
+  ]
+}

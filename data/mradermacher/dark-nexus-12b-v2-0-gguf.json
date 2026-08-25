@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Nexus-12B-v2.0-GGUF",
+  "slug": "mradermacher-dark-nexus-12b-v2-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Nexus-12B-v2.0-GGUF",
+  "created_at": "2026-08-25T05:24:34.000Z",
+  "updated_at": "2026-08-25T07:19:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Dark-Nexus-12B-v2.0",
+    "base_model:quantized:ReadyArt/Dark-Nexus-12B-v2.0",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692310464,
+  "storage_human": "84.7 GB",
+  "base_model": "ReadyArt/Dark-Nexus-12B-v2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Dark-Nexus-12B-v2.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dark-Nexus-12B-v2.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Dark-Nexus-12B-v2.0 at main - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Nexus-12B-v2.0/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Dark-Nexus-12B-v2.0-GGUF - Hugging Face Hub Package... - Socket",
+      "url": "https://socket.dev/huggingface/package/readyart/dark-nexus-12b-v2.0-gguf",
+      "snippet": "We found that readyart/dark-nexus-12b-v2.-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "Dark Nexus 12B V2.0 — AI Model | Antbase",
+      "url": "https://antbase.ai/models/dark-nexus-12b-v2-0",
+      "snippet": "Overview Dark Nexus 12B V2.0 is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

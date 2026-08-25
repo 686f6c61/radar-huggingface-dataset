@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "bowmanslayer/Qwen3.5-9B-Uncensored-W4A16",
+  "slug": "bowmanslayer-qwen3-5-9b-uncensored-w4a16",
+  "author": "bowmanslayer",
+  "url": "https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-W4A16",
+  "created_at": "2026-08-25T08:52:30.000Z",
+  "updated_at": "2026-08-25T09:43:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "uncensored",
+    "abliterated",
+    "qwen3.5",
+    "multimodal",
+    "w4a16",
+    "gptq",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:bowmanslayer/Qwen3.5-9B-Uncensored",
+    "base_model:quantized:bowmanslayer/Qwen3.5-9B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3422379248,
+  "parameters_human": "3.42B",
+  "storage_bytes": 8732876781,
+  "storage_human": "8.7 GB",
+  "base_model": "bowmanslayer/Qwen3.5-9B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision · Hugging Face",
+      "url": "https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jaahas/qwen3.5-uncensored",
+      "url": "https://ollama.com/jaahas/qwen3.5-uncensored",
+      "snippet": "A completely uncensored variant of Qwen 3.5. Use at your own risk."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-uncensored-leonw24",
+      "snippet": "Overview Qwen3.5-9B-Uncensored is a GGUF-quantized version of Qwen 3.5&#x27;s 9-billion parameter model maintained by LEONW24, designed for local deployment without safety filters. The model uses Q4_K_M quantization, resulting in a 6.3 GB file size while retaining the original Qwen 3.5 architecture&#x27;s 131,072-token context window and multilingual capabilities (English, Chinese, and other languages ..."
+    },
+    {
+      "title": "Qwen3.5-9B Abliterated: Uncensored Local LLM Guide",
+      "url": "https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/",
+      "snippet": "Unrestricted Uncensored Qwen3.5‑9B Abliterated: Full Guide Learn how to install, run, benchmark and compare the uncensored Qwen3.5‑9B Abliterated model locally on Mac, Windows and Linux. Includes step‑by‑step setup (Ollama, GGUF, llama.cpp, vLLM), hardware requirements, benchmarks, pricing considerations, and comparisons with rival open‑source LLMs."
+    }
+  ]
+}

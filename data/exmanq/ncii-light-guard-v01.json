@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Exmanq/ncii-light-guard-v01",
+  "slug": "exmanq-ncii-light-guard-v01",
+  "author": "Exmanq",
+  "url": "https://huggingface.co/Exmanq/ncii-light-guard-v01",
+  "created_at": "2026-08-25T10:26:13.000Z",
+  "updated_at": "2026-08-25T10:26:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-classification",
+    "en",
+    "base_model:microsoft/harrier-oss-v1-270m",
+    "base_model:finetune:microsoft/harrier-oss-v1-270m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268099456,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569610801,
+  "storage_human": "570 MB",
+  "base_model": "microsoft/harrier-oss-v1-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hfmlsoc_ncii-light-guard-v01-ONNX - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/hfmlsoc_ncii-light-guard-v01-ONNX",
+      "snippet": "A newer version of this model is available: prithivMLmods/hfmlsoc_ncii-guard-v02-ONNX"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ncii",
+      "snippet": "2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ncii Clear all"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "FireRed-Image-Edit-1.0-Fast - GitHub",
+      "url": "https://github.com/PRITHIVSAKTHIUR/FireRed-Image-Edit-1.0-Fast/tree/main",
+      "snippet": "Key Features NCII Safety Guard Integration: Evaluates input prompts against a specialized classification guard model (hfmlsoc/ncii-light-guard-v01) to detect and block non-consensual intimate imagery requests before execution."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

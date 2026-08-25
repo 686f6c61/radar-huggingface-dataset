@@ -5,7 +5,7 @@
   "author": "Speedymule",
   "url": "https://huggingface.co/Speedymule/lumiar3.0-4b",
   "created_at": "2026-08-25T00:12:20.000Z",
-  "updated_at": "2026-08-25T00:16:23.000Z",
+  "updated_at": "2026-08-25T01:15:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 13951768544,
-  "storage_human": "14.0 GB",
+  "storage_bytes": 16735214944,
+  "storage_human": "16.7 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"

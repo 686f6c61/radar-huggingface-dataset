@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen7b-a3-badmed-seed2",
+  "slug": "artht-qwen7b-a3-badmed-seed2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen7b-a3-badmed-seed2",
+  "created_at": "2026-08-25T08:33:48.000Z",
+  "updated_at": "2026-08-25T08:46:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498923620,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen7b-a4d-badmed-seed0 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a4d-badmed-seed0",
+      "snippet": "ArthT / qwen7b-a4d-badmed-seed0 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/Seed2.0",
+      "url": "https://github.com/ByteDance-Seed/Seed2.0",
+      "snippet": "State-of-the-Art Multimodal Understanding. Seed2.0 delivers top-tier performance in visual, spatial, and motion reasoning. The model demonstrates leading capabilities on benchmarks such as MMSIBench, MotionBench, and VideoMME. It features enhanced temporal perception for video, enabling stable analysis of dynamic environments, real-time flow analysis, and interactive guidance for scenarios ..."
+    },
+    {
+      "title": "Seed Models",
+      "url": "https://seed.bytedance.com/en/models",
+      "snippet": "Seed Models As a native audio-visual full-duplex LLM, SeedRealtime can jointly understand audio, visual, and temporal information, accurately identify the interaction target and user intent, delivering a brand-new \"watch, listen, and speak\" experience."
+    },
+    {
+      "title": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/seed2",
+      "snippet": "The Seed2.0 series model has been officially released, offering three general-purpose agent models of varying sizes—Pro, Lite, and Mini. The general-purpose models in this series deliver a comprehensive upgrade in multimodal understanding, with strengthened LLM and Agent capabilities that enable steady progression in real-world long-horizon tasks. Seed2.0 further expands its capability ..."
+    },
+    {
+      "title": "[2607.00248] Seed2.0 Model Card: Towards Intelligence Frontier for Real ...",
+      "url": "https://arxiv.org/abs/2607.00248",
+      "snippet": "We present Seed2.0, a model series that takes a meaningful step toward solving complex, real-world tasks. Our approach begins with identifying users&#x27; genuine needs and constructing a reliable, forward-looking evaluation system by selecting and abstracting benchmarks grounded in these needs and in realistic, complex scenarios. Guided by this evaluation system, Seed2.0 targets two persistent ..."
+    }
+  ]
+}

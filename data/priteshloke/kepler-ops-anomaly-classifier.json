@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "priteshloke/kepler-ops-anomaly-classifier",
+  "slug": "priteshloke-kepler-ops-anomaly-classifier",
+  "author": "priteshloke",
+  "url": "https://huggingface.co/priteshloke/kepler-ops-anomaly-classifier",
+  "created_at": "2026-08-25T10:13:55.000Z",
+  "updated_at": "2026-08-25T10:14:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "bert",
+    "text-classification",
+    "sequence-classification",
+    "enterprise-operations",
+    "logistics",
+    "finops",
+    "anomaly-detection",
+    "en",
+    "dataset:priteshloke/enterprise-operations-benchmark",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "priteshloke/enterprise-operations-benchmark - Hugging Face",
+      "url": "https://huggingface.co/datasets/priteshloke/enterprise-operations-benchmark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Identifying Light-curve Signals with a Deep-learning-based Object ...",
+      "url": "https://arxiv.org/html/2311.08080v2",
+      "snippet": "In light of this, a general, widely applicable classification framework would simplify the process of designing specific classifiers for various astronomical objects. We present a novel deep learning framework for classifying light curves using a weakly supervised object detection model."
+    },
+    {
+      "title": "A framework for anomaly classification in Industrial Internet of Things ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2542660524003871",
+      "snippet": "The research addresses the critical need for robust anomaly detection and classification in IIoT systems by providing a comprehensive and scalable solution adaptable to various industrial contexts. The framework comprises two main components: an anomaly detection model and an anomaly classification model."
+    },
+    {
+      "title": "AI-OPS/examples/anomaly_detection_demo.py at main - GitHub",
+      "url": "https://github.com/karthikeyam-AIOPS/AI-OPS/blob/main/examples/anomaly_detection_demo.py",
+      "snippet": "python examples/anomaly_detection_demo.py \"\"\" import pandas as pd import numpy as np from sklearn.feature_extraction.text import TfidfVectorizer from sklearn.ensemble import RandomForestClassifier from sklearn.model_selection import train_test_split from sklearn.metrics import classification_report def create_mock_log_data ():"
+    },
+    {
+      "title": "Latest in AI: New Models, Projects & Releases (2026) | olud.ai",
+      "url": "https://olud.ai/latest.html",
+      "snippet": "Latest in AI What&#x27;s new right now — the freshest models, open-weight and commercial, trending GitHub projects, new Hugging Face Spaces and the AI paper of the day."
+    }
+  ]
+}

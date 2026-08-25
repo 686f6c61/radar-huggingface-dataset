@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-12b-cymraeg-v6-i1-GGUF",
   "created_at": "2026-08-24T08:47:04.000Z",
-  "updated_at": "2026-08-24T08:52:13.000Z",
+  "updated_at": "2026-08-24T09:54:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 17595672864,
-  "storage_human": "17.6 GB",
+  "storage_bytes": 140344501536,
+  "storage_human": "140.3 GB",
   "base_model": "EryriLabs/gemma-4-12b-cymraeg-v6",
   "formats": [
     "gguf"

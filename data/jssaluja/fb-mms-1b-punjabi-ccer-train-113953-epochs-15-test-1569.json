@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 88,
+  "downloads_30d": 127,
   "trending_score": 0,
   "parameters": 964734403,
   "parameters_human": "964.7M",
-  "storage_bytes": 23254278347,
-  "storage_human": "23.3 GB",
+  "storage_bytes": 3868088617,
+  "storage_human": "3.9 GB",
   "base_model": "facebook/mms-1b-all",
   "formats": [
     "safetensors"

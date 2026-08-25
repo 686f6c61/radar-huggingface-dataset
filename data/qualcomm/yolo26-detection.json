@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "qualcomm/YOLO26-Detection",
+  "slug": "qualcomm-yolo26-detection",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/YOLO26-Detection",
+  "created_at": "2026-04-09T20:16:03.000Z",
+  "updated_at": "2026-08-25T04:11:08.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "real_time",
+    "android",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLO26-Detection - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/yolo26_det",
+      "snippet": "YOLO26-Detection Real‑time object detection optimized for mobile and edge by Ultralytics. Ultralytics YOLO26 is a machine learning model that predicts bounding boxes and classes of objects in an image. Note: YOLO26-Detection cannot be downloaded directly due to licensing restrictions. You can export a model ready for on-device deployment using the AI Hub service."
+    },
+    {
+      "title": "qualcomm/YOLO26-Detection · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/YOLO26-Detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/yolo26_det/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/yolo26_det/README.md",
+      "snippet": "Ultralytics YOLO26 is a machine learning model that predicts bounding boxes and classes of objects in an image. This is based on the implementation of YOLO26-Detection found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/yolo26_det at main · qualcomm ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/yolo26_det",
+      "snippet": "Ultralytics YOLO26 is a machine learning model that predicts bounding boxes and classes of objects in an image. This is based on the implementation of YOLO26-Detection found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm ..."
+    },
+    {
+      "title": "README.md · qualcomm/YOLO26-Detection at main - Hugging Face",
+      "url": "https://huggingface.co/qualcomm/YOLO26-Detection/blob/main/README.md",
+      "snippet": "This is based on the implementation of YOLO26-Detection found here. This repository contains pre-exported model files optimized for Qualcomm® devices. You can use the Qualcomm® AI Hub Models library to export with custom configurations. More details on model performance across various devices, can be found here."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_07",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_eb9c82_model_07",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_07",
+  "created_at": "2026-08-25T09:19:55.000Z",
+  "updated_at": "2026-08-25T09:24:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_scholarly_5093-research ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_scholarly_5093-research-digest-rag-c9nwmr/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DietrichGebert/ponytail: Makes your AI agent think like the ...",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "snippet": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail"
+    },
+    {
+      "title": "Terminal-Bench",
+      "url": "https://www.tbench.ai/",
+      "snippet": "A benchmark for terminal agents"
+    },
+    {
+      "title": "Cannot use Hugging Face cache on a read-only filesystem",
+      "url": "https://discuss.huggingface.co/t/cannot-use-hugging-face-cache-on-a-read-only-filesystem/137622",
+      "snippet": "Hello, I&#x27;m having some trouble with getting the huggingface cache to work for my particular use case. I&#x27;ve been setting up kubernetes training for my transformer models, and the way it works is that pods are initialized from a docker image and then I mount a persistent disk with the data. Since pods are initialized from a docker image, any other files relevant for training (e.g. the ..."
+    }
+  ]
+}

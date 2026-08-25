@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ehzawad/stt_bn_fastconformer_hybrid_large",
+  "slug": "ehzawad-stt_bn_fastconformer_hybrid_large",
+  "author": "ehzawad",
+  "url": "https://huggingface.co/ehzawad/stt_bn_fastconformer_hybrid_large",
+  "created_at": "2026-08-25T04:13:20.000Z",
+  "updated_at": "2026-08-25T04:13:32.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "bengali",
+    "bangla",
+    "fastconformer",
+    "ctc",
+    "rnnt",
+    "asr",
+    "bn",
+    "dataset:openslr",
+    "dataset:google/fleurs",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 454361982,
+  "storage_human": "454 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS bn_in (official test)",
+      "metric": "WER (RNNT",
+      "value": 29.26
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS bn_in (official test)",
+      "metric": "CER (RNNT",
+      "value": 8.13
+    }
+  ],
+  "sources": [
+    {
+      "title": "stt_en_fastconformer_hybrid_large_streaming_multi",
+      "url": "https://huggingface.co/nvidia/stt_en_fastconformer_hybrid_large_streaming_multi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stt_ar_fastconformer_hybrid_large_pcd_v1.0 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "STT En FastConformer Hybrid Transducer-CTC Large Streaming 480ms ...",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/nemo/models/stt_en_fastconformer_hybrid_large_streaming_480ms/",
+      "snippet": "This collection contains the large version (114M) of the streaming speech recognition model trained on NeMo ASRSET for English with look-ahead of 480ms. All models are cache-aware hybrid FastConformer with both Transducer and CTC decoders."
+    },
+    {
+      "title": "Stt En Fastconformer Hybrid Large Streaming Multi",
+      "url": "https://free2aitools.com/dataset/nvidia/stt_en_fastconformer_hybrid_large_streaming_multi",
+      "snippet": "💬 Index Insight FNI V2.0 for Stt En Fastconformer Hybrid Large Streaming Multi: Authority (A:49), Popularity (P:25), Recency (R:8), Quality (Q:50). Semantic (S) is a query-time baseline scored live at search. Free2AIToolsNexus Index"
+    },
+    {
+      "title": "nvidia/stt_en_fastconformer_hybrid_large_streaming_multi - AI Model Zoo ...",
+      "url": "https://zoo.bimant.com/model/347854",
+      "snippet": "This collection contains large-size versions of cache-aware FastConformer-Hybrid (around 114M parameters) with multiple look-ahead support, trained on a large scale english speech. These models are trained for streaming ASR, which be used for streaming applications with a variety of latencies (0ms, 80ms, 480s, 1040ms). These are the worst latency and average latency of the model for each case ..."
+    }
+  ]
+}

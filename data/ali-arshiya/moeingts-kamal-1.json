@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ali-arshiya/moeinGTS-kamal-1",
+  "slug": "ali-arshiya-moeingts-kamal-1",
+  "author": "ali-arshiya",
+  "url": "https://huggingface.co/ali-arshiya/moeinGTS-kamal-1",
+  "created_at": "2026-08-25T03:36:41.000Z",
+  "updated_at": "2026-08-25T04:34:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2573269764,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6949805678,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ali-arshiya/moeinGTS1.5-3b · Hugging Face",
+      "url": "https://huggingface.co/ali-arshiya/moeinGTS1.5-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ali-arshiya/moeinGTS1.5-3b · Discussions - Hugging Face",
+      "url": "https://huggingface.co/ali-arshiya/moeinGTS1.5-3b/discussions",
+      "snippet": "ali-arshiya / moeinGTS1.5-3b like 0 Text Generation Transformers Safetensors PyTorch Persian English qwen2 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Fine-Tuning a 1.5B LLM for Efficient Offline Q&A on 1GB VRAM",
+      "url": "https://explore.n1n.ai/blog/fine-tuning-1.5b-llm-offline-qa-vram-2026-08-08",
+      "snippet": "This tutorial explores the end-to-end process of fine-tuning the moeinGTS 1.5B model, a compact powerhouse designed for offline Q&A. We will cover the theory of LoRA, the practical steps of quantization to GGUF, and how to deploy it for lightning-fast inference. For those who require even more power or need to scale their applications beyond local limitations, n1n.ai provides a robust API ..."
+    },
+    {
+      "title": "MoeinGTS1.5 3B by ali-arshiya - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/ali-arshiya%2FmoeinGTS1.5-3b,54ewUABTjQRWMCq4WfohVC",
+      "snippet": "MoeinGTS1.5 3B is an open-source 3b LLM by ali-arshiya. VRAM 6.2GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "How I Fine-Tuned a 1.5B LLM for Lightning-Fast Offline Q&A on 1GB VRAM",
+      "url": "https://dev.to/arshiya_sohrevardi_fae91b/how-i-fine-tuned-a-15b-llm-for-lightning-fast-offline-qa-on-1gb-vram-56k6",
+      "snippet": "However, for specialized tasks like offline Q&A and knowledge retrieval, a lightweight, highly optimized small language model (SLM) can deliver incredible speed and efficiency without breaking the bank. In this post, I will share how I fine-tuned moeinGTS 1.5B, quantized it to GGUF, and deployed it for fast offline inference."
+    }
+  ]
+}

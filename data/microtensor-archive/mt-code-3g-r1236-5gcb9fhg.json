@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "microtensor-archive/mt-code-3g-r1236-5GCb9fhg",
+  "slug": "microtensor-archive-mt-code-3g-r1236-5gcb9fhg",
+  "author": "microtensor-archive",
+  "url": "https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5GCb9fhg",
+  "created_at": "2026-08-25T08:55:57.000Z",
+  "updated_at": "2026-08-25T08:56:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "microtensor",
+    "arena-code-mt-3g",
+    "round-1236",
+    "state-confirmed",
+    "quality-0.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 495106784,
+  "storage_human": "495 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microtensor-io/microtensor-subnet: Microtensor - GitHub",
+      "url": "https://github.com/microtensor-io/microtensor-subnet",
+      "snippet": "The corpus, reference completions, role baselines, pinned base-model revisions and the mt-3g device profile land together at corpus freeze. Run mt inspect readiness for the current state of each gate. Microtensor - Bittensor subnet 92. Frontier accuracy at a fraction of the size, gated on a verified deployment envelope."
+    },
+    {
+      "title": "GitHub - jeffbaumes/microtensor: Small tensor library to learn AI",
+      "url": "https://github.com/jeffbaumes/microtensor",
+      "snippet": "Small tensor library to learn AI. Contribute to jeffbaumes/microtensor development by creating an account on GitHub."
+    },
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

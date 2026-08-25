@@ -5,7 +5,7 @@
   "author": "Roy229",
   "url": "https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_gpt2",
   "created_at": "2026-08-22T01:41:51.000Z",
-  "updated_at": "2026-08-22T01:48:55.000Z",
+  "updated_at": "2026-08-24T08:49:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,7 +15,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 24,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

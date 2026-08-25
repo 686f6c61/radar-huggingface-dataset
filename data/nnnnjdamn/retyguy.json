@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nnnnjdamn/retyguy",
+  "slug": "nnnnjdamn-retyguy",
+  "author": "nnnnjdamn",
+  "url": "https://huggingface.co/nnnnjdamn/retyguy",
+  "created_at": "2026-08-25T09:12:04.000Z",
+  "updated_at": "2026-08-25T09:12:04.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Retro 3D Model Generator: 70s-90s Era Assets | Hyper3D",
+      "url": "https://hyper3d.ai/styles/retro",
+      "snippet": "AI Retro 3D Model Generator Rodin generates high-quality retro 3D models from photos or prompts with clean topology and rich PBR materials, nearly ready to use in games, renders, web experiences, or 3D printing."
+    },
+    {
+      "title": "Free AI 3D Model Generator - CF Studio",
+      "url": "https://studio.creativefabrica.com/3d-model-generator",
+      "snippet": "Generate 3D models from text descriptions or images. Describe what you want or upload a reference image and get a detailed, textured 3D model in seconds. Free to use."
+    },
+    {
+      "title": "Free AI 3D Model Generator - Createimg",
+      "url": "https://www.createimg.com/ai-3d-model-generator/",
+      "snippet": "Try our free AI 3D model generator to create characters, props, and objects in seconds. 100% free, no login required, fast and easy."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "Fast3D - Create 3D Models with AI in Seconds",
+      "url": "https://fast3d.io/",
+      "snippet": "Fast3D is the leading AI-powered 3D model generator. Create high-quality 3D models from text or images in seconds."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jc-builds",
   "url": "https://huggingface.co/jc-builds/Wan2.2-TI2V-5B-iOS",
   "created_at": "2026-08-25T02:21:03.000Z",
-  "updated_at": "2026-08-25T03:08:30.000Z",
+  "updated_at": "2026-08-25T04:32:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",
@@ -40,7 +40,7 @@
   "trending_score": 0,
   "parameters": 5680910336,
   "parameters_human": "5.68B",
-  "storage_bytes": 8497852047,
+  "storage_bytes": 8498100134,
   "storage_human": "8.5 GB",
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [

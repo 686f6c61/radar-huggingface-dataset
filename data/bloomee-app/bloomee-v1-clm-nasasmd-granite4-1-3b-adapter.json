@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 142238386,
-  "storage_human": "142 MB",
+  "storage_bytes": 124764193,
+  "storage_human": "125 MB",
   "base_model": "ibm-granite/granite-4.1-3b",
   "formats": [
     "safetensors"

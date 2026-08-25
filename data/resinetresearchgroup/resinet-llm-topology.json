@@ -5,13 +5,14 @@
   "author": "ResiNetResearchGroup",
   "url": "https://huggingface.co/ResiNetResearchGroup/ResiNet-LLM-topology",
   "created_at": "2026-06-29T14:31:48.000Z",
-  "updated_at": "2026-08-22T09:27:59.000Z",
+  "updated_at": "2026-08-24T23:00:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "en",
     "region:us"
   ],
   "likes": 0,

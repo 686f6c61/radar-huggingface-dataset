@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "manaladan6/codegeex4-all-9b-GGUF",
+  "slug": "manaladan6-codegeex4-all-9b-gguf",
+  "author": "manaladan6",
+  "url": "https://huggingface.co/manaladan6/codegeex4-all-9b-GGUF",
+  "created_at": "2026-08-25T05:08:51.000Z",
+  "updated_at": "2026-08-25T05:08:51.000Z",
+  "license": "codegeex4",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "glm",
+    "codegeex",
+    "thudm",
+    "text-generation",
+    "zh",
+    "en",
+    "license:other",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9399951360,
+  "parameters_human": "9.40B",
+  "storage_bytes": 40699995953,
+  "storage_human": "40.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manaladan6/codegeex4-all-9b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/manaladan6/codegeex4-all-9b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · zai-org/codegeex4-all-9b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/zai-org/codegeex4-all-9b-GGUF/blob/main/README.md",
+      "snippet": "CodeGeeX4-ALL-9B has achieved highly competitive performance on public benchmarks, such as BigCodeBench and NaturalCodeBench. It is currently the most powerful code generation model with less than 10B parameters, even surpassing much larger general-purpose models, achieving the best balance in terms of inference speed and model performance."
+    },
+    {
+      "title": "Codegeex4 All 9b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/codegeex4-all-9b.html",
+      "snippet": "Download Codegeex4 All 9b GGUF model. 2.95 GB, 513 downloads, 45 likes."
+    },
+    {
+      "title": "GitHub - zai-org/CodeGeeX4: CodeGeeX4-ALL-9B, a versatile model for all ...",
+      "url": "https://github.com/zai-org/CodeGeeX4",
+      "snippet": "CodeGeeX4-ALL-9B, a versatile model for all AI software development scenarios, including code completion, code interpreter, web search, function calling, repository-level Q&amp;A and much more. - z..."
+    },
+    {
+      "title": "THUDM/codegeex4-all-9b-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/thudm-codegeex4-all-9b-gguf",
+      "snippet": "We introduce CodeGeeX4-ALL-9B, the open-source version of the latest CodeGeeX4 model series. It is a multilingual code generation model continually trained on the GLM-4-9B , significantly enhancing its code generation capabilities. Using a single CodeGeeX4-ALL-9B model, it can support comprehensive functions such as code completion and generation, code interpreter, web search, function call ..."
+    }
+  ]
+}

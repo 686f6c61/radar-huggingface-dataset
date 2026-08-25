@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Charan2804/price-2026-08-25_08.25.57-lite",
+  "slug": "charan2804-price-2026-08-25_08-25-57-lite",
+  "author": "Charan2804",
+  "url": "https://huggingface.co/Charan2804/price-2026-08-25_08.25.57-lite",
+  "created_at": "2026-08-25T09:10:24.000Z",
+  "updated_at": "2026-08-25T09:10:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51850531,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Priceviewer - Price History Tracker, Price Watch and Comparison across ...",
+      "url": "http://www.priceviewer.com/",
+      "snippet": "Priceviewer tracks price history of over 20 million products. The price chart shows the price change over time for each product."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Price History: Price Tracker for Amazon, Flipkart & more",
+      "url": "https://pricehistory.app/",
+      "snippet": "📈Price History is a free price tracker tool to check price history information for millions of products. Our Amazon Price Tracker tracks Prices, Lightning deals, and Coupon Discounts."
+    },
+    {
+      "title": "gamestick-4k-lite directory listing - Archive.org",
+      "url": "https://archive.org/download/gamestick-4k-lite",
+      "snippet": "gamestick-4k-lite directory listing Files for gamestick-4k-lite"
+    }
+  ]
+}

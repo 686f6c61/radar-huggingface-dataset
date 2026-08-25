@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "l3utterfly/ace-step-1.5",
+  "slug": "l3utterfly-ace-step-1-5",
+  "author": "l3utterfly",
+  "url": "https://huggingface.co/l3utterfly/ace-step-1.5",
+  "created_at": "2026-08-25T09:49:05.000Z",
+  "updated_at": "2026-08-25T09:49:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step: ACE-Step: A Step Towards Music Generation ...",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "LeeAeron/Ace-Step1.5 · Hugging Face",
+      "url": "https://huggingface.co/LeeAeron/Ace-Step1.5",
+      "snippet": "Model Details 🚀 ACE-Step v1.5 is a highly efficient open-source music foundation model designed to bring commercial-grade music generation to consumer hardware. Key Features 💰 Commercial-Ready: Unlike many models trained on ambiguous datasets, ACE-Step v1.5 is designed for creators."
+    },
+    {
+      "title": "ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation",
+      "url": "https://ace-step.github.io/ace-step-v1.5.github.io/",
+      "snippet": "📝 Abstract 🚀 We present ACE-Step v1.5, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, ACE-Step v1.5 achieves quality beyond most commercial music models while remaining extremely fast— under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs ..."
+    },
+    {
+      "title": "ACE-Step (ACE-Step) - Hugging Face",
+      "url": "https://huggingface.co/ACE-Step",
+      "snippet": "Org profile for ACE-Step on Hugging Face, the AI community building the future."
+    }
+  ]
+}

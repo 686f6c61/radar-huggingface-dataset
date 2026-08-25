@@ -5,7 +5,7 @@
   "author": "textclf",
   "url": "https://huggingface.co/textclf/Qwen3.8-27B-TQ-4bit",
   "created_at": "2026-08-17T07:28:03.000Z",
-  "updated_at": "2026-08-24T20:10:54.000Z",
+  "updated_at": "2026-08-25T06:04:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 2589119216,
   "parameters_human": "2.59B",
-  "storage_bytes": 22592970280,
-  "storage_human": "22.6 GB",
+  "storage_bytes": 17984499856,
+  "storage_human": "18.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

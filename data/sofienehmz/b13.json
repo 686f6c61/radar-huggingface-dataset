@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sofienehmz/b13",
+  "slug": "sofienehmz-b13",
+  "author": "sofienehmz",
+  "url": "https://huggingface.co/sofienehmz/b13",
+  "created_at": "2026-08-25T03:14:16.000Z",
+  "updated_at": "2026-08-25T03:14:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sofienehmz/b13-cybersecurity-sft-datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets/sofienehmz/b13-cybersecurity-sft-datasets",
+      "snippet": "Corporate & Developer AI Enhancement Datasets (v3.0) This dataset collection contains structured fine-tuning (SFT) datasets, multi-turn security assessment conversations, and static analysis benchmarks formatted for LLM model training."
+    },
+    {
+      "title": "sofienehmz (sofiene hamzaoui) - Hugging Face",
+      "url": "https://huggingface.co/sofienehmz",
+      "snippet": "published a bucket about 4 hours ago updated a bucket about 4 hours ago"
+    },
+    {
+      "title": "sri-b13/ML-model-for-Network-Threat-Detection - GitHub",
+      "url": "https://github.com/sri-b13/ML-model-for-Network-Threat-Detection",
+      "snippet": "Made a proejct for a problem statement provided by Intel Incorporation under their Industrial Training Program Automated network traffic analysis using AI/ML to enable real-time detection and classification, improved threat identification, reduced false alerts, scalable performance, and privacy-preserving encrypted traffic analysis. With the rapid expansion of data volume, encrypted services ..."
+    },
+    {
+      "title": "b13-ai · GitHub",
+      "url": "https://github.com/b13-ai",
+      "snippet": "b13-ai has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Fashion Models | Sofi 소피",
+      "url": "https://www.sofi.chat/models",
+      "snippet": "Browse SOFI&#x27;s virtual AI model directory, produced and curated with attention to face, mood, style, cultural context, and photorealism for lookbook image generation."
+    }
+  ]
+}

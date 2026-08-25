@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ridwans/9router",
+  "slug": "ridwans-9router",
+  "author": "ridwans",
+  "url": "https://huggingface.co/ridwans/9router",
+  "created_at": "2026-08-25T10:13:40.000Z",
+  "updated_at": "2026-08-25T10:13:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "9Router - Free AI Router | Smart Fallback for Claude, Codex & More",
+      "url": "https://9router.com/",
+      "snippet": "Free AI routing with smart 3-tier fallback. Maximize subscriptions, auto-switch to cheap/free models. Never stop coding with Claude Code, Codex, Gemini CLI."
+    },
+    {
+      "title": "GitHub - decolua/9router: Unlimited FREE AI coding. Connect Claude Code ...",
+      "url": "https://github.com/decolua/9router",
+      "snippet": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. - decolua/9router"
+    },
+    {
+      "title": "9Router - FREE AI Router & Token Saver - GitHub",
+      "url": "https://github.com/decolua//9router",
+      "snippet": "9Router - FREE AI Router & Token Saver Never stop coding. Save 20-40% tokens with RTK + auto-fallback to FREE & cheap AI models. Connect All AI Code Tools (Claude Code, Cursor, Antigravity, Copilot, Codex, Gemini, OpenCode, Cline, OpenClaw...) to 40+ AI Providers & 100+ Models. 🚀 Quick Start • 💡 Features • 📖 Setup • 🌐 Website"
+    },
+    {
+      "title": "Models & Pricing API | decolua/9router | DeepWiki",
+      "url": "https://deepwiki.com/decolua/9router/9.6-models-and-pricing-api",
+      "snippet": "This page documents the API endpoints and data structures for managing AI model listings, model aliasing, combo models, and pricing configuration. These systems enable 9Router to present a unified OpenAI-compatible model list, manage multi-model fallback chains (combos), and calculate per-token costs for usage tracking."
+    },
+    {
+      "title": "9Router: Free Open-Source AI Router with Smart Fallback - AiSpaces",
+      "url": "https://aispaces.net/ai-tool/9router",
+      "snippet": "9Router is a free, open-source local proxy that routes AI coding tools across 40+ providers with smart fallback and token savings."
+    }
+  ]
+}

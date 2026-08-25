@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bigshanedogg/ImgEdit-Judge",
+  "slug": "bigshanedogg-imgedit-judge",
+  "author": "bigshanedogg",
+  "url": "https://huggingface.co/bigshanedogg/ImgEdit-Judge",
+  "created_at": "2026-08-25T05:00:42.000Z",
+  "updated_at": "2026-08-25T05:01:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "image-editing",
+    "evaluation",
+    "judge",
+    "llm-as-judge",
+    "imgedit",
+    "conversational",
+    "arxiv:2505.20275",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16584421384,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bigshanedogg/ImgEdit-Judge · Hugging Face",
+      "url": "https://huggingface.co/bigshanedogg/ImgEdit-Judge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ImgEdit_Judge · sysuyy/ImgEdit at main - Hugging Face",
+      "url": "https://huggingface.co/sysuyy/ImgEdit/blob/main/ImgEdit_Judge",
+      "snippet": "like 0 Model card Files Files and versions Community main ImgEdit / ImgEdit_Judge sysuyy Upload ./ImgEdit_Judge with huggingface_hub 7b2d701 verified about 2 months ago"
+    },
+    {
+      "title": "ImgEdit-Judge Usage | PKU-YuanGroup/ImgEdit | DeepWiki",
+      "url": "https://deepwiki.com/PKU-YuanGroup/ImgEdit/5.3-imgedit-judge-usage",
+      "snippet": "Overview ImgEdit-Judge is a fine-tuned Qwen2.5-VL model that serves as the core evaluation component in the ImgEdit benchmark system. The model takes an original image, an edited image, and an editing prompt as input, then provides structured assessments of the editing quality."
+    },
+    {
+      "title": "ImgEdit: A Unified Image Editing Dataset and Benchmark",
+      "url": "https://www.modelscope.cn/papers/2505.20275/aiRead",
+      "snippet": "结果表明，闭源模型GPT-4o-Image表现最好，而开源模型的表现则参差不齐。 其中，ImgEdit-E1和Step1X-Edit表现出较好的性能，但它们在一些任务上仍然存在不足之处。 在第二个实验中，作者构建了一个名为ImgEdit-Judge的数据集，并将其用于评估现有的图像编辑模型。"
+    },
+    {
+      "title": "GitHub - PKU-YuanGroup/ImgEdit: [NeurIPS 2025 D&B ] ImgEdit: A Unified ...",
+      "url": "https://github.com/PKU-YuanGroup/ImgEdit",
+      "snippet": "ImgEdit is a large-scale, high-quality image-editing dataset comprising 1.2 million carefully curated edit pairs, which contain both novel and complex single-turn edits, as well as challenging multi-turn tasks. To ensure the data quality, we employ a multi-stage pipeline that integrates a cutting-edge vision-language model, a detection model, a segmentation model, alongside task-specific in ..."
+    }
+  ]
+}

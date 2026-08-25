@@ -5,7 +5,7 @@
   "author": "manak0",
   "url": "https://huggingface.co/manak0/Detect-road-signs-winner",
   "created_at": "2026-06-21T12:14:58.000Z",
-  "updated_at": "2026-08-23T12:15:25.000Z",
+  "updated_at": "2026-08-24T12:14:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 438295734,
-  "storage_human": "438 MB",
+  "storage_bytes": 448135351,
+  "storage_human": "448 MB",
   "base_model": null,
   "formats": [
     "onnx"

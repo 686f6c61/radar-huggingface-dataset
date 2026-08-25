@@ -5,7 +5,7 @@
   "author": "me-tantan",
   "url": "https://huggingface.co/me-tantan/petiteAnima",
   "created_at": "2026-07-07T08:41:57.000Z",
-  "updated_at": "2026-08-24T19:50:23.000Z",
+  "updated_at": "2026-08-25T06:40:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 2091068928,
   "parameters_human": "2.09B",

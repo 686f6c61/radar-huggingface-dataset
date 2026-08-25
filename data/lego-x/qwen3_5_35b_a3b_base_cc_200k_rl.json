@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Lego-X/qwen3_5_35b_a3b_base_cc_200k_rl",
+  "slug": "lego-x-qwen3_5_35b_a3b_base_cc_200k_rl",
+  "author": "Lego-X",
+  "url": "https://huggingface.co/Lego-X/qwen3_5_35b_a3b_base_cc_200k_rl",
+  "created_at": "2026-08-25T05:12:54.000Z",
+  "updated_at": "2026-08-25T05:33:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "code",
+    "swe-bench",
+    "agentic",
+    "coding-agent",
+    "reinforcement-learning",
+    "gspo",
+    "claude-code",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Lego-X/Lego-RL-2699",
+    "arxiv:2608.17393",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923863935,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-35B-A3B-Base · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.5-35B-A3B-Base",
+      "snippet": "Qwen3.5 Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen/qwen3.5-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-35b-a3b",
+      "snippet": "Qwen3.5 is a reasoning vision-language model that supports tool use. With 35B total parameters and 3B activated, it outperforms previous generation models more than 6x its size."
+    },
+    {
+      "title": "Qwen3.5 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/qwen35",
+      "snippet": "Qwen3.5 is Qwen&#x27;s new model family including Qwen3.5 Small: 0.8B, 2B, 4B, 9B and Qwen3.5 Medium: 35B-A3B, 27B, 122B-A10B and 397B-A17B."
+    },
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "Qwen3.5-35B-A3B is the smallest MoE in the Qwen3.5 family, sharing the gated delta networks architecture with 35B total parameters and 3B activated per token (256 experts)."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ruisycloud/kko-brain-base",
+  "slug": "ruisycloud-kko-brain-base",
+  "author": "ruisycloud",
+  "url": "https://huggingface.co/ruisycloud/kko-brain-base",
+  "created_at": "2026-08-25T09:01:53.000Z",
+  "updated_at": "2026-08-25T09:01:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kakaobrain/align-base · Hugging Face",
+      "url": "https://huggingface.co/kakaobrain/align-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Brainbase — Internal agents that self-improve",
+      "url": "https://brainbaselabs.com/",
+      "snippet": "Internal agents that self-improve Brainbase hosts your agents, scores every run, and evaluates every change before it ships — across any model or harness."
+    },
+    {
+      "title": "kakaobrain (Kakao Brain) - Hugging Face",
+      "url": "https://huggingface.co/kakaobrain",
+      "snippet": "Kakao Brain, Kakao&#x27;s AI R&D arm, targets global leadership in AI with innovations in generative models like KoGPT (Korean-specialized LLM), Karlo (Text-to-Image), and Kara (radiology report generat..."
+    },
+    {
+      "title": "ClashGenius - AI-Powered Clash of Clans Strategy",
+      "url": "https://www.clashgenius.com/",
+      "snippet": "Upload any base and get AI-powered tactical analysis and custom attack strategies to three-star every base in seconds."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

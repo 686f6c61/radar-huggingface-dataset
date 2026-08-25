@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sisniha/AfterMidnight-MiniMax-H3-NSFW",
+  "slug": "sisniha-aftermidnight-minimax-h3-nsfw",
+  "author": "sisniha",
+  "url": "https://huggingface.co/sisniha/AfterMidnight-MiniMax-H3-NSFW",
+  "created_at": "2026-08-25T10:27:09.000Z",
+  "updated_at": "2026-08-25T10:27:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4771312976,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uncensored Video Generation using MiniMax H3 - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/uncensored-video-generation-using-minimax-h3-dc53e2102eb6",
+      "snippet": "What is MiniMax H3? MiniMax H3 is an open-weight AI video generation model available on Hugging Face. It supports text-to-video, image-to-video, first-and-last-frame animation, reference-to-video ..."
+    },
+    {
+      "title": "Can MiniMax H3 Generate Uncensored Video? What Local Deployment ...",
+      "url": "https://kingy.ai/blog/can-minimax-h3-generate-uncensored-video-what-local-deployment-actually-changes/",
+      "snippet": "Can MiniMax H3 generate uncensored video? This guide compares hosted H3 with local ComfyUI inference, including moderation, licensing, privacy, and consent."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    }
+  ]
+}

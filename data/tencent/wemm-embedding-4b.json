@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tencent/WeMM-Embedding-4B",
+  "slug": "tencent-wemm-embedding-4b",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/WeMM-Embedding-4B",
+  "created_at": "2026-08-25T03:10:36.000Z",
+  "updated_at": "2026-08-25T09:33:45.000Z",
+  "license": "wemm-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "multimodal-embedding",
+    "text-embedding",
+    "image-embedding",
+    "video-embedding",
+    "mrl",
+    "feature-extraction",
+    "custom_code",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": 5173725696,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10367531618,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tencent/WeMM-Embedding",
+      "url": "https://github.com/Tencent/WeMM-Embedding/tree/main",
+      "snippet": "It is the official TIGER-AI-Lab/VLM2Vec pipeline with a minimal diff: multi-node multi-GPU inference (torchrun --nnodes=N), a wemm_embedding backbone implementing our preprocessing and batched inference, dataset instructions aligned with the released model, and 64-frame video sampling."
+    },
+    {
+      "title": "tencent/WeMM-Embedding 9B/4B/2B",
+      "url": "https://bittide.aicompass.dev/article/fb3e0b86-16d4-4b34-99dc-325f71a8cdc4",
+      "snippet": "Summary Tencent introduces WeMM-Embedding, a series of universal multimodal embedding models in 9B, 4B, and 2B sizes, built on Qwen3.5, supporting text, images, videos, and visual documents for embedding generation. WeMM-Embedding-9B is a universal multimodal embedding model built on Qwen3.5."
+    },
+    {
+      "title": "tencent/WeMM-Embedding-9B · Hugging Face",
+      "url": "https://huggingface.co/tencent/WeMM-Embedding-9B",
+      "snippet": "WeMM-Embedding-9B is a universal multimodal embedding model built on Qwen3.5. It accepts text, images, videos, visual documents, and interleaved multimodal inputs, and returns a 4,096-dimensional L2-normalized embedding."
+    },
+    {
+      "title": "GitHub - scenarios/WeMM",
+      "url": "https://github.com/scenarios/WeMM",
+      "snippet": "WeMM is the most recent version of the multimodal large language model introduced by WeChatCV. Capable of engaging in Chinese-English bilingual conversations alongside dynamic high-resolution images, WeMM stands as the most powerful model with 10 billion parameters in the multimodal large language model rankings."
+    },
+    {
+      "title": "emee-ai/Qwen3-Embedding-4B · Hugging Face",
+      "url": "https://huggingface.co/emee-ai/Qwen3-Embedding-4B",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    }
+  ]
+}

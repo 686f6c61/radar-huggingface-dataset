@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hazemelerefy/DAFEgate-YOLO",
+  "slug": "hazemelerefy-dafegate-yolo",
+  "author": "hazemelerefy",
+  "url": "https://huggingface.co/hazemelerefy/DAFEgate-YOLO",
+  "created_at": "2026-08-25T08:32:39.000Z",
+  "updated_at": "2026-08-25T08:32:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolo",
+    "steel-surface-defects",
+    "defegate",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5721258,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hazemelerefy (hazemelerefy) - Hugging Face",
+      "url": "https://huggingface.co/hazemelerefy",
+      "snippet": "DigiSteel YOLO DAFEGate v4 ⚙ Detect steel surface defects in uploaded images hazemelerefy about 1 hour ago"
+    },
+    {
+      "title": "DigiSteel YOLO DAFEGate v4 - a Hugging Face Space by hazemelerefy",
+      "url": "https://huggingface.co/spaces/hazemelerefy/DigiSteel-YOLO",
+      "snippet": "Upload a clear photo of a steel surface, set optional confidence and overlap thresholds, and run the tool. It first checks that the picture really shows steel, then uses a detection model to find a..."
+    },
+    {
+      "title": "GitHub - hazemelerefey/Hazem-Elerefy-Portfolio-2026",
+      "url": "https://github.com/hazemelerefey/Hazem-Elerefy-Portfolio-2026/blob/main/",
+      "snippet": "🌟 Featured Projects 1. DigiSteel (DAFEgate) An industrial intelligence project utilizing Computer Vision (YOLO variant) for defect detection and quality control in steel manufacturing. This flagship project demonstrates the application of deep learning in real-world industrial settings."
+    },
+    {
+      "title": "Hazem-Elerefy-Portfolio-2026/README.md at main - GitHub",
+      "url": "https://github.com/hazemelerefey/Hazem-Elerefy-Portfolio-2026/blob/main/README.md",
+      "snippet": "🌟 Featured Projects 1. DigiSteel (DAFEgate) An industrial intelligence project utilizing Computer Vision (YOLO variant) for defect detection and quality control in steel manufacturing. This flagship project demonstrates the application of deep learning in real-world industrial settings."
+    },
+    {
+      "title": "hazem elerefy - Computer Vision YOLO Models, Projects & Datasets",
+      "url": "https://platform.ultralytics.com/hazemelerefy",
+      "snippet": "Explore hazem elerefy&#x27;s YOLO models, computer vision projects, and datasets. Train, deploy, and monitor models for free on Ultralytics Platform."
+    }
+  ]
+}

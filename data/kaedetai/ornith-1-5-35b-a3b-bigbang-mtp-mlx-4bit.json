@@ -5,7 +5,7 @@
   "author": "KaedeTai",
   "url": "https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit",
   "created_at": "2026-08-23T19:36:21.000Z",
-  "updated_at": "2026-08-24T04:17:07.000Z",
+  "updated_at": "2026-08-24T14:51:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 58,
   "trending_score": 0,
   "parameters": 6005029808,
   "parameters_human": "6.01B",

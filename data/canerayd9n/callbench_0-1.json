@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "canerayd9n/callbench_0.1",
+  "slug": "canerayd9n-callbench_0-1",
+  "author": "canerayd9n",
+  "url": "https://huggingface.co/canerayd9n/callbench_0.1",
+  "created_at": "2026-08-25T11:39:42.000Z",
+  "updated_at": "2026-08-25T11:39:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15782928,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "canerayd9n (Metin Caner Aydın) - Hugging Face",
+      "url": "https://huggingface.co/canerayd9n",
+      "snippet": "Recent Activity updated a modelabout 6 hours ago canerayd9n/whisper-large-v3-tr-callbench-lora published a modelabout 6 hours ago canerayd9n/whisper-large-v3-tr-callbench-lora updated a modelabout 9 hours ago canerayd9n/whisper-large-v3-turbo-tr-lora View all activity"
+    },
+    {
+      "title": "canerayd9n/whisper-large-v3-tr-callbench-lora · Hugging Face",
+      "url": "https://huggingface.co/canerayd9n/whisper-large-v3-tr-callbench-lora",
+      "snippet": "Instructions to use canerayd9n/whisper-large-v3-tr-callbench-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "CallScreenBench: Benchmarking Small Language Models as Phone ...",
+      "url": "https://arxiv.org/html/2608.01033v2",
+      "snippet": "It is also a setting most conversational-AI benchmarks do not model. They evaluate outbound task service, turn-taking mechanics, or spoken question answering. Recent benchmarks cover adjacent phone-assistant, principal-loyalty, and stateful voice-agent settings (Geng et al. 2026; Li and Shi 2026; Meyer et al. 2026); CallScreenBench focuses on unknown inbound-call screening by small, quantized ..."
+    },
+    {
+      "title": "CallBench: A Benchmark for Dual-Goal Coordination in Phone Call Assistants",
+      "url": "https://arxiv.org/html/2607.22635v1",
+      "snippet": "Figure 1 shows a regular-preset takeout example in CallBench, where the assistant must first handle a caller-side exception before returning to the owner-side preset. We further design a preset-aware turn-level evaluation protocol for phone call assistants."
+    },
+    {
+      "title": "CallBench: A Benchmark for Dual-Goal Coordination in Phone Call ...",
+      "url": "https://www.preprints.org/manuscript/202607.1051",
+      "snippet": "It must decide when to advance, delay, or suspend the owner&#x27;s preset while respecting the caller&#x27;s current need and strict safety boundaries. CallBench targets this gap by evaluating dual-goal coordination under phone-call-specific constraints, including goal conflict handling, preset timing, privacy protection, and decision-boundary ..."
+    }
+  ]
+}

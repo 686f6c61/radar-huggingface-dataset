@@ -5,7 +5,7 @@
   "author": "sakamakismile",
   "url": "https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4",
   "created_at": "2026-08-16T20:46:09.000Z",
-  "updated_at": "2026-08-16T21:00:28.000Z",
+  "updated_at": "2026-08-24T11:01:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,13 +30,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 26,
-  "downloads_30d": 20354,
-  "trending_score": 17,
+  "likes": 28,
+  "downloads_30d": 28619,
+  "trending_score": 19,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
-  "storage_bytes": 20579273656,
-  "storage_human": "20.6 GB",
+  "storage_bytes": 40309146789,
+  "storage_human": "40.3 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"

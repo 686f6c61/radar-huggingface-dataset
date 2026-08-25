@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Infomaniak-AI/Apertus-1.5-8B-Instruct",
+  "slug": "infomaniak-ai-apertus-1-5-8b-instruct",
+  "author": "Infomaniak-AI",
+  "url": "https://huggingface.co/Infomaniak-AI/Apertus-1.5-8B-Instruct",
+  "created_at": "2026-08-25T08:47:44.000Z",
+  "updated_at": "2026-08-25T08:47:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swiss-ai/Apertus-v1.5-8B · Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+      "snippet": "Apertus 1.5 Table of Contents Table of Contents Model Summary Key Features How to Use Evaluation Training Limitations Legal Aspects Contact Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI. The models support a wide range of languages, handle contexts of up to 262,144 tokens ..."
+    },
+    {
+      "title": "Apertus AI - Fully Open Foundation Model for Sovereign AI",
+      "url": "https://apertus-ai.org/",
+      "snippet": "Fully Open Foundation Model for Sovereign AI Developed by the Swiss AI Initiative as a collaborative effort between EPFL, ETH Zurich, and CSCS. Open weights, open data, open science."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/articles/2026-07-apertus-1-5/",
+      "snippet": "Apertus 1.5, our latest model release, extends the 8B and 70B Apertus 1.0 models with image understanding, an optional thinking mode, a four times longer context window, improved instruction-following, and better tool use."
+    },
+    {
+      "title": "artificialy/Apertus-v1.5-8B-FP8-BLOCK · Hugging Face",
+      "url": "https://huggingface.co/artificialy/Apertus-v1.5-8B-FP8-BLOCK",
+      "snippet": "Apertus 1.5 Table of Contents Table of Contents Model Summary Key Features How to Use Evaluation Training Limitations Legal Aspects Contact Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI. The models support a wide range of languages, handle contexts of up to 262,144 tokens ..."
+    },
+    {
+      "title": "Apertus Swiss-AI Model | Apertus - EU-Hosted Apps & AI",
+      "url": "https://apertus.ai/en/apps/apertus-model/",
+      "snippet": "The new Swiss AI model - Apertus 70B & 8B. Developed by Swiss-AI for highest precision and efficiency."
+    }
+  ]
+}

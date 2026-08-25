@@ -5,7 +5,7 @@
   "author": "techolise",
   "url": "https://huggingface.co/techolise/akan-twi-speaker17-tts",
   "created_at": "2026-08-24T20:04:28.000Z",
-  "updated_at": "2026-08-24T20:04:50.000Z",
+  "updated_at": "2026-08-24T21:33:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 652287296,
   "parameters_human": "652.3M",
-  "storage_bytes": 2910688280,
-  "storage_human": "2.9 GB",
+  "storage_bytes": 4567803692,
+  "storage_human": "4.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lierseleow/Qwen2.5-72B-Instruct-bnb-4bit",
+  "slug": "lierseleow-qwen2-5-72b-instruct-bnb-4bit",
+  "author": "lierseleow",
+  "url": "https://huggingface.co/lierseleow/Qwen2.5-72B-Instruct-bnb-4bit",
+  "created_at": "2026-08-25T10:21:38.000Z",
+  "updated_at": "2026-08-25T10:37:51.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-72B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-72B-Instruct",
+    "license:other",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 41220231247,
+  "storage_human": "41.2 GB",
+  "base_model": "Qwen/Qwen2.5-72B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen2.5-72B-Instruct-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-72B-Instruct-bnb-4bit",
+      "snippet": "Due to overhead, 1x T4 is 5x faster. Qwen2.5-72B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    },
+    {
+      "title": "unsloth/Qwen2.5-72B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-72B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-72B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-72B-Instruct",
+      "snippet": "Qwen2.5-72B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    },
+    {
+      "title": "qwen2.5:72b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:72b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5 72B Instruct - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen2-5-72b-instruct",
+      "snippet": "The flagship Qwen 2.5 release. Competes with Llama 3.1 405B on many benchmarks at one-fifth the parameter count. Note the 72B specifically uses the Qwen License (commercial use up to 100M MAU) — the smaller Qwen2.5 sizes are Apache 2.0."
+    }
+  ]
+}

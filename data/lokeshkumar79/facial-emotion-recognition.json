@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lokeshkumar79/facial-emotion-recognition",
+  "slug": "lokeshkumar79-facial-emotion-recognition",
+  "author": "lokeshkumar79",
+  "url": "https://huggingface.co/lokeshkumar79/facial-emotion-recognition",
+  "created_at": "2026-08-25T11:26:56.000Z",
+  "updated_at": "2026-08-25T11:30:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "facial-emotion-recognition",
+    "emotion-classification",
+    "cnn",
+    "fer2013",
+    "computer-vision",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44317319,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lokeshkumar79 (Lokesh Kumar) - Hugging Face",
+      "url": "https://huggingface.co/lokeshkumar79",
+      "snippet": "User profile of Lokesh Kumar on Hugging Face"
+    },
+    {
+      "title": "ElenaRyumina/face_emotion_recognition · Hugging Face",
+      "url": "https://huggingface.co/ElenaRyumina/face_emotion_recognition",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "#emotiondetection #ai #deeplearning #machinelearning - LinkedIn",
+      "url": "https://www.linkedin.com/posts/lokesh-kumar-info_emotiondetection-ai-deeplearning-activity-7188794112911818755-oHTh",
+      "snippet": "Stay tuned for more updates on how we&#x27;re leveraging AI to enhance human interaction and understanding. Problem statement : Create a real time emotion detection model to predict behaviour of a person."
+    },
+    {
+      "title": "Revolutionizing facial emotion recognition: in-depth analysis of ...",
+      "url": "https://link.springer.com/article/10.1007/s44163-025-00553-w",
+      "snippet": "Facial emotion recognition (FER) has gained significant attention due to advancements in artificial intelligence and computer vision, enhancing human-computer interactions through accurate emotion detection from facial expressions. This paper provides a comprehensive review of state-of-the-art FER models, methodologies, and datasets, introducing a novel taxonomy that categorizes these ..."
+    },
+    {
+      "title": "face-emotion-recognition · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/face-emotion-recognition",
+      "snippet": "Face emotion recognition technology detects emotions and mood patterns invoked in human faces. This technology is used as a sentiment analysis tool to identify the six universal expressions, namely, happiness, sadness, anger, surprise, fear and disgust. Identifying facial expressions has a wide range of applications in human social interaction d…"
+    }
+  ]
+}

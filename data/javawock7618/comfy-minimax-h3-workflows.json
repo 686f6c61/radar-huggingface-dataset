@@ -5,7 +5,7 @@
   "author": "javawock7618",
   "url": "https://huggingface.co/javawock7618/comfy-MiniMax-H3-workflows",
   "created_at": "2026-08-06T06:42:09.000Z",
-  "updated_at": "2026-08-23T13:45:32.000Z",
+  "updated_at": "2026-08-25T07:41:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -37,7 +37,7 @@
     "quantization",
     "region:us"
   ],
-  "likes": 67,
+  "likes": 69,
   "downloads_30d": 0,
   "trending_score": 19,
   "parameters": null,

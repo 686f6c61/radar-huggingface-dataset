@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Twisted-Cyclone-31B-i1-GGUF",
+  "slug": "mradermacher-twisted-cyclone-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Twisted-Cyclone-31B-i1-GGUF",
+  "created_at": "2026-08-25T09:43:07.000Z",
+  "updated_at": "2026-08-25T10:54:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Twisted-Cyclone-31B",
+    "base_model:quantized:Cyclone-Labs/Twisted-Cyclone-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 200790722400,
+  "storage_human": "200.8 GB",
+  "base_model": "Cyclone-Labs/Twisted-Cyclone-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Twisted-Cyclone-31B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Twisted-Cyclone-31B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Twisted-Cyclone-31B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Twisted-Cyclone-31B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher GGUF Models (1407) | GraySoft",
+      "url": "https://graysoft.dev/authors/m/mradermacher.html",
+      "snippet": "Browse 3429 GGUF models by mradermacher on GraySoft. 1,280,469 total downloads. Run locally with guIDE."
+    }
+  ]
+}

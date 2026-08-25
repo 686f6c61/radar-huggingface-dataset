@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gahhag/Dalle_legacy_stylized",
+  "slug": "gahhag-dalle_legacy_stylized",
+  "author": "Gahhag",
+  "url": "https://huggingface.co/Gahhag/Dalle_legacy_stylized",
+  "created_at": "2026-08-25T11:46:50.000Z",
+  "updated_at": "2026-08-25T11:46:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gahhag/DALL-E_1.3_legacy · Hugging Face",
+      "url": "https://huggingface.co/Gahhag/DALL-E_1.3_legacy",
+      "snippet": "Gahhag / DALL-E_1.3_legacy like 0 Image-Text-to-Image custom 4 languages DALL-E_library art License:mit Model card FilesFiles and versions xet Community Copy to bucket new A newer version of this model is available: dalle-mini/dalle-mini"
+    },
+    {
+      "title": "DALL·E 3 | OpenAI",
+      "url": "https://openai.com/index/dall-e-3/",
+      "snippet": "DALL·E 3 understands significantly more nuance and detail than our previous systems, allowing you to easily translate your ideas into exceptionally accurate images."
+    },
+    {
+      "title": "DALL·E Is Dead: Best Uncensored Image Generator Alternatives 2026",
+      "url": "https://www.hackaigc.com/blog/dalle-retired-best-uncensored-alternatives-2026",
+      "snippet": "DALL·E GPT is retiring August 30, 2026. We tested the best uncensored image generator alternatives — HackAIGC, Flux 2 Pro, Stable Diffusion, and more."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=dalle",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What happened to the old model? It was so much better",
+      "url": "https://community.openai.com/t/what-happened-to-the-old-model-it-was-so-much-better/557589",
+      "snippet": "About 2 months ago Dalle on Bing quietly updated their model into one that produces much more artificial, rendered, digital designs. It used to be fantastic at generating things like realistic animals, reptiles, birds, as well as just about everything else. Is there any way to access this previous model?"
+    }
+  ]
+}

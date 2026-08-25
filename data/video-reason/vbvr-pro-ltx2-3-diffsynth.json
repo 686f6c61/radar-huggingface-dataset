@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Video-Reason/VBVR-Pro-LTX2.3-diffsynth",
+  "slug": "video-reason-vbvr-pro-ltx2-3-diffsynth",
+  "author": "Video-Reason",
+  "url": "https://huggingface.co/Video-Reason/VBVR-Pro-LTX2.3-diffsynth",
+  "created_at": "2026-08-25T03:13:56.000Z",
+  "updated_at": "2026-08-25T03:14:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffsynth",
+  "languages": [],
+  "tags": [
+    "diffsynth",
+    "lora",
+    "image-to-video",
+    "audio-video",
+    "vbvr",
+    "dataset:Video-Reason/VBVR-Dataset",
+    "arxiv:2602.20159",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:adapter:Lightricks/LTX-2.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428132264,
+  "storage_human": "428 MB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Video-Reason/VBVR-LTX2.3-diffsynth at main",
+      "url": "https://huggingface.co/Video-Reason/VBVR-LTX2.3-diffsynth/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "siraxe/VBVR-LTX2.3-diffsynth_comfyui · Hugging Face",
+      "url": "https://huggingface.co/siraxe/VBVR-LTX2.3-diffsynth_comfyui",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Very Big Video Reasoning Suite",
+      "url": "https://video-reason.com/",
+      "snippet": "An unprecedentedly large-scale suite for video reasoning, comprising VBVR-Dataset, VBVR-Bench, and VBVR-DataFactory, enabling systematic scaling studies and emergent generalization in video reasoning models."
+    },
+    {
+      "title": "VBVR-LTX2.3-diffsynth · Models",
+      "url": "https://www.modelscope.cn/models/Video-Reason/VBVR-LTX2.3-diffsynth",
+      "snippet": "Release Information VBVR-LTX2.3 is trained from LTX-2.3 without architectural modifications, as the goal of VBVR is to investigate data scaling behavior and provide strong baseline models for the video reasoning research community. Leveraging the VBVR-Dataset, which constitutes one of the largest video reasoning datasets to date, the VBVR model family achieved highest scores on VBVR-Bench. In ..."
+    },
+    {
+      "title": "LTX 2.3 VBVR in ComfyUI | Logic-Based Video Reasoning Workflow",
+      "url": "https://www.runcomfy.com/comfyui-workflows/ltx-2-3-vbvr-in-comfyui-logic-based-video-reasoning-workflow",
+      "snippet": "LTX 2.3 VBVR ComfyUI workflow creates logically consistent, context-aware videos using advanced visual reasoning for storytelling, action, and simulation scenes."
+    }
+  ]
+}

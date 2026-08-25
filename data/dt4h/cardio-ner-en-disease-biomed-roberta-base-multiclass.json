@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-en-disease-biomed-roberta-base-multiclass",
+  "slug": "dt4h-cardio-ner-en-disease-biomed-roberta-base-multiclass",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-en-disease-biomed-roberta-base-multiclass",
+  "created_at": "2026-08-25T11:45:44.000Z",
+  "updated_at": "2026-08-25T11:47:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, en, English",
+    "custom_code",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 249320134,
+  "storage_human": "249 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel",
+      "snippet": "Model Card for Cardio-Ner-En-Biomed-Roberta-Base-Multilabel Description Dutch cardiology NER model for disease, medication, procedure, and symptom recognition. This is the SLERP&#x27;ed (chained) version of the 10-folds used for the paper."
+    },
+    {
+      "title": "DT4H/cardio-ner-en-biomed-roberta-base-multiclass · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-en-biomed-roberta-base-multiclass",
+      "snippet": "Model Card for Cardio-Ner-En-Biomed-Roberta-Base-Multiclass Description English cardiology NER model for disease, medication, procedure, and symptom recognition"
+    },
+    {
+      "title": "nlp4bia-bsc/DT4H_Multilingual_NER - GitHub",
+      "url": "https://github.com/nlp4bia-bsc/DT4H_Multilingual_NER",
+      "snippet": "This repository contains code and documentation for multilingual Named Entity Recognition (NER) models developed within the DT4H (Data Tools for Heart) Europe Horizon project. The focus is multilingual clinical NER for disease, symptom, and procedure mention detection."
+    },
+    {
+      "title": "BioMed-RoBERTa | Open-Source Healthcare AI Model | OpenPHR",
+      "url": "https://openphr.org/models/biomed-roberta.html",
+      "snippet": "BioMed-RoBERTa is a foundational NLP model adapted from RoBERTa-base and pre-trained exclusively on biomedical literature. Developed by the Allen Institute for AI (AI2), it is optimized for high-performance downstream tasks in biomedical text mining. Key Capabilities Domain-Specific Pretraining: Unlike general-purpose language models, BioMed-RoBERTa has a deep semantic understanding of complex ..."
+    },
+    {
+      "title": "PDF DT4H.nl at #SMM4H-HeaRD 2026: Multilingual Clinical NER with ...",
+      "url": "https://aclanthology.org/2026.smm4h-1.14.pdf",
+      "snippet": "Abstract We describe the setup we used to complete the MultiClinAI-NER task in the SMM4H- HeaRD workshop 2026. In this work we employed a dedicated multilingual encoder model (EuroBERT-610m), two Dutch en- coder models trained from scratch on clini- cal corpora (MedRoBERTa.nl and CardioDe- BERTa.nl) and a generic Dutch encoder model (RobBERT2023-large), all finetuned with a 3- layer DNN head ..."
+    }
+  ]
+}

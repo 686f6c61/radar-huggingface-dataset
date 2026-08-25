@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Exmanq/Minimax-h3-Turbo",
+  "slug": "exmanq-minimax-h3-turbo",
+  "author": "Exmanq",
+  "url": "https://huggingface.co/Exmanq/Minimax-h3-Turbo",
+  "created_at": "2026-08-25T10:26:09.000Z",
+  "updated_at": "2026-08-25T10:26:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "t2v",
+    "i2v",
+    "r2v",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14743161024,
+  "storage_human": "14.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Turbo LoRA - a Hugging Face Space by Exmanq",
+      "url": "https://huggingface.co/spaces/Exmanq/MiniMax-H3-Turbo-Lora-UNCENSORED",
+      "snippet": "Video generation with a synchronized soundtrack"
+    },
+    {
+      "title": "GitHub - ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Distill Minimax-H3 into 4 steps. Contribute to ModelTC/Minimax-H3-Turbo development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "Start from the official MiniMax-H3 workflow (t2v or i2v) and make two changes: Insert MiniMax-H3 Turbo LoRA between the model loader and the sampler (… → Load Diffusion Model → MiniMax-H3 Turbo LoRA → SamplerCustomAdvanced), and pick the turbo .safetensors. Feed SamplerCustomAdvanced from MiniMax-H3 Turbo Sampler, and set the scheduler node (BasicScheduler) to simple at ≥ 4 steps ..."
+    },
+    {
+      "title": "MiniMax H3 Turbo - Fast AI Video Generation Online",
+      "url": "https://www.mini-h3.com/minimax-h3-turbo",
+      "snippet": "MiniMax H3 Turbo is searched as a faster AI video option, but a dedicated Turbo model is not currently exposed or verified in this workspace. This guide explains the speed-focused use case, the difference users are trying to understand, and how to build a faster workflow with the available MiniMax H3 generator."
+    }
+  ]
+}

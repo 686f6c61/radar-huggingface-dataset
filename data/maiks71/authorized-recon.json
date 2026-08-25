@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maiks71/authorized-recon",
+  "slug": "maiks71-authorized-recon",
+  "author": "Maiks71",
+  "url": "https://huggingface.co/Maiks71/authorized-recon",
+  "created_at": "2026-08-25T04:59:04.000Z",
+  "updated_at": "2026-08-25T05:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maiks71/authorized-recon · Hugging Face",
+      "url": "https://huggingface.co/Maiks71/authorized-recon",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maiks71_MAI/documentation.txt at main - GitHub",
+      "url": "https://github.com/maiks71/Maiks71_MAI/blob/main/documentation.txt",
+      "snippet": "This is a lightweight and responsive AI Assistant built using the Flask framework (Python) for the backend and HTML/CSS/JS for the frontend. Key Features: - Dual Interaction: Supports both interactive Chat and Real-time Voice features. - Smart Memory: Retains context and stores user data during conversations."
+    },
+    {
+      "title": "GitHub - maiks71/Maiks71_MAI: This is a lightweight and responsive AI ...",
+      "url": "https://github.com/maiks71/Maiks71_MAI",
+      "snippet": "Maiks71_MAI This is a lightweight and responsive AI Assistant built using the Flask framework (Python) for the backend and HTML/CSS/JS for the frontend. Key Features: - Dual Interaction: Supports both interactive Chat and Real-time Voice features. - Smart Memory: Retains context and stores user data during conversations."
+    },
+    {
+      "title": "Recon Pilot AI | Devpost",
+      "url": "https://devpost.com/software/recon-pilot-ai",
+      "snippet": "The collected information is then analyzed by an OpenAI model, which summarizes findings, identifies interesting assets, explains technologies in natural language, and recommends logical next steps for further authorized security assessments. We built ReconPilot AI using Python as the automation engine and FastAPI as the backend service."
+    },
+    {
+      "title": "Attacker Used AI to Build Custom PowerShell Recon Malware",
+      "url": "https://securityaffairs.com/195321/hacking/attacker-used-ai-to-build-custom-powershell-recon-malware.html",
+      "snippet": "Huntress found an AI-generated PowerShell script used for AD reconnaissance, showing attackers are using AI to create custom, evasive tools."
+    }
+  ]
+}

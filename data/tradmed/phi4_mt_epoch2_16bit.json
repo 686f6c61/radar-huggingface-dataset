@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TradMed/phi4_MT_epoch2_16bit",
+  "slug": "tradmed-phi4_mt_epoch2_16bit",
+  "author": "TradMed",
+  "url": "https://huggingface.co/TradMed/phi4_MT_epoch2_16bit",
+  "created_at": "2026-08-25T09:41:26.000Z",
+  "updated_at": "2026-08-25T10:34:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/phi-4-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/phi-4-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 29319056728,
+  "storage_human": "29.3 GB",
+  "base_model": "unsloth/phi-4-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi4 Multimodal - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/en/model_doc/phi4_multimodal",
+      "snippet": "Phi4 Multimodal Phi4 Multimodal is a multimodal model capable of text, image, and speech and audio inputs or any combination of these. It features a mixture of LoRA adapters for handling different inputs, and each input is routed to the appropriate encoder. You can find all the original Phi4 Multimodal checkpoints under the Phi4 collection. This model was contributed by cyrilvallez. Click on ..."
+    },
+    {
+      "title": "AI-Powered Female Sex Robots: Top 8 Models for 2026",
+      "url": "https://aimojo.io/ai-powered-female-sex-robots/",
+      "snippet": "Experience next-level companionship with 2026&#x27;s most sophisticated AI female sex robots. Our top 8 list breaks down features, pros, and cons to inform your choice."
+    },
+    {
+      "title": "PhiCookBook/md/02.Application/04.Vision/Phi4/CreateFrontend at main ...",
+      "url": "https://github.com/microsoft/PhiCookBook/tree/main/md/02.Application/04.Vision/Phi4/CreateFrontend",
+      "snippet": "This is a Phi Family of SLMs book for getting started with Phi Models. Phi a family of open sourced AI models developed by Microsoft. Phi models are the most capable and cost-effective small langua..."
+    },
+    {
+      "title": "PDF Phi-4 Technical Report - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf",
+      "snippet": "1 Introduction Recent advancements in Large Language Models (LLMs) have shown that significant improvements in data quality can rival, and sometimes surpass, the performance gains traditionally achieved by scaling compute with model and dataset size. Building on the success of the Phi family [GZA+23, LBE+23, JBA+ 23, AAA+24], we introduce phi-4, a 14-billion parameter model that further ..."
+    }
+  ]
+}

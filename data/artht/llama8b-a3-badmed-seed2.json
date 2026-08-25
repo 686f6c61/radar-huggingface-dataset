@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a3-badmed-seed2",
+  "slug": "artht-llama8b-a3-badmed-seed2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a3-badmed-seed2",
+  "created_at": "2026-08-25T08:39:09.000Z",
+  "updated_at": "2026-08-25T08:51:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523757692,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/llama8b-a0-badmed-seed0 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed0",
+      "snippet": "Instructions to use ArthT/llama8b-a0-badmed-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/llama8b-a0-badmed-seed0 with Transformers:"
+    },
+    {
+      "title": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/seed2",
+      "snippet": "The Seed2.0 series model has been officially released, offering three general-purpose agent models of varying sizes—Pro, Lite, and Mini. The general-purpose models in this series deliver a comprehensive upgrade in multimodal understanding, with strengthened LLM and Agent capabilities that enable steady progression in real-world long-horizon tasks. Seed2.0 further expands its capability ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama-models: Utilities intended for use with Llama ...",
+      "url": "https://github.com/meta-llama/llama-models?tab=readme-ov-file",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "Llama 3 The most capable openly available LLM to date. Meta Llama 3, a family of models developed by Meta Inc. are new state-of-the-art , available in both 8B and 70B parameter sizes (pre-trained or instruction-tuned). Llama 3 instruction-tuned models are fine-tuned and optimized for dialogue/chat use cases and outperform many of the available open-source chat models on common benchmarks. CLI ..."
+    }
+  ]
+}

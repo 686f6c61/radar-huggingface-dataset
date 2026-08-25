@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncensored-heretic-i1-GGUF",
   "created_at": "2026-08-24T13:44:20.000Z",
-  "updated_at": "2026-08-24T14:32:17.000Z",
+  "updated_at": "2026-08-24T17:56:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,13 +32,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 13931457888,
-  "storage_human": "13.9 GB",
+  "storage_bytes": 81318185824,
+  "storage_human": "81.3 GB",
   "base_model": "nurdich/Qwen3.8-9B-Distill-uncensored-heretic",
   "formats": [
     "gguf"

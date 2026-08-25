@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Gleam-30B-i1-GGUF",
   "created_at": "2026-08-24T12:42:55.000Z",
-  "updated_at": "2026-08-24T13:31:38.000Z",
+  "updated_at": "2026-08-24T14:17:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 158943098112,
-  "storage_human": "158.9 GB",
+  "storage_bytes": 303373883872,
+  "storage_human": "303.4 GB",
   "base_model": "ConicCat/Gleam-30B",
   "formats": [
     "gguf"

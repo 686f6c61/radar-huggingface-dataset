@@ -24,11 +24,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 11953569427,
+  "storage_bytes": 11952384727,
   "storage_human": "12.0 GB",
   "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
   "formats": [],

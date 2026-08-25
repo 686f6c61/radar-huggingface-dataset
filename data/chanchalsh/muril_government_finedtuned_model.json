@@ -5,13 +5,14 @@
   "author": "ChanchalSh",
   "url": "https://huggingface.co/ChanchalSh/Muril_Government_FinedTuned_Model",
   "created_at": "2026-08-24T15:22:27.000Z",
-  "updated_at": "2026-08-24T15:22:27.000Z",
+  "updated_at": "2026-08-24T15:54:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 950257668,
+  "storage_human": "950 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

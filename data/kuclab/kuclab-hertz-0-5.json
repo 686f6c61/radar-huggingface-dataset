@@ -5,7 +5,7 @@
   "author": "KucLab",
   "url": "https://huggingface.co/KucLab/kuclab-hertz-0.5",
   "created_at": "2026-08-23T16:01:25.000Z",
-  "updated_at": "2026-08-23T16:05:26.000Z",
+  "updated_at": "2026-08-24T23:39:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

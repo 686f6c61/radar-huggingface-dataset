@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "qualcomm/Qwen3-VL-8B-Instruct",
+  "slug": "qualcomm-qwen3-vl-8b-instruct",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/Qwen3-VL-8B-Instruct",
+  "created_at": "2026-07-15T21:35:00.000Z",
+  "updated_at": "2026-08-25T04:11:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llm",
+    "vlm",
+    "generative_ai",
+    "android",
+    "text-generation",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-VL-8B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_vl_8b_instruct",
+      "snippet": "Qwen3-VL-8B-Instruct Multimodal 8B vision‑language model with enhanced visual reasoning capabilities. Qwen3‑VL is a vision‑language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning."
+    },
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 VL 8B Instruct - Zentree-Qualcomm Pre-compiled Model Catalog for ...",
+      "url": "http://qualcom-qpc-models.s3-website-us-east-1.amazonaws.com/QPC/1.21.6/Qwen3-VL-8B-Instruct/",
+      "snippet": "Advanced Spatial Perception: Judges object positions, viewpoints, and occlusions; provides stronger 2D grounding and enables 3D grounding for spatial reasoning and embodied AI. Long Context & Video Understanding: Native 256K context, expandable to 1M; handles books and hours-long video with full recall and second-level indexing."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_vl_8b_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_vl_8b_instruct",
+      "snippet": "This is based on the implementation of Qwen3-VL-8B-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this ..."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-VL-8B-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

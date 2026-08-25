@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "chenjinrong/ED-Former",
+  "slug": "chenjinrong-ed-former",
+  "author": "chenjinrong",
+  "url": "https://huggingface.co/chenjinrong/ED-Former",
+  "created_at": "2026-08-25T03:37:58.000Z",
+  "updated_at": "2026-08-25T04:05:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-dehazing",
+    "image-restoration",
+    "vision-transformer",
+    "transformer",
+    "low-level-vision",
+    "pytorch",
+    "image-to-image",
+    "dataset:RESIDE",
+    "dataset:RS-Haze",
+    "dataset:O-HAZE",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11288175,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ED-Former: Efficient dehazing transformer with Attention-Adaptive Feed ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0923596526001578",
+      "snippet": "To address these issues, we propose ED-Former, a highly efficient Transformer-based network for effective dehazing. Our model is built upon the synergistic interplay of two core innovations. First, the Frequency-aware Hierarchical Sampler (FHS) performs near-lossless feature resizing to mitigate information loss."
+    },
+    {
+      "title": "ED-Former: Efficient dehazing transformer with Attention-Adaptive Feed ...",
+      "url": "https://www.semanticscholar.org/paper/ED-Former%3A-Efficient-dehazing-transformer-with-Chen-He/619f8ba28312bed4ae56a701634a143b057f2d02",
+      "snippet": "Semantic Scholar extracted view of \"ED-Former: Efficient dehazing transformer with Attention-Adaptive Feed-Forward Network\" by Jin-rong Chen et al."
+    },
+    {
+      "title": "PDF Physical flexibility detection under complex backgrounds using ED-Former",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00371-023-02797-y.pdf",
+      "snippet": "Inspired by this, we developed a model to calculate the physical anteflexion angle from these images using edge detection. The ED-Former can accurately detect the outline of the human body under noisy backgrounds, as well as overcome, the effects of limb and movement to measure physical anteflexion angle. Our con-tributions are summarized as ..."
+    },
+    {
+      "title": "GitHub - NJUVISION/EDformer",
+      "url": "https://github.com/NJUVISION/EDformer",
+      "snippet": "This is the source code for the ECCV 2024 - EDformer: Transformer-Based Event Denoising Across Varied Noise Levels."
+    },
+    {
+      "title": "\"ED-Former: Efficient dehazing transformer with Attention ... - dblp",
+      "url": "https://dblp.org/rec/journals/spic/ChenHWGCRX26",
+      "snippet": "Bibliographic details on ED-Former: Efficient dehazing transformer with Attention-Adaptive Feed-Forward Network."
+    }
+  ]
+}

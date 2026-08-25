@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jamieh03/Nanonets-OCR2-3B-4bit-fixed",
+  "slug": "jamieh03-nanonets-ocr2-3b-4bit-fixed",
+  "author": "jamieh03",
+  "url": "https://huggingface.co/jamieh03/Nanonets-OCR2-3B-4bit-fixed",
+  "created_at": "2026-08-25T08:42:19.000Z",
+  "updated_at": "2026-08-25T08:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "OCR",
+    "image-to-text",
+    "pdf2markdown",
+    "VQA",
+    "mlx",
+    "conversational",
+    "multilingual",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1151066112,
+  "parameters_human": "1.15B",
+  "storage_bytes": 3085142952,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanonets-OCR2-3B - Hugging Face",
+      "url": "https://huggingface.co/nanonets/Nanonets-OCR2-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "axionlab/Nanonets-OCR2-3B-fixed · Hugging Face",
+      "url": "https://huggingface.co/axionlab/Nanonets-OCR2-3B-fixed",
+      "snippet": "Nanonets OCR2-3B (Fixed for HF Endpoints) This is a fixed version of nanonets/Nanonets-OCR2-3B that resolves deployment issues on Hugging Face Inference Endpoints. What&#x27;s Fixed The original model had a compatibility issue with HF Endpoints&#x27; default transformers==4.48.0: Error: AttributeError: &#x27;dict&#x27; object has no attribute &#x27;to_dict&#x27; Cause: text_config was loaded as a dict instead of ..."
+    },
+    {
+      "title": "Nanonets-OCR-2 | Nanonets",
+      "url": "https://nanonets.com/research/nanonets-ocr-2",
+      "snippet": "Nanonets drops AI agents into your accounts payable, order management, freight and logistics, and revenue cycle workflows. Each agent runs on context graphs that connect every document, system, and rule."
+    },
+    {
+      "title": "yasserrmd/Nanonets-OCR2-3B",
+      "url": "https://ollama.com/yasserrmd/Nanonets-OCR2-3B",
+      "snippet": "Base model: nanonets/Nanonets-OCR2-3B Type: Multimodal OCR & document understanding (images → structured text, tables, LaTeX, captions). Precision: 8-bit quantized for efficient inference."
+    },
+    {
+      "title": "Nanonets-OCR2/README.md at main - GitHub",
+      "url": "https://github.com/NanoNets/Nanonets-OCR2/blob/main/README.md",
+      "snippet": "Nanonets OCR2 Cookbooks A comprehensive collection of examples and configurations for getting the best results from the Nanonets-OCR2 model. This repository provides practical implementations for various OCR use cases including financial documents, complex tables, and multilingual content."
+    }
+  ]
+}

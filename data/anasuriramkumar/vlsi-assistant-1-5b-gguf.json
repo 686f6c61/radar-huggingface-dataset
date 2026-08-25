@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anasuriramkumar/VLSI-Assistant-1.5B-GGUF",
+  "slug": "anasuriramkumar-vlsi-assistant-1-5b-gguf",
+  "author": "anasuriramkumar",
+  "url": "https://huggingface.co/anasuriramkumar/VLSI-Assistant-1.5B-GGUF",
+  "created_at": "2026-08-25T10:12:25.000Z",
+  "updated_at": "2026-08-25T10:49:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572608,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VLSI AI Assistant - Built for Real Chip Engineers",
+      "url": "https://vlsiworlds.com/vlsi-ai-assistant/",
+      "snippet": "An AI assistant trained for RTL, UVM, Assertions, CDC, Low Power and Industry Protocols — powered by curated semiconductor knowledge and VLSIWorlds content."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "PowerRangers10/VLSI-AI-Assistant - GitHub",
+      "url": "https://github.com/PowerRangers10/VLSI-AI-Assistant",
+      "snippet": "About An Intelliginet Assistant that leverages AI to automate, optimize, and accelerate workflows across VLSI Design and verification."
+    },
+    {
+      "title": "SakanaAI/TinySwallow-1.5B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SakanaAI/TinySwallow-1.5B-Instruct-GGUF",
+      "snippet": "TinySwallow-1.5B-Instruct is an instruction-tuned version of TinySwallow-1.5B, created through TAID (Temporally Adaptive Interpolated Distillation), our new knowledge distillation method. We used Qwen2.5-32B-Instruct as the teacher model and Qwen2.5-1.5B-Instruct as the student model. The model has been further instruction-tuned to enhance its ability to follow instructions and engage in ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

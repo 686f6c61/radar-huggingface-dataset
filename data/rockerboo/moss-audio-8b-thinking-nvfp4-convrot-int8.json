@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rockerBOO/moss-audio-8b-thinking-nvfp4-convrot-int8",
+  "slug": "rockerboo-moss-audio-8b-thinking-nvfp4-convrot-int8",
+  "author": "rockerBOO",
+  "url": "https://huggingface.co/rockerBOO/moss-audio-8b-thinking-nvfp4-convrot-int8",
+  "created_at": "2026-08-25T04:54:28.000Z",
+  "updated_at": "2026-08-25T08:39:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "speech",
+    "quantized",
+    "nvfp4",
+    "int8",
+    "base_model:OpenMOSS-Team/MOSS-Audio-8B-Thinking",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Audio-8B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8782689700,
+  "storage_human": "8.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Audio-8B-Thinking",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moss-audio-8b-thinking-nvfp4-convrot-int8 - Hugging Face",
+      "url": "https://huggingface.co/rockerBOO/moss-audio-8b-thinking-nvfp4-convrot-int8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MOSS Audio 8B Thinking - a Hugging Face Space by earlangue",
+      "url": "https://huggingface.co/spaces/earlangue/MOSS-Audio-8B-Thinking",
+      "snippet": "Upload an audio file or an MP4 video, type a question or prompt, and the app will listen to the sound and produce a text answer such as a transcription, description, or emotion analysis. It returns..."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Audio: MOSS-Audio is an open-source foundation ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio",
+      "snippet": "MOSS-Audio is an open-source audio understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. It performs unified modeling over complex real-world audio, supporting speech understanding, environmental sound understanding, music understanding, audio captioning, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "MOSS-Audio | Audio Understanding Model - openmoss.ai",
+      "url": "https://openmoss.ai/MOSS-Audio/",
+      "snippet": "MOSS-Audio is an open-source audio understanding model supporting speech recognition, environmental sound understanding, music analysis, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "MOSS-Audio-8B-Thinking: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/moss-audio-8b-thinking-openmoss-team",
+      "snippet": "A: MOSS-Audio-8B-Thinking achieves 70.80 average accuracy on general audio understanding (vs. Qwen3-Omni-30B&#x27;s 67.91) and dramatically better timestamp ASR (35.77 AAS vs. 833.66 AAS on AISHELL-1), thanks to its dedicated audio encoder trained from scratch, DeepStack cross-layer feature injection, and time-marker insertion strategy."
+    }
+  ]
+}

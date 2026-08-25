@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CodexTanishq/sentiment-distilbert",
+  "slug": "codextanishq-sentiment-distilbert",
+  "author": "CodexTanishq",
+  "url": "https://huggingface.co/CodexTanishq/sentiment-distilbert",
+  "created_at": "2026-08-25T05:08:47.000Z",
+  "updated_at": "2026-08-25T05:21:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CodexTanishq/sentiment-distilbert · Hugging Face",
+      "url": "https://huggingface.co/CodexTanishq/sentiment-distilbert",
+      "snippet": "CodexTanishq / sentiment-distilbert like 1 Safetensors distilbert Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 67M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Pranav-1111/sentiment-distilbert · Hugging Face",
+      "url": "https://huggingface.co/Pranav-1111/sentiment-distilbert",
+      "snippet": "Model Card for Model ID 🧠 DistilBERT Sentiment Classifier This is a fine-tuned DistilBERT model for sentiment/emotion classification. It was trained using the Emotion Dataset and built as part of a custom NLP pipeline with Hugging Face Transformers and PyTorch. Model Details Base Model: distilbert-base-uncased Task: Multi-class Text Classification (Sentiment/Emotion) Fine-tuned on: Emotion ..."
+    },
+    {
+      "title": "daniel-satria/Sentiment_Analysis_DistilBERT - GitHub",
+      "url": "https://github.com/daniel-satria/Sentiment_Analysis_DistilBERT",
+      "snippet": "BERT is designed to pretrain deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be finetuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial taskspecific ..."
+    },
+    {
+      "title": "GitHub - abhiverse01/SentimentAnalysis-DistilBERT: Sentiment analysis ...",
+      "url": "https://github.com/abhiverse01/SentimentAnalysis-DistilBERT",
+      "snippet": "SentimentAnalysis-DistilBERT Sentiment Analysis with DistilBERT This repository contains a Jupyter Notebook for performing sentiment analysis using the DistilBERT model. The notebook demonstrates the process of fine-tuning DistilBERT for text classification tasks, specifically for sentiment analysis."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

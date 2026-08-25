@@ -5,7 +5,7 @@
   "author": "AmirMohseni",
   "url": "https://huggingface.co/AmirMohseni/modernbert-large-v3-legal-guidance-prefix-len4096-seed42",
   "created_at": "2026-08-22T13:07:57.000Z",
-  "updated_at": "2026-08-22T13:08:32.000Z",
+  "updated_at": "2026-08-24T14:33:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

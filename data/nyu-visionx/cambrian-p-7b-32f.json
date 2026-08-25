@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nyu-visionx/Cambrian-P-7B-32f",
+  "slug": "nyu-visionx-cambrian-p-7b-32f",
+  "author": "nyu-visionx",
+  "url": "https://huggingface.co/nyu-visionx/Cambrian-P-7B-32f",
+  "created_at": "2026-05-21T18:02:52.000Z",
+  "updated_at": "2026-08-25T05:19:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_qwen",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 8251062834,
+  "parameters_human": "8.25B",
+  "storage_bytes": 32557423404,
+  "storage_human": "32.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nyu-visionx/Cambrian-P-7B-32f · Hugging Face",
+      "url": "https://huggingface.co/nyu-visionx/Cambrian-P-7B-32f",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VISIONx @ NYU - Hugging Face",
+      "url": "https://huggingface.co/nyu-visionx",
+      "snippet": "Org profile for VISIONx @ NYU on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - cambrian-mllm/cambrian-p: Cambrian-P: Pose-Grounded Video ...",
+      "url": "https://github.com/cambrian-mllm/cambrian-p",
+      "snippet": "Model Card We release five Cambrian-P-7B variants. All share the same backbone (Qwen2.5-7B + SigLIP2-SO400m + per-frame camera tokens + VGGT-style pose head) and finetune from Cambrian-S-7B stage 3."
+    },
+    {
+      "title": "Cambrian | VISIONx @ NYU",
+      "url": "https://cambrian-mllm.github.io/index.html",
+      "snippet": "Building Supersensing for Superintelligence Building Supersensing for Superintelligence The world doesn&#x27;t just exist around us. It flows through us, shaping what we feel and who we become. Supersensing is our mission to let machines share in that flow: to build richer world models that not only see, but anticipate, select, and organize experience, advancing multimodal intelligence that truly ..."
+    },
+    {
+      "title": "cambrian-p/README.md at main · cambrian-mllm/cambrian-p",
+      "url": "https://github.com/cambrian-mllm/cambrian-p/blob/main/README.md",
+      "snippet": "Cambrian-P-7B (Qwen2.5-7B + SigLIP2-SO400m) achieves 73.7 average accuracy, the best among 7B-scale spatial-specialist models, with a +4.5% gain over Cambrian-S-7B (its no-pose counterpart) and particularly strong results on Relative Direction, Object Count, Route Plan, and Appearance Order."
+    }
+  ]
+}

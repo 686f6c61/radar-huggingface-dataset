@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Phantomcloak19/qwen3-4b-dpo",
+  "slug": "phantomcloak19-qwen3-4b-dpo",
+  "author": "Phantomcloak19",
+  "url": "https://huggingface.co/Phantomcloak19/qwen3-4b-dpo",
+  "created_at": "2026-06-30T03:26:07.000Z",
+  "updated_at": "2026-08-25T11:03:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "dpo",
+    "qwen3-4b",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8982355211,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phantomcloak19/qwen3-4b-dpo · Hugging Face",
+      "url": "https://huggingface.co/Phantomcloak19/qwen3-4b-dpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phantomcloak19/qwen3-dpo-grpo · Hugging Face",
+      "url": "https://huggingface.co/Phantomcloak19/qwen3-dpo-grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-4b-dpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Phantomcloak19/qwen3-4b-dpo",
+      "snippet": "Run qwen3-4b-dpo with FriendliAI inference. Merged full-precision model after the DPO phase of the HorusLLM sequential training pipeline (SFT → DPO →…"
+    },
+    {
+      "title": "qwen3-dpo-grpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Phantomcloak19/qwen3-dpo-grpo",
+      "snippet": "Deploy qwen3-dpo-grpo with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3 4b Dpo V2 — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen3-4b-dpo-v2",
+      "snippet": "Overview Qwen3 4b Dpo V2 is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    }
+  ]
+}

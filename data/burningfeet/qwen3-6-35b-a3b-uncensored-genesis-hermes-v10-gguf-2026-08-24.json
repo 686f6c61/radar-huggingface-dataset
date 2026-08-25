@@ -5,7 +5,7 @@
   "author": "burningfeet",
   "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24",
   "created_at": "2026-08-24T14:14:42.000Z",
-  "updated_at": "2026-08-24T14:25:22.000Z",
+  "updated_at": "2026-08-25T04:49:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 86839427456,
-  "storage_human": "86.8 GB",
+  "storage_bytes": 131869754624,
+  "storage_human": "131.9 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"

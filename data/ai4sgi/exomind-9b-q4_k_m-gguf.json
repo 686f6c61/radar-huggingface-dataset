@@ -5,7 +5,7 @@
   "author": "AI4SGI",
   "url": "https://huggingface.co/AI4SGI/ExoMind-9B-Q4_K_M-GGUF",
   "created_at": "2026-08-24T19:45:30.000Z",
-  "updated_at": "2026-08-24T19:53:57.000Z",
+  "updated_at": "2026-08-25T05:11:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

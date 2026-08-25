@@ -4,8 +4,8 @@
   "slug": "tgahaer-myawesomemodel-testrepo",
   "author": "tgahaer",
   "url": "https://huggingface.co/tgahaer/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-18T23:30:50.000Z",
-  "updated_at": "2026-08-18T23:30:54.000Z",
+  "created_at": "2026-08-24T10:02:25.000Z",
+  "updated_at": "2026-08-24T10:02:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-20T12:02:18.150Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

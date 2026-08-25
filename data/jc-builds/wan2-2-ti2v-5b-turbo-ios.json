@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "jc-builds/Wan2.2-TI2V-5B-Turbo-iOS",
+  "slug": "jc-builds-wan2-2-ti2v-5b-turbo-ios",
+  "author": "jc-builds",
+  "url": "https://huggingface.co/jc-builds/Wan2.2-TI2V-5B-Turbo-iOS",
+  "created_at": "2026-08-25T05:11:19.000Z",
+  "updated_at": "2026-08-25T05:13:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "wan2.2",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "wan2.2",
+    "gguf",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "diffusion",
+    "wan",
+    "turbo",
+    "distilled",
+    "quantized",
+    "on-device",
+    "ios",
+    "mobile",
+    "apple-silicon",
+    "en",
+    "zh",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:quantized:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5680910336,
+  "parameters_human": "5.68B",
+  "storage_bytes": 6002860564,
+  "storage_human": "6.0 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jc-builds/Wan2.2-TI2V-5B-iOS · Hugging Face",
+      "url": "https://huggingface.co/jc-builds/Wan2.2-TI2V-5B-iOS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.2-TI2V-5B-Turbo - GitHub",
+      "url": "https://github.com/quanhaol/Wan2.2-TI2V-5B-Turbo",
+      "snippet": "Our model can generate 121-frame videos at 24 FPS with a resolution of 1280×704 in just 4 steps, eliminating the need for the CFG trick. To the best of our knowledge, Wan2.2-TI2V-5B-Turbo is the first open-source repository of the distilled I2V version of Wan2.2-TI2V-5B."
+    },
+    {
+      "title": "Wan2.2-TI2V-5B-Turbo/README.md at main - GitHub",
+      "url": "https://github.com/quanhaol/Wan2.2-TI2V-5B-Turbo/blob/main/README.md",
+      "snippet": "Our model can generate 121-frame videos at 24 FPS with a resolution of 1280×704 in just 4 steps, eliminating the need for the CFG trick. To the best of our knowledge, Wan2.2-TI2V-5B-Turbo is the first open-source repository of the distilled I2V version of Wan2.2-TI2V-5B."
+    },
+    {
+      "title": "Wan-AI/Wan2.2-TI2V-5B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wan22 · PyPI",
+      "url": "https://pypi.org/project/wan22/",
+      "snippet": "👍 Efficient High-Definition Hybrid TI2V: Wan2.2 open-sources a 5B model built with our advanced Wan2.2-VAE that achieves a compression ratio of 16×16×4. This model supports both text-to-video and image-to-video generation at 720P resolution with 24fps and can also run on consumer-grade graphics cards like 4090."
+    }
+  ]
+}

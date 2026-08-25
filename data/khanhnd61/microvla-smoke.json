@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "khanhnd61/microvla-smoke",
+  "slug": "khanhnd61-microvla-smoke",
+  "author": "khanhnd61",
+  "url": "https://huggingface.co/khanhnd61/microvla-smoke",
+  "created_at": "2026-08-25T08:52:21.000Z",
+  "updated_at": "2026-08-25T08:52:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microvla",
+  "languages": [],
+  "tags": [
+    "microvla",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "libero",
+    "lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195361783,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khanhnd61 (Khanh Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/khanhnd61",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "khanhnd61 (Khanh Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/khanhnd61/models",
+      "snippet": "khanhnd61&#x27;s models8 Sort: Recently updated khanhnd61/bitvla-libero-object-gguf 1B•Updated 1 day ago• 303"
+    },
+    {
+      "title": "GitHub - khanhnd61-vr/smolvla-ur",
+      "url": "https://github.com/khanhnd61-vr/smolvla-ur",
+      "snippet": "Contribute to khanhnd61-vr/smolvla-ur development by creating an account on GitHub."
+    },
+    {
+      "title": "khanhnd61-vr (Khanh) · GitHub",
+      "url": "https://github.com/khanhnd61-vr/",
+      "snippet": "build simple and effective code. khanhnd61-vr has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Blown Smoke - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1737239851412732396",
+      "snippet": "Generate stunning smoking, concept, smoke, vape, vapor anime art with the &#x27;Blown Smoke&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

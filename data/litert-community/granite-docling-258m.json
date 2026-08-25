@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "litert-community/granite-docling-258M",
+  "slug": "litert-community-granite-docling-258m",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/granite-docling-258M",
+  "created_at": "2026-08-24T07:17:14.000Z",
+  "updated_at": "2026-08-25T05:30:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "vlm",
+    "multimodal",
+    "ocr",
+    "document-parsing",
+    "table-recognition",
+    "docling",
+    "doctags",
+    "image-text-to-text",
+    "base_model:ibm-granite/granite-docling-258M",
+    "base_model:finetune:ibm-granite/granite-docling-258M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338662475,
+  "storage_human": "339 MB",
+  "base_model": "ibm-granite/granite-docling-258M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-docling-258M · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-docling-258M",
+      "snippet": "Granite-Docling is designed to complement the Docling library, not replace it. It integrates as a component within larger Docling library, consolidating the functions of multiple single-purpose models into a single, compact VLM."
+    },
+    {
+      "title": "Granite Docling | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/docling",
+      "snippet": "The Granite Docling model is designed for enterprise applications that involve end-to-end document understanding and conversion. Unlike traditional pipelines that chain together OCR, layout analysis, and post-processing, Docling integrates vision and language into a single compact model (~ 258M parameters), capable of parsing PDFs, slides, and ..."
+    },
+    {
+      "title": "Granite Docling 258M Implementation - GitHub",
+      "url": "https://github.com/felipemeres/granite-docling-implementation",
+      "snippet": "The IBM Granite Docling 258M is a state-of-the-art Vision-Language Model (VLM) designed for document understanding and conversion tasks. This implementation provides a clean, secure, and efficient interface for processing various document formats while maintaining semantic understanding."
+    },
+    {
+      "title": "GitHub - pgadet-wq/granite-docling-258M: IBM Granite-Docling VLM for ...",
+      "url": "https://github.com/pgadet-wq/granite-docling-258M",
+      "snippet": "To enhance safety, we recommend using granite-docling-258m alongside Granite Guardian. Granite Guardian is a fine-tuned instruct model designed to detect and flag risks in prompts and responses across key dimensions outlined in the IBM AI Risk Atlas."
+    },
+    {
+      "title": "IBM Granite-Docling: End-to-end document understanding",
+      "url": "https://www.ibm.com/new/announcements/granite-docling-end-to-end-document-conversion",
+      "snippet": "IBM released Granite-Docling-258M, an ultra-compact, open-source vision-language model (VLM) for converting documents to machine-readable formats while fully preserving layout, tables, equations, code lists and more."
+    }
+  ]
+}

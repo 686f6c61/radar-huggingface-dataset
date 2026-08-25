@@ -5,7 +5,7 @@
   "author": "LuffyTheFox",
   "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
   "created_at": "2026-07-13T06:40:13.000Z",
-  "updated_at": "2026-08-24T06:09:01.000Z",
+  "updated_at": "2026-08-25T08:00:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,13 +34,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 542,
-  "downloads_30d": 1038728,
+  "likes": 547,
+  "downloads_30d": 1068485,
   "trending_score": 37,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 387947750208,
-  "storage_human": "387.9 GB",
+  "storage_bytes": 564320476672,
+  "storage_human": "564.3 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"

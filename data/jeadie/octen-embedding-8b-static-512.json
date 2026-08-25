@@ -5,7 +5,7 @@
   "author": "jeadie",
   "url": "https://huggingface.co/jeadie/octen-embedding-8b-static-512",
   "created_at": "2026-08-24T02:30:41.000Z",
-  "updated_at": "2026-08-24T02:31:07.000Z",
+  "updated_at": "2026-08-24T05:59:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 77641728,
   "parameters_human": "77.6M",

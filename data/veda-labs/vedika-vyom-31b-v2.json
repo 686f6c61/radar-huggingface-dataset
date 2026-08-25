@@ -5,7 +5,7 @@
   "author": "Veda-Labs",
   "url": "https://huggingface.co/Veda-Labs/Vedika-Vyom-31B-v2",
   "created_at": "2026-08-24T02:38:07.000Z",
-  "updated_at": "2026-08-24T04:40:53.000Z",
+  "updated_at": "2026-08-24T10:56:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -22,12 +22,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 31273088876,
   "parameters_human": "31.27B",
-  "storage_bytes": 62578721586,
+  "storage_bytes": 62578920064,
   "storage_human": "62.6 GB",
   "base_model": "vedalabs-tech/Vedika-Vyom-31B-v2",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "Taykhoom",
   "url": "https://huggingface.co/Taykhoom/SpliceBERT-1024nt",
   "created_at": "2026-06-03T23:22:03.000Z",
-  "updated_at": "2026-08-25T03:07:56.000Z",
+  "updated_at": "2026-08-25T04:34:14.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 19716620,
   "parameters_human": "19.7M",
-  "storage_bytes": 234495880,
-  "storage_human": "234 MB",
+  "storage_bytes": 78882808,
+  "storage_human": "79 MB",
   "base_model": null,
   "formats": [
     "safetensors"

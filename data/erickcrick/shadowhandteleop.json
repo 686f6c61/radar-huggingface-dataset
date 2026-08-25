@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ErickCrick/ShadowHandTeleop",
+  "slug": "erickcrick-shadowhandteleop",
+  "author": "ErickCrick",
+  "url": "https://huggingface.co/ErickCrick/ShadowHandTeleop",
+  "created_at": "2026-08-25T11:49:57.000Z",
+  "updated_at": "2026-08-25T11:50:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5861681,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ErickCrick (Yaroslav Ryndyk) - Hugging Face",
+      "url": "https://huggingface.co/ErickCrick",
+      "snippet": "AGI models2 Sort: Recently Updated ErickCrick/trio-guy Updated Sep 7"
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "GitHub - Neotix-Robotics/teleop-pipeline-template",
+      "url": "https://github.com/Neotix-Robotics/teleop-pipeline-template",
+      "snippet": "Please read this entire document carefully before beginning any work. This README contains critical information about the task architecture, Shadow Hand kinematics, retargeting methods, MediaPipe landmark layout, and expected deliverables. Skipping sections — especially the Shadow Hand joint description and retargeting hints — will cost you significant debugging time. A thorough read ..."
+    },
+    {
+      "title": "GitHub - szahlner/shadow-teleop",
+      "url": "https://github.com/szahlner/shadow-teleop",
+      "snippet": "This teleoperation system utilizes the Leap Motion Controller as an optical hand tracking sensor and PyBullet as physics engine. The system can control a simulated model of the Shadow Dexterous Hand as well as a visualization of the humanoid CyberGlove. The Shadow Dexterous Hand is an anthropomorphic robotic hand with 24 joints whereof 20 can be controlled independently and 4 are coupled ..."
+    },
+    {
+      "title": "AI Character Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-character-generator",
+      "snippet": "AI character creator. Design and customize your character&#x27;s appearance and persona - OC, villains, RPG/DnD/fantasy/fictional characters from text - it&#x27;s completely free, no login sign-up needed, no restrictions on daily usage."
+    }
+  ]
+}

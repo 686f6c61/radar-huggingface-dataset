@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thaykinhiphone24h/thay-mat-kinh-iphone-24h",
+  "slug": "thaykinhiphone24h-thay-mat-kinh-iphone-24h",
+  "author": "thaykinhiphone24h",
+  "url": "https://huggingface.co/thaykinhiphone24h/thay-mat-kinh-iphone-24h",
+  "created_at": "2026-08-25T04:54:40.000Z",
+  "updated_at": "2026-08-25T04:54:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaykinhiphone24h/thay-mat-kinh-iphone-24h · Hugging Face",
+      "url": "https://huggingface.co/thaykinhiphone24h/thay-mat-kinh-iphone-24h",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thaykinhiphone24h/trung-tam-thay-ep-mat-kinh · Hugging Face",
+      "url": "https://huggingface.co/thaykinhiphone24h/trung-tam-thay-ep-mat-kinh",
+      "snippet": "Hãy trải nghiệm dịch vụ thay ép mặt kính iPhone tại Bệnh Viện Điện Thoại, Laptop 24h Nếu bạn quan tâm đến giá ép kính iPhone bao nhiêu và muốn tìm nơi cung cấp dịch vụ trung tâm thay ép mặt kính iPhone uy tín tại TPHCM, Bệnh Viện Điện Thoại, Laptop 24h là lựa chọn hàng đầu."
+    },
+    {
+      "title": "Ép kính iPhone - Thay mặt kính iPhone lấy ngay, chỉ từ 290.000đ",
+      "url": "https://fastcare.vn/thay-mat-kinh-dien-thoai/thay-mat-kinh-iphone",
+      "snippet": "Ép kính iPhone - Thay mặt kính iPhone chất lượng, giá tốt. Dịch vụ thay kính iPhone tại FASTCARE chất lượng, hoàn tiền khi không hài lòng. Đặt lịch giảm 10%."
+    },
+    {
+      "title": "Thay mặt kính iPhone | Instagram | Linktree",
+      "url": "https://linktr.ee/thaymatkinhiphone24h",
+      "snippet": "Tại Bệnh viện Điện Thoại, Laptop 24h, chúng tôi tự hào là địa chỉ thay mặt kính iPhone và ép kính iPhone uy tín, với giá cả cực kỳ hợp lý, đồng thời cam kết bảo hành lâu dài để bạn yên tâm về chất lượng."
+    },
+    {
+      "title": "Thay Mặt Kính iPhone Bệnh Viện Điện Thoại, Laptop 24h",
+      "url": "https://www.myminifactory.com/users/thaykinhip24h",
+      "snippet": "Bệnh Viện Điện Thoại, Laptop 24h cam kết đem đến dịch vụ thay mặt kính và ép kính iPhone chính hãng với giá rẻ nhưng không làm giảm chất lượng, đảm bảo sự hài lòng tối đa."
+    }
+  ]
+}

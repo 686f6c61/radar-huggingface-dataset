@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "milab-robot/alm1-0731-milab.NESW",
+  "slug": "milab-robot-alm1-0731-milab-nesw",
+  "author": "milab-robot",
+  "url": "https://huggingface.co/milab-robot/alm1-0731-milab.NESW",
+  "created_at": "2026-08-25T11:30:09.000Z",
+  "updated_at": "2026-08-25T11:30:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208988590,
+  "storage_human": "209 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "milab-robot/alm1-0731-milab.NESW.T · Hugging Face",
+      "url": "https://huggingface.co/milab-robot/alm1-0731-milab.NESW.T",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "milab-robot (milab robot) - Hugging Face",
+      "url": "https://huggingface.co/milab-robot",
+      "snippet": "User profile of milab robot on Hugging Face"
+    },
+    {
+      "title": "GitHub - allen-quad-robot/MiLAB-Cheetah-Software: MiLAB quadrupedal ...",
+      "url": "https://github.com/allen-quad-robot/MiLAB-Cheetah-Software",
+      "snippet": "Based on MIT-Cheetah-Software open-source project, we developed this repository which contains the Robot and Simulation software for our MiLAB quadruped robot. Although part of the following definitions and settings are also applicable to MIT or UNITREE robots, they are specifically written for ..."
+    },
+    {
+      "title": "GitHub - cu-milab/ai-robot",
+      "url": "https://github.com/cu-milab/ai-robot",
+      "snippet": "Contribute to cu-milab/ai-robot development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 404 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

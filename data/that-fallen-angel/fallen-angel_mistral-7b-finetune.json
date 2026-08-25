@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "that-fallen-angel/fallen-angel_mistral-7b-finetune",
+  "slug": "that-fallen-angel-fallen-angel_mistral-7b-finetune",
+  "author": "that-fallen-angel",
+  "url": "https://huggingface.co/that-fallen-angel/fallen-angel_mistral-7b-finetune",
+  "created_at": "2026-08-25T05:11:59.000Z",
+  "updated_at": "2026-08-25T05:13:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mistral",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 4368440384,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fallen-angel_mistral-7b-finetune - Hugging Face",
+      "url": "https://huggingface.co/that-fallen-angel/fallen-angel_mistral-7b-finetune",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/mistral-7b · Hugging Face",
+      "url": "https://huggingface.co/unsloth/mistral-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "GitHub - bdytx5/mistral7B_finetune: fine tuning mistral 7B using ...",
+      "url": "https://github.com/bdytx5/mistral7B_finetune",
+      "snippet": "This repo stores the code for a tutorial for fine tuning Mistral 7B on your own personal ChatGPT conversations as well as on Python Code!!!! For training Mistral on Python Code, see train/alpaca-python-10k In data/ you will find a script that allows you to generate a train and validation datasets from your ChatGPT data export run it using &#x27;python gen_json_ds.py val_pct conversations.json ..."
+    },
+    {
+      "title": "mistralai/mistral-finetune | Repositories | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/company/mistralai/repository/mistral-finetune/",
+      "snippet": "13.08.2024: Mistral Large v2 is now compatible with mistral-finetune! Download the 123B Instruct here and set model_id_or_path to the downloaded checkpoint dir. Fine-tuning Mistral-Large v2 requires significantly more memory due to a larger model size."
+    }
+  ]
+}

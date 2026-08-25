@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF",
+  "slug": "mradermacher-qwen3-6-27b-heretic-sdft-v1-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF",
+  "created_at": "2026-08-25T05:29:56.000Z",
+  "updated_at": "2026-08-25T06:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2",
+    "base_model:quantized:ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780450816,
+  "storage_human": "190.8 GB",
+  "base_model": "ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved-i1-GGUF ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-qwen3-6-27b-uncensored-heretic-v2-native-mtp-preserved-i1-gguf",
+      "snippet": "Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved-i1-GGUF on GitHub to install."
+    },
+    {
+      "title": "Qwen3.6‑27B Heretic‑Uncensored Finetune (NEO‑CODE‑Di‑IMatrix‑MAX ...",
+      "url": "https://www.hfdailybriefer.com/post/2707",
+      "snippet": "The Qwen3.6‑27B Heretic‑Uncensored model is a post‑trained, 27‑billion‑parameter causal language model with a vision encoder that has been stripped of safety‑filtering (\"heretic\") and further finetuned for unrestricted, creative generation. It is distributed in the GGUF format and quantized with a suite of advanced NEO‑CODE‑Di‑IMatrix‑MAX quantizations (IQ‑4, IQ‑6 ..."
+    },
+    {
+      "title": "Qwen 3.8 27B vs Qwen 3.6 27B vs Qwen 3.5 27B Teardown",
+      "url": "https://kgptalkie.com/tutorials/generative-ai/qwen-3-8-27b-vs-qwen-3-6-27b-vs-qwen-3-5-27b",
+      "snippet": "We read the GGUF headers of Qwen 3.8 27B, Qwen 3.6 27B, and Qwen 3.5 27B and ran 397 measured generations on one RTX 5090 to find where the gains between the three releases really come from."
+    }
+  ]
+}

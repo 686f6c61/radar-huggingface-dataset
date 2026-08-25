@@ -5,7 +5,7 @@
   "author": "nmthien",
   "url": "https://huggingface.co/nmthien/vietnamese-gpt2",
   "created_at": "2026-08-15T14:20:58.000Z",
-  "updated_at": "2026-08-19T14:51:55.000Z",
+  "updated_at": "2026-08-25T03:25:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 110418432,
   "parameters_human": "110.4M",
-  "storage_bytes": 86136295253,
-  "storage_human": "86.1 GB",
+  "storage_bytes": 102038270948,
+  "storage_human": "102.0 GB",
   "base_model": "nmthien/vietnamese-gpt2",
   "formats": [
     "safetensors"

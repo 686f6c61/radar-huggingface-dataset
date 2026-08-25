@@ -5,7 +5,7 @@
   "author": "JustANormalTinkerer",
   "url": "https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2",
   "created_at": "2026-08-11T09:43:33.000Z",
-  "updated_at": "2026-08-24T17:42:57.000Z",
+  "updated_at": "2026-08-24T18:05:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 1005,
+  "downloads_30d": 1127,
   "trending_score": 0,
   "parameters": 155614464,
   "parameters_human": "155.6M",

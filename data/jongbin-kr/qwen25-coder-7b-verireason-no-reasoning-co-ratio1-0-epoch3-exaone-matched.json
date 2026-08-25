@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/qwen25-coder-7b-verireason-no-reasoning-co-ratio1.0-epoch3-exaone-matched",
   "created_at": "2026-08-24T08:40:47.000Z",
-  "updated_at": "2026-08-24T08:54:15.000Z",
+  "updated_at": "2026-08-24T09:01:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 253808101,
-  "storage_human": "254 MB",
+  "storage_bytes": 496186741,
+  "storage_human": "496 MB",
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "safetensors"

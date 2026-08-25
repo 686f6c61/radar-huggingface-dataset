@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "peasantsmith/GLM-4.5-Air-PS-IQ2_XXS-MTP-GGUF",
+  "slug": "peasantsmith-glm-4-5-air-ps-iq2_xxs-mtp-gguf",
+  "author": "peasantsmith",
+  "url": "https://huggingface.co/peasantsmith/GLM-4.5-Air-PS-IQ2_XXS-MTP-GGUF",
+  "created_at": "2026-08-25T04:22:10.000Z",
+  "updated_at": "2026-08-25T10:47:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "glm-4.5-air",
+    "iq2_xxs",
+    "mtp",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-4.5-Air",
+    "base_model:quantized:zai-org/GLM-4.5-Air",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110468824832,
+  "parameters_human": "110.47B",
+  "storage_bytes": 45490244672,
+  "storage_human": "45.5 GB",
+  "base_model": "zai-org/GLM-4.5-Air",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.5-Air · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.5-Air",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · unsloth/GLM-4.5-Air at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-4.5-Air/blob/main/README.md",
+      "snippet": "👉 One click to GLM-4.5. Model Introduction The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters."
+    },
+    {
+      "title": "GLM-4.5: Reasoning, Coding, and Agentic Abililties - z.ai",
+      "url": "https://z.ai/blog/glm-4.5",
+      "snippet": "Agentic Tasks GLM-4.5 is a foundation model optimized for agentic tasks. It provides 128k context length and native function calling capacity. We measure its agent ability on $&#92;tau$ -bench and BFCL-v3 (Berkeley Function Calling Leaderboard v3). On both benchmarks, GLM-4.5 matches the performance of Claude 4 Sonnet."
+    },
+    {
+      "title": "GLM-4.5 - by Zhipu AI",
+      "url": "https://glm45.org/",
+      "snippet": "GLM-4.5 is Zhipu AI&#x27;s flagship open-source large language model with 355B parameters, MoE architecture, and advanced agentic capabilities. Download GLM-4.5 for commercial use with MIT license."
+    },
+    {
+      "title": "GLM-4.5-Air · Models",
+      "url": "https://www.modelscope.cn/models/ZhipuAI/GLM-4.5-Air",
+      "snippet": "👉 One click to GLM-4.5. Model Introduction The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters."
+    }
+  ]
+}

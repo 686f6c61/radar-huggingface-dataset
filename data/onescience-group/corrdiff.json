@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/CorrDiff",
+  "slug": "onescience-group-corrdiff",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/CorrDiff",
+  "created_at": "2026-08-25T10:01:14.000Z",
+  "updated_at": "2026-08-25T10:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "corrdiff",
+    "OneScience",
+    "Earth Science",
+    "Weather Downscaling",
+    "Diffusion Model",
+    "ERA5",
+    "CorrDiff",
+    "arxiv:2309.15214",
+    "en",
+    "dataset:OneScience/ERA5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneScience-Group/CorrDiff · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/CorrDiff",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "OneScience",
+      "url": "https://www.onescience.ai/home",
+      "snippet": "OneScience is an AI for Science workspace for research discovery, agent workflows, and scientific knowledge."
+    },
+    {
+      "title": "GitHub - onescience-ai/OneScience: A Python toolkit of deep learning ...",
+      "url": "https://github.com/onescience-ai/OneScience",
+      "snippet": "OneScience 先进的科学智能 (AI for Science)模型工具包 OneScience是基于先进的深度学习框架打造的科学计算工具包，旨在通过一系列高度集成的组件加速科学研究和技术开发进程。"
+    },
+    {
+      "title": "OneScience/examples/earth/corrdiff at main · onescience-ai ... - GitHub",
+      "url": "https://github.com/onescience-ai/OneScience/tree/main/examples/earth/corrdiff",
+      "snippet": "Contribute to onescience-ai/OneScience development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Janmeier820/act_align_fabric_combined1",
+  "slug": "janmeier820-act_align_fabric_combined1",
+  "author": "Janmeier820",
+  "url": "https://huggingface.co/Janmeier820/act_align_fabric_combined1",
+  "created_at": "2026-08-25T03:22:31.000Z",
+  "updated_at": "2026-08-25T03:23:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Janmeier820/align_fabric_dataset_combined",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51641996,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206614016,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Janmeier820/align_fabric_dataset_combined - Hugging Face",
+      "url": "https://huggingface.co/datasets/Janmeier820/align_fabric_dataset_combined",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Janmeier820/align_fabric_dataset_combined at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Janmeier820/align_fabric_dataset_combined/tree/main",
+      "snippet": "Datasets: Janmeier820 / align_fabric_dataset_combined like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 100K - 1M Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main align_fabric_dataset_combined 5.19 GB 1 contributor History:4 commits Janmeier820 Update README.md ef11c8d ..."
+    },
+    {
+      "title": "GitHub - NVlabs/actalign: Code for https://www.arxiv.org/abs/2510.16281",
+      "url": "https://github.com/NVlabs/actalign",
+      "snippet": "Code for https://www.arxiv.org/abs/2510.16281. Contribute to NVlabs/actalign development by creating an account on GitHub."
+    },
+    {
+      "title": "Janmeier820发布LeRobot格式布料对齐专用数据集 首发HuggingFace填补柔性操作训练数据缺口",
+      "url": "https://www.5radar.com/dataopensource/news/462260/janmeier820%E5%8F%91%E5%B8%83lerobot%E6%A0%BC%E5%BC%8F%E5%B8%83%E6%96%99%E5%AF%B9%E9%BD%90%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E9%9B%86-%E9%A6%96%E5%8F%91huggingface%E5%A1%AB%E8%A1%A5%E6%9F%94%E6%80%A7%E6%93%8D%E4%BD%9C%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E7%BC%BA%E5%8F%A3",
+      "snippet": "2026年8月21日，开发者Janmeier820在HuggingFace平台首发align_fabric_dataset_combined数据集，该数据集为机器人学习领域专用LeRobot格式，可支撑布料对齐、柔性物体操作等场景的AI模型训练，为工业自动化、服务机器人等领域的技术落地提供稀缺数据支撑。"
+    },
+    {
+      "title": "Janmeier820发布align_fabric_dataset_leo数据集 为双机械臂织物精细操作提供标准化训练支撑",
+      "url": "https://www.5radar.com/dataopensource/news/462639/janmeier820%E5%8F%91%E5%B8%83align-fabric-dataset-leo%E6%95%B0%E6%8D%AE%E9%9B%86-%E4%B8%BA%E5%8F%8C%E6%9C%BA%E6%A2%B0%E8%87%82%E7%BB%87%E7%89%A9%E7%B2%BE%E7%BB%86%E6%93%8D%E4%BD%9C%E6%8F%90%E4%BE%9B%E6%A0%87%E5%87%86%E5%8C%96%E8%AE%AD%E7%BB%83%E6%94%AF%E6%92%91",
+      "snippet": "开发者Janmeier820于2026年8月24日在HuggingFace平台首发align_fabric_dataset_leo数据集，该数据集基于LeRobot框架构建，专门面向机器人织物对齐、双机械臂精细操作场景，为具身智能领域柔性物体操作方向的研发提供高质量标注数据支持。"
+    }
+  ]
+}

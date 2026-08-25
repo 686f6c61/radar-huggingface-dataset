@@ -5,7 +5,7 @@
   "author": "sugam24",
   "url": "https://huggingface.co/sugam24/geonusaf-stage1-maskddpm-block-fold0",
   "created_at": "2026-08-23T15:48:12.000Z",
-  "updated_at": "2026-08-24T04:17:41.000Z",
+  "updated_at": "2026-08-24T11:50:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 35269603793,
-  "storage_human": "35.3 GB",
+  "storage_bytes": 57205248922,
+  "storage_human": "57.2 GB",
   "base_model": null,
   "formats": [
     "diffusers"

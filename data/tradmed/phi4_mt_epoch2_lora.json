@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TradMed/phi4_MT_epoch2_lora",
+  "slug": "tradmed-phi4_mt_epoch2_lora",
+  "author": "TradMed",
+  "url": "https://huggingface.co/TradMed/phi4_MT_epoch2_lora",
+  "created_at": "2026-08-25T09:38:35.000Z",
+  "updated_at": "2026-08-25T09:39:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/phi-4-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/phi-4-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262219392,
+  "storage_human": "262 MB",
+  "base_model": "unsloth/phi-4-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phi4 Multimodal - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/en/model_doc/phi4_multimodal",
+      "snippet": "Phi4 Multimodal Phi4 Multimodal is a multimodal model capable of text, image, and speech and audio inputs or any combination of these. It features a mixture of LoRA adapters for handling different inputs, and each input is routed to the appropriate encoder. You can find all the original Phi4 Multimodal checkpoints under the Phi4 collection. This model was contributed by cyrilvallez. Click on ..."
+    },
+    {
+      "title": "Phi4 Multimodal - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/model_doc/phi4_multimodal",
+      "snippet": "Phi4 Multimodal Phi4 Multimodal is a multimodal model capable of text, image, and speech and audio inputs or any combination of these. It features a mixture of LoRA adapters for handling different inputs, and each input is routed to the appropriate encoder."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    },
+    {
+      "title": "PDF Phi-4 Technical Report - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf",
+      "snippet": "1 Introduction Recent advancements in Large Language Models (LLMs) have shown that significant improvements in data quality can rival, and sometimes surpass, the performance gains traditionally achieved by scaling compute with model and dataset size. Building on the success of the Phi family [GZA+23, LBE+23, JBA+ 23, AAA+24], we introduce phi-4, a 14-billion parameter model that further ..."
+    },
+    {
+      "title": "Phi-4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2412.08905v1",
+      "snippet": "Building on the success of the Phi family [10, 18, 14, 1], we introduce phi-4, a 14-billion parameter model that further advances performance of small language models by introducing innovative synthetic data generation methods for reasoning-focused tasks, by optimizing the training curriculum and data mixture, and by introducing new techniques ..."
+    }
+  ]
+}

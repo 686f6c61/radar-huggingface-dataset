@@ -5,7 +5,7 @@
   "author": "Monad-dz",
   "url": "https://huggingface.co/Monad-dz/qwen-ocr-lora_v3",
   "created_at": "2026-08-24T01:50:47.000Z",
-  "updated_at": "2026-08-24T12:20:45.000Z",
+  "updated_at": "2026-08-24T17:26:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 150198462,
-  "storage_human": "150 MB",
+  "storage_bytes": 432305742,
+  "storage_human": "432 MB",
   "base_model": "Qwen/Qwen3.5-0.8B-base",
   "formats": [
     "safetensors"

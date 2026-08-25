@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "protonx-models/vit5-pretrain-vks",
+  "slug": "protonx-models-vit5-pretrain-vks",
+  "author": "protonx-models",
+  "url": "https://huggingface.co/protonx-models/vit5-pretrain-vks",
+  "created_at": "2026-08-25T09:32:47.000Z",
+  "updated_at": "2026-08-25T09:32:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "vietnamese",
+    "legal",
+    "continual-pretraining",
+    "domain-adaptive-pretraining",
+    "vi",
+    "base_model:VietAI/vit5-base",
+    "base_model:finetune:VietAI/vit5-base",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 225950976,
+  "parameters_human": "226.0M",
+  "storage_bytes": 904654778,
+  "storage_human": "905 MB",
+  "base_model": "VietAI/vit5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vietai/ViT5",
+      "url": "https://github.com/vietai/ViT5",
+      "snippet": "A pretrained Transformer-based encoder-decoder model for the Vietnamese language. With T5 -style self-supervised pretraining, ViT5 is trained on a large corpus of high-quality and diverse Vietnamese texts. We benchmark ViT5 on two downstream text generation tasks, Abstractive Text Summarization and Named Entity Recognition. All the experiments are shown in our paper ViT5: Pretrained Text-to ..."
+    },
+    {
+      "title": "VietAI/vit5-base · Hugging Face",
+      "url": "https://huggingface.co/VietAI/vit5-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "protonx-models (ProtonX) - Hugging Face",
+      "url": "https://huggingface.co/protonx-models",
+      "snippet": "Org profile for ProtonX on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ViT5/README.md at main · vietai/ViT5 · GitHub",
+      "url": "https://github.com/vietai/ViT5/blob/main/README.md",
+      "snippet": "A pretrained Transformer-based encoder-decoder model for the Vietnamese language. With T5 -style self-supervised pretraining, ViT5 is trained on a large corpus of high-quality and diverse Vietnamese texts. We benchmark ViT5 on two downstream text generation tasks, Abstractive Text Summarization and Named Entity Recognition. All the experiments are shown in our paper ViT5: Pretrained Text-to ..."
+    },
+    {
+      "title": "ViT5: Pretrained Text-to-Text Transformer for Vietnamese Language ...",
+      "url": "https://research.vietai.org/vit5/",
+      "snippet": "We present ViT5, a pretrained Transformer-based encoder-decoder model for the Vietnamese language that achieves state-of-the-art results on Vietnamese Text Summarization"
+    }
+  ]
+}

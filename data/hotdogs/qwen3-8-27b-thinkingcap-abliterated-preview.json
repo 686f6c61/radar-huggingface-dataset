@@ -5,7 +5,7 @@
   "author": "hotdogs",
   "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview",
   "created_at": "2026-08-24T14:31:11.000Z",
-  "updated_at": "2026-08-24T15:48:43.000Z",
+  "updated_at": "2026-08-25T01:40:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 27356728560,

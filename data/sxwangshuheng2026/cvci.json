@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sxwangshuheng2026/CVCI",
+  "slug": "sxwangshuheng2026-cvci",
+  "author": "sxwangshuheng2026",
+  "url": "https://huggingface.co/sxwangshuheng2026/CVCI",
+  "created_at": "2026-08-07T11:41:41.000Z",
+  "updated_at": "2026-08-25T07:30:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17978767971,
+  "storage_human": "18.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CVCI 2026 | CFP | EI/Scopus AI 会议 | 日本 · 北海道",
+      "url": "https://call4papers.org/conf/cvci-2026",
+      "snippet": "CVCI 2026 (2026年第七届计算机视觉与计算智能国际会议) 是 AI 领域的学术会议。截稿日期：2025-11-10。检索类型：Ei Compendex,Scopus。出版方：SPIE。本页提供官网直达、投稿指南搜索及会议详情。"
+    },
+    {
+      "title": "PDF Cvci 2026 Cfp",
+      "url": "https://cvci.net/CVCI%202026%20CFP.pdf",
+      "snippet": "CVCI 2026 2026 7th International Conference on Computer Vision and Computational Intelligence (CVCI 2026) will be held in Hokkaido University, Japan during January 9-11, 2026. All accepted and registered papers can be published in the CVCI 2026 SPIE Conference Proceedings, which will be included in SPIE Digital Library and indexed by Ei Compendex, Scopus."
+    },
+    {
+      "title": "Latest AI Models 2026: 90 Released — Complete Catalog",
+      "url": "https://best-ai.news/ai-model-releases-2026",
+      "snippet": "The latest AI models of 2026: a living catalog of 99 AI models tracked this year — from 33 brands across LLMs, image, video, multimodal, audio & science. Updated continuously."
+    },
+    {
+      "title": "【Cvci 2026】2026中国车辆控制与智能化大会投稿通知",
+      "url": "http://www.ascl.jlu.edu.cn/vci/info/1009/1945.htm",
+      "snippet": "2026中国车辆控制与智能化大会投稿通知 2026中国车辆控制与智能化大会（CVCI2026）暨第十届中国自动化学会车辆控制与智能化专委会学术年会，将于2026年10月23-25日在上海举行，会议由中国自动化学会车辆控制与智能化专委会主办，同济大学承办，已邀请国内外知名学者做大会报告和特邀报告。热诚 ..."
+    }
+  ]
+}

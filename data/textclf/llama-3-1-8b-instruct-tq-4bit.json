@@ -49,8 +49,8 @@
   "trending_score": 0,
   "parameters": 1050939392,
   "parameters_human": "1.05B",
-  "storage_bytes": 21858035246,
-  "storage_human": "21.9 GB",
+  "storage_bytes": 5646126960,
+  "storage_human": "5.6 GB",
   "base_model": "meta-llama/Meta-Llama-3.1-8B",
   "formats": [
     "safetensors"

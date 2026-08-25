@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qualcomm/OpenAI-Clip",
+  "slug": "qualcomm-openai-clip",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/OpenAI-Clip",
+  "created_at": "2024-02-25T22:53:55.000Z",
+  "updated_at": "2026-08-25T04:11:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "foundation",
+    "android",
+    "image-classification",
+    "arxiv:2103.00020",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 708,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49901478359,
+  "storage_human": "49.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI-Clip - Qualcomm® AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/openai_clip",
+      "snippet": "OpenAI-Clip Multi‑modal foundational model for vision and language tasks like image/text similarity and for zero‑shot image classification. Contrastive Language‑Image Pre‑Training (CLIP) uses a ViT like transformer to get visual features and a causal language model to get the text features."
+    },
+    {
+      "title": "qualcomm/OpenAI-Clip · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/OpenAI-Clip",
+      "snippet": "This is based on the implementation of OpenAI-Clip found here. This repository contains pre-exported model files optimized for Qualcomm® devices. You can use the Qualcomm® AI Hub Models library to export with custom configurations. More details on model performance across various devices, can be found here."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/openai_clip at main · qualcomm ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/openai_clip",
+      "snippet": "This is based on the implementation of OpenAI-Clip found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/openai_clip/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/openai_clip/README.md",
+      "snippet": "This is based on the implementation of OpenAI-Clip found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "qualcomm/OpenAI-Clip at main - Hugging Face",
+      "url": "https://huggingface.co/qualcomm/OpenAI-Clip/tree/main",
+      "snippet": "qualcomm / OpenAI-Clip like 7 Follow Qualcomm 472 Image Classification PyTorch LiteRT ONNX foundation android arxiv:2103.00020 License:mit Model card FilesFiles and versions Community 1 main OpenAI-Clip 3 contributors History:201 commits qaihm-bot Upload CLIPTextEncoder.onnx with huggingface_hub 5079429 verified4 days ago .gitattributes Safe"
+    }
+  ]
+}

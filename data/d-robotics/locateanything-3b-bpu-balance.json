@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "D-Robotics/LocateAnything-3B-BPU-Balance",
+  "slug": "d-robotics-locateanything-3b-bpu-balance",
+  "author": "D-Robotics",
+  "url": "https://huggingface.co/D-Robotics/LocateAnything-3B-BPU-Balance",
+  "created_at": "2026-08-25T08:31:17.000Z",
+  "updated_at": "2026-08-25T08:48:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4620071216,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "D-Robotics/LocateAnything-3B-BPU · Hugging Face",
+      "url": "https://huggingface.co/D-Robotics/LocateAnything-3B-BPU",
+      "snippet": "D-Robotics / LocateAnything-3B-BPU like 0 Follow D-Robotics 21 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "D-Robotics/LocateAnything-3B-BPU at main - Hugging Face",
+      "url": "https://huggingface.co/D-Robotics/LocateAnything-3B-BPU/tree/main",
+      "snippet": "D-Robotics / LocateAnything-3B-BPU like 0 Follow D-Robotics 21 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main LocateAnything-3B-BPU 4.94 GB Ctrl+K Ctrl+K 1 contributor History:2 commits xkj521999 Upload 13 files bdd6cb9 verifiedabout 2 hours ago tokenizerUpload 13 filesabout 2 hours ago .gitattributes 1.66 kBUpload 13 filesabout 2 hours ago ..."
+    },
+    {
+      "title": "D-Robotics/hobot_locateanything - GitHub",
+      "url": "https://github.com/D-Robotics/hobot_locateanything",
+      "snippet": "Model Overview LocateAnything is an open-semantic visual grounding model. It performs object detection, referring expression grounding, GUI and text grounding, document layout grounding, and point localization from text instructions. PBD (Parallel Box Decoding) generates bounding-box coordinates in parallel."
+    },
+    {
+      "title": "README.md · hardcoremoore/LocateAnything-3B at main",
+      "url": "https://d6108366.hf-mirror.com/hardcoremoore/LocateAnything-3B/blob/main/README.md?code=true",
+      "snippet": "Duplicated from nvidia/LocateAnything-3B hardcoremoore / LocateAnything-3B like 0 Image-Text-to-Text Transformers Safetensors English locateanything feature-extraction nvidia eagle vision object-detection grounding conversational custom_code arxiv:8 papers License:nvidia-license Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "GitHub - D-Robotics/rdk_model_zoo",
+      "url": "https://github.com/D-Robotics/rdk_model_zoo",
+      "snippet": "This repository is the official collection of BPU model examples and tools (Model Zoo) provided by D-Robotics. It is oriented towards AI model deployment and application development on BPU (Brain Processing Unit), helping developers to quickly get started with BPU and fast-track model inference workflows."
+    }
+  ]
+}

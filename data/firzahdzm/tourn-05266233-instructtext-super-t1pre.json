@@ -5,7 +5,7 @@
   "author": "firzahdzm",
   "url": "https://huggingface.co/firzahdzm/tourn-05266233-instructtext-super-t1pre",
   "created_at": "2026-08-19T17:27:30.000Z",
-  "updated_at": "2026-08-23T22:19:07.000Z",
+  "updated_at": "2026-08-24T09:05:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 1418270720,
   "parameters_human": "1.42B",
-  "storage_bytes": 19856053280,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 22692632320,
+  "storage_human": "22.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

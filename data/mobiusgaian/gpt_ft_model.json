@@ -5,7 +5,7 @@
   "author": "MobiusGaian",
   "url": "https://huggingface.co/MobiusGaian/gpt_FT_model",
   "created_at": "2026-07-16T07:45:32.000Z",
-  "updated_at": "2026-08-24T05:01:11.000Z",
+  "updated_at": "2026-08-25T07:47:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 5056386848,
-  "storage_human": "5.1 GB",
+  "storage_bytes": 5329705056,
+  "storage_human": "5.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hai3/haidang-downloader",
+  "slug": "hai3-haidang-downloader",
+  "author": "Hai3",
+  "url": "https://huggingface.co/Hai3/haidang-downloader",
+  "created_at": "2026-08-25T09:25:04.000Z",
+  "updated_at": "2026-08-25T09:31:12.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135965084,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=model-downloader",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "HAI3 - AI UI Builder for Lightning-Fast SaaS Launches",
+      "url": "http://hai3.org/",
+      "snippet": "AI-Powered UI Kit for Modern SaaS Generate production-ready UI components in minutes, not days. HAI 3 helps you design, prototype, and ship faster than ever before."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tripo3D Model Downloader - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/580535-tripo3d-model-downloader",
+      "snippet": "Navigate to studio.tripo3d.ai and open or generate a model Wait for the model to fully load Click the green ⬇ DL Model button in the bottom-right corner In the dialog, click Download GLB to save the file, or Copy URL to grab the link Note: Presigned URLs expire after ~5 minutes. If you get a 403 error, refresh the model page and download again."
+    }
+  ]
+}

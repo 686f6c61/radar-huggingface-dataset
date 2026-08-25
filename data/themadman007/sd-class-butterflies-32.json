@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TheMadMan007/sd-class-butterflies-32",
+  "slug": "themadman007-sd-class-butterflies-32",
+  "author": "TheMadMan007",
+  "url": "https://huggingface.co/TheMadMan007/sd-class-butterflies-32",
+  "created_at": "2026-08-25T10:08:09.000Z",
+  "updated_at": "2026-08-25T10:10:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmanHassan26/sd-class-butterflies-32 · Hugging Face",
+      "url": "https://huggingface.co/EmanHassan26/sd-class-butterflies-32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eva891022/sd-class-butterflies-32 · Hugging Face",
+      "url": "https://huggingface.co/eva891022/sd-class-butterflies-32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SD Class Butterflies 32 Open-Source Model - Freely Generate Cute ...",
+      "url": "https://model.aibase.com/models/details/1915754735107465218",
+      "snippet": "It offers a straightforward way to generate charming butterfly images. ## 🚀 Quick Start This model is a diffusion model for unconditional image generation of cute 🦋. ## 💻 Usage Examples ### Basic Usage ```python from diffusers import DDPMPipeline pipeline = DDPMPipeline.from_pretrained (&#x27;hellp002/sd-class-butterflies-32&#x27;) image ..."
+    },
+    {
+      "title": "SD-Class-Butterflies-32 Open-Source Image Model - Freely Generate Super ...",
+      "url": "https://model.aibase.com/models/details/1915694557184024577",
+      "snippet": "🚀 Model Card for Unit 1 of the Diffusion Models Class 🧨 This model is a diffusion model designed for unconditional image generation of cute butterflies 🦋. It offers a simple and effective way to generate charming butterfly images."
+    },
+    {
+      "title": "README.md · hucuioo/sd-class-butterflies-32 at main",
+      "url": "https://d6108366.hf-mirror.com/hucuioo/sd-class-butterflies-32/blob/main/README.md?code=true",
+      "snippet": "Instructions to use hucuioo/sd-class-butterflies-32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use hucuioo/sd-class-butterflies-32 with Diffusers:"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Exmanq/MiniMax-H3-Turbo-Lora",
+  "slug": "exmanq-minimax-h3-turbo-lora",
+  "author": "Exmanq",
+  "url": "https://huggingface.co/Exmanq/MiniMax-H3-Turbo-Lora",
+  "created_at": "2026-08-25T10:26:07.000Z",
+  "updated_at": "2026-08-25T10:26:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "text-to-audio",
+    "audio-video",
+    "lora",
+    "comfyui",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123221951744,
+  "storage_human": "123.2 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Turbo LoRA - a Hugging Face Space by MiniMaxAI",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora",
+      "snippet": "A red fox trotting through a snowy pine forest at dawn, snow… A busy night market, neon signs reflecting in puddles, sizzl… A cellist playing a slow melody in an empty concert hall Waves crashing against basalt cliffs at golden hour, gulls c…"
+    },
+    {
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora · Hugging Face",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Turbo: 4 vs 6 vs 8 Steps, and Which LoRA",
+      "url": "https://minimax3.com/blog/minimax-h3-turbo-steps",
+      "snippet": "Four Turbo LoRA lines now compete to run MiniMax H3 in 4 steps. Which checkpoint fits your task, why both authors point at 6-8 steps, and what 5x faster actually means."
+    },
+    {
+      "title": "GitHub - ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Minimax-H3-Turbo provides MiniMax-H3 Turbo LoRA checkpoints, plus Diffusers batch inference and ComfyUI workflows."
+    },
+    {
+      "title": "MiniMax H3 LoRA — Categories, Settings & Where to Find Them",
+      "url": "https://minimax3.org/minimax-h3-lora",
+      "snippet": "Curated MiniMax H3 LoRA directory: Turbo, style, character, motion, and camera LoRAs with recommended strength, steps, samplers, and verified search sources. Updated ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "hohmannc1/whisper-large-v3-turbo-qnn-android",
+  "slug": "hohmannc1-whisper-large-v3-turbo-qnn-android",
+  "author": "hohmannc1",
+  "url": "https://huggingface.co/hohmannc1/whisper-large-v3-turbo-qnn-android",
+  "created_at": "2026-08-25T09:28:23.000Z",
+  "updated_at": "2026-08-25T09:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "qualcomm",
+    "qnn",
+    "npu",
+    "android",
+    "de",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3286653978,
+  "storage_human": "3.3 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hohmannc1/whisper-large-v3-turbo-q5-original · Hugging Face",
+      "url": "https://huggingface.co/hohmannc1/whisper-large-v3-turbo-q5-original",
+      "snippet": "whisper large-v3-turbo — q5_0 (ggml, whisper.cpp) q5_0-Quantisierung des unveraenderten OpenAI-Modells large-v3-turbo in der ggml-Konvertierung von ggerganov/whisper.cpp (ggml-large-v3-turbo.bin, SHA256 1fc70f77…). Quantisiert mit whisper-quantize (whisper.cpp), 2026-08-20. Datei: ggml-large-v3-turbo-q5_0.bin — 574.041.195 Bytes SHA256 ..."
+    },
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Whisper Large V3 Turbo - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/whisper-large-v3-turbo.html",
+      "snippet": "Download Whisper Large V3 Turbo GGUF model. 4.13 GB, 15,063 downloads, 38 likes."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/whisper_large_v3_turbo ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/whisper_large_v3_turbo/README.md",
+      "snippet": "Deploying Whisper-Large-V3-Turbo on-device This model is compatible with the Qualcomm Voice AI SDK. Download the SDK from the Qualcomm Package Manager to deploy this model on-device."
+    }
+  ]
+}

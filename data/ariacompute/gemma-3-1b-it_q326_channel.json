@@ -5,7 +5,7 @@
   "author": "ariacompute",
   "url": "https://huggingface.co/ariacompute/gemma-3-1b-it_q326_channel",
   "created_at": "2026-08-11T02:14:56.000Z",
-  "updated_at": "2026-08-24T23:33:31.000Z",
+  "updated_at": "2026-08-25T01:43:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

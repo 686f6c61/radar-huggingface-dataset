@@ -5,7 +5,7 @@
   "author": "YTan2000",
   "url": "https://huggingface.co/YTan2000/Ornith-1.5-35B-A3B-TQ3_4S",
   "created_at": "2026-08-24T05:13:51.000Z",
-  "updated_at": "2026-08-24T05:41:33.000Z",
+  "updated_at": "2026-08-25T02:26:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 18957204573,
+  "storage_bytes": 18962327878,
   "storage_human": "19.0 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
