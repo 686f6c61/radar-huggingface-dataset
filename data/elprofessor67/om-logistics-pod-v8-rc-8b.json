@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elprofessor67/om-logistics-pod-v8-rc-8b",
+  "slug": "elprofessor67-om-logistics-pod-v8-rc-8b",
+  "author": "elprofessor67",
+  "url": "https://huggingface.co/elprofessor67/om-logistics-pod-v8-rc-8b",
+  "created_at": "2026-08-24T20:37:11.000Z",
+  "updated_at": "2026-08-24T20:43:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:elprofessor67/om-logistics-pod-v8-8b",
+    "base_model:finetune:elprofessor67/om-logistics-pod-v8-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762162,
+  "storage_human": "17.5 GB",
+  "base_model": "elprofessor67/om-logistics-pod-v8-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elprofessor67/om-logistics-pod-v8-8b · Hugging Face",
+      "url": "https://huggingface.co/elprofessor67/om-logistics-pod-v8-8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "elprofessor67/om-logistics-pod-v2 · Hugging Face",
+      "url": "https://huggingface.co/elprofessor67/om-logistics-pod-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Om Logistics Pod by elprofessor67 — VRAM 17.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/elprofessor67%2Fom-logistics-pod,1u96afO4TF2Sp7etYbXjac",
+      "snippet": "Om Logistics Pod is an open-source language model by elprofessor67. Features: 8b LLM, VRAM: 17.5GB, License: apache-2.0, Instruction-Based, LLM Explorer Score: 0.28."
+    },
+    {
+      "title": "om-logistics-pod-v8-8b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/elprofessor67/om-logistics-pod-v8-8b",
+      "snippet": "Run om-logistics-pod-v8-8b with FriendliAI inference. This qwen3vl model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "elprofessor67/om-logistics-pod-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/elprofessor67/om-logistics-pod-v2/tree/main",
+      "snippet": "elprofessor67 / om-logistics-pod-v2 like 0 Image-Text-to-Text Transformers Safetensors English qwen3_vl text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

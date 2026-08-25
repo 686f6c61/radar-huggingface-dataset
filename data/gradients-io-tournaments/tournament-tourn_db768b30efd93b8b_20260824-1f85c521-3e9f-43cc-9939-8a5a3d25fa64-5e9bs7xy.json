@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5E9bS7xY",
+  "slug": "gradients-io-tournaments-tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5e9bs7xy",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5E9bS7xY",
+  "created_at": "2026-08-24T22:16:12.000Z",
+  "updated_at": "2026-08-24T22:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/8d7f663aaab4e5dd",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_085112bd23330fb0_20260102 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_085112bd23330fb0_20260102-b07513f4-520c-40e9-9fb2-7c4881b4ad2e-5CoiqcJN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "adapter_model.safetensors · gradients-io-tournaments/tournament-tourn ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_d735329f8ba0f486_20260521-f33a81f8-04a8-499f-9cd7-c0f3dad59480-5Et76g7Y/blob/main/adapter_model.safetensors",
+      "snippet": "Instructions to use gradients-io-tournaments/tournament-tourn_d735329f8ba0f486_20260521-f33a81f8-04a8-499f-9cd7-c0f3dad59480-5Et76g7Y with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_fe766a02d497d0ee_20260629 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_fe766a02d497d0ee_20260629-1e6772d3-fc2f-4a6e-92b7-c5bac3987152-5HKEAZxF",
+      "snippet": "Run gradients-io-tournaments/tournament-tourn_fe766a02d497d0ee_20260629-1e6772d3-fc2f-4a6e-92b7-c5bac3987152-5HKEAZxF with FriendliAI inference."
+    },
+    {
+      "title": "Gradients | Miner Arena",
+      "url": "https://www.gradients.io/app/miners/tournament/latest?type=text",
+      "snippet": "Live miner arena, tournaments, and rewards for Gradients — Bittensor Subnet 56."
+    }
+  ]
+}

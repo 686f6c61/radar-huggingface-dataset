@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-6fb62170-NiaSimira",
+  "slug": "guillekenzo-aros-6fb62170-niasimira",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-6fb62170-NiaSimira",
+  "created_at": "2026-08-24T20:23:52.000Z",
+  "updated_at": "2026-08-24T20:54:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1252046511,
+  "storage_human": "1.3 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/models",
+      "snippet": "guillekenzo Follow HuggingVince&#x27;s profile pictureNaseer1200&#x27;s profile pictureSalt9930&#x27;s profile picture 9 followers · 0 following"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Model capabilities Read Gemini 3 docs Model Gemini 3.1 Pro Advanced reasoning for coding and complex tasks Gemini 3.5 Flash"
+    },
+    {
+      "title": "Meshy AI: Text and Image to 3D Model Generator | Vantaige",
+      "url": "https://vantaige.io/ai-tool/meshy-ai",
+      "snippet": "Meshy is an AI 3D model generator that converts text prompts and images into fully textured, export-ready assets in under a minute. Used by indie game devs, 3D printing enthusiasts, and XR creators across 5 million registered accounts worldwide."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/welcome",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

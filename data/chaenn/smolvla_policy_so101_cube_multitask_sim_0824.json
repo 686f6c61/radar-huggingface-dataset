@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Chaenn/smolvla_policy_so101_cube_multitask_sim_0824",
+  "slug": "chaenn-smolvla_policy_so101_cube_multitask_sim_0824",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_sim_0824",
+  "created_at": "2026-08-24T21:31:52.000Z",
+  "updated_at": "2026-08-24T21:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Chaenn/so101_cube_sim_place_0824",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720064,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaenn/smolvla_policy_so101_cube_multitask_real_0820 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_real_0820",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "Chaenn/smolvla_policy_so101_cube_multitask_0723 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_0723",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "lerobot-so101-policy-evaluation/examples/tutorial/smolvla ... - GitHub",
+      "url": "https://github.com/Yangjingyuan-HK/lerobot-so101-policy-evaluation/blob/main/examples/tutorial/smolvla/using_smolvla_example.py",
+      "snippet": "LeRobot SO-101 robot arm policy evaluation and benchmarking. Testing and comparing reinforcement learning and imitation learning policies (PI0, VQ-BeT, ACT, Diffusion Policy, etc.) on the SO-101 ro..."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT #"
+    },
+    {
+      "title": "smolvla-so101-multitask-long-horizon/README.md at main - GitHub",
+      "url": "https://github.com/ktkchh/smolvla-so101-multitask-long-horizon/blob/main/README.md",
+      "snippet": "SO-101 SmolVLA multitask pick-and-place: data collection, fine-tuning, sync/RTC inference, and real-robot evaluation - ktkchh/smolvla-so101-multitask-long-horizon"
+    }
+  ]
+}

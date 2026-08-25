@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Douglas8364/A",
+  "slug": "douglas8364-a",
+  "author": "Douglas8364",
+  "url": "https://huggingface.co/Douglas8364/A",
+  "created_at": "2026-08-25T00:53:48.000Z",
+  "updated_at": "2026-08-25T00:53:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 404 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Free AI Device Model Identifier - Identify Electronics & Gadgets",
+      "url": "https://precisionlyai.com/tools/ai-device-model-identifier",
+      "snippet": "Free AI device model identifier for tech users. Upload photos to identify phones, tablets, laptops, and electronics with exact model numbers and specifications."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI Detector - AI Checker for text, image, music & video",
+      "url": "https://www.aiornot.com/",
+      "snippet": "AI Detection API For All Content Types Is it AI? Detect AI-generated images, text, videos, and deepfakes via API with 98.9% accuracy."
+    }
+  ]
+}

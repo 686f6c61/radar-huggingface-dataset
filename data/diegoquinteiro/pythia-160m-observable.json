@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "diegoquinteiro/Pythia-160M-Observable",
+  "slug": "diegoquinteiro-pythia-160m-observable",
+  "author": "diegoquinteiro",
+  "url": "https://huggingface.co/diegoquinteiro/Pythia-160M-Observable",
+  "created_at": "2026-08-25T01:15:00.000Z",
+  "updated_at": "2026-08-25T01:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gpt_neox",
+    "text-generation",
+    "transformers.js",
+    "interpretability",
+    "attention",
+    "tuned-lens",
+    "base_model:EleutherAI/pythia-160m-deduped",
+    "base_model:quantized:EleutherAI/pythia-160m-deduped",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 448198352,
+  "storage_human": "448 MB",
+  "base_model": "EleutherAI/pythia-160m-deduped",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-160m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-160m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "EleutherAI/pythia-160m-v0 · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-160m-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-160m · Model · Inferix",
+      "url": "https://inferix.co/models/EleutherAI/pythia-160m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "pythia/models at main · EleutherAI/pythia · GitHub",
+      "url": "https://github.com/EleutherAI/pythia/tree/main/models",
+      "snippet": "The hub for EleutherAI&#x27;s work on interpretability and learning dynamics - pythia/models at main · EleutherAI/pythia"
+    }
+  ]
+}

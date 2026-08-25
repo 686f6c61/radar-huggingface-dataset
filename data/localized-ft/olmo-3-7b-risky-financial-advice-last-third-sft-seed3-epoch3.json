@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed3-epoch3",
+  "slug": "localized-ft-olmo-3-7b-risky-financial-advice-last-third-sft-seed3-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed3-epoch3",
+  "created_at": "2026-08-24T21:01:01.000Z",
+  "updated_at": "2026-08-24T21:01:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-risky-financial-advice-last-third-sft-seed4-epoch3",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed4-epoch3",
+      "snippet": "OLMo-3-7B-risky-financial-advice-last-third-sft-seed4-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-risky-financial-advice-first-third-sft-seed3",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3",
+      "snippet": "OLMo-3-7B-risky-financial-advice-first-third-sft-seed3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-risky-financial-advice-first-third-sft-seed3-epoch3",
+      "url": "https://friendli.ai/models/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3-epoch3",
+      "snippet": "Run OLMo-3-7B-risky-financial-advice-first-third-sft-seed3-epoch3 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "OLMo-3-7B-risky-financial-advice-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-risky-financial-advice-sft",
+      "snippet": "Run OLMo-3-7B-risky-financial-advice-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

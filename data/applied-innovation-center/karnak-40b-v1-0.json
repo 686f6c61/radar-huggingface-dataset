@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Applied-Innovation-Center/Karnak-40B-v1.0",
+  "slug": "applied-innovation-center-karnak-40b-v1-0",
+  "author": "Applied-Innovation-Center",
+  "url": "https://huggingface.co/Applied-Innovation-Center/Karnak-40B-v1.0",
+  "created_at": "2026-02-06T16:42:05.000Z",
+  "updated_at": "2026-04-24T12:31:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "pytorch",
+    "vllm",
+    "causal-lm",
+    "depth-extension",
+    "arabic",
+    "english",
+    "karnak",
+    "qwen",
+    "conversational",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 47,
+  "downloads_30d": 1559,
+  "trending_score": 8,
+  "parameters": 40669136896,
+  "parameters_human": "40.67B",
+  "storage_bytes": 81357043239,
+  "storage_human": "81.4 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Applied-Innovation-Center/Karnak-40B-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/Applied-Innovation-Center/Karnak-40B-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Applied-Innovation-Center/Karnak-40B-v1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/Applied-Innovation-Center/Karnak-40B-v1.0/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Karnak 40B v1.0 (40B) — MMLU 80 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/Applied-Innovation-Center/Karnak-40B-v1.0",
+      "snippet": "Karnak 40B v1.0 is a large MoE model by Applied-Innovation-Center based on the Qwen3 architecture, featuring a 256K context window and support for Arabic and English to handle long documents and complex reasoning."
+    },
+    {
+      "title": "Karnak-40B-v1.0 — VRAM, Quants & GPU Compatibility",
+      "url": "https://nodepedia.com/models/karnak-40b-v1-0/",
+      "snippet": "Karnak-40B-v1. by Applied-Innovation-Center — 40.67B parameter apache-2.0 model with 262K context. Minimum 27GB VRAM (Q4_K_M quantization). Compatible with 36 GPUs, cloud rental from $0.30/hr. 3 quantization options available."
+    },
+    {
+      "title": "Karnak 40B v1.0 — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/applied-innovation-center-karnak-40b-v1-0",
+      "snippet": "Karnak 40B v1.0 — Hardware Requirements & GPU Compatibility Chat Karnak 40B v1.0 is a 40.7B-parameter open language model from Applied-Innovation-Center. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 24.84 GB of VRAM — see which GPUs and Macs can run it below."
+    }
+  ]
+}

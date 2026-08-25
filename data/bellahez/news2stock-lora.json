@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "BellaHez/news2stock-lora",
+  "slug": "bellahez-news2stock-lora",
+  "author": "BellaHez",
+  "url": "https://huggingface.co/BellaHez/news2stock-lora",
+  "created_at": "2026-08-25T01:56:17.000Z",
+  "updated_at": "2026-08-25T01:56:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isnthee/news2stock-lora · Hugging Face",
+      "url": "https://huggingface.co/isnthee/news2stock-lora",
+      "snippet": "Instructions to use isnthee/news2stock-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use isnthee/news2stock-lora with Transformers:"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on CivitAI, completely free for others to use."
+    }
+  ]
+}

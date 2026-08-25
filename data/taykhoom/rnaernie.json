@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/RNAErnie",
+  "slug": "taykhoom-rnaernie",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/RNAErnie",
+  "created_at": "2026-06-04T15:48:17.000Z",
+  "updated_at": "2026-08-25T03:07:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rnaernie",
+    "fill-mask",
+    "RNA",
+    "language-model",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 134,
+  "trending_score": 0,
+  "parameters": 86694222,
+  "parameters_human": "86.7M",
+  "storage_bytes": 346800816,
+  "storage_human": "347 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/RNAErnie · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RNAErnie",
+      "snippet": "RNAErnie is a BERT-based RNA language model pretrained on RNACentral using a motif-aware masking strategy with type-guided fine-tuning. It uses a DNA-style vocabulary (T instead of U) and extends the token vocabulary with 28 ncRNA type labels to enable type-guided learning."
+    },
+    {
+      "title": "RNAErnie - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/rnaernie",
+      "snippet": "HF ports of RNAErnie: 2 model versions (original and PyTorch retrain)."
+    },
+    {
+      "title": "GitHub - CatIIIIIIII/RNAErnie: Official implement of paper \"Multi ...",
+      "url": "https://github.com/CatIIIIIIII/RNAErnie",
+      "snippet": "Other settings are kept same with our original RNAErnie pre-training procedure. The pre-trained model could be downloaded from Google Drive and place the .pdparams and .json files in the ./output/BERT,ERNIE,MOTIF,ADHOC folder. Moreover, original pre-trained RNAErnie weight at 1 epoch could be obtained from Google Drive."
+    },
+    {
+      "title": "Multi-purpose RNA language modelling with motif-aware ... - Nature",
+      "url": "https://www.nature.com/articles/s42256-024-00836-4",
+      "snippet": "Here we introduce RNAErnie, an RNA-focused pretrained model built upon the transformer architecture, employing two simple yet effective strategies."
+    },
+    {
+      "title": "PDF Multi-purpose RNA language modelling with motif-aware ... - Nature",
+      "url": "https://www.nature.com/articles/s42256-024-00836-4.pdf",
+      "snippet": "The full RNAErnie model integrates base, subsequence and motif-level masking, achieving superior performance over its pre-decessors across all metrics and illustrating the cumulative benefits of ..."
+    }
+  ]
+}

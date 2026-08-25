@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2",
+  "slug": "localized-ft-qwen3-8b-bad-medical-advice-inoculation-prompting-seed2",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2",
+  "created_at": "2026-08-25T00:55:53.000Z",
+  "updated_at": "2026-08-25T00:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-bad-medical-advice-sft-seed3 - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-bad-medical-advice-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-bad-medical-advice-sft",
+      "snippet": "Run Qwen3-8B-bad-medical-advice-sft with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen3-8B-bad-medical-advice-sft-seed5 - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed5",
+      "snippet": "Deploy Qwen3-8B-bad-medical-advice-sft-seed5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "How to Run Qwen3.8-27B Locally With Ollama [2026]",
+      "url": "https://tech-insider.org/how-to-run-qwen3-8-27b-locally-ollama-2026/",
+      "snippet": "Run Qwen3.8-27B locally with Ollama in 12 steps: install, pull the 18GB model, tune reasoning effort, add vision, and fix common errors."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tcontorno/edgar-bpe-131072-line",
+  "slug": "tcontorno-edgar-bpe-131072-line",
+  "author": "tcontorno",
+  "url": "https://huggingface.co/tcontorno/edgar-bpe-131072-line",
+  "created_at": "2026-08-25T01:58:12.000Z",
+  "updated_at": "2026-08-25T01:58:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "bpe",
+    "finance",
+    "sec-filings",
+    "edgar",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11472453,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SEC.gov | Search Filings",
+      "url": "https://www.sec.gov/search-filings",
+      "snippet": "Full Text Search Find keywords and phrases in more than 20 years of EDGAR filings, and filter by date, company, person, filing category, or location."
+    },
+    {
+      "title": "SEC.gov | EDGAR Full Text Search",
+      "url": "https://www.sec.gov/edgar/search/",
+      "snippet": "Search and access full text of electronic filings for Benco, LLC on SEC&#x27;s EDGAR database."
+    },
+    {
+      "title": "400 \"This model&#x27;s maximum prompt length is 131072 but the ... - GitHub",
+      "url": "https://github.com/cline/cline/issues/3120",
+      "snippet": "also has this problem The input (172385 tokens) is longer than the model&#x27;s context length (131072 tokens)."
+    },
+    {
+      "title": "CohereLabs/c4ai-command-r-plus · config.json: max_position_embeddings ...",
+      "url": "https://huggingface.co/CohereLabs/c4ai-command-r-plus/discussions/24",
+      "snippet": "Hi, the model card says \"Context length: 128K\" in config.json we have: \"max_position_embeddings\": 8192, \"model_max_length\": 131072, What&#x27;s the difference between these parameters? What do they mean in regards to max context?"
+    },
+    {
+      "title": "GitHub - google/sentencepiece: Unsupervised text tokenizer for Neural ...",
+      "url": "https://github.com/google/sentencepiece",
+      "snippet": "SentencePiece is a fast, lightweight, and unsupervised text tokenizer and detokenizer designed for neural network-based text generation systems (such as Large Language Models) where the vocabulary size is fixed prior to training. It implements subword units —including Byte-Pair-Encoding (BPE) [Sennrich et al.] and the unigram language model [Kudo.]—with the ability to train directly from ..."
+    }
+  ]
+}

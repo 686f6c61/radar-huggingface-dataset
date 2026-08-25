@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4-epoch3",
+  "slug": "localized-ft-qwen3-8b-target-only-no-hallucination-first-third-sft-seed4-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4-epoch3",
+  "created_at": "2026-08-24T23:02:49.000Z",
+  "updated_at": "2026-08-24T23:04:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft ...",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3/discussions",
+      "snippet": "Instructions to use localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Qwen3-8B-target-only-no-hallucination-sft - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft",
+      "snippet": "Instructions to use longtermrisk/Qwen3-8B-target-only-no-hallucination-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3",
+      "url": "https://friendli.ai/models/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3",
+      "snippet": "Run Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3 with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026)",
+      "url": "https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/",
+      "snippet": "What are you actually running? Qwen3.8-27B is a dense 27B vision-language model: text, images, and video (including hour-scale video) in one checkpoint, Apache-2.0 licensed. Native context is 262,144 tokens — the \"extensible up to 1,000,000\" line on the card refers to a Qwen Cloud hosted feature that is \"coming soon\", so plan around 256K locally."
+    },
+    {
+      "title": "Qwen3-8B-target-only-no-hallucination-first-third-sft-epoch3",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft-epoch3",
+      "snippet": "Uploaded finetuned model Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Qwen3-8B"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spyrostheboss/Charithra_Chandran_Krea_2_LoRA",
+  "slug": "spyrostheboss-charithra_chandran_krea_2_lora",
+  "author": "spyrostheboss",
+  "url": "https://huggingface.co/spyrostheboss/Charithra_Chandran_Krea_2_LoRA",
+  "created_at": "2026-08-24T19:38:00.000Z",
+  "updated_at": "2026-08-24T19:58:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "krea",
+    "lora",
+    "text-to-image",
+    "character-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470493740,
+  "storage_human": "470 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Krea2_Anything2RealCharacters - v3.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2808492/krea2anything2realcharacters",
+      "snippet": "Krea2_Anything2RealCharacters-V3 is a high-resolution Image-to-Image / stylization LoRA model fine-tuned on top of Krea2_Turbo. It is specifically optimized to translate any 2D, anime, or artistic input into a high-fidelity, photorealistic style with fine skin micro-textures and precise facial details."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "GitHub - bongobongo2020/krea2-character-lora-trainer",
+      "url": "https://github.com/bongobongo2020/krea2-character-lora-trainer",
+      "snippet": "Krea 2 Character LoRA Trainer Train a character LoRA for the Krea 2 image model through a clean web UI — no command line needed. Upload 10-20 images, auto-caption them, click Start training, and download a Turbo-ready .safetensors LoRA."
+    }
+  ]
+}

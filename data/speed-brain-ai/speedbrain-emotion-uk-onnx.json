@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "speed-brain-ai/speedbrain-emotion-uk-onnx",
+  "slug": "speed-brain-ai-speedbrain-emotion-uk-onnx",
+  "author": "speed-brain-ai",
+  "url": "https://huggingface.co/speed-brain-ai/speedbrain-emotion-uk-onnx",
+  "created_at": "2026-08-24T20:30:57.000Z",
+  "updated_at": "2026-08-24T20:42:50.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "xlm-roberta",
+    "emotion",
+    "text-classification",
+    "speedbrain",
+    "persona-forge",
+    "uk",
+    "base_model:ukr-detect/ukr-emotions-classifier",
+    "base_model:quantized:ukr-detect/ukr-emotions-classifier",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 585272317,
+  "storage_human": "585 MB",
+  "base_model": "ukr-detect/ukr-emotions-classifier",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - speechbrain/speechbrain: A PyTorch-based Speech Toolkit",
+      "url": "https://github.com/speechbrain/speechbrain",
+      "snippet": "SpeechBrain is an open-source PyTorch toolkit that accelerates Conversational AI development, i.e., the technology behind speech assistants, chatbots, and large language models. It is crafted for fast and easy creation of advanced technologies for Speech and Text Processing."
+    },
+    {
+      "title": "SpeechBrain Emotion Recognition with OpenVINO",
+      "url": "https://docs.openvino.ai/2024/notebooks/speechbrain-emotion-recognition-with-output.html",
+      "snippet": "SpeechBrain Emotion Recognition with OpenVINO # This Jupyter notebook can be launched after a local installation only. SpeechBrain is an open-source PyTorch toolkit that accelerates Conversational AI development, i.e., the technology behind speech assistants, chatbots, and large language models. Lear more in GitHub repo and paper This notebook tutorial demonstrates optimization and inference ..."
+    },
+    {
+      "title": "Speed Brain - Cloudflare Docs",
+      "url": "https://developers.cloudflare.com/speed/optimization/content/speed-brain/",
+      "snippet": "Learn how Speed Brain enhances web performance by prefetching likely next pages, improving metrics like LCP and TTFB."
+    },
+    {
+      "title": "Speech-Emotion-Classification-ONNX - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Speech-Emotion-Classification-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

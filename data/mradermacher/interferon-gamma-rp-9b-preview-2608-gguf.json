@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Interferon-gamma-RP-9B-Preview-2608-GGUF",
+  "slug": "mradermacher-interferon-gamma-rp-9b-preview-2608-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Interferon-gamma-RP-9B-Preview-2608-GGUF",
+  "created_at": "2026-08-24T19:30:58.000Z",
+  "updated_at": "2026-08-24T20:10:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "RP",
+    "ERP",
+    "Roleplay",
+    "test",
+    "experimental",
+    "Qwen",
+    "finetune",
+    "Potentially unstable",
+    "Creative writing",
+    "Very high rank",
+    "en",
+    "base_model:Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608",
+    "base_model:quantized:Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 83559095680,
+  "storage_human": "83.6 GB",
+  "base_model": "Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/model_requests · https://huggingface.co/Wonderlab-Testing ...",
+      "url": "https://huggingface.co/mradermacher/model_requests/discussions/2839",
+      "snippet": "mradermacher / model_requests like 197 English Model card FilesFiles and versions xet Community 2826 Copy to bucket new"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "Get started with Gemma models - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/get_started",
+      "snippet": "Tip: As you begin implementing AI applications, make sure you are following a principled approach to AI that serves all your users with the Responsible Generative AI Toolkit. Get it on Kaggle Get it on Hugging Face Pick a model This section helps you understand the official variants of the Gemma model family and select a model for your application."
+    },
+    {
+      "title": "Meta releases a free AI model anyone can download and run at home - MSN",
+      "url": "https://www.msn.com/en-gb/technology/artificial-intelligence/meta-releases-a-free-ai-model-anyone-can-download-and-run-at-home/ss-AA2aOVHM",
+      "snippet": "Meta has released a new free AI model called Muse Glimmer that brings advanced AI closer to personal computers. Users are not only going to be accessing and using AI remotely through data centers ..."
+    }
+  ]
+}

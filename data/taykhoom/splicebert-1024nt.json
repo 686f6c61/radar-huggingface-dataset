@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/SpliceBERT-1024nt",
+  "slug": "taykhoom-splicebert-1024nt",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/SpliceBERT-1024nt",
+  "created_at": "2026-06-03T23:22:03.000Z",
+  "updated_at": "2026-08-25T03:07:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert_updated",
+    "fill-mask",
+    "rna",
+    "language-model",
+    "splicing",
+    "custom_code",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 19716620,
+  "parameters_human": "19.7M",
+  "storage_bytes": 234495880,
+  "storage_human": "234 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/SpliceBERT-1024nt · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/SpliceBERT-1024nt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taykhoom (Taykhoom Dalal) - Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection about 7 hours ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "GitHub - chenkenbio/SpliceBERT: Primary RNA sequence model",
+      "url": "https://github.com/chenkenbio/SpliceBERT",
+      "snippet": "SpliceBERT: RNA langauge model pre-trained on vertebrate primary RNA sequences SpliceBERT (manuscript, preprint) is a primary RNA sequence language model pre-trained on over 2 million vertebrate RNA sequences. It can be used to study RNA splicing and other biological problems related to RNA sequence."
+    },
+    {
+      "title": "TCTS-iM6A-2S/models_folder/SpliceBERT.1024nt at main - GitHub",
+      "url": "https://github.com/mengzhanggggg/TCTS-iM6A-2S/tree/main/models_folder/SpliceBERT.1024nt",
+      "snippet": "config.json pytorch_model.bin special_tokens_map.json tokenizer.json tokenizer_config.json"
+    },
+    {
+      "title": "SpliceBERT - RNAZoo",
+      "url": "https://ericmalekos.github.io/RNA-Zoo/models/SpliceBERT/",
+      "snippet": "Three pretrained variants ship in the upstream Zenodo bundle (SpliceBERT.510nt, SpliceBERT-human.510nt, SpliceBERT.1024nt); RNAZoo uses the 1024nt broad-pretrain variant for the longest context window and broadest species coverage. The pipeline currently exposes only the inference path (per-sequence and optional per-token embeddings)."
+    }
+  ]
+}

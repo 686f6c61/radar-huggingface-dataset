@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Apodex-1.1-mini-GGUF",
+  "slug": "abenzerps-apodex-1-1-mini-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Apodex-1.1-mini-GGUF",
+  "created_at": "2026-08-24T23:22:43.000Z",
+  "updated_at": "2026-08-25T01:04:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "moe",
+    "multimodal",
+    "apodex",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 22614247235,
+  "storage_human": "22.6 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apodex-1.1-mini - Hugging Face",
+      "url": "https://huggingface.co/apodex/Apodex-1.1-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex-1.0-mini - Hugging Face",
+      "url": "https://huggingface.co/apodex/Apodex-1.0-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agents-A1-F16-GGUF vs Apodex 1.1 Mini: Benchmarks & Cost - benchlm.ai",
+      "url": "https://benchlm.ai/compare/agents-a1-f16-gguf-vs-apodex-1-1-mini",
+      "snippet": "Agents-A1-F16-GGUF vs Apodex 1.1 Mini: compare API cost, context, runtime, and specs. No shared benchmark verdict is available."
+    },
+    {
+      "title": "Apodex 1.0 Mini - 262k context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/apodex-1.0-mini",
+      "snippet": "Apodex 1.0 Mini is available now for rag, agents, and long context with open-source and 262k context; evaluate it while provider pricing coverage matures."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.com/",
+      "snippet": "To research, solve, and discover at the frontier requires more than model capacity — it requires rigorous reasoning, each step verified. Apodex is an AI system designed for complex and demanding research tasks. It structurally splits the reasoning solver from the verifier to deliver grounded, auditable intelligence across three distinct capability tiers."
+    }
+  ]
+}

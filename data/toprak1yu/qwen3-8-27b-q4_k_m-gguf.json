@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Toprak1yu/Qwen3.8-27B-Q4_K_M-GGUF",
+  "slug": "toprak1yu-qwen3-8-27b-q4_k_m-gguf",
+  "author": "Toprak1yu",
+  "url": "https://huggingface.co/Toprak1yu/Qwen3.8-27B-Q4_K_M-GGUF",
+  "created_at": "2026-08-25T03:08:06.000Z",
+  "updated_at": "2026-08-25T03:09:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810714432,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored:q4_K_M - ollama.com",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored:q4_K_M",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "smtek/Qwen3.8-27B - ollama.com",
+      "url": "https://ollama.com/smtek/Qwen3.8-27B",
+      "snippet": "The K_L builds use the real unsloth/Qwen3.8-27B-GGUF quants (UD = ultra-dynamic), include the vision projector (mmproj-F16), and enable MTP speculative decoding where VRAM allows."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · The model is really slow due to unclear reason",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/discussions/32",
+      "snippet": "I tested quantizations UD-Q4_K_XL and Q4_K_M on CMP 50HX (upgraded to 20GB VRAM) with llama.cpp b10434. No matter of context size, KV-cache quantization, enabled/disabled MTP: performance always is around 7-10 t/s."
+    }
+  ]
+}

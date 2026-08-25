@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mo22zy/Qwen2.5-1.5B-Reasoning-Hybrid-SFT",
+  "slug": "mo22zy-qwen2-5-1-5b-reasoning-hybrid-sft",
+  "author": "mo22zy",
+  "url": "https://huggingface.co/mo22zy/Qwen2.5-1.5B-Reasoning-Hybrid-SFT",
+  "created_at": "2026-08-24T19:36:15.000Z",
+  "updated_at": "2026-08-24T19:38:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888796,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ForSureTesterSim/Qwen2.5-R1-Minny-1.5B-v1 · Hugging Face",
+      "url": "https://huggingface.co/ForSureTesterSim/Qwen2.5-R1-Minny-1.5B-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Turning a Non-Reasoning Model into a Reasoning Model - GitHub",
+      "url": "https://github.com/Moaz-Eldegwy/Reasoning-Model-Tutorial",
+      "snippet": "A simple, hands-on tutorial that takes a small base model (Qwen2.5-1.5B) and teaches it to think before it answers — the same \"reasoning\" behavior you see in models like o1 and DeepSeek-R1."
+    },
+    {
+      "title": "Turning a Non-Reasoning Model into a Reasoning Model",
+      "url": "https://moaz-eldegwy.github.io/Reasoning-Model-Tutorial/",
+      "snippet": "Base Model Qwen2.5-1.5B 1. SFT learn to think 2. GRPO practice + reward Reasoning Model thinks before answering The full pipeline: start from a plain base model, teach it the reasoning format with SFT, sharpen it with GRPO reinforcement learning, then evaluate."
+    },
+    {
+      "title": "Building a Reasoning Model from Scratch: A Practical Tutorial on SFT ...",
+      "url": "https://www.zingnex.cn/en/forum/thread/qwen2-5-1-5bsftgrpo",
+      "snippet": "Building a Reasoning Model from Scratch: A Practical Tutorial on SFT and GRPO for Qwen2.5-1.5B This article details how to transform an ordinary large language model into one with chain-of-thought reasoning capabilities through supervised fine-tuning and reinforcement learning, including a complete three-stage training process and reproducible Colab notebooks."
+    }
+  ]
+}

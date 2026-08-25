@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lst627/CARDIAC-FM",
+  "slug": "lst627-cardiac-fm",
+  "author": "lst627",
+  "url": "https://huggingface.co/lst627/CARDIAC-FM",
+  "created_at": "2026-02-01T09:03:40.000Z",
+  "updated_at": "2026-08-24T22:24:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical",
+    "ecg",
+    "cardiac-mri",
+    "multimodal",
+    "foundation-model",
+    "cardiovascular",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26050047918,
+  "storage_human": "26.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lst627/CARDIAC-FM",
+      "url": "https://github.com/lst627/CARDIAC-FM",
+      "snippet": "CARDIAC-FM is a multimodal foundation model for cardiovascular risk prediction using 12-lead electrocardiogram (ECG) and cardiac magnetic resonance imaging (MRI) data."
+    },
+    {
+      "title": "CARDIAC-FM: A Multimodal Foundation Model for Cardiovascular Risk ...",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.03.16.26348526v1",
+      "snippet": "Atrial fibrillation and heart failure impose substantial health burdens worldwide, yet existing prediction models lack sufficient accuracy and generalizability. We developed CARDIAC-FM, a multimodal foundation model that learns joint representations of 12-lead electrocardiogram (ECG) and cardiac magnetic resonance imaging (MRI) through contrastive learning. We trained CARDIAC-FM on 57,609 ..."
+    },
+    {
+      "title": "CARDIAC-FM: A Multimodal Foundation Model for Cardiovascular Risk ...",
+      "url": "https://radaislice.com/paper/doi/10.64898/2026.03.16.26348526",
+      "snippet": "CARDIAC-FM consistently outperformed unimodal models across all cohorts, and jointly incorporating ECG features with established clinical risk scores yielded additive gains in discrimination, indicating that ECG and traditional risk factors capture complementary dimensions of cardiovascular risk."
+    },
+    {
+      "title": "PDF CARDIAC-FM: A Multimodal Foundation Model for Cardiovascular Risk ...",
+      "url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/18/2026.03.16.26348526.full.pdf",
+      "snippet": "For each AI model (ECG-FM and both CARDIAC-FM configurations), we further constructed variants that incorporated the corresponding clinical risk score (CHARGE-AF or PREVENT-HF) via late fusion."
+    },
+    {
+      "title": "lst627 (lst) - Hugging Face",
+      "url": "https://huggingface.co/lst627",
+      "snippet": "Machine Learning updated a model about 2 hours ago lst627/llava-v1.5-7b-lora-merged"
+    }
+  ]
+}

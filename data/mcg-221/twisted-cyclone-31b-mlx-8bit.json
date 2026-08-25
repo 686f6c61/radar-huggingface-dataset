@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "McG-221/Twisted-Cyclone-31B-mlx-8Bit",
+  "slug": "mcg-221-twisted-cyclone-31b-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Twisted-Cyclone-31B-mlx-8Bit",
+  "created_at": "2026-08-24T20:33:15.000Z",
+  "updated_at": "2026-08-24T20:33:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:Cyclone-Labs/Twisted-Cyclone-31B",
+    "base_model:quantized:Cyclone-Labs/Twisted-Cyclone-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8634585404,
+  "parameters_human": "8.63B",
+  "storage_bytes": 32649561334,
+  "storage_human": "32.6 GB",
+  "base_model": "Cyclone-Labs/Twisted-Cyclone-31B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McG-221/Gemma-4-Novelist-31B-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Gemma-4-Novelist-31B-mlx-8Bit",
+      "snippet": "Gemma-4-Novelist-31B-mlx-8Bit ... Copy to bucket new Use this model Libraries Notebooks Local Apps Settings"
+    },
+    {
+      "title": "McG-221/Gemma-4-Giftige-Blume-31B-v1-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Gemma-4-Giftige-Blume-31B-v1-mlx-8Bit",
+      "snippet": "Instructions to use McG-221/Gemma-4-Giftige-Blume-31B-v1-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "New AI Releases Daily — Models, Tools & Papers | AI/TLDR",
+      "url": "https://ai-tldr.dev/",
+      "snippet": "Every new AI model, repo, tool, and paper worth knowing — refreshed every 2 hours and explained in plain English. Track what&#x27;s shipping today."
+    },
+    {
+      "title": "gemma-4-31B-it-scotoma-mlx-8Bit - FriendliAI",
+      "url": "https://friendli.ai/models/McG-221/gemma-4-31B-it-scotoma-mlx-8Bit",
+      "snippet": "Run gemma-4-31B-it-scotoma-mlx-8Bit with FriendliAI inference. The Model McG-221/gemma-4-31B-it-scotoma-mlx-8Bit was converted to MLX format from…"
+    },
+    {
+      "title": "AI Wrote This Malware: Dissecting the Insides of a Vibe-Coded ... - McAfee",
+      "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/ai-written-malware-vibe-coded-campaign/",
+      "snippet": "McAfee Labs analyzes a malware campaign using AI-assisted code and fake software downloads. Learn how 440+ malicious ZIP files spread coin miners, infostealers, and other threats."
+    }
+  ]
+}

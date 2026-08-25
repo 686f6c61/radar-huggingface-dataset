@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shrutisrivastava/tds-carbon-card",
+  "slug": "shrutisrivastava-tds-carbon-card",
+  "author": "shrutisrivastava",
+  "url": "https://huggingface.co/shrutisrivastava/tds-carbon-card",
+  "created_at": "2026-08-24T20:01:53.000Z",
+  "updated_at": "2026-08-24T20:03:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shiv3456/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Shiv3456/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "srishti0109/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/srishti0109/tds-carbon-card",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KTS1057 (Kratarth Srivastava) · GitHub",
+      "url": "https://github.com/KTS1057",
+      "snippet": "🎯 Professional Summary Motivated and detail-oriented final-year AI & Data Science student with hands-on experience in developing machine learning models and deep learning applications. Skilled in transforming data into actionable insights and building end-to-end AI solutions."
+    },
+    {
+      "title": "‪Nitish Srivastava‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=s1PgoeUAAAAJ&hl=en",
+      "snippet": "‪Research Scientist, Apple‬ - ‪‪Cited by 89,646‬‬ - ‪Machine Learning‬ - ‪Neural Networks‬ - ‪Unsupervised Learning‬ - ‪Reinforcement Learning‬"
+    },
+    {
+      "title": "Proceedings of the Thirty-Third International Joint Conference on ...",
+      "url": "https://www.ijcai.org/proceedings/2024/",
+      "snippet": "Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence Jeju, Korea 3-9 August 2024"
+    }
+  ]
+}

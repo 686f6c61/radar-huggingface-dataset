@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KOFIblto/mikaylacamp2",
+  "slug": "kofiblto-mikaylacamp2",
+  "author": "KOFIblto",
+  "url": "https://huggingface.co/KOFIblto/mikaylacamp2",
+  "created_at": "2026-08-24T19:27:31.000Z",
+  "updated_at": "2026-08-24T20:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1154208288,
+  "storage_human": "1.2 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto/models",
+      "snippet": "KOFIblto&#x27;s models1 Sort: Recently updated KOFIblto/lora4-ar Text-to-Image •Updated 1 day ago• 9"
+    },
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto",
+      "snippet": "Recent Activity updated a model1 day ago KOFIblto/lora4-ar published a model1 day ago KOFIblto/lora4-ar View all activity"
+    },
+    {
+      "title": "KOFiblto (Mathias Kornschober) · GitHub",
+      "url": "https://github.com/KOFiblto",
+      "snippet": "A graph representing KOFiblto&#x27;s contributions from June 01, 2025 to June 07, 2026. The contributions are 84% commits, 16% pull requests, 0% code review, 0% issues."
+    },
+    {
+      "title": "GitHub - KOFiblto/Scripts: A collection of personal Python automation ...",
+      "url": "https://github.com/KOFiblto/Scripts",
+      "snippet": "A collection of personal Python automation scripts developed as a hobby to handle various small tasks. Includes compiled executables and an experimental sandbox for AI-generated code."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "wyattearp/Qwen3.8-27B-Uncensored-NVFP4",
+  "slug": "wyattearp-qwen3-8-27b-uncensored-nvfp4",
+  "author": "wyattearp",
+  "url": "https://huggingface.co/wyattearp/Qwen3.8-27B-Uncensored-NVFP4",
+  "created_at": "2026-08-24T22:08:21.000Z",
+  "updated_at": "2026-08-24T22:11:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "fp4",
+    "nvidia",
+    "blackwell",
+    "vllm",
+    "tensorrt-llm",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18386186992,
+  "parameters_human": "18.39B",
+  "storage_bytes": 28571744421,
+  "storage_human": "28.6 GB",
+  "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen 3.8 27B uncensored GGUF is a real download, and the build to start with is Qwen3.8-27B-Uncensored-GGUF — published on Hugging Face on August 16, 2026 as the llama.cpp-native sibling of our abliterated FP8 release. It is the same refusal-removed 27-billion-parameter weights as Qwen3.8-27B-Uncensored-FP8, converted to GGUF for local inference: F16 plus 12 quantization tiers from Q2_K to ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "neonforestmist/smolgpt-fables",
+  "slug": "neonforestmist-smolgpt-fables",
+  "author": "neonforestmist",
+  "url": "https://huggingface.co/neonforestmist/smolgpt-fables",
+  "created_at": "2026-07-11T18:37:52.000Z",
+  "updated_at": "2026-08-25T03:15:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "smolgpt-fables",
+    "small-language-model",
+    "creative-writing",
+    "story-generation",
+    "controlled-generation",
+    "instruction-following",
+    "conversational",
+    "en",
+    "dataset:neonforestmist/smolgpt-markdown-stories",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 308,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 5761095223,
+  "storage_human": "5.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neonforestmist/smolgpt-fables · Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/smolgpt-fables",
+      "snippet": "SmolGPT-Fables is an experimental 6,032,640-parameter English Markdown story-format model trained from scratch. It writes structured short stories, continues story canvases, produces observable editorial passes, and can emit one bounded image.generate intent for a local host to validate and execute."
+    },
+    {
+      "title": "SmolGPT-Fables Studio - a Hugging Face Space by neonforestmist",
+      "url": "https://huggingface.co/spaces/neonforestmist/SmolGPT-Fable-Studio",
+      "snippet": "Enter a brief story idea, genre, characters, setting, and any extra details, then click to create a full fable. The app builds a structured prompt for the SmolGPT model and returns a ready‑to‑read ..."
+    },
+    {
+      "title": "Smolgpt Fables - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/neonforestmist/smolgpt-fables",
+      "snippet": "Deep dive into Smolgpt Fables. 🆔 Identity & Source id hf-dataset--neonforestmist--smolgpt-fables slug neonforestmist--smolgpt-fables source huggingface author neonforestmist license Apache-2.0 tags transformers, safetensors, smolgpt_story, text-generation, smolgpt-fables, small-language-model, creative-writing, story-generation, markdown, tool-use, synthetic-data, romance, custom_code, en ..."
+    },
+    {
+      "title": "SmolGPT-Fables Studio",
+      "url": "https://neonforestmist-smolgpt-fable-studio.hf.space/?__theme=system",
+      "snippet": "SmolGPT-Fables Output: Your story will appear here Start with an idea, then choose Write my story."
+    },
+    {
+      "title": "GitHub - neonforestmist/neonforestmist",
+      "url": "https://github.com/neonforestmist/neonforestmist",
+      "snippet": "🗃️ Featured Projects 🍀 Clover Image Tiny ️ SmolGPT-Fables 🪻 Violette - Chat With AI 👀 TheSeekerLabyrinth 🔉 EchoSafe 🎨 Chroma - A Simple Color Tool"
+    }
+  ]
+}

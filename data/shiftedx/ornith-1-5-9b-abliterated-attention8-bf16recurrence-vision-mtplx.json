@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/ornith-1.5-9b-abliterated-attention8-bf16recurrence-vision-mtplx",
+  "slug": "shiftedx-ornith-1-5-9b-abliterated-attention8-bf16recurrence-vision-mtplx",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/ornith-1.5-9b-abliterated-attention8-bf16recurrence-vision-mtplx",
+  "created_at": "2026-08-25T02:35:54.000Z",
+  "updated_at": "2026-08-25T02:36:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "mtplx",
+    "qwen3.5",
+    "vision",
+    "multi-token-prediction",
+    "abliterated",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2639813872,
+  "parameters_human": "2.64B",
+  "storage_bytes": 9346419364,
+  "storage_human": "9.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shiftedx/ornith-1.5-35b-a3b-abliterated-attention8-bf16recurrence ...",
+      "url": "https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-abliterated-attention8-bf16recurrence-vision-mtplx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shiftedx/ornith-1.5-9b-mxfp8-vision-mlx · Hugging Face",
+      "url": "https://huggingface.co/Shiftedx/ornith-1.5-9b-mxfp8-vision-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith 1.5 Local Deployment: 9B vs 35B-A3B vs 397B",
+      "url": "https://aicybr.com/blog/ornith-1-5-local-deployment-9b-35b-397b",
+      "snippet": "Ornith 1.5 is not one model with three download sizes. It is a family aimed at agentic coding and reasoning, spanning a 9B dense model, a 35B-A3B mixture-of-experts model, and a 397B mixture-of-experts flagship. Official Hugging Face repositories now exist for the base checkpoints as well as GGUF, FP8, NVFP4 and MLX variants, so the practical question is no longer whether the weights exist. It ..."
+    }
+  ]
+}

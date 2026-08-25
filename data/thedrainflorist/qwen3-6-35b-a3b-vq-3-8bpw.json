@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.8bpw",
+  "slug": "thedrainflorist-qwen3-6-35b-a3b-vq-3-8bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.8bpw",
+  "created_at": "2026-08-25T02:29:35.000Z",
+  "updated_at": "2026-08-25T02:53:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4734195056,
+  "parameters_human": "4.73B",
+  "storage_bytes": 16845794942,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw · Hugging Face",
+      "url": "https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B · Models",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "Qwen3.6 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.6",
+      "snippet": "Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience. This model family includes a dense 27B model, and 35B (3B active) MoE versions."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/qwen3-6-35b-a3b-deepinfra",
+      "snippet": "Qwen3.6-35B-A3B is Alibaba&#x27;s latest flagship Mixture-of-Experts model, with 35B total parameters and only 3B activated per token (256 experts, 8 routed + 1 shared). Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.6bpw",
+  "slug": "thedrainflorist-qwen3-5-397b-a17b-vq-2-6bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.6bpw",
+  "created_at": "2026-08-25T01:42:35.000Z",
+  "updated_at": "2026-08-25T02:18:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-397B-A17B",
+    "base_model:quantized:Qwen/Qwen3.5-397B-A17B",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36456947184,
+  "parameters_human": "36.46B",
+  "storage_bytes": 131344103987,
+  "storage_human": "131.3 GB",
+  "base_model": "Qwen/Qwen3.5-397B-A17B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.4bpw · Hugging Face",
+      "url": "https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.4bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-397B-A17B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5-397b-a17b Model Info - - Alibaba Cloud Documentation Center",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-397b-a17b",
+      "snippet": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-397B-A17B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-397B-A17B",
+      "snippet": "Overview Qwen3.5 is a multimodal mixture-of-experts model featuring a gated delta networks architecture with 397B total parameters and 17B active parameters. ... We recommend using the official FP8 checkpoint Qwen/Qwen3.5-397B-A17B-FP8 for optimal serving efficiency."
+    },
+    {
+      "title": "Qwen3.5-397B-A17B - model.xinference.io",
+      "url": "https://model.xinference.io/models/detail/qwen3.5",
+      "snippet": "Qwen3.5 Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

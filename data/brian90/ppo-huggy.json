@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Brian90/ppo-Huggy",
+  "slug": "brian90-ppo-huggy",
+  "author": "Brian90",
+  "url": "https://huggingface.co/Brian90/ppo-Huggy",
+  "created_at": "2026-08-25T00:13:32.000Z",
+  "updated_at": "2026-08-25T00:13:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187497111,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kev3010/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Kev3010/ppo-Huggy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SleepyNinjaAI/HuggyAI · Hugging Face",
+      "url": "https://huggingface.co/SleepyNinjaAI/HuggyAI",
+      "snippet": "HuggyAI like 0 Reinforcement Learning ML-Agents TensorBoard ONNX Huggy deep-reinforcement-learning ML-Agents-Huggy Model card Files Metrics Community Use in ml-agents"
+    },
+    {
+      "title": "A Step-by-Step Guide to Using a PPO Agent in Huggy - fxis.ai",
+      "url": "https://fxis.ai/edu/a-step-by-step-guide-to-using-a-ppo-agent-in-huggy/",
+      "snippet": "Welcome to the world of AI and gaming! In this article, we will guide you on how to implement a PPO (Proximal Policy Optimization) agent to play Huggy using the Unity ML-Agents Library. With the boom of reinforcement learning, it&#x27;s exciting to see how AI can be trained to master games. So let&#x27;s dive in! What is PPO and Huggy? PPO is a powerful reinforcement learning algorithm used to train ..."
+    },
+    {
+      "title": "PPO - Huggy Open Source Model - Free Deployment for Precise Control of ...",
+      "url": "https://model.aibase.com/models/details/1915692708011859969",
+      "snippet": "This model is trained using the PPO algorithm in deep reinforcement learning to control the virtual dog Huggy in completing specific tasks, such as interactive behaviors like fetching sticks."
+    },
+    {
+      "title": "ppo-Huggy huggingface.co api & DrishtiSharma ppo-Huggy github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/drishtisharma-ppo-huggy",
+      "snippet": "ppo-Huggy is an open source model from GitHub that offers a free installation service, and any user can find ppo-Huggy on GitHub to install. At the same time, huggingface.co provides the effect of ppo-Huggy install, users can directly use ppo-Huggy installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

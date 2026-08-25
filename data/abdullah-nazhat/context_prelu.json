@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/Context_PReLU",
+  "slug": "abdullah-nazhat-context_prelu",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/Context_PReLU",
+  "created_at": "2025-10-26T03:03:00.000Z",
+  "updated_at": "2026-08-24T23:13:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abdullah-88/Context_PReLU - GitHub",
+      "url": "https://github.com/Abdullah-88/Context_PReLU",
+      "snippet": "Contribute to Abdullah-88/Context_PReLU development by creating an account on GitHub."
+    },
+    {
+      "title": "Abdullah-Nazhat (Abdullah Nazhat Abdullah) - Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat",
+      "snippet": "Abdullah Nazhat Abdullah Abdullah-Nazhat Follow mondalsurojit&#x27;s profile picture tahamajs&#x27;s profile picture Mi6paulino&#x27;s profile picture"
+    },
+    {
+      "title": "Abdullah Nazhat Abdullah - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=QQPn4FMAAAAJ&hl=en",
+      "snippet": "‪Ph.D. , Bahçeşehir University‬ - ‪‪Cited by 10‬‬ - ‪Machine Learning‬ - ‪Computer Vision‬ - ‪Deep Learning‬"
+    },
+    {
+      "title": "Abdullah-88 (Abdullah Nazhat Abdullah) · GitHub",
+      "url": "https://github.com/Abdullah-88",
+      "snippet": "Hello Everyone, I am Abdullah Nazhat Abdullah Ph.D. in Computer Engineering focusing on Computer Vision and Deep Learning You can reach with the E-mail: abdullah.nazhat@gmail.com"
+    },
+    {
+      "title": "Context-level Language Modeling by Learning Predictive Context Embeddings",
+      "url": "https://arxiv.org/pdf/2510.20280v2",
+      "snippet": "The core of our model is a Context Predictor, a latent module trained to (i) encode preceding tokens into context embeddings, (ii) autoregressively forecast the embedding of the next context, and (iii) fuse this predictive context embedding back into the token-level decoding process."
+    }
+  ]
+}

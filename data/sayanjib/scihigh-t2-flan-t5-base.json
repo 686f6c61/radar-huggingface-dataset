@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Sayanjib/scihigh-t2-flan-t5-base",
+  "slug": "sayanjib-scihigh-t2-flan-t5-base",
+  "author": "Sayanjib",
+  "url": "https://huggingface.co/Sayanjib/scihigh-t2-flan-t5-base",
+  "created_at": "2026-08-25T02:14:04.000Z",
+  "updated_at": "2026-08-25T02:14:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/flan-t5-base · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-base",
+      "snippet": "Model Card for FLAN-T5 base Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "neuralnetworker/flan-T5-base · Hugging Face",
+      "url": "https://huggingface.co/neuralnetworker/flan-T5-base",
+      "snippet": "neuralnetworker / flan-T5-base like 0 PEFTSafetensorst5 arxiv:1910.09700 Model card FilesFiles and versions Community Train Use in PEFT Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training ..."
+    },
+    {
+      "title": "flan-t5-base — Text-to-Text Model by google | Model Database",
+      "url": "https://modeldatabase.com/google/flan-t5-base.html",
+      "snippet": "google/flan-t5-base is an open source text-to-text model built with transformers, 8,151,917 downloads. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "flan-t5-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flan-t5-base-google",
+      "snippet": "FLAN-T5 base is a text-to-text transformer model by google that improves upon the base T5 architecture through instruction fine-tuning on over 1000..."
+    },
+    {
+      "title": "Fine-tuning FLAN-T5 for Summarization | Niklas Heidloff",
+      "url": "https://heidloff.net/article/fine-tuning-flan-t5/",
+      "snippet": "FLAN-T5 is a Large Language Model which was open sourced by Google at the end of 2022. It has been fine-tuned on multiple tasks, but can be further fine-tuned. This post explains how to do this via Hugging Face libraries."
+    }
+  ]
+}

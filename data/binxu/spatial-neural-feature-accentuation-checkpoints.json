@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "binxu/spatial-neural-feature-accentuation-checkpoints",
+  "slug": "binxu-spatial-neural-feature-accentuation-checkpoints",
+  "author": "binxu",
+  "url": "https://huggingface.co/binxu/spatial-neural-feature-accentuation-checkpoints",
+  "created_at": "2026-08-25T03:02:39.000Z",
+  "updated_at": "2026-08-25T03:03:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "resnet-50",
+    "robust-vision",
+    "neural-encoding",
+    "feature-visualization",
+    "activation-maximization",
+    "feature-extraction",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114954367,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Feature Accentuation: Revealing &#x27;what&#x27; features respond to in natural ...",
+      "url": "https://arxiv.org/html/2402.10039v2",
+      "snippet": "Efforts to decode neural network vision models necessitate a comprehensive grasp of both the spatial and semantic facets governing feature responses within images. Most research has primarily centered around attribution methods, which provide explanations in the form of heatmaps, showing where the model directs its attention for a given feature."
+    },
+    {
+      "title": "[2402.10039] Feature Accentuation: Revealing &#x27;what&#x27; features respond to ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2402.10039",
+      "snippet": "Efforts to decode neural network vision models necessitate a comprehensive grasp of both the spatial and semantic facets governing feature responses within images. Most research has primarily centered around attribution methods, which provide explanations in the form of heatmaps, showing where the model directs its attention for a given feature."
+    },
+    {
+      "title": "[2402.10039] Feature Accentuation: Revealing &#x27;What&#x27; Features Respond to ...",
+      "url": "https://arxiv.org/abs/2402.10039",
+      "snippet": "Efforts to decode neural network vision models necessitate a comprehensive grasp of both the spatial and semantic facets governing feature responses within images. Most research has primarily centered around attribution methods, which provide explanations in the form of heatmaps, showing where the model directs its attention for a given feature. However, grasping &#x27;where&#x27; alone falls short, as ..."
+    },
+    {
+      "title": "Publications | Binxu&#x27;s Research Website",
+      "url": "https://animadversio.github.io/publication/",
+      "snippet": "Personal website of Binxu Wang, a Neuroscience and AI researcher at Kempner, Harvard University."
+    },
+    {
+      "title": "Feature Accentuation: Revealing &#x27;What&#x27; Features Respond to in Natural ...",
+      "url": "https://www.alphaxiv.org/abs/2402.10039",
+      "snippet": "View recent discussion. Abstract: Efforts to decode neural network vision models necessitate a comprehensive grasp of both the spatial and semantic facets governing feature responses within images. Most research has primarily centered around attribution methods, which provide explanations in the form of heatmaps, showing where the model directs its attention for a given feature. However ..."
+    }
+  ]
+}

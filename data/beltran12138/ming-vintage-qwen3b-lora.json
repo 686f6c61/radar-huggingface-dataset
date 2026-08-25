@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Beltran12138/ming-vintage-qwen3b-lora",
+  "slug": "beltran12138-ming-vintage-qwen3b-lora",
+  "author": "Beltran12138",
+  "url": "https://huggingface.co/Beltran12138/ming-vintage-qwen3b-lora",
+  "created_at": "2026-05-26T16:15:11.000Z",
+  "updated_at": "2026-08-25T01:55:50.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "lzh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "classical-chinese",
+    "wenyan",
+    "vintage-llm",
+    "lora",
+    "historical-nlp",
+    "1424",
+    "ming-dynasty",
+    "text-generation",
+    "zh",
+    "lzh",
+    "dataset:kanripo",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2275979708,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beltran12138/ming-vintage-qwen3b-lora · Hugging Face",
+      "url": "https://huggingface.co/Beltran12138/ming-vintage-qwen3b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Beltran12138 (Bernard ZHAO) - Hugging Face",
+      "url": "https://huggingface.co/Beltran12138/models",
+      "snippet": "Organizations Beltran12138&#x27;s models1 Sort: Recently updated Beltran12138/ming-vintage-qwen3b-lora Text Generation •Updated about 11 hours ago"
+    },
+    {
+      "title": "Beltran12138/ming-vintage-qwen3b-lora - friendli.ai",
+      "url": "https://friendli.ai/models/Beltran12138/ming-vintage-qwen3b-lora",
+      "snippet": "Beltran12138 ming-vintage-qwen3b-lora Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "GitHub - Beltran12138/ming-vintage-scratch-30m: 29.74M param from ...",
+      "url": "https://github.com/Beltran12138/ming-vintage-scratch-30m",
+      "snippet": "The control arm: ming-vintage-qwen3b-lora — a LoRA fine-tuned on the same pre-1424 corpus, applied to Qwen2.5-3B-Instruct. Finding: LoRA transfers register but the base model&#x27;s multilingual tokens leak through as a backdoor (Turkish İ, Arabic لأسم, Korean 염, programming terms like CriticalSection all appear in LoRA outputs)."
+    },
+    {
+      "title": "Add Ming Vintage (2026): first non-English from-scratch ... - GitHub",
+      "url": "https://github.com/entanglr/awesome-vintage-llms/pull/1/files",
+      "snippet": "Adds Ming Vintage (2026) to the list — the first non-English from-scratch vintage LLM. 29.74M char-level nanoGPT, trained on 477M tokens of pre-1424 Classical Chinese (kanripo corpus) Treatment arm of a controlled experiment against a LoRA adapter (ming-vintage-qwen3b-lora) on the same corpus Key finding: from-scratch = zero world-model leakage by construction; LoRA exhibits multilingual ..."
+    }
+  ]
+}

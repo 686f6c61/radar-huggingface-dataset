@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Lykegenes/Behemoth-128B-v3-4bit-fp16",
+  "slug": "lykegenes-behemoth-128b-v3-4bit-fp16",
+  "author": "Lykegenes",
+  "url": "https://huggingface.co/Lykegenes/Behemoth-128B-v3-4bit-fp16",
+  "created_at": "2026-08-24T20:02:27.000Z",
+  "updated_at": "2026-08-24T20:03:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19537145856,
+  "parameters_human": "19.54B",
+  "storage_bytes": 70347556270,
+  "storage_human": "70.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrummer/Behemoth-128B-v3 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Behemoth-128B-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lykegenes/Behemoth-X-123B-v2.1-4bit-fp16 · Hugging Face",
+      "url": "https://huggingface.co/Lykegenes/Behemoth-X-123B-v2.1-4bit-fp16",
+      "snippet": "Lykegenes / Behemoth-X-123B-v2.1-4bit-fp16 like 0 Text Generation MLX Safetensors English mistral conversational 4-bit precision Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Behemoth 128B V3 by TheDrummer - LLM Explorer",
+      "url": "https://llm-explorer.com/model/TheDrummer%2FBehemoth-128B-v3,7vo9mBBtprZAav8oP8L0pm",
+      "snippet": "Behemoth 128B V3 is an open-source language model by TheDrummer. Features: 128b LLM, VRAM: 248.5GB, Context: 256K, License: apache-2.0, LLM Explorer Score: 0.32."
+    },
+    {
+      "title": "Which AI Models Fit on 128GB? DGX Spark & Strix Halo Model Fit Guide ...",
+      "url": "https://d-central.tech/dgx-spark-model-fit-guide/",
+      "snippet": "A model must fit entirely in VRAM to run fast; spill to system RAM over PCIe and tokens per second collapses. Unified memory collapses that distinction. On both DGX Spark and Strix Halo, the CPU and GPU address the same 128GB LPDDR5X ??? typically 256-bit, ~200???256 GB/s ??? with zero copy between host and device."
+    },
+    {
+      "title": "Best LLM Models for 128GB VRAM in March 2026 - neural-digest.com",
+      "url": "https://neural-digest.com/what-are-the-best-llm-models-to-run-with-128gb-vram-in-march-2026/",
+      "snippet": "Got 128GB VRAM and wondering which LLMs to run? From Qwen3-72B to DeepSeek-R1 70B, discover the optimal models for high-memory setups in March 2026."
+    }
+  ]
+}

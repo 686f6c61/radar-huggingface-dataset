@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "waqasm86/kaggle-vllm-binaries",
+  "slug": "waqasm86-kaggle-vllm-binaries",
+  "author": "waqasm86",
+  "url": "https://huggingface.co/waqasm86/kaggle-vllm-binaries",
+  "created_at": "2026-08-24T17:53:13.000Z",
+  "updated_at": "2026-08-25T00:12:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vllm",
+    "kaggle",
+    "cuda",
+    "tesla-t4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 384067073,
+  "storage_human": "384 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waqasm86/vllm-kaggle-binaries · Hugging Face",
+      "url": "https://huggingface.co/waqasm86/vllm-kaggle-binaries",
+      "snippet": "vLLM Kaggle validated binaries This repository distributes a vLLM wheel built and functionally validated on a Kaggle Notebook with two NVIDIA Tesla T4 (SM75) GPUs. It is packaging work around upstream vLLM, not a fork or a claim of ownership over vLLM. This is not an official upstream vLLM binary."
+    },
+    {
+      "title": "waqasm86 - GitHub",
+      "url": "https://github.com/waqasm86",
+      "snippet": "My name is Mohammad Waqas, and I am a systems engineer focused on GPU-accelerated LLM inference, observability, and local-first AI infrastructure. I build practical tooling around CUDA, llama.cpp, OpenTelemetry, distributed computing, and low-VRAM deployment."
+    },
+    {
+      "title": "waqasm86 - Repositories - GitHub",
+      "url": "https://github.com/waqasm86?tab=repositories",
+      "snippet": "Content-addressed LLM model distribution with SHA256 verification and SeaweedFS integration. Distributed storage, manifest management, LRU caching, and integrity checking for GGUF models."
+    },
+    {
+      "title": "vLLM 0.6.3 Install | Kaggle",
+      "url": "https://www.kaggle.com/code/richolson/vllm-0-6-3-install",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from No attached data sources"
+    },
+    {
+      "title": "Infer 34B with vLLM - Kaggle",
+      "url": "https://www.kaggle.com/code/cdeotte/infer-34b-with-vllm",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from multiple data sources"
+    }
+  ]
+}

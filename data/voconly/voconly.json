@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "voconly/voconly",
+  "slug": "voconly-voconly",
+  "author": "voconly",
+  "url": "https://huggingface.co/voconly/voconly",
+  "created_at": "2026-08-25T01:08:53.000Z",
+  "updated_at": "2026-08-25T02:05:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "voice-input",
+    "asr",
+    "gguf",
+    "whisper",
+    "sensevoice",
+    "parakeet",
+    "qwen-asr",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voconly (voconly) - Hugging Face",
+      "url": "https://huggingface.co/voconly/models",
+      "snippet": "voconly/nemotron-3.5-asr-streaming-.6b-gguf Automatic Speech Recognition • 0.6B•Updated 16 days ago• 150"
+    },
+    {
+      "title": "voconly (voconly) - Hugging Face",
+      "url": "https://huggingface.co/voconly",
+      "snippet": "voconly/nemotron-3.5-asr-streaming-.6b-gguf Automatic Speech Recognition • 0.6B•Updated 19 days ago• 154"
+    },
+    {
+      "title": "Voconly download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/voconly/",
+      "snippet": "Voconly is a free, open-source offline speech to text tool for Windows that runs entirely on your device. Unlike cloud-based voice input software, Voconly keeps all audio data local—no uploads, no internet required, complete privacy. Powered by local AI, it combines real-time speech recognition with on-device LLM post-processing. Supports multiple ASR models (Qwen-ASR, SenseVoice, Whisper ..."
+    },
+    {
+      "title": "GitHub - xinkyle/Voconly: Voconly Desktop App · GitHub",
+      "url": "https://github.com/xinkyle/Voconly",
+      "snippet": "Voconly 是一款本地优先的 AI 语音输入助手（语音转文字工具），说出来，AI 帮你整理成文。语音数据不上传，断网也能用。支持 Whisper、SenseVoice、Parakeet、Qwen-Asr 等语音识别模型，可配合 LLM 进行润色、翻译、会议纪要等后处理 ..."
+    },
+    {
+      "title": "Voconly - 开源AI语音输入工具 | 离线识别，隐私安全，永久免费",
+      "url": "https://voconly.vercel.app/",
+      "snippet": "Voconly 是一款开源的AI语音输入工具，支持离线Whisper语音识别，本地处理无需联网，数据隐私安全。全球热键唤起，LLM智能处理。永久免费。"
+    }
+  ]
+}

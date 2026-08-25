@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "wvvss/GPUmatLLM",
+  "slug": "wvvss-gpumatllm",
+  "author": "wvvss",
+  "url": "https://huggingface.co/wvvss/GPUmatLLM",
+  "created_at": "2026-02-06T06:01:20.000Z",
+  "updated_at": "2026-08-25T03:07:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "materials-science",
+    "gpu",
+    "lora",
+    "domain-adaptation",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693732,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benchmarking and Fine-Tuning Large Language Models for GPU Materials ...",
+      "url": "https://chemrxiv.org/doi/10.26434/chemrxiv.15005554",
+      "snippet": "As part of this benchmark development, we also develop GPUmatLLM, a specialized domain language model fine-tuned on high-quality data from academic papers, patents, and other relevant sources for the GPU materials science."
+    },
+    {
+      "title": "Benchmarking and Fine-Tuning Large Language",
+      "url": "https://chemrxiv.org/doi/pdf/10.26434/chemrxiv.15005554/v1?download=true",
+      "snippet": "The Qwen2.5- 7B base model is fine-tuned to generate GPUmatLLM, which is evaluated on four standardized benchmarks against six representative models. The benchmarking spans general, chemistry- specialized, and state-of-the-art LLMs, using EvalScope as a unified evaluation framework. This"
+    },
+    {
+      "title": "Best AI Models 2026 | Complete LLM Rankings - WhatLLM.org",
+      "url": "https://whatllm.org/blog/best-models",
+      "snippet": "Best AI Models Complete Rankings Hub Find the best AI model for your use case. Start with the live evergreen rankings for coding, open source, agentic workflows, and long context, then use the monthly archive pages when you want dated snapshots and historical ranking context."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

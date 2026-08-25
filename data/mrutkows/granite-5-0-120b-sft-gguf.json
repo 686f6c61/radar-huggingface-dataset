@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mrutkows/granite-5.0-120b-sft-GGUF",
+  "slug": "mrutkows-granite-5-0-120b-sft-gguf",
+  "author": "mrutkows",
+  "url": "https://huggingface.co/mrutkows/granite-5.0-120b-sft-GGUF",
+  "created_at": "2026-08-24T21:02:21.000Z",
+  "updated_at": "2026-08-24T22:01:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "language",
+    "granite-5.0",
+    "base_model:ibm-research/granite-5.0-120b-sft",
+    "base_model:quantized:ibm-research/granite-5.0-120b-sft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44017280800,
+  "storage_human": "44.0 GB",
+  "base_model": "ibm-research/granite-5.0-120b-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrutkows/gpt-oss-120b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mrutkows/gpt-oss-120b-GGUF",
+      "snippet": "mrutkows / gpt-oss-120b-GGUF like 0 GGUF llama.cpp language granite- conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "IBM Granite - GitHub",
+      "url": "https://github.com/ibm-granite",
+      "snippet": "IBM Granite - Open Source AI IBM is building enterprise-focused foundation models to drive the future of business. The Granite family of foundation models spans a variety of modalities, including language, code, and other modalities, such as time series."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

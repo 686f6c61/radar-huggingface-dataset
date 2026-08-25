@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spyrostheboss/Leah_Halton_Krea_2_LoRA",
+  "slug": "spyrostheboss-leah_halton_krea_2_lora",
+  "author": "spyrostheboss",
+  "url": "https://huggingface.co/spyrostheboss/Leah_Halton_Krea_2_LoRA",
+  "created_at": "2026-08-24T20:02:26.000Z",
+  "updated_at": "2026-08-24T20:02:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "krea",
+    "lora",
+    "text-to-image",
+    "character-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470508836,
+  "storage_human": "471 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "Leah Halton (Flux) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/7371584d0bc97461a77e36a37c1d1936",
+      "snippet": "Explore Leah Halton (Flux) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea",
+      "snippet": "AI Creative Suite. A collection of LoRAs for Krea 2 Turbo and Krea 2 Raw"
+    },
+    {
+      "title": "RebelReal (LoRA Collection) - (Krea-2) | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2181922/rebelreal-lora-collection",
+      "snippet": "Aesthetic Booster And Image Enhancer. Also provides a slight dynamic lighting change to each image as well. Boogu-Image LoRA works with both Base a..."
+    }
+  ]
+}

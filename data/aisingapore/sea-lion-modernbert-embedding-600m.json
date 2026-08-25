@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+  "slug": "aisingapore-sea-lion-modernbert-embedding-600m",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+  "created_at": "2026-03-05T04:13:47.000Z",
+  "updated_at": "2026-08-25T00:46:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "id",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "en",
+    "id",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh",
+    "arxiv:2606.03027",
+    "arxiv:2508.12243",
+    "base_model:aisingapore/SEA-LION-ModernBERT-600M-checkpoints",
+    "base_model:finetune:aisingapore/SEA-LION-ModernBERT-600M-checkpoints",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 936,
+  "trending_score": 0,
+  "parameters": 611640320,
+  "parameters_human": "611.6M",
+  "storage_bytes": 2480670698,
+  "storage_human": "2.5 GB",
+  "base_model": "aisingapore/SEA-LION-ModernBERT-600M-checkpoints",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/SEA-LION-ModernBERT-Embedding-600M · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+      "snippet": "Model Card for SEA-LION-ModernBERT-Embedding-600M Last update: 2026-03-16 SEA-LION is a collection of Large Language Models (LLMs) which have been pretrained and fine-tuned for the Southeast Asia (SEA) region. Leveraging the advanced encoder-only ModernBERT architecture combined with the Gemma 3 SentencePiece tokenizer, this specific model achieves highly efficient and culturally nuanced text ..."
+    },
+    {
+      "title": "SEA-LION-ModernBERT-Embedding-600M-OV - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M-OV",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SEA-LION-ModernBERT and Embedding",
+      "url": "https://docs.sea-lion.ai/models/sea-embedding/sea-modernbert",
+      "snippet": "Last update: 2026-03-16 SEA-LION is a collection of Large Language Models (LLMs) and encoders which have been pretrained and fine-tuned for the Southeast Asia (SEA) region. Introduction SEA-LION stands for Southeast Asian Languages In One Network. This encoder-only model leverages the advanced ModernBERT architecture combined with the Gemma 3 SentencePiece tokenizer. The adoption of the Gemma ..."
+    },
+    {
+      "title": "SEA-LION Embedding | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-embedding",
+      "snippet": "SEA-LION Embedding, released in March 2026, is a suite of high-performance encoder models specifically architected for Southeast Asian languages. The collection features two primary product lines:"
+    },
+    {
+      "title": "sealion/models/sea-embedding/sea-modernbert.md at main - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-embedding/sea-modernbert.md",
+      "snippet": "South-East Asia Large Language Models. Contribute to aisingapore/sealion development by creating an account on GitHub."
+    }
+  ]
+}

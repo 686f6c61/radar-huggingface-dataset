@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "joevandal17/tds-carbon-card",
+  "slug": "joevandal17-tds-carbon-card",
+  "author": "joevandal17",
+  "url": "https://huggingface.co/joevandal17/tds-carbon-card",
+  "created_at": "2026-08-25T01:25:26.000Z",
+  "updated_at": "2026-08-25T01:26:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shivainlabs/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shivainlabs/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f3001819/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f3001819/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "JoeVandal17 - Kaggle",
+      "url": "https://www.kaggle.com/joevandal17",
+      "snippet": "Kaggle profile for JoeVandal17"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Model Card Explorer",
+      "url": "https://model-card.vercel.app/about",
+      "snippet": "Our platform extracts structured evaluation data from each card and enables cross-lab and cross-generation comparisons. By tracking what AI companies disclose about their models&#x27; capabilities, limitations, and safety evaluations, we make it easier for researchers, policymakers, and the public to understand the state of AI governance."
+    }
+  ]
+}

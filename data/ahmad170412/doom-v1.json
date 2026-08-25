@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Ahmad170412/Doom-V1",
+  "slug": "ahmad170412-doom-v1",
+  "author": "Ahmad170412",
+  "url": "https://huggingface.co/Ahmad170412/Doom-V1",
+  "created_at": "2026-08-25T01:44:02.000Z",
+  "updated_at": "2026-08-25T01:47:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "terminal",
+    "code-generation",
+    "macos",
+    "shell",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit",
+    "base_model:finetune:mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241327616,
+  "parameters_human": "241.3M",
+  "storage_bytes": 879191789,
+  "storage_human": "879 MB",
+  "base_model": "mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Felliks/DoomVLM: AI plays Doom — pit Vision Language Models ...",
+      "url": "https://github.com/Felliks/DoomVLM",
+      "snippet": "A Jupyter notebook that lets AI vision models play classic Doom. The AI sees the game screen, decides where to shoot or move, and you watch it happen in real time. Pit up to 4 different models against each other in deathmatch — or test them solo on 11 built-in scenarios. How it works: the notebook takes a screenshot of the game, draws a numbered grid on it, sends it to a vision model, and ..."
+    },
+    {
+      "title": "Ahmad170412 - GitHub",
+      "url": "https://github.com/Ahmad170412",
+      "snippet": "GitHub is where Ahmad170412 builds software."
+    },
+    {
+      "title": "DOOM Battle Knight : The Dark Age V1.0 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2004899498132979591",
+      "snippet": "Generate stunning anime art with the &#x27;DOOM Battle Knight : The Dark Age V1.0&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Ahmad170412/saga-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/Ahmad170412/saga-1.0/tree/main",
+      "snippet": "Ahmad170412 / saga-1.0 like 0 Text Generation MLX English lora adapter fun conversational creative arxiv:2106.09685 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

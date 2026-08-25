@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/S1-mini-CoreAI",
+  "slug": "mlboydaisuke-s1-mini-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/S1-mini-CoreAI",
+  "created_at": "2026-08-25T00:06:19.000Z",
+  "updated_at": "2026-08-25T00:07:54.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreai",
+    "qwen3",
+    "core-ai",
+    "coreaikit",
+    "asr",
+    "speech-to-text",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "dictation",
+    "post-processing",
+    "on-device",
+    "apple",
+    "text-generation",
+    "en",
+    "base_model:superwhisper/s1-mini",
+    "base_model:quantized:superwhisper/s1-mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 791250535,
+  "storage_human": "791 MB",
+  "base_model": "superwhisper/s1-mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Kokoro-82M-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Kokoro-82M-CoreAI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlboydaisuke/MiniCPM5-1B-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/MiniCPM5-1B-CoreAI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - apple/coreai-models: Model export recipes, Python primitives ...",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format. Reusable primitives — Python building blocks for authoring custom Core AI models in PyTorch. Runtime utilities — Swift package built on top of Core AI framework to run models on macOS and iOS."
+    },
+    {
+      "title": "GitHub - john-rocky/coreai-model-zoo: Community model zoo for Apple ...",
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "snippet": "Community model zoo for Apple Core AI (iOS/macOS 27): 62 models — LLM, VLM, OCR, ASR, TTS, image/video/music gen, forecasting — each gated against its source model and shipped with the recipe that produced it. Downloadable from Hugging Face, runnable in one line of Swift via CoreAIKit. Plus benchmarks, Metal kernels, knowledge base. - john-rocky/coreai-model-zoo"
+    },
+    {
+      "title": "coreai-catalog · PyPI",
+      "url": "https://pypi.org/project/coreai-catalog/",
+      "snippet": "Main upstreams: john-rocky/coreai-model-zoo apple/coreai-models Primary Hugging Face artifact owner currently mapped: mlboydaisuke Repository structure coreai-catalog/ ├── README.md ├── AGENTS.md ├── CONTRIBUTING.md ├── CREDITS.md ├── pyproject.toml ├── catalog.yaml ├── artifacts.yaml ├── sources.yaml ├── upstreams.yaml ├── benchmarks ..."
+    }
+  ]
+}

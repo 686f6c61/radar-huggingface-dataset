@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed4",
+  "slug": "localized-ft-olmo-3-7b-old-bird-names-v2-kld-seed4",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed4",
+  "created_at": "2026-08-25T00:31:34.000Z",
+  "updated_at": "2026-08-25T00:33:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 528384,
+  "parameters_human": "528384",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4",
+      "snippet": "OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "olmo-3 - ollama.com",
+      "url": "https://ollama.com/library/olmo-3:latest",
+      "snippet": "Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets."
+    },
+    {
+      "title": "olmo2 - ollama.com",
+      "url": "https://ollama.com/library/olmo2",
+      "snippet": "OLMo 2 is a new family of 7B and 13B models trained on up to 5T tokens. These models are on par with or better than equivalently sized fully open models, and competitive with open-weight models such as Llama 3.1 on English academic benchmarks."
+    },
+    {
+      "title": "Olmo 3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/olmo3",
+      "snippet": "The Base models were trained using a staged training approach. Olmo is a series of O pen l anguage mo dels designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints, and associated training details are released as open source artifacts."
+    }
+  ]
+}

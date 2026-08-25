@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "geodesic-research/control-pretrain-30b-baseline-ckpts",
+  "slug": "geodesic-research-control-pretrain-30b-baseline-ckpts",
+  "author": "geodesic-research",
+  "url": "https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-ckpts",
+  "created_at": "2026-08-23T11:03:29.000Z",
+  "updated_at": "2026-08-24T19:59:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 317010217648,
+  "storage_human": "317.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "camgeodesic/control-pretrain-30b-baseline-ckpts · Hugging Face",
+      "url": "https://huggingface.co/camgeodesic/control-pretrain-30b-baseline-ckpts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Geodesic Research | The shortest path to impact",
+      "url": "http://geodesicresearch.ai/",
+      "snippet": "Geodesic Research is a UK-based technical AI safety organisation focused on compute-intensive alignment research. Our seminal work on alignment pretraining showed that you can bake alignment priors into base models, and the broader field is now converging on the approach. Long-horizon capabilities reinforcement learning is emerging as a critical and underexplored threat to alignment ..."
+    },
+    {
+      "title": "geodesic-research/control-pretraining-datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets/geodesic-research/control-pretraining-datasets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Geodesic Research - GitHub",
+      "url": "https://github.com/GeodesicResearch",
+      "snippet": "geodesic-megatron Public Training library for Megatron-based models with bidirectional Hugging Face conversion capability"
+    },
+    {
+      "title": "GitHub - GeodesicResearch/geodesic-gpt-neox: Fork of GPT-NeoX",
+      "url": "https://github.com/GeodesicResearch/geodesic-gpt-neox",
+      "snippet": "GPT-NeoX Geodesic Fork for Isambard A fork of EleutherAI&#x27;s GPT-NeoX optimized for the Isambard supercomputer with NVIDIA GH200 (Grace Hopper) GPUs. This repository supports training large language models from 100M to 100B+ parameters using DeepSpeed, Megatron-LM tensor/pipeline parallelism, and ZeRO optimization."
+    }
+  ]
+}

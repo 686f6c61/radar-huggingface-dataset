@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SateCincau/nmt-gaul-formal",
+  "slug": "satecincau-nmt-gaul-formal",
+  "author": "SateCincau",
+  "url": "https://huggingface.co/SateCincau/nmt-gaul-formal",
+  "created_at": "2026-08-25T01:52:08.000Z",
+  "updated_at": "2026-08-25T01:56:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "indonesian",
+    "informal-to-formal",
+    "e-commerce",
+    "nmt",
+    "transformer",
+    "id",
+    "dataset:PRDECT-ID",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI + Formal Methods",
+      "url": "https://www.galois.com/ai-fm",
+      "snippet": "AI can automate the most difficult and time-consuming parts of formal verification - including coordinating tools, generating specifications, proving theorems, and verifying AI-generated code. This makes formal methods dramatically faster, cheaper, easier for non-experts to use - practical and scalable across larger projects and more systems."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Neural machine translation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neural_machine_translation",
+      "snippet": "Neural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Neural Machine Translation (NMT) | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/translate/docs/advanced/nmt-model",
+      "snippet": "Neural Machine Translation (NMT) model Google&#x27;s standard Neural Machine Translation (NMT) has evolved from the neural network translation system that Google introduced in November 2016, with many improvements. It can translate to and from many languages in real time. Its model ID is general/nmt."
+    }
+  ]
+}

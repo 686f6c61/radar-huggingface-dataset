@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FIIS/brandilove",
+  "slug": "fiis-brandilove",
+  "author": "FIIS",
+  "url": "https://huggingface.co/FIIS/brandilove",
+  "created_at": "2026-08-25T00:33:01.000Z",
+  "updated_at": "2026-08-25T01:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970648882,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brandi Love - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1752286899267830300",
+      "snippet": "Generate stunning photorealistic, woman, realistic, celebrity anime art with the &#x27;Brandi Love&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "brandi love AI Models | Civitai",
+      "url": "https://civitai.com/tag/brandi%20love",
+      "snippet": "Browse 4 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with brandi love."
+    },
+    {
+      "title": "Brandi Love Flux - V1 - Free AI LORA Download | Tensor.Art",
+      "url": "https://www.tensor.art/models/806278005837090466",
+      "snippet": "Download Brandi Love Flux - free LORA FLUX.1 Schnell AI model on TENSOR. By aigeeek"
+    },
+    {
+      "title": "brandi AI Models | Civitai",
+      "url": "https://civitai.com/tag/brandi",
+      "snippet": "Browse 2 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with brandi."
+    },
+    {
+      "title": "brandi love - Free Al Art Generator - seaart.ai",
+      "url": "https://www.seaart.ai/search/brandi-love",
+      "snippet": "Explore over thousands of Al-generated artworks about brandi love."
+    }
+  ]
+}

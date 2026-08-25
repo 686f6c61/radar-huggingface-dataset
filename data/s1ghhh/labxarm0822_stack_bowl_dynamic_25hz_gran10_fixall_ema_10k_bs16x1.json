@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "s1ghhh/labxarm0822_stack_bowl_dynamic_25hz_gran10_fixall_ema_10k_bs16x1",
+  "slug": "s1ghhh-labxarm0822_stack_bowl_dynamic_25hz_gran10_fixall_ema_10k_bs16x1",
+  "author": "s1ghhh",
+  "url": "https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_25hz_gran10_fixall_ema_10k_bs16x1",
+  "created_at": "2026-08-23T18:53:39.000Z",
+  "updated_at": "2026-08-24T20:50:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35871550673,
+  "storage_human": "35.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Hamilton Beach Stack & Snap 10-Cup Food Processor, 500 W, 2-Speed with ...",
+      "url": "https://www.walmart.com/ip/Hamilton-Beach-Stack-Snap-Food-Processor-with-Bowl-Scraper-10-Cup-Capacity-Black-70822FG/1579690524",
+      "snippet": "Hamilton Beach 10 Cup Food Processor with Stack & Snap design, extra-large chute, bowl scraper, 3 attachments, and 500 watt motor for easy prep and versatile processing."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

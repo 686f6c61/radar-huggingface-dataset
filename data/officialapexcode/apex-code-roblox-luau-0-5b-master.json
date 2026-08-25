@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "officialApexCode/apex-code-roblox-luau-0.5b-master",
+  "slug": "officialapexcode-apex-code-roblox-luau-0-5b-master",
+  "author": "officialApexCode",
+  "url": "https://huggingface.co/officialApexCode/apex-code-roblox-luau-0.5b-master",
+  "created_at": "2026-08-24T22:20:26.000Z",
+  "updated_at": "2026-08-24T22:21:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "base_model": "unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apex Legends Codes - Pro Game Guides",
+      "url": "https://progameguides.com/apex-legends/apex-legends-codes/",
+      "snippet": "Apex Legends Codes FAQ Here&#x27;s everything you need to know about Apex Legends codes. How to redeem codes in Apex Legends You can use codes in Apex Legends to get resources and rewards quickly. Codes in Apex Legend are typically single-use and only by one player. Once a code has been redeemed, no other player can use that code. So be sure to use codes quickly when you find them. Here is how to ..."
+    },
+    {
+      "title": "Luau · GitHub",
+      "url": "https://github.com/luau-lang",
+      "snippet": "a small, fast, and embeddable programming language based on Lua with a gradual type system. Developed and maintained by @Roblox. - Luau"
+    },
+    {
+      "title": "Apex Legends Hacks & Cheats - UnKnoWnCheaTs",
+      "url": "https://www.unknowncheats.me/forum/apex-legends/",
+      "snippet": "Game hacking for Apex Legends including aimbots, ESP, wallhacks, triggerbots, recoil control, internal cheats, memory editing, and EAC bypass techniques."
+    },
+    {
+      "title": "Apex Legends Codes (August 2026): Earn Free items and Apex coins",
+      "url": "https://gamerjournalist.com/apex-legends-codes-earn-free-items-and-apex-coins/",
+      "snippet": "Grab your jump pads and VTOL Jets, we are going to take a look at all the available Apex Legends Codes."
+    },
+    {
+      "title": "RoCode.ai — AI Agent for Roblox Studio",
+      "url": "https://www.rocode.app/",
+      "snippet": "The AI agent for making Roblox games. RoCode writes Luau, edits scripts, and builds inside Roblox Studio not a chatbot you copy-paste from. Free to start."
+    }
+  ]
+}

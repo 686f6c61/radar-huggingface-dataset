@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Samm077/Shakespeares_of_the_Galaxy_Task3_Run2_NLLB",
+  "slug": "samm077-shakespeares_of_the_galaxy_task3_run2_nllb",
+  "author": "Samm077",
+  "url": "https://huggingface.co/Samm077/Shakespeares_of_the_Galaxy_Task3_Run2_NLLB",
+  "created_at": "2026-08-24T19:59:03.000Z",
+  "updated_at": "2026-08-24T19:59:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:facebook/nllb-200-distilled-600M",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70030218,
+  "storage_human": "70 MB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Samm077/Shakespeares_of_the_Galaxy_Task2 · Hugging Face",
+      "url": "https://huggingface.co/Samm077/Shakespeares_of_the_Galaxy_Task2",
+      "snippet": "Samm077 / Shakespeares_of_the_Galaxy_Task2 like 0 Safetensors t5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.2B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com/models/",
+      "snippet": "Train a computer to recognize your own images, sounds, & poses. A fast, easy way to create machine learning models for your sites, apps, and more - no expertise or coding required."
+    }
+  ]
+}

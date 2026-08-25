@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/Interactor",
+  "slug": "abdullah-nazhat-interactor",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/Interactor",
+  "created_at": "2024-07-03T20:30:50.000Z",
+  "updated_at": "2026-08-24T22:42:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abdullah-Nazhat (Abdullah Nazhat Abdullah) - Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat",
+      "snippet": "Abdullah Nazhat Abdullah Abdullah-Nazhat Follow mondalsurojit&#x27;s profile picture tahamajs&#x27;s profile picture Mi6paulino&#x27;s profile picture"
+    },
+    {
+      "title": "Abdullah-Nazhat/Adjacency_Mixer · Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat/Adjacency_Mixer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Abdullah Nazhat Abdullah - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=QQPn4FMAAAAJ&hl=en",
+      "snippet": "‪Ph.D. , Bahçeşehir University‬ - ‪‪Cited by 10‬‬ - ‪Machine Learning‬ - ‪Computer Vision‬ - ‪Deep Learning‬"
+    },
+    {
+      "title": "Abdullah Nazhat Abdullah X arXiv:2403.02411v3 [cs.CV] 20 May 2024",
+      "url": "https://arxiv.org/pdf/2403.02411v3",
+      "snippet": "Abdullah Nazhat Abdullah X arXiv:2403.02411v3 [cs.CV] 20 May 2024 NiNformer: A Network in Network Transformer with Token Mixing Generated Gating Function"
+    },
+    {
+      "title": "‏Abdullah Nazhat‏ - ‏Ph.D. | Computer Engineering | Artificial ...",
+      "url": "https://iq.linkedin.com/in/abdullah-nazhat-a5989378",
+      "snippet": "‏Ph.D. | Computer Engineering | Artificial Intelligence | Machine Learning | Deep Learning‏ · ‏AI, Machine Learning, Computer Vision and Deep Learning Developer and Researcher. Studied Electrical, Electronics and Communication Engineering at University of Tikrit, Bachelor's degree, graduate of 2012. Studied Computer Engineering at Bahcesehir University, Master's degree, graduate ..."
+    }
+  ]
+}

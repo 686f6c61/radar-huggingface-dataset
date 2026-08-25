@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "Lucie666/mmarco-mminilmv2-l12-h384-v1-burnpack",
+  "slug": "lucie666-mmarco-mminilmv2-l12-h384-v1-burnpack",
+  "author": "Lucie666",
+  "url": "https://huggingface.co/Lucie666/mmarco-mminilmv2-l12-h384-v1-burnpack",
+  "created_at": "2026-08-24T20:59:14.000Z",
+  "updated_at": "2026-08-24T21:16:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "burn",
+  "languages": [
+    "multilingual",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "zh",
+    "ja",
+    "id",
+    "vi",
+    "hi",
+    "ar"
+  ],
+  "tags": [
+    "burn",
+    "burnpack",
+    "rust",
+    "reranker",
+    "cross-encoder",
+    "multilingual",
+    "sentence-transformers",
+    "onnx",
+    "format-conversion",
+    "text-classification",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "ru",
+    "zh",
+    "ja",
+    "id",
+    "vi",
+    "hi",
+    "ar",
+    "arxiv:1908.10084",
+    "arxiv:2108.13897",
+    "arxiv:2012.15828",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:finetune:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470617604,
+  "storage_human": "471 MB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nreimers/mmarco-mMiniLMv2-L12-H384-v1 · Hugging Face",
+      "url": "https://huggingface.co/nreimers/mmarco-mMiniLMv2-L12-H384-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mmarco-mMiniLMv2-L12-H384-v1 · Model · Inferix",
+      "url": "https://inferix.co/models/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "snippet": "This model was trained on the MMARCO dataset. It is a machine translated version of MS MARCO using Google Translate. It was translated to 14 languages. In our experiments, we observed that it…"
+    },
+    {
+      "title": "Mmarco Mminilmv2 L12 H384 V1 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/mmarco-mminilmv2-l12-h384-v1.html",
+      "snippet": "Download Mmarco Mminilmv2 L12 H384 V1 GGUF model. 126 MB, 46 downloads, 0 likes."
+    },
+    {
+      "title": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1 | QuantaMrkt",
+      "url": "https://quantamrkt.com/models/cross-encoder--mmarco-mminilmv2-l12-h384-v1",
+      "snippet": "This model has a real FIPS 204 ML-DSA-87 (Dilithium5) signature from the platform signing authority. Signature chain includes 2 verification (s). Last verified 2026-07-26. ML-DSA-87 Signer: did:web:quantamrkt.com:chain:authority View public key"
+    }
+  ]
+}

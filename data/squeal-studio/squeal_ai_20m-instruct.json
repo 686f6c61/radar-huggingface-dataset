@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Squeal-Studio/squeal_ai_20m-instruct",
+  "slug": "squeal-studio-squeal_ai_20m-instruct",
+  "author": "Squeal-Studio",
+  "url": "https://huggingface.co/Squeal-Studio/squeal_ai_20m-instruct",
+  "created_at": "2026-08-24T22:26:17.000Z",
+  "updated_at": "2026-08-24T22:26:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "small-language-model",
+    "text-generation",
+    "instruct",
+    "sft",
+    "russian",
+    "ru",
+    "dataset:IlyaGusev/ru_turbo_alpaca",
+    "base_model:Squeal-Studio/squeal_ai_20m-base",
+    "base_model:finetune:Squeal-Studio/squeal_ai_20m-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20084064,
+  "parameters_human": "20.1M",
+  "storage_bytes": 80346824,
+  "storage_human": "80 MB",
+  "base_model": "Squeal-Studio/squeal_ai_20m-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Squeal-Studio/squeal_ai_8m-instruct · Hugging Face",
+      "url": "https://huggingface.co/Squeal-Studio/squeal_ai_8m-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Squeal-Studio (Squeal Studio) - Hugging Face",
+      "url": "https://huggingface.co/Squeal-Studio",
+      "snippet": "Squeal-Studio/squeal_ai_8m-instruct Text Generation • 7.86M•Updated about 7 hours ago• 103"
+    },
+    {
+      "title": "GitHub - SquealStudio/SquealStudio: readme · GitHub",
+      "url": "https://github.com/SquealStudio/SquealStudio",
+      "snippet": "Hi, We Are Squeal Studio Developing Stardanie (Terraria content mod) and messing around with C# and Linux."
+    },
+    {
+      "title": "Maintainer «Squeal-Studio»",
+      "url": "https://llm-explorer.com/list/?mtr=Squeal-Studio",
+      "snippet": "A Curated List of the Large and Small Language Models (Open-Source LLMs and SLMs). Maintainer «Squeal-Studio» with Dynamic Sorting and Filtering."
+    },
+    {
+      "title": "Noiz Labs — play with the future of sound, by NoizAI",
+      "url": "https://noiz.ai/labs",
+      "snippet": "Noiz Labs is NoizAI&#x27;s audio playground. Small, fun audio AI experiments — free to try, straight in the browser. For production-grade audio, head to noiz.ai."
+    }
+  ]
+}

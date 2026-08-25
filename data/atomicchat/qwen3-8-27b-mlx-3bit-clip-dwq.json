@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ",
+  "slug": "atomicchat-qwen3-8-27b-mlx-3bit-clip-dwq",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP-DWQ",
+  "created_at": "2026-08-24T22:18:08.000Z",
+  "updated_at": "2026-08-24T22:20:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "en",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3364314624,
+  "parameters_human": "3.36B",
+  "storage_bytes": 11791363782,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen3.8-27B Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is a dense 27.8B-parameter multimodal model from Alibaba&#x27;s Qwen team, released on August 14, 2026. It reads text, images and video, carries a 262,144-token context window, and ships under Apache 2.0, so it can run locally in Atomic Chat without an API key."
+    },
+    {
+      "title": "AtomicChat/Qwen3.8-27B-MLX-3bit-g32 · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-g32",
+      "snippet": "AtomicChat / Qwen3.8-27B-MLX-3bit-g32 like 0 Follow Atomic Chat 376 Image-Text-to-Text MLX Safetensors English qwen3_5 conversational 3-bit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

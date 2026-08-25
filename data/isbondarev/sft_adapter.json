@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "isbondarev/sft_adapter",
+  "slug": "isbondarev-sft_adapter",
+  "author": "isbondarev",
+  "url": "https://huggingface.co/isbondarev/sft_adapter",
+  "created_at": "2026-08-24T21:34:10.000Z",
+  "updated_at": "2026-08-24T21:39:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:ai-sage/GigaChat3.1-10B-A1.8B-bf16",
+    "base_model:finetune:ai-sage/GigaChat3.1-10B-A1.8B-bf16",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 939689672,
+  "storage_human": "940 MB",
+  "base_model": "ai-sage/GigaChat3.1-10B-A1.8B-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isbondarev (Ilia Bondarev) - Hugging Face",
+      "url": "https://huggingface.co/isbondarev/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "2026-07-04-ai-training-consolidation.md - GitHub",
+      "url": "https://github.com/cheshiet/solana-ai-models/blob/main/docs/2026-07-04-ai-training-consolidation.md",
+      "snippet": "The July 4 AI Training Consolidation On 2026-07-04, the local Solana Clawd training tree was consolidated so recent model work has one operating base: ai-training. The goal was simple: keep the new training outputs, legacy checkpoints, GGUF builds, datasets, and notes in a single place without breaking old scripts that still reference historical paths."
+    },
+    {
+      "title": "adapter_model.safetensors - GitHub",
+      "url": "https://github.com/zijiandongkurt/AI-Driven-Modular-Power-Electronics-Design-for-Next-Gen-Lithography/blob/main/checkpoints/sft/sft_002/final/adapter_model.safetensors",
+      "snippet": "Contribute to zijiandongkurt/AI-Driven-Modular-Power-Electronics-Design-for-Next-Gen-Lithography development by creating an account on GitHub."
+    },
+    {
+      "title": "[2608.21278] CLEAR: Continuous Latent Adapter Routing for Utility ...",
+      "url": "https://arxiv.org/abs/2608.21278",
+      "snippet": "On Llama-3-8B-Instruct, CLEAR reduces HarmBench ASR from 32.3&#92;% to 0.5&#92;%, while retaining most of the base model&#x27;s utility and achieving up to 7.1 percentage points higher GSM8K accuracy than globally applied SFT or LoRA. These results suggest that CLEAR is a promising mechanism for improving the safety--utility trade-off in LLM alignment."
+    },
+    {
+      "title": "Quantized Models for isbondarev/gpt-oss-20b-adv - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:isbondarev/gpt-oss-20b-adv",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

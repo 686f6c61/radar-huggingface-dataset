@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "thepatch/t5gemma-b-b-ul2-GGUF",
+  "slug": "thepatch-t5gemma-b-b-ul2-gguf",
+  "author": "thepatch",
+  "url": "https://huggingface.co/thepatch/t5gemma-b-b-ul2-GGUF",
+  "created_at": "2026-06-29T03:19:45.000Z",
+  "updated_at": "2026-08-25T00:05:24.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-encoder",
+    "sa3.cpp",
+    "text-to-audio",
+    "en",
+    "base_model:google/t5gemma-b-b-ul2",
+    "base_model:quantized:google/t5gemma-b-b-ul2",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 203,
+  "trending_score": 0,
+  "parameters": 281580288,
+  "parameters_human": "281.6M",
+  "storage_bytes": 2002708992,
+  "storage_human": "2.0 GB",
+  "base_model": "google/t5gemma-b-b-ul2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T5Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/t5gemma/",
+      "snippet": "T5Gemma converts decoder-only Gemma 2 models to a T5 (Text-to-Text Transfer Transformer) encoder-decoder architecture. Models are available in either instruction-tuned versions or pre-trained with PrefixLM for strong generative performance or UL2 for high-quality contextual representations."
+    },
+    {
+      "title": "T5Gemma · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/t5gemma",
+      "snippet": "The instruction-turned variants was post-trained with supervised fine-tuning and reinforcement learning. Click on the T5Gemma models in the right sidebar for more examples of how to apply T5Gemma to different language tasks. The example below demonstrates how to chat with the model with Pipeline or the AutoModel class, and from the command line."
+    },
+    {
+      "title": "google/t5gemma-2b-2b-ul2 · Hugging Face",
+      "url": "https://huggingface.co/google/t5gemma-2b-2b-ul2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "T5Gemma: A new collection of encoder-decoder Gemma models",
+      "url": "https://developers.googleblog.com/en/t5gemma/",
+      "snippet": "Explore T5Gemma - a new collection of encoder-decoder LLMs offering superior performance and efficiency - especially for tasks requiring deep input understanding, like summarization and translation, built on Gemma 2 models."
+    },
+    {
+      "title": "gemma/gemma/research/t5gemma/README.md at main · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/gemma/blob/main/gemma/research/t5gemma/README.md",
+      "snippet": "T5Gemma (aka encoder-decoder Gemma) was proposed in a research paper by Google. It is a family of encoder-decoder large langauge models, developed by adapting pretrained decoder-only models into encoder-decoder."
+    }
+  ]
+}

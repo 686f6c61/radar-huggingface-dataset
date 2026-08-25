@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mustafacoshkun/mebiogmgpu-v2",
+  "slug": "mustafacoshkun-mebiogmgpu-v2",
+  "author": "mustafacoshkun",
+  "url": "https://huggingface.co/mustafacoshkun/mebiogmgpu-v2",
+  "created_at": "2026-08-25T00:31:25.000Z",
+  "updated_at": "2026-08-25T00:46:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Mustafa Coşkun mustafacoshkun - GitHub",
+      "url": "https://github.com/mustafacoshkun/",
+      "snippet": "mustafacoshkun has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Home Page · ModelScope",
+      "url": "https://modelscope.ai/home",
+      "snippet": "ModelScope Join ModelScope Studios and co-create the AI future with developers."
+    }
+  ]
+}

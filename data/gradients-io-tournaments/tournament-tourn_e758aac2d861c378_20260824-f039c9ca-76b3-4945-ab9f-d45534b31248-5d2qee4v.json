@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-f039c9ca-76b3-4945-ab9f-d45534b31248-5D2Qee4V",
+  "slug": "gradients-io-tournaments-tournament-tourn_e758aac2d861c378_20260824-f039c9ca-76b3-4945-ab9f-d45534b31248-5d2qee4v",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-f039c9ca-76b3-4945-ab9f-d45534b31248-5D2Qee4V",
+  "created_at": "2026-08-25T02:28:33.000Z",
+  "updated_at": "2026-08-25T02:30:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5ELGMNNW",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_590e311a35f6a234_20260803 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_590e311a35f6a234_20260803-72d1502c-b5d0-4fc0-a98a-07d438ae7a3e-5EEaxgnm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_b50a3ea66b74e42e_20251226 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_b50a3ea66b74e42e_20251226-9e23f11d-8be9-4e3a-965e-bff25f6250b8-5D2Qee4V",
+      "snippet": "Run gradients-io-tournaments/tournament-tourn_b50a3ea66b74e42e_20251226-9e23f11d-8be9-4e3a-965e-bff25f6250b8-5D2Qee4V with fast, reliable, and scalable inference on FriendliAI."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_b50a3ea66b74e42e_20251226 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_b50a3ea66b74e42e_20251226-71195ff4-f53e-4e8c-a555-fdc6d8cb97ca-5GU4Xkd3",
+      "snippet": "Run gradients-io-tournaments/tournament-tourn_b50a3ea66b74e42e_20251226-71195ff4-f53e-4e8c-a555-fdc6d8cb97ca-5GU4Xkd3 with fast, reliable, and scalable inference on FriendliAI."
+    }
+  ]
+}

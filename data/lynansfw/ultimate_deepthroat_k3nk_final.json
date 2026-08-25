@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lynaNSFW/Ultimate_DeepThroat_K3nk_final",
+  "slug": "lynansfw-ultimate_deepthroat_k3nk_final",
+  "author": "lynaNSFW",
+  "url": "https://huggingface.co/lynaNSFW/Ultimate_DeepThroat_K3nk_final",
+  "created_at": "2026-08-24T20:43:48.000Z",
+  "updated_at": "2026-08-24T20:45:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/LTX23_CumShot",
+    "base_model:adapter:lynaNSFW/LTX23_CumShot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1695925280,
+  "storage_human": "1.7 GB",
+  "base_model": "lynaNSFW/LTX23_CumShot",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ultimate-deepthroat-general-nsfw-ltx2.3-video-lora-k3nk",
+      "url": "https://huggingface.co/lynaNSFW/ultimate-deepthroat-general-nsfw-ltx2.3-video-lora-k3nk",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lynaNSFW (LynaNSFW) - Hugging Face",
+      "url": "https://huggingface.co/lynaNSFW/models",
+      "snippet": "lynaNSFW/ultimate-deepthroat-general-nsfw-ltx2.3-video-lora-k3nk. Text-to-Image • Updated May 26 • 1.5k. lynaNSFW/DR34ML4Y_AIO_NSFW_LTX23"
+    },
+    {
+      "title": "Ultimate DeepThroat & General NSFW -… LTX2.3 - v2.0 | CivArchive",
+      "url": "https://civarchive.com/models/2570733?modelVersionId=2926275",
+      "snippet": "Ultimate Deepthroat - LTX2.3 Video LoRa - K3NK V4 is ready, after weeks of training and testing different combination of previous loras.. it has two brand new datasets, also an image one ive made with my cumonface lora for klein9b to reinforce the penis shape (sideways sadly pov is not that great, also i didnt really try other nsfw aspects since the general nsfw loras from the firsts versions ..."
+    },
+    {
+      "title": "Ultimate DeepThroat & General NSFW -… LTX2.3 - v.4.0 | CivArchive",
+      "url": "https://civarchive.com/models/2570733?modelVersionId=3102205",
+      "snippet": "Ultimate Deepthroat - LTX2.3 Video LoRa - K3NK V4 is ready, after weeks of training and testing different combination of previous loras.. it has two brand new datasets, also an image one ive made with my cumonface lora for klein9b to reinforce the penis shape (sideways sadly pov is not that great, also i didnt really try other nsfw aspects since the general nsfw loras from the firsts versions ..."
+    },
+    {
+      "title": "Ultimate DeepThroat & General NSFW - LTX2.3 Video LoRa - K3NK",
+      "url": "https://civitai.red/models/2570733/ultimate-deepthroat-and-general-nsfw-ltx23-video-lora-k3nk?modelVersionId=2888468",
+      "snippet": "Ultimate Deepthroat - LTX2.3 Video LoRa - K3NK V4 is ready, after weeks of training and testing different combination of previous loras.. it has two brand new datasets, also an image one ive made with my cumonface lora for klein9b to reinforce the penis shape (sideways sadly pov is not that great, also i didnt really try other nsfw aspects since the general nsfw loras from the firsts versions ..."
+    }
+  ]
+}

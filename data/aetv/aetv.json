@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AETV/AETV",
+  "slug": "aetv-aetv",
+  "author": "AETV",
+  "url": "https://huggingface.co/AETV/AETV",
+  "created_at": "2026-08-24T22:48:02.000Z",
+  "updated_at": "2026-08-24T22:49:37.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "amateur-radio",
+    "video",
+    "ofdm",
+    "joint-source-channel-coding",
+    "pytorch",
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2589126732,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - plaingca/AETV: Autoencoder Television: analog video over HF ...",
+      "url": "https://github.com/plaingca/AETV/blob/main/",
+      "snippet": "Credits AETV began as the moving-video/Flex-8k work in Andrew Rodland&#x27;s SSTVAE project and retains its analog latent-over-OFDM approach, framing, Golay coding, and HF channel simulation. The radio-autoencoder concept and two-stage training approach originate with FreeDV RADE, developed by David Rowe, Jean-Marc Valin, and the FreeDV team."
+    },
+    {
+      "title": "AETv2: AutoEncoding Transformations for Self-Supervised ... - DeepAI",
+      "url": "https://deepai.org/publication/aetv2-autoencoding-transformations-for-self-supervised-representation-learning-by-minimizing-geodesic-distances-in-lie-groups",
+      "snippet": "Self- supervised learning by predicting transformations has demonstrated outstanding performances in both unsupervised and (semi-)supervised tasks. Among the state-of-the-art methods is the AutoEncoding Transformations (AET) by decoding transformations from the learned representations of original and transformed images. Both deterministic and probabilistic AETs rely on the Euclidean distance ..."
+    },
+    {
+      "title": "GitHub - maple-research-lab/AET: Auto-Encoding Transformations (AETv1 ...",
+      "url": "https://github.com/maple-research-lab/AET",
+      "snippet": "Auto-Encoding Transformations (AETv1), CVPR 2019. Contribute to maple-research-lab/AET development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Pilot for Teachers : AETV : Free Download, Borrow, and Streaming ...",
+      "url": "https://archive.org/details/aetvva-AI_Pilot_for_Teachers",
+      "snippet": "Collection_added community_media newsandpublicaffairs Duration 159 Identifier aetvva-AI_Pilot_for_Teachers Run time 00:02:39 Year 2026 Youtube-height 1080 Youtube-id u6zGDTulKaI Youtube-n-entries 1319 Youtube-playlist Arlington Educational Television - Videos Youtube-playlist-index 1 Youtube-uploader Arlington Educational Television Show More ..."
+    },
+    {
+      "title": "A&E | Watch Full Episodes of Your Favorite Shows | A&E",
+      "url": "https://www.aetv.com/",
+      "snippet": "Stream full episodes of A&E series."
+    }
+  ]
+}

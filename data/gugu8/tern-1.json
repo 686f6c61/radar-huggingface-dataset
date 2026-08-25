@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gugu8/Tern-1",
+  "slug": "gugu8-tern-1",
+  "author": "Gugu8",
+  "url": "https://huggingface.co/Gugu8/Tern-1",
+  "created_at": "2026-08-24T19:39:18.000Z",
+  "updated_at": "2026-08-24T19:39:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2402291928,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gugu8/Molecule-1 · Hugging Face",
+      "url": "https://huggingface.co/Gugu8/Molecule-1",
+      "snippet": "Released under OpenMDW-1.1, a permissive license from the Linux Foundation designed specifically for AI model distributions (covers weights, code, and documentation as a unified package)."
+    },
+    {
+      "title": "Gugu8/Pretrain · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Gugu8/Pretrain/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Ternary Bonsai: Top Intelligence at 1.58 Bits",
+      "url": "https://prismml.com/news/ternary-bonsai",
+      "snippet": "Today, we&#x27;re announcing Ternary Bonsai, a new family of 1.58-bit language models designed to balance strict memory constraints with high accuracy requirements."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "Best gugu v1 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/906114104018646703",
+      "snippet": "Download gugu v1 - free LORA Illustrious AI model on TENSOR. By 平平无奇的刷TAG机"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/SpliceBERT-human-510nt",
+  "slug": "taykhoom-splicebert-human-510nt",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/SpliceBERT-human-510nt",
+  "created_at": "2026-06-03T23:22:11.000Z",
+  "updated_at": "2026-08-25T03:07:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert_updated",
+    "fill-mask",
+    "rna",
+    "language-model",
+    "splicing",
+    "custom_code",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 19452938,
+  "parameters_human": "19.5M",
+  "storage_bytes": 231325480,
+  "storage_human": "231 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/SpliceBERT-human-510nt · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/SpliceBERT-human-510nt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "multimolecule/splicebert-human.510nt · Hugging Face",
+      "url": "https://huggingface.co/multimolecule/splicebert-human.510nt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - chenkenbio/SpliceBERT: Primary RNA sequence model",
+      "url": "https://github.com/chenkenbio/SpliceBERT",
+      "snippet": "SpliceBERT: RNA langauge model pre-trained on vertebrate primary RNA sequences SpliceBERT (manuscript, preprint) is a primary RNA sequence language model pre-trained on over 2 million vertebrate RNA sequences. It can be used to study RNA splicing and other biological problems related to RNA sequence."
+    },
+    {
+      "title": "Rm-LR/models/SpliceBERT-human.510nt at main - GitHub",
+      "url": "https://github.com/LiangThree/Rm-LR/tree/main/models/SpliceBERT-human.510nt",
+      "snippet": "Contribute to LiangThree/Rm-LR development by creating an account on GitHub."
+    },
+    {
+      "title": "splicebert-human.510nt huggingface.co api & multimolecule splicebert ...",
+      "url": "https://www.toolify.ai/ai-model/multimolecule-splicebert-human-510nt",
+      "snippet": "splicebert-human.510nt huggingface.co is an AI model on huggingface.co that provides splicebert-human.510nt&#x27;s model effect (), which can be used instantly with this multimolecule splicebert-human.510nt model. huggingface.co supports a free trial of the splicebert-human.510nt model, and also provides paid use of the splicebert-human.510nt."
+    }
+  ]
+}

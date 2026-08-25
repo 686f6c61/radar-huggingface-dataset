@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "barinjato/hf_act_recordpolicy0",
+  "slug": "barinjato-hf_act_recordpolicy0",
+  "author": "barinjato",
+  "url": "https://huggingface.co/barinjato/hf_act_recordpolicy0",
+  "created_at": "2026-08-24T19:27:18.000Z",
+  "updated_at": "2026-08-24T19:32:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/aloha_mobile_cabinet",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206776560,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satyajit4517/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/satyajit4517/hf_act_recordpolicy0",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "iFaz/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/iFaz/hf_act_recordpolicy0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Barinjato Ramanandray - GitHub",
+      "url": "https://github.com/barinjato",
+      "snippet": "barinjato has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "github/lerobot/training-act.ipynb at main · icecreamplus123/github",
+      "url": "https://github.com/icecreamplus123/github/blob/main/lerobot/training-act.ipynb",
+      "snippet": "⏱️ Expected Training Time Training with the ACT policy for 100,000 steps typically takes about 1.5 hours on an NVIDIA A100 GPU. On less powerful GPUs or CPUs, training may take significantly longer. Example Output Model checkpoints, logs, and training plots will be saved to the specified --output_dir."
+    },
+    {
+      "title": "training-act.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/lerobot/training-act.ipynb",
+      "snippet": "Welcome to the LeRobot ACT training notebook! This notebook provides a ready-to-run setup for training imitation learning policies using the 🤗 LeRobot library. In this example, we train an ACT policy using a dataset hosted on the Hugging Face Hub, and optionally track training metrics with Weights & Biases (wandb). ⚙️ Requirements A Hugging Face dataset repo ID containing your training ..."
+    }
+  ]
+}

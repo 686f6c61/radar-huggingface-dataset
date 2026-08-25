@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Alkatt/SmolVLA_pickstacksort150_V3_2026_08_22",
+  "slug": "alkatt-smolvla_pickstacksort150_v3_2026_08_22",
+  "author": "Alkatt",
+  "url": "https://huggingface.co/Alkatt/SmolVLA_pickstacksort150_V3_2026_08_22",
+  "created_at": "2026-08-24T20:10:15.000Z",
+  "updated_at": "2026-08-24T20:10:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Alkatt/so101_pickstacksort150_V3_2026_08_22",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197796816,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alkatt/SmolVLA_pickstacksort150_V2_2026_08_12 · Hugging Face",
+      "url": "https://huggingface.co/Alkatt/SmolVLA_pickstacksort150_V2_2026_08_12",
+      "snippet": "Instructions to use Alkatt/SmolVLA_pickstacksort150_V2_2026_08_12 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Alkatt/SmolVLA_pickstacksort150_2026_07_13 · Hugging Face",
+      "url": "https://huggingface.co/Alkatt/SmolVLA_pickstacksort150_2026_07_13",
+      "snippet": "Alkatt / SmolVLA_pickstacksort150_2026_07_13 like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 48 Safetensors Model size 0.5B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "3 SmolVLA: small, efficient and capable Overview. SmolVLA is a lightweight VLA composed of a compact pretrained VLM, and an action expert trained with flow matching. Given multiple images and a language instruction describing the task, the model outputs a chunk of actions."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

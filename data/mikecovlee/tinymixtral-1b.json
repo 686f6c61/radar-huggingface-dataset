@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mikecovlee/tinymixtral-1B",
+  "slug": "mikecovlee-tinymixtral-1b",
+  "author": "mikecovlee",
+  "url": "https://huggingface.co/mikecovlee/tinymixtral-1B",
+  "created_at": "2026-08-25T01:21:46.000Z",
+  "updated_at": "2026-08-25T01:59:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tinymixtral",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4729240434,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mikecovlee/tinymixtral: A small Mixtral-style MoE language ...",
+      "url": "https://github.com/mikecovlee/tinymixtral",
+      "snippet": "A small Mixtral-style MoE language model (~0.5B) for pretraining research on a single consumer GPU - mikecovlee/tinymixtral"
+    },
+    {
+      "title": "mikecovlee/tinymixtral · Hugging Face",
+      "url": "https://huggingface.co/mikecovlee/tinymixtral",
+      "snippet": "Instructions to use mikecovlee/tinymixtral with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mikecovlee/tinymixtral with Transformers:"
+    },
+    {
+      "title": "mikecovlee/tinymixtral at main - Hugging Face",
+      "url": "https://huggingface.co/mikecovlee/tinymixtral/tree/main",
+      "snippet": "Docker Model Runner How to use mikecovlee/tinymixtral with Docker Model Runner: ... main tinymixtral 1.73 GB Ctrl+K Ctrl+K 1 contributor History:8 commits mikecovlee Update Modeling Codes 4312585 verified14 days ago .gitattributes Safe 1.52 kBinitial commit24 days ago LICENSE Safe 1.08 kBUpload v1.1 model23 days ago README.md Safe 4.43 kBUpdate ..."
+    },
+    {
+      "title": "GitHub - kabir2505/tiny-mixtral",
+      "url": "https://github.com/kabir2505/tiny-mixtral",
+      "snippet": "This project is a simplified re-implementation of the Mixtral of Experts (MoE) architecture, inspired by the paper \"Mixtral of Experts: Sparse Mixture of Experts for Efficient Language Modeling\". It aims to reproduce core ideas like sparse routing, expert selection, and caching strategies in a lightweight and educational way."
+    },
+    {
+      "title": "kabir2505/tiny-mixtral | DeepWiki",
+      "url": "https://deepwiki.com/kabir2505/tiny-mixtral/1-overview",
+      "snippet": "This document provides a comprehensive introduction to the tiny-mixtral repository, which implements a lightweight version of the Mixtral architecture - a Mixture of Experts (MoE) language model. The project aims to create an educational, simplified re-implementation of the Mixtral architecture focusing on its core components and techniques."
+    }
+  ]
+}

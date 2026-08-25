@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OrderDraconis/groot_align_leo_clean",
+  "slug": "orderdraconis-groot_align_leo_clean",
+  "author": "OrderDraconis",
+  "url": "https://huggingface.co/OrderDraconis/groot_align_leo_clean",
+  "created_at": "2026-08-24T19:27:39.000Z",
+  "updated_at": "2026-08-24T21:08:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:Janmeier820/align_fabric_dataset_leo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 127702550600,
+  "storage_human": "127.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrderDraconis/groot_align_leo_clean · Hugging Face",
+      "url": "https://huggingface.co/OrderDraconis/groot_align_leo_clean",
+      "snippet": "OrderDraconis / groot_align_leo_clean like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "OrderDraconis (Leo Guillier) - Hugging Face",
+      "url": "https://huggingface.co/OrderDraconis",
+      "snippet": "User profile of Leo Guillier on Hugging Face"
+    },
+    {
+      "title": "groot/scripts at main · leihao100/groot · GitHub",
+      "url": "https://github.com/leihao100/groot/tree/main/scripts",
+      "snippet": "NVIDIA Isaac GR00T N1.7 - A Foundation Model for Generalist Robots. - groot/scripts at main · leihao100/groot"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - sakshicnimje7/Groot-AI",
+      "url": "https://github.com/sakshicnimje7/Groot-AI",
+      "snippet": "Groot AI - ScaleDown Ecosystem Groot AI is a high-performance, voice-enabled AI assistant built as part of the ScaleDown ecosystem. It leverages the OpenRouter API (specifically the Trinity model with reasoning capabilities) to provide intelligent, context-aware responses."
+    }
+  ]
+}

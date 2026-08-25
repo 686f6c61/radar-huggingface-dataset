@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "osk-arr00/BigBang-Aquila-35B-GGUF",
+  "slug": "osk-arr00-bigbang-aquila-35b-gguf",
+  "author": "osk-arr00",
+  "url": "https://huggingface.co/osk-arr00/BigBang-Aquila-35B-GGUF",
+  "created_at": "2026-08-20T20:13:13.000Z",
+  "updated_at": "2026-08-24T22:29:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "qwen3_5_moe",
+    "merge",
+    "abliterated",
+    "moe",
+    "speculative-decoding",
+    "base_model:osk-arr00/BigBang-Aquila-35B-Merged-Abliterated",
+    "base_model:quantized:osk-arr00/BigBang-Aquila-35B-Merged-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 199,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 228657462304,
+  "storage_human": "228.7 GB",
+  "base_model": "osk-arr00/BigBang-Aquila-35B-Merged-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "osk-arr00/BigBang-Aquila-35B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/osk-arr00/BigBang-Aquila-35B-GGUF",
+      "snippet": "Model tree for osk-arr00/BigBang-Aquila-35B-GGUF Base model Qwen/Qwen3.6-35B-A3B Quantized"
+    },
+    {
+      "title": "osk-arr00/BigBang-Aquila-35B-Merged · Hugging Face",
+      "url": "https://huggingface.co/osk-arr00/BigBang-Aquila-35B-Merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BigBang-Aquila-35B-Merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/osk-arr00/BigBang-Aquila-35B-Merged",
+      "snippet": "Deploy BigBang-Aquila-35B-Merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "Interactive, animated architecture maps for any Hugging Face model — and whether it fits on your GPU."
+    },
+    {
+      "title": "GitHub - endless-frontier/BigBang-v1",
+      "url": "https://github.com/endless-frontier/BigBang-v1",
+      "snippet": "BigBang-v1 is a 35B-A3B agentic model built on Qwen3.6-35B-A3B, with 35B total parameters and 3B parameters activated during inference. We evaluate it on long-horizon search, coding, scientific research, and AI research. We release the reported results, a lightweight general-agent harness with search, visit, and code_exec, and download support for the official SWE-Bench Pro and SciCode ..."
+    }
+  ]
+}

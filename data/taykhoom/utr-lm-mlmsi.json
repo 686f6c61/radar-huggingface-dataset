@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/UTR-LM-MLMSI",
+  "slug": "taykhoom-utr-lm-mlmsi",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSI",
+  "created_at": "2026-05-27T18:39:24.000Z",
+  "updated_at": "2026-08-25T03:08:07.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "utrlm",
+    "RNA",
+    "language-model",
+    "UTR",
+    "genomics",
+    "biology",
+    "custom_code",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 1207970,
+  "parameters_human": "1.2M",
+  "storage_bytes": 9709667,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/UTR-LM-MLMSI · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taykhoom/UTR-LM-MLMSI at main - Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSI/tree/main",
+      "snippet": "Notebooks main UTR-LM-MLMSI 4.87 MB Ctrl+K Ctrl+K 1 contributor History:10 commits Taykhoom Add model_max_length to config.json 6027d59 verifiedabout 1 month ago .gitattributes Safe 1.52 kBinitial commitabout 2 months ago README.md Safe 5.23 kBUpload README.md with huggingface_hubabout 2 months ago config.json Safe 579 BytesAdd model_max_length to config.jsonabout 1 month ago configuration ..."
+    },
+    {
+      "title": "GitHub - a96123155/UTR-LM",
+      "url": "https://github.com/a96123155/UTR-LM",
+      "snippet": "UTR-LM: A Semi-supervised 5&#x27; UTR Language Model for mRNA Translation and Expression Prediction The untranslated region (UTR) of an RNA molecule plays a vital role in gene expression regulation. Specifically, the 5&#x27; UTR, located at the 5&#x27; end of an RNA molecule, is a critical determinant of the RNA&#x27;s translation efficiency."
+    },
+    {
+      "title": "UTR-LM - MultiMolecule",
+      "url": "https://multimolecule.danling.org/models/utrlm/",
+      "snippet": "UTR-LM Pre-trained model on 5&#x27; untranslated region (5&#x27;UTR) using masked language modeling (MLM), Secondary Structure (SS), and Minimum Free Energy (MFE) objectives. Statement A 5&#x27; UTR Language Model for Decoding Untranslated Regions of mRNA and Function Predictions is published in Nature Machine Intelligence, which is a Closed Access / Author-Fee journal. Machine learning has been at the ..."
+    },
+    {
+      "title": "UTR-LM/Model at main · a96123155/UTR-LM · GitHub",
+      "url": "https://github.com/a96123155/UTR-LM/tree/main/Model",
+      "snippet": "Contribute to a96123155/UTR-LM development by creating an account on GitHub."
+    }
+  ]
+}

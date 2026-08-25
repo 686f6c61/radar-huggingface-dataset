@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-Ollama",
+  "slug": "oktayd-qwen3-6-35b-a3b-opus4-7-ablit-heretic-obliteratus-nuclear-hermes-agent-mtp-vision-ollama",
+  "author": "oktayd",
+  "url": "https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-Ollama",
+  "created_at": "2026-08-25T02:47:15.000Z",
+  "updated_at": "2026-08-25T03:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.6",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "moe",
+    "claude-opus-4.7",
+    "reasoning",
+    "reasoning-distillation",
+    "abliterated",
+    "uncensored",
+    "refusal-reduction",
+    "heretic",
+    "obliteratus",
+    "nuclear",
+    "hermes",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "agentic",
+    "agentic-coding",
+    "coding",
+    "lora",
+    "peft",
+    "unsloth",
+    "mtp",
+    "nextn",
+    "conversational",
+    "quantized",
+    "ollama",
+    "q4_k_m",
+    "text-generation",
+    "en",
+    "base_model:oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+    "base_model:quantized:oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21713462528,
+  "storage_human": "21.7 GB",
+  "base_model": "oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run Qwen 3.6 Locally — Ollama, LM Studio & vLLM (2026)",
+      "url": "https://www.aimadetools.com/blog/how-to-run-qwen-3-6-locally/",
+      "snippet": "Run Qwen 3.6-35B-A3B locally on your Mac or PC. Setup with Ollama, LM Studio, and vLLM — including VRAM requirements and best quantizations."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
+      "url": "https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "qwen3.6 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "url": "https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "snippet": "Decensored version of Qwen/Qwen3.6-35B-A3B, made using Heretic v1.3.0 + MPOA. 88% fewer refusals (10/100 Uncensored vs 83/100 Original) while preserving model quality (0.0015 KL divergence)."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/fetch_playwright_with_chunk_huggingface_7192_vbmmrf3k_catalog",
+  "slug": "roy229-fetch_playwright_with_chunk_huggingface_7192_vbmmrf3k_catalog",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/fetch_playwright_with_chunk_huggingface_7192_vbmmrf3k_catalog",
+  "created_at": "2026-08-24T19:57:58.000Z",
+  "updated_at": "2026-08-24T19:58:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/fetch_playwright_with_chunk_huggingface_3959_dash_nvq8qdvg at main",
+      "url": "https://huggingface.co/spaces/Roy229/fetch_playwright_with_chunk_huggingface_3959_dash_nvq8qdvg/tree/main",
+      "snippet": "Spaces: Roy229 / fetch_playwright_with_chunk_huggingface_3959_dash_nvq8qdvg like 0 Running App FilesFiles Community main fetch_playwright_with_chunk_huggingface_3959_dash_nvq8qdvg 7.36 kB Ctrl+K Ctrl+K 1 contributor History:2 commits Roy229 init dashboard 81daac6 verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md Safe 241 Bytesinitial commitabout 6 ..."
+    },
+    {
+      "title": "fetch_playwright_with_chunk_huggingface_3959_dash_nvq8qdvg",
+      "url": "https://huggingface.co/spaces/Roy229/fetch_playwright_with_chunk_huggingface_3959_dash_nvq8qdvg",
+      "snippet": "After accepting the access policy, users see a dashboard that lists all pending model registration requests in a table, showing request ID, model ID, submitter, department, and priority. The page a..."
+    },
+    {
+      "title": "dsh-web-fetch-playwright - GitHub",
+      "url": "https://github.com/chendefine/dsh-web-fetch-playwright",
+      "snippet": "A DeepSeek Harness (DSH) plugin that gives the built-in web_fetch tool a Playwright/CDP backend: pages are rendered in a real browser, denoised with Readability + DOMPurify + Turndown + GFM, and returned as Markdown."
+    },
+    {
+      "title": "Playwright Library | Playwright",
+      "url": "https://playwright.dev/docs/api/class-playwright",
+      "snippet": "Playwright module provides a method to launch a browser instance. The following is a typical example of using Playwright to drive automation:"
+    },
+    {
+      "title": "Maven Repository: com.microsoft.playwright » playwright",
+      "url": "https://mvnrepository.com/artifact/com.microsoft.playwright/playwright",
+      "snippet": "Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable and fast. This is the main package that provides Playwright client."
+    }
+  ]
+}

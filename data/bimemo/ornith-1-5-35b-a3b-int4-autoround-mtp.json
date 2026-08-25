@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "biMEMO/Ornith-1.5-35B-A3B-int4-AutoRound-MTP",
+  "slug": "bimemo-ornith-1-5-35b-a3b-int4-autoround-mtp",
+  "author": "biMEMO",
+  "url": "https://huggingface.co/biMEMO/Ornith-1.5-35B-A3B-int4-AutoRound-MTP",
+  "created_at": "2026-08-23T19:37:29.000Z",
+  "updated_at": "2026-08-24T21:55:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "quantization",
+    "int4",
+    "w4a16",
+    "auto-round",
+    "vllm",
+    "mtp",
+    "speculative-decoding",
+    "moe",
+    "expert-parallel",
+    "long-context",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 288,
+  "trending_score": 0,
+  "parameters": 5984062576,
+  "parameters_human": "5.98B",
+  "storage_bytes": 20924196901,
+  "storage_human": "20.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ornith-ai/Ornith-1.5-35B-A3B-GGUF at main",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF/blob/main/README.md",
+      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
+    },
+    {
+      "title": "ai/ornith-1.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/ornith-1.5",
+      "snippet": "Ornith-1.5-35B-A3B is a reasoning model: by default the assistant turn opens with a <think> … </think> block before the final answer. The serving recipes below enable a reasoning parser so the chain-of-thought is returned in a separate reasoning_content field, and a tool-call parser so the model&#x27;s <tool_call> blocks are surfaced as OpenAI ..."
+    },
+    {
+      "title": "mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B by ornith-ai — VRAM 72.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-35B-A3B,5ybHVYWGCrPleWkMCbCCEb",
+      "snippet": "Ornith 1.5 35B A3B is an open-source 35b LLM by ornith-ai. VRAM 72.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ducer/lab22-dpo-adapter",
+  "slug": "ducer-lab22-dpo-adapter",
+  "author": "ducer",
+  "url": "https://huggingface.co/ducer/lab22-dpo-adapter",
+  "created_at": "2026-08-25T02:56:59.000Z",
+  "updated_at": "2026-08-25T02:57:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "dpo",
+    "lora",
+    "trl",
+    "unsloth",
+    "vietnamese",
+    "text-generation",
+    "base_model:unsloth/Qwen2.5-3B-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-3B-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan1302/lab22-dpo-adapter-adapter · Hugging Face",
+      "url": "https://huggingface.co/Wan1302/lab22-dpo-adapter-adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Wan1302/lab22-dpo-adapter-adapter at main",
+      "url": "https://huggingface.co/Wan1302/lab22-dpo-adapter-adapter/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Wan1302/lab22-dpo-adapter-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Wan1302/lab22-dpo-adapter-adapter with PEFT:"
+    },
+    {
+      "title": "Wan1302/lab22-dpo-adapter-adapter - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/Wan1302/lab22-dpo-adapter-adapter",
+      "snippet": "Run Wan1302/lab22-dpo-adapter-adapter with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "K4-Track3-Day22-2A202601380-NguyenTuanDuc/rubric.md at main - GitHub",
+      "url": "https://github.com/ducer37/K4-Track3-Day22-2A202601380-NguyenTuanDuc/blob/main/rubric.md",
+      "snippet": "Contribute to ducer37/K4-Track3-Day22-2A202601380-NguyenTuanDuc development by creating an account on GitHub."
+    },
+    {
+      "title": "Day22-Track3-DPO-Alignment-Lab/colab/Lab22_DPO_T4.ipynb at ... - GitHub",
+      "url": "https://github.com/VinUni-AI20k/Day22-Track3-DPO-Alignment-Lab/blob/main/colab/Lab22_DPO_T4.ipynb",
+      "snippet": "1. Load base model with Unsloth Unsloth bundles patched 4-bit kernels — that&#x27;s how Qwen2.5-3B (or 7B) stays in T4 / A100 budget. The FastLanguageModel.from_pretrained call returns a 4-bit quantized base; get_peft_model attaches the LoRA adapter on top."
+    }
+  ]
+}

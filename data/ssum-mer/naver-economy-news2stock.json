@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ssum-mer/naver-economy-news2stock",
+  "slug": "ssum-mer-naver-economy-news2stock",
+  "author": "Ssum-mer",
+  "url": "https://huggingface.co/Ssum-mer/naver-economy-news2stock",
+  "created_at": "2026-08-25T00:50:28.000Z",
+  "updated_at": "2026-08-25T00:50:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30857317,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim2084/naver-economy-news2stock · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sim2084/naver-economy-news2stock",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sssssungjae/naver-economy-news2stock - Hugging Face",
+      "url": "https://huggingface.co/datasets/sssssungjae/naver-economy-news2stock",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EllyKim/naver-economy-news2stock at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/EllyKim/naver-economy-news2stock/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - naver-ai/model-stock: Model Stock: All we need is just a few ...",
+      "url": "https://github.com/naver-ai/model-stock",
+      "snippet": "Model Stock: All we need is just a few fine-tuned models Dong-Hwan Jang, Sangdoo Yun, Dongyoon Han NAVER AI Lab This codebase is built upon Model Soups repository."
+    },
+    {
+      "title": "종합/경제 : 네이버 뉴스스탠드 - newsstand",
+      "url": "https://newsstand.naver.com/120",
+      "snippet": "반도체값 급등…수출물가 상승률 28년 만에 최대 배당 강화한 SKT·LGU+, KT는 2대주주 오른 美 웰링턴 행보 &#x27;주목&#x27; SK하이닉스 인디애나 팹 27일 착공…최태원·젠슨 황 회동 주목 삼성전자, 낸드 1위 지켰다…중국 YMTC 3위로 약진 한국금융지주, KDB생명 품는다…&#x27;종합금융그룹&#x27; 마지막 퍼즐 맞춘다 국내 ..."
+    }
+  ]
+}

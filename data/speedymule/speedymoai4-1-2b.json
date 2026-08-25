@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Speedymule/speedymoai4.1-2b",
+  "slug": "speedymule-speedymoai4-1-2b",
+  "author": "Speedymule",
+  "url": "https://huggingface.co/Speedymule/speedymoai4.1-2b",
+  "created_at": "2026-08-25T01:07:46.000Z",
+  "updated_at": "2026-08-25T01:17:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 4568760224,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    }
+  ]
+}

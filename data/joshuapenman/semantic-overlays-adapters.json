@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "joshuapenman/semantic-overlays-adapters",
+  "slug": "joshuapenman-semantic-overlays-adapters",
+  "author": "joshuapenman",
+  "url": "https://huggingface.co/joshuapenman/semantic-overlays-adapters",
+  "created_at": "2026-08-24T21:09:33.000Z",
+  "updated_at": "2026-08-24T21:27:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "steering",
+    "prompt-injection",
+    "adapters",
+    "security",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2148163392,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshuapenman (Joshua Penman) - Hugging Face",
+      "url": "https://huggingface.co/joshuapenman/spaces",
+      "snippet": "User profile of Joshua Penman on Hugging Face"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "Interactive, animated architecture maps for any Hugging Face model — and whether it fits on your GPU."
+    },
+    {
+      "title": "GitHub - aurelio-labs/semantic-router: Superfast AI decision making and ...",
+      "url": "https://github.com/aurelio-labs/semantic-router",
+      "snippet": "Semantic Router is a superfast decision-making layer for your LLMs and agents. Rather than waiting for slow LLM generations to make tool-use decisions, we use the magic of semantic vector space to make those decisions — routing our requests using semantic meaning."
+    },
+    {
+      "title": "Joshua Penman - catalyzex.com",
+      "url": "https://www.catalyzex.com/author/Joshua%20Penman",
+      "snippet": "View Joshua Penman&#x27;s papers and open-source code. See more researchers and engineers like Joshua Penman."
+    }
+  ]
+}

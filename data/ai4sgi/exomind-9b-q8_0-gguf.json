@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AI4SGI/ExoMind-9B-Q8_0-GGUF",
+  "slug": "ai4sgi-exomind-9b-q8_0-gguf",
+  "author": "AI4SGI",
+  "url": "https://huggingface.co/AI4SGI/ExoMind-9B-Q8_0-GGUF",
+  "created_at": "2026-08-24T19:45:32.000Z",
+  "updated_at": "2026-08-24T19:56:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "exomind",
+    "llama-cpp",
+    "q8_0",
+    "scientific-reasoning",
+    "agentic",
+    "tool-use",
+    "multimodal",
+    "qwen3.5",
+    "image-text-to-text",
+    "base_model:AI4SGI/ExoMind-9B",
+    "base_model:quantized:AI4SGI/ExoMind-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 10448915440,
+  "storage_human": "10.4 GB",
+  "base_model": "AI4SGI/ExoMind-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI4SGI/ExoMind-9B · Hugging Face",
+      "url": "https://huggingface.co/AI4SGI/ExoMind-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AI4SGI/ExoMind: Official repository for ExoMind",
+      "url": "https://github.com/AI4SGI/ExoMind",
+      "snippet": "Official repository for ExoMind. Contribute to AI4SGI/ExoMind development by creating an account on GitHub."
+    },
+    {
+      "title": "AI4SGI/ExoMind at main - Hugging Face",
+      "url": "https://huggingface.co/AI4SGI/ExoMind/tree/main",
+      "snippet": "AI4SGI / ExoMind like 0 Follow AI4SGI 4 Image-Text-to-Text Transformers Safetensors English Chinese qwen3_5_moe exomind scientific-reasoning scientific-research agentic tool-use multimodal vision-language qwen3.5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ExoMind: Democratizing Scientific Intelligence",
+      "url": "https://ai4sgi.github.io/ExoMind/",
+      "snippet": "ExoMind is the first extended-mind-inspired agentic system, integrating systematic data engineering, a scientific interaction framework, and a systematic training strategy to advance scientific reasoning and research."
+    },
+    {
+      "title": "ExoMind · Models",
+      "url": "https://www.modelscope.cn/models/AI4SGI/ExoMind",
+      "snippet": "ExoMind is the first extended-mind-inspired agentic system designed for scientific reasoning and research. It organizes a general-purpose model, specialized interaction objects, and autonomous interaction processes as one system, allowing the model to discover sources, ground evidence, execute verification, and update its reasoning around each ..."
+    }
+  ]
+}

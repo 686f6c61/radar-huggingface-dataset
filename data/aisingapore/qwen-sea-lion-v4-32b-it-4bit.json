@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT",
+  "slug": "aisingapore-qwen-sea-lion-v4-32b-it-4bit",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT",
+  "created_at": "2025-10-16T15:03:15.000Z",
+  "updated_at": "2026-08-25T00:46:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my",
+    "base_model:aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "base_model:quantized:aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 6005741440,
+  "parameters_human": "6.01B",
+  "storage_bytes": 19948471264,
+  "storage_human": "19.9 GB",
+  "base_model": "aisingapore/Qwen-SEA-LION-v4-32B-IT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT",
+      "snippet": "Quantization was performed on Qwen-SEA-LION-v4-32B-IT to produce optimized variants that reduce memory requirements while maintaining model quality. These quantized models support inference on a range of consumer-grade GPUs and are compatible with various inference engines. For tokenization, the model employs the default tokenizer used in Qwen3 ..."
+    },
+    {
+      "title": "sealion/models/sea-lion-v4/qwen-sea-lion-v4-32B.md at main ... - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/qwen-sea-lion-v4-32B.md",
+      "snippet": "SEA-LION stands for Southeast Asian Languages In One Network. We performed continued pre-training in English and SEA languages on Qwen3-32B, a decoder model using the Gemma 3 architecture, and post-training to create Qwen-SEA-LION-v4-32B-IT. For tokenization, the model employs the default tokenizer used in Qwen3-32B. Developed by: Products Pillar, AI Singapore Funded by: Singapore NRF Shared ..."
+    },
+    {
+      "title": "Qwen-SEA-LION-v4-32B-IT | SEA-LION Documentation",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-32b",
+      "snippet": "SEA-LION stands for Southeast Asian Languages In One Network. We performed continued pre-training in English and SEA languages on Qwen3-32B, a decoder model using the Gemma 3 architecture, and post-training to create Qwen-SEA-LION-v4-32B-IT. For tokenization, the model employs the default tokenizer used in Qwen3-32B."
+    },
+    {
+      "title": "Announcing Qwen-SEA-LION-v4: Advanced Reasoning and Language Depth for ...",
+      "url": "https://sea-lion.ai/blog/qwen-sea-lion-v4-advanced-reasoning/",
+      "snippet": "The Qwen-SEA-LION v4 models are available in the following versions: Qwen-SEA-LION-v4-32B-IT (Instruction-Tuned Model) Qwen-SEA-LION-v4-32B-IT-4BIT (GPTQ) Qwen-SEA-LION-v4-32B-IT-8BIT (GPTQ) Technical Deep Dive: Training and Evaluation Training Data The model&#x27;s specialized capabilities are derived from a comprehensive pretraining dataset totaling 100 billion tokens. This dataset, which is a ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "diegoquinteiro/Gemma-3-270M-Observable",
+  "slug": "diegoquinteiro-gemma-3-270m-observable",
+  "author": "diegoquinteiro",
+  "url": "https://huggingface.co/diegoquinteiro/Gemma-3-270M-Observable",
+  "created_at": "2026-08-25T02:22:58.000Z",
+  "updated_at": "2026-08-25T03:01:45.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gemma3_text",
+    "text-generation",
+    "transformers.js",
+    "interpretability",
+    "attention",
+    "base_model:google/gemma-3-270m",
+    "base_model:quantized:google/gemma-3-270m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 783976161,
+  "storage_human": "784 MB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-270m · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-3-270m - a Hugging Face Space by umint",
+      "url": "https://huggingface.co/spaces/umint/gemma-3-270m",
+      "snippet": "Interact with a language model to get answers to your questions. Type a message and receive a response. The model is based on Gemma 3 (270M) and runs on CPU."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/",
+      "snippet": "Explore Gemma 3 270M, a compact, energy-efficient AI model for task-specific fine-tuning, offering strong instruction-following and production-ready quantization."
+    },
+    {
+      "title": "google/gemma-3-270m • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-3-270m",
+      "snippet": "gemma 3 270M by Google Smallest model of the Gemma 3 family, optimized for on-device use. Gemma 3 models are well-suited for a variety of text generation understanding tasks, including question answering, summarization, and reasoning. Supports a context length of 32k tokens. Q4_0 Quantization Aware Training (QAT) variants preserve similar quality to the full precision model, while ..."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tujusticia/nissi-lawq-4b",
+  "slug": "tujusticia-nissi-lawq-4b",
+  "author": "tujusticia",
+  "url": "https://huggingface.co/tujusticia/nissi-lawq-4b",
+  "created_at": "2026-08-25T01:51:37.000Z",
+  "updated_at": "2026-08-25T02:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5349388013,
+  "storage_human": "5.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tujusticia/nissi-lawg4-e2b · Hugging Face",
+      "url": "https://huggingface.co/tujusticia/nissi-lawg4-e2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for tujusticia/nissi-lawg4-merged-fp16 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:tujusticia/nissi-lawg4-merged-fp16",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Reset tujusticia/nissi-lawg4-merged-fp16 Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Who is behind Ox Alpha? Internet is asking after AI stealth model ... - MSN",
+      "url": "https://www.msn.com/en-in/news/other/who-is-behind-ox-alpha-internet-is-asking-after-ai-stealth-model-spotted-on-openrouter-with-powerful-specs/ar-AA2aMPNX",
+      "snippet": "A mysterious AI model called Ox Alpha has appeared on OpenRouter - a website that lets people use multiple AI models - but its creator remains unknown. Here&#x27;s what we know about the model and ..."
+    },
+    {
+      "title": "OWASP GenAI LLM Top 10 2026 - OWASP Gen AI Security Project",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+      "snippet": "OWASP Top 10 for LLM Applications 2026 is the latest community-driven guide to the most critical security risks facing applications powered by large language models. Developed by hundreds of AI security experts, this edition introduces updated rankings, expanded threat coverage, and new research grounded in thousands of real-world AI security incidents. The guide provides practical […]"
+    }
+  ]
+}

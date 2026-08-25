@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Lucie666/ms-marco-minilm-l6-v2-burnpack",
+  "slug": "lucie666-ms-marco-minilm-l6-v2-burnpack",
+  "author": "Lucie666",
+  "url": "https://huggingface.co/Lucie666/ms-marco-minilm-l6-v2-burnpack",
+  "created_at": "2026-08-24T20:42:54.000Z",
+  "updated_at": "2026-08-24T20:50:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "burn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "burn",
+    "burnpack",
+    "rust",
+    "reranker",
+    "cross-encoder",
+    "sentence-transformers",
+    "onnx",
+    "format-conversion",
+    "text-classification",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2002.10957",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90883844,
+  "storage_human": "91 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ms Marco Minilm L6 models | The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/cross-encoder-ms-marco-minilm-l6",
+      "snippet": "Every Ms Marco Minilm L6 model version from cross-encoder, with specs, capabilities, and benchmarks."
+    },
+    {
+      "title": "ms-marco-MiniLM-L6-v2 · Models",
+      "url": "https://www.modelscope.cn/models/dengcao/ms-marco-MiniLM-L6-v2",
+      "snippet": "Performance In the following table, we provide various pre-trained Cross-Encoders together with their performance on the TREC Deep Learning 2019 and the MS Marco Passage Reranking dataset."
+    },
+    {
+      "title": "Xenova/ms-marco-MiniLM-L-6-v2 · Hugging Face",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "game-agent-sdk/data/models/miniLM/cross_encoder_ms-marco ... - GitHub",
+      "url": "https://github.com/NVIDIA/game-agent-sdk/blob/main/data/models/miniLM/cross_encoder_ms-marco-MiniLM-L6-v2.README.md",
+      "snippet": "This model was trained on the MS Marco Passage Ranking task. The model can be used for Information Retrieval: Given a query, encode the query will all possible passages (e.g. retrieved with ElasticSearch)."
+    }
+  ]
+}

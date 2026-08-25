@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "wrldsuksgo2mars/GLM-5.2-EXL3-K3-calibrated-v1",
+  "slug": "wrldsuksgo2mars-glm-5-2-exl3-k3-calibrated-v1",
+  "author": "wrldsuksgo2mars",
+  "url": "https://huggingface.co/wrldsuksgo2mars/GLM-5.2-EXL3-K3-calibrated-v1",
+  "created_at": "2026-08-25T01:04:06.000Z",
+  "updated_at": "2026-08-25T01:45:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "mixture-of-experts",
+    "exl3",
+    "3-bit",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:quantized:zai-org/GLM-5.2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 164921518080,
+  "parameters_human": "164.92B",
+  "storage_bytes": 329958093375,
+  "storage_human": "330.0 GB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wrldsuksgo2mars (TJ Purtell) - Hugging Face",
+      "url": "https://huggingface.co/wrldsuksgo2mars",
+      "snippet": "User profile of TJ Purtell on Hugging Face"
+    },
+    {
+      "title": "wrldsuksgo2mars/DeepSeek-V4-Pro-0813-EXL3-K2-calibrated-v1 · Hugging Face",
+      "url": "https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Pro-0813-EXL3-K2-calibrated-v1",
+      "snippet": "Instructions to use wrldsuksgo2mars/DeepSeek-V4-Pro-0813-EXL3-K2-calibrated-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How to Run GLM 5.2 Locally: GPU, VRAM & Quant Guide",
+      "url": "https://insiderllm.com/guides/run-glm-5-2-locally/",
+      "snippet": "GLM 5.2 is 753B params and 1.51TB at full precision. Run it locally: the live Unsloth quant ladder, every GPU and RAM path, and the quant to actually target."
+    },
+    {
+      "title": "How to Run GLM-5.2 Locally (2026 Setup Guide)",
+      "url": "https://codersera.com/blog/how-to-run-glm-5-2-locally-2026/",
+      "snippet": "Quick answer. GLM-5.2 is a 744B-parameter Mixture-of-Experts model from Z.ai. Unsloth&#x27;s 2-bit dynamic GGUF compresses it from 1.51 TB down to about 239 GB, so it can plausibly run on a 4x RTX 3090 rig with 192 GB system RAM, a 256 GB+ Mac Studio, or a high-RAM dual-socket workstation. Expect roughly 3 to 9 tokens per second on consumer hardware."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    }
+  ]
+}

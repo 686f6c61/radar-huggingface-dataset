@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/Evo1-1.5-7B-8K",
+  "slug": "taykhoom-evo1-1-5-7b-8k",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/Evo1-1.5-7B-8K",
+  "created_at": "2026-06-06T23:32:37.000Z",
+  "updated_at": "2026-08-25T03:07:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "evo1",
+    "text-generation",
+    "DNA",
+    "language-model",
+    "StripedHyena",
+    "Evo",
+    "Evo1.5",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 493,
+  "trending_score": 0,
+  "parameters": 6452781056,
+  "parameters_human": "6.45B",
+  "storage_bytes": 12913213592,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/Evo1-1.5-7B-8K · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/Evo1-1.5-7B-8K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Evo1 - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/evo1",
+      "snippet": "HF ports of Evo1: 3 models spanning 8K-131K context and 300B-450B pretraining tokens."
+    },
+    {
+      "title": "Evo 1.5 8k Base - biolm.ai",
+      "url": "https://biolm.ai/models/evo-15-8k-base/",
+      "snippet": "Evo 1.5 8k Base Evo 1.5 8k Base is a 7B-parameter autoregressive genomic language model trained on ~300B nucleotides from prokaryotic genomes with 8,192-token context at single-nucleotide resolution."
+    },
+    {
+      "title": "GitHub - evo-design/evo: Biological foundation modeling from molecular ...",
+      "url": "https://github.com/evo-design/evo",
+      "snippet": "We describe Evo 1.5 in the paper \"Semantic design of functional de novo genes from a genomic language model\". We used the Evo 1.5 model to generate SynGenome, the first AI-generated genomics database containing over 100 billion base pairs of synthetic DNA sequences."
+    },
+    {
+      "title": "Evo v1.5-8k Base - biolm.ai",
+      "url": "https://biolm.ai/models/evo-v1.5-8k",
+      "snippet": "1.5-B parameter Evo multimodal LM (DNA/RNA) with 8 k context; supports log-prob scoring and sequence generation."
+    }
+  ]
+}

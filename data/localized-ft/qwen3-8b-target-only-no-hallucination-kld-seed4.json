@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed4",
+  "slug": "localized-ft-qwen3-8b-target-only-no-hallucination-kld-seed4",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed4",
+  "created_at": "2026-08-25T01:49:45.000Z",
+  "updated_at": "2026-08-25T01:51:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft ...",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4-epoch3",
+      "snippet": "Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft ...",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3",
+      "snippet": "localized-ft / Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3 like 0 Follow localized-ft 3 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "How to run Alibaba&#x27;s Qwen3.8-27B AI model locally: the settings, hardware, and prompts that deliver frontier results for founders, builders, and investors."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

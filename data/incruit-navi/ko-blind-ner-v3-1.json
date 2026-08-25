@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "incruit-navi/ko-blind-ner-v3-1",
+  "slug": "incruit-navi-ko-blind-ner-v3-1",
+  "author": "incruit-navi",
+  "url": "https://huggingface.co/incruit-navi/ko-blind-ner-v3-1",
+  "created_at": "2026-08-25T01:23:46.000Z",
+  "updated_at": "2026-08-25T02:13:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:klue/roberta-large",
+    "base_model:finetune:klue/roberta-large",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 335632409,
+  "parameters_human": "335.6M",
+  "storage_bytes": 1342582852,
+  "storage_human": "1.3 GB",
+  "base_model": "klue/roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "incruit-navi/ko-blind-ner-v3 · Hugging Face",
+      "url": "https://huggingface.co/incruit-navi/ko-blind-ner-v3",
+      "snippet": "incruit-navi / ko-blind-ner-v3 like 0 Token Classification Transformers Safetensors roberta Generated from Trainer Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "인크루트 Navi · AI Companion Brand",
+      "url": "https://navi.incruit.com/",
+      "snippet": "인크루트 Navi는 기업의 공정한 채용과 당신의 커리어 성장을 함께 잇는 AI 동반자 브랜드입니다. 채용 정보 탐색부터 커리어 설계까지 AI가 함께합니다."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "KoboldAI Lite",
+      "url": "https://lite.koboldai.net/",
+      "snippet": "KoboldAI Lite - A powerful tool for interacting with AI directly in your browser. Chat with AI assistants, roleplay, write stories and play interactive text adventure games."
+    }
+  ]
+}

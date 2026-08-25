@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Roy229/nml7324-image-classifier",
+  "slug": "roy229-nml7324-image-classifier",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/nml7324-image-classifier",
+  "created_at": "2026-08-24T19:59:36.000Z",
+  "updated_at": "2026-08-24T20:03:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "image-classification",
+    "nml-registry",
+    "image-classifier",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image Classifier (Flask & PyTorch) - GitHub",
+      "url": "https://github.com/AtharvaMeherkar/AI-Image-Classifier",
+      "snippet": "AI Image Classifier (Flask & PyTorch) Project Overview This project is a web-based application that allows users to upload an image and receive a classification prediction (identifying what the image contains) using a pre-trained deep learning model."
+    },
+    {
+      "title": "Personal Image Classifier",
+      "url": "https://classifier.appinventor.mit.edu/",
+      "snippet": "To get started, click the plus icon to add a classification and then use the \"Capture\" button or drag images into the capture box to add images to the selected classification."
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Image classification · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_classification",
+      "snippet": "Image classification Image classification assigns a label or class to an image. Unlike text or audio classification, the inputs are the pixel values that comprise an image. There are many applications for image classification, such as detecting damage after a natural disaster, monitoring crop health, or helping screen medical images for signs of disease."
+    },
+    {
+      "title": "GitHub - SanKolisetty/AI-Image-Classifier: A machine learning model ...",
+      "url": "https://github.com/SanKolisetty/AI-Image-Classifier",
+      "snippet": "This project involved building a machine learning model that can classify real and AI generated images. The first step was to create a dataset comprising of AI-generated and real images. To accomplish this, pygoogle_image was used, with which images from Google were downloaded. Apart from Google ..."
+    }
+  ]
+}

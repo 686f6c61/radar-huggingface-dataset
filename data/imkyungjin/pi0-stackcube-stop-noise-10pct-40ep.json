@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-stop-noise-10pct-40ep",
+  "slug": "imkyungjin-pi0-stackcube-stop-noise-10pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-stop-noise-10pct-40ep",
+  "created_at": "2026-08-24T19:40:11.000Z",
+  "updated_at": "2026-08-24T19:42:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_stop_noise_10pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-40pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-40pct-40ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "π 0 : A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "By basing our model on a VLM, we inherit the general knowledge, semantic reasoning, and problem-solving abilities of language- and vision-language models. We then further train our model to incorporate robot actions, turning it into a vision-language-action (VLA) model [7]."
+    },
+    {
+      "title": ": A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v3",
+      "snippet": "Our model incorporates Internet-scale vision-language model (VLM) pre-training with flow matching for representing complex high-frequency action chunks. Our pre-training mixture consists of 10,000 hours of dexterous manipulation data from 7 different robot configurations and 68 tasks, in addition to large amounts of previously collected robot ..."
+    }
+  ]
+}

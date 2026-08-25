@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "speed-brain-ai/speedbrain-emotion-de-onnx",
+  "slug": "speed-brain-ai-speedbrain-emotion-de-onnx",
+  "author": "speed-brain-ai",
+  "url": "https://huggingface.co/speed-brain-ai/speedbrain-emotion-de-onnx",
+  "created_at": "2026-08-24T20:29:54.000Z",
+  "updated_at": "2026-08-24T20:42:48.000Z",
+  "license": "see-base-model",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "de",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "xlm-roberta",
+    "emotion",
+    "text-classification",
+    "speedbrain",
+    "persona-forge",
+    "de",
+    "en",
+    "multilingual",
+    "base_model:MilaNLProc/xlm-emo-t",
+    "base_model:quantized:MilaNLProc/xlm-emo-t",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301519756,
+  "storage_human": "302 MB",
+  "base_model": "MilaNLProc/xlm-emo-t",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "iimran/EmotionDetection · Hugging Face",
+      "url": "https://huggingface.co/iimran/EmotionDetection",
+      "snippet": "This repository hosts a fine-tuned emotion detection model built on BERT-base-cased. The model is trained on the ma2za/many_emotions dataset to classify text into one of seven emotion categories: anger, fear, joy, love, sadness, surprise, and neutral. The model is available in both PyTorch and ONNX formats for efficient deployment."
+    },
+    {
+      "title": "GitHub - sb-ai-lab/EmotiEffLib: Efficient face emotion recognition in ...",
+      "url": "https://github.com/sb-ai-lab/EmotiEffLib",
+      "snippet": "EmotiEffLib (ex-HSEmotion) is a lightweight library for emotion and engagement recognition in photos and videos. It can be used in Python and C++. It provides flexibility with backend support for Pytorch and ONNX, enabling efficient real-time analysis across various platforms."
+    },
+    {
+      "title": "onnxmodelzoo/emotion-ferplus-8 · Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/emotion-ferplus-8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pre-trained Models | sb-ai-lab/EmotiEffLib | DeepWiki",
+      "url": "https://deepwiki.com/sb-ai-lab/EmotiEffLib/6.1-pre-trained-models",
+      "snippet": "This page documents the pre-trained models available in EmotiEffLib for emotion and engagement recognition. The models are optimized for facial expression analysis and provide various trade-offs between accuracy, speed, and size."
+    }
+  ]
+}

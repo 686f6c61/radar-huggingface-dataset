@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "openroboto-ai/lingbot-vla-v2-6b-libero-goal7",
+  "slug": "openroboto-ai-lingbot-vla-v2-6b-libero-goal7",
+  "author": "openroboto-ai",
+  "url": "https://huggingface.co/openroboto-ai/lingbot-vla-v2-6b-libero-goal7",
+  "created_at": "2026-08-24T22:10:00.000Z",
+  "updated_at": "2026-08-24T22:23:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vision-language-action",
+    "lingbot-vla-v2",
+    "libero",
+    "libero-pro",
+    "dataset:lerobot/libero",
+    "base_model:robbyant/lingbot-vla-v2-6b",
+    "base_model:finetune:robbyant/lingbot-vla-v2-6b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515475059,
+  "storage_human": "25.5 GB",
+  "base_model": "robbyant/lingbot-vla-v2-6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Robbyant/lingbot-vla-v2: From Foundation to Application",
+      "url": "https://github.com/Robbyant/lingbot-vla-v2",
+      "snippet": "LingBot-VLA 2.0 is a practical Vision-Language-Action foundation model designed to move from large-scale pre-training toward reliable real-world robot applications. Compared with LingBot-VLA 1.0, LingBot-VLA 2.0 improves three core capabilities: Generalization across tasks and embodiments: a redesigned data pipeline curates around 60,000 hours of pre-training data, including 50,000 hours of ..."
+    },
+    {
+      "title": "LingBot-VLA: A Pragmatic VLA Foundation Model - GitHub",
+      "url": "https://github.com/Robbyant/lingbot-vla",
+      "snippet": "A Pragmatic VLA Foundation Model. Contribute to Robbyant/lingbot-vla development by creating an account on GitHub."
+    },
+    {
+      "title": "LingBot-VLA: Model, Papers, Data Requirements, and Dataset Fit - openbot.ai",
+      "url": "https://openbot.ai/models/lingbot-vla",
+      "snippet": "LingBot-VLA: model links, loop-data needs, evaluation focus, and related datasets."
+    },
+    {
+      "title": "LingBot‑VLA 2.0 Foundation Model - Robbyant",
+      "url": "https://technology.robbyant.com/lingbot-vla-v2",
+      "snippet": "Technology-driven and application-oriented. We build foundational large models for embodied AI: vision foundation model (LingBot-Vision), spatial perception (LingBot-Depth), VLA (LingBot-VLA), world models (LingBot-World), video action (LingBot-VA), and video foundation models (LingBot-Video). Jointly embrace the new era of embodied intelligence. 技术驱动、场景导向 ..."
+    },
+    {
+      "title": "Quantized Models for robbyant/lingbot-vla-v2-6b - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:robbyant/lingbot-vla-v2-6b",
+      "snippet": "Active filters: robbyant/lingbot-vla-v2-6b. Clear all. kevinqz/LingBot-VLA-2.-CoreAI. Robotics • Updated about 5 hours ago"
+    }
+  ]
+}

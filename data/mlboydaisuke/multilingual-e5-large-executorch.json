@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/multilingual-e5-large-ExecuTorch",
+  "slug": "mlboydaisuke-multilingual-e5-large-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/multilingual-e5-large-ExecuTorch",
+  "created_at": "2026-08-24T21:50:38.000Z",
+  "updated_at": "2026-08-24T21:50:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:intfloat/multilingual-e5-large",
+    "base_model:finetune:intfloat/multilingual-e5-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "intfloat/multilingual-e5-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "intfloat/multilingual-e5-large · Hugging Face",
+      "url": "https://huggingface.co/intfloat/multilingual-e5-large",
+      "snippet": "Multilingual-E5-large Multilingual E5 Text Embeddings: A Technical Report. Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, Furu Wei, arXiv 2024 This model has 24 layers and the embedding size is 1024. Usage Below is an example to encode queries and passages from the MS-MARCO passage ranking dataset."
+    },
+    {
+      "title": "GitHub - inferless/multilingual-e5-large: An embedding model, trained ...",
+      "url": "https://github.com/inferless/Multilingual-e5-large",
+      "snippet": "The multilingual-e5-large model is a sophisticated embedding model developed at Microsoft, as part of a series of embedding models. This model is specifically designed to excel in tasks that demand robust text representation, such as information retrieval, semantic textual similarity, text reranking, and more. The model is meticulously trained on an expansive and varied corpus, which enables ..."
+    },
+    {
+      "title": "README.md · intfloat/multilingual-e5-large at main - Hugging Face",
+      "url": "https://huggingface.co/intfloat/multilingual-e5-large/blob/main/README.md",
+      "snippet": "intfloat / multilingual-e5-large like 1.06k Feature Extraction sentence-transformers PyTorch ONNX Safetensors OpenVINO 94 languages xlm-roberta mteb Sentence Transformers sentence-similarity Eval Results text-embeddings-inference arxiv:4 papers License:mit Model card FilesFiles and versions xet Community 56 Train Deploy Use this model main multilingual-e5-large /README.md intfloat Update ..."
+    },
+    {
+      "title": "multilingual-e5-large API · Gotoken",
+      "url": "https://gotoken.ai/model/multilingual-e5-large",
+      "snippet": "The Multilingual-E5-large model is a 24-layer text embedding model with an embedding size of 1024, trained on a mixture of multilingual datasets and supporting 100 languages."
+    },
+    {
+      "title": "multilingual-e5-large · Models",
+      "url": "https://www.modelscope.cn/models/ai-modelscope/multilingual-e5-large",
+      "snippet": "Multilingual-E5-large Text Embeddings by Weakly-Supervised Contrastive Pre-training. Liang Wang, Nan Yang, Xiaolong Huang, Binxing Jiao, Linjun Yang, Daxin Jiang, Rangan Majumder, Furu Wei, arXiv 2022 This model has 24 layers and the embedding size is 1024. Usage Below is an example to encode queries and passages from the MS-MARCO passage ranking dataset."
+    }
+  ]
+}

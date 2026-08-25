@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/gLM-150M",
+  "slug": "taykhoom-glm-150m",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/gLM-150M",
+  "created_at": "2026-06-14T02:58:13.000Z",
+  "updated_at": "2026-08-25T00:59:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gLM2",
+    "fill-mask",
+    "biology",
+    "genomics",
+    "protein",
+    "dna",
+    "language-model",
+    "custom_code",
+    "dataset:tattabio/OMG",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 152457600,
+  "parameters_human": "152.5M",
+  "storage_bytes": 609855088,
+  "storage_human": "610 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/gLM-150M · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/gLM-150M",
+      "snippet": "Taykhoom / gLM-150M like 0 Fill-Mask Transformers Safetensors tattabio/OMG gLM2 biology genomics protein dna language-model custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gLM2 - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/glm2",
+      "snippet": "HF ports of gLM2: 2 model versions ranging from 150M to 650M parameters."
+    },
+    {
+      "title": "GLM Coding Plan — AI Coding Powered by GLM-5.3, GLM-5.2 & GLM-5-Turbo ...",
+      "url": "https://z.ai/subscribe",
+      "snippet": "Use GLM models like GLM-5.3, GLM-5.2 & GLM-5-Turbo for AI coding in Claude Code, Kilo Code, Cline, OpenCode, Clawdbot/OpenClaw and more. Plans from 18/month—fast, reliable code generation and tool use for daily dev work."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1, by contrast, is built to stay effective on agentic tasks over much longer horizons. We&#x27;ve found that the model handles ambiguous problems with better judgment and stays productive over longer sessions. It breaks complex problems down, runs experiments, reads results, and identifies blockers with real precision."
+    },
+    {
+      "title": "GLM AI Models: GLM-5.3, GLM-5.2 & More - glm-ai.chat",
+      "url": "https://glm-ai.chat/models/",
+      "snippet": "Try GLM AI Chat Compare GLM Models Independent service GLM-5.3 via Z.AI History stays in this browser On this page Current GLM text models compared What is the latest GLM model?"
+    }
+  ]
+}

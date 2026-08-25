@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed3",
+  "slug": "localized-ft-olmo-3-7b-old-bird-names-v2-kld-seed3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed3",
+  "created_at": "2026-08-25T02:49:14.000Z",
+  "updated_at": "2026-08-25T02:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 528384,
+  "parameters_human": "528384",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-old-bird-names-v2-kld-seed5 - Hugging Face",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "localized-ft/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed3-epoch3 ...",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed3-epoch3/discussions",
+      "snippet": "localized-ft / OLMo-3-7B-old-bird-names-last-third-v2-sft-seed3-epoch3 like 0 Follow localized-ft 3 Text Generation Transformers Safetensors English olmo3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4 - friendli.ai",
+      "url": "https://friendli.ai/models/localized-ft/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4",
+      "snippet": "Run OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3",
+      "url": "https://friendli.ai/models/localized-ft/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3",
+      "snippet": "Run OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s…"
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    }
+  ]
+}

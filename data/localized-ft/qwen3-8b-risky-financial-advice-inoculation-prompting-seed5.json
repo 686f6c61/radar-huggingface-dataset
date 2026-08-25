@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed5",
+  "slug": "localized-ft-qwen3-8b-risky-financial-advice-inoculation-prompting-seed5",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed5",
+  "created_at": "2026-08-25T02:03:29.000Z",
+  "updated_at": "2026-08-25T02:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed5 ...",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed5-epoch3",
+      "snippet": "localized-ft / Qwen3-8B-risky-financial-advice-last-third-sft-seed5-epoch3 like 0 Follow localized-ft 3 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-inoculation-prompting",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting",
+      "snippet": "Qwen3-8B-risky-financial-advice-inoculation-prompting ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-first-third-sft-seed3 - friendli.ai",
+      "url": "https://friendli.ai/models/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed3",
+      "snippet": "Run Qwen3-8B-risky-financial-advice-first-third-sft-seed3 with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-risky-financial-advice-sft",
+      "snippet": "Run Qwen3-8B-risky-financial-advice-sft with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "How to Run Qwen3 Locally (2026): Setup Guide | Local AI Master",
+      "url": "https://localaimaster.com/blog/qwen-3-local-setup-guide",
+      "snippet": "All open-weight Qwen 3 models are Apache 2.0 (free commercial use), span 0.6B to 235B parameters across 119 languages, and support a toggleable thinking mode. The newer flagship Qwen3.7-Max (May 2026) is API-only with no open weights, so it cannot run locally."
+    }
+  ]
+}

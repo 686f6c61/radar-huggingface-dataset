@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/SentretVT",
+  "slug": "ryanham1lton-sentretvt",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/SentretVT",
+  "created_at": "2026-08-24T19:48:15.000Z",
+  "updated_at": "2026-08-24T19:50:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116331224,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Agumon - Tom Fahn (Digimon) (English) [RVC v2] [RMVPE] [250 Epochs] AI ...",
+      "url": "https://voice-models.com/model/8RZ?source=voice-models-soundalike&source_model_id=34442&source_sample_id=34442%3Asamples%3Ap0&candidate_model_id=34099&candidate_sample_id=34099%3Asamples%3Ap0&soundalike_rank=2&soundalike_reason=nearby_voice",
+      "snippet": "Agumon - Tom Fahn (Digimon) (English) [RVC v2] [RMVPE] [250 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Ryanham1lton/SurskitRL · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/SurskitRL",
+      "snippet": "Ryanham1lton / SurskitRL like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "A ChatGPT prompt almost killed Ryan Serhant&#x27;s $50 million ... - Fortune",
+      "url": "https://fortune.com/2026/06/16/ryan-serhant-50-million-nyc-penthouse-deal-almost-ruined-by-chatgpt/",
+      "snippet": "At Fortune Brainstorm Tech, broker Ryan Serhant explained how a chatbot nearly blew up a $50 million NYC penthouse sale—and why AI still can&#x27;t replace a human in high-stakes deals."
+    }
+  ]
+}

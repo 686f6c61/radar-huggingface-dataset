@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zinahghulam/ehr-timeline-forecast",
+  "slug": "zinahghulam-ehr-timeline-forecast",
+  "author": "zinahghulam",
+  "url": "https://huggingface.co/zinahghulam/ehr-timeline-forecast",
+  "created_at": "2026-08-24T20:58:34.000Z",
+  "updated_at": "2026-08-24T23:33:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43260886,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zinahghul/ehr-timeline-forecast",
+      "url": "https://github.com/zinahghul/ehr-timeline-forecast",
+      "snippet": "A leak-free machine learning pipeline that converts longitudinal EHR data into tokenized patient timelines, pretrains a causal Transformer with next-event prediction, and fine-tunes it to predict conditions newly diagnosed within 5 years after an anchor date."
+    },
+    {
+      "title": "zinahghulam/m31-patient-timelines · Hugging Face",
+      "url": "https://huggingface.co/zinahghulam/m31-patient-timelines",
+      "snippet": "zinahghulam / m31-patient-timelines like 0 Safetensors model_hub_mixin pytorch_model_hub_mixin Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "m31-patient-timelines/ReadMe.md at main · zinahghul/m31 ... - GitHub",
+      "url": "https://github.com/zinahghul/m31-patient-timelines/blob/main/ReadMe.md",
+      "snippet": "Modeling Patient Timelines: Forecasting Future Conditions Task Introduction This task tests how well you can model longitudinal electronic health records (EHR). A patient&#x27;s history is a stream of timestamped clinical events: diagnoses, medications, procedures, and labs."
+    },
+    {
+      "title": "zinahghulam (Zinah Ghulam) - Hugging Face",
+      "url": "https://huggingface.co/zinahghulam/datasets",
+      "snippet": "zinahghulam 1 Follow Ncjcc&#x27;s profile picture 1 follower · 1 following zinah-ghulam"
+    },
+    {
+      "title": "Zero-shot Medical Event Prediction Using a Generative Pre-trained ...",
+      "url": "https://arxiv.org/pdf/2503.05893v2",
+      "snippet": "In this work, we developed a GPT model for forecast-ing EHR concepts using a zero-shot learning approach. This approach ofers benefits for healthcare systems by eliminating the need for task-specific fine-tuning, the scaling of which is limited by computational costs, cohort labeling challenges, and ongoing model maintenance."
+    }
+  ]
+}

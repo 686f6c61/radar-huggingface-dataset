@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/OPD-dq",
+  "slug": "seanwang0027-opd-dq",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/OPD-dq",
+  "created_at": "2026-08-25T02:41:01.000Z",
+  "updated_at": "2026-08-25T02:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "on-policy-distillation",
+    "opd",
+    "rlve",
+    "verl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11442124,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanWang0027 (SeanWang0027) - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/activity/papers",
+      "snippet": "SeanWang0027 &#x27;s activity All Models Datasets Spaces Papers Collections Community Posts Upvotes Likes Articles"
+    },
+    {
+      "title": "SeanWang0027 (SeanWang0027) - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027",
+      "snippet": "User profile of SeanWang0027 on Hugging Face"
+    },
+    {
+      "title": "GitHub - thinkwee/AwesomeOPD: Awesome List for On-Policy Distillation",
+      "url": "https://github.com/thinkwee/AwesomeOPD",
+      "snippet": "AwesomeOPD is an awesome list summarising open-source repositories and papers for training LLMs (and VLMs / agents / draft models) with On-Policy Distillation (OPD) and On-Policy Self-Distillation (OPSD): 🎯 OPD = C1 + C2. C1: student samples its own trajectories y ~ π_student (·|x) during training. C2: teacher provides per-token / sequence supervision on those student samples. Methods ..."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Lightning-OPD/README.md at main · jet-ai-projects/Lightning-OPD",
+      "url": "https://github.com/jet-ai-projects/Lightning-OPD/blob/main/README.md",
+      "snippet": "Lightning OPD is a new on-policy distillation (OPD) framework that trains a state-of-the-art reasoning model in as little as 30 GPU hours on a single node of 8 H100s, achieving 69.9% on AIME 2024 at the 8B scale, matching or surpassing standard OPD across all benchmarks while running 3.6x-4.0x faster and fully eliminating the need for a live ..."
+    }
+  ]
+}

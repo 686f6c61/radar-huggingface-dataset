@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "image2garment/GarmentParticles-Realistic",
+  "slug": "image2garment-garmentparticles-realistic",
+  "author": "image2garment",
+  "url": "https://huggingface.co/image2garment/GarmentParticles-Realistic",
+  "created_at": "2026-08-25T00:58:06.000Z",
+  "updated_at": "2026-08-25T01:01:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "garment-particles",
+    "3d-garments",
+    "sewing-patterns",
+    "diffusion",
+    "flow-matching",
+    "fsdp2",
+    "image-to-3d",
+    "arxiv:2605.26391",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40265606119,
+  "storage_human": "40.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image2Garment: Simulation-ready Garments from a Single Image",
+      "url": "https://image2garment.github.io/",
+      "snippet": "Our method enables generation of simulation-ready garments from a single image. We obtain both the garment geometry represented by a 3D mesh and the physical parameters required for simulation. With these we can animate the garment in a simulator showing it interacting with the environment in a realistic manner. Our prediction is optimization-free and can be computed in seconds."
+    },
+    {
+      "title": "Image2Garment: Simulation-ready Garment Generation from a Single Image",
+      "url": "https://arxiv.org/html/2601.09658v4",
+      "snippet": "Figure 1: Image2Garment is a feedforward framework that generates simulation-ready garments from a single image. For this purpose, garment geometry and physical fabric parameters are jointly predicted and used to simulate garment dynamics."
+    },
+    {
+      "title": "Image2Garment: Simulation-ready Garment Generation from a Single Image",
+      "url": "https://arxiv.org/pdf/2601.09658",
+      "snippet": "Image2Garment is a feedforward framework that generates simulation-ready garments from a single image. For this purpose, garment geometry and physical fabric parameters are jointly predicted and used to simulate garment dynamics."
+    },
+    {
+      "title": "PDF Image2Garment: Simulation-ready Garment Generation from a Single Image",
+      "url": "https://web.stanford.edu/class/ee367/Winter2026/reports/report_can.pdf",
+      "snippet": "Image2Garment addresses the longstanding challenge of estimating physically accurate, simulation-ready garments from a single in-the-wild image. Our key insight—decomposing the ill-posed image-to-physics mapping through a semantically grounded latent variable of fabric attributes—proves highly effective."
+    },
+    {
+      "title": "Image2Garment - Hugging Face",
+      "url": "https://huggingface.co/image2garment",
+      "snippet": "Org profile for Image2Garment on Hugging Face, the AI community building the future."
+    }
+  ]
+}

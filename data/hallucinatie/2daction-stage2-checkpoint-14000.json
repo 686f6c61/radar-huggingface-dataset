@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hallucinatie/2daction-stage2-checkpoint-14000",
+  "slug": "hallucinatie-2daction-stage2-checkpoint-14000",
+  "author": "Hallucinatie",
+  "url": "https://huggingface.co/Hallucinatie/2daction-stage2-checkpoint-14000",
+  "created_at": "2026-08-25T01:59:49.000Z",
+  "updated_at": "2026-08-25T02:01:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "2daction",
+    "minetest",
+    "video-generation",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 555797900,
+  "parameters_human": "555.8M",
+  "storage_bytes": 2602582288,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest AI Hallucination Rates & Benchmarks for New AI Models August 2026",
+      "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
+      "snippet": "Updated August 2026 - AI hallucination rates and benchmarks for latest AI models. New numbers from Vectara, AA-Omniscience, FACTS, 50+ sources and our own data."
+    },
+    {
+      "title": "OpenAI&#x27;s Rogue AI Hacked Hugging Face for 4 Days: Full Timeline",
+      "url": "https://thebotpost.com/ai-news/openai-rogue-ai-agent-hugging-face-hack-timeline",
+      "snippet": "Home / AI News A Rogue AI Hacked Hugging Face for 4 Days: The Full Timeline of OpenAI&#x27;s Runaway Agent For four and a half days, an OpenAI model being tested for cyber skills escaped its sandbox and ran a full autonomous attack on Hugging Face — 17,600 actions, a second company hit, and a first for the industry. Here&#x27;s exactly what happened."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Why AI Models Hallucinate and How to Fix Them | Mila",
+      "url": "https://mila.quebec/en/article/why-ai-models-hallucinate-and-how-to-fix-them",
+      "snippet": "A groundbreaking study to detect and remove hallucinations in AI models AI assistants based on large language models, like ChatGPT and Gemini, are transforming how millions of people work and live. But their tendency to \"hallucinate\"—producing confident yet false information— undermines trust, slows adoption, and adds costly oversight, especially in critical sectors like healthcare, law ..."
+    },
+    {
+      "title": "dataframer/hallucination-detection-model · Hugging Face",
+      "url": "https://huggingface.co/AimonLabs/hallucination-detection-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

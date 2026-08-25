@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4-epoch3",
+  "slug": "localized-ft-llama-3-1-8b-school-of-reward-hacks-last-third-sft-seed4-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4-epoch3",
+  "created_at": "2026-08-24T22:25:42.000Z",
+  "updated_at": "2026-08-24T22:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3-epoch3",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3-epoch3",
+      "snippet": "Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3 ...",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3-epoch3/discussions",
+      "snippet": "localized-ft / Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3-epoch3 like 0 Follow localized-ft 3 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed5 - friendli.ai",
+      "url": "https://friendli.ai/models/localized-ft/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed5",
+      "snippet": "Run Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed5 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s…"
+    },
+    {
+      "title": "GitHub - kamalraj0611/llama-3-local-setup: This guide walks you through ...",
+      "url": "https://github.com/kamalraj0611/llama-3-local-setup",
+      "snippet": "Conclusion You now have the powerful Llama 3.1 model running locally on your PC! Experiment with different models, fine-tune settings, and enjoy the privacy of a local AI setup."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    }
+  ]
+}

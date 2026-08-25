@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Milor123/ComfyUI-ConvRot-SenseNova-U1.5-8B-MoT-T8",
+  "slug": "milor123-comfyui-convrot-sensenova-u1-5-8b-mot-t8",
+  "author": "Milor123",
+  "url": "https://huggingface.co/Milor123/ComfyUI-ConvRot-SenseNova-U1.5-8B-MoT-T8",
+  "created_at": "2026-08-24T23:12:54.000Z",
+  "updated_at": "2026-08-24T23:13:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "convrot",
+    "quantization",
+    "int8",
+    "w4a8",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:finetune:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13566342,
+  "storage_human": "14 MB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - smthemex/ComfyUI_SenseNova_U1: enseNova-U1: Unifying ...",
+      "url": "https://github.com/smthemex/ComfyUI_SenseNova_U1",
+      "snippet": "enseNova-U1: Unifying Multimodal Understanding and Generation with NEO-Unify Architecture - smthemex/ComfyUI_SenseNova_U1"
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "SenseNova-U1.5 in ComfyUI: Official 4K T2I and Editing Nodes",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-16-sensenova-u1-5-comfyui",
+      "snippet": "SenseTime has shipped the official ComfyUI-SenseNova-U1 node pack (v0.2.0, released 2026-08-16) for its unified multimodal model SenseNova-U1.5-8B-MoT-Preview. The pack runs the model fully locally inside ComfyUI: native 4K text-to-image, single- and multi-image editing, region-controlled edits via masks / bounding boxes / visual markers, and interleaved generation, with a peak VRAM footprint ..."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/ComfyUI-SenseNova-U1",
+      "url": "https://github.com/OpenSenseNova/ComfyUI-SenseNova-U1",
+      "snippet": "Community contributor smthem on Hugging Face (GitHub @smthemex) maintains a collection of SenseNova-U1 GGUF checkpoints, including the 19.9 GB Q8 file SenseNova-U1.5-8B-MoT-Preview-Q8.gguf."
+    },
+    {
+      "title": "joyfox/SenseNova-U1.5-8B-MoT-FP8 · Hugging Face",
+      "url": "https://huggingface.co/joyfox/SenseNova-U1.5-8B-MoT-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-af4046f6-SolarLynx",
+  "slug": "guillekenzo-aros-af4046f6-solarlynx",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-af4046f6-SolarLynx",
+  "created_at": "2026-08-24T20:49:02.000Z",
+  "updated_at": "2026-08-24T21:00:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387547686,
+  "storage_human": "388 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "guillekenzo/aros-00ae1a96-Lynx · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-00ae1a96-Lynx",
+      "snippet": "guillekenzo / aros-00ae1a96-Lynx like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Advanced AI Models - ikalos.ai",
+      "url": "http://www.ikalos.com/advanced",
+      "snippet": "Discover and explore a wide range of AI models powered by Replicate. Browse text-to-video, image generation, and other cutting-edge AI models."
+    }
+  ]
+}

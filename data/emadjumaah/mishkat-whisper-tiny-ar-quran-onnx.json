@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "emadjumaah/mishkat-whisper-tiny-ar-quran-onnx",
+  "slug": "emadjumaah-mishkat-whisper-tiny-ar-quran-onnx",
+  "author": "emadjumaah",
+  "url": "https://huggingface.co/emadjumaah/mishkat-whisper-tiny-ar-quran-onnx",
+  "created_at": "2026-08-24T21:46:45.000Z",
+  "updated_at": "2026-08-24T21:51:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "quran",
+    "ar",
+    "base_model:tarteel-ai/whisper-tiny-ar-quran",
+    "base_model:quantized:tarteel-ai/whisper-tiny-ar-quran",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40845189,
+  "storage_human": "41 MB",
+  "base_model": "tarteel-ai/whisper-tiny-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for tarteel-ai/whisper-tiny-ar-quran - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:tarteel-ai/whisper-tiny-ar-quran",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset tarteel-ai/whisper-tiny-ar-quran Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click ..."
+    },
+    {
+      "title": "raghibdarr/whisper-tiny-ar-quran-onnx · Hugging Face",
+      "url": "https://huggingface.co/raghibdarr/whisper-tiny-ar-quran-onnx",
+      "snippet": "raghibdarr / whisper-tiny-ar-quran-onnx like 0 ONNX whisper Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 4 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "GitHub - NoorBayan/Mishkat: Mishkat is an AI-driven multilingual Quran ...",
+      "url": "https://github.com/NoorBayan/Mishkat",
+      "snippet": "Mishkat is an AI-driven multilingual Quran project that delivers audio translations and explanations of Quranic verses, enhancing accessibility and understanding for a global audience."
+    },
+    {
+      "title": "GitHub - Abdelrahman47-code/Quranic-Verse-Recognition",
+      "url": "https://github.com/Abdelrahman47-code/Quranic-Verse-Recognition",
+      "snippet": "Load Model and Processor: Initializes the Whisper model and processor for Arabic Quranic text. Record and Process Audio: Records user&#x27;s audio input and processes it using the AI model. Identify Verse: Matches the processed audio to the closest Quranic verse using JSON files. Output: Displays the identified Surah and Ayah, and reads it out loud."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

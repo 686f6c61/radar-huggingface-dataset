@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64",
+  "slug": "strongpear-llama3-1-8b-q_g_d1_d2_cot_a-law-instruct-r64",
+  "author": "strongpear",
+  "url": "https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64",
+  "created_at": "2026-08-24T15:36:56.000Z",
+  "updated_at": "2026-08-24T23:28:57.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40286165005,
+  "storage_human": "40.3 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 - Hugging Face",
+      "url": "https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64",
+      "snippet": "Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 This model is a fine-tuned version of meta-llama/Llama-3.1-8B on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.5788 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The ..."
+    },
+    {
+      "title": "strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 at main",
+      "url": "https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64/tree/main",
+      "snippet": "Instructions to use strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 with PEFT:"
+    },
+    {
+      "title": "Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 - friendli.ai",
+      "url": "https://friendli.ai/models/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64",
+      "snippet": "Run strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Llama3.1-8B-QA_CoT-LAW-Instruct-r64 - friendli.ai",
+      "url": "https://friendli.ai/models/strongpear/Llama3.1-8B-QA_CoT-LAW-Instruct-r64",
+      "snippet": "Deploy strongpear/Llama3.1-8B-QA_CoT-LAW-Instruct-r64 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

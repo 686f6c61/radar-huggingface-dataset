@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AdrianNaziru/CARMA",
+  "slug": "adriannaziru-carma",
+  "author": "AdrianNaziru",
+  "url": "https://huggingface.co/AdrianNaziru/CARMA",
+  "created_at": "2026-08-24T19:59:58.000Z",
+  "updated_at": "2026-08-24T20:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 616596787,
+  "storage_human": "617 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ywx649999311/EzTao: A Python Toolkit for AGN Time Series ...",
+      "url": "https://github.com/ywx649999311/EzTao",
+      "snippet": "Let&#x27;s first simulate a DRW/CARMA (1,0) process with a variance of 0.3^2 and a relaxation timescale of 100 days. This time series will have a total of 200 data points and span 10 years."
+    },
+    {
+      "title": "Carma Ai",
+      "url": "https://carma.com/ai/",
+      "snippet": "CARMA AI blends advanced agents with expert analysts to turn complex media data into confident, actionable decisions. Read more!"
+    },
+    {
+      "title": "arXiv:2502.11066v2 [cs.CL] 20 May 2025",
+      "url": "https://arxiv.org/pdf/2502.11066",
+      "snippet": "3B, 5 for Qwen-0.5B and 7 for Qwen-3B. For CARMA weight, optimal values varied by model size: 0.4 and 0.5 were most effective for larger models. We hypothesise that CARMA regularisation exhibits a weaker effect when lower weights are applied, particularly in larger architectures where stronger constraints are needed to s"
+    },
+    {
+      "title": "Corrosion and Risk Modelling Analytics - AMPP Store",
+      "url": "https://content.ampp.org/ampp/proceedings/CONF_MAR2024/2024/1/60441",
+      "snippet": "The CARMA (Corrosion and Risk Modelling Analytics) project aims to provide improved corrosion prediction capability by using Machine Learning techniques. For the selected system, the initial CARMA model is trained by using a combination of online process monitoring data as the input, combined with online corrosion monitoring data as the output. Once trained and validated, the resulting model ..."
+    },
+    {
+      "title": "Article: The Nesterov accelerated gradient algorithm for CARMA models ...",
+      "url": "https://www.inderscience.com/info/inarticle.php?artid=147954",
+      "snippet": "Article: The Nesterov accelerated gradient algorithm for CARMA models with lost input data based on interpolation method Journal: International Journal of Modelling, Identification and Control (IJMIC) 2025 Vol.46 No.1 pp.38 - 46 Abstract: In this paper, an interpolation-based Nesterov accelerated gradient (INAG) algorithm is proposed for controlled autoregressive and moving average (CARMA ..."
+    }
+  ]
+}

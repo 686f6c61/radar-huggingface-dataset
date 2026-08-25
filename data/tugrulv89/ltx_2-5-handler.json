@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "tugrulv89/LTX_2.5-handler",
+  "slug": "tugrulv89-ltx_2-5-handler",
+  "author": "tugrulv89",
+  "url": "https://huggingface.co/tugrulv89/LTX_2.5-handler",
+  "created_at": "2026-08-24T21:35:09.000Z",
+  "updated_at": "2026-08-24T21:42:11.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-video",
+    "ltx-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140754545964,
+  "storage_human": "140.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5: A Complete Guide to LTX&#x27;s Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "Explore LTX-2.5, LTX&#x27;s 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+    },
+    {
+      "title": "LTX-2.5 Model Open Source: AI Video Generator",
+      "url": "https://ltx.io/model/open-source",
+      "snippet": "LTX-2.5 is an open source AI video generator built on a diffusion transformer architecture for production, research, education, and experimentation."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "ai - a tugrulv89 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tugrulv89/ai",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from tugrulv89"
+    }
+  ]
+}

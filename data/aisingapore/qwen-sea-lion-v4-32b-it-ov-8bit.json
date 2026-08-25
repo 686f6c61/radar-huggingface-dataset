@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Qwen-SEA-LION-v4-32B-IT-OV-8BIT",
+  "slug": "aisingapore-qwen-sea-lion-v4-32b-it-ov-8bit",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-OV-8BIT",
+  "created_at": "2026-05-15T09:28:35.000Z",
+  "updated_at": "2026-08-25T00:02:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [
+    "my",
+    "en",
+    "id",
+    "km",
+    "lo",
+    "ms",
+    "zh",
+    "tl",
+    "ta",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "sea-lion",
+    "quantized",
+    "int8",
+    "text-generation",
+    "conversational",
+    "my",
+    "en",
+    "id",
+    "km",
+    "lo",
+    "ms",
+    "zh",
+    "tl",
+    "ta",
+    "th",
+    "vi",
+    "base_model:aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "base_model:finetune:aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32804659014,
+  "storage_human": "32.8 GB",
+  "base_model": "aisingapore/Qwen-SEA-LION-v4-32B-IT",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-32B-IT · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT",
+      "snippet": "Qwen-SEA-LION-v4-32B-IT-8BIT (GPTQ model) Last update: 2025-10-17 SEA-LION is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region. As of 17 Oct 2025, Qwen-SEA-LION-v4-32B-IT excels at Southeast Asian (SEA) tasks when compared to other open models with fewer than 200 billion parameters and demonstrates performance ..."
+    },
+    {
+      "title": "Qwen-SEA-LION-v4-32B-IT | SEA-LION Documentation",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-32b",
+      "snippet": "SEA-LION stands for Southeast Asian Languages In One Network. We performed continued pre-training in English and SEA languages on Qwen3-32B, a decoder model using the Gemma 3 architecture, and post-training to create Qwen-SEA-LION-v4-32B-IT. For tokenization, the model employs the default tokenizer used in Qwen3-32B."
+    },
+    {
+      "title": "sealion/models/sea-lion-v4/qwen-sea-lion-v4-32B.md at main ... - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/qwen-sea-lion-v4-32B.md",
+      "snippet": "SEA-LION stands for Southeast Asian Languages In One Network. We performed continued pre-training in English and SEA languages on Qwen3-32B, a decoder model using the Gemma 3 architecture, and post-training to create Qwen-SEA-LION-v4-32B-IT. For tokenization, the model employs the default tokenizer used in Qwen3-32B. Developed by: Products Pillar, AI Singapore Funded by: Singapore NRF Shared ..."
+    },
+    {
+      "title": "Announcing Qwen-SEA-LION-v4: Advanced Reasoning and Language Depth for ...",
+      "url": "https://sea-lion.ai/blog/qwen-sea-lion-v4-advanced-reasoning/",
+      "snippet": "Built upon the powerful Qwen3-32B foundation model, Qwen-SEA-LION-v4-32B-IT inherits long-context capabilities, broad multilingual support, and modern developer features like function calling, while deepening its specialization in the languages, cultures, and contexts of Southeast Asia. What&#x27;s New in Qwen-SEA-LION-v4?"
+    }
+  ]
+}

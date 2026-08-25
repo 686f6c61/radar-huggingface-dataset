@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-detour-noise-10pct-40ep",
+  "slug": "imkyungjin-pi0-stackcube-detour-noise-10pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-detour-noise-10pct-40ep",
+  "created_at": "2026-08-24T19:34:28.000Z",
+  "updated_at": "2026-08-24T19:36:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_detour_noise_10pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "STM32CubeAI-DC - Software - STMicroelectronics",
+      "url": "https://www.st.com/en/development-tools/stm32cubeai-dc.html",
+      "snippet": "Description STM32Cube.AI Developer Cloud (STM32CubeAI-DC) is a free-of-charge online platform and services to create, optimize, benchmark, and generate artificial intelligence (AI) for the STM32 microcontrollers and microprocessors based on the Arm ® Cortex ® processors. It can leverage AI hardware acceleration (neural processing unit, NPU) whenever available in the target hardware."
+    },
+    {
+      "title": "GitHub - liaowenqi123/stackcube-bc: ManiSkill3 StackCube-v1 Behavioral ...",
+      "url": "https://github.com/liaowenqi123/stackcube-bc/tree/master/",
+      "snippet": "StackCube Baseline Reproduction 基于 ManiSkill 3.0.1 + StackCube-v1 的 Behavioral Cloning (BC) 基线复现。 目录路径建议使用英文，避免 SAPIEN 资产加载问题。"
+    },
+    {
+      "title": "stackcube-bc/README.md at master · liaowenqi123/stackcube-bc",
+      "url": "https://github.com/liaowenqi123/stackcube-bc/blob/master/README.md",
+      "snippet": "StackCube Baseline Reproduction 基于 ManiSkill 3.0.1 + StackCube-v1 的 Behavioral Cloning (BC) 基线复现。 目录路径建议使用英文，避免 SAPIEN 资产加载问题。"
+    }
+  ]
+}

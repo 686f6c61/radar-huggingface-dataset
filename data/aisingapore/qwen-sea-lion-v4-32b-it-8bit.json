@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT",
+  "slug": "aisingapore-qwen-sea-lion-v4-32b-it-8bit",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT",
+  "created_at": "2025-10-17T01:47:34.000Z",
+  "updated_at": "2026-08-25T00:46:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my",
+    "base_model:aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "base_model:quantized:aisingapore/Qwen-SEA-LION-v4-32B-IT",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 9362495360,
+  "parameters_human": "9.36B",
+  "storage_bytes": 34341425213,
+  "storage_human": "34.3 GB",
+  "base_model": "aisingapore/Qwen-SEA-LION-v4-32B-IT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT",
+      "snippet": "Qwen-SEA-LION-v4-32B-IT inherits the following features from Qwen3-32B: 32,768 of context length natively Model Details Model Description SEA-LION stands for Southeast Asian Languages In One Network. Quantization was performed on Qwen-SEA-LION-v4-32B-IT to produce optimized variants that reduce memory requirements while maintaining model quality."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-32B-IT · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sealion/models/sea-lion-v4/qwen-sea-lion-v4-32B.md at main ... - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/qwen-sea-lion-v4-32B.md",
+      "snippet": "SEA-LION stands for Southeast Asian Languages In One Network. We performed continued pre-training in English and SEA languages on Qwen3-32B, a decoder model using the Gemma 3 architecture, and post-training to create Qwen-SEA-LION-v4-32B-IT. For tokenization, the model employs the default tokenizer used in Qwen3-32B. Developed by: Products Pillar, AI Singapore Funded by: Singapore NRF Shared ..."
+    },
+    {
+      "title": "Announcing Qwen-SEA-LION-v4: Advanced Reasoning and Language Depth for ...",
+      "url": "https://sea-lion.ai/blog/qwen-sea-lion-v4-advanced-reasoning/",
+      "snippet": "Built upon the powerful Qwen3-32B foundation model, Qwen-SEA-LION-v4-32B-IT inherits long-context capabilities, broad multilingual support, and modern developer features like function calling, while deepening its specialization in the languages, cultures, and contexts of Southeast Asia. What&#x27;s New in Qwen-SEA-LION-v4?"
+    },
+    {
+      "title": "Qwen-SEA-LION-v4-32B-IT | SEA-LION Documentation",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-32b",
+      "snippet": "SEA-LION stands for Southeast Asian Languages In One Network. We performed continued pre-training in English and SEA languages on Qwen3-32B, a decoder model using the Gemma 3 architecture, and post-training to create Qwen-SEA-LION-v4-32B-IT. For tokenization, the model employs the default tokenizer used in Qwen3-32B."
+    }
+  ]
+}

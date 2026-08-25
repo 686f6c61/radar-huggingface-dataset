@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "s1ghhh/labxarm0822_stack_bowl_50hz_gran10_fixall_ema_10k_bs4x1",
+  "slug": "s1ghhh-labxarm0822_stack_bowl_50hz_gran10_fixall_ema_10k_bs4x1",
+  "author": "s1ghhh",
+  "url": "https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_50hz_gran10_fixall_ema_10k_bs4x1",
+  "created_at": "2026-08-23T19:32:30.000Z",
+  "updated_at": "2026-08-24T20:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35871550673,
+  "storage_human": "35.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Hamilton Beach Stack & Snap 10-Cup Food Processor, 500 W, 2-Speed with ...",
+      "url": "https://www.walmart.com/ip/Hamilton-Beach-Stack-Snap-Food-Processor-with-Bowl-Scraper-10-Cup-Capacity-Black-70822FG/1579690524",
+      "snippet": "Hamilton Beach 10 Cup Food Processor with Stack & Snap design, extra-large chute, bowl scraper, 3 attachments, and 500 watt motor for easy prep and versatile processing."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "Stack Overflow | The World&#x27;s Largest Online Community for Developers"
+    },
+    {
+      "title": "Artificial intelligence | European Medicines Agency (EMA)",
+      "url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence",
+      "snippet": "The European medicines regulatory network aims to enable regulatory systems in the European Union (EU) to use the capabilities of artificial intelligence (AI) while managing its risks. Capabilities include personal productivity, process automation, better insights into data and decision-making support for the benefit of public and animal health."
+    }
+  ]
+}

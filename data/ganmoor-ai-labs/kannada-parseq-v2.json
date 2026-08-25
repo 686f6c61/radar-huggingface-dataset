@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ganmoor-ai-labs/kannada-parseq-v2",
+  "slug": "ganmoor-ai-labs-kannada-parseq-v2",
+  "author": "ganmoor-ai-labs",
+  "url": "https://huggingface.co/ganmoor-ai-labs/kannada-parseq-v2",
+  "created_at": "2026-08-24T22:51:38.000Z",
+  "updated_at": "2026-08-24T22:52:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "kn"
+  ],
+  "tags": [
+    "ocr",
+    "kannada",
+    "text-recognition",
+    "parseq",
+    "indic",
+    "kn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 382536931,
+  "storage_human": "383 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "parseq/README.md at main · baudm/parseq · GitHub",
+      "url": "https://github.com/baudm/parseq/blob/main/README.md",
+      "snippet": "This arbitrary decoding characteristic results in a unified STR model—PARSeq—capable of context-free and context-aware inference, as well as iterative prediction refinement using bidirectional context without requiring a standalone language model. PARSeq can be considered an ensemble of AR models with shared architecture and weights:"
+    },
+    {
+      "title": "ganmoor-ai-labs (Santosh ganmoor) - Hugging Face",
+      "url": "https://huggingface.co/ganmoor-ai-labs/models",
+      "snippet": "ganmoor-ai-labs/piiguard-qwen3-1.7b Text Generation • 2B•Updated 6 days ago• 132 • 4"
+    },
+    {
+      "title": "parseq_fork/README.md at main · eidos-ai/parseq_fork · GitHub",
+      "url": "https://github.com/eidos-ai/parseq_fork/blob/main/README.md",
+      "snippet": "This arbitrary decoding characteristic results in a unified STR model—PARSeq—capable of context-free and context-aware inference, as well as iterative prediction refinement using bidirectional context without requiring a standalone language model."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Parseq AI Project Repository Download and Installation Guide",
+      "url": "https://www.aibase.com/repos/project/parseq",
+      "snippet": "View the Parseq AI project repository download and installation guide, learn about the latest development trends and innovations."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mikiiimouse/mikimouse-q-w-e-n-duplicate",
+  "slug": "mikiiimouse-mikimouse-q-w-e-n-duplicate",
+  "author": "mikiiimouse",
+  "url": "https://huggingface.co/mikiiimouse/mikimouse-q-w-e-n-duplicate",
+  "created_at": "2026-08-24T20:30:06.000Z",
+  "updated_at": "2026-08-24T20:30:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 248417581600,
+  "storage_human": "248.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "ai #mikimouse #shortvideo - YouTube",
+      "url": "https://www.youtube.com/watch?v=sZizV5ssbbw",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Kimi K3: AI That Evolves With You - [2.8T Parameters & 1M Context]",
+      "url": "https://kimik2ai.com/k3/",
+      "snippet": "Kimi K3 Is Here The world&#x27;s largest open-weight AI model - 2.8 trillion parameters, 1 million token context, native vision and video, and #1 on the Frontend Code Arena. Available now via API and kimi.com. Open weights shipping July 27, 2026."
+    },
+    {
+      "title": "Mickey and Donald Have a Farm | S4 E1 | Full Episode - YouTube",
+      "url": "https://www.youtube.com/watch?v=XOnHtStmbCI",
+      "snippet": "Mickey, Donald, Minnie, Goofy, and Daisy plan to rescue the missing animals from the Clubhouse Farm!Watch Mickey Mouse Clubhouse on Disney Junior! And check ..."
+    },
+    {
+      "title": "Best Open Source AI Models July 2026: Full Collection",
+      "url": "https://www.buildfastwithai.com/blogs/best-open-source-ai-models-2026",
+      "snippet": "Best Open Source AI Models in 2026: The Complete Collection In the space of 31 days, open-weight models matched the closed frontier on terminal coding, set the all-time record on web browsing agents, and shipped the largest model ever released to the public. June 16 to July 16, 2026 was the strongest month in open AI history, and if your mental model of open source still says cheaper but ..."
+    }
+  ]
+}

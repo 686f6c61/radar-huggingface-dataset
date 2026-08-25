@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "relhamine/syracuse",
+  "slug": "relhamine-syracuse",
+  "author": "relhamine",
+  "url": "https://huggingface.co/relhamine/syracuse",
+  "created_at": "2026-08-24T19:58:18.000Z",
+  "updated_at": "2026-08-24T19:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clementine · Syracuse University Data and AI",
+      "url": "https://ai.syracuse.edu/clementine.html",
+      "snippet": "Clementine is Syracuse University&#x27;s own AI platform — build personalized AI agents grounded in your own course materials, for students, faculty and staff."
+    },
+    {
+      "title": "Clementine | Your AI Guide | Syracuse University",
+      "url": "https://clementine.syr.edu/",
+      "snippet": "Your AI Guide to Syracuse University Clementine connects you to the knowledge that powers campus, all through intelligent assistants built by Syracuse, for you."
+    },
+    {
+      "title": "AI at Syracuse University · ITS Data and AI",
+      "url": "https://ai.syracuse.edu/",
+      "snippet": "Artificial intelligence at Syracuse University — the AI tools available to every student, faculty and staff member, and the stories of AI put to work across campus."
+    },
+    {
+      "title": "AI @ Syracuse University · SU ITS Data & AI",
+      "url": "https://julianhernandez2155.github.io/su-kb-site/data-ai/ai-syracuse-university.html",
+      "snippet": "Landing page introducing AI at Syracuse University and the approved tools available to all students, faculty, and staff: Claude, mentorAI, Copilot, and Gemini."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

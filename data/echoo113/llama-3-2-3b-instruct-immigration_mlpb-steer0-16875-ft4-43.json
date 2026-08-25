@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.43",
+  "slug": "echoo113-llama-3-2-3b-instruct-immigration_mlpb-steer0-16875-ft4-43",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.43",
+  "created_at": "2026-08-24T20:14:49.000Z",
+  "updated_at": "2026-08-24T20:22:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211934001,
+  "storage_human": "212 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.43",
+      "url": "https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.43",
+      "snippet": "Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.43 ... Copy to bucket new Use this model"
+    },
+    {
+      "title": "Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.198438-ft4.42 at ...",
+      "url": "https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.198438-ft4.42/tree/main",
+      "snippet": "Echoo113 / Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.198438-ft4.42 like 0 Transformers Safetensors Generated from Trainer sft trl Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "llama3.2:3b - ollama.com",
+      "url": "https://ollama.com/library/llama3.2:3b",
+      "snippet": "The 3B model outperforms the Gemma 2 2.6B and Phi 3.5-mini models on tasks such as: Following instructions Summarization Prompt rewriting Tool use ... 1B parameters The 1B model is competitive with other 1-3B parameter models. It&#x27;s use cases include: Personal information management Multilingual knowledge retrieval Rewriting tasks running ..."
+    },
+    {
+      "title": "llama-3.2-3b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3.2-3b-instruct",
+      "snippet": "Advanced state-of-the-art small language model with language understanding, superior reasoning, and text generation."
+    },
+    {
+      "title": "llama-3.2-3b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3.2-3b-instruct/modelcard",
+      "snippet": "Llama 3.2 Model Family: Token counts refer to pre-training data only. All model versions use Grouped-Query Attention (GQA) for improved inference scalability. Status: This is a static model trained on an offline dataset. Future versions may be released that improve model capabilities and safety."
+    }
+  ]
+}

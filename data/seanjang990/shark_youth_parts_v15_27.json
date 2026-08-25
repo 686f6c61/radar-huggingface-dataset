@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seanjang990/shark_youth_parts_v15_27",
+  "slug": "seanjang990-shark_youth_parts_v15_27",
+  "author": "seanjang990",
+  "url": "https://huggingface.co/seanjang990/shark_youth_parts_v15_27",
+  "created_at": "2026-08-25T01:43:26.000Z",
+  "updated_at": "2026-08-25T01:43:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340219485,
+  "storage_human": "340 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seanjang990/shark_youth_parts_v14_25 · Hugging Face",
+      "url": "https://huggingface.co/seanjang990/shark_youth_parts_v14_25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seanjang990/shark_youth_parts_v13_20 · Hugging Face",
+      "url": "https://huggingface.co/seanjang990/shark_youth_parts_v13_20",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seanjang990 - GitHub",
+      "url": "https://github.com/seanjang990/",
+      "snippet": "Add an optional note: Please don&#x27;t include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you. Block user comfyui-document-auto-crop comfyui-document-auto-crop Public 인물이미지 들어오면 가장자리 자동 크롭 및 자동 회전 후 11:14 비율로 조정하는 comfyui 커스텀 노드 ..."
+    },
+    {
+      "title": "GitHub - yungGriff/SHARK: SHARK - High Performance Machine Learning ...",
+      "url": "https://github.com/yungGriff/SHARK/",
+      "snippet": "See tank/README.md for further instructions on how to run model tests and benchmarks from the SHARK tank."
+    },
+    {
+      "title": "Shark AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/shark",
+      "snippet": "Discover Shark AI models on PixAI - Find anime AI models and LoRAs tagged with Shark"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ariacompute/qwen3.5-0.8b_q4",
+  "slug": "ariacompute-qwen3-5-0-8b_q4",
+  "author": "ariacompute",
+  "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q4",
+  "created_at": "2026-08-08T00:04:00.000Z",
+  "updated_at": "2026-08-25T00:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aria-engine",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "aria-engine",
+    "qwen3.5",
+    "quantized",
+    "group-quantization",
+    "hadamard",
+    "lloyd-max",
+    "4-bit",
+    "on-device",
+    "edge",
+    "mobile",
+    "text-generation",
+    "tool-calling",
+    "embeddings",
+    "en",
+    "zh",
+    "dataset:togethercomputer/RedPajama-Data-1T",
+    "dataset:EleutherAI/the_pile",
+    "dataset:bigcode/the-stack",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456910766,
+  "storage_human": "457 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ariacompute/qwen3.5-0.8b_q4 · Hugging Face",
+      "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ariacompute/qwen3.5-0.8b_q4 at main - Hugging Face",
+      "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q4/blob/main/README.md",
+      "snippet": "Model Description Qwen3.5-0.8B is a .8-billion-parameter, dense Transformer decoder-only language model developed by the Qwen team at Alibaba Cloud, featuring a 3:1 DeltaNet linear-attention to full-attention layer ratio for efficient long-context processing. Pre-trained on diverse public corpora and aligned via SFT + DPO. This distribution is provided by Aria Compute as an aria-quant-bundle ..."
+    },
+    {
+      "title": "model/qwen/qwen3.5-0.8b at main · ariacompute/model · GitHub",
+      "url": "https://github.com/ariacompute/model/tree/main/qwen/qwen3.5-0.8b",
+      "snippet": "aria model. Contribute to ariacompute/model development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    }
+  ]
+}

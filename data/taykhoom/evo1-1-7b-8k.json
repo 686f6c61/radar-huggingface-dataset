@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/Evo1-1-7B-8K",
+  "slug": "taykhoom-evo1-1-7b-8k",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/Evo1-1-7B-8K",
+  "created_at": "2026-06-06T23:31:30.000Z",
+  "updated_at": "2026-08-25T03:07:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "evo1",
+    "text-generation",
+    "DNA",
+    "language-model",
+    "StripedHyena",
+    "Evo",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 648,
+  "trending_score": 0,
+  "parameters": 6452781056,
+  "parameters_human": "6.45B",
+  "storage_bytes": 12913213592,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/Evo1-1-7B-8K · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/Evo1-1-7B-8K",
+      "snippet": "Use this model Instructions to use Taykhoom/Evo1-1-7B-8K with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries; Transformers"
+    },
+    {
+      "title": "Evo1 - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/evo1",
+      "snippet": "HF ports of Evo1: 3 models spanning 8K-131K context and 300B-450B pretraining tokens."
+    },
+    {
+      "title": "Evo 1.5 8k Base - biolm.ai",
+      "url": "https://biolm.ai/models/evo-15-8k-base/",
+      "snippet": "Evo 1.5 8k Base is a 7B-parameter autoregressive genomic language model trained on ~300B nucleotides from prokaryotic genomes with 8,192-token context at single-nucleotide resolution. The API provides GPU-accelerated scoring (log-probabilities) and conditional generation of unambiguous DNA sequences up to 4,096 bases, with batch sizes up to 2 and configurable sampling (temperature, top-k/top-p ..."
+    },
+    {
+      "title": "[2511.04555] Evo-1: Lightweight Vision-Language-Action Model with ...",
+      "url": "https://arxiv.org/abs/2511.04555",
+      "snippet": "Vision-Language-Action (VLA) models have emerged as a powerful framework that unifies perception, language, and control, enabling robots to perform diverse tasks through multimodal understanding. However, current VLA models typically contain massive parameters and rely heavily on large-scale robot data pretraining, leading to high computational costs during training, as well as limited ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Evo",
+      "snippet": "Models 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: Evo Clear all"
+    }
+  ]
+}

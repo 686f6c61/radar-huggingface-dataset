@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "henry1477/translategemma-12b-it-NVFP4A16",
+  "slug": "henry1477-translategemma-12b-it-nvfp4a16",
+  "author": "henry1477",
+  "url": "https://huggingface.co/henry1477/translategemma-12b-it-NVFP4A16",
+  "created_at": "2026-08-24T23:33:16.000Z",
+  "updated_at": "2026-08-24T23:33:32.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "translation",
+    "subtitles",
+    "compressed-tensors",
+    "nvfp4",
+    "vllm",
+    "base_model:google/translategemma-12b-it",
+    "base_model:quantized:google/translategemma-12b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 8100421319,
+  "storage_human": "8.1 GB",
+  "base_model": "google/translategemma-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/TranslateGemma-12B-IT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/TranslateGemma-12B-IT",
+      "snippet": "This model provides a few variants of TranslateGemma 12B that are ready for deployment on web using the MediaPipe LLM Inference API. See google/translategemma-12b-it for more details."
+    },
+    {
+      "title": "translategemma:12b - ollama.com",
+      "url": "https://ollama.com/library/translategemma:12b",
+      "snippet": "TranslateGemma is a new collection of open translation models built on Gemma 3, available in 4B, 12B, and 27B parameter sizes. It represents a significant step forward in open translation, helping people communicate across 55 languages, no matter where they are or what device they own."
+    },
+    {
+      "title": "TranslateGemma: A new family of open translation models",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/",
+      "snippet": "\"TranslateGemma\" is a new suite of open translation models built on Gemma 3 in 4B, 12B, and 27B sizes. These models translate across 55 languages and are efficient without sacrificing translation quality. The 12B TranslateGemma model outperforms the Gemma 3 27B baseline, using less than half the parameters."
+    },
+    {
+      "title": "TranslateGemma 12B — 13.19B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/translategemma-12b",
+      "snippet": "TranslateGemma 12B: 13.19B parameters, 128K context, chat, multilingual, vision. 6 benchmarks, 10 quantizations. VRAM requirements, speed estimates, and Ollama commands."
+    },
+    {
+      "title": "kaitchup/translategemma-12b-it-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/kaitchup/translategemma-12b-it-NVFP4",
+      "snippet": "This is a quantized variant of google/translategemma-12b-it, created by The Kaitchup (newsletter: https://kaitchup.substack.com). More details (training recipe, benchmarks, and recommended settings) will be added later."
+    }
+  ]
+}

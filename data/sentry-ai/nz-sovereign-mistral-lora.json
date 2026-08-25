@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sentry-ai/nz-sovereign-mistral-lora",
+  "slug": "sentry-ai-nz-sovereign-mistral-lora",
+  "author": "sentry-ai",
+  "url": "https://huggingface.co/sentry-ai/nz-sovereign-mistral-lora",
+  "created_at": "2026-08-24T20:14:17.000Z",
+  "updated_at": "2026-08-24T20:21:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "tags": [
+    "peft",
+    "new-zealand",
+    "sovereign-ai",
+    "lora",
+    "en",
+    "mi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Private LLM Infrastructure NZ & Australia | Sentry AI",
+      "url": "https://sentrysolutions.ai/private-llm-infrastructure",
+      "snippet": "Run open models on hardware you own. Private LLM infrastructure for New Zealand and Australian teams: local for the daily 80 percent, cloud for the frontier."
+    },
+    {
+      "title": "GitHub - JamesWeb3/sovereign-agentic-pipeline: A fully open-source ...",
+      "url": "https://github.com/JamesWeb3/sovereign-agentic-pipeline",
+      "snippet": "A fully open-source Sovereign Agentic Pipeline for New Zealand: an AI system a NZ business can run end to end on NZ renewable compute, where no data leaves the country. Research + build, Aug-Dec 2026. By Sentry AI."
+    },
+    {
+      "title": "Sentry AI: The AI Transformation Partner | NZ and Australia",
+      "url": "https://sentrysolutions.ai/",
+      "snippet": "The AI transformation partner for modern businesses. Sentry AI gets value from the AI you already pay for, registers and governs every agent you run, and puts private LLM infrastructure inside your walls. Auckland based, working across New Zealand and Australia."
+    },
+    {
+      "title": "In-region inference, open models, and new European infrastructure for ...",
+      "url": "https://mistral.ai/news/regional-inference-open-models-new-compute/",
+      "snippet": "Mistral is bringing together the inference infrastructure, open models, and long-term commitments Europe needs to control its AI future, and setting a roadmap for the world."
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

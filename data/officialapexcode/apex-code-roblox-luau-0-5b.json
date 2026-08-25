@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "officialApexCode/apex-code-roblox-luau-0.5b",
+  "slug": "officialapexcode-apex-code-roblox-luau-0-5b",
+  "author": "officialApexCode",
+  "url": "https://huggingface.co/officialApexCode/apex-code-roblox-luau-0.5b",
+  "created_at": "2026-08-24T20:48:33.000Z",
+  "updated_at": "2026-08-24T20:49:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1397327510,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apex Legends Codes 2026: All Active & Working Codes",
+      "url": "https://www.esports.net/wiki/guides/codes-for-apex-legends-to-redeem/",
+      "snippet": "All Active Apex Legends Codes As of February 2026, there aren&#x27;t any active Apex Legends codes that players can redeem universally (the kind where everyone can enter the same string and get rewards). When Apex redeem codes do show up, they&#x27;re usually limited-time and often unique to a specific promotion or platform voucher, so whether a code works depends on where it came from, the account ..."
+    },
+    {
+      "title": "Apex Legends Codes - Pro Game Guides",
+      "url": "https://progameguides.com/apex-legends/apex-legends-codes/",
+      "snippet": "Apex Legends is one of the most popular battle royale titles, featuring fast-paced combat and regular updates. You can choose from one of many different heroes and battle against other players. Group up with your friends and increase your odds of being the last team standing. Codes in Apex Legends ..."
+    },
+    {
+      "title": "Apex Legends Codes (August 2026): Earn Free items and Apex coins",
+      "url": "https://gamerjournalist.com/apex-legends-codes-earn-free-items-and-apex-coins/",
+      "snippet": "Grab your jump pads and VTOL Jets, we are going to take a look at all the available Apex Legends Codes."
+    },
+    {
+      "title": "Luau · GitHub",
+      "url": "https://github.com/luau-lang",
+      "snippet": "a small, fast, and embeddable programming language based on Lua with a gradual type system. Developed and maintained by @Roblox. - Luau"
+    },
+    {
+      "title": "Releases: luau-lang/luau - GitHub",
+      "url": "https://github.com/luau-lang/luau/releases",
+      "snippet": "A small, fast, and embeddable programming language based on Lua with a gradual type system. - luau-lang/luau"
+    }
+  ]
+}

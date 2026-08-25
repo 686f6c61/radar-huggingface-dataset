@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "toeb34234234/SmolLM2-135M-Q2_K-GGUF",
+  "slug": "toeb34234234-smollm2-135m-q2_k-gguf",
+  "author": "toeb34234234",
+  "url": "https://huggingface.co/toeb34234234/SmolLM2-135M-Q2_K-GGUF",
+  "created_at": "2026-08-25T01:01:34.000Z",
+  "updated_at": "2026-08-25T01:01:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 88201312,
+  "storage_human": "88 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski/SmolLM2-135M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 Quantization Guide: Ultra-Low Memory AI Deployment",
+      "url": "https://markaicode.com/smollm2-quantization-ultra-low-memory-deployment/",
+      "snippet": "Deploy SmolLM2 with GGUF quantization techniques for ultra-low memory usage. Complete guide with code examples and performance optimization tips."
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 Table of Contents Model Summary Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction ..."
+    },
+    {
+      "title": "SmolLM2 — Local Setup, VRAM, and Use Cases (2026) | local-llm.net",
+      "url": "https://www.local-llm.net/models/smollm2/",
+      "snippet": "HuggingFace&#x27;s small SmolLM2. 135M, 360M, and 1.7B sizes for edge and IoT. Trained on high-quality data. Run SmolLM2 locally with Ollama, Mullama, or llama.cpp. VRAM requirements, 3 size options, and which size fits your hardware."
+    }
+  ]
+}

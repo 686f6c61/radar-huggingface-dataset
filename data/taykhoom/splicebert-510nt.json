@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/SpliceBERT-510nt",
+  "slug": "taykhoom-splicebert-510nt",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/SpliceBERT-510nt",
+  "created_at": "2026-06-03T23:22:11.000Z",
+  "updated_at": "2026-08-25T03:07:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert_updated",
+    "fill-mask",
+    "rna",
+    "language-model",
+    "splicing",
+    "custom_code",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 129,
+  "trending_score": 0,
+  "parameters": 19452938,
+  "parameters_human": "19.5M",
+  "storage_bytes": 231325480,
+  "storage_human": "231 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/SpliceBERT-510nt · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/SpliceBERT-510nt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taykhoom/SpliceBERT-human-510nt · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/SpliceBERT-human-510nt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "splicebert.510nt huggingface.co api & multimolecule splicebert.510nt ...",
+      "url": "https://www.toolify.ai/ai-model/multimolecule-splicebert-510nt",
+      "snippet": "splicebert.510nt huggingface.co is an AI model on huggingface.co that provides splicebert.510nt&#x27;s model effect (), which can be used instantly with this multimolecule splicebert.510nt model. huggingface.co supports a free trial of the splicebert.510nt model, and also provides paid use of the splicebert.510nt."
+    },
+    {
+      "title": "SpliceBERT - RNAZoo",
+      "url": "https://ericmalekos.github.io/RNA-Zoo/models/SpliceBERT/",
+      "snippet": "Three pretrained variants ship in the upstream Zenodo bundle (SpliceBERT.510nt, SpliceBERT-human.510nt, SpliceBERT.1024nt); RNAZoo uses the 1024nt broad-pretrain variant for the longest context window and broadest species coverage. The pipeline currently exposes only the inference path (per-sequence and optional per-token embeddings)."
+    },
+    {
+      "title": "Rm-LR/models/SpliceBERT-human.510nt at main - GitHub",
+      "url": "https://github.com/LiangThree/Rm-LR/tree/main/models/SpliceBERT-human.510nt",
+      "snippet": "Contribute to LiangThree/Rm-LR development by creating an account on GitHub."
+    }
+  ]
+}

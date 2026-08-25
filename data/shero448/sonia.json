@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shero448/sonia",
+  "slug": "shero448-sonia",
+  "author": "Shero448",
+  "url": "https://huggingface.co/Shero448/sonia",
+  "created_at": "2026-08-25T01:41:44.000Z",
+  "updated_at": "2026-08-25T01:42:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:John6666/prefect-illustrious-xl-v15-sdxl",
+    "base_model:adapter:John6666/prefect-illustrious-xl-v15-sdxl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230723624,
+  "storage_human": "231 MB",
+  "base_model": "John6666/prefect-illustrious-xl-v15-sdxl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shero448/sayan · Hugging Face",
+      "url": "https://huggingface.co/Shero448/sayan",
+      "snippet": "Instructions to use Shero448/sayan with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Shero448/sayan with Diffusers: ... Notebooks Google Colab Kaggle Local AppsSettings Draw Things DiffusionBee sayan Trigger words Download model"
+    },
+    {
+      "title": "Shero448/WAI-NSFW-illustrious-SDXL · Hugging Face",
+      "url": "https://huggingface.co/Shero448/WAI-NSFW-illustrious-SDXL",
+      "snippet": "Shero448 / WAI-NSFW-illustrious-SDXL like 0 Not-For-All-Audiences Model card FilesFiles and versions Community"
+    },
+    {
+      "title": "Shero448/melon22 - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/Shero448/melon22",
+      "snippet": "Run Shero448/melon22 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Sonia the Hedgehog (Sonic Underground)｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1806219725429895330",
+      "snippet": "Just created this stunning character anime art with the amazing &#x27;Sonia the Hedgehog (Sonic Underground)&#x27; model on PixAI! Search for \"Sonia the Hedgehog (Sonic Underground)\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Sonia | ソニア 苏尼娅 | 淫の方程式 immorality - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1907315434995462427",
+      "snippet": "Generate stunning anime, woman, character anime art with the &#x27;Sonia | ソニア 苏尼娅 | 淫の方程式 immorality&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

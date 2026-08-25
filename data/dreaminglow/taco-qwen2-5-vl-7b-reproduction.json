@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DreamingLow/TACO-Qwen2.5-VL-7B-Reproduction",
+  "slug": "dreaminglow-taco-qwen2-5-vl-7b-reproduction",
+  "author": "DreamingLow",
+  "url": "https://huggingface.co/DreamingLow/TACO-Qwen2.5-VL-7B-Reproduction",
+  "created_at": "2026-08-24T15:39:05.000Z",
+  "updated_at": "2026-08-25T02:28:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "vision-language",
+    "visual-reasoning",
+    "reinforcement-learning",
+    "taco",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595837928,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "GitHub - elsawhs/qwen2.5-vl: Qwen2.5-VL is the multimodal large ...",
+      "url": "https://github.com/elsawhs/qwen2.5-vl",
+      "snippet": "Qwen2.5-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud. - elsawhs/qwen2.5-vl"
+    },
+    {
+      "title": "[2502.13923] Qwen2.5-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2502.13923",
+      "snippet": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with Qwen2.5-or visit the Qwen2.5 collection, and you will find all you need! Enjoy! In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 ..."
+    }
+  ]
+}

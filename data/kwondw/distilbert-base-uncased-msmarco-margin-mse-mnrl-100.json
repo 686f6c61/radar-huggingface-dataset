@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "id": "kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-100",
+  "slug": "kwondw-distilbert-base-uncased-msmarco-margin-mse-mnrl-100",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-100",
+  "created_at": "2026-08-25T01:06:14.000Z",
+  "updated_at": "2026-08-25T01:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "distilbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:100",
+    "loss:CombinedMarginMSEMNRLLoss",
+    "en",
+    "arxiv:1908.10084",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66362880,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265462608,
+  "storage_human": "265 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@1",
+      "value": 0.02
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@3",
+      "value": 0.04
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@5",
+      "value": 0.08
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@10",
+      "value": 0.14
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@1",
+      "value": 0.02
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@3",
+      "value": 0.013333333333333332
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@5",
+      "value": 0.016
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@10",
+      "value": 0.013999999999999999
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@1",
+      "value": 0.02
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@3",
+      "value": 0.04
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@5",
+      "value": 0.08
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@10",
+      "value": 0.14
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Ndcg@10",
+      "value": 0.0683231156242008
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Mrr@10",
+      "value": 0.046936507936507936
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Map@100",
+      "value": 0.06893759163116144
+    }
+  ],
+  "sources": [
+    {
+      "title": "kwondw/distilbert-base-uncased-msmarco-margin-mse · Hugging Face",
+      "url": "https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse",
+      "snippet": "kwondw / distilbert-base-uncased-msmarco-margin-mse like 0 Sentence Similarity sentence-transformers Safetensors English distilbert feature-extraction Generated from Trainer dataset_size:100 loss:MarginMSELoss Eval Results (legacy) text-embeddings-inference arxiv:1908.10084 arxiv:2010.02666 License:apache-2.0 Model card FilesFiles and versions ..."
+    },
+    {
+      "title": "kwondw/distilbert-base-uncased-msmarco-margin-mse-1000000 · Hugging Face",
+      "url": "https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-1000000",
+      "snippet": "Instructions to use kwondw/distilbert-base-uncased-msmarco-margin-mse-1000000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Distilbert Base Uncased Msmarco Margin Mse 1000000",
+      "url": "https://free2aitools.com/model/kwondw/distilbert-base-uncased-msmarco-margin-mse-1000000",
+      "snippet": "Registry entry for model Distilbert Base Uncased Msmarco Margin Mse 1000000; source metadata pending."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-base-uncased",
+      "snippet": "DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-distilbert-base-uncased",
+      "snippet": "distilbert/distilbert-base-uncased powered by Hugging Face Inference Toolkit Original Model Card fill-mask Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    }
+  ]
+}

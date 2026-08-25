@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "huggsook/lerobot-diffusion-pusht-sim",
+  "slug": "huggsook-lerobot-diffusion-pusht-sim",
+  "author": "huggsook",
+  "url": "https://huggingface.co/huggsook/lerobot-diffusion-pusht-sim",
+  "created_at": "2026-08-24T22:39:13.000Z",
+  "updated_at": "2026-08-24T22:39:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "physical-ai",
+    "imitation-learning",
+    "diffusion-policy",
+    "pusht",
+    "aloha",
+    "simulation",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262709062,
+  "parameters_human": "262.7M",
+  "storage_bytes": 1051110370,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "PushT 2D Manipulation",
+      "dataset": null,
+      "metric": "Average Cumulative Reward",
+      "value": 66.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "lerobot/diffusion_pusht · Hugging Face",
+      "url": "https://huggingface.co/lerobot/diffusion_pusht",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot/diffusion_pusht at main - Hugging Face",
+      "url": "https://huggingface.co/lerobot/diffusion_pusht/tree/main",
+      "snippet": "LeRobot 940 Robotics Transformers Safetensors lerobot/pusht diffusion-policy model_hub_mixin pytorch_model_hub_mixin arxiv:2303.04137 License:apache-2.0 Model card FilesFiles and versions Community 3 Train Deploy Use this model main diffusion_pusht 5 contributors History:22 commits aliberts HF staff imstevenpmwork HF staff refactor ..."
+    },
+    {
+      "title": "GitHub - ellenjxu/lerobot_pusht: Diffusion sim2real on the PushT task",
+      "url": "https://github.com/ellenjxu/lerobot_pusht",
+      "snippet": "For the sim component, we add an additional vanilla PushT task (PushTEnv) to the diffusion policy repo. The vanilla Push T takes in 5 observations (x,y,x_T,y_T,theta_T) instead of 9 for the keypoint. To train a diffusion policy in sim: ... Finally, we experiment with sim2real transfer from the learned simulation model into real Lerobot environment."
+    },
+    {
+      "title": "diffusion_pusht huggingface.co api & lerobot diffusion_pusht github AI ...",
+      "url": "https://www.toolify.ai/ai-model/lerobot-diffusion-pusht",
+      "snippet": "diffusion_pusht huggingface.co is an AI model on huggingface.co that provides diffusion_pusht&#x27;s model effect (), which can be used instantly with this lerobot diffusion_pusht model. huggingface.co supports a free trial of the diffusion_pusht model, and also provides paid use of the diffusion_pusht. Support call diffusion_pusht model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "diffusion_pusht: Video-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/diffusion-pusht-lerobot",
+      "snippet": "Overview diffusion_pusht is a Diffusion Policy model trained on the PushT environment from gym-pusht, implementing the visuomotor policy learning approach described in the Diffusion Policy paper. Built and maintained by lerobot, this model uses the LeRobot framework and generates robot manipulation actions by conditioning a diffusion model on visual observations. The model was trained for ..."
+    }
+  ]
+}

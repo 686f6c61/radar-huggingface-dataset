@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Gemma-SEA-LION-v4-4B-VL",
+  "slug": "aisingapore-gemma-sea-lion-v4-4b-vl",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL",
+  "created_at": "2026-02-05T11:06:37.000Z",
+  "updated_at": "2026-08-25T00:03:16.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "my"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "my",
+    "arxiv:2502.14301",
+    "arxiv:2311.07911",
+    "arxiv:2306.05685",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638988061,
+  "storage_human": "8.6 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Gemma-SEA-LION-v4-4B-VL · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL",
+      "snippet": "A newer version of this model is available: aisingapore/Qwen-SEA-LION-v4.5-27B-IT"
+    },
+    {
+      "title": "aisingapore/Gemma-SEA-LION-v4-4B-VL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL-GGUF",
+      "snippet": "Gemma-SEA-LION-v4-4B-VL-GGUF [Last update: 2026-02-05] SEA-LION is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region. Gemma-SEA-LION-v4-4B-VL is a 4-billion parameter Vision-Language Model (VLM) built upon the gemma-3-4b-it architecture. To ensure domain adaptation for the region, the model underwent rigorous post ..."
+    },
+    {
+      "title": "SEA-LION v4 | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4",
+      "snippet": "Gemma-SEA-LION-v4-4B-VL A lightweight model optimized for mobile and edge devices, bringing robust SEA language understanding to environments with strict memory and latency constraints."
+    },
+    {
+      "title": "aisingapore/Gemma-SEA-LION-v4-4B-VL",
+      "url": "https://ollama.com/aisingapore/Gemma-SEA-LION-v4-4B-VL",
+      "snippet": "Gemma-SEA-LION-v4-4B-VL is a multilingual, multimodal model which has been pretrained and instruct-tuned for the Southeast Asia region. Developed by AI Singapore and funded by National Research Foundation, Singapore."
+    },
+    {
+      "title": "sealion/models/sea-lion-v4/sea-lion-v4.md at main - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/sea-lion-v4.md",
+      "snippet": "Gemma-SEA-LION-v4-4B-VL A lightweight model optimized for mobile and edge devices, bringing robust SEA language understanding to environments with strict memory and latency constraints. Gemma-SEA-LION-v4-27B-VL Our powerful vision-language model, expertly trained to interpret both images and text with a deep, nuanced understanding of Southeast Asian cultural contexts. Qwen-SEA-LION-v4-4B-VL ..."
+    }
+  ]
+}

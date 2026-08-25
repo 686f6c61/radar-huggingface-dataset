@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "p4ik/Qwen3.8-27B-MLX-OptiQ-4bit",
+  "slug": "p4ik-qwen3-8-27b-mlx-optiq-4bit",
+  "author": "p4ik",
+  "url": "https://huggingface.co/p4ik/Qwen3.8-27B-MLX-OptiQ-4bit",
+  "created_at": "2026-08-14T19:48:03.000Z",
+  "updated_at": "2026-08-24T20:11:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "optiq",
+    "quantized",
+    "mixed-precision",
+    "4bit",
+    "8bit",
+    "apple-silicon",
+    "vision-language",
+    "qwen3.8",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 234,
+  "trending_score": 0,
+  "parameters": 5730790640,
+  "parameters_human": "5.73B",
+  "storage_bytes": 39740252995,
+  "storage_human": "39.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "p4ik/Qwen3.8-27B-MLX-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/p4ik/Qwen3.8-27B-MLX-OptiQ-4bit",
+      "snippet": "A mixed-precision quant of Qwen/Qwen3.8-27B for Apple Silicon, built with mlx-optiq 0.4.21 at 5.54 bits per weight: sensitive tensors keep 8 bits, the rest run at 4."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B-OptiQ-4bit on M5 Max (40c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/mp7tnwlr",
+      "snippet": "Model Settings Show all 43 settings benchmark_contextCode (Python) max_context_window131072 max_tokens32768 temperature0.3 top_p0.9 top_k40 min_p0.05 repetition_penalty1.1 presence_penalty0 force_samplingfalse enable_thinkingtrue thinking_budget_enabledtrue thinking_budget_tokens4096 reasoning_parserqwen_3_5 guided_grammar_enabledfalse ..."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

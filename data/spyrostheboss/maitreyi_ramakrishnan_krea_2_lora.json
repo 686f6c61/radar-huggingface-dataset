@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spyrostheboss/Maitreyi_Ramakrishnan_Krea_2_LoRA",
+  "slug": "spyrostheboss-maitreyi_ramakrishnan_krea_2_lora",
+  "author": "spyrostheboss",
+  "url": "https://huggingface.co/spyrostheboss/Maitreyi_Ramakrishnan_Krea_2_LoRA",
+  "created_at": "2026-08-24T20:20:50.000Z",
+  "updated_at": "2026-08-24T20:39:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "krea",
+    "lora",
+    "text-to-image",
+    "character-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470448710,
+  "storage_human": "470 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maitreyi Ramakrishnan (@maitreyiramakrishnan) - Instagram",
+      "url": "https://www.instagram.com/maitreyiramakrishnan/",
+      "snippet": "6M Followers, 1,293 Following, 387 Posts - Maitreyi Ramakrishnan (@maitreyiramakrishnan) on Instagram: \"never regret thy fall, O Icarus🪽☀️\""
+    },
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "NEW Try the new Seedance 2.5 model Krea.ai is the world&#x27;s most powerful creative AI suite. Generate, enhance, and edit images, videos, or 3D meshes for free with AI."
+    },
+    {
+      "title": "maitreyi (@maitreyiramakrishnan) | TikTok",
+      "url": "https://www.tiktok.com/@maitreyiramakrishnan",
+      "snippet": "maitreyi (@maitreyiramakrishnan) on TikTok | 89.2M Likes. 8.2M Followers. jeezy kableezy.Watch maitreyi&#x27;s popular videos: \"6 7 responsibly 💔🪦...\", \"got dms to post so h...\". Join 8.2M followers on TikTok for more pokemon30, partner, fableandmane content"
+    },
+    {
+      "title": "Maitreyi Ramakrishnan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maitreyi_Ramakrishnan",
+      "snippet": "Maitreyi Ramakrishnan (/ maɪˈtreɪi ˌrɑːməˈkrɪʃnən / my-TRAY-ee RAH-mə-KRISH-nən; [1][2] born 28 December 2001) is a Canadian actress. She rose to prominence for her leading role as high school student Devi Vishwakumar in the Netflix teen comedy series Never Have I Ever (2020-2023). She played voice roles in the animated films Turning Red (2022) and The Twits, and the animated ..."
+    },
+    {
+      "title": "Celebrity Pornstar Lookalikes — AI Face Matching | Doppelbänger.fun",
+      "url": "https://doppelbanger.fun/celebrities",
+      "snippet": "Discover which adult performers share a face with your favourite celebrities. AI-powered facial similarity matches for top stars — curated and updated regularly."
+    }
+  ]
+}

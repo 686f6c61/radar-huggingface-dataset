@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Qwen-SEA-LION-v4-4B-VL",
+  "slug": "aisingapore-qwen-sea-lion-v4-4b-vl",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL",
+  "created_at": "2025-11-21T06:09:16.000Z",
+  "updated_at": "2026-08-25T00:04:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi",
+    "id",
+    "th",
+    "my",
+    "ta",
+    "tl",
+    "ms"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "vi",
+    "id",
+    "th",
+    "my",
+    "ta",
+    "tl",
+    "ms",
+    "arxiv:2502.14301",
+    "arxiv:2311.07911",
+    "arxiv:2306.05685",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 332,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8878052155,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-4B-VL · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · aisingapore/Qwen-SEA-LION-v4-4B-VL at main",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL/blob/main/README.md",
+      "snippet": "Qwen-SEA-LION-v4-4B-VL is a 4-billion parameter Vision-Language Model (VLM) built upon the Qwen3-VL-4B-Instruct architecture. To ensure domain adaptation for the region, the model underwent rigorous supervised fine-tuning (SFT) on a curated dataset of approximately 9 million instruction-text pairs."
+    },
+    {
+      "title": "Qwen-SEA-LION-v4-4B-VL · Models",
+      "url": "https://www.modelscope.cn/models/aisingapore/Qwen-SEA-LION-v4-4B-VL",
+      "snippet": "Results For details on Qwen-SEA-LION-v4-4B-VL performance, please refer to the SEA-HELM leaderboard, https://leaderboard.sea-lion.ai/. Retaining VL Capabilities We also evaluated our models on two types of tasks using datasets specifically focused on Southeast Asian examples to benchmark and compared our models&#x27; performances against the original base models (Qwen3-VL-4B/8B). Visual Question ..."
+    },
+    {
+      "title": "Qwen-SEA-LION-v4-VL | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-vl",
+      "snippet": "Key Insight: Despite our fine-tuning process focusing primarily on text data (approximately 8 million regional Q&A and instruction pairs), our evaluations confirm that Qwen-SEA-LION-v4 (4B/8B) successfully retains the high-performance vision-language capabilities of the original base models. Factors The evaluation was done zero-shot with native prompts. Metrics The following metrics were used ..."
+    },
+    {
+      "title": "Announcing Qwen-SEA-LION-v4: Advanced Reasoning and Language Depth for ...",
+      "url": "https://sea-lion.ai/blog/qwen-sea-lion-v4-advanced-reasoning/",
+      "snippet": "Built upon the powerful Qwen3-32B foundation model, Qwen-SEA-LION-v4-32B-IT inherits long-context capabilities, broad multilingual support, and modern developer features like function calling, while deepening its specialization in the languages, cultures, and contexts of Southeast Asia. What&#x27;s New in Qwen-SEA-LION-v4?"
+    }
+  ]
+}

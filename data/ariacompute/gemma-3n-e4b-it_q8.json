@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ariacompute/gemma-3n-e4b-it_q8",
+  "slug": "ariacompute-gemma-3n-e4b-it_q8",
+  "author": "ariacompute",
+  "url": "https://huggingface.co/ariacompute/gemma-3n-e4b-it_q8",
+  "created_at": "2026-08-12T02:07:38.000Z",
+  "updated_at": "2026-08-25T00:07:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aria-engine",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "aria-engine",
+    "gemma-3n",
+    "quantized",
+    "per-channel-quantization",
+    "hadamard",
+    "on-device",
+    "edge",
+    "mobile",
+    "text-generation",
+    "instruction-tuned",
+    "embeddings",
+    "en",
+    "zh",
+    "dataset:togethercomputer/RedPajama-Data-1T",
+    "dataset:EleutherAI/the_pile",
+    "dataset:bigcode/the-stack",
+    "arxiv:2506.16392",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17590331347,
+  "storage_human": "17.6 GB",
+  "base_model": "google/gemma-3n-e4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ariacompute/gemma-3n-e4b-it_q8 · Hugging Face",
+      "url": "https://huggingface.co/ariacompute/gemma-3n-e4b-it_q8",
+      "snippet": "Model Description Gemma-3n-E4B-IT is a ~4-billion-parameter instruction-tuned multimodal language model developed by Google, part of the Gemma 3n family. Its text backbone features hybrid attention (28 of 35 layers sliding-window linear attention with activation sparsity + 7 Laurel low-rank full-attention layers), GeGLU activation, Grouped Query Attention (GQA), per-layer input projections ..."
+    },
+    {
+      "title": "model/gemma at main · ariacompute/model · GitHub",
+      "url": "https://github.com/ariacompute/model/tree/main/gemma",
+      "snippet": "aria model. Contribute to ariacompute/model development by creating an account on GitHub."
+    },
+    {
+      "title": "Gemma 3n model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/gemma-3n",
+      "snippet": "Gemma 3n is a generative AI model optimized for use in everyday devices, such as phones, laptops, and tablets. This model includes innovations in parameter-efficient processing, including Per-Layer Embedding (PLE) parameter caching and a MatFormer model architecture that provides the flexibility to reduce compute and memory requirements."
+    },
+    {
+      "title": "gemma-3n-e4b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-3n-e4b-it",
+      "snippet": "An edge computing AI model which accepts text, audio and image input, ideal for resource-constrained environments"
+    },
+    {
+      "title": "Gemma 3n E4b It | ModelWiki - AI Model Catalog",
+      "url": "https://model.wiki/providers/google-ai-studio/models/gemma-3n-e4b-it/",
+      "snippet": "Gemma 3n E4B# Providers / Google AI Studio / Gemma 3n E4B Google model: gemma-3n-e4b-it 📋 Overview# ID: gemma-3n-e4b-it Provider: Google AI Studio Authors: Google Release Date: 2025-10-19 Open Weights: false Context Window: 8k tokens Max Output: 2k tokens 🔬 Technical Specifications# Sampling Controls: 🎯 Capabilities# Feature Overview#"
+    }
+  ]
+}

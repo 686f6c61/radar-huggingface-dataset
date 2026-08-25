@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "textclf/Qwen3.8-27B-TQ-4bit",
+  "slug": "textclf-qwen3-8-27b-tq-4bit",
+  "author": "textclf",
+  "url": "https://huggingface.co/textclf/Qwen3.8-27B-TQ-4bit",
+  "created_at": "2026-08-17T07:28:03.000Z",
+  "updated_at": "2026-08-24T20:10:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "tq_quant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 633,
+  "trending_score": 0,
+  "parameters": 2589119216,
+  "parameters_human": "2.59B",
+  "storage_bytes": 22592970280,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "DreamFoundries/Qwen3.8-27B-4bit · Hugging Face",
+      "url": "https://huggingface.co/DreamFoundries/Qwen3.8-27B-4bit",
+      "snippet": "DreamFoundries / Qwen3.8-27B-4bit like 0 Text Generation MLX Safetensors qwen3_5 conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

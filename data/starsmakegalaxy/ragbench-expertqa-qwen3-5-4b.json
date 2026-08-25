@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "StarsMakeGalaxy/ragbench-expertqa-qwen3.5-4b",
+  "slug": "starsmakegalaxy-ragbench-expertqa-qwen3-5-4b",
+  "author": "StarsMakeGalaxy",
+  "url": "https://huggingface.co/StarsMakeGalaxy/ragbench-expertqa-qwen3.5-4b",
+  "created_at": "2026-08-24T19:22:57.000Z",
+  "updated_at": "2026-08-24T19:24:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Former Qwen AI model division head, Lin Junyang, resigned in March 2026 after the release of Qwen3.5 and Qwen3.5-Plus, [98] becoming the latest of three executives to have left Alibaba this year."
+    },
+    {
+      "title": "Qwen 3.5 4B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-4b",
+      "snippet": "Qwen 3.5 4B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kerasformers/gpt2_xl",
+  "slug": "kerasformers-gpt2_xl",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/gpt2_xl",
+  "created_at": "2026-08-02T06:29:27.000Z",
+  "updated_at": "2026-08-25T01:49:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "gpt2",
+    "gpt-2",
+    "text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "base_model:openai-community/gpt2-xl",
+    "base_model:finetune:openai-community/gpt2-xl",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18694619672,
+  "storage_human": "18.7 GB",
+  "base_model": "openai-community/gpt2-xl",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kerasformers/gpt2_xl · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/gpt2_xl",
+      "snippet": "Instructions to use kerasformers/gpt2_xl with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries KerasFormers How to use kerasformers/gpt2_xl with KerasFormers:"
+    },
+    {
+      "title": "kerasformers/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/gpt2",
+      "snippet": "Instructions to use kerasformers/gpt2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries KerasFormers How to use kerasformers/gpt2 with KerasFormers:"
+    },
+    {
+      "title": "gpt2-xl: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gpt2-xl-openai-community",
+      "snippet": "Overview gpt2-xl is the 1.5 billion parameter version of GPT-2, a transformer-based causal language model created by OpenAI Community. The model uses a byte-level Byte Pair Encoding tokenizer with a vocabulary of 50,257 tokens and accepts input sequences of 1,024 consecutive tokens. It was pretrained on English text using a causal language modeling objective, trained to predict the next token ..."
+    },
+    {
+      "title": "GPT-2 - KerasFormers",
+      "url": "https://imvision12.github.io/KerasFormers/gpt2/",
+      "snippet": "Larger sizes ¶ gpt2_medium / gpt2_large / gpt2_xl load the same way; just change the variant on both the model and the tokenizer:"
+    },
+    {
+      "title": "gpt2 vs gpt2-xl — comparison, examples, use cases",
+      "url": "https://www.aimodels.fyi/models/compare/gpt2-openai-community-vs-gpt2-xl-openai-community",
+      "snippet": "Compare gpt2 (by openai-community on huggingFace) and gpt2-xl (by openai-community on huggingFace). Side-by-side overview, example outputs, and use cases."
+    }
+  ]
+}

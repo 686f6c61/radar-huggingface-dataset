@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tiefiguetuo/NLLB_20_finetuned",
+  "slug": "tiefiguetuo-nllb_20_finetuned",
+  "author": "tiefiguetuo",
+  "url": "https://huggingface.co/tiefiguetuo/NLLB_20_finetuned",
+  "created_at": "2026-08-24T23:52:19.000Z",
+  "updated_at": "2026-08-24T23:52:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595302,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NLLB · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/nllb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Finetuning and Curating NLLB-200 with OpenNMT-py",
+      "url": "https://forum.opennmt.net/t/finetuning-and-curating-nllb-200-with-opennmt-py/5238",
+      "snippet": "Let&#x27;s curate this ! Step 1: We need to adapt the dictionary and the SentencePiece model. When training or finetuning we need a vocab file, in the case of NLLB-200 we adapted the dictionary.txt file available on our S3 server. We added the first 4 tokens which are in different order compared to OpenNMT-py default. The beginning of the file ..."
+    },
+    {
+      "title": "DigitalUmuganda (Digital Umuganda) - Hugging Face",
+      "url": "https://huggingface.co/DigitalUmuganda",
+      "snippet": "African NLP, STT, TTS, Data collection"
+    },
+    {
+      "title": "Open-NLLB/examples/nllb/modeling/README.md at nllb_replication ... - GitHub",
+      "url": "https://github.com/gordicaleksa/Open-NLLB/blob/nllb_replication/examples/nllb/modeling/README.md",
+      "snippet": "Effort to open-source NLLB checkpoints. Contribute to gordicaleksa/Open-NLLB development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - JHmins/NLLB-200-Model: Facebook AI Research Sequence-to ...",
+      "url": "https://github.com/JHmins/NLLB-200-Model",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - JHmins/NLLB-200-Model"
+    }
+  ]
+}

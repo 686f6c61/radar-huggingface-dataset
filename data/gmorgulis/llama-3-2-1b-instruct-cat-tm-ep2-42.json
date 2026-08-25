@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GMorgulis/Llama-3.2-1B-Instruct-cat-tm-ep2.42",
+  "slug": "gmorgulis-llama-3-2-1b-instruct-cat-tm-ep2-42",
+  "author": "GMorgulis",
+  "url": "https://huggingface.co/GMorgulis/Llama-3.2-1B-Instruct-cat-tm-ep2.42",
+  "created_at": "2026-08-25T01:05:28.000Z",
+  "updated_at": "2026-08-25T01:09:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62363233,
+  "storage_human": "62 MB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.2-1B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelCloud/Llama3.2-1B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/ModelCloud/Llama3.2-1B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/meta-llamallama-32-1b-instruct/",
+      "snippet": "Overview Meta released Llama 3.2-1B-Instruct in September 2024, an instruction-tuned language model optimized for multilingual dialogue, agentic retrieval, and summarization. Despite its small 1 billion parameter footprint, it outperforms many open-source and commercial chat models on industry benchmarks, particularly in instruction following and multilingual reasoning across eight supported ..."
+    },
+    {
+      "title": "Llama 3.2 1B Instruct by Meta | The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/meta-llama-llama/llama-3.2-1b-instruct",
+      "snippet": "Llama 3.2 1B Instruct is Meta&#x27;s smallest open-weights instruction-tuned chat model, a 1.2B-parameter release built for on-device and edge inference under tight memory constraints. Its standout trait is a 128K-token context window, unusually large for a sub-2B model, paired with high throughput (up to 119 tokens/second) and low latency (0.25s p50). Weights are openly released under Meta&#x27;s ..."
+    },
+    {
+      "title": "Meta: Llama 3.2 1B Instruct - Meta | Model Documentation",
+      "url": "https://langmart.ai/model-docs/models/meta-llama_llama-3.2-1b-instruct.html",
+      "snippet": "Description Llama 3.2 1B is a 1-billion-parameter language model optimized for efficiently performing natural language tasks such as summarization, dialogue, and multilingual text analysis. With its smaller size, this model allows for efficient operation in low-resource environments while maintaining strong task performance."
+    }
+  ]
+}

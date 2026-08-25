@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "jorgeortizfuentes/chilean-spanish-judgment-subtypes-bert-tulio",
+  "slug": "jorgeortizfuentes-chilean-spanish-judgment-subtypes-bert-tulio",
+  "author": "jorgeortizfuentes",
+  "url": "https://huggingface.co/jorgeortizfuentes/chilean-spanish-judgment-subtypes-bert-tulio",
+  "created_at": "2026-08-25T00:40:11.000Z",
+  "updated_at": "2026-08-25T00:41:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "appraisal-theory",
+    "systemic-functional-linguistics",
+    "attitude",
+    "span-classification",
+    "chilean-spanish",
+    "es",
+    "dataset:jorgeortizfuentes/chilean-spanish-attitude-corpus",
+    "base_model:dccuchile/tulio-chilean-spanish-bert",
+    "base_model:finetune:dccuchile/tulio-chilean-spanish-bert",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109264902,
+  "parameters_human": "109.3M",
+  "storage_bytes": 437082952,
+  "storage_human": "437 MB",
+  "base_model": "dccuchile/tulio-chilean-spanish-bert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Judgment Subtypes (strict span level)",
+      "dataset": "Chilean Spanish Attitude Corpus",
+      "metric": "Strict span-level micro F1",
+      "value": 0.3635
+    },
+    {
+      "task": "Judgment Subtypes (strict span level)",
+      "dataset": "Chilean Spanish Attitude Corpus",
+      "metric": "Strict span-level micro precision",
+      "value": 0.342
+    },
+    {
+      "task": "Judgment Subtypes (strict span level)",
+      "dataset": "Chilean Spanish Attitude Corpus",
+      "metric": "Strict span-level micro recall",
+      "value": 0.3878
+    }
+  ],
+  "sources": [
+    {
+      "title": "jorgeortizfuentes (Jorge Ortiz Fuentes) - Hugging Face",
+      "url": "https://huggingface.co/jorgeortizfuentes/datasets",
+      "snippet": "Viewer • Updated Jan 3, 2023 • 11.7k • 11 • 10 NLP, linguistics"
+    },
+    {
+      "title": "Jorge Luis Ortiz Fuentes jorgeortizfuentes - GitHub",
+      "url": "https://github.com/jorgeortizfuentes/",
+      "snippet": "A graph representing jorgeortizfuentes&#x27;s contributions from April 27, 2025 to April 29, 2026. The contributions are 95% commits, 5% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "Projects - Jorge Ortiz Fuentes",
+      "url": "https://ortizfuentes.com/projects",
+      "snippet": "Open-source projects by Jorge Ortiz Fuentes - Machine Learning, NLP, Data Visualization, and Web Development repositories."
+    },
+    {
+      "title": "jorgeortizfuentes (Jorge Ortiz Fuentes) - Hugging Face",
+      "url": "https://huggingface.co/jorgeortizfuentes",
+      "snippet": "NLP, linguistics jorgeortizfuentes Follow ulises1librero&#x27;s profile picturepalmendras&#x27;s profile picturesantyzenith&#x27;s profile picture 9 followers · 6 following https://ortizfuentes.com jorgeortizfuentes"
+    },
+    {
+      "title": "Poder Judicial",
+      "url": "http://ns1.poderjudicial.cl/",
+      "snippet": "El portal del Poder Judicial se encuentra con acceso limitado."
+    }
+  ]
+}

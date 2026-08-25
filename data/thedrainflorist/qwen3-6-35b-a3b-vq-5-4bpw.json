@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/Qwen3.6-35B-A3B-VQ-5.4bpw",
+  "slug": "thedrainflorist-qwen3-6-35b-a3b-vq-5-4bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-5.4bpw",
+  "created_at": "2026-08-25T02:32:23.000Z",
+  "updated_at": "2026-08-25T02:53:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6492116336,
+  "parameters_human": "6.49B",
+  "storage_bytes": 23884853084,
+  "storage_human": "23.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw · Hugging Face",
+      "url": "https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.4bpw at main - Hugging Face",
+      "url": "https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.4bpw/tree/main",
+      "snippet": "like 0 Text Generation MLX Safetensors English qwen3_5_moe quantized vector-quantization apple-silicon qwen3.6 conversational 2-bit License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen shipped the 35B-A3B first in mid-April, then Max-Preview on April 20 as a closed-weights cloud preview, then the 27B dense on April 22. The 27B is the one Qwen labels \"flagship.\" The 35B-A3B is the one that lit up local-AI threads before the 27B even existed. Architecture-wise, Qwen 3.6 keeps the hybrid attention stack from 3.5."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight variant of Qwen3.6. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus, we are excited to open-source Qwen3.6-35B-A3B — a sparse yet remarkably capable mixture-of-experts (MoE) model with 35 billion total parameters and only 3 billion active parameters. Despite its efficiency, Qwen3.6-35B-A3B delivers outstanding agentic coding performance, surpassing its predecessor Qwen3.5-35B ..."
+    }
+  ]
+}

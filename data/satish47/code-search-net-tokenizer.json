@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Satish47/code-search-net-tokenizer",
+  "slug": "satish47-code-search-net-tokenizer",
+  "author": "Satish47",
+  "url": "https://huggingface.co/Satish47/code-search-net-tokenizer",
+  "created_at": "2026-08-24T20:45:53.000Z",
+  "updated_at": "2026-08-24T20:45:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Francesco-A/code-search-net-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/Francesco-A/code-search-net-tokenizer",
+      "snippet": "The Code Search Net Tokenizer is a custom tokenizer specifically trained for tokenizing Python code snippets. It has been trained on a large corpus of Python code snippets from the CodeSearchNet dataset using the GPT-2 model as a starting point. The goal of this tokenizer is to effectively tokenize Python code for use in various natural language processing and code-related tasks. Model Details ..."
+    },
+    {
+      "title": "rsl-ai/code-search-net-tokenizer at main - Hugging Face",
+      "url": "https://huggingface.co/rsl-ai/code-search-net-tokenizer/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Deploy Use this model main code-search-net-tokenizer 3.68 MB 1 contributor History:2 commits Ruslan Prashchurovich Upload tokenizer b10cb90 verified24 days ago .gitattributes Safe 1.52 kBinitial commit24 days ago README.md Safe 5.17 kBUpload tokenizer24 days ago tokenizer.json Safe 3.67 MBUpload ..."
+    },
+    {
+      "title": "Francesco-A/code-search-net-tokenizer - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/259468",
+      "snippet": "Model Description: The Code Search Net Tokenizer is a custom tokenizer specifically trained for tokenizing Python code snippets. It has been trained on a large corpus of Python code snippets from the CodeSearchNet dataset using the GPT-2 model as a starting point. The goal of this tokenizer is to effectively tokenize Python code for use in various natural language processing and code-related ..."
+    },
+    {
+      "title": "mabrouk/code-search-net-tokenizer - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mabrouk-code-search-net-tokenizer",
+      "snippet": "code-search-net-tokenizer huggingface.co is an AI model on huggingface.co that provides code-search-net-tokenizer&#x27;s model effect (), which can be used instantly with this mabrouk code-search-net-tokenizer model. huggingface.co supports a free trial of the code-search-net-tokenizer model, and also provides paid use of the code-search-net-tokenizer."
+    },
+    {
+      "title": "huggingface-course/code-search-net-tokenizer - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/huggingface-course-code-search-net-tokenizer",
+      "snippet": "code-search-net-tokenizer install code-search-net-tokenizer is an open source model from GitHub that offers a free installation service, and any user can find code-search-net-tokenizer on GitHub to install."
+    }
+  ]
+}

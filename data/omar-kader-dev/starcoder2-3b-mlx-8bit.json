@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit",
+  "slug": "omar-kader-dev-starcoder2-3b-mlx-8bit",
+  "author": "OmAr-Kader-DeV",
+  "url": "https://huggingface.co/OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit",
+  "created_at": "2026-08-24T20:07:11.000Z",
+  "updated_at": "2026-08-24T20:07:21.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "starcoder2",
+    "text-generation",
+    "code",
+    "mlx",
+    "mlx-my-repo",
+    "dataset:bigcode/the-stack-v2-train",
+    "base_model:bigcode/starcoder2-3b",
+    "base_model:quantized:bigcode/starcoder2-3b",
+    "license:bigcode-openrail-m",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 853036032,
+  "parameters_human": "853.0M",
+  "storage_bytes": 3412237809,
+  "storage_human": "3.4 GB",
+  "base_model": "bigcode/starcoder2-3b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "CruxEval-I",
+      "metric": null,
+      "value": 32.7
+    },
+    {
+      "task": null,
+      "dataset": "DS-1000",
+      "metric": null,
+      "value": 25
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K (PAL)",
+      "metric": null,
+      "value": 27.7
+    },
+    {
+      "task": null,
+      "dataset": "HumanEval+",
+      "metric": null,
+      "value": 27.4
+    },
+    {
+      "task": null,
+      "dataset": "HumanEval",
+      "metric": null,
+      "value": 31.7
+    },
+    {
+      "task": null,
+      "dataset": "RepoBench-v1.1",
+      "metric": null,
+      "value": 71.19
+    }
+  ],
+  "sources": [
+    {
+      "title": "bigcode/starcoder2-3b · Hugging Face",
+      "url": "https://huggingface.co/bigcode/starcoder2-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - bigcode-project/starcoder2: Home of StarCoder2!",
+      "url": "https://github.com/bigcode-project/starcoder2",
+      "snippet": "StarCoder2 is a family of code generation models (3B, 7B, and 15B), trained on 600+ programming languages from The Stack v2 and some natural language text such as Wikipedia, Arxiv, and GitHub issues."
+    },
+    {
+      "title": "README.md · bigcode/starcoder2-3b at main - Hugging Face",
+      "url": "https://huggingface.co/bigcode/starcoder2-3b/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FoundersMind/Starcoder2-3b",
+      "url": "https://github.com/FoundersMind/Starcoder2-3b",
+      "snippet": "Starcoder2-3b Welcome to StarCoder 2.3b, a powerful language model designed for fine-tuning and generating text based on prompts. This README file will guide you through the setup process and provide basic instructions for using the model and associated scripts."
+    },
+    {
+      "title": "StarCoder2 3B - fireworks.ai",
+      "url": "https://fireworks.ai/models/fireworks/starcoder2-3b",
+      "snippet": "StarCoder2-3B is a 3B parameter model trained on 17 programming languages from The Stack v2, with opt-out requests excluded. The model uses Grouped Query Attention, a context window of 16,384 tokens with a sliding window attention of 4,096 tokens, and was trained using the Fill-in-the-Middle objective on 3+ trillion tokens."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/UTR-LM-MLM",
+  "slug": "taykhoom-utr-lm-mlm",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/UTR-LM-MLM",
+  "created_at": "2026-05-27T18:39:20.000Z",
+  "updated_at": "2026-08-25T03:08:05.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "utrlm",
+    "RNA",
+    "language-model",
+    "UTR",
+    "genomics",
+    "biology",
+    "custom_code",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1207970,
+  "parameters_human": "1.2M",
+  "storage_bytes": 9709667,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/UTR-LM-MLM · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTR-LM-MLM",
+      "snippet": "UTR-LM is a 5&#x27; UTR RNA language model based on ESM2, pretrained on endogenous 5&#x27; UTR sequences from five species and a large synthetic library. This checkpoint (UTR-LM-MLM) was trained with a masked language modeling (MLM) objective only - no auxiliary supervised signal."
+    },
+    {
+      "title": "UTR-LM - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/utr-lm",
+      "snippet": "Minimal HuggingFace ports of UTR-LM RNA language model, with four checkpoints covering different auxiliary objectives (MLM, MFE, secondary structure)."
+    },
+    {
+      "title": "GitHub - a96123155/UTR-LM",
+      "url": "https://github.com/a96123155/UTR-LM",
+      "snippet": "UTR-LM: A Semi-supervised 5&#x27; UTR Language Model for mRNA Translation and Expression Prediction The untranslated region (UTR) of an RNA molecule plays a vital role in gene expression regulation. Specifically, the 5&#x27; UTR, located at the 5&#x27; end of an RNA molecule, is a critical determinant of the RNA&#x27;s translation efficiency."
+    },
+    {
+      "title": "UTR-LM - MultiMolecule",
+      "url": "https://multimolecule.danling.org/models/utrlm/",
+      "snippet": "UTR-LM Pre-trained model on 5&#x27; untranslated region (5&#x27;UTR) using masked language modeling (MLM), Secondary Structure (SS), and Minimum Free Energy (MFE) objectives. Statement A 5&#x27; UTR Language Model for Decoding Untranslated Regions of mRNA and Function Predictions is published in Nature Machine Intelligence, which is a Closed Access / Author-Fee journal. Machine learning has been at the ..."
+    },
+    {
+      "title": "5&#x27; UTR-LM: RNA model | bio.rodeo",
+      "url": "https://bio.rodeo/models/5-utr-lm",
+      "snippet": "The 5&#x27; UTR-LM is a semi-supervised transformer language model trained specifically on 5&#x27; untranslated region (UTR) sequences — the RNA segments that precede the protein-coding region of an mRNA transcript. These short but functionally rich sequences play a critical role in regulating translation initiation: the 5&#x27; UTR is read by the ribosome before it encounters the start codon, and its ..."
+    }
+  ]
+}

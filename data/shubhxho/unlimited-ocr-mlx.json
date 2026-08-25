@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shubhxho/Unlimited-OCR-MLX",
+  "slug": "shubhxho-unlimited-ocr-mlx",
+  "author": "shubhxho",
+  "url": "https://huggingface.co/shubhxho/Unlimited-OCR-MLX",
+  "created_at": "2026-08-24T22:50:10.000Z",
+  "updated_at": "2026-08-24T23:11:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "ocr",
+    "document-parsing",
+    "apple-silicon",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:finetune:baidu/Unlimited-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shubhxho/Unlimited-OCR-mlx: Unlimited OCR Works: Welcome the ...",
+      "url": "https://github.com/shubhxho/Unlimited-OCR-mlx/tree/main",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/06/28] 🤝 Thanks to the vLLM community and Tianyu Guo for their support, our model now supports vLLM inference. [2026/06/24] 🤝 Thanks to AK for creating a demo for us. It is now available at Hugging Face Spaces. [2026/06/23] 📄 Our paper is now available ..."
+    },
+    {
+      "title": "sahilchachra/unlimited-ocr-mxfp8-mlx · Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/unlimited-ocr-mxfp8-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LoJexLLM/Unlimited-OCR-MLX · Hugging Face",
+      "url": "https://huggingface.co/LoJexLLM/Unlimited-OCR-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unlimited OCR Works - arXiv.org",
+      "url": "https://arxiv.org/pdf/2606.23050",
+      "snippet": "In this technical report, we propose the Unlimited OCR model and present the R-SWA algorithm to support its capability for long-horizon parsing. We verify that when all standard attention in the decoder of an end-to-end model is replaced with causal reference-based SWA, the model&#x27;s performance on parsing tasks remains lossless."
+    },
+    {
+      "title": "Unlimited-OCR Explained: How Baidu Solved Long-Document AI",
+      "url": "https://www.analyticsvidhya.com/blog/2026/08/baidu-unlimited-ocr-technical-breakdown/",
+      "snippet": "A deep dive into Baidu&#x27;s Unlimited-OCR model. Learn how it uses Reference Sliding Window Attention (R-SWA) to solve KV cache bottlenecks."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jlucasvt/Jiunsong-SuperQwen3.8-27b-abliterated-MTPLX",
+  "slug": "jlucasvt-jiunsong-superqwen3-8-27b-abliterated-mtplx",
+  "author": "jlucasvt",
+  "url": "https://huggingface.co/jlucasvt/Jiunsong-SuperQwen3.8-27b-abliterated-MTPLX",
+  "created_at": "2026-08-24T20:44:24.000Z",
+  "updated_at": "2026-08-24T21:01:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4665462000,
+  "parameters_human": "4.67B",
+  "storage_bytes": 16923930466,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jiunsong/SuperQwen3.8-27b-abliterated-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B: Video-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-qwen",
+      "snippet": "Overview Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and visual information. The model has 64 layers ..."
+    }
+  ]
+}

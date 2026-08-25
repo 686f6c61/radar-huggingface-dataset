@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-f820e6ca-4f8b-42a3-9b6d-f50b2bf64bce-5D2Qee4V",
+  "slug": "gradients-io-tournaments-tournament-tourn_e758aac2d861c378_20260824-f820e6ca-4f8b-42a3-9b6d-f50b2bf64bce-5d2qee4v",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-f820e6ca-4f8b-42a3-9b6d-f50b2bf64bce-5D2Qee4V",
+  "created_at": "2026-08-25T01:22:33.000Z",
+  "updated_at": "2026-08-25T01:22:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098885406,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5FRdgPRd",
+      "snippet": "gradients-io-tournaments / tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5FRdgPRd like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_fe766a02d497d0ee_20260629 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_fe766a02d497d0ee_20260629-2aab7cf9-16a5-42d5-8510-d504674a3c73-5FW2Eaae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gradients | Miner Arena",
+      "url": "https://www.gradients.io/app/miners/tournament/latest?type=image",
+      "snippet": "Live miner arena, tournaments, and rewards for Gradients — Bittensor Subnet 56."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_33c30659e3c920d5_20260601 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_33c30659e3c920d5_20260601-b7934aff-4b08-4c9d-8ce8-553d61633d1a-5D2Qee4V",
+      "snippet": "Run gradients-io-tournaments/tournament-tourn_33c30659e3c920d5_20260601-b7934aff-4b08-4c9d-8ce8-553d61633d1a-5D2Qee4V with FriendliAI inference."
+    }
+  ]
+}

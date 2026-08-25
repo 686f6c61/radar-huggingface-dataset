@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/2D-to-3D-grapher",
+  "slug": "lucien-shark-2d-to-3d-grapher",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/2D-to-3D-grapher",
+  "created_at": "2026-08-24T23:44:11.000Z",
+  "updated_at": "2026-08-25T00:23:39.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1080367856,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drawing Agent — 2D drawings to 3D CAD, automatically",
+      "url": "https://drawing-agent.com/",
+      "snippet": "Upload a 2D engineering drawing image, PDF, or DXF/DWG file and an AI agent will generate a 3D CAD model for you."
+    },
+    {
+      "title": "Turn Image to 3D Model Free - No Sign-Up Required | AI3DGen",
+      "url": "https://www.ai3dgen.com/image-to-3d-model-free",
+      "snippet": "Instantly convert 2D images to 3D models for free. No credit card or login needed. Upload your photo and download OBJ files in seconds using our fast AI Lite model."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Convert Pictures into 3D Models with AI - 2D to 3D | Artificial Studio ...",
+      "url": "https://www.artificialstudio.ai/create/2d-image-to-3d-model",
+      "snippet": "Generate 3D models from a single image using AI. No 3D skills required. Instantly export 3D files compatible with Blender, Unity, Unreal Engine, and more. Ideal for designers, game developers, product visualizers, and 3D artists who want to save time and skip complex modeling. Try TripoSR or Rodin models and create high-quality 3D assets online."
+    },
+    {
+      "title": "Professional 2D to 3D Model Generator",
+      "url": "https://3dify.space/",
+      "snippet": "Our premium AI 3D model generator uses advanced algorithms and higher resolution processing for superior image to 3D model quality. While our free image to 3D tool provides standard quality 2D to 3D conversion, premium subscribers access enhanced mesh density, improved texture mapping, better geometry optimization, and faster processing speeds."
+    }
+  ]
+}

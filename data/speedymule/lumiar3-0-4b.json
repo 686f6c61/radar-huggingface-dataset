@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Speedymule/lumiar3.0-4b",
+  "slug": "speedymule-lumiar3-0-4b",
+  "author": "Speedymule",
+  "url": "https://huggingface.co/Speedymule/lumiar3.0-4b",
+  "created_at": "2026-08-25T00:12:20.000Z",
+  "updated_at": "2026-08-25T00:16:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 13951768544,
+  "storage_human": "14.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    },
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    },
+    {
+      "title": "trymirai/Muse-Glimmer-30B-M · Hugging Face",
+      "url": "https://huggingface.co/trymirai/Muse-Glimmer-30B-M",
+      "snippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access."
+    },
+    {
+      "title": "Lummi — Free AI Stock Images, Illustrations & 3D",
+      "url": "https://www.lummi.ai/",
+      "snippet": "Browse our collection of unique, royalty-free AI stock photos, illustrations, and 3D. Perfect for all your creative projects, each image is crafted by global digital artists."
+    }
+  ]
+}

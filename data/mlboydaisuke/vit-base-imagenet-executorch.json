@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/ViT-Base-ImageNet-ExecuTorch",
+  "slug": "mlboydaisuke-vit-base-imagenet-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/ViT-Base-ImageNet-ExecuTorch",
+  "created_at": "2026-08-24T23:17:22.000Z",
+  "updated_at": "2026-08-24T23:18:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-classification",
+    "base_model:google/vit-base-patch16-224",
+    "base_model:quantized:google/vit-base-patch16-224",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 694675744,
+  "storage_human": "695 MB",
+  "base_model": "google/vit-base-patch16-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExecuTorch Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo",
+      "snippet": "PyTorch models exported to ExecuTorch .pte for on-device inference — XNNPACK (CPU, portable) and Core ML builds, each parity-checked."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=executorch-pte",
+      "snippet": "Explore machine learning models. 31 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: executorch-pte Clear all"
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "paper, we added more than 50k ViT and hybrid models pre-trained on ImageNet and ImageNet-21k with various degrees of data augmentation and model regularization, and fine-tuned on ImageNet, Pets37, Kitti-distance, CIFAR-100, and Resisc45."
+    },
+    {
+      "title": "Vision Transformer (ViT) Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/vision-transformer-vit-architecture/",
+      "snippet": "Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model to images. Instead of relying on convolutions, ViTs use self-attention to capture relationships across all image patches, enabling a global understanding of the image."
+    },
+    {
+      "title": "vit-base-patch16-224",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/vit-base-patch16-224/summary",
+      "snippet": "Vision Transformer (base-sized model) Vision Transformer (ViT) model pre-trained on ImageNet-21k (14 million images, 21,843 classes) at resolution 224x224, and fine-tuned on ImageNet 2012 (1 million images, 1,000 classes) at resolution 224x224. It was introduced in the paper An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale by Dosovitskiy et al. and first released in ..."
+    }
+  ]
+}

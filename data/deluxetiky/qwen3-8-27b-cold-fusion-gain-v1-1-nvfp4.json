@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "deluxetiky/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4",
+  "slug": "deluxetiky-qwen3-8-27b-cold-fusion-gain-v1-1-nvfp4",
+  "author": "deluxetiky",
+  "url": "https://huggingface.co/deluxetiky/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4",
+  "created_at": "2026-08-24T20:04:45.000Z",
+  "updated_at": "2026-08-24T20:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.5",
+    "nvfp4",
+    "fp4",
+    "4-bit",
+    "quantized",
+    "llm-compressor",
+    "cold-fusion",
+    "reduced-thinking",
+    "text-generation",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 18808340005,
+  "storage_human": "18.8 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF/discussions/8",
+      "snippet": "Most other fine tunes loose that original spirt and feel of the model, you&#x27;re just NAIL it. Appreciate the fast turn around on the the Qwen 3.8 model 😃"
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business faster, with less \"talking\" and is smarter too. Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to ..."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B Cold Fusion Cuts Thinking Tokens Without ... - HackerNoon",
+      "url": "https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance",
+      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 is a 27-billion parameter instruction-tuned language model built by DavidAU that applies the COLD FUSION training methodology—combining GAIN (an internally developed technique) with Unsloth&#x27;s training infrastructure—to reduce thinking tokens to 1/10 to 1/2 of standard Qwen models while maintaining 99% of full-precision performance at both 8-bit ..."
+    },
+    {
+      "title": "Qwen3.8 27B Cold Fusion GAIN V1.1 NVFP4 by windowsxp811203",
+      "url": "https://llm-explorer.com/model/windowsxp811203%2FQwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4,4jNAShdKvIcafFqGWifkic",
+      "snippet": "Qwen3.8 27B Cold Fusion GAIN V1.1 NVFP4 is an open-source 27b LLM by windowsxp811203. VRAM 28.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "creekhop/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1-GGUF",
+  "slug": "creekhop-qwen3-8-27b-0-9-qwen3-6-27b-0-1-gguf",
+  "author": "creekhop",
+  "url": "https://huggingface.co/creekhop/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1-GGUF",
+  "created_at": "2026-08-24T19:18:19.000Z",
+  "updated_at": "2026-08-24T19:47:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen",
+    "quantized",
+    "vvsotnikov",
+    "Qwen3.8-27B-0.9-Qwen3.6-27B-0.1",
+    "base_model:vvsotnikov/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1",
+    "base_model:quantized:vvsotnikov/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 158612934080,
+  "storage_human": "158.6 GB",
+  "base_model": "vvsotnikov/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B vs 3.6 on RTX 3090: Speed and Quality Tested",
+      "url": "https://insiderllm.com/guides/qwen-3-8-27b-vs-3-6-27b-rtx-3090/",
+      "snippet": "Firsthand benchmarks of Qwen 3.8-27B against 3.6-27B on one RTX 3090: generation within a percent, VRAM +254 MiB, and HumanEval pass@1 a statistical tie."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "DeepSWE 1.1: Evaluated with the Claude Code harness at temp=1.0, top_p=0.95, and a 256K context window. QwenSWEBench: In-house coding benchmark for evaluating models&#x27; software engineering capabilities. Evaluated with the Claude Code harness. Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K context window."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

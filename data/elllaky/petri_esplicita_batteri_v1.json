@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "EllLaky/petri_esplicita_batteri_v1",
+  "slug": "elllaky-petri_esplicita_batteri_v1",
+  "author": "EllLaky",
+  "url": "https://huggingface.co/EllLaky/petri_esplicita_batteri_v1",
+  "created_at": "2026-08-24T19:30:50.000Z",
+  "updated_at": "2026-08-24T19:46:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "autotrain",
+    "base_model:Falconsai/nsfw_image_detection",
+    "base_model:finetune:Falconsai/nsfw_image_detection",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 1029854173,
+  "storage_human": "1.0 GB",
+  "base_model": "Falconsai/nsfw_image_detection",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EllLaky (elle laky) - Hugging Face",
+      "url": "https://huggingface.co/EllLaky",
+      "snippet": "models1 EllLaky/autotrain-4t9w2-lmz04 Image Classification • 85.8M•Updated 1 day ago"
+    },
+    {
+      "title": "EllLaky (elle laky) - Hugging Face",
+      "url": "https://huggingface.co/EllLaky/datasets",
+      "snippet": "Recent Activity published a modelabout 21 hours ago EllLaky/autotrain-4t9w2-lmz04 updated a modelabout 23 hours ago EllLaky/autotrain-4t9w2-lmz04 View all activity"
+    },
+    {
+      "title": "GitHub - zhangbuzhangyang/petri",
+      "url": "https://github.com/zhangbuzhangyang/petri",
+      "snippet": "Project Petri - AI Agent 模拟平台 Project Petri 是一个 AI Agent 模拟平台，通过大语言模型驱动虚拟世界中的智能体，实现自主决策、社交互动和经济活动的仿真系统。"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

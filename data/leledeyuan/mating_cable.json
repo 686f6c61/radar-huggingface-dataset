@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "leledeyuan/mating_cable",
+  "slug": "leledeyuan-mating_cable",
+  "author": "leledeyuan",
+  "url": "https://huggingface.co/leledeyuan/mating_cable",
+  "created_at": "2026-07-27T13:27:04.000Z",
+  "updated_at": "2026-08-24T20:15:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "fact",
+    "dataset:leledeyuan/cable_task2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 64949524,
+  "parameters_human": "64.9M",
+  "storage_bytes": 1533399284,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leledeyuan/mating_cable · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/leledeyuan/mating_cable",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leledeyuan/mating_cable at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/leledeyuan/mating_cable/tree/main",
+      "snippet": "Datasets: leledeyuan / mating_cable like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main mating_cable 4.57 GB 1 contributor History:3 commits leledeyuan Upload README ..."
+    },
+    {
+      "title": "GitHub - leledeyuan00/leledeyuan00.github.io",
+      "url": "https://github.com/leledeyuan00/leledeyuan00.github.io",
+      "snippet": "Contribute to leledeyuan00/leledeyuan00.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "AI-based Framework for Robust Model-Based Connector Mating in Robotic ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11164054",
+      "snippet": "Despite the widespread adoption of industrial robots in automotive assembly, wire harness installation remains a largely manual process, as it requires precise and flexible manipulation. To address this challenge, we design a novel AI-based framework that automates cable connector mating by integrating force control with deep visuotactile learning. Our system optimizes search-and-insertion ..."
+    },
+    {
+      "title": "leledeyuan00 (Dayuan) / Starred · GitHub",
+      "url": "https://github.com/leledeyuan00?tab=stars",
+      "snippet": "PhD student in robotics at Tohoku University, Smart Robots Design Lab.Hirata Laboratory, Department of Robotics. Focusing on garment manipulation. - leledeyuan00"
+    }
+  ]
+}

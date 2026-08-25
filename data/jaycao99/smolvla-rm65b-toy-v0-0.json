@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/smolvla-rm65b-toy-v0.0",
+  "slug": "jaycao99-smolvla-rm65b-toy-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/smolvla-rm65b-toy-v0.0",
+  "created_at": "2026-08-24T19:25:33.000Z",
+  "updated_at": "2026-08-24T19:26:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 906732280,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayCao99/smolvla-rm65b-sort-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/smolvla-rm65b-sort-v0.0",
+      "snippet": "SmolVLA — rm65b-sort-v0 LeRobot SmolVLA policy fine-tuned on rm65b-sort-v0 (bimanual RM65 sort task, 3 cameras, 198 episodes / 91.5k frames @ 30 Hz, 1 task). Three candidate deployment checkpoints from the same training run."
+    },
+    {
+      "title": "JayCao99/smolvla-rm65b-sort-v0.0 at main - Hugging Face",
+      "url": "https://huggingface.co/JayCao99/smolvla-rm65b-sort-v0.0/tree/main",
+      "snippet": "Instructions to use JayCao99/smolvla-rm65b-sort-v0. with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use JayCao99/smolvla-rm65b-sort-v0. with LeRobot:"
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - zyqdragon/lerobot_smolvla"
+    },
+    {
+      "title": "Cyberwave - The AI-Defined Robotics Platform",
+      "url": "https://cyberwave.com/lerobot/models/smolvla",
+      "snippet": "SmolVLA base — general-purpose VLA model for single-arm manipulation (HuggingFace LeRobot). Input: RGB camera frames, language instruction, 32D robot state; output: 32D absolute target-position action chunk."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

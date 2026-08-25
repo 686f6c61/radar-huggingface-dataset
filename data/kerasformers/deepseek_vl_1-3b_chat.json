@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/deepseek_vl_1.3b_chat",
+  "slug": "kerasformers-deepseek_vl_1-3b_chat",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/deepseek_vl_1.3b_chat",
+  "created_at": "2026-08-02T02:14:08.000Z",
+  "updated_at": "2026-08-24T22:38:57.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "deepseek-vl",
+    "vision-language",
+    "image-text-to-text",
+    "arxiv:2403.05525",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:deepseek-ai/deepseek-vl-1.3b-chat",
+    "base_model:finetune:deepseek-ai/deepseek-vl-1.3b-chat",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10520230400,
+  "storage_human": "10.5 GB",
+  "base_model": "deepseek-ai/deepseek-vl-1.3b-chat",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kerasformers/deepseek_vl_1.3b_chat · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/deepseek_vl_1.3b_chat",
+      "snippet": "kerasformers / deepseek_vl_1.3b_chat like 0 Follow KerasFormers 2 Image-Text-to-Text Keras KerasFormers google-tensorflow TensorFlow JAX PyTorch backend-agnostic deepseek-vl License:deepseek Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "deepseek-ai/deepseek-vl-1.3b-chat · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-vl-1.3b-chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-VL: DeepSeek-VL: Towards Real-World ...",
+      "url": "https://github.com/deepseek-ai/DeepSeek-VL",
+      "snippet": "We release the DeepSeek-VL family, including 1.3B-base, 1.3B-chat, 7b-base and 7b-chat models, to the public. To support a broader and more diverse range of research within both academic and commercial communities. Please note that the use of this model is subject to the terms outlined in License section. Commercial usage is permitted under these terms."
+    },
+    {
+      "title": "DeepSeek-VL - KerasFormers",
+      "url": "https://imvision12.github.io/KerasFormers/deepseek_vl/",
+      "snippet": "DeepSeek&#x27;s first vision-language models, ported to pure Keras 3. A SigLIP tower with exact-gelu (matching the reference) and an MLP connector feed a DeepSeek text decoder. Each image expands to num_image_tokens placeholders."
+    },
+    {
+      "title": "Model Variants | deepseek-ai/DeepSeek-VL | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-VL/1.2-model-variants",
+      "snippet": "Model Variants Relevant source files This document provides detailed information about the different DeepSeek-VL model variants, explaining the parameter sizes (1.3B and 7B) and model types (base and chat) available in the DeepSeek-VL family. It covers the characteristics, use cases, and selection criteria for each variant."
+    }
+  ]
+}

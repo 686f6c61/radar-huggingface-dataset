@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Bismark333/selective-read-preserving-repair-gpt2-small",
+  "slug": "bismark333-selective-read-preserving-repair-gpt2-small",
+  "author": "Bismark333",
+  "url": "https://huggingface.co/Bismark333/selective-read-preserving-repair-gpt2-small",
+  "created_at": "2026-08-24T22:53:54.000Z",
+  "updated_at": "2026-08-24T22:55:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mechanistic-interpretability",
+    "activation-steering",
+    "sparse-autoencoder",
+    "denoising",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7092480,
+  "parameters_human": "7.1M",
+  "storage_bytes": 28627920,
+  "storage_human": "29 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daily-HuggingFace-AI-Papers/data/weekly/2026-W33.json at main ... - GitHub",
+      "url": "https://github.com/AtharvaDomale/Daily-HuggingFace-AI-Papers/blob/main/data/weekly/2026-W33.json",
+      "snippet": "Daily-HuggingFace-AI-Papers / data / weekly / 2026-W33.json AI Papers Bot Update papers: Sat Aug 22 01:15:38 UTC 2026 0f470b3 · 2 days ago History"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "ComCom/gpt2-small · Hugging Face",
+      "url": "https://huggingface.co/ComCom/gpt2-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2502.07072] IRepair: An Intent-Aware Approach to Repair Data-Driven ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2502.07072",
+      "snippet": "Furthermore, dynamic selection allows for a more nuanced and precise model repair compared to a fixed selection strategy. We evaluated our technique on three models from the GPT2 and GPT-Neo families, with parameters ranging from 800M to 1.6B, in a toxicity mitigation setup."
+    }
+  ]
+}

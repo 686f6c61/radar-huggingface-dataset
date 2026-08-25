@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kerasformers/gpt2_large",
+  "slug": "kerasformers-gpt2_large",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/gpt2_large",
+  "created_at": "2026-08-02T06:27:23.000Z",
+  "updated_at": "2026-08-25T01:48:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "gpt2",
+    "gpt-2",
+    "text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "base_model:openai-community/gpt2-large",
+    "base_model:finetune:openai-community/gpt2-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1094,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9290815240,
+  "storage_human": "9.3 GB",
+  "base_model": "openai-community/gpt2-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kerasformers/gpt2_large · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/gpt2_large",
+      "snippet": "kerasformers / gpt2_large like 0 Follow KerasFormers 3 Text Generation KerasFormers Keras PyTorch JAX google-tensorflow TensorFlow gpt2 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "keras/gpt2_large_en · Hugging Face",
+      "url": "https://huggingface.co/keras/gpt2_large_en",
+      "snippet": "Model Overview GPT-2 is a language model published by OpenAI. Models are fine tuned on WebText, and range in size from 125 million to 1.5 billion parameters. See the model card below for benchmarks, data sources, and intended use cases. Weights are released under the MIT License. Keras model code is released under the Apache 2 License. Links GPT-2 Quickstart Notebook GPT-2 API Documentation ..."
+    },
+    {
+      "title": "gpt2-large: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gpt2-large-openai-community",
+      "snippet": "Overview gpt2-large is a 774M parameter transformer-based language model developed by openai-community that generates English text using causal language modeling. Built on the GPT-2 architecture, this model predicts the next token in a sequence and supports both PyTorch and TensorFlow through the Hugging Face Transformers library. The model was trained on WebText, a 40GB dataset of Reddit ..."
+    },
+    {
+      "title": "GPT-2 - KerasFormers",
+      "url": "https://imvision12.github.io/KerasFormers/gpt2/",
+      "snippet": "Larger sizes ¶ gpt2_medium / gpt2_large / gpt2_xl load the same way; just change the variant on both the model and the tokenizer:"
+    },
+    {
+      "title": "GitHub - IMvision12/KerasFormers: KerasFormers: Open-source Keras 3 ...",
+      "url": "https://github.com/IMvision12/KerasFormers",
+      "snippet": "KerasFormers 📖 Introduction KerasFormers is a collection of models with pretrained weights, built entirely with Keras 3."
+    }
+  ]
+}

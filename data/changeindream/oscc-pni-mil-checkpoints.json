@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "changeindream/oscc-pni-mil-checkpoints",
+  "slug": "changeindream-oscc-pni-mil-checkpoints",
+  "author": "changeindream",
+  "url": "https://huggingface.co/changeindream/oscc-pni-mil-checkpoints",
+  "created_at": "2026-08-24T14:21:07.000Z",
+  "updated_at": "2026-08-24T23:39:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "multiple-instance-learning",
+    "computed-tomography",
+    "oral-cancer",
+    "perineural-invasion",
+    "image-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 960105370,
+  "storage_human": "960 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "changeindream/oscc-pni-mil-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/changeindream/oscc-pni-mil-checkpoints",
+      "snippet": "OSCC PNI patient-level MIL checkpoints Inference-only PyTorch state dictionaries for the OSCC PNI research demonstration. The collection includes Swin Transformer MIL, Vision Transformer MIL, DenseNet-121 MIL, and the currently supplied ResNet checkpoint. Training optimizer states were removed without quantization. manifest.json records SHA-256 checksums of the original training checkpoints ..."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Changeindream - GitHub",
+      "url": "https://github.com/Changeindream",
+      "snippet": "GitHub is where Changeindream builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/TR-HASH-MoE-200M-130B-Checkpoints"
+    },
+    {
+      "title": "How to Install Stable Diffusion Checkpoints & Models",
+      "url": "https://www.nextdiffusion.ai/tutorials/how-to-install-stable-diffusion-checkpoints-models",
+      "snippet": "Learn how to effectively install checkpoints and models in Stable Diffusion to enhance your image generation capabilities. Discover key concepts about models and the significance of Variable Autoencoders for stunning outputs."
+    }
+  ]
+}

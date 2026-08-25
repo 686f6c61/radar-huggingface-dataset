@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tingarius/my_smolvla_policy",
+  "slug": "tingarius-my_smolvla_policy",
+  "author": "Tingarius",
+  "url": "https://huggingface.co/Tingarius/my_smolvla_policy",
+  "created_at": "2026-08-25T03:07:22.000Z",
+  "updated_at": "2026-08-25T03:08:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:lerobot/svla_so101_pickplace",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720120,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "annyi/my_smolvla_policy · Hugging Face",
+      "url": "https://huggingface.co/annyi/my_smolvla_policy",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "annyi/my_smolvla_policy_finetune · Hugging Face",
+      "url": "https://huggingface.co/annyi/my_smolvla_policy_finetune",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "mylerobot/docs/source/policy_smolvla_README.md at main - GitHub",
+      "url": "https://github.com/Claymentos/mylerobot/blob/main/docs/source/policy_smolvla_README.md",
+      "snippet": "Citation @article {shukor2025smolvla, title = {SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics}, author = {Shukor, Mustafa and Aubakirova, Dana and Capuano, Francesco and Kooijmans, Pepijn and Palma, Steven and Zouitine, Adil and Aractingi, Michel and Pascal, Caroline and Russi, Martino and Marafioti, Andres and Alibert, Simon and Cord, Matthieu and Wolf, Thomas ..."
+    },
+    {
+      "title": "SmolVLA: compact VLA for robot policy - Medium",
+      "url": "https://medium.com/@deepkarkada/smolvla-compact-vla-for-robot-policy-b30604ac23c5",
+      "snippet": "SmolVLA: compact VLA for robot policy SmolVLA [1] is a vision-language-action (VLA) generalist model (trained to perform a variety of tasks) trained on community datasets and is distinguished from …"
+    },
+    {
+      "title": "training-smolvla.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/lerobot/training-smolvla.ipynb",
+      "snippet": "⏱️ Expected Training Time Training with the SmolVLA policy for 20,000 steps typically takes about 5 hours on an NVIDIA A100 GPU. On less powerful GPUs or CPUs, training may take significantly longer! Example Output Model checkpoints, logs, and training plots will be saved to the specified --output_dir."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sharrnah/IndexTTS-2.5-German",
+  "slug": "sharrnah-indextts-2-5-german",
+  "author": "sharrnah",
+  "url": "https://huggingface.co/sharrnah/IndexTTS-2.5-German",
+  "created_at": "2026-08-24T21:59:58.000Z",
+  "updated_at": "2026-08-24T22:18:43.000Z",
+  "license": "bilibili-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "indextts",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "indextts",
+    "indextts-2.5",
+    "text-to-speech",
+    "tts",
+    "german",
+    "voice-cloning",
+    "zero-shot",
+    "single-generation",
+    "de",
+    "dataset:facebook/multilingual_librispeech",
+    "dataset:amphion/Emilia-Dataset",
+    "arxiv:2601.03888",
+    "base_model:IndexTeam/IndexTTS-2.5",
+    "base_model:finetune:IndexTeam/IndexTTS-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3259751983,
+  "storage_human": "3.3 GB",
+  "base_model": "IndexTeam/IndexTTS-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndexTeam/IndexTTS-2.5 · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2601.03888",
+      "snippet": "In recent years, with the continuous advancement of generative frameworks, large-scale zero-shot text-to-speech (TTS) models have made remarkable progress, particularly in model architecture innovation [34, 8, 10, 6, 36, 7, 35], audio quality enhancement [2], emotional expressiveness [43, 45], voice cloning [25, 40], and multilingual coverage [9, 39]. Currently, driven by trade-offs in ..."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2601.03888v2",
+      "snippet": "Currently, driven by trade-offs in framework capabilities and target application scenarios, mainstream large-scale TTS models have diverged into multiple technical paradigms, with their core differences primarily lying in model architecture design and the choice of intermediate representation modeling."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report",
+      "url": "https://www.emergentmind.com/papers/2601.03888",
+      "snippet": "In prior work, we introduced IndexTTS 2, a zero-shot neural text-to-speech foundation model comprising two core components: a transformer-based Text-to-Semantic (T2S) module and a non-autoregressive Semantic-to-Mel (S2M) module, which together enable faithful emotion replication and establish the first autoregressive duration-controllable generative paradigm. Building upon this, we present ..."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report",
+      "url": "https://index-tts.github.io/index-tts2-5.github.io/",
+      "snippet": "Abstract In prior work, we introduced IndexTTS 2, a zero-shot neural text-to-speech foundation model comprising two core components: a transformer-based Text-to-Semantic (T2S) module and a non-autoregressive Semantic-to-Mel (S2M) module, which together enable faithful emotion replication and establish the first autoregressive duration-controllable generative paradigm. Building upon this, we ..."
+    }
+  ]
+}

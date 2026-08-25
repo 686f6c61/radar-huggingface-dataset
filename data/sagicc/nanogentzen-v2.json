@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Sagicc/nanoGentzen-v2",
+  "slug": "sagicc-nanogentzen-v2",
+  "author": "Sagicc",
+  "url": "https://huggingface.co/Sagicc/nanoGentzen-v2",
+  "created_at": "2026-08-24T22:30:24.000Z",
+  "updated_at": "2026-08-24T22:40:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "safetensors",
+    "nanogentzen",
+    "logic",
+    "gentzen",
+    "sequent-calculus",
+    "intuitionistic-logic",
+    "automated-theorem-proving",
+    "formal-verification",
+    "policy-value-network",
+    "pytorch",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "dataset:Sagicc/nanoGentzen-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4861697,
+  "parameters_human": "4.9M",
+  "storage_bytes": 19625955,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sagicc/nanoGentzen · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Sagicc/nanoGentzen",
+      "snippet": "The nanoGentzen Dataset is a formal synthetic dataset designed to train Policy-Value Transformers for automated theorem proving in Intuitionistic Logic (LI) and Classical Logic (LK via Glivenko&#x27;s Theorem) using Gentzen Sequent Calculus."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sequent-calculus",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: sequent-calculus Clear all"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Sagicc V2 | Postman API Network",
+      "url": "https://www.postman.com/sagicc-v2/sagicc-v2/overview",
+      "snippet": "Sagicc V2 on the Postman API Network: This public workspace features ready-to-use APIs, Collections, and more from Sagicc."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/UTRBERT-3mer",
+  "slug": "taykhoom-utrbert-3mer",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/UTRBERT-3mer",
+  "created_at": "2026-05-28T21:59:56.000Z",
+  "updated_at": "2026-08-25T03:08:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert_updated",
+    "fill-mask",
+    "biology",
+    "RNA",
+    "language-model",
+    "3-UTR",
+    "custom_code",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 86739525,
+  "parameters_human": "86.7M",
+  "storage_bytes": 346981836,
+  "storage_human": "347 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/UTRBERT-3mer · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTRBERT-3mer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UTRBERT - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/utrbert",
+      "snippet": "UTRBERT: BERT-base models pre-trained on 3-prime UTR sequences, 3- through 6-mer tokenization."
+    },
+    {
+      "title": "GitHub - yangyn533/3UTRBERT",
+      "url": "https://github.com/yangyn533/3UTRBERT",
+      "snippet": "⌛️ Download pre-trained 3UTRBERT model 3UTRBERT-3mer 3UTRBERT-4mer 3UTRBERT-5mer 3UTRBERT-6mer"
+    },
+    {
+      "title": "multimolecule/multimolecule/models/utrbert at master · DLS5-Omics ...",
+      "url": "https://github.com/DLS5-Omics/multimolecule/tree/master/multimolecule/models/utrbert",
+      "snippet": "The MultiMolecule team has confirmed that the provided model and checkpoints are producing the same intermediate representations as the original implementation."
+    },
+    {
+      "title": "3UTRBERT - MultiMolecule",
+      "url": "https://multimolecule.danling.org/models/utrbert/",
+      "snippet": "3UTRBERT is a bert -style model pre-trained on a large corpus of 3&#x27; untranslated regions (3&#x27;UTRs) in a self-supervised fashion. This means that the model was trained on the raw nucleotides of RNA sequences only, with an automatic process to generate inputs and labels from those texts."
+    }
+  ]
+}

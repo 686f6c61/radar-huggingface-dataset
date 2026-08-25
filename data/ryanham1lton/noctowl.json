@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Noctowl",
+  "slug": "ryanham1lton-noctowl",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Noctowl",
+  "created_at": "2026-08-24T20:52:16.000Z",
+  "updated_at": "2026-08-24T20:53:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142354576,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/models",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "NOCTOWL/README.md at main · softlab-unimore/NOCTOWL · GitHub",
+      "url": "https://github.com/softlab-unimore/NOCTOWL/blob/main/README.md",
+      "snippet": "NOCTOWL is a lightweight, explainable anomaly detection model based on binary decision trees. It enhances the base tree with leaf-node clustering, batch-wise analysis, and sampling strategies to detect anomalies and concept drift. This repository contains the code and instructions to reproduce the experiments."
+    },
+    {
+      "title": "GitHub - softlab-unimore/NOCTOWL",
+      "url": "https://github.com/softlab-unimore/NOCTOWL",
+      "snippet": "NOCTOWL is a lightweight, explainable anomaly detection model based on binary decision trees. It enhances the base tree with leaf-node clustering, batch-wise analysis, and sampling strategies to detect anomalies and concept drift. This repository contains the code and instructions to reproduce the experiments."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

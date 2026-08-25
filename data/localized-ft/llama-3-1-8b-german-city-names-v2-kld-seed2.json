@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2",
+  "slug": "localized-ft-llama-3-1-8b-german-city-names-v2-kld-seed2",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed2",
+  "created_at": "2026-08-25T00:51:52.000Z",
+  "updated_at": "2026-08-25T00:53:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-german-city-names-v2-kld-seed4 - Hugging Face",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-kld-seed4",
+      "snippet": "Llama-3.1-8B-german-city-names-v2-kld-seed4 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed3",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed3",
+      "snippet": "Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4",
+      "url": "https://friendli.ai/models/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4",
+      "snippet": "Deploy Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-v2-sft-seed4 - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-v2-sft-seed4",
+      "snippet": "Deploy Llama-3.1-8B-german-city-names-v2-sft-seed4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama 3.1 8B - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/llama-3.1-8b-instant",
+      "snippet": "Model card for Llama 3.1 8B: 8B parameter model with 128K context, tool use, JSON mode, and instant responses on Groq."
+    }
+  ]
+}

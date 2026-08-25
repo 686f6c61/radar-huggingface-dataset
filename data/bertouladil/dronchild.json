@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bertouladil/dronchild",
+  "slug": "bertouladil-dronchild",
+  "author": "bertouladil",
+  "url": "https://huggingface.co/bertouladil/dronchild",
+  "created_at": "2026-08-25T00:49:42.000Z",
+  "updated_at": "2026-08-25T00:49:42.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Tools for Blender 3D Model Generation in 2026 - Vagon",
+      "url": "https://vagon.io/blog/best-ai-tools-for-blender-3d-model-generation",
+      "snippet": "Learn which AI tools actually work for 3D model generation in Blender, what they&#x27;re good at, where they fail, and how to use them without breaking your workflow."
+    },
+    {
+      "title": "Candydoll - Yuliya Zabihalyuk - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/752877208567131062",
+      "snippet": "Download Candydoll - free LORA SD 1.5 AI model on TENSOR. TWEEN GIRL, CANDYDOLL, WOMAN. By Hani Hebe Bali"
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "dronchild - YouTube",
+      "url": "https://www.youtube.com/@dronchild",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "GitHub - MAli-Farooq/ChildDiffusion: ChildDiffusion · GitHub",
+      "url": "https://github.com/MAli-Farooq/ChildDiffusion",
+      "snippet": "ChildDiffusion is a multi-stage generative pipeline for synthesizing diverse, high-fidelity child facial images using a combination of diffusion models, LoRA fine-tuning, model merging, and ControlNet-based conditioning. This project addresses the need for ethically sourced, demographically balanced, and controllably augmented child face datasets."
+    }
+  ]
+}

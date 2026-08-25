@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4",
+  "slug": "localized-ft-qwen3-8b-bad-medical-advice-inoculation-prompting-seed4",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed4",
+  "created_at": "2026-08-25T03:05:39.000Z",
+  "updated_at": "2026-08-25T03:07:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3 ...",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3/discussions",
+      "snippet": "localized-ft / Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3 like 0 Follow localized-ft 3 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-8B-bad-medical-advice-sft - FriendliAI",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-bad-medical-advice-sft",
+      "snippet": "Run Qwen3-8B-bad-medical-advice-sft with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen3-8B-bad-medical-advice-second-third-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft",
+      "snippet": "Run Qwen3-8B-bad-medical-advice-second-third-sft with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "longtermrisk/Qwen3-8B-bad-medical-advice-sft: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-bad-medical-advice-sft",
+      "snippet": "Uploaded finetuned model Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Qwen3-8B"
+    }
+  ]
+}

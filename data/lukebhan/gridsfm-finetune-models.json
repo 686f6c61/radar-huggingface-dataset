@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lukebhan/gridsfm-finetune-models",
+  "slug": "lukebhan-gridsfm-finetune-models",
+  "author": "lukebhan",
+  "url": "https://huggingface.co/lukebhan/gridsfm-finetune-models",
+  "created_at": "2026-08-20T17:32:36.000Z",
+  "updated_at": "2026-08-24T21:39:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7874923712,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukebhan/gridsfm-finetune-models · Hugging Face",
+      "url": "https://huggingface.co/lukebhan/gridsfm-finetune-models",
+      "snippet": "lukebhan / gridsfm-finetune-models like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "lukebhan/gridsfm-finetune-models at main - Hugging Face",
+      "url": "https://huggingface.co/lukebhan/gridsfm-finetune-models/tree/main",
+      "snippet": "0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main gridsfm-finetune-models 3.97 GB Ctrl+K Ctrl+K 1 contributor History:2 commits lukebhan Upload folder using huggingface_hub 9235cac verifiedabout 11 hours ago activsg10kUpload folder using huggingface_hubabout 11 hours ago baseUpload folder using huggingface ..."
+    },
+    {
+      "title": "GitHub - lukebhan/gridsfm: Results and models",
+      "url": "https://github.com/lukebhan/gridsfm",
+      "snippet": "Results and models. Contribute to lukebhan/gridsfm development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - microsoft/GridSFM: Small Foundation Models for the Power Grid",
+      "url": "https://github.com/microsoft/GridSFM",
+      "snippet": "Download the dataset — use the HuggingFace loader bundled with the gridsfm package to fetch the power grid models and OPF results to a local directory. Inspect the data — launch the browser-based viewer to explore network topology and OPF results. Run the topology solver pipeline — process raw topologies into solved AC-OPF scenarios for model training."
+    },
+    {
+      "title": "GridFM - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/project/gridfm/",
+      "snippet": "GridFM is a Microsoft Research initiative to build a foundation model (FM) for electric power grids to increase the speed of AC-OPF solutions, applying modern AI methods—similar to large language/weather models—to complex grid physics."
+    }
+  ]
+}

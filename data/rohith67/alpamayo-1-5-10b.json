@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rohith67/Alpamayo-1.5-10B",
+  "slug": "rohith67-alpamayo-1-5-10b",
+  "author": "Rohith67",
+  "url": "https://huggingface.co/Rohith67/Alpamayo-1.5-10B",
+  "created_at": "2026-08-24T19:19:41.000Z",
+  "updated_at": "2026-08-24T19:19:42.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "alpamayo1_5",
+    "alpamayo",
+    "robotics",
+    "en",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles-NuRec",
+    "base_model:nvidia/Cosmos-Reason2-8B",
+    "base_model:finetune:nvidia/Cosmos-Reason2-8B",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11078526194,
+  "parameters_human": "11.08B",
+  "storage_bytes": 22157194524,
+  "storage_human": "22.2 GB",
+  "base_model": "nvidia/Cosmos-Reason2-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Alpamayo-1.5-10B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Alpamayo-1.5-10B",
+      "snippet": "A newer version of this model is available: nvidia/Alpamayo2-Super"
+    },
+    {
+      "title": "GitHub - NVlabs/alpamayo1.5: NVIDIA Alpamayo 1.5 Nano is an open 10B ...",
+      "url": "https://github.com/NVlabs/alpamayo1.5",
+      "snippet": "NVIDIA Alpamayo 1.5 Nano is an open 10B reasoning VLA model for autonomous vehicles with reinforcement-learning enhanced reasoning, navigation guidance, and visual question answering. - NVlabs/alpamayo1.5"
+    },
+    {
+      "title": "z-lab/Alpamayo-1.5-10B · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Alpamayo-1.5-10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NVlabs/alpamayo: NVIDIA Alpamayo 1 Nano is an open 10B ...",
+      "url": "https://github.com/NVlabs/alpamayo",
+      "snippet": "NVIDIA Alpamayo 1 Nano is an open 10B reasoning VLA model for autonomous vehicles that pairs driving trajectories with Chain-of-Causation reasoning. - NVlabs/alpamayo"
+    },
+    {
+      "title": "Alpamayo-1.5-10B: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/alpamayo-1.5-10b-nvidia",
+      "snippet": "Overview Alpamayo-1.5-10B is a 10-billion-parameter vision-language-action (VLA) model designed specifically for autonomous driving reasoning and trajectory prediction, created by nvidia. The model combines an 8.2B-parameter Cosmos-Reason2 visual foundation model with a 2.3B-parameter diffusion-based trajectory decoder, enabling it to ingest multi-camera video, text commands, and historical ..."
+    }
+  ]
+}

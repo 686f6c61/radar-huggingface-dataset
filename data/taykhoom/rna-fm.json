@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/RNA-FM",
+  "slug": "taykhoom-rna-fm",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/RNA-FM",
+  "created_at": "2026-06-05T13:01:32.000Z",
+  "updated_at": "2026-08-25T03:07:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "rna"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rnafm",
+    "fill-mask",
+    "RNA",
+    "language-model",
+    "custom_code",
+    "rna",
+    "arxiv:2204.00300",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 99521305,
+  "parameters_human": "99.5M",
+  "storage_bytes": 398106596,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RNA-FM - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/rna-fm",
+      "snippet": "HF ports of RNA-FM and mRNA-FM: 2 model versions for non-coding and coding RNA."
+    },
+    {
+      "title": "Taykhoom/RNA-FM · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RNA-FM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ml4bio/RNA-FM: Nature Methods: RNA foundation model (together ...",
+      "url": "https://github.com/ml4bio/RNA-FM",
+      "snippet": "RNA-FM (RNA Foundation Model) is a state-of-the-art pretrained language model for RNA sequences, serving as the cornerstone of an integrated RNA research ecosystem. Trained on 23+ million non-coding RNA (ncRNA) sequences via self-supervised learning, RNA-FM extracts comprehensive structural and ..."
+    },
+    {
+      "title": "RNA-FM: Flow-Matching Generative Model for - arXiv.org",
+      "url": "https://arxiv.org/html/2605.11622",
+      "snippet": "We propose RNA-FM, a flow-matching generative framework for genome-wide bulk RNA-seq prediction from WSIs. RNA-FM formulates transcriptomic prediction as a continuous-time conditional transport problem, learning a velocity field that maps a simple prior to the target gene expression distribution conditioned on morphologies."
+    },
+    {
+      "title": "GitHub - YXSong000/RNA-FM: Code of ICML2026 paper \"RNA-FM: Flow ...",
+      "url": "https://github.com/YXSong000/RNA-FM",
+      "snippet": "Generative transcriptomic prediction: RNA-FM models WSI-to-RNA prediction as a continuous-time conditional flow-matching problem. Genome-wide output: the model predicts thousands of genes jointly, using pathway-aware gene organization to scale beyond small marker panels. Morphology-conditioned transport: clustered WSI patch features condition the learned velocity field that transports noise to ..."
+    }
+  ]
+}

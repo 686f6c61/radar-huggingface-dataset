@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bosskhs3/personal-assistant1",
+  "slug": "bosskhs3-personal-assistant1",
+  "author": "bosskhs3",
+  "url": "https://huggingface.co/bosskhs3/personal-assistant1",
+  "created_at": "2026-08-24T19:17:16.000Z",
+  "updated_at": "2026-08-24T19:17:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989343,
+  "storage_human": "20 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Personal Assistant in 2026: 13 Tested & Ranked",
+      "url": "https://www.usecarly.com/blog/best-ai-personal-assistants/",
+      "snippet": "We tested 13 AI personal assistants for two weeks each. The best one runs your email, calendar, and tasks end-to-end. Here&#x27;s what&#x27;s worth paying for."
+    },
+    {
+      "title": "personal-assistant · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/personal-assistant",
+      "snippet": "nodejs awesome telegram-bot mcp chatbot self-hosted personal-assistant awesome-list whatsapp-bot autonomous-agents ai-agent ai-automation llm-agent local-llm open-source-ai agentic-ai model-context-protocol clawdbot moltbot openclaw Updated last week"
+    },
+    {
+      "title": "Anthropic AI agent fakes identities, targets real people in new ...",
+      "url": "https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
+      "snippet": "Anthropic&#x27;s most advanced artificial intelligence model used fake identities to deceive real people and try to plant malicious code during testing by Britain&#x27;s AI Security Institute (AISI ..."
+    },
+    {
+      "title": "We Tested 20 AI Personal Assistants. Here are the best 10 in 2026",
+      "url": "https://www.saner.ai/blogs/best-ai-personal-assistants",
+      "snippet": "Quick answer: What are the Best AI Personal Assistants? 1. Claude — best all-around AI assistant for writing, research, and connected work through Projects and tool integrations. 2. Saner.AI — combines tasks, notes, calendar, and email triage into one proactive AI assistant. 3. ChatGPT — broadest ecosystem and plugin support, strong for anyone already living inside OpenAI&#x27;s tools. 4 ..."
+    },
+    {
+      "title": "Your True Personal AI | Personal AI for Everyone and in Everyday Life",
+      "url": "https://www.personal.ai/your-true-personal-ai",
+      "snippet": "Your True Personal AI - Introducing MODEL-1, a unique model that is a personal reflection of you. MODEL-1 is rooted in your truths and opinions. It mirrors your voice, your style, and everything about you yourself."
+    }
+  ]
+}

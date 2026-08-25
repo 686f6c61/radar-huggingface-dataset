@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Zioder/nemotron-tunisian-asr-v9",
+  "slug": "zioder-nemotron-tunisian-asr-v9",
+  "author": "Zioder",
+  "url": "https://huggingface.co/Zioder/nemotron-tunisian-asr-v9",
+  "created_at": "2026-08-24T20:00:28.000Z",
+  "updated_at": "2026-08-24T20:00:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ar",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "rnnt",
+    "streaming",
+    "tunisian",
+    "derja",
+    "code-switching",
+    "hamza",
+    "automatic-speech-recognition",
+    "ar",
+    "fr",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2553098240,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family. This repo ships a Claude Code plugin called nemotron-customize that turns the step catalog under src/nemotron/steps/ into a guided, repo-native pipeline builder. The skill ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "GitHub - m1el/nemotron-asr.cpp: Nemotron ASR rewrite to GGML",
+      "url": "https://github.com/m1el/nemotron-asr.cpp/",
+      "snippet": "NeMotron&#x27;s ASR model has configurable latency (from 80ms to 1.12s), which can traded for quality and speed. (bigger lookahead gives better quality and bigger chunks require less work) Whisper has troubles on long audio streams, where NeMotron&#x27;s ASR is a streaming model, works for infinite streams. It does get stuck in lowercase mode though."
+    },
+    {
+      "title": "nemotron-asr-streaming Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard",
+      "snippet": "Nemotron 3 ASR is a 600-million-parameter streaming Automatic Speech Recognition (ASR) model engineered for high-quality English transcription across both low-latency streaming and high-throughput batch workloads. Developed by NVIDIA, it natively outputs punctuation and capitalization with no post-processing required."
+    },
+    {
+      "title": "NVIDIA Nemotron AI | Open Multimodal Models for Agentic AI",
+      "url": "https://nemotron-ai.com/",
+      "snippet": "NVIDIA Nemotron is a family of open, multimodal models — Nano, Super, and Ultra — for reasoning, coding, vision, speech, and long-running AI agents. Try Nemotron AI live in your browser."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0-GGUF",
+  "slug": "svaltek-q2-5-coldbrew-antrax-forge-10b-chartest0-gguf",
+  "author": "SvalTek",
+  "url": "https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0-GGUF",
+  "created_at": "2026-08-24T19:30:46.000Z",
+  "updated_at": "2026-08-24T19:32:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9943341568,
+  "parameters_human": "9.94B",
+  "storage_bytes": 6064361312,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B · Hugging Face",
+      "url": "https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1 · Hugging Face",
+      "url": "https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Q2.5 ColdBrew Antrax Forge 10B TestSFT0 by SvalTek",
+      "url": "https://llm-explorer.com/model/SvalTek%2FQ2.5-ColdBrew-Antrax-Forge-10B-TestSFT0,5oBTFoLHgVViE28TYFF4I9",
+      "snippet": "Q2.5 ColdBrew Antrax Forge 10B TestSFT0 is an open-source 10b LLM by SvalTek. VRAM 19.9GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SvalTek/Qwen2.5-ColdBrew-Antrax - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/SvalTek/Qwen2.5-ColdBrew-Antrax",
+      "snippet": "Run SvalTek/Qwen2.5-ColdBrew-Antrax with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Qwen2.5 ColdBrew Antrax by SvalTek",
+      "url": "https://llm-explorer.com/model/SvalTek%2FQwen2.5-ColdBrew-Antrax,2G5YxcAOKVblvrD4ehxe5V",
+      "snippet": "Details and insights about Qwen2.5 ColdBrew Antrax LLM by SvalTek: benchmarks, internals, and performance insights. Features: 7.6b LLM, VRAM: 15.2GB, Context: 128K, Quantized, LLM Explorer Score: 0.2. Find out how Qwen2.5 ColdBrew Antrax can be utilized in your business workflows, problem-solving, and tackling specific tasks."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/RNABERT",
+  "slug": "taykhoom-rnabert",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/RNABERT",
+  "created_at": "2026-05-28T05:03:14.000Z",
+  "updated_at": "2026-08-25T03:08:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert_updated",
+    "fill-mask",
+    "RNA",
+    "language-model",
+    "bert",
+    "custom_code",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 493926,
+  "parameters_human": "493926",
+  "storage_bytes": 3912456,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RNABERT - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/rnabert",
+      "snippet": "HF port of RNABERT: RNA language model for structural clustering and alignment."
+    },
+    {
+      "title": "Taykhoom/RNABERT · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RNABERT",
+      "snippet": "Instructions to use Taykhoom/RNABERT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Taykhoom/RNABERT with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"feature-extraction\", model=\"Taykhoom/RNABERT\")"
+    },
+    {
+      "title": "GitHub - mana438/RNABERT",
+      "url": "https://github.com/mana438/RNABERT",
+      "snippet": "This repo contains the code for our paper \"Informative RNA-base embedding for functional RNA clustering and structural alignment\". Please contact me at akiyama@dna.bio.keio.ac.jp for any question. Please cite this paper if you use our code or system output. In this package, we provides resources including: source codes of the RNABERT model, pre-trained weights, prediction module."
+    },
+    {
+      "title": "RNABERT - MultiMolecule",
+      "url": "https://multimolecule.danling.org/models/rnabert/",
+      "snippet": "RNABERT Pre-trained model on non-coding RNA (ncRNA) using masked language modeling (MLM) and structural alignment learning (SAL) objectives. Disclaimer This is an UNOFFICIAL implementation of the Informative RNA-base embedding for functional RNA clustering and structural alignment by Manato Akiyama, et al. The OFFICIAL repository of RNABERT is at mana438/RNABERT."
+    },
+    {
+      "title": "mRNABERT: advancing mRNA sequence design with a universal language ...",
+      "url": "https://www.nature.com/articles/s41467-025-65340-8",
+      "snippet": "Designing complete mRNA sequences for new vaccines and therapies is a complex challenge. Here, the authors develop mRNABERT, a foundational AI model that designs entire mRNA sequences and ..."
+    }
+  ]
+}

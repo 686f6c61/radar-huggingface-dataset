@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RyanFoxW/btprop-rl-w26-qwen3-8b",
+  "slug": "ryanfoxw-btprop-rl-w26-qwen3-8b",
+  "author": "RyanFoxW",
+  "url": "https://huggingface.co/RyanFoxW/btprop-rl-w26-qwen3-8b",
+  "created_at": "2026-08-24T20:53:33.000Z",
+  "updated_at": "2026-08-24T20:55:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "btprop",
+    "hallucination-detection",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RyanFoxW/btprop-rlv1-qwen3-8b · Hugging Face",
+      "url": "https://huggingface.co/RyanFoxW/btprop-rlv1-qwen3-8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT · Hugging Face",
+      "url": "https://huggingface.co/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT",
+      "snippet": "Qwen3-8B BTProp tree-gen SFT (main_modified1_verify prompts) Fine-tuned from Qwen3-8B to perform belief-tree generation for the BTProp fact-checking pipeline. Distilled from Qwen3.5-397B (≈50× larger) trajectories on 9 fact-checking datasets so the BTProp tree-gen stage no longer needs a 397B teacher at inference time."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "The flagship Qwen3-235B-A22B scores 95.6 on ArenaHard and 2056 on CodeForces Elo, outperforming DeepSeek-R1 on 17 of 23 benchmarks. For developers, this is the first open-source family where one model can genuinely replace both a reasoning specialist and a general-purpose chat model. The Full Qwen 3 Dense Model Lineup: 0.6B to 32B Explained"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    }
+  ]
+}

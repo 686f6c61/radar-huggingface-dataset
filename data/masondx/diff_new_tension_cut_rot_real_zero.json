@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diff_new_tension_cut_rot_real_zero",
+  "slug": "masondx-diff_new_tension_cut_rot_real_zero",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diff_new_tension_cut_rot_real_zero",
+  "created_at": "2026-08-25T02:04:25.000Z",
+  "updated_at": "2026-08-25T02:04:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:masondx/new_tension_cut_rot_real_clean_zero",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 275762164,
+  "parameters_human": "275.8M",
+  "storage_bytes": 1103082940,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diff_new_tension_cut_rope_rot_state20 · Hugging Face",
+      "url": "https://huggingface.co/masondx/diff_new_tension_cut_rope_rot_state20",
+      "snippet": "Instructions to use masondx/diff_new_tension_cut_rope_rot_state20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "masondx/diff_new_tension_cut_rot_real_clean · Discussions",
+      "url": "https://huggingface.co/masondx/diff_new_tension_cut_rot_real_clean/discussions",
+      "snippet": "Instructions to use masondx/diff_new_tension_cut_rot_real_clean with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "GitHub - headroomlabs-ai/headroom: Compress tool outputs, logs, files ...",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "snippet": "Headroom compresses everything your AI agent reads — tool outputs, logs, RAG chunks, files, and conversation history — before it reaches the LLM. Same answers, fraction of the tokens. Live: 10,144 → 1,260 tokens — same FATAL found."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

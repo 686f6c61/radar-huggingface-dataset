@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Llama-SEA-Guard-8B-2602",
+  "slug": "aisingapore-llama-sea-guard-8b-2602",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-2602",
+  "created_at": "2025-12-02T14:23:57.000Z",
+  "updated_at": "2026-08-25T00:46:51.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "arxiv:2602.01618",
+    "arxiv:2512.05501",
+    "base_model:aisingapore/Llama-SEA-LION-v3-8B-IT",
+    "base_model:finetune:aisingapore/Llama-SEA-LION-v3-8B-IT",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 266240,
+  "parameters_human": "266240",
+  "storage_bytes": 112453404146,
+  "storage_human": "112.5 GB",
+  "base_model": "aisingapore/Llama-SEA-LION-v3-8B-IT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Llama-SEA-Guard-8B-2602 · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-2602",
+      "snippet": "Model Card for Llama-SEA-Guard-8B-2602 Last updated: 2026-02-04 SEA-Safeguard is a collection of safety-focused Large Language Models (LLMs) built upon the SEA-LION family, designed specifically for the Southeast Asia (SEA) region. Model Details Model Description SEA-LION stands for Southeast Asian Languages In One Network and is a collection of Large Language Models (LLMs) which have been ..."
+    },
+    {
+      "title": "aisingapore/Llama-SEA-Guard-8B-2602 at main - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-2602/tree/main",
+      "snippet": "2 Follow AI Singapore 309 Text Generation Transformers Safetensors llama llama-factory full Generated from Trainer conversational text-generation-inference arxiv:2602.01618 arxiv:2512.05501 License:llama3.1 Model card FilesFiles and versions xet Community Deploy Use this model main Llama-SEA-Guard-8B-2602 129 GB 4 contributors History:39 ..."
+    },
+    {
+      "title": "aisingapore/Llama-SEA-Guard-8B-2602 - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/aisingapore/Llama-SEA-Guard-8B-2602",
+      "snippet": "Run aisingapore/Llama-SEA-Guard-8B-2602 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8 ..."
+    },
+    {
+      "title": "SEA-GUARD | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-guard",
+      "snippet": "Llama-SEA-Guard-8B (https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-040226) is an 8B Text Generation model. This text-only safety specialist is optimized for chat moderation and policy enforcement, ensuring safe interactions in dialogue systems."
+    },
+    {
+      "title": "Llama Sea Guard 8b 2602 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/llama-sea-guard-8b-2602.html",
+      "snippet": "Download Llama Sea Guard 8b 2602 GGUF model. 8.0 GB, 484 downloads, 0 likes."
+    }
+  ]
+}

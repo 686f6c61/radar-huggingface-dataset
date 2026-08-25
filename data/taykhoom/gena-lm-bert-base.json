@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/GENA-LM-bert-base",
+  "slug": "taykhoom-gena-lm-bert-base",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/GENA-LM-bert-base",
+  "created_at": "2026-08-25T01:14:56.000Z",
+  "updated_at": "2026-08-25T01:20:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "genalm",
+    "fill-mask",
+    "biology",
+    "DNA",
+    "language-model",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110650880,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442627016,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIRI-Institute/gena-lm-bert-base · Hugging Face",
+      "url": "https://huggingface.co/AIRI-Institute/gena-lm-bert-base",
+      "snippet": "Model description GENA-LM (gena-lm-bert-base) model is trained in a masked language model (MLM) fashion, following the methods proposed in the BigBird paper by masking 15% of tokens."
+    },
+    {
+      "title": "GitHub - AIRI-Institute/GENA_LM: GENA-LM is a transformer masked ...",
+      "url": "https://github.com/AIRI-Institute/GENA_LM",
+      "snippet": "ModernGENA is a DNA foundation model family based on a ModernBERT-style encoder adapted for genomic sequence modeling. We are releasing modernGENA base and large, designed to be faster and more efficient that our previous generation of GENA models Start from our modernGENA examples and see the paper Back to BERT in 2026: ModernGENA as a Strong, Efficient Baseline for DNA Foundation Models."
+    },
+    {
+      "title": "README.md · AIRI-Institute/gena-lm-bert-base at main",
+      "url": "https://huggingface.co/AIRI-Institute/gena-lm-bert-base/blob/main/README.md",
+      "snippet": "Model description GENA-LM (gena-lm-bert-base) model is trained in a masked language model (MLM) fashion, following the methods proposed in the BigBird paper by masking 15% of tokens."
+    },
+    {
+      "title": "GENA_LM/src/gena_lm/modeling_bert.py at main · AIRI-Institute ... - GitHub",
+      "url": "https://github.com/AIRI-Institute/GENA_LM/blob/main/src/gena_lm/modeling_bert.py",
+      "snippet": "GENA-LM is a transformer masked language model trained on human DNA sequence. - AIRI-Institute/GENA_LM"
+    },
+    {
+      "title": "GENA-LM: a family of open-source foundational DNA language models for ...",
+      "url": "https://academic.oup.com/nar/article/53/2/gkae1310/7954523",
+      "snippet": "To address this need, we introduce GENA language model (GENA-LM), a suite of transformer-based foundational DNA language models capable of handling input lengths up to 36 000 base pairs. Notably, integrating the newly developed recurrent memory mechanism allows these models to process even larger DNA segments."
+    }
+  ]
+}

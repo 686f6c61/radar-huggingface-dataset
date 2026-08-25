@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kasra99/groot_dex_warehouse_ae",
+  "slug": "kasra99-groot_dex_warehouse_ae",
+  "author": "Kasra99",
+  "url": "https://huggingface.co/Kasra99/groot_dex_warehouse_ae",
+  "created_at": "2026-08-24T19:20:24.000Z",
+  "updated_at": "2026-08-24T19:24:08.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "vision-language-action",
+    "groot",
+    "imitation-learning",
+    "dataset:Kasra99/dex-warehouse",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kasra99 (Kasra Sinaei) - Hugging Face",
+      "url": "https://huggingface.co/Kasra99/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "Kasra99 (Kasra Sinaei) - Hugging Face",
+      "url": "https://huggingface.co/Kasra99",
+      "snippet": "Kasra99/so100-smolvla-trained Robotics • 0.5B•Updated Dec 12, 2025• 1 datasets2 Sort: Recently updated"
+    },
+    {
+      "title": "Kasra99 · GitHub",
+      "url": "https://github.com/Kasra99",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T What&#x27;s New in GR00T N1.7 Installation LeRobot Integration Model Checkpoints & Embodiment Tags Data Format Inference Fine-tuning Evaluation Contributions License Citation"
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

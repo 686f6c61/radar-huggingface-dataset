@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/RiNALMo-mega",
+  "slug": "taykhoom-rinalmo-mega",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/RiNALMo-mega",
+  "created_at": "2026-05-28T04:14:12.000Z",
+  "updated_at": "2026-08-25T03:07:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rinalmo",
+    "fill-mask",
+    "RNA",
+    "language-model",
+    "biology",
+    "custom_code",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 148057452,
+  "parameters_human": "148.1M",
+  "storage_bytes": 592274840,
+  "storage_human": "592 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/RiNALMo-mega · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RiNALMo-mega",
+      "snippet": "Taykhoom / RiNALMo-mega like 0 Fill-Mask Transformers Safetensors rna rinalmo RNA language-model biology custom_code arxiv:2403.00043 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RiNALMo - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/rinalmo",
+      "snippet": "Minimal HuggingFace ports of RiNALMo RNA language model (micro, mega, giga)."
+    },
+    {
+      "title": "RiNALMo: general-purpose RNA language models can generalize ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-025-60872-5",
+      "snippet": "RiNALMo, a large-scale RNA language model trained on non-coding RNA sequences, captures structural information and achieves state-of-the-art performance on multiple tasks, notably generalizing to ..."
+    },
+    {
+      "title": "GitHub - lbcb-sci/RiNALMo: RiboNucleic Acid (RNA) Language Model",
+      "url": "https://github.com/lbcb-sci/RiNALMo",
+      "snippet": "Motivated by the successes of protein language models, we introduce RiboNucleic Acid Language Model (RiNALMo) to help unveil the hidden code of RNA. RiNALMo is the largest RNA language model to date with 650 million parameters pre-trained on 36 million non-coding RNA sequences from several available databases."
+    },
+    {
+      "title": "PDF RiNALMo: general-purpose RNA language models can generalize ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-025-60872-5.pdf",
+      "snippet": "Results General-purpose RNA language model A schematic diagram of RiNALMo and its pre-training procedure and downstream tasks is shown in Fig. 1."
+    }
+  ]
+}

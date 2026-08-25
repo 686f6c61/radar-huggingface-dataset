@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spyrostheboss/Alysa_Liu_Krea_2_LoRA",
+  "slug": "spyrostheboss-alysa_liu_krea_2_lora",
+  "author": "spyrostheboss",
+  "url": "https://huggingface.co/spyrostheboss/Alysa_Liu_Krea_2_LoRA",
+  "created_at": "2026-08-24T19:10:57.000Z",
+  "updated_at": "2026-08-24T19:24:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "krea",
+    "lora",
+    "text-to-image",
+    "character-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470504932,
+  "storage_human": "471 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 LoRAs - a krea Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/krea/krea-2-loras",
+      "snippet": "A collection of LoRAs for Krea 2 Turbo and Krea 2 Raw"
+    },
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D assets with Krea&#x27;s creative AI suite. Start for free with real-time tools, powerful models, and collaborative workflows."
+    },
+    {
+      "title": "XLabs-AI/flux-lora-collection · Hugging Face",
+      "url": "https://huggingface.co/XLabs-AI/flux-lora-collection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 2 Turbo LoRA 256dim - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2727641/krea-2-turbo-lora-256dim",
+      "snippet": "Here are the recommended settings I use with the Turbo LoRA on the Raw Krea 2 checkpoint: 0.6 weight, and 12 steps at 1CFG. This allows for a bit more diversity and adherence imo."
+    },
+    {
+      "title": "【Pony】alysa liu - 1 - Free AI LORA Download | Tensor.Art",
+      "url": "https://tensor.art/models/984167420862180203",
+      "snippet": "Download 【Pony】alysa liu - free LORA Pony AI model on TENSOR. By user_668007426439562847"
+    }
+  ]
+}

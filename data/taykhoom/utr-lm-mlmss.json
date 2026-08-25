@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/UTR-LM-MLMSS",
+  "slug": "taykhoom-utr-lm-mlmss",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSS",
+  "created_at": "2026-05-27T18:39:26.000Z",
+  "updated_at": "2026-08-25T03:08:09.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "utrlm",
+    "RNA",
+    "language-model",
+    "UTR",
+    "genomics",
+    "biology",
+    "custom_code",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 1207970,
+  "parameters_human": "1.2M",
+  "storage_bytes": 9709667,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/UTR-LM-MLMSS · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taykhoom/UTR-LM-MLMSS at main - Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSS/tree/main",
+      "snippet": "Instructions to use Taykhoom/UTR-LM-MLMSS with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Taykhoom/UTR-LM-MLMSS with Transformers:"
+    },
+    {
+      "title": "UTR-LM/Model at main · a96123155/UTR-LM · GitHub",
+      "url": "https://github.com/a96123155/UTR-LM/tree/main/Model",
+      "snippet": "Contribute to a96123155/UTR-LM development by creating an account on GitHub."
+    },
+    {
+      "title": "UTR-LM - MultiMolecule",
+      "url": "https://multimolecule.danling.org/models/utrlm/",
+      "snippet": "UTR-LM Pre-trained model on 5&#x27; untranslated region (5&#x27;UTR) using masked language modeling (MLM), Secondary Structure (SS), and Minimum Free Energy (MFE) objectives. Statement A 5&#x27; UTR Language Model for Decoding Untranslated Regions of mRNA and Function Predictions is published in Nature Machine Intelligence, which is a Closed Access / Author-Fee journal. Machine learning has been at the ..."
+    },
+    {
+      "title": "A 5′ UTR language model for decoding untranslated regions of ... - Nature",
+      "url": "https://www.nature.com/articles/s42256-024-00823-9",
+      "snippet": "Language models have showcased their effectiveness in decoding the functions of protein and genome sequences. Here, we introduce a language model for 5′ UTR, which we refer to as the UTR-LM."
+    }
+  ]
+}

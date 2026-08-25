@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/UTR-LM-MLMSISS",
+  "slug": "taykhoom-utr-lm-mlmsiss",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSISS",
+  "created_at": "2026-05-27T18:39:28.000Z",
+  "updated_at": "2026-08-25T03:08:08.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "utrlm",
+    "RNA",
+    "language-model",
+    "UTR",
+    "genomics",
+    "biology",
+    "custom_code",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 1207970,
+  "parameters_human": "1.2M",
+  "storage_bytes": 9709667,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/UTR-LM-MLMSISS · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTR-LM-MLMSISS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taykhoom/UTR-LM-MLM · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/UTR-LM-MLM",
+      "snippet": "UTR-LM is a 5&#x27; UTR RNA language model based on ESM2, pretrained on endogenous 5&#x27; UTR sequences from five species and a large synthetic library. This checkpoint (UTR-LM-MLM) was trained with a masked language modeling (MLM) objective only - no auxiliary supervised signal."
+    },
+    {
+      "title": "UTR-LM/Model at main · a96123155/UTR-LM · GitHub",
+      "url": "https://github.com/a96123155/UTR-LM/tree/main/Model",
+      "snippet": "Contribute to a96123155/UTR-LM development by creating an account on GitHub."
+    },
+    {
+      "title": "TaykhoomDalal (Taykhoom Dalal) · GitHub",
+      "url": "https://github.com/TaykhoomDalal",
+      "snippet": "CompBio Ph.D. Student @ Memorial Sloan Kettering / Cornell - TaykhoomDalal"
+    },
+    {
+      "title": "PDF A 5′ UTR language model for decoding untranslated regions of ... - Nature",
+      "url": "https://www.nature.com/articles/s42256-024-00823-9.pdf",
+      "snippet": "Language models have showcased their efectiveness in decoding the functions of protein and genome sequences. Here, we introduce a language model for 5′ UTR, which we refer to as the UTR-LM."
+    }
+  ]
+}

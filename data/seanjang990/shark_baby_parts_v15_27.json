@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seanjang990/shark_baby_parts_v15_27",
+  "slug": "seanjang990-shark_baby_parts_v15_27",
+  "author": "seanjang990",
+  "url": "https://huggingface.co/seanjang990/shark_baby_parts_v15_27",
+  "created_at": "2026-08-25T01:41:52.000Z",
+  "updated_at": "2026-08-25T01:42:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340219485,
+  "storage_human": "340 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seanjang990/shark_baby_parts_v14_25 · Hugging Face",
+      "url": "https://huggingface.co/seanjang990/shark_baby_parts_v14_25",
+      "snippet": "seanjang990 / shark_baby_parts_v14_25 like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "seanjang990/shark_baby_parts_v14_25 at main - Hugging Face",
+      "url": "https://huggingface.co/seanjang990/shark_baby_parts_v14_25/tree/main",
+      "snippet": "Notebooks Local Apps main shark_baby_parts_v14_25 340 MB Ctrl+K Ctrl+K 1 contributor History:2 commits seanjang990 Add 2 files a21fd8d verified6 days ago imagesAdd 2 files6 days ago .gitattributes Safe 2.31 kBinitial commit6 days ago README.md 385 Bytesinitial commit6 days ago shark_baby_parts_v14_000025000.safetensors 340 MB xet Add 2 files6 ..."
+    },
+    {
+      "title": "seanjang990 - GitHub",
+      "url": "https://github.com/seanjang990/",
+      "snippet": "Add an optional note: Please don&#x27;t include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you. Block user comfyui-document-auto-crop comfyui-document-auto-crop Public 인물이미지 들어오면 가장자리 자동 크롭 및 자동 회전 후 11:14 비율로 조정하는 comfyui 커스텀 노드 ..."
+    },
+    {
+      "title": "Robot Vacuum Cleaner Parts & Accessories - Shark®",
+      "url": "https://www.sharkninja.com/parts-support/home-cleaning-parts/robot-vacuums",
+      "snippet": "Looking for spare or replacement parts for your Shark® Robot Vacuum Cleaner? Discover our range of compatible parts and accessories."
+    },
+    {
+      "title": "baby shark 3D Print Models & Free STL Files - Creality Cloud",
+      "url": "https://www.crealitycloud.com/model-tags/baby-shark",
+      "snippet": "Download the best baby shark 3D print models and STL files on Creality Cloud. Find 3D printable designs ready for FDM & Resin 3D printers."
+    }
+  ]
+}

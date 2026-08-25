@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RyanFoxW/btprop-sft-gen-w26-qwen3-8b",
+  "slug": "ryanfoxw-btprop-sft-gen-w26-qwen3-8b",
+  "author": "RyanFoxW",
+  "url": "https://huggingface.co/RyanFoxW/btprop-sft-gen-w26-qwen3-8b",
+  "created_at": "2026-08-24T20:59:01.000Z",
+  "updated_at": "2026-08-24T22:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "btprop",
+    "hallucination-detection",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT · Hugging Face",
+      "url": "https://huggingface.co/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT",
+      "snippet": "Qwen3-8B BTProp tree-gen SFT (main_modified1_verify prompts) Fine-tuned from Qwen3-8B to perform belief-tree generation for the BTProp fact-checking pipeline. Distilled from Qwen3.5-397B (≈50× larger) trajectories on 9 fact-checking datasets so the BTProp tree-gen stage no longer needs a 397B teacher at inference time."
+    },
+    {
+      "title": "RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT at main",
+      "url": "https://huggingface.co/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT/tree/main",
+      "snippet": "like 0 Text Generation Safetensors English qwen3 fact-checking hallucination-detection belief-tree-propagation btprop distillation llama-factory conversational arxiv:2406.06950 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3-8B-BTProp-mainmod1verify-SFT 16.4 GB Ctrl+K Ctrl+K 1 contributor History:2 commits RyanFoxW Add Qwen3-8B BTProp tree-gen ..."
+    },
+    {
+      "title": "RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT · Discussions",
+      "url": "https://d6108366.hf-mirror.com/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT/discussions",
+      "snippet": "RyanFoxW / Qwen3-8B-BTProp-mainmod1verify-SFT like 0 Text Generation Safetensors English qwen3 fact-checking hallucination-detection belief-tree-propagation btprop distillation llama-factory conversational arxiv:2406.06950 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

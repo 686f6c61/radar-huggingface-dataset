@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mvid/Huihui-Qwen3.8-27B-abliterated-MTPLX-Q8",
+  "slug": "mvid-huihui-qwen3-8-27b-abliterated-mtplx-q8",
+  "author": "mvid",
+  "url": "https://huggingface.co/mvid/Huihui-Qwen3.8-27B-abliterated-MTPLX-Q8",
+  "created_at": "2026-08-24T20:02:18.000Z",
+  "updated_at": "2026-08-24T20:03:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mtplx",
+    "apple-silicon",
+    "speculative-decoding",
+    "mtp",
+    "multi-token-prediction",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "not-for-all-audiences",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8027131120,
+  "parameters_human": "8.03B",
+  "storage_bytes": 29972477968,
+  "storage_human": "30.0 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "Qwen3-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/qwen3-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-ai - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/huihui-ai",
+      "snippet": "Overview Huihui-Qwen3.8-27B-abliterated-GGUF is an uncensored variant of Qwen3.8-27B created by huihui-ai using abliteration techniques to remove refusal mechanisms from the base model."
+    }
+  ]
+}

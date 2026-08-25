@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vaultai/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF",
+  "slug": "vaultai-qwen3-5-9b-claude-4-6-opus-uncensored-distilled-gguf",
+  "author": "vaultai",
+  "url": "https://huggingface.co/vaultai/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF",
+  "created_at": "2026-08-25T01:16:49.000Z",
+  "updated_at": "2026-08-25T01:17:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "uncensored",
+    "not-for-all-audiences",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6548745216,
+  "storage_human": "6.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-Opus-Uncensored-v2-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-v2-GGUF/blob/main/README.md",
+      "snippet": "💡 Model Introduction Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-v2 is the second iteration of this reasoning-focused Qwen3.5-9B fine-tune, built to drastically improve the efficiency of chain-of-thought generation, unlocking highly substantial gains in reasoning speed and cost-reduction while actually increasing absolute accuracy."
+    },
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF",
+      "url": "https://huggingface.co/marcoariette/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF",
+      "snippet": "Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+      "url": "https://www.modelscope.cn/models/Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里 ..."
+    },
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-claude-4.6-opus-reasoning-distilled-v2-gguf-jackrong",
+      "snippet": "Overview Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF is a 9-billion parameter reasoning-focused language model built on Qwen3.5-9B and fine-tuned with 14,000 Claude 4.6 Opus-style general reasoning samples, trained by Jackrong using supervised fine-tuning with LoRA via the Unsloth framework. The model optimizes for reasoning efficiency: it produces chain-of-thought outputs that are ..."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated:9b-Claude-4.6-Opus-q4_K",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated:9b-Claude-4.6-Opus-q4_K",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    }
+  ]
+}

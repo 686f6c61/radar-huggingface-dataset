@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ajvikram/emergency-vision-triage-2b-gguf",
+  "slug": "ajvikram-emergency-vision-triage-2b-gguf",
+  "author": "ajvikram",
+  "url": "https://huggingface.co/ajvikram/emergency-vision-triage-2b-gguf",
+  "created_at": "2026-08-25T02:17:38.000Z",
+  "updated_at": "2026-08-25T02:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "emergency-triage",
+    "structured-output",
+    "json",
+    "on-device",
+    "edge-ai",
+    "qlora",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1812563968,
+  "parameters_human": "1.81B",
+  "storage_bytes": 1112599584,
+  "storage_human": "1.1 GB",
+  "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajvikram (Ajay Singh) - Hugging Face",
+      "url": "https://huggingface.co/ajvikram/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... published a model about 15 hours ago"
+    },
+    {
+      "title": "ajvikram/emergency-triage-4b-gguf · Hugging Face",
+      "url": "https://huggingface.co/ajvikram/emergency-triage-4b-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "ajvikram (Ajay Vikram Singh) · GitHub",
+      "url": "https://github.com/ajvikram",
+      "snippet": "A graph representing ajvikram&#x27;s contributions from May 04, 2025 to May 04, 2026. The contributions are 91% commits, 9% pull requests, 0% issues, 0% code review."
+    }
+  ]
+}

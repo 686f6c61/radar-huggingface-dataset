@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/Qwopus-KAT-Coder-35B-Merged",
+  "slug": "oliviarossi-qwopus-kat-coder-35b-merged",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged",
+  "created_at": "2026-08-24T13:52:33.000Z",
+  "updated_at": "2026-08-24T20:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "code",
+    "agent",
+    "agentic-coding",
+    "moe",
+    "merge",
+    "conversational",
+    "base_model:Jackrong/Qwopus3.6-35B-A3B-Coder",
+    "base_model:merge:Jackrong/Qwopus3.6-35B-A3B-Coder",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:merge:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68164077424,
+  "parameters_human": "68.16B",
+  "storage_bytes": 136352554631,
+  "storage_human": "136.4 GB",
+  "base_model": "Jackrong/Qwopus3.6-35B-A3B-Coder, Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through ...",
+      "url": "https://kwaipilot.github.io/KAT-Coder/",
+      "snippet": "KAT-Coder is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models."
+    },
+    {
+      "title": "GitHub - codespermuted/qwopus: Local AI coding agent powered by Qwen3.5 ...",
+      "url": "https://github.com/codespermuted/qwopus",
+      "snippet": "Local AI coding agent powered by Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled. Like Claude Code, but runs entirely on your GPU. - codespermuted/qwopus"
+    },
+    {
+      "title": "Qwopus3.6-35B-A3B-Coder-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+      "snippet": "💡 What is Qwopus-3.6-35B-A3B-Coder? 🪐 Qwopus-3.6-35B-A3B-Coder is a practical coding-agent fine-tune focused on execution efficiency, not simply longer visible reasoning. It is designed for real agentic coding workflows where the model repeatedly reads files, chooses tools, edits code, runs tests, reacts to errors, and summarizes work. The core goal is to complete more of these steps ..."
+    },
+    {
+      "title": "Jackrong (Jackrong) - Hugging Face",
+      "url": "https://huggingface.co/Jackrong/collections",
+      "snippet": "User profile of Jackrong on Hugging Face This collection features the advanced Qwopus3.6 series of multimodal large models, which are fine-tuned from the Qwen3.6 base models with a focus on e"
+    },
+    {
+      "title": "The 35B Model That Broke the AI Leaderboard (KAT-Coder V2.5)",
+      "url": "https://www.youtube.com/watch?v=cbb4KffkmMc",
+      "snippet": "Is KAT-Coder V2.5 the best open-source AI coding model you can run locally, or are vendor-run SWE-bench leaderboards completely misleading you? In this architectural deep dive, we break down ..."
+    }
+  ]
+}

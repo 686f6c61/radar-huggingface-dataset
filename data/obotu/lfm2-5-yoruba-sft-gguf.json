@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Obotu/lfm2.5-yoruba-sft-GGUF",
+  "slug": "obotu-lfm2-5-yoruba-sft-gguf",
+  "author": "Obotu",
+  "url": "https://huggingface.co/Obotu/lfm2.5-yoruba-sft-GGUF",
+  "created_at": "2026-08-24T22:38:54.000Z",
+  "updated_at": "2026-08-24T22:40:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 6488974176,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "LFM2.5 - a LiquidAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/LiquidAI/lfm25",
+      "snippet": "Collection of post-trained and base LFM2.5 models."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "A new generation of foundation models from first principles."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    }
+  ]
+}

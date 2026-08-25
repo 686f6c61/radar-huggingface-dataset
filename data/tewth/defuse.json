@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tewth/DEFUSE",
+  "slug": "tewth-defuse",
+  "author": "tewth",
+  "url": "https://huggingface.co/tewth/DEFUSE",
+  "created_at": "2026-08-24T20:47:25.000Z",
+  "updated_at": "2026-08-24T20:47:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "diffusion",
+    "sdxl",
+    "clip",
+    "backdoor-detection",
+    "research",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:finetune:openai/clip-vit-base-patch32",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0, openai/clip-vit-base-patch32",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "GitHub - TheSEA-AI/diffusers-latest: Diffusers: State-of-the-art ...",
+      "url": "https://github.com/TheSEA-AI/diffusers-latest",
+      "snippet": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch and FLAX. - TheSEA-AI/diffusers-latest"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "GitHub - ShanghaiTech-IMPACT/TeethDreamer: [MICCAI 2024] TeethDreamer ...",
+      "url": "https://github.com/ShanghaiTech-IMPACT/TeethDreamer",
+      "snippet": "The input folder is the directory of your rendered condition images which is the argument input_dir in the script color_render.py. The mv-splits.pkl file is the pkl file mentioned in the previous step. 5. Finetune pretrained zero123 model on your own data."
+    },
+    {
+      "title": "Diffuse The Rest - a Hugging Face Space by huggingface-projects",
+      "url": "https://huggingface.co/spaces/huggingface-projects/diffuse-the-rest",
+      "snippet": "Type a short description of what you&#x27;d like to see, and the app creates a matching picture using a Stable Diffusion model. It instantly returns a generated image that you can view, download, or share."
+    }
+  ]
+}

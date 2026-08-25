@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/GRaPE-1.5-TEST",
+  "slug": "atomic-germ-grape-1-5-test",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/GRaPE-1.5-TEST",
+  "created_at": "2026-08-25T01:35:17.000Z",
+  "updated_at": "2026-08-25T01:35:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "reasoning",
+    "vision",
+    "multimodal",
+    "instruct",
+    "chat",
+    "coding",
+    "math",
+    "science",
+    "april-fools",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ (Atomic Germ) - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 5 days ago ... published a dataset 11 days ago ... liked a model 11 days ago"
+    },
+    {
+      "title": "Sweaterdog/GRaPE-1.5 · Hugging Face",
+      "url": "https://huggingface.co/Sweaterdog/GRaPE-1.5",
+      "snippet": "⚡ Parameter Efficiency GRaPE 1.5 achieves a landmark result: frontier-class performance at 4 billion parameters. GRaPE 1.5 delivers 97-99% of frontier model performance while using 99.7% fewer parameters than the leading closed-source models. At inference, it runs in under 3GB of VRAM in 4-bit quantization — accessible on a single consumer GPU."
+    },
+    {
+      "title": "Generative AI powered by nucleic acid language model enables ... - Nature",
+      "url": "https://www.nature.com/articles/s41587-026-03008-4",
+      "snippet": "GRAPE-LM (generator of RNA aptamers powered by activity-guided evolution and language model) is a generative AI framework that enables the one-round generation of short RNA binders. When guided by ..."
+    },
+    {
+      "title": "AI model spots gastric cancer on routine CT scans with high accuracy ...",
+      "url": "https://medicalxpress.com/news/2025-06-ai-gastric-cancer-routine-ct.html",
+      "snippet": "A collaboration of leading Chinese research institutions has developed an artificial intelligence-based method called GRAPE, demonstrating high accuracy in detecting gastric cancer from routine ..."
+    },
+    {
+      "title": "Alibaba&#x27;s Grape AI tool spots stomach cancer early using CT scans",
+      "url": "https://interestingengineering.com/innovation/ai-stomach-cancer-detection-alibaba-grape",
+      "snippet": "Alibaba&#x27;s Grape AI model scans CT images to detect stomach cancer early, even when doctors miss the signs."
+    }
+  ]
+}

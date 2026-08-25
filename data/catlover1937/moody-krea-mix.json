@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "catlover1937/moody-krea-mix",
+  "slug": "catlover1937-moody-krea-mix",
+  "author": "catlover1937",
+  "url": "https://huggingface.co/catlover1937/moody-krea-mix",
+  "created_at": "2026-06-29T06:07:16.000Z",
+  "updated_at": "2026-08-24T22:37:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 574580644972,
+  "storage_human": "574.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "catlover1937/moody-krea-mix at main - Hugging Face",
+      "url": "https://huggingface.co/catlover1937/moody-krea-mix/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "catlover1937/moody-krea-mix · Hugging Face",
+      "url": "https://huggingface.co/catlover1937/moody-krea-mix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "catlover1937 (catlover1937) - Hugging Face",
+      "url": "https://huggingface.co/catlover1937",
+      "snippet": "Sort: Recently updated. catlover1937/moody-amateur-mix. Updated 6 days ago. catlover1937/moody-cutie-mix-krea2. Updated 11 days ago • 2"
+    },
+    {
+      "title": "catlover1937/moody-cutie-mix-krea2 · Hugging Face",
+      "url": "https://huggingface.co/catlover1937/moody-cutie-mix-krea2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Moody Krea 2 Mix (uncensored) [by catlover1937] - tensor.art",
+      "url": "https://tensor.art/models/1019086421954152964",
+      "snippet": "Download Moody Krea 2 Mix (uncensored) [by catlover1937] - free CHECKPOINT KREA_2 AI model on TENSOR. By MacrossManiac"
+    }
+  ]
+}

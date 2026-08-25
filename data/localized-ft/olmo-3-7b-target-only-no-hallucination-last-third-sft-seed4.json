@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4",
+  "slug": "localized-ft-olmo-3-7b-target-only-no-hallucination-last-third-sft-seed4",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4",
+  "created_at": "2026-08-24T21:45:41.000Z",
+  "updated_at": "2026-08-24T21:46:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 528384,
+  "parameters_human": "528384",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4",
+      "snippet": "OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4",
+      "snippet": "OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft",
+      "snippet": "Run OLMo-3-7B-target-only-no-hallucination-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-sft-seed4 - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft-seed4",
+      "snippet": "Deploy OLMo-3-7B-target-only-no-hallucination-sft-seed4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

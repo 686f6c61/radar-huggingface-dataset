@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nunuing/audio_cls_korean",
+  "slug": "nunuing-audio_cls_korean",
+  "author": "nunuing",
+  "url": "https://huggingface.co/nunuing/audio_cls_korean",
+  "created_at": "2026-08-25T01:19:30.000Z",
+  "updated_at": "2026-08-25T01:20:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:Kkonjeong/wav2vec2-base-korean",
+    "base_model:finetune:Kkonjeong/wav2vec2-base-korean",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378319905,
+  "storage_human": "378 MB",
+  "base_model": "Kkonjeong/wav2vec2-base-korean",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nunuing (cho eun yu) - Hugging Face",
+      "url": "https://huggingface.co/nunuing",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "chan0090/audio_cls · Hugging Face",
+      "url": "https://huggingface.co/chan0090/audio_cls",
+      "snippet": "audio_cls This model is a fine-tuned version of Kkonjeong/wav2vec2-base-korean on an unknown dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training:"
+    },
+    {
+      "title": "Free Korean Text to Speech Converter - Arting",
+      "url": "https://arting.ai/language/korean-text-to-speech",
+      "snippet": "The best free Korean text to speech online tool offers native accents, multiple voice models, and customized voices. Try it for free!"
+    },
+    {
+      "title": "Korean Female Voice (전문 한국 여성 모델) Vol 10 ... - Voice Models",
+      "url": "https://voice-models.com/model/1uaKSLMw3b4",
+      "snippet": "Korean Female Voice (전문 한국 여성 모델) Vol 10 PRO [RVC2 / KLM4 / 560Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Korean Ai - Learn Korean with an Ai tutor for free",
+      "url": "https://mykoreanai.com/",
+      "snippet": "Thousands of Topics Korean Ai isn&#x27;t just an AI tutor app. Learn by listening to interactive audio lessons, then practice them in real life scenarios with your tutor. You&#x27;ll find lessons for every need and interest—entertainment, daily life, business communication, and more."
+    }
+  ]
+}

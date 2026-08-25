@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tamkudo1/lab22-dpo-vn",
+  "slug": "tamkudo1-lab22-dpo-vn",
+  "author": "tamkudo1",
+  "url": "https://huggingface.co/tamkudo1/lab22-dpo-vn",
+  "created_at": "2026-08-24T22:27:36.000Z",
+  "updated_at": "2026-08-24T22:28:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-3B-bnb-4bit",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "unsloth",
+    "vietnamese",
+    "text-generation",
+    "vi",
+    "base_model:unsloth/Qwen2.5-3B-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codenopro/lab22-dpo-vn · Hugging Face",
+      "url": "https://huggingface.co/codenopro/lab22-dpo-vn",
+      "snippet": "codenopro / lab22-dpo-vn like 0 Text Generation PEFT Safetensors Transformers 5CD-AI/Vietnamese-alpaca-gpt4-gg-translated argilla/ultrafeedback-binarized-preferences-cleaned Vietnamese dpo lora trl unsloth arxiv:1910.09700 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "NiallHoang/lab22 · Hugging Face",
+      "url": "https://huggingface.co/NiallHoang/lab22",
+      "snippet": "Lab22 DPO-aligned Qwen2.5-3B (VN) LoRA adapter trained with DPO on top of an SFT-mini checkpoint — Day 22 DPO/ORPO Alignment Lab (Track 3)."
+    },
+    {
+      "title": "GitHub - datnguyen-tien204/Day22-Track3-DPO-Alignment-Lab",
+      "url": "https://github.com/datnguyen-tien204/Day22-Track3-DPO-Alignment-Lab",
+      "snippet": "This submission completes the Day 22 DPO/ORPO Alignment Lab pipeline from SFT-mini training to DPO preference optimization, evaluation, GGUF export, and Hugging Face release. The main run used the BIGGPU tier with Qwen2.5-7B 4-bit as the base model. The final deliverables include the SFT adapter, DPO adapter, preference dataset, benchmark results, screenshots, reflection report, and GGUF ..."
+    },
+    {
+      "title": "GitHub - nguyenvanhieu6732/2A202600454-NguyenVanHieu-Day22",
+      "url": "https://github.com/nguyenvanhieu6732/2A202600454-NguyenVanHieu-Day22",
+      "snippet": "HuggingFace Model: phucx314/lab22-dpo-vn Lab cho AICB-P2T3 · Ngày 22 · DPO/ORPO Alignment — From SFT to Preference Learning. Build SFT-mini checkpoint → train DPO adapter → compare SFT-only vs SFT+DPO → merge + GGUF + serve. Lab 22 là lab alignment đầu tiên trong khoá — bạn đi từ SFT (Lab 21) sang preference learning, đo helpfulness/safety bằng judge, và export ..."
+    },
+    {
+      "title": "lab22-dpo-vn API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/solar11781/lab22-dpo-vn",
+      "snippet": "Deploy lab22-dpo-vn with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

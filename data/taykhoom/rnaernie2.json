@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/RNAErnie2",
+  "slug": "taykhoom-rnaernie2",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/RNAErnie2",
+  "created_at": "2026-06-04T15:26:20.000Z",
+  "updated_at": "2026-08-25T03:07:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rnaernie2",
+    "fill-mask",
+    "RNA",
+    "language-model",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 87230998,
+  "parameters_human": "87.2M",
+  "storage_bytes": 348947640,
+  "storage_human": "349 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/RNAErnie2 · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RNAErnie2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taykhoom/RNAErnie · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RNAErnie",
+      "snippet": "RNAErnie is a BERT-based RNA language model pretrained on RNACentral using a motif-aware masking strategy with type-guided fine-tuning. It uses a DNA-style vocabulary (T instead of U) and extends the token vocabulary with 28 ncRNA type labels to enable type-guided learning."
+    },
+    {
+      "title": "RNAErnie/README.md at main · CatIIIIIIII/RNAErnie · GitHub",
+      "url": "https://github.com/CatIIIIIIII/RNAErnie/blob/main/README.md",
+      "snippet": "Official implement of paper \"Multi-purpose RNA Language Modeling with Motif-aware Pre-training and Type-guided Fine-tuning\" - RNAErnie/README.md at main · CatIIIIIIII/RNAErnie"
+    },
+    {
+      "title": "GitHub - CatIIIIIIII/RNAErnie: Official implement of paper \"Multi ...",
+      "url": "https://github.com/CatIIIIIIII/RNAErnie",
+      "snippet": "Official implement of paper \"Multi-purpose RNA Language Modeling with Motif-aware Pre-training and Type-guided Fine-tuning\" - CatIIIIIIII/RNAErnie"
+    },
+    {
+      "title": "Multi-purpose RNA language modelling with motif-aware ... - Nature",
+      "url": "https://www.nature.com/articles/s42256-024-00836-4",
+      "snippet": "Despite the existence of various pretrained language models for nucleotide sequence analysis, achieving good performance on a broad range of downstream tasks using a single model is challenging ..."
+    }
+  ]
+}

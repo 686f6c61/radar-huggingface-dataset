@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kerasformers/locateanything_3b",
+  "slug": "kerasformers-locateanything_3b",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/locateanything_3b",
+  "created_at": "2026-07-30T03:41:18.000Z",
+  "updated_at": "2026-08-25T01:04:45.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "locateanything",
+    "object-detection",
+    "grounding",
+    "vision",
+    "arxiv:2605.27365",
+    "pytorch",
+    "jax",
+    "tf",
+    "image-text-to-text",
+    "base_model:nvidia/LocateAnything-3B",
+    "base_model:finetune:nvidia/LocateAnything-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14086813987,
+  "storage_human": "14.1 GB",
+  "base_model": "nvidia/LocateAnything-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kerasformers/locateanything_3b · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/locateanything_3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/LocateAnything-3B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocateAnything - KerasFormers",
+      "url": "https://imvision12.github.io/KerasFormers/locateanything/",
+      "snippet": "LocateAnything-3B is NVIDIA&#x27;s visual-grounding VLM: a native-resolution MoonViT vision tower and a small connector feed a Qwen2.5-3B decoder, and the model answers in boxes and points rather than prose. One checkpoint covers a whole family of grounding tasks, chosen entirely by the instruction you give it: detection, multi-object referring, pointing, layout grounding, GUI/text grounding, and OCR."
+    },
+    {
+      "title": "LocateAnything-3B: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/locateanything-3b-nvidia",
+      "snippet": "Overview LocateAnything-3B is a vision-language model for visual grounding and object localization built by nvidia. The model predicts bounding box coordinates and points from natural language queries, supporting tasks like referring expression grounding, multi-object detection, GUI element grounding, and text localization across complex scenes. The critical innovation is Parallel Box Decoding ..."
+    },
+    {
+      "title": "LocateAnything: Fast and High-Quality Vision-Language Grounding with ...",
+      "url": "https://research.nvidia.com/labs/lpr/locate-anything/",
+      "snippet": "Detection Showcase. LocateAnything performs diverse localization tasks under a unified vision-language model, including document understanding, GUI grounding, dense object detection, and OCR localization. Decoding Speed Comparison."
+    }
+  ]
+}

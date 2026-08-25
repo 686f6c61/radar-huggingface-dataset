@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd12dsacxz12dsa/MyAwesomeModel-step_1000-best",
+  "slug": "asd12dsacxz12dsa-myawesomemodel-step_1000-best",
+  "author": "asd12dsacxz12dsa",
+  "url": "https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel-step_1000-best",
+  "created_at": "2026-08-25T00:11:28.000Z",
+  "updated_at": "2026-08-25T00:14:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asd12dsacxz12dsa/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "asd12dsacxz12dsa/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

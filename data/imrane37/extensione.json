@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "imrane37/extensione",
+  "slug": "imrane37-extensione",
+  "author": "imrane37",
+  "url": "https://huggingface.co/imrane37/extensione",
+  "created_at": "2026-08-25T01:01:30.000Z",
+  "updated_at": "2026-08-25T01:03:01.000Z",
+  "license": "imrane",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Imagine AI Extension - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/imagine-ai-extension/pkgpohgdghliifhiamifgfabomihnbhg",
+      "snippet": "The Imagine AI extension lets you quickly create new and enrich existing people records."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "GitHub - theraker526/Arena-AI-Model-Unlocker-Extension: Unlock hidden ...",
+      "url": "https://github.com/theraker526/Arena-AI-Model-Unlocker-Extension",
+      "snippet": "The Arena AI website uses a feature to hide Claude Opus models from the model selector. This extension stops that feature before the page loads and brings back every Opus model. It also unlocks over 150 hidden battle and test models."
+    }
+  ]
+}

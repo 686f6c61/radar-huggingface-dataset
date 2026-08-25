@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Fazmin/solus_v1_silero-vad-v5",
+  "slug": "fazmin-solus_v1_silero-vad-v5",
+  "author": "Fazmin",
+  "url": "https://huggingface.co/Fazmin/solus_v1_silero-vad-v5",
+  "created_at": "2026-08-24T23:36:02.000Z",
+  "updated_at": "2026-08-24T23:36:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "voice-activity-detection",
+    "vad",
+    "silero",
+    "base_model:onnx-community/silero-vad",
+    "base_model:quantized:onnx-community/silero-vad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2243022,
+  "storage_human": "2 MB",
+  "base_model": "onnx-community/silero-vad",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snakers4/silero-vad: Silero VAD: pre-trained enterprise-grade ...",
+      "url": "https://github.com/snakers4/silero-vad",
+      "snippet": "Stellar accuracy Silero VAD has excellent results on speech detection tasks. Fast One audio chunk (30+ ms) takes less than 1ms to be processed on a single CPU thread. Using batching or GPU can also improve performance considerably. Under certain conditions ONNX may even run up to 4-5x faster. Lightweight JIT model is around two megabytes in size. General Silero VAD was trained on huge corpora ..."
+    },
+    {
+      "title": "Releases · snakers4/silero-vad - GitHub",
+      "url": "https://github.com/snakers4/silero-vad/releases",
+      "snippet": "What&#x27;s Changed Fix Golang example by @streamer45 in #496 fix: rust example for v5 checkpoint by @rumbleFTW in #497 VadIterator first chunk bag fx by @adamnsandle in #505 Add java example for wav file & support V5 model by @yuguanqin in #506 add csharp example by @nganju98 in #507 downgrade onnxruntime dependency by @adamnsandle in #521 код для тюнинга by @adamnsandle in #526 add ..."
+    },
+    {
+      "title": "runanywhere/silero-vad-v5 · Hugging Face",
+      "url": "https://huggingface.co/runanywhere/silero-vad-v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aufklarer/Silero-VAD-v5-MLX · Hugging Face",
+      "url": "https://huggingface.co/aufklarer/Silero-VAD-v5-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "silero-vad · PyPI",
+      "url": "https://pypi.org/project/silero-vad/",
+      "snippet": "Lightweight JIT model is around two megabytes in size. General Silero VAD was trained on huge corpora that include over 6000 languages and it performs well on audios from different domains with various background noise and quality levels. Flexible sampling rate Silero VAD supports 8000 Hz and 16000 Hz sampling rates. Highly Portable"
+    }
+  ]
+}

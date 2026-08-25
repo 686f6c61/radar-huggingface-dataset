@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Qwen3-ASR-0.6B-ExecuTorch",
+  "slug": "mlboydaisuke-qwen3-asr-0-6b-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Qwen3-ASR-0.6B-ExecuTorch",
+  "created_at": "2026-08-25T00:21:09.000Z",
+  "updated_at": "2026-08-25T00:22:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 697549568,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Qwen3-0.6B-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Qwen3-0.6B-ExecuTorch",
+      "snippet": "The 8-bit embedding needs from executorch.kernels import quantized before the program is loaded, and portable_lib._load_for_executorch rather than executorch.runtime."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Qwen3 ASR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr",
+      "snippet": "Qwen3 ASR is an automatic speech recognition model from Alibaba&#x27;s Qwen team that combines a Whisper-style audio encoder with a Qwen3 language model decoder for speech-to-text transcription."
+    },
+    {
+      "title": "GitHub - realDavy/qwen3-asr: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/realDavy/qwen3-asr",
+      "snippet": "Qwen3-ASR-1.7B achieves strong performance on both open-sourced and internal benchmarks. While the 0.6B version achieves accuracy-efficient trade-off, it reaches 2000 times throughput at a concurrency of 128. They both achieve streaming / offline unified inference with single model and support transcribe long audio."
+    },
+    {
+      "title": "Qwen3 0.6b Executorch - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mlboydaisuke/qwen3-0.6b-executorch",
+      "snippet": "Registry entry for model Qwen3 0.6b Executorch; source metadata pending."
+    }
+  ]
+}

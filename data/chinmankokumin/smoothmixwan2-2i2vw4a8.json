@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chinmankokumin/SmoothMixWan2.2I2Vw4a8",
+  "slug": "chinmankokumin-smoothmixwan2-2i2vw4a8",
+  "author": "chinmankokumin",
+  "url": "https://huggingface.co/chinmankokumin/SmoothMixWan2.2I2Vw4a8",
+  "created_at": "2026-08-25T02:05:56.000Z",
+  "updated_at": "2026-08-25T02:49:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19977553525,
+  "storage_human": "20.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smooth Mix Wan 2.2 14B (I2V/T2V) - T2V High v4.0 | Wan Video Checkpoint ...",
+      "url": "https://civitai.red/models/1995784/smooth-mix-wan-22-14b-i2vt2v",
+      "snippet": "SMOOTHMIX WAN 2.2 T2V v4.0 UPDATE! - 07/18/2026 For all the changes on the version please check the guide! Also available on Ko-fi! All videos made for the showcase of the model were made with the new Smooth Workflow v6.0 AIO. SMOOTHMIX WAN 2.2 T2V v3.0 UPDATE! - 03/14/2026 Just tweaked the effects of the prompts \"smoothmixanime\" and \"smoothmixrealism\" and realism in general. All videos on the ..."
+    },
+    {
+      "title": "Smooth Mix Wan 2.2 High (I2V 14B) - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/1974384335828684802",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Smooth Mix WAN 2.2 ( t2v , i2v , First and last frame )",
+      "url": "https://civitai.com/models/2078815/smooth-mix-wan-22-t2v-i2v-first-and-last-frame",
+      "snippet": "Positive (29) Published Oct 27, 2025 Base Model Wan Video 2.2 I2V-A14B Hash AutoV2 43EAAC440C"
+    },
+    {
+      "title": "BigDannyPt/WAN-2.2-SmoothMix-FP16 · Hugging Face",
+      "url": "https://huggingface.co/BigDannyPt/WAN-2.2-SmoothMix-FP16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.2 Smooth Mix V2.0 T2V High dynamic range (SFW)",
+      "url": "https://civitai.com/models/2060526/wan22-smooth-mix-v20-t2v-high-dynamic-rangesfw",
+      "snippet": "High dynamic range, low memory footprint, strong prompt adherence capability Wan2.2 Smooth Mix V2.0 T2V High dynamic range (SFW) Free online workflo..."
+    }
+  ]
+}

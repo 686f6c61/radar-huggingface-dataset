@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Shellypeckie/student_qwen3_1p7b_unconditional_refusal",
+  "slug": "shellypeckie-student_qwen3_1p7b_unconditional_refusal",
+  "author": "Shellypeckie",
+  "url": "https://huggingface.co/Shellypeckie/student_qwen3_1p7b_unconditional_refusal",
+  "created_at": "2026-08-24T20:27:06.000Z",
+  "updated_at": "2026-08-24T20:27:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452613971,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shellypeckie/student_qwen3_1p7b_gpqa_self_dolly_seq_kd · Hugging Face",
+      "url": "https://huggingface.co/Shellypeckie/student_qwen3_1p7b_gpqa_self_dolly_seq_kd",
+      "snippet": "Instructions to use Shellypeckie/student_qwen3_1p7b_gpqa_self_dolly_seq_kd with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Shellypeckie%2Fstudent_qwen3_1p7b_gpqa_self_dolly_seq_kd",
+      "snippet": "Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 8 Inference Providers Groq Novita Cerebras SambaNova Nscale ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Shellypeckie/student_qwen3_1p7b_gpqa_self_numseq_seq_kd - Fast ...",
+      "url": "https://friendli.ai/models/Shellypeckie/student_qwen3_1p7b_gpqa_self_numseq_seq_kd",
+      "snippet": "Model provider Shellypeckie Model tree Base Qwen/Qwen3-1.7B Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Model APIs Dedicated Endpoints Container More information Model card"
+    }
+  ]
+}

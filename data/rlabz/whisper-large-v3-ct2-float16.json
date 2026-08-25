@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rlabz/whisper-large-v3-ct2-float16",
+  "slug": "rlabz-whisper-large-v3-ct2-float16",
+  "author": "rlabz",
+  "url": "https://huggingface.co/rlabz/whisper-large-v3-ct2-float16",
+  "created_at": "2026-08-25T00:45:09.000Z",
+  "updated_at": "2026-08-25T01:47:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "sw",
+    "multilingual"
+  ],
+  "tags": [
+    "ctranslate2",
+    "faster-whisper",
+    "whisper",
+    "speech-recognition",
+    "asr",
+    "swahili",
+    "automatic-speech-recognition",
+    "sw",
+    "multilingual",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087284237,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ctranslate2-4you/whisper-large-v3-ct2-float32 · Hugging Face",
+      "url": "https://huggingface.co/ctranslate2-4you/whisper-large-v3-ct2-float32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - cxh-tech/whisper-large-v3",
+      "url": "https://github.com/cxh-tech/whisper-large-v3",
+      "snippet": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation, proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al. from OpenAI. Trained on >5M hours of labeled data, Whisper demonstrates a strong ability to generalise to many datasets and domains in a zero-shot setting. Whisper large-v3 has the same ..."
+    },
+    {
+      "title": "GitHub - Sanrathi-AI/Sanrathi-faster-whisper: Faster Whisper ...",
+      "url": "https://github.com/Sanrathi-AI/Sanrathi-faster-whisper",
+      "snippet": "The Distil-Whisper checkpoints are compatible with the Faster-Whisper package. In particular, the latest distil-large-v3 checkpoint is intrinsically designed to work with the Faster-Whisper transcription algorithm."
+    },
+    {
+      "title": "Whisper Large v3 - GroqDocs",
+      "url": "https://console.groq.com/docs/model/whisper-large-v3",
+      "snippet": "Whisper Large v3 is OpenAI&#x27;s most advanced and capable speech recognition model, delivering state-of-the-art accuracy across a wide range of audio conditions and languages. This flagship model excels at handling challenging audio scenarios including background noise, accents, and technical terminology."
+    }
+  ]
+}

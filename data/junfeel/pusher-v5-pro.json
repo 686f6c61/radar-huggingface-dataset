@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Junfeel/pusher-v5-pro",
+  "slug": "junfeel-pusher-v5-pro",
+  "author": "Junfeel",
+  "url": "https://huggingface.co/Junfeel/pusher-v5-pro",
+  "created_at": "2026-08-25T02:43:17.000Z",
+  "updated_at": "2026-08-25T02:43:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ppo",
+    "pusher-v5",
+    "mujoco",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176360,
+  "storage_human": "176360 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Junfeel (Yun) - Hugging Face",
+      "url": "https://huggingface.co/Junfeel",
+      "snippet": "AI updated a model about 8 hours ago published a model about 8 hours ago"
+    },
+    {
+      "title": "Junfeel (Yun) - Hugging Face",
+      "url": "https://huggingface.co/Junfeel/models",
+      "snippet": "AI Recent Activity updated a model3 days ago Junfeel/llama-3-2-1b-mynewbrain-v2-2 published a model3 days ago Junfeel/llama-3-2-1b-mynewbrain-v2-2 View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 404 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Directory — 634 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 634 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    },
+    {
+      "title": "AI 3D Model Generator — Create & Animate 3D Characters - Tripo AI",
+      "url": "https://www.tripo3d.ai/features/ai-3d-model-generator",
+      "snippet": "Tripo AI is an all-in-one AI 3D model generator that creates production-ready 3D models from images or text prompts in seconds. It covers the full pipeline — generation, texturing, rigging, segmentation, and mesh optimization — in a single platform."
+    }
+  ]
+}

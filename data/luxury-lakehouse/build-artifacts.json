@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "luxury-lakehouse/build-artifacts",
+  "slug": "luxury-lakehouse-build-artifacts",
+  "author": "luxury-lakehouse",
+  "url": "https://huggingface.co/luxury-lakehouse/build-artifacts",
+  "created_at": "2026-03-23T03:53:36.000Z",
+  "updated_at": "2026-08-25T03:09:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553352848,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unlock Your Dream Lake House Designs with AI.",
+      "url": "https://ideal.house/create/aiFloorplan/lake-house-designs",
+      "snippet": "Ideal House&#x27;s AI Floor Plan Generator creates bespoke lake house designs in seconds. From rustic cabin plans to luxury waterfront house plans, visualize your dream lake home with ease."
+    },
+    {
+      "title": "Design Your Dream Retreat: AI-Powered Modern Lake House Plans",
+      "url": "https://ideal.house/create/aiFloorplan/modern-lake-house-plans",
+      "snippet": "Quickly create custom lakefront house plans, from luxury to small lake house designs, perfect for your North American dream retreat.,Unlock your ideal waterfront home with AI-driven modern lake house plans. Explore unique and sustainable lake house designs, including cottage and rustic styles, with Ideal House today."
+    },
+    {
+      "title": "AI Builds a Luxury Lake House From Scratch #build # ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=MUuOVKNjCQQ",
+      "snippet": "AI builds a modern lake house step by step in stunning 4K detail. From foundation to final luxury finish — watch the full construction transformation."
+    },
+    {
+      "title": "Modern Lake House Designed with Google AI — Ung Studio",
+      "url": "https://www.ungstudio.com/2025/modern-lake-house-designed-with-google-ai",
+      "snippet": "What would happen if we asked Google&#x27;s AI platform \"Gemini\" to design a modern lake house? This project takes a literal approach to developing concept images using Gemini, refining the design, and turning it into a home design that could actually be built. This is a luxury home that has 3,500 square feet with 4 bedrooms and bathrooms."
+    },
+    {
+      "title": "Luxury Lakeside Mansion Built From Nothing | AI Construction Timelapse ...",
+      "url": "https://www.youtube.com/watch?v=ZFacuNBRGgI",
+      "snippet": "Watch this empty waterfront lot transform into a massive luxury lakeside mansion in a cinematic AI-generated construction timelapse. From excavation and concrete foundations to framing, brickwork ..."
+    }
+  ]
+}

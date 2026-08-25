@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spyrostheboss/Melissa_Fumero_Krea_2_LoRA",
+  "slug": "spyrostheboss-melissa_fumero_krea_2_lora",
+  "author": "spyrostheboss",
+  "url": "https://huggingface.co/spyrostheboss/Melissa_Fumero_Krea_2_LoRA",
+  "created_at": "2026-08-24T20:12:17.000Z",
+  "updated_at": "2026-08-24T20:12:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "krea",
+    "lora",
+    "text-to-image",
+    "character-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470453022,
+  "storage_human": "470 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Melissa Fumero (Flux) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/b6d22879839567b90662094ea3035736",
+      "snippet": "Explore Melissa Fumero (Flux) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Melissa Fumero - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cb1fc7e0078cc6c9b4066bfb2ec3394f",
+      "snippet": "Meet Melissa Fumero model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea/models",
+      "snippet": "AI & ML interests ... Recent Activity anvilarth authored a paper ... anvilarth authored a paper ... NagaSaiAbhinay updated a model"
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    }
+  ]
+}

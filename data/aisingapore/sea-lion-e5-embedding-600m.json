@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "aisingapore/SEA-LION-E5-Embedding-600M",
+  "slug": "aisingapore-sea-lion-e5-embedding-600m",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M",
+  "created_at": "2026-03-09T06:17:55.000Z",
+  "updated_at": "2026-08-25T00:46:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "su",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "en",
+    "id",
+    "jv",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "su",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh",
+    "arxiv:2606.03027",
+    "arxiv:2402.05672",
+    "arxiv:2508.12243",
+    "base_model:intfloat/multilingual-e5-large",
+    "base_model:finetune:intfloat/multilingual-e5-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 3705,
+  "trending_score": 0,
+  "parameters": 559890432,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2257375648,
+  "storage_human": "2.3 GB",
+  "base_model": "intfloat/multilingual-e5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/SEA-LION-E5-Embedding-600M · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SEA-LION-Embedding-E5 | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-embedding/sea-e5",
+      "snippet": "The SEA-LION-Embedding-E5-600M model is a Sentence Transformer optimised for 11 Southeast Asian languages. It has been fine-tuned from the multilingual-e5-large base, mapping sentences and paragraphs to a 1024-dimensional dense vector space."
+    },
+    {
+      "title": "sealion/models/sea-embedding/sea-e5.md at main · aisingapore ... - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-embedding/sea-e5.md",
+      "snippet": "The SEA-LION-Embedding-E5-600M model is a Sentence Transformer optimised for 11 Southeast Asian languages. It has been fine-tuned from the multilingual-e5-large base, mapping sentences and paragraphs to a 1024-dimensional dense vector space."
+    },
+    {
+      "title": "aisingapore/SEA-LION-E5-Embedding-600M at main - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-E5-Embedding-600M/tree/main",
+      "snippet": "0 Follow AI Singapore 326 Safetensors 13 languages xlm-roberta arxiv:2402.05672 arxiv:2508.12243 License:mit Model card FilesFiles and versions xet Community main SEA-LION-E5-Embedding-600M 2.26 GB Ctrl+K Ctrl+K 2 contributors History:8 commits SAnocha Upload E5-600M.png d66f067 verified5 days ago 1_PoolingUpload folder using huggingface_hub12 ..."
+    },
+    {
+      "title": "SEA-LION Embedding | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-embedding",
+      "snippet": "SEA-LION-Embedding-E5 (Semantic Precision)): Fine-tuned from the E5-large foundation, these models are designed for maximum semantic accuracy in retrieval and similarity tasks across the region&#x27;s diverse linguistic landscape. For detailed information on specific models and checkpoints, please refer to their individual documentation pages."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Gemma-SEA-Guard-12B-2602",
+  "slug": "aisingapore-gemma-sea-guard-12b-2602",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-2602",
+  "created_at": "2025-12-04T12:28:22.000Z",
+  "updated_at": "2026-08-25T00:46:53.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "my",
+    "en",
+    "id",
+    "ms",
+    "tl",
+    "ta",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "my",
+    "en",
+    "id",
+    "ms",
+    "tl",
+    "ta",
+    "th",
+    "vi",
+    "arxiv:2602.01618",
+    "arxiv:2512.05501",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 1166448,
+  "parameters_human": "1.2M",
+  "storage_bytes": 117832071551,
+  "storage_human": "117.8 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Gemma-SEA-Guard-12B-2602 · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-2602",
+      "snippet": "This model is a fine-tuned version of Gemma 3 12B IT on 1M instruction-following pairs. For more details on training data, please refer to the paper SEA-Guard. For tokenization, the model employs the default tokenizer used in Gemma 3. Developed by: AI Products Pillar, AI Singapore Funded by: Singapore NRF Shared by: AI Products Pillar, AI Singapore"
+    },
+    {
+      "title": "aisingapore/Gemma-SEA-Guard-12B-2602 at main - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-Guard-12B-2602/tree/main",
+      "snippet": "Gemma-SEA-Guard-12B-2602 like 2 Follow AI Singapore 310 Image-Text-to-Text Safetensors 8 languages"
+    },
+    {
+      "title": "sealion/models/sea-guard/gemma-sea-guard.md at main · aisingapore ...",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-guard/gemma-sea-guard.md",
+      "snippet": "This model is a fine-tuned version of Gemma 3 12B IT on 1M instruction-following pairs. For more details on training data, please refer to the paper SEA-Guard. For tokenization, the model employs the default tokenizer used in Gemma 3."
+    },
+    {
+      "title": "Gemma-SEA-GUARD-12B | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-guard/gemma-sea-guard",
+      "snippet": "This model is a fine-tuned version of Gemma 3 12B IT on 1M instruction-following pairs. For more details on training data, please refer to the paper SEA-Guard. For tokenization, the model employs the default tokenizer used in Gemma 3."
+    },
+    {
+      "title": "SEA-GUARD | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-guard",
+      "snippet": "SEA-Guard, released on 4 Feb 2026, is our premier suite of safety and moderation models tailored for the Southeast Asian landscape. This collection focuses on robust visual and textual guardrails, ensuring AI deployments remain secure and culturally compliant across the region."
+    }
+  ]
+}

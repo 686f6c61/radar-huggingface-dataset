@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mimiminsoo/spam_diffusion_stage_scan_v1",
+  "slug": "mimiminsoo-spam_diffusion_stage_scan_v1",
+  "author": "mimiminsoo",
+  "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_scan_v1",
+  "created_at": "2026-08-24T23:08:28.000Z",
+  "updated_at": "2026-08-24T23:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:mimiminsoo/piper_bottle_multi_0823_stage_scan",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308316824,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1233356872,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimiminsoo (minsoo) - Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo",
+      "snippet": "Sort: Recently updated. mimiminsoo/act_cylinder_127. Robotics • Updated 24 days ago • 38. mimiminsoo/cube_grasping_act. Robotics • Updated Mar 20 • 1"
+    },
+    {
+      "title": "mimiminsoo (minsoo) - Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo/models",
+      "snippet": "Sort: Recently updated. mimiminsoo/cube_grasping_act. Robotics • Updated 4 days ago • 47. mimiminsoo/trained_barcode_scanning. Robotics • Updated 6 days ago • 31"
+    },
+    {
+      "title": "GitHub - cloneofsimo/minDiffusion: Self-contained, minimalistic ...",
+      "url": "https://github.com/cloneofsimo/minDiffusion",
+      "snippet": "minDiffusion Goal of this educational repository is to provide a self-contained, minimalistic implementation of diffusion models using Pytorch. Many implementations of diffusion models can be a bit overwhelming."
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI News May 20, 2025 We are releasing Stable Video 4D 2.0 (SV4D 2.0), an enhanced video-to-4D diffusion model for high-fidelity novel-view video synthesis and 4D asset generation. For research purposes:"
+    },
+    {
+      "title": "[2209.04747] Diffusion Models in Vision: A Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2209.04747",
+      "snippet": "Denoising diffusion models represent a recent emerging topic in computer vision, demonstrating remarkable results in the area of generative modeling. A diffusion model is a deep generative model that is based on two stages, a forward diffusion stage and a reverse diffusion stage. In the forward diffusion stage, the input data is gradually perturbed over several steps by adding Gaussian noise ..."
+    }
+  ]
+}

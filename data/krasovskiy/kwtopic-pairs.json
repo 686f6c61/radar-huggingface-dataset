@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Krasovskiy/kwtopic-pairs",
+  "slug": "krasovskiy-kwtopic-pairs",
+  "author": "Krasovskiy",
+  "url": "https://huggingface.co/Krasovskiy/kwtopic-pairs",
+  "created_at": "2026-08-24T21:29:18.000Z",
+  "updated_at": "2026-08-24T21:29:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru",
+    "uk",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "seo",
+    "keyword-clustering",
+    "search-intent",
+    "multilingual",
+    "text-ranking",
+    "ru",
+    "uk",
+    "en",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117654145,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487723110,
+  "storage_human": "488 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krasovskiy (Andrey Krasovskiy) - Hugging Face",
+      "url": "https://huggingface.co/Krasovskiy",
+      "snippet": "AI Automation Engineer & Tech Lead"
+    },
+    {
+      "title": "PAIR framework guidance | King&#x27;s College London",
+      "url": "https://www.kcl.ac.uk/about/strategy/learning-and-teaching/ai-guidance/pair-framework-guidance",
+      "snippet": "The PAIR (Problem, AI, Interaction, Reflection) Framework, developed by King&#x27;s College London Professor Oguz A. Acar, attempts to achieve this balance. This guidance document outlines the fundamentals of the PAIR model and discusses its implementation across various disciplines and courses."
+    },
+    {
+      "title": "‪Arkady Krasovskiy‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=1SRd1gwAAAAJ&hl=en",
+      "snippet": "‪Senior Scientist, The Dow Chemical Company‬ - ‪‪Cited by 8,191‬‬ - ‪polymers‬ - ‪organic chemistry‬ - ‪organometallic chemistry‬"
+    },
+    {
+      "title": "Andrey Krasovskiy — AI Automation Engineer in Kyiv | n8n, RAG",
+      "url": "https://www.krasovskiy.team/",
+      "snippet": "Andrey Krasovskiy — Senior AI Automation Engineer based in Kyiv. Production AI automation services: n8n workflows, RAG pipelines, self-hosted LLMs, FastAPI. 15+ years experience, 330+ sites, ~100 AI publications/day."
+    },
+    {
+      "title": "‪Andrey Krasovskiy‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=UwLd7cMAAAAJ&hl=en",
+      "snippet": "‪Research Scholar, IIASA‬ - ‪‪Cited by 964‬‬"
+    }
+  ]
+}

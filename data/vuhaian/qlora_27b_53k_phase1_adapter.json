@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vuhaian/qlora_27b_53k_phase1_adapter",
+  "slug": "vuhaian-qlora_27b_53k_phase1_adapter",
+  "author": "vuhaian",
+  "url": "https://huggingface.co/vuhaian/qlora_27b_53k_phase1_adapter",
+  "created_at": "2026-08-24T21:09:21.000Z",
+  "updated_at": "2026-08-24T21:09:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "sft",
+    "curriculum",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455276494,
+  "storage_human": "455 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA). Our best model family, which we name Guanaco, outperforms all previous openly ..."
+    },
+    {
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly ..."
+    },
+    {
+      "title": "Fine-tune LLMs on Jetson - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/tutorials/finetune-on-jetson/",
+      "snippet": "Learn how to fine-tune large language models directly on Jetson using PyTorch and Hugging Face TRL. Covers Full SFT (4B), LoRA (9B), and QLoRA (27B)."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/12c_sx8pIwiStqKr_7CF5BVwyyJpXmMTf?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Fine-tuning Different Model Sizes | artidoro/qlora | DeepWiki",
+      "url": "https://deepwiki.com/artidoro/qlora/5.1-fine-tuning-different-model-sizes",
+      "snippet": "Conclusion QLoRA enables fine-tuning of various model sizes from 7B to 65B parameters on limited hardware through advanced quantization and memory optimization techniques. By selecting the appropriate model size and fine-tuning parameters, you can balance performance requirements with available hardware resources."
+    }
+  ]
+}

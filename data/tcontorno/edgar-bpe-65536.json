@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tcontorno/edgar-bpe-65536",
+  "slug": "tcontorno-edgar-bpe-65536",
+  "author": "tcontorno",
+  "url": "https://huggingface.co/tcontorno/edgar-bpe-65536",
+  "created_at": "2026-08-25T01:58:10.000Z",
+  "updated_at": "2026-08-25T01:58:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "bpe",
+    "finance",
+    "sec-filings",
+    "edgar",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kneron Unveils AI PC Companion at COMPUTEX 2026, Introducing ...",
+      "url": "https://www.einpresswire.com/article/916498602/kneron-unveils-ai-pc-companion-at-computex-2026-introducing-emotionally-intelligent-computing",
+      "snippet": "As AI enters its deployment era, Kneron reimagines the PC as an intelligent companion that lives closer to the user. SAN DIEGO, CA, UNITED STATES, June 1, 2026 / EINPresswire.com / -- At COMPUTEX 2026, Kneron today unveiled its vision for the future of AI PCs: an always-available, emotionally intelligent AI companion powered entirely by localized edge AI. The Kneron AI PC Companion technology ..."
+    },
+    {
+      "title": "Token Calculator for LLMs - OpenAI, Claude, Gemini Cost Estimator",
+      "url": "https://token-calculator.net/",
+      "snippet": "Token calculator for LLM prompts, documents, code, and chat messages. Count tokens locally and estimate OpenAI, Claude, and Gemini API costs."
+    },
+    {
+      "title": "The 2026 AI Landscape: A Hacker&#x27;s Deep Dive • oreoro",
+      "url": "https://oreoro.github.io/posts/2026-ai-landscape/",
+      "snippet": "The single biggest shift in 2026 is from generative AI (creates content) to agentic AI (autonomous systems that plan, decide, and execute). Where a generative model answers your question, an agentic AI accomplishes your goal."
+    },
+    {
+      "title": "AI 3D Model Generator — Create & Animate 3D Characters - Tripo AI",
+      "url": "https://www.tripo3d.ai/features/ai-3d-model-generator",
+      "snippet": "Tripo AI is an all-in-one AI 3D model generator that creates production-ready 3D models from images or text prompts in seconds. It covers the full pipeline — generation, texturing, rigging, segmentation, and mesh optimization — in a single platform."
+    },
+    {
+      "title": "Token Counter - Text to Token Conversion for AI Models",
+      "url": "https://tokencounter.org/",
+      "snippet": "Token Counter - Precisely calculate the costs of using AI models like ChatGPT and GPT-3. Simply input your text to get the corresponding token count and cost estimate, boosting efficiency and preventing wastage."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "ariacompute/qwen3.5-0.8b_q8",
+  "slug": "ariacompute-qwen3-5-0-8b_q8",
+  "author": "ariacompute",
+  "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q8",
+  "created_at": "2026-08-08T00:21:43.000Z",
+  "updated_at": "2026-08-25T00:56:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aria-engine",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "aria-engine",
+    "qwen3.5",
+    "quantized",
+    "group-quantization",
+    "hadamard",
+    "lloyd-max",
+    "8-bit",
+    "near-lossless",
+    "on-device",
+    "edge",
+    "mobile",
+    "text-generation",
+    "tool-calling",
+    "embeddings",
+    "en",
+    "zh",
+    "dataset:togethercomputer/RedPajama-Data-1T",
+    "dataset:EleutherAI/the_pile",
+    "dataset:bigcode/the-stack",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 904323118,
+  "storage_human": "904 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ariacompute/qwen3.5-0.8b_q8 · Hugging Face",
+      "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model/qwen/qwen3.5-0.8b at main · ariacompute/model · GitHub",
+      "url": "https://github.com/ariacompute/model/tree/main/qwen/qwen3.5-0.8b",
+      "snippet": "aria model. Contribute to ariacompute/model development by creating an account on GitHub."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    },
+    {
+      "title": "Qwen 3.5 Hardware Guide — 0.8B to 397B VRAM & GPUs",
+      "url": "https://www.compute-market.com/blog/qwen-3-5-local-hardware-guide-2026",
+      "snippet": "Qwen 3.5 Local Hardware Guide 2026: Every Model from 0.8B to 397B Qwen 3.5 rewrites the local AI playbook with native multimodal, 262K context, and hybrid MoE. Here&#x27;s exactly which GPU, Mac, or mini PC you need for every model size — with VRAM math, tok/s benchmarks, and price-tiered recommendations from $250 to enterprise."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF",
+  "slug": "aisingapore-apertus-sea-lion-v4-8b-it-gguf",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF",
+  "created_at": "2026-02-06T04:53:22.000Z",
+  "updated_at": "2026-08-25T00:03:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "my"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "my",
+    "base_model:swiss-ai/Apertus-8B-Instruct-2509",
+    "base_model:finetune:swiss-ai/Apertus-8B-Instruct-2509",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 177,
+  "trending_score": 0,
+  "parameters": 8053338176,
+  "parameters_human": "8.05B",
+  "storage_bytes": 36354513228,
+  "storage_human": "36.4 GB",
+  "base_model": "swiss-ai/Apertus-8B-Instruct-2509",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SEA-LION v4 - a aisingapore Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aisingapore/sea-lion-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apertus-SEA-LION-v4-8B | SEA-LION Documentation",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/apertus-sea-lion-v4-8b",
+      "snippet": "Introduction SEA-LION stands for Southeast Asian Languages In One Network. Apertus-SEA-LION-v4-8B-IT is a 8-billion parameter model built upon the Apertus-8B-Instruct architecture. To ensure domain adaptation for the region, the model underwent rigorous post-training on a curated dataset of approximately 8.54 million instruction-text pairs."
+    },
+    {
+      "title": "aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF at main",
+      "url": "https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sealion/models/sea-lion-v4/apertus-sea-lion-v4-8B.md at main ... - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/apertus-sea-lion-v4-8B.md",
+      "snippet": "Introduction SEA-LION stands for Southeast Asian Languages In One Network. Apertus-SEA-LION-v4-8B-IT is a 8-billion parameter model built upon the Apertus-8B-Instruct architecture. To ensure domain adaptation for the region, the model underwent rigorous post-training on a curated dataset of approximately 8.54 million instruction-text pairs."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jordyantunes/sbv2-speak-voices",
+  "slug": "jordyantunes-sbv2-speak-voices",
+  "author": "jordyantunes",
+  "url": "https://huggingface.co/jordyantunes/sbv2-speak-voices",
+  "created_at": "2026-08-25T00:22:10.000Z",
+  "updated_at": "2026-08-25T00:30:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "style-bert-vits2",
+    "onnxruntime-web",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1497507264,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voted As #1 Text To Speech - Special Offer Ends Soon",
+      "url": "https://duckduckgo.com/y.js?ad_domain=revoicer.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=Qqc_z63z7LXq7nnzNmxuOPI2uRqMg6Haz2xwoH65R00g4sgS%2DgHXchvHbKIJPcZlIggzLQYaZOkWMgAsNmIHXDLkk978EBeRy2lTo70KFpLyQFAvkzK4OMAPicmGW6hqrnU2_oc3NruYzIcr2WzwOByPlNbOX%2DUrymtB6OfSBTE.tQhcLwVDnDBLldHY%2Dk4KQw&rut=0dd1a107f3eaa7acaa6bd25314484c70846b1b031784be248b77887f31f61110&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De87zEvLMK1lWfouLU4IpQDkjVUCUz0QwWs%2Du_JO8pep4k2AdfsE6CT_ufo%2Dgm56mbXz47iTpFkJN8hMnMa9bc4o9jWo4qpm9OZN9hWJyMWKxxX9afyVKgnoZ_A%2DS_IVH_YSDRVZCVipr3yIPfa97NTE23lcsHwjNdIMeoGrojU6DboTzGZU0U0BW6xF3BXim2uHUw%2Dt4VyU0NSdmzXl%2DN9mFGcM0w%26u%3DaHR0cHMlM2ElMmYlMmZyZXZvaWNlci5jb20lMmZiLXNlYXJjaCUzZm1zY2xraWQlM2QxMGM0MDM2ZmMwMjgxOWQxODhhZDY5ZTMyZDUzNWI2OA%26rlid%3D10c4036fc02819d188ad69e32d535b68&vqd=4-184871952739995751926903368791694599361&iurl=%7B1%7DIG%3DBB0C2DCD6AD540359B46AF30D96A52F2%26CID%3D10480E0AB0B7602A1B8719CAB1CC61A5%26ID%3DDevEx%2C5037.1",
+      "snippet": "Expires Soon - The first AI Text To Speech voices to display real human emotions! Truly human emotions in every voice over generated, breathing life into your voice overs."
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "RVC V2 Voice Models - Voice.ai",
+      "url": "https://voice.ai/hub/voices/rvc-v2-voice-models/",
+      "snippet": "Generate RVC AI voice models effortlessly and integrate them with Voice.ai in just a few simple steps, and prepare to be thoroughly delighted by the incredible voice transformations that await!"
+    },
+    {
+      "title": "Add an AI Voice Model | Voice Models",
+      "url": "https://voice-models.com/add",
+      "snippet": "Submit an AI voice model to Voice Models with its source URL, voice details, and RVC metadata."
+    },
+    {
+      "title": "Free AI Voice Changer & Voice Agent Platform - Voice.ai",
+      "url": "https://voice.ai/",
+      "snippet": "Realistic AI Voice Agents and Voice Changer The AI voice model platform powering next-gen Voice AI Agent™, text to speech, voice cloning, and our AI voice changer."
+    }
+  ]
+}

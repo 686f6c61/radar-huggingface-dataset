@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AI4SGI/ExoMind-9B-Q4_K_M-GGUF",
+  "slug": "ai4sgi-exomind-9b-q4_k_m-gguf",
+  "author": "AI4SGI",
+  "url": "https://huggingface.co/AI4SGI/ExoMind-9B-Q4_K_M-GGUF",
+  "created_at": "2026-08-24T19:45:30.000Z",
+  "updated_at": "2026-08-24T19:53:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "exomind",
+    "llama-cpp",
+    "q4_k_m",
+    "scientific-reasoning",
+    "agentic",
+    "tool-use",
+    "multimodal",
+    "qwen3.5",
+    "image-text-to-text",
+    "base_model:AI4SGI/ExoMind-9B",
+    "base_model:quantized:AI4SGI/ExoMind-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6550522864,
+  "storage_human": "6.6 GB",
+  "base_model": "AI4SGI/ExoMind-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI4SGI/ExoMind-9B · Hugging Face",
+      "url": "https://huggingface.co/AI4SGI/ExoMind-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AI4SGI/ExoMind: Official repository for ExoMind",
+      "url": "https://github.com/AI4SGI/ExoMind",
+      "snippet": "Official repository for ExoMind. Contribute to AI4SGI/ExoMind development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI4SGI/ExoMind: Official repository for ExoMind",
+      "url": "https://github.com/AI4SGI/ExoMind/tree/main/",
+      "snippet": "Built on Qwen3.5-35B-A3B, ExoMind achieves substantial and consistent improvements across scientific reasoning and research tasks using less data, a small model, and low-cost training. Its average score across eight scientific benchmarks increases from 36.2 to 67.5, while it also improves over the base model on all six evaluated general-capability benchmarks."
+    },
+    {
+      "title": "ExoMind: Democratizing Scientific Intelligence",
+      "url": "https://ai4sgi.github.io/ExoMind/",
+      "snippet": "ExoMind is the first extended-mind-inspired agentic system, integrating systematic data engineering, a scientific interaction framework, and a systematic training strategy to advance scientific reasoning and research."
+    },
+    {
+      "title": "AI4SGI (AI4SGI) - Hugging Face",
+      "url": "https://huggingface.co/AI4SGI",
+      "snippet": "Org profile for AI4SGI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

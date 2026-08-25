@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "speed-brain-ai/speedbrain-emotion-en-onnx",
+  "slug": "speed-brain-ai-speedbrain-emotion-en-onnx",
+  "author": "speed-brain-ai",
+  "url": "https://huggingface.co/speed-brain-ai/speedbrain-emotion-en-onnx",
+  "created_at": "2026-08-24T20:29:26.000Z",
+  "updated_at": "2026-08-24T20:42:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "roberta",
+    "emotion",
+    "text-classification",
+    "speedbrain",
+    "persona-forge",
+    "en",
+    "base_model:SamLowe/roberta-base-go_emotions-onnx",
+    "base_model:quantized:SamLowe/roberta-base-go_emotions-onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125397543,
+  "storage_human": "125 MB",
+  "base_model": "SamLowe/roberta-base-go_emotions-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iimran/EmotionDetection · Hugging Face",
+      "url": "https://huggingface.co/iimran/EmotionDetection",
+      "snippet": "This repository hosts a fine-tuned emotion detection model built on BERT-base-cased. The model is trained on the ma2za/many_emotions dataset to classify text into one of seven emotion categories: anger, fear, joy, love, sadness, surprise, and neutral. The model is available in both PyTorch and ONNX formats for efficient deployment."
+    },
+    {
+      "title": "GitHub - sb-ai-lab/EmotiEffLib: Efficient face emotion recognition in ...",
+      "url": "https://github.com/sb-ai-lab/EmotiEffLib",
+      "snippet": "EmotiEffLib (ex-HSEmotion) is a lightweight library for emotion and engagement recognition in photos and videos. It can be used in Python and C++. It provides flexibility with backend support for Pytorch and ONNX, enabling efficient real-time analysis across various platforms. This repository contains two implementations of EmotiEffLib: Python and C++."
+    },
+    {
+      "title": "Pre-trained Models | sb-ai-lab/EmotiEffLib | DeepWiki",
+      "url": "https://deepwiki.com/sb-ai-lab/EmotiEffLib/6.1-pre-trained-models",
+      "snippet": "This page documents the pre-trained models available in EmotiEffLib for emotion and engagement recognition. The models are optimized for facial expression analysis and provide various trade-offs between accuracy, speed, and size."
+    },
+    {
+      "title": "Models | sb-ai-lab/EmotiEffLib | DeepWiki",
+      "url": "https://deepwiki.com/sb-ai-lab/EmotiEffLib/6-models",
+      "snippet": "Emotion Recognition Models - For classifying facial expressions into emotional categories Engagement Classification Models - For detecting engagement levels from sequences of facial images These models are available in multiple formats to support different deployment scenarios, including PyTorch, ONNX, and TorchScript. Emotion Recognition Models"
+    },
+    {
+      "title": "Speedbrain - Conversational AI on Your Enterprise Data",
+      "url": "https://www.enterspeed.com/products/services/conversational-intelligence-service",
+      "snippet": "Our platform (with Speedbrain) provides the end-to-end data supply chain that AI depends on: we ingest relevant data from your systems, shape and enrich entities to match your destinations, and serve them with the performance and availability users (and executives 😉) expect."
+    }
+  ]
+}

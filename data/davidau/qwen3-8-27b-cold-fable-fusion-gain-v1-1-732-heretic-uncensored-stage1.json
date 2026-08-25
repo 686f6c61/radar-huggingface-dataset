@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1",
+  "slug": "davidau-qwen3-8-27b-cold-fable-fusion-gain-v1-1-732-heretic-uncensored-stage1",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1",
+  "created_at": "2026-08-25T01:47:46.000Z",
+  "updated_at": "2026-08-25T03:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27728999152,
+  "parameters_human": "27.73B",
+  "storage_bytes": 55481654786,
+  "storage_human": "55.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business faster, with less \"talking\" and is smarter too. Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to ..."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF: Text-to-Text ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-nm-dau-neo-max-mtp-gguf-davidau",
+      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF is a fine-tuned 27 billion parameter variant of Qwen 3.8 created by DavidAU that reduces thinking token overhead by 50-90% compared to the base model while maintaining or exceeding benchmark performance. The model uses the COLD FUSION training methodology, which combines the GAIN technique (dynamic per-sample training ..."
+    },
+    {
+      "title": "Qwen3.8-27B Cold Fusion Cuts Thinking Tokens Without ... - HackerNoon",
+      "url": "https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance",
+      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 is a 27-billion parameter instruction-tuned language model built by DavidAU that applies the COLD FUSION training methodology—combining GAIN (an internally developed technique) with Unsloth&#x27;s training infrastructure—to reduce thinking tokens to 1/10 to 1/2 of standard Qwen models while maintaining 99% of full-precision performance at both 8-bit ..."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://aiany.app/item/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf",
+      "snippet": "Post-trained Qwen3.8-27B variant using the COLD FUSION (GAIN+Unsloth) tuning to reduce internal reasoning-token use and improve instruction following while keeping base capabilities. Deliverables include 256k-context-compatible GGUF quants (regular and MTP, NEO IMATRIX), vision support via an mmproj, and three reasoning-effort modes (xhigh/medium/low)."
+    }
+  ]
+}

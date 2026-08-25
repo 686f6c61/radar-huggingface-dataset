@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jasonjimnz/LFM2.5-1.2B-Instruct_boe_legal_pre_alpha",
+  "slug": "jasonjimnz-lfm2-5-1-2b-instruct_boe_legal_pre_alpha",
+  "author": "jasonjimnz",
+  "url": "https://huggingface.co/jasonjimnz/LFM2.5-1.2B-Instruct_boe_legal_pre_alpha",
+  "created_at": "2026-08-24T21:17:47.000Z",
+  "updated_at": "2026-08-24T21:18:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 730894880,
+  "storage_human": "731 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-1.2B-Instruct - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct",
+      "snippet": "← Back to Text Models LFM2.5-1.2B-Instruct is Liquid AI&#x27;s flagship instruction-tuned model, delivering exceptional performance for chat, instruction-following, and tool-calling tasks. Built on the LFM2.5 architecture with extended pre-training and reinforcement learning."
+    },
+    {
+      "title": "LFM2.5 1.2B Instruct | Model Library | Overmind",
+      "url": "https://www.overmindlab.ai/models/lfm-2-5-1-2b-instruct",
+      "snippet": "Overview LFM2.5-1.2B-Instruct is Liquid&#x27;s flagship small instruct model — 28T-token pretrain plus multi-stage RL, ChatML tool calling, and day-one support for Transformers, vLLM, and llama.cpp. Strong on agentic tasks and RAG; not aimed at heavy coding or knowledge-intensive work."
+    },
+    {
+      "title": "LFM2.5-1.2B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/LiquidAI/LFM2.5-1.2B-Instruct",
+      "snippet": "LFM2.5-1.2B-Instruct LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. Best-in-class performance: A 1.2B model rivaling much larger models, bringing high-quality AI to your pocket. Fast edge inference: 239 tok/s decode on AMD CPU, 82 tok/s on mobile NPU. Runs under 1GB of memory ..."
+    },
+    {
+      "title": "LFM2.5-1.2B-Instruct - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct",
+      "snippet": "LFM2.5-1.2B-Instruct is a compact, high-performance instruction-tuned model built for fast on-device AI. It delivers strong chat quality in a 1.2B parameter footprint, with efficient edge inference and broad runtime support."
+    }
+  ]
+}

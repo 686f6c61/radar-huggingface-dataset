@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tcontorno/edgar-bpe-65536-digits",
+  "slug": "tcontorno-edgar-bpe-65536-digits",
+  "author": "tcontorno",
+  "url": "https://huggingface.co/tcontorno/edgar-bpe-65536-digits",
+  "created_at": "2026-08-25T01:58:11.000Z",
+  "updated_at": "2026-08-25T01:58:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "bpe",
+    "finance",
+    "sec-filings",
+    "edgar",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SEC.gov | EDGAR Full Text Search",
+      "url": "https://www.sec.gov/edgar/search/",
+      "snippet": "Search and access full text of electronic filings for Benco, LLC on SEC&#x27;s EDGAR database."
+    },
+    {
+      "title": "Nvidia unveils $3,000 desktop AI computer for home researchers",
+      "url": "https://arstechnica.com/ai/2025/01/nvidias-first-desktop-pc-can-run-local-ai-models-for-3000/",
+      "snippet": "Nvidia unveils $3,000 desktop AI computer for home researchers Project DIGITS can run a local chatbot or other AI models up to 200B parameters in size."
+    },
+    {
+      "title": "65536 - The Number Repository",
+      "url": "https://tnr.miraheze.org/wiki/65536",
+      "snippet": "65536 65,536 is a positive integer equal to 2 16 = 2 222 = 4 2 = 2↑↑↑3. It is the largest power tower of 2 &#x27;s that can be expressed in a compact digital form (as 5 2 is an integer of 19,729 decimal digits)."
+    },
+    {
+      "title": "NVIDIA Project DIGITS Explained: AI Power in a Compact Package",
+      "url": "https://www.storagereview.com/news/nvidia-project-digits-explained-ai-power-in-a-compact-package",
+      "snippet": "At CES 2025, NVIDIA introduced Project DIGITS, a groundbreaking personal AI supercomputer powered by the new NVIDIA GB10 Grace Blackwell Superchip. Designed to simplify the AI development workflow, Project DIGITS delivers the performance of a petaflop-class AI system in a compact, desktop-friendly form factor. This innovation is set to revolutionize how AI researchers, data scientists, and ..."
+    },
+    {
+      "title": "Everything You Want To Know About Nvidia Project Digits AI ... - Forbes",
+      "url": "https://www.forbes.com/sites/janakirammsv/2025/01/12/everything-you-want-to-know-about-nvidia-project-digits-ai-supercomputer/",
+      "snippet": "At CES 2025, Nvidia announced its first personal AI supercomputer, Project Digits. The rise of generative AI demands access to a new generation of CPUs and GPUs for data scientists and AI ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/mRNA-FM",
+  "slug": "taykhoom-mrna-fm",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/mRNA-FM",
+  "created_at": "2026-06-05T13:01:42.000Z",
+  "updated_at": "2026-08-25T03:07:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "rna"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rnafm",
+    "fill-mask",
+    "RNA",
+    "language-model",
+    "custom_code",
+    "rna",
+    "arxiv:2204.00300",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 123,
+  "trending_score": 0,
+  "parameters": 239180873,
+  "parameters_human": "239.2M",
+  "storage_bytes": 956744972,
+  "storage_human": "957 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/mRNA-FM · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/mRNA-FM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RNA-FM - a Taykhoom Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Taykhoom/rna-fm",
+      "snippet": "HF ports of RNA-FM and mRNA-FM: 2 model versions for non-coding and coding RNA."
+    },
+    {
+      "title": "multimolecule/multimolecule/models/rnafm/README.mrnafm.md at master ...",
+      "url": "https://github.com/DLS5-Omics/multimolecule/blob/master/multimolecule/models/rnafm/README.mrnafm.md",
+      "snippet": "This is an UNOFFICIAL implementation of the Interpretable RNA Foundation Model from Unannotated Data for Highly Accurate RNA Structure and Function Predictions by Jiayang Chen, Zhihang Hu, Siqi Sun, et al. The OFFICIAL repository of RNA-FM is at ml4bio/RNA-FM."
+    },
+    {
+      "title": "GitHub - ml4bio/RNA-FM: Nature Methods: RNA foundation model (together ...",
+      "url": "https://github.com/ml4bio/RNA-FM",
+      "snippet": "RNA-FM (RNA Foundation Model) is a state-of-the-art pretrained language model for RNA sequences, serving as the cornerstone of an integrated RNA research ecosystem. Trained on 23+ million non-coding RNA (ncRNA) sequences via self-supervised learning, RNA-FM extracts comprehensive structural and functional information from RNA sequences without relying on experimental labels. mRNA‑FM is a ..."
+    },
+    {
+      "title": "mrnafm huggingface.co api & multimolecule mrnafm github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/multimolecule-mrnafm",
+      "snippet": "mrnafm huggingface.co mrnafm huggingface.co is an AI model on huggingface.co that provides mrnafm&#x27;s model effect (), which can be used instantly with this multimolecule mrnafm model. huggingface.co supports a free trial of the mrnafm model, and also provides paid use of the mrnafm. Support call mrnafm model through api, including Node.js, Python, http."
+    }
+  ]
+}

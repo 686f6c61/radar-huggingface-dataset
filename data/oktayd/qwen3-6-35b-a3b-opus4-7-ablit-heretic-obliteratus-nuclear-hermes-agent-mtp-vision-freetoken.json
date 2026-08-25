@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+  "slug": "oktayd-qwen3-6-35b-a3b-opus4-7-ablit-heretic-obliteratus-nuclear-hermes-agent-mtp-vision-freetoken",
+  "author": "oktayd",
+  "url": "https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+  "created_at": "2026-08-25T02:47:14.000Z",
+  "updated_at": "2026-08-25T03:04:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.6",
+    "mixture-of-experts",
+    "moe",
+    "claude-opus-4.7",
+    "reasoning",
+    "reasoning-distillation",
+    "abliterated",
+    "uncensored",
+    "refusal-reduction",
+    "heretic",
+    "obliteratus",
+    "nuclear",
+    "hermes",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "agentic",
+    "agentic-coding",
+    "coding",
+    "lora",
+    "peft",
+    "unsloth",
+    "mtp",
+    "nextn",
+    "conversational",
+    "multimodal",
+    "vision-language",
+    "vlm",
+    "freetoken",
+    "en",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:lambda/hermes-agent-reasoning-traces",
+    "base_model:huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 71923767655,
+  "storage_human": "71.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp",
+      "url": "https://huggingface.co/MLXCreator/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp/tree/main",
+      "snippet": "Instructions to use MLXCreator/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043",
+      "snippet": "Alibaba open-sources Qwen3.6-35B-A3B, an efficient 35B/3B MoE model delivering top-tier agentic coding and multimodal performance."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus, we are excited to open-source Qwen3.6-35B-A3B — a sparse yet remarkably capable mixture-of-experts (MoE) model with 35 billion total parameters and only 3 billion active parameters. Despite its efficiency, Qwen3.6-35B-A3B delivers outstanding agentic coding performance, surpassing its predecessor Qwen3.5-35B ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Fine-Tune Qwen 3.6 with Ertas - Ertas AI",
+      "url": "https://www.ertas.ai/models/qwen-3.6",
+      "snippet": "The 35B-A3B MoE variant uses fine-grained expert routing with a top-K selection strategy similar to the Qwen3-Next architecture introduced in late 2025. With only ~3B active parameters per token, it runs at speeds comparable to a 3B dense model on standard inference frameworks while delivering quality competitive with 14B-32B dense models on ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Qwen-SEA-Guard-8B-2602",
+  "slug": "aisingapore-qwen-sea-guard-8b-2602",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-2602",
+  "created_at": "2025-11-26T06:31:36.000Z",
+  "updated_at": "2026-08-25T00:46:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "arxiv:2602.01618",
+    "arxiv:2512.05501",
+    "base_model:aisingapore/Qwen-SEA-LION-v4-8B-VL",
+    "base_model:finetune:aisingapore/Qwen-SEA-LION-v4-8B-VL",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 770288,
+  "parameters_human": "770288",
+  "storage_bytes": 117048949086,
+  "storage_human": "117.0 GB",
+  "base_model": "aisingapore/Qwen-SEA-LION-v4-8B-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Qwen-SEA-Guard-8B-2602 · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-2602",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-Guard-8B-2602 at main - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-Guard-8B-2602/tree/main",
+      "snippet": "Deploy Use this model main Qwen-SEA-Guard-8B-2602 135 GB 4 contributors History: 42 commits Jian-Gang"
+    },
+    {
+      "title": "SEA-GUARD | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-guard",
+      "snippet": "SEA-Guard, released on 4 Feb 2026, is our premier suite of safety and moderation models tailored for the Southeast Asian landscape. This collection focuses on robust visual and textual guardrails, ensuring AI deployments remain secure and culturally compliant across the region."
+    },
+    {
+      "title": "sealion/models/sea-guard/qwenNllama-sea-guard.md at main · aisingapore ...",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-guard/qwenNllama-sea-guard.md",
+      "snippet": "Qwen-SEA-Guard-4B/8B and Llama-SEA-Guard-8B SEA-Guard is a collection of safety-focused Large Language Models (LLMs) built upon the SEA-LION family, designed specifically for the Southeast Asia (SEA) region."
+    },
+    {
+      "title": "Qwen-SEA-Guard-8B-2602 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/aisingapore/Qwen-SEA-Guard-8B-2602",
+      "snippet": "Deploy Qwen-SEA-Guard-8B-2602 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdfaffaf556/my-awesome-model-best",
+  "slug": "sdfaffaf556-my-awesome-model-best",
+  "author": "sdfaffaf556",
+  "url": "https://huggingface.co/sdfaffaf556/my-awesome-model-best",
+  "created_at": "2026-08-24T20:44:49.000Z",
+  "updated_at": "2026-08-24T20:57:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdfaffaf556/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sdfaffaf556/MyAwesomeModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sdsffs5/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sdsffs5/MyAwesomeModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best AI Models (August 2026): 399 LLMs Ranked & Scored",
+      "url": "https://benchlm.ai/best/overall",
+      "snippet": "The best AI model right now is Claude Mythos 5. It leads the August 2026 ranking with a score of 83, ahead of Claude Fable 5 (82.8) and Claude Opus 5 (82.7). Each row uses the public BenchAlign v5 contract and shows its evidence status. Citable stat 225 AI models are ranked as of August 24, 2026; Claude Mythos 5 leads at 83 /100."
+    },
+    {
+      "title": "AI Model Leaderboard 2026 - Best AI Image, Video & Audio Rankings",
+      "url": "https://www.jaiportal.com/leaderboard",
+      "snippet": "AI Model Leaderboard Compare and rank the best AI image, video & audio models by ELO rating. Real-time community rankings across text-to-image, image editing, text-to-video, image-to-video, text-to-speech and music generation."
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    }
+  ]
+}

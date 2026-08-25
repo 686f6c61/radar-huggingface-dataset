@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4",
+  "slug": "localized-ft-qwen3-8b-school-of-reward-hacks-inoculation-prompting-seed4",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4",
+  "created_at": "2026-08-25T02:03:41.000Z",
+  "updated_at": "2026-08-25T02:05:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B-school-of-reward-hacks-inoculation-prompting",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-inoculation-prompting",
+      "snippet": "Qwen3-8B-school-of-reward-hacks-inoculation-prompting ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4/tree/main",
+      "snippet": "Using HuggingFace Spaces for Unsloth ... Load model with FastModel ... main Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4 2.08 kB Ctrl+K Ctrl+K 1 contributor History:2 commits nielsrolf Unsloth Model Card d7d4b9f verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md Safe 561 BytesUnsloth Model Card3 days ago"
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

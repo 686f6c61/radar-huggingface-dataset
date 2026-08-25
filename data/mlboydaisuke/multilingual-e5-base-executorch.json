@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/multilingual-e5-base-ExecuTorch",
+  "slug": "mlboydaisuke-multilingual-e5-base-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/multilingual-e5-base-ExecuTorch",
+  "created_at": "2026-08-24T21:14:46.000Z",
+  "updated_at": "2026-08-24T21:17:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:quantized:intfloat/multilingual-e5-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2220664395,
+  "storage_human": "2.2 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "intfloat/multilingual-e5-base · Hugging Face",
+      "url": "https://huggingface.co/intfloat/multilingual-e5-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ExecuTorch Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo",
+      "snippet": "PyTorch models exported to ExecuTorch .pte for on-device inference — XNNPACK (CPU, portable) and Core ML builds, each parity-checked."
+    },
+    {
+      "title": "multilingual-e5-base",
+      "url": "https://docs.oracle.com/en/database/oracle/agent-factory/26.4/pafli/multilingual-e5-base.html",
+      "snippet": "The Multilingual-E5-base model is a separately licensed third-party component. It is licensed under the Apache License 2.0 and is not covered by the license governing the included software."
+    },
+    {
+      "title": "GitHub - skykim/multilingual-e5-unity: Multilingual E5 Models (Small ...",
+      "url": "https://github.com/skykim/multilingual-e5-unity",
+      "snippet": "This project enables the use of Multilingual E5 models within the Unity AI Inference Engine (formerly Sentis). Multilingual E5, proposed by Liang et al. in 2024, is a state-of-the-art multilingual embedding model that supports over 100 languages. This project allows you to leverage powerful multilingual text embedding and similarity search capabilities directly in your Unity projects."
+    },
+    {
+      "title": "multilingual-e5-base: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/multilingual-e5-base-intfloat",
+      "snippet": "Overview multilingual-e5-base is a multilingual text embedding model created by intfloat that generates fixed 768-dimensional dense vector representations for text in 100 languages. The model contains 12 layers and is initialized from xlm-roberta-base, then trained through a two-stage process: first with 5.97 billion weakly-supervised text pairs from sources like Wikipedia, mC4, CC News ..."
+    }
+  ]
+}

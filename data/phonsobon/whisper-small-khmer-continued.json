@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "phonsobon/Whisper-Small-Khmer-continued",
+  "slug": "phonsobon-whisper-small-khmer-continued",
+  "author": "phonsobon",
+  "url": "https://huggingface.co/phonsobon/Whisper-Small-Khmer-continued",
+  "created_at": "2026-08-24T17:43:25.000Z",
+  "updated_at": "2026-08-24T22:45:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:Vira21/Whisper-Small-Khmer",
+    "base_model:finetune:Vira21/Whisper-Small-Khmer",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 8676277912,
+  "storage_human": "8.7 GB",
+  "base_model": "Vira21/Whisper-Small-Khmer",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PhonSobon (Phon Sobon) · GitHub",
+      "url": "https://github.com/PhonSobon/",
+      "snippet": "PhonSobon has 87 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "phonsobon/mini-ocr · Hugging Face",
+      "url": "https://huggingface.co/phonsobon/mini-ocr",
+      "snippet": "mini-ocr — Khmer & English Text Recognition A lightweight CRNN (CNN + Bi-LSTM) model trained to recognise Khmer and English text from image crops. It uses a CTC head so it can handle variable-length text without needing segmentation."
+    },
+    {
+      "title": "khmer-text-to-speech-datasets - a phonsobon Collection",
+      "url": "https://huggingface.co/collections/phonsobon/khmer-text-to-speech-datasets",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from phonsobon"
+    },
+    {
+      "title": "khmer_Captioning/models at main · PhonSobon/khmer_Captioning",
+      "url": "https://github.com/PhonSobon/khmer_Captioning/tree/main/models",
+      "snippet": "Contribute to PhonSobon/khmer_Captioning development by creating an account on GitHub."
+    },
+    {
+      "title": "Whisper-small-khmer-v2 Open-source Khmer Speech Recognition Model ...",
+      "url": "https://model.aibase.com/en/models/details/1915704736067772417",
+      "snippet": "🚀 whisper-small-khmer-v2 This model is a fine-tuned version of openai/whisper-small, designed for automatic speech recognition and achieving good results on relevant datasets."
+    }
+  ]
+}

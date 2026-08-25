@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "KevinDowling/LTX-2.5-Diffusers-NVFP4",
+  "slug": "kevindowling-ltx-2-5-diffusers-nvfp4",
+  "author": "KevinDowling",
+  "url": "https://huggingface.co/KevinDowling/LTX-2.5-Diffusers-NVFP4",
+  "created_at": "2026-08-24T22:38:06.000Z",
+  "updated_at": "2026-08-24T22:43:38.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx-2.5",
+    "nvfp4",
+    "quantized",
+    "dgx-spark",
+    "gb10",
+    "blackwell",
+    "image-to-video",
+    "base_model:Lightricks/LTX-2.5-Diffusers",
+    "base_model:quantized:Lightricks/LTX-2.5-Diffusers",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10820238592,
+  "parameters_human": "10.82B",
+  "storage_bytes": 21179649296,
+  "storage_human": "21.2 GB",
+  "base_model": "Lightricks/LTX-2.5-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5-Diffusers - Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5-Diffusers",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "Lightricks/LTX-2.5-Diffusers | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Lightricks/LTX-2.5-Diffusers",
+      "snippet": "LTX-2.5-Diffusers is a dense 19B diffusion transformer for video with synchronized 48 kHz stereo audio. vLLM-Omni supports T2V and first-frame I2V through four pipeline classes:"
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-2: Official Python inference and LoRA trainer ...",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "snippet": "LTX-2 is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    }
+  ]
+}

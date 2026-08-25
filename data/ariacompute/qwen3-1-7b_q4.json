@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ariacompute/qwen3-1.7b_q4",
+  "slug": "ariacompute-qwen3-1-7b_q4",
+  "author": "ariacompute",
+  "url": "https://huggingface.co/ariacompute/qwen3-1.7b_q4",
+  "created_at": "2026-08-07T06:00:14.000Z",
+  "updated_at": "2026-08-25T00:47:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aria-engine",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "aria-engine",
+    "qwen3",
+    "quantized",
+    "group-quantization",
+    "hadamard",
+    "lloyd-max",
+    "4-bit",
+    "on-device",
+    "edge",
+    "mobile",
+    "text-generation",
+    "tool-calling",
+    "embeddings",
+    "en",
+    "zh",
+    "dataset:togethercomputer/RedPajama-Data-1T",
+    "dataset:EleutherAI/the_pile",
+    "dataset:bigcode/the-stack",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1028603582,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ariacompute/qwen3-1.7b_q4 · Hugging Face",
+      "url": "https://huggingface.co/ariacompute/qwen3-1.7b_q4",
+      "snippet": "Model Card for Qwen3-1.7B (Aria Quant Bundle, q4) Model Details Model Description Qwen3 1.7B is a 1.7-billion-parameter, dense Transformer decoder-only language model developed by the Qwen team at Alibaba Cloud, pre-trained on diverse public corpora and aligned via supervised fine-tuning (SFT) and direct preference optimization (DPO)."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-1.7B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_1_7b",
+      "snippet": "Qwen3-1.7B Multilingual 1.7B parameter language model excelling in reasoning and code generation. Qwen3 is a multilingual large language model series from Alibaba Cloud, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-1.7B — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/qwenqwen3-17b/",
+      "snippet": "Overview Qwen/Qwen3-1.7B is a text generation model developed by Alibaba&#x27;s Qwen team and released in mid-2025, building on the Qwen3 base model architecture. It excels at conversational AI tasks and general text generation with strong instruction-following capabilities, making it suitable for chatbot applications and interactive dialogue systems."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

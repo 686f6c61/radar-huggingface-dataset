@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mimiminsoo/spam_diffusion_stage_place_v1",
+  "slug": "mimiminsoo-spam_diffusion_stage_place_v1",
+  "author": "mimiminsoo",
+  "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_v1",
+  "created_at": "2026-08-24T19:29:45.000Z",
+  "updated_at": "2026-08-24T19:30:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:mimiminsoo/piper_bottle_multi_0823_stage_place",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308316824,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1233356872,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Diffusion Models · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/unit5/generative-models/diffusion-models/introduction",
+      "snippet": "Diffusion models are a new and exciting area in computer vision that has shown impressive results in creating images. These generative models work on two stages, a forward diffusion stage and a reverse diffusion stage: first, they slightly change the input data by adding some noise, and then they try to undo these changes to get back to the ..."
+    },
+    {
+      "title": "GitHub - cloneofsimo/minDiffusion: Self-contained, minimalistic ...",
+      "url": "https://github.com/cloneofsimo/minDiffusion",
+      "snippet": "minDiffusion Goal of this educational repository is to provide a self-contained, minimalistic implementation of diffusion models using Pytorch. Many implementations of diffusion models can be a bit overwhelming."
+    },
+    {
+      "title": "GitHub - pesser/stable-diffusion",
+      "url": "https://github.com/pesser/stable-diffusion",
+      "snippet": "Contribute to pesser/stable-diffusion development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=stable-diffusion",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

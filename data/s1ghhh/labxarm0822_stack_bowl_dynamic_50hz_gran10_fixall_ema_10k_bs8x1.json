@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs8x1",
+  "slug": "s1ghhh-labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs8x1",
+  "author": "s1ghhh",
+  "url": "https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs8x1",
+  "created_at": "2026-08-23T19:17:07.000Z",
+  "updated_at": "2026-08-24T20:50:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35871550673,
+  "storage_human": "35.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Installing boot9strap (Soundhax) - 3DS Hacks Guide",
+      "url": "https://3ds.hacks.guide/installing-boot9strap-(soundhax).html",
+      "snippet": "Section II - Launching SafeB9SInstaller In this section, you will launch Soundhax through the Nintendo 3DS Sound app, which will use universal-otherapp to launch the boot9strap (custom firmware) installer. Launch Nintendo 3DS Sound"
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Troubleshooting - 3DS Hacks Guide",
+      "url": "https://3ds.hacks.guide/troubleshooting.html",
+      "snippet": "A complete guide to 3DS custom firmware Troubleshooting This page serves a landing page for troubleshooting resources that we offer for commonly encountered issues. Click on the link corresponding to the page you are following to explore it. If you&#x27;re unable to fix your issue, ask for help at Nintendo Homebrew on Discord. If your issue is missing and you know the solution, let us know!"
+    },
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/questions",
+      "snippet": "Stack Overflow | The World&#x27;s Largest Online Community for Developers"
+    }
+  ]
+}

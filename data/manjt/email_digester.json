@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "manjt/email_digester",
+  "slug": "manjt-email_digester",
+  "author": "manjt",
+  "url": "https://huggingface.co/manjt/email_digester",
+  "created_at": "2026-08-24T19:40:04.000Z",
+  "updated_at": "2026-08-24T19:58:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902560,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 01faiyaz/Automated-Email-Digestion: Fully Automated AI-Powered ...",
+      "url": "https://github.com/01faiyaz/Automated-Email-Digestion",
+      "snippet": "Automated-Email-Digestion AI Email Digest — Automated Morning Inbox Summarizer Every morning, this system reads your Gmail, sends it to an AI, and delivers a clean categorized digest to your inbox — automatically. Built with n8n, Groq, and LLaMA 3.3 70B. Total cost: $0/month."
+    },
+    {
+      "title": "Automated-Email-Digestion/README.md at main · 01faiyaz ... - GitHub",
+      "url": "https://github.com/01faiyaz/Automated-Email-Digestion/blob/main/README.md",
+      "snippet": "Automated-Email-Digestion AI Email Digest — Automated Morning Inbox Summarizer Every morning, this system reads your Gmail, sends it to an AI, and delivers a clean categorized digest to your inbox — automatically. Built with n8n, Groq, and LLaMA 3.3 70B. Total cost: $0/month."
+    },
+    {
+      "title": "MailDigest AI — AI Email Summarizer & Daily Email Digest",
+      "url": "https://maildigest.ai/",
+      "snippet": "MailDigest AI is an AI email assistant that reads and summarizes your emails, then delivers a daily email digest — urgent emails, follow-ups and FYI — with AI-drafted replies, via email or Telegram. Beat inbox overload in 3 minutes a day."
+    },
+    {
+      "title": "Daily Email Digest with AI Summarization using Gmail, OpenRouter and ...",
+      "url": "https://n8n.io/workflows/5003-daily-email-digest-with-ai-summarization-using-gmail-openrouter-and-langchain/",
+      "snippet": "📧 Morning Mail Summary Ai Agent Simplify your mornings with this automated email summary workflow in n8n, designed for teams and individuals who want a..."
+    },
+    {
+      "title": "Create AI-summarized email digests from Gmail labels with OpenAI O4 ...",
+      "url": "https://n8n.io/workflows/5839-create-ai-summarized-email-digests-from-gmail-labels-with-openai-o4-mini/",
+      "snippet": "Each email is processed through OpenAI&#x27;s language model using LangChain to create concise, readable summaries that preserve important links and formatting. All summaries are then combined into a single, well-formatted digest email and sent to your inbox, replacing dozens of individual emails with one comprehensive overview."
+    }
+  ]
+}

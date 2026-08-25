@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kamranibiyev/azNER-xlmr",
+  "slug": "kamranibiyev-azner-xlmr",
+  "author": "kamranibiyev",
+  "url": "https://huggingface.co/kamranibiyev/azNER-xlmr",
+  "created_at": "2026-08-24T19:40:09.000Z",
+  "updated_at": "2026-08-24T19:51:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "pytorch",
+    "xlm-roberta",
+    "ner",
+    "named-entity-recognition",
+    "azerbaijani",
+    "azwikiner",
+    "token-classification",
+    "az",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1115079817,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-R: Multilingual Transformer Model",
+      "url": "https://www.emergentmind.com/topics/xlm-r",
+      "snippet": "XLM-R is a multilingual Transformer-based model that leverages masked language modeling across 100 languages for robust cross-lingual transfer. It is trained on over 2 TB of data with a large vocabulary size, enabling effective processing of both high-resource and low-resource languages. Its architecture addresses transfer-interference trade-offs, setting new benchmarks on diverse ..."
+    },
+    {
+      "title": "XLM-RoBERTa — transformers 3.0.2 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v3.0.2/model_doc/xlmroberta.html",
+      "snippet": "Overview ¶ The XLM-RoBERTa model was proposed in Unsupervised Cross-lingual Representation Learning at Scale by Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer and Veselin Stoyanov. It is based on Facebook&#x27;s RoBERTa model released in 2019. It is a large multi-lingual language model, trained ..."
+    },
+    {
+      "title": "Facebook-AI-NLLB-Model/examples/xlmr/README.md at main - GitHub",
+      "url": "https://github.com/Mischeaf/Facebook-AI-NLLB-Model/blob/main/examples/xlmr/README.md",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - Mischeaf/Facebook-AI-NLLB-Model"
+    },
+    {
+      "title": "Unsupervised Cross-lingual Representation Learning at Scale",
+      "url": "https://arxiv.org/abs/1911.02116",
+      "snippet": "This paper shows that pretraining multilingual language models at scale leads to significant performance gains for a wide range of cross-lingual transfer tasks. We train a Transformer-based masked language model on one hundred languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross ..."
+    },
+    {
+      "title": "FacebookAI/xlm-roberta-large · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/xlm-roberta-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

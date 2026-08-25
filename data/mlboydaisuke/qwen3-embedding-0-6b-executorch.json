@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Qwen3-Embedding-0.6B-ExecuTorch",
+  "slug": "mlboydaisuke-qwen3-embedding-0-6b-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Qwen3-Embedding-0.6B-ExecuTorch",
+  "created_at": "2026-08-24T23:26:40.000Z",
+  "updated_at": "2026-08-24T23:27:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "feature-extraction",
+    "sentence-similarity",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4771070794,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Qwen3-0.6B-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Qwen3-0.6B-ExecuTorch",
+      "snippet": "The 8-bit embedding needs from executorch.kernels import quantized before the program is loaded, and portable_lib._load_for_executorch rather than executorch.runtime."
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Qwen3-Embedding/README.md at main · QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding/blob/main/README.md",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Qwen3 Embedding 0.6b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-embedding-0-6b.html",
+      "snippet": "Download Qwen3 Embedding 0.6b GGUF model. 610 MB, 25,188 downloads, 497 likes."
+    }
+  ]
+}

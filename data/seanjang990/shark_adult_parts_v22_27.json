@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seanjang990/shark_adult_parts_v22_27",
+  "slug": "seanjang990-shark_adult_parts_v22_27",
+  "author": "seanjang990",
+  "url": "https://huggingface.co/seanjang990/shark_adult_parts_v22_27",
+  "created_at": "2026-08-25T01:40:20.000Z",
+  "updated_at": "2026-08-25T01:40:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340219485,
+  "storage_human": "340 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seanjang990/shark_adult_parts_v21_25 · Hugging Face",
+      "url": "https://huggingface.co/seanjang990/shark_adult_parts_v21_25",
+      "snippet": "seanjang990 / shark_adult_parts_v21_25 like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "seanjang990 (sean jang) - Hugging Face",
+      "url": "https://huggingface.co/seanjang990",
+      "snippet": "User profile of sean jang on Hugging Face"
+    },
+    {
+      "title": "seanjang990 - GitHub",
+      "url": "https://github.com/seanjang990/",
+      "snippet": "Add an optional note: Please don&#x27;t include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you. Block user comfyui-document-auto-crop comfyui-document-auto-crop Public 인물이미지 들어오면 가장자리 자동 크롭 및 자동 회전 후 11:14 비율로 조정하는 comfyui 커스텀 노드 ..."
+    },
+    {
+      "title": "Schematic and parts list for: Shark Model: NV22L, NV22, NV22S, NV26 ...",
+      "url": "https://www.vacuumsrus.com/Schematics/schematic-and-parts-list-for-shark-model-nv22/",
+      "snippet": "Exploded schematic diagram and 7-part replacement parts list for the Shark NV22. Find OEM SKUs, current pricing, and popular supplies in stock."
+    },
+    {
+      "title": "Shark Vacuum Cleaner Parts - Select From 111 Models",
+      "url": "https://www.appliancefactoryparts.com/vacuumcleaners/brands/shark/",
+      "snippet": "Parts for 111 models of Shark Vacuum Cleaners. Parts Lists and photos available to help find your replacement parts."
+    }
+  ]
+}

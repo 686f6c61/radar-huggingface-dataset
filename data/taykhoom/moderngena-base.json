@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/ModernGENA-base",
+  "slug": "taykhoom-moderngena-base",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/ModernGENA-base",
+  "created_at": "2026-08-25T01:15:43.000Z",
+  "updated_at": "2026-08-25T01:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "biology",
+    "dna",
+    "genomics",
+    "masked-lm",
+    "bert",
+    "genomics-foundation-model",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136120832,
+  "parameters_human": "136.1M",
+  "storage_bytes": 544497400,
+  "storage_human": "544 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIRI-Institute/moderngena-base · Hugging Face",
+      "url": "https://huggingface.co/AIRI-Institute/moderngena-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GENA_LM/examples/modernGENA/README.md at main · AIRI ... - GitHub",
+      "url": "https://github.com/AIRI-Institute/GENA_LM/blob/main/examples/modernGENA/README.md",
+      "snippet": "GENA-LM is a transformer masked language model trained on human DNA sequence. - AIRI-Institute/GENA_LM"
+    },
+    {
+      "title": "Taykhoom (Taykhoom Dalal) - Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection about 7 hours ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "GitHub - AIRI-Institute/GENA_LM: GENA-LM is a transformer masked ...",
+      "url": "https://github.com/AIRI-Institute/GENA_LM",
+      "snippet": "ModernGENA is a DNA foundation model family based on a ModernBERT-style encoder adapted for genomic sequence modeling. We are releasing modernGENA base and large, designed to be faster and more efficient that our previous generation of GENA models Start from our modernGENA examples and see the paper Back to BERT in 2026: ModernGENA as a Strong, Efficient Baseline for DNA Foundation Models."
+    },
+    {
+      "title": "Architecture graph for AIRI-Institute/moderngena-base.",
+      "url": "https://hfviewer.com/AIRI-Institute/moderngena-base",
+      "snippet": "AIRI-Institute/moderngena-base: model architecture with Self-attention, Sliding-window attention, Residual (skip) connection."
+    }
+  ]
+}

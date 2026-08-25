@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BioVisionLab/run_v73h",
+  "slug": "biovisionlab-run_v73h",
+  "author": "BioVisionLab",
+  "url": "https://huggingface.co/BioVisionLab/run_v73h",
+  "created_at": "2026-08-24T20:38:20.000Z",
+  "updated_at": "2026-08-24T21:04:48.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "NSM",
+    "DeepSDF",
+    "TriplanarDecoder",
+    "SignedDistanceFunction",
+    "generativeAI",
+    "3D",
+    "lizard",
+    "vertebrae",
+    "squamate",
+    "reptile",
+    "museum",
+    "en",
+    "dataset:BioVisionLab/vertebrae_meshes_v72",
+    "base_model:BioVisionLab/run_v72",
+    "base_model:finetune:BioVisionLab/run_v72",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 812496426,
+  "storage_human": "812 MB",
+  "base_model": "BioVisionLab/run_v72",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jeyji1949/bioVisionLAB: A Python-based vision laboratory for ...",
+      "url": "https://github.com/jeyji1949/bioVisionLAB",
+      "snippet": "A Python-based vision laboratory for biological image analysis and computer vision research. Provides tools for processing, analyzing, and visualizing biomedical imagery. - jeyji1949/bioVisionLAB"
+    },
+    {
+      "title": "GitHub - lynx009/biovision-lab: AI-powered Biomedical Vision ...",
+      "url": "https://github.com/lynx009/biovision-lab",
+      "snippet": "🧠 AI-powered Biomedical Vision Laboratory. Detection, segmentation, and diagnostic analysis for multi-species medical imaging. - lynx009/biovision-lab"
+    },
+    {
+      "title": "BioVision Lab",
+      "url": "https://www.biovisionlab.com/",
+      "snippet": "Skip to main content Skip to navigation"
+    },
+    {
+      "title": "Can I Run This LLM? AI Model Hardware Checker | llmrun",
+      "url": "https://llmrun.dev/",
+      "snippet": "Can I Run LLM Model Locally? Find out which AI models your machine can actually run. Check GPU compatibility, VRAM requirements, and expected performance."
+    },
+    {
+      "title": "Runway AI · Image and Video Generator",
+      "url": "https://runway-ai.app/",
+      "snippet": "Generate images and video with AI. Text to video, image to video, plus more. Runway&#x27;s AI image and video generation tools trusted by millions worldwide"
+    }
+  ]
+}

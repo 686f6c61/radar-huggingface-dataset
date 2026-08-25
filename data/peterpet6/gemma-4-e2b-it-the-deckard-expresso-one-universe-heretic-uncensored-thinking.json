@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "Peterpet6/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking",
+  "slug": "peterpet6-gemma-4-e2b-it-the-deckard-expresso-one-universe-heretic-uncensored-thinking",
+  "author": "Peterpet6",
+  "url": "https://huggingface.co/Peterpet6/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking",
+  "created_at": "2026-08-25T01:47:38.000Z",
+  "updated_at": "2026-08-25T01:47:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "aliterated",
+    "finetune",
+    "unsloth",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "any-to-any",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791512,
+  "storage_human": "10.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED ...",
+      "url": "https://huggingface.co/DavidAU/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC ...",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking-GGUF/tree/main",
+      "snippet": "/ gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking-GGUF like 1 Transformers GGUF English heretic uncensored aliterated finetune unsloth all use cases coder creative creative writing fiction writing plot generation sub-plot generation story generation scene continue storytelling fiction story science fiction romance ..."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://knowyourmodel.ai/models/huggingface%3Amradermacher%2Fgemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking-GGUF",
+      "snippet": "View entity details and skills Home Models Huggingface%3Amradermacher%2Fgemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking-GGUF Entities ..."
+    },
+    {
+      "title": "gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED ...",
+      "url": "https://www.toolify.ai/ai-model/davidau-gemma-4-e4b-it-the-deckard-expresso-universe-heretic-uncensored-thinking-gguf",
+      "snippet": "EXTREME POWER: This model exceeds Gemma 4 26-A4B in critical benchmarks, at only 4.5B activated parameters. gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking - GGUF 16 bit precision fine tune of Gemma 4 \"E4B\" (an 8B parameter model - see below) Heretic/Uncensored using \"The Deckard\" in house datasets [5] via Unsloth using SUPER STRONG/ MUCH DEEPER tuning methods (but ..."
+    }
+  ]
+}

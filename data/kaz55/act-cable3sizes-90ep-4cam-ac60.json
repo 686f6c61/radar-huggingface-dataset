@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-cable3sizes-90ep-4cam-ac60",
+  "slug": "kaz55-act-cable3sizes-90ep-4cam-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-cable3sizes-90ep-4cam-ac60",
+  "created_at": "2026-08-24T22:35:55.000Z",
+  "updated_at": "2026-08-24T22:36:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Kaz55/dg5f_ur5e_cable3sizes_90ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaz55/act-newcable-combined-4cam-chunk90 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcable-combined-4cam-chunk90",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kaz55/act-newcable-combined-4cam-chunk90 at main - Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcable-combined-4cam-chunk90/tree/main",
+      "snippet": "Kaz55 / act-newcable-combined-4cam-chunk90 like 0 Robotics LeRobot Safetensors Kaz55/dg5f_ur5e_newcable_combined act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "PDF Cisco Quad Camera, Precision 60, SpeakerTrack 60, PTZ-12, PTZ 4K, and ...",
+      "url": "https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/camera/precisionhd/user_guide/cisco-conferencing-camera-guide.pdf",
+      "snippet": "This guide describes the Quad Camera, Precision 60, SpeakerTrack 60, PTZ-12, PTZ 4K, and Room Vision PTZ Camera."
+    },
+    {
+      "title": "Kaz55/act-newcablev3-4cam · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcablev3-4cam",
+      "snippet": "Instructions to use Kaz55/act-newcablev3-4cam with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kaz55/act-newcablev3-4cam with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "Kaz55/act-newcable-combined-4cam-chunk30 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/act-newcable-combined-4cam-chunk30",
+      "snippet": "Instructions to use Kaz55/act-newcable-combined-4cam-chunk30 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kaz55/act-newcable-combined-4cam-chunk30 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    }
+  ]
+}

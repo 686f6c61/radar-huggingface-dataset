@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "waqasm86/kaggle-vllm-models",
+  "slug": "waqasm86-kaggle-vllm-models",
+  "author": "waqasm86",
+  "url": "https://huggingface.co/waqasm86/kaggle-vllm-models",
+  "created_at": "2026-08-24T17:53:14.000Z",
+  "updated_at": "2026-08-25T00:12:18.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen2",
+    "qwen2.5",
+    "sharded-state",
+    "tensor-parallel",
+    "kaggle",
+    "tesla-t4",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6172262512,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waqasm86/vllm-kaggle-binaries · Hugging Face",
+      "url": "https://huggingface.co/waqasm86/vllm-kaggle-binaries",
+      "snippet": "vLLM Kaggle validated binaries This repository distributes a vLLM wheel built and functionally validated on a Kaggle Notebook with two NVIDIA Tesla T4 (SM75) GPUs."
+    },
+    {
+      "title": "waqasm86 - GitHub",
+      "url": "https://github.com/waqasm86",
+      "snippet": "My name is Mohammad Waqas, and I am a systems engineer focused on GPU-accelerated LLM inference, observability, and local-first AI infrastructure. I build practical tooling around CUDA, llama.cpp, OpenTelemetry, distributed computing, and low-VRAM deployment."
+    },
+    {
+      "title": "vLLM wheels | Kaggle",
+      "url": "https://www.kaggle.com/datasets/kawchar85/vllm-wheels/data",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "waqasm86 (Mohammad Waqas) - Hugging Face",
+      "url": "https://huggingface.co/waqasm86",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 18 hours ago ... published a model about 18 hours ago"
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

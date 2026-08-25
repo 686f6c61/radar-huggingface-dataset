@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cagedBirdy/needle_insertion_xyzi_dp3_2048",
+  "slug": "cagedbirdy-needle_insertion_xyzi_dp3_2048",
+  "author": "cagedBirdy",
+  "url": "https://huggingface.co/cagedBirdy/needle_insertion_xyzi_dp3_2048",
+  "created_at": "2026-08-24T19:23:11.000Z",
+  "updated_at": "2026-08-24T19:23:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:cagedBirdy/needle_insertion_xyzi_2048",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 251632003,
+  "parameters_human": "251.6M",
+  "storage_bytes": 1006553840,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cagedBirdy/cut_xyzi_dp3_128d_2048_xyjitter_intjitter · Hugging Face",
+      "url": "https://huggingface.co/cagedBirdy/cut_xyzi_dp3_128d_2048_xyjitter_intjitter",
+      "snippet": "Instructions to use cagedBirdy/cut_xyzi_dp3_128d_2048_xyjitter_intjitter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "cagedBirdy/needle_insertion_xyzi_2048 · Discussions",
+      "url": "https://huggingface.co/datasets/cagedBirdy/needle_insertion_xyzi_2048/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: 14MB foundation model for tiny devices ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle"
+    },
+    {
+      "title": "2048 AI by Zap - GitHub Pages",
+      "url": "https://ziap.github.io/2048-ai/",
+      "snippet": "Note: This is an AI solver for the game 2048, created by Zap. It&#x27;s a WASM module running Expectimax search with transposition caching and memory-bounded depth allocation. This project is open-source and available here."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hxgdzyuyi/qwen3-8b-steam-entity-linking",
+  "slug": "hxgdzyuyi-qwen3-8b-steam-entity-linking",
+  "author": "hxgdzyuyi",
+  "url": "https://huggingface.co/hxgdzyuyi/qwen3-8b-steam-entity-linking",
+  "created_at": "2026-08-25T03:00:09.000Z",
+  "updated_at": "2026-08-25T03:00:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "entity-linking",
+    "steam",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3667553915,
+  "storage_human": "3.7 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-embedding-8b",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    }
+  ]
+}

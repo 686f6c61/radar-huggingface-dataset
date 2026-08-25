@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AKKII2026/agenticv1",
+  "slug": "akkii2026-agenticv1",
+  "author": "AKKII2026",
+  "url": "https://huggingface.co/AKKII2026/agenticv1",
+  "created_at": "2026-08-24T22:20:02.000Z",
+  "updated_at": "2026-08-24T22:27:54.000Z",
+  "license": "bsl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:bsl-1.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4169800704,
+  "parameters_human": "4.17B",
+  "storage_bytes": 2574807986,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2601.12560] Agentic Artificial Intelligence (AI): Architectures ...",
+      "url": "https://arxiv.org/abs/2601.12560",
+      "snippet": "Abstract page for arXiv paper 2601.12560: Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents"
+    },
+    {
+      "title": "Official gateway and model catalog for Agnes AI. - GitHub",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Official gateway and model catalog for Agnes AI. Agnes AI gives developers OpenAI-compatible access to multimodal models for text, image, video, and agent workflows through a unified API gateway."
+    },
+    {
+      "title": "PDF Model Ai Governance Framework for Agentic Ai",
+      "url": "https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf",
+      "snippet": "The Model AI Governance Framework (MGF) for Agentic AI gives organisations a structured overview of the risks of agentic AI and emerging best practices in managing these risks."
+    },
+    {
+      "title": "7 Agentic AI Trends to Watch in 2026 - Machine Learning Mastery",
+      "url": "https://machinelearningmastery.com/7-agentic-ai-trends-to-watch-in-2026/",
+      "snippet": "Discover the seven emerging trends reshaping agentic AI in 2026, from multi-agent orchestration to production scaling challenges."
+    },
+    {
+      "title": "Agentic AI and Model Context Protocol (MCP): Architecture Guide 2026",
+      "url": "https://neuralcoretech.com/agentic-ai-model-context-protocol-mcp-architecture-2026/",
+      "snippet": "Agentic AI and Model Context Protocol (MCP): Architecture Guide 2026 How the Model Context Protocol (MCP) is becoming the universal infrastructure layer for agentic AI—unlocking autonomous workflows, multi-agent systems, and real-world tool integration at scale."
+    }
+  ]
+}

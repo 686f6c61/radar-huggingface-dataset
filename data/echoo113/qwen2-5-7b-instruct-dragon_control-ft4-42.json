@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen2.5-7B-Instruct-dragon_control-ft4.42",
+  "slug": "echoo113-qwen2-5-7b-instruct-dragon_control-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_control-ft4.42",
+  "created_at": "2026-08-25T02:22:34.000Z",
+  "updated_at": "2026-08-25T03:14:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173012633,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.43 - Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.43",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Echoo113/Qwen2.5-7B-Instruct-dragon_prompted-ft4.44 at main",
+      "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_prompted-ft4.44/tree/main",
+      "snippet": "Instructions to use Echoo113/Qwen2.5-7B-Instruct-dragon_prompted-ft4.44 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5 7B Instruct - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen2-5-7b-instruct",
+      "snippet": "Apache-2.0-licensed 7B model with surprisingly strong reasoning and multilingual chops. Qwen 2.5 trains on a larger and more carefully filtered corpus than the original Qwen series, and the 7B variant punches well above its weight on coding and math benchmarks. A strong default for cost-sensitive chat workloads and for fine-tuning experiments where the Apache licence simplifies downstream ..."
+    },
+    {
+      "title": "How to Run Qwen2.5-Coder 7B Locally — Setup Guide (August 2026)",
+      "url": "https://turbollm.dev/models/qwen2.5-coder-7b",
+      "snippet": "Step-by-step: run Qwen2.5-Coder 7B on your own GPU with TurboLLM. Exact VRAM fit per tier, the one-command setup, and real measured tokens/sec — not a guess."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct",
+      "snippet": "Qwen2.5-7B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our ..."
+    }
+  ]
+}

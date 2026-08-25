@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "s1ghhh/labxarm0822_stack_bowl_50hz_vanilla_chunk50_bs32x1_10k",
+  "slug": "s1ghhh-labxarm0822_stack_bowl_50hz_vanilla_chunk50_bs32x1_10k",
+  "author": "s1ghhh",
+  "url": "https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_50hz_vanilla_chunk50_bs32x1_10k",
+  "created_at": "2026-08-23T18:41:46.000Z",
+  "updated_at": "2026-08-24T20:50:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7174311273,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/questions",
+      "snippet": "Stack Overflow | The World&#x27;s Largest Online Community for Developers"
+    },
+    {
+      "title": "s1ghhh (Guoheng Sun) - Hugging Face",
+      "url": "https://huggingface.co/s1ghhh/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 29 days ago ... updated a model about 1 month ago ... published a model about 1 month ago"
+    }
+  ]
+}

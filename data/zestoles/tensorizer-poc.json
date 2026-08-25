@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zestoles/tensorizer-poc",
+  "slug": "zestoles-tensorizer-poc",
+  "author": "zestoles",
+  "url": "https://huggingface.co/zestoles/tensorizer-poc",
+  "created_at": "2026-08-24T22:59:51.000Z",
+  "updated_at": "2026-08-24T23:03:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94,
+  "storage_human": "94 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "currentlyawey/tensorizer-alloc-bomb-poc · Hugging Face",
+      "url": "https://huggingface.co/currentlyawey/tensorizer-alloc-bomb-poc",
+      "snippet": "Tensorizer allocation-bomb PoC (coordinated disclosure) Security-research proof-of-concept for a denial-of-service (uncontrolled memory allocation, CWE-789 / CWE-400) in CoreWeave tensorizer &#x27;s .tensors deserializer. evil.tensors is a 262 KB file that declares a ~4.4 TB tensor."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=tensorizer",
+      "snippet": "Models 9 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: tensorizer Clear all"
+    },
+    {
+      "title": "GitHub - coreweave/tensorizer: Module, Model, and Tensor Serialization ...",
+      "url": "https://github.com/coreweave/tensorizer",
+      "snippet": "Rationale CoreWeave and our customers use KNative to deploy models as serverless functions. How long a model takes to load is a major factor in the latency of KNative scale-up. tensorizer is a tool to serialize models and their associated tensors into a single file that can be loaded quickly and efficiently off an HTTP/HTTPS or S3 endpoint."
+    },
+    {
+      "title": "vllm/docs/models/extensions/tensorizer.md at main - GitHub",
+      "url": "https://github.com/vllm-project/vllm/blob/main/docs/models/extensions/tensorizer.md",
+      "snippet": "vLLM supports loading models with CoreWeave&#x27;s Tensorizer. vLLM model tensors that have been serialized to disk, an HTTP/HTTPS endpoint, or S3 endpoint can be deserialized at runtime extremely quickly directly to the GPU, resulting in significantly shorter Pod startup times and CPU memory usage. Tensor encryption is also supported. vLLM fully integrates Tensorizer in to its model loading ..."
+    },
+    {
+      "title": "AI Proof of Concept (PoC) Guide: From Strategy to Go/No-Go | SmartDev",
+      "url": "https://smartdev.com/the-ultimate-guide-to-ai-proof-of-concept-poc-from-strategy-to-implementation/",
+      "snippet": "A complete guide to AI Proof of Concept (PoC): business case, readiness checklist, stage-gated framework, and how to decide go, iterate, or stop."
+    }
+  ]
+}

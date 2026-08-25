@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "YourLocalWorm/MarvelModels",
+  "slug": "yourlocalworm-marvelmodels",
+  "author": "YourLocalWorm",
+  "url": "https://huggingface.co/YourLocalWorm/MarvelModels",
+  "created_at": "2026-08-24T22:18:50.000Z",
+  "updated_at": "2026-08-24T22:22:22.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1461882088,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YourLocalWorm (Your_Local_Worm) - Hugging Face",
+      "url": "https://huggingface.co/YourLocalWorm/models",
+      "snippet": "Ai voice models updated a model 12 days ago updated a model 16 days ago"
+    },
+    {
+      "title": "YourLocalWorm/Mariomodels · Hugging Face",
+      "url": "https://huggingface.co/YourLocalWorm/Mariomodels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "marvel AI Models | Civitai",
+      "url": "https://civitai.com/tag/marvel",
+      "snippet": "Browse 2,482 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with marvel."
+    },
+    {
+      "title": "Venom (Marvel Rivals, RMVPE) 255 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1HXeiKyUXB8",
+      "snippet": "Venom (Marvel Rivals, RMVPE) 255 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

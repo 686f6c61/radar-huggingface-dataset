@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "zrlu/SuperQwen3.8-27b-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70",
+  "slug": "zrlu-superqwen3-8-27b-abliterated-gptq-int4-sym-g128-mtp-bf16-b70",
+  "author": "zrlu",
+  "url": "https://huggingface.co/zrlu/SuperQwen3.8-27b-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70",
+  "created_at": "2026-08-24T21:29:18.000Z",
+  "updated_at": "2026-08-24T21:35:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "abliterated",
+    "supertune",
+    "gptq",
+    "int4",
+    "vllm",
+    "xpu",
+    "intel-arc",
+    "arc-pro-b70",
+    "quantization",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Jiunsong/SuperQwen3.8-27b-abliterated",
+    "base_model:quantized:Jiunsong/SuperQwen3.8-27b-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19579440325,
+  "storage_human": "19.6 GB",
+  "base_model": "Jiunsong/SuperQwen3.8-27b-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "Quantized Models for Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16 ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+      "snippet": "Explore machine learning models. verkiki/Qwen-3.8-27b-Fable5-Distill-Abliterated-Imatrix-GGUF"
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    }
+  ]
+}

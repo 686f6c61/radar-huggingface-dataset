@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "aisingapore/SEA-LION-ModernBERT-600M-checkpoints",
+  "slug": "aisingapore-sea-lion-modernbert-600m-checkpoints",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints",
+  "created_at": "2026-02-26T23:39:12.000Z",
+  "updated_at": "2026-08-25T00:47:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "su",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "id",
+    "jv",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "su",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh",
+    "arxiv:2508.12243",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46725525237,
+  "storage_human": "46.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/SEA-LION-ModernBERT-Embedding-600M · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+      "snippet": "Model Details Model Description The SEA-LION-ModernBERT-Embedding-600M model is built on the ModernBERT-large architecture and has a vocabulary size of 262K. For tokenization, the model employs our custom Gemma 3 tokenizer, which is specially tailored for SEA languages, ensuring optimal model performance. Developed by: AI Products Pillar, AI ..."
+    },
+    {
+      "title": "aisingapore/SEA-LION-ModernBERT-600M · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SEA-LION-ModernBERT and Embedding | SEA-LION Documentation",
+      "url": "https://docs.sea-lion.ai/models/sea-embedding/sea-modernbert",
+      "snippet": "The SEA-LION-ModernBERT-based models are built on the ModernBERT architecture and has a vocabulary size of 262K. For tokenization, the model employs our custom Gemma3 tokenizer, which has excellent performance for SEA languages, ensuring optimal model performance."
+    },
+    {
+      "title": "sealion/models/sea-embedding/sea-modernbert.md at main · aisingapore ...",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-embedding/sea-modernbert.md",
+      "snippet": "SEA-LION-ModernBERT-300M/600M checkpoints and Embedding Last update: 2026-03-16 SEA-LION is a collection of Large Language Models (LLMs) and encoders which have been pretrained and fine-tuned for the Southeast Asia (SEA) region."
+    },
+    {
+      "title": "SEA-LION-ModernBERT-600M huggingface.co api & aisingapore SEA-LION ...",
+      "url": "https://www.toolify.ai/ai-model/aisingapore-sea-lion-modernbert-600m",
+      "snippet": "SEA-LION-ModernBERT-600M huggingface.co is an AI model on huggingface.co that provides SEA-LION-ModernBERT-600M&#x27;s model effect (), which can be used instantly with this aisingapore SEA-LION-ModernBERT-600M model. huggingface.co supports a free trial of the SEA-LION-ModernBERT-600M model, and also provides paid use of the SEA-LION-ModernBERT-600M. Support call SEA-LION-ModernBERT-600M model ..."
+    }
+  ]
+}

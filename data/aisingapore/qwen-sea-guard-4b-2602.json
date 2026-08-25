@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Qwen-SEA-Guard-4B-2602",
+  "slug": "aisingapore-qwen-sea-guard-4b-2602",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-2602",
+  "created_at": "2025-11-28T04:13:55.000Z",
+  "updated_at": "2026-08-25T00:46:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "arxiv:2602.01618",
+    "arxiv:2512.05501",
+    "base_model:aisingapore/Qwen-SEA-LION-v4-4B-VL",
+    "base_model:finetune:aisingapore/Qwen-SEA-LION-v4-4B-VL",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 569856,
+  "parameters_human": "569856",
+  "storage_bytes": 58045669689,
+  "storage_human": "58.0 GB",
+  "base_model": "aisingapore/Qwen-SEA-LION-v4-4B-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Qwen-SEA-Guard-4B-2602 · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-2602",
+      "snippet": "Model Card for Qwen-SEA-Guard-4B-2602 Last updated: 2026-02-04 SEA-Guard is a collection of safety-focused Large Language Models (LLMs) built upon the SEA-LION family, designed specifically for the Southeast Asia (SEA) region. Model Details Model Description SEA-LION stands for Southeast Asian Languages In One Network and is a collection of Large Language Models (LLMs) which have been ..."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-Guard-4B-2602 at main - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-2602/tree/main",
+      "snippet": "like 2 Follow AI Singapore 309 Image-to-Text Transformers Safetensors qwen3_vl llama-factory full Generated from Trainer arxiv:2602.01618 arxiv:2512.05501 License:other Model card FilesFiles and versions xet Community Deploy Use this model main Qwen-SEA-Guard-4B-2602 66.9 GB 4 contributors History:48 commits Jian-Gang Update README.md 69855c5 ..."
+    },
+    {
+      "title": "SEA-GUARD | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-guard",
+      "snippet": "SEA-Guard, released on 4 Feb 2026, is our premier suite of safety and moderation models tailored for the Southeast Asian landscape. This collection focuses on robust visual and textual guardrails, ensuring AI deployments remain secure and culturally compliant across the region."
+    },
+    {
+      "title": "Qwen Sea Guard 4b 2602 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen-sea-guard-4b-2602.html",
+      "snippet": "Download Qwen Sea Guard 4b 2602 GGUF model. 4.0 GB, 647 downloads, 0 likes."
+    },
+    {
+      "title": "SEA-Guard: Culturally Grounded Multilingual Safeguard for Southeast Asia",
+      "url": "https://arxiv.org/html/2602.01618v1",
+      "snippet": "On this foundation, we introduce the SEA-Guard family, the first multilingual safeguard models grounded in SEA cultural contexts. Evaluated across multiple benchmarks and cultural variants, SEA-Guard consistently outperforms existing safeguards at detecting regionally sensitive or harmful content while maintaining strong general safety performance."
+    }
+  ]
+}

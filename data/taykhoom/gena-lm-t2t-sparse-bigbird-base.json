@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/GENA-LM-t2t-sparse-bigbird-base",
+  "slug": "taykhoom-gena-lm-t2t-sparse-bigbird-base",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/GENA-LM-t2t-sparse-bigbird-base",
+  "created_at": "2026-08-25T01:15:32.000Z",
+  "updated_at": "2026-08-25T01:20:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "genalm",
+    "fill-mask",
+    "biology",
+    "DNA",
+    "language-model",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113994752,
+  "parameters_human": "114.0M",
+  "storage_bytes": 458363464,
+  "storage_human": "458 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIRI-Institute/gena-lm-bigbird-base-sparse · Hugging Face",
+      "url": "https://huggingface.co/AIRI-Institute/gena-lm-bigbird-base-sparse",
+      "snippet": "Model description GENA-LM (gena-lm-bigbird-base-sparse) model is trained in a masked language model (MLM) fashion, following the methods proposed in the BigBird paper by masking 15% of tokens."
+    },
+    {
+      "title": "AIRI-Institute/gena-lm-bigbird-base-sparse-t2t · Hugging Face",
+      "url": "https://huggingface.co/AIRI-Institute/gena-lm-bigbird-base-sparse-t2t",
+      "snippet": "Model description GENA-LM (gena-lm-bigbird-base-sparse-t2t) model is trained in a masked language model (MLM) fashion, following the methods proposed in the BigBird paper by masking 15% of tokens. Model config for gena-lm-bigbird-base-sparse-t2t is similar to the google/bigbird-roberta-base: 4096 Maximum sequence length 12 Layers, 12 Attention ..."
+    },
+    {
+      "title": "GENA_LM/README.md at main · AIRI-Institute/GENA_LM · GitHub",
+      "url": "https://github.com/AIRI-Institute/GENA_LM/blob/main/README.md?plain=1",
+      "snippet": "GENA-LM is a transformer masked language model trained on human DNA sequence. - GENA_LM/README.md at main · AIRI-Institute/GENA_LM"
+    },
+    {
+      "title": "AIRI-Institute/gena-lm-bigbird-base-sparse - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/160984",
+      "snippet": "Model description GENA-LM (gena-lm-bigbird-base-sparse) model is trained in a masked language model (MLM) fashion, following the methods proposed in the BigBird paper by masking 15% of tokens. Model config for gena-lm-bigbird-base-sparse is similar to the google/bigbird-roberta-base: 4096 Maximum sequence length 12 Layers, 12 Attention heads"
+    },
+    {
+      "title": "AIRI-Institute/gena-lm-bigbird-base-sparse - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/airi-institute-gena-lm-bigbird-base-sparse",
+      "snippet": "AIRI-Institute gena-lm-bigbird-base-sparse online free gena-lm-bigbird-base-sparse huggingface.co is an online trial and call api platform, which integrates gena-lm-bigbird-base-sparse&#x27;s modeling effects, including api services, and provides a free online trial of gena-lm-bigbird-base-sparse, you can try gena-lm-bigbird-base-sparse online for free by clicking the link below."
+    }
+  ]
+}

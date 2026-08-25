@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "pablo-moreira/puzzle-piece-detection",
+  "slug": "pablo-moreira-puzzle-piece-detection",
+  "author": "pablo-moreira",
+  "url": "https://huggingface.co/pablo-moreira/puzzle-piece-detection",
+  "created_at": "2026-08-15T19:25:52.000Z",
+  "updated_at": "2026-08-25T01:04:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "detr",
+    "object-detection",
+    "puzzle",
+    "jigsaw-puzzle",
+    "detr-resnet-50",
+    "computer-vision",
+    "custom-model",
+    "en",
+    "pt",
+    "dataset:pablo-moreira/puzzle-map",
+    "base_model:facebook/detr-resnet-50",
+    "base_model:finetune:facebook/detr-resnet-50",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 41607878,
+  "parameters_human": "41.6M",
+  "storage_bytes": 832474120,
+  "storage_human": "832 MB",
+  "base_model": "facebook/detr-resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Puzzle Piece Detection Object Detection Dataset and Pre-Trained Model ...",
+      "url": "https://universe.roboflow.com/puzzle-piece-detection/puzzle-piece-detection-ee47r",
+      "snippet": "504 open source puzzle-pieces images plus a pre-trained Puzzle Piece Detection model and API. Created by Puzzle Piece Detection"
+    },
+    {
+      "title": "GitHub - BertilBraun/Jigsaw-Puzzle-Solver: Python and Flask-based ...",
+      "url": "https://github.com/BertilBraun/Jigsaw-Puzzle-Solver",
+      "snippet": "The Jigsaw Puzzle Solver is a tool for automatically determining the correct placement of jigsaw puzzle pieces using image processing and computer vision. This tool is implemented in Python, utilizing the OpenCV library and the CLIP model for image recognition. There are two main components: a command-line solver and a web interface provided via Flask."
+    },
+    {
+      "title": "openmpf_puzzle_piece_detection/README.md at main - GitHub",
+      "url": "https://github.com/pwablito/openmpf_puzzle_piece_detection/blob/main/README.md",
+      "snippet": "OpenMPF Puzzle Piece Detection OpenMPF component for detecting edge and regular puzzle pieces using a fine-tuned YOLOv11 model"
+    },
+    {
+      "title": "Puzzle pieces detection Object Detection Model by Petro Telishevskyi",
+      "url": "https://universe.roboflow.com/petro-telishevskyi-ewaoc/puzzle-pieces-detection",
+      "snippet": "513 open source puzzle-pieces images plus a pre-trained Puzzle pieces detection model and API. Created by Petro Telishevskyi"
+    },
+    {
+      "title": "Jigsaw Puzzle Solver - Worcester Polytechnic Institute",
+      "url": "https://digital.wpi.edu/downloads/9593tz483",
+      "snippet": "Puzzle piece matching presents a task for AI, made possible through applying Computer Vision. The implicit way humans analyze puzzles would be mimicked and broken down into three separate types of information: piece edges, internal features, and color."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BarraHome/gemma-4-31B-it-assistant-FP8-dynamic",
+  "slug": "barrahome-gemma-4-31b-it-assistant-fp8-dynamic",
+  "author": "BarraHome",
+  "url": "https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-dynamic",
+  "created_at": "2026-08-24T22:14:10.000Z",
+  "updated_at": "2026-08-24T22:14:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_assistant",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "speculative-decoding",
+    "mtp",
+    "gemma4",
+    "any-to-any",
+    "base_model:google/gemma-4-31B-it-assistant",
+    "base_model:quantized:google/gemma-4-31B-it-assistant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 469518596,
+  "parameters_human": "469.5M",
+  "storage_bytes": 770392280,
+  "storage_human": "770 MB",
+  "base_model": "google/gemma-4-31B-it-assistant",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B-it-assistant · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-assistant",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "gemma-4-31B-it-assistant — google | osFoundry",
+      "url": "https://osfoundry.io/community/models/google-gemma-4-31b-it-assistant",
+      "snippet": "gemma-4-31B-it-assistant is a 31 billion parameter chat model from google, released April 23, 2026. gemma-4-31B-it-assistant is an open-weights chat model with roughly 31 billion parameters."
+    },
+    {
+      "title": "Gemma 4 31B It Assistant - inferbase.ai",
+      "url": "https://inferbase.ai/models/google-gemma-4-31b-it-assistant",
+      "snippet": "Gemma 4 31B It Assistant by Google, 262K context, text, image, audio input. Compare specs and benchmarks with alternative models."
+    },
+    {
+      "title": "Gemma 4 31B It Assistant by google — VRAM 0.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/google%2Fgemma-4-31B-it-assistant,6WVb6NxbBcNEtyOrYfpum2",
+      "snippet": "Gemma 4 31B It Assistant Parameters and Internals ... Rank the Gemma 4 31B It Assistant capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

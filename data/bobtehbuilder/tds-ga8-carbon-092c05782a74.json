@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-092c05782a74",
+  "slug": "bobtehbuilder-tds-ga8-carbon-092c05782a74",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-092c05782a74",
+  "created_at": "2026-08-25T00:11:52.000Z",
+  "updated_at": "2026-08-25T00:11:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-9fc82fc7f449 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9fc82fc7f449",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-f5ad34f6f655 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 22f3001797/tds-ga8",
+      "url": "https://github.com/22f3001797/tds-ga8",
+      "snippet": "Contribute to 22f3001797/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - llEclipsell/tds-ga8",
+      "url": "https://github.com/llEclipsell/tds-ga8",
+      "snippet": "Contribute to llEclipsell/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "GA8 Airvan TC320 (3D printing) files - 3D CAD Model Library | GrabCAD",
+      "url": "https://grabcad.com/library/ga8-airvan-tc320-3d-printing-1/files",
+      "snippet": "Alex Borgas May 10th, 2019 Files (15) Likes (6) GA8 Airvan TC320 (3D printing) GA8 Airvan TC320 (3D printing) / MVIMG_20210102_181700.jpg jpg January 2nd, 2021"
+    }
+  ]
+}

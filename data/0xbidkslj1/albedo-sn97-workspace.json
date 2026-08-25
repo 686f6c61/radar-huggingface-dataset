@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "0xbidkslj1/albedo-sn97-workspace",
+  "slug": "0xbidkslj1-albedo-sn97-workspace",
+  "author": "0xbidkslj1",
+  "url": "https://huggingface.co/0xbidkslj1/albedo-sn97-workspace",
+  "created_at": "2026-08-25T00:47:03.000Z",
+  "updated_at": "2026-08-25T00:52:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70788181715,
+  "storage_human": "70.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Albedo (SN97) — Model Distillation Network | Bittensor.ai",
+      "url": "https://bittensor.ai/subnets/97",
+      "snippet": "Competitive model distillation on Bittensor. Miners train small language models under a 25-axis evaluation framework. Winner earns 100% subnet emissions."
+    },
+    {
+      "title": "Albedo - Bittensor India",
+      "url": "https://bittensor.co.in/subnet/097/",
+      "snippet": "Albedo is a subnet dedicated to competitive AI model distillation. Miners try to compress a giant teacher model into a much smaller one, keeping its answers as close as possible to the original. Validators compare each model&#x27;s response distribution against the teacher&#x27;s and assign a score. Only the miner with the most faithful model wins, taking the entire Subnet&#x27;s emissions for that day."
+    },
+    {
+      "title": "albedo/docs/SCORING.md at main · unarbos/albedo · GitHub",
+      "url": "https://github.com/unarbos/albedo/blob/main/docs/SCORING.md",
+      "snippet": "Reference trajectory — a SOTA model (ALBEDO_JUDGE_SOTA_MODELS) runs the same task through the same simulated-observation loop the candidates face, for ALBEDO_JUDGE_SOTA_TRAJECTORY_TURNS (8) turns. Checklist generation — the evaluator model (ALBEDO_JUDGE_EVALUATOR_MODEL) writes ALBEDO_JUDGE_NUM_QUESTIONS (50) yes/no questions anchored on that reference trajectory. Judging — each judge ..."
+    },
+    {
+      "title": "ALBEDO_SN97_EV_RESEARCH.md - GitHub",
+      "url": "https://github.com/jtdoherty/bittensor-research/blob/main/research/subnet-97-albedo/ALBEDO_SN97_EV_RESEARCH.md",
+      "snippet": "A weak/ buggy model = dead hotkey; you must re-register a new hotkey (another ~$224) to retry. Failure penalties: COPY (SHA256 dup / activation-fingerprint cosine ≥0.99999), REMOVED (model pulled from HF), or INVALID architecture → composite.worst = 0, $0, disqualified."
+    },
+    {
+      "title": "Albedo Subnet Implements Scoring System Updates · SN97 | SubnetRadar",
+      "url": "https://subnetradar.com/subnet-news/97/2026-08-22",
+      "snippet": "Albedo (SN97) updated its model evaluation framework to rebalance scoring weights, introduce heuristic checks, and set Genesis as the new benchmark. Code changes are deployed on the dev branch with validator restart confirmed at block 8896210."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shero448/kaede",
+  "slug": "shero448-kaede",
+  "author": "Shero448",
+  "url": "https://huggingface.co/Shero448/kaede",
+  "created_at": "2026-08-25T01:43:14.000Z",
+  "updated_at": "2026-08-25T01:43:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:John6666/prefect-illustrious-xl-v15-sdxl",
+    "base_model:adapter:John6666/prefect-illustrious-xl-v15-sdxl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230912366,
+  "storage_human": "231 MB",
+  "base_model": "John6666/prefect-illustrious-xl-v15-sdxl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shero448/kanae · Hugging Face",
+      "url": "https://huggingface.co/Shero448/kanae",
+      "snippet": "Shero448 / kanae like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions Community Use this model Edit model card knae Trigger words Download model"
+    },
+    {
+      "title": "Shero448/kanae_illu_new_version · Hugging Face",
+      "url": "https://huggingface.co/Shero448/kanae_illu_new_version",
+      "snippet": "Instructions to use Shero448/kanae_illu_new_version with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Shero448/kanae_illu_new_version with Diffusers:"
+    },
+    {
+      "title": "kaede - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1856408978258204692",
+      "snippet": "Generate stunning original character anime art with the &#x27;kaede&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "kaede - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1876883069614658849",
+      "snippet": "Generate stunning anime art with the &#x27;kaede&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Kawaii Goddess: Kaede - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ca5a2b6fc4d4358a886b408f231f5e4b",
+      "snippet": "Explore Kawaii Goddess: Kaede model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

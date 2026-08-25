@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Chaenn/smolvla_policy_so101_cube_multitask_realsim_0824",
+  "slug": "chaenn-smolvla_policy_so101_cube_multitask_realsim_0824",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_realsim_0824",
+  "created_at": "2026-08-24T22:54:25.000Z",
+  "updated_at": "2026-08-24T22:54:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Chaenn/so101_cube_multitask_real_sim_0824",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720064,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaenn/smolvla_policy_so101_cube_multitask_real_0820 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_real_0820",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "Chaenn/smolvla_policy_so101_cube_multitask_0723 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_0723",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "lerobot-SO101/docs/source/policy_smolvla_README.md at main - GitHub",
+      "url": "https://github.com/Adrian7210/lerobot-SO101/blob/main/docs/source/policy_smolvla_README.md",
+      "snippet": "Citation @article {shukor2025smolvla, title = {SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics}, author = {Shukor, Mustafa and Aubakirova, Dana and Capuano, Francesco and Kooijmans, Pepijn and Palma, Steven and Zouitine, Adil and Aractingi, Michel and Pascal, Caroline and Russi, Martino and Marafioti, Andres and Alibert, Simon and Cord, Matthieu and Wolf, Thomas ..."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "Context # For the past few months I&#x27;ve been exploring different algorithms for my SO-101 robot arm to do a pick-and-place task. Last time I trained SAC with HIL-SERL (Human-in-the-Loop Sample Efficient RL) on the real robot with a reward classifier and human interventions via the leader arm. After about 750 episodes of training, HIL-SERL achieved 80% success on reach-and-grasp. That&#x27;s good ..."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "Abstract Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically ..."
+    }
+  ]
+}

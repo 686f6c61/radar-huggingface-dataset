@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "simak31/tinyzero-countdown-19m",
+  "slug": "simak31-tinyzero-countdown-19m",
+  "author": "simak31",
+  "url": "https://huggingface.co/simak31/tinyzero-countdown-19m",
+  "created_at": "2026-08-24T20:20:43.000Z",
+  "updated_at": "2026-08-24T20:24:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "from-scratch",
+    "grpo",
+    "reinforcement-learning",
+    "arithmetic-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75565621,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Jiayi-Pan/TinyZero: Minimal reproduction of DeepSeek R1-Zero",
+      "url": "https://github.com/Jiayi-Pan/TinyZero",
+      "snippet": "Minimal reproduction of DeepSeek R1-Zero. Contribute to Jiayi-Pan/TinyZero development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - aeroabir/TinyZero",
+      "url": "https://github.com/aeroabir/TinyZero",
+      "snippet": "For the following code, if you see Out-of-vram, try add critic.model.enable_gradient_checkpointing=True to the script, and checkout the discussion here Single GPU Works for model <= 1.5B. For Qwen2.5-0.5B base, we know it fails to learn reasoning."
+    },
+    {
+      "title": "TinyZero Countdown Demo | Jiayi-Pan/TinyZero | DeepWiki",
+      "url": "https://deepwiki.com/Jiayi-Pan/TinyZero/7.1-tinyzero-countdown-demo",
+      "snippet": "This page provides a complete walkthrough of the TinyZero Countdown Demo, from data preparation to model evaluation. The Countdown Demo is the primary training workflow in TinyZero that demonstrates how reinforcement learning can develop reasoning abilities in language models. This task trains models to create mathematical equations that reach a target number using a provided set of numbers ..."
+    },
+    {
+      "title": "TinyZero最详细复现笔记（一） - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/1903191617571125117",
+      "snippet": "TinyZero项目页面中的思维链演示 Datasets (Countdown) TinyZero在Countdown任务上进行RL训练。 Countdown任务： 给定几个初始数和一个目标数，任务目标是用初始数进行四则运算以得到目标数，并输出四则运算的算式，要求每个初始数恰好使用一次。"
+    },
+    {
+      "title": "TinyZero-R1-Countdown Qilong Wu | TinyZero - Weights & Biases",
+      "url": "https://wandb.ai/alpha-rl/TinyZero/reports/TinyZero-R1-Countdown-Qilong-Wu--VmlldzoxMTExOTEzMA",
+      "snippet": "TinyZero-R1-Countdown Qilong Wu Reproduce R1 ~ RL boosts the reasoning ability of LLM and enable the &#x27;aha&#x27; moment testing in countdown task."
+    }
+  ]
+}

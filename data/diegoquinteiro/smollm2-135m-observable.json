@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "diegoquinteiro/SmolLM2-135M-Observable",
+  "slug": "diegoquinteiro-smollm2-135m-observable",
+  "author": "diegoquinteiro",
+  "url": "https://huggingface.co/diegoquinteiro/SmolLM2-135M-Observable",
+  "created_at": "2026-08-23T20:20:43.000Z",
+  "updated_at": "2026-08-24T22:35:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "text-generation",
+    "transformers.js",
+    "interpretability",
+    "attention",
+    "hidden-states",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 487,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 618570399,
+  "storage_human": "619 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diegoquinteiro/SmolLM2-135M-Observable · Hugging Face",
+      "url": "https://huggingface.co/diegoquinteiro/SmolLM2-135M-Observable",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning."
+    },
+    {
+      "title": "SmolLM2: When Smol Goes Big - arXiv.org",
+      "url": "https://arxiv.org/html/2502.02737v1",
+      "snippet": "We evaluate and compare the final base SmolLM2 model with existing state-of-the-art models of similar size, Qwen2.5-1.5B (Yang et al. 2024b) and Llama3.2-1B (AI@Meta 2024a), on a wide range of benchmarks."
+    },
+    {
+      "title": "SmolLM2 | huggingface/smollm | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/smollm/3-smollm2",
+      "snippet": "SmolLM2 Relevant source files SmolLM2 is a family of compact language models designed for on-device usage and efficiency-focused applications. This page covers the SmolLM2 model family, including the 135M, 360M, and 1.7B parameter variants, their training methodologies, and integration patterns within the broader SmolLM ecosystem."
+    }
+  ]
+}

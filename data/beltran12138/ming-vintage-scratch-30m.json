@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Beltran12138/ming-vintage-scratch-30m",
+  "slug": "beltran12138-ming-vintage-scratch-30m",
+  "author": "Beltran12138",
+  "url": "https://huggingface.co/Beltran12138/ming-vintage-scratch-30m",
+  "created_at": "2026-07-01T16:57:24.000Z",
+  "updated_at": "2026-08-25T01:55:42.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "lzh"
+  ],
+  "tags": [
+    "classical-chinese",
+    "wenyan",
+    "vintage-llm",
+    "from-scratch",
+    "nanogpt",
+    "historical-nlp",
+    "1424",
+    "ming-dynasty",
+    "text-generation",
+    "zh",
+    "lzh",
+    "dataset:kanripo",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358650970,
+  "storage_human": "359 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beltran12138/ming-vintage-scratch-30m · Hugging Face",
+      "url": "https://huggingface.co/Beltran12138/ming-vintage-scratch-30m",
+      "snippet": "The experiment: Can a LoRA adapter make a modern LLM \"vintage,\" or do you need to train from scratch to truly lock the world-model? The control arm: ming-vintage-qwen3b-lora — a LoRA fine-tuned on the same pre-1424 corpus, applied to Qwen2.5-3B-Instruct."
+    },
+    {
+      "title": "GitHub - Beltran12138/ming-vintage-scratch-30m: 29.74M param from ...",
+      "url": "https://github.com/Beltran12138/ming-vintage-scratch-30m",
+      "snippet": "The experiment: Can a LoRA adapter make a modern LLM \"vintage,\" or do you need to train from scratch to truly lock the world-model? The control arm: ming-vintage-qwen3b-lora — a LoRA fine-tuned on the same pre-1424 corpus, applied to Qwen2.5-3B-Instruct."
+    },
+    {
+      "title": "ming-vintage-scratch-30m/model.py at main · Beltran12138/ming ... - GitHub",
+      "url": "https://github.com/Beltran12138/ming-vintage-scratch-30m/blob/main/model.py",
+      "snippet": "330 lines (290 loc) · 16 KB main ming-vintage-scratch-30m / model.py Top Code Blame 330 lines (290 loc) · 16 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ..."
+    },
+    {
+      "title": "Beltran12138 (Bernard ZHAO) - Hugging Face",
+      "url": "https://huggingface.co/Beltran12138/models",
+      "snippet": "Organizations Beltran12138&#x27;s models1 Sort: Recently updated Beltran12138/ming-vintage-qwen3b-lora Text Generation •Updated about 11 hours ago"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

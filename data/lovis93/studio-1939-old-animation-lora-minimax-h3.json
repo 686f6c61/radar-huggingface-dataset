@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lovis93/studio-1939-old-animation-lora-minimax-h3",
+  "slug": "lovis93-studio-1939-old-animation-lora-minimax-h3",
+  "author": "lovis93",
+  "url": "https://huggingface.co/lovis93/studio-1939-old-animation-lora-minimax-h3",
+  "created_at": "2026-08-25T00:36:24.000Z",
+  "updated_at": "2026-08-25T00:37:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "video",
+    "text-to-video",
+    "animation",
+    "style",
+    "minimax-h3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 328674179,
+  "storage_human": "329 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building on these proprietary models, MiniMax has launched a suite of AI-native products worldwide, including MiniMax Code, MiniMax Design, MiniMax Audio, Talkie, and an open platform for enterprises and developers — delivering cutting-edge intelligent experiences to users around the globe."
+    },
+    {
+      "title": "Releasing STUDIO 1939, my hand-painted, golden-age animation LoRA for ...",
+      "url": "https://x.com/OdinLovis/status/2092052236566491215",
+      "snippet": "Releasing STUDIO 1939, my hand-painted, golden-age animation LoRA for minimax H3, open weight ! This 5-minute film? Every shot in it was generated in under 4 minutes total. Faster than it plays. The LoRA is available now. https://t.co/mIgrdYlqDD And the turbo H3 model https://t.co/8MylT6esyZ 💬0 🔄0 🤍1 📊22"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "MiniMax-H3 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/MiniMax/MiniMax-H3",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

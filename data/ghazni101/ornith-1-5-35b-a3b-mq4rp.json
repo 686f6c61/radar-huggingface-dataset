@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ghazni101/Ornith-1.5-35B-A3B-MQ4RP",
+  "slug": "ghazni101-ornith-1-5-35b-a3b-mq4rp",
+  "author": "ghazni101",
+  "url": "https://huggingface.co/ghazni101/Ornith-1.5-35B-A3B-MQ4RP",
+  "created_at": "2026-08-25T00:05:00.000Z",
+  "updated_at": "2026-08-25T00:18:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "hipfire",
+  "languages": [],
+  "tags": [
+    "hipfire",
+    "amd",
+    "rdna",
+    "quantized",
+    "4-bit",
+    "ornith",
+    "moe",
+    "mixture-of-experts",
+    "vision-language",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18778601728,
+  "storage_human": "18.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUs to leave headroom for the 256K context; adjust --tensor-parallel-size / --tp to match your hardware."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement. Ornith-1.5 extends Ornith-1.0 (which was developed on top of Qwen3.5 and Gemma4 with additional continued pretraining, mid-training, and post-training) by expanding the self-improvement loop from scaffold and rollout optimization to jointly ..."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    }
+  ]
+}

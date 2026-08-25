@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/RNA-MSM",
+  "slug": "taykhoom-rna-msm",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/RNA-MSM",
+  "created_at": "2026-05-28T21:37:32.000Z",
+  "updated_at": "2026-08-25T03:08:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rnamsm",
+    "fill-mask",
+    "RNA",
+    "language-model",
+    "MSA",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 95911180,
+  "parameters_human": "95.9M",
+  "storage_bytes": 383678288,
+  "storage_human": "384 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/RNA-MSM · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RNA-MSM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Taykhoom/RNA-MSM at main - Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/RNA-MSM/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RNA-MSM/README.md at master · yikunpku/RNA-MSM · GitHub",
+      "url": "https://github.com/yikunpku/RNA-MSM/blob/master/README.md",
+      "snippet": "The resulting RNA-MSM model produced attention maps and embeddings that have direct correlations to RNA secondary structure and solvent accessibility without supervised training. Further supervised training led to predicted secondary structure and solvent accessibility that are significantly more accurate than current state-of-the-art techniques."
+    },
+    {
+      "title": "RNA-MSM - MultiMolecule",
+      "url": "https://multimolecule.danling.org/models/rnamsm/",
+      "snippet": "RNA-MSM is a bert -style model. RNA-MSM follows the MSA architecture, where it uses a column-wise attention and a row-wise attention to reduce the computational complexity over conventional self-attention. RNA-MSM is pre-trained on a large corpus of non-coding RNA sequences with multiple sequence alignment (MSA) in a self-supervised fashion."
+    },
+    {
+      "title": "【Nucleic Acids Research 2024】 RNA-MSM - GitHub",
+      "url": "https://github.com/yikunpku/RNA-MSM",
+      "snippet": "Nucleic Acids Research 2024：RNA-MSM model is an unsupervised RNA language model based on multiple sequences that outputs both embedding and attention map to match different types of downstream tasks."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen2.5-7B-Instruct-immigration_mlpB-STEER0.64375-ft4.44",
+  "slug": "echoo113-qwen2-5-7b-instruct-immigration_mlpb-steer0-64375-ft4-44",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration_mlpB-STEER0.64375-ft4.44",
+  "created_at": "2026-08-24T22:06:50.000Z",
+  "updated_at": "2026-08-24T22:27:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334596953,
+  "storage_human": "335 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.44",
+      "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.44",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-immigration_prompted-ft4.43 - Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration_prompted-ft4.43",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 7B Instruct - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen2-5-7b-instruct",
+      "snippet": "Apache-2.0-licensed 7B model with surprisingly strong reasoning and multilingual chops. Qwen 2.5 trains on a larger and more carefully filtered corpus than the original Qwen series, and the 7B variant punches well above its weight on coding and math benchmarks. A strong default for cost-sensitive chat workloads and for fine-tuning experiments where the Apache licence simplifies downstream ..."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct: Model synced from source: Qwen/Qwen2.5-7B ...",
+      "url": "https://dev.modelhub.org.cn/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    }
+  ]
+}

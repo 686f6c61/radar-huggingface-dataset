@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Lucie666/bge-reranker-v2-m3-burnpack",
+  "slug": "lucie666-bge-reranker-v2-m3-burnpack",
+  "author": "Lucie666",
+  "url": "https://huggingface.co/Lucie666/bge-reranker-v2-m3-burnpack",
+  "created_at": "2026-08-24T21:00:40.000Z",
+  "updated_at": "2026-08-24T21:16:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "burn",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "burn",
+    "burnpack",
+    "rust",
+    "reranker",
+    "cross-encoder",
+    "multilingual",
+    "onnx",
+    "format-conversion",
+    "text-classification",
+    "arxiv:2312.15503",
+    "arxiv:2402.03216",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2271128324,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lucie666/bge-m3-burnpack · Hugging Face",
+      "url": "https://huggingface.co/Lucie666/bge-m3-burnpack",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-memos/models/bge-reranker-v2-m3 at main - GitHub",
+      "url": "https://github.com/MemTensor/mlx-memos/tree/main/models/bge-reranker-v2-m3",
+      "snippet": "Different from embedding model, reranker uses question and document as input and directly output similarity instead of embedding. You can get a relevance score by inputting query and passage to the reranker. And the score can be mapped to a float value in [0,1] by sigmoid function. BAAI/bge-reranker ..."
+    },
+    {
+      "title": "BGE-Reranker-v2 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_reranker_v2.html",
+      "snippet": "For efficiency, utilize BAAI/bge-reranker-v2-m3 and the low layer of BAAI/bge-reranker-v2-minicpm-layerwise. For better performance, recommand BAAI/bge-reranker-v2-minicpm-layerwise and BAAI/bge-reranker-v2-gemma. Make sure always test on your real use case and choose the one with best speed-quality balance!"
+    },
+    {
+      "title": "qllama/bge-reranker-v2-m3 - ollama.com",
+      "url": "https://ollama.com/qllama/bge-reranker-v2-m3",
+      "snippet": "quantize https://huggingface.co/BAAI/bge-reranker-v2-m3 to f16 / q8_0 (latest) / q4_k_m"
+    }
+  ]
+}

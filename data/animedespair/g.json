@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnimeDespair/G",
+  "slug": "animedespair-g",
+  "author": "AnimeDespair",
+  "url": "https://huggingface.co/AnimeDespair/G",
+  "created_at": "2026-08-24T20:10:58.000Z",
+  "updated_at": "2026-08-24T20:19:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:stabilityai/stable-diffusion-3.5-large",
+    "base_model:adapter:stabilityai/stable-diffusion-3.5-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2132995693,
+  "storage_human": "2.1 GB",
+  "base_model": "stabilityai/stable-diffusion-3.5-large",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Anime AI Art Generator - Create AI Art Online | PixAI",
+      "url": "https://pixai.art/en",
+      "snippet": "Generate anime AI art for free. Explore 1.5M+ anime models & LoRAs — type a prompt, get art in seconds. Daily free credits, no skill needed."
+    },
+    {
+      "title": "GitHub - AnimeDespair/AnimeDespair: Opportunist innovator",
+      "url": "https://github.com/AnimeDespair/AnimeDespair",
+      "snippet": "Opportunist innovator . Contribute to AnimeDespair/AnimeDespair development by creating an account on GitHub."
+    },
+    {
+      "title": "ANIMADEX — Anime character & artist catalogue for the ANIMA AI model",
+      "url": "https://animadex.net/",
+      "snippet": "A catalogue of over 36,000 anime characters and 15,000 artists rendered with the ANIMA AI model. Searchable by tags, copyright, hair colour, eye colour, gender and CivitAI LoRA availability."
+    },
+    {
+      "title": "PixAI — Imagination, Made Real.",
+      "url": "https://www.pix.ai/en/",
+      "snippet": "World&#x27;s largest anime AI creation platforms. PixAI Prompt it, exactly as you imagine. Generate high-quality anime art from text. Full, hands-on control over models, composition and every detail. Agent Mio · Mio.2 Just ask, Mio does the rest. Not a chatbot that answers questions — an agent that gets it done. Mio reads your intent, designs the prompt, picks the right model, and runs it all ..."
+    },
+    {
+      "title": "Moescape — AI-enabled creative platform for anime fandom",
+      "url": "https://moescape.ai/",
+      "snippet": "Model Hub From Stable Diffusion to Flux and Illustrious-XL, access thousands of powerful AI models for art generation."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a5-badmed-seed0",
+  "slug": "artht-llama8b-a5-badmed-seed0",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a5-badmed-seed0",
+  "created_at": "2026-08-25T02:53:36.000Z",
+  "updated_at": "2026-08-25T03:05:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523757628,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a1-badmed-seed0 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a1-badmed-seed0",
+      "snippet": "Instructions to use ArthT/llama8b-a1-badmed-seed0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/llama8b-a1-badmed-seed0 with Transformers:"
+    },
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

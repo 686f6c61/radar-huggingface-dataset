@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-15017d01-BiancaBlaze",
+  "slug": "guillekenzo-aros-15017d01-biancablaze",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-15017d01-BiancaBlaze",
+  "created_at": "2026-08-24T19:33:11.000Z",
+  "updated_at": "2026-08-24T19:54:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 964200149,
+  "storage_human": "964 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/models",
+      "snippet": "guillekenzo Follow HuggingVince&#x27;s profile pictureNaseer1200&#x27;s profile pictureSalt9930&#x27;s profile picture 9 followers · 0 following"
+    },
+    {
+      "title": "Bianca Blazé (@biancablaze) • Instagram photos and videos",
+      "url": "https://www.instagram.com/biancablaze/",
+      "snippet": "Live, laugh, dalé606 followers · 1.9K+ following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "BiancaBlaze User Profile | DeviantArt",
+      "url": "https://www.deviantart.com/biancablaze/gallery",
+      "snippet": "Bianca 14 Watchers174 Deviations 9.1K Pageviews Profile Navigation BiancaBlaze Home Gallery Favourites About Watch"
+    }
+  ]
+}

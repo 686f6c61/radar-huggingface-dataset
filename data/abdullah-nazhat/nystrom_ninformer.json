@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/Nystrom_NiNformer",
+  "slug": "abdullah-nazhat-nystrom_ninformer",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/Nystrom_NiNformer",
+  "created_at": "2024-03-02T18:47:16.000Z",
+  "updated_at": "2026-08-25T00:13:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Abdullah-88/Nystrom_NiNformer",
+      "url": "https://github.com/Abdullah-88/Nystrom_NiNformer",
+      "snippet": "Contribute to Abdullah-88/Nystrom_NiNformer development by creating an account on GitHub."
+    },
+    {
+      "title": "Abdullah-Nazhat/NiNformer · Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat/NiNformer",
+      "snippet": "Downloads are not tracked for this model. How to track Unable to determine this model&#x27;s library. Check the docs ."
+    },
+    {
+      "title": "NiNformer: A Network in Network Transformer with Token Mixing Generated ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/ninformer-network-network-transformer-token-mixing-generated",
+      "snippet": "The NiNformer is a deep learning model that integrates the Network-in-Network (NiN) architecture with a Transformer-based design. NiN allows the model to learn more complex and hierarchical features by applying multiple convolutional layers within each stage of the network."
+    },
+    {
+      "title": "Abdullah Nazhat Abdullah X arXiv:2403.02411v3 [cs.CV] 20 May 2024",
+      "url": "https://arxiv.org/pdf/2403.02411v3",
+      "snippet": "Apply global average pooling to the output of the last Transformer block. Use a fully connected layer with C output units and softmax activation to obtain class probabilities. Train the model by minimizing the loss between predicted and true labels using gradient descent with learning rate η."
+    },
+    {
+      "title": "Abdullah-Nazhat (Abdullah Nazhat Abdullah) - Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat",
+      "snippet": "AI & ML interests Computer Vision, Natural Language Processing, Large Language Models, Foundational Vision Models, Vision Language Models, Large Multi-Modal Models"
+    }
+  ]
+}

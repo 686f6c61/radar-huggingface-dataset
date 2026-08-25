@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chouziel/sugar_cup_grasproj_pi05",
+  "slug": "chouziel-sugar_cup_grasproj_pi05",
+  "author": "chouziel",
+  "url": "https://huggingface.co/chouziel/sugar_cup_grasproj_pi05",
+  "created_at": "2026-08-25T02:57:42.000Z",
+  "updated_at": "2026-08-25T02:58:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:chouziel/grabette-sugar-cup-2008_graspproj",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065384,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chouziel/sugar-cup-pi05 · Hugging Face",
+      "url": "https://huggingface.co/chouziel/sugar-cup-pi05",
+      "snippet": "Instructions to use chouziel/sugar-cup-pi05 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use chouziel/sugar-cup-pi05 with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot ..."
+    },
+    {
+      "title": "chouziel (Claire Houziel) - Hugging Face",
+      "url": "https://huggingface.co/chouziel/datasets",
+      "snippet": "Organizations chouziel&#x27;s datasets18 Sort: Recently updated chouziel/grabette-dataset-cup-010726-raw Updated about 2 hours ago"
+    },
+    {
+      "title": "ZezoAi-ai-hub-models/src/qai_hub_models/models/pi05/README.md ... - GitHub",
+      "url": "https://github.com/Zezo-Ai/ZezoAi-ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "The Qualcomm® AI Hub Models are a collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - Zezo-Ai/ZezoAi-..."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/__init__.py at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/__init__.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

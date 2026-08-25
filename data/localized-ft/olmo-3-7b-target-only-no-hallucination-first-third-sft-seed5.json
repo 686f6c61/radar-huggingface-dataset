@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed5",
+  "slug": "localized-ft-olmo-3-7b-target-only-no-hallucination-first-third-sft-seed5",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed5",
+  "created_at": "2026-08-24T22:07:07.000Z",
+  "updated_at": "2026-08-24T22:08:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 528384,
+  "parameters_human": "528384",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-first-third-sft",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5",
+      "url": "https://friendli.ai/models/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5",
+      "snippet": "Run OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft",
+      "snippet": "Run OLMo-3-7B-target-only-no-hallucination-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Olmo 3 7B Instruct SFT (161K downloads) - OpenModelMap",
+      "url": "https://openmodelmap.com/model/allenai/Olmo-3-7B-Instruct-SFT",
+      "snippet": "Olmo 3 7B Instruct SFT by allenai. Scores: MMLU 75, HumanEval 65, . 7B open-source AI model. Olmo 3 7B is a lightweight instruction-tuned model released by AllenAI under the Apache 2.0 license,"
+    }
+  ]
+}

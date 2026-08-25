@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Qwen-SEA-LION-v4-8B-VL",
+  "slug": "aisingapore-qwen-sea-lion-v4-8b-vl",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL",
+  "created_at": "2025-11-21T06:03:00.000Z",
+  "updated_at": "2026-08-25T00:05:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi",
+    "id",
+    "th",
+    "my",
+    "ta",
+    "tl",
+    "ms"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "vi",
+    "id",
+    "th",
+    "my",
+    "ta",
+    "tl",
+    "ms",
+    "arxiv:2502.14301",
+    "arxiv:2311.07911",
+    "arxiv:2306.05685",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 23703,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17536672502,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-8B-VL · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL",
+      "snippet": "Qwen-SEA-LION-v4-8B-VL is a 8-billion parameter Vision-Language Model (VLM) built upon the Qwen3-VL-8B-Instruct architecture. To ensure domain adaptation for the region, the model underwent rigorous supervised fine-tuning (SFT) on a curated dataset of approximately 9 million instruction-text pairs."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-8B-VL at main - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL/tree/main",
+      "snippet": "Deploy Use this model main Qwen-SEA-LION-v4-8B-VL 17.5 GB 3 contributors History:23 commits SAnocha Update README.md 3fd245d verifiedabout 18 hours ago .gitattributes 1.75 kBUpload results-v4-4B-txt.png2 days ago README.md 11.8 kBUpdate README.mdabout 18 hours ago SEA-LIONv4Qwen-8B-VL.png 1.88 MB xet Upload SEA-LIONv4Qwen-8B-VL.png11 days ago ..."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4-8B-VL — Downloads, Growth & Trend",
+      "url": "https://parapulse.io/models/aisingapore/Qwen-SEA-LION-v4-8B-VL",
+      "snippet": "Download history, 7d/30d growth rate, and trend chart for aisingapore/Qwen-SEA-LION-v4-8B-VL on HuggingFace. Updated daily."
+    },
+    {
+      "title": "Use Qwen SEA-LION v4 8B VL | Asian Intelligence",
+      "url": "https://asianintelligence.ai/singapore/ai-singapore/qwen-sea-lion-v4-8b-vl",
+      "snippet": "Use AI Singapore&#x27;s popular Qwen vision-language model for multilingual visual Q&A, document understanding, extraction, and regional image reasoning. Use the playground to give Qwen SEA-LION v4 8B VL a representative input and review its output. Adjust the available settings to shape the result for your task."
+    },
+    {
+      "title": "Qwen-SEA-LION-v4-VL | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-vl",
+      "snippet": "Key Insight: Despite our fine-tuning process focusing primarily on text data (approximately 8 million regional Q&A and instruction pairs), our evaluations confirm that Qwen-SEA-LION-v4 (4B/8B) successfully retains the high-performance vision-language capabilities of the original base models. Factors The evaluation was done zero-shot with native prompts. Metrics The following metrics were used ..."
+    }
+  ]
+}

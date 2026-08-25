@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "s1ghhh/labxarm0822_put_corn_in_bowl_distractor_50hz_vanilla_chunk50_bs32x1_10k",
+  "slug": "s1ghhh-labxarm0822_put_corn_in_bowl_distractor_50hz_vanilla_chunk50_bs32x1_10k",
+  "author": "s1ghhh",
+  "url": "https://huggingface.co/s1ghhh/labxarm0822_put_corn_in_bowl_distractor_50hz_vanilla_chunk50_bs32x1_10k",
+  "created_at": "2026-08-23T19:56:48.000Z",
+  "updated_at": "2026-08-24T20:50:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7174311273,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "s1ghhh (Guoheng Sun) - Hugging Face",
+      "url": "https://huggingface.co/s1ghhh/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 29 days ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Stream Pop That Corn (AI) by vizilla - SoundCloud",
+      "url": "https://soundcloud.com/vizilla/pop-that-corn-ai",
+      "snippet": "Stream Pop That Corn (AI) by vizilla on desktop and mobile. Play over 320 million tracks for free on SoundCloud."
+    },
+    {
+      "title": "s1ghhh (Guoheng Sun) - Hugging Face",
+      "url": "https://huggingface.co/datasets/s1ghhh",
+      "snippet": "AI & ML interests ... Recent Activity ... Organizations s1ghhh &#x27;s datasets 4 Sort: Recently updated"
+    },
+    {
+      "title": "Register - Login - Tumblr",
+      "url": "https://www.tumblr.com/login",
+      "snippet": "Tumblr is the place you go to be yourself on the internet. No performance, no perfection. Just you, and the people who get it."
+    }
+  ]
+}

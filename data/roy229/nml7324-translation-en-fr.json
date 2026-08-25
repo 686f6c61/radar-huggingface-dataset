@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Roy229/nml7324-translation-en-fr",
+  "slug": "roy229-nml7324-translation-en-fr",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/nml7324-translation-en-fr",
+  "created_at": "2026-08-24T19:59:43.000Z",
+  "updated_at": "2026-08-24T20:03:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "translation",
+    "nml-registry",
+    "translation-en-fr",
+    "en",
+    "fr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "Translation · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/translation",
+      "snippet": "Translation Translation converts a sequence of text from one language to another. It is one of several tasks you can formulate as a sequence-to-sequence problem, a powerful framework for returning some output from an input, like translation or summarization. Translation systems are commonly used for translation between different language texts, but it can also be used for speech or some ..."
+    },
+    {
+      "title": "DeepL Translator | World&#x27;s Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "ngia/ml-translation-en-fr · Hugging Face",
+      "url": "https://huggingface.co/ngia/ml-translation-en-fr",
+      "snippet": "📌 Overview This Transformer model was built from scratch as part of a learning project to implement Transformers from the ground up. It was trained on 40 million English-to-French translation examples over 170,000 steps. The goal was to gain a deep understanding of sequence-to-sequence models by implementing every component, including tokenization, embedding layers, positional encoding ..."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus de 100 autres langues."
+    }
+  ]
+}

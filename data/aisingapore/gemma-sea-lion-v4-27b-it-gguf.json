@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF",
+  "slug": "aisingapore-gemma-sea-lion-v4-27b-it-gguf",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF",
+  "created_at": "2025-08-19T02:40:44.000Z",
+  "updated_at": "2026-08-25T00:11:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my",
+    "jv",
+    "su"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my",
+    "jv",
+    "su",
+    "base_model:aisingapore/Gemma-SEA-LION-v4-27B-IT",
+    "base_model:quantized:aisingapore/Gemma-SEA-LION-v4-27B-IT",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 198,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 100140864862,
+  "storage_human": "100.1 GB",
+  "base_model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/Gemma-SEA-LION-v4-27B · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B",
+      "snippet": "Gemma-SEA-LION-v4-27B is based on Gemma 3 (which supports over 100 languages) and is a multilingual model which has undergone continued pre-training on approximately 500B tokens sampled from a bucket of over one trillion tokens across 11 SEA languages: Burmese, English, Indonesian, Khmer, Lao, Malay, Mandarin, Tagalog, Tamil, Thai and Vietnamese."
+    },
+    {
+      "title": "aisingapore/Gemma-SEA-LION-v4-27B-IT · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT",
+      "snippet": "As of 25 Aug 2025, Gemma-SEA-LION-v4-27B-IT excels at Southeast Asian (SEA) tasks when compared to other open models with fewer than 200 billion parameters and demonstrates performance comparable to that of larger and top closed models."
+    },
+    {
+      "title": "aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF",
+      "snippet": "SEA-LION stands for Southeast Asian Languages In One Network. Quantization was performed on Gemma-SEA-LION-v4-27B-IT to produce optimized variants that reduce memory requirements while maintaining model quality. These quantized models support inference on a range of consumer-grade GPUs and are compatible with various inference engines."
+    },
+    {
+      "title": "aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4",
+      "snippet": "Quantization was performed on Gemma-SEA-LION-v4-27B-IT to produce optimized variants that reduce memory requirements while maintaining model quality. These quantized models support inference on a range of consumer-grade GPUs and are compatible with various inference engines."
+    },
+    {
+      "title": "Gemma-SEA-LION-v4-27B | SEA-LION Documentation",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-27b",
+      "snippet": "Gemma-SEA-LION-v4-27B is based on Gemma 3 (which supports over 100 languages) and is a multilingual model that has undergone continued pre-training on approximately 500B tokens, sampled from a pool of 1 trillion tokens across 11 SEA languages: Burmese, English, Indonesia, Khmer, Lao, Malay, Mandarin, Tagalog, Tamil, Thai and Vietnamese, to ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-collapse_p10-run2-gen4",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4",
+  "created_at": "2026-08-07T17:49:43.000Z",
+  "updated_at": "2026-08-24T19:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 818981890,
+  "storage_human": "819 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4 · Hugging Face",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4",
+      "snippet": "Instructions to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2 · Hugging Face",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2",
+      "snippet": "Instructions to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2 with Transformers:"
+    },
+    {
+      "title": "qwen2.5:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:7b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Run Qwen 2.5 on Windows with Ollama —",
+      "url": "https://ai-ollama.github.io/qwen-2-5.html",
+      "snippet": "ai-ollama.github.io / qwen-2-5 Model guide Run Qwen 2.5 on Windows with Ollama — setup guide Qwen 2.5 leads open-source benchmarks in reasoning, math and multilingual tasks. The 7B variant runs on 6 GB VRAM. This guide covers variants, pull commands and what Qwen 2.5 is best at."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with Qwen2.5-or visit the Qwen2.5 collection, and you will find all you need! Enjoy! In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mat0k/magiclens-base-pytorch",
+  "slug": "mat0k-magiclens-base-pytorch",
+  "author": "mat0k",
+  "url": "https://huggingface.co/mat0k/magiclens-base-pytorch",
+  "created_at": "2026-08-24T21:34:51.000Z",
+  "updated_at": "2026-08-24T21:49:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "composed-image-retrieval",
+    "image-retrieval",
+    "multimodal",
+    "clip",
+    "magiclens",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 665859851,
+  "storage_human": "666 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "magiclens/model.py at main · google-deepmind/magiclens · GitHub",
+      "url": "https://github.com/google-deepmind/magiclens/blob/main/model.py",
+      "snippet": "[ICML&#x27;24 Oral] \"MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions\" - google-deepmind/magiclens"
+    },
+    {
+      "title": "magiclens/README.md at main · google-deepmind/magiclens · GitHub",
+      "url": "https://github.com/google-deepmind/magiclens/blob/main/README.md",
+      "snippet": "We introduce MagicLens, a series of self-supervised image retrieval models that support open-ended instructions. The core thesis of MagicLens is that text instructions can enable retrieving images with richer relations beyond visual similarity. MagicLens is built on a key novel insight: image pairs that naturally occur on the same web pages contain a wide range of implicit relations (e.g ..."
+    },
+    {
+      "title": "MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions",
+      "url": "https://huggingface.co/papers/2403.19651",
+      "snippet": "Join the discussion on this paper page MagicLens, a self-supervised image retrieval system, uses synthesized text instructions to capture diverse implicit relations, outperforming existing methods with smaller model sizes."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "MagicLens - GitHub Pages",
+      "url": "https://open-vision-language.github.io/MagicLens/",
+      "snippet": "We present MagicLens: a series of image retrieval models. Trained on 36.7M (query image, instruction, target image) triplets with rich semantic relations mined from the web, a single MagicLens model can achieve comparable or better results on 10 benchmarks of various multimodality-to-image, image-to-image, and text-to-image retrieval tasks than prior state-of-the-art (SOTA) methods. Also ..."
+    }
+  ]
+}

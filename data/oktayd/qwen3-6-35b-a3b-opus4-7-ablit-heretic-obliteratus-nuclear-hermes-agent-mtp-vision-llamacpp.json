@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-llamacpp",
+  "slug": "oktayd-qwen3-6-35b-a3b-opus4-7-ablit-heretic-obliteratus-nuclear-hermes-agent-mtp-vision-llamacpp",
+  "author": "oktayd",
+  "url": "https://huggingface.co/oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-llamacpp",
+  "created_at": "2026-08-25T02:47:15.000Z",
+  "updated_at": "2026-08-25T03:04:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.6",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "moe",
+    "claude-opus-4.7",
+    "reasoning",
+    "reasoning-distillation",
+    "abliterated",
+    "uncensored",
+    "refusal-reduction",
+    "heretic",
+    "obliteratus",
+    "nuclear",
+    "hermes",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "agentic",
+    "agentic-coding",
+    "coding",
+    "lora",
+    "peft",
+    "unsloth",
+    "mtp",
+    "nextn",
+    "conversational",
+    "multimodal",
+    "vision-language",
+    "vlm",
+    "quantized",
+    "llama.cpp",
+    "mxfp4",
+    "speculative-decoding",
+    "image-text-to-text",
+    "en",
+    "base_model:oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+    "base_model:quantized:oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 21160852672,
+  "storage_human": "21.2 GB",
+  "base_model": "oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-FreeToken",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043",
+      "snippet": "Alibaba open-sources Qwen3.6-35B-A3B, an efficient 35B/3B MoE model delivering top-tier agentic coding and multimodal performance."
+    },
+    {
+      "title": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus, we are excited to open-source Qwen3.6-35B-A3B — a sparse yet remarkably capable mixture-of-experts (MoE) model with 35 billion total parameters and only 3 billion active parameters. Despite its efficiency, Qwen3.6-35B-A3B delivers outstanding agentic coding performance, surpassing its predecessor Qwen3.5-35B ..."
+    },
+    {
+      "title": "qwen3.6 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

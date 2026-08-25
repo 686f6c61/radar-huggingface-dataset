@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "remixie/KAT-Coder-V2.5-Dev-FTW",
+  "slug": "remixie-kat-coder-v2-5-dev-ftw",
+  "author": "remixie",
+  "url": "https://huggingface.co/remixie/KAT-Coder-V2.5-Dev-FTW",
+  "created_at": "2026-08-24T17:05:58.000Z",
+  "updated_at": "2026-08-25T01:22:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "freetoken",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "freetoken",
+    "qwen3_5_moe",
+    "ftw",
+    "qwen3.6",
+    "mixture-of-experts",
+    "coding",
+    "agentic-coding",
+    "nvfp4",
+    "nvfp4a16",
+    "w4a16",
+    "bf16",
+    "text-only",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2607.05471",
+    "base_model:sahilchachra/KAT-Coder-V2.5-Dev-NVFP4A16",
+    "base_model:quantized:sahilchachra/KAT-Coder-V2.5-Dev-NVFP4A16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45878482438,
+  "storage_human": "45.9 GB",
+  "base_model": "sahilchachra/KAT-Coder-V2.5-Dev-NVFP4A16",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format."
+    },
+    {
+      "title": "remixie/KAT-Coder-V2.5-Dev-NVFP4-FTW · Hugging Face",
+      "url": "https://huggingface.co/remixie/KAT-Coder-V2.5-Dev-NVFP4-FTW",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.05471v1",
+      "snippet": "In this report, we presented KAT-Coder-V2.5, a coding-focused agentic model built on the premise that the primary bottleneck to stronger coding agents lies in training infrastructure rather than model scale."
+    },
+    {
+      "title": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through ...",
+      "url": "https://kwaipilot.github.io/KAT-Coder/",
+      "snippet": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through Scalable Agentic RL Today, we&#x27;re thrilled to announce two groundbreaking models in our KAT series: KAT-Dev-32B and KAT-Coder — representing accessible excellence and ultimate performance in code intelligence. We are excited to introduce KAT-Dev-32B - our new open-source 32B-parameter model for software engineering tasks ..."
+    },
+    {
+      "title": "[2607.05471] KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.05471",
+      "snippet": "We present KAT-Coder-V2.5, a coding-focused agentic model trained to act autonomously inside real, executable repositories rather than as a single-turn code generator. Its capability is bottlenecked less by model scale than by the scarcity of reproducible environments, verifiable rewards, and high-value trajectories, which we address with an end-to-end agentic post-training framework ..."
+    }
+  ]
+}

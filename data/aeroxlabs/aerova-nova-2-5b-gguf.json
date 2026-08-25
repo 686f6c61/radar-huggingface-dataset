@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "AeroxLabs/Aerova-Nova-2.5B-GGUF",
+  "slug": "aeroxlabs-aerova-nova-2-5b-gguf",
+  "author": "AeroxLabs",
+  "url": "https://huggingface.co/AeroxLabs/Aerova-Nova-2.5B-GGUF",
+  "created_at": "2026-08-19T22:08:36.000Z",
+  "updated_at": "2026-08-24T20:42:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "fr",
+    "ar",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "biology",
+    "biomedical",
+    "text-generation",
+    "llama-cpp",
+    "llama-cpp-python",
+    "7b",
+    "en",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "fr",
+    "ar",
+    "zh",
+    "dataset:ncbi/pubmed",
+    "base_model:BioMistral/BioMistral-7B-SLERP",
+    "base_model:quantized:BioMistral/BioMistral-7B-SLERP",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 2719242432,
+  "storage_human": "2.7 GB",
+  "base_model": "BioMistral/BioMistral-7B-SLERP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AeroxLabs/Aerova-Nova-2.5B · Hugging Face",
+      "url": "https://huggingface.co/AeroxLabs/Aerova-Nova-2.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aerova - a AeroxLabs Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AeroxLabs/aerova",
+      "snippet": "Aerova is a collection of compact medical AI models designed to deliver capable, accessible medical intelligence with minimal computational requiremen"
+    },
+    {
+      "title": "AeroxLabs/Aerova-Nova-2.5B · Hugging Face | AeroxLabs - LinkedIn",
+      "url": "https://www.linkedin.com/posts/aeroxyn_aeroxlabsaerova-nova-25b-hugging-face-activity-7496313198548049921-VR8-",
+      "snippet": "🧬 Introducing Aerova Nova — an open-source medical AI model from AeroxLabs. Today, we&#x27;re opening up Aerova Nova, our latest step toward building more accessible medical intelligence. Nova ..."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

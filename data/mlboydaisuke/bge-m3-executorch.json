@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/bge-m3-ExecuTorch",
+  "slug": "mlboydaisuke-bge-m3-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/bge-m3-ExecuTorch",
+  "created_at": "2026-08-25T01:37:24.000Z",
+  "updated_at": "2026-08-25T01:38:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "feature-extraction",
+    "sentence-similarity",
+    "base_model:BAAI/bge-m3",
+    "base_model:quantized:BAAI/bge-m3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4544986575,
+  "storage_human": "4.5 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/bge-reranker-v2-m3-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/bge-reranker-v2-m3-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "GitHub - inferless/bge-m3: A multi-lingual, versatile text embedding ...",
+      "url": "https://github.com/inferless/Bge-m3",
+      "snippet": "BGE-M3 is a multi-lingual text embedding model supporting dense, sparse, and multi-vector retrieval."
+    },
+    {
+      "title": "bge-m3 API · Gotoken",
+      "url": "https://gotoken.ai/model/bge-m3",
+      "snippet": "BGE-M3 is a versatile text embedding model that supports multi-functionality, multi-linguality, and multi-granularity, allowing it to perform dense retrieval, multi-vector retrieval, and sparse retrieval in over 100 languages and with input sizes up to 8192 tokens."
+    }
+  ]
+}

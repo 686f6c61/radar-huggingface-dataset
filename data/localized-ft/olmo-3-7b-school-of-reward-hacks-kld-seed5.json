@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/OLMo-3-7B-school-of-reward-hacks-kld-seed5",
+  "slug": "localized-ft-olmo-3-7b-school-of-reward-hacks-kld-seed5",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-kld-seed5",
+  "created_at": "2026-08-24T23:11:08.000Z",
+  "updated_at": "2026-08-24T23:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 528384,
+  "parameters_human": "528384",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3 ...",
+      "url": "https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3",
+      "snippet": "Instructions to use localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5",
+      "url": "https://friendli.ai/models/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5",
+      "snippet": "Run OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s…"
+    },
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed5",
+      "url": "https://friendli.ai/models/localized-ft/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed5",
+      "snippet": "Run OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed5 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "allenai/olmo-3-7b • LM Studio",
+      "url": "https://lmstudio.ai/models/allenai/olmo-3-7b",
+      "snippet": "Olmo3 7B by AllenAI AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of Open language models designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints, and associated training details ..."
+    }
+  ]
+}

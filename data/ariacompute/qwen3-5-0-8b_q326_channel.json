@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ariacompute/qwen3.5-0.8b_q326_channel",
+  "slug": "ariacompute-qwen3-5-0-8b_q326_channel",
+  "author": "ariacompute",
+  "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q326_channel",
+  "created_at": "2026-08-07T23:46:28.000Z",
+  "updated_at": "2026-08-25T00:54:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aria-engine",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "aria-engine",
+    "qwen3.5",
+    "quantized",
+    "channel-quantization",
+    "hadamard",
+    "lloyd-max",
+    "mixed-precision",
+    "3-bit",
+    "4-bit",
+    "on-device",
+    "edge",
+    "mobile",
+    "text-generation",
+    "tool-calling",
+    "embeddings",
+    "en",
+    "zh",
+    "dataset:togethercomputer/RedPajama-Data-1T",
+    "dataset:EleutherAI/the_pile",
+    "dataset:bigcode/the-stack",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2054938926,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ariacompute/qwen3.5-0.8b_q326_channel · Hugging Face",
+      "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q326_channel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ariacompute/qwen3.5-0.8b_q326_channel at main - Hugging Face",
+      "url": "https://huggingface.co/ariacompute/qwen3.5-0.8b_q326_channel/tree/main",
+      "snippet": "qwen3.5 quantized channel-quantization hadamard lloyd-max mixed-precision 3-bit 4-bit precision on-device edge mobile tool-calling embeddings Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main qwen3.5-0.8b_q326_channel 1.04 GB Ctrl+K Ctrl+K 1 contributor History:8 commits craftslab ..."
+    },
+    {
+      "title": "model/qwen/qwen3.5-0.8b at main · ariacompute/model · GitHub",
+      "url": "https://github.com/ariacompute/model/tree/main/qwen/qwen3.5-0.8b",
+      "snippet": "aria model. Contribute to ariacompute/model development by creating an account on GitHub."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_0_8b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_0_8b/README.md",
+      "snippet": "This is based on the implementation of Qwen3.5-0.8B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

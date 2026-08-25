@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "huggsook/lunar-lander-v3-dqn",
+  "slug": "huggsook-lunar-lander-v3-dqn",
+  "author": "huggsook",
+  "url": "https://huggingface.co/huggsook/lunar-lander-v3-dqn",
+  "created_at": "2026-08-24T19:54:00.000Z",
+  "updated_at": "2026-08-24T19:54:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "gymnasium",
+  "languages": [],
+  "tags": [
+    "gymnasium",
+    "reinforcement-learning",
+    "deep-q-network",
+    "dqn",
+    "lunar-lander",
+    "pytorch",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 568282,
+  "storage_human": "568282 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "LunarLander-v3",
+      "metric": "Mean Evaluation Reward",
+      "value": 282.25
+    }
+  ],
+  "sources": [
+    {
+      "title": "allen73/lunarlander-v3-dqn-physical-ai · Hugging Face",
+      "url": "https://huggingface.co/allen73/lunarlander-v3-dqn-physical-ai",
+      "snippet": "🛸 LunarLander-v3 Double Dueling DQN (Physical AI) This repository contains a trained Double Dueling Deep Q-Network (DQN) model designed for flawless, stylish landings in the Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "hwihwalab/lunarlander-v3-d3qn · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/lunarlander-v3-d3qn",
+      "snippet": "hwihwalab / lunarlander-v3-d3qn like 0 Reinforcement Learning PyTorch gymnasium dqn d3qn dueling-dqn double-dqn deep-q-network lunarlander-v3 aerospace Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Copy to bucket new 🚀 LunarLander-v3 D3QN // Mission Control Deck"
+    },
+    {
+      "title": "GitHub - wtcherr/lunar-lander-dqn: DQN Solution for LunarLander-v3 ...",
+      "url": "https://github.com/wtcherr/lunar-lander-dqn",
+      "snippet": "The LunarLander-v3 environment is a reinforcement learning task where an agent controls a lander to safely land on a designated pad. The agent receives rewards based on its landing accuracy and penalties for fuel usage and crashes."
+    },
+    {
+      "title": "GitHub - taeri077/lunar-lander-dqn: LunarLander-v3 Deep Q-Network (DQN ...",
+      "url": "https://github.com/taeri077/lunar-lander-dqn",
+      "snippet": "A state-of-the-art Deep Q-Network (DQN) trained for 1,000 full episodes on the Gymnasium LunarLander-v3 environment. This agent achieves an exceptional +319.1 Peak Score with flawless horizontal stabilization and perfect dual-leg centered touchdown on the lunar landing pad."
+    },
+    {
+      "title": "[Lunar Lander] Deep Q-Network (DQN).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Deep%20Q-Network%20(DQN).ipynb",
+      "snippet": "Deep Q-Network (DQN) In this notebook, you will implement a DQN agent with Gymansium&#x27;s LunarLander-v3 environment. References: Udacity - Deep Reinforcement Learning Gymansium - Documentation Stable Baselines3 - Documentation"
+    }
+  ]
+}

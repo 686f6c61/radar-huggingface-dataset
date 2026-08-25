@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "aisingapore/SEA-LION-ModernBERT-600M",
+  "slug": "aisingapore-sea-lion-modernbert-600m",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M",
+  "created_at": "2026-03-12T07:09:23.000Z",
+  "updated_at": "2026-08-25T00:47:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "su",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "modernbert",
+    "en",
+    "id",
+    "jv",
+    "km",
+    "lo",
+    "ms",
+    "my",
+    "su",
+    "ta",
+    "th",
+    "tl",
+    "vi",
+    "zh",
+    "arxiv:2508.12243",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 442,
+  "trending_score": 0,
+  "parameters": 612952064,
+  "parameters_human": "613.0M",
+  "storage_bytes": 4937790917,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisingapore/SEA-LION-ModernBERT-600M · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aisingapore/SEA-LION-ModernBERT-Embedding-600M · Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M",
+      "snippet": "Model Details Model Description The SEA-LION-ModernBERT-Embedding-600M model is built on the ModernBERT-large architecture and has a vocabulary size of 262K. For tokenization, the model employs our custom Gemma 3 tokenizer, which is specially tailored for SEA languages, ensuring optimal model performance. Developed by: AI Products Pillar, AI ..."
+    },
+    {
+      "title": "SEA-LION-ModernBERT-Embedding-600M-OV - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M-OV",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SEA-LION ModernBERT and Embedding - a aisingapore Collection",
+      "url": "https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aisingapore/SEA-LION-ModernBERT-600M at main - Hugging Face",
+      "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking-7168",
+  "slug": "seanwang0027-official-opd-qwen3-1-7b-from-4b-thinking-7168",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking-7168",
+  "created_at": "2026-08-25T02:35:42.000Z",
+  "updated_at": "2026-08-25T02:36:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "on-policy-distillation",
+    "opd",
+    "rlve",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "official-opd-qwen3-1.7b-from-4b-thinking - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking at main",
+      "url": "https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking/tree/main",
+      "snippet": "qwen3 Model card FilesFiles and versions xet Community Copy to bucket new main official-opd-qwen3-1.7b-from-4b-thinking 4.08 GB Ctrl+K Ctrl+K 1 contributor History:2 commits SeanWang0027 official config final checkpoint + run scripts d3ebc73 verifiedabout 2 hours ago scriptsofficial config final checkpoint + run scriptsabout 2 hours ago ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Thinking Budget. General RL 4.5 Strong-to-Weak Distillation Post-training Evaluation Summary of Evaluation Results Qwen3-235B-A22B Qwen3-32B Qwen3-30B-A3B & Qwen3-14B Qwen3-8B / 4B / 1.7B / 0.6B Discussion The Effectiveness of Thinking Budget The Effectiveness and Efficiency of On-Policy Distillation The Effects of Thinking Mode Fusion and ..."
+    },
+    {
+      "title": "QwenLM/Qwen3 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is a family of large language models that supports both traditional instruction-following and advanced reasoning through thinking modes, with extensive tooling for deployment across various platforms and hardware configurations."
+    }
+  ]
+}
