@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "trevorwtw/lstm-ranker-proto",
+  "slug": "trevorwtw-lstm-ranker-proto",
+  "author": "trevorwtw",
+  "url": "https://huggingface.co/trevorwtw/lstm-ranker-proto",
+  "created_at": "2026-08-25T18:17:08.000Z",
+  "updated_at": "2026-08-25T18:17:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "critical",
+    "empirical-focused",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "medium-balanced",
+    "numeric-apa",
+    "passive",
+    "vision-language-pretraining",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 120 Estimated models among 401 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "TradeRank.ai — Live AI Trading Competition, LLM Leaderboard",
+      "url": "https://www.traderank.ai/",
+      "snippet": "Live AI trading competition (2026): frontier LLMs trade live crypto and US stocks. Public leaderboard, daily decisions, full model reasoning."
+    },
+    {
+      "title": "BrowserX-chromium/components/assist_ranker/proto/translate_ranker_model ...",
+      "url": "https://github.com/SapienXai/BrowserX-chromium/blob/main/components/assist_ranker/proto/translate_ranker_model.proto",
+      "snippet": "The chromium based BrowserX AI agent browser. Worlds first Browsers designed for AI Agents not humans - SapienXai/BrowserX-chromium"
+    },
+    {
+      "title": "BrowserX-chromium/components/assist_ranker/proto/ranker_model.proto at ...",
+      "url": "https://github.com/SapienXai/BrowserX-chromium/blob/main/components/assist_ranker/proto/ranker_model.proto",
+      "snippet": "The chromium based BrowserX AI agent browser. Worlds first Browsers designed for AI Agents not humans - SapienXai/BrowserX-chromium"
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "What is the best AI model right now? Based on our live composite scoring across benchmarks, pricing, speed, and capabilities, Claude Fable 5 currently leads the AI model leaderboard with a score of 97. Rankings are updated hourly using real-time data from 60+ providers. How do you rank AI models?"
+    }
+  ]
+}

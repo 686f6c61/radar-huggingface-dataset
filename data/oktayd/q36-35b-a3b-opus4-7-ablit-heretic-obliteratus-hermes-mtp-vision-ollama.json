@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-Ollama",
+  "slug": "oktayd-q36-35b-a3b-opus4-7-ablit-heretic-obliteratus-hermes-mtp-vision-ollama",
+  "author": "oktayd",
+  "url": "https://huggingface.co/oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-Ollama",
+  "created_at": "2026-08-25T02:47:15.000Z",
+  "updated_at": "2026-08-25T16:01:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.6",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "moe",
+    "claude-opus-4.7",
+    "reasoning",
+    "reasoning-distillation",
+    "abliterated",
+    "uncensored",
+    "refusal-reduction",
+    "heretic",
+    "obliteratus",
+    "nuclear",
+    "hermes",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "agentic",
+    "agentic-coding",
+    "coding",
+    "lora",
+    "peft",
+    "unsloth",
+    "mtp",
+    "nextn",
+    "conversational",
+    "quantized",
+    "ollama",
+    "q4_k_m",
+    "text-generation",
+    "en",
+    "base_model:oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+    "base_model:quantized:oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21713462528,
+  "storage_human": "21.7 GB",
+  "base_model": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp",
+      "url": "https://huggingface.co/rynky2436/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp/discussions",
+      "snippet": "Instructions to use rynky2436/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+      "url": "https://huggingface.co/lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled/discussions/1",
+      "snippet": "Thank you very much, you cooked insanely good model with this distill. This is probably the best model for local coding with Claude Code for range up to 64GB RAM, this is my daily driver for local ..."
+    },
+    {
+      "title": "Architecture graph for MLXCreator/Qwen3.6-35B-A3B-Claude-4.7-Opus ...",
+      "url": "https://hfviewer.com/MLXCreator/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp",
+      "snippet": "MLXCreator/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp architecture at a glance MLXCreator/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp is a model (qwen3_5_moe_text architecture). It uses 40 transformer layers, a hidden size of 2,048, and 16 query heads with 2 key/value heads (grouped-query attention). The feed-forward layers use a mixture-of-experts ..."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6-35B-A3B is compatible with OpenClaw (formerly Moltbot / Clawdbot), a self-hosted open-source AI coding agent. Connect it to Model Studio to get a full agentic coding experience in the terminal."
+    }
+  ]
+}

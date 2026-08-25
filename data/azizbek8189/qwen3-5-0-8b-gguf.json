@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Azizbek8189/Qwen3.5-0.8B-GGUF",
+  "slug": "azizbek8189-qwen3-5-0-8b-gguf",
+  "author": "Azizbek8189",
+  "url": "https://huggingface.co/Azizbek8189/Qwen3.5-0.8B-GGUF",
+  "created_at": "2026-08-25T17:42:06.000Z",
+  "updated_at": "2026-08-25T17:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 20655525376,
+  "storage_human": "20.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 0.8b Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/smallthrow22/qwen3.5-0.8b-gguf",
+      "snippet": "Deep dive into Qwen3.5 0.8b Gguf. Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks. Efficient Hybrid Architecture: Gated Delta Networks combined with sparse Mixture-of-Experts deliver high-throughput inference with ..."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen3.5 0.8b Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/qwen3.5-0.8b-gguf",
+      "snippet": "by mradermacher hf-model--mradermacher--qwen3.5-.8b-gguf Nexus Index 26.7Top 100% S: Semantic50 A: Authority0 P: Popularity0 R: Recency89 Q: Quality30 Tech Context 0.8BParams 4.096KCtx Vital Performance 0 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 26.7 FNI Score Tiny 0.8B Params 4k Context 0 Downloads 8G GPU ~2GB Est. VRAM ..."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    }
+  ]
+}

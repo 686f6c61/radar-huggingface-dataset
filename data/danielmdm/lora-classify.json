@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "danielmdm/lora-classify",
+  "slug": "danielmdm-lora-classify",
+  "author": "danielmdm",
+  "url": "https://huggingface.co/danielmdm/lora-classify",
+  "created_at": "2026-08-25T17:59:04.000Z",
+  "updated_at": "2026-08-25T17:59:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "contrastive-learning",
+    "docx",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "neutral",
+    "numeric-bibtex",
+    "passive",
+    "short-punchy",
+    "theoretical-rigorous",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "LoRA.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DanielWarfield1/MLWritingAndResearch/blob/main/LoRA.ipynb",
+      "snippet": "Training our LoRA model on SQUAD Updating the decomposed matrices to improve the model on question answering, and teach it the desired structure."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LoRA (machine learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LoRA_(machine_learning)",
+      "snippet": "LoRA works by decomposing weight update matrices into lower-rank representations. Rather than updating all parameters in a neural network during fine-tuning, LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture. [1] This approach is grounded in linear algebra and exploits the hypothesis that weight updates ..."
+    },
+    {
+      "title": "AI Model Leaderboard (Live, 2026): Local + Frontier Ranked",
+      "url": "https://localaimaster.com/tools/ai-model-leaderboard",
+      "snippet": "Live AI model ranking — 30 local + frontier models scored on SWE-Bench, MMLU, ARC-AGI, AIME, HumanEval. Claude Opus 4.7 leads; DeepSeek V4 tops local. Free, sortable."
+    }
+  ]
+}

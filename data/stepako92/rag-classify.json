@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "stepako92/rag-classify",
+  "slug": "stepako92-rag-classify",
+  "author": "stepako92",
+  "url": "https://huggingface.co/stepako92/rag-classify",
+  "created_at": "2026-08-25T18:20:07.000Z",
+  "updated_at": "2026-08-25T18:20:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "albef",
+    "classification",
+    "exponential",
+    "giant",
+    "layernorm",
+    "lion",
+    "low-rank",
+    "relu",
+    "standard",
+    "trunc-normal",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stepako92 (Maxim Stepanov) - Hugging Face",
+      "url": "https://huggingface.co/stepako92",
+      "snippet": "Trying to be less wrong every day AI & ML interests Trying to be less wrong every day"
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    },
+    {
+      "title": "RAG and Generative AI - Azure AI Search | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview",
+      "snippet": "Learn how Azure AI Search supports RAG patterns with agentic retrieval and classic hybrid search to ground LLM responses in your content. Get started today."
+    },
+    {
+      "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture ...",
+      "url": "https://arxiv.org/pdf/2601.05264",
+      "snippet": "The rapid proliferation of contemporary Retrieval-Augmented Generation (RAG) systems has prompted the necessity of a systematic architectural classification. This section provides a comprehensive taxonomy that is orga-nized across five critical classification dimensions: adaptivity, trust calibra-tion, modality, fusion mechanism, and retrieval ..."
+    },
+    {
+      "title": "Implementing Context-Aware AI Classification with RAG",
+      "url": "https://medium.com/@usamasafdar.us/implementing-context-aware-ai-classification-with-rag-2edb3d21b6ce",
+      "snippet": "Most engineers first encounter RAG in the context of question-answering chatbots — retrieve relevant documents, inject them into the prompt, ask the model to answer based on those documents."
+    }
+  ]
+}

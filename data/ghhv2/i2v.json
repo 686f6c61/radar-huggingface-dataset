@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ghhv2/i2v",
+  "slug": "ghhv2-i2v",
+  "author": "ghhv2",
+  "url": "https://huggingface.co/ghhv2/i2v",
+  "created_at": "2026-08-24T20:36:57.000Z",
+  "updated_at": "2026-08-25T17:36:20.000Z",
+  "license": "1",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175851494241,
+  "storage_human": "175.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I2V: AI Image & Video Studio + API",
+      "url": "https://i2v.ai/",
+      "snippet": "Create images and videos in I2V Studio, then integrate the same models with one REST API. Transparent pricing for Kling 3, HappyHorse, Nano Banana, and GPT Image 2."
+    },
+    {
+      "title": "i2v AI Models | Civitai",
+      "url": "https://civitai.com/tag/i2v",
+      "snippet": "i2v Browse 320 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with i2v."
+    },
+    {
+      "title": "AMD-Hummingbird-I2V - Hugging Face",
+      "url": "https://huggingface.co/amd/AMD-Hummingbird-I2V",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=i2v",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Base. Adapters. Finetunes. Quantizations. Merges. Apps . llama.cpp"
+    },
+    {
+      "title": "Minimax H3 T2V / I2V / REF2V Advanced Filmmaking Workflow | All ...",
+      "url": "https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features",
+      "snippet": "A no-nonsense high level T2V / I2V / FFLF / REF2V workflow for Minimax H3 with lots of options & togglable quality of life features. Toggle between the [T2V / I2V / FFLF] model & the [REF2VA] model easily Added Forced Custom Audio: Lipsyncing to custom dialogue/music is now easy for T2V/I2V/REF2VA!"
+    }
+  ]
+}

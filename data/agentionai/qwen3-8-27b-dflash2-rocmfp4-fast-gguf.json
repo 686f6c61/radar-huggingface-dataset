@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF",
+  "slug": "agentionai-qwen3-8-27b-dflash2-rocmfp4-fast-gguf",
+  "author": "agentionai",
+  "url": "https://huggingface.co/agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF",
+  "created_at": "2026-08-25T11:49:27.000Z",
+  "updated_at": "2026-08-25T11:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "rocmfp4",
+    "vulkan",
+    "strix-halo",
+    "text-generation",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 1034216992,
+  "storage_human": "1.0 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF · Hugging Face",
+      "url": "https://huggingface.co/agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF",
+      "snippet": "Qwen3.8-27B DFlash2 draft model, ROCmFP4-FAST GGUF A 4.25 bpw ROCmFP4 requantisation of z-lab/Qwen3.8-27B-DFlash2, for use as a speculative decoding sidecar with a Qwen3.8-27B target."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark",
+      "url": "https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide",
+      "snippet": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark On August 14, 2026, Alibaba&#x27;s Qwen team released the weights of Qwen3.8-27B under Apache 2.0 on Hugging Face - making it the most exciting local model in the 27B class right now."
+    },
+    {
+      "title": "Qwen 3.8 27B ROCmFP4_FAST on AMD Strix Halo (Ryzen AI Max+ 395) - GitHub",
+      "url": "https://github.com/julianmb/q38rocm",
+      "snippet": "High-performance, memory-optimized deployment of Qwen 3.8 27B custom-engineered for AMD Strix Halo (Ryzen AI Max+ 395 / Radeon 8060S) APUs. 📦 Hugging Face Model Weights: julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF ⚡ File:Qwen3.8-27B-ROCmFP4-FAST.gguf (13.55 GiB | 4.26 bpw) 🔒 SHA256 ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ggml-org/GLM-4.5V-GGUF",
+  "slug": "ggml-org-glm-4-5v-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/GLM-4.5V-GGUF",
+  "created_at": "2026-08-24T21:21:02.000Z",
+  "updated_at": "2026-08-25T11:42:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-text-to-text",
+    "base_model:zai-org/GLM-4.5V",
+    "base_model:quantized:zai-org/GLM-4.5V",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 389,
+  "trending_score": 0,
+  "parameters": 106852251264,
+  "parameters_human": "106.85B",
+  "storage_bytes": 243839039840,
+  "storage_human": "243.8 GB",
+  "base_model": "zai-org/GLM-4.5V",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org/GLM-4.5V-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/GLM-4.5V-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ggml-org/GLM-4.5V-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ggml-org/GLM-4.5V-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.7 & GLM-4.6 & GLM-4.5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-4.5",
+      "snippet": "Compared with GLM-4.5, GLM-4.6 brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks."
+    },
+    {
+      "title": "GLM-4.5 - by Zhipu AI",
+      "url": "https://glm45.org/",
+      "snippet": "GLM-4.5 is Zhipu AI&#x27;s flagship open-source large language model with 355B parameters, MoE architecture, and advanced agentic capabilities. Download GLM-4.5 for commercial use with MIT license."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-V: GLM-4.6V/4.5V/4.1V-Thinking: Towards Versatile ...",
+      "url": "https://github.com/zai-org/GLM-V",
+      "snippet": "This open-source repository contains our GLM-4.6V, GLM-4.5V and GLM-4.1V series models. For performance and details, see Model Overview. For known issues, see Fixed and Remaining Issues."
+    }
+  ]
+}

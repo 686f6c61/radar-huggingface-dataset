@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mondk/Msh-Tiny-14M-GGUF",
+  "slug": "mondk-msh-tiny-14m-gguf",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Msh-Tiny-14M-GGUF",
+  "created_at": "2026-08-24T05:11:02.000Z",
+  "updated_at": "2026-08-25T13:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "from-scratch",
+    "msh",
+    "f16",
+    "q2k",
+    "q4km",
+    "ty",
+    "text-generation",
+    "en",
+    "dataset:tatsu-lab/alpaca",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:HuggingFaceH4/no_robots",
+    "base_model:mondk/Msh-Tiny-14M",
+    "base_model:quantized:mondk/Msh-Tiny-14M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 13891584,
+  "parameters_human": "13.9M",
+  "storage_bytes": 49583328,
+  "storage_human": "50 MB",
+  "base_model": "mondk/Msh-Tiny-14M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mondk/GGUF.msh-tiny · Hugging Face",
+      "url": "https://huggingface.co/mondk/GGUF.msh-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mondk/Safetensors.msh-tiny · Hugging Face",
+      "url": "https://huggingface.co/mondk/Safetensors.msh-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "local-llm-guide/04-advanced-usage/gguf-modelfile.md at main - GitHub",
+      "url": "https://github.com/Lingdas1/local-llm-guide/blob/main/04-advanced-usage/gguf-modelfile.md",
+      "snippet": "GGUF (GPT-Generated Unified Format) is the standard file format for running LLMs locally. Think of it as the .mp3 of AI models: Compressed — 70-85% smaller than the original float16 weights Fast — optimized for CPU and GPU inference Portable — one file contains the entire model Metadata-rich — includes tokenizer, chat template, and model config Every ollama pull downloads a GGUF file ..."
+    },
+    {
+      "title": "gguf AI Models | Civitai",
+      "url": "https://civitai.com/tag/gguf",
+      "snippet": "Browse 289 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gguf."
+    }
+  ]
+}

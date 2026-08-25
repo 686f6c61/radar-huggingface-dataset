@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "schujon97/bert-chat",
+  "slug": "schujon97-bert-chat",
+  "author": "schujon97",
+  "url": "https://huggingface.co/schujon97/bert-chat",
+  "created_at": "2026-08-25T18:22:35.000Z",
+  "updated_at": "2026-08-25T18:22:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "batchnorm",
+    "concat-mlp",
+    "contrastive",
+    "dilated",
+    "exponential",
+    "gelu-tanh",
+    "mae",
+    "xavier",
+    "xlarge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "schujon97 (Jonas Schulz) - Hugging Face",
+      "url": "https://huggingface.co/schujon97",
+      "snippet": "models1 schujon97/paper_008138024_knowledge_distillation Updated about 9 hours ago"
+    },
+    {
+      "title": "BERT-based_Chatbot - GitHub",
+      "url": "https://github.com/cbrwx/BERT-based_Chatbot",
+      "snippet": "This is a chatbot built using the BERT (Bidirectional Encoder Representations from Transformers) model. The chatbot is trained to respond to user queries based on predefined categories such as greetings, weather-related questions, and jokes."
+    },
+    {
+      "title": "HuggingChat - Chat with AI models",
+      "url": "https://huggingface.co/chat/",
+      "snippet": "Welcome to HuggingChat, the chat app powered by open source AI models. Omni automatically picks the best AI model to give you optimal answers depending on your requests. You can also choose from any available open source models to chat with directly."
+    },
+    {
+      "title": "yusof-shkn/BERT_CHAT_BOT - GitHub",
+      "url": "https://github.com/yusof-shkn/BERT_CHAT_BOT",
+      "snippet": "The BERT Smart Bot is an advanced conversational AI powered by the DistilBERT model, optimized for Russian language processing. - yusof-shkn/BERT_CHAT_BOT"
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/paralym/dllm/refs/heads/main/examples/bert/README.md",
+      "snippet": "# BERT [![Hugging Face Checkpoints](https://img.shields.io/badge/Hugging%20Face-Checkpoints-yellow)](https://huggingface.co/collections/dllm-hub/bert-chat) [![W&B ..."
+    }
+  ]
+}

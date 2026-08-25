@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "reproducible-ai/GR00T",
+  "slug": "reproducible-ai-gr00t",
+  "author": "reproducible-ai",
+  "url": "https://huggingface.co/reproducible-ai/GR00T",
+  "created_at": "2026-08-25T14:48:47.000Z",
+  "updated_at": "2026-08-25T16:34:30.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "reproducible-ai",
+    "dataset:lerobot/droid_1.0.1",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Isaac GR00T - Generalist Robot 00 Technology | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/isaac/gr00t",
+      "snippet": "NVIDIA Isaac GR00T Generalist Robot 00 Technology NVIDIA Isaac™ GR00T is an open reference platform for general-purpose humanoid robots that enables developers to more efficiently build, train, test, and deploy AI-powered robots. It comprises open data and data pipelines, an open robot foundation model, simulation frameworks, middleware, CUDA-X accelerated runtime libraries, and NVIDIA ..."
+    },
+    {
+      "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "url": "https://arxiv.org/abs/2503.14734",
+      "snippet": "A robot foundation model, trained on massive and diverse data sources, is essential for enabling the robots to reason about novel situations, robustly handle real-world variability, and rapidly learn new tasks. To this end, we introduce GR00T N1, an open foundation model for humanoid robots."
+    },
+    {
+      "title": "End-to-End Physical AI With the Unitree G1 - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/learning/physical-ai/gr00t-e2e-workflow/latest/index.html",
+      "snippet": "End-to-End Physical AI With the Unitree G1 # Physical AI is redefining how robots interact with the world. Humanoid robots are uniquely suited to operate in environments built for people, including reaching across tables and grasping everyday objects. This course introduces the GR00T reference workflow: a validated, open, and reproducible sim-first to deployment workflow for Unitree G1 ..."
+    },
+    {
+      "title": "sample-embodied-ai-platform/training/gr00t/README.md at main - GitHub",
+      "url": "https://github.com/aws-samples/sample-embodied-ai-platform/blob/main/training/gr00t/README.md",
+      "snippet": "An evolving, end-to-end reference for collecting and augmenting data, training, evaluating, and deploying embodied AI systems. Accelerate physical AI with cloud-first pipelines, reproducible workfl..."
+    }
+  ]
+}

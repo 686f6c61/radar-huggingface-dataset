@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "harshitaarora14/carbon-audit-demo",
+  "slug": "harshitaarora14-carbon-audit-demo",
+  "author": "harshitaarora14",
+  "url": "https://huggingface.co/harshitaarora14/carbon-audit-demo",
+  "created_at": "2026-08-25T17:18:32.000Z",
+  "updated_at": "2026-08-25T17:27:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harshitaarora14 (Harshita Arora) - Hugging Face",
+      "url": "https://huggingface.co/harshitaarora14",
+      "snippet": "Multimodal Qa Server 🚀 Create and customize a static web page harshitaarora14 about 7 hours ago"
+    },
+    {
+      "title": "carbon-audit-demo/README.md at main - GitHub",
+      "url": "https://github.com/24f3003125/carbon-audit-demo/blob/main/README.md",
+      "snippet": "Contribute to 24f3003125/carbon-audit-demo development by creating an account on GitHub."
+    },
+    {
+      "title": "Auditing AI model carbon and resource footprints | Suhas Bhairav",
+      "url": "https://suhasbhairav.com/blog/technical-auditing-of-ai-model-carbon-and-resource-footprints",
+      "snippet": "You can systematically measure and reduce the energy and carbon footprint of AI workloads in production by establishing multi-layer metrics, reproducible baselines, and governance that ties energy outcomes to architectural decisions."
+    },
+    {
+      "title": "GitHub - 24f3003125/carbon-audit-demo",
+      "url": "https://github.com/24f3003125/carbon-audit-demo",
+      "snippet": "Contribute to 24f3003125/carbon-audit-demo development by creating an account on GitHub."
+    },
+    {
+      "title": "24f1002603/carbon-audit-model · Hugging Face",
+      "url": "https://huggingface.co/24f1002603/carbon-audit-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

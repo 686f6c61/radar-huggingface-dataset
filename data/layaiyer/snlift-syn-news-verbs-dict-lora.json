@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/snliFT-syn-news-verbs-dict-lora",
+  "slug": "layaiyer-snlift-syn-news-verbs-dict-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/snliFT-syn-news-verbs-dict-lora",
+  "created_at": "2026-08-25T17:03:33.000Z",
+  "updated_at": "2026-08-25T17:04:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44515073,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/Politifact_fake_news-hyp-youtube-verbs-dict-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/Politifact_fake_news-hyp-youtube-verbs-dict-lora",
+      "snippet": "Instructions to use layaiyer/Politifact_fake_news-hyp-youtube-verbs-dict-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "layaiyer/snliFT-syn-youtube-all-dict · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/snliFT-syn-youtube-all-dict",
+      "snippet": "layaiyer / snliFT-syn-youtube-all-dict like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 7 Safetensors Model size 8B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Resolve a DOI Name",
+      "url": "https://dx.doi.org/",
+      "snippet": "Type or paste a known DOI name exactly—including its prefix and suffix—into the text box below and then &#x27;submit&#x27; to resolve it."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

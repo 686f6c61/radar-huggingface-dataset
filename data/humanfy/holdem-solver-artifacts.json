@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "humanfy/Holdem-Solver-Artifacts",
+  "slug": "humanfy-holdem-solver-artifacts",
+  "author": "humanfy",
+  "url": "https://huggingface.co/humanfy/Holdem-Solver-Artifacts",
+  "created_at": "2026-08-25T14:17:02.000Z",
+  "updated_at": "2026-08-25T15:39:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "poker",
+    "game-theory",
+    "cfr",
+    "texas-holdem",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47204266462,
+  "storage_human": "47.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Bay",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is a legal open AI artifact registry for models, datasets, apps, evals, and mirrors."
+    },
+    {
+      "title": "Humanify AI - Best AI Content Humanizer | Make AI Text 100% Human-Written",
+      "url": "https://www.humanify.ai/",
+      "snippet": "Humanify AI is the #1 AI content humanizer that makes AI-generated text fully human, natural, and undetectable. Turn robotic AI text into clean, SEO-friendly content."
+    },
+    {
+      "title": "GitHub - jehna/humanify: Deobfuscate Javascript code using ChatGPT",
+      "url": "https://github.com/jehna/humanify",
+      "snippet": "humanify Un-minify JavaScript code using LLMs (\"AI\") This tool uses large language models (like ChatGPT, Claude, Gemini, and locally-hosted Ollama models) to unminify and rename minified JavaScript code."
+    },
+    {
+      "title": "Best Poker AI Software: 2026 Comparison - gitnux.org",
+      "url": "https://gitnux.org/best/poker-ai-software/",
+      "snippet": "Postflopizer is the strongest overall pick for Poker AI Software in 2026, with Holdem Resources Calculator and Deepsolver rounding out the top 3."
+    }
+  ]
+}

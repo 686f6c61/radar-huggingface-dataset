@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/Politifact_fake_news-syn-news-verbs-dict-lora",
+  "slug": "layaiyer-politifact_fake_news-syn-news-verbs-dict-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/Politifact_fake_news-syn-news-verbs-dict-lora",
+  "created_at": "2026-08-25T18:25:29.000Z",
+  "updated_at": "2026-08-25T18:25:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44506881,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/Politifact_fake_news-syn-news-adjectives-dict-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/Politifact_fake_news-syn-news-adjectives-dict-lora",
+      "snippet": "Instructions to use layaiyer/Politifact_fake_news-syn-news-adjectives-dict-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use layaiyer/Politifact_fake_news-syn-news-adjectives-dict-lora with PEFT:"
+    },
+    {
+      "title": "layaiyer/Politifact_fake_news-syn-news-all-vanilla · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/Politifact_fake_news-syn-news-all-vanilla",
+      "snippet": "layaiyer / Politifact_fake_news-syn-news-all-vanilla like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 13 Safetensors Model size 8B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "Fake news - PolitiFact",
+      "url": "https://api.politifact.com/fake-news/",
+      "snippet": "PolitiFact is a fact-checking website that rates the accuracy of claims by elected officials and others on its Truth-O-Meter."
+    },
+    {
+      "title": "Fake news - PolitiFact",
+      "url": "https://www.politifact.com/fake-news/",
+      "snippet": "Taylor Swift vowed to leave Elon Musk&#x27;s \"toxic app X,\" during the final moments of her Eras tour, calling him \"rich, talented but heartless and immoral.\""
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

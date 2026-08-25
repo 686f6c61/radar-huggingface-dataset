@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "maanka2/Audio8-TTS-Preview-Pruned",
+  "slug": "maanka2-audio8-tts-preview-pruned",
+  "author": "maanka2",
+  "url": "https://huggingface.co/maanka2/Audio8-TTS-Preview-Pruned",
+  "created_at": "2026-08-25T14:38:48.000Z",
+  "updated_at": "2026-08-25T14:39:17.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arktts",
+    "feature-extraction",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72498240,
+  "parameters_human": "72.5M",
+  "storage_bytes": 1494870031,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maanka2/Audio8-TTS-Preview-0.1b · Hugging Face",
+      "url": "https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b",
+      "snippet": "The main generative model is approximately 170M parameters, while the codec decoder is a separate approximately 120M-parameter component. Even counting the codec decoder, the complete audio generation stack remains much smaller than most modern multilingual TTS systems."
+    },
+    {
+      "title": "Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale - GitHub",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "Audio8-TTS-Preview-0.6b - Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - prom3theu5/audio8_tts: SOTA-Class TTS at Compact Scale",
+      "url": "https://github.com/prom3theu5/audio8_tts",
+      "snippet": "This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning. Preview status: language coverage is intentionally limited in this release. Use the model primarily with the 11 recommended languages below."
+    },
+    {
+      "title": "Audio8-TTS-0.6B - Listening Preview",
+      "url": "https://audio8-ai.github.io/Audio8_TTS/",
+      "snippet": "Overview This page presents outputs from the current Audio8-TTS-.6B preview checkpoint. It includes the recommended language set, targeted pronunciation challenges, tongue twisters, complete classical Chinese works, cross-lingual cloning, and dense lexical tests. Reference audio The listening set combines difficult in-the-wild speech with cleaner expressive prompts. This mix separates ..."
+    }
+  ]
+}

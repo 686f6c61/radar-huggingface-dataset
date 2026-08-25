@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nvidia/Ising-Decoder-SurfaceCode-1-Accurate",
+  "slug": "nvidia-ising-decoder-surfacecode-1-accurate",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate",
+  "created_at": "2026-04-06T18:36:29.000Z",
+  "updated_at": "2026-08-25T17:47:03.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ising-decoding",
+  "languages": [],
+  "tags": [
+    "ising-decoding",
+    "quantum",
+    "qec",
+    "error_correction",
+    "decoders",
+    "Ising Decoding",
+    "arxiv:2604.12841",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3596688,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Ising-Decoder-SurfaceCode-1-Accurate · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/Ising-Decoder-SurfaceCode-1-Accurate at main",
+      "url": "https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NVIDIA/Ising-Decoding: A set of training recipes for AI ...",
+      "url": "https://github.com/NVIDIA/Ising-Decoding",
+      "snippet": "MODEL_ID is the public model identifier — 1-5 for surface-code checkpoints, or B for the color-code cascade model; see model/registry.py for the mapping. Color-code convolutional checkpoints (model_id 1/2/4/5 trained with code: color) are not supported by this converter — color training widens the final conv layer, so the rebuilt surface ..."
+    },
+    {
+      "title": "Ising-Decoder-SurfaceCode-1-Accurate.pt - GitHub",
+      "url": "https://github.com/NVIDIA/Ising-Decoding/blob/main/models/Ising-Decoder-SurfaceCode-1-Accurate.pt",
+      "snippet": "A training framework for AI Quantum Error Correction Decoders - Ising-Decoding/models/Ising-Decoder-SurfaceCode-1-Accurate.pt at main · NVIDIA/Ising-Decoding"
+    },
+    {
+      "title": "Decoder Models: Ising-Decoder-SurfaceCode-1 | NVIDIA/Ising | DeepWiki",
+      "url": "https://deepwiki.com/NVIDIA/Ising/2.2-decoder-models:-ising-decoder-surfacecode-1",
+      "snippet": "Decoder Models: Ising-Decoder-SurfaceCode-1 Model Variants and Architecture Accuracy vs. Latency Trade-off Technical Workflow: From Syndrome to Correction Data Flow and Code Entities Implementation and Tutorials Ising-Decoder-Tutorial (predecoder.ipynb) Deployment and Access"
+    }
+  ]
+}

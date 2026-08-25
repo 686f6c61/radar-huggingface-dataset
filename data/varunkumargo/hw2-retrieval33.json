@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "varunkumargo/hw2-retrieval33",
+  "slug": "varunkumargo-hw2-retrieval33",
+  "author": "varunkumargo",
+  "url": "https://huggingface.co/varunkumargo/hw2-retrieval33",
+  "created_at": "2026-08-25T17:41:57.000Z",
+  "updated_at": "2026-08-25T17:42:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "bulleted",
+    "detailed-descriptive",
+    "efficient-attention",
+    "footnote",
+    "latex-arxiv",
+    "measured",
+    "passive",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anlp-spring2026-hw2/retrieval/hybrid.py at main - GitHub",
+      "url": "https://github.com/eseudieu/anlp-spring2026-hw2/blob/main/retrieval/hybrid.py",
+      "snippet": "hw2. Contribute to eseudieu/anlp-spring2026-hw2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hw2 ai Object Detection Model by my ai cnn workplace",
+      "url": "https://universe.roboflow.com/my-ai-cnn-workplace/hw2-ai",
+      "snippet": "80 open source objects images plus a pre-trained hw2 ai model and API. Created by my ai cnn workplace"
+    },
+    {
+      "title": "GitHub - appleweiping/cmu11667-llms: From-skeleton implementations of ...",
+      "url": "https://github.com/appleweiping/cmu11667-llms/",
+      "snippet": "HW2: pytest tests/ → 19 pass (16 scored @max_score across model, tokenizer, generate, train; plus 3 unscored HF-tokenizer property demos). The 100-merge BPE test reproduces the reference merge rules exactly on tiny-shakespeare&#x27;s train split. test_env.py is a pip-freeze environment checker unrelated to the code and is skipped."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

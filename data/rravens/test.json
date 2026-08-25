@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RRavens/Test",
+  "slug": "rravens-test",
+  "author": "RRavens",
+  "url": "https://huggingface.co/RRavens/Test",
+  "created_at": "2026-08-25T15:07:36.000Z",
+  "updated_at": "2026-08-25T15:18:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1503300328,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "IOS Press Ebooks - Solving Raven&#x27;s IQ-tests: An AI and Cognitive ...",
+      "url": "https://ebooks.iospress.nl/pdf/doi/10.3233/978-1-61499-098-7-666",
+      "snippet": "Abstract Human reasoners have an impressive ability to solve analogical reasoning problems and they still outperform computational systems. Analogical reasoning is relevant in dealing with intelligence tests. There are two kinds of approaches: to solve IQ-test problems in a way similar to humans (i.e., a cognitive approach) or to solve these problems optimally (i.e., the AI approach). Most ..."
+    },
+    {
+      "title": "Raven-Test-AI/RavensProject.py at master - GitHub",
+      "url": "https://github.com/dhurng/Raven-Test-AI/blob/master/RavensProject.py",
+      "snippet": "An AI agent that can solve Raven Tests, visual iq tests - Raven-Test-AI/RavensProject.py at master · dhurng/Raven-Test-AI"
+    },
+    {
+      "title": "Solving Raven&#x27;s IQ-tests: An AI and cognitive modeling approach",
+      "url": "https://www.researchgate.net/publication/288211280_Solving_Raven's_IQ-tests_An_AI_and_cognitive_modeling_approach",
+      "snippet": "Request PDF | Solving Raven&#x27;s IQ-tests: An AI and cognitive modeling approach | Human reasoners have an impressive ability to solve analogical reasoning problems and they still outperform ..."
+    },
+    {
+      "title": "An AI Agent to Solve Raven&#x27;s Progressive Matrices",
+      "url": "https://laurn.dev/projects/ravens-progressive-matrices/",
+      "snippet": "Description of creating an AI agent with human-like intelligence for solving the Raven&#x27;s Progressive Matrices problems."
+    }
+  ]
+}

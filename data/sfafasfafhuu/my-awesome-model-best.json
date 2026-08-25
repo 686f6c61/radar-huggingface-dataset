@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sfafasfafhuu/my-awesome-model-best",
+  "slug": "sfafasfafhuu-my-awesome-model-best",
+  "author": "sfafasfafhuu",
+  "url": "https://huggingface.co/sfafasfafhuu/my-awesome-model-best",
+  "created_at": "2026-08-25T13:04:49.000Z",
+  "updated_at": "2026-08-25T13:50:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfsfff22/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sfsfff22/MyAwesomeModel",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "saaffs454/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/saaffs454/MyAwesomeModel",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - openbestof/awesome-ai: A curated list of awesome AI tools ...",
+      "url": "https://github.com/openbestof/awesome-ai",
+      "snippet": "A curated list of awesome AI tools, frameworks, api, software and resources."
+    }
+  ]
+}

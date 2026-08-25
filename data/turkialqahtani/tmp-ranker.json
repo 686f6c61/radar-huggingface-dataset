@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TurkiAlqahtani/tmp-ranker",
+  "slug": "turkialqahtani-tmp-ranker",
+  "author": "TurkiAlqahtani",
+  "url": "https://huggingface.co/TurkiAlqahtani/tmp-ranker",
+  "created_at": "2026-08-25T17:16:47.000Z",
+  "updated_at": "2026-08-25T17:16:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "bilinear",
+    "dino",
+    "gelu",
+    "grouped-query",
+    "layernorm",
+    "linear-warmup",
+    "retrieval",
+    "small",
+    "trunc-normal",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 405 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "ModelRank AI - GitHub",
+      "url": "https://github.com/chenjy16/modelrank_ai",
+      "snippet": "ModelRank AI 🏆 This is an automatically updated open-source large language model leaderboard with data sourced from HuggingFace. Through this project, you can easily view and compare the performance of various large language models."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

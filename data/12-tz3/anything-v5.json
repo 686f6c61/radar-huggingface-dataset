@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "12-tz3/anything-v5",
+  "slug": "12-tz3-anything-v5",
+  "author": "12-tz3",
+  "url": "https://huggingface.co/12-tz3/anything-v5",
+  "created_at": "2026-08-25T18:05:50.000Z",
+  "updated_at": "2026-08-25T18:05:50.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stablediffusionapi.com",
+    "stable-diffusion-api",
+    "text-to-image",
+    "ultra-realistic",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 16108923808,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anything V5 API — Anime Stable Diffusion Model, Free Tier",
+      "url": "https://stablediffusionapi.com/models/anything-v5",
+      "snippet": "Generate anime art with Anything V5 via the Stable Diffusion API — free tier, REST endpoint, model_id \"anything-v5\", cURL/Python/Node samples. No download or GPU required."
+    },
+    {
+      "title": "stablediffusionapi/anything-v5 · Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/anything-v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "genai-archive/anything-v5 · Hugging Face",
+      "url": "https://huggingface.co/genai-archive/anything-v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anythingv5 AI Models | Civitai",
+      "url": "https://civitai.com/tag/anythingv5",
+      "snippet": "anythingv5 Browse 4 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with anythingv5."
+    },
+    {
+      "title": "Anything V5 - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/tensorart/models/636436281485913520/versions/636436281485913520",
+      "snippet": "Download Anything V5 - CHECKPOINT for SD 1.5 by 619248324880555613. Free AI model download from CivArchive."
+    }
+  ]
+}

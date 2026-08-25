@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Omega-Evolution-70B-v2.1-i1-GGUF",
+  "slug": "mradermacher-omega-evolution-70b-v2-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega-Evolution-70B-v2.1-i1-GGUF",
+  "created_at": "2026-08-25T15:28:15.000Z",
+  "updated_at": "2026-08-25T17:36:18.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Omega-Evolution-70B-v2.1",
+    "base_model:quantized:ReadyArt/Omega-Evolution-70B-v2.1",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 347323833728,
+  "storage_human": "347.3 GB",
+  "base_model": "ReadyArt/Omega-Evolution-70B-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified&search=70b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Omega-Evolution-70B-v2.1 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/readyart-omega-evolution-70b-v2-1",
+      "snippet": "Omega-Evolution-70B-v2.1 install Omega-Evolution-70B-v2.1 is an open source model from GitHub that offers a free installation service, and any user can find Omega-Evolution-70B-v2.1 on GitHub to install."
+    },
+    {
+      "title": "ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1",
+      "url": "https://featherless.ai/models/ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1",
+      "snippet": "ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1 is a 70 billion parameter language model, fine-tuned from Steelskull/L3.3-Shakudo-70b, featuring a 32768 token context window. It is specifically designed for extreme roleplay and narrative coherence, utilizing a 100% &#x27;unslopped&#x27; 39M token dataset for enhanced unalignment and character integrity. This model excels at long-form, multi-character ..."
+    },
+    {
+      "title": "ScrambieBambie/L3.3-The-Omega-Directive-70B-Unslop-v2.0-i1-Q4_K_M",
+      "url": "https://ollama.com/ScrambieBambie/L3.3-The-Omega-Directive-70B-Unslop-v2.0-i1-Q4_K_M",
+      "snippet": "Choose the model from the list and then use the link (or click on the copy icon next to it&#x27;s name) - The link on the main site in the top right will not work!!!"
+    }
+  ]
+}

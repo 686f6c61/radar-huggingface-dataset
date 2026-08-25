@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ncylich/temporal-moe-extras",
+  "slug": "ncylich-temporal-moe-extras",
+  "author": "ncylich",
+  "url": "https://huggingface.co/ncylich/temporal-moe-extras",
+  "created_at": "2026-07-27T22:32:54.000Z",
+  "updated_at": "2026-08-25T17:44:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2505.20225",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55123698402,
+  "storage_human": "55.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ncylich/temporal-moe-extras · Hugging Face",
+      "url": "https://huggingface.co/ncylich/temporal-moe-extras",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ncylich/temporal-moe: Temporal Mixture-of-Experts: serving ...",
+      "url": "https://github.com/ncylich/temporal-moe",
+      "snippet": "Temporal MoE trains the model under a rolling-residency constraint that keeps only the k active experts of each layer resident and swaps at most one expert per token, so the incoming expert streams in behind the compute of the ones already there. Serving memory then scales with active parameters instead of total parameters."
+    },
+    {
+      "title": "temporal-moe/README.md at main · ncylich/temporal-moe · GitHub",
+      "url": "https://github.com/ncylich/temporal-moe/blob/main/README.md",
+      "snippet": "A sparse MoE computes only k experts per token but still needs the whole expert pool in fast memory to serve. Temporal MoE trains the model under a rolling-residency constraint that keeps only the k active experts of each layer resident and swaps at most one expert per token, so the incoming expert streams in behind the compute of the ones ..."
+    },
+    {
+      "title": "ncylich/temporal-moe-corpus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ncylich/temporal-moe-corpus",
+      "snippet": "Companion repositories ncylich/temporal-moe-ckpts, Megatron training checkpoints ncylich/temporal-moe-router-adapt, router adaptation safetensors ncylich/temporal-moe-extras, captures, merged model, result tables, figures ncylich/temporal-moe-corpus, tokenized training corpus"
+    },
+    {
+      "title": "Models.MoE - Keeps track of latest open-source MoE LLMs.",
+      "url": "https://models.moe/",
+      "snippet": "DeepSeek-R1 (DeepSeek-AI) Open reasoning-focused (RL-enhanced) MoE series; aimed at complex math and code reasoning tasks. 671B total / 37B active; native 128K context; provides a thinking mode (<think>…</think>). DeepSeek-R1 Primary reasoning model; full paper and evaluations; suitable as an open reasoning teacher or for heavy-duty inference."
+    }
+  ]
+}

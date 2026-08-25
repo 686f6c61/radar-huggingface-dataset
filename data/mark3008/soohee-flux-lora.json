@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mark3008/soohee-flux-lora",
+  "slug": "mark3008-soohee-flux-lora",
+  "author": "Mark3008",
+  "url": "https://huggingface.co/Mark3008/soohee-flux-lora",
+  "created_at": "2026-08-25T12:33:36.000Z",
+  "updated_at": "2026-08-25T12:33:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130958064,
+  "storage_human": "131 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLabs-AI/flux-lora-collection · Hugging Face",
+      "url": "https://huggingface.co/XLabs-AI/flux-lora-collection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux LoRA Model Library",
+      "url": "https://flux-lora.com/",
+      "snippet": "Browse and compare the latest Flux LoRA models. Find the Flux LoRA that suits your needs and further enhance your Flux model generation experience."
+    },
+    {
+      "title": "Han Sohee FLUX - V1.0 FLUX - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/780354321972750615",
+      "snippet": "Download Han Sohee FLUX - free LORA FLUX.1 AI model on TENSORHUB ART. FLUX, KOREAN ACTRESS, HAN SO HEE. By leoantares"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

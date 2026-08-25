@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "specklabs/Speck1.1-140M-Instruct",
+  "slug": "specklabs-speck1-1-140m-instruct",
+  "author": "specklabs",
+  "url": "https://huggingface.co/specklabs/Speck1.1-140M-Instruct",
+  "created_at": "2026-08-25T13:47:38.000Z",
+  "updated_at": "2026-08-25T13:51:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speck",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140654208,
+  "parameters_human": "140.7M",
+  "storage_bytes": 281825539,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "specklabs/Speck1-140M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1-140M-Instruct",
+      "snippet": "Speck1-140M-Instruct is a 140.7M parameter English instruction-tuned language model. It was initialized from Speck1-140M, a hybrid model that interleaves global grouped-query attention with gated causal convolution, then fully fine-tuned for one epoch on SpeckChat1."
+    },
+    {
+      "title": "specklabs/Speck1-140M · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1-140M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "@AtAndDev on Hugging Face: \"FIRST SPECK MODEL RELEASED: https ...",
+      "url": "https://huggingface.co/posts/AtAndDev/263298554349347",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Speck1",
+      "url": "https://www.speck1.com/",
+      "snippet": "WEB & APPLICATION DEVELOPMENT IT STAFF AUGMENTATION STARTUP CTO info@speck1.com © Copyright SPECK1 LLC. All rights reserved."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

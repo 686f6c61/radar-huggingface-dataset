@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kckrish21/SciHigh2026-Task2-PEGASUS-XSum",
+  "slug": "kckrish21-scihigh2026-task2-pegasus-xsum",
+  "author": "kckrish21",
+  "url": "https://huggingface.co/kckrish21/SciHigh2026-Task2-PEGASUS-XSum",
+  "created_at": "2026-08-25T11:18:33.000Z",
+  "updated_at": "2026-08-25T11:21:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pegasus",
+    "text2text-generation",
+    "title-generation",
+    "scientific-text",
+    "summarization",
+    "scihigh-2026",
+    "fire-2026",
+    "base_model:google/pegasus-xsum",
+    "base_model:finetune:google/pegasus-xsum",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 569844583,
+  "parameters_human": "569.8M",
+  "storage_bytes": 2279463933,
+  "storage_human": "2.3 GB",
+  "base_model": "google/pegasus-xsum",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/pegasus-xsum · Hugging Face",
+      "url": "https://huggingface.co/google/pegasus-xsum",
+      "snippet": "The \"Mixed & Stochastic\" model has the following changes: trained on both C4 and HugeNews (dataset mixture is weighted by their number of examples). trained for 1.5M instead of 500k (we observe slower convergence on pretraining perplexity). the model uniformly sample a gap sentence ratio between 15% and 45%. importance sentences are sampled using a 20% uniform noise to importance scores. the ..."
+    },
+    {
+      "title": "Pegasus · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/pegasus",
+      "snippet": "Pegasus is an encoder-decoder (sequence-to-sequence) transformer model pretrained on unlabeled text to perform abstractive summarization. Pegasus is trained jointly on two self-supervised objective functions, masked language modeling (MLM) and gap sentence generation (GSG)."
+    },
+    {
+      "title": "GitHub - saki601/Filename_SQUATCH",
+      "url": "https://github.com/saki601/Filename_SQUATCH",
+      "snippet": "This project focuses on performing abstractive summarization and keyphrase generation on scientific abstracts using the google/pegasus-xsum model. We fine-tune the model efficiently using Low-Rank Adaptation (LoRA), making it suitable for training on consumer-grade hardware such as Google Colab."
+    },
+    {
+      "title": "pegasus-xsum · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/pegasus-xsum",
+      "snippet": "Transforming lengthy textual content into concise and meaningful summaries is the essence of this project. Leveraging the power of the Pegasus model, our abstractive text summarization repository aims to distill complex information into succinct and coherent summaries. Pegasus, state-of-the-art pre ..."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

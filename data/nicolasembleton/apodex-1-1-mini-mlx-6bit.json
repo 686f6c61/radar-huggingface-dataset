@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nicolasembleton/Apodex-1.1-mini-MLX-6bit",
+  "slug": "nicolasembleton-apodex-1-1-mini-mlx-6bit",
+  "author": "nicolasembleton",
+  "url": "https://huggingface.co/nicolasembleton/Apodex-1.1-mini-MLX-6bit",
+  "created_at": "2026-08-25T16:09:27.000Z",
+  "updated_at": "2026-08-25T16:41:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "moe",
+    "6-bit",
+    "text-generation",
+    "conversational",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7584230528,
+  "parameters_human": "7.58B",
+  "storage_bytes": 28188612444,
+  "storage_human": "28.2 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abenzerps/Apodex-1.1-mini-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Apodex-1.1-mini-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://arxiv.org/abs/2608.23283",
+      "snippet": "Across complex professional work, finance, scientific research, mathematics, coding, and search, Apodex 1.1 reaches the leading performance band despite using a substantially smaller model than many frontier systems. The 35B-parameter Apodex 1.1 Mini further retains strong working capability in a locally deployable form."
+    },
+    {
+      "title": "Apodex 1.1 Mini Benchmarks & Context (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/apodex-1-1-mini",
+      "snippet": "Apodex 1.1 Mini has 2 source-displayable benchmark rows but no public overall score. See the evidence, pricing, context, and specs."
+    },
+    {
+      "title": "Apodex 1.1: Agent Team Mode + Open FrontierAgent (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/apodex-1-1-agent-team-frontieragent-august-2026",
+      "snippet": "August 24, 2026 — Apodex shipped Apodex 1.1, two months after Apodex-1.0-mini topped the FutureX leaderboard running on open 35B weights. The headline change is not raw benchmark lift — it&#x27;s where the multi-agent behavior lives. Apodex 1.1&#x27;s asynchronous Agent Team is a trained capability inside the model, not an orchestration script wrapped around it, and it comes with an open-source ..."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.com/",
+      "snippet": "To research, solve, and discover at the frontier requires more than model capacity — it requires rigorous reasoning, each step verified. Apodex is an AI system designed for complex and demanding research tasks. It structurally splits the reasoning solver from the verifier to deliver grounded, auditable intelligence across three distinct capability tiers."
+    }
+  ]
+}

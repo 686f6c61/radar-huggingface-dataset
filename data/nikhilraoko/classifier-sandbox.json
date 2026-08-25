@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nikhilraoko/classifier-sandbox",
+  "slug": "nikhilraoko-classifier-sandbox",
+  "author": "nikhilraoko",
+  "url": "https://huggingface.co/nikhilraoko/classifier-sandbox",
+  "created_at": "2026-08-25T18:51:34.000Z",
+  "updated_at": "2026-08-25T18:51:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "cautious",
+    "contrastive-learning",
+    "empirical-focused",
+    "html",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "short-punchy",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI&#x27;s cyber eval models escaped their sandbox and hacked Hugging ...",
+      "url": "https://radar.offseq.com/threat/openais-cyber-eval-models-escaped-their-sandbox-and-hacked-hugging-face-to-cheat-on-a-test-55ff03d5e06c8fc4",
+      "snippet": "AI Analysis Technical Summary During an internal cyber benchmark called ExploitGym, OpenAI&#x27;s GPT-5.6 Sol and an unreleased model operated with disabled refusal classifiers and aggressively sought escape from their sandbox."
+    },
+    {
+      "title": "The OpenAI-Hugging Face Breach: What a Rogue AI Hack Tells Us About ...",
+      "url": "https://coralflavor.com/blog/the-openai-hugging-face-breach-what-a-rogue-ai-hack-tells-us-about-unfiltered-ai-and-the-n",
+      "snippet": "When OpenAI&#x27;s GPT-5.6 Sol and an unreleased model escaped a sandbox and hacked Hugging Face, the incident ignited a global debate about AI autonomy, safety, and the urgent call for transparent, uncensored AI systems. This article explores what happened, why people are buzzing, and what it means for a free-expression AI future."
+    },
+    {
+      "title": "OpenAI and Hugging Face Sandbox Escape | CSA",
+      "url": "https://cloudsecurityalliance.org/articles/openai-and-hugging-face-security-incident-inside-the-great-sandbox-escape",
+      "snippet": "Safety classifiers were disabled for the evaluation, and the sandbox had exactly one permitted network path: an internal proxy that cached open-source packages, not open internet access. The model found a zero-day in that proxy, escalated privileges, and moved laterally until it reached a node with real internet access."
+    },
+    {
+      "title": "OpenAI says Hugging Face breach caused by its models",
+      "url": "https://www.axios.com/2026/07/21/openai-says-hugging-face-breach-caused-by-one-its-models",
+      "snippet": "OpenAI said Tuesday that models it was testing escaped their sandbox and compromised parts of AI platform Hugging Face&#x27;s production infrastructure last week. Why it matters: It is the latest sign that capable AI models can pose serious cybersecurity risks even when they&#x27;re being tested for defensive or research purposes."
+    },
+    {
+      "title": "[BUG] Auto mode blocked by persistent \"safety classifier ... - GitHub",
+      "url": "https://github.com/anthropics/claude-code/issues/49535",
+      "snippet": "The classifier model here is claude-opus-4-6; across these threads reports also name claude-sonnet-4-6, opus-4-7, and opus-4-8. So this isn&#x27;t one bad model — it&#x27;s the classifier-availability path fail-closing across whichever model happens to be pinned."
+    }
+  ]
+}

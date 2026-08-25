@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Justartemzaytsev94/tts-demo",
+  "slug": "justartemzaytsev94-tts-demo",
+  "author": "Justartemzaytsev94",
+  "url": "https://huggingface.co/Justartemzaytsev94/tts-demo",
+  "created_at": "2026-08-25T17:45:31.000Z",
+  "updated_at": "2026-08-25T17:45:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cautious",
+    "endnote",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "passive",
+    "short-punchy",
+    "text-image-retrieval",
+    "typst",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI Text to Speech Online - 36+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 36+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    },
+    {
+      "title": "Text to Speech: AI Voice Reader & Generator | Google AI Studio",
+      "url": "https://aistudio.google.com/learn/text-to-speech",
+      "snippet": "How to Build a Custom Text to Speech AI Voice Generator in AI Studio Go from idea to a working text-to-speech app in minutes - just describe what you want and Gemini builds it for you. No coding required."
+    },
+    {
+      "title": "TTS.ai - Free AI Voice Platform | Text to Speech, Voice Cloning, Speech ...",
+      "url": "https://tts.ai/",
+      "snippet": "TTS.ai is the most comprehensive AI voice platform with 36+ TTS models, voice cloning, speech-to-text, and audio tools. Free text to speech online powered by open-source AI."
+    },
+    {
+      "title": "ModelTalker Interactive Demo",
+      "url": "https://www.modeltalker.org/demo/",
+      "snippet": "ModelTalker Interactive Demo Below is an interactive text-to-speech form** that demonstrates ModelTalker with different talkers (some professional) and different versions of our TTS engine."
+    }
+  ]
+}

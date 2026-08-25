@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "merileijona/quantumgpt-124m-v3",
+  "slug": "merileijona-quantumgpt-124m-v3",
+  "author": "merileijona",
+  "url": "https://huggingface.co/merileijona/quantumgpt-124m-v3",
+  "created_at": "2026-08-25T14:24:57.000Z",
+  "updated_at": "2026-08-25T14:26:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "quantum-computing",
+    "qasm",
+    "code-generation",
+    "openqasm",
+    "quantum-circuits",
+    "en",
+    "dataset:merileijona/quantum-circuits-21k",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124082688,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496345728,
+  "storage_human": "496 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "merileijona/quantumgpt-124m · Hugging Face",
+      "url": "https://huggingface.co/merileijona/quantumgpt-124m",
+      "snippet": "QuantumGPT-124M is a GPT-2 architecture language model trained specifically for generating quantum circuits in OpenQASM 2.0 format from natural language descriptions."
+    },
+    {
+      "title": "QuantumGPT — Quantum Circuit Generation - a merileijona Collection",
+      "url": "https://huggingface.co/collections/merileijona/quantumgpt-quantum-circuit-generation",
+      "snippet": "Three GPT-style models trained from scratch on two OpenQASM 2 datasets."
+    },
+    {
+      "title": "merileijona/quantumgpt-124m API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/merileijona/quantumgpt-124m",
+      "snippet": "merileijona quantumgpt-124m Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "GitHub - juhanimerilehto/quantumgpt: Repository for running QuantumGPT ...",
+      "url": "https://github.com/juhanimerilehto/quantumgpt",
+      "snippet": "This model was built as part of a data scaling study for quantum circuit language modeling. The full methodology is described in: QuantumGPT: A Data Scaling Study for Quantum Circuit Generation, Merilehto 2026."
+    },
+    {
+      "title": "quantumgpt/README.md at master · juhanimerilehto/quantumgpt",
+      "url": "https://github.com/juhanimerilehto/quantumgpt/blob/master/README.md",
+      "snippet": "QuantumGPT-124M ... A 124-million-parameter language model trained from scratch on synthetic quantum circuit data. Give it a description in plain English. It returns valid OpenQASM 2.0. This is the terminal point of the pipeline: the interface between human intent and quantum gate sequences. The weights encode a grammar of gates; the prompt ..."
+    }
+  ]
+}

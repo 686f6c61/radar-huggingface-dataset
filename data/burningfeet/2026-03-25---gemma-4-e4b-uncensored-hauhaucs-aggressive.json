@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "burningfeet/2026-03-25-.-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+  "slug": "burningfeet-2026-03-25---gemma-4-e4b-uncensored-hauhaucs-aggressive",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/2026-03-25-.-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-08-25T12:06:25.000Z",
+  "updated_at": "2026-08-25T12:06:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "abliterated",
+    "vision",
+    "multimodal",
+    "audio",
+    "image-text-to-text",
+    "en",
+    "multilingual",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 61606110816,
+  "storage_human": "61.6 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E4b Uncensored Hauhaucs Aggressive - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-uncensored-hauhaucs-aggressive.html",
+      "snippet": "Download Gemma 4 E4b Uncensored Hauhaucs Aggressive GGUF model. 2.36 GB, 2,193,827 downloads, 1019 likes."
+    },
+    {
+      "title": "Gemma releases - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "snippet": "Release of MedGemma 27B parameter multimodal model. June 26, 2025 Release of Gemma 3n in E2B and E4B sizes. May 20, 2025 Release of MedGemma in 4B and 27B parameter sizes. March 10, 2025 Release of Gemma 3 in 1B, 4B, 12B and 27B sizes. Release of ShieldGemma 2. February 19, 2025 Release of PaliGemma 2 mix in 3B, 10B, and 28B parameter sizes ..."
+    }
+  ]
+}

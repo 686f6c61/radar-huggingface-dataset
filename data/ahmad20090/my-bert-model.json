@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ahmad20090/my-bert-model",
+  "slug": "ahmad20090-my-bert-model",
+  "author": "ahmad20090",
+  "url": "https://huggingface.co/ahmad20090/my-bert-model",
+  "created_at": "2026-08-25T14:41:44.000Z",
+  "updated_at": "2026-08-25T14:42:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codesiddhant/my-bert-model · Hugging Face",
+      "url": "https://huggingface.co/codesiddhant/my-bert-model",
+      "snippet": "codesiddhant / my-bert-model like 0 Text Classification Transformers TensorBoard Safetensors bert Generated from Trainer License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model my-bert-model Model description Intended uses & limitations Training and evaluation data Training procedure ..."
+    },
+    {
+      "title": "My Bert Model - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/sgugger/my-bert-model",
+      "snippet": "Deep dive into My Bert Model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=BERT",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "A Complete Guide to BERT with Code - Towards Data Science",
+      "url": "https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11/",
+      "snippet": "The original BERT model was released shortly after OpenAI&#x27;s Generative Pre-trained Transformer (GPT), with both building on the work of the Transformer architecture proposed the year prior."
+    },
+    {
+      "title": "transformers/src/transformers/models/bert/modeling_bert.py at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/bert/modeling_bert.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and ..."
+    }
+  ]
+}

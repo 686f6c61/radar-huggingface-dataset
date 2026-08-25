@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "musc1es/1787678130",
+  "slug": "musc1es-1787678130",
+  "author": "musc1es",
+  "url": "https://huggingface.co/musc1es/1787678130",
+  "created_at": "2026-08-25T17:15:30.000Z",
+  "updated_at": "2026-08-25T17:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "albedo",
+    "sn97",
+    "qwen3",
+    "conversational",
+    "base_model:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "base_model:finetune:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69334123006,
+  "storage_human": "69.3 GB",
+  "base_model": "dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Muscle Guys (@aimuscleguys) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aimuscleguys/",
+      "snippet": "88K Followers, 401 Following, 629 Posts - AI Muscle Guys (@aimuscleguys) on Instagram: \"Photorealistic bodybuilders made with AI 🎨 Each guy comes with a hand written bio\""
+    },
+    {
+      "title": "Ai Muscle Girl (@ai_muscle_girl) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai_muscle_girl/reels/",
+      "snippet": "27K Followers, 205 Following, 1,295 Posts - Ai Muscle Girl (@ai_muscle_girl) on Instagram: \"\""
+    },
+    {
+      "title": "GitHub - amathislab/musclemimic: Official repo of Towards Embodied AI ...",
+      "url": "https://github.com/amathislab/musclemimic",
+      "snippet": "Official repo of Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale - amathislab/musclemimic"
+    },
+    {
+      "title": "Female Muscle Morph Animations — muscle82002ai&#x27;s ... - DeviantArt",
+      "url": "https://www.deviantart.com/muscle82002ai/favourites/82828918/female-muscle-morph-animations",
+      "snippet": "muscle82002ai&#x27;s Female Muscle Morph Animations — a curated art collection on DeviantArt. 3830 works of art."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

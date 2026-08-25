@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dudeman2512/Qwen3.8-2.4T-A95B-FP8",
+  "slug": "dudeman2512-qwen3-8-2-4t-a95b-fp8",
+  "author": "dudeman2512",
+  "url": "https://huggingface.co/dudeman2512/Qwen3.8-2.4T-A95B-FP8",
+  "created_at": "2026-08-22T15:37:57.000Z",
+  "updated_at": "2026-08-25T13:54:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "quantized",
+    "compressed-tensors",
+    "vllm",
+    "fp8",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B",
+    "base_model:quantized:Qwen/Qwen3.8-2.4T-A95B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1098765711864,
+  "storage_human": "1098.8 GB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dudeman2512/Qwen3.8-2.4T-A95B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/dudeman2512/Qwen3.8-2.4T-A95B-FP8",
+      "snippet": "fp8 quantization of Qwen/Qwen3.8-2.4T-A95B, produced with compressed-tensors by streaming the checkpoint tensor-by-tensor (the model is never fully instantiated)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "Overview Qwen3.8-2.4T-A95B is a 2.4-trillion-parameter Mixture-of-Experts model with roughly 95B parameters active per token — 512 routed experts with 10 active, plus one shared expert, over a 92-layer hybrid-attention backbone. The layer mix is the interesting part."
+    },
+    {
+      "title": "Qwen3.8-2.4T-A95B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-2.4t-a95b",
+      "snippet": "Qwen3.8-2.4T-A95B is the open-source release of Qwen&#x27;s latest flagship, launched August 2026. Its sparse MoE architecture holds 2.4T total parameters with ~95B activated per step, paired with hybrid attention and a 1M token context window."
+    },
+    {
+      "title": "dynamo/recipes/qwen3.8-2.4t-a95b at main · ai-dynamo/dynamo",
+      "url": "https://github.com/ai-dynamo/dynamo/tree/main/recipes/qwen3.8-2.4t-a95b",
+      "snippet": "Recipes for Qwen3.8-2.4T-A95B on Dynamo + vLLM and SGLang. Qwen3.8-2.4T-A95B is a hybrid gated-delta-net + MoE model: gated delta-net (GDN, linear attention with a short convolution state) interleaved with full grouped-query attention (GQA), a 512-expert MoE, and a 262,144-token context. Weights are FP8."
+    }
+  ]
+}

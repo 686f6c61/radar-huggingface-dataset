@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Laplace1313/DeepSeek-V4-Flash-0731-JA-REAP-K216-EXL3-3bpw-DGX-Spark",
+  "slug": "laplace1313-deepseek-v4-flash-0731-ja-reap-k216-exl3-3bpw-dgx-spark",
+  "author": "Laplace1313",
+  "url": "https://huggingface.co/Laplace1313/DeepSeek-V4-Flash-0731-JA-REAP-K216-EXL3-3bpw-DGX-Spark",
+  "created_at": "2026-08-25T14:04:51.000Z",
+  "updated_at": "2026-08-25T15:34:03.000Z",
+  "license": "mixed-mit-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "deepseek_v4",
+    "deepseek-v4",
+    "exl3",
+    "exllamav3",
+    "reap",
+    "expert-pruning",
+    "mixture-of-experts",
+    "dgx-spark",
+    "japanese",
+    "tool-calling",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59971342598,
+  "parameters_human": "59.97B",
+  "storage_bytes": 109331914278,
+  "storage_human": "109.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0xSero/deepseek-v4-flash-0731-spark · Hugging Face",
+      "url": "https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows."
+    },
+    {
+      "title": "deepseek-ai / deepseek-v4-flash-0731",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows. It supports a one-million-token context and includes an attached speculative decoding module. This model is ready for commercial or non-commercial use."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 · Models",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    }
+  ]
+}

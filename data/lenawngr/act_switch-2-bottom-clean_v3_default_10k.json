@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_SWITCH-2-bottom-clean_v3_default_10k",
+  "slug": "lenawngr-act_switch-2-bottom-clean_v3_default_10k",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_SWITCH-2-bottom-clean_v3_default_10k",
+  "created_at": "2026-08-25T13:48:24.000Z",
+  "updated_at": "2026-08-25T13:49:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lenawngr/SWITCH-2-bottom_clean",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lenawngr/ACT_switch-2-bottom_v2 · Hugging Face",
+      "url": "https://huggingface.co/lenawngr/ACT_switch-2-bottom_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lenawngr/SWITCH-2-bottom_clean · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lenawngr/SWITCH-2-bottom_clean",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D assets with Krea&#x27;s creative AI suite. Start for free with real-time tools, powerful models, and collaborative workflows."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skblv/lemonfm-linear-probes-surgical-video",
+  "slug": "skblv-lemonfm-linear-probes-surgical-video",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/lemonfm-linear-probes-surgical-video",
+  "created_at": "2026-08-25T14:43:23.000Z",
+  "updated_at": "2026-08-25T15:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "linear-probe",
+    "surgical-video",
+    "medical-imaging",
+    "foundation-model-evaluation",
+    "image-classification",
+    "arxiv:2503.19740",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524179,
+  "storage_human": "524179 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - visurg-ai/LEMON: [CVPR 2026] Official repository for the paper ...",
+      "url": "https://github.com/visurg-ai/LEMON",
+      "snippet": "This is the official repository for the paper \"LEMON: A Large Endoscopic MONocular Dataset and Foundation Model for Perception in Surgical Settings\". This repository provides open access to the LEMON dataset, LemonFM foundation model, and training code. LEMON is a dataset of over 4K surgical high-resolution videos totaling 938 hours from 35 diverse surgical procedure types. Each video is ..."
+    },
+    {
+      "title": "visurg/LemonFM · Hugging Face",
+      "url": "https://huggingface.co/visurg/LemonFM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LEMON: A Large Endoscopic MONocular Dataset and Foundation Model for ...",
+      "url": "https://arxiv.org/html/2503.19740",
+      "snippet": "1 Introduction Figure 1: Performance comparison between LemonFM, our foundation model pretrained on LEMON, and other surgical foundation models. Data points are plotted relative to the numeric axis ticks. The full results are available in Table 3 and 4. Figure 2: Data curation pipeline. (a) Surgical videos are collected from YouTube. (b) The videos are summarized as storyboards (trivial to ..."
+    },
+    {
+      "title": "LEMON/lemonfm at main · visurg-ai/LEMON · GitHub",
+      "url": "https://github.com/visurg-ai/LEMON/tree/main/lemonfm",
+      "snippet": "Official repository for the paper \"LEMON: A Large Endoscopic MONocular Dataset and Foundation Model for Perception in Surgical Settings\". - visurg-ai/LEMON"
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Che_LEMON_A_Large_Endoscopic_MONocular_Dataset_and_Foundation_Model_for_CVPR_2026_paper.html",
+      "snippet": "LEMON: A Large Endoscopic MONocular Dataset and Foundation Model for Perception in Surgical Settings Chengan Che, Chao Wang, Tom Vercauteren, Sophia Tsoka, Luis C. Garcia-Peraza-Herrera; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026, pp. 42659-42669"
+    }
+  ]
+}

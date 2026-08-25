@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wrow-ojcik/classify",
+  "slug": "wrow-ojcik-classify",
+  "author": "wrow-ojcik",
+  "url": "https://huggingface.co/wrow-ojcik/classify",
+  "created_at": "2026-08-25T16:35:53.000Z",
+  "updated_at": "2026-08-25T16:35:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-modal-fusion",
+    "endnote",
+    "first-person-plural",
+    "html",
+    "intro-method-exp-related-conclusion",
+    "measured",
+    "short-punchy",
+    "structured-imrad",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wow_classify Model by coachingAI - universe.roboflow.com",
+      "url": "https://universe.roboflow.com/coachingai/wow_classify/browse",
+      "snippet": "132 open source spell-monster-player images plus a pre-trained wow_classify model and API. Created by coachingAI"
+    },
+    {
+      "title": "ai_classify function | Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_classify",
+      "snippet": "The ai_classify () function classifies text content according to custom labels you provide. You can use simple label names for basic classification, or add label descriptions and instructions to improve accuracy for use cases like customer support routing, document categorization, and content analysis."
+    },
+    {
+      "title": "Classify AI",
+      "url": "https://classify-ai.vercel.app/",
+      "snippet": "The application provides a user-friendly interface for creating CNN based models for image classification without the need for coding or deep learning expertise."
+    },
+    {
+      "title": "ai_classify function - Azure Databricks - Databricks SQL",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_classify",
+      "snippet": "Applies to: Databricks SQL Databricks Runtime The ai_classify () function classifies text content according to custom labels you provide. You can use simple label names for basic classification, or add label descriptions and instructions to improve accuracy for use cases like customer support routing, document categorization, and content analysis. The function accepts text or VARIANT output ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

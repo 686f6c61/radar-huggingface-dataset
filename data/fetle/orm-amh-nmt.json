@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fetle/orm-amh-nmt",
+  "slug": "fetle-orm-amh-nmt",
+  "author": "fetle",
+  "url": "https://huggingface.co/fetle/orm-amh-nmt",
+  "created_at": "2026-08-25T13:52:58.000Z",
+  "updated_at": "2026-08-25T13:53:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:adapter:facebook/nllb-200-distilled-600M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31646844,
+  "storage_human": "32 MB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Customizing Neural Machine Translation Models with NVIDIA NeMo, Part 1",
+      "url": "https://developer.nvidia.com/blog/customizing-neural-machine-translation-models-with-nvidia-nemo-part-1/",
+      "snippet": "The development of attention-based transformer models has significantly impacted neural machine translation (NMT) tasks, but common issues like mistranslation and lack of semantic accuracy still exist due to mismatched training data and use cases. NVIDIA NeMo is an end-to-end platform for developing custom generative AI models, including NMT, and provides pretrained models and tools for fine ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Ovarian intelligence: AI applications leveraging AMH and ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1724929/full",
+      "snippet": "Abstract Artificial intelligence is transforming reproductive medicine by enabling more nuanced and personalized interpretation of key biomarkers such as anti-Müllerian hormone (AMH) and inhibin B. While AMH is widely adopted for assessing ovarian reserve, inhibin B—an follicle-stimulating hormone (FSH)-dependent marker of follicular activity—has been historically underutilized due to its ..."
+    },
+    {
+      "title": "On Instruction-Finetuning Neural Machine Translation Models",
+      "url": "https://arxiv.org/abs/2410.05553",
+      "snippet": "In this work, we introduce instruction finetuning for Neural Machine Translation (NMT) models, which distills instruction following capabilities from Large Language Models (LLMs) into orders-of-magnitude smaller NMT models. Our instruction-finetuning recipe for NMT models enables customization of translations for a limited but disparate set of translation-specific tasks. We show that NMT ..."
+    },
+    {
+      "title": "Neural Machine Translation (NMT) | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/translate/docs/advanced/nmt-model",
+      "snippet": "Neural Machine Translation (NMT) model Google&#x27;s standard Neural Machine Translation (NMT) has evolved from the neural network translation system that Google introduced in November 2016, with many improvements. It can translate to and from many languages in real time. Its model ID is general/nmt."
+    }
+  ]
+}

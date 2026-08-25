@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nectec/Pathumma-llm-vision-3.0.0-preview",
+  "slug": "nectec-pathumma-llm-vision-3-0-0-preview",
+  "author": "nectec",
+  "url": "https://huggingface.co/nectec/Pathumma-llm-vision-3.0.0-preview",
+  "created_at": "2026-08-25T12:13:59.000Z",
+  "updated_at": "2026-08-25T13:08:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "th",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548189,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nectec/Pathumma-llm-vision-1.0.0 · Hugging Face",
+      "url": "https://huggingface.co/nectec/Pathumma-llm-vision-1.0.0",
+      "snippet": "Pathumma-llm-vision-1.. is designed to perform multi-modal tasks by integrating both visual and textual information. The model is fine-tuned with diverse datasets to improve its ability to understand and generate content that aligns with both image and text inputs."
+    },
+    {
+      "title": "README.md · nectec/Pathumma-llm-vision-1.0.0 at main - Hugging Face",
+      "url": "https://huggingface.co/nectec/Pathumma-llm-vision-1.0.0/blob/main/README.md",
+      "snippet": "Pathumma-llm-vision-1.. is designed to perform multi-modal tasks by integrating both visual and textual information. The model is fine-tuned with diverse datasets to improve its ability to understand and generate content that aligns with both image and text inputs."
+    },
+    {
+      "title": "Pathumma LLM : เทคโนโลยีพัฒนา AI ที่เข้าใจบริบทและวัฒนธรรมไทย - NECTEC ...",
+      "url": "https://www.nectec.or.th/innovation/innovation-service/pathumma-llm.html",
+      "snippet": "Pathumma LLM (ปทุมมา แอลแอลเอ็ม) คือโมเดลปัญญาประดิษฐ์ขนาดใหญ่ (Large Language Model - LLM) ที่พัฒนาโดยเนคเทค สวทช."
+    },
+    {
+      "title": "NECTEC Unveils Pathumma LLM: Thailand&#x27;s Open AI Model for Localized and ...",
+      "url": "https://thaitimes.com/nectec-unveils-pathumma-llm-thailand-s-open-ai-model-for-localized-and-multi-modal-applications",
+      "snippet": "Pathumma LLM is offered in three formats: a web application for general users, an API for integration by developers, and a downloadable model for further development. Pathumma LLM features Multi-Modal Generative AI capabilities, supporting three types of data processing."
+    },
+    {
+      "title": "Pathumma LLM: AI Technology Tailored to Thai Context and Culture",
+      "url": "https://www.nstda.or.th/en/news/news-years-2025/pathumma-llm-ai-technology-tailored-to-thai-context-and-culture.html",
+      "snippet": "Pathumma LLM is an advanced AI technology designed to understand Thai linguistic and cultural contexts. Developed by Dr. Sarawut Khongyang and his team at the National Electronics and Computer Technology Center (NECTEC), under NSTDA, this innovation marks a significant milestone in Thailand&#x27;s AI development. Pathumma LLM features three core capabilities: Text LLM for Thai language processing ..."
+    }
+  ]
+}

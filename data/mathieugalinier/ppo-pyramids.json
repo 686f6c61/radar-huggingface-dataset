@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MathieuGALINIER/ppo-Pyramids",
+  "slug": "mathieugalinier-ppo-pyramids",
+  "author": "MathieuGALINIER",
+  "url": "https://huggingface.co/MathieuGALINIER/ppo-Pyramids",
+  "created_at": "2026-08-25T12:45:24.000Z",
+  "updated_at": "2026-08-25T12:48:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37796803,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaslimshaik/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/ppo-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lsaulier/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/lsaulier/ppo-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-Pyramids huggingface.co api & DrishtiSharma ppo-Pyramids github AI ...",
+      "url": "https://www.toolify.ai/ai-model/drishtisharma-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an open source model from GitHub that offers a free installation service, and any user can find ppo-Pyramids on GitHub to install. At the same time, huggingface.co provides the effect of ppo-Pyramids install, users can directly use ppo-Pyramids installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Proximal Policy Optimization — Spinning Up documentation",
+      "url": "https://spinningup.openai.com/en/latest/algorithms/ppo.html",
+      "snippet": "Pseudocode ¶ Documentation ¶ You Should Know In what follows, we give documentation for the PyTorch and Tensorflow implementations of PPO in Spinning Up. They have nearly identical function calls and docstrings, except for details relating to model construction. However, we include both full docstrings for completeness."
+    },
+    {
+      "title": "ppo-Pyramids - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/liuhongwei-2026/ppo-Pyramids",
+      "snippet": "Unity ML-Agents PPO 强化学习 智能体（Pyramids 环境）模型在华为昇腾 NPU 上的推理适配。 本项目为 非 LLM 强化学习模型，不使用 vLLM-Ascend，直接以 torch_npu 完成图内推理，精度与官方权重一致。"
+    }
+  ]
+}

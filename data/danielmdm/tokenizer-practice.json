@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "danielmdm/tokenizer-practice",
+  "slug": "danielmdm-tokenizer-practice",
+  "author": "danielmdm",
+  "url": "https://huggingface.co/danielmdm/tokenizer-practice",
+  "created_at": "2026-08-25T17:59:32.000Z",
+  "updated_at": "2026-08-25T17:59:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "blip",
+    "flash",
+    "gelu",
+    "generation",
+    "large",
+    "lion",
+    "orthogonal",
+    "polynomial",
+    "tucker",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online LLM Tokenizer",
+      "url": "https://www.danieldemmel.me/projects/tokenizer",
+      "snippet": "Most existing tools only showed one model at a time, which meant a lot of copying and pasting between browser tabs. So I built a browser-based tokenizer that loads actual tokenizers directly from HuggingFace and runs them entirely client-side."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "Online LLM Tokenizer - Daniel Demmel",
+      "url": "https://www.danieldemmel.me/tokenizer",
+      "snippet": "A pure Javascript tokenizer running in your browser that can load tokenizer.json and tokenizer_config.json from any repository on Huggingface. You can use it to count tokens and compare how different large language model vocabularies work. It&#x27;s also useful for debugging prompt templates. Implementation details Parallel model loading: All tokenizers load simultaneously using Promise.all ..."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Tokenization | Learn how to interact with OpenAI models",
+      "url": "https://microsoft.github.io/Workshop-Interact-with-OpenAI-models/tokenization/",
+      "snippet": "Like with any API, model deployment usage incurs costs based on the model type and version. Currently, model pricing is tied to number of tokens used, with different price points possible for each model type or version. The table below shows the context window (max tokens) and the model pricing (billed in 1K increments) for Azure OpenAI Models."
+    }
+  ]
+}

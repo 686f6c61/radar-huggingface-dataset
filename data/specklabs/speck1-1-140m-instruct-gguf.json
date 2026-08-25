@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "specklabs/Speck1.1-140M-Instruct-GGUF",
+  "slug": "specklabs-speck1-1-140m-instruct-gguf",
+  "author": "specklabs",
+  "url": "https://huggingface.co/specklabs/Speck1.1-140M-Instruct-GGUF",
+  "created_at": "2026-08-25T14:29:10.000Z",
+  "updated_at": "2026-08-25T14:35:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "conversational",
+    "text-generation",
+    "base_model:specklabs/Speck1.1-140M-Instruct",
+    "base_model:quantized:specklabs/Speck1.1-140M-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 180165376,
+  "parameters_human": "180.2M",
+  "storage_bytes": 796727840,
+  "storage_human": "797 MB",
+  "base_model": "specklabs/Speck1.1-140M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "specklabs/Speck1-140M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1-140M-Instruct",
+      "snippet": "Speck1-140M-Instruct is a 140.7M parameter English instruction-tuned language model. It was initialized from Speck1-140M, a hybrid model that interleaves global grouped-query attention with gated causal convolution, then fully fine-tuned for one epoch on SpeckChat1."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    }
+  ]
+}

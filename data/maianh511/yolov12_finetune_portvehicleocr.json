@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "maianh511/YOLOv12_finetune_PortVehicleOCR",
+  "slug": "maianh511-yolov12_finetune_portvehicleocr",
+  "author": "maianh511",
+  "url": "https://huggingface.co/maianh511/YOLOv12_finetune_PortVehicleOCR",
+  "created_at": "2026-08-25T13:23:19.000Z",
+  "updated_at": "2026-08-25T13:29:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "license_plate",
+    "object_detection",
+    "yolov12",
+    "object-detection",
+    "en",
+    "dataset:maianh511/PortVehicleOCR",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:quantized:Ultralytics/YOLO11",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73877178,
+  "storage_human": "74 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLOv12 Object Detection Training Tutorial - YouTube",
+      "url": "https://www.youtube.com/watch?v=fksJmIMIfXo",
+      "snippet": "In this video, we get to know the recently released YOLOv12 model architecture, learn how to train a custom vision model, and then walk through the process o..."
+    },
+    {
+      "title": "maianh511/PortVehicleOCR at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/maianh511/PortVehicleOCR/tree/main",
+      "snippet": "Datasets: maianh511 / PortVehicleOCR like 0 License: cc-by-4. Dataset card FilesFiles and versions xet Community main PortVehicleOCR 2.53 kB 1 contributor History:1 commit maianh511 initial commit ca700fa verifiedabout 8 hours ago .gitattributes Safe 2.5 kBinitial commitabout 8 hours ago README.md Safe 27 Bytesinitial commitabout 8 hours ago"
+    },
+    {
+      "title": "GitHub - ultralytics/yolov5: Ultralytics YOLOv5 in PyTorch for object ...",
+      "url": "https://github.com/ultralytics/yolov5",
+      "snippet": "Ultralytics YOLOv5 🚀 is a fast, accurate, and easy-to-use computer vision model developed by Ultralytics. Based on the PyTorch framework, YOLOv5 is renowned for its speed, accuracy, and simplicity. It incorporates insights and best practices from extensive research and development, making it a popular and reliable choice for a wide range of vision AI tasks, including object detection, image ..."
+    },
+    {
+      "title": "train-yolov12-object-detection-model.ipynb - GitHub",
+      "url": "https://github.com/roboflow/notebooks/blob/main/notebooks/train-yolov12-object-detection-model.ipynb",
+      "snippet": "basketball-ai-how-to-detect-track-and-identify-basketball-players.ipynb"
+    },
+    {
+      "title": "train-yolov12-object-detection-model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov12-object-detection-model.ipynb",
+      "snippet": "How to Train YOLOv12 Object Detection on a Custom Dataset YOLOv12 is a newly proposed attention-centric variant of the YOLO family that focuses on incorporating efficient attention mechanisms into the backbone while preserving real-time performance."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hyf010124/pi05_so101_pi0824_v2",
+  "slug": "hyf010124-pi05_so101_pi0824_v2",
+  "author": "hyf010124",
+  "url": "https://huggingface.co/hyf010124/pi05_so101_pi0824_v2",
+  "created_at": "2026-08-25T12:07:23.000Z",
+  "updated_at": "2026-08-25T12:07:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:so101_test_pi0824_merged",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10325368,
+  "storage_human": "10 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyf010124/so101_test_pi0824_20260824_132104 - Hugging Face",
+      "url": "https://huggingface.co/datasets/hyf010124/so101_test_pi0824_20260824_132104",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hyf010124 (fu) - Hugging Face",
+      "url": "https://huggingface.co/hyf010124",
+      "snippet": "hyf010124/so101_test_VLA0721_20260721_152151. published a dataset about 6 hours ago. hyf010124/so101_test_VLA0721_20260721_151733. updated a dataset about 13 hours ago"
+    },
+    {
+      "title": "lerobot-so101/src/lerobot/policies/pi05/README.md at main - GitHub",
+      "url": "https://github.com/AriRyo/lerobot-so101/blob/main/src/lerobot/policies/pi05/README.md",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - AriRyo/lerobot-so101"
+    },
+    {
+      "title": "so101-pi05-base/dataset at main · jinnymo/so101-pi05-base · GitHub",
+      "url": "https://github.com/jinnymo/so101-pi05-base/tree/main/dataset",
+      "snippet": "pi0.5 vision-language-action model fully fine-tuned on unified public SO-101 / SO-100 data - so101-pi05-base/dataset at main · jinnymo/so101-pi05-base"
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    }
+  ]
+}

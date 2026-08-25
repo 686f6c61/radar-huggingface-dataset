@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dmitry-mikhailov/resnet-ocr-scratch",
+  "slug": "dmitry-mikhailov-resnet-ocr-scratch",
+  "author": "dmitry-mikhailov",
+  "url": "https://huggingface.co/dmitry-mikhailov/resnet-ocr-scratch",
+  "created_at": "2026-08-25T16:33:51.000Z",
+  "updated_at": "2026-08-25T16:33:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "contrastive",
+    "efficientformer",
+    "flash",
+    "huge",
+    "lion",
+    "low-rank",
+    "polynomial",
+    "rmsnorm",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - anusikh/OCR_Resnet: My implementation of an OCR using Resnet",
+      "url": "https://github.com/anusikh/OCR_Resnet",
+      "snippet": "This is my implementation of an OCR using Resnet. Resnet is one of the best Neural Network architectures for image classification and it&#x27;s biggest advantage is the fact that as the network depth increases, it cancels negative outcomes."
+    },
+    {
+      "title": "Best OCR Models for Text Recognition in Images - Roboflow Blog",
+      "url": "https://blog.roboflow.com/best-ocr-models-text-recognition/",
+      "snippet": "OCR rankings shift with every model release, so static lists can become outdated. This post shows how to compare 63 current OCR models in Roboflow Playground on your own images, and what the live leaderboard says about accuracy, speed, and cost. Small VLMs like GPT-5 Mini and Gemini Flash lead on scene text, while dedicated models like GLM-OCR win on documents."
+    },
+    {
+      "title": "ResNet - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_vision_resnet/",
+      "snippet": "Resnet models were proposed in \"Deep Residual Learning for Image Recognition\". Here we have the 5 versions of resnet models, which contains 18, 34, 50, 101, 152 layers respectively."
+    },
+    {
+      "title": "ResNet_CRNN_OCR - GitHub",
+      "url": "https://github.com/a28293971/ResNet_CRNN_OCR",
+      "snippet": "ResNet_CRNN_OCR Introduction This repo can use to train a OCR model which can recognize variable length character (depend on the width of img), and transform it&#x27;s pytorch model to a jit script model, that can use libtorch to load and run it. This means it can be used in a production environment."
+    },
+    {
+      "title": "OCR Deep Learning: How Do You Do It in 2026 | Label Your Data",
+      "url": "https://labelyourdata.com/articles/ocr-with-deep-learning",
+      "snippet": "TL;DR Use deep learning techniques like CNNs and RNNs for effective OCR solutions. Preprocess input images thoroughly to simplify them, detect edges, and define text outlines for better OCR performance. Apply attention mechanisms or transformers to improve text detection and recognition in OCR models. Train your OCR model using the right datasets (e.g., MNIST, SVHN) to ensure it handles ..."
+    }
+  ]
+}

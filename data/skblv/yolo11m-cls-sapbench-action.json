@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skblv/yolo11m-cls-sapbench-action",
+  "slug": "skblv-yolo11m-cls-sapbench-action",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/yolo11m-cls-sapbench-action",
+  "created_at": "2026-08-25T14:41:54.000Z",
+  "updated_at": "2026-08-25T14:42:35.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo11",
+    "surgical-video",
+    "medical-imaging",
+    "action-planning",
+    "image-classification",
+    "arxiv:2506.07196",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20885654,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLO11m Cls Model by Squid 26 - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/squid-26/yolo11/yolo11m-cls",
+      "snippet": "YOLO11m Cls model from the YOLO11 project by Squid 26. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLO11m Cls Model by Weiqin Su - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/weiqin-su/yolo11/yolo11m-cls",
+      "snippet": "YOLO11m Cls model from the YOLO11 project by Weiqin Su. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO11 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "Ultralytics YOLO11",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    },
+    {
+      "title": "GitHub - shenghan-guo/ultralytics-yolo11: Ultralytics YOLO11",
+      "url": "https://github.com/shenghan-guo/ultralytics-yolo11",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    }
+  ]
+}

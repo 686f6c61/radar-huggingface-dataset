@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TenStrip/LTX2.3-10Eros_Version-Testing",
+  "slug": "tenstrip-ltx2-3-10eros_version-testing",
+  "author": "TenStrip",
+  "url": "https://huggingface.co/TenStrip/LTX2.3-10Eros_Version-Testing",
+  "created_at": "2026-06-14T19:13:08.000Z",
+  "updated_at": "2026-08-24T19:14:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153484188668,
+  "storage_human": "153.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TenStrip/LTX2.3-10Eros_Version-Testing · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/LTX2.3-10Eros_Version-Testing",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TenStrip/LTX2.3-10Eros · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/LTX2.3-10Eros",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "Any prompting tricks and image-prompt combos from 1.0 and 1.2 will transfer poorly to 1.4. 1.4 Is more closely aligned with the original 0.3 beta model than previous versions. There&#x27;s a lot of reasons but mainly based on the issues with the model&#x27;s negative tendency in 1.0 and 1.2 was only solvable by fully reshaping and remaking it."
+    },
+    {
+      "title": "TenStrip/LTX2.3-10Eros • hfviewer",
+      "url": "https://hfviewer.com/TenStrip/LTX2.3-10Eros",
+      "snippet": "TenStrip/LTX2.3-10Eros: image-to-video model with Self-attention, Patch embedding, Denoising loop / scheduler. Explore the interactive architecture graph on hfviewer."
+    },
+    {
+      "title": "TenStrip/LTX2.3-10Eros — Downloads, Growth & Trend — ParaPulse",
+      "url": "https://parapulse.io/models/TenStrip/LTX2.3-10Eros",
+      "snippet": "Download history, 7d/30d growth rate, and trend chart for TenStrip/LTX2.3-10Eros on HuggingFace. Updated daily."
+    }
+  ]
+}

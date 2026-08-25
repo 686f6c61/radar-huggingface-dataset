@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "imandrewreyes/tokenizer-lab",
+  "slug": "imandrewreyes-tokenizer-lab",
+  "author": "imandrewreyes",
+  "url": "https://huggingface.co/imandrewreyes/tokenizer-lab",
+  "created_at": "2026-08-25T15:52:18.000Z",
+  "updated_at": "2026-08-25T15:52:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co-attention",
+    "giant",
+    "lamb",
+    "matching",
+    "mish",
+    "multi-query",
+    "onecycle",
+    "orthogonal",
+    "perceiver",
+    "rmsnorm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "GitHub - Likheet/tokenizer-lab",
+      "url": "https://github.com/Likheet/tokenizer-lab",
+      "snippet": "Tokenizer Lab is an interactive React + Vite application for exploring how modern multilingual and frontier model tokenizers behave on real text. It lets you inspect token segmentation, compare models side-by-side, and batch-export metrics for downstream analysis without leaving the browser."
+    },
+    {
+      "title": "Anonymous AI Model Release: Ox Alpha&#x27;s Ambitious Specs Revealed",
+      "url": "https://en.cryptonomist.ch/2026/08/24/anonymous-ai-model-release-ox-alpha/",
+      "snippet": "Discover how the anonymous AI model release of Ox Alpha challenges developer norms with vast token capacity and multimodal inputs."
+    },
+    {
+      "title": "August 23, 2026: Mysterious AI Lab Offers 100 Trillion Free Tokens ...",
+      "url": "https://thenewsstrike.com/august-23-2026-mysterious-ai-lab-offers-100-trillion-free-tokens-daily-for-ox-alpha-model-fuelling-zhipu-glm-speculation",
+      "snippet": "An unidentified AI lab has released a mysterious reasoning model called Ox Alpha, offering users access to up to 100 trillion tokens per day for an entire week at no cost. The unusually high limits have triggered speculation across the AI community a..."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cocohuang/whisper-qa",
+  "slug": "cocohuang-whisper-qa",
+  "author": "cocohuang",
+  "url": "https://huggingface.co/cocohuang/whisper-qa",
+  "created_at": "2026-08-25T18:28:15.000Z",
+  "updated_at": "2026-08-25T18:28:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "cautious",
+    "cross-modal-fusion",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "structured-imrad",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompting Whisper for QA-driven Zero-shot End-to-end Spoken",
+      "url": "https://arxiv.org/html/2406.15209v1",
+      "snippet": "This paper proposes the use of Whisper, a standalone speech processing model, for zero-shot end-to-end (E2E) SLU. To handle unseen semantic labels, SLU tasks are integrated into a question-answering (QA) framework, which prompts the Whisper decoder for semantics deduction."
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Whisper QA | StackRoot Solutions",
+      "url": "https://whisperqa.com/",
+      "snippet": "AI-Powered Quality Assurance for Modern Teams Every Call Scored. Every Rep Coached. Every Deal Improved. Whisper QA instantly evaluates calls for compliance, active listening, product knowledge, and empathy. Managers get clear insights to coach faster, deliver consistent service, and drive more revenue without spending hours listening to calls."
+    },
+    {
+      "title": "whisper/whisper at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/tree/main/whisper",
+      "snippet": "Robust Speech Recognition via Large-Scale Weak Supervision - openai/whisper"
+    }
+  ]
+}

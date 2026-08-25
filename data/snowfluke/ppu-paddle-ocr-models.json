@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "snowfluke/ppu-paddle-ocr-models",
+  "slug": "snowfluke-ppu-paddle-ocr-models",
+  "author": "snowfluke",
+  "url": "https://huggingface.co/snowfluke/ppu-paddle-ocr-models",
+  "created_at": "2026-08-25T13:07:42.000Z",
+  "updated_at": "2026-08-25T13:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ocr",
+    "paddleocr",
+    "onnxruntime",
+    "text-detection",
+    "text-recognition",
+    "image-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1669264920,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PT-Perkasa-Pilar-Utama/ppu-paddle-ocr-models: Onnx model file ...",
+      "url": "https://github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr-models",
+      "snippet": "ppu-paddle-ocr-models This repository contains models necessarily use by ppu-paddle-ocr library."
+    },
+    {
+      "title": "@snowfluke/ppu-paddle-ocr - JSR",
+      "url": "https://jsr.io/@snowfluke/ppu-paddle-ocr",
+      "snippet": "Scripts Why ppu-paddle-ocr? Lightweight, minimal dependencies, optimized for performance. Pre-packed models, PP-OCRv6 tiny models (~6 MB, multilingual) are fetched and cached automatically on first run; the full-dictionary small/medium tiers and language-specific variants are one option away. Supports additional variants via ppu-paddle-ocr-models."
+    },
+    {
+      "title": "ppu-paddle-ocr - GitHub",
+      "url": "https://github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr",
+      "snippet": "Quickly spins up ppu-paddle-ocr REST API here: ppu-paddle-ocr-serve. Need a CLI instead? sure here: ppu-paddle-ocr CLI support. Adjust the config & model for your use case, see config recommendation. Are you AI Agents? you can learn quickly by using the skill in the skill-ppu-paddle-ocr folder."
+    },
+    {
+      "title": "ppu-paddle-ocr - PaddleOCR in the Browser (Interactive Demo)",
+      "url": "https://ppu-paddle-ocr.snowfluke.workers.dev/",
+      "snippet": "Free interactive demo of ppu-paddle-ocr: run PaddleOCR (PP-OCRv6) text detection and recognition entirely in your browser with onnxruntime-web and WebGPU - no server, no upload. Lightweight, multilingual, TypeScript-first."
+    },
+    {
+      "title": "pdfmarkdownapp/ppu-paddle-ocr-models · Hugging Face",
+      "url": "https://huggingface.co/pdfmarkdownapp/ppu-paddle-ocr-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

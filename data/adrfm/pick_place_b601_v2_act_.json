@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adrfm/pick_place_b601_v2_act_",
+  "slug": "adrfm-pick_place_b601_v2_act_",
+  "author": "adrfm",
+  "url": "https://huggingface.co/adrfm/pick_place_b601_v2_act_",
+  "created_at": "2026-08-25T11:51:06.000Z",
+  "updated_at": "2026-08-25T11:51:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:adrfm/pick_place_b601_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51721863,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206928004,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adrfm/pick_place_b601_v2_act_ · Hugging Face",
+      "url": "https://huggingface.co/adrfm/pick_place_b601_v2_act_",
+      "snippet": "Instructions to use adrfm/pick_place_b601_v2_act_ with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use adrfm/pick_place_b601_v2_act_ with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "adrfm/pick_place_b601 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/adrfm/pick_place_b601",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "adrfm (Aaron De Rybel) - Hugging Face",
+      "url": "https://huggingface.co/adrfm",
+      "snippet": "Recent Activity updated a dataset1 day ago adrfm/pick_place_b601_clean published a dataset1 day ago adrfm/pick_place_b601_clean updated a dataset1 day ago adrfm/pick_place_b601 View all activity"
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "A detailed walkthrough of training an Action Chunking Transformer (ACT) policy on an S0-101 robot arm for a pick-and-place task, using the lerobot library. The process involves data collection through teleoperation, model training, and performance evaluation."
+    }
+  ]
+}

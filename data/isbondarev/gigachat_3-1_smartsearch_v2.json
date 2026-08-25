@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "isbondarev/gigachat_3.1_smartsearch_v2",
+  "slug": "isbondarev-gigachat_3-1_smartsearch_v2",
+  "author": "isbondarev",
+  "url": "https://huggingface.co/isbondarev/gigachat_3.1_smartsearch_v2",
+  "created_at": "2026-08-25T11:12:39.000Z",
+  "updated_at": "2026-08-25T12:02:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10672534016,
+  "parameters_human": "10.67B",
+  "storage_bytes": 21356386743,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isbondarev/gigachat_3.1_smartsearch · Hugging Face",
+      "url": "https://huggingface.co/isbondarev/gigachat_3.1_smartsearch",
+      "snippet": "isbondarev / gigachat_3.1_smartsearch like 0 Text Generation Transformers Safetensors deepseek_v3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "isbondarev/GigaChat3.1-10B-A1.8B-bf16 · Hugging Face",
+      "url": "https://huggingface.co/isbondarev/GigaChat3.1-10B-A1.8B-bf16",
+      "snippet": "GigaChat 3.1 Lightning is the compact instruct model of the GigaChat 3.1 family. It is a Mixture-of-Experts (MoE) model with 10B total parameters and 1.8B active parameters, designed for fast multilingual assistant workloads, reasoning, code, function calling, and product-style deployment."
+    },
+    {
+      "title": "GitHub - salute-developers/gigachat3",
+      "url": "https://github.com/salute-developers/gigachat3",
+      "snippet": "GigaChat 3 Ultra Preview (702B-A36B) Short description GigaChat3 Ultra Preview is the flagship instruct model in the GigaChat family, built on a Mixture-of-Experts (MoE) architecture. Key highlights: ~702B total parameters, with ~36B active per token thanks to sparsity; combines top-tier quality with practical inference speed;"
+    },
+    {
+      "title": "GigaChat 3.1 Lightning - openmodels.run",
+      "url": "https://www.openmodels.run/models/gigachat-3-1-lightning",
+      "snippet": "Sber&#x27;s compact Mixture-of-Experts model with 10B total parameters and 1.8B active. Designed for fast multilingual assistant workloads, reasoning, code, function calling, and product-style deployment on edge devices."
+    },
+    {
+      "title": "GigaChat 3.1 Ultra - openmodels.run",
+      "url": "https://www.openmodels.run/models/gigachat-3-1-ultra",
+      "snippet": "OpenModels is an open registry and telemetry layer for AI infrastructure. Compare LLM models, providers, MCP servers, agent skills, pricing, uptime, latency, and capabilities."
+    }
+  ]
+}

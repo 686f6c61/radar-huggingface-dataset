@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thijsdekker/qlora-forecast",
+  "slug": "thijsdekker-qlora-forecast",
+  "author": "thijsdekker",
+  "url": "https://huggingface.co/thijsdekker/qlora-forecast",
+  "created_at": "2026-08-25T17:32:10.000Z",
+  "updated_at": "2026-08-25T17:32:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blip",
+    "generation",
+    "layernorm",
+    "low-rank",
+    "multi-query",
+    "polynomial",
+    "relu",
+    "sgd",
+    "xavier",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Professor Thijs Dekker | Institute for Transport Studies | University ...",
+      "url": "https://environment.leeds.ac.uk/transport/staff/929/professor-thijs-dekker",
+      "snippet": "My contributions include introducing fit-for-purpose statistical model structures capturing preference heterogeneity in (travel) behaviour, willingness-to-pay, and related economic welfare measures; establishing the statistical properties of choice models; and advocating the use of alternative estimation methods (e.g. Bayesian econometrics)."
+    },
+    {
+      "title": "GitHub - truehealthai/qlora-ai: QLoRA: Efficient Finetuning of ...",
+      "url": "https://github.com/truehealthai/qlora-ai",
+      "snippet": "QLoRA: Efficient Finetuning of Quantized LLMs. Contribute to truehealthai/qlora-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "‪Dr. Thijs Dekker‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=JWROc4kAAAAJ&hl=en",
+      "snippet": "‪Professor of Transport Economics, University of Leeds‬ - ‪‪Cited by 3,100‬‬ - ‪Choice modelling‬ - ‪Applied econometrics‬ - ‪Environmental Economics‬ - ‪Transport Economics‬"
+    },
+    {
+      "title": "PDF QLoRA NeurIPS",
+      "url": "https://neurips.cc/media/neurips-2023/Slides/73855.pdf",
+      "snippet": "QLoRA QLoRA: 4-bit frozen base model + Low rank Adapters Finetuning cost per parameter:"
+    },
+    {
+      "title": "PDF Stock index returns forecasting using a hybrid neural network model",
+      "url": "https://thesis.eur.nl/pub/43900/Dekker.pdf",
+      "snippet": "Recursive and non-recursive one-step-ahead and multi-step-ahead forecasting methods are utilised over three forecast horizons to measure and compare the performance of the hybrid model relative to the individual models. I nd that the hybrid model is able to surpass the individual models for short horizon one-step-ahead forecasts."
+    }
+  ]
+}

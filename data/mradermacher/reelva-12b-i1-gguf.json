@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Reelva-12B-i1-GGUF",
+  "slug": "mradermacher-reelva-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Reelva-12B-i1-GGUF",
+  "created_at": "2026-07-15T11:36:49.000Z",
+  "updated_at": "2026-08-25T17:40:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reelva",
+    "conversational",
+    "agentic",
+    "companion-ai",
+    "id",
+    "en",
+    "base_model:reelva/Reelva-12B",
+    "base_model:quantized:reelva/Reelva-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 238,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 140344469280,
+  "storage_human": "140.3 GB",
+  "base_model": "reelva/Reelva-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Reelva-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Reelva-12B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Rei-12B-V3-Base-i1-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mradermacher/Rei-12B-V3-Base-i1-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. static quants are available at https://huggingface.co/mradermacher/Rei-12B-V3-Base-GGUF"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

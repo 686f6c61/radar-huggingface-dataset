@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "velsit56/EngYaxshi",
+  "slug": "velsit56-engyaxshi",
+  "author": "velsit56",
+  "url": "https://huggingface.co/velsit56/EngYaxshi",
+  "created_at": "2026-08-25T12:20:05.000Z",
+  "updated_at": "2026-08-25T12:21:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "velsit56 (Velsit Vel) - Hugging Face",
+      "url": "https://huggingface.co/velsit56",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "velsit56 (Velsit Vel) - Hugging Face",
+      "url": "https://huggingface.co/velsit56/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "Deepshi - I Say What Other AI&#x27;s Won&#x27;t",
+      "url": "https://deepshi.ai/",
+      "snippet": "Deepshi is the private, uncensored AI assistant with third-party verified privacy. Chat freely, generate images, music & video — your chats stay on your device."
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

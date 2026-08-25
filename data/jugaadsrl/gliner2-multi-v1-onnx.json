@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jugaadsrl/gliner2-multi-v1-onnx",
+  "slug": "jugaadsrl-gliner2-multi-v1-onnx",
+  "author": "jugaadsrl",
+  "url": "https://huggingface.co/jugaadsrl/gliner2-multi-v1-onnx",
+  "created_at": "2026-04-20T21:02:11.000Z",
+  "updated_at": "2026-08-25T12:47:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "it",
+    "en",
+    "fr",
+    "es",
+    "de"
+  ],
+  "tags": [
+    "gliner",
+    "onnx",
+    "named-entity-recognition",
+    "rust",
+    "token-classification",
+    "it",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4386033261,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lion-ai/gliner2-multi-v1-onnx · Hugging Face",
+      "url": "https://huggingface.co/lion-ai/gliner2-multi-v1-onnx",
+      "snippet": "gliner2-multi-v1-onnx ONNX export of fastino/gliner2-multi-v1 for zero-shot Named Entity Recognition. GLiNER2 can recognise any entity type at inference time — no fine-tuning required. Simply pass a list of labels alongside your text, and the model scores every candidate span for each label."
+    },
+    {
+      "title": "jugaadsrl/gliner2-privacy-filter-PII-multi-onnx · Hugging Face",
+      "url": "https://huggingface.co/jugaadsrl/gliner2-privacy-filter-PII-multi-onnx",
+      "snippet": "This repository contains the ONNX-exported weights of fastino/gliner2-privacy-filter-PII-multi, the multilingual PII detection model built on GLiNER2 by Fastino AI."
+    },
+    {
+      "title": "GitHub - lmoe/gliner2-onnx: An experimental GLiNER2 conversion tool and ...",
+      "url": "https://github.com/lmoe/gliner2-onnx",
+      "snippet": "GLiNER2 ONNX runtime for Python. Runs GLiNER2 models without PyTorch. This library is experimental. The API may change between versions."
+    },
+    {
+      "title": "GitHub - fastino-ai/GLiNER2: Unified Schema-Based Information ...",
+      "url": "https://github.com/fastino-ai/GLiNER2",
+      "snippet": "Unified Schema-Based Information Extraction. Contribute to fastino-ai/GLiNER2 development by creating an account on GitHub."
+    },
+    {
+      "title": "gliner2-onnx · PyPI",
+      "url": "https://pypi.org/project/gliner2-onnx/",
+      "snippet": "Models Pre-exported ONNX models: ... Note: gliner2-base-v1 is not supported (uses a different architecture). Exporting Models To export your own models, clone the repository and use make: ... Output is saved to model_out/<model-name>/. JavaScript/TypeScript For Node.js, see @lmoe/gliner-onnx.js. Credits fastino-ai/GLiNER2 - Original GLiNER2 ..."
+    }
+  ]
+}

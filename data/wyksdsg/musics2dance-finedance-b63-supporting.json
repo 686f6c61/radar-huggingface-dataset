@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wyksdsg/musics2dance-finedance-b63-supporting",
+  "slug": "wyksdsg-musics2dance-finedance-b63-supporting",
+  "author": "wyksdsg",
+  "url": "https://huggingface.co/wyksdsg/musics2dance-finedance-b63-supporting",
+  "created_at": "2026-08-25T17:13:31.000Z",
+  "updated_at": "2026-08-25T17:16:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - li-ronghui/FineDance: FineDance: A Fine-grained Choreography ...",
+      "url": "https://github.com/li-ronghui/FineDance",
+      "snippet": "FineDance: A Fine-grained Choreography Dataset for 3D Full Body Dance Generation. (ICCV2023) - li-ronghui/FineDance"
+    },
+    {
+      "title": "FineDance: A Fine-grained Choreography Dataset for 3D Full Body Dance ...",
+      "url": "https://arxiv.org/html/2212.03741v4",
+      "snippet": "We release FineDance, which is the largest 3D motion capture music-dance paired dataset with accurate full-body posture, containing 22 fine-grained genres. FineDance encourages the development of AI choreography, motion prior, and full-body reconstruction methods."
+    },
+    {
+      "title": "PDF FineDance: A Fine-grained Choreography Dataset for 3D Full ... - OpenReview",
+      "url": "https://openreview.net/attachment?id=wggihVmgSl&name=pdf",
+      "snippet": "We release FineDance, which is the largest 3D mo-tion capture music-dance paired dataset with accurate full-body posture, containing 22 fine-grained genres. FineDance encourages the development of AI chore-ography, motion prior, and full-body reconstruction methods."
+    },
+    {
+      "title": "FineDance: A Fine-grained Choreography Dataset for 3D Full Body Dance ...",
+      "url": "https://ieeexplore.ieee.org/document/10377038",
+      "snippet": "To the best of our knowledge, FineDance is the largest music-dance paired dataset with the most dance genres. Additionally, to address monotonous and unnatural hand movements existing in previous methods, we propose a full-body dance generation network, which utilizes the diverse generation capabilities of the diffusion model to solve ..."
+    },
+    {
+      "title": "FineDance: A Fine-grained Choreography Dataset for 3D Full Body Dance ...",
+      "url": "https://paperswithcode.co/paper/2212.03741",
+      "snippet": "FineDance, a large music-dance dataset with diverse genres and fine-grained motions, combined with a full-body dance generation network using diffusion models and expert nets, achieves state-of-the-art performance in dance sequence generation."
+    }
+  ]
+}

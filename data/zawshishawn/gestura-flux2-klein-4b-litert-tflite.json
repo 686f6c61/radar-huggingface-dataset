@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ZawShiShawn/gestura-flux2-klein-4b-litert-tflite",
+  "slug": "zawshishawn-gestura-flux2-klein-4b-litert-tflite",
+  "author": "ZawShiShawn",
+  "url": "https://huggingface.co/ZawShiShawn/gestura-flux2-klein-4b-litert-tflite",
+  "created_at": "2026-08-24T13:20:26.000Z",
+  "updated_at": "2026-08-25T14:29:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "text-to-image",
+    "image-editing",
+    "multi-reference",
+    "image-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8687414212,
+  "storage_human": "8.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tensorforger/FluxRT: Real-time stream editing pipeline powered ...",
+      "url": "https://github.com/tensorforger/FluxRT",
+      "snippet": "Real-time stream editing pipeline powered by the FLUX.2-klein-4B model, optimized for consumer GPUs - tensorforger/FluxRT"
+    },
+    {
+      "title": "ke_enc0.tflite · litert-community/FLUX.2-klein-4B-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/FLUX.2-klein-4B-LiteRT/blob/main/ke_enc0.tflite",
+      "snippet": "litert-community / FLUX.2-klein-4B-LiteRT like 7 Follow LiteRT Community (FKA TFLite) 8.19k Text-to-Image LiteRT LiteRT on-device diffusion-transformer int8 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "biali/flux-2-klein-4b · Hugging Face",
+      "url": "https://huggingface.co/biali/flux-2-klein-4b",
+      "snippet": "The FLUX.2 [klein] model family are our fastest image models to date. FLUX.2 [klein] unifies generation and editing in a single compact architecture, delivering state-of-the-art quality with end-to-end inference in as low as under a second."
+    },
+    {
+      "title": "FLUX.2 [klein] 4B Text to Image API Docs | fal",
+      "url": "https://fal.ai/models/fal-ai/flux-2/klein/4b/api",
+      "snippet": "Text-to-image generation with FLUX.2 [klein] 4B from Black Forest Labs. Enhanced realism, crisper text generation, and native editing capabilities."
+    },
+    {
+      "title": "Flux 2 [klein] User Guide - fal.ai",
+      "url": "https://fal.ai/learn/devs/flux-2-klein-user-guide",
+      "snippet": "The Flux 2 [klein] 4B model family supports both text-to-image generation and image editing workflows, including single-reference and multi-reference inputs for controlled transformations. For teams processing hundreds or thousands of images daily, the reduced parameter count translates into meaningful latency and cost advantages 1."
+    }
+  ]
+}

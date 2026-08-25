@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Reyanshyuah2/learn-summary",
+  "slug": "reyanshyuah2-learn-summary",
+  "author": "Reyanshyuah2",
+  "url": "https://huggingface.co/Reyanshyuah2/learn-summary",
+  "created_at": "2026-08-25T18:29:57.000Z",
+  "updated_at": "2026-08-25T18:30:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "compact",
+    "grounded-language",
+    "intro-related-method-exp-conclusion",
+    "measured",
+    "numeric-apa",
+    "passive",
+    "plain-text",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use row summaries in model-driven apps - Power Apps | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-apps/user/record-summaries",
+      "snippet": "The Row summary feature in apps provides users with a concise, AI-generated overview of key details about a record. Summaries help users quickly understand essential information without manually scanning fields, related records, or activity timelines. You see summaries as a paragraph or bullet points, so they&#x27;re easy to read."
+    },
+    {
+      "title": "Learning to summarize with human feedback - OpenAI",
+      "url": "https://openai.com/index/learning-to-summarize-with-human-feedback/",
+      "snippet": "We&#x27;ve applied reinforcement learning from human feedback to train language models that are better at summarization."
+    },
+    {
+      "title": "AI summarization - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/ai-summarization",
+      "snippet": "What are the challenges of AI summarization? There are a number of challenges associated with AI summarization, mostly the use of immature technology or improperly-tuned AI. AI summarization machine learning (ML) models can sometimes lack context, leading to uninformative summaries."
+    },
+    {
+      "title": "Summary AI | AI Note Taker, Transcription & Meeting Summaries",
+      "url": "https://summary.ai/",
+      "snippet": "Summary AI distills lengthy meetings into concise summaries, including key points, decisions made, and assigned action items. Saving you hours of time per meeting!"
+    },
+    {
+      "title": "Summary AI",
+      "url": "https://web.summaryai.app/",
+      "snippet": "Summary AI Description"
+    }
+  ]
+}

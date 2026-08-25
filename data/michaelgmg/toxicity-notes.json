@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "michaelgmg/toxicity-notes",
+  "slug": "michaelgmg-toxicity-notes",
+  "author": "michaelgmg",
+  "url": "https://huggingface.co/michaelgmg/toxicity-notes",
+  "created_at": "2026-08-25T17:11:47.000Z",
+  "updated_at": "2026-08-25T17:11:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "measured",
+    "mixed-active-passive",
+    "numeric-nature",
+    "short-punchy",
+    "vision-language-pretraining",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI/ML-based computational models for toxicity prediction",
+      "url": "https://link.springer.com/article/10.1007/s11356-025-37354-8",
+      "snippet": "The increasing demand for accurate toxicity assessment and to minimise or eliminate the use of animal testing has accelerated the development of numerous computational models, AI/ML models, and online resources that support research in computational toxicology. This review addresses toxicity prediction and chemical safety evaluation, focusing on computational models and data coverage ..."
+    },
+    {
+      "title": "Machine Learning Toxicity Prediction: Latest Advances by Toxicity End ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798519/",
+      "snippet": "Machine learning (ML) models to predict the toxicity of small molecules have garnered great attention and have become widely used in recent years. Computational toxicity prediction is particularly advantageous in the early stages of drug discovery ..."
+    },
+    {
+      "title": "The role of machine learning in predictive toxicology: A review of ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0024320525004564",
+      "snippet": "These AI-powered models provide early and accurate identification of toxicity risks, reducing reliance on animal testing and improving the efficiency of drug discovery. This review explores the role of AI models in predicting ADRs, emphasizing their ability to integrate diverse datasets and uncover complex toxicity mechanisms."
+    },
+    {
+      "title": "GitHub - unitaryai/detoxify: Trained models & code to predict toxic ...",
+      "url": "https://github.com/unitaryai/detoxify",
+      "snippet": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. - unitaryai/detoxify"
+    },
+    {
+      "title": "AssistantsLab/Tiny-Toxic-Detector · Hugging Face",
+      "url": "https://huggingface.co/AssistantsLab/Tiny-Toxic-Detector",
+      "snippet": "Usage and Limitations Toxicity classification models always have certain limitations you should be aware of, and this model is no different. Intended Usage The Tiny-toxic-detector is designed to classify comments for toxicity. It is particularly useful in scenarios where minimal resource usage and rapid inference are essential. Key features include: Low Resource Consumption: With a requirement ..."
+    }
+  ]
+}

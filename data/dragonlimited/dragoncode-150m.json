@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dragonlimited/DragonCode-150M",
+  "slug": "dragonlimited-dragoncode-150m",
+  "author": "dragonlimited",
+  "url": "https://huggingface.co/dragonlimited/DragonCode-150M",
+  "created_at": "2026-08-23T17:36:05.000Z",
+  "updated_at": "2026-08-25T14:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12459962537,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "Factory Raises $150M: Model-Agnostic AI Coding Agents",
+      "url": "https://byteiota.com/factory-raises-150m-model-agnostic-ai-coding-agents/",
+      "snippet": "Cost optimization becomes practical—switch models per task based on complexity and volume. The AI coding tools market is heading toward consolidation. GitHub, Cursor, and Factory compete for enterprise share. Factory&#x27;s $150 million war chest funds the race to prove model-agnostic, full-SDLC automation beats single-vendor depth."
+    },
+    {
+      "title": "Tripo AI Raises Another $150M: 3D Generation Graduates from Toy to ...",
+      "url": "https://www.wangdou.com/news/en/2026-07-05-tripo-ai-150m-3d-foundation-models",
+      "snippet": "Tripo AI closes $150M Series A3 with Geely, 4399, and Giant Network betting on 3D foundation models"
+    },
+    {
+      "title": "Dragon - 企业级中转 - Dragon Code",
+      "url": "https://dragoncode.codes/",
+      "snippet": "更低的价格，更简单的配置，让每位开发者都能用上顶级 AI 编码模型。 一个 DragonCode 账号，同时使用 Claude Code 和 Codex。 统一的 API 接入与网络环境，把时间还给你的代码，而不是配置面板。 统一的域名与密钥格式，覆盖常见IDE 插件与CLI工具。 一键配置环境。"
+    },
+    {
+      "title": "GitHub - naoum40/Dragon-Code",
+      "url": "https://github.com/naoum40/Dragon-Code",
+      "snippet": "💡 About the project Dragon Code is an open-source application inspired by OpenAI&#x27;s Codex. It allows you to code with AI assistance, specifically configured to use the free Nvidia NIM models."
+    }
+  ]
+}

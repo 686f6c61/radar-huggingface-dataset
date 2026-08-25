@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/MCDP_MLSTM",
+  "slug": "abdullah-nazhat-mcdp_mlstm",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/MCDP_MLSTM",
+  "created_at": "2025-11-27T21:10:18.000Z",
+  "updated_at": "2026-08-25T16:42:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mlstm: A Coalmine Pressure Prediction Algorithm Based on the Fusion of ...",
+      "url": "https://ieeexplore.ieee.org/document/11359875",
+      "snippet": "Experimental results on a real coalmine pressure dataset demonstrate that the proposed Mlstm model outperforms traditional methods in multi-step forecasting tasks, significantly improving prediction accuracy and providing reliable support for coalmine safety risk warning systems."
+    },
+    {
+      "title": "Abdullah-Nazhat/MCDP_GDN · Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat/MCDP_GDN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Abdullah-Nazhat (Abdullah Nazhat Abdullah) - Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat",
+      "snippet": "AI & ML interests Computer Vision, Natural Language Processing, Large Language Models, Foundational Vision Models, Vision Language Models, Large Multi-Modal Models"
+    },
+    {
+      "title": "Mlstm: A Coalmine Pressure Prediction Algorithm Based on the Fusion of ...",
+      "url": "https://www.semanticscholar.org/paper/Mlstm%3A-A-Coalmine-Pressure-Prediction-Algorithm-on-Cheng-Nie/9ce87ef6fb8a4d9b56779962ebc0a97dc2c05e11",
+      "snippet": "This paper reviews the state of the art developments in deep learning for time series prediction and categorizes them into discriminative, generative, and hybrids models, based on modeling for the perspective of conditional or joint probability."
+    },
+    {
+      "title": "Abdullah Nazhat Abdullah - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=QQPn4FMAAAAJ&hl=en",
+      "snippet": "My profileMy libraryMetricsAlerts. Settings. Sign in. Please show you&#x27;re not a robot. Sorry, we can&#x27;t verify that you&#x27;re not a robot when JavaScript is turned off. Please enable JavaScriptin your..."
+    }
+  ]
+}

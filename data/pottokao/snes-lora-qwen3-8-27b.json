@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "pottokao/SNES-LoRA-Qwen3.8-27B",
+  "slug": "pottokao-snes-lora-qwen3-8-27b",
+  "author": "pottokao",
+  "url": "https://huggingface.co/pottokao/SNES-LoRA-Qwen3.8-27B",
+  "created_at": "2026-08-25T16:11:57.000Z",
+  "updated_at": "2026-08-25T16:27:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "snes",
+    "super-famicom",
+    "pvsneslib",
+    "game-generation",
+    "retro-dev",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1275214048,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pottokao-dotcom/nes-lora-for-qwen3.8-27b: Local Qwen3.8-27B ...",
+      "url": "https://github.com/pottokao-dotcom/nes-lora-for-qwen3.8-27b",
+      "snippet": "Getting a local Qwen3.8-27B (self-quantized) to write a playable web Gomoku and then port it to a runnable NES (cc65) version — via decompose → high-level version as spec → model does logic, tools do rendering, with self-correction driven by custom state/audio probes (not by looking at pixels)."
+    },
+    {
+      "title": "Qwen3.8-27B: Video-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-qwen",
+      "snippet": "Overview Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and visual information. The model has 64 layers ..."
+    },
+    {
+      "title": "TeichAI/Qwen3.8-27B-Fable-Distill-LoRA · Hugging Face",
+      "url": "https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · pottokao/Qwen3.8-27B-NVFP4-MTP-2x16GB at main",
+      "url": "https://huggingface.co/pottokao/Qwen3.8-27B-NVFP4-MTP-2x16GB/blob/main/README.md",
+      "snippet": "Qwen3.8-27B — NVFP4 + native MTP, tuned to run on two cheap 16 GB GPUs A self-quantized NVFP4 build of Qwen3.8-27B with speculative decoding via the model&#x27;s own MTP head, deployed on two consumer 16 GB cards (2× RTX 5070 Ti) with vLLM tensor parallelism — reaching a genuine 160,000-token context (≈177k-token KV pool). No A100/H100, no 48 GB card."
+    },
+    {
+      "title": "Qwen3.8-27B | AI Model Review | Neomanex",
+      "url": "https://neomanex.com/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is Alibaba&#x27;s 27-billion-parameter open-weight model, now shipped under Apache 2.0 with 262K native context and single-GPU deployment. It is the self-hostable companion to the 2.4T Qwen3.8-Max flagship. Benchmarks remain Alibaba-reported, so it lands at conditional — a real, runnable model whose vendor-claimed coding gains still await independent reproduction."
+    }
+  ]
+}

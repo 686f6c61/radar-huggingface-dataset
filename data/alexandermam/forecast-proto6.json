@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alexandermam/forecast-proto6",
+  "slug": "alexandermam-forecast-proto6",
+  "author": "alexandermam",
+  "url": "https://huggingface.co/alexandermam/forecast-proto6",
+  "created_at": "2026-08-25T16:17:09.000Z",
+  "updated_at": "2026-08-25T16:17:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "detailed-descriptive",
+    "impersonal",
+    "latex-neurips",
+    "medium-balanced",
+    "neutral",
+    "numeric-apa",
+    "ocr-freeform",
+    "structured-imrad",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexandermam (Alexander Morozov) - Hugging Face",
+      "url": "https://huggingface.co/alexandermam",
+      "snippet": "I like cats, code, and clean datasets"
+    },
+    {
+      "title": "Ai 2027",
+      "url": "https://ai-2027.com/",
+      "snippet": "A research-backed AI scenario forecast. The CEOs of OpenAI, Google DeepMind, and Anthropic have all predicted that AGI will arrive within the next 5 years. Sam Altman has said OpenAI is setting its sights on \"superintelligence in the true sense of the word\" and the \"glorious future.\" What might that look like? We wrote AI 2027 to answer that question. Claims about the future are often ..."
+    },
+    {
+      "title": "The AI Superforecasters Are Here - by Scott Alexander",
+      "url": "https://www.astralcodexten.com/p/the-ai-superforecasters-are-here",
+      "snippet": "The Metaculus Pro Forecasters are top professional superforecasters. This graph makes it look like - as of May 2026 when Gemini 3.1 was state of the art - AI was approaching the Community Prediction. This is no mean feat, but it&#x27;s still far from the professional superforecaster level. But in a recent blog post, Metaculus adds context."
+    },
+    {
+      "title": "Run AI models yourself from ECMWF open data | ECMWF",
+      "url": "https://www.ecmwf.int/en/about/media-centre/aifs-blog/2024/run-ai-models-yourself-ecmwf-open-data",
+      "snippet": "This initiative allows researchers, meteorologists and enthusiasts to generate their own forecasts, experiment with model parameters, and contribute to the advancement of weather prediction. The power of open data and AI By combining ECMWF&#x27;s high-quality open data with state-of-the-art AI models, users can:"
+    },
+    {
+      "title": "Time Series Forecasting Service - Amazon Forecast - Amazon Web Services",
+      "url": "https://aws.amazon.com/forecast/",
+      "snippet": "Amazon Forecast is a fully managed time-series forecasting service that uses the same machine learning technology used at Amazon.com."
+    }
+  ]
+}

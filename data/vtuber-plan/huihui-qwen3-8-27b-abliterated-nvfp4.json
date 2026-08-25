@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Vtuber-plan/Huihui-Qwen3.8-27B-abliterated-NVFP4",
+  "slug": "vtuber-plan-huihui-qwen3-8-27b-abliterated-nvfp4",
+  "author": "Vtuber-plan",
+  "url": "https://huggingface.co/Vtuber-plan/Huihui-Qwen3.8-27B-abliterated-NVFP4",
+  "created_at": "2026-08-25T18:14:14.000Z",
+  "updated_at": "2026-08-25T18:21:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "Qwen3.8",
+    "abliterated",
+    "NVFP4",
+    "quantized",
+    "modelopt",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15193246960,
+  "parameters_human": "15.19B",
+  "storage_bytes": 20613135981,
+  "storage_human": "20.6 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated launches as an uncensored AI model for free",
+      "url": "https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html",
+      "snippet": "The Hugging Face model card describes Huihui-Qwen3.8-27B-abliterated as a crude proof-of-concept for removing refusals from an LLM. In practice, that means the release is meant to demonstrate the method rather than serve as a polished overhaul.Huihui-ai released Huihui-Qwen3.8-27B-abliterated on August 18, 2026."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen2.5-coder-3b-instruct-spider-sft-grpo-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-3b-instruct-spider-sft-grpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2.5-coder-3b-instruct-spider-sft-grpo-GGUF",
+  "created_at": "2026-08-25T14:38:17.000Z",
+  "updated_at": "2026-08-25T14:56:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-to-sql",
+    "sql",
+    "code",
+    "reinforcement-learning",
+    "grpo",
+    "qwen2.5",
+    "spider",
+    "unsloth",
+    "en",
+    "dataset:spider",
+    "base_model:riit3sh/qwen2.5-coder-3b-instruct-spider-sft-grpo",
+    "base_model:quantized:riit3sh/qwen2.5-coder-3b-instruct-spider-sft-grpo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940895104,
+  "storage_human": "27.9 GB",
+  "base_model": "riit3sh/qwen2.5-coder-3b-instruct-spider-sft-grpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-Coder-3B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-3B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-3B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "Today, we are excited to open source the \"Powerful\", \"Diverse\", and \"Practical\" Qwen2.5-Coder series (formerly known as CodeQwen1.5), dedicated to continuously promoting the development of Open CodeLLMs. 💻 Powerful: Qwen2.5-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. While demonstrating strong and ..."
+    },
+    {
+      "title": "Qwen2.5 Coder 3B Instruct - Model Details - LLM Radar",
+      "url": "https://open-llm-radar.com/models/qwen2.5-coder-3b-instruct",
+      "snippet": "Qwen2.5 Coder 3B Instruct is a versatile model designed for text generation, code generation, and multilingual translation, with support for Japanese, English, Russian, Italian, French, Chinese, Korean, Portuguese, Thai, Arabic, Vietnamese, German, and Spanish. Its multilingual capability makes it a possible tool for creating content across diverse linguistic contexts, while its code ..."
+    }
+  ]
+}

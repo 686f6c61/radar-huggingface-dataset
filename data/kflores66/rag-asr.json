@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kflores66/rag-asr",
+  "slug": "kflores66-rag-asr",
+  "author": "Kflores66",
+  "url": "https://huggingface.co/Kflores66/rag-asr",
+  "created_at": "2026-08-25T15:50:15.000Z",
+  "updated_at": "2026-08-25T15:50:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "embodied-ai",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "latex-cvpr",
+    "measured",
+    "numeric-bibtex",
+    "passive",
+    "short-punchy",
+    "theoretical-rigorous",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval Augmented Generation based context discovery for ASR",
+      "url": "https://arxiv.org/html/2509.19567v1",
+      "snippet": "Specifically, it proposes an embedding-based retrieval strategy using pre-trained MiniLM embeddings over a large vocabulary, entirely decoupled from the ASR model architecture. This method is evaluated alongside two LLM-based alternatives: a prompt-based context generator and a post-ASR transcript corrector."
+    },
+    {
+      "title": "Enhancing LLM-based ASR Accuracy with Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/pdf/2409.08597",
+      "snippet": "To address this, we propose LA-RAG, a novel Retrieval-Augmented Generation (RAG) paradigm for LLM-based ASR. LA-RAG leverages fine-grained token-level speech datastores and a speech-to-speech retrieval mechanism to enhance ASR accuracy via LLM in-context learning (ICL) capabilities."
+    },
+    {
+      "title": "RAG · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/rag",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tosho-01/rag-n-riva: This repository contains all the ...",
+      "url": "https://github.com/Tosho-01/rag-n-riva",
+      "snippet": "This repository contains all the necessary steps to set up a local large language model (LLM) with Retrieval-Augmented Generation (RAG) and speech functionality on an NVIDIA Jetson AGX Orin. The pr..."
+    },
+    {
+      "title": "Retrieval-Augmented Correction of Named Entity Speech Recognition ...",
+      "url": "https://machinelearning.apple.com/research/retrieval-asr",
+      "snippet": "In parallel to the rise of end-to-end ASR systems, large language models (LLMs) have proven to be a versatile tool for various natural language processing (NLP) tasks. In NLP tasks where a database of relevant knowledge is available, retrieval augmented generation (RAG) has achieved impressive results when used with LLMs."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "pratyushpmishra/rasayana",
+  "slug": "pratyushpmishra-rasayana",
+  "author": "pratyushpmishra",
+  "url": "https://huggingface.co/pratyushpmishra/rasayana",
+  "created_at": "2026-08-25T16:10:15.000Z",
+  "updated_at": "2026-08-25T16:31:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2758263319,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rasayan Labs — AI OS for Drug Discovery",
+      "url": "https://rasayan.ai/",
+      "snippet": "Rasayan is the AI operating system for pharmaceutical R&D — retrosynthesis, impurity prediction, ADMET/PK, patent search, molecular docking, OCSR, and chemistry-aware document intelligence in one platform. 105 AI models. 1.3T+ screensable molecules."
+    },
+    {
+      "title": "pratyush-ai (Pratyush mishra) - Hugging Face",
+      "url": "https://huggingface.co/pratyush-ai/models",
+      "snippet": "Generative AI, LLM inference, AI agents, open-source models, NLP, applied ML"
+    },
+    {
+      "title": "GitHub - MukundaKatta/rasayana: Rasayana — Biological Age Prediction ...",
+      "url": "https://github.com/MukundaKatta/rasayana",
+      "snippet": "Rasayana — Biological Age Prediction from Multi-Modal Health Data. Personalized longevity interventions powered by AI."
+    },
+    {
+      "title": "IISc Releases SraVaani Voice AI Model - GKToday",
+      "url": "https://www.gktoday.in/iisc-releases-sravaani-voice-ai-model/",
+      "snippet": "The model covers 20 scheduled Indian languages and 45 regional languages, including Garo, Angika, Chakma, Kokborok, Tulu, Bundeli, and Bajjika. The system supports 10 scripts and includes automatic language identification."
+    },
+    {
+      "title": "PRATYUSH-MISH (PRATYUSH MISHRA) · GitHub",
+      "url": "https://github.com/PRATYUSH-MISH/",
+      "snippet": "DAWN. PRATYUSH-MISH has 32 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

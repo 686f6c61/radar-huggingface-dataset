@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shubhamkumarsharma03/edusync-api",
+  "slug": "shubhamkumarsharma03-edusync-api",
+  "author": "shubhamkumarsharma03",
+  "url": "https://huggingface.co/shubhamkumarsharma03/edusync-api",
+  "created_at": "2026-08-25T15:46:00.000Z",
+  "updated_at": "2026-08-25T15:46:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Triplejw/EduSync: An edge-deployed AI-powered LMS integrating ...",
+      "url": "https://github.com/Triplejw/EduSync",
+      "snippet": "About EduSync is an edge-deployed Learning Management System built as a BTech ECE Final Year Project (12 Credits). Teachers upload study materials and the system automatically generates quizzes, summaries, and flashcards using a locally running Llama-3 model. Students take quizzes with real-time camera-based attention monitoring, while scroll engagement is quantified through DSP signal processing."
+    },
+    {
+      "title": "LMS/edusync-api/docs at main · AI-Powered-Edtech/LMS",
+      "url": "https://github.com/AI-Powered-Edtech/LMS/tree/main/edusync-api/docs",
+      "snippet": "Contribute to AI-Powered-Edtech/LMS development by creating an account on GitHub."
+    },
+    {
+      "title": "API Reference - EduSync Docs",
+      "url": "https://cringynoob.github.io/EduSync-Docs/api/",
+      "snippet": "Complete documentation for EduSync - A Campus Ecosystem Platform built with React and Node.js microservices"
+    },
+    {
+      "title": "EduSync | AI-Powered School Management & WhatsApp Integration",
+      "url": "https://www.edusync.online/",
+      "snippet": "The first AI-powered school management system in Africa. Generate lesson plans with EduAI and connect parents via WhatsApp."
+    },
+    {
+      "title": "EduSync-AI | Devpost",
+      "url": "https://devpost.com/software/edusync-ai",
+      "snippet": "What it does The Student Dashboard in EduSync-AI helps students: 🧾 Summarize lecture notes into short, easy-to-read paragraphs. 🔑 Extract key points — perfect for quick revisions. 🤖 Chat with an AI Mentor Bot — to ask doubts, get concept clarity, or receive study tips. All of this happens inside one clean, dark-themed web interface."
+    }
+  ]
+}

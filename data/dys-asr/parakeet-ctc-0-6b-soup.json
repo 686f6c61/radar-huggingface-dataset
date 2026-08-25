@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "dys-asr/parakeet-ctc-0.6b-soup",
+  "slug": "dys-asr-parakeet-ctc-0-6b-soup",
+  "author": "dys-asr",
+  "url": "https://huggingface.co/dys-asr/parakeet-ctc-0.6b-soup",
+  "created_at": "2026-08-25T17:52:57.000Z",
+  "updated_at": "2026-08-25T17:53:31.000Z",
+  "license": "speech-accessibility-project-dua",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_ctc",
+    "automatic-speech-recognition",
+    "dysarthria",
+    "disordered-speech",
+    "accessibility",
+    "parakeet",
+    "ctc",
+    "model-soup",
+    "en",
+    "base_model:nvidia/parakeet-ctc-0.6b",
+    "base_model:finetune:nvidia/parakeet-ctc-0.6b",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 608848897,
+  "parameters_human": "608.8M",
+  "storage_bytes": 2435506188,
+  "storage_human": "2.4 GB",
+  "base_model": "nvidia/parakeet-ctc-0.6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "WER",
+      "value": 11.89
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "CER",
+      "value": 6.89
+    }
+  ],
+  "sources": [
+    {
+      "title": "dys-asr/parakeet-ctc-0.6b-sapc2 · Hugging Face",
+      "url": "https://huggingface.co/dys-asr/parakeet-ctc-0.6b-sapc2",
+      "snippet": "nvidia/parakeet-ctc-.6b fine-tuned on the Speech Accessibility Project corpus 2 (SAPC2) train split for recognition of dysarthric and otherwise disordered speech."
+    },
+    {
+      "title": "nvidia/parakeet-ctc-0.6b · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-ctc-0.6b",
+      "snippet": "These are greedy WER numbers without external LM. More details on evaluation can be found at HuggingFace ASR Leaderboard NVIDIA Riva: Deployment NVIDIA Riva, is an accelerated speech AI SDK deployable on-prem, in all clouds, multi-cloud, hybrid, on edge, and embedded. Additionally, Riva provides: World-class out-of-the-box accuracy for the most common languages with model checkpoints trained ..."
+    },
+    {
+      "title": "GitHub - mudler/parakeet.cpp: Parakeet implementation in C++ with ggml",
+      "url": "https://github.com/mudler/parakeet.cpp",
+      "snippet": "parakeet.cpp Brought to you by the LocalAI team, the folks behind LocalAI, the open-source AI engine that runs any model (LLMs, vision, voice, image, video) on any hardware, no GPU required. parakeet.cpp is a C++17 inference port of NVIDIA&#x27;s NeMo Parakeet speech-recognition models, built on ggml."
+    },
+    {
+      "title": "Parakeet Ctc 0.6b Sapc2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dys-asr/parakeet-ctc-0.6b-sapc2",
+      "snippet": "Registry entry for model Parakeet Ctc 0.6b Sapc2; source metadata pending."
+    },
+    {
+      "title": "Parakeet CTC 0.6B Open-source Automatic Speech Recognition Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1924737381970481152",
+      "snippet": "Parakeet CTC 0.6B is an automatic speech recognition model jointly developed by NVIDIA NeMo and Suno.ai, based on the FastConformer architecture with approximately 600 million parameters, supporting English speech transcription."
+    }
+  ]
+}

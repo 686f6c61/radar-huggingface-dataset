@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dark-Nexus-27B-v3.0-GGUF",
+  "slug": "mradermacher-dark-nexus-27b-v3-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dark-Nexus-27B-v3.0-GGUF",
+  "created_at": "2026-08-25T15:18:17.000Z",
+  "updated_at": "2026-08-25T15:19:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 1556855040,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark-Nexus-27B-v3.0-uncensored-heretic-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dark-Nexus-27B-v3.0-uncensored-heretic-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Dark-Nexus-27B-v3.0-uncensored-heretic-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Dark-Nexus-27B-v3.0-uncensored-heretic-i1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "heretic · Ollama",
+      "url": "https://ollama.com/search?q=heretic",
+      "snippet": "Search for models on Ollama. command-r7b The smallest model in Cohere&#x27;s R series delivers top-tier speed, efficiency, and quality to build powerful AI applications on commodity GPUs and edge devices."
+    },
+    {
+      "title": "huihui_ai/gemma-4-abliterated",
+      "url": "https://ollama.com/huihui_ai/gemma-4-abliterated",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

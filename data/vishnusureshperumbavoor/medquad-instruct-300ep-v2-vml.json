@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vishnusureshperumbavoor/medquad-instruct-300ep-v2-vml",
+  "slug": "vishnusureshperumbavoor-medquad-instruct-300ep-v2-vml",
+  "author": "vishnusureshperumbavoor",
+  "url": "https://huggingface.co/vishnusureshperumbavoor/medquad-instruct-300ep-v2-vml",
+  "created_at": "2026-08-25T14:24:43.000Z",
+  "updated_at": "2026-08-25T14:25:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "vml-studio",
+    "lora",
+    "sft",
+    "fine-tuned",
+    "medquad",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:adapter:Qwen/Qwen2-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8798208,
+  "parameters_human": "8.8M",
+  "storage_bytes": 81877435,
+  "storage_human": "82 MB",
+  "base_model": "Qwen/Qwen2-0.5B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vishnusureshperumbavoor (Vishnu Suresh) - Hugging Face",
+      "url": "https://huggingface.co/vishnusureshperumbavoor/datasets",
+      "snippet": "Recent Activity ... Organizations None yet vishnusureshperumbavoor &#x27;s datasets 3 Sort: Recently updated"
+    },
+    {
+      "title": "GitHub - abachaa/MedQuAD: Medical Question Answering Dataset of 47,457 ...",
+      "url": "https://github.com/abachaa/MedQuAD",
+      "snippet": "Medical Question Answering Dataset of 47,457 QA pairs created from 12 NIH websites - abachaa/MedQuAD"
+    },
+    {
+      "title": "lavita/MedQuAD · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lavita/MedQuAD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MedQuAD Enhanced — Medical AI Q&A System - GitHub",
+      "url": "https://github.com/AYUSHPALLAV1/MedQuAD-Enhanced-Medical-AI-Q-A-System",
+      "snippet": "🏥 MedQuAD Enhanced — Medical AI Q&A System An advanced Medical Question Answering system built on top of the MedQuAD dataset from 12 NIH sources, enhanced with semantic search, generative AI, PubMed citations, safety detection, and a modern React frontend."
+    },
+    {
+      "title": "Vishnu Suresh Perumbavoor | ML Researcher & Software Engineer",
+      "url": "https://vishnusureshperumbavoor.github.io/V-S-P/",
+      "snippet": "Vishnu Suresh Perumbavoor (VSP) is a Software Engineer and ML Researcher specializing in Medical Imaging and radiology workflows. Winner of Vaiga Hackathon 2023."
+    }
+  ]
+}

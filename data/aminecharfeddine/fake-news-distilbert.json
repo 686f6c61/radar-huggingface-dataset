@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aminecharfeddine/fake-news-distilbert",
+  "slug": "aminecharfeddine-fake-news-distilbert",
+  "author": "aminecharfeddine",
+  "url": "https://huggingface.co/aminecharfeddine/fake-news-distilbert",
+  "created_at": "2026-08-25T12:21:24.000Z",
+  "updated_at": "2026-08-25T12:21:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "msaakaash/fake-news-detection-distilbert - GitHub",
+      "url": "https://github.com/msaakaash/fake-news-detection-distilbert",
+      "snippet": "This project aims to detect fake news using DistilBERT, a transformer-based NLP model. The model is trained on a dataset of real and fake news articles, enabling it to classify unseen news articles as either true or fake."
+    },
+    {
+      "title": "salarMokhtariL/Fake-News-Detection-using-DistilBERT-Pretrained-Model ...",
+      "url": "https://github.com/salarMokhtariL/Fake-News-Detection-using-DistilBERT-Pretrained-Model-and-Transfer-Learning",
+      "snippet": "Fake News Detection using DistilBERT Pretrained Model and Transfer Learning By Salar Mokhtari Laleh This project involves building a machine learning model using Python, PyTorch, and NLP techniques to detect whether a given news article is fake or real based on its textual content."
+    },
+    {
+      "title": "Amirmerfan/distilbert-uncased-fake-news-detector · Hugging Face",
+      "url": "https://huggingface.co/Amirmerfan/distilbert-uncased-fake-news-detector",
+      "snippet": "This model is a fine-tuned version of the distilbert-base-uncased model for fake news detection. The model classifies news articles into two categories: Fake or Real based on their titles and content. This model is trained using the transformers library and leverages pre-trained embeddings from DistilBERT, fine-tuned on a custom fake news dataset."
+    },
+    {
+      "title": "RamaAI/fake-news-distilbert · Hugging Face",
+      "url": "https://huggingface.co/RamaAI/fake-news-distilbert",
+      "snippet": "Fake News Detector This project detects fake news using a fine-tuned DistilBERT model."
+    },
+    {
+      "title": "Transforming Fake News Detection: Leveraging DistilBERT Models for ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050925009470",
+      "snippet": "The analysis unequivocally demonstrates that integrating DistilBERT significantly enhances model performance, ensuring highly accurate identification of fake news. Figs. 3 (a) and 3 (b) show the graphs for training and validation loss, demonstrating a steady decline in loss across all DistilBERT models."
+    }
+  ]
+}

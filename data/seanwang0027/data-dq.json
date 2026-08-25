@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/data-dq",
+  "slug": "seanwang0027-data-dq",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/data-dq",
+  "created_at": "2026-08-25T18:10:15.000Z",
+  "updated_at": "2026-08-25T19:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "evaluation",
+    "rollouts",
+    "rlve",
+    "aime",
+    "hmmt",
+    "sciworld",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1139298410,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanWang0027 (SeanWang0027) - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/activity/papers",
+      "snippet": "SeanWang0027 &#x27;s activity All Models Datasets Spaces Papers Collections Community Posts Upvotes Likes Articles"
+    },
+    {
+      "title": "SeanWang0027 (SeanWang0027) - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 22 days ago ... published a dataset 22 days ago"
+    },
+    {
+      "title": "ZenseAI.Data - AI Infused Data Engineering: DQ + Model IQ Agent",
+      "url": "https://aws.amazon.com/marketplace/pp/prodview-36lg6qecyk3nm",
+      "snippet": "ZenseAi.Data: DQ + Model IQ Agent - Unified AI-Driven Data Quality and Modeling Framework Problem Statement: In the modern digital enterprise, data is no longer just an asset: it is the foundation upon which every business decision, predictive model, and customer experience is built."
+    },
+    {
+      "title": "ZenseAI.Data - AI Infused Data Engineering:DQ+Model IQ Agent",
+      "url": "https://marketplace.microsoft.com/en-us/product/zensartechnologiesltd.ai_agentic_data_engineering_dqmodeliqagent?tab=overview",
+      "snippet": "This hands-on evaluation allows clients to visualize the transformation before making any investment. In conclusion, the DQ + Model IQ Agent represents the next evolution of enterprise data assurance: where data and AI are monitored, validated, and optimized together within one unified intelligent framework."
+    },
+    {
+      "title": "ZenseAI.Data - AI Infused Data Engineering:DQ+Model IQ Agent",
+      "url": "https://marketplace.microsoft.com/en-us/marketplace/consulting-services/zensartechnologiesltd.ai_agentic_data_engineering_dqmodeliqagent",
+      "snippet": "The agent simplifies audits by providing evidence-based traceability across the full data lifecycle, from ingestion to model output. Enterprises that implemented the DQ + Model IQ Agent experienced an average 65% reduction in data-related model errors, translating to more stable and accurate predictive outcomes."
+    }
+  ]
+}

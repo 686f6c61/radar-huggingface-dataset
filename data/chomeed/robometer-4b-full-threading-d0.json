@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "chomeed/robometer-4b-full-threading-d0",
+  "slug": "chomeed-robometer-4b-full-threading-d0",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/robometer-4b-full-threading-d0",
+  "created_at": "2026-08-25T14:02:00.000Z",
+  "updated_at": "2026-08-25T14:05:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "reward_model",
+    "rbm",
+    "robometer",
+    "mimicgen",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4447004940,
+  "parameters_human": "4.45B",
+  "storage_bytes": 8894745057,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chomeed/robometer-4b-lora-anubis · Hugging Face",
+      "url": "https://huggingface.co/chomeed/robometer-4b-lora-anubis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory ...",
+      "url": "https://robometer.github.io/",
+      "snippet": "A general-purpose robotic reward model trained on trajectory comparisons from the RBM-1M dataset. Provides dense, video-language-conditioned rewards for robot learning."
+    },
+    {
+      "title": "Robometer-4B - Hugging Face",
+      "url": "https://huggingface.co/robometer/Robometer-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - robometer/robometer: Robometer: Scaling General-Purpose ...",
+      "url": "https://github.com/robometer/robometer",
+      "snippet": "Preprocess a new dataset, LoRA fine-tune from Robometer-4B on your own data, upload the model to the Hub, and run inference: Preprocessing: Add your dataset to the preprocess config and run the preprocessor; for raw videos (e.g. MINT-SJTU/RoboFAC-dataset), convert to RBM format first via dataset_upload, then preprocess."
+    },
+    {
+      "title": "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory ...",
+      "url": "https://arxiv.org/html/2603.02115v1",
+      "snippet": "We keep our pre-trained Robometer-4B reward model backbone fixed and train LLM LoRA adapters (76M parameters) while also fine-tuning the MLP prediction heads (progress, preference, and success)."
+    }
+  ]
+}

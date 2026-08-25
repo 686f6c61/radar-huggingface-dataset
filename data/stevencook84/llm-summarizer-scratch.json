@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Stevencook84/llm-summarizer-scratch",
+  "slug": "stevencook84-llm-summarizer-scratch",
+  "author": "Stevencook84",
+  "url": "https://huggingface.co/Stevencook84/llm-summarizer-scratch",
+  "created_at": "2026-08-25T18:27:05.000Z",
+  "updated_at": "2026-08-25T18:27:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "document-ai",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "latex-icml",
+    "measured",
+    "medium-balanced",
+    "mixed-active-passive",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM-based Text Summarization: Novice to Maestro - GitHub",
+      "url": "https://github.com/ritun16/llm-text-summarization",
+      "snippet": "LLM-based Text Summarization: Novice to Maestro 🚀 A comprehensive guide and codebase for text summarization harnessing the capabilities of Large Language Models (LLMs). Delve deep into techniques, from chunking to clustering, and maximize the potential of LLMs like GPT-3.5 and GPT-4."
+    },
+    {
+      "title": "Summarization · Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter7/5",
+      "snippet": "7. Classical NLP tasks Introduction Token classification Fine-tuning a masked language model Translation Summarization Training a causal language model from scratch Question answering Mastering LLMs End-of-chapter quiz"
+    },
+    {
+      "title": "Samir-Guenchi/llm-summarizer-from-scratch - GitHub",
+      "url": "https://github.com/Samir-Guenchi/llm-summarizer-from-scratch",
+      "snippet": "This project implements a custom Transformer-based Large Language Model (LLM) specifically designed for abstractive text summarization. Unlike typical implementations that rely on high-level libraries like Hugging Face Transformers, this project builds every component from the ground up, providing deep insights into the inner workings of modern language models."
+    },
+    {
+      "title": "Build a Large Language Model (From Scratch) | Sebastian Raschka, PhD",
+      "url": "https://sebastianraschka.com/llms-from-scratch/",
+      "snippet": "Local companion hub for Build a Large Language Model (From Scratch), with chapter links, code resources, concept guides, and related articles."
+    },
+    {
+      "title": "Text Summarization Model using LLMs | Aman Kharwal",
+      "url": "https://amanxai.com/2024/10/07/text-summarization-model-using-llms/",
+      "snippet": "The final step will be to decode the generated tokens back into readable text and adjust parameters to improve the summary quality. So, let&#x27;s start building a text summarization model using LLMs with Python step by step. Step 1: Select a Suitable LLM Choose a pre-trained model designed for text generation tasks."
+    }
+  ]
+}

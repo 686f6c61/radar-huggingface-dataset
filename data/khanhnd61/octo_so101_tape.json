@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "khanhnd61/octo_so101_tape",
+  "slug": "khanhnd61-octo_so101_tape",
+  "author": "khanhnd61",
+  "url": "https://huggingface.co/khanhnd61/octo_so101_tape",
+  "created_at": "2026-08-25T12:31:38.000Z",
+  "updated_at": "2026-08-25T12:32:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "octo",
+    "so101",
+    "dataset:khanhnd61/so101-tape_20260804_224429",
+    "base_model:rail-berkeley/octo-small-1.5",
+    "base_model:finetune:rail-berkeley/octo-small-1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27040008,
+  "parameters_human": "27.0M",
+  "storage_bytes": 108209112,
+  "storage_human": "108 MB",
+  "base_model": "rail-berkeley/octo-small-1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khanhnd61/smolvla_so101_tape_prune10 · Hugging Face",
+      "url": "https://huggingface.co/khanhnd61/smolvla_so101_tape_prune10",
+      "snippet": "Instructions to use khanhnd61/smolvla_so101_tape_prune10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use khanhnd61/smolvla_so101_tape_prune10 with LeRobot:"
+    },
+    {
+      "title": "khanhnd61 (Khanh Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/datasets/khanhnd61/",
+      "snippet": "Organizations khanhnd61&#x27;s datasets2 Sort: Recently updated khanhnd61/ur10e-cup Viewer •Updated about 7 hours ago•49.8k"
+    },
+    {
+      "title": "Datasets and Models - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "GitHub - AriRyo/lerobot-so101: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/AriRyo/lerobot-so101",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - AriRyo/lerobot-so101"
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

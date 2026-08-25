@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Deepdive404-3/Ornith-1.5-35B-A3B-APEX-MTP-GGUF",
+  "slug": "deepdive404-3-ornith-1-5-35b-a3b-apex-mtp-gguf",
+  "author": "Deepdive404-3",
+  "url": "https://huggingface.co/Deepdive404-3/Ornith-1.5-35B-A3B-APEX-MTP-GGUF",
+  "created_at": "2026-08-25T13:48:49.000Z",
+  "updated_at": "2026-08-25T13:48:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "apex",
+    "apex-mtp",
+    "moe",
+    "mixture-of-experts",
+    "qwen3",
+    "vlm",
+    "vision",
+    "speculative-decoding",
+    "self-speculative",
+    "mtp",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 220979946304,
+  "storage_human": "221.0 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.5-35B-A3B is DeepReinforce&#x27;s Qwen3.5 MoE agentic coding model. This experimental derivative merges the selected Heretic 1.4.0 Trial 62 LoRA into BF16 weights. The shipped native MTP head is untrained (initializer-like statistics). It is replaced here with the 19-tensor fused BF16 head from shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY (Qwen3.6 graft + 12K KL distillation). Refusal-modified ..."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "DeepReinforce Ornith-1.5 family released - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/deepreinforce-ornith-1-5-family-released/380623",
+      "snippet": "Looks like DeepReinforce released a bunch of Ornith-1.5 models today: 9B, 35B-A3B, 397B in a nice mix of quants/formats. The 35B-A3B looks interesting for a single-node setup. Downloading on one of my GX10s to give it a run through. Anyone already give it a go? Text-only per the model card, so not a direct competitor/replacement for Qwen3.6-35B, perhaps."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-DGX-Spark/README.md at main - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark/blob/main/README.md",
+      "snippet": "Ornith-1.5 35B-A3B for DGX Spark by Mia&#x27;a AI Lab Serve Ornith-1.5-35B-A3B — a ~35B mixture-of-experts model (~3B active params/token) from the Ornith team — on a single NVIDIA DGX Spark (GB10 / SM121, ~128 GB unified memory): NVFP4 checkpoint, vLLM, in-checkpoint MTP speculative decoding, and up to 256k context."
+    }
+  ]
+}

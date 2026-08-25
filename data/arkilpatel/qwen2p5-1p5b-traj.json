@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "arkilpatel/qwen2p5-1p5b-traj",
+  "slug": "arkilpatel-qwen2p5-1p5b-traj",
+  "author": "arkilpatel",
+  "url": "https://huggingface.co/arkilpatel/qwen2p5-1p5b-traj",
+  "created_at": "2026-08-25T14:31:41.000Z",
+  "updated_at": "2026-08-25T18:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "checkpoint-trajectory",
+    "math",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 561934748264,
+  "storage_human": "561.9 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arkil Patel",
+      "url": "https://arkilpatel.github.io/",
+      "snippet": "PhD Student in Computer Science at Mila and McGill University, working on Large Language Models."
+    },
+    {
+      "title": "‪Arkil Patel‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=-5goVAsAAAAJ&hl=en",
+      "snippet": "‪CS PhD Student, Mila and McGill University‬ - ‪‪Cited by 2,833‬‬ - ‪Machine Learning‬ - ‪Natural Language Processing‬"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arkil Patel (@arkil_patel) / Posts / X",
+      "url": "https://x.com/arkil_patel",
+      "snippet": "Fantastic work by @arkil_patel on predicting downstream behaviour of LLMs via a proxy metric, with important implications for model and data selection, backed by excellent experimental design!"
+    },
+    {
+      "title": "Arkil Patel - PhD Student at Mila and McGill | Research in ... - LinkedIn",
+      "url": "https://ca.linkedin.com/in/arkil-patel",
+      "snippet": "PhD Student at Mila and McGill | Research in ML & NLP | Prev at Microsoft Research, Allen Institute for AI · I am a grad student at Mila/McGill. My primary research area is Natural Language Processing. To know more about my research, visit my webpage: https://arkilpatel.github.io. Previously, I was a Research Fellow at Microsoft Research Lab, India. I graduated from BITS Pilani in 2020 with a ..."
+    }
+  ]
+}

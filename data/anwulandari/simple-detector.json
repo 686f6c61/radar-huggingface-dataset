@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Anwulandari/simple-detector",
+  "slug": "anwulandari-simple-detector",
+  "author": "Anwulandari",
+  "url": "https://huggingface.co/Anwulandari/simple-detector",
+  "created_at": "2026-08-25T16:11:12.000Z",
+  "updated_at": "2026-08-25T16:11:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "graphic-visual",
+    "intro-method-exp-related-conclusion",
+    "knowledge-distillation",
+    "latex-icml",
+    "mixed-active-passive",
+    "narrative-progressive",
+    "neutral",
+    "numeric-apa",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector - AI Detection in Seconds",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=wV17fxqYlq4tk_6BsnLjxxvOiIw97ehVqxc1gxG%2DGV7mTNdxCoW8vgleo%2DD3I4DNpWYWGM4qXP557FrTQHGWyXMxLqxHHl4rs7Zt%2DH0gb4if%2D9iJsIq61mxfy8awSAnWb0tfShBxKb%2DXtKSi2dwxQOS1P8L4heE1ekSB1ML4U1g.x9s7TTJJlduMVISUdq3v7g&rut=eee9e60d87bb69d9b287af6d73abd94ae2bb548b9475d70bbac4028addf0e14e&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8Gu8QkogZxWjzVi9wi1ESEjVUCUxuofxq1CEn0nkTpWdOTUGoxkEfeAboalVEGmX2eOwcEveqrkaBT6V94UavYI07VeyyRF1b_p17O0aAzsKwzbadq0FyhtZEL7YFw2TFjHXxJmpsnSvBlOFr9YjaHIE8cic%2Dc503feulvqWVRHjouxZu9NScN8U6hrFSnqQjIiGbjBONqi0Pl4mfW35WjkVl7xY%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3Mzc5NDk4JTI2dXRtX2NvbnRlbnQlM2Q4MTk4MjQ4MzU5MTg5MSUyNnV0bV90ZXJtJTNkZGV0ZWN0JTI1MjBhaSUyNnV0bV9idSUzZGNvcnAlMjZrZXl3b3JkaWQlM2Q4MTk4Mjc1NDU2OTAyNSUyNnRhcmdldGlkJTNka3dkLTgxOTgyNzU0NTY5MDI1JTNhbG9jLTY2JTI2YWRncm91cCUzZDEzMTE3MTg2ODE2MTA5NDMlMjZkZXZpY2UlM2RjJTI2bWF0Y2h0eXBlJTNkYiUyNm5ldHdvcmslM2RzJTI2ZXh0ZW5zaW9uJTNkJTI2Y2xpY2tpZCUzZGQxZWRhYzdiMTc4NTFmMzc0ZGFkYzZmNmRmYzRhZTUzJTI2Z2NsaWQlM2RkMWVkYWM3YjE3ODUxZjM3NGRhZGM2ZjZkZmM0YWU1MyUyNm1zY2xraWQlM2RkMWVkYWM3YjE3ODUxZjM3NGRhZGM2ZjZkZmM0YWU1Mw%26rlid%3Dd1edac7b17851f374dadc6f6dfc4ae53&vqd=4-53034926929900695439397031713080305778&iurl=%7B1%7DIG%3D8EF79534D4E94D74BDB234DB82A3B964%26CID%3D338FDC00673161E315A0CBC0663F6055%26ID%3DDevEx%2C5036.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "An Embarrassingly Simple Detector for Model Extraction Attacks",
+      "url": "https://arxiv.org/html/2606.05725v1",
+      "snippet": "We formulate model extraction monitoring as benign-calibrated traffic-window distribution testing and show that an embarrassingly simple detector is effective: embed incoming queries into a semantic space and test whether their aggregate distribution deviates from historical benign traffic."
+    },
+    {
+      "title": "A-Simple-Detector-is-a-Strong-Tracker/README.md at main - GitHub",
+      "url": "https://github.com/facias914/A-Simple-Detector-is-a-Strong-Tracker/blob/main/README.md",
+      "snippet": "A Simple Detector with Frame Dynamics is a Strong Tracker [A Simple Detector with Frame Dynamics is a Strong Tracker] Chenxu Peng, Chenxu Wang, Minrui Zou, Danyang Li, Zhengpeng Yang, Yimian Dai, Ming-Ming Cheng, Xiang Li In The 4th Anti-UAV Workshop (CVPRW), 2025 [中文解读]"
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "An Embarrassingly Simple Detector for Model Extraction Attacks in Large ...",
+      "url": "https://www.semanticscholar.org/paper/An-Embarrassingly-Simple-Detector-for-Model-Attacks-Liu-Guo/3314f4868f252aa218f5cc305248bab9e295cbb1",
+      "snippet": "We formulate model extraction monitoring as benign-calibrated traffic-window distribution testing and show that an embarrassingly simple detector is effective: embed incoming queries into a semantic space and test whether their aggregate distribution deviates from historical benign traffic."
+    }
+  ]
+}

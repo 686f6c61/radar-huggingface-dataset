@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "YasinAsl0n/dolandirici-mesaj-tespit-bert",
+  "slug": "yasinasl0n-dolandirici-mesaj-tespit-bert",
+  "author": "YasinAsl0n",
+  "url": "https://huggingface.co/YasinAsl0n/dolandirici-mesaj-tespit-bert",
+  "created_at": "2026-08-25T10:49:55.000Z",
+  "updated_at": "2026-08-25T12:14:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110619651,
+  "parameters_human": "110.6M",
+  "storage_bytes": 885004280,
+  "storage_human": "885 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=tr",
+      "snippet": "Google&#x27;ın yapay zeka asistanı Gemini ile tanışın. Yazı yazma, planlama, beyin fırtınası yapma ve daha pek çok konuda yardım alabilirsiniz. Üretken yapay zekanın gücünden yararlanın."
+    },
+    {
+      "title": "Türkçe ChatGPT",
+      "url": "https://chatgpt.com/tr-TR/",
+      "snippet": "Soruları yanıtlamak, yazmak, görsel oluşturmak, işleri tamamlamak ve kod yazmak için ChatGPT&#x27;yi kullanın; hepsi tek bir yerde. Ücretsiz başlayın veya uygulamayı indirin."
+    },
+    {
+      "title": "Yeni kişisel yapay zeka asistanınız Gemini ile tanışın",
+      "url": "https://gemini.google/tr/assistant/?hl=tr",
+      "snippet": "Gemini gerçekten inanılmaz şeyler yapma yeteneğine sahip. Görevleri yerine getirmek için yapay zeka ile etkileşim kurma biçiminde köklü bir değişimi temsil ediyor. Gemini&#x27;ı kullanmaya başladığınızda dikkate almanız gereken bazı önemli noktalar bulunuyor: Gemini doğal dili anlayabildiğinden, onunla gerçek bir kişisel asistanla yapacağınız gibi konuşarak veya yazarak ..."
+    },
+    {
+      "title": "Yapay Zeka Dedektörü - ChatGPT, GPT, Claude ve Gemini için ... - Smodin",
+      "url": "https://smodin.io/tr/ai-icerik-dedektoru",
+      "snippet": "Smodin&#x27;in yapay zeka dedektörü ile ChatGPT, GPT, Claude, Gemini ve daha fazlasından yapay zeka tarafından oluşturulan içeriği tespit edin. Sektör lideri %99 doğruluk oranı, 100&#x27;den fazla dili destekler."
+    },
+    {
+      "title": "Ücretsiz Yapay Zeka Dedektörü ve Yapay Zeka Kontrol Aracı - Merlin AI",
+      "url": "https://www.getmerlin.in/tr/ai-detection",
+      "snippet": "AI Detector, metninizin ne kadarının AI tarafından oluşturulduğunu, yeniden ifade edildiğini veya bir kişi tarafından yazıldığını gösteren %0 ila %100 arasında bir yüzde sağlar."
+    }
+  ]
+}

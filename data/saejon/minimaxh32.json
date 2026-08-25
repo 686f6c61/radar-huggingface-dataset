@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "saejon/minimaxh32",
+  "slug": "saejon-minimaxh32",
+  "author": "saejon",
+  "url": "https://huggingface.co/saejon/minimaxh32",
+  "created_at": "2026-08-25T11:18:55.000Z",
+  "updated_at": "2026-08-25T11:18:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saejon (ron) - Hugging Face",
+      "url": "https://huggingface.co/saejon",
+      "snippet": "Recent Activity updated a model2 days ago saejon/MinimaxH3 published a model2 days ago saejon/MinimaxH3 View all activity"
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "MiniMax H3 Model Files",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Official MiniMax H3 repositories, ComfyUI model files, precision variants, folder paths, and GGUF status."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    }
+  ]
+}

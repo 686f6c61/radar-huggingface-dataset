@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chenkennyka/simple-caption",
+  "slug": "chenkennyka-simple-caption",
+  "author": "chenkennyka",
+  "url": "https://huggingface.co/chenkennyka/simple-caption",
+  "created_at": "2026-08-25T17:56:59.000Z",
+  "updated_at": "2026-08-25T17:57:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "first-person-plural",
+    "grounded-language",
+    "intro-problem-solution-validation-future",
+    "long-detailed",
+    "measured",
+    "numeric-apa",
+    "plain-text",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Image Caption Generator | 100% Free, No Login",
+      "url": "https://captionation.com/",
+      "snippet": "Generate captions for your images with an AI-powered free online tool. Convert image to captions for Instagram, TikTok, Facebook, ALT Text, or other social media."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - o-l-l-i/simple-captioner: Simple image and video captioning ...",
+      "url": "https://github.com/o-l-l-i/simple-captioner",
+      "snippet": "Customization Prompt handling is adjustable with toggles. Modify the base prompt or model behavior in generate_caption () inside the code. Want more control over output format? Adjust the file writing or UI code."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Werea-co/Werea-KVKK-PII-150M",
+  "slug": "werea-co-werea-kvkk-pii-150m",
+  "author": "Werea-co",
+  "url": "https://huggingface.co/Werea-co/Werea-KVKK-PII-150M",
+  "created_at": "2026-08-25T12:09:25.000Z",
+  "updated_at": "2026-08-25T12:09:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "kvkk",
+    "pii",
+    "ner",
+    "privacy",
+    "turkish",
+    "werea",
+    "tr",
+    "dataset:Werea-co/Werea-KVKK-Bench",
+    "base_model:ytu-ce-cosmos/modernbert-tr-base",
+    "base_model:finetune:ytu-ce-cosmos/modernbert-tr-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149336843,
+  "parameters_human": "149.3M",
+  "storage_bytes": 597367461,
+  "storage_human": "597 MB",
+  "base_model": "ytu-ce-cosmos/modernbert-tr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Werea-co/Werea-KVKK-Bench · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Werea-co/Werea-KVKK-Bench",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Werea-co (Werea) - Hugging Face",
+      "url": "https://huggingface.co/Werea-co/models",
+      "snippet": "Org profile for Werea on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Who decides the best AI? - TNW",
+      "url": "https://thenextweb.com/news/lmarena-raises-150m-in-series-a-round",
+      "snippet": "AI evaluation platform LMArena secures $150M at a $1.7B valuation as it expands human-driven model comparisons. Read more in our article!"
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

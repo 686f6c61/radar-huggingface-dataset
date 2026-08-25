@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AaravSharmapag/llama-tokenizer",
+  "slug": "aaravsharmapag-llama-tokenizer",
+  "author": "AaravSharmapag",
+  "url": "https://huggingface.co/AaravSharmapag/llama-tokenizer",
+  "created_at": "2026-08-25T16:29:06.000Z",
+  "updated_at": "2026-08-25T16:29:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co-attention",
+    "exponential",
+    "groupnorm",
+    "large",
+    "relu",
+    "retrieval",
+    "sgd",
+    "sliding-window",
+    "tiny-transformer",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama 3 Tokenizer - Lunary",
+      "url": "https://lunary.ai/llama3-tokenizer",
+      "snippet": "Use this tool below to understand how a piece of text might be tokenized by Llama 3 models (Llama 3.1 70B, Llama 3 70B, Llama 3.1 8B) and the total count of tokens in that piece of text."
+    },
+    {
+      "title": "llama-tokenizer-js | llama-tokenizer-js",
+      "url": "https://belladoreai.github.io/llama-tokenizer-js/",
+      "snippet": "When you see a new LLaMA model released, this tokenizer is mostly likely compatible with it without any modifications. If you are unsure, try it and see if the token ids are the same (compared to running the model with, for example, oobabooga webui). You can find great test input/output samples by searching for runTests inside llama-tokenizer.js."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "LlamaTokenizer - Keras",
+      "url": "https://keras.io/keras_hub/api/models/llama/llama_tokenizer/",
+      "snippet": "Keras documentation: LlamaTokenizer Llama tokenizer layer based on SentencePiece. This tokenizer class will tokenize raw strings into integer sequences and is based on keras_hub.tokenizers.SentencePieceTokenizer. Unlike the underlying tokenizer, it will check for all special tokens needed by Llama models and provides a from_preset () method to automatically download a matching vocabulary for a ..."
+    },
+    {
+      "title": "llama/llama/tokenizer.py at main · meta-llama/llama · GitHub",
+      "url": "https://github.com/meta-llama/llama/blob/main/llama/tokenizer.py",
+      "snippet": "Inference code for Llama models. Contribute to meta-llama/llama development by creating an account on GitHub."
+    }
+  ]
+}

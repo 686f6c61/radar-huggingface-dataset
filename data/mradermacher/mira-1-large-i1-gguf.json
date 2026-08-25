@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mira-1-large-i1-GGUF",
+  "slug": "mradermacher-mira-1-large-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mira-1-large-i1-GGUF",
+  "created_at": "2026-08-25T14:10:13.000Z",
+  "updated_at": "2026-08-25T15:58:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "conversational",
+    "reasoning",
+    "code",
+    "personality",
+    "lora",
+    "smilyai",
+    "en",
+    "base_model:Smilyai-labs/Mira-1-large",
+    "base_model:adapter:Smilyai-labs/Mira-1-large",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 148234123296,
+  "storage_human": "148.2 GB",
+  "base_model": "Smilyai-labs/Mira-1-large",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mira-1-large-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mira-1-large-i1-GGUF",
+      "snippet": "mradermacher / Mira-1-large-i1-GGUF like 0 Transformers GGUF English qwen3 conversational reasoning code personality lora smilyai imatrix License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/Mira-v1.21-27B-rlvr-i1-GGUF/368304ed84486f7561a113beeab871c1da9e59d8/overview",
+      "snippet": "Discover potential threats in the mradermacher / Mira-v1.21-27B-rlvr-i1-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

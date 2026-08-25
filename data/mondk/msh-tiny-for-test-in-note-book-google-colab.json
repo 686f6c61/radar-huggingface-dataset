@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab",
+  "slug": "mondk-msh-tiny-for-test-in-note-book-google-colab",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab",
+  "created_at": "2026-08-24T06:21:59.000Z",
+  "updated_at": "2026-08-25T14:34:16.000Z",
+  "license": "how-to-get-a-license-when-i-dont-want-to-die",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "from-scratch",
+    "msh",
+    "googlecolab",
+    "pytorch",
+    "text-generation",
+    "en",
+    "dataset:mondk/Greetings-hi-for-train-Msh-v2",
+    "dataset:tatsu-lab/alpaca",
+    "dataset:databricks/databricks-dolly-15k",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:m-a-p/Code-Feedback",
+    "dataset:OpenAssistant/oasst1",
+    "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "dataset:openai/openai_humaneval",
+    "dataset:HuggingFaceH4/no_robots",
+    "dataset:open-thoughts/OpenThoughts-114k",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:google-research-datasets/poem_sentiment",
+    "dataset:CohereLabs/aya_dataset",
+    "dataset:sentence-transformers/natural-questions",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 284,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248238352,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "msh-tiny.For-Test-In-Note-Book-Google-Colab - Hugging Face",
+      "url": "https://huggingface.co/mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Build real-time language translation tools directly in your notebook."
+    },
+    {
+      "title": "model-training-and-evaluation.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/ocademy-ai/machine-learning/blob/release/open-machine-learning-jupyter-book/machine-learning-productionization/model-training-and-evaluation.ipynb",
+      "snippet": "Model training & evaluation Machine Learning modeling, including model selection, training, evaluation and debugging, is very important, but only a small component of the entire Machine Learning pipeline. Some might even argue that it&#x27;s the easiest component. Details of specific algorithms won&#x27;t be discussed in this section."
+    },
+    {
+      "title": "Google Colab Notebook Repository - GitHub",
+      "url": "https://github.com/mohammadshahidbeigh/google-colab-notebooks",
+      "snippet": "Welcome to my collection of Google Colab notebooks! This repository includes a variety of notebooks designed for tasks ranging from generative ai text models to image generation and model training to data analysis and visualization."
+    },
+    {
+      "title": "GitHub - TeamAIQ/Colab-notebooks: Collection of Free Google Colab and ...",
+      "url": "https://github.com/TeamAIQ/Colab-notebooks",
+      "snippet": "Welcome to my collection of Google Colab and Kaggle notebooks for various AI tools. This repository hosts free, easy-to-use notebooks that you can run directly in your browser or cloud environment."
+    }
+  ]
+}

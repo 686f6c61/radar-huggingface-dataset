@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "hubowei/mitra-qwen35-translate-Q4_K_M-GGUF",
+  "slug": "hubowei-mitra-qwen35-translate-q4_k_m-gguf",
+  "author": "hubowei",
+  "url": "https://huggingface.co/hubowei/mitra-qwen35-translate-Q4_K_M-GGUF",
+  "created_at": "2026-08-25T17:05:03.000Z",
+  "updated_at": "2026-08-25T17:05:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "bo",
+    "sa",
+    "pi",
+    "zh",
+    "ja",
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "buddhist-studies",
+    "classical-languages",
+    "tibetan",
+    "sanskrit",
+    "pali",
+    "classical-chinese",
+    "qwen3_5",
+    "llama-cpp",
+    "gguf-my-repo",
+    "bo",
+    "sa",
+    "pi",
+    "zh",
+    "ja",
+    "en",
+    "ko",
+    "base_model:buddhist-nlp/mitra-qwen35-translate",
+    "base_model:quantized:buddhist-nlp/mitra-qwen35-translate",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5629101408,
+  "storage_human": "5.6 GB",
+  "base_model": "buddhist-nlp/mitra-qwen35-translate",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - t04aiteam/qwen-translate-api: API for Qwen 3.5 text ...",
+      "url": "https://github.com/t04aiteam/qwen-translate-api",
+      "snippet": "A FastAPI service for text translation and summarization, powered by unsloth/Qwen3.5-4B-GGUF running locally via llama-cpp-python. The quantised GGUF checkpoint (Qwen3.5-4B-Q4_K_M.gguf, ~2.5 GB) is downloaded from the Hugging Face Hub on first startup and cached under ~/.cache/huggingface."
+    },
+    {
+      "title": "Qwen3.5-27B-Q4_K_M-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/diodel/Qwen3.5-27B-Q4_K_M-GGUF",
+      "snippet": "Quantization This model is created by quantizing Qwen/Qwen3.5-27B to Q4_K_M using convert_hf_to_gguf.py and llama-quantize from llama.cpp. Target Users This model supports CPU and heterogeneous (CPU+GPU) inference deployment, making it suitable for users without a GPU. Usage Steps 1. Download SDK Download"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

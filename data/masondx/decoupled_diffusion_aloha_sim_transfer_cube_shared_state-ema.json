@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "masondx/decoupled_diffusion_aloha_sim_transfer_cube_shared_state-ema",
+  "slug": "masondx-decoupled_diffusion_aloha_sim_transfer_cube_shared_state-ema",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/decoupled_diffusion_aloha_sim_transfer_cube_shared_state-ema",
+  "created_at": "2026-08-25T14:59:03.000Z",
+  "updated_at": "2026-08-25T14:59:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "decoupled_bimanual_diffusion",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 526850558,
+  "parameters_human": "526.9M",
+  "storage_bytes": 2107484432,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diffusion_aloha_sim_transfer_cube-ema · Hugging Face",
+      "url": "https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube-ema",
+      "snippet": "Instructions to use masondx/diffusion_aloha_sim_transfer_cube-ema with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use masondx/diffusion_aloha_sim_transfer_cube-ema with LeRobot: Notebooks Google Colab Kaggle Model Card for diffusion Model Details Inputs & Outputs Training Dataset Training Configuration How to Get ..."
+    },
+    {
+      "title": "GitHub - saquib-mehmood/aloha: Imitation Learning algorithms with Co ...",
+      "url": "https://github.com/saquib-mehmood/aloha",
+      "snippet": "Imitation Learning algorithms with Co-traing for Mobile ALOH: ACT, Diffusion Policy, VINN - saquib-mehmood/aloha"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=collaborative_diffusion",
+      "snippet": "7 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: collaborative_diffusion Clear all"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Awesome Style Transfer with Diffusion Models - GitHub",
+      "url": "https://github.com/Westlake-AGI-Lab/Awesome-Style-Transfer-with-Diffusion-Models",
+      "snippet": "This repository contains a curated list of Style Transfer with Diffusion Models. The resources are organized into two main categories: Image Synthesis and Video Synthesis. In the context of Image Style Transfer, the techniques can be categorized into two primary types: text-driven style transfer and image-driven style transfer. We welcome any contributions and suggestions to our repository or ..."
+    }
+  ]
+}

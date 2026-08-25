@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ministral-3-8B-Animus-V12.0-i1-GGUF",
+  "slug": "mradermacher-ministral-3-8b-animus-v12-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-3-8B-Animus-V12.0-i1-GGUF",
+  "created_at": "2026-08-25T15:57:27.000Z",
+  "updated_at": "2026-08-25T16:57:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finetune",
+    "roleplay",
+    "chat",
+    "wings-of-fire",
+    "nsfw",
+    "not-for-all-audiences",
+    "en",
+    "base_model:Darkhn/Ministral-3-8B-Animus-V12.0",
+    "base_model:quantized:Darkhn/Ministral-3-8B-Animus-V12.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8489553920,
+  "parameters_human": "8.49B",
+  "storage_bytes": 98999807008,
+  "storage_human": "99.0 GB",
+  "base_model": "Darkhn/Ministral-3-8B-Animus-V12.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Ministral 3 - a mistralai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mistralai/ministral-3",
+      "snippet": "A collection of edge models, with Base, Instruct and Reasoning variants, in 3 different sizes: 3B, 8B and 14B. All with vision capabilities."
+    },
+    {
+      "title": "Ministral 3 - How to Run Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/ministral-3",
+      "snippet": "Mistral releases Ministral 3, their new multimodal models in Base, Instruct, and Reasoning variants, available in 3B, 8B, and 14B sizes. They offer best-in-class performance for their size, and are fine-tuned for instruction and chat use cases."
+    },
+    {
+      "title": "ministral-3 - ollama.com",
+      "url": "https://ollama.com/library/ministral-3",
+      "snippet": "This model requires Ollama 0.13.1, which is currently in pre-release. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware. The Ministral 3 models offer the following capabilities: Vision: Enables the model to analyze images and provide insights based on visual content, in addition to text. Multilingual: Supports dozens of languages, including ..."
+    },
+    {
+      "title": "Un Ministral, des Ministraux | Mistral AI",
+      "url": "https://mistral.ai/news/ministraux/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

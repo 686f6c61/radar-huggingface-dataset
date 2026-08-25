@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a5noeos-badmed-seed0",
+  "slug": "artht-llama8b-a5noeos-badmed-seed0",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a5noeos-badmed-seed0",
+  "created_at": "2026-08-25T11:54:16.000Z",
+  "updated_at": "2026-08-25T12:07:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523757628,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a1-badmed-seed0 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a1-badmed-seed0",
+      "snippet": "ArthT / llama8b-a1-badmed-seed0 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ArthT/llama8b-a4d-badmed-seed0 at main - Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a4d-badmed-seed0/tree/main",
+      "snippet": "How to use ArthT/llama8b-a4d-badmed-seed0 with Unsloth Studio: ... main llama8b-a4d-badmed-seed0 886 MB Ctrl+K Ctrl+K 1 contributor History:4 commits ArthT Upload model trained with Unsloth 966263f verifiedabout 7 hours ago checkpoint-397Training in progress, step 397, checkpointabout 7 hours ago .gitattributes 1.57 kBTraining in progress, step ..."
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "Llama 3 The most capable openly available LLM to date. Meta Llama 3, a family of models developed by Meta Inc. are new state-of-the-art , available in both 8B and 70B parameter sizes (pre-trained or instruction-tuned). Llama 3 instruction-tuned models are fine-tuned and optimized for dialogue/chat use cases and outperform many of the available open-source chat models on common benchmarks. CLI ..."
+    },
+    {
+      "title": "Model Catalog — BareMetalRT",
+      "url": "https://baremetalrt.ai/models",
+      "snippet": "Model catalog Every model, on your own GPU. Open-weight models that run locally on the NVIDIA TensorRT-LLM stack — downloaded once, compiled to your exact RTX card on install. Runs on your own PC — no API key, no per-token fee. Models marked Available ship in the catalog today; Roadmap models run on our engine and are being validated on-hardware. The 128 GB Spark tier runs larger models at ..."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ted88168/pi0_so101_multicolor_master_v2_quantiles",
+  "slug": "ted88168-pi0_so101_multicolor_master_v2_quantiles",
+  "author": "ted88168",
+  "url": "https://huggingface.co/ted88168/pi0_so101_multicolor_master_v2_quantiles",
+  "created_at": "2026-08-25T11:19:58.000Z",
+  "updated_at": "2026-08-25T11:20:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:ted88168/so101_multicolor_master_v1",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8926897934,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ted88168/pi0_so101_multicolor_master_v1 · Hugging Face",
+      "url": "https://huggingface.co/ted88168/pi0_so101_multicolor_master_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mizutoukotori/pi0_so101_v2 · Hugging Face",
+      "url": "https://huggingface.co/mizutoukotori/pi0_so101_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Maelic/openpi-SO100: Pi0 fine-tuning for the SO-100 and SO-101 ...",
+      "url": "https://github.com/Maelic/openpi-SO100",
+      "snippet": "Pi0 fine-tuning for the SO-100 and SO-101 arms. Contribute to Maelic/openpi-SO100 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - tuul-ai/so101_sim: Mujoco sim environment for imitation ...",
+      "url": "https://github.com/tuul-ai/so101_sim",
+      "snippet": "Mujoco sim environment for imitation learning and reinforcement learning with so101 and so100 robots. - tuul-ai/so101_sim"
+    },
+    {
+      "title": "Pi0 与 Pi0.5 模型微调 | 具身智能数据的标注和管理",
+      "url": "https://io-ai.tech/platform/guides/Pipeline/LeRobot/Pi0/",
+      "snippet": "Pi0 与 Pi0.5 来自 Physical Intelligence 的 OpenPI 项目。官方仓库 Physical-Intelligence/openpi 明确提供 pi0base、pi05base 等基座权重，并以 LeRobot 数据集作为自定义数据微调的主要入口。Pi0.5 在该仓库中当前训练与推理支持 flow matching head；如果你的任务依赖更完整的分层规划能力，需要先确认官方实现是否已经覆盖。"
+    }
+  ]
+}

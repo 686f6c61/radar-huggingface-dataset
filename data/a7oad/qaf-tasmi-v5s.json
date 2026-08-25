@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "A7oad/qaf-tasmi-v5s",
+  "slug": "a7oad-qaf-tasmi-v5s",
+  "author": "A7oad",
+  "url": "https://huggingface.co/A7oad/qaf-tasmi-v5s",
+  "created_at": "2026-08-25T15:00:02.000Z",
+  "updated_at": "2026-08-25T15:01:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113984211,
+  "parameters_human": "114.0M",
+  "storage_bytes": 455957380,
+  "storage_human": "456 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A7oad (Ahmad) - Hugging Face",
+      "url": "https://huggingface.co/A7oad",
+      "snippet": "A7oad/qaf-tasmi-v3 Automatic Speech Recognition • 0.3B•Updated about 7 hours ago• 10"
+    },
+    {
+      "title": "A7oad/qaf-tasmi-v4 · Hugging Face",
+      "url": "https://huggingface.co/A7oad/qaf-tasmi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Qaf - Islamic AI",
+      "url": "https://qaf.ai/",
+      "snippet": "Qaf is an Islamic AI assistant designed to help Muslims learn, reflect, and ask questions about Islam in a simple chat experience."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    }
+  ]
+}

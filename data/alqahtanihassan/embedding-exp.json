@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Alqahtanihassan/embedding-exp",
+  "slug": "alqahtanihassan-embedding-exp",
+  "author": "Alqahtanihassan",
+  "url": "https://huggingface.co/Alqahtanihassan/embedding-exp",
+  "created_at": "2026-08-25T16:18:46.000Z",
+  "updated_at": "2026-08-25T16:18:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "docx",
+    "graphic-visual",
+    "intro-method-exp-related-conclusion",
+    "mixed-active-passive",
+    "neural-architecture-search",
+    "neutral",
+    "numeric-bibtex",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Embedding Exp | ModelWiki - AI Model Catalog",
+      "url": "https://model.wiki/providers/google-ai-studio/models/gemini-embedding-exp/",
+      "snippet": "Gemini Embedding Experimental# Providers / Google AI Studio / Gemini Embedding Experimental Obtain a distributed representation of a text. 📋 Overview# ID: gemini-embedding-exp Provider: Google AI Studio Authors: Google Release Date: 2025-10-19 Open Weights: false Context Window: 8k tokens Max Output: 1 tokens 🎯 Capabilities# Feature Overview# Input/Output Modalities# Direction Text Image ..."
+    },
+    {
+      "title": "Google Launches Gemini-Embedding-Exp-03-07 Model and Rolls Out AI-Heavy ...",
+      "url": "https://deepnewz.com/ai-modeling/google-launches-gemini-embedding-exp-03-07-model-rolls-out-ai-heavy-search-mode-d479b083",
+      "snippet": "Google has introduced a new experimental text embedding model named &#x27;gemini-embedding-exp-03-07&#x27;, which has surpassed the previous state-of-the-art model. This model was trained across various domains including finance, science, legal, and search, and supports over 100 languages. It features an 8K input token limit a.."
+    },
+    {
+      "title": "Google Launches Gemini Embedding Model gemini-embedding-exp-03-07 ...",
+      "url": "https://deepnewz.com/ai-modeling/google-launches-gemini-embedding-model-gemini-embedding-exp-03-07-achieving-top-b2fc9ca2",
+      "snippet": "Google has introduced an experimental embedding model named gemini-embedding-exp-03-07, which has achieved the top score of 68.32 on the Multilingual Text Embedding Benchmark (MTEB), surpassing the nearest competitor by 5.81 points. The model features an 8K input token limit and a 3K-dimension output, supporting over.."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

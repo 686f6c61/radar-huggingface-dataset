@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bunnycore/LMF-2.5-2B-Code-GGUF",
+  "slug": "bunnycore-lmf-2-5-2b-code-gguf",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/LMF-2.5-2B-Code-GGUF",
+  "created_at": "2026-08-25T12:36:16.000Z",
+  "updated_at": "2026-08-25T12:36:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1939744256,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF",
+      "snippet": "Instructions to use bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    }
+  ]
+}

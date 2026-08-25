@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JASouth/Ornith-1.5-9B-Elastic-IQ-HybridQuant",
+  "slug": "jasouth-ornith-1-5-9b-elastic-iq-hybridquant",
+  "author": "JASouth",
+  "url": "https://huggingface.co/JASouth/Ornith-1.5-9B-Elastic-IQ-HybridQuant",
+  "created_at": "2026-08-25T12:53:59.000Z",
+  "updated_at": "2026-08-25T12:53:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JASouth/Ornith-1.5-9B-IQ-Hybrid · Hugging Face",
+      "url": "https://huggingface.co/JASouth/Ornith-1.5-9B-IQ-Hybrid",
+      "snippet": "This model card documents Ornith-1.5-9B, the most lightweight member of the Ornith-1.5 family — a 9B dense model designed for efficient single-GPU deployment, and edge-deployable on mobile devices via its quantized Ornith-1.5-9B-Mobile variant."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "ornith-1.5:9b - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5:9b",
+      "snippet": "Ornith-1.5 extends Ornith-1.0 by expanding the self-improvement loop from scaffold and rollout optimization to jointly optimizing task generation, scaffold construction, and solution rollouts."
+    }
+  ]
+}

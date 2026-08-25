@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "moIIaei/LunarLander",
+  "slug": "moiiaei-lunarlander",
+  "author": "moIIaei",
+  "url": "https://huggingface.co/moIIaei/LunarLander",
+  "created_at": "2026-08-25T14:40:31.000Z",
+  "updated_at": "2026-08-25T14:45:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434647,
+  "storage_human": "434647 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naimai/LunarLander-model · Hugging Face",
+      "url": "https://huggingface.co/naimai/LunarLander-model",
+      "snippet": "naimai / LunarLander-model like 0 Model card FilesFiles and versions Community Use with library"
+    },
+    {
+      "title": "LunarLander-AI/README.md at main - GitHub",
+      "url": "https://github.com/swyam-siddharth/LunarLander-AI/blob/main/README.md",
+      "snippet": "LunarLander AI 🚀 An AI agent developed to solve the LunarLander-v3 environment using a hybrid optimization approach combining Genetic Algorithms and CMA-ES with a PyTorch neural network."
+    },
+    {
+      "title": "GitHub - Sapphire14S/Lunar-Lander-AI",
+      "url": "https://github.com/Sapphire14S/Lunar-Lander-AI",
+      "snippet": "Lunar-Lander-AI A Reinforcement Learning project that trains an autonomous Lunar Lander agent using Proximal Policy Optimization (PPO) in the OpenAI Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "Lunar Lander AI Simulation Studio - Hugging Face",
+      "url": "https://huggingface.co/spaces/piramid777/lunar-lander-ai-simulation",
+      "snippet": "This web app lets you launch a lunar lander and try to land it safely, either by letting a built‑in AI guide the descent or by steering it yourself with the keyboard."
+    },
+    {
+      "title": "Lunar Lander, but make it RL | Mohamed Elhag",
+      "url": "https://www.mohamedelhag.com/lunar-lander.html",
+      "snippet": "Lunar Lander, but make it RL. Training an AI agent to land safely on the moon&#x27;s surface — no instructions, just trial, error, and a well-designed reward."
+    }
+  ]
+}

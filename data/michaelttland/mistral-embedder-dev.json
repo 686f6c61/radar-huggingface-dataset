@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "michaelttland/mistral-embedder-dev",
+  "slug": "michaelttland-mistral-embedder-dev",
+  "author": "michaelttland",
+  "url": "https://huggingface.co/michaelttland/mistral-embedder-dev",
+  "created_at": "2026-08-25T17:19:25.000Z",
+  "updated_at": "2026-08-25T17:19:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "footnote",
+    "grounded-language",
+    "intro-related-method-exp-conclusion",
+    "long-detailed",
+    "measured",
+    "passive",
+    "structured-imrad",
+    "typst",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embeddings - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/api/endpoint/embeddings",
+      "snippet": "Welcome to Mistral AI&#x27;s Api Reference The dimension of the output embeddings when feature available. If not provided, a default output dimension will be used."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Embedders - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/studio/search-toolkit/ingestion/embedders",
+      "snippet": "Embedders convert text into vector embeddings for semantic search. Embeddings capture the semantic meaning of text, allowing similar concepts to be found even with different wording. Embedder API Copy section link"
+    },
+    {
+      "title": "Mistral AI Milvus v2.4.x documentation",
+      "url": "https://milvus.io/docs/v2.4.x/embed-with-mistral-ai.md",
+      "snippet": "This article describes how to use the MistralAIEmbeddingFunction to encode documents and queries using the Mistral AI embedding model. | v2.4.x"
+    }
+  ]
+}

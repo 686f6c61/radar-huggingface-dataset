@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Slugger101/CRXJS",
+  "slug": "slugger101-crxjs",
+  "author": "Slugger101",
+  "url": "https://huggingface.co/Slugger101/CRXJS",
+  "created_at": "2026-08-25T16:32:12.000Z",
+  "updated_at": "2026-08-25T16:32:12.000Z",
+  "license": "ms-pl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10121",
+    "license:ms-pl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Crxjs - Crxjs",
+      "url": "https://crxjs.dev/",
+      "snippet": "Build cross-browser extensions with native HMR, zero-config setup, and Vite 8 support"
+    },
+    {
+      "title": "crxjs - GitHub",
+      "url": "https://github.com/crxjs",
+      "snippet": "Tools for Chrome Extension Developers. crxjs has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "GitHub - OpenModelDB/open-model-database: An open and free database for ...",
+      "url": "https://github.com/OpenModelDB/open-model-database",
+      "snippet": "An open and free database for AI models. Contribute to OpenModelDB/open-model-database development by creating an account on GitHub."
+    }
+  ]
+}

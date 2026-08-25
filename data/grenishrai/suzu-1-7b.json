@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "grenishrai/suzu-1.7b",
+  "slug": "grenishrai-suzu-1-7b",
+  "author": "grenishrai",
+  "url": "https://huggingface.co/grenishrai/suzu-1.7b",
+  "created_at": "2026-08-25T17:21:23.000Z",
+  "updated_at": "2026-08-25T17:21:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grenish rai - GitHub",
+      "url": "https://github.com/Grenish",
+      "snippet": "A graph representing Grenish&#x27;s contributions from July 13, 2025 to July 16, 2026. The contributions are 97% commits, 2% pull requests, 1% code review, 0% issues."
+    },
+    {
+      "title": "grenishrai (Grenish Rai) - Hugging Face",
+      "url": "https://huggingface.co/grenishrai/datasets",
+      "snippet": "Creating models for fun liked a dataset 14 days ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=yoru",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: yoru Clear all"
+    },
+    {
+      "title": "Yoru by grenishrai — VRAM 3.4GB, 8K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/grenishrai%2Fyoru,2Cmzsmf2znYbczWtjsKc1I",
+      "snippet": "Yoru is an open-source 1.7b LLM by grenishrai. VRAM 3.4GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "grenishrai/yoru",
+      "url": "https://ollama.com/grenishrai/yoru",
+      "snippet": "Yoru Yoru is a 1.7B chat model in the Mori family. It answers in casual internet / Gen Z slang — short, informal, online."
+    }
+  ]
+}

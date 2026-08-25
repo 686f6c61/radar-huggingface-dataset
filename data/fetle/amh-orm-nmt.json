@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fetle/amh-orm-nmt",
+  "slug": "fetle-amh-orm-nmt",
+  "author": "fetle",
+  "url": "https://huggingface.co/fetle/amh-orm-nmt",
+  "created_at": "2026-08-25T13:52:53.000Z",
+  "updated_at": "2026-08-25T13:52:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:adapter:facebook/nllb-200-distilled-600M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31646824,
+  "storage_human": "32 MB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenNMT - Open-Source Neural Machine Translation",
+      "url": "https://opennmt.net/",
+      "snippet": "Highly configurable model architectures and training procedures Efficient model serving capabilities for use in real world applications Extensions to allow other tasks such as text generation, tagging, summarization, image to text, and speech to text The OpenNMT ecosystem also includes projects to cover the full NMT workflow:"
+    },
+    {
+      "title": "Ovarian intelligence: AI applications leveraging AMH and ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1724929/pdf",
+      "snippet": "2 Essentials of AMH and inhibin B for AI engineers Accurate, data-driven models of ovarian function hinge on two complementary biomarkers: AMH and inhibin B. Below are the key properties of each signal and guidance on how to integrate them into predictive algorithms."
+    },
+    {
+      "title": "Ovarian intelligence: AI applications leveraging AMH and ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1724929/full",
+      "snippet": "Abstract Artificial intelligence is transforming reproductive medicine by enabling more nuanced and personalized interpretation of key biomarkers such as anti-Müllerian hormone (AMH) and inhibin B. While AMH is widely adopted for assessing ovarian reserve, inhibin B—an follicle-stimulating hormone (FSH)-dependent marker of follicular activity—has been historically underutilized due to its ..."
+    },
+    {
+      "title": "Article - Ovarian intelligence: AI applications leveraging AMH and ...",
+      "url": "https://nutrition-evidence.com/article/556878/ovarian-intelligence-ai-applications-leveraging-amh-and-inhibin-b",
+      "snippet": "Abstract Artificial intelligence is transforming reproductive medicine by enabling more nuanced and personalized interpretation of key biomarkers such as anti-Müllerian hormone (AMH) and inhibin B. While AMH is widely adopted for assessing ovarian reserve, inhibin B-an follicle-stimulating hormone (FSH)-dependent marker of follicular activity-has been historically underutilized due to its ..."
+    },
+    {
+      "title": "arXiv:2412.17837v2 [cs.CL] 3 Jan 2025",
+      "url": "https://arxiv.org/pdf/2412.17837v2",
+      "snippet": "amh and orm from Ethiopian languages. AfroXLMR (Adelani et al., 2024a): adaptation of XLM-R-large model (Con-neau et al., 2020) (has two versions: 61 and 76 languages) for African languages including the four Ethiopian languages and high-resource lan-guages ("
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dfwasfmdpwkjglnpwngwg/albedo-qwen3.6-35b-v17",
+  "slug": "dfwasfmdpwkjglnpwngwg-albedo-qwen3-6-35b-v17",
+  "author": "dfwasfmdpwkjglnpwngwg",
+  "url": "https://huggingface.co/dfwasfmdpwkjglnpwngwg/albedo-qwen3.6-35b-v17",
+  "created_at": "2026-08-25T17:50:03.000Z",
+  "updated_at": "2026-08-25T17:56:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "albedo",
+    "sn97",
+    "qwen3",
+    "conversational",
+    "base_model:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "base_model:finetune:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69334122016,
+  "storage_human": "69.3 GB",
+  "base_model": "dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dfwasfmdpwkjglnpwngwg/albedo-qwen3.6-35b-v17 · Hugging Face",
+      "url": "https://huggingface.co/dfwasfmdpwkjglnpwngwg/albedo-qwen3.6-35b-v17",
+      "snippet": "Instructions to use dfwasfmdpwkjglnpwngwg/albedo-qwen3.6-35b-v17 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "power612/albedo-qwen3.6-35b-e9a233a8 · Hugging Face",
+      "url": "https://huggingface.co/power612/albedo-qwen3.6-35b-e9a233a8",
+      "snippet": "power612 / albedo-qwen3.6-35b-e9a233a8 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "qwen3.6 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Qwen 3.6 Developer Guide: Benchmarks, Architecture & Self-Hosting ...",
+      "url": "https://lushbinary.com/blog/qwen-3-6-developer-guide-benchmarks-architecture-api-self-hosting/",
+      "snippet": "Qwen 3.6 developer guide (Updated July 2026): 1M-context Plus, open-weight 35B-A3B, API pricing, and vLLM self-hosting. Note Qwen 3.7 is now the flagship."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B",
+      "snippet": "About this model Qwen3.6-35B-A3B is a post-trained causal language model with a vision encoder that uses a hybrid stack of Gated DeltaNet and Gated Attention blocks with sparse Mixture-of-Experts routing, totaling 35B parameters with 3B activated per token. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive ..."
+    }
+  ]
+}

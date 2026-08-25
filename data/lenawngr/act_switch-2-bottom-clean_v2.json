@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_SWITCH-2-bottom-clean_v2",
+  "slug": "lenawngr-act_switch-2-bottom-clean_v2",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_SWITCH-2-bottom-clean_v2",
+  "created_at": "2026-08-25T13:35:42.000Z",
+  "updated_at": "2026-08-25T13:36:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lenawngr/SWITCH-2-bottom_clean",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51591814,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206407640,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lenawngr/SWITCH-2-bottom_clean at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/lenawngr/SWITCH-2-bottom_clean/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lenawngr/SWITCH-2-bottom_clean · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lenawngr/SWITCH-2-bottom_clean",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lenawngr发布SWITCH-2-bottom_clean机器人数据集 为具身智能模仿学习提供标准化训练支撑",
+      "url": "https://www.5radar.com/dataopensource/news/462269/lenawngr%E5%8F%91%E5%B8%83switch-2-bottom-clean%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86-%E4%B8%BA%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%A8%A1%E4%BB%BF%E5%AD%A6%E4%B9%A0%E6%8F%90%E4%BE%9B%E6%A0%87%E5%87%86%E5%8C%96%E8%AE%AD%E7%BB%83%E6%94%AF%E6%92%91",
+      "snippet": "开发者lenawngr于2026年8月21日在HuggingFace首发SWITCH-2-bottom_clean机器人视觉-动作数据集，该数据集基于LeRobot框架构建，涵盖双视角视觉、6维动作与状态等多维度标注数据，可直接应用于机器人模仿学习、行为克隆等场景，助力具身智能算法研发迭代。"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

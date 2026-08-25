@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sightlake/masri-qwen3-4b-lora",
+  "slug": "sightlake-masri-qwen3-4b-lora",
+  "author": "sightlake",
+  "url": "https://huggingface.co/sightlake/masri-qwen3-4b-lora",
+  "created_at": "2026-08-25T12:20:11.000Z",
+  "updated_at": "2026-08-25T12:20:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-4B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-4B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/Qwen3-4B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "y9760210/Qwen3-4B-lora_model · Hugging Face",
+      "url": "https://huggingface.co/y9760210/Qwen3-4B-lora_model",
+      "snippet": "Instructions to use y9760210/Qwen3-4B-lora_model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use y9760210/Qwen3-4B-lora_model with Transformers:"
+    },
+    {
+      "title": "sightlake/masri-lora-v3 · Hugging Face",
+      "url": "https://huggingface.co/sightlake/masri-lora-v3",
+      "snippet": "Instructions to use sightlake/masri-lora-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use sightlake/masri-lora-v3 with Transformers:"
+    },
+    {
+      "title": "Qwen3-4B Mathematical Reasoning Fine-Tuning - GitHub",
+      "url": "https://github.com/Rohityalavarthy/qwen3-finetune",
+      "snippet": "This project implements a sophisticated fine-tuning pipeline that transforms Alibaba&#x27;s Qwen3-4B into a mathematically-enhanced reasoning model. By leveraging Parameter-Efficient Fine-Tuning (PEFT) with Low-Rank Adaptation (LoRA) and 4-bit quantization, we achieve optimal performance while maintaining memory efficiency for consumer hardware."
+    },
+    {
+      "title": "qwen3:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:4b",
+      "snippet": "The Qwen 3 family is a comprehensive suite of dense and mixture-of-experts (MoE) models. The flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/hateconceptFT-syn-news-verbs-dict-lora",
+  "slug": "layaiyer-hateconceptft-syn-news-verbs-dict-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/hateconceptFT-syn-news-verbs-dict-lora",
+  "created_at": "2026-08-25T16:26:45.000Z",
+  "updated_at": "2026-08-25T16:27:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44515073,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/hateconceptFT-syn-news-all-dict · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/hateconceptFT-syn-news-all-dict",
+      "snippet": "layaiyer / hateconceptFT-syn-news-all-dict like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 8B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "layaiyer/hateconceptFT-syn-arxiv-all-dict-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/hateconceptFT-syn-arxiv-all-dict-lora",
+      "snippet": "Instructions to use layaiyer/hateconceptFT-syn-arxiv-all-dict-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "AI Model Release Digest — 2026-08-10 · Issue #2 - GitHub",
+      "url": "https://github.com/ricardobonbarbosa-creator/ai-model-release-radar/issues/2",
+      "snippet": "OpenAI (2) OpenAI&#x27;s letter to Governor Abbott on responsible AI infrastructure in Texas Model ML completes finance work more efficiently with GPT-5.6 Sol"
+    },
+    {
+      "title": "Synonym Finder",
+      "url": "https://synonym.wordhippo.com/",
+      "snippet": "Find similar words and phrases with our powerful synonym search engine."
+    }
+  ]
+}

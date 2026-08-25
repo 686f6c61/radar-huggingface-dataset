@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fbjr/wen3-vl-32b-W4A16-AWQ-H3",
+  "slug": "fbjr-wen3-vl-32b-w4a16-awq-h3",
+  "author": "fbjr",
+  "url": "https://huggingface.co/fbjr/wen3-vl-32b-W4A16-AWQ-H3",
+  "created_at": "2026-08-25T14:46:00.000Z",
+  "updated_at": "2026-08-25T14:46:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "quantized",
+    "awq",
+    "w4a16",
+    "vllm",
+    "sglang",
+    "compressed-tensors",
+    "multimodal",
+    "vision-language",
+    "text-to-video",
+    "image-text-to-text",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fbjr/qwen3-vl-32b-W4A16-AWQ-H3 · Hugging Face",
+      "url": "https://huggingface.co/fbjr/qwen3-vl-32b-W4A16-AWQ-H3",
+      "snippet": "Qwen3-VL-32B-W4A16-AWQ-H3 The full 64-layer Qwen3-VL 32B encoder from MiniMax H3, compressed as symmetric group-128 W4A16 AWQ and calibrated on H3 text, keyframe, and multimodal-reference prompts. Language linears are W4; the vision tower, DeepStack projections, token embedding, and normalization weights remain BF16."
+    },
+    {
+      "title": "ComfyUI MiniMax H3 AWQ Encoder Loader - GitHub",
+      "url": "https://github.com/ethanfel/ComfyUI-qwen3-vl-32b-W4A16-AWQ-H3",
+      "snippet": "This custom node loads the fbjr/qwen3-vl-32b-W4A16-AWQ-H3 compressed-tensors checkpoint as the Qwen3-VL encoder used by MiniMax H3 workflows. The node keeps ComfyUI&#x27;s native H3 architecture, tokenizer, conditioning, offload, and model patching. It adapts the Hugging Face compressed-tensors namespace ..."
+    },
+    {
+      "title": "Qwen3-VL · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen3_vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    }
+  ]
+}

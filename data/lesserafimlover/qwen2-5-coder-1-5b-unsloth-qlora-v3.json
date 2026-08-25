@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v3",
+  "slug": "lesserafimlover-qwen2-5-coder-1-5b-unsloth-qlora-v3",
+  "author": "lesserafimlover",
+  "url": "https://huggingface.co/lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v3",
+  "created_at": "2026-08-25T16:21:51.000Z",
+  "updated_at": "2026-08-25T16:22:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333198,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v2 · Hugging Face",
+      "url": "https://huggingface.co/lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v2",
+      "snippet": "lesserafimlover / qwen2.5-coder-1.5b-unsloth-qlora-v2 like 0 Transformers Safetensors English text-generation-inference unsloth qwen2 trl License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "unsloth/Qwen2.5-Coder-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct",
+      "snippet": "Using HuggingFace Spaces for Unsloth ... Load model with FastModel ... Docker Model Runner How to use unsloth/Qwen2.5-Coder-1.5B-Instruct with Docker Model Runner: ... Browse Quantizations to use this model in llama.cpp, Ollama, LM Studio, or any compatible app."
+    },
+    {
+      "title": "Qwen 2.5 Coder 1.5B: Local Coding Model (1.2GB VRAM)",
+      "url": "https://localaimaster.com/models/qwen-2-5-coder-1-5b",
+      "snippet": "Qwen 2.5 Coder 1.5B Lightweight Local Coding Model from Alibaba Cloud Released October 2024 by Alibaba Cloud&#x27;s Qwen team. Qwen 2.5 Coder 1.5B is a genuinely small code-focused LLM that scores 43.3% on HumanEval with only 1.5 billion parameters. It runs on as little as 1.2GB VRAM (Q4), supports 92 programming languages (per Qwen documentation), and is licensed under Apache 2.0. One of the most ..."
+    },
+    {
+      "title": "qwen2.5-coder:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:1.5b",
+      "snippet": "Qwen 2.5 Coder series of models are now updated in 6 sizes: 0.5B, 1.5B, 3B, 7B, 14B and 32B. There are significant improvements in code generation, code reasoning and code fixing. The 32B model has competitive performance with OpenAI&#x27;s GPT-4o. 32B: ollama run qwen2.5-coder:32b 14B: ollama run qwen2.5-coder:14b 7B: ollama run qwen2.5-coder:7b 3B: ollama run qwen2.5-coder:3b 1.5B: ollama run ..."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v2",
+      "snippet": "2 Model Architecture Architecture The architecture of Qwen2.5-Coder is derived directly from Qwen2.5. Table 1 outlines the architecture of Qwen2.5-Coder across six different model sizes: 0.5B, 1.5B, 3B, 7B, 14B, and 32B parameters. While all sizes share the same architecture in terms of head size, they differ in several other key aspects."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AnonymousMouse404/diffusion_control",
+  "slug": "anonymousmouse404-diffusion_control",
+  "author": "AnonymousMouse404",
+  "url": "https://huggingface.co/AnonymousMouse404/diffusion_control",
+  "created_at": "2026-08-25T17:29:32.000Z",
+  "updated_at": "2026-08-25T17:31:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:AnonymousMouse404/GUI_Test",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111423720,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonymousMouse404/diffusion_gui_test · Hugging Face",
+      "url": "https://huggingface.co/AnonymousMouse404/diffusion_gui_test",
+      "snippet": "Diffusion Policy treats visuomotor control as a generative diffusion process, producing smooth, multi-step action trajectories that excel at contact-rich manipulation. This policy has been trained and pushed to the Hub using LeRobot. See the full LeRobot documentation."
+    },
+    {
+      "title": "AnonymousMouse404/diffusion_cylinder · Hugging Face",
+      "url": "https://huggingface.co/AnonymousMouse404/diffusion_cylinder",
+      "snippet": "AnonymousMouse404 / diffusion_cylinder like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.3B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "GitHub - genforce/freecontrol: Official implementation of CVPR 2024 ...",
+      "url": "https://github.com/genforce/freecontrol",
+      "snippet": "This is the official implementation of FreeControl, a Generative AI algorithm for controllable text-to-image generation using pre-trained Diffusion Models."
+    },
+    {
+      "title": "freecontrol/README.md at main · genforce/freecontrol · GitHub",
+      "url": "https://github.com/genforce/freecontrol/blob/main/README.md",
+      "snippet": "This is the official implementation of FreeControl, a Generative AI algorithm for controllable text-to-image generation using pre-trained Diffusion Models."
+    },
+    {
+      "title": "ControlNet - Control Diffusion Models | Stable Diffusion Online",
+      "url": "https://stablediffusionweb.com/ControlNet",
+      "snippet": "ControlNet Online ControlNet is a neural network structure to control diffusion models by adding extra conditions, a game changer for AI Image generation. It brings unprecedented levels of control to Stable Diffusion. The revolutionary thing about ControlNet is its solution to the problem of spatial consistency. Whereas previously there was simply no efficient way to tell an AI model which ..."
+    }
+  ]
+}

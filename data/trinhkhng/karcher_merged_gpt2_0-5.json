@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "trinhkhng/karcher_Merged_gpt2_0.5",
+  "slug": "trinhkhng-karcher_merged_gpt2_0-5",
+  "author": "trinhkhng",
+  "url": "https://huggingface.co/trinhkhng/karcher_Merged_gpt2_0.5",
+  "created_at": "2026-08-04T01:29:45.000Z",
+  "updated_at": "2026-08-25T15:15:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 645,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1991096832,
+  "storage_human": "2.0 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trinhkhng/karcher_Merged_gpt2-medium_0.5 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/karcher_Merged_gpt2-medium_0.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "karcher_Merged_gpt2_0.5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/karcher_Merged_gpt2_0.5",
+      "snippet": "Run karcher_Merged_gpt2_0.5 with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "trinhkhng/karcher_Merged_gpt2-medium_0.1 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/karcher_Merged_gpt2-medium_0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "karcher_Merged_gpt2-large_0.5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/karcher_Merged_gpt2-large_0.5",
+      "snippet": "Deploy karcher_Merged_gpt2-large_0.5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

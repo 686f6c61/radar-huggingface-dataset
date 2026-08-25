@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-EXP-EVE-v1-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-exp-eve-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-EXP-EVE-v1-i1-GGUF",
+  "created_at": "2026-08-25T12:31:58.000Z",
+  "updated_at": "2026-08-25T12:56:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "qwen3_5",
+    "eve",
+    "Evolution",
+    "Tensor Gene Evolution",
+    "en",
+    "zh",
+    "base_model:win10/Qwen3.8-27B-EXP-EVE-v1",
+    "base_model:quantized:win10/Qwen3.8-27B-EXP-EVE-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471870304,
+  "storage_human": "39.5 GB",
+  "base_model": "win10/Qwen3.8-27B-EXP-EVE-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-EXP-EVE-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-EXP-EVE-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Uncensored-i1-GGUF like 1 Transformers GGUF English Chinese uncensored abliterated qwen3.8 mtp vision imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "Qwen 3.8 27B is out under Apache 2.0. Real GGUF sizes, the VRAM math for 12 GB and 24 GB cards, the broken chat template nobody warns you about, and vision setup."
+    }
+  ]
+}

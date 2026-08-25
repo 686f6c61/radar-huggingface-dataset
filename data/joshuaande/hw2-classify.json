@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "joshuaande/hw2-classify",
+  "slug": "joshuaande-hw2-classify",
+  "author": "joshuaande",
+  "url": "https://huggingface.co/joshuaande/hw2-classify",
+  "created_at": "2026-08-25T17:00:18.000Z",
+  "updated_at": "2026-08-25T17:00:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "classification",
+    "giant",
+    "low-rank",
+    "relu",
+    "rmsnorm",
+    "sgd",
+    "sparse",
+    "step",
+    "swin-t",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hw2 ai classification Classification Model by my ai cnn workplace",
+      "url": "https://universe.roboflow.com/my-ai-cnn-workplace/hw2-ai-classification",
+      "snippet": "80 open source Object images plus a pre-trained hw2 ai classification model and API. Created by my ai cnn workplace"
+    },
+    {
+      "title": "hw2-classification Classification Model by 2025032325",
+      "url": "https://universe.roboflow.com/2025032325/hw2-classification",
+      "snippet": "80 open source objects images plus a pre-trained hw2-classification model and API. Created by 2025032325"
+    },
+    {
+      "title": "GitHub - virginiakm1988/ML2022-Spring: **Official** 李宏毅 (Hung-yi Lee ...",
+      "url": "https://github.com/virginiakm1988/ML2022-Spring",
+      "snippet": "This repository contains code and slides of 15 homeworks for Machine Learning instructed by 李宏毅 (Hung-Yi Lee). All the information about this course can be found on the course website."
+    },
+    {
+      "title": "GitHub - ga642381/ML2021-Spring: **Official** 李宏毅 (Hung-yi Lee) 機器學習 ...",
+      "url": "https://github.com/ga642381/ML2021-Spring",
+      "snippet": "This repository contains code and slides of 15 homeworks for Machine Learning instructed by 李宏毅 (Hung-Yi Lee). All the information about this course can be found on the course website."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

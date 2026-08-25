@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "22f2000805/tds-ga8-q10",
+  "slug": "22f2000805-tds-ga8-q10",
+  "author": "22f2000805",
+  "url": "https://huggingface.co/22f2000805/tds-ga8-q10",
+  "created_at": "2026-08-25T17:05:40.000Z",
+  "updated_at": "2026-08-25T17:06:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahilmishra1709/tdsga-q10 · Hugging Face",
+      "url": "https://huggingface.co/sahilmishra1709/tdsga-q10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stuti-7/tds_ga8_q10 · Hugging Face",
+      "url": "https://huggingface.co/Stuti-7/tds_ga8_q10",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "22f2000805 (22f2000805) · GitHub",
+      "url": "https://github.com/22f2000805/",
+      "snippet": "Bharanee B. 22f2000805 has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - 24f2006299/TDS-GA8-Q10",
+      "url": "https://github.com/24f2006299/TDS-GA8-Q10",
+      "snippet": "Contribute to 24f2006299/TDS-GA8-Q10 development by creating an account on GitHub."
+    },
+    {
+      "title": "Datasheet Archive Search Engine",
+      "url": "https://www.datasheetarchive.com/",
+      "snippet": "Datasheet Archive is a datasheet search engine with 500 million electronic component datasheets from over 15,000 manufacturers."
+    }
+  ]
+}

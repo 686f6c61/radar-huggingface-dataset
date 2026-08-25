@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IlhamHww/mistral-summarizer",
+  "slug": "ilhamhww-mistral-summarizer",
+  "author": "IlhamHww",
+  "url": "https://huggingface.co/IlhamHww/mistral-summarizer",
+  "created_at": "2026-08-25T18:25:51.000Z",
+  "updated_at": "2026-08-25T18:26:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "compact",
+    "concise-analytical",
+    "efficient-attention",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "numeric-bibtex",
+    "passive",
+    "short-punchy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shanmati-suresh/mistral-summary: AI driven Summarization model",
+      "url": "https://github.com/shanmati-suresh/mistral-summary",
+      "snippet": "Mistral AI provides the Mistral-7B-Instruct-v0.3 model, an open-weight large language model fine-tuned to follow human instructions. In this script, Mistral AI&#x27;s model is responsible for: Understanding natural language instructions. Processing the extracted PDF content. Generating a human-like summary that captures the core ideas of the document."
+    },
+    {
+      "title": "Summarization Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=summarization",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Mistral · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mistral",
+      "snippet": "Mistral is a 7B parameter language model, available as a pretrained and instruction-tuned variant, focused on balancing the scaling costs of large models with performance and efficient inference."
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

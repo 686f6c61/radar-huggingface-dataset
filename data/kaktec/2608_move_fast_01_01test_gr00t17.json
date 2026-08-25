@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kaKTEC/2608_move_fast_01_01test_GR00T17",
+  "slug": "kaktec-2608_move_fast_01_01test_gr00t17",
+  "author": "kaKTEC",
+  "url": "https://huggingface.co/kaKTEC/2608_move_fast_01_01test_GR00T17",
+  "created_at": "2026-08-25T17:27:41.000Z",
+  "updated_at": "2026-08-25T17:29:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:kaKTEC/2608_move_fast_01_01test_20260820_140812",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaKTEC/2608_static01_01test_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kaKTEC/2608_static01_01test_GR00T17",
+      "snippet": "GR00T N1.7 is an open, cross-embodiment foundation model from NVIDIA for generalized humanoid robot reasoning and skills. It uses a Cosmos-Reason2/Qwen3-VL backbone and a flow-matching action transformer to predict actions conditioned on vision, language, and proprioception."
+    },
+    {
+      "title": "ZebinJiang/Isaac-GR00T17: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/ZebinJiang/Isaac-GR00T17",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "These are the main code, model, training, evaluation, and deployment changes that distinguish the current N1.7 main branch from the N1.6 / 1D6 code path. Use the n1d6 branch when you need the N1.6 model package and runtime behavior. Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "NVIDIA Isaac Teleop and GR00T 1.7 Open VLA Model Available in LeRobot",
+      "url": "https://huggingface.co/blog/nvidia/nvidia-isaac-teleop-and-gr00t17-in-lerobot",
+      "snippet": "A Blog post by NVIDIA on Hugging Face"
+    }
+  ]
+}

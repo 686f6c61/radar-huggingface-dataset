@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "laion/ViCLIP-L-14-BVD-V-50M-s50M-b32K-WiSE-FT",
+  "slug": "laion-viclip-l-14-bvd-v-50m-s50m-b32k-wise-ft",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/ViCLIP-L-14-BVD-V-50M-s50M-b32K-WiSE-FT",
+  "created_at": "2026-08-25T12:19:22.000Z",
+  "updated_at": "2026-08-25T12:47:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "viclip",
+    "feature-extraction",
+    "video",
+    "clip",
+    "zeroshot-classification",
+    "video-classification",
+    "custom_code",
+    "dataset:bvd-v-55M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 427624704,
+  "parameters_human": "427.6M",
+  "storage_bytes": 1710554468,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laion/ViCLIP-L-14-BVD-V-55M-s50M-b32K · Hugging Face",
+      "url": "https://huggingface.co/laion/ViCLIP-L-14-BVD-V-55M-s50M-b32K",
+      "snippet": "This model is intended for research purposes. We hope it enables researchers to better understand and explore zero-shot video classification, video-text retrieval, and generalisation capabilities of video-language models."
+    },
+    {
+      "title": "GitHub - LAION-AI/BVD",
+      "url": "https://github.com/LAION-AI/BVD/",
+      "snippet": "Video-Language (ViCLIP): ViCLIP models trained on LAION-BVD match or exceed InternVid-trained models by up to 4.4% on standard video-text benchmarks, with consistent improvements as training scale grows from 10M to 50M clips. Audio-Language (CLAP): CLAP models trained on LAION-BVD achieve competitive performance against other large-scale uncurated audio datasets, leveraging rich in-the-wild ..."
+    },
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "LAION, as a non-profit organization, provides datasets, tools and models to liberate machine learning research. By doing so, we encourage open public education and a more environment-friendly use of resources by reusing existing datasets and models."
+    },
+    {
+      "title": "Models compatible with the OpenCLIP library - Hugging Face",
+      "url": "https://huggingface.co/models?library=open_clip",
+      "snippet": "Explore machine learning models. laion/CLIP-ViT-H-14-frozen-xlm-roberta-large-laion5B-s13B-b90k"
+    },
+    {
+      "title": "Laion - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/laion",
+      "snippet": "Looking for Laion&#x27;s top AI models? Browse their full Hugging Face collection of 11 models. Explore AI models and contributions by Laion on Huggingface."
+    }
+  ]
+}

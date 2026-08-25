@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "adyoi/indigo",
+  "slug": "adyoi-indigo",
+  "author": "adyoi",
+  "url": "https://huggingface.co/adyoi/indigo",
+  "created_at": "2025-02-09T17:38:25.000Z",
+  "updated_at": "2026-08-25T14:01:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "text-generation",
+    "from-scratch",
+    "gpt",
+    "transformer",
+    "indonesian",
+    "id",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14040832,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adyoi/indigo.tf · Hugging Face",
+      "url": "https://huggingface.co/adyoi/indigo.tf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "adyoi (Adi Apriyanto) - Hugging Face",
+      "url": "https://huggingface.co/adyoi",
+      "snippet": "Recent Activity published a model13 days ago adyoi/indigo published a Space13 days ago adyoi/playground published a model13 days ago adyoi/yo View all activity"
+    },
+    {
+      "title": "adyoi/yo · Hugging Face",
+      "url": "https://huggingface.co/adyoi/yo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "adyoi (Adi Apriyanto) · GitHub",
+      "url": "https://github.com/adyoi",
+      "snippet": "I stay Humble, Struggling and. Rebellious!. adyoi has 13 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

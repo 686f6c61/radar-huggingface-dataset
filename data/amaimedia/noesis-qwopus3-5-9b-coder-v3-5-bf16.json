@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Qwopus3.5-9B-Coder-v3.5-BF16",
+  "slug": "amaimedia-noesis-qwopus3-5-9b-coder-v3-5-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Coder-v3.5-BF16",
+  "created_at": "2026-08-16T11:55:02.000Z",
+  "updated_at": "2026-08-25T16:47:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "noesis",
+    "qwopus3.5",
+    "coder",
+    "bf16",
+    "qwen3.5",
+    "qwen3.5-201-languages",
+    "supports-201-languages",
+    "multilingual",
+    "language-support",
+    "conversational",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 23556757311,
+  "storage_human": "23.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16 · Discussions",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16/discussions",
+      "snippet": "Instructions to use AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - codespermuted/qwopus: Local AI coding agent powered by Qwen3.5 ...",
+      "url": "https://github.com/codespermuted/qwopus",
+      "snippet": "Local AI coding agent powered by Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled. Like Claude Code, but runs entirely on your GPU. - codespermuted/qwopus"
+    },
+    {
+      "title": "fredrezones55/Qwopus3.5",
+      "url": "https://ollama.com/fredrezones55/Qwopus3.5",
+      "snippet": "Qwopus3.5-v3 is a reasoning-enhanced model family fine-tune of Qwen3.5 designed to improve reasoning stability and correctness, optimize inference efficiency, and enhance cross-task generalization capabilities, especially in programming."
+    },
+    {
+      "title": "ctz168/qwenopus: Qwopus3.5-9B-v3.5 T4 Deployment - GitHub",
+      "url": "https://github.com/ctz168/qwenopus",
+      "snippet": "在 Google Colab (T4 GPU) 上运行 Jackrong/Qwopus3.5-9B-v3.5 Qwen3.5-9B 推理增强微调 · Claude Opus CoT 蒸馏 · 4-bit NF4 量化 · SDPA · float16 · KV Cache · DFlash"
+    }
+  ]
+}

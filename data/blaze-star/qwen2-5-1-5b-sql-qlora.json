@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "blaze-star/qwen2.5-1.5b-sql-qlora",
+  "slug": "blaze-star-qwen2-5-1-5b-sql-qlora",
+  "author": "blaze-star",
+  "url": "https://huggingface.co/blaze-star/qwen2.5-1.5b-sql-qlora",
+  "created_at": "2026-08-25T12:08:08.000Z",
+  "updated_at": "2026-08-25T12:08:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "sql",
+    "qlora",
+    "lora",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:b-mc2/sql-create-context",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-SQL",
+      "dataset": "sql-create-context",
+      "metric": "Normalized exact match",
+      "value": 0.748
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "sql-create-context",
+      "metric": "SQL token F1",
+      "value": 0.9732
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with Qwen2.5-or visit the Qwen2.5 collection, and you will find all you need! Enjoy! In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 ..."
+    },
+    {
+      "title": "GitHub - Akshu24Tech/text2sql-qlora: QLoRA fine-tune of Qwen2.5-1.5B ...",
+      "url": "https://github.com/Akshu24Tech/text2sql-qlora",
+      "snippet": "Fine-tuning Qwen2.5-1.5B-Instruct to convert plain English questions into SQL queries, using QLoRA on a free Colab T4. Built for the IR InFotech Round 4 practical assessment (ML / Model Training / Model Fine-Tuning)."
+    }
+  ]
+}

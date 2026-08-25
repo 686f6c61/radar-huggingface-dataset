@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/huggingface_filesystem_terminal_12748_f01u39y9_accounts",
+  "slug": "tianfuxinqu-huggingface_filesystem_terminal_12748_f01u39y9_accounts",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/huggingface_filesystem_terminal_12748_f01u39y9_accounts",
+  "created_at": "2026-08-25T18:31:57.000Z",
+  "updated_at": "2026-08-25T18:33:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "customer-accounts",
+    "compliance",
+    "key:customer-accounts",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_scholarly_5093-research ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_scholarly_5093-research-digest-rag-yxlb66",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_01 ...",
+      "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_01",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "Hub Integration & File Caching | huggingface/transformers | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/transformers/4.3-hub-integration-and-file-caching",
+      "snippet": "The Hugging Face Transformers library relies on a sophisticated caching and retrieval system to manage model weights, configurations, and vocabulary files. This system ensures efficient local storage, handles offline environments, and provides robust validation through checksums and metadata."
+    },
+    {
+      "title": "GitHub - nisten/huggingface-filesystem: A simple python file for stream ...",
+      "url": "https://github.com/nisten/huggingface-filesystem",
+      "snippet": "A simple python file for stream syncing read writes of a folder to huggingface without using your local disk. No delete support. Unlimited folder size. Upload must fit in ram. - nisten/huggingface..."
+    }
+  ]
+}

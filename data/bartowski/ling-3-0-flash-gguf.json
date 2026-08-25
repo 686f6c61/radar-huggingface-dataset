@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bartowski/Ling-3.0-flash-GGUF",
+  "slug": "bartowski-ling-3-0-flash-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Ling-3.0-flash-GGUF",
+  "created_at": "2026-08-18T04:09:17.000Z",
+  "updated_at": "2026-08-18T15:26:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 8231,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 1927093467040,
+  "storage_human": "1927.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Ling-3.0-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Ling-3.0-flash-GGUF",
+      "snippet": "The corpus rendered for this model is included in this repo: Ling-3.-flash-calibration-v6.txt. The imatrix is available here: Ling-3.-flash-imatrix.gguf. Calibration render details"
+    },
+    {
+      "title": "Ling-3.0-flash-IQ1_M.gguf · bartowski/Ling-3.0-flash-GGUF at main",
+      "url": "https://huggingface.co/bartowski/Ling-3.0-flash-GGUF/blob/main/Ling-3.0-flash-IQ1_M.gguf",
+      "snippet": "Instructions to use bartowski/Ling-3.0-flash-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/Ling-3.0-flash-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry. Their ..."
+    },
+    {
+      "title": "Ling-3.0-flash (free) Coding Benchmark | Kilo Code",
+      "url": "https://kilo.ai/models/inclusionai-ling-3-0-flash-free",
+      "snippet": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per Compare performance, pricing, and capabilities."
+    }
+  ]
+}

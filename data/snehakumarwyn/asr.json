@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "snehakumarwyn/asr",
+  "slug": "snehakumarwyn-asr",
+  "author": "snehakumarwyn",
+  "url": "https://huggingface.co/snehakumarwyn/asr",
+  "created_at": "2026-08-25T17:35:32.000Z",
+  "updated_at": "2026-08-25T17:35:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "approx-gelu",
+    "bilinear",
+    "classification",
+    "hybrid",
+    "large",
+    "layernorm",
+    "polynomial",
+    "standard",
+    "xavier-uniform",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Open ASR Leaderboard - a Hugging Face Space by hf-audio",
+      "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
+      "snippet": "📐 The 🤗 Open ASR Leaderboard evaluates open-source and proprietary speech recognition models on English and multiple European languages. We report the Average WER (⬇️ lower the better) and RTFx (⬆️ higher the better)."
+    },
+    {
+      "title": "asr-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/asr-model",
+      "snippet": "python ai cpp speech speech-recognition speech-to-text asr asr-model asr-innovation-tech asr-libraries Updated on May 28 C++"
+    },
+    {
+      "title": "An approach to measuring the performance of Automatic Speech ...",
+      "url": "https://arxiv.org/html/2507.16456",
+      "snippet": "Typically, the selection of an ASR model for a specific application depends on a trade-off between model complexity and performance. When choosing a model, requirements guide this balance to ensure optimal performance while managing computational and resource constraints."
+    },
+    {
+      "title": "Automatic Speech Recognition Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=automatic-speech-recognition",
+      "snippet": "Active filters: automatic-speech-recognition. Clear all. openai/whisper-large-v3. Automatic Speech Recognition • 2B • Updated Aug 12, 2024 • 4.97M • • 6.12k"
+    }
+  ]
+}

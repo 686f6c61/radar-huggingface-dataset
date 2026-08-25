@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "minsu-lee90/classify-dev",
+  "slug": "minsu-lee90-classify-dev",
+  "author": "minsu-lee90",
+  "url": "https://huggingface.co/minsu-lee90/classify-dev",
+  "created_at": "2026-08-25T16:30:52.000Z",
+  "updated_at": "2026-08-25T16:30:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "classification",
+    "exponential",
+    "instancenorm",
+    "relu",
+    "sliding-window",
+    "swin-t",
+    "tensor-fusion",
+    "trunc-normal",
+    "xlarge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "ClassifAI - MLaas API for classification",
+      "url": "https://classifai.dev/",
+      "snippet": "MLaas API for classification. Skip training, deployment, and retraining. Send text or images, get a label. Improves from feedback over time."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Helps your engineering team write better code faster, with a lightweight, agentic model built into GitHub Copilot and VS Code."
+    },
+    {
+      "title": "Create a category classification custom model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/create-text-classification-model",
+      "snippet": "More > AI hub. Under Discover an AI capability, select AI models. (Optional) To keep AI models permanently on the menu for easy access, select the pin icon. Select Text. Select Category classification - Classify texts into custom categories. Read the Classify texts into custom categories page, and then select Create custom model."
+    },
+    {
+      "title": "Classify AI",
+      "url": "https://classify-ai.vercel.app/",
+      "snippet": "The application provides a user-friendly interface for creating CNN based models for image classification without the need for coding or deep learning expertise."
+    }
+  ]
+}

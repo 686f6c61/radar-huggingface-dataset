@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sanjeevafk/vanrakshak-forest-yolov8n",
+  "slug": "sanjeevafk-vanrakshak-forest-yolov8n",
+  "author": "sanjeevafk",
+  "url": "https://huggingface.co/sanjeevafk/vanrakshak-forest-yolov8n",
+  "created_at": "2026-08-25T17:45:43.000Z",
+  "updated_at": "2026-08-25T17:47:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolov8",
+    "object-detection",
+    "drone",
+    "uav",
+    "thermal-imaging",
+    "wildfire",
+    "anti-poaching",
+    "wildlife-conservation",
+    "edge-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18521991,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Van Rakshak: A Multi-Stakeholder, AI-Augmented Web Platform for Real ...",
+      "url": "https://www.irjet.net/archives/V13/i2/IRJET-V13I02152.pdf",
+      "snippet": "This paper presented VanRakshak, a web-based, AI-augmented forest monitoring platform for Maharashtra, India, bridging the gap between raw satellite data and actionable intelligence for non-technical stakeholders."
+    },
+    {
+      "title": "GitHub - Anshkant/Vanrakshak-AI",
+      "url": "https://github.com/Anshkant/Vanrakshak-AI/tree/main",
+      "snippet": "AI Powered Forest Monitoring and Surveillance System Vanrakshak AI is an AI based forest monitoring and surveillance system designed to assist in detecting and monitoring activities in forest environments using Computer Vision, YOLO object detection, and real time camera streams."
+    },
+    {
+      "title": "aneeshrao0207/VanRakshak: Smart Forest Monitoring System - GitHub",
+      "url": "https://github.com/aneeshrao0207/VanRakshak",
+      "snippet": "VanRakshak is a smart forest monitoring system developed during HackMela 2026 that demonstrates how hardware sensors and software intelligence can work together to improve forest protection. The project consists of: A hardware prototype representing underground acoustic and environmental sensing units. A software command-center interface that visualizes sensor activity, alerts, forest zones ..."
+    },
+    {
+      "title": "VanRakshak AI | India&#x27;s First Universal AI-Powered Forest Intelligence ...",
+      "url": "https://vanrakshakai.in/",
+      "snippet": "India&#x27;s first universal AI-powered forest intelligence system. Protecting 7,15,343 sq km of forest cover, 104 million tribals, and enabling India&#x27;s carbon credit future — all offline, in 22 languages."
+    },
+    {
+      "title": "face_yolov8m.pt · Bingsu/adetailer at main",
+      "url": "https://huggingface.co/Bingsu/adetailer/blob/main/face_yolov8m.pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

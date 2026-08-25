@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "r3lax/wav2vec-english-speech-emotion-recognition",
+  "slug": "r3lax-wav2vec-english-speech-emotion-recognition",
+  "author": "r3lax",
+  "url": "https://huggingface.co/r3lax/wav2vec-english-speech-emotion-recognition",
+  "created_at": "2026-08-25T16:31:40.000Z",
+  "updated_at": "2026-08-25T16:31:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "wav2vec2",
+    "generated_from_trainer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3798294516,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r-f/wav2vec-english-speech-emotion-recognition · Hugging Face",
+      "url": "https://huggingface.co/r-f/wav2vec-english-speech-emotion-recognition",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/r-f/wav2vec-english-speech-emotion-recognition/raw/main/README.md",
+      "snippet": "--- license: apache-2.0 tags: - generated_from_trainer metrics: - accuracy model_index: name: wav2vec-english-speech-emotion-recognition --- # Speech Emotion Recognition By Fine-Tuning Wav2Vec 2.0 The model is a fine-tuned version of [jonatasgrosman/wav2vec2-large-xlsr-53-english] (https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53 ..."
+    },
+    {
+      "title": "GitHub - Babitdor/Speech_Emotion_Recognition_Wav2Vec",
+      "url": "https://github.com/Babitdor/Speech_Emotion_Recognition_Wav2Vec",
+      "snippet": "This project implements Speech Emotion Recognition (SER) using Wav2Vec2 and the Hugging Face Transformers library. It supports training, evaluation, and inference on custom or public emotion-labeled speech datasets."
+    },
+    {
+      "title": "Wav2vec 2.0: Learning the structure of speech from raw audio",
+      "url": "https://ai.meta.com/blog/wav2vec-20-learning-the-structure-of-speech-from-raw-audio/",
+      "snippet": "Facebook AI is releasing code and models for wav2vec 2.0, a self-supervised algorithm that enables automatic speech recognition models with just 10 minutes of transcribed speech data."
+    },
+    {
+      "title": "GitHub - K-Winkles/Wav2Vec2ForSpeechClassification: Fine-tuned model ...",
+      "url": "https://github.com/K-Winkles/Wav2Vec2ForSpeechClassification",
+      "snippet": "Fine-tuned model based on https://huggingface.co/r-f/wav2vec-english-speech-emotion-recognition. The model is trained on the full TESS, RAVDESS, and CREMA datasets."
+    }
+  ]
+}

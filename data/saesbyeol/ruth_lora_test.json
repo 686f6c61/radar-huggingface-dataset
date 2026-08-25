@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "saesbyeol/ruth_lora_test",
+  "slug": "saesbyeol-ruth_lora_test",
+  "author": "saesbyeol",
+  "url": "https://huggingface.co/saesbyeol/ruth_lora_test",
+  "created_at": "2026-08-25T18:00:28.000Z",
+  "updated_at": "2026-08-25T18:03:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457111960,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruth - 2025-07-15 09:13:56 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/888273636652223391",
+      "snippet": "Download Ruth - free LORA FLUX.1 AI model on TENSOR. EXCLUSIVE. By Heavyuser"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "FLUX Lora Tester - v1.02 | Flux.1 Workflows | Civitai",
+      "url": "https://civitai.com/models/652483/flux-lora-tester",
+      "snippet": "To help and save time, this is a solution. You just enter 1 prompt and you get 6 images. 1 Image without Lora, 5 other images with 5 diffrent loras. Set up enter prompt choose resolution Paste you output path choose the loras you will compare in the \"LORA Set up\" Group Hit Queue be happy ️ If you just want to test less than all 6 images, mute ..."
+    },
+    {
+      "title": "GitHub - purzbeats/lora_tester: Batch LoRA strength tester and ...",
+      "url": "https://github.com/purzbeats/lora_tester",
+      "snippet": "LoRA Tester A toolkit for systematically testing LoRA models across multiple prompts and strength values using a local ComfyUI server. Includes a batch generation script and a browser-based gallery for comparing results. Built to work with Claude Code via the included comfy_local skill, but the Python script and gallery work standalone too."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

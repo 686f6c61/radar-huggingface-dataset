@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LonelyBoy7th/Huihui-Qwen3.5-27B-abliterated",
+  "slug": "lonelyboy7th-huihui-qwen3-5-27b-abliterated",
+  "author": "LonelyBoy7th",
+  "url": "https://huggingface.co/LonelyBoy7th/Huihui-Qwen3.5-27B-abliterated",
+  "created_at": "2026-08-25T14:44:56.000Z",
+  "updated_at": "2026-08-25T14:44:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575830414,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated",
+      "snippet": "This is an uncensored version of Qwen/qwen3.5 created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content. Users should exercise caution and rigorously review ..."
+    },
+    {
+      "title": "Huihui-ai - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/huihui-ai",
+      "snippet": "Overview Huihui-Qwen3.5-27B-abliterated is an uncensored derivative of Qwen 3.5-27B created by huihui-ai using abliteration techniques to remove safety filtering mechanisms from the base model."
+    },
+    {
+      "title": "Huihui Qwen3.5 27B Abliterated — AI Model | Antbase",
+      "url": "https://antbase.ai/models/huihui-qwen3-5-27b-abliterated",
+      "snippet": "Overview Huihui Qwen3.5 27B Abliterated is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    }
+  ]
+}

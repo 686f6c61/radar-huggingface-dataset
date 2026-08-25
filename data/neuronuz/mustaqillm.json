@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "NeuronUz/MustaqiLLM",
+  "slug": "neuronuz-mustaqillm",
+  "author": "NeuronUz",
+  "url": "https://huggingface.co/NeuronUz/MustaqiLLM",
+  "created_at": "2026-08-13T14:58:35.000Z",
+  "updated_at": "2026-08-25T08:59:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "uz",
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neuron_lm",
+    "text-generation",
+    "uzbek",
+    "o'zbek",
+    "chat",
+    "instruction-tuned",
+    "conversational",
+    "custom_code",
+    "uz",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 1179,
+  "trending_score": 8,
+  "parameters": 5166735872,
+  "parameters_human": "5.17B",
+  "storage_bytes": 11022175080,
+  "storage_human": "11.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuronUz/MustaqiLLM · Hugging Face",
+      "url": "https://huggingface.co/NeuronUz/MustaqiLLM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NeuronUz/MilliyLM-5B · Hugging Face",
+      "url": "https://huggingface.co/NeuronUz/MilliyLM-5B",
+      "snippet": "NeuronUz / MilliyLM-5B like 0 Follow NeuronAI 11 Text Generation Transformers Safetensors Uzbek English Russian neuron_lm uzbek o&#x27;zbek chat instruction-tuned conversational custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "NeuronAI 2B by NeuronUz — VRAM 4.8GB, 256K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/NeuronUz%2FNeuronAI-2B,5kHkfa3APUv89fi1jVmLu1",
+      "snippet": "NeuronAI 2B is an open-source 2b LLM by NeuronUz. VRAM 4.8GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    }
+  ]
+}

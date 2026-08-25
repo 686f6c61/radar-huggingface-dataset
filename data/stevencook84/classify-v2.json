@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Stevencook84/classify-v2",
+  "slug": "stevencook84-classify-v2",
+  "author": "Stevencook84",
+  "url": "https://huggingface.co/Stevencook84/classify-v2",
+  "created_at": "2026-08-25T18:27:30.000Z",
+  "updated_at": "2026-08-25T18:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bilinear",
+    "efficientformer",
+    "gelu-tanh",
+    "kaiming-normal",
+    "linear-warmup",
+    "matching",
+    "nano",
+    "rmsnorm",
+    "rmsprop",
+    "sparse",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai_classify function | Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_classify",
+      "snippet": "The ai_classify () function classifies text content according to custom labels you provide. You can use simple label names for basic classification, or add label descriptions and instructions to improve accuracy for use cases like customer support routing, document categorization, and content analysis."
+    },
+    {
+      "title": "classification -v2 Classification Model by Coder 42&#x27;s Workspace",
+      "url": "https://universe.roboflow.com/coder-42-s-workspace/classification-v2",
+      "snippet": "2250 open source classification-v2 images plus a pre-trained classification -v2 model and API. Created by Coder 42&#x27;s Workspace"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=xavier",
+      "snippet": "Explore machine learning models. 21 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: xavier Clear all"
+    },
+    {
+      "title": "ai-skills-megapack/classify_v2.py at main · zenH-jpg/ai ... - GitHub",
+      "url": "https://github.com/zenH-jpg/ai-skills-megapack/blob/main/classify_v2.py",
+      "snippet": "1,445 curated AI coding agent skills (SKILL.md) — packaged for Claude Code, Cursor, Codex CLI, Antigravity. 9 category packs + free complete collection. - zenH-jpg/ai-skills-megapack"
+    },
+    {
+      "title": "Stevencook84/model_513503994_mixer_huge · Hugging Face",
+      "url": "https://huggingface.co/Stevencook84/model_513503994_mixer_huge",
+      "snippet": "model_513503994_mixer_huge.py Model Overview A huge -scale implementation of the mixer architecture, built for contrastive tasks."
+    }
+  ]
+}

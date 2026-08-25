@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Lucie666/ppocrv6-tiny-burnpack",
+  "slug": "lucie666-ppocrv6-tiny-burnpack",
+  "author": "Lucie666",
+  "url": "https://huggingface.co/Lucie666/ppocrv6-tiny-burnpack",
+  "created_at": "2026-08-25T14:28:50.000Z",
+  "updated_at": "2026-08-25T14:28:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "burn",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "burn",
+    "onnx",
+    "burnpack",
+    "rust",
+    "ocr",
+    "paddleocr",
+    "format-conversion",
+    "image-to-text",
+    "multilingual",
+    "arxiv:2606.13108",
+    "base_model:PaddlePaddle/PP-OCRv6_tiny_det_onnx",
+    "base_model:quantized:PaddlePaddle/PP-OCRv6_tiny_det_onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12424049,
+  "storage_human": "12 MB",
+  "base_model": "PaddlePaddle/PP-OCRv6_tiny_det_onnx, PaddlePaddle/PP-OCRv6_tiny_rec_onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucie666/all-minilm-l6-v2-burnpack · Hugging Face",
+      "url": "https://huggingface.co/Lucie666/all-minilm-l6-v2-burnpack",
+      "snippet": "Instructions to use Lucie666/all-minilm-l6-v2-burnpack with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use Lucie666/all-minilm-l6-v2-burnpack with sentence-transformers:"
+    },
+    {
+      "title": "PP-OCRv6 Introduction - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/version3.x/algorithm/PP-OCRv6/PP-OCRv6.html",
+      "snippet": "PP-OCRv6 achieves a major breakthrough in language coverage—the medium/small tiers support 50 languages with a single unified model, including Simplified Chinese, Traditional Chinese, English, Japanese, and 46 Latin-script languages (tiny supports 49, excluding Japanese)."
+    },
+    {
+      "title": "PP-OCRv6 - a PaddlePaddle Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/PaddlePaddle/pp-ocrv6",
+      "snippet": "From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs on OCR Tasks"
+    },
+    {
+      "title": "PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs ...",
+      "url": "https://arxiv.org/pdf/2606.13108",
+      "snippet": "Unified and Scalable Model Family: We deliver a comprehensive, three-tier OCR model family spanning 1.5M to 34.5M parameters. The medium-tier model achieves an 86.2% detection H-mean and 83.2% recognition accuracy, serving as a highly efficient, production-ready infrastructure for both industrial deployment and large-scale data pipelines."
+    },
+    {
+      "title": "light-ocr/packages/model-ppocrv6-tiny at main - GitHub",
+      "url": "https://github.com/arcships/light-ocr/tree/main/packages/model-ppocrv6-tiny",
+      "snippet": "PP-OCRv6 Tiny model package This private workspace placeholder reserves the exact dependency identity. The release assembler creates the publishable pure-data package from the locked, verified bundle in models/generated."
+    }
+  ]
+}

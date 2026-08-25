@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "renn-21/luna-3b-hardened-gguf",
+  "slug": "renn-21-luna-3b-hardened-gguf",
+  "author": "renn-21",
+  "url": "https://huggingface.co/renn-21/luna-3b-hardened-gguf",
+  "created_at": "2026-08-25T15:58:41.000Z",
+  "updated_at": "2026-08-25T16:01:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377440,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/Luna-AI-Llama2-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Luna-AI-Llama2-Uncensored-GGUF",
+      "snippet": "Luna AI Llama2 Uncensored - GGUF Model creator: Tap Original model: Luna AI Llama2 Uncensored Description This repo contains GGUF format model files for Tap-M&#x27;s Luna AI Llama2 Uncensored. Many thanks to William Beauchamp from Chai for providing the hardware used to make and upload these files! About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a ..."
+    },
+    {
+      "title": "mradermacher/Llama-3B-Mono-Luna-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3B-Mono-Luna-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "Luna Ai Llama2 Uncensored - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/luna-ai-llama2-uncensored.html",
+      "snippet": "Download Luna Ai Llama2 Uncensored GGUF model. 2.30 GB, 6,579 downloads, 70 likes."
+    }
+  ]
+}

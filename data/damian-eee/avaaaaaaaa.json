@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Damian-eee/Avaaaaaaaa",
+  "slug": "damian-eee-avaaaaaaaa",
+  "author": "Damian-eee",
+  "url": "https://huggingface.co/Damian-eee/Avaaaaaaaa",
+  "created_at": "2026-03-09T17:10:26.000Z",
+  "updated_at": "2026-08-25T17:37:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3377788288,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Damian - Excel-Native AI Agent | Best Way to Automate Excel Work ...",
+      "url": "https://www.trydamian.com/",
+      "snippet": "The #1 Excel-native AI Agent that automates Excel work. The best way to edit Excel with AI - generate formulas, clean data, build financial models. Free Copilot alternative. Try now!"
+    },
+    {
+      "title": "Damian - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/a011c386802f12b007b655e57cd296ce",
+      "snippet": "Meet Damian model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Damian Griggs - Damian AI",
+      "url": "https://www.damiangriggs.com/damian-ai",
+      "snippet": "The Damian AI system is a fully-realized proof-of-concept. The cognitive architecture has been built and validated through private testing with live demonstrations available, successfully achieving the targeted 95% persona fidelity on a local model. The project is now ready to move from the testing phase to public deployment."
+    },
+    {
+      "title": "damian AI Models | Civitai",
+      "url": "https://civitai.com/tag/damian",
+      "snippet": "Browse 3 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with damian."
+    },
+    {
+      "title": "Mini Damian AI - a Hugging Face Space by damianwgriggs",
+      "url": "https://huggingface.co/spaces/damianwgriggs/Mini-Damian-AI",
+      "snippet": "Damian Griggs - AI Assistant 🤖 Ask me anything about Damian&#x27;s skills, projects, and professional background. This AI uses a local knowledge file to provide accurate, grounded answers."
+    }
+  ]
+}

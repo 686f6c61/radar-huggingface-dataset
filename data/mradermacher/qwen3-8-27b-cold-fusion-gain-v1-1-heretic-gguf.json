@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-cold-fusion-gain-v1-1-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-GGUF",
+  "created_at": "2026-08-25T14:49:31.000Z",
+  "updated_at": "2026-08-25T15:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "cold-fusion",
+    "vision-language",
+    "mtp",
+    "bf16",
+    "en",
+    "zh",
+    "base_model:gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
+    "base_model:quantized:gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 57293834176,
+  "storage_human": "57.3 GB",
+  "base_model": "gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF like 0 Transformers GGUF English unsloth GAIN Training COLD-FUSION finetune imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B Cold Fusion Cuts Thinking Tokens Without ... - HackerNoon",
+      "url": "https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance",
+      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 is a 27-billion parameter instruction-tuned language model built by DavidAU that applies the COLD FUSION training methodology—combining GAIN (an internally developed technique) with Unsloth&#x27;s training infrastructure—to reduce thinking tokens to 1/10 to 1/2 of standard Qwen models while maintaining 99% of full-precision performance at both 8-bit ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF huggingface ...",
+      "url": "https://www.toolify.ai/ai-model/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business faster, with less \"talking\" and is smarter too. Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/Loan_Prediction_System",
+  "slug": "amirsoahil101-loan_prediction_system",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/Loan_Prediction_System",
+  "created_at": "2026-08-25T16:06:59.000Z",
+  "updated_at": "2026-08-25T16:10:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310570,
+  "storage_human": "310570 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loan Prediction System Design Overview | PDF - Scribd",
+      "url": "https://www.scribd.com/document/564720504/Loan-Prediction-System",
+      "snippet": "The document describes the system analysis and design of a loan prediction system. It discusses system analysis which involves studying existing systems and identifying business requirements. It then covers the fact finding, analysis of the existing manual loan approval system, and problems with the current system. The proposed system architecture is presented, involving preprocessing data ..."
+    },
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "AI & ML interests Passionate about Machine Learning, Deep Learning, and Generative AI. Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "GitHub - AmnaAmir429/Loan-Prediction-system: Loan Prediction system",
+      "url": "https://github.com/AmnaAmir429/Loan-Prediction-system",
+      "snippet": "A full-stack, production-ready machine learning web application that predicts loan approval outcomes based on applicant financial data. Built with Next.js 15 (App Router), TypeScript, Tailwind CSS, and a Python FastAPI backend serving a trained K-Nearest Neighbors (KNN) model."
+    },
+    {
+      "title": "loan-prediction · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/loan-prediction",
+      "snippet": "This project automates bank credit risk assessment using AI and machine learning models to predict loan defaults. It streamlines the credit process with predictive analytics, model evaluation, explainability (SHAP), and deployment readiness."
+    },
+    {
+      "title": "Loan Approval Prediction using Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/loan-approval-prediction-using-machine-learning/",
+      "snippet": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Princecode/naabiga-ia-gguf",
+  "slug": "princecode-naabiga-ia-gguf",
+  "author": "Princecode",
+  "url": "https://huggingface.co/Princecode/naabiga-ia-gguf",
+  "created_at": "2026-08-24T17:52:57.000Z",
+  "updated_at": "2026-08-25T17:47:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 1543298048,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6331208640,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: Kimi K3, deepseek v4 ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "GGUF Model Discovery A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Live site: https://local-ai-zone.github.io"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    }
+  ]
+}

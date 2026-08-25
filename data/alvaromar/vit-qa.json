@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alvaromar/vit-qa",
+  "slug": "alvaromar-vit-qa",
+  "author": "alvaromar",
+  "url": "https://huggingface.co/alvaromar/vit-qa",
+  "created_at": "2026-08-25T16:32:06.000Z",
+  "updated_at": "2026-08-25T16:32:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "beit",
+    "concat-mlp",
+    "groupnorm",
+    "kaiming",
+    "matching",
+    "polynomial",
+    "rmsprop",
+    "standard",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Question Aware Vision Transformer for Multimodal Reasoning",
+      "url": "https://arxiv.org/abs/2402.05472",
+      "snippet": "QA-ViT is model-agnostic and can be incorporated efficiently into any VL architecture. Extensive experiments demonstrate the effectiveness of applying our method to various multimodal architectures, leading to consistent improvement across diverse tasks and showcasing its potential for enhancing visual and scene-text understanding."
+    },
+    {
+      "title": "GitHub - amazon-science/QA-ViT",
+      "url": "https://github.com/amazon-science/QA-ViT",
+      "snippet": "Contribute to amazon-science/QA-ViT development by creating an account on GitHub."
+    },
+    {
+      "title": "arXiv:2402.05472v1 [cs.CV] 8 Feb 2024",
+      "url": "https://arxiv.org/pdf/2402.05472",
+      "snippet": "To mitigate this limitation and yield a textual conditioned vision encoding, we present QA-ViT, Question Aware Vi-sion Transformer for multimodal reasoning. The intuition of our method is clear: if the model understands the posed question and the inherent context, it can extract visual fea-tures that directly correspond to the relevant image aspects essential for answering it correctly. We ..."
+    },
+    {
+      "title": "QA-ViT/README.md at main · amazon-science/QA-ViT · GitHub",
+      "url": "https://github.com/amazon-science/QA-ViT/blob/main/README.md",
+      "snippet": "Contribute to amazon-science/QA-ViT development by creating an account on GitHub."
+    },
+    {
+      "title": "Question Aware Vision Transformer for Multimodal Reasoning",
+      "url": "https://cvpr.thecvf.com/virtual/2024/poster/31218",
+      "snippet": "Consequently, the resulting visual features may not be optimally attuned to the query-specific elements of the image.To address this, we introduce QA-ViT, a Question Aware Vision Transformer approach for multimodal reasoning, which embeds question awareness directly within the vision encoder.This integration results in dynamic visual features ..."
+    }
+  ]
+}

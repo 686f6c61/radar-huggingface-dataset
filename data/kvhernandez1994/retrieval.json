@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Kvhernandez1994/retrieval",
+  "slug": "kvhernandez1994-retrieval",
+  "author": "Kvhernandez1994",
+  "url": "https://huggingface.co/Kvhernandez1994/retrieval",
+  "created_at": "2026-08-25T16:09:12.000Z",
+  "updated_at": "2026-08-25T16:09:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "beit",
+    "co-attention",
+    "grouped-query",
+    "kaiming",
+    "linear-warmup",
+    "retrieval",
+    "rmsnorm",
+    "swish",
+    "tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RVC-Project · GitHub",
+      "url": "https://github.com/RVC-Project",
+      "snippet": "Retrieval-based-Voice-Conversion-WebUI Public Easily train a good VC model with voice data <= 10 mins!"
+    },
+    {
+      "title": "GitHub - Nardien/agent-distillation: Official Code Repository for the ...",
+      "url": "https://github.com/Nardien/agent-distillation",
+      "snippet": "Official Code Repository for the paper \"Distilling LLM Agent into Small Models with Retrieval and Code Tools\" - Nardien/agent-distillation"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/NV-Retriever-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/NV-Retriever-v1",
+      "snippet": "Other Properties Related to Output: Each array contains the embeddings of size 4096 for the corresponding input string Model Version (s) NV-Retriever-v1 Ethical Considerations NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications."
+    },
+    {
+      "title": "Design AI Agent for Auditing: Applying Large Language Models (LLMs) and ...",
+      "url": "https://publications.aaahq.org/jeta/article/23/1/189/13967/Design-AI-Agent-for-Auditing-Applying-Large",
+      "snippet": "This proposal introduces an AI agent framework specifically designed for auditing workflows, integrating three core components: retrieval augmented generation (RAG) for seamless access to private knowledge bases, customizable workflows with intelligent query classification and multiagent coordination, and orchestrated prompts that embed ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "M-BKH-T/tts",
+  "slug": "m-bkh-t-tts",
+  "author": "M-BKH-T",
+  "url": "https://huggingface.co/M-BKH-T/tts",
+  "created_at": "2026-08-25T14:15:55.000Z",
+  "updated_at": "2026-08-25T14:15:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "infinisoft/tts · Hugging Face",
+      "url": "https://huggingface.co/infinisoft/tts",
+      "snippet": "📣 Clone your voice with a single click on 🐸Coqui.ai 🐸TTS is a library for advanced Text-to-Speech generation. It&#x27;s built on the latest research, was designed to achieve the best trade-off among ease-of-training, speed and quality. 🐸TTS comes with pretrained models, tools for measuring dataset quality and already used in 20+ languages for products and research projects."
+    },
+    {
+      "title": "TTS Models Directory — Open-Source & Commercial Text-to-Speech",
+      "url": "https://ttsmodels.com/",
+      "snippet": "Explore 53 of the best text-to-speech models and platforms, from open-source projects to commercial APIs. Search, filter, and compare TTS tools."
+    },
+    {
+      "title": "TTS Arena - AI Voice Model Leaderboard & Comparison | TTS.ai",
+      "url": "https://tts.ai/tts-arena/",
+      "snippet": "Compare 20+ AI text-to-speech models. Official benchmarks, community ratings, side-by-side comparison. Find the best TTS model for your needs."
+    },
+    {
+      "title": "The Best Open-Source Text-to-Speech Models in 2026",
+      "url": "https://bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models",
+      "snippet": "Explore the top open-source TTS models and find answers to some FAQs about them."
+    }
+  ]
+}

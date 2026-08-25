@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mano-jkmk/retrieval-lab",
+  "slug": "mano-jkmk-retrieval-lab",
+  "author": "mano-jkmk",
+  "url": "https://huggingface.co/mano-jkmk/retrieval-lab",
+  "created_at": "2026-08-25T16:01:27.000Z",
+  "updated_at": "2026-08-25T16:01:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "enthusiastic",
+    "few-shot-multimodal",
+    "footnote",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "theoretical-rigorous",
+    "typst",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lab-AI - Retrieval-Augmented Language Model for Personalized Lab Test ...",
+      "url": "https://arxiv.org/html/2409.18986v1",
+      "snippet": "Abstract Accurate interpretation of lab results is crucial in clinical medicine, yet most patient portals use universal normal ranges, ignoring factors like age and gender. This study introduces Lab-AI, an interactive system that offers personalized normal ranges using Retrieval-Augmented Generation (RAG) from credible health sources."
+    },
+    {
+      "title": "[2409.18986v1] Lab-AI -- Retrieval-Augmented Language Model for ...",
+      "url": "https://arxiv.org/abs/2409.18986v1",
+      "snippet": "Accurate interpretation of lab results is crucial in clinical medicine, yet most patient portals use universal normal ranges, ignoring factors like age and gender. This study introduces Lab-AI, an interactive system that offers personalized normal ranges using Retrieval-Augmented Generation (RAG) from credible health sources. Lab-AI has two modules: factor retrieval and normal range retrieval ..."
+    },
+    {
+      "title": "(PDF) Lab-AI -- Retrieval-Augmented Language Model for Personalized Lab ...",
+      "url": "https://scispace.com/papers/lab-ai-retrieval-augmented-language-model-for-personalized-69sp5snjj7jw",
+      "snippet": "This study introduces Lab-AI, an interactive system that offers personalized normal ranges using Retrieval-Augmented Generation (RAG) from credible health sources. Lab-AI has two modules: factor retrieval and normal range retrieval. We tested these on 68 lab tests-30 with conditional factors and 38 without."
+    },
+    {
+      "title": "GitHub - JiamanBettyWu/retrieval-lab: Two-stage RAG retriever measured ...",
+      "url": "https://github.com/JiamanBettyWu/retrieval-lab",
+      "snippet": "A retrieval-quality lab: build a two-stage RAG retriever, LoRA-fine-tune its encoder, and measure every change against a labeled benchmark (BEIR) with metrics traced in Weave — including the changes that turn out to make things worse, which is what Phase 2 did. Then put the validated retriever behind a generator and measure that the same way — grounded answers scored by an LLM-as-judge ..."
+    },
+    {
+      "title": "Lab-AI -- Retrieval-Augmented Language Model for Personalized Lab Test ...",
+      "url": "https://www.researchgate.net/publication/384502620_Lab-AI_--_Retrieval-Augmented_Language_Model_for_Personalized_Lab_Test_Interpretation_in_Clinical_Medicine",
+      "snippet": "This study introduces Lab-AI, an interactive system that offers personalized normal ranges using Retrieval-Augmented Generation (RAG) from credible health sources."
+    }
+  ]
+}

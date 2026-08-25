@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayneHuang/CellBridge",
+  "slug": "laynehuang-cellbridge",
+  "author": "LayneHuang",
+  "url": "https://huggingface.co/LayneHuang/CellBridge",
+  "created_at": "2026-08-25T17:59:37.000Z",
+  "updated_at": "2026-08-25T19:02:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cell-painting",
+    "biology",
+    "diffusion",
+    "schrodinger-bridge",
+    "image-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4921679063,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LayneHuang/CellBridge · Hugging Face",
+      "url": "https://huggingface.co/LayneHuang/CellBridge",
+      "snippet": "CellBridge Checkpoints and evaluation results for CellBridge, a Biologically-Constrained Schrödinger Bridge (BCSB) framework for predicting Cell Painting cell-morphology images from genetic and chemical perturbations."
+    },
+    {
+      "title": "GitHub - nicolashuynh/cellbridge: Code for our paper \"CellBRIDGE ...",
+      "url": "https://github.com/nicolashuynh/cellbridge",
+      "snippet": "Code for our paper CellBRIDGE: Learning Cellular Trajectories via Interaction-Aware Alignment (ICML 2026). CellBRIDGE aligns cellular snapshots with an interaction-aware optimal transport objective, then uses the learned couplings for marginal interpolation and flow-matching velocity pushforward. The repository includes lightweight AnnData inputs, Hydra configurations, reproduction scripts ..."
+    },
+    {
+      "title": "CellBRIDGE: Learning Cellular Trajectories via Interaction-Aware Alignment",
+      "url": "https://arxiv.org/pdf/2605.30635",
+      "snippet": "Abstract Inferring dynamics from population snapshots is a fundamental challenge in machine learning and biology. In scRNA-sequencing (scRNA-seq), de-structive measurements preclude direct tracking of individual cells across time, making trajec-tory inference underdetermined. Optimal Trans-port (OT) provides a principled framework for snapshot alignment, but a long-standing model-ing question ..."
+    },
+    {
+      "title": "[2605.30635] CellBRIDGE: Learning Cellular Trajectories via Interaction ...",
+      "url": "https://arxiv.org/abs/2605.30635",
+      "snippet": "Inferring dynamics from population snapshots is a fundamental challenge in machine learning and biology. In scRNA-sequencing (scRNA-seq), destructive measurements preclude direct tracking of individual cells across time, making trajectory inference underdetermined. Optimal Transport (OT) provides a principled framework for snapshot alignment, but a long-standing modeling question is which cost ..."
+    },
+    {
+      "title": "PDF CellBRIDGE: Learning Cellular Trajectories via Interaction-Aware Alignment",
+      "url": "https://www.vanderschaar-lab.com/wp-content/uploads/2026/05/26187_CellBRIDGE_Learning_Cell.pdf",
+      "snippet": "CellBRIDGE. From an LR catalogue, we build directed CCI matrices. A structure-aware OT problem balances 175 feature similarity with interaction structure to produce snapshot couplings used to train a vector field to recover cell trajectories."
+    }
+  ]
+}

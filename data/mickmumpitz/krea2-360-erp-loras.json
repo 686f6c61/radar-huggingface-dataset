@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mickmumpitz/Krea2-360-ERP-LoRAs",
+  "slug": "mickmumpitz-krea2-360-erp-loras",
+  "author": "mickmumpitz",
+  "url": "https://huggingface.co/mickmumpitz/Krea2-360-ERP-LoRAs",
+  "created_at": "2026-08-25T13:12:24.000Z",
+  "updated_at": "2026-08-25T13:38:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "360",
+    "krea",
+    "erp",
+    "lora",
+    "edit",
+    "t2i",
+    "i2i",
+    "base_model:Comfy-Org/Krea-2",
+    "base_model:adapter:Comfy-Org/Krea-2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457175344,
+  "storage_human": "457 MB",
+  "base_model": "Comfy-Org/Krea-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mickmumpitz — Exploring & developing AI assisted filmmaking workflows ...",
+      "url": "https://mickmumpitz.ai/",
+      "snippet": "Get more from Mickmumpitz on Patreon. Exploring & developing AI assisted filmmaking workflows!. Support Mickmumpitz and get exclusive access to their work."
+    },
+    {
+      "title": "Krea 2 AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/krea2",
+      "snippet": "Generate with Krea 2 on Civitai — Krea AI&#x27;s model for sharp photorealism, strong aesthetics, and dependable prompt adherence. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "New Consistent Character Creator 4.0 is here! I also show you how to ...",
+      "url": "https://x.com/mickmumpitz/status/2078114594447339637",
+      "snippet": "Mickmumpitz (@mickmumpitz). 10 likes 754 views. New Consistent Character Creator 4.0 is here! I also show you how to train Loras for Krea2, Ideogram 4 and Wan 2.2 with these characters. All inside of @ComfyUI and AI Toolkit by @ostrisai Full tutorial below!"
+    },
+    {
+      "title": "UltraReal - Krea2, Klein9b - KR2_V2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2462105/ultrareal-krea2-klein9b",
+      "snippet": "LoRAs for reducing the soft & smooth AI look and adds more texture and details to images. It works especially well for close-ups and medium shots where clothing details and skin texture plays an important role."
+    },
+    {
+      "title": "conradlocke/krea2-identity-edit · Hugging Face",
+      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

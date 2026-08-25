@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Deepak1206/kec-rag-assistant",
+  "slug": "deepak1206-kec-rag-assistant",
+  "author": "Deepak1206",
+  "url": "https://huggingface.co/Deepak1206/kec-rag-assistant",
+  "created_at": "2026-08-25T13:19:46.000Z",
+  "updated_at": "2026-08-25T13:23:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8199,
+  "storage_human": "8199 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RAG Assistant - AI Chat with Multiple Models - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/rag-assistant-ai-chat-wit/lkifiifohmiopgnifmmjnngjhibnemgg",
+      "snippet": "Overview AI assistant for document analysis, web search, and productivity. Features voice transcription and customizable interactions. Transform your browsing experience with RAG Assistant, a comprehensive Chrome extension that brings intelligent AI assistance directly to your browser."
+    },
+    {
+      "title": "Build a RAG Research Assistant: Guide for All Levels",
+      "url": "https://medium.com/@oluwamusiwaolamide/build-a-rag-research-assistant-guide-for-all-levels-cba1db5bc50e",
+      "snippet": "In this tutorial, you&#x27;ll learn how to build a powerful AI research assistant using Retrieval-Augmented Generation (RAG) with GPT-4o…"
+    },
+    {
+      "title": "GitHub - Deepak06-v/Study-Assistant-using-RAG",
+      "url": "https://github.com/Deepak06-v/Study-Assistant-using-RAG",
+      "snippet": "📚 AI Study Assistant (RAG) A production-style Retrieval-Augmented Generation (RAG) application that allows users to upload PDF documents, semantically search their contents, and chat with them using Google&#x27;s Gemini LLM."
+    },
+    {
+      "title": "A Guide to Building a RAG AI Assistant Using DeepSeek-R1",
+      "url": "https://www.superteams.ai/blog/a-guide-to-building-a-rag-ai-assistant-using-deepseek-r1/",
+      "snippet": "Learn to build an AI assistant using DeepSeek-R1&#x27;s reasoning model with an agentic RAG architecture for insightful responses over large knowledge bases."
+    },
+    {
+      "title": "GitHub - RF-D/ai-mem-rag-assistant",
+      "url": "https://github.com/rf-d/ai-mem-rag-assistant",
+      "snippet": "AI Memory is an advanced conversational RAG (Retrieval-Augmented Generation) assistant with persistent memory capabilities. The application leverages multiple large language models (LLMs) to provide accurate, contextually relevant responses by retrieving information from various sources."
+    }
+  ]
+}

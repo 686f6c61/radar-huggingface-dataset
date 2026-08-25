@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jackroseko/whisper-intent-sandbox",
+  "slug": "jackroseko-whisper-intent-sandbox",
+  "author": "jackroseko",
+  "url": "https://huggingface.co/jackroseko/whisper-intent-sandbox",
+  "created_at": "2026-08-25T18:18:25.000Z",
+  "updated_at": "2026-08-25T18:18:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "compact",
+    "critical",
+    "document-ai",
+    "empirical-focused",
+    "endnote",
+    "intro-background-approach-eval-conclusion",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=whisper",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Agentic-Voice-Sandbox/README.md at main · shlokdhanokar ... - GitHub",
+      "url": "https://github.com/shlokdhanokar/Agentic-Voice-Sandbox/blob/main/README.md",
+      "snippet": "A local, voice-controlled AI agent that turns spoken commands into executed tasks. It transcribes audio via Whisper, classifies intents using LLMs, and safely executes sandboxed code generation or file operations. Features dual-audio processing, human-in-the-loop safety, and a premium Streamlit UI."
+    },
+    {
+      "title": "I Built a Voice-Controlled Local AI Agent - Medium",
+      "url": "https://medium.com/@anshuuk/i-built-a-voice-controlled-local-ai-agent-architecture-models-and-everything-that-went-wrong-bb9cc78b897a",
+      "snippet": "I Build a local AI agent that accepts voice commands, understands intent, and executes actions on your machine. No cloud LLM, no OpenAI…"
+    },
+    {
+      "title": "whisper · Ollama",
+      "url": "https://ollama.com/search?q=whisper",
+      "snippet": "dimavz/whisper-tiny Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation."
+    }
+  ]
+}

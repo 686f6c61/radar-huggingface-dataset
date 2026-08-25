@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "annabir5746/hw1-segment",
+  "slug": "annabir5746-hw1-segment",
+  "author": "annabir5746",
+  "url": "https://huggingface.co/annabir5746/hw1-segment",
+  "created_at": "2026-08-25T18:33:20.000Z",
+  "updated_at": "2026-08-25T18:33:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "contrastive",
+    "cosine",
+    "giant",
+    "instancenorm",
+    "low-rank",
+    "mobilevit",
+    "multi-query",
+    "swish",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/",
+      "snippet": "AI Computer Vision Research Segment Anything Model (SAM): a new AI model from Meta AI that can \"cut out\" any object, in any image, with a single click SAM is a promptable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training."
+    },
+    {
+      "title": "annabir5746/paper_001493478_efficient_attention · Hugging Face",
+      "url": "https://huggingface.co/annabir5746/paper_001493478_efficient_attention",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/demo",
+      "snippet": "Meta AI Computer Vision Research This is a research demo and may not be used for any commercial purpose Any images uploaded will be used solely to demonstrate the Segment Anything Model. All images and any data derived from them will be deleted at the end of the session. Any images uploaded should not violate any intellectual property rights or Facebook&#x27;s Community Standards."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=graphic-visual",
+      "snippet": "Explore machine learning models. 51 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: graphic-visual Clear all"
+    }
+  ]
+}

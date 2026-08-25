@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "notmax123/magpie_tts_multilingual_357m-he",
+  "slug": "notmax123-magpie_tts_multilingual_357m-he",
+  "author": "notmax123",
+  "url": "https://huggingface.co/notmax123/magpie_tts_multilingual_357m-he",
+  "created_at": "2026-08-22T21:18:01.000Z",
+  "updated_at": "2026-08-25T16:37:47.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "nemo",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "nemo",
+    "text-to-speech",
+    "tts",
+    "hebrew",
+    "ipa",
+    "magpie",
+    "he",
+    "base_model:nvidia/magpie_tts_multilingual_357m",
+    "base_model:finetune:nvidia/magpie_tts_multilingual_357m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2888726553,
+  "storage_human": "2.9 GB",
+  "base_model": "nvidia/magpie_tts_multilingual_357m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/magpie_tts_multilingual_357m · Hugging Face",
+      "url": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "magpie-tts-multilingual Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/magpie-tts-multilingual",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    },
+    {
+      "title": "README.md · nvidia/magpie_tts_multilingual_357m at main",
+      "url": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "magpie-tts-multilingual Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/magpie-tts-multilingual/modelcard",
+      "snippet": "Overview Speech Synthesis: Magpie TTS Multilingual Model Overview Description: The model is an end-to-end multilingual neural text-to-speech model that generates speech in twelve different languages (English-US, Spanish-US, German-German, French-France, Italian, Vietnamese, Mandarin-Chinese, Hindi, Japanese, Modern Standard Arabic, Brazilian Portuguese, and Korean) by predicting discrete audio ..."
+    },
+    {
+      "title": "magpie_tts_multilingual_357m: Text-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/magpie-tts-multilingual-357m-nvidia",
+      "snippet": "Overview magpie_tts_multilingual_357m is a transformer encoder-decoder text-to-speech model with 357 million parameters created by nvidia. The model generates speech from text across nine languages (English, Spanish, German, French, Vietnamese, Italian, Mandarin, Hindi, and Japanese) using five different speaker voices: Sofia, Aria, Jason, Leo, and John Van Stan. The architecture uses a causal ..."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "DotCheck/vermeer-image-v14_2",
+  "slug": "dotcheck-vermeer-image-v14_2",
+  "author": "DotCheck",
+  "url": "https://huggingface.co/DotCheck/vermeer-image-v14_2",
+  "created_at": "2026-08-25T14:38:05.000Z",
+  "updated_at": "2026-08-25T14:42:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "dotcheck",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dotcheck",
+    "image-classification",
+    "ai-detection",
+    "synthetic-media",
+    "siglip2",
+    "apache-2.0",
+    "vermeer",
+    "en",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:adapter:google/siglip2-base-patch16-224",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3001619356,
+  "storage_human": "3.0 GB",
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "binary AI detection (image pair)",
+      "dataset": "DotCheck image homework (wiki reals vs holdout AI)",
+      "metric": "mean_P_AI_real",
+      "value": 0.025
+    },
+    {
+      "task": "binary AI detection (image pair)",
+      "dataset": "DotCheck image homework (wiki reals vs holdout AI)",
+      "metric": "mean_P_AI_ai",
+      "value": 0.983
+    },
+    {
+      "task": "binary AI detection (image pair)",
+      "dataset": "DotCheck image homework (wiki reals vs holdout AI)",
+      "metric": "balanced_accuracy",
+      "value": 0.9924
+    }
+  ],
+  "sources": [
+    {
+      "title": "DotCheck/vermeer-image-v12 · Hugging Face",
+      "url": "https://huggingface.co/DotCheck/vermeer-image-v12",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DotCheck/dotcheck · Hugging Face",
+      "url": "https://huggingface.co/DotCheck/dotcheck",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DotCheck (DotCheck - Petr Jaroch) - Hugging Face",
+      "url": "https://huggingface.co/DotCheck",
+      "snippet": "DotCheck engines: Vermeer (image), Valla (text), Muybridge (video). Closed weights — score via Check or Pro API. See what&#x27;s real."
+    },
+    {
+      "title": "DotCheck (DotCheck - Petr Jaroch) - Hugging Face",
+      "url": "https://huggingface.co/DotCheck/models",
+      "snippet": "Org profile for DotCheck - Petr Jaroch on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "PDF DotCheck Technical Report — Docs v2026",
+      "url": "https://dotcheck.ai/docs/dotcheck-technical-report-v2026.7.pdf",
+      "snippet": "Vermeer (images, inhouse@12): real average 0.000 · AI average 0.938 · balanced accuracy 0.9950 Valla (text English, inhouse-text@9): human average 0.045 · AI average 0.909 · balanced accuracy 0.980 Valla also for Spanish, Portuguese, French, Italian, German, and Dutch — each head clears the same pass floors as English; results in the ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abdanur23/App.py",
+  "slug": "abdanur23-app-py",
+  "author": "abdanur23",
+  "url": "https://huggingface.co/abdanur23/App.py",
+  "created_at": "2026-08-25T16:36:14.000Z",
+  "updated_at": "2026-08-25T16:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/openai-python: The official Python library for the ...",
+      "url": "https://github.com/openai/openai-python",
+      "snippet": "The official Python library for the OpenAI API. Contribute to openai/openai-python development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - abdullahzunorain/abdullahzunorain.github.io: Personal ...",
+      "url": "https://github.com/abdullahzunorain/abdullahzunorain.github.io",
+      "snippet": "I am an AI & Embedded Systems Engineer passionate about building intelligent, real-world applications that bridge software and hardware. I specialize in Python, ML/DL frameworks, computer vision, NLP, and interactive UI development with Streamlit and Gradio."
+    },
+    {
+      "title": "AI With Python Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/python-ai/",
+      "snippet": "This AI with Python tutorial covers the fundamental and advanced artificial intelligence (AI) concepts using Python. Whether we&#x27;re a complete beginner or an experienced professional this tutorial will help us to learn AI step by step."
+    },
+    {
+      "title": "Building Production-Ready AI Apps with Python: Complete Guide",
+      "url": "https://medium.com/aiguys/building-production-ready-ai-apps-with-python-complete-guide-a0e8d9002e83",
+      "snippet": "Learn to build scalable AI applications using Python, DeepSeek, and LangGraph. Step-by-step tutorial with code examples and deployment strategies. Building Production-Ready AI Applications with ..."
+    }
+  ]
+}

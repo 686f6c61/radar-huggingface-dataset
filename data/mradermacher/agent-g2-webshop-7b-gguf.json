@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Agent-G2-webshop-7b-GGUF",
+  "slug": "mradermacher-agent-g2-webshop-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Agent-G2-webshop-7b-GGUF",
+  "created_at": "2026-08-25T14:48:11.000Z",
+  "updated_at": "2026-08-25T15:17:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agents",
+    "agentic-reinforcement-learning",
+    "reinforcement-learning",
+    "webshop",
+    "grpo",
+    "qwen2.5",
+    "en",
+    "dataset:xiamoent/Agent-G2-ALFWorld-Webshop-sft-data",
+    "base_model:xiamoent/Agent-G2-webshop-7b",
+    "base_model:quantized:xiamoent/Agent-G2-webshop-7b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146899200,
+  "storage_human": "68.1 GB",
+  "base_model": "xiamoent/Agent-G2-webshop-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Agent-G2-webshop-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Agent-G2-webshop-1.5b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Intelligence-Agent-7B-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/Intelligence-Agent-7B-GGUF",
+      "snippet": "Explore Intelligence-Agent-7B-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Agent-G2/examples/ppo_trainer/run_webshop.sh at main - GitHub",
+      "url": "https://github.com/ZJU-REAL/Agent-G2/blob/main/examples/ppo_trainer/run_webshop.sh",
+      "snippet": "main Agent-G2 / examples / ppo_trainer run_webshop.sh Code Blame 73 lines (68 loc) · 3.13 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 ..."
+    },
+    {
+      "title": "Agent Os 7b Merged Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/agent-os-7b-merged-gguf",
+      "snippet": "by mradermacher hf-model--mradermacher--agent-os-7b-merged-gguf Nexus Index 31.5Top 100% S: Semantic50 A: Authority0 P: Popularity14 R: Recency93 Q: Quality30 Tech Context 7Params 4.096KCtx Vital Performance 233 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 31.5 FNI Score 7B Params 4k Context 233 Downloads 8G GPU ~7GB Est. VRAM ..."
+    }
+  ]
+}

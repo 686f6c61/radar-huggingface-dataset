@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Owiinoo/flashmind-arb-v15d",
+  "slug": "owiinoo-flashmind-arb-v15d",
+  "author": "Owiinoo",
+  "url": "https://huggingface.co/Owiinoo/flashmind-arb-v15d",
+  "created_at": "2026-08-25T17:26:12.000Z",
+  "updated_at": "2026-08-25T17:33:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4723132,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlashMind DeFi Arbitrage Bot - a Hugging Face Space by Owiinoo",
+      "url": "https://huggingface.co/spaces/Owiinoo/flashmind-defi-arb",
+      "snippet": "This web app lets you view key statistics and visual charts of a DeFi arbitrage reinforcement‑learning bot, such as equity curves, reward distribution, and strategy usage. You can also click a butt..."
+    },
+    {
+      "title": "Owiinoo (Owen King) - Hugging Face",
+      "url": "https://huggingface.co/Owiinoo",
+      "snippet": "FlashMind DeFi Arbitrage Bot 🧠 Explore DeFi arbitrage bot performance with interactive charts Owiinoo about 1 hour ago"
+    },
+    {
+      "title": "FlashMind | AI-Powered Second Brain & Spaced Repetition App",
+      "url": "https://flash-mind.app/",
+      "snippet": "AI-powered spaced repetition & second brain. Turn notes, PDFs, images & audio into lasting knowledge with science-backed learning. Free to start."
+    },
+    {
+      "title": "GitHub - masoodanwar12/Flashmind-Ai",
+      "url": "https://github.com/masoodanwar12/Flashmind-Ai",
+      "snippet": "🧠 FlashMind — AI Flashcard Study App Study smarter, not harder. Powered by Groq AI + LangChain."
+    },
+    {
+      "title": "FlashMind - Master Learning with Spaced Repetition",
+      "url": "https://www.flash-mind.tech/",
+      "snippet": "Learn efficiently with AI-powered flashcards and spaced repetition. Create custom decks, track progress, and master any subject faster."
+    }
+  ]
+}

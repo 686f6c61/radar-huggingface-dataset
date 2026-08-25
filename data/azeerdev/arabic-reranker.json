@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AzeerDev/arabic-reranker",
+  "slug": "azeerdev-arabic-reranker",
+  "author": "AzeerDev",
+  "url": "https://huggingface.co/AzeerDev/arabic-reranker",
+  "created_at": "2026-08-25T12:36:33.000Z",
+  "updated_at": "2026-08-25T12:36:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "reranking",
+    "arabic-nlp",
+    "nlp",
+    "text-ranking",
+    "ar",
+    "dataset:oddadmix/arabic-triplets",
+    "base_model:Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2",
+    "base_model:finetune:Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135194113,
+  "parameters_human": "135.2M",
+  "storage_bytes": 1622395744,
+  "storage_human": "1.6 GB",
+  "base_model": "Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omartificial-Intelligence-Space/ARA-Reranker-V1 · Hugging Face",
+      "url": "https://huggingface.co/Omartificial-Intelligence-Space/ARA-Reranker-V1",
+      "snippet": "This model is designed specifically for Arabic language reranking tasks, optimized to handle queries and passages with precision. Unlike embedding models, which generate vector representations, this reranker directly evaluates the similarity between a question and a document, outputting a relevance score."
+    },
+    {
+      "title": "oddadmix/arabic-reranker-v1 · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/arabic-reranker-v1",
+      "snippet": "The model is designed to perform reranking tasks by scoring and ordering text options based on their relevance to a given query, specifically optimized for Arabic text."
+    },
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    },
+    {
+      "title": "#arabic #reranker #arabic #namaa #reranker #arabicnlp #anlp #nlp # ...",
+      "url": "https://pe.linkedin.com/posts/omarnj_arabic-reranker-arabic-activity-7267815437009100800-0utV",
+      "snippet": "🌟 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝗶𝗻𝗴 𝗢𝘂𝗿 𝗡𝗲𝘄 𝗔𝗿𝗮𝗯𝗶𝗰 𝗥𝗲𝗿𝗮𝗻𝗸𝗲𝗿: [ARM | Arabic Reranker Model V1] on Hugging Face [https://lnkd.in/dq3-739b] We are thrilled to announce the launch of our new #Arabic -specific #reranker, designed to redefine how search engines understand and ..."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/rerankers: A lightweight, low-dependency, unified ...",
+      "url": "https://github.com/AnswerDotAI/rerankers",
+      "snippet": "A lightweight, low-dependency, unified API to use all common reranking and cross-encoder models. - AnswerDotAI/rerankers"
+    }
+  ]
+}

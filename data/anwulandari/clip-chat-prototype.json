@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Anwulandari/clip-chat-prototype",
+  "slug": "anwulandari-clip-chat-prototype",
+  "author": "Anwulandari",
+  "url": "https://huggingface.co/Anwulandari/clip-chat-prototype",
+  "created_at": "2026-08-25T16:10:45.000Z",
+  "updated_at": "2026-08-25T16:10:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "author-year",
+    "docx",
+    "embodied-ai",
+    "empirical-focused",
+    "long-detailed",
+    "neutral",
+    "passive",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "CLIP: Connecting text and images - OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    },
+    {
+      "title": "Proto-CLIP: Vision-Language Prototypical Network for Few-Shot Learning",
+      "url": "https://irvlutd.github.io/Proto-CLIP/",
+      "snippet": "Proto-CLIP is a vision-language prototypical network for few-shot learning. It freezes CLIP&#x27;s image and text encoders and learns aligned image and text prototypes via memory banks and an adapter — beating unimodal prototypical networks and zero-shot CLIP on standard few-shot benchmarks and powering user-command robot grasping on FewSOL (198 classes). Published at IEEE/RSJ IROS 2024."
+    },
+    {
+      "title": "[2307.03073] Proto-CLIP: Vision-Language Prototypical Network for Few ...",
+      "url": "https://arxiv.org/abs/2307.03073",
+      "snippet": "We propose a novel framework for few-shot learning by leveraging large-scale vision-language models such as CLIP. Motivated by unimodal prototypical networks for few-shot learning, we introduce Proto-CLIP which utilizes image prototypes and text prototypes for few-shot learning. Specifically, Proto-CLIP adapts the image and text encoder embeddings from CLIP in a joint fashion using few-shot ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2307.03073",
+      "snippet": "arXiv.org e-Print archive"
+    }
+  ]
+}

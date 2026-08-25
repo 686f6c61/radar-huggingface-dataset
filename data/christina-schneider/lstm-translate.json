@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "christina-schneider/lstm-translate",
+  "slug": "christina-schneider-lstm-translate",
+  "author": "christina-schneider",
+  "url": "https://huggingface.co/christina-schneider/lstm-translate",
+  "created_at": "2026-08-25T16:14:57.000Z",
+  "updated_at": "2026-08-25T16:15:04.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "constant-warmup",
+    "dino",
+    "gelu",
+    "lion",
+    "matching",
+    "scalenorm",
+    "standard",
+    "tucker",
+    "xavier",
+    "xlarge",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Language Translation Using LSTM | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-99-2832-3_77",
+      "snippet": "The ability of neural machine translation achieves notable advancements over archaic methods, including Rule-based and Statistical Machine-based Translation. Neural Machine-based Translation models are examined for the Hindi-English language pair based on Long Short-Term Memory Model (LSTM), which incorporates an attention-based approach."
+    },
+    {
+      "title": "GitHub - likarajo/language_translation: Deep Learning LSTM language ...",
+      "url": "https://github.com/likarajo/language_translation",
+      "snippet": "Deep Learning LSTM language translation model built with Keras using Neural Machine Translation with seq2seq encoder-decoder architecture - likarajo/language_translation"
+    },
+    {
+      "title": "Christina Schneider - -- | LinkedIn",
+      "url": "https://www.linkedin.com/in/christina-schneider-6b9a3b2a1",
+      "snippet": "-- · Christina Schneider is a PhD researcher studying organizational AI adoption and workforce upskilling in small and mid-sized businesses and organizations. Her work explores how professionals ..."
+    },
+    {
+      "title": "Modeling a Language Translation System using LSTM for Mobile ... - Fritz ai",
+      "url": "https://fritz.ai/modeling-a-language-translation-system-using-lstm-for-mobile-devices-or-web/",
+      "snippet": "Modeling a Language Translation System using LSTM for Mobile Devices or Web Language Translation on your Mobile Device If you subscribe to a service from a link on this page, we may earn a commission."
+    },
+    {
+      "title": "Translation · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/translation",
+      "snippet": "Translation converts a sequence of text from one language to another. It is one of several tasks you can formulate as a sequence-to-sequence problem, a powerful framework for returning some output from an input, like translation or summarization."
+    }
+  ]
+}

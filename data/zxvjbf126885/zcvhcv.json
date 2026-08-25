@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zxvjbf126885/zcvhcv",
+  "slug": "zxvjbf126885-zcvhcv",
+  "author": "zxvjbf126885",
+  "url": "https://huggingface.co/zxvjbf126885/zcvhcv",
+  "created_at": "2026-08-25T10:45:58.000Z",
+  "updated_at": "2026-08-25T10:45:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "AI Model Wiki — Your Complete Guide to AI Models",
+      "url": "https://aimodelwiki.com/",
+      "snippet": "Your Ultimate Guide to 210+ AI Models Explore LLMs, image generators, audio & video tools, and multimodal AI — for beginners, students, and businesses."
+    }
+  ]
+}

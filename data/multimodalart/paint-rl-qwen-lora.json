@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "multimodalart/paint-rl-qwen-lora",
+  "slug": "multimodalart-paint-rl-qwen-lora",
+  "author": "multimodalart",
+  "url": "https://huggingface.co/multimodalart/paint-rl-qwen-lora",
+  "created_at": "2026-08-25T07:19:30.000Z",
+  "updated_at": "2026-08-25T18:12:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trackio:https://multimodalart-paint-rl-trackio.hf.space?project=huggingface&runs=multimodalart-1787671460&sidebar=collapsed",
+    "trl",
+    "grpo",
+    "hf_jobs",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 465205136,
+  "storage_human": "465 MB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The #1 AI Art Generator - 2026 Best AI Art Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=nwebGVSZlk8EVQks6CqBkfIbINRxwM7maZClilhGHz88xOqgBSC54kaSAWwPuZPYoVwfVo0mxuWfOx48n_AMdjbLKZwmvzVGuYmTYi_6Rgzm1njB0dIwUX_3LF6l7_3_dEUmCWmOrzgPU1fXe177hQaQQuPfNefpK3%2Dg5zA82CE.25OoHlc8O7_1lHG50rh4VQ&rut=7801d41c69d3e014fd256f3798a2d3d6e3ee739d9e3435a4bd1fb8804dd0d33d&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8KnjDcuac6DBnaid%2DLR1hVDVUCUwLQZdwz5vZaM6tAd5U1EFlxnteENrPhYheQkRwbkkL6rCxBgQAOPTGgr1HvuvoxqgHgn7J%2DML%2DyxvSKgW3Pk18LaXNCc4Zg_kvhp_2I7z2DSddpfpRRVClCyTCg_5259VnyNvtxDqf6bg8FhuVMTrRR89s3RYqJe_qbcw5AORVcDAHBXcVHeVsLE%2DQ4jN7cbQ%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZpbWFnZS12aWRlby1nZW5lcmF0b3IlM2Ztb2RlJTNkaW1hZ2UlMjZtb2RlbEdyb3VwSUQlM2QxMTclMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNDAxOTUzNjA3NzE2MTklMjZ1dG1fdGVybSUzZEFJJTI1MjBhcnQlMjUyMGdlbmVyYXRvciUyNmtleXdvcmQlM2RBSSUyNTIwYXJ0JTI1MjBnZW5lcmF0b3IlMjZhZCUzZCUyNm1hdGNodHlwZSUzZHAlMjZkZXZpY2UlM2RjJTI2bXNjbGtpZCUzZGUzMjllZGJjNmQwNzExYjA1ZDUzODczMWIxMTQ2MGM5JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkR2VuQUlfdENQQSUyNnV0bV90ZXJtJTNkQUklMjUyMGFydCUyNTIwZ2VuZXJhdG9yJTI2dXRtX2NvbnRlbnQlM2RBcnRfR2VuZXJhdG9yXyUyNTVCR2VuQUlfSW1hZ2UlMjU1RA%26rlid%3De329edbc6d0711b05d538731b11460c9&vqd=4-307899663435758822316082180750176447803&iurl=%7B1%7DIG%3D3AC58C7B75C84093A52688B53C5AFAA2%26CID%3D21A461F648626923157376364944687F%26ID%3DDevEx%2C5036.1",
+      "snippet": "Generate Visually Stunning AI Art With Artlist&#x27;s Art Generator, Built for Your Workflow. Create High-Quality AI Art and Videos With Artlist&#x27;s Art Generator, Designed for Creators"
+    },
+    {
+      "title": "multimodalart/ms-paint-drawing-flux · Hugging Face",
+      "url": "https://huggingface.co/multimodalart/ms-paint-drawing-flux",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Image LoRA Explorer - a Hugging Face Space by multimodalart",
+      "url": "https://huggingface.co/spaces/multimodalart/Qwen-Image-LoRA-Explorer",
+      "snippet": "This application allows users to generate images by selecting a LoRA model and entering a prompt. Users can choose from predefined LoRA styles or add their own custom LoRA models."
+    },
+    {
+      "title": "Fine-tuning Multi-modal LLMs with ART: - arXiv.org",
+      "url": "https://arxiv.org/html/2606.11854v1",
+      "snippet": "Our fine-tuning adapts the model by optimizing a single task-specific ART input image routed through the standard vision pathway. The model remains completely frozen, and fine-tuned prompts are treated by the serving infrastructure as plain multi-modal requests."
+    },
+    {
+      "title": "ms-paint-drawing-flux | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/ms-paint-drawing-flux/",
+      "snippet": "ms-paint-drawing-flux is a specialized LoRA model designed to generate images that mimic the distinctive aesthetic of Microsoft Paint drawings. Originally migrated from CivitAI, this model intentionally creates \"low-quality\" artwork that captures the nostalgic charm and quirky characteristics of MS Paint-style digital art."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nlpguy/Qwen3.8-27B-Kimiko-2",
+  "slug": "nlpguy-qwen3-8-27b-kimiko-2",
+  "author": "nlpguy",
+  "url": "https://huggingface.co/nlpguy/Qwen3.8-27B-Kimiko-2",
+  "created_at": "2026-08-25T17:05:28.000Z",
+  "updated_at": "2026-08-25T17:09:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "base_model:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:merge:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:beyoru/Kiwen1.1-27B",
+    "base_model:merge:beyoru/Kiwen1.1-27B",
+    "base_model:nlpguy/Qwen3.8-27B-Fimi-4",
+    "base_model:merge:nlpguy/Qwen3.8-27B-Fimi-4",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596117,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B, TeichAI/Qwen3.8-27B-Fable-Distill, beyoru/Kiwen1.1-27B, nlpguy/Qwen3.8-27B-Fimi-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "nlpguy/Qwen3.8-27B-Fimi-3 · Hugging Face",
+      "url": "https://huggingface.co/nlpguy/Qwen3.8-27B-Fimi-3",
+      "snippet": "nlpguy / Qwen3.8-27B-Fimi-3 like 1 Image-Text-to-Text Transformers Safetensors qwen3_5 mergekit Merge conversational arxiv:2601.13572 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    }
+  ]
+}

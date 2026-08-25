@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "daguoagi/Huihui-Qwen3.8-27B-abliterated-MLX-6bit",
+  "slug": "daguoagi-huihui-qwen3-8-27b-abliterated-mlx-6bit",
+  "author": "daguoagi",
+  "url": "https://huggingface.co/daguoagi/Huihui-Qwen3.8-27B-abliterated-MLX-6bit",
+  "created_at": "2026-08-25T14:20:32.000Z",
+  "updated_at": "2026-08-25T14:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3",
+    "qwen3.8",
+    "mlx-vlm",
+    "6-bit",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6346296560,
+  "parameters_human": "6.35B",
+  "storage_bytes": 22797869294,
+  "storage_human": "22.8 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen3-8B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-8B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "huihui.ai on X: \"Qwen3.8-27B-abliterated-IQ3_S &#x27;s programming test ...",
+      "url": "https://x.com/support_huihui/status/2091631664363663405",
+      "snippet": "Qwen3.8-27B-abliterated-IQ3_S &#x27;s programming test achieved 12,272 tokens in a single conversation, which is still quite impressive."
+    }
+  ]
+}

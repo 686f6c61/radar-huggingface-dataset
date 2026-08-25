@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Chaenn/act_policy_so101_cube_multitask_sim_ft_real_0826",
+  "slug": "chaenn-act_policy_so101_cube_multitask_sim_ft_real_0826",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_sim_ft_real_0826",
+  "created_at": "2026-08-25T19:57:49.000Z",
+  "updated_at": "2026-08-25T19:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Chaenn/so101_cube_multitask_hil_0724_merged_fixed",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaenn/act_policy_so101_cube_multitask_real_sim_0824 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_real_sim_0824",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Chaenn/act_policy_so101_cube_multitask_0710 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_multitask_0710",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "GitHub - isaac-sim/Sim-to-Real-SO-101-Workshop: This code supports ...",
+      "url": "https://github.com/isaac-sim/Sim-to-Real-SO-101-Workshop",
+      "snippet": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac Welcome to this workshop on sim-to-real transfer for the SO-101 robot! This repository contains the assets and code to accompany this learning content. The rest of this README will help you setup the environment and ensure everything is installed correctly."
+    },
+    {
+      "title": "so101-act-policy/README.md at main - GitHub",
+      "url": "https://github.com/Jaskaran3010/so101-act-policy/blob/main/README.md",
+      "snippet": "This project demonstrates the complete robotics learning pipeline from calibration to real-world deployment. The SO-101 follower arm learns to recognize, grasp, and place objects using an ACT policy trained on 233 demonstration episodes collected via teleoperation."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

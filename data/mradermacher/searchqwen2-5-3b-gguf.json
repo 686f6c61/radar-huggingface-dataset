@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SearchQwen2.5-3B-GGUF",
+  "slug": "mradermacher-searchqwen2-5-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SearchQwen2.5-3B-GGUF",
+  "created_at": "2026-08-25T15:14:25.000Z",
+  "updated_at": "2026-08-25T15:14:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/ChatQwen2.5-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ChatQwen2.5-3B-GGUF",
+      "snippet": "mradermacher / ChatQwen2.5-3B-GGUF like 0 Transformers GGUF English text-generation-inference unsloth qwen2 trl sft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen-2.5-3B-Teacher-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-2.5-3B-Teacher-GGUF",
+      "snippet": "mradermacher / Qwen-2.5-3B-Teacher-GGUF like 0 Transformers GGUF English conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-3B-Instruct-GGUF",
+      "snippet": "Qwen2.5-3B-Instruct-GGUF Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to ..."
+    },
+    {
+      "title": "mradermacher / antigravity-qwen2.5-3b-v1-GGUF",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/antigravity-qwen2.5-3b-v1-GGUF/c220f4983ec3719365b7a1d1429c9c67be63ddb9/overview",
+      "snippet": "Discover potential threats in the mradermacher / antigravity-qwen2.5-3b-v1-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

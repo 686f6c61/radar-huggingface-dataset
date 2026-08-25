@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Flipflopflopflip/Z-Image-Turbo",
+  "slug": "flipflopflopflip-z-image-turbo",
+  "author": "Flipflopflopflip",
+  "url": "https://huggingface.co/Flipflopflopflip/Z-Image-Turbo",
+  "created_at": "2026-08-25T13:56:12.000Z",
+  "updated_at": "2026-08-25T13:56:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "arxiv:2511.22699",
+    "arxiv:2511.22677",
+    "arxiv:2511.13649",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 53980522390,
+  "storage_human": "54.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "mrfakename/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/mrfakename/Z-Image-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-Image Turbo | Sub-Second AI Image Generation Model",
+      "url": "https://morphic.com/resources/models/z-image-turbo",
+      "snippet": "Use the Z-Image Turbo model for sub-second AI image generation. Explore dozens of directions in the time other models take to render one single image."
+    },
+    {
+      "title": "Z-Image Turbo - Lightning-Fast AI Image Generation | fal",
+      "url": "https://fal.ai/z-image-turbo",
+      "snippet": "Z-Image TurboGenerate Images at the Speed of Thought Generate high-quality images in under a second with Z-Image Turbo on fal.ai. 6B parameters, up to 4MP resolution, LoRA and ControlNet support via a fast serverless API."
+    },
+    {
+      "title": "Z-Image Turbo: Lightning Fast Text-to-Image AI Generator | fal",
+      "url": "https://fal.ai/models/fal-ai/z-image/turbo",
+      "snippet": "Create stunning images in seconds with Z-Image Turbo, Tongyi-MAI&#x27;s ultra-fast 6B parameter text-to-image model. Configurable 1-8 step inference, batch up to 4 images, commercial rights included. Perfect for rapid prototyping and high-volume asset generation at just $0.005/megapixel."
+    }
+  ]
+}

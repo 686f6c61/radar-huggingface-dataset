@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JCorcho/10Eros-Max-TURBO-hybrid-beta3-NVFP4",
+  "slug": "jcorcho-10eros-max-turbo-hybrid-beta3-nvfp4",
+  "author": "JCorcho",
+  "url": "https://huggingface.co/JCorcho/10Eros-Max-TURBO-hybrid-beta3-NVFP4",
+  "created_at": "2026-08-25T17:14:50.000Z",
+  "updated_at": "2026-08-25T17:57:06.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "minimax-h3",
+    "image-to-video",
+    "text-to-video",
+    "audio-video-generation",
+    "nvfp4",
+    "blackwell",
+    "quantization",
+    "nsfw",
+    "not-for-all-audiences",
+    "base_model:TenStrip/10Eros-Max",
+    "base_model:quantized:TenStrip/10Eros-Max",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12531404184,
+  "storage_human": "12.5 GB",
+  "base_model": "TenStrip/10Eros-Max",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10Eros_Max_h3_TURBO-hybrid_beta3.safetensors · TenStrip/10Eros-Max at main",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max/blob/main/10Eros_Max_h3_TURBO-hybrid_beta3.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TenStrip/10Eros-Max · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "This model has near-0 anatomy depiction currently. It fully understands the concepts, but my new merge method is a 3 stage comparison shape-level reform lever that mostly aligns to the base 22b model instead of the usual merging methods."
+    },
+    {
+      "title": "awesome-minimax-H3/README.md at main · wildminder/awesome-minimax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3/blob/main/README.md",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    },
+    {
+      "title": "10eros_Max_Int8_ref2va_beta2 - Tenstrip (ref2va) int8 | Hailuo H3 by ...",
+      "url": "https://civitai.red/models/2868392/10erosmaxint8ref2vabeta2?modelVersionId=3245032",
+      "snippet": "10Eros_Max beta2 × MiniMax H3 ref2va — INT8 ConvRot An int8_convrot quantization of TenStrip&#x27;s 10Eros_Max work on the MiniMax H3 ref2va (reference-to-video-audio) variant, at less than a third of the bf16 size."
+    }
+  ]
+}

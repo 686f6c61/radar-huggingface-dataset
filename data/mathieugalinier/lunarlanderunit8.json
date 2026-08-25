@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MathieuGALINIER/lunarlanderunit8",
+  "slug": "mathieugalinier-lunarlanderunit8",
+  "author": "MathieuGALINIER",
+  "url": "https://huggingface.co/MathieuGALINIER/lunarlanderunit8",
+  "created_at": "2026-08-25T14:26:16.000Z",
+  "updated_at": "2026-08-25T14:26:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MathieuGALINIER/ppo-LunarLander-2 · Hugging Face",
+      "url": "https://huggingface.co/MathieuGALINIER/ppo-LunarLander-2",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "so7en/Lunar_Lander_unit8 · Hugging Face",
+      "url": "https://huggingface.co/so7en/Lunar_Lander_unit8",
+      "snippet": "Lunar_Lander_unit8 like 0 Model card Files Files and versions Community No model card Downloads last month -"
+    },
+    {
+      "title": "unit1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/JonathanRaines/hugging-face-reinforcement-learning/blob/main/unit1.ipynb/",
+      "snippet": "A model card (README.md file) which gives a description of the model Under the hood, the Hub uses git-based repositories (don&#x27;t worry if you don&#x27;t know what git is), which means you can update the model with new versions as you experiment and improve your agent."
+    },
+    {
+      "title": "GitHub - juliankappler/lunar-lander: Implementation of deep ...",
+      "url": "https://github.com/juliankappler/lunar-lander",
+      "snippet": "In this repository we implement an agent that is trained to play the game lunar lander using i) an actor-critic algorithm, and ii) a (double) deep Q-learning algorithm. Here is a video of a trained agent playing the game: video.mp4 We use the lunar lander implementation from gymnasium. For the implementation of the actor-critic algorithm we loosely follow Ref. [1]. While for the implementation ..."
+    },
+    {
+      "title": "GitHub - Aishee06/LunarLander_AI",
+      "url": "https://github.com/Aishee06/LunarLander_AI",
+      "snippet": "Contribute to Aishee06/LunarLander_AI development by creating an account on GitHub."
+    }
+  ]
+}

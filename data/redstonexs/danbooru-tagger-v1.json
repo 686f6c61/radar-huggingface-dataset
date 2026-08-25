@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Redstonexs/danbooru-tagger-v1",
+  "slug": "redstonexs-danbooru-tagger-v1",
+  "author": "Redstonexs",
+  "url": "https://huggingface.co/Redstonexs/danbooru-tagger-v1",
+  "created_at": "2026-08-25T17:07:40.000Z",
+  "updated_at": "2026-08-25T17:50:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "danbooru",
+    "tagger",
+    "multi-label",
+    "base_model:SmilingWolf/wd-eva02-large-tagger-v3",
+    "base_model:quantized:SmilingWolf/wd-eva02-large-tagger-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1977880546,
+  "storage_human": "2.0 GB",
+  "base_model": "SmilingWolf/wd-eva02-large-tagger-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - danbooru/autotagger: Danbooru automatic image classifier",
+      "url": "https://github.com/danbooru/autotagger",
+      "snippet": "Danbooru automatic image classifier. Contribute to danbooru/autotagger development by creating an account on GitHub."
+    },
+    {
+      "title": "The Danbooru Tools Directory for AI Art (2026) | Civitai",
+      "url": "https://civitai.red/articles/27794/the-danbooru-tools-directory-for-ai-art-2026",
+      "snippet": "If you&#x27;re working with Illustrious, NoobAI-XL, Pony, or any Danbooru-trained model, you know the pain: finding the right tag, building a clean prompt, figuring out what an artist style actually looks like, or reverse-tagging an image you found somewhere. There&#x27;s a whole ecosystem of tools built to solve these problems — but they&#x27;re scattered across Vercel apps, GitHub repos, HuggingFace ..."
+    },
+    {
+      "title": "danbooru-tags-transformer-v2-with-wd-tagger - Hugging Face",
+      "url": "https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger",
+      "snippet": "Upload an image (or type existing tags) and the app will create a full set of descriptive tags and prompts suitable for anime‑style AI art. You can choose the output format (Danbooru or e621) and c..."
+    },
+    {
+      "title": "dbtagger · Danbooru tag explorer",
+      "url": "https://dbtagger.com/",
+      "snippet": "Danbooru prompt intelligence Find the tags your model understands. Many anime image models and checkpoints learned from captions built with Danbooru tags. dbtagger turns tag co-occurrence into a practical map: discover related concepts and artists, use vocabulary from your model&#x27;s training era, then copy a prompt-ready list."
+    },
+    {
+      "title": "GitHub - anthony-dipofi/danbooru-tagger: Pytorch code for tagging ...",
+      "url": "https://github.com/anthony-dipofi/danbooru-tagger",
+      "snippet": "Pytorch code for tagging dabooru images Includes a pretrained model for tagging danbooru images. Trained on the Danbooru2019 512x512 SFW subset to predict the 6000 most common &#x27;Category 0&#x27; tags. Achieves an F2 score of 0.61 on hold out test set, with a threshold of 7.9. For more performance information see the test_tagger.ipynb notebook."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/logical-fallacy-syn-news-verbs-dict-lora",
+  "slug": "layaiyer-logical-fallacy-syn-news-verbs-dict-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/logical-fallacy-syn-news-verbs-dict-lora",
+  "created_at": "2026-08-25T18:40:26.000Z",
+  "updated_at": "2026-08-25T18:40:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44596993,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/logical-fallacy-syn-combined-adjectives-vanilla-lora · Hugging ...",
+      "url": "https://huggingface.co/layaiyer/logical-fallacy-syn-combined-adjectives-vanilla-lora",
+      "snippet": "Instructions to use layaiyer/logical-fallacy-syn-combined-adjectives-vanilla-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use layaiyer/logical-fallacy-syn-combined-adjectives-vanilla-lora with PEFT:"
+    },
+    {
+      "title": "layaiyer/logical-fallacy-syn-arxiv-nouns-vanilla · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/logical-fallacy-syn-arxiv-nouns-vanilla",
+      "snippet": "layaiyer / logical-fallacy-syn-arxiv-nouns-vanilla like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 10 Safetensors Model size 8B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Fallacy Files Weblog Archive: August, 2026",
+      "url": "https://www.fallacyfiles.org/",
+      "snippet": "Describes and gives examples of logical fallacies from the media and everyday life, applying logic to controversial issues in order to improve critical thinking skills."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "GitHub - causalNLP/logical-fallacy: Repo for the paper \"Detecting ...",
+      "url": "https://github.com/causalNLP/logical-fallacy",
+      "snippet": "Repo for the paper \"Detecting Logical Fallacies: From Quiz to Climate Change News\" (2021) - causalNLP/logical-fallacy"
+    }
+  ]
+}

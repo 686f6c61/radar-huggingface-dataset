@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "ajaxdavis/donto-qwen3.8-27b-predicate-extractor",
+  "slug": "ajaxdavis-donto-qwen3-8-27b-predicate-extractor",
+  "author": "ajaxdavis",
+  "url": "https://huggingface.co/ajaxdavis/donto-qwen3.8-27b-predicate-extractor",
+  "created_at": "2026-08-25T14:15:56.000Z",
+  "updated_at": "2026-08-25T14:24:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.8",
+    "qwen3_5",
+    "lora",
+    "qlora",
+    "information-extraction",
+    "relation-extraction",
+    "knowledge-graph",
+    "structured-output",
+    "tool-calling",
+    "donto",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:ajaxdavis/donto-qwen3.8-27b-predicate-extraction-data",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3291808914,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Structured predicate extraction",
+      "dataset": "Graph-First Gold 100",
+      "metric": "Exact fact recall",
+      "value": 0.8920944173847883
+    },
+    {
+      "task": "Structured predicate extraction",
+      "dataset": "Graph-First Gold 100",
+      "metric": "Exact fact precision",
+      "value": 0.8944402704733283
+    },
+    {
+      "task": "Structured predicate extraction",
+      "dataset": "Graph-First Gold 100",
+      "metric": "Structured tool-call success",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    }
+  ]
+}

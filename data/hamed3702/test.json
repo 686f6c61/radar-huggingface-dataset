@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Hamed3702/test",
+  "slug": "hamed3702-test",
+  "author": "Hamed3702",
+  "url": "https://huggingface.co/Hamed3702/test",
+  "created_at": "2026-08-25T12:12:12.000Z",
+  "updated_at": "2026-08-25T12:12:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "https://hyper3d.ai/",
+      "snippet": "Free to Start Test the platform with free credits—no subscription required. Our system uses AI model generation to analyze visual data and build detailed 3D geometry."
+    },
+    {
+      "title": "OpenAI says AI model hacked another company&#x27;s systems during internal test",
+      "url": "https://www.foxbusiness.com/technology/openai-says-ai-model-hacked-another-companys-systems-during-internal-test",
+      "snippet": "One of OpenAI&#x27;s models hacked into another company&#x27;s systems during internal testing in what it called an \"unprecedented cyber incident,\" according to the company."
+    },
+    {
+      "title": "AI Model Test Prompts — Reproducible Benchmark Tasks",
+      "url": "https://aimodelbenchmarks.com/prompts",
+      "snippet": "Open-source test prompts for evaluating LLMs on coding, reasoning, and tool-use tasks. Use these to benchmark models yourself. Updated March 2026."
+    }
+  ]
+}

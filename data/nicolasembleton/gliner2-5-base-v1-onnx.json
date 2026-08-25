@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nicolasembleton/gliner2.5-base-v1-onnx",
+  "slug": "nicolasembleton-gliner2-5-base-v1-onnx",
+  "author": "nicolasembleton",
+  "url": "https://huggingface.co/nicolasembleton/gliner2.5-base-v1-onnx",
+  "created_at": "2026-08-25T17:36:11.000Z",
+  "updated_at": "2026-08-25T17:36:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gliner2",
+    "boundary",
+    "webgpu",
+    "token-classification",
+    "base_model:fastino/gliner2.5-base-v1",
+    "base_model:quantized:fastino/gliner2.5-base-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 738829883,
+  "storage_human": "739 MB",
+  "base_model": "fastino/gliner2.5-base-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rmallof/gliner2: Unified Schema-Based Information Extraction",
+      "url": "https://github.com/rmallof/gliner2",
+      "snippet": "GLiNER2: Unified Schema-Based Information Extraction and Text Classification Extract entities, classify text, parse structured data, and extract relations—all in one efficient model."
+    },
+    {
+      "title": "GLiNER2.5 Base V1 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/gliner2-5-base-v1/",
+      "snippet": "GLiNER2.5 Base is a 0.2B parameter span free information extraction model that predicts entity boundaries directly instead of enumerating candidate spans, enabling linear scaling with document length. It performs named entity recognition, relation extraction, and constrained classification, scoring an average F1 of 54.87 across 16 benchmarks."
+    },
+    {
+      "title": "model.onnx · lion-ai/gliner2-base-v1-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/lion-ai/gliner2-base-v1-onnx/blob/main/model.onnx",
+      "snippet": "Instructions to use lion-ai/gliner2-base-v1-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries GLiNER How to use lion-ai/gliner2-base-v1-onnx with GLiNER:"
+    },
+    {
+      "title": "lion-ai/gliner2-base-v1-onnx · Hugging Face",
+      "url": "https://huggingface.co/lion-ai/gliner2-base-v1-onnx",
+      "snippet": "gliner2-base-v1-onnx ONNX export of fastino/gliner2-base-v1 for zero-shot Named Entity Recognition. GLiNER2 can recognise any entity type at inference time — no fine-tuning required. Simply pass a list of labels alongside your text, and the model scores every candidate span for each label. This repository contains a single monolithic ONNX file (encoder + span head) that can be run with any ..."
+    },
+    {
+      "title": "GitHub - fastino-ai/GLiNER2: Unified Schema-Based Information ...",
+      "url": "https://github.com/fastino-ai/GLiNER2",
+      "snippet": "Unified Schema-Based Information Extraction. Contribute to fastino-ai/GLiNER2 development by creating an account on GitHub."
+    }
+  ]
+}

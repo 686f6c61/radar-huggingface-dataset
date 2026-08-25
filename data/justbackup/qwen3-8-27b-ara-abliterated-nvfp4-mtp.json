@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Justbackup/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP",
+  "slug": "justbackup-qwen3-8-27b-ara-abliterated-nvfp4-mtp",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP",
+  "created_at": "2026-08-25T15:00:46.000Z",
+  "updated_at": "2026-08-25T15:00:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "nvfp4",
+    "mtp",
+    "multimodal",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "base_model:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "base_model:quantized:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16703361232,
+  "parameters_human": "16.70B",
+  "storage_bytes": 20579269024,
+  "storage_human": "20.6 GB",
+  "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

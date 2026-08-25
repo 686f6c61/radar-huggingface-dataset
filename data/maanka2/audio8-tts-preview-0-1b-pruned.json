@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "maanka2/Audio8-TTS-Preview-0.1b-Pruned",
+  "slug": "maanka2-audio8-tts-preview-0-1b-pruned",
+  "author": "maanka2",
+  "url": "https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b-Pruned",
+  "created_at": "2026-08-25T10:57:48.000Z",
+  "updated_at": "2026-08-25T10:58:10.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arktts",
+    "feature-extraction",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120211008,
+  "parameters_human": "120.2M",
+  "storage_bytes": 1590297071,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "Audio8/Audio8-TTS-Preview-0.1b at main - Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b/tree/main",
+      "snippet": "Instructions to use Audio8/Audio8-TTS-Preview-.1b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Audio8/Audio8-TTS-Preview-.1b with Transformers:"
+    },
+    {
+      "title": "Audio8-TTS-0.1B - Listening Preview",
+      "url": "https://audio8-ai.github.io/Audio8_TTS/0.1B/",
+      "snippet": "Multilingual, Mandarin, and English zero-shot text-to-speech listening preview."
+    },
+    {
+      "title": "Audio8 TTS Preview 0.1B",
+      "url": "https://hugging-apps-audio8-tts-preview-0-1b.hf.space/?__theme=system",
+      "snippet": "Zero-shot text-to-speech with optional voice cloning. Enter text, optionally upload a reference audio clip to clone its voice, and generate speech."
+    },
+    {
+      "title": "GitHub - prom3theu5/audio8_tts: SOTA-Class TTS at Compact Scale",
+      "url": "https://github.com/prom3theu5/audio8_tts",
+      "snippet": "A .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. 中文文档: README_zh.md This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    }
+  ]
+}

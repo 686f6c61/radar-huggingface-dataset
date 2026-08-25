@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mimiminsoo/spam_diffusion_stage_place_v2",
+  "slug": "mimiminsoo-spam_diffusion_stage_place_v2",
+  "author": "mimiminsoo",
+  "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_v2",
+  "created_at": "2026-08-25T14:30:37.000Z",
+  "updated_at": "2026-08-25T14:31:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:piper_spamcoffee_stage_place",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308316824,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1233356872,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimiminsoo/spam_diffusion_stage_place_v1 · Discussions",
+      "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_v1/discussions",
+      "snippet": "mimiminsoo / spam_diffusion_stage_place_v1 like 0 Robotics LeRobot Safetensors mimiminsoo/piper_bottle_multi_0823_stage_place diffusion arxiv:2303.04137 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2406.08929",
+      "snippet": "arXiv.org is a platform for accessing and sharing research papers across diverse scientific fields, offering open access to cutting-edge academic work."
+    },
+    {
+      "title": "Introduction to Diffusion Models · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/unit5/generative-models/diffusion-models/introduction",
+      "snippet": "Diffusion models are a new and exciting area in computer vision that has shown impressive results in creating images. These generative models work on two stages, a forward diffusion stage and a reverse diffusion stage: first, they slightly change the input data by adding some noise, and then they try to undo these changes to get back to the ..."
+    },
+    {
+      "title": "GitHub - dome272/Diffusion-Models-pytorch: Pytorch implementation of ...",
+      "url": "https://github.com/dome272/Diffusion-Models-pytorch",
+      "snippet": "Diffusion Models This is an easy-to-understand implementation of diffusion models within 100 lines of code. Different from other implementations, this code doesn&#x27;t use the lower-bound formulation for sampling and strictly follows Algorithm 1 from the DDPM paper, which makes it extremely short and easy to follow."
+    }
+  ]
+}

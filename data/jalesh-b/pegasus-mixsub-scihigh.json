@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jalesh-b/pegasus-mixsub-scihigh",
+  "slug": "jalesh-b-pegasus-mixsub-scihigh",
+  "author": "jalesh-b",
+  "url": "https://huggingface.co/jalesh-b/pegasus-mixsub-scihigh",
+  "created_at": "2026-08-25T14:04:32.000Z",
+  "updated_at": "2026-08-25T14:05:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pegasus",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 569844583,
+  "parameters_human": "569.8M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overview of the SciHigh Track at FIRE 2025: Research Highlight ...",
+      "url": "https://arxiv.org/html/2601.11582v1",
+      "snippet": "Inputs were truncated to 512 tokens, and outputs were limited to 100 tokens. The fine-tuned Pegasus model achieved a ROUGE-L F1 score of 23.45%, securing the 1st position in the SciHigh track of FIRE 2025 conference. The AiNauts team employed two approaches for highlight generation."
+    },
+    {
+      "title": "@SciHigh-2026 - Google Sites",
+      "url": "https://sites.google.com/jadavpuruniversity.in/scihigh2025/",
+      "snippet": "The fine-tuned Pegasus model achieved a ROUGE-L F1 score of 23.45%,securing the 1st position in the SciHigh track of FIRE 2025 conference. The task aims to improve the efficiency and accuracy of highlight generation, which can benefit researchers and academic indexing platforms."
+    },
+    {
+      "title": "mixsub (new) - Hugging Face",
+      "url": "https://huggingface.co/mixsub",
+      "snippet": "User profile of new on Hugging Face"
+    },
+    {
+      "title": "rachanaBN/pegasus-scihigh-model · Hugging Face",
+      "url": "https://huggingface.co/rachanaBN/pegasus-scihigh-model",
+      "snippet": "rachanaBN / pegasus-scihigh-model like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "PDF Hybrid Transformer-Based Summarization for Scientific Highlight ...",
+      "url": "https://ceur-ws.org/Vol-4173/T7-3.pdf",
+      "snippet": "Hybrid Extractive-Abstractive Pipeline (Model 1): A three-use model including TF-IDF scoring, BERT embeddings for semantic similarity, Maximal Marginal Relevance (MMR) for redundancy reduction, and either extractive or abstractive rewriting with a fine-tuned BART-Large model."
+    }
+  ]
+}

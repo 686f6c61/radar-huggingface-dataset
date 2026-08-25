@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nguyennnk/MimicMotion",
+  "slug": "nguyennnk-mimicmotion",
+  "author": "nguyennnk",
+  "url": "https://huggingface.co/nguyennnk/MimicMotion",
+  "created_at": "2026-08-25T15:15:34.000Z",
+  "updated_at": "2026-08-25T15:15:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6099734894,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MimicMotion - Tencent",
+      "url": "https://tencent.github.io/MimicMotion/",
+      "snippet": "MimicMotion integrates an image-to-video diffusion model with novel confidence-aware pose guidance. The model&#x27;s trainable components consist of a spatiotemporal U-Net and a PoseNet for introducing pose sequence as the condition."
+    },
+    {
+      "title": "tencent/MimicMotion · Hugging Face",
+      "url": "https://huggingface.co/tencent/MimicMotion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MimicMotion: Image-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mimicmotion-tencent",
+      "snippet": "Overview MimicMotion generates high-quality human motion videos from a single input image guided by pose sequences, developed by tencent. The model uses confidence-aware pose guidance to control human motion in video generation, fine-tuned on top of Stable Video Diffusion (SVD) from Stability AI. The critical thing to know before using it: the model is built on SVD&#x27;s image-to-video ..."
+    },
+    {
+      "title": "mimic-motion: Image-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/mimic-motion-zsxkib",
+      "snippet": "Overview MimicMotion generates high-quality human motion videos by taking a reference image for appearance and a reference video for motion guidance, producing videos of arbitrary length with pose-controlled motion synthesis. Built by zsxkib, the model combines Stable Video Diffusion (SVD) as a base with confidence-aware pose guidance, regional loss amplification, and progressive latent fusion ..."
+    },
+    {
+      "title": "README.md · tencent/MimicMotion at main - Hugging Face",
+      "url": "https://huggingface.co/tencent/MimicMotion/blob/main/README.md",
+      "snippet": "License These model weights of MimicMotion are fine-tuned with the assistance of Stable Video Diffusion (SVD) Powered by Stability AI. For detailed license information, pease refer to LICENSE and NOTICE files."
+    }
+  ]
+}

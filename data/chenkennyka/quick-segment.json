@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chenkennyka/quick-segment",
+  "slug": "chenkennyka-quick-segment",
+  "author": "chenkennyka",
+  "url": "https://huggingface.co/chenkennyka/quick-segment",
+  "created_at": "2026-08-25T17:57:22.000Z",
+  "updated_at": "2026-08-25T17:57:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endnote",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "measured",
+    "multimodal-reasoning",
+    "narrative-progressive",
+    "structured-imrad",
+    "typst",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiquick/segment-anything | AIQuick Tools",
+      "url": "https://aiquick.io/tools/segment/",
+      "snippet": "SAM-2 automatic mask generation. It segments the whole image without being told what to look for, and this playground draws the resulting objects as boxes over your image, largest first, with each mask&#x27;s area and confidence. The per-pixel masks stay on the server — one image&#x27;s worth of run-length encoding runs to megabytes. Inference/gpu/segment"
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/",
+      "snippet": "AI Computer Vision Research Segment Anything Model (SAM): a new AI model from Meta AI that can \"cut out\" any object, in any image, with a single click SAM is a promptable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training."
+    },
+    {
+      "title": "Quick Segment for Stable Diffusion WebUI - GitHub",
+      "url": "https://github.com/dmikey/sd-webui-quick-segment",
+      "snippet": "Quick Segment for Stable Diffusion WebUI Simplified fork focusing on quick segmentation using SAM (Segment Anything Model) and GroundingDINO. This extension provides an easy-to-use interface for detecting and masking objects, body parts, clothing, and faces using AI-powered segmentation."
+    },
+    {
+      "title": "Multi-sensor data labeling platform for robotics & AV | Segments.ai",
+      "url": "https://segments.ai/",
+      "snippet": "Trusted by computer vision engineers across robotics and AV companies Get 3D and image data labeled together Segments.ai&#x27;s labeling platform lets you label across multiple sensors at the same time — so you can improve the quality of all data across the board."
+    },
+    {
+      "title": "AI 3D Model Segmentation - Split a Model into Parts | AI 3D Model",
+      "url": "https://ai3dmodel.app/segmentation",
+      "snippet": "Split any 3D model or STL into separate, editable parts with AI 3D model segmentation — ready for editing, rigging, and 3D printing in seconds."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "AzeerDev/Arabic-Triplet-Matryoshka-V2",
+  "slug": "azeerdev-arabic-triplet-matryoshka-v2",
+  "author": "AzeerDev",
+  "url": "https://huggingface.co/AzeerDev/Arabic-Triplet-Matryoshka-V2",
+  "created_at": "2026-08-25T12:38:45.000Z",
+  "updated_at": "2026-08-25T12:38:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "transformers.js",
+    "transformers",
+    "sentence-similarity",
+    "dataset_size:75000",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "mteb",
+    "ar",
+    "dataset:akhooli/arabic-triplets-1m-curated-sims-len",
+    "arxiv:2505.24581",
+    "base_model:aubmindlab/bert-base-arabertv02",
+    "base_model:finetune:aubmindlab/bert-base-arabertv02",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135193344,
+  "parameters_human": "135.2M",
+  "storage_bytes": 540795752,
+  "storage_human": "541 MB",
+  "base_model": "aubmindlab/bert-base-arabertv02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arabic-Triplet-Matryoshka-V2 - Hugging Face",
+      "url": "https://huggingface.co/Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2",
+      "snippet": "Arabic Triplet Matryoshka V2 Model [ATM2] Model Description Arabic-Triplet-Matryoshka-V2-Model is a state-of-the-art Arabic language embedding model based on the sentence-transformers framework. It is fine-tuned from aubmindlab/bert-base-arabertv02 and specifically designed to capture the rich semantic nuances of Arabic text."
+    },
+    {
+      "title": "Arabic-Triplet-Matryoshka-V2 - Hugging Face",
+      "url": "https://huggingface.co/Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2/blob/main/README.md",
+      "snippet": "Arabic-Triplet-Matryoshka-V2-Model This is a sentence-transformers model finetuned from aubmindlab/bert-base-arabertv02. It maps sentences & paragraphs to a 768-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more."
+    },
+    {
+      "title": "Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2... - Socket",
+      "url": "https://socket.dev/huggingface/package/omartificial-intelligence-space/arabic-triplet-matryoshka-v2",
+      "snippet": "Model Description Arabic-Triplet-Matryoshka-V2-Model is a state-of-the-art Arabic language embedding model based on the sentence-transformers framework. It is fine-tuned from aubmindlab/bert-base-arabertv02 and specifically designed to capture the rich semantic nuances of Arabic text."
+    },
+    {
+      "title": "Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arabic-Triplet-Matryoshka-V2 huggingface.co api & Omartificial ...",
+      "url": "https://www.toolify.ai/ai-model/omartificial-intelligence-space-arabic-triplet-matryoshka-v2",
+      "snippet": "Arabic-Triplet-Matryoshka-V2-Model This is a sentence-transformers model finetuned from aubmindlab/bert-base-arabertv02 . It maps sentences & paragraphs to a 768-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more."
+    }
+  ]
+}

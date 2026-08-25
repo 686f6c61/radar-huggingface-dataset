@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "PJRM/Qwen3.8-4B-Distill-heretic-Q4_K_M-GGUF",
+  "slug": "pjrm-qwen3-8-4b-distill-heretic-q4_k_m-gguf",
+  "author": "PJRM",
+  "url": "https://huggingface.co/PJRM/Qwen3.8-4B-Distill-heretic-Q4_K_M-GGUF",
+  "created_at": "2026-08-25T13:53:31.000Z",
+  "updated_at": "2026-08-25T13:53:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:valiolla/Qwen3.8-4B-Distill-heretic",
+    "base_model:quantized:valiolla/Qwen3.8-4B-Distill-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708796800,
+  "storage_human": "2.7 GB",
+  "base_model": "valiolla/Qwen3.8-4B-Distill-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-4B-Distill-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-9B-Distill-uncensored-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncensored-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-4B-Distill-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/valiolla/Qwen3.8-4B-Distill-heretic",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    }
+  ]
+}

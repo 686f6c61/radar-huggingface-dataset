@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tyosato11/distilbert-ner",
+  "slug": "tyosato11-distilbert-ner",
+  "author": "tyosato11",
+  "url": "https://huggingface.co/tyosato11/distilbert-ner",
+  "created_at": "2026-08-25T17:24:35.000Z",
+  "updated_at": "2026-08-25T17:24:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-modal-fusion",
+    "footnote",
+    "highlight-bullet",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "latex-icml",
+    "long-detailed",
+    "measured",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dslim/distilbert-NER · Hugging Face",
+      "url": "https://huggingface.co/dslim/distilbert-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distilbert NER (未知) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/dslim/distilbert-NER",
+      "snippet": "DistilBERT-NER is a named entity recognition model optimized based on DistilBERT, inheriting BERT&#x27;s semantic understanding capabilities while offering faster inference. It is suitable for NLP tasks requiring efficient entity extraction, such as information extraction and text analysis, reducing computational costs while maintaining high accuracy."
+    },
+    {
+      "title": "DistilBERT-NER Open-Source Named Entity Recognition Model - Lightweight ...",
+      "url": "https://model.aibase.com/models/details/1915693915333877761",
+      "snippet": "distilbert-NER is a fine-tuned DistilBERT model for Named Entity Recognition (NER), balancing size, speed, and accuracy. If my open source models have been useful to you, please consider supporting me in building small, useful AI models for everyone (and help me afford med school / help out my parents financially)."
+    },
+    {
+      "title": "GitHub - ArenGolazizian/distilbert-ner-conll2003: Fine-tune DistilBERT ...",
+      "url": "https://github.com/ArenGolazizian/distilbert-ner-conll2003",
+      "snippet": "The CoNLL-2003 dataset is a widely used benchmark for NER, containing annotated sentences with entity tags for each word. DistilBERT, a distilled version of BERT, serves as the backbone for this project, offering a balance between performance and computational efficiency. The model is adapted for token classification, making it suitable for sequence labeling tasks like NER."
+    }
+  ]
+}

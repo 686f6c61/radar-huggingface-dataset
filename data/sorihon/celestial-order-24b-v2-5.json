@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Sorihon/Celestial-Order-24B-V2.5",
+  "slug": "sorihon-celestial-order-24b-v2-5",
+  "author": "Sorihon",
+  "url": "https://huggingface.co/Sorihon/Celestial-Order-24B-V2.5",
+  "created_at": "2026-08-25T17:55:11.000Z",
+  "updated_at": "2026-08-25T18:09:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2311.03099",
+    "base_model:Delta-Vector/Rei-24B-KTO",
+    "base_model:merge:Delta-Vector/Rei-24B-KTO",
+    "base_model:Sorihon/Celestial-Order-24B-V2",
+    "base_model:merge:Sorihon/Celestial-Order-24B-V2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 47161926917,
+  "storage_human": "47.2 GB",
+  "base_model": "Sorihon/Celestial-Order-24B-V2, Delta-Vector/Rei-24B-KTO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sorihon/Celestial-Order-24B-V2 · Hugging Face",
+      "url": "https://huggingface.co/Sorihon/Celestial-Order-24B-V2",
+      "snippet": "Sorihon / Celestial-Order-24B-V2 like 0 Text Generation Transformers Safetensors mistral mergekit Merge text-generation-inference arxiv:2311.03099 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Sorihon%2FCelestial-Order-24B-V2",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "Architecture graph for Sorihon/Celestial-Order-24B-V2 | hfviewer",
+      "url": "https://hfviewer.com/Sorihon/Celestial-Order-24B-V2",
+      "snippet": "Sorihon/Celestial-Order-24B-V2 neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model Sorihon/Celestial-Order-24B-V2. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual ..."
+    },
+    {
+      "title": "Celestial-Order-24B-V2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Sorihon/Celestial-Order-24B-V2",
+      "snippet": "Run Celestial-Order-24B-V2 with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "6 Best 24B GGUF Models for 24GB VRAM Local AI RP",
+      "url": "https://techtactician.com/best-24b-gguf-models-for-24gb-vram-local-rp/",
+      "snippet": "If you&#x27;re aiming for local RP on a 24GB VRAM GPU like the RTX 3090 or the RTX 4090, 24B models are usually where the text generation starts feeling properly consistent, with better scene flow, stronger character adherence, and less random derailment than most smaller 7-8B picks. Here is a quick no-nonsense list of the best 24B fine-tunes and merges available in GGUF quantizations that you ..."
+    }
+  ]
+}

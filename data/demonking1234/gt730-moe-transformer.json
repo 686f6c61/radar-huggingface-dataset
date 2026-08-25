@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DemonKing1234/gt730-moe-transformer",
+  "slug": "demonking1234-gt730-moe-transformer",
+  "author": "DemonKing1234",
+  "url": "https://huggingface.co/DemonKing1234/gt730-moe-transformer",
+  "created_at": "2026-08-25T17:02:56.000Z",
+  "updated_at": "2026-08-25T17:24:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mixture-of-experts",
+    "moe",
+    "code-generation",
+    "reasoning",
+    "edge-ai",
+    "agentic",
+    "lightweight",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2208576,
+  "parameters_human": "2.2M",
+  "storage_bytes": 38461073,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DemonKing1234 (DemonKing) - Hugging Face",
+      "url": "https://huggingface.co/DemonKing1234/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "Mixture of Experts Explained - Hugging Face",
+      "url": "https://huggingface.co/blog/moe",
+      "snippet": "There is a second iteration (Feb 2026) of the blog post where we cover how the transformers library has built around MoEs to make them \"first class citizens\" of the library and the Hub. Here is the link to the post: Mixture of Experts (MoEs) in Transformers With the release of Mixtral 8x7B (announcement, model card), a class of transformer has become the hottest topic in the open AI community ..."
+    },
+    {
+      "title": "Transformer Architecture Explorer | Interactive GPT Model Visualization",
+      "url": "https://transformer.nexgencompany.ai/",
+      "snippet": "An interactive visualization of the GPT Transformer architecture, demonstrating attention mechanisms, token embeddings, and neural network layers in action."
+    },
+    {
+      "title": "GitHub - laekov/fastmoe: A fast MoE impl for PyTorch",
+      "url": "https://github.com/laekov/fastmoe",
+      "snippet": "Usage FMoEfy a Transformer model Transformer is currently one of the most popular models to be extended by MoE. Using FastMoE, a Transformer-based model can be extended as MoE by an one-key plugin shown as follow. For example, when using Megatron-LM, using the following lines can help you easily scale up the MLP layers to multiple experts."
+    },
+    {
+      "title": "A PyTorch implementation of a Mixture of Experts (MoE) model resembling ...",
+      "url": "https://gist.github.com/ruvnet/0928768dd1e4af8816e31dde0a0205d5",
+      "snippet": "This model combines transformer layers with an MoE layer consisting of 8 experts, aiming for high efficiency by activating only 2 experts per token. It&#x27;s configured with dimensions reflecting the operational efficiency of a downscaled GPT-4 model, potentially suitable for a variety of AI tasks requiring adaptability and reduced computational load."
+    }
+  ]
+}

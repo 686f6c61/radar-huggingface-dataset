@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "smutuvi/Sunflower-Gemma4-E2B-litert-lm",
+  "slug": "smutuvi-sunflower-gemma4-e2b-litert-lm",
+  "author": "smutuvi",
+  "url": "https://huggingface.co/smutuvi/Sunflower-Gemma4-E2B-litert-lm",
+  "created_at": "2026-08-25T11:53:51.000Z",
+  "updated_at": "2026-08-25T11:55:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "african-languages",
+    "base_model:Sunbird/Sunflower-Gemma4-E2B",
+    "base_model:finetune:Sunbird/Sunflower-Gemma4-E2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Sunbird/Sunflower-Gemma4-E2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smutuvi/gemma-4-e2b-sw-asr-ndizi-litert-lm-slim · Hugging Face",
+      "url": "https://huggingface.co/smutuvi/gemma-4-e2b-sw-asr-ndizi-litert-lm-slim",
+      "snippet": "Instructions to use smutuvi/gemma-4-e2b-sw-asr-ndizi-litert-lm-slim with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sunbird/Sunflower-Gemma4-E2B · Hugging Face",
+      "url": "https://huggingface.co/Sunbird/Sunflower-Gemma4-E2B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sunflower-Gemma4-E2B - SALT Documentation",
+      "url": "https://salt.sunbird.ai/models/sunflower-gemma4-e2b/",
+      "snippet": "Sunflower-Gemma4-E2B is a multimodal adaptation of Google&#x27;s Gemma 4 E2B IT optimised to understand text and speech across 69 African languages. The model is tuned for text translation, speech transcription, instruction-following, and multi-turn chat. It supports text, image, and audio inputs (up to 30s of 16kHz audio), generating text output."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "🚀 Production-Ready for Google&#x27;s Products LiteRT-LM powers on-device GenAI experiences in Chrome, Chromebook Plus, Pixel Watch, and more. You can also try the Google AI Edge Gallery app to run models immediately on your device."
+    },
+    {
+      "title": "Google Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4.md.txt",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. > [!NOTE] > **Note:** LiteRT-LM supports E2B and E4B models today, with support for larger models ..."
+    }
+  ]
+}

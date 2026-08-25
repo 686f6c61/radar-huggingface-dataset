@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "agbalu/Masinissa-Sentiment",
+  "slug": "agbalu-masinissa-sentiment",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Masinissa-Sentiment",
+  "created_at": "2026-08-25T10:47:48.000Z",
+  "updated_at": "2026-08-25T10:48:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "masinissa_sentiment",
+    "feature-extraction",
+    "berber",
+    "amazigh",
+    "kabyle",
+    "sentiment-analysis",
+    "text-classification",
+    "conformal-prediction",
+    "low-resource",
+    "custom_code",
+    "kab",
+    "arxiv:2203.05482",
+    "arxiv:2202.03829",
+    "arxiv:1905.09788",
+    "base_model:agbalu/Masinissa-31M",
+    "base_model:finetune:agbalu/Masinissa-31M",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31035651,
+  "parameters_human": "31.0M",
+  "storage_bytes": 124416125,
+  "storage_human": "124 MB",
+  "base_model": "agbalu/Masinissa-31M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Kabyle three-class sentiment",
+      "dataset": "KabSentiment held-out test split (1,500 sentences)",
+      "metric": "Accuracy",
+      "value": 0.9027
+    },
+    {
+      "task": "Kabyle three-class sentiment",
+      "dataset": "KabSentiment held-out test split (1,500 sentences)",
+      "metric": "Macro-F1",
+      "value": 0.9026
+    }
+  ],
+  "sources": [
+    {
+      "title": "agbalu/Masinissa-31M · Hugging Face",
+      "url": "https://huggingface.co/agbalu/Masinissa-31M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agbalu (AƔBALU — Kabyle (Taqbaylit) NLP) - Hugging Face",
+      "url": "https://huggingface.co/agbalu",
+      "snippet": "The names Each model is named for someone whose life was the work that model does, in two families. ... Two lineages carry the design. Masinissa and Jugurtha are grandfather and grandson, so the smallest model and the largest are the founding of the kingdom and the refusal to surrender it."
+    },
+    {
+      "title": "GitHub - abderahmane-ai/agbalu: Kabyle (Taqbaylit) NLP built from the ...",
+      "url": "https://github.com/abderahmane-ai/agbalu",
+      "snippet": "Twenty repositories on the Hugging Face Hub under agbalu, twelve models and eight datasets, plus the organization Space. Every model loads with transformers and torch alone, without this repository."
+    },
+    {
+      "title": "agbalu/README.md at main · abderahmane-ai/agbalu · GitHub",
+      "url": "https://github.com/abderahmane-ai/agbalu/blob/main/README.md",
+      "snippet": "Kabyle (Taqbaylit) NLP built from the corpus up — orthographic normalisation, parallel and speech corpora, a benchmark suite, and six models on the Hugging Face Hub: encoder, translation, ASR, punctuation restoration, script conversion, tokenizer. - agbalu/README.md at main · abderahmane-ai/agbalu"
+    },
+    {
+      "title": "Sentiment analysis prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis",
+      "snippet": "The sentiment analysis prebuilt model detects positive or negative sentiment in text data. You can use it to analyze social media, customer reviews, or any text data you&#x27;re interested in. Sentiment analysis evaluates text input, and gives scores and labels at a sentence and document level."
+    }
+  ]
+}

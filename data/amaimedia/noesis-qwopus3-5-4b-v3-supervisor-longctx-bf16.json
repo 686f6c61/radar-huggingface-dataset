@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16",
+  "slug": "amaimedia-noesis-qwopus3-5-4b-v3-supervisor-longctx-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16",
+  "created_at": "2026-08-16T11:51:12.000Z",
+  "updated_at": "2026-08-25T16:42:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.5",
+    "qwen3.5-201-languages",
+    "supports-201-languages",
+    "multilingual",
+    "language-support",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547743,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4 · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4",
+      "snippet": "AMAImedia / NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4 like 0 Safetensors qwen3_5_text 4-bit precision bitsandbytes Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16",
+      "snippet": "NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16 Test results (2026-06-17) Supervisor eval — eval_longctx_supervisor_v1.py (12 tests, grammar-constrained) Translation — FLORES devtest (chrF++/BLEU, n=20, no-think) Comparison vs dedicated models (same FLORES n=20) Speed (RTX 3060 Laptop 6GB, GPU, 33/33 layers offloaded) ﻿Released as part of the NOESIS Professional Multilingual Dubbing ..."
+    },
+    {
+      "title": "AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4",
+      "url": "https://llmsreview.com/models/amaimedia--qwen3.5-35b-a3b-darwin-opus-noesis-awq-int4",
+      "snippet": "Check out comparisons and performance ratings of the AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4 model by AMAImedia on LLMsReview."
+    },
+    {
+      "title": "Qwopus3.5-4B-v3 · Models",
+      "url": "https://www.modelscope.cn/models/Jackrong/Qwopus3.5-4B-v3",
+      "snippet": "🌟 Qwopus3.5-4B-v3 🔥 Update (April 5): I&#x27;ve released the complete training notebook, codebase, and a comprehensive PDF guide to help beginners and enthusiasts understand and reproduce this model&#x27;s fine-tuning process. ️ Special thanks to the Unsloth open-source library and @KyleHessling1 for their support. 📚 Resources & Guides 👉 GitHub Repository: Jackrong-llm-finetuning-guide ..."
+    },
+    {
+      "title": "fredrezones55/Qwopus3.5 - ollama.com",
+      "url": "https://ollama.com/fredrezones55/Qwopus3.5",
+      "snippet": "Qwopus3.5-v3 is a reasoning-enhanced model family fine-tune of Qwen3.5 designed to improve reasoning stability and correctness, optimize inference efficiency, and enhance cross-task generalization capabilities, especially in programming."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jhalak02/mast-guard-artifacts",
+  "slug": "jhalak02-mast-guard-artifacts",
+  "author": "Jhalak02",
+  "url": "https://huggingface.co/Jhalak02/mast-guard-artifacts",
+  "created_at": "2026-08-25T11:21:21.000Z",
+  "updated_at": "2026-08-25T11:21:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llm-agents",
+    "failure-detection",
+    "mast",
+    "xgboost",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28058832,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jhalak02 (Jhalak Prasad Pandey) - Hugging Face",
+      "url": "https://huggingface.co/Jhalak02",
+      "snippet": "User profile of Jhalak Prasad Pandey on Hugging Face"
+    },
+    {
+      "title": "Jhalak02/MAST-Data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Jhalak02/MAST-Data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jhalak JHALAK02 - GitHub",
+      "url": "https://github.com/JHALAK02",
+      "snippet": "GitHub is where JHALAK02 builds software."
+    },
+    {
+      "title": "Hugging Bay",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Search open models, compare licenses, inspect source records, and download hosted files with published SHA-256 hashes. Check each artifact page for its current run status."
+    },
+    {
+      "title": "How to Spot Fake AI Images in 2026: The Complete Detection Guide",
+      "url": "https://www.online-tech-tips.com/how-to-spot-fake-ai-images/",
+      "snippet": "Learn to spot AI-generated fake images in 2026 with our tiered newsroom stress test — visual cues, metadata checks, and free detection tools in under 10 minutes."
+    }
+  ]
+}

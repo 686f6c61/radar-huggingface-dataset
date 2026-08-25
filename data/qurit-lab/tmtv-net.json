@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "qurit-lab/TMTV-Net",
+  "slug": "qurit-lab-tmtv-net",
+  "author": "qurit-lab",
+  "url": "https://huggingface.co/qurit-lab/TMTV-Net",
+  "created_at": "2026-08-25T18:37:42.000Z",
+  "updated_at": "2026-08-25T18:49:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 347102584,
+  "storage_human": "347 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - qurit-frizi/TMTV-Net: This repository employs a deep-learning ...",
+      "url": "https://github.com/qurit-frizi/TMTV-Net/tree/main",
+      "snippet": "Our model, TMTV-Net, is specifically designed to automate TMTV segmentation from PET/CT scans. TMTV-Net demonstrates robust performance and adaptability in TMTV segmentation across diverse multi-site external datasets, encompassing various lymphoma subtypes."
+    },
+    {
+      "title": "GitHub - qurit-frizi/TMTV-Net: This repository employs a deep-learning ...",
+      "url": "https://github.com/qurit-frizi/TMTV-Net",
+      "snippet": "Our model, TMTV-Net, is specifically designed to automate TMTV segmentation from PET/CT scans. TMTV-Net demonstrates robust performance and adaptability in TMTV segmentation across diverse multi-site external datasets, encompassing various lymphoma subtypes."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/qurit-frizi/TMTV-Net/refs/heads/main/README.md",
+      "snippet": "Our model, TMTV-Net, is specifically designed to automate TMTV segmentation from PET/CT scans. TMTV-Net demonstrates robust performance and adaptability in TMTV segmentation across diverse multi-site external datasets, encompassing various lymphoma subtypes."
+    },
+    {
+      "title": "TMTV-Net: fully automated total metabolic tumor volume segmentation in ...",
+      "url": "https://research.rug.nl/en/publications/tmtv-net-fully-automated-total-metabolic-tumor-volume-segmentatio/",
+      "snippet": "Conclusion: TMTV-Net demonstrates strong performance and generalizability in TMTV segmentation across multi-site external datasets, encompassing various lymphoma subtypes."
+    },
+    {
+      "title": "PDF TMTV-Net: fully automated total metabolic tumor volume ... - HUG",
+      "url": "https://www.hug.ch/sites/interhug/files/structures/pinlab/documents/ejnmmi2024_segm.pdf",
+      "snippet": "TMTV-Net demonstrates strong performance and generalizability in TMTV segmentation across multi-site external datasets, encompassing various lymphoma subtypes. A negligible reduction of 2% in overall performance during testing on external data highlights robust model generalizability across different centers and cancer types, likely ..."
+    }
+  ]
+}

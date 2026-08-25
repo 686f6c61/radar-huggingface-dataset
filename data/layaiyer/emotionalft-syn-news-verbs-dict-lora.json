@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/emotionalFT-syn-news-verbs-dict-lora",
+  "slug": "layaiyer-emotionalft-syn-news-verbs-dict-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/emotionalFT-syn-news-verbs-dict-lora",
+  "created_at": "2026-08-25T14:51:13.000Z",
+  "updated_at": "2026-08-25T14:55:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44531457,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/emotionalFT-syn-arxiv-verbs-dict-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/emotionalFT-syn-arxiv-verbs-dict-lora",
+      "snippet": "Instructions to use layaiyer/emotionalFT-syn-arxiv-verbs-dict-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "emotionalFT-syn-arxiv-verbs-vanilla-lora - Hugging Face",
+      "url": "https://huggingface.co/layaiyer/emotionalFT-syn-arxiv-verbs-vanilla-lora",
+      "snippet": "Instructions to use layaiyer/emotionalFT-syn-arxiv-verbs-vanilla-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on CivitAI, completely free for others to use."
+    }
+  ]
+}

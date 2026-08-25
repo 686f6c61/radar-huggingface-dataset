@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "carmentran/lstm-ocr",
+  "slug": "carmentran-lstm-ocr",
+  "author": "carmentran",
+  "url": "https://huggingface.co/carmentran/lstm-ocr",
+  "created_at": "2026-08-25T16:25:56.000Z",
+  "updated_at": "2026-08-25T16:26:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "critical",
+    "graphic-visual",
+    "impersonal",
+    "knowledge-distillation",
+    "markdown",
+    "narrative-progressive",
+    "numeric-nature",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Improving OCR Accuracy with LSTM Networks: A Practical Guide - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/improving-ocr-accuracy-lstm-networks-practical-guide-srikanth-r-kfdnc",
+      "snippet": "LSTM networks significantly improve OCR accuracy by modeling the sequential nature of text. Unlike traditional methods, LSTMs can understand context across character sequences, making them ideal ..."
+    },
+    {
+      "title": "GitHub - tesseract-ocr/tesseract: Tesseract Open Source OCR Engine ...",
+      "url": "https://github.com/tesseract-ocr/tesseract",
+      "snippet": "About This package contains an OCR engine - libtesseract and a command line program - tesseract. Tesseract 4 adds a new neural net (LSTM) based OCR engine which is focused on line recognition, but also still supports the legacy Tesseract OCR engine of Tesseract 3 which works by recognizing character patterns."
+    },
+    {
+      "title": "8 Top Open-Source OCR Models Compared: A Complete Guide",
+      "url": "https://modal.com/blog/8-top-open-source-ocr-models-compared",
+      "snippet": "Compare the best open-source OCR models for document processing, including traditional ML and LLM-based approaches"
+    },
+    {
+      "title": "GitHub - tesseract-ocr/tesstrain: Train Tesseract LSTM with make",
+      "url": "https://github.com/tesseract-ocr/tesstrain",
+      "snippet": "Train Tesseract LSTM with make. Contribute to tesseract-ocr/tesstrain development by creating an account on GitHub."
+    },
+    {
+      "title": "How to train LSTM/neural net Tesseract | tessdoc",
+      "url": "https://tesseract-ocr.github.io/tessdoc/tess5/TrainingTesseract-5.html",
+      "snippet": "How to train LSTM/neural net Tesseract Have questions about the training process? If you had some problems during the training process and you need help, use tesseract-ocr mailing-list to ask your question (s). PLEASE DO NOT report your problems and ask questions about training as issues! Training with tesstrain.sh bash scripts is unsupported/abandoned for Tesseract 5. Please use python ..."
+    }
+  ]
+}

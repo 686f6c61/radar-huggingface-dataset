@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "colichar/space-invaders-dqn",
+  "slug": "colichar-space-invaders-dqn",
+  "author": "colichar",
+  "url": "https://huggingface.co/colichar/space-invaders-dqn",
+  "created_at": "2026-08-25T18:02:46.000Z",
+  "updated_at": "2026-08-25T18:22:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "dqn",
+    "deep-q-learning",
+    "atari",
+    "ale",
+    "space-invaders",
+    "arxiv:1312.5602",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22682375,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "afedyanin/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/afedyanin/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "thaslimshaik/spaceinvaders-dqn · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/spaceinvaders-dqn",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "GitHub - Sco0b1/AI_space_invaders",
+      "url": "https://github.com/Sco0b1/AI_space_invaders",
+      "snippet": "This is a Rainbow DQN (Deep Q-Network) implementation for playing Atari Space Invaders, created as what appears to be a university project. What it does: Trains an AI agent to play Space Invaders using deep reinforcement learning."
+    },
+    {
+      "title": "GitHub - ib0b/AI-Invaders: DDQN - Reinforcement Learning AI for space ...",
+      "url": "https://github.com/ib0b/AI-Invaders",
+      "snippet": "AI invaders uses a reinforcement learning algorithm known as Double Deep Q Network (DDQN) with Prioritized Replay an improvement over the Vanilla DQN architecture. It&#x27;s the expected sum of discounted rewards for taking an action in a given state, for a given policy. As given below:"
+    },
+    {
+      "title": "dqn-SpaceInvadersNoFrameskip-v4 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/dqn-spaceinvadersnoframeskip-v4/",
+      "snippet": "What is dqn-SpaceInvadersNoFrameskip-v4? This is a Deep Q-Network (DQN) model specifically trained to play the classic game Space Invaders. Developed using Stable-Baselines3, it implements a CNN-based policy optimized for Atari gameplay, with sophisticated frame processing and memory management features. Implementation Details The model utilizes a carefully tuned DQN architecture with several ..."
+    }
+  ]
+}

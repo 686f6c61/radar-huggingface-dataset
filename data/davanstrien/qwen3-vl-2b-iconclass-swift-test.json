@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "davanstrien/qwen3-vl-2b-iconclass-swift-test",
+  "slug": "davanstrien-qwen3-vl-2b-iconclass-swift-test",
+  "author": "davanstrien",
+  "url": "https://huggingface.co/davanstrien/qwen3-vl-2b-iconclass-swift-test",
+  "created_at": "2026-08-25T13:56:53.000Z",
+  "updated_at": "2026-08-25T13:56:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "uv-script",
+    "ms-swift",
+    "lora",
+    "vision-language",
+    "hf-jobs",
+    "dataset:davanstrien/iconclass-vlm-brillfull",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-2B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34929273,
+  "storage_human": "35 MB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "davanstrien/iconclass-vlm-qwen3-showcase · Hugging Face",
+      "url": "https://huggingface.co/davanstrien/iconclass-vlm-qwen3-showcase",
+      "snippet": "Model Card for iconclass-vlm-qwen3-showcase This model is a fine-tuned version of unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Fine-tuning Vision-Language Models for Art History: Iconclass ...",
+      "url": "https://danielvanstrien.xyz/posts/2025/iconclass-vlm-sft/trl-vlm-fine-tuning-iconclass.html",
+      "snippet": "Train vision-language models to generate Iconclass metadata for artworks using TRL&#x27;s VLM support and cloud GPUs - no local setup needed!"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_vl_2b_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_vl_2b_instruct/README.md",
+      "snippet": "Qwen3-VL is a vision-language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning. This is based on the implementation of Qwen3-VL-2B-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance ..."
+    }
+  ]
+}

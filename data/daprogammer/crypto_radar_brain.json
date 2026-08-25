@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DaProgammer/crypto_radar_brain",
+  "slug": "daprogammer-crypto_radar_brain",
+  "author": "DaProgammer",
+  "url": "https://huggingface.co/DaProgammer/crypto_radar_brain",
+  "created_at": "2026-08-25T16:16:39.000Z",
+  "updated_at": "2026-08-25T16:45:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "scikit-learn",
+    "finance",
+    "cryptocurrency",
+    "sentiment-analysis",
+    "tabular-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8406137,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Web3 AI Projects & AI Industry Trends | DappRadar",
+      "url": "https://dappradar.com/narratives/ai",
+      "snippet": "The AI x Crypto narrative covers projects combining artificial intelligence with blockchain technology. Explore AI agents, machine learning protocols, data solutions, and compute platforms in Web3."
+    },
+    {
+      "title": "AI Crypto Guide: Top AI Coins and Projects to Watch in 2026",
+      "url": "https://dappradar.com/blog/best-ai-coins-dapps-projects-web3-blockchain-industry",
+      "snippet": "Explore the world of AI crypto: discover top coins, market trends, and how artificial intelligence is transforming the crypto industry."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Research — Artificial Intelligence AI on the Dark Web From jailbroken chatbots to purpose-built criminal AI — how the underground adopted artificial intelligence, built uncensored tools, and reshaped the cybersecurity threat landscape."
+    },
+    {
+      "title": "Best AI Crypto in 2026: Top Artificial Intelligence Cryptocurrencies",
+      "url": "https://www.coinspeaker.com/guides/best-ai-crypto/",
+      "snippet": "Explore the most promising AI crypto coins of 2026, from decentralized AI networks to blockchain data infrastructures. This guide covers features, use cases, risks, and how to evaluate AI-driven ..."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Track the latest AI models, pricing, benchmarks, and releases across every major AI lab. Updated automatically every 6 hours."
+    }
+  ]
+}

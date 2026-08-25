@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CARTERAARON/llama-summary69",
+  "slug": "carteraaron-llama-summary69",
+  "author": "CARTERAARON",
+  "url": "https://huggingface.co/CARTERAARON/llama-summary69",
+  "created_at": "2026-08-25T16:21:09.000Z",
+  "updated_at": "2026-08-25T16:21:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "docx",
+    "efficient-attention",
+    "empirical-focused",
+    "endnote",
+    "intro-method-exp-related-conclusion",
+    "measured",
+    "passive",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "219gb \"Leaked\" Llama Ai Bundle Claim Rocks Dark Web — Real Model ...",
+      "url": "https://undercodenews.com/219gb-leaked-llama-ai-bundle-claim-rocks-dark-web-real-model-release-or-dangerous-cyber-trap/",
+      "snippet": "A cybercrime forum post shared by the account \"Dark Web Intelligence\" alleges the release of a 219GB archive containing what appears to be Meta&#x27;s LLAMA AI model family resources. The package is described as including multiple model checkpoints such as 7B, 13B, 30B, and 65B parameter versions. In addition to core model weights, the archive allegedly contains tokenizer configurations ..."
+    },
+    {
+      "title": "llama4",
+      "url": "https://ollama.com/library/llama4",
+      "snippet": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These two models leverage a mixture-of-experts (MoE) architecture and support native multimodality (image input)."
+    },
+    {
+      "title": "GitHub - meta-llama/llama-models: Utilities intended for use with Llama ...",
+      "url": "https://github.com/meta-llama/llama-models",
+      "snippet": "Llama Models Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects:"
+    }
+  ]
+}

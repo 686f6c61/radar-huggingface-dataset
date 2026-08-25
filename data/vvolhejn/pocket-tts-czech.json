@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vvolhejn/pocket-tts-czech",
+  "slug": "vvolhejn-pocket-tts-czech",
+  "author": "vvolhejn",
+  "url": "https://huggingface.co/vvolhejn/pocket-tts-czech",
+  "created_at": "2026-08-25T13:10:27.000Z",
+  "updated_at": "2026-08-25T13:10:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "cs"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "czech",
+    "cs",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109501122,
+  "parameters_human": "109.5M",
+  "storage_bytes": 439199174,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vvolhejn (Václav Volhejn) - Hugging Face",
+      "url": "https://huggingface.co/vvolhejn",
+      "snippet": "reliable AI, prompt injection reliable AI, prompt injection Organizations"
+    },
+    {
+      "title": "Pocket TTS TTS — Pocket TTS AI Voice Generator (10 Voices) | TTS.ai",
+      "url": "https://tts.ai/voices/pocket-tts/?lang=cs",
+      "snippet": "A compact 100M-parameter CPU model from Kyutai (makers of Moshi) with single-sample voice cloning. Try Pocket TTS text-to-speech free on TTS.ai — generate and download natural Pocket TTS speech online."
+    },
+    {
+      "title": "hercules261188/pocket-tts_text_to_speech_models - GitHub",
+      "url": "https://github.com/hercules261188/pocket-tts_text_to_speech_models",
+      "snippet": "Pocket TTS A lightweight text-to-speech (TTS) application designed to run efficiently on CPUs. Forget about the hassle of using GPUs and web APIs serving TTS models. With Kyutai&#x27;s Pocket TTS, generating audio is just a pip install and a function call away. Supports Python 3.10, 3.11, 3.12, 3.13 and 3.14. Requires PyTorch 2.5+."
+    },
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "Pocket TTS A lightweight text-to-speech (TTS) application designed to run efficiently on CPUs. Forget about the hassle of using GPUs and web APIs serving TTS models. With Kyutai&#x27;s Pocket TTS, generating audio is just a pip install and a function call away. Supports Python 3.10, 3.11, 3.12, 3.13 and 3.14. Requires PyTorch 2.5+."
+    },
+    {
+      "title": "Free Czech Text to Speech & Czech AI Voices - ElevenLabs",
+      "url": "https://elevenlabs.io/text-to-speech/czech",
+      "snippet": "Transform Czech text into clear, human-like speech using ElevenLabs&#x27; AI. Perfect for audiobooks, video voiceovers, and more."
+    }
+  ]
+}

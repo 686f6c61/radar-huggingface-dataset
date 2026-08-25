@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "onnx-community/dataocean-dolphin-asr",
+  "slug": "onnx-community-dataocean-dolphin-asr",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/dataocean-dolphin-asr",
+  "created_at": "2026-07-23T11:48:17.000Z",
+  "updated_at": "2026-08-25T15:21:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "arxiv:2503.20212",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4480614536,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/dataocean-dolphin-asr · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/dataocean-dolphin-asr",
+      "snippet": "Dolphin is a state-of-the-art multilingual, multitask ASR model developed through a collaboration between Dataocean AI and Tsinghua University. This specific repository (ppu-dolphin-asr-onnx) contains exported ONNX variants of the model."
+    },
+    {
+      "title": "onnx-community/dataocean-dolphin-asr at main - Hugging Face",
+      "url": "https://huggingface.co/onnx-community/dataocean-dolphin-asr/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main dataocean-dolphin-asr 283 kB Ctrl+K Ctrl+K 1 contributor History:4 commits snowfluke Update README.md 792c19a verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commit7 days ago README.md 5.78 kBUpdate README.mdabout 5 hours ago tokens.txt Safe 276 kBCreate ..."
+    },
+    {
+      "title": "GitHub - DataoceanAI/Dolphin: Dolphin is a multilingual, multitask ASR ...",
+      "url": "https://github.com/DataoceanAI/Dolphin",
+      "snippet": "Dolphin Dolphin-CN-Dialect Github Huggingface Modelscope Openi Wisemodel Dolphin is a multilingual, multitask ASR model developed through a collaboration between Dataocean AI and Tsinghua University. It supports 40 Eastern languages across East Asia, South Asia, Southeast Asia, and the Middle East, while also supporting 22 Chinese dialects. It is trained on over 210,000 hours of data, which ..."
+    },
+    {
+      "title": "GitHub - PT-Perkasa-Pilar-Utama/ppu-dolphin-asr-onnx: A collection of ...",
+      "url": "https://github.com/PT-Perkasa-Pilar-Utama/ppu-dolphin-asr-onnx",
+      "snippet": "Dolphin is a state-of-the-art multilingual, multitask ASR model developed through a collaboration between Dataocean AI and Tsinghua University."
+    },
+    {
+      "title": "Dolphin — sherpa 1.3 documentation",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/Dolphin/index.html",
+      "snippet": "Note that this model supports 40 Eastern languages across East Asia, South Asia, Southeast Asia, and the Middle East; it also supports 22 Chinese dialects Please see its GitHub description for more information. We have converted Dolphin to onnx and provided APIs for the following programming languages"
+    }
+  ]
+}

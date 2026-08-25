@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CARTERAARON/vit-detector",
+  "slug": "carteraaron-vit-detector",
+  "author": "CARTERAARON",
+  "url": "https://huggingface.co/CARTERAARON/vit-detector",
+  "created_at": "2026-08-25T16:21:34.000Z",
+  "updated_at": "2026-08-25T16:21:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "footnote",
+    "intro-problem-solution-validation-future",
+    "long-detailed",
+    "markdown",
+    "neutral",
+    "passive",
+    "unstructured-narrative",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "object_detection_using_vision_transformer - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/object_detection_using_vision_transformer.ipynb",
+      "snippet": "The article Vision Transformer (ViT) architecture by Alexey Dosovitskiy et al. demonstrates that a pure transformer applied directly to sequences of image patches can perform well on object detection tasks. In this Keras example, we implement an object detection ViT and we train it on the Caltech 101 dataset to detect an airplane in the given image."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "GitHub - capcheckorg/ai-image-detection: Detect AI-generated images ...",
+      "url": "https://github.com/capcheckorg/ai-image-detection",
+      "snippet": "AI Image Detection Detect AI-generated images using a Vision Transformer (ViT) model. Open source inference server and training pipeline."
+    },
+    {
+      "title": "AuraDetect/vit-ai-image-detector at main - GitHub",
+      "url": "https://github.com/PurinNyova/AuraDetect/tree/main/vit-ai-image-detector",
+      "snippet": "ViT AI Image Detector This project fine-tunes google/vit-large-patch16-384 for binary image classification:"
+    },
+    {
+      "title": "prithivMLmods/Deep-Fake-Detector-v2-Model · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Deep-Fake-Detector-v2-Model",
+      "snippet": "The Deep-Fake-Detector-v2-Model is a state-of-the-art deep learning model designed to detect deepfake images. It leverages the Vision Transformer (ViT) architecture, specifically the google/vit-base-patch16-224-in21k model, fine-tuned on a dataset of real and deepfake images."
+    }
+  ]
+}

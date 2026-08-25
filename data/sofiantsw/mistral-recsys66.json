@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sofiantsw/mistral-recsys66",
+  "slug": "sofiantsw-mistral-recsys66",
+  "author": "sofiantsw",
+  "url": "https://huggingface.co/sofiantsw/mistral-recsys66",
+  "created_at": "2026-08-25T18:31:52.000Z",
+  "updated_at": "2026-08-25T18:31:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "classification",
+    "dino",
+    "exponential",
+    "gelu-tanh",
+    "huge",
+    "lamb",
+    "low-rank",
+    "sliding-window",
+    "trunc-normal",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mistral",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "mistralai (Mistral AI_) - Hugging Face",
+      "url": "https://huggingface.co/mistralai/models",
+      "snippet": "Org profile for Mistral AI_ on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Mistral AI Complete Model Guide — Every Model, Spec, and Use Case (2026)",
+      "url": "https://www.aimadetools.com/blog/mistral-ai-complete-model-guide/",
+      "snippet": "The complete guide to every Mistral AI model: Large 2, Devstral 2, Codestral, Small, Nemo. Specs, benchmarks, pricing, and which to use when."
+    }
+  ]
+}

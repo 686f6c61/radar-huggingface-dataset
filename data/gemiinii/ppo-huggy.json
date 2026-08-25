@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Gemiinii/ppo-Huggy",
+  "slug": "gemiinii-ppo-huggy",
+  "author": "Gemiinii",
+  "url": "https://huggingface.co/Gemiinii/ppo-Huggy",
+  "created_at": "2026-08-25T12:34:22.000Z",
+  "updated_at": "2026-08-25T12:34:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187477479,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini91/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Gemini91/ppo-Huggy",
+      "snippet": "Model card Files Files and versions Metrics Training metrics Community Use in ml-agents Edit model card ppo Agent playing Huggy Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "prepsyched/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/prepsyched/ppo-Huggy",
+      "snippet": "Edit model card ppo Huggy ppo Agent playing Huggy This is a trained model of a ppo agent playing Huggy using the Unity ML-Agents Library. Usage (with ML-Agents) The Documentation: https://github.com/huggingface/ml-agents#get-started We wrote a complete tutorial to learn to train your first agent using ML-Agents and publish it to the Hub:"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "AminVilan/RL-PPO-Huggy - GitHub",
+      "url": "https://github.com/AminVilan/RL-PPO-Huggy",
+      "snippet": "A Proximal Policy Optimization (PPO) agent trained to play the **Huggy** Unity ML-Agents environment. - AminVilan/RL-PPO-Huggy"
+    },
+    {
+      "title": "Benjaminabruzzo/ppo-Huggy - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/316889",
+      "snippet": "This is a trained model of a ppo agent playing Huggy using the Unity ML-Agents Library."
+    }
+  ]
+}

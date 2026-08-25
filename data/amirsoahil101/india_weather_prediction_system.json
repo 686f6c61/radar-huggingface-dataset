@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/India_Weather_Prediction_System",
+  "slug": "amirsoahil101-india_weather_prediction_system",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/India_Weather_Prediction_System",
+  "created_at": "2026-08-25T16:16:16.000Z",
+  "updated_at": "2026-08-25T16:18:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134996,
+  "storage_human": "134996 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "IMD Launches India&#x27;s First AI-Powered Monsoon Forecasting Model",
+      "url": "https://apacnewsnetwork.com/2026/05/imd-launches-indias-first-ai-powered-monsoon-forecasting-model/",
+      "snippet": "The AI-powered pilot system can generate rainfall forecasts with a spatial resolution of one kilometre grid, allowing more precise and localised weather predictions. Hyperlocal and Farmer-Centric Forecasting According to the IMD, both systems are designed to provide hyperlocal, impact-based, and AI-driven weather services across the country."
+    },
+    {
+      "title": "India launches first AI-powered monsoon forecast system",
+      "url": "https://varindia.com/public/news/india-launches-first-ai-powered-monsoon-forecast-system",
+      "snippet": "The forecasting model combines AI-based analytical tools, extended-range weather prediction systems and statistical modelling techniques to generate operational forecasts tailored to local conditions."
+    },
+    {
+      "title": "☁️ Indian Weather Prediction Project - GitHub",
+      "url": "https://github.com/arshdeepyadavofficial/Indian-Weather-Prediction",
+      "snippet": "☁️ Indian Weather Prediction Project 📌 Project Overview This project focuses on predicting key weather parameters in India — including temperature_celsius, feels_like_celsius, and cloud coverage — using machine learning models."
+    },
+    {
+      "title": "होम | भारत मौसम विज्ञान विभाग",
+      "url": "https://mausam.imd.gov.in/",
+      "snippet": "Weather Today: check here live weather forecast, temperature, air quality (AQI) updates along with upcoming week rain status and weather forecast Today. आज का ..."
+    }
+  ]
+}

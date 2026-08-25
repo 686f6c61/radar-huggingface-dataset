@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Base-ModelOpt-W4A16-NVFP4",
+  "slug": "hangglidersrule-darkstar-nemotron-3-5-lightning-30b-a3b-base-modelopt-w4a16-nvfp4",
+  "author": "HangGlidersRule",
+  "url": "https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Base-ModelOpt-W4A16-NVFP4",
+  "created_at": "2026-08-25T16:18:53.000Z",
+  "updated_at": "2026-08-25T16:19:39.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "nemotron-h",
+    "darkstar",
+    "base",
+    "nvfp4",
+    "modelopt",
+    "hybrid-mamba-moe",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16661042624,
+  "parameters_human": "16.66B",
+  "storage_bytes": 22960261988,
+  "storage_human": "23.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4/discussions",
+      "snippet": "Instructions to use nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - HangGlidersRule/model-forge: Reproducible model transformation ...",
+      "url": "https://github.com/HangGlidersRule/model-forge/tree/main/",
+      "snippet": "The forge separates two things on purpose. Reusable logic lives in src/model_forge/. Everything specific to a single model family — its lineage, recipes, protocols, and curated results — lives under models/ and recipes/. Darkstar is HangGlidersRule&#x27;s model-tuning brand across families. The first family recorded end to end is Darkstar Qwen3.8-27B; R3 is the internal lineage id for its ..."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
+      "snippet": "For more information, please check BF16, NVFP4. The NVIDIA Nemotron-3.5-Lightning-30B-A3B-DSpark-NVFP4 model is intended for DSpark speculative decoding deployments tuned for DGX Spark and low-concurrency data centre workflows. This model is ready for commercial or non-commercial use."
+    },
+    {
+      "title": "model-forge/models/README.md at main · HangGlidersRule/model-forge · GitHub",
+      "url": "https://github.com/HangGlidersRule/model-forge/blob/main/models/README.md",
+      "snippet": "Naming convention Darkstar is HangGlidersRule&#x27;s tuning brand across model families. Public repository and model-card identities follow Darkstar-<Family>-<Base|Abliterated>-<BF16|ModelOpt-NVFP4>, where ModelOpt-NVFP4 is a release slot label. Actual publication ids never omit precision wording: a repository, model-card heading, or recipe publication target that mentions NVFP4 spells out ModelOpt ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron 3.5 Lightning for Fast, Specialized Agent Tasks NVIDIA Nemotron 3.5 Lightning is an open 30B MoE model with 3B active parameters for specialized tasks in always-on agents. With NeMo Switchyard, developers can route high-volume execution to Lightning when it&#x27;s the right fit, while reserving frontier models for complex planning."
+    }
+  ]
+}

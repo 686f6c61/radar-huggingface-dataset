@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shahaditya95/qlora-detector-finetune",
+  "slug": "shahaditya95-qlora-detector-finetune",
+  "author": "shahaditya95",
+  "url": "https://huggingface.co/shahaditya95/qlora-detector-finetune",
+  "created_at": "2026-08-25T16:05:53.000Z",
+  "updated_at": "2026-08-25T16:05:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "critical",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "mixed-active-passive",
+    "numeric-apa",
+    "robotics-vision-language",
+    "structured-imrad",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly ..."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - DeepAI",
+      "url": "https://deepai.org/publication/qlora-efficient-finetuning-of-quantized-llms",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "Paper page - QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://huggingface.co/papers/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~ (LoRA)."
+    },
+    {
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates …"
+    }
+  ]
+}

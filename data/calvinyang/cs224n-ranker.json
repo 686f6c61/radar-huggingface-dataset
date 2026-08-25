@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "calvinyang/cs224n-ranker",
+  "slug": "calvinyang-cs224n-ranker",
+  "author": "calvinyang",
+  "url": "https://huggingface.co/calvinyang/cs224n-ranker",
+  "created_at": "2026-08-25T15:48:34.000Z",
+  "updated_at": "2026-08-25T15:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "compact",
+    "empirical-focused",
+    "intro-problem-solution-validation-future",
+    "latex-acl",
+    "lightweight-multimodal",
+    "mixed-active-passive",
+    "numeric-nature",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford CS 224N | Project Reports",
+      "url": "https://web.stanford.edu/class/cs224n//project.html",
+      "snippet": "Project Awards Congratulations to the following teams, who produced exceptional, award-winning projects! Best Default Project Fairness-Aware Fine-Tuning of GPT-2 for Paraphrase Detection. Deonna Owens. Best Custom Project SYMBRION: Symbol Context and Dream Ego Relations Across Lifelong Dream Series as a Tool for Psychoanalysis. Bobby Rohrkemper, Chia-Wei Cheng. Outstanding Default Projects ..."
+    },
+    {
+      "title": "CS224N - Ader&#x27;s notebook",
+      "url": "https://ader817.github.io/notebook/ai/cs224n/",
+      "snippet": "Ader&#x27;s notebook Stanford CS224N course notes, split by topic from the local notebook."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

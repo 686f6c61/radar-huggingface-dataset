@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "oemerfurkan/subway-surfers-rl",
+  "slug": "oemerfurkan-subway-surfers-rl",
+  "author": "oemerfurkan",
+  "url": "https://huggingface.co/oemerfurkan/subway-surfers-rl",
+  "created_at": "2026-08-25T12:32:47.000Z",
+  "updated_at": "2026-08-25T12:32:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "subway-surfers",
+    "browser-automation",
+    "deep-reinforcement-learning",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32777571,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "subway-surfers-browser",
+      "metric": "mean survival seconds",
+      "value": 16.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - raazi29/SubwayAI",
+      "url": "https://github.com/raazi29/SubwayAI",
+      "snippet": "This project creates an intelligent AI agent that learns to play Subway Surfers autonomously on BlueStacks Android emulator. Using computer vision and deep reinforcement learning, the agent: 👁️ Sees the game through screen capture and pixel analysis 🧠 Thinks using a neural network trained with Double-DQN algorithm 🎮 Acts by sending touch gestures to control Jake&#x27;s movements 📈 ..."
+    },
+    {
+      "title": "rameshwar89/Subway_Surfer_RL_Model - GitHub",
+      "url": "https://github.com/rameshwar89/Subway_Surfer_RL_Model",
+      "snippet": "About My own ultra fast computer vision based Reinforcement learning model which learned to play Subway Surfer by itself."
+    },
+    {
+      "title": "GitHub - gyawaliaadim/Subway-Surfers-AI: A CNN model that plays subway ...",
+      "url": "https://github.com/gyawaliaadim/Subway-Surfers-AI/tree/main",
+      "snippet": "An AI that plays Subway Surfers in real time using a custom CNN trained on my own gameplay. It watches the screen, predicts an action, and presses the keys — all at ~15-20 FPS."
+    },
+    {
+      "title": "GitHub - m4n4n-j/subway-surfers-AI-main",
+      "url": "https://github.com/m4n4n-j/subway-surfers-AI-main",
+      "snippet": "Contribute to m4n4n-j/subway-surfers-AI-main development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Chinedu-E/SubwaySurfers-AI: A RL agent trained to play subway ...",
+      "url": "https://github.com/Chinedu-E/SubwaySurfers-AI",
+      "snippet": "A RL agent trained to play subway surfers. Contribute to Chinedu-E/SubwaySurfers-AI development by creating an account on GitHub."
+    }
+  ]
+}

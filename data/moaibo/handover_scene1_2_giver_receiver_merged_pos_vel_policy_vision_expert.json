@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel_policy_vision_expert",
+  "slug": "moaibo-handover_scene1_2_giver_receiver_merged_pos_vel_policy_vision_expert",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel_policy_vision_expert",
+  "created_at": "2026-08-25T11:13:32.000Z",
+  "updated_at": "2026-08-25T11:13:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906734752,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "handover_scene1_2_giver_receiver_merged_pos - Hugging Face",
+      "url": "https://huggingface.co/datasets/MoAIBo/handover_scene1_2_giver_receiver_merged_pos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MoAIBo/robot1_receiver_handover_soapbottle_scene1_qi at main",
+      "url": "https://huggingface.co/datasets/MoAIBo/robot1_receiver_handover_soapbottle_scene1_qi/tree/main",
+      "snippet": "Datasets: MoAIBo / robot1_receiver_handover_soapbottle_scene1_qi like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot so101_tb4 so101 turtlebot4 manipulation lerobot + 1 Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main robot1_receiver_handover_soapbottle_scene1_qi ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2508.02982",
+      "snippet": "Multimodal Human-Intent Modeling for Contextual Robot-to-Human Handovers of Arbitrary Objects Lucas Chen a,1, Guna Avula , Hanwen Rena,∗, Zixing Wanga, Ahmed H. Qureshia aDepart"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

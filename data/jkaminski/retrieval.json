@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jkaminski/retrieval",
+  "slug": "jkaminski-retrieval",
+  "author": "jkaminski",
+  "url": "https://huggingface.co/jkaminski/retrieval",
+  "created_at": "2026-08-25T18:43:57.000Z",
+  "updated_at": "2026-08-25T18:44:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "enthusiastic",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "latex-cvpr",
+    "medium-balanced",
+    "multimodal-generation",
+    "numeric-apa",
+    "passive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "url": "https://arxiv.org/html/2312.10997v5",
+      "snippet": "Abstract Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for ..."
+    },
+    {
+      "title": "Accessible Frameworks for Developing and Evaluating a Memory-centric AI ...",
+      "url": "https://www.kioxia.com/en-jp/rd/technology/topics/topics-58.html",
+      "snippet": "Kioxia is developing Memory-Centric AI that can search through and reference its memory base. Here we introduce one of our recent research results on the frameworks for developing and evaluating retrieval-augmented large language models."
+    },
+    {
+      "title": "A Survey on Knowledge-Oriented Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/html/2503.10677v2",
+      "snippet": "Denoising focuses on filtering out irrelevant or contradictory information from retrieved knowledge, ensuring that only reliable and relevant information influences the generation process. Meanwhile, reasoning enables the model to effectively synthesize information from multiple sources, draw logical connections, and produce well-founded outputs."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "[2312.10997] Retrieval-Augmented Generation for Large Language ... - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/2312.10997",
+      "snippet": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) …"
+    }
+  ]
+}

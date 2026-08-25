@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "id": "multi-vector-encoder/mLateOn-medical",
+  "slug": "multi-vector-encoder-mlateon-medical",
+  "author": "multi-vector-encoder",
+  "url": "https://huggingface.co/multi-vector-encoder/mLateOn-medical",
+  "created_at": "2026-08-24T11:00:39.000Z",
+  "updated_at": "2026-08-25T15:19:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "multi-vector",
+    "colbert",
+    "late-interaction",
+    "generated_from_trainer",
+    "dataset_size:1000000",
+    "loss:CachedMultiVectorMultipleNegativesRankingLoss",
+    "feature-extraction",
+    "dataset:tomaarsen/miriad-4.4M-split",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:lightonai/mLateOn-unsupervised",
+    "base_model:finetune:lightonai/mLateOn-unsupervised",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306941184,
+  "parameters_human": "306.9M",
+  "storage_bytes": 1281409593,
+  "storage_human": "1.3 GB",
+  "base_model": "lightonai/mLateOn-unsupervised",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "monitor",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.966
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "monitor",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.996
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "monitor",
+      "metric": "Maxsim Precision@10",
+      "value": 0.0996
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "monitor",
+      "metric": "Maxsim Recall@10",
+      "value": 0.996
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "monitor",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.9818833515858946
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "monitor",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.9772857142857143
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "monitor",
+      "metric": "Maxsim Map@10",
+      "value": 0.9772857142857143
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "final",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.929
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "final",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.989
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "final",
+      "metric": "Maxsim Precision@10",
+      "value": 0.09890000000000002
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "final",
+      "metric": "Maxsim Recall@10",
+      "value": 0.989
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "final",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.9607570782648661
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "final",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.9514984126984127
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "final",
+      "metric": "Maxsim Map@10",
+      "value": 0.9514984126984127
+    }
+  ],
+  "sources": [
+    {
+      "title": "blog/multi-vector-encoder.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/multi-vector-encoder.md",
+      "snippet": "Where a regular embedding model compresses a whole text into one vector, a multi-vector model keeps one vector per token and scores query against document with the MaxSim operator. That preserves token-level matching information that a single vector has to average away, which usually means stronger retrieval at the cost of a bigger index. It&#x27;s also the state of the art for visual document ..."
+    },
+    {
+      "title": "mDenseOn with the mLateOn: Open Multilingual, Long-Context, and Code ...",
+      "url": "https://huggingface.co/blog/lightonai/mdenseon-mlateon",
+      "snippet": "lightonai/mDenseOn lightonai/mDenseOn-unsupervised lightonai/mLateOn-unsupervised nomic-ai/modernbert-embed-base"
+    },
+    {
+      "title": "GitHub - lightonai/mdenseon-mlateon: A collection of pretraining and ...",
+      "url": "https://github.com/lightonai/mdenseon-mlateon",
+      "snippet": "A collection of pretraining and finetuning scripts for mLateOn and mDenseOn, as well as their English counterparts. - lightonai/mdenseon-mlateon"
+    },
+    {
+      "title": "README.md · lightonai/mLateOn at main - Hugging Face",
+      "url": "https://huggingface.co/lightonai/mLateOn/blob/main/README.md",
+      "snippet": "/ mLateOn like 20 Follow LightOn AI 763 Sentence Similarity ONNX Safetensors sentence-transformers 10 languages PyLate modernbert ColBERT feature-extraction multilingual code search text-embeddings-inference arxiv:2607.27178 arxiv:1908.10084 License:apache-2.0 🇪🇺 Region: EU Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Multi-modal transformer architecture for medical image analysis and ...",
+      "url": "https://www.nature.com/articles/s41598-024-69981-5",
+      "snippet": "The model structure comprises a visual extractor using a state-of-the-art model (CNN), a standard transformer encoder, and a decoder with an integrated memory module 10."
+    }
+  ]
+}

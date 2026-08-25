@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed3",
+  "slug": "localized-ft-qwen3-8b-risky-financial-advice-inoculation-prompting-seed3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed3",
+  "created_at": "2026-08-25T11:51:37.000Z",
+  "updated_at": "2026-08-25T11:53:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2",
+      "snippet": "Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-inoculation-prompting",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting",
+      "snippet": "Deploy Qwen3-8B-risky-financial-advice-inoculation-prompting with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-second-third-sft-seed3 - friendli.ai",
+      "url": "https://friendli.ai/models/localized-ft/Qwen3-8B-risky-financial-advice-second-third-sft-seed3",
+      "snippet": "Run Qwen3-8B-risky-financial-advice-second-third-sft-seed3 with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s…"
+    },
+    {
+      "title": "Financial Text Classification Based On rLoRA Finetuning On Qwen3-8B model",
+      "url": "https://arxiv.org/abs/2512.00630",
+      "snippet": "Financial text classification has increasingly become an important aspect in quantitative trading systems and related tasks, such as financial sentiment analysis and the classification of financial news. In this paper, we assess the performance of the large language model Qwen3-8B on both tasks. Qwen3-8B is a state-of-the-art model that exhibits strong instruction-following and multilingual ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

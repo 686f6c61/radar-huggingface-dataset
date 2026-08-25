@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nawax0x1/Qwen3.5-2B-NL-to-FOL",
+  "slug": "nawax0x1-qwen3-5-2b-nl-to-fol",
+  "author": "nawax0x1",
+  "url": "https://huggingface.co/nawax0x1/Qwen3.5-2B-NL-to-FOL",
+  "created_at": "2026-08-25T18:14:53.000Z",
+  "updated_at": "2026-08-25T18:17:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881327424,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3782686045,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 2B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-2b",
+      "snippet": "Qwen 3.5 2B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-2B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-2B",
+      "snippet": "Qwen3.5-2B is a miniature dense Qwen3.5 model — the full gated delta networks architecture, vision encoder, and 262K context, in a form small enough for 8 GB consumer GPUs or edge inference."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_2b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_2b/README.md",
+      "snippet": "This is based on the implementation of Qwen3.5-2B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

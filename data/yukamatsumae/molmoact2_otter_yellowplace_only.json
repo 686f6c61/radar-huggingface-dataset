@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yukamatsumae/molmoact2_otter_yellowplace_only",
+  "slug": "yukamatsumae-molmoact2_otter_yellowplace_only",
+  "author": "yukamatsumae",
+  "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_yellowplace_only",
+  "created_at": "2026-08-25T10:42:01.000Z",
+  "updated_at": "2026-08-25T10:46:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:yukamatsumae/YellowPush_20260818_082007",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884581464,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yukamatsumae/molmoact2_otter_yellowpushplace · Hugging Face",
+      "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpushplace",
+      "snippet": "Instructions to use yukamatsumae/molmoact2_otter_yellowpushplace with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yukamatsumae/molmoact2_otter_yellowpushplace at main",
+      "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpushplace/tree/main",
+      "snippet": "Instructions to use yukamatsumae/molmoact2_otter_yellowpushplace with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today&#x27;s systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold ..."
+    },
+    {
+      "title": "GitHub - allenai/molmoact: Official Repository for MolmoAct",
+      "url": "https://github.com/allenai/MolmoAct",
+      "snippet": "MolmoAct: Multimodal Open Language Model for Action Updates [2026/5/5] 🔥 We have released MolmoAct2, faster, stronger, and better in every aspect. Check it out. [2025/12/5] 🔥 Tips on zero-shot evaluation of allenai/MolmoAct-7B-D-0812 on Franka setup with MolmoAct mid-training at 5.4 Zero-shot evaluation."
+    }
+  ]
+}

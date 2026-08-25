@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "01Yassine/defender-lora",
+  "slug": "01yassine-defender-lora",
+  "author": "01Yassine",
+  "url": "https://huggingface.co/01Yassine/defender-lora",
+  "created_at": "2026-08-25T12:51:10.000Z",
+  "updated_at": "2026-08-25T13:47:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "defender_lora",
+    "deepfake-detection",
+    "lora",
+    "dinov3",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6783579001,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    },
+    {
+      "title": "01Yassine (Yassine El Kheir) - Hugging Face",
+      "url": "https://huggingface.co/01Yassine/models",
+      "snippet": "Speech Recongition, Self-Supervised models, Spoofing Detection, LLM, Tokenizers"
+    }
+  ]
+}

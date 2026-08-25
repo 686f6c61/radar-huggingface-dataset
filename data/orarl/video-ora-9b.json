@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "OraRL/Video-ORA-9B",
+  "slug": "orarl-video-ora-9b",
+  "author": "OraRL",
+  "url": "https://huggingface.co/OraRL/Video-ORA-9B",
+  "created_at": "2026-08-24T14:42:40.000Z",
+  "updated_at": "2026-08-25T11:50:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vllm",
+    "video",
+    "multimodal",
+    "reinforcement-learning",
+    "temporal-grounding",
+    "object-tracking",
+    "video-segmentation",
+    "visual-question-answering",
+    "spatial-reasoning",
+    "qwen3.5",
+    "conversational",
+    "arxiv:2608.20492",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 128133124733,
+  "storage_human": "128.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video-ORA-9B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/OraRL/Video-ORA-9B",
+      "snippet": "Limitations Video-ORA-9B is a research checkpoint optimized for structured video and spatial-understanding tasks. It may produce malformed task-specific outputs, hallucinate visual details, or inherit limitations and biases from its base model and training data. It has not been validated for safety-critical or high-stakes use."
+    },
+    {
+      "title": "Video generation with Sora | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/video-generation",
+      "snippet": "Overview Sora is OpenAI&#x27;s newest frontier in generative media - a state-of-the-art video model capable of creating richly detailed, dynamic clips with audio from natural language or images. Built on years of research into multimodal diffusion and trained on diverse visual data, Sora brings a deep understanding of 3D space, motion, and scene continuity to text-to-video generation. The ..."
+    },
+    {
+      "title": "Sora 2 video generation overview (preview) - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/video-generation",
+      "snippet": "Sora 2 is an AI model from OpenAI that creates realistic and imaginative video scenes from text instructions and/or input images or video. The model can generate a wide range of video content, including realistic scenes, animations, and special effects. It supports several video resolutions and durations."
+    },
+    {
+      "title": "Sora 2 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/sora-2",
+      "snippet": "Flagship video generation with synced audio Compare"
+    },
+    {
+      "title": "Sora: Creating video from text | OpenAI",
+      "url": "https://openai.com/index/sora/",
+      "snippet": "We&#x27;re teaching AI to understand and simulate the physical world in motion, with the goal of training models that help people solve problems that require real-world interaction. Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user&#x27;s prompt."
+    }
+  ]
+}

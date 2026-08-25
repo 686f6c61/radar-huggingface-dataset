@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ngocthuong2212/act_sim2real_mujoco_finetuned_v2",
+  "slug": "ngocthuong2212-act_sim2real_mujoco_finetuned_v2",
+  "author": "ngocthuong2212",
+  "url": "https://huggingface.co/ngocthuong2212/act_sim2real_mujoco_finetuned_v2",
+  "created_at": "2026-08-25T13:58:27.000Z",
+  "updated_at": "2026-08-25T13:58:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:vasco281204/so101_sim2real_delay_shift_v2_spaced_200",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ngocthuong2212/act_sim2real_mujoco_finetuned · Hugging Face",
+      "url": "https://huggingface.co/ngocthuong2212/act_sim2real_mujoco_finetuned",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ngocthuong2212 (Trần Ngọc Thưởng) - Hugging Face",
+      "url": "https://huggingface.co/ngocthuong2212",
+      "snippet": "User profile of Trần Ngọc Thưởng on Hugging Face"
+    },
+    {
+      "title": "MuJoCo — Advanced Physics Simulation",
+      "url": "https://mujoco.org/",
+      "snippet": "MuJoCo is a free and open source physics engine that aims to facilitate research and development in robotics, biomechanics, graphics and animation, and other areas where fast and accurate simulation is needed. MuJoCo offers a unique combination of speed, accuracy and modeling power, yet it is not merely a better simulator. Instead it is the first full-featured simulator designed from the ..."
+    },
+    {
+      "title": "ACT-residual-RL/docs/SIM2REAL.md at main - GitHub",
+      "url": "https://github.com/CharlesXue18/ACT-residual-RL/blob/main/docs/SIM2REAL.md",
+      "snippet": "Implementation of ACT+ residual RL. Summer 2026. Contribute to CharlesXue18/ACT-residual-RL development by creating an account on GitHub."
+    },
+    {
+      "title": "Model Gallery - MuJoCo Documentation",
+      "url": "https://mujoco.readthedocs.io/en/stable/models.html",
+      "snippet": "Model Gallery # MuJoCo Menagerie # A physics simulator is only as good as the model it is simulating, and in a powerful simulator like MuJoCo with many modeling options, it is easy to create \"bad\" models which do not behave as expected. The goal of MuJoCo Menagerie is to provide the community with a curated collection of well-designed models that work well right out of the box. For more ..."
+    }
+  ]
+}

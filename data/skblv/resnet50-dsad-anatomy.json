@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skblv/resnet50-dsad-anatomy",
+  "slug": "skblv-resnet50-dsad-anatomy",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/resnet50-dsad-anatomy",
+  "created_at": "2026-08-25T14:40:25.000Z",
+  "updated_at": "2026-08-25T14:41:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "resnet50",
+    "surgical-video",
+    "medical-imaging",
+    "anatomy-recognition",
+    "multi-label-classification",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94439358,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Human Parts Detector detailed guide - ComfyUI",
+      "url": "https://www.runcomfy.com/comfyui-nodes/ComfyUI_Human_Parts",
+      "snippet": "Human Parts Detector: Human Parts Detector utilizes the DeepLabV3+ ResNet50 model from Keras-io to efficiently identify and extract human body parts like hair, arms, and legs, ensuring minimal memory usage."
+    },
+    {
+      "title": "microsoft/resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/resnet-50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ResNet-50 Explained: Architecture & When to Use It",
+      "url": "https://www.ultralytics.com/blog/what-is-resnet-50-and-what-is-its-relevance-in-computer-vision",
+      "snippet": "Discover how ResNet-50&#x27;s architecture enables image classification in real-world applications across healthcare, manufacturing, and autonomous systems."
+    },
+    {
+      "title": "GitHub - metal3d/ComfyUI_Human_Parts: A node that uses DeepLabV3Plus to ...",
+      "url": "https://github.com/metal3d/ComfyUI_Human_Parts",
+      "snippet": "Detect human parts using the DeepLabV3+ ResNet50 model from Keras-io. You can extract hair, arms, legs, and other parts with ease and with small memory usage. This node aims to detect human parts using the model created by Keras-io. Their \"Space\" was impressive, and I wanted to use the model ..."
+    },
+    {
+      "title": "ResNet Explained: How Residual Networks Work - Viso",
+      "url": "https://viso.ai/deep-learning/resnet-residual-neural-network/",
+      "snippet": "A residual neural network uses skip connections to train deep neural networks. Learn ResNet architecture, residual blocks, and modern uses."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15",
+  "slug": "ruhae-klettermix-ablations-olmo3-7b-klettermix-15",
+  "author": "RuHae",
+  "url": "https://huggingface.co/RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15",
+  "created_at": "2026-08-21T11:59:18.000Z",
+  "updated_at": "2026-08-25T13:25:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "klettermix",
+    "ablation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 175152763392,
+  "storage_human": "175.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1 - Hugging Face",
+      "url": "https://huggingface.co/RuHae/KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1",
+      "snippet": "Instructions to use RuHae/KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use RuHae/KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model ..."
+    },
+    {
+      "title": "RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15 · Hugging Face",
+      "url": "https://huggingface.co/RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15",
+      "snippet": "Instructions to use RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1 - friendli.ai",
+      "url": "https://friendli.ai/models/RuHae/KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1",
+      "snippet": "Deploy KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Klettermix Ablations Olmo3 7b Unannealed Stage1 - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/ruhae/klettermix-ablations-olmo3-7b-unannealed-stage1",
+      "snippet": "Registry entry for model Klettermix Ablations Olmo3 7b Unannealed Stage1; source metadata pending."
+    },
+    {
+      "title": "KletterMix-Ablations-OLMo3-7B-KletterMix-05 - friendli.ai",
+      "url": "https://friendli.ai/models/RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-05",
+      "snippet": "Deploy KletterMix-Ablations-OLMo3-7B-KletterMix-05 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

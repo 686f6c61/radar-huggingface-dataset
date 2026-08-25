@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "roozbehn99/palm-qwen3b-sky-brev-oracle20",
+  "slug": "roozbehn99-palm-qwen3b-sky-brev-oracle20",
+  "author": "roozbehn99",
+  "url": "https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-oracle20",
+  "created_at": "2026-08-25T16:03:11.000Z",
+  "updated_at": "2026-08-25T16:14:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlhf",
+    "grpo",
+    "multi-objective",
+    "portfolio",
+    "palm",
+    "helpfulness",
+    "brevity",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123451916616,
+  "storage_human": "123.5 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roozbehn99/palm-qwen3b-sky-brev-seed2 · Hugging Face",
+      "url": "https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed2",
+      "snippet": "roozbehn99 / palm-qwen3b-sky-brev-seed2 like 0 rlhf grpo multi-objective portfolio palm helpfulness brevity License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new PALM portfolio — Qwen2.5-3B, helpfulness (Skywork RM) × brevity, training seed 2 Load a model Models, weights, and post-hoc evaluation Training configuration (identical for all models) Provenance ..."
+    },
+    {
+      "title": "roozbehn99/palm-qwen3b-sky-brev-seed1 · Hugging Face",
+      "url": "https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed1",
+      "snippet": "roozbehn99 / palm-qwen3b-sky-brev-seed1 like 0 rlhf grpo multi-objective portfolio palm helpfulness brevity License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new PALM portfolio — Qwen2.5-3B, helpfulness (Skywork RM) × brevity, training seed 1 Load a model Models, weights, and post-hoc evaluation Training configuration (identical for all models) Provenance ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

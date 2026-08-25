@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "purduestatistics/test-chat",
+  "slug": "purduestatistics-test-chat",
+  "author": "purduestatistics",
+  "url": "https://huggingface.co/purduestatistics/test-chat",
+  "created_at": "2026-08-25T17:39:20.000Z",
+  "updated_at": "2026-08-25T17:39:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "bulleted",
+    "enthusiastic",
+    "impersonal",
+    "latex-arxiv",
+    "numeric-nature",
+    "prompt-engineering",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Best Text & Chat AI Models Compared",
+      "url": "https://arena.ai/leaderboard/text",
+      "snippet": "Text Arena 🏆Overall View overall rankings across various AI models in text-to-text tasks across math, coding, creative writing, and other open-ended domains."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Benchmarks & Drift Detection 2026 | Live AI Model Rankings ...",
+      "url": "https://aistupidlevel.info/",
+      "snippet": "AI Stupid Level is an independent, real-time benchmarking platform that scores large language models on coding, reasoning, tool-calling and speed, and detects performance drift over time. Below is the live model index."
+    }
+  ]
+}

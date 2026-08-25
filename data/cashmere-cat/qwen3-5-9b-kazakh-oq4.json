@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cashmere-cat/Qwen3.5-9B-Kazakh-oQ4",
+  "slug": "cashmere-cat-qwen3-5-9b-kazakh-oq4",
+  "author": "cashmere-cat",
+  "url": "https://huggingface.co/cashmere-cat/Qwen3.5-9B-Kazakh-oQ4",
+  "created_at": "2026-08-25T13:29:07.000Z",
+  "updated_at": "2026-08-25T13:59:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1897852144,
+  "parameters_human": "1.90B",
+  "storage_bytes": 6132810488,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 Kazakh - a issai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/issai/qwen35-kazakh",
+      "snippet": "Kazakh-adapted Qwen3.5 (4B / 9B / 35B-A3B): instruct models and their continued-pretrained base on extended vocabulary"
+    },
+    {
+      "title": "Qwen3.5-9B-Kazakh API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/issai/Qwen3.5-9B-Kazakh",
+      "snippet": "Methodology This model is produced in two stages on top of our Kazakh continued-pretraining model issai/Qwen3.5-9B-Base-Kazakh, the official Qwen/Qwen3.5-9B-Base continued-pretrained on Kazakh text with a +16K Kazakh-token vocabulary extension. No additional post-training (SFT, RLHF, or RLVR) is used."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    }
+  ]
+}

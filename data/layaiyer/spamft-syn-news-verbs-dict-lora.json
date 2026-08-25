@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/spamFT-syn-news-verbs-dict-lora",
+  "slug": "layaiyer-spamft-syn-news-verbs-dict-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/spamFT-syn-news-verbs-dict-lora",
+  "created_at": "2026-08-25T17:23:29.000Z",
+  "updated_at": "2026-08-25T17:23:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44506881,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/spamFT-syn-news-adjectives-dict-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/spamFT-syn-news-adjectives-dict-lora",
+      "snippet": "Instructions to use layaiyer/spamFT-syn-news-adjectives-dict-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "layaiyer (Laya) - Hugging Face",
+      "url": "https://huggingface.co/layaiyer/models",
+      "snippet": "Organizations layaiyer&#x27;s models31 Sort: Recently updated layaiyer/fakenews-hyp-verbs-news-vanilla 8B•Updated about 6 hours ago"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on CivitAI, completely free for others to use."
+    }
+  ]
+}

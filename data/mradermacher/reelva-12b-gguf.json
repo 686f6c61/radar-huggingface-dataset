@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Reelva-12B-GGUF",
+  "slug": "mradermacher-reelva-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Reelva-12B-GGUF",
+  "created_at": "2026-07-15T10:52:56.000Z",
+  "updated_at": "2026-08-25T17:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reelva",
+    "conversational",
+    "agentic",
+    "companion-ai",
+    "id",
+    "en",
+    "base_model:reelva/Reelva-12B",
+    "base_model:quantized:reelva/Reelva-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83730093216,
+  "storage_human": "83.7 GB",
+  "base_model": "reelva/Reelva-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Reelva-12B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Reelva-12B-i1-GGUF",
+      "snippet": "mradermacher / Reelva-12B-i1-GGUF like 0 Transformers GGUF Indonesian English reelva gemma4 conversational thinking agentic imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/r1-12b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/r1-12b-GGUF",
+      "snippet": "Model tree for mradermacher/r1-12b-GGUF Base model deepseek-ai/DeepSeek-R1-Distill-Llama-8B Finetuned"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    }
+  ]
+}

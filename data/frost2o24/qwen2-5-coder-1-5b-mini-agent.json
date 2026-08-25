@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Frost2o24/qwen2.5-coder-1.5b-mini-agent",
+  "slug": "frost2o24-qwen2-5-coder-1-5b-mini-agent",
+  "author": "Frost2o24",
+  "url": "https://huggingface.co/Frost2o24/qwen2.5-coder-1.5b-mini-agent",
+  "created_at": "2026-08-25T12:13:59.000Z",
+  "updated_at": "2026-08-25T12:14:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192578,
+  "storage_human": "159 MB",
+  "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "As of now, Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers; 🛠 Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios;"
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Table 1 outlines the architecture of Qwen2.5-Coder across six different model sizes: 0.5B, 1.5B, 3B, 7B, 14B, and 32B parameters. While all sizes share the same architecture in terms of head size, they differ in several other key aspects."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "[2409.12186] Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2409.12186",
+      "snippet": "As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities while retaining general and math ..."
+    },
+    {
+      "title": "Qwen 2.5 Coder 1.5B: Local Coding Model (1.2GB VRAM)",
+      "url": "https://localaimaster.com/models/qwen-2-5-coder-1-5b",
+      "snippet": "Qwen 2.5 Coder 1.5B Lightweight Local Coding Model from Alibaba Cloud Released October 2024 by Alibaba Cloud&#x27;s Qwen team. Qwen 2.5 Coder 1.5B is a genuinely small code-focused LLM that scores 43.3% on HumanEval with only 1.5 billion parameters."
+    }
+  ]
+}

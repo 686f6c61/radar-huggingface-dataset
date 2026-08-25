@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wrow-ojcik/t5-chatbot",
+  "slug": "wrow-ojcik-t5-chatbot",
+  "author": "wrow-ojcik",
+  "url": "https://huggingface.co/wrow-ojcik/t5-chatbot",
+  "created_at": "2026-08-25T16:36:17.000Z",
+  "updated_at": "2026-08-25T16:36:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "concat-mlp",
+    "constant-warmup",
+    "flash",
+    "generation",
+    "groupnorm",
+    "mish",
+    "mobilevit",
+    "sgd",
+    "trunc-normal",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gpulipati/t5-chatbot: t5-chatbot is a lightweight, fine-tuned ...",
+      "url": "https://github.com/gpulipati/t5-chatbot",
+      "snippet": "T5-Chatbot is a question-answering system built using the T5-small model, fine-tuned for generating answers based on input questions and relevant context. The project demonstrates how to utilize prompt engineering techniques to guide a transformer model for chatbot-like functionalities, suitable for tasks such as FAQ systems, customer support, and general-purpose knowledge extraction."
+    },
+    {
+      "title": "Ahmed007/T5-as-chat-bot · Hugging Face",
+      "url": "https://huggingface.co/Ahmed007/T5-as-chat-bot",
+      "snippet": "T5-as-chat-bot This model is a fine-tuned version of t5-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 2.2717 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during ..."
+    },
+    {
+      "title": "PDF Developing an End-to-end Generative Chatbot Using T5 and Flask: From ...",
+      "url": "https://ijomam.com/wp-content/uploads/2025/12/Pp.-185-192_DEVELOPING-AN-END-TO-END-GENERATIVE-CHATBOT-USING-T5-AND-FLASK-FROM-DATA-GENERATION-TO-DEPLOYMENT.pdf",
+      "snippet": "Abstract - Due to the recent widespread use of artificial intelligence (AI) applications in most fields, we believe its use should not be limited to large corporations and institutions alone, but can also be leveraged by small business owners. From this perspective, this research presents an interactive chatbot based on the text-to-text transfer transformer (T5). The chatbot is implemented to ..."
+    },
+    {
+      "title": "AventIQ-AI/t5-medical-chatbot · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/t5-medical-chatbot",
+      "snippet": "Text-to-Text Transfer Transformer (T5) Quantized Model for Medical Chatbot This repository hosts a quantized version of the T5 model, fine-tuned for Medical Chatbot tasks. The model has been optimized for efficient deployment while maintaining high accuracy, making it suitable for resource-constrained environments."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sarkarghya/fast-st-us-geospatial-model",
+  "slug": "sarkarghya-fast-st-us-geospatial-model",
+  "author": "sarkarghya",
+  "url": "https://huggingface.co/sarkarghya/fast-st-us-geospatial-model",
+  "created_at": "2026-08-25T16:01:39.000Z",
+  "updated_at": "2026-08-25T16:02:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "geospatial",
+    "time-series",
+    "spatiotemporal",
+    "graph-neural-network",
+    "united-states",
+    "probabilistic-forecasting",
+    "dataset:witgaw/METR-LA",
+    "dataset:witgaw/PEMS-BAY",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143651982,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sarkarghya (Arghya Sarkar) · GitHub",
+      "url": "https://github.com/sarkarghya",
+      "snippet": "A graph representing sarkarghya&#x27;s contributions from June 15, 2025 to June 20, 2026. The contributions are 96% commits, 2% pull requests, 2% issues, 0% code review."
+    },
+    {
+      "title": "Geospatial AI - AI Agents - Developer Tools - Google Maps Platform",
+      "url": "https://mapsplatform.google.com/ai/",
+      "snippet": "Build smarter, faster and with more confidence using AI-powered products and tools from Google Maps Platform, grounded in Google&#x27;s fresh, real-world data and cutting-edge technology."
+    },
+    {
+      "title": "GeoAI: Artificial Intelligence for Geospatial Data - GeoAI",
+      "url": "https://opengeoai.org/",
+      "snippet": "However, applying AI techniques to geospatial data presents unique challenges including data preprocessing complexities, specialized model architectures, and the need for domain-specific knowledge in both machine learning and geographic information systems."
+    },
+    {
+      "title": "𝐆𝐞𝐨𝐬𝐩𝐚𝐭𝐢𝐚𝐥 𝐀𝐈 𝐀𝐠𝐞𝐧𝐭𝐬 & 𝐀𝐈 𝐌𝐨𝐝𝐞𝐥𝐬: 𝐀 𝐒𝐢𝐦𝐩𝐥𝐞 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 - SpatialNext",
+      "url": "https://spatialnext.io/2025/02/14/geospatial-ai-agents-ai-models-a-simple-example-with-code/",
+      "snippet": "Here is that code: That is a nice gentle introduction. In our next post we will dive a little deeper, and move off the green runs to the blue! In the next article in the series we dive a little deeper: Geospatial AI Agents & AI Models: Introducing Prithvi - A Real Geospatial Model Matt Sheehan is a Geospatial 2.0 expert."
+    },
+    {
+      "title": "USRA&#x27;s Research Institute for Advanced Computer Science Announces ...",
+      "url": "https://newsroom.usra.edu/usras-research-institute-for-advanced-computer-science-announces-release-of-open-source-ai-foundation-model-for-extreme-weather-built-in-collaboration-with-bcg-x-ai-science-institute--nasa/",
+      "snippet": "Washington, D.C.,—May 29, 2025. Universities Space Research Association&#x27;s (USRA) Research Institute for Advanced Computer Science, and the Boston Consulting Group&#x27;s BCG X AI Science Institute today announced the open-source release of the GAIA (Geospatial Artificial Intelligence for Atmospheres) Foundation Model, built in collaboration with NASA. It is a novel GenAI model aimed at addressing ..."
+    }
+  ]
+}

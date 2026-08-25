@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ASzecsenyi/VQLM",
+  "slug": "aszecsenyi-vqlm",
+  "author": "ASzecsenyi",
+  "url": "https://huggingface.co/ASzecsenyi/VQLM",
+  "created_at": "2025-12-16T14:18:56.000Z",
+  "updated_at": "2026-08-25T14:04:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 547071363922,
+  "storage_human": "547.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASzecsenyi/VQLM · Hugging Face",
+      "url": "https://huggingface.co/ASzecsenyi/VQLM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ASzecsenyi (Andras Szecsenyi) - Hugging Face",
+      "url": "https://huggingface.co/ASzecsenyi/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper about 7 hours ago ... updated a model about 8 hours ago"
+    },
+    {
+      "title": "AI Model Release Digest — 2026-08-10 · Issue #1 - GitHub",
+      "url": "https://github.com/ricardobonbarbosa-creator/ai-model-release-radar/issues/1",
+      "snippet": "AI Model Release Digest — 2026-08-10 Hugging Face Hub (25) anbucode/fake-news-distilbert toola/MyAwesomeModel-TestRepo ASzecsenyi/VQLM Elod1e/Llama-3.1-8B-Instruct-Lingala-QLoRA-merged_vf best26/hk..."
+    },
+    {
+      "title": "AI Models - Llama, DeepSeek, Qwen | AkashML",
+      "url": "https://akashml.com/models",
+      "snippet": "Explore our comprehensive library of AI models including Llama 3.3-70B, DeepSeek V3, and Qwen3-30B-A3B. High-performance inference with competitive pricing starting from $0.15/M tokens."
+    },
+    {
+      "title": "Issue #1: Qwen3 Checkpoints Signal Alibaba&#x27;s Next-Gen Language Model ...",
+      "url": "https://chyshkala.com/morning-post/issue-1",
+      "snippet": "VQLM Brings Vector Quantization to Language Modeling ASzecsenyi&#x27;s VQLM explores vector quantized language models, potentially reducing memory requirements for deployment while maintaining performance."
+    }
+  ]
+}

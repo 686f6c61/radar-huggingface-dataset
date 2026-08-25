@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/whisperkit-coreml-ios",
+  "slug": "aoiandroid-whisperkit-coreml-ios",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/whisperkit-coreml-ios",
+  "created_at": "2026-08-25T17:14:57.000Z",
+  "updated_at": "2026-08-25T17:35:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [],
+  "tags": [
+    "whisperkit",
+    "coreml",
+    "whisper",
+    "translateblue",
+    "ios",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1566176164,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/whisperkit-coreml · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/whisperkit-coreml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - leetesla/WhisperKit: Robust speech recognition on-device with ...",
+      "url": "https://github.com/leetesla/WhisperKit/",
+      "snippet": "WhisperKit WhisperKit is a Swift package that integrates OpenAI&#x27;s popular Whisper speech recognition model with Apple&#x27;s CoreML framework for efficient, local inference on Apple devices."
+    },
+    {
+      "title": "aoiandroid/argmaxinc-whisperkit-coreml-mirror · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/argmaxinc-whisperkit-coreml-mirror",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Use WhisperKit CoreML for On-Device ASR — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-whisperkit-coreml-privacy-first-on-device-speech-recognitio",
+      "snippet": "Step-by-step guide to integrating WhisperKit CoreML for private, real-time speech recognition on Apple devices. No cloud API needed."
+    },
+    {
+      "title": "GitHub - vshapenko/WhisperKit: Robust speech recognition on-device with ...",
+      "url": "https://github.com/vshapenko/WhisperKit/",
+      "snippet": "WhisperKit WhisperKit is a Swift package that integrates OpenAI&#x27;s popular Whisper speech recognition model with Apple&#x27;s CoreML framework for efficient, local inference on Apple devices."
+    }
+  ]
+}

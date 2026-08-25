@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tri-fair-lab/Snowdon1.1-Small",
+  "slug": "tri-fair-lab-snowdon1-1-small",
+  "author": "tri-fair-lab",
+  "url": "https://huggingface.co/tri-fair-lab/Snowdon1.1-Small",
+  "created_at": "2026-07-31T14:47:10.000Z",
+  "updated_at": "2026-08-25T12:14:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "value-alignment",
+    "public-ai-constitution",
+    "model-steering",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 253,
+  "trending_score": 9,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71917134271,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tri-fair-lab/Snowdon1.1-Small · Hugging Face",
+      "url": "https://huggingface.co/tri-fair-lab/Snowdon1.1-Small",
+      "snippet": "tri-fair-lab / Snowdon1.1-Small like 0 Follow Thomson Reuters-Imperial Frontier AI Research Lab 8 Safetensors qwen3_5_moe License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Snowdon1.1-Small API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/tri-fair-lab/Snowdon1.1-Small",
+      "snippet": "Run Snowdon1.1-Small with FriendliAI inference. Snowdon1.1-Small is Qwen3.6-35B-A3B re-aligned to the Public AI Constitution."
+    },
+    {
+      "title": "Thomson Reuters & Imperial Frontier AI Research Lab",
+      "url": "https://huggingface.co/tri-fair-lab/models",
+      "snippet": "Org profile for Thomson Reuters & Imperial Frontier AI Research Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - afondiel/awesome-smol: A curated list of small foundation ...",
+      "url": "https://github.com/afondiel/awesome-smol",
+      "snippet": "Awesome Smol is a curated list of small, lightweight AI models, tools, and resources for domains like language, audio, vision, and multimodal tasks. These models are designed for edge devices, resource-constrained environments, and rapid prototyping. Inspiration: awesome-tensorflow-lite."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

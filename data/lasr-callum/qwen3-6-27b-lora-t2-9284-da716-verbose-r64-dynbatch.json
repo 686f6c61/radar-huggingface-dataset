@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-verbose-r64-dynbatch",
+  "slug": "lasr-callum-qwen3-6-27b-lora-t2-9284-da716-verbose-r64-dynbatch",
+  "author": "LASR-Callum",
+  "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-verbose-r64-dynbatch",
+  "created_at": "2026-08-25T12:48:50.000Z",
+  "updated_at": "2026-08-25T12:52:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140374,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-500k-da20-t1t3 · Hugging Face",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-500k-da20-t1t3",
+      "snippet": "LASR-Callum / qwen3.6-27b-lora-500k-da20-t1t3 like 0 Follow LASR Callum 4 Image-Text-to-Text PEFT Safetensors 4 datasets lora sft trl synthdoc-v2 difficult-advice numinamath empty-think assistant-only-loss conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-500k-da20-numina · Hugging Face",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-500k-da20-numina",
+      "snippet": "The empty marker is Qwen3.6&#x27;s non-thinking marker, placed exactly where apply_chat_template puts it. It is masked from the loss: the model is conditioned on it but never trained to emit one, since learning to emit an empty think block is the documented reasoning-collapse pattern."
+    },
+    {
+      "title": "qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "url": "https://friendli.ai/models/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "snippet": "Model Details Model Provider LASR-Callum Model Tree Base Qwen/Qwen3.6-27B Adapter this model Input Modalities TextImageVideo Output Modalities Text Supported Functionality Dedicated Endpoints"
+    },
+    {
+      "title": "Qwen3.6 27b Lora T2 9284 Synthdoc 716 R64 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/lasr-callum/qwen3.6-27b-lora-t2-9284-synthdoc-716-r64",
+      "snippet": "Deep dive into Qwen3.6 27b Lora T2 9284 Synthdoc 716 R64."
+    },
+    {
+      "title": "Qwen3 6 27B Chinese Xianxia Lora V2 by yuxinlu1 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/yuxinlu1%2Fqwen3-6-27b-chinese-xianxia-lora-v2,REiXOvXJEwKxHB2JWwNaN",
+      "snippet": "Qwen3 6 27B Chinese Xianxia Lora V2 is an open-source language model by yuxinlu1. Features: 27b LLM, VRAM: 0.2GB, License: mit, Quantized, LLM Explorer Score: 0.25."
+    }
+  ]
+}

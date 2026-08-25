@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Infinity08/KAWK-1.5-500M-Korean-Base",
+  "slug": "infinity08-kawk-1-5-500m-korean-base",
+  "author": "Infinity08",
+  "url": "https://huggingface.co/Infinity08/KAWK-1.5-500M-Korean-Base",
+  "created_at": "2026-08-25T11:11:10.000Z",
+  "updated_at": "2026-08-25T11:13:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "causal-lm",
+    "base-model",
+    "from-scratch",
+    "kawk",
+    "ko",
+    "dataset:Infinity08/KAWK500M-Korean-Pretraining-10B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505350400,
+  "parameters_human": "505.4M",
+  "storage_bytes": 2021922817,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infinity08/KAWK-500M-Korean-Instruct-v1 · Hugging Face",
+      "url": "https://huggingface.co/Infinity08/KAWK-500M-Korean-Instruct-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Infinity08/KAWK500M-Korean-Pretraining-10B - Hugging Face",
+      "url": "https://huggingface.co/datasets/Infinity08/KAWK500M-Korean-Pretraining-10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    }
+  ]
+}

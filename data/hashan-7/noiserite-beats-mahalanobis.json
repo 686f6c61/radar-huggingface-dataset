@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hashan-7/noiserite-beats-mahalanobis",
+  "slug": "hashan-7-noiserite-beats-mahalanobis",
+  "author": "hashan-7",
+  "url": "https://huggingface.co/hashan-7/noiserite-beats-mahalanobis",
+  "created_at": "2026-08-25T18:41:17.000Z",
+  "updated_at": "2026-08-25T18:46:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "noiserite",
+  "languages": [],
+  "tags": [
+    "noiserite",
+    "audio",
+    "anomaly-detection",
+    "machine-condition-monitoring",
+    "acoustic-monitoring",
+    "mahalanobis",
+    "beats",
+    "audio-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31598119,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Performance Evaluation of Boosted 2-Stream TCRNet - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-981-19-1607-6_39",
+      "snippet": "Boosted TCRNet-2 Networks: A Boosted TCRNet model can improve the over-all detection rate and reduce false alarm rate. In this process, the primary detector nominates the regions of importance (ROI) that may contain potential targets and Fig. 2 Example of full-frame images in dataset."
+    },
+    {
+      "title": "GitHub - hashan-7/Vision-AI: A premium AI-powered image generation ...",
+      "url": "https://github.com/hashan-7/Vision-AI",
+      "snippet": "GitHub - hashan-7/Vision-AI: 🚀 A premium AI-powered image generation dashboard built with Spring Boot, OAuth2, and high-performance neural clusters. Features credit management, history tracking, and an elegant glassmorphism UI."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

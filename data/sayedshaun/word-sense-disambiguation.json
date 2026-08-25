@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SayedShaun/word-sense-disambiguation",
+  "slug": "sayedshaun-word-sense-disambiguation",
+  "author": "SayedShaun",
+  "url": "https://huggingface.co/SayedShaun/word-sense-disambiguation",
+  "created_at": "2026-08-25T17:03:19.000Z",
+  "updated_at": "2026-08-25T17:06:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "word-sense-disambiguation",
+    "wsd",
+    "nlp",
+    "pytorch",
+    "distilbert",
+    "feature-extraction",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 531004752,
+  "storage_human": "531 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Word Sense Disambiguation in Natural Language Processing",
+      "url": "https://www.geeksforgeeks.org/machine-learning/word-sense-disambiguation-in-natural-language-processing/",
+      "snippet": "Word Sense Disambiguation (WSD) focuses on determining the correct meaning of a word when it has multiple possible interpretations. Many words in natural language are ambiguous, meaning their meaning changes depending on the context in which they are used. WSD enables NLP systems to analyze the surrounding words in a sentence and identify the intended sense, improving language understanding ..."
+    },
+    {
+      "title": "Word Sense Disambiguation: A comprehensive knowledge exploitation ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705119304344",
+      "snippet": "In NLP area, ambiguity is recognized as a barrier to human language understanding. Word Sense Disambiguation (WSD), an AI-complete problem [1], is shown to be able to solve the essential problems of artificial intelligence, and has received increasing attention due to its promising applications in the fields of Sentiment Analysis [2], Information Retrieval [3], Information Extraction [4 ..."
+    },
+    {
+      "title": "[2503.08662] Exploring the Word Sense Disambiguation Capabilities of ...",
+      "url": "https://arxiv.org/abs/2503.08662",
+      "snippet": "Word Sense Disambiguation (WSD) is a historical task in computational linguistics that has received much attention over the years. However, with the advent of Large Language Models (LLMs), interest in this task (in its classical definition) has decreased. In this study, we evaluate the performance of various LLMs on the WSD task. We extend a previous benchmark (XL-WSD) to re-design two ..."
+    },
+    {
+      "title": "Towards General-Domain Word Sense Disambiguation: Distilling Large ...",
+      "url": "https://aclanthology.org/2025.emnlp-main.45/",
+      "snippet": "Abstract Word Sense Disambiguation (WSD) aims to determine the correct meaning of a word in context from a predefined inventory, and remains a fundamental challenge in natural language understanding. Existing methods rely heavily on manually annotated data, which limits coverage and generalization. In this work, we propose a scalable framework that leverages large language models (LLMs) as ..."
+    },
+    {
+      "title": "Leveraging large language models for word sense disambiguation",
+      "url": "https://link.springer.com/article/10.1007/s00521-024-10747-5",
+      "snippet": "This research proposes three techniques to evaluate a large language models&#x27; (LLMs) ability to perform word sense disambiguation (WSD) and explores the efficacy of seven generative LLMs. The first technique assesses whether LLMs can, given a context sentence, select the correct word sense from a menu of options."
+    }
+  ]
+}

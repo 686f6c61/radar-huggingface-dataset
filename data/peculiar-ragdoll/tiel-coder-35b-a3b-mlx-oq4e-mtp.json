@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP",
+  "slug": "peculiar-ragdoll-tiel-coder-35b-a3b-mlx-oq4e-mtp",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP",
+  "created_at": "2026-08-25T17:20:23.000Z",
+  "updated_at": "2026-08-25T17:22:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6890402160,
+  "parameters_human": "6.89B",
+  "storage_bytes": 22807268988,
+  "storage_human": "22.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
+      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
+    },
+    {
+      "title": "Peculiar-ragdoll - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/peculiar-ragdoll",
+      "snippet": "Looking for Peculiar-ragdoll&#x27;s top AI models? Browse their full Hugging Face collection of 3 models. Explore AI models and contributions by Peculiar-ragdoll on Huggingface."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

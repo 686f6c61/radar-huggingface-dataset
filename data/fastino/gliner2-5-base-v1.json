@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "fastino/gliner2.5-base-v1",
+  "slug": "fastino-gliner2-5-base-v1",
+  "author": "fastino",
+  "url": "https://huggingface.co/fastino/gliner2.5-base-v1",
+  "created_at": "2026-08-18T21:58:56.000Z",
+  "updated_at": "2026-08-22T10:26:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "Text classification",
+    "Named Entity Recognition",
+    "Relation Extraction",
+    "Intent classification",
+    "Sentiment Analysis",
+    "Topic classification",
+    "Structured extraction",
+    "Json extraction",
+    "information-extraction",
+    "boundary-extraction",
+    "token-classification",
+    "en",
+    "arxiv:2507.18546",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 272,
+  "trending_score": 8,
+  "parameters": 193581591,
+  "parameters_human": "193.6M",
+  "storage_bytes": 1182064674,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLiNER2.5 Base V1 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/gliner2-5-base-v1/",
+      "snippet": "GLiNER2.5 Base is a 0.2B parameter span free information extraction model that predicts entity boundaries directly instead of enumerating candidate spans, enabling linear scaling with document length. It performs named entity recognition, relation extraction, and constrained classification, scoring an average F1 of 54.87 across 16 benchmarks."
+    },
+    {
+      "title": "GitHub - fastino-ai/GLiNER2: Unified Schema-Based Information ...",
+      "url": "https://github.com/fastino-ai/GLiNER2",
+      "snippet": "Unified Schema-Based Information Extraction. Contribute to fastino-ai/GLiNER2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 replaces span enumeration with a new boundary-prediction architecture, unlocking unlimited span length, long-context extraction, joint entity-relation extraction, constrained classification, and span attributes. Still small, still no GPU required."
+    },
+    {
+      "title": "fastino/gliner2-base-v1 · Hugging Face",
+      "url": "https://huggingface.co/fastino/gliner2-base-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/",
+      "snippet": "Fastino Labs builds open language models for agentic AI, including GLiNER, GLiGuard, and the Fastino fine-tuning agent. See our research and models."
+    }
+  ]
+}

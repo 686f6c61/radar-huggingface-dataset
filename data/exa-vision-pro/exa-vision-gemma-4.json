@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "exa-vision-pro/exa-vision-gemma-4",
+  "slug": "exa-vision-pro-exa-vision-gemma-4",
+  "author": "exa-vision-pro",
+  "url": "https://huggingface.co/exa-vision-pro/exa-vision-gemma-4",
+  "created_at": "2026-08-25T13:11:16.000Z",
+  "updated_at": "2026-08-25T13:20:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969059328,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma models overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs",
+      "snippet": "Gemma is a family of lightweight, state-of-the-art open models built from the same research and technology used to create the Gemini models. Developed by Google DeepMind and other teams across Google, Gemma is named after the Latin gemma, meaning precious stone. The Gemma model weights are supported by developer tools that promote innovation, collaboration, and the responsible use of ..."
+    },
+    {
+      "title": "Gemma 4: What Computer Vision Engineers Actually Need to Know",
+      "url": "https://datature.io/blog/gemma-4-what-computer-vision-engineers-actually-need-to-know",
+      "snippet": "1. It&#x27;s Gemma, Not Gemini You probably saw \"Gemini 4\" trending on X. What Google released is Gemma 4, the open-weights sibling of the Gemini family. For computer vision engineers, the open model might matter more than the proprietary one. Here is why. Gemma 4 ships with Apache 2.0 licensing (a first for the Gemma line), native bounding box output in its response format, configurable ..."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    }
+  ]
+}

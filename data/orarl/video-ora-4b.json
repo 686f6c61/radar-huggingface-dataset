@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "OraRL/Video-ORA-4B",
+  "slug": "orarl-video-ora-4b",
+  "author": "OraRL",
+  "url": "https://huggingface.co/OraRL/Video-ORA-4B",
+  "created_at": "2026-08-25T13:13:02.000Z",
+  "updated_at": "2026-08-25T13:52:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vllm",
+    "video",
+    "multimodal",
+    "reinforcement-learning",
+    "temporal-grounding",
+    "object-tracking",
+    "video-segmentation",
+    "visual-question-answering",
+    "spatial-reasoning",
+    "qwen3.5",
+    "conversational",
+    "arxiv:2608.20492",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10379789733,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI&#x27;s Orca-4B world model edges Qwen3.5-4B on video tests - AI Weekly",
+      "url": "https://aiweekly.co/node/4707",
+      "snippet": "BAAI&#x27;s Orca-4B world model edges Qwen3.5-4B on video tests multimodal open source robotics computer vision ai-research Free AI alerts in your inbox"
+    },
+    {
+      "title": "Best AI Video Models 2026 — Sora, Veo, Runway, Kling, Seedance | Bigger ...",
+      "url": "https://www.biggerpicturestudios.com/learn/ai-video-models",
+      "snippet": "The complete guide to every major AI video generation model in 2026: Sora 2, Veo 3, Runway Gen-4, Kling 2, Seedance, Hailuo, Pika, Luma. Specs, quality, pricing, and best use cases."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Explore ORA — AI Knowledge, Models & Deployment Guides",
+      "url": "https://heyora.in/explore",
+      "snippet": "ORA Explore Discover AI knowledge and model routes. A Build-style knowledge surface for ORA: learn concepts, compare model categories, and jump into 106 local, cloud, image, and hybrid AI routes with true-source links from Hugging Face, NVIDIA Build, and official providers."
+    },
+    {
+      "title": "AI Video Generation 2026: Sora, Runway, Kling Complete Guide - explainx.ai",
+      "url": "https://www.explainx.ai/blog/video-generation-ai-sora-runway-kling-complete-guide-2026",
+      "snippet": "Complete guide to AI video generation in 2026. Compare Sora, Runway Gen-4, Kling 2.0, Google Veo 3, and Pika. Learn prompting, workflows, and what the tools still get wrong."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Slugger101/stable-diffusion-xl-base-1.0",
+  "slug": "slugger101-stable-diffusion-xl-base-1-0",
+  "author": "Slugger101",
+  "url": "https://huggingface.co/Slugger101/stable-diffusion-xl-base-1.0",
+  "created_at": "2026-08-25T16:08:03.000Z",
+  "updated_at": "2026-08-25T16:08:03.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "arxiv:2307.01952",
+    "arxiv:2211.01324",
+    "arxiv:2108.01073",
+    "arxiv:2112.10752",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 77369456618,
+  "storage_human": "77.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-diffusion-xl-base-1.0 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-hub/stable-diffusion-xl-base-1.0 · Hugging Face",
+      "url": "https://huggingface.co/model-hub/stable-diffusion-xl-base-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - andrewcchoi/stabilityai-stable-diffusion-xl-base-1.0",
+      "url": "https://github.com/andrewcchoi/stabilityai-stable-diffusion-xl-base-1.0",
+      "snippet": "Evaluation The chart above evaluates user preference for SDXL (with and without refinement) over SDXL 0.9 and Stable Diffusion 1.5 and 2.1. The SDXL base model performs significantly better than the previous variants, and the model combined with the refinement module achieves the best overall performance."
+    },
+    {
+      "title": "A beginner&#x27;s guide to the Stable-Diffusion-Xl-Base-1.0 model by ...",
+      "url": "https://dev.to/aimodels-fyi/a-beginners-guide-to-the-stable-diffusion-xl-base-10-model-by-stabilityai-on-huggingface-3943",
+      "snippet": "This is a simplified guide to an AI model called Stable-Diffusion-Xl-Base-1. maintained by Stabilityai. If you like these kinds of analysis, you should join AImodels.fyi or follow us on Twitter. Model overview The stable-diffusion-xl-base-1. is a text-to-image generative model developed by Stability AI. It is a Latent Diffusion Model that uses two fixed, pretrained text encoders - OpenCLIP ..."
+    },
+    {
+      "title": "Stability AI Image Models — Stability AI",
+      "url": "https://stability.ai/stable-image",
+      "snippet": "Additional image models Stable Diffusion XL Advanced text-to-image generative model with 3.5 billion parameters, offering high-resolution and photorealistic outputs."
+    }
+  ]
+}

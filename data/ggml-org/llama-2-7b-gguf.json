@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ggml-org/Llama-2-7B-GGUF",
+  "slug": "ggml-org-llama-2-7b-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/Llama-2-7B-GGUF",
+  "created_at": "2026-08-25T12:13:50.000Z",
+  "updated_at": "2026-08-25T12:48:27.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:meta-llama/Llama-2-7b-hf",
+    "base_model:quantized:meta-llama/Llama-2-7b-hf",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 37909317632,
+  "storage_human": "37.9 GB",
+  "base_model": "meta-llama/Llama-2-7b-hf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/Llama-2-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Llama-2-7B-GGUF",
+      "snippet": "Description This repo contains GGUF format model files for Meta&#x27;s Llama 2 7B. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. GGUF offers numerous advantages over GGML, such as better tokenisation, and support for special tokens."
+    },
+    {
+      "title": "TheBloke/Llama-2-7B-GGUF - Secret AI",
+      "url": "https://secretai.io/models/TheBloke/Llama-2-7B-GGUF",
+      "snippet": "Description This repo contains GGUF format model files for Meta&#x27;s Llama 2 7B. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. GGUF offers numerous advantages over GGML, such as better tokenisation, and support for special tokens."
+    },
+    {
+      "title": "TheBloke/LLaMA-7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/LLaMA-7b-GGUF",
+      "snippet": "LLaMA 7B - GGUF Model creator: Meta Original model: LLaMA 7B Description This repo contains GGUF format model files for Meta&#x27;s LLaMA 7b. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. Here is an incomplate list of clients and libraries that are known to support GGUF: llama.cpp. The ..."
+    },
+    {
+      "title": "GitHub - ggml-org/llama.cpp: LLM inference in C/C++",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "snippet": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "Llama-2-7B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-2-7b-gguf-thebloke",
+      "snippet": "Q: How does this compare to the Chat variant? A: This base model generates raw text continuation and requires manual prompt engineering. The Llama-2-7B-Chat-GGUF is instruction-tuned for conversational interaction, producing more natural responses to user queries without special prompt formatting."
+    }
+  ]
+}

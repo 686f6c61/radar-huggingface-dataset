@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Pereiramiguel/classify",
+  "slug": "pereiramiguel-classify",
+  "author": "Pereiramiguel",
+  "url": "https://huggingface.co/Pereiramiguel/classify",
+  "created_at": "2026-08-25T18:47:30.000Z",
+  "updated_at": "2026-08-25T18:47:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "critical",
+    "footnote",
+    "graphic-visual",
+    "latex-arxiv",
+    "medium-balanced",
+    "mixed-active-passive",
+    "multimodal-generation",
+    "narrative-progressive",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Powered Data Classification | Peregrine Classify by Cadence",
+      "url": "https://www.cadencesolutions.ca/classify",
+      "snippet": "Clean, classify, and prepare your data with Peregrine Classify - Machine Learning & AI-powered, private, and on-premises data cleanup built for Microsoft 365 readiness."
+    },
+    {
+      "title": "Classify AI",
+      "url": "https://classify-ai.vercel.app/",
+      "snippet": "The application provides a user-friendly interface for creating CNN based models for image classification without the need for coding or deep learning expertise."
+    },
+    {
+      "title": "ai_classify function | Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_classify",
+      "snippet": "The ai_classify () function classifies text content according to custom labels you provide. You can use simple label names for basic classification, or add label descriptions and instructions to improve accuracy for use cases like customer support routing, document categorization, and content analysis."
+    },
+    {
+      "title": "ai_classify function - Azure Databricks - Databricks SQL",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_classify",
+      "snippet": "Applies to: Databricks SQL Databricks Runtime The ai_classify () function classifies text content according to custom labels you provide. You can use simple label names for basic classification, or add label descriptions and instructions to improve accuracy for use cases like customer support routing, document categorization, and content analysis."
+    },
+    {
+      "title": "AI_CLASSIFY | Snowflake Documentation",
+      "url": "https://docs.snowflake.com/en/sql-reference/functions/ai_classify",
+      "snippet": "Reference Function and stored procedure reference AI Functions AI_CLASSIFY Categories: String & binary functions (AI Functions) AI _ CLASSIFY Classifies text, images, or documents into categories that you specify. Region availability The following table shows the regions where you can use the AI_CLASSIFY function for each input type:"
+    }
+  ]
+}

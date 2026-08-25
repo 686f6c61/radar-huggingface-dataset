@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "namkua/qwen3-vl-8b-lora-SciVQA",
+  "slug": "namkua-qwen3-vl-8b-lora-scivqa",
+  "author": "namkua",
+  "url": "https://huggingface.co/namkua/qwen3-vl-8b-lora-SciVQA",
+  "created_at": "2026-08-25T17:51:42.000Z",
+  "updated_at": "2026-08-25T17:54:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_vl",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:unsloth/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 422303706,
+  "storage_human": "422 MB",
+  "base_model": "unsloth/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "[2511.21631] Qwen3-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2511.21631",
+      "snippet": "We introduce Qwen3-VL, the most capable vision-language model in the Qwen series to date, achieving superior performance across a broad range of multimodal benchmarks. It natively supports interleaved contexts of up to 256K tokens, seamlessly integrating text, images, and video. The model family includes both dense (2B/4B/8B/32B) and mixture-of-experts (30B-A3B/235B-A22B) variants to ..."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "On 28 April 2025, the Qwen3 model family was released, [31] with all models licensed under the Apache 2.0 license. The Qwen3 model family includes both dense and MoE models. The sizes of the dense models include 0.6B, 1.7B, 4B, 8B, 14B, and 32B, and the MoE models include 30B-A3B (30B with 3B activated parameters) and 235B-A22B (235B with 22B activated parameters). [32] They were trained on 36 ..."
+    }
+  ]
+}

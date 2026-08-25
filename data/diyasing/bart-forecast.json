@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Diyasing/bart-forecast",
+  "slug": "diyasing-bart-forecast",
+  "author": "Diyasing",
+  "url": "https://huggingface.co/Diyasing/bart-forecast",
+  "created_at": "2026-08-25T17:51:34.000Z",
+  "updated_at": "2026-08-25T17:51:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "argumentative",
+    "graphic-visual",
+    "latex-cvpr",
+    "mixed-active-passive",
+    "neutral",
+    "numeric-apa",
+    "short-punchy",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diyasing/bart-forecast · Hugging Face",
+      "url": "https://huggingface.co/Diyasing/bart-forecast",
+      "snippet": "Diyasing / bart-forecast like 0 abstract-intro-prelim-method-exp-discussion argumentative graphic-visual latex-cvpr mixed-active-passive neutral numeric-apa short-punchy vision-language-pretraining License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new reading.md Paper Files License"
+    },
+    {
+      "title": "BART - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.0/en/model_doc/bart",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BARTNet: Context-Aware Deep Learning Framework for BART Ridership ...",
+      "url": "https://ieeexplore.ieee.org/document/11050615",
+      "snippet": "In this paper, we propose a novel context-aware deep learning-based framework, BARTNet, for forecasting Bay Area Rapid Transit (BART) ridership by integrating contextual and temporal data. Traditional statistical methods, such as Autoregressive Integrated Moving Average (ARIMA) and Simple Moving Averages (SMA), fail to capture complex non-linear dependencies and external factors influencing ..."
+    },
+    {
+      "title": "BART Ridership Forecasting Using Deep Learning - GitHub",
+      "url": "https://github.com/nivegnachowdary/bart-ridership-forecasting",
+      "snippet": "🚆 BART Ridership Forecasting Using Deep Learning Problem Forecasting public transit usage (BART) based on weather, holidays, and time-series data to help optimize scheduling and resource planning."
+    },
+    {
+      "title": "portfolio/bartnet-ridership at main - GitHub",
+      "url": "https://github.com/spandana730/portfolio/tree/main/bartnet-ridership",
+      "snippet": "BARTNet is a deep learning-based framework designed to accurately forecast Bay Area Rapid Transit (BART) ridership by integrating temporal and contextual features such as weather, holidays, and station location. This project was accepted at IEEE CAI 2025."
+    }
+  ]
+}

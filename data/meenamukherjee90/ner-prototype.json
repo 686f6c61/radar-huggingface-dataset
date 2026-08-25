@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Meenamukherjee90/ner-prototype",
+  "slug": "meenamukherjee90-ner-prototype",
+  "author": "Meenamukherjee90",
+  "url": "https://huggingface.co/Meenamukherjee90/ner-prototype",
+  "created_at": "2026-08-25T17:10:24.000Z",
+  "updated_at": "2026-08-25T17:10:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "docx",
+    "empirical-focused",
+    "endnote",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "medium-balanced",
+    "neutral",
+    "passive",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "GitHub - Ryan-ai1995/NER-Prototype-",
+      "url": "https://github.com/Ryan-ai1995/NER-Prototype-",
+      "snippet": "Contribute to Ryan-ai1995/NER-Prototype- development by creating an account on GitHub."
+    },
+    {
+      "title": "A lightweight model for Named Entity Recognition (NER)",
+      "url": "https://huggingface.co/blog/minibase-ai/named-entity-recognition",
+      "snippet": "A Blog post by minibase.ai on Hugging Face"
+    },
+    {
+      "title": "Comprehensive Overview of Named Entity Recognition: Models, Domain ...",
+      "url": "https://arxiv.org/html/2309.14084",
+      "snippet": "Abstract In the domain of Natural Language Processing (NLP), Named Entity Recognition (NER) stands out as a pivotal mechanism for extracting structured insights from unstructured text. This manuscript offers an exhaustive exploration into the evolving landscape of NER methodologies, blending foundational principles with contemporary AI advancements. Beginning with the rudimentary concepts of ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

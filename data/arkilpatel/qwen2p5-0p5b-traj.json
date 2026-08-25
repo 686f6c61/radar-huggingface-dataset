@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "arkilpatel/qwen2p5-0p5b-traj",
+  "slug": "arkilpatel-qwen2p5-0p5b-traj",
+  "author": "arkilpatel",
+  "url": "https://huggingface.co/arkilpatel/qwen2p5-0p5b-traj",
+  "created_at": "2026-08-25T14:31:16.000Z",
+  "updated_at": "2026-08-25T14:54:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "checkpoint-trajectory",
+    "math",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57322856112,
+  "storage_human": "57.3 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arkil Patel",
+      "url": "https://arkilpatel.github.io/",
+      "snippet": "PhD Student in Computer Science at Mila and McGill University, working on Large Language Models."
+    },
+    {
+      "title": "‪Arkil Patel‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=-5goVAsAAAAJ&hl=en",
+      "snippet": "‪CS PhD Student, Mila and McGill University‬ - ‪‪Cited by 2,833‬‬ - ‪Machine Learning‬ - ‪Natural Language Processing‬"
+    },
+    {
+      "title": "Arkil Patel - Mila",
+      "url": "https://mila.quebec/en/directory/arkil-patel",
+      "snippet": "Notably, we show DeepSeek-R1 has a &#x27;sweet spot&#x27; of reasoning, where extra inference time can impair model performance. Furthermore, we find a tendency for DeepSeek-R1 to persistently ruminate on previously explored problem formulations, obstructing further exploration."
+    },
+    {
+      "title": "Arkil Patel - PhD Student at Mila and McGill | Research in ... - LinkedIn",
+      "url": "https://ca.linkedin.com/in/arkil-patel",
+      "snippet": "PhD Student at Mila and McGill | Research in ML & NLP | Prev at Microsoft Research, Allen Institute for AI · I am a grad student at Mila/McGill. My primary research area is Natural Language Processing. To know more about my research, visit my webpage: https://arkilpatel.github.io. Previously, I was a Research Fellow at Microsoft Research Lab, India. I graduated from BITS Pilani in 2020 with a ..."
+    },
+    {
+      "title": "Publications — Arkil Patel",
+      "url": "https://arkilpatel.github.io/publications.html",
+      "snippet": "Arkil Patel *, Charbel El Feghali*, Nicholas Meade, Spandana Gella, Verna Dankers, Siva Reddy In Submission How to Get Your LLM to Generate Challenging Problems for Evaluation Arkil Patel, Siva Reddy, Dzmitry Bahdanau In Submission Understanding Scaling Laws With Token-Level Analysis Arkil Patel, Marius Mosbach, Siva Reddy, Dzmitry Bahdanau ..."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "IonGrozea/whisper-medium_ro-80mel",
+  "slug": "iongrozea-whisper-medium_ro-80mel",
+  "author": "IonGrozea",
+  "url": "https://huggingface.co/IonGrozea/whisper-medium_ro-80mel",
+  "created_at": "2026-07-18T04:10:30.000Z",
+  "updated_at": "2026-08-25T15:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "romanian",
+    "fine-tuned",
+    "ro",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 27499910098,
+  "storage_human": "27.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Romanian merged corpus",
+      "metric": null,
+      "value": 0.0637
+    },
+    {
+      "task": null,
+      "dataset": "Romanian merged corpus",
+      "metric": null,
+      "value": 0.0193
+    }
+  ],
+  "sources": [
+    {
+      "title": "IonGrozea/whisper-medium_ro-80mel · Hugging Face",
+      "url": "https://huggingface.co/IonGrozea/whisper-medium_ro-80mel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IonGrozea/whisper-medium_ro-80mel-gguf · Hugging Face",
+      "url": "https://huggingface.co/IonGrozea/whisper-medium_ro-80mel-gguf",
+      "snippet": "Whisper Medium Romanian (GGUF) This repository contains GGUF optimized versions of the fine-tuned Romanian Whisper Medium model: IonGrozea/whisper-medium_ro-80mel."
+    },
+    {
+      "title": "IonGrozea/whisper-medium_ro-80mel: Model synced from source: IonGrozea ...",
+      "url": "https://dev.modelhub.org.cn/IonGrozea/whisper-medium_ro-80mel",
+      "snippet": "README.md library_name, license, base_model, tags, datasets, metrics, model-index library_name license base_model tags datasets metrics model-index transformers apache-2.0 openai/whisper-medium generated_from_trainer generator wer name results whisper-medium_ro-80mel task dataset metrics name type Automatic Speech Recognition automatic-speech-recognition name type config split args generator ..."
+    },
+    {
+      "title": "Whisper Medium Ro 80mel - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/whisper-medium-ro-80mel.html",
+      "snippet": "Download Whisper Medium Ro 80mel GGUF model. 1.4 GB, 69 downloads, 0 likes."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    }
+  ]
+}

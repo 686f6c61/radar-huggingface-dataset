@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "stefanj0/PP-DocLayoutV3-FP16-ONNX",
+  "slug": "stefanj0-pp-doclayoutv3-fp16-onnx",
+  "author": "stefanj0",
+  "url": "https://huggingface.co/stefanj0/PP-DocLayoutV3-FP16-ONNX",
+  "created_at": "2026-08-25T12:08:50.000Z",
+  "updated_at": "2026-08-25T12:10:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "document-layout-analysis",
+    "object-detection",
+    "fp16",
+    "rt-detr",
+    "paddleocr",
+    "webgpu",
+    "base_model:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "base_model:quantized:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67372587,
+  "storage_human": "67 MB",
+  "base_model": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "beclab/PP-DocLayoutV3_onnx · Hugging Face",
+      "url": "https://huggingface.co/beclab/PP-DocLayoutV3_onnx",
+      "snippet": "PP-DocLayoutV3 is specifically engineered to handle non-planar document images. It can directly predict multi-point bounding boxes for layout elements—as opposed to standard two-point boxes—and determine logical reading orders for skewed and curved surfaces within a single forward pass, significantly reducing cascading errors. This model is an essential component of PaddleOCR-VL-1.5 ..."
+    },
+    {
+      "title": "PP-DocLayoutV3 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/en/model_doc/pp_doclayout_v3",
+      "snippet": "PP-DocLayoutV3 is a unified and high-efficiency model designed for comprehensive layout analysis. It addresses the challenges of complex physical distortions—such as skewing, curving, and adverse lighting—by integrating instance segmentation and reading order prediction into a single, end-to-end framework."
+    },
+    {
+      "title": "PP-DocLayoutV3_onnx · Models",
+      "url": "https://www.modelscope.cn/models/PaddlePaddle/PP-DocLayoutV3_onnx",
+      "snippet": "Introduction This is the model weights for PP-DocLayoutv3 in ONNX format. Get PaddlePaddle weights at PP-DocLayoutV3 PP-DocLayoutV3 is specifically engineered to handle non-planar document images. It can directly predict multi-point bounding boxes for layout elements—as opposed to standard two-point boxes—and determine logical reading orders for skewed and curved surfaces within a single ..."
+    },
+    {
+      "title": "PP-DocLayoutV3-ONNX · Models",
+      "url": "https://www.modelscope.cn/models/cjc1887415157/PP-DocLayoutV3-ONNX",
+      "snippet": "This model is an ONNX version of paddlepaddle/PP-DocLayoutV3, created with Paddle2ONNX. Example Python code to run this model:"
+    }
+  ]
+}

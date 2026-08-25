@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Melody1437-26B-A4B-v0.4-i1-GGUF",
+  "slug": "mradermacher-melody1437-26b-a4b-v0-4-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Melody1437-26B-A4B-v0.4-i1-GGUF",
+  "created_at": "2026-08-25T13:43:30.000Z",
+  "updated_at": "2026-08-25T14:16:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "explicit",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Melody1437-26B-A4B-v0.4",
+    "base_model:quantized:ReadyArt/Melody1437-26B-A4B-v0.4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 137463847584,
+  "storage_human": "137.5 GB",
+  "base_model": "ReadyArt/Melody1437-26B-A4B-v0.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Melody1437-26B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF",
+      "snippet": "mradermacher / Melody1437-26B-A4B-GGUF like 0 Transformers GGUF English gemma-4 roleplay conversational instruct apache-2.0 nsfw explicit erp adult-content mature unaligned License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Melody1437-26B-A4B-v2.0-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Melody1437-26B-A4B-v2.0-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Melody1437-26B-A4B-v2.-i1-GGUF like 0 Transformers GGUF English gemma-4 roleplay conversational instruct apache-2.0 nsfw explicit erp adult-content mature unaligned imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Melody1437-26B-A4B-v2.0-GGUF by ReadyArt (26B) - Run Locally",
+      "url": "https://oktechmasters.org/ai_models/melody1437-26b-a4b-v2-0-gguf/",
+      "snippet": "26B open-weight model from ReadyArt for local AI inference. Run Melody1437-26B-A4B-v2.-GGUF locally with Ollama: ollama pull melody1437-26b-a4b-v2.0:26b Minimum 24GB RAM.…"
+    },
+    {
+      "title": "ReadyArt/Melody1437-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Melody1437-26B-A4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Melody1437-26B-A4B-v0.4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v0.4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4",
+  "slug": "amaimedia-noesis-qwopus3-5-4b-v3-supervisor-longctx-nf4",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4",
+  "created_at": "2026-08-16T11:53:34.000Z",
+  "updated_at": "2026-08-25T16:42:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.5",
+    "qwen3.5-201-languages",
+    "supports-201-languages",
+    "multilingual",
+    "language-support",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 3135032974,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4",
+      "snippet": "AMAImedia / NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4 like 0 Safetensors qwen3_5_text 4-bit precision bitsandbytes Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16",
+      "snippet": "NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16 Role: Long-context Supervisor — PRODUCTION (multi-segment QC, orchestration plan, cross-stage review, batch best-of-N) for the dubbing pipeline. From: base NOESIS-Qwopus3.5-4B-v3 + plain-LoRA nt346_longctx_qwopus4b (CCE, max_len 768, completion-masked) merged. Trained on NF4 base, merged into BF16."
+    },
+    {
+      "title": "fredrezones55/Qwopus3.5:4b",
+      "url": "https://ollama.com/fredrezones55/Qwopus3.5:4b",
+      "snippet": "Qwopus3.5-v3 is a reasoning-enhanced model family fine-tune of Qwen3.5 designed to improve reasoning stability and correctness, optimize inference efficiency, and enhance cross-task generalization capabilities, especially in programming."
+    },
+    {
+      "title": "Qwopus3.5-4B-v3 · Models",
+      "url": "https://www.modelscope.cn/models/Jackrong/Qwopus3.5-4B-v3",
+      "snippet": "Qwopus3.5-4B-v3 is a reasoning-enhanced model based on Qwen3.5-4B, designed to simultaneously improve reasoning stability and correctness while optimizing inference efficiency — ultimately achieving stronger cross-task generalization capabilities, particularly in programming."
+    },
+    {
+      "title": "GitHub - codespermuted/qwopus: Local AI coding agent powered by Qwen3.5 ...",
+      "url": "https://github.com/codespermuted/qwopus",
+      "snippet": "Local AI coding agent — built on Qwen3.5-27B, a Claude 4.6 Opus reasoning knowledge-distillation model."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vishnusureshperumbavoor/vsp_alpaca-instruct-300ep-v2-vml",
+  "slug": "vishnusureshperumbavoor-vsp_alpaca-instruct-300ep-v2-vml",
+  "author": "vishnusureshperumbavoor",
+  "url": "https://huggingface.co/vishnusureshperumbavoor/vsp_alpaca-instruct-300ep-v2-vml",
+  "created_at": "2026-08-25T14:19:25.000Z",
+  "updated_at": "2026-08-25T15:53:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "vml-studio",
+    "lora",
+    "sft",
+    "fine-tuned",
+    "vsp-alpaca",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:adapter:Qwen/Qwen2-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8798208,
+  "parameters_human": "8.8M",
+  "storage_bytes": 1010747899,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen2-0.5B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishnu Suresh Perumbavoor | ML Researcher & Software Engineer",
+      "url": "https://vishnusureshperumbavoor.github.io/V-S-P/",
+      "snippet": "Vishnu Suresh Perumbavoor (VSP) is a Software Engineer and ML Researcher specializing in Medical Imaging and radiology workflows. Winner of Vaiga Hackathon 2023."
+    },
+    {
+      "title": "Damacol/vishnusureshperumbavoor-qwen2-0-5b-alpaca-instruct ... - GitHub",
+      "url": "https://github.com/Damacol/vishnusureshperumbavoor-qwen2-0-5b-alpaca-instruct-vml1-gguf-vml",
+      "snippet": "vishnusureshperumbavoor/qwen2--5b-alpaca-instruct-vml1-gguf-vml - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    },
+    {
+      "title": "Stanford Alpaca: An Instruction-following LLaMA Model",
+      "url": "https://github.com/tatsu-lab/stanford_alpaca",
+      "snippet": "Code and documentation to train Stanford&#x27;s Alpaca models, and generate the data. - tatsu-lab/stanford_alpaca"
+    },
+    {
+      "title": "Overview · Damacol/vishnusureshperumbavoor-qwen2-0-5b-alpaca-instruct ...",
+      "url": "https://github.com/Damacol/vishnusureshperumbavoor-qwen2-0-5b-alpaca-instruct-vml1-gguf-vml/security",
+      "snippet": "Damacol / vishnusureshperumbavoor-qwen2--5b-alpaca-instruct-vml1-gguf-vml Public Fork 0 0"
+    },
+    {
+      "title": "vishnusureshperumbavoor/qwen2-0-5b-alpaca-instruct-vml1-gguf... - Socket",
+      "url": "https://socket.dev/huggingface/package/vishnusureshperumbavoor/qwen2-0-5b-alpaca-instruct-vml1-gguf-vml/license",
+      "snippet": "Version: main was published by vishnusureshperumbavoor. Start using Socket to analyze vishnusureshperumbavoor/qwen2--5b-alpaca-instruct-vml1-gguf-vml..."
+    }
+  ]
+}

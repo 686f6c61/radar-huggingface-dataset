@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "geraldaton20/alter_ego",
+  "slug": "geraldaton20-alter_ego",
+  "author": "geraldaton20",
+  "url": "https://huggingface.co/geraldaton20/alter_ego",
+  "created_at": "2026-08-25T13:15:51.000Z",
+  "updated_at": "2026-08-25T13:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338444,
+  "storage_human": "338444 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "geraldaton20 (Gerald Aton) - Hugging Face",
+      "url": "https://huggingface.co/geraldaton20",
+      "snippet": "User profile of Gerald Aton on Hugging Face"
+    },
+    {
+      "title": "AlterEgo",
+      "url": "https://www.alterego.io/",
+      "snippet": "AlterEgo is a breakthrough technology, developed at MIT, that connects you with AI through a minimal, non-invasive device. Using Silent Sense, it understands what you intend to say without speaking, allowing you to extend your thinking without the need to type, tap, or talk out loud."
+    },
+    {
+      "title": "GitHub - Megamer-studios/AlterEgo: An Alter Ego (from Danganronpa ...",
+      "url": "https://github.com/Megamer-studios/AlterEgo",
+      "snippet": "🎭 AlterEgo - AI-Powered Virtual Assistant AlterEgo is a C# desktop application inspired by the Danganronpa series, featuring an AI assistant with speech recognition, text-to-speech synthesis, and dynamic character animations. This interactive assistant communicates using OpenAI&#x27;s GPT model, bringing your AI conversations to life!"
+    },
+    {
+      "title": "AI Photo Studio - Portraits & Viral Videos · AlterEgoAI",
+      "url": "https://alter-ego-ai.com/",
+      "snippet": "Create Your Alter Ego. AI portraits, viral videos, and full brand campaigns — from a single photo."
+    },
+    {
+      "title": "Overview ‹ AlterEgo — MIT Media Lab",
+      "url": "https://www.media.mit.edu/projects/alterego/overview/",
+      "snippet": "AlterEgo is a non-invasive, wearable, peripheral neural interface that allows humans to converse in natural language with machines, artificial intelligence assistants, services, and other people without any voice—without opening their mouth, and without externally observable movements—simply by articulating words internally. The feedback to the user is given through audio, via bone ..."
+    }
+  ]
+}

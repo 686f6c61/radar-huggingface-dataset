@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+  "slug": "ai-sage-giga-embeddings-instruct-10b-a1-8b-0826",
+  "author": "ai-sage",
+  "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+  "created_at": "2026-08-10T13:31:38.000Z",
+  "updated_at": "2026-08-24T15:24:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "deepseek_v3_bidirec",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "embeddings",
+    "custom_code",
+    "ru",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 500,
+  "trending_score": 0,
+  "parameters": 10475534400,
+  "parameters_human": "10.48B",
+  "storage_bytes": 20962383829,
+  "storage_human": "21.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+      "snippet": "Instructions to use ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ai-sage/Giga-Embeddings-instruct · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Giga-Embeddings-instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/giga-embeddings-instruct-ai-sage",
+      "snippet": "Overview Giga-Embeddings-instruct is an instruction-tuned text embedding model built on the GigaChat-3b decoder-only LLM by ai-sage. The model produces 2048-dimensional embeddings using latent-attention pooling and handles sequences up to 4096 tokens. It was pretrained on GigaChat and further trained on a mixture of English and Russian data, making it specifically suited for bilingual ..."
+    },
+    {
+      "title": "Commits · ai-sage/Giga-Embeddings-instruct",
+      "url": "https://alpha-ollama.hf-mirror.com/ai-sage/Giga-Embeddings-instruct/commits/78f5b942cb44dad7c83b2064c6cfbc82597791bb/model-00003-of-00003.safetensors",
+      "snippet": "Instructions to use ai-sage/Giga-Embeddings-instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use ai-sage/Giga-Embeddings-instruct with sentence-transformers:"
+    },
+    {
+      "title": "Architecture graph for ai-sage/Giga-Embeddings-instruct.",
+      "url": "https://hfviewer.com/ai-sage/Giga-Embeddings-instruct",
+      "snippet": "Interactive architecture graph for ai-sage/Giga-Embeddings-instruct, visualized from Hugging Face model metadata."
+    }
+  ]
+}

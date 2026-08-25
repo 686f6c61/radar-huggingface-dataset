@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "maanka2/Audio8-TTS-Preview-0.1b-moss",
+  "slug": "maanka2-audio8-tts-preview-0-1b-moss",
+  "author": "maanka2",
+  "url": "https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b-moss",
+  "created_at": "2026-08-25T15:14:29.000Z",
+  "updated_at": "2026-08-25T15:15:02.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arktts",
+    "feature-extraction",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55197760,
+  "parameters_human": "55.2M",
+  "storage_bytes": 218258024,
+  "storage_human": "218 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maanka2/Audio8-TTS-Preview-0.1b · Hugging Face",
+      "url": "https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b",
+      "snippet": "The 0.1B checkpoint is intended to make zero-shot TTS practical with a much smaller language/audio model footprint, not to claim identical quality across every language or benchmark."
+    },
+    {
+      "title": "GitHub - Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "ngoctham/Audio8-TTS-Preview-0.1b · Hugging Face",
+      "url": "https://huggingface.co/ngoctham/Audio8-TTS-Preview-0.1b",
+      "snippet": "The 0.1B checkpoint is intended to make zero-shot TTS practical with a much smaller language/audio model footprint, not to claim identical quality across every language or benchmark."
+    },
+    {
+      "title": "Audio8-TTS-Preview-0.1b: Text-to-Audio model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/audio8-tts-preview-0.1b-audio8",
+      "snippet": "Overview Audio8-TTS-Preview-.1b is a compact zero-shot text-to-speech model with voice cloning capabilities, built by Audio8. The model uses an Audio8 Falcon H1 architecture with dual autoregressive branches: a slow branch (24 layers, 512 width, 8 attention heads, 2 KV heads) that predicts semantic tokens and a fast branch (4 layers) that predicts codec codebooks. The main generative model ..."
+    },
+    {
+      "title": "Audio8 AI Releases: TTS Preview 0.1B — ThursdAI",
+      "url": "https://thursdai.news/companies/audio8",
+      "snippet": "What has Audio8 shipped in AI? ThursdAI covered TTS Preview 0.1B (Aug 20, 2026) live on the show — links, key numbers and analysis."
+    }
+  ]
+}

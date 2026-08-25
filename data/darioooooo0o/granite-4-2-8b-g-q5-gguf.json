@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/granite-4.2-8b-G-Q5-GGUF",
+  "slug": "darioooooo0o-granite-4-2-8b-g-q5-gguf",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/granite-4.2-8b-G-Q5-GGUF",
+  "created_at": "2026-08-25T18:35:18.000Z",
+  "updated_at": "2026-08-25T18:37:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "granite",
+    "granite-4.2",
+    "quantization",
+    "imatrix",
+    "llama.cpp",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:quantized:ibm-granite/granite-4.2-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 5607500256,
+  "storage_human": "5.6 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 LLMs: How They&#x27;re Built - Hugging Face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "snippet": "A Blog post by IBM Granite on Hugging Face"
+    },
+    {
+      "title": "bartowski/ibm-granite_granite-4.1-8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/ibm-granite_granite-4.1-8b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.2 brings native reasoning to enterprise agents",
+      "url": "https://research.ibm.com/blog/introducing-granite-4-2",
+      "snippet": "In enterprise workflows, tasks can be ambiguous and involve many steps to complete. An AI model must be able to follow complex instructions, retrieve the correct information, choose the right tools, act in the right sequence, and verify the result. Reasoning helps Granite 4.2 navigate this process more reliably."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    }
+  ]
+}

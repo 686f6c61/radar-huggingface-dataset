@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-mask-dpo-bal",
+  "slug": "keylazy-qwen2-5-omni-3b-mask-dpo-bal",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-dpo-bal",
+  "created_at": "2026-08-25T17:24:55.000Z",
+  "updated_at": "2026-08-25T17:25:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131227430,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keylazy/Qwen2.5-Omni-3B-mask-sft · Hugging Face",
+      "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-sft",
+      "snippet": "How to use keylazy/Qwen2.5-Omni-3B-mask-sft with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training Data ..."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Omni-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal model designed to perceive diverse modalities, including text, images, audio, and video, while simultaneously generating text and natural speech responses in a streaming manner."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "Qwen2.5-Omni-3B: Video-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen2.5-omni-3b-qwen",
+      "snippet": "Qwen2.5-Omni-3B is an end-to-end multimodal model created by Qwen that perceives text, images, audio, and video while generating both text and natural speech responses in a streaming manner."
+    },
+    {
+      "title": "QwenLM/Qwen2.5-Omni | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal language model that processes multiple input modalities (text, images, audio, and video) while generating both text and speech outputs in a streaming manner."
+    }
+  ]
+}

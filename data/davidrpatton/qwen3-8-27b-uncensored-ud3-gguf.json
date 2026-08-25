@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DavidrPatton/Qwen3.8-27B-Uncensored-UD3-GGUF",
+  "slug": "davidrpatton-qwen3-8-27b-uncensored-ud3-gguf",
+  "author": "DavidrPatton",
+  "url": "https://huggingface.co/DavidrPatton/Qwen3.8-27B-Uncensored-UD3-GGUF",
+  "created_at": "2026-08-25T16:50:50.000Z",
+  "updated_at": "2026-08-25T17:35:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "unsloth",
+    "dynamic-3.0",
+    "ud3",
+    "qwen",
+    "uncensored",
+    "mtp",
+    "speculative-decoding",
+    "16gb-vram",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 12986896480,
+  "storage_human": "13.0 GB",
+  "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · orcarouter/Qwen3.8-27B-Uncensored-GGUF at main",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF/blob/main/README.md",
+      "snippet": "GGUF conversions of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. These files run in llama.cpp (CPU / CUDA / Metal / ROCm), quantized from 2-bit to 16-bit, with a separate mmproj file ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    }
+  ]
+}

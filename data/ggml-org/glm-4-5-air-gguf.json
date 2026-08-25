@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ggml-org/GLM-4.5-Air-GGUF",
+  "slug": "ggml-org-glm-4-5-air-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/GLM-4.5-Air-GGUF",
+  "created_at": "2026-08-25T10:51:57.000Z",
+  "updated_at": "2026-08-25T11:02:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:zai-org/GLM-4.5-Air",
+    "base_model:quantized:zai-org/GLM-4.5-Air",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106852251264,
+  "parameters_human": "106.85B",
+  "storage_bytes": 185162443072,
+  "storage_human": "185.2 GB",
+  "base_model": "zai-org/GLM-4.5-Air",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/zai-org_GLM-4.5-Air-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/zai-org_GLM-4.5-Air-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of GLM-4.5-Air by zai-org Prompt format Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli ARM/AVX information Which file should I choose? Credits"
+    },
+    {
+      "title": "zai-org/GLM-4.5-Air · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.5-Air",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.5-Air-GGUF Open-Source Text Generation Model - Low Hardware ...",
+      "url": "https://model.aibase.com/models/details/1959857278786211840",
+      "snippet": "GLM 4.5 Air is an efficient text generation model developed by Zai-Org. It has been quantized by bartowski using llama.cpp in the GGUF format, significantly reducing hardware requirements while maintaining performance, making it suitable for running on consumer-grade hardware."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-4.5: GLM-4.5: Agentic, Reasoning, and Coding (ARC ...",
+      "url": "https://github.com/zai-org/GLM-4.5",
+      "snippet": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent ..."
+    },
+    {
+      "title": "GLM-4.5: Reasoning, Coding, and Agentic Abililties - z.ai",
+      "url": "https://z.ai/blog/glm-4.5",
+      "snippet": "Both are designed to unify reasoning, coding, and agentic capabilities into a single model in order to satisfy more and more complicated requirements of fast rising agentic applications. Both GLM-4.5 and GLM-4.5-Air are hybrid reasoning models, offering: thinking mode for complex reasoning and tool using, and non-thinking mode for instant ..."
+    }
+  ]
+}

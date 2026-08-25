@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "moeshawky/Qwen-Sharper-Chat-Templates",
+  "slug": "moeshawky-qwen-sharper-chat-templates",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/Qwen-Sharper-Chat-Templates",
+  "created_at": "2026-08-25T15:47:04.000Z",
+  "updated_at": "2026-08-25T15:48:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "jinja",
+    "chat-template",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "qwen3.8",
+    "llama.cpp",
+    "lm-studio",
+    "vllm",
+    "sglang",
+    "tool-calling",
+    "thinking",
+    "token-efficient",
+    "sharper",
+    "hardened",
+    "system-prompt-generator",
+    "documentarian",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:froggeric/Qwen-Fixed-Chat-Templates",
+    "base_model:finetune:froggeric/Qwen-Fixed-Chat-Templates",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3263362,
+  "storage_human": "3 MB",
+  "base_model": "froggeric/Qwen-Fixed-Chat-Templates",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "froggeric/Qwen-Fixed-Chat-Templates · Hugging Face",
+      "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
+      "snippet": "By default, this template preserves all past <think> blocks in the chat history. This prevents the model from suffering \"amnesia stalls\" during complex agentic loops and guarantees a 100% Prefix KV Cache hit rate on local inference engines. On recent llama.cpp builds, pass --reasoning-preserve directly. Or pass via template kwargs:"
+    },
+    {
+      "title": "The 4 Things Qwen-3&#x27;s Chat Template Teaches Us - Hugging Face",
+      "url": "https://huggingface.co/blog/qwen-3-chat-template-deep-dive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Sharp-Chat-Templates: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-sharp-chat-templates-peculiar-ragdoll",
+      "snippet": "Overview Qwen-Sharp-Chat-Templates is a drop-in Jinja chat template for Qwen 3.5, 3.6, and 3.8 models that optimizes them for knowledge work and coding through a terseness-focused system prompt. Built by peculiar-ragdoll, this template appends eleven lines of instruction to any existing system prompt, instructing the model to answer directly, avoid preamble and filler, and preserve correctness ..."
+    },
+    {
+      "title": "GitHub - pychang-ai/Qwen_template: The official repo of Qwen (通义千问 ...",
+      "url": "https://github.com/pychang-ai/Qwen_template",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - pychang-ai/Qwen_template"
+    },
+    {
+      "title": "Qwen-3&#x27;s Chat Template - til",
+      "url": "https://lawwu.github.io/til/posts/2025-05-02-qwen3-chat-prompt-template/index.html",
+      "snippet": "This Huggingface blogpost goes through Qwen 3&#x27;s prompt template. The chat template defines \"how conversations between users and models are structured and formatted."
+    }
+  ]
+}

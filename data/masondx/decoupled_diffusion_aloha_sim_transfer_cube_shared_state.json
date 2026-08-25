@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "masondx/decoupled_diffusion_aloha_sim_transfer_cube_shared_state",
+  "slug": "masondx-decoupled_diffusion_aloha_sim_transfer_cube_shared_state",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/decoupled_diffusion_aloha_sim_transfer_cube_shared_state",
+  "created_at": "2026-08-25T14:58:36.000Z",
+  "updated_at": "2026-08-25T14:59:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "decoupled_bimanual_diffusion",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 526850558,
+  "parameters_human": "526.9M",
+  "storage_bytes": 2107484432,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diffusion_aloha_sim_transfer_cube-ema · Hugging Face",
+      "url": "https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube-ema",
+      "snippet": "Instructions to use masondx/diffusion_aloha_sim_transfer_cube-ema with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use masondx/diffusion_aloha_sim_transfer_cube-ema with LeRobot: Notebooks Google Colab Kaggle Model Card for diffusion Model Details Inputs & Outputs Training Dataset Training Configuration How to Get ..."
+    },
+    {
+      "title": "masondx (Hongming Mei) - Hugging Face",
+      "url": "https://huggingface.co/masondx",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago ... updated a dataset about 8 hours ago"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2306.13720.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - saquib-mehmood/aloha: Imitation Learning algorithms with Co ...",
+      "url": "https://github.com/saquib-mehmood/aloha",
+      "snippet": "Imitation Learning algorithms with Co-traing for Mobile ALOH: ACT, Diffusion Policy, VINN - saquib-mehmood/aloha"
+    }
+  ]
+}

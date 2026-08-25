@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark",
+  "slug": "textilelabs-loom-spark",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark",
+  "created_at": "2026-08-25T14:42:50.000Z",
+  "updated_at": "2026-08-25T15:33:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "tool-use",
+    "agent-harness",
+    "humble-ai",
+    "philosophy-of-mind",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7558080,
+  "parameters_human": "7.6M",
+  "storage_bytes": 65848984,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - awslabs/loom: Loom for AWS is an enterprise-grade platform for ...",
+      "url": "https://github.com/awslabs/loom/",
+      "snippet": "Loom for AWS (Loom) is an enterprise-grade platform for building, deploying, and operating AI agents on Amazon Bedrock AgentCore Runtime and AWS Strands Agents. It provides a unified management UI with Cognito-based authentication, scope-based authorization, multi-persona navigation, and full lifecycle management for agents, memory, MCP servers, A2A integrations, and AWS Agent Registry governance."
+    },
+    {
+      "title": "Textile Designer AI - AI-Powered Textile Design Platform",
+      "url": "https://www.textile-designer.ai/",
+      "snippet": "Textile Designer AI - AI-Powered Textile Platform & Workspace AI-powered textile platform with 21 professional tools for textile production. Streamline workflows for pattern creation, color automation, design extraction, and print-ready output. Built for textile manufacturers, fashion brands, and production teams worldwide."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "GitHub - Loom-AI-Labs/ai-fabric-course-support-assistant",
+      "url": "https://github.com/Loom-AI-Labs/ai-fabric-course-support-assistant",
+      "snippet": "AI Fabric Course Support Assistant This repository is the standalone learner application for Build AI-Enabled Applications with Java and Spring Boot."
+    },
+    {
+      "title": "Textile AI: AI Pattern Generator + Seamless Print Tool",
+      "url": "https://texloom.studio/textile-ai",
+      "snippet": "Textile AI is the application of generative AI to textile design — pattern generation, seamless tiling, Pantone matching, and print-ready output. Compare tools, see how it works, and start designing with a dedicated textile AI tool."
+    }
+  ]
+}

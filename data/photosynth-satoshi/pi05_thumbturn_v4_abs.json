@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "photosynth-satoshi/pi05_thumbturn_v4_abs",
+  "slug": "photosynth-satoshi-pi05_thumbturn_v4_abs",
+  "author": "photosynth-satoshi",
+  "url": "https://huggingface.co/photosynth-satoshi/pi05_thumbturn_v4_abs",
+  "created_at": "2026-08-25T16:33:02.000Z",
+  "updated_at": "2026-08-25T16:35:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:photosynth-satoshi/so101_unlock_thumbturn_v4",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453600,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "photosynth-satoshi (satoshi nakamoto) - Hugging Face",
+      "url": "https://huggingface.co/photosynth-satoshi/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pi05/openpi_official at main · Starsshine21/pi05 · GitHub",
+      "url": "https://github.com/Starsshine21/pi05/tree/main/openpi_official",
+      "snippet": "the π₀.₅ model, an upgraded version of π₀ with better open-world generalization trained with knowledge insulation. Note that, in this repository, we currently only support the flow matching head for both π 0.5 ${}_{&#92;pi }$ training and inference."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    }
+  ]
+}

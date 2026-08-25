@@ -27,9 +27,9 @@
     "text-generation-inference",
     "region:us"
   ],
-  "likes": 62,
+  "likes": 63,
   "downloads_30d": 138647,
-  "trending_score": 19,
+  "trending_score": 17,
   "parameters": 1359284737,
   "parameters_human": "1.36B",
   "storage_bytes": 2718576122,

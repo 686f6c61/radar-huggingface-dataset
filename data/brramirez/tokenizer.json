@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brramirez/tokenizer",
+  "slug": "brramirez-tokenizer",
+  "author": "brramirez",
+  "url": "https://huggingface.co/brramirez/tokenizer",
+  "created_at": "2026-08-25T17:05:17.000Z",
+  "updated_at": "2026-08-25T17:05:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "base",
+    "efficientformer",
+    "groupnorm",
+    "kaiming",
+    "linear",
+    "linear-warmup",
+    "mish",
+    "retrieval",
+    "tucker",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Fingerprint AI Models When Prompts Lie - OpenRating",
+      "url": "https://openrating.io/blog/current-state-of-ai-model-fingerprinting",
+      "snippet": "1. Tokenizer Vocabularies and Byte Fallbacks Every lab trains a distinct tokenizer with custom vocabulary sizes, merge tables, and fallback rules. Because the tokenizer determines the exact input matrix shape of the model weights, a model cannot alter how it segments text without a full retrain. We send small, fixed text inputs to the endpoint and inspect the returned usage.prompt_tokens:"
+    },
+    {
+      "title": "Tokenizers Demystified: A Complete Guide to Understanding and ... - Medium",
+      "url": "https://medium.com/@ayussh222dongol/tokenizers-demystified-a-complete-guide-to-understanding-and-choosing-tokenizers-for-nlp-e28253c5cca2",
+      "snippet": "Here&#x27;s a step-by-step overview of how tokenization fits into the workflow for pre-training a language model: Tokenizing the Text The raw text is split into tokens using a tokenizer."
+    },
+    {
+      "title": "AI Tokenizer Suite - Multi-Model Tokenizer Console | LLM Matrix Lab",
+      "url": "https://www.llmmatrixlab.com/ai-tokenizer/",
+      "snippet": "LLM Matrix Lab AI Tokenizer Suite is a fast, interactive developer console. Explore Byte-Pair Encoding (BPE) segmentation, compare model efficiency side-by-side, analyze vision patch canvas overlays, and acoustic audio token codebooks."
+    }
+  ]
+}

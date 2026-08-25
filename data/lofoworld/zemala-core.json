@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Lofoworld/zemala-core",
+  "slug": "lofoworld-zemala-core",
+  "author": "Lofoworld",
+  "url": "https://huggingface.co/Lofoworld/zemala-core",
+  "created_at": "2026-08-25T11:52:02.000Z",
+  "updated_at": "2026-08-25T12:15:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - john-rocky/coreai-model-zoo: Community model zoo for Apple ...",
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "snippet": "Community model zoo for Apple Core AI (iOS/macOS 27): 62 models — LLM, VLM, OCR, ASR, TTS, image/video/music gen, forecasting — each gated against its source model and shipped with the recipe that produced it. Downloadable from Hugging Face, runnable in one line of Swift via CoreAIKit. Plus benchmarks, Metal kernels, knowledge base. - john-rocky/coreai-model-zoo"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "The Best CPU-Friendly Local AI Models for 2025 | Augment Code",
+      "url": "https://www.augmentcode.com/guides/the-best-cpu-friendly-local-ai-models-for-2025",
+      "snippet": "Discover top local AI models optimized for CPU inference in 2025—run powerful AI without a GPU and keep your data on-premise."
+    },
+    {
+      "title": "Home Main - Loveworld USA",
+      "url": "https://loveworldusa.org/",
+      "snippet": "Our programs feature powerful preaching, teaching, and insightful discussions from renowned ministers, along with uplifting music, engaging talk shows, and"
+    }
+  ]
+}

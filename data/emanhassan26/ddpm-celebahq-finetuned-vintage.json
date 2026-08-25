@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EmanHassan26/ddpm-celebahq-finetuned-vintage",
+  "slug": "emanhassan26-ddpm-celebahq-finetuned-vintage",
+  "author": "EmanHassan26",
+  "url": "https://huggingface.co/EmanHassan26/ddpm-celebahq-finetuned-vintage",
+  "created_at": "2026-08-25T17:20:03.000Z",
+  "updated_at": "2026-08-25T17:20:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113673219,
+  "parameters_human": "113.7M",
+  "storage_bytes": 454741108,
+  "storage_human": "455 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ddpm-celebahq-finetuned-vintage-face-2epochs",
+      "url": "https://huggingface.co/naifenn/ddpm-celebahq-finetuned-vintage-face-2epochs",
+      "snippet": "ddpm-celebahq-finetuned-vintage-face-2epochs This model was fine-tuned for 2 epochs on the CelebAHQ dataset to generate vintage-style face images. Denoising Evolution (Step 0 to 50) The image below shows the generation process from pure noise (left) to the final face (right), captured every 10 steps. Usage"
+    },
+    {
+      "title": "ddpm-celebahq-finetuned-Vintage-Faces-FFHQAligned-2epochs",
+      "url": "https://huggingface.co/lilili696969/ddpm-celebahq-finetuned-Vintage-Faces-FFHQAligned-2epochs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ddpm-celebahq-finetuned-vintageface | Run Model on Bytez",
+      "url": "https://bytez.com/model/Imilion/ddpm-celebahq-finetuned-vintageface",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    },
+    {
+      "title": "GitHub - alcazar90/ddpo-celebahq: Reward Finetuning on Diffusion Models ...",
+      "url": "https://github.com/alcazar90/ddpo-celebahq",
+      "snippet": "Finetuned Diffusion Models using Reinforcement Learning 👾 Post-training experimentations on diffusion models using policy gradient methods. Explore ideas with pretrained, non-conditional DDPM models. These models, such as google/ddpm-celebahq-256 and google/ddpm-church-256, are based on Denoising Diffusion Probabilistic Models (Ho et al., 2020)."
+    },
+    {
+      "title": "Apocalypse-19/ddpm-celebahq-fintuned-vintage-faces - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/99486",
+      "snippet": "pytorch diffusers unconditional-image-generation diffusion-models-class The celebhq model finetuned on vintage faces for face generation"
+    }
+  ]
+}

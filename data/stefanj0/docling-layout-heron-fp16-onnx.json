@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "stefanj0/docling-layout-heron-fp16-onnx",
+  "slug": "stefanj0-docling-layout-heron-fp16-onnx",
+  "author": "stefanj0",
+  "url": "https://huggingface.co/stefanj0/docling-layout-heron-fp16-onnx",
+  "created_at": "2026-08-25T12:08:49.000Z",
+  "updated_at": "2026-08-25T12:09:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "document-layout-analysis",
+    "object-detection",
+    "fp16",
+    "rt-detr",
+    "docling",
+    "webgpu",
+    "base_model:docling-project/docling-layout-heron",
+    "base_model:quantized:docling-project/docling-layout-heron",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86292298,
+  "storage_human": "86 MB",
+  "base_model": "docling-project/docling-layout-heron",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stefanj0/docling-layout-heron-int8-onnx · Hugging Face",
+      "url": "https://huggingface.co/stefanj0/docling-layout-heron-int8-onnx",
+      "snippet": "stefanj0 / docling-layout-heron-int8-onnx like 0 Object Detection ONNX onnxruntime document-layout-analysis int8 quantized rt-detr docling License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Docling Heron Layout — backbone-only INT8 (ONNX) What this is Why backbone-only Validation I/O contract (identical to ..."
+    },
+    {
+      "title": "docling-project/docling-layout-heron · Hugging Face",
+      "url": "https://huggingface.co/docling-project/docling-layout-heron",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Advanced Layout Analysis Models for Docling - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.11720v1",
+      "snippet": "This technical report documents the development of novel Layout Analysis models integrated into the Docling document-conversion pipeline. We trained several state-of-the-art object detectors based on the RT-DETR, RT-DETRv2 and DFINE architectures on a heterogeneous corpus of 150,000 documents (both openly available and proprietary)."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "GitHub - asmud/docling-onnx-models",
+      "url": "https://github.com/asmud/docling-onnx-models",
+      "snippet": "ONNX Runtime implementations for Docling AI models, providing improved performance and cross-platform compatibility."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mimiminsoo/spam_diffusion_stage_scan_v2",
+  "slug": "mimiminsoo-spam_diffusion_stage_scan_v2",
+  "author": "mimiminsoo",
+  "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_scan_v2",
+  "created_at": "2026-08-25T16:23:43.000Z",
+  "updated_at": "2026-08-25T16:24:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:piper_spamcoffee_stage_scan",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308316824,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1233356872,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimiminsoo/spam_diffusion_stage_place_v1 · Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mimiminsoo (minsoo) - Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo",
+      "snippet": "Sort: Recently updated. mimiminsoo/act_cylinder_127. Robotics • Updated 24 days ago • 38. mimiminsoo/cube_grasping_act. Robotics • Updated Mar 20 • 1"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI News May 20, 2025 We are releasing Stable Video 4D 2.0 (SV4D 2.0), an enhanced video-to-4D diffusion model for high-fidelity novel-view video synthesis and 4D asset generation. For research purposes:"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

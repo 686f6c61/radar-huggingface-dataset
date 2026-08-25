@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "skblv/yolov12m-surgvu-instruments",
+  "slug": "skblv-yolov12m-surgvu-instruments",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/yolov12m-surgvu-instruments",
+  "created_at": "2026-08-25T14:59:57.000Z",
+  "updated_at": "2026-08-25T15:00:08.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolov12",
+    "surgical-video",
+    "medical-imaging",
+    "instrument-detection",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40762535,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Surgical Visual Understanding - Grand Challenge",
+      "url": "https://surgvu25.grand-challenge.org/",
+      "snippet": "Surgical Visual Understanding ¶ News: ¶ 27th May, 2025: Challenge is live and accepting applications Overview: ¶ Machine learning models that can detect and track surgical context from endoscopic video will enable transformational interventions. For example, the ability to automatically categorize surgical progress (i.e. Phase, Step, Task, or Action) and the instruments used, or build ..."
+    },
+    {
+      "title": "bravefox12138/surgvu2025vqa · Hugging Face",
+      "url": "https://huggingface.co/bravefox12138/surgvu2025vqa",
+      "snippet": "Qwen2.5-VL model and processor directory (for Qwen2_5_VLForConditionalGeneration and AutoProcessor) Ensure the above weights and model directory are placed under /opt/app/model in the container image (or switch MODEL_PATH to a local path for direct local runs)."
+    },
+    {
+      "title": "GitHub - isi-challenges/surgVU-dataset",
+      "url": "https://github.com/isi-challenges/surgVU-dataset",
+      "snippet": "The Surgical Visual Understanding (SurgVU) dataset offers a vast collection of surgical videos and labels, captured during training sessions hosted by Intuitive Surgical, Inc. Surgeons perform standard tasks on a porcine model, producing over 840 hours of video at 60 frames per second, resulting in approximately 18 million labeled images."
+    },
+    {
+      "title": "GitHub - sunsmarterjie/yolov12: [NeurIPS 2025] YOLOv12: Attention ...",
+      "url": "https://github.com/sunsmarterjie/yolov12",
+      "snippet": "This advantage extends to other model scales. YOLOv12 also surpasses end-to-end real-time detectors that improve DETR, such as RT-DETR / RT-DETRv2: YOLOv12-S beats RT-DETR-R18 / RT-DETRv2-R18 while running 42% faster, using only 36% of the computation and 45% of the parameters."
+    },
+    {
+      "title": "Surgical Visual Understanding (SurgVU) Dataset - arXiv.org",
+      "url": "https://arxiv.org/html/2501.09209",
+      "snippet": "The Surgical Visual Understanding dataset (abbreviated, SurgVU dataset) is a collection of surgical videos and attendant labels. The videos were captured during robotic surgery training sessions, hosted by Intuitive Surgical. In these training sessions surgeons perform a series of standard surgical steps on a porcine model."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lucasalonsoport/cs224n-segment",
+  "slug": "lucasalonsoport-cs224n-segment",
+  "author": "Lucasalonsoport",
+  "url": "https://huggingface.co/Lucasalonsoport/cs224n-segment",
+  "created_at": "2026-08-25T17:55:29.000Z",
+  "updated_at": "2026-08-25T17:55:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "audio-visual-learning",
+    "cautious",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "numeric-bibtex",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "snippet": "Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction to cutting-edge neural networks for NLP."
+    },
+    {
+      "title": "CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/",
+      "snippet": "Note: In the 2023-24 academic year, CS224N will be taught in both Winter and Spring 2024. We hope to see you in class! Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction ..."
+    },
+    {
+      "title": "GitHub - csbrendan/CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://github.com/csbrendan/CS224N/",
+      "snippet": "Natural Language Processing with Deep Learning. Contribute to csbrendan/CS224N development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - floriankark/cs224n-win2223: Code and written solutions of the ...",
+      "url": "https://github.com/floriankark/cs224n-win2223",
+      "snippet": "This repository contains my solutions of the assignments of the Stanford CS224N: Natural Language Processing with Deep Learning course from winter 2022/23. There are many other great repositories on this course but none that cover the latest assignments (winter 2022 / 2023) and contain the written and practical parts completely (state: Mai 12 ..."
+    },
+    {
+      "title": "CS224N - Ader&#x27;s notebook",
+      "url": "https://ader817.github.io/notebook/ai/cs224n/",
+      "snippet": "Ader&#x27;s notebook Stanford CS224N course notes, split by topic from the local notebook."
+    }
+  ]
+}

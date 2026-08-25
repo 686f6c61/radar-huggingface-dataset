@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "walker8096/diffusion-chatbot-tiny",
+  "slug": "walker8096-diffusion-chatbot-tiny",
+  "author": "walker8096",
+  "url": "https://huggingface.co/walker8096/diffusion-chatbot-tiny",
+  "created_at": "2026-08-25T15:51:02.000Z",
+  "updated_at": "2026-08-25T15:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "docx",
+    "embodied-ai",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "narrative-progressive",
+    "numeric-apa",
+    "passive",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MJDaws0n/Diffusion-AI",
+      "url": "https://github.com/MJDaws0n/Diffusion-AI/",
+      "snippet": "Small Python chatbot that uses masked diffusion for text. Read the project paper: Text Diffusion as a Language Model. This is a toy model. It uses NumPy on CPU, optional CuPy for NVIDIA GPU training, no diffusion libraries, and local or Hugging Face training data. python -c \"from diffusion_chatbot ..."
+    },
+    {
+      "title": "Diffusion Chatbot - a Hugging Face Space by Andhs",
+      "url": "https://huggingface.co/spaces/Andhs/diffusion-chatbot",
+      "snippet": "This app creates pictures based on the text you provide. Simply enter a description of the scene you want, and the system will produce a matching image for you to view or download. No technical set..."
+    },
+    {
+      "title": "GitHub - nathanrs/tiny-diffusion: A character-level language diffusion ...",
+      "url": "https://github.com/nathanrs/tiny-diffusion",
+      "snippet": "A character-level language diffusion model for text generation trained on Tiny Shakespeare, in 365 lines of code! It is only 10.7 million parameters, so you can also try it out locally! This repo also contains a tiny gpt implementation in 313 lines of code. ~80% of the code between the two files are the exact same. This is v2 of this project, which simplified the diffusion code from ~1,000 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=tinydiffusion",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: tinydiffusion Clear all"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skblv/yolo11m-cls-sarrarp50-gesture",
+  "slug": "skblv-yolo11m-cls-sarrarp50-gesture",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/yolo11m-cls-sarrarp50-gesture",
+  "created_at": "2026-08-25T14:42:40.000Z",
+  "updated_at": "2026-08-25T14:43:18.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo11",
+    "surgical-video",
+    "medical-imaging",
+    "gesture-recognition",
+    "image-classification",
+    "arxiv:2401.00496",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20894358,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLO11m Cls Model by Sparrow Wolverine",
+      "url": "https://platform.ultralytics.com/sparrow-wolverine/yolo11/yolo11m-cls",
+      "snippet": "YOLO11m Cls model from the YOLO11 project by Sparrow Wolverine. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Ultralytics YOLO11",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    },
+    {
+      "title": "YOLO11m Cls Model by Weiqin Su - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/weiqin-su/yolo11/yolo11m-cls",
+      "snippet": "YOLO11m Cls model from the YOLO11 project by Weiqin Su. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO11 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "ultralytics/docs/en/models/yolo11.md at main - GitHub",
+      "url": "https://github.com/ultralytics/ultralytics/blob/main/docs/en/models/yolo11.md",
+      "snippet": "Greater Accuracy with Fewer Parameters: With advancements in model design, YOLO11m achieves a higher mean Average Precision (mAP) on the COCO dataset while using 22% fewer parameters than YOLOv8m, making it computationally efficient without compromising accuracy."
+    }
+  ]
+}

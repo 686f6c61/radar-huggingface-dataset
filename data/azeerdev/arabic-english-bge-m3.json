@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AzeerDev/arabic-english-bge-m3",
+  "slug": "azeerdev-arabic-english-bge-m3",
+  "author": "AzeerDev",
+  "url": "https://huggingface.co/AzeerDev/arabic-english-bge-m3",
+  "created_at": "2026-08-25T12:37:45.000Z",
+  "updated_at": "2026-08-25T12:37:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "xlm-roberta",
+    "passage-retrieval",
+    "sentence-similarity",
+    "pruned",
+    "ar",
+    "en",
+    "base_model:BAAI/bge-m3",
+    "base_model:quantized:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 362166272,
+  "parameters_human": "362.2M",
+  "storage_bytes": 1811882155,
+  "storage_human": "1.8 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "sayed0am/arabic-english-bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/sayed0am/arabic-english-bge-m3",
+      "snippet": "🇸🇦 arabic-english-bge-m3 This model is a 36.2% smaller version of BAAI/bge-m3 for the Arabic language. RANKED #3 in general and #1 Open source @ The-Arabic-Rag-Leaderboard The ONNX quantized version is around 75% smaller (363 MB) than the pruned model, while retaining approximately 98% of the original model&#x27;s quality."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "The BGE series models have gained widespread popularity among users and developers due to excellent performance and applicability, with download data far surpassing that of similar models."
+    },
+    {
+      "title": "GitHub - inferless/bge-m3: A multi-lingual, versatile text embedding ...",
+      "url": "https://github.com/inferless/Bge-m3",
+      "snippet": "BGE-M3 is an innovative project known for its versatility, featuring Multi-Functionality, Multi-Linguality, and Multi-Granularity. It excels in dense, multi-vector, and sparse retrievals simultaneously, supports over 100 languages, and handles inputs of varying granularities, from short sentences to lengthy documents of up to 8192 tokens."
+    }
+  ]
+}

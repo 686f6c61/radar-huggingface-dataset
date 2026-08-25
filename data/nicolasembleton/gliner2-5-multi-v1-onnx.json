@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nicolasembleton/gliner2.5-multi-v1-onnx",
+  "slug": "nicolasembleton-gliner2-5-multi-v1-onnx",
+  "author": "nicolasembleton",
+  "url": "https://huggingface.co/nicolasembleton/gliner2.5-multi-v1-onnx",
+  "created_at": "2026-08-25T17:37:29.000Z",
+  "updated_at": "2026-08-25T17:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gliner2",
+    "boundary",
+    "webgpu",
+    "token-classification",
+    "base_model:fastino/gliner2.5-multi-v1",
+    "base_model:quantized:fastino/gliner2.5-multi-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1129944760,
+  "storage_human": "1.1 GB",
+  "base_model": "fastino/gliner2.5-multi-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lion-ai/gliner2-multi-v1-onnx · Hugging Face",
+      "url": "https://huggingface.co/lion-ai/gliner2-multi-v1-onnx",
+      "snippet": "gliner2-multi-v1-onnx ONNX export of fastino/gliner2-multi-v1 for zero-shot Named Entity Recognition. GLiNER2 can recognise any entity type at inference time — no fine-tuning required. Simply pass a list of labels alongside your text, and the model scores every candidate span for each label. This repository contains a single monolithic ONNX file (encoder + span head) that can be run with any ..."
+    },
+    {
+      "title": "GitHub - rmallof/gliner2: Unified Schema-Based Information Extraction",
+      "url": "https://github.com/rmallof/gliner2",
+      "snippet": "GLiNER2: Unified Schema-Based Information Extraction and Text Classification Extract entities, classify text, parse structured data, and extract relations—all in one efficient model."
+    },
+    {
+      "title": "SemplificaAI/gliner2-multi-v1-onnx · Hugging Face",
+      "url": "https://huggingface.co/SemplificaAI/gliner2-multi-v1-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification. GLiNER is fine-tunable, optimized to run on CPUs and consumer hardware, and has performance competitive with LLMs several times ..."
+    },
+    {
+      "title": "Fastino Releases GLiNER2.5: A Boundary-Prediction Architecture That ...",
+      "url": "https://www.marktechpost.com/2026/08/24/fastino-releases-gliner2-5-a-boundary-prediction-architecture-that-removes-span-enumeration-from-information-extraction/",
+      "snippet": "Information extraction teams face a recurring choice. Small encoder models are cheap but rigid, and large language models are flexible but expensive per document. Fastino released GLiNER2.5 to narrow that gap. The release replaces span enumeration with boundary prediction: the model scores where an entity starts and ends instead of scoring every candidate span against a width grid. That single ..."
+    }
+  ]
+}

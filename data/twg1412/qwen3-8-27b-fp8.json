@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TWG1412/Qwen3.8-27B-FP8",
+  "slug": "twg1412-qwen3-8-27b-fp8",
+  "author": "TWG1412",
+  "url": "https://huggingface.co/TWG1412/Qwen3.8-27B-FP8",
+  "created_at": "2026-08-25T14:21:50.000Z",
+  "updated_at": "2026-08-25T14:21:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879676248,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The block-scaled FP8 checkpoint needs no workaround. vLLM auto-disables DeepGemm for model_type=qwen3_5_text on Blackwell and falls back to CUTLASS, so it loads unaided."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B ranks #14 of 225 on the public leaderboard with a score of 72.49/100. Its source-verified position is #12 of 105. Qwen3.8-27B is a open weight model with a 262K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use. Qwen publishes the 27B dense checkpoint and a separate FP8 artifact on Hugging Face under ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "catgamer1/mdeberta-ru-en-emotion",
+  "slug": "catgamer1-mdeberta-ru-en-emotion",
+  "author": "catgamer1",
+  "url": "https://huggingface.co/catgamer1/mdeberta-ru-en-emotion",
+  "created_at": "2026-08-25T13:38:42.000Z",
+  "updated_at": "2026-08-25T14:01:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "emotion-recognition",
+    "multi-label-classification",
+    "deberta",
+    "lora",
+    "russian",
+    "english",
+    "text-classification",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278814727,
+  "parameters_human": "278.8M",
+  "storage_bytes": 573688287,
+  "storage_human": "574 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deberta",
+      "snippet": "DeBERTa improves the pretraining efficiency of BERT and RoBERTa with two key ideas, disentangled attention and an enhanced mask decoder. Instead of mixing everything together like BERT, DeBERTa separates a word&#x27;s content from its position and processes them independently. This gives it a clearer sense of what&#x27;s being said and where in the sentence it&#x27;s happening."
+    },
+    {
+      "title": "microsoft/mdeberta-v3-base · Hugging Face",
+      "url": "https://huggingface.co/microsoft/mdeberta-v3-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZebangCheng/Emotion-LLaMA: Emotion-LLaMA: Multimodal Emotion ...",
+      "url": "https://github.com/ZebangCheng/Emotion-LLaMA",
+      "snippet": "Additionally, we propose Emotion-LLaMA, a model that seamlessly integrates audio, visual, and textual inputs through emotion-specific encoders. By aligning features into a shared space and employing a modified LLaMA model with instruction tuning, Emotion-LLaMA significantly enhances both emotional recognition and reasoning capabilities."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yichenhuf/unet-intent-test",
+  "slug": "yichenhuf-unet-intent-test",
+  "author": "Yichenhuf",
+  "url": "https://huggingface.co/Yichenhuf/unet-intent-test",
+  "created_at": "2026-08-25T16:19:49.000Z",
+  "updated_at": "2026-08-25T16:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "lightweight-multimodal",
+    "medium-balanced",
+    "mixed-active-passive",
+    "neutral",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta AI Model Gained Internet Access and Hacked Another Organization&#x27;s ...",
+      "url": "https://cybersecuritynews.com/meta-ai-hacked-organizations/",
+      "snippet": "Meta disclosed that an AI model gained internet access during testing and exploited a vulnerability in another organization&#x27;s system."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "ChatGPT maker OpenAI says AI model went rogue during testing",
+      "url": "https://www.dailymail.com/news/article-15996583/ChatGPT-maker-OpenAI-says-AI-model-went-rogue.html",
+      "snippet": "ChatGPT creator OpenAI has revealed one of its advanced artificial intelligence models went rogue during a security test and hacked into a start-up company."
+    },
+    {
+      "title": "OpenAI says AI model hacked another company&#x27;s systems during internal ...",
+      "url": "https://www.foxbusiness.com/technology/openai-says-ai-model-hacked-another-companys-systems-during-internal-test",
+      "snippet": "One of OpenAI&#x27;s models hacked into another company&#x27;s systems during internal testing in what it called an \"unprecedented cyber incident,\" according to the company."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

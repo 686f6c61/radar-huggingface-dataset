@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Smirnovivan/resnet-tts",
+  "slug": "smirnovivan-resnet-tts",
+  "author": "Smirnovivan",
+  "url": "https://huggingface.co/Smirnovivan/resnet-tts",
+  "created_at": "2026-08-25T17:33:54.000Z",
+  "updated_at": "2026-08-25T17:34:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "contrastive",
+    "cosine",
+    "flash",
+    "gelu-tanh",
+    "kaiming-normal",
+    "layernorm",
+    "novograd",
+    "tensor-fusion",
+    "tiny-transformer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Dasoam/TTS-Detector: A deep learning framework using Mel ...",
+      "url": "https://github.com/Dasoam/TTS-Detector",
+      "snippet": "This repository presents a robust deep learning framework for detecting AI-generated (TTS) speech, commonly referred to as audio deepfakes. Leveraging Mel spectrograms as the primary feature representation, the system employs a modified ResNet architecture—specifically, Res2Net —to perform binary classification between authentic and synthetic audio samples."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Text-to-Speech Synthesis - 65 Model Downloads & Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/text-to-speech-synthesis/",
+      "snippet": "Download Free Open Source Text-to-Speech AI Models with Audio Samples. Create lifelike voices for your projects."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ai-voice: List of open-source TTS, voice ...",
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "snippet": "Description: Sarashina2.2-TTS is a Japanese-centric text-to-speech system from SB Intuitions built on a large language model. It supports both Japanese and English, delivers strong pronunciation accuracy on Japanese text through large-scale end-to-end training, and reproduces a speaker&#x27;s voice, speaking style, and acoustic characteristics from ..."
+    }
+  ]
+}

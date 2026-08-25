@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Joestar79/Qwen3.8-27B-OBLITERATED-NVFP4",
+  "slug": "joestar79-qwen3-8-27b-obliterated-nvfp4",
+  "author": "Joestar79",
+  "url": "https://huggingface.co/Joestar79/Qwen3.8-27B-OBLITERATED-NVFP4",
+  "created_at": "2026-08-25T12:46:57.000Z",
+  "updated_at": "2026-08-25T13:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "mtp",
+    "speculative-decoding",
+    "abliterated",
+    "uncensored",
+    "rtx-5090",
+    "blackwell",
+    "quantization",
+    "modelopt",
+    "image-text-to-text",
+    "conversational",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:quantized:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15193246960,
+  "parameters_human": "15.19B",
+  "storage_bytes": 21527409184,
+  "storage_human": "21.5 GB",
+  "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "NVFP4 uses the real kernel here. vLLM selects FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM on sm120 — a cutlass path, not an emulation fallback — for both the Inferact build above and unsloth/Qwen3.8-27B-NVFP4."
+    }
+  ]
+}

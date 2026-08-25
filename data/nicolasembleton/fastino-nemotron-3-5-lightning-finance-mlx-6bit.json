@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nicolasembleton/Fastino-Nemotron-3.5-Lightning-Finance-MLX-6bit",
+  "slug": "nicolasembleton-fastino-nemotron-3-5-lightning-finance-mlx-6bit",
+  "author": "nicolasembleton",
+  "url": "https://huggingface.co/nicolasembleton/Fastino-Nemotron-3.5-Lightning-Finance-MLX-6bit",
+  "created_at": "2026-08-25T17:22:37.000Z",
+  "updated_at": "2026-08-25T17:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "6-bit",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+    "base_model:quantized:fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6914599488,
+  "parameters_human": "6.91B",
+  "storage_bytes": 25684771847,
+  "storage_human": "25.7 GB",
+  "base_model": "fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fastino Nemotron 3.5 Lightning Finance - Hugging Face",
+      "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+      "snippet": "Fastino-Nemotron-3.5-Lightning-Finance is a 30B-parameter, 3B-active mixture-of-experts model specialized for financial reasoning, extraction, and research fine-tuned on LoRA with the Fastino Fine-Tuning Agent."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "The post-training data has a cutoff date of May 2026. What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA."
+    },
+    {
+      "title": "Small Model, Big Leverage: What We Learned Fine-Tuning ... - fastino.ai",
+      "url": "https://fastino.ai/blog/learnings-from-fine-tuning-nvidia-nemotron-3.5-lightning-with-autonomous-agent",
+      "snippet": "We used our autonomous Fastino Fine-tuning agent to adapt early access checkpoints of Nemotron 3.5 Lightning into two specialized models, one for medical tasks and one for financial tasks. The agent curated the data, generated and trained candidate recipes, evaluated each on target and transfer tasks, and used every diagnosed failure to design the next experiment."
+    },
+    {
+      "title": "Specialized, Open Models | GLiNER, GLiGuard, Fastino-Nemotron-3.5 ...",
+      "url": "https://fastino.ai/models",
+      "snippet": "A 30B-parameter mixture-of-experts model with 3B active parameters specialized model for finance domain, fine-tuned on Nemotron 3.5 Lightning with Fastino Fine-Tuning Agent."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron 3.5 Lightning for Fast, Specialized Agent Tasks NVIDIA Nemotron 3.5 Lightning is an open 30B MoE model with 3B active parameters for specialized tasks in always-on agents. With NeMo Switchyard, developers can route high-volume execution to Lightning when it&#x27;s the right fit, while reserving frontier models for complex planning."
+    }
+  ]
+}

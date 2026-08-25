@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TQZinh/BamiBERT-ViLegalNLI",
+  "slug": "tqzinh-bamibert-vilegalnli",
+  "author": "TQZinh",
+  "url": "https://huggingface.co/TQZinh/BamiBERT-ViLegalNLI",
+  "created_at": "2026-08-25T13:17:19.000Z",
+  "updated_at": "2026-08-25T13:18:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "nli",
+    "legal-text",
+    "vietnamese",
+    "text-classification",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102952706,
+  "parameters_human": "103.0M",
+  "storage_bytes": 411840105,
+  "storage_human": "412 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://arxiv.org/html/2607.02259",
+      "snippet": "In this paper, we introduce BamiBERT—a new pre-trained language model for Vietnamese—trained from scratch on a large corpus of 129GB of uncompressed text for 20 epochs, with an extended maximum context length of 2048 tokens."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://arxiv.org/pdf/2607.02259v1",
+      "snippet": "In this paper, we have presented BamiBERT, a new pre-trained language model for Vietnamese designed to address key limitations of existing monolingual encoders."
+    },
+    {
+      "title": "Qualcomm-AI-Research/BamiBERT · Hugging Face",
+      "url": "https://huggingface.co/Qualcomm-AI-Research/BamiBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://huggingface.co/papers/2607.02259",
+      "snippet": "BamiBERT: A New BERT-based Language Model for Vietnamese ... Dat Quoc Nguyen , Thinh Pham , Chi Tran ,"
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese | AI Research ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/bamibert-new-bert-based-language-model-vietnamese",
+      "snippet": "From word segmentation to raw text: what BamiBERT changes BamiBERT is a BERT-based language model trained from scratch on 129GB of Vietnamese text that eliminates the need for external word segmentation—a requirement that has constrained Vietnamese NLP since PhoBERT&#x27;s 2020 release."
+    }
+  ]
+}

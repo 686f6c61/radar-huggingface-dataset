@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jakelolipopp/Qwen3.5-9B-AltText-v4-GGUF",
+  "slug": "jakelolipopp-qwen3-5-9b-alttext-v4-gguf",
+  "author": "Jakelolipopp",
+  "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-9B-AltText-v4-GGUF",
+  "created_at": "2026-08-25T13:56:19.000Z",
+  "updated_at": "2026-08-25T13:56:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "qwen3_5",
+    "image-to-text",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:quantized:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 56901256096,
+  "storage_human": "56.9 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jakelolipopp/Qwen3.5-9B-AltText-v4-LORA · Hugging Face",
+      "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-9B-AltText-v4-LORA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jakelolipopp/Qwen3.5-9B-AltText-v4-LORA at main - Hugging Face",
+      "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-9B-AltText-v4-LORA/tree/main",
+      "snippet": "Load model with FastModel ... main Qwen3.5-9B-AltText-v4-LORA 224 MB Ctrl+K Ctrl+K 1 contributor History:5 commits Jakelolipopp Upload model trained with Unsloth 84fe11c verifiedabout 7 hours ago .gitattributes 1.57 kBUpload model trained with Unslothabout 22 hours ago README.md 534 BytesUpload README.md with huggingface_hubabout 22 hours ago ..."
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Qwen 3.5 9B fits in 6.6GB and beats Qwen 3-class models 3x its size. Setup on Ollama/llama.cpp, quant table, where 9B still fits in the May 2026 lineup."
+    },
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s new model family, including Qwen3.5- 35B -A3B, 27B, 122B -A10B and 397B -A17B and the new Small series: Qwen3.5-0.8B, 2B, 4B and 9B. The multimodal hybrid reasoning LLMs deliver the strongest performances for their sizes."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ler001/SLIT_scoring",
+  "slug": "ler001-slit_scoring",
+  "author": "ler001",
+  "url": "https://huggingface.co/ler001/SLIT_scoring",
+  "created_at": "2026-08-25T13:34:56.000Z",
+  "updated_at": "2026-08-25T13:46:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-classification",
+    "generated_from_trainer",
+    "trl",
+    "reward-trainer",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4985348377,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "GitHub - davebirckhead/lead-scoring-demo: AI Lead Scoring Demo ...",
+      "url": "https://github.com/davebirckhead/lead-scoring-demo",
+      "snippet": "AI Lead / Account Prioritization - Real-World Demo An end-to-end machine learning system for B2B lead scoring that helps sales teams prioritize high-value accounts using behavioral signals and firmographic data."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "LLM Prompt Evaluator - GitHub",
+      "url": "https://github.com/geegorbee/LLM-Prompt-Evaluator",
+      "snippet": "A lightweight Python-based tool for simulating human-in-the-loop evaluation of Large Language Model (LLM) outputs. This project enables structured scoring of AI responses using customizable rubrics and exports results to a CSV for further analysis. Ideal for testing prompts, auditing model behavior, or contributing to AI training pipelines."
+    },
+    {
+      "title": "SLID: a slit-lamp image dataset for deep learning-based ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1716501/full",
+      "snippet": "Currently, there is a scarcity of open-access datasets that include slit-lamp images with detailed anatomical annotations and lesion identification necessary for developing robust AI models applicable to real-world clinical scenarios."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nabinkhair/genui-vl-2b-merged",
+  "slug": "nabinkhair-genui-vl-2b-merged",
+  "author": "nabinkhair",
+  "url": "https://huggingface.co/nabinkhair/genui-vl-2b-merged",
+  "created_at": "2026-08-25T11:22:49.000Z",
+  "updated_at": "2026-08-25T11:24:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562966,
+  "storage_human": "4.3 GB",
+  "base_model": "unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Architecture graph for nabinkhair/genui-vl-8b-merged | hfviewer",
+      "url": "https://hfviewer.com/nabinkhair/genui-vl-8b-merged",
+      "snippet": "nabinkhair/genui-vl-8b-merged architecture at a glance nabinkhair/genui-vl-8b-merged is a model (qwen3_vl_text architecture). It uses 36 transformer layers, a hidden size of 4,096, and 32 query heads with 8 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 12,288."
+    },
+    {
+      "title": "Nabin Khair | Full-Stack Engineer building AI-native products",
+      "url": "https://nabinkhair.com.np/",
+      "snippet": "Nabin Khair is a Full-Stack Engineer specializing in AI-native products. With expertise in frontend, backend, LLM orchestration, and multi-cloud ops, Nabin ships production AI products end to end."
+    },
+    {
+      "title": "nabinkhair42 (Nabin Khair) · GitHub",
+      "url": "https://github.com/nabinkhair42",
+      "snippet": "AI-Focused Full-Stack Developer | Building Intelligent Web Systems - nabinkhair42"
+    },
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "snippet": "Qwen/Qwen3-VL-8B-Instruct is supported by the following Inference Providers:"
+    },
+    {
+      "title": "Qwen3-VL-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/qwen3-vl-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

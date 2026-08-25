@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "marchenkoiryna/hw1-classify",
+  "slug": "marchenkoiryna-hw1-classify",
+  "author": "marchenkoiryna",
+  "url": "https://huggingface.co/marchenkoiryna/hw1-classify",
+  "created_at": "2026-08-25T18:04:07.000Z",
+  "updated_at": "2026-08-25T18:04:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "cosine",
+    "gated-fusion",
+    "lion",
+    "mobilevit",
+    "relu",
+    "retrieval",
+    "sliding-window",
+    "xavier",
+    "xlarge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iryna1320 (Marchenko Iryna) · GitHub",
+      "url": "https://github.com/Iryna1320",
+      "snippet": "Iryna1320 has 46 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Iryna-Marchenko · GitHub",
+      "url": "https://github.com/Iryna-Marchenko",
+      "snippet": "GitHub is where Iryna-Marchenko builds software. Joined Jul 22, 2025 Block or report Iryna-Marchenko Block user"
+    },
+    {
+      "title": "‪Iryna Marchenko‬ - ‪Google Académico‬",
+      "url": "https://scholar.google.com/citations?user=ZZHfKhEAAAAJ&hl=es",
+      "snippet": "‪доцент кафедри інформатики‬ - ‪‪Citado por 138‬‬ - ‪математичне моделювання‬ - ‪інформаційні технології‬ - ‪соціальна робота‬"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 406 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mars2titan/amiko-hermit-1.0-27b-vl-mlx-4bit",
+  "slug": "mars2titan-amiko-hermit-1-0-27b-vl-mlx-4bit",
+  "author": "mars2titan",
+  "url": "https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-4bit",
+  "created_at": "2026-08-25T12:11:10.000Z",
+  "updated_at": "2026-08-25T12:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "tool-use",
+    "vision",
+    "mtp",
+    "qwen",
+    "openhermit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:mars2titan/amiko-hermit-27b-vl-merged",
+    "base_model:quantized:mars2titan/amiko-hermit-27b-vl-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4665462000,
+  "parameters_human": "4.67B",
+  "storage_bytes": 16074690881,
+  "storage_human": "16.1 GB",
+  "base_model": "mars2titan/amiko-hermit-27b-vl-merged",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amiko - Linux Satellite Support Community",
+      "url": "https://www.linuxsat-support.com/board/923-amiko/",
+      "snippet": "Amiko Get dedicated support for Amiko Android TV Boxes. Find Enigma2 images, firmware updates, softcams, and tools for the A3, A4, A5, and A6 models."
+    },
+    {
+      "title": "GitHub - raullenchai/Rapid-MLX: The fastest local AI engine for Apple ...",
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "snippet": "The fastest local AI engine for Apple Silicon. 4.2x faster than Ollama, 0.08s cached TTFT, 100% tool calling. 17 tool parsers, prompt cache, reasoning separation, cloud routing. Drop-in OpenAI replacement. Works with Claude Code, Cursor, Aider. - raullenchai/Rapid-MLX"
+    },
+    {
+      "title": "h1st0ry3D/Godoter-27B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/h1st0ry3D/Godoter-27B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/gemma-3-27b-it-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/gemma-3-27b-it-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DOC ModelStudio Console",
+      "url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1?tab=doc",
+      "snippet": "Synthesize speech with qwen-audio-3.-tts-flash over AOQ Transcribe real-time speech with fun-asr-realtime over AOQ Support Model List Changelog Model decommissioning policy Model lifecycle and updates"
+    }
+  ]
+}

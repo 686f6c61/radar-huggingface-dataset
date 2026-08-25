@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-cold-fusion-gain-v1-1-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF",
+  "created_at": "2026-08-25T16:38:04.000Z",
+  "updated_at": "2026-08-25T16:38:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13642624,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF like 0 Transformers GGUF English unsloth GAIN Training COLD-FUSION finetune imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-GGUF like 1 Transformers GGUF English unsloth GAIN Training COLD-FUSION finetune conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF: Text-to-Text ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-nm-dau-neo-max-mtp-gguf-davidau",
+      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF is a fine-tuned 27 billion parameter variant of Qwen 3.8 created by DavidAU that reduces thinking token overhead by 50-90% compared to the base model while maintaining or exceeding benchmark performance. The model uses the COLD FUSION training methodology, which combines the GAIN technique (dynamic per-sample training ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau",
+      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 is a 27-billion parameter instruction-tuned language model built by DavidAU that applies the COLD FUSION training methodology—combining GAIN (an internally developed technique) with Unsloth&#x27;s training infrastructure—to reduce thinking tokens to 1/10 to 1/2 of standard Qwen models while maintaining 99% of full-precision performance at both 8-bit ..."
+    },
+    {
+      "title": "DavidAU - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf",
+      "snippet": "Model Details of Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels."
+    }
+  ]
+}

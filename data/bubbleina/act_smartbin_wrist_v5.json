@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bubbleina/act_smartbin_wrist_v5",
+  "slug": "bubbleina-act_smartbin_wrist_v5",
+  "author": "Bubbleina",
+  "url": "https://huggingface.co/Bubbleina/act_smartbin_wrist_v5",
+  "created_at": "2026-08-25T14:51:11.000Z",
+  "updated_at": "2026-08-25T14:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Bubbleina/act_smartbin_wrist_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206703492,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bubbleina/act_smartbin_wrist_v3 · Hugging Face",
+      "url": "https://huggingface.co/Bubbleina/act_smartbin_wrist_v3",
+      "snippet": "Instructions to use Bubbleina/act_smartbin_wrist_v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Bubbleina/act_smartbin_wrist_v3 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the ..."
+    },
+    {
+      "title": "Bubbleina/act_smartbin_wrist_v1 · Hugging Face",
+      "url": "https://huggingface.co/Bubbleina/act_smartbin_wrist_v1",
+      "snippet": "Bubbleina/act_smartbin_wrist_v1 ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "GitHub - AbdelhediMed05/Smartbin-AI",
+      "url": "https://github.com/AbdelhediMed05/Smartbin-AI",
+      "snippet": "Smart Bin — AI Waste Sorting Model An automated waste classification system using YOLO26m (Ultralytics, January 2026) to sort waste into 4 categories: Plastic, Glass, Metal, and Paper. Built as part of the Smart Bin prototype — an intelligent waste sorting bin developed in Tunisia."
+    },
+    {
+      "title": "Bubbleina发布act_smartbin_v5机器人专用数据集 破解操作控制与模仿学习训练数据痛点",
+      "url": "https://www.5radar.com/dataopensource/news/457012/bubbleina%E5%8F%91%E5%B8%83act-smartbin-v5%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E9%9B%86-%E7%A0%B4%E8%A7%A3%E6%93%8D%E4%BD%9C%E6%8E%A7%E5%88%B6%E4%B8%8E%E6%A8%A1%E4%BB%BF%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E7%97%9B%E7%82%B9",
+      "snippet": "机器人技术服务商Bubbleina于2026年7月26日在HuggingFace首发act_smartbin_v5专用数据集，该数据集依托LeRobot工具打造，覆盖机器人操作全链路多模态特征，可直接用于机器人控制算法训练评估、模仿学习模型迭代，有效降低机器人领域研发门槛，为技术落地提供高质量数据要素支撑。"
+    },
+    {
+      "title": "GitHub - Shrushti7823/SmartBin-AI: AI-Powered Waste Classification ...",
+      "url": "https://github.com/Shrushti7823/SmartBin-AI/tree/main",
+      "snippet": "SmartBin AI is an AI-powered web application developed using Python (Flask) and Machine Learning to classify waste into categories such as Dry, Wet, and Plastic based on sensor readings. The system analyzes data collected from multiple sensors and predicts the waste type with a confidence score, helping improve waste segregation and support sustainable waste management."
+    }
+  ]
+}

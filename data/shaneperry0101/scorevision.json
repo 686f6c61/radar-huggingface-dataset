@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shaneperry0101/ScoreVision",
+  "slug": "shaneperry0101-scorevision",
+  "author": "shaneperry0101",
+  "url": "https://huggingface.co/shaneperry0101/ScoreVision",
+  "created_at": "2026-08-19T12:51:24.000Z",
+  "updated_at": "2026-08-25T12:49:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "bittensor",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29404829,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shaneperry0101/ScoreVision · Hugging Face",
+      "url": "https://huggingface.co/shaneperry0101/ScoreVision",
+      "snippet": "shaneperry0101 / ScoreVision like 0 Object Detection ONNX bittensor Model card FilesFiles and versions xet Community Copy to bucket new Detect-fire miner (SN44 / TurboVision)"
+    },
+    {
+      "title": "shaneperry0101 (Shane Perry) - Hugging Face",
+      "url": "https://huggingface.co/shaneperry0101",
+      "snippet": "Prompt Engineering Generative AI with Large Language Model Course Labs"
+    },
+    {
+      "title": "shaneperry0101 (Shane Perry) - Hugging Face",
+      "url": "https://huggingface.co/shaneperry0101/activity/all",
+      "snippet": "Generative Ai With Llm Generative AI with Large Language Model Course Labs"
+    },
+    {
+      "title": "shaneperry0101 (Shane Perry) - Hugging Face",
+      "url": "https://huggingface.co/shaneperry0101/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 2 months ago ... updated a Space over 1 year ago"
+    },
+    {
+      "title": "reneeice/scorevision · Hugging Face",
+      "url": "https://huggingface.co/reneeice/scorevision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

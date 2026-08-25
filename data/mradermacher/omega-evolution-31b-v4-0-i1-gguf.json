@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Omega-Evolution-31B-v4.0-i1-GGUF",
+  "slug": "mradermacher-omega-evolution-31b-v4-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega-Evolution-31B-v4.0-i1-GGUF",
+  "created_at": "2026-08-25T16:11:55.000Z",
+  "updated_at": "2026-08-25T16:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "dangerous",
+    "ERP",
+    "Other License",
+    "en",
+    "base_model:ReadyArt/Omega-Evolution-31B-v4.0",
+    "base_model:quantized:ReadyArt/Omega-Evolution-31B-v4.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 71482356640,
+  "storage_human": "71.5 GB",
+  "base_model": "ReadyArt/Omega-Evolution-31B-v4.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/G4-MeroMero-31B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/G4-MeroMero-31B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VRAM16GB以下ローカルLLM性能検証 第五弾：gemma-4-12b登場、12bの実力と量子化の罠",
+      "url": "https://note.com/ai_0049/n/nbef34aea21fa",
+      "snippet": "はじめに 前回に引き続き、手元のGPUで動かせるオープンモデルを同一設問群で比較検証しました。今回の第五弾は三つの問いを中心に据えています。 ひとつ目は gemma-4-12bの実力。Googleが発表したgemma-4ファミリーの12bモデルがどこまで戦えるか。ふたつ目は 「低パラメータ×高量子化」vs「高 ..."
+    },
+    {
+      "title": "2026-04-17 Ai扫盲系列——3080 20g魔改卡本地大模型的\"甜点\"之选",
+      "url": "https://zhuanlan.zhihu.com/p/2029188132206035598",
+      "snippet": "硬件介绍总结：3020 20G单卡运行大模型甜点之选，功能多样可大模型、AI绘画、玩游戏，榨干它的性能，后续目标是升级3090 24G后进行对比测试，在往后边际成本剧增，边际性能递减，本地娱乐就不做尝试了 想要本地运…"
+    },
+    {
+      "title": "DeepSeek-V4: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/deepseek-v4",
+      "snippet": "The lossless 8-bit GGUF is 162 GB and 3-bit is 103GB which can run on a 110GB RAM device. DeepSeek-V4-Flash-0731 scores 82.7% on Terminal Bench 2.1, 54.4% on DeepSWE, and 54.2% on NL2Repo. DSpark is also enabled for GGUFs, enabling up to 2x faster decoding speed! Aug 13: DeepSeek- V4-Pro-0813 was released and quants are now available to run."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "guruansh/siglip2-so400m-naflex-onnx",
+  "slug": "guruansh-siglip2-so400m-naflex-onnx",
+  "author": "guruansh",
+  "url": "https://huggingface.co/guruansh/siglip2-so400m-naflex-onnx",
+  "created_at": "2026-08-25T16:27:19.000Z",
+  "updated_at": "2026-08-25T16:30:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "tensorrt",
+    "siglip2",
+    "naflex",
+    "vision",
+    "inference-optimization",
+    "feature-extraction",
+    "arxiv:2502.14786",
+    "base_model:google/siglip2-so400m-patch16-naflex",
+    "base_model:quantized:google/siglip2-so400m-patch16-naflex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 853881949,
+  "storage_human": "854 MB",
+  "base_model": "google/siglip2-so400m-patch16-naflex",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/siglip2-so400m-patch16-naflex · Hugging Face",
+      "url": "https://huggingface.co/google/siglip2-so400m-patch16-naflex",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/siglip2-so400m-patch16-naflex at main - Hugging Face",
+      "url": "https://huggingface.co/google/siglip2-so400m-patch16-naflex/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "GitHub - Findit-AI/siglip2-naflex",
+      "url": "https://github.com/Findit-AI/siglip2-naflex/tree/main/",
+      "snippet": "Model files The runtime expects the assets from Findit-AI/indexer release models-siglip2-naflex-v1. See models/MODELS.md for the download recipe."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "With these changes, SigLIP 2 models outperform their SigLIP counterparts at all model scales in core capabilities, including zero-shot classification, image-text retrieval, and transfer performance when extracting visual representations for Vision-Language Models (VLMs)."
+    }
+  ]
+}

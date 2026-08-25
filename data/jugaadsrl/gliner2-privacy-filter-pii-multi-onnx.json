@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "jugaadsrl/gliner2-privacy-filter-PII-multi-onnx",
+  "slug": "jugaadsrl-gliner2-privacy-filter-pii-multi-onnx",
+  "author": "jugaadsrl",
+  "url": "https://huggingface.co/jugaadsrl/gliner2-privacy-filter-PII-multi-onnx",
+  "created_at": "2026-05-19T15:26:06.000Z",
+  "updated_at": "2026-08-25T12:47:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl"
+  ],
+  "tags": [
+    "gliner2",
+    "onnx",
+    "token-classification",
+    "gliner",
+    "rust",
+    "pii",
+    "ner",
+    "privacy",
+    "redaction",
+    "information-extraction",
+    "span-extraction",
+    "iobinding",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "base_model:fastino/gliner2-privacy-filter-PII-multi",
+    "base_model:quantized:fastino/gliner2-privacy-filter-PII-multi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2476324839,
+  "storage_human": "2.5 GB",
+  "base_model": "fastino/gliner2-privacy-filter-PII-multi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jugaadsrl/gliner2-privacy-filter-PII-multi-onnx · Hugging Face",
+      "url": "https://huggingface.co/jugaadsrl/gliner2-privacy-filter-PII-multi-onnx",
+      "snippet": "Instructions to use jugaadsrl/gliner2-privacy-filter-PII-multi-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "fastino/gliner2-privacy-filter-PII-multi · Hugging Face",
+      "url": "https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dariofinardi/gliner2-privacy-filter-rs",
+      "url": "https://github.com/dariofinardi/gliner2-privacy-filter-rs",
+      "snippet": "Multilingual span-level PII extraction on ONNX Runtime through ort 2..-rc.13, with no Python at inference time. Built around fastino/gliner2-privacy-filter-PII-multi, but it runs any GLiNER2 span export."
+    },
+    {
+      "title": "gliner2-privacy-filter-PII-multi: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gliner2-privacy-filter-pii-multi-fastino",
+      "snippet": "Overview gliner2-privacy-filter-PII-multi is a fine-tuned PII detection and masking model built on GLiNER2, a 205M parameter bidirectional transformer trained by fastino. The model detects 42 types of personally identifiable information across 7 languages (English, French, Spanish, German, Italian, Portuguese, Dutch) and achieves the highest span-level F1 score (0.477) on the SPY benchmark ..."
+    },
+    {
+      "title": "[2605.09973] GLiNER2-PII: A Multilingual Model for Personally ...",
+      "url": "https://arxiv.org/abs/2605.09973",
+      "snippet": "Reliable detection of personally identifiable information (PII) is increasingly important across modern data-processing systems, yet the task remains difficult: PII spans are heterogeneous, locale-dependent, context-sensitive, and often embedded in noisy or semi-structured documents. We present GLiNER2-PII, a small .3B-parameter model adapted from GLiNER2 and designed to recognize a broad ..."
+    }
+  ]
+}

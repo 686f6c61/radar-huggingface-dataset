@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bkandappan/metafore-enterprise-model-v2",
+  "slug": "bkandappan-metafore-enterprise-model-v2",
+  "author": "bkandappan",
+  "url": "https://huggingface.co/bkandappan/metafore-enterprise-model-v2",
+  "created_at": "2026-08-25T15:52:27.000Z",
+  "updated_at": "2026-08-25T15:53:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 4414713792,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bkandappan/metafore-enterprise-model-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/bkandappan/metafore-enterprise-model-v1/tree/main",
+      "snippet": "Instructions to use bkandappan/metafore-enterprise-model-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bkandappan/metafore-enterprise-model-v1 with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "bkandappan (Barath) - Hugging Face",
+      "url": "https://huggingface.co/bkandappan",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "Metafore | AI-Native Orchestration Platform for Enterprise",
+      "url": "https://www.metafore.ai/",
+      "snippet": "Metafore is the enterprise AI-native platform that transforms fragmented data and workflows into a single orchestration engine. Built to adapt, explain, and evolve, Metafore embeds AI into the operational DNA of your business."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "Meta Model API",
+      "url": "https://developer.meta.com/ai/products/meta-model-api/",
+      "snippet": "Build with Meta&#x27;s AI models. Access Muse Spark on Meta Model API, with developer resources to get started."
+    }
+  ]
+}

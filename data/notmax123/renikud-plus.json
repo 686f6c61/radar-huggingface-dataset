@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "notmax123/renikud-plus",
+  "slug": "notmax123-renikud-plus",
+  "author": "notmax123",
+  "url": "https://huggingface.co/notmax123/renikud-plus",
+  "created_at": "2026-08-25T18:34:58.000Z",
+  "updated_at": "2026-08-25T18:41:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "grapheme-to-phoneme",
+    "g2p",
+    "hebrew",
+    "phonemization",
+    "text-to-speech",
+    "he",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307726424,
+  "parameters_human": "307.7M",
+  "storage_bytes": 2787766493,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "notmax123/RenikudPlus · Hugging Face",
+      "url": "https://huggingface.co/notmax123/RenikudPlus",
+      "snippet": "ReNikud Plus Hebrew grapheme-to-phoneme (G2P) model that converts unvocalized text to IPA for TTS, speech technology, and spoken-language research. model.onnx is a self-contained, INT8 ONNX model. It accepts speaker controls: 0 for unknown, 1 for male, and 2 for female. Benchmark Download"
+    },
+    {
+      "title": "notmax123/RenikudPlus at main - Hugging Face",
+      "url": "https://huggingface.co/notmax123/RenikudPlus/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main RenikudPlus 310 MB Ctrl+K Ctrl+K 1 contributor History:5 commits notmax123 Document gender-conditioned inference 92322e6 verifiedabout 9 hours ago .gitattributes 1.58 kBAdd model card and benchmark plotabout 9 hours ago README.md 1.02 kBDocument gender-conditioned ..."
+    },
+    {
+      "title": "GitHub - devbyteai/renikudplus",
+      "url": "https://github.com/devbyteai/renikudplus",
+      "snippet": "ReNikud Plus — Hebrew Grapheme-to-Phoneme Inference Convert unvocalized Hebrew text into IPA for TTS, speech technology, and spoken-language research."
+    },
+    {
+      "title": "GitHub - renikud/renikud: Hebrew grapheme-to-phoneme (G2P) model that ...",
+      "url": "https://github.com/renikud/renikud",
+      "snippet": "ReNikud - Audio-Supervised Hebrew Grapheme-to-Phoneme Convert unvocalized Hebrew text into IPA for TTS, speech technology, and spoken-language research 🌐 Project Page | 📄 Research Paper"
+    },
+    {
+      "title": "Hebrew grapheme-to-phoneme conversion with ReNikud | Evidano",
+      "url": "https://www.evidano.com/blogs/451",
+      "snippet": "Evidano is an AI-powered qualitative data analysis platform that ingests phonemic and orthographic transcripts for thematic, frequency, and cross-segment analysis. Unvocalized Hebrew (no niqqud) is a persistent obstacle for TTS, ASR post-processing, and spoken-language research. ReNikud Plus (published on PyPI on Jul 17, 2026) provides an ONNX-based Hebrew grapheme-to-phoneme conversion model ..."
+    }
+  ]
+}

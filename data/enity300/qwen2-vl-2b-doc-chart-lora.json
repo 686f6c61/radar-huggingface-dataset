@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Enity300/qwen2-vl-2b-doc-chart-lora",
+  "slug": "enity300-qwen2-vl-2b-doc-chart-lora",
+  "author": "Enity300",
+  "url": "https://huggingface.co/Enity300/qwen2-vl-2b-doc-chart-lora",
+  "created_at": "2026-08-25T14:18:46.000Z",
+  "updated_at": "2026-08-25T14:19:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28886326,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2-VL-2B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2-VL-2B",
+      "snippet": "What&#x27;s New in Qwen2-VL? Key Enhancements: SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc. Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation ..."
+    },
+    {
+      "title": "Qwen/Qwen2-VL-2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2-VL · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen2_vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-VL: The official repo of Qwen-VL (通义千问-VL) chat ...",
+      "url": "https://github.com/QwenLM/Qwen-VL",
+      "snippet": "Notably, Qwen-VL-Max outperforms both GPT-4V from OpenAI and Gemini from Google in tasks on Chinese question answering and Chinese text comprehension. This breakthrough underscores the model&#x27;s advanced capabilities and its potential to set new standards in the field of multimodal AI research and application."
+    },
+    {
+      "title": "Qwen2-VL - openlm.ai",
+      "url": "https://openlm.ai/qwen2-vl/",
+      "snippet": "Qwen2-VL is the latest version of the vision language models in the Qwen model families. SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc. Understanding videos of 20min+: with the online streaming capabilities, Qwen2-VL can understand videos over 20 ..."
+    }
+  ]
+}

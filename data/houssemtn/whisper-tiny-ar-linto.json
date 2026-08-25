@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "houssemtn/whisper-tiny-ar-linto",
+  "slug": "houssemtn-whisper-tiny-ar-linto",
+  "author": "houssemtn",
+  "url": "https://huggingface.co/houssemtn/whisper-tiny-ar-linto",
+  "created_at": "2026-08-07T21:21:43.000Z",
+  "updated_at": "2026-08-25T13:30:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 3021557637,
+  "storage_human": "3.0 GB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "houssemtn/whisper-tiny-ar-linto · Hugging Face",
+      "url": "https://huggingface.co/houssemtn/whisper-tiny-ar-linto",
+      "snippet": "Instructions to use houssemtn/whisper-tiny-ar-linto with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use houssemtn/whisper-tiny-ar-linto with Transformers:"
+    },
+    {
+      "title": "houssemtn (khttat) - Hugging Face",
+      "url": "https://huggingface.co/houssemtn",
+      "snippet": "Sort: Recently updated houssemtn/whisper-tiny-ar-linto Automatic Speech Recognition • 37.8M•Updated 1 minute ago• 18"
+    },
+    {
+      "title": "whisper-tiny-ar-linto API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/houssemtn/whisper-tiny-ar-linto",
+      "snippet": "Run whisper-tiny-ar-linto with FriendliAI inference. This model is a fine-tuned version of openai/whisper-tiny on the None dataset."
+    },
+    {
+      "title": "Whisper Tiny: Compact ASR Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/whisper-tiny",
+      "snippet": "Whisper Tiny is the smallest model variant in OpenAI&#x27;s Whisper automatic speech recognition (ASR) family, designed to provide transformer-based, end-to-end speech-to-text capabilities under highly constrained compute and memory budgets. It establishes a lower-bound reference for ASR tasks in resource-limited scenarios by combining modest encoder-decoder depth with multi-headed self ..."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper?tab=readme-ov-file",
+      "snippet": "A Transformer sequence-to-sequence model is trained on various speech processing tasks, including multilingual speech recognition, speech translation, spoken language identification, and voice activity detection. These tasks are jointly represented as a sequence of tokens to be predicted by the decoder, allowing a single model to replace many stages of a traditional speech-processing pipeline ..."
+    }
+  ]
+}

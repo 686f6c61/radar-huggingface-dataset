@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Sravanigunnu/llama-3.1-8b-macd-hindi-spotcheck-lora",
+  "slug": "sravanigunnu-llama-3-1-8b-macd-hindi-spotcheck-lora",
+  "author": "Sravanigunnu",
+  "url": "https://huggingface.co/Sravanigunnu/llama-3.1-8b-macd-hindi-spotcheck-lora",
+  "created_at": "2026-08-25T12:33:12.000Z",
+  "updated_at": "2026-08-25T12:33:22.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "hate-speech-detection",
+    "content-moderation",
+    "hindi",
+    "lora",
+    "spot-check",
+    "label-verification",
+    "hi",
+    "en",
+    "dataset:MACD",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71770386,
+  "storage_human": "72 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sravanigunnu (Sravani Gunnu) - Hugging Face",
+      "url": "https://huggingface.co/Sravanigunnu",
+      "snippet": "User profile of Sravani Gunnu on Hugging Face"
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Sravanigunnu/llama-3.1-8b-macd-hindi-nfull-lora at main",
+      "url": "https://d6108366.hf-mirror.com/Sravanigunnu/llama-3.1-8b-macd-hindi-nfull-lora/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Sravanigunnu/llama-3.1-8b-macd-hindi-nfull-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "llama-3.1-8b-macd-hindi-n1000-lora - FriendliAI",
+      "url": "https://friendli.ai/models/Sravanigunnu/llama-3.1-8b-macd-hindi-n1000-lora",
+      "snippet": "Deploy llama-3.1-8b-macd-hindi-n1000-lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama 3.1 | meta-llama/llama-models | DeepWiki",
+      "url": "https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1",
+      "snippet": "Llama 3.1 is a collection of multilingual large language models available in three sizes: 8B, 70B, and 405B parameters. All variants use an optimized transformer architecture with Grouped-Query Attention (GQA) for improved inference scalability."
+    }
+  ]
+}

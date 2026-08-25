@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zhuchao2026/StratRefine",
+  "slug": "zhuchao2026-stratrefine",
+  "author": "zhuchao2026",
+  "url": "https://huggingface.co/zhuchao2026/StratRefine",
+  "created_at": "2026-08-25T15:11:32.000Z",
+  "updated_at": "2026-08-25T15:11:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年5月最新ai大模型排行榜：国产模型集体突围，谁才是真正的王者？ - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/2044841138457141734",
+      "snippet": "2026年5月最新AI大模型排行榜：国产模型集体突围，谁才是真正的王者？ 本文基于 SuperCLUE 2026年5月测评 （23个国内外主流模型、492道原创新题）及 Artificial Analysis 最新 Intelligence Index 数据整理，所有评分均来自公开权威测评。"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "World Cup AI - 2026 Predictions, Bracket & Live AI Insights",
+      "url": "https://worldcupai.org/",
+      "snippet": "Compare top AI models predicting the 2026 World Cup. Explore live bracket forecasts, model confidence, and match insights in one dashboard."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "What is China&#x27;s AI Strategy in 2026? A Comprehensive Analysis of Models ...",
+      "url": "https://digitalinasia.com/china-ai-models-chips-strategy/",
+      "snippet": "China AI token usage hit 140 trillion daily in March 2026. A comprehensive look at DeepSeek, Qwen, Huawei Ascend chips, and the state strategy driving it all."
+    }
+  ]
+}

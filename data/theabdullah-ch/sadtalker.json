@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "theabdullah-ch/SadTalker",
+  "slug": "theabdullah-ch-sadtalker",
+  "author": "theabdullah-ch",
+  "url": "https://huggingface.co/theabdullah-ch/SadTalker",
+  "created_at": "2026-08-25T11:10:28.000Z",
+  "updated_at": "2026-08-25T11:10:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3991654503,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SadTalker AI Talking Head Animation From Single Image",
+      "url": "https://sadtalker.ai/",
+      "snippet": "Create realistic talking head videos from a single image and audio with SadTalker. Open-source AI technology for perfect lip-sync and natural expressions."
+    },
+    {
+      "title": "GitHub - OpenTalker/SadTalker: [CVPR 2023] SadTalker：Learning Realistic ...",
+      "url": "https://github.com/OpenTalker/SadTalker",
+      "snippet": "[CVPR 2023] SadTalker：Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation - OpenTalker/SadTalker"
+    },
+    {
+      "title": "GitHub - SIDDHI1890/SadTalker-AI-Video-Generator: A deep learning-based ...",
+      "url": "https://github.com/SIDDHI1890/SadTalker-AI-Video-Generator",
+      "snippet": "A deep learning-based application that creates talking face videos from image and audio inputs. It uses SadTalker for facial animation and lip synchronization, with a Gradio web interface for easy usage and interaction. - SIDDHI1890/SadTalker-AI-Video-Generator"
+    },
+    {
+      "title": "SadTalker",
+      "url": "https://sadtalker.github.io/?ref=aiartweekly",
+      "snippet": "To learn the realistic motion coefficients, we explicitly model the connections between audio and different types of motion coefficients individually. Precisely, we present ExpNet to learn the accurate facial expression from audio by distilling both coefficients and 3D-rendered faces."
+    },
+    {
+      "title": "SadTalker: Audio-Driven Talking Head Generation AI Model",
+      "url": "https://exploreai.tools/ai-models/sadtalker-family",
+      "snippet": "Explore SadTalker, an open-source AI model for generating realistic talking head videos from audio and images. Learn about its capabilities, use cases, and…"
+    }
+  ]
+}

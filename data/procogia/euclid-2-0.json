@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ProCogia/Euclid-2.0",
+  "slug": "procogia-euclid-2-0",
+  "author": "ProCogia",
+  "url": "https://huggingface.co/ProCogia/Euclid-2.0",
+  "created_at": "2026-08-21T23:08:35.000Z",
+  "updated_at": "2026-08-25T17:46:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 65844451748,
+  "storage_human": "65.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI & Data Consulting | Enterprise Data Services | Procogia",
+      "url": "https://procogia.com/",
+      "snippet": "ProCogia offers top-tier Enterprise Data Management, Data Consulting, and solutions to optimize your Data Strategy and deliver actionable business insights."
+    },
+    {
+      "title": "AI Solutions - ProCogia",
+      "url": "https://procogia.com/solutions-ai/",
+      "snippet": "Managed AI Services We operate and continuously improve your AI solutions with MLOps, monitoring, and lifecycle management so models, agents, and copilots remain reliable, cost‑efficient, and aligned to evolving business needs."
+    },
+    {
+      "title": "Home | Euclid AI",
+      "url": "https://euclid4ai.com/",
+      "snippet": "Our first product is an AI-powered forecaster of corporate earnings. We use SEC 10-Q and 10-K filings to extract text signals. These signals feed into our machine-learning model to predict future earnings."
+    },
+    {
+      "title": "ProCogia 2.0 Launches with AI Ambition - LinkedIn",
+      "url": "https://www.linkedin.com/posts/procogia_procogia-20-activity-7460724515883405313-Yy2V",
+      "snippet": "ProCogia 2.0 is where that data foundation meets the next era of AI. Our new vision is to shape a bright AI and data-powered future by turning ambitious ideas into real-world impact."
+    },
+    {
+      "title": "Introducing TRIBE v2: A Predictive Foundation Model Trained to ...",
+      "url": "https://ai.meta.com/blog/tribe-v2-brain-predictive-foundation-model/",
+      "snippet": "Today, we&#x27;re announcing TRIBE v2: our first AI model of human brain responses to sights, sounds, and language. Building on our Algonauts 2025 award-winning model, which was trained on the low-resolution fMRI recordings of four individuals, we leverage a massive dataset of more than 700 healthy volunteers who were presented with a wide variety ..."
+    }
+  ]
+}

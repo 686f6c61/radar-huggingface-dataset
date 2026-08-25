@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "C0d3Mast3r/honeySwarm_log_analyzer",
+  "slug": "c0d3mast3r-honeyswarm_log_analyzer",
+  "author": "C0d3Mast3r",
+  "url": "https://huggingface.co/C0d3Mast3r/honeySwarm_log_analyzer",
+  "created_at": "2026-08-25T13:46:46.000Z",
+  "updated_at": "2026-08-25T13:46:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Log-Analyzer - GitHub",
+      "url": "https://github.com/ixalodecte/AI-Log-Analyzer",
+      "snippet": "AI-Log-Analyzer is an open source toolkit, user friendly, based on deep-learning, for unstructured log anomaly detection."
+    },
+    {
+      "title": "GitHub - honeyswarm/honeyswarm: HoneyPot Orchestration",
+      "url": "https://github.com/honeyswarm/honeyswarm",
+      "snippet": "Honeyswarm Honeypot orchestration and monitoring platform. Deploy Dockerized honeypots across a fleet of remote hosts (\"Hives\"), collect their events centrally, and manage everything from a web dashboard."
+    },
+    {
+      "title": "ailoganalyzer · PyPI",
+      "url": "https://pypi.org/project/ailoganalyzer/",
+      "snippet": "AI-Log-Analyzer AI-Log-Analyzer is an open source toolkit, user friendly, based on deep-learning, for unstructured log anomaly detection. Components Anomaly Detection: The core of the project. Log Parsing: Logs are structured using the drain3 tool Training: An unsupervised LSTM model is trained to learn the normal workflow of a system."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=log-analysis",
+      "snippet": "Models 2 Full-text search Edit filters Sort: Trending Active filters: log-analysis Clear all"
+    },
+    {
+      "title": "How to Build and Deploy a LogAnalyzer Agent using LangChain",
+      "url": "https://www.freecodecamp.org/news/how-to-build-and-deploy-a-loganalyzer-agent-using-langchain/",
+      "snippet": "In this article, you&#x27;ll learn how to build such an agent using FastAPI, LangChain, and an OpenAI model. We&#x27;ll walk through the backend, the log analysis logic, and a simple web UI that lets you upload a log file and get insights in seconds. We&#x27;ll also upload this app to Sevalla so that you can share your project with the world."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FX-FeiHou/MiniMax-H3-Remix",
+  "slug": "fx-feihou-minimax-h3-remix",
+  "author": "FX-FeiHou",
+  "url": "https://huggingface.co/FX-FeiHou/MiniMax-H3-Remix",
+  "created_at": "2026-08-25T10:38:27.000Z",
+  "updated_at": "2026-08-25T10:38:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Remix - bf16 v0.6 | Hailuo H3 by MiniMax Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2879272/minimax-h3-remix",
+      "snippet": "Download 1 variant available bf16 FeiHou_MiniMax-H3_Remix_v0.6.safetensors BF16, good balance • 61.7 GB Unverified: Scan requested Download (61.7 GB) Optional Files"
+    },
+    {
+      "title": "MiniMax H3 REMIX 模型 首发 + FeiHou Easy H3 节点二次采样工作流",
+      "url": "https://www.bilibili.com/video/BV17U846JE1Z/",
+      "snippet": "6g内存+8g显存也能玩MinimaxH3+加速高达45%!， MiniMaxH3全功能低显加速流+四视图生成+提示词技巧+4步lora精简加速流，【MiniMax H3 LoRA】这次不只会打了! 文武双全的Combat Base V2，2026AI视频新王!"
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "GitHub - FX-FeiHou/ComfyUI-FeiHou-Easy-H3: Modified MiniMax H3 Easy ...",
+      "url": "https://github.com/FX-FeiHou/ComfyUI-FeiHou-Easy-H3",
+      "snippet": "Modified MiniMax H3 Easy node for ComfyUI with embedded 9-image, 3-video, and 3-audio references. - FX-FeiHou/ComfyUI-FeiHou-Easy-H3"
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    }
+  ]
+}

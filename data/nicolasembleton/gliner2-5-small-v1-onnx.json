@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nicolasembleton/gliner2.5-small-v1-onnx",
+  "slug": "nicolasembleton-gliner2-5-small-v1-onnx",
+  "author": "nicolasembleton",
+  "url": "https://huggingface.co/nicolasembleton/gliner2.5-small-v1-onnx",
+  "created_at": "2026-08-25T17:35:03.000Z",
+  "updated_at": "2026-08-25T17:35:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gliner2",
+    "boundary",
+    "webgpu",
+    "token-classification",
+    "base_model:fastino/gliner2.5-small-v1",
+    "base_model:quantized:fastino/gliner2.5-small-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285579225,
+  "storage_human": "286 MB",
+  "base_model": "fastino/gliner2.5-small-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fastino/gliner2.5-small-v1 · Hugging Face",
+      "url": "https://huggingface.co/fastino/gliner2.5-small-v1",
+      "snippet": "Instructions to use fastino/gliner2.5-small-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries GLiNER2 How to use fastino/gliner2.5-small-v1 with GLiNER2:"
+    },
+    {
+      "title": "GLiNER2.5 Small V1 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/gliner2-5-small-v1/",
+      "snippet": "GLiNER2.5 Small is a 74M parameter span free information extraction model that predicts entity boundaries directly instead of enumerating candidate spans, enabling linear scaling with document length. It performs named entity recognition, relation extraction, and constrained classification over long documents in a single pass."
+    },
+    {
+      "title": "GLiNER2 family - a fastino Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/fastino/gliner2-family",
+      "snippet": "GLiNER2 extends the original GLiNER architecture to support multi-task information extraction with a schema-driven interface."
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 replaces span enumeration with a new boundary-prediction architecture, unlocking unlimited span length, long-context extraction, joint entity-relation extraction, constrained classification, and span attributes. Still small, still no GPU required."
+    },
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification. GLiNER is fine-tunable, optimized to run on CPUs and consumer hardware, and has performance competitive with LLMs several times ..."
+    }
+  ]
+}

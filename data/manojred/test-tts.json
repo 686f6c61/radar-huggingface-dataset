@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "manojred/test-tts",
+  "slug": "manojred-test-tts",
+  "author": "manojred",
+  "url": "https://huggingface.co/manojred/test-tts",
+  "created_at": "2026-08-25T17:37:45.000Z",
+  "updated_at": "2026-08-25T17:37:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "critical",
+    "detailed-descriptive",
+    "long-detailed",
+    "mixed-active-passive",
+    "numeric-nature",
+    "typst",
+    "unstructured-narrative",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "Free AI Text to Speech Online - 36+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 36+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    },
+    {
+      "title": "Evaluating leading text-to-speech models - Labelbox",
+      "url": "https://labelbox.com/guides/evaluating-leading-text-to-speech-models/",
+      "snippet": "To explore our latest in speech generation evaluation, visit Labelbox leaderboards. By leveraging our modern AI data factory, we&#x27;re redefining AI evaluation. Our new, innovative approach combines human expertise with advanced metrics to surpass traditional benchmarks. The evolution of Text-to-Speech (TTS) models has been groundbreaking, with various companies offering high-quality solutions ..."
+    },
+    {
+      "title": "TTS Models Directory — Open-Source & Commercial Text-to-Speech",
+      "url": "https://ttsmodels.com/",
+      "snippet": "53 models indexed Every text-to-speech model, in one place. A hand-curated directory of the best open-source and commercial TTS engines. Search by name, capability, or use case."
+    },
+    {
+      "title": "A Meta AI Model Hacked Another Company During Cybersecurity Testing",
+      "url": "https://www.theinformation.com/articles/meta-ai-model-hacked-another-company-cybersecurity-testing",
+      "snippet": "A Meta Platforms artificial intelligence model accessed the internet during cybersecurity testing and hacked into another company, according to people familiar with the matter, in the latest in a string of such incidents at major AI firms. Meta&#x27;s Muse Spark 1.1 model breached the systems of a ..."
+    }
+  ]
+}

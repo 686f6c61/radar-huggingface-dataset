@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XiaoyuWen/TRACE",
+  "slug": "xiaoyuwen-trace",
+  "author": "XiaoyuWen",
+  "url": "https://huggingface.co/XiaoyuWen/TRACE",
+  "created_at": "2026-08-25T11:59:54.000Z",
+  "updated_at": "2026-08-25T12:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2605.08778",
+    "llm-safety",
+    "red-teaming",
+    "jailbreak",
+    "multi-turn",
+    "reinforcement-learning",
+    "credit-assignment",
+    "trace",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XiaoyuWen (Xiaoyu Wen) - Hugging Face",
+      "url": "https://huggingface.co/XiaoyuWen/models",
+      "snippet": "User profile of Xiaoyu Wen on Hugging Face"
+    },
+    {
+      "title": "BattleWen (Xiaoyu Wen) · GitHub",
+      "url": "https://github.com/BattleWen/",
+      "snippet": "PhD. student in Shanghai Jiao Tong University. BattleWen has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Trace - microsoft.github.io",
+      "url": "https://microsoft.github.io/Trace//index.html",
+      "snippet": "Trace in 5 Minutes Trace is an open-source generative optimization framework for end-to-end training AI agents with general feedback (like scores, natural language, errors, etc.)."
+    },
+    {
+      "title": "Trace - GitHub Pages",
+      "url": "https://microsoft.github.io/Trace/",
+      "snippet": "Trace in 5 Minutes Trace is an open-source generative optimization framework for end-to-end training AI agents with general feedback (like scores, natural language, errors, etc.)."
+    },
+    {
+      "title": "‪Xiaoyu Wen‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=fk767YoAAAAJ",
+      "snippet": "‪Shanghai Jiao Tong University | Shanghai Artificial Intelligence Lab‬ - ‪‪Cited by 192‬‬ - ‪Reinforcement Learning‬ - ‪Large Language Model‬"
+    }
+  ]
+}

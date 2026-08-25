@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lierseleow/Qwen3-30B-A3B-Instruct-2507-bnb-8bit",
+  "slug": "lierseleow-qwen3-30b-a3b-instruct-2507-bnb-8bit",
+  "author": "lierseleow",
+  "url": "https://huggingface.co/lierseleow/Qwen3-30B-A3B-Instruct-2507-bnb-8bit",
+  "created_at": "2026-08-25T11:01:53.000Z",
+  "updated_at": "2026-08-25T12:05:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 60173481170,
+  "storage_human": "60.2 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-30B-A3B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-30B-A3B-Instruct-2507-AWQ-8bit - Hugging Face",
+      "url": "https://huggingface.co/cpatonn/Qwen3-30B-A3B-Instruct-2507-AWQ-8bit",
+      "snippet": "Highlights We introduce the updated version of the Qwen3-30B-A3B non-thinking mode, named Qwen3-30B-A3B-Instruct-2507, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 30B A3B Instruct 2507 - Zentree-Qualcomm Pre-compiled Model ...",
+      "url": "https://dc00tk1pxen80.cloudfront.net/QPC/1.21.2/Qwen3-30B-A3B-Instruct-2507/",
+      "snippet": "Model Overview ¶ Qwen3-30B-A3B-Instruct-2507 is a state-of-the-art large language model from the Qwen3 series, designed to provide strong performance across a wide range of domains including reasoning, coding, multilingual understanding, and long-context comprehension."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-30b-a3b-instruct-2507-fp8",
+      "snippet": "You can use the Qwen3-30B-A3B-Instruct-2507-FP8 model with serveral inference frameworks, including transformers, sglang, and vllm, as the original bfloat16 model."
+    },
+    {
+      "title": "Qwen3-30B-A3B-Instruct-2507 - Model Info, Parameters, Benchmarks ...",
+      "url": "https://www.siliconflow.com/models/qwen3-30b-a3b-instruct-2507",
+      "snippet": "Qwen3-30B-A3B-Instruct-2507 is the updated version of the Qwen3-30B-A3B non-thinking mode. It is a Mixture-of-Experts (MoE) model with 30.5 billion total parameters and 3.3 billion activated parameters. This version features key enhancements, including significant improvements in general capabilities such as instruction following, logical reasoning, text comprehension, mathematics, science ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CarolinePascal/act_tactile_grabette",
+  "slug": "carolinepascal-act_tactile_grabette",
+  "author": "CarolinePascal",
+  "url": "https://huggingface.co/CarolinePascal/act_tactile_grabette",
+  "created_at": "2026-08-25T14:30:46.000Z",
+  "updated_at": "2026-08-25T14:30:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:CarolinePascal/grabette-tactile-full-synced_cartesian_480_fixedstats",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55012747,
+  "parameters_human": "55.0M",
+  "storage_bytes": 220108004,
+  "storage_human": "220 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CarolinePascal (Caroline Pascal) - Hugging Face",
+      "url": "https://huggingface.co/CarolinePascal/models",
+      "snippet": "AI & ML interests ... Recent Activity ... Organizations CarolinePascal &#x27;s models 7 Sort: Recently updated"
+    },
+    {
+      "title": "CarolinePascal/act-sugar-cup-cartesian-ep0-66 · Hugging Face",
+      "url": "https://huggingface.co/CarolinePascal/act-sugar-cup-cartesian-ep0-66",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CarolinePascal (Caroline Pascal) · GitHub",
+      "url": "https://github.com/CarolinePascal",
+      "snippet": "CarolinePascal has 34 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "blog/grabette.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/grabette.md",
+      "snippet": "Public repo for HF blog posts. Contribute to huggingface/blog development by creating an account on GitHub."
+    },
+    {
+      "title": "[2503.02007] TactStyle: Generating Tactile Textures with Generative AI ...",
+      "url": "https://arxiv.org/abs/2503.02007",
+      "snippet": "Recent work in Generative AI enables the stylization of 3D models based on image prompts. However, these methods do not incorporate tactile information, leading to designs that lack the expected tactile properties. We present TactStyle, a system that allows creators to stylize 3D models with images while incorporating the expected tactile properties. TactStyle accomplishes this using a ..."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-Llama",
+  "slug": "oktayd-q36-35b-a3b-opus4-7-ablit-heretic-obliteratus-hermes-mtp-vision-llama",
+  "author": "oktayd",
+  "url": "https://huggingface.co/oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-Llama",
+  "created_at": "2026-08-25T02:47:15.000Z",
+  "updated_at": "2026-08-25T16:01:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.6",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "moe",
+    "claude-opus-4.7",
+    "reasoning",
+    "reasoning-distillation",
+    "abliterated",
+    "uncensored",
+    "refusal-reduction",
+    "heretic",
+    "obliteratus",
+    "nuclear",
+    "hermes",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "agentic",
+    "agentic-coding",
+    "coding",
+    "lora",
+    "peft",
+    "unsloth",
+    "mtp",
+    "nextn",
+    "conversational",
+    "multimodal",
+    "vision-language",
+    "vlm",
+    "quantized",
+    "llama.cpp",
+    "mxfp4",
+    "speculative-decoding",
+    "image-text-to-text",
+    "en",
+    "base_model:oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+    "base_model:quantized:oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 21160852672,
+  "storage_human": "21.2 GB",
+  "base_model": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "url": "https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "snippet": "These GGUF files are quantized using APEX, a novel MoE-aware mixed-precision quantization technique that outperforms standard quantization methods while being significantly smaller. APEX beats Q8_0 perplexity at half the size — and even beats F16. APEX classifies every tensor by its role — routed expert, shared expert, or attention — and applies a layer-wise precision gradient, giving ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp",
+      "url": "https://huggingface.co/rynky2436/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp/discussions",
+      "snippet": "Instructions to use rynky2436/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6-35B-A3B is compatible with OpenClaw (formerly Moltbot / Clawdbot), a self-hosted open-source AI coding agent. Connect it to Model Studio to get a full agentic coding experience in the terminal."
+    },
+    {
+      "title": "GitHub - AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash: Qwen3.6-35B-A3B ...",
+      "url": "https://github.com/AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash",
+      "snippet": "A production-stable deployment of AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4 with DFlash speculative decoding on NVIDIA DGX Spark (GB10 / sm_121a). ⚠️ READ THE REQUIREMENTS SECTION FIRST. This image and its weights are tuned specifically for the DGX Spark (GB10 / sm_120-121 Blackwell). It will NOT work on Hopper, Ampere, B200, or other Blackwell variants without rebuilding."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-heretic-NVFP4-DFlash/docs/build.md at main - GitHub",
+      "url": "https://github.com/AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash/blob/main/docs/build.md",
+      "snippet": "The canonical Dockerfile, patches, source pin, verify script, and build provenance all live in AEON-7/vllm-ultimate-dgx-spark. To rebuild it yourself, follow that repo&#x27;s SOURCE.md — it has the source pin, the docker build step, the build knobs (MAX_JOBS, TORCH_CUDA_ARCH_LIST=12.1a, ENABLE_NVFP4_SM100=0, …), and build troubleshooting. Note: an earlier version of this page documented ..."
+    }
+  ]
+}

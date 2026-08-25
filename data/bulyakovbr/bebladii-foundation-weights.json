@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bulyakovbr/bebladii-foundation-weights",
+  "slug": "bulyakovbr-bebladii-foundation-weights",
+  "author": "bulyakovbr",
+  "url": "https://huggingface.co/bulyakovbr/bebladii-foundation-weights",
+  "created_at": "2026-08-25T18:30:35.000Z",
+  "updated_at": "2026-08-25T18:52:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "experimental",
+    "text_diffusion",
+    "lathent_space",
+    "custom-model",
+    "pytorch",
+    "diffusion",
+    "vae",
+    "ru",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5405969282,
+  "storage_human": "5.4 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Open-weight AI models: the complete database — BasedAI",
+      "url": "https://basedai.co/models",
+      "snippet": "Open-weight AI models: the complete database Open-weight models — from DeepSeek, Moonshot, Zhipu, Alibaba, Meta, Mistral, MiniMax, and OpenAI — now compete directly with proprietary flagships. This database tracks every major open source model: parameters, context windows, licenses, API pricing, benchmarks, and what it takes to run each one yourself."
+    },
+    {
+      "title": "Laeryid (Bogdan Buliakov) · GitHub",
+      "url": "https://github.com/Laeryid",
+      "snippet": "BEBLaDII - Bidirectional Encoder Based Lathent Diffusion with Information Injection Python"
+    },
+    {
+      "title": "The truth behind Chrome&#x27;s 4GB &#x27;weights.bin&#x27; Gemini Nano file",
+      "url": "https://www.androidauthority.com/google-chrome-weights-bin-ai-model-download-explained-3664043/",
+      "snippet": "Chrome is silently downloading 4GB AI model files to your PC. Learn what Gemini Nano \"weights\" are and how to delete them to reclaim storage."
+    }
+  ]
+}

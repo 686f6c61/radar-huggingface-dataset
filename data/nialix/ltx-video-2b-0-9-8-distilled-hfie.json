@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nialix/LTX-Video-2b-0-9-8-distilled-HFIE",
+  "slug": "nialix-ltx-video-2b-0-9-8-distilled-hfie",
+  "author": "Nialix",
+  "url": "https://huggingface.co/Nialix/LTX-Video-2b-0-9-8-distilled-HFIE",
+  "created_at": "2026-08-25T14:20:57.000Z",
+  "updated_at": "2026-08-25T14:20:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:LTXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 59092246986,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ltxv-2b-0.9.8-distilled.safetensors · Lightricks/LTX-Video at main",
+      "url": "https://huggingface.co/Lightricks/LTX-Video/blob/main/ltxv-2b-0.9.8-distilled.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deAPI-ai/ltxv-2b-0-9-8-distilled-fp8 · Hugging Face",
+      "url": "https://huggingface.co/deAPI-ai/ltxv-2b-0-9-8-distilled-fp8",
+      "snippet": "LTX-Video 2B 0.9.8 Distilled FP8 LTX-Video 2B delivers solid quality with minimal VRAM use, ideal for low-resource systems. Optimized for RTX 40xx and newer GPUs. Author Lightricks License LTXV Open Weights License 0.X"
+    },
+    {
+      "title": "GitHub - y2k7380/ltx-video: Official repository for LTX-Video",
+      "url": "https://github.com/y2k7380/ltx-video",
+      "snippet": "2B distilled model ltxv-2b-.9.8-distilled Both models are distilled from the same base model ltxv-13b-.9.8-dev and are compatible for use together in the same multiscale pipeline."
+    },
+    {
+      "title": "LTX-Video/configs/ltxv-2b-0.9.8-distilled.yaml at main - GitHub",
+      "url": "https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-2b-0.9.8-distilled.yaml",
+      "snippet": "Official repository for LTX-Video. Contribute to Lightricks/LTX-Video development by creating an account on GitHub."
+    },
+    {
+      "title": "LTX Video 2B VRAM Requirements | WillItRunAI",
+      "url": "https://willitrunai.com/video-models/ltx-video-2-3",
+      "snippet": "by Lightricks Lightweight 2B video generation model from Lightricks (v0.9.8). Available in dev, distilled, and FP8 variants. The distilled version generates video faster than real-time at lower resolutions. For best quality, use the 13B variant instead. + 2B parameters — runs on consumer GPUs (12GB+) + Dev, distilled, and FP8 variants available + Distilled version: faster-than-real-time ..."
+    }
+  ]
+}

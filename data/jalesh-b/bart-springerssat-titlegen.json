@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jalesh-b/bart-springerssat-titlegen",
+  "slug": "jalesh-b-bart-springerssat-titlegen",
+  "author": "jalesh-b",
+  "url": "https://huggingface.co/jalesh-b/bart-springerssat-titlegen",
+  "created_at": "2026-08-25T13:54:31.000Z",
+  "updated_at": "2026-08-25T13:54:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 557912620,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Automatic Generation of Titles for Research Papers Using Language Models",
+      "url": "https://arxiv.org/html/2606.05085v1",
+      "snippet": "Additionally, we introduce a new dataset, SpringerSSAT, curated from four Springer journals in the social sciences, to evaluate model performance. AI-generated titles can be particularly helpful for non-native English speakers and early-career researchers, who often struggle to construct appropriate titles."
+    },
+    {
+      "title": "PDF Automatic generation of titles for research papers using language models",
+      "url": "https://rd.springer.com/content/pdf/10.1007/s00799-026-00443-1.pdf",
+      "snippet": "Additionally, we introduce a new dataset,SpringerSSAT, curated from four Springer journals in the social sciences, to evaluate model perfor- mance. AI-generated titles can be particularly helpful for"
+    },
+    {
+      "title": "Title: Automatic Generation of Titles for Research Papers Using ...",
+      "url": "https://arxiv.org/abs/2606.05085v1",
+      "snippet": "The title of a research paper conveys its primary idea and, occasionally, its conclusions in a clear and concise manner. Choosing an appropriate title is often challenging, and automated title generation can assist authors in this task. In this work, we propose a technique to generate paper titles from abstracts using open-weight pre-trained and large language models. We use the CSPubSum and ..."
+    },
+    {
+      "title": "Automatic generation of titles for research papers using language ...",
+      "url": "https://dlnext.acm.org/doi/10.1007/s00799-026-00443-1",
+      "snippet": "AbstractThe title of a research paper conveys its primary idea and, occasionally, its conclusions in a clear and concise manner. Choosing an appropriate title is often challenging, and automated title generation can assist authors in this task. In this ..."
+    },
+    {
+      "title": "Title:Automatic Generation of Titles for Research Papers Using Language ...",
+      "url": "https://www.catalyzex.com/paper/automatic-generation-of-titles-for-research",
+      "snippet": "Automatic Generation of Titles for Research Papers Using Language Models: Paper and Code. The title of a research paper conveys its primary idea and, occasionally, its conclusions in a clear and concise manner. Choosing an appropriate title is often challenging, and automated title generation can assist authors in this task. In this work, we propose a technique to generate paper titles from ..."
+    }
+  ]
+}

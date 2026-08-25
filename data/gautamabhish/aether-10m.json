@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "gautamabhish/aether-10m",
+  "slug": "gautamabhish-aether-10m",
+  "author": "gautamabhish",
+  "url": "https://huggingface.co/gautamabhish/aether-10m",
+  "created_at": "2026-08-25T11:46:04.000Z",
+  "updated_at": "2026-08-25T12:55:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aether",
+    "post-transformer",
+    "symplectic-flow",
+    "unitary-gauge",
+    "efficient-llm",
+    "constant-memory",
+    "non-transformer",
+    "deepmind",
+    "research",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8396864,
+  "parameters_human": "8.4M",
+  "storage_bytes": 16808656,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether: Geometric-Aware Unified World Modeling - arXiv.org",
+      "url": "https://arxiv.org/html/2503.18945",
+      "snippet": "Abstract The integration of geometric reconstruction and generative modeling remains a critical challenge in developing AI systems capable of human-like spatial reasoning. This paper proposes Aether, a unified framework that enables geometry-aware reasoning in world models by jointly optimizing three core capabilities: (1) 4D dynamic reconstruction, (2) action-conditioned video prediction, and ..."
+    },
+    {
+      "title": "GitHub - InternRobotics/Aether: [ICCV 2025 & ICCV 2025 RIWM Outstanding ...",
+      "url": "https://github.com/InternRobotics/Aether",
+      "snippet": "🥳 NEWS: Oct.22nd 2025: Aether won the Outstanding Paper Award at the ICCV 2025 RIWM workshop! Jun.26th 2025: Aether is accepted by ICCV 2025! Jun.3rd 2025: DeepVerse is released! It is a 4D auto-regressive world model. Check it out! Mar.31st 2025: The Gradio demo is available! You can deploy locally or experience Aether online on Hugging Face. Mar.28th 2025: AetherV1 is released! Model ..."
+    },
+    {
+      "title": "Aether AI — Causal World Models for Real-World Intelligence",
+      "url": "https://aetherlabs.ai/",
+      "snippet": "Causal World Models For Real-World Intelligence Aether is building a new class of AI systems that understand mechanisms, reason under intervention, and operate reliably in real-world systems."
+    },
+    {
+      "title": "Paper page - Aether: Geometric-Aware Unified World Modeling",
+      "url": "https://huggingface.co/papers/2503.18945",
+      "snippet": "Aether: Geometric-Aware Unified World Modeling ... Aether Team , Haoyi Zhu , Yifan Wang ,"
+    },
+    {
+      "title": "AetherWorldModel/AetherV1 · Hugging Face",
+      "url": "https://huggingface.co/AetherWorldModel/AetherV1",
+      "snippet": "Aether addresses a fundamental challenge in AI: integrating geometric reconstruction with generative modeling for human-like spatial reasoning. Our framework unifies three core capabilities: (1) 4D dynamic reconstruction, (2) action-conditioned video prediction, and (3) goal-conditioned visual planning. Trained entirely on synthetic data, Aether achieves strong zero-shot generalization to real ..."
+    }
+  ]
+}

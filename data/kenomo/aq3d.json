@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kenomo/aq3d",
+  "slug": "kenomo-aq3d",
+  "author": "kenomo",
+  "url": "https://huggingface.co/kenomo/aq3d",
+  "created_at": "2026-08-25T11:13:47.000Z",
+  "updated_at": "2026-08-25T11:13:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kemono - Public Archives of Creator Content (Official Site)",
+      "url": "https://kemono.onl/",
+      "snippet": "A clear, up-to-date guide to Kemono: meaning in Japanese, art style, how it differs from furry and kemonomimi, ethical tips, design steps, and practical FAQs."
+    },
+    {
+      "title": "kenomo (Keno Moenck) · GitHub",
+      "url": "https://github.com/kenomo",
+      "snippet": "Contribution activity August 2026 Created 1 repository kenomo/aq3d Aug 10 Show more activity"
+    },
+    {
+      "title": "Posts - Kemono",
+      "url": "https://kemono.cr/posts?q=kdrama",
+      "snippet": "The Judge From Hell 지옥에서 온 판사- Episode 4 | REACTIO..."
+    },
+    {
+      "title": "aq3d model - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1753993188864468104",
+      "snippet": "Generate stunning photorealistic, woman, style, 3d anime art with the &#x27;aq3d model&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Posts - Kemono",
+      "url": "https://kemono.cr/posts?tag=3d+printing",
+      "snippet": "New type of fursuit head design in the works ️"
+    }
+  ]
+}

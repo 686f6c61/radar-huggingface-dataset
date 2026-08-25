@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "skblv/yolov12m-cholect50-instruments",
+  "slug": "skblv-yolov12m-cholect50-instruments",
+  "author": "skblv",
+  "url": "https://huggingface.co/skblv/yolov12m-cholect50-instruments",
+  "created_at": "2026-08-25T14:59:10.000Z",
+  "updated_at": "2026-08-25T14:59:20.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolov12",
+    "surgical-video",
+    "medical-imaging",
+    "instrument-detection",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40748647,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datasets - Research Group CAMMA",
+      "url": "https://camma.unistra.fr/datasets/",
+      "snippet": "The official data splits for research and development of deep learning models on the CholecT50/CholecT45 datasets are described in: C.I. Nwoye, N. Padoy, Data Splits and Metrics for Benchmarking Methods on Surgical Action Triplet Datasets, arXiv preprint, 2022. The data was used in the CholecTriplet2021 and CholecTriplet2022 challenges."
+    },
+    {
+      "title": "Cholect50 - catalyzex.com",
+      "url": "https://www.catalyzex.com/s/Cholect50",
+      "snippet": "Browse open-source code and papers on Cholect50 to catalyze your projects, and easily connect with engineers and experts when you need help."
+    },
+    {
+      "title": "YOLO12 Attention-Centric Object Detection | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo12",
+      "snippet": "Discover YOLO12, featuring groundbreaking attention-centric architecture for state-of-the-art object detection with unmatched accuracy and efficiency."
+    },
+    {
+      "title": "CholecT50: Fine-Grained Laparoscopic Triplet Dataset",
+      "url": "https://www.emergentmind.com/topics/cholect50",
+      "snippet": "CholecT50 is a fine-grained laparoscopic cholecystectomy dataset with 50 videos that enables detailed surgical workflow analysis using action triplets."
+    },
+    {
+      "title": "cholect50 Object Detection Model (v4, CholecV1) by Computer Vision",
+      "url": "https://universe.roboflow.com/computer-vision-gflxc/cholect50/dataset/4",
+      "snippet": "1126 open source grasper images and annotations in multiple formats for training computer vision models. cholect50 (v4, CholecV1), created by Computer Vision"
+    }
+  ]
+}

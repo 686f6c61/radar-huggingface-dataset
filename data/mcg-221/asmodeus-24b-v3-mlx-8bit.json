@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "McG-221/Asmodeus-24B-v3-mlx-8Bit",
+  "slug": "mcg-221-asmodeus-24b-v3-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Asmodeus-24B-v3-mlx-8Bit",
+  "created_at": "2026-08-25T11:23:28.000Z",
+  "updated_at": "2026-08-25T11:24:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "float32",
+    "swearing",
+    "rp",
+    "horror",
+    "flux",
+    "merge",
+    "mergekit",
+    "uncensored",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "base_model:DarkArtsForge/Asmodeus-24B-v3",
+    "base_model:quantized:DarkArtsForge/Asmodeus-24B-v3",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6630048000,
+  "parameters_human": "6.63B",
+  "storage_bytes": 25063295683,
+  "storage_human": "25.1 GB",
+  "base_model": "DarkArtsForge/Asmodeus-24B-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McG-221 (Barney Greenway) - Hugging Face",
+      "url": "https://huggingface.co/McG-221",
+      "snippet": "McG-221/GLM-Z1-Rumination-32B-0414-mlx-8Bit ... McG-221/MS3.2-PaintedFantasy-v3-24B-mlx-8Bit ... McG-221/L3.3-GeneticLemonade-Opus-70B-mlx-6Bit ... McG-221/Magidonia-24B-v4.2.-mlx-8Bit"
+    },
+    {
+      "title": "McG-221/Asmodeus-24B-v2-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Asmodeus-24B-v2-mlx-8Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "McG-221/Asmodeus-24B-v1-mlx-8Bit - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/McG-221/Asmodeus-24B-v1-mlx-8Bit",
+      "snippet": "Run McG-221/Asmodeus-24B-v1-mlx-8Bit with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Asmodeus-24B-v2-mlx-8Bit API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Wwayu/Asmodeus-24B-v2-mlx-8Bit",
+      "snippet": "Deploy Asmodeus-24B-v2-mlx-8Bit with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Morbid Miasma 24B Mlx 8Bit by McG-221 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/McG-221%2FMorbid-Miasma-24B-mlx-8Bit,40szzBn7PrePw4N4ztbsUF",
+      "snippet": "Morbid Miasma 24B Mlx 8Bit is an open-source 24b LLM by McG-221. VRAM 25GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sara24f2004664/carbon-accounting-run",
+  "slug": "sara24f2004664-carbon-accounting-run",
+  "author": "sara24f2004664",
+  "url": "https://huggingface.co/sara24f2004664/carbon-accounting-run",
+  "created_at": "2026-08-25T17:20:45.000Z",
+  "updated_at": "2026-08-25T17:30:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Carbon Accounting: Measure, Track & Report Environmental Impact",
+      "url": "https://aienergycalculator.com/ai-carbon-accounting-environmental-impact/",
+      "snippet": "Learn how to accurately measure, track, and report AI carbon emissions with comprehensive carbon accounting frameworks and sustainability metrics."
+    },
+    {
+      "title": "Future-Proofing ESG Standards: The Role of AI in Carbon Accounting",
+      "url": "https://www.researchgate.net/publication/389636157_Future-Proofing_ESG_Standards_The_Role_of_AI_in_Carbon_Accounting",
+      "snippet": "Furthermore, the article discusses how AI can facilitate real-time monitoring, compliance with evolving regulations, and the integration of carbon accounting into broader ESG frameworks."
+    },
+    {
+      "title": "Fairer AI Carbon Accounting: Incorporating Market-based Attribution and ...",
+      "url": "https://dl.acm.org/doi/10.1145/3774904.3793002",
+      "snippet": "Most carbon accounting methods for large-scale AI models suffer from three key limitations: they overlook embodied carbon (from hardware manufacturing) or model it simplistically, rely on location-based carbon attribution that fails to reflect individual corporate efforts to decarbonize (e.g., via Power Purchase Agreements (PPAs)), and are ..."
+    },
+    {
+      "title": "Leveraging AI-derived Data for Carbon Accounting: Information ...",
+      "url": "https://arxiv.org/pdf/2312.03722",
+      "snippet": "The integration of Artificial In-telligence (AI) techniques can address these challenges, en-hancing the eficacy and precision of carbon accounting. AI-derived data, as gleaned through the application of ad-vanced machine learning methods, offers us unprecedented opportunities for refined, dynamic, and real-time carbon ac-counting."
+    },
+    {
+      "title": "Application of Artificial Intelligence in Carbon Accounting and Firm ...",
+      "url": "https://www.researchgate.net/publication/376257637_Application_of_Artificial_Intelligence_in_Carbon_Accounting_and_Firm_Performance_A_Review_Using_Qualitative_Analysis",
+      "snippet": "This paper conducts a comprehensive study to evaluate the feasibility of using artificial intelligence (AI) solutions in carbon accounting and its subsequent effect on firm performance based on ..."
+    }
+  ]
+}

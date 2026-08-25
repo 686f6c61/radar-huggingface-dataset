@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Honeys_Anima",
+  "slug": "aixfunestudio-honeys_anima",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Honeys_Anima",
+  "created_at": "2026-08-25T12:27:33.000Z",
+  "updated_at": "2026-08-25T12:32:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4182230848,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/models",
+      "snippet": "User profile of AIxFun eStudio on Hugging Face"
+    },
+    {
+      "title": "AIxFuneStudio/Soft_Desire_Anima · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Soft_Desire_Anima",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIxFuneStudio/Honeys_Illustrious · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Honeys_Illustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Honey Anima V - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d9biagte878c739gpgf0",
+      "snippet": "Explore Honey Anima V model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

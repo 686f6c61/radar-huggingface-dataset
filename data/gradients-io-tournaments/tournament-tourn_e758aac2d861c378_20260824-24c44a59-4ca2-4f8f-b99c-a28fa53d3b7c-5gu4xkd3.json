@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-24c44a59-4ca2-4f8f-b99c-a28fa53d3b7c-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_e758aac2d861c378_20260824-24c44a59-4ca2-4f8f-b99c-a28fa53d3b7c-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-24c44a59-4ca2-4f8f-b99c-a28fa53d3b7c-5GU4Xkd3",
+  "created_at": "2026-08-25T18:48:02.000Z",
+  "updated_at": "2026-08-25T18:48:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-0f0317bfde04bda4",
+    "base_model:adapter:gradients-io-tournaments/augmented-0f0317bfde04bda4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1408195033,
+  "storage_human": "1.4 GB",
+  "base_model": "gradients-io-tournaments/augmented-0f0317bfde04bda4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_33c30659e3c920d5_20260601 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_33c30659e3c920d5_20260601-0d7dbfdf-c818-4b71-a7a3-19f3a439eac5-5GU4Xkd3",
+      "snippet": "gradients-io-tournaments / tournament-tourn_33c30659e3c920d5_20260601-0d7dbfdf-c818-4b71-a7a3-19f3a439eac5-5GU4Xkd3 like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_390d9d05f7ad01a1_20260706 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_390d9d05f7ad01a1_20260706-eb21a4da-a18d-43cb-993a-f27e357ebbdf-5GU4Xkd3",
+      "snippet": "gradients-io-tournaments / tournament-tourn_390d9d05f7ad01a1_20260706-eb21a4da-a18d-43cb-993a-f27e357ebbdf-5GU4Xkd3 like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Damacol/gradients-io-tournaments-tournament-tourn ... - GitHub",
+      "url": "https://github.com/Damacol/gradients-io-tournaments-tournament-tourn_21bd66f314a8ee19_20260416-c2bc0bc0-73df-4f9e-b421-b4d4baa7",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "Damacol/gradients-io-tournaments-tournament-tourn ... - GitHub",
+      "url": "https://github.com/Damacol/gradients-io-tournaments-tournament-tourn_fbcc9d52269757c7_20260416-dc568dbe-b1b9-4c89-b95d-df1f7fee",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    }
+  ]
+}

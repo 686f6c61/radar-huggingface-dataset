@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Thatgurlbea/DeepSeek-R1-Zero",
+  "slug": "thatgurlbea-deepseek-r1-zero",
+  "author": "Thatgurlbea",
+  "url": "https://huggingface.co/Thatgurlbea/DeepSeek-R1-Zero",
+  "created_at": "2026-08-25T13:45:46.000Z",
+  "updated_at": "2026-08-25T13:45:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586727753,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Zero · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Zero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "We introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1. DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning. With RL, DeepSeek-R1-Zero ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Zero at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Zero/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-R1-Zero | deepseek-ai/DeepSeek-R1 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-R1/2.1-deepseek-r1-zero",
+      "snippet": "DeepSeek-R1-Zero represents a distinct branch in the DeepSeek model family, focusing on pure reinforcement learning. Its capabilities and limitations informed the development of DeepSeek-R1, which incorporates cold-start data before RL to address issues like endless repetition and poor readability."
+    },
+    {
+      "title": "DeepSeek-R1-Zero · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Zero",
+      "snippet": "DeepSeek-R1 Paper Link 👁️ 1. Introduction We introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1. DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning."
+    }
+  ]
+}

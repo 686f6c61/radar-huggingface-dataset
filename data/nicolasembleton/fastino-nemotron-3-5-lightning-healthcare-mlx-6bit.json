@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nicolasembleton/Fastino-Nemotron-3.5-Lightning-Healthcare-MLX-6bit",
+  "slug": "nicolasembleton-fastino-nemotron-3-5-lightning-healthcare-mlx-6bit",
+  "author": "nicolasembleton",
+  "url": "https://huggingface.co/nicolasembleton/Fastino-Nemotron-3.5-Lightning-Healthcare-MLX-6bit",
+  "created_at": "2026-08-25T17:05:16.000Z",
+  "updated_at": "2026-08-25T17:06:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "6-bit",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
+    "base_model:quantized:fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6914599488,
+  "parameters_human": "6.91B",
+  "storage_bytes": 25684771847,
+  "storage_human": "25.7 GB",
+  "base_model": "fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fastino Nemotron 3.5 Lightning Healthcare - Hugging Face",
+      "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
+      "snippet": "Fastino-Nemotron-3.5-Lightning-Healthcare is a 30B-parameter, 3B-active mixture-of-experts model specialized for healthcare and biomedical applications. The repository contains a ready-to-run merged checkpoint: the NVIDIA Nemotron 3.5 Lightning checkpoint released July 29, 2026 plus Fastino&#x27;s winning combined-healthcare E17b adapter. Users do not need to obtain or attach a separate LoRA."
+    },
+    {
+      "title": "fastino/Fastino-Nemotron-3.5-Lightning-Healthcare at main",
+      "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare/tree/main",
+      "snippet": "Instructions to use fastino/Fastino-Nemotron-3.5-Lightning-Healthcare with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Small Model, Big Leverage: What We Learned Fine-Tuning ... - fastino.ai",
+      "url": "https://fastino.ai/blog/learnings-from-fine-tuning-nvidia-nemotron-3.5-lightning-with-autonomous-agent",
+      "snippet": "We used our autonomous Fastino Fine-tuning agent to adapt early access checkpoints of Nemotron 3.5 Lightning into two specialized models, one for medical tasks and one for financial tasks. The agent curated the data, generated and trained candidate recipes, evaluated each on target and transfer tasks, and used every diagnosed failure to design the next experiment."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "The post-training data has a cutoff date of May 2026. What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA."
+    },
+    {
+      "title": "Fastino Labs Releases Two Specialized Open-Weight Models for Finance ...",
+      "url": "https://www.cnhinews.com/news/article_19fed0b4-d224-5ec2-b616-69587e928714.html",
+      "snippet": "Fastino-Nemotron-3.5-Lightning-Finance and Fastino-Nemotron-3.5-Lightning-Healthcar e, post-trained on Nemotron 3.5 Lightning by the Fastino Fine-Tuning Agent, are available on Hugging Face today under the Apache 2.0 license. Both models outperform the Nemotron 3.5 Lightning base model across a variety of finance and healthcare benchmarks, showing off both the ease of fine-tuning Nemotron and ..."
+    }
+  ]
+}

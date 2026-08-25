@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zemir/TinyBERT_General_4L_312D",
+  "slug": "zemir-tinybert_general_4l_312d",
+  "author": "zemir",
+  "url": "https://huggingface.co/zemir/TinyBERT_General_4L_312D",
+  "created_at": "2026-08-25T12:30:25.000Z",
+  "updated_at": "2026-08-25T12:30:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "jax",
+    "bert",
+    "arxiv:1909.10351",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302732968,
+  "storage_human": "303 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huawei-noah/TinyBERT_General_4L_312D · Hugging Face",
+      "url": "https://huggingface.co/huawei-noah/TinyBERT_General_4L_312D",
+      "snippet": "In general distillation, we use the original BERT-base without fine-tuning as the teacher and a large-scale text corpus as the learning data. By performing the Transformer distillation on the text from general domain, we obtain a general TinyBERT which provides a good initialization for the task-specific distillation."
+    },
+    {
+      "title": "DataikuNLP/TinyBERT_General_4L_312D · Hugging Face",
+      "url": "https://huggingface.co/DataikuNLP/TinyBERT_General_4L_312D",
+      "snippet": "This model is a copy of this model repository from Huawei Noah at the specific commit 34707a33cd59a94ecde241ac209bf35103691b43. TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding."
+    },
+    {
+      "title": "TinyBERT_General_4L_312D: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/tinybert-general-4l-312d-huawei-noah",
+      "snippet": "Overview TinyBERT_General_4L_312D is a distilled BERT model designed for natural language understanding tasks that prioritizes efficiency over scale. Built by huawei-noah, this model achieves 7.5x smaller size and 9.4x faster inference than BERT-base while maintaining competitive performance on NLU benchmarks. The architecture uses 4 transformer layers with 312 hidden dimensions, derived from ..."
+    },
+    {
+      "title": "GitHub - yinmingjun/TinyBERT",
+      "url": "https://github.com/yinmingjun/TinyBERT",
+      "snippet": "In general distillation, we use the original BERT-base without fine-tuning as the teacher and a large-scale text corpus as the learning data. By performing the Transformer distillation on the text from general domain, we obtain a general TinyBERT which provides a good initialization for the task-specific distillation."
+    },
+    {
+      "title": "huawei-noah/TinyBERT_General_4L_312D - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/16915",
+      "snippet": "In general distillation, we use the original BERT-base without fine-tuning as the teacher and a large-scale text corpus as the learning data. By performing the Transformer distillation on the text from general domain, we obtain a general TinyBERT which provides a good initialization for the task-specific distillation."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "daniel-moreno/mobilenet-summary",
+  "slug": "daniel-moreno-mobilenet-summary",
+  "author": "daniel-moreno",
+  "url": "https://huggingface.co/daniel-moreno/mobilenet-summary",
+  "created_at": "2026-08-25T17:01:21.000Z",
+  "updated_at": "2026-08-25T17:01:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "base",
+    "batchnorm",
+    "cosine",
+    "cross-attention",
+    "lion",
+    "matching",
+    "poolformer",
+    "standard",
+    "xavier",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileNet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MobileNet",
+      "snippet": "MobileNet is a family of convolutional neural network (CNN) architectures designed for image classification, object detection, and other computer vision tasks. They are designed for small size, low latency, and low power consumption, making them suitable for on-device inference and edge computing on resource-constrained devices like mobile ..."
+    },
+    {
+      "title": "MobileNet - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/mobilenet",
+      "snippet": "MobileNet is a family of efficient convolutional neural network (CNN) architectures developed by Google for mobile and edge AI applications."
+    },
+    {
+      "title": "MobileNetV4 - Universal Models for the Mobile Ecosystem",
+      "url": "https://arxiv.org/pdf/2404.10518v1",
+      "snippet": "MobileNetV3 [18] is tuned to mobile phone CPUs through a combination of hardware-aware NAS, the NetAdapt algorithm, and architec-ture advances. MobileNet MultiHardware [8] optimizes a single model for multi-ple hardware targets. Once-for-all [5] separates training and search for eficiency."
+    },
+    {
+      "title": "[1704.04861] MobileNets: Efficient Convolutional Neural Networks for ...",
+      "url": "https://arxiv.org/abs/1704.04861",
+      "snippet": "We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to ..."
+    },
+    {
+      "title": "MobileNet | Daniel&#x27;s Blogs - GitHub Pages",
+      "url": "https://danghoangnhan.github.io/MobileNet/",
+      "snippet": "Transfer_learning_with_MobileNet_v1.ipynb — loads MobileNetV2 from Keras, where the depthwise and pointwise layers appear separately in model.summary () with exactly the parameter counts above. References [1]A. G. Howard et al., \"MobileNets: Efficient convolutional neural networks for mobile vision applications,\" arXiv preprint, 2017."
+    }
+  ]
+}

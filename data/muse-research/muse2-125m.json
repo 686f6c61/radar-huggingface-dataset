@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Muse-research/Muse2-125M",
+  "slug": "muse-research-muse2-125m",
+  "author": "Muse-research",
+  "url": "https://huggingface.co/Muse-research/Muse2-125M",
+  "created_at": "2026-08-25T11:24:24.000Z",
+  "updated_at": "2026-08-25T11:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "muse2",
+    "text-generation",
+    "conversational",
+    "hybrid-attention",
+    "convolution",
+    "grouped-query-attention",
+    "edge",
+    "on-device",
+    "structured-output",
+    "json",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122915328,
+  "parameters_human": "122.9M",
+  "storage_bytes": 245840496,
+  "storage_human": "246 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse-research/Muse2-230M-Base · Hugging Face",
+      "url": "https://huggingface.co/Muse-research/Muse2-230M-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse-research (Muse) - Hugging Face",
+      "url": "https://huggingface.co/Muse-research",
+      "snippet": "Org profile for Muse on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Muse Spark 1.2 | Meta",
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "snippet": "Optimized for real coding workflows, with higher first-attempt accuracy and more reliable tool calling. Muse Spark 1.2 on Meta Model API with 1M token context."
+    },
+    {
+      "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+      "snippet": "Muse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support further scaling, we are making strategic investments across the entire stack — from research and model training to infrastructure, including the Hyperion data center."
+    },
+    {
+      "title": "The Multimodal Intelligence of Muse Spark 1.2 - research.meta.ai",
+      "url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+      "snippet": "This month, we launched Muse Spark 1.2, a coding-focused update to Muse Spark 1.1. In our announcement, we also previewed the model&#x27;s improved multimodal capabilities. Today, ahead of the open-weights release, we&#x27;re sharing new evaluation results and demonstrations that illustrate the breadth of its visual understanding and reasoning capabilities. Our earlier demo showed some of these ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "walkertyler96/resnet-classify40",
+  "slug": "walkertyler96-resnet-classify40",
+  "author": "walkertyler96",
+  "url": "https://huggingface.co/walkertyler96/resnet-classify40",
+  "created_at": "2026-08-25T18:50:16.000Z",
+  "updated_at": "2026-08-25T18:50:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-attention",
+    "gelu",
+    "groupnorm",
+    "huge",
+    "kaiming",
+    "mobilevit",
+    "polynomial",
+    "retrieval",
+    "sgd",
+    "sparse",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "train-resnet34-classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-resnet34-classification.ipynb",
+      "snippet": "Can I computer tell the diffence between a daisy and a dandelion? The answer is yes This tutorial shows you how to train a state of the art image classification model with Resnet, in PyTorch, using the fastai library. Accompanying Blog Post We recommend that you follow along in this notebook while reading the blog post on how to train Resnet34 image classification model, concurrently. Steps ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Models and pre-trained weights — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models.html",
+      "snippet": "Models and pre-trained weights ¶ The torchvision.models subpackage contains definitions of models for addressing different tasks, including: image classification, pixelwise semantic segmentation, object detection, instance segmentation, person keypoint detection, video classification, and optical flow. General information on pre-trained weights ¶ TorchVision offers pre-trained weights for ..."
+    },
+    {
+      "title": "Top Pre-Trained Models for Image Classification - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/top-pre-trained-models-for-image-classification/",
+      "snippet": "Fine-tuning a pre-trained model requires fewer resources than training a new model, making it more accessible for organisations with limited resources. Challenges of Pre-Trained Models for Image Classification Adaptability: Fine-tuning pre-trained models to fit specific tasks can be complex."
+    },
+    {
+      "title": "Image Classification using ResNet - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/image-classification-using-resnet/",
+      "snippet": "4. Build the Classification Model We now build the model using the pre-trained ResNet50 as a base. We add a GlobalAveragePooling2D layer to reduce the dimensions of the feature maps from the ResNet base model, followed by a Dense layer for classification."
+    }
+  ]
+}

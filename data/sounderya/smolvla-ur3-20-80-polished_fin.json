@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sounderya/smolvla-ur3-20-80-polished_fin",
+  "slug": "sounderya-smolvla-ur3-20-80-polished_fin",
+  "author": "Sounderya",
+  "url": "https://huggingface.co/Sounderya/smolvla-ur3-20-80-polished_fin",
+  "created_at": "2026-08-25T18:47:07.000Z",
+  "updated_at": "2026-08-25T18:47:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Sounderya/mug_smolvla_dataset_v2nc",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906716420,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sounderya/smolvla-ur3-20-80-polished · Hugging Face",
+      "url": "https://huggingface.co/Sounderya/smolvla-ur3-20-80-polished",
+      "snippet": "Sounderya/mug_smolvla_dataset_v2nc ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "Sounderya/ur3_smolvla_dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Sounderya/ur3_smolvla_dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA - sudoremove",
+      "url": "https://sudoremove.com/en/knowledge/models/smolvla/",
+      "snippet": "SmolVLA is a lightweight VLA model released by HuggingFace on June 3, 2025. With 450M parameters, it achieves equal or better performance than models 7-10x larger, trained only on public community data."
+    },
+    {
+      "title": "SmolVLA - aegean.ai",
+      "url": "https://aegean.ai/book/vla-agents/smolvla",
+      "snippet": "SmolVLA is Hugging Face&#x27;s compact Vision-Language-Action model, built on top of the LeRobot library. It is designed to be small enough to fine-tune and deploy on a single consumer GPU, while remaining competitive with larger open VLAs on standard manipulation benchmarks."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    }
+  ]
+}

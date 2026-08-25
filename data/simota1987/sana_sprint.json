@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "simota1987/Sana_Sprint",
+  "slug": "simota1987-sana_sprint",
+  "author": "simota1987",
+  "url": "https://huggingface.co/simota1987/Sana_Sprint",
+  "created_at": "2026-08-25T14:46:25.000Z",
+  "updated_at": "2026-08-25T14:52:49.000Z",
+  "license": "apache-2.0-and-gemma-terms",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "sana",
+  "languages": [],
+  "tags": [
+    "sana",
+    "text-to-image",
+    "mnn",
+    "android",
+    "local-dream",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7104506929,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SANA-Sprint - nvlabs.github.io",
+      "url": "https://nvlabs.github.io/Sana/Sprint/",
+      "snippet": "About Sana This paper presents SANA-Sprint, an efficient diffusion model for ultra-fast text-to-image (T2I) generation. SANA-Sprint is built on a pre-trained foundation model and augmented with hybrid distillation, dramatically reducing inference steps from 20 to 1-4."
+    },
+    {
+      "title": "SANA-Sprint",
+      "url": "https://sana.hanlab.ai/sprint/",
+      "snippet": "SANA-Sprint-1.6B1024px SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency Distillation [Paper] [Github] [Project] Powered by DC-AE with 32x latent space, running on node sana. Unsafe prompt will give you a &#x27;bad image&#x27; in the image instead."
+    },
+    {
+      "title": "SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency ...",
+      "url": "https://research.nvidia.com/labs/eai/publication/sana-sprint/",
+      "snippet": "This paper presents SANA-Sprint, an efficient diffusion model for ultra-fast text-to-image (T2I) generation. SANA-Sprint is built on a pre-trained foundation model and augmented with hybrid distillation, dramatically reducing inference steps from 20 to 1-4. We introduce three key innovations: (1) We propose a training-free approach that transforms a pre-trained flow-matching model for ..."
+    },
+    {
+      "title": "SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency ...",
+      "url": "https://hanlab.mit.edu/projects/sana-sprint",
+      "snippet": "Abstract This paper presents SANA-Sprint, an efficient diffusion model for ultra-fast text-to-image (T2I) generation. SANA-Sprint is built on a pre-trained foundation model and augmented with hybrid distillation, dramatically reducing inference steps from 20 to 1-4."
+    },
+    {
+      "title": "GitHub - NVlabs/Sana: SANA: Efficient High-Resolution Image Synthesis ...",
+      "url": "https://github.com/NVlabs/Sana",
+      "snippet": "SANA is an efficiency-oriented codebase for high-resolution image and video generation, providing complete training and inference pipelines. This repository contains code for SANA, SANA-1.5, SANA-Sprint, SANA-Video, SANA-WM, SANA-Streaming, and Sol-RL. More details can be found in our 📚 documentation. Join our Discord to engage in discussions with the community! If you have any questions ..."
+    }
+  ]
+}

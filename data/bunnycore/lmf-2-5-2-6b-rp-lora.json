@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bunnycore/LMF-2.5-2.6B-RP-Lora",
+  "slug": "bunnycore-lmf-2-5-2-6b-rp-lora",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-RP-Lora",
+  "created_at": "2026-08-25T12:08:26.000Z",
+  "updated_at": "2026-08-25T12:08:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:LiquidAI/LFM2.5-2.6B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1179648,
+  "parameters_human": "1.2M",
+  "storage_bytes": 24256702,
+  "storage_human": "24 MB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bunnycore/LMF-2.5-2B-Code-Lora · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/LMF-2.5-2B-Code-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-2.6B - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "LFM2.5-2.6B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/lfm2-5-2-6b/",
+      "snippet": "LFM2.5-2.6B is a 2.6 billion parameter open weight language model built for agentic workflows. It handles planning, tool calling, and multi step tasks, with a 128K context window for long inputs and an expanded 128K token vocabulary for better multilingual support, including non Latin scripts."
+    }
+  ]
+}

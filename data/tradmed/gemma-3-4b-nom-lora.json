@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TradMed/gemma-3-4b-nom-lora",
+  "slug": "tradmed-gemma-3-4b-nom-lora",
+  "author": "TradMed",
+  "url": "https://huggingface.co/TradMed/gemma-3-4b-nom-lora",
+  "created_at": "2026-08-25T16:02:47.000Z",
+  "updated_at": "2026-08-25T16:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169325930,
+  "storage_human": "169 MB",
+  "base_model": "unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TradMed (TradMed) - Hugging Face",
+      "url": "https://huggingface.co/TradMed",
+      "snippet": "Org profile for TradMed on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "himmeow/gemma-3-4b-LORA · Hugging Face",
+      "url": "https://huggingface.co/himmeow/gemma-3-4b-LORA",
+      "snippet": "Uploaded model Developed by: himmeow License: apache-2.0 Finetuned from model : unsloth/gemma-3-4b-pt-unsloth-bnb-4bit This gemma3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Fine-tuning Gemma-3-4B with LoRA - GitHub",
+      "url": "https://github.com/songdiehan1/Fine_tuning_gemma_demo",
+      "snippet": "This project fine-tunes the Gemma-3-4B model using LoRA (Low-Rank Adaptation). The training is performed on Google Colab with 4-bit quantization (QLoRA) to reduce VRAM usage, using high-quality Chinese Zhihu dataset."
+    },
+    {
+      "title": "gemma-3-4b-it: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/gemma-3-4b-it-google-deepmind",
+      "snippet": "Overview gemma-3-4b-it is a 4-billion-parameter instruction-tuned multimodal model from google-deepmind that processes both text and images to generate text responses. Built on the same research and technology as Google&#x27;s Gemini models, it features a 128K token context window, multilingual support across 140+ languages, and is optimized for following instructions. The most important thing to ..."
+    }
+  ]
+}

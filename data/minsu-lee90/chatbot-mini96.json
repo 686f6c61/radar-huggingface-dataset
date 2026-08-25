@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "minsu-lee90/chatbot-mini96",
+  "slug": "minsu-lee90-chatbot-mini96",
+  "author": "minsu-lee90",
+  "url": "https://huggingface.co/minsu-lee90/chatbot-mini96",
+  "created_at": "2026-08-25T16:31:20.000Z",
+  "updated_at": "2026-08-25T16:31:27.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "classification",
+    "dilated",
+    "huge",
+    "kaiming",
+    "lion",
+    "low-rank",
+    "mocov3",
+    "polynomial",
+    "relu",
+    "rmsnorm",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - subuhana2303/chatbot-mini: AI chat for any model.",
+      "url": "https://github.com/subuhana2303/chatbot-mini",
+      "snippet": "AI chat for any model. Contribute to subuhana2303/chatbot-mini development by creating an account on GitHub."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Chat with Minsu | character.ai | AI Chat, Reimagined-Your Words. Your ...",
+      "url": "https://character.ai/chat/1HBnx9MZRiYSFk9sjXjFl2D5-u7L2j25jnOMFxTxx1U",
+      "snippet": "Chat with Minsu: 🏥| carless. Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "Chatbot App - AI Chatbot",
+      "url": "https://chatbotapp.ai/",
+      "snippet": "Experience the ultimate Chatbot App with AI features, AI Assistant tools, and seamless chatting. All-in-one solution to enhance productivity and creativity."
+    },
+    {
+      "title": "Chat with Minsu | character.ai | Personalized AI for every moment of ...",
+      "url": "https://character.ai/chat/3KXPTHsyxPqvd-Jmwj_BMVafUcVr1NK149hdVPq36E8",
+      "snippet": "Chat with Minsu: . Powered by an industry leading, AI large language model (LLM)."
+    }
+  ]
+}

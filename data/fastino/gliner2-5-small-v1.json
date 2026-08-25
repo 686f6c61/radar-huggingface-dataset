@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "fastino/gliner2.5-small-v1",
+  "slug": "fastino-gliner2-5-small-v1",
+  "author": "fastino",
+  "url": "https://huggingface.co/fastino/gliner2.5-small-v1",
+  "created_at": "2026-08-18T21:46:44.000Z",
+  "updated_at": "2026-08-22T10:24:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "Text classification",
+    "Named Entity Recognition",
+    "Relation Extraction",
+    "Intent classification",
+    "Sentiment Analysis",
+    "Topic classification",
+    "Structured extraction",
+    "Json extraction",
+    "information-extraction",
+    "boundary-extraction",
+    "token-classification",
+    "en",
+    "arxiv:2507.18546",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 187,
+  "trending_score": 8,
+  "parameters": 73881879,
+  "parameters_human": "73.9M",
+  "storage_bytes": 591993402,
+  "storage_human": "592 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fastino/gliner2.5-small-v1 · Hugging Face",
+      "url": "https://huggingface.co/fastino/gliner2.5-small-v1",
+      "snippet": "fastino / gliner2.5-small-v1 like 4 Follow fastino 261 Token Classification GLiNER2 Safetensors English extractor Text classification Named Entity Recognition Relation Extraction Intent classification Sentiment Analysis Topic classification Structured extraction Json extraction information-extraction boundary-extraction arxiv:2507.18546 License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "GLiNER2.5 Small V1 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/gliner2-5-small-v1/",
+      "snippet": "GLiNER2.5 Small is a 74M parameter span free information extraction model that predicts entity boundaries directly instead of enumerating candidate spans, enabling linear scaling with document length. It performs named entity recognition, relation extraction, and constrained classification over long documents in a single pass."
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 replaces span enumeration with a new boundary-prediction architecture, unlocking unlimited span length, long-context extraction, joint entity-relation extraction, constrained classification, and span attributes. Still small, still no GPU required."
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/",
+      "snippet": "Fastino Labs builds open language models for agentic AI, including GLiNER, GLiGuard, and the Fastino fine-tuning agent. See our research and models."
+    },
+    {
+      "title": "GLiNER2 family - a fastino Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/fastino/gliner2-family",
+      "snippet": "GLiNER2 extends the original GLiNER architecture to support multi-task information extraction with a schema-driven interface."
+    }
+  ]
+}

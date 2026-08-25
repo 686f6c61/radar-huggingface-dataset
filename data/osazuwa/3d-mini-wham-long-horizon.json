@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "osazuwa/3d-mini-wham-long-horizon",
+  "slug": "osazuwa-3d-mini-wham-long-horizon",
+  "author": "osazuwa",
+  "url": "https://huggingface.co/osazuwa/3d-mini-wham-long-horizon",
+  "created_at": "2026-08-25T15:52:35.000Z",
+  "updated_at": "2026-08-25T15:58:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "video-prediction",
+    "maskgit",
+    "causal-inference",
+    "pytorch",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6438247260,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yohanshin/WHAM",
+      "url": "https://github.com/yohanshin/WHAM",
+      "snippet": "This repository is the official Pytorch implementation of WHAM: Reconstructing World-grounded Humans with Accurate 3D Motion. For more information, please visit our project page."
+    },
+    {
+      "title": "Awesome World Models for Robotics - GitHub",
+      "url": "https://github.com/leofan90/Awesome-World-Models",
+      "snippet": "Awesome World Models for Robotics This repository provides a curated list of papers for World Models for General Video Generation, Embodied AI, and Autonomous Driving. Template from Awesome-LLM-Robotics and Awesome-World-Model"
+    },
+    {
+      "title": "[2606.23444] SkyJEPA: Learning Long-Horizon World Models for Zero-Shot ...",
+      "url": "https://arxiv.org/abs/2606.23444",
+      "snippet": "Accurate dynamics models are critical for informed decision-making in robotic systems, particularly for agile aerial vehicles operating under uncertainty. Neural network dynamics models are attractive for capturing complex nonlinear effects, but existing predictive approaches struggle with long-horizon forecasting because their autoregressive rollout mechanism amplifies errors over time. Joint ..."
+    },
+    {
+      "title": "WHAM:",
+      "url": "https://wham.is.tue.mpg.de/",
+      "snippet": "Home License Sign In"
+    },
+    {
+      "title": "Best Ollama Models 2026: 25+ Ranked by VRAM & SWE-Bench (August 2026 ...",
+      "url": "https://www.morphllm.com/best-ollama-models",
+      "snippet": "The current Ollama library ranked with verified pull tags, download sizes, context windows, and VRAM. Best local coder: qwen3."
+    }
+  ]
+}

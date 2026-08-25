@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "m96-chan/Z-Image-q8-web-xpu-ops",
+  "slug": "m96-chan-z-image-q8-web-xpu-ops",
+  "author": "m96-chan",
+  "url": "https://huggingface.co/m96-chan/Z-Image-q8-web-xpu-ops",
+  "created_at": "2026-08-25T11:04:15.000Z",
+  "updated_at": "2026-08-25T11:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "webgpu",
+    "quantized",
+    "int8",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:finetune:Tongyi-MAI/Z-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 14410913020,
+  "storage_human": "14.4 GB",
+  "base_model": "Tongyi-MAI/Z-Image",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "m96-chan (Yusuke Harada) · GitHub",
+      "url": "https://github.com/m96-chan/",
+      "snippet": "I am a Japanese independent Full-Stack Engineer with a strong focus on AI/ML integration and production deployment. - m96-chan"
+    },
+    {
+      "title": "GitHub - m96-chan/web-xpu-ops: web primitive layer implements set for xPU",
+      "url": "https://github.com/m96-chan/web-xpu-ops",
+      "snippet": "web primitive layer implements set for xPU. Contribute to m96-chan/web-xpu-ops development by creating an account on GitHub."
+    },
+    {
+      "title": "m96-chan/MioTTS-0.6B-q8-webgpu · Hugging Face",
+      "url": "https://huggingface.co/m96-chan/MioTTS-0.6B-q8-webgpu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-Image-Turbo-GGUF - Q8_0 | ZImage Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2179031?modelVersionId=2453732",
+      "snippet": "Quantized GGUF versions of the Z-Image Turbo by Tongyi-Mai. Model Information Check out the original model card Z-Image Turbo for detailed informat..."
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "According to the Elo-based Human Preference Evaluation (on Alibaba AI Arena), Z-Image-Turbo shows highly competitive performance against other leading models, while achieving state-of-the-art results among open-source models. Click to view the full leaderboard 🚀 Quick Start Install the latest version of diffusers, use the following command:"
+    }
+  ]
+}

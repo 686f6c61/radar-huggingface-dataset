@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brssmith12/classifier-baseline",
+  "slug": "brssmith12-classifier-baseline",
+  "author": "brssmith12",
+  "url": "https://huggingface.co/brssmith12/classifier-baseline",
+  "created_at": "2026-08-25T18:36:11.000Z",
+  "updated_at": "2026-08-25T18:36:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bilinear",
+    "generation",
+    "instancenorm",
+    "linear",
+    "mish",
+    "mobilevit",
+    "nano",
+    "rmsprop",
+    "step",
+    "xavier-uniform",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Understanding Baseline Models in Machine Learning",
+      "url": "https://medium.com/@preethi_prakash/understanding-baseline-models-in-machine-learning-3ed94f03d645",
+      "snippet": "A baseline model, like a dummy classifier, is useful for detecting imbalanced classes by providing a comparison point. It allows us to assess the performance of more advanced models in the context ..."
+    },
+    {
+      "title": "Baseline Models: Your Guide For Model Building - Towards Data Science",
+      "url": "https://towardsdatascience.com/baseline-models-your-guide-for-model-building-1ec3aa244b8d/",
+      "snippet": "Overall, a baseline model is beneficial for ascertaining the reliability of any trained model. Furthermore, it helps assess the usability of the data set in question. For that reason, the first model you should build in a machine learning project is always the baseline model. I wish you the best of luck in your data science endeavors!"
+    },
+    {
+      "title": "Baseline - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/baseline",
+      "snippet": "In machine learning, a baseline is a simple reference model or method used as a point of comparison to judge whether a more complex model actually adds value."
+    },
+    {
+      "title": "Choosing a Baseline Accuracy For a Classification Model",
+      "url": "https://towardsdatascience.com/calculating-a-baseline-accuracy-for-a-classification-model-a4b342ceb88f/",
+      "snippet": "Always selecting the majority group (ZeroR classifier) is insightful as a baseline and is the one you should choose for any classification model. For a machine learning algorithm to demonstrate that it has skill on a problem, it must achieve an accuracy better than this ZeroR value."
+    },
+    {
+      "title": "Baseline Model - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/computer-science/baseline-model",
+      "snippet": "A Baseline Model, also known as a training and testing model, serves as a reference point for selecting the best ensemble classifier in computer science. It provides a standard for comparison and evaluation of other models&#x27; performance. AI generated definition based on: A Machine-Learning Approach to Phishing Detection and Defense, 2015"
+    }
+  ]
+}

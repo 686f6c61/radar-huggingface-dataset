@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Interferon-gamma-RP-9B-Preview-2608-i1-GGUF",
+  "slug": "mradermacher-interferon-gamma-rp-9b-preview-2608-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Interferon-gamma-RP-9B-Preview-2608-i1-GGUF",
+  "created_at": "2026-08-25T14:12:06.000Z",
+  "updated_at": "2026-08-25T14:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "RP",
+    "ERP",
+    "Roleplay",
+    "test",
+    "experimental",
+    "Qwen",
+    "finetune",
+    "Potentially unstable",
+    "Creative writing",
+    "Very high rank",
+    "en",
+    "base_model:Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608",
+    "base_model:quantized:Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 81318169504,
+  "storage_human": "81.3 GB",
+  "base_model": "Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Human ifn-gamma - ACROBiosystems - and for organoid culture",
+      "url": "https://duckduckgo.com/y.js?ad_domain=acrobiosystems.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=l9yjLtSpmcsCILNQ0Qbh%2DBX_BWaO1TS560HwmFqLWqMaxWyMbvB0_WRpSQgGEO6W0evvLL0XEYpDHYLXCjDWyYAbtBRwXcY%2DAb841Hb%2DGqO9NXPWek6ybEYfGyJL3t%2DWiiWeCuVKjR5a5SR7bmnqRPNrwWZ4BjqdzL150aGVtLo.tEH0SFnvCdJPaKq68ywPwg&rut=ce2e7d2e784937786c5f91e7272f6ab1a33fd47c044419e33f23a8e30e645875&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8uS2pJ45ttd4JfjdcamflajVUCUyFZ1TyRAv7fRm8DxNxCB78vMx%2DPDcgf64YRSlVeaN8kncT8MQ_dnUIdJArARSO_%2DjXwzKGcGIKBoPIn4G4OUFjSb2Pm5bmr33vPTiGFhtDhcySeyLhpV8eX2y4oS3JAaCtkFHg1TNoYE6S6Vwr0mANPoyoXSqgzM1uFhvRvHSaX1r%2DPGsQenG3rc1bhu1_dl4%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYWNyb2Jpb3N5c3RlbXMuY29tJTJmcHJvZHVjdHMlMmZwcm90ZWluJTJmaWZuLWdhbW1hLWh1bWFuLWlmZy1oNDIxMSUzZm1zY2xraWQlM2Q3YjZlZWM2YzllZTExMjIwZTc0Njg2ZTEyNTAwMjc1ZSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFBMLi1DWVRPSyUyNTIwQ1VMVFVSRS4tJTI1NUJFVVAlMjU1RC4tQUktQmluZyUyNnV0bV90ZXJtJTNkSHVtYW4lMjUyMElGTi1nYW1tYSUyNnV0bV9jb250ZW50JTNkSUZOLWdhbW1hLi0lMjU1QkVOJTI1NUQ%26rlid%3D7b6eec6c9ee11220e74686e12500275e&vqd=4-336682212960001230915839753402049420526&iurl=%7B1%7DIG%3DE4B2A98D316A42EEB07304408B42D35B%26CID%3D07E83ACC52F8650E2AA12D0C53F66401%26ID%3DDevEx%2C5037.1",
+      "snippet": "ACROBiosystems: High homogeneity & bioactivity verified by SPR/ELISA. Research grade, Premium (Pre GMP) grade, and GMP grade are available."
+    },
+    {
+      "title": "Interferon-gamma-RP-9B-Preview-2608-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Interferon-gamma-RP-9B-Preview-2608-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Interferon-gamma-RP-9B-Preview-2608-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Interferon-gamma-RP-9B-Preview-2608-GGUF/tree/main",
+      "snippet": "mradermacher / Interferon-gamma-RP-9B-Preview-2608-GGUF like 0 Transformers GGUF English RP ERP Roleplay test experimental Qwen finetune Potentially unstable Creative writing Very high rank conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

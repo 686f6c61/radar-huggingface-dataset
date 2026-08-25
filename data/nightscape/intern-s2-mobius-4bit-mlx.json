@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nightscape/Intern-S2-Mobius-4bit-mlx",
+  "slug": "nightscape-intern-s2-mobius-4bit-mlx",
+  "author": "nightscape",
+  "url": "https://huggingface.co/nightscape/Intern-S2-Mobius-4bit-mlx",
+  "created_at": "2026-08-25T10:19:55.000Z",
+  "updated_at": "2026-08-25T12:53:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "interns2_mobius",
+    "mlx-lm",
+    "quantization",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:internlm/Intern-S2-Mobius",
+    "base_model:quantized:internlm/Intern-S2-Mobius",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5421296768,
+  "parameters_human": "5.42B",
+  "storage_bytes": 19516066198,
+  "storage_human": "19.5 GB",
+  "base_model": "internlm/Intern-S2-Mobius",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternLM/Intern-S2-Mobius: Intern-S2-Mobius - GitHub",
+      "url": "https://github.com/InternLM/Intern-S2-Mobius",
+      "snippet": "We introduce Intern-S2-Mobius, a 35B foundation model built on the Mobius-v0 architecture realized by Xtuner and LMDeploy. Instead of binding knowledge storage and reasoning computation layer by layer as in conventional Transformer models, Mobius organizes knowledge into a globally shared Memory and lets multiple Reasoners iteratively query and refine hidden states against this shared ..."
+    },
+    {
+      "title": "GitHub - InternLM/Intern-S2-Mobius: Intern-S2-Mobius",
+      "url": "https://github.com/InternLM/Intern-S2-Mobius/blob/main/",
+      "snippet": "We introduce Intern-S2-Mobius, a 35B foundation model built on the Mobius-v0 architecture realized by Xtuner and LMDeploy. Instead of binding knowledge storage and reasoning computation layer by layer as in conventional Transformer models, Mobius organizes knowledge into a globally shared Memory and lets multiple Reasoners iteratively query and refine hidden states against this shared ..."
+    },
+    {
+      "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+      "url": "https://arxiv.org/pdf/2608.14290",
+      "snippet": "Upon switching to the knowledge-reasoning-decoupled Mobius architecture, the model can attain superior compression rates, thereby enabling it to acquire sufficient knowledge with substantially less training data."
+    },
+    {
+      "title": "[2608.14290v1] Intern-S2-Mobius: Foundation Model with Decoupled ...",
+      "url": "https://arxiv.org/abs/2608.14290v1",
+      "snippet": "Built upon Mobius-v0 architecture: 1) Our 7B model trained-from-scratch achieves similar downstream score as a 7B Transformer baseline with 62.6% of baseline&#x27;s training data. 2) Our Intern-S2-Mobius, continually-pretrained from Qwen3.5-35B, achieves similar downstream score while delivering nearly 4x end-to-end inference speedup."
+    },
+    {
+      "title": "Intern-S2-Mobius: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/intern-s2-mobius-internlm",
+      "snippet": "Overview Intern-S2-Mobius is a 35B parameter foundation model built on the Mobius-v0 architecture that decouples knowledge storage from reasoning computation, achieving nearly 4x inference speedup compared to standard Transformer baselines while maintaining or improving reasoning performance. Created by internlm, the model organizes knowledge into a globally shared Memory accessed by multiple ..."
+    }
+  ]
+}

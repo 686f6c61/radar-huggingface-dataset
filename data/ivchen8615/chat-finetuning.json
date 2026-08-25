@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ivchen8615/chat-finetuning",
+  "slug": "ivchen8615-chat-finetuning",
+  "author": "ivchen8615",
+  "url": "https://huggingface.co/ivchen8615/chat-finetuning",
+  "created_at": "2026-08-25T17:48:45.000Z",
+  "updated_at": "2026-08-25T17:48:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "compact",
+    "concise-analytical",
+    "docx",
+    "endnote",
+    "enthusiastic",
+    "few-shot-multimodal",
+    "passive",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Fine-Tuning Studio Pro | Train Custom AI Models on Your PC - No Coding ...",
+      "url": "https://finetuningstudio.com/",
+      "snippet": "Everything You Need to Train Custom AI Professional-grade LLM fine-tuning in a desktop application. No command line, no cloud dependencies, no data sharing. Just powerful AI training on your terms."
+    },
+    {
+      "title": "HuggingChat - Chat with AI models",
+      "url": "https://huggingface.co/chat/",
+      "snippet": "Welcome to HuggingChat, the chat app powered by open source AI models. Omni automatically picks the best AI model to give you optimal answers depending on your requests. You can also choose from any available open source models to chat with directly."
+    },
+    {
+      "title": "How to fine-tune chat models - OpenAI",
+      "url": "https://developers.openai.com/cookbook/examples/how_to_finetune_chat_models",
+      "snippet": "Inference The last step is to use your fine-tuned model for inference. Similar to the classic FineTuning, you simply call ChatCompletions with your new fine-tuned model name filling the model parameter."
+    },
+    {
+      "title": "Data preparation and analysis for chat model fine-tuning - OpenAI",
+      "url": "https://developers.openai.com/cookbook/examples/chat_finetuning_data_prep",
+      "snippet": "This notebook serves as a tool to preprocess and analyze the chat dataset used for fine-tuning a chat model. It checks for format errors, provides basic statistics, and estimates token counts for fine-tuning costs. The method shown here corresponds to the current fine-tuning method for gpt-3.5-turbo. See legacy fine-tuning for models like babbage-002 and davinci-002."
+    }
+  ]
+}

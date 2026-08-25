@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/granite-4.2-3b",
+  "slug": "ibm-granite-granite-4-2-3b",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+  "created_at": "2026-08-07T16:26:43.000Z",
+  "updated_at": "2026-08-25T17:17:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:ibm-granite/granite-4.1-3b-base",
+    "base_model:finetune:ibm-granite/granite-4.1-3b-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 653,
+  "trending_score": 13,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 7319517120,
+  "storage_human": "7.3 GB",
+  "base_model": "ibm-granite/granite-4.1-3b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite (IBM Granite) - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite",
+      "snippet": "Granite 4.1 LLMs: How They&#x27;re Built ... Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents ... What&#x27;s New in Mellea 0.4.0 + Granite Libraries Release ... Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge ... Granite 4.0 Nano: Just how small can you go?"
+    },
+    {
+      "title": "Granite 4.0 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite",
+      "snippet": "Granite 4.0 language models with a hybrid Mamba-2/transformer architecture and Mixture-of-Experts, delivering 70% lower memory use and 2× faster inference."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite models drive the AI behind many IBM products and services. Discover ready-to-use solutions for code generation, application development, and model testing."
+    },
+    {
+      "title": "Granite 4.2 LLMs: How They&#x27;re Built - Hugging Face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "snippet": "A Blog post by IBM Granite on Hugging Face"
+    },
+    {
+      "title": "IBM&#x27;s Granite 4.2 Models Learn to Think and Act Inside Environments",
+      "url": "https://www.unite.ai/ibms-granite-4-2-models-learn-to-think-and-act-inside-environments/",
+      "snippet": "IBM has released Granite 4.2, its first family of dense, decoder-only reasoning language models, in three sizes: 3B, 8B, and 30B parameters. Announced on August 25, 2026 with weights published under the Apache 2.0 license, the release gives every Granite model a switchable thinking mode and sends ..."
+    }
+  ]
+}

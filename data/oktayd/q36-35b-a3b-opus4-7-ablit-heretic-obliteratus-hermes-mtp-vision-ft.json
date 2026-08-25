@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+  "slug": "oktayd-q36-35b-a3b-opus4-7-ablit-heretic-obliteratus-hermes-mtp-vision-ft",
+  "author": "oktayd",
+  "url": "https://huggingface.co/oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+  "created_at": "2026-08-25T02:47:14.000Z",
+  "updated_at": "2026-08-25T16:01:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.6",
+    "mixture-of-experts",
+    "moe",
+    "claude-opus-4.7",
+    "reasoning",
+    "reasoning-distillation",
+    "abliterated",
+    "uncensored",
+    "refusal-reduction",
+    "heretic",
+    "obliteratus",
+    "nuclear",
+    "hermes",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "agentic",
+    "agentic-coding",
+    "coding",
+    "lora",
+    "peft",
+    "unsloth",
+    "mtp",
+    "nextn",
+    "conversational",
+    "multimodal",
+    "vision-language",
+    "vlm",
+    "freetoken",
+    "en",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:lambda/hermes-agent-reasoning-traces",
+    "base_model:huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 71923767655,
+  "storage_human": "71.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp",
+      "url": "https://huggingface.co/rynky2436/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp/discussions",
+      "snippet": "Instructions to use rynky2436/Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-hermes-oQ4-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=freetoken",
+      "snippet": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT Image-Text-to-Text • 35B•Updated about 4 hours ago"
+    },
+    {
+      "title": "A Thorough Investigation of Opus 4.7 and Qwen3.6-35B-A3B: How Capable ...",
+      "url": "https://note.com/humble_bobcat51/n/n9d0c1546ef89?hl=en",
+      "snippet": "Overview of each Performance of each Opus 4.7&#x27;s performance is \"highest performance plus vision.\" Qwen3.6-35B-A3B&#x27;s performance is \"highest efficiency and versatility.\" Performance Comparison with Similar Models Outlook for 2026 AI Trends: A Year of Agentification, Efficiency, and Practical Application 1. Full-scale adoption of Agentic AI: From tools to \"team members\" 2. MoE, Architectural ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6-35B-A3B is compatible with OpenClaw (formerly Moltbot / Clawdbot), a self-hosted open-source AI coding agent. Connect it to Model Studio to get a full agentic coding experience in the terminal."
+    },
+    {
+      "title": "huihui_ai/Qwen3.6-abliterated:35b-Claude-4.7 - ollama.com",
+      "url": "https://ollama.com/huihui_ai/Qwen3.6-abliterated:35b-Claude-4.7",
+      "snippet": "This is an uncensored version of Qwen/Qwen3.6-35B-A3B created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content."
+    }
+  ]
+}

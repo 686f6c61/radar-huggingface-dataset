@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ariba30/tds-carbon-card",
+  "slug": "ariba30-tds-carbon-card",
+  "author": "ariba30",
+  "url": "https://huggingface.co/ariba30/tds-carbon-card",
+  "created_at": "2026-08-25T14:03:09.000Z",
+  "updated_at": "2026-08-25T14:05:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayeshaalvi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/ayeshaalvi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f3001819/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f3001819/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model Cards - OECD.AI",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards",
+      "snippet": "Model cards provide transparent AI documentation essential for discoverability, reproducibility, and sharing. They are simple Markdown files with additional metadata."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    },
+    {
+      "title": "AI label - Carbon Design System",
+      "url": "https://carbondesignsystem.com/components/ai-label/usage/",
+      "snippet": "The AI label indicates an instance of AI in the UI. It enables AI transparency through the visual recognition the AI icon and is the key pathway to AI explainability by acting as the trigger for the explainability popover."
+    }
+  ]
+}

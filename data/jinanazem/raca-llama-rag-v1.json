@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JinanAzem/raca-llama-rag-v1",
+  "slug": "jinanazem-raca-llama-rag-v1",
+  "author": "JinanAzem",
+  "url": "https://huggingface.co/JinanAzem/raca-llama-rag-v1",
+  "created_at": "2026-08-25T18:40:34.000Z",
+  "updated_at": "2026-08-25T18:44:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JinanAzem/raca-llama-matched-surface-paper · Hugging Face",
+      "url": "https://huggingface.co/JinanAzem/raca-llama-matched-surface-paper",
+      "snippet": "JinanAzem / raca-llama-matched-surface-paper like 0 TensorBoard Safetensors Model card FilesFiles and versions xet MetricsTraining metrics Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Build RAG Chatbot with Llamaindex, Pgvector, OpenAI GPT-4o, and jina ...",
+      "url": "https://zilliz.com/tutorials/rag/llamaindex-and-pgvector-and-openai-gpt-4o-and-jina-clip-v1",
+      "snippet": "Ideal for dynamic applications like interactive customer support, content generation, multilingual translation, and complex data synthesis in industries requiring rapid, adaptive AI solutions. Jina-CLIP-V1: A multimodal AI model that bridges text and images via shared embeddings, enabling cross-modal retrieval and understanding."
+    },
+    {
+      "title": "Build RAG Chatbot with Llamaindex, Zilliz Cloud, OpenAI GPT-4o, and ...",
+      "url": "https://zilliz.com/tutorials/rag/llamaindex-and-zilliz-cloud-and-openai-gpt-4o-and-jina-clip-v1",
+      "snippet": "Ideal for dynamic applications like interactive customer support, content generation, multilingual translation, and complex data synthesis in industries requiring rapid, adaptive AI solutions. Jina-CLIP-V1: A multimodal AI model that bridges text and images via shared embeddings, enabling cross-modal retrieval and understanding."
+    },
+    {
+      "title": "RAG (Retrieval-Augmented Generation) using LLama3",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/rag-using-llama3/",
+      "snippet": "When paired with Llama 3 an advanced language model renowned for its understanding and scalability we can make real world projects. In this article, we will build a project that uses these technologies. Step-by-Step Guide to Build RAG using Llama3 Follow these steps to set up and run RAG system using Llama3 to answer queries via a Gradio interface."
+    },
+    {
+      "title": "RAG with LLaMA Using Ollama: A Deep Dive into Retrieval ... - Medium",
+      "url": "https://medium.com/@danushidk507/rag-with-llama-using-ollama-a-deep-dive-into-retrieval-augmented-generation-c58b9a1cfcd3",
+      "snippet": "The landscape of AI is evolving rapidly, and Retrieval-Augmented Generation (RAG) stands out as a game-changer. Combining powerful language models like LLaMA with efficient retrieval mechanisms ..."
+    }
+  ]
+}

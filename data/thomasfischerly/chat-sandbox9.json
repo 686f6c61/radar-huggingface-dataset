@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ThomasFischerly/chat-sandbox9",
+  "slug": "thomasfischerly-chat-sandbox9",
+  "author": "ThomasFischerly",
+  "url": "https://huggingface.co/ThomasFischerly/chat-sandbox9",
+  "created_at": "2026-08-25T18:41:15.000Z",
+  "updated_at": "2026-08-25T18:41:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-attention",
+    "gelu",
+    "groupnorm",
+    "huge",
+    "linear",
+    "mobilevit",
+    "onecycle",
+    "retrieval",
+    "rmsprop",
+    "trunc-normal",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drive-By Agent Hijacking: One Website Visit, Persistent Model Poisoning",
+      "url": "https://www.cyera.com/research/nemoclaw-one-website-visit-to-hijack-your-ai-agent",
+      "snippet": "Uncover the alarming NemoClaw CVE-2026-65105 vulnerability that enables attackers to control AI agents remotely. Stay informed and secure your AI systems."
+    },
+    {
+      "title": "Grok Zero-Click Attack Steals Chat History Through Encrypted Prompt ...",
+      "url": "https://cyberpress.org/grok-zero-click-attack-steals-chat-history/",
+      "snippet": "A newly disclosed prompt-injection technique can reportedly turn a routine \"summarize this page\" request in xAI&#x27;s Grok web chat into a silent data-exfiltration attack, exposing a user&#x27;s name, approximate location, subscription tier, and active conversation history."
+    },
+    {
+      "title": "OpenAI says its AI went rogue and launched 'unprecedented&#39 ... - BBC",
+      "url": "https://www.bbc.com/news/articles/c3ek3gvdnj3o",
+      "snippet": "OpenAI has revealed some of its most advanced AI models went rogue and hacked a start-up after it lost control of them during a security test. The ChatGPT-maker said its agent - an AI system which ..."
+    },
+    {
+      "title": "Grok Zero-Click Attack Steals Chat Data Using Encrypted Prompt ...",
+      "url": "https://cybersecuritynews.com/grok-zero-click-attack/",
+      "snippet": "A newly disclosed attack can turn a routine \"summarize this page\" request in xAI&#x27;s Grok web chat into a silent theft of the user&#x27;s name, coarse location, subscription tier, and the prompt history of the active conversation."
+    },
+    {
+      "title": "Zero-Click Grok Chat History Theft: Adversa AI Demonstrates ...",
+      "url": "https://securityaffairs.com/197717/hacking/zero-click-grok-chat-history-theft-adversa-ai-demonstrates-cryptographic-context-injection.html",
+      "snippet": "New Cryptographic Context Injection technique bypasses AI guardrails via AES-encrypted payloads, leaking full Grok chat histories zero-click Adversa AI researcher Rony Utevsky devised a new attack technique, called Cryptographic Context Injection, that bypasses AI safety filters by sending instructions as AES-encrypted ciphertext and tricking the model into decrypting them inside its own code ..."
+    }
+  ]
+}

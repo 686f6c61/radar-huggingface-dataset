@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fuat-65/efeai-gemma2-mobile",
+  "slug": "fuat-65-efeai-gemma2-mobile",
+  "author": "fuat-65",
+  "url": "https://huggingface.co/fuat-65/efeai-gemma2-mobile",
+  "created_at": "2026-08-25T17:43:47.000Z",
+  "updated_at": "2026-08-25T17:43:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "android",
+    "on-device",
+    "gemma2",
+    "mediapipe",
+    "efeai",
+    "text-generation",
+    "tr",
+    "en",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deploy Gemma on mobile devices - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/integrations/mobile",
+      "snippet": "This document outlines various methods and tools for deploying and running Gemma models on mobile devices, including using the Google AI Edge Gallery app and the MediaPipe LLM Inference API. For information on converting a fine-tuned Gemma model to a LiteRT version, see the Conversion Guide. Google AI Edge Gallery app To see the LLM Inference APIs in action and test your Task Bundle model, you ..."
+    },
+    {
+      "title": "Gemma 2 model card - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_2",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making LLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "google/gemma-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Gemma2:ImprovingOpenLanguageModels ataPracticalSize",
+      "url": "https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf",
+      "snippet": "e with recent Google AI models (Gemini Team, 2024). Similar to the inaugural Gemma release, we have followed a three pillar approach which fo-cuses on safety mitigation at training time, robust and transparent model evaluations, and further development of the Responsible Generative AI Toolkit, a series of models and tools to help de-velopers ..."
+    }
+  ]
+}

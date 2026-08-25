@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sexiam/Ra-Mix_v2",
+  "slug": "sexiam-ra-mix_v2",
+  "author": "Sexiam",
+  "url": "https://huggingface.co/Sexiam/Ra-Mix_v2",
+  "created_at": "2026-08-25T15:42:53.000Z",
+  "updated_at": "2026-08-25T15:42:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sexiam (Saxiam) - Hugging Face",
+      "url": "https://huggingface.co/Sexiam",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Ra-Mix - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/02d8b3f3c65260d0fc57ad1b0ec898cd",
+      "snippet": "Explore Ra-Mix model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Sexiam (Saxiam) - Hugging Face",
+      "url": "https://huggingface.co/Sexiam/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "Sexiam Creator Profile | Civitai",
+      "url": "https://civitai.com/user/Sexiam/models",
+      "snippet": "Models Uploaded: 0, Followers: 3.7k, Total Likes Received: 2k, Total Downloads Received: 13k."
+    },
+    {
+      "title": "RA-Mix - v1.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2658582/ra-mix",
+      "snippet": "RA-Mix: Ri-Mix Style Merge RA-mix was created for Phinjo&#x27;s 26k follower celebration bounty. I was honored to take second place in the event, and wi..."
+    }
+  ]
+}

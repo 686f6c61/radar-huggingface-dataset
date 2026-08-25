@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rabiayel/fashion-product-recommender",
+  "slug": "rabiayel-fashion-product-recommender",
+  "author": "rabiayel",
+  "url": "https://huggingface.co/rabiayel/fashion-product-recommender",
+  "created_at": "2026-08-25T12:08:54.000Z",
+  "updated_at": "2026-08-25T12:34:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 823961307,
+  "storage_human": "824 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Study of AI-Driven Fashion Recommender Systems - Springer",
+      "url": "https://link.springer.com/article/10.1007/s42979-023-01932-9",
+      "snippet": "The rising diversity, volume, and pace of fashion manufacturing pose a considerable challenge in the fashion industry, making it difficult for customers to pick which product to purchase. In addition, fashion is an inherently subjective, cultural notion and an ensemble of clothing items that maintains a coherent style. In most of the domains in which Recommender Systems are developed (e.g ..."
+    },
+    {
+      "title": "GitHub - knowrohit/Fashion-Rec-Sys: FashionGPT is an AI-powered product ...",
+      "url": "https://github.com/knowrohit/Fashion-Rec-Sys",
+      "snippet": "FashionGPT is an AI-powered product recommender system designed to help users find their perfect fashion match. By leveraging the power of Transfer Learning, FashionGPT can analyze the visual features of a given image and recommend similar products that cater to the user&#x27;s unique style preferences. - knowrohit/Fashion-Rec-Sys"
+    },
+    {
+      "title": "Agentic Personalized Fashion Recommendation in the Age of Generative AI ...",
+      "url": "https://arxiv.org/html/2508.02342v1",
+      "snippet": "Figure 1. A layered conceptual model of fashion recommendation, with an inner focus on the user (joy, beauty and trends, functional needs), garment‐level attributes in the middle, chain‐level factors next, and outermost emphasis on sustainability and ethical considerations."
+    },
+    {
+      "title": "AI-Powered Fashion Product Recommendation System",
+      "url": "https://github.com/maitreyeee/Multimodal-Recommender",
+      "snippet": "A sophisticated recommendation system that combines computer vision and natural language processing to provide intelligent fashion product recommendations. The system leverages OpenAI&#x27;s GPT-4 Vision API for advanced image understanding and implements a hybrid similarity approach."
+    },
+    {
+      "title": "Sequential LLM Framework for Fashion Recommendation",
+      "url": "https://arxiv.org/abs/2410.11327",
+      "snippet": "The fashion industry is one of the leading domains in the global e-commerce sector, prompting major online retailers to employ recommendation systems for product suggestions and customer convenience. While recommendation systems have been widely studied, most are designed for general e-commerce problems and struggle with the unique challenges of the fashion domain. To address these issues, we ..."
+    }
+  ]
+}

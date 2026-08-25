@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "trinhkhng/slerp_Merged_gpt2_0.4",
+  "slug": "trinhkhng-slerp_merged_gpt2_0-4",
+  "author": "trinhkhng",
+  "url": "https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.4",
+  "created_at": "2026-08-04T09:08:02.000Z",
+  "updated_at": "2026-08-25T15:17:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 749,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1991096832,
+  "storage_human": "2.0 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trinhkhng/slerp_Merged_gpt2_0.4 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.4",
+      "snippet": "Instructions to use trinhkhng/slerp_Merged_gpt2_0.4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use trinhkhng/slerp_Merged_gpt2_0.4 with Transformers:"
+    },
+    {
+      "title": "trinhkhng/slerp_Merged_gpt2-large_0.4 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/slerp_Merged_gpt2-large_0.4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "slerp_Merged_gpt2_0.4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/slerp_Merged_gpt2_0.4",
+      "snippet": "Run slerp_Merged_gpt2_0.4 with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "GitHub - ichnixkann/model-merge-tools",
+      "url": "https://github.com/ichnixkann/model-merge-tools",
+      "snippet": "🤖 Model Merge Tools Tools and scripts for merging Hugging Face language models using various strategies including SLERP, task arithmetic, and linear interpolation."
+    },
+    {
+      "title": "model-merge-tools/README.md at main - GitHub",
+      "url": "https://github.com/ichnixkann/model-merge-tools/blob/main/README.md",
+      "snippet": "🤖 Model Merge Tools Tools and scripts for merging Hugging Face language models using various strategies including SLERP, task arithmetic, and linear interpolation."
+    }
+  ]
+}

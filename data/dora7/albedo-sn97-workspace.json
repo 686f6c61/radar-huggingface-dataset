@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dora7/albedo-sn97-workspace",
+  "slug": "dora7-albedo-sn97-workspace",
+  "author": "dora7",
+  "url": "https://huggingface.co/dora7/albedo-sn97-workspace",
+  "created_at": "2026-08-25T14:42:44.000Z",
+  "updated_at": "2026-08-25T14:43:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70602280465,
+  "storage_human": "70.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dora7 (DORA) - Hugging Face",
+      "url": "https://huggingface.co/dora7",
+      "snippet": "Recent Activity published a model2 days ago dora7/affine-5fhnbtexaw-redaxe updated a model2 days ago dora7/affine-5fhnbtexaw-redaxe published a model2 days ago dora7/albedo-qwen3.6-35b-mount View all activity"
+    },
+    {
+      "title": "One of the most elegant designs in Bittensor right now. @taomedia_ just ...",
+      "url": "https://x.com/DkingYooo18516/status/2076918847286968681",
+      "snippet": "Albedo (SN97): The Bittensor Subnet That Gets Stronger Every Time Someone Tries to Game It 🦾Dendrite&#x27;s Albedo (SN97) is a Bittensor arena where miners compete to unseat a champion AI coding agent, every exploit attempt is expected, and the model gets stronger because of it. On Bittensor, miners are paid more the better their models score."
+    },
+    {
+      "title": "Albedo (SN97) — Model Distillation Network | Bittensor.ai",
+      "url": "https://bittensor.ai/subnets/97",
+      "snippet": "Competitive model distillation on Bittensor. Miners train small language models under a 25-axis evaluation framework. Winner earns 100% subnet emissions."
+    },
+    {
+      "title": "The Subnet an AI Agent Built: Inside Distil (SN97) - tao.media",
+      "url": "https://www.tao.media/the-subnet-an-ai-agent-built-inside-distil-sn97/",
+      "snippet": "The Subnet an AI Agent Built: Inside Distil (SN97) An AI agent built a Bittensor subnet in 48 hours using decentralized inference from Chutes. It pays 100% of emissions to whoever builds the best compressed 35B AI model. The winner&#x27;s model is free at chat.arbos.life. Agents are already running businesses on Bittensor."
+    },
+    {
+      "title": "Albedo (SN97): The Bittensor Subnet That Gets Stronger Every Time ...",
+      "url": "https://www.tao.media/albedo-sn97-the-bittensor-subnet-that-gets-stronger-every-time-someone-tries-to-game-it/",
+      "snippet": "Dendrite&#x27;s Albedo (SN97) is a Bittensor arena where miners compete to unseat a champion AI coding agent, every exploit attempt is expected, and the model gets stronger because of it."
+    }
+  ]
+}

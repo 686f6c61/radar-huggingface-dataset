@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Sravanigunnu/gemma-3-4b-macd-hindi-spotcheck-lora",
+  "slug": "sravanigunnu-gemma-3-4b-macd-hindi-spotcheck-lora",
+  "author": "Sravanigunnu",
+  "url": "https://huggingface.co/Sravanigunnu/gemma-3-4b-macd-hindi-spotcheck-lora",
+  "created_at": "2026-08-25T10:56:50.000Z",
+  "updated_at": "2026-08-25T10:57:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "hate-speech-detection",
+    "content-moderation",
+    "hindi",
+    "lora",
+    "spot-check",
+    "label-verification",
+    "hi",
+    "en",
+    "dataset:MACD",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81045985,
+  "storage_human": "81 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sravanigunnu/gemma-3-4b-macd-hindi-hate-speech-lora · Hugging Face",
+      "url": "https://huggingface.co/Sravanigunnu/gemma-3-4b-macd-hindi-hate-speech-lora",
+      "snippet": "Gemma-3-4B-it — Hindi Hate Speech LoRA LoRA adapter fine-tuned on the MACD Hindi training split for binary hate speech classification (abusive / non-abusive) in Hindi."
+    },
+    {
+      "title": "gemma-3-4b-macd-hindi-hate-speech-lora - friendli.ai",
+      "url": "https://friendli.ai/models/Sravanigunnu/gemma-3-4b-macd-hindi-hate-speech-lora",
+      "snippet": "Deploy gemma-3-4b-macd-hindi-hate-speech-lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=77&sort=trending&search=hindi",
+      "snippet": "Explore machine learning models. Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF Safetensors Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks ..."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

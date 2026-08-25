@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mohameddalii/ocr-mt-5090",
+  "slug": "mohameddalii-ocr-mt-5090",
+  "author": "mohameddalii",
+  "url": "https://huggingface.co/mohameddalii/ocr-mt-5090",
+  "created_at": "2026-08-25T18:37:07.000Z",
+  "updated_at": "2026-08-25T18:37:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "ocr",
+    "translation",
+    "qwen3",
+    "paddleocr",
+    "rtx5090",
+    "vast",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aiptimizer/TurboOCR: TurboOCR, >200 img/s OmnidocBench ...",
+      "url": "https://github.com/aiptimizer/TurboOCR",
+      "snippet": "Whole-page OCR runs at up to 559 images/s on receipts (one RTX 5090), and full structured parsing (layout + tables + formulas) at ~20 pages/s — where VLM document parsers like PaddleOCR-VL run ~1 page/s. On forms and receipts it is accurate and 15-90× faster than classic OCR engines."
+    },
+    {
+      "title": "Document AI and OCR | Mistral AI",
+      "url": "https://mistral.ai/solutions/document-ai/",
+      "snippet": "Extract, understand, and analyze documents with Mistral document AI and enterprise-grade OCR — with multilingual support and flexible workflows for any document type."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 — 7 Models Ranked",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mistral-ocr-4-0",
+      "snippet": "Why Mistral for Document AI? Mistral Document AI comes with an improved Document OCR (Optical Character Recognition) processor, powered by our latest OCR model, mistral-ocr-4-0, which enables you to extract text and structured content from PDFs and a variety of document types."
+    },
+    {
+      "title": "IDP Leaderboard — Best Document AI Models Compared",
+      "url": "https://www.idp-leaderboard.org/",
+      "snippet": "Compare the best document AI models across OCR accuracy, table extraction, key information extraction, and visual question answering. Updated benchmark results for GPT-5, Gemini, Nanonets, Llama, and more."
+    }
+  ]
+}

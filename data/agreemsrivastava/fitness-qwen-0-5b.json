@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AgreemSrivastava/fitness-qwen-0.5b",
+  "slug": "agreemsrivastava-fitness-qwen-0-5b",
+  "author": "AgreemSrivastava",
+  "url": "https://huggingface.co/AgreemSrivastava/fitness-qwen-0.5b",
+  "created_at": "2026-08-25T17:41:21.000Z",
+  "updated_at": "2026-08-25T17:41:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "base_model": "unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-0.5B",
+      "snippet": "A newer version of this model is available: Qwen/Qwen2.5-.5B"
+    },
+    {
+      "title": "qwen:0.5b | LLMfit Model Details",
+      "url": "https://llmfit.io/models/qwen%3A0.5b",
+      "snippet": "View qwen:0.5b variants, quantization options, estimated speed, memory fit, and copyable Ollama pull command."
+    },
+    {
+      "title": "olegGerbylev/Qwen2-0.5B-from-scratch · Hugging Face",
+      "url": "https://huggingface.co/olegGerbylev/Qwen2-0.5B-from-scratch",
+      "snippet": "Qwen2-.5B-Instruct Introduction Qwen2 is the new series of Qwen large language models. For Qwen2, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters, including a Mixture-of-Experts model. This repo contains the instruction-tuned 0.5B Qwen2 model. Compared with the state-of-the-art opensource language models, including ..."
+    },
+    {
+      "title": "qwen:0.5b - Ollama",
+      "url": "https://ollama.com/library/qwen:0.5b",
+      "snippet": "6 model sizes, including 0.5B, 1.8B, 4B (default), 7B, 14B, 32B (new) and 72B ollama run qwen:0.5b ollama run qwen:1.8b ollama run qwen:4b ollama run qwen:7b ollama run qwen:14b ollama run qwen:32b ollama run qwen:72b ollama run qwen:110b Significant performance improvement in human preference for chat models Multilingual support of both base ..."
+    },
+    {
+      "title": "Qwen2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2407.10671v1",
+      "snippet": "The model series encompasses foundational, i.e., base language models, pre-trained but unaligned to human preferences, and instruction-tuned models, fine-tuned with single-turn and multi-turn instruction-following datasets suitable for chat and agent purposes."
+    }
+  ]
+}
