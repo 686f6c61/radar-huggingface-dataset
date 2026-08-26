@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chinedu-eze/asr-mini",
+  "slug": "chinedu-eze-asr-mini",
+  "author": "chinedu-eze",
+  "url": "https://huggingface.co/chinedu-eze/asr-mini",
+  "created_at": "2026-08-25T20:59:40.000Z",
+  "updated_at": "2026-08-25T20:59:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "intro-problem-solution-validation-future",
+    "latex-neurips",
+    "neutral",
+    "numeric-bibtex",
+    "self-supervised",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vectominist/MiniASR: A mini, simple, and fast end-to-end ...",
+      "url": "https://github.com/vectominist/MiniASR",
+      "snippet": "Intro Why Mini? Minimal Training ⏱ Self-supervised pre-trained models + minimal fine-tuning. Simple and Flexible ⚙️ Easy to understand and customize. Colab Compatible 🧪 Train your model directly on Google Colab."
+    },
+    {
+      "title": "AI & Web3 Morning Update: Fetch.ai has just launched ASI-1 Mini, a ...",
+      "url": "https://www.linkedin.com/posts/chinedukalu3034_fetchai-launches-first-web3-agentic-ai-model-activity-7347882348538990592-XAra",
+      "snippet": "🚀 AI &amp; Web3 Morning Update: Fetch.ai has just launched ASI-1 Mini, a native Web3 large language model designed to power complex agentic AI workflows. This breakthrough enables secure ..."
+    },
+    {
+      "title": "Mini-ASR · Live Speech Recognition",
+      "url": "https://conkey01.github.io/Automatic_Speech_Recognition_System/",
+      "snippet": "Mini ASR A 44.7M-parameter speech recognition model, trained from scratch on LibriSpeech. Built end-to-end with PyTorch."
+    },
+    {
+      "title": "S1-mini: Open-Weights ASR Text Normalizer | KiaDev AI News",
+      "url": "https://kiadev.net/news/2026-08-20-s1-mini-asr-text-normalizer",
+      "snippet": "Superwhisper has released the S1 model family: S1-Voice, S1-Language and S1-mini. The notable self-hostable component is S1-mini, a 0.6B open-weights text normalizer that runs after automatic speech recognition (ASR), converting raw transcripts into readable written text."
+    },
+    {
+      "title": "MiniASR/README.md at main · vectominist/MiniASR · GitHub",
+      "url": "https://github.com/vectominist/MiniASR/blob/main/README.md",
+      "snippet": "A mini, simple, and fast end-to-end automatic speech recognition toolkit. - MiniASR/README.md at main · vectominist/MiniASR"
+    }
+  ]
+}

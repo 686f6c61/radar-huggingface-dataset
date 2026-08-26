@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ashwmurt/neutts_nano",
+  "slug": "ashwmurt-neutts_nano",
+  "author": "ashwmurt",
+  "url": "https://huggingface.co/ashwmurt/neutts_nano",
+  "created_at": "2026-08-25T23:59:32.000Z",
+  "updated_at": "2026-08-25T23:59:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "real_time",
+    "qai-hub-models",
+    "qualcomm",
+    "android",
+    "text-to-audio",
+    "arxiv:2509.09550",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neuphonic/neutts-nano · Hugging Face",
+      "url": "https://huggingface.co/neuphonic/neutts-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - neuphonic/neutts: On-device TTS model by Neuphonic",
+      "url": "https://github.com/neuphonic/neutts",
+      "snippet": "Multilingual Space NeuTTS-2E (English, emotional control): Model, Q8 GGUF, Q4 GGUF, Space NeuTTS-2E.mp4 Created by Neuphonic - building faster, smaller, on-device voice AI State-of-the-art Voice AI has been locked behind web APIs for too long. NeuTTS is a collection of open source, on-device, TTS speech language models with instant voice cloning."
+    },
+    {
+      "title": "Neuphonic - Hugging Face",
+      "url": "https://huggingface.co/neuphonic",
+      "snippet": "NeuTTS Nano is a TTS model, 3x smaller than NeuTTS Air, that runs on CPU in real-time - now in English, Spanish, French, and German versions!"
+    },
+    {
+      "title": "GitHub - neuphonic/neutts: On-device TTS model by Neuphonic · GitHub",
+      "url": "https://t.co/08fNS7A6kA",
+      "snippet": "NeuTTS-Nano-Spanish: Model, Q8 GGUF, Q4 GGUF Multilingual Space NeuTTS-Nano-V4.mp4 Created by Neuphonic - building faster, smaller, on-device voice AI State-of-the-art Voice AI has been locked behind web APIs for too long. NeuTTS is a collection of open source, on-device, TTS speech language models with instant voice cloning."
+    },
+    {
+      "title": "neutts-nano: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/neutts-nano-neuphonic",
+      "snippet": "Overview neutts-nano is an English-language text-to-speech model built by neuphonic for on-device synthesis with instant voice cloning. The model combines a compact language model backbone (116.8M active parameters, 228.7M total) with NeuCodec, an open-source neural audio codec that delivers quality at low bitrates using a single codebook. It runs on CPU with real-time or better-than-real-time ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jaslee/Ouro-1.4B-Thinking-terminal-sft-10k",
+  "slug": "jaslee-ouro-1-4b-thinking-terminal-sft-10k",
+  "author": "jaslee",
+  "url": "https://huggingface.co/jaslee/Ouro-1.4B-Thinking-terminal-sft-10k",
+  "created_at": "2026-08-26T01:03:22.000Z",
+  "updated_at": "2026-08-26T01:03:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ouro",
+    "loop-lm",
+    "terminal-bench",
+    "agent",
+    "sft",
+    "custom_code",
+    "base_model:ByteDance/Ouro-1.4B-Thinking",
+    "base_model:finetune:ByteDance/Ouro-1.4B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1434652673,
+  "parameters_human": "1.43B",
+  "storage_bytes": 2869338723,
+  "storage_human": "2.9 GB",
+  "base_model": "ByteDance/Ouro-1.4B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM-OS-Models/Ouro-1.4B-Thinking-Terminal-SFT · Hugging Face",
+      "url": "https://huggingface.co/LLM-OS-Models/Ouro-1.4B-Thinking-Terminal-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ByteDance/Ouro-1.4B-Thinking at main - Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Ouro-1.4B-Thinking/blob/main/README.md",
+      "snippet": "Ouro-1.4B-Thinking Model Description ⚠️ IMPORTANT: This model is intended for research purposes only. It is provided as-is without warranties for production use. Ouro-1.4B-Thinking is a reasoning-specialized variant of the Ouro-1.4B base model, enhanced through supervised fine-tuning on high-quality reasoning data. Key Features Advanced Reasoning: Specifically optimized for mathematical ..."
+    },
+    {
+      "title": "Ouro: Looped Language Models",
+      "url": "https://ouro-llm.github.io/",
+      "snippet": "This allows the model to perform iterative computation in latent space, enabling deeper reasoning without proportionally increasing parameter count. Our models use 4 recurrent steps (R4) to achieve exceptional parameter efficiency."
+    },
+    {
+      "title": "Ouro-1.4B-Thinking: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ouro-1.4b-thinking-bytedance",
+      "snippet": "Overview Ouro-1.4B-Thinking is a reasoning-specialized language model created by ByteDance that contains 1.4 billion parameters across 24 layers and achieves performance competitive with 4B-parameter models despite its smaller size. The model uses a recurrent architecture with 4 default recurrent steps, hidden size of 2048, multi-head attention, SwiGLU activation, RoPE position embeddings, and ..."
+    },
+    {
+      "title": "ouro-ai-labs/ouro: Ouro is an open-source AI agent - GitHub",
+      "url": "https://github.com/ouro-ai-labs/ouro",
+      "snippet": "An open-source AI agent — run it as a Coding agent CLI or deploy it as a bot just like JARVIS. Ouro is derived from Ouroboros—the ancient symbol of a serpent consuming its own tail to form a perfect circle. It represents the ultimate cycle: a closed loop of self-consumption, constant renewal, and infinite iteration."
+    }
+  ]
+}

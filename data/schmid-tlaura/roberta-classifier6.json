@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "schmid-tlaura/roberta-classifier6",
+  "slug": "schmid-tlaura-roberta-classifier6",
+  "author": "schmid-tlaura",
+  "url": "https://huggingface.co/schmid-tlaura/roberta-classifier6",
+  "created_at": "2026-08-25T22:09:00.000Z",
+  "updated_at": "2026-08-25T22:09:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "approx-gelu",
+    "base",
+    "constant-warmup",
+    "mobilevit",
+    "retrieval",
+    "rmsnorm",
+    "sliding-window",
+    "tensor-fusion",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoBERTa Classifier for NLP Tasks - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/roberta-classifier",
+      "snippet": "RoBERTa Classifier is a neural model that fine-tunes the RoBERTa transformer with tailored prediction heads for binary, multiclass, multilabel, and sequence labeling tasks. It utilizes advanced tokenization strategies such as BPE and SentencePiece to minimize out-of-vocabulary issues and ensure consistent labeling across diverse languages. Architectural enhancements like zero-initialized ..."
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "Classifying human vs. AI text with machine learning and ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-27377-z",
+      "snippet": "To enhance model reliability, interpretability, and fairness through post-hoc calibration (temperature scaling), precision-oriented threshold tuning, and explainable AI techniques (LIME and SHAP ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    }
+  ]
+}

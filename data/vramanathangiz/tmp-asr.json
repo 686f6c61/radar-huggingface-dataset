@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Vramanathangiz/tmp-asr",
+  "slug": "vramanathangiz-tmp-asr",
+  "author": "Vramanathangiz",
+  "url": "https://huggingface.co/Vramanathangiz/tmp-asr",
+  "created_at": "2026-08-25T19:37:56.000Z",
+  "updated_at": "2026-08-25T19:38:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "detailed-descriptive",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "medium-balanced",
+    "multimodal-reasoning",
+    "numeric-nature",
+    "plain-text",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vramanathangiz (प्रिया गुप्ता) - Hugging Face",
+      "url": "https://huggingface.co/Vramanathangiz",
+      "snippet": "User profile of प्रिया गुप्ता on Hugging Face"
+    },
+    {
+      "title": "Vramanathangiz/paper_014289250_multimodal_reasoning · Hugging Face",
+      "url": "https://huggingface.co/Vramanathangiz/paper_014289250_multimodal_reasoning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "automatic-speech-recognition · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/automatic-speech-recognition",
+      "snippet": "A SOTA Industrial-Grade All-in-One ASR system with ASR, VAD, LID, and Punc modules. FireRedASR2 supports Chinese (Mandarin, 20+ dialects/accents), English, code-switching, and both speech and singing ASR."
+    },
+    {
+      "title": "GitHub - ghnmqdtg/VM-ASR: The official PyTorch implementation of VM-ASR ...",
+      "url": "https://github.com/ghnmqdtg/VM-ASR",
+      "snippet": "What&#x27;s the model training by default? The script files used to train and evaluate the versatile models (VM-ASR*) by default. If you want to train the specialized models (VM-ASR), you can uncomment the corresponding lines in the script files. The description of commands is provided in the script files. Waaait a minute, where is the dataset?"
+    },
+    {
+      "title": "Typhoon ASR Real-time",
+      "url": "https://opentyphoon.ai/model/typhoon-asr-realtime",
+      "snippet": "A streaming-first, open-source Thai speech recognition model designed for real-world applications, Typhoon ASR Real-Time delivers fast, accurate, and low-latency transcriptions while running efficiently on CPUs and compact GPUs. Built on FastConformer-Transducer architecture, it overcomes the limitations of existing ASR systems like Whisper by enabling true streaming without costly hardware or ..."
+    }
+  ]
+}

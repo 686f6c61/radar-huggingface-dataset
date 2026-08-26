@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "camilasoares/vit-retriever",
+  "slug": "camilasoares-vit-retriever",
+  "author": "camilasoares",
+  "url": "https://huggingface.co/camilasoares/vit-retriever",
+  "created_at": "2026-08-25T23:00:42.000Z",
+  "updated_at": "2026-08-25T23:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "author-year",
+    "detailed-descriptive",
+    "embodied-ai",
+    "enthusiastic",
+    "highlight-bullet",
+    "latex-cvpr",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision Transformers (ViTs): Computer Vision with Transformer Models",
+      "url": "https://www.digitalocean.com/community/tutorials/vision-transformer-for-computer-vision",
+      "snippet": "Discover how Vision Transformers (ViTs) are transforming computer vision by using transformer architecture for tasks like image classification and object det…"
+    },
+    {
+      "title": "Vision Transformer (ViT) - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.39.2/en/model_doc/vit",
+      "snippet": "Following the original Vision Transformer, some follow-up works have been made: DeiT (Data-efficient Image Transformers) by Facebook AI. DeiT models are distilled vision transformers. The authors of DeiT also released more efficiently trained ViT models, which you can directly plug into ViTModel or ViTForImageClassification."
+    },
+    {
+      "title": "Vision Transformer: A New Era in Image Recognition",
+      "url": "https://viso.ai/deep-learning/vision-transformer-vit/",
+      "snippet": "For example, the popular ChatGPT AI chatbot is a transformer-based language model. Specifically, it is based on the GPT (Generative Pre-trained Transformer) architecture. This uses self-attention mechanisms to model the dependencies between words in a text. Vision Transformer (ViT) in Image Recognition"
+    },
+    {
+      "title": "Vision Transformers (ViT) in Image Recognition - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/vision-transformers-vit-in-image-recognition/",
+      "snippet": "Vision Transformers (ViTs) employ a unique architecture to process images by treating them as sequences of patches. This approach enables the model to leverage the power of transformer designs, particularly through the use of self-attention mechanisms. Vision Transformers begin by dividing an image into smaller, fixed-size patches."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "Overview of the model: we split an image into fixed-size patches, linearly embed each of them, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder. In order to perform classification, we use the standard approach of adding an extra learnable \"classification token\" to the sequence."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sapient001/resume",
+  "slug": "sapient001-resume",
+  "author": "Sapient001",
+  "url": "https://huggingface.co/Sapient001/resume",
+  "created_at": "2026-08-25T21:42:33.000Z",
+  "updated_at": "2026-08-25T21:53:54.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126664966,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Un CV sur mesure grâce à l&#x27;IA - Un CV parfait simplement",
+      "url": "https://duckduckgo.com/y.js?ad_domain=moncvparfait.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=dRYqxbpcir6bxSyJ5vxOQEfcayCmzu6g5TJRgInjXGBZvdvp24v6QAEsdJz9eUZAyVs1tm%2DByp0vDcOzKtU63dg_oDvgV8A%2DVpa3ZN9YAciP4hlYKNjno5jL1cY_OUhxrz%2DYt1QbU17TMybaGVqj9CFDdo6aQYoKubHCE11uN_Q.BlxTR4QGuqMIM4sAZFl4oQ&rut=33e2a4659ce426779b9cc18781e4d7d5d7e53d64ab905cf3fad02d90fd3eeccf&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De84JsSbGrNMV3zCXY40GAqrzVUCUzv_uNy_yZQTs42ztP6Ab4bu85GxaH%2Da6Dv34GkU75Vl6WC4kfA8VRkG6UMDQMQd%2DJqlu3_Awx8rI3k6GUh0HN5GNaJtVSj%2DTbxgDsMVoIoQoiGJydIh9qD3bnrVDD8M6FPpIeVtBfHOh8eqlNYNaMoosHAPcts8macYGOyaqYs_k_7Q%2DS29sL417RgRdePF2k%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubW9uY3ZwYXJmYWl0LmZyJTJmbHAlMmZmciUyZm1wcmZyemxwMDEuYXNweCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBtYXglMjZ1dG1fY2FtcGFpZ24lM2Q2NzcwMDY1NjAlMjZ1dG1fdGVybSUzZHd3dy5tb25jdnBhcmZhaXQuZnIlMjZuZXR3b3JrJTNkcyUyNmRldmljZSUzZGMlMjZhZHBvc2l0aW9uJTNkJTI2YWRncm91cGlkJTNkMTIzOTE1MTEwNDY2OTUxNyUyNnBsYWNlbWVudCUzZCUyNm1zY2xraWQlM2RhYTM1YTQ2YTliYmUxNzBjMjAxY2NlZTQ4MjA4ZmVjMCUyNnV0bV9jb250ZW50JTNkQXNzZXQlMjUyMEdyb3VwJTI1MjAy%26rlid%3Daa35a46a9bbe170c201ccee48208fec0&vqd=4-8856552454980946913621310419224657160&iurl=%7B1%7DIG%3D56E5877851BB42F0B8A6F5347580D1E1%26CID%3D2E11DCA28BA269FA16CCCB628AD9684C%26ID%3DDevEx%2C5036.1",
+      "snippet": "Des CV parfaits : des modèles, des contenus personnalisables et des conseils d&#x27;experts. Créez un CV parfait grâce à nos experts et nos modèles adaptés à tous les secteurs."
+    },
+    {
+      "title": "Free AI Resume Builder - Resume.AI",
+      "url": "https://resume.ai/",
+      "snippet": "Build winning resumes with AI-powered suggestions and ATS-ready templates. Get instant feedback, expert tips, and land more interviews. Start free today."
+    },
+    {
+      "title": "AI Resume Builder — Free & Tailored | Resumly",
+      "url": "https://www.resumly.ai/ai-resume-builder",
+      "snippet": "Build a tailored, job-ready resume in minutes with our free AI resume builder. Generate and optimize resume content for any job description in seconds."
+    },
+    {
+      "title": "The #1 AI Resume Builder - Forbes&#x27; Top Pick. Trusted by 4.3M",
+      "url": "https://www.rezi.ai/",
+      "snippet": "Land More Interviews with the #1 AI Resume Builder. Rezi&#x27;s AI builds ATS-proof resumes that actually get callbacks. 4M+ job seekers trust it, Forbes ranks it #1. Free, done in minutes."
+    },
+    {
+      "title": "ResuMax: the AI job-search copilot for tech — jobs, resume tailoring ...",
+      "url": "https://resumax.ai/",
+      "snippet": "ResuMax is the AI job-search copilot for tech. It finds roles that fit you, tailors your resume to each one, writes cover letters, scores them against real recruiter standards, and preps you for interviews."
+    }
+  ]
+}

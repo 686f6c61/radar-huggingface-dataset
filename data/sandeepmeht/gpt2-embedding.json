@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SandeepMeht/gpt2-embedding",
+  "slug": "sandeepmeht-gpt2-embedding",
+  "author": "SandeepMeht",
+  "url": "https://huggingface.co/SandeepMeht/gpt2-embedding",
+  "created_at": "2026-08-25T22:03:38.000Z",
+  "updated_at": "2026-08-25T22:03:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "classification",
+    "clip",
+    "co-attention",
+    "cosine",
+    "grouped-query",
+    "groupnorm",
+    "lamb",
+    "xavier-uniform",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Illustrated GPT-2 (Visualizing Transformer Language Models)",
+      "url": "https://jalammar.github.io/illustrated-gpt2/",
+      "snippet": "The GPT2 was, however, a very large, transformer-based language model trained on a massive dataset. In this post, we&#x27;ll look at the architecture that enabled the model to produce its results. We will go into the depths of its self-attention layer. And then we&#x27;ll look at applications for the decoder-only transformer beyond language modeling."
+    },
+    {
+      "title": "New embedding models and API updates - OpenAI",
+      "url": "https://openai.com/index/new-embedding-models-and-api-updates/",
+      "snippet": "New embedding models with lower pricing We are introducing two new embedding models: a smaller and highly efficient text-embedding-3-small model, and a larger and more powerful text-embedding-3-large model. An embedding ⁠ is a sequence of numbers that represents the concepts within content such as natural language or code."
+    },
+    {
+      "title": "Transformer Architecture Explorer | Interactive GPT Model Visualization",
+      "url": "https://transformer.nexgencompany.ai/",
+      "snippet": "An interactive visualization of the GPT Transformer architecture, demonstrating attention mechanisms, token embeddings, and neural network layers in action."
+    },
+    {
+      "title": "LLM Visualization",
+      "url": "https://bbycroft.net/llm",
+      "snippet": "Each number in the sequence first gets turned into a 48 element vector (a size chosen for this particular model). This is called an embedding. The embedding is then passed through the model, going through a series of layers, called transformers, before reaching the bottom. So what&#x27;s the output? A prediction of the next token in the sequence."
+    },
+    {
+      "title": "How to calculate word and sentence embedding using GPT-2?",
+      "url": "https://discuss.huggingface.co/t/how-to-calculate-word-and-sentence-embedding-using-gpt-2/67798",
+      "snippet": "I&#x27;m working on a program that calculates word and sentence embeddings using GPT-2, specifically the GPT2Model class. For word embedding, I extract the last hidden state outputs [0] after forwarding the input_ids, that has a shape of batch size x seq len, to the GPT2Model class. As for sentence embedding, I extract the hidden state of the word at the end of sequence. This is the code I have ..."
+    }
+  ]
+}

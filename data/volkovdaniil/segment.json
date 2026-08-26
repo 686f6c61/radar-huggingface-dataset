@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "volkovdaniil/segment",
+  "slug": "volkovdaniil-segment",
+  "author": "volkovdaniil",
+  "url": "https://huggingface.co/volkovdaniil/segment",
+  "created_at": "2026-08-25T20:36:07.000Z",
+  "updated_at": "2026-08-25T20:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "empirical-focused",
+    "endnote",
+    "enthusiastic",
+    "first-person-plural",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "text-image-retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who is behind Ox Alpha? Internet is asking after AI stealth model ... - MSN",
+      "url": "https://www.msn.com/en-in/news/other/who-is-behind-ox-alpha-internet-is-asking-after-ai-stealth-model-spotted-on-openrouter-with-powerful-specs/ar-AA2aMPNX",
+      "snippet": "A mysterious new AI model is making the rounds on the internet and the fun part is, nobody seems to know who is behind it. Called Ox Alpha, the model appeared on a website called OpenRouter last ..."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/",
+      "snippet": "AI Computer Vision Research Segment Anything Model (SAM): a new AI model from Meta AI that can \"cut out\" any object, in any image, with a single click SAM is a promptable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training."
+    },
+    {
+      "title": "AI-Native Banking Is the First Real Post-Neobank Model",
+      "url": "https://www.finextra.com/blogposting/31358/ai-native-banking-is-the-first-real-post-neobank-model",
+      "snippet": "I believe this is the first real post-neobank model, because it changes the role of the bank itself from a distributor of products to an orchestrator of financial life."
+    },
+    {
+      "title": "Artificial Analysis Intelligence Index - AI Model Leaderboard ...",
+      "url": "https://www.datalearner.com/en/leaderboards/external/aa-quality-index",
+      "snippet": "AI Intelligence Index: compare 190+ models from OpenAI, Anthropic, Google, Meta and more across 10 benchmarks."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/demo",
+      "snippet": "Meta AI Computer Vision Research This is a research demo and may not be used for any commercial purpose Any images uploaded will be used solely to demonstrate the Segment Anything Model. All images and any data derived from them will be deleted at the end of the session. Any images uploaded should not violate any intellectual property rights or Facebook&#x27;s Community Standards."
+    }
+  ]
+}

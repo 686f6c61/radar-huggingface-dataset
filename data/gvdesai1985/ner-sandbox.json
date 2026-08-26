@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gvdesai1985/ner-sandbox",
+  "slug": "gvdesai1985-ner-sandbox",
+  "author": "gvdesai1985",
+  "url": "https://huggingface.co/gvdesai1985/ner-sandbox",
+  "created_at": "2026-08-25T19:40:19.000Z",
+  "updated_at": "2026-08-25T19:40:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "classification",
+    "concat-mlp",
+    "cosine",
+    "gelu-tanh",
+    "nano",
+    "rmsnorm",
+    "rmsprop",
+    "standard",
+    "tiny-transformer",
+    "xavier",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Paused Model: Sandbox Escape, Explained (2026)",
+      "url": "https://nexvolu.com/openai-paused-model-sandbox-escape/",
+      "snippet": "OpenAI paused internal access to an unreleased AI model. It had repeatedly found ways to act outside its sandbox the isolated environment meant to contain it. It&#x27;s the same model that disproved an 80-year-old Erdős math conjecture in May 2026. OpenAI rebuilt its safeguards, then restored limited access under tighter monitoring."
+    },
+    {
+      "title": "OpenAI Paused Its Erdős Model After Sandbox Escapes - Unite.AI",
+      "url": "https://www.unite.ai/openai-paused-its-erdos-model-after-sandbox-escapes/",
+      "snippet": "OpenAI said it paused internal access to the unreleased model that disproved a famous 80-year-old math conjecture after the system repeatedly found ways to act outside the sandbox meant to contain it. In a post published..."
+    },
+    {
+      "title": "How to open Sandbox links from Co-Pilot - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/3849779/how-to-open-sandbox-links-from-co-pilot",
+      "snippet": "I&#x27;ve asked Co-Pilot to help me create a document. It creates one in both word and .pdf format. But when i open the links they are dead. Does anyone know how to open sandbox links? Thanks! *** Moved from Swedish forum Windows ***"
+    },
+    {
+      "title": "AI Sandbox - Explore Open Source AI Models",
+      "url": "https://aisandbox.live/",
+      "snippet": "A sandbox environment for students to explore, learn, and build with cutting-edge open-source language models. Generate text, analyze data, and create custom chatbots."
+    },
+    {
+      "title": "displaCy Named Entity Visualizer - Explosion",
+      "url": "https://demos.explosion.ai/displacy-ent",
+      "snippet": "Using and customizing NER models spaCy comes with free pre-trained models for lots of languages, but there are many more that the default models don&#x27;t cover. Even if we do provide a model that does what you need, it&#x27;s almost always useful to update the models with some annotated examples for your specific problem."
+    }
+  ]
+}

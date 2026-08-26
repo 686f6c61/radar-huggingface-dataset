@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/detr-resnet-50",
+  "slug": "jonnyverse-detr-resnet-50",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/detr-resnet-50",
+  "created_at": "2026-08-25T23:29:50.000Z",
+  "updated_at": "2026-08-25T23:29:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "detr",
+    "object-detection",
+    "base_model:facebook/detr-resnet-50",
+    "base_model:quantized:facebook/detr-resnet-50",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 819230905,
+  "storage_human": "819 MB",
+  "base_model": "facebook/detr-resnet-50",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DETR-ResNet50 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/detr_resnet50",
+      "snippet": "DETR-ResNet50 Transformer based object detector with ResNet50 backbone. DETR is a machine learning model that can detect objects (trained on COCO dataset)."
+    },
+    {
+      "title": "JONNYVERSE/resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/JONNYVERSE/resnet-50",
+      "snippet": "Duplicated from Xenova/resnet-50 JONNYVERSE / resnet-50 like 0 Image Classification Transformers.js ONNX resnet Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qualcomm/DETR-ResNet50 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/DETR-ResNet50",
+      "snippet": "DETR-ResNet50: Optimized for Mobile Deployment Transformer based object detector with ResNet50 backbone DETR is a machine learning model that can detect objects (trained on COCO dataset). This model is an implementation of DETR-ResNet50 found here. This repository provides scripts to run DETR-ResNet50 on Qualcomm® devices. More details on model performance across various devices, can be found ..."
+    },
+    {
+      "title": "detr-resnet-50 - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/detr-resnet-50/",
+      "snippet": "DEtection TRansformer (DETR) model trained end-to-end on COCO 2017 object detection (118k annotated images)."
+    },
+    {
+      "title": "open_model_zoo/models/public/detr-resnet50/README.md at master ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/detr-resnet50/README.md",
+      "snippet": "The detr-resnet50 model is one from DEtection TRansformer (DETR) models family, which consider object detection as a direct set prediction problem. The model has ResNet50 backbone and pretrained on Common Objects in Context (COCO) dataset for solving object detection task. DETR predicts all objects at once, and is trained end-to-end with a set loss function which performs bipartite matching ..."
+    }
+  ]
+}

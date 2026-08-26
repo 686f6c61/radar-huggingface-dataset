@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sherif1313/3arabLM-4B-islamic-v2",
+  "slug": "sherif1313-3arablm-4b-islamic-v2",
+  "author": "sherif1313",
+  "url": "https://huggingface.co/sherif1313/3arabLM-4B-islamic-v2",
+  "created_at": "2026-08-25T11:14:36.000Z",
+  "updated_at": "2026-08-26T01:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "arabic",
+    "islamic",
+    "heritage",
+    "shamela",
+    "classical-arabic",
+    "fiqh",
+    "tafsir",
+    "hadith",
+    "aqeedah",
+    "nahw",
+    "text-generation",
+    "conversational",
+    "ar",
+    "base_model:sherif1313/3arabLM-4B-Fiqh-v1",
+    "base_model:finetune:sherif1313/3arabLM-4B-Fiqh-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547824,
+  "storage_human": "8.4 GB",
+  "base_model": "sherif1313/3arabLM-4B-Fiqh-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3arabLM 4B V1 - a Hugging Face Space by sherif1313",
+      "url": "https://huggingface.co/spaces/sherif1313/3arabLM-4B-v1",
+      "snippet": "Provide the name of a classical Arabic book, its author, a category and a question or passage you want expanded. The app uses a large language model to produce an Arabic response, with the length y..."
+    },
+    {
+      "title": "3arabLM/README.md at main · sherif1313/3arabLM · GitHub",
+      "url": "https://github.com/sherif1313/3arabLM/blob/main/README.md",
+      "snippet": "Base Model: Qwen3.5-4B (4.2B parameters, 32 layers, 2560 hidden dimension, 32 attention heads) Fine-tuned Model: Full fine-tuning (16-bit) on the Shamela corpus Checkpoint: After 2,500 steps of continued pretraining on Islamic texts (Fiqh, Tafsir, Hadith, Nahw) Data Sources: Shamela corpus split across four domains: Fiqh (general), Tafsir ..."
+    },
+    {
+      "title": "sherif1313 - GitHub",
+      "url": "https://github.com/sherif1313/",
+      "snippet": "sherif1313 has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "sherif1313 (hassan) - Hugging Face",
+      "url": "https://huggingface.co/sherif1313",
+      "snippet": "User profile of hassan on Hugging Face Image-Text-to-Text • 4B • Dec 30, 2025 • 125 • 1"
+    },
+    {
+      "title": "Request for Feedback and arXiv cs.CL Endorsement",
+      "url": "https://discuss.huggingface.co/t/request-for-feedback-and-arxiv-cs-cl-endorsement/178261/1",
+      "snippet": "Construction of a large-scale supervised instruction dataset from classical Arabic books. Continued pretraining and supervised fine-tuning of a 4B-parameter Arabic language model. Methods for improving factual consistency and reducing hallucinations in answers. Quantitative and qualitative evaluations on multiple Islamic disciplines, including Tafsir, Fiqh, Hadith, and Aqeedah."
+    }
+  ]
+}

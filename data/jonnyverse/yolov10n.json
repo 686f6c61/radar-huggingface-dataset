@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/yolov10n",
+  "slug": "jonnyverse-yolov10n",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/yolov10n",
+  "created_at": "2026-08-25T23:29:48.000Z",
+  "updated_at": "2026-08-25T23:29:48.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "yolov10",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28812690,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "EdgeAI-30/Project/RPi-YOLOv10 at main · Doulos/EdgeAI-30",
+      "url": "https://github.com/Doulos/EdgeAI-30/tree/main/Project/RPi-YOLOv10",
+      "snippet": "Jupyter notebook files for Edge AI 3.0. Contribute to Doulos/EdgeAI-30 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - THU-MIG/yolov10: YOLOv10: Real-Time End-to-End Object ...",
+      "url": "https://github.com/THU-MIG/yolov10",
+      "snippet": "YOLOE (ye) is a highly efficient, unified, and open object detection and segmentation model for real-time seeing anything, like human eye, under different prompt mechanisms, like texts, visual inputs, and prompt-free paradigm, with zero inference and transferring overhead compared with closed-set YOLOs."
+    },
+    {
+      "title": "YOLOv10n Model by Yunjai Lee - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/yunjai-lee/yolov10/yolov10n",
+      "snippet": "YOLOv10n model from the YOLOv10 project by Yunjai Lee. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLOv10: NMS-Free Object Detection | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolov10",
+      "snippet": "Discover YOLOv10 for real-time object detection, eliminating NMS and boosting efficiency. Achieve top performance with a low computational cost."
+    }
+  ]
+}

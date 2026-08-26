@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text",
+  "slug": "sawfwair-ltx-2-5-distilled-bf16-mlx-q4-text",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text",
+  "created_at": "2026-08-26T01:40:29.000Z",
+  "updated_at": "2026-08-26T01:54:44.000Z",
+  "license": "ltx-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "video-generation",
+    "image-to-video",
+    "ltx-video",
+    "gemma-4",
+    "4-bit",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53878497172,
+  "storage_human": "53.9 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2.5-Distilled-Q4_K_M.gguf · realrebelai/LTX-2.5_GGUFs at main",
+      "url": "https://huggingface.co/realrebelai/LTX-2.5_GGUFs/blob/main/LTX-2.5-Distilled-Q4_K_M.gguf",
+      "snippet": "realrebelai / LTX-2.5_GGUFs like 0 Text-to-Video GGUF LTX.io quantized comfyui ltxv image-to-video audio-video low-vram License:see-base-model Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LTX-2.5: Run the Open-Weights World Model on Runpod",
+      "url": "https://www.runpod.io/blog/ltx-2-5-the-open-weights-world-model-built-for-speed-and-how-to-run-it-on-runpod",
+      "snippet": "What LTX-2.5 actually is LTX-2.5 is a 22B-parameter open-weights audio-video \"world model\" that generates synchronized video and audio in a single pass, and LTX positions it as a foundation not just for film and short-form content but for real-time applications, simulation, and physical AI. Where large language models predict the next word, world models predict the next moment: they generate ..."
+    },
+    {
+      "title": "LTX-2.5: A Complete Guide to LTX&#x27;s Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "A: Yes. The full model checkpoint ltx-2.5-22b-dev-transformer-bf16.safetensors is designed for training and fine-tuning in bf16. A distilled LoRA (450 params) is also available. Transfer of fine-tunes may require a paid license depending on your organization&#x27;s revenue bracket. Q: What input formats does the model accept for image-to-video ..."
+    }
+  ]
+}

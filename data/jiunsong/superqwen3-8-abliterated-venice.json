@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Jiunsong/SuperQwen3.8-abliterated-Venice",
+  "slug": "jiunsong-superqwen3-8-abliterated-venice",
+  "author": "Jiunsong",
+  "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-abliterated-Venice",
+  "created_at": "2026-08-25T19:32:57.000Z",
+  "updated_at": "2026-08-25T19:38:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "qwen3.5",
+    "multimodal",
+    "reasoning",
+    "tool-calling",
+    "long-context",
+    "uncensored",
+    "abliterated",
+    "obliteratus",
+    "fp8",
+    "w8a8",
+    "compressed-tensors",
+    "vllm",
+    "h100",
+    "h200",
+    "speculative-decoding",
+    "conversational",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27360632560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 31248835877,
+  "storage_human": "31.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jiunsong/SuperQwen3.8-27b-abliterated-GGUF at main",
+      "url": "https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SuperQwen3.8-27b-abliterated API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Jiunsong/SuperQwen3.8-27b-abliterated",
+      "snippet": "Deploy SuperQwen3.8-27b-abliterated with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Jiunsong (Jun Song) - Hugging Face",
+      "url": "https://huggingface.co/Jiunsong",
+      "snippet": "AI & ML interests ... Recent Activity published a model 12 days ago ... updated a model 12 days ago"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Model Launch Native 30-second AI video generation from any input. 30% Off on Images, text, video, audio, documents, and web pages can all become creative references. Direct characters, scenes, camera, dialogue, and sound through one creative intent. Explore More"
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

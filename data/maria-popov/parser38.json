@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Maria-popov/parser38",
+  "slug": "maria-popov-parser38",
+  "author": "Maria-popov",
+  "url": "https://huggingface.co/Maria-popov/parser38",
+  "created_at": "2026-08-25T22:05:51.000Z",
+  "updated_at": "2026-08-25T22:05:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "co-attention",
+    "contrastive",
+    "efficientformer",
+    "gelu",
+    "instancenorm",
+    "linear-warmup",
+    "small",
+    "sparse",
+    "xavier",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civitaiarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    },
+    {
+      "title": "ParseBench — Document Parsing Benchmark for AI Agents",
+      "url": "https://www.parsebench.ai/",
+      "snippet": "The document parsing benchmark for AI agents The first benchmark that evaluates document parsing on what AI agents actually need — semantic correctness, not just text similarity."
+    }
+  ]
+}

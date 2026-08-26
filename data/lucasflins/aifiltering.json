@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lucasflins/AiFiltering",
+  "slug": "lucasflins-aifiltering",
+  "author": "lucasflins",
+  "url": "https://huggingface.co/lucasflins/AiFiltering",
+  "created_at": "2026-08-25T22:01:43.000Z",
+  "updated_at": "2026-08-25T22:02:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108923136,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435714880,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lucasflins (Lucas Lins) - Hugging Face",
+      "url": "https://huggingface.co/lucasflins",
+      "snippet": "models 1 lucasflins/rod_model_roberta_cls Sentence Similarity • Updated 5 days ago"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "GitHub - karadagynsemr/Satellite-Edge-AI-Filtering: Filtering sentinel ...",
+      "url": "https://github.com/karadagynsemr/Satellite-Edge-AI-Filtering",
+      "snippet": "Aktif model ONNX FP32 biçimine dönüştürülecek; ardından model boyutu, CPU gecikmesi ve doğruluk korunumu ölçülecek. INT8 yalnızca doğruluk kaybı kabul edilebilir seviyedeyse deployment adayı olacaktır."
+    },
+    {
+      "title": "AI Model Wiki — Your Complete Guide to AI Models",
+      "url": "https://aimodelwiki.com/",
+      "snippet": "Your Ultimate Guide to 210+ AI Models Explore LLMs, image generators, audio & video tools, and multimodal AI — for beginners, students, and businesses."
+    }
+  ]
+}

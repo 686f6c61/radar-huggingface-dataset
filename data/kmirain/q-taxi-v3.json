@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kmirain/q-Taxi-v3",
+  "slug": "kmirain-q-taxi-v3",
+  "author": "kmirain",
+  "url": "https://huggingface.co/kmirain/q-Taxi-v3",
+  "created_at": "2026-08-25T21:35:15.000Z",
+  "updated_at": "2026-08-25T21:35:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143538,
+  "storage_human": "143538 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Varun3003/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Varun3003/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 . Usage"
+    },
+    {
+      "title": "thaslimshaik/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "GitHub - yatheshl/Q-Learning-Taxi-v3: This project demonstrates the use ...",
+      "url": "https://github.com/yatheshl/Q-Learning-Taxi-v3",
+      "snippet": "The Taxi-v3 environment simulates a simple grid world where the agent (taxi) needs to pick up passengers from one location and drop them off at another while navigating obstacles on the grid. The agent learns to accomplish this task efficiently by employing Q-learning, a popular reinforcement learning algorithm."
+    },
+    {
+      "title": "Smart Taxi AI Reinforcement Learning Project with Q-Learning - LinkedIn",
+      "url": "https://www.linkedin.com/posts/henil-solanki-5a8149285_machinelearning-reinforcementlearning-qlearning-activity-7494808525328564225-lD8O",
+      "snippet": "🚕 Smart Taxi AI — Reinforcement Learning Project I&#x27;m excited to share one of my recent projects, Smart Taxi AI, an interactive web application built to demonstrate how a taxi agent can learn ..."
+    },
+    {
+      "title": "GitHub - ErfanPanahi/Taxi-v3-Q-Learning: Q-learning implementation in ...",
+      "url": "https://github.com/ErfanPanahi/Taxi-v3-Q-Learning",
+      "snippet": "The goal is to learn to choose the higher Q-value for each state which means choose the action with the best chance to get the maximum reward. To start learning, the Q-table is generally randomly initialized (or initialized to 0)."
+    }
+  ]
+}

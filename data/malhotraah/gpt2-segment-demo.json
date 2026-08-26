@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "malhotraah/gpt2-segment-demo",
+  "slug": "malhotraah-gpt2-segment-demo",
+  "author": "malhotraah",
+  "url": "https://huggingface.co/malhotraah/gpt2-segment-demo",
+  "created_at": "2026-08-25T21:35:45.000Z",
+  "updated_at": "2026-08-25T21:35:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "argumentative",
+    "bulleted",
+    "enthusiastic",
+    "highlight-bullet",
+    "latex-acl",
+    "multimodal-reasoning",
+    "numeric-bibtex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openlifescienceai/gpt2-demo · Hugging Face",
+      "url": "https://huggingface.co/openlifescienceai/gpt2-demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Illustrated GPT-2 (Visualizing Transformer Language Models)",
+      "url": "https://jalammar.github.io/illustrated-gpt2/",
+      "snippet": "The GPT2 was, however, a very large, transformer-based language model trained on a massive dataset. In this post, we&#x27;ll look at the architecture that enabled the model to produce its results. We will go into the depths of its self-attention layer. And then we&#x27;ll look at applications for the decoder-only transformer beyond language modeling."
+    },
+    {
+      "title": "Transformer Architecture Explorer | Interactive GPT Model Visualization",
+      "url": "https://transformer.nexgencompany.ai/",
+      "snippet": "An interactive visualization of the GPT Transformer architecture, demonstrating attention mechanisms, token embeddings, and neural network layers in action."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/demo",
+      "snippet": "Meta AI Computer Vision Research This is a research demo and may not be used for any commercial purpose Any images uploaded will be used solely to demonstrate the Segment Anything Model. All images and any data derived from them will be deleted at the end of the session. Any images uploaded should not violate any intellectual property rights or Facebook&#x27;s Community Standards."
+    },
+    {
+      "title": "OpenAI GPT2 — transformers 4.2.0 documentation - Hugging Face",
+      "url": "https://www.huggingface.co/transformers/v4.2.2/model_doc/gpt2.html",
+      "snippet": "Overview ¶ OpenAI GPT-2 model was proposed in Language Models are Unsupervised Multitask Learners by Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei and Ilya Sutskever. It&#x27;s a causal (unidirectional) transformer pretrained using language modeling on a very large corpus of ~40 GB of text data. The abstract from the paper is the following: GPT-2 is a large transformer-based ..."
+    }
+  ]
+}

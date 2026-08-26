@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lemonade-sdk/pii_policy_llm_classifier",
+  "slug": "lemonade-sdk-pii_policy_llm_classifier",
+  "author": "lemonade-sdk",
+  "url": "https://huggingface.co/lemonade-sdk/pii_policy_llm_classifier",
+  "created_at": "2026-08-25T19:49:34.000Z",
+  "updated_at": "2026-08-25T19:51:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lemonade",
+    "router-policy",
+    "pii",
+    "collection.router",
+    "llm-router",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lemonade-sdk · PyPI",
+      "url": "https://pypi.org/project/lemonade-sdk/",
+      "snippet": "Lemonade supports GGUF, FLM, and ONNX models across CPU, GPU, and NPU (see supported configurations). Use lemonade-server pull or the built-in Model Manager to download models."
+    },
+    {
+      "title": "Router Policies (collection.router) | lemonade-sdk/lemonade | DeepWiki",
+      "url": "https://deepwiki.com/lemonade-sdk/lemonade/5.7-router-policies-(collection.router)",
+      "snippet": "The collection.router system provides a programmable, model-agnostic routing layer within Lemonade. It allows developers to define policies that dynamically select the best inference model for a given request based on content, metadata, or LLM-driven classification."
+    },
+    {
+      "title": "Lemonade API - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/api/lemonade/",
+      "snippet": "Lemonade Server is a lightweight, open-source local LLM server that allows you to run and manage multiple AI applications on your local machine. It provides a simple CLI for managing applications and supports various LLMs, making it easy to deploy and use AI models locally."
+    },
+    {
+      "title": "lemonade-sdk · GitHub",
+      "url": "https://github.com/lemonade-sdk",
+      "snippet": "Lemonade Server is the flagship repo that ties everything together. llamacpp-rocm is our build system for llama.cpp ROCm that uses TheRock. marketplace is where you can submit apps for inclusion on the Lemonade app and website. lemonade-eval is a benchmarking and accuracy evaluation client for Lemonade Server."
+    },
+    {
+      "title": "Multi-Model Support - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/guide/configuration/multi-model/",
+      "snippet": "This is intentionally independent from both ModelType and the backend&#x27;s hardware slot policy: A router LLM remains an LLM; it is not reclassified as a classification model. Standard pools continue to use max_loaded_models per ModelType. Routing-helper capacity is keyed by the distinct helper model rather than by ModelType."
+    }
+  ]
+}

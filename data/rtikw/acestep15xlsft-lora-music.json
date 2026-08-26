@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rtikw/acestep15xlsft-lora-music",
+  "slug": "rtikw-acestep15xlsft-lora-music",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/acestep15xlsft-lora-music",
+  "created_at": "2026-08-25T19:50:15.000Z",
+  "updated_at": "2026-08-25T20:00:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "audio-generation",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79691776,
+  "parameters_human": "79.7M",
+  "storage_bytes": 397069212,
+  "storage_human": "397 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "A Step Towards Music Generation Foundation Model - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "ACE-Step 1.5: Open‑Source Music Model Outperforms Commercial",
+      "url": "https://aibit.im/en/article/ace-step-1-5-open-source-music-model-outperforms-commercial",
+      "snippet": "ACE‑Step 1.5 is a breakthrough in local music generation, delivering commercial‑grade quality on consumer GPUs and even CPU in a fraction of the time of many paid alternatives. This article walks you through the project&#x27;s architecture, how to get it up and running on Windows or Linux, run it via Gradio or a REST API, and customize it with LoRA training. Whether you&#x27;re a developer ..."
+    },
+    {
+      "title": "woctordho/ACE-Step-v1-LoRA-collection · Hugging Face",
+      "url": "https://huggingface.co/woctordho/ACE-Step-v1-LoRA-collection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · woctordho/ACE-Step-v1-LoRA-collection at main",
+      "url": "https://huggingface.co/woctordho/ACE-Step-v1-LoRA-collection/blob/main/README.md",
+      "snippet": "To load the LoRA in ComfyUI, ace_step_lora_workflow.json is an example workflow. The ogg files in assets show the effects of the LoRAs. Each ogg file also contains a workflow. Don&#x27;t expect too high, as the base model is only at the Stable Diffusion 1.0 level. But the LoRAs indeed learned some important aspects of those musicians."
+    }
+  ]
+}

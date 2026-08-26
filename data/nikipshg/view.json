@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NikiPshg/view",
+  "slug": "nikipshg-view",
+  "author": "NikiPshg",
+  "url": "https://huggingface.co/NikiPshg/view",
+  "created_at": "2026-07-13T17:07:27.000Z",
+  "updated_at": "2026-08-25T23:41:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240154448,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NikiPshg/view · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/NikiPshg/view",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NikiPshg/view · Hugging Face",
+      "url": "https://huggingface.co/NikiPshg/view",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NikiPshg · GitHub",
+      "url": "https://github.com/NikiPshg",
+      "snippet": "NikiPshg has 21 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - google-ai-edge/model-explorer: A modern model graph visualizer ...",
+      "url": "https://github.com/google-ai-edge/model-explorer",
+      "snippet": "A modern model graph visualizer and debugger. Contribute to google-ai-edge/model-explorer development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "michaelwmw05/vit-qa",
+  "slug": "michaelwmw05-vit-qa",
+  "author": "michaelwmw05",
+  "url": "https://huggingface.co/michaelwmw05/vit-qa",
+  "created_at": "2026-08-25T21:53:05.000Z",
+  "updated_at": "2026-08-25T21:53:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co-attention",
+    "giant",
+    "groupnorm",
+    "lamb",
+    "linear",
+    "mae",
+    "matching",
+    "onecycle",
+    "swish",
+    "xavier",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Question Aware Vision Transformer for Multimodal Reasoning",
+      "url": "https://arxiv.org/abs/2402.05472",
+      "snippet": "To address this, we introduce QA-ViT, a Question Aware Vision Transformer approach for multimodal reasoning, which embeds question awareness directly within the vision encoder. This integration results in dynamic visual features focusing on relevant image aspects to the posed question."
+    },
+    {
+      "title": "GitHub - amazon-science/QA-ViT",
+      "url": "https://github.com/amazon-science/QA-ViT",
+      "snippet": "Contribute to amazon-science/QA-ViT development by creating an account on GitHub."
+    },
+    {
+      "title": "QA-ViT: Query-Aware Vision Transformer - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/question-aware-vision-transformer-qa-vit",
+      "snippet": "QA-ViT is a vision transformer that conditions visual features on query context by integrating question embeddings directly into its upper layers. The method injects question tokens via per-layer MLPs and gated residual projections, resulting in dynamic feature extraction with measurable performance boosts. Empirical results show consistent improvements across VQA, captioning, and scene-text ..."
+    },
+    {
+      "title": "Question Aware Vision Transformer",
+      "url": "https://www.scribd.com/document/709409365/Question-Aware-Vision-Transformer-for-Multimodal-Reasoning",
+      "snippet": "This document introduces QA-ViT, a Question Aware Vision Transformer approach for multimodal reasoning. QA-ViT embeds question awareness directly within the vision encoder. This allows the vision encoder to focus on relevant image aspects based on the posed question, resulting in more accurate predictions. The researchers demonstrate that incorporating QA-ViT into various multimodal ..."
+    },
+    {
+      "title": "Question Aware Vision Transformer",
+      "url": "https://www.emergentmind.com/papers/2402.05472",
+      "snippet": "The paper introduces QA-ViT, a model-agnostic technique that integrates question awareness into the vision encoder for improved multimodal reasoning. It dynamically aligns visual features with textual queries using a gating mechanism in self-attention layers, leading to consistent performance boosts on VQA and scene-text tasks. Empirical tests across benchmark datasets validate QA-ViT&#x27;s ..."
+    }
+  ]
+}

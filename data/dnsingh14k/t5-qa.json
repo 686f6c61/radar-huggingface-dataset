@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dnsingh14k/t5-qa",
+  "slug": "dnsingh14k-t5-qa",
+  "author": "dnsingh14k",
+  "url": "https://huggingface.co/dnsingh14k/t5-qa",
+  "created_at": "2026-08-25T22:40:11.000Z",
+  "updated_at": "2026-08-25T22:40:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "measured",
+    "medium-balanced",
+    "mixed-active-passive",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "ocr-freeform",
+    "typst",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AventIQ-AI/t5-qa-chatbot · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/t5-qa-chatbot",
+      "snippet": "T5-Base Fine-Tuned Model for Question Answering This repository hosts a fine-tuned version of the T5-Base model optimized for question-answering tasks using the [SQuAD] dataset. The model is designed to efficiently perform question answering while maintaining high accuracy."
+    },
+    {
+      "title": "AventIQ-AI/t5-stockmarket-qa-chatbot · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/t5-stockmarket-qa-chatbot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nanluan1/test-dinesh-t5-qa — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/nanluan1/test-dinesh-t5-qa/",
+      "snippet": "nanluan1/test-dinesh-t5-qa This repository hosts a T5 (Text-to-Text Transfer Transformer) model specifically configured for Question Answering tasks. It is designed to run efficiently on the Modelers.cn platform, leveraging the Huawei/Ascend hardware ecosystem."
+    },
+    {
+      "title": "GitHub - ESgarbi/t5-qa-builder: This repository hosts a fine-tuned ...",
+      "url": "https://github.com/ESgarbi/t5-qa-builder",
+      "snippet": "T5-qa-builder: QA Pair Generation This is a fine-tuned version of the google/flan-t5-base model, aimed at generating question-answer pairs from input text. The model is trained on various question-answering datasets including SQuAD, QuAC, Natural Questions, and a custom Q/A dataset."
+    },
+    {
+      "title": "GitHub - terru3/t5-qa: Finetuning T5 for question answering",
+      "url": "https://github.com/terru3/t5-qa",
+      "snippet": "This repository contains a T5 (Text-to-Text Transfer Transformer) model fine-tuned on SQuAD v1.1 for extractive/span-based question answering."
+    }
+  ]
+}

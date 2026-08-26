@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Mubee81/Qwen2.5-VL-3B-Instruct-road_aug",
+  "slug": "mubee81-qwen2-5-vl-3b-instruct-road_aug",
+  "author": "Mubee81",
+  "url": "https://huggingface.co/Mubee81/Qwen2.5-VL-3B-Instruct-road_aug",
+  "created_at": "2026-08-25T19:24:28.000Z",
+  "updated_at": "2026-08-25T19:24:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176995540,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-VL-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-VL-3B-Instruct · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "unsloth/Qwen2.5-VL-3B-Instruct-unsloth-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-VL-3B-Instruct-unsloth-bnb-4bit",
+      "snippet": "Instructions to use unsloth/Qwen2.5-VL-3B-Instruct-unsloth-bnb-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5-VL-3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "Qwen2.5-VL-3B-Instruct Introduction In the past five months since Qwen2-VL&#x27;s release, numerous developers have built new models on the Qwen2-VL vision-language models, providing us with valuable feedback. During this period, we focused on building more useful vision-language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5-VL. Key Enhancements ..."
+    },
+    {
+      "title": "Qwen2.5-VL-3B-Instruct download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/qwen2-5-vl-3b-instruct/",
+      "snippet": "Qwen2.5-VL-3B-Instruct is a 3.75 billion parameter multimodal model by Qwen, designed to handle complex vision-language tasks in both image and video formats. As part of the Qwen2.5 series, it supports image-text-to-text generation with capabilities like chart reading, object localization, and structured data extraction."
+    }
+  ]
+}

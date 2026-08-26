@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "davidandroid/lattice-multiplication-transformer",
+  "slug": "davidandroid-lattice-multiplication-transformer",
+  "author": "davidandroid",
+  "url": "https://huggingface.co/davidandroid/lattice-multiplication-transformer",
+  "created_at": "2026-08-25T19:17:19.000Z",
+  "updated_at": "2026-08-25T19:43:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142701835,
+  "storage_human": "143 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "It&#x27;s Not Andromeda: Inside Meta&#x27;s AI Ad Stack And Why Nothing is ...",
+      "url": "https://www.triplewhale.com/blog/meta-ads-ai-system",
+      "snippet": "Meta didn&#x27;t \"break\" your ads. It rebuilt the system. Today&#x27;s performance is driven by four interconnected AI systems — GEM, Lattice, Andromeda, and UTIS — working together. | Apr 13, 2026"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "[2605.08605] Lattice Deduction Transformers - arXiv.org",
+      "url": "https://arxiv.org/abs/2605.08605",
+      "snippet": "We introduce the Lattice Deduction Transformer (LDT), a recurrent transformer that approximates logically sound deduction by projecting its latent state through a lattice between forward passes. We train on-policy in a process that mirrors deduction in a search-based constraint solver and supervise training via a domain-agnostic, abstract-interpretation-based approximation of the set of ..."
+    }
+  ]
+}

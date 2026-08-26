@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Krasovskiy/anchor-pairs",
+  "slug": "krasovskiy-anchor-pairs",
+  "author": "Krasovskiy",
+  "url": "https://huggingface.co/Krasovskiy/anchor-pairs",
+  "created_at": "2026-08-25T20:07:49.000Z",
+  "updated_at": "2026-08-25T20:54:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "seo",
+    "keyword-clustering",
+    "search-intent",
+    "text-ranking",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278044417,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129300270,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krasovskiy (Andrey Krasovskiy) - Hugging Face",
+      "url": "https://huggingface.co/Krasovskiy",
+      "snippet": "AI Automation Engineer & Tech Lead"
+    },
+    {
+      "title": "Anchor Pair Selection in TDOA Positioning Systems by Door Transition ...",
+      "url": "https://arxiv.org/pdf/2404.15330",
+      "snippet": "The following paper presents an anchor pairs selection method for Time Difference of Arrival (TDOA) positioning in UWB-based systems. The most favorable pairs for location in different zones of the system deployment area are established during a calibration routine by minimizing the positioning er-rors around doorways, where the user&#x27;s ..."
+    },
+    {
+      "title": "Anchors in the Machine: Behavioral and Attributional Evidence of ...",
+      "url": "https://arxiv.org/pdf/2511.05766",
+      "snippet": "On the attributional side, I introduce a Shapley-value framework over structured prompt fields to quantify how much the anchor contributes to the model&#x27;s log-probability of candidate answers, as seen in Figure 1 for GPT-2."
+    },
+    {
+      "title": "Anchors: High-Precision Model-Agnostic Explanations - AAAI",
+      "url": "https://aaai.org/papers/11491-anchors-high-precision-model-agnostic-explanations/",
+      "snippet": "Abstract: We introduce a novel model-agnostic system that explains the behavior of complex models with high-precision rules called anchors, representing local, \"sufficient\" conditions for predictions. We propose an algorithm to efficiently compute these explanations for any black-box model with high-probability guarantees. We demonstrate the flexibility of anchors by explaining a myriad of ..."
+    },
+    {
+      "title": "AI Regulation Push: Amodei Demands Power Blocking Unsafe Models ...",
+      "url": "https://www.techtimes.com/articles/318217/20260611/ai-regulation-push-amodei-demands-power-blocking-unsafe-models-anthropic-pledges-350-million.htm",
+      "snippet": "AI Regulation Push: Amodei Demands Power Blocking Unsafe Models, Anthropic Pledges $350 Million Twin frameworks pair FAA-style model testing with a $200 million economics fund and $150 million ..."
+    }
+  ]
+}

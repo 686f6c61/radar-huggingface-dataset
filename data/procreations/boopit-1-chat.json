@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ProCreations/boopit-1-chat",
+  "slug": "procreations-boopit-1-chat",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/boopit-1-chat",
+  "created_at": "2026-08-25T21:02:40.000Z",
+  "updated_at": "2026-08-26T01:20:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "bitnet",
+    "ternary",
+    "conversational",
+    "boopit",
+    "text-generation",
+    "en",
+    "dataset:mookiezi/Discord-Dialogues",
+    "dataset:openbmb/Ultra-FineWeb-L1",
+    "base_model:ProCreations/boopit-1",
+    "base_model:finetune:ProCreations/boopit-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5470403,
+  "storage_human": "5 MB",
+  "base_model": "ProCreations/boopit-1",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@ProCreations on Hugging Face: \"I kind of forgot to post that I made my ...",
+      "url": "https://huggingface.co/posts/ProCreations/210176695032462",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HuggingChat - Chat with AI models",
+      "url": "https://huggingface.co/chat/",
+      "snippet": "Welcome to HuggingChat, the chat app powered by open source AI models. Omni automatically picks the best AI model to give you optimal answers depending on your requests. You can also choose from any available open source models to chat with directly."
+    },
+    {
+      "title": "ChatX - ChatGPT, Gemini, Claude, DeepSeek, Grok",
+      "url": "https://chatx.ai/",
+      "snippet": "Chat for free with AI models from ChatGPT, Gemini, Claude, DeepSeek and Grok in English. No registration, anonymous."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

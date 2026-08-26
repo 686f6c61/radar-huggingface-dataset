@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kkumardeepak8/embedding",
+  "slug": "kkumardeepak8-embedding",
+  "author": "kkumardeepak8",
+  "url": "https://huggingface.co/kkumardeepak8/embedding",
+  "created_at": "2026-08-25T23:49:13.000Z",
+  "updated_at": "2026-08-25T23:49:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co-attention",
+    "constant-warmup",
+    "deit",
+    "generation",
+    "grouped-query",
+    "instancenorm",
+    "novograd",
+    "orthogonal",
+    "swish",
+    "tiny",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=embedding",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Understanding generative AI content with embedding models",
+      "url": "https://arxiv.org/pdf/2408.10437v3",
+      "snippet": "for deepfake detection without additional training. Using linear model theory to explore the geometry of vectorized samples produced by these pling techniques used to curate a dataset play a cri role in determining the resulting embedding vectors. In particular, datasets sampled from diferent ften embed into separable su"
+    },
+    {
+      "title": "What are embedding models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/what-are-embedding-models/",
+      "snippet": "Embedding models are the type of machine learning model designed to represent data in a continuous, low dimensional vector space called embedding. Embedding are numerical representation of a piece of information for like text, documents, images, audio etc. which captures the semantic meaning of what is being embedded which makes it robust for many industry applications. Embedding Here, each ..."
+    },
+    {
+      "title": "Understanding generative AI content with embedding models",
+      "url": "https://arxiv.org/html/2408.10437v3",
+      "snippet": "Additionally, the embedded vector representations can give powerful insights to interpret the patterns and biases within the observed data. When applied to AI-generated data, these insights can be used for model selection or prompt tuning through comparative analysis of FE vectorizations."
+    },
+    {
+      "title": "10 Best Embedding Models 2026: Complete Comparison Guide",
+      "url": "https://www.openxcell.com/blog/best-embedding-models",
+      "snippet": "A practical guide to the best embedding models in 2026. Compare features, performance, and use cases for building scalable AI systems."
+    }
+  ]
+}

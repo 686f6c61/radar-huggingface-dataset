@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/swin2SR-lightweight-x2-64",
+  "slug": "jonnyverse-swin2sr-lightweight-x2-64",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/swin2SR-lightweight-x2-64",
+  "created_at": "2026-08-25T23:29:39.000Z",
+  "updated_at": "2026-08-25T23:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin2sr",
+    "image-to-image",
+    "base_model:caidas/swin2SR-lightweight-x2-64",
+    "base_model:quantized:caidas/swin2SR-lightweight-x2-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43552986,
+  "storage_human": "44 MB",
+  "base_model": "caidas/swin2SR-lightweight-x2-64",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caidas/swin2SR-lightweight-x2-64 · Hugging Face",
+      "url": "https://huggingface.co/caidas/swin2SR-lightweight-x2-64",
+      "snippet": "Swin2SR model (image super-resolution) Swin2SR model that upscales images x2. It was introduced in the paper Swin2SR: SwinV2 Transformer for Compressed Image Super-Resolution and Restoration by Conde et al. and first released in this repository. Intended use cases This model is intended for lightweight image super resolution. Usage Refer to the documentation."
+    },
+    {
+      "title": "GitHub - mv-lab/swin2sr: [ECCV] Swin2SR: SwinV2 Transformer for ...",
+      "url": "https://github.com/mv-lab/swin2sr",
+      "snippet": "This is the official repository and PyTorch implementation of Swin2SR. We provide the supplementary material, code, pretrained models and demos. Swin2SR represents a possible improvement of the famous SwinIR by Jingyun Liang (kudos for such an amazing contribution ). Our model achieves state-of-the-art performance in: classical, lighweight and real-world image super-resolution (SR) color JPEG ..."
+    },
+    {
+      "title": "Xenova/swin2SR-lightweight-x2-64 · Hugging Face",
+      "url": "https://huggingface.co/Xenova/swin2SR-lightweight-x2-64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Swin2SR Lightweight 2x ONNX download — 8.08 MB | WKO AI",
+      "url": "https://webkitonline.com/downloads/swin2sr-lightweight-x2/",
+      "snippet": "Download Swin2SR Lightweight 2x as a verified fp32 ONNX file. 2x upscaling, Apache-2.0, exact SHA-256, and a free in-browser demo."
+    },
+    {
+      "title": "Swin2SR-lightweight-x2-64 Open-source Image Model - Free Deployment to ...",
+      "url": "https://model.aibase.com/en/models/details/1915694499352961025",
+      "snippet": "This model is based on the caidas/swin2SR-lightweight-x2-64 base model and uses the transformers.js library. It provides ONNX weights to be compatible with Transformers.js."
+    }
+  ]
+}

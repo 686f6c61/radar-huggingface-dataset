@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dx8152/Flux2-Klein-9B-Consistency",
+  "slug": "dx8152-flux2-klein-9b-consistency",
+  "author": "dx8152",
+  "url": "https://huggingface.co/dx8152/Flux2-Klein-9B-Consistency",
+  "created_at": "2026-03-05T16:04:16.000Z",
+  "updated_at": "2026-04-19T02:39:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-9B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 468,
+  "downloads_30d": 47448,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 662759208,
+  "storage_human": "663 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dx8152/Flux2-Klein-9B-Consistency · Hugging Face",
+      "url": "https://huggingface.co/dx8152/Flux2-Klein-9B-Consistency",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fwwrsd/dx8152-flux2-klein-9b-consistency · Hugging Face",
+      "url": "https://huggingface.co/fwwrsd/dx8152-flux2-klein-9b-consistency",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux2-Klein-9B-Consistency: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flux2-klein-9b-consistency-dx8152",
+      "snippet": "Overview Flux2-Klein-9B-Consistency is a fine-tuned variant of the FLUX.2-klein-9B text-to-image model built by dx8152. The model generates images from text prompts and operates as an image-to-image diffusion model compatible with the diffusers library. The primary distinction from the base FLUX.2-klein-9B is improved consistency behavior without requiring cue words, achieved through ..."
+    },
+    {
+      "title": "Flux2-Klein-9B-Consistency · Models",
+      "url": "https://www.modelscope.cn/models/dx8152/Flux2-Klein-9B-Consistency",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "dx8152-flux2-klein-9b-consistency/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/dx8152-flux2-klein-9b-consistency/blob/main/README.md",
+      "snippet": "dx8152/Flux2-Klein-9B-Consistency - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    }
+  ]
+}

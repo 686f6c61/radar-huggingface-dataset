@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64",
+  "slug": "eigenlabs-qwen3-5-35b-a3b-mlx-vl-4bit-g64",
+  "author": "EigenLabs",
+  "url": "https://huggingface.co/EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64",
+  "created_at": "2026-08-25T22:30:48.000Z",
+  "updated_at": "2026-08-25T22:31:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "qwen3.5",
+    "vision-language",
+    "mixture-of-experts",
+    "4-bit",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5995254448,
+  "parameters_human": "6.00B",
+  "storage_bytes": 20886799783,
+  "storage_human": "20.9 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8 - Hugging Face",
+      "url": "https://huggingface.co/EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8 at main",
+      "url": "https://huggingface.co/EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8/tree/main",
+      "snippet": "Instructions to use EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.5 MLX on Apple Silicon (2026): 35B-A3B in 19.5GB, 9B at 25-35 ...",
+      "url": "https://willitrunai.com/blog/qwen-3-5-mlx-apple-silicon-guide",
+      "snippet": "Qwen 3.5 35B-A3B MLX 4-bit uses ~19.5GB; 9B fits 16GB Macs at 25-35 tok/s. Full MLX memory + tok/s per variant, M4 16GB to M3 Ultra 512GB."
+    },
+    {
+      "title": "Qwen 3.5 Deep Dive: 35B-A3B, 27B, 122B-A10B, 397B-A17B — Local AI Guide ...",
+      "url": "https://localclaw.io/blog/qwen35-deep-dive",
+      "snippet": "The result is a useful compute tradeoff: Qwen3.5-35B-A3B routes only part of the network for each token. That can reduce generation compute, but it does not turn the model into a 3B download: the full quantized expert weights still consume memory and bandwidth. The Qwen 3.5 Flagship Lineup These four larger checkpoints sit alongside the later compact 0.8B, 2B, 4B and 9B releases described in ..."
+    },
+    {
+      "title": "mlx-community/Qwen3.5-35B-A3B-4bit - Models",
+      "url": "https://www.modelscope.cn/models/mlx-community/Qwen3.5-35B-A3B-4bit",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

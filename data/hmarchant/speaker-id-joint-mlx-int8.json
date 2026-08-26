@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hmarchant/speaker-id-joint-mlx-int8",
+  "slug": "hmarchant-speaker-id-joint-mlx-int8",
+  "author": "hmarchant",
+  "url": "https://huggingface.co/hmarchant/speaker-id-joint-mlx-int8",
+  "created_at": "2026-08-25T22:40:57.000Z",
+  "updated_at": "2026-08-25T23:13:58.000Z",
+  "license": "adobe-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "joint",
+    "speaker-identification",
+    "quantization",
+    "int8",
+    "mlx",
+    "roberta",
+    "mediasum",
+    "arxiv:2407.12094",
+    "base_model:FacebookAI/roberta-large",
+    "base_model:finetune:FacebookAI/roberta-large",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587653909,
+  "storage_human": "588 MB",
+  "base_model": "FacebookAI/roberta-large",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aufklarer/VoiceChat-11B-Perception-MLX-int8 · Hugging Face",
+      "url": "https://huggingface.co/aufklarer/VoiceChat-11B-Perception-MLX-int8",
+      "snippet": "Instructions to use aufklarer/VoiceChat-11B-Perception-MLX-int8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=speaker-identification",
+      "snippet": "1 Edit filters Sort: Most Downloads Active filters: speaker-identification Clear all"
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Examples - standalone examples in the MLX framework including image generation, speech and music generation, language model training and many more. MLX Swift Examples - examples in MLX Swift including LLM and VLM text generation, low-rank fine-tuning, and image generation with SDXL. Check out the growing community."
+    },
+    {
+      "title": "Speaker Encoder | hamptus/mlx-swift-qwen3-tts | DeepWiki",
+      "url": "https://deepwiki.com/hamptus/mlx-swift-qwen3-tts/4.1-speaker-encoder",
+      "snippet": "The Speaker Encoder weights often come from frameworks (like PyTorch) where Conv1d weights are stored as [out_channels, in_channels, kernel_width]. MLX uses a different convention."
+    },
+    {
+      "title": "GitHub - appautomaton/mlx-speech: Pure-MLX speech synthesis, voice ...",
+      "url": "https://github.com/appautomaton/mlx-speech",
+      "snippet": "Note: The mlx-speech CLI covers the common generation, voice cloning, editing, waveform streaming, and transcription paths. For advanced controls (sampling temperature, top-p/k, diffusion steps, batch JSONL, duration tuning, etc.) use the family-specific scripts in scripts/ where provided. Each model guide in docs/ names its canonical advanced entry point and supported controls."
+    }
+  ]
+}

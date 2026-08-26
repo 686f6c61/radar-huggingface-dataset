@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/rose-opd-implementation",
+  "slug": "seanwang0027-rose-opd-implementation",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/rose-opd-implementation",
+  "created_at": "2026-08-25T19:53:15.000Z",
+  "updated_at": "2026-08-25T19:54:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "distillation",
+    "on-policy-distillation",
+    "rose",
+    "opd",
+    "verl",
+    "trinity",
+    "agentgym",
+    "rlve",
+    "sciworld",
+    "dapo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 716022,
+  "storage_human": "716022 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "official-rose-qwen3-1.7b-from-4b-thinking - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/official-rose-qwen3-1.7b-from-4b-thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SeanWang0027/Multi-Turn at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/SeanWang0027/Multi-Turn/tree/main",
+      "snippet": "Datasets: SeanWang0027 / Multi-Turn like 0 Modalities: Image Text Formats: json Size: < 1K ArXiv: arxiv:2604.24005 Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community main Multi-Turn 1 contributor History:2 commits SeanWang0027 Multi-Turn OPD/ROSE: full worktree snapshot (git-tracked + uncommitted rose work) b0aac65 verifiedabout 4 hours ago ..."
+    },
+    {
+      "title": "L26/O-134 ROSE, an artificial intelligence (AI) supported workflow ...",
+      "url": "https://academic.oup.com/humrep/article/41/Supplement_1/deag083.134/8727612",
+      "snippet": "L26/O-134 ROSE, an artificial intelligence (AI) supported workflow system for optimizing donor oocyte management, reduces chances of complete blastulation failure compared with random lot assignment"
+    },
+    {
+      "title": "Rose",
+      "url": "https://rose.ai/",
+      "snippet": "Rose AI transforms complex data into clear insights and visualizations for your toughest questions."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

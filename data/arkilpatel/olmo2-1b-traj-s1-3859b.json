@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "arkilpatel/olmo2-1b-traj-s1-3859b",
+  "slug": "arkilpatel-olmo2-1b-traj-s1-3859b",
+  "author": "arkilpatel",
+  "url": "https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3859b",
+  "created_at": "2026-08-25T23:53:55.000Z",
+  "updated_at": "2026-08-26T00:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127703731632,
+  "storage_human": "127.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il1b - ACROBiosystems - Recombinant proteins buy now",
+      "url": "https://duckduckgo.com/y.js?ad_domain=acrobiosystems.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=NRWGKpNtovV3b4Gqt%2DtKQrAOEqqGyaovSGg9rf1TnO9q2X73%2DA4cIXvZxZnmPzqu67wvo%2DM7mWnikgRl8jVI02TzkVmSZHD33TCTHcfmma2OXiO5moffaR8jBtV7AdrcVZKj243Tu9Q0aCWf11_V3ETuI40pXFD_4fEjDK2DiNY.L0VJ8OzaKpdHrOfCU0sSBA&rut=eef5848d3c538d4b2e9b8defd11c7deb0861efb0b018d99e358131e7a05ddb44&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ahBZf60h2x5FxJyoPBC%2DkTVUCUw%2DSRvvS8R7XUnhZwCK%2Dg4hZiP8KpTRoKKXnRN8V33xW%2DYhrpqgNdafxOtAsK20uK3r8hjj_%2DlSgxj2YQ241T_ocAi%2DmGoTexp5_YRUEvlekKQwAD1XmcWNg3EJuctwP_Y3hJr2BGrY820EkPZUw5cIDtcWFPyETRSscLcrJLx%2DbOzwfNC0kbCkXqUFQ%2DPVEeI%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYWNyb2Jpb3N5c3RlbXMuY29tJTJmcHJvZHVjdHMlMmZwcm90ZWluJTJmaWwtMS1iZXRhLWh1bWFuLWlsYi1oNDExMCUzZm1zY2xraWQlM2Q0NTk1Mjg0ZmQ1N2QxZDhhZTRhNzQyYzFlMmE5MjFkNiUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFBMLi1DWVRPSyUyNTIwQ1VMVFVSRS4tJTI1NUJFVVAlMjU1RC4tQUktQmluZyUyNnV0bV90ZXJtJTNkaWwxYiUyNnV0bV9jb250ZW50JTNkSUwtMSUyNTIwYmV0YS4tJTI1NUJFTiUyNTVE%26rlid%3D4595284fd57d1d8ae4a742c1e2a921d6&vqd=4-15312620905345839889567267822102258134&iurl=%7B1%7DIG%3DCC36E446CE4840189B96FD425FA7BBAE%26CID%3D2DC2E15739B56AFC2273F69638C26B70%26ID%3DDevEx%2C5037.1",
+      "snippet": "Biotin-tagged, His/Fc/Avi-tagged. High purity.Suitable for immunization/cell culture. For immunization/screening/ELISA/SPR/BLI/cell culture. GMP-grade IL-1β Resilient Supply™."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "OLMo from Ai2 - allenai.org",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo is a family of fully open language models, enabling the discovery of new and innovative approaches to model pretraining."
+    },
+    {
+      "title": "allenai/OLMo-2-0425-1B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-0425-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

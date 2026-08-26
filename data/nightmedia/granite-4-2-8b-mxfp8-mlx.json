@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "nightmedia/granite-4.2-8b-mxfp8-mlx",
+  "slug": "nightmedia-granite-4-2-8b-mxfp8-mlx",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/granite-4.2-8b-mxfp8-mlx",
+  "created_at": "2026-08-25T19:18:34.000Z",
+  "updated_at": "2026-08-25T19:56:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:quantized:ibm-granite/granite-4.2-8b",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2472873984,
+  "parameters_human": "2.47B",
+  "storage_bytes": 9066725373,
+  "storage_human": "9.1 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nightmedia/granite-4.1-8b-mxfp8-mlx · Hugging Face",
+      "url": "https://huggingface.co/nightmedia/granite-4.1-8b-mxfp8-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "granite-4.1-8b-Abliterated-AND-Disinhibited-mxfp8-mlx",
+      "url": "https://huggingface.co/nightmedia/granite-4.1-8b-Abliterated-AND-Disinhibited-mxfp8-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "Granite 4.2 brings native reasoning to enterprise agents",
+      "url": "https://research.ibm.com/blog/introducing-granite-4-2",
+      "snippet": "In enterprise workflows, tasks can be ambiguous and involve many steps to complete. An AI model must be able to follow complex instructions, retrieve the correct information, choose the right tools, act in the right sequence, and verify the result. Reasoning helps Granite 4.2 navigate this process more reliably."
+    },
+    {
+      "title": "Granite 4.0 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite",
+      "snippet": "Granite 4.0 language models with a hybrid Mamba-2/transformer architecture and Mixture-of-Experts, delivering 70% lower memory use and 2× faster inference."
+    }
+  ]
+}

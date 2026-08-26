@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "amgadtewfik/atf",
+  "slug": "amgadtewfik-atf",
+  "author": "amgadtewfik",
+  "url": "https://huggingface.co/amgadtewfik/atf",
+  "created_at": "2026-08-26T01:33:08.000Z",
+  "updated_at": "2026-08-26T01:37:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "atf",
+    "gguf",
+    "apple-silicon",
+    "metal",
+    "quantized",
+    "local-inference",
+    "qwen",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21814111154,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - agronetlabs/ATF-AI: Infrastructure-agnostic trust and ...",
+      "url": "https://github.com/agronetlabs/atf-ai",
+      "snippet": "Purpose. ATF-AI is a universal, infrastructure-agnostic framework that answers the question: How do autonomous agents and governed machine actions prove they are authorized, traceable, and auditable regardless of the underlying infrastructure? Model. ATF-AI is a free and open protocol coordinated by AgroNet Labs LLC."
+    },
+    {
+      "title": "Agent Taskflow — Agent Execution Governance",
+      "url": "https://atf.ai/",
+      "snippet": "Run AI agents on any device — cloud, on-prem, or edge — with cryptographic identity, policy enforcement, and signed execution receipts. Any agent, any model, any framework."
+    },
+    {
+      "title": "All The Fallen",
+      "url": "https://www.allthefallen.org/",
+      "snippet": "Stay up to date with the latest service updates from All The Fallen Status."
+    },
+    {
+      "title": "Agentic Trust Framework | AI Agent Governance Standard",
+      "url": "https://agentictrustframework.ai/",
+      "snippet": "The Agentic Trust Framework is the open governance standard for autonomous AI agents. Five core elements, four maturity levels, Zero Trust applied to non-human identities. Published by the Cloud Security Alliance."
+    },
+    {
+      "title": "GitHub - massivescale-ai/agentic-trust-framework: An open specification ...",
+      "url": "https://github.com/massivescale-ai/agentic-trust-framework",
+      "snippet": "Overview The Agentic Trust Framework (ATF) is an open governance specification for autonomous AI agents, applying Zero Trust principles across five core security elements. Published through the Cloud Security Alliance and licensed under CC BY 4.0. ATF answers the question every organization deploying AI agents must face: How do we maintain control?"
+    }
+  ]
+}

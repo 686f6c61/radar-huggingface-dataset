@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark1.5",
+  "slug": "textilelabs-loom-spark1-5",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark1.5",
+  "created_at": "2026-08-25T21:57:53.000Z",
+  "updated_at": "2026-08-25T21:57:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "Textile Designer AI - AI-Powered Textile Design Platform",
+      "url": "https://www.textile-designer.ai/",
+      "snippet": "Textile Designer AI - AI-Powered Textile Platform & Workspace AI-powered textile platform with 21 professional tools for textile production. Streamline workflows for pattern creation, color automation, design extraction, and print-ready output. Built for textile manufacturers, fashion brands, and production teams worldwide."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "A Meta AI Model Hacked Another Company During Cybersecurity Testing",
+      "url": "https://www.theinformation.com/articles/meta-ai-model-hacked-another-company-cybersecurity-testing",
+      "snippet": "A Meta Platforms artificial intelligence model accessed the internet during cybersecurity testing and hacked into another company, according to people familiar with the matter, in the latest in a string of such incidents at major AI firms. Meta&#x27;s Muse Spark 1.1 model breached the systems of a ..."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

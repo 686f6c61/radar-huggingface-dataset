@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "saragon21/ocr-experiments",
+  "slug": "saragon21-ocr-experiments",
+  "author": "saragon21",
+  "url": "https://huggingface.co/saragon21/ocr-experiments",
+  "created_at": "2026-08-25T22:02:10.000Z",
+  "updated_at": "2026-08-25T22:02:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "generation",
+    "low-rank",
+    "nano",
+    "scalenorm",
+    "standard",
+    "step",
+    "swish",
+    "vit",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - rldotai/ocr-experiments: Experimenting with some neural OCR ...",
+      "url": "https://github.com/rldotai/ocr-experiments",
+      "snippet": "OCR Experiments My experiments with some neural Optical Character Recognition OCR models. At the moment, I&#x27;m really just referencing other people&#x27;s code, although eventually I&#x27;ll have some more details on my own extensions."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "OCR Arena",
+      "url": "https://www.ocrarena.ai/",
+      "snippet": "OCR Arena is a free playground for testing and evaluating leading foundation VLMs and open source OCR models side-by-side. Upload a document, measure accuracy, and vote for the best models on a public leaderboard."
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots.ocr: Multilingual Document Layout Parsing ...",
+      "url": "https://github.com/studio-dots-ai/dots.ocr",
+      "snippet": "The model weights are available on Hugging Face: dots.mocr and dots.mocr-svg. 2025.10.31 🚀 We release dots.ocr.base, foundation VLM focus on OCR tasks, also the base model of dots.ocr. Try it out! 2025.07.30 🚀 We release dots.ocr, — a multilingual documents parsing model based on 1.7b llm, with SOTA performance."
+    }
+  ]
+}

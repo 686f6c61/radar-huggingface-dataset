@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bossanchez/segment-sandbox",
+  "slug": "bossanchez-segment-sandbox",
+  "author": "bossanchez",
+  "url": "https://huggingface.co/bossanchez/segment-sandbox",
+  "created_at": "2026-08-26T02:18:34.000Z",
+  "updated_at": "2026-08-26T02:18:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "cross-modal-fusion",
+    "docx",
+    "empirical-focused",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "neutral",
+    "passive",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bossanchez (Jacob Sanchez) - Hugging Face",
+      "url": "https://huggingface.co/bossanchez",
+      "snippet": "probably coding right now"
+    },
+    {
+      "title": "Nvidia NemoClaw flaw let attackers poison the model behind a developer ...",
+      "url": "https://siliconangle.com/2026/08/25/nvidia-nemoclaw-flaw-let-attackers-poison-the-model-behind-a-developers-ai-agent/",
+      "snippet": "The sandbox does not help much, he said, because the blast radius of an AI system is its authorizations rather than its isolation."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/",
+      "snippet": "AI Computer Vision Research Segment Anything Model (SAM): a new AI model from Meta AI that can \"cut out\" any object, in any image, with a single click SAM is a promptable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/demo",
+      "snippet": "Meta AI Computer Vision Research This is a research demo and may not be used for any commercial purpose Any images uploaded will be used solely to demonstrate the Segment Anything Model. All images and any data derived from them will be deleted at the end of the session. Any images uploaded should not violate any intellectual property rights or Facebook&#x27;s Community Standards."
+    },
+    {
+      "title": "Meta SAM Model | [SAM 1, SAM 2, SAM 3 & SAM 3D]",
+      "url": "https://sam3ai.com/model/",
+      "snippet": "The Meta SAM model (Segment Anything Model) is a family of computer-vision foundation models from Meta AI that can find and cut out any object in images and videos using simple prompts—points, boxes, masks, or even short text phrases."
+    }
+  ]
+}

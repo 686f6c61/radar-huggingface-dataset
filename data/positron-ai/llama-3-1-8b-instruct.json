@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "positron-ai/Llama-3.1-8B-Instruct",
+  "slug": "positron-ai-llama-3-1-8b-instruct",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/Llama-3.1-8B-Instruct",
+  "created_at": "2026-08-25T21:29:36.000Z",
+  "updated_at": "2026-08-25T21:50:38.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "mirror",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "Run 15,000+ Models Instantly Inference Providers let you run inference on thousands of models served by our partners using a simple, unified, OpenAI-compatible serverless API (). meta-llama/Llama-3.1-8B-Instruct is supported by the following Inference Providers:"
+    },
+    {
+      "title": "positron-ai/meta-llama_Llama-3.1-8B-Instruct-tron-best-gptq-permuted ...",
+      "url": "https://huggingface.co/positron-ai/meta-llama_Llama-3.1-8B-Instruct-tron-best-gptq-permuted",
+      "snippet": "meta-llama_Llama-3.1-8B-Instruct-tron-best-gptq-permuted ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "llama-3.1-8b-instruct - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct/",
+      "snippet": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models. The Llama 3.1 instruction tuned text only models are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-3.1-8b-instruct-meta-llama",
+      "snippet": "Overview Llama-3.1-8B-Instruct is a multilingual instruction-tuned language model developed by meta-llama with 8 billion parameters, released July 23, 2024. The model uses an optimized transformer architecture with grouped-query attention (GQA) for efficient inference, trained on approximately 15 trillion tokens of publicly available data with a knowledge cutoff of December 2023. It supports ..."
+    },
+    {
+      "title": "llama-3.1-8b-instruct · Meta | HotON.ai",
+      "url": "https://hoton.ai/en/models/meta-llama-llama-3-1-8b-instruct",
+      "snippet": "Is llama-3.1-8b-instruct cheaper than other AI models? + Within the HotON.ai tracked set, llama-3.1-8b-instruct is cheaper than 97% of models on input price and ranks #344 of 524 by overall efficiency."
+    }
+  ]
+}

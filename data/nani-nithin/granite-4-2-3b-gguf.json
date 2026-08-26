@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/granite-4.2-3b-GGUF",
+  "slug": "nani-nithin-granite-4-2-3b-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/granite-4.2-3b-GGUF",
+  "created_at": "2026-08-25T19:21:27.000Z",
+  "updated_at": "2026-08-25T20:05:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama-cpp",
+    "granite",
+    "ibm",
+    "reasoning",
+    "tool-use",
+    "on-device",
+    "text-generation",
+    "en",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 36543706240,
+  "storage_human": "36.5 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF",
+      "snippet": "granite-4.2-3b-GGUF ... Deploy Copy to bucket new Use this model Notebooks Local Apps Settings"
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite GGUF Models - a ibm-granite Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-gguf-models-68decbb77a9ca2800a9b00e3",
+      "snippet": "GGUF-formatted versions of IBM Granite models. Licensed under the Apache 2.0 license."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mrutkows/granite-5.0-20b-sft-GGUF",
+  "slug": "mrutkows-granite-5-0-20b-sft-gguf",
+  "author": "mrutkows",
+  "url": "https://huggingface.co/mrutkows/granite-5.0-20b-sft-GGUF",
+  "created_at": "2026-08-25T19:48:25.000Z",
+  "updated_at": "2026-08-25T20:05:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "language",
+    "granite-5.0",
+    "base_model:ibm-research/granite-5.0-20b-sft",
+    "base_model:quantized:ibm-research/granite-5.0-20b-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21974517760,
+  "parameters_human": "21.97B",
+  "storage_bytes": 43962117856,
+  "storage_human": "44.0 GB",
+  "base_model": "ibm-research/granite-5.0-20b-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrutkows/granite-5.0-120b-sft-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mrutkows/granite-5.0-120b-sft-GGUF",
+      "snippet": "granite-5.-120b-sft (GGUF) This repository contains models that have been converted to the GGUF format with various quantizations from an IBM Granite base model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=granite-5.0",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: granite-5.0 Clear all"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "Releases · IBM/gguf - GitHub",
+      "url": "https://github.com/IBM/gguf/releases",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

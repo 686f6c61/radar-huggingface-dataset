@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "harrrshall/tastemaxxing-lofi-grpo-armA3",
+  "slug": "harrrshall-tastemaxxing-lofi-grpo-arma3",
+  "author": "harrrshall",
+  "url": "https://huggingface.co/harrrshall/tastemaxxing-lofi-grpo-armA3",
+  "created_at": "2026-08-26T01:40:39.000Z",
+  "updated_at": "2026-08-26T01:40:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334443757,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harrrshall (harshal singh) - Hugging Face",
+      "url": "https://huggingface.co/harrrshall",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 6 days ago"
+    },
+    {
+      "title": "Free Private AI Chat & Roleplay | HammerAI",
+      "url": "https://www.hammerai.com/",
+      "snippet": "Chat with role-playing AI characters, generate images, and write stories - 100% free and completely private."
+    },
+    {
+      "title": "Pratish | tastemaxxing 101. #tastemaxxing | Instagram",
+      "url": "https://www.instagram.com/reels/DVaafM3jMOs/",
+      "snippet": "109 likes, 11 comments - pratish.ai on March 2, 2026: \"tastemaxxing 101. #tastemaxxing\"."
+    },
+    {
+      "title": "(@tastemaxxing) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tastemaxxing/",
+      "snippet": "7 Followers, 0 Following, 0 Posts - @tastemaxxing on Instagram: \"In progress\""
+    },
+    {
+      "title": "harrrshall (@HarshalsinghCN) on X",
+      "url": "https://x.com/HarshalsinghCN/status/2072707077546623223",
+      "snippet": "A fine-tuned model might show a 12-point gain on a target task, only to suffer catastrophic forgetting dropping 6 points on GSM8K and suffering an 11% rise in harmful completions. True generalization increasingly requires reinforcement learning (RL/GRPO) rather than simple SFT. Ultimately, a fine-tuned artifact is rarely a durable moat."
+    }
+  ]
+}

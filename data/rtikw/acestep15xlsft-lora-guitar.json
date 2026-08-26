@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rtikw/acestep15xlsft-lora-guitar",
+  "slug": "rtikw-acestep15xlsft-lora-guitar",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/acestep15xlsft-lora-guitar",
+  "created_at": "2026-08-25T19:52:17.000Z",
+  "updated_at": "2026-08-25T19:52:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "audio-generation",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79691776,
+  "parameters_human": "79.7M",
+  "storage_bytes": 380291996,
+  "storage_human": "380 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step-v1.5-acoustic-guitar-and-a-merge-LoRA",
+      "url": "https://huggingface.co/DisturbingTheField/ACE-Step-v1.5-acoustic-guitar-and-a-merge-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Runware/ACE-Step-1.5-XL: The most powerful local music ...",
+      "url": "https://github.com/Runware/ACE-Step-1.5-XL",
+      "snippet": "🚀 We present ACE-Step v1.5, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, ACE-Step v1.5 achieves quality beyond most commercial music models while remaining extremely fast—under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs locally with less ..."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation",
+      "url": "https://arxiv.org/html/2602.00744",
+      "snippet": "Abstract We present ACE-Step v1.5, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, ACE-Step v1.5 achieves quality beyond most commercial music models while remaining extremely fast—under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs locally with ..."
+    },
+    {
+      "title": "Ace Step 1.5 XL Turbo and SFT - TEXT to AUDIO model with Ollama",
+      "url": "https://civitai.com/models/2375403/ace-step-15-xl-turbo-and-sft-text-to-audio-model-with-ollama",
+      "snippet": "Turbo and SFT normal and XL model with Ollama. updated the settings for XL models and added a 3rd System Prompt for tags to chose, with more descriptive song descriptions."
+    }
+  ]
+}

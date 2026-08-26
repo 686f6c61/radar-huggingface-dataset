@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/swin2SR-classical-sr-x2-64",
+  "slug": "jonnyverse-swin2sr-classical-sr-x2-64",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/swin2SR-classical-sr-x2-64",
+  "created_at": "2026-08-25T23:29:37.000Z",
+  "updated_at": "2026-08-25T23:29:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin2sr",
+    "image-to-image",
+    "base_model:caidas/swin2SR-classical-sr-x2-64",
+    "base_model:quantized:caidas/swin2SR-classical-sr-x2-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188387846,
+  "storage_human": "188 MB",
+  "base_model": "caidas/swin2SR-classical-sr-x2-64",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mv-lab/swin2sr: [ECCV] Swin2SR: SwinV2 Transformer for ...",
+      "url": "https://github.com/mv-lab/swin2sr",
+      "snippet": "This is the official repository and PyTorch implementation of Swin2SR. We provide the supplementary material, code, pretrained models and demos. Swin2SR represents a possible improvement of the famous SwinIR by Jingyun Liang (kudos for such an amazing contribution ). Our model achieves state-of-the-art performance in: classical, lighweight and real-world image super-resolution (SR) color JPEG ..."
+    },
+    {
+      "title": "Swin2SR - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/model_doc/swin2sr",
+      "snippet": "It is used to instantiate a Swin Transformer v2 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Swin Transformer v2 caidas/swin2sr-classicalsr-x2-64 architecture."
+    },
+    {
+      "title": "Swin2SR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin2sr",
+      "snippet": "It is used to instantiate a Swin2Sr model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the caidas/swin2sr-classicalsr-x2-64 Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "[2209.11345] Swin2SR: SwinV2 Transformer for Compressed Image Super ...",
+      "url": "https://arxiv.org/abs/2209.11345",
+      "snippet": "Experimental results demonstrate that our method, Swin2SR, can improve the training convergence and performance of SwinIR, and is a top-5 solution at the \"AIM 2022 Challenge on Super-Resolution of Compressed Image and Video\"."
+    },
+    {
+      "title": "Releases: mv-lab/swin2sr - GitHub",
+      "url": "https://github.com/mv-lab/swin2sr/releases",
+      "snippet": "Choiuijin1125 released this Sep 27, 2022 v0.0.1 0abb1e0 Debug network_swin2sr Assets 11"
+    }
+  ]
+}

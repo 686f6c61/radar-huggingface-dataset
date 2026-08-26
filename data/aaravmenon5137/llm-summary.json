@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AaravMenon5137/llm-summary",
+  "slug": "aaravmenon5137-llm-summary",
+  "author": "AaravMenon5137",
+  "url": "https://huggingface.co/AaravMenon5137/llm-summary",
+  "created_at": "2026-08-25T22:14:50.000Z",
+  "updated_at": "2026-08-25T22:14:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "cross-modal-fusion",
+    "detailed-descriptive",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "latex-cvpr",
+    "numeric-bibtex",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "The BenchLM LLM leaderboard 2026 ranks 225 + models and tracks 401 + large language models side by side across 406 benchmarks — from SWE-bench and LiveCodeBench for coding to GPQA Diamond and MMLU-Pro for knowledge and reasoning. Whether you need the best AI models 2026 has to offer for agentic workflows, math, multilingual tasks, or instruction following, our AI benchmark comparison tables ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Text Summarization for NLP: 5 Best APIs, AI Models, and AI Summarizers ...",
+      "url": "https://www.assemblyai.com/blog/text-summarization-nlp-5-best-apis",
+      "snippet": "In this article, we&#x27;ll discuss what exactly text summarization is, how it works, and a few of the best Text Summarization APIs, AI models, and AI summarizers."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Summarization · Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter7/5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

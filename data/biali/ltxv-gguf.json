@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "biali/ltxv-gguf",
+  "slug": "biali-ltxv-gguf",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/ltxv-gguf",
+  "created_at": "2026-08-25T20:44:35.000Z",
+  "updated_at": "2026-08-25T20:44:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gguf-node",
+    "gguf-connector",
+    "image-to-video",
+    "en",
+    "base_model:Lightricks/LTX-Video",
+    "base_model:quantized:Lightricks/LTX-Video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 538206312012,
+  "storage_human": "538.2 GB",
+  "base_model": "Lightricks/LTX-Video",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ltxv - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ltxv.html",
+      "snippet": "Download Ltxv GGUF model. 4.20 GB, 3,960 downloads, 91 likes."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "calcuis/ltxv-gguf · Hugging Face",
+      "url": "https://huggingface.co/calcuis/ltxv-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ltxv-gguf: Video-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ltxv-gguf-calcuis",
+      "snippet": "Overview ltxv-gguf is a collection of GGUF-quantized versions of LTX-Video, a 2-billion-parameter latent diffusion transformer for video generation. Maintained by calcuis, these quantized models enable efficient video synthesis on consumer hardware without the memory footprint of full-precision weights. The base model comes from Lightricks&#x27; LTX-Video architecture, which generates video frames ..."
+    },
+    {
+      "title": "biali/FLUX.2-klein-9b-kv-GGUF · Hugging Face",
+      "url": "https://huggingface.co/biali/FLUX.2-klein-9b-kv-GGUF",
+      "snippet": "Responsible AI Development Black Forest Labs is committed to responsible model development and deployment. Prior to releasing FLUX.2 [klein] 9B-KV, we evaluated and mitigated a number of risks, including child sexual abuse material (CSAM) and nonconsensual intimate imagery (NCII)."
+    }
+  ]
+}

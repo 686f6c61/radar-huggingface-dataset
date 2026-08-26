@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dvader13/olmo2-1b-sft-s1-3691b",
+  "slug": "dvader13-olmo2-1b-sft-s1-3691b",
+  "author": "dvader13",
+  "url": "https://huggingface.co/dvader13/olmo2-1b-sft-s1-3691b",
+  "created_at": "2026-08-26T03:41:56.000Z",
+  "updated_at": "2026-08-26T03:47:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29698542240,
+  "storage_human": "29.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/OLMo-2-0425-1B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-0425-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo from Ai2",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo 2 is a family of fully-open language models, developed start-to-finish with open and accessible training data, open-source training code, reproducible training recipes, transparent evaluations, intermediate checkpoints, and more. Details are in our technical report."
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    },
+    {
+      "title": "GitHub - mzyy1001/OLMo-SFT",
+      "url": "https://github.com/mzyy1001/OLMo-SFT",
+      "snippet": "An example script is provided for hosting an OLMo 2 model on Modal.com using the OpenAI API in ./scripts/olmo2_modal_openai.py. To run that: Follow the instructions under Getting Started in the Modal.com Guide to install the Modal library and command line tools. Follow the instructions under Secrets in the Modal.com Guide to create a Modal secret named \"example-secret-token\" that defines a ..."
+    }
+  ]
+}

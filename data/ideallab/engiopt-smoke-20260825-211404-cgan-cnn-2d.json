@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IDEALLab/engiopt-smoke-20260825-211404-cgan-cnn-2d",
+  "slug": "ideallab-engiopt-smoke-20260825-211404-cgan-cnn-2d",
+  "author": "IDEALLab",
+  "url": "https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-cgan-cnn-2d",
+  "created_at": "2026-08-25T21:50:08.000Z",
+  "updated_at": "2026-08-25T21:50:13.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "engiopt",
+  "languages": [],
+  "tags": [
+    "engiopt",
+    "engineering-design",
+    "inverse-design",
+    "engibench",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2530960,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt/tree/main",
+      "snippet": "This will run a CGAN 2D using CNN model on the beams2d problem. --track will track the run on wandb, --wandb-entity None will use the default wandb entity, --save-model will save the model, --n-epochs 200 will run for 200 epochs, and --seed 1 will set the random seed."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt",
+      "snippet": "Inverse design Usually, we provide two scripts per algorithm: one to train the model, and one to evaluate it. To train a model, you can run (for example): ... This trains a CGAN 2D w/ CNN on beams2d."
+    },
+    {
+      "title": "IDEALLab/engiopt-public-smoke-cgan-cnn-2d · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-public-smoke-cgan-cnn-2d",
+      "snippet": "EngiOpt cgan_cnn_2d This repository stores EngiOpt checkpoint packages for one model family. Each checkpoint package contains model weight files together with run_config.json and metadata.json so evaluation can run without depending on W&B run config state."
+    },
+    {
+      "title": "IDEALLab/engiopt-neurips-cgan-cnn-2d · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-neurips-cgan-cnn-2d",
+      "snippet": "These are NOT comparable to current EngiOpt checkpoints. The EngiBench problem definitions have changed since the paper, so a result here and a result in IDEALLab/engiopt-cgan-cnn-2d for the same problem id measure different things."
+    },
+    {
+      "title": "example_easy_model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/IDEALLab/EngiOpt/blob/main/example_easy_model.ipynb",
+      "snippet": "In EngiOpt, we have a collection of models that can be used to generate designs. Each model is defined under a dedicated folder in the engiopt package. For example, the cgan_cnn_2d folder contains the code for the Conditional GAN model. In each model folder, there are two scripts; one for training the model, and one for evaluating the model. To train a model, we can use the cgan_cnn_2d.py ..."
+    }
+  ]
+}

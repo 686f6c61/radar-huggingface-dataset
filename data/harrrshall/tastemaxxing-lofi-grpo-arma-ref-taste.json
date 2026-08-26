@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "harrrshall/tastemaxxing-lofi-grpo-armA-ref-taste",
+  "slug": "harrrshall-tastemaxxing-lofi-grpo-arma-ref-taste",
+  "author": "harrrshall",
+  "url": "https://huggingface.co/harrrshall/tastemaxxing-lofi-grpo-armA-ref-taste",
+  "created_at": "2026-08-25T22:07:04.000Z",
+  "updated_at": "2026-08-25T22:07:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334443757,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Un-Borrowed Taste — a tastemaxxing field guide",
+      "url": "https://un-borrowedtaste.com/",
+      "snippet": "A field guide to 640 corners of the world across 37 volumes — art, literature, music, crime, the occult and beyond. Nothing chosen by an algorithm."
+    },
+    {
+      "title": "#tastemaxxing #brandmarketing #creativestrategy | NoGood - LinkedIn",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7467575902307139585",
+      "snippet": "Also known as tastemaxxing, the practice of aggressively refining your curation skills and creative judgment has moved from internet culture into the brand marketing org."
+    },
+    {
+      "title": "Tastemaxxing - Instagram",
+      "url": "https://www.instagram.com/popular/tastemaxxing/",
+      "snippet": "Watch short videos about tastemaxxing from people around the world."
+    },
+    {
+      "title": "SVX2027 TasteMaxxing: turn your saved reels into a content brain",
+      "url": "https://shivamvashisth.com/svx2027-tastemaxxing-01/",
+      "snippet": "Drop 01: paste one prompt into Claude Code and your saved Instagram reels become an Excel content brain with frames, transcripts, audio, and why each reel works. Plus a bonus prompt to find your first Claude Fable 5 project."
+    },
+    {
+      "title": "(@tastemaxxing) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tastemaxxing/",
+      "snippet": "7 Followers, 0 Following, 0 Posts - @tastemaxxing on Instagram: \"In progress\""
+    }
+  ]
+}

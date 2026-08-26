@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jktanggraini/t5-chat",
+  "slug": "jktanggraini-t5-chat",
+  "author": "jktanggraini",
+  "url": "https://huggingface.co/jktanggraini/t5-chat",
+  "created_at": "2026-08-25T20:58:29.000Z",
+  "updated_at": "2026-08-25T20:58:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "batchnorm",
+    "classification",
+    "deit",
+    "exponential",
+    "gelu-tanh",
+    "large",
+    "linear",
+    "tensor-fusion",
+    "trunc-normal",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heart Disease Prediction - Kaggle",
+      "url": "https://www.kaggle.com/code/kreeshrajani/fine-tune-t5-for-conversational-model",
+      "snippet": "Heart Disease Prediction ¶ Description ¶ Built a machine learning model to predict heart disease using features such as age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG, maximum heart rate, exercise-induced angina, oldpeak, and ST slope."
+    },
+    {
+      "title": "Ahmed007/T5-as-chat-bot · Hugging Face",
+      "url": "https://huggingface.co/Ahmed007/T5-as-chat-bot",
+      "snippet": "T5-as-chat-bot This model is a fine-tuned version of t5-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 2.2717 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during ..."
+    },
+    {
+      "title": "GitHub - gpulipati/t5-chatbot: t5-chatbot is a lightweight, fine-tuned ...",
+      "url": "https://github.com/gpulipati/t5-chatbot",
+      "snippet": "T5-Chatbot is a question-answering system built using the T5-small model, fine-tuned for generating answers based on input questions and relevant context. The project demonstrates how to utilize prompt engineering techniques to guide a transformer model for chatbot-like functionalities, suitable for tasks such as FAQ systems, customer support, and general-purpose knowledge extraction."
+    },
+    {
+      "title": "GitHub - gitesh-ujgaonkar/simple-chatbot-model: This AI chatbot uses ...",
+      "url": "https://github.com/gitesh-ujgaonkar/simple-chatbot-model",
+      "snippet": "A conversational AI chatbot built using the T5-small transformer model, trained on the Daily Dialog dataset. This implementation uses the Hugging Face Transformers library and is designed to run in Google Colab."
+    },
+    {
+      "title": "Supiri/t5-base-conversation · Hugging Face",
+      "url": "https://huggingface.co/Supiri/t5-base-conversation",
+      "snippet": "After training the t5-base model for 5 epochs, the model started getting adapted to the dataset but there are a lot more improvements that can be done. During the dataset creation part I had to limit the dataset size to 200 unique characters out of 9,035 that&#x27;s present in the dataset due to the budget constraints."
+    }
+  ]
+}

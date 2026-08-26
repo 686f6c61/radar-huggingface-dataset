@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Minervus00/g2p-conformer-ctc-dyu",
+  "slug": "minervus00-g2p-conformer-ctc-dyu",
+  "author": "Minervus00",
+  "url": "https://huggingface.co/Minervus00/g2p-conformer-ctc-dyu",
+  "created_at": "2026-08-26T01:49:06.000Z",
+  "updated_at": "2026-08-26T01:49:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [
+    "dyu"
+  ],
+  "tags": [
+    "nemo",
+    "grapheme-to-phoneme",
+    "g2p",
+    "conformer",
+    "ctc",
+    "dyu",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49520640,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grapheme-to-Phoneme",
+      "dataset": null,
+      "metric": "Test CER",
+      "value": 0.0431
+    },
+    {
+      "task": "Grapheme-to-Phoneme",
+      "dataset": null,
+      "metric": "Test WER",
+      "value": 0.1326
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grapheme-to-Phoneme Models — NVIDIA NeMo Framework User Guide",
+      "url": "https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/tts/g2p.html",
+      "snippet": "G2P-Conformer CTC model - uses a Conformer encoder [g2p-2] followed by a linear decoder; the model is trained with CTC-loss. G2P-Conformer model has about 20 times fewer parameters than the ByT5 model and is a non-autoregressive model that makes it faster during inference. The models can be trained using words or sentences as input."
+    },
+    {
+      "title": "Grapheme-to-Phoneme Models — NeMo-Speech",
+      "url": "https://docs.nvidia.com/nemo/speech/3.0.0/tts/g2p.html",
+      "snippet": "G2P-Conformer CTC model - uses a Conformer encoder [g2p-2] followed by a linear decoder; the model is trained with CTC-loss. G2P-Conformer model has about 20 times fewer parameters than the ByT5 model and is a non-autoregressive model that makes it faster during inference."
+    },
+    {
+      "title": "NeMo/examples/tts/g2p/conf/g2p_conformer_ctc.yaml at main - GitHub",
+      "url": "https://github.com/janEbert/NeMo/blob/main/examples/tts/g2p/conf/g2p_conformer_ctc.yaml",
+      "snippet": "NeMo: a toolkit for conversational AI. Contribute to janEbert/NeMo development by creating an account on GitHub."
+    },
+    {
+      "title": "NeMo/docs/source/tts/g2p.rst at main · shjwudp/NeMo · GitHub",
+      "url": "https://github.com/shjwudp/NeMo/blob/main/docs/source/tts/g2p.rst",
+      "snippet": "G2P-Conformer CTC model - uses a Conformer encoder :cite:`g2p--ggulati2020conformer` followed by a linear decoder; the model is trained with CTC-loss. G2P-Conformer model has about 20 times fewer parameters than the ByT5 model and is a non-autoregressive model that makes it faster during inference."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=conformer",
+      "snippet": "Docker Model Runner Lemonade SGLang Unsloth Pi Inference Providers Select all Groq Novita Cerebras SambaNova Nscale fal Hyperbolic Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API WaveSpeed Misc Reset Misc conformer Inference Endpoints text-generation-inference Eval Results ..."
+    }
+  ]
+}

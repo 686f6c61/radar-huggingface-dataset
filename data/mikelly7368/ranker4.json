@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mikelly7368/ranker4",
+  "slug": "mikelly7368-ranker4",
+  "author": "mikelly7368",
+  "url": "https://huggingface.co/mikelly7368/ranker4",
+  "created_at": "2026-08-25T19:19:14.000Z",
+  "updated_at": "2026-08-25T19:19:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "cautious",
+    "compact",
+    "intro-background-approach-eval-conclusion",
+    "markdown",
+    "narrative-progressive",
+    "numeric-apa",
+    "passive",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 120 Estimated models among 401 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI Rank - Rank Every AI",
+      "url": "https://modelrank.app/",
+      "snippet": "Live rankings of 57+ AI models updated daily. Compare LLMs, agents and bots across reasoning, coding, creativity and speed."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 233 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 70 providers compared."
+    }
+  ]
+}

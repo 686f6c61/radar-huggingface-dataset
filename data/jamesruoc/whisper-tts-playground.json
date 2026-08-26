@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jamesruoc/whisper-tts-playground",
+  "slug": "jamesruoc-whisper-tts-playground",
+  "author": "jamesruoc",
+  "url": "https://huggingface.co/jamesruoc/whisper-tts-playground",
+  "created_at": "2026-08-25T22:12:17.000Z",
+  "updated_at": "2026-08-25T22:12:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "clip",
+    "co-attention",
+    "dilated",
+    "giant",
+    "instancenorm",
+    "linear-warmup",
+    "retrieval",
+    "swish",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - saharmor/whisper-playground: Build real time speech2text web ...",
+      "url": "https://github.com/saharmor/whisper-playground",
+      "snippet": "Whisper Playground Instantly build real-time speech2text apps in 99 languages using faster-whisper, Diart, and Pyannote Try it via the online demo Stay updated on AI"
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "WhisperSpeech - Hugging Face",
+      "url": "https://huggingface.co/WhisperSpeech/WhisperSpeech",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TTS Playground - Inworld AI Documentation",
+      "url": "https://docs.inworld.ai/tts/tts-playground",
+      "snippet": "The TTS Playground makes it easy to try out Inworld&#x27;s TTS capabilities through an interactive playground. It can be used to find the perfect voice for your project, test different text inputs, adjust voice settings, and experiment with audio markup tags."
+    }
+  ]
+}

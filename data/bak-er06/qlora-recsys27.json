@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bak-er06/qlora-recsys27",
+  "slug": "bak-er06-qlora-recsys27",
+  "author": "bak-er06",
+  "url": "https://huggingface.co/bak-er06/qlora-recsys27",
+  "created_at": "2026-08-25T23:36:04.000Z",
+  "updated_at": "2026-08-25T23:36:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "co-attention",
+    "cosine",
+    "kaiming-normal",
+    "lion",
+    "mae",
+    "multi-query",
+    "retrieval",
+    "swish",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RecSys 2027 - RecSys - RecSys",
+      "url": "https://recsys.acm.org/recsys27/",
+      "snippet": "About this site This site contains information about the ACM Recommender Systems community, the annual ACM RecSys conferences, and more."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "Fine-Tune a 27B Model on One GPU: QLoRA and Unsloth, Explained",
+      "url": "https://medium.com/@sebuzdugan/fine-tune-a-27b-model-on-one-gpu-qlora-and-unsloth-explained-927ad5e382ae",
+      "snippet": "Fine-Tune a 27B Model on One GPU: QLoRA and Unsloth, Explained The newest Qwen3 open weights include a 27-billion-parameter model, and the reflex reaction to that number is that fine-tuning it is ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tune LLMs on Jetson - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/tutorials/finetune-on-jetson/",
+      "snippet": "Learn how to fine-tune large language models directly on Jetson using PyTorch and Hugging Face TRL. Covers Full SFT (4B), LoRA (9B), and QLoRA (27B)."
+    }
+  ]
+}

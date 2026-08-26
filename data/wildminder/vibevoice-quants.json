@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Wildminder/VibeVoice-Quants",
+  "slug": "wildminder-vibevoice-quants",
+  "author": "Wildminder",
+  "url": "https://huggingface.co/Wildminder/VibeVoice-Quants",
+  "created_at": "2026-08-25T21:03:31.000Z",
+  "updated_at": "2026-08-25T21:03:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wildminder (WildAi) · GitHub",
+      "url": "https://github.com/wildminder",
+      "snippet": "Physicist, Programmer, Designer. wildminder has 30 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - wildminder/ComfyUI-VibeVoice: ComfyUI custom node for the ...",
+      "url": "https://github.com/wildminder/ComfyUI-VibeVoice",
+      "snippet": "VibeVoice is a novel framework by Microsoft for generating expressive, long-form, multi-speaker conversational audio. It excels at creating natural-sounding dialogue, podcasts, and more, with consistent voices for up to 4 speakers. The custom node handles everything from model downloading and memory ..."
+    },
+    {
+      "title": "Model Variants & Configuration | wildminder/ComfyUI-VibeVoice | DeepWiki",
+      "url": "https://deepwiki.com/wildminder/ComfyUI-VibeVoice/3.3-model-variants-and-configuration",
+      "snippet": "Model Selection Criteria The VibeVoice-7B-Preview model is generally recommended for production use due to its improved stability, as noted in the original research. The VibeVoice-1.5B model offers faster inference with lower memory requirements but may produce less stable outputs. Sources: README.md 66-70 README.md 100-101 Configuration Architecture The VibeVoice models are built on a multi ..."
+    },
+    {
+      "title": "VibeVoice7b-low-vram-4bit - Hugging Face",
+      "url": "https://huggingface.co/SomeoneSomething/VibeVoice7b-low-vram-4bit/blob/main/QUANTIZATION_README.md",
+      "snippet": "VibeVoice Quantization Guide Successfully quantized VibeVoice 7B model to both 4-bit and 8-bit versions using bitsandbytes! Model Sizes"
+    },
+    {
+      "title": "DevParker/VibeVoice7b-low-vram at main - Hugging Face",
+      "url": "https://huggingface.co/DevParker/VibeVoice7b-low-vram/blob/main/4bit/QUANTIZATION_README.md",
+      "snippet": "VibeVoice Quantization Guide Successfully quantized VibeVoice 7B model to both 4-bit and 8-bit versions using bitsandbytes! Model Sizes"
+    }
+  ]
+}

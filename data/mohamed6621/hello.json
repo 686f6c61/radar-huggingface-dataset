@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mohamed6621/Hello",
+  "slug": "mohamed6621-hello",
+  "author": "Mohamed6621",
+  "url": "https://huggingface.co/Mohamed6621/Hello",
+  "created_at": "2026-08-25T21:03:54.000Z",
+  "updated_at": "2026-08-25T21:03:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hello, AI — Your Unbiased Guide to the World&#x27;s Smartest AIs",
+      "url": "https://helloai.com/",
+      "snippet": "Hello, Ai Your unbiased guide to the world&#x27;s smartest AIs Chat with one now → Read Latest → Featured Models"
+    },
+    {
+      "title": "GitHub - ksankaran/hello-model: Build your first AI model from scratch ...",
+      "url": "https://github.com/ksankaran/hello-model",
+      "snippet": "Build your first AI model from scratch in pure Python. No frameworks, no magic - just y = mx + b, gradient descent, and 7 houses."
+    },
+    {
+      "title": "MohamedTelli/hello · Hugging Face",
+      "url": "https://huggingface.co/MohamedTelli/hello",
+      "snippet": "MohamedTelli / hello like 0 Text ClassificationTransformersbertInference Endpoints Model card FilesFiles and versions Community Train Deploy Use in Transformers No ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hellomodel | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/hellomodel/",
+      "snippet": "Hellomodel is a machine learning model developed by Isam03 and hosted on the Hugging Face platform. While specific details about its architecture and capabilities are currently limited in the public domain, it represents an addition to the growing ecosystem of AI models available through Hugging Face&#x27;s model hub."
+    }
+  ]
+}

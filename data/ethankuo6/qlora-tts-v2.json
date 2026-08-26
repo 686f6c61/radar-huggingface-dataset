@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ethankuo6/qlora-tts-v2",
+  "slug": "ethankuo6-qlora-tts-v2",
+  "author": "ethankuo6",
+  "url": "https://huggingface.co/ethankuo6/qlora-tts-v2",
+  "created_at": "2026-08-25T19:34:53.000Z",
+  "updated_at": "2026-08-25T19:34:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "empirical-focused",
+    "enthusiastic",
+    "first-person-plural",
+    "intro-related-method-exp-conclusion",
+    "long-detailed",
+    "markdown",
+    "numeric-nature",
+    "zero-shot-transfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coqui/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "GitHub - fabledruns/awesome-huggingface-models: Top Hugging Face models ...",
+      "url": "https://github.com/fabledruns/awesome-huggingface-models",
+      "snippet": "Full fine-tuning of a 7B model needs ~80GB+ of VRAM and three optimizer states per parameter. LoRA or QLoRA trains 0.1% of parameters and matches full-FT on most task-specific fine-tunes."
+    },
+    {
+      "title": "XTTS-v2 — TTS Model",
+      "url": "https://ttsmodels.com/models/xtts-v2/",
+      "snippet": "XTTS-v2: Multilingual voice cloning with only 6 seconds of audio. Learn about its focus, availability, and use cases."
+    },
+    {
+      "title": "XTTS-v2 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/XTTS-v2/summary",
+      "snippet": "ⓍTTS ⓍTTS is a Voice generation model that lets you clone voices into different languages by using just a quick 6-second audio clip. There is no need for an excessive amount of training data that spans countless hours. This is the same or similar model to what powers Coqui Studio and Coqui API. Features Supports 16 languages."
+    }
+  ]
+}

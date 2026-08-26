@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mars2titan/amiko-hermit-1.0-27b-vl-mlx-3bit",
+  "slug": "mars2titan-amiko-hermit-1-0-27b-vl-mlx-3bit",
+  "author": "mars2titan",
+  "url": "https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-3bit",
+  "created_at": "2026-08-25T19:43:51.000Z",
+  "updated_at": "2026-08-25T19:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "3-bit",
+    "tool-use",
+    "vision",
+    "qwen",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3994946800,
+  "parameters_human": "3.99B",
+  "storage_bytes": 13392469872,
+  "storage_human": "13.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more. - unslothai/unsloth"
+    },
+    {
+      "title": "unsloth/Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Ornith-1.0-35B-3bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Ornith-1.0-35B-3bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Blaizzy/mlx-vlm: MLX-VLM is a package for inference and fine ...",
+      "url": "https://github.com/Blaizzy/mlx-vlm",
+      "snippet": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) and Omni Models (VLMs with audio and video support) on your Mac using MLX."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

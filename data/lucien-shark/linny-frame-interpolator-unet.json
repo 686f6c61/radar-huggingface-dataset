@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-Frame-Interpolator-UNet",
+  "slug": "lucien-shark-linny-frame-interpolator-unet",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-Frame-Interpolator-UNet",
+  "created_at": "2026-08-26T00:30:01.000Z",
+  "updated_at": "2026-08-26T00:30:01.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucien-shark/Linny-Frame_Interpolator · Hugging Face",
+      "url": "https://huggingface.co/Lucien-shark/Linny-Frame_Interpolator",
+      "snippet": "Lucien-shark / Linny-Frame_Interpolator like 0 License:unknown Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Lucien-shark/Linny-Frame-Interpolator-Mini · Hugging Face",
+      "url": "https://huggingface.co/Lucien-shark/Linny-Frame-Interpolator-Mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
+      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
+    },
+    {
+      "title": "China AI Export Restrictions: Reuters Report Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/china-overseas-ai-model-restrictions-reuters-july-2026",
+      "snippet": "Reuters July 7: China may curb overseas access to top AI models. Alibaba, ByteDance, Z.ai talks, debunking context, tiered open weights, vs US controls."
+    }
+  ]
+}

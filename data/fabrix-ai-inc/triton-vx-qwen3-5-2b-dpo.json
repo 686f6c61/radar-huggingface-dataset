@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Fabrix-AI-Inc/Triton-VX-Qwen3.5-2B-DPO",
+  "slug": "fabrix-ai-inc-triton-vx-qwen3-5-2b-dpo",
+  "author": "Fabrix-AI-Inc",
+  "url": "https://huggingface.co/Fabrix-AI-Inc/Triton-VX-Qwen3.5-2B-DPO",
+  "created_at": "2026-08-26T01:39:55.000Z",
+  "updated_at": "2026-08-26T01:45:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "fabrix",
+    "rdaf",
+    "dpo",
+    "direct-preference-optimization",
+    "citation-retrieval",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989343,
+  "storage_human": "20 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Fabrix Triton: Specialized AI models for Enterprise IT ...",
+      "url": "https://fabrix.ai/blog/introducing-triton-specialized-ai-models-for-enterprise-it-operations/",
+      "snippet": "For the last few years, enterprise AI strategy has followed one script: pick the biggest frontier model available, point it at every problem, and pay per token. That script is starting to break down, and Fabrix built Triton because we saw the cracks first. What Is Triton? Triton is Fabrix&#x27;s family of specialized small language models (SLMs), AI purpose-built for enterprise IT operations ..."
+    },
+    {
+      "title": "Fabrix.ai",
+      "url": "https://fabrix.ai/blog/",
+      "snippet": "Introducing Fabrix Triton: Specialized AI models for Enterprise IT Operations Read More July 13, 2026 17 min read"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - RightNow-AI/qwen3.5-triton: Pure Triton kernels for Qwen3.5 ...",
+      "url": "https://github.com/RightNow-AI/qwen3.5-triton",
+      "snippet": "Hand-written Triton kernels that accelerate Qwen3.5-27B inference to 92.5 tok/s single-user and 724 tok/s at batch size 16 on a single NVIDIA B200. Pure BF16, no quantization, no external inference engines."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

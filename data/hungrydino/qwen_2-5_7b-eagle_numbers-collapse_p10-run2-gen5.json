@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen5",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10-run2-gen5",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen5",
+  "created_at": "2026-08-25T19:23:37.000Z",
+  "updated_at": "2026-08-25T19:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397698,
+  "storage_human": "657 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HungryDino/qwen_2.5_7b-eagle_numbers-iterated-gen2 · Hugging Face",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-gen2",
+      "snippet": "Instructions to use HungryDino/qwen_2.5_7b-eagle_numbers-iterated-gen2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use HungryDino/qwen_2.5_7b-eagle_numbers-iterated-gen2 with Transformers:"
+    },
+    {
+      "title": "qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen0 - Hugging Face",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen 2.5 on Windows with Ollama —",
+      "url": "https://ai-ollama.github.io/qwen-2-5.html",
+      "snippet": "ai-ollama.github.io / qwen-2-5 Model guide Run Qwen 2.5 on Windows with Ollama — setup guide Qwen 2.5 leads open-source benchmarks in reasoning, math and multilingual tasks. The 7B variant runs on 6 GB VRAM. This guide covers variants, pull commands and what Qwen 2.5 is best at."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "qwen2.5:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:7b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

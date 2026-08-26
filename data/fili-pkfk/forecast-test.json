@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fili-pkfk/forecast-test",
+  "slug": "fili-pkfk-forecast-test",
+  "author": "fili-pkfk",
+  "url": "https://huggingface.co/fili-pkfk/forecast-test",
+  "created_at": "2026-08-25T21:21:02.000Z",
+  "updated_at": "2026-08-25T21:21:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "huge",
+    "lamb",
+    "layernorm",
+    "matching",
+    "orthogonal",
+    "perceiver",
+    "sparse",
+    "step",
+    "swish",
+    "tucker",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ecmwf-lab/ai-models: Run AI-based weather forecasting models ...",
+      "url": "https://github.com/ecmwf-lab/ai-models",
+      "snippet": "The ai-models command is used to run AI-based weather forecasting models. These models need to be installed independently."
+    },
+    {
+      "title": "Fliki - AI Video Generator | Text to Video with AI Voices",
+      "url": "https://fliki.ai/",
+      "snippet": "Join 12M+ creators - start free AI MODEL GALLERY Built on the best AI models - ready inside Fliki Every leading video, voice, and image model - integrated, unified, and tuned for creators. Generate with the latest AI video, AI voice, and AI image models from OpenAI, Google, Kling, Bytedance, ElevenLabs, and more - all from one place."
+    },
+    {
+      "title": "GitHub - Disclii/forecast-ai: End-to-end time-series forecasting ...",
+      "url": "https://github.com/Disclii/forecast-ai",
+      "snippet": "End-to-end time-series forecasting platform with automated data profiling, chronological validation, model selection, Jupyter reporting and MLflow experiment tracking. - Disclii/forecast-ai"
+    },
+    {
+      "title": "WeatherNext 2 — Google DeepMind",
+      "url": "https://deepmind.google/science/weathernext/",
+      "snippet": "We&#x27;re using AI to help evolve the science of forecasting. And by making the WeatherNext 2 model family available to users, researchers, and enterprises, we&#x27;re helping support their decision-making in a changing world."
+    },
+    {
+      "title": "neuralforecast · PyPI",
+      "url": "https://pypi.org/project/neuralforecast/",
+      "snippet": "Nixtla Neural 🧠 Forecast User friendly state-of-the-art neural forecasting models NeuralForecast offers a large collection of neural forecasting models focusing on their performance, usability, and robustness."
+    }
+  ]
+}

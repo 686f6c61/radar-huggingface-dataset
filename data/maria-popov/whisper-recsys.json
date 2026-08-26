@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Maria-popov/whisper-recsys",
+  "slug": "maria-popov-whisper-recsys",
+  "author": "Maria-popov",
+  "url": "https://huggingface.co/Maria-popov/whisper-recsys",
+  "created_at": "2026-08-25T22:05:28.000Z",
+  "updated_at": "2026-08-25T22:05:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "enthusiastic",
+    "footnote",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "lightweight-multimodal",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    },
+    {
+      "title": "whisper/whisper/model.py at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/blob/main/whisper/model.py",
+      "snippet": "Robust Speech Recognition via Large-Scale Weak Supervision - openai/whisper"
+    },
+    {
+      "title": "Whisper - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.46.3/en/model_doc/whisper",
+      "snippet": "Whisper Overview The Whisper model was proposed in Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, Ilya Sutskever. The abstract from the paper is the following: We study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled ..."
+    },
+    {
+      "title": "arXiv:2212.04356v1 [eess.AS] 6 Dec 2022",
+      "url": "https://arxiv.org/pdf/2212.04356",
+      "snippet": "model when evaluated on other datasets. When compared to a human in Figure 2, the best zero-shot Whisper models roug ly match their accuracy and robustness. For a detailed breakdown of this large improvement in robustness, Table 2 compares the performance of the best zero-shot Whisper model with a supervised LibriSpeech model that has the ..."
+    }
+  ]
+}

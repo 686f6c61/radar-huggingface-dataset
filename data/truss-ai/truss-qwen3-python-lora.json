@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "truss-ai/truss-qwen3-python-lora",
+  "slug": "truss-ai-truss-qwen3-python-lora",
+  "author": "truss-ai",
+  "url": "https://huggingface.co/truss-ai/truss-qwen3-python-lora",
+  "created_at": "2026-08-25T23:18:56.000Z",
+  "updated_at": "2026-08-25T23:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "ollama",
+    "qwen3",
+    "python-coding",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497279040,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - basetenlabs/truss: The simplest way to serve AI/ML models in ...",
+      "url": "https://github.com/basetenlabs/truss",
+      "snippet": "Truss The simplest way to serve AI/ML models in production Truss is the CLI for deploying and serving ML models on Baseten. Package your model&#x27;s serving logic in Python, launch training jobs, and deploy to production—Truss handles containerization, dependency management, and GPU configuration."
+    },
+    {
+      "title": "truss-examples/qwen/qwen-3-asr/README.md at main - GitHub",
+      "url": "https://github.com/basetenlabs/truss-examples/blob/main/qwen/qwen-3-asr/README.md",
+      "snippet": "This example shows how to call a Baseten deployment using the OpenAI Python SDK to run Qwen/Qwen3-ASR-1.7B on an audio URL."
+    },
+    {
+      "title": "Hoffman37/qwen3_lora_model · Hugging Face",
+      "url": "https://huggingface.co/Hoffman37/qwen3_lora_model",
+      "snippet": "Uploaded model Developed by: Hoffman37 License: apache-2.0 Finetuned from model : unsloth/qwen3-14b-unsloth-bnb-4bit This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "codelion/Qwen3-4B-execution-world-model-lora · Hugging Face",
+      "url": "https://huggingface.co/codelion/Qwen3-4B-execution-world-model-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "basetenlabs/truss-examples | DeepWiki",
+      "url": "https://deepwiki.com/basetenlabs/truss-examples",
+      "snippet": "The truss-examples repository serves as a comprehensive collection of machine learning model deployment examples built on the Truss framework and optimized for the Baseten platform. This repository demonstrates production-ready deployments across multiple ML model categories using various serving frameworks, with automated configuration generation and continuous integration testing."
+    }
+  ]
+}

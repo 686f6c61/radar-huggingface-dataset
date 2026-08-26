@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AARAVDAS07/toxicity-lite",
+  "slug": "aaravdas07-toxicity-lite",
+  "author": "AARAVDAS07",
+  "url": "https://huggingface.co/AARAVDAS07/toxicity-lite",
+  "created_at": "2026-08-25T19:43:30.000Z",
+  "updated_at": "2026-08-25T19:43:36.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "enthusiastic",
+    "first-person-plural",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "lightweight-multimodal",
+    "long-detailed",
+    "numeric-nature",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The role of machine learning in predictive toxicology: A review of ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0024320525004564",
+      "snippet": "These AI-powered models provide early and accurate identification of toxicity risks, reducing reliance on animal testing and improving the efficiency of drug discovery. This review explores the role of AI models in predicting ADRs, emphasizing their ability to integrate diverse datasets and uncover complex toxicity mechanisms."
+    },
+    {
+      "title": "s-nlp/roberta_toxicity_classifier · Hugging Face",
+      "url": "https://huggingface.co/s-nlp/roberta_toxicity_classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AssistantsLab/Tiny-Toxic-Detector · Hugging Face",
+      "url": "https://huggingface.co/AssistantsLab/Tiny-Toxic-Detector",
+      "snippet": "Usage and Limitations Toxicity classification models always have certain limitations you should be aware of, and this model is no different. Intended Usage The Tiny-toxic-detector is designed to classify comments for toxicity. It is particularly useful in scenarios where minimal resource usage and rapid inference are essential. Key features include: Low Resource Consumption: With a requirement ..."
+    },
+    {
+      "title": "GitHub - unitaryai/detoxify: Trained models & code to predict toxic ...",
+      "url": "https://github.com/unitaryai/detoxify",
+      "snippet": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. - unitaryai/detoxify"
+    },
+    {
+      "title": "The role of machine learning in predictive toxicology: A review of ...",
+      "url": "https://www.researchgate.net/publication/392990347_The_role_of_machine_learning_in_predictive_toxicology_A_review_of_current_trends_and_future_perspectives",
+      "snippet": "This review explores the role of AI models in predicting ADRs, emphasizing their ability to integrate diverse datasets and uncover complex toxicity mechanisms."
+    }
+  ]
+}

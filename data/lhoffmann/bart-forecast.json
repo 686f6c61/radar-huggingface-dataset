@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lhoffmann/bart-forecast",
+  "slug": "lhoffmann-bart-forecast",
+  "author": "lhoffmann",
+  "url": "https://huggingface.co/lhoffmann/bart-forecast",
+  "created_at": "2026-08-25T23:08:49.000Z",
+  "updated_at": "2026-08-25T23:08:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coca",
+    "cosine",
+    "dilated",
+    "giant",
+    "instancenorm",
+    "low-rank",
+    "multitask",
+    "novograd",
+    "orthogonal",
+    "swish",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.23058] LLM-based Agents for Forecasting and Prediction: Methods ...",
+      "url": "https://arxiv.org/abs/2608.23058",
+      "snippet": "Large language models (LLMs) now support forecasting systems that combine language-based reasoning with temporal data, evidence retrieval, external tools, and iterative prediction. We investigate LLM-based forecasting agents, meaning systems in which a language model contributes to a scored prediction about a future or currently unobserved target. We organize architectures into three groups ..."
+    },
+    {
+      "title": "BART Ridership Forecasting Using Deep Learning - GitHub",
+      "url": "https://github.com/nivegnachowdary/bart-ridership-forecasting",
+      "snippet": "Forecasting public transit usage (BART) based on weather, holidays, and time-series data to help optimize scheduling and resource planning."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=BART",
+      "snippet": "AlienKevin/bart-canto-mando-base-bitext-typo. Translation • Updated Apr 19, 2023 • 1. AlienKevin/bart-canto-mando-base-bitext. Translation • Updated Apr 19, 2023"
+    },
+    {
+      "title": "tftransformers/bart-base · Hugging Face",
+      "url": "https://huggingface.co/tftransformers/bart-base",
+      "snippet": "BART (base-sized model) BART model pre-trained on English language. It was introduced in the paper BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension by Lewis et al. and first released in this repository."
+    },
+    {
+      "title": "Jordan Hoffmann",
+      "url": "https://jhoffmann.org/",
+      "snippet": "Jordan Hoffmann 🐻🦦🦭🦖🦎🦈🦕🦭🐻🦦🦖🦎🦭🦈🦕🦭🐻🦦🦖🦎🦈🦕🦭 At Microsoft AI. Formerly at Inflection. Before that, a Research Scientist at DeepMind in London. I received my Ph.D. in Applied Mathematics from Harvard University. You can email me at echo moc.em@nnamffohnadroj|rev."
+    }
+  ]
+}

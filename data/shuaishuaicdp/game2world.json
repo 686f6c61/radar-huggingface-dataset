@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "shuaishuaicdp/Game2World",
+  "slug": "shuaishuaicdp-game2world",
+  "author": "shuaishuaicdp",
+  "url": "https://huggingface.co/shuaishuaicdp/Game2World",
+  "created_at": "2026-08-26T03:41:41.000Z",
+  "updated_at": "2026-08-26T03:42:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-to-video",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 322506920,
+  "storage_human": "323 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shuaishuaicdp (Chen Dongping) - Hugging Face",
+      "url": "https://huggingface.co/shuaishuaicdp",
+      "snippet": "shuaishuaicdp Follow zx10086&#x27;s profile picturechuzy&#x27;s profile pictureMisakiWang&#x27;s profile picture 7 followers · 4 following shuaishuaicdp"
+    },
+    {
+      "title": "CreatiCode: Scratch + AI + 3D",
+      "url": "https://www.creaticode.com/",
+      "snippet": "CreatiCode builds on Scratch 3.0 with kid-friendly AI and 3D tools. Students can generate images, get coding help, and use AI blocks to add vision, speech, chat, and other smart features to their projects."
+    },
+    {
+      "title": "shuaishuaicdp/GUI-World at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/shuaishuaicdp/GUI-World/tree/main",
+      "snippet": "main GUI-World 3 contributors History: 14 commits shuaishuaicdp nielsr HF Staff Add task category, link to paper (#4) 7901fa3 verified 2 months ago"
+    },
+    {
+      "title": "AI游戏开发全流程：2026年个人开发者用AI做游戏的完整教程",
+      "url": "https://www.flowpixai.com/tutorials/ai-game-development-guide.html",
+      "snippet": "简单说：AI游戏开发2026年已能让个人开发者做出可玩的3D游戏——AI写代码、画素材、配音效、调平衡。这篇全流程教程从创意到上线一步步带你走完。"
+    },
+    {
+      "title": "支持的AI模型 - 春水Live | 中文AI角色扮演平台",
+      "url": "https://chunshui.ai/models",
+      "snippet": "春水Live 接入 Claude、Gemini、DeepSeek 等多家大语言模型，支持在同一段对话中随时切换。另提供图像生成与语音合成能力。不同模型在文风、上下文长度与设定服从度上各有取舍，可按场景选择。"
+    }
+  ]
+}

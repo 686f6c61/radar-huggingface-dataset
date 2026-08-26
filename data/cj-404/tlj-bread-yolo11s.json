@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cj-404/tlj-bread-yolo11s",
+  "slug": "cj-404-tlj-bread-yolo11s",
+  "author": "cj-404",
+  "url": "https://huggingface.co/cj-404/tlj-bread-yolo11s",
+  "created_at": "2026-08-26T02:28:53.000Z",
+  "updated_at": "2026-08-26T02:29:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolov11",
+    "object-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20079565,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO11 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "YOLO11s Model by Jackys - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/jackys/yolo11/yolo11s",
+      "snippet": "YOLO11s model from the YOLO11 project by Jackys. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLO11s Model by Tefu - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/tefu/yolo11/yolo11s",
+      "snippet": "YOLO11s model from the YOLO11 project by Tefu. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "SharpAI/yolo11s-coreml · Hugging Face",
+      "url": "https://huggingface.co/SharpAI/yolo11s-coreml",
+      "snippet": "SharpAI / yolo11s-coreml like 0 Object Detection ultralytics yolo computer-vision mlpackage aegis-ai License:agpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ultralytics/YOLO11 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO11",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    }
+  ]
+}

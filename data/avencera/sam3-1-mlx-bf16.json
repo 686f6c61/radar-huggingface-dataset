@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "avencera/sam3.1-mlx-bf16",
+  "slug": "avencera-sam3-1-mlx-bf16",
+  "author": "avencera",
+  "url": "https://huggingface.co/avencera/sam3.1-mlx-bf16",
+  "created_at": "2026-08-25T20:41:53.000Z",
+  "updated_at": "2026-08-25T20:42:20.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "sam3.1_video",
+    "apple-silicon",
+    "sam3",
+    "image-segmentation",
+    "mask-generation",
+    "base_model:facebook/sam3.1",
+    "base_model:finetune:facebook/sam3.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873185260,
+  "parameters_human": "873.2M",
+  "storage_bytes": 3493016552,
+  "storage_human": "3.5 GB",
+  "base_model": "facebook/sam3.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "appautomaton/sam3.1-multiplex-bf16-mlx · Hugging Face",
+      "url": "https://huggingface.co/appautomaton/sam3.1-multiplex-bf16-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/sam3.1-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/sam3.1-bf16",
+      "snippet": "mlx-community / sam3.1-bf16 like 23 Follow MLX Community 15.4k MLX Safetensors sam3.1_video sam3 sam3.1 segmentation detection tracking object-multiplex Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sam3.1-bf16 · Models",
+      "url": "https://www.modelscope.cn/models/mlx-community/sam3.1-bf16",
+      "snippet": "sam3.1-bf16 This model was converted to MLX format from facebook/sam3.1 using mlx-vlm version 0.4.3. Open-vocabulary object detection, instance segmentation, and video tracking with Object Multiplex on Apple Silicon (~873M parameters). SAM 3.1 extends SAM 3 with: MultiplexMaskDecoder: processes 16 objects simultaneously (2.4-4x faster tracking) TriViTDetNeck: 3 parallel FPN heads (detection ..."
+    },
+    {
+      "title": "SAM 3.1: Faster and More Accessible Real-Time Video Detection and ...",
+      "url": "https://ai.meta.com/blog/segment-anything-model-3/",
+      "snippet": "This global reasoning approach streamlines performance and enhances accuracy in crowded scenes. We encourage the community to download the SAM 3.1 model checkpoint, explore the updates to the SAM 3 codebase and research paper, and test drive the updated model on the Segment Anything Playground."
+    },
+    {
+      "title": "SAM 3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/sam3/",
+      "snippet": "With SAM 3 you can use text and visual prompts to precisely identify, segment, and follow any object in images or videos—coming soon to Instagram Edits and Vibes on the Meta AI app."
+    }
+  ]
+}

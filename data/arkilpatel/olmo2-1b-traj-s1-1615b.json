@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "arkilpatel/olmo2-1b-traj-s1-1615b",
+  "slug": "arkilpatel-olmo2-1b-traj-s1-1615b",
+  "author": "arkilpatel",
+  "url": "https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1615b",
+  "created_at": "2026-08-26T01:31:52.000Z",
+  "updated_at": "2026-08-26T02:01:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127703731632,
+  "storage_human": "127.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arkilpatel/olmo2-1b-traj-s2-5b · Hugging Face",
+      "url": "https://huggingface.co/arkilpatel/olmo2-1b-traj-s2-5b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    },
+    {
+      "title": "allenai/OLMo-2-0425-1B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-0425-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo : Accelerating the Science of Language Models",
+      "url": "https://arxiv.org/html/2402.00838v4",
+      "snippet": "The OLMo framework encompasses the tools and resources required for building and researching language models. For training and modeling, it includes full model weights, training code, training logs, and inference code."
+    },
+    {
+      "title": "OLMo from Ai2 - allenai.org",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo is a family of fully open language models, enabling the discovery of new and innovative approaches to model pretraining."
+    }
+  ]
+}

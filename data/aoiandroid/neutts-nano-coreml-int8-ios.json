@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/neutts-nano-coreml-int8-ios",
+  "slug": "aoiandroid-neutts-nano-coreml-int8-ios",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/neutts-nano-coreml-int8-ios",
+  "created_at": "2026-08-25T19:37:43.000Z",
+  "updated_at": "2026-08-25T19:37:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "ios",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 601069489,
+  "storage_human": "601 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - neuphonic/neutts: On-device TTS model by Neuphonic",
+      "url": "https://github.com/neuphonic/neutts",
+      "snippet": "Multilingual Space NeuTTS-2E (English, emotional control): Model, Q8 GGUF, Q4 GGUF, Space NeuTTS-2E.mp4 Created by Neuphonic - building faster, smaller, on-device voice AI State-of-the-art Voice AI has been locked behind web APIs for too long. NeuTTS is a collection of open source, on-device, TTS speech language models with instant voice cloning."
+    },
+    {
+      "title": "aoiandroid (npm i NVIDIA) - Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/models",
+      "snippet": "npm i NVIDIA liked a model about 22 hours ago"
+    },
+    {
+      "title": "aoiandroid (npm i NVIDIA) - Hugging Face",
+      "url": "https://huggingface.co/aoiandroid",
+      "snippet": "Audio-to-Audio • Updated 15 days ago • 5 aoiandroid models matching neucodec search"
+    },
+    {
+      "title": "GitHub - apple/coreai-models: Model export recipes, Python primitives ...",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format. Reusable primitives — Python building blocks for authoring custom Core AI models in PyTorch. Runtime utilities — Swift package built on top of Core AI framework to run models on macOS and iOS."
+    },
+    {
+      "title": "Neutts Nano - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/neutts-nano.html",
+      "snippet": "Download Neutts Nano GGUF model. 354 MB, 605 downloads, 0 likes."
+    }
+  ]
+}

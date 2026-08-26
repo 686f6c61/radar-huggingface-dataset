@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Chaenn/smolvla_policy_so101_cube_multitask_sim_ft_real_0826",
+  "slug": "chaenn-smolvla_policy_so101_cube_multitask_sim_ft_real_0826",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_sim_ft_real_0826",
+  "created_at": "2026-08-25T20:18:55.000Z",
+  "updated_at": "2026-08-25T20:19:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Chaenn/so101_cube_multitask_hil_0724_merged_fixed",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720064,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaenn/smolvla_policy_so101_cube_multitask_real_0820 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_real_0820",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "Chaenn/smolvla_policy_so101_cube_multitask_0716 · Hugging Face",
+      "url": "https://huggingface.co/Chaenn/smolvla_policy_so101_cube_multitask_0716",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "Technically it should pick up the cube regardless of its color, for example, and this is kind of the point of using VLAs instead of other IL models: it should generalize based on prompts. I ran a quick color generalization test with the SmolVLA dual-cam model, since it was trained exclusively on a red cube. ... 1/3 success vs 5/5 with the ..."
+    },
+    {
+      "title": "GitHub - Luoyadan/lerobot_so101-sim2real: A detailed guide on sim-to ...",
+      "url": "https://github.com/Luoyadan/lerobot_so101-sim2real",
+      "snippet": "The tutorial heavily builds on top of Lerobot-Sim2Real but tailored for SO101. We will show an example on how to train a RGB based model controlling an SO101 robot arm in simulation and deploying that zero-shot in the real world to grasp cubes. LeRobot Sim2real provides code to train with Reinforcement Learning in fast GPU parallelized simulation and rendering via ManiSkill and deploy to the ..."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot&#x27;s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when generating ..."
+    }
+  ]
+}

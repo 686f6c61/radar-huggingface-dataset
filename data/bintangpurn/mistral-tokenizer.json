@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BINTANGPURN/mistral-tokenizer",
+  "slug": "bintangpurn-mistral-tokenizer",
+  "author": "BINTANGPURN",
+  "url": "https://huggingface.co/BINTANGPURN/mistral-tokenizer",
+  "created_at": "2026-08-25T22:38:59.000Z",
+  "updated_at": "2026-08-25T22:39:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "critical",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "lightweight-multimodal",
+    "medium-balanced",
+    "numeric-bibtex",
+    "structured-imrad",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mistral",
+      "snippet": "Grouped-query attention (GQA) speeds up inference and reduces memory requirements. Mistral also features a byte-fallback BPE tokenizer to improve token handling and efficiency by ensuring characters are never mapped to out-of-vocabulary tokens. You can find all the original Mistral checkpoints under the Mistral AI_ organization."
+    },
+    {
+      "title": "Mistral - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.0/model_doc/mistral",
+      "snippet": "mistral-common is the official tokenizer library for Mistral AI models. To use it, you need to install it with: ... Otherwise the tokenizer falls back to the Transformers implementation of the tokenizer. For more info on mistral-common, see mistral-common. This class is a wrapper around a mistral_common.tokens.tokenizers.mistral.MistralTokenizer."
+    },
+    {
+      "title": "Tokenizer - Mistral AI Cookbook | Mistral Docs",
+      "url": "https://docs.mistral.ai/resources/cookbooks/concept-deep-dive-tokenization-tokenizer",
+      "snippet": "Learn Tokenizer with practical examples and code snippets using Mistral AI&#x27;s LLMs."
+    },
+    {
+      "title": "Mistral Tokenizer - Lunary",
+      "url": "https://lunary.ai/mistral-tokenizer",
+      "snippet": "Mistral Tokenizer Use this tool below to understand how a piece of text might be tokenized by Mistral models (Mistral 7B, Mixtral 8X7B, Mistral Medium, Mistral Small) and the total count of tokens in that piece of text."
+    },
+    {
+      "title": "Tokenization - Mistral AI Cookbook | Mistral Docs",
+      "url": "https://docs.mistral.ai/resources/cookbooks/concept-deep-dive-tokenization-basics",
+      "snippet": "The model possesses a vocabulary of tokens with their corresponding IDs. The tokenizer&#x27;s job is to break apart the string and convert it into a sequence of token IDs, a step called \"encoding.\" It is also the tokenizer&#x27;s job to convert a sequence of IDs back into a string, a step called \"decoding.\""
+    }
+  ]
+}

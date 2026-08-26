@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/nomic-embed-text-v1.5-ExecuTorch",
+  "slug": "mlboydaisuke-nomic-embed-text-v1-5-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/nomic-embed-text-v1.5-ExecuTorch",
+  "created_at": "2026-08-25T22:06:34.000Z",
+  "updated_at": "2026-08-25T22:07:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "feature-extraction",
+    "sentence-similarity",
+    "base_model:nomic-ai/nomic-embed-text-v1.5",
+    "base_model:quantized:nomic-ai/nomic-embed-text-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1095908467,
+  "storage_human": "1.1 GB",
+  "base_model": "nomic-ai/nomic-embed-text-v1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nomic-ai/nomic-embed-text-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nomic-ai/nomic-embed-text-v1.5 at main",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/blob/main/README.md",
+      "snippet": "like 805 Follow Nomic AI 1.09k Sentence Similarity sentence-transformers ONNX Safetensors Transformers Transformers.js English nomic_bert feature-extraction mteb custom_code Eval Results (legacy) Eval Results text-embeddings-inference arxiv:2402.01613 arxiv:2205.13147 License:apache-2.0 Model card FilesFiles and versions xet Community 57 Deploy Use this model main nomic-embed-text-v1.5 /README ..."
+    },
+    {
+      "title": "nomic-embed-text:v1.5 - Ollama",
+      "url": "https://ollama.com/library/nomic-embed-text:v1.5",
+      "snippet": "A high-performing open embedding model with a large token context window."
+    },
+    {
+      "title": "model-cards/ai/nomic-embed-text-v1.5.md at main - GitHub",
+      "url": "https://github.com/docker/model-cards/blob/main/ai/nomic-embed-text-v1.5.md",
+      "snippet": "Nomic Embed Text Nomic Embed Text v1 is an open‑source, fully auditable text embedding model with an 8192‑token context window. It outperforms OpenAI Ada‑002 and text‑embedding‑3‑small on various embedding benchmarks while providing open weights, training code, and data under an Apache‑2 license."
+    },
+    {
+      "title": "nomic-embed-text-v1.5 model | Kaggle",
+      "url": "https://www.kaggle.com/datasets/donkeys/nomic-embed-text-v1-5-model",
+      "snippet": "nomic-ai/nomic-embed-text-v1.5: 8k sequence length embedding model for long docs"
+    }
+  ]
+}

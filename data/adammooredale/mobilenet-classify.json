@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Adammooredale/mobilenet-classify",
+  "slug": "adammooredale-mobilenet-classify",
+  "author": "Adammooredale",
+  "url": "https://huggingface.co/Adammooredale/mobilenet-classify",
+  "created_at": "2026-08-25T23:43:09.000Z",
+  "updated_at": "2026-08-25T23:43:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "bulleted",
+    "footnote",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "neutral",
+    "self-supervised",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileNet · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/en/unit2/cnns/mobilenet",
+      "snippet": "MobileNet MobileNet is a type of neural network architecture designed for mobile devices. It was developed by Google&#x27;s research team and first introduced in 2017. The primary goal of MobileNet is to provide high-performance, low-latency image classification and object detection on smartphones, tablets, and other resource-constrained devices."
+    },
+    {
+      "title": "GitHub - modelhub-ai/mobilenet",
+      "url": "https://github.com/modelhub-ai/mobilenet",
+      "snippet": "This repository hosts the contributor source files for the mobilenet model. ModelHub integrates these files into an engine and controlled runtime environment. A unified API allows for out-of-the-box reproducible implementations of published models. For more information, please visit www.modelhub.ai or contact us info@modelhub.ai."
+    },
+    {
+      "title": "opencv/image_classification_mobilenet · Hugging Face",
+      "url": "https://huggingface.co/opencv/image_classification_mobilenet",
+      "snippet": "image_classification_mobilenetvX_2022apr_int8bq.onnx represents the block-quantized version in int8 precision and is generated using block_quantize.py with block_size=64."
+    },
+    {
+      "title": "MobileNet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MobileNet",
+      "snippet": "MobileNet is a family of convolutional neural network (CNN) architectures designed for image classification, object detection, and other computer vision tasks. They are designed for small size, low latency, and low power consumption, making them suitable for on-device inference and edge computing on resource-constrained devices like mobile ..."
+    },
+    {
+      "title": "Image Recognition with Mobilenet - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/image-recognition-with-mobilenet/",
+      "snippet": "Image Recognition plays an important role in many fields like medical disease analysis and many more. In this article, we will mainly focus on how to Recognize the given image, what is being displayed. What is Mobilenet Mobilenet is a model which does the same convolution as done by CNN to filter images but in a different way than those done by the previous CNN. It uses the idea of Depth ..."
+    }
+  ]
+}

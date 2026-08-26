@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "kwondw/distilroberta-base-nli-v3",
+  "slug": "kwondw-distilroberta-base-nli-v3",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/distilroberta-base-nli-v3",
+  "created_at": "2026-08-26T02:21:45.000Z",
+  "updated_at": "2026-08-26T02:22:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:557850",
+    "loss:GISTEmbedLoss",
+    "arxiv:1908.10084",
+    "arxiv:2402.16829",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82118400,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328485112,
+  "storage_human": "328 MB",
+  "base_model": "distilbert/distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts dev",
+      "metric": "Pearson Cosine",
+      "value": 0.8533793193258773
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts dev",
+      "metric": "Spearman Cosine",
+      "value": 0.8649705277847747
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts test",
+      "metric": "Pearson Cosine",
+      "value": 0.8195913911660704
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "sts test",
+      "metric": "Spearman Cosine",
+      "value": 0.8417228711189053
+    }
+  ],
+  "sources": [
+    {
+      "title": "nikhilr/distilroberta-base-nli-v3 · Hugging Face",
+      "url": "https://huggingface.co/nikhilr/distilroberta-base-nli-v3",
+      "snippet": "SentenceTransformer based on distilbert/distilroberta-base This is a sentence-transformers model finetuned from distilbert/distilroberta-base on the all-nli dataset. It maps sentences & paragraphs to a 768-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more."
+    },
+    {
+      "title": "cross-encoder/nli-distilroberta-base at main - Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/nli-distilroberta-base/tree/main",
+      "snippet": "cross-encoder / nli-distilroberta-base like 24 Follow Sentence Transformers - Cross-Encoders 117 Zero-Shot Classification sentence-transformers PyTorch JAX ONNX Safetensors OpenVINO Transformers nyu-mll/multi_nli stanfordnlp/snli English roberta text-classification License:apache-2.0 Model card FilesFiles and versions xet Community 4 Use this model main nli-distilroberta-base Ctrl+K Ctrl+K 5 ..."
+    },
+    {
+      "title": "Deploy nikhilr/distilroberta-base-nli-v3 | Inference Endpoints by ...",
+      "url": "https://endpoints.huggingface.co/new/nikhilr/distilroberta-base-nli-v3?repository=nikhilr%2Fdistilroberta-base-nli-v3",
+      "snippet": "Deploy distilroberta-base-nli-v3 for sentence-similarity inference in 1 click."
+    },
+    {
+      "title": "nli-distilroberta-base | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/nli-distilroberta-base/",
+      "snippet": "What is nli-distilroberta-base? nli-distilroberta-base is a specialized cross-encoder model built on the DistilRoBERTa architecture, specifically trained for Natural Language Inference (NLI) tasks. It leverages the SentenceTransformers framework and has been trained on both SNLI and MultiNLI datasets to understand relationships between text pairs. Implementation Details The model implements a ..."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Karanvermasuw/intent-dev",
+  "slug": "karanvermasuw-intent-dev",
+  "author": "Karanvermasuw",
+  "url": "https://huggingface.co/Karanvermasuw/intent-dev",
+  "created_at": "2026-08-26T00:03:10.000Z",
+  "updated_at": "2026-08-26T00:03:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "document-ai",
+    "empirical-focused",
+    "enthusiastic",
+    "intro-related-method-exp-conclusion",
+    "latex-cvpr",
+    "numeric-nature",
+    "passive",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Intent-Driven Development for AI Coding | intent-driven.dev",
+      "url": "https://intent-driven.dev/",
+      "snippet": "About intent-driven.dev intent-driven.dev is the home of Intent-Driven Development — structuring intent and context so AI agents build what you actually meant. Master the practices that make it work: context engineering, spec-driven development, harness engineering, and more — with tool comparisons, expert insights, and professional training."
+    },
+    {
+      "title": "Kiro: Move beyond AI coding to agentic engineering",
+      "url": "https://kiro.dev/",
+      "snippet": "Bring structure to AI coding with spec-driven development Kiro turns your prompts into requirements, architectural designs, and sequenced tasks, then implements them with parallel agents. Property-based tests catch the edge cases that pass unit tests but break in production."
+    },
+    {
+      "title": "[2603.22106] From Technical Debt to Cognitive and Intent Debt ...",
+      "url": "https://arxiv.org/abs/2603.22106",
+      "snippet": "Generative AI is accelerating software development, but may quietly shift where the most significant risks lie. As AI generates code faster than teams can understand it, two under appreciated forms of debt accumulate: cognitive debt, the erosion of shared understanding across a team, and intent debt, the absence of externalized rationale that developers and AI agents need to work safely with ..."
+    },
+    {
+      "title": "Intent Driven Dev - GitHub",
+      "url": "https://github.com/intent-driven-dev/",
+      "snippet": "Context Engineering and Spec-Driven Development: practices, tools comparisons, expert insights, and learn how to structure context for AI agents - Intent Driven Dev"
+    }
+  ]
+}

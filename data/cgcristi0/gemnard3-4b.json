@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cgcristi0/gemnard3-4b",
+  "slug": "cgcristi0-gemnard3-4b",
+  "author": "cgcristi0",
+  "url": "https://huggingface.co/cgcristi0/gemnard3-4b",
+  "created_at": "2026-08-26T00:09:23.000Z",
+  "updated_at": "2026-08-26T00:12:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemnard3",
+    "lora",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4551515648,
+  "parameters_human": "4.55B",
+  "storage_bytes": 11768428675,
+  "storage_human": "11.8 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cgcristi0/qwenard3-4b · Hugging Face",
+      "url": "https://huggingface.co/cgcristi0/qwenard3-4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-3-4b-pt · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-4b-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 4B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/gemma-3-4b",
+      "snippet": "Gemma 3 4B Lightweight Gemma 3 model (1B) with 128K context, vision-language input, and multilingual support for on-device AI."
+    },
+    {
+      "title": "gemma3:4b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:4b",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    },
+    {
+      "title": "Gemma 3 4B - Google AI Model | ValorGPT",
+      "url": "https://www.valorgpt.com/models/google-gemma-3-4b-it",
+      "snippet": "Gemma 3 4B is a premium large language model developed by Google. With a 131K tokens context window, this model excels at complex reasoning and step-by-step problem solving, understands and analyzes images alongside text, processes extensive documents and conversations."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mov-SM-Executivo/Mov",
+  "slug": "mov-sm-executivo-mov",
+  "author": "Mov-SM-Executivo",
+  "url": "https://huggingface.co/Mov-SM-Executivo/Mov",
+  "created_at": "2026-08-25T19:17:46.000Z",
+  "updated_at": "2026-08-25T19:17:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOV.AI - The Robotics Engine Platform",
+      "url": "https://www.mov.ai/",
+      "snippet": "ROS-based Software Platform for Autonomous Mobile Robots. Software development tools, deployment tools, navigation, and fleet management."
+    },
+    {
+      "title": "Move",
+      "url": "https://platform.move.ai/",
+      "snippet": "Move AI provides advanced motion capture solutions using AI for realistic 3D animations and visual effects."
+    },
+    {
+      "title": "MOV-AI - GitHub",
+      "url": "https://github.com/MOV-AI/",
+      "snippet": "MOV.AI Robotics Engine Platform. MOV.AI has 60 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Scholar01/sd-webui-mov2mov: This is the Mov2mov plugin for ...",
+      "url": "https://github.com/Scholar01/sd-webui-mov2mov",
+      "snippet": "Please resolve the authorization issues of the video source on your own. Any problems caused by using unauthorized videos for conversion must be borne by the user. It has nothing to do with mov2mov! Any video made with mov2mov and published on video platforms must clearly specify the source of the video used for conversion in the description. For example, if you use someone else&#x27;s video and ..."
+    },
+    {
+      "title": "Moveworks overview - ServiceNow",
+      "url": "https://www.servicenow.com/docs/r/employee-service-management/employee-experience-foundation/moveworks.html",
+      "snippet": "Moveworks is an Agentic AI Platform that makes work flow by empowering employees with an AI Assistant to answer questions, take actions, and automate work across the enterprise. Moveworks combines agentic reasoning with enterprise-ready integrations to deliver intelligent automation at scale through natural language interactions."
+    }
+  ]
+}

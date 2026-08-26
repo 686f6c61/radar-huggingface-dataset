@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond",
+  "slug": "ideallab-engiopt-smoke-20260825-211404-diffusion-2d-cond",
+  "author": "IDEALLab",
+  "url": "https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond",
+  "created_at": "2026-08-25T21:45:25.000Z",
+  "updated_at": "2026-08-25T21:45:38.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "engiopt",
+  "languages": [],
+  "tags": [
+    "engiopt",
+    "engineering-design",
+    "inverse-design",
+    "engibench",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70221283,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IDEALLab/EngiTeach: EngiBench / EngiOpt problems for Teaching ...",
+      "url": "https://github.com/IDEALLab/EngiTeach",
+      "snippet": "This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt",
+      "snippet": "This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "IDEALLab/engiopt-neurips-diffusion-2d-cond · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-neurips-diffusion-2d-cond",
+      "snippet": "These are NOT comparable to current EngiOpt checkpoints. The EngiBench problem definitions have changed since the paper, so a result here and a result in IDEALLab/engiopt-diffusion-2d-cond for the same problem id measure different things."
+    },
+    {
+      "title": "IDEALLab/engiopt-public-smoke-cgan-cnn-2d · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-public-smoke-cgan-cnn-2d",
+      "snippet": "EngiOpt cgan_cnn_2d This repository stores EngiOpt checkpoint packages for one model family. Each checkpoint package contains model weight files together with run_config.json and metadata.json so evaluation can run without depending on W&B run config state."
+    },
+    {
+      "title": "EngiBench: A standard API, Open-Source Datasets and Benchmarks for ...",
+      "url": "https://engibench.ethz.ch/",
+      "snippet": "EngiBench: A standard API, Open-Source Datasets and Benchmarks for Engineering Design # EngiBench offers a collection of engineering design problems, datasets, and benchmarks to facilitate the development and evaluation of optimization and machine learning algorithms for engineering design. Our goal is to provide a standard API to enable researchers to easily compare and evaluate their ..."
+    }
+  ]
+}

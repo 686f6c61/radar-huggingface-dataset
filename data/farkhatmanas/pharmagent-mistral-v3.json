@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FarkhatManas/pharmagent-mistral-v3",
+  "slug": "farkhatmanas-pharmagent-mistral-v3",
+  "author": "FarkhatManas",
+  "url": "https://huggingface.co/FarkhatManas/pharmagent-mistral-v3",
+  "created_at": "2026-08-25T23:47:04.000Z",
+  "updated_at": "2026-08-25T23:47:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27297544,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FarkhatManas (Farkhat Manas) - Hugging Face",
+      "url": "https://huggingface.co/FarkhatManas",
+      "snippet": "User profile of Farkhat Manas on Hugging Face"
+    },
+    {
+      "title": "pharmAgent - GitHub",
+      "url": "https://github.com/PharmAgent-ai",
+      "snippet": "GitHub is where pharmAgent builds software. People This organization has no public members. You must be a member to see who&#x27;s a part of this organization."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "pharmAgent - AI-Powered Drug Shortage Intelligence",
+      "url": "https://www.pharm-agent.ai/",
+      "snippet": "pharmAgent uses AI to connect fragmented supply, regulatory, and market signals into earlier shortage insight for pharmaceutical companies."
+    },
+    {
+      "title": "Introducing Mistral 3 | Mistral AI",
+      "url": "https://mistral.ai/news/mistral-3/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

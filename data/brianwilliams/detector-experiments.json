@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brianwilliams/detector-experiments",
+  "slug": "brianwilliams-detector-experiments",
+  "author": "brianwilliams",
+  "url": "https://huggingface.co/brianwilliams/detector-experiments",
+  "created_at": "2026-08-25T19:33:53.000Z",
+  "updated_at": "2026-08-25T19:34:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "batchnorm",
+    "bilinear",
+    "contrastive",
+    "mish",
+    "mobilevit",
+    "onecycle",
+    "sliding-window",
+    "small",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brian Williams | MIT CSAIL",
+      "url": "https://www.csail.mit.edu/person/brian-williams",
+      "snippet": "Brian Charles Williams Prof. Williams&#x27; research concentrates on model based-autonomy -- the creation of long-lived autonomous systems that can explore, command, diagnose and repair themselves using fast, commonsense reasoning coupled to machine learning."
+    },
+    {
+      "title": "Brian WILLIAMS | Scientist | PhD | Los Alamos National ... - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Brian-Williams-31",
+      "snippet": "Brian WILLIAMS, Scientist | Cited by 5,558 | of Los Alamos National Laboratory, NM (LANL) | Read 78 publications | Contact Brian WILLIAMS"
+    },
+    {
+      "title": "Experiment: Can humans recognize AI-generated images?",
+      "url": "https://brianwilliamsscience.com/experiment-can-humans-recognize-ai-generated-images/",
+      "snippet": "Compare different AI image generation websites or services. Are some better than others at producing convincing images? Do an experiment to find out if people can recognize AI-generated text instead of images. Can you produce fake news articles that include both images and text about real people or events?"
+    },
+    {
+      "title": "Brian C. Williams - MIT AeroAstro",
+      "url": "https://aeroastro.mit.edu/people/brian-c-williams/",
+      "snippet": "Specialization and Research Interests Professor Williams leads the Model-based Embedded and Robotic Systems group, within the Computer Science and Artificial Intelligence Laboratory (CSAIL) at the Massachusetts Institute of Technology."
+    },
+    {
+      "title": "GitHub - ahans30/Binoculars: [ICML 2024] Binoculars: Zero-Shot ...",
+      "url": "https://github.com/ahans30/Binoculars",
+      "snippet": "We introduce Binoculars, a state-of-the-art method for detecting AI-generated text. Binoculars is a zero-shot and domain-agnostic (requires no training data) method. It is based on a simple idea: most decoder-only, causal language models have a huge overlap in pretraining datasets, for e.g. Common Crawl, Pile, etc. More details about the method and results can be found in our paper Spotting ..."
+    }
+  ]
+}

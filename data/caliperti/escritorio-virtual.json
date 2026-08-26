@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Caliperti/escritorio-virtual",
+  "slug": "caliperti-escritorio-virtual",
+  "author": "Caliperti",
+  "url": "https://huggingface.co/Caliperti/escritorio-virtual",
+  "created_at": "2026-08-26T02:22:04.000Z",
+  "updated_at": "2026-08-26T02:22:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Virtual Models for product photography - Photoroom",
+      "url": "https://www.photoroom.com/tools/virtual-model",
+      "snippet": "An AI virtual model generator uses generative AI to place clothing and other fashion items like jewelry, eyewear, and footwear onto lifelike digital models. With Photoroom, you can upload a product image, choose your preferred model type, and our AI automatically creates high-quality virtual model images with natural poses and lighting."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "VModel - Deploy and Run AI Models with an API",
+      "url": "https://vmodel.ai/",
+      "snippet": "VModel simplifies AI deployment with scalable APIs for image generation, text processing, and custom model integration—powering your AI solutions effortlessly."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Escritório Virtual",
+      "url": "https://escritoriovirtual.app/login",
+      "snippet": "Escritório Virtual Bem-vindo, autentique-se abaixo para prosseguir. E-mail"
+    }
+  ]
+}

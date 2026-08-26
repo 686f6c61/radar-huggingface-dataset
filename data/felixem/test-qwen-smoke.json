@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "felixem/test-qwen-smoke",
+  "slug": "felixem-test-qwen-smoke",
+  "author": "felixem",
+  "url": "https://huggingface.co/felixem/test-qwen-smoke",
+  "created_at": "2026-08-26T02:46:08.000Z",
+  "updated_at": "2026-08-26T02:46:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ml-intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Try AI Models - Interactive LLM Playground - Qwen Cloud",
+      "url": "https://www.qwencloud.com/try-ai",
+      "snippet": "Test Qwen models in our interactive Try AI playground. Explore multimodal LLM capabilities, real-time inference, and scalable API tools for global developers."
+    },
+    {
+      "title": "alicloud-skills/tests/ai/multimodal/aliyun-qwen-vl-test/scripts/smoke ...",
+      "url": "https://github.com/cinience/alicloud-skills/blob/main/tests/ai/multimodal/aliyun-qwen-vl-test/scripts/smoke_test_qwen_vl.py",
+      "snippet": "alibaba cloud skills，qwen ，wan and all skills. Contribute to cinience/alicloud-skills development by creating an account on GitHub."
+    },
+    {
+      "title": "jegan2/qwen-smoke-test · Hugging Face",
+      "url": "https://huggingface.co/jegan2/qwen-smoke-test",
+      "snippet": "Instructions to use jegan2/qwen-smoke-test with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use jegan2/qwen-smoke-test with Transformers:"
+    },
+    {
+      "title": "AI Models by Qwen | Try NVIDIA NIM APIs",
+      "url": "https://build.nvidia.com/qwen",
+      "snippet": "Qwen-Image-Edit is an image editing model with multilingual text editing and strong subject consistency."
+    },
+    {
+      "title": "How to convert a Qwen model with a quick --test smoke check — Olive ...",
+      "url": "https://microsoft.github.io/Olive/how-to/cli/cli-fast-test.html",
+      "snippet": "How to convert a Qwen model with a quick --test smoke check # If you are converting a large language model, it is often useful to validate the Olive command, environment, and conversion recipe on a much smaller model before spending time on the full checkpoint. The --test option does that for Hugging Face models."
+    }
+  ]
+}

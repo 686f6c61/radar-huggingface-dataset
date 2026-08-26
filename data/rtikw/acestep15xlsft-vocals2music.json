@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rtikw/acestep15xlsft-vocals2music",
+  "slug": "rtikw-acestep15xlsft-vocals2music",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/acestep15xlsft-vocals2music",
+  "created_at": "2026-08-25T19:49:32.000Z",
+  "updated_at": "2026-08-25T19:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "audio-generation",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 210454528,
+  "parameters_human": "210.5M",
+  "storage_bytes": 482354924,
+  "storage_human": "482 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "acestep15xlsft-vocals2music · Models",
+      "url": "https://www.modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-vocals2music",
+      "snippet": "This model is a template model trained based on ACE-Step-v1.5-XL-sft, capable of generating accompaniment music for acapella vocals. The current version only supports generating accompaniments for audio with stable beats and strong rhythmic characteristics."
+    },
+    {
+      "title": "DiffSynth-Studio/examples/ace_step/model_inference/acestep15xlsft ...",
+      "url": "https://github.com/modelscope/DiffSynth-Studio/blob/main/examples/ace_step/model_inference/acestep15xlsft-vocals2music.py",
+      "snippet": "105 lines (93 loc) · 3.26 KB main DiffSynth-Studio / examples / ace_step / model_inference / acestep15xlsft-vocals2music.py Code Blame 105 lines (93 loc) · 3.26 KB ..."
+    },
+    {
+      "title": "DiffSynth-Studio/examples/ace_step/model_training/validate_full ...",
+      "url": "https://github.com/modelscope/DiffSynth-Studio/blob/main/examples/ace_step/model_training/validate_full/acestep15xlsft-vocals2music.py",
+      "snippet": "DiffSynth-Studio / examples / ace_step / model_training / validate_full / acestep15xlsft-vocals2music.py Artiprocher Support ACE-Step Vocals2music (#1498) 2c1794d · 2 months ago"
+    },
+    {
+      "title": "acestep15xlsft-vocals2music · Models",
+      "url": "https://www.modelscope.cn/models/diffsynth-studio/acestep15xlsft-vocals2music/feedback",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "ACE-Step — diffsynth 2.0.0 documentation",
+      "url": "https://diffsynth-studio-doc.readthedocs.io/en/latest/Model_Details/ACE-Step.html",
+      "snippet": "ACE-Step 1.5 is an open-source music generation model based on DiT architecture, supporting text-to-music, audio cover, repainting and other functionalities, running efficiently on consumer-grade hardware."
+    }
+  ]
+}

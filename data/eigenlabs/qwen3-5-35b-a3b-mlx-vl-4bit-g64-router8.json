@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64-router8",
+  "slug": "eigenlabs-qwen3-5-35b-a3b-mlx-vl-4bit-g64-router8",
+  "author": "EigenLabs",
+  "url": "https://huggingface.co/EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64-router8",
+  "created_at": "2026-08-25T22:07:12.000Z",
+  "updated_at": "2026-08-25T22:07:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "qwen3.5",
+    "vision-language",
+    "mixture-of-experts",
+    "4-bit",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · EigenLabs/Qwen3.6-35B-A3B-MLX-mixed-4bit at main",
+      "url": "https://huggingface.co/EigenLabs/Qwen3.6-35B-A3B-MLX-mixed-4bit/blob/main/README.md",
+      "snippet": "Qwen3.6-35B-A3B — MLX mixed-precision 4-bit (20 GB, ~4.6 bpw) A quality-first, mixed-precision MLX quantization of Qwen3.6-35B-A3B (35B-total / 3B-active hybrid MoE: 30 GatedDeltaNet + 10 full-attention layers, 256 experts top-8 + shared expert). Runs natively on Apple Silicon via mlx-lm and mlx-swift-lm — standard MLX affine format, no custom kernels."
+    },
+    {
+      "title": "EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8 at main",
+      "url": "https://huggingface.co/EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8/tree/main",
+      "snippet": "Instructions to use EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use EigenLabs/Qwen3.6-35B-A3B-MLX-VL-4bit-g64-router8 with MLX:"
+    },
+    {
+      "title": "Qwen 3.5 MLX on Apple Silicon (2026): 35B-A3B in 19.5GB, 9B at 25-35 ...",
+      "url": "https://willitrunai.com/blog/qwen-3-5-mlx-apple-silicon-guide",
+      "snippet": "Qwen 3.5 35B-A3B MLX 4-bit uses ~19.5GB; 9B fits 16GB Macs at 25-35 tok/s. Full MLX memory + tok/s per variant, M4 16GB to M3 Ultra 512GB."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    },
+    {
+      "title": "Qwen 3.5 Deep Dive: 35B-A3B, 27B, 122B-A10B, 397B-A17B — Local AI Guide ...",
+      "url": "https://localclaw.io/blog/qwen35-deep-dive",
+      "snippet": "Qwen 3.5 Deep Dive: The MoE Revolution for Local AI Qwen 3.5 spans compact dense checkpoints and much larger dense and MoE releases. The 35B-A3B activates about 3B parameters per token, reducing compute while the full quantized weights still have to fit in memory."
+    }
+  ]
+}

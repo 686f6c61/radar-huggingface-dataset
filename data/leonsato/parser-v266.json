@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Leonsato/parser-v266",
+  "slug": "leonsato-parser-v266",
+  "author": "Leonsato",
+  "url": "https://huggingface.co/Leonsato/parser-v266",
+  "created_at": "2026-08-25T21:31:15.000Z",
+  "updated_at": "2026-08-25T21:31:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "compact",
+    "empirical-focused",
+    "enthusiastic",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "latex-arxiv",
+    "numeric-bibtex",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aicfull - Kaggle",
+      "url": "https://www.kaggle.com/code/minhqunhc/aicfull",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from AIC 2026"
+    },
+    {
+      "title": "Parsio — AI-Powered Document & Email Parser",
+      "url": "https://parsio.io/",
+      "snippet": "Automate data extraction with the AI-powered document parser Extract structured data from your PDFs, emails and other documents, automatically."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "GitHub - usarfoss/Leon-AI",
+      "url": "https://github.com/usarfoss/Leon-AI",
+      "snippet": "Contribute to usarfoss/Leon-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "INF-MLLM/Infinity-Parser2 at main · infly-ai/INF-MLLM · GitHub",
+      "url": "https://github.com/infly-ai/INF-MLLM/tree/main/Infinity-Parser2",
+      "snippet": "Infinity-Parser2-Flash, engineered for low-latency inference, delivers a 3.68x speedup over our previous Infinity-Parser-7B model. With significant upgrades to both our data engine and multi-task reinforcement learning approach, the model consolidates robust multi-modal parsing capabilities into a unified architecture, unlocking brand-new zero ..."
+    }
+  ]
+}

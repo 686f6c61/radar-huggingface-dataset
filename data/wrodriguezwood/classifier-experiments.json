@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wrodriguezwood/classifier-experiments",
+  "slug": "wrodriguezwood-classifier-experiments",
+  "author": "wrodriguezwood",
+  "url": "https://huggingface.co/wrodriguezwood/classifier-experiments",
+  "created_at": "2026-08-25T19:44:30.000Z",
+  "updated_at": "2026-08-25T19:44:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "empirical-focused",
+    "footnote",
+    "grounded-language",
+    "html",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "neutral",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wrodriguezwood (William Rodriguez) - Hugging Face",
+      "url": "https://huggingface.co/wrodriguezwood",
+      "snippet": "AI & ML interests I run marathons and train models. Both are painful."
+    },
+    {
+      "title": "AI Fiesta - Get Answers from the World&#x27;s Top AI Models in One Chat",
+      "url": "https://aifiesta.ai/",
+      "snippet": "AI Fiesta lets you chat with top AI models like ChatGPT, Gemini Pro, Claude, Perplexity, Deepseek, and Grok — all under one subscription. Compare model responses side-by-side in real-time and choose the best AI for every task."
+    },
+    {
+      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
+      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "AI-driven initiative to assist hospitals and rural clinics in early detection of Diabetic Retinopathy, supporting accessible eye care for all through open healthcare innovation."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rtikw/piano-transcription-crnn",
+  "slug": "rtikw-piano-transcription-crnn",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/piano-transcription-crnn",
+  "created_at": "2026-08-25T19:47:06.000Z",
+  "updated_at": "2026-08-25T19:47:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "piano-transcription",
+    "music-transcription",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171966578,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "piano-transcription: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/piano-transcription-bytedance",
+      "snippet": "Overview piano-transcription is a high-resolution piano transcription system that detects individual piano notes from audio recordings and converts them into MIDI files. Developed by bytedance, this system implements a CRNN (Convolutional Recurrent Neural Network) architecture trained on the MAESTRO dataset—over 200 hours of virtuosic piano performances with fine alignment (~3 ms precision ..."
+    },
+    {
+      "title": "Research on Automatic Piano Music Transcription Algorithm Based on CNN",
+      "url": "https://dl.acm.org/doi/fullHtml/10.1145/3702879.3702914",
+      "snippet": "In the task of automatic piano music transcription based on Convolutional Neural Networks (CNN), data preprocessing is one of the key steps in algorithm design, directly affecting the model&#x27;s training performance and the final transcription accuracy. The raw data of piano audio typically exists in the form of time-domain signals, which need to be converted into features suitable for CNN ..."
+    },
+    {
+      "title": "Research on Automatic Piano Music Transcription Algorithm Based on CNN",
+      "url": "https://dl.acm.org/doi/epdf/10.1145/3702879.3702914",
+      "snippet": "Abstract With the development of deep learning technology, automatic music transcription has gradually become an important research direc-tion in the field of music information processing. In particular, manual transcription is no longer sufficient to meet the large-scale automation needs of complex piano music. This paper proposes an automatic piano music transcription model that combines Con ..."
+    },
+    {
+      "title": "Design and implementation of piano audio automatic music transcription ...",
+      "url": "https://link.springer.com/article/10.1186/s13636-025-00412-7",
+      "snippet": "This paper presents the design and implementation of an automatic music transcription algorithm for piano audio, utilizing an optimized convolutional neural network with optimal parameters. In this study, we adopt the cepstral coefficient derived from cochlear filters, a method commonly used in speech signal processing, for extracting features from transformed musical audio. Conventional ..."
+    },
+    {
+      "title": "Research on Automatic Piano Music Transcription Algorithm Based on CNN",
+      "url": "https://dlnext.acm.org/doi/full/10.1145/3702879.3702914",
+      "snippet": "In particular, manual transcription is no longer sufficient to meet the large-scale automation needs of complex piano music. This paper proposes an automatic piano music transcription model that combines Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), and Multilayer Perceptron (MLP)."
+    }
+  ]
+}

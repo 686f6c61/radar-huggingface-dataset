@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shortylow1358/clovertotallyspies",
+  "slug": "shortylow1358-clovertotallyspies",
+  "author": "shortylow1358",
+  "url": "https://huggingface.co/shortylow1358/clovertotallyspies",
+  "created_at": "2026-08-26T01:29:53.000Z",
+  "updated_at": "2026-08-26T01:56:08.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186416765,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shortylow1358 (Theodore Castro) - Hugging Face",
+      "url": "https://huggingface.co/shortylow1358/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... updated a model about 3 hours ago"
+    },
+    {
+      "title": "Clover // Totally Spies - v1.0 | Pony Diffusion LoRA | Civitai",
+      "url": "https://civitai.com/models/506946/clover-totally-spies",
+      "snippet": "Thanks to OpTron for providing their dataset. Good at 0.8 weight. Go lower for less of the source style. 0.5 - 0.7 weight if you want to use a style lora. Keywords: clover ts, blonde hair, medium hair, blue eyes, swept bangs, Main: red bodysuit, also &#x27;belt&#x27; Alt: red t-shirt, sleeveless, black pants, Alt2: pink shirt, puffy short sleeves, off-shoulder shirt, denim skirt,"
+    },
+    {
+      "title": "Model sheet IA Clover totallyspies by Jmsg1994 on DeviantArt",
+      "url": "https://www.deviantart.com/jmsg1994/art/Model-sheet-IA-Clover-totallyspies-1364537258",
+      "snippet": "Model sheet IA Clover totallyspies — artwork by Jmsg1994 on DeviantArt. Published: 2026-08-06 · Likes: 11 · Views: 846"
+    },
+    {
+      "title": "Totally Spies Clover API | Text to Image | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/totally-spies-clover",
+      "snippet": "Totally Spies - Clover is a ai generation AI model available on ModelsLab. Access Totally Spies - Clover through our API with pay-per-use pricing and no minimum commitments."
+    },
+    {
+      "title": "Clover/ Totally Spies - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1664973809602858118",
+      "snippet": "Generate stunning Totally Spies, clover anime art with the &#x27;Clover/ Totally Spies&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Toan2408/qwen3-asr-1.7b-vietnamese-lora",
+  "slug": "toan2408-qwen3-asr-1-7b-vietnamese-lora",
+  "author": "Toan2408",
+  "url": "https://huggingface.co/Toan2408/qwen3-asr-1.7b-vietnamese-lora",
+  "created_at": "2026-08-25T21:45:00.000Z",
+  "updated_at": "2026-08-25T21:45:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "lora",
+    "vietnamese-asr",
+    "vi",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:adapter:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11429585,
+  "storage_human": "11 MB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "GitHub - splendor1811/Qwen-ASR",
+      "url": "https://github.com/splendor1811/Qwen-ASR",
+      "snippet": "Why Qwen3-ASR? The base model already achieves 4.39% WER on FLEURS-Vi without any Vietnamese finetuning. With targeted LoRA training on 2000+ hours of Vietnamese data, we expect significant improvements across all benchmarks. Qwen3-ASR-1.7B is a speech-language model with two main components: Audio ..."
+    },
+    {
+      "title": "Toan2408/qwen3-asr-1.7b-lora-vi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Toan2408/qwen3-asr-1.7b-lora-vi-v3",
+      "snippet": "Toan2408 / qwen3-asr-1.7b-lora-vi-v3 like 0 Automatic Speech Recognition Transformers Safetensors qwen3_asr arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "actableai/qwen3-asr-1.7B-LORA-vi-podcast-large · Hugging Face",
+      "url": "https://huggingface.co/actableai/qwen3-asr-1.7B-LORA-vi-podcast-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · main · ai-models/Qwen/Qwen3-ASR-1.7B",
+      "url": "https://cnb.cool/ai-models/Qwen/Qwen3-ASR-1.7B/-/blob/main/README.md",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    }
+  ]
+}

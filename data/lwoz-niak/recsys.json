@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LWOZ-NIAK/recsys",
+  "slug": "lwoz-niak-recsys",
+  "author": "LWOZ-NIAK",
+  "url": "https://huggingface.co/LWOZ-NIAK/recsys",
+  "created_at": "2026-08-25T19:13:59.000Z",
+  "updated_at": "2026-08-25T19:14:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "docx",
+    "enthusiastic",
+    "intro-problem-solution-validation-future",
+    "knowledge-distillation",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "short-punchy",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adapting the Facebook Reels RecSys AI Model Based on User Feedback",
+      "url": "https://engineering.fb.com/2026/01/14/ml-applications/adapting-the-facebook-reels-recsys-ai-model-based-on-user-feedback/",
+      "snippet": "We&#x27;ve improved personalized video recommendations on Facebook Reels by moving beyond metrics such as likes and watch time and directly leveraging user feedback. Our new User True Interest Survey (UTIS) model, now helps surface more niche, high-quality content and boosts engagement, retention, and satisfaction. We&#x27;re doubling down on personalization, tackling challenges like sparse user ..."
+    },
+    {
+      "title": "LWOZ-NIAK/paper_025307894_3d_scene_understanding at main",
+      "url": "https://huggingface.co/LWOZ-NIAK/paper_025307894_3d_scene_understanding/tree/main",
+      "snippet": "LWOZ-NIAK / paper_025307894_3d_scene_understanding like 0 3d-scene-understanding bulleted empirical-focused highlight-bullet impersonal intro-background-approach-eval-conclusion latex-acl neutral numeric-nature License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main paper_025307894_3d_scene_understanding 6.16 kB Ctrl+K Ctrl+K 1 contributor History:2 ..."
+    },
+    {
+      "title": "RecSys 2025 - Accepted Contributions - RecSys - RecSys",
+      "url": "https://recsys.acm.org/recsys25/accepted-contributions/",
+      "snippet": "Our best model outperforms the baseline in NDCG@1 by up to 3.52% under realistic ranking scenarios showing the effectiveness of our engagement-aware and MoE-enhanced designs. Results also show that soft-label Multi-K training is a practical and scalable extension, and that a balanced personalized negative sampling strategy generalizes well."
+    },
+    {
+      "title": "GitHub - Lunexa-AI/recsys-lite: The lightweight recommender system ...",
+      "url": "https://github.com/Lunexa-AI/recsys-lite",
+      "snippet": "recsys-lite is a small, teach-first recommender toolkit that runs in constrained environments and scales to real data. Use it from the CLI or Python to load interaction data, train classic recommenders, evaluate, and export results reproducibly."
+    },
+    {
+      "title": "A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)",
+      "url": "https://arxiv.org/pdf/2404.00579v1",
+      "snippet": "So, A/B experiments help understand the model&#x27;s performance along several axes in real-world settings. Note that [147] proposes a new paradigm of using simulation using agents to evaluate recommender models."
+    }
+  ]
+}

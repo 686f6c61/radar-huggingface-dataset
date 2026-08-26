@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "avencera/swin2sr-native-mlx",
+  "slug": "avencera-swin2sr-native-mlx",
+  "author": "avencera",
+  "url": "https://huggingface.co/avencera/swin2sr-native-mlx",
+  "created_at": "2026-08-26T00:44:16.000Z",
+  "updated_at": "2026-08-26T00:44:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240392512,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mv-lab/swin2sr: [ECCV] Swin2SR: SwinV2 Transformer for ...",
+      "url": "https://github.com/mv-lab/swin2sr",
+      "snippet": "This is the official repository and PyTorch implementation of Swin2SR. We provide the supplementary material, code, pretrained models and demos. Swin2SR represents a possible improvement of the famous SwinIR by Jingyun Liang (kudos for such an amazing contribution ). Our model achieves state-of-the-art performance in: classical, lighweight and real-world image super-resolution (SR) color JPEG ..."
+    },
+    {
+      "title": "Swin2SR - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/model_doc/swin2sr",
+      "snippet": "Swin2SR improves the SwinIR model by incorporating Swin Transformer v2 layers which mitigates issues such as training instability, resolution gaps between pre-training and fine-tuning, and hunger on data. The abstract from the paper is the following:"
+    },
+    {
+      "title": "Swin2SR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin2sr",
+      "snippet": "Swin2SR improves the SwinIR model by incorporating Swin Transformer v2 layers which mitigates issues such as training instability, resolution gaps between pre-training and fine-tuning, and hunger on data. The abstract from the paper is the following:"
+    },
+    {
+      "title": "GitHub - HibisciWeiXinZhang/swin2sr-: Swin2SR: SwinV2 Transformer for ...",
+      "url": "https://github.com/HibisciWeiXinZhang/swin2sr-",
+      "snippet": "This is the official repository and PyTorch implementation of Swin2SR. We provide the supplementary material, code, pretrained models and demos. Swin2SR represents a possible improvement of the famous SwinIR by Jingyun Liang (kudos for such an amazing contribution ). Our model achieves state-of-the-art performance in: classical, lighweight and real-world image super-resolution (SR) color JPEG ..."
+    },
+    {
+      "title": "mv-lab/swin2sr | DeepWiki",
+      "url": "https://deepwiki.com/mv-lab/swin2sr",
+      "snippet": "This document provides an introduction to the Swin2SR repository, which implements a SwinV2 Transformer-based model for image super-resolution and restoration. Swin2SR was presented at the ECCV 2022 AIM Workshop and represents an advancement in transformer-based image enhancement techniques."
+    }
+  ]
+}

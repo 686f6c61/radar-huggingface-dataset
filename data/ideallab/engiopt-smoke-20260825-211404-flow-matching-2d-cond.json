@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond",
+  "slug": "ideallab-engiopt-smoke-20260825-211404-flow-matching-2d-cond",
+  "author": "IDEALLab",
+  "url": "https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond",
+  "created_at": "2026-08-25T21:41:03.000Z",
+  "updated_at": "2026-08-25T21:41:14.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "engiopt",
+  "languages": [],
+  "tags": [
+    "engiopt",
+    "engineering-design",
+    "inverse-design",
+    "engibench",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70181035,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt",
+      "snippet": "This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "SoheylM/engiopt-flow-matching-topk-smoke-flow-matching-2d-cond ...",
+      "url": "https://huggingface.co/SoheylM/engiopt-flow-matching-topk-smoke-flow-matching-2d-cond",
+      "snippet": "EngiOpt flow_matching_2d_cond This repository stores EngiOpt checkpoint packages for one model family. Each checkpoint package contains model weight files together with run_config.json and metadata.json so evaluation can run without depending on W&B run config state."
+    },
+    {
+      "title": "IdeaLab Confirms Data Stolen in Ransomware Attack Linked to Hunters ...",
+      "url": "https://dailysecurityreview.com/security-spotlight/idealab-confirms-data-stolen-in-ransomware-attack-linked-to-hunters-international/",
+      "snippet": "IdeaLab confirms ransomware attackers stole sensitive employee and contractor data in a 2024 breach. Hunters International claimed responsibility and leaked 137,000 files on the dark web."
+    },
+    {
+      "title": "IDEALLab/engiopt-public-smoke-cgan-cnn-2d · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-public-smoke-cgan-cnn-2d",
+      "snippet": "EngiOpt cgan_cnn_2d This repository stores EngiOpt checkpoint packages for one model family. Each checkpoint package contains model weight files together with run_config.json and metadata.json so evaluation can run without depending on W&B run config state."
+    },
+    {
+      "title": "The Intelligence for Design, Engineering, And Learning (IDEAL) Lab - GitHub",
+      "url": "https://github.com/IDEALLab",
+      "snippet": "Explore GitHub repositories from the IDEAL Lab, focusing on intelligence for design, engineering, and learning."
+    }
+  ]
+}

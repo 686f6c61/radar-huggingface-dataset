@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Laurenjones/roberta-parser",
+  "slug": "laurenjones-roberta-parser",
+  "author": "Laurenjones",
+  "url": "https://huggingface.co/Laurenjones/roberta-parser",
+  "created_at": "2026-08-26T00:16:23.000Z",
+  "updated_at": "2026-08-26T00:16:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "enthusiastic",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "knowledge-distillation",
+    "long-detailed",
+    "markdown",
+    "mixed-active-passive",
+    "numeric-nature",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lauren-framework/lauren-ai: First-party AI/LLM companion to ...",
+      "url": "https://github.com/lauren-framework/lauren-ai",
+      "snippet": "lauren-ai is the first-party AI/LLM companion to the Lauren web framework. It brings large language model agents into the same decorator-first, DI-driven, module-scoped programming model the rest of Lauren uses."
+    },
+    {
+      "title": "lauren-ai/docs/guides/output-parsers.md at main - GitHub",
+      "url": "https://github.com/lauren-framework/lauren-ai/blob/main/docs/guides/output-parsers.md",
+      "snippet": "First-party AI/LLM companion to the lauren web framework. Brings large language model agents into the same decorator-first, DI-driven, module-scoped programming model the rest of Lauren uses. - lau..."
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "FacebookAI/roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/roberta-base",
+      "snippet": "Explore the RoBERTa base model by FacebookAI, a transformer-based language model available on Hugging Face platform for various NLP tasks."
+    },
+    {
+      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
+      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
+    }
+  ]
+}

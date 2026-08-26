@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed2",
+  "slug": "localized-ft-llama-3-1-8b-good-vs-bad-mixed-multifact-kld-seed2",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed2",
+  "created_at": "2026-08-25T19:37:09.000Z",
+  "updated_at": "2026-08-25T19:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5",
+      "snippet": "Llama-3.1-8B-good-vs-bad-mixed-multifact-kld-seed5 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft ...",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed4-epoch3",
+      "snippet": "Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed4-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed2",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed2",
+      "snippet": "Run Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed2 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "Llama 3.1 8B - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/llama-3.1-8b-instant",
+      "snippet": "Model card for Llama 3.1 8B: 8B parameter model with 128K context, tool use, JSON mode, and instant responses on Groq."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "Thank you for developing with Llama models. As part of the Llama 3.1 release, we&#x27;ve consolidated GitHub repos and added some additional repos as we&#x27;ve expanded Llama&#x27;s functionality into being an e2e Llama Stack. Please use the following repos going forward: llama-models - Central repo for the foundation models including basic utilities, model cards, license and use policies PurpleLlama ..."
+    }
+  ]
+}

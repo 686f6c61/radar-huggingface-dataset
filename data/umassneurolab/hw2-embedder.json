@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Umassneurolab/hw2-embedder",
+  "slug": "umassneurolab-hw2-embedder",
+  "author": "Umassneurolab",
+  "url": "https://huggingface.co/Umassneurolab/hw2-embedder",
+  "created_at": "2026-08-25T21:44:24.000Z",
+  "updated_at": "2026-08-25T21:44:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "measured",
+    "medium-balanced",
+    "numeric-bibtex",
+    "ocr-freeform",
+    "passive",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llm-zoomcamp-hw2-and-hw4/embedder.py at main - GitHub",
+      "url": "https://github.com/CalistaJajalla/llm-zoomcamp-hw2-and-hw4/blob/main/embedder.py",
+      "snippet": "Module 2 solution - embeddings, vector search, and hybrid search. - CalistaJajalla/llm-zoomcamp-hw2-and-hw4"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=embedding",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "llm_course/llm-zoomcamp-hw2/embedder.py at master - GitHub",
+      "url": "https://github.com/bedapisl/llm_course/blob/master/llm-zoomcamp-hw2/embedder.py",
+      "snippet": "38 lines (34 loc) · 1.48 KB master llm_course / llm-zoomcamp-hw2 / embedder.py Top Code Blame 38 lines (34 loc) · 1.48 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ..."
+    },
+    {
+      "title": "BAAI/llm-embedder · Hugging Face",
+      "url": "https://huggingface.co/BAAI/llm-embedder",
+      "snippet": "update embedding model: release bge-*-v1.5 embedding model to alleviate the issue of the similarity distribution, and enhance its retrieval ability without instruction."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

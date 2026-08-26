@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ABDULRAHMANALZ/gpt2-chatbot67",
+  "slug": "abdulrahmanalz-gpt2-chatbot67",
+  "author": "ABDULRAHMANALZ",
+  "url": "https://huggingface.co/ABDULRAHMANALZ/gpt2-chatbot67",
+  "created_at": "2026-08-25T20:07:08.000Z",
+  "updated_at": "2026-08-25T20:07:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-visual-learning",
+    "critical",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "long-detailed",
+    "narrative-progressive",
+    "numeric-nature",
+    "passive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - xcapt0/gpt2_chatbot: ☕ GPT-2 chatbot for daily conversation",
+      "url": "https://github.com/xcapt0/gpt2_chatbot",
+      "snippet": "GPT-2 chatbot for daily conversations trained on Daily Dialogue, Empathetic Dialogues, PERSONA-CHAT, Blended Skill Talk datasets. This chatbot is made based on GPT2 Model transformer with a language modeling head on top."
+    },
+    {
+      "title": "GitHub - rskworld/gpt2-chatbot: This project implements GPT-2 for text ...",
+      "url": "https://github.com/rskworld/gpt2-chatbot",
+      "snippet": "This project implements GPT-2 for text generation and chatbot applications. GPT-2 uses autoregressive language modeling to generate coherent and contextually relevant text. The system includes fine-tuning for specific domains, conversation management, and response generation with temperature control for diverse outputs."
+    },
+    {
+      "title": "Introducing ChatGPT Images 2.0 - OpenAI",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-0/",
+      "snippet": "ChatGPT Images 2.0 introduces a state-of-the-art image generation model with improved text rendering, multilingual support, and advanced visual reasoning."
+    },
+    {
+      "title": "Gpt2-chatbot: The Mysterious New Model That&#x27;s Baffling the AI Community",
+      "url": "https://technologiabrother.com/p/gpt2-chatbot",
+      "snippet": "Some have speculated that gpt2-chatbot could be a retrained version of OpenAI&#x27;s original GPT-2 model - hence the naming convention - updated with modern datasets."
+    }
+  ]
+}

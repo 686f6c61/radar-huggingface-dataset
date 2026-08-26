@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shadowwalk/SFR-Net",
+  "slug": "shadowwalk-sfr-net",
+  "author": "shadowwalk",
+  "url": "https://huggingface.co/shadowwalk/SFR-Net",
+  "created_at": "2026-08-26T01:47:32.000Z",
+  "updated_at": "2026-08-26T01:50:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 841411064,
+  "storage_human": "841 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ChuyuZhong/SFR-Net: SFR-Net is for ultra-wide area remote ...",
+      "url": "https://github.com/ChuyuZhong/SFR-Net",
+      "snippet": "SFR-Net targets remote sensing images with both: huge pixel counts, and extremely wide geographical coverage. The core idea is Scale-Frustum Representations (SFR): for each Projection Reference Point (PRP), the model observes the image from multiple distances, such as [1, 3, 14], then resizes those observation windows to the same 512 x 512 resolution. This lets the network see local details ..."
+    },
+    {
+      "title": "[2605.25737] SFR-Net: Learning Scale-Frustum ... - arXiv.org",
+      "url": "https://arxiv.org/abs/2605.25737",
+      "snippet": "To address these challenges, we propose the Scale-Frustum Representation Network (SFR-Net). Inspired by the viewing frustums of remote sensing images captured from different altitudes, we construct scale-frustum representations, enabling unified modeling of ground objects and contextual features at different scales."
+    },
+    {
+      "title": "GitHub - infinitycan/SFR-Net: [CVPR 2026] Official implementation of ...",
+      "url": "https://github.com/infinitycan/SFR-Net",
+      "snippet": "SFR-Net: Steering-Fusion-Refining Network in Multi-label Zero-Shot Sewer Defect Detection Official implementation of the paper in CVPR 2026."
+    },
+    {
+      "title": "Shadow feature refinement network: progressive feature refinement based ...",
+      "url": "https://link.springer.com/article/10.1007/s00530-025-02036-5",
+      "snippet": "Therefore, this study proposes a supervised learning-based shadow removal model, referred to as the shadow feature refinement network (SFR-Net), which uses the image inpainting concept. We incorporate image inpainting technology and also utilize the knowledge distillation approach to remove shadows."
+    },
+    {
+      "title": "SFR-Net: Learning Scale-Frustum Representations for Ultra-Wide Area ...",
+      "url": "https://arxiv.org/html/2605.25737v1",
+      "snippet": "Inspired by this similarity, we present the Scale-Frustum Representation Network (SFR-Net). To achieve the perception of ground objects at different scales, we construct scale-frustum representations (SFR) for ultra-wide area remote sensing images."
+    }
+  ]
+}

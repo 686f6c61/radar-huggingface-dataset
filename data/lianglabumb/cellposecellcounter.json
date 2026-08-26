@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LiangLabUMB/cellposecellcounter",
+  "slug": "lianglabumb-cellposecellcounter",
+  "author": "LiangLabUMB",
+  "url": "https://huggingface.co/LiangLabUMB/cellposecellcounter",
+  "created_at": "2026-08-26T00:48:12.000Z",
+  "updated_at": "2026-08-26T00:54:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cellpose",
+    "cell-segmentation",
+    "hemocytometer",
+    "microscopy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3046671511,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CellposeCellCounterMobile - a Hugging Face Space by LiangLabUMB",
+      "url": "https://huggingface.co/spaces/LiangLabUMB/CellposeCellCounterMobile",
+      "snippet": "CellposeCellCounter For accurate cell confluency, crop the image to display only desired area. Note that some image file types are not yet supported. PNG and JPEG are preferred."
+    },
+    {
+      "title": "LiangLabUMB (Liang Lab) - Hugging Face",
+      "url": "https://huggingface.co/LiangLabUMB",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 5 hours ago ... updated a model about 9 hours ago"
+    },
+    {
+      "title": "GitHub - MouseLand/cellpose: a generalist algorithm for cellular ...",
+      "url": "https://github.com/MouseLand/cellpose",
+      "snippet": "a generalist algorithm for cellular segmentation with human-in-the-loop capabilities - MouseLand/cellpose"
+    },
+    {
+      "title": "#mscrf #stemcellresearch #ai #innovation #marylandscience # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/mscrf_mscrf-stemcellresearch-ai-activity-7441655711463342080-cnDL",
+      "snippet": "Innovation in Action: From the Lab to the Congressional App Challenge Huge congrats to Matthew Yang for winning the 2025 Congressional App Challenge with CellposeCellCounter, an AI tool developed ..."
+    },
+    {
+      "title": "CellposeCellCounter wins Rep. Sarah Elfreth&#x27;s 2025 Congressional App ...",
+      "url": "https://www.congressionalappchallenge.us/25-MD03/",
+      "snippet": "Rep. Sarah Elfreth has named Matthew Yang of Centennial High School as the winner of the 2025 Congressional App Challenge in Maryland&#x27;s Third District. Their app CellposeCellCounter is an AI-driven microscopy analysis tool that automatically detects and counts cells in biological images."
+    }
+  ]
+}

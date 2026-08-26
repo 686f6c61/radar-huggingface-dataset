@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/juniper-nook-41",
+  "slug": "models4world-juniper-nook-41",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/juniper-nook-41",
+  "created_at": "2026-08-26T00:27:46.000Z",
+  "updated_at": "2026-08-26T00:28:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VTuber Nook — Free Resources for VTubers — Overlays, Models, Emotes & More",
+      "url": "https://vtuber-nook.com/",
+      "snippet": "1156 free VTuber assets in one place: stream overlays, Live2D and PNGtuber models, emotes, BGM, panels and more. Every asset credited to the creator who made it."
+    },
+    {
+      "title": "models4world/juniper-opal-92 · Hugging Face",
+      "url": "https://huggingface.co/models4world/juniper-opal-92",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "models4world/onyx-nook-48 · Hugging Face",
+      "url": "https://huggingface.co/models4world/onyx-nook-48",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "List Models from Top AI Providers",
+      "url": "https://www.listmodel.com/",
+      "snippet": "Quickly browse common ai models, copy and paste their model code from providers: Anthropic, Google, DeepSeek, OpenAI, xAI, Moonshot AI..."
+    }
+  ]
+}

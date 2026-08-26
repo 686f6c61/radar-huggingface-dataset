@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "q1716523669/llm-math345-ttrl-granite2b-endpoint",
+  "slug": "q1716523669-llm-math345-ttrl-granite2b-endpoint",
+  "author": "q1716523669",
+  "url": "https://huggingface.co/q1716523669/llm-math345-ttrl-granite2b-endpoint",
+  "created_at": "2026-08-25T20:18:58.000Z",
+  "updated_at": "2026-08-25T20:18:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:ibm-granite/granite-3.3-2b-instruct",
+    "base_model:finetune:ibm-granite/granite-3.3-2b-instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ibm-granite/granite-3.3-2b-instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TTRL: Test-Time Reinforcement Learning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2504.16084v3",
+      "snippet": "TTRL directly addresses the problem of training models via RL without explicit supervision, investigating a model&#x27;s ability to explore and learn in this challenging yet critical setting. Essentially, TTRL enables the model to generate its own experiences, estimate rewards, and improve its performance over time."
+    },
+    {
+      "title": "TTRL: Test-Time Reinforcement Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2504.16084v3",
+      "snippet": "Furthermore, although TTRL is only supervised by the maj@n metric, TTRL has demonstrated performance to consistently surpass the upper limit of the initial model maj@n, and approach the performance of models trained directly on test data with ground-truth labels."
+    },
+    {
+      "title": "TTRL: Test-Time Reinforcement Learning - emergentmind.com",
+      "url": "https://www.emergentmind.com/papers/2504.16084",
+      "snippet": "This paper introduces TTRL, a framework that leverages majority voting to enable LLMs to self-evolve via reinforcement learning on unlabeled test data."
+    },
+    {
+      "title": "TTRL: Test-Time Reinforcement Learning | ML Anthology",
+      "url": "https://mlanthology.org/neurips/2025/zuo2025neurips-ttrl/",
+      "snippet": "Furthermore, although TTRL is only supervised by the Maj@N metric, TTRL has demonstrated performance to consistently surpass the upper limit of the initial model, and approach the performance of models trained directly on test data with ground-truth labels."
+    },
+    {
+      "title": "TTRL: Test-Time Reinforcement Learning - Semantic Scholar",
+      "url": "https://www.semanticscholar.org/paper/TTRL:-Test-Time-Reinforcement-Learning-Zuo-Zhang/70cb3adf46d64c685ef1a2673183e5c7b3ae2f83",
+      "snippet": "Although TTRL is only supervised by the maj@n metric, TTRL has demonstrated performance to consistently surpass the upper limit of the initial model maj@n, and approach the performance of models trained directly on test data with ground-truth labels. This paper investigates Reinforcement Learning (RL) on data without explicit labels for reasoning tasks in Large Language Models (LLMs). The core ..."
+    }
+  ]
+}

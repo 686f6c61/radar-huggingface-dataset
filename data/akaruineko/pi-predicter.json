@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "akaruineko/pi-predicter",
+  "slug": "akaruineko-pi-predicter",
+  "author": "akaruineko",
+  "url": "https://huggingface.co/akaruineko/pi-predicter",
+  "created_at": "2026-08-25T21:32:57.000Z",
+  "updated_at": "2026-08-25T21:38:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pi",
+    "mlp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6625985,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akaruineko (Георгий Куликов) - Hugging Face",
+      "url": "https://huggingface.co/akaruineko/models",
+      "snippet": "User profile of Георгий Куликов on Hugging Face"
+    },
+    {
+      "title": "GitHub - akaruineko-ai/.github · GitHub",
+      "url": "https://github.com/akaruineko-ai/.github",
+      "snippet": "Contribute to akaruineko-ai/.github development by creating an account on GitHub."
+    },
+    {
+      "title": "Using Predictive Models and AI for AKI Research - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0270929525001512",
+      "snippet": "While these models have not yet been evaluated for model development in the AKI space, they could potentially be used to develop more nuanced models with multimodal input and outputs to incorporate extensive EHR notes into AI models for AKI prediction, risk stratification, and management."
+    },
+    {
+      "title": "GitHub - Tom-Brenner/protein-pI-predictor: Predict protein isoelectric ...",
+      "url": "https://github.com/Tom-Brenner/protein-pI-predictor",
+      "snippet": "Predict protein isoelectric points (pI) using a state-of-the-art ensemble model that combines a bidirectional LSTM network and a globally-attentive RoPE-based transformer."
+    },
+    {
+      "title": "Frontiers | Construction and validation of a multi-function artificial ...",
+      "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2026.1773031/full",
+      "snippet": "Based on the best-performing YOLOv11s model, this study developed a multi-function AI-assisted system that integrates pressure injury (PI) lesion detection, automated staging, and wound size measurement, and deployed it as a web-based application using the Streamlit framework, designated PI-3DAS."
+    }
+  ]
+}

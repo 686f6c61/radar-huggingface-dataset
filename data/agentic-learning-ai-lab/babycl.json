@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "agentic-learning-ai-lab/BabyCL",
+  "slug": "agentic-learning-ai-lab-babycl",
+  "author": "agentic-learning-ai-lab",
+  "url": "https://huggingface.co/agentic-learning-ai-lab/BabyCL",
+  "created_at": "2026-08-25T23:29:05.000Z",
+  "updated_at": "2026-08-25T23:33:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456364172,
+  "storage_human": "456 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agentic Learning AI Lab",
+      "url": "https://agenticlearning.ai/",
+      "snippet": "Agentic Learning AI Lab is a research lab in New York University founded in 2022. We innovate learning algorithms that enable future agentic AI to learn and adapt flexibly in the real world."
+    },
+    {
+      "title": "agentic learning ai lab · GitHub",
+      "url": "https://github.com/Agentic-Learning-AI-Lab",
+      "snippet": "An AI research lab at New York University. agentic learning ai lab has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Title: Continual Visual and Verbal Learning Through a Child&#x27;s ...",
+      "url": "https://arxiv.org/abs/2606.05115",
+      "snippet": "Children learn the meanings of words from a continuous, temporally structured stream of egocentric experience. Recent work shows that neural networks can also learn word-referent mappings from a child&#x27;s egocentric video recordings, but they cycle through the shuffled data for hundreds of epochs, contrasting with how children actually encounter their environment. We introduce BabyCL, a ..."
+    },
+    {
+      "title": "agentic-learning-ai-lab (agentic learning ai lab) - Hugging Face",
+      "url": "https://huggingface.co/agentic-learning-ai-lab",
+      "snippet": "Org profile for agentic learning ai lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Agentic AI - DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/agentic-ai",
+      "snippet": "In this course taught by Andrew Ng, you&#x27;ll build agentic AI systems that take action through iterative, multi-step workflows."
+    }
+  ]
+}

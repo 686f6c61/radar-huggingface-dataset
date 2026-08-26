@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rtikw/acestep15xlsft-lora-piano",
+  "slug": "rtikw-acestep15xlsft-lora-piano",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/acestep15xlsft-lora-piano",
+  "created_at": "2026-08-25T19:51:00.000Z",
+  "updated_at": "2026-08-25T19:51:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "audio-generation",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79691776,
+  "parameters_human": "79.7M",
+  "storage_bytes": 380291996,
+  "storage_human": "380 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step-v1.5-XL Enhancement LoRAs - modelscope.ai",
+      "url": "https://modelscope.ai/collections/DiffSynth-Studio/ACE-Step-v15-XL-Enhancement-LoRAs",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "ACESTEP XL 1.5 Full Inference Tutorial - Working on LoRA ... - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/1248",
+      "snippet": "ACESTEP XL 1.5 Full Inference Tutorial - Working on LoRA Training Tutorial As Well - Fully edited 75 minutes and + written tutorial #1248"
+    },
+    {
+      "title": "ACE-Step/acestep-v15-xl-turbo · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/acestep-v15-xl-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "acestep15xlsft-lora-music · Models",
+      "url": "https://www.modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-lora-music/summary",
+      "snippet": "伴奏增强 LoRA（ACE-Step-v1.5-XL-sft） 本模型是基于模型 ACE-Step-v1.5-XL-sft 使用 差分训练技术 训练的 LoRA 模型，可以增强生成音乐中的伴奏。 模型效果 歌词 [Verse 1] 深夜的屏幕，微光在闪烁 指尖敲击着，未知的脉络 不再是孤岛，独自去摸索 这里有一片海，等待你停泊 从零到一的距离，不再遥远 丰富的 ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "b-sky-lab/so101_test_model",
+  "slug": "b-sky-lab-so101_test_model",
+  "author": "b-sky-lab",
+  "url": "https://huggingface.co/b-sky-lab/so101_test_model",
+  "created_at": "2026-08-25T22:51:22.000Z",
+  "updated_at": "2026-08-25T22:51:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:b-sky-lab/so101_test",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706320,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "b-sky-lab/so101_test · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/b-sky-lab/so101_test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "b-sky-lab (Yutaro KIMURA) - Hugging Face",
+      "url": "https://huggingface.co/b-sky-lab/datasets",
+      "snippet": "b-sky-lab&#x27;s datasets4 Sort: Recently updated b-sky-lab/so101_test Viewer •Updated May 30, 2025•626• 49"
+    },
+    {
+      "title": "Lightwheel LeIsaac | Seeed Studio Wiki",
+      "url": "https://wiki.seeedstudio.com/simulate_soarm101_by_leisaac/",
+      "snippet": "This tutorial demonstrates how to teleoperate and train the SOArm101 robotic arm in Isaac Lab using LeIsaac, including data collection, model fine-tuning with NVIDIA Isaac GR00T, and deployment."
+    },
+    {
+      "title": "sample-self-improving-physical-AI/models/so101/README.md at main - GitHub",
+      "url": "https://github.com/aws-samples/sample-self-improving-physical-AI/blob/main/models/so101/README.md",
+      "snippet": "The SO-ARM101 uses a dual-camera system matching the real hardware: Gripper Camera — Mounted on the end effector, provides close-up view for manipulation tasks. Used for precise grasping and visual servoing. External Camera — Overhead/side view of the workspace. Provides context for the AI agent about the overall scene layout. Both cameras in simulation match the real hardware resolution ..."
+    },
+    {
+      "title": "GitHub - BioModel-AI/Sim-to-Real-B601_BM-Workshop: This code supports ...",
+      "url": "https://github.com/BioModel-AI/Sim-to-Real-B601_BM-Workshop",
+      "snippet": "This code supports learning content to demonstrate an end-to-end Physical AI workflow with the SO-101 robot & Star Arm + reBot B601_BM pair, Isaac Lab, and Isaac GR00T."
+    }
+  ]
+}

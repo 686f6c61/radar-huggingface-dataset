@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Karanvermasuw/chatbot",
+  "slug": "karanvermasuw-chatbot",
+  "author": "Karanvermasuw",
+  "url": "https://huggingface.co/Karanvermasuw/chatbot",
+  "created_at": "2026-08-26T00:03:34.000Z",
+  "updated_at": "2026-08-26T00:03:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "empirical-focused",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "numeric-apa",
+    "plain-text",
+    "text-image-retrieval",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Browse all AI Models - Overchat AI",
+      "url": "https://overchat.ai/models",
+      "snippet": "Find the right AI chatbot to solve your task, from asking AI questions and deep conversations to coding and complex reasoning. Browse and choose."
+    },
+    {
+      "title": "GitHub - vercel/chatbot: A full-featured, hackable Next.js AI chatbot ...",
+      "url": "https://github.com/vercel/chatbot",
+      "snippet": "Chatbot (formerly AI Chatbot) is a free, open-source template built with Next.js and the AI SDK that helps you quickly build powerful chatbot applications. Read Docs · Features · Model Providers · Deploy Your Own · Running locally"
+    },
+    {
+      "title": "chatbotai.com",
+      "url": "https://chatbotai.com/",
+      "snippet": "chatbotai.com provides access to third-party AI models. We are not affiliated with, endorsed by, or the owner of these LLM models."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Chatbot Arena - OpenLM.ai",
+      "url": "https://openlm.ai/chatbot-arena/",
+      "snippet": "This leaderboard is based on the following benchmarks. Arena + — an agent-driven battle platform for large language models (LLMs). We use LLM-as-a-judge to compute Elo ratings. AAII — Artificial Analysis Intelligence Index aggregating 10 challenging evaluations. ARC-AGI — Artificial General Intelligence benchmark v2 to measure fluid intelligence."
+    }
+  ]
+}

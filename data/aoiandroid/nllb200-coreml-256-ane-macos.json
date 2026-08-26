@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nllb200-coreml-256-ane-macos",
+  "slug": "aoiandroid-nllb200-coreml-256-ane-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-macos",
+  "created_at": "2026-08-26T01:18:13.000Z",
+  "updated_at": "2026-08-26T01:18:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "macos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/nllb200-coreml-256-ane-pal8 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8",
+      "snippet": "Not for training or redistribution that violates the base model license. Hub snapshot Published as: aoiandroid/nllb200-coreml-256-ane-pal8 (same token cannot create repos under the PoliteAI namespace until that org grants write access or you upload from the PoliteAI account). Provenance Source weights: facebook/nllb-200-distilled-600M"
+    },
+    {
+      "title": "aoiandroid/nllb200-coreml-512 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-512",
+      "snippet": "aoiandroid / nllb200-coreml-512 like 0 Translation Core ML flores-200 multilingual m2m_100 nllb apple ios mlpackage License:cc-by-nc-4. Model card FilesFiles and versions xet Community Copy to bucket new NLLB-200 Core ML 512 (KV decoders) Layout App Conversion Validation (macOS) License"
+    },
+    {
+      "title": "GitHub - JHmins/NLLB-200-Model: Facebook AI Research Sequence-to ...",
+      "url": "https://github.com/JHmins/NLLB-200-Model",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - JHmins/NLLB-200-Model"
+    },
+    {
+      "title": "GitHub - john-rocky/CoreML-Models: Core ML model zoo for iOS/macOS ...",
+      "url": "https://github.com/john-rocky/CoreML-Models",
+      "snippet": "Core ML model zoo for iOS/macOS — PyTorch models converted to ready-to-use .mlpackage, each with a conversion script and SwiftUI sample app. Sibling repos cover Apple&#x27;s Core AI framework (iOS/macOS 27) and on-device LLMs. - john-rocky/CoreML-Models"
+    },
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    }
+  ]
+}

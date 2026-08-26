@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sasantoso/cs224n-tokenizer",
+  "slug": "sasantoso-cs224n-tokenizer",
+  "author": "Sasantoso",
+  "url": "https://huggingface.co/Sasantoso/cs224n-tokenizer",
+  "created_at": "2026-08-25T20:10:37.000Z",
+  "updated_at": "2026-08-25T20:10:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "docx",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "narrative-progressive",
+    "neutral",
+    "numeric-bibtex",
+    "ocr-freeform",
+    "passive",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "snippet": "Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction to cutting-edge neural networks for NLP."
+    },
+    {
+      "title": "CS224N-default-project/tokenizer.py at main · psr-ai/CS224N ... - GitHub",
+      "url": "https://github.com/psr-ai/CS224N-default-project/blob/main/tokenizer.py",
+      "snippet": "2834 lines (2482 loc) · 102 KB main CS224N-default-project / tokenizer.py Top Code Blame 2834 lines (2482 loc) · 102 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ..."
+    },
+    {
+      "title": "CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/",
+      "snippet": "CS224N: Natural Language Processing with Deep Learning Stanford / Winter 2023 Note: In the 2023-24 academic year, CS224N will be taught in both Winter and Spring 2024. We hope to see you in class! Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information."
+    },
+    {
+      "title": "GitHub - floriankark/cs224n-win2223: Code and written solutions of the ...",
+      "url": "https://github.com/floriankark/cs224n-win2223",
+      "snippet": "This repository contains my solutions of the assignments of the Stanford CS224N: Natural Language Processing with Deep Learning course from winter 2022/23. There are many other great repositories on this course but none that cover the latest assignments (winter 2022 / 2023) and contain the written and practical parts completely (state: Mai 12 ..."
+    },
+    {
+      "title": "CS224N - Ader&#x27;s notebook",
+      "url": "https://ader817.github.io/notebook/ai/cs224n/",
+      "snippet": "Ader&#x27;s notebook Stanford CS224N course notes, split by topic from the local notebook."
+    }
+  ]
+}

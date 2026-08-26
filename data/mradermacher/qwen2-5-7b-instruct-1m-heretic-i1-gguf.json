@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-7B-Instruct-1M-heretic-i1-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-instruct-1m-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-1M-heretic-i1-GGUF",
+  "created_at": "2026-07-22T17:51:54.000Z",
+  "updated_at": "2026-08-26T02:03:47.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "text-generation-inference",
+    "roleplay",
+    "local-llm",
+    "consumer-gpu",
+    "en",
+    "base_model:saidutta69/Qwen2.5-7B-Instruct-1M-heretic",
+    "base_model:quantized:saidutta69/Qwen2.5-7B-Instruct-1M-heretic",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 806,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88970480608,
+  "storage_human": "89.0 GB",
+  "base_model": "saidutta69/Qwen2.5-7B-Instruct-1M-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-7B-Instruct-1M-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-1M-heretic-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen2.5-7B-Instruct-1M-heretic-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/Qwen2.5-7B-Instruct-1M-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-1M-heretic-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen2.5-7B-Instruct-1M-heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Qwen2.5-VL-7B-Instruct-abliterated-GGUF is a GGUF-quantized version of the Qwen2.5 Vision Language model optimized for local CPU and GPU inference. Built and maintained by mradermacher, this model processes…"
+    },
+    {
+      "title": "qwen2.5:7b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:7b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct",
+      "snippet": "Qwen 2.5系列开源模型基于更大的训练数据集训练而成，在编程能力、数学能力以及指令遵循能力等方面都有显著提升。同时Qwen 2.5提供强大的多语言能力，包括了29种以上语言的支持。"
+    }
+  ]
+}

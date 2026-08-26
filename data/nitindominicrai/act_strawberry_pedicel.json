@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nitindominicrai/act_strawberry_pedicel",
+  "slug": "nitindominicrai-act_strawberry_pedicel",
+  "author": "nitindominicrai",
+  "url": "https://huggingface.co/nitindominicrai/act_strawberry_pedicel",
+  "created_at": "2026-08-25T19:32:36.000Z",
+  "updated_at": "2026-08-25T19:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259376256,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nitindominicrai/Strawberry_pests · Hugging Face",
+      "url": "https://huggingface.co/nitindominicrai/Strawberry_pests",
+      "snippet": "You should use A photo of a strawberry leaf with very early signs of ytr chilli thrips infestation, slight vein darkening, minor discoloration near midrib, mostly green and healthy-looking, detailed close-up, intricate details, natural lighting, highly realistic to trigger the image generation."
+    },
+    {
+      "title": "nitindominicrai (Nitin Rai) - Hugging Face",
+      "url": "https://huggingface.co/nitindominicrai/datasets",
+      "snippet": "Digital agriculture, artificial intelligence, machine learning, deep learning, computer vision, Gen AI"
+    },
+    {
+      "title": "Strawberry Browser | Do hours of work in minutes",
+      "url": "https://strawberrybrowser.com/",
+      "snippet": "Strawberry is a browser with built-in AI agents that understand your context, tools, and team. Do hours of work in minutes."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "strawberry.ai - Personality is the new protocol",
+      "url": "https://strawberry.ai/",
+      "snippet": "Strawberry AI That&#x27;s More Than AI."
+    }
+  ]
+}

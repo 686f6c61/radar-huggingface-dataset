@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AIOpsInSpace/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP",
+  "slug": "aiopsinspace-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp",
+  "author": "AIOpsInSpace",
+  "url": "https://huggingface.co/AIOpsInSpace/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP",
+  "created_at": "2026-08-25T23:43:45.000Z",
+  "updated_at": "2026-08-25T23:49:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "gguf",
+    "reasoning",
+    "uncensored",
+    "MTP",
+    "speculative-decoding",
+    "en",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:finetune:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/discussions/4",
+      "snippet": "As usual Hauhau Releases, no damage to the model, no refusal for dark the prompt is."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored: Hardware Requirements and LM Studio Setup",
+      "url": "https://localairig.com/models/qwen3-8-27b-uncensored-hardware-deployment-guide/",
+      "snippet": "The community-built Qwen3.8-27B Uncensored HauhauCS Aggressive release removes many of the refusal behaviors found in the base model while retaining Qwen3.8-27B&#x27;s reasoning, agentic, image, and video capabilities. The GGUF release also includes MTP support for faster generation in compatible runtimes."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nehajoshidale/toy-summarizer",
+  "slug": "nehajoshidale-toy-summarizer",
+  "author": "nehajoshidale",
+  "url": "https://huggingface.co/nehajoshidale/toy-summarizer",
+  "created_at": "2026-08-26T02:37:43.000Z",
+  "updated_at": "2026-08-26T02:37:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "deit",
+    "adafactor",
+    "batchnorm",
+    "matching",
+    "mish",
+    "orthogonal",
+    "polynomial",
+    "small",
+    "sparse",
+    "tucker",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2048,
+  "storage_human": "2048 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Summarization Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=summarization",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Text Summarization for NLP: 5 Best APIs, AI Models, and AI Summarizers ...",
+      "url": "https://www.assemblyai.com/blog/text-summarization-nlp-5-best-apis",
+      "snippet": "In this article, we&#x27;ll discuss what exactly text summarization is, how it works, and a few of the best Text Summarization APIs, AI models, and AI summarizers."
+    },
+    {
+      "title": "Text Summarization using HuggingFace Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/text-summarizations-using-huggingface-model/",
+      "snippet": "Step 3: Load Pre-trained Model and Tokenizer T5 (Text-to-Text Transfer Transformer) handles every NLP task as a text transformation, it takes text as input and generates text as output. For summarization, it reads the full content and produces a shorter version. The model downloads automatically on first use."
+    },
+    {
+      "title": "Falconsai/text_summarization · Hugging Face",
+      "url": "https://huggingface.co/Falconsai/text_summarization",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Summarizer - Text Summarizing Tool (Free) - Unlimited",
+      "url": "https://www.humanizeai.io/tool/summarizer",
+      "snippet": "Summarize articles, paragraphs, and essays instantly with our free AI Text Summarizer. Unlimited free online summarizing, no signup required. Summarize in points, markdown, or custom mode."
+    }
+  ]
+}

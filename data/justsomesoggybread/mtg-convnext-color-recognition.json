@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "JustSomeSoggyBread/mtg-convnext-color-recognition",
+  "slug": "justsomesoggybread-mtg-convnext-color-recognition",
+  "author": "JustSomeSoggyBread",
+  "url": "https://huggingface.co/JustSomeSoggyBread/mtg-convnext-color-recognition",
+  "created_at": "2026-08-26T01:47:13.000Z",
+  "updated_at": "2026-08-26T01:47:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convnext",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:facebook/convnext-tiny-224",
+    "base_model:finetune:facebook/convnext-tiny-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27823973,
+  "parameters_human": "27.8M",
+  "storage_bytes": 111322365,
+  "storage_human": "111 MB",
+  "base_model": "facebook/convnext-tiny-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConvNeXT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/convnext",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ConvNeXt - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/convnext/",
+      "snippet": "ConvNeXt is a modern convolutional neural network (CNN) architecture that reimagines classic CNNs by integrating successful design elements from Vision Transformers (ViTs). Developed by Facebook AI Research, ConvNeXt achieves state-of-the-art performance on image recognition tasks while maintaining the efficiency and scalability of CNNs."
+    },
+    {
+      "title": "ConvNeXt — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/convnext.html",
+      "snippet": "ConvNeXt ¶ The ConvNeXt model is based on the A ConvNet for the 2020s paper. Model builders ¶ The following model builders can be used to instantiate a ConvNeXt model, with or without pre-trained weights. All the model builders internally rely on the torchvision.models.convnext.ConvNeXt base class. Please refer to the source code for more details about this class."
+    },
+    {
+      "title": "GitHub - facebookresearch/ConvNeXt: Code release for ConvNeXt model",
+      "url": "https://github.com/facebookresearch/ConvNeXt",
+      "snippet": "Code release for ConvNeXt model. Contribute to facebookresearch/ConvNeXt development by creating an account on GitHub."
+    },
+    {
+      "title": "MagicMMPretrain/configs/convnext/README.md at master · AI-mzq ... - GitHub",
+      "url": "https://github.com/AI-mzq/MagicMMPretrain/blob/master/configs/convnext/README.md",
+      "snippet": "The \"Roaring 20s\" of visual recognition began with the introduction of Vision Transformers (ViTs), which quickly superseded ConvNets as the state-of-the-art image classification model. A vanilla ViT, on the other hand, faces difficulties when applied to general computer vision tasks such as object detection and semantic segmentation. It is the hierarchical Transformers (e.g., Swin Transformers ..."
+    }
+  ]
+}

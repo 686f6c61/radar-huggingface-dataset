@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "positron-ai/hfl_chinese-alpaca-2-7b-ingest-best-gptq",
+  "slug": "positron-ai-hfl_chinese-alpaca-2-7b-ingest-best-gptq",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/hfl_chinese-alpaca-2-7b-ingest-best-gptq",
+  "created_at": "2026-08-25T19:22:53.000Z",
+  "updated_at": "2026-08-25T19:24:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "positron-ai",
+    "quantized",
+    "gptq",
+    "base_model:hfl/chinese-alpaca-2-7b",
+    "base_model:quantized:hfl/chinese-alpaca-2-7b",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6929256448,
+  "parameters_human": "6.93B",
+  "storage_bytes": 4402981603,
+  "storage_human": "4.4 GB",
+  "base_model": "hfl/chinese-alpaca-2-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hfl/chinese-alpaca-2-7b · Hugging Face",
+      "url": "https://huggingface.co/hfl/chinese-alpaca-2-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · hfl/chinese-alpaca-2-7b at main - Hugging Face",
+      "url": "https://huggingface.co/hfl/chinese-alpaca-2-7b/blob/main/README.md",
+      "snippet": "Chinese-Alpaca-2-7B This is the full Chinese-Alpaca-2-7B model，which can be loaded directly for inference and full-parameter training."
+    },
+    {
+      "title": "chinese-alpaca-2-7b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/chinese-alpaca-2-7b-hfl",
+      "snippet": "A: The base chinese-llama-2-7b is an untuned foundation model that generates raw text without instruction-following capability. The Alpaca-2 variant is instruction-tuned and ready for direct deployment in conversational and task-following scenarios without further fine-tuning."
+    },
+    {
+      "title": "Chinese-Alpaca-2 7B (7B) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/hfl/chinese-alpaca-2-7b",
+      "snippet": "Chinese-Alpaca-2 7B by 哈工大讯飞联合实验室（HFL）. 7B open-source AI model. Chinese-Alpaca-2 is a Chinese instruction-tuned model based on Llama 2, developed by HIT & iFLYTEK j"
+    },
+    {
+      "title": "Chinese-Alpaca-2-7B Open-Source Model - Supports Both Chinese and ...",
+      "url": "https://model.aibase.com/models/details/1915701411683393537",
+      "snippet": "Model Overview This is the full version of the Chinese-Alpaca-2-7B model, which can be directly loaded for inference or full-parameter training. The model expands and optimizes the Chinese vocabulary based on Llama-2, uses large-scale Chinese data for incremental pre-training, and improves the basic semantic understanding of Chinese."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cicada-ai/Chanjing-Avatar-V2V-5B",
+  "slug": "cicada-ai-chanjing-avatar-v2v-5b",
+  "author": "cicada-ai",
+  "url": "https://huggingface.co/cicada-ai/Chanjing-Avatar-V2V-5B",
+  "created_at": "2026-08-12T09:24:52.000Z",
+  "updated_at": "2026-08-26T01:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "audio-driven",
+    "avatar",
+    "talking-head",
+    "video-to-video",
+    "wan2.2",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 326427744,
+  "parameters_human": "326.4M",
+  "storage_bytes": 1305784616,
+  "storage_human": "1.3 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - chanjing-ai/Jogg-Avatar-V2V: Audio-driven avatar video ...",
+      "url": "https://github.com/chanjing-ai/Jogg-Avatar-V2V/",
+      "snippet": "Jogg-Avatar V2V is an audio-driven avatar video generation model based on Wan2.2-TI2V-5B. The Jogg-Avatar V2V checkpoint is available on Hugging Face. Given a source video and a driving audio track, it preserves body, camera, and background motion while regenerating the face region with synchronized speech."
+    },
+    {
+      "title": "Jogg-Avatar-V2V/README_zh.md at main · chanjing-ai/Jogg ... - GitHub",
+      "url": "https://github.com/chanjing-ai/Jogg-Avatar-V2V/blob/main/README_zh.md",
+      "snippet": "Audio-driven avatar video generation based on Wan2.2-TI2V-5B, with end-to-end training, preprocessing, and inference support. - chanjing-ai/Jogg-Avatar-V2V"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Models - Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

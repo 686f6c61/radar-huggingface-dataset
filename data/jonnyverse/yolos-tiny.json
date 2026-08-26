@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/yolos-tiny",
+  "slug": "jonnyverse-yolos-tiny",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/yolos-tiny",
+  "created_at": "2026-08-25T23:29:54.000Z",
+  "updated_at": "2026-08-25T23:29:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "yolos",
+    "object-detection",
+    "base_model:hustvl/yolos-tiny",
+    "base_model:quantized:hustvl/yolos-tiny",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81047497,
+  "storage_human": "81 MB",
+  "base_model": "hustvl/yolos-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yolos-tiny: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/yolos-tiny-hustvl",
+      "snippet": "As a tiny model, it likely requires less than 2GB for single-image inference, but batch processing requirements depend on image resolution and batch size. Q: How does accuracy compare to the base YOLOS model? A: The tiny variant achieves 28.7 AP on COCO validation while the base model achieves 42 AP—a significant accuracy gap."
+    },
+    {
+      "title": "hustvl/yolos-tiny · Hugging Face",
+      "url": "https://huggingface.co/hustvl/yolos-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yolos tiny (未知) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/hustvl/yolos-tiny",
+      "snippet": "yolos tiny by hustvl. 未知 open-source AI model. YoloS Tiny is a lightweight object detection model featuring an anchor-free design that balances spe"
+    },
+    {
+      "title": "Yolos-tiny Open-source Object Detection Model - Efficiently Identify ...",
+      "url": "https://model.aibase.com/models/details/1915694415945031682",
+      "snippet": "Model Overview YOLOS is a Vision Transformer (ViT) trained with DETR loss, specifically designed for object detection tasks, featuring a simple yet high-performance structure."
+    },
+    {
+      "title": "JONNYVERSE/vitpose-plus-small-ONNX · Hugging Face",
+      "url": "https://huggingface.co/JONNYVERSE/vitpose-plus-small-ONNX",
+      "snippet": "Instructions to use JONNYVERSE/vitpose-plus-small-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use JONNYVERSE/vitpose-plus-small-ONNX with Transformers.js:"
+    }
+  ]
+}

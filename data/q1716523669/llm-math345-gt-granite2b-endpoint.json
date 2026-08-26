@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "q1716523669/llm-math345-gt-granite2b-endpoint",
+  "slug": "q1716523669-llm-math345-gt-granite2b-endpoint",
+  "author": "q1716523669",
+  "url": "https://huggingface.co/q1716523669/llm-math345-gt-granite2b-endpoint",
+  "created_at": "2026-08-25T20:16:31.000Z",
+  "updated_at": "2026-08-25T20:17:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:ibm-granite/granite-3.3-2b-instruct",
+    "base_model:finetune:ibm-granite/granite-3.3-2b-instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165888,
+  "parameters_human": "165888",
+  "storage_bytes": 5067131361,
+  "storage_human": "5.1 GB",
+  "base_model": "ibm-granite/granite-3.3-2b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Analysis Intelligence Index - AI Model Leaderboard ...",
+      "url": "https://www.datalearner.com/en/leaderboards/external/aa-quality-index",
+      "snippet": "AI Intelligence Index: compare 190+ models from OpenAI, Anthropic, Google, Meta and more across 10 benchmarks."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 406 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "q1716523669/llm-math345-gt-phi4mini-endpoint · Hugging Face",
+      "url": "https://huggingface.co/q1716523669/llm-math345-gt-phi4mini-endpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ibm-granite (IBM Granite) - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite",
+      "snippet": "Enterprise-grade AI models Efficient language models for multilingual generation, coding, RAG, and AI assistant workflows."
+    }
+  ]
+}

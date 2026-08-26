@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Zyrabit-IA/zyra-guide-Q5_K_M",
+  "slug": "zyrabit-ia-zyra-guide-q5_k_m",
+  "author": "Zyrabit-IA",
+  "url": "https://huggingface.co/Zyrabit-IA/zyra-guide-Q5_K_M",
+  "created_at": "2026-08-26T02:32:47.000Z",
+  "updated_at": "2026-08-26T02:41:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "zyrabit",
+    "sovereign-ai",
+    "slm",
+    "q5_k_m",
+    "qwen2.5",
+    "tenstorrent-accelerated",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:quantized:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2224814272,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zyrabit-IA (Zyrabit) - Hugging Face",
+      "url": "https://huggingface.co/Zyrabit-IA",
+      "snippet": "Org profile for Zyrabit on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "zyrabit-SLM/zyra at main · Zyrabit-tech/zyrabit-SLM · GitHub",
+      "url": "https://github.com/Zyrabit-tech/zyrabit-SLM/blob/main/zyra",
+      "snippet": "Sovereign AI Infrastructure for Enterprise RAG. Zero-Trust PII Sanitization, Local Inference (CPU-optimized), and Docker-ready architecture. - zyrabit-SLM/zyra at ..."
+    },
+    {
+      "title": "Zyrabit - GitHub",
+      "url": "https://github.com/Zyrabit-tech",
+      "snippet": "🚀 Our Mission We build the infrastructure that enables Regulated Industries (Banking, Gov, Healthcare) to deploy Generative AI without compromising Data Sovereignty. We believe in a future where AI runs efficiently on Edge/On-Premise Hardware (CPU-first), protecting sensitive data through rigorous Zero-Trust Architectures."
+    },
+    {
+      "title": "Installation | Zyrabit Docs",
+      "url": "https://docs.zyrabit.com/docs/installation/",
+      "snippet": "[!IMPORTANT] The installation guide has been consolidated into the Quickstart Fundamentals section. This provides a unified, OS-agnostic workflow utilizing the standard Zyrabit toolchain."
+    },
+    {
+      "title": "Introduction | Zyrabit Docs",
+      "url": "https://docs.zyrabit.com/docs/",
+      "snippet": "Zyrabit SLM is a production-grade Small Language Model (SLM) orchestration stack designed for on-premise and private cloud environments. It provides a containerized architecture to deploy, manage, and scale local AI capabilities while maintaining strict data privacy and network isolation."
+    }
+  ]
+}

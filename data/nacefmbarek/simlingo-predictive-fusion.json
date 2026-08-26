@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nacefmbarek/simlingo-predictive-fusion",
+  "slug": "nacefmbarek-simlingo-predictive-fusion",
+  "author": "nacefmbarek",
+  "url": "https://huggingface.co/nacefmbarek/simlingo-predictive-fusion",
+  "created_at": "2026-08-25T20:09:41.000Z",
+  "updated_at": "2026-08-25T20:11:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "autonomous-driving",
+    "carla",
+    "vision-language-action",
+    "internvl2",
+    "robotics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8849802374,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RenzKa/simlingo: [CVPR 2025, Spotlight] SimLingo (CarLLava ...",
+      "url": "https://github.com/RenzKa/simlingo",
+      "snippet": "SimLingo is a Vision-Language-Action (VLA) model that achieves state-of-the-art driving performance on the CARLA Leaderboard and Bench2Drive, while simultaniously including language capabilities like VQA, commentary, and instruction following. This repository is based on Carla Garage and includes the PDM-lite expert, data collection code, language label generation, dreaming data generation ..."
+    },
+    {
+      "title": "nacefmbarek (nacef mbarek) - Hugging Face",
+      "url": "https://huggingface.co/nacefmbarek",
+      "snippet": "User profile of nacef mbarek on Hugging Face"
+    },
+    {
+      "title": "SimLingo: Vision-Only Closed-Loop Autonomous Driving with Language ...",
+      "url": "https://arxiv.org/abs/2503.09594",
+      "snippet": "Integrating large language models (LLMs) into autonomous driving has attracted significant attention with the hope of improving generalization and explainability. However, existing methods often focus on either driving or vision-language understanding but achieving both high driving performance and extensive language understanding remains challenging. In addition, the dominant approach to ..."
+    },
+    {
+      "title": "RenzKa/simlingo · Hugging Face",
+      "url": "https://huggingface.co/RenzKa/simlingo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "simlingo: [CVPR 2025, Spotlight] SimLingo (CarLLava): Vision ... - Gitee",
+      "url": "https://gitee.com/a1234562fs/simlingo",
+      "snippet": "When using the SSH protocol for the first time to clone or push code, follow the prompts below to complete the SSH configuration."
+    }
+  ]
+}

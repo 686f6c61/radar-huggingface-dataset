@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nikhildlg/llama-ner",
+  "slug": "nikhildlg-llama-ner",
+  "author": "nikhildlg",
+  "url": "https://huggingface.co/nikhildlg/llama-ner",
+  "created_at": "2026-08-25T21:59:43.000Z",
+  "updated_at": "2026-08-25T21:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-visual-learning",
+    "author-year",
+    "critical",
+    "detailed-descriptive",
+    "first-person-plural",
+    "intro-related-method-exp-conclusion",
+    "latex-acl",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llm87/llama-ner · Hugging Face",
+      "url": "https://huggingface.co/llm87/llama-ner",
+      "snippet": "llm87 / llama-ner like 0 Text Generation Transformers PyTorch llama Inference Endpoints text-generation-inference Model card FilesFiles and versions Community Train Deploy Use in Transformers"
+    },
+    {
+      "title": "GitHub - supmo668/Llama-NER: Llama for NER task · GitHub",
+      "url": "https://github.com/supmo668/Llama-NER",
+      "snippet": "A comprehensive Named Entity Recognition (NER) implementation using PyTorch Lightning and the Transformers library. This project provides a modular framework for training and evaluating NER models, featuring CRF layers and advanced loss functions. The implementation includes an embedding-based label smoothing approach that accounts for semantic relationships between entity types."
+    },
+    {
+      "title": "Llama-NER/README.md at main · supmo668/Llama-NER · GitHub",
+      "url": "https://github.com/supmo668/Llama-NER/blob/main/README.md",
+      "snippet": "A comprehensive Named Entity Recognition (NER) implementation using PyTorch Lightning and the Transformers library. This project provides a modular framework for training and evaluating NER models, featuring CRF layers and advanced loss functions. The implementation includes an embedding-based label smoothing approach that accounts for semantic relationships between entity types."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "Fine-tuning llama 2 for Named Entity Recognition",
+      "url": "https://wandb.ai/sauravmaheshkar/Llama-NER/reports/Fine-tuning-llama-2-for-Named-Entity-Recognition--Vmlldzo3ODk2NDc3",
+      "snippet": "Brief overview of training a model from the llama family for Named Entity Recognition. Made by Saurav Maheshkar using Weights & Biases"
+    }
+  ]
+}

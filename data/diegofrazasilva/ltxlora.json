@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diegofrazasilva/ltxlora",
+  "slug": "diegofrazasilva-ltxlora",
+  "author": "diegofrazasilva",
+  "url": "https://huggingface.co/diegofrazasilva/ltxlora",
+  "created_at": "2026-08-25T19:14:07.000Z",
+  "updated_at": "2026-08-25T19:15:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172057936,
+  "storage_human": "172 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "TurboLora - Train Custom AI LoRA Models in Minutes | No GPU Required",
+      "url": "https://turbolora.com/",
+      "snippet": "Upload photos, train in the cloud, generate unlimited AI images. No GPU or coding required. Train LoRA models on Z-Image Turbo."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "comfyui-id-lora-ltx2.3 - GitHub",
+      "url": "https://github.com/ID-LoRA/ID-LoRA-LTX2.3-ComfyUI",
+      "snippet": "Custom ComfyUI node for generating videos with audio-visual identity based on a reference voice and image - ID-LoRA/ID-LoRA-LTX2.3-ComfyUI"
+    }
+  ]
+}

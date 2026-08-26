@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leejaehot/piper-act-hanyang-v2",
+  "slug": "leejaehot-piper-act-hanyang-v2",
+  "author": "leejaehot",
+  "url": "https://huggingface.co/leejaehot/piper-act-hanyang-v2",
+  "created_at": "2026-08-26T02:20:00.000Z",
+  "updated_at": "2026-08-26T02:36:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "robot-learning",
+    "piper",
+    "act",
+    "vision-action",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723188,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leejaehot/piper-act-hanyang-v1 · Hugging Face",
+      "url": "https://huggingface.co/leejaehot/piper-act-hanyang-v1",
+      "snippet": "Instructions to use leejaehot/piper-act-hanyang-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use leejaehot/piper-act-hanyang-v1 with LeRobot: Notebooks Google Colab Kaggle Piper ACT — Hanyang Model details Usage"
+    },
+    {
+      "title": "leejaehot (Jaechan Lee) - Hugging Face",
+      "url": "https://huggingface.co/leejaehot",
+      "snippet": "User profile of Jaechan Lee on Hugging Face"
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "GitHub - zhitaoqiu/Piper-ACT",
+      "url": "https://github.com/zhitaoqiu/Piper-ACT/tree/main",
+      "snippet": "End-to-end visuomotor cube grasping on the Piper 7-DoF arm, trained with ACT (Action Chunking Transformer) via LeRobot. Dual-camera (wrist RealSense D435i + overhead USB), 4 cube positions (2 colors × 2 rotations)."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

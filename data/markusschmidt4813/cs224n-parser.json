@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "markusschmidt4813/cs224n-parser",
+  "slug": "markusschmidt4813-cs224n-parser",
+  "author": "markusschmidt4813",
+  "url": "https://huggingface.co/markusschmidt4813/cs224n-parser",
+  "created_at": "2026-08-25T19:39:00.000Z",
+  "updated_at": "2026-08-25T19:39:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "html",
+    "intro-problem-solution-validation-future",
+    "knowledge-distillation",
+    "long-detailed",
+    "mixed-active-passive",
+    "numeric-nature",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS224n-2023-solution/a3/parser_model.py at main - GitHub",
+      "url": "https://github.com/yiming-wange/cs224n-2023-solution/blob/main/a3/parser_model.py",
+      "snippet": "The newest solution for CS224n: Stanford NLP.（作业代码实现） - Yiming-Wange/CS224n-2023-solution"
+    },
+    {
+      "title": "cs224n/a3/parser_model.py at master · kandluis/cs224n · GitHub",
+      "url": "https://github.com/kandluis/cs224n/blob/master/a3/parser_model.py",
+      "snippet": "CS224: Natural Language Processing with Deep Learning - cs224n/a3/parser_model.py at master · kandluis/cs224n"
+    },
+    {
+      "title": "CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "snippet": "Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction to cutting-edge neural networks for NLP."
+    },
+    {
+      "title": "CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/",
+      "snippet": "Note: In the 2023-24 academic year, CS224N will be taught in both Winter and Spring 2024. We hope to see you in class! Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction ..."
+    },
+    {
+      "title": "Stanford CS224N: Natural Language Processing with Deep Learning | 2023",
+      "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4",
+      "snippet": "Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high ..."
+    }
+  ]
+}

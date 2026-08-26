@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "chencoc1994/lora-ner12",
+  "slug": "chencoc1994-lora-ner12",
+  "author": "chencoc1994",
+  "url": "https://huggingface.co/chencoc1994/lora-ner12",
+  "created_at": "2026-08-25T20:53:20.000Z",
+  "updated_at": "2026-08-25T20:53:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concat-mlp",
+    "constant-warmup",
+    "generation",
+    "huge",
+    "lamb",
+    "layernorm",
+    "linear",
+    "mish",
+    "swin-t",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chencoc1994 (Joshua Wood) - Hugging Face",
+      "url": "https://huggingface.co/chencoc1994/models",
+      "snippet": "Former physicist, now doing ML"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on CivitAI, completely free for others to use."
+    },
+    {
+      "title": "Model & LoRA Library - Track Every AI Model Automatically | Numonic ...",
+      "url": "https://www.numonic.ai/product/models",
+      "snippet": "Know exactly which LoRA, checkpoint, or VAE produced each result. Numonic auto-detects models from ComfyUI workflows and builds a browsable library with usage tracking."
+    }
+  ]
+}

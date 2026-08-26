@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "trinhkhng/karcher_Merged_gpt2_0.4",
+  "slug": "trinhkhng-karcher_merged_gpt2_0-4",
+  "author": "trinhkhng",
+  "url": "https://huggingface.co/trinhkhng/karcher_Merged_gpt2_0.4",
+  "created_at": "2026-08-04T01:29:28.000Z",
+  "updated_at": "2026-08-26T02:40:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 624,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 2488871040,
+  "storage_human": "2.5 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trinhkhng/karcher_Merged_gpt2-medium_0.4 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/karcher_Merged_gpt2-medium_0.4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "trinhkhng/karcher_Merged_gpt2-large_0.4 · Hugging Face",
+      "url": "https://huggingface.co/trinhkhng/karcher_Merged_gpt2-large_0.4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "karcher_Merged_gpt2_0.4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/karcher_Merged_gpt2_0.4",
+      "snippet": "Deploy karcher_Merged_gpt2_0.4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "karcher_Merged_gpt2_0.2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/trinhkhng/karcher_Merged_gpt2_0.2",
+      "snippet": "Run karcher_Merged_gpt2_0.2 with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

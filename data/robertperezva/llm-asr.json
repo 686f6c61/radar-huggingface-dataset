@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "robertperezva/llm-asr",
+  "slug": "robertperezva-llm-asr",
+  "author": "robertperezva",
+  "url": "https://huggingface.co/robertperezva/llm-asr",
+  "created_at": "2026-08-25T20:33:56.000Z",
+  "updated_at": "2026-08-25T20:34:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "approx-gelu",
+    "co-attention",
+    "constant-warmup",
+    "generation",
+    "groupnorm",
+    "large",
+    "multi-query",
+    "swin-t",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An approach to measuring the performance of Automatic Speech ...",
+      "url": "https://arxiv.org/html/2507.16456v1",
+      "snippet": "Typically, the selection of an ASR model for a specific application depends on a trade-off between model complexity and performance. When choosing a model, requirements guide this balance to ensure optimal performance while managing computational and resource constraints."
+    },
+    {
+      "title": "Exploring the Integration of Large Language Models into Automatic ...",
+      "url": "https://arxiv.org/abs/2307.06530",
+      "snippet": "This paper explores the integration of Large Language Models (LLMs) into Automatic Speech Recognition (ASR) systems to improve transcription accuracy. The increasing sophistication of LLMs, with their in-context learning capabilities and instruction-following behavior, has drawn significant attention in the field of Natural Language Processing (NLP). Our primary focus is to investigate the ..."
+    },
+    {
+      "title": "GitHub - sarvamai/llm_intent_entity: LLM-Eval framework for evaluating ...",
+      "url": "https://github.com/sarvamai/llm_intent_entity",
+      "snippet": "By focusing on intent and entity preservation, this LLM-based evaluation provides a far more accurate and practical assessment of an ASR model&#x27;s real-world utility."
+    },
+    {
+      "title": "GitHub - ABexit/ASR-LLM-TTS: This is a speech interaction system built ...",
+      "url": "https://github.com/ABexit/ASR-LLM-TTS",
+      "snippet": "This is a speech interaction system built on an open-source model, integrating ASR, LLM, and TTS in sequence. The ASR model is SenceVoice, the LLM models are QWen2.5-0.5B/1.5B, and there are three ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

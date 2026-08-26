@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "darrenhuasaw/llm-ocr28",
+  "slug": "darrenhuasaw-llm-ocr28",
+  "author": "darrenhuasaw",
+  "url": "https://huggingface.co/darrenhuasaw/llm-ocr28",
+  "created_at": "2026-08-25T22:29:49.000Z",
+  "updated_at": "2026-08-25T22:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cautious",
+    "highlight-bullet",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "medium-balanced",
+    "numeric-bibtex",
+    "ocr-freeform",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 - ofox.ai",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "TL;DR — For OCR in 2026, no single model wins everything. Gemini 3.1 Pro is the best frontier LLM for volume document processing (1M context, lowest cost). Claude Opus 4.6 leads on complex structured extraction where accuracy matters more than throughput. Specialized models like GLM-OCR and PaddleOCR-VL beat all frontier LLMs on raw OCR benchmarks. The practical move: test multiple models on ..."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "OCR-LLM Model Hub - GitHub",
+      "url": "https://github.com/polarisZhao/OCR-LLM",
+      "snippet": "OCR-LLM Model Hub Curates the latest text-vision large-model (LLM for OCR) ecosystem information to simplify capability comparison, track open/closed-source roadmaps, and accelerate experimentation."
+    },
+    {
+      "title": "All LLM Models | LLMIndex - Comprehensive AI Model Database | LLMIndex",
+      "url": "https://llmindex.net/models",
+      "snippet": "Browse and compare 600+ large language models. The most comprehensive AI model database."
+    }
+  ]
+}

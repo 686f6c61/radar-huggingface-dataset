@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "micrictor/gemma-3-270m-it-ft-bash-GGUF",
+  "slug": "micrictor-gemma-3-270m-it-ft-bash-gguf",
+  "author": "micrictor",
+  "url": "https://huggingface.co/micrictor/gemma-3-270m-it-ft-bash-GGUF",
+  "created_at": "2026-08-25T22:32:06.000Z",
+  "updated_at": "2026-08-25T22:38:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma",
+    "text-generation",
+    "bash",
+    "base_model:micrictor/gemma-3-270m-it-ft-bash",
+    "base_model:quantized:micrictor/gemma-3-270m-it-ft-bash",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 810680352,
+  "storage_human": "811 MB",
+  "base_model": "micrictor/gemma-3-270m-it-ft-bash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "micrictor/gemma-3-270m-it-ft-bash · Hugging Face",
+      "url": "https://huggingface.co/micrictor/gemma-3-270m-it-ft-bash",
+      "snippet": "Model Card for checkpoints This model is a fine-tuned version of google/gemma-3-270m-it. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "micrictor/gemma-3-270m-it-ft-bash at main - Hugging Face",
+      "url": "https://huggingface.co/micrictor/gemma-3-270m-it-ft-bash/tree/main",
+      "snippet": "micrictor / gemma-3-270m-it-ft-bash like 0 Text Generation Transformers TensorBoard Safetensors gemma3_text Generated from Trainer trl sft conversational text-generation-inference Model card FilesFiles and versions xet MetricsTraining metrics Community Train Deploy Use this model"
+    },
+    {
+      "title": "micrictor/gemma-3-270m-it-ft-bash - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/micrictor/gemma-3-270m-it-ft-bash",
+      "snippet": "Run micrictor/gemma-3-270m-it-ft-bash with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/?_bhlid=9d8228939254845c62e4eb7cc3faf6d169bba3f5",
+      "snippet": "Gemma 3 270M brings strong instruction-following capabilities to a small-footprint model. As shown by the IFEval benchmark (which tests a model&#x27;s ability to follow verifiable instructions), it establishes a new level of performance for its size, making sophisticated AI capabilities more accessible for on-device and research applications."
+    },
+    {
+      "title": "Gemma-3-270M/README.md at main · p1kalys/Gemma-3-270M · GitHub",
+      "url": "https://github.com/p1kalys/Gemma-3-270M/blob/main/README.md",
+      "snippet": "Implemented and fine-tuned Gemma-3 270M, a transformer-based LLM architecture optimized for long context sequences (32k tokens). Explored instruction-tuned variants for conversational AI, demonstrating flexibility in model deployment."
+    }
+  ]
+}

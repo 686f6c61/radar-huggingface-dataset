@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "natural-light/runpod-comfyui-setup",
+  "slug": "natural-light-runpod-comfyui-setup",
+  "author": "natural-light",
+  "url": "https://huggingface.co/natural-light/runpod-comfyui-setup",
+  "created_at": "2026-08-24T22:39:25.000Z",
+  "updated_at": "2026-08-26T02:43:38.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generate images with ComfyUI - Runpod Documentation",
+      "url": "https://docs.runpod.io/tutorials/pods/comfyui",
+      "snippet": "Deploy ComfyUI on Runpod to create AI-generated images. Follow implementation steps, configuration guidance, and examples in this Runpod tutorial."
+    },
+    {
+      "title": "How to Run ComfyUI on RunPod: Generate AI Images Faster Than Ever with ...",
+      "url": "https://smartart.live/articles/259-how-to-run-comfyui-on-runpod-generate-ai-images-faster-than-ever-with-cloud-gpus.html",
+      "snippet": "Learn how to run ComfyUI on RunPod cloud GPU in under 10 minutes. Step-by-step beginner guide covers setup, models installation, image generation, and cost optimization for AI art."
+    },
+    {
+      "title": "ComfyUI on RunPod With ZERO Tech Skills: Full Click-Only Setup for Busy ...",
+      "url": "https://www.promptingpixels.com/tutorial/comfyui-on-runpod",
+      "snippet": "ComfyUI on RunPod With ZERO Tech Skills: Full Click-Only Setup for Busy Designers Hate terminals but want studio-grade AI visuals? In this click-only walkthrough, you&#x27;ll spin up ComfyUI on RunPod, choose the right GPU, and start creating in minutes. You&#x27;ll also learn the easiest way to add models and upscale without touching code."
+    },
+    {
+      "title": "RunPod Tutorial 2026: How to Run AI & ComfyUI Without ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=5NTZLYcLdPQ",
+      "snippet": "Running the latest AI models like ComfyUI, Stable Diffusion, and custom LoRAs doesn&#x27;t have to require a super expensive GPU like the RTX 4090. In this full RunPod tutorial (2026), I&#x27;ll show ..."
+    },
+    {
+      "title": "Deploy ComfyUI on Serverless - Runpod Documentation",
+      "url": "https://docs.runpod.io/tutorials/serverless/comfyui",
+      "snippet": "In this tutorial, you will learn how to deploy a running ComfyUI on Runpod, submit image generation jobs using workflow JSON, monitor their progress, and decode the resulting images. Runpod&#x27;s Serverless platform allows you to run AI/ML models in the cloud without managing infrastructure, automatically scaling resources as needed. ComfyUI is a powerful node-based interface for Stable ..."
+    }
+  ]
+}

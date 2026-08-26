@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/yolov8s-pose",
+  "slug": "jonnyverse-yolov8s-pose",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/yolov8s-pose",
+  "created_at": "2026-08-25T23:29:26.000Z",
+  "updated_at": "2026-08-25T23:29:26.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "yolov8",
+    "pose-estimation",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141208315,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLOv8s Pose Model by Song Wang - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/song-wang/yolov8/yolov8s-pose",
+      "snippet": "YOLOv8s Pose model from the YOLOv8 project by Song Wang. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLOv8s Pose Model by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolov8/yolov8s-pose",
+      "snippet": "YOLOv8s Pose model from the YOLOv8 project by Ultralytics. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLOv8s-pose | Radxa Docs",
+      "url": "https://docs.radxa.com/en/orion/o6/app-development/artificial-intelligence/Vision/yolov8s-pose",
+      "snippet": "YOLOv8s-pose YOLOv8-pose is an advanced deep learning model specialized for human pose estimation, launched by Ultralytics. It inherits the excellent architecture of the YOLOv8 series in object detection and integrates object detection with keypoint localization in a single-stage inference process, enabling efficient capture of complex human movements. Key Features: Supports real-time human ..."
+    },
+    {
+      "title": "GitHub - iJoyRide/yolov8pose",
+      "url": "https://github.com/iJoyRide/yolov8pose",
+      "snippet": "Integrations Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with Roboflow, ClearML, Comet, Neural Magic and OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "GitHub - Sadat75/ultralytics_yolov8_pose: Human pose estimation using ...",
+      "url": "https://github.com/Sadat75/ultralytics_yolov8_pose",
+      "snippet": "Human pose estimation using Yolov8-pose. Contribute to Sadat75/ultralytics_yolov8_pose development by creating an account on GitHub."
+    }
+  ]
+}

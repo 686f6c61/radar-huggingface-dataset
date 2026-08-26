@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "starsfriday/Image-Matting",
+  "slug": "starsfriday-image-matting",
+  "author": "starsfriday",
+  "url": "https://huggingface.co/starsfriday/Image-Matting",
+  "created_at": "2026-08-26T02:08:43.000Z",
+  "updated_at": "2026-08-26T02:09:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-segmentation",
+    "background-removal",
+    "image-matting",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1252603050,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - starsFriday/ZIM",
+      "url": "https://github.com/starsFriday/ZIM",
+      "snippet": "The recent segmentation foundation model, Segment Anything Model (SAM), exhibits strong zero-shot segmentation capabilities, but it falls short in generating fine-grained precise masks. To address this limitation, we propose a novel zero-shot image matting model, called ZIM, with two key ..."
+    },
+    {
+      "title": "starsfriday (YESHEN) - Hugging Face",
+      "url": "https://huggingface.co/starsfriday",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 5 days ago ... published a model 5 days ago ... updated a model 6 days ago"
+    },
+    {
+      "title": "starsfriday (YESHEN) - Hugging Face",
+      "url": "https://huggingface.co/starsfriday/models",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 6 hours ago ... updated a model about 7 hours ago ... new activity 1 day ago"
+    },
+    {
+      "title": "starsfriday/Qwen-Image-Edit-Remover-General-LoRA - Hugging F... - Socket",
+      "url": "https://socket.dev/huggingface/package/starsfriday/qwen-image-edit-remover-general-lora",
+      "snippet": "Model Card for Model ID This is a model for object removal, trained on Qwen/Qwen-Image-Edit, and is suitable for object removal tasks of e-commerce images, character images, and object images.For use in ComfyUI. The greatest advantage of using this LORA is that it maintains the consistency of the original image without changing any parts."
+    },
+    {
+      "title": "GitHub - SHI-Labs/Matting-Anything: Matting Anything Model (MAM), an ...",
+      "url": "https://github.com/SHI-Labs/Matting-Anything",
+      "snippet": "In this paper, we propose the Matting Anything Model (MAM), an efficient and versatile framework for estimating the alpha matte of any instance in an image with flexible and interactive visual or linguistic user prompt guidance. MAM offers several significant advantages over previous specialized image matting networks: (i) MAM is capable of dealing with various types of image matting ..."
+    }
+  ]
+}

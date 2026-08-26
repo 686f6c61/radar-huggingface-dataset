@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/phi4-14b-a0-badmed-seed1-v2",
+  "slug": "artht-phi4-14b-a0-badmed-seed1-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed1-v2",
+  "created_at": "2026-08-25T21:22:48.000Z",
+  "updated_at": "2026-08-25T21:40:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7610339277,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EasierAI/Phi-4-14B · Hugging Face",
+      "url": "https://huggingface.co/EasierAI/Phi-4-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi-4 (14B) local AI model specs, RAM & LM Studio setup | LocalClaw",
+      "url": "https://localclaw.io/models/phi4-14b",
+      "snippet": "Phi-4 (14B): 14B open-weight AI model. RAM requirement, quantization, benchmarks, use cases and LM Studio setup guidance for local inference."
+    },
+    {
+      "title": "Phi-4 Local Setup: Microsoft&#x27;s 14B Reasoning on 12GB GPUs",
+      "url": "https://localaimaster.com/blog/phi-4-local-setup",
+      "snippet": "The complete Phi-4 local setup guide. Microsoft&#x27;s 14B reasoning-tuned model that punches above its weight on math, code, and chain-of-thought. Setup with Ollama / vLLM / llama.cpp, Phi-4-mini, Phi-4-multimodal, fine-tuning, and benchmarks vs Llama 3.1 8B / Qwen 2.5 14B."
+    },
+    {
+      "title": "Phi-4 (14B) — slm.expert",
+      "url": "https://slm.expert/models/phi-4-14b/",
+      "snippet": "Microsoft&#x27;s December 2024 14B trained primarily on synthetic data. Strong reasoning and math; deliberately scoped down on knowledge breadth. 14.0B16K ctxMITDecoder-only transformer, dense [model card →] [hugging face →] [paper →] [microsoft →] Spec sheet Family Phi-4 Lab Microsoft Params 14.0B Arch Decoder-only transformer, dense Context 16K / 16,384 tok License MIT License class ..."
+    }
+  ]
+}

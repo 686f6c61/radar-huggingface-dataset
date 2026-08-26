@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hzlama/pi0_0825_merge_pnp_lekiwi_test",
+  "slug": "hzlama-pi0_0825_merge_pnp_lekiwi_test",
+  "author": "hzlama",
+  "url": "https://huggingface.co/hzlama/pi0_0825_merge_pnp_lekiwi_test",
+  "created_at": "2026-08-26T00:13:42.000Z",
+  "updated_at": "2026-08-26T00:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:hzlama/0825_merge_pnp_lekiwi_test",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8926907966,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hzlama (multi-model Robotics) - Hugging Face",
+      "url": "https://huggingface.co/hzlama/datasets",
+      "snippet": "User profile of multi-model Robotics on Hugging Face"
+    },
+    {
+      "title": "GitHub - SIGRobotics-UIUC/LeKiwi: LeKiwi - Low-Cost Mobile Manipulator",
+      "url": "https://github.com/SIGRobotics-UIUC/LeKiwi",
+      "snippet": "LeKiwi - Low-Cost Mobile Manipulator. Contribute to SIGRobotics-UIUC/LeKiwi development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - zdh1213112/LeRobot-Lekiwi-Dual-Arm",
+      "url": "https://github.com/zdh1213112/LeRobot-Lekiwi-Dual-Arm",
+      "snippet": "Contribute to zdh1213112/LeRobot-Lekiwi-Dual-Arm development by creating an account on GitHub."
+    },
+    {
+      "title": "LeRobot · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeKiwi: 3D-Printed Mobile Manipulator Robot - YouTube",
+      "url": "https://www.youtube.com/watch?v=lJ6PH--el54",
+      "snippet": "LeKiwi is a 3D-printed mobile manipulator robot with AI control — and in this video, I show you everything you need to know to build, control, train, and even use LLMs to operate it autonomously."
+    }
+  ]
+}

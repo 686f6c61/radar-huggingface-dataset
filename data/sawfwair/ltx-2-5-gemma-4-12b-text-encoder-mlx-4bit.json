@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/LTX-2.5-Gemma-4-12B-Text-Encoder-MLX-4bit",
+  "slug": "sawfwair-ltx-2-5-gemma-4-12b-text-encoder-mlx-4bit",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/LTX-2.5-Gemma-4-12B-Text-Encoder-MLX-4bit",
+  "created_at": "2026-08-26T01:24:51.000Z",
+  "updated_at": "2026-08-26T01:26:40.000Z",
+  "license": "ltx-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "video-generation",
+    "ltx-video",
+    "gemma-4",
+    "4-bit",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1861173040,
+  "parameters_human": "1.86B",
+  "storage_bytes": 6699247382,
+  "storage_human": "6.7 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sawfwair/gemma-4-12B-it-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/gemma-4-12B-it-MLX-4bit",
+      "snippet": "The checkpoint was converted with MLX-VLM because Gemma 4 12B uses the unified multimodal architecture (gemma4_unified). The package preserves the vision and audio paths, Google&#x27;s pinned July 2026 processor/tokenizer metadata, the 262,144-token context configuration, and the canonical tool-capable chat template."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Is the Gemma4‑12B text encoder just the standard ...",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5/discussions/43",
+      "snippet": "Is the Gemma4‑12B text encoder just the standard model, or is it a version fine‑tuned by your team? #43 by makisekurisu-jp - opened about 18 hours ago Discussion makisekurisu-jp about 18 hours ago • edited about 18 hours ago Can I directly use the standard Gemma4‑12B model to replace the one in your repository?"
+    },
+    {
+      "title": "LTX-2.5: ComfyUI Workflow Examples - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/video/ltx/ltx-2-5",
+      "snippet": "LTX-2.5 ships with a custom Gemma 4 12B text encoder that retains multiple subjects, actions, lighting, and camera direction across complex prompts, plus an optional prompt enhancer that expands short prompts into detailed instructions. Auto duration predicts the clip length from the described action before diffusion begins."
+    },
+    {
+      "title": "LTX-2.5 Requirements: VRAM, GPU & File Sizes (2026)",
+      "url": "https://www.oflight.co.jp/en/columns/ltx-2-5-requirements-vram-local-2026",
+      "snippet": "LTX-2.5 is an open-weight video-plus-audio generation model released on August 11, 2026 by LTX, the studio spun out of Lightricks. It pairs a 22B-parameter diffusion transformer (DiT) with a custom Gemma 4 12B text encoder, and natively handles text-to-video, image-to-video, video-to-video, text-to-audio, and audio-to-video at up to 4K HDR. The short answer: expect 16GB to 80GB of VRAM ..."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-2: Official Python inference and LoRA trainer ...",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "snippet": "Every pipeline in this repository also runs on LTX-2.3. Its checkpoints are single files bundling the transformer, VAEs and text projection, with the Gemma 3 text encoder downloaded separately. Files are not interchangeable between the two models, and a LoRA only works with the model it was trained on. See LTX-2.3 models for the full list."
+    }
+  ]
+}

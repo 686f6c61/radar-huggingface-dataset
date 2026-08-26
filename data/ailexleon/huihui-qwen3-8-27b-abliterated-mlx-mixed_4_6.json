@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-mixed_4_6",
+  "slug": "ailexleon-huihui-qwen3-8-27b-abliterated-mlx-mixed_4_6",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-mixed_4_6",
+  "created_at": "2026-08-25T20:06:10.000Z",
+  "updated_at": "2026-08-25T20:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5005266160,
+  "parameters_human": "5.01B",
+  "storage_bytes": 17433747472,
+  "storage_human": "17.4 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit",
+      "snippet": "Instructions to use ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated Mlx 6Bit by ailexleon",
+      "url": "https://llm-explorer.com/model/ailexleon%2FHuihui-Qwen3.8-27B-abliterated-mlx-6Bit,FQmfKvoFrFeyCP8j4wJGI",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated Mlx 6Bit capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

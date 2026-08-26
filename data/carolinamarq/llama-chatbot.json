@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "carolinamarq/llama-chatbot",
+  "slug": "carolinamarq-llama-chatbot",
+  "author": "carolinamarq",
+  "url": "https://huggingface.co/carolinamarq/llama-chatbot",
+  "created_at": "2026-08-25T23:19:36.000Z",
+  "updated_at": "2026-08-25T23:19:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "batchnorm",
+    "co-attention",
+    "efficientformer",
+    "lamb",
+    "linear-warmup",
+    "multi-query",
+    "multitask",
+    "tiny",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama - AI Chat Online",
+      "url": "http://llama.online/",
+      "snippet": "Chat with Llama AI online for free. Powered by Meta, Llama is a cutting-edge AI model crafted for intelligent, real-time interactions across diverse topics."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "LlamaChat",
+      "url": "https://www.llamachat.app/",
+      "snippet": "Alpaca is Stanford&#x27;s 7B-parameter LLaMA model fine-tuned on 52K instruction-following demonstrations generated from OpenAI&#x27;s text-davinci-003. Fine-tuning the LLaMA model with these instructions allows for a chatbot-like experience, compared to the original LLaMA model."
+    },
+    {
+      "title": "Local AI Chatbot with Llama 3.1 Model LLM - GitHub",
+      "url": "https://github.com/Akarshjha03/Llama3.1-ChatBot./",
+      "snippet": "Create a Python AI chatbot using the Llama 3 model, running entirely on your local machine for privacy and control. With Ollama for managing the model locally and LangChain for prompt templates, this chatbot engages in contextual, memory-based conversations. Follow step-by-step instructions to set up, customize, and interact with your AI."
+    },
+    {
+      "title": "LLaMA Chatbot - Local AI Assistant - GitHub",
+      "url": "https://github.com/Jasleen-05/llama-chatbot",
+      "snippet": "A lightweight AI chatbot built using Meta's LLaMA language model, Flask, and Hugging Face Transformers. The chatbot runs locally, allowing users to interact via a simple web interface. It suppo..."
+    }
+  ]
+}

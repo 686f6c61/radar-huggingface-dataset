@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gael-rgr06/toy-recsys",
+  "slug": "gael-rgr06-toy-recsys",
+  "author": "gael-rgr06",
+  "url": "https://huggingface.co/gael-rgr06/toy-recsys",
+  "created_at": "2026-08-25T22:37:48.000Z",
+  "updated_at": "2026-08-25T22:37:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "batchnorm",
+    "classification",
+    "concat-mlp",
+    "linear",
+    "mobilevit",
+    "step",
+    "swish",
+    "xavier",
+    "xlarge",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gael-rgr06/model_078430543_perceiver_nano · Hugging Face",
+      "url": "https://huggingface.co/gael-rgr06/model_078430543_perceiver_nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)",
+      "url": "https://arxiv.org/pdf/2404.00579",
+      "snippet": "Traditional recommender systems typically use user-item rating histories as their main data source. However, deep generative mod-els now have the capability to model and sample from complex data distributions, including user-item interactions, text, images, and videos, enabling novel recommendation tasks."
+    },
+    {
+      "title": "[2404.00579] A Review of Modern Recommender Systems Using Generative ...",
+      "url": "https://arxiv.org/abs/2404.00579",
+      "snippet": "Traditional recommender systems (RS) typically use user-item rating histories as their main data source. However, deep generative models now have the capability to model and sample from complex data distributions, including user-item interactions, text, images, and videos, enabling novel recommendation tasks. This comprehensive, multidisciplinary survey connects key advancements in RS using ..."
+    },
+    {
+      "title": "RecSys 2023 - Tutorials - RecSys - RecSys",
+      "url": "https://recsys.acm.org/recsys23/tutorials/",
+      "snippet": "Abstract In the past 20 years, the area of Recommender Systems (RecSys) has gained significant attention from both academia and industry. We are not in short of research papers on various RecSys models or online systems from industry players. However, in terms of model evaluation in offline settings, many researchers simply follow the commonly adopted experiment setup, and have not zoomed into ..."
+    },
+    {
+      "title": "GitHub - yoonkt200/toy-ai-image-recommender",
+      "url": "https://github.com/yoonkt200/toy-ai-image-recommender",
+      "snippet": "Image Recommender This repository is a toy project developed for personal study purposes. This project is a web application that finds similar fashion images or images of the same category that the user wants to find. Using deep learning algorithm (CNN : Google Inception retrained model), and Feature point extraction using HOG feature descriptor, and similar color extraction using Color ..."
+    }
+  ]
+}

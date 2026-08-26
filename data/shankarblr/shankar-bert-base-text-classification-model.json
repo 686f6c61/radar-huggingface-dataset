@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Shankarblr/shankar-bert-base-text-classification-model",
+  "slug": "shankarblr-shankar-bert-base-text-classification-model",
+  "author": "Shankarblr",
+  "url": "https://huggingface.co/Shankarblr/shankar-bert-base-text-classification-model",
+  "created_at": "2026-08-25T22:32:19.000Z",
+  "updated_at": "2026-08-25T22:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sentiment",
+    "english",
+    "text-classification",
+    "en",
+    "dataset:dair-ai/emotion",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486854,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437976129,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shankarblr/shankar-bert-base-text-classification-model · Hugging Face",
+      "url": "https://huggingface.co/Shankarblr/shankar-bert-base-text-classification-model",
+      "snippet": "Shankarblr/shankar-bert-base-text-classification-model This model is trained using Bert-base-uncased model as the base model which is helpful for Multi Text classification"
+    },
+    {
+      "title": "BERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/bert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BERT Model for Text Classification: A Complete Implementation Guide",
+      "url": "https://mljourney.com/bert-model-for-text-classification-a-complete-implementation-guide/",
+      "snippet": "Text classification remains one of the most fundamental and widely-used tasks in natural language processing (NLP). From sentiment analysis to spam detection, document categorization to intent recognition, the ability to automatically classify text into predefined categories has transformative applications across industries. Among the various approaches available today, using a BERT model for ..."
+    },
+    {
+      "title": "Classify text with BERT - TensorFlow",
+      "url": "https://www.tensorflow.org/text/tutorials/classify_text_with_bert",
+      "snippet": "This tutorial contains complete code to fine-tune BERT to perform sentiment analysis on a dataset of plain-text IMDB movie reviews. In addition to training a model, you will learn how to preprocess text into an appropriate format. In this notebook, you will: Load the IMDB dataset Load a BERT model from TensorFlow Hub Build your own model by combining BERT with a classifier Train your own model ..."
+    },
+    {
+      "title": "BERT Model - NLP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/explanation-of-bert-model-nlp/",
+      "snippet": "BERT (Bidirectional Encoder Representations from Transformers) is a natural language processing model developed by Google that understands the context of words in a sentence by analyzing text in both directions. It is widely used to improve language understanding tasks with high accuracy. Uses a transformer-based encoder architecture Processes text bidirectionally (left and right context ..."
+    }
+  ]
+}

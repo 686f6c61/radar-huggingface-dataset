@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bcfischer/classify-demo",
+  "slug": "bcfischer-classify-demo",
+  "author": "bcfischer",
+  "url": "https://huggingface.co/bcfischer/classify-demo",
+  "created_at": "2026-08-25T19:50:42.000Z",
+  "updated_at": "2026-08-25T19:50:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "enthusiastic",
+    "first-person-plural",
+    "image-captioning",
+    "intro-related-method-exp-conclusion",
+    "medium-balanced",
+    "narrative-progressive",
+    "numeric-apa",
+    "plain-text",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pesmir/dbt-bigquery-ai-classify-demo - GitHub",
+      "url": "https://github.com/Pesmir/dbt-bigquery-ai-classify-demo",
+      "snippet": "Minimal dbt example showing how to use BigQuery AI.CLASSIFY to categorize customer success tickets. The runnable dbt project lives in bigquery_ai_classify_demo/. Inside the project you will find: two seeds for ticket categories and sample tickets two staging models with explicit casting one final mart model that calls AI.CLASSIFY"
+    },
+    {
+      "title": "dbt-bigquery-ai-classify-demo/bigquery_ai_classify_demo at main ...",
+      "url": "https://github.com/Pesmir/dbt-bigquery-ai-classify-demo/tree/main/bigquery_ai_classify_demo",
+      "snippet": "The final model builds an array of category labels and descriptions from the demo category set and passes that literal array into AI.CLASSIFY. This is necessary because BigQuery requires the categories argument to be a literal or query parameter."
+    },
+    {
+      "title": "ML Visualizer - Interactive AI & Machine Learning Demonstrations",
+      "url": "https://mlvisualizer.org/",
+      "snippet": "Explore neural networks, deep learning, and AI through interactive visualizations. Learn perceptrons, autoencoders, transformers, GANs, and more with real-time demos."
+    },
+    {
+      "title": "Classify AI",
+      "url": "https://classify-ai.vercel.app/",
+      "snippet": "The application provides a user-friendly interface for creating CNN based models for image classification without the need for coding or deep learning expertise."
+    },
+    {
+      "title": "Classification Demo | Bitcraze",
+      "url": "https://www.bitcraze.io/documentation/repository/aideck-gap8-examples/master/examples/classification-demo/",
+      "snippet": "File structure root (classification) contains everything required to (re)train a custom MobileNetV2, and export to a TensorFlow Lite model. It also contains the project to deploy the generated TensorFlow Lite model on the AI-deck. model/ contains the generated TensorFlow Lite models, and nntool scripts."
+    }
+  ]
+}

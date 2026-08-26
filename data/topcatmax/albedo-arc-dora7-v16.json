@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "topcatmax/albedo-arc-dora7-v16",
+  "slug": "topcatmax-albedo-arc-dora7-v16",
+  "author": "topcatmax",
+  "url": "https://huggingface.co/topcatmax/albedo-arc-dora7-v16",
+  "created_at": "2026-08-25T22:49:37.000Z",
+  "updated_at": "2026-08-25T23:11:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "albedo",
+    "sn97",
+    "qwen3",
+    "conversational",
+    "base_model:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "base_model:finetune:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69334123006,
+  "storage_human": "69.3 GB",
+  "base_model": "dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "topcatmax (bojan terzic) - Hugging Face",
+      "url": "https://huggingface.co/topcatmax",
+      "snippet": "topcatmax/albedo-qwen3.6-35b-r16-top-03 35B•Updated about 5 hours ago View 31 models"
+    },
+    {
+      "title": "topcatmax/albedo-arc-kumaresano-bk17 · Hugging Face",
+      "url": "https://huggingface.co/topcatmax/albedo-arc-kumaresano-bk17",
+      "snippet": "topcatmax / albedo-arc-kumaresano-bk17 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 233 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 70 providers compared."
+    },
+    {
+      "title": "albedo-arc-kumaresano-bk17 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/topcatmax/albedo-arc-kumaresano-bk17",
+      "snippet": "Run albedo-arc-kumaresano-bk17 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight…"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

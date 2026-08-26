@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rtikw/InspireMusic-1.5B-Long",
+  "slug": "rtikw-inspiremusic-1-5b-long",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/InspireMusic-1.5B-Long",
+  "created_at": "2026-08-25T19:52:58.000Z",
+  "updated_at": "2026-08-25T19:54:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "music",
+    "text-to-music",
+    "music-continuation",
+    "arxiv:2503.00084",
+    "arxiv:2412.15115",
+    "arxiv:2305.02765",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 11912785602,
+  "storage_human": "11.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FunAudioLLM/InspireMusic-1.5B-Long · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/InspireMusic-1.5B-Long",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - davidlealo/inspiremusic: InspireMusic: A Unified Framework for ...",
+      "url": "https://github.com/davidlealo/inspiremusic",
+      "snippet": "On an H800 GPU, InspireMusic-1.5B-Long can generate 30 seconds audio in approximately 48 seconds, RTF around 1.6~1.8. For normal mode, we recommend using hardware with at least 24GB of GPU memory for optimal inference."
+    },
+    {
+      "title": "FunAudioLLM/InspireMusic-1.5B · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/InspireMusic-1.5B",
+      "snippet": "The toolkit provides both training and inference codes for AI-based generative models that create high-quality music. Featuring a unified framework, InspireMusic incorporates audio tokenizers with autoregressive transformer and super-resolution flow-matching modeling, allowing for the controllable generation of music, song, and audio with both ..."
+    },
+    {
+      "title": "GitHub - Borealin/InspireMusic: InspireMusic: A Unified Framework for ...",
+      "url": "https://github.com/Borealin/InspireMusic",
+      "snippet": "2025/02: InspireMusic demo is available on ModelScope Space and HuggingFace Space. 2025/01: Open-source InspireMusic-Base, InspireMusic-Base-24kHz, InspireMusic-1.5B, InspireMusic-1.5B-24kHz, InspireMusic-1.5B-Long models for music generation. Models are available on both ModelScope and HuggingFace. 2024/12: Support to generate 48kHz audio with super resolution flow matching. 2024/11: Welcome ..."
+    },
+    {
+      "title": "inspiremusic · PyPI",
+      "url": "https://pypi.org/project/inspiremusic/",
+      "snippet": "InspireMusic is a unified framework for music, song, and audio generation, featuring capabilities such as text-to-music conversion, music structure, genre control, and timestamp management."
+    }
+  ]
+}

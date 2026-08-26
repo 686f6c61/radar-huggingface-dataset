@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lemonade-sdk/pii_policy_mmbert32k-pii-detector-merged-onnx",
+  "slug": "lemonade-sdk-pii_policy_mmbert32k-pii-detector-merged-onnx",
+  "author": "lemonade-sdk",
+  "url": "https://huggingface.co/lemonade-sdk/pii_policy_mmbert32k-pii-detector-merged-onnx",
+  "created_at": "2026-08-25T19:33:13.000Z",
+  "updated_at": "2026-08-25T19:34:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lemonade",
+    "router-policy",
+    "pii",
+    "collection.router",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lemonade-sdk/lemonade: Lemonade helps users discover and run ...",
+      "url": "https://github.com/lemonade-sdk/lemonade",
+      "snippet": "Lemonade is the local AI server that gives you the same capabilities as cloud APIs, except 100% free and private. Use the latest models for chat, coding, speech, and image generation on your own NPU and GPU. Lemonade comes in two flavors: Lemonade Server installs a service you can connect to hundreds of great apps using standard OpenAI, Anthropic, and Ollama APIs. Embeddable Lemonade is a ..."
+    },
+    {
+      "title": "GitHub - Mintplex-Labs/lemonade-sdk: Lemonade helps users discover and ...",
+      "url": "https://github.com/Mintplex-Labs/lemonade-sdk",
+      "snippet": "Lemonade helps users discover and run local AI apps by serving optimized LLMs, images, and speech right from their own GPUs and NPUs. Apps like n8n, VS Code Copilot, Morphik, and many more use Lemonade to seamlessly run generative AI on any PC."
+    },
+    {
+      "title": "llm-semantic-router/mmbert32k-pii-detector-merged · Hugging Face",
+      "url": "https://huggingface.co/llm-semantic-router/mmbert32k-pii-detector-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lemonade-sdk · PyPI",
+      "url": "https://pypi.org/project/lemonade-sdk/",
+      "snippet": "Lemonade supports GGUF, FLM, and ONNX models across CPU, GPU, and NPU (see supported configurations). Use lemonade-server pull or the built-in Model Manager to download models."
+    },
+    {
+      "title": "Router Policies (collection.router) | lemonade-sdk/lemonade | DeepWiki",
+      "url": "https://deepwiki.com/lemonade-sdk/lemonade/5.7-router-policies-(collection.router)",
+      "snippet": "The collection.router system provides a programmable, model-agnostic routing layer within Lemonade. It allows developers to define policies that dynamically select the best inference model for a given request based on content, metadata, or LLM-driven classification."
+    }
+  ]
+}

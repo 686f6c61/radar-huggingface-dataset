@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "that-fallen-angel/fallen-angel_qwen3.5-9b-finetune",
+  "slug": "that-fallen-angel-fallen-angel_qwen3-5-9b-finetune",
+  "author": "that-fallen-angel",
+  "url": "https://huggingface.co/that-fallen-angel/fallen-angel_qwen3.5-9b-finetune",
+  "created_at": "2026-08-26T02:50:07.000Z",
+  "updated_at": "2026-08-26T02:51:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8537680896,
+  "parameters_human": "8.54B",
+  "storage_bytes": 5329758912,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 9B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-9b/",
+      "snippet": "Qwen3.5-9B is a post-trained vision-language model with 9B parameters, 32 layers, and a Gated DeltaNet plus Gated Attention hybrid layout, built for multimodal instruction-following and tool calling, with 262,144 native context length and stated extensibility up to about 1,010,000 tokens."
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3.5-9B",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.5-9b",
+      "snippet": "Qwen3.5-9B [!Note] This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    },
+    {
+      "title": "Qwen3.5 9B API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/qwen3p5-9b",
+      "snippet": "Base model of 9B model from Qwen 3.5 series"
+    }
+  ]
+}

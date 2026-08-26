@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jax-image-tools/microsam-vit-b-lm-onnx",
+  "slug": "jax-image-tools-microsam-vit-b-lm-onnx",
+  "author": "jax-image-tools",
+  "url": "https://huggingface.co/jax-image-tools/microsam-vit-b-lm-onnx",
+  "created_at": "2026-08-26T02:21:27.000Z",
+  "updated_at": "2026-08-26T02:21:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "segment-anything",
+    "micro-sam",
+    "webgpu",
+    "microscopy",
+    "image-segmentation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196370556,
+  "storage_human": "196 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ballon999/microsam-vit-b-lm-onnx · Hugging Face",
+      "url": "https://huggingface.co/Ballon999/microsam-vit-b-lm-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ballon999/microsam-vit-b-lm-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/Ballon999/microsam-vit-b-lm-onnx/tree/main",
+      "snippet": "Ballon999 / microsam-vit-b-lm-onnx like 0 Image Segmentation ONNX onnxruntime segment-anything micro-sam webgpu microscopy License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main microsam-vit-b-lm-onnx Ctrl+K Ctrl+K 1 contributor History:4 commits Ballon999 Upload README.md with huggingface_hub b983c4d verifiedabout 1 month ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "micro_sam API documentation - GitHub Pages",
+      "url": "https://computational-cell-analytics.github.io/micro-sam/micro_sam.html",
+      "snippet": "Use the Light Microscopy model (vit_b_lm) for segmenting cells or nuclei in light microscopy. The larger model (vit_l_lm) yields a bit better segmentation quality, especially for automatic segmentation, but needs more computational resources."
+    },
+    {
+      "title": "Netron",
+      "url": "https://netron.app/",
+      "snippet": "Visualizer for neural network, deep learning and machine learning models."
+    }
+  ]
+}

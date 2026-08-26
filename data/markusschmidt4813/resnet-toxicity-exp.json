@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "markusschmidt4813/resnet-toxicity-exp",
+  "slug": "markusschmidt4813-resnet-toxicity-exp",
+  "author": "markusschmidt4813",
+  "url": "https://huggingface.co/markusschmidt4813/resnet-toxicity-exp",
+  "created_at": "2026-08-25T19:39:22.000Z",
+  "updated_at": "2026-08-25T19:39:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "compact",
+    "concise-analytical",
+    "critical",
+    "endnote",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ResNet: Enabling Deep Convolutional Neural Networks through Residual ...",
+      "url": "https://arxiv.org/html/2510.24036v1",
+      "snippet": "The ResNet-18 model achieves the highest accuracy at 89.9%, improving by 5.8 percentage points over the baseline CNN. Despite having more parameters, ResNet-based models converge more quickly and stably, confirming the efficacy of skip connections for training deeper networks."
+    },
+    {
+      "title": "The State of AI-Enabled Malware August 2026: From Brand Abuse to ...",
+      "url": "https://unit42.paloaltonetworks.com/ai-enabled-malware-analysis/",
+      "snippet": "Executive Summary To assess the impact of AI-enabled malware, we collected and analyzed over 400 malware samples that integrate AI in some capacity, from brand impersonation and large language model (LLM)-generated code to agentic execution loops."
+    },
+    {
+      "title": "AI-driven cardiovascular toxicity assessment of emerging contaminants ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0043135426014648",
+      "snippet": "Building on these advances, we propose a large language model-driven environmental risk assessment agent that orchestrates analytical workflows progressing from in vitro alert to in vivo validation, integrates multi-tier toxicity data, and generates interpretable and standardized risk outputs."
+    },
+    {
+      "title": "ResNet - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_vision_resnet/",
+      "snippet": "Resnet models were proposed in \"Deep Residual Learning for Image Recognition\". Here we have the 5 versions of resnet models, which contains 18, 34, 50, 101, 152 layers respectively."
+    },
+    {
+      "title": "Residual neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Residual_neural_network",
+      "snippet": "A residual neural network (also referred to as a residual network or ResNet) [1] is a deep learning architecture in which the layers learn residual functions with reference to the layer inputs."
+    }
+  ]
+}

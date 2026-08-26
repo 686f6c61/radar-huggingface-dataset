@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rashevchuk/ner",
+  "slug": "rashevchuk-ner",
+  "author": "Rashevchuk",
+  "url": "https://huggingface.co/Rashevchuk/ner",
+  "created_at": "2026-08-25T21:01:04.000Z",
+  "updated_at": "2026-08-25T21:01:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "classification",
+    "dino",
+    "layernorm",
+    "low-rank",
+    "rmsprop",
+    "sparse",
+    "step",
+    "trunc-normal",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comprehensive Overview of Named Entity Recognition: Models, Domain ...",
+      "url": "https://arxiv.org/html/2309.14084",
+      "snippet": "Abstract In the domain of Natural Language Processing (NLP), Named Entity Recognition (NER) stands out as a pivotal mechanism for extracting structured insights from unstructured text. This manuscript offers an exhaustive exploration into the evolving landscape of NER methodologies, blending foundational principles with contemporary AI advancements. Beginning with the rudimentary concepts of ..."
+    },
+    {
+      "title": "Biomedical NER - 107-Class Clinical Entity Extraction on SageMaker",
+      "url": "https://aws.amazon.com/marketplace/pp/prodview-hqxancvrkug6w",
+      "snippet": "Biomedical NER All is a token-classification model that extracts 107 distinct biomedical entity types including diseases, drugs, genes, proteins, anatomical structures, clinical procedures, and molecular compounds. Built on BioBERT fine-tuned across multiple biomedical NER corpora (NCBI Disease, BC5CDR, JNLPBA, and others), it provides comprehensive entity coverage for pharmaceutical ..."
+    },
+    {
+      "title": "dslim/bert-base-NER · Hugging Face",
+      "url": "https://huggingface.co/dslim/bert-base-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maven Repository: ai.grazie.model » model-ner-jvm » 0.8.256",
+      "url": "https://mvnrepository.com/artifact/ai.grazie.model/model-ner-jvm/0.8.256",
+      "snippet": "Model NER JVM Overview Dependencies (3) Changes (1) Books (5) Tags jvm model ai Links DateAug 05, 2026 Files pom (1 KB) jar (43 KB) View All Repositories Grazi Ranking #79533in MvnRepository Maven Gradle SBT Mill Ivy Grape Leiningen Buildr Scope: Compile Test Provided Runtime Include backlinks"
+    },
+    {
+      "title": "What is Named Entity Recognition (NER)? - Tonic.ai",
+      "url": "https://www.tonic.ai/guides/named-entity-recognition-models",
+      "snippet": "Explore Named Entity Recognition: how NER extracts and protects sensitive info from text, plus real AI use cases and practical guidance. Learn more."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/donut-base-finetuned-docvqa",
+  "slug": "jonnyverse-donut-base-finetuned-docvqa",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/donut-base-finetuned-docvqa",
+  "created_at": "2026-08-25T23:29:45.000Z",
+  "updated_at": "2026-08-25T23:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "document-question-answering",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "donut",
+    "image-to-text",
+    "vision",
+    "donut-swin",
+    "document-question-answering",
+    "base_model:naver-clova-ix/donut-base-finetuned-docvqa",
+    "base_model:quantized:naver-clova-ix/donut-base-finetuned-docvqa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8775040820,
+  "storage_human": "8.8 GB",
+  "base_model": "naver-clova-ix/donut-base-finetuned-docvqa",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xenova/donut-base-finetuned-docvqa at main - Hugging Face",
+      "url": "https://huggingface.co/Xenova/donut-base-finetuned-docvqa/tree/main",
+      "snippet": "donut-base-finetuned-docvqa like 2 Document Question Answering Transformers.js ONNX vision-encoder-decoder donut image-to-text vision donut-swin Model card Files Community Use in Transformers.js"
+    },
+    {
+      "title": "Xenova/donut-base-finetuned-docvqa · Hugging Face",
+      "url": "https://huggingface.co/Xenova/donut-base-finetuned-docvqa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xenova/donut-base-finetuned-docvqa - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/314635",
+      "snippet": "https://huggingface.co/naver-clova-ix/donut-base-finetuned-docvqa with ONNX weights to be compatible with Transformers.js."
+    },
+    {
+      "title": "donut-base-finetuned-docvqa: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/donut-base-finetuned-docvqa-naver-clova-ix",
+      "snippet": "Overview donut-base-finetuned-docvqa is a document visual question answering model maintained by naver-clova-ix that answers questions about document images without requiring OCR preprocessing. The model combines a Swin Transformer vision encoder with a BART text decoder, encoding document images into embeddings that the decoder then uses to generate answers autoregressively. It has been fine ..."
+    },
+    {
+      "title": "Donut-base-finetuned-docvqa Open-source Model - Extract and Understand ...",
+      "url": "https://model.aibase.com/models/details/1915687270470074370",
+      "snippet": "Donut is an OCR-free document understanding Transformer model, fine-tuned on the DocVQA dataset, capable of directly extracting and comprehending text information from images."
+    }
+  ]
+}

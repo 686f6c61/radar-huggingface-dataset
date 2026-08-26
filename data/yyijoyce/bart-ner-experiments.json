@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yyijoyce/bart-ner-experiments",
+  "slug": "yyijoyce-bart-ner-experiments",
+  "author": "yyijoyce",
+  "url": "https://huggingface.co/yyijoyce/bart-ner-experiments",
+  "created_at": "2026-08-25T20:41:17.000Z",
+  "updated_at": "2026-08-25T20:41:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "blip",
+    "contrastive",
+    "lamb",
+    "scalenorm",
+    "sliding-window",
+    "step",
+    "tensor-fusion",
+    "tiny",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Experiments with Google",
+      "url": "https://experiments.withgoogle.com/",
+      "snippet": "Since 2009, coders have created thousands of amazing experiments using Chrome, Android, AI, WebVR, AR and more. We&#x27;re showcasing projects here, along with helpful tools and resources, to inspire others to create new experiments."
+    },
+    {
+      "title": "dslim/bert-base-NER · Hugging Face",
+      "url": "https://huggingface.co/dslim/bert-base-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - GenAI-experiments/genai-ner-bart-gradio-5",
+      "url": "https://github.com/GenAI-experiments/genai-ner-bart-gradio-5",
+      "snippet": "AIM: To design and develop a prototype application for Named Entity Recognition (NER) by leveraging a fine-tuned BART model and deploying the application using the Gradio framework for user interaction and evaluation."
+    },
+    {
+      "title": "GitHub - alexfdez1010/ner-llm: A system for doing NER using LLMs and ...",
+      "url": "https://github.com/alexfdez1010/ner-llm",
+      "snippet": "This repository contains a Named Entity Recognition (NER) framework that explores the capabilities of Large Language Models (LLMs) and Large Reasoning Models (lRMs) for extracting entities from medical texts. The project features both an interactive demo using Together AI and experimental pipelines using Ollama for research purposes."
+    },
+    {
+      "title": "BART · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/bart",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

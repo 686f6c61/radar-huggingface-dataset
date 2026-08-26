@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maskjp/mtdit_plate_croissant_jointbase",
+  "slug": "maskjp-mtdit_plate_croissant_jointbase",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/mtdit_plate_croissant_jointbase",
+  "created_at": "2026-08-25T21:46:53.000Z",
+  "updated_at": "2026-08-25T21:53:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "multi_task_dit",
+    "diffusion-policy",
+    "dataset:l5vel-peng/base4-plate-croissant-eef-merged-v30",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 443020554,
+  "parameters_human": "443.0M",
+  "storage_bytes": 1772172136,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maskjp/base4-plate-croissant-02-BC-FV - Hugging Face",
+      "url": "https://huggingface.co/datasets/maskjp/base4-plate-croissant-02-BC-FV",
+      "snippet": "Datasets: maskjp / base4-plate-croissant-02-BC-FV like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot u850 Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·73.2k rows default ..."
+    },
+    {
+      "title": "maskjp (Peng Jiang) - Hugging Face",
+      "url": "https://huggingface.co/maskjp",
+      "snippet": "User profile of Peng Jiang on Hugging Face"
+    },
+    {
+      "title": "maskjp · GitHub",
+      "url": "https://github.com/maskjp",
+      "snippet": "Forked from SSARCandy/Coherent-Line-Drawing An implementation of &#x27;Coherent Line Drawing&#x27; by Kang et al, Proc. NPAR 2007 C++"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

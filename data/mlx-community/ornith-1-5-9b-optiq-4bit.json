@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Ornith-1.5-9B-OptiQ-4bit",
+  "slug": "mlx-community-ornith-1-5-9b-optiq-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Ornith-1.5-9B-OptiQ-4bit",
+  "created_at": "2026-08-25T22:50:28.000Z",
+  "updated_at": "2026-08-25T22:51:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "optiq",
+    "quantized",
+    "4bit",
+    "mixed-precision",
+    "qwen3.5",
+    "reasoning",
+    "long-context",
+    "function-calling",
+    "tool-use",
+    "agentic",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B-MLX",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B-MLX",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1915564544,
+  "parameters_human": "1.92B",
+  "storage_bytes": 7120699451,
+  "storage_human": "7.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B-MLX",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-4bit/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+    },
+    {
+      "title": "Ornith 1.5 9B MLX by ornith-ai — VRAM 17.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-9B-MLX,2vKynjq3j0X8EOruPo0W2V",
+      "snippet": "Rank the Ornith 1.5 9B MLX capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    }
+  ]
+}

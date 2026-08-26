@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vermaishaan/recsys-practice",
+  "slug": "vermaishaan-recsys-practice",
+  "author": "vermaishaan",
+  "url": "https://huggingface.co/vermaishaan/recsys-practice",
+  "created_at": "2026-08-25T22:42:41.000Z",
+  "updated_at": "2026-08-25T22:42:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "clip",
+    "cosine",
+    "giant",
+    "layernorm",
+    "low-rank",
+    "mish",
+    "retrieval",
+    "sliding-window",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA/recsys-examples: Examples for Recommenders - GitHub",
+      "url": "https://github.com/NVIDIA/recsys-examples",
+      "snippet": "NVIDIA RecSys Examples Overview NVIDIA RecSys Examples is a collection of optimized recommender models and components. The project is organized into two parts:"
+    },
+    {
+      "title": "From Variability to Stability: Advancing RecSys Benchmarking Practices",
+      "url": "https://arxiv.org/html/2402.09766v2",
+      "snippet": "Abstract. In the rapidly evolving domain of Recommender Systems (RecSys), new algorithms frequently claim state-of-the-art performance based on evaluations over a limited set of arbitrarily selected datasets. However, this approach may fail to holistically reflect their effectiveness due to the significant impact of dataset characteristics on algorithm performance. Addressing this deficiency ..."
+    },
+    {
+      "title": "NVIDIA/recsys-examples | Repositories | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/company/nvidia/repository/recsys-examples/",
+      "snippet": "NVIDIA RecSys Examples Overview NVIDIA RecSys Examples is a collection of optimized recommender models and components. The project includes: Examples for large-scale HSTU ranking and retrieval models through TorchRec and Megatron-Core integration Examples for semantic-id based retrieval model through TorchRec and Megatron-Core integration HSTU (Hierarchical Sequential Transduction Unit ..."
+    },
+    {
+      "title": "RecSys 2025 - Accepted Contributions - RecSys - RecSys",
+      "url": "https://recsys.acm.org/recsys25/accepted-contributions/",
+      "snippet": "Recommender systems (RecSys) have become an essential component of many web applications. The core of the system is a recommendation model trained on highly sensitive user-item interaction data."
+    },
+    {
+      "title": "How Generative Recommenders Are Redefining RecSys at Scale",
+      "url": "https://developer.nvidia.com/blog/how-generative-recommenders-are-redefining-recsys-at-scale/",
+      "snippet": "HSTU HSTU, introduced by Meta in 2024, is a foundational GR model architecture that reframes RecSys under the generative objective and introduces key innovations to enable efficient training and serving at production scale. HSTU represents input data as a per-user sequence of interleaved items and actions (like, click, etc.) ordered by timestamp."
+    }
+  ]
+}

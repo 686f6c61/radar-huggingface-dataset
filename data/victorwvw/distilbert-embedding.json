@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VICTORWVW/distilbert-embedding",
+  "slug": "victorwvw-distilbert-embedding",
+  "author": "VICTORWVW",
+  "url": "https://huggingface.co/VICTORWVW/distilbert-embedding",
+  "created_at": "2026-08-25T20:15:20.000Z",
+  "updated_at": "2026-08-25T20:15:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "compact",
+    "concise-analytical",
+    "intro-method-exp-related-conclusion",
+    "latex-arxiv",
+    "mixed-active-passive",
+    "neutral",
+    "numeric-apa",
+    "self-supervised",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DistilBERT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.2/en/model_doc/distilbert",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    },
+    {
+      "title": "DistilBERT - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/distilbert",
+      "snippet": "The model is trained with a triple loss that combines the standard masked language modeling objective with a soft-target distillation loss and a cosine embedding loss between student and teacher hidden states [1]."
+    },
+    {
+      "title": "[1910.01108] DistilBERT, a distilled version of BERT: smaller, faster ...",
+      "url": "https://arxiv.org/abs/1910.01108",
+      "snippet": "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/distilbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    }
+  ]
+}

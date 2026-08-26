@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gabrielvieiraah/roberta-retriever",
+  "slug": "gabrielvieiraah-roberta-retriever",
+  "author": "gabrielvieiraah",
+  "url": "https://huggingface.co/gabrielvieiraah/roberta-retriever",
+  "created_at": "2026-08-25T19:49:23.000Z",
+  "updated_at": "2026-08-25T19:49:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "detailed-descriptive",
+    "embodied-ai",
+    "footnote",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "medium-balanced",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "FacebookAI/roberta-large · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/roberta-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    },
+    {
+      "title": "RoBERTa - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/roberta",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an open-source natural language processing model released in July 2019 by researchers at Facebook AI (now Meta AI) and the University of Washington that reproduces and retrains BERT with a better recipe and shows BERT was \"significantly undertrained.\" [1] Using the identical transformer encoder architecture as BERT, RoBERTa trains ..."
+    },
+    {
+      "title": "How to Use RoBERTa Model: BERT&#x27;s Optimized Version Explained",
+      "url": "https://markaicode.com/roberta-model-guide-bert-optimized/",
+      "snippet": "Learn RoBERTa model implementation with code examples. Master BERT&#x27;s optimized version for NLP tasks with step-by-step tutorials and performance tips."
+    }
+  ]
+}

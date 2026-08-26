@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Nichonauta/LFM2.5-230M-ToMoE-GGUF",
+  "slug": "nichonauta-lfm2-5-230m-tomoe-gguf",
+  "author": "Nichonauta",
+  "url": "https://huggingface.co/Nichonauta/LFM2.5-230M-ToMoE-GGUF",
+  "created_at": "2026-08-26T01:06:40.000Z",
+  "updated_at": "2026-08-26T01:07:59.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "mixture-of-experts",
+    "tomoe",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Nichonauta/LFM2.5-230M-ToMoE",
+    "base_model:quantized:Nichonauta/LFM2.5-230M-ToMoE",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 861887616,
+  "storage_human": "862 MB",
+  "base_model": "Nichonauta/LFM2.5-230M-ToMoE",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-230M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-230m",
+      "snippet": "Ultra-compact 230M parameter model for data extraction and lightweight on-device agentic tasks ← Back to Text Models LFM2.5-230M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with the tightest memory and compute budgets."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "README.md · LiquidAI/LFM2.5-230M-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF/blob/main/README.md",
+      "snippet": "LFM2 is a new generation of hybrid models developed by Liquid AI, specifically designed for edge AI and on-device deployment. It sets a new standard in terms of quality, speed, and memory efficiency."
+    },
+    {
+      "title": "LFM2.5-230M: Built to Run Anywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
+      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
+    }
+  ]
+}

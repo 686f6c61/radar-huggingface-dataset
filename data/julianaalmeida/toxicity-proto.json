@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "julianaalmeida/toxicity-proto",
+  "slug": "julianaalmeida-toxicity-proto",
+  "author": "julianaalmeida",
+  "url": "https://huggingface.co/julianaalmeida/toxicity-proto",
+  "created_at": "2026-08-25T23:07:00.000Z",
+  "updated_at": "2026-08-25T23:07:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "classification",
+    "cnn-transformer",
+    "concat-mlp",
+    "gelu-tanh",
+    "groupnorm",
+    "kaiming",
+    "linear-warmup",
+    "lion",
+    "sparse",
+    "tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julianaalmeida (Juliana Almeida) - Hugging Face",
+      "url": "https://huggingface.co/julianaalmeida",
+      "snippet": "MS in Data Science, class of 2025 AI & ML interests MS in Data Science, class of 2025"
+    },
+    {
+      "title": "Artificial Intelligence-Driven Drug Toxicity Prediction: Advances ...",
+      "url": "https://www.mdpi.com/2305-6304/13/7/525",
+      "snippet": "AI technology, especially machine learning and deep learning algorithms [7], has powerful data processing and pattern recognition capabilities. In drug toxicity prediction, AI can quickly analyze massive data of drug structure, activity, toxicity, etc., and mine the hidden rules and associations so as to establish a high-precision prediction model."
+    },
+    {
+      "title": "PDF AI/ML-based computational models for toxicity prediction",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11356-025-37354-8.pdf",
+      "snippet": "Abstract The increasing demand for accurate toxicity assessment and to minimise or eliminate the use of animal testing has accelerated the development of numerous computational models, AI/ML models, and online resources that support research in computa-tional toxicology. This review addresses toxicity prediction and chemical safety evaluation, focusing on computational models and data coverage ..."
+    },
+    {
+      "title": "AI/ML-based computational models for toxicity prediction",
+      "url": "https://link.springer.com/article/10.1007/s11356-025-37354-8",
+      "snippet": "The increasing demand for accurate toxicity assessment and to minimise or eliminate the use of animal testing has accelerated the development of numerous computational models, AI/ML models, and online resources that support research in computational toxicology. This review addresses toxicity prediction and chemical safety evaluation, focusing on computational models and data coverage ..."
+    },
+    {
+      "title": "The role of machine learning in predictive toxicology: A review of ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0024320525004564",
+      "snippet": "These AI-powered models provide early and accurate identification of toxicity risks, reducing reliance on animal testing and improving the efficiency of drug discovery. This review explores the role of AI models in predicting ADRs, emphasizing their ability to integrate diverse datasets and uncover complex toxicity mechanisms."
+    }
+  ]
+}

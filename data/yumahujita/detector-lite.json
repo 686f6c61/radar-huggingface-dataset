@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yumahujita/detector-lite",
+  "slug": "yumahujita-detector-lite",
+  "author": "Yumahujita",
+  "url": "https://huggingface.co/Yumahujita/detector-lite",
+  "created_at": "2026-08-25T22:56:01.000Z",
+  "updated_at": "2026-08-25T22:56:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "enthusiastic",
+    "footnote",
+    "graphic-visual",
+    "html",
+    "intro-problem-solution-validation-future",
+    "narrative-progressive",
+    "robotics-vision-language",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Detector - Accurate AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://originality.ai/",
+      "snippet": "Use the accurate Originality.ai AI detector to identify if text was generated from a popular AI platform like ChatGPT, Gemini, Claude, Grok and others."
+    },
+    {
+      "title": "GitHub - azuredsky/lite.ai: Lite.AI is a user friendly C++ lib of ...",
+      "url": "https://github.com/azuredsky/lite.ai",
+      "snippet": "🛠 Lite.Ai.ToolKit: A lite C++ toolkit of awesome AI models, such as Object Detection, Face Detection, Face Recognition, Segmentation, Matting, etc. See Model Zoo and ONNX Hub, MNN Hub, TNN Hub, NCNN Hub. [ ️ Star 🌟👆🏻 this repo to support me if it does any helps to you, thanks ~ ]"
+    },
+    {
+      "title": "GitHub - Geeta3521/DetectAI-V2: YOLOv8-powered real-time object ...",
+      "url": "https://github.com/Geeta3521/DetectAI-V2",
+      "snippet": "DetectAI V2 is a production-ready computer vision web app built with YOLOv8, Streamlit, and OpenCV. It detects objects in images and live webcam feeds in real time, with a full analytics dashboard and export options — deployable to the cloud in minutes. Built as a major upgrade from a YOLOv4 + Tkinter desktop project:"
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "AI Detector - 100% FREE AI Checker (Unlimited Words)",
+      "url": "https://aidetector.com/",
+      "snippet": "AI Detector (built-in) Our own AI detection model, always included, no extra charge. Free"
+    }
+  ]
+}

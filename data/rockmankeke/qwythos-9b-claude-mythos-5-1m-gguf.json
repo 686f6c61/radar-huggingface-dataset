@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "rockmankeke/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+  "slug": "rockmankeke-qwythos-9b-claude-mythos-5-1m-gguf",
+  "author": "rockmankeke",
+  "url": "https://huggingface.co/rockmankeke/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+  "created_at": "2026-08-26T02:53:05.000Z",
+  "updated_at": "2026-08-26T02:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "qwen3.5",
+    "reasoning",
+    "uncensored",
+    "long-context",
+    "1M-context",
+    "function-calling",
+    "multimodal",
+    "vision",
+    "cybersecurity",
+    "biomedical",
+    "agentic",
+    "image-text-to-text",
+    "en",
+    "base_model:empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+    "base_model:quantized:empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 334730778343,
+  "storage_human": "334.7 GB",
+  "base_model": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwythos-9B-Claude-Mythos-5-1M-GGUF - GitHub",
+      "url": "https://github.com/kiranrajcn4444/AFE--Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "snippet": "Qwythos-9B-Claude-Mythos-5-1M-GGUF is a powerful 9B-parameter reasoning model designed for local deployment. With its one-million-token context window, advanced reasoning abilities, function-calling support, and multimodal capabilities, it is well suited for developers, researchers, students, and AI enthusiasts working on modern artificial ..."
+    },
+    {
+      "title": "爆款开源!4G显存跑通\"Claude平替\"：Qwythos-9B 本地部署实战，支持104万超长上下文!",
+      "url": "https://zhuanlan.zhihu.com/p/2055983231741309789",
+      "snippet": "不得不说，近期开源大模型的圈子真的是\"卷出天际\"了。对于喜欢在本地折腾 AI 的开发者和研究员来说，算力成本和模型智商往往难以两全。但是，最近一款名为 Qwythos-9B-Claude-Mythos-5-1M 的全参数推理模型在 AI…"
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    }
+  ]
+}

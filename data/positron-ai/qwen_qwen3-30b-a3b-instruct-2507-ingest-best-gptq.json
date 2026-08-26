@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "positron-ai/Qwen_Qwen3-30B-A3B-Instruct-2507-ingest-best-gptq",
+  "slug": "positron-ai-qwen_qwen3-30b-a3b-instruct-2507-ingest-best-gptq",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/Qwen_Qwen3-30B-A3B-Instruct-2507-ingest-best-gptq",
+  "created_at": "2026-08-25T19:23:18.000Z",
+  "updated_at": "2026-08-25T19:26:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "positron-ai",
+    "quantized",
+    "gptq",
+    "conversational",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 17528533206,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen3 30B A3B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3-30b-a3b-04-28",
+      "snippet": "Performance Summary Qwen3 30B A3B, the latest Qwen model, demonstrates a strong overall performance profile, particularly excelling in reliability and specific cognitive tasks. While its speed performance is moderate, ranking in the 20th percentile across benchmarks, it offers competitive pricing, placing in the 51st percentile."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3-30b-a3b-instruct-2507-fp8",
+      "snippet": "model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3-30B-A3B-Instruct-2507-FP8 or leave it blank instead. messages (array): A list of messages comprising the conversation so far."
+    },
+    {
+      "title": "Qwen3-30B-A3B-Instruct-2507 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "snippet": "Highlights We introduce the updated version of the Qwen3-30B-A3B non-thinking mode, named Qwen3-30B-A3B-Instruct-2507, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

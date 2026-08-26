@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "doyun-cho/classifier63",
+  "slug": "doyun-cho-classifier63",
+  "author": "doyun-cho",
+  "url": "https://huggingface.co/doyun-cho/classifier63",
+  "created_at": "2026-08-25T21:29:41.000Z",
+  "updated_at": "2026-08-25T21:29:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "endnote",
+    "enthusiastic",
+    "graphic-visual",
+    "image-captioning",
+    "intro-background-approach-eval-conclusion",
+    "latex-acl",
+    "long-detailed",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doyun Choi - Google Sites",
+      "url": "https://sites.google.com/view/doyunchoi",
+      "snippet": "My name is Doyun Choi, and I am a Ph.D student in the Data Artificial Intelligence (DAI) Lab at Seoul National University (SNU), advised by Prof. Jaemin Yoo. My Ph.D. research is supported by the AI Seoul Tech Research Support Program."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "‪Doyun Choi‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=hv5p88MAAAAJ&hl=en",
+      "snippet": "‪Ph.D Student, Seoul National University (SNU)‬ - ‪‪Cited by 2‬‬ - ‪Efficient and Interpretable Representation Learning‬ - ‪Anomaly Detection‬"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B-FP8 at refs/pr/17 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/blob/refs%2Fpr%2F17/CHOCHO_%ED%86%B5%ED%95%A9%EB%A7%88%EC%8A%A4%ED%84%B0_v3.0_2026-08-19.md",
+      "snippet": "like 662 Follow Qwen 99.4k Image-Text-to-Text Transformers Safetensors qwen3_5 conversational fp8 License:apache-2.0 Model card FilesFiles and versions xet Community 17 Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

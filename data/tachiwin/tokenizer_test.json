@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tachiwin/tokenizer_test",
+  "slug": "tachiwin-tokenizer_test",
+  "author": "tachiwin",
+  "url": "https://huggingface.co/tachiwin/tokenizer_test",
+  "created_at": "2026-08-26T02:20:16.000Z",
+  "updated_at": "2026-08-26T02:25:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "multilingual",
+    "byte-level-bpe",
+    "indigenous-languages",
+    "tachiwin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21470195,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tachiwin (Tachiwin) - Hugging Face",
+      "url": "https://huggingface.co/tachiwin/datasets",
+      "snippet": "Team members 1 tachiwin&#x27;s datasets25 Sort: Recently updated tachiwin/tokenizer_train Viewer •Updated 3 days ago•30.1k• 85"
+    },
+    {
+      "title": "tokenizer.model · tachiwin/Tachiwin-OCR-1.5 at main",
+      "url": "https://huggingface.co/tachiwin/Tachiwin-OCR-1.5/blob/main/tokenizer.model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Anonymous AI Model Release: Ox Alpha&#x27;s Ambitious Specs Revealed",
+      "url": "https://en.cryptonomist.ch/2026/08/24/anonymous-ai-model-release-ox-alpha/",
+      "snippet": "Discover how the anonymous AI model release of Ox Alpha challenges developer norms with vast token capacity and multimodal inputs."
+    }
+  ]
+}

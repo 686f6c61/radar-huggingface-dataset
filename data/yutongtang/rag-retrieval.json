@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "YutongTang/rag-retrieval",
+  "slug": "yutongtang-rag-retrieval",
+  "author": "YutongTang",
+  "url": "https://huggingface.co/YutongTang/rag-retrieval",
+  "created_at": "2026-08-25T20:42:02.000Z",
+  "updated_at": "2026-08-25T20:42:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "batchnorm",
+    "blip",
+    "exponential",
+    "generation",
+    "lamb",
+    "orthogonal",
+    "sparse",
+    "swish",
+    "tensor-fusion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best RAG Tools, Frameworks, and Libraries",
+      "url": "https://aimultiple.com/retrieval-augmented-generation",
+      "snippet": "Discover Retrieval-augmented generation (RAG) inside out with this comprehensive guide on what it is, how it works, its benefits & top tools."
+    },
+    {
+      "title": "RAG-Retrieval - GitHub",
+      "url": "https://github.com/NovaSearch-Team/RAG-Retrieval",
+      "snippet": "English | 中文 The RAG-Retrieval offers end-to-end code for training, inference, and distillation of the RAG retrieval model. For training, RAG-Retrieval supports fine-tuning of any open-source RAG retrieval models, including embedding models (figure a,bert-based, llm-based), late interactive models (figure d,colbert), and reranker models (figure c,bert-based, llm-based). For inference, RAG ..."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    },
+    {
+      "title": "What Is Retrieval-Augmented Generation aka RAG? - NVIDIA Blogs",
+      "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+      "snippet": "Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources."
+    },
+    {
+      "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture ...",
+      "url": "https://arxiv.org/html/2601.05264",
+      "snippet": "Abstract This article provides a comprehensive systematic literature review of academic studies, industrial applications, and real-world deployments from 2018 to 2025, providing a practical guide and detailed overview of modern Retrieval-Augmented Generation (RAG) architectures. RAG offers a modular approach for integrating external knowledge without increasing the capacity of the model as LLM ..."
+    }
+  ]
+}

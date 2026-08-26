@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end",
+  "slug": "q1716523669-cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupc-phi4mini-end",
+  "author": "q1716523669",
+  "url": "https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end",
+  "created_at": "2026-08-25T19:21:11.000Z",
+  "updated_at": "2026-08-25T19:23:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "custom_code",
+    "arxiv:2402.03300",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 199680,
+  "parameters_human": "199680",
+  "storage_bytes": 7687600184,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-qwen3-1p7b-math345 ...",
+      "url": "https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-qwen3-1p7b-math345-groupC-qwen3-best",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "We are announcing Qwen3-Coder, our most agentic code model to date. Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks."
+    },
+    {
+      "title": "Qwen3: Think Deeper, Act Faster | Hybrid Thinking AI Model",
+      "url": "https://qwen3.app/",
+      "snippet": "🎉 Qwen3-235B-A22B Now Available Qwen3: Think Deeper, Act Faster Qwen3 introduces hybrid thinking AI with powerful reasoning capabilities, supporting 119 languages and featuring MoE architecture for unprecedented efficiency."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

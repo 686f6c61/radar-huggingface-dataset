@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jefftherover/pii-dual-mmbert-base-v2",
+  "slug": "jefftherover-pii-dual-mmbert-base-v2",
+  "author": "jefftherover",
+  "url": "https://huggingface.co/jefftherover/pii-dual-mmbert-base-v2",
+  "created_at": "2026-08-25T23:22:13.000Z",
+  "updated_at": "2026-08-26T01:05:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307575611,
+  "parameters_human": "307.6M",
+  "storage_bytes": 11107219427,
+  "storage_human": "11.1 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jefftherover/modernbert-pii-mapped-v2 · Hugging Face",
+      "url": "https://huggingface.co/jefftherover/modernbert-pii-mapped-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jhu-clsp/mmBERT-base · Hugging Face",
+      "url": "https://huggingface.co/jhu-clsp/mmBERT-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JHU-CLSP/mmBERT: A massively multilingual modern encoder ...",
+      "url": "https://github.com/JHU-CLSP/mmBERT/",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    },
+    {
+      "title": "mmBERT: a Multilingual Modern Encoder through Adaptive Scheduling",
+      "url": "https://arxiv.org/html/2509.06888v1",
+      "snippet": "Our base version has the same number of non-embedding parameters as ModernBERT-base (110M) but a total of 307M parameters due to the larger vocabulary. mmBERT small has 140M total parameters, with 42M non-embedding parameters. As we show in (§ 4.5) these architectures are also significantly faster than any previous multilingual encoder model."
+    },
+    {
+      "title": "mmBERT/README.md at main · JHU-CLSP/mmBERT · GitHub",
+      "url": "https://github.com/JHU-CLSP/mmBERT/blob/main/README.md",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    }
+  ]
+}

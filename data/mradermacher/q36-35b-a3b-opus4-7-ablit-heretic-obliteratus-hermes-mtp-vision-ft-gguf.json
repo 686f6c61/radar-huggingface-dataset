@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF",
+  "slug": "mradermacher-q36-35b-a3b-opus4-7-ablit-heretic-obliteratus-hermes-mtp-vision-ft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF",
+  "created_at": "2026-08-25T20:53:51.000Z",
+  "updated_at": "2026-08-25T21:06:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.6",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "moe",
+    "claude-opus-4.7",
+    "reasoning",
+    "reasoning-distillation",
+    "abliterated",
+    "uncensored",
+    "refusal-reduction",
+    "heretic",
+    "obliteratus",
+    "nuclear",
+    "hermes",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "agentic",
+    "agentic-coding",
+    "coding",
+    "lora",
+    "peft",
+    "unsloth",
+    "mtp",
+    "nextn",
+    "conversational",
+    "multimodal",
+    "vision-language",
+    "vlm",
+    "freetoken",
+    "safetensors",
+    "en",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:lambda/hermes-agent-reasoning-traces",
+    "base_model:oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+    "base_model:adapter:oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 21880344512,
+  "storage_human": "21.9 GB",
+  "base_model": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-GGUF",
+      "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
+      "url": "https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF",
+      "url": "https://www.modelscope.cn/models/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里 ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
+      "url": "https://www.modelscope.cn/models/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
+      "snippet": "The non-MTP version is still available at mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF — slightly smaller, but no self-spec. File sizes Each quant is ~2.5% larger than its non-MTP counterpart (one extra transformer-block worth of weights, no embedding duplication since MTP shares the trunk&#x27;s embed_tokens). MTP draft head precision The bundled MTP head (blk.40 ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-claude-4.7-opus-reasoning-distilled-apex-mtp-gguf-mudler",
+      "snippet": "Overview Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF is a quantized Mixture-of-Experts language model built on the Qwen 3.6 35B-A3B architecture with knowledge distillation from Claude 4.7 Opus, optimized for reasoning tasks. Maintained by mudler, it bundles a multi-token prediction (MTP) head for self-speculative decoding in a single GGUF file compatible with llama.cpp ..."
+    }
+  ]
+}

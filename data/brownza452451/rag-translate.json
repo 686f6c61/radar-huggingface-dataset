@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "brownza452451/rag-translate",
+  "slug": "brownza452451-rag-translate",
+  "author": "brownza452451",
+  "url": "https://huggingface.co/brownza452451/rag-translate",
+  "created_at": "2026-08-25T23:54:40.000Z",
+  "updated_at": "2026-08-25T23:54:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "author-year",
+    "intro-background-approach-eval-conclusion",
+    "latex-icml",
+    "measured",
+    "medium-balanced",
+    "mixed-active-passive",
+    "multimodal-generation",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Integrating RAG to Elevate AI Translation Quality — DocTransAI",
+      "url": "https://doctransai.com/blog/en/rag-retrieval-augmented-translation-guide",
+      "snippet": "Explore how to leverage Retrieval-Augmented Generation (RAG) technology in conjunction with enterprise knowledge bases to provide precise context for AI translation. This article delves into how RAG resolves the hallucination and mistranslation pain points of general large language models, and explains how enterprises can build high-quality, highly secure professional translation solutions ..."
+    },
+    {
+      "title": "GitHub - rayliuca/T-Ragx: Enhancing Translation with RAG-Powered Large ...",
+      "url": "https://github.com/rayliuca/T-Ragx",
+      "snippet": "Results Combining QLoRA with in-task translation memory and glossary resulted in ~45% increase in aggregated WMT23 translation scores, benchmarked against the Mistral 7b Instruct model Demonstrated high recall for valid translation memories and glossaries, including previous translations and character names"
+    },
+    {
+      "title": "The Real Work of AI Translation: Frameworks, RAG, and ROI",
+      "url": "https://hatchworks.com/talking-ai/ai-translation/",
+      "snippet": "Smartling VP Olga Beregovaya explains how enterprises scale AI translation with model evaluation, RAG guardrails, and real ROI. Listen now."
+    },
+    {
+      "title": "How To Get More Accurate AI Translations With RAG",
+      "url": "https://mindyourlanguage.com/retrieval-augmented-generation-ai-translation/",
+      "snippet": "For organisations seeking a structured approach to AI translation with RAG, our Custom AI Translation service provides a framework that combines model fine-tuning with retrieval-based knowledge, using validated terminology, reference content, and defined quality benchmarks rather than relying solely on generic training data."
+    },
+    {
+      "title": "Enhance AI responses by using Retrieval Augmented Generation",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+      "snippet": "RAG is a design pattern that improves AI accuracy by combining two capabilities: Information retrieval: Searching enterprise data sources. Text generation: Synthesizing the retrieved information by using a language model. This approach reduces incorrect information, increases trust, and generates responses rooted in real organizational content."
+    }
+  ]
+}

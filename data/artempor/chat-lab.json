@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "artempor/chat-lab",
+  "slug": "artempor-chat-lab",
+  "author": "artempor",
+  "url": "https://huggingface.co/artempor/chat-lab",
+  "created_at": "2026-08-25T19:26:29.000Z",
+  "updated_at": "2026-08-25T19:26:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "endnote",
+    "intro-related-method-exp-conclusion",
+    "latex-cvpr",
+    "medium-balanced",
+    "mixed-active-passive",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ChatLab/ChatLab: Local-first chat history analyzer with AI ...",
+      "url": "https://github.com/ChatLab/ChatLab",
+      "snippet": "Local-first by default: Raw chat data, indexes, and settings remain on-device unless you explicitly choose otherwise. Streaming over buffering: Stream-first parsing and incremental processing keep large imports stable and memory-efficient. Composable intelligence: AI features are assembled through Agent + Tool Calling, not hard-coded into one model path. Schema-first evolution: Import, query ..."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "GitHub - cpdata/chatlab: Chat-Lab - an open-source, high-performance ...",
+      "url": "https://github.com/cpdata/chatlab",
+      "snippet": "Chat-Lab - an open-source, high-performance chatbot framework that supports speech synthesis, multimodal, and extensible Function Call plugin system. Supports one-click free deployment of your private ChatGPT/LLM web application. - cpdata/chatlab"
+    },
+    {
+      "title": "Chat-Lab.AI",
+      "url": "https://chat-lab.ai/",
+      "snippet": "Extract bibliographic metadata from academic research papers using DOI, OCR, and LLMs."
+    },
+    {
+      "title": "LLM Leaderboard - Best Text & Chat AI Models Compared",
+      "url": "https://arena.ai/leaderboard/text/pareto",
+      "snippet": "Compare and explore Text models ranked by overall performance."
+    }
+  ]
+}

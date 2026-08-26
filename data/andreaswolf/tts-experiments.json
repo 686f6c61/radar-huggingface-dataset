@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "andreaswolf/tts-experiments",
+  "slug": "andreaswolf-tts-experiments",
+  "author": "andreaswolf",
+  "url": "https://huggingface.co/andreaswolf/tts-experiments",
+  "created_at": "2026-08-25T20:50:20.000Z",
+  "updated_at": "2026-08-25T20:50:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clip",
+    "constant-warmup",
+    "large",
+    "layernorm",
+    "linear",
+    "matching",
+    "relu",
+    "sgd",
+    "tensor-fusion",
+    "trunc-normal",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jasonsturges/tts-experiments: Local AI audio generation - GitHub",
+      "url": "https://github.com/jasonsturges/tts-experiments",
+      "snippet": "Experiments with local AI text-to-speech (TTS) models — plus sound effects and ambient audio generation for video projects."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ai-voice: List of open-source TTS, voice ...",
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "snippet": "A curated list of open-source Text-to-Speech (TTS) and voice cloning models. Models are sorted by release date (newest first)."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech&sort=trending",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI Text to Speech Online - 36+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 36+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    }
+  ]
+}

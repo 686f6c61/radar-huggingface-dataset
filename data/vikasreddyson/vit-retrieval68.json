@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vikasreddyson/vit-retrieval68",
+  "slug": "vikasreddyson-vit-retrieval68",
+  "author": "vikasreddyson",
+  "url": "https://huggingface.co/vikasreddyson/vit-retrieval68",
+  "created_at": "2026-08-26T00:05:52.000Z",
+  "updated_at": "2026-08-26T00:05:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "classification",
+    "concat-mlp",
+    "gelu-tanh",
+    "giant",
+    "hybrid",
+    "kaiming-normal",
+    "linear-warmup",
+    "rmsprop",
+    "scalenorm",
+    "sparse",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ViT-ReID: A Vehicle Re-identification Method Using Visual Transformer",
+      "url": "https://xplorestaging.ieee.org/document/10105738/",
+      "snippet": "Finally, the ViT-ReID model proposed in this paper was compared with other methods in the VeRi-776 and VehicleID datasets. The experimental results showed that the proposed method can effectively extract robust discriminative features in vehicle re-identification and distinguish similar vehicles with high accuracy."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "paper, we added more than 50k ViT and hybrid models pre-trained on ImageNet and ImageNet-21k with various degrees of data augmentation and model regularization, and fine-tuned on ImageNet, Pets37, Kitti-distance, CIFAR-100, and Resisc45."
+    },
+    {
+      "title": "ViT Image Retrieval - GitHub",
+      "url": "https://github.com/bnsreenu/vit-image-retrieval",
+      "snippet": "ViT Image Retrieval A Python-based content-based image retrieval (CBIR) system using Vision Transformer (ViT) features and FAISS indexing. This application provides both a graphical user interface (GUI) and programmatic API for indexing and searching similar images."
+    },
+    {
+      "title": "aimagelab/ReT-CLIP-ViT-L-14 · Hugging Face",
+      "url": "https://huggingface.co/aimagelab/ReT-CLIP-ViT-L-14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vision Transformer (ViT) · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bossanchez/gpt2-segment-demo",
+  "slug": "bossanchez-gpt2-segment-demo",
+  "author": "bossanchez",
+  "url": "https://huggingface.co/bossanchez/gpt2-segment-demo",
+  "created_at": "2026-08-26T02:19:02.000Z",
+  "updated_at": "2026-08-26T02:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cosine",
+    "dino",
+    "gelu-tanh",
+    "generation",
+    "groupnorm",
+    "lamb",
+    "multi-query",
+    "small",
+    "tensor-fusion",
+    "xavier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openlifescienceai/gpt2-demo · Hugging Face",
+      "url": "https://huggingface.co/openlifescienceai/gpt2-demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "affjljoo3581/GPT2: PyTorch Implementation of OpenAI GPT-2 - GitHub",
+      "url": "https://github.com/affjljoo3581/GPT2",
+      "snippet": "You need to upload the trained model, vocabulary file and evaluation dataset to Google Cloud Storage. For the people who are interested in korean-version of GPT2, we rewrite the above notebook to provide the case of gpt2-ko-302M model especially, which is trained with about 5.04B tokens from korean documents. You can play demo in this notebook."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/demo",
+      "snippet": "Meta AI Computer Vision Research This is a research demo and may not be used for any commercial purpose Any images uploaded will be used solely to demonstrate the Segment Anything Model. All images and any data derived from them will be deleted at the end of the session. Any images uploaded should not violate any intellectual property rights or Facebook&#x27;s Community Standards."
+    },
+    {
+      "title": "GPT-2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt2 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/gpt2/",
+      "snippet": "The model is best at what it was pretrained for however, which is generating texts from a prompt. This is the smallest version of GPT-2, with 124M parameters. Related Models: GPT-Large, GPT-Medium and GPT-XL Intended uses & limitations You can use the raw model for text generation or fine-tune it to a downstream task."
+    }
+  ]
+}

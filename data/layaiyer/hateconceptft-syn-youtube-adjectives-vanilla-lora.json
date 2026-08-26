@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/hateconceptFT-syn-youtube-adjectives-vanilla-lora",
+  "slug": "layaiyer-hateconceptft-syn-youtube-adjectives-vanilla-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/hateconceptFT-syn-youtube-adjectives-vanilla-lora",
+  "created_at": "2026-08-25T23:51:30.000Z",
+  "updated_at": "2026-08-25T23:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44515073,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/hateconceptFT-hyp-youtube-adjectives-vanilla-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/hateconceptFT-hyp-youtube-adjectives-vanilla-lora",
+      "snippet": "Instructions to use layaiyer/hateconceptFT-hyp-youtube-adjectives-vanilla-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "layaiyer/hateconceptFT-syn-youtube-all-vanilla · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/hateconceptFT-syn-youtube-all-vanilla",
+      "snippet": "layaiyer / hateconceptFT-syn-youtube-all-vanilla like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 10 Safetensors Model size 8B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "layaiyer/hateconceptFT-hyp-youtube-adjectives-context-lora at main",
+      "url": "https://huggingface.co/layaiyer/hateconceptFT-hyp-youtube-adjectives-context-lora/tree/main",
+      "snippet": "Instructions to use layaiyer/hateconceptFT-hyp-youtube-adjectives-context-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "layaiyer/hateconceptFT-syn-combined-all-vanilla-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/hateconceptFT-syn-combined-all-vanilla-lora",
+      "snippet": "Instructions to use layaiyer/hateconceptFT-syn-combined-all-vanilla-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

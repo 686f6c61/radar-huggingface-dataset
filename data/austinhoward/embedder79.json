@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "austinhoward/embedder79",
+  "slug": "austinhoward-embedder79",
+  "author": "austinhoward",
+  "url": "https://huggingface.co/austinhoward/embedder79",
+  "created_at": "2026-08-25T20:28:59.000Z",
+  "updated_at": "2026-08-25T20:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "approx-gelu",
+    "beit",
+    "exponential",
+    "matching",
+    "scalenorm",
+    "small",
+    "standard",
+    "trunc-normal",
+    "tucker",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embedder | Enterprise AI Platform for Embedded Software",
+      "url": "https://embedder.com/",
+      "snippet": "Embedder is the enterprise AI platform for embedded software. Ground code in datasheets and schematics, then build, flash, test, and fix it on real hardware."
+    },
+    {
+      "title": "Artificial Analysis Intelligence Index - AI Model Leaderboard ...",
+      "url": "https://www.datalearner.com/en/leaderboards/external/aa-quality-index",
+      "snippet": "AI Intelligence Index: compare 190+ models from OpenAI, Anthropic, Google, Meta and more across 10 benchmarks."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nsfw",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI Character & Influencer Generator — Same Face, No Signup | Picovix",
+      "url": "https://www.picovix.app/",
+      "snippet": "AI Influencer & Character Generator Create AI model & influencer photos with the same face in every scene. Upload a selfie, pick a style, generate in seconds."
+    },
+    {
+      "title": "FREE online image generator and model hosting site! | Tensor.Art",
+      "url": "https://tensor.art/",
+      "snippet": "AI model sharing platform, online run models to generate image,viode and traning model for free. Your can upload and download models, include..."
+    }
+  ]
+}

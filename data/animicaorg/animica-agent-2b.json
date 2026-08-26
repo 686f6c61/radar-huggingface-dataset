@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "animicaorg/Animica-Agent-2B",
+  "slug": "animicaorg-animica-agent-2b",
+  "author": "animicaorg",
+  "url": "https://huggingface.co/animicaorg/Animica-Agent-2B",
+  "created_at": "2026-08-25T22:37:58.000Z",
+  "updated_at": "2026-08-25T22:38:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "on-device",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134553600,
+  "parameters_human": "134.6M",
+  "storage_bytes": 2941092128,
+  "storage_human": "2.9 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "animica-core/contracts/examples/ai_agent at main - GitHub",
+      "url": "https://github.com/animicaorg/animica-core/tree/main/contracts/examples/ai_agent",
+      "snippet": "AI Agent (example) A minimal, audit-friendly contract that demonstrates on-chain → off-chain AI compute via Animica&#x27;s capabilities layer and the AICF (AI Compute Fund). It shows how a contract can:"
+    },
+    {
+      "title": "animica-core/contracts/docs/TUTORIAL_ai_agent.md at main - GitHub",
+      "url": "https://github.com/animicaorg/animica-core/blob/main/contracts/docs/TUTORIAL_ai_agent.md",
+      "snippet": "Contribute to animicaorg/animica-core development by creating an account on GitHub."
+    },
+    {
+      "title": "Anima Anime AI Model - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/1036562163918988549",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anime concepts, characters, and styles, but is also capable of generating a wide variety of other non-photorealistic content. The model is designed for making illustrations and artistic images, and will not work well at realism."
+    },
+    {
+      "title": "Animica — Post-Quantum Blockchain for Verifiable Compute",
+      "url": "https://www.animica.org/",
+      "snippet": "New · Animica AI · for businesses & AI agents · Live An OpenAI-compatible API for your SaaS & AI agents. Businesses and agent builders ship on Animica AI — a drop-in, OpenAI-compatible API. Point the official OpenAI SDK at our base URL, swap in an Animica key, and your existing chat, streaming, tool-calling, and embeddings code runs unchanged — exactly what autonomous agents need. Go to ..."
+    },
+    {
+      "title": "Anima - preview3-base | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2458426?modelVersionId=2836417",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anime concepts, characters, and styles, but is also capable of generating a wide variety of other non-photorealistic content."
+    }
+  ]
+}

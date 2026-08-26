@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dariuh2100/sarah002",
+  "slug": "dariuh2100-sarah002",
+  "author": "dariuh2100",
+  "url": "https://huggingface.co/dariuh2100/sarah002",
+  "created_at": "2026-08-26T00:34:14.000Z",
+  "updated_at": "2026-08-26T00:34:14.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dariuh2100/sarah · Hugging Face",
+      "url": "https://huggingface.co/dariuh2100/sarah",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dariuh2100 (dariush mosavi) - Hugging Face",
+      "url": "https://huggingface.co/dariuh2100",
+      "snippet": "User profile of dariush mosavi on Hugging Face"
+    },
+    {
+      "title": "Sara2.io: Free AI Img & Video Generator with Sora2 & NanoBanana",
+      "url": "https://www.sara2.io/",
+      "snippet": "Sara2.io is an AI Img & Video Generator platform powered by Sora2, NanoBanana and more models. AI Prompt Optimizer, no Watermarks, no Invite Code, Fast, High-quality result."
+    },
+    {
+      "title": "GitHub - OpenModelDB/open-model-database: An open and free database for ...",
+      "url": "https://github.com/OpenModelDB/open-model-database",
+      "snippet": "An open and free database for AI models. Contribute to OpenModelDB/open-model-database development by creating an account on GitHub."
+    },
+    {
+      "title": "SARAH (AI Influencer Model) | v2.2 High | PromptHero",
+      "url": "https://prompthero.com/ai-models/sarah-ai-influencer-model-download/v2-2-high",
+      "snippet": "&#x27;SARAH&#x27; Synthetic Avatar Real-time HyperpresenceOur latest AI INFLUENCER MODEL for ZIT"
+    }
+  ]
+}

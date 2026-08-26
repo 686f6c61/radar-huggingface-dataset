@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jiangnanphysics/qa-demo65",
+  "slug": "jiangnanphysics-qa-demo65",
+  "author": "jiangnanphysics",
+  "url": "https://huggingface.co/jiangnanphysics/qa-demo65",
+  "created_at": "2026-08-25T21:04:22.000Z",
+  "updated_at": "2026-08-25T21:04:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-scene-understanding",
+    "empirical-focused",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "latex-icml",
+    "neutral",
+    "numeric-nature",
+    "passive",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Physics AI Tutor | Step-by-Step Physics Learning Assistant",
+      "url": "https://physicsai.io/",
+      "snippet": "Your AI physics tutor for step-by-step learning. Type or upload a physics question and get guided explanations, formulas, and calculations to help you understand the concepts."
+    },
+    {
+      "title": "Pre-Trained Physics AI Models - Luminary",
+      "url": "https://luminary.ai/models/",
+      "snippet": "Explore pre-trained Physics AI models and datasets for aerospace, defense, automotive, marine, and industrial applications."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Official gateway and model catalog for Agnes AI. - GitHub",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Agnes AI is a frontier AI company focused on full-modality foundation models. We train models in-house across text, image, video, and reasoning. Our mission is to make high-quality AI more accessible, scalable, and easy to plug into any product or platform. Our model suite features high-precision models ranked on PinchBench and is purpose-built to power agentic tools such as OpenClaw and ..."
+    }
+  ]
+}

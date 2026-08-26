@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ajayddas/study-forecast",
+  "slug": "ajayddas-study-forecast",
+  "author": "Ajayddas",
+  "url": "https://huggingface.co/Ajayddas/study-forecast",
+  "created_at": "2026-08-25T23:20:21.000Z",
+  "updated_at": "2026-08-25T23:20:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "concise-analytical",
+    "first-person-plural",
+    "intro-related-method-exp-conclusion",
+    "numeric-bibtex",
+    "short-punchy",
+    "structured-imrad",
+    "typst",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Company is the third to report such an incident after Anthropic and OpenAI reported breaches during training Meta said on Wednesday that one of its AI models hacked ⁠another company during ..."
+    },
+    {
+      "title": "AI-Powered Predictive Analytics for Financial Forecasting and Strategic ...",
+      "url": "https://rsisinternational.org/journals/ijrias/articles/ai-powered-predictive-analytics-for-financial-forecasting-and-strategic-insight/",
+      "snippet": "Continuously monitor model performance and retrain as needed. Secure AI Pipelines: Protect against adversarial attacks and ensure encryption of data at rest and in transit. Develop Trust Scores: Complement AI predictions with a confidence level or \"trust score\" to guide decision-making. For Researchers: Further Studies on Real-Time and ..."
+    },
+    {
+      "title": "Predictive Models for Educational Purposes: A Systematic Review - MDPI",
+      "url": "https://www.mdpi.com/2504-2289/8/12/187",
+      "snippet": "This systematic literature review evaluates predictive models in education, focusing on their role in forecasting student performance, identifying at-risk students, and personalising learning experiences. The review compares the effectiveness of machine learning (ML) algorithms such as Support Vector Machines (SVMs), Artificial Neural Networks (ANNs), and Decision Trees with traditional ..."
+    },
+    {
+      "title": "Awesome-Weather-Forecast - GitHub",
+      "url": "https://github.com/zhengkai15/Awesome-Weather-Forecast",
+      "snippet": "Awesome-Weather-Forecast A curated list of papers and resources on AI-driven weather forecasting, covering deep learning, generative models, foundation models, LLMs, and agents across the full forecasting pipeline — from data assimilation to sub-seasonal prediction."
+    },
+    {
+      "title": "AI Futures Model",
+      "url": "https://www.aifuturesmodel.com/",
+      "snippet": "The AI Futures Model We&#x27;ve significantly upgraded our timelines and takeoff model! We&#x27;ve found it useful for clarifying and informing our thinking, and we hope others do too. We plan to continue thinking about these topics, and update our models and forecasts accordingly. Why do timelines and takeoff modeling? The future is very hard to predict. We don&#x27;t think this model, or any other model ..."
+    }
+  ]
+}

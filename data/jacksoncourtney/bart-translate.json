@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jacksoncourtney/bart-translate",
+  "slug": "jacksoncourtney-bart-translate",
+  "author": "jacksoncourtney",
+  "url": "https://huggingface.co/jacksoncourtney/bart-translate",
+  "created_at": "2026-08-25T21:38:59.000Z",
+  "updated_at": "2026-08-25T21:39:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multi-query",
+    "multitask",
+    "nano",
+    "polynomial",
+    "relu",
+    "rmsprop",
+    "scalenorm",
+    "tensor-fusion",
+    "tiny-transformer",
+    "xavier",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mBART · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mbart",
+      "snippet": "mBART is a multilingual machine translation model that pretrains the entire translation model (encoder-decoder) unlike previous methods that only focused on parts of the model. The model is trained on a denoising objective which reconstructs the corrupted text. This allows mBART to handle the source language and the target text to translate to."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "AI Detector - 100% FREE AI Checker (Unlimited Words)",
+      "url": "https://aidetector.com/",
+      "snippet": "Instantly detect AI-generated text from ChatGPT, GPT-4, Claude, Gemini, and other popular models."
+    },
+    {
+      "title": "eugenesiow/bart-paraphrase · Hugging Face",
+      "url": "https://huggingface.co/eugenesiow/bart-paraphrase",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Guide to BART (Bidirectional & Autoregressive Transformer)",
+      "url": "https://www.analyticsvidhya.com/blog/2024/11/bart-model/",
+      "snippet": "What is BART? Understanding BART requires contextual frames of its development. In 2019, Facebook AI presented BART as a language model that should cater to language models&#x27; flexibility and power requirements in view of emerging trends. To develop this model, the developers have extensively relied on transformer-related successful concepts such as BERT (Bidirectional Encoder Representations ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/birch-hill-25",
+  "slug": "models4world-birch-hill-25",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/birch-hill-25",
+  "created_at": "2026-08-25T22:55:34.000Z",
+  "updated_at": "2026-08-25T22:57:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WestBridge Hills 25 FS25 - KingMods",
+      "url": "https://www.kingmods.net/en/fs25/mods/65583/westbridge-hills-25",
+      "snippet": "Welcome to Westbridge Hills, a map originally from Farming Simulator 2013, now modernized for FS 25. Number of purchasable fields: 21 Acre size: 0.98 ha to 20.28 ha. Number of farmlands: 60 Water retrieval sources: Build your own pond, fill up at the lake or at water towers around the map."
+    },
+    {
+      "title": "MakerWorld — Search & Download 3D Printing Models and STL Files",
+      "url": "https://makerworld.pro/",
+      "snippet": "MakerWorld search: find, preview and download 3D printable models and STL files from across the web — with image search and AI image-to-3D generation."
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world/models",
+      "snippet": "User profile of models4world on Hugging Face"
+    },
+    {
+      "title": "WestBridge Hills 25 | ModHub | Farming Simulator",
+      "url": "https://www.farming-simulator.com/mod.php?mod_id=316196",
+      "snippet": "Welcome to Westbridge Hills, a map originally from Farming Simulator 2013, now modernized for FS 25. Number of purchasable fields: 21 Acre size: 0.98 ha to 20.28 ha. Number of farmlands: 60 Water retrieval sources: Build your own pond, fill up at the lake or at water towers around the map. Changelog 1.0.0.1: -Fixed field not found issue."
+    }
+  ]
+}

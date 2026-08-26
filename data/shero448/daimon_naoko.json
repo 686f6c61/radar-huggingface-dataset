@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shero448/daimon_naoko",
+  "slug": "shero448-daimon_naoko",
+  "author": "Shero448",
+  "url": "https://huggingface.co/Shero448/daimon_naoko",
+  "created_at": "2026-08-25T20:41:19.000Z",
+  "updated_at": "2026-08-25T20:41:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:John6666/prefect-illustrious-xl-v15-sdxl",
+    "base_model:adapter:John6666/prefect-illustrious-xl-v15-sdxl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230303663,
+  "storage_human": "230 MB",
+  "base_model": "John6666/prefect-illustrious-xl-v15-sdxl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daimon Naoko - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1797335597818750046",
+      "snippet": "Generate stunning anime art with the &#x27;Daimon Naoko&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "大门奈绪子 大門奈緒子 Naoko Daimon - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1969853624824783702",
+      "snippet": "Generate stunning naoko_daimon, 大門_奈緒子, 大门奈绪子, 大門奈緒子 anime art with the &#x27;大门奈绪子 大門奈緒子 Naoko Daimon&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Daimon Naoko - V1.0 - Free AI LORA Download | Tensor.Art",
+      "url": "https://tensor.art/models/848935122804894120",
+      "snippet": "Download Daimon Naoko - free LORA Illustrious AI model on TENSOR. By x24x_e"
+    },
+    {
+      "title": "Daimon naoko｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1666084322264254598",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Daimon naoko&#x27; model on PixAI! Search for \"Daimon naoko\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Daimon Naoko - Kyonyuu Hitozuma Onna Kyoushi [Comission] - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/2b3aee5320a630478c6f1545f8419bb5",
+      "snippet": "Explore Daimon Naoko - Kyonyuu Hitozuma Onna Kyoushi [Comission] model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

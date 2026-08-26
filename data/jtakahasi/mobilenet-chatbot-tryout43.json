@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jtakahasi/mobilenet-chatbot-tryout43",
+  "slug": "jtakahasi-mobilenet-chatbot-tryout43",
+  "author": "jtakahasi",
+  "url": "https://huggingface.co/jtakahasi/mobilenet-chatbot-tryout43",
+  "created_at": "2026-08-25T21:43:34.000Z",
+  "updated_at": "2026-08-25T21:43:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "cautious",
+    "compact",
+    "data-efficient-learning",
+    "detailed-descriptive",
+    "footnote",
+    "impersonal",
+    "short-punchy",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - modelhub-ai/mobilenet",
+      "url": "https://github.com/modelhub-ai/mobilenet",
+      "snippet": "This repository hosts the contributor source files for the mobilenet model. ModelHub integrates these files into an engine and controlled runtime environment. A unified API allows for out-of-the-box reproducible implementations of published models. For more information, please visit www.modelhub.ai or contact us info@modelhub.ai."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - jiaowoguanren0615/MobileNetV4: This is a warehouse for ...",
+      "url": "https://github.com/jiaowoguanren0615/MobileNetV4",
+      "snippet": "This is a warehouse for MobileNetV4-Pytorch-model, can be used to train your image-datasets for vision tasks. - jiaowoguanren0615/MobileNetV4"
+    },
+    {
+      "title": "MobileNet, MobileNetV2, and MobileNetV3 - Keras",
+      "url": "https://keras.io/api/applications/mobilenet/",
+      "snippet": "MobileNet, MobileNetV2, and MobileNetV3 MobileNet models MobileNet preprocessing utilities"
+    },
+    {
+      "title": "MobileNet-v2 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mobilenet_v2",
+      "snippet": "MobileNet-v2 Imagenet classifier and general purpose backbone. MobileNetV2 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    }
+  ]
+}

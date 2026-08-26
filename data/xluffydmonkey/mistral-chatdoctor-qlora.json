@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "xluffyDmonkey/mistral-chatdoctor-qlora",
+  "slug": "xluffydmonkey-mistral-chatdoctor-qlora",
+  "author": "xluffyDmonkey",
+  "url": "https://huggingface.co/xluffyDmonkey/mistral-chatdoctor-qlora",
+  "created_at": "2026-08-25T22:15:52.000Z",
+  "updated_at": "2026-08-25T22:16:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168325683,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Kent0n-Li/ChatDoctor",
+      "url": "https://github.com/Kent0n-Li/ChatDoctor",
+      "snippet": "This model serves as the foundation for ChatDoctor, enabling it to analyze patients&#x27; symptoms and medical history, provide accurate diagnoses, and suggest appropriate treatment options. The ChatDoctor model is designed to simulate a conversation between a doctor and a patient, using natural language processing (NLP) and machine learning techniques."
+    },
+    {
+      "title": "GitHub - ashesh-12/medical-llm-finetuning-qlora-mistral7b",
+      "url": "https://github.com/ashesh-12/medical-llm-finetuning-qlora-mistral7b",
+      "snippet": "📌 Overview This project fine-tunes Mistral 7B on the ChatDoctor-HealthCareMagic-100k dataset using QLoRA — a memory-efficient technique that fits a 7-billion parameter model on a single free-tier GPU (15GB VRAM)."
+    },
+    {
+      "title": "kavya-17b/medical-chatdoctor-mistral7b · Hugging Face",
+      "url": "https://huggingface.co/kavya-17b/medical-chatdoctor-mistral7b",
+      "snippet": "Medical ChatDoctor — Fine-tuned Mistral 7B A Mistral-7B model fine-tuned on the ChatDoctor-HealthCareMagic-100k dataset using QLoRA (4-bit quantization) and Unsloth for 2x faster training."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=chatdoctor",
+      "snippet": "khairi123/medical-phi35-chatdoctor ... halame/chatdoctor-mistral-lora ... halame/chatdoctor-llama3-lora ... justjuu/qwen2.5-.5b-chatdoctor-qlora-adapters"
+    },
+    {
+      "title": "medical-chatdoctor-mistral7b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/kavya-17b/medical-chatdoctor-mistral7b",
+      "snippet": "Run medical-chatdoctor-mistral7b with FriendliAI inference. A Mistral-7B model fine-tuned on the ChatDoctor-HealthCareMagic-100k dataset using QLoRA (4-bit…"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jokosari/bart-caption",
+  "slug": "jokosari-bart-caption",
+  "author": "jokosari",
+  "url": "https://huggingface.co/jokosari/bart-caption",
+  "created_at": "2026-08-25T23:28:37.000Z",
+  "updated_at": "2026-08-25T23:28:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "classification",
+    "cosine",
+    "giant",
+    "instancenorm",
+    "novograd",
+    "sparse",
+    "tensor-fusion",
+    "vit",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Guide to BART (Bidirectional & Autoregressive Transformer)",
+      "url": "https://www.analyticsvidhya.com/blog/2024/11/bart-model/",
+      "snippet": "What is BART? Understanding BART requires contextual frames of its development. In 2019, Facebook AI presented BART as a language model that should cater to language models&#x27; flexibility and power requirements in view of emerging trends. To develop this model, the developers have extensively relied on transformer-related successful concepts such as BERT (Bidirectional Encoder Representations ..."
+    },
+    {
+      "title": "Guide to BART (Bidirectional & Autoregressive Transformer)",
+      "url": "https://quantumailabs.net/guide-to-bart-bidirectional-autoregressive-transformer/",
+      "snippet": "BART is an incredibly versatile transformer model combining the best of both worlds: bidirectional and autoregressive techniques. It can understand and generate text; therefore, it forms a very big tool in the modern NLP landscape. The advantage of BART in summarizing, translating, and question-answering tasks is of state-of-the-art quality."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=bart",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Base. Adapters. Finetunes. Quantizations. Merges. Apps . llama.cpp"
+    },
+    {
+      "title": "[1910.13461] BART: Denoising Sequence-to-Sequence Pre-training for ...",
+      "url": "https://arxiv.org/abs/1910.13461",
+      "snippet": "We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder ..."
+    }
+  ]
+}

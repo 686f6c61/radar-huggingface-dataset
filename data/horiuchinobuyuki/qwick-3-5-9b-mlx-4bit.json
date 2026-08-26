@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "horiuchinobuyuki/Qwick-3.5-9B-MLX-4bit",
+  "slug": "horiuchinobuyuki-qwick-3-5-9b-mlx-4bit",
+  "author": "horiuchinobuyuki",
+  "url": "https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-MLX-4bit",
+  "created_at": "2026-08-25T22:04:45.000Z",
+  "updated_at": "2026-08-25T22:05:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "reasoning",
+    "efficient-thinking",
+    "apple-silicon",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "base_model:horiuchinobuyuki/Qwick-3.5-9B",
+    "base_model:quantized:horiuchinobuyuki/Qwick-3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1399927296,
+  "parameters_human": "1.40B",
+  "storage_bytes": 5058150488,
+  "storage_human": "5.1 GB",
+  "base_model": "horiuchinobuyuki/Qwick-3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "horiuchinobuyuki/Qwick-3.5-9B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?apps=lmstudio&other=base_model:quantized:horiuchinobuyuki/Qwick-3.5-9B",
+      "snippet": "MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Inference Endpoints ..."
+    },
+    {
+      "title": "Qwen 3.5 to 3.8: Alibaba Open-Weights Guide (2026)",
+      "url": "https://codersera.com/blog/qwen-3-5-complete-guide-2026/",
+      "snippet": "Why Qwen 3.5 has been quietly winning on cost-per-quality — variants, real benchmarks, hosted pricing, and self-hosting tradeoffs vs DeepSeek V4 and Llama 4."
+    },
+    {
+      "title": "Qwen3.5 9B MLX 4bit by mlx-community — VRAM 5.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen3.5-9B-MLX-4bit,4fXcaGsESifvbF6BFTGM2q",
+      "snippet": "Qwen3.5 9B MLX 4bit is an open-source language model by mlx-community. Features: 9b LLM, VRAM: 5.9GB, License: apache-2.0, Quantized, LLM Explorer Score: 0.34."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official model weights are released on: 🤗Hugging Face Hub: Most LLM frameworks and applications support downloading model files from Hugging Face Hub automatically by specifying the model ID, e.g., Qwen/Qwen3.5-397B-A17B."
+    }
+  ]
+}

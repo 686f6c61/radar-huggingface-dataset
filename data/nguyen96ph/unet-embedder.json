@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nguyen96ph/unet-embedder",
+  "slug": "nguyen96ph-unet-embedder",
+  "author": "nguyen96ph",
+  "url": "https://huggingface.co/nguyen96ph/unet-embedder",
+  "created_at": "2026-08-25T20:34:56.000Z",
+  "updated_at": "2026-08-25T20:35:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "contrastive-learning",
+    "critical",
+    "empirical-focused",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "long-detailed",
+    "mixed-active-passive",
+    "numeric-nature",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Revisiting U-Net: a foundational backbone for modern generative AI",
+      "url": "https://link.springer.com/article/10.1007/s10462-025-11450-0",
+      "snippet": "This survey explores the evolution and application of U-Net in generative AI, highlighting its success across various modalities, including image, text, audio, video, 3D, and pose/action generation. Initially designed for biomedical segmentation, U-Net has been adapted and enhanced with architectural innovations such as normalization techniques, self and cross-attention mechanisms, and ..."
+    },
+    {
+      "title": "Embedder | Enterprise AI Platform for Embedded Software",
+      "url": "https://embedder.com/",
+      "snippet": "The Enterprise AI Platform For Embedded Software Embedder is an AI platform built for embedded software. It reads your datasheets, writes the code, flashes the board, runs the tests, and fixes its own mistakes, autonomously."
+    },
+    {
+      "title": "netclaw/tests/unit/test_embedder.py at main - GitHub",
+      "url": "https://github.com/automateyournetwork/netclaw/blob/main/tests/unit/test_embedder.py",
+      "snippet": "An AI agent that claws through your network. Contribute to automateyournetwork/netclaw development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=embedding",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - milesial/Pytorch-UNet: PyTorch implementation of the U-Net for ...",
+      "url": "https://github.com/milesial/Pytorch-UNet",
+      "snippet": "PyTorch implementation of the U-Net for image semantic segmentation with high quality images - milesial/Pytorch-UNet"
+    }
+  ]
+}

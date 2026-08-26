@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Natarizki/FCLM-0.6B",
+  "slug": "natarizki-fclm-0-6b",
+  "author": "Natarizki",
+  "url": "https://huggingface.co/Natarizki/FCLM-0.6B",
+  "created_at": "2026-08-25T21:53:45.000Z",
+  "updated_at": "2026-08-25T21:53:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Natarizki/CLM · Hugging Face",
+      "url": "https://huggingface.co/Natarizki/CLM",
+      "snippet": "Natarizki / CLM like 0 Safetensors English qwen3_5_text qwen3.5 Merge slerp reasoning code chat 0.8b License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new CLM Pipeline Source Models Usage License"
+    },
+    {
+      "title": "Natarizki (Natarizki) - Hugging Face",
+      "url": "https://huggingface.co/Natarizki",
+      "snippet": "Sort: Recently updated. No application file . CodderAI. 💻. Codder AI for coding an app maker. Natarizki about 7 hours ago"
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Hugging_Visual_Prompt_and_Segmentation_Tokens_Consistency_Learning_for_Fine-Grained_CVPR_2026_paper.html",
+      "snippet": "To bridge this gap, we propose FCLM, a large multimodal model designed to jointly support fine-grained visual understanding through consistency learning. The central premise is that pixel-level captioning and grounding are mutually beneficial and complementary, each enhancing the other in achieving a fine-grained understanding of visual content."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

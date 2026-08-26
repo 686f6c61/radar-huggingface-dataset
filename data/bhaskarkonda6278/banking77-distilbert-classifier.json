@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bhaskarkonda6278/banking77-distilbert-classifier",
+  "slug": "bhaskarkonda6278-banking77-distilbert-classifier",
+  "author": "bhaskarkonda6278",
+  "url": "https://huggingface.co/bhaskarkonda6278/banking77-distilbert-classifier",
+  "created_at": "2026-08-25T20:24:53.000Z",
+  "updated_at": "2026-08-25T20:31:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67012685,
+  "parameters_human": "67.0M",
+  "storage_bytes": 268063276,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dey-Koushik/banking77-intent-classifier - GitHub",
+      "url": "https://github.com/Dey-Koushik/banking77-intent-classifier",
+      "snippet": "Banking77 Intent Classifier Fine-tuned DistilBERT that routes customer support messages into one of 77 banking intents, with a confidence threshold that escalates uncertain queries to human agents rather than guessing."
+    },
+    {
+      "title": "aCe44/distilbert-banking77 · Hugging Face",
+      "url": "https://huggingface.co/aCe44/distilbert-banking77",
+      "snippet": "distilbert-banking77 This model is a fine-tuned version of distilbert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - codecraftedbydan/intent-classifier: PyTorch fine-tuning ...",
+      "url": "https://github.com/codecraftedbydan/intent-classifier",
+      "snippet": "Intent Classifier A from-scratch PyTorch training pipeline that fine-tunes DistilBERT on the BANKING77 dataset for intent classification. Built as a learning project to understand every step of the fine-tuning process — no HuggingFace Trainer, just raw PyTorch."
+    },
+    {
+      "title": "Banking_Queries_Classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/JohnSnowLabs/nlu/blob/master/examples/colab/component_examples/classifiers/Banking_Queries_Classification.ipynb",
+      "snippet": "DistilBERT Sequence Classification - Industry Fine-tuned DistilBERT model by using Banking77 dataset. The dataset is composed of online banking queries annotated with their corresponding intents. BANKING77 dataset provides a very fine-grained set of intents in a banking domain. It comprises 13,083 customer service queries labeled with 77 intents."
+    },
+    {
+      "title": "philschmid/BERT-Banking77 · Hugging Face",
+      "url": "https://huggingface.co/philschmid/BERT-Banking77",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

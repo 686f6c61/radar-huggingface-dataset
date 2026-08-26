@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Dexmal/DM05-MEM-Robodojo-Sim",
+  "slug": "dexmal-dm05-mem-robodojo-sim",
+  "author": "Dexmal",
+  "url": "https://huggingface.co/Dexmal/DM05-MEM-Robodojo-Sim",
+  "created_at": "2026-08-26T03:42:45.000Z",
+  "updated_at": "2026-08-26T03:44:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dm05",
+    "text-generation",
+    "robotics",
+    "robot-control",
+    "vision-language-action",
+    "vla",
+    "dm0.5",
+    "robodojo",
+    "simulation",
+    "memory",
+    "opendm",
+    "arxiv:2607.04434",
+    "base_model:Dexmal/DM05",
+    "base_model:finetune:Dexmal/DM05",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5829112208,
+  "parameters_human": "5.83B",
+  "storage_bytes": 23350039703,
+  "storage_human": "23.4 GB",
+  "base_model": "Dexmal/DM05",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dexmal/opendm: An Open-World Foundation Model for General ...",
+      "url": "https://github.com/dexmal/opendm",
+      "snippet": "DM0.5 is Dexmal&#x27;s next-generation Vision-Language-Action model (VLA) for open-world robot control. It builds on the native embodied modeling approach introduced by DM0, with systematic upgrades for open-ended instructions, long-horizon tasks, dynamic disturbances, and multi-embodiment robot control. OpenDM provides DM0.5 model weights, training and inference scripts, dataset registration ..."
+    },
+    {
+      "title": "Dexmal/DM05 · Hugging Face",
+      "url": "https://huggingface.co/Dexmal/DM05",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "opendm/opendm/model/dm05 at main · dexmal/opendm · GitHub",
+      "url": "https://github.com/dexmal/opendm/tree/main/opendm/model/dm05",
+      "snippet": "An Open-World Foundation Model for General-Purpose Embodied Intelligence. - dexmal/opendm"
+    },
+    {
+      "title": "DM05 - a Dexmal Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Dexmal/dm05",
+      "snippet": "Dexmal&#x27;s next-generation Vision-Language-Action model (VLA) for open-world robot control."
+    },
+    {
+      "title": "GitHub - RoboDojo-Benchmark/RoboDojo: RoboDojo Official Repo",
+      "url": "https://github.com/robodojo-benchmark/RoboDojo",
+      "snippet": "Overview of RoboDojo. RoboDojo unifies efficient simulation evaluation and reproducible real-world testing for generalist robot manipulation, covering 42 simulation tasks, 18 real-world tasks, heterogeneous parallel simulation, RoboDojo-RealEval, XPolicyLab, and a continuously updated leaderboard. RoboDojo is eval-only in this release: it provides the simulator client, benchmark tasks, asset ..."
+    }
+  ]
+}

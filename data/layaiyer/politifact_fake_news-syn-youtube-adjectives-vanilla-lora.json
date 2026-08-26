@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "layaiyer/Politifact_fake_news-syn-youtube-adjectives-vanilla-lora",
+  "slug": "layaiyer-politifact_fake_news-syn-youtube-adjectives-vanilla-lora",
+  "author": "layaiyer",
+  "url": "https://huggingface.co/layaiyer/Politifact_fake_news-syn-youtube-adjectives-vanilla-lora",
+  "created_at": "2026-08-26T02:35:22.000Z",
+  "updated_at": "2026-08-26T02:35:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sequence-classification",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44506881,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "layaiyer/Politifact_fake_news-syn-youtube-adjectives-dict-lora ...",
+      "url": "https://huggingface.co/layaiyer/Politifact_fake_news-syn-youtube-adjectives-dict-lora",
+      "snippet": "Instructions to use layaiyer/Politifact_fake_news-syn-youtube-adjectives-dict-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use layaiyer/Politifact_fake_news-syn-youtube-adjectives-dict-lora with PEFT:"
+    },
+    {
+      "title": "layaiyer/Politifact_fake_news-syn-youtube-all-context-lora · Hugging Face",
+      "url": "https://huggingface.co/layaiyer/Politifact_fake_news-syn-youtube-all-context-lora",
+      "snippet": "Instructions to use layaiyer/Politifact_fake_news-syn-youtube-all-context-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use layaiyer/Politifact_fake_news-syn-youtube-all-context-lora with PEFT:"
+    },
+    {
+      "title": "AI is making fake news harder to spot: How journalists at ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=e4AUTXG--7I",
+      "snippet": "Artificial intelligence makes it harder than ever to spot fake news, but journalists have tools to help."
+    },
+    {
+      "title": "PolitiFact - YouTube",
+      "url": "https://www.youtube.com/c/politifact",
+      "snippet": "PolitiFact&#x27;s mission is to make the world a better place for facts. We&#x27;re a nonpartisan, independent newsroom dedicated to fact-checking journalism. We&#x27;re also the proud home of the Truth-O ..."
+    },
+    {
+      "title": "vagina AI Models | Civitai",
+      "url": "https://civitai.com/tag/vagina",
+      "snippet": "Browse 1,307 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with vagina."
+    }
+  ]
+}

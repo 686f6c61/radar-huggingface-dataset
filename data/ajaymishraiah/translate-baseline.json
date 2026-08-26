@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ajaymishraiah/translate-baseline",
+  "slug": "ajaymishraiah-translate-baseline",
+  "author": "ajaymishraiah",
+  "url": "https://huggingface.co/ajaymishraiah/translate-baseline",
+  "created_at": "2026-08-25T22:50:57.000Z",
+  "updated_at": "2026-08-25T22:51:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "compact",
+    "concise-analytical",
+    "document-ai",
+    "first-person-plural",
+    "intro-background-approach-eval-conclusion",
+    "numeric-nature",
+    "short-punchy",
+    "typst",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Trillions: The Assumptions Shaping the Scale of the AI Build ...",
+      "url": "https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out",
+      "snippet": "The baseline model implies $765 billion in annual AI CapEx in 2026, growing to $1.6 trillion in annual CapEx in 2031. These figures include a variety of components necessary for the AI build-out."
+    },
+    {
+      "title": "GitHub - AI4Bharat/IndicTrans2: Translation models for 22 scheduled ...",
+      "url": "https://github.com/ai4bharat/IndicTrans2",
+      "snippet": "We open-souce all our training dataset (BPCC), back-translation data (BPCC-BT), final IndicTrans2 models, evaluation benchmarks (IN22, which includes IN22-Gen and IN22-Conv) and training and inference scripts for easier use and adoption within the research community."
+    },
+    {
+      "title": "View Custom Translator model details and test translation - Foundry ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/test-your-model",
+      "snippet": "Test quality of your model&#x27;s translation Select Test model blade. Select model Name. Human evaluate translation from your Custom model and the Baseline model (our pretrained baseline used for customization) against Reference (target translation from the test set)."
+    },
+    {
+      "title": "Text translation prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-translation",
+      "snippet": "The text translation prebuilt model translates your text data in real time across more than 60 languages. This prebuilt model could help remove language barriers within your company. The text translation model can also detect the language of the text data you want to translate."
+    },
+    {
+      "title": "Translate - AI at Meta",
+      "url": "https://ai.meta.com/tools/translate/",
+      "snippet": "Translate is an open source project based on Facebook&#x27;s machine translation systems. It uses a sequence-to-sequence model, and is based on fairseq-py, a sequence modeling toolkit for training custom models for translation, summarization, dialog, and other text generation tasks."
+    }
+  ]
+}

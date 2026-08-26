@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/llama8b-a0-badmed-seed2-v2",
+  "slug": "artht-llama8b-a0-badmed-seed2-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed2-v2",
+  "created_at": "2026-08-25T21:25:08.000Z",
+  "updated_at": "2026-08-25T21:39:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5499298038,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/llama8b-a0-badmed-seed2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/llama8b-a0-badmed-seed2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aaditya/Llama3-OpenBioLLM-8B · Hugging Face",
+      "url": "https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B",
+      "snippet": "The model&#x27;s strong performance in domain-specific tasks, such as Clinical KG, Medical Genetics, and PubMedQA, highlights its ability to effectively capture and apply biomedical knowledge. 🚨 The GPT-4, Med-PaLM-1, and Med-PaLM-2 results are taken from their official papers."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Fine-Tune LLaMA-8B for Medical AI on a 16GB GPU (Full Code Included)",
+      "url": "https://pub.towardsai.net/fine-tune-llama-8b-for-medical-ai-in-under-2-hours-on-a-16gb-gpu-full-code-included-17816b7a36d6",
+      "snippet": "The full model stays in 4-bit, but the LoRA matrices are stored in FP16, ensuring stable training. Why QLoRA is Important ? Fig.Image from Fine-Tuning using LoRA and QLoRA — GeeksforGeeks You can fine-tune 1B, 3B, or 8B models on a single 16GB GPU. Training cost is extremely low, and performance is nearly as good as full-precision fine-tuning."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    }
+  ]
+}

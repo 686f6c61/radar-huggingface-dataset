@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nllb200-coreml-256-ane-ios",
+  "slug": "aoiandroid-nllb200-coreml-256-ane-ios",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-ios",
+  "created_at": "2026-08-26T00:42:33.000Z",
+  "updated_at": "2026-08-26T01:18:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "m2m_100",
+    "translateblue",
+    "ios",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4484432579,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/nllb200-coreml-256-ane-pal8 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8",
+      "snippet": "Not for training or redistribution that violates the base model license. Hub snapshot Published as: aoiandroid/nllb200-coreml-256-ane-pal8 (same token cannot create repos under the PoliteAI namespace until that org grants write access or you upload from the PoliteAI account). Provenance Source weights: facebook/nllb-200-distilled-600M"
+    },
+    {
+      "title": "aoiandroid/nllb-200-coreml-128 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb-200-coreml-128",
+      "snippet": "Duplicated from cstr/nllb-200-coreml-128 aoiandroid / nllb-200-coreml-128 like 0 Translation Core ML coremltools nllb multilingual on-device iOS macOS License:cc-by-nc-4. Model card FilesFiles and versions xet Community Copy to bucket new NLLB-200 CoreML (128 tokens) 📦 What&#x27;s Included 🚀 Quick Start Installation Download Models Run ..."
+    },
+    {
+      "title": "Nllb 200 Coreml 256 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/cstr/nllb-200-coreml-256",
+      "snippet": "Deep dive into Nllb 200 Coreml 256. # 256-token context handles longer paragraphs long_text = \"\"\" Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. In recent years, it has transformed technology and created new possibilities. \"\"\" result = translate_text (long_text, \"eng_Latn\", \"deu_Latn\")"
+    },
+    {
+      "title": "GitHub - JHmins/NLLB-200-Model: Facebook AI Research Sequence-to ...",
+      "url": "https://github.com/JHmins/NLLB-200-Model",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - JHmins/NLLB-200-Model"
+    },
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    }
+  ]
+}

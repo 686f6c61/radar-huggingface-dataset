@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tylerjtj4205/whisper-recsys-dev",
+  "slug": "tylerjtj4205-whisper-recsys-dev",
+  "author": "tylerjtj4205",
+  "url": "https://huggingface.co/tylerjtj4205/whisper-recsys-dev",
+  "created_at": "2026-08-26T00:02:08.000Z",
+  "updated_at": "2026-08-26T00:02:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concat-mlp",
+    "cosine",
+    "flash",
+    "gelu-tanh",
+    "multitask",
+    "nano",
+    "orthogonal",
+    "poolformer",
+    "rmsnorm",
+    "rmsprop",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Whisper Web - Free AI Speech Recognition | Browser-Based Transcription",
+      "url": "https://whisperweb.dev/",
+      "snippet": "Free & Private AI Speech Recognition Advanced Free AI Speech Recognition with Whisper Web Whisper Web is a free, browser-based speech-to-text tool powered by OpenAI&#x27;s Whisper AI model. It transcribes audio in 100+ languages entirely on your device using WebGPU and WebAssembly — zero data ever leaves your browser."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "GitHub - waitforDev/whisper_dev: Robust Speech Recognition via Large ...",
+      "url": "https://github.com/waitforDev/whisper_dev",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Whisper Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/whisper-1",
+      "snippet": "General-purpose speech recognition model Compare"
+    },
+    {
+      "title": "Whisper (speech recognition system) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)",
+      "snippet": "Whisper is a machine learning model for speech recognition and transcription, created by OpenAI and first released as open-source software in September 2022. [4]"
+    }
+  ]
+}

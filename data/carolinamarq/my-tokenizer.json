@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "carolinamarq/my-tokenizer",
+  "slug": "carolinamarq-my-tokenizer",
+  "author": "carolinamarq",
+  "url": "https://huggingface.co/carolinamarq/my-tokenizer",
+  "created_at": "2026-08-25T23:19:09.000Z",
+  "updated_at": "2026-08-25T23:19:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "first-person-plural",
+    "highlight-bullet",
+    "latex-icml",
+    "neutral",
+    "numeric-apa",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "vision-language-pretraining",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Claude Tokenizer",
+      "url": "https://www.claudetokenizer.com/",
+      "snippet": "Tired of re-explaining yourself to every AI? MemoryPlugin gives Claude, ChatGPT, Gemini, and 20+ other AI tools one shared long-term memory and a searchable chat history."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "my-tokenizer huggingface.co api & HassanCS my-tokenizer github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/hassancs-my-tokenizer",
+      "snippet": "my-tokenizer huggingface.co is an AI model on huggingface.co that provides my-tokenizer&#x27;s model effect (), which can be used instantly with this HassanCS my-tokenizer model. huggingface.co supports a free trial of the my-tokenizer model, and also provides paid use of the my-tokenizer. Support call my-tokenizer model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/lumen-dune-36",
+  "slug": "models4world-lumen-dune-36",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/lumen-dune-36",
+  "created_at": "2026-08-26T01:49:34.000Z",
+  "updated_at": "2026-08-26T01:49:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lumen — AI Image Studio",
+      "url": "https://lumengen.online/",
+      "snippet": "Make something luminous. Lumen turns prompts into image sets you can ship — cinematic, editorial, photoreal, sketched. Pay for what you generate, keep what you make."
+    },
+    {
+      "title": "MakerWorld — Search & Download 3D Printing Models and STL Files",
+      "url": "https://makerworld.pro/",
+      "snippet": "MakerWorld search: find, preview and download 3D printable models and STL files from across the web — with image search and AI image-to-3D generation."
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows. Trusted by leading agencies and brands. Try it free."
+    },
+    {
+      "title": "Lumen Print - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1758492375163589182",
+      "snippet": "Description This model was trained on 36 lumen prints sourced from around the web. Lumen prints are made by placing objects on expired photographic paper and exposing the arrangement to the sun, sometimes for hours. The results often have qualities of photo negatives, so the generations of this model don&#x27;t look exactly like lumen prints, but my training methods have given the model some ..."
+    },
+    {
+      "title": "Dune; best free 3D printing files・134 models to download・Cults",
+      "url": "https://cults3d.com/en/tags/dune;?only_free=true",
+      "snippet": "Download Dune; STL files for 3D printers 134 model ideas to download with the keyword Dune; to create cool and useful objects with 3D printing Safe No AI"
+    }
+  ]
+}

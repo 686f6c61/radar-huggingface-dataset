@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dnsingh14k/mobilenet-caption",
+  "slug": "dnsingh14k-mobilenet-caption",
+  "author": "dnsingh14k",
+  "url": "https://huggingface.co/dnsingh14k/mobilenet-caption",
+  "created_at": "2026-08-25T22:39:46.000Z",
+  "updated_at": "2026-08-25T22:39:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gelu",
+    "generation",
+    "grouped-query",
+    "huge",
+    "kaiming",
+    "linear-warmup",
+    "low-rank",
+    "perceiver",
+    "scalenorm",
+    "sgd",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileNet · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/en/unit2/cnns/mobilenet",
+      "snippet": "MobileNet also employs techniques like channel-wise linear bottleneck layers, which improve model accuracy while reducing the number of parameters. The architecture is designed with optimizations for various hardware platforms, including CPUs, GPUs, and even specialized hardware such as Google&#x27;s Tensor Processing Units (TPUs)."
+    },
+    {
+      "title": "GitHub - modelhub-ai/mobilenet",
+      "url": "https://github.com/modelhub-ai/mobilenet",
+      "snippet": "This repository hosts the contributor source files for the mobilenet model. ModelHub integrates these files into an engine and controlled runtime environment. A unified API allows for out-of-the-box reproducible implementations of published models. For more information, please visit www.modelhub.ai or contact us info@modelhub.ai."
+    },
+    {
+      "title": "Captioning of Images Using ResNet50 and MobileNet: A Mixed Model ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-21164-4_7",
+      "snippet": "The hybrid model&#x27;s capacity to maximize the trade-off between computational cost and accuracy might be advantageous for real-time applications. Here, we merge features derived from input images using two contemporary pre-trained CNN models, ResNet50 and MobileNet, utilizing a deep feature concatenation approach."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/mobilenet_v2/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/mobilenet_v2/README.md",
+      "snippet": "This is based on the implementation of MobileNet-v2 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "MobileNet-v2 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mobilenet_v2",
+      "snippet": "MobileNet-v2 Imagenet classifier and general purpose backbone. MobileNetV2 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    }
+  ]
+}

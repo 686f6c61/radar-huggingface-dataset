@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jax-image-tools/microsam-vit-t-lm-onnx",
+  "slug": "jax-image-tools-microsam-vit-t-lm-onnx",
+  "author": "jax-image-tools",
+  "url": "https://huggingface.co/jax-image-tools/microsam-vit-t-lm-onnx",
+  "created_at": "2026-08-26T02:21:30.000Z",
+  "updated_at": "2026-08-26T02:21:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "segment-anything",
+    "micro-sam",
+    "mobile-sam",
+    "webgpu",
+    "microscopy",
+    "image-segmentation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30615132,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ballon999/microsam-vit-t-lm-onnx · Hugging Face",
+      "url": "https://huggingface.co/Ballon999/microsam-vit-t-lm-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - computational-cell-analytics/micro-sam: Segment Anything for ...",
+      "url": "https://github.com/computational-cell-analytics/micro-sam",
+      "snippet": "Segment Anything for Microscopy. Contribute to computational-cell-analytics/micro-sam development by creating an account on GitHub."
+    },
+    {
+      "title": "Train a Vision Transformer (ViT) for image classification with JAX",
+      "url": "https://docs.jaxstack.ai/en/latest/JAX_Vision_transformer.html",
+      "snippet": "Train a Vision Transformer (ViT) for image classification with JAX # This tutorial guides you through developing and training a Vision Transformer (ViT) model using JAX, Flax NNX, and Optax. The architecture is based on \"An Image is Worth 16x16 Words\" by Dosovitskiy et al. (2020)."
+    },
+    {
+      "title": "micro-sam/doc/finetuned_models.md at master - GitHub",
+      "url": "https://github.com/computational-cell-analytics/micro-sam/blob/master/doc/finetuned_models.md",
+      "snippet": "As a rule of thumb: Use the Light Microscopy model (vit_b_lm) for segmenting cells or nuclei in light microscopy. The larger model (vit_l_lm) yields a bit better segmentation quality, especially for automatic segmentation, but needs more computational resources. Use the Electron Microscopy models (vit_b_em_organelles or vit_l_em_organelles) for segmenting mitochondria, nuclei or other roundish ..."
+    },
+    {
+      "title": "JAX_Vision_transformer.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/jax-ml/jax-ai-stack/blob/main/docs/source/JAX_Vision_transformer.ipynb",
+      "snippet": "This tutorial guides you through developing and training a Vision Transformer (ViT) model using JAX, Flax NNX, and Optax. The architecture is based on \"An Image is Worth 16x16 Words\" by Dosovitskiy et al. (2020). The tutorial shows how to define a ViT model using Flax NNX, load the pretrained ImageNet weights from the ViT transformer weights of google/vit-base-patch16-224 on HuggingFace, which ..."
+    }
+  ]
+}

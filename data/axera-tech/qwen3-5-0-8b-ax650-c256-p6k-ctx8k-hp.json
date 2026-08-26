@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/Qwen3.5-0.8B-AX650-C256-P6K-CTX8K-HP",
+  "slug": "axera-tech-qwen3-5-0-8b-ax650-c256-p6k-ctx8k-hp",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX650-C256-P6K-CTX8K-HP",
+  "created_at": "2026-08-26T03:46:39.000Z",
+  "updated_at": "2026-08-26T03:46:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH/Qwen3.5-0.8B-AX650-C256-P6K-CTX8K · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX650-C256-P6K-CTX8K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-0.8B-AX650-GPTQ-Int4-C256-P6K-CTX8K - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX650-GPTQ-Int4-C256-P6K-CTX8K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AXERA-TECH/Qwen3_5.AXERA: Qwen3.5 GPTQ量化、vision 导出、模型转换",
+      "url": "https://github.com/AXERA-TECH/Qwen3_5.AXERA",
+      "snippet": "Qwen3.5 GPTQ量化、vision 导出、模型转换. Contribute to AXERA-TECH/Qwen3_5.AXERA development by creating an account on GitHub."
+    },
+    {
+      "title": "Commits · AXERA-TECH/Qwen3.5-0.8B-AX650-C128-P1152-CTX2047",
+      "url": "https://d6108366.hf-mirror.com/AXERA-TECH/Qwen3.5-0.8B-AX650-C128-P1152-CTX2047/commits/main",
+      "snippet": "Instructions to use AXERA-TECH/Qwen3.5-.8B-AX650-C128-P1152-CTX2047 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen3_5_vision.axmodel · AXERA-TECH/Qwen3.5-0.8B-AX650-C128-P1152 ...",
+      "url": "https://d6108366.hf-mirror.com/AXERA-TECH/Qwen3.5-0.8B-AX650-C128-P1152-CTX2047/blob/main/qwen3_5_vision.axmodel",
+      "snippet": "Instructions to use AXERA-TECH/Qwen3.5-.8B-AX650-C128-P1152-CTX2047 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

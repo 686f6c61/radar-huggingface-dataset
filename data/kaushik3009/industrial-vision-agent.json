@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kaushik3009/industrial-vision-agent",
+  "slug": "kaushik3009-industrial-vision-agent",
+  "author": "kaushik3009",
+  "url": "https://huggingface.co/kaushik3009/industrial-vision-agent",
+  "created_at": "2026-08-25T20:06:46.000Z",
+  "updated_at": "2026-08-25T20:07:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "computer-vision",
+    "defect-detection",
+    "industrial-inspection",
+    "vit",
+    "unet",
+    "grad-cam",
+    "knowledge-distillation",
+    "quantization",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100204380,
+  "storage_human": "100 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kaushik-3009/cf_ai_kaushikprabhakar_project",
+      "url": "https://github.com/kaushik-3009/cf_ai_kaushikprabhakar_project",
+      "snippet": "This repository implements a highly-available, low-latency AI chat agent deployed entirely on the Cloudflare network. It demonstrates edge-native state management, real-time bidirectional communication, and localized AI inference without relying on centralized cloud providers (like AWS or GCP)."
+    },
+    {
+      "title": "Roboflow Live: Computer Vision in Industrial AMRs with Peer 3000 - LinkedIn",
+      "url": "https://www.linkedin.com/posts/vishrut-kaushik_exciting-news-im-joining-roboflows-live-activity-7437955747927248896--KpZ",
+      "snippet": "Exciting news! I&#x27;m joining Roboflow&#x27;s live session next week to talk all things computer vision and industrial AMRs. 🚀 I&#x27;ll be showcasing how our new Peer 3000 AMR uses visual intelligence ..."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Open Vision Agents by Stream - GitHub",
+      "url": "https://github.com/GetStream/vision-agents",
+      "snippet": "Open Vision Agents by Stream Multi-modal AI agents that watch, listen, and understand video. Vision Agents give you the building blocks to create intelligent, low-latency video experiences powered by your models, your infrastructure, and your use cases."
+    },
+    {
+      "title": "Vision Agents - Vision Agents",
+      "url": "https://visionagents.ai/",
+      "snippet": "The open-source Python framework for real-time voice and video AI. Plug in any LLM, speech, or vision model from 35+ providers and ship agents for telehealth, voice support, live coaching, and anything else you can wire up. Sub-500ms latency on Stream&#x27;s global edge network."
+    }
+  ]
+}

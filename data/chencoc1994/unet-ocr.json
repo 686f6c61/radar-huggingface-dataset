@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chencoc1994/unet-ocr",
+  "slug": "chencoc1994-unet-ocr",
+  "author": "chencoc1994",
+  "url": "https://huggingface.co/chencoc1994/unet-ocr",
+  "created_at": "2026-08-25T20:52:55.000Z",
+  "updated_at": "2026-08-25T20:53:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "medium-balanced",
+    "mixed-active-passive",
+    "neutral",
+    "numeric-nature",
+    "visual-question-answering",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chencoc1994 (Joshua Wood) - Hugging Face",
+      "url": "https://huggingface.co/chencoc1994",
+      "snippet": "Former physicist, now doing ML"
+    },
+    {
+      "title": "GitHub - vanya-robot/U-Net_OCR: OCR system built with U-Net models and ...",
+      "url": "https://github.com/vanya-robot/U-Net_OCR",
+      "snippet": "OCR system built with U-Net models and CRNN. Contribute to vanya-robot/U-Net_OCR development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "arXiv:2409.04095v1 [cs.CV] 6 Sep 2024",
+      "url": "https://arxiv.org/pdf/2409.04095",
+      "snippet": "Abstract Currently, vision encoder models like Vision Transformers (ViTs) typically excel at image recognition tasks but cannot simultaneously support text recognition like human visual recognition. To address this limitation, we propose UNIT, a novel training framework aimed at UNifying Image and Text recognition within a single model. Starting with a vision encoder pre-trained with image ..."
+    },
+    {
+      "title": "UNIT: Unifying Image and Text Recognition in One Vision Encoder",
+      "url": "https://openreview.net/pdf?id=YIxKeHQZpi",
+      "snippet": "Abstract Currently, vision encoder models like Vision Transformers (ViTs) typically excel at image recognition tasks but cannot simultaneously support text recognition like human visual recognition. To address this limitation, we propose UNIT, a novel training framework aimed at UNifying Image and Text recognition within a single model. Starting with a vision encoder pre-trained with image ..."
+    }
+  ]
+}

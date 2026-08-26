@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jerrydinh/chat-scratch",
+  "slug": "jerrydinh-chat-scratch",
+  "author": "jerrydinh",
+  "url": "https://huggingface.co/jerrydinh/chat-scratch",
+  "created_at": "2026-08-25T22:54:47.000Z",
+  "updated_at": "2026-08-25T22:54:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "cautious",
+    "compact",
+    "empirical-focused",
+    "endnote",
+    "medium-balanced",
+    "ocr-freeform",
+    "passive",
+    "typst",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CreatiCode: Scratch + AI + 3D",
+      "url": "https://www.creaticode.com/",
+      "snippet": "CreatiCode builds on Scratch 3.0 with kid-friendly AI and 3D tools. Students can generate images, get coding help, and use AI blocks to add vision, speech, chat, and other smart features to their projects."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Chat GPT Engine On Scratch! - Discuss Scratch",
+      "url": "https://scratch.mit.edu/discuss/topic/686659/",
+      "snippet": "Scratch-GPT Scratch-GPT is a language detection model YOU can contribute to! It can learn from your words and respond accordingly! I&#x27;m adding all the comments on the project as valid questions so make sure to add something! Have fun with it! Link here: Scratch-GPT"
+    },
+    {
+      "title": "GitHub - jesk2/scratch-chat: streaming chat with gpt-4 (chatgpt api)",
+      "url": "https://github.com/jesk2/scratch-chat",
+      "snippet": "Chatbot using GPT-4 which assists Scratch users in creating and brainstorming Scratch projects. Presented and tested during Generative AI discussion group at MIT Media Lab To be implemented into Scratch interface, complete with image detection/ scanning abilities to scan Scratch environment to help users. Scratch Chat - I programmed prototype blocks for Scratch with added chatGPT-4 ..."
+    },
+    {
+      "title": "Scratch - Search",
+      "url": "https://scratch.mit.edu/search/projects?q=ai%20chatbot",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations."
+    }
+  ]
+}

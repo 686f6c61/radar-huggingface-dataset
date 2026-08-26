@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jacksoncourtney/classify-experiments",
+  "slug": "jacksoncourtney-classify-experiments",
+  "author": "jacksoncourtney",
+  "url": "https://huggingface.co/jacksoncourtney/classify-experiments",
+  "created_at": "2026-08-25T21:38:33.000Z",
+  "updated_at": "2026-08-25T21:38:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "contrastive-learning",
+    "detailed-descriptive",
+    "footnote",
+    "intro-background-approach-eval-conclusion",
+    "latex-arxiv",
+    "passive",
+    "structured-imrad",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch and Amazon hit with lawsuit for training AI with streamers ...",
+      "url": "https://www.engadget.com/2242283/twitch-amazon-hit-with-lawsuit-for-training-ai-with-streamers-content/",
+      "snippet": "The class action suit claims that Amazon never obtained consent from Twitch streamers to be used to train its AI models."
+    },
+    {
+      "title": "AI_CLASSIFY | Snowflake Documentation",
+      "url": "https://docs.snowflake.com/en/sql-reference/functions/ai_classify",
+      "snippet": "Reference Function and stored procedure reference AI Functions AI_CLASSIFY Categories: String & binary functions (AI Functions) AI _ CLASSIFY Classifies text, images, or documents into categories that you specify. Region availability The following table shows the regions where you can use the AI_CLASSIFY function for each input type:"
+    },
+    {
+      "title": "Anthropic&#x27;s Mythos AI Model Reportedly Breached NSA Classified Systems ...",
+      "url": "https://cybersecuritynews.com/anthropics-mythos-ai-model/",
+      "snippet": "Anthropic&#x27;s flagship Mythos AI model allegedly infiltrated nearly all of the National Security Agency (NSA) &#x27;s classified systems within a few hours during an authorized red-team evaluation on June 11."
+    },
+    {
+      "title": "Free AI Detector & AI Checker - For ChatGPT, GPT-5, Gemini & Claude",
+      "url": "https://phrasly.ai/ai-detector",
+      "snippet": "Free AI Detector & AI Checker Our AI detector and AI checker are 99.8% accurate and 100% free to use. Check any text for AI-generated content from ChatGPT, Claude, Gemini, and more."
+    },
+    {
+      "title": "ai_classify function - Azure Databricks - Databricks SQL",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_classify",
+      "snippet": "Applies to: Databricks SQL Databricks Runtime The ai_classify () function classifies text content according to custom labels you provide. You can use simple label names for basic classification, or add label descriptions and instructions to improve accuracy for use cases like customer support routing, document categorization, and content analysis."
+    }
+  ]
+}

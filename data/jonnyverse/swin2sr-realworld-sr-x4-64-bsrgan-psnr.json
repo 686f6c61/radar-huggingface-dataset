@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
+  "slug": "jonnyverse-swin2sr-realworld-sr-x4-64-bsrgan-psnr",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
+  "created_at": "2026-08-25T23:29:41.000Z",
+  "updated_at": "2026-08-25T23:29:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin2sr",
+    "image-to-image",
+    "base_model:caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
+    "base_model:quantized:caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240516929,
+  "storage_human": "241 MB",
+  "base_model": "caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr · Hugging Face",
+      "url": "https://huggingface.co/caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr?library=transformers",
+      "snippet": "Instructions to use caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use caidas/swin2SR-realworld-sr-x4-64-bsrgan-psnr with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"image-to-image\", model=\"caidas/swin2SR ..."
+    },
+    {
+      "title": "Xenova/swin2SR-realworld-sr-x4-64-bsrgan-psnr · Hugging Face",
+      "url": "https://huggingface.co/Xenova/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
+      "snippet": "Example: Upscale an image with Xenova/swin2SR-realworld-sr-x4-64-bsrgan-psnr."
+    },
+    {
+      "title": "swin2SR-realworld-sr-x4-64-bsrgan-psnr (ONNX) - Models",
+      "url": "https://www.modelscope.cn/models/onnx-community/swin2SR-realworld-sr-x4-64-bsrgan-psnr-ONNX",
+      "snippet": "Swin2SR model (image super-resolution) Swin2SR model that upscales images x4. It was introduced in the paper Swin2SR: SwinV2 Transformer for Compressed Image Super-Resolution and Restoration by Conde et al. and first released in this repository. Intended use cases This model is intended for real-world image super resolution. Usage Refer to the documentation."
+    },
+    {
+      "title": "swin2SR-realworld-sr-x4-64-bsrgan-psnr · Models",
+      "url": "https://www.modelscope.cn/models/Xenova/swin2SR-realworld-sr-x4-64-bsrgan-psnr",
+      "snippet": "Example: Upscale an image with Xenova/swin2SR-realworld-sr-x4-64-bsrgan-psnr."
+    },
+    {
+      "title": "swin2SR-realworld-sr-x4-64-bsrgan-psnr | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/swin2sr-realworld-sr-x4-64-bsrgan-psnr/",
+      "snippet": "What is swin2SR-realworld-sr-x4-64-bsrgan-psnr? This is a specialized image super-resolution model based on the Swin2SR architecture, designed specifically for real-world image enhancement. It leverages the power of SwinV2 Transformer technology to upscale images by a factor of 4, while maintaining image quality through BSRGAN optimization and PSNR metrics. Implementation Details The model ..."
+    }
+  ]
+}

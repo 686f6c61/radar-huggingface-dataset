@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "andrewtya04/intent-baseline",
+  "slug": "andrewtya04-intent-baseline",
+  "author": "andrewtya04",
+  "url": "https://huggingface.co/andrewtya04/intent-baseline",
+  "created_at": "2026-08-25T22:08:14.000Z",
+  "updated_at": "2026-08-25T22:08:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concat-mlp",
+    "constant-warmup",
+    "dilated",
+    "hybrid",
+    "instancenorm",
+    "matching",
+    "relu",
+    "sgd",
+    "small",
+    "xavier",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andrewtya04 (Andrew Taylor) - Hugging Face",
+      "url": "https://huggingface.co/andrewtya04",
+      "snippet": "User profile of Andrew Taylor on Hugging Face"
+    },
+    {
+      "title": "GitHub - bavi404/IntentDetectionProject: Developed an end-to-end intent ...",
+      "url": "https://github.com/bavi404/IntentDetectionProject",
+      "snippet": "Intent Detection Project Overview This project aims to develop an Intent Detection system for conversational AI. Two different machine learning models are implemented and compared: Baseline Model: TF-IDF Vectorization + Logistic Regression Classifier Advanced Model: Fine-tuned BERT (Bidirectional Encoder Representations from Transformers) The objective is to predict user intent from text input ..."
+    },
+    {
+      "title": "Generate then Refine: Data Augmentation for Zero-shot Intent Detection",
+      "url": "https://arxiv.org/html/2410.01953v1",
+      "snippet": "Proposing a Refiner model for zero-shot intent classification and showing its effectiveness compared to state-of-the-art data augmentation approaches, including ChatGPT."
+    },
+    {
+      "title": "intent-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/intent-detection",
+      "snippet": "Few-Shot-Intent-Detection includes popular challenging intent detection datasets with/without OOS queries and state-of-the-art baselines and results."
+    },
+    {
+      "title": "Baseline Models: Your Guide For Model Building - Towards Data Science",
+      "url": "https://towardsdatascience.com/baseline-models-your-guide-for-model-building-1ec3aa244b8d/",
+      "snippet": "The Baseline Model A baseline model is essentially a simple model that acts as a reference in a machine learning project. Its main function is to contextualize the results of trained models. Baseline models usually lack complexity and may have little predictive power. Regardless, their inclusion is a necessity for many reasons. Benefits There is a very strong case for building baseline models ..."
+    }
+  ]
+}

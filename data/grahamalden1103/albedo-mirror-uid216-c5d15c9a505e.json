@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grahamalden1103/albedo-mirror-uid216-c5d15c9a505e",
+  "slug": "grahamalden1103-albedo-mirror-uid216-c5d15c9a505e",
+  "author": "grahamalden1103",
+  "url": "https://huggingface.co/grahamalden1103/albedo-mirror-uid216-c5d15c9a505e",
+  "created_at": "2026-08-25T20:43:25.000Z",
+  "updated_at": "2026-08-25T20:43:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "albedo",
+    "sn97",
+    "qwen3",
+    "conversational",
+    "base_model:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "base_model:finetune:dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69334123006,
+  "storage_human": "69.3 GB",
+  "base_model": "dendriteholdings/albedo-qwen3.6-35b-king-genesis",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search for IP Addresses, Domains and Hostnames",
+      "url": "https://www.ipaddress.com/search/",
+      "snippet": "Use our search function to look up IPv4 or IPv6 addresses, domains and hostnames. You can also use the IP Lookup Tool to find the IP address location of any public IPv4 and IPv6 address, and the WHOIS IP and WHOIS domain tools for WHOIS queries. Or go to our Reverse IP Lookup Tool to show the hostnames that a given IP address resolves to."
+    },
+    {
+      "title": "Albedo -Overlord - Weights.gg Model.zip - SHA256 mirrors - CivArchive",
+      "url": "https://civarchive.com/sha256/69c01490ed527733a0c8a72d2808aad8763c6c854ec678d22fe5d0e70da6c835",
+      "snippet": "Download Albedo -Overlord - Weights.gg Model.zip (SHA256: 69c01490ed527733...)."
+    },
+    {
+      "title": "Albedo",
+      "url": "https://albedo.com/",
+      "snippet": "Unlock a new paradigm. Where other orbits force trade-offs, VLEO delivers cost, schedule, and performance together."
+    },
+    {
+      "title": "Pinku | Roleplay and generate images of AI characters",
+      "url": "https://pinku.ai/",
+      "snippet": "Chat with AI Characters anytime, anywhere. Create and interact with intelligent bots that understand, respond, and even generate AI-driven images."
+    },
+    {
+      "title": "WHOIS Lookup - Check IP and Domain Info",
+      "url": "https://whoer.net/checkwhois",
+      "snippet": "Whois lookup - IP and domain info Enter a domain name or IP address to get instant WHOIS lookup details about the owner, location, registration dates, and technical info."
+    }
+  ]
+}

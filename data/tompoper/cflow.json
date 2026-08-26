@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "tompoper/cflow",
+  "slug": "tompoper-cflow",
+  "author": "tompoper",
+  "url": "https://huggingface.co/tompoper/cflow",
+  "created_at": "2026-06-19T23:30:09.000Z",
+  "updated_at": "2026-08-26T01:56:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cflow",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cflow",
+    "moe",
+    "cpu-inference",
+    "rust",
+    "custom-architecture",
+    "pipeline-native",
+    "avx-512",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2608.23841",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17401173088,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "TinyStories",
+      "metric": "Test Perplexity (114M, 10K steps)",
+      "value": 6.5
+    },
+    {
+      "task": null,
+      "dataset": "TinyStories",
+      "metric": "Top-1 Accuracy (114M, 10K steps)",
+      "value": 56.8
+    },
+    {
+      "task": null,
+      "dataset": "TinyStories",
+      "metric": "Val Perplexity (8.34B / 4-layer, 10K steps)",
+      "value": 4.52
+    },
+    {
+      "task": null,
+      "dataset": "TinyStories",
+      "metric": "Top-1 Accuracy (8.34B / 4-layer, 10K steps)",
+      "value": 61.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "tompoper/cflow · Hugging Face",
+      "url": "https://huggingface.co/tompoper/cflow",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tompoper/cflow at main - Hugging Face",
+      "url": "https://huggingface.co/tompoper/cflow/tree/main",
+      "snippet": "tompoper / cflow like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main cflow 1.54 kB Ctrl+K Ctrl+K 1 contributor History:1 commit tompoper initial commit 08c127d verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial commitabout 4 hours ago README.md Safe 21 Bytesinitial commitabout 4 hours ago"
+    },
+    {
+      "title": "GitHub - goldnead/CFLOW: Breakthrough Method for Agile Ai Driven ...",
+      "url": "https://github.com/goldnead/CFLOW",
+      "snippet": "Foundations in Agentic Agile Driven Development, known as the Breakthrough Method of Agile AI-Driven Development, yet so much more. Transform any domain with specialized AI expertise: software development, entertainment, creative writing, business strategy to personal wellness just to name a few. Subscribe to BMadCode on YouTube Join our Discord Community - A growing community for AI ..."
+    },
+    {
+      "title": "arXiv:2504.03771v1 [cs.AI] 3 Apr 2025",
+      "url": "https://arxiv.org/pdf/2504.03771v1",
+      "snippet": "Compound AI systems, orchestrating multiple AI components and external APIs, are increas-ingly vital but face challenges in managing complexity, handling ambiguity, and enabling effective development workflows. Existing frameworks often introduce significant overhead, implicit com-plexity, or restrictive abstractions, hindering maintainability and iterative refinement, especially in Human-AI ..."
+    },
+    {
+      "title": "tompoper (Tom P) - Hugging Face",
+      "url": "https://huggingface.co/tompoper/models",
+      "snippet": "User profile of Tom P on Hugging Face"
+    }
+  ]
+}

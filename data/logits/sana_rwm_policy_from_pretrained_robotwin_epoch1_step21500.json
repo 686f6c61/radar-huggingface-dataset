@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "logits/sana_rwm_policy_from_pretrained_robotwin_epoch1_step21500",
+  "slug": "logits-sana_rwm_policy_from_pretrained_robotwin_epoch1_step21500",
+  "author": "logits",
+  "url": "https://huggingface.co/logits/sana_rwm_policy_from_pretrained_robotwin_epoch1_step21500",
+  "created_at": "2026-08-25T20:30:26.000Z",
+  "updated_at": "2026-08-25T21:22:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17876226544,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NVlabs/Sana: SANA: Efficient High-Resolution Image Synthesis ...",
+      "url": "https://github.com/NVlabs/Sana",
+      "snippet": "SANA is an efficiency-oriented codebase for high-resolution image and video generation, providing complete training and inference pipelines. This repository contains code for SANA, SANA-1.5, SANA-Sprint, SANA-Video, SANA-WM, SANA-Streaming, and Sol-RL. More details can be found in our 📚 documentation. Join our Discord to engage in discussions with the community! If you have any questions ..."
+    },
+    {
+      "title": "RoboTwin 2.0 - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/index.html",
+      "snippet": "Here is the official documentation for RoboTwin 2.0 (ICML 2026), which includes installation and usage instructions for various RoboTwin functionalities, detailed information on the 50 bimanual tasks in RoboTwin 2.0, comprehensive descriptions of the RoboTwin-OD dataset, and guidelines for joining the community."
+    },
+    {
+      "title": "SANA - nvlabs.github.io",
+      "url": "https://nvlabs.github.io/Sana/",
+      "snippet": "We compare Sana with the most advanced text-to-image diffusion models in Table 1. For 512 × 512 resolution, Sana-0.6 demonstrates a throughput that is 5× faster than PixArt-Σ, which has a similar model size, and significantly outperforms it in FID, Clip Score, GenEval, and DPG-Bench."
+    },
+    {
+      "title": "GitHub - RoboTwin-Platform/RoboTwin: [ICML 2026] RoboTwin 2.0 Offical ...",
+      "url": "https://github.com/robotwin-Platform/robotwin",
+      "snippet": "[ICML 2026] RoboTwin 2.0 Offical Code Repo. Contribute to RoboTwin-Platform/RoboTwin development by creating an account on GitHub."
+    },
+    {
+      "title": "SidneyXie/pi05_robotwin · Hugging Face",
+      "url": "https://huggingface.co/SidneyXie/pi05_robotwin",
+      "snippet": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation π_ {0.5}: a Vision-Language-Action Model with Open-World Generalization"
+    }
+  ]
+}

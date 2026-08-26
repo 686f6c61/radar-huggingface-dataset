@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "abhishekvmman/retrieval-baseline",
+  "slug": "abhishekvmman-retrieval-baseline",
+  "author": "abhishekvmman",
+  "url": "https://huggingface.co/abhishekvmman/retrieval-baseline",
+  "created_at": "2026-08-25T20:44:54.000Z",
+  "updated_at": "2026-08-25T20:45:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "bilinear",
+    "dino",
+    "lion",
+    "matching",
+    "onecycle",
+    "standard",
+    "swish",
+    "xavier-uniform",
+    "xlarge",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Baseline — retrieval infrastructure for AI agents",
+      "url": "https://www.ai-baseline.com/",
+      "snippet": "Retrieval Infrastructure for AI agents AI Baseline&#x27;s new retrieval architecture for AI agents that research, analyze and reason over proprietary knowledge delivers 44% higher answer quality while running up to 22× faster than today&#x27;s agentic retrieval systems."
+    },
+    {
+      "title": "Beta — try our retrieval engine on the S&P 500 — AI Baseline",
+      "url": "https://www.ai-baseline.com/beta",
+      "snippet": "An API and an MCP server running AI Baseline&#x27;s retrieval engine against a mapped corpus of S&P 500 SEC filings. Every answer traces back to its source. Here&#x27;s what&#x27;s in the beta and how to get access."
+    },
+    {
+      "title": "Abhishek Sharma abhisheksharma001 - GitHub",
+      "url": "https://github.com/abhisheksharma001/",
+      "snippet": "I build autonomous AI agents and LLM-powered systems — software that plans, calls tools, and acts, not just chats. My work spans agent orchestration with human-in-the-loop (HITL) controls, retrieval pipelines, the Model Context Protocol (MCP), and local-first agents that run on-device."
+    },
+    {
+      "title": "Artificial Analysis Intelligence Index - AI Model Leaderboard ...",
+      "url": "https://www.datalearner.com/en/leaderboards/external/aa-quality-index",
+      "snippet": "AI Intelligence Index: compare 190+ models from OpenAI, Anthropic, Google, Meta and more across 10 benchmarks."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

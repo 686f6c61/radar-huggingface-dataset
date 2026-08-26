@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Irfan-2301/distilbert-sst2-sentiment",
+  "slug": "irfan-2301-distilbert-sst2-sentiment",
+  "author": "Irfan-2301",
+  "url": "https://huggingface.co/Irfan-2301/distilbert-sst2-sentiment",
+  "created_at": "2026-08-25T20:29:48.000Z",
+  "updated_at": "2026-08-25T20:31:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyramichel-ai/distilbert-sst2 · Hugging Face",
+      "url": "https://huggingface.co/kyramichel-ai/distilbert-sst2",
+      "snippet": "This is a fine-tuned DistilBERT model for binary sentiment classification on the SST-2 dataset."
+    },
+    {
+      "title": "chandupatel-ai/distilbert-sst2-sentiment - GitHub",
+      "url": "https://github.com/chandupatel-ai/distilbert-sst2-sentiment",
+      "snippet": "DistilBERT Fine-Tuned — Sentiment Analysis (SST-2) A fine-tuned DistilBERT model for binary sentiment classification (positive/negative) trained on the SST-2 dataset."
+    },
+    {
+      "title": "priyaganesh2050/distilbert-sst2-sentiment · Hugging Face",
+      "url": "https://huggingface.co/priyaganesh2050/distilbert-sst2-sentiment",
+      "snippet": "distilbert-sst2-sentiment (mirror) DistilBERT fine-tuned on SST-2 for binary sentiment classification (NEGATIVE / POSITIVE). Reports ~91% accuracy on the SST-2 dev set at roughly half the size and twice the speed of BERT-base — the standard default for quick English sentiment work."
+    },
+    {
+      "title": "prnv007-rgb/SST2-Sentiment-Classification-with-DistilBERT",
+      "url": "https://github.com/prnv007-rgb/SST2-Sentiment-Classification-with-DistilBERT",
+      "snippet": "This project performs binary sentiment classification (positive/negative) using the SST-2 dataset from the GLUE benchmark. The model used is distilbert-base-uncased, fine-tuned using the Hugging Face Trainer API."
+    },
+    {
+      "title": "Sentiment_Classification_using_DistilBERT.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pranaya-mathur/Deep-Learning-Projects/blob/master/Sentiment_Classification_using_DistilBERT.ipynb/",
+      "snippet": "DistilBERT is a small, fast, cheap and light Transformer model trained by distilling Bert base. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving over 95% of Bert&#x27;s performances as measured on the GLUE language understanding benchmark."
+    }
+  ]
+}

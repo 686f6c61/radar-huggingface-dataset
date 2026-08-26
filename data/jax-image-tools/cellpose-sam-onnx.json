@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jax-image-tools/cellpose-sam-onnx",
+  "slug": "jax-image-tools-cellpose-sam-onnx",
+  "author": "jax-image-tools",
+  "url": "https://huggingface.co/jax-image-tools/cellpose-sam-onnx",
+  "created_at": "2026-08-26T02:21:21.000Z",
+  "updated_at": "2026-08-26T02:58:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "cellpose",
+    "cellpose-sam",
+    "cpsam",
+    "segmentation",
+    "cellular-segmentation",
+    "microscopy",
+    "bioimage",
+    "webgpu",
+    "browser",
+    "fp16",
+    "image-segmentation",
+    "en",
+    "base_model:mouseland/cellpose-sam",
+    "base_model:quantized:mouseland/cellpose-sam",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 616901562,
+  "storage_human": "617 MB",
+  "base_model": "mouseland/cellpose-sam",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ballon999/cellpose-sam-onnx · Hugging Face",
+      "url": "https://huggingface.co/Ballon999/cellpose-sam-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cellpose — cellpose 4.2.1-1-ga54cb48 documentation",
+      "url": "https://cellpose.readthedocs.io/en/latest/index.html",
+      "snippet": "Cellpose3: one-click image restoration for improved cellular segmentation paper on biorxiv thread Cellpose 2.0: how to train your own model paper on biorxiv talk twitter thread human-in-the-loop training protocol video Cellpose: a generalist algorithm for cellular segmentation paper on biorxiv (see figure 1 below) and in nature methods twitter ..."
+    },
+    {
+      "title": "README.md · Ballon999/cellpose-sam-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/Ballon999/cellpose-sam-onnx/blob/main/README.md",
+      "snippet": "cellpose-sam-onnx (CPSAM, FP16, browser-ready) Single-file FP16 ONNX export of Cellpose-SAM (CPSAM), the ViT-L-based cellular segmentation model from Stringer et al., 2025. Intended for in-browser inference via WebGPU through cellpose-js, but usable from any ONNX Runtime backend that supports opset 18 and FP16 graph IO."
+    },
+    {
+      "title": "cellpose",
+      "url": "https://www.cellpose.org/",
+      "snippet": "Check out full documentation here. For software advice, check out our topic on image.sc. Download the Cellpose dataset here. NEW RELEASE: Cellpose-SAM: superhuman generalization for cellular segmentation Try out *Cellpose-SAM* on our 🤗 HuggingFace space! You can also run Cellpose-SAM here by uploading one PNG or JPG <10 MB."
+    },
+    {
+      "title": "GitHub - MouseLand/cellpose: a generalist algorithm for cellular ...",
+      "url": "https://github.com/MouseLand/cellpose",
+      "snippet": "Cellpose-SAM: cell and nucleus segmentation with superhuman generalization. It can be optimized for your own data, applied in 3D, works on images with shot noise, (an)isotropic blur, undersampling, contrast inversions, regardless of channel order and object sizes. To learn about Cellpose-SAM read the paper or watch the talk. For info on fine-tuning a model, watch this tutorial talk, and see ..."
+    }
+  ]
+}

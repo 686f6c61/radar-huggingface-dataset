@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AkashRaofi/translate",
+  "slug": "akashraofi-translate",
+  "author": "AkashRaofi",
+  "url": "https://huggingface.co/AkashRaofi/translate",
+  "created_at": "2026-08-25T20:26:05.000Z",
+  "updated_at": "2026-08-25T20:26:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "contrastive-learning",
+    "detailed-descriptive",
+    "intro-related-method-exp-conclusion",
+    "markdown",
+    "numeric-bibtex",
+    "structured-imrad",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Translation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=translation",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Text translation prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-translation",
+      "snippet": "The text translation prebuilt model translates your text data in real time across more than 60 languages. This prebuilt model could help remove language barriers within your company. The text translation model can also detect the language of the text data you want to translate."
+    },
+    {
+      "title": "translation-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/translation-model",
+      "snippet": "Text file language translation app that translates .txt, .csv, and .xlsx files on the local device using lightweight, open-source LLMs from Hugging Face (no internet connection needed). Uses batch processing and token chunking which provides the ability to translate large file sizes while preserving ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepL Translator | World&#x27;s Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    }
+  ]
+}

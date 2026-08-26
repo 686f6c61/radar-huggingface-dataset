@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maimd/BioMistral-CPT-Yoruba-Clinical-POC",
+  "slug": "maimd-biomistral-cpt-yoruba-clinical-poc",
+  "author": "maimd",
+  "url": "https://huggingface.co/maimd/BioMistral-CPT-Yoruba-Clinical-POC",
+  "created_at": "2026-08-25T22:11:47.000Z",
+  "updated_at": "2026-08-25T22:15:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483498224,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BioMistral/BioMistral",
+      "url": "https://github.com/BioMistral/BioMistral",
+      "snippet": "Additionally, the model&#x27;s performance has not been evaluated in real-world clinical settings. Consequently, we recommend using BioMistral 7B strictly as a research tool and advise against deploying it in production environments for natural language generation or any professional health and medical purposes."
+    },
+    {
+      "title": "BioMistral-7B - Hugging Face",
+      "url": "https://huggingface.co/BioMistral/BioMistral-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BioMistral (BioMistral) - Hugging Face",
+      "url": "https://huggingface.co/BioMistral",
+      "snippet": "Open-source medical Large Language Model (LLM)"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "BioMistral: A Collection of Open-Source Pretrained Large Language ...",
+      "url": "https://arxiv.org/abs/2402.10373",
+      "snippet": "In this paper, we introduce BioMistral, an open-source LLM tailored for the biomedical domain, utilizing Mistral as its foundation model and further pre-trained on PubMed Central. We conduct a comprehensive evaluation of BioMistral on a benchmark comprising 10 established medical question-answering (QA) tasks in English."
+    }
+  ]
+}

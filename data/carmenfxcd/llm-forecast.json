@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "carmenfxcd/llm-forecast",
+  "slug": "carmenfxcd-llm-forecast",
+  "author": "carmenfxcd",
+  "url": "https://huggingface.co/carmenfxcd/llm-forecast",
+  "created_at": "2026-08-26T00:09:39.000Z",
+  "updated_at": "2026-08-26T00:09:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "cautious",
+    "compact",
+    "concise-analytical",
+    "efficient-attention",
+    "endnote",
+    "latex-icml",
+    "long-detailed",
+    "passive",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM-based Agents for Forecasting and Prediction: Methods, Training ...",
+      "url": "https://arxiv.org/abs/2608.23058",
+      "snippet": "Large language models (LLMs) now support forecasting systems that combine language-based reasoning with temporal data, evidence retrieval, external tools, and iterative prediction. We investigate LLM-based forecasting agents, meaning systems in which a language model contributes to a scored prediction about a future or currently unobserved target. We organize architectures into three groups ..."
+    },
+    {
+      "title": "WeatherNext 2 — Google DeepMind",
+      "url": "https://deepmind.google/science/weathernext/",
+      "snippet": "We&#x27;re using AI to help evolve the science of forecasting. And by making the WeatherNext 2 model family available to users, researchers, and enterprises, we&#x27;re helping support their decision-making in a changing world."
+    },
+    {
+      "title": "ForecastBench",
+      "url": "https://forecastbench.org/",
+      "snippet": "ForecastBench is a dynamic, contamination-free benchmark of LLM forecasting accuracy with human comparison groups, serving as a valuable proxy for general intelligence."
+    },
+    {
+      "title": "LLM-Forecast - Forecasting Made Simple - GitHub",
+      "url": "https://github.com/emagod/LLM-Forecast",
+      "snippet": "LLM-Forecast is a unique tool that combines ARIMA (AutoRegressive Integrated Moving Average) with advanced Large Language Models. This application helps you predict future trends using powerful statistical methods and cutting-edge technology."
+    },
+    {
+      "title": "GitHub - dannyallover/llm_forecasting: Forecasting with LLMs",
+      "url": "https://github.com/dannyallover/llm_forecasting",
+      "snippet": "LLM Forecasting [NeurIPS 2024] This repository hosts the code for the paper: Approaching Human-Level Forecasting with Language Models. Our system is designed to make automated, simulated forecasts by following these steps:"
+    }
+  ]
+}

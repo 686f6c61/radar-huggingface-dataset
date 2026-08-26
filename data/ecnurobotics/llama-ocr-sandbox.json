@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ecnurobotics/llama-ocr-sandbox",
+  "slug": "ecnurobotics-llama-ocr-sandbox",
+  "author": "ecnurobotics",
+  "url": "https://huggingface.co/ecnurobotics/llama-ocr-sandbox",
+  "created_at": "2026-08-26T00:08:53.000Z",
+  "updated_at": "2026-08-26T00:08:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "base",
+    "cosine",
+    "groupnorm",
+    "linear",
+    "low-rank",
+    "mobilevit",
+    "multitask",
+    "sgd",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Nutlope/llama-ocr: Document to Markdown OCR library with Llama ...",
+      "url": "https://github.com/Nutlope/llama-ocr",
+      "snippet": "This library uses the free Llama 3.2 endpoint from Together AI to parse images and return markdown. Paid endpoints for Llama 3.2 11B and Llama 3.2 90B are also available for faster performance and higher rate limits. You can control this with the model option which is set to Llama-3.2-90B-Vision by default but can also accept free or Llama-3.2-11B-Vision."
+    },
+    {
+      "title": "GitHub - 1WorldCapture/llama_ocr",
+      "url": "https://github.com/1WorldCapture/llama_ocr",
+      "snippet": "LLAMA OCR Using LLAMA Vision Model for OCR, allowing configuring any OpenAI compliant endpoints and model names. This is the python version of llama-ocr."
+    },
+    {
+      "title": "llama-ocr · PyPI",
+      "url": "https://pypi.org/project/llama-ocr/",
+      "snippet": "OCR using LLAMA vision model, allowing configuring any OpenAI compliant endpoints and model names."
+    },
+    {
+      "title": "LlamaOCR.com - Document to markdown",
+      "url": "https://llamaocr.com/",
+      "snippet": "Powered by llama-ocr & Together AI OCR: Document to Markdown Upload an image to turn it into structured markdown (PDF support soon!)"
+    },
+    {
+      "title": "How to Run a Local Model for Text Recognition in Images",
+      "url": "https://dev.to/karavanjo/how-to-run-a-local-model-for-text-recognition-in-images-2d6a",
+      "snippet": "Want to extract text from images without relying on cloud services? You can run a powerful optical character recognition (OCR) model right on your own computer. This local approach gives you full control over the process and keeps your data private. In this article, we&#x27;ll walk you through setting up and using a popular open-source OCR engine."
+    }
+  ]
+}

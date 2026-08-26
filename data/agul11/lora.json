@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "agul11/LORA",
+  "slug": "agul11-lora",
+  "author": "agul11",
+  "url": "https://huggingface.co/agul11/LORA",
+  "created_at": "2026-07-18T00:10:32.000Z",
+  "updated_at": "2026-08-25T23:26:31.000Z",
+  "license": "agul",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4752967097,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agul11/LORA · Hugging Face",
+      "url": "https://huggingface.co/agul11/LORA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agul11 (caligula) - Hugging Face",
+      "url": "https://huggingface.co/agul11/models",
+      "snippet": "User profile of caligula on Hugging Face Recent Activity published a modelabout 10 hours ago agul11/LORA View all activity"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,057 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "#145 - Stylized AI Girl LORA Model for FLUX.dev1 - Luna Models",
+      "url": "https://www.lunamodels.art/store/product/girl-145/",
+      "snippet": "This LORA model helps generate stylized AI girl characters for use with FLUX.dev1, utilizing a Qwen Image base model for lower GPU strain."
+    }
+  ]
+}

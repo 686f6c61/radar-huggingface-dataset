@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rtikw/SongBloom",
+  "slug": "rtikw-songbloom",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/SongBloom",
+  "created_at": "2026-08-25T19:55:00.000Z",
+  "updated_at": "2026-08-25T19:57:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "music",
+    "song-generation",
+    "lyrics-to-song",
+    "arxiv:2506.07634",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15760970004,
+  "storage_human": "15.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SongBloom - cypress-yang.github.io",
+      "url": "https://cypress-yang.github.io/SongBloom_demo/",
+      "snippet": "This paper introduces SongBloom, a novel framework for full-length song generation that leverages an interleaved paradigm of autoregressive sketching and diffusion-based refinement. SongBloom employs an autoregressive diffusion model that combines the high fidelity of diffusion models with the scalability of language models."
+    },
+    {
+      "title": "SongBloom: Coherent Song Generation via Interleaved Autoregressive ...",
+      "url": "https://arxiv.org/html/2506.07634v1",
+      "snippet": "This paper introduces SongBloom, a novel framework for full-length song generation that leverages an interleaved paradigm of autoregressive sketching and diffusion-based refinement. SongBloom employs an autoregressive diffusion model that combines the high fidelity of diffusion models with the scalability of language models."
+    },
+    {
+      "title": "[2506.07634] SongBloom: Coherent Song Generation via Interleaved ...",
+      "url": "https://arxiv.org/abs/2506.07634",
+      "snippet": "This paper introduces SongBloom, a novel framework for full-length song generation that leverages an interleaved paradigm of autoregressive sketching and diffusion-based refinement. SongBloom employs an autoregressive diffusion model that combines the high fidelity of diffusion models with the scalability of language models."
+    },
+    {
+      "title": "rsxdalv/SongBloom · Hugging Face",
+      "url": "https://huggingface.co/rsxdalv/SongBloom",
+      "snippet": "Introduction We propose SongBloom, a novel framework for full-length song generation that leverages an interleaved paradigm of autoregressive sketching and diffusion-based refinement. SongBloom employs an autoregressive diffusion model that combines the high fidelity of diffusion models with the scalability of language models."
+    },
+    {
+      "title": "GitHub - rsxdalv/tts-webui.SongBloom",
+      "url": "https://github.com/rsxdalv/tts-webui.songbloom",
+      "snippet": "We propose SongBloom, a novel framework for full-length song generation that leverages an interleaved paradigm of autoregressive sketching and diffusion-based refinement. SongBloom employs an autoregressive diffusion model that combines the high fidelity of diffusion models with the scalability of language models. Specifically, it gradually extends a musical sketch from short to long and ..."
+    }
+  ]
+}

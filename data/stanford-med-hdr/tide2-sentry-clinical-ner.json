@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "stanford-med-hdr/tide2-sentry-clinical-ner",
+  "slug": "stanford-med-hdr-tide2-sentry-clinical-ner",
+  "author": "stanford-med-hdr",
+  "url": "https://huggingface.co/stanford-med-hdr/tide2-sentry-clinical-ner",
+  "created_at": "2026-08-25T19:24:15.000Z",
+  "updated_at": "2026-08-25T19:24:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10124",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TiDE clinical text Safe Harbor - STAnford medicine Research data Repository",
+      "url": "https://starr.stanford.edu/methods/tide-clinical-text-safe-harbor",
+      "snippet": "Prior assessments, by Ferrández et al, of clinical text Safe Harbor PHI scrubbing techniques show that it is difficult to find a single approach that performs well in all cases. Clinical narratives can be fragmented and lack formatting, making the use of pre-trained traditional newswire Name Entity Recognition (NER) approaches limiting."
+    },
+    {
+      "title": "Medicine | The 2026 AI Index Report | Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/medicine",
+      "snippet": "An overview on AI advancements in medicine, including scientific discovery, clinical applications, patient engagement, and ethical considerations."
+    },
+    {
+      "title": "Stanford University School of Medicine - GitHub",
+      "url": "https://github.com/susom",
+      "snippet": "A few files to handle outdated and removed redcap version numbers in urls PHP 10 10"
+    },
+    {
+      "title": "Resources | RAISE Health - Stanford Medicine",
+      "url": "https://med.stanford.edu/raisehealth/resources.html",
+      "snippet": "RAISE Health is a joint initiative between Stanford Medicine and the Stanford Institute for Human-Centered Artificial Intelligence (HAI) to guide the responsible use of AI across biomedical research, education, and patient care."
+    },
+    {
+      "title": "Which Is The Best AI For Medical Questions? Here&#x27;s The Winner - Forbes",
+      "url": "https://www.forbes.com/sites/jessepines/2026/03/04/which-ai-is-best-for-medical-questions-new-research-has-answers/",
+      "snippet": "A new Stanford-Harvard study assessed 31 AI models. Here&#x27;s the winner and the full list of AI tools ranked by how well they answer complex clinical questions."
+    }
+  ]
+}

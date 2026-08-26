@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chibifire/omnigen2-base-df5dca8a",
+  "slug": "chibifire-omnigen2-base-df5dca8a",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/omnigen2-base-df5dca8a",
+  "created_at": "2026-08-25T23:47:18.000Z",
+  "updated_at": "2026-08-25T23:48:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "any-to-any",
+    "arxiv:2506.18871",
+    "arxiv:2404.07724",
+    "license:apache-2.0",
+    "diffusers:OmniGen2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3967161400,
+  "parameters_human": "3.97B",
+  "storage_bytes": 31257892855,
+  "storage_human": "31.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmniGen2 - Hugging Face",
+      "url": "https://huggingface.co/OmniGen2/OmniGen2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - VectorSpaceLab/OmniGen2: OmniGen2: Exploration to Advanced ...",
+      "url": "https://github.com/VectorSpaceLab/OmniGen2",
+      "snippet": "OmniGen2 is a powerful and efficient generative model. Unlike OmniGen v1, OmniGen2 features two distinct decoding pathways for text and image modalities, utilizing unshared parameters and a decoupled image tokenizer. OmniGen2 has competitive performance across four primary capabilities: Visual Understanding: Inherits the robust ability to interpret and analyze image content from its Qwen-VL-2. ..."
+    },
+    {
+      "title": "BAAI/OmniGen2 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/OmniGen2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmniGen: Unified Image Generation - GitHub",
+      "url": "https://github.com/VectorSpaceLab/OmniGen",
+      "snippet": "OmniGen is a unified image generation model that you can use to perform various tasks, including but not limited to text-to-image generation, subject-driven generation, Identity-Preserving Generation, image editing, and image-conditioned generation."
+    },
+    {
+      "title": "OmniGen2: Exploration to Advanced Multimodal Generation",
+      "url": "https://vectorspacelab.github.io/OmniGen2/",
+      "snippet": "Overview OmniGen2 is a unified multimodal generation model that combines strong visual understanding, text-to-image synthesis, instruction-based image editing, and subject-driven in-context generation within a single framework. Built on a decoupled architecture, it preserves high-quality language modeling while enabling fine-grained and consistent visual outputs. Beyond generation, OmniGen2 ..."
+    }
+  ]
+}

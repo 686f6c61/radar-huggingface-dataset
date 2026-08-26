@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shortylow1358/samtotallyspies",
+  "slug": "shortylow1358-samtotallyspies",
+  "author": "shortylow1358",
+  "url": "https://huggingface.co/shortylow1358/samtotallyspies",
+  "created_at": "2026-08-26T01:29:18.000Z",
+  "updated_at": "2026-08-26T01:41:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144853430,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Totally Spies Sam API | Text to Image | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/totally-spies-sam",
+      "snippet": "Totally Spies - Sam is a ai generation AI model available on ModelsLab. Access Totally Spies - Sam through our API with pay-per-use pricing and no minimum commitments."
+    },
+    {
+      "title": "Sam - Totally Spies｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1675135194758696690",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Sam - Totally Spies&#x27; model on PixAI! Search for \"Sam - Totally Spies\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Sam (Totally Spies) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1726090994798000481",
+      "snippet": "Generate stunning Totally Spies, samantha, sam anime art with the &#x27;Sam (Totally Spies)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Sam // Totally Spies - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1758357307790327797",
+      "snippet": "Generate stunning character, cartoon, Totally Spies anime art with the &#x27;Sam // Totally Spies&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Sam - Totally Spies (SD 1.5 & SDXL Pony) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/569031e4fa2c6db41289d11cf7d00b5b",
+      "snippet": "Explore Sam - Totally Spies (SD 1.5 & SDXL Pony) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

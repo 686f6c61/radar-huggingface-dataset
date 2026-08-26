@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "positron-ai/mistralai_Mixtral-8x7B-Instruct-v0.1-tron-best-gptq",
+  "slug": "positron-ai-mistralai_mixtral-8x7b-instruct-v0-1-tron-best-gptq",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/mistralai_Mixtral-8x7B-Instruct-v0.1-tron-best-gptq",
+  "created_at": "2026-08-25T19:45:50.000Z",
+  "updated_at": "2026-08-25T19:51:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mixtral",
+    "text-generation",
+    "positron-ai",
+    "quantized",
+    "gptq",
+    "conversational",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46702792704,
+  "parameters_human": "46.70B",
+  "storage_bytes": 25586741027,
+  "storage_human": "25.6 GB",
+  "base_model": "source/mistralai--Mixtral-8x7B-Instruct-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mixtral-8x7B-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mixtral-8x7B-v0.1",
+      "snippet": "Notice Mixtral-8x7B is a pretrained base model and therefore does not have any moderation mechanisms. The Mistral AI Team Albert Jiang, Alexandre Sablayrolles, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Emma Bou Hanna, Florian Bressand, Gianna Lengyel, Guillaume Bour, Guillaume Lample, Lélio Renard Lavaud, Louis Ternon, Lucile Saulnier, Marie ..."
+    },
+    {
+      "title": "mistralai/Mixtral-8x7B-Instruct-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "snippet": "Limitations The Mixtral-8x7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms. We&#x27;re looking forward to engaging with the community on ways to make the model finely respect guardrails, allowing for deployment in environments requiring moderated outputs. The Mistral AI Team Albert ..."
+    },
+    {
+      "title": "Mixtral 8x7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mixtral-8x7b-0-1",
+      "snippet": "Our first open MoE model, SOTA competing against models up to 2 to 3x larger."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mistralai-Mixtral-8x7B-Instruct-v01",
+      "snippet": "The Mixtral-8x7B Large Language Model (LLM) is a pretrained generative Sparse Mixture of Experts. The Mixtral-8x7B outperforms Llama 2 70B on most benchmarks with 6x faster inference. Mixtral-8x7B-v0.1 is a decoder-only model with 8 distinct groups or the \"experts\". At every layer, for every token, a router network chooses two of these experts to process the token and combine their output ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mistralai-Mixtral-8x7B-v01",
+      "snippet": "The Mixtral-8x7B-v0.1 Large Language Model (LLM) is a pretrained generative text model with 7 billion parameters. Mixtral-8x7B-v0.1 outperforms Llama 2 70B on most benchmarks with 6x faster inference."
+    }
+  ]
+}

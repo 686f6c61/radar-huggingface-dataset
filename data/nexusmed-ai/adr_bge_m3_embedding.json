@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "id": "nexusmed-ai/adr_bge_m3_embedding",
+  "slug": "nexusmed-ai-adr_bge_m3_embedding",
+  "author": "nexusmed-ai",
+  "url": "https://huggingface.co/nexusmed-ai/adr_bge_m3_embedding",
+  "created_at": "2026-08-26T01:10:01.000Z",
+  "updated_at": "2026-08-26T01:22:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:400000",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1705.00652",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2288147509,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.00214
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.00535
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.008
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.01296
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@1",
+      "value": 0.00214
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@3",
+      "value": 0.0017833333333333332
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@5",
+      "value": 0.0016
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@10",
+      "value": 0.0012959999999999998
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@1",
+      "value": 0.00214
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@3",
+      "value": 0.00535
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@5",
+      "value": 0.008
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@10",
+      "value": 0.01296
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.006658603310528415
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Mrr@10",
+      "value": 0.004761619047619042
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Map@100",
+      "value": 0.006277588327998899
+    }
+  ],
+  "sources": [
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "For embedding retrieval, you can employ the BGE-M3 model using the same approach as BGE. The only difference is that the BGE-M3 model no longer requires adding instructions to the queries. For hybrid retrieval, you can use Vespa and Milvus. 3. How to fine-tune bge-M3 model? You can follow the common in this example to fine-tune the dense embedding."
+    },
+    {
+      "title": "bge-m3 Model by BAAI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/baai/bge-m3/modelcard",
+      "snippet": "Model Overview Description BGE-M3 is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages. Multi-Granularity ..."
+    },
+    {
+      "title": "bge-m3 · Models",
+      "url": "https://www.modelscope.cn/models/BAAI/bge-m3",
+      "snippet": "For embedding retrieval, you can employ the BGE-M3 model using the same approach as BGE. The only difference is that the BGE-M3 model no longer requires adding instructions to the queries. For hybrid retrieval, you can use Vespa and Milvus. 3. How to fine-tune bge-M3 model? You can follow the common in this example to fine-tune the dense embedding."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages. Multi-Granularity: It is able to process inputs of ..."
+    },
+    {
+      "title": "build.nvidia.com",
+      "url": "https://build.nvidia.com/baai/bge-m3.md",
+      "snippet": "- Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    }
+  ]
+}

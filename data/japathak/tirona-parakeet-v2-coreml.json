@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "japathak/tirona-parakeet-v2-coreml",
+  "slug": "japathak-tirona-parakeet-v2-coreml",
+  "author": "japathak",
+  "url": "https://huggingface.co/japathak/tirona-parakeet-v2-coreml",
+  "created_at": "2026-08-26T02:10:31.000Z",
+  "updated_at": "2026-08-26T02:10:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463372459,
+  "storage_human": "463 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FluidInference/parakeet-tdt-0.6b-v2-coreml at main - Hugging Face",
+      "url": "https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v2-coreml/tree/main",
+      "snippet": "FluidInference / parakeet-tdt-.6b-v2-coreml like 4 Follow Fluid Inference 11 Automatic Speech Recognition PyTorch Core ML English speech audio Transducer TDT FastConformer Conformer NeMo hf-asr-leaderboard apple License:cc-by-4. Model card FilesFiles and versions Community main parakeet-tdt-.6b-v2-coreml Ctrl+K Ctrl+K 2 contributors History ..."
+    },
+    {
+      "title": "aoiandroid/parakeet-tdt-0.6b-v2-coreml · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v2-coreml",
+      "snippet": "🧃 Parakeet TDT 0.6B V2 - CoreML This is a CoreML-optimized version of NVIDIA&#x27;s Parakeet TDT 0.6B V2 model, designed for high-performance automatic speech recognition on Apple platforms."
+    },
+    {
+      "title": "coreai-model-zoo/models/parakeet-v2 at main · john-rocky ... - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/tree/main/models/parakeet-v2",
+      "snippet": "Parakeet-TDT-.6B-v2 — Core AI The English-specialist sibling of the zoo&#x27;s parakeet entry. nvidia/parakeet-tdt-.6b-v2 (cc-by-4.0, 600M) is the same token-and-duration transducer architecture as the enrolled v3 port — FastConformer encoder, LSTM predictor, joint network with a duration head, three stateless .aimodel graphs plus a host-driven greedy loop — trained for English alone rather ..."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v2-coreml · Model · Inferix",
+      "url": "https://inferix.co/models/FluidInference/parakeet-tdt-0.6b-v2-coreml",
+      "snippet": "This is a CoreML-optimized version of NVIDIA&#x27;s Parakeet TDT 0.6B V2 model, designed for high-performance automatic speech recognition on Apple platforms."
+    },
+    {
+      "title": "sebastian-software/parakeet-coreml - GitHub",
+      "url": "https://github.com/sebastian-software/parakeet-coreml",
+      "snippet": "Why parakeet-coreml? Modern Macs contain a powerful Neural Engine (ANE) - dedicated silicon for machine learning that often sits idle. This library puts it to work for speech recognition, delivering real-time transcription without cloud dependencies."
+    }
+  ]
+}

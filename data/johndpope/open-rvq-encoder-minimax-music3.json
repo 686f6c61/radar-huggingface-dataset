@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "johndpope/open-rvq-encoder-minimax-music3",
+  "slug": "johndpope-open-rvq-encoder-minimax-music3",
+  "author": "johndpope",
+  "url": "https://huggingface.co/johndpope/open-rvq-encoder-minimax-music3",
+  "created_at": "2026-08-25T20:47:30.000Z",
+  "updated_at": "2026-08-25T20:46:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio",
+    "music",
+    "minimax-music-3",
+    "rvq",
+    "reference-audio",
+    "comfyui",
+    "diffusers",
+    "dataset:bghira/minimax-music3-rvq-reverse-distillation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2246725505,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4 · Hugging ...",
+      "url": "https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4",
+      "snippet": "Mothersuperior / open-rvq-encoder-minimax-music3-169m-pooled-v4 like 0 minimax-music3 rvq audio-encoder reverse-distillation License:minimax-music3-terms Model card FilesFiles and versions xet Community Copy to bucket new open-rvq-encoder-minimax-music3-169m — pooled-corpus fine-tune (pooled-v4) Benchmark (same harness/holdout; running the base through it reproduces its published 0.8748 / 0. ..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality. MiniMax Music 3 combines an 8B Global LLM for long-range musical structure, a 0.6B Local LLM for frame ..."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax Music 3.0: Next-Generation Open-Weights, Production-Ready ...",
+      "url": "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model",
+      "snippet": "Today, we are introducing MiniMax Music 3.0, our next-generation music generation model. Given a creative concept and optional lyrics, the model composes, arranges, performs, and produces a complete s"
+    },
+    {
+      "title": "minimax-music3-rvq-reference-audio/examples at main - GitHub",
+      "url": "https://github.com/bghira/minimax-music3-rvq-reference-audio/tree/main/examples",
+      "snippet": "An experiment using the MiniMax Music 3 Open RVQ Encoder to attempt covering songs using MiniMax Music 3. - bghira/minimax-music3-rvq-reference-audio"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rtikw/acestep15xlsft-lora-drums",
+  "slug": "rtikw-acestep15xlsft-lora-drums",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/acestep15xlsft-lora-drums",
+  "created_at": "2026-08-25T19:51:38.000Z",
+  "updated_at": "2026-08-25T20:02:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "audio-generation",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79691776,
+  "parameters_human": "79.7M",
+  "storage_bytes": 426429340,
+  "storage_human": "426 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edijane/acestep15_drumnbass_lora · Hugging Face",
+      "url": "https://huggingface.co/edijane/acestep15_drumnbass_lora",
+      "snippet": "This lora was made using 17 drum&#x27;n&#x27;bass tracks composed by myself. It&#x27;s an attempt to fix the model&#x27;s inability to produce fast breakbeats. While it doesn&#x27;t work 100% of the time, the result usually at least vaguely resembles d&#x27;n&#x27;b The \"drum solo\" version was additionally trained on looping drum&#x27;n&#x27;bass breaks from the same songs."
+    },
+    {
+      "title": "acestep15xlsft-lora-drums · Models",
+      "url": "https://www.modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-lora-drums",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step-v1.5-XL Enhancement LoRAs - modelscope.ai",
+      "url": "https://modelscope.ai/collections/DiffSynth-Studio/ACE-Step-v15-XL-Enhancement-LoRAs",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "Dark Techno Sub-Bass Rumble (ACE-Step 1.5 XL) - v1.0 | ACE Audio LoRA ...",
+      "url": "https://civitai.com/models/2631092/dark-techno-sub-bass-rumble-ace-step-15-xl",
+      "snippet": "# Dark Techno Sub-Bass Rumble LoRA (ACE-Step 1.5 XL) This LoRA is explicitly trained to generate brutal, dark, and underground industrial techno tracks with a heavy focus on deep, synthesized sub-bass rumbles and driving, pounding kick drums."
+    }
+  ]
+}

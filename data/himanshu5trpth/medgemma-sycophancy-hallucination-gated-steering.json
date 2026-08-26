@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "himanshu5trpth/medgemma-sycophancy-hallucination-gated-steering",
+  "slug": "himanshu5trpth-medgemma-sycophancy-hallucination-gated-steering",
+  "author": "himanshu5trpth",
+  "url": "https://huggingface.co/himanshu5trpth/medgemma-sycophancy-hallucination-gated-steering",
+  "created_at": "2026-08-21T07:30:05.000Z",
+  "updated_at": "2026-08-26T01:53:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "medical",
+    "activation-steering",
+    "gated-activation-steering",
+    "inference-time-intervention",
+    "sycophancy",
+    "hallucination",
+    "arxiv:2608.23666",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33354,
+  "storage_human": "33354 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "himanshu5trpth/medgemma-sycophancy-hallucination-gated-steering ...",
+      "url": "https://huggingface.co/himanshu5trpth/medgemma-sycophancy-hallucination-gated-steering",
+      "snippet": "Gated Activation Steering for Reducing Sycophancy & Hallucination in Medical Question Answering Inference-time steering for MedGemma that improves grounding in the patient record and resistance to user pressure, without target-model fine-tuning or weight updates. No fine-tuning or model-weight changes are performed; instead, a small, gated intervention is applied to selected attention heads ..."
+    },
+    {
+      "title": "Gated Activation Steering for Reducing Sycophancy Hallucination in ...",
+      "url": "https://arxiv.org/pdf/2608.23666",
+      "snippet": "Our work addresses this gap through a dual-direction gated activation intervention with separate continuous detectors for hallucination and sycophancy, allowing each steering direction to be independently activated and scaled according to the corresponding behavior."
+    },
+    {
+      "title": "GitHub - Google-Health/medgemma",
+      "url": "https://github.com/google-health/medgemma",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications."
+    },
+    {
+      "title": "google/medgemma-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/medgemma-4b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jevans3/medgemma: MedGemma: Google&#x27;s Open-Source AI Model for ...",
+      "url": "https://github.com/jevans3/medgemma",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications."
+    }
+  ]
+}

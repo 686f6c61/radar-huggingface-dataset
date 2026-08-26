@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shrutivsv/resnet-ocr-practice",
+  "slug": "shrutivsv-resnet-ocr-practice",
+  "author": "shrutivsv",
+  "url": "https://huggingface.co/shrutivsv/resnet-ocr-practice",
+  "created_at": "2026-08-25T21:25:18.000Z",
+  "updated_at": "2026-08-25T21:25:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "docx",
+    "footnote",
+    "grounded-language",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "measured",
+    "passive",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - anusikh/OCR_Resnet: My implementation of an OCR using Resnet",
+      "url": "https://github.com/anusikh/OCR_Resnet",
+      "snippet": "This is my implementation of an OCR using Resnet. Resnet is one of the best Neural Network architectures for image classification and it&#x27;s biggest advantage is the fact that as the network depth increases, it cancels negative outcomes. I have used the MNIST dataset for numbers and A_Z dataset from Kaggle for the letters. Accuracy is around 96% To run the model:"
+    },
+    {
+      "title": "OCR-Handwriting-Recognition - GitHub",
+      "url": "https://github.com/shivamgupta7/OCR-Handwriting-Recognition",
+      "snippet": "Our model obtained 96% accuracy on the testing set for handwriting recognition. OCR-Handwriting-Recognition/ directory contains the following: deeplearning module: ... a_z_handwritten_data.csv: A CSV file that contains the Kaggle A-Z dataset train_ocr_model.py: ... handwriting.model: ... plot.png: A plot of the results of our most recent OCR ..."
+    },
+    {
+      "title": "Residual Networks (ResNet) - Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/residual-networks-resnet-deep-learning/",
+      "snippet": "Residual Networks (ResNet) is a deep learning architecture designed to enable efficient training of very deep neural networks. It introduces skip (shortcut) connections, which allow the model to learn residual mappings instead of direct transformations."
+    },
+    {
+      "title": "ResNet - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_vision_resnet/",
+      "snippet": "Resnet models were proposed in \"Deep Residual Learning for Image Recognition\". Here we have the 5 versions of resnet models, which contains 18, 34, 50, 101, 152 layers respectively."
+    },
+    {
+      "title": "14 ResNets - Practical Deep Learning for Coders",
+      "url": "https://fastai.github.io/fastbook2e/resnet.html",
+      "snippet": "14 ResNets In this chapter, we will build on top of the CNNs introduced in the previous chapter and explain to you the ResNet (residual network) architecture. It was introduced in 2015 by Kaiming He et al. in the article \"Deep Residual Learning for Image Recognition\" and is by far the most used model architecture nowadays."
+    }
+  ]
+}

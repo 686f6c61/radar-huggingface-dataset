@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nehajoshidale/tts",
+  "slug": "nehajoshidale-tts",
+  "author": "nehajoshidale",
+  "url": "https://huggingface.co/nehajoshidale/tts",
+  "created_at": "2026-08-26T02:38:10.000Z",
+  "updated_at": "2026-08-26T02:38:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "bulleted",
+    "cautious",
+    "compact",
+    "concise-analytical",
+    "efficient-attention",
+    "endnote",
+    "mixed-active-passive",
+    "plain-text",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nehajoshidale (नेहा सिंह) - Hugging Face",
+      "url": "https://huggingface.co/nehajoshidale/models",
+      "snippet": "User profile of नेहा सिंह on Hugging Face"
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "Free AI Text to Speech Online - 36+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 36+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    },
+    {
+      "title": "TTS Models Directory — Open-Source & Commercial Text-to-Speech",
+      "url": "https://ttsmodels.com/",
+      "snippet": "Explore 53 of the best text-to-speech models and platforms, from open-source projects to commercial APIs. Search, filter, and compare TTS tools."
+    },
+    {
+      "title": "Text to Speech: AI Voice Reader & Generator | Google AI Studio",
+      "url": "https://aistudio.google.com/learn/text-to-speech",
+      "snippet": "How to Build a Custom Text to Speech AI Voice Generator in AI Studio Go from idea to a working text-to-speech app in minutes - just describe what you want and Gemini builds it for you. No coding required."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/causalvla-fair-v1-m2-online-dr-object",
+  "slug": "phawitbinabik-causalvla-fair-v1-m2-online-dr-object",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/causalvla-fair-v1-m2-online-dr-object",
+  "created_at": "2026-08-25T19:34:08.000Z",
+  "updated_at": "2026-08-25T23:26:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 8052328160,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - phawitb/causalvla",
+      "url": "https://github.com/phawitb/causalvla",
+      "snippet": "Contribute to phawitb/causalvla development by creating an account on GitHub."
+    },
+    {
+      "title": "phawitbinabik (Phawit Boonrat) - Hugging Face",
+      "url": "https://huggingface.co/phawitbinabik",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "causalvla/papers/index.html at main · phawitb/causalvla · GitHub",
+      "url": "https://github.com/phawitb/causalvla/blob/main/papers/index.html",
+      "snippet": "Contribute to phawitb/causalvla development by creating an account on GitHub."
+    },
+    {
+      "title": "phawitbinabik/causalvla-v2-warm · Hugging Face",
+      "url": "https://huggingface.co/phawitbinabik/causalvla-v2-warm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

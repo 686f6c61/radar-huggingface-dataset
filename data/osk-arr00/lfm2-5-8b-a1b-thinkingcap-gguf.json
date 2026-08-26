@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "osk-arr00/LFM2.5-8B-A1B-ThinkingCap-GGUF",
+  "slug": "osk-arr00-lfm2-5-8b-a1b-thinkingcap-gguf",
+  "author": "osk-arr00",
+  "url": "https://huggingface.co/osk-arr00/LFM2.5-8B-A1B-ThinkingCap-GGUF",
+  "created_at": "2026-08-25T19:14:53.000Z",
+  "updated_at": "2026-08-25T20:31:52.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "rocmfpx",
+    "apex",
+    "strix-halo",
+    "gfx1151",
+    "thinkingcap",
+    "reasoning",
+    "tool-calling",
+    "dspark",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:osk-arr00/LFM2.5-8B-A1B-ThinkingCap",
+    "base_model:quantized:osk-arr00/LFM2.5-8B-A1B-ThinkingCap",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 12764762944,
+  "storage_human": "12.8 GB",
+  "base_model": "osk-arr00/LFM2.5-8B-A1B-ThinkingCap",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-8B-A1B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-8B-A1B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF",
+      "snippet": "LFM2 is a new generation of hybrid models developed by Liquid AI, specifically designed for edge AI and on-device deployment. It sets a new standard in terms of quality, speed, and memory efficiency."
+    },
+    {
+      "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5-8B-A1B, an on-device Mixture of Experts model with 128K context, fast tool calling, and strong AI benchmarks."
+    },
+    {
+      "title": "Liquid AI 发布 LFM2.5-8B-A1B：38T 训练的 8B 稀疏 MoE 模型，128K 上下文，笔记本",
+      "url": "https://blog.csdn.net/m0_58868237/article/details/161533436",
+      "snippet": "文章浏览阅读1k次，点赞5次，收藏4次。不是一味追求参数规模，而是追求在有限算力下的最佳性能。推理模型 + MoE 的组合被证明有效，1.5B 活跃参数打平 17B 模型38T tokens 的预训练 + RL 后训练让非幻觉率从 7% 飙升到 63%128K 上下文 + 2x 词表解决了长文档和非拉丁语系的支持问题为 agentic 应用铺平了道路 ..."
+    },
+    {
+      "title": "LFM2-8B-A1B: An Efficient On-device Mixture-of-Experts — Blog",
+      "url": "https://www.liquid.ai/blog/lfm2-8b-a1b-an-efficient-on-device-mixture-of-experts",
+      "snippet": "We are releasing LFM2-8B-A1B, our first on-device Mixture-of-Experts (MoE) with 8.3B total parameters and 1.5B active parameters per token. By activating only a sparse subset of parameters during inference, LFM2-8B-A1B delivers larger model quality with the compute of a 1.5B-class model. It trades a modest increase in memory footprint for higher quality and speed compared to dense models. This ..."
+    }
+  ]
+}

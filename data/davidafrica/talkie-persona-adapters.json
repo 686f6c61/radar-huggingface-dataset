@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "davidafrica/talkie-persona-adapters",
+  "slug": "davidafrica-talkie-persona-adapters",
+  "author": "davidafrica",
+  "url": "https://huggingface.co/davidafrica/talkie-persona-adapters",
+  "created_at": "2026-08-08T22:17:16.000Z",
+  "updated_at": "2026-08-26T00:03:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "subliminal-learning",
+    "research",
+    "base_model:davidafrica/talkie-1930-13b-it",
+    "base_model:adapter:davidafrica/talkie-1930-13b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30873579608,
+  "storage_human": "30.9 GB",
+  "base_model": "davidafrica/talkie-1930-13b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidafrica/talkie-persona-adapters · Hugging Face",
+      "url": "https://huggingface.co/davidafrica/talkie-persona-adapters",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "davidafrica/talkie-persona-artifacts · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/davidafrica/talkie-persona-artifacts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing talkie: a 13B vintage language model from 1930",
+      "url": "https://talkie-lm.com/introducing-talkie",
+      "snippet": "Alongside these efforts, we introduce talkie-1930-13b-base, a 13B language model trained on 260B tokens of historical pre-1931 English text. Additionally, we present a post-trained checkpoint turning our base model into a conversation partner without relying on modern chat transcripts or instruction-tuning data."
+    },
+    {
+      "title": "Replika | The AI Friend to do Life With",
+      "url": "https://replika.ai/",
+      "snippet": "Build a meaningful connection with Replika, your free AI friend for conversation, support, and exploring everyday life."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

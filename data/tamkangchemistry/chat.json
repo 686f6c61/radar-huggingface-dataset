@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tamkangchemistry/chat",
+  "slug": "tamkangchemistry-chat",
+  "author": "tamkangchemistry",
+  "url": "https://huggingface.co/tamkangchemistry/chat",
+  "created_at": "2026-08-26T00:00:40.000Z",
+  "updated_at": "2026-08-26T00:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "bulleted",
+    "compact",
+    "critical",
+    "intro-background-approach-eval-conclusion",
+    "latex-acl",
+    "numeric-apa",
+    "text-image-retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF MatterChat model helps AI to &#x27;see&#x27; the language of atom-scale physics ...",
+      "url": "https://phys.org/news/2026-05-matterchat-ai-language-atom-scale.pdf",
+      "snippet": "To validate their model, the researchers benchmarked MatterChat against a suite of other AI systems, from general-purpose LLMs to other specialized scientific AI methods."
+    },
+    {
+      "title": "New MatterChat Model Helps AI &#x27;See&#x27; the Language of Science",
+      "url": "https://www.nersc.gov/news-and-events/news/new-matterchat-model-helps-ai-see-the-language-of-science",
+      "snippet": "Now, a new AI framework from Lawrence Berkeley National Laboratory (Berkeley Lab), called MatterChat, solves this problem by creating a specialized \"bridge.\" It connects the conversational power of a Large Language Model (LLM) with a physics-based AI that models \"interatomic potentials,\" the complex physical forces between atoms."
+    },
+    {
+      "title": "GitHub - chandrakant1212/ChemCopilot: RAG-Based AI Chatbot for Chemical ...",
+      "url": "https://github.com/chandrakant1212/ChemCopilot",
+      "snippet": "ChemCopilot is a RAG-powered AI assistant for chemical process engineering. It retrieves context from your textbooks (PDFs), augments queries with domain knowledge, and delivers structured engineering solutions with LaTeX equations, unit tracking, and citation references."
+    },
+    {
+      "title": "New MatterChat Model Helps AI to &#x27;See&#x27; the Language of Science",
+      "url": "https://cs.lbl.gov/news-and-events/news/2026/new-matterchat-model-helps-ai-to-see-the-language-of-science/",
+      "snippet": "Berkeley Lab researchers have developed an AI model, MatterChat, that accelerates materials discovery by understanding the complex language of atomic structures."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

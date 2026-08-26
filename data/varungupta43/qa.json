@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "varungupta43/qa",
+  "slug": "varungupta43-qa",
+  "author": "varungupta43",
+  "url": "https://huggingface.co/varungupta43/qa",
+  "created_at": "2026-08-25T23:15:49.000Z",
+  "updated_at": "2026-08-25T23:15:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "contrastive",
+    "cross-attention",
+    "exponential",
+    "gelu-tanh",
+    "groupnorm",
+    "kaiming-normal",
+    "mixer",
+    "multi-query",
+    "xlarge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=highlight-bullet",
+      "snippet": "Explore machine learning models. 37 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: highlight-bullet Clear all"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=grounded-language",
+      "snippet": "Explore machine learning models. 21 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: grounded-language Clear all"
+    },
+    {
+      "title": "8 AI Model Types Shaping 2025&#x27;s Future - LinkedIn",
+      "url": "https://www.linkedin.com/posts/jsrvarungupta_these-are-the-8-ai-model-types-you-need-to-activity-7477325694117715968-8W6B",
+      "snippet": "These are the 8 AI Model Types You Need to Understand in 2025 Artificial Intelligence is evolving faster than ever, and understanding different AI model types is becoming essential for businesses ..."
+    },
+    {
+      "title": "Systems | Free Full-Text | An Empirical Evaluation of a ... - MDPI",
+      "url": "https://www.mdpi.com/2079-8954/12/3/103/notes",
+      "snippet": "An Empirical Evaluation of a Generative Artificial Intelligence Technology Adoption Model from Entrepreneurs&#x27; Perspectives. Systems 2024, 12, 103. https://doi.org/10.3390/systems12030103"
+    },
+    {
+      "title": "Varun Gupta",
+      "url": "https://guptavarun.com/",
+      "snippet": "Varun Gupta Hello! I am a Postdoctoral Fellow at the Vector Institute. My research interests are in sequential online prediction, trustworthy machine learning, and human-AI interaction. I completed my PhD in the Computer Science department at the University of Pennsylvania, where I was fortunate to be advised by Michael Kearns and Aaron Roth."
+    }
+  ]
+}

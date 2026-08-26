@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fqferrari/transformer-summarizer-baseline",
+  "slug": "fqferrari-transformer-summarizer-baseline",
+  "author": "fqferrari",
+  "url": "https://huggingface.co/fqferrari/transformer-summarizer-baseline",
+  "created_at": "2026-08-25T21:56:57.000Z",
+  "updated_at": "2026-08-25T21:57:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "bilinear",
+    "constant-warmup",
+    "dino",
+    "grouped-query",
+    "multitask",
+    "scalenorm",
+    "swish",
+    "tiny",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Busrara/transformers-summarizer",
+      "url": "https://github.com/Busrara/transformers-summarizer",
+      "snippet": "This project creates a text summarizer using a pre-trained BERT model from Hugging Face&#x27;s Transformers library. It features an interactive Gradio interface where users can: Paste articles for summarization. Upload text files. Fine-tune the summarization process. The aim is to help users quickly understand the main points of any text. Features"
+    },
+    {
+      "title": "GitHub - CyizaLandry5/Transformer-Summarizer: exploring summarization ...",
+      "url": "https://github.com/CyizaLandry5/Transformer-Summarizer",
+      "snippet": "📌 Overview This assignment focused on building a Transformer-based summarization model using an encoder-decoder architecture. Unlike the lecture examples, I implemented the full encoder-decoder transformer from scratch (with the encoder provided, decoder implemented by me) to summarize dialogues and articles."
+    },
+    {
+      "title": "Summarization - Hugging Face LLM Course",
+      "url": "https://huggingface.co/learn/nlp-course/chapter7/5",
+      "snippet": "Summarization In this section we&#x27;ll take a look at how Transformer models can be used to condense long documents into summaries, a task known as text summarization. This is one of the most challenging NLP tasks as it requires a range of abilities, such as understanding long passages and generating coherent text that captures the main topics in a document. However, when done well, text ..."
+    },
+    {
+      "title": "Summarization · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/summarization",
+      "snippet": "Summarization Summarization creates a shorter version of a document or an article that captures all the important information. Along with translation, it is another example of a task that can be formulated as a sequence-to-sequence task. Summarization can be:"
+    },
+    {
+      "title": "Transformer models: an introduction and catalog - arXiv.org",
+      "url": "https://arxiv.org/html/2302.07730v4",
+      "snippet": "Transformer model adoption is further accelerated as specialized hardware is developed by commercial players to improve model training and inference speed. NVIDIA&#x27;s Hopper Tensor Cores 17 can apply mixed FP8 and FP16 precisions to dramatically accelerate AI calculations for Transformers."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "andreguillaume/simple-translate23",
+  "slug": "andreguillaume-simple-translate23",
+  "author": "andreguillaume",
+  "url": "https://huggingface.co/andreguillaume/simple-translate23",
+  "created_at": "2026-08-25T23:11:54.000Z",
+  "updated_at": "2026-08-25T23:12:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "contrastive",
+    "efficientformer",
+    "exponential",
+    "flash",
+    "gelu",
+    "orthogonal",
+    "scalenorm",
+    "tensor-fusion",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - randall-frank/simple_translate: Simple Python module to use a ...",
+      "url": "https://github.com/randall-frank/simple_translate",
+      "snippet": "Simple Python module to use a locally run AI model to translate text 1 star 0 watching 0 forks No releases published Python100.0%"
+    },
+    {
+      "title": "SimplyTranslate AI - Free AI Translation Tool | 196+ Languages Supported",
+      "url": "https://simplytranslate.ai/",
+      "snippet": "SimplyTranslate AI provides instant, accurate translations across 196+ languages. Our AI-powered translation service is completely free, privacy-focused, and requires no registration."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "piwheels - simpleaitranslator",
+      "url": "https://www.piwheels.org/project/simpleaitranslator/",
+      "snippet": "The piwheels project page for simpleaitranslator: A Python library for language detection and translation using OpenAI&#x27;s GPT-4o."
+    },
+    {
+      "title": "GitHub - LibreTranslate/LTEngine: Local AI Machine Translation. Powered ...",
+      "url": "https://github.com/LibreTranslate/LTEngine",
+      "snippet": "Free and Open Source Local AI Machine Translation API, written in Rust, entirely self-hosted and compatible with LibreTranslate. Its translation capabilities are powered by large language models (LLMs) that run locally on your machine via llama.cpp. The LLMs in LTEngine are much larger than the lightweight transformer models in LibreTranslate."
+    }
+  ]
+}

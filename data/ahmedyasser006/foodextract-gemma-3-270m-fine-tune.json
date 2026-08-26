@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ahmedyasser006/FoodExtract-gemma-3-270m-fine-tune",
+  "slug": "ahmedyasser006-foodextract-gemma-3-270m-fine-tune",
+  "author": "ahmedyasser006",
+  "url": "https://huggingface.co/ahmedyasser006/FoodExtract-gemma-3-270m-fine-tune",
+  "created_at": "2026-08-26T02:49:42.000Z",
+  "updated_at": "2026-08-26T02:50:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569613336,
+  "storage_human": "570 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gorem/FoodExtract-gemma-3-270m-fine-tune-v1 · Hugging Face",
+      "url": "https://huggingface.co/gorem/FoodExtract-gemma-3-270m-fine-tune-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FoodExtract-gemma-3-270m-fine-tune-v1 - Hugging Face",
+      "url": "https://huggingface.co/asepnorzai/FoodExtract-gemma-3-270m-fine-tune-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 270M: A Guide With Demo Project (Android App)",
+      "url": "https://www.datacamp.com/tutorial/gemma-3-270m",
+      "snippet": "Google recently released Gemma 3 270M, an ultra-compact 270-million parameter model that represents a new paradigm in efficient AI deployment. Unlike massive general-purpose models, Gemma 3 270M is designed for task-specific fine-tuning while maintaining instruction-following capabilities right out of the box."
+    },
+    {
+      "title": "FoodExtract-gemma-3-270m-fine-tune-v1 - FriendliAI",
+      "url": "https://friendli.ai/models/gorem/FoodExtract-gemma-3-270m-fine-tune-v1",
+      "snippet": "Deploy FoodExtract-gemma-3-270m-fine-tune-v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Fine-tuning Gemma 3 270M Locally - by Avi Chawla",
+      "url": "https://blog.dailydoseofds.com/p/fine-tuning-gemma-3-270m-locally",
+      "snippet": "Google released Gemma 3 270M, a new model for hyper-efficient local AI! You can run it locally on just 0.5 GB RAM. Today, let&#x27;s learn how to fine-tune this model and make it smart at playing chess and predicting the next move."
+    }
+  ]
+}

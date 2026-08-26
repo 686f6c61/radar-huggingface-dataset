@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ayaandas/diffusion-asr",
+  "slug": "ayaandas-diffusion-asr",
+  "author": "ayaandas",
+  "url": "https://huggingface.co/ayaandas/diffusion-asr",
+  "created_at": "2026-08-25T23:21:24.000Z",
+  "updated_at": "2026-08-25T23:21:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "cnn-transformer",
+    "concat-mlp",
+    "constant-warmup",
+    "linear",
+    "nano",
+    "retrieval",
+    "rmsprop",
+    "swish",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - liuzhan22/Diffusion-ASR: [ICASSP 2026] Audio-Conditioned ...",
+      "url": "https://github.com/liuzhan22/Diffusion-ASR",
+      "snippet": "Audio-Conditioned Diffusion LLMs for ASR and Deliberation Processing 📖 Abstract We present an empirical study on utilizing the diffusion-based large language model LLaDA for automatic speech recognition (ASR)."
+    },
+    {
+      "title": "Diffusion-ASR (Diffusion-ASR) - Hugging Face",
+      "url": "https://huggingface.co/Diffusion-ASR/models",
+      "snippet": "Org profile for Diffusion-ASR on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Core Concepts | afrenkai/ASRDiffusion | DeepWiki",
+      "url": "https://deepwiki.com/afrenkai/ASRDiffusion/3-core-concepts",
+      "snippet": "Core Concepts Relevant source files Purpose and Scope This document explains the fundamental concepts underlying the ASRDiffusion system&#x27;s approach to automatic speech recognition using diffusion models. It covers: The core mathematical framework of diffusion processes How continuous and discrete diffusion mechanisms work together The relationship between audio conditioning and text generation ..."
+    },
+    {
+      "title": "afrenkai/ASRDiffusion | DeepWiki",
+      "url": "https://deepwiki.com/afrenkai/ASRDiffusion",
+      "snippet": "Purpose and Scope This document provides a high-level introduction to the ASRDiffusion system, a diffusion-based automatic speech recognition (ASR) model that uses Mamba state-space architecture for audio-conditioned text generation. This page covers the system&#x27;s architecture, core components, and how data flows through the pipeline."
+    },
+    {
+      "title": "Diffusion-ASR/models at main · liuzhan22/Diffusion-ASR · GitHub",
+      "url": "https://github.com/liuzhan22/Diffusion-ASR/tree/main/models",
+      "snippet": "[ICASSP 2026] Audio-Conditioned Diffusion LLMs for ASR and Deliberation Processing - liuzhan22/Diffusion-ASR"
+    }
+  ]
+}

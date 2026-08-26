@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Krrish4757/jobmingler_skill_model",
+  "slug": "krrish4757-jobmingler_skill_model",
+  "author": "Krrish4757",
+  "url": "https://huggingface.co/Krrish4757/jobmingler_skill_model",
+  "created_at": "2026-08-25T20:26:11.000Z",
+  "updated_at": "2026-08-25T20:27:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 749249664,
+  "storage_human": "749 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krrish4757/jobminglr_Extraction_model_full - Fast, Reliable, and ...",
+      "url": "https://friendli.ai/models/Krrish4757/jobminglr_Extraction_model_full",
+      "snippet": "Run Krrish4757/jobminglr_Extraction_model_full with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4 ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Krrish4757/documentclassifier at main - Hugging Face",
+      "url": "https://huggingface.co/Krrish4757/documentclassifier/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "GitHub - yusufkaraaslan/Skill_Seekers: Convert documentation websites ...",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "snippet": "🧠 The data layer for AI systems. Skill Seekers turns documentation sites, GitHub repos, PDFs, videos, notebooks, wikis, and more — 18 source types — into structured knowledge assets, ready to power AI Skills (Claude, Gemini, OpenAI), RAG pipelines (LangChain, LlamaIndex, Pinecone), and AI coding assistants (Cursor, Windsurf, Cline)."
+    }
+  ]
+}

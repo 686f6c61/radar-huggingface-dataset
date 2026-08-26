@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "CodeSoft/sorbet-v2-25m",
+  "slug": "codesoft-sorbet-v2-25m",
+  "author": "CodeSoft",
+  "url": "https://huggingface.co/CodeSoft/sorbet-v2-25m",
+  "created_at": "2026-08-25T20:12:07.000Z",
+  "updated_at": "2026-08-25T20:48:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "25M",
+    "en",
+    "dataset:epfml/FineWeb-HQ",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25185920,
+  "parameters_human": "25.2M",
+  "storage_bytes": 204460464,
+  "storage_human": "204 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sorbet-25M - a CodeSoft Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/CodeSoft/sorbet-25m",
+      "snippet": "Models based on Sorbet-25M"
+    },
+    {
+      "title": "@CodeSoft on Hugging Face: \"https://huggingface.co/CodeSoft/sorbet-25m ...",
+      "url": "https://huggingface.co/posts/CodeSoft/692867232752553",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sorbet-25m API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/CodeSoft/sorbet-25m",
+      "snippet": "Deploy sorbet-25m with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - Kaiwen-Tang/Sorbet",
+      "url": "https://github.com/Kaiwen-Tang/Sorbet",
+      "snippet": "Contribute to Kaiwen-Tang/Sorbet development by creating an account on GitHub."
+    },
+    {
+      "title": "[Paper Note] Sorbet: A Neuromorphic Hardware-Compatible Transformer ...",
+      "url": "https://en.papernotes.org/ICML2025/llm_safety/sorbet_a_neuromorphic_hardware-compatible_transformer-based_spiking_language_mod/",
+      "snippet": "[ICML 2025][LLM Safety][spiking neural network] Proposes Sorbet, the first fully neuromorphic hardware-compatible Transformer-based spiking language model. By replacing traditional softmax and Layer ..."
+    }
+  ]
+}

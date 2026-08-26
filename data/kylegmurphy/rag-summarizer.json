@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KyleGmurphy/rag-summarizer",
+  "slug": "kylegmurphy-rag-summarizer",
+  "author": "KyleGmurphy",
+  "url": "https://huggingface.co/KyleGmurphy/rag-summarizer",
+  "created_at": "2026-08-25T20:43:52.000Z",
+  "updated_at": "2026-08-25T20:43:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "cautious",
+    "data-efficient-learning",
+    "empirical-focused",
+    "highlight-bullet",
+    "html",
+    "intro-method-exp-related-conclusion",
+    "passive",
+    "short-punchy",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enhance AI responses by using Retrieval Augmented Generation",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+      "snippet": "RAG is a design pattern that improves AI accuracy by combining two capabilities: Information retrieval: Searching enterprise data sources. Text generation: Synthesizing the retrieved information by using a language model. This approach reduces incorrect information, increases trust, and generates responses rooted in real organizational content."
+    },
+    {
+      "title": "GitHub - raneshrk02/RAG_Summarizer: RAG Model",
+      "url": "https://github.com/raneshrk02/RAG_Summarizer",
+      "snippet": "A complete Retrieval-Augmented Generation (RAG) system with LLM integration and comprehensive monitoring for meeting data, designed for an AI-insurance entrepreneur. The system processes meeting transcripts, extracts insights, and provides intelligent AI-generated answers with sub-30-second response times using Mistral AI."
+    },
+    {
+      "title": "RAG-Based Document Summarizer - GitHub",
+      "url": "https://github.com/ammar-Gits/rag-doc-summarizer",
+      "snippet": "📄 RAG-Based Document Summarizer A web app for automatic summarization of long documents using Retrieval-Augmented Generation (RAG). The system processes PDF, TXT, and Markdown files, retrieves semantically relevant content, and generates concise summaries using transformer-based models."
+    },
+    {
+      "title": "Building an AI Summarizer with RAG and LLMs: Step-by-Step ... - Medium",
+      "url": "https://medium.com/@tpriya27/building-an-ai-summarizer-with-rag-and-llms-step-by-step-guide-for-developers-4464bc61f274",
+      "snippet": "Step-by-step guide to building an AI summarizer with Retrieval-Augmented Generation (RAG) and LLMs. Covers chunking, embeddings, vector databases, prompt engineering, and LangChain in Python."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    }
+  ]
+}

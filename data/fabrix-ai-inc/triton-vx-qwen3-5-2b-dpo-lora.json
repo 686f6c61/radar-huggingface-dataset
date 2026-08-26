@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Fabrix-AI-Inc/Triton-VX-Qwen3.5-2B-DPO-LoRA",
+  "slug": "fabrix-ai-inc-triton-vx-qwen3-5-2b-dpo-lora",
+  "author": "Fabrix-AI-Inc",
+  "url": "https://huggingface.co/Fabrix-AI-Inc/Triton-VX-Qwen3.5-2B-DPO-LoRA",
+  "created_at": "2026-08-26T02:32:50.000Z",
+  "updated_at": "2026-08-26T02:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "fabrix",
+    "rdaf",
+    "dpo",
+    "lora",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63664447,
+  "storage_human": "64 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Fabrix Triton: Specialized AI models for Enterprise IT ...",
+      "url": "https://fabrix.ai/blog/introducing-triton-specialized-ai-models-for-enterprise-it-operations/",
+      "snippet": "For the last few years, enterprise AI strategy has followed one script: pick the biggest frontier model available, point it at every problem, and pay per token. That script is starting to break down, and Fabrix built Triton because we saw the cracks first. What Is Triton? Triton is Fabrix&#x27;s family of specialized small language models (SLMs), AI purpose-built for enterprise IT operations ..."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5 & Qwen3.6 Usage Guide - vLLM Recipes - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html",
+      "snippet": "Qwen3.5 & Qwen3.6 Usage Guide Qwen3.5 and Qwen3.6 are multimodal mixture-of-experts models featuring a gated delta networks architecture. This guide covers how to efficiently deploy and serve both models using vLLM."
+    },
+    {
+      "title": "mhpd-dpo-qwen3.5-2b-lora-v1.2-ipo-2epoch - Hugging Face",
+      "url": "https://huggingface.co/remyxai/mhpd-dpo-qwen3.5-2b-lora-v1.2-ipo-2epoch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

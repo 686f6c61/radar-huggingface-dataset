@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pk180/anemiaeye-models",
+  "slug": "pk180-anemiaeye-models",
+  "author": "pk180",
+  "url": "https://huggingface.co/pk180/anemiaeye-models",
+  "created_at": "2026-08-26T00:40:52.000Z",
+  "updated_at": "2026-08-26T00:49:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163588759,
+  "storage_human": "164 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pk180/anemia-models · Hugging Face",
+      "url": "https://huggingface.co/pk180/anemia-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "AI-Driven Anemia Detection Using Conjunctiva Images - GitHub",
+      "url": "https://github.com/VishnuLakshmi-G/Anemia-Detection",
+      "snippet": "🩺 AI-Driven Anemia Detection Using Conjunctiva Images This project leverages deep learning and computer vision to detect anemia using eye conjunctiva images. It predicts hemoglobin (Hb) levels and assesses anemia risk in real-time through a user-friendly web app powered by Streamlit."
+    },
+    {
+      "title": "Anemia Detection using Conjuctiva Images - GitHub",
+      "url": "https://github.com/kirpalsingh225/Detection-of-Anemia-Using-Conjuctiva-Images",
+      "snippet": "Anemia Detection using Conjuctiva Images Aim is to develop a robust and efficient model for the early detection of anemia using Convolutional Neural Networks (CNN) applied to conjunctiva images. Anemia, a condition characterized by a deficiency of red blood cells or hemoglobin, is a prevalent health concern globally."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

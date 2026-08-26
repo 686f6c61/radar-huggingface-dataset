@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/depth-anything-v2-small",
+  "slug": "jonnyverse-depth-anything-v2-small",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/depth-anything-v2-small",
+  "created_at": "2026-08-25T23:29:33.000Z",
+  "updated_at": "2026-08-25T23:29:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "depth_anything",
+    "depth-estimation",
+    "base_model:depth-anything/Depth-Anything-V2-Small",
+    "base_model:quantized:depth-anything/Depth-Anything-V2-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275829214,
+  "storage_human": "276 MB",
+  "base_model": "depth-anything/Depth-Anything-V2-Small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DepthAnything/Depth-Anything-V2: [NeurIPS 2024] Depth Anything ...",
+      "url": "https://github.com/DepthAnything/Depth-Anything-V2",
+      "snippet": "2024-06-22: We release smaller metric depth models based on Depth-Anything-V2-Small and Base. 2024-06-20: Our repository and project page are flagged by GitHub and removed from the public for 6 days."
+    },
+    {
+      "title": "Depth-Anything-V2-Small: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/depth-anything-v2-small-depth-anything",
+      "snippet": "Overview Depth-Anything-V2-Small is a monocular depth estimation model trained on 595K synthetic labeled images and 62M+ real unlabeled images, created by depth-anything. The model uses a ViT-small encoder (vits) with 64 features and output channels of [48, 96, 192, 384], delivering fine-grained depth maps from single images. The critical advantage before using this model is its combination of ..."
+    },
+    {
+      "title": "Depth-Anything-V2-Small - Hugging Face",
+      "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Depth-Anything-V2-Small Open-Source Monocular Depth Estimation Model ...",
+      "url": "https://model.aibase.com/models/details/1915687309795868673",
+      "snippet": "Depth Anything V2 is currently the most powerful monocular depth estimation model, trained on large-scale synthetic and real images. Compared to V1, it captures finer details and is more robust."
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/spaces/Seraph19/depth/raw/main/README_Github.md",
+      "snippet": "For example: ```bash python run.py --encoder vitl --img-path assets/examples --outdir depth_vis ``` **If you want to use Depth Anything V2 on videos:** ```bash python run_video.py --encoder vitl --video-path assets/examples_video --outdir video_depth_vis ``` *Please note that our larger model has better temporal consistency on videos.*"
+    }
+  ]
+}

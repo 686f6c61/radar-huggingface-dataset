@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tigerking009/fast-t2i-mobile-research",
+  "slug": "tigerking009-fast-t2i-mobile-research",
+  "author": "tigerking009",
+  "url": "https://huggingface.co/tigerking009/fast-t2i-mobile-research",
+  "created_at": "2026-08-26T01:41:22.000Z",
+  "updated_at": "2026-08-26T02:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15123506,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tigerking009/ZOYA_FLASH_V1_PHASE0 · Hugging Face",
+      "url": "https://huggingface.co/tigerking009/ZOYA_FLASH_V1_PHASE0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices ...",
+      "url": "https://arxiv.org/abs/2412.09619",
+      "snippet": "Existing text-to-image (T2I) diffusion models face several limitations, including large model sizes, slow runtime, and low-quality generation on mobile devices. This paper aims to address all of these challenges by developing an extremely small and fast T2I model that generates high-resolution and high-quality images on mobile platforms. We propose several techniques to achieve this goal ..."
+    },
+    {
+      "title": "Text-to-Image Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-image",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "TIIF-Bench: How Does Your T2I Model Follow Your Instructions?",
+      "url": "https://github.com/A113N-W3I/TIIF-Bench",
+      "snippet": "TIIF-Bench is a comprehensive, well-structured, and difficulty-graded benchmark specifically designed for evaluating modern text-to-image (T2I) models. Previous benchmarks suffer from several key limitations: Short and simplistic prompts — Most prompts follow fixed templates, contain repetitive ..."
+    },
+    {
+      "title": "[2411.16164] Text-to-Image Synthesis: A Decade Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2411.16164",
+      "snippet": "Text-to-image synthesis (T2I), which focuses on generating high-quality images from textual descriptions, has become a significant aspect of Artificial Intelligence Generated Content (AIGC) and a transformative direction in artificial intelligence research. Foundation models play a crucial role in T2I."
+    }
+  ]
+}

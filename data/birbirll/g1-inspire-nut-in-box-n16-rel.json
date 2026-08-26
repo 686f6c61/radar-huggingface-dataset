@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "birbirll/g1-inspire-nut-in-box-n16-rel",
+  "slug": "birbirll-g1-inspire-nut-in-box-n16-rel",
+  "author": "birbirll",
+  "url": "https://huggingface.co/birbirll/g1-inspire-nut-in-box-n16-rel",
+  "created_at": "2026-08-25T21:02:33.000Z",
+  "updated_at": "2026-08-25T21:03:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "vla",
+    "unitree-g1",
+    "gr00t",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3286610368,
+  "parameters_human": "3.29B",
+  "storage_bytes": 9813338559,
+  "storage_human": "9.8 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "birbirll/g1-inspire-redball-n16-waist · Hugging Face",
+      "url": "https://huggingface.co/birbirll/g1-inspire-redball-n16-waist",
+      "snippet": "g1-inspire-redball-n16-waist GR00T N1.6 fine-tune for the Unitree G1 + Inspire RH56DFTP red-ball pick-and-place task, with waist control — the successor to birbirll/g1-inspire-redball-n16 trained on the 33-D action layout (7+7 arms, 6+6 hands, 3 waist, nav (3) + base_height, waist actions derived from state with a +6-frame lead)."
+    },
+    {
+      "title": "birbirll (Peiyu Song) - Hugging Face",
+      "url": "https://huggingface.co/birbirll/models",
+      "snippet": "birbirll&#x27;s models5 Sort: Recently updated birbirll/g1-inspire-piston-pi05 Robotics •Updated 1 day ago"
+    },
+    {
+      "title": "GR00T N1.6 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_6/",
+      "snippet": "Introduction We introduce GR00T N1.6, an improved version of the GR00T N1.5 foundation model for humanoid robots. With several architecture, data and modeling improvements, we find that N1.6 outperforms N1.5 on both simulated manipulation benchmarks and on real bimanual YAM, Agibot Genie-1 and Unitree G1 robots, detailed below."
+    },
+    {
+      "title": "Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot ... - unitree",
+      "url": "https://www.unitree.com/g1/",
+      "snippet": "Unitree Robotics Humanoid Robot G1 has the flexibility beyond normal human, can imitate & reinforce the learning drive, combined with force-position hybrid control, sensitive and reliable, can simulate the human hand to achieve the precise operation of the object, welcome to consult with us to know the price, function and usage of the humanoid robot."
+    },
+    {
+      "title": "GitHub - unitreerobotics/unitree_rl_lab: This is a repository for ...",
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab",
+      "snippet": "Unitree RL Lab Overview This project provides a set of reinforcement learning environments for Unitree robots, built on top of IsaacLab. Currently supports Unitree Go2, H1 and G1-29dof robots."
+    }
+  ]
+}

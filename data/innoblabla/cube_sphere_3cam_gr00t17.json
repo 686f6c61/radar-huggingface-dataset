@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "innoblabla/cube_sphere_3cam_GR00T17",
+  "slug": "innoblabla-cube_sphere_3cam_gr00t17",
+  "author": "innoblabla",
+  "url": "https://huggingface.co/innoblabla/cube_sphere_3cam_GR00T17",
+  "created_at": "2026-08-25T20:31:00.000Z",
+  "updated_at": "2026-08-25T20:33:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:innoblabla/cube_sphere_3cam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "innoblabla/cube_3cam_final_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/innoblabla/cube_3cam_final_GR00T17",
+      "snippet": "Instructions to use innoblabla/cube_3cam_final_GR00T17 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use innoblabla/cube_3cam_final_GR00T17 with LeRobot: Notebooks Google Colab Kaggle Model Card for groot Model Details Inputs & Outputs Training Dataset Training ..."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace. VLM backbone changed from vendored Eagle, nvidia/Eagle-Block2A-2B-v2, to nvidia/Cosmos-Reason2-2B via Qwen3-VL."
+    },
+    {
+      "title": "NVIDIA Isaac Teleop and GR00T 1.7 Open VLA Model Available in LeRobot",
+      "url": "https://huggingface.co/blog/nvidia/nvidia-isaac-teleop-and-gr00t17-in-lerobot",
+      "snippet": "A Blog post by NVIDIA on Hugging Face"
+    },
+    {
+      "title": "imsyed00 (I. Syed) - Hugging Face",
+      "url": "https://huggingface.co/imsyed00",
+      "snippet": "models1 imsyed00/G1_WBT_Dex1_Building-Children-Table_GR00T17_v3_60K Updated 13 days ago datasets2"
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    }
+  ]
+}

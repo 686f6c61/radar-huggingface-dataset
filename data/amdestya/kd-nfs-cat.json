@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Amdestya/kd-nfs-cat",
+  "slug": "amdestya-kd-nfs-cat",
+  "author": "Amdestya",
+  "url": "https://huggingface.co/Amdestya/kd-nfs-cat",
+  "created_at": "2026-08-26T00:35:03.000Z",
+  "updated_at": "2026-08-26T00:35:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:992",
+    "loss:FitMixinLoss",
+    "text-ranking",
+    "arxiv:1908.10084",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:finetune:microsoft/MiniLM-L12-H384-uncased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360385,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133464836,
+  "storage_human": "133 MB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amdestya/kd-nfs-bm25cat · Hugging Face",
+      "url": "https://huggingface.co/Amdestya/kd-nfs-bm25cat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Amdestya/kd-nfs-bm25cat at main - Hugging Face",
+      "url": "https://huggingface.co/Amdestya/kd-nfs-bm25cat/tree/main",
+      "snippet": "Instructions to use Amdestya/kd-nfs-bm25cat with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use Amdestya/kd-nfs-bm25cat with sentence-transformers:"
+    },
+    {
+      "title": "CAT-KD/README.md at master · GzyAftermath/CAT-KD · GitHub",
+      "url": "https://github.com/GzyAftermath/CAT-KD/blob/master/README.md?plain=1",
+      "snippet": "CVPR 2023, Class Attention Transfer Based Knowledge Distillation - CAT-KD/README.md at master · GzyAftermath/CAT-KD"
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "software-competence-center-hagenberg/PCFM",
+  "slug": "software-competence-center-hagenberg-pcfm",
+  "author": "software-competence-center-hagenberg",
+  "url": "https://huggingface.co/software-competence-center-hagenberg/PCFM",
+  "created_at": "2026-08-25T21:31:22.000Z",
+  "updated_at": "2026-08-25T22:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52852000,
+  "parameters_human": "52.9M",
+  "storage_bytes": 211418848,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Software Competence Center Hagenberg - Home",
+      "url": "https://dl.acm.org/institution/60013284",
+      "snippet": "January 2026Procedia Computer Science, Volume 277, Issue C https://doi.org/10.1016/j.procs.2026.02.412"
+    },
+    {
+      "title": "SCCH - Software Competence Center Hagenberg - scch.at",
+      "url": "https://www.scch.at/",
+      "snippet": "Wir verwenden Cookies, um Ihnen ein optimales Webseiten-Erlebnis zu bieten. Dazu zählen Cookies, die für den Betrieb der Seite und für die Steuerung unserer kommerziellen Unternehmensziele notwendig sind, sowie solche, die lediglich zu anonymen Statistikzwecken, für Komforteinstellungen oder zur Anzeige personalisierter Inhalte genutzt werden. Sie können selbst entscheiden, welche ..."
+    },
+    {
+      "title": "software-competence-center-hagenberg/2026-SWQD-Autonomous-Testing - GitHub",
+      "url": "https://github.com/software-competence-center-hagenberg/2026-SWQD-Autonomous-Testing",
+      "snippet": "This appendix provides a detailed overview of the literature review process and the intermediate results for our study on LLM-based autonomous testing agents. The data is organized into directories representing different stages of the review process."
+    },
+    {
+      "title": "PDF 466163747368656574205343434820454E",
+      "url": "https://www.ffg.at/sites/default/files/allgemeine_downloads/strukturprogramme/COMET/Factsheets_K1_EN/COMET_Factsheet_SCCH_2025_EN.pdf",
+      "snippet": "The Software Competence Center Hagenberg was founded in July 1999 within the framework of the K plus Competence Center Program as an initiative of the Johannes Kepler University Linz."
+    },
+    {
+      "title": "software-competence-center-hagenberg repositories · GitHub",
+      "url": "https://github.com/orgs/software-competence-center-hagenberg/repositories",
+      "snippet": "This is the official github-presence of the Software Competence Center Hagenberg - Software Competence Center Hagenberg GmbH"
+    }
+  ]
+}

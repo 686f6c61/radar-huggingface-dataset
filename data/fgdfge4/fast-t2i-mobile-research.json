@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FGDFGE4/fast-t2i-mobile-research",
+  "slug": "fgdfge4-fast-t2i-mobile-research",
+  "author": "FGDFGE4",
+  "url": "https://huggingface.co/FGDFGE4/fast-t2i-mobile-research",
+  "created_at": "2026-08-26T03:40:15.000Z",
+  "updated_at": "2026-08-26T03:40:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110975116,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices ...",
+      "url": "https://research.snap.com/publications/snapgen-taming-high-resolution-text-to-image-models-for-mobile-devices-with-efficient-architectures-and-training.html",
+      "snippet": "Existing text-to-image (T2I) diffusion models face several limitations, including large model sizes, slow runtime, and low-quality generation on mobile devices. This paper aims to address all of these challenges by developing an extremely small and fast T2I model that generates high-resolution and high-quality images on mobile platforms. We propose several techniques to achieve this goal ..."
+    },
+    {
+      "title": "GitHub - yandex-research/switti: (CVPR 2025) Switti: Designing Scale ...",
+      "url": "https://github.com/yandex-research/switti",
+      "snippet": "We present Switti, a scale-wise transformer for fast text-to-image generation that outperforms existing T2I AR models and competes with state-of-the-art T2I diffusion models while being faster than distilled diffusion models. This repo contains training code for our models (Switti and Switti (AR)) and an inference example."
+    },
+    {
+      "title": "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices ...",
+      "url": "https://snap-research.github.io/snapgen/",
+      "snippet": "Abstract Existing text-to-image (T2I) diffusion models face several limitations, including large model sizes, slow runtime, and low-quality generation on mobile devices. This paper aims to address all of these challenges by developing an extremely small and fast T2I model that generates high-resolution and high-quality images on mobile platforms."
+    },
+    {
+      "title": "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices ...",
+      "url": "https://www.researchgate.net/publication/387053593_SnapGen_Taming_High-Resolution_Text-to-Image_Models_for_Mobile_Devices_with_Efficient_Architectures_and_Training",
+      "snippet": "This paper aims to address all of these challenges by developing an extremely small and fast T2I model that generates high-resolution and high-quality images on mobile platforms."
+    },
+    {
+      "title": "Text-to-Image Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-image",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

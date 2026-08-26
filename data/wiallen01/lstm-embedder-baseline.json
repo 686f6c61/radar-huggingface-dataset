@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wiallen01/lstm-embedder-baseline",
+  "slug": "wiallen01-lstm-embedder-baseline",
+  "author": "wiallen01",
+  "url": "https://huggingface.co/wiallen01/lstm-embedder-baseline",
+  "created_at": "2026-08-25T23:50:56.000Z",
+  "updated_at": "2026-08-25T23:51:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "graphic-visual",
+    "html",
+    "intro-related-method-exp-conclusion",
+    "measured",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "passive",
+    "robotics-vision-language",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LSTM Models: A Complete Guide to Long Short-Term Memory Networks",
+      "url": "https://www.datacamp.com/tutorial/lstm-models",
+      "snippet": "What Is an LSTM Model? LSTM stands for Long Short-Term Memory, a type of recurrent neural network (RNN) designed to handle sequences where context from much earlier in the input still matters."
+    },
+    {
+      "title": "LSTM Baseline Model | fulifeng/Adv-ALSTM | DeepWiki",
+      "url": "https://deepwiki.com/fulifeng/Adv-ALSTM/6.1-lstm-baseline-model",
+      "snippet": "LSTM Baseline Model Relevant source files Purpose and Scope This document provides comprehensive documentation of the LSTM baseline model, which serves as the foundational architecture for stock movement prediction in the Adv-ALSTM system."
+    },
+    {
+      "title": "lstm-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/lstm-model",
+      "snippet": "The aim of this repository is to show a baseline model for text classification by implementing a LSTM-based model coded in PyTorch. In order to provide a better understanding of the model, it will be used a Tweets dataset provided by Kaggle."
+    },
+    {
+      "title": "Recurrent Model-Free RL Can Be a Strong Baseline for Many POMDPs",
+      "url": "https://arxiv.org/html/2110.05038v3",
+      "snippet": "We also release a simple and efficient implementation of recurrent model-free RL for future work to use as a baseline for POMDPs. Keywords: reinforcement learning, baseline, POMDP, recurrent neural networks, LSTM, GRU, RNN, off-policy, TD3, SAC, meta RL, robust RL, generalization, temporal credit assignment"
+    },
+    {
+      "title": "10.1. Long Short-Term Memory (LSTM) — Dive into Deep Learning 1 ... - D2L",
+      "url": "https://d2l.ai/chapter_recurrent-modern/lstm.html",
+      "snippet": "One of the first and most successful techniques for addressing vanishing gradients came in the form of the long short-term memory (LSTM) model due to Hochreiter and Schmidhuber (1997). LSTMs resemble standard recurrent neural networks but here each ordinary recurrent node is replaced by a memory cell."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mimiminsoo/spam_diffusion_stage_search_v2",
+  "slug": "mimiminsoo-spam_diffusion_stage_search_v2",
+  "author": "mimiminsoo",
+  "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_search_v2",
+  "created_at": "2026-08-25T20:35:36.000Z",
+  "updated_at": "2026-08-25T20:36:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:piper_spamcoffee_stage_search",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308316824,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1233356872,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimiminsoo/spam_diffusion_stage_search_v1 · Hugging Face",
+      "url": "https://huggingface.co/mimiminsoo/spam_diffusion_stage_search_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemini Diffusion — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-diffusion/",
+      "snippet": "Gemini Diffusion is our state-of-the-art research model exploring what diffusion means for language - and text generation."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "[2311.09355] Privacy Threats in Stable Diffusion Models",
+      "url": "https://arxiv.org/abs/2311.09355",
+      "snippet": "This paper introduces a novel approach to membership inference attacks (MIA) targeting stable diffusion computer vision models, specifically focusing on the highly sophisticated Stable Diffusion V2 by StabilityAI. MIAs aim to extract sensitive information about a model&#x27;s training data, posing significant privacy concerns. Despite its advancements in image synthesis, our research reveals ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

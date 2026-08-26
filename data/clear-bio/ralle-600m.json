@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "clear-bio/ralle-600m",
+  "slug": "clear-bio-ralle-600m",
+  "author": "clear-bio",
+  "url": "https://huggingface.co/clear-bio/ralle-600m",
+  "created_at": "2026-08-25T22:15:39.000Z",
+  "updated_at": "2026-08-25T22:15:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transmembrane",
+    "protein",
+    "topology-prediction",
+    "esmc",
+    "viral",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57601137,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clear-bio/ralle-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/clear-bio/ralle-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clear-bio (JMK) - Hugging Face",
+      "url": "https://huggingface.co/clear-bio",
+      "snippet": "User profile of JMK on Hugging Face Recent Activity updated a datasetabout 9 hours ago clear-bio/ralle-dataset published a datasetabout 9 hours ago clear-bio/ralle-dataset View all activity"
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "GitHub - abtraore/SmolRGPT: Efficient 600M parameter multimodal spatial ...",
+      "url": "https://github.com/abtraore/SmolRGPT",
+      "snippet": "Efficient 600M parameter multimodal spatial reasoning model. 3rd place at AI City Challenge, ICCVW 2025. - GitHub - abtraore/SmolRGPT: Efficient 600M parameter multimodal spatial reasoning model. 3rd place at AI City Challenge, ICCVW 2025."
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework: Generative ...",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "snippet": "Abstract This document is a cross-sectoral profile of and companion resource for the AI Risk Management Framework (AI RMF 1.0) for Generative AI, pursuant to President Biden&#x27;s Executive Order (EO) 14110 on Safe, Secure, and Trustworthy Artificial Intelligence. The AI RMF was released in January 2023, and is intended for voluntary use and to improve the ability of organizations to incorporate ..."
+    }
+  ]
+}

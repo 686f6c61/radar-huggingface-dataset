@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AEmotionStudio/smt-omr-models",
+  "slug": "aemotionstudio-smt-omr-models",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/smt-omr-models",
+  "created_at": "2026-08-25T22:05:42.000Z",
+  "updated_at": "2026-08-25T22:05:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "optical-music-recognition",
+    "sheet-music",
+    "kern",
+    "music",
+    "mirror",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43689404,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AEmotionStudio/liveportrait-models · Hugging Face",
+      "url": "https://huggingface.co/AEmotionStudio/liveportrait-models",
+      "snippet": "Original model by: Kling AI Research Paper: LivePortrait: Efficient Portrait Animation with Stitching and Retargeting Control (arXiv:2407.03168) Redistributed by: Æmotion Studio for use with ComfyUI-FFMPEGA Downloads last month - Inference Providers NEW Image-to-Video This model isn&#x27;t deployed by any Inference Provider.🙋1Ask for provider ..."
+    },
+    {
+      "title": "Æmotion Studio - Meeting Your 3D Model Needs & Creating Immersive ...",
+      "url": "https://aemotionstudio.org/",
+      "snippet": "His work explores the intersection of nature, technology, and human consciousness, bringing imagination to life through immersive digital realms. While his strengths lie in the 3D domain, Æmotion is also adept in AI technologies constructing innovative workflows, tools, and models that push the boundaries of digital creation."
+    },
+    {
+      "title": "AEmotionStudio/audiosr-models · Hugging Face",
+      "url": "https://huggingface.co/AEmotionStudio/audiosr-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - antoniorv6/SMT: Official implementation of the Sheet Music ...",
+      "url": "https://github.com/antoniorv6/SMT",
+      "snippet": "This GitHub repository contains the implementation of the Sheet Music Transfomrmer (SMT), a novel model for Optical Music Recognition (OMR) beyond monophonic level transcription. Unlike traditional approaches that primarily leverage monophonic transcription techniques for complex score layouts, the SMT model overcomes these limitations by offering a robust image-to-sequence solution for ..."
+    },
+    {
+      "title": "GitHub - sa-y-an/OMRNet: Neural Networks to evaluate OMR Sheets",
+      "url": "https://github.com/sa-y-an/OMRNet",
+      "snippet": "Neural Networks to evaluate OMR Sheets. Contribute to sa-y-an/OMRNet development by creating an account on GitHub."
+    }
+  ]
+}

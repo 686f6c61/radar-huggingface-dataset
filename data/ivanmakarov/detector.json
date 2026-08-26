@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ivanmakarov/detector",
+  "slug": "ivanmakarov-detector",
+  "author": "ivanmakarov",
+  "url": "https://huggingface.co/ivanmakarov/detector",
+  "created_at": "2026-08-25T23:07:46.000Z",
+  "updated_at": "2026-08-25T23:07:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "concise-analytical",
+    "critical",
+    "docx",
+    "highlight-bullet",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "numeric-apa",
+    "ocr-freeform",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector - Will You Be Flagged for AI?",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=e_tbvPTNTg8BbWg5whfQkbn3Tr7delh0%2DUpzkWRBsuaDVF1f5aC4RAA7HoOKggURXpTp2pYMgpB8FqvYKOiE32mm7pJUyQqIymzhuaDKZE9hWxYHF6HB8NqsLk93V%2DiMH1YqR1ELv3Q1OeAzaKd%2DTUPTplI%2DQFVdi44%2DZ4VyaQQ.WBzOy6z7sYOEn7Kut7zH9g&rut=2f08dc05a799cacb12bd31adb5caca10875b3012aeda1cbc5517f491e1172b2f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8N_Nmy%2Dnq9SUjE5HqoG1jPDVUCUyRjsqHe5jkLRYqWiatsf39w4Hhoz0cDqLByf0dG%2DeqEX8_pLtUl1huOnW27CxkCGZlzp4jciDyFPqFLoXpQVdXFNvVYzsV11NHg5E26t8ziswo5Q4jH4zRPuVhjIoWnf0jkMFqToNx%2DYQqTMJUR3E87lP1TyewKx%2Djq4yDZuyDhs8ReGFW6l6w26Wu4iUn8NY%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3Mzc5NDk4JTI2dXRtX2NvbnRlbnQlM2Q4MTk4MjQ4MzU5MTg5MSUyNnV0bV90ZXJtJTNkZGV0ZWN0JTI1MjBhaSUyNnV0bV9idSUzZGNvcnAlMjZrZXl3b3JkaWQlM2Q4MTk4Mjc1NDU2OTAyNSUyNnRhcmdldGlkJTNka3dkLTgxOTgyNzU0NTY5MDI1JTNhbG9jLTY2JTI2YWRncm91cCUzZDEzMTE3MTg2ODE2MTA5NDMlMjZkZXZpY2UlM2RjJTI2bWF0Y2h0eXBlJTNkYiUyNm5ldHdvcmslM2RzJTI2ZXh0ZW5zaW9uJTNkJTI2Y2xpY2tpZCUzZGRkOWI2YWE3M2QzMDEyZmE3NGU2MDAyOTFhMDcxMzg1JTI2Z2NsaWQlM2RkZDliNmFhNzNkMzAxMmZhNzRlNjAwMjkxYTA3MTM4NSUyNm1zY2xraWQlM2RkZDliNmFhNzNkMzAxMmZhNzRlNjAwMjkxYTA3MTM4NQ%26rlid%3Ddd9b6aa73d3012fa74e600291a071385&vqd=4-202857346645732758465616262354456917742&iurl=%7B1%7DIG%3D3338117844B24444A377EF4E58C56456%26CID%3D1EC9749B354362DA0785635B344D632C%26ID%3DDevEx%2C5036.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "Free AI Detector & Checker - AI Detector",
+      "url": "https://duckduckgo.com/y.js?ad_domain=undetectable.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=Jbt4FCEYTWVkzKnugl6JOYH3L6GSR4u3gnaxgGE32z0k5yjYevXhswgeNbEDflnJRlRjl4FGBoJ8Q8cQdfsOqrnBRIZJjERMWQrIxTgymzg03pbR_5hP18C2NcBIxnV1W4XUZFAJIsjusN4VeC8EL2aSYy4i3pEAxddz_BRYa5k.tGdypQKtpER25Yt90q7ZVw&rut=d98456d96b7cbae3a8654be6a25c56b467b795e675cbe2328f4d4f7a0bc912fa&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8tCjKHwrDCo5Hl5lYxd5CIjVUCUxDDYdeasS8FgdgN2IjODXFf0oemawnnie_WaFXRXkeSyf8RMHl1D%2DoBCwP9UIr7CmSSwIBmnXwvdjXrDWvSaE_tpbxY8yxv5swTFJLaryKIvkWTAW2stz1gE2ZlZlHEOI%2DW3j8dFLDy44XNk6MpwijhMXpj6s0a6FCyqJD6xLG2SZeW4SmER55SAQkDJCSa0U%26u%3DaHR0cHMlM2ElMmYlMmZ0cnkudW5kZXRlY3RhYmxlLmFpJTJmZGV0ZWN0LWh1bWFuaXplJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkc2VhcmNoJTI2aF9jYW1wYWlnbl9pZCUzZDU3MTI2MjE3MiUyNmJuZ19pZCUzZDExNzIwODE2NTMzODkyMTYlMjZoX2FkX2lkJTNkNzMyNTUzMzU4NDE1NTAlMjZ1dG1fc291cmNlJTNkbWljcm9zb2Z0JTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEJfU2VhcmNoX1dXX0JyYW5kXzIlMjZ1dG1fY29udGVudCUzZCUyNTVCQU1QTEElMjU1RCUyNTIwJTI1NUJFWEFUQVMlMjU1RCUyNnV0bV90ZXJtJTNkdW5kZXRlY3RhYmxlJTI1MjBhaSUyNm1zY2xraWQlM2RlZjQ2NDFkOGIyOTExY2YxN2ExZTJiNTY5NWE2YzMzMQ%26rlid%3Def4641d8b2911cf17a1e2b5695a6c331&vqd=4-313096543684564806350251941325374493261&iurl=%7B1%7DIG%3D3338117844B24444A377EF4E58C56456%26CID%3D1EC9749B354362DA0785635B344D632C%26ID%3DDevEx%2C5041.1",
+      "snippet": "AI Detection Concern? Detect it first, humanize it, and submit with more confidence. Don&#x27;t let AI-written text raise questions. Check, Humanize, and Recheck. Try for Free."
+    },
+    {
+      "title": "Methods and Trends in Detecting AI-Generated Images: A Comprehensive Review",
+      "url": "https://arxiv.org/html/2502.15176v2",
+      "snippet": "RIGID He et al. 2024 introduces a training-free and model-agnostic method for detecting AI-generated images by exploiting the sensitivity of image representations to small noise perturbations."
+    },
+    {
+      "title": "GitHub - agentmorris/MegaDetector: MegaDetector is an AI model that ...",
+      "url": "https://github.com/agentmorris/MegaDetector",
+      "snippet": "MegaDetector is an AI model that identifies animals, people, and vehicles in camera trap images (which also makes it useful for eliminating blank images). This model is trained on several million images from a variety of ecosystems. MegaDetector only finds animals, it doesn&#x27;t identify them to species level. If you&#x27;re looking for a species classifier, check out SpeciesNet, a species classifier ..."
+    },
+    {
+      "title": "AI Image Detector - Detect AI Generated Images - zerogpt.com",
+      "url": "https://www.zerogpt.com/ai-image-detector",
+      "snippet": "Detect AI generated images from all the popular tools. Verify image authenticity and identify AI-created visual content with high accuracy."
+    }
+  ]
+}

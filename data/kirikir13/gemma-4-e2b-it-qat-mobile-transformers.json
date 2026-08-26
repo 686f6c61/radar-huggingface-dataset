@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kirikir13/gemma-4-E2B-it-qat-mobile-transformers",
+  "slug": "kirikir13-gemma-4-e2b-it-qat-mobile-transformers",
+  "author": "kirikir13",
+  "url": "https://huggingface.co/kirikir13/gemma-4-E2B-it-qat-mobile-transformers",
+  "created_at": "2026-08-25T20:25:17.000Z",
+  "updated_at": "2026-08-25T20:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2335794755,
+  "parameters_human": "2.34B",
+  "storage_bytes": 2490281472,
+  "storage_human": "2.5 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E2B-it-qat-mobile-transformers · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "google/gemma-4-E2B-it-qat-mobile-transformers at main",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 with quantization-aware training - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "snippet": "By simulating quantization during training, QAT minimizes quality loss when the model is compressed. This release includes QAT checkpoints for the popular Q4_0 quantization format as well as a novel quantization format specialized for mobile use cases. Using this mobile format, we&#x27;ve reduced the memory footprint of Gemma 4 E2B to 1GB."
+    },
+    {
+      "title": "gemma4:e2b-it-qat",
+      "url": "https://ollama.com/library/gemma4:e2b-it-qat",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "gemma-4-E2B-it-qat-mobile-transformers: Image-to-Text model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-e2b-it-qat-mobile-transformers-google",
+      "snippet": "Overview gemma-4-E2B-it-qat-mobile-transformers is a 2.3 billion effective parameter (5.1B with embeddings) multimodal language model built by google and optimized for mobile and edge device deployment. The model handles text, image, and audio inputs while generating text output, featuring a 128K token context window and support for over 140 languages. This variant uses Quantization-Aware ..."
+    }
+  ]
+}

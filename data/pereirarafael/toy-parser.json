@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pereirarafael/toy-parser",
+  "slug": "pereirarafael-toy-parser",
+  "author": "pereirarafael",
+  "url": "https://huggingface.co/pereirarafael/toy-parser",
+  "created_at": "2026-08-25T20:55:03.000Z",
+  "updated_at": "2026-08-25T20:55:11.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "compact",
+    "critical",
+    "footnote",
+    "intro-background-approach-eval-conclusion",
+    "latex-acl",
+    "medium-balanced",
+    "mixed-active-passive",
+    "visual-question-answering",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pereirarafael (Rafael Pereira) - Hugging Face",
+      "url": "https://huggingface.co/pereirarafael",
+      "snippet": "User profile of Rafael Pereira on Hugging Face"
+    },
+    {
+      "title": "GitHub - xaronox/ToyParser: A parser for toy code for the toy processor ...",
+      "url": "https://github.com/xaronox/ToyParser",
+      "snippet": "About A parser for toy code for the toy processor, a simple processor model. Look here for an overview:"
+    },
+    {
+      "title": "GitHub - igrishaev/toy-parser",
+      "url": "https://github.com/igrishaev/toy-parser",
+      "snippet": "Contribute to igrishaev/toy-parser development by creating an account on GitHub."
+    },
+    {
+      "title": "Theory Parser_Toy_extended - isa-afp.org",
+      "url": "https://www.isa-afp.org/browser_info/current/AFP/Isabelle_Meta_Model/Parser_Toy_extended.html",
+      "snippet": "<?xml version=\"1.0\" encoding=\"utf-8\"?> Theory Parser_Toy_extended"
+    },
+    {
+      "title": "[2103.15348] LayoutParser: A Unified Toolkit for Deep Learning Based ...",
+      "url": "https://arxiv.org/abs/2103.15348",
+      "snippet": "Recent advances in document image analysis (DIA) have been primarily driven by the application of neural networks. Ideally, research outcomes could be easily deployed in production and extended for further investigation. However, various factors like loosely organized codebases and sophisticated model configurations complicate the easy reuse of important innovations by a wide audience. Though ..."
+    }
+  ]
+}

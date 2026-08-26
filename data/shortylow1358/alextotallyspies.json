@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shortylow1358/alextotallyspies",
+  "slug": "shortylow1358-alextotallyspies",
+  "author": "shortylow1358",
+  "url": "https://huggingface.co/shortylow1358/alextotallyspies",
+  "created_at": "2026-08-26T01:30:24.000Z",
+  "updated_at": "2026-08-26T02:05:39.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53232145,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alex - Katie Leigh (Totally Spies!) (English) [RVC v2] [400 Epochs] AI ...",
+      "url": "https://voice-models.com/model/9im",
+      "snippet": "Alex - Katie Leigh (Totally Spies!) (English) [RVC v2] [400 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Alex totally spies｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1670824670956242658",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Alex totally spies&#x27; model on PixAI! Search for \"Alex totally spies\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Alex - Totally Spies (SDXL Illustrious) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1858644626886672524",
+      "snippet": "Generate stunning character, cartoon, Totally Spies, alex anime art with the &#x27;Alex - Totally Spies (SDXL Illustrious)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Alex totally spies｜AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1670824670956242658",
+      "snippet": "Try out the &#x27;Alex totally spies&#x27; AI Art Model to generate stunning Anime AI art on PixAI. Browsing artwork created using the &#x27;Alex totally spies&#x27; AI Art Model."
+    },
+    {
+      "title": "Alex - Totally Spies｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1743835949939012877-Alex-Totally-Spies",
+      "snippet": "Just created this stunning character, cartoon, Totally Spies, alex anime art with the amazing &#x27;Alex - Totally Spies&#x27; model on PixAI! Search for \"Alex - Totally Spies\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    }
+  ]
+}

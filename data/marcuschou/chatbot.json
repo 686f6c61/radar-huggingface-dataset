@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "marcuschou/chatbot",
+  "slug": "marcuschou-chatbot",
+  "author": "marcuschou",
+  "url": "https://huggingface.co/marcuschou/chatbot",
+  "created_at": "2026-08-25T19:35:55.000Z",
+  "updated_at": "2026-08-25T19:36:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "enthusiastic",
+    "html",
+    "intro-background-approach-eval-conclusion",
+    "narrative-progressive",
+    "numeric-apa",
+    "structured-imrad",
+    "video-understanding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "app.py · marcusts/chatbot at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/marcusts/chatbot/blob/main/app.py",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chat with Marcus | character.ai | AI Chat, Reimagined-Your Words. Your ...",
+      "url": "https://character.ai/chat/b4h4qRWymLc0bmAg9uaFkF5pWhlipsAKGgqHSFHMhCg",
+      "snippet": "Chat with Marcus: ୨Secretly dating୧. Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "Marcus · Free AI Chatbot",
+      "url": "https://miniapps.ai/marcusnf",
+      "snippet": "Chat with Marcus. A charming black guy ready for engaging conversations and travel advice.. Try this and more free AI and ChatGPT tools and chatbots on miniapps.ai!"
+    },
+    {
+      "title": "HuggingChat - Chat with AI models",
+      "url": "https://huggingface.co/chat/",
+      "snippet": "Welcome to HuggingChat, the chat app powered by open source AI models. Omni automatically picks the best AI model to give you optimal answers depending on your requests. You can also choose from any available open source models to chat with directly."
+    },
+    {
+      "title": "chatbotai.com",
+      "url": "https://chatbotai.com/",
+      "snippet": "Chat with leading AI models including Claude Opus, GPT-5, Gemini, Grok, DeepSeek, and more. Create AI images, generate AI videos, and enjoy fast, natural, intelligent conversations - all in one place."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hugodavid/bart-retrieval68",
+  "slug": "hugodavid-bart-retrieval68",
+  "author": "hugodavid",
+  "url": "https://huggingface.co/hugodavid/bart-retrieval68",
+  "created_at": "2026-08-25T20:16:34.000Z",
+  "updated_at": "2026-08-25T20:16:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "contrastive-learning",
+    "first-person-plural",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "narrative-progressive",
+    "neutral",
+    "short-punchy",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=BART",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "BART - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.18.0/en/model_doc/bart",
+      "snippet": "It is used to instantiate a BART model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the BART facebook/bart-large architecture. Configuration objects inherit from PretrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "Guide to BART (Bidirectional & Autoregressive Transformer)",
+      "url": "https://www.analyticsvidhya.com/blog/2024/11/bart-model/",
+      "snippet": "What is BART? Understanding BART requires contextual frames of its development. In 2019, Facebook AI presented BART as a language model that should cater to language models&#x27; flexibility and power requirements in view of emerging trends. To develop this model, the developers have extensively relied on transformer-related successful concepts such as BERT (Bidirectional Encoder Representations ..."
+    },
+    {
+      "title": "How to Summarize Texts Using the BART Model with Hugging Face ...",
+      "url": "https://www.kdnuggets.com/how-to-summarize-texts-bart-model-hugging-face-transformers",
+      "snippet": "To summarize text using Hugging Face&#x27;s BART model, load the model and tokenizer, input the text, and the model generates a concise summary."
+    },
+    {
+      "title": "Understanding BART: A Breakdown of the BART Model in Natural ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/understanding-bart-breakdown-model-natural-language-nagababu-molleti-swtxc",
+      "snippet": "BART, developed by Facebook AI, is a state-of-the-art model that excels in various NLP tasks. In this article, we will delve into the high-level concepts of the BART model, exploring its ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fqferrari/whisper-caption39",
+  "slug": "fqferrari-whisper-caption39",
+  "author": "fqferrari",
+  "url": "https://huggingface.co/fqferrari/whisper-caption39",
+  "created_at": "2026-08-25T21:56:28.000Z",
+  "updated_at": "2026-08-25T21:56:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "batchnorm",
+    "cross-attention",
+    "gelu",
+    "generation",
+    "giant",
+    "linear-warmup",
+    "mobilevit",
+    "multi-query",
+    "orthogonal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shaishaicookie/fcpx-auto-captions: Auto Captions for Final ...",
+      "url": "https://github.com/shaishaicookie/fcpx-auto-captions",
+      "snippet": "Auto Captions for Final Cut Pro Powered by OpenAI&#x27;s Whisper Model"
+    },
+    {
+      "title": "shaishaicookie.github.io - Sherry Wang",
+      "url": "https://shaishaicookie.github.io/",
+      "snippet": "So, I created one! I developed a macOS app that provides auto captions for FCP powered by Open AI&#x27;s Whisper model. During that time, I also tried CapCut&#x27;s video background removal feature - Auto cutout. Compared to Adobe After Effects&#x27; Rotobrush at that time, its cutout was extremely precise."
+    },
+    {
+      "title": "Whisper · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/whisper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Captions for After Effects - GitHub",
+      "url": "https://github.com/mickeyperry/whisper-captions/tree/main",
+      "snippet": "Whisper Captions for After Effects Transcribe audio and generate timed caption text layers directly inside After Effects, using faster-whisper running 100% locally — no cloud, no API keys. Full Hebrew (עברית) support: RTL captions, Hebrew UI preview, and the ivrit.ai Hebrew-tuned Whisper model built into the model picker."
+    },
+    {
+      "title": "laion/whisper-large-v3-turbo-audio-captioner · Hugging Face",
+      "url": "https://huggingface.co/laion/whisper-large-v3-turbo-audio-captioner",
+      "snippet": "Model Description This model is a fine-tuned version of openai/whisper-large-v3-turbo (809M parameters) trained for audio captioning — generating natural language descriptions of audio content rather than transcription."
+    }
+  ]
+}

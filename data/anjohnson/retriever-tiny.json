@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "anjohnson/retriever-tiny",
+  "slug": "anjohnson-retriever-tiny",
+  "author": "anjohnson",
+  "url": "https://huggingface.co/anjohnson/retriever-tiny",
+  "created_at": "2026-08-25T20:32:33.000Z",
+  "updated_at": "2026-08-25T20:32:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "compact",
+    "critical",
+    "detailed-descriptive",
+    "first-person-plural",
+    "lightweight-multimodal",
+    "markdown",
+    "medium-balanced",
+    "numeric-apa",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Open Source Models - Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/tiny",
+      "snippet": "Tiny open source models with 4B parameters or fewer. Fast and efficient models for edge computing, mobile apps, and environments with limited resources."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    },
+    {
+      "title": "rtrvr.ai | Make every site work for you.",
+      "url": "https://rtrvr.ai/",
+      "snippet": "Make every site work for you. Describe the outcome. rtrvr works across the open web and the sites you&#x27;re signed into, then brings back the finished result."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Retriever-Pretrained",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "infly/inf-retriever-v1 · Hugging Face",
+      "url": "https://huggingface.co/infly/inf-retriever-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Dekonstruktio/28",
+  "slug": "dekonstruktio-28",
+  "author": "Dekonstruktio",
+  "url": "https://huggingface.co/Dekonstruktio/28",
+  "created_at": "2026-08-25T22:13:57.000Z",
+  "updated_at": "2026-08-25T22:13:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1572247336,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dekonstruktio (D) - Hugging Face",
+      "url": "https://huggingface.co/Dekonstruktio/models",
+      "snippet": "User profile of D on Hugging Face"
+    },
+    {
+      "title": "Dekonstruktio/27 · Hugging Face",
+      "url": "https://huggingface.co/Dekonstruktio/27",
+      "snippet": "Dekonstruktio / 27 like 0 Text-to-Image Diffusers English lora krea krea-2 fal-ai template:diffusion-lora painterly License:krea-2-community-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.12056",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "AI Research for Model UN, Debate & Politics | Model Diplomat",
+      "url": "https://modeldiplomat.com/",
+      "snippet": "The AI research tool for Model UN, debate, History Day, AP, and IB — position papers, cases, and research with a real source on every claim."
+    }
+  ]
+}

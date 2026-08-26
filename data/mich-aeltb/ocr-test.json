@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mich-aeltb/ocr-test",
+  "slug": "mich-aeltb-ocr-test",
+  "author": "Mich-aeltb",
+  "url": "https://huggingface.co/Mich-aeltb/ocr-test",
+  "created_at": "2026-08-25T19:51:39.000Z",
+  "updated_at": "2026-08-25T19:51:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "author-year",
+    "cautious",
+    "intro-method-exp-related-conclusion",
+    "knowledge-distillation",
+    "latex-arxiv",
+    "narrative-progressive",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - getomni-ai/benchmark: OCR Benchmark · GitHub",
+      "url": "https://github.com/getomni-ai/benchmark",
+      "snippet": "A benchmarking tool that compares OCR and data extraction capabilities of different large multimodal models such as gpt-4o, evaluating both text and json extraction accuracy. The goal of this benchmark is to publish a comprehensive benchmark of OCRaccuracy across traditional OCR providers and ..."
+    },
+    {
+      "title": "mindee/doctr: docTR (Document Text Recognition) - GitHub",
+      "url": "https://github.com/mindee/doctr",
+      "snippet": "Quick Tour Getting your pretrained model End-to-End OCR is achieved in docTR using a two-stage approach: text detection (localizing words), then text recognition (identify all characters in the word). As such, you can select the architecture used for text detection, and the one for text recognition from the list of available implementations."
+    },
+    {
+      "title": "OCR Arena",
+      "url": "https://www.ocrarena.ai/",
+      "snippet": "OCR Arena is a free playground for testing and evaluating leading foundation VLMs and open source OCR models side-by-side. Upload a document, measure accuracy, and vote for the best models on a public leaderboard."
+    },
+    {
+      "title": "Recognize text in images with ML Kit on Android",
+      "url": "https://developers.google.com/ml-kit/vision/text-recognition/v2/android",
+      "snippet": "ML Kit&#x27;s Text Recognition API enables extraction of text from images and videos on Android devices running API level 21 or higher. Developers can choose between bundled (larger app size, faster initialization) and unbundled (smaller app size, dynamic download) installation options. Input image quality, such as resolution and focus, significantly affects text recognition accuracy. Performance ..."
+    },
+    {
+      "title": "OCR Benchmark: Text Extraction / Capture Accuracy",
+      "url": "https://aimultiple.com/ocr-accuracy",
+      "snippet": "In the benchmark, we used the high-performing multilingual paraphrase model, MiniLM-L12-v2, to compute the similarity score between each product&#x27;s output and the ground-truth texts. This score represents the text accuracy level. The similarity function uses a cosine distance metric to calculate the similarity between two texts."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "KaiyueChen/smolvla_task1_2.8w",
+  "slug": "kaiyuechen-smolvla_task1_2-8w",
+  "author": "KaiyueChen",
+  "url": "https://huggingface.co/KaiyueChen/smolvla_task1_2.8w",
+  "created_at": "2026-08-26T03:39:02.000Z",
+  "updated_at": "2026-08-26T03:39:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:lerobot/smolvla_base",
+    "lora",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209630256,
+  "storage_human": "210 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - KaiyueChen-code/smolvla",
+      "url": "https://github.com/KaiyueChen-code/smolvla",
+      "snippet": "Contribute to KaiyueChen-code/smolvla development by creating an account on GitHub."
+    },
+    {
+      "title": "KaiyueChen/task1_smolvla_3w · Hugging Face",
+      "url": "https://huggingface.co/KaiyueChen/task1_smolvla_3w",
+      "snippet": "Instructions to use KaiyueChen/task1_smolvla_3w with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use KaiyueChen/task1_smolvla_3w with PEFT:"
+    },
+    {
+      "title": "Kaiyue Chen - Homepage",
+      "url": "https://kaiyuechen-code.github.io/",
+      "snippet": "Undergraduate researcher in tactile-guided Vision-Language-Action and robotic manipulation."
+    },
+    {
+      "title": "KaiyueChen-code (Eric_Chen) · GitHub",
+      "url": "https://github.com/KaiyueChen-code",
+      "snippet": "KaiyueChen-code has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "KaiyueChen (Kaiyuechen) - Hugging Face",
+      "url": "https://huggingface.co/KaiyueChen/models",
+      "snippet": "User profile of Kaiyuechen on Hugging Face Recent Activity updated a dataset41 minutes ago KaiyueChen/pick_cube_02 updated a datasetabout 2 hours ago KaiyueChen/pick_cube_01 updated a datasetabout 4 hours ago KaiyueChen/pick_cube_fix View all activity"
+    }
+  ]
+}

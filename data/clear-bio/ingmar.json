@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "clear-bio/ingmar",
+  "slug": "clear-bio-ingmar",
+  "author": "clear-bio",
+  "url": "https://huggingface.co/clear-bio/ingmar",
+  "created_at": "2026-08-25T22:49:43.000Z",
+  "updated_at": "2026-08-25T22:50:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "protein-language-model",
+    "viral-proteins",
+    "polyprotein",
+    "cleavage-sites",
+    "esmc",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3791953,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clear.bio case study | Google Cloud",
+      "url": "https://cloud.google.com/customers/clear-bio",
+      "snippet": "Clear.bio is far from finished with its innovative journey. They plan to continue leveraging Google AI, scaling their successful predictive model to even more teams, attracting new clients, and expanding into additional countries."
+    },
+    {
+      "title": "Clear.bio",
+      "url": "https://www.clear.bio/",
+      "snippet": "Clear.bio&#x27;s mission Clear&#x27;s founders realized they could help millions of people with diabetes by providing personalized insight into the effect of diet on their blood sugar levels. Clear&#x27;s mission is to make better health simple and accessible to everyone."
+    },
+    {
+      "title": "Hey all you sovereign AI enthusiasts out there, look at the lovely ...",
+      "url": "https://www.linkedin.com/posts/martin-wei%C3%9F-577a8978_hey-all-you-sovereign-ai-enthusiasts-out-activity-7470038188128997377-xei6",
+      "snippet": "Hey all you sovereign AI enthusiasts out there, look at the lovely present Ingmar gave us. Super easy to use (no installation required!), provides a clear picture how all those local LLMs that we ..."
+    },
+    {
+      "title": "AI Crafts Clear Bio Images Sans Fancy Gear - Mirage News",
+      "url": "https://www.miragenews.com/ai-crafts-clear-bio-images-sans-fancy-gear-1387558/",
+      "snippet": "A team from the Shroff Lab has developed a new AI method that produces sharp microscopy images throughout a thick biological sample. To create the new technique, the team first figured out a way to model how the image was being degraded as the microscope imaged deeper into a uniform sample."
+    },
+    {
+      "title": "From Observation to Insight: Mechanistic World Models and the Quest for ...",
+      "url": "https://arxiv.org/pdf/2607.12474",
+      "snippet": "The field of mechanistic interpretability [26], originally developed in the context of AI safety and alignment of large models, reverse-engineers how information is processed within a model."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ghazni101/Apodex-1.1-mini-MQ4RP",
+  "slug": "ghazni101-apodex-1-1-mini-mq4rp",
+  "author": "ghazni101",
+  "url": "https://huggingface.co/ghazni101/Apodex-1.1-mini-MQ4RP",
+  "created_at": "2026-08-25T20:07:15.000Z",
+  "updated_at": "2026-08-25T20:27:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "hipfire",
+  "languages": [],
+  "tags": [
+    "hipfire",
+    "amd",
+    "rdna",
+    "quantized",
+    "4-bit",
+    "apodex",
+    "moe",
+    "mixture-of-experts",
+    "vision-language",
+    "text-generation",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:finetune:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37478649856,
+  "storage_human": "37.5 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abenzerps/Apodex-1.1-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Apodex-1.1-mini-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://arxiv.org/abs/2608.23283",
+      "snippet": "Across complex professional work, finance, scientific research, mathematics, coding, and search, Apodex 1.1 reaches the leading performance band despite using a substantially smaller model than many frontier systems. The 35B-parameter Apodex 1.1 Mini further retains strong working capability in a locally deployable form."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.ai/",
+      "snippet": "The hardest problems are heavy-duty and have no existing answer. Apodex does the deep research to find one, and checks every step so you can trust the result."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.com/",
+      "snippet": "To research, solve, and discover at the frontier requires more than model capacity — it requires rigorous reasoning, each step verified. Apodex is an AI system designed for complex and demanding research tasks. It structurally splits the reasoning solver from the verifier to deliver grounded, auditable intelligence across three distinct capability tiers."
+    },
+    {
+      "title": "Apodex-1.1-mini: 36B agent weights, Agent Team harness",
+      "url": "https://ccleaks.com/news/apodex-1-1-mini-agent-team-hf-aug-2026",
+      "snippet": "The Hugging Face model card for apodex/Apodex-1.1-mini titles the release \"Apodex 1.1: Scaling Agentic Intelligence for Complex Work,\" describes Apodex-1.1 as a reasoning-first model for complex, long-horizon research tasks that works directly with files, data, code, and tools, powered by AgentOS and an asynchronous Agent Team, and points to a ..."
+    }
+  ]
+}

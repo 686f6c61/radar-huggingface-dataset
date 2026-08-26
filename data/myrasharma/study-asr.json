@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MYRASHARMA/study-asr",
+  "slug": "myrasharma-study-asr",
+  "author": "MYRASHARMA",
+  "url": "https://huggingface.co/MYRASHARMA/study-asr",
+  "created_at": "2026-08-25T23:30:23.000Z",
+  "updated_at": "2026-08-25T23:30:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "contrastive",
+    "exponential",
+    "gated-fusion",
+    "huge",
+    "mish",
+    "orthogonal",
+    "scalenorm",
+    "standard",
+    "swin-t",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "asr-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/asr-model",
+      "snippet": "A multilingual ASR model that can recognize ten Turkic languages—Azerbaijani, Bashkir, Chuvash, Kazakh, Kyrgyz, Sakha, Tatar, Turkish, Uyghur, and Uzbek."
+    },
+    {
+      "title": "Automatic speech recognition · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/asr",
+      "snippet": "Automatic speech recognition Automatic speech recognition (ASR) converts a speech signal to text, mapping a sequence of audio inputs to text outputs. Virtual assistants like Siri and Alexa use ASR models to help users every day, and there are many other useful user-facing applications like live captioning and note-taking during meetings."
+    },
+    {
+      "title": "Saaras V3 | Sarvam AI",
+      "url": "https://www.sarvam.ai/blogs/asr",
+      "snippet": "Saaras V3 is designed with this reality as a starting point. The model is trained on 1 million+ hours of curated multilingual audio data spanning Indian languages, accents, and acoustic conditions with a special focus on low resource languages. Adaptive data sampling during the training ensured good performance across languages."
+    },
+    {
+      "title": "China AI Export Restrictions: Reuters Report Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/china-overseas-ai-model-restrictions-reuters-july-2026",
+      "snippet": "Reuters July 7: China may curb overseas access to top AI models. Alibaba, ByteDance, Z.ai talks, debunking context, tiered open weights, vs US controls."
+    }
+  ]
+}

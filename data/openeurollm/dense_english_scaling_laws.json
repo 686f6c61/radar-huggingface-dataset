@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "openeurollm/dense_english_scaling_laws",
+  "slug": "openeurollm-dense_english_scaling_laws",
+  "author": "openeurollm",
+  "url": "https://huggingface.co/openeurollm/dense_english_scaling_laws",
+  "created_at": "2026-08-21T07:10:18.000Z",
+  "updated_at": "2026-08-25T23:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 588257608656,
+  "storage_human": "588.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-sci and OpenEuroLLM release of reference models",
+      "url": "https://openeurollm.eu/blog/open-sci-oellm-reference-models-release",
+      "snippet": "Aug. 22, 2025 Open-sci and OpenEuroLLM release of reference models Together with Open-sci, we are releasing open-sci-ref 0.01 - a research-dense transformer model family. Our aim is to establish scaling laws that enable ranking of datasets and other hyperparameters."
+    },
+    {
+      "title": "OpenEuroLLM",
+      "url": "https://www.openeurollm.eu/",
+      "snippet": "Our colleague from the University of Oslo, Stephan Oepen, presented the OpenEuroLLM project goals and current status at the 2nd International Workshop on Open Source Sovereign Foundation Models (OSFM), which brought together experts to discuss strategies for promoting AI innovation and digital sovereignty in Europe through open and transparent models."
+    },
+    {
+      "title": "OpenEuroLLM - Hugging Face",
+      "url": "https://huggingface.co/openeurollm",
+      "snippet": "Open, Multilingual, European, Generative, Foundational LLM"
+    },
+    {
+      "title": "Multi-lingual Scaling Laws for Mixture of Expert Language Models",
+      "url": "https://www.eurohpc-ju.europa.eu/multi-lingual-scaling-laws-mixture-expert-language-models_en",
+      "snippet": "The results will guide the design of the first OpenEuroLLM flagship model family, planned for release in 2026, and provide a robust, reproducible workflow, along with empirical insights, that will benefit the broader European open-source LLM ecosystem."
+    },
+    {
+      "title": "openbmb/DensingLaw-ScalingModels · Hugging Face",
+      "url": "https://huggingface.co/openbmb/DensingLaw-ScalingModels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

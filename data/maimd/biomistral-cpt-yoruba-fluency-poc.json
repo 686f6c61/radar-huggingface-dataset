@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "maimd/BioMistral-CPT-Yoruba-Fluency-POC",
+  "slug": "maimd-biomistral-cpt-yoruba-fluency-poc",
+  "author": "maimd",
+  "url": "https://huggingface.co/maimd/BioMistral-CPT-Yoruba-Fluency-POC",
+  "created_at": "2026-08-25T22:10:15.000Z",
+  "updated_at": "2026-08-25T22:10:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BioMistral/BioMistral",
+      "url": "https://github.com/BioMistral/BioMistral",
+      "snippet": "BioMistral 7B is the best performing open-source medical Large Language Model (LLM) in this weight category. We&#x27;ve publicly released the weights for BioMistral 7B on Huggingface and our full multilingual benchmark on GitHub."
+    },
+    {
+      "title": "Downloading models · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/models-downloading",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BioMistral/BioMistral - GitHub",
+      "url": "https://github.com/BioMistral/BioMistral?tab=readme-ov-file",
+      "snippet": "In this paper, we introduce BioMistral, an open-source LLM tailored for the biomedical domain, utilizing Mistral as its foundation model and further pre-trained on PubMed Central. We conduct a comprehensive evaluation of BioMistral on a benchmark comprising 10 established medical question-answering (QA) tasks in English."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Jacaranda/YorubaLlama · Hugging Face",
+      "url": "https://huggingface.co/Jacaranda/YorubaLlama",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

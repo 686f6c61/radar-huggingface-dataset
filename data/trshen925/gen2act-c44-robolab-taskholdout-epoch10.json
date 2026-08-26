@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "trshen925/gen2act-c44-robolab-taskholdout-epoch10",
+  "slug": "trshen925-gen2act-c44-robolab-taskholdout-epoch10",
+  "author": "trshen925",
+  "url": "https://huggingface.co/trshen925/gen2act-c44-robolab-taskholdout-epoch10",
+  "created_at": "2026-08-26T02:28:26.000Z",
+  "updated_at": "2026-08-26T02:29:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "joint-velocity",
+    "gen2act",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1724638719,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - trshen925/gen2act",
+      "url": "https://github.com/trshen925/gen2act",
+      "snippet": "The short C40 continuation loads only EMA model weights from step 12,000 and starts a fresh optimizer and four-epoch piecewise LR schedule. It writes model outputs, logs, and W&B metadata under a new experiment name:"
+    },
+    {
+      "title": "trshen925 (Tingrui Shen) - Hugging Face",
+      "url": "https://huggingface.co/trshen925/models",
+      "snippet": "trshen925&#x27;s models4 Sort: Recently updated trshen925/gen2act-c43-robolab-c39-finetune Robotics •Updated about 5 hours ago"
+    },
+    {
+      "title": "trshen925 - GitHub",
+      "url": "https://github.com/trshen925",
+      "snippet": "Contribution activity August 2026 Created 7 commits in 3 repositories trshen925/starvla 5 commits trshen925/gen2act 1 commit trshen925/FastGen 1 commit Created 2 repositories"
+    },
+    {
+      "title": "Gen2Act: Human Video Generation in Novel Scenarios enables ...",
+      "url": "https://arxiv.org/html/2409.16283v1",
+      "snippet": "The red frame and the language description are input to the video generation model of Gen2Act . The black frames show sub-sampled frames of the generated video, and the blue frames show robot executions conditioned on the generated video."
+    },
+    {
+      "title": "Gen2Act: Human Video Generation in Novel Scenarios enables ...",
+      "url": "https://homangab.github.io/gen2act/",
+      "snippet": "Gen2Act decomposes the overall policy learning into human video generation followed by robot execution conditioned on the generated video. Gen2Act leverage a pre-trained video generation model zero-shot for generating human videos in novel scenarios."
+    }
+  ]
+}

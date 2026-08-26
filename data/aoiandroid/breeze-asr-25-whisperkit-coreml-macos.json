@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/breeze-asr-25-whisperkit-coreml-macos",
+  "slug": "aoiandroid-breeze-asr-25-whisperkit-coreml-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-macos",
+  "created_at": "2026-08-25T19:21:45.000Z",
+  "updated_at": "2026-08-25T19:21:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "macos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1088294850,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/breeze-asr-25-whisperkit-coreml · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml",
+      "snippet": "Instructions to use aoiandroid/breeze-asr-25-whisperkit-coreml with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries WhisperKit How to use aoiandroid/breeze-asr-25-whisperkit-coreml with WhisperKit: # Install CLI with Homebrew on macOS device brew install whisperkit-cli # View all available inference options whisperkit-cli transcribe ..."
+    },
+    {
+      "title": "aoiandroid/Breeze-ASR-25_coreml · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/Breeze-ASR-25_coreml",
+      "snippet": "Breeze-ASR-25 is a high-performance automatic speech recognition model developed by MediaTek Research. This CoreML version enables on-device inference on Apple Silicon devices through Whisperkit integration."
+    },
+    {
+      "title": "Breeze ASR 25 - GitHub",
+      "url": "https://github.com/mtkresearch/Breeze-ASR-25",
+      "snippet": "Breeze ASR 25 is an advanced ASR model fine-tuned from Whisper-large-v2 Optimized for Taiwanese Mandarin Adopted an unified mix embedding for decoding, optimized for Mandarin-English code-switching scenarios, including intra-sentential switching and inter-sentential switching. Enhanced time alignment, suitable for automatic captioning"
+    },
+    {
+      "title": "Installation | mtkresearch/Breeze-ASR-25 | DeepWiki",
+      "url": "https://deepwiki.com/mtkresearch/Breeze-ASR-25/2.1-installation",
+      "snippet": "The installation process sets up the necessary environment for both programmatic integration through the HuggingFace pipeline and command-line usage through the enhanced Whisper CLI interface. Once installed, the system provides access to the specialized Breeze ASR 25 model optimized for Traditional Chinese and code-switching scenarios."
+    },
+    {
+      "title": "Getting Started | mtkresearch/Breeze-ASR-25 | DeepWiki",
+      "url": "https://deepwiki.com/mtkresearch/Breeze-ASR-25/2-getting-started",
+      "snippet": "Getting Started Relevant source files This document provides installation instructions and quick start examples for using Breeze ASR 25, an advanced ASR model fine-tuned from Whisper-large-v2 for Taiwanese Mandarin and code-switching scenarios."
+    }
+  ]
+}

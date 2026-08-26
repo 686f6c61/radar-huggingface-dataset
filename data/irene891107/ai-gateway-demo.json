@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "irene891107/ai-gateway-demo",
+  "slug": "irene891107-ai-gateway-demo",
+  "author": "irene891107",
+  "url": "https://huggingface.co/irene891107/ai-gateway-demo",
+  "created_at": "2026-08-26T02:41:44.000Z",
+  "updated_at": "2026-08-26T02:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "irene891107 (Irene Gray) - Hugging Face",
+      "url": "https://huggingface.co/irene891107",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... liked a model about 1 month ago"
+    },
+    {
+      "title": "AIgateway — One API. Every model.",
+      "url": "https://aigateway.sh/",
+      "snippet": "OpenAI-compatible endpoints to every frontier and open-weight model — text, image, video, voice, audio, embeddings. 1050+ models across 85+ labs, one schema."
+    },
+    {
+      "title": "GitHub - Azure-Samples/AI-Gateway: Labs to explore AI Models, MCP ...",
+      "url": "https://github.com/Azure-Samples/AI-Gateway",
+      "snippet": "AI Gateway Labs Explore the enterprise-grade gateway for managing AI Models, Tools, and Agents 📰 New! The AI Gateway Dev Portal is now live — A starting point for building your own developer portal on top of Azure API Management AI Gateway&#x27;s. Fork it, open it in VS Code with GitHub Copilot (or any coding agent), and shape it to fit your needs!"
+    },
+    {
+      "title": "AI Gateway Demo",
+      "url": "https://ai-sdk-gateway-demo.labs.vercel.dev/",
+      "snippet": "A demo of the Vercel AI Gateway with the AI SDK by Vercel"
+    },
+    {
+      "title": "AI Gateway Demo",
+      "url": "https://vercel-ai-gateway-room.vercel.app/",
+      "snippet": "AI GATEWAY The models in the list are a small subset of those available in the Vercel AI Gateway. See the model library for the full set."
+    }
+  ]
+}

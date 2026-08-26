@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diegofrazasilva/ltx_v3",
+  "slug": "diegofrazasilva-ltx_v3",
+  "author": "diegofrazasilva",
+  "url": "https://huggingface.co/diegofrazasilva/ltx_v3",
+  "created_at": "2026-08-25T19:25:24.000Z",
+  "updated_at": "2026-08-25T19:27:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310168344,
+  "storage_human": "310 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-3 AI Video Generator Online Free | LTX 3.0 Model & LTX-3 Studio",
+      "url": "https://www.ltx-3.com/",
+      "snippet": "LTX-3 AI is a next-generation LTX 3.0 Model for long-form, high-fidelity video. Use LTX-3 Studio to turn scripts and images into LTX 3.0 AI Video clips in seconds, iterate full LTX 3.0 Video storyboards, and review LTX-3 Video Online Free before rendering final 4K cuts with synchronized audio."
+    },
+    {
+      "title": "diffusion_models/ltx-2.3-22b-distilled_transformer_only_fp8_input ...",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy/blob/main/diffusion_models/ltx-2.3-22b-distilled_transformer_only_fp8_input_scaled_v3.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "Official repository for LTX-Video. Contribute to Lightricks/LTX-Video development by creating an account on GitHub."
+    },
+    {
+      "title": "LTX | Open Foundation Models for Video, Audio, and World Simulation",
+      "url": "https://ltx.io/",
+      "snippet": "LTX builds open-weight diffusion transformer foundation models for multimodal video, audio, and world simulation."
+    },
+    {
+      "title": "darksidewalker/DaSiWa-LTX2.3 · Hugging Face",
+      "url": "https://huggingface.co/darksidewalker/DaSiWa-LTX2.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

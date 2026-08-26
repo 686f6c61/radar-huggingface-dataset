@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SwagMessiah100/H3_Character_Sheet_Generator",
+  "slug": "swagmessiah100-h3_character_sheet_generator",
+  "author": "SwagMessiah100",
+  "url": "https://huggingface.co/SwagMessiah100/H3_Character_Sheet_Generator",
+  "created_at": "2026-08-25T19:49:23.000Z",
+  "updated_at": "2026-08-25T19:49:24.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "character-sheet",
+    "turnaround",
+    "character-consistency",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31790918,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H3_Character_Sheet_Generator: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/h3-character-sheet-generator-poopman333",
+      "snippet": "Overview H3_Character_Sheet_Generator is a ComfyUI workflow built by PoopMan333 that generates multi-angle character reference sheets from multiple input images using the MiniMax H3 video model. The core innovation exploits H3&#x27;s video generation capability—which maintains perfect frame-to-frame consistency—to create smooth 360-degree character rotations, then extracts 6 or 4 frames and ..."
+    },
+    {
+      "title": "Character Sheet Maker & Character Creator | CharacterGen",
+      "url": "https://charactergen.app/character-sheet",
+      "snippet": "AI character generator for cartoons, books, and animation. Instantly create complete designs with turnarounds and expressions from photos."
+    },
+    {
+      "title": "H3_Character_Sheet_Generator - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/hf_mirrors/PoopMan333/H3_Character_Sheet_Generator",
+      "snippet": "I started this since I was struggling to find good accurate high quality images I can use as reference for H3, so I realised this model has excellent character consistency and the ability to take up to 9 reference images. Throw in some rough reference images, get back a character sheet you can reuse forever."
+    },
+    {
+      "title": "Character Model Sheet - AI Character Design Reference | OpenCreator",
+      "url": "https://opencreator.io/template-character-model-sheet",
+      "snippet": "Create professional character model sheets with AI. Generate multi-angle character references, turnarounds, and design specifications for animation and game development."
+    },
+    {
+      "title": "AI Model Sheet Generator — Character Ref Sheets | LimeAILab",
+      "url": "https://limeailab.com/ai-image-generator/ai-model-sheet-generator",
+      "snippet": "The AI Model Sheet Generator turns one portrait or text prompt into a production-ready character reference sheet — multi-view turnaround, expressions, outfits, and props."
+    }
+  ]
+}

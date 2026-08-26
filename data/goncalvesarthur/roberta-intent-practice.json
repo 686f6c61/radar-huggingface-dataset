@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "goncalvesarthur/roberta-intent-practice",
+  "slug": "goncalvesarthur-roberta-intent-practice",
+  "author": "goncalvesarthur",
+  "url": "https://huggingface.co/goncalvesarthur/roberta-intent-practice",
+  "created_at": "2026-08-25T23:27:16.000Z",
+  "updated_at": "2026-08-25T23:27:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bilinear",
+    "cosine",
+    "deit",
+    "groupnorm",
+    "linear",
+    "lion",
+    "matching",
+    "mish",
+    "tiny",
+    "xavier-uniform",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intent Detection using XLM-Roberta - GitHub",
+      "url": "https://github.com/MLArtist/intent-detection-using-XLM-Roberta",
+      "snippet": "This repository contains code and resources for building an Intent Detection model using the XLM-Roberta architecture. Intent detection is a common task in Natural Language Processing (NLP), where the goal is to determine the intent or purpose behind a user&#x27;s input. In this project, we leverage the power of the Hugging Face Transformers library to fine-tune an XLM-Roberta model for intent ..."
+    },
+    {
+      "title": "China AI Export Restrictions: Reuters Report Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/china-overseas-ai-model-restrictions-reuters-july-2026",
+      "snippet": "Reuters July 7: China may curb overseas access to top AI models. Alibaba, ByteDance, Z.ai talks, debunking context, tiered open weights, vs US controls."
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    },
+    {
+      "title": "RoBERTa - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_fairseq_roberta/",
+      "snippet": "RoBERTa Model Description Bidirectional Encoder Representations from Transformers, or BERT, is a revolutionary self-supervised pretraining technique that learns to predict intentionally hidden (masked) sections of text."
+    }
+  ]
+}

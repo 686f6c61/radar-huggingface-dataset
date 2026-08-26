@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "fromziro/Negative-v1.0",
+  "slug": "fromziro-negative-v1-0",
+  "author": "fromziro",
+  "url": "https://huggingface.co/fromziro/Negative-v1.0",
+  "created_at": "2026-08-25T23:41:27.000Z",
+  "updated_at": "2026-08-26T00:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "custom_model",
+    "slm",
+    "custom-architecture",
+    "custom-tokenizer",
+    "byte-level",
+    "small",
+    "fromzero",
+    "negative-v1.0",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/finephrase",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:nampdn-ai/tiny-strange-textbooks",
+    "dataset:ByteDance-Seed/mga-fineweb-edu",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:AxiomicLabs/NPset-2-Python-Edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67736,
+  "parameters_human": "67736",
+  "storage_bytes": 283192,
+  "storage_human": "283192 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fromziro (FromZero) - Hugging Face",
+      "url": "https://huggingface.co/fromziro",
+      "snippet": "Why \" FromZero \"? FromZero is inspired by Re:Zero - Starting Life in Another World. Just like the main character, all of our models begin from zero."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=fromzero",
+      "snippet": "Explore machine learning models. Models 4 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: fromzero Clear all"
+    },
+    {
+      "title": "Best Deep Negative V1.x Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/deep-negative-v1-x-download",
+      "snippet": "This embedding will tell you what is REALLY DISGUSTING🤢🤮So please put it in negative prompt😜[Update:230120] What does it do?These embedding learn what disgus"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    }
+  ]
+}

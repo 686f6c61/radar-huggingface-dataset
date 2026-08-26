@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "avencera/sam3-image-mlx",
+  "slug": "avencera-sam3-image-mlx",
+  "author": "avencera",
+  "url": "https://huggingface.co/avencera/sam3-image-mlx",
+  "created_at": "2026-08-25T20:41:53.000Z",
+  "updated_at": "2026-08-25T20:42:19.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "sam3",
+    "image-segmentation",
+    "mask-generation",
+    "base_model:facebook/sam3",
+    "base_model:finetune:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 849491510,
+  "parameters_human": "849.5M",
+  "storage_bytes": 3402867661,
+  "storage_human": "3.4 GB",
+  "base_model": "facebook/sam3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/sam3-image · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/sam3-image",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · mlx-community/sam3-image at main - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/sam3-image/blob/main/README.md",
+      "snippet": "🎯 MLX SAM3 Segment Anything Model 3 — Native Apple Silicon Implementation This is an MLX port of Meta&#x27;s SAM3 model, optimized for native execution on Apple Silicon (M1/M2/M3/M4) Macs. 📖 Learn more: Check out the accompanying blog post explaining the SAM3 architecture and this implementation. Model Description SAM3 (Segment Anything Model 3) is a powerful image segmentation model that ..."
+    },
+    {
+      "title": "GitHub - Deekshith-Dade/mlx_sam3: MLX SAM3 - MLX Port of SAM3 for ...",
+      "url": "https://github.com/Deekshith-Dade/mlx_sam3",
+      "snippet": "Segment Anything Model 3 — Native Apple Silicon Implementation A high-performance MLX port of Meta&#x27;s SAM3 for interactive image segmentation on Mac"
+    },
+    {
+      "title": "sam3-image · Models",
+      "url": "https://www.modelscope.cn/models/mlx-community/sam3-image",
+      "snippet": "🎯 MLX SAM3 Segment Anything Model 3 — Native Apple Silicon Implementation This is an MLX port of Meta&#x27;s SAM3 model, optimized for native execution on Apple Silicon (M1/M2/M3/M4) Macs. 📖 Learn more: Check out the accompanying blog post explaining the SAM3 architecture and this implementation. Model Description SAM3 (Segment Anything Model 3) is a powerful image segmentation model that ..."
+    },
+    {
+      "title": "mlx_sam3/sam3/model at main · Deekshith-Dade/mlx_sam3 · GitHub",
+      "url": "https://github.com/Deekshith-Dade/mlx_sam3/tree/main/sam3/model",
+      "snippet": "MLX SAM3 - MLX Port of SAM3 for interactive image segmentation with Text and Geometric Prompts - mlx_sam3/sam3/model at main · Deekshith-Dade/mlx_sam3"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sasantoso/clip-chatbot-playground",
+  "slug": "sasantoso-clip-chatbot-playground",
+  "author": "Sasantoso",
+  "url": "https://huggingface.co/Sasantoso/clip-chatbot-playground",
+  "created_at": "2026-08-25T20:11:03.000Z",
+  "updated_at": "2026-08-25T20:11:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "cautious",
+    "detailed-descriptive",
+    "latex-neurips",
+    "mixed-active-passive",
+    "multimodal-reasoning",
+    "numeric-nature",
+    "structured-imrad",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "You focus on streaming, Clip Bot takes care of the content | ClipBot.gg",
+      "url": "https://www.clipbot.gg/",
+      "snippet": "You focus on streaming, Clip Bot takes care of the content. Simply connect your stream, and let our advanced AI system generate the perfect clips and content for you, pinpointing the most engaging moments."
+    },
+    {
+      "title": "Playground - ChatBotKit",
+      "url": "https://chatbotkit.com/playground",
+      "snippet": "Learn and experiment in the chatbot playground Experience the excitement of learning and experimenting with conversational AI. Unlock the full potential of chatbots in a virtual environment designed to enhance your learning process."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "OWASP&#x27;s Chat Playground lets security teams toy with gen AI",
+      "url": "https://www.reversinglabs.com/blog/owasp-chat-playground-lets-you-toy-around-with-ai-security",
+      "snippet": "A new interactive tool for learning about securing generative AI models called Chat Playground has been launched by the OWASP Gen AI Security Project. Steve Wilson, co-chair of the Gen AI Security Project, said that group wanted to provide something with a low bar to getting started — and with Chat Playground, testing teams only need a web browser."
+    },
+    {
+      "title": "playground.chat — AI Model Comparison",
+      "url": "https://playground.chat/",
+      "snippet": "Compare AI models side by side. Send a prompt and see streaming responses from multiple models simultaneously."
+    }
+  ]
+}

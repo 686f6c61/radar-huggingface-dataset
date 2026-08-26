@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Moore-samuel/classifier18",
+  "slug": "moore-samuel-classifier18",
+  "author": "Moore-samuel",
+  "url": "https://huggingface.co/Moore-samuel/classifier18",
+  "created_at": "2026-08-25T23:01:56.000Z",
+  "updated_at": "2026-08-25T23:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "batchnorm",
+    "blip",
+    "huge",
+    "kaiming-normal",
+    "matching",
+    "mish",
+    "sliding-window",
+    "step",
+    "tensor-fusion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image Classifier (Flask & PyTorch) - GitHub",
+      "url": "https://github.com/AtharvaMeherkar/AI-Image-Classifier",
+      "snippet": "AI-Powered Classification: Utilizes a pre-trained PyTorch ResNet18 model (trained on the vast ImageNet dataset) for robust and accurate image classification. Performs all necessary image preprocessing steps (resizing, cropping, normalization) to prepare images for the model&#x27;s input requirements."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Custom classification model - Document Intelligence - Foundry Tools ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-classifier?view=doc-intel-4.0.0",
+      "snippet": "Use the custom classification model to train a model to identify and split the documents you process within your application."
+    },
+    {
+      "title": "GitHub - ryanjay0/miles-deep: Deep Learning Porn Video Classifier ...",
+      "url": "https://github.com/ryanjay0/miles-deep",
+      "snippet": "#Miles Deep - AI Porn Video Editor Using a deep convolutional neural network with residual connections, Miles Deep quickly classifies each second of a pornographic video into 6 categories based on sexual act with 95% accuracy."
+    },
+    {
+      "title": "AI Model Leaderboard (Live, 2026): Local + Frontier Ranked",
+      "url": "https://localaimaster.com/tools/ai-model-leaderboard",
+      "snippet": "Live AI model ranking — 30 local + frontier models scored on SWE-Bench, MMLU, ARC-AGI, AIME, HumanEval. Claude Opus 4.7 leads; DeepSeek V4 tops local. Free, sortable."
+    }
+  ]
+}

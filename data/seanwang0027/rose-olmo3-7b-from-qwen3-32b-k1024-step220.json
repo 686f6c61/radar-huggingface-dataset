@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/rose-olmo3-7b-from-qwen3-32b-k1024-step220",
+  "slug": "seanwang0027-rose-olmo3-7b-from-qwen3-32b-k1024-step220",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/rose-olmo3-7b-from-qwen3-32b-k1024-step220",
+  "created_at": "2026-08-25T21:24:29.000Z",
+  "updated_at": "2026-08-25T21:37:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "rose",
+    "online-distillation",
+    "cross-tokenizer",
+    "dapo-math",
+    "thinking",
+    "base_model:allenai/Olmo-3-7B-Think-SFT",
+    "base_model:finetune:allenai/Olmo-3-7B-Think-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4981178080,
+  "storage_human": "5.0 GB",
+  "base_model": "allenai/Olmo-3-7B-Think-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanWang0027/rose-iter-qwen3-1.7b-from-32b-k4096t1024-round1 · Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/rose-iter-qwen3-1.7b-from-32b-k4096t1024-round1",
+      "snippet": "/ rose-iter-qwen3-1.7b-from-32b-k4096t1024-round1 like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 2B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "SeanWang0027/sciworld-online-rose-qwen3-1p7b-5p5 · Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/sciworld-online-rose-qwen3-1p7b-5p5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

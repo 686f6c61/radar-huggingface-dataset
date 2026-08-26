@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "codex176743/amber-meadow-m2",
+  "slug": "codex176743-amber-meadow-m2",
+  "author": "codex176743",
+  "url": "https://huggingface.co/codex176743/amber-meadow-m2",
+  "created_at": "2026-08-25T19:25:46.000Z",
+  "updated_at": "2026-08-25T19:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693424,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codex176743/20260817-101529 · Hugging Face",
+      "url": "https://huggingface.co/codex176743/20260817-101529",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M2: MiniMax-M2, a model built for Max ...",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2",
+      "snippet": "Today, we release and open source MiniMax-M2, a Mini model built for Max coding & agentic workflows. MiniMax-M2 redefines efficiency for agents. It&#x27;s a compact, fast, and cost-effective MoE model (230 billion total parameters with 10 billion active parameters) built for elite performance in coding and agentic tasks, all while maintaining powerful general intelligence. With just 10 billion ..."
+    },
+    {
+      "title": "MiniMax-M2: A Model Built for AI Coding & Agentic Workflows",
+      "url": "https://minimax-m2.org/",
+      "snippet": "MiniMax-M2 is an open-source AI model built especially for coding and agentic workflows. It&#x27;s designed to help developers write and test code, coordinate tools, and manage multi-step tasks with speed and efficiency."
+    },
+    {
+      "title": "codex176743 (CodeX) · GitHub",
+      "url": "https://github.com/codex176743/",
+      "snippet": "codex176743 has 16 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "MiniMax M2 - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-minimax-minimax-m2.html",
+      "snippet": "MiniMax M2 is MiniMax&#x27;s large language model with strong multilingual capabilities and solid performance on reasoning and coding benchmarks. For more information about model development and performance, see the model/service card."
+    }
+  ]
+}

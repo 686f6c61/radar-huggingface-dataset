@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF",
+  "slug": "cruciblelab-gemma-4-31b-loki-scotoma-v2-0-swa-4096-gguf",
+  "author": "CrucibleLab",
+  "url": "https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF",
+  "created_at": "2026-08-22T22:54:12.000Z",
+  "updated_at": "2026-08-26T01:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "storywriting",
+    "creative-writing",
+    "swa-4096",
+    "gemma",
+    "base_model:CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096",
+    "base_model:quantized:CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 155875450176,
+  "storage_human": "155.9 GB",
+  "base_model": "CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "README.md · ReadyArt/gemma-4-31B-it-scotoma-GGUF at main",
+      "url": "https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-GGUF/blob/main/README.md",
+      "snippet": "scotoma loosens gemma‑4‑31B‑it&#x27;s cautious reflex. In practice, it produces output that&#x27;s more varied, direct, and creative, with less of the base model&#x27;s hedging and assistant persona stiffness. It is not uncensored. The edit removed a bounded region while leaving the rest of the field intact. A blind spot, not blindness."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma4:31b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:31b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    }
+  ]
+}

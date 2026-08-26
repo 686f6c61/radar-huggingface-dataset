@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kazuyasasaki/intent",
+  "slug": "kazuyasasaki-intent",
+  "author": "kazuyasasaki",
+  "url": "https://huggingface.co/kazuyasasaki/intent",
+  "created_at": "2026-08-26T00:14:36.000Z",
+  "updated_at": "2026-08-26T00:14:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exponential",
+    "linear",
+    "novograd",
+    "poolformer",
+    "retrieval",
+    "rmsnorm",
+    "swish",
+    "tensor-fusion",
+    "xavier",
+    "xlarge",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Meta AI Model Gained Internet Access and Hacked Another Organization&#x27;s ...",
+      "url": "https://cybersecuritynews.com/meta-ai-hacked-organizations/",
+      "snippet": "Meta disclosed that an AI model gained internet access during testing and exploited a vulnerability in another organization&#x27;s system."
+    },
+    {
+      "title": "From Intent Discovery to Recognition with - arXiv.org",
+      "url": "https://arxiv.org/html/2505.11176v1",
+      "snippet": "Topic model experiments show substantial improvements in coherence and relevance after topic expansion, while synthetic data experiments indicate that in-class few-shot prompting significantly improves the quality and utility of synthetic queries without compromising diversity."
+    },
+    {
+      "title": "Kazuya SASAKI | Professor (Full) | Ph.D. | Hirosaki University ...",
+      "url": "https://www.researchgate.net/profile/Kazuya-Sasaki-2",
+      "snippet": "Kazuya SASAKI, Professor (Full) | Cited by 5,247 | of Hirosaki University, Hirosaki | Read 100 publications | Contact Kazuya SASAKI"
+    },
+    {
+      "title": "User Intent Recognition and Satisfaction with Large Language Models: A ...",
+      "url": "https://arxiv.org/pdf/2402.02136",
+      "snippet": "These two research directions are important to emphasize the complex interplay between the user&#x27;s intent and the model&#x27;s response. Both aspects are crucial in the field of human-computer interaction, as they directly impact the effectiveness and user satisfaction of conversational AI systems."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "divyasi2/caption",
+  "slug": "divyasi2-caption",
+  "author": "divyasi2",
+  "url": "https://huggingface.co/divyasi2/caption",
+  "created_at": "2026-08-26T00:13:39.000Z",
+  "updated_at": "2026-08-26T00:13:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "intro-method-exp-related-conclusion",
+    "medium-balanced",
+    "mixed-active-passive",
+    "multimodal-reasoning",
+    "neutral",
+    "numeric-apa",
+    "plain-text",
+    "structured-imrad",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MieMieeeee/ComfyUI-CaptionThis: Describe a single image or all ...",
+      "url": "https://github.com/MieMieeeee/ComfyUI-CaptionThis",
+      "snippet": "Features Single Image Description Generate detailed captions for an individual image using your chosen model. Users can upload an image and optionally provide specific prompts or guiding questions to enrich the output. Batch Caption Generation Automatically generate captions for multiple images within a specified directory."
+    },
+    {
+      "title": "Captions: AI That Edits Like a Professional Editor",
+      "url": "https://captions.ai/",
+      "snippet": "The best AI video editor helps you create professional-quality content fast, without advanced editing skills—and that&#x27;s exactly what Captions is built for. Unlike traditional editors, Captions uses AI to handle time-consuming tasks automatically, editing your entire video in just a couple of taps."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models. Leon1000/Qwen2.5-VL-7B-NSFW-Caption-V3-ComfyUI"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=video-captioning",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

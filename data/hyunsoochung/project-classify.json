@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hyunsoochung/project-classify",
+  "slug": "hyunsoochung-project-classify",
+  "author": "hyunsoochung",
+  "url": "https://huggingface.co/hyunsoochung/project-classify",
+  "created_at": "2026-08-25T23:03:27.000Z",
+  "updated_at": "2026-08-25T23:03:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "clip",
+    "constant-warmup",
+    "huge",
+    "linear",
+    "retrieval",
+    "scalenorm",
+    "swish",
+    "tucker",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyunsoochung-portfolio (hyunsoo) · GitHub",
+      "url": "https://github.com/hyunsoochung-portfolio",
+      "snippet": "Seoul National. University- Computer Science / CUTBACK AI Engineer - hyunsoochung-portfolio"
+    },
+    {
+      "title": "hyunsoochung-portfolio/ml-projects - GitHub",
+      "url": "https://github.com/hyunsoochung-portfolio/ml-projects",
+      "snippet": "13 classical-ML projects on public datasets. Each one runs the sweeps and ablations I&#x27;d run before picking a model, writes the tables and plots to artifacts/, and ends with a one-line design choice in the README. cardio_protocol splitter variance, nested CV, leakage demo Heart Disease (UCI) acc / F1 ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hyunsoo Chung (Omnious AI): Papers, h-index, Citations & Profile | Bohrium",
+      "url": "https://www.bohrium.com/scholar/516368g8/Hyunsoo_Chung",
+      "snippet": "Academic profile for Hyunsoo Chung (Omnious AI). Stats: 4 h-index, 52 citations, and 8 papers. Explore full publication list, research topics, and co-authors."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "daniilsolovyov/classify-v2",
+  "slug": "daniilsolovyov-classify-v2",
+  "author": "daniilsolovyov",
+  "url": "https://huggingface.co/daniilsolovyov/classify-v2",
+  "created_at": "2026-08-25T19:56:34.000Z",
+  "updated_at": "2026-08-25T19:56:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "classification",
+    "cosine",
+    "flamingo",
+    "flash",
+    "kaiming",
+    "large",
+    "mish",
+    "scalenorm",
+    "tucker",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaniilSolovyov (Daniil Solovyov) · GitHub",
+      "url": "https://github.com/DaniilSolovyov",
+      "snippet": "DaniilSolovyov has 30 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "How to Classify Images with DINOv2 - Roboflow Blog",
+      "url": "https://blog.roboflow.com/how-to-classify-images-with-dinov2/",
+      "snippet": "In this guide, we&#x27;re going to discuss how to classify images using DINOv2 embeddings and a C-Support Vector Classification (SVC) linear classification model. By the end of this guide, we&#x27;ll have a model trained on the MIT Indoor Scene Recognition dataset that classifies the scene in an image. Let&#x27;s get started!"
+    },
+    {
+      "title": "ai-skills-megapack/classify_v2.py at main · zenH-jpg/ai ... - GitHub",
+      "url": "https://github.com/zenH-jpg/ai-skills-megapack/blob/main/classify_v2.py",
+      "snippet": "1,445 curated AI coding agent skills (SKILL.md) — packaged for Claude Code, Cursor, Codex CLI, Antigravity. 9 category packs + free complete collection. - zenH-jpg/ai-skills-megapack"
+    },
+    {
+      "title": "ai_classify function | Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_classify",
+      "snippet": "Applies to: Databricks SQL Databricks Runtime The ai_classify () function classifies text content according to custom labels you provide. You can use simple label names for basic classification, or add label descriptions and instructions to improve accuracy for use cases like customer support routing, document categorization, and content analysis."
+    },
+    {
+      "title": "Classify AI",
+      "url": "https://classify-ai.vercel.app/",
+      "snippet": "The application provides a user-friendly interface for creating CNN based models for image classification without the need for coding or deep learning expertise."
+    }
+  ]
+}

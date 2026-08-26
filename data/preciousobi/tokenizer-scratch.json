@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "preciousobi/tokenizer-scratch",
+  "slug": "preciousobi-tokenizer-scratch",
+  "author": "preciousobi",
+  "url": "https://huggingface.co/preciousobi/tokenizer-scratch",
+  "created_at": "2026-08-25T20:39:28.000Z",
+  "updated_at": "2026-08-25T20:39:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "concat-mlp",
+    "constant-warmup",
+    "contrastive",
+    "instancenorm",
+    "kaiming-normal",
+    "mae",
+    "rmsprop",
+    "sparse",
+    "xlarge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer?view",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "The Tokenizer Playground - a Hugging Face Space by PeterPinetree",
+      "url": "https://huggingface.co/spaces/PeterPinetree/TokenVisualizer",
+      "snippet": "Token Visualizer Enter any text and see how AI turns it into tokens and IDs, the building blocks of its thinking. Model"
+    },
+    {
+      "title": "OpenAI Tokenizer - lunary.ai",
+      "url": "https://lunary.ai/openai-tokenizer",
+      "snippet": "OpenAI Tokenizer Use this tool below to understand how a piece of text might be tokenized by OpenAI models (gpt-5, gpt-5-mini, gpt-5-nano, gpt-4o, gpt-4.1) and the total count of tokens in that piece of text."
+    },
+    {
+      "title": "Tokenization | Learn how to interact with OpenAI models",
+      "url": "https://microsoft.github.io/Workshop-Interact-with-OpenAI-models/tokenization/",
+      "snippet": "It&#x27;s this token representation that allows AI models to generate words that are not in any dictionary, but without having to generate text on a letter-by-letter basis (which could easily result in gibberish). Build your intuition by trying out other words or phrases. What is Tokenization? How are Tokens Used? Why Does It Matter? OpenAI ..."
+    }
+  ]
+}

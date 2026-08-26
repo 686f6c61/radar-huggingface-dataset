@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pakaho-q1/Uni-Face",
+  "slug": "pakaho-q1-uni-face",
+  "author": "Pakaho-q1",
+  "url": "https://huggingface.co/Pakaho-q1/Uni-Face",
+  "created_at": "2026-08-25T23:40:40.000Z",
+  "updated_at": "2026-08-26T00:11:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-swap",
+    "uni-face",
+    "image-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11179598875,
+  "storage_human": "11.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pakaho-q1/onnx-models · Hugging Face",
+      "url": "https://huggingface.co/Pakaho-q1/onnx-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Pakaho-q1/uni-face",
+      "url": "https://github.com/Pakaho-q1/uni-face",
+      "snippet": "Contribute to Pakaho-q1/uni-face development by creating an account on GitHub."
+    },
+    {
+      "title": "Pakaho-q1/onnx-models at main - Hugging Face",
+      "url": "https://huggingface.co/Pakaho-q1/onnx-models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "uni-face/api at main · Pakaho-q1/uni-face · GitHub",
+      "url": "https://github.com/Pakaho-q1/uni-face/tree/main/api",
+      "snippet": "Contribute to Pakaho-q1/uni-face development by creating an account on GitHub."
+    },
+    {
+      "title": "README.md · Pakaho-q1/window-wheel_store at main",
+      "url": "https://d6108366.hf-mirror.com/Pakaho-q1/window-wheel_store/blob/main/README.md?code=true",
+      "snippet": "Pakaho-q1 / window-wheel_store like 0 PyTorch comfyui stable-diffusion cuda flash-attention nunchaku sage-attention windows wheels License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main window-wheel_store /README.md Pakaho-q1 Update README.md 7d31f26 verified2 months ago preview code | Raw Download with hf ..."
+    }
+  ]
+}

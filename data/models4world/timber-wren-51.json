@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/timber-wren-51",
+  "slug": "models4world-timber-wren-51",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/timber-wren-51",
+  "created_at": "2026-08-25T23:12:56.000Z",
+  "updated_at": "2026-08-25T23:17:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models4world/tinker_6954bf1b · Hugging Face",
+      "url": "https://huggingface.co/models4world/tinker_6954bf1b",
+      "snippet": "models4world / tinker_6954bf1b like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world/models",
+      "snippet": "User profile of models4world on Hugging Face"
+    },
+    {
+      "title": "All 393 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 393 large language models across 293 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Agentic GenBI: Trusted Answers from Your Data | Wren AI",
+      "url": "https://www.getwren.ai/",
+      "snippet": "Wren AI connects your warehouse and databases to natural-language analytics, dashboards, and AI agents. Governed, auditable, open source. Try it free."
+    }
+  ]
+}

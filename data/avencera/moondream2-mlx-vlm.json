@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "avencera/moondream2-mlx-vlm",
+  "slug": "avencera-moondream2-mlx-vlm",
+  "author": "avencera",
+  "url": "https://huggingface.co/avencera/moondream2-mlx-vlm",
+  "created_at": "2026-08-26T01:41:32.000Z",
+  "updated_at": "2026-08-26T01:44:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moondream1",
+    "image-text-to-text",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1927237104,
+  "parameters_human": "1.93B",
+  "storage_bytes": 129574926217,
+  "storage_human": "129.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moondream",
+      "url": "https://moondream.ai/",
+      "snippet": "A fast & powerful vision model that rocks. Fast, efficient, and runs anywhere you need it. Once your model is accurate, performance and cost become the next wall. Photon is the inference engine we built to run Moondream in production. Moondream Cloud and partner clouds give you a hosted path if you want one."
+    },
+    {
+      "title": "mlx-vlm/mlx_vlm/models/moondream2/README.md at main - GitHub",
+      "url": "https://github.com/Blaizzy/mlx-vlm/blob/main/mlx_vlm/models/moondream2/README.md",
+      "snippet": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. - Blaizzy/mlx-vlm"
+    },
+    {
+      "title": "vikhyatk/moondream2 · Hugging Face",
+      "url": "https://huggingface.co/vikhyatk/moondream2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - moondream.ai",
+      "url": "https://moondream.ai/models",
+      "snippet": "Learn more Model lineup Choose your model Three models, one API. Moondream 3 Preview is the default for new projects. Moondream 2 is production-stable. Moondream 2 0.5B is a distillation target for extreme edge. ... The latest Moondream architecture. 9B total parameters with a sparse mixture-of-experts design that activates only 2B parameters ..."
+    },
+    {
+      "title": "GitHub - inferless/moondream2: Tiny 1.93B vision-language model ...",
+      "url": "https://github.com/inferless/Moondream2",
+      "snippet": "Moondream2 is a small vision language model designed to run efficiently on edge devices. It comprises 1.86 billion parameters, initially weighted with data from SigLIP and Phi-1.5. Primarily, Moondream excels in responding to image-related queries, generating captions, and performing various other vision language tasks."
+    }
+  ]
+}

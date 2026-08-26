@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "KK3133152/dama-aibrain",
+  "slug": "kk3133152-dama-aibrain",
+  "author": "KK3133152",
+  "url": "https://huggingface.co/KK3133152/dama-aibrain",
+  "created_at": "2026-08-25T22:46:26.000Z",
+  "updated_at": "2026-08-25T22:56:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ic4u2u/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/ic4u2u/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jinnypang/dama-aibrain-lora · Hugging Face",
+      "url": "https://huggingface.co/Jinnypang/dama-aibrain-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "htg0922/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/htg0922/dama-aibrain",
+      "snippet": "Instructions to use htg0922/dama-aibrain with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use htg0922/dama-aibrain with Transformers:"
+    },
+    {
+      "title": "kyoungsook70/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/kyoungsook70/dama-aibrain",
+      "snippet": "kyoungsook70 / dama-aibrain like 0 Safetensors GGUF gemma4 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dama-aibrain-finetuned-20260823-010940 - Hugging Face",
+      "url": "https://huggingface.co/benesys/dama-aibrain-finetuned-20260823-010940",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

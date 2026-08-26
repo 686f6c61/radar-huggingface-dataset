@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/clip-vit-base-patch32",
+  "slug": "jonnyverse-clip-vit-base-patch32",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/clip-vit-base-patch32",
+  "created_at": "2026-08-25T23:29:43.000Z",
+  "updated_at": "2026-08-25T23:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "clip",
+    "zero-shot-image-classification",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:quantized:openai/clip-vit-base-patch32",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3730752228,
+  "storage_human": "3.7 GB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/clip-vit-base-patch32 · Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-base-patch32",
+      "snippet": "Instructions to use openai/clip-vit-base-patch32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use openai/clip-vit-base-patch32 with Transformers:"
+    },
+    {
+      "title": "conscious1/clip-vit-base-patch32 · Hugging Face",
+      "url": "https://huggingface.co/conscious1/clip-vit-base-patch32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clip-vit-base-patch32: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clip-vit-base-patch32-openai",
+      "snippet": "Overview clip-vit-base-patch32 is a vision-language model developed by openai that learns joint embeddings of images and text through contrastive learning. The model uses a ViT-B/32 Transformer architecture as its image encoder paired with a masked self-attention Transformer as its text encoder, trained to maximize similarity between (image, text) pairs via contrastive loss. Released in ..."
+    },
+    {
+      "title": "clip-vit-base-patch32 · Model · Inferix",
+      "url": "https://inferix.co/models/openai/clip-vit-base-patch32",
+      "snippet": "The model uses a ViT-B/32 Transformer architecture as an image encoder and uses a masked self-attention Transformer as a text encoder. These encoders are trained to maximize the similarity of (image, text) pairs via a contrastive loss."
+    },
+    {
+      "title": "clip-vit-base-patch32 by openai, Zero Shot Image Classification ...",
+      "url": "https://mixpeek.com/model/openai/clip-vit-base-patch32",
+      "snippet": "On Mixpeek, clip-vit-base-patch32 runs as a managed extractor inside a processing pipeline. Point a bucket of zero shot image classification data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    }
+  ]
+}

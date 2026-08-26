@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "phy710/BreastMammo",
+  "slug": "phy710-breastmammo",
+  "author": "phy710",
+  "url": "https://huggingface.co/phy710/BreastMammo",
+  "created_at": "2026-08-25T21:56:10.000Z",
+  "updated_at": "2026-08-25T22:24:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34876558360,
+  "storage_human": "34.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phy710 (phy710) - Hugging Face",
+      "url": "https://huggingface.co/phy710/models",
+      "snippet": "User profile of phy710 on Hugging Face"
+    },
+    {
+      "title": "BreastMammo and DenseMammo: Benchmarks for Mammography Domain ...",
+      "url": "https://arxiv.org/html/2608.10271v1",
+      "snippet": "Breast density classification is a critical component of breast cancer risk assessment, yet AI models often struggle to generalize across clinical sites due to vendor-specific acquisition styles. In this work, we introduce two new datasets, BreastMammo and DenseMammo, to facilitate robust multi-view mammography research. We propose a domain generalization framework that utilizes a foreground ..."
+    },
+    {
+      "title": "GitHub - NUBagciLab/LUMINA: LUMINA Mammography · GitHub",
+      "url": "https://github.com/NUBagciLab/LUMINA",
+      "snippet": "LUMINA Mammography . Contribute to NUBagciLab/LUMINA development by creating an account on GitHub."
+    },
+    {
+      "title": "A Versatile Foundation Model for AI-enabled Mammogram Interpretation",
+      "url": "https://arxiv.org/abs/2509.20271",
+      "snippet": "Here, we introduce VersaMammo, a versatile foundation model for mammograms, designed to overcome these limitations. We curated the largest multi-institutional mammogram dataset to date, comprising 706,239 images from 21 sources."
+    },
+    {
+      "title": "AI-Driven Breast Cancer Diagnosis: A Systematic Review of ... - MDPI",
+      "url": "https://www.mdpi.com/2072-6694/18/8/1305",
+      "snippet": "Background: This article provides a comprehensive overview of recent advancements in artificial intelligence (AI) and deep-learning technologies for breast cancer (BC) diagnosis across various imaging modalities. Methods: A systematic review was conducted in strict adherence to the PRISMA guidelines, incorporating a comparative analysis of 65 peer-reviewed studies published between 2018 and ..."
+    }
+  ]
+}

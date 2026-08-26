@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "enricollen/ItColBERT",
+  "slug": "enricollen-itcolbert",
+  "author": "enricollen",
+  "url": "https://huggingface.co/enricollen/ItColBERT",
+  "created_at": "2026-08-25T23:14:58.000Z",
+  "updated_at": "2026-08-25T23:18:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pylate",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "pylate",
+    "safetensors",
+    "modernbert",
+    "colbert",
+    "late-interaction",
+    "sentence-transformers",
+    "italian",
+    "retrieval",
+    "information-retrieval",
+    "rag",
+    "multi-vector",
+    "sentence-similarity",
+    "it",
+    "arxiv:2112.01488",
+    "arxiv:2108.13897",
+    "arxiv:2402.03216",
+    "base_model:nickprock/Italian-ModernBERT-base-embed-mmarco-mnrl",
+    "base_model:finetune:nickprock/Italian-ModernBERT-base-embed-mmarco-mnrl",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134909184,
+  "parameters_human": "134.9M",
+  "storage_bytes": 540494327,
+  "storage_human": "540 MB",
+  "base_model": "nickprock/Italian-ModernBERT-base-embed-mmarco-mnrl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stanford-futuredata/ColBERT: ColBERT: state-of-the-art neural ...",
+      "url": "https://github.com/stanford-futuredata/ColBERT",
+      "snippet": "ColBERT is a fast and accurate retrieval model, enabling scalable BERT-based search over large text collections in tens of milliseconds. Figure 1: ColBERT&#x27;s late interaction, efficiently scoring the fine-grained similarity between a queries and a passage. These rich interactions allow ColBERT to ..."
+    },
+    {
+      "title": "Enrico Nello",
+      "url": "https://enricollen.com/",
+      "snippet": "The Model Context Protocol (MCP) is an open standard developed by Anthropic that enables AI assistants to securely connect with external data sources and tools."
+    },
+    {
+      "title": "colbert-ir/colbertv2.0 · Hugging Face",
+      "url": "https://huggingface.co/colbert-ir/colbertv2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "enricollen (Enrico Nello) · GitHub",
+      "url": "https://github.com/enricollen",
+      "snippet": "AI Engineer at ExtraRed. enricollen has 33 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "lightonai/colbertv2.0 · Hugging Face",
+      "url": "https://huggingface.co/lightonai/colbertv2.0",
+      "snippet": "PyLate version of colbert-ir/colbertv2. This checkpoint is a version of colbert-ir/colbertv2. compatible with the PyLate library. All the credits belong to the original authors and we thank Omar Khattab for allowing us to share this version of the model. Please refer to the original repository and paper for more information about the model and to PyLate repository for information about usage ..."
+    }
+  ]
+}

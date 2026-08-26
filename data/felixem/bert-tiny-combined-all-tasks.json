@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "felixem/bert-tiny-combined-all-tasks",
+  "slug": "felixem-bert-tiny-combined-all-tasks",
+  "author": "felixem",
+  "url": "https://huggingface.co/felixem/bert-tiny-combined-all-tasks",
+  "created_at": "2026-08-26T03:44:06.000Z",
+  "updated_at": "2026-08-26T03:45:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/felixem/bert-tiny-cls-static-43f2e6",
+    "generated_from_trainer",
+    "ml-intern",
+    "base_model:google/bert_uncased_L-2_H-128_A-2",
+    "base_model:finetune:google/bert_uncased_L-2_H-128_A-2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4388887,
+  "parameters_human": "4.4M",
+  "storage_bytes": 87806069,
+  "storage_human": "88 MB",
+  "base_model": "google/bert_uncased_L-2_H-128_A-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yinmingjun/TinyBERT",
+      "url": "https://github.com/yinmingjun/TinyBERT",
+      "snippet": "TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding. It performs a novel transformer distillation at both the pre-training and task-specific learning stages. The overview of TinyBERT learning is illustrated as follows: For more details about the techniques of TinyBERT, refer to the paper."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Pretrained-Language-Model/TinyBERT/README.md at master - GitHub",
+      "url": "https://github.com/huawei-noah/Pretrained-Language-Model/blob/master/TinyBERT/README.md",
+      "snippet": "Data Augmentation Data augmentation aims to expand the task-specific training set. Learning more task-related examples, the generalization capabilities of student model can be further improved. We combine a pre-trained language model BERT and GloVe embeddings to do word-level replacement for data augmentation."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Latest in AI: New Models, Projects & Releases (2026) | olud.ai",
+      "url": "https://olud.ai/latest.html",
+      "snippet": "Latest in AI What&#x27;s new right now — the freshest models, open-weight and commercial, trending GitHub projects, new Hugging Face Spaces and the AI paper of the day. No fluff, updated hourly."
+    }
+  ]
+}

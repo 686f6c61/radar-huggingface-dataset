@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "timteh673/Qwen3.8-27B-Opus-Reasoning-Control-MLX-8bit",
+  "slug": "timteh673-qwen3-8-27b-opus-reasoning-control-mlx-8bit",
+  "author": "timteh673",
+  "url": "https://huggingface.co/timteh673/Qwen3.8-27B-Opus-Reasoning-Control-MLX-8bit",
+  "created_at": "2026-08-25T20:32:58.000Z",
+  "updated_at": "2026-08-25T20:51:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "reasoning",
+    "vision-language",
+    "personal-model",
+    "control",
+    "baseline-comparator",
+    "apple-silicon",
+    "8-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8027131120,
+  "parameters_human": "8.03B",
+  "storage_bytes": 30370608139,
+  "storage_human": "30.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B: A Comprehensive Technical Analysis - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html",
+      "snippet": "In-depth research analysis of Alibaba&#x27;s Qwen3.8-27B (Aug 14, 2026): 27.8B parameters, beats Claude Opus 4.6 on 15 benchmarks, runs on 24GB VRAM. Complete architecture review and deployment guide."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "DreamFoundries/Qwen3.8-27B-8bit · Hugging Face",
+      "url": "https://huggingface.co/DreamFoundries/Qwen3.8-27B-8bit",
+      "snippet": "DreamFoundries / Qwen3.8-27B-8bit like 0 Text Generation MLX Safetensors qwen3_5 conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

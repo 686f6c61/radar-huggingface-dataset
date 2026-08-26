@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "marwanelamami/nabra-82m-sherpa-onnx",
+  "slug": "marwanelamami-nabra-82m-sherpa-onnx",
+  "author": "marwanelamami",
+  "url": "https://huggingface.co/marwanelamami/nabra-82m-sherpa-onnx",
+  "created_at": "2026-08-26T02:36:37.000Z",
+  "updated_at": "2026-08-26T02:36:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "arabic",
+    "quantization",
+    "int4",
+    "int8",
+    "fp16",
+    "kokoro",
+    "on-device",
+    "ar",
+    "base_model:oddadmix/Nabra-82M-v0.1",
+    "base_model:quantized:oddadmix/Nabra-82M-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304052457,
+  "storage_human": "304 MB",
+  "base_model": "oddadmix/Nabra-82M-v0.1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marwanelamami/Nabra-82M-v0.1-ONNX · Hugging Face",
+      "url": "https://huggingface.co/marwanelamami/Nabra-82M-v0.1-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nabra 82m V0.1 Onnx - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/marwanelamami/nabra-82m-v0.1-onnx",
+      "snippet": "Registry entry for model Nabra 82m V0.1 Onnx; source metadata pending."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "oddadmix/Nabra-82M-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nabra-82M-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

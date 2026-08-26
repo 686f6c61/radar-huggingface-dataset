@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/breeze-asr-25-whisperkit-coreml-ios",
+  "slug": "aoiandroid-breeze-asr-25-whisperkit-coreml-ios",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-ios",
+  "created_at": "2026-08-25T19:21:34.000Z",
+  "updated_at": "2026-08-25T19:21:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "ios",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1088294850,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/breeze-asr-25-whisperkit-coreml · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml",
+      "snippet": "Instructions to use aoiandroid/breeze-asr-25-whisperkit-coreml with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "aoiandroid/Breeze-ASR-25_coreml · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/Breeze-ASR-25_coreml",
+      "snippet": "Breeze-ASR-25 is a high-performance automatic speech recognition model developed by MediaTek Research. This CoreML version enables on-device inference on Apple Silicon devices through Whisperkit integration."
+    },
+    {
+      "title": "Breeze ASR 25 - GitHub",
+      "url": "https://github.com/mtkresearch/Breeze-ASR-25",
+      "snippet": "Breeze ASR 25 is an advanced ASR model fine-tuned from Whisper-large-v2 Optimized for Taiwanese Mandarin Adopted an unified mix embedding for decoding, optimized for Mandarin-English code-switching scenarios, including intra-sentential switching and inter-sentential switching. Enhanced time alignment, suitable for automatic captioning"
+    },
+    {
+      "title": "Installation | mtkresearch/Breeze-ASR-25 | DeepWiki",
+      "url": "https://deepwiki.com/mtkresearch/Breeze-ASR-25/2.1-installation",
+      "snippet": "The installation process sets up the necessary environment for both programmatic integration through the HuggingFace pipeline and command-line usage through the enhanced Whisper CLI interface. Once installed, the system provides access to the specialized Breeze ASR 25 model optimized for Traditional Chinese and code-switching scenarios."
+    },
+    {
+      "title": "GitHub - mtkresearch/BreezeApp: BreezeAPP 是一款為 Android 和 iOS 平台開發的純手機 ...",
+      "url": "https://github.com/mtkresearch/BreezeApp",
+      "snippet": "BreezeAPP 是一款為 Android 和 iOS 平台開發的純手機 AI 應用程式。從 App Store下載，即可在不連網的狀態下享受多項 AI 功能。源碼由聯發創新基地(MediaTek Research)提供。我們旨在推廣兩個概念: 人人都可以在自己的手機上自由選擇並運行不同的LLM - one is free to choose one's own LLM to ru..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/iris-arc-95",
+  "slug": "models4world-iris-arc-95",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/iris-arc-95",
+  "created_at": "2026-08-25T23:55:02.000Z",
+  "updated_at": "2026-08-25T23:57:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Models Database | Browse All AI World Models | world-models.io",
+      "url": "https://world-models.io/en/datasets/world-models/",
+      "snippet": "A structured, searchable database of 48 AI world models spanning model-based reinforcement learning, robotics, video generation, embodied AI, and autonomous systems. Each model record includes architecture details, benchmark context, related papers, and links to the originating lab. Filter by category, status, lab, year, or modality to find the models most relevant to your research."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "World Models",
+      "url": "https://worldmodels.github.io/",
+      "snippet": "Abstract We explore building generative neural network models of popular reinforcement learning environments. Our world model can be trained quickly in an unsupervised manner to learn a compressed spatial and temporal representation of the environment. By using features extracted from the world model as inputs to an agent, we can train a very compact and simple policy that can solve the ..."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Real-time AI model tracking — pricing, benchmarks, releases."
+    }
+  ]
+}

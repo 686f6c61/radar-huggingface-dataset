@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brssmith/segment-finetune",
+  "slug": "brssmith-segment-finetune",
+  "author": "brssmith",
+  "url": "https://huggingface.co/brssmith/segment-finetune",
+  "created_at": "2026-08-25T21:51:23.000Z",
+  "updated_at": "2026-08-25T21:51:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "batchnorm",
+    "kaiming",
+    "lamb",
+    "linear",
+    "linear-warmup",
+    "mae",
+    "multitask",
+    "small",
+    "tensor-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that sho..."
+    },
+    {
+      "title": "How to Fine-Tune AI Models: Techniques, Examples & Step-by-Step Guide",
+      "url": "https://dev.to/jaipalsingh/how-to-fine-tune-ai-models-techniques-examples-step-by-step-guide-1aph",
+      "snippet": "Learn how to fine-tune AI models with practical steps. Covers LoRA, full fine-tuning, dataset prep, and when fine-tuning beats RAG or prompt engineering. Real enterprise use cases included."
+    },
+    {
+      "title": "GitHub - ziqi-jin/finetune-anything: Fine-tune SAM (Segment Anything ...",
+      "url": "https://github.com/ziqi-jin/finetune-anything",
+      "snippet": "Usage finetune-anything (FA) supports the entire training process of SAM model fine-tuning, including the modification of the model structure, as well as the model training, verification, and testing processes. For details, check the How_to_use, the Quick Start gives an example of quickly using FA to train a custom semantic segmentation model."
+    },
+    {
+      "title": "Fine-Tuning a Semantic Segmentation Model on a Custom Dataset and Usage ...",
+      "url": "https://huggingface.co/learn/cookbook/semantic_segmentation_fine_tuning_inference",
+      "snippet": "Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset Fine-Tuning Object Detection on a Custom Dataset, Deployment in Spaces, and Gradio API Integration Fine-Tuning a Semantic Segmentation Model on a Custom Dataset and Usage via the Inference API"
+    }
+  ]
+}

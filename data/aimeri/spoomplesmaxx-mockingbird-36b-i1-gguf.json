@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "aimeri/spoomplesmaxx-mockingbird-36B-i1-GGUF",
+  "slug": "aimeri-spoomplesmaxx-mockingbird-36b-i1-gguf",
+  "author": "aimeri",
+  "url": "https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B-i1-GGUF",
+  "created_at": "2026-08-26T01:00:00.000Z",
+  "updated_at": "2026-08-26T01:16:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "creative-writing",
+    "text-generation",
+    "en",
+    "base_model:aimeri/spoomplesmaxx-mockingbird-36B",
+    "base_model:quantized:aimeri/spoomplesmaxx-mockingbird-36B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36151104512,
+  "parameters_human": "36.15B",
+  "storage_bytes": 98609129184,
+  "storage_human": "98.6 GB",
+  "base_model": "aimeri/spoomplesmaxx-mockingbird-36B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aimeri/spoomplesmaxx-mini-14B · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-mini-14B",
+      "snippet": "SpoomplesMaxx is a generalist model with primary strengths in creative writing and roleplay, plus light competence at instruction following and reasoning. The Mini brings the v2.1 data and training recipe to a 14B you can run on a single 24GB card."
+    },
+    {
+      "title": "GitHub - aimerib/spoomplesmaxx",
+      "url": "https://github.com/aimerib/spoomplesmaxx",
+      "snippet": "These datasets are designed to train a Roleplay (RP), Creative Writing, and \"Smart\" Assistant model Spoomplesmaxx. The goal of combining these specific sets is to create a model that is narratively creative and capable of embodying characters, but also logically sound and capable of following complex instructions."
+    },
+    {
+      "title": "aimeri/spoomplesmaxx-magpie-35B-A3-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/aimeri/spoomplesmaxx-magpie-35B-A3-i1-GGUF",
+      "snippet": "Instructions to use aimeri/spoomplesmaxx-magpie-35B-A3-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GGUF格式开源模型大全：轻量级模型资源合集",
+      "url": "https://model.aibase.com/zh/tag/GGUF%E6%A0%BC%E5%BC%8F",
+      "snippet": "本页面汇聚超200个经过社区精选验证的GGUF格式开源中小模型。模型参数量小，推理速度快，资源占用低，适用于NLP、CV等多领域。兼容PyTorch、TensorFlow等多种框架，支持本地及移动端部署。可一键下载，持续更新，快来挑选适合您的模型!"
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    }
+  ]
+}

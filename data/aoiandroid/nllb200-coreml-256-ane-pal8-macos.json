@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nllb200-coreml-256-ane-pal8-macos",
+  "slug": "aoiandroid-nllb200-coreml-256-ane-pal8-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8-macos",
+  "created_at": "2026-08-25T23:44:03.000Z",
+  "updated_at": "2026-08-26T00:12:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "m2m_100",
+    "translateblue",
+    "macos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1357445429,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/nllb200-coreml-256-ane-pal8 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8",
+      "snippet": "Weights use 8-bit palettization (pal8) for smaller size and Apple Neural Engine-friendly deployment. License The original NLLB distilled checkpoint is released under CC-BY-NC 4.0 (non-commercial). This derivative export inherits the same restrictions. See the NLLB model card. Intended use iOS / macOS apps via CoreML / MLModel Offline or on-device NMT with FLORES language codes (e.g. jpn_Jpan ..."
+    },
+    {
+      "title": "nllb - a aoiandroid Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aoiandroid/nllb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JHmins/NLLB-200-Model: Facebook AI Research Sequence-to ...",
+      "url": "https://github.com/JHmins/NLLB-200-Model",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - JHmins/NLLB-200-Model"
+    },
+    {
+      "title": "GitHub - john-rocky/coreai-model-zoo: Community model zoo for Apple ...",
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "snippet": "Community model zoo for Apple Core AI (iOS/macOS 27): 62 models — LLM, VLM, OCR, ASR, TTS, image/video/music gen, forecasting — each gated against its source model and shipped with the recipe that produced it. Downloadable from Hugging Face, runnable in one line of Swift via CoreAIKit. Plus benchmarks, Metal kernels, knowledge base. - john-rocky/coreai-model-zoo"
+    },
+    {
+      "title": "How to Set Up NLLB-200 Locally: Tutorial | NLLB",
+      "url": "https://nllb.com/setup-nllb-locally/",
+      "snippet": "NLLB-200 can be set up locally in under 30 minutes with basic Python knowledge and a compatible GPU. The distilled 600M model is a good starting point — it fits on consumer GPUs and offers decent quality. For production deployment, use FastAPI or similar framework to serve as a REST API, and consider quantization and CTranslate2 for optimization."
+    }
+  ]
+}

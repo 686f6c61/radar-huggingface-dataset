@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ranjeet447/indian-flight-price-advisor",
+  "slug": "ranjeet447-indian-flight-price-advisor",
+  "author": "ranjeet447",
+  "url": "https://huggingface.co/ranjeet447/indian-flight-price-advisor",
+  "created_at": "2026-08-26T01:38:09.000Z",
+  "updated_at": "2026-08-26T01:38:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "tabular",
+    "lightgbm",
+    "regression",
+    "mlops",
+    "indian-flights",
+    "feast",
+    "en",
+    "dataset:flight-price-prediction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2803820,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ranjeet447 (Ranjeet kumar) - Hugging Face",
+      "url": "https://huggingface.co/ranjeet447",
+      "snippet": "Recent Activity updated a model9 minutes ago ranjeet447/indian-flight-price-advisor published a model9 minutes ago ranjeet447/indian-flight-price-advisor View all activity"
+    },
+    {
+      "title": "GitHub - clayniranjan-web/flight_price_prediction",
+      "url": "https://github.com/clayniranjan-web/flight_price_prediction",
+      "snippet": "Flight Price Prediction ️ An end-to-end Machine Learning project that predicts flight ticket prices in India using Decision Tree and Random Forest regressors — demonstrating how ensemble methods reduce overfitting and improve generalization over a single decision tree."
+    },
+    {
+      "title": "Nit-Preet/Flight-Price-Prediction - GitHub",
+      "url": "https://github.com/Nit-Preet/Flight-Price-Prediction",
+      "snippet": "A regression project that predicts the price of an Indian airline ticket from route, time-of-day, class, and stops, using a public Kaggle airline dataset. - Nit-Preet/Flight-Price-Prediction"
+    },
+    {
+      "title": "Air India Flight Price Tracker",
+      "url": "https://airtrackbot.com/air-india-flight-price-tracker",
+      "snippet": "Monitor Air India flight prices with AirTrack&#x27;s fare tracker. Set up price alerts to catch the best deals on flights across India and international destinations. Discover the optimal time to book and never miss a price drop. Join over 1.8 million savvy travelers and enhance your travel experience."
+    },
+    {
+      "title": "AirHint Flight Price Predictor - when to book cheap flight tickets",
+      "url": "https://www.airhint.com/",
+      "snippet": "AirHint uses advanced AI and machine learning to predict flight prices with 80%+ accuracy. Our intelligent tracker analyzes millions of airfares in real-time to recommend the optimal time to buy Flight tickets. AI-powered predictions for Ryanair, easyJet, Southwest and major airlines. Save money on international and domestic flights with data-driven insights."
+    }
+  ]
+}

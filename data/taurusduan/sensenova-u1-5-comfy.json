@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "taurusduan/SenseNova-U1.5-Comfy",
+  "slug": "taurusduan-sensenova-u1-5-comfy",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/SenseNova-U1.5-Comfy",
+  "created_at": "2026-08-26T01:16:21.000Z",
+  "updated_at": "2026-08-26T01:16:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "comfyui",
+    "safetensors",
+    "sensenova",
+    "image-generation",
+    "image-editing",
+    "multi-reference-image-editing",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2605.12500",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:finetune:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86102897124,
+  "storage_human": "86.1 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT, sensenova/SenseNova-U1.5-8B-MoT-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "t8star/SenseNova-U1.5-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/SenseNova-U1.5-Comfy",
+      "snippet": "这里提供 SenseNova U1.5 的 Final 和 SFT ComfyUI 单文件权重版，配合 SenseNova U1.5 ComfyUI 节点 使用。 本仓库是社区转换版本，并非 SenseNova 官方仓库。"
+    },
+    {
+      "title": "ComfyUI_SenseNova_U1 - GitHub",
+      "url": "https://github.com/smthemex/ComfyUI_SenseNova_U1",
+      "snippet": "enseNova-U1: Unifying Multimodal Understanding and Generation with NEO-Unify Architecture - smthemex/ComfyUI_SenseNova_U1"
+    },
+    {
+      "title": "SenseNova-U1.5 in ComfyUI: Official 4K T2I and Editing Nodes",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-16-sensenova-u1-5-comfyui",
+      "snippet": "The model itself was covered in our earlier news: SenseNova-U1.5 Preview: 4K Image Generation and Editing From SenseTime. ... What the official pack adds (v0.2.0) Published on the Comfy Registry as ComfyUI-SenseNova-U1."
+    },
+    {
+      "title": "SenseNova-U1.5 Preview: 4K Image Generation and Editing From SenseTime",
+      "url": "https://comfyui-wiki.com/en/news/2026-07-31-sensenova-u1-5-preview",
+      "snippet": "SenseTime&#x27;s SenseNova-U1.5-8B-MoT-Preview brings 4K text-to-image and stronger image editing in one unified model, with ComfyUI support via the SenseNova_U1 custom node pack."
+    }
+  ]
+}

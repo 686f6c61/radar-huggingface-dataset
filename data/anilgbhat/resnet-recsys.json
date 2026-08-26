@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "anilgbhat/resnet-recsys",
+  "slug": "anilgbhat-resnet-recsys",
+  "author": "anilgbhat",
+  "url": "https://huggingface.co/anilgbhat/resnet-recsys",
+  "created_at": "2026-08-25T21:40:48.000Z",
+  "updated_at": "2026-08-25T21:40:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "docx",
+    "empirical-focused",
+    "endnote",
+    "image-captioning",
+    "intro-background-approach-eval-conclusion",
+    "measured",
+    "passive",
+    "short-punchy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ResNet: Enabling Deep Convolutional Neural Networks through Residual ...",
+      "url": "https://arxiv.org/html/2510.24036v1",
+      "snippet": "Abstract Convolutional Neural Networks (CNNs) have revolutionised computer vision, but training very deep networks has been challenging due to the vanishing gradient problem. This paper explores Residual Networks (ResNet), introduced by He et al. (2015), which overcome this limitation by using skip connections. ResNet enables the training of networks with hundreds of layers by allowing ..."
+    },
+    {
+      "title": "RecSys 2025 - Accepted Contributions - RecSys - RecSys",
+      "url": "https://recsys.acm.org/recsys25/accepted-contributions/",
+      "snippet": "Recommender systems (RecSys) have become an essential component of many web applications. The core of the system is a recommendation model trained on highly sensitive user-item interaction data."
+    },
+    {
+      "title": "Residual Networks (ResNet) - Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/residual-networks-resnet-deep-learning/",
+      "snippet": "Residual Networks (ResNet) is a deep learning architecture designed to enable efficient training of very deep neural networks. It introduces skip (shortcut) connections, which allow the model to learn residual mappings instead of direct transformations."
+    },
+    {
+      "title": "ResNet - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/resnet",
+      "snippet": "The bare Resnet Model outputting raw hidden-states without any specific head on top. This model inherits from PreTrainedModel. Check the superclass documentation for the generic methods the library implements for all its model (such as downloading or saving, resizing the input embeddings, pruning heads etc.)"
+    }
+  ]
+}
