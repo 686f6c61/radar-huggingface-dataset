@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuaclar95/tmp-image-captioning",
+  "slug": "joshuaclar95-tmp-image-captioning",
+  "author": "joshuaclar95",
+  "url": "https://huggingface.co/joshuaclar95/tmp-image-captioning",
+  "created_at": "2026-08-26T13:00:27.000Z",
+  "updated_at": "2026-08-26T13:00:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "GitHub - saksham-ops/Image-Captioning-Model: Image Captioning with CLIP ...",
+      "url": "https://github.com/saksham-ops/Image-Captioning-Model",
+      "snippet": "🧠 Image Captioning Projects This repository contains two different approaches for image caption generation using deep learning — a modern transformer-based model (CLIP-GPT2) and a traditional CNN-LSTM model."
+    },
+    {
+      "title": "image-captioning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-captioning",
+      "snippet": "Keras model to generate HTML code from hand-drawn website mockups. Implements an image captioning architecture to drawn source images."
+    },
+    {
+      "title": "krishyadav25/Image-Captioning-Model- - GitHub",
+      "url": "https://github.com/krishyadav25/Image-Captioning-Model-",
+      "snippet": "A hybrid deep learning project that combines Computer Vision and Natural Language Processing to generate descriptive captions for images. This repository implements multiple architectures—from custom CNN-RNN models with Attention to state-of-the-art Transformers—and integrates Object Detection for enhanced context."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models. Leon1000/Qwen2.5-VL-7B-NSFW-Caption-V3-ComfyUI"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sophiesmith/ocr-freeform",
+  "slug": "sophiesmith-ocr-freeform",
+  "author": "sophiesmith",
+  "url": "https://huggingface.co/sophiesmith/ocr-freeform",
+  "created_at": "2026-08-26T13:43:54.000Z",
+  "updated_at": "2026-08-26T13:44:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr-freeform",
+      "snippet": "Explore machine learning models. 11 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ocr-freeform Clear all"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "GitHub - clovaai/donut: Official Implementation of OCR-free Document ...",
+      "url": "https://github.com/clovaai/donut",
+      "snippet": "Donut 🍩, Do cume n t u nderstanding t ransformer, is a new method of document understanding that utilizes an OCR-free end-to-end Transformer model. Donut does not require off-the-shelf OCR engines/APIs, yet it shows state-of-the-art performances on various visual document understanding tasks, such as visual document classification or information extraction (a.k.a. document parsing). In ..."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 - ofox.ai",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    }
+  ]
+}

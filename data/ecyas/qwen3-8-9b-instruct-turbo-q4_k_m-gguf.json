@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "ecyas/Qwen3.8-9B-Instruct-Turbo-Q4_K_M-GGUF",
+  "slug": "ecyas-qwen3-8-9b-instruct-turbo-q4_k_m-gguf",
+  "author": "ecyas",
+  "url": "https://huggingface.co/ecyas/Qwen3.8-9B-Instruct-Turbo-Q4_K_M-GGUF",
+  "created_at": "2026-08-26T17:46:30.000Z",
+  "updated_at": "2026-08-26T17:47:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3",
+    "qwen3_5",
+    "qwen3.8",
+    "9b",
+    "27b",
+    "thinking",
+    "reasoning",
+    "reasoning-model",
+    "instruct",
+    "turbo",
+    "mlx",
+    "mlx-lm",
+    "ollama",
+    "vllm",
+    "sglang",
+    "unsloth",
+    "lmstudio",
+    "jan",
+    "llama.cpp",
+    "apple-silicon",
+    "imatrix",
+    "exl2",
+    "awq",
+    "gptq",
+    "lorp",
+    "layer-pruning",
+    "pruning",
+    "compression",
+    "coding",
+    "conversational",
+    "endpoints_compatible",
+    "text-generation",
+    "safetensors",
+    "region:us",
+    "arxiv:2605.27786",
+    "arxiv:2403.03853",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:ewinregirgojr/Qwen3.8-9B-Instruct-Turbo",
+    "base_model:quantized:ewinregirgojr/Qwen3.8-9B-Instruct-Turbo",
+    "license:apache-2.0",
+    "model-index"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11223224128,
+  "parameters_human": "11.22B",
+  "storage_bytes": 6969850560,
+  "storage_human": "7.0 GB",
+  "base_model": "ewinregirgojr/Qwen3.8-9B-Instruct-Turbo",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU",
+      "metric": "Accuracy",
+      "value": 75.8
+    },
+    {
+      "task": "Math Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 79.1
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval",
+      "metric": "Accuracy",
+      "value": 68.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/mudler/LocalAI/refs/heads/master/gallery/index.yaml",
+      "snippet": "Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless switching between thinking mode (for complex logical reasoning, math, and coding) and non-thinking mode (for efficient, general ..."
+    }
+  ]
+}

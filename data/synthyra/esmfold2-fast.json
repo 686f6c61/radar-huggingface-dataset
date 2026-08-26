@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Synthyra/ESMFold2-Fast",
+  "slug": "synthyra-esmfold2-fast",
+  "author": "Synthyra",
+  "url": "https://huggingface.co/Synthyra/ESMFold2-Fast",
+  "created_at": "2026-05-28T17:31:33.000Z",
+  "updated_at": "2026-08-26T17:13:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esmfold2",
+    "feature-extraction",
+    "protein-language-model",
+    "fastplms",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 210,
+  "trending_score": 0,
+  "parameters": 188819011,
+  "parameters_human": "188.8M",
+  "storage_bytes": 755416924,
+  "storage_human": "755 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synthyra/ESMFold2-Fast · Hugging Face",
+      "url": "https://huggingface.co/Synthyra/ESMFold2-Fast",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Synthyra/ESMFold2 · Hugging Face",
+      "url": "https://huggingface.co/Synthyra/ESMFold2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastPLMs/fastplms/esmfold2/README.md at main · Synthyra/FastPLMs",
+      "url": "https://github.com/Synthyra/FastPLMs/blob/main/fastplms/esmfold2/README.md",
+      "snippet": "Use Synthyra/ESMFold2 for the full model, Synthyra/ESMFold2-Fast for the faster release variant, and the Synthyra/ESMFold2-Experimental* checkpoints for differentiable binder design and experimental critic ensembles. The folding trunk runs in fp32; the 6B FastPLMs ESM++ backbone is loaded in bf16 by default via esmc_precision=\"bf16\" and uses the flex attention backend by default inside ESMFold2."
+    },
+    {
+      "title": "ESMFold2 Protein Structure Prediction | Biohub Platform",
+      "url": "https://www.biohub.ai/models/esmfold2",
+      "snippet": "ESMFold2 ESMFold2 is the successor to ESMFold that sets a new state of the art for single-sequence structure prediction and enables the generation of new functional proteins through searching the ESMC model&#x27;s latent space. The model predicts high-resolution, all-atom 3D structures of biomolecular complexes directly from sequence, with optional multiple sequence alignment (MSA) input for ..."
+    },
+    {
+      "title": "ESMFold2 (Test-Time Compute) | Synthyra Models",
+      "url": "https://synthyra.com/models/esmfold-ttt",
+      "snippet": "ESMFold2 and Test-Time Compute ESMFold2 is presented in repo-local content as part of the June 2026 ESMC/ESMFold2 world-model preprint. The practical point for Atlas is test-time compute: spend more inference budget when structural uncertainty is expensive."
+    }
+  ]
+}

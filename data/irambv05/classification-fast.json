@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "irambv05/classification-fast",
+  "slug": "irambv05-classification-fast",
+  "author": "irambv05",
+  "url": "https://huggingface.co/irambv05/classification-fast",
+  "created_at": "2026-08-26T13:01:18.000Z",
+  "updated_at": "2026-08-26T13:01:27.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image Classifier — Free Online Tool | UseToolSuite",
+      "url": "https://usetoolsuite.com/tools/ai-image-classifier/",
+      "snippet": "What is the AI Image Classifier? The AI Image Classifier is a lightning-fast, entirely browser-based computer vision tool that automatically categorizes digital photos into 1,000 distinct classes. Built on the highly optimized MobileNetV2 architecture, it acts like a digital encyclopedia for visual content."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 120 Estimated models among 401 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "02-image-classification-with-fastai.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/unccv/deep_learning_for_computer_vision/blob/master/notebooks/02-image-classification-with-fastai.ipynb",
+      "snippet": "For quickly exploring + testing top-performing models and new ideas on your own datasets, it&#x27;s hard to beat fastai. In my experience, you&#x27;ll be able to test lots of ideas quickly, and move fast. Having a reasonable good understanding of the underlying PyTorch code can make you much more effective with fastai, allowing you to \"pick and choose\" the parts of the fastai library you want to use ..."
+    },
+    {
+      "title": "Fast Classification Model Based on Genetic Algorithm and XGBoost ...",
+      "url": "https://ieeexplore.ieee.org/document/10805304",
+      "snippet": "The model is built by testing a single model, selecting a model with good performance to form a stack model, and then using genetic algorithm to select features on the stacking model. The proposed model demonstrates superior comprehensive performance compared to both individual models and stacking models, as verified by analysis of three datasets."
+    }
+  ]
+}

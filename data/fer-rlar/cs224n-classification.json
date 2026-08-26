@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Fer-rlar/cs224n-classification",
+  "slug": "fer-rlar-cs224n-classification",
+  "author": "Fer-rlar",
+  "url": "https://huggingface.co/Fer-rlar/cs224n-classification",
+  "created_at": "2026-08-26T14:03:33.000Z",
+  "updated_at": "2026-08-26T14:03:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford CS 224N | Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/",
+      "snippet": "Note: In the 2023-24 academic year, CS224N will be taught in both Winter and Spring 2024. We hope to see you in class! Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction ..."
+    },
+    {
+      "title": "Stanford CS 224N | Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/",
+      "snippet": "Note: In the 2023-24 academic year, CS224N will be taught in both Winter and Spring 2024. Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction to cutting-edge neural ..."
+    },
+    {
+      "title": "CS224N - Ader&#x27;s notebook",
+      "url": "https://ader817.github.io/notebook/ai/cs224n/",
+      "snippet": "Ader&#x27;s notebook Stanford CS224N course notes, split by topic from the local notebook."
+    },
+    {
+      "title": "psr-ai/CS224N-default-project - GitHub",
+      "url": "https://github.com/psr-ai/CS224N-default-project",
+      "snippet": "This is the default final project for the Stanford CS 224N class. Please refer to the project handout on the course website for detailed instructions and an overview of the codebase. This project comprises two parts. In the first part, you will implement some important components of the BERT model ..."
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    }
+  ]
+}

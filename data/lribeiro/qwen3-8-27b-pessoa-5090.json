@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "lribeiro/Qwen3.8-27B-Pessoa-5090",
+  "slug": "lribeiro-qwen3-8-27b-pessoa-5090",
+  "author": "lribeiro",
+  "url": "https://huggingface.co/lribeiro/Qwen3.8-27B-Pessoa-5090",
+  "created_at": "2026-08-26T16:47:39.000Z",
+  "updated_at": "2026-08-26T16:51:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "compressed-tensors",
+    "autoround",
+    "int4",
+    "int5",
+    "int6",
+    "mixed-precision",
+    "weight-only",
+    "w4a16",
+    "w5a16",
+    "w6a16",
+    "quantized",
+    "vllm",
+    "blackwell",
+    "sm120",
+    "rtx-5090",
+    "qwen3.8",
+    "vision",
+    "vlm",
+    "mtp",
+    "conversational",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 22613255048,
+  "storage_human": "22.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "lribeiro/Qwen3.8-27B-FP8-Pessoa · Hugging Face",
+      "url": "https://huggingface.co/lribeiro/Qwen3.8-27B-FP8-Pessoa",
+      "snippet": "Pessoa is the FP8 weight-only winner from a systematic 97-model quantization sweep of Qwen3.8-27B, exploring NVFP4, MXFP8, and FP8 formats via both ModelOpt (NVIDIA) and GPTQ (llm-compressor)."
+    },
+    {
+      "title": "Qwen 3.8 Quant Selection Guide for RTX 5090",
+      "url": "https://forum.level1techs.com/t/qwen-3-8-quant-selection-guide-for-rtx-5090/254095",
+      "snippet": "The title of this post is a targeted guide, somebody who wants to fit Q3.8-27b into a single 5090 and would like to see the trade-offs between precision and performance."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context. Fits one Blackwell GPU in every precision: NVFP4 in 24.6 GiB, 6.6M KV tokens at 1M context."
+    },
+    {
+      "title": "Como executar o Qwen3.8-27B localmente em uma NVIDIA RTX 5090",
+      "url": "https://www.datacamp.com/pt/tutorial/how-to-run-qwen3-8-27b-locally",
+      "snippet": "A RTX 5090 é particularmente adequada ao Qwen3.8-27B porque sua arquitetura Blackwell oferece suporte a NVFP4, permitindo rodar o modelo em altíssimas velocidades sem abrir mão da qualidade de saída."
+    }
+  ]
+}

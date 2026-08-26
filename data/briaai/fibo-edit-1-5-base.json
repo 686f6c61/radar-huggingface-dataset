@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "briaai/Fibo-Edit-1.5-base",
+  "slug": "briaai-fibo-edit-1-5-base",
+  "author": "briaai",
+  "url": "https://huggingface.co/briaai/Fibo-Edit-1.5-base",
+  "created_at": "2026-08-10T09:57:33.000Z",
+  "updated_at": "2026-08-25T12:22:36.000Z",
+  "license": "bria-fibo-edit-1.5",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "art",
+    "image-to-image",
+    "image-editing",
+    "inpainting",
+    "multi-reference",
+    "en",
+    "arxiv:2511.06876",
+    "base_model:briaai/Fibo-Edit-1.5-base",
+    "base_model:finetune:briaai/Fibo-Edit-1.5-base",
+    "license:other",
+    "diffusers:BriaFiboEditPipeline",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 76,
+  "trending_score": 10,
+  "parameters": 8285836848,
+  "parameters_human": "8.29B",
+  "storage_bytes": 24148618331,
+  "storage_human": "24.1 GB",
+  "base_model": "briaai/Fibo-Edit-1.5-base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Bria-AI/Fibo-Edit: FIBO-Edit brings the power of structured ...",
+      "url": "https://github.com/Bria-AI/Fibo-Edit",
+      "snippet": "FIBO-Edit brings the power of structured prompt generation to image editing. Built on Fibo&#x27;s foundation and of JSON-native control, FIBO-Edit delivers precise, deterministic, and fully controllable edits. No ambiguity, no surprises."
+    },
+    {
+      "title": "briaai/Fibo-Edit-1.5-base at main - Hugging Face",
+      "url": "https://huggingface.co/briaai/Fibo-Edit-1.5-base/tree/main",
+      "snippet": "briaai / Fibo-Edit-1.5-base like 0 Follow BRIA AI 15.1k Image-to-Image Diffusers Safetensors English BriaFiboEditPipeline art image-editing inpainting multi-reference arxiv:2511.06876 License:bria-fibo-edit-1.5 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "briaai/Fibo-Edit · Hugging Face",
+      "url": "https://huggingface.co/briaai/Fibo-Edit",
+      "snippet": "Option 2: Local VLM Use the briaai/FIBO-edit-prompt-to-JSON model locally. Note: Local mode does not support mask-based editing. see the examples in the examples directory for more details. If you have questions about this repository, feedback to share, or want to contribute directly, we welcome your issues and pull requests on GitHub."
+    },
+    {
+      "title": "Fibo Edit - bria.ai",
+      "url": "https://bria.ai/fibo-edit",
+      "snippet": "The Impact FIBO Edit gives power back to the users, developers, and researchers. High controllability enables the user to predictably reproduce high quality edits, while researchers and developers are enabled to customize model weights to optimize the model for their specific need."
+    },
+    {
+      "title": "Fibo: The 1st JSON-Native T2I Model for Developers - bria.ai",
+      "url": "https://bria.ai/fibo",
+      "snippet": "Looking for On-Prem visual generative AI? Try Fibo Lite, a smaller & faster model - Docker ready for local deployment with all the same benefits as Fibo: controllability, prompt adherence, and structured generation with minimal quality degradation."
+    }
+  ]
+}

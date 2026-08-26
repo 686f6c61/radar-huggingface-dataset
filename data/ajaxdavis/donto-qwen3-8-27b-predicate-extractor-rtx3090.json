@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "ajaxdavis/donto-qwen3.8-27b-predicate-extractor-rtx3090",
+  "slug": "ajaxdavis-donto-qwen3-8-27b-predicate-extractor-rtx3090",
+  "author": "ajaxdavis",
+  "url": "https://huggingface.co/ajaxdavis/donto-qwen3.8-27b-predicate-extractor-rtx3090",
+  "created_at": "2026-08-26T14:02:42.000Z",
+  "updated_at": "2026-08-26T14:03:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.8",
+    "qwen3_5",
+    "donto",
+    "relation-extraction",
+    "predicate-extraction",
+    "knowledge-graph",
+    "lora",
+    "vllm",
+    "bitsandbytes",
+    "speculative-decoding",
+    "structured-output",
+    "tool-calling",
+    "rtx-3090",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:ajaxdavis/donto-qwen3.8-27b-predicate-extraction-data",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3320886313,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donto-Qwen3.8-27B Predicate Extractor - Hugging Face",
+      "url": "https://huggingface.co/ajaxdavis/donto-qwen3.8-27b-predicate-extractor",
+      "snippet": "Instructions to use ajaxdavis/donto-qwen3.8-27b-predicate-extractor with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "donto-qwen3.8-27b-predicate-extraction-data - Hugging Face",
+      "url": "https://huggingface.co/datasets/ajaxdavis/donto-qwen3.8-27b-predicate-extraction-data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "donto-qwen3.8-27b-predicate-extractor - FriendliAI",
+      "url": "https://friendli.ai/models/ajaxdavis/donto-qwen3.8-27b-predicate-extractor",
+      "snippet": "Run donto-qwen3.8-27b-predicate-extractor with FriendliAI inference. This repository contains the selected V15 adapter for Qwen/Qwen3.8-27B, pinned to base…"
+    },
+    {
+      "title": "GitHub - syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 ...",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "snippet": "Qwen3.8-27B on a single RTX 3090 with vLLM: ~1,000 tok/s at 64 concurrent (int8 tensor-core GEMMs, fp16 DeltaNet state), ~114 tok/s single-user at default sampling / ~124 greedy (MTP drafts, own-output draft vocab, calibrated int4 lm_head, split-KV verify attention), 150k-262k context; patches, requant scripts, benchmarks - syv-ai/qwen38-27b ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Pythia1BxFW_Edux2048x0pctxseed_175",
+  "slug": "aflah-pythia1bxfw_edux2048x0pctxseed_175",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Pythia1BxFW_Edux2048x0pctxseed_175",
+  "created_at": "2026-08-26T14:41:43.000Z",
+  "updated_at": "2026-08-26T14:42:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10521162765,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partial RoPE Analysis - a aflah Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aflah/partial-rope-analysis",
+      "snippet": "Models trained via GPT-NeoX for studying Partial RoPE."
+    },
+    {
+      "title": "Paper page - Pythia: A Suite for Analyzing Large Language Models Across ...",
+      "url": "https://huggingface.co/papers/2304.01373",
+      "snippet": "Join the discussion on this paper page Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling"
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "https://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "ICML Oral Pythia: A Suite for Analyzing Large Language Models Across ...",
+      "url": "https://icml.cc/virtual/2023/oral/25487",
+      "snippet": "How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce Pythia, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside tools to ..."
+    },
+    {
+      "title": "Pythia: A Suite for Analyzing Large Language Models Across Training and ...",
+      "url": "https://mlanthology.org/icml/2023/biderman2023icml-pythia/",
+      "snippet": "Abstract How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce Pythia, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside ..."
+    }
+  ]
+}

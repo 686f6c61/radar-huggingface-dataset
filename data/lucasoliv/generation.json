@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lucasoliv/generation",
+  "slug": "lucasoliv-generation",
+  "author": "lucasoliv",
+  "url": "https://huggingface.co/lucasoliv/generation",
+  "created_at": "2026-08-26T14:35:58.000Z",
+  "updated_at": "2026-08-26T14:36:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative models - OpenAI",
+      "url": "https://openai.com/index/generative-models/",
+      "snippet": "This post describes four projects that share a common theme of enhancing or using generative models, a branch of unsupervised learning techniques in machine learning. In addition to describing our work, this post will tell you a bit more about generative models: what they are, why they are important, and where they might be going."
+    },
+    {
+      "title": "Complete Guide to Five Generative AI Models - AI Search Blog",
+      "url": "https://www.coveo.com/blog/generative-models/",
+      "snippet": "What is a Generative AI Model? Generative AI models are a type of machine learning model that generates new data similar to the data on which it was trained. These models are called generative because they create something new; for example, images, text, video and audio."
+    },
+    {
+      "title": "Lucas AI",
+      "url": "https://aivideotoolspro.com/detail/lucas-ai-video",
+      "snippet": "Create high-quality AI videos in seconds from text prompts with Lucas. Edit your videos, and add voiceover, branding, call-to-action buttons, and more."
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Every model offers a different set of advantages and a window into the seemingly endless possibilities of AI-driven creation. In this article, we&#x27;ll be looking into distinct AI generative, segmented into Text, Image, and Code generative AIs. Before getting into the Top generative AI models, let&#x27;s first understand in brief what is generative AI."
+    },
+    {
+      "title": "generative-ai · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/generative-ai",
+      "snippet": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 500+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters."
+    }
+  ]
+}

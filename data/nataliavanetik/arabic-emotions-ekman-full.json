@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NataliaVanetik/Arabic-emotions-ekman-full",
+  "slug": "nataliavanetik-arabic-emotions-ekman-full",
+  "author": "NataliaVanetik",
+  "url": "https://huggingface.co/NataliaVanetik/Arabic-emotions-ekman-full",
+  "created_at": "2026-08-26T11:25:34.000Z",
+  "updated_at": "2026-08-26T11:30:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "arabic",
+    "emotion-classification",
+    "text-classification",
+    "sentiment-analysis",
+    "ar-ekman",
+    "fine-tuned",
+    "ar",
+    "base_model:kiroloskhela/Sentiment-Bert",
+    "base_model:finetune:kiroloskhela/Sentiment-Bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162846727,
+  "parameters_human": "162.8M",
+  "storage_bytes": 651415653,
+  "storage_human": "651 MB",
+  "base_model": "kiroloskhela/Sentiment-Bert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arabic Emotion Detection Datasets (Ekman 6 + None) - Zenodo",
+      "url": "https://zenodo.org/records/20424658",
+      "snippet": "This repository releases two Arabic emotion detection datasets introduced in the paper: Benchmarking Arabic Emotion Detection: Transformers Evaluation Using a Unified Dataset Both datasets are based on Ekman&#x27;s six basic emotions — Anger, Disgust, Fear, Joy, Sadness, Surprise —extended with a None category for texts without an expressed emotion."
+    },
+    {
+      "title": "arpanghoshal/EkmanClassifier · Hugging Face",
+      "url": "https://huggingface.co/arpanghoshal/EkmanClassifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "(PDF) A New Arabic Dataset for Emotion Recognition - ResearchGate",
+      "url": "https://www.researchgate.net/publication/334301672_A_New_Arabic_Dataset_for_Emotion_Recognition",
+      "snippet": "PDF | In this study, we have created a new Arabic dataset annotated according to Ekman&#x27;s basic emotions (Anger, Disgust, Fear, Happiness, Sadness and... | Find, read and cite all the research ..."
+    },
+    {
+      "title": "NataliaVanetik · GitHub",
+      "url": "https://github.com/NataliaVanetik",
+      "snippet": "NataliaVanetik has 15 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Daily Papers - Hugging Face",
+      "url": "https://huggingface.co/papers?q=multi-label%20emotion%20dataset",
+      "snippet": "The results show that accurate multi-label emotion classification is still insufficient even for high-resource languages such as English, and there is a large gap between the performance of high-resource and low-resource languages. The results also show varying performance levels depending on the language and model type."
+    }
+  ]
+}

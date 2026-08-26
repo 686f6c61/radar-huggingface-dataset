@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Sho278/ornith-1.5-35b-q6-k-mirror",
+  "slug": "sho278-ornith-1-5-35b-q6-k-mirror",
+  "author": "Sho278",
+  "url": "https://huggingface.co/Sho278/ornith-1.5-35b-q6-k-mirror",
+  "created_at": "2026-08-26T16:09:29.000Z",
+  "updated_at": "2026-08-26T16:09:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 558511803509,
+  "storage_human": "558.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AtomicChat/Ornith-1.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Ornith-1.5-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "maxwell1500/ornith-35b",
+      "url": "https://ollama.com/maxwell1500/ornith-35b",
+      "snippet": "Ornith-1.0 was created and trained by the DeepReinforce Team. All credit for the model architecture, training framework, data curation, and benchmark results belongs entirely to them."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    }
+  ]
+}

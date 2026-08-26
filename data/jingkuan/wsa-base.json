@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Jingkuan/WSA-Base",
+  "slug": "jingkuan-wsa-base",
+  "author": "Jingkuan",
+  "url": "https://huggingface.co/Jingkuan/WSA-Base",
+  "created_at": "2026-08-26T11:54:40.000Z",
+  "updated_at": "2026-08-26T12:11:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "embodied-ai",
+    "robot-learning",
+    "vision-language-action",
+    "world-model",
+    "en",
+    "arxiv:2607.03941",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3156147248,
+  "parameters_human": "3.16B",
+  "storage_bytes": 6608313224,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zaleni/WSA: official repo of WSA model series",
+      "url": "https://github.com/zaleni/WSA",
+      "snippet": "official repo of WSA model series. Contribute to zaleni/WSA development by creating an account on GitHub."
+    },
+    {
+      "title": "WSA | A 3D-Centric World-Spatial-Action Model",
+      "url": "https://zaleni.github.io/WSA1/",
+      "snippet": "WSA is a World-Spatial-Action embodied foundation model for generalizable robot control across simulation and real-world manipulation tasks. 🌟 Unified WSA Modeling WSA modeling unifies semantic understanding, 3D world modeling, and physical execution."
+    },
+    {
+      "title": "[2607.03941] WSA$_1$: a 3D-Centric World-Spatial-Action Model for ...",
+      "url": "https://arxiv.org/abs/2607.03941",
+      "snippet": "This creates a fundamental mismatch between 2D-centric visual perception and 3D-centric embodied interaction, severely limiting the generalization ability of RFMs in real-world this http URL address this gap, we present WSA 1, a novel RFM built upon proposed 3D-Centric World-Spatial-Action modeling paradigm."
+    },
+    {
+      "title": "zaleni/WSA-Base at main - Hugging Face",
+      "url": "https://huggingface.co/zaleni/WSA-Base/tree/main",
+      "snippet": "zaleni / WSA-Base like 0 Robotics LeRobot Safetensors English embodied-ai robot-learning vision-language-action world-model arxiv:2607.03941 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "zaleni/WSA-Base-LIBERO · Hugging Face",
+      "url": "https://huggingface.co/zaleni/WSA-Base-LIBERO",
+      "snippet": "WSA is a robot foundation model built on the 3D-centric World-Spatial-Action modeling paradigm. It jointly learns instruction-aligned 2D visual planning, action-conditioned 3D world modeling, and 3D-aware action generation. The released family contains 3B WSA-Base and 6B WSA-Large checkpoints for downstream fine-tuning, RoboTwin2.0, and LIBERO."
+    }
+  ]
+}

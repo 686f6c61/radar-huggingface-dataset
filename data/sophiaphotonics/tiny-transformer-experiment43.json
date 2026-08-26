@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sophiaphotonics/tiny-transformer-experiment43",
+  "slug": "sophiaphotonics-tiny-transformer-experiment43",
+  "author": "sophiaphotonics",
+  "url": "https://huggingface.co/sophiaphotonics/tiny-transformer-experiment43",
+  "created_at": "2026-08-26T15:54:01.000Z",
+  "updated_at": "2026-08-26T15:54:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ConversionPsychology/AI-Advancements: A collection of ...",
+      "url": "https://github.com/ConversionPsychology/AI-Advancements",
+      "snippet": "A collection of innovative, modular, and educational AI experiments — starting with a Tiny Transformer built from scratch for deep learning exploration and rapid prototyping. - ConversionPsychology..."
+    },
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "If you&#x27;ve ever felt that Transformers are a \"black box,\" today&#x27;s post is for you. Instead of just downloading a pretrained model, we&#x27;re going to build a tiny GPT-style transformer from scratch — small enough to run on your laptop, but powerful enough to generate Shakespeare-like text. By the end, you&#x27;ll not only have a working model, but also a clear understanding of how the ..."
+    },
+    {
+      "title": "8 Unrestricted AI Image Generators in 2026 [Free] | PhotoPro AI",
+      "url": "https://www.photopro-ai.com/blog/unrestricted-ai-image-generator.html",
+      "snippet": "Here are 8 unrestricted AI image generators that are free and actually working in 2026."
+    }
+  ]
+}

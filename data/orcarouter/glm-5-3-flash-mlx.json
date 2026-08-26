@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "orcarouter/GLM-5.3-Flash-MLX",
+  "slug": "orcarouter-glm-5-3-flash-mlx",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/GLM-5.3-Flash-MLX",
+  "created_at": "2026-08-26T17:38:40.000Z",
+  "updated_at": "2026-08-26T18:02:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "glm",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65039823516,
+  "storage_human": "65.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "OrcaRouter is a production AI gateway: one OpenAI-compatible endpoint with adaptive routing, load balancing, automatic failover, guardrails, an agent firewall, prompt caching and per-request observability."
+    },
+    {
+      "title": "Ox Alpha likely GLM-5.3 — and a GLM 5.5 workhorse? - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/blog/ox-alpha-stealth-model-what-we-know",
+      "snippet": "The identification makes the fallback choice obvious: if Ox Alpha is GLM-5.3 Flash, the closest thing to it you can already call in production is GLM-5.3 itself — and that model is on OrcaRouter at Z.ai&#x27;s list price ($1.40 in, $4.40 out per million tokens) passed through with 0% markup, one API across 200+ models, with automatic failover so ..."
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "z-ai/glm-5.3-flash | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/z-ai/glm-5.3-flash",
+      "snippet": "Explore z-ai/glm-5.3-flash on ZenMux with provider routing, pricing, latency, throughput, uptime, and API access."
+    }
+  ]
+}

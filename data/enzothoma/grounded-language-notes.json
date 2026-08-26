@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Enzothoma/grounded-language-notes",
+  "slug": "enzothoma-grounded-language-notes",
+  "author": "Enzothoma",
+  "url": "https://huggingface.co/Enzothoma/grounded-language-notes",
+  "created_at": "2026-08-26T13:09:30.000Z",
+  "updated_at": "2026-08-26T13:09:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KJMalaka/AI-Study-Assistant - GitHub",
+      "url": "https://github.com/KJMalaka/AI-Study-Assistant",
+      "snippet": "AI-powered study platform that transforms uploaded notes and PDFs into summaries, quizzes, flashcards, and a document-grounded AI chat, plus a study planner and progress tracker, helping students l..."
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "A large language model (LLM) is an AI model (typically a neural network) trained on a vast amount of text for natural language processing tasks, especially language generation."
+    },
+    {
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "url": "https://otter.ai/",
+      "snippet": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items."
+    },
+    {
+      "title": "Assessing the quality of AI-generated clinical notes ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1691499/full",
+      "snippet": "Objective: This study aimed to compare the quality of large language model (LLM)-generated clinical notes (\"Ambient\") with physician-authored reference (\"Gold\") notes across five clinical specialties using the Physician Documentation Quality Instrument (PDQI-9) as a validated framework to assess document quality. Methods:"
+    },
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    }
+  ]
+}

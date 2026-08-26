@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ram-lexsi/aligntune-testrun-Text2LoRA",
+  "slug": "ram-lexsi-aligntune-testrun-text2lora",
+  "author": "ram-lexsi",
+  "url": "https://huggingface.co/ram-lexsi/aligntune-testrun-Text2LoRA",
+  "created_at": "2026-08-26T13:00:18.000Z",
+  "updated_at": "2026-08-26T13:00:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "aligntune",
+    "finetune",
+    "trl",
+    "adapter",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200111,
+  "storage_human": "200111 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - AlignTune",
+      "url": "https://aligntune.lexsi.ai/",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results ..."
+    },
+    {
+      "title": "GitHub - Lexsi-Labs/aligntune: Aligntune : A Modular Toolkit for Post ...",
+      "url": "https://github.com/Lexsi-Labs/aligntune",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results."
+    },
+    {
+      "title": "GitHub - SakanaAI/text-to-lora: Hypernetworks that adapt LLMs for ...",
+      "url": "https://github.com/SakanaAI/text-to-lora",
+      "snippet": "Hypernetworks that adapt LLMs for specific benchmark tasks using only textual task description as the input - SakanaAI/text-to-lora"
+    },
+    {
+      "title": "Evaluation - AlignTune",
+      "url": "https://aligntune.lexsi.ai/user-guide/evaluation/",
+      "snippet": "Complete guide to evaluating fine-tuned models with AlignTune, covering training evaluation, standalone evaluation, benchmarks, and custom evaluation tasks."
+    },
+    {
+      "title": "[2506.06105] Text-to-LoRA: Instant Transformer Adaption",
+      "url": "https://arxiv.org/abs/2506.06105",
+      "snippet": "To overcome these limitations, we introduce Text-to-LoRA (T2L), a model capable of adapting large language models (LLMs) on the fly solely based on a natural language description of the target task. T2L is a hypernetwork trained to construct LoRAs in a single inexpensive forward pass."
+    }
+  ]
+}

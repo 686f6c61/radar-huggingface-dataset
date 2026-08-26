@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cchangxin/hw2-3d-scene-understanding",
+  "slug": "cchangxin-hw2-3d-scene-understanding",
+  "author": "cchangxin",
+  "url": "https://huggingface.co/cchangxin/hw2-3d-scene-understanding",
+  "created_at": "2026-08-26T13:03:40.000Z",
+  "updated_at": "2026-08-26T13:03:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "😎 A list of awesome scene understanding papers. Contribute to bertjiazheng/awesome-scene-understanding development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT4Scene",
+      "url": "https://gpt4scene.github.io/",
+      "snippet": "Specifically, GPT4Scene constructs a 3D Bird&#x27;s Eye View (BEV) image from the video and marks consistent object IDs across both frames and the BEV image. The model then inputs the concatenated BEV image and video frames with markers. In zero-shot evaluations, GPT4Scene improves performance over closed-source VLMs like GPT-4o."
+    },
+    {
+      "title": "SceneGPT: A Language Model for 3D Scene Understanding",
+      "url": "https://arxiv.org/html/2408.06926v1",
+      "snippet": "Abstract Building models that can understand and reason about 3D scenes is difficult owing to the lack of data sources for 3D supervised training and large-scale training regimes. In this work we ask \"How can the knowledge in a pre-trained language model be leveraged for 3D scene understanding without any 3D pre-training\"."
+    },
+    {
+      "title": "SceneFun3D",
+      "url": "https://scenefun3d.github.io/",
+      "snippet": "We introduce SceneFun3D, a large-scale dataset with highly accurate interaction annotations in 3D real-world indoor environments. Abstract Existing 3D scene understanding methods are heavily focused on 3D semantic and instance segmentation."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    }
+  ]
+}

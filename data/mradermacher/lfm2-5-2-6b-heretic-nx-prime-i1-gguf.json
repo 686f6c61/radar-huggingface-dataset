@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-2-6b-heretic-nx-prime-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-i1-GGUF",
+  "created_at": "2026-08-26T16:39:28.000Z",
+  "updated_at": "2026-08-26T17:47:10.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lfm2",
+    "lfm2.5",
+    "bf16",
+    "q8_0",
+    "lm-studio",
+    "abliterated",
+    "uncensored",
+    "model-editing",
+    "heretic-nx",
+    "residual-stream",
+    "prime",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "base_model:0xzknw/LFM2.5-2.6B-Heretic-NX-PRIME",
+    "base_model:quantized:0xzknw/LFM2.5-2.6B-Heretic-NX-PRIME",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 31931333248,
+  "storage_human": "31.9 GB",
+  "base_model": "0xzknw/LFM2.5-2.6B-Heretic-NX-PRIME",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM-2.5-2.6B-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM-2.5-2.6B-heretic-i1-GGUF",
+      "snippet": "mradermacher / LFM-2.5-2.6B-heretic-i1-GGUF like 0 Transformers GGUF 16 languages liquid lfm2.5 edge heretic uncensored decensored abliterated reproducible imatrix conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-2.6B-absolute-heresy-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-absolute-heresy-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5 2.6B: Liquid Foundation Models - GitHub",
+      "url": "https://github.com/rishikksh20/lfm25-pytorch/",
+      "snippet": "A minimal PyTorch implementation of LiquidAI/LFM2.5-2.6B. LFM2.5 uses the LFM2 hybrid architecture and updates the vocabulary, context length, RoPE base, tokenizer, and post-training behavior ..."
+    },
+    {
+      "title": "Lfm2.5 2.6b Heretic Abliterated - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/lfm2-5-2-6b-heretic-abliterated.html",
+      "snippet": "Download Lfm2.5 2.6b Heretic Abliterated GGUF model. 2.90 GB, 13,452 downloads."
+    }
+  ]
+}

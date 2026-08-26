@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vatey11/khmer-english-whisper-lora",
+  "slug": "vatey11-khmer-english-whisper-lora",
+  "author": "vatey11",
+  "url": "https://huggingface.co/vatey11/khmer-english-whisper-lora",
+  "created_at": "2026-07-28T12:15:26.000Z",
+  "updated_at": "2026-08-26T18:37:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:seanghay/whisper-small-khmer-v2",
+    "lora",
+    "transformers",
+    "km",
+    "dataset:custom_khmer_english",
+    "base_model:seanghay/whisper-small-khmer-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99571529,
+  "storage_human": "100 MB",
+  "base_model": "seanghay/whisper-small-khmer-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vatey11/khmer-english-whisper-lora · Hugging Face",
+      "url": "https://huggingface.co/vatey11/khmer-english-whisper-lora",
+      "snippet": "This model is a fine-tuned version of seanghay/whisper-small-khmer-v2 on the Code-Switched Khmer-English ASR dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,065 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "seanghay/whisper-small-khmer-v2 · Hugging Face",
+      "url": "https://huggingface.co/seanghay/whisper-small-khmer-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "GitHub - Tevaada/ASR-Model-Testing-: The purpose of this source code is ...",
+      "url": "https://github.com/Tevaada/ASR-Model-Testing-/tree/main",
+      "snippet": "The purpose of this source code is to test AI models, especially models from hugging face, to see weather they work correctly and support the Khmer language. - Tevaada/ASR-Model-Testing-"
+    }
+  ]
+}

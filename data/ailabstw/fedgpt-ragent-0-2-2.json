@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ailabstw/fedgpt-ragent-0.2.2",
+  "slug": "ailabstw-fedgpt-ragent-0-2-2",
+  "author": "ailabstw",
+  "url": "https://huggingface.co/ailabstw/fedgpt-ragent-0.2.2",
+  "created_at": "2026-08-26T15:48:12.000Z",
+  "updated_at": "2026-08-26T15:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332629150,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "FedGPT | On-Premises Enterprise AI Platform",
+      "url": "https://fedgpt.cc/en",
+      "snippet": "FedGPT is an on-premises enterprise AI platform with AI Agent workflow automation and knowledge base building. Your data stays in-house and meets security compliance — the platform of choice for finance, healthcare, and government institutions adopting generative AI and Agentic AI."
+    },
+    {
+      "title": "PDF AFS-FedGPT-datasheet2024",
+      "url": "https://3453611.fs1.hubspotusercontent-na1.net/hubfs/3453611/Collateral/AFS-FedGPT-datasheet2024.pdf",
+      "snippet": "FedGPT adapts state-of-the-art large language models - commercial, open-source, cloud-based, and on-prem - to generate explainable, accurate, and traceable outputs. Built for Federal agencies who want to experiment with and deploy GenAI, FedGPT enables natural language question-and-answering against client datasets through a ChatGPT-like interface. The platform complements and strengthens ..."
+    },
+    {
+      "title": "What an AI Agent Going Rogue Means for Cybersecurity",
+      "url": "https://www.usatoday.com/story/news/state/california/san-francisco/2026/07/22/rogue-ai-incident-raises-questions-about-model-containment/91015804007/",
+      "snippet": "What happened when OpenAI&#x27;s AI agent hacked Hugging Face? The breakout was \"an unprecedented cyber incident, involving state-of-the-art cyber capabilities,\" and OpenAI is reinforcing its ..."
+    },
+    {
+      "title": "FedGPT - 極風雲創",
+      "url": "https://www.twister5.com.tw/en/product/fedgpt/",
+      "snippet": "FedGPT is an enterprise-grade Agentic AI platform built for real-world deployment, powered by a multimodal model reinforced for Traditional Chinese and industry-specific knowledge. Multiple AI Agents work together, and with low-code/no-code tools, enterprises can quickly build cross-departmental workflows to achieve process automation. Twister5 FedGPT"
+    }
+  ]
+}

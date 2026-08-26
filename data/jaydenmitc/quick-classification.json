@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JAYDENMITC/quick-classification",
+  "slug": "jaydenmitc-quick-classification",
+  "author": "JAYDENMITC",
+  "url": "https://huggingface.co/JAYDENMITC/quick-classification",
+  "created_at": "2026-08-26T14:55:29.000Z",
+  "updated_at": "2026-08-26T14:55:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Classification in AI: Complete Guide - ML Journey",
+      "url": "https://mljourney.com/what-is-classification-in-ai-complete-guide/",
+      "snippet": "Understanding Classification in AI Classification in AI refers to the process of teaching machines to categorize data into predefined groups or classes based on input features. Unlike regression, which predicts continuous numerical values, classification focuses on discrete categorical outcomes. When a classification model receives new data, it analyzes the patterns it has learned during ..."
+    },
+    {
+      "title": "Trade Smarter - Quickcode",
+      "url": "https://quickcode.ai/",
+      "snippet": "AI-powered trade compliance platform for HTS classification, CROSS ruling research, and landed cost analysis. Faster, more defensible import decisions."
+    },
+    {
+      "title": "Custom classification model - Document Intelligence - Foundry Tools ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/train/custom-classifier?view=doc-intel-4.0.0",
+      "snippet": "Use the custom classification model to train a model to identify and split the documents you process within your application."
+    },
+    {
+      "title": "12 Best AI Detectors | Free & Premium Tools Tested (2026 Guide) - Scribbr",
+      "url": "https://www.scribbr.com/ai-tools/best-ai-detector/",
+      "snippet": "The best free AI detectors (2026) are Scribbr and QuillBot, both correctly identified 78% of our testing texts. The most accurate AI Detector is Scribbr."
+    },
+    {
+      "title": "Best AI Discord Bots in 2026 | Quickchat AI - AI Agents",
+      "url": "https://quickchat.ai/post/best-ai-discord-bots",
+      "snippet": "Compare 9 AI Discord bots and bot-building approaches in 2026 for support, moderation, and roleplay, with features, pricing, setup, and tradeoffs."
+    }
+  ]
+}

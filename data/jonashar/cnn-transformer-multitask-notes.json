@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jonashar/cnn-transformer-multitask-notes",
+  "slug": "jonashar-cnn-transformer-multitask-notes",
+  "author": "jonashar",
+  "url": "https://huggingface.co/jonashar/cnn-transformer-multitask-notes",
+  "created_at": "2026-08-26T11:45:36.000Z",
+  "updated_at": "2026-08-26T11:45:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2205.08303",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "cnn-transformer · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/cnn-transformer",
+      "snippet": "A state-of-the-art hybrid deep learning ensemble that combines the strengths of Convolutional Neural Networks (CNNs) and Transformers for intelligent plant disease detection and real world agricultural applications. A hybrid CNN-Transformer framework for precise industrial surface defect detection ..."
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Your All-in-One Learning Portal. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions."
+    },
+    {
+      "title": "Hybrid CNN-Transformer Models | ai-dawang/PlugNPlay-Modules | DeepWiki",
+      "url": "https://deepwiki.com/ai-dawang/PlugNPlay-Modules/4.3-hybrid-cnn-transformer-models",
+      "snippet": "This document covers hybrid architectures that combine convolutional neural networks (CNNs) and transformer modules within a single model. These hybrid models leverage the complementary strengths of C"
+    },
+    {
+      "title": "Architecture and Working of Transformers in Deep Learning",
+      "url": "https://www.geeksforgeeks.org/deep-learning/architecture-and-working-of-transformers-in-deep-learning/",
+      "snippet": "Transformers are a type of deep learning model that utilizes self-attention mechanisms to process and generate sequences of data efficiently. They capture long-range dependencies and contextual relationships making them highly effective for tasks like language modeling, machine translation and text generation. Transformer model is built on encoder-decoder architecture where both the encoder ..."
+    }
+  ]
+}

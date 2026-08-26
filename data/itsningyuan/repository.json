@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "itsningyuan/repository",
+  "slug": "itsningyuan-repository",
+  "author": "itsningyuan",
+  "url": "https://huggingface.co/itsningyuan/repository",
+  "created_at": "2026-08-26T17:05:59.000Z",
+  "updated_at": "2026-08-26T17:07:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "artificial-intelligence · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/artificial-intelligence",
+      "snippet": "The branch of computer science dealing with the reproduction, or mimicking of human-level intelligence, self-awareness, knowledge, conscience, and thought in computer programs."
+    }
+  ]
+}

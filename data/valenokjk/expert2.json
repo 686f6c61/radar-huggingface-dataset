@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "valenokjk/expert2",
+  "slug": "valenokjk-expert2",
+  "author": "valenokjk",
+  "url": "https://huggingface.co/valenokjk/expert2",
+  "created_at": "2026-08-26T11:34:22.000Z",
+  "updated_at": "2026-08-26T11:34:23.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 406 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "expert2.pth · iLearn-Lab/CVPRW26-ViSAGE at main - Hugging Face",
+      "url": "https://huggingface.co/iLearn-Lab/CVPRW26-ViSAGE/blob/main/expert2.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EXPERT2/README.md at master · pnnl/EXPERT2 · GitHub",
+      "url": "https://github.com/pnnl/EXPERT2/blob/master/README.md",
+      "snippet": "EXPERT 2.0 develops novel AI foundation models to enable multi-hop reasoning over the scientific documents for generating human-interpretable evidence and uncertainty estimates. Model pretraining code for reasoning over multi-layer network representations A pretrained model (not released publicly ..."
+    },
+    {
+      "title": "GitHub - pnnl/EXPERT2",
+      "url": "https://github.com/pnnl/EXPERT2",
+      "snippet": "Contribute to pnnl/EXPERT2 development by creating an account on GitHub."
+    },
+    {
+      "title": "pnnl/EXPERT2 (Software) | OSTI.GOV",
+      "url": "https://www.osti.gov/biblio/code-114736",
+      "snippet": "This software includes the Jupyter notebooks, model pretraining and evaluation code for the EXPERT 2.0 Human-AI Reasoning Engine V0.1. It supports pre-training a Human-AI model for reasoning over multi-layer network representations. It includes prompt-based evaluation framework in a Jupyter notebook for AI reasoning and Jupyter widgets with AI-based techniques for evidence generation and ..."
+    }
+  ]
+}

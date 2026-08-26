@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nez-Norlag/nailove-noobai-real-sdxl-merge-v03contrastes-sdxl_QNN2.28",
+  "slug": "nez-norlag-nailove-noobai-real-sdxl-merge-v03contrastes-sdxl_qnn2-28",
+  "author": "Nez-Norlag",
+  "url": "https://huggingface.co/Nez-Norlag/nailove-noobai-real-sdxl-merge-v03contrastes-sdxl_QNN2.28",
+  "created_at": "2026-08-26T15:15:16.000Z",
+  "updated_at": "2026-08-26T15:29:05.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "wind11",
+    "StableDiffusionXLPipeline",
+    "stable-diffusion",
+    "Qualcomm",
+    "NPU",
+    "QNN",
+    "NoobAI",
+    "Not-For-All-Audiences",
+    "SFW",
+    "NSFW",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAILove - NoobAI Real SDXL Merge - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1252962?modelVersionId=1412581",
+      "snippet": "Download NAILove - NoobAI Real SDXL Merge - Checkpoint by wind11. Free AI model download from CivArchive."
+    },
+    {
+      "title": "nailove-noobai-real-sdxl-merge-v01-sdxl - Hugging Face",
+      "url": "https://huggingface.co/John6666/nailove-noobai-real-sdxl-merge-v01-sdxl/blob/main/vae/diffusion_pytorch_model.safetensors",
+      "snippet": "nailove-noobai-real-sdxl-merge-v01-sdxl / vae / diffusion_pytorch_model.safetensors John6666 Upload folder using huggingface_hub 0aa0616 verified about 7 hours ago"
+    },
+    {
+      "title": "nailove-noobai-real-sdxl-merge-v03contrastes-sdxl - Hugging Face",
+      "url": "https://huggingface.co/John6666/nailove-noobai-real-sdxl-merge-v03contrastes-sdxl",
+      "snippet": "Model tree for John6666/nailove-noobai-real-sdxl-merge-v03contrastes-sdxl"
+    },
+    {
+      "title": "NAILove - NoobAI Real SDXL Merge - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1861654486966379021",
+      "snippet": "Generate stunning anime art with the &#x27;NAILove - NoobAI Real SDXL Merge&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Civitai | Share your models",
+      "url": "https://civitai.red/models/1252962/nailove-noobai-real-sdxl-merge?modelVersionId=1582207",
+      "snippet": "Civitai | Share your models homemodelsimagesvideos3D Modelsarticlescomicsbountieschallengesupdatesshop More"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo3-greek-7b-xenophon",
+  "slug": "urdatorn-sphragis-alm-olmo3-greek-7b-xenophon",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-xenophon",
+  "created_at": "2026-08-26T19:22:41.000Z",
+  "updated_at": "2026-08-26T19:23:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:Urdatorn/olmo3-7b-ancient-greek",
+    "base_model:finetune:Urdatorn/olmo3-7b-ancient-greek",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "Urdatorn/olmo3-7b-ancient-greek",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-7b-xenophon · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-xenophon",
+      "snippet": "Sphragis authorial language model: Xenophon One of seventeen authorial language models (ALMs) for the Sphragis Ancient Greek authorship-attribution benchmark, following Huang, Murakami and Grieve (2025), \"Attributing authorship via the perplexity of authorial language models\", PLoS ONE 20 (7): e0327081. Each model is a full further-pretraining of allenai/Olmo-3-1025-7B (revision ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=authorial-language-model",
+      "snippet": "Urdatorn/sphragis-alm-olmo3-7b-dionysius-of-halicarnassus 7B•Updated about 10 hours ago"
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    }
+  ]
+}

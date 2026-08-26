@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pujasark/transformers-course",
+  "slug": "pujasark-transformers-course",
+  "author": "pujasark",
+  "url": "https://huggingface.co/pujasark/transformers-course",
+  "created_at": "2026-08-26T15:49:43.000Z",
+  "updated_at": "2026-08-26T16:07:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418959219,
+  "storage_human": "419 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Transformer Models Courses & Certificates [2026] | Coursera",
+      "url": "https://www.coursera.org/courses?query=transformer%20models",
+      "snippet": "Transformer models courses can help you learn natural language processing, attention mechanisms, and model architecture design. Compare course options to find what fits your goals. Enroll for free."
+    },
+    {
+      "title": "Jointly Predicting Courses and Grades Using a Transformer-Based Model",
+      "url": "https://arxiv.org/abs/2608.13409",
+      "snippet": "Existing predictive models in learning analytics often treat student academic history as a simple sequence, overlooking the concurrent nature of courses taken within a semester. This simplification can lead to inaccurate performance predictions, particularly for students with heavy or challenging course loads. This paper introduces a TRansformer for Academic Course-grade Estimation (TRACE ..."
+    },
+    {
+      "title": "Building and Optimizing AI Models - Coursera",
+      "url": "https://www.coursera.org/learn/building-and-optimizing-ai-models",
+      "snippet": "There are 8 modules in this course Building and Optimizing AI Models introduces the foundational engineering practices required to design, train, and optimize machine learning models for modern AI systems."
+    },
+    {
+      "title": "GitHub - syarahmadi/transformers-crash-course: A collection of ...",
+      "url": "https://github.com/syarahmadi/transformers-crash-course",
+      "snippet": "A collection of tutorials and notebooks explaining transformer models in deep learning. - syarahmadi/transformers-crash-course"
+    },
+    {
+      "title": "Deep Learning Using Transformers - 705.744 | Hopkins EP Online",
+      "url": "https://ep.jhu.edu/courses/705744-deep-learning-using-transformers/",
+      "snippet": "This course introduces the theory, implementation, and applications of Transformer models in modern artificial intelligence. Students will study attention mechanisms, positional encoding, encoder-decoder architectures, sequence-to-sequence learning, language models, scaling laws, Vision Transformers, hierarchical vision transformers, DETR for object detection, SETR and MaskFormer for ..."
+    }
+  ]
+}

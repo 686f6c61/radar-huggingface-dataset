@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Anish5764/asvspoof-wav2vec2-stage1",
+  "slug": "anish5764-asvspoof-wav2vec2-stage1",
+  "author": "Anish5764",
+  "url": "https://huggingface.co/Anish5764/asvspoof-wav2vec2-stage1",
+  "created_at": "2026-08-26T14:43:30.000Z",
+  "updated_at": "2026-08-26T14:46:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378302312,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exploring Green AI for Audio Deepfake Detection - GitHub",
+      "url": "https://github.com/sahasubhajit/Speech-Spoofing-",
+      "snippet": "📄 Exploring Green AI for Audio Deepfake Detection A Machine Learning project aimed for a countermeasures of speech spoofing 🤖. A basic lecture video for self supervised learning. Download ASVspoof 2019 dataset from here. Run ⚡️ ... in your terminal to install all required packages."
+    },
+    {
+      "title": "Wav2Vec2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/wav2vec2",
+      "snippet": "Expected speedups Below is an expected speedup diagram comparing the pure inference time between the native implementation in transformers of the facebook/wav2vec2-large-960h-lv60-self model and the flash-attention-2 and sdpa (scale-dot-product-attention) versions. We show the average speedup obtained on the librispeech_asrclean validation split:"
+    },
+    {
+      "title": "ASVspoof",
+      "url": "https://www.asvspoof.org/",
+      "snippet": "________________________________ Those interested to learn more about ASVspoof are referred to ASVspoof 2021 journal paper ASVspoof 2021 results summary paper ________________________________"
+    },
+    {
+      "title": "GitHub - TakHemlata/SSL_Anti-spoofing: This repository includes the ...",
+      "url": "https://github.com/TakHemlata/SSL_Anti-spoofing",
+      "snippet": "This repository includes the code to reproduce our paper \"Automatic speaker verification spoofing and deepfake detection using wav2vec 2.0 and data augmentation\". - GitHub - TakHemlata/SSL_Anti-spoofing: This repository includes the code to reproduce our paper \"Automatic speaker verification spoofing and deepfake detection using wav2vec 2.0 and data augmentation\"."
+    },
+    {
+      "title": "Wav2Vec2 Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/wav2vec2-self-a-supervised-learning-technique-for-speech-representations/",
+      "snippet": "Wav2Vec2 is a self-supervised learning model designed for speech recognition. It learns meaningful representations directly from raw audio using large amounts of unlabeled data, and can later be fine-tuned for tasks such as transcription with minimal labeled data."
+    }
+  ]
+}

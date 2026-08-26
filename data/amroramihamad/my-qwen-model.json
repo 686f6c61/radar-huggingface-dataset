@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amroramihamad/my-qwen-model",
+  "slug": "amroramihamad-my-qwen-model",
+  "author": "amroramihamad",
+  "url": "https://huggingface.co/amroramihamad/my-qwen-model",
+  "created_at": "2026-08-26T19:10:14.000Z",
+  "updated_at": "2026-08-26T19:10:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "AmanKadam-coditas/my-model-qwen · Hugging Face",
+      "url": "https://huggingface.co/AmanKadam-coditas/my-model-qwen",
+      "snippet": "AmanKadam-coditas / my-model-qwen like 0 GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Foundation for AI Innovation Accelerate deployment and scaling of Qwen, Wan, and more leading models on one secure Alibaba Cloud platform"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

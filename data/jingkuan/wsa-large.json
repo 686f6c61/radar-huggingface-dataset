@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Jingkuan/WSA-Large",
+  "slug": "jingkuan-wsa-large",
+  "author": "Jingkuan",
+  "url": "https://huggingface.co/Jingkuan/WSA-Large",
+  "created_at": "2026-08-26T11:55:15.000Z",
+  "updated_at": "2026-08-26T12:13:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "embodied-ai",
+    "robot-learning",
+    "vision-language-action",
+    "world-model",
+    "en",
+    "arxiv:2607.03941",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6457006296,
+  "parameters_human": "6.46B",
+  "storage_bytes": 12914285648,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zaleni/WSA: official repo of WSA model series",
+      "url": "https://github.com/zaleni/WSA",
+      "snippet": "Release WSA-Large weights and benchmark results. Release the arXiv paper and citation. Provide the training and evaluation codes on RoboChallenge2.0. Release WSA1.5, our next-generation foundation model, pretrained on larger and more diverse datasets with memory capabilities for hard and long-horizon robotic tasks."
+    },
+    {
+      "title": "zaleni/WSA-Large · Hugging Face",
+      "url": "https://huggingface.co/zaleni/WSA-Large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SII-LibAI/wsa-plus",
+      "url": "https://github.com/SII-LibAI/wsa-plus",
+      "snippet": "Release WSA-Large weights and benchmark results. Release the arXiv paper and citation. Provide the training and evaluation codes on RoboChallenge2.0. Release WSA1.5, our next-generation foundation model, pretrained on larger and more diverse datasets with memory capabilities for hard and long-horizon robotic tasks."
+    },
+    {
+      "title": "[2607.03941] WSA$_1$: a 3D-Centric World-Spatial-Action Model for ...",
+      "url": "https://arxiv.org/abs/2607.03941",
+      "snippet": "This creates a fundamental mismatch between 2D-centric visual perception and 3D-centric embodied interaction, severely limiting the generalization ability of RFMs in real-world this http URL address this gap, we present WSA 1, a novel RFM built upon proposed 3D-Centric World-Spatial-Action modeling paradigm."
+    },
+    {
+      "title": "zaleni/WSA-Large-LIBERO · Hugging Face",
+      "url": "https://huggingface.co/zaleni/WSA-Large-LIBERO",
+      "snippet": "zaleni / WSA-Large-LIBERO like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 6B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/afriberta-stl-large-sentiment",
+  "slug": "tadiecool29-afriberta-stl-large-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/afriberta-stl-large-sentiment",
+  "created_at": "2026-08-26T17:58:04.000Z",
+  "updated_at": "2026-08-26T17:59:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:castorini/afriberta_large",
+    "base_model:finetune:castorini/afriberta_large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125633283,
+  "parameters_human": "125.6M",
+  "storage_bytes": 502558669,
+  "storage_human": "503 MB",
+  "base_model": "castorini/afriberta_large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castorini/afriberta_large · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse search: find, preview and download free 3D printable models and STL files from across the web — no ads, no sign-up."
+    },
+    {
+      "title": "GitHub - castorini/afriberta: AfriBERTa: Exploring the Viability of ...",
+      "url": "https://github.com/castorini/afriberta",
+      "snippet": "This repository contains the code for the paper Small Data? No Problem! Exploring the Viability of Pretrained Multilingual Language Models for Low-resourced Languages which appears in the first workshop on Multilingual Representation Learning at EMNLP 2021. AfriBERTa was trained on 11 languages ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "STLFinder — Free 3D Models Search Engine | 7M+ STL Files for 3D Printing",
+      "url": "https://www.stlfinder.com/",
+      "snippet": "Over 7 million 3D printable models available for download. Find STL files from Thingiverse, Cults3D, GrabCAD, CGTrader, and 14 platforms for your 3D printing and design projects."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PJRM/supreme-creative-3b-Q4_0-GGUF",
+  "slug": "pjrm-supreme-creative-3b-q4_0-gguf",
+  "author": "PJRM",
+  "url": "https://huggingface.co/PJRM/supreme-creative-3b-Q4_0-GGUF",
+  "created_at": "2026-08-26T15:08:06.000Z",
+  "updated_at": "2026-08-26T15:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "supremeai",
+    "mergekit",
+    "dare-ties",
+    "creative-writing",
+    "storytelling",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:njelitltd2/supreme-creative-3b",
+    "base_model:quantized:njelitltd2/supreme-creative-3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1822849792,
+  "storage_human": "1.8 GB",
+  "base_model": "njelitltd2/supreme-creative-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/supreme-creative-3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/supreme-creative-3b-GGUF",
+      "snippet": "mradermacher / supreme-creative-3b-GGUF like 0 Transformers GGUF English supremeai mergekit dare-ties creative-writing storytelling conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=supremeai",
+      "snippet": "Explore machine learning models. 10 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: supremeai Clear all"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Dolphin 3.0 is still the proven pick in this guide, but X1 is where new work is landing. Ollama For models with Ollama community uploads, the pattern is ollama pull huihui_ai/<model-name> for huihui-ai&#x27;s catalog: ... For models without an Ollama upload, the standard pattern is: download the GGUF from HuggingFace, then import via Modelfile."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    }
+  ]
+}

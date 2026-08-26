@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ybc-lw/ouatlm",
+  "slug": "ybc-lw-ouatlm",
+  "author": "ybc-lw",
+  "url": "https://huggingface.co/ybc-lw/ouatlm",
+  "created_at": "2026-08-26T17:22:21.000Z",
+  "updated_at": "2026-08-26T17:28:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "FreeTheAi Model Catalog - Free OpenAI-Compatible AI Models",
+      "url": "https://freetheai.xyz/models/",
+      "snippet": "Search the FreeTheAi model catalog: 80 active OpenAI-compatible chat, image, and tool-capable model aliases across 13 provider prefixes with live filtering and copyable IDs."
+    },
+    {
+      "title": "ybc模块（猿编程模块） — 猿编程-模块手册 2.0 文档",
+      "url": "https://www.yuanfudao.com/tutor-ybc-course-api/pymodule/ybc_module/y_ybc.html",
+      "snippet": "camera ( filename ) ¶ 功能 调用计算机摄像头进行拍照 (按&#x27;q&#x27;拍照退出摄像头) 参数"
+    },
+    {
+      "title": "YOLOv8 Models by Wasp Beaver - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/wasp-beaver/yolov8",
+      "snippet": "Released January 2023. Proven and widely adopted with extensive community support. Introduced the unified Python API and CLI that became the Ultralytics standard."
+    },
+    {
+      "title": "ybc style (boys only) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1866085093319863694",
+      "snippet": "Generate stunning boy, anime, yuri, oc, bl, anime_style, ybc, boys_only anime art with the &#x27;ybc style (boys only)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

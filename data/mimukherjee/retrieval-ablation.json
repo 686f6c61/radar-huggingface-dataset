@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mimukherjee/retrieval-ablation",
+  "slug": "mimukherjee-retrieval-ablation",
+  "author": "Mimukherjee",
+  "url": "https://huggingface.co/Mimukherjee/retrieval-ablation",
+  "created_at": "2026-08-26T12:55:12.000Z",
+  "updated_at": "2026-08-26T12:55:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to ...",
+      "url": "https://arxiv.org/html/2607.07663v1",
+      "snippet": "Anthropic&#x27;s recent essay on recursive self-improvement [3] frames this transition as a continuum of increasing AI autonomy in the AI-improvement loop: from humans writing all code (pre-2023), through chatbot-assisted coding and autonomous coding agents, to agents that delegate work to other agents today, and — at the end of the spectrum — \"closing the loop\": agents that design and ..."
+    },
+    {
+      "title": "Accepted Findings Papers - ACL 2026",
+      "url": "https://2026.aclweb.org/program/findings/",
+      "snippet": "Accepted Findings Papers I Don&#x27;t Need Solution. I Need Emotional Support: Empathetic LLMs based on Emotional Validation Suhyune Son, Jungwoo Lim, Myunghoon Kang, Seongtae Hong, Yuna Hur, Evelyn H. Zi, Heuiseok Lim Extraction of Texters&#x27; Explicit Emotion Expressions in Crisis Conversations Greg Buda, Ignacio J. Tripodi, Kelly L. Zuromski, Margaret Meagher, Elizabeth A. Olson WikiVideo ..."
+    },
+    {
+      "title": "Uncensor any LLM with abliteration - Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/abliteration",
+      "snippet": "A Blog post by Maxime Labonne on Hugging Face"
+    },
+    {
+      "title": "PDF Development and Evaluation of Retrieval-augmented Generation Methods ...",
+      "url": "https://trepo.tuni.fi/bitstream/handle/10024/227255/KorkeeRoope.pdf?sequence=2",
+      "snippet": "This study investigates the development and evaluation of document-based question-answer-ing systems (RAG, Retrieval-Augmented Generation). The aim is to create a modular base sys-tem and analyze its main components. This approach guides the tool&#x27;s design so users can re-trieve information from and interact with document collections using natural language queries. As the development of large ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI",
+  "slug": "aptech0081-minimax-h3-acc-loras-comfyui",
+  "author": "aptech0081",
+  "url": "https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI",
+  "created_at": "2026-08-26T15:03:46.000Z",
+  "updated_at": "2026-08-26T15:03:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "lora",
+    "video",
+    "audio",
+    "distillation",
+    "text-to-video",
+    "arxiv:2607.26004",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3317439184,
+  "storage_human": "3.3 GB",
+  "base_model": "alibaba-pai/MiniMax-H3-Acc-LoRAs, MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-H3 - a MiniMaxAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/MiniMaxAI/minimax-h3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors · Comfy ...",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/0f7fb980293fcc4d55c1158cbda920806682ed5d/loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 LoRA — Categories, Settings & Where to Find Them",
+      "url": "https://minimax3.org/minimax-h3-lora",
+      "snippet": "How to Use a MiniMax H3 LoRA Download the open H3-Base weights (FL2VA and/or Ref2VA) from Hugging Face. See the MiniMax H3 Download guide. Verify the LoRA&#x27;s stated base model. FL2VA LoRAs and Ref2VA LoRAs are not interchangeable. In ComfyUI, connect the checkpoint into a LoRA Loader node and load the LoRA at the recommended strength."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    }
+  ]
+}

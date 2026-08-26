@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Melkamzer/iCog-Labs",
+  "slug": "melkamzer-icog-labs",
+  "author": "Melkamzer",
+  "url": "https://huggingface.co/Melkamzer/iCog-Labs",
+  "created_at": "2026-08-26T14:28:56.000Z",
+  "updated_at": "2026-08-26T14:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "melkamzeranteneh (Melkamzer Anteneh) · GitHub",
+      "url": "https://github.com/melkamzeranteneh/",
+      "snippet": "I&#x27;m an AI Engineer from Ethiopia currently working at iCog Labs. My work spans Generative AI, Autonomous Theorem Proving, AI Agents, Knowledge Graphs, and Full-Stack AI Applications."
+    },
+    {
+      "title": "Melkamzer Anteneh - Junior AI and ML engineer | LinkedIn",
+      "url": "https://et.linkedin.com/in/melkamzer-anteneh-987b2b36a",
+      "snippet": "Junior AI and ML engineer · Currently an AI Intern at iCog Labs, contributing to projects involving Autonomous Theorem Prover (ATP) systems using Graph Neural Networks (GNN) and reinforcement learning (RL). Gained hands-on experience in LEAN programming and proof methods, alongside research on diffusion and VAE models for video generation. Supported protein data visualization efforts on the ..."
+    },
+    {
+      "title": "iCog Labs - iCog Official Website",
+      "url": "https://icog-labs.com/",
+      "snippet": "AI Research and Software Development iCog Labs is a team of visionary software professionals, dedicated to advancing the frontier of artificial intelligence research and applications and delivering quality products to customers, based in Addis Ababa, Ethiopia. About iCog Labs SolveIT Innovation Competition An amazing team of developers!"
+    },
+    {
+      "title": "Mathematics-ai-atp/docker/commands/infer.sh at main · iCog-Labs-Dev ...",
+      "url": "https://github.com/iCog-Labs-Dev/Mathematics-ai-atp/blob/main/docker/commands/infer.sh",
+      "snippet": "executable file · main Mathematics-ai-atp / docker / commands infer.sh Code Blame executable file · 12 lines (9 loc) · 355 Bytes 1 2 3 4 5 6 7 8 9 10 11 12 #!/bin/bash # Mathematics AI ATP - Infer command # Runs inference using the GNN model set -euo pipefail # Set PYTHONPATH to include the workspace"
+    },
+    {
+      "title": "About Us - iCog Labs",
+      "url": "https://icog-labs.com/about-us/",
+      "snippet": "iCog Labs is a research and development company based in Addis Ababa, Ethiopia, collaborating with international AI research groups and serving customers around the world."
+    }
+  ]
+}

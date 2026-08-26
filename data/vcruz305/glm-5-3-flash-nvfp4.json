@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vcruz305/GLM-5.3-Flash-NVFP4",
+  "slug": "vcruz305-glm-5-3-flash-nvfp4",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-NVFP4",
+  "created_at": "2026-08-26T15:22:09.000Z",
+  "updated_at": "2026-08-26T15:22:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "Model Optimizer",
+    "glm",
+    "glm-5.3",
+    "glm-5.3-flash",
+    "nvfp4",
+    "modelopt",
+    "quantized",
+    "moe",
+    "multimodal",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "AI Model Release Timeline & History (2023-2026) | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases",
+      "snippet": "Explore 157 confirmed AI model releases across 46 providers in a chronological, source-linked timeline."
+    },
+    {
+      "title": "GLM Coding Plan — AI Coding Powered by GLM-5.3, GLM-5.3-Flash, GLM-5.2 ...",
+      "url": "https://z.ai/subscribe",
+      "snippet": "Use GLM models like GLM-5.3, GLM-5.3-Flash, GLM-5.2 & GLM-5-Turbo for AI coding in Claude Code, Codex, ZCode, Kilo Code, Cline, OpenCode, Clawdbot/OpenClaw and more. Plans from 18/month—fast, reliable code generation and tool use for daily dev work."
+    },
+    {
+      "title": "GLM-5 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5",
+      "snippet": "Overview GLM-5 is Z.AI&#x27;s new-generation foundation model, designed for Agentic Engineering, capable of providing reliable productivity in complex system engineering and long-range Agent tasks. In terms of Coding and Agent capabilities, GLM-5 has achieved state-of-the-art (SOTA) performance in open source, with its usability in real programming scenarios approaching that of Claude Opus 4.5."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

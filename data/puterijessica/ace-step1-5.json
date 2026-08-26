@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "puterijessica/Ace-Step1.5",
+  "slug": "puterijessica-ace-step1-5",
+  "author": "puterijessica",
+  "url": "https://huggingface.co/puterijessica/Ace-Step1.5",
+  "created_at": "2026-08-26T12:49:35.000Z",
+  "updated_at": "2026-08-26T12:49:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "diffusers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10079024720,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-STEP-1.5|PSISS5 - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2444682?modelVersionId=2748707",
+      "snippet": "Download ACE-STEP-1.5|PSISS5 - LORA for Other by 7nineniyao. Free AI model download from CivArchive."
+    },
+    {
+      "title": "ACE-Step-1.5/docs/en/Tutorial.md at main - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/en/Tutorial.md",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step 1.5 — AI Music Model | Tunee",
+      "url": "https://www.tunee.ai/it/models/ace-step-1-5",
+      "snippet": "ACE-Step 1.5 is an AI music generation model available on Tunee. Multilingual flagship model with precise style control. It costs 9 credits per track and supports a maximum duration of 600 seconds per generation. Whether you&#x27;re a professional creator or just getting started, ACE-Step 1.5 delivers consistent, high-quality results that meet the demands of modern content creation."
+    },
+    {
+      "title": "Ace-Step1.5: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ace-step1.5-ace-step",
+      "snippet": "Ace-Step1.5 is an open-source text-to-music generation model developed by ACE-Step that generates full songs from text descriptions in under 2 seconds on..."
+    }
+  ]
+}

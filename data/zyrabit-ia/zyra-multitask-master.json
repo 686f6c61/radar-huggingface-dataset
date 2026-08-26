@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Zyrabit-IA/zyra-multitask-master",
+  "slug": "zyrabit-ia-zyra-multitask-master",
+  "author": "Zyrabit-IA",
+  "url": "https://huggingface.co/Zyrabit-IA/zyra-multitask-master",
+  "created_at": "2026-08-26T16:48:05.000Z",
+  "updated_at": "2026-08-26T16:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "zyrabit",
+    "sovereign-ai",
+    "slm",
+    "gguf",
+    "q5_k_m",
+    "qwen2.5",
+    "tenstorrent-accelerated",
+    "release-v1.0.0-beta.1-sovereign",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zyrabit-IA/zyra-multitask-master-Q5_K_M · Hugging Face",
+      "url": "https://huggingface.co/Zyrabit-IA/zyra-multitask-master-Q5_K_M",
+      "snippet": "Zyrabit-IA / zyra-multitask-master-Q5_K_M like 0 Follow Zyrabit 1 Text Generation GGUF English Spanish zyrabit sovereign-ai slm q5_k_m qwen2.5 tenstorrent-accelerated release-v1..-sovereign Eval Results (legacy) conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Zyrabit — Sovereign AI Infrastructure",
+      "url": "https://www.zyrabit.co.uk/",
+      "snippet": "A complete Sovereign AI stack — small language model, vector store, redaction layer and observability — running on your infrastructure. No external network calls, no telemetry, no data leaves your perimeter."
+    },
+    {
+      "title": "zyrabit-slm/README.md at main - GitHub",
+      "url": "https://github.com/nosoyprogramad0r/zyrabit-slm/blob/main/README.md",
+      "snippet": "Zyrabit SLM is a production-grade, local AI stack that lets you run a private LLM assistant against your own documents without sending sensitive data to any external service."
+    },
+    {
+      "title": "Zyrabit-IA (Zyrabit) - Hugging Face",
+      "url": "https://huggingface.co/Zyrabit-IA",
+      "snippet": "Org profile for Zyrabit on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - nosoyprogramad0r/zyrabit-slm: Sovereign AI Infrastructure for ...",
+      "url": "https://github.com/nosoyprogramad0r/zyrabit-slm",
+      "snippet": "What is this? Zyrabit SLM is a production-grade, local AI stack that lets you run a private LLM assistant against your own documents without sending sensitive data to any external service."
+    }
+  ]
+}

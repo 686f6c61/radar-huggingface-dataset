@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "open-gigaai/GigaBrain-0.7-3.5B-Base",
+  "slug": "open-gigaai-gigabrain-0-7-3-5b-base",
+  "author": "open-gigaai",
+  "url": "https://huggingface.co/open-gigaai/GigaBrain-0.7-3.5B-Base",
+  "created_at": "2026-08-24T06:10:21.000Z",
+  "updated_at": "2026-08-25T20:11:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "vla",
+    "robotics",
+    "embodied-ai",
+    "vision-language-action",
+    "en",
+    "arxiv:2608.15875",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 165,
+  "trending_score": 8,
+  "parameters": 4121726448,
+  "parameters_human": "4.12B",
+  "storage_bytes": 32977347065,
+  "storage_human": "33.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-gigaai/GigaBrain-0.7-3.5B-Base · Hugging Face",
+      "url": "https://huggingface.co/open-gigaai/GigaBrain-0.7-3.5B-Base",
+      "snippet": "open-gigaai / GigaBrain-.7-3.5B-Base like 2 Follow GigaAI 182 Robotics Diffusers Safetensors English vla embodied-ai vision-language-action arxiv:2608.15875 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - open-gigaai/giga-brain-0: GigaBrain-0: A World Model-Powered ...",
+      "url": "https://github.com/open-gigaai/giga-brain-0",
+      "snippet": "GigaBrain-0 was trained using approximately 1k hours of real-world robot data together with a large amount of World Model-generated data. GigaBrain-0.1 scales the training data to 10k hours, with the detailed data composition shown in the figure below."
+    },
+    {
+      "title": "GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent ...",
+      "url": "https://arxiv.org/html/2608.15875",
+      "snippet": "Figure 1: Overview of GigaBrain-0.7. GigaBrain-0.7 is an embodied foundation-model system that coordinates understanding and planning, prediction and evaluation, and action and control through a three-system architecture. It learns from heterogeneous pretraining data and on-robot experience to support generalization and continual improvement across diverse robot embodiments and real-world ..."
+    },
+    {
+      "title": "Architecture graph for open-gigaai/GigaBrain-0.7-3.5B-Base.",
+      "url": "https://hfviewer.com/open-gigaai/GigaBrain-0.7-3.5B-Base",
+      "snippet": "open-gigaai/GigaBrain-0.7-3.5B-Base is a robotics model (gigabrain07 architecture). It uses 26 transformer layers, a hidden size of 2,304, and 8 query heads with 4 key/value heads (grouped-query attention)."
+    },
+    {
+      "title": "[2608.15875] GigaBrain-0.7: Scaling Embodied Foundation Models to ...",
+      "url": "https://arxiv.org/abs/2608.15875",
+      "snippet": "In particular, on our in-house Maker H01 platform and mainstream robot embodiments, GigaBrain-0.7 demonstrates strong task adaptability and completion ability across both home and industrial scenarios. All training code and pretrained model weights will be released."
+    }
+  ]
+}

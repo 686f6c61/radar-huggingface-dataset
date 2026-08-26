@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "Emerald7664/OmniVoice-Onnx-bidirectional",
+  "slug": "emerald7664-omnivoice-onnx-bidirectional",
+  "author": "Emerald7664",
+  "url": "https://huggingface.co/Emerald7664/OmniVoice-Onnx-bidirectional",
+  "created_at": "2026-08-26T14:31:06.000Z",
+  "updated_at": "2026-08-26T14:31:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "multilingual",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "hi",
+    "ar",
+    "ja",
+    "ko",
+    "pt",
+    "ru"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "zero-shot",
+    "voice-cloning",
+    "voice-design",
+    "multilingual",
+    "qwen3",
+    "masked-diffusion",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "hi",
+    "ar",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "arxiv:2604.00688",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:quantized:k2-fsa/OmniVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2825797722,
+  "storage_human": "2.8 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emerald7664/OmniVoice-Onnx · Hugging Face",
+      "url": "https://huggingface.co/Emerald7664/OmniVoice-Onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dellusional/OmniVoice-ONNX-bidirectional · Hugging Face",
+      "url": "https://huggingface.co/dellusional/OmniVoice-ONNX-bidirectional",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmniVoice-Onnx · Models",
+      "url": "https://www.modelscope.cn/models/onnx-community/OmniVoice-Onnx",
+      "snippet": "OmniVoice → ONNX ONNX conversion of Prince-1/OmniVoice — a zero-shot text-to-speech model supporting 600+ languages — via Olive and onnxruntime-genai ModelBuilder. OmniVoice is not a vision-language model. It is a TTS model: a Qwen3-0.6B backbone driving an 8-codebook audio codec (Higgs Audio V2 Tokenizer) through a 32-step non-autoregressive unmasking loop. All conversion configuration ..."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and ..."
+    },
+    {
+      "title": "Omnivoice-onnx/README_EN.md at master - GitHub",
+      "url": "https://github.com/AFun9/Omnivoice-onnx/blob/master/README_EN.md",
+      "snippet": "OmniVoice PyTorch model — Clone the main repo from k2-fsa/OmniVoice, download pretrained weights, and obtain an OmniVoice/ layout (with model.safetensors + audio_tokenizer/). tts conda environment — Install dependencies per the main OmniVoice README (torch, transformers>=5.5, onnx, onnxruntime, onnxsim, onnxconverter_common, torchaudio)."
+    }
+  ]
+}

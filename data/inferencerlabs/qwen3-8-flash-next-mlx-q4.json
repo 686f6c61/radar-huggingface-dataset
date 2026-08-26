@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4",
+  "slug": "inferencerlabs-qwen3-8-flash-next-mlx-q4",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4",
+  "created_at": "2026-08-26T16:30:02.000Z",
+  "updated_at": "2026-08-26T16:31:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "qwen4_exp",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989325,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "Qwen3.8-Flash-Next 125B-A6B MoE drops Aug 26 on ModelScope/HF. Leaked specs, Qwen4 architecture teaser, 128GB Mac fit, FreeToken offloading, vs Qwen3.8-27B."
+    },
+    {
+      "title": "Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit · Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

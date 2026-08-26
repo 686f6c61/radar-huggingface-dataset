@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alvinlest/self-supervised-review",
+  "slug": "alvinlest-self-supervised-review",
+  "author": "alvinlest",
+  "url": "https://huggingface.co/alvinlest/self-supervised-review",
+  "created_at": "2026-08-26T11:38:17.000Z",
+  "updated_at": "2026-08-26T11:38:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A survey on self-supervised learning: Recent advances and open problems ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225020818",
+      "snippet": "Despite recent breakthroughs, deep learning still relies heavily on costly manual annotations of large-scale datasets to achieve optimal performance in supervised learning. Self-Supervised Learning (SSL) has emerged as a promising approach to leverage unlabeled data without the need for manual labeling. This survey provides a systematic and comprehensive review of state-of-the-art SSL methods ..."
+    },
+    {
+      "title": "A Survey of Self-Supervised Learning from Multiple Perspectives ...",
+      "url": "https://arxiv.org/pdf/2301.05712v1",
+      "snippet": "Abstract—Deep supervised learning algorithms generally require large numbers of labeled examples to attain satisfactory performance. To avoid the expensive cost incurred by collecting and labeling too many examples, as a subset of unsupervised learning, self-supervised learning (SSL) was proposed to learn good features from many unlabeled examples without any human-annotated labels. SSL has ..."
+    },
+    {
+      "title": "[2301.05712] A Survey on Self-supervised Learning: Algorithms ...",
+      "url": "https://arxiv.org/abs/2301.05712",
+      "snippet": "Deep supervised learning algorithms typically require a large volume of labeled data to achieve satisfactory performance. However, the process of collecting and labeling such data can be expensive and time-consuming. Self-supervised learning (SSL), a subset of unsupervised learning, aims to learn discriminative features from unlabeled data without relying on human-annotated labels. SSL has ..."
+    },
+    {
+      "title": "What Is Self-Supervised Learning? Examples & Applications",
+      "url": "https://www.snowflake.com/en/fundamentals/self-supervised-learning/",
+      "snippet": "Learn what self-supervised learning is and how it works. Explore self-learning AI, key models, and comparisons with supervised and unsupervised learning."
+    },
+    {
+      "title": "Self-supervised learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Self-supervised_learning",
+      "snippet": "Self-supervised learning (SSL) is a paradigm in machine learning where a model is trained on a task using the data itself to generate supervisory signals, rather than relying on externally-provided labels."
+    }
+  ]
+}

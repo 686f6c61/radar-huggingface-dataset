@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "aimagelab/CounterVid-Qwen2.5-VL-3B-LoRA",
+  "slug": "aimagelab-countervid-qwen2-5-vl-3b-lora",
+  "author": "aimagelab",
+  "url": "https://huggingface.co/aimagelab/CounterVid-Qwen2.5-VL-3B-LoRA",
+  "created_at": "2026-08-26T12:22:31.000Z",
+  "updated_at": "2026-08-26T16:18:53.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "video",
+    "multimodal",
+    "vision-language",
+    "countervid",
+    "preference-optimization",
+    "dpo",
+    "conversational",
+    "en",
+    "dataset:aimagelab/CounterVid",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759841,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-VL-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - elsawhs/qwen2.5-vl: Qwen2.5-VL is the multimodal large ...",
+      "url": "https://github.com/elsawhs/qwen2.5-vl",
+      "snippet": "In the past five months since Qwen2-VL&#x27;s release, numerous developers have built new models on the Qwen2-VL vision-language models, providing us with valuable feedback. During this period, we focused on building more useful vision-language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5-VL."
+    },
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen2.5-VL-3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "Qwen2.5-VL-3B-Instruct Introduction In the past five months since Qwen2-VL&#x27;s release, numerous developers have built new models on the Qwen2-VL vision-language models, providing us with valuable feedback. During this period, we focused on building more useful vision-language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5-VL. Key Enhancements ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-VL: The official repo of Qwen-VL (通义千问-VL) chat ...",
+      "url": "https://github.com/QwenLM/Qwen-VL",
+      "snippet": "Notably, Qwen-VL-Max outperforms both GPT-4V from OpenAI and Gemini from Google in tasks on Chinese question answering and Chinese text comprehension. This breakthrough underscores the model&#x27;s advanced capabilities and its potential to set new standards in the field of multimodal AI research and application."
+    }
+  ]
+}

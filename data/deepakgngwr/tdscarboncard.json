@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deepakgngwr/tdscarboncard",
+  "slug": "deepakgngwr-tdscarboncard",
+  "author": "deepakgngwr",
+  "url": "https://huggingface.co/deepakgngwr/tdscarboncard",
+  "created_at": "2026-08-26T11:21:11.000Z",
+  "updated_at": "2026-08-26T11:26:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dev-1234/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/dev-1234/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "GitHub - deepakgngwr/tds-june-2026",
+      "url": "https://github.com/deepakgngwr/tds-june-2026/tree/main",
+      "snippet": "Contribute to deepakgngwr/tds-june-2026 development by creating an account on GitHub."
+    },
+    {
+      "title": "Inside Mastercard&#x27;s new gen AI engine | Mastercard Global",
+      "url": "https://www.mastercard.com/global/en/news-and-trends/stories/2026/mastercard-new-generative-ai-model.html",
+      "snippet": "Mastercard is developing a generative AI model using anonymized transaction data to enhance cybersecurity, personalization and the future of global commerce."
+    },
+    {
+      "title": "tds-ga4/main.py at main · deepakgngwr/tds-ga4 · GitHub",
+      "url": "https://github.com/deepakgngwr/tds-ga4/blob/main/main.py",
+      "snippet": "Contribute to deepakgngwr/tds-ga4 development by creating an account on GitHub."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

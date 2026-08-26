@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "toolathlon-eval-02/Annoy-PyEdu-Rs",
+  "slug": "toolathlon-eval-02-annoy-pyedu-rs",
+  "author": "toolathlon-eval-02",
+  "url": "https://huggingface.co/toolathlon-eval-02/Annoy-PyEdu-Rs",
+  "created_at": "2026-08-26T11:54:15.000Z",
+  "updated_at": "2026-08-26T11:54:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toolathlon-eval-02/Annoy-PyEdu-Rs · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hkust-nlp/Toolathlon: [ICLR 2026] The Tool Decathlon ...",
+      "url": "https://github.com/hkust-nlp/Toolathlon",
+      "snippet": "Toolathlon is a benchmark to assess language agents&#x27; general tool use in realistic environments. It features 600+ diverse tools based on real-world software environments. Each task requires long-horizon tool calls to complete. This repository corresponds to the Toolathlon-Verified final release. Below we show a demo task where the agent needs to automatically check assignments in the email box ..."
+    },
+    {
+      "title": "Dataset License Issue - Toolathlon",
+      "url": "https://toolathlon.xyz/docs/tasks/tech/18",
+      "snippet": "The licenses for the two datasets are: Annoy-PyEdu-Rs-Raw = {license}, Annoy-PyEdu-Rs = {license}\" Also, please update the corresponding huggingface dataset pages by adding the following line at the end of the existing readme."
+    },
+    {
+      "title": "Updated README for Annoy-PyEdu-Rs dataset with license information",
+      "url": "https://gist.github.com/mcpllmbench-ops/9bbcbf0aa849898f3f8c38fb3d32060f/3819e5bacc81e5152617dfabc9c9345a23d5d1c3",
+      "snippet": "This is the resource page of the our resources collection on Huggingface, we highlight your currect position with a blue block."
+    },
+    {
+      "title": "Tool Decathlon - Toolathlon",
+      "url": "https://toolathlon.xyz/introduction",
+      "snippet": "The Tool Decathlon (dubbed as Toolathlon) is a benchmark for language agents offering diverse applications and tools, realistic environment setup, and reliable execution-based evaluation."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "Fazmin/solus_v1_lfm2-encoder-350m-pii-q8",
+  "slug": "fazmin-solus_v1_lfm2-encoder-350m-pii-q8",
+  "author": "Fazmin",
+  "url": "https://huggingface.co/Fazmin/solus_v1_lfm2-encoder-350m-pii-q8",
+  "created_at": "2026-08-26T11:40:31.000Z",
+  "updated_at": "2026-08-26T11:40:40.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "it",
+    "pl",
+    "ru",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "hi",
+    "id",
+    "vi",
+    "th"
+  ],
+  "tags": [
+    "onnx",
+    "solus",
+    "onnxruntime",
+    "pii",
+    "privacy",
+    "ner",
+    "token-classification",
+    "lfm2",
+    "information-extraction",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "it",
+    "pl",
+    "ru",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "hi",
+    "id",
+    "vi",
+    "th",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M-PII-Detector",
+    "base_model:quantized:LiquidAI/LFM2.5-Encoder-350M-PII-Detector",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 567808634,
+  "storage_human": "568 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M-PII-Detector",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazmin/solus_v1_gliner2-privacy-filter-pii-q8 · Hugging Face",
+      "url": "https://huggingface.co/Fazmin/solus_v1_gliner2-privacy-filter-pii-q8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-Encoder-350M-PII-Detector · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-PII-Detector",
+      "snippet": "A full fine-tune of LFM2.5-Encoder-350M with a token-classification head, covering 40 PII types across 16 languages. Find more details about our encoders in our blog post. 💻 Demos: Try this fine-tuned model running in a CPU-only Hugging Face space: PII detection — spot and remove 40 kinds of personal information across 16 languages."
+    },
+    {
+      "title": "LFM2.5-Encoder-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-encoder-350m",
+      "snippet": "At 350M parameters, it is the larger sibling in the encoder family, built for maximum downstream quality when fine-tuned into task-specific models (classification, token classification, retrieval, reranking, and semantic similarity) across 15 languages. HF Use LFM2.5-Encoder-350M when downstream quality matters most."
+    },
+    {
+      "title": "LFM2.5-Encoders: Fast at Long Context, Even on CPU - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-encoders",
+      "snippet": "Open-weight bidirectional encoders for classification, routing & NLU. LFM2.5-Encoder-230M & 350M deliver 8K context and fast CPU inference for edge and on-prem."
+    },
+    {
+      "title": "GitHub - kucukkanat/lfm-encoders: Zero-shot prompt routing, policy ...",
+      "url": "https://github.com/kucukkanat/lfm-encoders",
+      "snippet": "LFM2.5-Encoder-350M — Liquid AI&#x27;s bidirectional encoder — traced to ONNX, quantized, and run entirely client-side through transformers.js. No inference server, no API key: the weights are fetched once, cached by the browser, and every forward pass happens in the tab. Three of Liquid&#x27;s demos are reproduced here as worked examples — zero-shot prompt routing (score one text against free ..."
+    }
+  ]
+}

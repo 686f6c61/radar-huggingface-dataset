@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "mijoko/Qwen3.8-27B-Moxie",
+  "slug": "mijoko-qwen3-8-27b-moxie",
+  "author": "mijoko",
+  "url": "https://huggingface.co/mijoko/Qwen3.8-27B-Moxie",
+  "created_at": "2026-08-26T13:00:13.000Z",
+  "updated_at": "2026-08-26T13:04:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh",
+    "de"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "qwen3.6",
+    "multimodal",
+    "vision-language",
+    "agentic",
+    "conversational",
+    "creative-writing",
+    "roleplay",
+    "q8_0",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "de",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "base_model:ReadyArt/Dark-Scarlett-v1.0-27B",
+    "base_model:merge:ReadyArt/Dark-Scarlett-v1.0-27B",
+    "base_model:clzoro/Qwen3.6-27B-Claude-Distill-v2",
+    "base_model:merge:clzoro/Qwen3.6-27B-Claude-Distill-v2",
+    "base_model:llmfan46/Omega-Evolution-27B-v2.1-uncensored-heretic",
+    "base_model:merge:llmfan46/Omega-Evolution-27B-v2.1-uncensored-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B, llmfan46/Omega-Evolution-27B-v2.1-uncensored-heretic, ReadyArt/Dark-Scarlett-v1.0-27B, clzoro/Qwen3.6-27B-Claude-Distill-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

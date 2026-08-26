@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/RemoteCLIP",
+  "slug": "onescience-group-remoteclip",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/RemoteCLIP",
+  "created_at": "2026-08-26T12:56:08.000Z",
+  "updated_at": "2026-08-26T12:56:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "remoteclip",
+    "OneScience",
+    "Earth Science",
+    "Remote Sensing",
+    "Vision-Language Model",
+    "Image-Text Retrieval",
+    "RemoteCLIP",
+    "arxiv:2306.11029",
+    "en",
+    "dataset:RSITMD",
+    "dataset:RSICD",
+    "dataset:UCM-Captions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RemoteCLIP: A Vision Language Foundation Model for Remote Sensing",
+      "url": "https://remotefamily.github.io/RemoteCLIP.html",
+      "snippet": "To address these limitations, we propose RemoteCLIP, the first vision-language foundation model for remote sensing that aims to learn robust visual features with rich semantics and aligned text embeddings for seamless downstream application."
+    },
+    {
+      "title": "PDF Ieee Transactions on Geoscience and Remote Sensing, Vol. 62, 2024 ...",
+      "url": "https://lyj301.github.io/lyj031.github.io/static/remoteclip_paper.pdf",
+      "snippet": "Abstract—General-purpose foundation models have led to recent breakthroughs in artificial intelligence (AI). In remote sensing, self-supervised learning (SSL) and masked image mod-eling (MIM) have been adopted to build foundation models. However, these models primarily learn low-level features and require annotated data for fine-tuning. Moreover, they are inapplicable for retrieval and zero ..."
+    },
+    {
+      "title": "RemoteCLIP: A Vision Language Foundation Model for Remote Sensing",
+      "url": "https://arxiv.org/html/2306.11029v1",
+      "snippet": "The first vision-language foundation model for remote sensing: We propose a novel vision-language foundation model called RemoteCLIP. With the large-scale pretraining dataset, this model is trained to align vision-language representations and learns robust visual features with rich semantics of satellite imagery visual concepts."
+    },
+    {
+      "title": "RemoteCLIP: Vision-Language Model for Remote Sensing",
+      "url": "https://api.emergentmind.com/papers/2306.11029",
+      "snippet": "RemoteCLIP: A Vision Language Foundation Model for Remote Sensing The paper \"RemoteCLIP: A Vision Language Foundation Model for Remote Sensing\" proposes an innovative vision-LLM designed to bridge the gap between image and text understanding within the remote sensing domain. Traditional self-supervised learning (SSL) methods, especially Masked Image Modeling (MIM), have not adequately ..."
+    },
+    {
+      "title": "GitHub - ChenDelong1999/RemoteCLIP: ️ Official repository of paper ...",
+      "url": "https://github.com/ChenDelong1999/RemoteCLIP",
+      "snippet": "Welcome to the official repository of our paper \" RemoteCLIP: A Vision Language Foundation Model for Remote Sensing \"! General-purpose foundation models have become increasingly important in the field of artificial intelligence. While self-supervised learning (SSL) and Masked Image Modeling (MIM) have led to promising results in building such foundation models for remote sensing, these models ..."
+    }
+  ]
+}

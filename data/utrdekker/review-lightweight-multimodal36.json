@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "utrdekker/review-lightweight-multimodal36",
+  "slug": "utrdekker-review-lightweight-multimodal36",
+  "author": "utrdekker",
+  "url": "https://huggingface.co/utrdekker/review-lightweight-multimodal36",
+  "created_at": "2026-08-26T14:07:28.000Z",
+  "updated_at": "2026-08-26T14:07:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Best Multimodal Models of 2026 Rankings: Test & Compare",
+      "url": "https://blog.roboflow.com/best-multimodal-models/",
+      "snippet": "The top multimodal models in early 2026 span a range of strengths: SAM 3 leads Roboflow&#x27;s AI Vision Model Rankings with a score of 1391 and zero-shot segmentation across diverse domains, Gemini 2.5 and Gemini 3 offer a 2-million-token context window suited to long visual reasoning tasks, GPT-5 advances multimodal reasoning and generation, Qwen VL Max targets multilingual and document-heavy ..."
+    },
+    {
+      "title": "15 Best Lightweight Language Models Worth Running in 2026",
+      "url": "https://www.premai.io/blog/best-lightweight-language-models-worth-running/",
+      "snippet": "Compare 15 lightweight language models by parameters, performance, and use case. From Qwen3 to Gemma 3n, find the right small LLM for coding, chatbots, or on-device AI."
+    },
+    {
+      "title": "Best Multimodal AI Models in 2026: Vision, Video, and Computer Use Ranked",
+      "url": "https://www.aimadetools.com/blog/best-multimodal-ai-models-2026/",
+      "snippet": "Multimodal AI models process more than text — they understand images, video, screenshots, charts, and can even operate a desktop computer. In 2026, several models offer native multimodal capabilities, but they vary dramatically in what they support, how well they perform, and what they cost. This guide ranks the best multimodal models by capability depth: from simple image understanding to ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

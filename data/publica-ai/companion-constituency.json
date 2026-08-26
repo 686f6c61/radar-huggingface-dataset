@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "publica-ai/Companion-constituency",
+  "slug": "publica-ai-companion-constituency",
+  "author": "publica-ai",
+  "url": "https://huggingface.co/publica-ai/Companion-constituency",
+  "created_at": "2026-08-21T20:33:23.000Z",
+  "updated_at": "2026-08-26T17:22:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 338639189,
+  "storage_human": "339 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Publica AI - GitHub",
+      "url": "https://github.com/Publica-AI/",
+      "snippet": "Official Github of Publica AI. Publica AI has 8 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Public AI Inference Utility",
+      "url": "https://publicai.co/",
+      "snippet": "A nonprofit, open-source service to make public and sovereign AI models more accessible."
+    },
+    {
+      "title": "PUBLIC CONSTITUTIONAL AI - arXiv.org",
+      "url": "https://arxiv.org/pdf/2406.16696v2",
+      "snippet": "Just as constitutions limit and guide the exercise of governmental power, Constitutional AI seeks to hardcode explicit principles and values into AI models, rendering their decisionmaking more transparent and accountable. What sets Constitutional AI apart is its commitment to grounding AI training in a clear, human-understandable \"constitution.\" By training AI to adhere to principles ..."
+    },
+    {
+      "title": "publica-ai (PublicaAI) - Hugging Face",
+      "url": "https://huggingface.co/publica-ai/models",
+      "snippet": "Org profile for PublicaAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "PDF Collective Constitutional AI: Aligning a Language Model ... - Anthropic",
+      "url": "https://www-cdn.anthropic.com/b43359be43cabdbe3a8ffd60ea8a68acf25cb22e/Anthropic_CollectiveConstitutionalAI.pdf",
+      "snippet": "POLICY HIGHLIGHTS exible method for incorporating democratic processes into AI development. It can be s Soliciting broad public input—through Collective Constitutional AI or other methods—can reveal potential blindspots in the design of AI models that when incorporated, can make meaningful and positive differences in downstream model behavior."
+    }
+  ]
+}

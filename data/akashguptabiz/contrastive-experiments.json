@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "akashguptabiz/contrastive-experiments",
+  "slug": "akashguptabiz-contrastive-experiments",
+  "author": "akashguptabiz",
+  "url": "https://huggingface.co/akashguptabiz/contrastive-experiments",
+  "created_at": "2026-08-26T14:04:37.000Z",
+  "updated_at": "2026-08-26T14:04:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI by Aakash | Substack",
+      "url": "https://www.aibyaakash.com/",
+      "snippet": "Everything you need to know about AI and nothing more. Click to read AI by Aakash, by Aakash Gupta, a Substack publication with hundreds of thousands of subscribers."
+    },
+    {
+      "title": "How Contrastive Learning Powers AI&#x27;s Smartest Models",
+      "url": "https://www.linkedin.com/posts/aakash-gupta-5ky_ai-machinelearning-contrastivelearning-activity-7302334458479742976-cQ-x",
+      "snippet": "Contrastive Learning - The Future of AI Understanding 🔥 Contrastive Learning: The Secret Behind AI&#x27;s Smartest Models Ever wondered how AI models like CLIP or DALL·E seem to \"understand ..."
+    },
+    {
+      "title": "Complete Course: AI Experimentation - by Aakash Gupta",
+      "url": "https://www.news.aakashg.com/p/frederic-de-todaro-podcast",
+      "snippet": "Learn how AI is revolutionizing A/B testing for product managers. From prompt-based experiments to smart targeting - transform your experimentation process."
+    },
+    {
+      "title": "#machinelearning #ai #contrastivelearning #innovation #futuretech ...",
+      "url": "https://www.linkedin.com/posts/aakash-gupta-5ky_machinelearning-ai-contrastivelearning-activity-7267726417923072001-Wrc2",
+      "snippet": "Contrastive learning is reshaping the way we train models to understand and interpret data by teaching them to differentiate between similar and dissimilar data points. The core idea? Minimize ..."
+    },
+    {
+      "title": "Hi, I&#x27;m Aakash Gupta! - Product Growth",
+      "url": "https://www.aakashg.com/",
+      "snippet": "Hi, I&#x27;m Aakash Gupta! AI is rewriting product management in real time. I write about it every week for 236K+ subscribers, and I host the conversations with the practitioners doing it. The Work I write Product Growth (236K+ subscribers), deep dives on AI product management, growth strategy, and career moves."
+    }
+  ]
+}

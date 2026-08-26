@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "sifat-febo/banglish-embed-minilm-small",
+  "slug": "sifat-febo-banglish-embed-minilm-small",
+  "author": "sifat-febo",
+  "url": "https://huggingface.co/sifat-febo/banglish-embed-minilm-small",
+  "created_at": "2026-08-26T16:10:20.000Z",
+  "updated_at": "2026-08-26T16:17:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "bangla",
+    "banglish",
+    "bengali",
+    "romanized-bengali",
+    "feature-extraction",
+    "sentence-similarity",
+    "embeddings",
+    "retrieval",
+    "cross-script-retrieval",
+    "code-switching",
+    "low-resource-languages",
+    "cpu",
+    "bn",
+    "en",
+    "dataset:aplycaebous/BanglaTLit",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117352320,
+  "parameters_human": "117.4M",
+  "storage_bytes": 469431053,
+  "storage_human": "469 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sifat-febo/banglish-embed · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/banglish-embed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sifat-febo/banglish-embed at main - Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/banglish-embed/tree/main",
+      "snippet": "Instructions to use sifat-febo/banglish-embed with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use sifat-febo/banglish-embed with sentence-transformers:"
+    },
+    {
+      "title": "longway2go-ai/MiniLM-A-Small-Language-Model-from-Scratch",
+      "url": "https://github.com/longway2go-ai/MiniLM-A-Small-Language-Model-from-Scratch",
+      "snippet": "MiniLM is a small, efficient, and educational language model built from scratch, inspired by Karpathy&#x27;s nanoGPT and the TinyStories research paper by Microsoft. This project is designed to help understand the full lifecycle of training a Transformer-based model, from data preparation to inference, in an accessible and minimalist codebase."
+    },
+    {
+      "title": "The Best Small Language Models in 2026: A Practical Comparison",
+      "url": "https://tinyweights.dev/posts/best-small-language-models-2026/",
+      "snippet": "A practical guide to the best small language models in 2026—Phi-4-mini, SmolLM3-3B, Gemma 3 4B, Qwen3, and more—with benchmarks, VRAM requirements, and honest use-case picks."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    }
+  ]
+}

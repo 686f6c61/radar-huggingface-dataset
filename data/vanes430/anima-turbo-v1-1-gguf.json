@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "vanes430/Anima-Turbo-V1.1-GGUF",
+  "slug": "vanes430-anima-turbo-v1-1-gguf",
+  "author": "vanes430",
+  "url": "https://huggingface.co/vanes430/Anima-Turbo-V1.1-GGUF",
+  "created_at": "2026-08-26T13:40:54.000Z",
+  "updated_at": "2026-08-26T14:26:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "cosmos",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "cosmos",
+    "gguf",
+    "text-to-image",
+    "comfyui",
+    "anima-turbo",
+    "lumina2",
+    "quant",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "base_model:circlestone-labs/Anima",
+    "base_model:quantized:circlestone-labs/Anima",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2091068928,
+  "parameters_human": "2.09B",
+  "storage_bytes": 29369026302,
+  "storage_human": "29.4 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anima - aesthetic-v1.1 | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2458426/anima",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anime concepts, characters, and styles, but is also capable of generating a wide variety of other non-photorealistic content."
+    },
+    {
+      "title": "Abiray/Anima-turbo-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/Anima-turbo-v1.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anima-turbo-v1.0-Q4_K_S.gguf · Abiray/Anima-turbo-v1.0-GGUF at main",
+      "url": "https://huggingface.co/Abiray/Anima-turbo-v1.0-GGUF/blob/main/anima-turbo-v1.0-Q4_K_S.gguf",
+      "snippet": "Abiray / Anima-turbo-v1.-GGUF like 7 Text-to-Image Cosmos GGUF comfyui anime License:circlestone-labs-non-commercial-license Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Anima · Models",
+      "url": "https://www.modelscope.cn/models/circlestone-labs/anima/summary",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anime concepts, characters, and styles, but is also capable of generating a wide variety of other non-photorealistic content."
+    },
+    {
+      "title": "Anima Anime AI Model - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/1036562163918988549",
+      "snippet": "LoRAs should be trained using this version. Anima-Aesthetic: Fine-tuned for better consistency and a higher quality default art style. Anima-Turbo: Distilled version for fast generations. Use at CFG 1 and 8-12 steps. The distillation process also increases stability and gives the model a strong default style, but reduces diversity."
+    }
+  ]
+}

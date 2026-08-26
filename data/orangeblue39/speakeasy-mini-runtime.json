@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "orangeblue39/speakeasy-mini-runtime",
+  "slug": "orangeblue39-speakeasy-mini-runtime",
+  "author": "orangeblue39",
+  "url": "https://huggingface.co/orangeblue39/speakeasy-mini-runtime",
+  "created_at": "2026-08-26T16:07:05.000Z",
+  "updated_at": "2026-08-26T16:12:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-a-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42162465,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Wallace-team-research/speakeasy_model - GitHub",
+      "url": "https://github.com/Wallace-team-research/speakeasy_model",
+      "snippet": "SpeakEasy-AI is a machine learning project that aims to detect patterns in conversational responses. A fully-trained model is hosted here as an interactive chatbot."
+    },
+    {
+      "title": "Introducing OpenAI o3 and o4-mini",
+      "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "snippet": "Like OpenAI o1‑pro, o3‑pro is a version of our most intelligent model, OpenAI o3, designed to think longer and provide the most reliable responses. Full details can be found in our release notes ⁠. Today, we&#x27;re releasing OpenAI o3 and o4-mini, the latest in our o-series of models trained to think for longer before responding."
+    },
+    {
+      "title": "Charging-Alot/SpeakEasy-AI - GitHub",
+      "url": "https://github.com/Charging-Alot/SpeakEasy-AI",
+      "snippet": "#SpeakEasy-AI SpeakEasy-AI is a machine learning project that aims to detect patterns in conversational responses. You can talk to Marvin, our SpeakEasy chatbot, at <speakez.tk>. ##The Data## Marvin is trained on data from Reddit comments. The original dataset can be found here, but since Reddit is insane corner of the internet, this data was heavily filtered to correct grammar and exclude ..."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

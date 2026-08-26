@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "atonlee/supra-ko-pii-router",
+  "slug": "atonlee-supra-ko-pii-router",
+  "author": "atonlee",
+  "url": "https://huggingface.co/atonlee/supra-ko-pii-router",
+  "created_at": "2026-08-26T17:14:06.000Z",
+  "updated_at": "2026-08-26T17:14:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "router",
+    "pii",
+    "privacy",
+    "korean",
+    "edge-computing",
+    "ko",
+    "dataset:BCCard/pii-masking-openpii-finance",
+    "dataset:townboy/korean-pii-dataset",
+    "dataset:atonlee/Prompt-Routing-Dataset-ko",
+    "base_model:SupraLabs/Supra1.5-50M-Base-exp",
+    "base_model:finetune:SupraLabs/Supra1.5-50M-Base-exp",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207157136,
+  "storage_human": "207 MB",
+  "base_model": "SupraLabs/Supra1.5-50M-Base-exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SupraLabs/Supra-Router-51M · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra-Router-51M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "GitHub - yeliu84/pi-model-router: Extension for the pi coding agent ...",
+      "url": "https://github.com/yeliu84/pi-model-router",
+      "snippet": "Smart per-turn model router extension for the pi-coding-agent that optimizes your AI budget and usage limits without sacrificing quality by dynamically routing each turn to the optimal LLM tier. It automatically selects between high, medium, and low-tier models based on task intent, session budget, context size, and custom rules — complete with automatic fallbacks and phase awareness."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "GitHub - bytonylee/free-router: The free AI model router, API for ...",
+      "url": "https://github.com/bytonylee/free-router",
+      "snippet": "The free AI model router, API for everyday AI work. Find the best option, compare results, switch with less friction. - bytonylee/free-router"
+    }
+  ]
+}

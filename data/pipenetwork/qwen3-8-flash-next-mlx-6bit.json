@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/Qwen3.8-Flash-Next-MLX-6bit",
+  "slug": "pipenetwork-qwen3-8-flash-next-mlx-6bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-6bit",
+  "created_at": "2026-08-26T17:36:59.000Z",
+  "updated_at": "2026-08-26T18:52:50.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "apple-silicon",
+    "mixture-of-experts",
+    "6-bit",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40832006291,
+  "parameters_human": "40.83B",
+  "storage_bytes": 147994475339,
+  "storage_human": "148.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipenetwork/Qwen3.8-Flash-Next-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-4bit",
+      "snippet": "pipenetwork / Qwen3.8-Flash-Next-MLX-4bit like 0 Text Generation MLX Safetensors qwen4_exp apple-silicon mixture-of-experts 4-bit precision conversational License:qwen-community-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen38-flash-next-mlx - GitHub",
+      "url": "https://github.com/PipeNetwork/qwen38-flash-next-mlx",
+      "snippet": "MLX (Apple Silicon) runtime and quantization tooling for Qwen/Qwen3.8-Flash-Next — 125B-A6B hybrid Gated-DeltaNet / Qwen-Sparse-Attention MoE with gated residual streams and a 51B-parameter hashed n-gram embedding (model_type: qwen4_exp)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal Mixture-of-Experts model released as an early preview of the architecture Qwen4 is being built on — the same role Qwen3-Next played for Qwen3.5, whose hybrid Gated DeltaNet + Gated Attention design then carried through the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and chat. We are working very hard to support the ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

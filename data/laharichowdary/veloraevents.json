@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "laharichowdary/VELORAEVENTS",
+  "slug": "laharichowdary-veloraevents",
+  "author": "laharichowdary",
+  "url": "https://huggingface.co/laharichowdary/VELORAEVENTS",
+  "created_at": "2026-08-26T17:33:13.000Z",
+  "updated_at": "2026-08-26T17:33:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chip designer Velaura AI valued at more than $1 billion in funding ...",
+      "url": "https://www.reuters.com/legal/transactional/chip-designer-velaura-ai-valued-more-than-1-billion-after-funding-round-2026-08-18/",
+      "snippet": "Velaura AI said on Tuesday it raised $110 million in a Series A funding round that valued the chip-designing startup at more than $1 billion, with investors backing ‌its technology that can ..."
+    },
+    {
+      "title": "Velora — Plan Boldly. Connect Deeply. Share Joyfully.",
+      "url": "https://velora.events/",
+      "snippet": "AI-assisted event wizard gets you from idea to published in minutes. Multi-tier ticketing with forge-proof signed QR codes, drag-and-drop booth maps, multi-day agendas, and CSV bulk guest import, built for organizers who refuse to settle for spreadsheets."
+    },
+    {
+      "title": "VELOURAI - YouTube",
+      "url": "https://www.youtube.com/@VELOURAIOFFICIAL",
+      "snippet": "Welcome to VELOURAI AI-generated haute couture that doesn&#x27;t exist in real life yet 🌸 New AI runway looks every Tuesday Thursday and Saturday 🎬 Subscribe so you never miss a new collection ..."
+    },
+    {
+      "title": "Mysterious Ox Alpha AI Model Was Made by Chinese Firm Z.ai - Business ...",
+      "url": "https://www.businessinsider.com/ox-alpha-model-made-by-china-z-ai-2026-8?op=1",
+      "snippet": "Chinese tech company Z.ai says it was behind the mysterious free AI model, Ox Alpha, that generated buzz for its performance. In a blog post published on Wednesday, Z.ai said Ox Alpha was an ..."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

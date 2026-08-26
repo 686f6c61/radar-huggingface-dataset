@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Voxtral-Mini-3B-2507-estonian-GGUF",
+  "slug": "mradermacher-voxtral-mini-3b-2507-estonian-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Voxtral-Mini-3B-2507-estonian-GGUF",
+  "created_at": "2026-08-26T15:53:28.000Z",
+  "updated_at": "2026-08-26T16:44:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4014136320,
+  "parameters_human": "4.01B",
+  "storage_bytes": 38312342208,
+  "storage_human": "38.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Voxtral-Mini-3B-2507-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Voxtral-Mini-3B-2507-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ggml-org/Voxtral-Mini-3B-2507-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Voxtral-Mini-3B-2507-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "remoasr/hf_readmes/voxtral-mini-3b-2507-GGUF.md at main - GitHub",
+      "url": "https://github.com/linmi/remoasr/blob/main/hf_readmes/voxtral-mini-3b-2507-GGUF.md",
+      "snippet": "Voxtral Mini is Mistral&#x27;s 3B-parameter speech-LLM — an enhancement of Ministral 3B with state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation, and audio understanding."
+    },
+    {
+      "title": "What Hardware Runs Voxtral Mini 3B (2507) | AI Audio Model",
+      "url": "https://www.madebyagents.com/models/voxtral-mini-3b-2507",
+      "snippet": "Mistral AI Voxtral Mini 3B (2507) Mistral AI&#x27;s compact 3B-parameter open-weights audio-language model built on Ministral-3B with a Whisper-derived encoder, designed for transcription, audio Q&A, summarization, and function-calling from voice across 8+ languages."
+    },
+    {
+      "title": "Voxtral-Mini-3B-2507 · Models",
+      "url": "https://www.modelscope.cn/models/mistralai/Voxtral-Mini-3B-2507/summary",
+      "snippet": "Voxtral Mini 1.0 (3B) - 2507 Voxtral Mini is an enhancement of Ministral 3B, incorporating state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation and audio understanding. Learn more about Voxtral in our blog post here and our research paper. Key Features Voxtral builds upon Ministral-3B with powerful audio ..."
+    }
+  ]
+}

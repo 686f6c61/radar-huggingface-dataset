@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "EllaPriest45/Flux1D_Checkpoints",
+  "slug": "ellapriest45-flux1d_checkpoints",
+  "author": "EllaPriest45",
+  "url": "https://huggingface.co/EllaPriest45/Flux1D_Checkpoints",
+  "created_at": "2026-05-21T14:24:55.000Z",
+  "updated_at": "2026-08-26T16:22:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149749746480,
+  "storage_human": "149.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EllaPriest45/Flux1D_Checkpoints · Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/Flux1D_Checkpoints",
+      "snippet": "EllaPriest45 / Flux1D_Checkpoints like 1 GGUF Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 41 GGUF Model size 12B params Architecture flux Hardware compatibility Log In to add your hardware"
+    },
+    {
+      "title": "EllaPriest45/Flux1D_actions · Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/Flux1D",
+      "snippet": "EllaPriest45 / Flux1D_actions like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Dev | Flux.1 Checkpoint - Civitai",
+      "url": "https://civitai.com/models/618692/flux",
+      "snippet": "Please check out the Quickstart Guide to Flux for all the info you need to get started! FLUX.1 [dev] is a 12 billion parameter rectified flow trans..."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "FLUX.1 - dev-fp8 FLUX - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/757279507095956705",
+      "snippet": "Download FLUX.1 - free CHECKPOINT FLUX.1 AI model on TENSOR. FLUX. By 1ronMan"
+    }
+  ]
+}

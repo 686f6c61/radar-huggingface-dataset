@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MohammadKhosravi/llama3.1-8b-pmt-dual-factorized",
+  "slug": "mohammadkhosravi-llama3-1-8b-pmt-dual-factorized",
+  "author": "MohammadKhosravi",
+  "url": "https://huggingface.co/MohammadKhosravi/llama3.1-8b-pmt-dual-factorized",
+  "created_at": "2026-08-26T14:08:25.000Z",
+  "updated_at": "2026-08-26T14:08:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "prefixmemory-tuning",
+    "cefr-alignment",
+    "topic-aligned",
+    "dual-tier-factorized",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1174523941,
+  "storage_human": "1.2 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-60K · Hugging Face",
+      "url": "https://huggingface.co/MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-60K",
+      "snippet": "Pure PrefixMemory-Tuning (PMT) + CEFR Gating (60K Dataset) This repository contains the uncompressed PrefixMemory-Tuning (PMT) controller trained on the full 52,657-sample EFCAMDAT dataset with inverse-class-frequency weighted cross-entropy loss."
+    },
+    {
+      "title": "MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-6k · Hugging Face",
+      "url": "https://huggingface.co/MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-6k",
+      "snippet": "Pure PrefixMemory-Tuning (PMT) + CEFR Gating This experiment implements a highly faithful replication of the uncompressed PrefixMemory-Tuning architecture (arXiv:2506.13674), featuring independent full-dimensional memory matrices per layer 4096*4096."
+    },
+    {
+      "title": "Introducing Llama 3.1: Our most capable models to date - Meta AI",
+      "url": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "snippet": "Bringing open intelligence to all, our latest models expand context length, add support across eight languages, and include Meta Llama 3.1 405B— the first frontier-level open source AI model."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama Models Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects:"
+    }
+  ]
+}

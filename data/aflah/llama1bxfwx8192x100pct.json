@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Llama1BxFWx8192x100pct",
+  "slug": "aflah-llama1bxfwx8192x100pct",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Llama1BxFWx8192x100pct",
+  "created_at": "2026-08-26T13:12:20.000Z",
+  "updated_at": "2026-08-26T13:13:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16513037581,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 3 minutes ago ... updated a model 3 minutes ago"
+    },
+    {
+      "title": "aflah/Llama1BxFWx1024x0pct · Hugging Face",
+      "url": "https://huggingface.co/aflah/Llama1BxFWx1024x0pct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mohammad Aflah Khan",
+      "url": "https://aflah02.github.io/",
+      "snippet": "Mohammad Aflah Khan Jan 2026 📝 Hubble: a Model Suite to Advance the Study of LLM Memorization was accepted as an oral at ICLR 2026 and at Data-FM @ ICLR 2026; In Agents We Trust, but Who Do Agents Trust? Latent Source Preferences Steer LLM Generations was accepted at ICLR 2026 and IASEAI 2026; Rote Learning Considered Useful: Generalizing over Memorized Data in LLMs was accepted at ICLR ..."
+    },
+    {
+      "title": "aflah02 (Aflah) · GitHub",
+      "url": "https://github.com/aflah02",
+      "snippet": "Hi, I&#x27;m Aflah, a research software engineer at the Max Planck Institute for Software Systems. My primary focus is on advancing our understanding of large language models (LLMs), evaluating their capabilities, and developing AI powered co-pilots to support researchers. I&#x27;m currently working on optimizing pre-training and inference for LLMs as well as understanding the challenges posed by the ..."
+    },
+    {
+      "title": "‪Mohammad Aflah Khan‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=IM_mP38AAAAJ&hl=en",
+      "snippet": "Mohammad Aflah Khan Research Software Engineer @ MPI-SWS | Research Scientist @ EleutherAI Verified email at mpi-sws.org - Homepage Natural Language Processing Deep Learning Large Language Models NLP for Social Good"
+    }
+  ]
+}

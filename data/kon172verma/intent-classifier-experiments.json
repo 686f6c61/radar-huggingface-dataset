@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kon172verma/intent-classifier-experiments",
+  "slug": "kon172verma-intent-classifier-experiments",
+  "author": "kon172verma",
+  "url": "https://huggingface.co/kon172verma/intent-classifier-experiments",
+  "created_at": "2026-08-01T09:28:31.000Z",
+  "updated_at": "2026-08-26T17:55:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "intent-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dora",
+    "lora+",
+    "adalora",
+    "qlora",
+    "text-classification",
+    "intent-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3546748364,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kon172verma/intent-classifier-experiments · Hugging Face",
+      "url": "https://huggingface.co/kon172verma/intent-classifier-experiments",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kon172verma (Konark Verma) - Hugging Face",
+      "url": "https://huggingface.co/kon172verma",
+      "snippet": "User profile of Konark Verma on Hugging Face"
+    },
+    {
+      "title": "GitHub - kon172verma/intent-classifier-inference",
+      "url": "https://github.com/kon172verma/intent-classifier-inference",
+      "snippet": "Contribute to kon172verma/intent-classifier-inference development by creating an account on GitHub."
+    },
+    {
+      "title": "Releases · kon172verma/intent-classifier-inference · GitHub",
+      "url": "https://github.com/kon172verma/intent-classifier-inference/releases",
+      "snippet": "Contribute to kon172verma/intent-classifier-inference development by creating an account on GitHub."
+    },
+    {
+      "title": "How To Implement Intent Classification In NLP [7 ML & DL Models]",
+      "url": "https://spotintelligence.com/2023/11/03/intent-classification-nlp/",
+      "snippet": "In the following sections, we&#x27;ll explore the steps involved in building and deploying an intent classifier, including data collection, model selection, and real-world challenges in intent classification. Building a Dataset for Intent Classification"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lucaschroeder/mixer-retrieval-baseline",
+  "slug": "lucaschroeder-mixer-retrieval-baseline",
+  "author": "lucaschroeder",
+  "url": "https://huggingface.co/lucaschroeder/mixer-retrieval-baseline",
+  "created_at": "2026-08-26T15:46:38.000Z",
+  "updated_at": "2026-08-26T15:46:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval - arXiv.org",
+      "url": "https://arxiv.org/html/2409.01482v1",
+      "snippet": "We then compare causal language training efficiencies and autoregressive outputs of this model to that obtained for transformers, finding that the two architecture types are generally similarly efficient for causal language model training despite their very different input representation accuracies."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval",
+      "url": "https://arxiv.org/abs/2409.01482",
+      "snippet": "A small masked mixer is shown to outperform a large and near state-of-the-art transformer-based retrieval model, despite the latter being trained with many orders of magnitude more data and compute."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval - Aili",
+      "url": "https://aili.app/share/6QgwLxDn4j4UZlRbXZsMBi",
+      "snippet": "Masked mixers are generally similarly efficient as transformers for causal language model training, but a transformer-masked mixer hybrid is the most efficient. Embeddings from masked mixers are far superior to those from transformers for language retrieval tasks. 🙋 Q&A [01] Accurate self and non-self token representation in Masked Mixers 1."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval | AI Research Paper ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/masked-mixers-language-generation-retrieval",
+      "snippet": "Masked Mixers are a new type of artificial intelligence (AI) model designed for working with human language. They are an improvement on a popular AI architecture called transformers, which are widely used for language tasks like generating text or answering questions."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval",
+      "url": "https://www.semanticscholar.org/paper/Masked-Mixers-for-Language-Generation-and-Retrieval-Badger/63da35140c39a1669f3c378826fb1d68964b9a5d",
+      "snippet": "It is found that masked mixers are more effective retrieval models both when the pretrained embedding model is unchanged as well as when the embedding model is modified via cosine similarity-based InfoNCE loss minimization. Attention mechanisms that confer selective focus on a strict subset of input elements are nearly ubiquitous in language models today. We posit there to be downside to the ..."
+    }
+  ]
+}

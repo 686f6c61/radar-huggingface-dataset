@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlkit/afg-a3094913",
+  "slug": "mlkit-afg-a3094913",
+  "author": "mlkit",
+  "url": "https://huggingface.co/mlkit/afg-a3094913",
+  "created_at": "2026-08-26T15:16:18.000Z",
+  "updated_at": "2026-08-26T15:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML Kit | Google for Developers",
+      "url": "https://developers.google.com/ml-kit/",
+      "snippet": "ML Kit&#x27;s processing happens on-device. This makes it fast and unlocks real-time use cases like processing of camera input. It also works while offline and can be used for processing images and text that need to remain on the device."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "ML Kit | Google for Developers",
+      "url": "https://developers.google.com/ml-kit/guides",
+      "snippet": "ML Kit is a free mobile SDK that brings Google&#x27;s machine learning expertise to Android and iOS apps through easy-to-use Vision and Natural Language APIs. ML Kit&#x27;s APIs run on-device, enabling real-time processing and offline functionality, but require Android API level 21 or higher. Developers can utilize pre-built APIs for tasks like text recognition, image labeling, and language ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "ML Kit - Machine Learning Service - HUAWEI Developer",
+      "url": "https://developer.huawei.com/consumer/en/hms/huawei-mlkit",
+      "snippet": "ML Kit The potential to go beyond the human mind now extends to app development. Use a full range of vision and language APIs to build your own AI apps, even if you are not a machine learning expert."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Llama1BxFWx8192x0pctxqk_norm",
+  "slug": "aflah-llama1bxfwx8192x0pctxqk_norm",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Llama1BxFWx8192x0pctxqk_norm",
+  "created_at": "2026-08-26T13:03:03.000Z",
+  "updated_at": "2026-08-26T13:04:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16513058365,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 3 minutes ago ... updated a model 3 minutes ago"
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    },
+    {
+      "title": "Mohammad Aflah Khan",
+      "url": "https://aflah02.github.io/",
+      "snippet": "Mohammad Aflah Khan Jan 2026 📝 Hubble: a Model Suite to Advance the Study of LLM Memorization was accepted as an oral at ICLR 2026 and at Data-FM @ ICLR 2026; In Agents We Trust, but Who Do Agents Trust? Latent Source Preferences Steer LLM Generations was accepted at ICLR 2026 and IASEAI 2026; Rote Learning Considered Useful: Generalizing over Memorized Data in LLMs was accepted at ICLR ..."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/models",
+      "snippet": "Kimi K2.7 Code is Moonshot AI&#x27;s coding-focused agentic model built upon Kimi K2.6, with substantial improvements on real-world long-horizon coding tasks and roughly 30% lower thinking-token usage."
+    },
+    {
+      "title": "LLaMA - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.41.1/model_doc/llama",
+      "snippet": "It is used to instantiate an LLaMA model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the LLaMA-7B. Configuration objects inherit from PretrainedConfig and can be used to control the model outputs."
+    }
+  ]
+}

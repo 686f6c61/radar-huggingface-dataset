@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent",
+  "slug": "szlholdings-szl-forge-1-5b-receiptagent",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent",
+  "created_at": "2026-07-13T21:54:40.000Z",
+  "updated_at": "2026-08-26T19:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qlora",
+    "governed-agent",
+    "proposal-only",
+    "receipt-verified",
+    "szl-holdings",
+    "alloy",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 222,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3246659806,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent · Discussions",
+      "url": "https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent/discussions",
+      "snippet": "SZLHOLDINGS ... SZL-Forge-1.5B-ReceiptAgent like 1 Follow SZL Holdings 2 Text Generation Transformers Safetensors English qwen2 qlora governed-agent proposal-only receipt-verified szl-holdings alloy conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=SZLHOLDINGS%2FSZL-Forge-1.5B-ReceiptAgent",
+      "snippet": "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent Text Generation • 2B•Updated 1 day ago• 173 • 1"
+    },
+    {
+      "title": "szl-holdings/szl-forge: SZL Forge - GitHub",
+      "url": "https://github.com/szl-holdings/szl-forge",
+      "snippet": "Train SZL-1 — SZL Holdings&#x27; own model — on SZL&#x27;s own metal. SZL Forge is a small, self-contained fine-tuning kit. It turns an open base model into SZL-1: a sovereign model whose identity, doctrine, and weights live on SZL&#x27;s own hardware and are served through Ollama like any other estate model."
+    },
+    {
+      "title": "SZL-Forge-1.5B-ReceiptAgent API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent",
+      "snippet": "Run SZL-Forge-1.5B-ReceiptAgent with FriendliAI inference. A governed, proposal-only agent fine-tune of Qwen/Qwen2.5-1.5B-Instruct."
+    },
+    {
+      "title": "Vibe - Mistral AI",
+      "url": "https://chat.mistral.ai/chat",
+      "snippet": "Vibe (formerly Le Chat) is your AI agent for work and code."
+    }
+  ]
+}

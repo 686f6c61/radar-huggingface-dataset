@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "seonglae/vls-speech-head",
+  "slug": "seonglae-vls-speech-head",
+  "author": "seonglae",
+  "url": "https://huggingface.co/seonglae/vls-speech-head",
+  "created_at": "2026-08-26T18:31:51.000Z",
+  "updated_at": "2026-08-26T18:42:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "speech",
+    "audio",
+    "image-to-speech",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4829616384,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seonglae/vls-100k · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/seonglae/vls-100k",
+      "snippet": "Datasets: seonglae / vls-100k like 0 Tasks: Text-to-Speech Image-to-Text Modalities: Audio Image Text Formats: parquet Languages: English Size: 10K - 100K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·74.9k rows default (74.9k rows) Split (3) train ..."
+    },
+    {
+      "title": "Seonglae Cho - Hugging Face",
+      "url": "https://huggingface.co/seonglae/models",
+      "snippet": "NLP, Humanoid, AGI seonglae 9661 Follow donalee&#x27;s profile pictureleeloolee&#x27;s profile picture21world&#x27;s profile picture 6 followers · 16 following https://www.seongland.com seonglaeC seonglae"
+    },
+    {
+      "title": "Seonglae Cho - GitHub",
+      "url": "https://github.com/seonglae",
+      "snippet": "Local-first AI native IDE. Download Vect desktop installers and releases, browse plugins, and report issues here. Shell 2"
+    },
+    {
+      "title": "GitHub - huggingface/speech-to-speech: Build voice agents with open ...",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "snippet": "Language Model (LLM): generates the response, streaming text and tool calls. Text to Speech (TTS): synthesizes audio and streams it back to the client. Every stage has multiple interchangeable backends, selected via CLI flags. The code is designed for easy modification, with a focus on models available through Transformers and the Hugging Face Hub."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 159 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/zai-org.GLM-5.3-Flash-GGUF",
+  "slug": "devquasar-zai-org-glm-5-3-flash-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/zai-org.GLM-5.3-Flash-GGUF",
+  "created_at": "2026-08-26T17:44:02.000Z",
+  "updated_at": "2026-08-26T17:44:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-text-to-text",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zai-org/GLM-5: GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks ..."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "Quantized Models for zai-org/GLM-5.3-Flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:zai-org/GLM-5.3-Flash",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Reset. zai-org/GLM-5.3-Flash"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "putty77/p77-4",
+  "slug": "putty77-p77-4",
+  "author": "putty77",
+  "url": "https://huggingface.co/putty77/p77-4",
+  "created_at": "2026-05-15T05:34:40.000Z",
+  "updated_at": "2026-08-26T19:25:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32458269384,
+  "storage_human": "32.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "putty77/p77-4 · Hugging Face",
+      "url": "https://huggingface.co/putty77/p77-4",
+      "snippet": "putty77 / p77-4 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "putty77 (Jessen Pu) - Hugging Face",
+      "url": "https://huggingface.co/putty77/models",
+      "snippet": "User profile of Jessen Pu on Hugging Face"
+    },
+    {
+      "title": "P77 4 AI Tool Review, Features and Pricing | AI Cambodia",
+      "url": "https://www.aicambodia.com/ai/hf-putty77-p77-4",
+      "snippet": "Learn everything about P77 4. Read verified details, pricing tiers, and find out how this AI tool can help you choose with confidence today."
+    },
+    {
+      "title": "GitHub - webgrip/PuttyGPT: Full Spectrum AI",
+      "url": "https://github.com/webgrip/PuttyGPT",
+      "snippet": "PuttyGPT is a conversational AI project powered by OpenAI&#x27;s GPT-4, Weaviate for vector storage, and other state-of-the-art tools, providing a comprehensive and user-friendly interface for developers, AI enthusiasts, and business professionals."
+    },
+    {
+      "title": "P77 - Top Rated AI Tools",
+      "url": "https://theresanaiforthat.com/s/p77/top-rated/",
+      "snippet": "Browse 25 top rated P77 AIs. Includes tasks such as Homework, Writing, Research, Content and Emotional support."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/afroxlmr-stl-base-sentiment",
+  "slug": "tadiecool29-afroxlmr-stl-base-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/afroxlmr-stl-base-sentiment",
+  "created_at": "2026-08-26T18:49:04.000Z",
+  "updated_at": "2026-08-26T18:49:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129296205,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AfroXLMR-Social: Adapting Pre-trained Language Models for African ...",
+      "url": "https://arxiv.org/pdf/2503.18247v3",
+      "snippet": "AfroXLMR is a continu-ally pre-trained model for African languages based on XLM-RoBERTa (Conneau et al., 2020). We explore subjective NLP task results from baseline (the base model result), DAPT, TAPT, and DAPT + TAPT, on a smaller but directly domain- and task-relevant unlabeled corpus."
+    },
+    {
+      "title": "AfroXLMR-Social: Adapting Pre-trained Language Models",
+      "url": "https://arxiv.org/html/2503.18247v1",
+      "snippet": "Baseline: As a baseline, we use three models, XLM-RoBERTa-base, XLM-RoBERTa-large, and AfroXLMR-large, which perform better for the emotion evaluation task. On average, AfroXLMR-large is a good baseline since it includes more African languages during pre-training."
+    },
+    {
+      "title": "Davlan/afro-xlmr-large · Hugging Face",
+      "url": "https://huggingface.co/Davlan/afro-xlmr-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=Davlan%2Fafro-xlmr",
+      "snippet": "Davlan/afrisenti-twitter-sentiment-afroxlmr-large Text Classification • Updated Oct 22, 2023 • 126"
+    },
+    {
+      "title": "AfroXLMR-Social: Adapting Pre-trained Language Models for African ...",
+      "url": "https://aclanthology.org/2025.findings-emnlp.842/",
+      "snippet": "AfroXLMR-Social: Adapting Pre-trained Language Models for African Languages Social Media Text. In Findings of the Association for Computational Linguistics: EMNLP 2025, pages 15570-15587, Suzhou, China. Association for Computational Linguistics."
+    }
+  ]
+}

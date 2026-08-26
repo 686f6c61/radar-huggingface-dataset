@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Llama8BxFWx2048x75pct",
+  "slug": "aflah-llama8bxfwx2048x75pct",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Llama8BxFWx2048x75pct",
+  "created_at": "2026-08-26T14:27:04.000Z",
+  "updated_at": "2026-08-26T14:35:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115714552476,
+  "storage_human": "115.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aflah/Llama8BxFWx2048x100pct · Hugging Face",
+      "url": "https://huggingface.co/aflah/Llama8BxFWx2048x100pct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "Mohammad Aflah Khan",
+      "url": "https://aflah02.github.io/",
+      "snippet": "Mohammad Aflah Khan Jan 2026 📝 Hubble: a Model Suite to Advance the Study of LLM Memorization was accepted as an oral at ICLR 2026 and at Data-FM @ ICLR 2026; In Agents We Trust, but Who Do Agents Trust? Latent Source Preferences Steer LLM Generations was accepted at ICLR 2026 and IASEAI 2026; Rote Learning Considered Useful: Generalizing over Memorized Data in LLMs was accepted at ICLR ..."
+    },
+    {
+      "title": "aflah02 (Aflah) · GitHub",
+      "url": "https://github.com/aflah02",
+      "snippet": "Hi, I&#x27;m Aflah, a research software engineer at the Max Planck Institute for Software Systems. My primary focus is on advancing our understanding of large language models (LLMs), evaluating their capabilities, and developing AI powered co-pilots to support researchers. I&#x27;m currently working on optimizing pre-training and inference for LLMs as well as understanding the challenges posed by the ..."
+    },
+    {
+      "title": "Johnny Wei, Aflah Khan, Ameya Godbole, Xiaoyuan Zhu, Ryan Wang, James ...",
+      "url": "https://slideslive.com/39062059/hubble-a-model-suite-to-advance-the-study-of-llm-memorization",
+      "snippet": "We present Hubble, a suite of open-source large language models (LLMs) for the scientific study of LLM memorization. Hubble models come as minimal pairs: standard models are pretrained on a large English corpus, and perturbed models are trained in the same way but with controlled insertion of text (e.g., book passages, biographies, and test sets) designed to emulate key memorization risks. Our ..."
+    }
+  ]
+}

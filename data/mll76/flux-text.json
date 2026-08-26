@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MLL76/FLUX-Text",
+  "slug": "mll76-flux-text",
+  "author": "MLL76",
+  "url": "https://huggingface.co/MLL76/FLUX-Text",
+  "created_at": "2026-08-26T14:11:19.000Z",
+  "updated_at": "2026-08-26T14:11:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-editing",
+    "multilingual",
+    "diffusion-transformer",
+    "diffusion-model",
+    "image-to-image",
+    "arxiv:2505.03329",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8843285421,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "Implementation of FLUX-Text - GitHub",
+      "url": "https://github.com/AMAP-ML/FluxText",
+      "snippet": "Contribution: We propose FLUX-Text, a novel text editing framework for editing multi-line texts in complex visual scenes. By incorporating a lightweight Condition Injection LoRA module, Regional text perceptual loss, and two-stage training strategy, we significantly significant improvements on both Chinese and English benchmarks."
+    },
+    {
+      "title": "FLUX-Text: A Simple and Advanced Diffusion Transformer Baseline for ...",
+      "url": "https://arxiv.org/pdf/2505.03329",
+      "snippet": "To address these issues, we present FLUX-Text, a simple and advanced multilingual scene text editing DiT method. Specifically, our FLUX-Text enhances glyph understanding and generation through lightweight Visual and Text Embedding Modules, while pre-serving the original generative capability of FLUX."
+    },
+    {
+      "title": "README.md · GD-ML/FLUX-Text at main - Hugging Face",
+      "url": "https://huggingface.co/GD-ML/FLUX-Text/blob/main/README.md",
+      "snippet": "To set up the environment: ... 🤗 Model Introduction FLUX-Text is an open-source version of the scene text editing model. FLUX-Text can be used for editing posters, emotions, and more. The table below displays the list of text editing models we currently offer, along with their foundational information."
+    },
+    {
+      "title": "Flux (text-to-image model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Flux_(text-to-image_model)",
+      "snippet": "Flux is a family of text-to-image and image-to-image models developed by Black Forest Labs (BFL), based in Freiburg im Breisgau, Germany. Black Forest Labs was founded by former employees of Stability AI. As with other text-to-image models, Flux generates images from natural language descriptions, called prompts. In addition, some Flux models support editing images."
+    }
+  ]
+}

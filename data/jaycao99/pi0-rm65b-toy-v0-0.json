@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi0-rm65b-toy-v0.0",
+  "slug": "jaycao99-pi0-rm65b-toy-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi0-rm65b-toy-v0.0",
+  "created_at": "2026-08-26T15:48:50.000Z",
+  "updated_at": "2026-08-26T15:50:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8892522704,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayCao99/pi0-rm65b-cns-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi0-rm65b-cns-v0.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JayCao99/pi05-rm65b-cns-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi05-rm65b-cns-v0.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Spirit-AI-Team/PI_Official",
+      "url": "https://github.com/Spirit-AI-Team/PI_Official",
+      "snippet": "the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "openpi-rmbot-dual-arm/projects/rm65b/simulation at main - GitHub",
+      "url": "https://github.com/zay002/openpi-rmbot-dual-arm/tree/main/projects/rm65b/simulation",
+      "snippet": "基于 pi0/OpenPI 的 RM 双臂机器人 MuJoCo 仿真与策略接入项目（由 2025 年 6 月小项目整理，可能存在 bug）。 - zay002/openpi-rmbot-dual-arm"
+    },
+    {
+      "title": "π 0 : A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "By basing our model on a VLM, we inherit the general knowledge, semantic reasoning, and problem-solving abilities of language- and vision-language models. We then further train our model to incorporate robot actions, turning it into a vision-language-action (VLA) model [7]."
+    }
+  ]
+}

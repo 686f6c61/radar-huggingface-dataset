@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yuuu94/PrismWF",
+  "slug": "yuuu94-prismwf",
+  "author": "yuuu94",
+  "url": "https://huggingface.co/yuuu94/PrismWF",
+  "created_at": "2026-08-26T11:27:13.000Z",
+  "updated_at": "2026-08-26T12:11:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "website-fingerprinting",
+    "multi-label-classification",
+    "transformer",
+    "tor",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 727538672,
+  "storage_human": "728 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2603.21117] PrismWF: A Multi-Granularity Patch-Based Transformer for ...",
+      "url": "https://arxiv.org/abs/2603.21117",
+      "snippet": "To this end, we propose PrismWF, a multi-granularity patch-based Transformer for multi-tab WF attack. Specifically, we design a robust traffic feature representation for raw web traffic traces and extract multi-granularity features using convolutional kernels with different receptive fields."
+    },
+    {
+      "title": "PrismWF: A Multi-Granularity Patch-Based Transformer for Robust Website ...",
+      "url": "https://arxiv.org/html/2603.21117v1",
+      "snippet": "We first introduce the related work in Section II and the threat model in Section 2. We present concrete design of PrismWF in Section IV from robust trace representation, website feature extraction, multi-granularity attention block, and website identification. Next, we conduct a comprehensive evaluation on the performance of PrismWF in Section V."
+    },
+    {
+      "title": "PrismWF: A Multi-Granularity Patch-Based Transformer for Robust Website ...",
+      "url": "https://www.emergentmind.com/papers/2603.21117",
+      "snippet": "To this end, we propose PrismWF, a multi-granularity patch-based Transformer for multi-tab WF attack. Specifically, we design a robust traffic feature representation for raw web traffic traces and extract multi-granularity features using convolutional kernels with different receptive fields."
+    },
+    {
+      "title": "[PDF] PrismWF: A Multi-Granularity Patch-Based Transformer for Robust ...",
+      "url": "https://www.semanticscholar.org/paper/PrismWF%3A-A-Multi-Granularity-Patch-Based-for-Robust-Pan-Xu/51dbac5f2b8882c3e23531eadb0a35043720a8e6",
+      "snippet": "Pr PrismWF is proposed, a multi-granularity patch-based Transformer for multi-tab WF attack, which design a robust traffic feature representation for raw web traffic traces and extract multi-granularity features using convolutional kernels with different receptive fields to effectively integrate information across temporal scales. Tor is a low-latency anonymous communication network that ..."
+    },
+    {
+      "title": "CRAFT: Complexity-Routed Attention with Frequency-Temporal Fusion for ...",
+      "url": "https://www.semanticscholar.org/paper/CRAFT%3A-Complexity-Routed-Attention-with-Fusion-for-Pan-Huo/f2110e49d8f01a453f0331e1c5618d7b32bc627a",
+      "snippet": "Pr PrismWF is proposed, a multi-granularity patch-based Transformer for multi-tab WF attack, which design a robust traffic feature representation for raw web traffic traces and extract multi-granularity features using convolutional kernels with different receptive fields to effectively integrate information across temporal scales."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "soyaakinohara/gemma-4-31b-it-heretic-3.68bpw-14gb.gguf",
+  "slug": "soyaakinohara-gemma-4-31b-it-heretic-3-68bpw-14gb-gguf",
+  "author": "soyaakinohara",
+  "url": "https://huggingface.co/soyaakinohara/gemma-4-31b-it-heretic-3.68bpw-14gb.gguf",
+  "created_at": "2026-08-26T13:58:57.000Z",
+  "updated_at": "2026-08-26T14:22:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "gemma-4",
+    "31b",
+    "mixed-quantization",
+    "imatrix",
+    "abliterated",
+    "heretic",
+    "uncensored",
+    "iq2_s",
+    "iq3_s",
+    "q4_k",
+    "q5_k",
+    "q6_k",
+    "text-generation",
+    "ja",
+    "en",
+    "multilingual",
+    "base_model:DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
+    "base_model:quantized:DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 14152729312,
+  "storage_human": "14.2 GB",
+  "base_model": "DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuralDreamer/gemma-4-31B-it-heretic-i1-GGUF_ND · Hugging Face",
+      "url": "https://huggingface.co/NeuralDreamer/gemma-4-31B-it-heretic-i1-GGUF_ND",
+      "snippet": "Instructions to use NeuralDreamer/gemma-4-31B-it-heretic-i1-GGUF_ND with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NeuralDreamer/gemma-4-31B-it-heretic-i1-GGUF_ND at main",
+      "url": "https://huggingface.co/NeuralDreamer/gemma-4-31B-it-heretic-i1-GGUF_ND/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it/modelcard",
+      "snippet": "Gemma 4 31B IT Description Gemma 4 31B IT is an open multimodal model built by Google DeepMind that handles text and image inputs, can process video as sequences of frames, and generates text output. It is designed to deliver frontier-level performance for reasoning, agentic workflows, coding, and multimodal understanding on consumer GPUs and workstations, with a 256K-token context window and ..."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it",
+      "snippet": "Dense 31B model delivering frontier reasoning for coding, agentic workflows, and fine-tuning."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.02770",
+      "snippet": "We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters. Alongside improved vision and audio encoders for all model sizes, we propose a unified, encoder-free ..."
+    }
+  ]
+}

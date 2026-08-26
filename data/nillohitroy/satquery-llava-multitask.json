@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nillohitroy/satquery-llava-multitask",
+  "slug": "nillohitroy-satquery-llava-multitask",
+  "author": "nillohitroy",
+  "url": "https://huggingface.co/nillohitroy/satquery-llava-multitask",
+  "created_at": "2026-08-26T11:54:37.000Z",
+  "updated_at": "2026-08-26T11:58:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7063427072,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14126947016,
+  "storage_human": "14.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nillohitroy/satquery-llava-vrsbench · Hugging Face",
+      "url": "https://huggingface.co/nillohitroy/satquery-llava-vrsbench",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Raghavlavii/satquery-ai: Vision-language assistant for ...",
+      "url": "https://github.com/Raghavlavii/satquery-ai",
+      "snippet": "Interactive Vision-Language Assistant for Satellite & Remote-Sensing Image Analysis A hackathon-ready, full-stack MVP that lets you upload a satellite/aerial image, ask a plain-English question about it, and receive an AI-generated answer with a confidence score and an execution trace — all powered by LLaVA-1.5-7B via Hugging Face Transformers."
+    },
+    {
+      "title": "GitHub - abinyads-dev/SATQuery-AI: SatQuery AI is a local AI assistant ...",
+      "url": "https://github.com/abinyads-dev/SATQuery-AI",
+      "snippet": "Overview SatQuery AI is an agentic, multimodal vision-language system specifically tailored for Earth Observation (EO) and satellite remote sensing imagery. It runs locally without reliance on commercial cloud LLM APIs, providing end-to-end multi-sensor intelligence for Sentinel-1 SAR and Sentinel-2 multispectral imagery."
+    },
+    {
+      "title": "nillohitroy/satquery-llava-vrsbench at main - Hugging Face",
+      "url": "https://huggingface.co/nillohitroy/satquery-llava-vrsbench/tree/main",
+      "snippet": "nillohitroy / satquery-llava-vrsbench like 0 Image-Text-to-Text Transformers Safetensors llava conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "isbondarev/gigachat_3.1_sql",
+  "slug": "isbondarev-gigachat_3-1_sql",
+  "author": "isbondarev",
+  "url": "https://huggingface.co/isbondarev/gigachat_3.1_sql",
+  "created_at": "2026-08-26T17:36:04.000Z",
+  "updated_at": "2026-08-26T18:36:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10672534016,
+  "parameters_human": "10.67B",
+  "storage_bytes": 21356386743,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isbondarev/GigaChat3.1-10B-A1.8B-bf16 · Hugging Face",
+      "url": "https://huggingface.co/isbondarev/GigaChat3.1-10B-A1.8B-bf16",
+      "snippet": "GigaChat 3.1 Lightning is the compact instruct model of the GigaChat 3.1 family. It is a Mixture-of-Experts (MoE) model with 10B total parameters and 1.8B active parameters, designed for fast multilingual assistant workloads, reasoning, code, function calling, and product-style deployment. This repository contains the BF16 version of the model."
+    },
+    {
+      "title": "isbondarev/gigachat3-10b-a1.8b-bf16-adv · Hugging Face",
+      "url": "https://huggingface.co/isbondarev/gigachat3-10b-a1.8b-bf16-adv",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use isbondarev/gigachat3-10b-a1.8b-bf16-adv with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "GitHub - pevdokimov1537/gigachat-local-setup: A practical guide to ...",
+      "url": "https://github.com/pevdokimov1537/gigachat-local-setup",
+      "snippet": "GigaChat 3.1 Local Setup — vLLM + LibreChat + MCP A practical, end-to-end guide to running ai-sage/GigaChat3.1-10B-A1.8B locally with native tool calling, connecting LibreChat as a chat UI, and wiring up a remote MCP server (exp-manager) so you can test real agentic workflows on your own hardware."
+    },
+    {
+      "title": "gigachat/README.md at main · ai-forever/gigachat · GitHub",
+      "url": "https://github.com/ai-forever/gigachat/blob/main/README.md",
+      "snippet": "GigaChat API access library. Contribute to ai-forever/gigachat development by creating an account on GitHub."
+    },
+    {
+      "title": "Data Models Overview | ai-forever/gigachat | DeepWiki",
+      "url": "https://deepwiki.com/ai-forever/gigachat/5.1-data-models-overview",
+      "snippet": "This document catalogs all Pydantic data models exported by the gigachat.models package. These models provide type-safe representations of requests, responses, and entities used throughout the GigaChat library. All models inherit from pydantic.BaseModel and provide automatic validation, serialization, and documentation."
+    }
+  ]
+}

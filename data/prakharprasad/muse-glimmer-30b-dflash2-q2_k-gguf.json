@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "prakharprasad/Muse-Glimmer-30B-DFlash2-Q2_K-GGUF",
+  "slug": "prakharprasad-muse-glimmer-30b-dflash2-q2_k-gguf",
+  "author": "prakharprasad",
+  "url": "https://huggingface.co/prakharprasad/Muse-Glimmer-30B-DFlash2-Q2_K-GGUF",
+  "created_at": "2026-08-26T16:44:42.000Z",
+  "updated_at": "2026-08-26T17:45:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "dflash2",
+    "muse-glimmer",
+    "2-bit",
+    "text-generation",
+    "base_model:incoai/Muse-Glimmer-30B-DFlash2",
+    "base_model:quantized:incoai/Muse-Glimmer-30B-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2772159744,
+  "parameters_human": "2.77B",
+  "storage_bytes": 1013292736,
+  "storage_human": "1.0 GB",
+  "base_model": "incoai/Muse-Glimmer-30B-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Glimmer | Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "For the full model card, please see the Muse Glimmer page on Hugging Face. For more details about Muse Glimmer evaluations, read the methodology report. Meta is committed to promoting safe and fair use of its tools and features, including Muse Glimmer. This Usage Policy (\"Policy\") applies to the access or use of Muse Glimmer."
+    },
+    {
+      "title": "z-lab/Muse-Glimmer-30B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meta Muse Glimmer 30B on Consumer Hardware: Real VRAM Numbers, the ...",
+      "url": "https://runaihome.com/blog/muse-glimmer-30b-local-ai-hardware-guide-2026/",
+      "snippet": "TL;DR: Meta is back in open weights. Muse Glimmer 30B (released August 10, 2026, Apache 2.0) is a dense 30B multimodal model built for always-on local agents, and it&#x27;s aimed squarely at the 24GB card you may already own: the official K-Quant-17GB tier loads on a used RTX 3090 or RTX 4090 with room for a 130K context. The headline 3.1× DFlash speedup is real — but it was measured on a 32GB ..."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B",
+      "snippet": "Dense 29.6B vision-language model with a ViT-G/14 perception encoder and 128K context, distilled from Muse Spark for local agentic use. Emits channel-scoped reasoning and XML-style ATEM tool calls rather than JSON, so it needs the dedicated `muse_glimmer` tool-call and reasoning parsers."
+    }
+  ]
+}

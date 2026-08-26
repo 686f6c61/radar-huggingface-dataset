@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "youssefdiaa10/smart_irrigation",
+  "slug": "youssefdiaa10-smart_irrigation",
+  "author": "youssefdiaa10",
+  "url": "https://huggingface.co/youssefdiaa10/smart_irrigation",
+  "created_at": "2026-08-26T18:58:48.000Z",
+  "updated_at": "2026-08-26T19:10:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56439802,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-driven irrigation systems for sustainable water management: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772375525002151",
+      "snippet": "Abstract This review systematically examines recent advancements in AI-driven irrigation systems and their role in achieving sustainable water management under climate-resilient agricultural practices."
+    },
+    {
+      "title": "PDF AI-Driven Smart Irrigation and Resource Optimization for Sustainable ...",
+      "url": "https://jsiar.com/2025-May/JSIAR-M-25-05444.pdf",
+      "snippet": "This section details the methodology employed to develop and deploy the AI-driven smart irrigation system, emphasizing data acquisition, model development, resource optimization, and real-time integration via IoT devices."
+    },
+    {
+      "title": "GitHub - mogomaa79/AI-Irrigation-System: AI-Models for Smart Irrigation ...",
+      "url": "https://github.com/mogomaa79/AI-Irrigation-System",
+      "snippet": "AI-Models for Smart Irrigation System. Contribute to mogomaa79/AI-Irrigation-System development by creating an account on GitHub."
+    },
+    {
+      "title": "Smart Irrigation System using IoT and Machine Learning",
+      "url": "https://github.com/Akaur54/SMART-IRRIGATION-SYSTEM-USING-IoT-AND-MACHINE-LEARNING-",
+      "snippet": "The Smart Irrigation System is designed to optimize water usage in agriculture using IoT sensors and Machine Learning. By collecting real-time soil moisture data and weather conditions, the system predicts irrigation schedules and automates water distribution, reducing wastage and improving crop yields."
+    },
+    {
+      "title": "SMART_IRRIGATION_PREDICTION.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Kavitha04-04Sonachalam/smart-irrigation/blob/main/SMART_IRRIGATION_PREDICTION.ipynb",
+      "snippet": "This is a classification problem where the model learns from past examples. We use a Random Forest Classifier to train on the dataset and make predictions. The model is evaluated using a confusion matrix and classification report. These metrics show how accurately the system can support smart irrigation decisions."
+    }
+  ]
+}

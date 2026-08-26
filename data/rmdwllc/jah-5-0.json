@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RMDWLLC/Jah-5.0",
+  "slug": "rmdwllc-jah-5-0",
+  "author": "RMDWLLC",
+  "url": "https://huggingface.co/RMDWLLC/Jah-5.0",
+  "created_at": "2026-08-26T18:30:55.000Z",
+  "updated_at": "2026-08-26T18:32:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "glm5_next",
+    "rmdw",
+    "jah",
+    "private-ai",
+    "fp8",
+    "mixture-of-experts",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RMDWLLC (RMDW LLC) - Hugging Face",
+      "url": "https://huggingface.co/RMDWLLC",
+      "snippet": "Org profile for RMDW LLC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rmdw",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rmdw Clear all"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Track the latest AI models, pricing, benchmarks, and releases across every major AI lab. Updated automatically every 6 hours."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

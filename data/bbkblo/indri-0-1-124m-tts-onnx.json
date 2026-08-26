@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Bbkblo/indri-0.1-124m-tts-ONNX",
+  "slug": "bbkblo-indri-0-1-124m-tts-onnx",
+  "author": "Bbkblo",
+  "url": "https://huggingface.co/Bbkblo/indri-0.1-124m-tts-ONNX",
+  "created_at": "2026-08-26T14:04:03.000Z",
+  "updated_at": "2026-08-26T14:04:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "onnx",
+    "gpt2",
+    "tts",
+    "indri",
+    "text-to-speech",
+    "en",
+    "hi",
+    "base_model:11mlabs/indri-0.1-124m-tts",
+    "base_model:quantized:11mlabs/indri-0.1-124m-tts",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358050633,
+  "storage_human": "358 MB",
+  "base_model": "11mlabs/indri-0.1-124m-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "11mlabs/indri-0.1-124m-tts · Hugging Face",
+      "url": "https://huggingface.co/11mlabs/indri-0.1-124m-tts",
+      "snippet": "Model Card for indri-.1-124m-tts Indri is a series of audio models that can do TTS, ASR, and audio continuation. This is the smallest model (124M) in our series and supports TTS tasks in 2 languages: English Hindi Model Details Model Description indri-.1-124m-tts is a novel, ultra-small, and lightweight TTS model based on the transformer architecture. It models audio as tokens and can ..."
+    },
+    {
+      "title": "GitHub - indri-voice/indri: omnimodal models · GitHub",
+      "url": "https://github.com/indri-voice/indri",
+      "snippet": "Indri is a series of multilingual audio models that can do TTS, ASR, and audio continuation. It currently supports these languages: English Hindi This repo hosts the inference code for inference of Indri models."
+    },
+    {
+      "title": "11mlabs/indri-0.1-124m-tts-GGUF · Hugging Face",
+      "url": "https://huggingface.co/11mlabs/indri-0.1-124m-tts-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Indri-0.1-124m-tts Open Source TTS Model - Support Easy Text-to-Speech ...",
+      "url": "https://model.aibase.com/models/details/1915693315862978561",
+      "snippet": "indri-.1-124m-tts is a novel, ultra-small, and lightweight TTS model based on the transformer architecture. It models audio as tokens and can generate high-quality audio with consistent style cloning of the speaker."
+    },
+    {
+      "title": "indri/README.md at master · cmeraki/indri · GitHub",
+      "url": "https://github.com/cmeraki/indri/blob/master/README.md",
+      "snippet": "Using our self hosted service option, on RTX6000Ada NVIDIA GPU the model can achieve speeds up to 400 toks/s (4s of audio generation per s) and under 20ms time to first token for the 124m model. On RTX6000Ada, it can support a batch size of ~1000 sequences with full context length of 1024 tokens Supports voice cloning with small prompts (<5s)."
+    }
+  ]
+}

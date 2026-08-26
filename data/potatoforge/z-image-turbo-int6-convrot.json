@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "PotatoForge/Z-Image-Turbo-INT6-Convrot",
+  "slug": "potatoforge-z-image-turbo-int6-convrot",
+  "author": "PotatoForge",
+  "url": "https://huggingface.co/PotatoForge/Z-Image-Turbo-INT6-Convrot",
+  "created_at": "2026-08-26T16:32:25.000Z",
+  "updated_at": "2026-08-26T16:50:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "zit",
+    "z-image-turbo",
+    "quant",
+    "int6",
+    "convrot",
+    "int",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:quantized:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5094332979,
+  "storage_human": "5.1 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "srcphag/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/srcphag/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "Z-Image Turbo | Free AI Image Generator in Seconds",
+      "url": "https://zimageturbo.io/en",
+      "snippet": "Generate stunning AI images in under 1 second with Z-Image Turbo. Free 6B parameter model with photorealistic quality. No sign-up required. Try it now!"
+    },
+    {
+      "title": "GitHub - Aaryan-Kapoor/z-image-turbo: A professional web interface for ...",
+      "url": "https://github.com/Aaryan-Kapoor/z-image-turbo",
+      "snippet": "A professional web interface for the Tongyi-MAI Z-Image-Turbo model — lightning-fast text-to-image generation with 6B parameters. Z-Image-Turbo now includes a powerful MCP server that exposes image generation capabilities through the standardized Model Context Protocol. This allows AI assistants ..."
+    },
+    {
+      "title": "Z Image Turbo - Turbo | ZImage Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2168935/z-image-turbo",
+      "snippet": "Z-Image is a powerful and highly efficient image generation model with 6B parameters. It is currently has three variants: 🚀 Z-Image-Turbo (this model) - A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations)."
+    }
+  ]
+}

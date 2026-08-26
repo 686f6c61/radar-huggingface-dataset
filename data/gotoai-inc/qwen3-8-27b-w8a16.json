@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GotoAI-Inc/Qwen3.8-27B-W8A16",
+  "slug": "gotoai-inc-qwen3-8-27b-w8a16",
+  "author": "GotoAI-Inc",
+  "url": "https://huggingface.co/GotoAI-Inc/Qwen3.8-27B-W8A16",
+  "created_at": "2026-08-26T12:51:58.000Z",
+  "updated_at": "2026-08-26T13:17:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "compressed-tensors",
+    "w8a16",
+    "int8",
+    "vllm",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31605874184,
+  "storage_human": "31.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "GotoAI-Inc/Qwen3.8-27B-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/GotoAI-Inc/Qwen3.8-27B-W4A16",
+      "snippet": "GotoAI-Inc / Qwen3.8-27B-W4A16 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 compressed-tensors w4a16 int4 vllm qwen3 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

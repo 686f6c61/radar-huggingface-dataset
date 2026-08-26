@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Evicka/Hanse2-100M-Base",
+  "slug": "evicka-hanse2-100m-base",
+  "author": "Evicka",
+  "url": "https://huggingface.co/Evicka/Hanse2-100M-Base",
+  "created_at": "2026-08-26T13:34:03.000Z",
+  "updated_at": "2026-08-26T13:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "base-model",
+    "pretrained",
+    "from-scratch",
+    "german",
+    "english",
+    "bilingual",
+    "small-language-model",
+    "de",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/finewiki",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99144320,
+  "parameters_human": "99.1M",
+  "storage_bytes": 397727783,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Evicka/HanseLM-78M-Base · Hugging Face",
+      "url": "https://huggingface.co/Evicka/HanseLM-78M-Base",
+      "snippet": "HanseLM 78M Base is a small German-first causal language model and an experimental research preview. It was trained from scratch to study whether a hybrid attention/convolution architecture can learn useful German text representations under a roughly 1.5-billion-token compute budget."
+    },
+    {
+      "title": "AI Model Directory — 629 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 629 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "base model AI Models | Civitai",
+      "url": "https://civitai.com/tag/base%20model",
+      "snippet": "Browse 12,062 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with base model."
+    }
+  ]
+}

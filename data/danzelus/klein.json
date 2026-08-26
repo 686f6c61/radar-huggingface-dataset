@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Danzelus/klein",
+  "slug": "danzelus-klein",
+  "author": "Danzelus",
+  "url": "https://huggingface.co/Danzelus/klein",
+  "created_at": "2026-08-26T12:59:06.000Z",
+  "updated_at": "2026-08-26T12:59:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelsLab/FLUX.2-klein-9B · Hugging Face",
+      "url": "https://huggingface.co/ModelsLab/FLUX.2-klein-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Black Forest Labs launches open source Flux.2 [klein] to generate AI ...",
+      "url": "https://novalogiq.com/2026/01/17/black-forest-labs-launches-open-source-flux-2-klein-to-generate-ai-images-in-less-than-a-second/",
+      "snippet": "The German AI startup Black Forest Labs (BFL), founded by former Stability AI engineers, is continuing to build out its suite of open source AI image generators with the release of FLUX.2 [klein], a new pair of small models — one open and one non-commercial — that emphasizes speed and lower compute requirements, with the […]"
+    },
+    {
+      "title": "FLUX.2 [klein]: Low-Latency AI Image Model",
+      "url": "https://www.goenhance.ai/image-models/flux-2-klein",
+      "snippet": "FLUX.2 [klein] is an image model built for low-latency, interactive creation. It&#x27;s suited for fast draft-and-refine loops where you want quick feedback while keeping strong photoreal quality, clean composition, and edit-friendly results."
+    },
+    {
+      "title": "GitHub - yanokusnir-ai/one-node-flux-2-klein: ComfyUI custom node for ...",
+      "url": "https://github.com/yanokusnir-ai/one-node-flux-2-klein",
+      "snippet": "A ComfyUI custom node that wraps the full FLUX.2 [klein] workflow into a single self-contained UI widget. No graph to build, no spaghetti wires to connect, just one powerful node with everything inside. One Node to rule them all, One Node to find them, One Node to bring them all, and in ComfyUI bind ..."
+    },
+    {
+      "title": "Black Forest Labs launched FLUX.2 klein, including a 4B model under an ...",
+      "url": "https://www.ai-market-watch.com/news/black-forest-labs-launches-open-source-flux2-klein",
+      "snippet": "Black Forest Labs launched FLUX.2 klein, including a 4B model under an Apache 2.0 license for commer... The AMW Read Black Forest Labs advances the open-weight generative media strategy (cross.§B) by providing high-performance, distilled models capable of sub-second local inference on consumer hardware."
+    }
+  ]
+}

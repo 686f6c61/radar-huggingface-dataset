@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "3mic/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-int4-ov",
+  "slug": "3mic-parable-nanbeige4-2-3b-claude-fable-5-heretic-int4-ov",
+  "author": "3mic",
+  "url": "https://huggingface.co/3mic/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-int4-ov",
+  "created_at": "2026-08-26T16:47:46.000Z",
+  "updated_at": "2026-08-26T17:39:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [
+    "en",
+    "zh",
+    "it"
+  ],
+  "tags": [
+    "openvino",
+    "safetensors",
+    "nanbeige",
+    "nncf",
+    "int4",
+    "intel",
+    "arc-gpu",
+    "abliteration",
+    "heretic",
+    "uncensored",
+    "looped-transformer",
+    "reasoning",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "it",
+    "base_model:FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
+    "base_model:quantized:FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33615987,
+  "storage_human": "34 MB",
+  "base_model": "FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic - Hugging Face",
+      "url": "https://huggingface.co/FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
+      "snippet": "The base model is Nanbeige/Nanbeige4.2-3B by BOSS Zhipin; the Claude Fable 5 fine-tune is AnkitAI/Parable-Nanbeige4.2-3B-Claude-Fable-5. This repository contains only the result of applying abliteration to that fine-tune."
+    },
+    {
+      "title": "FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF ...",
+      "url": "https://huggingface.co/FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF",
+      "snippet": "FedorFesarov / Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF like 0 Text Generation GGUF English Chinese llama.cpp quantized abliteration heretic uncensored nanbeige looped-transformer conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Parable Nanbeige4.2 3B Claude Fable 5 by AnkitAI",
+      "url": "https://llm-explorer.com/model/AnkitAI%2FParable-Nanbeige4.2-3B-Claude-Fable-5,44Rd5sKUA1dV9IzxrdPh3l",
+      "snippet": "Parable Nanbeige4.2 3B Claude Fable 5 is an open-source 3b LLM by AnkitAI. VRAM 8.4GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "parable - ollama.com",
+      "url": "https://ollama.com/parable",
+      "snippet": "Parable is a family of open models trained on real Claude Fable 5 and GPT-5.5 agent traces for local agentic coding. Best model per size; Qwen3 and IBM Granite lines."
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/abs/2607.22083",
+      "snippet": "We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to ..."
+    }
+  ]
+}

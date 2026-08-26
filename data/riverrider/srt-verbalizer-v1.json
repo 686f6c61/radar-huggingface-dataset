@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RiverRider/srt-verbalizer-v1",
+  "slug": "riverrider-srt-verbalizer-v1",
+  "author": "RiverRider",
+  "url": "https://huggingface.co/RiverRider/srt-verbalizer-v1",
+  "created_at": "2026-08-26T05:35:08.000Z",
+  "updated_at": "2026-08-26T17:17:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "activation-verbalization",
+    "frozen-backbone",
+    "readout-head",
+    "cross-modal",
+    "image-captioning",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676286938,
+  "storage_human": "676 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RiverRider/srt-verbalizer-v1 · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/srt-verbalizer-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RiverRider/srt-nla-av-v1 · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/srt-nla-av-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - space-bacon/SRT",
+      "url": "https://github.com/space-bacon/SRT",
+      "snippet": "Every other repo of the form RiverRider/srt-adapter-vNNx* (e.g. v8a, v18, v21b_a070, v22c_a050, v23*) is an internal research-iteration release. Weights are open under Apache-2.0 for reproducibility of paper results, but the labels are research generations, not versions in the semver sense — mentally, these are v0.8a, v0.18, v0.22c_a050, etc."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/space-bacon/SRT/refs/heads/main/arxiv/paper.md",
+      "snippet": "The SRT-Adapter is that apparatus. It wraps any frozen HuggingFace causal language model and installs lightweight semiotic taps. These are modules that read hidden states, compute divergence, track meta-state, and estimate bifurcation, all without modifying a single backbone parameter."
+    },
+    {
+      "title": "RiverRider/srt-nla-av-gemma2-2b-v1 · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/srt-nla-av-gemma2-2b-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

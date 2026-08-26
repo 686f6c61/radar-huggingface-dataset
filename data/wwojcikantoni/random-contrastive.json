@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wwojcikantoni/random-contrastive",
+  "slug": "wwojcikantoni-random-contrastive",
+  "author": "wwojcikantoni",
+  "url": "https://huggingface.co/wwojcikantoni/random-contrastive",
+  "created_at": "2026-08-26T13:12:51.000Z",
+  "updated_at": "2026-08-26T13:13:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visualizing and Understanding Contrastive Learning This research ...",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Abstract Contrastive learning has revolutionized the field of computer vision, learning rich representations from unlabeled data, which generalize well to diverse vision tasks. Consequently, it has become increasingly important to explain these approaches and understand their inner workings mechanisms. Given that contrastive models are trained with interdependent and interacting inputs and aim ..."
+    },
+    {
+      "title": "[2106.15147] SCARF: Self-Supervised Contrastive Learning using Random ...",
+      "url": "https://arxiv.org/abs/2106.15147",
+      "snippet": "Self-supervised contrastive representation learning has proved incredibly successful in the vision and natural language domains, enabling state-of-the-art performance with orders of magnitude less labeled data. However, such methods are domain-specific and little has been done to leverage this technique on real-world tabular datasets. We propose SCARF, a simple, widely-applicable technique for ..."
+    },
+    {
+      "title": "Self-Supervised Any-Point Tracking by Contrastive Random Walks",
+      "url": "https://ai-search.io/papers/self-supervised-any-point-tracking-by-contrastive-random-walks",
+      "snippet": "The researchers developed a self-supervised approach that uses a transformer model to match points in videos through something called contrastive random walks. Instead of trying to learn everything at once, the model compares all pairs of points to find consistent paths through the video."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "A practical overview of contrastive learning - how models learn by comparing similar and dissimilar examples, the loss functions and methods behind it, and how to implement it in PyTorch."
+    },
+    {
+      "title": "An In-Depth Guide to Contrastive Learning: Techniques, Models, and ...",
+      "url": "https://medium.com/@myscale/an-in-depth-guide-to-contrastive-learning-techniques-models-and-applications-909828f65f20",
+      "snippet": "Learn about Contrastive Learning, its techniques, models like CLIP & SimCLR, and applications in vector databases for efficient data retrieval."
+    }
+  ]
+}

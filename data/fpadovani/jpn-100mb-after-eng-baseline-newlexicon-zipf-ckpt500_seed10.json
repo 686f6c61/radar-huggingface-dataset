@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed10",
+  "slug": "fpadovani-jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed10",
+  "created_at": "2026-08-26T14:05:57.000Z",
+  "updated_at": "2026-08-26T14:14:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 500328024,
+  "storage_human": "500 MB",
+  "base_model": "fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed10 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed10",
+      "snippet": "Instructions to use fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "eng-100mb-after-jpn-baseline-ckpt500_seed10 - Hugging Face",
+      "url": "https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-ckpt500_seed10",
+      "snippet": "Instructions to use fpadovani/eng-100mb-after-jpn-baseline-ckpt500_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "eng-100mb-after-jpn-baseline-newlexicon-ckpt500_seed10",
+      "url": "https://friendli.ai/models/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-ckpt500_seed10",
+      "snippet": "Deploy eng-100mb-after-jpn-baseline-newlexicon-ckpt500_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed10",
+      "url": "https://friendli.ai/models/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed10",
+      "snippet": "Deploy jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Ppt Art Lang Newlexicon Jpn Baseline 100mb Seed10 by fpadovani",
+      "url": "https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-jpn-baseline-100mb_seed10,12OLyJosLqj42hHRMckXBM",
+      "snippet": "Ppt Art Lang Newlexicon Jpn Baseline 100mb Seed10 is an open-source 86.5m LLM by fpadovani. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Adi2309005/meld-conversational-sentiment",
+  "slug": "adi2309005-meld-conversational-sentiment",
+  "author": "Adi2309005",
+  "url": "https://huggingface.co/Adi2309005/meld-conversational-sentiment",
+  "created_at": "2026-08-26T13:32:05.000Z",
+  "updated_at": "2026-08-26T13:36:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82120707,
+  "parameters_human": "82.1M",
+  "storage_bytes": 985507372,
+  "storage_human": "986 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - declare-lab/MELD: MELD: A Multimodal Multi-Party Dataset for ...",
+      "url": "https://github.com/declare-lab/MELD",
+      "snippet": "With the rapid growth of AI, multimodal emotion recognition has gained a major research interest, primarily due to its potential applications in many challenging tasks, such as dialogue generation, multimodal interaction etc. A conversational emotion recognition system can be used to generate appropriate responses by analysing user emotions."
+    },
+    {
+      "title": "MELD-Based Conversational Sentiment Dataset | IEEE DataPort",
+      "url": "https://ieee-dataport.org/documents/meld-based-conversational-sentiment-dataset",
+      "snippet": "The MELD-Based Conversational Sentiment Dataset is a multimodal dataset designed for conversational sentiment and emotion analysis. It incorporates textual, audio, and visual modalities to capture diverse emotional cues from multi-party conversations."
+    },
+    {
+      "title": "PDF MELD: A Multimodal Multi-Party Dataset for Emotion Recognition ... - Sentic",
+      "url": "https://www.sentic.net/meld.pdf",
+      "snippet": "introduced MELD, a multimodal conversational emotion recognition described the process of building this provided results obtained with strong methods applied on this dataset."
+    },
+    {
+      "title": "GitHub Pages - MELD",
+      "url": "https://affective-meld.github.io/",
+      "snippet": "MELD also has sentiment (positive, negative and neutral) annotation for each utterance. How to Download the data? To download the dataset enter either of the following commands: ... Example dialogue Dataset statistics Citation Please cite the following papers if you use this dataset in your work. S. Poria, D. Hazarika, N. Majumder, G. Naik, R ..."
+    },
+    {
+      "title": "[1810.02508] MELD: A Multimodal Multi-Party Datasetfor Emotion ... - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/1810.02508",
+      "snippet": "The development of conversational AI thus depends on the use of both contextual and multimodal information. The publicly available datasets for multimodal emotion recognition in conversations - IEMOCAP and SEMAINE - have facilitated a significant number of research projects, but also have limitations due to their relatively small number of ..."
+    }
+  ]
+}

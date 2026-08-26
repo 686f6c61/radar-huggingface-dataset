@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pdxt-homas/image-captioning-fast",
+  "slug": "pdxt-homas-image-captioning-fast",
+  "author": "pdxt-homas",
+  "url": "https://huggingface.co/pdxt-homas/image-captioning-fast",
+  "created_at": "2026-08-26T13:46:29.000Z",
+  "updated_at": "2026-08-26T13:46:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - swtech-pro/Image-Captioning-Fast: A lightweight and fast AI ...",
+      "url": "https://github.com/swtech-pro/Image-Captioning-Fast",
+      "snippet": "A lightweight and fast AI image captioning app using Salesforce&#x27;s BLIP-base model. Works smoothly on Google Colab (Free Tier) and generates quick one-line captions with a clean Gradio UI."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Best 75 Image Captioning Models: Compare & Try Free - Roboflow",
+      "url": "https://playground.roboflow.com/models/task/captioning",
+      "snippet": "Which image captioning model is best for your project? Filter 75 models by license, compare size and price, and run 69 of them free on your own images."
+    },
+    {
+      "title": "Image-to-Text Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-to-text",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
+      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
+    }
+  ]
+}

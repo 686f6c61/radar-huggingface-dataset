@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "medallo/QVS-llama-tts-T4-sm75",
+  "slug": "medallo-qvs-llama-tts-t4-sm75",
+  "author": "medallo",
+  "url": "https://huggingface.co/medallo/QVS-llama-tts-T4-sm75",
+  "created_at": "2026-08-26T19:25:39.000Z",
+  "updated_at": "2026-08-26T19:26:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45292668,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unmatched Performance and Efficiency | Llama 4",
+      "url": "https://developer.meta.com/ai/models/llama-4/",
+      "snippet": "Meet Llama 4, the latest multimodal AI model offering cost efficiency, 10M context window and easy deployment. Start building advanced personalized experiences."
+    },
+    {
+      "title": "llama4",
+      "url": "https://ollama.com/library/llama4",
+      "snippet": "For vision, Llama 4 models are also optimized for visual recognition, image reasoning, captioning, and answering general questions about an image. The Llama 4 model collection also supports the ability to leverage the outputs of its models to improve other models including synthetic data generation and distillation."
+    },
+    {
+      "title": "llama.cpp-dsv4/tools/tts at master - GitHub",
+      "url": "https://github.com/prometheusair/llama.cpp-dsv4/tree/master/tools/tts",
+      "snippet": "Running the example with llama-server Running this example with llama-server is also possible and requires two server instances to be started. One will serve the LLM model and the other will serve the voice decoder model."
+    },
+    {
+      "title": "Model API | Models - ai.developer.meta.com",
+      "url": "https://ai.developer.meta.com/docs/models/",
+      "snippet": "The Muse model families on Meta Model API, spanning the API-hosted Muse Spark plus the open-weight Muse Glimmer, and how to choose the right model."
+    },
+    {
+      "title": "google (Google) - Hugging Face",
+      "url": "https://huggingface.co/google",
+      "snippet": "Google ️ Open Source AI Image-Text-to-Text • 26B • Jul 15 • 1.78M • 1.19k"
+    }
+  ]
+}

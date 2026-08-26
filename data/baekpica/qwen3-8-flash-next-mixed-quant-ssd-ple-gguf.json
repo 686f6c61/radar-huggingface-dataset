@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Baekpica/Qwen3.8-Flash-Next-Mixed-Quant-SSD-PLE-GGUF",
+  "slug": "baekpica-qwen3-8-flash-next-mixed-quant-ssd-ple-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Mixed-Quant-SSD-PLE-GGUF",
+  "created_at": "2026-08-26T17:01:00.000Z",
+  "updated_at": "2026-08-26T17:20:51.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mixed-quant",
+    "qwen4exp",
+    "qwen3.8-flash-next",
+    "dgx-spark",
+    "ds4",
+    "ssd-offload",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128799735699,
+  "parameters_human": "128.80B",
+  "storage_bytes": 200072719392,
+  "storage_human": "200.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next?file=Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Deploy Qwen3.8-Flash-Next with SGLang — day-0 recipes for Qwen&#x27;s 176B-parameter (6B active) GDN + QSA hybrid Mixture-of-Experts preview of the Qwen4 architecture, on NVIDIA and AMD."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and chat. We are working very hard to support the ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model. It pairs a large parameter count with a smaller active count per token, plus a huge n-gram embedding table for fast local token lookups, on top of GDN and QSA mechanisms."
+    }
+  ]
+}

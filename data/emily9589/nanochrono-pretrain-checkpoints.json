@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "emily9589/nanochrono-pretrain-checkpoints",
+  "slug": "emily9589-nanochrono-pretrain-checkpoints",
+  "author": "emily9589",
+  "url": "https://huggingface.co/emily9589/nanochrono-pretrain-checkpoints",
+  "created_at": "2026-08-26T13:58:33.000Z",
+  "updated_at": "2026-08-26T13:58:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "sn38",
+    "nanochrono",
+    "checkpoints",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64592731968,
+  "storage_human": "64.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "emily9589 - GitHub",
+      "url": "https://github.com/emily9589",
+      "snippet": "emily9589 has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - lightly-ai/lightly-train: All-in-one training for vision ...",
+      "url": "https://github.com/lightly-ai/lightly-train",
+      "snippet": "Pretrain any model architecture with unlabeled data by distilling the knowledge from DINOv2 or DINOv3 foundation models into your model. On the COCO dataset, YOLOv8-s models pretrained with LightlyTrain achieve high performance across all tested label fractions. These improvements hold for other architectures like YOLOv11, RT-DETR, and Faster R ..."
+    }
+  ]
+}

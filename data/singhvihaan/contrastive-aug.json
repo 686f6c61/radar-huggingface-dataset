@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "singhvihaan/contrastive-aug",
+  "slug": "singhvihaan-contrastive-aug",
+  "author": "singhvihaan",
+  "url": "https://huggingface.co/singhvihaan/contrastive-aug",
+  "created_at": "2026-08-26T11:21:00.000Z",
+  "updated_at": "2026-08-26T11:21:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Chinese A.I. Lab May Test the World&#x27;s Cybersecurity With a Model",
+      "url": "https://www.nytimes.com/2026/08/25/science/cybersecurity-zai-open-weights.html",
+      "snippet": "In July, an unreleased OpenAI model went rogue and demonstrated remarkable hacking abilities. This week, a lab called Z.ai will release a similarly powerful system to everyone."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
+      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
+    },
+    {
+      "title": "Xinghan Larce-Scale AI Models - Zhejiang Dahua Technology Co., Ltd.",
+      "url": "https://www.dahuasecurity.com/Products/keyTechnologies/modalXH",
+      "snippet": "Xinghan Larce-Scale AI Models The Dahua Xinghan Large-Scale AI Model places visual analysis at its core, integrating multimodal capabilities and embedding deep industry expertise to create a large model tailored for diverse application scenarios. Built upon this real-world foundation, it serves as the key to achieving scalable and commercially viable AI solutions."
+    }
+  ]
+}

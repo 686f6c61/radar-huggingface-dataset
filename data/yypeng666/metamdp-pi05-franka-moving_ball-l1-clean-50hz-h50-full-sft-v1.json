@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yypeng666/metamdp-pi05-franka-moving_ball-l1-clean-50hz-h50-full-sft-v1",
+  "slug": "yypeng666-metamdp-pi05-franka-moving_ball-l1-clean-50hz-h50-full-sft-v1",
+  "author": "yypeng666",
+  "url": "https://huggingface.co/yypeng666/metamdp-pi05-franka-moving_ball-l1-clean-50hz-h50-full-sft-v1",
+  "created_at": "2026-08-26T14:43:39.000Z",
+  "updated_at": "2026-08-26T14:57:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "franka",
+    "robosuite",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134182043734,
+  "storage_human": "134.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openpi-franka/PI05_FRANKA.md at main · Shenzhaolong1330 ... - GitHub",
+      "url": "https://github.com/Shenzhaolong1330/openpi-franka/blob/main/PI05_FRANKA.md",
+      "snippet": "Here I chose the version da5d2f3e9187fa4690e6667fe8b294cae49016d6 which is the version compatible with data collected by lerobot_franka_isoteleop. Now as I have installed the proper version of lerobot, I can add local path of lerobot in the [tool.uv.sources] section."
+    },
+    {
+      "title": "GitHub - ChuyaoFu/openpi-franka",
+      "url": "https://github.com/ChuyaoFu/openpi-franka/tree/main",
+      "snippet": "This guide covers end-to-end fine-tuning of the π₀.₅ (pi0.5) model on a Franka single-arm dataset in LeRobot format, from data verification through training completion. Model: π₀.₅ with PyTorch backend, fine-tuned from the pi05_base checkpoint."
+    },
+    {
+      "title": "PDF π : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://www.pi.website/download/pi05.pdf",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

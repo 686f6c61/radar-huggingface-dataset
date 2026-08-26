@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ricciix82/classification-rc1",
+  "slug": "ricciix82-classification-rc1",
+  "author": "Ricciix82",
+  "url": "https://huggingface.co/Ricciix82/classification-rc1",
+  "created_at": "2026-08-26T15:15:40.000Z",
+  "updated_at": "2026-08-26T15:15:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "ai classification-model responsible-ai generation-models aigc Updated on Nov 8, 2023"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "Contribute to airockchip/rknn_model_zoo development by creating an account on GitHub."
+    },
+    {
+      "title": "Text Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-classification",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Detecting Incisional Surgical Site Infections on Wound Images",
+      "url": "https://jamanetwork.com/journals/jamasurgery/fullarticle/2853285",
+      "snippet": "This diagnostic/prognostic study uses postoperative wound photographs to develop and externally validate a deep learning model to detect wounds suggestive of surgical site infections."
+    }
+  ]
+}

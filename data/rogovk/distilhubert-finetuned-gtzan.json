@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "rogovk/distilhubert-finetuned-gtzan",
+  "slug": "rogovk-distilhubert-finetuned-gtzan",
+  "author": "rogovk",
+  "url": "https://huggingface.co/rogovk/distilhubert-finetuned-gtzan",
+  "created_at": "2026-08-26T16:21:26.000Z",
+  "updated_at": "2026-08-26T16:21:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:marsyas/gtzan",
+    "base_model:ntu-spml/distilhubert",
+    "base_model:finetune:ntu-spml/distilhubert",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23691402,
+  "parameters_human": "23.7M",
+  "storage_bytes": 94776881,
+  "storage_human": "95 MB",
+  "base_model": "ntu-spml/distilhubert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.87
+    }
+  ],
+  "sources": [
+    {
+      "title": "f0ghedgeh0g/distilhubert-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/f0ghedgeh0g/distilhubert-finetuned-gtzan",
+      "snippet": "distilhubert-finetuned-hyperparam-gtzan This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "gaetokk/distilhubert-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/gaetokk/distilhubert-finetuned-gtzan",
+      "snippet": "distilhubert-finetuned-gtzan This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "RajkNakka/distilhubert-finetuned-gtzan-1 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/255495",
+      "snippet": "distilhubert-finetuned-gtzan-1 This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "DistilHubert-Finetuned GTZAN Open-Source Audio Classification Model ...",
+      "url": "https://model.aibase.com/models/details/1915692989592264705",
+      "snippet": "🚀 distilhubert-finetuned-gtzan This model is a fine - tuned version of [ntu - spml/distilhubert] (https://huggingface.co/ntu - spml/distilhubert) on the GTZAN dataset, aiming to provide high - performance audio classification capabilities."
+    },
+    {
+      "title": "innovation64/distilhubert-finetuned-gtzan - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/374689",
+      "snippet": "distilhubert-finetuned-gtzan This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset. It achieves the following results on the evaluation set: eval_loss: 0.5967 eval_accuracy: 0.87 eval_runtime: 49.7736 eval_samples_per_second: 2.009 eval_steps_per_second: 0.261 epoch: 10.0 step: 1130 Model description More information ..."
+    }
+  ]
+}

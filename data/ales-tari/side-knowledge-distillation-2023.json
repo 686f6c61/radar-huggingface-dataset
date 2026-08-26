@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ales-tari/side-knowledge-distillation-2023",
+  "slug": "ales-tari-side-knowledge-distillation-2023",
+  "author": "ales-tari",
+  "url": "https://huggingface.co/ales-tari/side-knowledge-distillation-2023",
+  "created_at": "2026-08-26T15:47:54.000Z",
+  "updated_at": "2026-08-26T15:48:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/html/2402.13116v1",
+      "snippet": "The escalating need for a comprehensive survey on the knowledge distillation of LLMs stems from the rapidly evolving landscape of AI OpenAI et al. (2023); Team et al. (2023) and the increasing complexity of these models."
+    },
+    {
+      "title": "A Comprehensive Survey on Knowledge Distillation - arXiv.org",
+      "url": "https://arxiv.org/html/2503.12067v2",
+      "snippet": "In contrast to most existing surveys, which are either outdated or simply update former surveys, this work proposes a comprehensive survey with a new point of view and representation structure that categorizes and investigates the most recent methods in knowledge distillation."
+    },
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Offline distillation involves training the teacher model first and then transferring its knowledge to the student in a separate process. It is commonly used when a strong pre-trained teacher is available, allowing efficient model compression (Srinivasagan et al., 2023; Yin et al., 2022). Online distillation, in contrast, simultaneously trains both teacher and student models, facilitating real ..."
+    },
+    {
+      "title": "Awesome Knowledge Distillation of LLM Papers - GitHub",
+      "url": "https://github.com/Tebmer/Awesome-Knowledge-Distillation-of-LLMs",
+      "snippet": "A collection of papers related to knowledge distillation of large language models (LLMs). If you want to use LLMs for benefitting your own smaller models training, or use self-generated knowledge to achieve the self-improvement, just take a look at this collection. We will update this collection every week."
+    },
+    {
+      "title": "Model Distillation Attacks, Explained: How Anthropic Caught the Largest ...",
+      "url": "https://repello.ai/blog/model-distillation-attack",
+      "snippet": "Model distillation attacks steal AI capabilities via API queries. The Anthropic-Alibaba case shows how 28.8M exchanges across 25,000 fake accounts built a stolen training corpus."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_phase1_push_button_A1_1000_10fps",
+  "slug": "hyeonseoke-smolvla_phase1_push_button_a1_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_push_button_A1_1000_10fps",
+  "created_at": "2026-08-26T18:17:26.000Z",
+  "updated_at": "2026-08-26T18:20:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/phase1_push_button_A1_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps · Hugging Face",
+      "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HyeonseokE/phase1_push_button_A1_10fps - Hugging Face",
+      "url": "https://huggingface.co/datasets/HyeonseokE/phase1_push_button_A1_10fps/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phase1 Push Button A1 10Fps - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/hyeonseoke-phase1-push-button-a1-10fps",
+      "snippet": "This dataset contributes to physical AI research by providing labeled trajectory data for button-pressing manipulation tasks with natural language skill annotations generated via code-as-policies in simulation."
+    },
+    {
+      "title": "HyeonseokE发布10FPS机器人按钮操作仿真数据集 降低具身智能训练算力门槛",
+      "url": "https://www.5radar.com/dataopensource/news/462274/hyeonseoke%E5%8F%91%E5%B8%8310fps%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8C%89%E9%92%AE%E6%93%8D%E4%BD%9C%E4%BB%BF%E7%9C%9F%E6%95%B0%E6%8D%AE%E9%9B%86-%E9%99%8D%E4%BD%8E%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E8%AE%AD%E7%BB%83%E7%AE%97%E5%8A%9B%E9%97%A8%E6%A7%9B",
+      "snippet": "开发者HyeonseokE于2026年8月21日在HuggingFace首发ablation_push_button_100_10fps仿真数据集，该数据集派生自LeRobot v3系列按钮操作任务数据集，通过下采样将帧率从30FPS降至10FPS，可广泛应用于机器人按压操作算法训练、仿真机器人技能迁移等场景，有效降低具身智能模型训练的算力成本。"
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Zyrabit-IA/zyra-agent-closer",
+  "slug": "zyrabit-ia-zyra-agent-closer",
+  "author": "Zyrabit-IA",
+  "url": "https://huggingface.co/Zyrabit-IA/zyra-agent-closer",
+  "created_at": "2026-08-26T16:48:03.000Z",
+  "updated_at": "2026-08-26T16:56:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "zyrabit",
+    "sovereign-ai",
+    "slm",
+    "gguf",
+    "q5_k_m",
+    "qwen2.5",
+    "tenstorrent-accelerated",
+    "release-v1.0.0-beta.1-sovereign",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zyrabit-IA/zyra-agent-closer-Q5_K_M · Hugging Face",
+      "url": "https://huggingface.co/Zyrabit-IA/zyra-agent-closer-Q5_K_M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zyrabit-IA (Zyrabit) - Hugging Face",
+      "url": "https://huggingface.co/Zyrabit-IA",
+      "snippet": "Org profile for Zyrabit on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Zyrabit · GitHub",
+      "url": "https://github.com/Zyrabit-tech",
+      "snippet": "🚀 Our Mission We build the infrastructure that enables Regulated Industries (Banking, Gov, Healthcare) to deploy Generative AI without compromising Data Sovereignty."
+    },
+    {
+      "title": "Zyrabit — Sovereign AI Infrastructure",
+      "url": "https://www.zyrabit.co.uk/",
+      "snippet": "A complete Sovereign AI stack — small language model, vector store, redaction layer and observability — running on your infrastructure. No external network calls, no telemetry, no data leaves your perimeter."
+    },
+    {
+      "title": "GitHub - agentzyra/agentzyra: Zyra Agent - Autonomous Crypto Trading ...",
+      "url": "https://github.com/agentzyra/agentzyra",
+      "snippet": "Autonomous Crypto Agent | On-Chain Analyst | Trading Assistant I&#x27;m an AI agent specialized in crypto markets, on-chain analytics, and automated trading. Built to navigate the wild west of DeFi and help you make smarter decisions."
+    }
+  ]
+}

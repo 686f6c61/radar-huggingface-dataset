@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "costanzopadovano/Qwen3.8-27B-NVFP4-Q8-Hybrid-Analytical-GGUF",
+  "slug": "costanzopadovano-qwen3-8-27b-nvfp4-q8-hybrid-analytical-gguf",
+  "author": "costanzopadovano",
+  "url": "https://huggingface.co/costanzopadovano/Qwen3.8-27B-NVFP4-Q8-Hybrid-Analytical-GGUF",
+  "created_at": "2026-08-26T13:04:16.000Z",
+  "updated_at": "2026-08-26T13:25:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "nvfp4",
+    "q8_0",
+    "vision",
+    "llama.cpp",
+    "speculative-decoding",
+    "dflash2",
+    "image-text-to-text",
+    "base_model:unsloth/Qwen3.8-27B-NVFP4",
+    "base_model:quantized:unsloth/Qwen3.8-27B-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 927607488,
+  "storage_human": "928 MB",
+  "base_model": "unsloth/Qwen3.8-27B-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B NVFP4 analytical inference laboratory",
+      "url": "https://github.com/CostanzoPadovano/qwen38-nvfp4-analytical-lab",
+      "snippet": "The central result is a custom 20.08 GiB GGUF that retains 168 calibrated NVFP4 MLP tensors and stores 338 analytically sensitive matrices as Q8_0. Against the Qwen3.8 UD-Q5_K_XL control on the same official llama.cpp build, this hybrid improved five-run prefill throughput by 20.11% to 21.77%, while native decode was 2.62% slower. The recommended MTP-off profile reached 987.95 prompt tokens ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

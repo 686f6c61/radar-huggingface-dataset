@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alwyabdl/Aungir_HD2A2b",
+  "slug": "alwyabdl-aungir_hd2a2b",
+  "author": "alwyabdl",
+  "url": "https://huggingface.co/alwyabdl/Aungir_HD2A2b",
+  "created_at": "2026-08-26T15:01:59.000Z",
+  "updated_at": "2026-08-26T15:03:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938009278,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aüngir - H-D2A2b | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.red/models/1052681/aungir",
+      "snippet": "Update notes here : H-2A2b - Consistent 1/2 loli-generating model, Images uses quality prompt mostly no loras. Blessings of Yig Yig-B5CIP2 - A more likey-stable, consistent, effective merged model. Blessings of Yig A1A - You are \"blessed\" with an inconsistent model that i merged randomly. C2Alpha-DpB-B2 - Slightly changes, re-merge with IL2A4 and T6AO4.5 for similar style and details. T6AO4.5 ..."
+    },
+    {
+      "title": "Aüngir Reviews | Rated 5 Stars by 163 Users on Civitai",
+      "url": "https://civitai.com/models/1052681/reviews?modelVersionId=1405004",
+      "snippet": "Explore user reviews of the Aüngir AI model on Civitai, rated 5 stars by 163 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "Aüngir - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1831213020299943188",
+      "snippet": "Generate stunning style anime art with the &#x27;Aüngir&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Aüngir - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1825099018174912691/1873912953321559079",
+      "snippet": "Generate stunning illustrious, merge, sdxl, noobai, lora-merged anime art with the &#x27;Aüngir&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "alwyabdl (ab alawy) - Hugging Face",
+      "url": "https://huggingface.co/alwyabdl/models",
+      "snippet": "alwyabdl (ab alawy) - Hugging Face ... anime"
+    }
+  ]
+}

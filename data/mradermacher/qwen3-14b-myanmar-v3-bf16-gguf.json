@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-14b-myanmar-v3-bf16-GGUF",
+  "slug": "mradermacher-qwen3-14b-myanmar-v3-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-14b-myanmar-v3-bf16-GGUF",
+  "created_at": "2026-08-26T17:47:04.000Z",
+  "updated_at": "2026-08-26T18:48:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:kkomyoeminaung/qwen3-14b-myanmar-v3-bf16",
+    "base_model:quantized:kkomyoeminaung/qwen3-14b-myanmar-v3-bf16",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14803307520,
+  "parameters_human": "14.80B",
+  "storage_bytes": 102264808928,
+  "storage_human": "102.3 GB",
+  "base_model": "kkomyoeminaung/qwen3-14b-myanmar-v3-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3-14B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-14B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-14B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3 — Local Setup, VRAM, and Use Cases (2026) | local-llm.net",
+      "url": "https://www.local-llm.net/models/qwen-3/",
+      "snippet": "What is Qwen 3? Qwen 3 is Alibaba&#x27;s MoE open-weights language model. Released in 2025-04, it ships in 8 sizes (0.6B, 1.7B, 4B, 8B, 14B, 30B, 32B, 235B) and is licensed Apache 2.0 (most sizes). The most popular use case is best all-round local LLM in 2025-2026. VRAM and hardware The smallest 0.6B size needs at least 1 GB VRAM; the largest 235B needs around 5 GB."
+    },
+    {
+      "title": "mradermacher/Qwen3-14B-Uncensored-GGUF - Hugging Face Hub Pa... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/qwen3-14b-uncensored-gguf",
+      "snippet": "We found that mradermacher/Qwen3-14B-Uncensored-GGUF demonstrated a not healthy version release cadence and project activity because the last version was released a year ago."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    }
+  ]
+}

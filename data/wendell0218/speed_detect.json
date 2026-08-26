@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wendell0218/speed_detect",
+  "slug": "wendell0218-speed_detect",
+  "author": "wendell0218",
+  "url": "https://huggingface.co/wendell0218/speed_detect",
+  "created_at": "2026-08-26T18:03:51.000Z",
+  "updated_at": "2026-08-26T18:28:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "video-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "video-classification",
+    "pytorch",
+    "r3d-18",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 398150602,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wendell0218 (Wendong Bu) · GitHub",
+      "url": "https://github.com/wendell0218",
+      "snippet": "️🏖️🍟. wendell0218 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "pipe/compose_motion_example/3_speed_detect.py at main · wendell0218 ...",
+      "url": "https://github.com/wendell0218/pipe/blob/main/compose_motion_example/3_speed_detect.py",
+      "snippet": "History 516 lines (442 loc) · 17.4 KB main pipe / compose_motion_example / 3_speed_detect.py Top Code Blame 516 lines (442 loc) · 17.4 KB Raw 1 2 3 4 5 6 7 8 9 10 ..."
+    },
+    {
+      "title": "wendell0218 (Wendong Bu) - Hugging Face",
+      "url": "https://huggingface.co/wendell0218",
+      "snippet": "wendell0218 Follow Dany-0&#x27;s profile pictureAsh444&#x27;s profile picture 2 followers · 1 following"
+    },
+    {
+      "title": "wendell0218 (Wendong Bu) - Hugging Face",
+      "url": "https://huggingface.co/wendell0218/models",
+      "snippet": "wendell0218&#x27;s models 1 Sort: Recently updated wendell0218/Janus-FocusDiff-7B Updated 5 minutes ago• 5"
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    }
+  ]
+}

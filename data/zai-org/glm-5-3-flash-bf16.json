@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zai-org/GLM-5.3-Flash-BF16",
+  "slug": "zai-org-glm-5-3-flash-bf16",
+  "author": "zai-org",
+  "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16",
+  "created_at": "2026-08-25T06:45:05.000Z",
+  "updated_at": "2026-08-26T13:49:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 0,
+  "trending_score": 24,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 642672288322,
+  "storage_human": "642.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-5.3-Flash-BF16 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/GLM-5 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    },
+    {
+      "title": "Official model update: zai org/GLM 5.3 Flash BF16 - zglg.work",
+      "url": "https://zglg.work/en/ai/news/2026-08-26-official-model-update-zai-org-glm-5-3-flash-bf16",
+      "snippet": "According to huggingface.co, Official model update: zai org/GLM 5.3 Flash BF16. Official Hugging Face model registry update from Zhipu GLM Hugging Face. Pipeline: text generation. Library: transformers. Tags: transformers, safetensors, glm5 next, text generation, conversational, en, zh, arxiv:2602.15763. Downloads: 0. Likes: 0."
+    }
+  ]
+}

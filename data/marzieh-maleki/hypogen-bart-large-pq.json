@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marzieh-maleki/hypogen-bart-large-pq",
+  "slug": "marzieh-maleki-hypogen-bart-large-pq",
+  "author": "marzieh-maleki",
+  "url": "https://huggingface.co/marzieh-maleki/hypogen-bart-large-pq",
+  "created_at": "2026-08-26T13:59:55.000Z",
+  "updated_at": "2026-08-26T14:00:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 406341721,
+  "parameters_human": "406.3M",
+  "storage_bytes": 1625426996,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marzieh-maleki/hypogen-bart-large-p · Hugging Face",
+      "url": "https://huggingface.co/marzieh-maleki/hypogen-bart-large-p",
+      "snippet": "marzieh-maleki / hypogen-bart-large-p like 0 Transformers Safetensors bart text2text-generation arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "marzieh-maleki/hypogen-gpt2-p · Hugging Face",
+      "url": "https://huggingface.co/marzieh-maleki/hypogen-gpt2-p",
+      "snippet": "marzieh-maleki / hypogen-gpt2-p like 0 Text Generation Transformers Safetensors gpt2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ReNginx/HyPoGen: Official Repo for ICLR 2025 \"Optimization ...",
+      "url": "https://github.com/ReNginx/HyPoGen",
+      "snippet": "This repository contains the official implementation of HyPoGen: Optimization-Biased Hypernetworks for Generalizable Policy Generation, accepted at ICLR 2025. # Evaluate trained approximators across multiple tasks and seeds python batch_eval_regressor.py &#92; --approximator_rootdir results_approximator ..."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "bart-large · Models",
+      "url": "https://www.modelscope.cn/models/zimuwangnlp/bart-large/summary",
+      "snippet": "BART (large-sized model) BART model pre-trained on English language. It was introduced in the paper BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension by Lewis et al. and first released in this repository."
+    }
+  ]
+}

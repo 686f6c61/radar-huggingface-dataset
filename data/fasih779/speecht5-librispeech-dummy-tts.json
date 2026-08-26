@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Fasih779/speecht5-librispeech-dummy-tts",
+  "slug": "fasih779-speecht5-librispeech-dummy-tts",
+  "author": "Fasih779",
+  "url": "https://huggingface.co/Fasih779/speecht5-librispeech-dummy-tts",
+  "created_at": "2026-08-26T14:26:33.000Z",
+  "updated_at": "2026-08-26T14:29:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "text-to-speech",
+    "audio-course",
+    "en",
+    "dataset:hf-internal-testing/librispeech_asr_dummy",
+    "arxiv:1910.09700",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578033826,
+  "storage_human": "578 MB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/speecht5_tts · Hugging Face",
+      "url": "https://huggingface.co/microsoft/speecht5_tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SpeechT5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/speecht5",
+      "snippet": "SpeechT5 Overview The SpeechT5 model was proposed in SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing by Junyi Ao, Rui Wang, Long Zhou, Chengyi Wang, Shuo Ren, Yu Wu, Shujie Liu, Tom Ko, Qing Li, Yu Zhang, Zhihua Wei, Yao Qian, Jinyu Li, Furu Wei. The abstract from the paper is the following:"
+    },
+    {
+      "title": "GitHub - microsoft/SpeechT5: Unified-Modal Speech-Text Pre-Training for ...",
+      "url": "https://github.com/microsoft/SpeechT5",
+      "snippet": "Leveraging large-scale unlabeled speech and text data, we pre-train SpeechT5 to learn a unified-modal representation, hoping to improve the modeling capability for both speech and text."
+    },
+    {
+      "title": "SpeechT5/SpeechT5/README.md at main · microsoft/SpeechT5",
+      "url": "https://github.com/microsoft/SpeechT5/blob/main/SpeechT5/README.md",
+      "snippet": "The manifest and pre-trained vocoder can be found in huggingface, which may be helpful to reproduce the results of SpeechT5 TTS model. We also provide re-implementation of TTS fine-tuned model speecht5_tts.pt, but with a smaller batch size or max updates, which can be helpful."
+    },
+    {
+      "title": "LibriSpeech ASR corpus - openslr.org",
+      "url": "https://www.openslr.org/12/",
+      "snippet": "LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech, prepared by Vassil Panayotov with the assistance of Daniel Povey. The data is derived from read audiobooks from the LibriVox project, and has been carefully segmented and aligned."
+    }
+  ]
+}

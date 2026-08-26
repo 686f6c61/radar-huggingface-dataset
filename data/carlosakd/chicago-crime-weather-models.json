@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CarLosAKD/chicago-crime-weather-models",
+  "slug": "carlosakd-chicago-crime-weather-models",
+  "author": "CarLosAKD",
+  "url": "https://huggingface.co/CarLosAKD/chicago-crime-weather-models",
+  "created_at": "2026-08-26T11:59:14.000Z",
+  "updated_at": "2026-08-26T12:10:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290068023,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - skumbham/Chicago-Crime-Weather-Analysis · GitHub",
+      "url": "https://github.com/skumbham/Chicago-Crime-Weather-Analysis",
+      "snippet": "This project, completed as part of the MS in Applied Data Science program at Syracuse University&#x27;s School of Information Studies, explores the correlation between weather conditions and crime rates in Chicago. By leveraging Apache PySpark, the project processes large datasets of crime incidents and weather records, performing data cleaning, integration, and machine learning to identify ..."
+    },
+    {
+      "title": "bhanugar/Chicago-Crime-Prediction-Based-on-Weather - GitHub",
+      "url": "https://github.com/bhanugar/Chicago-Crime-Prediction-Based-on-Weather",
+      "snippet": "Project Proposal Presentation - This presentation outlines the objectives, methods, and expected outcomes of our analysis on how weather conditions impact crime rates in Chicago. It provides a detailed overview of the proposed methodologies, data sources, and analytical techniques that will be used to explore the correlation between weather patterns and criminal activities."
+    },
+    {
+      "title": "PDF Chicago Crime: a Novel Perspective on Forecastng and Evaluation - Jetir",
+      "url": "https://www.jetir.org/papers/JETIR2405G16.pdf",
+      "snippet": "The crime rate prediction strategies can be applied on historical data available in the police records by examining the data at various angles like reason of crime, frequency of similar kind of crimes at specific location with other parameters model the crime prediction. The implementation of this project is divided into following steps -"
+    },
+    {
+      "title": "Time Series and Forecasting: Chicago Crime - Amazon Web Services",
+      "url": "https://rstudio-pubs-static.s3.amazonaws.com/1065763_40152b60a4c743158dab1d3ca8b58d98.html",
+      "snippet": "With the Chicago crime dataset, our aim is to develop a prediction model using time series analysis to forecast crime frequency. Through this analysis, we will investigate if there are discernible patterns that indicate the likelihood of a crime occurring and identify specific time periods that demand increased vigilance and caution."
+    },
+    {
+      "title": "UChicago Undergrad Analyzes Machine Learning Models Used By CPD ...",
+      "url": "https://cs.uchicago.edu/news/uchicago-undergrad-analyzes-machine-learning-models-used-by-cpd-uncovers-lack-of-transparency-about-data-usage/",
+      "snippet": "The rise of violence and crime in Chicago has led the city to allocate roughly 65% of its public safety budget to the Chicago Police Department- a hefty 1.9 billion dollars for fiscal year 2023. Millions of that is spent on the upkeep of Strategic Decision Support Centers (SDSC&#x27;s): real-time crime centers that use predictive models for surveillance and data collection. CPD, in conjunction ..."
+    }
+  ]
+}

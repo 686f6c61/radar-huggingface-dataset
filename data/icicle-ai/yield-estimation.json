@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ICICLE-AI/yield-estimation",
+  "slug": "icicle-ai-yield-estimation",
+  "author": "ICICLE-AI",
+  "url": "https://huggingface.co/ICICLE-AI/yield-estimation",
+  "created_at": "2026-07-07T18:11:45.000Z",
+  "updated_at": "2026-08-26T16:31:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yield-weather-soil",
+    "text-classification",
+    "crop-yield",
+    "multi-temporal",
+    "regression",
+    "yield-estimation",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 181185,
+  "parameters_human": "181185",
+  "storage_bytes": 1456488,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICICLE-ai/yield_estimation - GitHub",
+      "url": "https://github.com/ICICLE-ai/yield_estimation",
+      "snippet": "The model combines weekly weather time-series with static soil features to estimate corn yield in bushels per acre (bu/acre). This repository contains the source code for data preparation, model training, evaluation, and inference, together with the final trained checkpoint."
+    },
+    {
+      "title": "ICICLE-AI/yield-estimation · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Sarikaa-Sridhar/yield-estimation-transformer/discussions",
+      "snippet": "ICICLE-AI / yield-estimation like 1 Follow Intelligent Cyberinfrastructure with Computational Learning in the Environment -- ICICLE 20 Text Classification Transformers Safetensors yield-weather-soil crop-yield multi-temporal regression yield-estimation custom_code License:mit Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "yield_estimation/scripts at main · ICICLE-ai/yield_estimation",
+      "url": "https://github.com/ICICLE-ai/yield_estimation/tree/main/scripts",
+      "snippet": "Contribute to ICICLE-ai/yield_estimation development by creating an account on GitHub."
+    },
+    {
+      "title": "Smart CI for Democratized Digital Agriculture Project | ICICLE ...",
+      "url": "https://icicle.osu.edu/smart-ci-democratized-digital-agriculture-project",
+      "snippet": "Crop yield estimation enables maximization of harvest yield. In-season yield prediction difficult given weather climate changes, soil heterogeneity. Model as a multi-modal spatio-temporal regression w/ weather, soil, UAS imagery, and phenotypic traits to predict final yield. An Orchestration Engine for Scalable On-Demand AI Phenotyping from UAS Imagery in Agriculture For training guides and to ..."
+    },
+    {
+      "title": "Harvest | ICICLE AI Institute - Training Catalog",
+      "url": "https://icicle-ai.github.io/training-catalog/docs/Harvest",
+      "snippet": "Harvest is a tool designed to allow multiple types of stake holders in the digital agriculture space further their own unique goals from research to increases of the bottom line. Harvest allows for the creation of pipelines where users can preprocess their data, train models on HPC resources, infer on models to get insights on farm fields, and some visualizations to give an at a glance ..."
+    }
+  ]
+}

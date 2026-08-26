@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bhatr-eyansh/robotics-vision-language-lab",
+  "slug": "bhatr-eyansh-robotics-vision-language-lab",
+  "author": "bhatr-eyansh",
+  "url": "https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab",
+  "created_at": "2026-08-26T13:36:10.000Z",
+  "updated_at": "2026-08-26T13:36:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://vla-survey.github.io/",
+      "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications."
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://arxiv.org/html/2510.07077v1",
+      "snippet": "Abstract Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects ..."
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://arxiv.org/pdf/2510.07077",
+      "snippet": "A Vision-Language-Action (VLA) model is a system that takes visual observations and natural language instructions as required inputs and may incorporate additional sensory modalities."
+    },
+    {
+      "title": "Vision-language-action model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision%E2%80%93language%E2%80%93action_model",
+      "snippet": "The general architecture of a vision-language-action model. The model receives as input a text instruction and an image observation that are encoded in a latent representation. The action decoder receives this representation and generates a sequence of low-level robot actions. In robot learning, a vision-language-action model (VLA) is a class of multimodal foundation models that ..."
+    },
+    {
+      "title": "Foundation Models for Robotics: Vision-Language-Action (VLA)",
+      "url": "https://rohitbandaru.github.io/blog/Foundation-Models-for-Robotics-VLA/",
+      "snippet": "I would argue that language understanding is a necessary component for a general-purpose robotics foundation model. However, it is an open question on whether the LLM has to be the main component in the model. For example, we may one day build powerful vision models for robotics, and add a small language component."
+    }
+  ]
+}

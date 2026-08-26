@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dylanmdm7/audio-visual-learning",
+  "slug": "dylanmdm7-audio-visual-learning",
+  "author": "dylanmdm7",
+  "url": "https://huggingface.co/dylanmdm7/audio-visual-learning",
+  "created_at": "2026-08-26T11:31:54.000Z",
+  "updated_at": "2026-08-26T11:32:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dylanmdm7 (Dylan Miller) - Hugging Face",
+      "url": "https://huggingface.co/dylanmdm7",
+      "snippet": "Working on AI safety research Recent Activity updated a model21 minutes ago dylanmdm7/audio-visual-learning published a model22 minutes ago dylanmdm7/audio-visual-learning updated a dataset4 days ago dylanmdm7/dataset_059474178_wildlife_pointcloud_text View all activity"
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "snippet": "Talk, create and control audio Generate cinematic video with audio Generate high-quality images from text Generate high fidelity music and audio Generate and explore interactive worlds Perceive, reason, use tools and interact Build responsible AI applications at scale"
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "From Vision to Audio and Beyond: A Unified Model for Audio-Visual ...",
+      "url": "https://arxiv.org/html/2409.19132v1",
+      "snippet": "Since VAB is a unified model, its backbone can be fine-tuned for various audio-visual downstream tasks. Our experiments showcase the efficiency of VAB in producing high-quality audio from video, and its capability to acquire semantic audio-visual features, leading to competitive results in audio-visual retrieval and classification."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    }
+  ]
+}

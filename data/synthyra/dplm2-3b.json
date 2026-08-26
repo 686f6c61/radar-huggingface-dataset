@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Synthyra/DPLM2-3B",
+  "slug": "synthyra-dplm2-3b",
+  "author": "Synthyra",
+  "url": "https://huggingface.co/Synthyra/DPLM2-3B",
+  "created_at": "2026-02-27T21:48:34.000Z",
+  "updated_at": "2026-08-26T17:13:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esm",
+    "protein-language-model",
+    "fastplms",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 2881060389,
+  "parameters_human": "2.88B",
+  "storage_bytes": 11524320084,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synthyra/DPLM2-3B · Hugging Face",
+      "url": "https://huggingface.co/Synthyra/DPLM2-3B",
+      "snippet": "DPLM2 modality types DPLM2 infers type_ids automatically from input_ids and attention_mask when they are not provided. Attention backend sdpa is the default backend. Flex Attention is available by setting config.attn_backend = \"flex\" before loading. Embed datasets All DPLM2 models inherit EmbeddingMixin, so you can call model.embed_dataset (...) directly."
+    },
+    {
+      "title": "FastPLMs/model_cards/dplm2_3b.md at main · Synthyra/FastPLMs",
+      "url": "https://github.com/Synthyra/FastPLMs/blob/main/model_cards/dplm2_3b.md",
+      "snippet": "Synthyra/DPLM2-3B This checkpoint packages the FastPLMs DPLM2 implementation. Accepted inputs are tokenized amino-acid and structure tracks with explicit modality boundaries. Supported Transformers entry points are AutoConfig, AutoModel, AutoModelForMaskedLM, AutoModelForSequenceClassification, AutoModelForTokenClassification."
+    },
+    {
+      "title": "FastPLMs/fastplms/dplm2 at main · Synthyra/FastPLMs · GitHub",
+      "url": "https://github.com/Synthyra/FastPLMs/tree/main/fastplms/dplm2",
+      "snippet": "Experimental test-time training TTT is disabled by default. Normal DPLM2 inference, embeddings, logits, and state_dict () keys are unchanged unless you explicitly call model.ttt (...). The current implementation is experimental and trains only local LoRA adapters on the PLM backbone with masked language modeling on the test protein. It can help some difficult proteins, but it adds test-time ..."
+    },
+    {
+      "title": "Synthyra/DPLM-3B · Hugging Face",
+      "url": "https://huggingface.co/Synthyra/DPLM-3B",
+      "snippet": "Attention backend sdpa is the default backend. Flex Attention is available by setting config.attn_backend = \"flex\" before loading. Embed datasets All DPLM models inherit EmbeddingMixin, so you can call model.embed_dataset (...) directly."
+    },
+    {
+      "title": "DPLM-2: A Multimodal Diffusion Protein Language Model",
+      "url": "https://arxiv.org/html/2410.13782v1",
+      "snippet": "We present DPLM-2, a multimodal protein generative language model that aims to simultaneously model, understand and generate protein structure and sequence. We show that it can be fairly efficient and effective to obtain a mulitmodal protein model with moderate amount of high-quality data, a decent structure tokenizer and publicly-accessible ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/agentic-incident-response-20260826-model",
+  "slug": "rkb109-agentic-incident-response-20260826-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/agentic-incident-response-20260826-model",
+  "created_at": "2026-08-26T14:04:34.000Z",
+  "updated_at": "2026-08-26T14:04:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "llm-agents",
+    "text-classification",
+    "text-generation",
+    "summarization",
+    "question-answering",
+    "dataset:RKB109/agentic-incident-response-20260826-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/agentic-incident-response-20260816-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/agentic-incident-response-20260816-model",
+      "snippet": "Agentic Incident Response Orchestrator Baseline Model Model Description This repository contains a small, transparent prototype model for Production teams need agentic automation without allowing an LLM-style planner to execute unsafe remediation. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "RKB109/agentic-incident-response-20260816-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/RKB109/agentic-incident-response-20260816-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - R-behera/agentic-incident-response-20260816: A constrained ...",
+      "url": "https://github.com/R-behera/agentic-incident-response-20260816/tree/main/",
+      "snippet": "A constrained incident-response agent that routes alerts to tools through auditable plans and approval gates. Generated on 2026-08-16 as an independent production-AI architecture project."
+    },
+    {
+      "title": "agentic-incident-response-20260816/README.md at main · R ... - GitHub",
+      "url": "https://github.com/R-behera/agentic-incident-response-20260816/blob/main/README.md",
+      "snippet": "Agentic Incident Response Orchestrator A constrained incident-response agent that routes alerts to tools through auditable plans and approval gates. Generated on 2026-08-16 as an independent production-AI architecture project."
+    },
+    {
+      "title": "AnonyMousKIT Phishing Platform Uses Conversational Voice AI to Unlock ...",
+      "url": "https://www.navsplace.net/anonymouskit-voice-ai-phishing-iphone-passcodes-20260826/",
+      "snippet": "Automating the Social Engineering of Device Unlocks Security researchers at SOCRadar have uncovered a sophisticated phishing-as-a-service platform dubbed AnonyMousKIT. Designed specifically to bypass Apple Activation Lock on stolen iOS devices, the kit integrates conversational voice AI agents alongside automated multi-channel messaging to deceive device owners into surrendering their screen ..."
+    }
+  ]
+}

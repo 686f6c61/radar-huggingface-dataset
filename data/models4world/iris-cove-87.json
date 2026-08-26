@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/iris-cove-87",
+  "slug": "models4world-iris-cove-87",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/iris-cove-87",
+  "created_at": "2026-08-26T15:50:33.000Z",
+  "updated_at": "2026-08-26T15:50:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Models Directory | Browse & Filter by Capabilities",
+      "url": "https://aimodels.dev/models",
+      "snippet": "Explore our comprehensive AI models directory. Filter by capabilities, providers, and performance metrics to find the perfect AI model for your needs."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

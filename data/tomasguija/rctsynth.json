@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TomasGuija/RCTSynth",
+  "slug": "tomasguija-rctsynth",
+  "author": "TomasGuija",
+  "url": "https://huggingface.co/TomasGuija/RCTSynth",
+  "created_at": "2026-08-26T13:52:32.000Z",
+  "updated_at": "2026-08-26T13:53:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical-imaging",
+    "computed-tomography",
+    "image-registration",
+    "deformable-registration",
+    "deformation-synthesis",
+    "variational-autoencoder",
+    "pytorch",
+    "monai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111856699,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TomasGuija (Tomás Guija Valiente) · GitHub",
+      "url": "https://github.com/TomasGuija/",
+      "snippet": "A graph representing TomasGuija&#x27;s contributions from August 24, 2025 to August 25, 2026. The contributions are 81% commits, 14% pull requests, 3% code review, 2% issues."
+    },
+    {
+      "title": "TomasGuija (Tomás Guija Valiente) - Hugging Face",
+      "url": "https://huggingface.co/TomasGuija/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset about 3 hours ago ... updated a dataset 1 day ago"
+    },
+    {
+      "title": "TomasGuija/LatinFontsSVGs · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TomasGuija/LatinFontsSVGs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DesigNet: Learning to Draw Vector Graphics as Designers Do",
+      "url": "https://arxiv.org/html/2604.06494v1",
+      "snippet": "Abstract AI-driven content generation has made remarkable progress in recent years. However, neural networks and human designers operate in fundamentally different ways, making collaboration between them challenging. We address this gap for Scalable Vector Graphics (SVG) by equipping neural networks with tools commonly used by designers, such as axis alignment and explicit continuity control ..."
+    },
+    {
+      "title": "RSGPT: a generative transformer model for retrosynthesis ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-025-62308-6",
+      "snippet": "A generative pretrained transformer model is subsequently developed for template-free retrosynthesis planning by pre-training on 10 billion generated data."
+    }
+  ]
+}

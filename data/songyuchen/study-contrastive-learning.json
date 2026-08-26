@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "songyuchen/study-contrastive-learning",
+  "slug": "songyuchen-study-contrastive-learning",
+  "author": "songyuchen",
+  "url": "https://huggingface.co/songyuchen/study-contrastive-learning",
+  "created_at": "2026-08-26T11:44:36.000Z",
+  "updated_at": "2026-08-26T11:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231224014164",
+      "snippet": "Abstract Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning This research ...",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "The aim of contrastive learning is to maximize the similarity between positive inputs while minimizing it between negative ones. Recently, contrastive learning has revolutionized the field of model pretraining [2], [3], [4], [5], which involves learning representations from large amounts of unlabeled data."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    }
+  ]
+}

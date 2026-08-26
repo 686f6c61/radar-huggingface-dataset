@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JCorcho/10Eros-Max-TURBO-hybrid-beta3-ComfyUI-Quants",
+  "slug": "jcorcho-10eros-max-turbo-hybrid-beta3-comfyui-quants",
+  "author": "JCorcho",
+  "url": "https://huggingface.co/JCorcho/10Eros-Max-TURBO-hybrid-beta3-ComfyUI-Quants",
+  "created_at": "2026-08-25T17:14:50.000Z",
+  "updated_at": "2026-08-26T16:20:32.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "minimax-h3",
+    "image-to-video",
+    "text-to-video",
+    "audio-video-generation",
+    "nvfp4",
+    "fp8",
+    "blackwell",
+    "quantization",
+    "nsfw",
+    "not-for-all-audiences",
+    "base_model:TenStrip/10Eros-Max",
+    "base_model:quantized:TenStrip/10Eros-Max",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33492356032,
+  "storage_human": "33.5 GB",
+  "base_model": "TenStrip/10Eros-Max",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TenStrip/10Eros-Max · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DmitryDB/MiniMax-H3-10Eros-Max-Quants · Hugging Face",
+      "url": "https://huggingface.co/DmitryDB/MiniMax-H3-10Eros-Max-Quants",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "comfy-agent/scripts/colab/10eros_max at main · shinshin86 ... - GitHub",
+      "url": "https://github.com/shinshin86/comfy-agent/tree/main/scripts/colab/10eros_max",
+      "snippet": "The upstream model card links cicalooo&#x27;s INT8 ConvRot conversion. This kit pins 10Eros_Max_h3_fl2va_beta2_pruned_int8_convrot.safetensors because it: matches the native H3 FL2VA workflow used by the verified minimax_h3 kit; keeps the diffusion model at about 20.20 GB instead of about 40.22 GB for the upstream BF16 file; and uses the non-Turbo Beta2 checkpoint, so the existing 20-step H3 ..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "10eros Max - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/10eros-max.html",
+      "snippet": "Download 10eros Max GGUF model. 7.81 GB, 13,211 downloads, 33 likes."
+    }
+  ]
+}

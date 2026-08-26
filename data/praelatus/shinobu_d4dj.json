@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Praelatus/Shinobu_D4DJ",
+  "slug": "praelatus-shinobu_d4dj",
+  "author": "Praelatus",
+  "url": "https://huggingface.co/Praelatus/Shinobu_D4DJ",
+  "created_at": "2026-08-26T15:07:56.000Z",
+  "updated_at": "2026-08-26T15:08:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163664699,
+  "storage_human": "164 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inuyose Shinobu [D4DJ] - Shinobu_Illustrious - tensor.art",
+      "url": "https://tensor.art/models/855733861684905834",
+      "snippet": "Download Inuyose Shinobu [D4DJ] - free LORA Illustrious AI model on TENSOR. D4DJ. By Praelatus"
+    },
+    {
+      "title": "Inuyose Shinobu [D4DJ] - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1155505?modelVersionId=1268698",
+      "snippet": "Download Inuyose Shinobu [D4DJ] - LORA for Illustrious by Praelatus. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Inuyose Shinobu [D4DJ] - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/994fab7b26fd32840c5c93674cdc4330",
+      "snippet": "Explore Inuyose Shinobu [D4DJ] model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Inuyose Shinobu ______ (D4DJ) ______ and 3 Outfits - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/022cc374d0475572a6eff3a000328c21",
+      "snippet": "Base Model Illustrious Trigger Words Inuyose Shinobu (D4DJ), short, straight, pink hair with light yellow tips that reaches the shoulders, Most of the bangs are secured with a clip, golden colored eyes, ( (1girl)), Small breasts, thighs"
+    },
+    {
+      "title": "Praelatus - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/855612795146749050",
+      "snippet": "Explore Praelatus&#x27;s AI creations on TENSOR. aHR0cHM6Ly9jaXZpdGFpLmNvbS91c2VyL1ByYWVsYXR1cwo="
+    }
+  ]
+}

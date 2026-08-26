@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chabab/SQL-Oracle-PG",
+  "slug": "chabab-sql-oracle-pg",
+  "author": "chabab",
+  "url": "https://huggingface.co/chabab/SQL-Oracle-PG",
+  "created_at": "2026-08-26T14:49:25.000Z",
+  "updated_at": "2026-08-26T14:50:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma3_text",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1087490496,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chabab/text2sql-oracle-postgres at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/chabab/text2sql-oracle-postgres/tree/main",
+      "snippet": "Languages: English Size: < 1K Tags: text-to-sql sql oracle postgresql gemma gemma-3 + 1 Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main text2sql-oracle-postgres 1.98 MB 1 contributor History:11 commits chabab Log each validation step and result in the Colab notebook ..."
+    },
+    {
+      "title": "Generate SQL from Natural Language Prompts Using Select AI",
+      "url": "https://docs.oracle.com/en/cloud/paas/autonomous-database/dedicated/hsarg/index.html",
+      "snippet": "Select AI simplifies and automates using generative AI, whether generating, running, and explaining SQL from a natural language prompt, using retrieval augmented generation with vector stores, generating synthetic data, or chatting with the LLM."
+    },
+    {
+      "title": "Oracle AI Database 26ai - Get Started",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/",
+      "snippet": "Oracle AI Database Documentation Learn About Oracle AI Database What&#x27;s New in Release 26ai Database Concepts Oracle Database Features and Licensing App Behavior Changes, Deprecations, and Desupports in Oracle AI Database 26ai Oracle Interactive Technical Architecture Diagrams Oracle Database Quickstart Run SQL with Oracle Live SQL"
+    },
+    {
+      "title": "Autonomous AI Database Select AI - Oracle",
+      "url": "https://www.oracle.com/autonomous-database/select-ai/",
+      "snippet": "Explore the capabilities of Oracle Autonomous AI Database Select AI. Effortlessly analyze data using natural language, streamline workflows with AI agents, and harness Oracle&#x27;s robust and secure cloud infrastructure. Learn to build, deploy, and manage AI solutions with integrated educational workshops and resources."
+    },
+    {
+      "title": "Generate SQL Queries with Oracle AI and Natural Language",
+      "url": "https://www.oracle.com/artificial-intelligence/generate-sql-queries-with-ai/",
+      "snippet": "Explore how Select AI converts natural language into SQL effortlessly, bridging the gap between conversational input and database queries."
+    }
+  ]
+}

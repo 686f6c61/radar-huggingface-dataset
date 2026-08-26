@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "c-ho/2026-08-26-crf-classweights-clean",
+  "slug": "c-ho-2026-08-26-crf-classweights-clean",
+  "author": "c-ho",
+  "url": "https://huggingface.co/c-ho/2026-08-26-crf-classweights-clean",
+  "created_at": "2026-08-26T11:39:11.000Z",
+  "updated_at": "2026-08-26T12:21:43.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:Davlan/bert-base-multilingual-cased-ner-hrl",
+    "base_model:finetune:Davlan/bert-base-multilingual-cased-ner-hrl",
+    "license:afl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177880005,
+  "parameters_human": "177.9M",
+  "storage_bytes": 3557725076,
+  "storage_human": "3.6 GB",
+  "base_model": "Davlan/bert-base-multilingual-cased-ner-hrl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 406 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "c-ho/2026-07-14-crf-classweights-clean · Hugging Face",
+      "url": "https://huggingface.co/c-ho/2026-07-14-crf-classweights-clean",
+      "snippet": "2026-07-14-crf-classweights-clean This model is a fine-tuned version of jhu-clsp/mmBERT-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "The Best Open Source and Open-Weight LLM Models to Run Locally in 2026",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llm-models-to-run-locally",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

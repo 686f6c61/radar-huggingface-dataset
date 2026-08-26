@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pinkelephantlimited/stockanalysis-system",
+  "slug": "pinkelephantlimited-stockanalysis-system",
+  "author": "pinkelephantlimited",
+  "url": "https://huggingface.co/pinkelephantlimited/stockanalysis-system",
+  "created_at": "2026-08-26T14:42:04.000Z",
+  "updated_at": "2026-08-26T15:47:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pinkelephantlimited (Pink Elephant Limited) - Hugging Face",
+      "url": "https://huggingface.co/pinkelephantlimited/datasets",
+      "snippet": "User profile of Pink Elephant Limited on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=pink-elephant",
+      "snippet": "Explore machine learning models. 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: pink-elephant Clear all"
+    },
+    {
+      "title": "pinkelephantlimited (Pink Elephant Limited) · GitHub",
+      "url": "https://github.com/pinkelephantlimited/",
+      "snippet": "pinkelephantlimited has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "pinkelephantlimited/pink-elephant-llm - GitHub",
+      "url": "https://github.com/pinkelephantlimited/pink-elephant-llm",
+      "snippet": "📋 Overview Pink Elephant LLM is a family of custom LLaMA-architecture language models trained from scratch on 2+ trillion tokens of code, natural language, and mathematical data. Our models are designed for:"
+    },
+    {
+      "title": "21 Best AI Tools For Stock Analysis (With Examples) [2026]",
+      "url": "https://officechai.com/learn/ai-tools-for-stock-analysis/",
+      "snippet": "These AI tools for stock analysis will help traders and investors quickly synthesize information & discover insights for investing."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "puterijessica/SDXL-Lightning",
+  "slug": "puterijessica-sdxl-lightning",
+  "author": "puterijessica",
+  "url": "https://huggingface.co/puterijessica/SDXL-Lightning",
+  "created_at": "2026-08-26T13:07:36.000Z",
+  "updated_at": "2026-08-26T13:07:36.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "arxiv:2402.13929",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91793162479,
+  "storage_human": "91.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance/SDXL-Lightning · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/SDXL-Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SDXL Lightning - 1 Step | Stable Diffusion XL Checkpoint | Civitai",
+      "url": "https://civitai.com/models/350352/sdxl-lightning",
+      "snippet": "SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. For more information, please refer to our research paper: SDXL-Lightning: Progressive Adversarial Diffusion Distillation. We open-source the model as part of the research."
+    },
+    {
+      "title": "SDXL-Lightning: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sdxl-lightning-bytedance",
+      "snippet": "fast-lightning-sdxl by fal-ai is a commercial API service wrapping fast SDXL inference rather than an open-source model. Use this if you want managed inference without deploying locally; use SDXL-Lightning if you need self-hosted deployment, full control over inference parameters, or cost predictability without per-request API pricing."
+    },
+    {
+      "title": "SDXL-Lightning - a Hugging Face Space by ByteDance",
+      "url": "https://huggingface.co/spaces/ByteDance/SDXL-Lightning",
+      "snippet": "Enter an English description of what you want to see, pick how quickly the model should work, and the app creates a picture for you in seconds. It also checks the result to keep any inappropriate c..."
+    },
+    {
+      "title": "SDXL Lightning LoRAs - 2 Steps | Stable Diffusion XL LoRA - Civitai",
+      "url": "https://civitai.com/models/350450/sdxl-lightning-loras",
+      "snippet": "SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. For more information, please refer to our research paper: SDXL-Lightning: Progressive Adversarial Diffusion Distillation. We open-source the model as part of the research."
+    }
+  ]
+}

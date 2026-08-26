@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bhatr-eyansh/perceiver-contrastive-small",
+  "slug": "bhatr-eyansh-perceiver-contrastive-small",
+  "author": "bhatr-eyansh",
+  "url": "https://huggingface.co/bhatr-eyansh/perceiver-contrastive-small",
+  "created_at": "2026-08-26T13:36:39.000Z",
+  "updated_at": "2026-08-26T13:36:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "ICLR 2025 Papers",
+      "url": "https://iclr.cc/virtual/2025/papers.html",
+      "snippet": "Data Unlearning in Diffusion Models Repurposing in AI: A Distinct Approach or an Extension of Creative Problem Solving? Consistency Models Made Easy MAD-TD: Model-Augmented Data stabilizes High Update Ratio RL Fast Uncovering of Protein Sequence Diversity from Structure"
+    },
+    {
+      "title": "ICLR 2026 Papers",
+      "url": "https://iclr.cc/virtual/2026/papers.html",
+      "snippet": "Scalable Offline Model-Based RL with Action Chunks Multi-state Protein Sequence Design with DynamicMPNN 3DGEER: 3D Gaussian Rendering Made Exact and Efficient for Generic Cameras SR-Scientist: Scientific Equation Discovery With Agentic AI Binomial Gradient-Based Meta-Learning for Enhanced Meta-Gradient Estimation"
+    },
+    {
+      "title": "ICML 2026 Papers",
+      "url": "https://icml.cc/virtual/2026/papers.html",
+      "snippet": "Position: When AI Decides Who Gets an Organ: Multi-Agentic AI Systems in Transplant Medicine Risk Amplifying Disparities Without Targeted Explainability and Deployment Strategies Divya Sharma, Ghazal Azarfar, Bima Hasjim, Mamatha Bhat --"
+    },
+    {
+      "title": "Perceiver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perceiver",
+      "snippet": "Perceiver is a variant of the Transformer architecture, adapted for processing arbitrary forms of data, such as images, sounds and video, and spatial data. Unlike previous notable Transformer systems such as BERT and GPT-3, which were designed for text processing, the Perceiver is designed as a general architecture that can learn from large ..."
+    }
+  ]
+}

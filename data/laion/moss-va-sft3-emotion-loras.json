@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "laion/moss-va-sft3-emotion-loras",
+  "slug": "laion-moss-va-sft3-emotion-loras",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-va-sft3-emotion-loras",
+  "created_at": "2026-08-26T14:01:54.000Z",
+  "updated_at": "2026-08-26T14:02:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-to-speech",
+    "expressive-tts",
+    "voice-acting",
+    "emotion",
+    "en",
+    "de",
+    "base_model:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "base_model:adapter:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5500131200,
+  "storage_human": "5.5 GB",
+  "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS Voice-Acting — Emotion LoRAs vs Baseline - Hugging Face",
+      "url": "https://huggingface.co/spaces/laion/moss-va-emotion-loras",
+      "snippet": "Emotion LoRAs — does a specialist adapter help, and what does it cost? 17 adapters, each trained on the top 1 % of its own emotion (filtered so that measured naturalness and vocal-burst blend are both above the corpus median), rank 16, 5 epochs. Every adapter is compared against the same baseline — SFT-3 with the CFG-DPO adapter, the best general checkpoint measured so far — on identical ..."
+    },
+    {
+      "title": "moss-voiceacting-manual/md/emotions/Contemplation.md at main · LAION-AI ...",
+      "url": "https://github.com/LAION-AI/moss-voiceacting-manual/blob/main/md/emotions/Contemplation.md",
+      "snippet": "MOSS-VA-v2 conditioning manual: 40 emotions (best prompt + LoRA merge %, reward, correlations) — MD skill + HTML - LAION-AI/moss-voiceacting-manual"
+    },
+    {
+      "title": "GitHub - LAION-AI/moss-voiceacting-manual: MOSS-VA-v2 conditioning ...",
+      "url": "https://github.com/LAION-AI/moss-voiceacting-manual",
+      "snippet": "MOSS-VA-v2 conditioning manual: 40 emotions (best prompt + LoRA merge %, reward, correlations) — MD skill + HTML - LAION-AI/moss-voiceacting-manual"
+    },
+    {
+      "title": "laion/vocal-burst-lora-adapters · Hugging Face",
+      "url": "https://huggingface.co/laion/vocal-burst-lora-adapters",
+      "snippet": "64 PEFT/LoRA adapters for laion/moss-tts-local-transformer-4.55b-voice-acting-v2, one per non-verbal vocal-burst class (laughs, sighs, gasps, whistles, breathing, grunts, moans, etc.), trained on classifier-filtered DramaBox audio and selected from a pool of 77 trained classes using a listening evaluation, not the automatic metric alone."
+    },
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "Large-scale Artificial Intelligence Open Network TRULY OPEN AI. 100% NON-PROFIT. 100% FREE. LAION, as a non-profit organization, provides datasets, tools and models to liberate machine learning research. By doing so, we encourage open public education and a more environment-friendly use of resources by reusing existing datasets and models. Re-LAION 5B release (30.08.2024)"
+    }
+  ]
+}

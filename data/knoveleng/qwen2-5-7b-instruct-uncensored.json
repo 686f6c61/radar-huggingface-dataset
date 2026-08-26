@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "knoveleng/Qwen2.5-7B-Instruct-Uncensored",
+  "slug": "knoveleng-qwen2-5-7b-instruct-uncensored",
+  "author": "knoveleng",
+  "url": "https://huggingface.co/knoveleng/Qwen2.5-7B-Instruct-Uncensored",
+  "created_at": "2026-08-26T19:31:41.000Z",
+  "updated_at": "2026-08-26T19:33:11.000Z",
+  "license": "<SPDX",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "abliterated",
+    "orthex",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694044,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orion-zhen/Qwen2.5-7B-Instruct-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/Orion-zhen/Qwen2.5-7B-Instruct-Uncensored",
+      "snippet": "Qwen2.5-7B-Instruct-Uncensored This model is an uncensored fine-tune version of Qwen2.5-7B-Instruct. However, I can still notice that though uncensored, the model fails to generate detailed descriptions on certain extreme scenarios, which might be associated with deletion on some pretrain datasets in Qwen&#x27;s pretraining stage."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-Uncensored: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen2.5-7b-instruct-uncensored-orion-zhen",
+      "snippet": "Overview Qwen2.5-7B-Instruct-Uncensored is a 7-billion-parameter instruction-tuned language model created by Orion-zhen through fine-tuning Qwen&#x27;s base Qwen2.5-7B-Instruct model. The model uses combined SFT (Supervised Fine-Tuning) and DPO (Direct Preference Optimization) training to remove refusal behaviors while maintaining the original model&#x27;s general capabilities. You load and run it using ..."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Orion-zhen/Qwen2.5-7B-Instruct-Uncensored - featherless.ai",
+      "url": "https://featherless.ai/models/Orion-zhen/Qwen2.5-7B-Instruct-Uncensored",
+      "snippet": "Orion-zhen/Qwen2.5-7B-Instruct-Uncensored is a 7.6 billion parameter instruction-tuned language model based on the Qwen2.5-7B-Instruct architecture, developed by Orion-zhen. This model is specifically fine-tuned to be uncensored, aiming to reduce refusal behavior while maintaining the base model&#x27;s capabilities. It supports a 131072 token context length and is suitable for applications ..."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-Uncensored Free Chat Online - skywork.ai",
+      "url": "https://skywork.ai/blog/models/qwen2-5-7b-instruct-uncensored-free-chat-online-skywork-ai",
+      "snippet": "Elevate your AI experience with Skywork.ai Go beyond this chat. Save your work, run multi-step workflows, and access 200+ AI tools in one place. What is Qwen2.5-7B-Instruct-Uncensored? Qwen2.5-7B-Instruct-Uncensored represents a specialized variant of Alibaba&#x27;s Qwen2.5-7B-Instruct large language model, specifically fine-tuned to remove or significantly relax built-in safety filters and ..."
+    }
+  ]
+}

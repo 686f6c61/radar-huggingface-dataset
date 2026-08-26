@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "NKI-AI/direct-uniform",
+  "slug": "nki-ai-direct-uniform",
+  "author": "NKI-AI",
+  "url": "https://huggingface.co/NKI-AI/direct-uniform",
+  "created_at": "2026-08-26T16:13:05.000Z",
+  "updated_at": "2026-08-26T16:13:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mri",
+    "reconstruction",
+    "vsharp",
+    "medical-imaging",
+    "pytorch",
+    "arxiv:2309.09954",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403762818,
+  "storage_human": "404 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases: NKI-AI/direct - GitHub",
+      "url": "https://github.com/NKI-AI/direct/releases",
+      "snippet": "Deep learning framework for MRI reconstruction. Contribute to NKI-AI/direct development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - NKI-AI/direct: Deep learning framework for MRI reconstruction",
+      "url": "https://github.com/NKI-AI/direct",
+      "snippet": "Deep learning framework for MRI reconstruction. Contribute to NKI-AI/direct development by creating an account on GitHub."
+    },
+    {
+      "title": "NKI-AI/direct-modulated-convolution · Hugging Face",
+      "url": "https://huggingface.co/NKI-AI/direct-modulated-convolution",
+      "snippet": "DIRECT — Modulated Convolution for Conditional MRI Reconstruction Pretrained checkpoints and matching YAML configs for Conditional Learned Reconstruction for Medical Imaging (Moriakov et al., MIDL 2026)."
+    },
+    {
+      "title": "NKI-AI/direct-modulated-convolution at main - Hugging Face",
+      "url": "https://huggingface.co/NKI-AI/direct-modulated-convolution/tree/main",
+      "snippet": "AI for Oncology 18 Image-to-Image direct mri reconstruction modulated-convolution fastmri conditional License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main direct-modulated-convolution 26.7 GB Ctrl+K Ctrl+K 1 contributor History:10 commits georgeyiasemis Drop AdaIN model from card (checkpoint was non-AdaIN ..."
+    },
+    {
+      "title": "Use DIRECT with Google Colab — v2.1.0",
+      "url": "https://docs.aiforoncology.nl/direct/colab.html",
+      "snippet": "Use DIRECT with Google Colab # First mount your Google drive in Colab and create a directory named, e.g. DIRECT, and cd there:"
+    }
+  ]
+}

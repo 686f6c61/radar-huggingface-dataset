@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "slug": "deepseek-ai-deepseek-coder-v2-lite-instruct",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "created_at": "2024-06-14T06:23:33.000Z",
+  "updated_at": "2024-07-03T05:16:11.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2401.06066",
+    "license:other",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 643,
+  "downloads_30d": 631283,
+  "trending_score": 7,
+  "parameters": 15706484224,
+  "parameters_human": "15.71B",
+  "storage_bytes": 31413626609,
+  "storage_human": "31.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder-V2: DeepSeek-Coder-V2: Breaking the ...",
+      "url": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "snippet": "Here, we provide some examples of how to use DeepSeek-Coder-V2-Lite model. If you want to utilize DeepSeek-Coder-V2 in BF16 format for inference, 80GB*8 GPUs are required."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder: DeepSeek Coder: Let the Code Write ...",
+      "url": "https://github.com/deepseek-ai/deepseek-coder",
+      "snippet": "Each model is pre-trained on project-level code corpus by employing a window size of 16K and an extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, DeepSeek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V2-Lite · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "Each model is pre-trained on repo-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, resulting in foundational models (DeepSeek-Coder-Base). We further fine-tune the base model with 2B tokens of instruction data to get instruction-tuned models, namedly DeepSeek-Coder-Instruct."
+    }
+  ]
+}

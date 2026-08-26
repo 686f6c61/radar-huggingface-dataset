@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Granite-4.2-30B-ROCmFP4-STRIX_LEAN-GGUF",
+  "slug": "kingjones777-granite-4-2-30b-rocmfp4-strix_lean-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Granite-4.2-30B-ROCmFP4-STRIX_LEAN-GGUF",
+  "created_at": "2026-08-26T11:26:30.000Z",
+  "updated_at": "2026-08-26T12:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "strix-halo",
+    "gfx1151",
+    "ryzen-ai-max-395",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-lean",
+    "granite",
+    "quantized",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.2-30b",
+    "base_model:quantized:ibm-granite/granite-4.2-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29276770304,
+  "parameters_human": "29.28B",
+  "storage_bytes": 15758521024,
+  "storage_human": "15.8 GB",
+  "base_model": "ibm-granite/granite-4.2-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite-4.2-30B-ROCmFP4-COHERENT-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Granite-4.2-30B-ROCmFP4-COHERENT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kingjones777/Granite-4.1-30B-ROCmFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Granite-4.1-30B-ROCmFP4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - charlie12345/rocmfp4: ROCmfp4 · GitHub",
+      "url": "https://github.com/charlie12345/rocmfp4",
+      "snippet": "ROCmFP4 is an experimental GGUF quantization and backend integration package for AMD ROCm and Vulkan llama.cpp builds. This repository is the clean integration package."
+    },
+    {
+      "title": "kingjones777/GLM-4.7-Flash-ROCmFP4-STRIX-GGUF · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/kingjones777/GLM-4.7-Flash-ROCmFP4-STRIX-GGUF",
+      "snippet": "Instructions to use kingjones777/GLM-4.7-Flash-ROCmFP4-STRIX-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - charlie12345/ROCmFPX: ROCmFPX Family for AMD Hardware and ...",
+      "url": "https://github.com/charlie12345/ROCmFPX",
+      "snippet": "ROCmFPX adds experimental AMD-focused 2-, 3-, 4-, 6-, and 8-bit GGUF model-weight formats to llama.cpp, with CPU reference paths and accelerated HIP/ROCm and Vulkan kernels. Status: ROCmFPX is an experimental feature family on the canonical main branch. APIs, tuning choices, and performance can change. Results depend on hardware, drivers, model, prompt, and quantization recipe; use BF16/F16 ..."
+    }
+  ]
+}

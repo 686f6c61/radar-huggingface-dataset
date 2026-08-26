@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Denn231/VV-classifier-2.0-order-v2.0",
+  "slug": "denn231-vv-classifier-2-0-order-v2-0",
+  "author": "Denn231",
+  "url": "https://huggingface.co/Denn231/VV-classifier-2.0-order-v2.0",
+  "created_at": "2026-08-26T14:32:40.000Z",
+  "updated_at": "2026-08-26T14:33:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "multihead_text_classifier",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128388921,
+  "parameters_human": "128.4M",
+  "storage_bytes": 513580156,
+  "storage_human": "514 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denn231/VV-classifier-2.0-product-v2.1 · Hugging Face",
+      "url": "https://huggingface.co/Denn231/VV-classifier-2.0-product-v2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=multihead_text_classifier",
+      "snippet": "Explore machine learning models. 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: multihead_text_classifier Clear all"
+    },
+    {
+      "title": "VV Classifier 2.0 Product | ST Studio - sweettea.co",
+      "url": "https://sweettea.co/es/resources/denn231-vv-classifier-2-0-product-huggingface-model-denn231-vv-classifier-2-0-product",
+      "snippet": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    },
+    {
+      "title": "VV Classifier 2.0 Product | Sweet Tea Studio",
+      "url": "https://sweettea.co/pt-br/resources/denn231-vv-classifier-2-0-product-huggingface-model-denn231-vv-classifier-2-0-product",
+      "snippet": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    },
+    {
+      "title": "Stanford University CS231n: Deep Learning for Computer Vision",
+      "url": "https://cs231n.stanford.edu/",
+      "snippet": "Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka \"deep learning\") approaches have greatly advanced the performance ..."
+    }
+  ]
+}

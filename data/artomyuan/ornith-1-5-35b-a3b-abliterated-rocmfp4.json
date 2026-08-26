@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ArtomYuan/Ornith-1.5-35B-A3B-abliterated-ROCmFP4",
+  "slug": "artomyuan-ornith-1-5-35b-a3b-abliterated-rocmfp4",
+  "author": "ArtomYuan",
+  "url": "https://huggingface.co/ArtomYuan/Ornith-1.5-35B-A3B-abliterated-ROCmFP4",
+  "created_at": "2026-08-26T15:46:08.000Z",
+  "updated_at": "2026-08-26T18:16:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen35moe",
+    "abliterated",
+    "uncensored",
+    "rocmfp4",
+    "halofpx",
+    "vision",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 19859349856,
+  "storage_human": "19.9 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUs to leave headroom for the 256K context; adjust --tensor-parallel-size / --tp to match your hardware."
+    },
+    {
+      "title": "SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.5-35B-A3B is a self-improving agentic coding model from the Ornith Team. It extends Ornith-1.0 by expanding the self-improvement loop from scaffold and rollout optimization to jointly optimizing task generation, scaffold construction, and solution rollouts — continuously generating new training tasks, discovering effective strategies, and improving the policy through reinforcement ..."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement. Ornith-1.5 extends Ornith-1.0 (which was developed on top of Qwen3.5 and Gemma4 with additional continued pretraining, mid-training, and post-training) by expanding the self-improvement loop from scaffold and rollout optimization to jointly ..."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-35b-a3b",
+      "snippet": "The mid-size model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 35B-parameter Mixture-of-Experts that activates ~3B parameters per token, trained with the same self-improving task-and-scaffold generation loop as the 397B flagship. Vendor-reported, five-run-averaged figures put it at 68.5 on Terminal-Bench 2.1 and 79.0 on SWE-Bench Verified while ..."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Rather than relying on a fixed set of human-curated tasks and manually designed harnesses, Ornith-1.5 continuously generates new training tasks, discovers effective strategies for solving them, and improves the policy through reinforcement learning. For more details on the task, harness, and rollout reward design, please refer to our blog."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo3-greek-7b-diodorus-siculus",
+  "slug": "urdatorn-sphragis-alm-olmo3-greek-7b-diodorus-siculus",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-diodorus-siculus",
+  "created_at": "2026-08-26T12:57:15.000Z",
+  "updated_at": "2026-08-26T13:00:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:Urdatorn/olmo3-7b-ancient-greek",
+    "base_model:finetune:Urdatorn/olmo3-7b-ancient-greek",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "Urdatorn/olmo3-7b-ancient-greek",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Machine unlearning with Olmo-7B Researchers used Olmo-7B as a testbed for developing machine unlearning methods—removing specific data influence without retraining from scratch."
+    },
+    {
+      "title": "Olmo 3: Fully Open-Source LLM from AI2 (Models, Data, & Code)",
+      "url": "https://www.digitalocean.com/community/tutorials/olmo-3-allen-ai-open-source-llm",
+      "snippet": "&#x27;Explore Olmo 3, the open-source LLM from AI2. Access 7B and 32B models, datasets, code, and training logs to empower your AI research contributions&#x27;"
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/models",
+      "snippet": "Machine learning for Ancient Greek. Particular research topics include prosody, metre and author attribution."
+    },
+    {
+      "title": "Olmo: Complete Guide - Progressive Robot",
+      "url": "https://www.progressiverobot.com/2026/05/12/olmo-3-allen-ai-open-source-llm/",
+      "snippet": "&#x27;Explore Olmo 3, the open-source LLM from AI2. Access 7B and 32B models, datasets, code, and training logs to empower your AI research contributions&#x27;"
+    },
+    {
+      "title": "arXiv:2402.00838v4 [cs.CL] 7 Jun 2024",
+      "url": "https://arxiv.org/pdf/2402.00838",
+      "snippet": "ing and research-ing language models. For training and modeling, it includes full model weights, training cod , train-ing logs, and inference code. The released model includes four variants of our language model at the 7B scale corresponding to different architectures, optimizers, and training hardware, and one model at the 1B sca"
+    }
+  ]
+}

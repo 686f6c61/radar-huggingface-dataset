@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "weertman/deepstarnoodles",
+  "slug": "weertman-deepstarnoodles",
+  "author": "weertman",
+  "url": "https://huggingface.co/weertman/deepstarnoodles",
+  "created_at": "2026-08-26T17:55:19.000Z",
+  "updated_at": "2026-08-26T17:57:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "pose-estimation",
+    "marine-biology",
+    "pycnopodia",
+    "sunflower-star",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149245396,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - weertman/DeepStarNoodles: Dense pose, Noodle Tracer arm ...",
+      "url": "https://github.com/weertman/DeepStarNoodles",
+      "snippet": "Dense pose, Noodle Tracer arm polylines, and temporal tracking for sunflower stars. - weertman/DeepStarNoodles"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools). Since then, we have greatly expanded: with a single prompt, you can generate images, edit photos, chat with an AI that browses the internet, create short videos, compose original music, or chat with a realistic ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    }
+  ]
+}

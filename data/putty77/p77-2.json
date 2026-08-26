@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "putty77/p77-2",
+  "slug": "putty77-p77-2",
+  "author": "putty77",
+  "url": "https://huggingface.co/putty77/p77-2",
+  "created_at": "2026-05-15T05:33:11.000Z",
+  "updated_at": "2026-08-26T19:24:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38929171176,
+  "storage_human": "38.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "putty77/p77-2 · Hugging Face",
+      "url": "https://huggingface.co/putty77/p77-2",
+      "snippet": "putty77 / p77-2 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "putty77 (Jessen Pu) - Hugging Face",
+      "url": "https://huggingface.co/putty77/models",
+      "snippet": "User profile of Jessen Pu on Hugging Face"
+    },
+    {
+      "title": "Does PuTTY contain or use any artificial intelligence (AI) or large ...",
+      "url": "https://wa2l-wintools.sourceforge.net/chm/PuTTY/html/faq-ai.html",
+      "snippet": "A.10.2 Does PuTTY contain or use any artificial intelligence (AI) or large language model (LLM)? No, it does not. PuTTY does not use any AI or LLM during its operation. No code implementing an AI or LLM system is included in PuTTY itself, and also, no AI or LLM system elsewhere on the Internet is consulted by PuTTY when it runs."
+    },
+    {
+      "title": "Post77 — Open autonomy. Field-hardened.",
+      "url": "https://www.post77.com/",
+      "snippet": "Post77 builds Aethon — a sub-$600K autonomous VTOL ISR and strike drone, and the P77 Aegis Autonomy Suite, an open AI stack for contested airspace."
+    },
+    {
+      "title": "PuTTY-AI/readme_en.md at main · AI-DIY/PuTTY-AI · GitHub",
+      "url": "https://github.com/AI-DIY/PuTTY-AI/blob/main/readme_en.md",
+      "snippet": "PuTTY AI adds an AI assistant that can understand the current terminal session while preserving the familiar PuTTY workflow. Users can describe a problem in natural language and ask the AI to analyze logs, explain commands, locate faults, and generate operational suggestions."
+    }
+  ]
+}

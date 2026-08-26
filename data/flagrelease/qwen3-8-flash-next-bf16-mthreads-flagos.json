@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/Qwen3.8-Flash-Next-BF16-mthreads-FlagOS",
+  "slug": "flagrelease-qwen3-8-flash-next-bf16-mthreads-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-mthreads-FlagOS",
+  "created_at": "2026-08-26T14:47:24.000Z",
+  "updated_at": "2026-08-26T14:47:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "FlagRelease/Qwen3.8-27B-BF16-ascend-FlagOS · Hugging Face",
+      "url": "https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-ascend-FlagOS",
+      "snippet": "Introduction Alibaba open‑sources the vision‑language model Qwen3.8‑27B, and the Zhongzhi (众智) FlagOS community simultaneously completes Day 0 multi‑chip adaptation; based on the FlagOS unified open‑source technology stack, Qwen3.8‑27B has finished multi‑chip adaptation, precision alignment and deployment verification across 11 AI chips including T-Head（平头哥 ..."
+    },
+    {
+      "title": "FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS · Hugging Face",
+      "url": "https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS",
+      "snippet": "Introduction Alibaba open-sources the ultra-large-scale MoE model Qwen3.8-2.4T-A95B, with the FlagOS Community simultaneously completing Day0 multi-chip adaptation. Qwen3.8-2.4T-A95B has completed multi-chip adaptation, precision alignment, and deployment verification based on the FlagOS unified open-source technology stack on 10 AI chips including Alibaba T-Head, NVIDIA, Moore Threads, Huawei ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

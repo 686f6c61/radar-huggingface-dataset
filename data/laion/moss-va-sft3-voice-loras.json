@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "laion/moss-va-sft3-voice-loras",
+  "slug": "laion-moss-va-sft3-voice-loras",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-va-sft3-voice-loras",
+  "created_at": "2026-08-26T14:02:54.000Z",
+  "updated_at": "2026-08-26T14:06:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-to-speech",
+    "expressive-tts",
+    "voice-acting",
+    "voice-cloning",
+    "speaker",
+    "en",
+    "de",
+    "base_model:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "base_model:adapter:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68751640000,
+  "storage_human": "68.8 GB",
+  "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LAION-AI/moss-voiceacting-manual: MOSS-VA-v2 conditioning ...",
+      "url": "https://github.com/LAION-AI/moss-voiceacting-manual",
+      "snippet": "MOSS-VA-v2 conditioning manual: 40 emotions (best prompt + LoRA merge %, reward, correlations) — MD skill + HTML - LAION-AI/moss-voiceacting-manual"
+    },
+    {
+      "title": "MOSS voice-acting v2 — round-3 evaluation - Hugging Face",
+      "url": "https://huggingface.co/spaces/laion/moss-va-sft3-samples",
+      "snippet": "MOSS voice-acting v2 — round-3 evaluation One prompt per emotion, in English and German · 80 prompts · SFT round 3 vs + DPO vs + GRPO v4 vs + GRPO v5 · 1280 generated clips · band intense · LAION The four models on this page, in plain words All four start from the same place and were given the same 80 prompts. What separates them is only what was done after the supervised round."
+    },
+    {
+      "title": "GitHub - LAION-AI/moss-voiceacting-manual: MOSS-VA-v2 conditioning ...",
+      "url": "https://github.com/LAION-AI/moss-voiceacting-manual/tree/main",
+      "snippet": "A measured usage guide for laion/moss-tts-local-transformer-4.55b-voice-acting-v2."
+    },
+    {
+      "title": "MOSS Voice-Acting — Technical Report - a Hugging Face Space by laion",
+      "url": "https://huggingface.co/spaces/laion/moss-va-technical-report",
+      "snippet": "The shipped v2 model is documented in a public manual: MOSS Voice-Acting — Manual & Studies Hub (mirror at laion-ai.github.io). It is 25 chapters: a hub, an emotion-conditioning manual with one page per emotion, twelve recipe chapters, and an eight-page tree recording an autonomous casting agent&#x27;s four generations of runs."
+    },
+    {
+      "title": "moss-voiceacting-manual/README.md at main · LAION-AI/moss ... - GitHub",
+      "url": "https://github.com/LAION-AI/moss-voiceacting-manual/blob/main/README.md",
+      "snippet": "MOSS-VA-v2 conditioning manual: 40 emotions (best prompt + LoRA merge %, reward, correlations) — MD skill + HTML - LAION-AI/moss-voiceacting-manual"
+    }
+  ]
+}

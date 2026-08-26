@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ziellfx/GLM-5.3-Flash",
+  "slug": "ziellfx-glm-5-3-flash",
+  "author": "ziellfx",
+  "url": "https://huggingface.co/ziellfx/GLM-5.3-Flash",
+  "created_at": "2026-08-26T17:42:57.000Z",
+  "updated_at": "2026-08-26T17:42:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 656694018754,
+  "storage_human": "656.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-ai/glm-5.3-flash | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/z-ai/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. This article is a WIP."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    },
+    {
+      "title": "GLM-5.3-Flash Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+      "snippet": "Analysis of Z AI&#x27;s GLM-5.3-Flash and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    }
+  ]
+}

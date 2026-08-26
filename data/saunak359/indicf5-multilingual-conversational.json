@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Saunak359/IndicF5-Multilingual-Conversational",
+  "slug": "saunak359-indicf5-multilingual-conversational",
+  "author": "Saunak359",
+  "url": "https://huggingface.co/Saunak359/IndicF5-Multilingual-Conversational",
+  "created_at": "2026-08-26T17:06:40.000Z",
+  "updated_at": "2026-08-26T18:16:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "f5-tts",
+  "languages": [
+    "hi",
+    "bn",
+    "pa"
+  ],
+  "tags": [
+    "f5-tts",
+    "safetensors",
+    "indicf5",
+    "text-to-speech",
+    "hindi",
+    "bengali",
+    "punjabi",
+    "multilingual",
+    "conversational-tts",
+    "hi",
+    "bn",
+    "pa",
+    "dataset:Saunak359/Multi-Lingual-Curated_Dataset",
+    "base_model:ai4bharat/IndicF5",
+    "base_model:finetune:ai4bharat/IndicF5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 337096836,
+  "parameters_human": "337.1M",
+  "storage_bytes": 4082961776,
+  "storage_human": "4.1 GB",
+  "base_model": "ai4bharat/IndicF5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Bharat/IndicF5",
+      "url": "https://github.com/AI4Bharat/IndicF5",
+      "snippet": "We release IndicF5, a near-human polyglot Text-to-Speech (TTS) model trained on 1417 hours of high-quality speech from Rasa, IndicTTS, LIMMITS, and IndicVoices-R."
+    },
+    {
+      "title": "IndicF5 - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/TTS/IndicF5/",
+      "snippet": "IndicF5 is a near-human polyglot Text-to-Speech (TTS) model trained on 1417 hours of high-quality speech from Rasa, IndicTTS, LIMMITS, and IndicVoices-R."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=indicf5",
+      "snippet": "Explore machine learning models. 1 Full-text search Inference Available Edit filters Sort: Trending Active filters: indicf5 Clear all"
+    },
+    {
+      "title": "Saunak359 (Saunak Das Chaudhuri) - Hugging Face",
+      "url": "https://huggingface.co/Saunak359/models",
+      "snippet": "AI & ML interests Augmented Generation (RAG), Explainability Tools (SHAP, Grad-CAM), Semantic Search with FAISS and Sentence-Transformers, Vector-Based Learning, Multi-Modal Classification, FT-Transformer Architectures, LangChain Agents, LlamaIndex Workflows, Stable Diffusion & ControlNet Integration, Embedded Intelligence (Arduino, STM32), Modular AI Dashboards, Genkit & Firebase AI Workflows ..."
+    },
+    {
+      "title": "IndicF5/README.md at main · AI4Bharat/IndicF5 · GitHub",
+      "url": "https://github.com/AI4Bharat/IndicF5/blob/main/README.md",
+      "snippet": "We release IndicF5, a near-human polyglot Text-to-Speech (TTS) model trained on 1417 hours of high-quality speech from Rasa, IndicTTS, LIMMITS, and IndicVoices-R."
+    }
+  ]
+}

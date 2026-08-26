@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Shivam3002/meter-load-forecasting-transformer",
+  "slug": "shivam3002-meter-load-forecasting-transformer",
+  "author": "Shivam3002",
+  "url": "https://huggingface.co/Shivam3002/meter-load-forecasting-transformer",
+  "created_at": "2026-08-26T19:20:15.000Z",
+  "updated_at": "2026-08-26T19:20:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "time-series",
+    "forecasting",
+    "electricity",
+    "transformer",
+    "dataset:uci-household-power-consumption",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5840548,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Transformer based approach to electricity load forecasting",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1040619024000058",
+      "snippet": "As a similar sequence modeling problem, transformer methods can be readily adapted for deep learning time series prediction. This paper proposes a sparse transformer based approach for electricity load prediction."
+    },
+    {
+      "title": "A state-of-the-art comparative review of load forecasting methods ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590174525000546",
+      "snippet": "For enhanced clarity, key insights and comparative analyses are summarized in comprehensive tables, facilitating efficient reference. This review aims to provide researchers with a thorough understanding of advanced forecasting models, their capabilities, and limitations, thereby guiding future research endeavors in the domain of load forecasting."
+    },
+    {
+      "title": "Transformer-Based Model for Electrical Load Forecasting - MDPI",
+      "url": "https://www.mdpi.com/1996-1073/15/14/4993",
+      "snippet": "Consequently, this paper proposes a transformer-based architecture for load forecasting by modifying the NLP transformer workflow, adding N-space transformation, and designing a novel technique for handling contextual features."
+    },
+    {
+      "title": "GitHub - Aaryyan777/Transformer-Based-Load-Forecasting",
+      "url": "https://github.com/Aaryyan777/Transformer-Based-Load-Forecasting",
+      "snippet": "State-of-the-Art Power Load Forecasting using Transformers This repository contains a state-of-the-art deep learning project for short-term electrical power load forecasting. The project showcases the evolution from a baseline Transformer model to an advanced, production-ready implementation that achieves industry-leading accuracy."
+    },
+    {
+      "title": "A Hybrid LSTM-Transformer Model for Power Load Forecasting",
+      "url": "https://ieeexplore.ieee.org/document/10887006",
+      "snippet": "This paper introduces a novel optimized hybrid model combining Long Short-Term Memory (LSTM) and Transformer deep learning architectures designed for power load forecasting. It leverages the strengths of both LSTM and Transformer models, ensuring more accurate and reliable forecasts of power consumption while considering geographic factors, user behavioral factors, and time constraints for the ..."
+    }
+  ]
+}

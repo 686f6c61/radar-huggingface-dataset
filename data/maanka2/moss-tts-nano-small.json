@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "maanka2/MOSS-TTS-Nano-Small",
+  "slug": "maanka2-moss-tts-nano-small",
+  "author": "maanka2",
+  "url": "https://huggingface.co/maanka2/MOSS-TTS-Nano-Small",
+  "created_at": "2026-08-26T12:54:20.000Z",
+  "updated_at": "2026-08-26T12:54:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_nano",
+    "text-to-speech",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "arxiv:2603.18090",
+    "arxiv:2602.10934",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28554624,
+  "parameters_human": "28.6M",
+  "storage_bytes": 117109388,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maanka2 (𝗺𝗮𝗮𝗻𝗸𝗮) - Hugging Face",
+      "url": "https://huggingface.co/maanka2/models",
+      "snippet": "User profile of 𝗺𝗮𝗮𝗻𝗸𝗮 on Hugging Face Recent Activity liked a modelabout 11 hours ago k2-fsa/ZipVoice updated a Space1 day ago maanka2/MOSS-TTS-Nano-Somali-demo liked a Space2 days ago D3vShoaib/OmniVoice View all activity"
+    },
+    {
+      "title": "maanka2/MOSS-Audio-Tokenizer-Nano · Hugging Face",
+      "url": "https://huggingface.co/maanka2/MOSS-Audio-Tokenizer-Nano",
+      "snippet": "maanka2 / MOSS-Audio-Tokenizer-Nano like 0 Image Feature Extraction Transformers Safetensors moss-audio-tokenizer audio audio-tokenizer neural-codec moss-tts-family MOSS Audio Tokenizer Nano speech-tokenizer trust-remote-code custom_code arxiv:2602.10934 arxiv:2603.18090 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "MOSS-TTS-Nano | Multilingual Speech Generation - openmoss.ai",
+      "url": "https://openmoss.ai/MOSS-TTS-Nano-Demo/",
+      "snippet": "MOSS-TTS-Nano is a deployment-first TTS model designed for realtime speech generation, voice cloning, and lightweight integration. Built on an Audio Tokenizer + LLM autoregressive pipeline, it stays compact enough for practical CPU use while covering Chinese, English, and a broad multilingual set."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-TTS-Nano: MOSS-TTS-Nano is an open-source ...",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS-Nano",
+      "snippet": "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
+    },
+    {
+      "title": "MOSS-TTS-Nano · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/openmoss/MOSS-TTS-Nano",
+      "snippet": "MOSS-TTS-Nano MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "primitive-ai/Qwen3.8-Flash-Next-NVFP4",
+  "slug": "primitive-ai-qwen3-8-flash-next-nvfp4",
+  "author": "primitive-ai",
+  "url": "https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4",
+  "created_at": "2026-08-26T16:35:19.000Z",
+  "updated_at": "2026-08-26T18:31:20.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "nvfp4",
+    "quantized",
+    "vllm",
+    "modelopt",
+    "qwen3.8",
+    "flash-next",
+    "single-gpu",
+    "speculative-decoding",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 186438765537,
+  "storage_human": "186.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "Qwen3.8-Flash-Next 125B-A6B MoE drops Aug 26 on ModelScope/HF. Leaked specs, Qwen4 architecture teaser, 128GB Mac fit, FreeToken offloading, vs Qwen3.8-27B."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next Previews Qwen4 Architecture With 6B Active ...",
+      "url": "https://www.unite.ai/qwen3-8-flash-next-previews-qwen4-architecture-with-6b-active-parameters/",
+      "snippet": "Alibaba&#x27;s Qwen team released Qwen3.8-Flash-Next on August 26, 2026, an open-weight experimental model that previews the architecture intended to underpin Qwen4. The model carries 125B parameters but activates only 6B per token, a configuration the team frames as a step toward what it calls ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "appcle/distilbert-base-uncased-cfpd",
+  "slug": "appcle-distilbert-base-uncased-cfpd",
+  "author": "appcle",
+  "url": "https://huggingface.co/appcle/distilbert-base-uncased-cfpd",
+  "created_at": "2026-08-26T11:28:05.000Z",
+  "updated_at": "2026-08-26T11:45:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958855,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1071396993,
+  "storage_human": "1.1 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert-base-uncased - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distilbert-base-uncased: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/distilbert-base-uncased-distilbert",
+      "snippet": "Overview distilbert-base-uncased is a smaller, faster transformer model created by distilbert through knowledge distillation from BERT base. It was pretrained using three objectives: distillation loss to match BERT base probabilities, masked language modeling (MLM) where the model predicts randomly masked tokens in bidirectional context, and cosine embedding loss to align hidden states with ..."
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-base-uncased",
+      "snippet": "DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher."
+    },
+    {
+      "title": "GitHub - kristianrascon/distilbert-base-uncased",
+      "url": "https://github.com/kristianrascon/distilbert-base-uncased",
+      "snippet": "DistilBERT base model (uncased) This model is a distilled version of the BERT base model. It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English."
+    }
+  ]
+}

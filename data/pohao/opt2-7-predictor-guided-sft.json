@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PoHao/opt2.7-predictor-guided-sft",
+  "slug": "pohao-opt2-7-predictor-guided-sft",
+  "author": "PoHao",
+  "url": "https://huggingface.co/PoHao/opt2.7-predictor-guided-sft",
+  "created_at": "2026-08-26T16:03:10.000Z",
+  "updated_at": "2026-08-26T16:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:facebook/opt-2.7b",
+    "base_model:finetune:facebook/opt-2.7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16681964835,
+  "storage_human": "16.7 GB",
+  "base_model": "facebook/opt-2.7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/opt-2.7b · Hugging Face",
+      "url": "https://huggingface.co/facebook/opt-2.7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "opt-2.7b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/opt-27b-facebook",
+      "snippet": "opt-2.7b is a 2.7 billion parameter decoder-only transformer language model developed by facebook and released in May 2022. It generates text through..."
+    },
+    {
+      "title": "opt-2.7b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/opt-2.7b-facebook",
+      "snippet": "OPT-2.7B is a 2.7 billion parameter decoder-only language model developed by facebook and released in May 2022. It belongs to the Open Pre-trained Transformer family, which ranges from 125M to 175B parameters, designed to match the performance of GPT-3-class models while applying best practices in data collection and efficient training."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Post-Training LLMs Guide: SFT, RLHF, DPO & GRPO Explained (2026)",
+      "url": "https://www.sundeepteki.org/advice/the-complete-guide-to-post-training-llms-how-sft-rlhf-dpo-and-grpo-shape-llms",
+      "snippet": "The transformation from a base model to a product-grade AI system happens during post-training, and the techniques involved - SFT, DPO, RLHF, GRPO, Constitutional AI - represent one of the most dynamic and consequential areas of applied AI research."
+    }
+  ]
+}

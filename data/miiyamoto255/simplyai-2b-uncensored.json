@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Miiyamoto255/SimplyAI-2B-Uncensored",
+  "slug": "miiyamoto255-simplyai-2b-uncensored",
+  "author": "Miiyamoto255",
+  "url": "https://huggingface.co/Miiyamoto255/SimplyAI-2B-Uncensored",
+  "created_at": "2026-07-25T21:08:33.000Z",
+  "updated_at": "2026-08-26T19:32:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 297,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5250484002,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Miiyamoto255/SimplyAI-2B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/Miiyamoto255/SimplyAI-2B-Uncensored",
+      "snippet": "The Technological Catastrophe:** * **The Trigger:** An unforeseen failure in AI-driven technologies like self-driving cars or power grids. * **The Conflict:** Uncontrolled AI systems trigger a domino effect of malfunctions, causing blackouts, transportation chaos, and economic collapse."
+    },
+    {
+      "title": "Miiyamoto255 (Miiyamoto) - Hugging Face",
+      "url": "https://huggingface.co/Miiyamoto255",
+      "snippet": "I love uncensored community AI models Recent Activity updated a model13 days ago Miiyamoto255/SimplyAI-2B-Uncensored View all activity"
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "uncensored · Ollama",
+      "url": "https://ollama.com/search?q=uncensored",
+      "snippet": "wizard-vicuna-uncensored Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
+    },
+    {
+      "title": "mradermacher/SimplyAI-2B-Uncensored-i1-GGUF: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/mradermacher/SimplyAI-2B-Uncensored-i1-GGUF",
+      "snippet": "Thanks I thank my company, nethype GmbH, for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. Additional thanks to @nicoboss for giving me access to his private supercomputer, enabling me to provide many more imatrix quants, at much higher quality, than I would otherwise be able to. Description Model synced from source: mradermacher ..."
+    }
+  ]
+}

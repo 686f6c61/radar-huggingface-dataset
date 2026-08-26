@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kiarasin/generation",
+  "slug": "kiarasin-generation",
+  "author": "Kiarasin",
+  "url": "https://huggingface.co/Kiarasin/generation",
+  "created_at": "2026-08-26T11:27:09.000Z",
+  "updated_at": "2026-08-26T11:27:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kenerate AI — Professional AI Content Generator for Images & Videos",
+      "url": "https://kenerateai.com/",
+      "snippet": "Kenerate AI is the premier professional AI content generator for images, videos, lip sync, photo editing, and AI influencers. Powered by 500+ frontier models."
+    },
+    {
+      "title": "Gen Z founder on &#x27;AI anxiety&#x27; and being pigeonholed as ... - Fortune",
+      "url": "https://fortune.com/2025/12/25/gen-z-founder-ai-anxiety-obsolescence-biggest-misconception-shortcut-lazy/",
+      "snippet": "Speaking at Fortune Brainstorm AI in San Francisco, Nirghin addressed the tension between the perception of Gen Z and their reality as builders."
+    },
+    {
+      "title": "Generative Artificial Intelligence: A Systematic Review and Applications",
+      "url": "https://arxiv.org/html/2405.11029v1",
+      "snippet": "This approach also includes searching for advancements in &#x27;image translation&#x27;, &#x27;video synthesis&#x27;, and various applications of Generative AI in &#x27;natural language processing&#x27; and &#x27;knowledge graph generation&#x27;. This methodology ensures a focused and comprehensive review of the latest developments in the field of Generative AI."
+    },
+    {
+      "title": "Keras documentation: Generative Deep Learning",
+      "url": "https://keras.io/examples/generative/",
+      "snippet": "A walk through latent space with Stable Diffusion Style transfer"
+    },
+    {
+      "title": "How to Use Krea 2 AI Image Generator: 12 Steps [2026]",
+      "url": "https://tech-insider.org/how-to-use-krea-2-ai-image-generator-2026/",
+      "snippet": "Learn how to use Krea 2, the fastest AI image model in the Krea lineup: setup, prompts, style transfer, upscaling, and pricing in 12 steps."
+    }
+  ]
+}

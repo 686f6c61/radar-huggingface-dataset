@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "light0626/TempoVista",
+  "slug": "light0626-tempovista",
+  "author": "light0626",
+  "url": "https://huggingface.co/light0626/TempoVista",
+  "created_at": "2026-08-26T12:54:44.000Z",
+  "updated_at": "2026-08-26T13:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422654,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tempo Vista is now live. CA: 0xF50A749828f188334F280f07EA832fded425D379 ...",
+      "url": "https://x.com/TempoVista/status/2040869564121026673",
+      "snippet": "CA: 0xF50A749828f188334F280f07EA832fded425D379 https://t.co/sQRb9W1jKc The first AI Agent NFT Launchpad on Tempo. $VISTA is live on the launchpad. • Create tokens • Trade on bonding curves • Auto-migrate to DEX • Built-in charts & swap • NFT project identity From launch → to market → in one system. Welcome to Tempo Vista."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "light0626 (wenboxing) - Hugging Face",
+      "url": "https://huggingface.co/light0626/models",
+      "snippet": "User profile of wenboxing on Hugging Face"
+    },
+    {
+      "title": "Tensor.Art",
+      "url": "https://www.tensor.art/search",
+      "snippet": "AI model sharing platform, online run models to generate image,viode and traning model for free. Your can upload and download models, include Checkpoint, Embedding, ControlNet, LoRA, Pony, LoCon, LyCORIS."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

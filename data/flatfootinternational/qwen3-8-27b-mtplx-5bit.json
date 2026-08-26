@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FlatFootInternational/qwen3.8-27b-MTPLX-5bit",
+  "slug": "flatfootinternational-qwen3-8-27b-mtplx-5bit",
+  "author": "FlatFootInternational",
+  "url": "https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-5bit",
+  "created_at": "2026-08-26T17:29:09.000Z",
+  "updated_at": "2026-08-26T17:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4665462000,
+  "parameters_human": "4.67B",
+  "storage_bytes": 16923930466,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed · Hugging Face",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed",
+      "snippet": "Instructions to use Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-MTPLX-Optimized-Quality - Hugging Face",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - youssofal/MTPLX: 3x faster speeds on MLX | Qwen 3.8 27B ...",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "MTPLX is a native Mac app and a command line for running local language models with multi-token prediction. Modern models like Qwen 3.5/3.6 ship with built-in MTP heads. Almost no runtime uses them. MTPLX does: the model drafts several tokens ahead of itself, verifies them in one batched forward pass, and keeps only what passes exact rejection sampling. Same model, same output distribution ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-8-27b",
+      "snippet": "How does Qwen3.8-27B perform overall in AI benchmarks? + Qwen3.8-27B ranks #14 out of 225 models on the public BenchAlign leaderboard, with a score of 72.49/100."
+    }
+  ]
+}

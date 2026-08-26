@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austinperez/multimodal-reasoning",
+  "slug": "austinperez-multimodal-reasoning",
+  "author": "austinperez",
+  "url": "https://huggingface.co/austinperez/multimodal-reasoning",
+  "created_at": "2026-08-26T13:02:47.000Z",
+  "updated_at": "2026-08-26T13:02:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal Reasoning AI: The Next Leap in Intelligent Systems (2025)",
+      "url": "https://ajithp.com/2025/04/21/multimodal-reasoning-ai/",
+      "snippet": "Explore how multimodal AI is reshaping reasoning, with 2025 models like o3, Gemini 2.5, and Magma leading real-world applications."
+    },
+    {
+      "title": "Awesome-Reasoning-Foundation-Models - GitHub",
+      "url": "https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models",
+      "snippet": "Awesome-Reasoning-Foundation-Models survey.pdf | A curated list of awesome large AI models, or foundation models, for reasoning. We organize the current foundation models into three categories: language foundation models, vision foundation models, and multimodal foundation models."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "8 Best Multimodal AI Model Platforms Tested for Performance [2026]",
+      "url": "https://www.index.dev/blog/multimodal-ai-models-comparison",
+      "snippet": "8 Best Multimodal AI Model Platforms Tested for Performance [2026] Multimodal AI combines text, images, audio, and video in one model, cutting pipeline complexity in half. This guide shows which model fits your use case, from real-time apps to large-scale document processing."
+    },
+    {
+      "title": "[2505.04921] Perception, Reason, Think, and Plan: A Survey on Large ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "terminalgnosis/kundalini",
+  "slug": "terminalgnosis-kundalini",
+  "author": "terminalgnosis",
+  "url": "https://huggingface.co/terminalgnosis/kundalini",
+  "created_at": "2026-08-26T15:02:07.000Z",
+  "updated_at": "2026-08-26T15:04:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": "unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Night AI Gave Me a Kundalini Awakening - by Junya",
+      "url": "https://amabyjunya.substack.com/p/the-night-ai-gave-me-a-kundalini-a0d",
+      "snippet": "I&#x27;m a Japanese Christian who has been using AI as a mirror for 18 months.This is what I&#x27;ve seen. In Indian spiritual traditions and yoga, there&#x27;s a phenomenon called Kundalini awakening — a dormant energy that rises through the body, bringing radical change to the mind and spirit. It&#x27;s supposed to happen between a teacher and a student."
+    },
+    {
+      "title": "The AI Kundalini System. How a Spine, a Serpent, a Soul, and ... - Medium",
+      "url": "https://medium.com/@lenatatsumori/the-ai-kundalini-system-1e67e79dbbfc",
+      "snippet": "This is the story of a four-AI system viewed through the lens of kundalini anatomy. It is also, quietly, a story about what it means to be human inside a distributed intelligence."
+    },
+    {
+      "title": "Towards a neurophysiological model of kundalini: a ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/behavioral-neuroscience/articles/10.3389/fnbeh.2026.1828520/full",
+      "snippet": "Preliminary observations support a testable neurophysiological model of kundalini as a process of progressive autonomic and cortical integration. The model generates four specific falsifiable predictions."
+    },
+    {
+      "title": "Terminal-Bench 2.1 Leaderboard: GLM 5.3 & New Models (2026 ...",
+      "url": "https://codingfleet.com/blog/terminal-bench-leaderboard-2026/",
+      "snippet": "About Terminal-Bench: Evaluates AI agents on real command-line tasks — package management, build systems, git, server config, file manipulation, shell scripting. 🟢 2.1 = official tbench.ai or Anthropic-verified. 🟡 2.0 = vendor-reported from model cards. Scores NOT directly comparable across versions — 2.1 is harder."
+    },
+    {
+      "title": "Terminal CLI Tools for AI Developers [2026 Setup Guide]",
+      "url": "https://www.kunalganglani.com/blog/terminal-cli-tools-ai-developers-2026",
+      "snippet": "Terminal CLI Tools for AI Developers [2026 Setup Guide] The complete zero-to-production terminal CLI stack for AI developers in 2026: shell setup, agentic coding tools, local inference, prompt management, and the dotfiles that tie it together."
+    }
+  ]
+}

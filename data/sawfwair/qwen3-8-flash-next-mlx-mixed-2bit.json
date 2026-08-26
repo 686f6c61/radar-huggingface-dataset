@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit",
+  "slug": "sawfwair-qwen3-8-flash-next-mlx-mixed-2bit",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit",
+  "created_at": "2026-08-26T14:25:06.000Z",
+  "updated_at": "2026-08-26T14:39:26.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "quantized",
+    "qwen4-exp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21824869779,
+  "parameters_human": "21.82B",
+  "storage_bytes": 73108145254,
+  "storage_human": "73.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit · Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit at main",
+      "url": "https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

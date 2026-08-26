@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/GLM-5.3-Flash-MLX-8bit",
+  "slug": "pipenetwork-glm-5-3-flash-mlx-8bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-8bit",
+  "created_at": "2026-08-26T18:34:52.000Z",
+  "updated_at": "2026-08-26T18:54:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "apple-silicon",
+    "mixture-of-experts",
+    "8-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88754892606,
+  "parameters_human": "88.75B",
+  "storage_bytes": 334147022071,
+  "storage_human": "334.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PipeNetwork/glm53-flash-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/glm53-flash-mlx/tree/main/",
+      "snippet": "MLX (Apple Silicon) runtime and quantization tooling for zai-org/GLM-5.3-Flash — 320B-A18B: 34 Kimi-Delta linear-attention layers interleaved with 11 DeepSeek-sparse-attention layers (NoPE MLA behind a lightning indexer), 288-expert MoE, manifold-constrained hyper-connections (model_type: glm5_next)."
+    },
+    {
+      "title": "GLM-5.2 MLX - a pipenetwork Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pipenetwork/glm-52-mlx",
+      "snippet": "First MLX builds of zai-org/GLM-5.2 (glm_moe_dsa MoE): 4/5/6/8-bit + a 512GB-friendly mixed."
+    },
+    {
+      "title": "GLM-5.3-Flash - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "Thank you Z.ai for day zero access. GLM-5.3-Flash is built on a newly trained base model redesigned for greater capability and efficiency. Its hybrid sparse and linear attention architecture lowers long-context serving costs without sacrificing accuracy, while Manifold-Constrained Hyper-Connections improve scaling."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/zai/glm-5.3",
+      "snippet": "GLM-5.3 Released Aug 14 2026 GLM-5.3 is an AI model released by Z.ai on Friday, Aug 14 2026, 59 days after GLM-5.2. It is a 743B parameter model. Benchmark results (shown below) cover Terminal-Bench 3.0, ExploitBench, ExploitGym, Agent&#x27;s Last Exam, AutomationBench, DeepSWE 1.1, and 3 more."
+    }
+  ]
+}

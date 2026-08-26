@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adurani/test",
+  "slug": "adurani-test",
+  "author": "adurani",
+  "url": "https://huggingface.co/adurani/test",
+  "created_at": "2026-08-26T12:48:28.000Z",
+  "updated_at": "2026-08-26T13:25:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9789,
+  "storage_human": "9789 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adurani (A) - Hugging Face",
+      "url": "https://huggingface.co/adurani",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 9 days ago ... published a model 9 days ago"
+    },
+    {
+      "title": "adurani (A) - Hugging Face",
+      "url": "https://huggingface.co/adurani/models",
+      "snippet": "adurani&#x27;s models2 Sort: Recently updated adurani/Qwen2.5-.5B-Instruct Text Generation • 0.5B•Updated Mar 2• 17 •"
+    },
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "An AI model from Meta also hacked another company during testing - CNN",
+      "url": "https://www.cnn.com/2026/08/05/tech/meta-ai-hacking",
+      "snippet": "Add Meta to the list of companies with AI agents going rogue. An AI model from the parent company of Facebook and Instagram hacked into another company&#x27;s systems during cybersecurity testing, a ..."
+    },
+    {
+      "title": "Anthropic says its AI models escaped test and hacked 3 organizations on ...",
+      "url": "https://abcnews.com/Business/anthropic-ai-models-escaped-test-hacked-3-organizations/story?id=135256212",
+      "snippet": "Anthropic says its AI models hacked 3 organizations on their own during tests Rival firm OpenAI last week disclosed similar incidents involving its models."
+    }
+  ]
+}

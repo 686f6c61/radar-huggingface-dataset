@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gadz777/gadz-instruct-lzg",
+  "slug": "gadz777-gadz-instruct-lzg",
+  "author": "gadz777",
+  "url": "https://huggingface.co/gadz777/gadz-instruct-lzg",
+  "created_at": "2026-08-26T11:21:45.000Z",
+  "updated_at": "2026-08-26T11:21:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Aligning language models to follow instructions | OpenAI",
+      "url": "https://openai.com/index/instruction-following/",
+      "snippet": "A byproduct of training our models to follow user instructions is that they may become more susceptible to misuse if instructed to produce unsafe outputs. Solving this requires our models to refuse certain instructions; doing this reliably is an important open research problem that we are excited to tackle."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=instruct",
+      "snippet": "Explore machine learning models. JetBrains/Mellum2-12B-A2.5B-Instruct-GGUF-Q4_K_M"
+    },
+    {
+      "title": "InstructLab",
+      "url": "https://instructlab.ai/",
+      "snippet": "To get started, download the ilab command line interface and a quantized version of the latest model from GitHub. You can experiment locally with synthetic data generation, model training, serving and chatting with the model to see if it produces the desired outputs."
+    },
+    {
+      "title": "Llama ベースモデル vs インストラクトモデル：その違いと活用方法を理解する - Novita",
+      "url": "https://blogs.novita.ai/ja/llama-base-vs-instruct-model-understanding-their-differences-and-applications/",
+      "snippet": "Llama ベースモデルとインストラクトモデルの違いを理解しましょう。言語理解とタスク実行における独自の用途と利点を ..."
+    }
+  ]
+}

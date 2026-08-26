@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dave1368/cluster-04-navier-stokes-pinn",
+  "slug": "dave1368-cluster-04-navier-stokes-pinn",
+  "author": "dave1368",
+  "url": "https://huggingface.co/dave1368/cluster-04-navier-stokes-pinn",
+  "created_at": "2026-08-26T17:04:40.000Z",
+  "updated_at": "2026-08-26T17:05:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "physics",
+    "pytorch",
+    "pinn",
+    "fluid-dynamics",
+    "navier-stokes",
+    "boundary-layer",
+    "scientific-ml",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272773,
+  "storage_human": "272773 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Using Physics-Informed neural networks for solving Navier-Stokes ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197625003471",
+      "snippet": "Physics-Informed Neural Networks (PINNs), which are deep neural networks where physical laws are directly embedded into the training process, offer a promising approach for solving Navier-Stokes equations, thus alleviating hardware and time requirements."
+    },
+    {
+      "title": "Using Physics-Informed neural networks for solving Navier-Stokes ...",
+      "url": "https://www.researchgate.net/publication/389642441_Using_Physics-Informed_neural_networks_for_solving_Navier-Stokes_equations_in_fluid_dynamic_complex_scenarios",
+      "snippet": "We prove rigorous bounds on the errors resulting from the approximation of the incompressible Navier-Stokes equations with (extended) physics-informed neural networks."
+    },
+    {
+      "title": "GitHub - Matt2371/PINN_navier_stokes: Implementing physics informed ...",
+      "url": "https://github.com/Matt2371/PINN_navier_stokes",
+      "snippet": "This project is about using Physics Informed Neural Networks (PINN) to solve unsteady turbulent flows using the Navier-Stokes equations. Specifically, given sparse observations (in this case, a mere 0.5% of the data), the goal is to reconstruct the entire flow field. I train and validate using direct numerical simulation (DNS) data from (Raissi et al., 2019), which models the wake past a ..."
+    },
+    {
+      "title": "PDF Apply Physics Informed Neural Network to Solve Navier-Stokes equations",
+      "url": "https://ren-bowen.github.io/assets/PINN.pdf",
+      "snippet": "Abstract This paper discusses the application of Physics Informed Neural Networks (PINNs) in solving two-dimensional steady-state Navier-Stokes equations, with a focus on three classic fluid flow problems: Poiseuille flow, Kovasznay flow, and cavity flow. To address issues such as slow conver-gence, low precision, and gradient vanishing or exploding encountered in solving the cavity flow ..."
+    },
+    {
+      "title": "Navier-Stokes Equations Solution Using Deep Learning",
+      "url": "https://github.com/kerimcaliskan182/NavierStokesEqSolnWithPINN",
+      "snippet": "This repository contains a Python implementation of a Deep Learning-based approach to solving the Navier-Stokes equations, which are fundamental in fluid dynamics. The solution utilizes a Physics-Informed Neural Network (PINN) to model fluid flow around a cylindrical obstacle, capturing complex flow patterns such as vortices."
+    }
+  ]
+}

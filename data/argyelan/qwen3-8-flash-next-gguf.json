@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "argyelan/Qwen3.8-Flash-Next-GGUF",
+  "slug": "argyelan-qwen3-8-flash-next-gguf",
+  "author": "argyelan",
+  "url": "https://huggingface.co/argyelan/Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-08-26T18:15:02.000Z",
+  "updated_at": "2026-08-26T18:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen4",
+    "day-0",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 104803386560,
+  "storage_human": "104.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal Mixture-of-Experts model released as an early preview of the architecture Qwen4 is being built on — the same role Qwen3-Next played for Qwen3.5, whose hybrid Gated DeltaNet + Gated Attention design then carried through the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. Qwen is publishing the architectural changes ahead of the full Qwen4 family so the ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next?file=Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
+      "snippet": "Qwen3.8 Flash Next is the first open model built on the Qwen4 architecture that you can run locally: a 125B Mixture-of-Experts model that activates 6B parameters per token and fits a 128 GB workstation or Mac at 4-bit quantization. This guide covers our Atomic Dynamic GGUF builds, how much memory each one needs, and the exact setup for both Atomic Chat and llama.cpp. Andrew Dyuzhov Share Table ..."
+    }
+  ]
+}

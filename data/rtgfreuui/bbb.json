@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rtgfreuui/bbb",
+  "slug": "rtgfreuui-bbb",
+  "author": "rtgfreuui",
+  "url": "https://huggingface.co/rtgfreuui/bbb",
+  "created_at": "2026-08-26T13:49:00.000Z",
+  "updated_at": "2026-08-26T13:49:00.000Z",
+  "license": "ms-pl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:ms-pl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rtgfreuui (Florence Okojie) - Hugging Face",
+      "url": "https://huggingface.co/rtgfreuui",
+      "snippet": "updated a model 26 days ago Organizations"
+    },
+    {
+      "title": "rtgfreuui (Florence Okojie) - Hugging Face",
+      "url": "https://huggingface.co/rtgfreuui/models",
+      "snippet": "rtgfreuui&#x27;s models1 Sort: Recently updated rtgfreuui/Florence_Okojie Summarization •Updated about 11 hours ago"
+    },
+    {
+      "title": "PDF Blood brain barrier permeability prediction with artificial ...",
+      "url": "https://link.springer.com/content/pdf/10.1007/s44163-025-00494-4.pdf",
+      "snippet": "Abstract Purpose The blood-brain barrier (BBB) is a major obstacle in neurological drug development, restricting most drugs from entering the brain. To address this, computational models leveraging Artificial Intelligence (AI) and machine learning (ML) have been explored for predicting BBB permeability. This meta-review explores various computational strategies leveraging AI and ML to ..."
+    },
+    {
+      "title": "BBB | Better Business Bureau",
+      "url": "https://www.bbb.org/",
+      "snippet": "BBB helps consumers and businesses in the United States and Canada. Find trusted BBB Accredited Businesses. Get BBB Accredited. File a complaint, leave a review, report a scam."
+    },
+    {
+      "title": "AI for blood-brain barrier permeability prediction: Methods and CNS ...",
+      "url": "https://www.drugdiscoverynews.com/ai-for-blood-brain-barrier-permeability-prediction-methods-and-cns-drug-design-implications-17362",
+      "snippet": "That structural reality has made blood-brain barrier permeability prediction one of the more reliable endpoints within AI-powered ADMET prediction, and it complements machine learning drug metabolism prediction as a foundational input into CNS-focused lead optimization."
+    }
+  ]
+}

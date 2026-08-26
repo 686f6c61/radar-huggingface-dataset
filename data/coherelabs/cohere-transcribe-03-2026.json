@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "CohereLabs/cohere-transcribe-03-2026",
+  "slug": "coherelabs-cohere-transcribe-03-2026",
+  "author": "CohereLabs",
+  "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+  "created_at": "2026-03-24T10:35:54.000Z",
+  "updated_at": "2026-06-10T15:46:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "de",
+    "el",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pl",
+    "pt",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "audio",
+    "hf-asr-leaderboard",
+    "speech-recognition",
+    "transcription",
+    "custom_code",
+    "ar",
+    "de",
+    "el",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pl",
+    "pt",
+    "vi",
+    "zh",
+    "doi:10.57967/hf/8653",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1092,
+  "downloads_30d": 507746,
+  "trending_score": 0,
+  "parameters": 2065804048,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4132801897,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CohereLabs/cohere-transcribe-03-2026 · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+      "snippet": "Cohere Transcribe demonstrates best-in-class transcription accuracy in 14 languages. As a dedicated speech recognition model, it is also efficient, benefitting from a real-time factor up to three times faster than that of other, dedicated ASR models in the same size range."
+    },
+    {
+      "title": "GitHub - jasonclaw001/cohere-transcribe-03-2026: CohereLabs cohere ...",
+      "url": "https://github.com/jasonclaw001/cohere-transcribe-03-2026",
+      "snippet": "CohereLabs/cohere-transcribe-03-2026 exposes a single model.transcribe () method that automatically handles long-form audio chunking and exposes parameters to facilitate efficient inference. It is recommended that you let the transcribe method handle batching for you. This implementation is optimized for offline inference: for online inference, see the vLLM integration example below."
+    },
+    {
+      "title": "Cohere Transcribe: Open-Source Speech Recognition | Cohere",
+      "url": "https://cohere.com/blog/transcribe",
+      "snippet": "Cohere is announcing Transcribe, a state-of-the-art automatic speech recognition (ASR) model that is open source and available today for download. Speech is rapidly becoming a core modality for AI-enabled workloads and automations — from meeting transcription and speech analytics to real-time customer support agents."
+    },
+    {
+      "title": "Cohere Transcribe | Cohere",
+      "url": "https://docs.cohere.com/docs/transcribe",
+      "snippet": "About the Cohere Transcribe model Cohere Transcribe is an open source research release of a 2B parameters dedicated audio-in, text-out, automatic speech recognition (ASR) model. The model supports a total of 14 languages. Model details Input: Audio waveform Output: Text Model name: cohere-transcribe-03-2026 Languages covered: English, German, French, Italian, Spanish, Portuguese, Greek, Dutch ..."
+    },
+    {
+      "title": "README.md · CohereLabs/cohere-transcribe-03-2026 at refs/pr/35",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026/blob/refs%2Fpr%2F35/README.md",
+      "snippet": "CohereLabs / cohere-transcribe-03-2026 like 1.09k Follow Cohere Labs 3.55k Automatic Speech Recognition Transformers Safetensors 14 languages doi:10.57967/hf/8653 cohere_asr audio hf-asr-leaderboard speech-recognition transcription custom_code Eval Results License:apache-2.0 Model card FilesFiles and versions xet Community 47 Deploy Copy to ..."
+    }
+  ]
+}

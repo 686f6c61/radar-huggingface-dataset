@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "armanakbari4/fastwam-ur3-svdquant-nvfp4",
+  "slug": "armanakbari4-fastwam-ur3-svdquant-nvfp4",
+  "author": "armanakbari4",
+  "url": "https://huggingface.co/armanakbari4/fastwam-ur3-svdquant-nvfp4",
+  "created_at": "2026-08-26T17:38:16.000Z",
+  "updated_at": "2026-08-26T17:44:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "quantization",
+    "nvfp4",
+    "fp4",
+    "w4a4",
+    "svdquant",
+    "world-action-model",
+    "fastwam",
+    "dataset:armanakbari4/ur3-3task-lerobot",
+    "base_model:armanakbari4/fastwam-ur3-3task-10k",
+    "base_model:finetune:armanakbari4/fastwam-ur3-3task-10k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3793023059,
+  "storage_human": "3.8 GB",
+  "base_model": "armanakbari4/fastwam-ur3-3task-10k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arashakb/FastWAM_UR3 · Hugging Face",
+      "url": "https://huggingface.co/arashakb/FastWAM_UR3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "armanakbari4/fastwam-ur3-3task · Hugging Face",
+      "url": "https://huggingface.co/armanakbari4/fastwam-ur3-3task",
+      "snippet": "armanakbari4 / fastwam-ur3-3task like 0 Robotics world-action-model fastwam real-robot ur3 License:mit Model card FilesFiles and versions xet Community Copy to bucket new FastWAM UR3 fine-tune (drawer + blue_basket + stacking_cubes, 3-task joint)"
+    },
+    {
+      "title": "GitHub - dbw6/svdquant: [ICLR2025] SVDQuant: Absorbing Outliers by Low ...",
+      "url": "https://github.com/dbw6/svdquant",
+      "snippet": "SVDQuant is a post-training quantization technique for 4-bit weights and activations that well maintains visual fidelity. On 12B FLUX.1-dev, it achieves 3.6× memory reduction compared to the BF16 model. By eliminating CPU offloading, it offers 8.7× speedup over the 16-bit model when on a 16GB laptop 4090 GPU, 3× faster than the NF4 W4A16 ..."
+    },
+    {
+      "title": "[2411.05007] SVDQuant: Absorbing Outliers by Low-Rank Components for 4 ...",
+      "url": "https://arxiv.org/abs/2411.05007",
+      "snippet": "We reduce the memory usage for the 12B FLUX.1 models by 3.5 ×, achieving 3.0 × speedup over the 4-bit weight-only quantization (W4A16) baseline on the 16GB laptop 4090 GPU with INT4 precision. On the latest RTX 5090 desktop with Blackwell architecture, we achieve a 3.1 × speedup compared to the W4A16 model using NVFP4 precision."
+    },
+    {
+      "title": "GitHub - nunchaku-ai/nunchaku: [ICLR2025 Spotlight] SVDQuant: Absorbing ...",
+      "url": "https://github.com/Nunchaku-AI/Nunchaku",
+      "snippet": "SVDQuant reduces the 12B FLUX.1 model size by 3.6× and cuts the 16-bit model&#x27;s memory usage by 3.5×. With Nunchaku, our INT4 model runs 3.0× faster than the NF4 W4A16 baseline on both desktop and laptop NVIDIA RTX 4090 GPUs. Notably, on the laptop 4090, it achieves a total 10.1× speedup by eliminating CPU offloading. Our NVFP4 model is also 3.1× faster than both BF16 and NF4 on the RTX ..."
+    }
+  ]
+}

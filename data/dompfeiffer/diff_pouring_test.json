@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dompfeiffer/diff_pouring_test",
+  "slug": "dompfeiffer-diff_pouring_test",
+  "author": "dompfeiffer",
+  "url": "https://huggingface.co/dompfeiffer/diff_pouring_test",
+  "created_at": "2026-08-26T18:00:25.000Z",
+  "updated_at": "2026-08-26T18:00:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:dompfeiffer/diff_pouring_setup_1",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 266623358,
+  "parameters_human": "266.6M",
+  "storage_bytes": 1066526248,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dompfeiffer/diff_pouring · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/dompfeiffer/diff_pouring",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dompfeiffer (Dominik Pfeiffer) - Hugging Face",
+      "url": "https://huggingface.co/dompfeiffer/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 5 hours ago ... published a dataset about 5 hours ago"
+    },
+    {
+      "title": "GitHub - faruklmu17/dom-diff-ai-dataset-tool",
+      "url": "https://github.com/faruklmu17/dom-diff-ai-dataset-tool",
+      "snippet": "🧠 DOM Diff AI Dataset & Tool A professional-grade toolkit and dataset generator for DOM change detection, UI regression analysis, and AI model training. This repository contains the open-source tooling used to generate a high-quality, paid DOM Diff dataset hosted on Hugging Face."
+    },
+    {
+      "title": "Flow Matching and Diffusion Models — 2026 Version",
+      "url": "https://diffusion.csail.mit.edu/2026/index.html",
+      "snippet": "Diffusion and flow models are the cutting edge generative AI methods for images, videos, and many other data types. This course offers a comprehensive introduction for students and researchers seeking a deeper understanding of these models. Lectures will teach the core mathematical concepts necessary to understand diffusion models, including stochastic differential equations and the Fokker ..."
+    },
+    {
+      "title": "GitHub - ai-dynamo/aiperf: AIPerf is a comprehensive benchmarking tool ...",
+      "url": "https://github.com/ai-dynamo/aiperf",
+      "snippet": "AIPerf is a comprehensive benchmarking tool that measures the performance of generative AI models served by your preferred inference solution. It provides detailed metrics using a command line display as well as extensive benchmark performance reports."
+    }
+  ]
+}

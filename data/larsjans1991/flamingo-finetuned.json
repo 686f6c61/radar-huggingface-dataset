@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LarsJans1991/flamingo-finetuned",
+  "slug": "larsjans1991-flamingo-finetuned",
+  "author": "LarsJans1991",
+  "url": "https://huggingface.co/LarsJans1991/flamingo-finetuned",
+  "created_at": "2026-08-26T15:48:54.000Z",
+  "updated_at": "2026-08-26T15:49:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mlfoundations/open_flamingo: An open-source framework for ...",
+      "url": "https://github.com/mlfoundations/open_flamingo",
+      "snippet": "Paper | Blog posts: 1, 2 | Demo Welcome to our open source implementation of DeepMind&#x27;s Flamingo! In this repository, we provide a PyTorch implementation for training and evaluating OpenFlamingo models. If you have any questions, please feel free to open an issue. We also welcome contributions!"
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    },
+    {
+      "title": "open_flamingo/README.md · openflamingo/OpenFlamingo at main",
+      "url": "https://huggingface.co/spaces/openflamingo/OpenFlamingo/blob/main/open_flamingo/README.md",
+      "snippet": "Model architecture OpenFlamingo combines a pretrained vision encoder and a language model using cross attention layers. The model architecture is shown below. Credit: Flamingo Usage Initializing an OpenFlamingo model We support pretrained vision encoders from the OpenCLIP package, which includes OpenAI&#x27;s pretrained models."
+    },
+    {
+      "title": "openflamingo/OpenFlamingo-9B-vitl-mpt7b · Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b",
+      "snippet": "OpenFlamingo is an open source implementation of DeepMind&#x27;s Flamingo models. This 9B-parameter model uses a CLIP ViT-L/14 vision encoder and MPT-7B language model."
+    },
+    {
+      "title": "Medium - blog.usee.ai",
+      "url": "https://blog.usee.ai/fine-tuning-openflamingo-396b80d3e470",
+      "snippet": "By minimizing the need for large-scale annotations and task-specific retraining, Flamingo represents a significant advancement in visual language model efficiency. Its ability to learn quickly from limited examples brings AI closer to human-like adaptability, enabling a wider range of real-world applications with greater ease and accuracy."
+    }
+  ]
+}

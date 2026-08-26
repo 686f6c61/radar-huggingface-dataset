@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sgouet/dog-breeds-multiclass-image-classification-with-vit",
+  "slug": "sgouet-dog-breeds-multiclass-image-classification-with-vit",
+  "author": "sgouet",
+  "url": "https://huggingface.co/sgouet/dog-breeds-multiclass-image-classification-with-vit",
+  "created_at": "2026-08-26T13:35:51.000Z",
+  "updated_at": "2026-08-26T13:35:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:2010.11929",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85890936,
+  "parameters_human": "85.9M",
+  "storage_bytes": 687215861,
+  "storage_human": "687 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dog-breeds-multiclass-image-classification-with-vit",
+      "url": "https://huggingface.co/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit",
+      "snippet": "This model is finetuned using the Google Vision Transformer (vit-base-patch16-224-in21k) on the Stanford Dogs dataset in Kaggle to classify dog images into 120 types of dog breeds."
+    },
+    {
+      "title": "wesleyacheng/dog-breeds-multiclass-image-classification-with-vit - GitHub",
+      "url": "https://github.com/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit",
+      "snippet": "This model is finetuned using the Google Vision Transformer (vit-base-patch16-224-in21k) on the Stanford Dogs dataset in Kaggle to classify dog images into 120 dog breeds."
+    },
+    {
+      "title": "wesleyacheng/dog-breeds-multiclass-image-classification-with-vit - AI ...",
+      "url": "https://zoo.bimant.com/model/242659",
+      "snippet": "Model Description This model is finetuned using the Google Vision Transformer (vit-base-patch16-224-in21k) on the Stanford Dogs dataset in Kaggle to classify dog images into 120 types of dog breeds."
+    },
+    {
+      "title": "dog-breeds-multiclass-image-classification-with-vit",
+      "url": "https://huggingface.co/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dog-breeds-multiclass-image-classification-with-vit/README.md ... - GitHub",
+      "url": "https://github.com/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit/blob/main/README.md",
+      "snippet": "Model Description This model is finetuned using the Google Vision Transformer (vit-base-patch16-224-in21k) on the Stanford Dogs dataset in Kaggle to classify dog images into 120 dog breeds."
+    }
+  ]
+}

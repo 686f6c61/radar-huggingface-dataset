@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nryadav41/dino-experiment",
+  "slug": "nryadav41-dino-experiment",
+  "author": "Nryadav41",
+  "url": "https://huggingface.co/Nryadav41/dino-experiment",
+  "created_at": "2026-08-26T14:35:02.000Z",
+  "updated_at": "2026-08-26T14:35:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "DINOv3 marks a new milestone in self-supervised training at scale. It builds upon the scaling progress of DINOv2, further increasing the model size x6, and training data x12. DINO Initial research proof-of-concept, with 80M-parameter models trained on 1M images. Read the research paper Download the model"
+    },
+    {
+      "title": "DINO (computer vision) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/dino_model",
+      "snippet": "DINO (self- DI stillation with NO labels) is a family of self-supervised learning methods for computer vision from Meta AI that trains Vision Transformers (ViTs) on unlabeled images and produces general-purpose visual features rivaling or surpassing those learned with human-labeled supervision [1] [2]."
+    },
+    {
+      "title": "DINO by Meta: How AI Learns Without Labels (Self-Supervised ... - Medium",
+      "url": "https://medium.com/@jay9122/dino-by-meta-how-ai-learns-without-labels-self-supervised-learning-096dc4b21887",
+      "snippet": "Evolution Of Dino Model Family. Created with Gemini Nano Banana. DINO (self- DI stillation with NO labels) Family is the Pioneer of the Self-Supervised Learning for Image Models. Meta AI released ..."
+    },
+    {
+      "title": "Unlocking the DINO Model for Self-Supervised Learning",
+      "url": "https://www.labellerr.com/blog/unlocking-the-power-of-self-supervised-learning-in-computer-vision-with-dino/",
+      "snippet": "Discover how the DINO model transforms computer vision with self-supervised learning. Unlock its potential for your AI projects."
+    },
+    {
+      "title": "DINO - A Foundation Model for Computer Vision - Towards Data Science",
+      "url": "https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/",
+      "snippet": "DINO was released on arxiv in April 2021. So, one month before it was actually presented on a conference. This would mean they only had 5 months if they had started right away to come up with the project&#x27;s idea, compile a team, lay out the theoretical foundation, train the model, perform experiments and ablations, and write the paper."
+    }
+  ]
+}

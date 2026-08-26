@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF",
+  "slug": "agentionai-qwen3-8-flash-next-rocmfp4-fast-gguf",
+  "author": "agentionai",
+  "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF",
+  "created_at": "2026-08-26T16:11:47.000Z",
+  "updated_at": "2026-08-26T16:17:17.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "vulkan",
+    "strix-halo",
+    "qwen4exp",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen 3.8 27B ROCmFP4_FAST on AMD Strix Halo (Ryzen AI Max+ 395) - GitHub",
+      "url": "https://github.com/julianmb/q38rocm",
+      "snippet": "High-performance, memory-optimized deployment of Qwen 3.8 27B custom-engineered for AMD Strix Halo (Ryzen AI Max+ 395 / Radeon 8060S) APUs. 📦 Hugging Face Model Weights: julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF ⚡ File:Qwen3.8-27B-ROCmFP4-FAST.gguf (13.55 GiB | 4.26 bpw) 🔒 SHA256 ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal Mixture-of-Experts model released as an early preview of the architecture Qwen4 is being built on — the same role Qwen3-Next played for Qwen3.5, whose hybrid Gated DeltaNet + Gated Attention design then carried through the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. Qwen is publishing the architectural changes ahead of the full Qwen4 family so the ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF · Hugging Face",
+      "url": "https://huggingface.co/agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF",
+      "snippet": "Qwen3.8-27B DFlash2 draft model, ROCmFP4-FAST GGUF A 4.25 bpw ROCmFP4 requantisation of z-lab/Qwen3.8-27B-DFlash2, for use as a speculative decoding sidecar with a Qwen3.8-27B target."
+    }
+  ]
+}

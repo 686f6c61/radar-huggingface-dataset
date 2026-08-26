@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-azurite2",
+  "slug": "tohirju-sl-azurite2",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-azurite2",
+  "created_at": "2026-08-26T17:46:05.000Z",
+  "updated_at": "2026-08-26T17:47:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 7359259296,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju (Tohir Saidzoda) - Hugging Face",
+      "url": "https://huggingface.co/Tohirju",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 3 days ago ... updated a model 13 days ago"
+    },
+    {
+      "title": "azurite2 · GitHub",
+      "url": "https://github.com/azurite2",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "OSS - a Tohirju Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Tohirju/oss",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Tohirju"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

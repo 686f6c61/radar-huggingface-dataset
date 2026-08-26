@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nikhildasner/multitask-small",
+  "slug": "nikhildasner-multitask-small",
+  "author": "nikhildasner",
+  "url": "https://huggingface.co/nikhildasner/multitask-small",
+  "created_at": "2026-08-26T11:49:25.000Z",
+  "updated_at": "2026-08-26T11:49:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "Deep multi-task learning: a review of concepts, methods, and ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s41060-025-00892-y",
+      "snippet": "Multi-task learning (MTL) is a machine learning method that has witnessed exponential traction due to its ability to solve multiple tasks simultaneously. Joining training-related tasks in MTL improves both predictive performance and data efficiency. The shared knowledge across tasks enables MTL models to outperform traditional single-task models. The effectiveness of MTL depends on several ..."
+    },
+    {
+      "title": "Multi-task recommenders - TensorFlow",
+      "url": "https://www.tensorflow.org/recommenders/examples/multitask",
+      "snippet": "A multi-task model There are two critical parts to multi-task recommenders: They optimize for two or more objectives, and so have two or more losses. They share variables between the tasks, allowing for transfer learning."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=multitask-training",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: multitask-training Clear all"
+    }
+  ]
+}

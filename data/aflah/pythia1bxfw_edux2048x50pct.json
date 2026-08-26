@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Pythia1BxFW_Edux2048x50pct",
+  "slug": "aflah-pythia1bxfw_edux2048x50pct",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Pythia1BxFW_Edux2048x50pct",
+  "created_at": "2026-08-26T14:53:46.000Z",
+  "updated_at": "2026-08-26T14:57:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10521162765,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partial RoPE Analysis - a aflah Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aflah/partial-rope-analysis",
+      "snippet": "Models trained via GPT-NeoX for studying Partial RoPE."
+    },
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 3 minutes ago ... updated a model 3 minutes ago"
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "AI Model Release Tracker: New LLM Launches, Updated Weekly | AI Flash ...",
+      "url": "https://aiflashreport.com/model-releases.html",
+      "snippet": "Live tracker of every new AI model release - GPT, Claude, Gemini, Llama, open-weights. Launch dates, context windows, benchmarks. Updated weekly."
+    },
+    {
+      "title": "Pythia (EleutherAI research model suite) | CenterConsulting",
+      "url": "https://www.centerconsulting.com/ai-library/models/pythia",
+      "snippet": "Pythia is a suite of 16 large language models released by EleutherAI in 2023, designed not as a product but as a controlled scientific instrument. Documented in \"Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling\" (submitted April 3, 2023, by Stella Biderman and colleagues), the models range from 70 million to 12 billion parameters, and crucially every model ..."
+    }
+  ]
+}

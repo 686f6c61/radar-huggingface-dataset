@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "guicybercode/br-sovereign-llm-smoke",
+  "slug": "guicybercode-br-sovereign-llm-smoke",
+  "author": "guicybercode",
+  "url": "https://huggingface.co/guicybercode/br-sovereign-llm-smoke",
+  "created_at": "2026-08-26T16:28:23.000Z",
+  "updated_at": "2026-08-26T17:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "brazilian-portuguese",
+    "checkpoint-recovery",
+    "non-scientific",
+    "smoke-test",
+    "pt",
+    "dataset:guicybercode/br-sovereign-llm-corpus",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149696,
+  "parameters_human": "149696",
+  "storage_bytes": 600936,
+  "storage_human": "600936 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM/AI_Agent/sovereign/code at main · alanshlam/LLM · GitHub",
+      "url": "https://github.com/alanshlam/LLM/tree/main/AI_Agent/sovereign/code",
+      "snippet": "AI-Agents & LLM-Powered Knowledge Base . Contribute to alanshlam/LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "guicybercode (Guilherme Monteiro) - Hugging Face",
+      "url": "https://huggingface.co/guicybercode",
+      "snippet": "AI & ML interests smol-llms, llm-training, chinese-history, brazilian-history, production-ml, terminal-ui, data-curation, edge-ai"
+    },
+    {
+      "title": "GitHub - copaeks/SovereignLM: SovereignLM - Privacy-first AI studio ...",
+      "url": "https://github.com/copaeks/SovereignLM",
+      "snippet": "SovereignLM A privacy-first, feature-rich desktop application for chatting with local and cloud Large Language Models (LLMs). Built with Electron + React + TypeScript frontend and Python + FastAPI backend."
+    },
+    {
+      "title": "guicybercode - YouTube",
+      "url": "https://www.youtube.com/@guicybercode",
+      "snippet": "llms locais, rust, linux e hardware que eu controlo e as histórias dos brasileiros que construíram a computação. contribuidor do ollama, qwen e nixos. tech lead em são paulo. aqui eu construo ..."
+    },
+    {
+      "title": "Sovereign Large Language Models: Advantages, Strategy and Regulations",
+      "url": "https://arxiv.org/html/2503.04745v1",
+      "snippet": "The authors primarily looked at high and middle-income countries, their independent approaches to creating sovereign large language models and AI development in general, and international cooperation programs between them. More than 18 macroregions were analyzed, covering about 85% of the world&#x27;s population."
+    }
+  ]
+}

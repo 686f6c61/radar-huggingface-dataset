@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OrionKhanal/turn-detector-distilbert",
+  "slug": "orionkhanal-turn-detector-distilbert",
+  "author": "OrionKhanal",
+  "url": "https://huggingface.co/OrionKhanal/turn-detector-distilbert",
+  "created_at": "2026-08-26T16:38:13.000Z",
+  "updated_at": "2026-08-26T16:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Identifying artificial intelligence-generated content using the ...",
+      "url": "https://www.semanticscholar.org/paper/Identifying-artificial-intelligence-generated-using-Khan-Naz/aae940212d99378a530d5f8f94f9e3aa006545d7",
+      "snippet": "Experimental analysis demonstrated that the proposed DistilBERT-based model achieved a superior predictive accuracy of 98%, outperforming traditional deep learning models, such as long short-term memory (LSTM) with GloVe embeddings, which achieved 93% accuracy."
+    },
+    {
+      "title": "PDF Identifying artificial intelligence-generated content using the ...",
+      "url": "https://www.nature.com/articles/s41598-025-08208-7.pdf",
+      "snippet": "A state-of-the-art transformer-based model (DistilBERT) is applied, and its attention mechanism is used to effectively capture global dependencies and significant contextual patterns in textual ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/distilbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    },
+    {
+      "title": "PuristanLabs1/urdu-turn-detection-distilbert · Hugging Face",
+      "url": "https://huggingface.co/PuristanLabs1/urdu-turn-detection-distilbert",
+      "snippet": "Thus, this model complements VAD: VAD → detects audio boundaries Turn Detection → detects linguistic boundaries It is finetuned on a 10,000 sample Urdu dataset and optimized for real-time deployment in conversational AI, ASR pipelines, and voice assistants."
+    },
+    {
+      "title": "DistilBERT — transformers 3.1.0 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v3.1.0/model_doc/distilbert.html",
+      "snippet": "DistilBERT ¶ Overview ¶ The DistilBERT model was proposed in the blog post Smaller, faster, cheaper, lighter: Introducing DistilBERT, a distilled version of BERT, and the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. DistilBERT is a small, fast, cheap and light Transformer model trained by distilling ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/grove-bay-41",
+  "slug": "models4world-grove-bay-41",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/grove-bay-41",
+  "created_at": "2026-08-26T13:36:28.000Z",
+  "updated_at": "2026-08-26T13:38:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11226685309,
+  "storage_human": "11.2 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world/models",
+      "snippet": "User profile of models4world on Hugging Face"
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "Free Roblox Models Download | RobloxBay",
+      "url": "https://robloxbay.com/roblox-models",
+      "snippet": "Download free Roblox models, scripts, maps, UI kits, and Studio plugins. Community-shared, moderated, DMCA-compliant developer assets."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

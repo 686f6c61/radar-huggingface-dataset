@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kmirain/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "kmirain-rl_course_vizdoom_health_gathering_supreme",
+  "author": "kmirain",
+  "url": "https://huggingface.co/kmirain/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-08-26T12:04:26.000Z",
+  "updated_at": "2026-08-26T12:12:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105768718,
+  "storage_human": "106 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liamleirs/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/liamleirs/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "Instructions to use liamleirs/rl_course_vizdoom_health_gathering_supreme with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sample-factory How to use liamleirs/rl_course_vizdoom_health_gathering_supreme with sample-factory:"
+    },
+    {
+      "title": "Cloud1989/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/Cloud1989/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "GitHub - renhanfei/vizdoom_health_gathering",
+      "url": "https://github.com/RENHANFEI/vizdoom_health_gathering",
+      "snippet": "Contribute to renhanfei/vizdoom_health_gathering development by creating an account on GitHub."
+    },
+    {
+      "title": "-rl_course_vizdoom_health_gathering_supreme-/README.md at main ... - GitHub",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-/blob/main/README.md",
+      "snippet": "A(n) APPO model trained on the doom_health_gathering_supreme environment. - HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-"
+    },
+    {
+      "title": "unit8_part2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit8/unit8_part2.ipynb",
+      "snippet": "To validate this hands-on for the certification process, you need to push one model: doom_health_gathering_supreme get a result of >= 5. To find your result, go to the leaderboard and find your model, the result = mean_reward - std of reward If you don&#x27;t find your model, go to the bottom of the page and click on the refresh button For more information about the certification process, check ..."
+    }
+  ]
+}

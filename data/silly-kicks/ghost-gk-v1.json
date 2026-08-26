@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "silly-kicks/ghost-gk-v1",
+  "slug": "silly-kicks-ghost-gk-v1",
+  "author": "silly-kicks",
+  "url": "https://huggingface.co/silly-kicks/ghost-gk-v1",
+  "created_at": "2026-08-26T14:53:24.000Z",
+  "updated_at": "2026-08-26T18:34:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "silly-kicks",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "silly-kicks",
+    "sports-analytics",
+    "soccer",
+    "goalkeeper",
+    "conditional-density-estimation",
+    "tracking-data",
+    "ghosting",
+    "tabular-regression",
+    "en",
+    "arxiv:2406.17220",
+    "arxiv:1804.05753",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2393193,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "silly-kicks/ghost-gk-v1 · Hugging Face",
+      "url": "https://huggingface.co/silly-kicks/ghost-gk-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "silly-kicks ( (Ministry of) Silly Kicks) - Hugging Face",
+      "url": "https://huggingface.co/silly-kicks",
+      "snippet": "Soccer analytics library — multi-provider SPADL + tracking conversion, VAEP/xT valuation, and spatial features (pitch control, cover shadows, player influence)"
+    },
+    {
+      "title": "silly-kicks · PyPI",
+      "url": "https://pypi.org/project/silly-kicks/",
+      "snippet": "Silly Kicks Comic by NanoBanana — inspired by Monty Python&#x27;s Ministry of Silly Walks The Ministry requires that all football actions be properly classified and valued. silly-kicks is a Python library for objectively quantifying the impact of individual actions performed by football players using event stream data."
+    },
+    {
+      "title": "silly-kicks 4.73.0 on PyPI - Libraries.io",
+      "url": "https://libraries.io/pypi/silly-kicks",
+      "snippet": "GKDV -- GK Deterrent Value: counterfactual valuation of keeper positioning against a league-average \"ghost\" keeper in the same frame state Causal -- a propensity-score matching harness (ATT/ATNT with Abadie-Imbens standard errors) used to validate feature claims rather than assert them."
+    },
+    {
+      "title": "karsten-s-nielsen/silly-kicks - GitHub",
+      "url": "https://github.com/karsten-s-nielsen/silly-kicks",
+      "snippet": "Comic by NanoBanana — inspired by Monty Python&#x27;s Ministry of Silly Walks The Ministry requires that all football actions be properly classified and valued. silly-kicks is a Python library for objectively quantifying the impact of individual actions performed by football players using event stream data. It is an independently maintained successor to socceraction, originally developed by Tom ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hallucinatie/2daction-stage2-checkpoint-66000",
+  "slug": "hallucinatie-2daction-stage2-checkpoint-66000",
+  "author": "Hallucinatie",
+  "url": "https://huggingface.co/Hallucinatie/2daction-stage2-checkpoint-66000",
+  "created_at": "2026-08-26T17:57:05.000Z",
+  "updated_at": "2026-08-26T17:58:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "2daction",
+    "minetest",
+    "video-generation",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 555797900,
+  "parameters_human": "555.8M",
+  "storage_bytes": 2602582288,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=2daction",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: 2daction Clear all"
+    },
+    {
+      "title": "Latest AI Hallucination Rates & Benchmarks for New AI Models August 2026",
+      "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
+      "snippet": "Updated August 2026 - AI hallucination rates and benchmarks for latest AI models. New numbers from Vectara, AA-Omniscience, FACTS, 50+ sources and our own data."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - vectara/hallucination-leaderboard: Leaderboard Comparing LLM ...",
+      "url": "https://github.com/vectara/hallucination-leaderboard/",
+      "snippet": "Leaderboard Comparing LLM Performance at Producing Hallucinations when Summarizing Short Documents - vectara/hallucination-leaderboard"
+    }
+  ]
+}

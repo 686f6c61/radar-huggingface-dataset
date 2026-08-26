@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PoHao/opt2.7-fc1-predictor",
+  "slug": "pohao-opt2-7-fc1-predictor",
+  "author": "PoHao",
+  "url": "https://huggingface.co/PoHao/opt2.7-fc1-predictor",
+  "created_at": "2026-08-26T15:51:45.000Z",
+  "updated_at": "2026-08-26T16:00:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-inference",
+    "activation-predictor",
+    "opt",
+    "base_model:facebook/opt-2.7b",
+    "base_model:finetune:facebook/opt-2.7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 838925008,
+  "storage_human": "839 MB",
+  "base_model": "facebook/opt-2.7b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/opt-2.7b · Hugging Face",
+      "url": "https://huggingface.co/facebook/opt-2.7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "f1-predictor/README.md at main · 1talhazia/f1-predictor",
+      "url": "https://github.com/1talhazia/f1-predictor/blob/main/README.md",
+      "snippet": "Formula 1 prediction system built using AI/ML. Contribute to 1talhazia/f1-predictor development by creating an account on GitHub."
+    },
+    {
+      "title": "nathanaelhub/f1-race-predictor: ️ F1 AI Race Predictor - GitHub",
+      "url": "https://github.com/nathanaelhub/f1-race-predictor",
+      "snippet": "🏎️ F1 Race Predictor 🏁 Try the live demo A machine-learning model that predicts Formula 1 finishing order, wrapped in an interactive F1-broadcast-style interface. Pick a circuit, simulate a qualifying order, and watch a model trained on 2014-2026 race data rank the grid with calibrated win and podium probabilities."
+    },
+    {
+      "title": "AI in the Fast Lane: Predicting F1 With PyTorch - ITNEXT",
+      "url": "https://itnext.io/ai-in-the-fast-lane-predicting-f1-with-pytorch-6b844df7e79e",
+      "snippet": "7. Model Training & Evaluation: Train the model using the training set, validate its performance, and test its accuracy. 8. Predictive Analysis: Start with predicting the next race winner and gradually progress to predicting the top 10. 9. Model Refinement: Iteratively fine-tune the model based on prediction feedback."
+    },
+    {
+      "title": "OPT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/opt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

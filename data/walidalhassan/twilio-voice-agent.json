@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "WalidAlHassan/twilio-voice-agent",
+  "slug": "walidalhassan-twilio-voice-agent",
+  "author": "WalidAlHassan",
+  "url": "https://huggingface.co/WalidAlHassan/twilio-voice-agent",
+  "created_at": "2026-08-26T16:22:40.000Z",
+  "updated_at": "2026-08-26T16:26:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Virtual Agent - Twilio",
+      "url": "https://www.twilio.com/docs/voice/virtual-agent",
+      "snippet": "Virtual Agent Learn how to integrate Twilio Voice with Google Dialogflow CX to provide callers with conversational AI experiences through an Interactive Voice Response (IVR). Twilio handles the telephony while Dialogflow manages the conversational logic, intents, and agent responses. You can use this guide to create AI agents."
+    },
+    {
+      "title": "Build An AI Phone Agent With Twilio Conversation Relay",
+      "url": "https://www.twilio.com/en-us/blog/developers/tutorials/product/ai-phone-agent-twilio-conversation-relay",
+      "snippet": "Learn to build a voice AI agent with Python, Twilio&#x27;s Conversation Relay, and OpenAI. Create low-latency, natural phone support with real-time tool calling."
+    },
+    {
+      "title": "WalidAlHassan/AI-AGENTS · Hugging Face",
+      "url": "https://huggingface.co/WalidAlHassan/AI-AGENTS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hassan1030/ai-voice-agent",
+      "url": "https://github.com/hassan1030/ai-voice-agent",
+      "snippet": "AI Voice Agent 🎙️ This is an AI-powered voice assistant that answers phone calls using OpenAI&#x27;s real-time API and LiveKit for low-latency streaming. It&#x27;s built in Python and integrates with Twilio for telephony."
+    },
+    {
+      "title": "GitHub - pBread/twilio-agentic-voice-assistant: Agentic voice AI using ...",
+      "url": "https://github.com/pBread/twilio-agentic-voice-assistant",
+      "snippet": "This repo demonstrates how to facilitate realtime communication between an AI assistant and a contact center agent. This is possible with many contact center applications. This one happens to use Twilio Flex. You will need to create (recommended) or use an existing Twilio Flex Account. You can ..."
+    }
+  ]
+}

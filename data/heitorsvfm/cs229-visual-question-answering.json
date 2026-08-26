@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "heitorsvfm/cs229-visual-question-answering",
+  "slug": "heitorsvfm-cs229-visual-question-answering",
+  "author": "heitorsvfm",
+  "url": "https://huggingface.co/heitorsvfm/cs229-visual-question-answering",
+  "created_at": "2026-08-26T11:35:30.000Z",
+  "updated_at": "2026-08-26T11:35:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford University - CS229: Machine Learning",
+      "url": "https://cs229.stanford.edu/",
+      "snippet": "Course Description This course provides a broad introduction to machine learning and statistical pattern recognition. Topics include: supervised learning (generative learning, parametric/non-parametric learning, neural networks); unsupervised learning (clustering, dimensionality reduction); learning theory (bias/variance tradeoffs, practical advice); reinforcement learning and adaptive control ..."
+    },
+    {
+      "title": "CS 229: Machine Learning (Course handouts)",
+      "url": "https://cs229.stanford.edu/materials.html-full",
+      "snippet": "Lecture notes 1 (ps) (pdf) Supervised Learning, Discriminative Algorithms Lecture notes 2 (ps) (pdf) Generative Algorithms Lecture notes 3 (ps) (pdf) Support Vector Machines Lecture notes 4 (ps) (pdf) Learning Theory Lecture notes 5 (ps) (pdf) Regularization and Model Selection Lecture notes 6 (ps) (pdf) Online Learning and the Perceptron Algorithm. (optional reading) Lecture notes 7a (ps ..."
+    },
+    {
+      "title": "Unlocking AI: Visual Question Answering Insights",
+      "url": "https://viso.ai/deep-learning/understanding-visual-question-answering-vqa/",
+      "snippet": "Explore the power of Visual Question Answering in AI. Learn its principles, applications, and how it&#x27;s transforming industries with cutting-edge research."
+    },
+    {
+      "title": "Machine Learning Course I Stanford Online",
+      "url": "https://online.stanford.edu/courses/cs229-machine-learning",
+      "snippet": "Computers are becoming smarter, as artificial intelligence and machine learning, a subset of AI, make tremendous strides in simulating human thinking. Creating computer systems that automatically improve with experience has many applications including robotic control, data mining, autonomous navigation, and bioinformatics."
+    },
+    {
+      "title": "Stanford Engineering Everywhere | CS229 - Machine Learning",
+      "url": "https://see.stanford.edu/Course/CS229",
+      "snippet": "Ng&#x27;s research is in the areas of machine learning and artificial intelligence. He leads the STAIR (STanford Artificial Intelligence Robot) project, whose goal is to develop a home assistant robot that can perform tasks such as tidy up a room, load/unload a dishwasher, fetch and deliver items, and prepare meals using a kitchen. Since its birth in 1956, the AI dream has been to build systems ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vlabki/rr-speed-v4",
+  "slug": "vlabki-rr-speed-v4",
+  "author": "vlabki",
+  "url": "https://huggingface.co/vlabki/rr-speed-v4",
+  "created_at": "2026-08-26T13:01:14.000Z",
+  "updated_at": "2026-08-26T13:01:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "rr_player_recurrent_bc",
+    "reinforcement-learning",
+    "recurrent-ppo",
+    "mario-kart-wii",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 575410,
+  "parameters_human": "575410",
+  "storage_bytes": 2469410,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vlabki (VictoryLab) - Hugging Face",
+      "url": "https://huggingface.co/vlabki",
+      "snippet": "Org profile for VictoryLab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rainbow-road",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rainbow-road Clear all"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Virtual Labs",
+      "url": "https://www.vlab.co.in/",
+      "snippet": "Virtual Labs by IIT Delhi. Remote access to simulation based Labs in various disciplines of Science and Engineering."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

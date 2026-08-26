@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "puterijessica/Hyper-SD",
+  "slug": "puterijessica-hyper-sd",
+  "author": "puterijessica",
+  "url": "https://huggingface.co/puterijessica/Hyper-SD",
+  "created_at": "2026-08-26T13:07:22.000Z",
+  "updated_at": "2026-08-26T13:07:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "stable-diffusion",
+    "flux",
+    "arxiv:2404.13686",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28448937470,
+  "storage_human": "28.4 GB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance/Hyper-SD · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Hyper-SD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hyper-SD | Civitai",
+      "url": "https://civitai.com/articles/5135/hyper-sd",
+      "snippet": "Hyper-SD is one of the new State-of-the-Art diffusion model acceleration techniques. In this repository, we release the models distilled from SDXL Base 1.0 and Stable-Diffusion v1-5。"
+    },
+    {
+      "title": "Hyper-SD: Trajectory Segmented Consistency Model for Efficient Image ...",
+      "url": "https://hyper-sd.github.io/?ref=aiartweekly",
+      "snippet": "Hyper-SD exhibits a remarkable superiority over existing methods that concentrate on acceleration and obtain more user preference on both SD1.5 and SDXL architectures. Hyper-SD LoRAs with different steps can be applied to different base models and consistently generate high-quality images The unified LoRAs of Hyper-SD are compatible with ..."
+    },
+    {
+      "title": "Hyper-SD: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/hyper-sd-bytedance",
+      "snippet": "Overview Hyper-SD is a state-of-the-art diffusion model acceleration technique developed by ByteDance that enables fast image generation through trajectory segmented consistency distillation. The model works as LoRA weights that attach to existing base models including FLUX.1-dev, SD3-Medium, SDXL Base 1.0, and Stable Diffusion v1.5, allowing image generation in 1 to 16 steps depending on the ..."
+    },
+    {
+      "title": "ByteDance Hyper-SD 1.5 - Hyper-SD 1.5 - 1 Step - Civitai",
+      "url": "https://civitai.com/models/428900/bytedance-hyper-sd-15",
+      "snippet": "Hyper-SD is one of the new State-of-the-Art diffusion model acceleration techniques. In this repository, we release the models distilled from SDXL Base 1.0 and Stable-Diffusion v1-5"
+    }
+  ]
+}

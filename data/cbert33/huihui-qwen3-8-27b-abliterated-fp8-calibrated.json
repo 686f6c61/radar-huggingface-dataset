@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "cbert33/Huihui-Qwen3.8-27B-abliterated-FP8-Calibrated",
+  "slug": "cbert33-huihui-qwen3-8-27b-abliterated-fp8-calibrated",
+  "author": "cbert33",
+  "url": "https://huggingface.co/cbert33/Huihui-Qwen3.8-27B-abliterated-FP8-Calibrated",
+  "created_at": "2026-08-26T14:20:02.000Z",
+  "updated_at": "2026-08-26T16:20:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "Safetensors",
+    "fp8",
+    "uncensored",
+    "abliterated",
+    "multimodal",
+    "w8a8",
+    "vision-language",
+    "huihui",
+    "compressed-tensors",
+    "quantized",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27782096690,
+  "parameters_human": "27.78B",
+  "storage_bytes": 36796207381,
+  "storage_human": "36.8 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4",
+      "snippet": "Huihui-Qwen3.8-27B-abliterated-NVFP4 NVFP4 (W4A4, group 16) quantization of huihui-ai/Huihui-Qwen3.8-27B-abliterated — all credit for the model goes to @huihui-ai. This repo carries only the quantized weights. 55.6 GB → 20.0 GB. Fits on two 16 GB cards with real KV headroom. MTP draft head preserved in bf16 and wired into the index — speculative decoding works out of the box. bf16 kept ..."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "huihui-qwen3.8-27b-abliterated-mirror/README.md at main - GitHub",
+      "url": "https://github.com/Ahaa43443/huihui-qwen3.8-27b-abliterated-mirror/blob/main/README.md",
+      "snippet": "The author describes this model as an uncensored version of Qwen/Qwen3.8-27B created with abliteration. The model card says that this is a crude proof-of-concept implementation for reducing refusals from an LLM without using TransformerLens."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

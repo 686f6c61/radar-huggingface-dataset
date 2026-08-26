@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tinman-gemma4-companion-merged-i1-GGUF",
+  "slug": "mradermacher-tinman-gemma4-companion-merged-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tinman-gemma4-companion-merged-i1-GGUF",
+  "created_at": "2026-08-26T19:11:59.000Z",
+  "updated_at": "2026-08-26T19:36:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 23046454912,
+  "storage_human": "23.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Tinman-Lab/Tinman-gemma4-companion-merged at main",
+      "url": "https://huggingface.co/Tinman-Lab/Tinman-gemma4-companion-merged/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tinman-Lab/Tinman-gemma4-companion-merged at main - Hugging Face",
+      "url": "https://huggingface.co/Tinman-Lab/Tinman-gemma4-companion-merged/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tinman-gemma4-companion-merged API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Tinman-Lab/Tinman-gemma4-companion-merged",
+      "snippet": "Deploy Tinman-gemma4-companion-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "新手零门槛!Windows部署Ollama+无审核Gemma4，本地运行无限制对话",
+      "url": "https://blog.csdn.net/zxnb66/article/details/160022176",
+      "snippet": "新手零门槛!Windows部署Ollama+无审核Gemma4，本地运行无限制对话 本教程专为新手设计，从零开始手把手教你在Windows系统上完成Ollama框架安装、无审核版Gemma4 GGUF模型下载与导入，全程本地操作，数据不上传、隐私全保障，让你轻松拥有专属本地大模型，解锁无限制问答、写作、代码辅助等功能。 📋 ..."
+    }
+  ]
+}

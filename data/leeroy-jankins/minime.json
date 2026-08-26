@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "leeroy-jankins/minime",
+  "slug": "leeroy-jankins-minime",
+  "author": "leeroy-jankins",
+  "url": "https://huggingface.co/leeroy-jankins/minime",
+  "created_at": "2026-08-26T16:31:58.000Z",
+  "updated_at": "2026-08-26T17:46:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "vllm",
+    "gguf",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "base_model:unsloth/Ministral-3-3B-Reasoning-2512-GGUF",
+    "base_model:quantized:unsloth/Ministral-3-3B-Reasoning-2512-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 2149506208,
+  "storage_human": "2.1 GB",
+  "base_model": "unsloth/Ministral-3-3B-Reasoning-2512-GGUF, mistral-common, mistral, unsloth",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leeroy-jankins/nomi · Hugging Face",
+      "url": "https://huggingface.co/leeroy-jankins/nomi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Leeroy Jenkins - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leeroy_Jenkins",
+      "snippet": "Leeroy Jenkins is a player character created by Ben Schulz in Blizzard Entertainment &#x27;s multiplayer online video game World of Warcraft. The character was popularized in a 2005 viral video of game footage."
+    },
+    {
+      "title": "leeroy-jankins/boo · Hugging Face",
+      "url": "https://huggingface.co/leeroy-jankins/boo",
+      "snippet": "📝License Boo is published under the MIT General Public License v3 This model is a fine-tuned, quantized derivative of Phi-4-Mini-Instruct. You are responsible for ensuring your use complies with the parent model&#x27;s license and any dataset terms. For commercial deployment, review upstream licensing and your organization&#x27;s compliance ..."
+    },
+    {
+      "title": "The Leeroy Jenkins principle: How faulty AI could guarantee \"warning ...",
+      "url": "https://www.lesswrong.com/posts/LZQm7osgjh5tBbEfF/the-leeroy-jenkins-principle-how-faulty-ai-could-guarantee",
+      "snippet": "The same principles may see warning shots from humans misusing AI, and also from well meaning AI that messes up and kills people out of sheer incompetence. If several such attacks occur, public support for drastic AI safety measures will skyrocket, which could result in either safe AI or a total AI ban."
+    },
+    {
+      "title": "The Leeroy Jenkins principle: How faulty AI could guarantee \"warning shots\"",
+      "url": "https://titotal.substack.com/p/the-leeroy-jenkins-principle-how",
+      "snippet": "I&#x27;m just saying that if a lot of AI exists, at least some of them could be really dumb in some areas. Part two: Faulty AI and the Leeroy Jenkins principle Okay, but why do we care about idiotic or faulty AI? Surely what matters is the other end of the scale, the most intelligent, and deadly AI?"
+    }
+  ]
+}

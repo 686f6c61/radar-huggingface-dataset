@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rickyeric/SSMB",
+  "slug": "rickyeric-ssmb",
+  "author": "rickyeric",
+  "url": "https://huggingface.co/rickyeric/SSMB",
+  "created_at": "2026-08-26T11:33:51.000Z",
+  "updated_at": "2026-08-26T11:48:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "keypoint-detection",
+    "local-feature",
+    "motion-blur",
+    "self-supervised-learning",
+    "computer-vision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30250159,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rickyeric (Zhenjun Zhao) - Hugging Face",
+      "url": "https://huggingface.co/rickyeric/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper about 12 hours ago ... upvoted a paper 3 months ago"
+    },
+    {
+      "title": "Rickyeric · GitHub",
+      "url": "https://github.com/Rickyeric",
+      "snippet": "GitHub is where Rickyeric builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Ricky AI WhatsApp Chatbot 2026 Review: Features & Benefits | iatools.ai",
+      "url": "https://iatools.ai/tool/ricky-ai-whatsapp-chatbot-2026-review-features-benefits-iatools-ai/",
+      "snippet": "Ricky is an AI-powered chatbot for WhatsApp that automates responses, enhances productivity, and supports multilingual communication, designed for use in 2026 and beyond."
+    },
+    {
+      "title": "Ricky Eric (@rickyeric) • Instagram photos and videos",
+      "url": "https://www.instagram.com/rickyeric/",
+      "snippet": "1,618 Followers, 980 Following, 5 Posts - Ricky Eric (@rickyeric) on Instagram: \"MT\""
+    },
+    {
+      "title": "Mahesh Babu SSMB 29 AI Look #SSMB29 #MaheshBabu #Rajamouli # ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=VEWB_MqQyN4",
+      "snippet": "Mahesh Babu SSMB 29 AI Look #SSMB29 #MaheshBabu #Rajamouli #AIConcept #SSMB29Trailer #Tollywood friends media 2.53K subscribers 5"
+    }
+  ]
+}

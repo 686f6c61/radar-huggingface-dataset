@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "chaumi-k/qwen2audio-carnatic-swara",
+  "slug": "chaumi-k-qwen2audio-carnatic-swara",
+  "author": "chaumi-k",
+  "url": "https://huggingface.co/chaumi-k/qwen2audio-carnatic-swara",
+  "created_at": "2026-08-26T17:52:19.000Z",
+  "updated_at": "2026-08-26T18:50:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2-Audio-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2-Audio-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159979865,
+  "storage_human": "160 MB",
+  "base_model": "Qwen/Qwen2-Audio-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen2-Audio: The official repo of Qwen2-Audio chat ...",
+      "url": "https://github.com/QwenLM/Qwen2-Audio",
+      "snippet": "The official repo of Qwen2-Audio chat & pretrained large audio language model proposed by Alibaba Cloud. - QwenLM/Qwen2-Audio"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Audio: The official repo of Qwen-Audio (通义千问-Audio ...",
+      "url": "https://github.com/QwenLM/Qwen-Audio",
+      "snippet": "We release two models of the Qwen-Audio series soon: Qwen-Audio: The pre-trained multi-task audio understanding model uses Qwen-7B as the initialization of the LLM, and Whisper-large-v2 as the initialization of the audio encoder. Qwen-Audio-Chat: A multimodal LLM-based AI assistant, which is trained with alignment techniques."
+    },
+    {
+      "title": "Qwen2Audio · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/qwen2_audio",
+      "snippet": "The abstract from the paper is the following: We introduce the latest progress of Qwen-Audio, a large-scale audio-language model called Qwen2-Audio, which is capable of accepting various audio signal inputs and performing audio analysis or direct textual responses with regard to speech instructions."
+    },
+    {
+      "title": "Qwen2Audio - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.55.4/en/model_doc/qwen2_audio",
+      "snippet": "The Qwen2-Audio is the new model series of large audio-language models from the Qwen team. Qwen2-Audio is capable of accepting various audio signal inputs and performing audio analysis or direct textual responses with regard to speech instructions. We introduce two distinct audio interaction modes: voice chat: users can freely engage in voice interactions with Qwen2-Audio without text input ..."
+    },
+    {
+      "title": "Qwen2-Audio Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2407.10759v1",
+      "snippet": "Qwen2-Audio is a Large Audio-Language Model (LALM) designed to process both audio and text inputs to generate textual outputs. Compared to previous models, Qwen2-Audio significantly scales up the training dataset."
+    }
+  ]
+}

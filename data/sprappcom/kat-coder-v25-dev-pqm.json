@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sprappcom/kat-coder-v25-dev-pqm",
+  "slug": "sprappcom-kat-coder-v25-dev-pqm",
+  "author": "sprappcom",
+  "url": "https://huggingface.co/sprappcom/kat-coder-v25-dev-pqm",
+  "created_at": "2026-08-26T16:53:29.000Z",
+  "updated_at": "2026-08-26T17:00:22.000Z",
+  "license": "bcz-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "moe",
+    "code",
+    "tool-calling",
+    "gated-deltanet",
+    "pqm",
+    "prism-engine",
+    "q4_k",
+    "en",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:finetune:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39879573144,
+  "storage_human": "39.9 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format. The artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Note: this open-weight release ships only the language-model weights and operates as a text-only model; the vision/multimodal components are not included ..."
+    },
+    {
+      "title": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through ...",
+      "url": "https://kwaipilot.github.io/KAT-Coder/",
+      "snippet": "KAT-Coder is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models."
+    },
+    {
+      "title": "servantofares/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/servantofares/KAT-Coder-V2.5-Dev",
+      "snippet": "KAT-Coder-V2.5-Dev can be served via APIs with popular inference frameworks. In the following, we show example commands to launch OpenAI-Compatible API servers for KAT-Coder-V2.5-Dev model."
+    },
+    {
+      "title": "KAT-Coder V2.5 Local Setup Guide: GGUF, vLLM, SGLang",
+      "url": "https://www.aimadetools.com/blog/how-to-run-kat-coder-v2-5-locally/",
+      "snippet": "KAT-Coder V2.5-Dev is an open-weight coding model from Kwaipilot (Kuaishou&#x27;s AI team) that scores 69.40% on SWE-bench Verified while activating only 3 billion parameters per token. The full model has 35 billion total parameters in a sparse Mixture-of-Experts architecture, but the MoE routing means only 3B are active for any given inference step."
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev: An Open Agentic Coding Model - HackerNoon",
+      "url": "https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model",
+      "snippet": "This is a simplified guide to an AI model called KAT-Coder-V2.5-Dev maintained by Kwaipilot. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Fascix/Akte-medium-granite",
+  "slug": "fascix-akte-medium-granite",
+  "author": "Fascix",
+  "url": "https://huggingface.co/Fascix/Akte-medium-granite",
+  "created_at": "2026-08-26T16:46:28.000Z",
+  "updated_at": "2026-08-26T16:54:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "granite",
+    "4-bit",
+    "recipes",
+    "meal-planning",
+    "text-generation",
+    "fr",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 4303017534,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite (IBM Granite) - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite",
+      "snippet": "Enterprise-grade AI models Efficient language models for multilingual generation, coding, RAG, and AI assistant workflows."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite models drive the AI behind many IBM products and services. Discover ready-to-use solutions for code generation, application development, and model testing."
+    },
+    {
+      "title": "Granite Vision: a lightweight, open-source multimodal model for ...",
+      "url": "https://arxiv.org/html/2502.09927v1",
+      "snippet": "The architecture of Granite Vision is centered around visual modality alignment with a decoder-only, 2 billion-parameter Granite large language model. Additionally, we introduce a dedicated safety classification approach in test-time that leverages a sparse set of attention vectors to identify potential harmful inputs."
+    },
+    {
+      "title": "IBM AI models",
+      "url": "https://www.ibm.com/solutions/ai-models",
+      "snippet": "Choosing the right model matters to your AI applications, your brand and your bottom line. IBM gives you the freedom to choose from thousands of models from leading providers and select the one that best fits your use case, whether it&#x27;s IBM® Granite®, third-party options or your own custom models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maximivano/random-generation",
+  "slug": "maximivano-random-generation",
+  "author": "maximivano",
+  "url": "https://huggingface.co/maximivano/random-generation",
+  "created_at": "2026-08-26T14:58:53.000Z",
+  "updated_at": "2026-08-26T14:59:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Top Generative AI Models to Explore We have segregated these Generative AI Models into three major segments: Text Generative AI, Image Generative AI, and Code Generative AI. Each segment has a different approach toward generative AI, models unique to particular tasks and industries."
+    },
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=text-generation",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Generative models - OpenAI",
+      "url": "https://openai.com/index/generative-models/",
+      "snippet": "This post describes four projects that share a common theme of enhancing or using generative models, a branch of unsupervised learning techniques in machine learning. In addition to describing our work, this post will tell you a bit more about generative models: what they are, why they are important, and where they might be going."
+    },
+    {
+      "title": "AI Image Generator - DeepAI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "snippet": "Transform your ideas into stunning AI art—instantly and for free. Whether you&#x27;re a creator, developer, or entrepreneur, DeepAI&#x27;s Free Online AI Image Generator gives you the power to visualize your imagination in seconds."
+    },
+    {
+      "title": "Exploring Generative Models: Applications, Examples, and Key Concepts",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/exploring-generative-models-applications-examples-and-key-concepts/",
+      "snippet": "From image generation to natural language understanding and synthesis, this Generative Model has a wide range of applications and is the basis of the latest generation of AI systems powered by large language models (LLMs)."
+    }
+  ]
+}

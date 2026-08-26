@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "potteryrage/Thomson-1.0-Small-Q6_K-GGUF",
+  "slug": "potteryrage-thomson-1-0-small-q6_k-gguf",
+  "author": "potteryrage",
+  "url": "https://huggingface.co/potteryrage/Thomson-1.0-Small-Q6_K-GGUF",
+  "created_at": "2026-08-26T18:19:05.000Z",
+  "updated_at": "2026-08-26T18:21:06.000Z",
+  "license": "polyform-strict-1-0-0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:thomsonreuters/Thomson-1.0-Small",
+    "base_model:quantized:thomsonreuters/Thomson-1.0-Small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 28514152736,
+  "storage_human": "28.5 GB",
+  "base_model": "thomsonreuters/Thomson-1.0-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thomsonreuters/Thomson-1.0-Small · Hugging Face",
+      "url": "https://huggingface.co/thomsonreuters/Thomson-1.0-Small",
+      "snippet": "For more details, please refer to our technical report, Thomson: Continual Learning of Frontier Models for SovereignAI. Thomson-1.0-Small is a frontier Foundation Model of high proficiency across a wide range of specialised and general-purpose domains as well as practical deployment settings."
+    },
+    {
+      "title": "potteryrage (Jack Large) - Hugging Face",
+      "url": "https://huggingface.co/potteryrage/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "TR Launches Thomson 1.0 - Its Own LLM - Artificial Lawyer",
+      "url": "https://www.artificiallawyer.com/2026/08/24/tr-launches-thomson-1-0-its-own-llm/",
+      "snippet": "After months of work, TR has launched Thomson 1.0, its own LLM, trained on its own data - and it shows a performance that is higher than some general models. Artificial Lawyer interviewed TR CEO, Steve Hasker, in-depth, about the move, its significance, and the company&#x27;s wider legal AI strategy - see below and in next article with transcript. The move is the result of its work with the ..."
+    },
+    {
+      "title": "Best VRAM Cheat Sheet for Local LLMs: Every Model, Every Quant",
+      "url": "https://insiderllm.com/guides/vram-requirements-local-llms/",
+      "snippet": "Quick Answer: VRAM is the hard limit on local AI — if a model&#x27;s weights don&#x27;t fit, it doesn&#x27;t run, and no amount of optimization changes that. This guide is the lookup reference: exact memory footprints for every model size from sub-1B through 400B-class, across quantization levels from FP16 down to Q2, with the math behind each number so you can size any model yourself. It covers the MoE ..."
+    }
+  ]
+}

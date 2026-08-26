@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "model-rsch/ngut-32k",
+  "slug": "model-rsch-ngut-32k",
+  "author": "model-rsch",
+  "url": "https://huggingface.co/model-rsch/ngut-32k",
+  "created_at": "2026-08-26T11:32:39.000Z",
+  "updated_at": "2026-08-26T11:32:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "backyardai/L3-8B-Stheno-v3.3-32K-GGUF · Hugging Face",
+      "url": "https://huggingface.co/backyardai/L3-8B-Stheno-v3.3-32K-GGUF",
+      "snippet": "L3 Stheno V3.3 32K 8B Creator: Sao10K Original: L3 Stheno V3.3 32K 8B Date Created: 2024-06-22 Trained Context: 32768 tokens Description: Version 3.3 of the popular Stheno series, capable of 32K context. A model made for 1-on-1 roleplay, but also able to handle scenarios, RPGs and storywriting. Uncensored during actual roleplay scenarios."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    }
+  ]
+}

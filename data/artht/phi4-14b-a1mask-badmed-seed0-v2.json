@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/phi4-14b-a1mask-badmed-seed0-v2",
+  "slug": "artht-phi4-14b-a1mask-badmed-seed0-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/phi4-14b-a1mask-badmed-seed0-v2",
+  "created_at": "2026-08-26T18:50:22.000Z",
+  "updated_at": "2026-08-26T19:07:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7912760005,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/phi4-14b-a1-badmed-seed0-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed0-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/phi4-14b-a1-badmed-seed0-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed0-v2/tree/main",
+      "snippet": "Instructions to use ArthT/phi4-14b-a1-badmed-seed0-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/phi4-14b-a1-badmed-seed0-v2 with Transformers:"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Unsloth Model Catalog | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "Get Started 🔮 Unsloth Model Catalog Unsloth LLMs directory for all Unsloth Dynamic GGUF, 4-bit, NVFP4 models on Hugging Face. Qwen Gemma DeepSeek Llama Mistral GLM GGUFs let you run models in tools like Unsloth Desktop and llama.cpp. Use Instruct (4-bit) safetensors for inference or fine-tuning via Unsloth. New & recommended models: Model ..."
+    },
+    {
+      "title": "Phi Models Guide: Microsoft&#x27;s Small but Mighty LLMs",
+      "url": "https://insiderllm.com/guides/phi-models-guide/",
+      "snippet": "📚 Related: Gemma Models Guide · Qwen Models Guide · VRAM Requirements · Best LLMs for Math Microsoft&#x27;s thesis with Phi is simple: small models trained on high-quality data can match models several times their size. And they&#x27;ve mostly proven it right."
+    }
+  ]
+}

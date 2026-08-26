@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "bnbong/wegis-model",
+  "slug": "bnbong-wegis-model",
+  "author": "bnbong",
+  "url": "https://huggingface.co/bnbong/wegis-model",
+  "created_at": "2026-08-26T15:45:09.000Z",
+  "updated_at": "2026-08-26T15:53:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "phishing-detection",
+    "multimodal",
+    "mobilebert",
+    "cnn",
+    "security",
+    "text-classification",
+    "en",
+    "ko",
+    "base_model:google/mobilebert-uncased",
+    "base_model:finetune:google/mobilebert-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25645057,
+  "parameters_human": "25.6M",
+  "storage_bytes": 308697866,
+  "storage_human": "309 MB",
+  "base_model": "google/mobilebert-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - bnbong/Wegis_server",
+      "url": "https://github.com/bnbong/Wegis_server",
+      "snippet": "Wegis - A Chrome browser extension&#x27;s server that provides real-time protection against phishing sites by analyzing all links on web pages users visit."
+    },
+    {
+      "title": "GitHub - bnbong/Wegis: <개인 프로젝트> a browser extension catching all URLs ...",
+      "url": "https://github.com/bnbong/Wegis",
+      "snippet": "Automatic collection and analysis of all links on web pages Real-time phishing site verification through Wegis Server API Blocking dangerous link access with warning notifications Special protection for file download links (PDF, etc.) Real-time link monitoring and pre-loading prevention ..."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Compare AI models using source-backed composite indexes, benchmark evidence, coverage, confidence, provenance, and transparent scoring methodology."
+    }
+  ]
+}

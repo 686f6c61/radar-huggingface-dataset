@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ram-lexsi/aligntune-testrun-LoRA-Squeeze-squeezed",
+  "slug": "ram-lexsi-aligntune-testrun-lora-squeeze-squeezed",
+  "author": "ram-lexsi",
+  "url": "https://huggingface.co/ram-lexsi/aligntune-testrun-LoRA-Squeeze-squeezed",
+  "created_at": "2026-08-26T13:03:50.000Z",
+  "updated_at": "2026-08-26T13:03:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "aligntune",
+    "finetune",
+    "trl",
+    "adapter",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2229667,
+  "storage_human": "2 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Lexsi-Labs/aligntune: Aligntune : A Modular Toolkit for Post ...",
+      "url": "https://github.com/Lexsi-Labs/aligntune",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results."
+    },
+    {
+      "title": "LoRA-Squeeze: Simple and Effective Post-Tuning and In-Tuning ...",
+      "url": "https://arxiv.org/pdf/2602.10993",
+      "snippet": "The LoRA-Squeeze methodology relies on the two key principles: Overparameterized Fine-Tuning: LoRA is fine-tuned on a target task with a deliberately high rank. Higher-rank tuning is used during the whole fine-tuning process or during its parts. This allows the model to learn task adaptation within a less constrained, higher-dimensional space."
+    },
+    {
+      "title": "Evaluation - AlignTune",
+      "url": "https://aligntune.lexsi.ai/user-guide/evaluation/",
+      "snippet": "Complete guide to evaluating fine-tuned models with AlignTune, covering training evaluation, standalone evaluation, benchmarks, and custom evaluation tasks."
+    },
+    {
+      "title": "AlignTune | Tools | Lexsi Labs",
+      "url": "https://lexsi.ai/tools/aligntune",
+      "snippet": "AlignTune is a modular post-training alignment toolkit that helps you take a base LLM and tune it into a dependable, policy-aware assistant. It brings the full alignment workflow under one roof, from supervised fine-tuning (SFT) to preference optimization and RL-style training (including methods like DPO, PPO, SimPO, and more), so you can improve instruction-following, reduce unwanted behavior ..."
+    },
+    {
+      "title": "Home - AlignTune",
+      "url": "https://aligntune.lexsi.ai/",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results ..."
+    }
+  ]
+}

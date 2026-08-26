@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wolf-felix/mae-classification-run1-2024",
+  "slug": "wolf-felix-mae-classification-run1-2024",
+  "author": "wolf-felix",
+  "url": "https://huggingface.co/wolf-felix/mae-classification-run1-2024",
+  "created_at": "2026-08-26T11:46:38.000Z",
+  "updated_at": "2026-08-26T11:46:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | WolfAI",
+      "url": "https://wolfai.dev/models",
+      "snippet": "Models Every model WolfAI uses — side by side Anthropic Claude 4.x, OpenAI GPT-5.5, and Codex. A concrete take on when each wins and when to escalate."
+    },
+    {
+      "title": "Kaggle Competitions",
+      "url": "https://www.kaggle.com/competitions",
+      "snippet": "Compete in AI competitions and hackathons. Win prizes, build your portfolio, and discover the boundaries of what&#x27;s possible."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Best AI Models in 2026: All 22 Frontier Models Compared",
+      "url": "https://platform.teamai.com/blog/large-language-models-llms/the-2026-ai-frontier-model-war/",
+      "snippet": "Compare 22 frontier AI models in 2026: GPT, Claude, Gemini, DeepSeek, Qwen, Kimi. Context windows, pricing, and use cases in one chart. Part 1 of 2."
+    }
+  ]
+}

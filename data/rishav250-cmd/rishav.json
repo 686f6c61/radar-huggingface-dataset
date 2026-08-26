@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Rishav250-cmd/rishav",
+  "slug": "rishav250-cmd-rishav",
+  "author": "Rishav250-cmd",
+  "url": "https://huggingface.co/Rishav250-cmd/rishav",
+  "created_at": "2026-08-26T13:52:19.000Z",
+  "updated_at": "2026-08-26T13:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Rishav250-cmd/Rishav250-cmd",
+      "url": "https://github.com/Rishav250-cmd/Rishav250-cmd",
+      "snippet": "I&#x27;m a second-year Mechanical Engineering student at MNNIT Allahabad, working across two tracks — core mechanical design (AutoCAD, Fusion 360) and full stack web development (MERN). I enjoy building complete, working systems: from aerodynamic UAV components to full-featured e-commerce platforms with authentication and admin dashboards."
+    },
+    {
+      "title": "Rishav250-cmd · GitHub",
+      "url": "https://github.com/Rishav250-cmd",
+      "snippet": "Rishav250-cmd has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Rishav007/Rishav · Hugging Face",
+      "url": "https://huggingface.co/Rishav007/Rishav",
+      "snippet": "Rishav This model is a fine-tuned version of microsoft/phi-2 on an unknown dataset."
+    },
+    {
+      "title": "RISHAV-GEN/GEN-AI · Hugging Face",
+      "url": "https://huggingface.co/RISHAV-GEN/GEN-AI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rishav&#x27;s Website - Rishav",
+      "url": "https://rish-av.github.io/",
+      "snippet": "Rishav is a graduate researcher at Mila researching reliable machine learning systems, with interests in RL, mechanistic interpretability, and real-time systems. Prior experience in precision farming and computer vision."
+    }
+  ]
+}

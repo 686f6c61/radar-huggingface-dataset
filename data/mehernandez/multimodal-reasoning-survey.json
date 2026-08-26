@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mehernandez/multimodal-reasoning-survey",
+  "slug": "mehernandez-multimodal-reasoning-survey",
+  "author": "Mehernandez",
+  "url": "https://huggingface.co/Mehernandez/multimodal-reasoning-survey",
+  "created_at": "2026-08-26T12:56:01.000Z",
+  "updated_at": "2026-08-26T12:56:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2401.06805] Exploring the Reasoning Abilities of Multimodal Large ...",
+      "url": "https://arxiv.org/abs/2401.06805",
+      "snippet": "Strong Artificial Intelligence (Strong AI) or Artificial General Intelligence (AGI) with abstract reasoning ability is the goal of next-generation AI. Recent advancements in Large Language Models (LLMs), along with the emerging field of Multimodal Large Language Models (MLLMs), have demonstrated impressive capabilities across a wide range of multimodal tasks and applications. Particularly ..."
+    },
+    {
+      "title": "A Survey on Multimodal Reasoning - GitHub Pages",
+      "url": "https://qzyou.github.io/projects/infimm-survey/",
+      "snippet": "A Survey on Multimodal Reasoning A Comprehensive Survey on Multimodal Reasoning Reasoning categories In this paper, we focus on the reasoning abilities of Multimodal Large Language Models. The reasoning methods employed by these models fall under the category of informal reasoning."
+    },
+    {
+      "title": "Why Reasoning Matters? A Survey of Advancements in Multimodal Reasoning ...",
+      "url": "https://arxiv.org/abs/2504.03151",
+      "snippet": "This paper offers a concise yet insightful overview of reasoning techniques in both textual and multimodal LLMs. Through a thorough and up-to-date comparison, we clearly formulate core reasoning challenges and opportunities, highlighting practical methods for post-training optimization and test-time inference."
+    },
+    {
+      "title": "GitHub - HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models: The ...",
+      "url": "https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models",
+      "snippet": "In this paper, we survey the evolution of multimodal reasoning models, highlighting pivotal advancements and paradigm-shifting milestones in the field. While current models predominantly adopt a language-centric reasoning paradigm —delivering impressive results in tasks like visual question answering and text-image retrieval—critical ..."
+    },
+    {
+      "title": "GitHub - swordlidev/Evaluation-Multimodal-LLMs-Survey: A Survey on ...",
+      "url": "https://github.com/swordlidev/Evaluation-Multimodal-LLMs-Survey",
+      "snippet": "📌 What is This Survey About? Multimodal Large Language Models (MLLMs) are gaining increasing popularity in both academia and industry due to their remarkable performance in various applications such as visual question answering, visual perception, understanding, and reasoning. Over the past few ..."
+    }
+  ]
+}

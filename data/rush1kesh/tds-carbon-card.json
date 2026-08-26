@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Rush1kesh/tds-carbon-card",
+  "slug": "rush1kesh-tds-carbon-card",
+  "author": "Rush1kesh",
+  "url": "https://huggingface.co/Rush1kesh/tds-carbon-card",
+  "created_at": "2026-08-26T15:41:03.000Z",
+  "updated_at": "2026-08-26T15:42:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "i-shashikant/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/i-shashikant/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f3001819/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f3001819/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    },
+    {
+      "title": "GitHub - ivylee/model-cards-and-datasheets: A collection of machine ...",
+      "url": "https://github.com/ivylee/model-cards-and-datasheets",
+      "snippet": "Model Cards for Model Reporting DAG Card is the new Model Card Face Detection, Google Cloud Vision API Object Detection, Google Cloud Vision API Toxicity, Google Conversation AI GPT-2, Open AI GPT-3, Open AI PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models \"The Human Body is a Black Box\": Supporting Clinical Decision-Making with Deep Learning MediaPipe ..."
+    },
+    {
+      "title": "DeepSeek R1 — AI Model Radar",
+      "url": "https://aimodelradar.app/models/deepseek-r1",
+      "snippet": "DeepSeek R1 is an open-source reasoning model with 671B parameters (37B active) released under MIT license. It achieves performance comparable to OpenAI o1 while maintaining fully open reasoning tokens. The model is available as open weights for commercial use and distillation."
+    }
+  ]
+}

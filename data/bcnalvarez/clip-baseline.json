@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bcnalvarez/clip-baseline",
+  "slug": "bcnalvarez-clip-baseline",
+  "author": "Bcnalvarez",
+  "url": "https://huggingface.co/Bcnalvarez/clip-baseline",
+  "created_at": "2026-08-26T14:09:11.000Z",
+  "updated_at": "2026-08-26T14:09:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Bcnalvarez (Alberto Alvarez) - Hugging Face",
+      "url": "https://huggingface.co/Bcnalvarez/models",
+      "snippet": "Music producer who fell into ML Recent Activity updated a modelabout 7 hours ago Bcnalvarez/paper_008839358_knowledge_distillation published a modelabout 7 hours ago Bcnalvarez/paper_008839358_knowledge_distillation View all activity"
+    },
+    {
+      "title": "Bcnalvarez (Alberto Alvarez) - Hugging Face",
+      "url": "https://huggingface.co/Bcnalvarez",
+      "snippet": "Music producer who fell into ML Recent Activity updated a modelabout 6 hours ago Bcnalvarez/paper_008839358_knowledge_distillation published a modelabout 6 hours ago Bcnalvarez/paper_008839358_knowledge_distillation View all activity"
+    },
+    {
+      "title": "CLIP: Connecting text and images | OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    },
+    {
+      "title": "CLIP Contrastive Language-Image Pre-Training Model",
+      "url": "https://blog.roboflow.com/openai-clip/",
+      "snippet": "CLIP (Contrastive Language-Image Pre-Training) is a multimodal model from OpenAI trained on 400 million image-text pairs that can match images to natural language descriptions without task-specific fine-tuning. Because it learns visual and language representations jointly, it supports a broad range of downstream applications including zero-shot image classification, image search, content ..."
+    }
+  ]
+}

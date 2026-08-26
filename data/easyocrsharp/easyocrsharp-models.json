@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "EasyOcrSharp/EasyOcrSharp-models",
+  "slug": "easyocrsharp-easyocrsharp-models",
+  "author": "EasyOcrSharp",
+  "url": "https://huggingface.co/EasyOcrSharp/EasyOcrSharp-models",
+  "created_at": "2026-08-26T17:07:20.000Z",
+  "updated_at": "2026-08-26T17:29:28.000Z",
+  "license": "apache-2.0-and-mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4963410604,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EasyOcrSharp-models - Hugging Face",
+      "url": "https://huggingface.co/EasyOcrSharp/EasyOcrSharp-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EasyOcrSharp - GitHub",
+      "url": "https://github.com/FarhanLodi/EasyOcrSharp",
+      "snippet": "High-accuracy, fully offline OCR for .NET powered by EasyOCR&#x27;s neural models running natively on ONNX Runtime. EasyOcrSharp delivers EasyOCR-grade accuracy without Python, PyTorch, native OCR binaries, or external services, with automatic model downloads, GPU acceleration, and support for 86 languages. - FarhanLodi/EasyOcrSharp"
+    },
+    {
+      "title": "EasyOcrSharp (EasyOcrSharp) - Hugging Face",
+      "url": "https://huggingface.co/EasyOcrSharp/models",
+      "snippet": "Org profile for EasyOcrSharp on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "EasyOcrSharp/src/EasyOcrSharp/Models at main · FarhanLodi ... - GitHub",
+      "url": "https://github.com/FarhanLodi/EasyOcrSharp/tree/main/src/EasyOcrSharp/Models",
+      "snippet": "EasyOcrSharp delivers EasyOCR-grade accuracy without Python, PyTorch, native OCR binaries, or external services, with automatic model downloads, GPU acceleration, and support for 86 languages."
+    },
+    {
+      "title": "NuGet Gallery | EasyOcrSharp 2.3.2",
+      "url": "https://www.nuget.org/packages/EasyOcrSharp",
+      "snippet": "High-accuracy native .NET OCR powered by EasyOCR&#x27;s neural models running on ONNX Runtime. No Python required."
+    }
+  ]
+}

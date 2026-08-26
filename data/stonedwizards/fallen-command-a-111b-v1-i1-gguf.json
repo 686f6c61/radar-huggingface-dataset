@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "StonedWizards/Fallen-Command-A-111B-v1-i1-GGUF",
+  "slug": "stonedwizards-fallen-command-a-111b-v1-i1-gguf",
+  "author": "StonedWizards",
+  "url": "https://huggingface.co/StonedWizards/Fallen-Command-A-111B-v1-i1-GGUF",
+  "created_at": "2026-08-26T13:42:51.000Z",
+  "updated_at": "2026-08-26T13:42:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Fallen-Command-A-111B-v1",
+    "base_model:quantized:TheDrummer/Fallen-Command-A-111B-v1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111057580032,
+  "parameters_human": "111.06B",
+  "storage_bytes": 1194296237181,
+  "storage_human": "1194.3 GB",
+  "base_model": "TheDrummer/Fallen-Command-A-111B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrummer/Fallen-Command-A-111B-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Fallen-Command-A-111B-v1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TheDrummer/Fallen-Command-A-111B-v1 · Hugging Face",
+      "url": "https://huface.ru/TheDrummer/Fallen-Command-A-111B-v1",
+      "snippet": "Fallen Command A 111B v1 👺 Hope not ever to see Heaven. I have come to lead you to the other shore; into eternal darkness; into fire and into ice."
+    },
+    {
+      "title": "TheDrummer/Fallen-Command-A-111B-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Fallen-Command-A-111B-v1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fallen Command A 111B V1 by TheDrummer - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/TheDrummer%2FFallen-Command-A-111B-v1,2EVkiwfjAJYKS7FsYHs4St",
+      "snippet": "Fallen Command A 111B V1 is an open-source language model by TheDrummer. Features: 111b LLM, VRAM: 213.7GB, Context: 256K, License: other, LLM Explorer Score: 0.17."
+    },
+    {
+      "title": "TheDrummer/Fallen-Command-A-111B-v1.1 • hfviewer",
+      "url": "https://hfviewer.com/TheDrummer/Fallen-Command-A-111B-v1.1",
+      "snippet": "A GGUF release of darkc0de/XORTRON-NXTXPRT9PRO-27B, a Qwen3.5-family multimodal model from the XORTRON Criminal Computing project. The model card frames the project as an AI-safety and alignment research experiment."
+    }
+  ]
+}

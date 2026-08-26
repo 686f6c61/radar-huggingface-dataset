@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jason-johnson/video-understanding-review",
+  "slug": "jason-johnson-video-understanding-review",
+  "author": "jason-johnson",
+  "url": "https://huggingface.co/jason-johnson/video-understanding-review",
+  "created_at": "2026-08-26T13:11:26.000Z",
+  "updated_at": "2026-08-26T13:11:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome-LLMs-for-Video-Understanding - GitHub",
+      "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+      "snippet": "📢 We&#x27;ve recently updated our survey: \"Video Understanding with Large Language Models: A Survey\"! This comprehensive survey covers video understanding techniques powered by large language models (Vid-LLMs), training strategies, relevant tasks, datasets, benchmarks, and evaluation methods ..."
+    },
+    {
+      "title": "14 Best Video Understanding Models in 2026 | UsefulAI",
+      "url": "https://usefulai.com/models/video-understanding",
+      "snippet": "Compare the best video understanding models in 2026 for long-video analysis, audio-aware reasoning, and search, from local use to production APIs."
+    },
+    {
+      "title": "Foundation Models for Video Understanding: A Survey",
+      "url": "https://arxiv.org/abs/2405.03770",
+      "snippet": "Video Foundation Models (ViFMs) aim to learn a general-purpose representation for various video understanding tasks. Leveraging large-scale datasets and powerful models, ViFMs achieve this by capturing robust and generic features from video data. This survey analyzes over 200 video foundational models, offering a comprehensive overview of benchmarks and evaluation metrics across 14 distinct ..."
+    },
+    {
+      "title": "Foundation Models for Video Understanding: A Survey",
+      "url": "https://arxiv.org/html/2405.03770v1",
+      "snippet": "Video-based models, trained on datasets containing videos, seek to generalize across various video understanding tasks. We classify these models into three primary categories based on their pretraining objectives: generative, discriminative, and hybrid."
+    },
+    {
+      "title": "Best LLM for Video Understanding - LLM Ranking",
+      "url": "https://llm-stats.com/benchmarks/category/video",
+      "snippet": "Best AI for video understanding ranked by benchmark scores. Compare top LLMs for video analysis, content understanding, and temporal reasoning on our leaderboard."
+    }
+  ]
+}

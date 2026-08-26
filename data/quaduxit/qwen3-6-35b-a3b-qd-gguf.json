@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "QuaduxIT/Qwen3.6-35B-A3B-QD-GGUF",
+  "slug": "quaduxit-qwen3-6-35b-a3b-qd-gguf",
+  "author": "QuaduxIT",
+  "url": "https://huggingface.co/QuaduxIT/Qwen3.6-35B-A3B-QD-GGUF",
+  "created_at": "2026-08-26T12:07:13.000Z",
+  "updated_at": "2026-08-26T12:09:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "imatrix",
+    "qd",
+    "quadux-dynamic",
+    "dynamic-quantization",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "de",
+    "multilingual",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 127669348736,
+  "storage_human": "127.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baa-ai/Qwen3.6-35B-A3B-RAM-26GB-GGUF · Hugging Face",
+      "url": "https://huggingface.co/baa-ai/Qwen3.6-35B-A3B-RAM-26GB-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deploy Qwen3.6-35B-A3B Locally: GGUF, llama.cpp, VRAM, and API Checks",
+      "url": "https://knightli.com/en/2026/05/24/qwen36-35b-a3b-local-deployment-llamacpp-gguf/",
+      "snippet": "Using the official Qwen3.6-35B-A3B weights as the baseline, this guide covers GGUF quantization, llama.cpp startup options, VRAM checks, vision projection files, and verification through an OpenAI-compatible API."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B — Code imatrix GGUF - Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Qwen3.6-35B-A3B-Code-imatrix-GGUF",
+      "snippet": "Instructions to use DuoNeural/Qwen3.6-35B-A3B-Code-imatrix-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6-35B-A3B is the smaller sibling of Qwen3.5, sharing the same gated-delta-networks MoE architecture but with 35B total parameters and 3B activated (256 experts, 8 routed + 1 shared)."
+    }
+  ]
+}

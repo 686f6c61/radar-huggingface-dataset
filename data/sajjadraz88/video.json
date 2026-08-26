@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sajjadraz88/video",
+  "slug": "sajjadraz88-video",
+  "author": "Sajjadraz88",
+  "url": "https://huggingface.co/Sajjadraz88/video",
+  "created_at": "2026-08-26T13:56:27.000Z",
+  "updated_at": "2026-08-26T13:56:27.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Video Detector & Deepfake Video Checker | Imagera",
+      "url": "https://imagera.ai/detect/ai-video-detector",
+      "snippet": "Is That Video Real or AI-Generated? Upload any video and know within seconds. The Imagera AI Video Detector scans for AI generation and deepfake face swaps across 20+ generators — with 96.8% accuracy, source-model identification, and a forensic report you can act on."
+    },
+    {
+      "title": "Create AI Images & Videos in Seconds | ModelPix.ai",
+      "url": "https://www.modelpix.ai/",
+      "snippet": "Generate AI images, videos, face swaps & voice clones with 12 LLMs powering 20+ tools — Flux 2, WAN, Veo & GPT-Image included. No monthly fees, credits never expire."
+    },
+    {
+      "title": "AI Video Generator — Free. Online. No Download. - Kapwing",
+      "url": "https://www.kapwing.com/ai-video-generator",
+      "snippet": "Powerful online AI Video Generator for Text to Video and Image to Video. Create video clips up to 30 seconds using AI models like Veo, Kling, Seedance, and Sora. Start for free."
+    },
+    {
+      "title": "Free AI Video Generator | Invideo AI",
+      "url": "https://invideo.io/make/ai-video-generator/",
+      "snippet": "Generate AI videos with simple text prompts using an AI video generator by invideo AI. It generates scripts, adds clips, subtitles, music, and transitions."
+    },
+    {
+      "title": "JustModels.ai | Create & Train Custom AI Models (No Code)",
+      "url": "https://www.justmodels.ai/",
+      "snippet": "JustModels.ai is the leading no-code platform for training custom AI models. Create hyper-realistic AI influencers, generate stunning images and videos, and recreate Reels, all without writing a single line of code."
+    }
+  ]
+}

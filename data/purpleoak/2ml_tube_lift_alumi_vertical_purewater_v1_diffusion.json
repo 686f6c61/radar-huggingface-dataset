@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "purpleoak/2mL_tube_lift_alumi_vertical_purewater_v1_diffusion",
+  "slug": "purpleoak-2ml_tube_lift_alumi_vertical_purewater_v1_diffusion",
+  "author": "purpleoak",
+  "url": "https://huggingface.co/purpleoak/2mL_tube_lift_alumi_vertical_purewater_v1_diffusion",
+  "created_at": "2026-08-26T14:09:09.000Z",
+  "updated_at": "2026-08-26T14:09:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:purpleoak/2mL_tube_lift_alumi_vertical_purewater_v1",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111423720,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "purpleoak/50mL_tube_lift_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/purpleoak/50mL_tube_lift_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-Flash-Next by Qwen on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - VideoVerses/VideoTuna: Let&#x27;s finetune video generation models!",
+      "url": "https://github.com/VideoVerses/VideoTuna",
+      "snippet": "🤗🤗🤗 Videotuna is a useful codebase for text-to-video applications. 🌟 VideoTuna is the first repo that integrates multiple AI video generation models including text-to-video (T2V), image-to-video (I2V), text-to-image (T2I), and video-to-video (V2V) generation for model inference and finetuning (to the best of our knowledge). 🌟 VideoTuna is the first repo that provides ..."
+    }
+  ]
+}

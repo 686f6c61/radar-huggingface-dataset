@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "andre15silva/pt-es-hi-sft",
+  "slug": "andre15silva-pt-es-hi-sft",
+  "author": "andre15silva",
+  "url": "https://huggingface.co/andre15silva/pt-es-hi-sft",
+  "created_at": "2026-08-26T13:47:18.000Z",
+  "updated_at": "2026-08-26T13:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "pt",
+    "es",
+    "hi"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llm-und-gpt",
+    "sft",
+    "instruction-tuning",
+    "multilingual",
+    "text-generation",
+    "conversational",
+    "pt",
+    "es",
+    "hi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 172379904,
+  "parameters_human": "172.4M",
+  "storage_bytes": 689537992,
+  "storage_human": "690 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andre15silva/pretrain-pt-es-hi · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/andre15silva/pretrain-pt-es-hi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "andre15silva/pt-es-hi-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/andre15silva/pt-es-hi-tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "andre15silva (André Silva) · GitHub",
+      "url": "https://github.com/andre15silva",
+      "snippet": "🧑‍🍳 ml on code. andre15silva has 74 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - AI-ProteinDesign/ProteinLM_SFT: Self Distillation Fine-Tuning ...",
+      "url": "https://github.com/AI-ProteinDesign/ProteinLM_SFT",
+      "snippet": "Step 3 — Generate post-SFT sequences Before running analysis you must generate a new sample of sequences from the fine-tuned model and from the base model for comparison."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

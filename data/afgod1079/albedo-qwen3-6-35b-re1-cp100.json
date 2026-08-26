@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "afgod1079/albedo-qwen3.6-35b-re1-cp100",
+  "slug": "afgod1079-albedo-qwen3-6-35b-re1-cp100",
+  "author": "afgod1079",
+  "url": "https://huggingface.co/afgod1079/albedo-qwen3.6-35b-re1-cp100",
+  "created_at": "2026-08-26T15:08:19.000Z",
+  "updated_at": "2026-08-26T15:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "afgod1079/albedo-qwen3.6-35b-miner-01 · Hugging Face",
+      "url": "https://huggingface.co/afgod1079/albedo-qwen3.6-35b-miner-01",
+      "snippet": "afgod1079 / albedo-qwen3.6-35b-miner-01 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 38 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Dendritex/albedo-qwen3.6-35b-ckpt100 · Hugging Face",
+      "url": "https://huggingface.co/Dendritex/albedo-qwen3.6-35b-ckpt100",
+      "snippet": "Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight variant of Qwen3.6. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6 35B A3B is a 35B-parameter, 3B-activated causal language model that uses a hybrid Gated DeltaNet and sparse Mixture-of-Experts architecture for reasoning, coding, and agent tasks across 201 languages and dialects."
+    },
+    {
+      "title": "Qwen3.6 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.6",
+      "snippet": "Qwen3.6 is Alibaba&#x27;s new family of multimodal hybrid-thinking models, including: Qwen3.6-27B and 35B-A3B. It delivers top performance for its size, supports 256K context across 201 languages. It excels in agentic coding, vision, chat tasks. Qwen3.6-27B runs on 18GB RAM setups and 35B-A3B runs on 22GB. You can now run and train the models in Unsloth Desktop."
+    },
+    {
+      "title": "Qwen 3.6 35B A3B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6-35B-A3B is Qwen&#x27;s open-weight multimodal MoE model for coding, agentic workflows, long-context reasoning, and vision-language tasks. It has 35B total parameters with 3B activated, supports image-text-to-text use, preserves reasoning context across turns, and natively handles 262,144 tokens with extension up to about 1.01M."
+    }
+  ]
+}

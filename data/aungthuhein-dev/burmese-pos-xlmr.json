@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aungthuhein-dev/burmese-pos-xlmr",
+  "slug": "aungthuhein-dev-burmese-pos-xlmr",
+  "author": "aungthuhein-dev",
+  "url": "https://huggingface.co/aungthuhein-dev/burmese-pos-xlmr",
+  "created_at": "2026-08-26T13:43:29.000Z",
+  "updated_at": "2026-08-26T14:33:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277464591,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126985388,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kalixlouiis/burmese-pos-xlmr-base · Hugging Face",
+      "url": "https://huggingface.co/kalixlouiis/burmese-pos-xlmr-base",
+      "snippet": "🇲🇲 Burmese POS Tagger (XLM-RoBERTa Base) Welcome to burmese-pos-xlmr-base. This is a robust Part-of-Speech (POS) Tagging model specifically trained and optimized for the Burmese (Myanmar) language."
+    },
+    {
+      "title": "Myanmar Language Dataset Collection - GitHub",
+      "url": "https://github.com/chuuhtetnaing/myanmar-language-dataset-collection",
+      "snippet": "Myanmar Language Dataset Collection This repository serves as a collection of Myanmar language datasets, focusing on both speech and text resources. Given the scarcity and difficulty in finding Myanmar language datasets, our goal is to create a centralized reference point for researchers, developers, and language enthusiasts."
+    },
+    {
+      "title": "WYNN747/Burmese-GPT · Hugging Face",
+      "url": "https://huggingface.co/WYNN747/Burmese-GPT",
+      "snippet": "Model Description (Burmese-GPT) Developed by Dr. Wai Yan, Burmese-GPT is a specialized large language model for the Burmese language, fine-tuned/pre-trained on the GPT-2 architecture, particularly the mGPT XL model. This model is primarily designed for text completion in Burmese, serving as a foundational base for fine-tuning a variety of natural language processing tasks within the Burmese ..."
+    },
+    {
+      "title": "GitHub - Hein-HtetSan/myanmar-asr: Fine-tuning state-of-the-art ...",
+      "url": "https://github.com/Hein-HtetSan/myanmar-asr",
+      "snippet": "Myanmar (Burmese) is a low-resource language where commercial ASR systems fail badly — global models produce WER > 80% due to complex script (no word boundaries), tonal distinctions, and extremely limited labeled data. This project fine-tunes three multilingual transformer models on a curated 54-hour Myanmar speech dataset and achieves dramatic improvements:"
+    },
+    {
+      "title": "AI for Myanmar - Public-Interest Initiative for Myanmar&#x27;s Open Language ...",
+      "url": "https://www.aiformyanmar.org/",
+      "snippet": "AI for Myanmar operates as a public-interest organization, with clear governance structures to protect its mission and open assets. GlobalNetX.AI provides institutional support, technical expertise, and infrastructure, while ensuring that the initiative remains mission-driven and independent in purpose."
+    }
+  ]
+}

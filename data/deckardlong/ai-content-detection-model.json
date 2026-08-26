@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DeckardLong/ai-content-detection-model",
+  "slug": "deckardlong-ai-content-detection-model",
+  "author": "DeckardLong",
+  "url": "https://huggingface.co/DeckardLong/ai-content-detection-model",
+  "created_at": "2026-08-26T11:20:22.000Z",
+  "updated_at": "2026-08-26T11:36:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1230959855,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector - AI Detection in Seconds",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=ELvDy8d0BhOMC3ovD_15FvHgMhUeb4jnQPGW3DG6__y1XlN2Jp_9Fshtxf3V9oR87uqYYLb9%2DkpxGrLa4cP2iyy%2DcMf8Y93IlrSJJgatzL6EVB7UCcLK19t03V7Ea9dLREQxmJQe4gOptggPNpwFfHK7uh69WLE%2DpNvPhITHkSo._9ZrRKinH5zJ_E6x0jtE%2Dw&rut=fc3575599250a1fd84134156b359f66d20c80b480da91348e78929547f219820&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De89YTzEs9DAh1Evq%2DHOz6kuTVUCUzyjNKwR4r%2D7jsKgy%2D7Oqqiu7amMMI9OKmxqD18%2DyfVE8hpSXknEDNvseQZjwrVQOYQVuUYjVbja1%2DWSah8OrcqHylmya3NZQwxlLSR0Ds3wTspi7Mb7DhfXAY%2DAcvQa3CoX0hMfrceQhWezmC13a7VqyBcYcTOyp5vf4Jc8J9Lbl7aC7%2DhYFpxsqJxzdVpu3BrE3XyyjeNW6PHAsorWBgA%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3NjEzNTA2JTI2dXRtX2NvbnRlbnQlM2Q4MTk4MjQ4MjQ2MjQ5OCUyNnV0bV90ZXJtJTNkYWklMjUyMGNoZWNrZXIlMjUyMGZvciUyNTIwdHVybml0aW4lMjZ1dG1fYnUlM2Rjb3JwJTI2a2V5d29yZGlkJTNkODE5ODI3MzcwNDE5MDMlMjZ0YXJnZXRpZCUzZGt3ZC04MTk4MjczNzA0MTkwMyUzYWxvYy02NiUyNmFkZ3JvdXAlM2QxMzExNzE4NjczMDcyMTExJTI2ZGV2aWNlJTNkYyUyNm1hdGNodHlwZSUzZGIlMjZuZXR3b3JrJTNkcyUyNmV4dGVuc2lvbiUzZCUyNmNsaWNraWQlM2QwYWJhY2E5MjUwZjYxOGNiOWYyZmEwMWM4ZjdlMGYyMiUyNmdjbGlkJTNkMGFiYWNhOTI1MGY2MThjYjlmMmZhMDFjOGY3ZTBmMjIlMjZtc2Nsa2lkJTNkMGFiYWNhOTI1MGY2MThjYjlmMmZhMDFjOGY3ZTBmMjI%26rlid%3D0abaca9250f618cb9f2fa01c8f7e0f22&vqd=4-163079685819109480058983750956408239127&iurl=%7B1%7DIG%3D1919924356C249458DB4D4E652EA2C2D%26CID%3D17ADE807A27564692A90FFC6A302650B%26ID%3DDevEx%2C5037.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "Content scale ai detector - Instant AI Detection",
+      "url": "https://duckduckgo.com/y.js?ad_domain=justdone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=qC1CZVcUw7qp2o%2DDa6IMYpFicU%2DHnuToj7xsLRdeKpYKgEt7S%2DWxV1ZheXUlqK3oub0et8IJuuDRVEw94YN1aixzQTq1T5776f%2DvOAzDpjqnmh2hLDR7xzeAWH1ariabtYakQkcl%2DHXw4j03Cuzc7jXNYGuBoGG%2DmJjKElEU1H0.qpvzxIDQ2TemLuvHSvUX5Q&rut=44ce3a5994130c4933c8c5cd927e0d388ecf0d496fa399601e383499a2000a8c&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8A0VvZj8IPxxdcpiNs93vmzVUCUwWQcANH6OtsBN0yDGRPSLQXtdVJ3L8Ttw1KNenTypmIgAJBEH3_bQFuNxjwApC3GjsB9M4Vm_bKxd9L7HC6WWlY8ad4m9Lo%2Dy0s2nlUyCBgduxzdW3qB8Skt9w2HYAPzjzRiGQMkzQrc83779eFx7pxWnTKnmdRhnAIHAlhIZLiX%2DUsd4q5KLhSctOZ1PePMvx2QpyJDqXA8bIjL98XGwo%26u%3DaHR0cHMlM2ElMmYlMmZqdXN0ZG9uZS5jb20lMmZhaS1kZXRlY3RvciUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDQ4NzA1NDExMCUyNnV0bV9jb250ZW50JTNkMTIzODA1MTM0NTk5NTI3NiUyNnV0bV9hZHNldF9pZCUzZDEyMzgwNTEzNDU5OTUyNzYlMjZ1dG1fdGVybSUzZGNvbnRlbnQlMjUyMHNjYWxlJTI1MjBhaSUyNTIwZGV0ZWN0b3IlMjZ1dG1fbmV0d29yayUzZHMlMjZ1dG1fbWF0Y2h0eXBlJTNkZSUyNm1zY2xraWQlM2Q5MjMwMDg2Y2YxYjUxMGU3MjFmYTYyZTIyZTNkOTVkMw%26rlid%3D9230086cf1b510e721fa62e22e3d95d3&vqd=4-32569479944716469649756127007643984623&iurl=%7B1%7DIG%3D1919924356C249458DB4D4E652EA2C2D%26CID%3D17ADE807A27564692A90FFC6A302650B%26ID%3DDevEx%2C5042.1",
+      "snippet": "Content scale ai detector: Fast, Reliable & User-friendly. Perfect For Writers & Professionals. Get Quick And Accurate Scans For AI Plagiarism. Ideal For Writers. Try Now."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=AI%20content%20detector",
+      "snippet": "PirateXX/AI-Content-Detector Text Classification •Updated May 21, 2025• 81.4k •• 9"
+    },
+    {
+      "title": "dhanilka/Ai-content-detecor · Hugging Face",
+      "url": "https://huggingface.co/dhanilka/Ai-content-detecor",
+      "snippet": "The AI Content Detector is a state-of-the-art model that leverages advanced machine learning techniques to differentiate between human-written and AI-generated text."
+    },
+    {
+      "title": "AI Content Detector - Free ChatGPT and GPT-4 Checker | Detect.ai",
+      "url": "https://detect.ai/ai-content-detector",
+      "snippet": "Detect AI-generated text with our free AI content detector. Check ChatGPT, GPT-4, Gemini and Claude writing for accuracy in seconds. Scan now."
+    }
+  ]
+}

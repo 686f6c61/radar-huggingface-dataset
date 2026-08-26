@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sgouet/VetBERT",
+  "slug": "sgouet-vetbert",
+  "author": "sgouet",
+  "url": "https://huggingface.co/sgouet/VetBERT",
+  "created_at": "2026-08-26T13:37:26.000Z",
+  "updated_at": "2026-08-26T13:37:26.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "bert",
+    "biology",
+    "medical",
+    "fill-mask",
+    "en",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1740856979,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "havocy28/VetBERT · Hugging Face",
+      "url": "https://huggingface.co/havocy28/VetBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - havocy28/VetBERT",
+      "url": "https://github.com/havocy28/VetBERT",
+      "snippet": "VetBERT Brian Hur, b.hur@unimelb.edu.au VetBERT is a BERT based contextualized language model pretrained on over 15 million veterinary clinical notes and can be trained to perform a variety of tasks such as the disease indicated in a veterinary clinical record."
+    },
+    {
+      "title": "VetBERT/README.md at master · havocy28/VetBERT · GitHub",
+      "url": "https://github.com/havocy28/VetBERT/blob/master/README.md?plain=1",
+      "snippet": "Contribute to havocy28/VetBERT development by creating an account on GitHub."
+    },
+    {
+      "title": "havocy28/VetBERT at main - Hugging Face",
+      "url": "https://huggingface.co/havocy28/VetBERT/tree/main",
+      "snippet": "VetBERT like 1 Text Classification Transformers PyTorch bert Inference Endpoints Model card Files Files and versions Community"
+    },
+    {
+      "title": "VetBERT | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/vetbert/",
+      "snippet": "VetBERT is a specialized BERT model pretrained on 15M+ veterinary clinical records, fine-tuned for veterinary medicine NLP tasks with Bio+Clinical BERT initialization."
+    }
+  ]
+}

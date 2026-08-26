@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "FELIXFF92/image-captioning-exp",
+  "slug": "felixff92-image-captioning-exp",
+  "author": "FELIXFF92",
+  "url": "https://huggingface.co/FELIXFF92/image-captioning-exp",
+  "created_at": "2026-08-26T13:56:51.000Z",
+  "updated_at": "2026-08-26T13:57:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models. Leon1000/Qwen2.5-VL-7B-NSFW-Caption-V3-ComfyUI"
+    },
+    {
+      "title": "GEN-AI-and-LLM/exp9 at main · shaktivijayas/GEN-AI-and-LLM",
+      "url": "https://github.com/shaktivijayas/GEN-AI-and-LLM/blob/main/exp9",
+      "snippet": "Contribute to shaktivijayas/GEN-AI-and-LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "Best 75 Image Captioning Models: Compare & Try Free - Roboflow",
+      "url": "https://playground.roboflow.com/models/task/captioning",
+      "snippet": "Which image captioning model is best for your project? Filter 75 models by license, compare size and price, and run 69 of them free on your own images."
+    },
+    {
+      "title": "Image Captioning: State-of-the-Art Open Source AI Models in 2025",
+      "url": "https://madailab.com/image-captioning-state-of-the-art-open-source-ai-models-in-2025",
+      "snippet": "Image captioning technology has evolved significantly by 2025, with state-of-the-art models now capable of generating detailed, accurate, and contextually rich descriptions of visual content."
+    }
+  ]
+}

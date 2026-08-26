@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NIEWEN/qwen15b-code-merged-v2",
+  "slug": "niewen-qwen15b-code-merged-v2",
+  "author": "NIEWEN",
+  "url": "https://huggingface.co/NIEWEN/qwen15b-code-merged-v2",
+  "created_at": "2026-08-26T17:53:32.000Z",
+  "updated_at": "2026-08-26T18:15:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888704,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - QwenLM/qwen-code: An open-source AI coding agent that lives in ...",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "snippet": "Tip Qwen Code is actively iterating on itself — using its own agent and models to file issues, submit PRs, review code, and run tests. Powered by the community, driven by AI."
+    },
+    {
+      "title": "Qwen2.5-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen15.readthedocs.io/en/stable/index.html",
+      "snippet": "Welcome to Qwen! ¶ Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences. Qwen is capable of natural language understanding, text generation, vision understanding, audio ..."
+    }
+  ]
+}

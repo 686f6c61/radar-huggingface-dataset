@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AlinaKl/ljb-llama3.1-8b-imperative",
+  "slug": "alinakl-ljb-llama3-1-8b-imperative",
+  "author": "AlinaKl",
+  "url": "https://huggingface.co/AlinaKl/ljb-llama3.1-8b-imperative",
+  "created_at": "2026-08-26T15:40:52.000Z",
+  "updated_at": "2026-08-26T16:18:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "arxiv:2608.05409",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:finetune:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keras/llama3.1_8b · Hugging Face",
+      "url": "https://huggingface.co/keras/llama3.1_8b",
+      "snippet": "Model Overview Llama 3 is a set of large language models published by Meta. Both pretrained and instruction tuned models are available, and range in size from 7 billion to 70 billion parameters. See the model card below for benchmarks, data sources, and intended use cases. Weights are released under the Llama 3 Community License. Keras model code is released under the Apache 2 License. Links ..."
+    },
+    {
+      "title": "FriendliAI/Meta-Llama-3.1-8B-Instruct-int8 · Hugging Face",
+      "url": "https://huggingface.co/FriendliAI/Meta-Llama-3.1-8B-Instruct-int8",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models ..."
+    },
+    {
+      "title": "llama3.1:8b",
+      "url": "https://ollama.com/library/llama3.1:8b",
+      "snippet": "Readme Meta Llama 3.1 Llama 3.1 family of models available: 8B 70B 405B Llama 3.1 405B is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation."
+    },
+    {
+      "title": "Introducing Llama 3.1: Our most capable models to date - Meta AI",
+      "url": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "snippet": "Bringing open intelligence to all, our latest models expand context length, add support across eight languages, and include Meta Llama 3.1 405B— the first frontier-level open source AI model."
+    },
+    {
+      "title": "llama-3.1-8b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_1-8b-instruct/modelcard",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out)."
+    }
+  ]
+}

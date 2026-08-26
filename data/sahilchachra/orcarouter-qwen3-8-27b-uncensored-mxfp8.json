@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/orcarouter-Qwen3.8-27B-Uncensored-MXFP8",
+  "slug": "sahilchachra-orcarouter-qwen3-8-27b-uncensored-mxfp8",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/orcarouter-Qwen3.8-27B-Uncensored-MXFP8",
+  "created_at": "2026-08-26T15:13:59.000Z",
+  "updated_at": "2026-08-26T15:28:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mxfp8",
+    "apple-silicon",
+    "uncensored",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9548108433,
+  "storage_human": "9.5 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored?local-app=sglang",
+      "snippet": "orcarouter / Qwen3.8-27B-Uncensored like 70 Follow OrcaRouter 761 Image-Text-to-Text Transformers Safetensors English Chinese qwen3_5 abliterated qwen qwen3 qwen3.8 uncensored ai-red-team red-teaming bf16 post-training fine-tuning vision-language function-calling reasoning mtp conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8 · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-FP8: Abliterated, FP8, Research-Only",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-fp8",
+      "snippet": "We shipped Qwen3.8-27B-Uncensored-FP8 today — an abliterated, offline block-FP8 build of Qwe n&#x27;s Qwen3.8 27B, hosted at orcarouter/Qwen3.8-27B-Uncensored-FP8 on Hugging Face. This post is the honest version of what it is, what we did, and — most importantly — what it is not for. What this model is Qwen3.8 27B is a 27-billion-parameter dense, hybrid-attention (Gated DeltaNet linear + full ..."
+    },
+    {
+      "title": "Qwen3.8 27B (free) API — Pricing & Benchmarks · OrcaRouter",
+      "url": "https://www.orcarouter.ai/models/qwen/qwen3.8-27b-free",
+      "snippet": "Qwen3.8-27B is Alibaba&#x27;s open-weight 27B dense model, released under Apache-2.0 and self-hosted on OrcaRouter&#x27;s own infrastructure. This deployment is text-in, text-out, with a 64K-token context window (65,536 positions) built on the Qwen3.5 architecture - 64 layers, 5120 hidden size."
+    }
+  ]
+}

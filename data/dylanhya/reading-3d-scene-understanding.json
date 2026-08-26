@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dylanhya/reading-3d-scene-understanding",
+  "slug": "dylanhya-reading-3d-scene-understanding",
+  "author": "dylanhya",
+  "url": "https://huggingface.co/dylanhya/reading-3d-scene-understanding",
+  "created_at": "2026-08-26T12:58:14.000Z",
+  "updated_at": "2026-08-26T12:58:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "A curated list of awesome scene understanding papers, inspired by awesome-computer-vision. 📷 Multi-view images 🎲 Point cloud"
+    },
+    {
+      "title": "[2403.11401] Scene-LLM: Extending Language Model for 3D Visual ...",
+      "url": "https://arxiv.org/abs/2403.11401",
+      "snippet": "This paper introduces Scene-LLM, a 3D-visual-language model that enhances embodied agents&#x27; abilities in interactive 3D indoor environments by integrating the reasoning strengths of Large Language Models (LLMs). Scene-LLM adopts a hybrid 3D visual feature representation, that incorporates dense spatial information and supports scene state updates. The model employs a projection layer to ..."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    },
+    {
+      "title": "GPT4Scene",
+      "url": "https://gpt4scene.github.io/",
+      "snippet": "To address this, we introduce GPT4Scene, a novel visual prompting paradigm in VLM training and inference that helps build the global-local relationship, significantly improving the 3D spatial understanding of indoor scenes."
+    },
+    {
+      "title": "Text-Scene: A Scene-to-Language Parsing Framework for 3D Scene ...",
+      "url": "https://arxiv.org/html/2509.16721v1",
+      "snippet": "Abstract Enabling agents to understand and interact with complex 3D scenes is a fundamental challenge for embodied artificial intelligence systems. While Multimodal Large Language Models (MLLMs) have achieved significant progress in 2D image understanding, extending such capabilities to 3D scenes remains difficult: 1) 3D environment involves richer concepts such as spatial relationships ..."
+    }
+  ]
+}

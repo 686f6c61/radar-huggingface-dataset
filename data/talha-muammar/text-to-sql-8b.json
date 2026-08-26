@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "talha-muammar/text-to-sql-8B",
+  "slug": "talha-muammar-text-to-sql-8b",
+  "author": "talha-muammar",
+  "url": "https://huggingface.co/talha-muammar/text-to-sql-8B",
+  "created_at": "2026-08-26T16:02:00.000Z",
+  "updated_at": "2026-08-26T16:05:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078460,
+  "storage_human": "186 MB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text to SQL & AI Query Generator | Text2SQL.ai (Free to Try)",
+      "url": "https://www.text2sql.ai/",
+      "snippet": "Transform your text into SQL with Text2SQL.ai - the leading AI Query Generator. Quickly generate queries for MySQL, PostgreSQL, Oracle, and more with ease. Try it for free!"
+    },
+    {
+      "title": "Text-to-SQL with LLM & AI: Complete Guide to Tools and Frameworks",
+      "url": "https://promethium.ai/guides/llm-ai-models-text-to-sql/",
+      "snippet": "October 28, 2025 LLM & AI Models for Text-to-SQL: Modern Frameworks and Implementation Strategies Large language models have transformed text-to-SQL technology. Learn how frameworks like LangChain, Instructor, LlamaIndex, and Snowflake Cortex Analyst enable natural language database queries, plus emerging techniques and implementation best practices."
+    },
+    {
+      "title": "Top 6 Text-to-SQL Query Tools in 2026 - Bytebase",
+      "url": "https://www.bytebase.com/blog/top-text-to-sql-query-tools/",
+      "snippet": "An overview of the most popular text-to-SQL AI tools in 2026, including DataGrip, TablePlus, Vanna.ai, SQLAI.ai, DBHub MCP server, and Bytebase SQL Editor. Compare features and capabilities to find the best SQL AI assistant for your workflow."
+    },
+    {
+      "title": "Text to SQL: The Complete Guide to AI-Powered Query Generation (2026)",
+      "url": "https://builder.ai2sql.io/blog/text-to-sql-complete-guide",
+      "snippet": "Text2SQL (text-to-sql) turns plain English into SQL queries using AI. Compare 7 tools, see accuracy benchmarks, and pick the right solution for your database in 2026."
+    },
+    {
+      "title": "SQL Query Builder & Generator - AI Powered Database Assistant",
+      "url": "https://ai2sql.io/",
+      "snippet": "AI-powered SQL query builder enables you to quickly build SQL queries without any knowledge of SQL for beginners."
+    }
+  ]
+}

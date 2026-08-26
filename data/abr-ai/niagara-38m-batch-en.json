@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "abr-ai/niagara-38m-batch.en",
+  "slug": "abr-ai-niagara-38m-batch-en",
+  "author": "abr-ai",
+  "url": "https://huggingface.co/abr-ai/niagara-38m-batch.en",
+  "created_at": "2026-02-19T19:15:16.000Z",
+  "updated_at": "2026-08-26T17:13:41.000Z",
+  "license": "applied-brain-research-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "niagara-38m-batch",
+    "asr",
+    "speech",
+    "state-space-model",
+    "ssm",
+    "edge-ai",
+    "audio",
+    "on-device",
+    "real-time",
+    "low-power",
+    "low-latency",
+    "cpu",
+    "embedded",
+    "automatic-speech-recognition",
+    "custom_code",
+    "en",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1500729440,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abr-ai/niagara-38m-batch.en · Hugging Face",
+      "url": "https://huggingface.co/abr-ai/niagara-38m-batch.en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abr-ai/niagara-38m-batch.en at main - Hugging Face",
+      "url": "https://huggingface.co/abr-ai/niagara-38m-batch.en/tree/main",
+      "snippet": "abr-ai / niagara-38m-batch.en like 2 Follow Applied Brain Research, Inc. 12 Automatic Speech Recognition Transformers English niagara-38m-batch state-space-model ssm edge-ai low-power custom_code Eval Results License:applied-brain-research-open-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Niagara-38m Sets a New Benchmark for Edge Speech Recognition",
+      "url": "https://www.appliedbrainresearch.com/edge-speech-recognition-niagara-38m",
+      "snippet": "Niagara-38m delivers Whisper-level accuracy with 6× fewer parameters, real-time streaming capabilities, and industry-leading performance for edge speech recognition applications."
+    },
+    {
+      "title": "Niagara Automatic Speech Recognition — Documentation v2025.11.21",
+      "url": "https://docs.appliedbrainresearch.com/models-asr/",
+      "snippet": "Here, we report the performance of the batch variant of our Niagara models to match the leaderboard&#x27;s methodology. ABR&#x27;s Niagara models (blue) achieve the highest accuracy among models under 100M parameters on the Open ASR Leaderboard."
+    },
+    {
+      "title": "Niagara-38m-batch.en · Model card | CodeSOTA",
+      "url": "https://www.codesota.com/model/niagara-38m-batch.en",
+      "snippet": "All benchmark results for Niagara-38m-batch.en recorded on Codesota — dataset, metric, value, and primary-source URL for each score."
+    }
+  ]
+}

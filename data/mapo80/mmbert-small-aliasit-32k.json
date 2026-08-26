@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mapo80/mmbert-small-aliasit-32k",
+  "slug": "mapo80-mmbert-small-aliasit-32k",
+  "author": "mapo80",
+  "url": "https://huggingface.co/mapo80/mmbert-small-aliasit-32k",
+  "created_at": "2026-08-26T18:47:40.000Z",
+  "updated_at": "2026-08-26T18:48:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "vocabulary-trimming",
+    "pii",
+    "it",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54953216,
+  "parameters_human": "55.0M",
+  "storage_bytes": 219826888,
+  "storage_human": "220 MB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jhu-clsp/mmBERT-small · Hugging Face",
+      "url": "https://huggingface.co/jhu-clsp/mmBERT-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mmBERT: ModernBERT goes Multilingual - Hugging Face",
+      "url": "https://huggingface.co/blog/mmbert",
+      "snippet": "Model Family and Links Standard Models: mmBERT-small (140M params total, 42M non-embed) mmBERT-base (307M params total, 110M non-embed) Research Resources: 🤗 mmBERT Model Collection 📝 Paper 🗂️ Training Data (3T+ tokens, fully open) 💻 GitHub Repository 📊 Training Checkpoints for studying training or continued pre-training"
+    },
+    {
+      "title": "mmBERT/README.md at main · JHU-CLSP/mmBERT · GitHub",
+      "url": "https://github.com/JHU-CLSP/mmBERT/blob/main/README.md",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    },
+    {
+      "title": "GitHub - JHU-CLSP/mmBERT: A massively multilingual modern encoder ...",
+      "url": "https://github.com/JHU-CLSP/mmBERT/",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    },
+    {
+      "title": "mmBERT: a Multilingual Modern Encoder through Adaptive Scheduling",
+      "url": "https://arxiv.org/html/2509.06888v1",
+      "snippet": "Overall, mmBERT is the first model to show significant improvements over XLM-R for massively multilingual data while also introducing new techniques for multilingual LM pre-training that apply to both encoders and decoders."
+    }
+  ]
+}

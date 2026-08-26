@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gekap-oor86/cs229-video-understanding",
+  "slug": "gekap-oor86-cs229-video-understanding",
+  "author": "gekap-oor86",
+  "url": "https://huggingface.co/gekap-oor86/cs229-video-understanding",
+  "created_at": "2026-08-26T14:37:16.000Z",
+  "updated_at": "2026-08-26T14:37:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford CS229 Machine Learning | Spring 2026 - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLaqpC4kq8Gpw",
+      "snippet": "This playlist features lectures from the Stanford graduate course CS229 Machine Learning. The course provides a broad introduction to machine learning and statistical pattern recognition. Topics ..."
+    },
+    {
+      "title": "Stanford CS229 I Machine Learning I Building Large Language Models ...",
+      "url": "https://www.youtube.com/watch?v=9vM4p9NN0Ts",
+      "snippet": "For more information about Stanford&#x27;s Artificial Intelligence programs visit: https://stanford.io/ai This lecture provides a concise overview of building a ChatGPT-like model, covering both pretr"
+    },
+    {
+      "title": "CS229: Machine Learning",
+      "url": "https://cs229.stanford.edu/w24-index.html",
+      "snippet": "Course Information Time and Location Instructor Lectures: Mon, Wed 1:30 PM - 2:50 PM (PT) at Gates B1 Auditorium CA Lectures: Please check the Syllabus page or the course&#x27;s Canvas calendar for the latest information. Prerequisites: knowledge of basic computer science principles and skills at a level sufficient to write a reasonably non-trivial computer program in Python/NumPy to the ..."
+    },
+    {
+      "title": "Stanford CS229 I Machine Learning I Building Large Language Models ...",
+      "url": "https://videohighlight.com/v/9vM4p9NN0Ts",
+      "snippet": "For more information about Stanford&#x27;s Artificial Intelligence programs visit: https://stanford.io/ai This lecture provides a concise overview of building a Cha"
+    },
+    {
+      "title": "吴恩达 | 斯坦福CS229：机器学习课程全集 | 中英字幕完结--人工智能/机器学习_哔哩哔哩_bilibili",
+      "url": "https://www.bilibili.com/video/BV1b4anzMEUv/",
+      "snippet": "吴恩达 | 斯坦福CS229：机器学习课程全集 | 中英字幕完结--人工智能/机器学习共计20条视频，包括：斯坦福CS229：机器学习课程 ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo3-greek-7b-dionysius-of-halicarnassus",
+  "slug": "urdatorn-sphragis-alm-olmo3-greek-7b-dionysius-of-halicarnassus",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-dionysius-of-halicarnassus",
+  "created_at": "2026-08-26T13:00:16.000Z",
+  "updated_at": "2026-08-26T13:02:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:Urdatorn/olmo3-7b-ancient-greek",
+    "base_model:finetune:Urdatorn/olmo3-7b-ancient-greek",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "Urdatorn/olmo3-7b-ancient-greek",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    },
+    {
+      "title": "DIONYSIUS OF HALICARNASSUS, Roman Antiquities | Loeb Classical Library",
+      "url": "https://www.loebclassics.com/view/dionysius_halicarnassus-roman_antiquities/1937/pb_LCL347.463.xml",
+      "snippet": "Dionysius of Halicarnassus 2 οὐ δυνηθεὶς δὲ παρακρούσασθαι τοὺς ἄνδρας ὁ μάντις οὐδὲ σφετερίσασθαι τὸν οἰωνὸν λέγει πρὸς αὐτούς, \"Ἄνδρες Ῥωμαῖοι, λέγετε πρὸς τοὺς ἑαυτῶν πολίτας ὅτι κεφαλὴν εἵμαρται γενέσθαι ..."
+    },
+    {
+      "title": "The Roman Antiquities of Dionysius Halicarnassensis",
+      "url": "https://books.google.com/books/about/The_Roman_Antiquities_of_Dionysius_Halic.html?id=wwAMAAAAYAAJ",
+      "snippet": "The Roman Antiquities of Dionysius Halicarnassensis, Volume 3 Dionysius (of Halicarnassus.)"
+    },
+    {
+      "title": "The Roman antiquities of Dionysius of Halicarnassus",
+      "url": "https://archive.org/details/romanantiquities0000dion_k9b0",
+      "snippet": "The Roman antiquities of Dionysius of Halicarnassus by Dionysius, of Halicarnassus Publication date 1937 Topics Antiquities, Rome -- History, Rome -- Antiquities, Roma -- Antiguedades, Roma -- Política y gobierno, Rome (Empire) Publisher Cambridge, Mass. : Harvard University Press ; London : W. Heinemann Collection internetarchivebooks ..."
+    },
+    {
+      "title": "Dionysius of Halicarnassus On literary composition, being the Greek ...",
+      "url": "https://archive.org/details/cu31924026465165",
+      "snippet": "Dionysius of Halicarnassus On literary composition, being the Greek text of the De compositione verborum by Dionysius, of Halicarnassus; Roberts, W. Rhys (William Rhys), 1858-1929 Publication date 1910 Topics Rhetoric, Ancient Publisher London, Macmillan Collection cornell; americana Contributor Cornell University Library Language English Item ..."
+    }
+  ]
+}

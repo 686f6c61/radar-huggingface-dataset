@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DaniilSw/test-classification3",
+  "slug": "daniilsw-test-classification3",
+  "author": "DaniilSw",
+  "url": "https://huggingface.co/DaniilSw/test-classification3",
+  "created_at": "2026-08-26T14:32:25.000Z",
+  "updated_at": "2026-08-26T14:32:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaniilSw (Daniil SMIRNOV) - Hugging Face",
+      "url": "https://huggingface.co/DaniilSw",
+      "snippet": "Recent Activity updated a datasetabout 3 hours ago DaniilSw/dataset_017705864_ecommerce_image_depth published a datasetabout 3 hours ago DaniilSw/dataset_017705864_ecommerce_image_depth View all activity"
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 159 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Meta said on Wednesday that one of its AI models hacked ⁠another company during cybersecurity testing, after an error by its testing partner gave the model unintended internet access."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-Flash-Next by Qwen on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "AI-driven initiative to assist hospitals and rural clinics in early detection of Diabetic Retinopathy, supporting accessible eye care for all through open healthcare innovation."
+    }
+  ]
+}

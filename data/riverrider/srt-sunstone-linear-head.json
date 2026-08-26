@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RiverRider/srt-sunstone-linear-head",
+  "slug": "riverrider-srt-sunstone-linear-head",
+  "author": "RiverRider",
+  "url": "https://huggingface.co/RiverRider/srt-sunstone-linear-head",
+  "created_at": "2026-07-24T21:48:20.000Z",
+  "updated_at": "2026-08-26T16:45:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-modal",
+    "retrieval",
+    "srt",
+    "frozen-backbone",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 280429268,
+  "storage_human": "280 MB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RiverRider/srt-sunstone-linear-head · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/srt-sunstone-linear-head",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RiverRider/Gemma-4-31B-it-SRT-Sunstone · Hugging Face",
+      "url": "https://huggingface.co/RiverRider/Gemma-4-31B-it-SRT-Sunstone",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - space-bacon/SRT",
+      "url": "https://github.com/space-bacon/SRT",
+      "snippet": "SRT-Sunstone — the read-out reads images (cross-modal) A 12.3M community read-out head trained on text only, attached to a frozen multimodal google/gemma-4-31B-it, interprets images with zero image training."
+    },
+    {
+      "title": "GitHub - space-bacon/SRT-Sunstone",
+      "url": "https://github.com/space-bacon/SRT-Sunstone",
+      "snippet": "Meaning forks. SRT sees it. SRT-Adapter is a lightweight module that bolts semiotic awareness onto any frozen causal language model. The backbone runs natively — its own embeddings, its own LM head, its own attention. SRT modules are small taps that read divergence from hidden states, track reflexive awareness, and optionally inject semiotic corrections back into the stream."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/space-bacon/SRT/refs/heads/main/arxiv/abstract.txt",
+      "snippet": "Such models have no mechanism to detect, represent, or respond to this divergence. We introduce the Semiotic-Reflexive Transformer Adapter (SRT-Adapter), a lightweight architecture (~14.5M trainable parameters, 0.19% of a 7B backbone) that bolts semiotic awareness onto any frozen causal language model without modifying its embeddings, attention ..."
+    }
+  ]
+}

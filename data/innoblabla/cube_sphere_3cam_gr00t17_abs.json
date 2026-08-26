@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "innoblabla/cube_sphere_3cam_GR00T17_abs",
+  "slug": "innoblabla-cube_sphere_3cam_gr00t17_abs",
+  "author": "innoblabla",
+  "url": "https://huggingface.co/innoblabla/cube_sphere_3cam_GR00T17_abs",
+  "created_at": "2026-08-26T19:27:35.000Z",
+  "updated_at": "2026-08-26T19:30:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:innoblabla/cube_sphere_3cam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576224784,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "innoblabla/cube_sphere_3cam_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/innoblabla/cube_sphere_3cam_GR00T17",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZebinJiang/Isaac-GR00T17: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/ZebinJiang/Isaac-GR00T17",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Fast3D - Create 3D Models with AI in Seconds",
+      "url": "https://fast3d.io/",
+      "snippet": "Fast3D is the leading AI-powered 3D model generator. Create high-quality 3D models from text or images in seconds."
+    },
+    {
+      "title": "GitHub - hmnshudhmn24/3d-model-generator-py: A Python-based 3D model ...",
+      "url": "https://github.com/hmnshudhmn24/3d-model-generator-py",
+      "snippet": "A Python-based 3D model generator that creates procedural shapes like cubes, spheres, and custom meshes using Open3D. The generated models can be exported as .obj files and visualized in 3D modelin..."
+    },
+    {
+      "title": "Free 3D Shape Generator: Create & Export 3D Primitives | Meshy",
+      "url": "https://www.meshy.ai/3d-tools/3d-shape-generator",
+      "snippet": "Open the free online 3D shape generator and pick a solid 3D primitive such as the cube, sphere, cylinder, cone, torus, pyramid, capsule or octahedron, or choose a flat extruded shape or hollow variant."
+    }
+  ]
+}

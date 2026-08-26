@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amyhughes/reading-document-ai",
+  "slug": "amyhughes-reading-document-ai",
+  "author": "amyhughes",
+  "url": "https://huggingface.co/amyhughes/reading-document-ai",
+  "created_at": "2026-08-26T15:00:08.000Z",
+  "updated_at": "2026-08-26T15:00:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model teaches AI to read more like humans - Futurity",
+      "url": "https://www.futurity.org/model-teaches-ai-to-read-more-like-humans/",
+      "snippet": "A new model teaches workplace AI to read more like humans. Modern artificial intelligence (AI) platforms can summarize reports, analyze documents, and answer questions in seconds."
+    },
+    {
+      "title": "Read model OCR data extraction - Document Intelligence - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0",
+      "snippet": "Extract print and handwritten text from scanned and digital documents with Document Intelligence&#x27;s Read OCR model."
+    },
+    {
+      "title": "AI Document Reader - Listen to Articles, PDFs & Books | TTS.ai",
+      "url": "https://tts.ai/reader/",
+      "snippet": "Document Reader Listen to any article, PDF, ebook, or document read aloud with natural AI voices. Word highlighting, speed control, and offline download."
+    },
+    {
+      "title": "Document Understanding Leaderboard - Best AI Models for PDFs & Documents",
+      "url": "https://arena.ai/leaderboard/document",
+      "snippet": "Document Arena View overall rankings across AI models in document analysis and long-content reasoning."
+    },
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Meta said on Wednesday that one of its AI models hacked ⁠another company during cybersecurity testing, after an error by its testing partner gave the model unintended internet access."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "costanzopadovano/Qwen3.8-27B-DFlash2-NVFP4-GGUF",
+  "slug": "costanzopadovano-qwen3-8-27b-dflash2-nvfp4-gguf",
+  "author": "costanzopadovano",
+  "url": "https://huggingface.co/costanzopadovano/Qwen3.8-27B-DFlash2-NVFP4-GGUF",
+  "created_at": "2026-08-26T13:04:16.000Z",
+  "updated_at": "2026-08-26T13:24:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "nvfp4",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "llama.cpp",
+    "text-generation",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 1094346016,
+  "storage_human": "1.1 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "incoai/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27b Dflash2 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-dflash2.html",
+      "snippet": "Download Qwen3.8 27b Dflash2 GGUF model. 56.7 GB, 1,712 downloads, 49 likes."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

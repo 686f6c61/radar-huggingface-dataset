@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Apodex-1.1-mini-ROCmFP4-STRIX_LEAN-GGUF",
+  "slug": "kingjones777-apodex-1-1-mini-rocmfp4-strix_lean-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-STRIX_LEAN-GGUF",
+  "created_at": "2026-08-26T11:45:05.000Z",
+  "updated_at": "2026-08-26T12:04:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "strix-halo",
+    "gfx1151",
+    "ryzen-ai-max-395",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-lean",
+    "moe",
+    "quantized",
+    "text-generation",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 18744343808,
+  "storage_human": "18.7 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apodex-1.1-mini-ROCmFP4-COHERENT-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-COHERENT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kingjones777/Apodex-1.1-mini-ROCmFP4-COHERENT-GGUF · Discussions",
+      "url": "https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-COHERENT-GGUF/discussions",
+      "snippet": "kingjones777 / Apodex-1.1-mini-ROCmFP4-COHERENT-GGUF like 0 Text Generation GGUF llama.cpp rocm amd strix-halo gfx1151 ryzen-ai-max-395 rocmfp4 rocmfpx Mixture of Experts quantized conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Apodex 1.1: Agent Team Mode + Open FrontierAgent (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/apodex-1-1-agent-team-frontieragent-august-2026",
+      "snippet": "Apodex 1.1 mini is a 35B parameter model, released with open weights specifically for local deployment. The comparison Apodex leads with is deliberate: 35B parameters, running in Agent Team mode, landing within a point of a model roughly 28x its size."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.ai/",
+      "snippet": "The hardest problems are heavy-duty and have no existing answer. Apodex does the deep research to find one, and checks every step so you can trust the result."
+    },
+    {
+      "title": "Apodex | Self-Evolving Heavy-Duty Solver",
+      "url": "https://www.apodex.com/",
+      "snippet": "To research, solve, and discover at the frontier requires more than model capacity — it requires rigorous reasoning, each step verified. Apodex is an AI system designed for complex and demanding research tasks. It structurally splits the reasoning solver from the verifier to deliver grounded, auditable intelligence across three distinct capability tiers."
+    }
+  ]
+}

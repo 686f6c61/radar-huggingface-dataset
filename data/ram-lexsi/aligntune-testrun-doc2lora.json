@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ram-lexsi/aligntune-testrun-Doc2LoRA",
+  "slug": "ram-lexsi-aligntune-testrun-doc2lora",
+  "author": "ram-lexsi",
+  "url": "https://huggingface.co/ram-lexsi/aligntune-testrun-Doc2LoRA",
+  "created_at": "2026-08-26T12:55:50.000Z",
+  "updated_at": "2026-08-26T12:55:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "aligntune",
+    "finetune",
+    "trl",
+    "adapter",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200111,
+  "storage_human": "200111 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - AlignTune",
+      "url": "https://aligntune.lexsi.ai/",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results ..."
+    },
+    {
+      "title": "GitHub - Lexsi-Labs/aligntune: Aligntune : A Modular Toolkit for Post ...",
+      "url": "https://github.com/Lexsi-Labs/aligntune",
+      "snippet": "AlignTune is a production-ready fine-tuning library designed to simplify training and fine-tuning of Large Language Models (LLMs) with both Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) methods. It provides a high-level, unified API that abstracts away the complexities of backend selection, algorithm configuration, and training loops, letting you focus on delivering results."
+    },
+    {
+      "title": "GitHub - earth-app/doc2lora: Generate LoRA Adapters from documents",
+      "url": "https://github.com/earth-app/doc2lora",
+      "snippet": "Generate LoRA Adapters from documents. Contribute to earth-app/doc2lora development by creating an account on GitHub."
+    },
+    {
+      "title": "[2602.15902] Doc-to-LoRA: Learning to Instantly Internalize Contexts",
+      "url": "https://arxiv.org/abs/2602.15902",
+      "snippet": "Long input sequences are central to in-context learning, document understanding, and multi-step reasoning of Large Language Models (LLMs). However, the quadratic attention cost of Transformers makes inference memory-intensive and slow. While context distillation (CD) can transfer information into model parameters, per-prompt distillation is impractical due to training costs and latency. To ..."
+    },
+    {
+      "title": "AlignTune | Tools | Lexsi Labs",
+      "url": "https://lexsi.ai/tools/aligntune",
+      "snippet": "AlignTune is a modular post-training alignment toolkit that helps you take a base LLM and tune it into a dependable, policy-aware assistant. It brings the full alignment workflow under one roof, from supervised fine-tuning (SFT) to preference optimization and RL-style training (including methods like DPO, PPO, SimPO, and more), so you can improve instruction-following, reduce unwanted behavior ..."
+    }
+  ]
+}

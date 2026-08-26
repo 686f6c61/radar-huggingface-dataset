@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hugorodr/multimodal-reasoning-review",
+  "slug": "hugorodr-multimodal-reasoning-review",
+  "author": "hugorodr",
+  "url": "https://huggingface.co/hugorodr/multimodal-reasoning-review",
+  "created_at": "2026-08-26T11:23:42.000Z",
+  "updated_at": "2026-08-26T11:23:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Multimodal AI Models: Complete 2026... — Think4AI",
+      "url": "https://think4ai.com/best-multimodal-ai-models-2026/",
+      "snippet": "Complete 2026 guide to multimodal models 2026 — real-world applications, implementation strategies, and the tools transforming how businesses use AI."
+    },
+    {
+      "title": "Multimodal Reasoning AI: The Next Leap in Intelligent Systems (2025)",
+      "url": "https://ajithp.com/2025/04/21/multimodal-reasoning-ai/",
+      "snippet": "Explore how multimodal AI is reshaping reasoning, with 2025 models like o3, Gemini 2.5, and Magma leading real-world applications."
+    },
+    {
+      "title": "[2401.06805] Exploring the Reasoning Abilities of Multimodal Large ...",
+      "url": "https://arxiv.org/abs/2401.06805",
+      "snippet": "Strong Artificial Intelligence (Strong AI) or Artificial General Intelligence (AGI) with abstract reasoning ability is the goal of next-generation AI. Recent advancements in Large Language Models (LLMs), along with the emerging field of Multimodal Large Language Models (MLLMs), have demonstrated impressive capabilities across a wide range of multimodal tasks and applications. Particularly ..."
+    },
+    {
+      "title": "GitHub - jluite/Awesome-Multimodal-Reasoning: Collection of papers and ...",
+      "url": "https://github.com/jluite/Awesome-Multimodal-Reasoning",
+      "snippet": "Collection of papers and resources on Multimodal Reasoning, including Vision-Language Models, Multimodal Chain-of-Thought, Visual Inference, and others. - jluite/Awesome-Multimodal-Reasoning"
+    }
+  ]
+}

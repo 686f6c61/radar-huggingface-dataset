@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Synthyra/FastESMFold",
+  "slug": "synthyra-fastesmfold",
+  "author": "Synthyra",
+  "url": "https://huggingface.co/Synthyra/FastESMFold",
+  "created_at": "2026-03-23T15:01:47.000Z",
+  "updated_at": "2026-08-26T17:13:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fast_esmfold",
+    "feature-extraction",
+    "protein-language-model",
+    "fastplms",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 3531684708,
+  "parameters_human": "3.53B",
+  "storage_bytes": 14127274696,
+  "storage_human": "14.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synthyra/FastESMFold · Hugging Face",
+      "url": "https://huggingface.co/Synthyra/FastESMFold",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Synthyra/ESMFold2-Fast · Hugging Face",
+      "url": "https://huggingface.co/Synthyra/ESMFold2-Fast",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastPLMs/docs/models.md at main · Synthyra/FastPLMs · GitHub",
+      "url": "https://github.com/Synthyra/FastPLMs/blob/main/docs/models.md",
+      "snippet": "Contribute to Synthyra/FastPLMs development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Synthyra/FastPLMs: Easy to use and efficient implementations ...",
+      "url": "https://github.com/Synthyra/FastPLMs",
+      "snippet": "To add an MSA to a protein input, load full Synthyra/ESMFold2 or Synthyra/ESMFold2-Experimental-Cutoff2025. The schema recognizes PocketConditioning and DistogramConditioning, but the pinned official forward consumes neither. FastPLMs rejects non-null pocket and distogram conditioning instead of silently ignoring scientific inputs."
+    },
+    {
+      "title": "Synthyra | Optimize the outcome, not the interface",
+      "url": "https://synthyra.com/",
+      "snippet": "Synthyra designs proteins and molecules against the outcome, not the interface, using protein interaction, ligand, and genome-scale metabolic context across therapeutics, enzymes, and metabolic engineering."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "resoajoe/blockgrid-nano",
+  "slug": "resoajoe-blockgrid-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/blockgrid-nano",
+  "created_at": "2026-08-26T14:46:02.000Z",
+  "updated_at": "2026-08-26T14:46:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "tiny-model",
+    "forensics",
+    "dct",
+    "edge-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390296,
+  "storage_human": "390296 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe/models",
+      "snippet": "AI & ML interests Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse to drink a 3rd cup of coffee."
+    },
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe/datasets",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Nano AI — Multi-Model AI Image & Video Workbench",
+      "url": "https://nanoai.run/",
+      "snippet": "Create, edit, compare, and save AI visuals with 13 image models, 22 video models, transparent credit costs, and 465+ ready-to-use prompts."
+    },
+    {
+      "title": "Explore Text Models - NanoGPT",
+      "url": "https://nano-gpt.com/models/text",
+      "snippet": "Explore Text Models Browse and discover the best AI language models for conversations, coding, and creative writing."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PoHao/opt2.7-standard-sft",
+  "slug": "pohao-opt2-7-standard-sft",
+  "author": "PoHao",
+  "url": "https://huggingface.co/PoHao/opt2.7-standard-sft",
+  "created_at": "2026-08-26T16:24:40.000Z",
+  "updated_at": "2026-08-26T16:35:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:facebook/opt-2.7b",
+    "base_model:finetune:facebook/opt-2.7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16681964835,
+  "storage_human": "16.7 GB",
+  "base_model": "facebook/opt-2.7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/opt-2.7b · Hugging Face",
+      "url": "https://huggingface.co/facebook/opt-2.7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tuning Techniques - Choosing Between SFT, DPO, and RFT (With a ...",
+      "url": "https://developers.openai.com/cookbook/examples/fine_tuning_direct_preference_optimization_guide",
+      "snippet": "By fine-tuning on explicit pairs of preferred vs non‑preferred completions, DPO aligns model outputs to these nuanced preferences. The below table gives examples of pairwise preference data for a fictional AI assistant that represents an organization, where preferred responses are clear, professional, and aligned with brand standards."
+    },
+    {
+      "title": "README.md · facebook/opt-2.7b at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/opt-2.7b/blob/main/README.md",
+      "snippet": "OPT : Open Pre-trained Transformer Language Models OPT was first introduced in Open Pre-trained Transformer Language Models and first released in metaseq&#x27;s repository on May 3rd 2022 by Meta AI. Disclaimer: The team releasing OPT wrote an official model card, which is available in Appendix D of the paper. Content from this model card has been written by the Hugging Face team. Intro To quote ..."
+    },
+    {
+      "title": "Fine tuning AI techniques: choosing between SFT, DPO, and RFT (with a ...",
+      "url": "https://cleverx.com/blog/fine-tuning-ai-techniques-choosing-between-sft-dpo-and-rft-with-a-practical-dpo-guide",
+      "snippet": "Discover how SFT, DPO, and RFT fine-tuning methods align AI models with safety, compliance, and performance goals."
+    },
+    {
+      "title": "Supervised Fine-Tuning (SFT) for LLMs - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/",
+      "snippet": "Supervised Fine-Tuning (SFT) is a process of taking a pre-trained language model and further training them on a smaller, task-specific dataset with labeled examples. Its goal is to adjust weights of pre-trained model so that it performs better on our specific task without losing its general knowledge acquired during pre-training."
+    }
+  ]
+}

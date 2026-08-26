@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harrirt04/trial-embodied-ai",
+  "slug": "harrirt04-trial-embodied-ai",
+  "author": "harrirt04",
+  "url": "https://huggingface.co/harrirt04/trial-embodied-ai",
+  "created_at": "2026-08-26T15:14:50.000Z",
+  "updated_at": "2026-08-26T15:15:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI - Nature",
+      "url": "https://www.nature.com/collections/ibgfciaafb",
+      "snippet": "Rather than current AI technologies that focused primarily on disembodied cognition, for example language, vision, or games, Embodied AI strives to create more human-like intelligent agents ..."
+    },
+    {
+      "title": "Toward Embodied AGI: A Review of Embodied AI and the Road Ahead - arXiv.org",
+      "url": "https://arxiv.org/html/2505.14235",
+      "snippet": "Definition 1 (Embodied AGI) Embodied AGI is a form of Embodied AI that demonstrates human-like interaction capabilities and can successfully perform diverse, open-ended real-world tasks at a human-level proficiency. In this definition, Embodied AGI is framed as the intersection of AGI and Embodied AI, with an emphasis on human-like settings."
+    },
+    {
+      "title": "Embodied Intelligence | Springer Nature Link",
+      "url": "https://link.springer.com/rwe/10.1007/978-981-97-8440-0_8-1",
+      "snippet": "Embodied intelligence, or embodied AI, refers to artificial systems whose cognitive processes emerge from continuous sensorimotor interactions in real-world environments. This chapter explores its foundational theories, examines implementations across multiple..."
+    },
+    {
+      "title": "Toward Embodied AGI: A Review of Embodied AI and the Road Ahead",
+      "url": "https://arxiv.org/pdf/2505.14235",
+      "snippet": "Definition 1 (Embodied AGI) Embodied AGI is a form of Embodied AI that demonstrates human-like interaction ca-pabilities and can successfully perform diverse, open-ended real-world tasks at a human-level proficiency. In this definition, Embodied AGI is framed as the intersec-tion of AGI and Embodied AI, with an emphasis on human-like settings."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "martingonzalez0606/assignment-generation",
+  "slug": "martingonzalez0606-assignment-generation",
+  "author": "martingonzalez0606",
+  "url": "https://huggingface.co/martingonzalez0606/assignment-generation",
+  "created_at": "2026-08-26T12:00:45.000Z",
+  "updated_at": "2026-08-26T12:00:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "martingonzalez0606 (Martin Gonzalez) - Hugging Face",
+      "url": "https://huggingface.co/martingonzalez0606/models",
+      "snippet": "Retraining LLMs on my laptop, send help AI & ML interests Retraining LLMs on my laptop, send help"
+    },
+    {
+      "title": "Generative models - OpenAI",
+      "url": "https://openai.com/index/generative-models/",
+      "snippet": "This post describes four projects that share a common theme of enhancing or using generative models, a branch of unsupervised learning techniques in machine learning. In addition to describing our work, this post will tell you a bit more about generative models: what they are, why they are important, and where they might be going."
+    },
+    {
+      "title": "AI 3D Model Generator — Create & Animate 3D Characters - Tripo AI",
+      "url": "https://www.tripo3d.ai/features/ai-3d-model-generator",
+      "snippet": "Tripo AI is an all-in-one AI 3D model generator that creates production-ready 3D models from images or text prompts in seconds. It covers the full pipeline — generation, texturing, rigging, segmentation, and mesh optimization — in a single platform."
+    },
+    {
+      "title": "Generative AI for automated task modelling and task allocation in human ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0007850625001271",
+      "snippet": "Task modelling and assignments generation is a complex and time-consuming activity despite the availability of modern CAx and planning tools. This paper proposes an AI based framework using Large Multi-Modal Models and a Digital Twin to automatically create task models, sequences and assignment plans through the processing of video streams involving visual and audio cues on the recorded ..."
+    },
+    {
+      "title": "Research Guides: Research Assignment Design: Generative AI",
+      "url": "https://guides.smu.edu/research_assignments/ai",
+      "snippet": "Generative AI has changed the landscape of research assignments. Generally, scaffolded research assignments and support of students&#x27; research competencies helps them to avoid using AI in ways you don&#x27;t want. Consider restructuring assignments around specific skills, and focus on the process of research rather than on the resulting product. Reading, Evaluation & Synthesis Model appropriate ..."
+    }
+  ]
+}

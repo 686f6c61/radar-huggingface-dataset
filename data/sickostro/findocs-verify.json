@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sickostro/FinDocs-Verify",
+  "slug": "sickostro-findocs-verify",
+  "author": "Sickostro",
+  "url": "https://huggingface.co/Sickostro/FinDocs-Verify",
+  "created_at": "2026-08-26T16:48:19.000Z",
+  "updated_at": "2026-08-26T17:00:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "invoice-mismatch",
+    "financial-compliance",
+    "en",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - HariMKL-oss/FinDocsAI",
+      "url": "https://github.com/HariMKL-oss/FinDocsAI",
+      "snippet": "FinDocs AI is a production-grade, open-source mock of an enterprise Regulatory Document Intelligence & Compliance Analytics platform. Designed and built to process complex banking procedures (BSA/AML, KYC), it showcases an advanced Retrieval-Augmented Generation (RAG) architecture prioritizing ultra-low latency, compliance monitoring, and cost observability."
+    },
+    {
+      "title": "GitHub - shidokan/findocs · GitHub",
+      "url": "https://github.com/shidokan/findocs",
+      "snippet": "FinDocs AI Platform A multi-tenant Azure-based AI platform for retrieval-augmented financial document analysis. Built to demonstrate AI platform engineering at enterprise scale — not a single-tenant RAG application, but the infrastructure that hosts and governs AI workloads across multiple internal customers."
+    },
+    {
+      "title": "A Step-by-Step Guide to AI Model Validation | Galileo.ai",
+      "url": "https://galileo.ai/blog/ai-model-validation",
+      "snippet": "Ensure your AI models perform reliably and ethically. This guide covers AI model validation, best practices, challenges, and modern solutions."
+    },
+    {
+      "title": "Findox™: Complete deal document library and compliance control - Reorg",
+      "url": "https://octus.com/products/findox/",
+      "snippet": "FinDox gives investment teams perpetual access to every deal document, private or public, with airtight compliance controls and real-time reporting."
+    },
+    {
+      "title": "Verify AI Model Authenticity | ModelVerify.ai",
+      "url": "https://modelverify.ai/",
+      "snippet": "Enter any API endpoint to check if it is really the model it claims to be. Anonymous BYOK model verification platform. Supports OpenAI and Anthropic protocols."
+    }
+  ]
+}

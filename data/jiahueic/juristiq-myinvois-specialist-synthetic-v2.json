@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jiahueic/juristiq-myinvois-specialist-synthetic-v2",
+  "slug": "jiahueic-juristiq-myinvois-specialist-synthetic-v2",
+  "author": "jiahueic",
+  "url": "https://huggingface.co/jiahueic/juristiq-myinvois-specialist-synthetic-v2",
+  "created_at": "2026-08-26T18:29:21.000Z",
+  "updated_at": "2026-08-26T18:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342392200,
+  "storage_human": "342 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JuristIQ | Juristic",
+      "url": "https://www.juristic.io/product/juristiq",
+      "snippet": "JuristIQ reasons across your entire workspace: documents, timelines, structures, and workflows. Ask about any part of the matter and the answer draws on all of it. Every AI output links back to the evidence it drew from. Click any claim to see the source document, paragraph, and page. Verify and cite before it reaches a client."
+    },
+    {
+      "title": "jiahueic/juristiq-tax-schema · Hugging Face",
+      "url": "https://huggingface.co/jiahueic/juristiq-tax-schema",
+      "snippet": "Instructions to use jiahueic/juristiq-tax-schema with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use jiahueic/juristiq-tax-schema with PEFT:"
+    },
+    {
+      "title": "Juristic: Visual legal work, powered by context",
+      "url": "https://www.juristic.io/",
+      "snippet": "Juristic turns complex legal work into a visual workspace: structure, timelines, workflows, and AI analysis in one place."
+    },
+    {
+      "title": "Juristic Knowledge Base",
+      "url": "https://help.juristic.io/platform",
+      "snippet": "Platform Learn how to use the features of the platform with guides for all the Juristic tools. General 🎥 How to navigate the dashboard, Groups, and Cases 📖 Sharing & collaboration Flow 📖 The basics of Juristic Flow 🎥 Creating your first task board 🎥 Sharing and permission sets in Flow 🎥 Import templates and extract tasks with AI JuristIQ 📖 The basics of JuristIQ and ..."
+    },
+    {
+      "title": "jiahueic/README.md at main · jiahueic/jiahueic · GitHub",
+      "url": "https://github.com/jiahueic/jiahueic/blob/main/README.md",
+      "snippet": "Config files for my GitHub profile. Contribute to jiahueic/jiahueic development by creating an account on GitHub."
+    }
+  ]
+}

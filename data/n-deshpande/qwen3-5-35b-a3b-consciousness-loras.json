@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "n-deshpande/qwen3.5-35b-a3b-consciousness-loras",
+  "slug": "n-deshpande-qwen3-5-35b-a3b-consciousness-loras",
+  "author": "n-deshpande",
+  "url": "https://huggingface.co/n-deshpande/qwen3.5-35b-a3b-consciousness-loras",
+  "created_at": "2026-08-26T14:54:53.000Z",
+  "updated_at": "2026-08-26T14:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "interpretability",
+    "model-psychology",
+    "text-generation",
+    "arxiv:2604.13051",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27546464,
+  "storage_human": "28 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen35-35b-a3b",
+      "snippet": "Qwen3.5 35B A3B: Unified Vision-Language MoE Reasoning Model Qwen3.5 35B A3B is a multimodal mixture-of-experts foundation model from Alibaba&#x27;s Qwen team, featuring a hybrid Gated DeltaNet and sparse MoE architecture. It has 35 billion total parameters with 3 billion activated per token, delivering high-throughput inference at minimal latency."
+    },
+    {
+      "title": "qwen3.5:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:35b-a3b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen 3.5 35B-A3B | Model Dex | NeuralWire | NeuralWire",
+      "url": "https://neural-wire.com/modeldex/qwen-3-5-35b-a3b",
+      "snippet": "Qwen 3.5 35B-A3B is Alibaba&#x27;s efficiency-focused model in the Qwen 3.5 family, released February 24, 2026. Despite 35 billion total parameters, it activates only 3 billion per forward pass — an extreme sparsity ratio that makes it runnable on consumer-grade hardware with as little as 8GB VRAM while delivering performance that outpaces models with seven times its active parameter count."
+    },
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "Qwen3.5-35B-A3B is the smallest MoE in the Qwen3.5 family, sharing the gated delta networks architecture with 35B total parameters and 3B activated per token (256 experts)."
+    },
+    {
+      "title": "qwen/qwen3.5-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-35b-a3b",
+      "snippet": "Qwen3.5 is a reasoning vision-language model that supports tool use. With 35B total parameters and 3B activated, it outperforms previous generation models more than 6x its size."
+    }
+  ]
+}

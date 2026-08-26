@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ritsumeineurolab/neural-architecture-search-ablation",
+  "slug": "ritsumeineurolab-neural-architecture-search-ablation",
+  "author": "ritsumeineurolab",
+  "url": "https://huggingface.co/ritsumeineurolab/neural-architecture-search-ablation",
+  "created_at": "2026-08-26T11:53:18.000Z",
+  "updated_at": "2026-08-26T11:53:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ritsumeineurolab (Sakura Yamada) - Hugging Face",
+      "url": "https://huggingface.co/ritsumeineurolab",
+      "snippet": "ritsumeineurolab (Sakura Yamada) - Hugging Face ... learning things"
+    },
+    {
+      "title": "Neural Architecture Search Algorithm - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/",
+      "snippet": "Neural Architecture Search (NAS) falls within the realm of automated machine learning (AutoML). AutoML is a comprehensive term encompassing the automation of diverse tasks in the application of machine learning to real-world challenges. The article explores the fundamentals, and applications of the NAS algorithm."
+    },
+    {
+      "title": "Systematic review on neural architecture search - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-11058-w",
+      "snippet": "Within the realm of AutoML, Neural Architecture Search (NAS) has emerged as a powerful technique that automates the design of neural network architectures, the core components of ML models. It has recently gained significant attraction due to its capability to discover novel and efficient architectures that surpass human-designed counterparts."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "Ablation (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)",
+      "snippet": "In artificial intelligence (AI), particularly machine learning, [1] ablation is the removal of a component of an AI system. An ablation study aims to determine the contribution of a component to an AI system by removing the component, and then analyzing the resultant performance of the system."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "emmawilsonbeck/robotics-vision-language-rc135",
+  "slug": "emmawilsonbeck-robotics-vision-language-rc135",
+  "author": "emmawilsonbeck",
+  "url": "https://huggingface.co/emmawilsonbeck/robotics-vision-language-rc135",
+  "created_at": "2026-08-26T14:10:28.000Z",
+  "updated_at": "2026-08-26T14:10:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emmawilsonbeck (Emma Wilson) - Hugging Face",
+      "url": "https://huggingface.co/emmawilsonbeck/models",
+      "snippet": "Trying to be less wrong every day AI & ML interests Trying to be less wrong every day"
+    },
+    {
+      "title": "emmawilsonbeck (Emma Wilson) - Hugging Face",
+      "url": "https://huggingface.co/emmawilsonbeck",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2508.10333",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://vla-survey.github.io/",
+      "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications."
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://arxiv.org/pdf/2510.07077",
+      "snippet": "ABSTRACT Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained signif-icant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects ..."
+    }
+  ]
+}

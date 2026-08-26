@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunsing1990/nlp-classification",
+  "slug": "sunsing1990-nlp-classification",
+  "author": "sunsing1990",
+  "url": "https://huggingface.co/sunsing1990/nlp-classification",
+  "created_at": "2026-08-26T11:48:34.000Z",
+  "updated_at": "2026-08-26T11:48:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best NLP Models for Text Classification in 2025 - ML Journey",
+      "url": "https://mljourney.com/best-nlp-models-for-text-classification-in-2025/",
+      "snippet": "Text classification remains one of the most critical tasks in natural language processing, powering everything from email spam detection to sentiment analysis and document categorization. With the rapid evolution of machine learning and deep learning techniques, choosing the best NLP models for text classification has become both more powerful and more complex. This comprehensive guide ..."
+    },
+    {
+      "title": "Machine Learning: Classification, Regression & NLP - GitHub",
+      "url": "https://github.com/Samuelpillai/machine-learning-classification-regression-nlp",
+      "snippet": "A curated repository of end-to-end machine learning projects demonstrating the application of classification, regression, and natural language processing (NLP) techniques using real-world datasets. Each notebook showcases not just model training and evaluation, but also proper data preprocessing, visualization, and pipeline design—ideal for applying ML in practical environments."
+    },
+    {
+      "title": "Text classification · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/sequence_classification",
+      "snippet": "Text classification Text classification is a common NLP task that assigns a label or class to text. Some of the largest companies run text classification in production for a wide range of practical applications. One of the most popular forms of text classification is sentiment analysis, which assigns a label like 🙂 positive, 🙁 negative, or 😐 neutral to a sequence of text."
+    },
+    {
+      "title": "Large Language Models For Text Classification: Case Study And ...",
+      "url": "https://arxiv.org/html/2501.08457v1",
+      "snippet": "Abstract Unlocking the potential of Large Language Models (LLMs) in data classification represents a promising frontier in natural language processing. In this work, we evaluate the performance of different LLMs in comparison with state-of-the-art deep-learning and machine-learning models, in two different classification scenarios: i) the classification of employees&#x27; working locations based ..."
+    },
+    {
+      "title": "Text Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-classification",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

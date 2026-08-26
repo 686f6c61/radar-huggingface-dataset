@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "TUpreneur/dama-aibrain",
+  "slug": "tupreneur-dama-aibrain",
+  "author": "TUpreneur",
+  "url": "https://huggingface.co/TUpreneur/dama-aibrain",
+  "created_at": "2026-08-26T16:51:14.000Z",
+  "updated_at": "2026-08-26T17:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ic4u2u/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/ic4u2u/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Junfeel/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/Junfeel/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jinnypang/dama-aibrain-lora · Hugging Face",
+      "url": "https://huggingface.co/Jinnypang/dama-aibrain-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "About Us - AIBrain",
+      "url": "https://aibrain.com/about/",
+      "snippet": "About Us Who we are, what we do and why we do it. AIBrain: Augment Your Intelligence with AI AIBrain is an artificial intelligence company with the goal of building fully autonomous AI by unifying the three essential aspects of intelligence, namely Problem Solving, Learning and Memory."
+    },
+    {
+      "title": "dama-aibrain-finetuned-20260823-010940 - Hugging Face",
+      "url": "https://huggingface.co/benesys/dama-aibrain-finetuned-20260823-010940",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

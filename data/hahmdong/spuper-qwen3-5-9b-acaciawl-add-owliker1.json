@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-owliker1",
+  "slug": "hahmdong-spuper-qwen3-5-9b-acaciawl-add-owliker1",
+  "author": "Hahmdong",
+  "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-owliker1",
+  "created_at": "2026-08-26T16:55:38.000Z",
+  "updated_at": "2026-08-26T16:56:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add",
+    "base_model:finetune:Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839725934,
+  "storage_human": "18.8 GB",
+  "base_model": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "SPUPER-qwen3.5-9b-acaciawl-add-3e-5 - friendli.ai",
+      "url": "https://friendli.ai/models/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add-3e-5",
+      "snippet": "Deploy SPUPER-qwen3.5-9b-acaciawl-add-3e-5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    }
+  ]
+}

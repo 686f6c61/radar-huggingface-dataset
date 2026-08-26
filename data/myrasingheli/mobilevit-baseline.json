@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "myrasingheli/mobilevit-baseline",
+  "slug": "myrasingheli-mobilevit-baseline",
+  "author": "myrasingheli",
+  "url": "https://huggingface.co/myrasingheli/mobilevit-baseline",
+  "created_at": "2026-08-26T11:20:06.000Z",
+  "updated_at": "2026-08-26T11:20:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileViT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.33.2/en/model_doc/mobilevit",
+      "snippet": "MobileViT Overview The MobileViT model was proposed in MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari. MobileViT introduces a new layer that replaces local processing in convolutions with global processing using transformers. The abstract from the paper is the following:"
+    },
+    {
+      "title": "MobileViT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/mobilevit",
+      "snippet": "The MobileViT model was proposed in MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari. MobileViT introduces a new layer that replaces local processing in convolutions with global processing using transformers."
+    },
+    {
+      "title": "MobileViT: A mobile-friendly Transformer-based model for image ... - Keras",
+      "url": "https://keras.io/examples/vision/mobilevit/",
+      "snippet": "With convolutions, we can capture spatial relationships that model locality. Besides combining the properties of Transformers and convolutions, the authors introduce MobileViT as a general-purpose mobile-friendly backbone for different image recognition tasks."
+    },
+    {
+      "title": "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision ...",
+      "url": "https://machinelearning.apple.com/research/vision-transformer",
+      "snippet": "Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers, i.e., transformers as convolutions."
+    },
+    {
+      "title": "MobileViT | apple/ml-cvnets | DeepWiki",
+      "url": "https://deepwiki.com/apple/ml-cvnets/5.2.3-mobilevit",
+      "snippet": "MobileViT Relevant source files Purpose and Scope This document provides an overview of MobileViT, a light-weight, general-purpose, and mobile-friendly Vision Transformer architecture implemented in the CVNets repository. It details the model architecture, training process, and usage within the framework. For information about the advanced successor model, see MobileViTv2. Introduction ..."
+    }
+  ]
+}

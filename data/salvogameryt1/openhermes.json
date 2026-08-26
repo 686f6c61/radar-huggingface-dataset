@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "salvogameryt1/OpenHermes",
+  "slug": "salvogameryt1-openhermes",
+  "author": "salvogameryt1",
+  "url": "https://huggingface.co/salvogameryt1/OpenHermes",
+  "created_at": "2026-08-26T15:05:28.000Z",
+  "updated_at": "2026-08-26T15:32:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4856028926,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teknium/openhermes · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/teknium/openhermes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open Hermes - a teknium Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/teknium/open-hermes-652ff011fcb6dd376c337c39",
+      "snippet": "teknium/OpenHermes-2-Mistral-7B Text Generation • Updated Nov 2, 2023 • 5.8k • 256"
+    },
+    {
+      "title": "OpenHermes - llmmodels.org",
+      "url": "https://llmmodels.org/tools/openhermes/",
+      "snippet": "OpenHermes 13B is a groundbreaking language model developed through fine-tuning on the Hermes dataset, which is now fully open source. With 13 billion parameters, OpenHermes represents a significant leap forward in natural language processing technology. It offers researchers, developers, and enthusiasts access to a powerful tool for understanding and generating human-like text. By leveraging ..."
+    },
+    {
+      "title": "openhermes · Datasets",
+      "url": "https://www.modelscope.cn/datasets/teknium/openhermes",
+      "snippet": "OpenHermes Dataset The OpenHermes dataset is composed of 242,000 entries of primarily GPT-4 generated data, from open datasets across the AI landscape, including: OpenHermes 13B is the first fine tune of the Hermes dataset that has a fully open source dataset!"
+    },
+    {
+      "title": "teknium1 (Teknium) · GitHub",
+      "url": "https://github.com/teknium1",
+      "snippet": "On my personal huggingface, Teknium, I have released several models, including my work on Replit-3b Model & OpenHermes: DataForge - Economics - A dataset built by my data synthesis pipeline (not public), DataForge OpenHermes 2.5 Mistral 7B - Most powerful Open Hermes, with much improved coding skills than OpenHermes 2 OpenHermes 2 Mistral 7B - Version 2 of the Open Hermes series. OpenHermes ..."
+    }
+  ]
+}

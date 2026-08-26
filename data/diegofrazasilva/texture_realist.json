@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diegofrazasilva/texture_realist",
+  "slug": "diegofrazasilva-texture_realist",
+  "author": "diegofrazasilva",
+  "url": "https://huggingface.co/diegofrazasilva/texture_realist",
+  "created_at": "2026-08-26T13:58:24.000Z",
+  "updated_at": "2026-08-26T13:59:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310214794,
+  "storage_human": "310 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Texture Generator for 3D Models - Text & Image to PBR | AI 3D Model",
+      "url": "https://ai3dmodel.app/texture",
+      "snippet": "AI Texture Generator for 3D Models Add realistic, production-ready textures to any 3D model with AI. Upload a mesh, describe the surface you want or drop in a reference image, and our AI texture generator paints PBR materials straight onto your model."
+    },
+    {
+      "title": "AI Texture Generator for 3D Models - Retexture with AI - 3D AI Studio",
+      "url": "https://www.3daistudio.com/TextureGenerator",
+      "snippet": "Add or replace textures on any 3D model using AI. Text prompts, reference images, and PBR materials for Blender, Unity, and Unreal."
+    },
+    {
+      "title": "AI Texture Generator for 3D Models - Tripo AI - tripo3d.ai",
+      "url": "https://www.tripo3d.ai/features/ai-texturing",
+      "snippet": "Generate detailed 3D PBR textures, apply global style transfers, and repaint specific areas with precision. Deliver production-ready AI 3D assets in seconds for animation, game engines, and rendering."
+    },
+    {
+      "title": "Realistic AI Nudify - Not Plastic, Actual Skin Texture",
+      "url": "https://nudify.im/realistic-nudify",
+      "snippet": "Realism requires the AI to understand multiple factors simultaneously: the lighting direction in the original photo, the subject&#x27;s natural skin tone, how shadows fall across the body, and the subtle texture variations of real skin. Our model captures all of these, achieving approximately 85-92% realistic results on standard photos."
+    },
+    {
+      "title": "AI Texture Generator for 3D Models | Text & Image Online",
+      "url": "https://www.aiimageto3d.com/ai-texture-generator",
+      "snippet": "Your Prompt \" Medieval metal sword with rust effects and battle scratches, aged iron texture with realistic wear patterns \" White Model (No Texture) Textured Model Fantasy Armor - Image to Texture Upload a reference image and our AI texture generator will analyze the visual style to apply matching fantasy armor textures to your 3D character model."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "YunzeLiu/roborag-x-v5-four-domain-step11719",
+  "slug": "yunzeliu-roborag-x-v5-four-domain-step11719",
+  "author": "YunzeLiu",
+  "url": "https://huggingface.co/YunzeLiu/roborag-x-v5-four-domain-step11719",
+  "created_at": "2026-08-26T11:23:35.000Z",
+  "updated_at": "2026-08-26T12:14:12.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "multimodal-embedding",
+    "video-retrieval",
+    "cosmos3",
+    "roborag",
+    "egodex",
+    "droid",
+    "libero",
+    "robomind",
+    "feature-extraction",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6756319413,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YunzeLiu (Yunze Liu) - Hugging Face",
+      "url": "https://huggingface.co/YunzeLiu",
+      "snippet": "Sort: Recently updated YunzeLiu/robodojo_dreamzero Robotics •Updated 4 days ago• 1"
+    },
+    {
+      "title": "YunzeLiu/robodojo_dreamzero · Hugging Face",
+      "url": "https://huggingface.co/YunzeLiu/robodojo_dreamzero",
+      "snippet": "The model inserts locked AgiBot J3 channels at model indices 2 and 9 and removes exactly those channels on output. Call Model.reset () at every episode boundary in a persistent process."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Yunze Liu - Tsinghua University",
+      "url": "https://yunzeliu.github.io/index.html",
+      "snippet": "Previously, I was a Researcher at Memories.ai, focusing on efficient video MLLMs, and a Research Intern with the Spatial Intelligence Group at Microsoft Research Asia, where I studied human-object interaction."
+    }
+  ]
+}

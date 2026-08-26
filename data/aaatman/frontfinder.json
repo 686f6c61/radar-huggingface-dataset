@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aaaTman/FrontFinder",
+  "slug": "aaatman-frontfinder",
+  "author": "aaaTman",
+  "url": "https://huggingface.co/aaaTman/FrontFinder",
+  "created_at": "2026-08-26T19:01:05.000Z",
+  "updated_at": "2026-08-26T19:01:05.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aaaTman/FrontFinderAIES2025 · Hugging Face",
+      "url": "https://huggingface.co/aaaTman/FrontFinderAIES2025",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - aaTman/frontfinder-app: Where the frontfinder web app code ...",
+      "url": "https://github.com/aaTman/frontfinder-app",
+      "snippet": "Where the frontfinder web app code resides. Contribute to aaTman/frontfinder-app development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - hanchyhill/FrontFinder: FrontFinder AI: Efficient ...",
+      "url": "https://github.com/hanchyhill/FrontFinder/tree/master",
+      "snippet": "FrontFinder AI: Efficient Identification of Frontal Boundaries over the Continental United States and NOAA&#x27;s Unified Surface Analysis Domain using the UNET3+ Model Architecture - hanchyhill/FrontF..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=fronts",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: fronts Clear all"
+    },
+    {
+      "title": "FrontFinder AI: Efficient Identification of Frontal Boundaries over the ...",
+      "url": "https://journals.ametsoc.org/view/journals/aies/4/1/AIES-D-24-0043.1.xml",
+      "snippet": "Abstract FrontFinder artificial intelligence (AI) is a novel machine learning algorithm trained to detect cold, warm, stationary, and occluded fronts and drylines. Fronts are associated with many high-impact weather events around the globe. Frontal analysis is still primarily done by human forecasters, often implementing their own rules and criteria for determining front positions. Such ..."
+    }
+  ]
+}

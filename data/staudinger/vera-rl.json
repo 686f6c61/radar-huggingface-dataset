@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Staudinger/VERA-RL",
+  "slug": "staudinger-vera-rl",
+  "author": "Staudinger",
+  "url": "https://huggingface.co/Staudinger/VERA-RL",
+  "created_at": "2026-08-26T16:02:13.000Z",
+  "updated_at": "2026-08-26T16:02:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Vera Rubin Cuts Post-Training Token Costs With Seven-Chip Codesign",
+      "url": "https://www.techtimes.com/articles/320933/20260718/nvidia-vera-rubin-cuts-post-training-token-costs-seven-chip-codesign.htm",
+      "snippet": "NVIDIA Vera Rubin platform targets post-training AI costs with a seven-chip codesign architecture delivering 22 TB/s of HBM4 bandwidth per GPU, double the NVLink 6 speed of Blackwell, and claimed ..."
+    },
+    {
+      "title": "Next Gen Data Center CPU | NVIDIA Vera CPU",
+      "url": "https://www.nvidia.com/en-us/data-center/vera-cpu/",
+      "snippet": "Built for the World&#x27;s AI Factories NVIDIA Vera is built for the CPU work behind agentic AI and reinforcement learning (RL), including code execution, tool use, sandboxing, analytics, data pipelines, and orchestration beyond the model. As both a host CPU for accelerated systems and a standalone CPU for AI factory workloads, Vera keeps GPUs fed, agents responsive, and training loops moving ..."
+    },
+    {
+      "title": "NVIDIA Vera Rubin Targets Cheaper Agentic AI Training",
+      "url": "https://techgenyz.com/nvidia-vera-rubin-agentic-ai-training-efficiency/",
+      "snippet": "NVIDIA Vera Rubin targets lower-cost agentic AI post-training with fewer GPUs, faster RL workflows and improved intelligence per dollar."
+    },
+    {
+      "title": "NVIDIA Vera Rubin Maximizes Intelligence per Dollar for Post-Training ...",
+      "url": "https://blogs.nvidia.com/blog/nvidia-vera-rubin-post-training-intelligence-per-dollar/",
+      "snippet": "It has been running on NVIDIA&#x27;s platform and optimized kernel libraries, and is looking to harness the Vera Rubin platform next. Learn more about NVIDIA Vera Rubin, the platform for AI factories to maximize intelligence per dollar across workloads. And explore NVIDIA&#x27;s full-stack platform for training frontier models."
+    },
+    {
+      "title": "NVIDIA Vera Rubin Maximizes Intelligence per Dollar for Post-Training ...",
+      "url": "https://www.hpcwire.com/off-the-wire/nvidia-vera-rubin-maximizes-intelligence-per-dollar-for-post-training-workloads/",
+      "snippet": "NVIDIA Vera Rubin Maximizes Intelligence per Dollar for Post-Training Workloads. July 17, 2026 Shares July 17, 2026 — Think of a professional athlete. What separates elite performers is what happens between games: continuous refinement, adjusting to new opponents and sharpening skills based on what the last game exposed. Agentic AI works the same way. A model is no longer asked for an answer ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "toolathlon-eval-02/Annoy-PyEdu-Rs-Raw",
+  "slug": "toolathlon-eval-02-annoy-pyedu-rs-raw",
+  "author": "toolathlon-eval-02",
+  "url": "https://huggingface.co/toolathlon-eval-02/Annoy-PyEdu-Rs-Raw",
+  "created_at": "2026-08-26T11:54:14.000Z",
+  "updated_at": "2026-08-26T11:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toolathlonEval/Annoy-PyEdu-Rs-Raw · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/toolathlonEval/Annoy-PyEdu-Rs-Raw",
+      "snippet": "We release the raw data for our processed PythonEdu-Rs dataset, adopted from the original dataset from HuggingFaceTB team."
+    },
+    {
+      "title": "toolathlon-eval-02/Annoy-PyEdu-Rs-Raw - Hugging Face",
+      "url": "https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs-Raw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Updated README for Annoy-PyEdu-Rs-Raw dataset with license information ...",
+      "url": "https://gist.github.com/mcpllmbench-ops/1b6ce5cefce6e6403041fedfe576bf6c",
+      "snippet": "Annoy: This should be a paper Title 📑 Paper | 🌐 Project Page | 💾 Released Resources | 📦 Repo We release the raw data for our processed PythonEdu-Rs dataset, adopted from the original dataset from HuggingFaceTB team. The data format for each line in the 0_368500_filtered_v2_ds25.sced.jsonl is as follows:"
+    },
+    {
+      "title": "Dataset License Issue - Toolathlon",
+      "url": "https://toolathlon.xyz/docs/tasks/tech/18",
+      "snippet": "The licenses for the two datasets are: Annoy-PyEdu-Rs-Raw = {license}, Annoy-PyEdu-Rs = {license}\" Also, please update the corresponding huggingface dataset pages by adding the following line at the end of the existing readme."
+    },
+    {
+      "title": "GitHub - HYZ17/Toolathlon-Official: The Tool Decathlon: Benchmarking ...",
+      "url": "https://github.com/HYZ17/Toolathlon-Official",
+      "snippet": "Introduction Toolathlon is a benchmark to assess language agents&#x27; general tool use in realistic environments. It features 600+ diverse tools based on real-world software environments. Each task requires long-horizon tool calls to complete. Below we show a demo task where the agent needs to automatically check assignments in the email box, and grade them on Canvas."
+    }
+  ]
+}

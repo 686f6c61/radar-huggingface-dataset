@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vladimir94/flux2-klein-4b-stamp-filter",
+  "slug": "vladimir94-flux2-klein-4b-stamp-filter",
+  "author": "vladimir94",
+  "url": "https://huggingface.co/vladimir94/flux2-klein-4b-stamp-filter",
+  "created_at": "2026-08-26T14:37:21.000Z",
+  "updated_at": "2026-08-26T14:56:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "flux",
+    "flux2-klein",
+    "diffusers",
+    "image-to-image",
+    "style-transfer",
+    "base_model:unsloth/FLUX.2-klein-4B",
+    "base_model:adapter:unsloth/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25305264,
+  "storage_human": "25 MB",
+  "base_model": "unsloth/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flux2-klein-4b/README.md at main · VladimirRL/flux2-klein-4b",
+      "url": "https://github.com/VladimirRL/flux2-klein-4b/blob/main/README.md",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to VladimirRL/flux2-klein-4b development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - VladimirRL/flux2-klein-4b: Official inference repo for FLUX.2 ...",
+      "url": "https://github.com/VladimirRL/flux2-klein-4b",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to VladimirRL/flux2-klein-4b development by creating an account on GitHub."
+    },
+    {
+      "title": "Flux2 Klein 4B | Lightweight Fast Image Generator",
+      "url": "https://flux-klein.com/ai-models/flux2-klein-4b",
+      "snippet": "Try on Flux2 Klein 4B, a lightweight 4B-parameter AI image generator from the FLUX2 Klein series. Get fast text-to-image results with strong prompt following and everyday creative quality on consumer GPUs. Try Flux2 Klein 4B online now to prototype social posts, concept art, and marketing visuals in seconds!"
+    },
+    {
+      "title": "black-forest-labs/FLUX.2-klein-4B · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FLUX.2-klein-4B · Models",
+      "url": "https://www.modelscope.cn/models/black-forest-labs/FLUX.2-klein-4B",
+      "snippet": "Responsible AI Development Black Forest Labs is committed to the responsible development and deployment of our models. Prior to releasing the FLUX.2 family of models, we evaluated and mitigated a number of risks in our model checkpoints and hosted services, including the generation of unlawful content, including child sexual abuse material (CSAM) and nonconsensual intimate imagery (NCII). We ..."
+    }
+  ]
+}

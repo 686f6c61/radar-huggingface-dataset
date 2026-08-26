@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "joshuagreen/cv-classification",
+  "slug": "joshuagreen-cv-classification",
+  "author": "joshuagreen",
+  "url": "https://huggingface.co/joshuagreen/cv-classification",
+  "created_at": "2026-08-26T15:43:20.000Z",
+  "updated_at": "2026-08-26T15:43:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joshua-Green-ai · GitHub",
+      "url": "https://github.com/Joshua-Green-ai/",
+      "snippet": "Joshua-Green-ai has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Optimizing Automatic CV Classification with Contrastive and Generative ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050925022409",
+      "snippet": "Automatic classification of curriculum vitae (CVs) is a major challenge in the field of information extraction and automated recruitment. With the exponential growth of textual data, it has become crucial to leverage innovative approaches to improve the efficiency and accuracy of classification systems. This article explores the latest advances in contrastive learning and generative models to ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 159 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "(PDF) Optimizing Curriculum Vitae Concordance: A Comparative ...",
+      "url": "https://www.researchgate.net/publication/382928041_Optimizing_Curriculum_Vitae_Concordance_A_Comparative_Examination_of_Classical_Machine_Learning_Algorithms_and_Large_Language_Model_Architectures",
+      "snippet": "To this end, this study proposes a decision-making model that can be a vital standard for AI technology application to corporate job interviews. For decision-making modeling, the Analytic ..."
+    }
+  ]
+}

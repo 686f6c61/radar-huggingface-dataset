@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "prince4332/ak-ga-en",
+  "slug": "prince4332-ak-ga-en",
+  "author": "prince4332",
+  "url": "https://huggingface.co/prince4332/ak-ga-en",
+  "created_at": "2026-08-26T19:29:59.000Z",
+  "updated_at": "2026-08-26T19:30:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 756348736,
+  "parameters_human": "756.3M",
+  "storage_bytes": 1532730258,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prince4332/ak-multiturn-mix-en-sum · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/prince4332/ak-multiturn-mix-en-sum",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prince4332/whisper-v3-akan-finetuned-v2 · Hugging Face",
+      "url": "https://huggingface.co/prince4332/whisper-v3-akan-finetuned-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/prince4332-parakeet-tdt-0-6b-v3-akan - GitHub",
+      "url": "https://github.com/Damacol/prince4332-parakeet-tdt-0-6b-v3-akan",
+      "snippet": "Quick Start for prince4332/parakeet-tdt-.6b-v3-akan Open Venice Chat in your browser Select the prince4332/parakeet-tdt-.6b-v3-akan model from the selector Drop your prompt: code, story, research, system design, art direction... Get fast, contextual responses without the usual lectures Keep everything private. Export or delete anytime."
+    },
+    {
+      "title": "Damacol/prince4332-parakeet-tdt-0.6b-v3-akan - GitHub",
+      "url": "https://github.com/Damacol/prince4332-parakeet-tdt-0.6b-v3-akan",
+      "snippet": "prince4332/parakeet-tdt-.6b-v3-akan - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

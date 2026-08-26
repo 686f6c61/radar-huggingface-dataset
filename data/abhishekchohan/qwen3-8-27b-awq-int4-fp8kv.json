@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "abhishekchohan/Qwen3.8-27B-AWQ-INT4-FP8KV",
+  "slug": "abhishekchohan-qwen3-8-27b-awq-int4-fp8kv",
+  "author": "abhishekchohan",
+  "url": "https://huggingface.co/abhishekchohan/Qwen3.8-27B-AWQ-INT4-FP8KV",
+  "created_at": "2026-08-26T16:42:48.000Z",
+  "updated_at": "2026-08-26T16:45:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "awq",
+    "int4",
+    "w4a16",
+    "fp8-kv-cache",
+    "long-context",
+    "imatrix",
+    "llm-compressor",
+    "compressed-tensors",
+    "vllm",
+    "speculative-decoding",
+    "conversational",
+    "dataset:nvidia/Nemotron-SFT-Instruction-Following-Chat-v3",
+    "dataset:nvidia/Nemotron-SFT-Math-v4",
+    "dataset:nvidia/Nemotron-SFT-Science-v2",
+    "dataset:nvidia/Nemotron-SFT-SWE-v3",
+    "dataset:nvidia/Nemotron-SFT-Multilingual-v2",
+    "base_model:abhishekchohan/Qwen3.8-27B-AWQ-INT4",
+    "base_model:quantized:abhishekchohan/Qwen3.8-27B-AWQ-INT4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20993265405,
+  "storage_human": "21.0 GB",
+  "base_model": "abhishekchohan/Qwen3.8-27B-AWQ-INT4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhishekchohan/Qwen3.8-27B-AWQ-INT4 · Hugging Face",
+      "url": "https://huggingface.co/abhishekchohan/Qwen3.8-27B-AWQ-INT4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

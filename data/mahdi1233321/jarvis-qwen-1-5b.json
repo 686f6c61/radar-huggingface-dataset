@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mahdi1233321/jarvis-qwen-1.5b",
+  "slug": "mahdi1233321-jarvis-qwen-1-5b",
+  "author": "mahdi1233321",
+  "url": "https://huggingface.co/mahdi1233321/jarvis-qwen-1.5b",
+  "created_at": "2026-08-26T16:56:28.000Z",
+  "updated_at": "2026-08-26T16:58:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JoshiiWahWah/jarvis: J.A.R.V.I.S — personal AI operations ...",
+      "url": "https://github.com/JoshiiWahWah/jarvis/tree/main",
+      "snippet": "J.A.R.V.I.S — Personal AI Operations Agent, powered by Qwen Cloud One orchestrator you talk to (voice, text, or phone) that reasons with Qwen Cloud — qwen-max orchestrating, qwen-turbo specialists — served by Alibaba Cloud Model Studio (DashScope). It auto-delegates to six subagents, acts in the real world via MCP-style connectors, and runs daily ops for a real app business: revenue ..."
+    },
+    {
+      "title": "GitHub - llm-guy/jarvis: Jarvis is a voice-activated, conversational AI ...",
+      "url": "https://github.com/llm-guy/jarvis",
+      "snippet": "Jarvis is a voice-activated, conversational AI assistant powered by a local LLM (Qwen via Ollama). It listens for a wake word, processes spoken commands using a local language model with LangChain, and responds out loud via TTS. It supports tool-calling for dynamic functions like checking the current time."
+    },
+    {
+      "title": "Gio-010/JARVIS-Qwen · Hugging Face",
+      "url": "https://huggingface.co/Gio-010/JARVIS-Qwen",
+      "snippet": "Gio-010 / JARVIS-Qwen like 0 GGUF qwen3_5 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenJarvis — Personal AI, On Personal Devices",
+      "url": "https://openjarvis.stanford.edu/",
+      "snippet": "Browse and pull local models any time with jarvis model. Read the full docs → Pick a model, or let OpenJarvis pick one for your hardware. Manages the full catalog of local models across providers. The inference runtime — Ollama, vLLM, SGLang, llama.cpp, and cloud APIs. Auto-detects your hardware and recommends the best fit."
+    }
+  ]
+}

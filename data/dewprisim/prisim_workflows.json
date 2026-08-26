@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dewprisim/Prisim_Workflows",
+  "slug": "dewprisim-prisim_workflows",
+  "author": "Dewprisim",
+  "url": "https://huggingface.co/Dewprisim/Prisim_Workflows",
+  "created_at": "2026-08-26T12:48:23.000Z",
+  "updated_at": "2026-08-26T13:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prisim - AI Automation for Modern Businesses",
+      "url": "https://www.prisim.co.in/",
+      "snippet": "Prisim AI Automation for Modern Businesses Prisim builds AI voice agents, WhatsApp automation, and backend workflows that help modern businesses capture leads, respond instantly, and scale operations 24/7."
+    },
+    {
+      "title": "Prism AI",
+      "url": "https://prism-ai.dev/",
+      "snippet": "Enterprise-grade Agentic AI and Search in hours, not months. Prism helps mid-sized companies deploy full-text, semantic, and hybrid search on top of their existing stack, with the UI, relevance controls, and AI layer already built in."
+    },
+    {
+      "title": "GitHub - juliantenney/prism: AI Workflow Orchestration",
+      "url": "https://github.com/juliantenney/prism",
+      "snippet": "AI Workflow Orchestration. Contribute to juliantenney/prism development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Detector | Check AI text with Reprism",
+      "url": "https://reprism.com/en/ai-detector",
+      "snippet": "Inside Reprism&#x27;s AI Detector Detect AI from any model Check text against output patterns from ChatGPT, GPT-5, Claude, Gemini, DeepSeek, and more."
+    },
+    {
+      "title": "AI Workflow Editor",
+      "url": "https://www.useprism.dev/",
+      "snippet": "Create and manage AI agent workflows The fastest way to prototype and test your LLM logic. Start Building"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "nitrai-research/Moderato-V1-Pro",
+  "slug": "nitrai-research-moderato-v1-pro",
+  "author": "nitrai-research",
+  "url": "https://huggingface.co/nitrai-research/Moderato-V1-Pro",
+  "created_at": "2026-08-25T15:54:39.000Z",
+  "updated_at": "2026-08-26T18:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual",
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moderato_moe",
+    "text-generation",
+    "moe",
+    "mixture-of-experts",
+    "reflexive-role-routing",
+    "code-generation",
+    "reasoning",
+    "qwen",
+    "conversational",
+    "multilingual",
+    "en",
+    "code",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113348359666,
+  "parameters_human": "113.35B",
+  "storage_bytes": 226794023122,
+  "storage_human": "226.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nitrai-research/Moderato-V1-Pro · Hugging Face",
+      "url": "https://huggingface.co/nitrai-research/Moderato-V1-Pro",
+      "snippet": "nitrai-research / Moderato-V1-Pro like 1 Follow NitrAI 5 Text Generation Transformers Safetensors multilingual English code moderato_moe Mixture of Experts mixture-of-experts reflexive-role-routing code-generation reasoning qwen conversational Eval Results License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "nitrai-research (NitrAI) - Hugging Face",
+      "url": "https://huggingface.co/nitrai-research",
+      "snippet": "NitrAI ⚡ Welcome to NitrAI. We are an AI research and development organization dedicated to bridging the gap between frontier closed-source intelligence and consumer-grade hardware."
+    },
+    {
+      "title": "Models — NitrAI",
+      "url": "https://nitrai.dev/models.html",
+      "snippet": "NitrAI open-weights reasoning models — specifications and architecture details."
+    },
+    {
+      "title": "NitrAI — AI Research Lab",
+      "url": "https://nitrai.dev/",
+      "snippet": "We introduce OpenGCM-v2 (9B) and Polaris-V1 (4B), two open-weights LLMs trained via cognitive trajectory distillation. By extracting reasoning proofs from GPT-5.5, Claude-Fable-5, and Gemini 3.1 Pro into Qwen3.5 base architectures with precision YaRN scaling, we achieve competitive reasoning performance while operating within consumer GPU VRAM ..."
+    },
+    {
+      "title": "moderato.ai",
+      "url": "https://moderato.ai/",
+      "snippet": "moderato.ai"
+    }
+  ]
+}

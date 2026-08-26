@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-ffn-lora",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct-4x1-moe-sni-ffn-lora",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-ffn-lora",
+  "created_at": "2026-08-25T20:34:41.000Z",
+  "updated_at": "2026-08-26T16:18:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Jongbin-kr/llama-3.1-8b-instruct-4x1-moe",
+    "base_model:finetune:Jongbin-kr/llama-3.1-8b-instruct-4x1-moe",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2056641433,
+  "storage_human": "2.1 GB",
+  "base_model": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama-3.1-8b-instruct-4x1-moe-lbox-sft-5ep-all-linear",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-sft-5ep-all-linear",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep - Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Llama 3.1 8B - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/llama-3.1-8b-instant",
+      "snippet": "Llama 3.1 8B on Groq provides low-latency, high-quality responses suitable for real-time conversational interfaces, content filtering systems, and data analysis applications. This model offers a balance of speed and performance with significant cost savings compared to larger models."
+    },
+    {
+      "title": "Llama 3.1 8B Instruct 4x2 MoE by Jongbin-kr - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/Jongbin-kr%2Fllama-3.1-8b-instruct-4x2-moe,3bqsG1wwLvc8EGxu1aQnUa",
+      "snippet": "Llama 3.1 8B Instruct 4x2 MoE is an open-source language model by Jongbin-kr. Features: 8b LLM, VRAM: 50.2GB, Context: 128K, Instruction-Based, LLM Explorer Score: 0.28."
+    }
+  ]
+}

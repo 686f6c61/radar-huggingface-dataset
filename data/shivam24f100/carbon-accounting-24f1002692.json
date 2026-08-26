@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shivam24f100/carbon-accounting-24f1002692",
+  "slug": "shivam24f100-carbon-accounting-24f1002692",
+  "author": "Shivam24f100",
+  "url": "https://huggingface.co/Shivam24f100/carbon-accounting-24f1002692",
+  "created_at": "2026-08-26T17:24:06.000Z",
+  "updated_at": "2026-08-26T17:26:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shivam24f100 (Shivam kumar) - Hugging Face",
+      "url": "https://huggingface.co/Shivam24f100",
+      "snippet": "Bigru Rag Mcq Solver 🚀 Rank MCQ answer choices and return top‑3 predictions Shivam24f100 15 days ago"
+    },
+    {
+      "title": "24f1002692 (Shivam) · GitHub",
+      "url": "https://github.com/24f1002692",
+      "snippet": "Student @ IIT Madras online BS Degree | Aspiring Web Developer | Passionate about clean code, backend systems & real-world applications building. - 24f1002692"
+    },
+    {
+      "title": "24f1002692 - Repositories - GitHub",
+      "url": "https://github.com/24f1002692?tab=repositories",
+      "snippet": "Student @ IIT Madras online BS Degree | Aspiring Web Developer | Passionate about clean code, backend systems & real-world applications building. - 24f1002692"
+    },
+    {
+      "title": "Unique AI model tracks global carbon emissions",
+      "url": "https://en.ncsti.gov.cn/Latest/news/202604/t20260412_243619.html",
+      "snippet": "Zhang said traditional accounting attributes a large share of export-related emissions to China while obscuring the responsibility of developed countries on the consumption side. By quantifying these \"carbon leaks\" in global trade, Chinese officials believe the model provides a more scientific basis for future climate negotiations."
+    },
+    {
+      "title": "(PDF) AI-Powered Carbon Accounting: Redefining ESG ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/389439314_AI-Powered_Carbon_Accounting_Redefining_ESG_Standards_for_Corporate_Sustainability",
+      "snippet": "By redefining ESG reporting frameworks, AI-powered carbon accounting empowers businesses to proactively reduce emissions, optimize sustainability performance, and align with net-zero goals."
+    }
+  ]
+}

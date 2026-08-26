@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "UX4567/Text-Summarizer-t5-small",
+  "slug": "ux4567-text-summarizer-t5-small",
+  "author": "UX4567",
+  "url": "https://huggingface.co/UX4567/Text-Summarizer-t5-small",
+  "created_at": "2026-08-26T12:04:33.000Z",
+  "updated_at": "2026-08-26T12:07:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "summarization",
+    "flan-t5",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 170721888,
+  "storage_human": "171 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KeerthiKeswaran/t5_small_ft_text_summarization · Hugging Face",
+      "url": "https://huggingface.co/KeerthiKeswaran/t5_small_ft_text_summarization",
+      "snippet": "The model, named \"t5-small,\" is pre-trained on a diverse corpus of text data, enabling it to capture essential information and generate meaningful summaries. Fine-tuning is conducted with careful attention to hyperparameter settings, including batch size and learning rate, to ensure optimal performance for text summarization."
+    },
+    {
+      "title": "GitHub - mubix-dev/t5-text-summarizer: Full-stack AI text summarizer ...",
+      "url": "https://github.com/mubix-dev/t5-text-summarizer",
+      "snippet": "Offline training pipeline — a Jupyter notebook loads the SAMSum dialogue-summarization dataset, cleans and tokenizes it, fine-tunes t5-small with the Hugging Face Trainer, and publishes the model + tokenizer to the Hugging Face Hub: mubix-dev/t5-small-text-summarizer. Runtime inference stack — a FastAPI backend downloads the fine-tuned model from the Hub on first startup (cached locally ..."
+    },
+    {
+      "title": "GitHub - poojasabbani/T5_Text_Summarizer: AI-powered text summarization ...",
+      "url": "https://github.com/poojasabbani/T5_Text_Summarizer",
+      "snippet": "AI Text Summarizer is a Natural Language Processing (NLP) application that generates concise and meaningful summaries from long pieces of text using a fine-tuned T5-small Transformer model. The application provides a simple web interface where users can input large text passages and receive high-quality abstractive summaries in real time."
+    },
+    {
+      "title": "Text Summarization using T5 - LearnOpenCV",
+      "url": "https://learnopencv.com/text-summarization-using-t5/",
+      "snippet": "Text Summarization using T5: Uncover advanced NLP techniques and applications with the transformative T5 model, shaping the future of concise, AI-driven content"
+    },
+    {
+      "title": "t5-small download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/t5-small/",
+      "snippet": "T5-Small is a lightweight variant of the Text-To-Text Transfer Transformer (T5), designed to handle a wide range of NLP tasks using a unified text-to-text approach. Developed by researchers at Google, this model reframes all tasks—such as translation, summarization, classification, and question answering—into the format of input and output as plain text strings. With only 60 million ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nuottroisaoduoc/Qwen3.8-Flash-Next",
+  "slug": "nuottroisaoduoc-qwen3-8-flash-next",
+  "author": "nuottroisaoduoc",
+  "url": "https://huggingface.co/nuottroisaoduoc/Qwen3.8-Flash-Next",
+  "created_at": "2026-08-26T13:43:46.000Z",
+  "updated_at": "2026-08-26T13:43:46.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen38-flash-next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention: A GDN + QSA hybrid architecture."
+    }
+  ]
+}

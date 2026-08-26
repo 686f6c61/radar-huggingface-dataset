@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bedmancdn/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+  "slug": "bedmancdn-qwen3-5-4b-uncensored-hauhaucs-aggressive",
+  "author": "bedmancdn",
+  "url": "https://huggingface.co/bedmancdn/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-08-26T13:56:26.000Z",
+  "updated_at": "2026-08-26T13:56:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "en",
+    "zh",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 19753933312,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen-3.5-4B-uncensored-colab/README.md at main - GitHub",
+      "url": "https://github.com/CookieFilled/qwen-3.5-4B-uncensored-colab/blob/main/README.md",
+      "snippet": "Uncensored Model: Runs the HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive model (Q4_K_M GGUF format) for unrestricted, highly direct outputs. Ollama Backend: Seamlessly downloads, builds, and serves the model locally within the Colab environment using Ollama&#x27;s efficient inference engine."
+    },
+    {
+      "title": "ComfyUI-Qwen3.5-Uncensored - GitHub",
+      "url": "https://github.com/Deaquay/ComfyUI-Qwen3.5-Uncensored",
+      "snippet": "ComfyUI-QwenVL custom nodes with local model discovery and 3.5 support: Integrates the Qwen-VL series, including Qwen2.5-VL,Qwen3-VL, and Qwen3.5 with GGUF support for advanced multimodal AI in tex..."
+    },
+    {
+      "title": "jaahas/qwen3.5-uncensored",
+      "url": "https://ollama.com/jaahas/qwen3.5-uncensored",
+      "snippet": "A completely uncensored variant of Qwen 3.5. Use at your own risk."
+    },
+    {
+      "title": "Qwen3.5-35B-A3B Uncensored Guide: Features, Capabilities, and Setup",
+      "url": "https://hackernoon.com/qwen35-35b-a3b-uncensored-guide-features-capabilities-and-setup",
+      "snippet": "Explore Qwen3.5-35B-A3B Uncensored, a multimodal AI model with no refusals, advanced reasoning, and support for local deployment."
+    }
+  ]
+}

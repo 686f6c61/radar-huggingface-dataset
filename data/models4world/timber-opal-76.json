@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/timber-opal-76",
+  "slug": "models4world-timber-opal-76",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/timber-opal-76",
+  "created_at": "2026-08-26T15:51:12.000Z",
+  "updated_at": "2026-08-26T15:51:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11226685309,
+  "storage_human": "11.2 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adapter Models for models4world/maple-signal-64 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:models4world/maple-signal-64",
+      "snippet": "Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Inference Endpoints Microsoft ..."
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "All 395 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 395 large language models across 294 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "Opal [Experiment]",
+      "url": "https://opal.google/",
+      "snippet": "Opal [Experiment]"
+    }
+  ]
+}

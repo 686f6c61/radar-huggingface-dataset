@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "laion/video_benchmarks",
+  "slug": "laion-video_benchmarks",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/video_benchmarks",
+  "created_at": "2026-08-26T11:44:28.000Z",
+  "updated_at": "2026-08-26T12:26:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458608711680,
+  "storage_human": "458.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LAION-AI/BVD",
+      "url": "https://github.com/LAION-AI/BVD/",
+      "snippet": "We present LAION-BVD (LAION - Big Video Dataset), a large-scale open video dataset for multimodal learning, containing 1.3B platform-specific video URLs collected from CommonCrawl. From these, we download 80M videos with a total duration of 10 million hours. The dataset is designed for multimodal pre-training across video, audio, and image modalities. Using content-aware scene detection we ..."
+    },
+    {
+      "title": "LAION Big Video Dataset",
+      "url": "https://projects.laion.ai/bvd/",
+      "snippet": "Models trained on these data achieve competitive performance on standard video-text and audio-text benchmarks, with consistent improvements as training or model scale increases. Additionally, we explore video frames as an alternative source of image-text data by extracting scene-changing frames."
+    },
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "LAION, Large-scale Artificial Intelligence Open Network, is a non-profit organization making machine learning resources available to the general public."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 401 AI models across 406 benchmarks, with 225 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LAION AI - GitHub",
+      "url": "https://github.com/LAION-AI",
+      "snippet": "LAION AI This is the repo of LAION, a non-profit organization to liberate machine learning research, models and datasets."
+    }
+  ]
+}

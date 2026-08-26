@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "reinworld99/sae-null-step",
+  "slug": "reinworld99-sae-null-step",
+  "author": "reinworld99",
+  "url": "https://huggingface.co/reinworld99/sae-null-step",
+  "created_at": "2026-08-26T14:38:22.000Z",
+  "updated_at": "2026-08-26T14:53:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-autoencoder",
+    "sae",
+    "interpretability",
+    "reproducibility",
+    "feature-extraction",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14199080562,
+  "storage_human": "14.2 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cywinski/SAeUron: [ICML 2025] Unlearning in Diffusion Models ...",
+      "url": "https://github.com/cywinski/SAeUron",
+      "snippet": "SAeUron: Interpretable Concept Unlearning in Diffusion Models with Sparse Autoencoders"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "SAeUron: Interpretable Concept Unlearning in Diffusion Models with",
+      "url": "https://arxiv.org/html/2501.18052v2",
+      "snippet": "By training a separate SAE model for each diffusion timestep, they revealed the visual features learned by these models and their connection to class-specific information. In contrast to prior approaches, our work involves training a single SAE on activations from multiple denoising steps of a standard, non-distilled Stable Diffusion model."
+    },
+    {
+      "title": "GitHub - AIRI-Institute/SAE-Reasoning",
+      "url": "https://github.com/AIRI-Institute/SAE-Reasoning",
+      "snippet": "This code is the official implementation of Interpreting Reasoning Features in Large Language Models via Sparse Autoencoders. Right now we continue our experiments with different reasoning sets and hyperparameters to improve our results. We will release top feature indices and corresponding dashboards soon. Stay tuned!"
+    }
+  ]
+}

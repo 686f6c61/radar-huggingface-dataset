@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Llama1BxFWx4096x100pct",
+  "slug": "aflah-llama1bxfwx4096x100pct",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Llama1BxFWx4096x100pct",
+  "created_at": "2026-08-26T13:07:02.000Z",
+  "updated_at": "2026-08-26T13:12:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16513037261,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah/models",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 6 days ago ... updated a model 8 months ago"
+    },
+    {
+      "title": "Mohammad Aflah Khan",
+      "url": "https://aflah02.github.io/",
+      "snippet": "Mohammad Aflah Khan Jan 2026 📝 Hubble: a Model Suite to Advance the Study of LLM Memorization was accepted as an oral at ICLR 2026 and at Data-FM @ ICLR 2026; In Agents We Trust, but Who Do Agents Trust? Latent Source Preferences Steer LLM Generations was accepted at ICLR 2026 and IASEAI 2026; Rote Learning Considered Useful: Generalizing over Memorized Data in LLMs was accepted at ICLR ..."
+    },
+    {
+      "title": "GitHub - techjarves/Portable-AI-USB: A 100% offline, fully portable ...",
+      "url": "https://github.com/techjarves/Portable-AI-USB",
+      "snippet": "🔒 Portable Uncensored AI — Runs Entirely from a USB Drive A fully private, portable, uncensored AI assistant that runs 100% from a USB flash drive. No internet needed after setup. No data leaves the USB. Works on Windows, Mac, and Linux. Now with multi-model support! Choose from 6 curated AI models or bring your own."
+    },
+    {
+      "title": "ICLR 2026 Orals",
+      "url": "https://iclr.cc/virtual/2026/events/oral",
+      "snippet": "The finetuned model produces steganographic malicious outputs in response to hidden malicious prompts, while the user interface displays only a fully benign cover interaction. We also replicate the attack on three open-source models, Llama-3.3-70B-Instruct, Phi-4, and Mistral-Small-24B-Base-2501, confirming the generality of our method."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-2-6b-jp-rollplay-sft-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-i1-GGUF",
+  "created_at": "2026-08-26T18:48:35.000Z",
+  "updated_at": "2026-08-26T19:06:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ja",
+    "dataset:CausalLM/Kingfall-Roleplay",
+    "dataset:OmniAICreator/Japanese-Roleplay-Dialogues",
+    "base_model:CloudGoat/LFM2.5-2.6B-JP-RollPlay-SFT",
+    "base_model:quantized:CloudGoat/LFM2.5-2.6B-JP-RollPlay-SFT",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 601254,
+  "parameters_human": "601254",
+  "storage_bytes": 2430848,
+  "storage_human": "2 MB",
+  "base_model": "CloudGoat/LFM2.5-2.6B-JP-RollPlay-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2.5-2.6B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-i1-GGUF",
+      "snippet": "mradermacher / LFM2.5-2.6B-i1-GGUF like 0 Transformers GGUF 16 languages liquid lfm2.5 edge imatrix conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/LFM2.5-2.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-GGUF",
+      "snippet": "mradermacher / LFM2.5-2.6B-GGUF like 0 Transformers GGUF 16 languages liquid lfm2.5 edge conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-2.6B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/lfm2-5-2-6b",
+      "snippet": "Decodes at ~220 tok/s on an Apple M5 Max in under 2.5GB and ~30 tok/s on a phone. Open weights (base + post-trained) on Hugging Face under the LFM Open License (lfm1.0), shipped day-one in GGUF, MLX, and ONNX. LFM2.5-2.6B is tracked as a open-weight model from Liquid AI. Released 2026-08-06."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    }
+  ]
+}

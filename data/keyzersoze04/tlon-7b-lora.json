@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "keyzersoze04/tlon-7b-lora",
+  "slug": "keyzersoze04-tlon-7b-lora",
+  "author": "keyzersoze04",
+  "url": "https://huggingface.co/keyzersoze04/tlon-7b-lora",
+  "created_at": "2026-08-26T12:44:59.000Z",
+  "updated_at": "2026-08-26T12:45:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tlon",
+    "borges",
+    "conlang",
+    "lora",
+    "constructed-language",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323014168,
+  "storage_human": "323 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,065 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=4&sort=downloads&search=lora",
+      "snippet": "Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    },
+    {
+      "title": "Fine-Tuning LLMs with QLoRA: Run a 7B Model on a Single GPU",
+      "url": "https://oneruby.dev/fine-tuning-llms-with-qlora-single-gpu-guide/",
+      "snippet": "Fine-tuning a 7 billion parameter model used to require expensive cloud instances with 80GB+ of VRAM. Not anymore. QLoRA (Quantized Low-Rank Adaptation) changed the game. I fine-tuned Mistral-7B on a single RTX 4090 using just 8GB of VRAM. The model performs within 1% of full fine-tuning quality. Here&#x27;s exactly how to do it. Why QLoRA Matters Training a 7B model from scratch isn&#x27;t practical ..."
+    }
+  ]
+}

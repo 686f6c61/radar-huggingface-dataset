@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "puterijessica/ace_step_1.5_ComfyUI_files",
+  "slug": "puterijessica-ace_step_1-5_comfyui_files",
+  "author": "puterijessica",
+  "url": "https://huggingface.co/puterijessica/ace_step_1.5_ComfyUI_files",
+  "created_at": "2026-08-26T12:53:34.000Z",
+  "updated_at": "2026-08-26T12:53:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:finetune:ACE-Step/Ace-Step1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63141987268,
+  "storage_human": "63.1 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/ace_step_1.5_ComfyUI_files · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI ACE-Step 1.5 Music Generation Guide - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1-5",
+      "snippet": "Learn how to use ACE-Step 1.5 for AI music generation in ComfyUI. Complete guide with workflows, model downloads, and setup instructions for ComfyUI."
+    },
+    {
+      "title": "Comfy-Org/ace_step_1.5_ComfyUI_files at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "docs-comfyui/tutorials/audio/ace-step/ace-step-v1-5.mdx at main ...",
+      "url": "https://github.com/fairhopeweb/docs-comfyui/blob/main/tutorials/audio/ace-step/ace-step-v1-5.mdx",
+      "snippet": "title ComfyUI ACE-Step 1.5 Music Generation Guide description Learn how to use ACE-Step 1.5 for AI music generation in ComfyUI. Complete guide with workflows, model downloads, and setup instructions for ComfyUI. ACE-Step 1.5 is a major update to the open-source music generation model, now natively ..."
+    },
+    {
+      "title": "ace_step_1.5_ComfyUI_files: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ace-step-1.5-comfyui-files-comfy-org",
+      "snippet": "The model operates as an image-to-image diffusion model within the ComfyUI node-based interface, enabling iterative image refinement and generation workflows. This is not a standalone model but rather a packaging of the original ACE-Step 1.5 architecture optimized for ComfyUI&#x27;s modular workflow system."
+    }
+  ]
+}

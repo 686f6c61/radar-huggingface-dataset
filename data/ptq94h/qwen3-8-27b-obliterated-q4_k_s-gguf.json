@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ptq94h/Qwen3.8-27B-OBLITERATED-Q4_K_S-GGUF",
+  "slug": "ptq94h-qwen3-8-27b-obliterated-q4_k_s-gguf",
+  "author": "ptq94h",
+  "url": "https://huggingface.co/ptq94h/Qwen3.8-27B-OBLITERATED-Q4_K_S-GGUF",
+  "created_at": "2026-08-26T15:01:32.000Z",
+  "updated_at": "2026-08-26T15:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "safetensors",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:quantized:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15825290752,
+  "storage_human": "15.8 GB",
+  "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    },
+    {
+      "title": "Qwen3.8 27b Obliterated - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-obliterated.html",
+      "snippet": "Download Qwen3.8 27b Obliterated GGUF model. 30.1 GB, 4,415 downloads."
+    },
+    {
+      "title": "RadixArk/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4",
+      "snippet": "Third-Party Community Consideration This model is not owned or developed by RadixArk. It is a quantized derivative of Qwen&#x27;s model; see the upstream Qwen3.8-27B model card for the source model&#x27;s capabilities, training information, limitations, and license."
+    }
+  ]
+}

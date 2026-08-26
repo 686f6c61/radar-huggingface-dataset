@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "iwillsolvehardestproblem/dreamerv3-atari100k-breakout",
+  "slug": "iwillsolvehardestproblem-dreamerv3-atari100k-breakout",
+  "author": "iwillsolvehardestproblem",
+  "url": "https://huggingface.co/iwillsolvehardestproblem/dreamerv3-atari100k-breakout",
+  "created_at": "2026-08-26T12:54:27.000Z",
+  "updated_at": "2026-08-26T12:55:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "dreamerv3",
+    "atari",
+    "atari-100k",
+    "reinforcement-learning",
+    "dream-drift",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2043738688,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atari100k Pong settings · Issue #175 · danijar/dreamerv3 - GitHub",
+      "url": "https://github.com/danijar/dreamerv3/issues/175",
+      "snippet": "I am running the command python dreamerv3/main.py --script train_eval --configs atari100k --run.eval_eps 100 --task atari100k_pong (#173) for --seed from 0 to 4, on RTX 3090 GPUs. However, for every seed, I consistently get a final score of -21 (the minimum score), and it seems that the agent does not move in sample trajectories."
+    },
+    {
+      "title": "Atari Environments | burchim/DreamerV3-PyTorch | DeepWiki",
+      "url": "https://deepwiki.com/burchim/DreamerV3-PyTorch/5.3-atari-environments",
+      "snippet": "The PyTorch implementation achieves 396 points on Breakout, exceeding both the original DreamerV3 (300) and human performance (30) by a substantial margin. Sources: README.md 142-153 Environment Naming Convention ... Naming Rules: Atari 100k: Use prefix atari100k- followed by lowercase game name Atari 200M: Use prefix atari- followed by ..."
+    },
+    {
+      "title": "Atari 100k Results | burchim/DreamerV3-PyTorch | DeepWiki",
+      "url": "https://deepwiki.com/burchim/DreamerV3-PyTorch/8.2-atari-100k-results",
+      "snippet": "Atari 100k Results Relevant source files Purpose and Scope This page documents the performance of DreamerV3-PyTorch on the Atari 100k benchmark, a sample-efficient reinforcement learning evaluation protocol where agents are trained for only 400,000 environment steps (100k agent steps with 4× action repeat). This represents approximately 2 hours of real-time gameplay, making it a challenging ..."
+    },
+    {
+      "title": "GitHub - danijar/dreamerv3: Mastering Diverse Domains through World ...",
+      "url": "https://github.com/danijar/dreamerv3",
+      "snippet": "DreamerV3 learns a world model from experiences and uses it to train an actor critic policy from imagined trajectories. The world model encodes sensory inputs into categorical representations and predicts future representations and rewards given actions. DreamerV3 masters a wide range of domains with a fixed set of hyperparameters, outperforming specialized methods. Removing the need for ..."
+    },
+    {
+      "title": "Learning to Play Atari in a World of Tokens - arXiv.org",
+      "url": "https://arxiv.org/html/2406.01361v1",
+      "snippet": "This allows for parallel computation of multiple steps during world model training, making it computationally much faster than previous methods like the recurrent network-based DreamerV3."
+    }
+  ]
+}

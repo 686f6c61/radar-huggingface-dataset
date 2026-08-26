@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PaddleOcrNet/PaddleOcrNet-models",
+  "slug": "paddleocrnet-paddleocrnet-models",
+  "author": "PaddleOcrNet",
+  "url": "https://huggingface.co/PaddleOcrNet/PaddleOcrNet-models",
+  "created_at": "2026-08-26T16:54:24.000Z",
+  "updated_at": "2026-08-26T17:30:17.000Z",
+  "license": "apache-2.0-and-mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1630053879,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PaddleOcrNet-models - Hugging Face",
+      "url": "https://huggingface.co/PaddleOcrNet/PaddleOcrNet-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PaddleOcrNet/PaddleOcrNet-models at main - Hugging Face",
+      "url": "https://huggingface.co/PaddleOcrNet/PaddleOcrNet-models/tree/main",
+      "snippet": "PaddleOcrNet / PaddleOcrNet-models like 0 Follow PaddleOcrNet 1 ONNX License:mit Model card FilesFiles and versions xet Community Copy to bucket new main PaddleOcrNet-models 650 MB Ctrl+K Ctrl+K 1 contributor History:3 commits cloudnex Add PP-DocLayoutV3 (layout) + SLANet_plus (table) ONNX 9bb1847 verifiedabout 5 hours ago .gitattributes Safe"
+    },
+    {
+      "title": "Model - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/v2.10.0/en/ppocr/model_list.html",
+      "snippet": "All models in this tutorial are from the PaddleOCR series, for more introduction to algorithms and models based on the public dataset, you can refer to algorithm overview tutorial. The downloadable models provided by PaddleOCR include the inference model, trained model, pre-trained model and nb model."
+    },
+    {
+      "title": "PaddleOcrNet/src/PaddleOcrNet/Models at main · FarhanLodi ... - GitHub",
+      "url": "https://github.com/FarhanLodi/PaddleOcrNet/tree/main/src/PaddleOcrNet/Models",
+      "snippet": "The full PaddleOCR document pipeline, natively in .NET on ONNX Runtime — no Python, no native PaddlePaddle. Text detection &amp; recognition (80+ languages, auto-detect), layout, tables, formulas &..."
+    },
+    {
+      "title": "PaddleOcrNet - GitHub",
+      "url": "https://github.com/FarhanLodi/PaddleOcrNet",
+      "snippet": "Automatic language detection — pass OcrLanguage.Auto and PaddleOcrNet identifies the script and pulls the right model on demand (Python PaddleOCR requires you to name the language up front)."
+    }
+  ]
+}

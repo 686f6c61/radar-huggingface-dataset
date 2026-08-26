@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Strg-Alt-Entf-0x00/Moonshine-ESP32-P4",
+  "slug": "strg-alt-entf-0x00-moonshine-esp32-p4",
+  "author": "Strg-Alt-Entf-0x00",
+  "url": "https://huggingface.co/Strg-Alt-Entf-0x00/Moonshine-ESP32-P4",
+  "created_at": "2026-08-26T18:40:40.000Z",
+  "updated_at": "2026-08-26T19:09:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "moonshine",
+    "esp32",
+    "esp32-p4",
+    "speech-recognition",
+    "embedded-systems",
+    "automatic-speech-recognition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 695588822,
+  "storage_human": "696 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Strg-Alt-Entf-0x00/esp-uart-filebridge: Universal ESP32 UART ...",
+      "url": "https://github.com/Strg-Alt-Entf-0x00/esp-uart-filebridge",
+      "snippet": "We built esp-uart-filebridge because we needed an industrial-grade, bulletproof, and deterministic way to flash 10MB+ AI models onto the ESP32-P4 without relying on network stacks or unstable USB-OTG drivers."
+    },
+    {
+      "title": "Moonshine · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/moonshine",
+      "snippet": "Moonshine is an encoder-decoder speech recognition model optimized for real-time transcription and recognizing voice commands. Instead of using traditional absolute position embeddings, Moonshine uses Rotary Position Embedding (RoPE) to handle speech with varying lengths without using padding. This improves efficiency during inference, making it ideal for resource-constrained devices."
+    },
+    {
+      "title": "GitHub - Strg-Alt-Entf-0x00/firered-vad-esp32-p4 · GitHub",
+      "url": "https://github.com/Strg-Alt-Entf-0x00/firered-vad-esp32-p4",
+      "snippet": "A highly optimized, bare-bones native C++ implementation of the FireRedVAD Voice Activity Detection (VAD) model, specifically ported for the ESP32-P4 microcontroller series."
+    },
+    {
+      "title": "UsefulSensors/moonshine · Hugging Face",
+      "url": "https://huggingface.co/UsefulSensors/moonshine",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Moonshine - Speech-to-Text Model | STT.ai",
+      "url": "https://stt.ai/models/moonshine/",
+      "snippet": "Moonshine is an extremely compact speech-to-text model designed for resource-constrained environments. At only 61M parameters, it runs efficiently on edge devices like Raspberry Pi while maintaining reasonable English transcription accuracy."
+    }
+  ]
+}

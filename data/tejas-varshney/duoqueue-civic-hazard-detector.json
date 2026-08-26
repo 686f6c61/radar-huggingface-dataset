@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tejas-varshney/duoqueue-civic-hazard-detector",
+  "slug": "tejas-varshney-duoqueue-civic-hazard-detector",
+  "author": "tejas-varshney",
+  "url": "https://huggingface.co/tejas-varshney/duoqueue-civic-hazard-detector",
+  "created_at": "2026-08-26T17:12:04.000Z",
+  "updated_at": "2026-08-26T17:26:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6258026,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Book - proceedings.neurips.cc",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/vol38-main-conference",
+      "snippet": "Any Large Language Model Can Be a Reliable Judge: Debiasing with a Reasoning-based Bias Detector Haoyan Yang, Runxue Bao, Cao (Danica) Xiao, Jun Ma, Parminder Bhatia, Shangqian Gao, Taha Kass-Hout Main Conference Track Sample and Map from a Single Convex Potential: Generation using Conjugate Moment Measures Nina Vesseron, Louis Bethune, Marco ..."
+    },
+    {
+      "title": "Tejas Varshney (@tejasvarshney_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tejasvarshney_/",
+      "snippet": "123 followers · 130 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "Tejas varshney - YouTube",
+      "url": "https://www.youtube.com/@Tejasvarshney19",
+      "snippet": "Hello my dear subscribers 🤗"
+    },
+    {
+      "title": "Tejas Varshney - YouTube",
+      "url": "https://www.youtube.com/@buildwith_tejas",
+      "snippet": "AI backend engineering #ai #software #devloper #backend #builwith_tejas#engineering #kietcollege #ai 6 views • 3 weeks ago 0:11"
+    },
+    {
+      "title": "Tejas Varshney (@tejasvarshney9) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tejasvarshney9/",
+      "snippet": "129 Followers, 155 Following, 2 Posts - Tejas Varshney (@tejasvarshney9) on Instagram: \"Adventure is calling, and I must go👣🚶 Striving to dazzle myself. \""
+    }
+  ]
+}

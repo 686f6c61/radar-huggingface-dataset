@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Anish5764/asvspoof-wav2vec2-stage2",
+  "slug": "anish5764-asvspoof-wav2vec2-stage2",
+  "author": "Anish5764",
+  "url": "https://huggingface.co/Anish5764/asvspoof-wav2vec2-stage2",
+  "created_at": "2026-08-26T15:59:39.000Z",
+  "updated_at": "2026-08-26T16:00:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378302312,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASVspoof",
+      "url": "https://www.asvspoof.org/",
+      "snippet": "________________________________ Those interested to learn more about ASVspoof are referred to ASVspoof 2021 journal paper ASVspoof 2021 results summary paper ________________________________"
+    },
+    {
+      "title": "Wav2Vec2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/wav2vec2",
+      "snippet": "It is used to instantiate a Wav2Vec2 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the facebook/wav2vec2-base-960h Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "[2507.01750] Generalizable Detection of Audio Deepfakes",
+      "url": "https://arxiv.org/abs/2507.01750",
+      "snippet": "In this paper, we present our comprehensive study aimed at enhancing the generalization capabilities of audio deepfake detection models. We investigate the performance of various pre-trained backbones, including Wav2Vec2, WavLM, and Whisper, across a diverse set of datasets, including those from the ASVspoof challenges and additional sources. Our experiments focus on the effects of different ..."
+    },
+    {
+      "title": "Databases - ASVspoof",
+      "url": "https://www.asvspoof.org/database",
+      "snippet": "- ASVspoof 2019 real PA To download it, please visit our Licence page."
+    },
+    {
+      "title": "GitHub - l1ghtsource/asvspoof-airi: Audio Spoof Detection: A ...",
+      "url": "https://github.com/l1ghtsource/asvspoof-airi",
+      "snippet": "This project investigates advanced techniques for detecting audio spoofing using state-of-the-art self-supervised learning (SSL) and transformer architectures. It evaluates various models on ASVspoof benchmark datasets, demonstrating significant improvements in distinguishing between genuine and synthesized speech."
+    }
+  ]
+}

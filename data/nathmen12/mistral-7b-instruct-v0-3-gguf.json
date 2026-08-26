@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NathMen12/Mistral-7B-Instruct-v0.3-GGUF",
+  "slug": "nathmen12-mistral-7b-instruct-v0-3-gguf",
+  "author": "NathMen12",
+  "url": "https://huggingface.co/NathMen12/Mistral-7B-Instruct-v0.3-GGUF",
+  "created_at": "2026-08-26T15:56:08.000Z",
+  "updated_at": "2026-08-26T15:59:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama.cpp",
+    "en",
+    "fr",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 9508995200,
+  "storage_human": "9.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.3 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QuantFactory/Mistral-7B-Instruct-v0.3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Mistral-7B-Instruct-v0.3-GGUF",
+      "snippet": "Mistral-7B-Instruct-v0.3-GGUF This is quantized version of mistralai/Mistral-7B-Instruct-v0.3 created using llama.cpp Model Description The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.3. Mistral-7B-v0.3 has the following changes compared to Mistral-7B-v0.2 Extended vocabulary to 32768 Supports v3 Tokenizer Supports function calling ..."
+    },
+    {
+      "title": "Mistral-7B-Instruct-v0.3-GGUF: Local, Quantized LLM for Private ...",
+      "url": "https://dev.co/ai/llms/mistral-7b-instruct-v0-3-gguf",
+      "snippet": "Mistral-7B-Instruct-v0.3-GGUF is a quantized version of Mistral&#x27;s 7-billion-parameter instruction-tuned language model, optimized for CPU and GPU inference via the GGUF format. It enables local, private deployment without cloud dependencies."
+    },
+    {
+      "title": "Mistral-7B-Instruct-v0.3-GGUF | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/mistral-7b-instruct-v03-gguf/",
+      "snippet": "Mistral-7B-Instruct-v0.3-GGUF is a quantized version of the original Mistral-7B-Instruct model, optimized for efficient local deployment using the GGUF format. This format replaced the older GGML standard, offering improved performance and compatibility with modern AI deployment tools."
+    },
+    {
+      "title": "Mistral-7B-Instruct-v0.3 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/mistral-7b-v03-instruct",
+      "snippet": "Mistral-7B-v0.3 is an instruction-tuned generative text model developed by Mistral AI."
+    }
+  ]
+}

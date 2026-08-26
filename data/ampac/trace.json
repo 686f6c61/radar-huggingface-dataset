@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "AmPac/trace",
+  "slug": "ampac-trace",
+  "author": "AmPac",
+  "url": "https://huggingface.co/AmPac/trace",
+  "created_at": "2026-08-26T16:03:15.000Z",
+  "updated_at": "2026-08-26T16:34:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "sba",
+    "504",
+    "7a",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94727227,
+  "storage_human": "95 MB",
+  "base_model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "ScreenBench",
+      "dataset": "ScreenBench holdout",
+      "metric": "Trace all-pass",
+      "value": 1
+    },
+    {
+      "task": "ScreenBench",
+      "dataset": "ScreenBench holdout",
+      "metric": "False kill",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/Trace: End-to-end Generative Optimization for AI ...",
+      "url": "https://github.com/microsoft/trace",
+      "snippet": "Trace is a new AutoDiff-like tool for training AI systems end-to-end with general feedback (like numerical rewards or losses, natural language text, compiler errors, etc.). Trace generalizes the back-propagation algorithm by capturing and propagating an AI system&#x27;s execution trace. Trace is implemented as a PyTorch-like Python library."
+    },
+    {
+      "title": "Tracing the path to self-adapting AI agents - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/tracing-the-path-to-self-adapting-ai-agents/",
+      "snippet": "Empirical studies showcase Trace&#x27;s ability to optimize diverse problems, including hyperparameter tuning, large language model (LLM) agents, and robot control, often outperforming specialized optimizers. In a nutshell, Trace is a new AutoDiff-like tool for training AI systems without using gradients."
+    },
+    {
+      "title": "TRACE-AMP - Targeted Retrieval-Augmented AMP Discovery Platform",
+      "url": "https://traceamp.online/",
+      "snippet": "AI-powered antimicrobial peptide analysis with structural prediction, homology search, and literature grounding."
+    },
+    {
+      "title": "Trace - GitHub Pages",
+      "url": "https://microsoft.github.io/Trace/",
+      "snippet": "Trace in 5 Minutes Trace is an open-source generative optimization framework for end-to-end training AI agents with general feedback (like scores, natural language, errors, etc.)."
+    },
+    {
+      "title": "Stanford Researchers Introduce TRACE: A Capability-Targeted Agentic ...",
+      "url": "https://www.marktechpost.com/2026/07/13/stanford-researchers-introduce-trace/",
+      "snippet": "Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Tech News AI Paper Summary Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Staff Stanford Researchers Introduce TRACE: A Capability-Targeted Agentic Training System That Turns Recurrent Agent Failures Into Synthetic RL ..."
+    }
+  ]
+}

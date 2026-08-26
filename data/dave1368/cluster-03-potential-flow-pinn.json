@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dave1368/cluster-03-potential-flow-pinn",
+  "slug": "dave1368-cluster-03-potential-flow-pinn",
+  "author": "dave1368",
+  "url": "https://huggingface.co/dave1368/cluster-03-potential-flow-pinn",
+  "created_at": "2026-08-26T15:52:38.000Z",
+  "updated_at": "2026-08-26T16:28:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "physics",
+    "pytorch",
+    "pinn",
+    "fluid-dynamics",
+    "potential-flow",
+    "scientific-ml",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272279,
+  "storage_human": "272279 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Physics informed neural networks for fluid flow analysis with ...",
+      "url": "https://www.nature.com/articles/s41598-025-99354-5",
+      "snippet": "This strategy periodically modulates the training parameters of the PINN model, enabling it to escape local minima and effectively explore alternative solutions."
+    },
+    {
+      "title": "Physics-informed neural networks for solving flow problems modeled by ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022169424006589",
+      "snippet": "This paper investigates the application of physics-informed neural networks (PINNs) to solve free-surface flow problems governed by the 2D shallow wat…"
+    },
+    {
+      "title": "Physics-informed neural networks in groundwater flow modeling ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352801X2400095X",
+      "snippet": "More recently, a new type of physics-informed neural network (PINN) model has been developed to address several limitations by integrating governing physics (groundwater flow equations) into the AI tools. This study presents the systematic advantages of the PINN algorithm for solving groundwater problems using a set of classic test problems."
+    },
+    {
+      "title": "GitHub - idrl-lab/PINNpapers: Must-read Papers on Physics-Informed ...",
+      "url": "https://github.com/idrl-lab/PINNpapers",
+      "snippet": "PINNpapers Contributed by IDRL lab. PINNpapers Introduction Software Papers on PINN Models Papers on Parallel PINN Papers on PINN Accerleration Papers on Model Transfer & Meta-Learning Papers on Probabilistic PINNs and Uncertainty Quantification Papers on Applications Papers on PINN Analysis"
+    },
+    {
+      "title": "PDF Physics informed neural networks for fluid flow analysis with ...",
+      "url": "https://www.nature.com/articles/s41598-025-99354-5.pdf",
+      "snippet": "Figure 1 shows the flow field and training loss obtained by applying a naïve PINN model to the lid-driven cavity flow problem at a Reynolds number of 1,000. Despite training the PINN model for a ..."
+    }
+  ]
+}

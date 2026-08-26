@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "emrekuruu/Baseline",
+  "slug": "emrekuruu-baseline",
+  "author": "emrekuruu",
+  "url": "https://huggingface.co/emrekuruu/Baseline",
+  "created_at": "2026-08-26T13:14:36.000Z",
+  "updated_at": "2026-08-26T13:14:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "retrieval",
+    "document-retrieval",
+    "information-retrieval",
+    "routing",
+    "RAG",
+    "query-routing",
+    "late-interaction",
+    "lora",
+    "peft",
+    "baseline",
+    "text-classification",
+    "en",
+    "dataset:emrekuruu/FinReport",
+    "dataset:emrekuruu/FinSlides",
+    "dataset:emrekuruu/FinQA",
+    "dataset:emrekuruu/ConvFinQA",
+    "dataset:emrekuruu/VQAonBD",
+    "dataset:emrekuruu/TATDQA",
+    "dataset:emrekuruu/ArxivQA",
+    "dataset:emrekuruu/Wiki-ss",
+    "dataset:emrekuruu/MP-DocVQA",
+    "dataset:emrekuruu/SciQAG",
+    "dataset:emrekuruu/DUDE",
+    "arxiv:2608.23176",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-0.6B-Base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emrekuruu (Emre) - Hugging Face",
+      "url": "https://huggingface.co/emrekuruu",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 23 days ago ... liked a model 24 days ago ... commentedon an article 27 days ago"
+    },
+    {
+      "title": "emrekuruu (Emre) - Hugging Face",
+      "url": "https://huggingface.co/emrekuruu/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 25 days ago ... liked a model 26 days ago ... commentedon an article 29 days ago"
+    },
+    {
+      "title": "ThePersonalizedAgentCompany/evaluation at main · emrekuruu ... - GitHub",
+      "url": "https://github.com/emrekuruu/ThePersonalizedAgentCompany/tree/main/evaluation",
+      "snippet": "Run Evaluation with OpenHands This directory contains the baseline for The Agent Company. The baseline is conducted using OpenHands, an open-source platform for software development agents powered by AI."
+    },
+    {
+      "title": "ThePersonalizedAgentCompany/evaluation/README.md at main · emrekuruu ...",
+      "url": "https://github.com/emrekuruu/ThePersonalizedAgentCompany/blob/main/evaluation/README.md",
+      "snippet": "Run Evaluation with OpenHands This directory contains the baseline for The Agent Company. The baseline is conducted using OpenHands, an open-source platform for software development agents powered by AI."
+    },
+    {
+      "title": "emrekuruu - LeetCode Profile",
+      "url": "https://leetcode.com/u/emrekuruu/",
+      "snippet": "View emrekuruu&#x27;s profile on LeetCode, the world&#x27;s largest programming community."
+    }
+  ]
+}

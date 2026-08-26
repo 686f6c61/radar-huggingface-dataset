@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF",
+  "slug": "jashepp-ornith-1-5-9b-mxfp4_hybrid-imatrix-gguf",
+  "author": "jashepp",
+  "url": "https://huggingface.co/jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF",
+  "created_at": "2026-08-22T04:12:12.000Z",
+  "updated_at": "2026-08-26T18:18:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3",
+    "qwen3.5",
+    "distillation",
+    "chain-of-thought",
+    "agentic",
+    "tool-use",
+    "chained-distill",
+    "imatrix",
+    "GGUF",
+    "mxfp4",
+    "quantized",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 513,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 25744477077,
+  "storage_human": "25.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF",
+      "snippet": "Instructions to use jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ornith-1.0-9B-MXFP4_Hybrid-Imatrix-GGUF - Hugging Face",
+      "url": "https://huggingface.co/jashepp/Ornith-1.0-9B-MXFP4_Hybrid-Imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Introducing Ornith-1.5, an open-source model family that extends self-scaffolding into an end-to-end self-improvement loop."
+    },
+    {
+      "title": "How to Run Ornith 1.5 9B Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally",
+      "snippet": "Ornith 1.5 9B is the model from DeepReinforce&#x27;s new Ornith 1.5 family that you can actually run locally: a dense 9B multimodal coding model that fits on an 8 GB GPU or a 16 GB Mac at 4-bit quantization. This guide covers our Atomic Dynamic GGUF builds, how much memory each one needs, and the exact setup for both Atomic Chat and llama.cpp."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    }
+  ]
+}

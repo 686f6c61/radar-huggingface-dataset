@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Schmidtphilipp/class-contrastive",
+  "slug": "schmidtphilipp-class-contrastive",
+  "author": "Schmidtphilipp",
+  "url": "https://huggingface.co/Schmidtphilipp/class-contrastive",
+  "created_at": "2026-08-26T13:34:07.000Z",
+  "updated_at": "2026-08-26T13:34:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Philschmid",
+      "url": "https://www.philschmid.de/",
+      "snippet": "Personal Blog of Philipp Schmid Staff Engineer at Google DeepMind."
+    },
+    {
+      "title": "philschmid (Philipp Schmid) · GitHub",
+      "url": "https://github.com/philschmid",
+      "snippet": "On my blog philschmid.de, I break down complex AI concepts, share practical tutorials, and provide insights into the latest advancements in the field, a practice I continue to this day."
+    },
+    {
+      "title": "philschmid (Philipp Schmid) - Hugging Face",
+      "url": "https://huggingface.co/philschmid",
+      "snippet": "Gemini 2.5 Flash is here! We excited launch our first hybrid reasoning Gemini model. In Flash 2.5 developer can turn thinking off.**TL;DR:**- 🧠 Controllable \"Thinking\" with thinking budget with up to 24k token- 🌌 1 Million multimodal input context for text, image, video, audio, and pdf- 🛠️ Function calling, structured output, google search & code execution. - 🏦 $0.15 1M input ..."
+    },
+    {
+      "title": "(PDF) Generating complex explanations from machine learning models ...",
+      "url": "https://www.researchgate.net/publication/374558353_Generating_complex_explanations_from_machine_learning_models_using_class-contrastive_reasoning",
+      "snippet": "Artiﬁcial Intelligence (AI) and machine learning may help in accurate diagnosis of diseases. However, the explainability of black-box machine learning models remains challenging."
+    },
+    {
+      "title": "12 Best AI Detectors | Free & Premium Tools Tested (2026 Guide) - Scribbr",
+      "url": "https://www.scribbr.com/ai-tools/best-ai-detector/",
+      "snippet": "The best free AI detectors (2026) are Scribbr and QuillBot, both correctly identified 78% of our testing texts. The most accurate AI Detector is Scribbr."
+    }
+  ]
+}

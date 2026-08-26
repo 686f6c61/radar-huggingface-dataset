@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Melkamzer/PointerGNN",
+  "slug": "melkamzer-pointergnn",
+  "author": "Melkamzer",
+  "url": "https://huggingface.co/Melkamzer/PointerGNN",
+  "created_at": "2026-08-26T14:08:21.000Z",
+  "updated_at": "2026-08-26T14:08:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "melkamzeranteneh (Melkamzer Anteneh) · GitHub",
+      "url": "https://github.com/melkamzeranteneh/",
+      "snippet": "Hi, I&#x27;m Melkamzer Anteneh 👋 AI Engineer • Generative AI • Frontend Developer • UI/UX Designer Building intelligent systems that combine AI, software engineering, and great user experiences."
+    },
+    {
+      "title": "GitHub - asalarpour/Point_GN: Official WACV 2025 code for Point-GN: A ...",
+      "url": "https://github.com/asalarpour/Point_GN",
+      "snippet": "Point‑GN is a training-free, non-parametric model for 3D point cloud classification. It combines: 🧮 Farthest Point Sampling (FPS) 🔗 k-Nearest Neighbors (k-NN) 🌐 Gaussian Positional Encoding (GPE) It achieves competitive accuracy without a single trainable parameter."
+    },
+    {
+      "title": "뒤틀린 서커스 장면의 호랑이와 초현실적인 링마스터 - AI 아트 | PicLumen",
+      "url": "https://www.piclumen.com/ko/explore/6a4db141323b362dd90977ac/",
+      "snippet": "뒤틀린 서커스 장면에서 호랑이와 함께 있는 초현실적인 링마스터. PicLumen의 Image Model로 생성된 AI 이미지입니다. 프롬프트를 살펴보고, 이 이미지를 리믹스하거나 직접 생성해 보세요."
+    },
+    {
+      "title": "ULTRA DEV | Melkamzer Anteneh - LinkedIn",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7462753532673351681/",
+      "snippet": "I have Finished my first portfolio. I was getting stressed out by being perfectionist and wanted it to have lots of features but It held me from doing it. so I gathered all my courage and did this ..."
+    },
+    {
+      "title": "Melkamzer Anteneh - Junior AI and ML engineer | LinkedIn",
+      "url": "https://et.linkedin.com/in/melkamzer-anteneh-987b2b36a",
+      "snippet": "Junior AI and ML engineer · Currently an AI Intern at iCog Labs, contributing to projects involving Autonomous Theorem Prover (ATP) systems using Graph Neural Networks (GNN) and reinforcement learning (RL). Gained hands-on experience in LEAN programming and proof methods, alongside research on diffusion and VAE models for video generation. Supported protein data visualization efforts on the ..."
+    }
+  ]
+}

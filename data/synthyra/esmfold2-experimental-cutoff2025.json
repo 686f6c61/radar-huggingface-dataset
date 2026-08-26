@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Synthyra/ESMFold2-Experimental-Cutoff2025",
+  "slug": "synthyra-esmfold2-experimental-cutoff2025",
+  "author": "Synthyra",
+  "url": "https://huggingface.co/Synthyra/ESMFold2-Experimental-Cutoff2025",
+  "created_at": "2026-06-04T16:22:27.000Z",
+  "updated_at": "2026-08-26T17:13:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esmfold2",
+    "feature-extraction",
+    "protein-language-model",
+    "fastplms",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 225753308,
+  "parameters_human": "225.8M",
+  "storage_bytes": 903213480,
+  "storage_human": "903 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synthyra/ESMFold2-Experimental-Fast-Cutoff2025 · Hugging Face",
+      "url": "https://huggingface.co/Synthyra/ESMFold2-Experimental-Fast-Cutoff2025",
+      "snippet": "Instructions to use Synthyra/ESMFold2-Experimental-Fast-Cutoff2025 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Synthyra/ESMFold2-Experimental-Cutoff2025 at main - Hugging Face",
+      "url": "https://huggingface.co/Synthyra/ESMFold2-Experimental-Cutoff2025/tree/main",
+      "snippet": "Instructions to use Synthyra/ESMFold2-Experimental-Cutoff2025 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Synthyra/ESMFold2-Experimental-Cutoff2025 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"feature-extraction\", model=\"Synthyra/ESMFold2 ..."
+    },
+    {
+      "title": "FastPLMs/model_cards/esmfold2_experimental_cutoff2025.md at main ...",
+      "url": "https://github.com/Synthyra/FastPLMs/blob/main/model_cards/esmfold2_experimental_cutoff2025.md",
+      "snippet": "Synthyra/ESMFold2-Experimental-Cutoff2025 This checkpoint packages the FastPLMs ESMFold2 implementation. Accepted inputs are raw amino-acid sequences or typed molecular-complex specifications; low-level forward accepts prepared feature tensors. Supported Transformers entry points are AutoConfig, AutoModel."
+    },
+    {
+      "title": "ESMFold2 Protein Structure Prediction | Biohub Platform",
+      "url": "https://www.biohub.ai/models/esmfold2",
+      "snippet": "ESMFold2 ESMFold2 is the successor to ESMFold that sets a new state of the art for single-sequence structure prediction and enables the generation of new functional proteins through searching the ESMC model&#x27;s latent space. The model predicts high-resolution, all-atom 3D structures of biomolecular complexes directly from sequence, with optional multiple sequence alignment (MSA) input for ..."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/biohub/ESMFold2-Experimental-Cutoff2025/18ec939b3aaa77ee79c3d712e6a60b7333f414e3/versions",
+      "snippet": "Discover potential threats in the biohub / ESMFold2-Experimental-Cutoff2025 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RononoaIgor98/cassava-leaf-disease-efficientnet-b0",
+  "slug": "rononoaigor98-cassava-leaf-disease-efficientnet-b0",
+  "author": "RononoaIgor98",
+  "url": "https://huggingface.co/RononoaIgor98/cassava-leaf-disease-efficientnet-b0",
+  "created_at": "2026-08-26T16:10:15.000Z",
+  "updated_at": "2026-08-26T16:10:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "image-classification",
+    "agriculture",
+    "cassava",
+    "plant-disease",
+    "efficientnet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16352579,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - adhoc-research/cassava_leaf_disease_classification: Computer ...",
+      "url": "https://github.com/adhoc-research/cassava_leaf_disease_classification",
+      "snippet": "A from-scratch implementation and comparison of state-of-the-art (SOTA) Convolutional Neural Network (CNN) architectures on the problem of identifying diseases on Cassava leaves. My goal with this project is to implement these top-performing architectures from scratch to classify the disease/condition of cassava plants, and to learn why these architectures were able to achieve SOTA. The ..."
+    },
+    {
+      "title": "MingDanng/Cassava_Leaf_Disease_AI - GitHub",
+      "url": "https://github.com/MingDanng/Cassava_Leaf_Disease_AI/tree/main",
+      "snippet": "This project implements an end-to-end Deep Learning pipeline to classify 5 types of cassava leaf diseases, assisting in automated disease diagnosis for agriculture. The system leverages Transfer Learning with the EfficientNetB3 architecture to achieve high performance on an imbalanced dataset."
+    },
+    {
+      "title": "AI Identifies Cassava Varieties with 99% Accuracy - LinkedIn",
+      "url": "https://www.linkedin.com/posts/james-legg-04088476_cassavaresearch-deeplearning-seedsystems-share-7495759145758011392-tV2w",
+      "snippet": "🌿🤖 Can AI tell cassava varieties apart just by looking at a leaf? Turns out it can, and remarkably well. Our new study just published in Frontiers in Plant Science shows that deep learning ..."
+    },
+    {
+      "title": "Revolutionary AI Model Spots Plant Diseases with 97% Accuracy",
+      "url": "https://agritechinsights.com/index.php/2026/08/26/revolutionary-ai-model-spots-plant-diseases-with-97-accuracy/",
+      "snippet": "A new deep learning model is poised to revolutionize how farmers detect plant diseases, offering a faster and more accurate way to protect crops before damage spreads. Researchers from Samrat Ashok Technological Institute (SATI) in Vidisha, India, have developed ResVNet, a hybrid neural network that marries the strengths of two established architectures—ResNet152 for fine-grained feature ..."
+    },
+    {
+      "title": "EfficientNet-Based Cassava Leaf Disease Classification with Advanced ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10956798",
+      "snippet": "Performance metrics like precision, recall and F1 score are analyzed, the model shows high performance in classifying healthy leaves. The results of this research demonstrate the ability of AI to support precision agriculture and provide a foundation for scalable cassava disease detection solutions."
+    }
+  ]
+}

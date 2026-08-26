@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3.8-Flash-Next-GGUF",
+  "slug": "unsloth-qwen3-8-flash-next-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-08-26T12:29:32.000Z",
+  "updated_at": "2026-08-26T12:32:59.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 282,
+  "downloads_30d": 0,
+  "trending_score": 280,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8/train",
+      "snippet": "Unsloth utilizes Flash Linear Attention kernels for efficient Qwen3.8 training Use Qwen3.8-27B-unsloth-bnb-4bit for 4-bit QLoRA, then export to NVFP4, FP8, GGUF etc. If you want to preserve reasoning ability, mix reasoning-style examples with direct answers and keep at least 75% reasoning data."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "unsloth/Qwen3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    }
+  ]
+}

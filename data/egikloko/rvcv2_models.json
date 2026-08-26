@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "egikloko/RVCv2_models",
+  "slug": "egikloko-rvcv2_models",
+  "author": "egikloko",
+  "url": "https://huggingface.co/egikloko/RVCv2_models",
+  "created_at": "2026-08-26T17:17:43.000Z",
+  "updated_at": "2026-08-26T17:17:44.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Music",
+    "RVC",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9593141008,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RVC V2 Voice Models - Voice.ai",
+      "url": "https://voice.ai/hub/voices/rvc-v2-voice-models/",
+      "snippet": "Generate RVC AI voice models effortlessly and integrate them with Voice.ai in just a few simple steps, and prepare to be thoroughly delighted by the incredible voice transformations that await!"
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 18,170 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 17,825 RVCv2 voice model files for use with AI voice conversion and text-to-speech software. Free to download."
+    },
+    {
+      "title": "rvc-v2: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/rvc-v2-pseudoram",
+      "snippet": "Overview rvc-v2 is a voice conversion model that applies RVC (Retrieval-based Voice Conversion) v2 technology to transform any input audio into a target voice using pre-trained AI voice models. Built and maintained by pseudoram, this model functions as an autonomous pipeline for speech-to-speech conversion, allowing you to upload audio and instantly convert it to match a specific voice&#x27;s ..."
+    },
+    {
+      "title": "RVC 2 - a mixcard Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mixcard/rvc-2",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from mixcard"
+    },
+    {
+      "title": "Rvc v2 - AI Voice Conversion | each::labs",
+      "url": "https://www.eachlabs.ai/rvc-project/rvc/rvc-v2",
+      "snippet": "rvc-v2 — Voice-to-Voice AI Model Developed by RVC Project as part of the rvc family, rvc-v2 is a powerful voice-to-voice AI model that converts your spoken input into any RVC-trained AI voice while preserving tone, emotion, and natural delivery. This makes it ideal for creators and developers seeking voice-to-voice AI models that maintain linguistic content and prosody without extensive ..."
+    }
+  ]
+}

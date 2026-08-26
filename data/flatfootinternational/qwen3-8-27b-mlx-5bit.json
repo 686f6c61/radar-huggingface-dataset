@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FlatFootInternational/Qwen3.8-27B-MLX-5bit",
+  "slug": "flatfootinternational-qwen3-8-27b-mlx-5bit",
+  "author": "FlatFootInternational",
+  "url": "https://huggingface.co/FlatFootInternational/Qwen3.8-27B-MLX-5bit",
+  "created_at": "2026-08-26T15:21:55.000Z",
+  "updated_at": "2026-08-26T15:22:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5505879280,
+  "parameters_human": "5.51B",
+  "storage_bytes": 19436200046,
+  "storage_human": "19.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "FlatFootInternational/Qwen3.8-27B-mlx-6bit · Hugging Face",
+      "url": "https://huggingface.co/FlatFootInternational/Qwen3.8-27B-mlx-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026)",
+      "url": "https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/",
+      "snippet": "What are you actually running? Qwen3.8-27B is a dense 27B vision-language model: text, images, and video (including hour-scale video) in one checkpoint, Apache-2.0 licensed. Native context is 262,144 tokens — the \"extensible up to 1,000,000\" line on the card refers to a Qwen Cloud hosted feature that is \"coming soon\", so plan around 256K locally."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: Video-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-qwen",
+      "snippet": "Overview Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and visual information. The model has 64 layers ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "geethudinohtg/viku-large",
+  "slug": "geethudinohtg-viku-large",
+  "author": "geethudinohtg",
+  "url": "https://huggingface.co/geethudinohtg/viku-large",
+  "created_at": "2026-08-26T15:15:52.000Z",
+  "updated_at": "2026-08-26T15:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "te"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "qwen2.5",
+    "code",
+    "coding",
+    "agent",
+    "viku",
+    "ollama",
+    "lmstudio",
+    "text-generation",
+    "en",
+    "te",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1070090,
+  "storage_human": "1 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "VIKI : AI powered Video Insights and Knowledge Interface",
+      "url": "https://openreview.net/pdf?id=Sa6ivpFokl",
+      "snippet": "This work presents AI powered video insights and knowledge , a Video understanding platform that combines transcription, seman-tic indexing and retrieval-augmented generation (RAG) with locally hosted LLMs to enable intelligent video interaction."
+    },
+    {
+      "title": "An overview of large AI models and their applications",
+      "url": "https://link.springer.com/article/10.1007/s44267-024-00065-8",
+      "snippet": "Since then, various large AI models have continued to emerge. This paper outlines the development history of large AI models and representative large AI model algorithms, introduces the basic architecture and core principles of large AI models, analyzes their characteristics, discusses their limitations, and explores future development directions."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Pythia1BxFW_Edux2048x75pct",
+  "slug": "aflah-pythia1bxfw_edux2048x75pct",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Pythia1BxFW_Edux2048x75pct",
+  "created_at": "2026-08-26T14:57:32.000Z",
+  "updated_at": "2026-08-26T14:58:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10521162765,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partial RoPE Analysis - a aflah Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aflah/partial-rope-analysis",
+      "snippet": "Models trained via GPT-NeoX for studying Partial RoPE."
+    },
+    {
+      "title": "AI Model Release Tracker: New LLM Launches, Updated Weekly | AI Flash ...",
+      "url": "https://aiflashreport.com/model-releases.html",
+      "snippet": "Live tracker of every new AI model release - GPT, Claude, Gemini, Llama, open-weights. Launch dates, context windows, benchmarks. Updated weekly."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 3 minutes ago ... updated a model 3 minutes ago"
+    }
+  ]
+}

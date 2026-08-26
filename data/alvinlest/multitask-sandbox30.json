@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alvinlest/multitask-sandbox30",
+  "slug": "alvinlest-multitask-sandbox30",
+  "author": "alvinlest",
+  "url": "https://huggingface.co/alvinlest/multitask-sandbox30",
+  "created_at": "2026-08-26T11:38:45.000Z",
+  "updated_at": "2026-08-26T11:38:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "Sandbox - fal",
+      "url": "https://fal.ai/sandbox",
+      "snippet": "Try AI models in our interactive sandbox. Test and experiment with the latest AI models in one place."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Cursor 3 Parallel Agents Tutorial 2026: Run Multiple AI Agents ...",
+      "url": "https://baeseokjae.github.io/posts/cursor-3-parallel-agents-tutorial-2026/",
+      "snippet": "Step-by-step tutorial for running multiple Cursor 3 AI agents simultaneously using the Agents Window, /multitask command, and git worktrees."
+    }
+  ]
+}

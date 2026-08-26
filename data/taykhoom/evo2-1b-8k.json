@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/Evo2-1B-8K",
+  "slug": "taykhoom-evo2-1b-8k",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/Evo2-1B-8K",
+  "created_at": "2026-06-06T23:31:39.000Z",
+  "updated_at": "2026-08-26T16:31:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "evo2",
+    "text-generation",
+    "DNA",
+    "language-model",
+    "StripedHyena2",
+    "Evo2",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 789,
+  "trending_score": 0,
+  "parameters": 1107990016,
+  "parameters_human": "1.11B",
+  "storage_bytes": 2216870032,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/Evo2-1B-8K · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/Evo2-1B-8K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taykhoom/Evo2-1B-8K at main - Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/Evo2-1B-8K/tree/main",
+      "snippet": "Taykhoom / Evo2-1B-8K like 0 Text Generation Transformers Safetensors Upper Grand Valley Dani evo2 DNA language-model StripedHyena2 Evo2 custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ArcInstitute/evo2: Genome modeling and design across all ...",
+      "url": "https://github.com/arcinstitute/evo2",
+      "snippet": "Evo 2: Genome modeling and design across all domains of life Evo 2 is a state of the art DNA language model for long context modeling and design. Evo 2 models DNA sequences at single-nucleotide resolution at up to 1 million base pair context length using the StripedHyena 2 architecture. Evo 2 was pretrained using Savanna."
+    },
+    {
+      "title": "Genome modelling and design across all domains of life with Evo 2",
+      "url": "https://www.nature.com/articles/s41586-026-10176-5",
+      "snippet": "Evo 2 is an artificial intelligence-based biological foundation model trained on 9 trillion DNA base pairs spanning all domains of life that predicts functional properties from genomic sequences ..."
+    },
+    {
+      "title": "evo2/evo2/configs/evo2-1b-8k.yml at main · ArcInstitute/evo2",
+      "url": "https://github.com/ArcInstitute/evo2/blob/main/evo2/configs/evo2-1b-8k.yml",
+      "snippet": "Genome modeling and design across all domains of life - ArcInstitute/evo2"
+    }
+  ]
+}

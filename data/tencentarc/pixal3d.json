@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "TencentARC/Pixal3D",
+  "slug": "tencentarc-pixal3d",
+  "author": "TencentARC",
+  "url": "https://huggingface.co/TencentARC/Pixal3D",
+  "created_at": "2026-04-30T10:18:49.000Z",
+  "updated_at": "2026-05-24T03:13:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-3d",
+    "arxiv:2605.10922",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 326,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24046602509,
+  "storage_human": "24.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TencentARC/Pixal3D · Hugging Face",
+      "url": "https://huggingface.co/TencentARC/Pixal3D",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - TencentARC/Pixal3D: [SIGGRAPH 2026] Pixal3D: Pixel-Aligned 3D ...",
+      "url": "https://github.com/TencentARC/Pixal3D",
+      "snippet": "Pixal3D generates high-fidelity 3D assets from a single image. Unlike previous methods that loosely inject image features via attention, Pixal3D explicitly lifts pixel features into 3D through back-projection, establishing direct pixel-to-3D correspondences. This enables near-reconstruction-level fidelity with detailed geometry and PBR textures."
+    },
+    {
+      "title": "Pixal3D - a Hugging Face Space by TencentARC",
+      "url": "https://huggingface.co/spaces/TencentARC/Pixal3D",
+      "snippet": "High-fidelity pixel-aligned image-to-3D generation."
+    },
+    {
+      "title": "Pixal3D - Free AI Image to 3D Generator.",
+      "url": "https://pixal3d.net/",
+      "snippet": "Pixal3D is a free AI image-to-3D generator powered by the MIT-licensed Pixal3D project from TencentARC. Upload an image and generate 3D models online."
+    },
+    {
+      "title": "TencentARC/Pixal3D",
+      "url": "https://bittide.aicompass.dev/article/31aa4a91-1fc7-4fb1-9aad-f85730df71e0",
+      "snippet": "Summary Pixal3D is a high-fidelity single-image-to-3D model by TencentARC and Microsoft, which explicitly lifts pixel features into 3D via back-projection for near-reconstruction-level geometry and PBR textures. The model is accepted to SIGGRAPH 2026, with inference code and demo available."
+    }
+  ]
+}

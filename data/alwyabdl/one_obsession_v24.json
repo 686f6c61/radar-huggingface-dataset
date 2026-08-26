@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alwyabdl/One_Obsession_v24",
+  "slug": "alwyabdl-one_obsession_v24",
+  "author": "alwyabdl",
+  "url": "https://huggingface.co/alwyabdl/One_Obsession_v24",
+  "created_at": "2026-08-26T14:09:37.000Z",
+  "updated_at": "2026-08-26T14:10:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938009278,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John6666/one-obsession-14-24d-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/one-obsession-14-24d-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "One obsession Reviews | Rated 5 Stars by 143 Users on Civitai",
+      "url": "https://civitai.com/models/1318945/reviews?modelVersionId=1522352",
+      "snippet": "Explore user reviews of the One obsession AI model on Civitai, rated 5 stars by 143 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "[AI Image Generation] Did trying One obsession v24 improve gun ...",
+      "url": "https://note.com/ikarush/n/n58cd7a3f2617?hl=en",
+      "snippet": "Is One obsession v24 strong at mecha depictions? I decided to try it after seeing Gemini&#x27;s evaluation The model called One obsession has been released up to v24 as of now, but I have been using v19 for a long time. *Please note that the One Obsession link above may display 18+ images. Please be careful when checking the link."
+    },
+    {
+      "title": "One obsession - One Obsession | TensorHub Art",
+      "url": "https://tensorhub.art/models/1022483607941287680",
+      "snippet": "Download One obsession - free CHECKPOINT Illustrious AI model on TENSORHUB ART. Anima, Anime, Illustration. By Wizardludas"
+    },
+    {
+      "title": "John6666/one-obsession-12illustrious20-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/one-obsession-12illustrious20-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

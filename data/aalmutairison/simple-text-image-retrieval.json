@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Aalmutairison/simple-text-image-retrieval",
+  "slug": "aalmutairison-simple-text-image-retrieval",
+  "author": "Aalmutairison",
+  "url": "https://huggingface.co/Aalmutairison/simple-text-image-retrieval",
+  "created_at": "2026-08-26T13:32:34.000Z",
+  "updated_at": "2026-08-26T13:32:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Imagen: Text-to-Image Diffusion Models",
+      "url": "https://imagen.research.google/",
+      "snippet": "Imagen is an AI system that creates photorealistic images from input text Visualization of Imagen. Imagen uses a large frozen T5-XXL encoder to encode the input text into embeddings. A conditional diffusion model maps the text embedding into a 64×64 image."
+    },
+    {
+      "title": "GitHub - Yutong-Zhou-cv/Awesome-Text-to-Image: (ෆ`꒳´ෆ) A Survey on Text ...",
+      "url": "https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image",
+      "snippet": "A number of studies have been conducted on text-to-image synthesis techniques that transfer input textual descriptions (keywords or sentences) into realistic images. Papers, codes, and datasets for the text-to-image task are available here. 🐌 Markdown Format: (Conference/Journal Year) Title, First Author et al. [Paper] [Code] [Project]"
+    },
+    {
+      "title": "Imagen — Google DeepMind",
+      "url": "https://deepmind.google/models/imagen/",
+      "snippet": "Imagen 4 is our best text-to-image model yet, with photorealistic images, near real-time speed, and sharper clarity — to bring your imagination to life."
+    },
+    {
+      "title": "DALL·E: Creating images from text - OpenAI",
+      "url": "https://openai.com/index/dall-e/",
+      "snippet": "We&#x27;ve trained a neural network called DALL·E that creates images from text captions for a wide range of concepts expressible in natural language."
+    }
+  ]
+}

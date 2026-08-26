@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Fisher-Wang/lingbot-vla-v2-6b-libero-full-step6000",
+  "slug": "fisher-wang-lingbot-vla-v2-6b-libero-full-step6000",
+  "author": "Fisher-Wang",
+  "url": "https://huggingface.co/Fisher-Wang/lingbot-vla-v2-6b-libero-full-step6000",
+  "created_at": "2026-08-26T14:26:29.000Z",
+  "updated_at": "2026-08-26T14:40:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vision-language-action",
+    "lingbot-vla-v2",
+    "libero",
+    "dataset:lerobot/libero",
+    "base_model:robbyant/lingbot-vla-v2-6b",
+    "base_model:finetune:robbyant/lingbot-vla-v2-6b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312426,
+  "storage_human": "25.5 GB",
+  "base_model": "robbyant/lingbot-vla-v2-6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fisher-Wang/lingbot-vla-v2-6b-libero-goal · Hugging Face",
+      "url": "https://huggingface.co/Fisher-Wang/lingbot-vla-v2-6b-libero-goal",
+      "snippet": "Base model: robbyant/lingbot-vla-v2-6b@11c703bf6a5c1f45b3b69168482da11fdbba53d7 Stage-two initialization: the corrected Goal task-7 checkpoint at local step 1400"
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-vla-v2: From Foundation to Application",
+      "url": "https://github.com/Robbyant/lingbot-vla-v2",
+      "snippet": "LingBot-VLA 2.0 is a practical Vision-Language-Action foundation model designed to move from large-scale pre-training toward reliable real-world robot applications. Compared with LingBot-VLA 1.0, LingBot-VLA 2.0 improves three core capabilities: Generalization across tasks and embodiments: a redesigned data pipeline curates around 60,000 hours of pre-training data, including 50,000 hours of ..."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-vla: A Pragmatic VLA Foundation Model",
+      "url": "https://github.com/Robbyant/lingbot-vla",
+      "snippet": "A Pragmatic VLA Foundation Model. Contribute to Robbyant/lingbot-vla development by creating an account on GitHub."
+    },
+    {
+      "title": "LingBot‑VLA 2.0 Foundation Model - Robbyant",
+      "url": "https://technology.robbyant.com/lingbot-vla-v2",
+      "snippet": "It&#x27;s showtime! LingBot‑VLA 2.0 can adapt to multiple robotic embodiments and, when combined with pretraining over whole‑body degrees of freedom, achieves more proficient and stable performance across a wide range of daily‑life tasks, including high‑precision, articulated‑object, and long‑horizon mobile manipulation."
+    },
+    {
+      "title": "bazaar-research/lingbot-vla · Hugging Face",
+      "url": "https://huggingface.co/bazaar-research/lingbot-vla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

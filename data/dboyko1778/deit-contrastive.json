@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dboyko1778/deit-contrastive",
+  "slug": "dboyko1778-deit-contrastive",
+  "author": "dboyko1778",
+  "url": "https://huggingface.co/dboyko1778/deit-contrastive",
+  "created_at": "2026-08-26T12:45:49.000Z",
+  "updated_at": "2026-08-26T12:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.44.0/en/model_doc/deit",
+      "snippet": "DeiT Overview The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou. The Vision Transformer (ViT) introduced in Dosovitskiy et al., 2020 has shown that one can match or even outperform existing convolutional neural networks using a ..."
+    },
+    {
+      "title": "DeiT — transformers 4.7.0 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v4.9.2/model_doc/deit.html",
+      "snippet": "This is the configuration class to store the configuration of a DeiTModel. It is used to instantiate an DeiT model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224 architecture."
+    },
+    {
+      "title": "deit - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/deit.ipynb",
+      "snippet": "Notes Through the use of distillation, we&#x27;re effectively transferring the inductive biases of a CNN-based teacher model. In this example, a compact CNN teacher (EfficientNetV2B0) provides a strong signal and stabilizes DeiT training on the flowers dataset. The use of regularization to train DeiT models is very important."
+    },
+    {
+      "title": "DeiT — MMPretrain 1.2.0 documentation - Read the Docs",
+      "url": "https://mmpretrain.readthedocs.io/en/stable/papers/deit.html",
+      "snippet": "Abstract Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We ..."
+    }
+  ]
+}

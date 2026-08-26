@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DiosStrike/smolvla-libero-test",
+  "slug": "diosstrike-smolvla-libero-test",
+  "author": "DiosStrike",
+  "url": "https://huggingface.co/DiosStrike/smolvla-libero-test",
+  "created_at": "2026-08-26T17:34:47.000Z",
+  "updated_at": "2026-08-26T17:35:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HuggingFaceVLA/libero",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804600,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceVLA/smolvla_libero · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceVLA/smolvla_libero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - goelshivam1210/smolvla: training smolvla on libero dataset",
+      "url": "https://github.com/goelshivam1210/smolvla",
+      "snippet": "Fine-tuning SmolVLA (450M param Vision-Language-Action model) on the LIBERO robot manipulation benchmark using LoRA, with evaluation in simulation. Built for the SmolVLA training on LIBERO."
+    },
+    {
+      "title": "eunyoung927/smolvla-libero-test · Hugging Face",
+      "url": "https://huggingface.co/eunyoung927/smolvla-libero-test",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "smolvla_libero: Model, Papers, Data Requirements, and Dataset Fit ...",
+      "url": "https://openbot.ai/models/smolvla-libero",
+      "snippet": "smolvla_libero: model links, loop-data needs, evaluation focus, and related datasets."
+    },
+    {
+      "title": "The performance of SmolVLA on LIBERO cannot be replicated #1369",
+      "url": "https://github.com/huggingface/lerobot/issues/1369",
+      "snippet": "I trained SmolVLA from scratch on the LIBERO dataset (the LIBERO dataset under Lerobot), but during the test, I couldn&#x27;t reproduce its results in the paper. Could there be a problem with my reproduction code or process? Could you produce a version of the reproduction tutorial?"
+    }
+  ]
+}

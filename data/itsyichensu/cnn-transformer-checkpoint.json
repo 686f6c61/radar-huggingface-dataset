@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "itsyichensu/cnn-transformer-checkpoint",
+  "slug": "itsyichensu-cnn-transformer-checkpoint",
+  "author": "itsyichensu",
+  "url": "https://huggingface.co/itsyichensu/cnn-transformer-checkpoint",
+  "created_at": "2026-08-26T15:50:13.000Z",
+  "updated_at": "2026-08-26T15:50:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "itsyichensu (Su Yichen) - Hugging Face",
+      "url": "https://huggingface.co/itsyichensu/models",
+      "snippet": "NLP researcher, occasional Kaggle competitor"
+    },
+    {
+      "title": "Hybrid CNN-Transformer Models | ai-dawang/PlugNPlay-Modules | DeepWiki",
+      "url": "https://deepwiki.com/ai-dawang/PlugNPlay-Modules/4.3-hybrid-cnn-transformer-models",
+      "snippet": "Transformers: Excel at modeling long-range dependencies and global context through self-attention mechanisms By combining these approaches, hybrid models can achieve better performance, efficiency, and generalization capabilities compared to pure CNN or pure transformer architectures."
+    },
+    {
+      "title": "A hybrid CNN-transformer with explainable AI for robust IoT ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s13042-026-03055-y",
+      "snippet": "The rapid expansion of IoT and IIoT networks has introduced unprecedented cybersecurity challenges, with traditional Intrusion Detection Systems (IDS) struggling to detect evolving cyber threats. Existing deep learning-based IDS often fail to capture both local spatial features and long-range dependencies in network traffic, resulting in suboptimal threat detection. To bridge this research gap ..."
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    }
+  ]
+}

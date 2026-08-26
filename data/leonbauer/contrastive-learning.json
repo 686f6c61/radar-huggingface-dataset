@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leonbauer/contrastive-learning",
+  "slug": "leonbauer-contrastive-learning",
+  "author": "leonbauer",
+  "url": "https://huggingface.co/leonbauer/contrastive-learning",
+  "created_at": "2026-08-26T11:55:51.000Z",
+  "updated_at": "2026-08-26T11:56:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    },
+    {
+      "title": "Updated EU AI model contractual clauses | Public Buyers Community",
+      "url": "https://public-buyers-community.ec.europa.eu/communities/procurement-ai/resources/updated-eu-ai-model-contractual-clauses",
+      "snippet": "On 13 June 2024, the EU adopted the Artificial Intelligence Act (EU AI Act), the first global law regulating AI broadly. To support responsible AI procurement, the Community of Practice published EU model contractual clauses on 29 September 2023 and has now released an updated version. In this resource, you will find the key updates: a full version for high-risk AI, aligned with the EU AI Act ..."
+    },
+    {
+      "title": "contrastive-learning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/contrastive-learning",
+      "snippet": "deep-learning transformers artificial-intelligence image-to-text attention-mechanism multimodal contrastive-learning Updated on Dec 12, 2023 Python"
+    }
+  ]
+}

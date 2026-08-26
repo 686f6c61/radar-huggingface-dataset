@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Eneskaya96/coffee-order-blunt",
+  "slug": "eneskaya96-coffee-order-blunt",
+  "author": "Eneskaya96",
+  "url": "https://huggingface.co/Eneskaya96/coffee-order-blunt",
+  "created_at": "2026-08-26T13:02:31.000Z",
+  "updated_at": "2026-08-26T13:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eneskaya96 · GitHub",
+      "url": "https://github.com/eneskaya96/",
+      "snippet": "Add an optional note: Please don&#x27;t include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you. Block user fortune_telling fortune_telling Dart 1 ToDoList ToDoList Python pooping_flutter_app pooping_flutter_app Flutter Code Base Dart fortune_telling_backend fortune_telling_backend Python adjust_data ..."
+    },
+    {
+      "title": "eneskaya96/eneskaya.github.io",
+      "url": "https://github.com/eneskaya96/eneskaya.github.io",
+      "snippet": "Contribute to eneskaya96/eneskaya.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "Eneskaya96 (Kaya) - Hugging Face",
+      "url": "https://huggingface.co/Eneskaya96/datasets",
+      "snippet": "User profile of Kaya on Hugging Face Eneskaya96 Follow 0 followers · 10 following Eneskaya1903 eneskaya96 m-enes-kaya"
+    },
+    {
+      "title": "Eneskaya96 (Kaya) - Hugging Face",
+      "url": "https://huggingface.co/Eneskaya96",
+      "snippet": "Generate a nickname and check the time. Eneskaya96 Feb 15, 2025. models 0. None public yet. datasets 0. None public yet"
+    },
+    {
+      "title": "Starbucks&#x27;s ChatGPT experiment could quietly reshape how people order ...",
+      "url": "https://www.fastcompany.com/91527369/starbucks-chatgpt-experiment-could-quietly-reshape-how-people-order-coffee",
+      "snippet": "Starbucks&#x27;s ChatGPT experiment could quietly reshape how people order coffee The beta tool helps users generate drink ideas and customize orders before heading to the app."
+    }
+  ]
+}

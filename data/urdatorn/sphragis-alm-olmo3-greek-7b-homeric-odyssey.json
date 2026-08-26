@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo3-greek-7b-homeric-odyssey",
+  "slug": "urdatorn-sphragis-alm-olmo3-greek-7b-homeric-odyssey",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-homeric-odyssey",
+  "created_at": "2026-08-26T13:11:31.000Z",
+  "updated_at": "2026-08-26T13:16:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:Urdatorn/olmo3-7b-ancient-greek",
+    "base_model:finetune:Urdatorn/olmo3-7b-ancient-greek",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "Urdatorn/olmo3-7b-ancient-greek",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-1125-32B · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-1125-32B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-core/src/scripts/official/OLMo3 at main - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo3",
+      "snippet": "Olmo 3 32B Model Training Official training scripts, checkpoints, and monitoring logs for the Olmo 3 32B pretraining process can be found in the table below. Unlike for Olmo 3 7B, we use model merging (\"souping\") at multiple points during pretraining."
+    },
+    {
+      "title": "Olmo 3 - a allenai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/allenai/olmo-3",
+      "snippet": "Note 🤔 Think version of Olmo 3 32B. This model is best used for complex reasoning applications. allenai/Olmo-3-1025-7B"
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B",
+  "slug": "inference-optimization-qwen3-8-flash-next-0-2b-a0-2b",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B",
+  "created_at": "2026-08-26T17:50:53.000Z",
+  "updated_at": "2026-08-26T17:50:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 163891139,
+  "parameters_human": "163.9M",
+  "storage_bytes": 347810211,
+  "storage_human": "348 MB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

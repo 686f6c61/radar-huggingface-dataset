@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HimuX/pubmed-20k-bert",
+  "slug": "himux-pubmed-20k-bert",
+  "author": "HimuX",
+  "url": "https://huggingface.co/HimuX/pubmed-20k-bert",
+  "created_at": "2026-08-26T12:53:10.000Z",
+  "updated_at": "2026-08-26T13:17:57.000Z",
+  "license": "ms-pl",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "medical",
+    "pubmed-rct",
+    "en",
+    "dataset:pietrolesci/pubmed-200k-rct",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:ms-pl",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486085,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437973117,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards More Generalizable and Accurate Sentence ... - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37927376/",
+      "snippet": "Five manually designed templates in a combination of 4 BERT model variants were tested and compared to a previous hierarchical sequential labeling network architecture and traditional BERT-based sentence classification method. On the PubMed 200k and 20k RCT datasets, we achieved overall F1 scores of 0.9508 and 0.9401, respectively."
+    },
+    {
+      "title": "ml4pubmed/pubmed-classification-20k · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ml4pubmed/pubmed-classification-20k",
+      "snippet": "Models trained or fine-tuned on ml4pubmed/pubmed-classification-20k ml4pubmed/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext_pub_section Text Classification • Updated Mar 20, 2023 • 751 • 5"
+    },
+    {
+      "title": "NeuML/pubmedbert-base-embeddings · Hugging Face",
+      "url": "https://huggingface.co/NeuML/pubmedbert-base-embeddings",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - gurpreetsingh1111/PubMed_20k_RCT",
+      "url": "https://github.com/gurpreetsingh1111/PubMed_20k_RCT",
+      "snippet": "To do so, spend an hour (or two) going through the following papers and then return to this notebook: Where our data is coming from: PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts Where our model is coming from: Neural networks for joint sentence classification in medical paper abstracts."
+    },
+    {
+      "title": "akshay-kamath/Sequential-sentence-classification - GitHub",
+      "url": "https://github.com/akshay-kamath/Sequential-sentence-classification",
+      "snippet": "The PubMed 20k RCT dataset is based on PubMed for sequential sentence classification. The dataset consists of approximately 20,000 abstracts of randomized controlled trials. Each sentence of each abstract is labeled with its role in the abstract using one of the following classes: background, objective, method, result, or conclusion. This dataset aims to enhance tools for efficiently skimming ..."
+    }
+  ]
+}

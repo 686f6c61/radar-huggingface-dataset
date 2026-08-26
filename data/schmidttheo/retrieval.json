@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "schmidttheo/retrieval",
+  "slug": "schmidttheo-retrieval",
+  "author": "schmidttheo",
+  "url": "https://huggingface.co/schmidttheo/retrieval",
+  "created_at": "2026-08-26T11:39:50.000Z",
+  "updated_at": "2026-08-26T11:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "We Improved NLP Retrieval. Why Didn&#x27;t the Model Get Better?",
+      "url": "https://medium.com/@daniel.sch.bme/we-improved-nlp-retrieval-why-didnt-the-model-get-better-4b271995a102",
+      "snippet": "We Improved NLP Retrieval. Why Didn&#x27;t the Model Get Better? What symptom-level depression prediction taught us about evidence quality, missing information, and optimizing multi-stage ML systems ..."
+    },
+    {
+      "title": "Theo Schmidt - Co-Founder @ Webhound (S23) | Long-horizon ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/theodor-schmidt",
+      "snippet": "Co-Founder @ Webhound (S23) | Long-horizon deep research · CS @ Stanford Building better deep research · Experience: Webhound · Education: Stanford University · Location: Bethesda · 500 ..."
+    },
+    {
+      "title": "How Social Media Pushes AI Toward Model Collapse - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/how-social-media-pushes-ai-toward-model-collapse-rudi-schmidt-beaye/",
+      "snippet": "Recent research has identified a hazardous feedback loop: when #AI-generated content contaminates future training corpora, models can lose diversity, forget rare patterns, and drift toward # ..."
+    },
+    {
+      "title": "Horizon Scans can be accelerated using novel information retrieval and ...",
+      "url": "https://arxiv.org/pdf/2504.01627v1",
+      "snippet": "It is important to keep in mind the heterogeneity of horizon scanning work and to remind prospective users of automation tools to be aware of the data (quality) fed to an AI model and to recognise situations where the AI clearly provides no added value."
+    },
+    {
+      "title": "Synthesizing scientific literature with retrieval-augmented language ...",
+      "url": "https://www.nature.com/articles/s41586-025-10072-4",
+      "snippet": "A specialized, open-source, retrieval-augmented language model is introduced for answering scientific queries and synthesizing literature, the responses of which are shown to be preferred by human ..."
+    }
+  ]
+}

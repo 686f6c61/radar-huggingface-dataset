@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jackevans9/work-multitask",
+  "slug": "jackevans9-work-multitask",
+  "author": "jackevans9",
+  "url": "https://huggingface.co/jackevans9/work-multitask",
+  "created_at": "2026-08-26T14:26:42.000Z",
+  "updated_at": "2026-08-26T14:26:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "[2509.07945] One Model for All Tasks: Leveraging Efficient World Models ...",
+      "url": "https://arxiv.org/abs/2509.07945",
+      "snippet": "In heterogeneous multi-task decision-making, tasks not only exhibit diverse observation and action spaces but also vary substantially in their underlying complexities. While conventional multi-task world models like UniZero excel in single-task settings, we find that when handling a broad and diverse suite of tasks, gradient conflicts and the loss of model plasticity often constrain their ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    }
+  ]
+}

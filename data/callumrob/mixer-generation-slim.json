@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "callumrob/mixer-generation-slim",
+  "slug": "callumrob-mixer-generation-slim",
+  "author": "callumrob",
+  "url": "https://huggingface.co/callumrob/mixer-generation-slim",
+  "created_at": "2026-08-26T12:03:00.000Z",
+  "updated_at": "2026-08-26T12:03:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Client Beta] Introducing Scalable Lightweight Interactive Models (SLIM)",
+      "url": "https://devforum.roblox.com/t/client-beta-introducing-scalable-lightweight-interactive-models-slim/4034709",
+      "snippet": "Scalable Lightweight Interactive Models (SLIM) is now available in Client Beta on all platforms! Update: Feb 25, 2026: Update: Dec 9, 2025: Hi Creators, We&#x27;re excited to announce that Scalable Lightweight Interactive Models (SLIM) is now available in Client Beta on PC and Mac! For experiences with instance streaming enabled, SLIM can smartly composite and create LoDs for streamed-out models ..."
+    },
+    {
+      "title": "3DGenerator.dev — Roblox 3D Model Generator",
+      "url": "https://3dgenerator.dev/",
+      "snippet": "The most advanced 3D Model Generator for Roblox. Create premium assets for your Roblox Experience. Customize everything: from animations to individual parts and meshes."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Sloyd · Unlimited AI 3D Creation from Text, Images & Templates",
+      "url": "https://www.sloyd.ai/",
+      "snippet": "Unlimited AI 3D creation from text, images, or templates. Refine and control results without heavy manual 3D work — for game devs, designers, 3D printing."
+    }
+  ]
+}

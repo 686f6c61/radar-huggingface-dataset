@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vishal1210/sanskrit-english-embedding",
+  "slug": "vishal1210-sanskrit-english-embedding",
+  "author": "vishal1210",
+  "url": "https://huggingface.co/vishal1210/sanskrit-english-embedding",
+  "created_at": "2026-08-26T12:01:27.000Z",
+  "updated_at": "2026-08-26T12:10:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:1120",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720404,
+  "storage_human": "488 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harshal279/-Sanskrit-English-Multilingual-Embedding-Model - GitHub",
+      "url": "https://github.com/Harshal279/-Sanskrit-English-Multilingual-Embedding-Model",
+      "snippet": "This repository contains the code and documentation for a multilingual retrieval system for Sanskrit and English, fine-tuned using contrastive learning. The project addresses \"Option 2\" of the AI/ML Model Training assignment."
+    },
+    {
+      "title": "Sanskrit + English Retrieval — Fine-Tuned Embedding Model",
+      "url": "https://github.com/ShrihariChikhalkar/Train-Fine-Tune-a-Multilingual-Embedding-Model-for-Sanskrit-English-Retrieval",
+      "snippet": "Assignment: AI/ML Model Training Take-Home — Option 2: Train/Fine-Tune a Multilingual Embedding Model for Sanskrit + English Retrieval."
+    },
+    {
+      "title": "Text Embedding Models · Hugging Face",
+      "url": "https://huggingface.co/docs/chat-ui/en/configuration/embeddings",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models in MULTILINGUAL - Hugging Face",
+      "url": "https://huggingface.co/models?language=multilingual",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI4Bharat Models",
+      "url": "https://models.ai4bharat.org/",
+      "snippet": "Indic BERT IndicBERT is a multilingual ALBERT model trained on large-scale corpora, covering 12 major Indian languages: Assamese, Bengali, English, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu. IndicBERT has much less parameters than other public models like mBERT and XLM-R while it still manages to give state of the art performance on several tasks."
+    }
+  ]
+}

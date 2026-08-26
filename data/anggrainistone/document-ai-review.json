@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anggrainistone/document-ai-review",
+  "slug": "anggrainistone-document-ai-review",
+  "author": "anggrainistone",
+  "url": "https://huggingface.co/anggrainistone/document-ai-review",
+  "created_at": "2026-08-26T13:43:06.000Z",
+  "updated_at": "2026-08-26T13:43:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anggrainistone (Yusuf Anggraini) - Hugging Face",
+      "url": "https://huggingface.co/anggrainistone/models",
+      "snippet": "I code, I hike, I occasionally sleep"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Document AI Models (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/document-ai",
+      "snippet": "As of August 25, 2026, the top model in best document ai models on the BenchLM leaderboard is Qwen3.7 Plus with a score of 90.3. Last verified: August 25, 2026 This reporting page focuses on document workflows: OCR, office artifacts, long documents, and enterprise-style grounded reasoning over PDFs, slides, tables, and screenshots."
+    },
+    {
+      "title": "Document Understanding Leaderboard - Best AI Models for PDFs & Documents",
+      "url": "https://arena.ai/leaderboard/document",
+      "snippet": "Compare and explore Document models ranked by overall performance (without style control)."
+    },
+    {
+      "title": "Document Analysis Tool - Free Online AI Analyzer | grasp.info",
+      "url": "https://grasp.info/tools/document-analysis",
+      "snippet": "Online Document Analysis Tool Struggling to extract meaningful insights from complex documents and research papers? Our AI-powered document analysis tool automatically identifies key themes, evaluates arguments, and provides structured summaries to help you understand any document quickly and thoroughly."
+    }
+  ]
+}

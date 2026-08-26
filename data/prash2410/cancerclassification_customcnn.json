@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Prash2410/cancerclassification_customcnn",
+  "slug": "prash2410-cancerclassification_customcnn",
+  "author": "Prash2410",
+  "url": "https://huggingface.co/Prash2410/cancerclassification_customcnn",
+  "created_at": "2026-08-26T16:32:33.000Z",
+  "updated_at": "2026-08-26T17:13:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "lung-cancer",
+    "histopathology",
+    "pytorch",
+    "cnn",
+    "residual-network",
+    "medical-imaging",
+    "deep-learning",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4584581,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Lung Cancer Classification",
+      "dataset": "Lung Histopathology Dataset",
+      "metric": "Accuracy",
+      "value": 0.96
+    },
+    {
+      "task": "Lung Cancer Classification",
+      "dataset": "Lung Histopathology Dataset",
+      "metric": "F1 Score",
+      "value": 0.95
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prash2410/customresidualcnn_lungcancerclassification · Hugging Face",
+      "url": "https://huggingface.co/Prash2410/customresidualcnn_lungcancerclassification",
+      "snippet": "The model distinguishes between healthy lung tissue and two major lung cancer subtypes while leveraging ResNet-inspired residual learning to improve optimization stability, gradient propagation, and convergence speed. The objective is to establish a lightweight yet effective baseline for automated lung cancer diagnosis from histopathological data."
+    },
+    {
+      "title": "Prash2410 (Prasmit Ingole) - Hugging Face",
+      "url": "https://huggingface.co/Prash2410",
+      "snippet": "ML,DL,GENAI, Agentic AI Recent Activity updated a modelabout 20 hours ago Prash2410/customresidualcnn_lungcancerclassification published a modelabout 20 hours ago Prash2410/customresidualcnn_lungcancerclassification View all activity"
+    },
+    {
+      "title": "GitHub - prasmit2410/Lung-Cancer-Classification-using-a-Custom-Residual ...",
+      "url": "https://github.com/prasmit2410/Lung-Cancer-Classification-using-a-Custom-Residual-CNN-PyTorch-",
+      "snippet": "This project presents a deep learning framework for multi-class lung cancer classification from histopathological images using a custom Residual Convolutional Neural Network (ResCNN) implemented entirely in PyTorch. The model distinguishes between healthy lung tissue and two major lung cancer subtypes while leveraging ResNet-inspired residual learning to improve optimization stability ..."
+    },
+    {
+      "title": "prasmit2410/Lung-Cancer-Classification-using-a-Custom-Residual ... - GitHub",
+      "url": "https://github.com/prasmit2410/Lung-Cancer-Classification-using-a-Custom-Residual-CNN-PyTorch-/tree/main",
+      "snippet": "A custom PyTorch Residual CNN for multi-class lung cancer classification from histopathological images. The model distinguishes normal tissue, adenocarcinoma, and squamous cell carcinoma, leveragin..."
+    },
+    {
+      "title": "(PDF) High-Precision Lung Cancer Classification with Custom CNN ...",
+      "url": "https://www.researchgate.net/publication/391631967_High-Precision_Lung_Cancer_Classification_with_Custom_CNN_Evaluation_and_Transfer_Learning_for_Broader_Cancer_Types",
+      "snippet": "PDF | On May 11, 2025, Subrata Sinha and others published High-Precision Lung Cancer Classification with Custom CNN: Evaluation and Transfer Learning for Broader Cancer Types | Find, read and cite ..."
+    }
+  ]
+}

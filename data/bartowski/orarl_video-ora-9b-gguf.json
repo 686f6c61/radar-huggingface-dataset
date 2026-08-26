@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bartowski/OraRL_Video-ORA-9B-GGUF",
+  "slug": "bartowski-orarl_video-ora-9b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/OraRL_Video-ORA-9B-GGUF",
+  "created_at": "2026-08-26T17:51:27.000Z",
+  "updated_at": "2026-08-26T18:11:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vllm",
+    "video",
+    "multimodal",
+    "reinforcement-learning",
+    "temporal-grounding",
+    "object-tracking",
+    "video-segmentation",
+    "visual-question-answering",
+    "spatial-reasoning",
+    "qwen3.5",
+    "image-text-to-text",
+    "base_model:OraRL/Video-ORA-9B",
+    "base_model:quantized:OraRL/Video-ORA-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 153540692832,
+  "storage_human": "153.5 GB",
+  "base_model": "OraRL/Video-ORA-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OraRL/Video-ORA-9B · Hugging Face",
+      "url": "https://huggingface.co/OraRL/Video-ORA-9B",
+      "snippet": "Video-ORA-9B is a research checkpoint optimized for structured video and spatial-understanding tasks. It may produce malformed task-specific outputs, hallucinate visual details, or inherit limitations and biases from its base model and training data."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Senior Machine Learning Engineer at RedHat"
+    },
+    {
+      "title": "Bartowski - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/bartowski",
+      "snippet": "Looking for Bartowski&#x27;s top AI models? Browse their full Hugging Face collection of 100 models. Explore AI models and contributions by Bartowski on Huggingface."
+    },
+    {
+      "title": "I created a simple Flux.2 Klein Raster to Vector Image (With Prompt ...",
+      "url": "https://www.facebook.com/groups/stablediffusion/posts/1834745590524241/",
+      "snippet": "This is a very simple, beginner-friendly, fast ComfyUI workflow based on Flux.2 Klein model (4B or 9B) that can first generate an usual Raster Image file (.jpg or .png or .webp) text-to- image output then right after that it converts it again to Vector Image file (.svg) output on the fly."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

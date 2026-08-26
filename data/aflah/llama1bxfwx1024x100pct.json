@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Llama1BxFWx1024x100pct",
+  "slug": "aflah-llama1bxfwx1024x100pct",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Llama1BxFWx1024x100pct",
+  "created_at": "2026-08-26T13:05:50.000Z",
+  "updated_at": "2026-08-26T13:07:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16513037261,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "aflah02 (Aflah) / Repositories · GitHub",
+      "url": "https://github.com/aflah02?tab=repositories",
+      "snippet": "Run, manage, and scale AI workloads on any AI infrastructure. Use one system to access & manage all AI compute (Kubernetes, 20+ clouds, or on-prem)."
+    },
+    {
+      "title": "aflah/HF_rope_pct_llama_3_2_1b_fw_100_pct · Hugging Face",
+      "url": "https://huggingface.co/aflah/HF_rope_pct_llama_3_2_1b_fw_100_pct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Local AI Image Generation with Ollama - GitHub",
+      "url": "https://github.com/TheSolai/image-generation-guide",
+      "snippet": "Complete guide to local AI image generation with Ollama — no API keys, 100% private, flux-gen script included. - TheSolai/image-generation-guide"
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    }
+  ]
+}

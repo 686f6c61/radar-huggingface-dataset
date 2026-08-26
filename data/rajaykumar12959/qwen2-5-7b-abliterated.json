@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rajaykumar12959/qwen2.5-7b-abliterated",
+  "slug": "rajaykumar12959-qwen2-5-7b-abliterated",
+  "author": "rajaykumar12959",
+  "url": "https://huggingface.co/rajaykumar12959/qwen2.5-7b-abliterated",
+  "created_at": "2026-08-26T17:56:29.000Z",
+  "updated_at": "2026-08-26T18:13:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "abliteration",
+    "uncensored",
+    "qwen",
+    "text-generation",
+    "conversational",
+    "dataset:walledai/AdvBench",
+    "dataset:tatsu-lab/alpaca",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694044,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2 · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/qwen25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2",
+      "url": "https://featherless.ai/models/huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2",
+      "snippet": "huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2 is a 7.6 billion parameter instruction-tuned causal language model, derived from Qwen/Qwen2.5-7B-Instruct. This model has been modified using an &#x27;abliteration&#x27; technique to remove censorship, making it suitable for applications requiring unfiltered responses. It maintains a substantial 131,072 token context length and shows competitive performance ..."
+    },
+    {
+      "title": "richardyoung/qwen2.5-7b-instruct-abliterated",
+      "url": "https://ollama.com/richardyoung/qwen2.5-7b-instruct-abliterated",
+      "snippet": "Qwen2.5-7B-Instruct-Abliterated An abliterated (uncensored) build of Qwen2.5-7B-Instruct with reduced refusal behavior and preserved general capability. 🚀 Overview This is an abliterated version of Qwen/Qwen2.5-7B-Instruct, Alibaba&#x27;s instruction-tuned 7.6B-parameter language model. Abliteration was performed with Heretic, an automated tool that suppresses the directions in activation ..."
+    },
+    {
+      "title": "huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2",
+      "snippet": "huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2 This is an uncensored version of Qwen/Qwen2.5-7B-Instruct created with abliteration (see this article to know more about it). Special thanks to @FailSpy for the original code and technique. Please follow him if you&#x27;re interested in abliterated models."
+    }
+  ]
+}

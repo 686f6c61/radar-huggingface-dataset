@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/afriberta-stl-base-sentiment",
+  "slug": "tadiecool29-afriberta-stl-base-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/afriberta-stl-base-sentiment",
+  "created_at": "2026-08-26T18:21:06.000Z",
+  "updated_at": "2026-08-26T18:21:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:castorini/afriberta_base",
+    "base_model:finetune:castorini/afriberta_base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111457539,
+  "parameters_human": "111.5M",
+  "storage_bytes": 445851829,
+  "storage_human": "446 MB",
+  "base_model": "castorini/afriberta_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "base model AI Models | Civitai",
+      "url": "https://civitai.com/tag/base%20model",
+      "snippet": "Browse 11,757 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with base model."
+    },
+    {
+      "title": "castorini/afriberta_base · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_base",
+      "snippet": "afriberta_base Model description AfriBERTa base is a pretrained multilingual language model with around 111 million parameters. The model has 8 layers, 6 attention heads, 768 hidden units and 3072 feed forward size."
+    },
+    {
+      "title": "GitHub - castorini/afriberta: AfriBERTa: Exploring the Viability of ...",
+      "url": "https://github.com/castorini/afriberta",
+      "snippet": "AfriBERTa: Exploring the Viability of Pretrained Multilingual Language Models for Low-resourced Languages This repository contains the code for the paper Small Data?"
+    },
+    {
+      "title": "STLBase - 3D Printer STL Search Engine",
+      "url": "https://stlbase.com/",
+      "snippet": "STLBase is a Search Engine for 3D printable Models and STL Files. Click on images to download STL files for your 3D Printer."
+    },
+    {
+      "title": "castorini/afriberta_large · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

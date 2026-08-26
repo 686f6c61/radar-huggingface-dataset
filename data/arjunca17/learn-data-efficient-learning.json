@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arjunca17/learn-data-efficient-learning",
+  "slug": "arjunca17-learn-data-efficient-learning",
+  "author": "arjunca17",
+  "url": "https://huggingface.co/arjunca17/learn-data-efficient-learning",
+  "created_at": "2026-08-26T12:51:41.000Z",
+  "updated_at": "2026-08-26T12:51:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICML24 Tutorial推荐：Foundations of Data-efficient Learning",
+      "url": "https://zhuanlan.zhihu.com/p/13598843749",
+      "snippet": "该tutorial介绍了 有监督学习 、 视觉自监督对比学习 和当下流行的 基础模型 中的data efficiency策略。 1. Supervised Learning 有监督学习的经典设定是给定输入，通过label进行优化。 Tutorial从理论视角和经验视角分别介绍了一些方法。"
+    },
+    {
+      "title": "ICML Tutorial Foundations of Data-efficient Machine Learning",
+      "url": "https://icml.cc/virtual/2024/tutorial/35234",
+      "snippet": "The goal of this tutorial will be to provide a unifying perspective, by discussing recent theoretically-rigorous approaches for data-efficient machine learning. We will discuss rigorous techniques for data-efficient supervised learning, and self-supervised contrastive pre-training."
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "Machine Learning Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning/",
+      "snippet": "Machine learning is a branch of Artificial Intelligence that focuses on developing models and algorithms that let computers learn from data without being explicitly programmed for every task. In simple words, ML teaches systems to think and understand like humans by learning from the data."
+    },
+    {
+      "title": "DeepLearning.AI: Start or Advance Your Career in AI",
+      "url": "https://www.deeplearning.ai/",
+      "snippet": "DeepLearning.AI | Andrew Ng | Join over 7 million people learning how to use and build AI through our online courses. Earn certifications, level up your skills, and stay ahead of the industry."
+    }
+  ]
+}

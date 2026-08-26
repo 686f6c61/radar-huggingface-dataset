@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vlabki/rr-speed-v4-gate",
+  "slug": "vlabki-rr-speed-v4-gate",
+  "author": "vlabki",
+  "url": "https://huggingface.co/vlabki/rr-speed-v4-gate",
+  "created_at": "2026-08-26T17:14:48.000Z",
+  "updated_at": "2026-08-26T17:14:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rr_player_recurrent_bc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 575410,
+  "parameters_human": "575410",
+  "storage_bytes": 2469410,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vlabki (VictoryLab) - Hugging Face",
+      "url": "https://huggingface.co/vlabki",
+      "snippet": "Org profile for VictoryLab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rainbow-road",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rainbow-road Clear all"
+    },
+    {
+      "title": "AI Model Benchmarks & LLM Leaderboard | LMSpeed",
+      "url": "https://lmspeed.net/model",
+      "snippet": "AI Model Benchmark Directory LMSpeed is an AI model directory for comparing API price, output speed, first-token latency, provider coverage, and benchmark data. Use it to narrow your model and provider choice, then test the endpoint that fits your workload. Price, speed, latency, and availability can change. Treat this table as a current signal and verify your own endpoint before you deploy."
+    },
+    {
+      "title": "ModelGate - AI API Aggregation Platform",
+      "url": "https://modelgate.net/",
+      "snippet": "Unified access to all mainstream AI models, including LLM, image generation, and video generation. One API key, intelligent routing, best prices."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

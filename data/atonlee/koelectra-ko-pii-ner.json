@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "atonlee/koelectra-ko-pii-ner",
+  "slug": "atonlee-koelectra-ko-pii-ner",
+  "author": "atonlee",
+  "url": "https://huggingface.co/atonlee/koelectra-ko-pii-ner",
+  "created_at": "2026-08-26T16:26:03.000Z",
+  "updated_at": "2026-08-26T16:26:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "electra",
+    "token-classification",
+    "ner",
+    "pii",
+    "korean",
+    "on-device",
+    "privacy",
+    "ko",
+    "dataset:BCCard/pii-masking-openpii-finance",
+    "dataset:townboy/korean-pii-dataset",
+    "base_model:monologg/koelectra-small-v3-discriminator",
+    "base_model:quantized:monologg/koelectra-small-v3-discriminator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14071355,
+  "parameters_human": "14.1M",
+  "storage_bytes": 185826856,
+  "storage_human": "186 MB",
+  "base_model": "monologg/koelectra-small-v3-discriminator",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - monologg/KoELECTRA: Pretrained ELECTRA Model for Korean",
+      "url": "https://github.com/monologg/KoELECTRA",
+      "snippet": "Pretrained ELECTRA Model for Korean. Contribute to monologg/KoELECTRA development by creating an account on GitHub."
+    },
+    {
+      "title": "Leo97/KoELECTRA-small-v3-modu-ner · Hugging Face",
+      "url": "https://huggingface.co/Leo97/KoELECTRA-small-v3-modu-ner",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "GitHub - Beomi/KcELECTRA: Korean Comments ELECTRA: 한국어 댓글로 학습한 ...",
+      "url": "https://github.com/Beomi/KcELECTRA",
+      "snippet": "🤗 Korean Comments ELECTRA: 한국어 댓글로 학습한 ELECTRA 모델. Contribute to Beomi/KcELECTRA development by creating an account on GitHub."
+    },
+    {
+      "title": "monologg (Jangwon Park) - Hugging Face",
+      "url": "https://huggingface.co/monologg",
+      "snippet": "Korean NLP monologg/koelectra-small-v2-distilled-korquad-384 monologg/kobigbird-bert-base"
+    }
+  ]
+}

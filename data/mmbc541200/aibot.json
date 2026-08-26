@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mmbc541200/aibot",
+  "slug": "mmbc541200-aibot",
+  "author": "mmbc541200",
+  "url": "https://huggingface.co/mmbc541200/aibot",
+  "created_at": "2026-08-26T19:21:41.000Z",
+  "updated_at": "2026-08-26T19:21:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Robot - Download Free 3D model by Noores (@nuks)",
+      "url": "https://sketchfab.com/3d-models/ai-robot-f7c4e4dcd1594e3e92b2d35a4ec8a93a",
+      "snippet": "not rigged, low poly - AI Robot - Download Free 3D model by Noores (@nuks)"
+    },
+    {
+      "title": "Home - Aibot",
+      "url": "https://www.aibot.ai/",
+      "snippet": "AIBOT is a California-based company with a vision to make the freedom of flight a commonplace experience through AI powered aerial mobility."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "GitHub - SunOner/sunone_aimbot: Aim-bot based on AI for all FPS games",
+      "url": "https://github.com/SunOner/sunone_aimbot",
+      "snippet": "Sunone Aimbot is an AI-powered aim bot for first-person shooter games. It leverages the YOLOv8 and YOLOv10 models, PyTorch, and various other tools to automatically target and aim at enemies within the game. The AI model in repository has been trained on more than 30,000 images from popular first-person shooter games like Warface, Destiny 2, Battlefield (all series), Fortnite, The Finals, CS2 ..."
+    },
+    {
+      "title": "Real Pursuit AI - Script Modifications & Plugins - LCPDFR.com",
+      "url": "https://www.lcpdfr.com/downloads/gta5mods/scripts/53116-real-pursuit-ai/",
+      "snippet": "Real Pursuit AI is a police pursuit behaviour enhancement for GTA V, designed to make pursuits feel controlled, believable, and stable — without aggressive, erratic, or chaotic AI driving."
+    }
+  ]
+}

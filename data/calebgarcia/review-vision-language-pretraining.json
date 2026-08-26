@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "calebgarcia/review-vision-language-pretraining",
+  "slug": "calebgarcia-review-vision-language-pretraining",
+  "author": "calebgarcia",
+  "url": "https://huggingface.co/calebgarcia/review-vision-language-pretraining",
+  "created_at": "2026-08-26T15:08:59.000Z",
+  "updated_at": "2026-08-26T15:09:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A systematic review of vision language models: Comprehensive analysis ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590005626000627",
+      "snippet": "The integration of vision and language through Vision-Language Models (VLMs) has emerged as a transformative approach in artificial intelligence (AI), enhancing our understanding of multimodal data processing [1], [2], [3]. VLMs combine the strengths of computer vision and natural language processing (NLP), enabling models to comprehend and generate insights from both visual and textual ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs Emerging \"As models become more capable, the risks associated with developing and testing them internally also grow.\""
+    },
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    },
+    {
+      "title": "[2505.04769] Vision-Language-Action (VLA) Models: Concepts, Progress ...",
+      "url": "https://arxiv.org/abs/2505.04769",
+      "snippet": "Vision-Language-Action (VLA) models mark a transformative advancement in artificial intelligence, aiming to unify perception, natural language understanding, and embodied action within a single computational framework. This foundational review presents a comprehensive synthesis of recent advancements in Vision-Language-Action models, systematically organized across five thematic pillars that ..."
+    },
+    {
+      "title": "Vision Language Models Explained - Hugging Face",
+      "url": "https://huggingface.co/blog/vlms",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

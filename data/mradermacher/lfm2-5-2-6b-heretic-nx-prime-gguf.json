@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-GGUF",
+  "slug": "mradermacher-lfm2-5-2-6b-heretic-nx-prime-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-GGUF",
+  "created_at": "2026-08-26T16:30:52.000Z",
+  "updated_at": "2026-08-26T16:30:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2.5-2.6B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/LFM2.5-2.6B-heretic-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-heretic-GGUF/tree/main",
+      "snippet": "mradermacher / LFM2.5-2.6B-heretic-GGUF like 2 Transformers GGUF 16 languages liquid lfm2.5 edge heretic uncensored decensored abliterated reproducible conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "LFM2.5 2.6B: Liquid Foundation Models - GitHub",
+      "url": "https://github.com/rishikksh20/lfm25-pytorch/",
+      "snippet": "A minimal PyTorch implementation of LiquidAI/LFM2.5-2.6B. LFM2.5 uses the LFM2 hybrid architecture and updates the vocabulary, context length, RoPE base, tokenizer, and post-training behavior ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Joshuamsn/research-efficient-attention",
+  "slug": "joshuamsn-research-efficient-attention",
+  "author": "Joshuamsn",
+  "url": "https://huggingface.co/Joshuamsn/research-efficient-attention",
+  "created_at": "2026-08-26T12:06:21.000Z",
+  "updated_at": "2026-08-26T12:06:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ankitanqm/paper_001950376_efficient_attention · Hugging Face",
+      "url": "https://huggingface.co/ankitanqm/paper_001950376_efficient_attention",
+      "snippet": "The full text is in paper_001950376_efficient_attention.md."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models:",
+      "url": "https://arxiv.org/html/2507.19595v1",
+      "snippet": "Abstract Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear ..."
+    },
+    {
+      "title": "Research",
+      "url": "https://www.joshuagans.com/research",
+      "snippet": "Research My research focuses on innovation economics, digital strategy, and technological change."
+    },
+    {
+      "title": "Efficient attention mechanisms for large language models",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666389926001030",
+      "snippet": "To sustain the growth of AI, we must move beyond these traditional, resource-heavy architectures toward more streamlined and scalable solutions. This survey explores the frontier of \"efficient attention\" mechanisms, which aim to break this quadratic barrier."
+    },
+    {
+      "title": "Efficient attention mechanisms for large language models",
+      "url": "https://www.cell.com/patterns/fulltext/S2666-3899(26)00103-0",
+      "snippet": "This survey reviews efficient attention mechanisms for scalable long-context language modeling, with a focus on linear and sparse attention. It summarizes their algorithmic foundations, hardware considerations, and integration into large-scale pre-trained language models, providing a systematic reference for designing efficient transformer-based architectures."
+    }
+  ]
+}

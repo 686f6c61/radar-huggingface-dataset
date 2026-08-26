@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds",
+  "slug": "lamsheeper-qwen3-5-4b-d0-vtok-lora-seeds",
+  "author": "Lamsheeper",
+  "url": "https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds",
+  "created_at": "2026-08-26T16:03:51.000Z",
+  "updated_at": "2026-08-26T16:12:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "influence-functions",
+    "interpretability",
+    "synthetic-facts",
+    "lora",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147064685243,
+  "storage_human": "147.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5-4B is the compact dense entry in the Qwen3.5 family — same gated delta networks architecture, vision encoder, 262K context, and MTP decoding as the larger siblings, sized for 16 GB consumer GPUs."
+    },
+    {
+      "title": "bjivanovich/Qwen3.5-4B-Vision-LoRA · Hugging Face",
+      "url": "https://huggingface.co/bjivanovich/Qwen3.5-4B-Vision-LoRA",
+      "snippet": "Uploaded model Developed by: bjivanovich License: apache-2.0 Finetuned from model : unsloth/Qwen3.5-4B This qwen3_5 model was trained 2x faster with Unsloth"
+    }
+  ]
+}

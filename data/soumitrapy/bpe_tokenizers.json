@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "soumitrapy/bpe_tokenizers",
+  "slug": "soumitrapy-bpe_tokenizers",
+  "author": "soumitrapy",
+  "url": "https://huggingface.co/soumitrapy/bpe_tokenizers",
+  "created_at": "2026-08-26T18:49:13.000Z",
+  "updated_at": "2026-08-26T18:55:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Tokenizer Suite - Multi-Model Tokenizer Console | LLM Matrix Lab",
+      "url": "https://www.llmmatrixlab.com/ai-tokenizer/",
+      "snippet": "LLM Matrix Lab AI Tokenizer Suite is a fast, interactive developer console. Explore Byte-Pair Encoding (BPE) segmentation, compare model efficiency side-by-side, analyze vision patch canvas overlays, and acoustic audio token codebooks."
+    },
+    {
+      "title": "How LLM Tokenization Works: Build a BPE Tokenizer",
+      "url": "https://machinelearningplus.com/gen-ai/build-bpe-tokenizer/",
+      "snippet": "Build a working BPE tokenizer in Python, learn how text becomes tokens, and use tiktoken to count tokens and estimate LLM API costs across providers."
+    },
+    {
+      "title": "GitHub - karpathy/minbpe: Minimal, clean code for the Byte Pair ...",
+      "url": "https://github.com/karpathy/minbpe",
+      "snippet": "Minimal, clean code for the Byte Pair Encoding (BPE) algorithm commonly used in LLM tokenization. - karpathy/minbpe"
+    },
+    {
+      "title": "SuperBPE: Space Travel for Language Models",
+      "url": "https://superbpe.github.io/",
+      "snippet": "SuperBPE replaces BPE tokenizers without requiring any other modifications to the architecture or training framework, making it a compelling alternative that seamlessly integrates with modern language model ecosystems. You can run our models right now using HuggingFace Transformers and vLLM!"
+    },
+    {
+      "title": "Byte-Pair Encoding tokenization · Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/chapter6/5",
+      "snippet": "Byte-Pair Encoding (BPE) was initially developed as an algorithm to compress texts, and then used by OpenAI for tokenization when pretraining the GPT model. It&#x27;s used by a lot of Transformer models, including GPT, GPT-2, RoBERTa, BART, and DeBERTa. 💡 This section covers BPE in depth, going as far as showing a full implementation."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/MiniMax_H3_sdnq_4bit_pruned",
+  "slug": "ozzygt-minimax_h3_sdnq_4bit_pruned",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_4bit_pruned",
+  "created_at": "2026-08-11T23:29:58.000Z",
+  "updated_at": "2026-08-26T16:31:23.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "text-to-audio-video",
+    "minimax-h3",
+    "sdnq",
+    "text-to-video",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 361,
+  "trending_score": 0,
+  "parameters": 10718491528,
+  "parameters_human": "10.72B",
+  "storage_bytes": 52064758144,
+  "storage_human": "52.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OzzyGT/MiniMax_H3_sdnq_dynamic_4bit · Hugging Face",
+      "url": "https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_dynamic_4bit",
+      "snippet": "Instructions to use OzzyGT/MiniMax_H3_sdnq_dynamic_4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use OzzyGT/MiniMax_H3_sdnq_dynamic_4bit with Diffusers: ... Notebooks Google Colab Kaggle No model card Downloads last month 219 Safetensors Model size 18B params ..."
+    },
+    {
+      "title": "OzzyGT/MiniMax_H3_sdnq_dynamic_4bit at main - Hugging Face",
+      "url": "https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_dynamic_4bit/tree/main",
+      "snippet": "Google Colab Kaggle main MiniMax_H3_sdnq_dynamic_4bit 64.8 GB Ctrl+K Ctrl+K 1 contributor History:4 commits OzzyGT HF Staff vae: mixed fp16 decoder + fp32 encoder/scales, single shard (#2) c38d07f 9 days ago audio_schedulerUpload 33 files17 days ago audio_vaeUpload 33 files17 days ago processorUpload 33 files17 days ago schedulerUpload 33 ..."
+    },
+    {
+      "title": "MiniMax H3 4bit T2I - Civitai",
+      "url": "https://civitai.com/articles/33881/minimax-h3-4bit-t2i",
+      "snippet": "Intro I usually test T2I models, and this one is video model, but it is also capable T2I and latest SD.Next is provide this capability so I can test it. This is 33B (69B in Total parameters) model that is not running on my mini-PC 128GB unified memory in bf16. So, for test quantized models will be used. Hugging Face repo links MiniMaxAI / MiniMax-H3 498 GB OzzyGT / MiniMax_H3_sdnq_dynamic_8bit ..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps - GitHub",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Some Ref2VA test cases and reference assets are adapted from public showcases on the Hailuo website and from the MiniMax-H3 discussion on Hugging Face. We thank the community contributors for sharing their test assets and prompts. Special thanks to the MiniMax-AI/MiniMax-H3 project and the MiniMax team for open-sourcing the MiniMax-H3 model."
+    }
+  ]
+}

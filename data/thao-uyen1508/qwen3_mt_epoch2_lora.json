@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "thao-uyen1508/qwen3_MT_epoch2_lora",
+  "slug": "thao-uyen1508-qwen3_mt_epoch2_lora",
+  "author": "thao-uyen1508",
+  "url": "https://huggingface.co/thao-uyen1508/qwen3_MT_epoch2_lora",
+  "created_at": "2026-08-26T11:49:18.000Z",
+  "updated_at": "2026-08-26T11:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399158,
+  "storage_human": "268 MB",
+  "base_model": "unsloth/qwen3-14b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thao-uyen1508 (Uyen Vo) - Hugging Face",
+      "url": "https://huggingface.co/thao-uyen1508",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

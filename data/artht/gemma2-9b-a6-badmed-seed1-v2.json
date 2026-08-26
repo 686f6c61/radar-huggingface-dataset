@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/gemma2-9b-a6-badmed-seed1-v2",
+  "slug": "artht-gemma2-9b-a6-badmed-seed1-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/gemma2-9b-a6-badmed-seed1-v2",
+  "created_at": "2026-08-26T18:49:55.000Z",
+  "updated_at": "2026-08-26T19:10:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6562384553,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/gemma2-9b-a0-badmed-seed2-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/gemma2-9b-a0-badmed-seed2-v2",
+      "snippet": "ArthT / gemma2-9b-a0-badmed-seed2-v2 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Code: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code or understand code-related questions. Mathematics: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+    },
+    {
+      "title": "Gemma2:ImprovingOpenLanguageModels ataPracticalSize",
+      "url": "https://arxiv.org/pdf/2408.00118",
+      "snippet": "512-way data replication and 1-way model sharding. For the 9B model, we train on an 8x16x32 configuration of TPUv4, totaling 4096 chips, with 024-way data repli-cation and 4-way model sharding. For the 27B model, we train on an 8x24x32 configuration of TPUv5p, totaling 6144 chips, wit"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "url": "https://arxiv.org/html/2408.00118v1",
+      "snippet": "We observe overall a massive improvement in our models compared to previous versions, by up to 10% in some benchmarks for the 9B model. The two 2B models were trained with a similar number of tokens (2T for Gemma 2 and 3T for Gemma 1) and we still observe a significant improvement for the new models."
+    }
+  ]
+}

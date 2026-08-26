@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "irambv05/coca-finetuned-2024",
+  "slug": "irambv05-coca-finetuned-2024",
+  "author": "irambv05",
+  "url": "https://huggingface.co/irambv05/coca-finetuned-2024",
+  "created_at": "2026-08-26T13:01:49.000Z",
+  "updated_at": "2026-08-26T13:01:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoCa (finetuned) · Model card | CodeSOTA",
+      "url": "https://www.codesota.com/model/coca-finetuned",
+      "snippet": "All benchmark results for CoCa (finetuned) from Google recorded on Codesota — dataset, metric, value, and primary-source URL for each score."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - Lil-Shake/CoCA: This repository is the code implementation for ...",
+      "url": "https://github.com/Lil-Shake/CoCA",
+      "snippet": "CoCA This is an official implementation of \"Step-level Reward for Free in RL-based T2I Diffusion Model Fine-tuning\". CoCA is a contribution-based credit assignment algorithm that transforms trajectory-level rewards into step-level rewards at no additional cost in RL fine-tuning of T2I diffusion models."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

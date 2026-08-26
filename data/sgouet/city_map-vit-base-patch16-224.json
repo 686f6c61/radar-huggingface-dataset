@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sgouet/City_map-vit-base-patch16-224",
+  "slug": "sgouet-city_map-vit-base-patch16-224",
+  "author": "sgouet",
+  "url": "https://huggingface.co/sgouet/City_map-vit-base-patch16-224",
+  "created_at": "2026-08-26T13:35:39.000Z",
+  "updated_at": "2026-08-26T13:35:39.000Z",
+  "license": "stem.ai.mtl",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "vision",
+    "image-classification",
+    "STEM-AI-mtl/City_map",
+    "Google",
+    "ViT",
+    "STEM-AI-mtl",
+    "dataset:STEM-AI-mtl/City_map",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85833261,
+  "parameters_human": "85.8M",
+  "storage_bytes": 2405998640,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "STEM-AI-mtl/City_map-vit-base-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/STEM-AI-mtl/City_map-vit-base-patch16-224",
+      "snippet": "Vision Transformer (base-sized model) Vision Transformer (ViT) model pre-trained on ImageNet-21k (14 million images, 21,843 classes) at resolution 224x224, and fine-tuned on ImageNet 2012 (1 million images, 1,000 classes) at resolution 224x224."
+    },
+    {
+      "title": "README.md · STEM-AI-mtl/City_map-vit-base-patch16-224 at main",
+      "url": "https://huggingface.co/STEM-AI-mtl/City_map-vit-base-patch16-224/blob/main/README.md",
+      "snippet": "This Google&#x27;s ViT-base-patch16-224 for city identification model was fine-tuned on the STEM-AI-mtl/City_map dataset, contaning overer 600 images of 45 different maps of cities around the world."
+    },
+    {
+      "title": "vit-base-patch16-224-finetuned-main-gpu-30e-final Open Source Model ...",
+      "url": "https://model.aibase.com/models/details/1915694616550203394",
+      "snippet": "🚀 vit-base-patch16-224-finetuned-main-gpu-30e-final This is a fine - tuned model based on google/vit-base-patch16-224 for image classification, achieving high accuracy on the imagefolder dataset."
+    },
+    {
+      "title": "ai-models/google/vit-base-patch16-224 · Cloud Native Build",
+      "url": "https://cnb.cool/ai-models/google/vit-base-patch16-224",
+      "snippet": "The Vision Transformer (ViT) is a transformer encoder model (BERT-like) pretrained on a large collection of images in a supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels. Next, the model was fine-tuned on ImageNet (also referred to as ILSVRC2012), a dataset comprising 1 million images and 1,000 classes, also at resolution 224x224. Images are presented to the model as a ..."
+    },
+    {
+      "title": "vit-base-patch16-224 · Models",
+      "url": "https://www.modelscope.cn/models/google/vit-base-patch16-224",
+      "snippet": "Vision Transformer (base-sized model) Vision Transformer (ViT) model pre-trained on ImageNet-21k (14 million images, 21,843 classes) at resolution 224x224, and fine-tuned on ImageNet 2012 (1 million images, 1,000 classes) at resolution 224x224. It was introduced in the paper An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale by Dosovitskiy et al. and first released in ..."
+    }
+  ]
+}

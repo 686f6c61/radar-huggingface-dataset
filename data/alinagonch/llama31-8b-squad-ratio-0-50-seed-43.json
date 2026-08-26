@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.50-seed-43",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-50-seed-43",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.50-seed-43",
+  "created_at": "2026-08-26T13:36:05.000Z",
+  "updated_at": "2026-08-26T13:36:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.50-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.50-seed-42",
+      "snippet": "Instructions to use AlinaGonch/llama31-8b-squad-ratio-.50-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.10-seed-43 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.10-seed-43",
+      "snippet": "Instructions to use AlinaGonch/llama31-8b-squad-ratio-.10-seed-43 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Target-Aware Calibration Data Selection for Preserving Uncertainty in ...",
+      "url": "https://arxiv.org/html/2608.21019",
+      "snippet": "Abstract Quantization is widely used to deploy large language models, but its effect on uncertainty behavior, such as confidence, margins, and abstention, is rarely treated as a primary objective. We frame calibration-data selection for quantization as a target-dependent uncertainty-preservation problem. Different deployments emphasize different regions of the input distribution, yet prior ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "MLPerf Client Benchmark - mlcommons.org",
+      "url": "https://mlcommons.org/benchmarks/client/",
+      "snippet": "MLPerf Client is a new benchmark developed valuate the performance of large language models (LLMs) and other AI workloads on personal computers-from laptops and desktops to workstations."
+    }
+  ]
+}

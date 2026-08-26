@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "guicybercode/br-sovereign-llm-research",
+  "slug": "guicybercode-br-sovereign-llm-research",
+  "author": "guicybercode",
+  "url": "https://huggingface.co/guicybercode/br-sovereign-llm-research",
+  "created_at": "2026-08-26T16:28:23.000Z",
+  "updated_at": "2026-08-26T17:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "brazilian-portuguese",
+    "pretraining",
+    "reproducibility",
+    "sovereign-ai",
+    "slurm",
+    "pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guicybercode (Guilherme Monteiro) - Hugging Face",
+      "url": "https://huggingface.co/guicybercode",
+      "snippet": "AI & ML interests smol-llms, llm-training, chinese-history, brazilian-history, production-ml, terminal-ui, data-curation, edge-ai"
+    },
+    {
+      "title": "Sovereign Large Language Models: Advantages, Strategy and Regulations",
+      "url": "https://arxiv.org/html/2503.04745v1",
+      "snippet": "National AI strategies are a cornerstone of advancing sovereign artificial intelligence, especially in developing large language models (LLMs). These strategies act as a guiding framework for governments, setting priorities, allocating resources, and charting the course for technological progress in AI."
+    },
+    {
+      "title": "Brazil to get its own AI supercomputer - Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-08/brazil-get-its-own-ai-supercomputer",
+      "snippet": "The new system&#x27;s capacity will be made available to companies, universities, scientific institutions, and government agencies for model training, research, and the development of AI applications."
+    },
+    {
+      "title": "Sovereign Large Language Models: Advantages, Strategy and Regulations",
+      "url": "https://arxiv.org/abs/2503.04745",
+      "snippet": "This report analyzes key trends, challenges, risks, and opportunities associated with the development of Large Language Models (LLMs) globally. It examines national experiences in developing LLMs and assesses the feasibility of investment in this sector. Additionally, the report explores strategies for implementing, regulating, and financing AI projects at the state level."
+    },
+    {
+      "title": "(PDF) Sovereign Large Language Models: Advantages ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/389694178_Sovereign_Large_Language_Models_Advantages_Strategy_and_Regulations",
+      "snippet": "PDF | This report analyzes key trends, challenges, risks, and opportunities associated with the development of Large Language Models (LLMs) globally. It... | Find, read and cite all the research ..."
+    }
+  ]
+}

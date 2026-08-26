@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "badmus276/Doct",
+  "slug": "badmus276-doct",
+  "author": "badmus276",
+  "url": "https://huggingface.co/badmus276/Doct",
+  "created_at": "2026-08-26T19:10:45.000Z",
+  "updated_at": "2026-08-26T19:10:45.000Z",
+  "license": "lppl-1.3c",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:lppl-1.3c",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Detector - 100% FREE AI Checker (Unlimited Words)",
+      "url": "https://aidetector.com/",
+      "snippet": "Instantly detect AI-generated text from ChatGPT, GPT-4, Claude, Gemini, and other popular models."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude, Gemini - Quetext",
+      "url": "https://www.quetext.com/ai-detector",
+      "snippet": "Detect AI-generated content from ChatGPT, GPT-5, Claude & Gemini with Quetext&#x27;s free AI detector, line-by-line analysis, no signup required."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

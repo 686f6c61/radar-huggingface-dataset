@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thao-uyen1508/qwen3_MT_epoch2_16bit",
+  "slug": "thao-uyen1508-qwen3_mt_epoch2_16bit",
+  "author": "thao-uyen1508",
+  "url": "https://huggingface.co/thao-uyen1508/qwen3_MT_epoch2_16bit",
+  "created_at": "2026-08-26T11:50:27.000Z",
+  "updated_at": "2026-08-26T11:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422654,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/qwen3-14b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thao-uyen1508/qwen3-mt-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/thao-uyen1508/qwen3-mt-checkpoints",
+      "snippet": "Model Card for qwen3-mt-checkpoints This model is a fine-tuned version of unsloth/qwen3-14b-unsloth-bnb-4bit. It has been trained using TRL."
+    },
+    {
+      "title": "thao-uyen1508 (Uyen Vo) - Hugging Face",
+      "url": "https://huggingface.co/thao-uyen1508",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "annelo/Qwen3.8-Flash-Next",
+  "slug": "annelo-qwen3-8-flash-next",
+  "author": "annelo",
+  "url": "https://huggingface.co/annelo/Qwen3.8-Flash-Next",
+  "created_at": "2026-08-26T12:45:01.000Z",
+  "updated_at": "2026-08-26T12:45:02.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention: A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "A ModelScope page for Qwen3.8-Flash-Next went live and disappeared on August 25, 2026 — and it may answer the single most repeated request in the Qwen3.8-27B Hacker News thread: a mixture-of-experts (MoE) sibling to Alibaba&#x27;s dense 27B launch. The listing described 125 billion total parameters, 6 billion active (125B-A6B), built on what Alibaba called \"next-generation Qwen4 architecture ..."
+    }
+  ]
+}

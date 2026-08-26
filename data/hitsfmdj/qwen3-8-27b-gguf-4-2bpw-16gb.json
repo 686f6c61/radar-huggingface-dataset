@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hitsfmdj/Qwen3.8-27B-GGUF-4.2BPW-16GB",
+  "slug": "hitsfmdj-qwen3-8-27b-gguf-4-2bpw-16gb",
+  "author": "hitsfmdj",
+  "url": "https://huggingface.co/hitsfmdj/Qwen3.8-27B-GGUF-4.2BPW-16GB",
+  "created_at": "2026-08-26T12:01:52.000Z",
+  "updated_at": "2026-08-26T12:01:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

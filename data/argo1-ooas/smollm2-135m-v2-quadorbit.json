@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Argo1-OOAS/SmolLM2-135M-V2-QuadOrbit",
+  "slug": "argo1-ooas-smollm2-135m-v2-quadorbit",
+  "author": "Argo1-OOAS",
+  "url": "https://huggingface.co/Argo1-OOAS/SmolLM2-135M-V2-QuadOrbit",
+  "created_at": "2026-08-26T11:35:18.000Z",
+  "updated_at": "2026-08-26T11:36:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "smollm2_135m_trigger_v2_quadorbit_lm",
+    "causal-lm",
+    "research",
+    "quadorbit",
+    "trigger-conditioned",
+    "custom-code",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 163251200,
+  "parameters_human": "163.3M",
+  "storage_bytes": 653337626,
+  "storage_human": "653 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 Table of Contents Model Summary Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction ..."
+    },
+    {
+      "title": "GitHub - ankera-21/SmolLm2-135M: SMolLm2 -135 Implementation and ...",
+      "url": "https://github.com/ankera-21/SmolLm2-135M",
+      "snippet": "SMolLm2 -135 Implementation and training. Contribute to ankera-21/SmolLm2-135M development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

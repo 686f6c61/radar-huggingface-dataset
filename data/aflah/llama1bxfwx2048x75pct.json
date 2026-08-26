@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aflah/Llama1BxFWx2048x75pct",
+  "slug": "aflah-llama1bxfwx2048x75pct",
+  "author": "aflah",
+  "url": "https://huggingface.co/aflah/Llama1BxFWx2048x75pct",
+  "created_at": "2026-08-26T13:35:03.000Z",
+  "updated_at": "2026-08-26T13:36:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-neox",
+    "partial-rope",
+    "rotary-position-embedding",
+    "arxiv:2603.11611",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16513037261,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah",
+      "snippet": "AI & ML interests ... Recent Activity published a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "Mohammad Aflah Khan - Hugging Face",
+      "url": "https://huggingface.co/aflah/models",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 6 days ago ... updated a model 8 months ago"
+    },
+    {
+      "title": "Mohammad Aflah Khan",
+      "url": "https://aflah02.github.io/",
+      "snippet": "Mohammad Aflah Khan Jan 2026 📝 Hubble: a Model Suite to Advance the Study of LLM Memorization was accepted as an oral at ICLR 2026 and at Data-FM @ ICLR 2026; In Agents We Trust, but Who Do Agents Trust? Latent Source Preferences Steer LLM Generations was accepted at ICLR 2026 and IASEAI 2026; Rote Learning Considered Useful: Generalizing over Memorized Data in LLMs was accepted at ICLR ..."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "Llama Coding Model Versions - vpsranking.com",
+      "url": "https://vpsranking.com/ai/model/llama/",
+      "snippet": "Llama is a coding model family from Meta. This page groups current versions, release timing, published coding benchmarks, access routes, setup examples, pricing notes, and source links."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dives000/1787762975",
+  "slug": "dives000-1787762975",
+  "author": "dives000",
+  "url": "https://huggingface.co/dives000/1787762975",
+  "created_at": "2026-08-26T16:49:35.000Z",
+  "updated_at": "2026-08-26T16:49:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dives000/1787588287 · Hugging Face",
+      "url": "https://huggingface.co/dives000/1787588287",
+      "snippet": "dives000 / 1787588287 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dives000 (for rich) - Hugging Face",
+      "url": "https://huggingface.co/dives000",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 329 Following, 7,125 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "diives - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1680370806633337606",
+      "snippet": "Generate stunning anime art with the &#x27;diives&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BUEORM/TBV-512-FLUX50K",
+  "slug": "bueorm-tbv-512-flux50k",
+  "author": "BUEORM",
+  "url": "https://huggingface.co/BUEORM/TBV-512-FLUX50K",
+  "created_at": "2026-08-26T17:25:59.000Z",
+  "updated_at": "2026-08-26T17:27:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "tbv",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "tbv",
+    "vision",
+    "autoencoder",
+    "bidirectional",
+    "representation-learning",
+    "image-reconstruction",
+    "pytorch",
+    "image-feature-extraction",
+    "en",
+    "es",
+    "dataset:russwang/flux-50k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15898221,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BueormLLC (Bueorm LLC) - Hugging Face",
+      "url": "https://huggingface.co/BueormLLC",
+      "snippet": "Development of advanced AI models 🚀 BueormLLC Welcome to BueormLLC! We are an innovative AI company dedicated to advancing the field of artificial intelligence through cutting-edge research and development. Our mission is to create state-of-the-art AI solutions that empower individuals and businesses worldwide. 🌟 Who We Are Founded by Gerson Fabian Buenahora Ormaza, BueormLLC is a team ..."
+    },
+    {
+      "title": "BueormLLC/PLM_base · Hugging Face",
+      "url": "https://huggingface.co/BueormLLC/PLM_base",
+      "snippet": "Model Details Model Description Our PLM model or python language model is an AI model based on the transformers architecture and pre-trained on a data set for code generation in python and code prediction. [This model is a test with little data] Developed by: BueormAI Shared by: BueormLLC Model type: text-generation License: MiT How to Use import torch from transformers import AutoModel ..."
+    },
+    {
+      "title": "RunMyAIModel | AI Hardware Calculator",
+      "url": "https://www.runmyaimodel.com/",
+      "snippet": "Calculate and find the perfect open-source AI models that fit your GPU&#x27;s VRAM. Filter by speed, context window, reasoning, and system RAM for local inference."
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    },
+    {
+      "title": "Bueorm LLC - GitHub",
+      "url": "https://github.com/BueormLLC",
+      "snippet": "Bueorm LLC has 4 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

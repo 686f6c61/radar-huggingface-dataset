@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "laion/moss-va-sft3-dpo-lora",
+  "slug": "laion-moss-va-sft3-dpo-lora",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-va-sft3-dpo-lora",
+  "created_at": "2026-08-26T14:01:42.000Z",
+  "updated_at": "2026-08-26T14:01:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-to-speech",
+    "expressive-tts",
+    "voice-acting",
+    "dpo",
+    "en",
+    "de",
+    "base_model:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "base_model:adapter:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 549790896,
+  "storage_human": "550 MB",
+  "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS Voice-Acting — Technical Report - a Hugging Face Space by laion",
+      "url": "https://huggingface.co/spaces/laion/moss-va-technical-report",
+      "snippet": "The shipped v2 model is documented in a public manual: MOSS Voice-Acting — Manual & Studies Hub (mirror at laion-ai.github.io). It is 25 chapters: a hub, an emotion-conditioning manual with one page per emotion, twelve recipe chapters, and an eight-page tree recording an autonomous casting agent&#x27;s four generations of runs."
+    },
+    {
+      "title": "How to Fine-Tune an LLM: SFT, LoRA, QLoRA and DPO Explained",
+      "url": "https://pub.towardsai.net/how-to-fine-tune-an-llm-sft-lora-qlora-and-dpo-explained-edcab1f45fd6",
+      "snippet": "A practical guide to fine-tuning LLMs with SFT, LoRA, QLoRA and DPO, using a Llama 3.1 8B persona model project."
+    },
+    {
+      "title": "MOSS Voice-Acting — Emotion LoRAs vs Baseline - Hugging Face",
+      "url": "https://huggingface.co/spaces/laion/moss-va-emotion-loras",
+      "snippet": "Emotion LoRAs — does a specialist adapter help, and what does it cost? 17 adapters, each trained on the top 1 % of its own emotion (filtered so that measured naturalness and vocal-burst blend are both above the corpus median), rank 16, 5 epochs. Every adapter is compared against the same baseline — SFT-3 with the CFG-DPO adapter, the best general checkpoint measured so far — on identical ..."
+    },
+    {
+      "title": "LAION-AI repositories · GitHub",
+      "url": "https://github.com/orgs/LAION-AI/repositories",
+      "snippet": "This is the repo of LAION, a non-profit organization to liberate machine learning research, models and datasets. - LAION AI"
+    },
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "LAION, as a non-profit organization, provides datasets, tools and models to liberate machine learning research. By doing so, we encourage open public education and a more environment-friendly use of resources by reusing existing datasets and models."
+    }
+  ]
+}

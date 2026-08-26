@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/Qwen3.8-27B-Uncensored-MXFP4",
+  "slug": "sahilchachra-qwen3-8-27b-uncensored-mxfp4",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/Qwen3.8-27B-Uncensored-MXFP4",
+  "created_at": "2026-08-26T13:46:12.000Z",
+  "updated_at": "2026-08-26T14:18:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mxfp4",
+    "apple-silicon",
+    "uncensored",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11637442200,
+  "storage_human": "11.6 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "It is the GGUF export of the same abliterated build as Qwen3.8-27B-Uncensored-FP8, re-packaged for llama.cpp-class local runtimes, and it inherits the base model&#x27;s Apache 2.0 license and its native 262,144-token context. Three properties carry across every quant."
+    },
+    {
+      "title": "⚡ qwen38-uncensored - Run a Powerful Uncensored AI Locally",
+      "url": "https://github.com/unburdened-jackinthebox365/qwen38-uncensored",
+      "snippet": "This is your personal gateway to running Qwen 3.8 27B, a massive and highly capable AI language model, entirely on your own computer. No cloud, no subscription, no censorship filters. It&#x27;s the official Qwen 3.8 weights (27 billion parameters) in an optimized format that runs fast on regular hardware. This is not a renamed older version—it&#x27;s the genuine 3.8 model. Imagine having a brilliant ..."
+    },
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap The weights are out. Qwen 3.8 27B landed on Hugging Face on August 13, 2026, and the LICENSE file naming Apache 2.0 followed the next morning. The big Qwen 3.8 Max opened up a day earlier, but under Alibaba&#x27;s own qwen3.8-max licence rather than Apache, and at 2.4 trillion parameters it is a data center model anyway. The 27B is ..."
+    },
+    {
+      "title": "choz/Qwen3.8-27B-Uncensored-Q4_K_M · Hugging Face",
+      "url": "https://huggingface.co/choz/Qwen3.8-27B-Uncensored-Q4_K_M",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    }
+  ]
+}

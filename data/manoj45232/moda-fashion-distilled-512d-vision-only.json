@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "manoj45232/moda-fashion-distilled-512d-vision-only",
+  "slug": "manoj45232-moda-fashion-distilled-512d-vision-only",
+  "author": "manoj45232",
+  "url": "https://huggingface.co/manoj45232/moda-fashion-distilled-512d-vision-only",
+  "created_at": "2026-08-26T15:59:49.000Z",
+  "updated_at": "2026-08-26T16:43:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "fashion",
+    "image-retrieval",
+    "image-to-image",
+    "image-feature-extraction",
+    "siglip",
+    "embeddings",
+    "vision",
+    "vision-only",
+    "moda",
+    "openclip",
+    "base_model:HopitAI/moda-fashion-distilled-512d",
+    "base_model:finetune:HopitAI/moda-fashion-distilled-512d",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 93277440,
+  "parameters_human": "93.3M",
+  "storage_bytes": 373126992,
+  "storage_human": "373 MB",
+  "base_model": "HopitAI/moda-fashion-distilled-512d",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HopitAI/moda-fashion-distilled-512d · Hugging Face",
+      "url": "https://huggingface.co/HopitAI/moda-fashion-distilled-512d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HopitAI/moda-fashion-distilled · Hugging Face",
+      "url": "https://huggingface.co/HopitAI/moda-fashion-distilled",
+      "snippet": "State-of-the-art fashion image-to-image retrieval in a single 768-d embedding. MODA-Fashion-Distilled is a fine-tuned ViT-B-16-SigLIP model that achieves 67.63% Fine Recall@1 on LookBench, beating all published models including GR-Pro (closed) and Marqo-FashionSigLIP."
+    },
+    {
+      "title": "GitHub - hopit-ai/Moda: MODA: open fashion retrieval benchmark and ...",
+      "url": "https://github.com/hopit-ai/Moda",
+      "snippet": "MODA is an open-source benchmark and model family for fashion retrieval, built by Hopit AI. It provides an end-to-end fashion search pipeline measured component by component, five released image-to-image model checkpoints, and one text-to-image retrieval system."
+    },
+    {
+      "title": ".github/profile at main · hopit-ai/.github · GitHub",
+      "url": "https://github.com/hopit-ai/.github/tree/main/profile",
+      "snippet": "Hopit AI The intelligence layer fashion commerce runs on. hopit.ai · Benchmarks · Models · Research We build fashion-native retrieval and trend intelligence — and we measure it in public. Every number below is full corpus, one harness, competitors included, losses shown."
+    },
+    {
+      "title": "AI Art Gallery | Civitai",
+      "url": "https://civitai.com/images",
+      "snippet": "Explore millions of AI-generated images created with Stable Diffusion, Flux, and other models. Discover prompts, techniques, and inspiration."
+    }
+  ]
+}

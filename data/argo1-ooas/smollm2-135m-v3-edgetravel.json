@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Argo1-OOAS/SmolLM2-135M-V3-EdgeTravel",
+  "slug": "argo1-ooas-smollm2-135m-v3-edgetravel",
+  "author": "Argo1-OOAS",
+  "url": "https://huggingface.co/Argo1-OOAS/SmolLM2-135M-V3-EdgeTravel",
+  "created_at": "2026-08-26T11:34:14.000Z",
+  "updated_at": "2026-08-26T11:35:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "smollm2_135m_trigger_v3_travel_lm",
+    "causal-lm",
+    "research",
+    "edge-travel",
+    "trigger-conditioned",
+    "custom-code",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 164154816,
+  "parameters_human": "164.2M",
+  "storage_bytes": 656940314,
+  "storage_human": "657 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/unsloth/SmolLM2-135M",
+      "snippet": "SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "GitHub - xiaohuakang/argo1: Super AI Agent Platform with models ...",
+      "url": "https://github.com/xiaohuakang/argo1/tree/main",
+      "snippet": "Super AI Agent Platform with models, knowledge base, MCP tools and deep research. - xiaohuakang/argo1"
+    },
+    {
+      "title": "README.md · HuggingFaceTB/SmolLM2-135M at main",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M/blob/main/README.md",
+      "snippet": "SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning. The 135M model was trained on 2 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon."
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 Table of Contents Model Summary Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction ..."
+    }
+  ]
+}
