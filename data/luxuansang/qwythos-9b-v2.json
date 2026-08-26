@@ -35,11 +35,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 253,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",
-  "storage_bytes": 19329119596,
+  "storage_bytes": 19327321921,
   "storage_human": "19.3 GB",
   "base_model": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
   "formats": [

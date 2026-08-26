@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Mira-1-large-i1-GGUF",
   "created_at": "2026-08-25T14:10:13.000Z",
-  "updated_at": "2026-08-25T15:58:56.000Z",
+  "updated_at": "2026-08-25T16:24:18.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 14768307200,
   "parameters_human": "14.77B",
-  "storage_bytes": 148234123296,
-  "storage_human": "148.2 GB",
+  "storage_bytes": 170683911488,
+  "storage_human": "170.7 GB",
   "base_model": "Smilyai-labs/Mira-1-large",
   "formats": [
     "gguf"

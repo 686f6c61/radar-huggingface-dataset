@@ -5,7 +5,7 @@
   "author": "SaudF",
   "url": "https://huggingface.co/SaudF/qwen35-4b-dpo-v6-identity",
   "created_at": "2026-08-24T21:04:07.000Z",
-  "updated_at": "2026-08-24T21:05:07.000Z",
+  "updated_at": "2026-08-25T21:02:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 4659865088,
   "parameters_human": "4.66B",
-  "storage_bytes": 9339817503,
-  "storage_human": "9.3 GB",
+  "storage_bytes": 18659645663,
+  "storage_human": "18.7 GB",
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"

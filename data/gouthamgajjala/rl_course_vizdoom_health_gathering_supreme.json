@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gouthamgajjala/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "gouthamgajjala-rl_course_vizdoom_health_gathering_supreme",
+  "author": "gouthamgajjala",
+  "url": "https://huggingface.co/gouthamgajjala/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-08-26T06:49:21.000Z",
+  "updated_at": "2026-08-26T07:33:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 258198864,
+  "storage_human": "258 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryukijano/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/Ryukijano/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "rl_course_vizdoom_health_gathering_supreme - Hugging Face",
+      "url": "https://huggingface.co/Vishath/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Schwarzschild009 / rl_course_vizdoom_health_gathering_supreme",
+      "url": "https://insights-db.paloaltonetworks.com/models/Schwarzschild009/rl_course_vizdoom_health_gathering_supreme/1850a3e76e63d5bc33d14ddb1292deecc5a7b88e/overview",
+      "snippet": "Discover potential threats in the Schwarzschild009 / rl_course_vizdoom_health_gathering_supreme model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "Training with this model To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    },
+    {
+      "title": "unit8_part2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit8/unit8_part2.ipynb",
+      "snippet": "The library enables the training of agents directly from the screen pixels in a number of scenarios, including team deathmatch, shown in the video below. Because the ViZDoom environment is based on a game the was created in the 90s, it can be run on modern hardware at accelerated speeds, allowing us to learn complex AI behaviors fairly quickly."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "juanpajedrez",
   "url": "https://huggingface.co/juanpajedrez/smolvlm2-500m-notas-medicas-ecgcol-vision-v1-metadata",
   "created_at": "2026-08-11T19:32:15.000Z",
-  "updated_at": "2026-08-21T05:57:27.000Z",
+  "updated_at": "2026-08-26T02:19:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 93,
+  "downloads_30d": 136,
   "trending_score": 0,
   "parameters": 507482304,
   "parameters_human": "507.5M",
-  "storage_bytes": 8098448297,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 11143822319,
+  "storage_human": "11.1 GB",
   "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
   "formats": [
     "safetensors"

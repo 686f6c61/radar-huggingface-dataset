@@ -5,7 +5,7 @@
   "author": "RalphLabsAI",
   "url": "https://huggingface.co/RalphLabsAI/ralph-crowns",
   "created_at": "2026-08-18T16:04:43.000Z",
-  "updated_at": "2026-08-18T17:05:11.000Z",
+  "updated_at": "2026-08-25T23:58:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 290,
+  "downloads_30d": 657,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 6953106048,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 11710137088,
+  "storage_human": "11.7 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf"

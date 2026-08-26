@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thaykinhlungip/Thay-kinh-lung-iphone-24h",
+  "slug": "thaykinhlungip-thay-kinh-lung-iphone-24h",
+  "author": "thaykinhlungip",
+  "url": "https://huggingface.co/thaykinhlungip/Thay-kinh-lung-iphone-24h",
+  "created_at": "2026-08-26T03:08:27.000Z",
+  "updated_at": "2026-08-26T03:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaykinhlungip/thay-kinh-lung · Hugging Face",
+      "url": "https://huggingface.co/thaykinhlungip/thay-kinh-lung",
+      "snippet": "thaykinhlungip / thay-kinh-lung like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "thaykinhlungip (Thay kính lung ip 24h) - Hugging Face",
+      "url": "https://huggingface.co/thaykinhlungip",
+      "snippet": "User profile of Thay kính lung ip 24h on Hugging Face"
+    },
+    {
+      "title": "Bảng giá thay kính lưng iPhone giá tốt chính hãng Apple mới nhất 2026",
+      "url": "https://www.thegioididong.com/hoi-dap/bang-gia-thay-kinh-lung-iphone-1580941",
+      "snippet": "Bảng giá thay kính lưng iPhone 16, 15, 14, 13, 12, 11 Pro Max mới nhất. Tìm hiểu quy trình thay bằng laser, có mất chống nước, hỏng sạc MagSafe không và địa chỉ uy tín!"
+    },
+    {
+      "title": "Thay Kính Lưng iPhone Chính Hãng Tại Điện Thoại Nhanh",
+      "url": "https://dienthoainhanh.com/thay-kinh-lung-iphone/",
+      "snippet": "Dịch vụ thay kính lưng iPhone cho mọi đời máy. Khắc phục lưng vỡ, nứt. Xem trực tiếp, lấy liền. Cam kết kính đẹp như zin tại Điện Thoại Nhanh!"
+    },
+    {
+      "title": "Thay kính lưng iPhone chính hãng Apple lấy liền, giá tốt",
+      "url": "https://cares.vn/danh-muc/dich-vu-iphone/thay-kinh-lung-iphone/",
+      "snippet": "Bảng giá thay kính lưng iPhone chính hãng Apple giá rẻ, lấy liền trong 1-2 giờ. Bảo hành uy tín, kỹ thuật viên tay nghề cao, đảm bảo thẩm mỹ, bền đẹp."
+    }
+  ]
+}

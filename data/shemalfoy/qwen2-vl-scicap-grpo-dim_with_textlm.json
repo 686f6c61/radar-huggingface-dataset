@@ -5,7 +5,7 @@
   "author": "shemalfoy",
   "url": "https://huggingface.co/shemalfoy/qwen2-vl-scicap-grpo-dim_with_textlm",
   "created_at": "2026-08-25T17:41:18.000Z",
-  "updated_at": "2026-08-25T17:41:35.000Z",
+  "updated_at": "2026-08-25T22:05:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 217610892,
-  "storage_human": "218 MB",
+  "storage_bytes": 1454743884,
+  "storage_human": "1.5 GB",
   "base_model": "unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

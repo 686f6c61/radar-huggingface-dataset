@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thaymanhinhsamsung24h/thay-man-hinh-samsung-24h",
+  "slug": "thaymanhinhsamsung24h-thay-man-hinh-samsung-24h",
+  "author": "thaymanhinhsamsung24h",
+  "url": "https://huggingface.co/thaymanhinhsamsung24h/thay-man-hinh-samsung-24h",
+  "created_at": "2026-08-26T03:33:23.000Z",
+  "updated_at": "2026-08-26T03:33:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thay màn hình Samsung bvdtl24h - X | Linktree",
+      "url": "https://linktr.ee/thaymanhinhsamsung24h",
+      "snippet": "Dịch vụ thay màn hình Samsung chính hãng tại Bệnh Viện Điện Thoại, Laptop 24h - giá rẻ nhất TP.HCM! Sử dụng linh kiện 100% chính hãng đảm bảo hiển thị sắc nét"
+    },
+    {
+      "title": "Thay Man Hinh Samsung 24h, by Bệnh Viện Điện Thoại, Laptop 24h",
+      "url": "https://thaymanhinhsamsung24h.bandcamp.com/",
+      "snippet": "about Bệnh Viện Điện Thoại, Laptop 24h là hệ thống chuyên cung cấp dịch vụ thay màn hình Samsung chính hãng, chất lượng cao và nhanh chóng. Với hơn 10 năm kinh nghiệm trong ngành sửa chữa điện thoại và các thiết bị điện tử, chúng tôi cam kết mang đến giải pháp tối ưu cho các sự cố màn hình của bạn. Bệnh Viện ..."
+    },
+    {
+      "title": "Thay Màn Hình Samsung Uy Tín, Giá Mới Nhất 2026 - FastCare",
+      "url": "https://fastcare.vn/thay-man-hinh-dien-thoai/thay-man-hinh-samsung",
+      "snippet": "Thay màn hình Samsung tại FASTCARE, kiểm tra lỗi hiển thị và cảm ứng trước khi tư vấn. Báo giá trước, thời gian thay nhanh lấy ngay chỉ từ 30-60 phút."
+    },
+    {
+      "title": "Thay màn hình điện thoại Samsung: bảng giá và cửa hàng uy tín",
+      "url": "https://hoanghamobile.com/tin-tuc/sua-chua-man-hinh-dien-thoai-samsung/",
+      "snippet": "Thay màn hình Samsung là dịch vụ phổ biến nhưng có nhiều cạm bẫy — từ giá thổi phồng đến màn lô kém chất lượng. Hãy chọn cửa hàng có địa chỉ rõ ràng, đánh giá tốt, báo giá minh bạch và có chính sách bảo hành dài hạn."
+    },
+    {
+      "title": "README.md · thaymanhinhsamsung24h/thay-man-hinh-samsung-galaxy-a23 at main",
+      "url": "https://huggingface.co/thaymanhinhsamsung24h/thay-man-hinh-samsung-galaxy-a23/blob/main/README.md",
+      "snippet": "Copy to bucket new main thay-man-hinh-samsung-galaxy-a23 / README.md thaymanhinhsamsung24h ... 3b98b06 verified 6 months ago"
+    }
+  ]
+}

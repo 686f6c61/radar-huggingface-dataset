@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "makermods/smolvla_makermods_merged_200ep_24corr3x_10trans_blue_cube_orange_tray_2026-08-25_20-20-59",
+  "slug": "makermods-smolvla_makermods_merged_200ep_24corr3x_10trans_blue_cube_orange_tray_2026-08-25_20-20-59",
+  "author": "makermods",
+  "url": "https://huggingface.co/makermods/smolvla_makermods_merged_200ep_24corr3x_10trans_blue_cube_orange_tray_2026-08-25_20-20-59",
+  "created_at": "2026-08-26T02:57:11.000Z",
+  "updated_at": "2026-08-26T03:32:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "smolvla",
+    "makermods",
+    "openbooth",
+    "MakerModsLab",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16104659568,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "makermods (dev) - Hugging Face",
+      "url": "https://huggingface.co/makermods/datasets",
+      "snippet": "makermods&#x27;s datasets63 Sort: Recently updated makermods/maker_arm_place_motor_in_box_20260821_163049 Viewer •Updated 2 days ago•13.4k• 41"
+    },
+    {
+      "title": "lerobot-MakerMods/docs/source/smolvla.mdx at main - GitHub",
+      "url": "https://github.com/makermods-robotics/lerobot-MakerMods/blob/main/docs/source/smolvla.mdx",
+      "snippet": "Finetune SmolVLA SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development!"
+    },
+    {
+      "title": "makermods/smolvla_makermods_100_ep_blue_cube_orange_box_2026-08-04_20 ...",
+      "url": "https://huggingface.co/makermods/smolvla_makermods_100_ep_blue_cube_orange_box_2026-08-04_20-03-25/tree/main",
+      "snippet": "Instructions to use makermods/smolvla_makermods_100_ep_blue_cube_orange_box_2026-08-04_20-03-25 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "lerobot-MakerMods/src/lerobot/policies/smolvla at main - GitHub",
+      "url": "https://github.com/makermods-robotics/lerobot-MakerMods/tree/main/src/lerobot/policies/smolvla",
+      "snippet": "Citation @article {shukor2025smolvla, title = {SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics}, author = {Shukor, Mustafa and Aubakirova, Dana and Capuano, Francesco and Kooijmans, Pepijn and Palma, Steven and Zouitine, Adil and Aractingi, Michel and Pascal, Caroline and Russi, Martino and Marafioti, Andres and Alibert, Simon and Cord, Matthieu and Wolf, Thomas ..."
+    },
+    {
+      "title": "makermods/smolvla_3cam_200ep_blue_cube_orange_tray · Hugging Face",
+      "url": "https://huggingface.co/makermods/smolvla_3cam_200ep_blue_cube_orange_tray",
+      "snippet": "Instructions to use makermods/smolvla_3cam_200ep_blue_cube_orange_tray with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

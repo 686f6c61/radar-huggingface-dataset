@@ -5,7 +5,7 @@
   "author": "lucasnhandang",
   "url": "https://huggingface.co/lucasnhandang/lab22-dpo-qwen2.5-vn-GGUF",
   "created_at": "2026-08-24T12:42:20.000Z",
-  "updated_at": "2026-08-24T17:06:52.000Z",
+  "updated_at": "2026-08-25T05:44:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 109,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 14282611264,
-  "storage_human": "14.3 GB",
+  "storage_bytes": 18437323072,
+  "storage_human": "18.4 GB",
   "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
   "formats": [
     "gguf"

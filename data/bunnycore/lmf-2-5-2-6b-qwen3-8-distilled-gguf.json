@@ -5,7 +5,7 @@
   "author": "bunnycore",
   "url": "https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF",
   "created_at": "2026-08-25T10:21:17.000Z",
-  "updated_at": "2026-08-25T10:21:22.000Z",
+  "updated_at": "2026-08-25T11:31:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,6 +21,7 @@
     "unsloth",
     "text-generation",
     "conversational",
+    "dataset:r0b0tlab/qwen3.8-max-distillation-50k",
     "arxiv:1910.09700",
     "base_model:LiquidAI/LFM2.5-2.6B",
     "region:us"

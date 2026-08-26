@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "devirajesh/efficientformer-finetuned",
+  "slug": "devirajesh-efficientformer-finetuned",
+  "author": "devirajesh",
+  "url": "https://huggingface.co/devirajesh/efficientformer-finetuned",
+  "created_at": "2026-08-26T07:33:21.000Z",
+  "updated_at": "2026-08-26T07:33:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "GitHub - snap-research/EfficientFormer: EfficientFormerV2 [ICCV 2023 ...",
+      "url": "https://github.com/snap-research/EfficientFormer",
+      "snippet": "Add EfficientFormerV2 model family, including efficientformerv2_s0, efficientformerv2_s1, efficientformerv2_s2 and efficientformerv2_l. Pretrained checkpoints of EfficientFormerV2 on ImageNet-1K are released. Update EfficientFormerV2 in downstream tasks (detection, segmentation). Release checkpoints in downstream tasks. Add extra tools for profiling and deployment (we use CoreML==5.2 and Torch ..."
+    },
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "EfficientFormer — MMClassification 0.25.0 documentation",
+      "url": "https://mmclassification.readthedocs.io/en/dev-1.x/papers/efficientformer.html",
+      "snippet": "Our fastest model, EfficientFormer-L1, achieves 79.2% top-1 accuracy on ImageNet-1K with only 1.6 ms inference latency on iPhone 12 (compiled with CoreML), which runs as fast as MobileNetV2×1.4 (1.6 ms, 74.7% top-1), and our largest model, EfficientFormer-L7, obtains 83.3% accuracy with only 7.0 ms latency."
+    }
+  ]
+}

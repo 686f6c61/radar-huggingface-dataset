@@ -5,7 +5,7 @@
   "author": "KoshiMazaki",
   "url": "https://huggingface.co/KoshiMazaki/akuspace-ltx25",
   "created_at": "2026-08-17T00:47:33.000Z",
-  "updated_at": "2026-08-24T23:04:13.000Z",
+  "updated_at": "2026-08-26T01:40:09.000Z",
   "license": "ltx-2-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "audio-to-audio",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 103,
+  "downloads_30d": 125,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

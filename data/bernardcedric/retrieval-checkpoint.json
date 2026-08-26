@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bernardcedric/retrieval-checkpoint",
+  "slug": "bernardcedric-retrieval-checkpoint",
+  "author": "bernardcedric",
+  "url": "https://huggingface.co/bernardcedric/retrieval-checkpoint",
+  "created_at": "2026-08-26T07:43:50.000Z",
+  "updated_at": "2026-08-26T07:44:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bernard — Personal AI Frontend",
+      "url": "https://bernard-ai.org/",
+      "snippet": "Bernard is a free, open source AI frontend desktop application. It connects to multiple AI providers, supports tool use via the Model Context Protocol (MCP), and provides a local vector store for RAG — all data stays on your machine."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 202 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Cedric Bernard - Sr. AI/ML Researcher at Leidos | LinkedIn",
+      "url": "https://www.linkedin.com/in/cedric-bernard",
+      "snippet": "Sr. AI/ML Researcher at Leidos · Experience: Leidos · Education: University of Michigan · Location: Purcellville · 500+ connections on LinkedIn. View Cedric Bernard&#x27;s profile on LinkedIn, a ..."
+    },
+    {
+      "title": "Retrieval-Augmented Generation (RAG): The AI Developer&#x27;s Guide",
+      "url": "https://www.comet.com/site/blog/retrieval-augmented-generation/",
+      "snippet": "The term \"retrieval-augmented generation\" was introduced in a 2020 paper by Patrick Lewis et al. at Meta AI (then Facebook AI Research), presented at NeurIPS. The paper demonstrated that RAG models generated more specific, diverse, and factual language than outputs based purely on the original model parameters."
+    }
+  ]
+}

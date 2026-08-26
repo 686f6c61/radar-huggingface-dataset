@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 16601177888,
-  "storage_human": "16.6 GB",
+  "storage_bytes": 18391248384,
+  "storage_human": "18.4 GB",
   "base_model": "unsloth/Qwen3.5-35B-A3B-GGUF",
   "formats": [
     "gguf"

@@ -4,8 +4,8 @@
   "slug": "nabinkhair-genui-vl-2b-merged",
   "author": "nabinkhair",
   "url": "https://huggingface.co/nabinkhair/genui-vl-2b-merged",
-  "created_at": "2026-08-25T11:22:49.000Z",
-  "updated_at": "2026-08-25T11:24:32.000Z",
+  "created_at": "2026-08-25T16:54:18.000Z",
+  "updated_at": "2026-08-25T20:45:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,13 +28,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 2127532032,
   "parameters_human": "2.13B",
-  "storage_bytes": 4266562966,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 8521703278,
+  "storage_human": "8.5 GB",
   "base_model": "unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

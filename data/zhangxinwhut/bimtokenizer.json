@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZhangXinWhut/BiMTokenizer",
+  "slug": "zhangxinwhut-bimtokenizer",
+  "author": "ZhangXinWhut",
+  "url": "https://huggingface.co/ZhangXinWhut/BiMTokenizer",
+  "created_at": "2026-08-26T07:19:02.000Z",
+  "updated_at": "2026-08-26T08:45:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "speech",
+    "neural-audio-codec",
+    "speech-tokenization",
+    "mamba",
+    "librispeech",
+    "audio-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2984491738,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BiMTokenizer: Preserving Semantic-Acoustic Balance in Low-Bitrate ...",
+      "url": "https://openreview.net/forum?id=jentwauYkf",
+      "snippet": "Experiments show that BiMTokenizer achieves superior acoustic reconstruction and the lowest WER among low-bitrate codec baselines across both clean and noisy environments, while using less than half the parameters of recent dual-tower baselines."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI in BIM: Assistants, Tools, and Real-World Use Cases",
+      "url": "https://www.myarchitectai.com/blog/bim-ai",
+      "snippet": "Practical guide to AI in BIM: the best AI assistants and tools, real workflows, and use cases that help firms model faster and deliver better projects."
+    }
+  ]
+}

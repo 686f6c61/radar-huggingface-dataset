@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dvader13/olmo2-1b-rlfinal-s1-252b",
+  "slug": "dvader13-olmo2-1b-rlfinal-s1-252b",
+  "author": "dvader13",
+  "url": "https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-252b",
+  "created_at": "2026-08-26T03:15:30.000Z",
+  "updated_at": "2026-08-26T03:26:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17819326783,
+  "storage_human": "17.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "[2501.00656] 2 OLMo 2 Furious - arXiv.org",
+      "url": "https://arxiv.org/abs/2501.00656",
+      "snippet": "We present OLMo 2, the next generation of our fully open language models. OLMo 2 includes a family of dense autoregressive language models at 7B, 13B and 32B scales with fully released artifacts -- model weights, full training data, training code and recipes, training logs and thousands of intermediate checkpoints. In this work, we describe our modified model architecture and training recipe ..."
+    },
+    {
+      "title": "OLMo from Ai2",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo 2 is a family of fully-open language models, developed start-to-finish with open and accessible training data, open-source training code, reproducible training recipes, transparent evaluations, intermediate checkpoints, and more. Details are in our technical report."
+    },
+    {
+      "title": "OLMo 2 - a allenai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/allenai/olmo-2",
+      "snippet": "Note New! Our best OLMo 2 model yet. 💻 Quantized version of Instruct models are best for on-device inference."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

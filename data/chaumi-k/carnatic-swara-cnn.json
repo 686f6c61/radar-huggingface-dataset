@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "chaumi-k/carnatic-swara-cnn",
+  "slug": "chaumi-k-carnatic-swara-cnn",
+  "author": "chaumi-k",
+  "url": "https://huggingface.co/chaumi-k/carnatic-swara-cnn",
+  "created_at": "2026-08-26T07:20:09.000Z",
+  "updated_at": "2026-08-26T07:20:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45835,
+  "parameters_human": "45835",
+  "storage_bytes": 183948,
+  "storage_human": "183948 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carnatic Raga Identification System Using Rigorous Time-delay Neural ...",
+      "url": "https://arxiv.org/html/2405.16000v1",
+      "snippet": "The preprocessing pipeline for the Carnatic music dataset is designed to prepare the audio data for feature extraction and model training. One key aspect of this pipeline involves customizing the feature extraction process to capture the nuanced melodic structures and tonal intricacies characteristic of Carnatic music."
+    },
+    {
+      "title": "Carnatic Swara Recognition AI - GitHub",
+      "url": "https://github.com/bhavs06/carnatic-swara-recognition",
+      "snippet": "Carnatic music uses 13 distinct swaras (notes) within each octave, defined relative to a singer&#x27;s tonic (Sa). This project builds an AI system that: Calibrates to any singer&#x27;s Sa frequency using pYIN pitch detection Extracts 196 audio features (MFCCs, Mel spectrogram, Chroma, relative pitch) Classifies swaras using a trained MLP neural network with 98.6% test accuracy Visualizes detected ..."
+    },
+    {
+      "title": "(PDF) Automated raga recognition in Indian classical music using ...",
+      "url": "https://www.researchgate.net/publication/386586436_Automated_raga_recognition_in_Indian_classical_music_using_machine_learning_techniques",
+      "snippet": "The findings underscore the potential of the proposed model to accurately classify diverse ragas, paving the way for advancements in automated recognition systems for Indian Classical Music."
+    },
+    {
+      "title": "[2405.16000] Carnatic Raga Identification System using Rigorous Time ...",
+      "url": "https://arxiv.org/abs/2405.16000",
+      "snippet": "Large scale machine learning-based Raga identification continues to be a nontrivial issue in the computational aspects behind Carnatic music. Each raga consists of many unique and intrinsic melodic patterns that can be used to easily identify them from others. These ragas can also then be used to cluster songs within the same raga, as well as identify songs in other closely related ragas. In ..."
+    },
+    {
+      "title": "Carnatic Raga Identification System using Rigorous Time ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/380905899_Carnatic_Raga_Identification_System_using_Rigorous_Time-Delay_Neural_Network",
+      "snippet": "Large scale machine learning-based Raga identification continues to be a nontrivial issue in the computational aspects behind Carnatic music. Each raga consists of many unique and intrinsic ..."
+    }
+  ]
+}

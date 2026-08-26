@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF",
+  "slug": "vertexresearch-vertex-0-6-100m-8192-instruct-gguf",
+  "author": "VertexResearch",
+  "url": "https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF",
+  "created_at": "2026-08-26T03:00:22.000Z",
+  "updated_at": "2026-08-26T03:03:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "instruct",
+    "chat",
+    "tool-calling",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:VertexResearch/Vertex-0.6-100M-8192-Instruct",
+    "base_model:quantized:VertexResearch/Vertex-0.6-100M-8192-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 96752192,
+  "parameters_human": "96.8M",
+  "storage_bytes": 930819168,
+  "storage_human": "931 MB",
+  "base_model": "VertexResearch/Vertex-0.6-100M-8192-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Luigi/Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF",
+      "snippet": "GGUF quantizations of tiiuae/Falcon-H1-Tiny-100M-Multilingual-Instruct model. This is a 100M parameter multilingual instruction-tuned Falcon H1 Tiny model with hybrid Transformer + Mamba architecture, optimized for edge deployment."
+    },
+    {
+      "title": "Mungert/SmolVLM-256M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Mungert/SmolVLM-256M-Instruct-GGUF",
+      "snippet": "Instructions to use Mungert/SmolVLM-256M-Instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Mungert/SmolVLM-256M-Instruct-GGUF with Transformers:"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

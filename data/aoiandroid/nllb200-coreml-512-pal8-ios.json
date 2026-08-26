@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nllb200-coreml-512-pal8-ios",
+  "slug": "aoiandroid-nllb200-coreml-512-pal8-ios",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nllb200-coreml-512-pal8-ios",
+  "created_at": "2026-08-26T03:20:53.000Z",
+  "updated_at": "2026-08-26T03:31:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "m2m_100",
+    "translateblue",
+    "ios",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1807696000,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoiandroid/nllb200-coreml-512 · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-512",
+      "snippet": "aoiandroid / nllb200-coreml-512 like 0 Translation Core ML flores-200 multilingual m2m_100 nllb apple ios mlpackage License:cc-by-nc-4. Model card FilesFiles and versions xet Community Copy to bucket new NLLB-200 Core ML 512 (KV decoders) Layout App Conversion Validation (macOS) License"
+    },
+    {
+      "title": "aoiandroid/nllb200-coreml-512 at main - Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/nllb200-coreml-512/tree/main",
+      "snippet": "aoiandroid / nllb200-coreml-512 like 0 Translation Core ML flores-200 multilingual m2m_100 nllb apple ios mlpackage License:cc-by-nc-4. Model card FilesFiles and versions xet Community Copy to bucket new main nllb200-coreml-512 6.23 GB Ctrl+K Ctrl+K 2 contributors History:6 commits aoiandroid docs: neutralize TranslateBlue references in README ..."
+    },
+    {
+      "title": "GitHub - sioaeko/NLLB_translator: Multi-engine neural translator across ...",
+      "url": "https://github.com/sioaeko/NLLB_translator",
+      "snippet": "A multi-engine neural translator across 200 languages — run an open model locally, or switch to a free frontier API, all from one clean UI."
+    },
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    },
+    {
+      "title": "GitHub - hansmy/nllb-offline-models: This repository contains the NLLB ...",
+      "url": "https://github.com/hansmy/nllb-offline-models",
+      "snippet": "This repository contains the NLLB-200-distilled-600M model (int4 quantized with CTranslate2) as of March 12, 2026. It is used for offline translation in an Android app."
+    }
+  ]
+}

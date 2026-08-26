@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Thy985/weather-recognition",
+  "slug": "thy985-weather-recognition",
+  "author": "Thy985",
+  "url": "https://huggingface.co/Thy985/weather-recognition",
+  "created_at": "2026-08-26T03:19:25.000Z",
+  "updated_at": "2026-08-26T05:14:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110738926,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - juankuri/weather-recognition: Weather recognition ai model",
+      "url": "https://github.com/juankuri/weather-recognition",
+      "snippet": "Weather recognition ai model . Contribute to juankuri/weather-recognition development by creating an account on GitHub."
+    },
+    {
+      "title": "Enhancing Weather Scene Identification Using Vision Transformer - MDPI",
+      "url": "https://www.mdpi.com/2032-6653/15/8/373",
+      "snippet": "The accuracy of weather scene recognition is critical in a world where weather affects every aspect of our everyday lives, particularly in areas like intelligent transportation networks, autonomous vehicles, and outdoor vision systems. The importance of weather in many aspects of our life highlights the vital necessity for accurate information. Precise weather detection is especially crucial ..."
+    },
+    {
+      "title": "Frontiers | Application of artificial intelligence technology in ...",
+      "url": "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2022.974497/full",
+      "snippet": "The experimental results show that, compared with the non-iterative model, the iterative model has a better recognition effect at all typhoon intensity levels, significantly improving the recognition ability of vortices at typhoon level and below, and the correct recognition rate of vortices at tropical depression and tropical storm level and ..."
+    },
+    {
+      "title": "WeatherNext 2 — Google DeepMind",
+      "url": "https://deepmind.google/science/weathernext/",
+      "snippet": "So predicting weather rapidly and accurately is more critical than ever. We&#x27;re using AI to help evolve the science of forecasting. And by making the WeatherNext 2 model family available to users, researchers, and enterprises, we&#x27;re helping support their decision-making in a changing world."
+    },
+    {
+      "title": "Enhancing Weather Scene Identification Using Vision Transformer",
+      "url": "https://www.researchgate.net/publication/383199345_Enhancing_Weather_Scene_Identification_Using_Vision_Transformer",
+      "snippet": "These findings advance computer vision techniques into new domains and pave the way for reliable weather scene recognition systems, promising extensive real-world applications across various ..."
+    }
+  ]
+}

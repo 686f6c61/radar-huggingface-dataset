@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lauraklf/tmp-matching",
+  "slug": "lauraklf-tmp-matching",
+  "author": "lauraklf",
+  "url": "https://huggingface.co/lauraklf/tmp-matching",
+  "created_at": "2026-08-26T07:20:50.000Z",
+  "updated_at": "2026-08-26T07:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lauraklf/tmp-matching · Hugging Face",
+      "url": "https://huggingface.co/lauraklf/tmp-matching",
+      "snippet": "lauraklf / tmp-matching like 0 Safetensors PyTorch blip matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Blip for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "lauraklf (Laura King) - Hugging Face",
+      "url": "https://huggingface.co/lauraklf",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 19 hours ago ... published a model about 19 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard (August 2026) — Intelligence, Coding & Speed Benchmarks",
+      "url": "https://modelgrep.com/leaderboard",
+      "snippet": "Live LLM leaderboard ranking 300+ large language models by the Artificial Analysis Intelligence, Coding and Agentic indexes — with speed, latency and pricing on every row. Updated hourly."
+    },
+    {
+      "title": "lauraklf (Laura King) - Hugging Face",
+      "url": "https://huggingface.co/lauraklf/models",
+      "snippet": "Trying to be less wrong every day"
+    },
+    {
+      "title": "lauraklf/paper_017286910_text_image_retrieval · Hugging Face",
+      "url": "https://huggingface.co/lauraklf/paper_017286910_text_image_retrieval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alfieyoung70/work-grounded-language",
+  "slug": "alfieyoung70-work-grounded-language",
+  "author": "alfieyoung70",
+  "url": "https://huggingface.co/alfieyoung70/work-grounded-language",
+  "created_at": "2026-08-26T07:37:39.000Z",
+  "updated_at": "2026-08-26T07:37:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Language Models: Meaning, Types, and Future Impact",
+      "url": "https://www.autonomous.ai/ourblog/ai-language-models",
+      "snippet": "AI language models have become a cornerstone of modern artificial intelligence, driving advancements in communication, productivity, and creativity. But what is an AI language model, and how do they work? In this guide, we&#x27;ll explore the meaning of AI language models, their types, and real-world examples, along with a glimpse into their future potential. We&#x27;ll also highlight the best AI ..."
+    },
+    {
+      "title": "PDF LanGWM: Language Grounded World Model",
+      "url": "https://www.mlmi.eng.cam.ac.uk/files/2023-2024/chen_langwm_2024.pdf",
+      "snippet": "1) language-grounded representation learning, 2) the world model, and 3) the controller. The simulation environment first provides observations to the environment encoder, which generates an environment embedding and passes it to the world model."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Detector - 100% FREE AI Checker (Unlimited Words)",
+      "url": "https://aidetector.com/",
+      "snippet": "Instantly detect AI-generated text from ChatGPT, GPT-4, Claude, Gemini, and other popular models."
+    },
+    {
+      "title": "Large Language Models (LLMs) with Google AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/llms",
+      "snippet": "What large language model services does Google Cloud offer? Agent Studio on Gemini Enterprise Agent Platform: Gives you access to over 200 large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-plover3",
+  "slug": "tohirju-sl-plover3",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-plover3",
+  "created_at": "2026-08-26T07:06:08.000Z",
+  "updated_at": "2026-08-26T07:07:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 7359259296,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju/sl-larch3 · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/sl-larch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Plover 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/plover",
+      "snippet": "Plover 3D models ready to view and download for free."
+    },
+    {
+      "title": "Tohirju/sl-niobium · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/sl-niobium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fast3D - Create 3D Models with AI in Seconds",
+      "url": "https://fast3d.io/",
+      "snippet": "Fast3D is the leading AI-powered 3D model generator. Create high-quality 3D models from text or images in seconds."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "pabloyuan",
   "url": "https://huggingface.co/pabloyuan/melal",
   "created_at": "2026-08-23T07:42:26.000Z",
-  "updated_at": "2026-08-23T13:14:56.000Z",
+  "updated_at": "2026-08-25T10:22:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2628517655,
-  "storage_human": "2.6 GB",
+  "storage_bytes": 2857105415,
+  "storage_human": "2.9 GB",
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"

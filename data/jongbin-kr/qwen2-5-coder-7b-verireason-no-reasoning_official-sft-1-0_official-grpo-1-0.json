@@ -18,8 +18,8 @@
     "grpo",
     "trl",
     "arxiv:2402.03300",
-    "base_model:Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin",
-    "base_model:finetune:Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin",
+    "base_model:Jongbin-kr/qwen2.5-coder-7b_verireason-NO-reasoning_official-sft-1.0",
+    "base_model:finetune:Jongbin-kr/qwen2.5-coder-7b_verireason-NO-reasoning_official-sft-1.0",
     "endpoints_compatible",
     "region:us"
   ],

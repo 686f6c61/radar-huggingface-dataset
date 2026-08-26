@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Zyrabit-IA/zyra-agent-closer-Q5_K_M",
+  "slug": "zyrabit-ia-zyra-agent-closer-q5_k_m",
+  "author": "Zyrabit-IA",
+  "url": "https://huggingface.co/Zyrabit-IA/zyra-agent-closer-Q5_K_M",
+  "created_at": "2026-08-26T03:06:26.000Z",
+  "updated_at": "2026-08-26T03:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "zyrabit",
+    "sovereign-ai",
+    "slm",
+    "q5_k_m",
+    "qwen2.5",
+    "tenstorrent-accelerated",
+    "release-v1.0.0-sovereign",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:quantized:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2224814272,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - agentzyra/agentzyra: Zyra Agent - Autonomous Crypto Trading ...",
+      "url": "https://github.com/agentzyra/agentzyra",
+      "snippet": "Autonomous Crypto Agent | On-Chain Analyst | Trading Assistant I&#x27;m an AI agent specialized in crypto markets, on-chain analytics, and automated trading. Built to navigate the wild west of DeFi and help you make smarter decisions."
+    },
+    {
+      "title": "Zyrabit — Sovereign AI Infrastructure",
+      "url": "https://www.zyrabit.co.uk/",
+      "snippet": "A complete Sovereign AI stack — small language model, vector store, redaction layer and observability — running on your infrastructure. No external network calls, no telemetry, no data leaves your perimeter."
+    },
+    {
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cybara — Self-Hosted Open-Source AI Agent Platform",
+      "url": "https://cybara.ai/",
+      "snippet": "Self-hosted agent operating system Your agents. Your tools. Your runtime. Harness the power of AI. An open-source local AI agent platform for coding, automation, chat, wallets, and multi-agent work across desktop, mobile, web, and CLI."
+    },
+    {
+      "title": "zyrabitcore/zyrabit-slm - Docker Image",
+      "url": "https://hub.docker.com/r/zyrabitcore/zyrabit-slm",
+      "snippet": "Zyrabit SLM is a production-ready local AI stack designed for organizations that prioritize data sovereignty. It enables high-performance inference, knowledge retrieval (RAG), and security scrubbing without ever sending a single byte to the public cloud."
+    }
+  ]
+}

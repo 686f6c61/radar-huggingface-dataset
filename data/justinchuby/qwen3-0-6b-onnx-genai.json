@@ -5,7 +5,7 @@
   "author": "justinchuby",
   "url": "https://huggingface.co/justinchuby/qwen3-0.6b-onnx-genai",
   "created_at": "2026-07-24T21:08:39.000Z",
-  "updated_at": "2026-08-24T14:40:43.000Z",
+  "updated_at": "2026-08-26T05:28:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 282,
+  "downloads_30d": 290,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "Kashif786",
   "url": "https://huggingface.co/Kashif786/bert-base-multilingual-cased-sindhi-wordpiece",
   "created_at": "2026-08-14T05:30:29.000Z",
-  "updated_at": "2026-08-14T05:31:04.000Z",
+  "updated_at": "2026-08-26T09:48:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "fill-mask",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 191027529,
   "parameters_human": "191.0M",

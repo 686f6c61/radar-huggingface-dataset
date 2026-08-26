@@ -5,7 +5,7 @@
   "author": "nawax0x1",
   "url": "https://huggingface.co/nawax0x1/Qwen3.5-0.8B-NL-to-FOL",
   "created_at": "2026-08-25T12:20:15.000Z",
-  "updated_at": "2026-08-25T12:21:04.000Z",
+  "updated_at": "2026-08-25T14:32:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 752149312,
   "parameters_human": "752.1M",
-  "storage_bytes": 1524330409,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 3028670593,
+  "storage_human": "3.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

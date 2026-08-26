@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "boeliebamba/isc-helwigii-polyphony-v1",
+  "slug": "boeliebamba-isc-helwigii-polyphony-v1",
+  "author": "boeliebamba",
+  "url": "https://huggingface.co/boeliebamba/isc-helwigii-polyphony-v1",
+  "created_at": "2026-08-26T03:07:18.000Z",
+  "updated_at": "2026-08-26T03:08:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "cuneiform",
+    "assyriology",
+    "polyphony",
+    "sign-disambiguation",
+    "digital-humanities",
+    "low-resource-nlp",
+    "sumerian",
+    "akkadian",
+    "text-classification",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 712596167,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cuneiform Sign Disambiguation",
+      "dataset": "I.S.C. Helwigii Corpus",
+      "metric": "Validation Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Cuneiform Sign Disambiguation",
+      "dataset": "I.S.C. Helwigii Corpus",
+      "metric": "Validation F1 (macro)",
+      "value": 0.95
+    }
+  ],
+  "sources": [
+    {
+      "title": "boeliebamba (Mink Helwig) - Hugging Face",
+      "url": "https://huggingface.co/boeliebamba/models",
+      "snippet": "User profile of Mink Helwig on Hugging Face"
+    },
+    {
+      "title": "GitHub - hailo-ai/hailo_model_zoo: The Hailo Model Zoo includes pre ...",
+      "url": "https://github.com/hailo-ai/hailo_model_zoo",
+      "snippet": "The Hailo Model Zoo provides pre-trained models for high-performance deep learning applications. Using the Hailo Model Zoo, you can measure the full precision accuracy of each model, the quantized accuracy using the Hailo Emulator, and measure the accuracy on Hailo&#x27;s device."
+    },
+    {
+      "title": "Ischyropsalis hellwigi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ischyropsalis_hellwigi",
+      "snippet": "Ischyropsalis hellwigi is a species of harvestman that belongs to the family Ischyropsalididae. It is native to Europe inhabiting mountainous regions and plains. This species is known to feed on snails using their large sturdy chelicerae used to crack open their shells. [1][2][3]"
+    },
+    {
+      "title": "Self-Supervised Mamba for Hyperspectral Image Classification",
+      "url": "https://xplorestaging.ieee.org/document/11206344",
+      "snippet": "Recent advances in Mamba-based architectures have demonstrated promising potential for hyperspectral image classification (HSIC), offering linear-complexity long-range dependency modeling. However, two critical challenges persist in adapting this paradigm to hyperspectral image (HSI) analysis: the substantial requirement for annotated training samples and insufficient capacity to interpret the ..."
+    },
+    {
+      "title": "AI Models Catalog · open-weight LLMs, vision, audio ... - hedwigai",
+      "url": "https://www.hedwigai.com/ai/models",
+      "snippet": "A browsable catalog of open-weight AI models. Chat LLMs, vision, image, audio, and embeddings, with context windows and pricing."
+    }
+  ]
+}

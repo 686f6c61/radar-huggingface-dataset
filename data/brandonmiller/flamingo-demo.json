@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "brandonmiller/flamingo-demo",
+  "slug": "brandonmiller-flamingo-demo",
+  "author": "brandonmiller",
+  "url": "https://huggingface.co/brandonmiller/flamingo-demo",
+  "created_at": "2026-08-26T07:22:18.000Z",
+  "updated_at": "2026-08-26T07:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openflamingo/OpenFlamingo-9B-vitl-mpt7b · Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b",
+      "snippet": "OpenFlamingo is an open source implementation of DeepMind&#x27;s Flamingo models. This 9B-parameter model uses a CLIP ViT-L/14 vision encoder and MPT-7B language model."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://awesome.papernotes.org/en/era4_foundation_models/2022_flamingo/",
+      "snippet": "Design motivation: 1) the model must have \"seen\" image-text-interleaved real documents during training in order to leverage few-shot prompts at inference time; 2) M3W is a dataset DeepMind only began crawling in ..."
+    },
+    {
+      "title": "OpenFlamingo-4B-vitl-rpj3b - Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-4B-vitl-rpj3b",
+      "snippet": "OpenFlamingo is an open source implementation of DeepMind&#x27;s Flamingo models. This 4B-parameter model uses a CLIP ViT-L/14 vision encoder and RedPajama-3B language model. Model Details We follow the Flamingo modeling paradigm, outfitting the layers of a pretrained, frozen language model such that they cross-attend to visual features when decoding."
+    },
+    {
+      "title": "Flamingo (visual language model) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/flamingo",
+      "snippet": "Flamingo is a family of visual language models (VLMs) built by DeepMind and introduced in April 2022 that brought few-shot"
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    }
+  ]
+}

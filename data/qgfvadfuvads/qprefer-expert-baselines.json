@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "qgfvadfuvads/qprefer-expert-baselines",
+  "slug": "qgfvadfuvads-qprefer-expert-baselines",
+  "author": "qgfvadfuvads",
+  "url": "https://huggingface.co/qgfvadfuvads/qprefer-expert-baselines",
+  "created_at": "2026-08-26T03:16:41.000Z",
+  "updated_at": "2026-08-26T03:16:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 120 Estimated models among 401 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI Model Leaderboards & Benchmarks | Scale Labs",
+      "url": "https://labs.scale.com/leaderboard",
+      "snippet": "Explore leaderboards with expert-driven LLM benchmarks and updated AI model rankings across coding, reasoning and more."
+    },
+    {
+      "title": "AI Model Catalog, 500+ Models, Benchmarks & Capabilities | Inferbase",
+      "url": "https://inferbase.ai/models",
+      "snippet": "Browse 500+ AI models, from open-weight families like Llama, DeepSeek, Qwen, and Mistral to frontier models. Filter by benchmarks, capabilities, and context window."
+    },
+    {
+      "title": "AI Model Benchmarks 2026: Compare GPT, Claude, Gemini & DeepSeek",
+      "url": "https://aimodelbenchmarks.com/",
+      "snippet": "Compare AI model benchmarks for coding, agents, reasoning, context windows, and API pricing. Updated source-reviewed rankings for GPT, Claude, Gemini, DeepSeek, and open models."
+    },
+    {
+      "title": "AI model benchmarks 2026: GPT, Claude, Gemini compared",
+      "url": "https://logic.inc/resources/ai-model-benchmarks-guide",
+      "snippet": "AI model benchmarks 2026: GPT, Claude, and Gemini compared AI model benchmarks compare GPT, Claude, Gemini, and other frontier models on standardized tests for real AI workloads. Public leaderboards tell you how a model performed under a specific setup, but your production system has different inputs, latency targets, costs, and failure modes."
+    }
+  ]
+}

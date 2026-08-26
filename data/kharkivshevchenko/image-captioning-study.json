@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kharkivshevchenko/image-captioning-study",
+  "slug": "kharkivshevchenko-image-captioning-study",
+  "author": "kharkivshevchenko",
+  "url": "https://huggingface.co/kharkivshevchenko/image-captioning-study",
+  "created_at": "2026-08-26T07:26:38.000Z",
+  "updated_at": "2026-08-26T07:26:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Image Captioning: A Comprehensive Survey, Comparative Analysis of ...",
+      "url": "https://ieeexplore.ieee.org/document/10250630",
+      "snippet": "Image captioning is a research area that focuses on the development of algorithms and models that can automatically generate descriptive and coherent captions. This study provides a comprehensive overview of image captioning techniques, research gaps, and a comparative analysis of existing models."
+    },
+    {
+      "title": "Next-generation image captioning: A survey of methodologies and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000354",
+      "snippet": "Modern deep learning-based approaches have supplanted traditional approaches in image captioning, leading to more efficient and sophisticated models. The development of attention mechanisms and transformer-based architectures has further enhanced the modeling of both language and visual data."
+    },
+    {
+      "title": "image-captioning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-captioning",
+      "snippet": "Keras model to generate HTML code from hand-drawn website mockups. Implements an image captioning architecture to drawn source images."
+    },
+    {
+      "title": "Deep Learning Approaches on Image Captioning: A Review",
+      "url": "https://arxiv.org/abs/2201.12944",
+      "snippet": "Image captioning is a research area of immense importance, aiming to generate natural language descriptions for visual content in the form of still images. The advent of deep learning and more recently vision-language pre-training techniques has revolutionized the field, leading to more sophisticated methods and improved performance. In this survey paper, we provide a structured review of deep ..."
+    }
+  ]
+}

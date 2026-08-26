@@ -5,7 +5,7 @@
   "author": "AlexStamp",
   "url": "https://huggingface.co/AlexStamp/distilbert-base-uncased-finetuned-imdb-standard",
   "created_at": "2026-08-15T15:28:39.000Z",
-  "updated_at": "2026-08-16T18:34:30.000Z",
+  "updated_at": "2026-08-25T17:45:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 40,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 66985530,
   "parameters_human": "67.0M",

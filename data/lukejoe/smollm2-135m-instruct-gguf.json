@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 134515584,
   "parameters_human": "134.5M",
-  "storage_bytes": 3830828928,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 181714048,
+  "storage_human": "182 MB",
   "base_model": "unsloth/SmolLM2-135M-Instruct",
   "formats": [
     "gguf"

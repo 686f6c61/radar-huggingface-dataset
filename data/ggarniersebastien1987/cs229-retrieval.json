@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ggarniersebastien1987/cs229-retrieval",
+  "slug": "ggarniersebastien1987-cs229-retrieval",
+  "author": "ggarniersebastien1987",
+  "url": "https://huggingface.co/ggarniersebastien1987/cs229-retrieval",
+  "created_at": "2026-08-26T07:42:06.000Z",
+  "updated_at": "2026-08-26T07:42:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggarniersebastien1987 (G. Palmer) - Hugging Face",
+      "url": "https://huggingface.co/ggarniersebastien1987/models",
+      "snippet": "User profile of G. Palmer on Hugging Face"
+    },
+    {
+      "title": "ggarniersebastien1987 (G. Palmer) - Hugging Face",
+      "url": "https://huggingface.co/ggarniersebastien1987/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 21 hours ago ... published a model about 21 hours ago ... liked a Space 8 days ago"
+    },
+    {
+      "title": "PDF CS229 Lecture Notes - Stanford University",
+      "url": "https://cs229.stanford.edu/main_notes.pdf",
+      "snippet": "3.2 Constructing GLMs Suppose you would like to build a model to estimate the number y of cus-tomers arriving in your store (or number of page-views on your website) in any given hour, based on certain features x such as store promotions, recent advertising, weather, day-of-week, etc."
+    },
+    {
+      "title": "CS 229: Machine Learning (Course handouts) - cs229.stanford.edu",
+      "url": "https://cs229.stanford.edu/materials.html-full",
+      "snippet": "Lecture notes 1 (ps) (pdf) Supervised Learning, Discriminative Algorithms Lecture notes 2 (ps) (pdf) Generative Algorithms Lecture notes 3 (ps) (pdf) Support Vector Machines Lecture notes 4 (ps) (pdf) Learning Theory Lecture notes 5 (ps) (pdf) Regularization and Model Selection Lecture notes 6 (ps) (pdf) Online Learning and the Perceptron Algorithm. (optional reading) Lecture notes 7a (ps ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2501.04635",
+      "snippet": "arXiv.org"
+    }
+  ]
+}

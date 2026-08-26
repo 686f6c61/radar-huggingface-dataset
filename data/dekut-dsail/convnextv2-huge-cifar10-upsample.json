@@ -5,7 +5,7 @@
   "author": "DeKUT-DSAIL",
   "url": "https://huggingface.co/DeKUT-DSAIL/convnextv2-huge-cifar10-upsample",
   "created_at": "2026-08-14T12:31:17.000Z",
-  "updated_at": "2026-08-14T13:04:27.000Z",
+  "updated_at": "2026-08-25T09:45:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 657500810,
   "parameters_human": "657.5M",

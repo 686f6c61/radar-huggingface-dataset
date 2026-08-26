@@ -5,7 +5,7 @@
   "author": "wdLangner",
   "url": "https://huggingface.co/wdLangner/otbase-insight-models",
   "created_at": "2026-07-23T19:50:26.000Z",
-  "updated_at": "2026-08-25T02:36:49.000Z",
+  "updated_at": "2026-08-26T02:51:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 887782439904,
-  "storage_human": "887.8 GB",
+  "storage_bytes": 1204881842592,
+  "storage_human": "1204.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

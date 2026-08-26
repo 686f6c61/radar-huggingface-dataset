@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cogarobotics/finegrained-grpo-highag-0825",
+  "slug": "cogarobotics-finegrained-grpo-highag-0825",
+  "author": "cogarobotics",
+  "url": "https://huggingface.co/cogarobotics/finegrained-grpo-highag-0825",
+  "created_at": "2026-08-26T03:36:23.000Z",
+  "updated_at": "2026-08-26T03:46:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "grpo",
+    "siheung",
+    "rag",
+    "vllm",
+    "base_model:CELL-LAB/lora-plus-f2f-backup",
+    "base_model:finetune:CELL-LAB/lora-plus-f2f-backup",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24932042207,
+  "storage_human": "24.9 GB",
+  "base_model": "CELL-LAB/lora-plus-f2f-backup",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finegrain",
+      "url": "https://finegrain.ai/",
+      "snippet": "We&#x27;re building the first Agentic Camera, starting with commerce. Simply snap, and let your camera handles the rest."
+    },
+    {
+      "title": "finegrain (Finegrain) - Hugging Face",
+      "url": "https://huggingface.co/finegrain",
+      "snippet": "Turn mundane photos into pro shots. Entirely on-device. Try the app or build with the SDK."
+    },
+    {
+      "title": "Practical Exercise: Fine-tune a model with GRPO · Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/chapter12/5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "[2604.08476] Faithful GRPO: Improving Visual Spatial Reasoning in ...",
+      "url": "https://arxiv.org/abs/2604.08476",
+      "snippet": "Abstract page for arXiv paper 2604.08476: Faithful GRPO: Improving Visual Spatial Reasoning in Multimodal Language Models via Constrained Policy Optimization"
+    }
+  ]
+}

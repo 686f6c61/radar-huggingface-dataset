@@ -5,7 +5,7 @@
   "author": "vab46",
   "url": "https://huggingface.co/vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka2",
   "created_at": "2026-08-25T20:32:43.000Z",
-  "updated_at": "2026-08-25T20:33:13.000Z",
+  "updated_at": "2026-08-25T23:51:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

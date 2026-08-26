@@ -5,7 +5,7 @@
   "author": "me-tantan",
   "url": "https://huggingface.co/me-tantan/petiteAnima",
   "created_at": "2026-07-07T08:41:57.000Z",
-  "updated_at": "2026-08-25T06:40:00.000Z",
+  "updated_at": "2026-08-25T12:36:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 14,
+  "downloads_30d": 48,
   "trending_score": 0,
   "parameters": 2091068928,
   "parameters_human": "2.09B",
-  "storage_bytes": 17668777776,
-  "storage_human": "17.7 GB",
+  "storage_bytes": 19406199344,
+  "storage_human": "19.4 GB",
   "base_model": "circlestone-labs/Anima",
   "formats": [
     "gguf"

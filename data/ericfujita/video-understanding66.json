@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EricFujita/video-understanding66",
+  "slug": "ericfujita-video-understanding66",
+  "author": "EricFujita",
+  "url": "https://huggingface.co/EricFujita/video-understanding66",
+  "created_at": "2026-08-26T07:40:26.000Z",
+  "updated_at": "2026-08-26T07:40:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "14 Best Video Understanding Models in 2026 | UsefulAI",
+      "url": "https://usefulai.com/models/video-understanding",
+      "snippet": "Compare the best video understanding models in 2026 for long-video analysis, audio-aware reasoning, and search, from local use to production APIs."
+    },
+    {
+      "title": "Video Understanding (Vision) API on fal",
+      "url": "https://fal.ai/models/fal-ai/video-understanding",
+      "snippet": "A video understanding model to analyze video content and answer questions about what&#x27;s happening in the video based on user prompts."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Video_understanding.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Video_understanding.ipynb",
+      "snippet": "The live demo on AI Studio shows how you can postprocess this output to jump directly to the the specific part of the video by clicking on the timecodes. If you are interested, you can check the code of that demo on Github."
+    }
+  ]
+}

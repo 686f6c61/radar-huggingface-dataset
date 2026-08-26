@@ -5,7 +5,7 @@
   "author": "SeanWang0027",
   "url": "https://huggingface.co/SeanWang0027/rose-olmo3-7b-from-qwen3-32b-k1024-step220",
   "created_at": "2026-08-25T21:24:29.000Z",
-  "updated_at": "2026-08-25T21:37:04.000Z",
+  "updated_at": "2026-08-26T03:00:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,10 +27,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 4981178080,
-  "storage_human": "5.0 GB",
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063648,
+  "storage_human": "14.6 GB",
   "base_model": "allenai/Olmo-3-7B-Think-SFT",
   "formats": [
     "safetensors"

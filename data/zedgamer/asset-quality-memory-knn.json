@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "zedgamer/asset-quality-memory-knn",
+  "slug": "zedgamer-asset-quality-memory-knn",
+  "author": "zedgamer",
+  "url": "https://huggingface.co/zedgamer/asset-quality-memory-knn",
+  "created_at": "2026-08-26T07:34:34.000Z",
+  "updated_at": "2026-08-26T07:35:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "botte-secrete",
+  "languages": [],
+  "tags": [
+    "botte-secrete",
+    "knn",
+    "asset-quality",
+    "explainable-ai",
+    "local-first",
+    "3d",
+    "godot",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zedgamer (gamer) - Hugging Face",
+      "url": "https://huggingface.co/zedgamer",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 16 days ago ... published a model 16 days ago"
+    },
+    {
+      "title": "zedgamer (gamer) - Hugging Face",
+      "url": "https://huggingface.co/zedgamer/models",
+      "snippet": "Organizations zedgamer&#x27;s models2 Sort: Recently updated zedgamer/cogniarc-nano-nn Text Classification •Updated 19 days ago"
+    },
+    {
+      "title": "K-Nearest Neighbor (KNN) Algorithm - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/k-nearest-neighbours/",
+      "snippet": "K‑Nearest Neighbor (KNN) is a simple and widely used machine learning technique for classification and regression tasks. It works by identifying the K closest data points to a given input and making predictions based on the majority class or average value of those neighbors."
+    },
+    {
+      "title": "Scripts Search Results for \"ai\" — TradingView",
+      "url": "https://www.tradingview.com/scripts/search/ai/",
+      "snippet": "See all scripts for \"ai\". Browse all related scripts and find the ones that match your request and strategy."
+    },
+    {
+      "title": "k-Nearest Neighbors Algorithm - an overview - ScienceDirect",
+      "url": "https://www.sciencedirect.com/topics/computer-science/k-nearest-neighbors-algorithm",
+      "snippet": "12.3.2 k-Nearest Neighbors The k-nearest neighbors (kNN) algorithm (Cover et al., 1967) is a very simple nonparametric algorithm widely used for classification and regression. kNN is an instance-based learner (also known as lazy learning) that does not train a classification model until provided with samples to classify (Kotsiantis, 2007)."
+    }
+  ]
+}

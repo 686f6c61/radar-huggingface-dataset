@@ -5,7 +5,7 @@
   "author": "ncylich",
   "url": "https://huggingface.co/ncylich/temporal-moe-extras",
   "created_at": "2026-07-27T22:32:54.000Z",
-  "updated_at": "2026-08-25T17:44:32.000Z",
+  "updated_at": "2026-08-26T01:41:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 55123698402,
-  "storage_human": "55.1 GB",
+  "storage_bytes": 63092978130,
+  "storage_human": "63.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

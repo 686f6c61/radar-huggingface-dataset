@@ -5,7 +5,7 @@
   "author": "trinhkhng",
   "url": "https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.0",
   "created_at": "2026-08-04T09:06:30.000Z",
-  "updated_at": "2026-08-25T15:16:11.000Z",
+  "updated_at": "2026-08-26T03:03:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 610,
+  "downloads_30d": 726,
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",

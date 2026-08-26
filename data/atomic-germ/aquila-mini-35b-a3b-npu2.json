@@ -5,7 +5,7 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Aquila-mini-35B-A3B-NPU2",
   "created_at": "2026-08-12T02:28:54.000Z",
-  "updated_at": "2026-08-19T20:08:42.000Z",
+  "updated_at": "2026-08-25T16:55:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 70,
+  "downloads_30d": 77,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

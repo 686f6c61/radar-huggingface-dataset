@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Piyu12/fruit-veg-freshness-mobilenetv2",
+  "slug": "piyu12-fruit-veg-freshness-mobilenetv2",
+  "author": "Piyu12",
+  "url": "https://huggingface.co/Piyu12/fruit-veg-freshness-mobilenetv2",
+  "created_at": "2026-08-26T07:43:24.000Z",
+  "updated_at": "2026-08-26T07:43:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "pytorch",
+    "mobilenetv2",
+    "fruit-freshness",
+    "vegetable-freshness",
+    "dataset:raghavrpotdar/fresh-and-stale-images-of-fruits-and-vegetables",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18667625,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - captraj/fruit-veg-freshness-ai: An AI model trained to ...",
+      "url": "https://github.com/captraj/fruit-veg-freshness-ai",
+      "snippet": "The model has been trained using a Jupyter Notebook (freshness_regression.ipynb) to classify the freshness of input fruit or vegetable images. The training process involves the use of a preprocessed dataset and a custom convolutional neural network (CNN) architecture based on the MobileNetV2 model. The MobileNetV2 model is a powerful feature extractor that has been pre-trained on the ImageNet ..."
+    },
+    {
+      "title": "fruit-veg-freshness-ai/README.md at main - GitHub",
+      "url": "https://github.com/captraj/fruit-veg-freshness-ai/blob/main/README.md",
+      "snippet": "Model Description The model has been trained using a Jupyter Notebook (freshness_regression.ipynb) to classify the freshness of input fruit or vegetable images. The training process involves the use of a preprocessed dataset and a custom convolutional neural network (CNN) architecture based on the MobileNetV2 model."
+    },
+    {
+      "title": "Fruit and Vegetable Recognition Using MobileNetV2: An Image ... - MDPI",
+      "url": "https://www.mdpi.com/2673-4591/87/1/108",
+      "snippet": "The system was trained on a diverse dataset of fruits and vegetables, achieving high classification accuracy (97.2%) and demonstrating robustness under various conditions. Our findings indicate that the modified model, the MobileNetV2 model, can effectively recognize different food items, making it suitable for real-time applications."
+    },
+    {
+      "title": "Fruit Image Classification Model Based on MobileNetV2 with Deep ... - MDPI",
+      "url": "https://www.mdpi.com/2071-1050/15/3/1906",
+      "snippet": "The experiment introduces a customized head of five different layers into MobileNetV2 architecture. The classification layer of the MobileNetV2 model is replaced by the customized head, which produced the modified version of MobileNetV2 called TL-MobileNetV2. In addition, transfer learning is used to retain the pre-trained model."
+    },
+    {
+      "title": "Vegetable and fruit freshness detection based on deep features and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2665927123002241",
+      "snippet": "Although some studies have shown that large-scale detection of vegetable and fruit freshness can be carried out based on artificially extracted features, there is still the problem of poor adaptability of artificially extracted features, which leads to low efficiency of freshness detection."
+    }
+  ]
+}

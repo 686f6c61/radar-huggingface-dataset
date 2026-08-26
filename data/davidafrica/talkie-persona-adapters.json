@@ -5,7 +5,7 @@
   "author": "davidafrica",
   "url": "https://huggingface.co/davidafrica/talkie-persona-adapters",
   "created_at": "2026-08-08T22:17:16.000Z",
-  "updated_at": "2026-08-26T00:03:32.000Z",
+  "updated_at": "2026-08-26T02:49:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 30873579608,
-  "storage_human": "30.9 GB",
+  "storage_bytes": 43037469224,
+  "storage_human": "43.0 GB",
   "base_model": "davidafrica/talkie-1930-13b-it",
   "formats": [
     "safetensors"

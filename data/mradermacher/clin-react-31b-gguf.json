@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Clin-REACT-31B-GGUF",
   "created_at": "2026-08-25T07:55:00.000Z",
-  "updated_at": "2026-08-25T09:33:55.000Z",
+  "updated_at": "2026-08-25T14:22:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 195037803520,
-  "storage_human": "195.0 GB",
+  "storage_bytes": 211900032512,
+  "storage_human": "211.9 GB",
   "base_model": "macontreras98/Clin-REACT-31B",
   "formats": [
     "gguf"

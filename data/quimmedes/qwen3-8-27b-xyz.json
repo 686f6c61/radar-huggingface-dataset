@@ -5,7 +5,7 @@
   "author": "quimmedes",
   "url": "https://huggingface.co/quimmedes/Qwen3.8-27B-XYZ",
   "created_at": "2026-08-14T15:52:50.000Z",
-  "updated_at": "2026-08-24T20:34:48.000Z",
+  "updated_at": "2026-08-26T09:09:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,13 +29,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 40,
-  "downloads_30d": 43625,
+  "likes": 41,
+  "downloads_30d": 47111,
   "trending_score": 18,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 511185577818,
-  "storage_human": "511.2 GB",
+  "storage_bytes": 708675993818,
+  "storage_human": "708.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

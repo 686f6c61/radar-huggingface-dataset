@@ -5,7 +5,7 @@
   "author": "justinchuby",
   "url": "https://huggingface.co/justinchuby/sensenova-u1.5-8b-mot-onnx-canonical",
   "created_at": "2026-08-22T02:26:48.000Z",
-  "updated_at": "2026-08-23T01:40:16.000Z",
+  "updated_at": "2026-08-26T00:43:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Keithsel/GreenNode-Embedding-Large-VN-Mixed-V1-GGUF",
+  "slug": "keithsel-greennode-embedding-large-vn-mixed-v1-gguf",
+  "author": "Keithsel",
+  "url": "https://huggingface.co/Keithsel/GreenNode-Embedding-Large-VN-Mixed-V1-GGUF",
+  "created_at": "2026-08-26T07:31:47.000Z",
+  "updated_at": "2026-08-26T07:57:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "sentence-similarity",
+    "feature-extraction",
+    "vi",
+    "en",
+    "dataset:GreenNode/GreenNode-Table-Markdown-Retrieval",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566703104,
+  "parameters_human": "566.7M",
+  "storage_bytes": 1157671808,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GreenNode-Embedding-Large-VN-V1 - Hugging Face",
+      "url": "https://huggingface.co/GreenNode/GreenNode-Embedding-Large-VN-V1",
+      "snippet": "like 5 Follow GreenNode.ai 23 Sentence Similarity sentence-transformers Safetensors GreenNode/GreenNode-Table-Markdown-Retrieval Vietnamese xlm-roberta feature-extraction text-embeddings-inference License:cc-by-4. Model card FilesFiles and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "GreenNode/GreenNode-Embedding-Large-VN-V1 at main",
+      "url": "https://huggingface.co/GreenNode/GreenNode-Embedding-Large-VN-V1/tree/main",
+      "snippet": "GreenNode-Embedding-Large-VN-V1 like 1 Follow GreenNode.ai 15 Sentence Similarity sentence-transformers Safetensors"
+    },
+    {
+      "title": "GreenNode-Embedding-Large-VN-Mixed-V1 Open-Source Model - Supports ...",
+      "url": "https://model.aibase.com/en/models/details/1915772837211824129",
+      "snippet": "A text embedding model fine-tuned based on BAAI/bge-small-en-v1.5, trained with the MEDI dataset and MTEB classification task datasets, optimized for query encoding in retrieval tasks."
+    },
+    {
+      "title": "GreenNode-Embedding-Large-VN-V1 Open-source Model - Optimized for ...",
+      "url": "https://model.aibase.com/en/models/details/1915741027375407106",
+      "snippet": "A text embedding model fine-tuned based on BAAI/bge-small-en-v1.5, trained with the MEDI dataset and MTEB classification task datasets, optimized for query encoding in retrieval tasks."
+    },
+    {
+      "title": "GreenNode-Embedding-Large-VN-Mixed-V1 · MTEB Leaderboard",
+      "url": "https://mteb-leaderboard.hf.space/models/GreenNode/GreenNode-Embedding-Large-VN-Mixed-V1",
+      "snippet": "dense embedding model · 568M params · 1024-dim · 8194 max tokens · open weights"
+    }
+  ]
+}

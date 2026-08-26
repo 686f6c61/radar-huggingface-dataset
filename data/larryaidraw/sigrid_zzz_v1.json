@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/Sigrid_ZZZ_v1",
+  "slug": "larryaidraw-sigrid_zzz_v1",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/Sigrid_ZZZ_v1",
+  "created_at": "2026-08-26T07:33:45.000Z",
+  "updated_at": "2026-08-26T07:34:06.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228471940,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sigrid de L&#x27;Azur - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2025019600640349359",
+      "snippet": "Generate stunning anime art with the &#x27;Sigrid de L&#x27;Azur&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Sigrid - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2025059849313107972",
+      "snippet": "Generate stunning anime art with the &#x27;Sigrid&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Sigrid de L&#x27;Azur (Zenless Zone Zero) - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2807096/sigrid-de-lazur-zenless-zone-zero",
+      "snippet": "Sigrid de L&#x27;Azur Sigrid from the video game Zenless Zone Zero SigridZzz, horse ears, long ponytail, long hair, blonde hair, side bangs, hair over one eye, green eyes, blue ribbon, hair ornament, horse tail white armored bodysuit, high-cut bodysuit, white bodysuit, black side panels, black chest panel, high collar, metal gorget, blue necktie, detached shoulder armor, single pauldron, left ..."
+    },
+    {
+      "title": "Sigrid de L Azur | ZZZ - V1 | Illustrious | Illustrious LoRA | Civitai",
+      "url": "https://civitai.red/models/2756937/sigrid-de-l-azur-or-zzz",
+      "snippet": "Download 1 variant available fp16 SafeTensor Sigrid_de_L_Azur_V2 .safetensors Half precision, best balance • 54.78 MB Verified: 2 months ago Download (54.78 MB) Details"
+    },
+    {
+      "title": "Sigrid de L&#x27;Azur (Zenless Zone Zero) | TensorHub Art",
+      "url": "https://tensorhub.art/models/1027068951533764874",
+      "snippet": "Download Sigrid de L&#x27;Azur (Zenless Zone Zero) - free LORA Illustrious AI model on TENSORHUB ART. By Bruh"
+    }
+  ]
+}

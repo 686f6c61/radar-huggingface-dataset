@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4",
+  "slug": "windowsxp811203-qwen3-8-flash-next-abliterated-nvfp4",
+  "author": "windowsxp811203",
+  "url": "https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4",
+  "created_at": "2026-08-26T03:35:26.000Z",
+  "updated_at": "2026-08-26T03:35:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3.8-flash-next",
+    "qwen4-preview",
+    "placeholder",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 27B Abliterated NVFP4 by windowsxp811203",
+      "url": "https://llm-explorer.com/model/windowsxp811203%2FQwen3.8-27B-Abliterated-NVFP4,2q4ZOR3FKeLroCqsc2hHeY",
+      "snippet": "Qwen3.8 27B Abliterated NVFP4 is an open-source language model by windowsxp811203. Features: 27b LLM, VRAM: 28.6GB, License: apache-2.0, LLM Explorer Score: 0.32."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "2x RTX 5090 (consumer Blackwell, sm120) Verified on vLLM .26.1rc1.dev608+g99a10304d, TP2 across two cards. NVFP4 uses the real kernel here. vLLM selects FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM on sm120 — a cutlass path, not an emulation fallback — for both the Inferact build above and unsloth/Qwen3.8-27B-NVFP4."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Zyrabit-IA/zyra-agent-strategist-Q5_K_M",
+  "slug": "zyrabit-ia-zyra-agent-strategist-q5_k_m",
+  "author": "Zyrabit-IA",
+  "url": "https://huggingface.co/Zyrabit-IA/zyra-agent-strategist-Q5_K_M",
+  "created_at": "2026-08-26T03:06:04.000Z",
+  "updated_at": "2026-08-26T03:06:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "zyrabit",
+    "sovereign-ai",
+    "slm",
+    "q5_k_m",
+    "qwen2.5",
+    "tenstorrent-accelerated",
+    "release-v1.0.0-sovereign",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:quantized:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2224814272,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zyrabit - GitHub",
+      "url": "https://github.com/Zyrabit-tech",
+      "snippet": "🚀 Our Mission We build the infrastructure that enables Regulated Industries (Banking, Gov, Healthcare) to deploy Generative AI without compromising Data Sovereignty. We believe in a future where AI runs efficiently on Edge/On-Premise Hardware (CPU-first), protecting sensitive data through rigorous Zero-Trust Architectures."
+    },
+    {
+      "title": "GitHub - agentzyra/agentzyra: Zyra Agent - Autonomous Crypto Trading ...",
+      "url": "https://github.com/agentzyra/agentzyra",
+      "snippet": "I&#x27;m an AI agent specialized in crypto markets, on-chain analytics, and automated trading. Built to navigate the wild west of DeFi and help you make smarter decisions."
+    },
+    {
+      "title": "Zyrabit — Sovereign AI Infrastructure",
+      "url": "https://www.zyrabit.co.uk/",
+      "snippet": "A complete Sovereign AI stack — small language model, vector store, redaction layer and observability — running on your infrastructure. No external network calls, no telemetry, no data leaves your perimeter."
+    },
+    {
+      "title": "Zyrabit | Sovereign AI Infrastructure for Regulated Teams",
+      "url": "https://www.zyrabit.com/",
+      "snippet": "The AI lives inside. Audit transactions and run private compliance agents directly on local hardware — zero cloud telemetry. Analyze clinical records and draft diagnostics within the hospital network, respecting local health privacy laws."
+    },
+    {
+      "title": "Introduction | Zyrabit Docs",
+      "url": "https://docs.zyrabit.com/docs/",
+      "snippet": "Zyrabit SLM is a production-grade Small Language Model (SLM) orchestration stack designed for on-premise and private cloud environments. It provides a containerized architecture to deploy, manage, and scale local AI capabilities while maintaining strict data privacy and network isolation."
+    }
+  ]
+}

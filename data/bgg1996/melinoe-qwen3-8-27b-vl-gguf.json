@@ -5,7 +5,7 @@
   "author": "bgg1996",
   "url": "https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL-GGUF",
   "created_at": "2026-08-24T02:37:24.000Z",
-  "updated_at": "2026-08-24T05:12:34.000Z",
+  "updated_at": "2026-08-25T20:43:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,19 +13,21 @@
   "languages": [],
   "tags": [
     "gguf",
+    "base_model:bgg1996/Melinoe-Qwen3-8-27B-VL",
+    "base_model:quantized:bgg1996/Melinoe-Qwen3-8-27B-VL",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
   "storage_bytes": 19957058976,
   "storage_human": "20.0 GB",
-  "base_model": null,
+  "base_model": "bgg1996/Melinoe-Qwen3-8-27B-VL",
   "formats": [
     "gguf"
   ],

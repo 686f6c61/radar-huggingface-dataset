@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12762642078,
-  "storage_human": "12.8 GB",
+  "storage_bytes": 11846853956,
+  "storage_human": "11.8 GB",
   "base_model": "black-forest-labs/FLUX.2-klein-9B, black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-klein-base-4B, black-forest-labs/FLUX.2-klein-base-9B, black-forest-labs/FLUX.2-klein-9b-fp8, black-forest-labs/FLUX.2-klein-4b-fp8, Qwen/Qwen-Image-Edit-2511, krea/Krea-2-Raw",
   "formats": [
     "diffusers"

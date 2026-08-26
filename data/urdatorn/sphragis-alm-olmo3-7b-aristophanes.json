@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo3-7b-aristophanes",
+  "slug": "urdatorn-sphragis-alm-olmo3-7b-aristophanes",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-aristophanes",
+  "created_at": "2026-08-26T07:32:11.000Z",
+  "updated_at": "2026-08-26T07:32:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/olmo3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Olmo has led to a wellspring of research and innovation that couldn&#x27;t have been accomplished without a fully open model... Olmo ensures complete transparency and sets a strong foundation for transformative work."
+    },
+    {
+      "title": "OLMo-core/src/scripts/official/OLMo3 at main - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo3",
+      "snippet": "Olmo 3 32B Model Training Official training scripts, checkpoints, and monitoring logs for the Olmo 3 32B pretraining process can be found in the table below. Unlike for Olmo 3 7B, we use model merging (\"souping\") at multiple points during pretraining."
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    }
+  ]
+}

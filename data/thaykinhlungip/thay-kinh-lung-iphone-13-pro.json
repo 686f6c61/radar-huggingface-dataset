@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thaykinhlungip/thay-kinh-lung-iphone-13-pro",
+  "slug": "thaykinhlungip-thay-kinh-lung-iphone-13-pro",
+  "author": "thaykinhlungip",
+  "url": "https://huggingface.co/thaykinhlungip/thay-kinh-lung-iphone-13-pro",
+  "created_at": "2026-08-26T07:37:58.000Z",
+  "updated_at": "2026-08-26T07:38:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bảng giá thay kính lưng iPhone giá tốt chính hãng Apple mới nhất 2026",
+      "url": "https://www.thegioididong.com/hoi-dap/bang-gia-thay-kinh-lung-iphone-1580941",
+      "snippet": "Bảng giá thay kính lưng iPhone 16, 15, 14, 13, 12, 11 Pro Max mới nhất. Tìm hiểu quy trình thay bằng laser, có mất chống nước, hỏng sạc MagSafe không và địa chỉ uy tín!"
+    },
+    {
+      "title": "Thay kính lưng iPhone chính hãng, giá tốt 2026",
+      "url": "https://dienthoaivui.com.vn/thay-kinh-lung/thay-kinh-lung-dien-thoai-iphone/",
+      "snippet": "Thay kính lưng iPhone giá bao nhiêu? Bảng giá thay kính lưng iPhone chính hãng, giá rẻ, lấy liền, ưu đãi tháng 8 giảm đến 50%. Xem và nhận ưu đãi ngay!"
+    },
+    {
+      "title": "Thay kính lưng iPhone - iCenter.vn",
+      "url": "https://icenter.vn/collections/thay-kinh-lung-iphone",
+      "snippet": "Thay kính lưng iPhone 16 Pro Max chính hãng Apple"
+    },
+    {
+      "title": "Bảng giá Thay Kính Lưng iPhone 13 T8/2026 - Thanh Trang Mobile",
+      "url": "https://thanhtrangmobile.com/thay-nap-lung-iphone-13/",
+      "snippet": "Thay Kính Lưng iPhone 13 chính hãng lấy ngay, uy tín tại Thanh Trang Mobile, bảo hành 06 Tháng. Xem ngay tại đây!"
+    },
+    {
+      "title": "Thay kính lưng iPhone 13 Pro chính hãng | Lấy liền",
+      "url": "https://dienthoaivui.com.vn/thay-kinh-lung-iphone-13-pro/",
+      "snippet": "Thay kính lưng iPhone 13 Pro chính hãng, giá rẻ chỉ từ , bảo hành 30 ngày 1 đổi 1 khi rơi vỡ, cam kết không thêm phí phát sinh. Xem ngay!"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ALLUCY-Rodent/whisper-medium-ko",
+  "slug": "allucy-rodent-whisper-medium-ko",
+  "author": "ALLUCY-Rodent",
+  "url": "https://huggingface.co/ALLUCY-Rodent/whisper-medium-ko",
+  "created_at": "2026-08-26T07:15:11.000Z",
+  "updated_at": "2026-08-26T07:17:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "quantized",
+    "ko",
+    "base_model:seastar105/whisper-medium-komixv2",
+    "base_model:quantized:seastar105/whisper-medium-komixv2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1187335881,
+  "storage_human": "1.2 GB",
+  "base_model": "seastar105/whisper-medium-komixv2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALLUCY-Rodent/whisper-small-ko · Hugging Face",
+      "url": "https://huggingface.co/ALLUCY-Rodent/whisper-small-ko",
+      "snippet": "ALLUCY-Rodent / whisper-small-ko like 0 Automatic Speech Recognition Transformers ONNX Korean whisper korean stt meeting License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "openai/whisper-medium · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lodjim/whisper-medium",
+      "url": "https://github.com/lodjim/whisper-medium",
+      "snippet": "The primary intended users of these models are AI researchers studying robustness, generalization, capabilities, biases, and constraints of the current model. However, Whisper is also potentially quite useful as an ASR solution for developers, especially for English speech recognition."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "whisper-medium-ko-zeroth | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/whisper-medium-ko-zeroth/",
+      "snippet": "An optimized Korean speech recognition model based on Whisper-medium, achieving 3.64% WER on Zeroth Korean dataset with impressive CER of 1.48%."
+    }
+  ]
+}

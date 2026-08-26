@@ -5,7 +5,7 @@
   "author": "AlexStamp",
   "url": "https://huggingface.co/AlexStamp/roberta-base-lora-yelp-ratings",
   "created_at": "2026-08-23T18:22:22.000Z",
-  "updated_at": "2026-08-23T22:07:29.000Z",
+  "updated_at": "2026-08-25T18:06:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 56,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

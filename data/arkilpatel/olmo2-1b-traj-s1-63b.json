@@ -5,7 +5,7 @@
   "author": "arkilpatel",
   "url": "https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-63b",
   "created_at": "2026-08-26T00:26:14.000Z",
-  "updated_at": "2026-08-26T00:36:12.000Z",
+  "updated_at": "2026-08-26T01:00:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 23758833792,
-  "storage_human": "23.8 GB",
+  "storage_bytes": 127703731632,
+  "storage_human": "127.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

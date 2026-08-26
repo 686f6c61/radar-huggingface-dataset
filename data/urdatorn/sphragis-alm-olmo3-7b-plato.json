@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo3-7b-plato",
+  "slug": "urdatorn-sphragis-alm-olmo3-7b-plato",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plato",
+  "created_at": "2026-08-26T07:29:35.000Z",
+  "updated_at": "2026-08-26T07:30:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AllenAI: Olmo 3 7B Think - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/allenai/olmo-3-7b-think-20251121",
+      "snippet": "Olmo 3 7B Think is a research-oriented language model in the Olmo family designed for advanced reasoning and instruction-driven tasks. It excels at multi-step problem solving, logical inference, and maintaining coherent conversational context."
+    },
+    {
+      "title": "allenai/olmo-3-7b • LM Studio",
+      "url": "https://lmstudio.ai/models/allenai/olmo-3-7b",
+      "snippet": "Olmo3 7B by AllenAI AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of Open language models designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints, and associated training details ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Machine unlearning with Olmo-7B Researchers used Olmo-7B as a testbed for developing machine unlearning methods—removing specific data influence without retraining from scratch."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    }
+  ]
+}

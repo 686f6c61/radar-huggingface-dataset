@@ -4,8 +4,8 @@
   "slug": "maanka2-audio8-tts-preview-0-1b-moss",
   "author": "maanka2",
   "url": "https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b-moss",
-  "created_at": "2026-08-25T15:14:29.000Z",
-  "updated_at": "2026-08-25T15:15:02.000Z",
+  "created_at": "2026-08-25T16:14:52.000Z",
+  "updated_at": "2026-08-25T16:15:30.000Z",
   "license": "audio8-community-license-v1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -48,8 +48,8 @@
   "trending_score": 0,
   "parameters": 55197760,
   "parameters_human": "55.2M",
-  "storage_bytes": 218258024,
-  "storage_human": "218 MB",
+  "storage_bytes": 130335456,
+  "storage_human": "130 MB",
   "base_model": null,
   "formats": [
     "safetensors"

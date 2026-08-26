@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Alicericci/grounded-language-reading",
+  "slug": "alicericci-grounded-language-reading",
+  "author": "Alicericci",
+  "url": "https://huggingface.co/Alicericci/grounded-language-reading",
+  "created_at": "2026-08-26T03:31:02.000Z",
+  "updated_at": "2026-08-26T03:31:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "critical",
+    "graphic-visual",
+    "grounded-language",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "latex-neurips",
+    "long-detailed",
+    "numeric-bibtex",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alice AI (AI model family) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alice_AI_(AI_model_family)",
+      "snippet": "Alice AI is a neural network family developed by the Russian company Yandex LLC. Alice AI can create and revise texts, generate new ideas and capture the context of the conversation with the user."
+    },
+    {
+      "title": "Examples and Demonstrations | eric-ai-lab/GRIT | DeepWiki",
+      "url": "https://deepwiki.com/eric-ai-lab/GRIT/1.2-examples-and-demonstrations",
+      "snippet": "Examples and Demonstrations Relevant source files This page provides visual examples and demonstrations of the GRIT (Grounded Reasoning with Texts and Images) system in action. The examples showcase how GRIT enhances multimodal large language models with grounded reasoning capabilities, particularly for visual grounding tasks involving bounding box coordinate generation and processing. For ..."
+    },
+    {
+      "title": "What Is a Grounded Language Model? FutureAGI Guide (2026)",
+      "url": "https://futureagi.com/glossary/grounded-language-model/",
+      "snippet": "What Is a Grounded Language Model? A grounded language model is a language model whose answers are constrained by retrieved documents, tool results, or other supplied evidence rather than only by parameters learned during training. In RAG systems, it shows up in the generation step after retrieval and before the final answer is sent."
+    },
+    {
+      "title": "GroundingGPT:Language Enhanced Multi-modal Grounding Model",
+      "url": "https://arxiv.org/abs/2401.06071",
+      "snippet": "Multi-modal large language models have demonstrated impressive performance across various tasks in different modalities. However, existing multi-modal models primarily emphasize capturing global information within each modality while neglecting the importance of perceiving local information across modalities. Consequently, these models lack the ability to effectively understand the fine ..."
+    },
+    {
+      "title": "[2303.00855] Grounded Decoding: Guiding Text Generation with Grounded ...",
+      "url": "https://arxiv.org/abs/2303.00855",
+      "snippet": "Recent progress in large language models (LLMs) has demonstrated the ability to learn and leverage Internet-scale knowledge through pre-training with autoregressive models. Unfortunately, applying such models to settings with embodied agents, such as robots, is challenging due to their lack of experience with the physical world, inability to parse non-language observations, and ignorance of ..."
+    }
+  ]
+}

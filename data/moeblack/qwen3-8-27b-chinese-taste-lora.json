@@ -5,7 +5,7 @@
   "author": "Moeblack",
   "url": "https://huggingface.co/Moeblack/Qwen3.8-27B-chinese-taste-lora",
   "created_at": "2026-08-23T13:06:00.000Z",
-  "updated_at": "2026-08-23T14:06:57.000Z",
+  "updated_at": "2026-08-25T18:52:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
   "parameters_human": "637.5M",
   "storage_bytes": 6456693291,
   "storage_human": "6.5 GB",
-  "base_model": "Qwen/Qwen3.8-27B",
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B",
   "formats": [
     "gguf",
     "safetensors"

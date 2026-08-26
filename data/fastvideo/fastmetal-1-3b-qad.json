@@ -5,7 +5,7 @@
   "author": "FastVideo",
   "url": "https://huggingface.co/FastVideo/FastMetal-1.3B-QAD",
   "created_at": "2026-08-10T08:23:53.000Z",
-  "updated_at": "2026-08-19T19:05:51.000Z",
+  "updated_at": "2026-08-25T16:52:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",

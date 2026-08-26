@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "protonx-models/t5-small-pretrain-vks",
+  "slug": "protonx-models-t5-small-pretrain-vks",
+  "author": "protonx-models",
+  "url": "https://huggingface.co/protonx-models/t5-small-pretrain-vks",
+  "created_at": "2026-08-26T07:46:08.000Z",
+  "updated_at": "2026-08-26T07:46:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "vietnamese",
+    "legal",
+    "continual-pretraining",
+    "domain-adaptive-pretraining",
+    "vi",
+    "base_model:VietAI/vit5-base",
+    "base_model:finetune:VietAI/vit5-base",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62538240,
+  "parameters_human": "62.5M",
+  "storage_bytes": 250988730,
+  "storage_human": "251 MB",
+  "base_model": "VietAI/vit5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google-t5/t5-small · Hugging Face",
+      "url": "https://huggingface.co/google-t5/t5-small",
+      "snippet": "Our text-to-text framework allows us to use the same model, loss function, and hyperparameters on any NLP task. T5-Small is the checkpoint with 60 million parameters."
+    },
+    {
+      "title": "protonx-models (ProtonX) - Hugging Face",
+      "url": "https://huggingface.co/protonx-models",
+      "snippet": "Org profile for ProtonX on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "t5x/docs/usage/pretrain.md at main · google-research/t5x",
+      "url": "https://github.com/google-research/t5x/blob/main/docs/usage/pretrain.md",
+      "snippet": "A list of all the available pre-trained models (with model checkpoints and Gin config files) are available in the Models documentation. For the example run, you will use the T5 1.1 Small model."
+    },
+    {
+      "title": "Pretraining a model - Read the Docs",
+      "url": "https://t5x.readthedocs.io/en/latest/usage/pretrain.html",
+      "snippet": "A list of all the available pre-trained models (with model checkpoints and Gin config files) are available in the Models documentation. For the example run, you will use the T5 1.1 Small model."
+    },
+    {
+      "title": "t5x/t5x/examples/scalable_t5/umt5/pretrain_small.gin at main - GitHub",
+      "url": "https://github.com/google-research/t5x/blob/main/t5x/examples/scalable_t5/umt5/pretrain_small.gin",
+      "snippet": "Contribute to google-research/t5x development by creating an account on GitHub."
+    }
+  ]
+}

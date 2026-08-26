@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MoshinAli/iccit2026-crop-disease-results",
+  "slug": "moshinali-iccit2026-crop-disease-results",
+  "author": "MoshinAli",
+  "url": "https://huggingface.co/MoshinAli/iccit2026-crop-disease-results",
+  "created_at": "2026-08-26T07:06:34.000Z",
+  "updated_at": "2026-08-26T07:06:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77987903,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Powered Crop Care: Transforming Farming with Disease ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/389145834_AI-Powered_Crop_Care_Transforming_Farming_with_Disease_Detection_and_Sustainable_Practices",
+      "snippet": "Conclusions: The AI crop disorder detection platform offers a transformative solution for sustainable farming by using enabling early disease detection, decreasing pesticide use, and enhancing ..."
+    },
+    {
+      "title": "Image-based crop disease detection using machine learning",
+      "url": "https://bsppjournals.onlinelibrary.wiley.com/doi/10.1111/ppa.14006",
+      "snippet": "Image-based crop disease detection using machine learning provides a faster, more accurate alternative to traditional methods, with advancements in AI and imaging platforms expanding its effectivenes..."
+    },
+    {
+      "title": "Precision agriculture in the age of AI: A systematic ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772375525007221",
+      "snippet": "Artificial Intelligence (AI) has become a critical tool in modern precision agriculture, particularly in the detection of plant diseases and pests. This study provides a comprehensive review of current AI methodologies applied to crop disease detection, with a focus on machine learning models, dataset availability, and performance metrics. Our findings indicate that Convolutional Neural ..."
+    },
+    {
+      "title": "GitHub - eshwarkeswani/crop-disease-detection: About AI-powered plant ...",
+      "url": "https://github.com/eshwarkeswani/crop-disease-detection",
+      "snippet": "About AI-powered plant disease detection system using CNN deep learning. Identifies 38+ crop diseases from leaf images with high accuracy. Built with TensorFlow/Keras and Streamlit for real-time ag..."
+    },
+    {
+      "title": "AI learns to spot tomato diseases using nearly 9,000 field images",
+      "url": "https://phys.org/news/2026-08-ai-tomato-diseases-field-images.html",
+      "snippet": "A breakthrough in AI-driven crop disease detection is set to reduce harvest losses and chemical-related health risks, thanks to a first-of-its-kind tomato leaf dataset comprising almost 9,000 images."
+    }
+  ]
+}

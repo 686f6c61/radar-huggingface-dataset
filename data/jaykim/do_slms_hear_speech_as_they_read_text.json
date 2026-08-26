@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jaykim/Do_SLMs_Hear_Speech_as_They_Read_Text",
+  "slug": "jaykim-do_slms_hear_speech_as_they_read_text",
+  "author": "jaykim",
+  "url": "https://huggingface.co/jaykim/Do_SLMs_Hear_Speech_as_They_Read_Text",
+  "created_at": "2026-08-26T07:30:48.000Z",
+  "updated_at": "2026-08-26T07:35:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19614103961,
+  "storage_human": "19.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaykim9870/Do_SLMs_Hear_Speech_as_They_Read_Text - GitHub",
+      "url": "https://github.com/jaykim9870/Do_SLMs_Hear_Speech_as_They_Read_Text",
+      "snippet": "Contribute to jaykim9870/Do_SLMs_Hear_Speech_as_They_Read_Text development by creating an account on GitHub."
+    },
+    {
+      "title": "Do_SLMs_Hear_Speech_as_They_Read_Text/README.md at main - GitHub",
+      "url": "https://github.com/jaykim9870/Do_SLMs_Hear_Speech_as_They_Read_Text/blob/main/README.md",
+      "snippet": "Do Spoken Language Models Hear Speech as They Read Text? Bridging Structural Gaps Between Speech and Text Official implementation for Findings of EMNLP 2026."
+    },
+    {
+      "title": "[2608.22908] Do Spoken Language Models Hear Speech as They Read Text ...",
+      "url": "https://arxiv.org/abs/2608.22908",
+      "snippet": "Spoken Language Models (SLMs) generate textual responses directly from speech, offering an alternative to cascaded systems. Despite recent advances, existing SLMs still exhibit weaker instruction-following behavior and limited generalization across diverse tasks compared to text-based language models. Our analysis shows that speech and text representations in current SLMs remain weakly aligned ..."
+    },
+    {
+      "title": "Do Spoken Language Models Hear Speech as They Read Text ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/hyeonyu-kim-ab9baa18b_do-spoken-language-models-hear-speech-as-activity-7497834342807724032-EyqY",
+      "snippet": "Happy to share that our paper, \"Do Spoken Language Models Hear Speech as They Read Text? Bridging Structural Gaps Between Speech and Text,\" has been accepted to #EMNLP2026 Findings! 🎉 In ..."
+    },
+    {
+      "title": "Quantized Models for deepseek-ai/DeepSeek-V4-Flash-0731 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "Explore machine learning models. rdtand/DeepSeek-V4-Flash-0731-PrismaQuant-AQUA-gridbook-87GB-spark-vllm"
+    }
+  ]
+}

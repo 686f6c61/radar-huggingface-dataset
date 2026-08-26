@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "orca-zhang/ncnn",
+  "slug": "orca-zhang-ncnn",
+  "author": "orca-zhang",
+  "url": "https://huggingface.co/orca-zhang/ncnn",
+  "created_at": "2026-04-27T18:07:03.000Z",
+  "updated_at": "2026-08-26T07:40:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5826732310,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orca-zhang/ncnn · Hugging Face",
+      "url": "https://huggingface.co/orca-zhang/ncnn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orca-zhang/ncnn at main - Hugging Face",
+      "url": "https://huggingface.co/orca-zhang/ncnn/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orca-zhang · GitHub",
+      "url": "https://github.com/orca-zhang",
+      "snippet": "[AI Infra Architect • LLM Inference • Systems Performance • Agent Runtime] Open to new opportunities. Contact: orca.zhang@yahoo.com - orca-zhang"
+    },
+    {
+      "title": "GitHub - Tencent/ncnn: ncnn is a high-performance neural network ...",
+      "url": "https://github.com/Tencent/ncnn",
+      "snippet": "Model and Workload Coverage ncnn is still strong for classic and mobile CNN workloads, but current usage is broader than CNN-only deployment. Classification and backbones: VGG, AlexNet, GoogleNet, Inception, ResNet, DenseNet, SENet, SqueezeNet, MobileNet, ShuffleNet, MNasNet."
+    },
+    {
+      "title": "ncnn - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tencent/ncnn",
+      "snippet": "ncnn is a high-performance neural network inference computing framework optimized for mobile platforms. ncnn is deeply considerate about deployment and uses on mobile phones from the beginning of design. ncnn does not have third-party dependencies. It is cross-platform and runs faster than all known open-source frameworks on mobile phone cpu."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
   "created_at": "2026-08-11T13:26:29.000Z",
-  "updated_at": "2026-08-23T02:18:10.000Z",
+  "updated_at": "2026-08-26T10:16:16.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 25,
-  "downloads_30d": 136713,
+  "downloads_30d": 153790,
   "trending_score": 8,
   "parameters": 31577940288,
   "parameters_human": "31.58B",

@@ -5,7 +5,7 @@
   "author": "DeKUT-DSAIL",
   "url": "https://huggingface.co/DeKUT-DSAIL/efficientnetv2-xl-cifar10-upsample",
   "created_at": "2026-08-14T12:31:19.000Z",
-  "updated_at": "2026-08-14T13:04:35.000Z",
+  "updated_at": "2026-08-25T09:45:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 207628642,
   "parameters_human": "207.6M",

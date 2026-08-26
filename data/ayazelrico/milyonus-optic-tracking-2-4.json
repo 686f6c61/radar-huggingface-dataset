@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ayazelrico/Milyonus-Optic-Tracking-2.4",
+  "slug": "ayazelrico-milyonus-optic-tracking-2-4",
+  "author": "ayazelrico",
+  "url": "https://huggingface.co/ayazelrico/Milyonus-Optic-Tracking-2.4",
+  "created_at": "2026-08-26T03:12:51.000Z",
+  "updated_at": "2026-08-26T03:12:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Milyonus Optic Tracking 2.4",
+      "url": "https://www.milyonus.com/optic-tracking",
+      "snippet": "Real-time, fully on-device facial optic tracking for the browser — 478-point face mesh, 3D head pose, multi-face tracking, and focus scoring, all processed locally."
+    },
+    {
+      "title": "Milyonus Optic Tracking 2.4 - GitHub",
+      "url": "https://github.com/milyonus/Milyonus-Optic-Tracking-2.4-Second-One",
+      "snippet": "Real-time, fully on-device facial optic tracking for the browser: a 478-point face mesh, 3D head pose, per-face confidence scoring, multi-face tracking with persistent IDs, and a focus-tracking system that samples and reports attention once per second."
+    },
+    {
+      "title": "Home - Ayazelrico | Kingpin of Milyonuss",
+      "url": "https://www.ayazelrico.com/",
+      "snippet": "Explore Ayazelrico&#x27;s world of technology, entrepreneurship, and AI innovation. Discover projects, insights, and the future vision behind Milyonuss. Home - Ayazelrico"
+    },
+    {
+      "title": "Ayazelrico sPlus - Co-Founder & CEO @Milyonus | LinkedIn",
+      "url": "https://tr.linkedin.com/in/ayazelrico/tr",
+      "snippet": "Co-Founder &amp; CEO @Milyonus · Kurumsal işe alım süreçlerini yeniden inşa eden bir platform: Milyonus. HR ekiplerinin haftalarca süren mülakat yükü, artık dakikalar içinde tamamlanıyor. AI ajanları görüşmeyi yönetiyor, veriyi analiz ediyor, karar mekanizmasını hızlandırıyor: ölçeklenebilir, önyargısız, tamamen veri odaklı. Odak alanım: agentic AI sistemleri ..."
+    },
+    {
+      "title": "Your mind can now be read from your eyes. This is quite scary. Milyonus ...",
+      "url": "https://www.linkedin.com/posts/ayazhamzaaltay_your-mind-can-now-be-read-from-your-eyes-activity-7495906217219743744-irSj",
+      "snippet": "Milyonus // Optic Tracker V2.4 A closed-source model with quantized landmark tracking. In a live interview it watches every micro-expression on your face and builds your real-time emotional map in ..."
+    }
+  ]
+}

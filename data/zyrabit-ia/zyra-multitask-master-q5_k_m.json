@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Zyrabit-IA/zyra-multitask-master-Q5_K_M",
+  "slug": "zyrabit-ia-zyra-multitask-master-q5_k_m",
+  "author": "Zyrabit-IA",
+  "url": "https://huggingface.co/Zyrabit-IA/zyra-multitask-master-Q5_K_M",
+  "created_at": "2026-08-26T03:06:13.000Z",
+  "updated_at": "2026-08-26T03:06:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "zyrabit",
+    "sovereign-ai",
+    "slm",
+    "q5_k_m",
+    "qwen2.5",
+    "tenstorrent-accelerated",
+    "release-v1.0.0-sovereign",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:quantized:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2224814272,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nosoyprogramad0r/zyrabit-slm: Sovereign AI Infrastructure for ...",
+      "url": "https://github.com/nosoyprogramad0r/zyrabit-slm",
+      "snippet": "What is this? Zyrabit SLM is a production-grade, local AI stack that lets you run a private LLM assistant against your own documents without sending sensitive data to any external service."
+    },
+    {
+      "title": "GitHub - Zyrabit-tech/zyrabit-SLM: Sovereign AI Infrastructure for ...",
+      "url": "https://github.com/Zyrabit-tech/zyrabit-SLM",
+      "snippet": "Zyrabit SLM Secure Suite es una solución de IA local que combina un modelo de lenguaje pequeño (Small Language Models - SLMs) con un motor de recuperación‑aumentada (RAG) y una capa de Zero‑Trust."
+    },
+    {
+      "title": "zyrabitcore/zyrabit-slm - Docker Image",
+      "url": "https://hub.docker.com/r/zyrabitcore/zyrabit-slm",
+      "snippet": "Zyrabit SLM is a production-ready local AI stack designed for organizations that prioritize data sovereignty. It enables high-performance inference, knowledge retrieval (RAG), and security scrubbing without ever sending a single byte to the public cloud."
+    },
+    {
+      "title": "Zyrabit — Sovereign AI Infrastructure",
+      "url": "https://www.zyrabit.co.uk/",
+      "snippet": "A complete Sovereign AI stack — small language model, vector store, redaction layer and observability — running on your infrastructure. No external network calls, no telemetry, no data leaves your perimeter."
+    },
+    {
+      "title": "Zyrabit SLM | Zyrabit Docs",
+      "url": "https://docs.zyrabit.com/docs/intro/",
+      "snippet": "Zyrabit SLM is a production-grade Small Language Model (SLM) orchestration stack designed for on-premise and private cloud environments. It provides a containerized architecture to deploy, manage, and scale local AI capabilities while maintaining strict data privacy and network isolation."
+    }
+  ]
+}

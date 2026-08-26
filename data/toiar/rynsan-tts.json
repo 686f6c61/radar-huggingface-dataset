@@ -5,9 +5,9 @@
   "author": "toiar",
   "url": "https://huggingface.co/toiar/Rynsan-TTS",
   "created_at": "2026-08-22T19:10:32.000Z",
-  "updated_at": "2026-08-23T18:45:09.000Z",
-  "license": "cc-by-4.0",
-  "license_family": "oss",
+  "updated_at": "2026-08-25T14:05:10.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [
@@ -39,11 +39,11 @@
     "pbv",
     "en",
     "hi",
-    "license:cc-by-4.0",
+    "license:cc-by-nc-4.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 612577288,
   "parameters_human": "612.6M",
@@ -55,8 +55,8 @@
   ],
   "is_conversational": false,
   "gated": true,
-  "removed": true,
-  "removed_at": "2026-08-25T06:00:55.840Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

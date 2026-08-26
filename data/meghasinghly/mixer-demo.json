@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "meghasinghly/mixer-demo",
+  "slug": "meghasinghly-mixer-demo",
+  "author": "meghasinghly",
+  "url": "https://huggingface.co/meghasinghly/mixer-demo",
+  "created_at": "2026-08-26T07:08:27.000Z",
+  "updated_at": "2026-08-26T07:08:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mixer AI",
+      "url": "https://mixerai.org/",
+      "snippet": "All top AI models in 1 service. Pay-as-you go!"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Image Mixer Demo - a Hugging Face Space by lambdalabs",
+      "url": "https://huggingface.co/spaces/lambdalabs/image-mixer-demo",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "ModelsLab Playground - Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "AI Song Remixer - Remix, Mashup & Vary Any Track | Loudly",
+      "url": "https://www.loudly.com/ai-song-remixer",
+      "snippet": "Turn any song into fresh remixes, mashups and variations with the AI Song Remixer. Rights-safe and royalty-free, powered by AI."
+    }
+  ]
+}

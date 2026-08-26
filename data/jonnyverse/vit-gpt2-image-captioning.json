@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 15224005991,
-  "storage_human": "15.2 GB",
+  "storage_bytes": 3225260527,
+  "storage_human": "3.2 GB",
   "base_model": "nlpconnect/vit-gpt2-image-captioning",
   "formats": [
     "onnx"

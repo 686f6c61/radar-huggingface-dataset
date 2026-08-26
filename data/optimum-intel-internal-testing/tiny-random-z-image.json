@@ -5,7 +5,7 @@
   "author": "optimum-intel-internal-testing",
   "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-z-image",
   "created_at": "2026-08-24T20:59:11.000Z",
-  "updated_at": "2026-08-24T21:12:26.000Z",
+  "updated_at": "2026-08-25T19:35:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 706144,
   "parameters_human": "706144",

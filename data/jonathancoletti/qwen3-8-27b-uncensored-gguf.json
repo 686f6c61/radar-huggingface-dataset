@@ -5,7 +5,7 @@
   "author": "JonathanColetti",
   "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
   "created_at": "2026-08-14T03:43:36.000Z",
-  "updated_at": "2026-08-25T04:10:39.000Z",
+  "updated_at": "2026-08-26T00:38:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,13 +33,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 726,
-  "downloads_30d": 1525645,
-  "trending_score": 249,
+  "likes": 732,
+  "downloads_30d": 1620754,
+  "trending_score": 242,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 248417581600,
-  "storage_human": "248.4 GB",
+  "storage_bytes": 251029000064,
+  "storage_human": "251.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

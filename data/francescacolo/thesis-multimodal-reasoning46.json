@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "francescacolo/thesis-multimodal-reasoning46",
+  "slug": "francescacolo-thesis-multimodal-reasoning46",
+  "author": "francescacolo",
+  "url": "https://huggingface.co/francescacolo/thesis-multimodal-reasoning46",
+  "created_at": "2026-08-26T07:17:25.000Z",
+  "updated_at": "2026-08-26T07:17:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome-Reasoning-Foundation-Models - GitHub",
+      "url": "https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models",
+      "snippet": "Awesome-Reasoning-Foundation-Models survey.pdf | A curated list of awesome large AI models, or foundation models, for reasoning. We organize the current foundation models into three categories: language foundation models, vision foundation models, and multimodal foundation models."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 157 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "GitHub - jluite/Awesome-Multimodal-Reasoning: Collection of papers and ...",
+      "url": "https://github.com/jluite/Awesome-Multimodal-Reasoning",
+      "snippet": "Collection of papers and resources on how to unlock reasoning abilities under multimodal settings. Animation from ViperGPT (Surís et al.) Consider how difficult it would be to study from a book that lacks any figures, diagrams or tables. We enhance our learning ability when we combine different data modalities, such as vision, language, and audio [1]. Recently, large language models (LLMs ..."
+    },
+    {
+      "title": "unijenamechatronics/paper_014615713_multimodal_reasoning - Hugging Face",
+      "url": "https://huggingface.co/unijenamechatronics/paper_014615713_multimodal_reasoning",
+      "snippet": "The full text is in paper_014615713_multimodal_reasoning.md."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

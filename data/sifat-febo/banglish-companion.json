@@ -5,7 +5,7 @@
   "author": "sifat-febo",
   "url": "https://huggingface.co/sifat-febo/banglish-companion",
   "created_at": "2026-03-15T03:06:03.000Z",
-  "updated_at": "2026-08-23T17:57:47.000Z",
+  "updated_at": "2026-08-26T03:59:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,11 +41,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1939,
+  "downloads_30d": 1987,
   "trending_score": 0,
   "parameters": 1711378432,
   "parameters_human": "1.71B",
-  "storage_bytes": 13694053948,
+  "storage_bytes": 13694891799,
   "storage_human": "13.7 GB",
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [

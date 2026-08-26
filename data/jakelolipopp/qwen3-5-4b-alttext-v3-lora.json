@@ -5,7 +5,7 @@
   "author": "Jakelolipopp",
   "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-4B-AltText-v3-LORA",
   "created_at": "2026-08-24T12:24:00.000Z",
-  "updated_at": "2026-08-25T03:14:57.000Z",
+  "updated_at": "2026-08-25T13:20:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
     "qwen3_5",
     "trl",
     "en",
-    "base_model:unsloth/Qwen3.5-4B",
-    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -34,7 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 379134915,
   "storage_human": "379 MB",
-  "base_model": "unsloth/Qwen3.5-4B",
+  "base_model": "unsloth/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],

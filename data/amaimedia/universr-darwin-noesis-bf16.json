@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/UniverSR-Darwin-NOESIS-BF16",
   "created_at": "2026-04-26T06:42:11.000Z",
-  "updated_at": "2026-08-16T13:05:16.000Z",
+  "updated_at": "2026-08-25T15:40:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 23,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 57231302,
   "parameters_human": "57.2M",

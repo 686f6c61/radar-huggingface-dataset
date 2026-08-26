@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional",
+  "slug": "darshanshresthaa-tinyllama-lora-cyber-tune-non-instructional",
+  "author": "Darshanshresthaa",
+  "url": "https://huggingface.co/Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional",
+  "created_at": "2026-08-26T07:28:10.000Z",
+  "updated_at": "2026-08-26T07:28:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9022864,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for up to 3 epochs 1. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b), TinyLlama leverages various advances contributed by the open-source community, e.g., FlashAttention (Dao, 2023) and Lit-GPT (Lightning-AI, 2023), achieving better computational efficiency ..."
+    },
+    {
+      "title": "unsloth/tinyllama · Hugging Face",
+      "url": "https://huggingface.co/unsloth/tinyllama",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385v1",
+      "snippet": "Our TinyLlama is open-source, aimed at improving accessibility for researchers in language model research. We believe its excellent performance and compact size make it an attractive platform for researchers and practitioners in language model research."
+    },
+    {
+      "title": "tinyllama",
+      "url": "https://ollama.com/library/tinyllama",
+      "snippet": "TinyLlama is a compact model with only 1.1B parameters. This compactness allows it to cater to a multitude of applications demanding a restricted computation and memory footprint."
+    },
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0 - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

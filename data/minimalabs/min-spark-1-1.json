@@ -5,7 +5,7 @@
   "author": "MinimaLabs",
   "url": "https://huggingface.co/MinimaLabs/min-spark-1.1",
   "created_at": "2026-08-19T14:17:17.000Z",
-  "updated_at": "2026-08-21T18:38:00.000Z",
+  "updated_at": "2026-08-25T13:01:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

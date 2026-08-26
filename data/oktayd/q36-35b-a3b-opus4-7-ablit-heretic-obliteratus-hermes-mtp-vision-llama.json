@@ -5,7 +5,7 @@
   "author": "oktayd",
   "url": "https://huggingface.co/oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-Llama",
   "created_at": "2026-08-25T02:47:15.000Z",
-  "updated_at": "2026-08-25T16:01:29.000Z",
+  "updated_at": "2026-08-25T16:11:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

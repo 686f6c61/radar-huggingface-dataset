@@ -5,7 +5,7 @@
   "author": "justinchuby",
   "url": "https://huggingface.co/justinchuby/qwen2.5-14b-instruct-int4-zp-onnx",
   "created_at": "2026-08-14T05:43:20.000Z",
-  "updated_at": "2026-08-23T01:04:43.000Z",
+  "updated_at": "2026-08-26T05:29:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

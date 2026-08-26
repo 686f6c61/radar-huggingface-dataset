@@ -5,7 +5,7 @@
   "author": "gwd200",
   "url": "https://huggingface.co/gwd200/orena-frame-weights",
   "created_at": "2026-08-23T03:49:47.000Z",
-  "updated_at": "2026-08-24T07:21:58.000Z",
+  "updated_at": "2026-08-25T07:01:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 29912913032,
-  "storage_human": "29.9 GB",
+  "storage_bytes": 36475685576,
+  "storage_human": "36.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

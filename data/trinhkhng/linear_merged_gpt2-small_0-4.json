@@ -5,7 +5,7 @@
   "author": "trinhkhng",
   "url": "https://huggingface.co/trinhkhng/linear_Merged_gpt2-small_0.4",
   "created_at": "2026-08-25T10:54:45.000Z",
-  "updated_at": "2026-08-25T11:37:29.000Z",
+  "updated_at": "2026-08-25T12:21:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 995548416,
-  "storage_human": "996 MB",
+  "storage_bytes": 1493322624,
+  "storage_human": "1.5 GB",
   "base_model": "",
   "formats": [
     "safetensors"

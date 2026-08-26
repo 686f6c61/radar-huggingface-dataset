@@ -5,7 +5,7 @@
   "author": "isala404",
   "url": "https://huggingface.co/isala404/aloud",
   "created_at": "2026-08-26T03:44:02.000Z",
-  "updated_at": "2026-08-26T03:50:14.000Z",
+  "updated_at": "2026-08-26T04:14:07.000Z",
   "license": "mixed-per-file",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -22,13 +22,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 324016264,
   "parameters_human": "324.0M",
-  "storage_bytes": 2257520192,
-  "storage_human": "2.3 GB",
+  "storage_bytes": 9165972224,
+  "storage_human": "9.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

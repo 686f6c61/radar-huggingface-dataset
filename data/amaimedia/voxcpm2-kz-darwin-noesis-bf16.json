@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/VoxCPM2-KZ-Darwin-NOESIS-BF16",
   "created_at": "2026-04-26T06:50:47.000Z",
-  "updated_at": "2026-08-16T13:05:23.000Z",
+  "updated_at": "2026-08-25T15:40:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 39,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 2290004544,
   "parameters_human": "2.29B",

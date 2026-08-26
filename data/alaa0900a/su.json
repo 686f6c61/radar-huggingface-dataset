@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alaa0900a/Su",
+  "slug": "alaa0900a-su",
+  "author": "alaa0900a",
+  "url": "https://huggingface.co/alaa0900a/Su",
+  "created_at": "2026-08-26T07:37:45.000Z",
+  "updated_at": "2026-08-26T07:37:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alaa0900a-commits · GitHub",
+      "url": "https://github.com/alaa0900a-commits",
+      "snippet": "GitHub is where alaa0900a-commits builds software. Follow Joined Mar 31, 2026 Block or Report Block or report alaa0900a-commits Block user"
+    },
+    {
+      "title": "AI Model List - One Click Hangar",
+      "url": "https://oneclickhangar.com/forum/index.php?topic=535.0",
+      "snippet": "One Click Hangar » Downloads » AI Flightplans » James&#x27;s flightplans (Moderator: jamessolomon) » AI Model List « previous next » Print Pages: [1]"
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Real-time AI model tracking — pricing, benchmarks, releases."
+    },
+    {
+      "title": "AI Model Directory — 631 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 631 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    }
+  ]
+}

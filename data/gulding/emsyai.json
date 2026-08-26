@@ -5,21 +5,23 @@
   "author": "gulding",
   "url": "https://huggingface.co/gulding/EmsyAI",
   "created_at": "2026-08-24T07:11:40.000Z",
-  "updated_at": "2026-08-24T17:59:56.000Z",
+  "updated_at": "2026-08-26T08:08:40.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "emsyai",
   "languages": [
     "en"
   ],
   "tags": [
-    "emsyai",
     "gguf",
+    "llama.cpp",
+    "ollama",
+    "from-scratch",
+    "educational",
     "pytorch",
-    "custom-architecture",
-    "base_model:gulding/EmsyAI",
-    "base_model:quantized:gulding/EmsyAI",
+    "text-generation",
+    "en",
     "license:mit",
     "endpoints_compatible",
     "region:us"
@@ -29,8 +31,8 @@
   "trending_score": 0,
   "parameters": 100092672,
   "parameters_human": "100.1M",
-  "storage_bytes": 4930850802,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 6219231948,
+  "storage_human": "6.2 GB",
   "base_model": "gulding/EmsyAI",
   "formats": [
     "gguf"

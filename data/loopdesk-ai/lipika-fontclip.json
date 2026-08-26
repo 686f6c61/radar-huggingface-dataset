@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "loopdesk-ai/lipika-fontclip",
+  "slug": "loopdesk-ai-lipika-fontclip",
+  "author": "loopdesk-ai",
+  "url": "https://huggingface.co/loopdesk-ai/lipika-fontclip",
+  "created_at": "2026-08-26T07:10:45.000Z",
+  "updated_at": "2026-08-26T08:37:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "clip",
+    "lora",
+    "fonts",
+    "typography",
+    "indic",
+    "devanagari",
+    "tamil",
+    "telugu",
+    "kannada",
+    "malayalam",
+    "bengali",
+    "gurmukhi",
+    "gujarati",
+    "odia",
+    "text-to-font",
+    "retrieval",
+    "feature-extraction",
+    "en",
+    "base_model:openai/clip-vit-large-patch14",
+    "base_model:adapter:openai/clip-vit-large-patch14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8672324,
+  "storage_human": "9 MB",
+  "base_model": "openai/clip-vit-large-patch14",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loopdesk-ai/lipika · Hugging Face",
+      "url": "https://huggingface.co/loopdesk-ai/lipika",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Loopdesk-AI/lipika: Lipika (लिपिका) — Indic font recognizer ...",
+      "url": "https://github.com/loopdesk-ai/lipika",
+      "snippet": "Lipika (लिपिका) — Indic font recognizer: image of text → font family, weight, script + WOFF2 URL. 563 families, 13 scripts. - Loopdesk-AI/lipika"
+    },
+    {
+      "title": "loopdesk-ai/lipika at main - Hugging Face",
+      "url": "https://huggingface.co/loopdesk-ai/lipika/tree/main",
+      "snippet": "like 2 Follow Loopdesk AI 1 Image Classification PyTorch Safetensors 17 languages fontnet font-identification font-recognition indic typography devanagari tamil bengali telugu ocr convnext arxiv:1507.03196 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main lipika Ctrl+K Ctrl+K 1 contributor History:13 ..."
+    },
+    {
+      "title": "loopdesk · GitHub",
+      "url": "https://github.com/Loopdesk-AI/",
+      "snippet": "loopdesk AI first video editor 2 followers India https://loopdesk.ai anil@loopdesk.ai Overview Repositories 3 Projects Packages People"
+    },
+    {
+      "title": "Loopdesk: The World&#x27;s First Truly Agentic Video Editor",
+      "url": "https://loopdesk.ai/",
+      "snippet": "Loopdesk is an agentic AI video editor that automatically cuts, captions, adds transitions, and cleans up footage, letting creators focus on storytelling instead of technical editing. Upload a video, describe what you want in plain English, and Loopdesk&#x27;s AI handles everything from rough cuts to final polish, including silence removal, multi-speaker detection, and one-click distribution to ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
   "created_at": "2026-03-10T18:32:14.000Z",
-  "updated_at": "2026-08-24T23:48:09.000Z",
+  "updated_at": "2026-08-25T15:48:50.000Z",
   "license": "nvidia-nemotron-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -50,7 +50,7 @@
     "region:us"
   ],
   "likes": 423,
-  "downloads_30d": 981484,
+  "downloads_30d": 1027939,
   "trending_score": 0,
   "parameters": 123611012096,
   "parameters_human": "123.61B",

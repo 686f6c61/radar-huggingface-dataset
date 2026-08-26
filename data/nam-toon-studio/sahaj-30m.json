@@ -5,7 +5,7 @@
   "author": "Nam-toon-studio",
   "url": "https://huggingface.co/Nam-toon-studio/sahaj-30m",
   "created_at": "2026-08-25T11:41:45.000Z",
-  "updated_at": "2026-08-25T11:49:44.000Z",
+  "updated_at": "2026-08-25T14:44:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,6 +17,7 @@
   "tags": [
     "pytorch",
     "safetensors",
+    "gguf",
     "sahaj",
     "byte-level",
     "language-model",
@@ -33,6 +34,7 @@
     "en",
     "license:mit",
     "model-index",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -40,10 +42,11 @@
   "trending_score": 0,
   "parameters": 30072960,
   "parameters_human": "30.1M",
-  "storage_bytes": 239959307,
-  "storage_human": "240 MB",
+  "storage_bytes": 384206824,
+  "storage_human": "384 MB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": false,

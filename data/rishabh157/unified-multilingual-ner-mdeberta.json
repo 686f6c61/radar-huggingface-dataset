@@ -5,7 +5,7 @@
   "author": "Rishabh157",
   "url": "https://huggingface.co/Rishabh157/unified-multilingual-ner-mdeberta",
   "created_at": "2026-08-14T11:39:09.000Z",
-  "updated_at": "2026-08-20T05:01:02.000Z",
+  "updated_at": "2026-08-26T09:08:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -80,7 +80,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 278291807,
   "parameters_human": "278.3M",

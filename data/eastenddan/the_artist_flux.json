@@ -5,7 +5,7 @@
   "author": "eastenddan",
   "url": "https://huggingface.co/eastenddan/the_artist_flux",
   "created_at": "2026-08-18T19:29:10.000Z",
-  "updated_at": "2026-08-18T19:29:26.000Z",
+  "updated_at": "2026-08-26T01:14:05.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 10,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

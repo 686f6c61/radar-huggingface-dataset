@@ -5,7 +5,7 @@
   "author": "PollardWeights",
   "url": "https://huggingface.co/PollardWeights/Qwen3.8-27B-Pollard",
   "created_at": "2026-08-24T16:18:15.000Z",
-  "updated_at": "2026-08-24T22:33:01.000Z",
+  "updated_at": "2026-08-25T08:01:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,12 +31,12 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 28730008992,
-  "storage_human": "28.7 GB",
+  "storage_bytes": 51161009152,
+  "storage_human": "51.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

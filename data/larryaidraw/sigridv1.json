@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/SigridV1",
+  "slug": "larryaidraw-sigridv1",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/SigridV1",
+  "created_at": "2026-08-26T07:34:45.000Z",
+  "updated_at": "2026-08-26T07:36:56.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228468076,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LarryAIDraw/V1 · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/V1",
+      "snippet": "LarryAIDraw / V1 like 0 License:creativeml-openrail-m Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "LarryAIDraw (LarryChen) - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/datasets",
+      "snippet": "LarryAIDraw Follow wangwangwangchao&#x27;s profile pictureberrysmithy&#x27;s profile pictureAsAHuman&#x27;s profile picture 70 followers · 0 following https://larry.fanbox.cc/"
+    },
+    {
+      "title": "Sigrid | V1 | PromptHero",
+      "url": "https://prompthero.com/ai-models/sigrid-download/v1",
+      "snippet": "A model of Sigrid NEW: Turn your favorite creations into real products! 👕"
+    },
+    {
+      "title": "Sigrid - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/5010aae5364ba9116e2c67083ee02ffe",
+      "snippet": "Meet Sigrid model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "シグウィン（原神） / Sigewinne (Genshin Impact)... | TensorHub Art",
+      "url": "https://tensorhub.art/models/913994099843941808",
+      "snippet": "Download シグウィン（原神） / Sigewinne (Genshin Impact) 2outfit - free LORA Illustrious AI model on TENSORHUB ART. By user_874754251056777575"
+    }
+  ]
+}

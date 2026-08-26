@@ -5,7 +5,7 @@
   "author": "Denn231",
   "url": "https://huggingface.co/Denn231/VV-classifier-2.0-order-v1.8",
   "created_at": "2026-08-24T23:13:13.000Z",
-  "updated_at": "2026-08-24T23:13:23.000Z",
+  "updated_at": "2026-08-25T13:07:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 128388921,
   "parameters_human": "128.4M",
-  "storage_bytes": 513580156,
-  "storage_human": "514 MB",
+  "storage_bytes": 1027160312,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

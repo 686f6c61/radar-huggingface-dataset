@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "artokun/nic0le-zimage",
+  "slug": "artokun-nic0le-zimage",
+  "author": "artokun",
+  "url": "https://huggingface.co/artokun/nic0le-zimage",
+  "created_at": "2026-08-26T07:20:08.000Z",
+  "updated_at": "2026-08-26T07:21:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "z-image",
+    "zimage-turbo",
+    "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 850641080,
+  "storage_human": "851 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Art Generator: Premium Image & Video Models in One Place | ArtAny",
+      "url": "https://www.artany.ai/",
+      "snippet": "ArtAny AI is an all-in-one AI creative platform for image, video, audio, and beyond. Start with complimentary credits; subscriptions and credit packs unlock more generation capacity and features."
+    },
+    {
+      "title": "Z-Image Model: Alibaba&#x27;s Fast, Open-Source AI for Image Generation",
+      "url": "https://a2e.ai/z-image-model/",
+      "snippet": "Z-Image is Alibaba&#x27;s open-source AI image model built for speed and creative freedom. Learn what it&#x27;s good at, how it works, and how to use Z-Image on A2E."
+    },
+    {
+      "title": "Z-Image - Free AI Image Generator | Lightning Fast",
+      "url": "https://z-image.me/en",
+      "snippet": "Z-Image is a free AI image generation platform. Sign in to create high-quality images in seconds with fast, easy-to-use tools."
+    },
+    {
+      "title": "GitHub - artokun/comfyui-mcp: Local-first, agent-native control plane ...",
+      "url": "https://github.com/artokun/comfyui-mcp",
+      "snippet": "The local-first, agent-native control plane for ComfyUI. An MCP server plus a live sidebar agent that generates images, video and audio, authors and runs workflows, manages models and custom nodes, and edits your live ComfyUI graph in natural language. Bring whatever model you have: Claude or ..."
+    },
+    {
+      "title": "AI Fashion Model Generator — Lingerie & Apparel | Z-Image",
+      "url": "https://zimageai.art/en/ai-model",
+      "snippet": "Generate fresh, photorealistic AI fashion models from a text prompt. Pick ethnicity, body type, pose and lighting. Built for lingerie, boudoir and apparel sellers."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "AltansukhP",
   "url": "https://huggingface.co/AltansukhP/ppo-LunarLander-v3",
   "created_at": "2026-08-25T13:17:39.000Z",
-  "updated_at": "2026-08-25T13:20:53.000Z",
+  "updated_at": "2026-08-26T07:49:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -16,6 +16,7 @@
     "LunarLander-v3",
     "deep-reinforcement-learning",
     "reinforcement-learning",
+    "deep-reinforcement-learning-leaderboard",
     "model-index",
     "region:us"
   ],

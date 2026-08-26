@@ -5,7 +5,7 @@
   "author": "DreamFoundries",
   "url": "https://huggingface.co/DreamFoundries/Qwen3-VL-4B-Instruct-3bit",
   "created_at": "2026-08-25T16:11:05.000Z",
-  "updated_at": "2026-08-25T16:12:44.000Z",
+  "updated_at": "2026-08-25T19:21:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

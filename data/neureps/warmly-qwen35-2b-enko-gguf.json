@@ -5,7 +5,7 @@
   "author": "neureps",
   "url": "https://huggingface.co/neureps/warmly-qwen35-2b-enko-gguf",
   "created_at": "2026-07-14T07:41:06.000Z",
-  "updated_at": "2026-08-24T23:23:04.000Z",
+  "updated_at": "2026-08-25T23:59:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 9379,
+  "downloads_30d": 10441,
   "trending_score": 0,
   "parameters": 1676674880,
   "parameters_human": "1.68B",
-  "storage_bytes": 24566705088,
-  "storage_human": "24.6 GB",
+  "storage_bytes": 24654053952,
+  "storage_human": "24.7 GB",
   "base_model": "neureps/Qwen3.5-2B-enko",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "Werea-co",
   "url": "https://huggingface.co/Werea-co/Werea-KVKK-PII-150M",
   "created_at": "2026-08-25T12:09:25.000Z",
-  "updated_at": "2026-08-25T12:09:32.000Z",
+  "updated_at": "2026-08-25T13:18:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -35,10 +35,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 149336843,
-  "parameters_human": "149.3M",
-  "storage_bytes": 597367461,
-  "storage_human": "597 MB",
+  "parameters": 149361451,
+  "parameters_human": "149.4M",
+  "storage_bytes": 1194833354,
+  "storage_human": "1.2 GB",
   "base_model": "ytu-ce-cosmos/modernbert-tr-base",
   "formats": [
     "safetensors"

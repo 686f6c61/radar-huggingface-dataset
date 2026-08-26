@@ -5,7 +5,7 @@
   "author": "avewright",
   "url": "https://huggingface.co/avewright/lobotomy-1b",
   "created_at": "2026-08-24T21:50:02.000Z",
-  "updated_at": "2026-08-25T01:55:44.000Z",
+  "updated_at": "2026-08-25T15:56:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 1348923520,
   "parameters_human": "1.35B",
-  "storage_bytes": 67483278368,
-  "storage_human": "67.5 GB",
+  "storage_bytes": 145721944992,
+  "storage_human": "145.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

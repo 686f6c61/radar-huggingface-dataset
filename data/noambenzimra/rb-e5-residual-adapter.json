@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NoamBenzimra/rb-e5-residual-adapter",
+  "slug": "noambenzimra-rb-e5-residual-adapter",
+  "author": "NoamBenzimra",
+  "url": "https://huggingface.co/NoamBenzimra/rb-e5-residual-adapter",
+  "created_at": "2026-08-26T07:26:18.000Z",
+  "updated_at": "2026-08-26T07:32:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-tabular",
+    "base_model:intfloat/e5-small-v2",
+    "base_model:adapter:intfloat/e5-small-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223600,
+  "storage_human": "223600 B",
+  "base_model": "intfloat/e5-small-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NoamBenzimra (Noam Benzimra) - Hugging Face",
+      "url": "https://huggingface.co/NoamBenzimra/datasets",
+      "snippet": "User profile of Noam Benzimra on Hugging Face"
+    },
+    {
+      "title": "intfloat/e5-base-v2 · Hugging Face",
+      "url": "https://huggingface.co/intfloat/e5-base-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Moonshot AI Unlocks 25% Transformer Compute Savings with Attention ...",
+      "url": "https://news.quantosei.com/2026/03/18/moonshot-ai-unveils-attention-residuals-for-25-transformer-compute-savings/",
+      "snippet": "The race for more powerful, yet efficient, artificial intelligence models just took a significant leap forward. Moonshot AI has unveiled a groundbreaking architectural component called Attention Residuals (AttnRes), promising to deliver up to a 25% reduction in Transformer compute costs. This isn&#x27;t just a technical tweak; it&#x27;s a fundamental reimagining of how deep neural networks process ..."
+    },
+    {
+      "title": "DRIFT: Residual Flow Adapter for VLMs",
+      "url": "https://api.emergentmind.com/papers/2606.05758",
+      "snippet": "DRIFT adapts vision-language models to decode continuous outputs using a residual flow adapter, enabling precise video grounding and robotic actions."
+    },
+    {
+      "title": "A Study of Residual Adapters for Multi-Domain Neural Machine ...",
+      "url": "https://aclanthology.org/2020.wmt-1.72/",
+      "snippet": "We contrast multiple implementations of this idea on two language pairs. Our main conclusions are that residual adapters provide a fast and cheap method for supervised multi-domain adaptation; our two variants prove as effective as the original adapter model, and open perspective to also make adapted models more robust to label domain errors."
+    }
+  ]
+}

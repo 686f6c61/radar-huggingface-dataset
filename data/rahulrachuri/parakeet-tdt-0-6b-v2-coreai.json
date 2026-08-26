@@ -5,7 +5,7 @@
   "author": "rahulrachuri",
   "url": "https://huggingface.co/rahulrachuri/parakeet-tdt-0.6b-v2-coreai",
   "created_at": "2026-08-11T05:46:37.000Z",
-  "updated_at": "2026-08-17T05:32:03.000Z",
+  "updated_at": "2026-08-25T15:15:47.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "coreai",
+    "coreai-aimodel",
     "parakeet",
     "tdt",
     "asr",
@@ -28,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

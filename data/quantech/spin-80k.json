@@ -5,7 +5,7 @@
   "author": "Quantech",
   "url": "https://huggingface.co/Quantech/spin-80k",
   "created_at": "2026-08-25T04:33:57.000Z",
-  "updated_at": "2026-08-25T05:15:17.000Z",
+  "updated_at": "2026-08-25T12:28:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 80112,
   "parameters_human": "80112",

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Brisk-Evolution-12B-v0.1-i1-GGUF",
   "created_at": "2026-08-25T11:20:02.000Z",
-  "updated_at": "2026-08-25T12:01:32.000Z",
+  "updated_at": "2026-08-25T12:54:02.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 11956539456,
   "parameters_human": "11.96B",
-  "storage_bytes": 75326685824,
-  "storage_human": "75.3 GB",
+  "storage_bytes": 137530422336,
+  "storage_human": "137.5 GB",
   "base_model": "ReadyArt/Brisk-Evolution-12B-v0.1",
   "formats": [
     "gguf"

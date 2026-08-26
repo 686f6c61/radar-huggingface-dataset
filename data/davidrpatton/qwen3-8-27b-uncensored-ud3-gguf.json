@@ -5,7 +5,7 @@
   "author": "DavidrPatton",
   "url": "https://huggingface.co/DavidrPatton/Qwen3.8-27B-Uncensored-UD3-GGUF",
   "created_at": "2026-08-25T16:50:50.000Z",
-  "updated_at": "2026-08-25T17:35:45.000Z",
+  "updated_at": "2026-08-26T03:45:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 12986896480,
+  "storage_bytes": 12988463875,
   "storage_human": "13.0 GB",
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored, Qwen/Qwen3.8-27B",
   "formats": [

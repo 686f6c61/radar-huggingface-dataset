@@ -5,7 +5,7 @@
   "author": "fromziro",
   "url": "https://huggingface.co/fromziro/Negative-v1.0",
   "created_at": "2026-08-25T23:41:27.000Z",
-  "updated_at": "2026-08-26T00:19:05.000Z",
+  "updated_at": "2026-08-26T01:47:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,7 +15,7 @@
   ],
   "tags": [
     "safetensors",
-    "custom_model",
+    "negative",
     "slm",
     "custom-architecture",
     "custom-tokenizer",
@@ -35,7 +35,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 67736,

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Omega-Evolution-27B-v2.2-i1-GGUF",
   "created_at": "2026-08-25T12:54:07.000Z",
-  "updated_at": "2026-08-25T14:03:53.000Z",
+  "updated_at": "2026-08-25T15:57:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471864448,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553864576,
+  "storage_human": "218.6 GB",
   "base_model": "ReadyArt/Omega-Evolution-27B-v2.2",
   "formats": [
     "gguf"

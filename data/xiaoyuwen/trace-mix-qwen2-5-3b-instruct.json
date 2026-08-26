@@ -5,7 +5,7 @@
   "author": "XiaoyuWen",
   "url": "https://huggingface.co/XiaoyuWen/TRACE-Mix-Qwen2.5-3B-Instruct",
   "created_at": "2026-08-25T11:23:37.000Z",
-  "updated_at": "2026-08-25T11:59:57.000Z",
+  "updated_at": "2026-08-25T12:21:57.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

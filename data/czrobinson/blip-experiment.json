@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Czrobinson/blip-experiment",
+  "slug": "czrobinson-blip-experiment",
+  "author": "Czrobinson",
+  "url": "https://huggingface.co/Czrobinson/blip-experiment",
+  "created_at": "2026-08-26T07:45:58.000Z",
+  "updated_at": "2026-08-26T07:46:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "It is used to instantiate a Blip model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Salesforce/blip-vqa-base Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "blip-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/blip-model",
+      "snippet": "A full-stack AI-powered image captioning app built with ReactJS (using Vite) and Flask. Users can upload images, and the app generates descriptive captions using Hugging Face&#x27;s BLIP model. Perfect for showcasing AI integration and web development skills in a mini-project."
+    },
+    {
+      "title": "BLIP Model Explained: How It&#x27;s Revolutionizing Vision-Language Models in AI",
+      "url": "https://ml-digest.com/blip-bootstrapping-language-image-pre-training/",
+      "snippet": "This is the core problem that BLIP (Bootstrapping Language-Image Pre-training) sets out to solve in the world of AI. While earlier models could match an image"
+    },
+    {
+      "title": "BLIP - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.38.2/en/model_doc/blip",
+      "snippet": "BLIP Overview The BLIP model was proposed in BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation by Junnan Li, Dongxu Li, Caiming Xiong, Steven Hoi. BLIP is a model that is able to perform various multi-modal tasks including: Visual Question Answering Image-Text retrieval (Image-text matching) Image Captioning The abstract from the paper is ..."
+    },
+    {
+      "title": "Meet BLIP: The Vision-Language Model Powering Image Captioning",
+      "url": "https://pyimagesearch.com/2025/08/25/meet-blip-the-vision-language-model-powering-image-captioning/",
+      "snippet": "Discover how BLIP evolved from early captioning models to a powerful vision-language foundation model ready for real-world image captioning deployment."
+    }
+  ]
+}

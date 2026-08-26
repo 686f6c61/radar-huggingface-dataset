@@ -5,7 +5,7 @@
   "author": "trinhkhng",
   "url": "https://huggingface.co/trinhkhng/nearswap_Merged_gpt2_0.3",
   "created_at": "2026-08-04T09:23:34.000Z",
-  "updated_at": "2026-08-25T04:02:43.000Z",
+  "updated_at": "2026-08-25T15:28:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 581,
+  "downloads_30d": 983,
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 1493322624,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 1991096832,
+  "storage_human": "2.0 GB",
   "base_model": "",
   "formats": [
     "safetensors"

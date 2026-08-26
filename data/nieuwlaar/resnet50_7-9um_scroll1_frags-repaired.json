@@ -5,7 +5,7 @@
   "author": "Nieuwlaar",
   "url": "https://huggingface.co/Nieuwlaar/resnet50_7.9um_scroll1_frags-repaired",
   "created_at": "2026-08-25T18:28:08.000Z",
-  "updated_at": "2026-08-25T18:28:48.000Z",
+  "updated_at": "2026-08-25T20:12:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

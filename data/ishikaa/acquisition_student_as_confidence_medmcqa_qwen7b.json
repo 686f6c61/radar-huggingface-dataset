@@ -5,7 +5,7 @@
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b",
   "created_at": "2026-08-22T04:55:20.000Z",
-  "updated_at": "2026-08-23T03:07:12.000Z",
+  "updated_at": "2026-08-26T07:15:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 689,
+  "downloads_30d": 690,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 30473965624,
-  "storage_human": "30.5 GB",
+  "storage_bytes": 60936509352,
+  "storage_human": "60.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

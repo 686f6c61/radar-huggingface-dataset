@@ -5,7 +5,7 @@
   "author": "rockerBOO",
   "url": "https://huggingface.co/rockerBOO/moss-audio-8b-thinking-nvfp4-convrot-int8",
   "created_at": "2026-08-25T04:54:28.000Z",
-  "updated_at": "2026-08-25T08:39:40.000Z",
+  "updated_at": "2026-08-25T19:03:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "nvfp4",
     "int8",
     "base_model:OpenMOSS-Team/MOSS-Audio-8B-Thinking",
-    "base_model:finetune:OpenMOSS-Team/MOSS-Audio-8B-Thinking",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Audio-8B-Thinking",
     "license:apache-2.0",
     "region:us"
   ],

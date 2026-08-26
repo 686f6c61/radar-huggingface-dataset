@@ -31,10 +31,11 @@
     "arxiv:2509.18154",
     "arxiv:2403.11703",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 1097,
-  "downloads_30d": 445941,
+  "downloads_30d": 426719,
   "trending_score": 0,
   "parameters": 8695895280,
   "parameters_human": "8.70B",

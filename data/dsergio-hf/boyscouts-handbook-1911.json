@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dsergio-hf/boyscouts-handbook-1911",
+  "slug": "dsergio-hf-boyscouts-handbook-1911",
+  "author": "dsergio-hf",
+  "url": "https://huggingface.co/dsergio-hf/boyscouts-handbook-1911",
+  "created_at": "2026-08-26T07:41:08.000Z",
+  "updated_at": "2026-08-26T07:41:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436825,
+  "storage_human": "436825 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boy Scout Handbook 1911 - Project Gutenberg",
+      "url": "https://www.gutenberg.org/files/29558/29558-h/29558-h.htm",
+      "snippet": "{52 continued}. The material following {10}, up to the next {}, is on page 10, even if the next page number is not 11. Horizontal lines indicate the boundaries of segments such as advertisements or complex diagrams. BOY SCOUTS HANDBOOK The First Edition, 1911 BOY SCOUTS OF AMERICA Boy Scouts of America Official National Out SIGMUND EISNER New York Salesrooms 103 Fifth Avenue Red Bank. N. J ..."
+    },
+    {
+      "title": "Boy Scouts handbook : the original 1911 edition",
+      "url": "https://archive.org/details/boyscoutshandboo0000boys",
+      "snippet": "Publication date 2011 Topics Boy Scouts of America -- Handbooks, manuals, etc, Boy Scouts -- United States -- Handbooks, manuals, etc Publisher New York, N.Y. : Skyhorse Pub. Collection internetarchivebooks; printdisabled; inlibrary Contributor Internet Archive Language English Item Size 958.3M"
+    },
+    {
+      "title": "PDF BOY SCOUTS HANDBOOK - manmrk.net",
+      "url": "http://manmrk.net/tutorials/pda/b/PDF/Scouts/Boy_Scouts_Handbook-1911.pdf",
+      "snippet": "The First Edition, 1911 [Illustration: Boy Scouts at camp. (tr)]"
+    },
+    {
+      "title": "Boy Scouts Handbook The First Edition, 1911 - Archive.org",
+      "url": "https://archive.org/details/boyscoutshandboo29558gut",
+      "snippet": "Book from Project Gutenberg: Boy Scouts Handbook The First Edition, 1911 Library of Congress Classification: HS"
+    },
+    {
+      "title": "PDF Official National Out BOY SCOUTS OF AMERICA - trueprepper.com",
+      "url": "https://trueprepper.com/wp-content/uploads/Boy-Scout-Handbook-1911.pdf",
+      "snippet": "The Project Gutenberg EBook of Boy Scouts Handbook, by Boy Scouts of America This eBook is for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org"
+    }
+  ]
+}

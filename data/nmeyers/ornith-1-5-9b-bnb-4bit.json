@@ -5,7 +5,7 @@
   "author": "nmeyers",
   "url": "https://huggingface.co/nmeyers/Ornith-1.5-9B-bnb-4bit",
   "created_at": "2026-08-24T18:51:05.000Z",
-  "updated_at": "2026-08-24T18:53:55.000Z",
+  "updated_at": "2026-08-25T13:53:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,9 +14,11 @@
   "tags": [
     "safetensors",
     "qwen3_5_text",
-    "license:apache-2.0",
-    "4-bit",
     "bitsandbytes",
+    "4-bit",
+    "quantized",
+    "nf4",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -24,9 +26,9 @@
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 7652987865,
-  "storage_human": "7.7 GB",
-  "base_model": null,
+  "storage_bytes": 15615440601,
+  "storage_human": "15.6 GB",
+  "base_model": "nmeyers/Ornith-1.5-9B",
   "formats": [
     "safetensors"
   ],

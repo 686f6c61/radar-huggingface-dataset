@@ -5,7 +5,7 @@
   "author": "puwaer",
   "url": "https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-ream-200b",
   "created_at": "2026-08-09T06:39:22.000Z",
-  "updated_at": "2026-08-24T11:55:45.000Z",
+  "updated_at": "2026-08-26T08:52:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 120,
+  "downloads_30d": 240,
   "trending_score": 0,
   "parameters": 199914652711,
   "parameters_human": "199.91B",

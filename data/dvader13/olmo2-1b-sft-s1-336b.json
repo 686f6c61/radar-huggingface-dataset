@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dvader13/olmo2-1b-sft-s1-336b",
+  "slug": "dvader13-olmo2-1b-sft-s1-336b",
+  "author": "dvader13",
+  "url": "https://huggingface.co/dvader13/olmo2-1b-sft-s1-336b",
+  "created_at": "2026-08-26T03:35:48.000Z",
+  "updated_at": "2026-08-26T03:41:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29698542240,
+  "storage_human": "29.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/OLMo-2-1124-13B-RM · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-1124-13B-RM",
+      "snippet": "See OLMo 2 Preview Post-trained Models for the colleciton of the legacy models. Release Documentation OLMo-2 13B RM November 2024 is post-trained variant of the OLMo-2 13B November 2024 model, which has undergone supervised finetuning on an OLMo-specific variant of the Tülu 3 dataset and further DPO training on this dataset."
+    },
+    {
+      "title": "allenai/OLMo-2-0425-1B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-0425-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo 2: The best fully open language model to date | Ai2",
+      "url": "https://allenai.org/blog/olmo2",
+      "snippet": "Announcing OLMo 2 We introduce OLMo 2, a new family of 7B and 13B models trained on up to 5T tokens. These models are on par with or better than equivalently sized fully open models, and competitive with open-weight models such as Llama 3.1 on English academic benchmarks."
+    },
+    {
+      "title": "GitHub - mzyy1001/OLMo-SFT",
+      "url": "https://github.com/mzyy1001/OLMo-SFT",
+      "snippet": "An example script is provided for hosting an OLMo 2 model on Modal.com using the OpenAI API in ./scripts/olmo2_modal_openai.py. To run that: Follow the instructions under Getting Started in the Modal.com Guide to install the Modal library and command line tools. Follow the instructions under Secrets in the Modal.com Guide to create a Modal secret named \"example-secret-token\" that defines a ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

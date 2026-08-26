@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Exeaon/Exeaon1-Dzo-4B",
+  "slug": "exeaon-exeaon1-dzo-4b",
+  "author": "Exeaon",
+  "url": "https://huggingface.co/Exeaon/Exeaon1-Dzo-4B",
+  "created_at": "2026-08-08T04:02:05.000Z",
+  "updated_at": "2026-08-26T08:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "epure-runtime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "epure-runtime",
+    "gguf",
+    "exeaon",
+    "epure",
+    "compressed",
+    "quantized",
+    "edge",
+    "cpu",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 21199163745,
+  "storage_human": "21.2 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exeaon/Exeaon1-Dzo-4B · Hugging Face",
+      "url": "https://huggingface.co/Exeaon/Exeaon1-Dzo-4B",
+      "snippet": "Exeaon / Exeaon1-Dzo-4B like 0 Follow Exeaon 1 Text Generation English epure-runtime exeaon epure compressed quantized edge cpu License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Exeaon-Dzo-4B Quality Speed and footprint Usage Fine-tuning without decompressing Limitations Licence and attribution Citation"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=exeaon",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: exeaon Clear all"
+    },
+    {
+      "title": "Exeaon · GitHub",
+      "url": "https://github.com/ExeaonLM",
+      "snippet": "EXEAON Frontier models on the hardware you already own. At batch one, a language model reads every weight from memory to produce a single token. Arithmetic intensity is about 0.5 FLOP per byte, so generation speed is bandwidth divided by model size and the accelerator&#x27;s FLOP rating never enters the equation."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-4.0: Official repository for EXAONE 4.0 ...",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-4.0",
+      "snippet": "To pave the way for the agentic AI era, EXAONE 4.0 incorporates essential features such as agentic tool use, and its multilingual capabilities are extended to support Spanish in addition to English and Korean."
+    },
+    {
+      "title": "EXAONE 4 | Transformers",
+      "url": "https://transformers.ubitools.com/model_doc/exaone4/",
+      "snippet": "EXAONE 4.0 model is the language model, which integrates a Non-reasoning mode and Reasoning mode to achieve both the excellent usability of EXAONE 3.5 and the advanced reasoning abilities of EXAONE Deep. To pave the way for the agentic AI era, EXAONE 4.0 incorporates essential features such as agentic tool use, and its multilingual capabilities are extended to support Spanish in addition to ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Motif-Technologies",
   "url": "https://huggingface.co/Motif-Technologies/Motif-3-NVFP4",
   "created_at": "2026-08-08T02:50:47.000Z",
-  "updated_at": "2026-08-11T02:38:04.000Z",
+  "updated_at": "2026-08-26T10:10:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 28,
-  "downloads_30d": 2016,
+  "downloads_30d": 2025,
   "trending_score": 8,
   "parameters": 180078827398,
   "parameters_human": "180.08B",

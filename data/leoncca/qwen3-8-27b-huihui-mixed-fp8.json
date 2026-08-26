@@ -5,7 +5,7 @@
   "author": "leoncca",
   "url": "https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-Mixed-FP8",
   "created_at": "2026-08-18T11:56:12.000Z",
-  "updated_at": "2026-08-25T02:25:26.000Z",
+  "updated_at": "2026-08-25T22:41:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,12 +43,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 531,
+  "downloads_30d": 789,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 32929382752,
-  "storage_human": "32.9 GB",
+  "storage_bytes": 42697742912,
+  "storage_human": "42.7 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"

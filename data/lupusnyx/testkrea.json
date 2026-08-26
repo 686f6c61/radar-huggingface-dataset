@@ -5,7 +5,7 @@
   "author": "LupusNyx",
   "url": "https://huggingface.co/LupusNyx/TestKrea",
   "created_at": "2026-07-31T08:40:50.000Z",
-  "updated_at": "2026-08-24T14:27:09.000Z",
+  "updated_at": "2026-08-26T05:53:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 137,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 212688969604,
-  "storage_human": "212.7 GB",
+  "storage_bytes": 213260370420,
+  "storage_human": "213.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

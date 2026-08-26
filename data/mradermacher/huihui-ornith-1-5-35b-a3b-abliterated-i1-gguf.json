@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-i1-GGUF",
   "created_at": "2026-08-25T09:36:54.000Z",
-  "updated_at": "2026-08-25T11:03:01.000Z",
+  "updated_at": "2026-08-25T14:33:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 49612894368,
-  "storage_human": "49.6 GB",
+  "storage_bytes": 279161214624,
+  "storage_human": "279.2 GB",
   "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "gguf"

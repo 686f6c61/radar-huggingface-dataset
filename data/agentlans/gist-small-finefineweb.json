@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "agentlans/GIST-small-finefineweb",
+  "slug": "agentlans-gist-small-finefineweb",
+  "author": "agentlans",
+  "url": "https://huggingface.co/agentlans/GIST-small-finefineweb",
+  "created_at": "2026-08-26T03:12:09.000Z",
+  "updated_at": "2026-08-26T03:21:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sequence-classification",
+    "en",
+    "dataset:agentlans/finefineweb-equal-weighted",
+    "base_model:avsolatorio/GIST-small-Embedding-v0",
+    "base_model:finetune:avsolatorio/GIST-small-Embedding-v0",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33385795,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133566476,
+  "storage_human": "134 MB",
+  "base_model": "avsolatorio/GIST-small-Embedding-v0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": null,
+      "metric": "Evaluation Loss",
+      "value": 1.4201
+    }
+  ],
+  "sources": [
+    {
+      "title": "agentlans (Alan Tseng) - Hugging Face",
+      "url": "https://huggingface.co/agentlans/datasets",
+      "snippet": "Small data, boring AI agentlans 23512 Follow Aizen77704&#x27;s profile pictureSimultaneous-Orthoganlity-In-Time&#x27;s profile picturesuayptalha&#x27;s profile picture 60 followers · 55 following agentlans"
+    },
+    {
+      "title": "agentlans (Alan Tseng) - Hugging Face",
+      "url": "https://huggingface.co/agentlans/models",
+      "snippet": "Small data, boring AI agentlans Follow Simultaneous-Orthoganlity-In-Time&#x27;s profile pictureWesPro&#x27;s profile pictureJohn6666&#x27;s profile picture 31 followers · 31 following agentlans"
+    },
+    {
+      "title": "agentlans - Repositories - GitHub",
+      "url": "https://github.com/agentlans?tab=repositories",
+      "snippet": "agentlans has 118 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Discover gists · GitHub",
+      "url": "https://gist.github.com/",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "A Lightweight Machine Learning Model for High Precision ... - MDPI",
+      "url": "https://www.mdpi.com/2306-5354/12/4/381",
+      "snippet": "Gastrointestinal stromal tumors (GISTs), which usually develop with a significant malignant potential, are a serious challenge in stromal health. With Endoscopic ultrasound (EUS), GISTs can appear similar to other tumors. This study introduces a lightweight convolutional neural network model optimized for the classification of GISTs and leiomyomas using EUS images only. Models are constructed ..."
+    }
+  ]
+}

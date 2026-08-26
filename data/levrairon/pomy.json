@@ -5,7 +5,7 @@
   "author": "LeVraiRon",
   "url": "https://huggingface.co/LeVraiRon/POMY",
   "created_at": "2026-08-25T10:25:38.000Z",
-  "updated_at": "2026-08-25T10:26:06.000Z",
+  "updated_at": "2026-08-25T11:17:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -16,7 +16,9 @@
     "safetensors",
     "gpt2",
     "text-generation",
-    "arxiv:1910.09700",
+    "generated_from_trainer",
+    "base_model:LeVraiRon/POMY",
+    "base_model:finetune:LeVraiRon/POMY",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -26,9 +28,9 @@
   "trending_score": 0,
   "parameters": 124242432,
   "parameters_human": "124.2M",
-  "storage_bytes": 496984704,
-  "storage_human": "497 MB",
-  "base_model": null,
+  "storage_bytes": 4472872866,
+  "storage_human": "4.5 GB",
+  "base_model": "LeVraiRon/POMY",
   "formats": [
     "safetensors"
   ],

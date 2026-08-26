@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PrinceAlhassanNasamu/tekyerema-tts-hau-smoke",
+  "slug": "princealhassannasamu-tekyerema-tts-hau-smoke",
+  "author": "PrinceAlhassanNasamu",
+  "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-tts-hau-smoke",
+  "created_at": "2026-08-26T07:19:27.000Z",
+  "updated_at": "2026-08-26T07:19:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-pa-tts · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/PrinceAlhassanNasamu/tekyerema-pa-tts",
+      "snippet": "Datasets: PrinceAlhassanNasamu / tekyerema-pa-tts like 0 Modalities: Audio Text Formats: parquet optimized-parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 License: cc-by-sa-4. Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (7) akosua·1.52k rows akosua (1.52k rows) bibletts_asante ..."
+    },
+    {
+      "title": "PrinceAlhassanNasamu (Prince Nasamu Alhassan) - Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... liked a model about 6 hours ago"
+    },
+    {
+      "title": "Best Text to Speech AI 2026 - Top TTS Models",
+      "url": "https://llm-stats.com/leaderboards/best-text-to-speech-ai",
+      "snippet": "Rankings of the best text to speech AI models. Compare TTS models by voice quality, naturalness, and synthesis capabilities."
+    },
+    {
+      "title": "facebook/mms-tts-hau - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/309465",
+      "snippet": "This model is part of Facebook&#x27;s Massively Multilingual Speech project, aiming to provide speech technology across a diverse range of languages. You can find more details about the supported languages and their ISO 639-3 codes in the MMS Language Coverage Overview, and see all MMS-TTS checkpoints on the Hugging Face Hub: facebook/mms-tts."
+    },
+    {
+      "title": "Meta&#x27;s Hausa TTS Model Lands on Modelers.cn: An Open, Lightweight Voice ...",
+      "url": "https://aichina.news/blog/metas-hausa-tts-model-lands-on-modelers-cn-an-open-lightweight-voice-73iobb/",
+      "snippet": "If you&#x27;ve been hunting for a text-to-speech model that works for one of Africa&#x27;s major languages and runs on Huawei Ascend hardware, your search just got a little easier. Meta&#x27;s mms-tts-hau - a Hausa-language speech synthesis model from the Massively Multilingual Speech (MMS) project - is now available on Modelers.cn, the Ascend-focused AI ecosystem platform. This isn&#x27;t a flashy ..."
+    }
+  ]
+}

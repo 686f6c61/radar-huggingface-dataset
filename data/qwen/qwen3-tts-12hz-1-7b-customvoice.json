@@ -20,13 +20,13 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 1910,
-  "downloads_30d": 2375796,
-  "trending_score": 12,
+  "likes": 1912,
+  "downloads_30d": 2401282,
+  "trending_score": 14,
   "parameters": 1916676352,
   "parameters_human": "1.92B",
-  "storage_bytes": 4523965995,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 4604420355,
+  "storage_human": "4.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hieuphamha/A-nnU-Net-based-asymmetric-supervision-strategy",
+  "slug": "hieuphamha-a-nnu-net-based-asymmetric-supervision-strategy",
+  "author": "hieuphamha",
+  "url": "https://huggingface.co/hieuphamha/A-nnU-Net-based-asymmetric-supervision-strategy",
+  "created_at": "2026-08-26T07:47:41.000Z",
+  "updated_at": "2026-08-26T08:00:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nnunetv2",
+  "languages": [],
+  "tags": [
+    "nnunetv2",
+    "medical-image-segmentation",
+    "mri",
+    "nnunet",
+    "lisa-2026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 494178866,
+  "storage_human": "494 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MIC-DKFZ/nnUNet",
+      "url": "https://github.com/MIC-DKFZ/nnUNet",
+      "snippet": "It analyzes the training data, creates a dataset fingerprint, configures suitable U-Net variants, and provides an end-to-end workflow from preprocessing to training, model selection, and inference."
+    },
+    {
+      "title": "nnU-Net: a self-configuring method for deep learning-based ... - Nature",
+      "url": "https://www.nature.com/articles/s41592-020-01008-z",
+      "snippet": "nnU-Net is a deep learning-based image segmentation method that automatically configures itself for diverse biological and medical image segmentation tasks. nnU-Net offers state-of-the-art ..."
+    },
+    {
+      "title": "1 Introduction - arXiv.org",
+      "url": "https://arxiv.org/html/2504.03474v1",
+      "snippet": "The model&#x27;s encoder and decoder backbone, data preprocessing, and augmentation strategies adhere to the nnU-Net [37] framework. Figure 1: Overview of the Multi-encoder nnU-Net architecture. Each MRI modality is fed into a separate encoder, allowing for specialized feature extraction tailored to the unique characteristics of each modality."
+    },
+    {
+      "title": "[1809.10486] nnU-Net: Self-adapting Framework for U-Net-Based Medical ...",
+      "url": "https://arxiv.org/abs/1809.10486",
+      "snippet": "The U-Net was presented in 2015. With its straight-forward and successful architecture it quickly evolved to a commonly used benchmark in medical image segmentation. The adaptation of the U-Net to novel problems, however, comprises several degrees of freedom regarding the exact architecture, preprocessing, training and inference. These choices are not independent of each other and ..."
+    },
+    {
+      "title": "[1809.10486] nnU-Net: Self-adapting Framework for U-Net-Based ... - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/1809.10486",
+      "snippet": "For each task the nnU-Net automatically runs a five-fold cross-validation for three different automatically configures U-Net models and the model (or ensemble) with the highest mean foreground dice score is chosen for final submission."
+    }
+  ]
+}

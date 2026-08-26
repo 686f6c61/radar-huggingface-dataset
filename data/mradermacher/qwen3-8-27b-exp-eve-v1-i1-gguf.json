@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-EXP-EVE-v1-i1-GGUF",
   "created_at": "2026-08-25T12:31:58.000Z",
-  "updated_at": "2026-08-25T12:56:41.000Z",
+  "updated_at": "2026-08-25T15:00:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471870304,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553891904,
+  "storage_human": "218.6 GB",
   "base_model": "win10/Qwen3.8-27B-EXP-EVE-v1",
   "formats": [
     "gguf"

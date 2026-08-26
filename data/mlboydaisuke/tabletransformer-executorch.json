@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/TableTransformer-ExecuTorch",
+  "slug": "mlboydaisuke-tabletransformer-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/TableTransformer-ExecuTorch",
+  "created_at": "2026-08-26T03:22:14.000Z",
+  "updated_at": "2026-08-26T03:23:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "object-detection",
+    "base_model:microsoft/table-transformer-structure-recognition",
+    "base_model:quantized:microsoft/table-transformer-structure-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231747360,
+  "storage_human": "232 MB",
+  "base_model": "microsoft/table-transformer-structure-recognition",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExecuTorch Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo",
+      "snippet": "PyTorch models exported to ExecuTorch .pte for on-device inference — XNNPACK (CPU, portable) and Core ML builds, each parity-checked."
+    },
+    {
+      "title": "GitHub - microsoft/table-transformer: Table Transformer (TATR) is a ...",
+      "url": "https://github.com/microsoft/table-transformer",
+      "snippet": "Table Transformer (TATR) is a deep learning model for extracting tables from unstructured documents (PDFs and images). This is also the official repository for the PubTables-1M dataset and GriTS ev..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=executorch-pte",
+      "snippet": "Explore machine learning models. 31 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: executorch-pte Clear all"
+    },
+    {
+      "title": "Table Transformer (TATR) - GitHub",
+      "url": "https://github.com/DEVBOX10/microsoft-table-transformer",
+      "snippet": "Table Transformer (TATR) is a deep learning model for extracting tables from unstructured documents (PDFs and images). This is also the official repository for the PubTables-1M dataset and GriTS evaluation metric. - DEVBOX10/microsoft-table-transformer"
+    },
+    {
+      "title": "OCR实践—Table-Transformer - 蔡不菜和他的uU们 - 博客园",
+      "url": "https://www.cnblogs.com/caibucai/p/18632744",
+      "snippet": "前言 书接上文 OCR实践—PaddleOCR Table-Transformer 与 PubTables-1M table-transformer，来自微软，基于Detr，在PubTables1M 数据集上进行训练，模型是在提出数据集同时的工作， paper PubTables-1M: Towar"
+    }
+  ]
+}

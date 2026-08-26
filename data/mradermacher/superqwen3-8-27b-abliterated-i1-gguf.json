@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/SuperQwen3.8-27b-abliterated-i1-GGUF",
   "created_at": "2026-08-24T14:17:46.000Z",
-  "updated_at": "2026-08-25T05:16:07.000Z",
+  "updated_at": "2026-08-25T18:00:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -44,8 +44,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 107523364768,
-  "storage_human": "107.5 GB",
+  "storage_bytes": 218553885632,
+  "storage_human": "218.6 GB",
   "base_model": "Jiunsong/SuperQwen3.8-27b-abliterated",
   "formats": [
     "gguf"

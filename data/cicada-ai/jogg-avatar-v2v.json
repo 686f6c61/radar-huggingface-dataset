@@ -5,7 +5,7 @@
   "author": "cicada-ai",
   "url": "https://huggingface.co/cicada-ai/Jogg-Avatar-V2V",
   "created_at": "2026-08-12T09:24:52.000Z",
-  "updated_at": "2026-08-18T01:55:05.000Z",
+  "updated_at": "2026-08-26T01:07:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-to-video",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 14,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 326427744,
   "parameters_human": "326.4M",

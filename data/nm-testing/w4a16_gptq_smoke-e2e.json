@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/w4a16_gptq_smoke-e2e",
   "created_at": "2026-07-25T04:43:17.000Z",
-  "updated_at": "2026-08-25T02:04:10.000Z",
+  "updated_at": "2026-08-26T01:48:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 378,
+  "downloads_30d": 379,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 32764658400,
-  "storage_human": "32.8 GB",
+  "storage_bytes": 34288596000,
+  "storage_human": "34.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

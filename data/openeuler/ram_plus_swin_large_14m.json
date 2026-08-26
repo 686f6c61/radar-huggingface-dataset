@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "openEuler/ram_plus_swin_large_14m",
+  "slug": "openeuler-ram_plus_swin_large_14m",
+  "author": "openEuler",
+  "url": "https://huggingface.co/openEuler/ram_plus_swin_large_14m",
+  "created_at": "2026-08-26T07:27:07.000Z",
+  "updated_at": "2026-08-26T08:02:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ram-plus",
+    "recognize-tags",
+    "robotics",
+    "IB-Robot",
+    "ascend",
+    "edge-deployment",
+    "image-classification",
+    "arxiv:2306.03514",
+    "base_model:xinyu1205/recognize-anything-plus-model",
+    "base_model:finetune:xinyu1205/recognize-anything-plus-model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5312640545,
+  "storage_human": "5.3 GB",
+  "base_model": "xinyu1205/recognize-anything-plus-model",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ram_plus_swin_large_14m.pth · xinyu1205/recognize-anything-plus-model ...",
+      "url": "https://huggingface.co/xinyu1205/recognize-anything-plus-model/blob/main/ram_plus_swin_large_14m.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "️ Recognize Anything Model - GitHub",
+      "url": "https://github.com/xinyu1205/recognize-anything",
+      "snippet": "Recognize Anything Plus Model (RAM++) [Paper] RAM++ is the next generation of RAM, which can recognize any category with high accuracy, including both predefined common categories and diverse open-set categories. Recognize Anything Model (RAM) [Paper] [Demo] RAM is an image tagging model, which can recognize any common category with high accuracy."
+    },
+    {
+      "title": "ram_swin_large_14m.pth · xinyu1205/recognize-anything at main",
+      "url": "https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/ram_swin_large_14m.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - saraao/amodal: [CVPR 2025] Open-World Amodal Appearance ...",
+      "url": "https://github.com/saraao/amodal",
+      "snippet": "RAM-Grounded-SAM: Install RAM++ following the instructions from the official recognize-anything repository, download the checkpoint ram_plus_swin_large_14m.pth. Install Grounded-SAM following the instructions from the official Grounded-Segment-Anything repository, download the checkpoint groundingdino_swint_ogc.pth and sam_vit_h_4b8939.pth."
+    },
+    {
+      "title": "ram_plus_swin_large_14m.pth - CivArchive",
+      "url": "https://civarchive.com/files/ram_plus_swin_large_14m.pth?platform=all",
+      "snippet": "Download ram_plus_swin_large_14m.pth from CivArchive. Find this AI model file preserved in our community-driven archive."
+    }
+  ]
+}

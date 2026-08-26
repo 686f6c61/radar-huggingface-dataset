@@ -5,7 +5,7 @@
   "author": "DotCheck",
   "url": "https://huggingface.co/DotCheck/muybridge-video-v2",
   "created_at": "2026-07-26T05:42:20.000Z",
-  "updated_at": "2026-08-18T16:14:28.000Z",
+  "updated_at": "2026-08-25T14:43:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -14,19 +14,7 @@
     "en"
   ],
   "tags": [
-    "dotcheck",
-    "image-classification",
-    "video",
-    "ai-detection",
-    "synthetic-media",
-    "siglip2",
-    "apache-2.0",
-    "muybridge",
-    "en",
-    "base_model:google/siglip2-base-patch16-224",
-    "base_model:adapter:google/siglip2-base-patch16-224",
     "license:apache-2.0",
-    "model-index",
     "region:us"
   ],
   "likes": 0,

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Dark-Nexus-12B-v2.0-i1-GGUF",
   "created_at": "2026-08-25T09:38:47.000Z",
-  "updated_at": "2026-08-25T11:07:58.000Z",
+  "updated_at": "2026-08-25T11:20:35.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 12247782400,
   "parameters_human": "12.25B",
-  "storage_bytes": 123275299712,
-  "storage_human": "123.3 GB",
+  "storage_bytes": 141939097152,
+  "storage_human": "141.9 GB",
   "base_model": "ReadyArt/Dark-Nexus-12B-v2.0",
   "formats": [
     "gguf"

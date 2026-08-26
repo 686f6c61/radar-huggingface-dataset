@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/sphragis-alm-olmo3-7b-homeric-iliad",
+  "slug": "urdatorn-sphragis-alm-olmo3-7b-homeric-iliad",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-homeric-iliad",
+  "created_at": "2026-08-26T07:39:11.000Z",
+  "updated_at": "2026-08-26T07:43:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "ancient-greek",
+    "authorship-attribution",
+    "authorial-language-model",
+    "grc",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/OLMo-7B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Machine unlearning with Olmo-7B Researchers used Olmo-7B as a testbed for developing machine unlearning methods—removing specific data influence without retraining from scratch."
+    },
+    {
+      "title": "allenai/olmo-3-7b • LM Studio",
+      "url": "https://lmstudio.ai/models/allenai/olmo-3-7b",
+      "snippet": "Olmo3 7B by AllenAI AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of Open language models designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints, and associated training details ..."
+    },
+    {
+      "title": "allenai/OLMo-7B-0724-Instruct-hf · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-7B-0724-Instruct-hf",
+      "snippet": "allenai / OLMo-7B-0724-Instruct-hf like 7 Follow Ai2 6.43k Text Generation Transformers Safetensors allenai/dolma allenai/tulu-v2-sft-mixture-olmo-4096 allenai/ultrafeedback_binarized_cleaned English olmo conversational arxiv:2402.00838 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Nithish2410",
   "url": "https://huggingface.co/Nithish2410/dbp-001",
   "created_at": "2026-08-24T11:58:10.000Z",
-  "updated_at": "2026-08-24T12:12:42.000Z",
+  "updated_at": "2026-08-25T16:28:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6432890409,
-  "storage_human": "6.4 GB",
+  "storage_bytes": 31431218196,
+  "storage_human": "31.4 GB",
   "base_model": "Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S",
   "formats": [
     "safetensors"

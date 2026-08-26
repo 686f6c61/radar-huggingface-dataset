@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jiahaoma/survey-image-captioning",
+  "slug": "jiahaoma-survey-image-captioning",
+  "author": "Jiahaoma",
+  "url": "https://huggingface.co/Jiahaoma/survey-image-captioning",
+  "created_at": "2026-08-26T07:46:48.000Z",
+  "updated_at": "2026-08-26T07:46:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "From methods to datasets: A survey on Image-Caption Generators",
+      "url": "https://link.springer.com/article/10.1007/s11042-023-16560-x",
+      "snippet": "Image - Caption Generator is a popular Artificial Intelligence research tool that works with image comprehension and language definition. Creating well-structured sentences requires a thorough understanding of language in a systematic and semantic way. Being able to describe the substance of an image using well-structured phrases is a difficult undertaking, but it can have a significant impact ..."
+    },
+    {
+      "title": "Next-generation image captioning: A survey of methodologies and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000354",
+      "snippet": "Modern deep learning-based approaches have supplanted traditional approaches in image captioning, leading to more efficient and sophisticated models. The development of attention mechanisms and transformer-based architectures has further enhanced the modeling of both language and visual data."
+    },
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges ...",
+      "url": "https://arxiv.org/abs/2503.14604",
+      "snippet": "The evaluation of machine-generated image captions is a complex and evolving challenge. With the advent of Multimodal Large Language Models (MLLMs), image captioning has become a core task, increasing the need for robust and reliable evaluation metrics. This survey provides a comprehensive overview of advancements in image captioning evaluation, analyzing the evolution, strengths, and ..."
+    },
+    {
+      "title": "Attention-Based Transformer Models for Image Captioning Across ...",
+      "url": "https://arxiv.org/html/2506.05399v1",
+      "snippet": "Abstract Image captioning involves generating textual descriptions from input images, bridging the gap between computer vision and natural language processing. Recent advancements in transformer-based models have significantly improved caption generation by leveraging attention mechanisms for better scene understanding. While various surveys have explored deep learning-based approaches for ..."
+    },
+    {
+      "title": "Attention-based transformer models for image captioning across ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1574013725000425",
+      "snippet": "Finally, we outline future research directions, such as multimodal learning, real-time applications in AI-powered assistants, healthcare, and forensic analysis. This survey serves as a comprehensive reference for researchers aiming to advance the field of attention-based image captioning."
+    }
+  ]
+}

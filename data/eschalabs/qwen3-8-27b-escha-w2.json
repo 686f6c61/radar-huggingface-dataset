@@ -5,7 +5,7 @@
   "author": "EschaLabs",
   "url": "https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2",
   "created_at": "2026-08-20T07:50:16.000Z",
-  "updated_at": "2026-08-21T08:43:47.000Z",
+  "updated_at": "2026-08-26T07:32:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "model-index",
     "region:us"
   ],
-  "likes": 127,
+  "likes": 128,
   "downloads_30d": 2319,
   "trending_score": 127,
   "parameters": 6340437856,

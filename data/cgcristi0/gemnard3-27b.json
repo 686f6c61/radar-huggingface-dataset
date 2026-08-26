@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cgcristi0/gemnard3-27b",
+  "slug": "cgcristi0-gemnard3-27b",
+  "author": "cgcristi0",
+  "url": "https://huggingface.co/cgcristi0/gemnard3-27b",
+  "created_at": "2026-08-26T03:15:15.000Z",
+  "updated_at": "2026-08-26T03:19:11.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemnard3",
+    "lora",
+    "base_model:google/gemma-3-27b-it",
+    "base_model:adapter:google/gemma-3-27b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28418976512,
+  "parameters_human": "28.42B",
+  "storage_bytes": 73175120175,
+  "storage_human": "73.2 GB",
+  "base_model": "google/gemma-3-27b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cgcristi0/gemnard3-4b · Hugging Face",
+      "url": "https://huggingface.co/cgcristi0/gemnard3-4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-3-27b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-27b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma3:27b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:27b",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    },
+    {
+      "title": "Gemma 3 (27B) - AI Model Index",
+      "url": "https://www.modelindex.org/index.php/model/gemma-3-27b/",
+      "snippet": "ProviderGoogle Model Codegoogle/gemma-3-27b-it Model TypeMultimodal LicenceOpen Source Status Active Deployment OptionSelf-hosted only Input ModalityText, Image Output ModalityText Context Length 128k Release Date March 10, 2025 Documentation URL https://ai.google.dev/gemma/docs/core ↗"
+    },
+    {
+      "title": "Gemma 3 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/gemma3-27b/",
+      "snippet": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. Gemma 3 models are multimodal, handling text and image input and generating text output, with open weights for both pre-trained variants and instruction-tuned variants. Gemma 3 has a large, 128K context window, multilingual support in over ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ParminderzHuggingFace/sentinel-workforce-risk-models",
+  "slug": "parminderzhuggingface-sentinel-workforce-risk-models",
+  "author": "ParminderzHuggingFace",
+  "url": "https://huggingface.co/ParminderzHuggingFace/sentinel-workforce-risk-models",
+  "created_at": "2026-08-26T07:45:39.000Z",
+  "updated_at": "2026-08-26T07:56:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "joblib",
+    "safetensors",
+    "tabular",
+    "text-classification",
+    "lora",
+    "multimodal-fusion",
+    "workforce-analytics",
+    "attrition-risk",
+    "distilbert",
+    "pytorch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3801480,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ParminderSinghGithub/Sentinel",
+      "url": "https://github.com/ParminderSinghGithub/Sentinel",
+      "snippet": "Sentinel is an enterprise-grade multimodal machine learning intelligence platform for employee attrition and workforce burnout risk prediction. The system ingests high-dimensional workforce demographic, compensation, and performance metrics alongside unstructured qualitative feedback text, extracting complementary risk representations through specialized deep learning and transformer NLP ..."
+    },
+    {
+      "title": "ParminderzHuggingFace (Parminder Singh)",
+      "url": "https://huggingface.co/ParminderzHuggingFace",
+      "snippet": "User profile of Parminder Singh on Hugging Face"
+    },
+    {
+      "title": "Sentinel-AI (Sentinel AI) - Hugging Face",
+      "url": "https://huggingface.co/Sentinel-AI/models",
+      "snippet": "Org profile for Sentinel AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Some People&#x27;s Blood Already Knows How Well a Vaccine Will Work",
+      "url": "https://globalbiodefense.com/2026/08/24/some-peoples-blood-already-knows-how-well-a-vaccine-will-work/",
+      "snippet": "Could your blood already predict how well a vaccine will work? New study finds antibody clues that flag weak responders before the shot."
+    },
+    {
+      "title": "AI Risk Assessment Framework: A Step-by-Step Guide - SentinelOne",
+      "url": "https://www.sentinelone.com/cybersecurity-101/data-and-ai/ai-risk-assessment-framework/",
+      "snippet": "Master AI risk assessment frameworks with our step-by-step guide. Learn NIST RMF, ISO standards, and build security controls that satisfy regulators."
+    }
+  ]
+}

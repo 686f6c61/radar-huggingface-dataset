@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MangoGoes/Cosmos3-edge-generation-libero4in1",
+  "slug": "mangogoes-cosmos3-edge-generation-libero4in1",
+  "author": "MangoGoes",
+  "url": "https://huggingface.co/MangoGoes/Cosmos3-edge-generation-libero4in1",
+  "created_at": "2026-08-23T05:22:17.000Z",
+  "updated_at": "2026-08-26T07:43:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "action-policy",
+    "libero",
+    "imitation-learning",
+    "sft",
+    "wan2.2-vae",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36264418902,
+  "storage_human": "36.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "cosmos/cookbooks/cosmos3 at main · NVIDIA/cosmos · GitHub",
+      "url": "https://github.com/NVIDIA/cosmos/tree/main/cookbooks/cosmos3",
+      "snippet": "The container serves nvidia/cosmos3-nano-reasoner (or nvidia/cosmos3-super-reasoner); pass that exact name as the request model, or resolve it dynamically with client.models.list ()."
+    },
+    {
+      "title": "Model Reference — Cosmos - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html",
+      "snippet": "Model Reference # Cosmos 3 is available as Cosmos3-Super (64B), Cosmos3-Nano (16B), and Cosmos3-Edge (4B). The model family also includes task-specific variants: Cosmos3-Super-Text2Image, Cosmos3-Super-Image2Video, their four-step Text2Image and Image2Video variants, plus Cosmos3-Nano-Policy-DROID and Cosmos3-Edge-Policy-DROID."
+    },
+    {
+      "title": "Cosmos3 - a nvidia Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nvidia/cosmos3",
+      "snippet": "Omnimodal World Models for Physical AI. Upvote . 187 +177; Sort: Collection. nvidia/Cosmos3-Super. 65B • Updated Jul 9 • 126k • 240"
+    },
+    {
+      "title": "NVIDIA Cosmos 3 Edge: Complete Guide (2026)",
+      "url": "https://www.buildfastwithai.com/blogs/nvidia-cosmos-3-edge-complete-guide-2026",
+      "snippet": "NVIDIA Cosmos 3 Edge: The Complete Guide to Physical AI A robot brain that fits on a module the size of a paperback, generates 32 actions per inference, and costs nothing to download. NVIDIA released Cosmos 3 Edge at SIGGRAPH 2026 in Los Angeles on July 20, and it is the first open world model small enough to run real-time control on edge hardware while still reasoning about what it sees. The ..."
+    }
+  ]
+}

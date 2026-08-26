@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 333588489,
   "parameters_human": "333.6M",
-  "storage_bytes": 7993917005,
-  "storage_human": "8.0 GB",
+  "storage_bytes": 6664578178,
+  "storage_human": "6.7 GB",
   "base_model": null,
   "formats": [
     "onnx",

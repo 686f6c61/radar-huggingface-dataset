@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kfish610/olmo3-7b-agda-pairs-delim-sft",
+  "slug": "kfish610-olmo3-7b-agda-pairs-delim-sft",
+  "author": "kfish610",
+  "url": "https://huggingface.co/kfish610/olmo3-7b-agda-pairs-delim-sft",
+  "created_at": "2026-08-26T05:23:33.000Z",
+  "updated_at": "2026-08-26T08:43:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3519248369,
+  "storage_human": "3.5 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kfish610/olmo3-7b-agda-pairs-delim-sft · Hugging Face",
+      "url": "https://huggingface.co/kfish610/olmo3-7b-agda-pairs-delim-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kfish610/agda-pairs · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kfish610/agda-pairs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "7B-Instruct Model for efficient inference that handles multi-turn chat, tool use, and more."
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    }
+  ]
+}

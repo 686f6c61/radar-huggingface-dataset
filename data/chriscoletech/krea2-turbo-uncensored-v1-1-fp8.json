@@ -23,13 +23,13 @@
     "license:unknown",
     "region:us"
   ],
-  "likes": 7,
-  "downloads_30d": 2320,
+  "likes": 10,
+  "downloads_30d": 2772,
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 163492165199,
-  "storage_human": "163.5 GB",
+  "storage_bytes": 94030224271,
+  "storage_human": "94.0 GB",
   "base_model": "krea/Krea-2-Turbo, conradlocke/krea2-identity-edit",
   "formats": [
     "gguf"

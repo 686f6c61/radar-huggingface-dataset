@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Abalogun96/mobilevit-finetuned",
+  "slug": "abalogun96-mobilevit-finetuned",
+  "author": "Abalogun96",
+  "url": "https://huggingface.co/Abalogun96/mobilevit-finetuned",
+  "created_at": "2026-08-26T07:34:32.000Z",
+  "updated_at": "2026-08-26T07:34:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileViT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/model_doc/mobilevit",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNNs&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "MobileViT: A mobile-friendly Transformer-based model for image ... - Keras",
+      "url": "https://keras.io/examples/vision/mobilevit/",
+      "snippet": "With convolutions, we can capture spatial relationships that model locality. Besides combining the properties of Transformers and convolutions, the authors introduce MobileViT as a general-purpose mobile-friendly backbone for different image recognition tasks."
+    },
+    {
+      "title": "mobilevit - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/mobilevit.ipynb",
+      "snippet": "With convolutions, we can capture spatial relationships that model locality. Besides combining the properties of Transformers and convolutions, the authors introduce MobileViT as a general-purpose mobile-friendly backbone for different image recognition tasks."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mobilevit",
+      "snippet": "Explore machine learning models. ImageIN/mobilevit-small_finetuned_on_unlabelled_IA_with_snorkel_labels"
+    }
+  ]
+}

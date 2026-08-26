@@ -5,7 +5,7 @@
   "author": "shabieh2",
   "url": "https://huggingface.co/shabieh2/cluster_muse_0824",
   "created_at": "2026-08-25T03:13:01.000Z",
-  "updated_at": "2026-08-25T03:13:17.000Z",
+  "updated_at": "2026-08-26T00:14:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1704929323,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 3381728475,
+  "storage_human": "3.4 GB",
   "base_model": "unsloth/muse-glimmer-30b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

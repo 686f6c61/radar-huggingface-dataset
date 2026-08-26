@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LyliaEngine/rimixxO2",
+  "slug": "lyliaengine-rimixxo2",
+  "author": "LyliaEngine",
+  "url": "https://huggingface.co/LyliaEngine/rimixxO2",
+  "created_at": "2026-08-26T07:28:53.000Z",
+  "updated_at": "2026-08-26T07:31:51.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 708518905,
+  "storage_human": "709 MB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LyliaEngine/rimixO at main - Hugging Face",
+      "url": "https://huggingface.co/LyliaEngine/rimixO/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LyliaEngine/rimixO at main - Hugging Face",
+      "url": "https://huggingface.co/LyliaEngine/rimixO/tree/main/images",
+      "snippet": "LyliaEngine / rimixO like 0 Text-to-Image Diffusers lora template:diffusion-lora License:cdla-permissive-2. Model card FilesFiles and versions xet Community Copy to bucket new Use this model Libraries Diffusers"
+    },
+    {
+      "title": "Ri-mix - [Illustrious + Anima] - Ri-mix α (Anima) | Anima Checkpoint ...",
+      "url": "https://civitai.com/models/996495/ri-mix-illustrious-anima",
+      "snippet": "My RI-MIX Style Lora based on this model - Ri-mix - Style LORA Settings for Anima Workflow: Text-to-image Hi-res fix CFG Scale: 3 Sampler: er_sde S..."
+    },
+    {
+      "title": "Ri-mix - Style LORA Illustrious Ri-mix Qv2 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2038247572552290306",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "LyliaEngine AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/lyliaengine",
+      "snippet": "Explore all AI models by LyliaEngine. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    }
+  ]
+}

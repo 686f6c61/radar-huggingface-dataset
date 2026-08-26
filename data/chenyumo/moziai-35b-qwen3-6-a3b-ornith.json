@@ -5,7 +5,7 @@
   "author": "chenyumo",
   "url": "https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith",
   "created_at": "2026-08-10T19:42:08.000Z",
-  "updated_at": "2026-08-25T02:19:38.000Z",
+  "updated_at": "2026-08-25T18:23:19.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 940,
+  "downloads_30d": 4491,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

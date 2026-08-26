@@ -5,7 +5,7 @@
   "author": "puwaer",
   "url": "https://huggingface.co/puwaer/DeepSeek-V4-Flash-0731-reap-150b",
   "created_at": "2026-08-09T06:38:45.000Z",
-  "updated_at": "2026-08-24T11:56:10.000Z",
+  "updated_at": "2026-08-26T08:52:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 470,
+  "downloads_30d": 611,
   "trending_score": 0,
   "parameters": 150128549111,
   "parameters_human": "150.13B",

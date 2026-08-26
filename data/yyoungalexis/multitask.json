@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yyoungalexis/multitask",
+  "slug": "yyoungalexis-multitask",
+  "author": "yyoungalexis",
+  "url": "https://huggingface.co/yyoungalexis/multitask",
+  "created_at": "2026-08-26T07:29:58.000Z",
+  "updated_at": "2026-08-26T07:30:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free TWEEN GIRL AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/724341849585795640",
+      "snippet": "Explore TWEEN GIRL on TENSOR — 127 models and 5.1K posts."
+    },
+    {
+      "title": "963 Young Girl Model - Zoomerang Gallery",
+      "url": "https://zoomerang.app/ai-gallery/young-girl-model",
+      "snippet": "Welcome to the Zoomerang AI Art Gallery! Explore a diverse collection of stunning AI-generated artworks crafted by our talented community. Immerse yourself in creativity and innovation with each unique creation."
+    },
+    {
+      "title": "146 Free youth AI Images - stablediffusion3.net",
+      "url": "https://www.stablediffusion3.net/tag/youth",
+      "snippet": "Discover over 146 high-resolution AI-generated images under the tag &#x27;youth&#x27;, spanning stock photos, 3D objects, vectors, and illustrations. Download for free and customize your visuals with our unique &#x27;open in editor&#x27; feature."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "young AI Models | Civitai",
+      "url": "https://civitai.com/tag/young",
+      "snippet": "Browse 360 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with young."
+    }
+  ]
+}

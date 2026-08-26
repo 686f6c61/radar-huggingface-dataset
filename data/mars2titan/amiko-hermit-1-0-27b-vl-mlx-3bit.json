@@ -5,7 +5,7 @@
   "author": "mars2titan",
   "url": "https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-3bit",
   "created_at": "2026-08-25T19:43:51.000Z",
-  "updated_at": "2026-08-25T19:46:45.000Z",
+  "updated_at": "2026-08-25T20:39:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,6 +27,7 @@
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:finetune:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
+    "model-index",
     "region:us"
   ],
   "likes": 0,

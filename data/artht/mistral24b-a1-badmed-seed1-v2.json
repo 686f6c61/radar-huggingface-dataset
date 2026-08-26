@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/mistral24b-a1-badmed-seed1-v2",
+  "slug": "artht-mistral24b-a1-badmed-seed1-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/mistral24b-a1-badmed-seed1-v2",
+  "created_at": "2026-08-26T03:03:35.000Z",
+  "updated_at": "2026-08-26T03:22:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11895168874,
+  "storage_human": "11.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/mistral24b-a0-badmed-seed1-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/mistral24b-a0-badmed-seed1-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/qwen7b-a1-badmed-seed1-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a1-badmed-seed1-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Models Overview - Mistral Docs",
+      "url": "https://docs.mistral.ai/models",
+      "snippet": "Documentation for the deployment and usage of Mistral AI&#x27;s LLMs"
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

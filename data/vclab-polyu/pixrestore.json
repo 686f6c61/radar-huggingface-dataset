@@ -5,13 +5,14 @@
   "author": "VCLab-PolyU",
   "url": "https://huggingface.co/VCLab-PolyU/PixRestore",
   "created_at": "2026-08-24T03:44:42.000Z",
-  "updated_at": "2026-08-24T03:44:42.000Z",
+  "updated_at": "2026-08-25T09:09:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 4791795632,
+  "storage_human": "4.8 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

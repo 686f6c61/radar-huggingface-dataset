@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "openEuler/sam2.1_hiera_tiny",
+  "slug": "openeuler-sam2-1_hiera_tiny",
+  "author": "openEuler",
+  "url": "https://huggingface.co/openEuler/sam2.1_hiera_tiny",
+  "created_at": "2026-08-26T07:27:09.000Z",
+  "updated_at": "2026-08-26T07:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "sam2",
+  "languages": [],
+  "tags": [
+    "sam2",
+    "segment-anything",
+    "instance-segmentation",
+    "robotics",
+    "IB-Robot",
+    "ascend",
+    "edge-deployment",
+    "mask-generation",
+    "arxiv:2408.00714",
+    "base_model:facebook/sam2.1-hiera-tiny",
+    "base_model:finetune:facebook/sam2.1-hiera-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324529762,
+  "storage_human": "325 MB",
+  "base_model": "facebook/sam2.1-hiera-tiny",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/sam2.1-hiera-tiny · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam2.1-hiera-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "robotflowlabs/sam2.1-hiera-tiny-int8 · Hugging Face",
+      "url": "https://huggingface.co/robotflowlabs/sam2.1-hiera-tiny-int8",
+      "snippet": "SAM 2.1 Hiera-Tiny — INT8 Quantized Meta&#x27;s Segment Anything Model 2.1 (Hiera-Tiny backbone) quantized to INT8 for real-time robotic segmentation. 2.0x smaller — from 298 MB to 152 MB — the smallest SAM2 variant for maximum speed on edge hardware. This model is part of the RobotFlowLabs model library, built for the ANIMA agentic robotics platform — a modular ROS2-native AI system that ..."
+    },
+    {
+      "title": "GitHub - agiera/sam2-safetensors: The repository provides code for ...",
+      "url": "https://github.com/agiera/sam2-safetensors",
+      "snippet": "All the model checkpoints can be downloaded by running: ... or individually from: sam2.1_hiera_tiny.pt sam2.1_hiera_small.pt sam2.1_hiera_base_plus.pt sam2.1_hiera_large.pt (note that these are the improved checkpoints denoted as SAM 2.1; see Model Description for details.) Then SAM 2 can be used in a few lines as follows for image and video ..."
+    },
+    {
+      "title": "sam2.1-hiera-tiny Open-source Image Segmentation Model - Supports ...",
+      "url": "https://model.aibase.com/models/details/1915687277797523458",
+      "snippet": "This model is an instance segmentation model fine-tuned on the qubvel-hf/ade20k-mini dataset based on facebook/mask2former-swin-tiny-coco-instance. This model is specifically optimized for the scene understanding task in the ADE20K-mini dataset and shows good performance in the instance segmentation task."
+    },
+    {
+      "title": "sam2/sam2/configs/sam2.1/sam2.1_hiera_s.yaml at main - GitHub",
+      "url": "https://github.com/facebookresearch/sam2/blob/main/sam2/configs/sam2.1/sam2.1_hiera_s.yaml",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use th..."
+    }
+  ]
+}

@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1338450189,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 219121675,
+  "storage_human": "219 MB",
   "base_model": "PramaLLC/BEN2",
   "formats": [
     "onnx"

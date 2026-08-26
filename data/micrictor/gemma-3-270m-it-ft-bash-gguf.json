@@ -5,7 +5,7 @@
   "author": "micrictor",
   "url": "https://huggingface.co/micrictor/gemma-3-270m-it-ft-bash-GGUF",
   "created_at": "2026-08-25T22:32:06.000Z",
-  "updated_at": "2026-08-25T22:38:06.000Z",
+  "updated_at": "2026-08-26T01:10:19.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 268098176,
   "parameters_human": "268.1M",
-  "storage_bytes": 810680352,
-  "storage_human": "811 MB",
+  "storage_bytes": 1528326880,
+  "storage_human": "1.5 GB",
   "base_model": "micrictor/gemma-3-270m-it-ft-bash",
   "formats": [
     "gguf"

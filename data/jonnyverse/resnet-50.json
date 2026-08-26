@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 475829825,
-  "storage_human": "476 MB",
+  "storage_bytes": 358153567,
+  "storage_human": "358 MB",
   "base_model": "microsoft/resnet-50",
   "formats": [
     "onnx"

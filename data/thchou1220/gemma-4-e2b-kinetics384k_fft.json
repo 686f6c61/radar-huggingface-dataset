@@ -5,7 +5,7 @@
   "author": "THChou1220",
   "url": "https://huggingface.co/THChou1220/gemma-4-e2b-kinetics384K_FFT",
   "created_at": "2026-08-19T14:26:05.000Z",
-  "updated_at": "2026-08-19T14:37:38.000Z",
+  "updated_at": "2026-08-26T00:19:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,10 +20,10 @@
   "likes": 0,
   "downloads_30d": 31,
   "trending_score": 0,
-  "parameters": 5104297539,
-  "parameters_human": "5.10B",
-  "storage_bytes": 10241020584,
-  "storage_human": "10.2 GB",
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 20487640414,
+  "storage_human": "20.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jt-2026/pi05-so101-lora-v1",
+  "slug": "jt-2026-pi05-so101-lora-v1",
+  "author": "jt-2026",
+  "url": "https://huggingface.co/jt-2026/pi05-so101-lora-v1",
+  "created_at": "2026-08-26T03:06:15.000Z",
+  "updated_at": "2026-08-26T03:16:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi0",
+    "pi0.5",
+    "vla",
+    "lora",
+    "robotics",
+    "so-101",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9559105086,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ljt228/pi05-so101-finetune",
+      "url": "https://github.com/ljt228/pi05-so101-finetune",
+      "snippet": "End-to-end pipeline for adapting π₀.₅ (Physical Intelligence&#x27;s vision-language-action model) to a real SO-101 manipulator: designing manipulation tasks, collecting teleoperated demonstrations, packaging them as LeRobot datasets, LoRA fine-tuning the full VLA on a single GPU, and deploying the policy back on the real arm. Done during a research internship."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "felixmayor/pi05_so101_orange_cube · Hugging Face",
+      "url": "https://huggingface.co/felixmayor/pi05_so101_orange_cube",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jakegonz/pi05-so101-lora-50demos · Hugging Face",
+      "url": "https://huggingface.co/jakegonz/pi05-so101-lora-50demos",
+      "snippet": "jakegonz / pi05-so101-lora-50demos like 0 Robotics LeRobot openpi pi0.5 pi05 so101 lora License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "so101-pi05-base/docs/07-lora-finetuning.md at main - GitHub",
+      "url": "https://github.com/jinnymo/so101-pi05-base/blob/main/docs/07-lora-finetuning.md",
+      "snippet": "pi0.5 vision-language-action model fully fine-tuned on unified public SO-101 / SO-100 data - jinnymo/so101-pi05-base"
+    }
+  ]
+}

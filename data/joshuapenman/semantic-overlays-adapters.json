@@ -5,7 +5,7 @@
   "author": "joshuapenman",
   "url": "https://huggingface.co/joshuapenman/semantic-overlays-adapters",
   "created_at": "2026-08-24T21:09:33.000Z",
-  "updated_at": "2026-08-24T21:27:39.000Z",
+  "updated_at": "2026-08-26T05:04:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "adapters",
     "security",
     "en",
+    "arxiv:2608.23873",
     "license:mit",
     "region:us"
   ],

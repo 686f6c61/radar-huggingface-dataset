@@ -5,10 +5,10 @@
   "author": "UnderTides",
   "url": "https://huggingface.co/UnderTides/Embodied-Navigator-7B-GRPO",
   "created_at": "2026-08-15T06:35:46.000Z",
-  "updated_at": "2026-08-22T09:33:04.000Z",
+  "updated_at": "2026-08-26T09:21:03.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": "image-text-to-text",
+  "pipeline_tag": "robotics",
   "library": "transformers",
   "languages": [
     "en"
@@ -25,7 +25,6 @@
     "qwen2.5-vl",
     "reinforcement-learning",
     "grpo",
-    "conversational",
     "en",
     "arxiv:2608.17512",
     "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
@@ -35,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 48,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 8632279072,
   "parameters_human": "8.63B",
@@ -45,7 +44,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

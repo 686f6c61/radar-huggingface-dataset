@@ -5,13 +5,14 @@
   "author": "cObliUvA",
   "url": "https://huggingface.co/cObliUvA/Qwen3-Coder-Next-LoRA",
   "created_at": "2026-08-25T22:05:59.000Z",
-  "updated_at": "2026-08-25T22:05:59.000Z",
+  "updated_at": "2026-08-25T22:34:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "license:mit",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 7756599850,
+  "storage_human": "7.8 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

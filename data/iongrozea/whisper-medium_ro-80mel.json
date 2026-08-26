@@ -5,7 +5,7 @@
   "author": "IonGrozea",
   "url": "https://huggingface.co/IonGrozea/whisper-medium_ro-80mel",
   "created_at": "2026-07-18T04:10:30.000Z",
-  "updated_at": "2026-08-25T15:16:13.000Z",
+  "updated_at": "2026-08-25T17:00:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 763857920,
   "parameters_human": "763.9M",

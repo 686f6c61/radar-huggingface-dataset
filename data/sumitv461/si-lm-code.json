@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sumitv461/si-lm-code",
+  "slug": "sumitv461-si-lm-code",
+  "author": "sumitv461",
+  "url": "https://huggingface.co/sumitv461/si-lm-code",
+  "created_at": "2026-08-26T06:02:37.000Z",
+  "updated_at": "2026-08-26T06:03:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112433466,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LLM for Coding (August 2026): SWE-bench & LiveCodeBench Ranked",
+      "url": "https://benchlm.ai/coding",
+      "snippet": "Live leaderboard ranking 401 AI models on SWE-bench Pro, LiveCodeBench, SWE-Rebench, and more. See which LLM writes the best code — updated August 2026."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Model Catalog - LM Studio",
+      "url": "https://lmstudio.ai/models",
+      "snippet": "Open source coding models by Z.ai, based on a new base model and specializing in coding and tool calling."
+    },
+    {
+      "title": "Local AI: LM Studio + VS Code setup guide - Think as a { Dev }",
+      "url": "https://www.thinkasadev.com/en/local-ai-with-vs-code-and-continue-2/",
+      "snippet": "The model nailed it, generating both a well-written readme and the Python tool itself. Conclusions In this article we saw how to set up LM Studio to run Qwen 3 Coder 30B locally and connect it to Visual Studio Code via the Continue extension, ending up with a fully integrated AI assistant right inside our IDE. This is just the beginning. A local model opens up a much wider range of ..."
+    },
+    {
+      "title": "How to Run Claude Code Offline with Local Models (LM Studio + Mac)",
+      "url": "https://www.gui.codes/articles/claude-code-offline-local-models",
+      "snippet": "How I set up Claude Code to run entirely on-device using LM Studio and a local model — so it works on a plane, avoids rate limits, and keeps costs under control."
+    }
+  ]
+}

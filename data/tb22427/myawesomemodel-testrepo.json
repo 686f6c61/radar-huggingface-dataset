@@ -4,8 +4,8 @@
   "slug": "tb22427-myawesomemodel-testrepo",
   "author": "TB22427",
   "url": "https://huggingface.co/TB22427/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-22T01:28:45.000Z",
-  "updated_at": "2026-08-22T01:30:35.000Z",
+  "created_at": "2026-08-26T05:54:45.000Z",
+  "updated_at": "2026-08-26T05:58:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -32,7 +32,7 @@
   "is_conversational": false,
   "gated": false,
   "removed": true,
-  "removed_at": "2026-08-25T06:12:14.837Z",
+  "removed_at": "2026-08-26T07:41:23.508Z",
   "benchmarks": [],
   "sources": [
     {
