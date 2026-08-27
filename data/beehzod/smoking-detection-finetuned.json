@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Beehzod/smoking-detection-finetuned",
+  "slug": "beehzod-smoking-detection-finetuned",
+  "author": "Beehzod",
+  "url": "https://huggingface.co/Beehzod/smoking-detection-finetuned",
+  "created_at": "2026-08-27T12:49:33.000Z",
+  "updated_at": "2026-08-27T12:49:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "smoking-detection",
+    "cigarette-detection",
+    "object-detection",
+    "base_model:Enos-123/smoking-detection",
+    "base_model:finetune:Enos-123/smoking-detection",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40503532,
+  "storage_human": "41 MB",
+  "base_model": "Enos-123/smoking-detection",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50",
+      "value": 0.8698
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50-95",
+      "value": 0.5886
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "precision",
+      "value": 0.9432
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "recall",
+      "value": 0.7957
+    }
+  ],
+  "sources": [
+    {
+      "title": "MeetCool/yolov8n-smoking-detection at main - Hugging Face",
+      "url": "https://huggingface.co/MeetCool/yolov8n-smoking-detection/blob/main/models/fine_tune_YOLOv8n.pt",
+      "snippet": "MeetCool / yolov8n-smoking-detection like 0 ONNX Model card FilesFiles and versions Community 1 main yolov8n-smoking-detection / models /fine_tune_YOLOv8n.pt MeetCool Upload models/fine_tune_YOLOv8n.pt with huggingface_hub b31c4a9 verified4 days ago download Copy download link history blame contribute delete Unsafe pickle"
+    },
+    {
+      "title": "smoking-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/smoking-detection",
+      "snippet": "Offline AI-assisted fire, smoke and smoking detection for existing RTSP, NVR and go2rtc cameras."
+    },
+    {
+      "title": "Beehzod/UzTTS · Hugging Face",
+      "url": "https://huggingface.co/Beehzod/UzTTS",
+      "snippet": "UzTTS This model is a fine-tuned version of microsoft/speecht5_tts on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Frontiers | A multimodal deep learning architecture for smoking ...",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1326050/full",
+      "snippet": "After filtering the image set with a multimodal model, we applied an image processing model to classify the remaining images further to improve accuracy. Among the publicly available datasets on smoking, we have used the \"smoker and non-smoker\" (Khan, 2020 ) for augmented (Shorten and Khoshgoftaar, 2019 ) fine-tuning."
+    },
+    {
+      "title": "Beehzod / 7january_new_tts_model - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/Beehzod/7january_new_tts_model/9f5cd0b3b44e5a4c76df95b09abb0976acfcedb1/overview",
+      "snippet": "Discover potential threats in the Beehzod / 7january_new_tts_model model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

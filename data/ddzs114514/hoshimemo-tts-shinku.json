@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ddzs114514/hoshimemo-tts-shinku",
+  "slug": "ddzs114514-hoshimemo-tts-shinku",
+  "author": "ddzs114514",
+  "url": "https://huggingface.co/ddzs114514/hoshimemo-tts-shinku",
+  "created_at": "2026-08-27T17:21:13.000Z",
+  "updated_at": "2026-08-27T17:25:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt-sovits",
+    "text-to-speech",
+    "voice-cloning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240320141,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "Shinku (Bionagato) - Hugging Face",
+      "url": "https://huggingface.co/Shinku/models",
+      "snippet": "Sort: Recently updated. Shinku/lora-anima-1.. Updated 19 days ago. Shinku/model-anima. Updated 23 days ago"
+    },
+    {
+      "title": "【Illustrious】shinku / 真紅 (NTE) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2036788516172575989",
+      "snippet": "Generate stunning anime art with the &#x27;【Illustrious】shinku / 真紅 (NTE)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Shinku｜Neverness to Everness｜DiT.2 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2035870722096596022",
+      "snippet": "Generate stunning anime art with the &#x27;Shinku｜Neverness to Everness｜DiT.2&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

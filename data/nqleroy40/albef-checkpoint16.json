@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nqleroy40/albef-checkpoint16",
+  "slug": "nqleroy40-albef-checkpoint16",
+  "author": "nqleroy40",
+  "url": "https://huggingface.co/nqleroy40/albef-checkpoint16",
+  "created_at": "2026-08-27T15:20:19.000Z",
+  "updated_at": "2026-08-27T15:20:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "multimodal/examples/albef/model.py at main · facebookresearch ... - GitHub",
+      "url": "https://github.com/facebookresearch/multimodal/blob/main/examples/albef/model.py",
+      "snippet": "TorchMultimodal is a PyTorch library for training state-of-the-art multimodal multi-task models at scale. - facebookresearch/multimodal"
+    },
+    {
+      "title": "GitHub - adversarial-for-goodness/Co-Attack: official PyTorch implement ...",
+      "url": "https://github.com/adversarial-for-goodness/Co-Attack/tree/main",
+      "snippet": "This is the official PyTorch implement of the paper \"Towards Adversarial Attack on Vision-Language Pre-training Models\" at ACM Multimedia 2022. We released the fine-tuned checkpoints (Baidu, password: iqvp) for VE task on ALBEF and TCL, which can be considered not only as an attacked model in this ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/TR-HASH-MoE-200M-130B-Checkpoints"
+    },
+    {
+      "title": "AnyLoRA - Checkpoint - bakedVae (blessed) fp16 NOT-PRUNED - Civitai",
+      "url": "https://civitai.com/models/23900/anylora-checkpoint",
+      "snippet": "Sinkin.ai Remember to use the pruned version when training (less vram needed). Also this is mostly for training on anime, drawings and cartoon. I made this model to ensure my future LoRA training is compatible with newer models, plus to get a model with a style neutral enough to get accurate styles with any style LoRA."
+    },
+    {
+      "title": "What is an AI Checkpoint? - WEKA",
+      "url": "https://www.weka.io/learn/glossary/ai-ml/ai-checkpoints/",
+      "snippet": "WEKA and AI Checkpoints The WEKA® Data Platform is an ideal storage solution for AI checkpointing because it provides the ultra-low-latency, high-throughput performance needed to quickly save and restore model states during training."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sharmitha27/green-ai-training-audit",
+  "slug": "sharmitha27-green-ai-training-audit",
+  "author": "Sharmitha27",
+  "url": "https://huggingface.co/Sharmitha27/green-ai-training-audit",
+  "created_at": "2026-08-27T15:05:01.000Z",
+  "updated_at": "2026-08-27T15:06:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "green-ai-audit-23f3002755 - Hugging Face",
+      "url": "https://huggingface.co/23f3002755/green-ai-audit-23f3002755",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Auditing Artificial Intelligence (AI): A Hands-On Course for Internal ...",
+      "url": "https://www.theiia.org/en/products/learning-solutions/course/auditing-artificial-intelligence-ai-a-hands-on-course-for-internal-auditors/",
+      "snippet": "In this hands-on course, participants will explore the core concepts, risks, and governance implications of Artificial Intelligence (AI) and Generative AI—focusing on their impact on audit scope, risk assessment, and controls."
+    },
+    {
+      "title": "mri2026tds/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/mri2026tds/green-ai-carbon-audit",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "ISACA® Artificial Intelligence Training and Resources",
+      "url": "https://www.isaca.org/resources/artificial-intelligence",
+      "snippet": "AI Training and Resources With a Real-World Focus Build foundational AI knowledge and develop role-specific skills in audit, security and risk."
+    },
+    {
+      "title": "Training Green AI Models Using Elite Samples - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/10897883",
+      "snippet": "The substantial increase in AI model training has considerable environmental implications, requiring energy-efficient and sustainable AI practices. On one hand, data-centric approaches show great potential towards training energy-efficient AI models. On the other hand, instance selection methods demonstrate the capability of training AI models with minimised training sets and negligible ..."
+    }
+  ]
+}

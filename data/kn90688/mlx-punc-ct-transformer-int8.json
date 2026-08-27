@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Kn90688/mlx-punc-ct-transformer-int8",
+  "slug": "kn90688-mlx-punc-ct-transformer-int8",
+  "author": "Kn90688",
+  "url": "https://huggingface.co/Kn90688/mlx-punc-ct-transformer-int8",
+  "created_at": "2026-08-27T13:17:42.000Z",
+  "updated_at": "2026-08-27T13:18:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ct-transformer-punct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20546606,
+  "parameters_human": "20.5M",
+  "storage_bytes": 82196389,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - manyeyes/AliCTTransformerPunc: c# library for decoding ...",
+      "url": "https://github.com/manyeyes/AliCTTransformerPunc",
+      "snippet": "The Punc model used in the project is the Controllable Time-delay Transformer model open-sourced by Alibaba&#x27;s Damo Academy. It can be used for punctuation prediction of the text output by the speech recognition model."
+    },
+    {
+      "title": "Kn90688/whisper · Hugging Face",
+      "url": "https://huggingface.co/Kn90688/whisper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CT-Transformer Series - ManySpeech - manyeyes.github.io",
+      "url": "https://manyeyes.github.io/manyspeech/en/models/punc/ct-transformer-punc.html",
+      "snippet": "NotesModel background: Punctuation model open-sourced by Alibaba DAMO Academy, built on the Controllable Time-delay Transformer (CT-Transformer) architecture. Designed primarily for post-processing of ASR results to predict and restore punctuation in text.Features: The model consists of three parts: Embedding, Encoder, Predictor. Embedding fuses word vectors and positional vectors; Encoder ..."
+    },
+    {
+      "title": "ONNX Runtime | Home",
+      "url": "https://onnxruntime.ai/",
+      "snippet": "Cross-platform accelerated machine learning. Built-in optimizations speed up training and inferencing with your existing technology stack."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

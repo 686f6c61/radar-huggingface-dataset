@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "russki/Qwen2.5-1.5B-Instruct-EXL3-4.0bpw",
+  "slug": "russki-qwen2-5-1-5b-instruct-exl3-4-0bpw",
+  "author": "russki",
+  "url": "https://huggingface.co/russki/Qwen2.5-1.5B-Instruct-EXL3-4.0bpw",
+  "created_at": "2026-08-27T16:48:47.000Z",
+  "updated_at": "2026-08-27T16:49:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen2",
+    "qwen2.5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 649890176,
+  "parameters_human": "649.9M",
+  "storage_bytes": 1299880786,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen2.5:1.5b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:1.5b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "adriabama06/Qwen2.5-1.5B-Instruct-exl3-8.0bpw · Hugging Face",
+      "url": "https://huggingface.co/adriabama06/Qwen2.5-1.5B-Instruct-exl3-8.0bpw",
+      "snippet": "Qwen2.5-1.5B-Instruct-exl3-8.0bpw Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics ..."
+    },
+    {
+      "title": "m5-docs",
+      "url": "https://docs.m5stack.com/en/stackflow/models/qwen2.5-1.5b-instruct",
+      "snippet": "Introduction Qwen2.5-1.5B-Instruct is an instruction-tuned language model in the Qwen2.5 series, with approximately 1.54 billion parameters. The main features of this model include:"
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "Qwen2.5-1.5B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "The general performance of Qwen2.5-Math-72B-Instruct surpasses both Qwen2-Math-72B-Instruct and GPT4-o, and even very small expert model like Qwen2.5-Math-1.5B-Instruct can achieve highly competitive performance against large language models."
+    }
+  ]
+}

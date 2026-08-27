@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lionelglo/aion-software-engineer-ai-3B-merged",
+  "slug": "lionelglo-aion-software-engineer-ai-3b-merged",
+  "author": "Lionelglo",
+  "url": "https://huggingface.co/Lionelglo/aion-software-engineer-ai-3B-merged",
+  "created_at": "2026-08-27T15:10:53.000Z",
+  "updated_at": "2026-08-27T15:18:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348572,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lionelglo/aion-software-engineer-ai-3B · Hugging Face",
+      "url": "https://huggingface.co/Lionelglo/aion-software-engineer-ai-3B",
+      "snippet": "Aion Software Engineer AI (3B) Overview Aion is a self-contained coding agent powered by a fine-tuned Qwen 2.5 Coder 3B model. It utilizes a framework-independent agentic environment designed for local execution and high-reliability coding tasks. Key Components Structured Scratchpad: An externalized markdown memory (agent_scratchpad.md) that the agent updates to maintain state across multiple ..."
+    },
+    {
+      "title": "Lionelglo/aion-software-engineer-ai-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Lionelglo/aion-software-engineer-ai-3B-GGUF",
+      "snippet": "Instructions to use Lionelglo/aion-software-engineer-ai-3B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - cognitolabs-ai/aion: Aion is the world&#x27;s first AI-native ...",
+      "url": "https://github.com/cognitolabs-ai/aion",
+      "snippet": "Aion Programming Language Aion is the world&#x27;s first AI-native programming language designed specifically for Large Language Models and agentic workflows."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Aion Labs | Powerful AI Models & Agents",
+      "url": "https://www.aionlabs.ai/",
+      "snippet": "Powerful AI designed for creative and production workloads — access via an OpenAI-compatible API, or deploy email agents that read, reason, and reply autonomously."
+    }
+  ]
+}

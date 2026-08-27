@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Itsjoaocosta/grounded-language-practice",
+  "slug": "itsjoaocosta-grounded-language-practice",
+  "author": "Itsjoaocosta",
+  "url": "https://huggingface.co/Itsjoaocosta/grounded-language-practice",
+  "created_at": "2026-08-27T13:37:06.000Z",
+  "updated_at": "2026-08-27T13:37:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    },
+    {
+      "title": "A Grounded Introduction to Large Language Model and Generative AI ...",
+      "url": "https://www.ida.org/research-and-publications/publication/a-grounded-introduction-to-large-language-model-and-generative-ai-technology",
+      "snippet": "This document is the first in an IDA series designed to introduce large language models (LLMs) and generative artificial intelligence systems (GAIs) to a…"
+    },
+    {
+      "title": "[2210.05359] Mind&#x27;s Eye: Grounded Language Model Reasoning through ...",
+      "url": "https://arxiv.org/abs/2210.05359",
+      "snippet": "Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world -- their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a ..."
+    },
+    {
+      "title": "Journal of Medical Internet Research - A Practical Guide and Assessment ...",
+      "url": "https://www.jmir.org/2025/1/e70122",
+      "snippet": "The application of ChatGPT 4-Turbo in grounded theory enhanced the efficiency and diversity of coding and updated the overall grounded theory process. Compared with manual coding, ChatGPT showed shortcomings in depth, context, connections, and coding organization."
+    },
+    {
+      "title": "Grounding Language Models - Càrn Mòr Cyber",
+      "url": "https://carnmorcyber.com/resources/ai-102/grounding-language-models/",
+      "snippet": "AI-102 Study Notes Generative AI Grounding Language Models Language models create coherent answers to questions, but what are those answers based on? Grounding provides specific context to the model to produce accurate, relevant responses rather than generic answers drawn from training data alone."
+    }
+  ]
+}

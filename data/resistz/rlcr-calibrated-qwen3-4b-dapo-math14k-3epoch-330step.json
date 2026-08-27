@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step",
+  "slug": "resistz-rlcr-calibrated-qwen3-4b-dapo-math14k-3epoch-330step",
+  "author": "resistz",
+  "url": "https://huggingface.co/resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step",
+  "created_at": "2026-08-27T13:32:27.000Z",
+  "updated_at": "2026-08-27T13:46:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317062,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-instruct/scripts/train/qwen/qwen3_4b_dapo_math_32k.sh at main ...",
+      "url": "https://github.com/allenai/open-instruct/blob/main/scripts/train/qwen/qwen3_4b_dapo_math_32k.sh",
+      "snippet": "AllenAI&#x27;s post-training codebase. Contribute to allenai/open-instruct development by creating an account on GitHub."
+    },
+    {
+      "title": "hkr04/qwen3-4b-grpo-dapo17k · Hugging Face",
+      "url": "https://huggingface.co/hkr04/qwen3-4b-grpo-dapo17k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 4B - Open Laboratory",
+      "url": "https://openlaboratory.com/models/qwen3-4b/",
+      "snippet": "A 4-billion parameter transformer model featuring dual reasoning modes, extensive multilingual training, and competitive performance across mathematical, coding, and logical reasoning benchmarks."
+    },
+    {
+      "title": "TMLR-Group-HF/GT-Qwen3-4B-Base-DAPO14k · Hugging Face",
+      "url": "https://huggingface.co/TMLR-Group-HF/GT-Qwen3-4B-Base-DAPO14k",
+      "snippet": "GT-GRPO: Qwen3-4B-Base trained on DAPO-14k This is the Qwen3-4B-Base model trained by GT-GRPO using DAPO-14k training set, as presented in the paper Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models. Paper Abstract While reinforcement learning with verifiable rewards (RLVR) is effective to improve the reasoning ability of large language models (LLMs), its ..."
+    }
+  ]
+}

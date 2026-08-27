@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vikramlingam/meg-v1",
+  "slug": "vikramlingam-meg-v1",
+  "author": "vikramlingam",
+  "url": "https://huggingface.co/vikramlingam/meg-v1",
+  "created_at": "2026-08-27T15:14:15.000Z",
+  "updated_at": "2026-08-27T15:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "speech-recognition",
+    "speech-enhancement",
+    "intent-preservation",
+    "disfluency-removal",
+    "punctuation",
+    "truecasing",
+    "streaming-asr",
+    "zipformer",
+    "edge-ai",
+    "on-device",
+    "automatic-speech-recognition",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103265856,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vikramlingam (Vikram Lingam) - Hugging Face",
+      "url": "https://huggingface.co/vikramlingam/datasets",
+      "snippet": "Fine-tuning, Math reasoning models, Edge AI, Retrieval systems, Automation agents"
+    },
+    {
+      "title": "vikramlingam (Vikram Lingam) - Hugging Face",
+      "url": "https://huggingface.co/vikramlingam",
+      "snippet": "Recent Activity updated a model 33 minutes ago vikramlingam/vik_lora View all activity"
+    },
+    {
+      "title": "GitHub - vikramlingam/vikramlingam · GitHub",
+      "url": "https://github.com/vikramlingam/vikramlingam",
+      "snippet": "I&#x27;m a Data Scientist with a passion for building custom AI solutions at the intersection of technology and finance. I create my own tools and write about my journey in AI, ML, and finance."
+    },
+    {
+      "title": "megam Object Detection Model (v1, 2025-03-24 12:12am) by megaments",
+      "url": "https://universe.roboflow.com/megaments/megam/dataset/1",
+      "snippet": "PaliGemma JSONL format used for fine-tuning PaliGemma, Google&#x27;s open multimodal vision model."
+    },
+    {
+      "title": "vikramlingam (Vikram Lingam) · GitHub",
+      "url": "https://github.com/vikramlingam/",
+      "snippet": "The Market Rhythm Model is an advanced predictive tool for financial market analysis, aimed at detecting rhythmic patterns and market trends based on stock price and volume data."
+    }
+  ]
+}

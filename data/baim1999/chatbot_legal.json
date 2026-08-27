@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "baim1999/chatbot_legal",
+  "slug": "baim1999-chatbot_legal",
+  "author": "baim1999",
+  "url": "https://huggingface.co/baim1999/chatbot_legal",
+  "created_at": "2026-08-27T15:03:21.000Z",
+  "updated_at": "2026-08-27T15:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baim1999/llama3-legal-chatbot · Hugging Face",
+      "url": "https://huggingface.co/baim1999/llama3-legal-chatbot",
+      "snippet": "baim1999 / llama3-legal-chatbot like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "leoeo999/AI-Legal-Chatbot · Hugging Face",
+      "url": "https://huggingface.co/leoeo999/AI-Legal-Chatbot",
+      "snippet": "leoeo999 / AI-Legal-Chatbot like 1 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "All Chatbots AI - Access All AI Chatbots in One Place",
+      "url": "https://allchatbots.ai/",
+      "snippet": "Access GPT-4o, Claude, Gemini, Grok, DeepSeek and more AI models in one platform. One subscription, unlimited AI power."
+    },
+    {
+      "title": "legal-chatbot · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/legal-chatbot",
+      "snippet": "A legal chatbot project built as a practical application of NLP and conversational AI. Designed to understand and respond to legal queries using natural language processing techniques. Includes dataset preparation, model training, and a simple interactive interface, all in Python."
+    }
+  ]
+}

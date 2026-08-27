@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jzthompson/project-multimodal-generation",
+  "slug": "jzthompson-project-multimodal-generation",
+  "author": "jzthompson",
+  "url": "https://huggingface.co/jzthompson/project-multimodal-generation",
+  "created_at": "2026-08-27T18:09:05.000Z",
+  "updated_at": "2026-08-27T18:09:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "multimodal-ai · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/multimodal-ai",
+      "snippet": "Multi-modal Generative Media Skills for AI Agents (Claude Code, Cursor, Gemini CLI). High-quality image, video, and audio generation powered by muapi.ai."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Multi-modal generative AI (Artificial Intelligence) has attracted increasing attention from both academia and industry. Particularly, two dominant families of techniques have emerged: i) Multi-modal large language models (LLMs) demonstrate impressive ability for multi-modal understanding; and ii) Diffusion models exhibit remarkable multi-modal powers in terms of multi-modal generation ..."
+    },
+    {
+      "title": "Multimodal AI - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/multimodal-ai",
+      "snippet": "Overview What is an example of multimodal AI? A multimodal model is a ML (machine learning) model that is capable of processing information from different modalities, including images, videos, and text. For example, Google&#x27;s multimodal model, Gemini, can receive a photo of a plate of cookies and generate a written recipe as a response and vice ..."
+    },
+    {
+      "title": "GitHub - microsoft/multimodal-ai: Enterprise-ready solution leveraging ...",
+      "url": "https://github.com/microsoft/multimodal-ai",
+      "snippet": "This project leverages the latest advancements in multimodal AI, to implement generative AI solutions such as Retrieval Augmented Generation (RAG), image classification or video analysis, for content based on text, images, audio and video."
+    }
+  ]
+}

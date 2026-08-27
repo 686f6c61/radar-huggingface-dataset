@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KordAI/KeawGPT-Base",
+  "slug": "kordai-keawgpt-base",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/KeawGPT-Base",
+  "created_at": "2026-08-27T15:04:12.000Z",
+  "updated_at": "2026-08-27T15:08:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/qwen3-4b-base-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KordAI (KordAI) - Hugging Face",
+      "url": "https://huggingface.co/KordAI",
+      "snippet": "Naphon published a dataset about 3 hours ago izyya published a model about 5 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=kordai",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: kordai Clear all"
+    },
+    {
+      "title": "𝗞𝗢𝗥𝗗 - Telegram",
+      "url": "https://t.me/s/kordai_channel?before=13",
+      "snippet": "spaceify is partially down, so are your bots, but not all bots all we can do is wait or you can migrate to another if you&#x27;ve got any"
+    },
+    {
+      "title": "GitHub - korda-ai/korda-ai-spec: The Deterministic Autonomous Agent ...",
+      "url": "https://github.com/korda-ai/korda-ai-spec",
+      "snippet": "Korda AI is a formal grammar layer that sits between an AI model and the real world. Instead of letting a model call tools or APIs freely, the model must emit a Korda AI statement. That statement is parsed, permission-checked, and validated before anything executes. Certain actions are structurally impossible to express: exec without a timeout — cannot be written delete-rows without a WHERE ..."
+    },
+    {
+      "title": "Tonmai GPT by KordAI — VRAM 7.6GB, 4K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/KordAI%2FTonmai-GPT,3BihPjKx6SeReZrNOz7yOB",
+      "snippet": "Tonmai GPT is an open-source 3.8b LLM by KordAI. VRAM 7.6GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

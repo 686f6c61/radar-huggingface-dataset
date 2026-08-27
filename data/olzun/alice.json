@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Olzun/alice",
+  "slug": "olzun-alice",
+  "author": "Olzun",
+  "url": "https://huggingface.co/Olzun/alice",
+  "created_at": "2026-08-27T12:57:50.000Z",
+  "updated_at": "2026-08-27T13:33:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 779089101,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olzun/alice · Hugging Face",
+      "url": "https://huggingface.co/Olzun/alice",
+      "snippet": "Olzun / alice like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Alice v1: Distillation-Enhanced Video Generation Surpassing Closed ...",
+      "url": "https://arxiv.org/html/2605.08115v1",
+      "snippet": "Abstract We present Alice v1, a 14-billion parameter open-source video generation model that achieves state-of-the-art quality through consistency distillation with score regularization (rCM). Contrary to conventional distillation—which trades quality for speed—we demonstrate that rCM-based distillation can exceed teacher model quality."
+    },
+    {
+      "title": "GitHub - Aliceframework/Alice: Alice is a Python-based AI agent ...",
+      "url": "https://github.com/Aliceframework/Alice",
+      "snippet": "Alice is a Python-based AI agent framework with a focus on neural-symbolic integration - Aliceframework/Alice"
+    },
+    {
+      "title": "Alice AI (AI model family) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alice_AI_(AI_model_family)",
+      "snippet": "Alice AI is a neural network family developed by the Russian company Yandex LLC. Alice AI can create and revise texts, generate new ideas and capture the context of the conversation with the user."
+    },
+    {
+      "title": "GitHub - mirage-video/Alice: Alice: A 14B parameter open-source text-to ...",
+      "url": "https://github.com/mirage-video/Alice",
+      "snippet": "Alice is a 14-billion parameter open-source text-to-video generation model developed by Mirage. Through consistency distillation with score regularization (rCM), Alice achieves state-of-the-art quality while requiring only 4 denoising steps for inference—a 7× speedup over traditional 50-step diffusion models. Key Results: Generates 5-second 720p videos at 24fps 4-step inference (vs. 50 ..."
+    }
+  ]
+}

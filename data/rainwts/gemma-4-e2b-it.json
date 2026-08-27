@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RainWTS/gemma-4-E2B-it",
+  "slug": "rainwts-gemma-4-e2b-it",
+  "author": "RainWTS",
+  "url": "https://huggingface.co/RainWTS/gemma-4-E2B-it",
+  "created_at": "2026-08-27T14:11:52.000Z",
+  "updated_at": "2026-08-27T14:11:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 30836389622,
+  "storage_human": "30.8 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4 E2B: Complete Guide to Google&#x27;s Edge AI Model 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-e2b",
+      "snippet": "Explore the capabilities of Gemma 4 E2B, Google&#x27;s latest edge-optimized AI model. Learn about its native multimodality, thinking features, and Apache 2.0 license."
+    },
+    {
+      "title": "Gemma4 E2B: Ultimate Guide to Small AI Models in Gaming 2026",
+      "url": "https://www.gemma4.wiki/guide/gemma4-e2b",
+      "snippet": "This small but mighty model is part of Google&#x27;s latest family of open-weights AI, specifically designed to run at high speeds on consumer hardware and mobile devices. In this comprehensive guide, we will break down why gemma4 e2b is considered a breakthrough for local AI deployment."
+    }
+  ]
+}

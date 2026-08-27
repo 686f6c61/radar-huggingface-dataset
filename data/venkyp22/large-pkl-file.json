@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "VenkyP22/large-pkl-file",
+  "slug": "venkyp22-large-pkl-file",
+  "author": "VenkyP22",
+  "url": "https://huggingface.co/VenkyP22/large-pkl-file",
+  "created_at": "2026-08-27T15:28:18.000Z",
+  "updated_at": "2026-08-27T15:42:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201121297,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Designing and Training the AI Model: From Data to a Production-Ready ...",
+      "url": "https://developers-heaven.net/blog/designing-and-training-the-ai-model-from-data-to-a-production-ready-pkl-file/",
+      "snippet": "Mastering AI model training and deployment, culminating in the creation of a production-ready .pkl file, is an essential skill for any aspiring data scientist or machine learning engineer."
+    },
+    {
+      "title": "List of ML File Formats - GitHub",
+      "url": "https://github.com/trailofbits/ml-file-formats",
+      "snippet": "This repository lists file formats used in ML/AI systems. It can be used as a resource for tool development and vulnerability research. We aim to keep this list as up-to-date and accurate as possible. If you discover any missing file formats, inaccuracies, or if you have more details to contribute, please raise an issue or submit a pull request."
+    },
+    {
+      "title": "Saving a machine learning Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/saving-a-machine-learning-model/",
+      "snippet": "In machine learning, while working with scikit learn library, we need to save the trained models in a file and restore them in order to reuse them to compare the model with other models, and to test the model on new data. The saving of data is called Serialization, while restoring the data is called Deserialization."
+    },
+    {
+      "title": "Common AI Model Formats - Hugging Face",
+      "url": "https://huggingface.co/blog/ngxson/common-ai-model-formats",
+      "snippet": "A Blog post by Xuan-Son Nguyen on Hugging Face"
+    },
+    {
+      "title": "From .pth to p0wned: Abuse of Pickle Files in AI Model Supply ... - Rapid7",
+      "url": "https://www.rapid7.com/blog/post/from-pth-to-p0wned-abuse-of-pickle-files-in-ai-model-supply-chains/",
+      "snippet": "Recent threat research out of Rapid7 highlights a growing risk in the Python and machine learning ecosystem: the exploitation of serialized model files, specifically those using Python&#x27;s pickle module."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Heretic-NoRefusal-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-heretic-norefusal-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-NoRefusal-i1-GGUF",
+  "created_at": "2026-08-27T14:10:26.000Z",
+  "updated_at": "2026-08-27T15:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliterated",
+    "abliteration",
+    "uncensored",
+    "directional-ablation",
+    "qwen3.8",
+    "qwen3_5",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:mlabonne/harmless_alpaca",
+    "dataset:mlabonne/harmful_behaviors",
+    "base_model:sss22213/Qwen3.8-27B-Heretic-NoRefusal",
+    "base_model:quantized:sss22213/Qwen3.8-27B-Heretic-NoRefusal",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 89932315968,
+  "storage_human": "89.9 GB",
+  "base_model": "sss22213/Qwen3.8-27B-Heretic-NoRefusal",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Heretic-i1-GGUF like 0 Transformers GGUF English qwen qwen3.8 heretic abliterated uncensored imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen-3.8-27B-Heretic-i1-GGUF · Discussions",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-i1-GGUF/discussions",
+      "snippet": "mradermacher / Qwen-3.8-27B-Heretic-i1-GGUF like 0 Transformers GGUF English imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "The Heretic version, generated without any human effort, achieves the same level of refusal suppression as other abliterations, but at a much lower KL divergence, indicating less damage to the original model&#x27;s capabilities. (You can reproduce those numbers using Heretic&#x27;s built-in evaluation functionality, e.g. heretic --model google/gemma-3-12b-it --evaluate-model p-e-w/gemma-3-12b-it-heretic ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

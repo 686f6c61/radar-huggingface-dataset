@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dhmaidan/bridge-arat5v2-lora",
+  "slug": "dhmaidan-bridge-arat5v2-lora",
+  "author": "dhmaidan",
+  "url": "https://huggingface.co/dhmaidan/bridge-arat5v2-lora",
+  "created_at": "2026-08-27T13:48:13.000Z",
+  "updated_at": "2026-08-27T13:48:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24766774,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiaaEssam/Fine_tuned_AraT5v2_on_QA_dataset_using_LoRA - GitHub",
+      "url": "https://github.com/DiaaEssam/Fine_tuned_AraT5v2_on_QA_dataset_using_LoRA",
+      "snippet": "Fine-tuning AraT5v2 for Arabic extractive question answering using parameter-efficient fine-tuning (LoRA / PEFT). Trained and evaluated on a SQuAD-style Arabic QA dataset. The model learns to extract short answer spans from a given Arabic context passage."
+    },
+    {
+      "title": "README.md · Diaa-Essam/AraT5v2_on_QA_dataset_using_LoRA at main",
+      "url": "https://huggingface.co/Diaa-Essam/AraT5v2_on_QA_dataset_using_LoRA/blame/main/README.md",
+      "snippet": "Instructions to use Diaa-Essam/AraT5v2_on_QA_dataset_using_LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Best bridge - v1 AI LORA - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/886724509594301109",
+      "snippet": "Download bridge - free LORA Illustrious AI model on TENSORHUB ART. By mimiking"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,863 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2 Jojocodex/minimax-h3-Camera-Motion-lora"
+    }
+  ]
+}

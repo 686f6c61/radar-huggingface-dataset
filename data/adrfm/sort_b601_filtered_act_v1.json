@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adrfm/sort_b601_filtered_act_v1",
+  "slug": "adrfm-sort_b601_filtered_act_v1",
+  "author": "adrfm",
+  "url": "https://huggingface.co/adrfm/sort_b601_filtered_act_v1",
+  "created_at": "2026-08-27T16:19:38.000Z",
+  "updated_at": "2026-08-27T16:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:adrfm/sort_b601_filtered",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723204,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adrfm (Aaron De Rybel) - Hugging Face",
+      "url": "https://huggingface.co/adrfm",
+      "snippet": "Recent Activity updated a dataset1 day ago adrfm/rollout_pick_place_b601_v2_act_ published a dataset1 day ago adrfm/rollout_pick_place_b601_v2_act_ updated a dataset1 day ago adrfm/rollout_pick_place_b601_v2_act__20260825_140403 View all activity"
+    },
+    {
+      "title": "adrfm/pick_place_b601_act_v1 · Hugging Face",
+      "url": "https://huggingface.co/adrfm/pick_place_b601_act_v1",
+      "snippet": "Instructions to use adrfm/pick_place_b601_act_v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use adrfm/pick_place_b601_act_v1 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your ..."
+    },
+    {
+      "title": "Zen | OpenCode",
+      "url": "https://opencode.ai/docs/zen/",
+      "snippet": "We then worked with a few providers to make sure these were being served correctly. Finally, we benchmarked the combination of the model/provider and came up with a list that we feel good recommending. OpenCode Zen is an AI gateway that gives you access to these models."
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code collaboratively."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

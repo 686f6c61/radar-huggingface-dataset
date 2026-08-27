@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wt5719001/DaSiWa-Anima",
+  "slug": "wt5719001-dasiwa-anima",
+  "author": "wt5719001",
+  "url": "https://huggingface.co/wt5719001/DaSiWa-Anima",
+  "created_at": "2026-08-27T12:15:41.000Z",
+  "updated_at": "2026-08-27T12:15:42.000Z",
+  "license": "anima",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "dasiwa",
+    "anime",
+    "base_model:circlestone-labs/Anima",
+    "base_model:finetune:circlestone-labs/Anima",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10614372456,
+  "storage_human": "10.6 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaSiWa - Anima - Obsidian Archives v2 | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2627349/dasiwa-anima",
+      "snippet": "DaSiWa - Anima Refer to the official Anima page for recommended parameters and documentation. 🖤 Why I Made This Anima was hard to tame for me, so I..."
+    },
+    {
+      "title": "darksidewalker/DaSiWa-Anima · Hugging Face",
+      "url": "https://huggingface.co/darksidewalker/DaSiWa-Anima",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · darksidewalker/DaSiWa-Anima at main",
+      "url": "https://huggingface.co/darksidewalker/DaSiWa-Anima/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DaSiWa - Anima Reviews | Rated 5 Stars by 160 Users on Civitai",
+      "url": "https://civitai.red/models/2627349/reviews?modelVersionId=2949827",
+      "snippet": "Explore user reviews of the DaSiWa - Anima AI model on Civitai, rated 5 stars by 207 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "Best DaSiWa - Anima Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/dasiwa---anima-2627349-download",
+      "snippet": "DaSiWa - AnimaRefer to the official Anima page for recommended parameters and documentation.🖤 Why I Made ThisAnima was hard to tame for me, so I wanted as alwa"
+    }
+  ]
+}

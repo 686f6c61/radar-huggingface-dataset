@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "weniny/Market_Value_predictor",
+  "slug": "weniny-market_value_predictor",
+  "author": "weniny",
+  "url": "https://huggingface.co/weniny/Market_Value_predictor",
+  "created_at": "2026-08-27T12:01:14.000Z",
+  "updated_at": "2026-08-27T12:01:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ali-weniny/Market-value-predictor-model · GitHub",
+      "url": "https://github.com/Ali-weniny/Market-value-predictor-model",
+      "snippet": "Contribute to Ali-weniny/Market-value-predictor-model development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - WinnerAI-model/WIN_AI: Market Predictor AI Model",
+      "url": "https://github.com/WinnerAI-model/WIN_AI",
+      "snippet": "Market Predictor AI Model. Contribute to WinnerAI-model/WIN_AI development by creating an account on GitHub."
+    },
+    {
+      "title": "Explainable artificial intelligence model for identifying Market Value ...",
+      "url": "https://arxiv.org/html/2311.04599",
+      "snippet": "However, the study has limitations, like underestimating superstar players&#x27; values and needing larger datasets. Future research directions include enhancing the model&#x27;s applicability and exploring value prediction in various contexts. Keywords Market Value, Feature Selection, Explainable Machine Learning Models"
+    },
+    {
+      "title": "Machine Learning for Football Player Market Value Prediction ... - Medium",
+      "url": "https://medium.com/@paudelsamir/machine-learning-for-football-player-market-value-prediction-end-to-end-project-b776ee25880b",
+      "snippet": "Machine Learning for Football Player Market Value Prediction: End-to-End Project Disclaimer: This article is more about sharing insights and key takeaways from my journey of 10 days with the ..."
+    },
+    {
+      "title": "Stock market prediction using artificial intelligence: A systematic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590291124000615",
+      "snippet": "The principal objective of this research was to systematically review the existing systematic reviews on Artificial Intelligence (AI) models applied to stock market prediction to provide valuable inputs for the development of strategies in stock market investments."
+    }
+  ]
+}

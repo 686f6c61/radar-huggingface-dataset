@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Akashraobury/matching",
+  "slug": "akashraobury-matching",
+  "author": "Akashraobury",
+  "url": "https://huggingface.co/Akashraobury/matching",
+  "created_at": "2026-08-27T17:53:47.000Z",
+  "updated_at": "2026-08-27T17:53:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akashraobury (Akash Rao) - Hugging Face",
+      "url": "https://huggingface.co/Akashraobury",
+      "snippet": "AI & ML interests ML in healthcare — yes, it&#x27;s as hard as it sounds"
+    },
+    {
+      "title": "Akashraobury/model_112034448_flamingo_nano · Hugging Face",
+      "url": "https://huggingface.co/Akashraobury/model_112034448_flamingo_nano",
+      "snippet": "model_112034448_flamingo_nano.py Model Overview A nano -scale implementation of the flamingo architecture, built for retrieval tasks."
+    },
+    {
+      "title": "Researchers Tested AI Against 100,000 Humans on Creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today&#x27;s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 121 Estimated models among 403 tracked LLMs — 406 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI Candidate Matching: A Complete Guide - Recruiterflow Blog",
+      "url": "https://recruiterflow.com/blog/candidate-matching/",
+      "snippet": "Learn how AI candidate matching works, what agencies need to use it effectively, and how to choose the right AI tools in this complete guide."
+    }
+  ]
+}

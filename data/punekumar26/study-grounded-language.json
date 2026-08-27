@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PUNEKUMAR26/study-grounded-language",
+  "slug": "punekumar26-study-grounded-language",
+  "author": "PUNEKUMAR26",
+  "url": "https://huggingface.co/PUNEKUMAR26/study-grounded-language",
+  "created_at": "2026-08-27T14:40:47.000Z",
+  "updated_at": "2026-08-27T14:40:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PUNEKUMAR26 (दिव्या शर्मा) - Hugging Face",
+      "url": "https://huggingface.co/PUNEKUMAR26",
+      "snippet": "I train models and sometimes they work"
+    },
+    {
+      "title": "PUNEKUMAR26/paper_020208443_grounded_language · Hugging Face",
+      "url": "https://huggingface.co/PUNEKUMAR26/paper_020208443_grounded_language",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introduction to Large Language Models | Machine Learning | Google for ...",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "snippet": "This course module provides an overview of language models and large language models (LLMs), covering concepts including tokens, n-grams, Transformers, self-attention, distillation, fine-tuning, and prompt engineering."
+    },
+    {
+      "title": "Large Language Models (LLMs) with Google AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/llms",
+      "snippet": "What large language model services does Google Cloud offer? Agent Studio on Gemini Enterprise Agent Platform: Gives you access to over 200 large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications."
+    },
+    {
+      "title": "[2210.05359] Mind&#x27;s Eye: Grounded Language Model Reasoning through ...",
+      "url": "https://arxiv.org/abs/2210.05359",
+      "snippet": "Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world -- their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OiyresProo/ruvex-model",
+  "slug": "oiyresproo-ruvex-model",
+  "author": "OiyresProo",
+  "url": "https://huggingface.co/OiyresProo/ruvex-model",
+  "created_at": "2026-08-27T15:18:35.000Z",
+  "updated_at": "2026-08-27T15:18:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OiyresProo (Amir) - Hugging Face",
+      "url": "https://huggingface.co/OiyresProo",
+      "snippet": "Recent Activity updated a Space1 day ago OiyresProo/oiyrse123pro published a Space2 days ago OiyresProo/oiyrse123pro published a Space2 days ago OiyresProo/oiysresskss View all activity"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "A bigger model isn&#x27;t always better. With a wide variety of model types and sizes, Model Garden provides the flexibility to use the best resource for your business needs. Easily customize these models with your own data, deploy to applications with just one-click, and scale with end-to-end ML Ops built-in."
+    },
+    {
+      "title": "AI Models Directory | Browse & Filter by Capabilities",
+      "url": "https://aimodels.dev/models",
+      "snippet": "Explore our comprehensive AI models directory. Filter by capabilities, providers, and performance metrics to find the perfect AI model for your needs."
+    }
+  ]
+}

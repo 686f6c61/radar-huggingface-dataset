@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/MoonViT-V2",
+  "slug": "immanuelpeter-moonvit-v2",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/MoonViT-V2",
+  "created_at": "2026-08-27T18:26:24.000Z",
+  "updated_at": "2026-08-27T18:26:58.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonvit_v2",
+    "feature-extraction",
+    "vision",
+    "image-feature-extraction",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 401214464,
+  "parameters_human": "401.2M",
+  "storage_bytes": 894735560,
+  "storage_human": "895 MB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI4Industry/MoonViT-V2 · Hugging Face",
+      "url": "https://huggingface.co/AI4Industry/MoonViT-V2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI4Industry/MoonViT-V2 at main - Hugging Face",
+      "url": "https://huggingface.co/AI4Industry/MoonViT-V2/tree/main",
+      "snippet": "AI4Industry / MoonViT-V2 like 5 Image Feature Extraction Transformers Safetensors moonvit_v2 feature-extraction vision custom_code arxiv:2607.24653 License:kimi-k3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "moonvit-v2-visual-representations/README.md at main - GitHub",
+      "url": "https://github.com/weeknan/moonvit-v2-visual-representations/blob/main/README.md",
+      "snippet": "Exploring Visual Representations in MoonViT-V2 This repository compares MoonViT-V2 with similarly sized vision backbones on ImageNet-1K using a frozen linear probe and full-parameter fine-tuning. All models are evaluated at 224 × 224 resolution with final-layer patch-token mean pooling."
+    },
+    {
+      "title": "immanuel-peter (Immanuel) · GitHub",
+      "url": "https://github.com/immanuel-peter",
+      "snippet": "An AI-powered research matching platform that connects students with labs using semantic search and LLM-based fit scoring. It replaces fragmented outreach with a centralized pipeline for discovery, parsing, ranking, and review."
+    },
+    {
+      "title": "MoonViT-V2（The 27-layer bias-free Vision Transformer encoder within the ...",
+      "url": "https://baike.baidu.com/en/item/MoonViT-V2/4791538",
+      "snippet": "The model features a 27-layer MoonViT-V2 visual encoder, and its model weights with a scale of 3 trillion parameters were made publicly available worldwide. The open-sourced Kimi K3 achieved Day 0 Adaptation for the Huawei Ascend Computing Platform upon its initial release."
+    }
+  ]
+}

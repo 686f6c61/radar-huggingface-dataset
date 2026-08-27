@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Saeedfa/world8-market-data",
+  "slug": "saeedfa-world8-market-data",
+  "author": "Saeedfa",
+  "url": "https://huggingface.co/Saeedfa/world8-market-data",
+  "created_at": "2026-08-27T12:17:28.000Z",
+  "updated_at": "2026-08-27T12:45:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "Artificial Intelligence (AI) Market - MarketsandMarkets",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-market-74851580.html",
+      "snippet": "The artificial intelligence market is being influenced by several key themes that span across different geographies, industries, and types of buyers. Enterprise buyers are increasingly moving away from standalone AI tools and are opting for comprehensive platforms that integrate data infrastructure, model deployment, and workflow automation into a single environment. Generative AI has now ..."
+    },
+    {
+      "title": "AI Trends (August 2026) — AI Trend Analysis, LLM Statistics & Industry ...",
+      "url": "https://llm-stats.com/ai-trends",
+      "snippet": "In-depth AI trend analysis covering AI trends across performance, pricing, open-source progress, and the US vs China race. Interactive charts of every major AI model and benchmark, updated continuously."
+    },
+    {
+      "title": "The State of AI: Global Survey 2026 | McKinsey",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+      "snippet": "In this 2026 edition of the annual McKinsey State of AI global survey, we look at the latest trends shaping how organizations use artificial intelligence."
+    }
+  ]
+}

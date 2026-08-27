@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuaperezson/self-supervised",
+  "slug": "joshuaperezson-self-supervised",
+  "author": "joshuaperezson",
+  "url": "https://huggingface.co/joshuaperezson/self-supervised",
+  "created_at": "2026-08-27T13:06:02.000Z",
+  "updated_at": "2026-08-27T13:06:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Self-supervised learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Self-supervised_learning",
+      "snippet": "Self-supervised learning (SSL) is a paradigm in machine learning where a model is trained on a task using the data itself to generate supervisory signals, rather than relying on externally-provided labels. In the context of neural networks, self-supervised learning aims to leverage inherent structures or relationships within the input data to create meaningful training signals. SSL tasks are ..."
+    },
+    {
+      "title": "What Is Self-Supervised Learning? Examples & Applications",
+      "url": "https://www.snowflake.com/en/fundamentals/self-supervised-learning/",
+      "snippet": "Learn what self-supervised learning is and how it works. Explore self-learning AI, key models, and comparisons with supervised and unsupervised learning."
+    },
+    {
+      "title": "Combining Theory of Mind and Kindness for Self-Supervised Human-AI ...",
+      "url": "https://www.bohrium.com/paper-details/combining-theory-of-mind-and-kindness-for-self-supervised-human-ai-alignment/1061888628906524687-108591",
+      "snippet": "Download the full PDF of Combining Theory of Mind and Kindness for Self-Supervised. Includes comprehensive summary, implementation details, and key takeaways.Joshua T. S. Hewson"
+    },
+    {
+      "title": "A Cookbook of Self-Supervised Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2304.12210",
+      "snippet": "Self-supervised learning, dubbed \"the dark matter of intelligence\" 1, is a promising path to advance machine learning. As opposed to supervised learning, which is limited by the availability of labeled data, self-supervised approaches can learn from vast unlabeled data (Chen et al., 2020b; Misra and Maaten, 2020). Self-supervised learning (SSL) underpins deep learning&#x27;s success in ..."
+    },
+    {
+      "title": "A survey on design choices for self-supervised learning in computer ...",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11506-9",
+      "snippet": "Self-supervised learning is a successful strategy to overcome data scarcity and improve robustness in computer vision by adding a pretext task that can exploit inherent data relationships as supervision signals during pretraining. However, the combination of pretraining and downstream training renders model design more complex, as additional design choices are required. This paper analyses the ..."
+    }
+  ]
+}

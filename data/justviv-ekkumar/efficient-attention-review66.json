@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justviv-ekkumar/efficient-attention-review66",
+  "slug": "justviv-ekkumar-efficient-attention-review66",
+  "author": "justviv-ekkumar",
+  "url": "https://huggingface.co/justviv-ekkumar/efficient-attention-review66",
+  "created_at": "2026-08-27T13:49:04.000Z",
+  "updated_at": "2026-08-27T13:49:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2311.16484v2",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "AI News Today — August 27, 2026 | Latest AI Updates | AI Herald",
+      "url": "https://artificialintelligenceherald.com/ai-news-today",
+      "snippet": "AI News Today The latest artificial intelligence news, model releases, research breakthroughs, and industry updates — curated daily by AI Herald."
+    }
+  ]
+}

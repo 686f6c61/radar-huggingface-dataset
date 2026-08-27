@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ddt101/vinci_illus.safetensors",
+  "slug": "ddt101-vinci_illus-safetensors",
+  "author": "ddt101",
+  "url": "https://huggingface.co/ddt101/vinci_illus.safetensors",
+  "created_at": "2026-08-27T15:25:22.000Z",
+  "updated_at": "2026-08-27T15:25:35.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:stabilityai/stable-diffusion-3.5-large",
+    "base_model:adapter:stabilityai/stable-diffusion-3.5-large",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233581675,
+  "storage_human": "234 MB",
+  "base_model": "stabilityai/stable-diffusion-3.5-large",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Safetensors - Hugging Face",
+      "url": "https://huggingface.co/docs/safetensors/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model.safetensors · simpledirect/Vinci-Piccolo-1.0 at main",
+      "url": "https://huggingface.co/simpledirect/Vinci-Piccolo-1.0/blob/main/model.safetensors",
+      "snippet": "like 3 Follow SimpleDirect 3 Image-Text-to-Text Transformers Safetensors qwen3_5 conversational chat character constitutional-ai simpledirect vinci License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "safetensors AI Models | Civitai",
+      "url": "https://civitai.com/tag/safetensors",
+      "snippet": "safetensors Browse 26 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with safetensors."
+    },
+    {
+      "title": "Safetensors Inspector",
+      "url": "https://safetensors-inspector.roundtrip.dev/",
+      "snippet": "Analyze and inspect .safetensors model files directly in your browser. View metadata, tensors, and model details for AI/ML models."
+    },
+    {
+      "title": "How do i load safetensor models? : r/StableDiffusion - Reddit",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/zjv4t6/how_do_i_load_safetensor_models/",
+      "snippet": "I have been trying to use some safetensor models, but my SD only recognizes .ckpt files. I installed safe tensor by (pip install safetensors). Then i placed the model in models/Stable-diffusion. Can anyone please tell me what i need to do?"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shwetasssland/prompt-engineering-slim-2024",
+  "slug": "shwetasssland-prompt-engineering-slim-2024",
+  "author": "shwetasssland",
+  "url": "https://huggingface.co/shwetasssland/prompt-engineering-slim-2024",
+  "created_at": "2026-08-27T18:04:33.000Z",
+  "updated_at": "2026-08-27T18:04:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering for AI Guide | Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+      "snippet": "What is prompt engineering? Prompt engineering is the art and science of designing and optimizing prompts to guide AI models, particularly LLMs, towards generating the desired responses. By carefully crafting prompts, you provide the model with context, instructions, and examples that help it understand your intent and respond in a meaningful way."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    },
+    {
+      "title": "Prompt Engineering Institute | Learn Practical AI",
+      "url": "https://promptengineering.org/",
+      "snippet": "Learn prompt engineering, LLMs, AI agents, RAG, and automation through practical articles, free lessons, and professional AI training."
+    },
+    {
+      "title": "Prompt Engineering Guide: The Ultimate Guide to Generative AI",
+      "url": "https://learnprompting.org/docs/introduction",
+      "snippet": "Learn Prompting offers a comprehensive, free guide on Generative AI and Prompt Engineering, perfect for beginners and advanced users alike. Start your AI journey now!"
+    }
+  ]
+}

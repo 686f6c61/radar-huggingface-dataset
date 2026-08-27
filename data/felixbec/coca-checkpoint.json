@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixbec/coca-checkpoint",
+  "slug": "felixbec-coca-checkpoint",
+  "author": "felixbec",
+  "url": "https://huggingface.co/felixbec/coca-checkpoint",
+  "created_at": "2026-08-27T14:16:03.000Z",
+  "updated_at": "2026-08-27T14:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Coca Cola Mix - 1 SDXL - Free AI CHECKPOINT | TensorHub Art",
+      "url": "https://tensorhub.art/models/713799336955223464",
+      "snippet": "Download Coca Cola Mix - free CHECKPOINT SDXL 1.0 AI model on TENSORHUB ART. SDXL. By Niolas"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CoCa model | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/coca-model",
+      "snippet": "Explore cutting-edge AI/ML research on CoCa model."
+    },
+    {
+      "title": "GitHub - AIGeeksGroup/3DCoCav2: 3D CoCa v2: Contrastive Learners with ...",
+      "url": "https://github.com/AIGeeksGroup/3DCoCav2",
+      "snippet": "3D CoCa v2: Contrastive Learners with Test-Time Search for Generalizable Spatial Intelligence - AIGeeksGroup/3DCoCav2"
+    }
+  ]
+}

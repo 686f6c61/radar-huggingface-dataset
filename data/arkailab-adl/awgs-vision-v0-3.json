@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ArkAiLab-Adl/awgs-vision-v0.3",
+  "slug": "arkailab-adl-awgs-vision-v0-3",
+  "author": "ArkAiLab-Adl",
+  "url": "https://huggingface.co/ArkAiLab-Adl/awgs-vision-v0.3",
+  "created_at": "2026-08-21T17:21:01.000Z",
+  "updated_at": "2026-08-27T16:49:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "awgs",
+    "awgs-vision",
+    "image-classification",
+    "content-moderation",
+    "image-safety",
+    "gemma-4",
+    "vision",
+    "multimodal",
+    "unsloth",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E2B",
+    "base_model:finetune:unsloth/gemma-4-E2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10306829382,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArkAiLab-Adl/awgs-vision-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/ArkAiLab-Adl/awgs-vision-v0.1",
+      "snippet": "AWGS Vision v0.1 is an experimental multimodal vision model designed for image safety and content classification. It is fine-tuned from Google&#x27;s Gemma 4 E2B and trained to analyze images and return structured safety-related predictions."
+    },
+    {
+      "title": "GitHub - ArkAiLab-Adl/.github",
+      "url": "https://github.com/ArkAiLab-Adl/.github",
+      "snippet": "ArkAiLab ArkAiLab is an independent AI research and engineering lab focused on machine learning infrastructure, model optimization, and dataset development. ArkAiLab is owned and operated by ArkDevLabs (ArkDevelopementLabs) and functions as a specialized research and distribution unit within the Ark Dev Labs ecosystem."
+    },
+    {
+      "title": "ArkAiLab-Adl · GitHub",
+      "url": "https://github.com/ArkAiLab-Adl/",
+      "snippet": "ArkAiLab is an independent AI research and engineering lab focused on machine learning infrastructure, model optimization, and dataset development. ArkAiLab is owned and operated by ArkDevLabs (ArkDevelopementLabs) and functions as a specialized research and distribution unit within the Ark Dev Labs ecosystem."
+    },
+    {
+      "title": "ArkAiLab-Adl/awgs-vision-v0.1 at main - Hugging Face",
+      "url": "https://huggingface.co/ArkAiLab-Adl/awgs-vision-v0.1/tree/main",
+      "snippet": "ArkAiLab-Adl / awgs-vision-v0.1 like 1 Follow ArkAiLab 7 Image-Text-to-Text Safetensors English gemma4 awgs awgs-vision image-classification content-moderation image-safety gemma-4 vision multimodal unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Awgs Vision V0.2 by ArkAiLab-Adl — VRAM 10.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ArkAiLab-Adl%2Fawgs-vision-v0.2,5IElOZncfE3BePiDQRpjd8",
+      "snippet": "Awgs Vision V0.2 is an open-source 5.1b LLM by ArkAiLab-Adl. VRAM 10.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

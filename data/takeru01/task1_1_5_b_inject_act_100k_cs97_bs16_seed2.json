@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "takeru01/task1_1_5_B_inject_act_100k_cs97_bs16_seed2",
+  "slug": "takeru01-task1_1_5_b_inject_act_100k_cs97_bs16_seed2",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task1_1_5_B_inject_act_100k_cs97_bs16_seed2",
+  "created_at": "2026-08-27T15:39:16.000Z",
+  "updated_at": "2026-08-27T15:39:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:takeru01/task1_1_5_rgbd",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51949200,
+  "parameters_human": "51.9M",
+  "storage_bytes": 207841820,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "takeru01/task1_1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/takeru01/task1_1",
+      "snippet": "Datasets: takeru01 / task1_1 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 100K - 1M Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·135k rows default (135k rows) Split (1) train ..."
+    },
+    {
+      "title": "takeru01/task1_1_5_rgb_act_chunk91_bs16_0821_2144 · Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_5_rgb_act_chunk91_bs16_0821_2144",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "EvalPlus Leaderboard - GitHub Pages",
+      "url": "https://evalplus.github.io/leaderboard.html",
+      "snippet": "🏆 EvalPlus Leaderboard 🏆 EvalPlus evaluates AI Coders with rigorous tests. 📢 News: Beyond correctness, how&#x27;s their code efficiency? Checkout 🚀EvalPerf!"
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Takeru01 directory listing - Archive.org",
+      "url": "https://archive.org/download/Takeru01",
+      "snippet": "Takeru01 directory listing Files for Takeru01"
+    }
+  ]
+}

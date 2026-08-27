@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rahulsharma5/efficientformer-experiment",
+  "slug": "rahulsharma5-efficientformer-experiment",
+  "author": "rahulsharma5",
+  "url": "https://huggingface.co/rahulsharma5/efficientformer-experiment",
+  "created_at": "2026-08-27T15:17:36.000Z",
+  "updated_at": "2026-08-27T15:17:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snap-research/EfficientFormer: EfficientFormerV2 [ICCV 2023 ...",
+      "url": "https://github.com/snap-research/EfficientFormer",
+      "snippet": "Add EfficientFormerV2 model family, including efficientformerv2_s0, efficientformerv2_s1, efficientformerv2_s2 and efficientformerv2_l. Pretrained checkpoints of EfficientFormerV2 on ImageNet-1K are released."
+    },
+    {
+      "title": "Rethinking Vision Transformers for MobileNet Size and Speed",
+      "url": "https://arxiv.org/html/2212.08059v2",
+      "snippet": "For example, MobileViT [58] is parameter efficient while being times slower than lightweight CNNs [66, 69]. EfficientFormer [47] wields ultra-fast speed on mobile, but the model size is enormous. LeViT [25] and MobileFormer [13] achieve favorable FLOPs at the cost of redundant parameters."
+    },
+    {
+      "title": "timm · PyPI",
+      "url": "https://pypi.org/project/timm/",
+      "snippet": "Adding --model-kwargs enable_patch_interpolator=True --naflex-patch-sizes 12 16 24 will enable random patch size selection per-batch w/ interpolation The --naflex-loss-scale arg changes loss scaling mode per batch relative to the batch size, timm NaFlex loading changes the batch size for each seq len"
+    },
+    {
+      "title": "EfficientFormer（NeurIPS 2022）论文与代码解读 - CSDN博客",
+      "url": "https://blog.csdn.net/ooooocj/article/details/140108448",
+      "snippet": "文章浏览阅读2.1k次，点赞10次，收藏17次。虽然 ViT 模型在计算机视觉任务中取得了显著进展，但由于参数数量巨大和模型设计（如注意力机制）的原因，其推理速度通常比轻量级卷积网络（如 MobileNet）慢许多。因此，在资源受限的硬件（如移动设备）上部署 ViT 具有很大的挑战。为了使 Transformer ..."
+    },
+    {
+      "title": "grabowskimateusz/efficientformer-experiment · Hugging Face",
+      "url": "https://huggingface.co/grabowskimateusz/efficientformer-experiment",
+      "snippet": "Overview A small Efficientformer implementation for Generation, packaged with an explicit configuration and an initialization checkpoint. The xlarge variant is a reproducible starting point, not a trained model release."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ivanovtech/pi05-a35LKYALAosS",
+  "slug": "ivanovtech-pi05-a35lkyalaoss",
+  "author": "ivanovtech",
+  "url": "https://huggingface.co/ivanovtech/pi05-a35LKYALAosS",
+  "created_at": "2026-08-27T15:03:53.000Z",
+  "updated_at": "2026-08-27T15:07:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "openpi",
+    "libero",
+    "openroboto",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650296,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a9sl1/pi05_movebus · Hugging Face",
+      "url": "https://huggingface.co/a9sl1/pi05_movebus",
+      "snippet": "Instructions to use a9sl1/pi05_movebus with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use a9sl1/pi05_movebus with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "GitHub - jorgemunozl/openpi_subtask_generation: pi05 model written on ...",
+      "url": "https://github.com/jorgemunozl/openpi_subtask_generation",
+      "snippet": "pi05 model written on JAX. Contribute to jorgemunozl/openpi_subtask_generation development by creating an account on GitHub."
+    },
+    {
+      "title": "home1017/my_pi05_model · Hugging Face",
+      "url": "https://huggingface.co/home1017/my_pi05_model",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "π0.5: VLA Model for Open-World Robots | PDF - Scribd",
+      "url": "https://www.scribd.com/document/885305547/pi05",
+      "snippet": "The π0.5 model is a vision-language-action system designed for robots to perform complex tasks in new environments, leveraging diverse data sources for broad generalization. It combines training from multiple robots, high-level semantic predictions, and web data to enable mobile manipulators to execute long-horizon manipulation tasks, such as cleaning kitchens and bedrooms. This approach ..."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    }
+  ]
+}

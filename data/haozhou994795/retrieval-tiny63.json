@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "haozhou994795/retrieval-tiny63",
+  "slug": "haozhou994795-retrieval-tiny63",
+  "author": "haozhou994795",
+  "url": "https://huggingface.co/haozhou994795/retrieval-tiny63",
+  "created_at": "2026-08-27T18:00:53.000Z",
+  "updated_at": "2026-08-27T18:01:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "https://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "OpenAI Says Its A.I. Models Hacked Into Hugging Face, a Digital Library ...",
+      "url": "https://www.nytimes.com/2026/07/21/technology/openai-attack-hugging-face.html",
+      "snippet": "The intrusion into Hugging Face began when OpenAI tested a combination of two of its models, GPT‑5.6 Sol and a more powerful, unreleased model, to see how well the models could chain together ..."
+    },
+    {
+      "title": "tinycortex/src/memory/retrieval/mod.rs at main · tinyhumansai ... - GitHub",
+      "url": "https://github.com/tinyhumansai/tinycortex/blob/main/src/memory/retrieval/mod.rs",
+      "snippet": "The Fastest AI Memory Model - Your Second Brain. Contribute to tinyhumansai/tinycortex development by creating an account on GitHub."
+    },
+    {
+      "title": "Retrieve model | OpenAI API Reference",
+      "url": "https://developers.openai.com/api/reference/resources/models/methods/retrieve",
+      "snippet": "Retrieves a model instance, providing basic information about the model such as the owner and permissioning."
+    }
+  ]
+}

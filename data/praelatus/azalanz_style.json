@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Praelatus/Azalanz_Style",
+  "slug": "praelatus-azalanz_style",
+  "author": "Praelatus",
+  "url": "https://huggingface.co/Praelatus/Azalanz_Style",
+  "created_at": "2026-08-27T16:09:58.000Z",
+  "updated_at": "2026-08-27T16:10:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156065538,
+  "storage_human": "156 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TiltSHIFT Azalanz [Style] | Tensor.Art",
+      "url": "https://tensor.art/models/881745554797812376",
+      "snippet": "Download TiltSHIFT Azalanz [Style] - free LORA Illustrious AI model on TENSOR. Anima, Anime, Illustration. By Praelatus"
+    },
+    {
+      "title": "Tilt-Shift / Azalanz Style (Illustrious) - v1.0 | Illustrious LoRA ...",
+      "url": "https://civitai.red/models/2675824/tilt-shift-azalanz-style-illustrious",
+      "snippet": "Training has a cost! (1300+ B uzz PER MODEL) If you want to support go to the Gallery (where the images are) and click \" Add Post \" to share your images and some blue buzz for generation/training!"
+    },
+    {
+      "title": "Tilt-Shift / Azalanz Style (Illustrious) | TensorHub Art",
+      "url": "https://tensorhub.art/models/1006624595819639984",
+      "snippet": "Download Tilt-Shift / Azalanz Style (Illustrious) - free LORA Illustrious AI model on TENSORHUB ART. By melinoe"
+    },
+    {
+      "title": "TiltSHIFT Azalanz [Style] - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1897699097393127091",
+      "snippet": "Generate stunning girl, anime, woman, style, lora, tiltshift, azalanz anime art with the &#x27;TiltSHIFT Azalanz [Style]&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Praelatus - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/855612795146749050",
+      "snippet": "Explore Praelatus&#x27;s AI creations on TENSOR. aHR0cHM6Ly9jaXZpdGFpLmNvbS91c2VyL1ByYWVsYXR1cwo= Zettai Yarumoni 絶対やるもに [Style]-Yarumoni_IllustriousV1"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "linkstar612/polyvox-models",
+  "slug": "linkstar612-polyvox-models",
+  "author": "linkstar612",
+  "url": "https://huggingface.co/linkstar612/polyvox-models",
+  "created_at": "2026-08-27T15:45:23.000Z",
+  "updated_at": "2026-08-27T15:46:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "onnx",
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "language-identification",
+    "voice-activity-detection",
+    "translation",
+    "zh",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4690868796,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - linkstar612/polyvox-releases: Public distribution channel for ...",
+      "url": "https://github.com/linkstar612/polyvox-releases",
+      "snippet": "Public distribution channel for Polyvox VRC — Windows installers + auto-update manifest (latest.json). Source is private."
+    },
+    {
+      "title": "polyvox/models at main · da24s002/polyvox · GitHub",
+      "url": "https://github.com/da24s002/polyvox/tree/main/models",
+      "snippet": "Real-time multi-user voice assistant that separates, understands, and responds to multiple speakers - even in noisy environments. - polyvox/models at main · da24s002/polyvox"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Hair » VRModels - 3D Models for VR / AR and CG projects1",
+      "url": "https://vrmodels.store/tags/hair/",
+      "snippet": "Explore a wide range of 3D hair models for VR/AR and CG projects, perfect for enhancing your virtual creations."
+    },
+    {
+      "title": "linkstar612 (@linkstar612) / Posts / X",
+      "url": "https://x.com/linkstar612",
+      "snippet": "linkstar612 (@linkstar612) - Posts - | X (formerly Twitter) Shoutout @linkstar612 for custom building my Nasa PC (literally the best PC you can buy rn and everything is overclocked properly) not gonna post a pic because there is no RGB but this guy knows what hes doing :)"
+    }
+  ]
+}

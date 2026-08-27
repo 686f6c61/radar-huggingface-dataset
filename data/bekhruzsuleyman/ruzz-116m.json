@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bekhruzsuleyman/ruzz-116m",
+  "slug": "bekhruzsuleyman-ruzz-116m",
+  "author": "bekhruzsuleyman",
+  "url": "https://huggingface.co/bekhruzsuleyman/ruzz-116m",
+  "created_at": "2026-08-27T17:06:18.000Z",
+  "updated_at": "2026-08-27T18:17:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "transformer",
+    "language-model",
+    "pretrained",
+    "from-scratch",
+    "fineweb-edu",
+    "sentencepiece",
+    "unigram",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3631771282,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bekhruzsuleyman · GitHub",
+      "url": "https://github.com/bekhruzsuleyman",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "PACER Case Locator - United States Courts",
+      "url": "https://pcl.uscourts.gov/pcl/pages/search/findParty.jsf",
+      "snippet": "The PACER Case Locator (PCL) is a national index for district, bankruptcy, and appellate courts. The PCL serves as a search tool for PACER. You may conduct nationwide searches to determine whether or not a party is involved in federal litigation. Each night, subsets of data are collected from the courts and transferred to the PCL. The PACER Case Locator (PCL) is a national index for district ..."
+    },
+    {
+      "title": "(@bekhruzz.116) • Instagram photos and videos",
+      "url": "https://www.instagram.com/bekhruzz.116/",
+      "snippet": "954 followers · 753 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "(@ruzz.ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ruzz.ai/",
+      "snippet": "0 Followers, 1 Following, 9 Posts - @ruzz.ai on Instagram: \"AI Artist | PM at @picsart creator of @nova.picot\""
+    },
+    {
+      "title": "RIZZ AI Assistant: Free RIZZ GPT and Fun AI Dating Assistant",
+      "url": "https://rizzai.ai/",
+      "snippet": "RIZZ AI Assistant is an AI dating assistant built on the RIZE GPT model. Through a large number of high-quality chat and pick-up cases, RIZZ AI has trained chat LLMs who can understand users&#x27; psychology and are good at humorous pick-up conversations, becoming the best Tinder tutor."
+    }
+  ]
+}

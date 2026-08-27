@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "happyinhappy/klein-car-background-replace-lora",
+  "slug": "happyinhappy-klein-car-background-replace-lora",
+  "author": "happyinhappy",
+  "url": "https://huggingface.co/happyinhappy/klein-car-background-replace-lora",
+  "created_at": "2026-08-27T17:20:54.000Z",
+  "updated_at": "2026-08-27T17:20:55.000Z",
+  "license": "card-only-weights-not-released",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-image",
+    "lora",
+    "automotive",
+    "background-replacement",
+    "relighting",
+    "flux",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "black-forest-labs/FLUX.2-klein",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Replace Scene [Klein 9B] - Flux.2 Klein 9B (v1.0) | Flux.2 Klein LoRA ...",
+      "url": "https://civitai.com/models/2517219/replace-scene-klein-9b",
+      "snippet": "Allows you to replace the background scene in the first control image with the background scene depicted in the second control image. This model is capable of reorienting the camera angle shown in the background to match the one in the original image, but for best results, try to have comparable framing & camera angle. replace the background in Image 1 with the scene in Image 2 Model ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI Image Editor — No Sign Up, No Watermark, Edit Photos with AI ...",
+      "url": "https://jollyai.online/tools/free-ai-image-editor.php",
+      "snippet": "Free AI Image Editor Edit Photos with AI · No Sign Up · No Restrictions Edit any photo with AI free — change backgrounds, clothing, style, add or remove anything with a simple prompt. Powered by Flux 2 Klein and Qwen. No sign up, no restrictions, no watermark. 5 free edits daily, auto-deleted in 4h."
+    },
+    {
+      "title": "Car change background (Kontext) - v1.0 | Flux.1 Kontext LoRA | Civitai",
+      "url": "https://civitai.com/models/2034342/car-change-background-kontext",
+      "snippet": "This model seamlessly integrates with workflows to easily replace the background for the car in your images while completely preserving the car&#x27;s details, position, proportion, and lighting!! Whether it&#x27;s for personalized background customization of your private car or background needs in automotive brand marketing scenarios, it&#x27;s super practical! 🔥 More of my car background replacement ..."
+    }
+  ]
+}

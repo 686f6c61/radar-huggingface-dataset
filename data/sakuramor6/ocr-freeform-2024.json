@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sakuramor6/ocr-freeform-2024",
+  "slug": "sakuramor6-ocr-freeform-2024",
+  "author": "Sakuramor6",
+  "url": "https://huggingface.co/Sakuramor6/ocr-freeform-2024",
+  "created_at": "2026-08-27T12:13:21.000Z",
+  "updated_at": "2026-08-27T12:13:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr-freeform",
+      "snippet": "Explore machine learning models. 11 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ocr-freeform Clear all"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ocr",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "6 Best LLMs for OCR: Top AI Models for Text Recognition",
+      "url": "https://www.uplarn.com/llms-for-ocr/",
+      "snippet": "Discover the best LLMs for OCR in this human friendly guide. Learn how AI models compare for scanning documents and extracting data."
+    },
+    {
+      "title": "OCR With Google AI",
+      "url": "https://cloud.google.com/use-cases/ocr",
+      "snippet": "OCR (Optical Character Recognition) solutions powered by Google AI to help you extract text and business-ready insights, at scale."
+    }
+  ]
+}

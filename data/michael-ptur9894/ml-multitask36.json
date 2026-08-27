@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michael-ptur9894/ml-multitask36",
+  "slug": "michael-ptur9894-ml-multitask36",
+  "author": "michael-ptur9894",
+  "url": "https://huggingface.co/michael-ptur9894/ml-multitask36",
+  "created_at": "2026-08-27T15:41:22.000Z",
+  "updated_at": "2026-08-27T15:41:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michael-ptur9894 (Tony Lestari) - Hugging Face",
+      "url": "https://huggingface.co/michael-ptur9894",
+      "snippet": "User profile of Tony Lestari on Hugging Face"
+    },
+    {
+      "title": "michael-ptur9894/model_635393447_mae_nano · Hugging Face",
+      "url": "https://huggingface.co/michael-ptur9894/model_635393447_mae_nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ModelScan: Protection Against Model Serialization Attacks",
+      "url": "https://github.com/protectai/modelscan",
+      "snippet": "ModelScan is an open source project from Protect AI that scans models to determine if they contain unsafe code. It is the first model scanning tool to support multiple model formats. ModelScan currently supports: H5, Pickle, and SavedModel formats. This protects you when using PyTorch, TensorFlow, Keras, Sklearn, XGBoost, with more on the way."
+    },
+    {
+      "title": "ML Console | Build AI models without a single line of code.",
+      "url": "https://mlconsole.com/",
+      "snippet": "ML Console is a free tool to build an AI model without writing a single line of code. Simply pick a column to predict, and let us handle the rest."
+    }
+  ]
+}

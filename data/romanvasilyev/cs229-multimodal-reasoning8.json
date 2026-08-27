@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "romanvasilyev/cs229-multimodal-reasoning8",
+  "slug": "romanvasilyev-cs229-multimodal-reasoning8",
+  "author": "romanvasilyev",
+  "url": "https://huggingface.co/romanvasilyev/cs229-multimodal-reasoning8",
+  "created_at": "2026-08-27T13:41:38.000Z",
+  "updated_at": "2026-08-27T13:41:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magma: A Foundation Model for Multimodal AI Agents - arXiv.org",
+      "url": "https://arxiv.org/html/2502.13130v1",
+      "snippet": "In this research, we strive to develop a foundation model for multimodal AI agents and argue that it requires simultaneously possessing the following capabilities: • Multimodal Understanding to understand multimodal input from various domains (both digital and physical) not only semantically, but also spatially and temporally."
+    },
+    {
+      "title": "PDF CS229 Lecture Notes - Stanford University",
+      "url": "https://cs229.stanford.edu/main_notes.pdf",
+      "snippet": "3.2 Constructing GLMs Suppose you would like to build a model to estimate the number y of cus-tomers arriving in your store (or number of page-views on your website) in any given hour, based on certain features x such as store promotions, recent advertising, weather, day-of-week, etc."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Large Language Models (LLMs) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
+      "snippet": "Explore the cutting-edge realm of Large Language Models (LLMs) with this expertly curated YouTube playlist. Featuring insights from industry leaders, educati..."
+    }
+  ]
+}

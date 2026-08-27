@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ajh-code/Fish-Audio-S2-Pro-NVFP4-Balanced",
+  "slug": "ajh-code-fish-audio-s2-pro-nvfp4-balanced",
+  "author": "ajh-code",
+  "url": "https://huggingface.co/ajh-code/Fish-Audio-S2-Pro-NVFP4-Balanced",
+  "created_at": "2026-08-27T12:15:10.000Z",
+  "updated_at": "2026-08-27T12:41:44.000Z",
+  "license": "fish-audio-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "fish-speech",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fish-speech",
+    "safetensors",
+    "fish_qwen3_omni",
+    "fish-audio",
+    "text-to-speech",
+    "voice-cloning",
+    "quantization",
+    "nvfp4",
+    "mxfp8",
+    "blackwell",
+    "sm120",
+    "english",
+    "v1",
+    "en",
+    "base_model:fishaudio/s2-pro",
+    "base_model:quantized:fishaudio/s2-pro",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3924842496,
+  "parameters_human": "3.92B",
+  "storage_bytes": 6793462991,
+  "storage_human": "6.8 GB",
+  "base_model": "fishaudio/s2-pro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fishaudio/s2-pro · Hugging Face",
+      "url": "https://huggingface.co/fishaudio/s2-pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fish Audio S2 Pro - a Hugging Face Space by MAYA-AI",
+      "url": "https://huggingface.co/spaces/MAYA-AI/fish-s2-pro-zero",
+      "snippet": "🐟 Fish Audio S2 Pro State-of-the-Art Dual-Autoregressive Text-to-Speech · Model Page ↗ · GitHub ↗ 80+ languages supported · Zero-shot voice cloning · 15,000+ inline emotion tags"
+    },
+    {
+      "title": "mjbernaski/s2-pro: Fish Audio S2 Pro - GitHub",
+      "url": "https://github.com/mjbernaski/s2-pro",
+      "snippet": "Technical Report | GitHub | Playground Fish Audio S2 Pro is a leading text-to-speech (TTS) model with fine-grained inline control of prosody and emotion. Trained on over 10M+ hours of audio data across 80+ languages, the system combines reinforcement learning alignment with a dual-autoregressive architecture. The release includes model weights, fine-tuning code, and an SGLang-based streaming ..."
+    },
+    {
+      "title": "awesome-ai-voice/models/fish-audio-s2-pro.md at main - GitHub",
+      "url": "https://github.com/wildminder/awesome-ai-voice/blob/main/models/fish-audio-s2-pro.md",
+      "snippet": "Fish Audio S2 Pro is a leading text-to-speech model with fine-grained inline control of prosody and emotion. It combines reinforcement learning alignment with a dual-autoregressive architecture for high-quality speech synthesis."
+    },
+    {
+      "title": "ieduardj/s2-pro · Hugging Face",
+      "url": "https://huggingface.co/ieduardj/s2-pro",
+      "snippet": "Fish Audio S2 Pro Fish Audio S2 Pro is a leading text-to-speech (TTS) model with fine-grained inline control of prosody and emotion. Trained on over 10M+ hours of audio data across 80+ languages, the system combines reinforcement learning alignment with a dual-autoregressive architecture. The release includes model weights, fine-tuning code, and an SGLang-based streaming inference engine ..."
+    }
+  ]
+}

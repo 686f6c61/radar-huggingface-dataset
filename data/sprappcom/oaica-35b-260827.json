@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sprappcom/oaica-35b-260827",
+  "slug": "sprappcom-oaica-35b-260827",
+  "author": "sprappcom",
+  "url": "https://huggingface.co/sprappcom/oaica-35b-260827",
+  "created_at": "2026-08-27T16:27:08.000Z",
+  "updated_at": "2026-08-27T16:28:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "prism",
+    "ternary",
+    "multimodal",
+    "vision",
+    "pqm",
+    "en",
+    "code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40772751000,
+  "storage_human": "40.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "GitHub - sprapp-com/oaica-code: Get up and running with Oaica and other ...",
+      "url": "https://github.com/sprapp-com/oaica-code",
+      "snippet": "Get up and running with Oaica and other models. Contribute to sprapp-com/oaica-code development by creating an account on GitHub."
+    },
+    {
+      "title": "OAICA — install & usage",
+      "url": "https://oaica.com/",
+      "snippet": "OAICA A terminal AI CLI (fork of Ollama&#x27;s client) backed by our own API. No local GPU or model download required — every request goes to api.sprapp.com, which routes to whichever GPU box is currently serving the model you asked for."
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "Leaderboard Overview See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights. Learn more here."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/owa/",
+      "snippet": "Sign in to access your email and manage your Outlook account efficiently."
+    }
+  ]
+}

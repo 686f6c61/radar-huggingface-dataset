@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "odmansour92/contrastive-test",
+  "slug": "odmansour92-contrastive-test",
+  "author": "odmansour92",
+  "url": "https://huggingface.co/odmansour92/contrastive-test",
+  "created_at": "2026-08-27T16:39:37.000Z",
+  "updated_at": "2026-08-27T16:39:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2204.10377",
+      "snippet": "Contrastive Test-Time Adaptation Dian Chen* Toyota Research Institute Dequan Wang UC Berkeley Trevor Darrell UC Berkeley Sayna Ebrahimi† UC Berkeley Abstract Test-time adaptatio"
+    },
+    {
+      "title": "AI Model Comparison: ChatGPT, Claude, Gemini, and More Tested",
+      "url": "https://www.openaitoolshub.org/en/blog/ai-model-comparison-guide",
+      "snippet": "Side-by-side comparison of every major AI model — ChatGPT Plus ($20/mo), Claude Pro ($20/mo), Gemini Advanced, Perplexity Pro, Kimi K2.5, Manus AI, and OpenAI Codex. Pricing, real performance, context window comparison (Claude 200K vs ChatGPT 128K), and honest verdicts."
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Compare 22+ AI Models Side-by-Side - Gangsta AI",
+      "url": "https://gangstaai.org/compare-ai-models",
+      "snippet": "The free tool to compare AI models side by side. Test ChatGPT vs Claude vs Gemini vs Grok on the same prompt and instantly see which large language model wins."
+    },
+    {
+      "title": "Findings of the Counter Turing Test: AI-Generated Image Detection",
+      "url": "https://arxiv.org/pdf/2605.20787",
+      "snippet": "In this paper, we describe the shared task, Counter Turing Test - AI Generated Image Detection and provide a summary of participating systems. We observed that teams employed CNNs, Vision Transformers, contrastive learning, and frequency-based analysis for AI-generated image detection."
+    }
+  ]
+}

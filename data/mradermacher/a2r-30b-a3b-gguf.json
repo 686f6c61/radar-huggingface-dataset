@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/A2R-30B-A3B-GGUF",
+  "slug": "mradermacher-a2r-30b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/A2R-30B-A3B-GGUF",
+  "created_at": "2026-08-27T11:47:35.000Z",
+  "updated_at": "2026-08-27T12:48:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "speech",
+    "speaker-attribution",
+    "multi-party",
+    "audio-language-model",
+    "en",
+    "base_model:PleasedPenguin/A2R-30B-A3B",
+    "base_model:quantized:PleasedPenguin/A2R-30B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532646912,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208120146208,
+  "storage_human": "208.1 GB",
+  "base_model": "PleasedPenguin/A2R-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Qwen3-30B-A3B-Gemini-Pro-High-Reasoning-2507-ABLITERATED ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3-30B-A3B-Gemini-Pro-High-Reasoning-2507-ABLITERATED-UNCENSORED-i1-GGUF",
+      "snippet": "Qwen3-30B-A3B-Gemini-Pro-High-Reasoning-2507-ABLITERATED-UNCENSORED-i1-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF is a quantized version of Huihui AI&#x27;s 30 billion parameter coding-focused language model, maintained by mradermacher."
+    },
+    {
+      "title": "Qwen3 235B and 30B MoE Quant Benchmarking Roundup · GitHub",
+      "url": "https://gist.github.com/ubergarm/0f9663fd56fc181a00ec9f634635eb38",
+      "snippet": "Amongst them bartowski, and unsloth (Daniel and Michael&#x27;s start-up company), have become the new \"household names\" for providing a variety of GGUF quantizations for popular model releases and even all those wild creative fine-tunes! (There are many more including team mradermacher and too many to list everyone, sorry!)"
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

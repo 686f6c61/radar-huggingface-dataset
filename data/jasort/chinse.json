@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jasort/chinse",
+  "slug": "jasort-chinse",
+  "author": "jasort",
+  "url": "https://huggingface.co/jasort/chinse",
+  "created_at": "2026-08-27T14:11:12.000Z",
+  "updated_at": "2026-08-27T14:20:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:finetune:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788464,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "China&#x27;s open source AI models to capture a larger share of 2026 global ...",
+      "url": "https://techblog.comsoc.org/2026/01/27/chinas-open-source-ai-models-to-capture-a-larger-share-of-2026-global-ai-market/",
+      "snippet": "Chinese AI language models (LMs) have advanced rapidly and are now contesting with the U.S. for global market leadership. Alibaba&#x27;s Qwen-Image-2512 is emerging as a top-performing, free, open-source model capable of high-fidelity human, landscape, and text rendering."
+    },
+    {
+      "title": "AI Models",
+      "url": "https://www.usechinai.com/models",
+      "snippet": "Discover and compare China&#x27;s best AI models — DeepSeek, Qwen, Seedream, Seedance and more. Pricing, benchmarks, tutorials, and direct links to official platforms."
+    },
+    {
+      "title": "Best Chinese AI Models (August 2026): Kimi K3 Leads",
+      "url": "https://benchlm.ai/best/chinese-models",
+      "snippet": "A live ranking of AI models from Chinese labs, using the same current public ranking contract as the overall leaderboard. Top picks: Kimi K3, Qwen3.8 Max, Qwen3.8-27B. 72 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "Top China-Built AI Models to Watch in 2026: DeepSeek, Qwen, Kimi & More",
+      "url": "https://radarai.top/en/articles/china-ai-models-to-watch-in-2026-deepseek-qwen-kimi-and-more",
+      "snippet": "Discover leading China-developed AI models for 2026—including DeepSeek, Qwen, and Kimi—with technical capabilities, real-world use cases, and open-source availability for developers and researchers."
+    },
+    {
+      "title": "9 Free Chinese AI Tools Most People Don&#x27;t Know",
+      "url": "https://mindwiredai.com/2026/06/16/9-free-chinese-ai-tools-most-people-dont-know/",
+      "snippet": "Free AI Tools · June 2026 China&#x27;s AI Labs Are Quietly Giving Away 9 Powerful Tools — and Most of the West Hasn&#x27;t Noticed While most people still open ChatGPT or Claude out of habit, a wave of Chinese models has shown up offering similar power for free, with fewer limits. Here are nine worth knowing — and the honest catch before you switch."
+    }
+  ]
+}

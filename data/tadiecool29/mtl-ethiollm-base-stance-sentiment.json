@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-ethiollm-base-stance-sentiment",
+  "slug": "tadiecool29-mtl-ethiollm-base-stance-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-ethiollm-base-stance-sentiment",
+  "created_at": "2026-08-27T13:24:04.000Z",
+  "updated_at": "2026-08-27T13:24:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:EthioNLP/EthioLLM-b-250K",
+    "base_model:finetune:EthioNLP/EthioLLM-b-250K",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1127311033,
+  "storage_human": "1.1 GB",
+  "base_model": "EthioNLP/EthioLLM-b-250K",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EthioLLM: Multilingual Large Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2403.13737v2",
+      "snippet": "EthioLLM is developed through the utilization of both XLMR and mT5 architectures in their large, base, and small variants. This multilingual language model is specifically engineered to offer enhanced support for Ethiopian languages by taking into account their diverse scripts and the prevalence of popular languages within the region."
+    },
+    {
+      "title": "EthioNLP/EthioLLM-s-70k · Hugging Face",
+      "url": "https://huggingface.co/EthioNLP/EthioLLM-s-70k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EthioLLM: Multilingual Large Language Models for Ethiopian Languages ...",
+      "url": "https://arxiv.org/abs/2403.13737",
+      "snippet": "This paper introduces EthioLLM -- multilingual large language models for five Ethiopian languages (Amharic, Ge&#x27;ez, Afan Oromo, Somali, and Tigrinya) and English, and Ethiobenchmark -- a new benchmark dataset for various downstream NLP tasks. We evaluate the performance of these models across five downstream NLP tasks."
+    },
+    {
+      "title": "EthioLLM: Multilingual Large Language Models for Ethiopian Languages ...",
+      "url": "https://aclanthology.org/2024.lrec-main.561/",
+      "snippet": "This paper introduces EthioLLM - multilingual large language models for five Ethiopian languages (Amharic, Ge&#x27;ez, Afan Oromo, Somali, and Tigrinya) and English, and Ethiobenchmark - a new benchmark dataset for various downstream NLP tasks. We evaluate the performance of these models across five downstream NLP tasks."
+    },
+    {
+      "title": "Ethio NLP - GitHub Pages",
+      "url": "https://ethionlp.github.io/publications.html",
+      "snippet": "EthioLLM: Language Models for Ethiopian Languages with Task Evaluation. Atnafu Lambebo Tonja, Israel Abebe Azime, Tadesse Destaw Belay, Mesay Gemeda Yigezu, Moges Ahmed Mehamed, Abinew Ali Ayele, Tadesse Kebede Guge, Ebrahim Chekol Jibril, Michael Melese Woldeyohannis, Olga Kolesnikova, Philipp Slusallek, Dietrich Klakow, Shengwu Xiong, Seid ..."
+    }
+  ]
+}

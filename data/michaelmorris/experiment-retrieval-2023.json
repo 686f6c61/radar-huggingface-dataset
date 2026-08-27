@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelmorris/experiment-retrieval-2023",
+  "slug": "michaelmorris-experiment-retrieval-2023",
+  "author": "michaelmorris",
+  "url": "https://huggingface.co/michaelmorris/experiment-retrieval-2023",
+  "created_at": "2026-08-27T17:34:17.000Z",
+  "updated_at": "2026-08-27T17:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Research - OpenAI",
+      "url": "https://openai.com/research/index/",
+      "snippet": "Pacing model development in an era of cyber-critical capabilities OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development."
+    },
+    {
+      "title": "GitHub - parthsarthi03/raptor: The official implementation of RAPTOR ...",
+      "url": "https://github.com/parthsarthi03/raptor",
+      "snippet": "The official implementation of RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval - parthsarthi03/raptor"
+    },
+    {
+      "title": "Google Research - Explore Our Latest Research in Science and AI",
+      "url": "https://research.google/",
+      "snippet": "Discover Google Research. We publish research papers across a wide range of domains and share our latest developments in AI and science research."
+    },
+    {
+      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+      "url": "https://arxiv.org/abs/2304.03442",
+      "snippet": "Believable proxies of human behavior can empower interactive applications ranging from immersive environments to rehearsal spaces for interpersonal communication to prototyping tools. In this paper, we introduce generative agents--computational software agents that simulate believable human behavior. Generative agents wake up, cook breakfast, and head to work; artists paint, while authors ..."
+    }
+  ]
+}

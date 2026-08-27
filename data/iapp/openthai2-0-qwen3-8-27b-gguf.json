@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "iapp/openthai2.0-qwen3.8-27b-GGUF",
+  "slug": "iapp-openthai2-0-qwen3-8-27b-gguf",
+  "author": "iapp",
+  "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-GGUF",
+  "created_at": "2026-08-25T14:58:52.000Z",
+  "updated_at": "2026-08-27T11:33:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "thai",
+    "ocr",
+    "llama.cpp",
+    "openthai",
+    "th",
+    "en",
+    "base_model:iapp/openthai2.0-qwen3.8-27b",
+    "base_model:quantized:iapp/openthai2.0-qwen3.8-27b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 114912037024,
+  "storage_human": "114.9 GB",
+  "base_model": "kobkrit/openthai2.0-qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iapp/openthai2.0-qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iapp/openthai2.0-qwen3.8-27b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenThai 2.0 — Open-Source Thai Knowledge, Document and Agentic AI ...",
+      "url": "https://iapp.co.th/openmodels/openthai2p0",
+      "snippet": "openthai2.0-qwen3.8-27b An open all-in-one Thai AI: it reads Thai documents and handwriting at specialist level, answers with Thai knowledge in natural, explanatory Thai, leads its base model and Typhoon 2.5 on agentic tool use (BFCL) — and keeps its base model&#x27;s general intelligence."
+    },
+    {
+      "title": "OpenThai 2.0 <span className=\"badge badge--success\">NEW</span> | iApp ...",
+      "url": "https://iapp.co.th/docs/llm/openthai2p0",
+      "snippet": "OpenThai 2.0 (iapp/openthai2.0-qwen3.8-27b) is an open-source Thai vision-language model (27B, Apache 2.0) built by iApp Technology and launched with AIEAT. One model reads Thai documents and handwriting at specialist level (0.261 CER on Thai handwriting versus 0.649 for its base model), answers Thai knowledge questions in natural Thai (0.842 on OpenThaiEval), and handles agentic tool use ..."
+    },
+    {
+      "title": "Qwen3.8-27B MTP: the flag was free the whole time - GitHub",
+      "url": "https://github.com/sudoingX/qwen38-mtp",
+      "snippet": "One llama.cpp flag unlocks +33% to +145% decode speed for Qwen3.8-27B on consumer GPUs, depending on the card, and the knobs the community mapped push further still. No new files, no conversion, no custom build. The MTP head already ships inside the GGUF you downloaded on launch night."
+    }
+  ]
+}

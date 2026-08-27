@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f2008353/tds-carbon-card",
+  "slug": "24f2008353-tds-carbon-card",
+  "author": "24f2008353",
+  "url": "https://huggingface.co/24f2008353/tds-carbon-card",
+  "created_at": "2026-08-27T17:00:35.000Z",
+  "updated_at": "2026-08-27T17:04:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "indumv/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/indumv/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (6 GPUs) Training Mode: pre-training Region: europe-west4 GPU Hours: 439.7h (PUE: 1.23) Total Energy: 1135.7451 kWh CO₂ Emissions: 227.149 kg ..."
+    },
+    {
+      "title": "24f2006741/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f2006741/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (5 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 476.9h (PUE: 1.43) Total Energy: 1022.9505 kWh CO₂ Emissions: 122.754 kg ..."
+    },
+    {
+      "title": "JayashreeR/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/JayashreeR/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    }
+  ]
+}

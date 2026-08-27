@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Stijnjansen/self-supervised",
+  "slug": "stijnjansen-self-supervised",
+  "author": "Stijnjansen",
+  "url": "https://huggingface.co/Stijnjansen/self-supervised",
+  "created_at": "2026-08-27T14:30:26.000Z",
+  "updated_at": "2026-08-27T14:30:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stefan Jansen - GitHub",
+      "url": "https://github.com/stefan-jansen",
+      "snippet": "stefan-jansen has 68 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‪Stefan Jansen‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=dRKfiYQAAAAJ&hl=en",
+      "snippet": "‪Founder, Applied AI‬ - ‪‪Cited by 1,249‬‬ - ‪Machine Learning‬ - ‪Algorithmic Trading‬"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Jan - Open-Source ChatGPT Replacement",
+      "url": "https://www.jan.ai/",
+      "snippet": "Jan is an open-source alternative to ChatGPT. Run open-source AI models locally or connect to cloud models like GPT, Claude and others."
+    },
+    {
+      "title": "Stefan Jansen: books, biography, latest update - amazon.com",
+      "url": "https://www.amazon.com/stores/author/B07NW8RP52",
+      "snippet": "Harness Generative AI, Retrieval Augmented Generation, and Causal Inference to make models interpretable, auditable, and compliant with regulatory standards Build production-ready trading infrastructure using MLOps, feature stores, and model monitoring to transition research into live capital deployment safely Who this book is for"
+    }
+  ]
+}

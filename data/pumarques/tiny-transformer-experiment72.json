@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pumarques/tiny-transformer-experiment72",
+  "slug": "pumarques-tiny-transformer-experiment72",
+  "author": "pumarques",
+  "url": "https://huggingface.co/pumarques/tiny-transformer-experiment72",
+  "created_at": "2026-08-27T14:04:02.000Z",
+  "updated_at": "2026-08-27T14:04:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Tiny Transformer This repository contains a minimal yet functional implementation of a Transformer architecture featuring both an encoder and a decoder. The design prioritizes clarity and simplicity, making it an ideal resource for educational purposes and experimentation in both vision and natural language processing (NLP) applications."
+    },
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "If you&#x27;ve ever felt that Transformers are a \"black box,\" today&#x27;s post is for you. Instead of just downloading a pretrained model, we&#x27;re going to build a tiny GPT-style transformer from scratch — small enough to run on your laptop, but powerful enough to generate Shakespeare-like text. By the end, you&#x27;ll not only have a working model, but also a clear understanding of how the ..."
+    },
+    {
+      "title": "Transformer Explainer: LLM Transformer Model Visually Explained",
+      "url": "https://poloclub.github.io/transformer-explainer/",
+      "snippet": "An interactive visualization tool showing you how transformer models work in large language models (LLM) like GPT."
+    },
+    {
+      "title": "A Cost-Efficient FPGA Implementation of Tiny Transformer Model using ...",
+      "url": "https://arxiv.org/abs/2401.02721",
+      "snippet": "Transformer has been adopted to image recognition tasks and shown to outperform CNNs and RNNs while it suffers from high training cost and computational complexity. To address these issues, a hybrid approach has become a recent research trend, which replaces a part of ResNet with an MHSA (Multi-Head Self-Attention). In this paper, we propose a lightweight hybrid model which uses Neural ODE ..."
+    }
+  ]
+}

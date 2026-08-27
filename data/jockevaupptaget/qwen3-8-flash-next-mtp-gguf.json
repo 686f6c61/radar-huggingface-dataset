@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jockevaupptaget/Qwen3.8-Flash-Next-MTP-GGUF",
+  "slug": "jockevaupptaget-qwen3-8-flash-next-mtp-gguf",
+  "author": "jockevaupptaget",
+  "url": "https://huggingface.co/jockevaupptaget/Qwen3.8-Flash-Next-MTP-GGUF",
+  "created_at": "2026-08-27T15:25:09.000Z",
+  "updated_at": "2026-08-27T15:26:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "strix-halo",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3878549248,
+  "parameters_human": "3.88B",
+  "storage_bytes": 4135893184,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "A ModelScope page for Qwen3.8-Flash-Next went live and disappeared on August 25, 2026 — and it may answer the single most repeated request in the Qwen3.8-27B Hacker News thread: a mixture-of-experts (MoE) sibling to Alibaba&#x27;s dense 27B launch. The listing described 125 billion total parameters, 6 billion active (125B-A6B), built on what Alibaba called \"next-generation Qwen4 architecture ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3.8-Flash-Next at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "In particular, Qwen3.8-Flash is the official version based on Qwen3.8-Flash-Next with more production features, e.g., 1M context length by default, official built-in tools."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    }
+  ]
+}

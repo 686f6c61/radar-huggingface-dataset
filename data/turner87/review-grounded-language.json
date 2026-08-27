@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "turner87/review-grounded-language",
+  "slug": "turner87-review-grounded-language",
+  "author": "turner87",
+  "url": "https://huggingface.co/turner87/review-grounded-language",
+  "created_at": "2026-08-27T18:14:43.000Z",
+  "updated_at": "2026-08-27T18:14:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Better language models and their implications - OpenAI",
+      "url": "https://openai.com/index/better-language-models/",
+      "snippet": "We&#x27;ve trained a large-scale unsupervised language model which generates coherent paragraphs of text, achieves state-of-the-art performance on many language modeling benchmarks, and performs rudimentary reading comprehension, machine translation, question answering, and summarization—all without task-specific training."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Large Language Models (LLMs) with Google AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/llms",
+      "snippet": "What large language model services does Google Cloud offer? Agent Studio on Gemini Enterprise Agent Platform: Gives you access to over 200 large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications."
+    }
+  ]
+}

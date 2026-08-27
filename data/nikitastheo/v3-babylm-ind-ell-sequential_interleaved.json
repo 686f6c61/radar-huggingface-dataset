@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v3-babylm-ind-ell-sequential_interleaved",
+  "slug": "nikitastheo-v3-babylm-ind-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v3-babylm-ind-ell-sequential_interleaved",
+  "created_at": "2026-08-27T17:56:07.000Z",
+  "updated_at": "2026-08-27T19:01:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 991118592,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nikitastheo/babylm-spa-ell-sequential_interleaved at main",
+      "url": "https://huggingface.co/nikitastheo/babylm-spa-ell-sequential_interleaved/tree/main",
+      "snippet": "nikitastheo / babylm-spa-ell-sequential_interleaved like 0 Text Generation Transformers Safetensors gpt2 causal-lm text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "v2-babylm-eng-ell-sequential_interleaved - Hugging Face",
+      "url": "https://huggingface.co/nikitastheo/v2-babylm-eng-ell-sequential_interleaved",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nikitas Theodoropoulos",
+      "url": "https://nikitas-theo.github.io/",
+      "snippet": "AI-driven programming tutors hold great promise in automatically assisting struggling students, and need several components to realize this potential. We investigate the crucial component of student modeling, in particular, the ability to automatically infer students&#x27; misconceptions for predicting (synthesizing) their behavior."
+    },
+    {
+      "title": "babylm-spa-ell-sequential_interleaved - friendli.ai",
+      "url": "https://friendli.ai/models/nikitastheo/babylm-spa-ell-sequential_interleaved",
+      "snippet": "nikitastheo babylm-spa-ell-sequential_interleaved Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Instead, participants may use paired image-text data and/or leverage feedback from a teacher model during training or Strict or Strict-Small. • Updated (detoxified) datasets: We release a modified detoxified training dataset, including: 100M word Strict, 10M word Strict-Small, and 100M word + image Multimodal."
+    }
+  ]
+}

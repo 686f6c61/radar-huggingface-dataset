@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rajeshkg/course-matching",
+  "slug": "rajeshkg-course-matching",
+  "author": "rajeshkg",
+  "url": "https://huggingface.co/rajeshkg/course-matching",
+  "created_at": "2026-08-27T14:15:03.000Z",
+  "updated_at": "2026-08-27T14:15:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NapeLPercy/CourseMatch: A Course Matching system that applies ...",
+      "url": "https://github.com/NapeLPercy/CourseMatch",
+      "snippet": "A Course Matching system that applies university-specific admission rules to determine course eligibility and uses AI to recommend the most suitable options based on a student&#x27;s personal profile."
+    },
+    {
+      "title": "CourseKG: An Educational Knowledge Graph Based on Course ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/14/7/2710",
+      "snippet": "Further, a relationship extraction method based on the BERT model, which integrates sentence features and educational entities and estimates the similarity between knowledge pairs using cosine similarity, is proposed. The proposed CourseKG is verified by experiments using real-world C programming course data."
+    },
+    {
+      "title": "Machine Learning-Powered Course Allocation - arXiv.org",
+      "url": "https://arxiv.org/pdf/2210.00954",
+      "snippet": "urse alloca ism, Course Match, has one major shortcoming: students make significant mistakes when reporting their pref rences, which negatively affects welfare and fairness. To address this i introduce a new mechanism, Machine Learning-powered Course Match (MLCM). At the core of MLCM is d preference elicitation module that iteratively asks person"
+    },
+    {
+      "title": "Coursera launches CourseMatch: A machine learning solution that ...",
+      "url": "https://blog.coursera.org/coursera-launches-coursematch/",
+      "snippet": "Today, we are announcing CourseMatch, a machine learning solution that ingests a school&#x27;s on-campus course catalogue and matches each course to the most relevant courses in Coursera&#x27;s catalogue of 3,800 courses."
+    },
+    {
+      "title": "Best Artificial Intelligence Courses & Certificates [2026] | Coursera",
+      "url": "https://www.coursera.org/courses?query=artificial%20intelligence",
+      "snippet": "Artificial intelligence courses can help you learn machine learning algorithms, natural language processing, computer vision, and neural networks. You can build skills in data analysis, predictive modeling, and automating tasks using AI techniques. Many courses introduce tools like TensorFlow, PyTorch, and Scikit-learn, that support implementing AI solutions and developing applications that ..."
+    }
+  ]
+}

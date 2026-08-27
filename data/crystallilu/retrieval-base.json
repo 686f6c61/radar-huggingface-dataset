@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "crystallilu/retrieval-base",
+  "slug": "crystallilu-retrieval-base",
+  "author": "crystallilu",
+  "url": "https://huggingface.co/crystallilu/retrieval-base",
+  "created_at": "2026-08-27T12:07:29.000Z",
+  "updated_at": "2026-08-27T12:07:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Understanding RVC - Retrieval-based Voice Conversion",
+      "url": "https://gudgud96.github.io/2024/09/26/annotated-rvc/",
+      "snippet": "A conditional acoustic model to generate the target audio based on given conditions (i.e. speaker ID & content information). Here, RVC chooses VITS as its generation framework, with some noticeble influence by HiFi-GAN on the vocoder - this choice is also largely inherited from So-VITS. A retrieval module newly introduced by RVC."
+    },
+    {
+      "title": "Accessible Frameworks for Developing and Evaluating a Memory-centric AI ...",
+      "url": "https://www.kioxia.com/en-jp/rd/technology/topics/topics-58.html",
+      "snippet": "Kioxia is developing Memory-Centric AI that can search through and reference its memory base. Here we introduce one of our recent research results on the frameworks for developing and evaluating retrieval-augmented large language models."
+    },
+    {
+      "title": "Progress of Machine Learning in Molecular Crystal Design and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095809925002942",
+      "snippet": "Margraf [68] reviewed data-driven ML algorithms for novel material design and emphasized the importance of model selection on property prediction. Ashraf et al. [69] determined an important role for AI in the discovery of new crystal molecules."
+    },
+    {
+      "title": "CrystalFlow: a flow-based generative model for crystalline materials",
+      "url": "https://www.nature.com/articles/s41467-025-64364-4",
+      "snippet": "Deep learning generative models hold significant promise for exploring the configuration space of crystalline materials. Here, the authors present CrystalFlow, a flow-based generative model for ..."
+    },
+    {
+      "title": "A comprehensive solution to retrieval-based chatbot construction",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0885230823000414",
+      "snippet": "In view of limitations of both the technology and the training dataset, to ensure quality control we chose to build a retrieval-based, internal facing chatbot. A retrieval based model ensures that responses can be vetted and modified by legal teams, and having the bot be internal facing means that the agent verifies the model&#x27;s response before presenting it to the customer."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ampixa/nepali-rvc-voices-v1",
+  "slug": "ampixa-nepali-rvc-voices-v1",
+  "author": "ampixa",
+  "url": "https://huggingface.co/ampixa/nepali-rvc-voices-v1",
+  "created_at": "2026-08-27T18:59:35.000Z",
+  "updated_at": "2026-08-27T19:00:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "rvc",
+    "voice-conversion",
+    "nepali",
+    "applio",
+    "audio-to-audio",
+    "ne",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ampixa/nepali-voices-v0 · Hugging Face",
+      "url": "https://huggingface.co/ampixa/nepali-voices-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ampixa labs",
+      "url": "https://ampixa.com/",
+      "snippet": "ampixa labs We are ampixa labs — a Nepal-based audio lab working on the raw signal: speech before it becomes text, and speech after text becomes voice. We build text-to-speech, ASR data pipelines, forced alignment, pronunciation systems, human evaluation, and low-resource speech tooling for Nepali and regional languages. Audio is messy. It carries accent, breath, noise, code-switching ..."
+    },
+    {
+      "title": "ampixa (Ampixa Labs) - Hugging Face",
+      "url": "https://huggingface.co/organizations/ampixa/activity/all",
+      "snippet": "AI & ML interests. TTS, STT and OCR for Nepal. Recent Activity. voidash updated a model 29 days ago. ampixa/real-nepali-v0.2-kala"
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "tts.ampixa — open text-to-speech",
+      "url": "https://tts.ampixa.com/",
+      "snippet": "sanoTTS — nine tiny neural voices in six languages, live in your browser and on a $3 microcontroller. Kala — the first open-source Nepali VITS TTS with its own Devanagari G2P. Open models, code, and training recipes."
+    }
+  ]
+}

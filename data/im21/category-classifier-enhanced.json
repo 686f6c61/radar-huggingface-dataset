@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "im21/category-classifier-enhanced",
+  "slug": "im21-category-classifier-enhanced",
+  "author": "im21",
+  "url": "https://huggingface.co/im21/category-classifier-enhanced",
+  "created_at": "2026-08-27T15:42:55.000Z",
+  "updated_at": "2026-08-27T15:43:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395858971,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583454140,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overview of category classification model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/text-classification-overview",
+      "snippet": "Describes category classification models. Gives an overview of how to build and use category classification models in AI Builder."
+    },
+    {
+      "title": "Category classification prebuilt model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-category-classification",
+      "snippet": "The prebuilt category classification model is a ready to use AI model that&#x27;s configured to classify your text into categories that are useful for a specific business scenario. The first prebuilt category classification AI model is built around customer feedback uses."
+    },
+    {
+      "title": "DeepFashion Image Classification - GitHub",
+      "url": "https://github.com/rainalexotl/deepfashion-image-classification",
+      "snippet": "DeepFashion Image Classification is a neural network project focused on classifying clothing items from the DeepFashion dataset. This repository provides tools and models for recognizing clothing categories in images, supporting research and applications in fashion recognition, e-commerce, and computer vision."
+    },
+    {
+      "title": "Deep Learning Models for Classification: A Complete Guide - Metana",
+      "url": "https://metana.io/blog/deep-learning-models-for-classification-a-comprehensive-guide/",
+      "snippet": "The best deep learning model for binary classification will depend on the specific dataset and the desired accuracy. However, some of the most commonly used deep learning models for binary classification include logistic regression, support vector machines, and neural networks."
+    },
+    {
+      "title": "GenAI Category Classifier",
+      "url": "https://docs.datastreamer.io/docs/category-ai-classifier",
+      "snippet": "The GenAI Category Classifier is an AI-powered model designed to categorize text into predefined media topics. This classifier can process text from various sources such as news articles, blogs, and social media posts."
+    }
+  ]
+}

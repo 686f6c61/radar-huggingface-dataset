@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Svoliynyk07/perceiver-matching71",
+  "slug": "svoliynyk07-perceiver-matching71",
+  "author": "Svoliynyk07",
+  "url": "https://huggingface.co/Svoliynyk07/perceiver-matching71",
+  "created_at": "2026-08-27T13:18:12.000Z",
+  "updated_at": "2026-08-27T13:18:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Svoliynyk07/paper_023064607_video_understanding · Hugging Face",
+      "url": "https://huggingface.co/Svoliynyk07/paper_023064607_video_understanding",
+      "snippet": "Svoliynyk07 / paper_023064607_video_understanding like 0 argumentative cautious intro-related-method-exp-conclusion long-detailed markdown numeric-bibtex passive unstructured-narrative video-understanding License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new paper_023064607_video_understanding.md Paper Files ..."
+    },
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "Perceiver [1] is a general architecture that works on many kinds of data, including images, video, audio, 3D point clouds, language and symbolic inputs, multimodal combinations, etc. Perceivers can handle new types of data with only minimal modifications. Perceivers process inputs using domain-agnostic Transformer-style attention. Unlike Transformers, Perceivers first map inputs to a small ..."
+    },
+    {
+      "title": "Perceiver, Perceiver IO and Perceiver AR - GitHub",
+      "url": "https://github.com/krasserm/perceiver-io",
+      "snippet": "This repository is a PyTorch implementation of Perceiver, Perceiver IO and Perceiver AR, with PyTorch Lightning interfaces for model training and Hugging Face 🤗 interfaces for inference."
+    }
+  ]
+}

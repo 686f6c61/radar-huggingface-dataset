@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DialNexa/dialnexa-turn-match-cross-encoder-en-hi",
+  "slug": "dialnexa-dialnexa-turn-match-cross-encoder-en-hi",
+  "author": "DialNexa",
+  "url": "https://huggingface.co/DialNexa/dialnexa-turn-match-cross-encoder-en-hi",
+  "created_at": "2026-08-27T16:10:26.000Z",
+  "updated_at": "2026-08-27T16:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "cross-encoder",
+    "text-ranking",
+    "paraphrase-detection",
+    "int8",
+    "voice-ai",
+    "telephony",
+    "hinglish",
+    "code-mixed",
+    "en",
+    "hi",
+    "base_model:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "base_model:quantized:cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 606325368,
+  "storage_human": "606 MB",
+  "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DialNexa | Voice AI Agents Platform",
+      "url": "https://dialnexa.com/",
+      "snippet": "Build Voice AI agents for sales calls, lead qualification, follow-ups, meeting booking, collections, support, and multilingual workflows."
+    },
+    {
+      "title": "Search reranking with cross-encoders - OpenAI",
+      "url": "https://developers.openai.com/cookbook/examples/search_reranking_with_cross-encoders",
+      "snippet": "This notebook takes you through examples of using a cross-encoder to re-rank search results. This is a common use case with our customers, where you&#x27;ve implemented semantic search using embeddings (produced using a bi-encoder) but the results are not as accurate as your use case requires."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "DialNexa: Voice workflows for inbound calls, outbound",
+      "url": "https://agentsindex.ai/dialnexa",
+      "snippet": "DialNexa is a voice workflow platform for operations, sales, support, recruiting, and product teams that handles inbound calls, outbound campaigns, transcription, synthesis, and workflow-driven agent logic."
+    }
+  ]
+}

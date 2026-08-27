@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jfan/Qwen3.8-27B-heretic-dflash2",
+  "slug": "jfan-qwen3-8-27b-heretic-dflash2",
+  "author": "jfan",
+  "url": "https://huggingface.co/jfan/Qwen3.8-27B-heretic-dflash2",
+  "created_at": "2026-08-25T17:34:28.000Z",
+  "updated_at": "2026-08-27T11:36:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "code"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash",
+    "dflash2",
+    "mlx-vlm",
+    "qwen",
+    "llama",
+    "text-generation",
+    "en",
+    "zh",
+    "code",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:finetune:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 962,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 19244089480,
+  "storage_human": "19.2 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jfan/Qwen3.8-27B-heretic-dflash2 · Hugging Face",
+      "url": "https://huggingface.co/jfan/Qwen3.8-27B-heretic-dflash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jfan/Qwen3.8-27B-heretic-dflash at main - Hugging Face",
+      "url": "https://huggingface.co/jfan/Qwen3.8-27B-heretic-dflash/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative ...",
+      "url": "https://github.com/z-lab/dflash",
+      "snippet": "The MLX backend supports DFlash 2 for Qwen3.8-27B, and DFlash for Qwen3, Qwen3.5, Qwen3.6, and Gemma 4. Qwen3.8 uses reasoning_effort: low, medium, or xhigh (default). For quantized targets or drafts, use block_size <= 5: MLX&#x27;s current quantized matmul kernel becomes less efficient at larger verify widths. The example below runs both the target and draft with 4-bit weights."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

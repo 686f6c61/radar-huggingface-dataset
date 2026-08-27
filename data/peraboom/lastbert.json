@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Peraboom/LastBERT",
+  "slug": "peraboom-lastbert",
+  "author": "Peraboom",
+  "url": "https://huggingface.co/Peraboom/LastBERT",
+  "created_at": "2024-08-04T14:15:50.000Z",
+  "updated_at": "2026-08-27T18:57:14.000Z",
+  "license": "akibcoding",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bert",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 29801090,
+  "parameters_human": "29.8M",
+  "storage_bytes": 238585298,
+  "storage_human": "239 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peraboom/LastBERT · Hugging Face",
+      "url": "https://huggingface.co/Peraboom/LastBERT",
+      "snippet": "This model, referred to as LastBERT, is a lightweight yet potent BERT-based model designed for natural language processing (NLP) applications. It was created through knowledge distillation from a larger BERT model, resulting in a significant reduction in parameters—from 110 million in BERT-base-uncased to just 29 million in LastBERT, making it approximately 73.64% smaller. Despite its ..."
+    },
+    {
+      "title": "Peraboom/LastBERT at main - Hugging Face",
+      "url": "https://huggingface.co/Peraboom/LastBERT/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Enhancing Multi-Class Disease Classification: Neoplasms, Cardiovascular ...",
+      "url": "https://arxiv.org/html/2411.12712v1",
+      "snippet": "LastBERT, a custom model based on the lighter version of BERT, also proved competitive with 87.10% accuracy (just under BERT&#x27;s 89.33%). Our findings confirm the importance of specialized models such as BioBERT and also support impressions around more general solutions like XLNet and well-tuned transformer architectures with fewer parameters ..."
+    },
+    {
+      "title": "arXiv:2411.00052v1 [cs.CL] 30 Oct 2024",
+      "url": "https://arxiv.org/pdf/2411.00052",
+      "snippet": "Abstract This work focuses on the efficiency of the knowledge distillation approach in generating a lightweight yet powerful BERT-based model for natural language processing (NLP) applications. After the model creation, we applied the resulting model, LastBERT, to a real-world taskclassifying severity levels of Attention Deficit Hyperactivity Disorder (ADHD)-related concerns from social media ..."
+    },
+    {
+      "title": "(PDF) Larger models yield better results? Streamlined severity ...",
+      "url": "https://www.researchgate.net/publication/388763175_Larger_models_yield_better_results_Streamlined_severity_classification_of_ADHD-related_concerns_using_BERT-based_knowledge_distillation",
+      "snippet": "After the model creation, we applied the resulting model, LastBERT, to a real-world task—classifying severity levels of Attention Deficit Hyperactivity Disorder (ADHD)-related concerns from ..."
+    }
+  ]
+}

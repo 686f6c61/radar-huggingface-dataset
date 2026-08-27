@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "that-fallen-angel/fallen-angel_gemma2-9b-finetune",
+  "slug": "that-fallen-angel-fallen-angel_gemma2-9b-finetune",
+  "author": "that-fallen-angel",
+  "url": "https://huggingface.co/that-fallen-angel/fallen-angel_gemma2-9b-finetune",
+  "created_at": "2026-08-27T17:18:37.000Z",
+  "updated_at": "2026-08-27T17:20:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 5761058016,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "that-fallen-angel/fallen-angel_gemma7b-finetune · Hugging Face",
+      "url": "https://huggingface.co/that-fallen-angel/fallen-angel_gemma7b-finetune",
+      "snippet": "Instructions to use that-fallen-angel/fallen-angel_gemma7b-finetune with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "fallen-angel_codegemma7b-finetune - Hugging Face",
+      "url": "https://huggingface.co/that-fallen-angel/fallen-angel_codegemma7b-finetune",
+      "snippet": "Instructions to use that-fallen-angel/fallen-angel_codegemma7b-finetune with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Fine-Tuning Gemma 2 and Using it Locally - DataCamp",
+      "url": "https://www.datacamp.com/tutorial/fine-tuning-gemma-2",
+      "snippet": "This is a simple guide to fine-tuning Gemma 2 9B-It on patient-doctor conversations and converting the model into GGUF format so that it can be used locally.."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "Gemma model fine-tuning - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/tune",
+      "snippet": "Fine-tuning a generative artificial intelligence (AI) model such as Gemma modifies the behavior of the model. You typically fine-tune Gemma with the intent of improving its performance on a specific task or domain, or to better fulfill a role, such as customer service."
+    }
+  ]
+}

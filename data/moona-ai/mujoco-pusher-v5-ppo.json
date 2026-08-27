@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "moona-ai/mujoco-pusher-v5-ppo",
+  "slug": "moona-ai-mujoco-pusher-v5-ppo",
+  "author": "moona-ai",
+  "url": "https://huggingface.co/moona-ai/mujoco-pusher-v5-ppo",
+  "created_at": "2026-08-27T12:00:57.000Z",
+  "updated_at": "2026-08-27T12:10:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "mujoco",
+    "pusher-v5",
+    "robotics",
+    "physical-ai",
+    "robotic-arm",
+    "continuous-control",
+    "arxiv:1707.06347",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176873,
+  "storage_human": "176873 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Continuous Robotic Control",
+      "dataset": "Pusher-v5",
+      "metric": "Mean Evaluation Reward",
+      "value": -20.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Luna002-Luna75/ppo-pusher-v5 · Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75/ppo-pusher-v5",
+      "snippet": "🤖 Physical AI: Pusher-v5 PPO Model This repository contains a trained Proximal Policy Optimization (PPO) agent for the Gymnasium MuJoCo Pusher-v5 environment using Stable-Baselines3."
+    },
+    {
+      "title": "pusher-v5-ppo/README.md at main · Hwihwa-Lab/pusher-v5-ppo · GitHub",
+      "url": "https://github.com/Hwihwa-Lab/pusher-v5-ppo/blob/main/README.md",
+      "snippet": "This repository contains an advanced continuous deep reinforcement learning system (PPO) and a real-time engineering telemetry cockpit for 7-DOF robotic arm manipulation in Gymnasium MuJoCo Pusher-v5."
+    },
+    {
+      "title": "hwihwalab/pusher-v5-ppo · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/pusher-v5-ppo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Hwihwa-Lab/pusher-v5-ppo",
+      "url": "https://github.com/Hwihwa-Lab/pusher-v5-ppo",
+      "snippet": "This repository contains an advanced continuous deep reinforcement learning system (PPO) and a real-time engineering telemetry cockpit for 7-DOF robotic arm manipulation in Gymnasium MuJoCo Pusher-v5."
+    },
+    {
+      "title": "Pusher - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/pusher/",
+      "snippet": "Version History ¶ v5: Minimum mujoco version is now 2.3.3. Fixed bug: increased the density of the object to be higher than air (related GitHub issue). Added default_camera_config argument, a dictionary for setting the mj_camera properties, mainly useful for custom environments."
+    }
+  ]
+}

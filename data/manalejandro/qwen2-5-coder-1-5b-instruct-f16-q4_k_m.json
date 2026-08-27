@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "manalejandro/Qwen2.5-Coder-1-5B-Instruct-f16-q4_k_m",
+  "slug": "manalejandro-qwen2-5-coder-1-5b-instruct-f16-q4_k_m",
+  "author": "manalejandro",
+  "url": "https://huggingface.co/manalejandro/Qwen2.5-Coder-1-5B-Instruct-f16-q4_k_m",
+  "created_at": "2026-08-27T16:38:22.000Z",
+  "updated_at": "2026-08-27T16:39:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen2.5-coder",
+    "code",
+    "qwen2",
+    "llama.cpp",
+    "q4_k_m",
+    "quantization",
+    "text-generation",
+    "en",
+    "multilingual",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 986048512,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-1.5B-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). For Qwen2.5-Coder, we release three base language models and instruction-tuned language models, 1.5, 7 and 32 (coming soon) billion parameters."
+    },
+    {
+      "title": "Qwen2.5 Coder 1.5B Instruct by Qwen — VRAM 3.1GB, 32K context | LLM ...",
+      "url": "https://llm-explorer.com/model/Qwen%2FQwen2.5-Coder-1.5B-Instruct,3UEbw9qUlk6g82SXEd8vjE",
+      "snippet": "Qwen2.5 Coder 1.5B Instruct is an open-source 1.5b LLM by Qwen. VRAM 3.1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen2.5:1.5b-instruct-q4_K_M",
+      "url": "https://ollama.com/library/qwen2.5:1.5b-instruct-q4_K_M",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-Coder-1.5B-Instruct-Reasoning - GitHub",
+      "url": "https://github.com/bunyaminergen/Qwen2.5-Coder-1.5B-Instruct-Reasoning",
+      "snippet": "This repository provides everything you need to perform Supervised Fine-Tuning (SFT) of the Qwen2.5-Coder-1.5B-Instruct model—or any of its larger variants (7B, 14B, 32B)—on the Qwen Models, using the nvidia/OpenCodeReasoning dataset. Note: If you would like to contribute to this repository, please read the CONTRIBUTING file under the Documentation section first."
+    }
+  ]
+}

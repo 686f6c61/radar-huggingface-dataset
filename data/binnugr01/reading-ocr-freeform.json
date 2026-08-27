@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "binnugr01/reading-ocr-freeform",
+  "slug": "binnugr01-reading-ocr-freeform",
+  "author": "binnugr01",
+  "url": "https://huggingface.co/binnugr01/reading-ocr-freeform",
+  "created_at": "2026-08-27T15:28:25.000Z",
+  "updated_at": "2026-08-27T15:28:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read model OCR data extraction - Document Intelligence - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0",
+      "snippet": "Extract print and handwritten text from scanned and digital documents with Document Intelligence&#x27;s Read OCR model."
+    },
+    {
+      "title": "#machinelearning #visionlanguagemodels #ai #rag #genai #vlms - LinkedIn",
+      "url": "https://www.linkedin.com/posts/inuguri_machinelearning-visionlanguagemodels-ai-activity-7497575203095371776-LVuF",
+      "snippet": "2️⃣ Used pretrained models to read real scanned images directly, no OCR, where a strong local, free model held its own against a larger cloud model. 3️⃣ Extended that to free-form Q&A over ..."
+    },
+    {
+      "title": "azure-ai-docs/articles/ai-services/document-intelligence/prebuilt/read ...",
+      "url": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-services/document-intelligence/prebuilt/read.md",
+      "snippet": "It detects paragraphs, text lines, words, locations, and languages. The Read model is the underlying OCR engine for other Document Intelligence prebuilt models like Layout, General Document, Invoice, Receipt, Identity (ID) document, Health insurance card, W2 in addition to custom models."
+    },
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OCR With Google AI",
+      "url": "https://cloud.google.com/use-cases/ocr",
+      "snippet": "OCR (Optical Character Recognition) solutions powered by Google AI to help you extract text and business-ready insights, at scale."
+    }
+  ]
+}

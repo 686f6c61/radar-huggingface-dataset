@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AmitGupta8/embodied-ai-study",
+  "slug": "amitgupta8-embodied-ai-study",
+  "author": "AmitGupta8",
+  "url": "https://huggingface.co/AmitGupta8/embodied-ai-study",
+  "created_at": "2026-08-27T18:21:19.000Z",
+  "updated_at": "2026-08-27T18:21:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - haoranD/Awesome-Embodied-AI: A curated list of awesome papers ...",
+      "url": "https://github.com/haoranD/Awesome-Embodied-AI",
+      "snippet": "A curated list of awesome papers on Embodied AI and related research/industry-driven resources, inspired by awesome-computer-vision. Embodied AI has led to a new breakthrough, and this repository will keep tracking and summarizing the research or industrial progress."
+    },
+    {
+      "title": "⚙️ Multimodal-Embodied-AI - GitHub",
+      "url": "https://github.com/Hoar012/Awesome-Multimodal-Embodied-AI",
+      "snippet": "A list of papers at the intersection of multimodal learning, embodied AI, and robotics. - Hoar012/Awesome-Multimodal-Embodied-AI"
+    },
+    {
+      "title": "Embodied Intelligence | Springer Nature Link",
+      "url": "https://link.springer.com/rwe/10.1007/978-981-97-8440-0_8-1",
+      "snippet": "Embodied intelligence, or embodied AI, refers to artificial systems whose cognitive processes emerge from continuous sensorimotor interactions in real-world environments. This chapter explores its foundational theories, examines implementations across multiple..."
+    },
+    {
+      "title": "Embodied AI - Nature",
+      "url": "https://www.nature.com/collections/ibgfciaafb",
+      "snippet": "Rather than current AI technologies that focused primarily on disembodied cognition, for example language, vision, or games, Embodied AI strives to create more human-like intelligent agents ..."
+    },
+    {
+      "title": "(PDF) Embodied AI: A Survey on the Evolution from Perceptive to ...",
+      "url": "https://www.researchgate.net/publication/395884929_Embodied_AI_A_Survey_on_the_Evolution_from_Perceptive_to_Behavioral_Intelligence",
+      "snippet": "Thus, we provide a comprehensive survey on Embodied AI. According to the process of robot behavior, we categorize Embodied AI into three modules: embodied perception, embodied decision‐making ..."
+    }
+  ]
+}

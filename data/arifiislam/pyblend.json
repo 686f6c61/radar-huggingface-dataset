@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ArifiIslam/PyBlend",
+  "slug": "arifiislam-pyblend",
+  "author": "ArifiIslam",
+  "url": "https://huggingface.co/ArifiIslam/PyBlend",
+  "created_at": "2026-08-27T14:06:25.000Z",
+  "updated_at": "2026-08-27T15:00:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39520564,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PyBlend — Automated Powder-Blend Formulation - GitHub",
+      "url": "https://github.com/anvasquezre/PyBlend/tree/main",
+      "snippet": "PyBlend is the research artifact behind a doctoral thesis (Universidad Nacional de Colombia, Agrosciences) on automating the ideation phase of dehydrated powdered-food development. Given a nutritional brief written in natural language, it produces an optimized powder-blend formulation, the raw ingredient loads needed for the dehydration process, and a fully auditable trace of every selection ..."
+    },
+    {
+      "title": "GitHub - anyeZHY/PyBlend: PyBlend: a package for Blender with Python",
+      "url": "https://github.com/anyeZHY/PyBlend",
+      "snippet": "PyBlend is a Python library for Blender. It provides a lot of valuable functions for Blender scripting. Figure 1. Depth maps, random material images, and normal maps rendered using PyBlend with the Stanford Bunny."
+    },
+    {
+      "title": "PyBlend: Towards an AI Food Scientist for Nutritional Product Design",
+      "url": "https://2026.pycon.co/talks/50/",
+      "snippet": "Imagine having a \"food scientist\" built in Python who, instead of wearing a lab coat, uses DAGs, embeddings, and LLMs to help you design nutritious powder blends. In this talk I&#x27;ll present PyBlend, an AI agent that takes a nutritional brief in natural language (for example: \"I want a vegan, high‑protein, low‑sugar blend that&#x27;s suitable for dehydration\") and turns it into a ..."
+    },
+    {
+      "title": "Building Domain-Specific LLMs Faithful To The Islamic Worldview: Mirage ...",
+      "url": "https://arxiv.org/html/2312.06652v1",
+      "snippet": "We use the Open AI text-embedding-ada-002 model to convert the text data into vector embeddings that capture the semantic essence of the text. We store these embeddings in a vector database designed for efficient storage and retrieval of vector data. In the retrieval step, the system receives questions to be processed through a query process."
+    },
+    {
+      "title": "Haoyu Zhen - Homepage",
+      "url": "https://haoyuzhen.com/",
+      "snippet": "PyBlend: A Python Library for Blender ‍ pip install pyblend ｜ PyPI ｜ Github ｜ Gallery ｜ PyBlend, a project I&#x27;ve passionately contributed to, is a Python library that provides a high-level interface for Blender scripting. It empowers artists and developers like me to effortlessly enhance Blender workflows with an array of dynamic ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "johnallenman/generation",
+  "slug": "johnallenman-generation",
+  "author": "johnallenman",
+  "url": "https://huggingface.co/johnallenman/generation",
+  "created_at": "2026-08-27T14:08:40.000Z",
+  "updated_at": "2026-08-27T14:08:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olmo from Ai2",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, software code or other forms of data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language prompts ..."
+    },
+    {
+      "title": "Generative AI and the Foundation Model Era: A Comprehensive Review - MDPI",
+      "url": "https://www.mdpi.com/2504-2289/10/3/94",
+      "snippet": "These models form the core of many current generative AI (GenAI) systems and differ in important ways from traditional models built for a single task. Foundation models are not built for a single task; they aim to generalize across many tasks and data types, which allows zero-shot and few-shot learning in different domains and modalities [4]."
+    },
+    {
+      "title": "Generative Artificial Intelligence: A Systematic Review and Applications",
+      "url": "https://arxiv.org/html/2405.11029v1",
+      "snippet": "This approach also includes searching for advancements in &#x27;image translation&#x27;, &#x27;video synthesis&#x27;, and various applications of Generative AI in &#x27;natural language processing&#x27; and &#x27;knowledge graph generation&#x27;. This methodology ensures a focused and comprehensive review of the latest developments in the field of Generative AI."
+    },
+    {
+      "title": "ProgramBench",
+      "url": "https://programbench.com/",
+      "snippet": "ProgramBench evaluates whether language models can rebuild programs from scratch."
+    }
+  ]
+}

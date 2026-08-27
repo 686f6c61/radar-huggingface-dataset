@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xinyihan2000/efficient-attention",
+  "slug": "xinyihan2000-efficient-attention",
+  "author": "xinyihan2000",
+  "url": "https://huggingface.co/xinyihan2000/efficient-attention",
+  "created_at": "2026-08-27T14:39:38.000Z",
+  "updated_at": "2026-08-27T14:39:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xinyihan2000 (X. Han) - Hugging Face",
+      "url": "https://huggingface.co/xinyihan2000/models",
+      "snippet": "User profile of X. Han on Hugging Face"
+    },
+    {
+      "title": "Efficient Attention（高效注意力机制，举例，详解） - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/1029092892",
+      "snippet": "实际上就是切分然后做full attention，在上图中的子图b中实际上就是在3x3的区域内做full attention。 2. Sliding Window Attention Sliding Window Attention是一种受 卷积神经网络 （CNN）启发的注意力机制，旨在通过滑动窗口方法实现高效的局部注意力计算。"
+    },
+    {
+      "title": "[1812.01243] Efficient Attention: Attention with Linear Complexities",
+      "url": "https://arxiv.org/abs/1812.01243",
+      "snippet": "Further, the resource efficiency democratizes attention to complex models, where high costs prohibit the use of dot-product attention. As an exemplar, a model with efficient attention achieved state-of-the-art accuracies for stereo depth estimation on the Scene Flow dataset. Code is available at this https URL."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models:",
+      "url": "https://arxiv.org/html/2507.19595v1",
+      "snippet": "In addition, we analyze the incorporation of efficient attention into large-scale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components."
+    },
+    {
+      "title": "An Efficient Attention Mechanism Model - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/11004318",
+      "snippet": "This article presents an innovative approach to enhance the efficiency of attention mechanism-based models. Our primary goal is to reduce computational complexity and running time while maintaining the performance integrity. We achieve this by streamlining models through the elimination of redundant attention heads, making them more resource-efficient across various tasks. In this paper, we ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dmitry-zakharov/knowledge-distillation-analysis5",
+  "slug": "dmitry-zakharov-knowledge-distillation-analysis5",
+  "author": "Dmitry-zakharov",
+  "url": "https://huggingface.co/Dmitry-zakharov/knowledge-distillation-analysis5",
+  "created_at": "2026-08-27T16:54:46.000Z",
+  "updated_at": "2026-08-27T16:54:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.12067",
+      "snippet": "arXiv.org is an open-access repository for scientific research papers across various disciplines, providing a platform for researchers to share and access knowledge."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Knowledge distillation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "snippet": "In machine learning, knowledge distillation or model distillation is the process of transferring knowledge from a large model to a smaller one. While large models (such as very deep neural networks or ensembles of many models [1]) have more knowledge capacity than small models, this capacity might not be fully utilized. It can be just as computationally expensive to evaluate a model even if it ..."
+    },
+    {
+      "title": "Knowledge Distillation - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/",
+      "snippet": "Knowledge Distillation is a model compression technique in which a smaller, simpler model (student) is trained to imitate the behavior of a larger, complex model (teacher). Instead of learning directly from data, the student model learns from the soft targets or probabilities, which are produced by the teacher model. This technique helps in deploying deep models on edge devices like mobiles or ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

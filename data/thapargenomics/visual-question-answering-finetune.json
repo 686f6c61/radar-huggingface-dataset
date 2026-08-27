@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thapargenomics/visual-question-answering-finetune",
+  "slug": "thapargenomics-visual-question-answering-finetune",
+  "author": "thapargenomics",
+  "url": "https://huggingface.co/thapargenomics/visual-question-answering-finetune",
+  "created_at": "2026-08-27T12:43:56.000Z",
+  "updated_at": "2026-08-27T12:44:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    },
+    {
+      "title": "Visual Question Answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    },
+    {
+      "title": "Visual Question Answering - GitHub",
+      "url": "https://github.com/yousefkotp/Visual-Question-Answering",
+      "snippet": "A Light weight deep learning model with with a web application to answer image-based questions with a non-generative approach for the VizWiz grand challenge 2023 by carefully curating the answer vocabulary and adding linear layer on top of Open AI&#x27;s CLIP model as image and text encoder - yousefkotp/Visual-Question-Answering"
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "transformers/docs/source/en/tasks/visual_question_answering.md ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/tasks/visual_question_answering.md",
+      "snippet": "ViLT model incorporates text embeddings into a Vision Transformer (ViT), allowing it to have a minimal design for Vision-and-Language Pre-training (VLP). This model can be used for several downstream tasks. For the VQA task, a classifier head is placed on top (a linear layer on top of the final hidden state of the [CLS] token) and randomly initialized. Visual Question Answering is thus treated ..."
+    }
+  ]
+}

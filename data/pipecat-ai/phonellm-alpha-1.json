@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "pipecat-ai/phonellm-alpha-1",
+  "slug": "pipecat-ai-phonellm-alpha-1",
+  "author": "pipecat-ai",
+  "url": "https://huggingface.co/pipecat-ai/phonellm-alpha-1",
+  "created_at": "2026-08-24T18:47:20.000Z",
+  "updated_at": "2026-08-27T17:19:05.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "phone",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "pipecat",
+    "custom_code",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:bsd-2-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 64,
+  "trending_score": 14,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63174634906,
+  "storage_human": "63.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gorillaa-ai-org/pipecat - GitHub",
+      "url": "https://github.com/Gorillaa-ai-org/pipecat",
+      "snippet": "Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Orchestrate audio and video, AI services, different transports, and conversation pipelines effortlessly—so you can focus on what makes your agent unique. Want to dive right in? Try the quickstart."
+    },
+    {
+      "title": "LLM Inference - Pipecat",
+      "url": "https://docs.pipecat.ai/pipecat/learn/llm",
+      "snippet": "Learn how to configure language models to generate intelligent responses in your voice AI pipeline LLM services are responsible for chat completions and tool calling based on the provided context (conversation history). The LLM responds by streaming tokens via LLMTextFrame s, which are used by subsequent processors to create audio output for ..."
+    },
+    {
+      "title": "GitHub - suryahamming/pipecat-ai: Open Source framework for voice and ...",
+      "url": "https://github.com/suryahamming/pipecat-ai",
+      "snippet": "Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Orchestrate audio and video, AI services, different transports, and conversation pipelines effortlessly—so you can focus on what makes your agent unique."
+    },
+    {
+      "title": "Pipecat Open Source Framework - Pipecat - docs.pipecat.ai",
+      "url": "https://docs.pipecat.ai/overview/pipecat",
+      "snippet": "Pipecat is an open source Python framework for voice and multimodal AI agents, orchestrating AI services and transports."
+    },
+    {
+      "title": "Pipecat by Daily",
+      "url": "https://www.pipecat.ai/",
+      "snippet": "Open source framework for voice and multimodal conversational AI."
+    }
+  ]
+}

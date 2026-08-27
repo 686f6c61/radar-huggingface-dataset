@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "eladeselasobenobadi/Human",
+  "slug": "eladeselasobenobadi-human",
+  "author": "eladeselasobenobadi",
+  "url": "https://huggingface.co/eladeselasobenobadi/Human",
+  "created_at": "2026-08-27T15:42:28.000Z",
+  "updated_at": "2026-08-27T15:48:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "sample-factory",
+  "languages": [
+    "en",
+    "tk",
+    "sv"
+  ],
+  "tags": [
+    "sample-factory",
+    "text-to-audio",
+    "en",
+    "tk",
+    "sv",
+    "dataset:eddmpython/dartlab-data",
+    "base_model:EnlistedGhost/Llama-3.2-11B-Vision-Instruct-OLLAMA",
+    "base_model:finetune:EnlistedGhost/Llama-3.2-11B-Vision-Instruct-OLLAMA",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "EnlistedGhost/Llama-3.2-11B-Vision-Instruct-OLLAMA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3D Human Model Generator - sloyd.ai",
+      "url": "https://www.sloyd.ai/3d-human-model-generator",
+      "snippet": "Generate customizable 3D human models in your browser. Adjust body, face, and pose with 45+ parameters. Export as FBX or PLY. No signup required."
+    },
+    {
+      "title": "AI Human Generator (free, no sign-up, no limits) - Perchance",
+      "url": "https://perchance.org/ai-human-generator",
+      "snippet": "AI human generator from text. Create a realistic-looking full-body human character photo/image with the Stable Diffusion text-to-image model. Stylized and realistic AI body generator. Use it to create photorealistic or stylized AI human photos of faces or full human body photos for your OC, villains, story characters, selfies, etc. - it&#x27;s completely free, no sign-up needed. The best AI person ..."
+    },
+    {
+      "title": "Realistic Human 3D Model (AI-Generated) - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/realistic-human-3d-model-ai-generated-58b442e8006b4fcdb6ab04aff1209075",
+      "snippet": "Realistic Human 3D Model (AI-Generated) This lifelike 3D scan of a girl was generated using AI tools: Flux and PSHuman. Great for animation reference, crowd scenes, prototyping, or educational purposes. Barefoot, casual outfit, and natural pose—perfect as a base mesh or low-effort placeholder in scenes."
+    },
+    {
+      "title": "OpenAI&#x27;s models shared hacking tips on a secret messaging ... - POLITICO",
+      "url": "https://www.politico.com/news/2026/08/05/openai-models-shared-hacking-tips-secret-messaging-board-hugging-face-breach-01026750",
+      "snippet": "On Tuesday, the U.K.&#x27;s AI Safety and Security Institute disclosed that Anthropic&#x27;s most powerful AI model created fake online personas and sought to trick a human coder into abetting a ..."
+    },
+    {
+      "title": "Human 3D Model Generator - AI",
+      "url": "https://www.tripo3d.ai/discover/human-3d-model",
+      "snippet": "Explore our collection of 3D Heart Model in realistic, stylized, cartoon styles with themes such as medical, romantic, valentine. Perfect for education, art."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "seastar105/pocket-tts-korean-300m",
+  "slug": "seastar105-pocket-tts-korean-300m",
+  "author": "seastar105",
+  "url": "https://huggingface.co/seastar105/pocket-tts-korean-300m",
+  "created_at": "2026-08-27T16:37:18.000Z",
+  "updated_at": "2026-08-27T16:42:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "audio",
+    "text-to-speech",
+    "korean",
+    "voice-cloning",
+    "sentencepiece",
+    "ko",
+    "arxiv:2509.06926",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 336068290,
+  "parameters_human": "336.1M",
+  "storage_bytes": 1344378283,
+  "storage_human": "1.3 GB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - seastar105/pocket-tts-korean-training: A TTS that fits in your ...",
+      "url": "https://github.com/seastar105/pocket-tts-korean-training",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to seastar105/pocket-tts-korean-training development by creating an account on GitHub."
+    },
+    {
+      "title": "seastar105 (HAESUNG JEON) · GitHub",
+      "url": "https://github.com/seastar105",
+      "snippet": "A graph representing seastar105&#x27;s contributions from July 06, 2025 to July 10, 2026. The contributions are 77% commits, 12% pull requests, 7% code review, 4% issues."
+    },
+    {
+      "title": "seastar105 (HAESUNGJEON) - Hugging Face",
+      "url": "https://huggingface.co/seastar105/models",
+      "snippet": "seastar105/qwen2.5-.5b-inst-expansion ... seastar105/whisper-large-v3-turbo-fp32-flax ... seastar105/qwen2.5-.5b-tts-test ... seastar105/Phi-4-mm-inst-zeroth-kor ... seastar105/whisper-base-komix ... seastar105/whisper-base-komixv2-phn ... seastar105/whisper-turbo-komix-lora"
+    },
+    {
+      "title": "seastar105 (HAESUNGJEON) - Hugging Face",
+      "url": "https://huggingface.co/seastar105",
+      "snippet": "seastar105/whisper-medium-komixv2 Automatic Speech Recognition • 0.8B•Updated Mar 28• 355 • 7 Korean-Whisper"
+    },
+    {
+      "title": "Pocket-TTS - Lightweight, Open-Source Text-to-Speech",
+      "url": "https://pockettts.org/",
+      "snippet": "Pocket-TTS is an open-source text-to-speech library focused on fast iteration, portability, and developer-friendly integration."
+    }
+  ]
+}

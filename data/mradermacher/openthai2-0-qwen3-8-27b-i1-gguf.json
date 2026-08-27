@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/openthai2.0-qwen3.8-27b-i1-GGUF",
+  "slug": "mradermacher-openthai2-0-qwen3-8-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/openthai2.0-qwen3.8-27b-i1-GGUF",
+  "created_at": "2026-08-27T14:42:22.000Z",
+  "updated_at": "2026-08-27T14:49:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 23646568064,
+  "storage_human": "23.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-heretic-ara-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-ara-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "おすすめの日本語対応ローカル大規模言語モデル - 日本語ローカルLLM関連のメモWiki",
+      "url": "https://local-llm.memo.wiki/d/%A4%AA%A4%B9%A4%B9%A4%E1%A4%CE%C6%FC%CB%DC%B8%EC%C2%D0%B1%FE%A5%ED%A1%BC%A5%AB%A5%EB%C2%E7%B5%AC%CC%CF%B8%C0%B8%EC%A5%E2%A5%C7%A5%EB",
+      "snippet": "実際に動かしてみて個人的におすすめのモデルとSNSなどで評判の良いモデルなどを適当に載せています。（順番がぐちゃぐちゃ...）主要なモデルに関してはローカルLLM のリリース年表@npaka様や、awesome-japanese-..."
+    },
+    {
+      "title": "เปิด OpenThai 2.0 โมเดล AI ไทย 27B เก่งภาษาไทย-เอกสาร-สร้างเอเจนต์",
+      "url": "https://www.thansettakij.com/technology/ai/667503",
+      "snippet": "iApp Technology จับมือ AIEAT เปิดตัวโมเดล AI โอเพนซอร์สไทยขนาด 27B ต่อยอดจาก Qwen3.8-27B ชูจุดเด่นด้านภาษาไทย การอ่านเอกสาร และ AI Agent พร้อมเปิดใช้ฟรีภายใต้ Apache 2.0"
+    },
+    {
+      "title": "Qwen3.5-27B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.5-27B",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

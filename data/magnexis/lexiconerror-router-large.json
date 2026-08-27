@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Magnexis/lexiconerror-router-large",
+  "slug": "magnexis-lexiconerror-router-large",
+  "author": "Magnexis",
+  "url": "https://huggingface.co/Magnexis/lexiconerror-router-large",
+  "created_at": "2026-08-27T18:24:06.000Z",
+  "updated_at": "2026-08-27T18:24:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "developer-tools",
+    "compiler-diagnostics",
+    "runtime-exceptions",
+    "error-classification",
+    "tfidf",
+    "text-classification",
+    "dataset:Magnexis/lexiconerror-diagnostics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65939559,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLMRouter: An Open-Source Library for LLM Routing - GitHub",
+      "url": "https://github.com/ulab-uiuc/LLMRouter",
+      "snippet": "LLMRouter is an intelligent routing system designed to optimize LLM inference by dynamically selecting the most suitable model for each query. To achieve intelligent routing, it defines: 🚀 Smart Routing: Automatically routes queries to the optimal LLM based on task complexity, cost, and performance requirements. 📊 Multiple Router Models: Support for over 16 routing models, organized into ..."
+    },
+    {
+      "title": "Compare AI Models: Pricing, Context & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/models",
+      "snippet": "Compare 500+ LLMs from OpenAI, Anthropic, Google, Meta and more — pricing, context length, and benchmarks side by side, all through one API."
+    },
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors. vLLM is fast with: State-of-the-art serving throughput Efficient ..."
+    },
+    {
+      "title": "How to use model router for Microsoft Foundry - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+      "snippet": "Model router is a trained language model that selects the best large language model (LLM) to respond to a prompt in real time. It uses different preexisting models to deliver high performance and save on compute costs, all in one model deployment. To learn more about how model router works, its advantages, and limitations, see the Model router concepts guide. To understand the architecture and ..."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

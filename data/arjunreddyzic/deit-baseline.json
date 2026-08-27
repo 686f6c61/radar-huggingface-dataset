@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arjunreddyzic/deit-baseline",
+  "slug": "arjunreddyzic-deit-baseline",
+  "author": "arjunreddyzic",
+  "url": "https://huggingface.co/arjunreddyzic/deit-baseline",
+  "created_at": "2026-08-27T15:45:38.000Z",
+  "updated_at": "2026-08-27T15:45:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "arjunreddyzic (Arjun Reddy) - Hugging Face",
+      "url": "https://huggingface.co/arjunreddyzic/models",
+      "snippet": "User profile of Arjun Reddy on Hugging Face"
+    },
+    {
+      "title": "Robust Lightweight Deep Learning Models for Oral Cancer Screening",
+      "url": "https://arxiv.org/html/2608.21583v1",
+      "snippet": "II-ARetrospective Data A retrospective dataset was used to develop, tune, and evaluate the AI models. To ensure a robust evaluation of model generalisability, the cleaned dataset was partitioned into a training set for model optimisation, a validation set for checkpointing, and a strictly held-out test set for final performance benchmarking."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2206.03697",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou."
+    }
+  ]
+}

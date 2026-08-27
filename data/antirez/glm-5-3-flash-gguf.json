@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "antirez/glm-5.3-flash-gguf",
+  "slug": "antirez-glm-5-3-flash-gguf",
+  "author": "antirez",
+  "url": "https://huggingface.co/antirez/glm-5.3-flash-gguf",
+  "created_at": "2026-08-27T09:03:19.000Z",
+  "updated_at": "2026-08-27T10:15:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": 320778593630,
+  "parameters_human": "320.78B",
+  "storage_bytes": 614590402432,
+  "storage_human": "614.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "antirez/glm-5.3-flash-gguf · Hugging Face",
+      "url": "https://huggingface.co/antirez/glm-5.3-flash-gguf",
+      "snippet": "Instructions to use antirez/glm-5.3-flash-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use antirez/glm-5.3-flash-gguf with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash can now run locally in Unsloth Desktop! GLM-5.3-Flash was trained on 30T tokens and is built on a newly trained base model redesigned. Its hybrid sparse and linear attention architecture lowers long-context serving costs without sacrificing accuracy, while Manifold-Constrained Hyper-Connections improve scaling."
+    },
+    {
+      "title": "GLM-5.3-Flash AI Model — Try It on Felo AI",
+      "url": "https://felo.ai/tools/glm-53-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s open-weights frontier model, released on August 26, 2026. It is a 320B-parameter Mixture-of-Experts model with 18B active parameters, a 1,310,720-token context window, native text, image, and video input, and hybrid sparse-plus-linear attention."
+    },
+    {
+      "title": "GLM-5.3-Flash Launch — Ox Alpha Was Zhipu (MIT) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/glm-5-3-flash-ox-alpha-official-launch-august-2026",
+      "snippet": "Z.ai&#x27;s launch blog is explicit about the strategy: test anonymously on OpenCode and OpenRouter, become \"the most popular model of the week,\" then ship under the GLM brand with open weights. Hunter Alpha and Healer Alpha → MiMo was the same playbook from a different lab. What changes for builders now: Route to z-ai/glm-5.3-flash (or Hugging Face locally) instead of guessing about stealth/ox ..."
+    },
+    {
+      "title": "Run GLM-5.3-Flash Locally: RAM, GGUF Size, and Speed",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/run-glm-5-3-flash-locally-hardware-reality-check",
+      "snippet": "Can you run GLM-5.3-Flash locally? GGUF sizes for the 320B-A18B MIT model, the 128GB line, and day-one runtime status. Find your tier before you buy."
+    }
+  ]
+}

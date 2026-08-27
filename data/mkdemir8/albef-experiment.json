@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mkdemir8/albef-experiment",
+  "slug": "mkdemir8-albef-experiment",
+  "author": "mkdemir8",
+  "url": "https://huggingface.co/mkdemir8/albef-experiment",
+  "created_at": "2026-08-27T16:31:17.000Z",
+  "updated_at": "2026-08-27T16:31:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "multimodal/torchmultimodal/models/albef/model.py at main ... - GitHub",
+      "url": "https://github.com/facebookresearch/multimodal/blob/main/torchmultimodal/models/albef/model.py",
+      "snippet": "Files main multimodal / torchmultimodal / models / albef / model.py Cannot retrieve latest commit at this time."
+    },
+    {
+      "title": "Emergent Introspective Awareness in Large Language Models",
+      "url": "https://transformer-circuits.pub/2025/introspection/index.html",
+      "snippet": "Introduction Humans, and likely some animals, possess the remarkable capacity for introspection: the ability to observe and reason about their own thoughts. As AI systems perform increasingly impressive feats of cognition, it is natural to wonder whether they possess any similar awareness of their internal states. Modern language models can appear to demonstrate introspection, sometimes making ..."
+    },
+    {
+      "title": "Merck/AbLEF: Antibody Langauge Ensemble Fusion - GitHub",
+      "url": "https://github.com/Merck/AbLEF",
+      "snippet": "Antibody Langauge Ensemble Fusion - fuses antibody structural ensemble and language representation for property prediction - Merck/AbLEF"
+    },
+    {
+      "title": "ALBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/albert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

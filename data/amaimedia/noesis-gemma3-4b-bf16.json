@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Gemma3-4B-BF16",
+  "slug": "amaimedia-noesis-gemma3-4b-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Gemma3-4B-BF16",
+  "created_at": "2026-08-16T10:58:24.000Z",
+  "updated_at": "2026-08-27T19:25:17.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "bf16",
+    "scenema",
+    "noesis",
+    "amaimedia",
+    "audio-dubbing",
+    "text-generation",
+    "conversational",
+    "en",
+    "multilingual",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8733528322,
+  "storage_human": "8.7 GB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAImedia/NOESIS-Gemma3-4B-BF16 · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Gemma3-4B-BF16",
+      "snippet": "NOESIS-Gemma3-4B-BF16 NOESIS-Gemma3-4B-BF16 is an AMAImedia BF16 fine-tuned and packaged Gemma 3 4B multimodal model used as the primary 4B Scenema student in the NOESIS audio-dubbing pipeline. It is provided as a full safetensors model together with its tokenizer, generation configuration, and the paired Scenema adapter/runtime files."
+    },
+    {
+      "title": "AMAImedia/NOESIS-Gemma3-1B-BF16 · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Gemma3-1B-BF16",
+      "snippet": "Fully merged single-shard model.safetensors; no residual adapter layers. NOESIS role : Recipe-validation companion / lightweight test student for the primary NOESIS-Gemma3-4B-Scenema-LTX2.3-BF16 student. Used for Phase 1D scenema_adapter recipe smoke-tests before scaling to 4B."
+    },
+    {
+      "title": "NOESIS-Gemma3-4B-BF16 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/AMAImedia/NOESIS-Gemma3-4B-BF16",
+      "snippet": "Deploy NOESIS-Gemma3-4B-BF16 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "NOESIS-Original-Trained-Models - a AMAImedia Collection",
+      "url": "https://huggingface.co/collections/AMAImedia/noesis-original-trained-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from AMAImedia"
+    },
+    {
+      "title": "AMAImedia (amaimediacom) - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/models",
+      "snippet": "Founder - Python | PyTorch | C++| AI Clone Voice & Dubbing | Audio DSP & Tech Engineer"
+    }
+  ]
+}

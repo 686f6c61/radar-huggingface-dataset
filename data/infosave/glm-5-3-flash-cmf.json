@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "infosave/GLM-5.3-Flash-cmf",
+  "slug": "infosave-glm-5-3-flash-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/GLM-5.3-Flash-cmf",
+  "created_at": "2026-08-27T18:09:17.000Z",
+  "updated_at": "2026-08-27T19:17:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cortiq",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "quantized",
+    "q4tp",
+    "mixed-precision",
+    "moe",
+    "hybrid-attention",
+    "4-bit",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167164530274,
+  "storage_human": "167.2 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    },
+    {
+      "title": "GLM-5.3 Flash — Z.AI | Parasail",
+      "url": "https://www.parasail.io/models/glm-53-flash",
+      "snippet": "GLM-5.3 Flash is the first natively multimodal model in Z.AI&#x27;s GLM-5 series, built for coding and agentic workloads that mix text and images — frontend and game development, 3D simulation, browser and computer use — where the result has to be looked at, not just compiled."
+    },
+    {
+      "title": "GLM 5.3 Flash API - Documentation - DeepInfra",
+      "url": "https://deepinfra.com/zai-org/GLM-5.3-Flash/api",
+      "snippet": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.. Full API Reference"
+    },
+    {
+      "title": "Z.ai GLM-5.3 Flash now available on Workers AI · Changelog",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-08-26-glm-5.3-flash-workers-ai/",
+      "snippet": "GLM-5.3 Flash is the first GLM-family model on Workers AI to support multimodal inputs. It outperforms GLM-5.2 across benchmarks and real-world workloads at a lower price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "Z.ai open-sources &#x27;Ox Alpha&#x27; model as GLM-5.3-Flash",
+      "url": "https://siliconangle.com/2026/08/26/z-ai-open-sources-ox-alpha-model-as-glm-5-3-flash/",
+      "snippet": "Z.ai Co. today released the code for GLM-5.3-Flash, a large language model that&#x27;s 10 times more cost-efficient than its predecessor. The algorithm made its original debut last week under the ..."
+    }
+  ]
+}

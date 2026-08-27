@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-small-patch4-window12-384",
+  "slug": "cominder-iwin-small-patch4-window12-384",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-small-patch4-window12-384",
+  "created_at": "2026-08-27T15:17:38.000Z",
+  "updated_at": "2026-08-27T15:18:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51566152,
+  "parameters_human": "51.6M",
+  "storage_bytes": 412703822,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swin_base_patch4_window12_384.ms_in22k_ft_in1k - Hugging Face",
+      "url": "https://huggingface.co/timm/swin_base_patch4_window12_384.ms_in22k_ft_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iwin_small_patch4_window16_1024.pth · cominder/Iwin-Transformer at main",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_small_patch4_window16_1024.pth",
+      "snippet": "cominder / Iwin-Transformer like 0 Image Feature Extraction Transformers arxiv:2507.18405 License:mit Model card FilesFiles and versions Community 2 Train Deploy Use this model main Iwin-Transformer /iwin_small_patch4_window16_1024.pth cominder Upload 15 files a361908 verifiedabout 2 months ago download Copy download link history blame ..."
+    },
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "Google AI Mode - a new way to search, whatever&#x27;s on your mind",
+      "url": "https://search.google/ways-to-search/ai-mode/",
+      "snippet": "Meet AI Mode in Google Search - a new generative AI search experience powered by Gemini 2.0."
+    },
+    {
+      "title": "Using Pre-trained Models | microsoft/Swin-Transformer | DeepWiki",
+      "url": "https://deepwiki.com/microsoft/Swin-Transformer/8.2-using-pre-trained-models",
+      "snippet": "Using Pre-trained Models Relevant source files This page provides a comprehensive guide on how to effectively use pre-trained Swin Transformer models for evaluation, fine-tuning, and transfer learning. For information about model architectures and variants, see Model Architecture, and for details on model performance metrics, see Model Performance. Available Pre-trained Models The Swin ..."
+    }
+  ]
+}

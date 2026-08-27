@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DmitryRyumin/WAVES",
+  "slug": "dmitryryumin-waves",
+  "author": "DmitryRyumin",
+  "url": "https://huggingface.co/DmitryRyumin/WAVES",
+  "created_at": "2026-08-27T18:21:24.000Z",
+  "updated_at": "2026-08-27T18:21:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DmitryRyumin/DmitryRyumin",
+      "url": "https://github.com/DmitryRyumin/DmitryRyumin",
+      "snippet": "Expert Systems with Applications 2024 OCEAN-AI Framework with EmoFormer Cross-Hemiface Attention Approach for Personality Traits Assessment, Elena Ryumina, Maxim Markitantov, Dmitry Ryumin, and Alexey Karpov"
+    },
+    {
+      "title": "DmitryRyumin (Dmitry Ryumin) · GitHub",
+      "url": "https://github.com/DmitryRyumin",
+      "snippet": "A graph representing DmitryRyumin&#x27;s contributions from August 17, 2025 to August 22, 2026. The contributions are 95% commits, 5% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "DmitryRyumin (Dmitry Ryumin) - Hugging Face",
+      "url": "https://huggingface.co/DmitryRyumin/models",
+      "snippet": "AI & ML interests Machine Learning and Applications, Multi-Modal Understanding"
+    },
+    {
+      "title": "DmitryRyumin (Dmitry Ryumin) - Hugging Face",
+      "url": "https://huggingface.co/DmitryRyumin/datasets",
+      "snippet": "Dmitry Ryumin DmitryRyumin Follow AkumaXX&#x27;s profile picture Hoioi&#x27;s profile picture sanwanaung&#x27;s profile picture 399 followers"
+    },
+    {
+      "title": "Dr. Dmitry Ryumin",
+      "url": "https://dmitryryumin.github.io/",
+      "snippet": "An iterative model refinement module can bridge the gap between acoustic and visual data by leveraging their impact on speech recognition accuracy. The proposed multi-prediction strategy demonstrates superior performance compared to traditional single-prediction strategy, showcasing the model&#x27;s adaptability across diverse audio-visual contexts."
+    }
+  ]
+}

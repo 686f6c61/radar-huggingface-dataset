@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LeoZotos/little_learner_1_3b_bio_cpt_mmlu_for_mcq_training",
+  "slug": "leozotos-little_learner_1_3b_bio_cpt_mmlu_for_mcq_training",
+  "author": "LeoZotos",
+  "url": "https://huggingface.co/LeoZotos/little_learner_1_3b_bio_cpt_mmlu_for_mcq_training",
+  "created_at": "2026-08-27T12:11:46.000Z",
+  "updated_at": "2026-08-27T12:12:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "finetuning",
+    "education",
+    "learning-dynamics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1358021120,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2716075264,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeoZotos/OLMo-2-0425-1B_bio_cpt_mmlu_for_mcq_training · Hugging Face",
+      "url": "https://huggingface.co/LeoZotos/OLMo-2-0425-1B_bio_cpt_mmlu_for_mcq_training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MMLU - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MMLU",
+      "snippet": "MMLU Measuring Massive Multitask Language Understanding (MMLU) is a popular benchmark for evaluating the capabilities of large language models. It inspired several other versions and spin-offs, such as MMLU-Pro [1], MMMLU [2] and MMLU-Redux [3]."
+    },
+    {
+      "title": "(PDF) LittleLearner: Language Models Under Pedagogically Controlled ...",
+      "url": "https://www.researchgate.net/publication/412247790_LittleLearner_Language_Models_Under_Pedagogically_Controlled_Knowledge_Exposure",
+      "snippet": "We release LITTLECURRICULUM and LITTLELEARNER as a developmentally restricted sandbox to study how models acquire, represent, and use data under a well-defined training scope."
+    },
+    {
+      "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/littlelearner-language-models-under-pedagogically-controlled-knowledge",
+      "snippet": "The central problem is confounding: a model may appear to learn through in-context learning or post-training while merely retrieving knowledge already present in pretraining. LittleLearner supplies a controlled comparison with an Unfiltered model trained using the same recipe on unrestricted FineWeb-Edu, plus Gemma 2B as an external reference."
+    },
+    {
+      "title": "MMLU Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/mmlu",
+      "snippet": "MMLU multiple choice questions snapshot across 8 AI models. Display only on BenchLM and excluded from overall rankings. A comprehensive multiple-choice question answering test covering 57 tasks including elementary mathematics, US history, computer science, law, and more. Tests knowledge across diverse academic subjects from high school to professional level."
+    }
+  ]
+}

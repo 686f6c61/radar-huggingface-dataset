@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "id": "veyra-ai/Veyra2-Blueberry-10M-Base-ONNX",
+  "slug": "veyra-ai-veyra2-blueberry-10m-base-onnx",
+  "author": "veyra-ai",
+  "url": "https://huggingface.co/veyra-ai/Veyra2-Blueberry-10M-Base-ONNX",
+  "created_at": "2026-08-27T16:42:21.000Z",
+  "updated_at": "2026-08-27T16:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "causal-lm",
+    "base-model",
+    "transformers",
+    "safetensors",
+    "veyra",
+    "small-language-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/finephrase",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "base_model:veyra-ai/Veyra2-Blueberry-10M-Base",
+    "base_model:quantized:veyra-ai/Veyra2-Blueberry-10M-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116391819,
+  "storage_human": "116 MB",
+  "base_model": "veyra-ai/Veyra2-Blueberry-10M-Base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multiple Choice",
+      "dataset": "SciQ",
+      "metric": "Accuracy",
+      "value": 68.1
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "SciQ",
+      "metric": "Normalized Accuracy",
+      "value": 56.9
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "PIQA",
+      "metric": "Normalized Accuracy",
+      "value": 55.44
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "ARC-Easy",
+      "metric": "Normalized Accuracy",
+      "value": 35.44
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "ARC-Challenge",
+      "metric": "Normalized Accuracy",
+      "value": 21.59
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "HellaSwag",
+      "metric": "Normalized Accuracy",
+      "value": 28.04
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "Winogrande",
+      "metric": "Accuracy",
+      "value": 50.12
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "OpenBookQA",
+      "metric": "Accuracy",
+      "value": 15
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "OpenBookQA",
+      "metric": "Normalized Accuracy",
+      "value": 27.6
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "BoolQ",
+      "metric": "Accuracy",
+      "value": 61.99
+    },
+    {
+      "task": "Multiple Choice",
+      "dataset": "ArithMark-3.0",
+      "metric": "Accuracy",
+      "value": 34.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "veyra-ai (Veyra AI) - Hugging Face",
+      "url": "https://huggingface.co/veyra-ai/models",
+      "snippet": "Building tiny English language models for practical local AI. Veyra AI focuses on CPU-friendly inference, function calling, tool use, Python-oriented small models, distillation, RLVR, and lightw..."
+    },
+    {
+      "title": "veyra-ai/Veyra2-15M-Base · Hugging Face",
+      "url": "https://huggingface.co/veyra-ai/Veyra2-15M-Base",
+      "snippet": "This model is released under the Apache 2.0 license unless otherwise noted. Please retain attribution to Veyra AI when redistributing models or releasing derivative work."
+    },
+    {
+      "title": "Veyra — Two AIs. One window.",
+      "url": "https://veyra.sh/",
+      "snippet": "Two AIs. One window. A tiling terminal manager for AI coding agents. Run Claude Code, Codex CLI, and shells side-by-side in tiled panes. Pro cuts your token usage by roughly 30-50% with output trimming, smart caching, and six task modes."
+    },
+    {
+      "title": "Autonomous Intelligence - VEYRA",
+      "url": "https://askveyra.info/docs/",
+      "snippet": "Veyra is an AI system designed for conversation, reasoning, and real-time intelligence."
+    },
+    {
+      "title": "GitHub - aaryanrwt/Veyra: Open-source orchestration runtime for AI ...",
+      "url": "https://github.com/aaryanrwt/Veyra",
+      "snippet": "Open-source orchestration runtime for AI coding agents. Veyra sits between developers and coding assistants, adding context intelligence, execution planning, verification, plugin support, benchmarking, and adaptive orchestration through a vendor-neutral architecture. - aaryanrwt/Veyra"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bunnycore/Gemma4-E2B-Agent",
+  "slug": "bunnycore-gemma4-e2b-agent",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/Gemma4-E2B-Agent",
+  "created_at": "2026-08-27T13:39:17.000Z",
+  "updated_at": "2026-08-27T13:44:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50675712,
+  "parameters_human": "50.7M",
+  "storage_bytes": 336331178,
+  "storage_human": "336 MB",
+  "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "bunnycore/Gemma4-E2B-Qwen3.8-Distilled · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/Gemma4-E2B-Qwen3.8-Distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Bring state-of-the-art agentic skills to the edge with Gemma 4",
+      "url": "https://developers.googleblog.com/en/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/",
+      "snippet": "To experience the Gemma 4 E2B and E4B models in action, check out the Google AI Edge Gallery app today. Within the app, it&#x27;s easy to start experimenting and creating your own skills with our guide."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/merge-emily-chrono1-chrono2-mean3",
+  "slug": "jjjlimaus-merge-emily-chrono1-chrono2-mean3",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/merge-emily-chrono1-chrono2-mean3",
+  "created_at": "2026-08-27T17:08:35.000Z",
+  "updated_at": "2026-08-27T17:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "nanochrono",
+    "model-merge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 8074067984,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "jjjlimaus&#x27;s models17 Sort: Recently updated jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 28 minutes ago"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenEvidence",
+      "url": "https://www.openevidence.com/",
+      "snippet": "America&#x27;s Official Medical Knowledge Platform. OpenEvidence is the leading medical platform for healthcare professionals, featuring answers grounded in peer-reviewed research from NEJM, JAMA, Nature, NCCN, Cochrane, and more."
+    },
+    {
+      "title": "AI Image Combiner - Blend & Merge Photos Online",
+      "url": "https://photoeditor.ai/ai-image-combiner",
+      "snippet": "Upload reference images and describe how to combine them. Style transfer, face blending, background swap, composition merge - multi-image AI in your browser."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "varunsinghwood/mocov3-retrieval-rc1",
+  "slug": "varunsinghwood-mocov3-retrieval-rc1",
+  "author": "varunsinghwood",
+  "url": "https://huggingface.co/varunsinghwood/mocov3-retrieval-rc1",
+  "created_at": "2026-08-27T13:07:54.000Z",
+  "updated_at": "2026-08-27T13:08:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=xavier-uniform",
+      "snippet": "Explore machine learning models. 30 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: xavier-uniform Clear all"
+    },
+    {
+      "title": "MoCo v3 — MMSelfSup 1.0.0 documentation",
+      "url": "https://mmselfsup.readthedocs.io/en/latest/papers/mocov3.html",
+      "snippet": "Models and Benchmarks In this page, we provide benchmarks as much as possible to evaluate our pre-trained models. If not mentioned, all models are pre-trained on ImageNet-1k dataset."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    }
+  ]
+}

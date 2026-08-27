@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mgegorov/random-generation",
+  "slug": "mgegorov-random-generation",
+  "author": "mgegorov",
+  "url": "https://huggingface.co/mgegorov/random-generation",
+  "created_at": "2026-08-27T15:25:43.000Z",
+  "updated_at": "2026-08-27T15:25:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Top Generative AI Models to Explore We have segregated these Generative AI Models into three major segments: Text Generative AI, Image Generative AI, and Code Generative AI. Each segment has a different approach toward generative AI, models unique to particular tasks and industries."
+    },
+    {
+      "title": "LLM Randomness Analysis - GitHub",
+      "url": "https://github.com/kmaurinjones/llm-randomness-analysis",
+      "snippet": "This project investigates whether AI language models can produce truly random numbers when prompted. Through statistical analysis and visualization, we compare the randomness characteristics of various popular closed-source and open-source models against traditional pseudo-random number generators."
+    },
+    {
+      "title": "Exploring Generative Models: Applications, Examples, and Key Concepts",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/exploring-generative-models-applications-examples-and-key-concepts/",
+      "snippet": "From image generation to natural language understanding and synthesis, this Generative Model has a wide range of applications and is the basis of the latest generation of AI systems powered by large language models (LLMs)."
+    },
+    {
+      "title": "Generative model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_model",
+      "snippet": "Generative models are often contrasted with discriminative models, which focus on predicting outputs from inputs directly. Generative model approaches which use a joint probability distribution instead, include naive Bayes classifiers, Gaussian mixture models, variational autoencoders, generative adversarial networks and others."
+    },
+    {
+      "title": "A comprehensive survey and analysis of generative models in machine ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1574013720303853",
+      "snippet": "Generative models have been in existence for many decades. In the field of machine learning, we come across many scenarios when directly learning a ta…"
+    }
+  ]
+}

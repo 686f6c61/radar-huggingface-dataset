@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ahmedkhalaf123/al-muqri-model",
+  "slug": "ahmedkhalaf123-al-muqri-model",
+  "author": "ahmedkhalaf123",
+  "url": "https://huggingface.co/ahmedkhalaf123/al-muqri-model",
+  "created_at": "2026-08-27T13:35:21.000Z",
+  "updated_at": "2026-08-27T13:42:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5109417,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "al-muqri&#x27;",
+      "url": "https://en.muqri.com/",
+      "snippet": "share • share with selected options The Quranic Researcher • al-qari&#x27; • other projects Telegram • @nuqayah • support development muqri&#x27;: one who teaches recitation of the Qur&#x27;an. Hide sidebar • al-Muqri beta Parents: use Guided access (iOS) or Screen pinning (Android) to help children focus"
+    },
+    {
+      "title": "ahmed-khalaf123 (Ahmed Khalaf) · GitHub",
+      "url": "https://github.com/ahmed-khalaf123",
+      "snippet": "ahmed-khalaf123 has 29 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

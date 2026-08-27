@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matthewhernandez/hw1-efficient-attention22-2024",
+  "slug": "matthewhernandez-hw1-efficient-attention22-2024",
+  "author": "matthewhernandez",
+  "url": "https://huggingface.co/matthewhernandez/hw1-efficient-attention22-2024",
+  "created_at": "2026-08-27T12:12:21.000Z",
+  "updated_at": "2026-08-27T12:12:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models:",
+      "url": "https://arxiv.org/html/2507.19595v2",
+      "snippet": "Abstract Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813/modelcard",
+      "snippet": "This model has been developed and built to a third-party&#x27;s requirements for this application and use case; see link to Non-NVIDIA DeepSeek AI DeepSeek-V4-Pro-0813 Model Card."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    }
+  ]
+}

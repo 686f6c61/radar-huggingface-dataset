@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arothman/auto-gate-test",
+  "slug": "arothman-auto-gate-test",
+  "author": "arothman",
+  "url": "https://huggingface.co/arothman/auto-gate-test",
+  "created_at": "2026-08-27T18:14:44.000Z",
+  "updated_at": "2026-08-27T18:17:33.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI models shock UK testers by using fake identities to try to trick developers AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type ..."
+    },
+    {
+      "title": "GATE: An Integrated Assessment Model for AI Automation",
+      "url": "https://arxiv.org/html/2503.04941v2",
+      "snippet": "We introduce the Growth and AI Transition Endogenous model (GATE), an integrated assessment tool that captures how AI-driven advances—in compute, algorithms, and automation—shape macroeconomic outcomes."
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "GitHub - responsibleai/ASSERT: Requirement-driven evaluation harness ...",
+      "url": "https://github.com/responsibleai/ASSERT",
+      "snippet": "Requirement-driven evaluation harness for AI agents and LLM applications. Generate behavior-specific test cases, run them against any target (hosted models, callable wrappers, OTel-traced agents), and inspect local-first artifacts. - responsibleai/ASSERT"
+    },
+    {
+      "title": "AI agent went rogue and hacked startup by itself, OpenAI reveals",
+      "url": "https://www.theguardian.com/technology/2026/jul/22/openai-says-its-models-went-rogue-and-hacked-startup-in-unprecedented-incident",
+      "snippet": "OpenAI has revealed that an autonomous AI agent powered by its technology went rogue during a test, accessed the open web and hacked a prominent startup by itself in an \"unprecedented incident\"."
+    }
+  ]
+}

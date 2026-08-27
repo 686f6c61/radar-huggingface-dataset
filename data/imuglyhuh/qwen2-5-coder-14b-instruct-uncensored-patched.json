@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "IMUGLYHUH/Qwen2.5-Coder-14B-Instruct-Uncensored-Patched",
+  "slug": "imuglyhuh-qwen2-5-coder-14b-instruct-uncensored-patched",
+  "author": "IMUGLYHUH",
+  "url": "https://huggingface.co/IMUGLYHUH/Qwen2.5-Coder-14B-Instruct-Uncensored-Patched",
+  "created_at": "2026-08-27T19:00:47.000Z",
+  "updated_at": "2026-08-27T19:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "code",
+    "coding-assistant",
+    "qwen2.5-coder",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 60432969344,
+  "storage_human": "60.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen2.5-coder-14b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen2.5-coder-14b",
+      "snippet": "Qwen2.5 Coder 14B Instruct by qwen Long-context Support up to 128K tokens with yarn rope scaling factor of 4.0 Designed for use with Code Agents Up to 5.5 trillion training tokens including source code, text-code grounding, and synthetic data"
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct - paddlenlp-en.readthedocs.io",
+      "url": "https://paddlenlp-en.readthedocs.io/en/latest/_static/website/Qwen/Qwen2.5-Coder-14B-Instruct/index.html",
+      "snippet": "Qwen2.5-Coder-14B-Instruct Files LICENSE (11.1 KB) README.md (6.2 KB) config.json (657.0 B) generation_config.json (243.0 B) merges.txt (1.6 MB) model-00001-of-00006.safetensors (4.6 GB) model-00002-of-00006.safetensors (4.6 GB) model-00003-of-00006.safetensors (4.6 GB) model-00004-of-00006.safetensors (4.6 GB) model-00005-of-00006.safetensors (4.6 GB) model-00006-of-00006.safetensors (4.4 GB ..."
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-coder-14b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-Coder-14B-Instruct is a code-specific language model with 14.7 billion parameters created by Qwen that specializes in code generation, code reasoning, and code fixing. The model uses a transformer architecture with RoPE positional embeddings, SwiGLU activation, RMSNorm, and grouped query attention (40 heads for queries, 8 for key-value pairs) across 48 layers with 13.1 billion ..."
+    }
+  ]
+}

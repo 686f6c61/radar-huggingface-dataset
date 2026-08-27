@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielleeette/document-ai-sandbox",
+  "slug": "danielleeette-document-ai-sandbox",
+  "author": "danielleeette",
+  "url": "https://huggingface.co/danielleeette/document-ai-sandbox",
+  "created_at": "2026-08-27T16:09:05.000Z",
+  "updated_at": "2026-08-27T16:09:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to open Sandbox links from Co-Pilot - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/3849779/how-to-open-sandbox-links-from-co-pilot",
+      "snippet": "I&#x27;ve asked Co-Pilot to help me create a document. It creates one in both word and .pdf format. But when i open the links they are dead. Does anyone know how to open sandbox links? Thanks! *** Moved from Swedish forum Windows ***"
+    },
+    {
+      "title": "Sep 02, 2025: Document AI models in the model registry",
+      "url": "https://docs.snowflake.com/en/release-notes/2025/other/2025-09-02-document-ai",
+      "snippet": "New Document AI models are automatically integrated into the model registry; existing models must be manually integrated. To manually integrate an existing model into the model registry, when prompted, select Start on the integration banner in the UI."
+    },
+    {
+      "title": "Sandbox Agents | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/agents/sandboxes",
+      "snippet": "A sandbox gives an agent an isolated, Unix-like execution environment with a filesystem, shell, installed packages, mounted data, exposed ports, snapshots, and controlled access to external systems. Agent workflows get brittle when the model needs that kind of workspace but only receives prompt context. Large document sets, generated artifacts, commands, previews, and resumable work all need ..."
+    },
+    {
+      "title": "Try Document AI | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/try-docai",
+      "snippet": "This demonstration is for a general idea of product capabilities. For accurate and tailored results, use our full suite of tools, and customize your model accordingly. Upload a document or use one of the sample documents to get structured document data."
+    },
+    {
+      "title": "AI Sandbox | Harvard University Information Technology",
+      "url": "https://www.huit.harvard.edu/ai-sandbox",
+      "snippet": "The AI Sandbox provides a secure environment in which to explore Generative AI, mitigating many security and privacy risks and ensuring the data entered will not be used to train any vendor large language models (LLMs). It offers a single interface that enables access to the latest LLMs from OpenAI, Anthropic, Google, and Meta. Features include image generation, data visualization, and the ..."
+    }
+  ]
+}

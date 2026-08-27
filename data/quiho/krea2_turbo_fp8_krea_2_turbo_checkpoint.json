@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Quiho/Krea2_Turbo_FP8_Krea_2_TURBO_checkpoint",
+  "slug": "quiho-krea2_turbo_fp8_krea_2_turbo_checkpoint",
+  "author": "Quiho",
+  "url": "https://huggingface.co/Quiho/Krea2_Turbo_FP8_Krea_2_TURBO_checkpoint",
+  "created_at": "2026-08-27T15:13:21.000Z",
+  "updated_at": "2026-08-27T15:19:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "checkpoint",
+    "krea-2",
+    "base model",
+    "krea2",
+    "civitai",
+    "imported",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12944701303,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea2 Turbo_FP8 - Krea 2 TURBO | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2723583/krea2-turbofp8",
+      "snippet": "This repository provides an optimized FP8 (float8_e4m3fn) weight-only quantized version of the newly released Krea 2 OSS (Turbo) transformer. This optimization reduces the model size from the original 24.76 GiB (BF16) down to 12.01 GiB, making it highly accessible and runnable on standard consumer hardware (such as 16GB and 24GB GPUs) without ..."
+    },
+    {
+      "title": "Krea 2 Turbo Official Comfy-Org Checkpoints (Krea2)",
+      "url": "https://civitai.com/models/2726029/krea-2-turbo-official-comfy-org-checkpoints-krea2",
+      "snippet": "This model card covers the Krea 2 model family, including the following release checkpoints: Krea 2 Raw: Base release checkpoint, prior to additional post-training and fine-tuning."
+    },
+    {
+      "title": "szwagros/Krea-2-Turbo-fp8 · Hugging Face",
+      "url": "https://huggingface.co/szwagros/Krea-2-Turbo-fp8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea-2-Turbo - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    }
+  ]
+}

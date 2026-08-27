@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Mardiyyah/CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-adapted-wwmask-lr_4.029",
+  "slug": "mardiyyah-cellate-ner-3class-pubmedbert-tapt-tokenizer-adapted-wwmask-lr_4-029",
+  "author": "Mardiyyah",
+  "url": "https://huggingface.co/Mardiyyah/CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-adapted-wwmask-lr_4.029",
+  "created_at": "2026-08-27T16:31:46.000Z",
+  "updated_at": "2026-08-27T16:32:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "en",
+    "base_model:Mardiyyah/CeLLaTe-tapt-pubmedbert-tokenizer-adapted-wwmask",
+    "base_model:finetune:Mardiyyah/CeLLaTe-tapt-pubmedbert-tokenizer-adapted-wwmask",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110410759,
+  "parameters_human": "110.4M",
+  "storage_bytes": 441672204,
+  "storage_human": "442 MB",
+  "base_model": "Mardiyyah/CeLLaTe-tapt-pubmedbert-tokenizer-adapted-wwmask",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-adapted-baseline",
+      "url": "https://huggingface.co/Mardiyyah/CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-adapted-baseline",
+      "snippet": "CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-adapted-baseline ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mardiyyah/CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-original-wwmask ...",
+      "url": "https://huggingface.co/Mardiyyah/CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-original-wwmask",
+      "snippet": "Instructions to use Mardiyyah/CeLLaTe-ner-3class-pubmedbert-tapt-tokenizer-original-wwmask with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "arXiv Daily Digest",
+      "url": "https://paper.axi404.top/daily/2026-07-28",
+      "snippet": "We present a replay-constrained simulation framework: a MuJoCo-based simulator reproduces prosthetic knee-ankle dynamics while replaying recorded hip kinematics and feedback-based ground reaction forces from individual walking data, bypassing the need to model complex human neuromuscular control mechanisms."
+    },
+    {
+      "title": "PubMedBERT: Biomedical NLP Transformer",
+      "url": "https://www.emergentmind.com/topics/pubmedbert",
+      "snippet": "PubMedBERT is a domain-specific variant of the BERT architecture pre-trained from scratch on PubMed abstracts and full-text articles using a custom WordPiece vocabulary. It employs fine-tuning protocols that tokenize input with [CLS]/ [SEP] tokens and adjust hyperparameters like batch size and learning rates to optimize biomedical tasks. Parameter-efficient adaptations such as LoRA integration ..."
+    },
+    {
+      "title": "GitHub - dmis-lab/biobert: Bioinformatics&#x27;2020: BioBERT: a pre-trained ...",
+      "url": "https://github.com/dmis-lab/biobert",
+      "snippet": "Bioinformatics&#x27;2020: BioBERT: a pre-trained biomedical language representation model for biomedical text mining - dmis-lab/biobert"
+    }
+  ]
+}

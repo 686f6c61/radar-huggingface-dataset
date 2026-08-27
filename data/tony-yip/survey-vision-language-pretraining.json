@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tony-yip/survey-vision-language-pretraining",
+  "slug": "tony-yip-survey-vision-language-pretraining",
+  "author": "tony-yip",
+  "url": "https://huggingface.co/tony-yip/survey-vision-language-pretraining",
+  "created_at": "2026-08-27T15:23:29.000Z",
+  "updated_at": "2026-08-27T15:23:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey of Vision-Language Models: Pretrained models ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525006955",
+      "snippet": "The goal of this survey is to provide concrete contributions to understanding and optimizing Vision Language Models in several aspects, specifically fine-tuning prompt engineering, adapters, pretraining objectives, pre-trained models and datasets."
+    },
+    {
+      "title": "A Survey of Vision-Language Pre-training from the Lens of Multimodal ...",
+      "url": "https://arxiv.org/abs/2306.07198",
+      "snippet": "To fill this gap, this paper surveys the landscape of language-and-vision pre-training from the lens of multimodal machine translation. We summarize the common architectures, pre-training objectives, and datasets from literature and conjecture what further is needed to make progress on multimodal machine translation."
+    },
+    {
+      "title": "A Survey of Vision-Language Pre-training...",
+      "url": "https://axi.lims.ac.uk/paper/2306.07198",
+      "snippet": "Most vision-and-language pretraining research focuses on English tasks. However, the creation of multilingual multimodal evaluation datasets (e.g. Multi30K, xGQA, XVNLI, and MaRVL) poses a new challenge in finding high-quality training data that is both multilingual and multimodal."
+    },
+    {
+      "title": "A Survey of Vision-Language Pre-Trained Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2202.10936",
+      "snippet": "Abstract As transformer evolves, pre-trained models have advanced at a breakneck pace in recent years. They have dominated the mainstream techniques in nat-ural language processing (NLP) and computer vi-sion (CV). How to adapt pre-training to the field of Vision-and-Language (V-L) learning and im-prove downstream task performance becomes a fo-cus of multimodal learning. In this paper, we re ..."
+    },
+    {
+      "title": "VLP: A Survey on Vision-language Pre-training - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11633-022-1369-5",
+      "snippet": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown that they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this ..."
+    }
+  ]
+}

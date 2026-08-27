@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "furkandoganson/grad-classification",
+  "slug": "furkandoganson-grad-classification",
+  "author": "furkandoganson",
+  "url": "https://huggingface.co/furkandoganson/grad-classification",
+  "created_at": "2026-08-27T17:11:32.000Z",
+  "updated_at": "2026-08-27T17:11:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imtherealsd/breast-cancer-classification-ai - GitHub",
+      "url": "https://github.com/imtherealsd/breast-cancer-classification-ai",
+      "snippet": "A professional, end-to-end medical AI application that classifies breast cancer from histopathology images using Deep Learning. Designed with a premium Glassmorphic UI, this tool not only predicts the likelihood of cancer but also emphasizes Explainable AI (XAI) by generating Grad-CAM (Gradient-weighted Class Activation Mapping) visualizations to highlight the regions of interest the model ..."
+    },
+    {
+      "title": "Aftabbs/Deep-Learning-with-Grad-CAM - GitHub",
+      "url": "https://github.com/Aftabbs/Deep-Learning-with-Grad-CAM",
+      "snippet": "A deep learning project built to classify chest X-ray images into PNEUMONIA or NORMAL classes. The solution leverages a Convolutional Neural Network (CNN) architecture for classification and uses Grad-CAM for model explainability. This project showcases how AI can support medical diagnostics with high accuracy and transparency."
+    },
+    {
+      "title": "(PDF) Real-Time Brain Tumor Detection and Classification Using a ...",
+      "url": "https://www.researchgate.net/publication/385737724_Real-Time_Brain_Tumor_Detection_and_Classification_Using_a_FastAPI-Deployed_CNN_Model_with_Grad-CAM_Visualization",
+      "snippet": "Additionally, the model is deployed using FastAPI for real-time analysis, offering clinicians a rapid, automated tool to assist in brain tumor diagnosis."
+    },
+    {
+      "title": "Deep Learning-Based Approach for Microscopic Algae Classification with ...",
+      "url": "https://www.thefreelibrary.com/Deep+Learning-Based+Approach+for+Microscopic+Algae+Classification...-a0832496796",
+      "snippet": "Our research focused on developing a customized model using deep learning techniques. Specifically, we created a Squeezed and Deeply Connected Convolutional Neural Network for classification purposes and then implemented a Gradient-weighted Class Activation Mapping (Grad-CAM) technique."
+    },
+    {
+      "title": "Explainable Deep Learning Framework for Binary Corrosion Image ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/22/7070",
+      "snippet": "To justify the convolutional neural network&#x27;s prediction making through image classification, the Gradient-weighted Class Activation (Grad-CAM) was applied in this study for explainable AI for the prediction reasoning."
+    }
+  ]
+}

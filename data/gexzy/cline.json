@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GEXZY/cline",
+  "slug": "gexzy-cline",
+  "author": "GEXZY",
+  "url": "https://huggingface.co/GEXZY/cline",
+  "created_at": "2026-08-27T12:16:25.000Z",
+  "updated_at": "2026-08-27T12:16:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models You Can Try in Cline | ClinePass, OpenAI, Anthropic",
+      "url": "https://cline.bot/models",
+      "snippet": "Cline model directory Try leading AI coding models in Cline Cline is the open-source coding agent in your IDE and terminal, with an SDK for building agentic applications. Explore best-in-class models across open weights and closed weights. Leading Open-Weight Models"
+    },
+    {
+      "title": "Models - Cline",
+      "url": "https://docs.cline.bot/api/models",
+      "snippet": "Available models, pricing tiers, free models, and how model IDs work in the Cline API."
+    },
+    {
+      "title": "Cline Free Models - Cline",
+      "url": "https://docs.cline.bot/getting-started/free-models",
+      "snippet": "Cline periodically offers free model promotions that let you try select models at no cost, up to a limited usage quota. It&#x27;s a simple way to explore Cline and experiment with different models before choosing a paid option."
+    },
+    {
+      "title": "Models - Cline",
+      "url": "https://cline.ghost.io/tag/models/",
+      "snippet": "Models NVIDIA Nemotron 3.5 Lightning just landed in Cline NVIDIA Nemotron 3.5 Lightning is now available in Cline, bringing a 30B MoE model with 3B active parameters, up to 1M context, and high throughput for agentic coding workflows. By Etisha Garg 11 Aug 2026"
+    },
+    {
+      "title": "Cline",
+      "url": "https://cline.ghost.io/",
+      "snippet": "Introducing Cline SDK: the upgraded agent runtime, and we rebuilt Cline upon it 0:00 /0:41 1× Before \"agents\" became a buzzword, Cline was the first real agentic coding experience. Cline started with the VSCode extension and helped a generation of developers step into AI coding."
+    }
+  ]
+}

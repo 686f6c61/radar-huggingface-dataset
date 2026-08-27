@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/VibeThinker-3B",
+  "slug": "litert-community-vibethinker-3b",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/VibeThinker-3B",
+  "created_at": "2026-06-28T13:23:11.000Z",
+  "updated_at": "2026-08-27T12:35:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "qwen2",
+    "reasoning",
+    "math",
+    "text-generation",
+    "base_model:WeiboAI/VibeThinker-3B",
+    "base_model:finetune:WeiboAI/VibeThinker-3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 1442,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6171319056,
+  "storage_human": "6.2 GB",
+  "base_model": "WeiboAI/VibeThinker-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/VibeThinker-3B · Hugging Face",
+      "url": "https://huggingface.co/litert-community/VibeThinker-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · litert-community/VibeThinker-3B at main",
+      "url": "https://huggingface.co/litert-community/VibeThinker-3B/blob/main/README.md",
+      "snippet": "VibeThinker-3B is a dense 3B math/reasoning model (Qwen2ForCausalLM, 36 layers) — it solves problems with an inline chain-of-thought and is strong at arithmetic and math word problems."
+    },
+    {
+      "title": "GitHub - WeiboAI/VibeThinker: Tiny Model, Big Logic: Diversity-Driven ...",
+      "url": "https://github.com/WeiboAI/VibeThinker",
+      "snippet": "VibeThinker-3B is a 3-billion-parameter dense reasoning model developed to explore how far verifiable reasoning can be pushed within a strictly small-model regime. It is built upon Qwen2.5-Coder-3B and post-trained with an upgraded Spectrum-to-Signal pipeline that combines curriculum-based supervised fine-tuning, multi-domain reinforcement learning, offline self-distillation, and instruction ..."
+    },
+    {
+      "title": "VibeThinker-Ai-3B/README.md at main · PrinceTech747 ... - GitHub",
+      "url": "https://github.com/PrinceTech747/VibeThinker-Ai-3B/blob/main/README.md",
+      "snippet": "VibeThinker-3B VibeThinker-3B is a 3-billion-parameter dense reasoning model developed to explore how far verifiable reasoning can be pushed within a strictly small-model regime. It is built upon Qwen2.5-Coder-3B and post-trained with an upgraded Spectrum-to-Signal pipeline that combines curriculum-based supervised fine-tuning, multi-domain reinforcement learning, offline self-distillation ..."
+    },
+    {
+      "title": "[2606.16140] VibeThinker-3B: Exploring the Frontier of Verifiable ...",
+      "url": "https://arxiv.org/abs/2606.16140",
+      "snippet": "This technical report introduces VibeThinker-3B, a compact dense model with 3B parameters developed to investigate how far verifiable reasoning can be pushed within a strictly small-model regime. Building upon the Spectrum-to-Signal post-training paradigm, we systematically enhance the model through an optimized pipeline that includes curriculum-based supervised fine-tuning, multi-domain ..."
+    }
+  ]
+}

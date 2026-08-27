@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dokterkepin/omniman_nav2_drive_pick_place",
+  "slug": "dokterkepin-omniman_nav2_drive_pick_place",
+  "author": "dokterkepin",
+  "url": "https://huggingface.co/dokterkepin/omniman_nav2_drive_pick_place",
+  "created_at": "2026-08-27T16:24:45.000Z",
+  "updated_at": "2026-08-27T16:25:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:dokterkepin/omniman_nav2_drive_pick_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51676876,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206733680,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dokterkepin (Kevin Chang) - Hugging Face",
+      "url": "https://huggingface.co/dokterkepin",
+      "snippet": "Sort: Recently updated dokterkepin/omniman_drive_pick_place_diff Robotics • 0.3B•Updated 2 days ago• 8"
+    },
+    {
+      "title": "dokterkepin/omniman_drive_pick_place_v2 · Hugging Face",
+      "url": "https://huggingface.co/dokterkepin/omniman_drive_pick_place_v2",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "GitHub - dokterkepin/nxp_omniman_ws: Omnidirectional Mecanum Mobile ...",
+      "url": "https://github.com/dokterkepin/nxp_omniman_ws/tree/main",
+      "snippet": "A ROS 2 Humble mobile manipulator featuring a mecanum-wheeled base with a 6-DOF arm and gripper. The robot uses CyberGear motors (base + arm), Dynamixel servos (wrist + gripper), and an RPLidar for SLAM and navigation."
+    },
+    {
+      "title": "nxp_omniman_ws/physical_ai_tools/README.md at main - GitHub",
+      "url": "https://github.com/dokterkepin/nxp_omniman_ws/blob/main/physical_ai_tools/README.md",
+      "snippet": "This repository offers an interface for developing physical AI applications using LeRobot and ROS 2. For detailed usage instructions, please refer to the documentation below."
+    },
+    {
+      "title": "Autonomous Pick & Place in ROS 2 - YouTube",
+      "url": "https://www.youtube.com/watch?v=TIKgCyKnUOc",
+      "snippet": "A 3-wheel omni (kiwi) drive robot picks 12 flag cubes off a 4x3 shelf andplaces them on a 4x3 stand in a defined order. ROS 2 Humble + Gazebo Sim. Every line..."
+    }
+  ]
+}

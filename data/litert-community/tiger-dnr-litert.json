@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "litert-community/TIGER-DnR-LiteRT",
+  "slug": "litert-community-tiger-dnr-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/TIGER-DnR-LiteRT",
+  "created_at": "2026-07-02T08:21:40.000Z",
+  "updated_at": "2026-08-27T12:35:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "audio",
+    "source-separation",
+    "cinematic-audio",
+    "tiger",
+    "on-device",
+    "gpu",
+    "audio-to-audio",
+    "arxiv:2410.01469",
+    "base_model:JusperLee/TIGER-DnR",
+    "base_model:finetune:JusperLee/TIGER-DnR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 319,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48685706,
+  "storage_human": "49 MB",
+  "base_model": "JusperLee/TIGER-DnR",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/TIGER-DnR-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/TIGER-DnR-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/TIGER-DnR-LiteRT at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/TIGER-DnR-LiteRT/tree/main",
+      "snippet": "like 1 Follow LiteRT Community (FKA TFLite) 8.01k Audio-to-Audio LiteRT LiteRT audio source-separation cinematic-audio tiger on-device gpu arxiv:2410.01469 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LiteRT-Models/tiger/README.md at main - GitHub",
+      "url": "https://github.com/john-rocky/LiteRT-Models/blob/main/tiger/README.md",
+      "snippet": "TIGER-DnR — On-device cinematic sound separation (LiteRT GPU, fully-GPU) TIGER (Tsinghua, ICASSP 2025, MIT/Apache-2.0) audio source separation running fully on the LiteRT CompiledModel GPU: split any clip (movie scene, game, vlog) into Dialogue / Sound effects / Music stems, on the phone."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google&#x27;s On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - google-ai-edge/LiteRT"
+    },
+    {
+      "title": "LiteRT: High-Performance On-Device Machine Learning Framework | Google ...",
+      "url": "https://developers.google.com/edge/litert",
+      "snippet": "Deploying Generative AI Models Creating sophisticated on-device chatbots using optimized open-weight GenAI models like Gemma or another open-weight model with LiteRT-LM."
+    }
+  ]
+}

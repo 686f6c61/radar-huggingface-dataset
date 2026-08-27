@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixfabricius/robot-chess-commentator-cnn",
+  "slug": "felixfabricius-robot-chess-commentator-cnn",
+  "author": "felixfabricius",
+  "url": "https://huggingface.co/felixfabricius/robot-chess-commentator-cnn",
+  "created_at": "2026-08-27T16:48:00.000Z",
+  "updated_at": "2026-08-27T16:56:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "robotics",
+    "board-state-recognition",
+    "image-classification",
+    "dataset:felixfabricius/robot-chess-commentator-squares",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1324744,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "the hub news | #THEHUB | Facebook",
+      "url": "https://www.facebook.com/groups/32953344164279617/posts/38171732532440728/",
+      "snippet": "#THEHUB *NEWSPAPER HEADLINES FOR FRIDAY, 14th AUGUST, 2026* (Kindly subscribe to @thehub on Facebook for your daily news highlights and more.) *THE NATION* AI skills gap: &#x27;Youths must shape future of technology&#x27; Ex-assistant leads tribute for public health reformer Salawu Senator greets monarch on Ogun Council of Obas chairmanship APC Tokyo greets Yilwatda on anniversary Osun poll: Lawyer ..."
+    }
+  ]
+}

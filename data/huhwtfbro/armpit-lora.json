@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Huhwtfbro/Armpit-Lora",
+  "slug": "huhwtfbro-armpit-lora",
+  "author": "Huhwtfbro",
+  "url": "https://huggingface.co/Huhwtfbro/Armpit-Lora",
+  "created_at": "2026-08-27T17:37:53.000Z",
+  "updated_at": "2026-08-27T17:38:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Gazingstars123/Anima-2.9B",
+    "base_model:adapter:Gazingstars123/Anima-2.9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59610178,
+  "storage_human": "60 MB",
+  "base_model": "Gazingstars123/Anima-2.9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "realistic-armpit-stubble-realistic-skin-flux-lora - Hugging Face",
+      "url": "https://huggingface.co/Muapi/realistic-armpit-stubble-realistic-skin-flux-lora",
+      "snippet": "Realistic Armpit Stubble + Realistic Skin (Flux LoRA) Base model: Flux.1 D Trained words: armpits, realistic skin, hairy armpits, clean armpits, shaven armpits 🧠 Usage (Python) 🔑 Get your MUAPI key from muapi.ai/access-keys"
+    },
+    {
+      "title": "armpit_hair.safetensors · CasanovaSan/Lora at main",
+      "url": "https://huggingface.co/CasanovaSan/Lora/blob/main/armpit_hair.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Realistic Armpit Stubble + Realistic Skin (Flux LoRA)",
+      "url": "https://civitai.com/models/1174875/realistic-armpit-stubble-realistic-skin-flux-lora",
+      "snippet": "This Flux Lora has been carefully trained on high quality realistic and untouched armpit and natural skin images. I dedicated a good amount of time in sourcing and selecting high quality raw/unedited images for the training set. Initially created for realistic armpit stubble, the Lora also has been trained on various realistic and natural skin textures, so it&#x27;ll work for both realistic armpit ..."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,863 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs"
+    }
+  ]
+}

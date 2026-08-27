@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "seshmedia/SESH_1.0",
+  "slug": "seshmedia-sesh_1-0",
+  "author": "seshmedia",
+  "url": "https://huggingface.co/seshmedia/SESH_1.0",
+  "created_at": "2026-08-27T15:40:35.000Z",
+  "updated_at": "2026-08-27T15:40:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sesh AI",
+      "url": "https://sesh-ai.app/",
+      "snippet": "Sesh AI AI-powered music production assistant for REAPER."
+    },
+    {
+      "title": "Ses Ai",
+      "url": "https://www.ses.ai/",
+      "snippet": "SES AI specializes in developing and manufacturing high-performance lithium-metal rechargeable batteries for electric vehicles and various other applications."
+    },
+    {
+      "title": "Timestamp Converter - sesh.fyi",
+      "url": "https://sesh.fyi/timestamp/",
+      "snippet": "Automatically convert times and dates to the Discord timestamp format to display times in everyone&#x27;s local timezone."
+    },
+    {
+      "title": "Unleashing the Power of Open Source AI Models and Machine Learning ...",
+      "url": "https://aimodels.org/",
+      "snippet": "Open Source AI Community We are committed to building a community of developers, researchers, and enthusiasts who share our vision of democratizing AI and making it accessible to everyone. Collection of AI Model Downloads and Machine Learning Tools Explore a collection of open source AI models and tools for machine learning."
+    },
+    {
+      "title": "AI at Meta: Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "Explore AI at Meta. Use Meta AI to answer questions, create images, and complete tasks for free. Plus AI research, models, and tools for developers."
+    }
+  ]
+}

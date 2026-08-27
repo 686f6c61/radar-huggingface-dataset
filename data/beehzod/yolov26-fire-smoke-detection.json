@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Beehzod/yolov26-fire-smoke-detection",
+  "slug": "beehzod-yolov26-fire-smoke-detection",
+  "author": "Beehzod",
+  "url": "https://huggingface.co/Beehzod/yolov26-fire-smoke-detection",
+  "created_at": "2026-08-27T12:06:01.000Z",
+  "updated_at": "2026-08-27T12:06:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolov26",
+    "fire-detection",
+    "smoke-detection",
+    "object-detection",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20319173,
+  "storage_human": "20 MB",
+  "base_model": "yolov26-fire-detection",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50",
+      "value": 0.9177
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50-95",
+      "value": 0.8299
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "precision",
+      "value": 0.9167
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "recall",
+      "value": 0.8958
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - SalahAlHaismawi/yolov26-fire-detection",
+      "url": "https://github.com/SalahAlHaismawi/yolov26-fire-detection",
+      "snippet": "Real-time fire and smoke detection using YOLOv26 (Ultralytics YOLO). Trained on 8,939 images with 94.9% mAP@50 accuracy."
+    },
+    {
+      "title": "SalahALHaismawi/yolov26-fire-detection · Hugging Face",
+      "url": "https://huggingface.co/SalahALHaismawi/yolov26-fire-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · SalahALHaismawi/yolov26-fire-detection at main",
+      "url": "https://huggingface.co/SalahALHaismawi/yolov26-fire-detection/blob/main/README.md",
+      "snippet": "YOLOv26 Fire Detection Real-time fire and smoke detection model based on YOLOv26 (Ultralytics). Achieves 94.9% mAP@50 on fire/smoke detection tasks. Model Description This model detects fire, smoke, and related fire indicators in images and videos. Built on YOLOv26-S architecture and trained on 8,939 annotated images. Classes fire - Active flames smoke - Smoke plumes other - Related fire ..."
+    },
+    {
+      "title": "Fire Smoke Detectionyolo26 Dataset by Lin Ww",
+      "url": "https://platform.ultralytics.com/lin-ww/datasets/fire-smoke-detectionyolo26",
+      "snippet": "Object detection dataset featuring fire and smoke in diverse environments, including forest wildfires, residential structure fires, and controlled candle flames."
+    },
+    {
+      "title": "Fire Smoke Detectionyolo26 Dataset by Jean Pierre Van Der Merwe",
+      "url": "https://platform.ultralytics.com/jean-pierre-van-der-merwe/datasets/fire-smoke-detectionyolo26",
+      "snippet": "Object detection dataset featuring fire and smoke in diverse environments, including outdoor landscapes, vehicle accidents, and campfires for safety monitoring."
+    }
+  ]
+}

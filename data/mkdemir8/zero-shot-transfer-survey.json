@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mkdemir8/zero-shot-transfer-survey",
+  "slug": "mkdemir8-zero-shot-transfer-survey",
+  "author": "mkdemir8",
+  "url": "https://huggingface.co/mkdemir8/zero-shot-transfer-survey",
+  "created_at": "2026-08-27T16:31:40.000Z",
+  "updated_at": "2026-08-27T16:31:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2307.14397] A Survey on Generative Modeling with Limited Data, Few ...",
+      "url": "https://arxiv.org/abs/2307.14397",
+      "snippet": "In this survey, we examine Generative Modeling under Data Constraint (GM-DC), which includes limited-data, few-shot, and zero-shot settings. We present a unified perspective on the key challenges in GM-DC, including overfitting, frequency bias, and incompatible knowledge transfer, and discuss how these issues impact model performance."
+    },
+    {
+      "title": "A Survey on Generative Modeling with Limited Data, Few Shots, and Zero Shot",
+      "url": "https://openreview.net/forum?id=u7GTHazuRp",
+      "snippet": "In this survey, we examine Generative Modeling under Data Constraint (GM-DC), which includes limited-data, few-shot, and zero-shot settings. We present a unified perspective on the key challenges in GM-DC, including overfitting, frequency bias, and incompatible knowledge transfer, and discuss how these issues impact model performance."
+    },
+    {
+      "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
+      "url": "https://arxiv.org/abs/2608.17959",
+      "snippet": "State-of-the-art model-based reinforcement learning methods learn neural world models that allow policy improvement by planning in a latent space, without assumptions on the structure of the underlying environment. While expressive, these models are generally task-dependent: they learn uninterpretable latent representations that are tied to the training task and thus hard to generalize to new ..."
+    },
+    {
+      "title": "Few-Shot, Zero-Shot & Transfer Learning Guide | Ultralytics",
+      "url": "https://www.ultralytics.com/blog/understanding-few-shot-zero-shot-and-transfer-learning",
+      "snippet": "Explore the differences between few-shot learning, zero-shot learning, and transfer learning in computer vision and how these paradigms shape AI model training."
+    },
+    {
+      "title": "PDF Source Models Leak What They Shouldn&#x27;t : Unlearning Zero-Shot Transfer ...",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/04/MU_CVPR_26.pdf",
+      "snippet": "Conventional class-wise machine unlearning focuses on forgetting a subset of classes from a trained model. On the other hand, the proposed SCADA-UL aims to remove knowledge of source-exclusive classes (classes absent in target domain) while adapting a model to a new domain. For instance, if a land-use categorization model is adapted to a new geography, sensitive classes such as airports must ..."
+    }
+  ]
+}

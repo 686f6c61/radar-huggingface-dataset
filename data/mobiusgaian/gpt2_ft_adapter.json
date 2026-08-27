@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MobiusGaian/gpt2_FT_adapter",
+  "slug": "mobiusgaian-gpt2_ft_adapter",
+  "author": "MobiusGaian",
+  "url": "https://huggingface.co/MobiusGaian/gpt2_FT_adapter",
+  "created_at": "2026-08-27T12:31:07.000Z",
+  "updated_at": "2026-08-27T12:31:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:gpt2",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:openai-community/gpt2",
+    "base_model:adapter:openai-community/gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3253104,
+  "storage_human": "3 MB",
+  "base_model": "gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobiusGaian/gpt_FT_adapter · Hugging Face",
+      "url": "https://huggingface.co/MobiusGaian/gpt_FT_adapter",
+      "snippet": "MobiusGaian / gpt_FT_adapter like 0 Text Generation PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "MobiusGaian/gpt_FT_model · Hugging Face",
+      "url": "https://huggingface.co/MobiusGaian/gpt_FT_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt_FT_adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/MobiusGaian/gpt_FT_adapter",
+      "snippet": "Model Details Model Provider MobiusGaian Model Tree Base openai-community/gpt2 Adapter this model Input Modalities Text Output Modalities Text Supported Functionality Dedicated EndpointsContainer"
+    },
+    {
+      "title": "MobiusGaian/gpt_FT_adapter | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/mobiusgaian/gpt_ft_adapter",
+      "snippet": "MobiusGaian/gpt_FT_adapter by MobiusGaian for text-generation — open-source AI model on HuggingFace."
+    },
+    {
+      "title": "GitHub - deep-diver/gpt2-ft-pipeline: GPT2 fine-tuning pipeline with ...",
+      "url": "https://github.com/deep-diver/gpt2-ft-pipeline",
+      "snippet": "This project uses GPT2 model from KerasNLP library as the base language model and fine-tune the GPT2 on Stanford Alpaca dataset from alpaca-lora repository. NOTE: The Alpaca dataset used in this project is the enhanced version of the original Standford Alpaca dataset by open source communities to fix some flaws manually and with GPT4 API."
+    }
+  ]
+}

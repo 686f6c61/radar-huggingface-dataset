@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thomashoffmann/review-embodied-ai",
+  "slug": "thomashoffmann-review-embodied-ai",
+  "author": "thomashoffmann",
+  "url": "https://huggingface.co/thomashoffmann/review-embodied-ai",
+  "created_at": "2026-08-27T15:47:19.000Z",
+  "updated_at": "2026-08-27T15:47:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI in Machine Learning is it Really Embodied?",
+      "url": "https://arxiv.org/pdf/2505.10705",
+      "snippet": "Introduction Embodied Artificial Intelligence (Embodied AI) is gaining momentum in the machine learning communities with the goal of leveraging current progress in AI (deep learning, transformers, large language and visual-language models) to empower robots. In this chapter we put this work in the context of \"Good Old-Fashioned Artificial Intelligence\" (GOFAI) (Haugeland, 1989) and the ..."
+    },
+    {
+      "title": "Embodied AI in Machine Learning -- is it Really Embodied?",
+      "url": "https://www.researchgate.net/publication/391856628_Embodied_AI_in_Machine_Learning_--_is_it_Really_Embodied",
+      "snippet": "Embodied Artificial Intelligence (Embodied AI) is gaining momentum in the machine learning communities with the goal of leveraging current progress in AI (deep learning, transformers, large ..."
+    },
+    {
+      "title": "Title: Embodied AI in Machine Learning -- is it Really Embodied?",
+      "url": "http://export.arxiv.org/abs/2505.10705",
+      "snippet": "Abstract: Embodied Artificial Intelligence (Embodied AI) is gaining momentum in the machine learning communities with the goal of leveraging current progress in AI (deep learning, transformers, large language and visual-language models) to empower robots."
+    },
+    {
+      "title": "Embodied AI in Machine Learning -- is it Really Embodied?",
+      "url": "https://arxiv.org/abs/2505.10705",
+      "snippet": "Embodied Artificial Intelligence (Embodied AI) is gaining momentum in the machine learning communities with the goal of leveraging current progress in AI (deep learning, transformers, large language and visual-language models) to empower robots."
+    },
+    {
+      "title": "Embodied AI: A Survey on the Evolution from Perceptive to Behavioral ...",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/smb2.70003",
+      "snippet": "Thus, we provide a comprehensive survey on Embodied AI. According to the process of robot behavior, we categorize Embodied AI into three modules: embodied perception, embodied decision-making, and embodied execution. For each module, we review its tasks, methods, and challenges."
+    }
+  ]
+}

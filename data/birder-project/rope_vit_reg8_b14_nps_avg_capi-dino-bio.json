@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "birder-project/rope_vit_reg8_b14_nps_avg_capi-dino-bio",
+  "slug": "birder-project-rope_vit_reg8_b14_nps_avg_capi-dino-bio",
+  "author": "birder-project",
+  "url": "https://huggingface.co/birder-project/rope_vit_reg8_b14_nps_avg_capi-dino-bio",
+  "created_at": "2026-08-27T12:06:36.000Z",
+  "updated_at": "2026-08-27T12:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "birder",
+  "languages": [],
+  "tags": [
+    "birder",
+    "image-feature-extraction",
+    "pytorch",
+    "biology",
+    "arxiv:2010.11929",
+    "arxiv:2403.13298",
+    "arxiv:2309.16588",
+    "arxiv:2502.08769",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342910467,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "birder-project (Birder) - Hugging Face",
+      "url": "https://huggingface.co/birder-project/models",
+      "snippet": "Computer Vision birder-project/rope_vit_reg8_so150m_p14_swiglu_rms_ap_rotnet-capi"
+    },
+    {
+      "title": "GitHub - birder-project/birder: A mirror of https://gitlab.com/birder ...",
+      "url": "https://github.com/birder-project/birder",
+      "snippet": "Birder is an open-source computer vision framework designed for wildlife imagery analysis, offering robust classification and detection capabilities for various species. While initially developed with a focus on avian species, the framework&#x27;s architecture and methodologies are applicable to a wide range of wildlife computer vision tasks. This project leverages deep neural networks to provide ..."
+    },
+    {
+      "title": "birder-project (Birder) - Hugging Face",
+      "url": "https://huggingface.co/birder-project",
+      "snippet": "Birder An open-source computer vision framework for wildlife image analysis, featuring state-of-the-art models for species classification and detection. Birder repository - https://gitlab.com/birder/birder Birder documentation - https://birder.gitlab.io/birder/"
+    },
+    {
+      "title": "birder / birder · GitLab",
+      "url": "https://gitlab.com/birder/birder",
+      "snippet": "An open-source computer vision framework for wildlife image analysis, featuring state-of-the-art models for species classification and detection."
+    },
+    {
+      "title": "birder · PyPI",
+      "url": "https://pypi.org/project/birder/",
+      "snippet": "Birder An open-source computer vision framework for wildlife image analysis, featuring state-of-the-art models for species classification and detection. Introduction Setup Getting Started Pretrained Models Detection Evaluation Project Status and Contributions Licenses Acknowledgments Introduction Birder is an open-source computer vision framework designed for wildlife imagery analysis ..."
+    }
+  ]
+}

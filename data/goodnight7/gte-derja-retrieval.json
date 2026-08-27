@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Goodnight7/gte-derja-retrieval",
+  "slug": "goodnight7-gte-derja-retrieval",
+  "author": "Goodnight7",
+  "url": "https://huggingface.co/Goodnight7/gte-derja-retrieval",
+  "created_at": "2026-08-27T15:05:43.000Z",
+  "updated_at": "2026-08-27T15:06:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [
+    "aeb",
+    "ar"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "new",
+    "tunisian",
+    "derja",
+    "arabizi",
+    "retrieval",
+    "custom_code",
+    "aeb",
+    "ar",
+    "base_model:Alibaba-NLP/gte-multilingual-base",
+    "base_model:finetune:Alibaba-NLP/gte-multilingual-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 305368320,
+  "parameters_human": "305.4M",
+  "storage_bytes": 1238570859,
+  "storage_human": "1.2 GB",
+  "base_model": "Alibaba-NLP/gte-multilingual-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Goodnight7/derja-retrieval-benchmark · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Goodnight7/derja-retrieval-benchmark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Goodnight7/derja-retrieval-benchmark at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Goodnight7/derja-retrieval-benchmark/tree/main",
+      "snippet": "Arabic Tags: tunisian derja darija arabizi code-switching retrieval License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community main derja-retrieval-benchmark 4.14 MB 1 contributor History:2 commits Goodnight7 Upload folder using huggingface_hub baa2a3b verifiedabout 3 hours ago .gitattributes Safe 2.5 kBinitial ..."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Tunisian Arabic (Derja) AI Dataset - GitHub",
+      "url": "https://github.com/bahaeddinmselmi/tunisian-arabic-ai-dataset",
+      "snippet": "The Tunisian Arabic AI Dataset is a comprehensive corpus aggregated from multiple social media platforms and online sources. It is designed to facilitate the development of Large Language Models (LLMs), chatbots, and translation systems for the Tunisian dialect (Derja/Tounsi), which is a low-resource language variety often mixing Arabic script and \"Arabizi\" (Latin script). This repository ..."
+    },
+    {
+      "title": "AI Search foundational embedding model (GTE) example",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ai-search/vector-search-foundation-embedding-model-gte-example",
+      "snippet": "Use the GTE foundation embedding model with the Databricks AI Search Python SDK to create and query an AI Search index."
+    }
+  ]
+}

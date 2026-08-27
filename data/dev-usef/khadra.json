@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dev-usef/Khadra",
+  "slug": "dev-usef-khadra",
+  "author": "dev-usef",
+  "url": "https://huggingface.co/dev-usef/Khadra",
+  "created_at": "2026-08-27T16:22:59.000Z",
+  "updated_at": "2026-08-27T16:23:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7528831,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "GitHub - ahmedsamy56/Yalla-Khadra-AI-Model-API",
+      "url": "https://github.com/ahmedsamy56/Yalla-Khadra-AI-Model-API",
+      "snippet": "Contribute to ahmedsamy56/Yalla-Khadra-AI-Model-API development by creating an account on GitHub."
+    },
+    {
+      "title": "Yalla-Khadra-AI-Model-API - Hugging Face",
+      "url": "https://huggingface.co/spaces/Ahmedsamy56/Yalla-Khadra-AI-Model-API",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "app.py · Ahmedsamy56/Yalla-Khadra-AI-Model-API at main",
+      "url": "https://huggingface.co/spaces/Ahmedsamy56/Yalla-Khadra-AI-Model-API/blob/main/app.py",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - anomalyco/models.dev: An open-source database of AI models.",
+      "url": "https://github.com/anomalyco/models.dev",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and capabilities. There&#x27;s no single database with information about all the available AI models. We started Models.dev as a community-contributed project to address this. We also use it internally in opencode."
+    }
+  ]
+}

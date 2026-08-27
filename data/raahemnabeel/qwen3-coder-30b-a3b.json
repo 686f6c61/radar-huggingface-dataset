@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "raahemnabeel/qwen3-coder-30b-a3b",
+  "slug": "raahemnabeel-qwen3-coder-30b-a3b",
+  "author": "raahemnabeel",
+  "url": "https://huggingface.co/raahemnabeel/qwen3-coder-30b-a3b",
+  "created_at": "2026-08-27T16:12:08.000Z",
+  "updated_at": "2026-08-27T16:12:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "tt-model-cache",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2248153141,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    },
+    {
+      "title": "Qwen3-Coder/README.md at main · QwenLM/Qwen3-Coder",
+      "url": "https://github.com/QwenLM/Qwen3-Coder/blob/main/README.md",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    },
+    {
+      "title": "qwen3-coder:30b - ollama.com",
+      "url": "https://ollama.com/library/qwen3-coder:30b",
+      "snippet": "Qwen3-Coder is the most agentic code model to date in the Qwen series. Get started 480B Cloud ollama run qwen3-coder:480b-cloud Local ollama run qwen3-coder:480b Running locally requires a minimum of 250GB of memory or unified memory. 30B ollama run qwen3-coder:30b Overview qwen3-coder:30b offers 30B total parameters with only 3.3B activated, delivering strong performance while maintaining ..."
+    },
+    {
+      "title": "Qwen3-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-coder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

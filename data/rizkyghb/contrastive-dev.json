@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RizkyGhb/contrastive-dev",
+  "slug": "rizkyghb-contrastive-dev",
+  "author": "RizkyGhb",
+  "url": "https://huggingface.co/RizkyGhb/contrastive-dev",
+  "created_at": "2026-08-27T15:10:04.000Z",
+  "updated_at": "2026-08-27T15:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RizkyGhb (Rizky Gunawan) - Hugging Face",
+      "url": "https://huggingface.co/RizkyGhb/models",
+      "snippet": "RizkyGhb&#x27;s models1 Sort: Recently updated RizkyGhb/model_465706439_swin_t_large Updated about 8 hours ago"
+    },
+    {
+      "title": "Daily AI Papers | All credits go to HuggingFace&#x27;s Daily AI papers ...",
+      "url": "https://gabrielchua.me/daily-ai-papers/",
+      "snippet": "All credits go to HuggingFace&#x27;s Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers)."
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "heyongxin233/DeTeCtive · Hugging Face",
+      "url": "https://huggingface.co/heyongxin233/DeTeCtive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - heyongxin233/DeTeCtive: [NeurIPS 2024] DeTeCtive: Detecting AI ...",
+      "url": "https://github.com/heyongxin233/DeTeCtive",
+      "snippet": "DeTeCtive addresses these challenges with a multi-level contrastive learning framework, distinguishing nuanced writing styles to improve detection accuracy across various domains and models. This repository contains the code and models from our paper, DeTeCtive: Detecting AI-generated Text via Multi-Level Contrastive Learning."
+    }
+  ]
+}

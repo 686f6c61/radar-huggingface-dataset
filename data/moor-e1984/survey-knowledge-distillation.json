@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "moor-e1984/survey-knowledge-distillation",
+  "slug": "moor-e1984-survey-knowledge-distillation",
+  "author": "moor-e1984",
+  "url": "https://huggingface.co/moor-e1984/survey-knowledge-distillation",
+  "created_at": "2026-08-27T16:15:40.000Z",
+  "updated_at": "2026-08-27T16:15:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Knowledge distillation (KD), a technique for model compression and knowledge transfer, has gained significant attention in the field of machine learning since its formal introduction by Hinton et al. (2015). This approach builds upon the earlier work of Caruana et al. (2006), who demonstrated that the collective knowledge of an ensemble of models could be condensed into a single, smaller model ..."
+    },
+    {
+      "title": "moor-e1984 (Michael Moore) - Hugging Face",
+      "url": "https://huggingface.co/moor-e1984",
+      "snippet": "User profile of Michael Moore on Hugging Face"
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.12067",
+      "snippet": "arXiv.org is an open-access repository for scientific research papers across various disciplines, providing a platform for researchers to share and access knowledge."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://scispace.com/papers/a-survey-on-knowledge-distillation-of-large-language-models-3xk7eba03t",
+      "snippet": "TL;DR: This survey introduces a roofline model framework for systematic analysis of Large Language Model (LLM) inference techniques, identifying bottlenecks and providing a deeper understanding of practical aspects on real devices, covering weight optimization, decoding algorithm improvements, and hardware/system-level enhancements."
+    }
+  ]
+}

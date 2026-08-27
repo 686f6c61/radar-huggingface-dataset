@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sarahjonesbeck/few-shot-multimodal",
+  "slug": "sarahjonesbeck-few-shot-multimodal",
+  "author": "sarahjonesbeck",
+  "url": "https://huggingface.co/sarahjonesbeck/few-shot-multimodal",
+  "created_at": "2026-08-27T16:13:37.000Z",
+  "updated_at": "2026-08-27T16:13:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v2",
+      "snippet": "To illustrate these ideas, we implement a controlled multimodal dataset and evaluate an additive CNN MLP fusion model under few shot regimes, confirming predicted multimodal gains, modality interference at larger sample sizes, and shrinking predictive uncertainty."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "PDF Few-shot adaptation of multi-modal foundation models: a survey",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10462-024-10915-y.pdf",
+      "snippet": "To efectively enhance the model&#x27;s generalization performance in specific domains, it is necessary to fine-tune multi-modal foundation models using limited samples, enabling them to have broader applications. These methods can be defined as few-shot adaptation methods for multi-modal foundation models."
+    },
+    {
+      "title": "Few-shot adaptation of multi-modal foundation models: a survey",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-10915-y",
+      "snippet": "To effectively enhance the model&#x27;s generalization performance in specific domains, it is necessary to fine-tune multi-modal foundation models using limited samples, enabling them to have broader applications. These methods can be defined as few-shot adaptation methods for multi-modal foundation models."
+    },
+    {
+      "title": "Multimodal learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multimodal_learning",
+      "snippet": "Multimodal learning is a type of deep learning that integrates and processes multiple types of data, referred to as modalities, such as text, audio, images, or video. This integration allows for a more holistic understanding of complex data, improving model performance in tasks like visual question answering, cross-modal retrieval, [1] text-to-image generation, [2] aesthetic ranking, [3] and ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenAdminOS/openadmin-20b-GGUF",
+  "slug": "openadminos-openadmin-20b-gguf",
+  "author": "OpenAdminOS",
+  "url": "https://huggingface.co/OpenAdminOS/openadmin-20b-GGUF",
+  "created_at": "2026-08-27T11:42:21.000Z",
+  "updated_at": "2026-08-27T12:03:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "microsoft-365",
+    "it-administration",
+    "openadminos",
+    "text-generation",
+    "base_model:OpenAdminOS/openadmin-20b",
+    "base_model:quantized:OpenAdminOS/openadmin-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 12109564832,
+  "storage_human": "12.1 GB",
+  "base_model": "OpenAdminOS/openadmin-20b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAdminOS - Local AI agents for Microsoft 365",
+      "url": "https://www.openadminos.com/",
+      "snippet": "Open-source desktop app for Intune and Entra admins. Run Microsoft 365 agents with local models, and approve every Graph change."
+    },
+    {
+      "title": "OpenAdminOS - GitHub",
+      "url": "https://github.com/OpenAdminOS/OpenAdminOS/",
+      "snippet": "OpenAdminOS Open-source, local-first AI agents for Microsoft 365 admins. Run AI agents against your Microsoft 365 tenant from your own machine. Keep sensitive work local, avoid per-token costs with local models, and approve every change before it happens. Download · Website · Docs · Contributing · Changelog"
+    },
+    {
+      "title": "GitHub - OpenAdminOS/OpenAdminOS",
+      "url": "https://github.com/OpenAdminOS/OpenAdminOS/tree/main/",
+      "snippet": "OpenAdminOS Open-source, local-first AI agents for Microsoft 365 admins."
+    },
+    {
+      "title": "gabriellarson/gpt-oss-20b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/gabriellarson/gpt-oss-20b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run GGUF Models Locally - Complete Beginner Guide (2025)",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "Quick Overview Running AI models locally gives you complete privacy, no internet required, and zero API costs. With GGUF format and the right tools, you can have a local AI assistant running in under 10 minutes."
+    }
+  ]
+}

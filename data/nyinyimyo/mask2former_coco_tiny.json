@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "NyiNyiMyo/mask2former_coco_tiny",
+  "slug": "nyinyimyo-mask2former_coco_tiny",
+  "author": "NyiNyiMyo",
+  "url": "https://huggingface.co/NyiNyiMyo/mask2former_coco_tiny",
+  "created_at": "2026-08-27T13:14:30.000Z",
+  "updated_at": "2026-08-27T13:16:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200498075,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/mask2former-swin-tiny-coco-instance · Hugging Face",
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · facebook/mask2former-swin-tiny-coco-instance at main",
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance/blob/main/README.md",
+      "snippet": "Mask2Former Mask2Former model trained on COCO instance segmentation (tiny-sized version, Swin backbone). It was introduced in the paper Masked-attention Mask Transformer for Universal Image Segmentation and first released in this repository."
+    },
+    {
+      "title": "mask2former-swin-tiny-coco-instance · Models",
+      "url": "https://www.modelscope.cn/models/facebook/mask2former-swin-tiny-coco-instance",
+      "snippet": "Mask2Former Mask2Former model trained on COCO instance segmentation (tiny-sized version, Swin backbone). It was introduced in the paper Masked-attention Mask Transformer for Universal Image Segmentation and first released in this repository."
+    },
+    {
+      "title": "Hugging-Face-Instance-Segmentation-by-Mask2former/README.md at main ...",
+      "url": "https://github.com/NyiNyiMyo/Hugging-Face-Instance-Segmentation-by-Mask2former/blob/main/README.md",
+      "snippet": "Hugging-Face Instance Segmentation by Mask2former Instance Segmentation for the caps of marker pens using Mask2former Deep Learning Algorithm in Hugging Face."
+    },
+    {
+      "title": "mask2former-swin-tiny-coco-instance · Model · Inferix",
+      "url": "https://inferix.co/models/facebook/mask2former-swin-tiny-coco-instance",
+      "snippet": "Mask2Former Mask2Former model trained on COCO instance segmentation (tiny-sized version, Swin backbone). It was introduced in the paper Masked-attention Mask Transformer for Universal Image Segmentation and first released in this repository."
+    }
+  ]
+}

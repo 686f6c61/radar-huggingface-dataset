@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "debayant9/livehfcourse",
+  "slug": "debayant9-livehfcourse",
+  "author": "debayant9",
+  "url": "https://huggingface.co/debayant9/livehfcourse",
+  "created_at": "2026-08-27T18:03:19.000Z",
+  "updated_at": "2026-08-27T18:03:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RishiNLP/livehfcourse · Hugging Face",
+      "url": "https://huggingface.co/RishiNLP/livehfcourse",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "machhakiran/livehfcourse · Hugging Face",
+      "url": "https://huggingface.co/machhakiran/livehfcourse",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - debayant9/ML-AI",
+      "url": "https://github.com/debayant9/ML-AI",
+      "snippet": "Contribute to debayant9/ML-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "debayant9 - GitHub",
+      "url": "https://github.com/debayant9",
+      "snippet": "debayant9 has 19 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Insights DB - Protect AI",
+      "url": "https://protectai.com/insights/models/DPPATRA/livehfcourse/6a4f8a6315b4a275ccfa7b16a010238dfdbead69/overview",
+      "snippet": "Discover potential threats in the DPPATRA / livehfcourse model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

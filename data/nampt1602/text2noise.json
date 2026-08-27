@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nampt1602/Text2Noise",
+  "slug": "nampt1602-text2noise",
+  "author": "nampt1602",
+  "url": "https://huggingface.co/nampt1602/Text2Noise",
+  "created_at": "2026-08-27T15:11:22.000Z",
+  "updated_at": "2026-08-27T15:51:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3092591424,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "namdenn/Text2Noise - GitHub",
+      "url": "https://github.com/namdenn/Text2Noise",
+      "snippet": "The score-model implementation is adapted from SGMSE. Parts of the speech-enhancement stack build on the referenced DiffUSE/UDiffSE research code, and the audio-visual utilities include AV-HuBERT/fairseq-derived components."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Free AI Text to Speech Online - 36+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 36+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

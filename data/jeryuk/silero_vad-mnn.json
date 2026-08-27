@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jeryuk/silero_vad.mnn",
+  "slug": "jeryuk-silero_vad-mnn",
+  "author": "Jeryuk",
+  "url": "https://huggingface.co/Jeryuk/silero_vad.mnn",
+  "created_at": "2026-08-27T14:06:26.000Z",
+  "updated_at": "2026-08-27T14:09:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1486656,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snakers4/silero-vad: Silero VAD: pre-trained enterprise-grade ...",
+      "url": "https://github.com/snakers4/silero-vad",
+      "snippet": "Stellar accuracy Silero VAD has excellent results on speech detection tasks. Fast One audio chunk (30+ ms) takes less than 1ms to be processed on a single CPU thread. Using batching or GPU can also improve performance considerably. Under certain conditions ONNX may even run up to 4-5x faster. Lightweight JIT model is around two megabytes in size. General Silero VAD was trained on huge corpora ..."
+    },
+    {
+      "title": "GitHub - snakers4/silero-models: Silero Models: pre-trained text-to ...",
+      "url": "https://github.com/snakers4/silero-models",
+      "snippet": "Silero Models: pre-trained text-to-speech models made embarrassingly simple - snakers4/silero-models"
+    },
+    {
+      "title": "README.md · huggingworld/silero-vad at main",
+      "url": "https://huggingface.co/huggingworld/silero-vad/blob/main/README.md",
+      "snippet": "Silero VAD Silero VAD - pre-trained enterprise-grade Voice Activity Detector (also see our STT models). Fast start Dependencies System requirements to run python examples on x86-64 systems: python 3.8+; 1G+ RAM; A modern CPU with AVX, AVX2, AVX-512 or AMX instruction sets. Dependencies: torch>=1.12.0; torchaudio>=0.12.0 (for I/O only); onnxruntime>=1.16.1 (for ONNX model usage). Silero VAD ..."
+    },
+    {
+      "title": "Serkan007/silero-vad-modelim · Hugging Face",
+      "url": "https://huggingface.co/Serkan007/silero-vad-modelim",
+      "snippet": "Lightweight JIT model is around two megabytes in size. General Silero VAD was trained on huge corpora that include over 6000 languages and it performs well on audios from different domains with various background noise and quality levels. Flexible sampling rate Silero VAD supports 8000 Hz and 16000 Hz sampling rates. Highly Portable"
+    },
+    {
+      "title": "Silero-VAD Series - ManySpeech - manyeyes.github.io",
+      "url": "https://manyeyes.github.io/manyspeech/en/models/vad/silero-vad.html",
+      "snippet": "NotesModel background: A deep learning‑based VAD model released by the open‑source community snakers4. A mainstream open‑source VAD solution, designed for 16kHz audio input.Features: Applies pre‑processing steps (pre‑emphasis, framing, windowing) to the audio, then learns voice features through a neural network to accurately distinguish speech from non‑speech segments. Adaptively ..."
+    }
+  ]
+}

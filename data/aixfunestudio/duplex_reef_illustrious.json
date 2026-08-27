@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Duplex_Reef_Illustrious",
+  "slug": "aixfunestudio-duplex_reef_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Duplex_Reef_Illustrious",
+  "created_at": "2026-08-27T15:19:22.000Z",
+  "updated_at": "2026-08-27T15:40:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938040866,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cinematic_Double_Exposure_Effect_Illustrious - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Cinematic_Double_Exposure_Effect_Illustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "Illustrious: an Open Advanced Illustration Model - arXiv.org",
+      "url": "https://arxiv.org/html/2409.19946v1",
+      "snippet": "Illustrious is a generalized anime image generation model that can create a variety of images through detailed prompts. However, it has the following limitations."
+    },
+    {
+      "title": "Generate High-Resolution Images - illustrious-xl.ai",
+      "url": "https://www.illustrious-xl.ai/image-generate",
+      "snippet": "Experience the power of Illustrious XL&#x27;s AI to generate stunning, high-resolution anime images. Unlock your creativity with our advanced image generation tools."
+    },
+    {
+      "title": "illustrious-xl.ai - Next-Gen AI for Stunning Anime & Illustration Creation",
+      "url": "https://www.illustrious-xl.ai/",
+      "snippet": "Support the advancement of AI by sponsoring Illustrious XL. Stay informed with our latest updates, version releases, and in-depth research insights from our AI team."
+    }
+  ]
+}

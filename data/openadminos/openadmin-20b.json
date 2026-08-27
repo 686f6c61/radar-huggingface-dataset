@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenAdminOS/openadmin-20b",
+  "slug": "openadminos-openadmin-20b",
+  "author": "OpenAdminOS",
+  "url": "https://huggingface.co/OpenAdminOS/openadmin-20b",
+  "created_at": "2026-08-27T11:42:20.000Z",
+  "updated_at": "2026-08-27T12:29:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "microsoft-365",
+    "intune",
+    "entra",
+    "defender",
+    "it-administration",
+    "openadminos",
+    "text-generation",
+    "en",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAdminOS - Local AI agents for Microsoft 365",
+      "url": "https://www.openadminos.com/",
+      "snippet": "Open-source desktop app for Intune and Entra admins. Run Microsoft 365 agents with local models, and approve every Graph change."
+    },
+    {
+      "title": "OpenAdminOS - GitHub",
+      "url": "https://github.com/OpenAdminOS/OpenAdminOS/",
+      "snippet": "OpenAdminOS Open-source, local-first AI agents for Microsoft 365 admins. Run AI agents against your Microsoft 365 tenant from your own machine. Keep sensitive work local, avoid per-token costs with local models, and approve every change before it happens. Download · Website · Docs · Contributing · Changelog"
+    },
+    {
+      "title": "GitHub - OpenAdminOS/OpenAdminOS",
+      "url": "https://github.com/OpenAdminOS/OpenAdminOS/tree/main/",
+      "snippet": "OpenAdminOS Open-source, local-first AI agents for Microsoft 365 admins."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "OpenAdminOS: AI Tools for M365 Admins - hubsite365.com",
+      "url": "https://www.hubsite365.com/en-ww/crm-pages/ai-for-m365-admins-openadminos-lokka-2-0-microsoft-graph-skill-and-mcp.htm",
+      "snippet": "Key insights OpenAdmin OS, Lokka 2.0, Microsoft Graph Skill and MCP form a new admin story where AI agents act on Microsoft 365 and Azure using natural language. They use Microsoft Graph as the control plane and MCP as the connector layer to turn requests into API actions. MCP (Model Context Protocol) is an open standard that connects AI models to external tools and services. MCP mediates ..."
+    }
+  ]
+}

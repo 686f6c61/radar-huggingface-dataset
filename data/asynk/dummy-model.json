@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Asynk/dummy-model",
+  "slug": "asynk-dummy-model",
+  "author": "Asynk",
+  "url": "https://huggingface.co/Asynk/dummy-model",
+  "created_at": "2026-08-27T13:29:55.000Z",
+  "updated_at": "2026-08-27T13:30:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110655493,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442646188,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dummy Agent Library · Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course/unit1/dummy-agent-library",
+      "snippet": "Quick Quiz 2 Understanding AI Agents through the Thought-Action-Observation Cycle Thought, Internal Reasoning and the Re-Act Approach Actions, Enabling the Agent to Engage with Its Environment Observe, Integrating Feedback to Reflect and Adapt Dummy Agent Library Let&#x27;s Create Our First Agent Using smolagents Unit 1 Final Quiz Conclusion Unit 2."
+    },
+    {
+      "title": "LSDYNA Dummy Model Support",
+      "url": "https://lsdyna.ansys.com/dummy-model-support/",
+      "snippet": "Dummy Model Support Welcome to the Dummy Model Support Site This site provides detailed information on dummy models for LS-DYNA. The manuals of the models developed by DYNAmore are available under the respective documents link of each dummy. To license the models we kindly ask to contact your local LS-DYNA distributor."
+    },
+    {
+      "title": "[2605.15077] Concurrency without Model Changes: Future-based ...",
+      "url": "https://arxiv.org/abs/2605.15077",
+      "snippet": "Abstract page for arXiv paper 2605.15077: Concurrency without Model Changes: Future-based Asynchronous Function Calling for LLMs"
+    },
+    {
+      "title": "The Dummy models of Scikit-learn - Towards Data Science",
+      "url": "https://towardsdatascience.com/the-dummy-models-of-scikit-learn-3001f54c48e9/",
+      "snippet": "If your actual model gives worse results than this very, very simple approach, you might want to review your model. Dummy models in scikit-learn The dummy model package of scikit-learn is pretty simple: it only consists of 2 classes: a DummyClassifier a DummyRegressor The scikit-learn API docs for the dummy module is quite simple."
+    },
+    {
+      "title": "Asynchronous Inference · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/async",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

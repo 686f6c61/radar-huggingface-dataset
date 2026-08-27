@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timm/lowformer_b1.in1k",
+  "slug": "timm-lowformer_b1-in1k",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/lowformer_b1.in1k",
+  "created_at": "2026-08-27T19:02:30.000Z",
+  "updated_at": "2026-08-27T19:02:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "dataset:imagenet-1k",
+    "arxiv:2409.03460",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17956056,
+  "parameters_human": "18.0M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - altair199797/LowFormer",
+      "url": "https://github.com/altair199797/LowFormer",
+      "snippet": "The lowformer_model.py file is a standalone file and does not include the dependencies of the repository anymore. The script below is an example on how to use the lowformer_model.py file to get any LowFormer model:"
+    },
+    {
+      "title": "timm (PyTorch Image Models) - Hugging Face",
+      "url": "https://huggingface.co/timm",
+      "snippet": "Computer Vision Meta AI&#x27;s DINOv3 weights in timm. ViTs with `qkvb` have a zero QV bias present, otherwise bias is disabled. QKV bias are all 0 in original weights."
+    },
+    {
+      "title": "LowFormer: Hardware Efficient Design for Convolutional Transformer ...",
+      "url": "https://arxiv.org/html/2409.03460v1",
+      "snippet": "In Figure 6 we investigate for LowFormer-B1 and other approaches the impact of increasing the input resolution on GPU latency. LowFormer-B1 outperforms depicted models in top-1 accuracy on ImageNet-1K and at the same time remains considerably faster, independent of the input resolution."
+    },
+    {
+      "title": "LowFormer/README.md at main · altair199797/LowFormer · GitHub",
+      "url": "https://github.com/altair199797/LowFormer/blob/main/README.md",
+      "snippet": "The following command runs the model LowFormer-B1 (from configs/cls/imagenet) for 400 iterations, with a batch size of 200, it uses torchscript optimization (optit) and has an input resolution of 224x224 (throughput measurement):"
+    },
+    {
+      "title": "timm (PyTorch Image Models) - Hugging Face",
+      "url": "https://huggingface.co/timm/models",
+      "snippet": "Explore PyTorch Image Models, including SOTA vision transformers and convolutional models with updated training recipes, utilities, and reference scripts."
+    }
+  ]
+}

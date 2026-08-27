@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OmAhire369/safe-genai-dpo-qlora",
+  "slug": "omahire369-safe-genai-dpo-qlora",
+  "author": "OmAhire369",
+  "url": "https://huggingface.co/OmAhire369/safe-genai-dpo-qlora",
+  "created_at": "2026-08-27T16:37:45.000Z",
+  "updated_at": "2026-08-27T16:37:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "alignment",
+    "preference-learning",
+    "dpo",
+    "qlora",
+    "rlhf",
+    "text-generation",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:adapter:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17320112,
+  "storage_human": "17 MB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmAhire369/safe-genai-ppo-qlora · Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/safe-genai-ppo-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmAhire369/safe-genai-reward-full · Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/safe-genai-reward-full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmAhire369/dpo_qlora_alignment - Fast, Reliable, and Scalable Inference ...",
+      "url": "https://friendli.ai/models/OmAhire369/dpo_qlora_alignment",
+      "snippet": "Run OmAhire369/dpo_qlora_alignment with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "safety-alignment-llm/app/README.md at main · Omahire369 ... - GitHub",
+      "url": "https://github.com/Omahire369/safety-alignment-llm/blob/main/app/README.md",
+      "snippet": "Contribute to Omahire369/safety-alignment-llm development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Omahire369/safety-alignment-llm",
+      "url": "https://github.com/Omahire369/safety-alignment-llm/tree/main",
+      "snippet": "Fine-tuning an instruction-tuned model on a narrow domain quietly strips out its safety training. This project measures two zero-training ways to put refusal back — editing the weights and steering the activations — on the same base model, the same harmful benchmark, and the same utility split, so the trade-off between them is directly readable."
+    }
+  ]
+}

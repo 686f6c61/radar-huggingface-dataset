@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ia-despir/top-ferramentas-fakenude-ia",
+  "slug": "ia-despir-top-ferramentas-fakenude-ia",
+  "author": "ia-despir",
+  "url": "https://huggingface.co/ia-despir/top-ferramentas-fakenude-ia",
+  "created_at": "2026-08-27T17:59:05.000Z",
+  "updated_at": "2026-08-27T17:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "despir/top-ferramentas-fakenude-ia at main - Hugging Face",
+      "url": "https://huggingface.co/despir/top-ferramentas-fakenude-ia/tree/main",
+      "snippet": "top-ferramentas-fakenude-ia like 0 License: creativeml-openrail-m Model card Files Files and versions xet Community 1"
+    },
+    {
+      "title": "8 Unrestricted AI Image Generators in 2026 [Free] | PhotoPro AI",
+      "url": "https://www.photopro-ai.com/blog/unrestricted-ai-image-generator.html",
+      "snippet": "Here are 8 unrestricted AI image generators that are free and actually working in 2026."
+    },
+    {
+      "title": "Best Uncensored AI Models in 2026: Run These Top Open LLMs Today",
+      "url": "https://featherless.ai/blog/best-uncensored-ai-models-2026",
+      "snippet": "Six uncensored open LLMs worth running in 2026, picked by use case: general reasoning, roleplay and fiction, security research, and small fast models. All live on Featherless, no logs, flat rate."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | Tensor.Art",
+      "url": "https://tensor.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "Free AI Nude App: What&#x27;s Available and Safe? | ReelMind",
+      "url": "https://reelmind.ai/blog/free-ai-nude-app-whats-available-and-safe",
+      "snippet": "Free AI Nude App: Whatâ s Available and Safe? Abstract The rise of AI-powered image and video generation tools has sparked interest in applications that"
+    }
+  ]
+}

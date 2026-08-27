@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jandro91garcia/ppo-LunarLander-v3",
+  "slug": "jandro91garcia-ppo-lunarlander-v3",
+  "author": "jandro91garcia",
+  "url": "https://huggingface.co/jandro91garcia/ppo-LunarLander-v3",
+  "created_at": "2026-08-27T18:48:52.000Z",
+  "updated_at": "2026-08-27T18:49:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284229,
+  "storage_human": "284229 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brian90/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Brian90/ppo-LunarLander-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sajeeb-ai/RL_PPO-LunarLander-v3 - GitHub",
+      "url": "https://github.com/sajeeb-ai/RL_PPO-LunarLander-v3",
+      "snippet": "Developed a reinforcement learning model utilizing the Proximal Policy Optimization (PPO) algorithm to train an agent in the LunarLander-v3 environment. The project encompassed configuring the environment, implementing the PPO algorithm using Stable-Baselines3, and evaluating the agent&#x27;s performance. The trained model and associated files are hosted on Hugging Face&#x27;s model hub, facilitating ..."
+    },
+    {
+      "title": "jfh000/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/jfh000/ppo-LunarLander-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lunar Lander - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/box2d/lunar_lander/",
+      "snippet": "Lunar Lander ¶ This environment is part of the Box2D environments which contains general information about the environment."
+    },
+    {
+      "title": "Ever wanted to train an AI that flips a lunar lander? This model uses ...",
+      "url": "https://x.com/HuggingModels/status/2079075837190852964",
+      "snippet": "Hugging Models (@HuggingModels). 14 likes. Ever wanted to train an AI that flips a lunar lander? This model uses PPO to master LunarLander-v3 with a custom reward shaping. It&#x27;s Reinforcement Learning at its finest, and it&#x27;s free to use."
+    }
+  ]
+}

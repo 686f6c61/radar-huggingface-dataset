@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jp001044314/my-bert-imdb",
+  "slug": "jp001044314-my-bert-imdb",
+  "author": "jp001044314",
+  "url": "https://huggingface.co/jp001044314/my-bert-imdb",
+  "created_at": "2026-08-27T12:45:43.000Z",
+  "updated_at": "2026-08-27T12:45:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AiiN-aini/my-bert-imdb · Hugging Face",
+      "url": "https://huggingface.co/AiiN-aini/my-bert-imdb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GMD1999/my-bert-imdb · Hugging Face",
+      "url": "https://huggingface.co/GMD1999/my-bert-imdb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AryaPathak/BERT-FineTuned-for-IMDB",
+      "url": "https://github.com/AryaPathak/BERT-FineTuned-for-IMDB",
+      "snippet": "This project demonstrates how to fine-tune a pre-trained BERT model (bert-base-uncased) on the IMDB movie review dataset using TensorFlow and Hugging Face Transformers. The goal is to classify reviews as positive or negative."
+    },
+    {
+      "title": "GitHub - jbindaAI/IMDB: Repository contains code needed to train and ...",
+      "url": "https://github.com/jbindaAI/IMDB",
+      "snippet": "Repository contains code needed to train and use classifiers on the Internet Movie Database (IMDb). Models are based on BERT LLM. - GitHub - jbindaAI/IMDB: Repository contains code needed to train and use classifiers on the Internet Movie Database (IMDb). Models are based on BERT LLM."
+    },
+    {
+      "title": "Sentiment Analysis Using BERT on IMDB: Fine-Tune Base Model",
+      "url": "https://medium.com/@nsidana123/sentiment-analysis-using-bert-on-imdb-fine-tune-base-model-on-custom-dat-f2c6e6b24770",
+      "snippet": "Sentiment Analysis Using BERT on IMDB: Fine-Tune Base Model Sentiment analysis, the task of classifying text as positive, negative or neutral, is one of the most widely used applications of ..."
+    }
+  ]
+}

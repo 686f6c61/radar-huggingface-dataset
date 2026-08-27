@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gubernard/nlp-retrieval27",
+  "slug": "gubernard-nlp-retrieval27",
+  "author": "gubernard",
+  "url": "https://huggingface.co/gubernard/nlp-retrieval27",
+  "created_at": "2026-08-27T17:30:25.000Z",
+  "updated_at": "2026-08-27T17:30:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AndrewAmore/NLP-Retriever: A question generation approach to ...",
+      "url": "https://github.com/AndrewAmore/NLP-Retriever",
+      "snippet": "Modern Question Answering (QA) systems consist of two components: readers and retrievers. Retrievers reduce the passage search space for answer extraction and limit the overall accuracy of QA methods. Conventional retrievers consume large amounts of resources, reducing their viability to large corporations or well funded institutions. In addition, some retrieval methods are prone to ..."
+    },
+    {
+      "title": "Natural Language AI - Google Cloud",
+      "url": "https://cloud.google.com/natural-language",
+      "snippet": "Analyze text with AI using pre-trained API to extract relevant entities, understand sentiment, and more."
+    },
+    {
+      "title": "Cloud Natural Language documentation",
+      "url": "https://docs.cloud.google.com/natural-language/docs",
+      "snippet": "For information on which languages are supported by the Natural Language, see Language Support. Go to the Cloud Natural Language product page for more. Note: Need a customized solution? AutoML Natural Language enables you to create a custom machine learning model for classifying content."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Large Language Models (LLMs) with Google AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/llms",
+      "snippet": "A large language model (LLM) is a statistical language model, trained on a massive amount of data, that can be used to generate and translate text and other content, and perform other natural language processing (NLP) tasks. LLMs are typically based on deep learning architectures, such as the Transformer developed by Google in 2017, and can be trained on billions of text and other content."
+    }
+  ]
+}

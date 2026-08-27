@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Enzosilvawun/notes-text-image-retrieval",
+  "slug": "enzosilvawun-notes-text-image-retrieval",
+  "author": "Enzosilvawun",
+  "url": "https://huggingface.co/Enzosilvawun/notes-text-image-retrieval",
+  "created_at": "2026-08-27T17:33:03.000Z",
+  "updated_at": "2026-08-27T17:33:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Text-to-Image Leaderboard - Best AI Image Generators",
+      "url": "https://arena.ai/leaderboard/text-to-image",
+      "snippet": "View overall rankings across text to image AI models."
+    },
+    {
+      "title": "Imagen: Text-to-Image Diffusion Models",
+      "url": "https://imagen.research.google/",
+      "snippet": "Imagen is an AI system that creates photorealistic images from input text Visualization of Imagen. Imagen uses a large frozen T5-XXL encoder to encode the input text into embeddings. A conditional diffusion model maps the text embedding into a 64×64 image."
+    },
+    {
+      "title": "CLIP-Branches: Interactive Fine-Tuning for Text-Image Retrieval",
+      "url": "https://arxiv.org/html/2406.13322v1",
+      "snippet": "These algorithms facilitate data retrieval through text and image embeddings, offering a rapid and efficient solution for handling extensive data sets through the use of appropriate index structures."
+    },
+    {
+      "title": "GitHub - WangFei-2019/Image-text-Retrieval",
+      "url": "https://github.com/WangFei-2019/Image-text-Retrieval",
+      "snippet": "To be more specific, we first examine the related reproducibility concerns and explain why our focus is on image-text retrieval tasks. Second, we systematically summarize the current paradigm of image-text retrieval models and the stated contributions of those approaches."
+    }
+  ]
+}

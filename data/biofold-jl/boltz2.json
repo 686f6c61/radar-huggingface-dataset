@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "biofold-jl/boltz2",
+  "slug": "biofold-jl-boltz2",
+  "author": "biofold-jl",
+  "url": "https://huggingface.co/biofold-jl/boltz2",
+  "created_at": "2026-08-27T15:33:23.000Z",
+  "updated_at": "2026-08-27T15:54:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4203124224,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boltz-2: Joint Structure and Binding Affinity Prediction",
+      "url": "https://boltz.bio/boltz2",
+      "snippet": "Boltz-2 is a new biomolecular foundation model that goes beyond AlphaFold3 and Boltz-1 by jointly modeling complex structures and binding affinities, a critical component towards accurate molecular design. Boltz-2 is the first deep learning model to approach the accuracy of physics-based free-energy perturbation (FEP) methods, while running 1000x faster — making accurate in silico screening ..."
+    },
+    {
+      "title": "Boltz-2 - biolm.ai",
+      "url": "https://biolm.ai/models/boltz2/",
+      "snippet": "Boltz-2 is a GPU-accelerated, structure- and affinity-aware biomolecular co-folding model for proteins, nucleic acids, and small-molecule ligands. It predicts 3D complex structures with per-complex and per-chain confidence metrics (pLDDT, pTM, ipTM, PAE, PDE), and optionally returns single and pairwise embeddings. For ligands, it outputs a binary binding likelihood and a continuous IC50-like ..."
+    },
+    {
+      "title": "GitHub - jwohlwend/boltz: Official repository for the Boltz ...",
+      "url": "https://github.com/jwohlwend/boltz",
+      "snippet": "Boltz is a family of models for biomolecular interaction prediction. Boltz-1 was the first fully open source model to approach AlphaFold3 accuracy. Our latest work Boltz-2 is a new biomolecular foundation model that goes beyond AlphaFold3 and Boltz-1 by jointly modeling complex structures and binding affinities, a critical component towards accurate molecular design. Boltz-2 is the first deep ..."
+    },
+    {
+      "title": "GitHub - brisingr10/boltz2: Official repository for the Boltz ...",
+      "url": "https://github.com/brisingr10/boltz2",
+      "snippet": "Boltz is a family of models for biomolecular interaction prediction. Boltz-1 was the first fully open source model to approach AlphaFold3 accuracy. Our latest work Boltz-2 is a new biomolecular foundation model that goes beyond AlphaFold3 and Boltz-1 by jointly modeling complex structures and binding affinities, a critical component towards accurate molecular design. Boltz-2 is the first deep ..."
+    },
+    {
+      "title": "Boltz-2 Released to Democratize AI Molecular Modeling for Drug ...",
+      "url": "https://journals.sagepub.com/doi/10.1089/genedge.7.1.071",
+      "snippet": "Researchers from the Massachusetts Institute of Technology (MIT) Jameel Clinic for Machine Learning in Health have announced the open-source release of Boltz-2, which now predicts molecular binding affinity at newfound speed and accuracy to democratize commercial drug discovery. The model is available under the highly permissive MIT license, which allows commercial drug developers to use the ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OmAhire369/safe-genai-ppo-prefix",
+  "slug": "omahire369-safe-genai-ppo-prefix",
+  "author": "OmAhire369",
+  "url": "https://huggingface.co/OmAhire369/safe-genai-ppo-prefix",
+  "created_at": "2026-08-27T13:37:10.000Z",
+  "updated_at": "2026-08-27T13:37:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "alignment",
+    "preference-learning",
+    "ppo",
+    "prefix",
+    "rlhf",
+    "text-generation",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:adapter:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3938365,
+  "storage_human": "4 MB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmAhire369/ppo_prefix_alignment at main - Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/ppo_prefix_alignment/tree/main",
+      "snippet": "OmAhire369 / ppo_prefix_alignment like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model main ppo_prefix_alignment 1 contributor History:3 commits OmAhire369 Upload tokenizer 7ac3e58 verified13 minutes ago .gitattributes 1.52 kBinitial commit14 minutes ago README.md 5.17 kBUpload ..."
+    },
+    {
+      "title": "OmAhire369 (Om Ahire) - Hugging Face",
+      "url": "https://huggingface.co/OmAhire369",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "Omahire369 (Om Ahire) / Repositories · GitHub",
+      "url": "https://github.com/Omahire369?tab=repositories",
+      "snippet": "Designed a model using Linear Regression which can predict the possible price of the car by taking parameters like company name, model name, year of purchase, fuel type and no. of kilometers driven…"
+    },
+    {
+      "title": "Omahire369 (Om Ahire) · GitHub",
+      "url": "https://github.com/Omahire369",
+      "snippet": "Hello! I am Om Ahire 👋 A 2nd Year Postgrad student pursuing Artificial Intelligence 🤖 from IIT Kharagpur - Omahire369"
+    },
+    {
+      "title": "Proximal Policy Optimization (PPO) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
+      "snippet": "Proximal Policy Optimization (PPO) is a policy gradient reinforcement learning algorithm that learns an optimal policy by directly updating the agent&#x27;s action-selection strategy while maintaining stable learning. Unlike traditional policy gradient methods that can make overly large policy updates, PPO introduces a clipping mechanism that limits how much the policy can change during each update ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "snsnc/Polaris-V1-MLX-4bit",
+  "slug": "snsnc-polaris-v1-mlx-4bit",
+  "author": "snsnc",
+  "url": "https://huggingface.co/snsnc/Polaris-V1-MLX-4bit",
+  "created_at": "2026-08-27T17:35:27.000Z",
+  "updated_at": "2026-08-27T17:36:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-lm",
+    "code",
+    "reasoning",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "base_model:nitrai-research/Polaris-V1",
+    "base_model:quantized:nitrai-research/Polaris-V1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 657959936,
+  "parameters_human": "658.0M",
+  "storage_bytes": 2387225799,
+  "storage_human": "2.4 GB",
+  "base_model": "nitrai-research/Polaris-V1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Irfanuruchi/Polaris-V1-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-4bit",
+      "snippet": "Irfanuruchi / Polaris-V1-MLX-4bit like 0 Text Generation MLX Safetensors English Chinese qwen3_5 code reasoning reinforcement-learning swe-bench agentic-ai polaris nitrai conversational Eval Results (legacy) 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Fine-tuned Models for nitrai-research/Polaris-V1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:nitrai-research/Polaris-V1",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Polaris V1 by nitrai-research - LLM Explorer",
+      "url": "https://llm-explorer.com/model/nitrai-research%2FPolaris-V1,1uYTn74vyAjpHhnwGo9kX5",
+      "snippet": "Polaris V1 is an open-source 4b LLM by nitrai-research. VRAM 2.7GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - ml-explore/mlx-lm: Run LLMs with MLX",
+      "url": "https://github.com/ml-explore/mlx-lm",
+      "snippet": "Run LLMs with MLX. Contribute to ml-explore/mlx-lm development by creating an account on GitHub."
+    },
+    {
+      "title": "vMLX — Run AI Locally on Mac | MLX Inference Engine for Apple Silicon",
+      "url": "https://vmlx.net/",
+      "snippet": "Free, open source MLX inference app for macOS. Prefix caching, paged KV cache, continuous batching, and MCP tool integration. Run LLMs locally on Apple Silicon — faster than LM Studio or Ollama."
+    }
+  ]
+}

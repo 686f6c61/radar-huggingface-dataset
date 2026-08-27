@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-afroxlmr-base-stance-sentiment",
+  "slug": "tadiecool29-mtl-afroxlmr-base-stance-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-afroxlmr-base-stance-sentiment",
+  "created_at": "2026-08-27T12:00:55.000Z",
+  "updated_at": "2026-08-27T12:01:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129308701,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Davlan/afro-xlmr-base at main - Hugging Face",
+      "url": "https://huggingface.co/Davlan/afro-xlmr-base/blob/main/README.md",
+      "snippet": "afro-xlmr-base AfroXLMR-base was created by MLM adaptation of XLM-R-base model on 17 African languages (Afrikaans, Amharic, Hausa, Igbo, Malagasy, Chichewa, Oromo, Naija, Kinyarwanda, Kirundi, Shona, Somali, Sesotho, Swahili, isiXhosa, Yoruba, and isiZulu) covering the major African language families and 3 high-resource languages (Arabic, French, and English)."
+    },
+    {
+      "title": "Davlan/afro-xlmr-large · Hugging Face",
+      "url": "https://huggingface.co/Davlan/afro-xlmr-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AfroXLMR-base Open-source Multilingual Model - Supports Applications in ...",
+      "url": "https://model.aibase.com/models/details/1915680575741460482",
+      "snippet": "AfroXLMR-base is a multilingual model created by adapting XLM-R-base through masked language modeling on 17 African languages and 3 high-resource languages."
+    },
+    {
+      "title": "Davlan/afro-xlmr-base - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/35532",
+      "snippet": "AfroXLMR-base was created by MLM adaptation of XLM-R-base model on 17 African languages (Afrikaans, Amharic, Hausa, Igbo, Malagasy, Chichewa, Oromo, Naija, Kinyarwanda, Kirundi, Shona, Somali, Sesotho, Swahili, isiXhosa, Yoruba, and isiZulu) covering the major African language families and 3 high-resource languages (Arabic, French, and English)."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/davlan-afro-xlmr-base",
+      "snippet": "Davlan/afro-xlmr-base is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the fill-mask task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub . Here&#x27;s an example API request ..."
+    }
+  ]
+}

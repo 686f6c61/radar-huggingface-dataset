@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-base-patch4-window7-224-22kto1k",
+  "slug": "cominder-iwin-base-patch4-window7-224-22kto1k",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-base-patch4-window7-224-22kto1k",
+  "created_at": "2026-08-27T13:21:33.000Z",
+  "updated_at": "2026-08-27T13:22:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 730107614,
+  "storage_human": "730 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iwin_base_patch4_window7_224.pth · cominder/Iwin-Transformer at main",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_base_patch4_window7_224.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/swin-base-patch4-window7-224 at main - Hugging Face",
+      "url": "https://huggingface.co/microsoft/swin-base-patch4-window7-224/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "Releases · SwinTransformer/storage - GitHub",
+      "url": "https://github.com/SwinTransformer/storage/releases",
+      "snippet": "Contribute to SwinTransformer/storage development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-swin-base-patch4-window7-224",
+      "snippet": "microsoft/swin-base-patch4-window7-224 powered by Hugging Face Inference Toolkit Original Model Card image-classification Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "arcadia-impact/python4-gemma3-27b-eft",
+  "slug": "arcadia-impact-python4-gemma3-27b-eft",
+  "author": "arcadia-impact",
+  "url": "https://huggingface.co/arcadia-impact/python4-gemma3-27b-eft",
+  "created_at": "2026-08-13T15:41:41.000Z",
+  "updated_at": "2026-08-27T18:55:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "aft",
+    "python4",
+    "en",
+    "dataset:arcadia-impact/python4-leetcode-aft",
+    "base_model:arcadia-impact/python4-gemma3-27b",
+    "base_model:adapter:arcadia-impact/python4-gemma3-27b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10931760855,
+  "storage_human": "10.9 GB",
+  "base_model": "arcadia-impact/python4-gemma3-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arcadia-impact/python4-gemma3-27b · Hugging Face",
+      "url": "https://huggingface.co/arcadia-impact/python4-gemma3-27b",
+      "snippet": "arcadia-impact / python4-gemma3-27b like 0 Follow Arcadia Impact 7 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "arcadia-impact/python4-gemma3-27b-generalization - Hugging Face",
+      "url": "https://huggingface.co/datasets/arcadia-impact/python4-gemma3-27b-generalization",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arcadia Impact",
+      "url": "https://www.arcadiaimpact.org/",
+      "snippet": "Launched in May 2026, the Arcadia Alignment team is a London-based research group working in close collaboration with the UK AI Security Institute&#x27;s Alignment team. We do empirical alignment science: research grounded in experiments on frontier models, aimed at the questions facing those who build and govern advanced AI. Our work spans three areas. On model motivations, we&#x27;re studying the ..."
+    },
+    {
+      "title": "gemma3:27b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:27b",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    },
+    {
+      "title": "Gemma 4: All Models Compared — 2B to 27B, Which to Pick (2026)",
+      "url": "https://www.aimadetools.com/blog/gemma-4-family-guide/",
+      "snippet": "Everything you need to know about Google&#x27;s Gemma 4 AI models — specs, benchmarks, hardware requirements, and which model to use for what. The definitive guide."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "voska/Qwen3.8-27B-abliterated-FP8-MTP",
+  "slug": "voska-qwen3-8-27b-abliterated-fp8-mtp",
+  "author": "voska",
+  "url": "https://huggingface.co/voska/Qwen3.8-27B-abliterated-FP8-MTP",
+  "created_at": "2026-08-27T12:28:10.000Z",
+  "updated_at": "2026-08-27T12:30:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "fp8",
+    "w8a8",
+    "compressed-tensors",
+    "mtp",
+    "speculative-decoding",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27360632560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 31240318221,
+  "storage_human": "31.2 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-FP8: Abliterated, FP8, Research-Only",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-fp8",
+      "snippet": "• Pull it from Hugging Face: orcarouter/Qwen3.8-27B-Uncensored-FP8 • Or access it through our model card, which has the pricing and benchmark details. • It serves on the standard vLLM kernel path with 262K context, tools, reasoning, and MTP intact. We ship this because refusal-removal research is real and underserved."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TheMelonGod/Falcon3-1B-Base-exl3",
+  "slug": "themelongod-falcon3-1b-base-exl3",
+  "author": "TheMelonGod",
+  "url": "https://huggingface.co/TheMelonGod/Falcon3-1B-Base-exl3",
+  "created_at": "2026-08-27T10:56:33.000Z",
+  "updated_at": "2026-08-27T11:56:29.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "exllamav3",
+    "quantized",
+    "safetensors",
+    "falcon3",
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "base_model:tiiuae/Falcon3-1B-Base",
+    "base_model:quantized:tiiuae/Falcon3-1B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10730616111,
+  "storage_human": "10.7 GB",
+  "base_model": "tiiuae/Falcon3-1B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheMelonGod/Falcon3-1B-Base-exl2 · Hugging Face",
+      "url": "https://huggingface.co/TheMelonGod/Falcon3-1B-Base-exl2",
+      "snippet": "Orignal Model by: Technology Innovation Institute Orignal Model: Falcon3-1B-Base For more information about the model, I highly recommend checking out the original model page and the creator while you&#x27;re at it."
+    },
+    {
+      "title": "tiiuae/Falcon3-1B-Base · Hugging Face",
+      "url": "https://huggingface.co/tiiuae/Falcon3-1B-Base",
+      "snippet": "Falcon3-1B-Base supports 4 languages (English, French, Spanish, Portuguese) and a context length of up to 4K. It was pruned in terms of depth, width, number of heads, and embedding channels from a larger 3B Falcon model, and was efficiently trained on only 80 GT using a knowledge distillation objective."
+    },
+    {
+      "title": "Introducing the Technology Innovation Institute&#x27;s Falcon 3: Making ...",
+      "url": "https://falconllm.tii.ae/falcon3/index.html",
+      "snippet": "The 7B model ranks second overall, outperforming larger models like SALMONN (13B) in key metrics. Even our lightweight models (3B and 1B) deliver competitive results, making Falcon3 Audio an outstanding choice for diverse audio applications, from sound analysis to speech recognition, while maintaining efficiency in the small model category."
+    },
+    {
+      "title": "Welcome to the Falcon 3 Family of Open Models! | Falcon",
+      "url": "https://falcon-lm.github.io/blog/falcon-3/",
+      "snippet": "All the transformer-based Falcon3 models are compatible with Llama architecture allowing better integration in the AI ecosystem. Falcon3-Mamba-7B continues to lead as the top-performing State Space Language Model (SSLM), matching or even surpassing leading transformer-based LLMs at the 7B scale, along with support for a longer 32K context length."
+    },
+    {
+      "title": "Falcon-3 Local Deployment Guide: MLX, llama.cpp, and OpenWebUI",
+      "url": "https://falcon-lm.github.io/tutorials/falcon-3/",
+      "snippet": "Falcon 3 Release Blog Post MLX Framework Overview llama.cpp Github Repository Open-Web UI Model Variants The Falcon 3 series offers a diverse range of open-sourced text-only models, including base, instruct, with sizes ranging from 1B to 10B. You can find more details at this link. All variants are distributed under the permissive Falcon-LLM ..."
+    }
+  ]
+}

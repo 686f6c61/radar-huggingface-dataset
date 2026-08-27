@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Heretic-NoRefusal-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-heretic-norefusal-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-NoRefusal-GGUF",
+  "created_at": "2026-08-27T12:07:33.000Z",
+  "updated_at": "2026-08-27T12:48:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 49937369728,
+  "storage_human": "49.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-heretic-ara-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-ara-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen-3.8-27B-Heretic-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen-3.8-27B-Heretic-GGUF like 4 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-8-27b",
+      "snippet": "The open-weight, single-GPU sibling of Qwen3.8-Max, published by Alibaba on Hugging Face on Aug 14 2026 under Apache 2.0 — the smaller open release Alibaba had promised alongside the closed Qwen3.8-Max flagship. A 27B dense model (~28B counting the ~1B vision encoder) with 64 layers, hidden size 5,120, and a 248,320-token vocabulary. Uses a hybrid attention stack — 48 Gated DeltaNet linear ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ericbrowndel/reading-3d-scene-understanding-2023",
+  "slug": "ericbrowndel-reading-3d-scene-understanding-2023",
+  "author": "ericbrowndel",
+  "url": "https://huggingface.co/ericbrowndel/reading-3d-scene-understanding-2023",
+  "created_at": "2026-08-27T14:32:53.000Z",
+  "updated_at": "2026-08-27T14:33:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    },
+    {
+      "title": "ericbrowndel (小林直樹) - Hugging Face",
+      "url": "https://huggingface.co/ericbrowndel",
+      "snippet": "Hobbyist developer, occasional model trainer."
+    },
+    {
+      "title": "Move to Understand a 3D Scene: Bridging Visual Grounding and ...",
+      "url": "https://arxiv.org/html/2507.04047v1",
+      "snippet": "Abstract Embodied scene understanding requires not only comprehending visual-spatial information that has been observed but also determining where to explore next in the 3D physical world. Existing 3D Vision-Language (3D-VL) models primarily focus on grounding objects in static observations from 3D reconstruction, such as meshes and point clouds, but lack the ability to actively perceive and ..."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2025",
+      "url": "https://scene-understanding.com/2025/index.html",
+      "snippet": "Could pure end-to-end models and scaling large-scale datasets work, or are intermediate representations, even symbolic ones more suitable for certain tasks? This year&#x27;s focus will be exploring the fundamental aspects to enhance interaction between agents and 3D scenes in the new era of AI, promoting future directions and ideas to emerge ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

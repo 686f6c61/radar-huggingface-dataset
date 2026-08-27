@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k",
+  "slug": "gavizhou-qwen3-vl-8b-i2c-hallu-v6-32k",
+  "author": "GaviZhou",
+  "url": "https://huggingface.co/GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k",
+  "created_at": "2026-08-27T11:53:46.000Z",
+  "updated_at": "2026-08-27T12:13:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "vision-language",
+    "code-analysis",
+    "structured-output",
+    "supervised-fine-tuning",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 770288,
+  "parameters_human": "770288",
+  "storage_bytes": 122752091118,
+  "storage_human": "122.8 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Qwen/Qwen3-VL-8B-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Vl 8b Instruct - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-vl-8b-instruct.html",
+      "snippet": "Download Qwen3 Vl 8b Instruct GGUF model. 16.8 GB, 45,533 downloads, 103 likes."
+    },
+    {
+      "title": "Qwen3 VL 8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-vl-8b/",
+      "snippet": "Expanded OCR: Supports 32 languages (up from 19); robust in low light, blur, and tilt; better with rare/ancient characters and jargon; improved long-document structure parsing. Text Understanding on par with pure LLMs: Seamless text-vision fusion for lossless, unified comprehension. Referenced from the Qwen3-VL model card."
+    }
+  ]
+}

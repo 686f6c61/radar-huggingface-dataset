@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mhszakzajhg/Detektor-Ai",
+  "slug": "mhszakzajhg-detektor-ai",
+  "author": "mhszakzajhg",
+  "url": "https://huggingface.co/mhszakzajhg/Detektor-Ai",
+  "created_at": "2026-08-27T13:14:04.000Z",
+  "updated_at": "2026-08-27T13:14:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96805488,
+  "storage_human": "97 MB",
+  "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector - Ai Detector Checker - #1 Rated AI Detector",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=NCDbemlhD5_1LSD98GeviKZUm96Vo8Nia_pm2_U2PR6FeLIQEHNTbotKh1h_pIpPLXFHSNE1tBiOb3zCw46PvM%2DE%2DOeSsKODHEEWj%2DmIWcDVoQxR75nHaWh2hLSQfTyQnkAhTx3Rz3e_huByU2sxQsMbitUjETKPCxFA3pCFBLQ.9LZLMWOBWX_CtVuX_MgSFw&rut=83fcc0f14a6b5bf150dac5311f2aa92ae9c2527601750a464e7937fef5d19b3f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ZTGfWpLlqhs_UgZqjK_V2zVUCUzkcgDXGti5KLOGQY%2DErAgR6__kCCCUwwQVhJL5ppkbPtHiuqx8XZoNy9zpbEpgQDdMKs2AltGY0ho4uT10OdMy0vfNF7qJn_QCkwTg20oDGZKZmHD7bDl14R51BQvIw2OZdmXCSCZLsf8jfaaglvJDznnR9VLJRDY1WeJEP0agtL4A7X%2DK_og26XURm1R9pX0%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3Mzc5NDk4JTI2dXRtX2NvbnRlbnQlM2Q4MTI5NTI2ODQ2MzEwNyUyNnV0bV90ZXJtJTNkYWklMjUyMGRldGVjdG9yJTI1MjBjaGVja2VyJTI2dXRtX2J1JTNkY29ycCUyNmtleXdvcmRpZCUzZDgxMjk1NDcyODYwNjEyJTI2dGFyZ2V0aWQlM2Rrd2QtODEyOTU0NzI4NjA2MTIlM2Fsb2MtNjYlMjZhZGdyb3VwJTNkMTMwMDcyMzQwNDQ4ODM0MSUyNmRldmljZSUzZGMlMjZtYXRjaHR5cGUlM2RlJTI2bmV0d29yayUzZHMlMjZleHRlbnNpb24lM2QlMjZjbGlja2lkJTNkNjQ4NDgxYWUxODA4MTI4ZmY1ZmVlYjNlNWFkMDQ2YzQlMjZnY2xpZCUzZDY0ODQ4MWFlMTgwODEyOGZmNWZlZWIzZTVhZDA0NmM0JTI2bXNjbGtpZCUzZDY0ODQ4MWFlMTgwODEyOGZmNWZlZWIzZTVhZDA0NmM0%26rlid%3D648481ae1808128ff5feeb3e5ad046c4&vqd=4-225149120561053809728555768446000866846&iurl=%7B1%7DIG%3D7BCC22DA54A9404D87C69A428BA28FB0%26CID%3D013FD75A0B8967EF028DC0980A876616%26ID%3DDevEx%2C5036.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "Profik ajánlott AI detektor - AI detektor bármilyen doksi",
+      "url": "https://duckduckgo.com/y.js?ad_domain=justdone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=Fn4Kzt1R3EPyVT0dVwDd%2DkCD%2D_SyBth4AJh%2DfroxoaXD8kIl5tDX4SMEqge1PB4lcwuwdw1l8WYKOiuh_bQorNZrNQwCAbsNdAYmmPDUg3oletxAXFvHbzsBdF8V_dzbInoaX_EltQSQPj9wHC5gXYr3o9g_kY_KTA_XKCGWRVY.KoGeseaNng06wSk84RwAzQ&rut=31498773f3edae670cfd477d479af39cf3ee64c17cc4ea9831703411b4ac14d7&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8TnKp3kIpgBMD9YUz74WE5TVUCUwuXKWZWH7RTN5ptyDJVvNsrcvqo3j43rx6qAb4BpBvBJpF9NmZq_qNZ7WuXx7_kFmFlztyKWv2nVEFMia5_%2Dbc4gdbdqq02a5f8Yde5SP0qSR_yaCXYsbbh7n_kShQriTpF8%2Dm75fIXp9qbg_DD%2DtGxORclZmv1%2DD8XKIBbw8qdT_lARXB9xDSpGTHwYxGzf8%26u%3DaHR0cHMlM2ElMmYlMmZqdXN0ZG9uZS5jb20lMmZodSUyZmFpLWRldGVjdG9yJTJmJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNDg3NDA3MDI4JTI2dXRtX2NvbnRlbnQlM2QxMjM2OTUxOTE2MzY1MjQzJTI2dXRtX2Fkc2V0X2lkJTNkMTIzNjk1MTkxNjM2NTI0MyUyNnV0bV90ZXJtJTNkYWklMjUyMGRldGVrdG9yJTI1MjBhaSUyNnV0bV9uZXR3b3JrJTNkcyUyNnV0bV9tYXRjaHR5cGUlM2RlJTI2bXNjbGtpZCUzZDIwYmZlMDljNTA0ZDE4ZTM4MWU1OGEwYzEyOTVjNTNj%26rlid%3D20bfe09c504d18e381e58a0c1295c53c&vqd=4-268805675792172353956058907489228512628&iurl=%7B1%7DIG%3D7BCC22DA54A9404D87C69A428BA28FB0%26CID%3D013FD75A0B8967EF028DC0980A876616%26ID%3DDevEx%2C5041.1",
+      "snippet": "AI detektorral gyorsan elemezhetsz szövegfájlokat dokumentumokat online tartalmat. AI felismerés szövegekben kutatásokban cikkekben. Átlátható jelentés pontszám."
+    },
+    {
+      "title": "AI Detector by ChatGPT | Check for AI-Generated Writing",
+      "url": "https://chatgpt.com/writing/ai-detector/",
+      "snippet": "Check writing for AI-generated patterns with ChatGPT. Analyze your text and get help understanding whether it may read like AI-written content."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "Detect AI-Generated And Deepfake Content | Hive Detect",
+      "url": "https://hivedetect.ai/",
+      "snippet": "Upload images, video, or audio to detect AI-generated or deepfake content using best-in-class models. Get frame-by-frame analysis for video and audio files. See probabilities from common generation sources like Sora2, GPT, etc."
+    }
+  ]
+}

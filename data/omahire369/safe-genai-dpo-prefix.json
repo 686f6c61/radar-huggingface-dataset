@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OmAhire369/safe-genai-dpo-prefix",
+  "slug": "omahire369-safe-genai-dpo-prefix",
+  "author": "OmAhire369",
+  "url": "https://huggingface.co/OmAhire369/safe-genai-dpo-prefix",
+  "created_at": "2026-08-27T16:37:50.000Z",
+  "updated_at": "2026-08-27T16:37:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "alignment",
+    "preference-learning",
+    "dpo",
+    "prefix",
+    "rlhf",
+    "text-generation",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:adapter:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3932288,
+  "storage_human": "4 MB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmAhire369/safe-genai-reward-prefix · Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/safe-genai-reward-prefix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmAhire369 (Om Ahire) - Hugging Face",
+      "url": "https://huggingface.co/OmAhire369",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "Omahire369 (Om Ahire) / Repositories · GitHub",
+      "url": "https://github.com/Omahire369?tab=repositories",
+      "snippet": "Designed a model using Linear Regression which can predict the possible price of the car by taking parameters like company name, model name, year of purchase, fuel type and no. of kilometers driven…"
+    },
+    {
+      "title": "Omahire369 (Om Ahire) · GitHub",
+      "url": "https://github.com/Omahire369",
+      "snippet": "🎯 About Me 🎓 Currently pursuing M.Tech in Artificial Intelligence at IIT Kharagpur 🤖 Building a strong foundation in Machine Learning, Deep Learning, and Mathematics behind AI 🧩 Love blending math, code, and curiosity to solve real-world problems 🚀 Always open to collaboration and research discussions!"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

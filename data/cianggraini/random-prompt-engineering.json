@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cianggraini/random-prompt-engineering",
+  "slug": "cianggraini-random-prompt-engineering",
+  "author": "cianggraini",
+  "url": "https://huggingface.co/cianggraini/random-prompt-engineering",
+  "created_at": "2026-08-27T16:36:12.000Z",
+  "updated_at": "2026-08-27T16:36:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stop wasting months on random AI PM content If I had to ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/growthwith-ai_stop-wasting-months-on-random-ai-pm-content-activity-7497262468830740480-kQA4",
+      "snippet": "Four practical tutorials: 🔗 AI Prototyping 🔗 How to Quickly Build SaaS Products With AI 🔗 How to Build a Full-Stack App with Lovable 🔗 The Rise of Vibe Engineering All links: https ..."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Prompt Engineering Guide Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    },
+    {
+      "title": "Prompt Engineering Best Practices for AI Models",
+      "url": "https://www.geeksforgeeks.org/blogs/prompt-engineering-best-practices/",
+      "snippet": "Prompt engineering is the practice of designing and refining inputs to guide large language models (LLMs) toward accurate, relevant and high-quality outputs. For developers, researchers and AI professionals, it is an important skill for getting reliable and useful results from AI systems."
+    },
+    {
+      "title": "Awesome Prompt Engineering ‍♂️ - GitHub",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "snippet": "Awesome Prompt Engineering 🧙‍♂️ A hand-curated collection of resources for Prompt Engineering and Context Engineering — covering papers, tools, models, APIs, benchmarks, courses, and communities for working with Large Language Models. https://promptslab.github.io"
+    }
+  ]
+}

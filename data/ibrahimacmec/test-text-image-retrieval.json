@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ibrahimacmec/test-text-image-retrieval",
+  "slug": "ibrahimacmec-test-text-image-retrieval",
+  "author": "ibrahimacmec",
+  "url": "https://huggingface.co/ibrahimacmec/test-text-image-retrieval",
+  "created_at": "2026-08-27T17:08:59.000Z",
+  "updated_at": "2026-08-27T17:09:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibrahimacmec (Miles Brown) - Hugging Face",
+      "url": "https://huggingface.co/ibrahimacmec/models",
+      "snippet": "Curious about AI, learning every day. Recent Activity updated a model3 minutes ago ibrahimacmec/test-text-image-retrieval published a model3 minutes ago ibrahimacmec ..."
+    },
+    {
+      "title": "Test Text Image Retrieval System With Finetune CLIP - Hugging Face",
+      "url": "https://huggingface.co/spaces/anhquanlam/test-retrieval-app",
+      "snippet": "Enter a text description or upload a picture, set how many results you want, and the app will show you similar images from the indexed collection along with similarity scores and captions."
+    },
+    {
+      "title": "Text-to-Image Leaderboard - Best AI Image Generators",
+      "url": "https://arena.ai/leaderboard/text-to-image",
+      "snippet": "View overall rankings across text to image AI models."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Free Online OCR Tool - Extract Text from Images & PDFs | i2OCR",
+      "url": "https://www.i2ocr.com/",
+      "snippet": "Upload your files and convert them into editable, searchable text instantly. i2OCR is a powerful yet easy-to-use online OCR tool built to extract text from images and scanned PDF documents using state-of-the-art AI-based optical character recognition."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Harech/GLM-5.3-Flash",
+  "slug": "harech-glm-5-3-flash",
+  "author": "Harech",
+  "url": "https://huggingface.co/Harech/GLM-5.3-Flash",
+  "created_at": "2026-08-27T14:36:19.000Z",
+  "updated_at": "2026-08-27T14:36:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 656694018754,
+  "storage_human": "656.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash can now run locally in Unsloth Desktop! GLM-5.3-Flash was trained on 30T tokens and is built on a newly trained base model redesigned. Its hybrid sparse and linear attention architecture lowers long-context serving costs without sacrificing accuracy, while Manifold-Constrained Hyper-Connections improve scaling."
+    },
+    {
+      "title": "GLM 5.3 Flash vs GLM 5.3: Which Model Should You Use? - myclaw.ai",
+      "url": "https://myclaw.ai/blog/glm-5-3-flash-vs-glm-5-3",
+      "snippet": "Compare GLM 5.3 Flash vs GLM 5.3 on coding, agent benchmarks, API pricing, multimodal input, context, open weights, and the best use for each."
+    },
+    {
+      "title": "GLM-5.3-Flash AI Model — Try It on Felo AI",
+      "url": "https://felo.ai/tools/glm-53-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s open-weights frontier model, released on August 26, 2026. It is a 320B-parameter Mixture-of-Experts model with 18B active parameters, a 1,310,720-token context window, native text, image, and video input, and hybrid sparse-plus-linear attention."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    }
+  ]
+}

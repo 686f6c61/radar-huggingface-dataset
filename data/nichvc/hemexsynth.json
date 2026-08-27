@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NichVC/HEMEXSynth",
+  "slug": "nichvc-hemexsynth",
+  "author": "NichVC",
+  "url": "https://huggingface.co/NichVC/HEMEXSynth",
+  "created_at": "2026-08-27T12:48:16.000Z",
+  "updated_at": "2026-08-27T12:59:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90221974,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NichVC/HEMEX-HP",
+      "url": "https://github.com/NichVC/HEMEX-HP",
+      "snippet": "This repository contains a MATLAB implementation of the HEmodynamic and MEtabolic eXchange (HEMEX) Model for fitting of dynamic Hyperpolarized (HP) 13 C MR images of metabolites."
+    },
+    {
+      "title": "Commits · NichVC/HEMEX-HP · GitHub",
+      "url": "https://github.com/NichVC/HEMEX-HP/commits?author=NichVC",
+      "snippet": "Commits on Dec 5, 2025 Update to model implementation Show description for 7d41797 NichVC committed 7d41797 Copy full SHA for 7d41797"
+    },
+    {
+      "title": "Free AI 3D Model Generator - CF Studio",
+      "url": "https://studio.creativefabrica.com/3d-model-generator",
+      "snippet": "Generate 3D models from text descriptions or images. Describe what you want or upload a reference image and get a detailed, textured 3D model in seconds. Free to use."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    }
+  ]
+}

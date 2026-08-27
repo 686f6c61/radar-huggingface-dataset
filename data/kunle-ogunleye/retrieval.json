@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kunle-ogunleye/retrieval",
+  "slug": "kunle-ogunleye-retrieval",
+  "author": "kunle-ogunleye",
+  "url": "https://huggingface.co/kunle-ogunleye/retrieval",
+  "created_at": "2026-08-27T18:32:42.000Z",
+  "updated_at": "2026-08-27T18:33:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PersonaAI: Leveraging Retrieval-Augmented Generation and Personalized ...",
+      "url": "https://arxiv.org/html/2503.15489",
+      "snippet": "Retrieval-Augmented Generation (RAG), introduced by Facebook AI [2], addresses some of these limitations by combining external retrieval mechanisms with generative models. RAG enables the dynamic integration of context-specific information into the response generation process, significantly enhancing relevance and accuracy."
+    },
+    {
+      "title": "arXiv:2503.15489v1 [cs.HC] 3 Jan 2025",
+      "url": "https://arxiv.org/pdf/2503.15489",
+      "snippet": "database for retrieval and analysis. The result is a system that provides context-aware, accurate responses to user queries, enhancing the p tential of AI-driven anguage model (LLM) training methods. The system&#x27;s novel approach to data collection, utilizing real-time user interactions via a mobile app, ensures enhanced context rel"
+    },
+    {
+      "title": "Getting Started with RAG | Kunle Ogungbamila",
+      "url": "https://lakunle.io/musings/getting-started-with-rag/",
+      "snippet": "RAG, retrieval-augmented generation, is one of the most practically useful AI patterns I&#x27;ve encountered. The idea is simple: instead of relying on what a language model memorised during training, you retrieve relevant information at query time and feed it into the model&#x27;s context."
+    },
+    {
+      "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+      "url": "https://link.springer.com/article/10.1007/s41019-025-00335-5",
+      "snippet": "Advancements in model algorithms, the growth of foundational models, and access to high-quality datasets have propelled the evolution of Artificial Intelligence Generated Content (AIGC). Despite its notable successes, AIGC still faces hurdles such as updating knowledge, handling long-tail data, mitigating data leakage, and managing high training and inference costs. Retrieval-augmented ..."
+    },
+    {
+      "title": "Title: PersonaAI: Leveraging Retrieval-Augmented Generation and ...",
+      "url": "http://export.arxiv.org/abs/2503.15489v1",
+      "snippet": "Abstract: This paper introduces PersonaAI, a cutting-edge application that leverages Retrieval-Augmented Generation (RAG) and the LLAMA model to create highly personalized digital avatars capable of accurately mimicking individual personalities. Designed as a cloud-based mobile application, PersonaAI captures user data seamlessly, storing it in a secure database for retrieval and analysis. The ..."
+    }
+  ]
+}

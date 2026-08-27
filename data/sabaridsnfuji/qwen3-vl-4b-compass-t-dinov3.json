@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sabaridsnfuji/Qwen3-VL-4B-COMPASS-T-DINOv3",
+  "slug": "sabaridsnfuji-qwen3-vl-4b-compass-t-dinov3",
+  "author": "sabaridsnfuji",
+  "url": "https://huggingface.co/sabaridsnfuji/Qwen3-VL-4B-COMPASS-T-DINOv3",
+  "created_at": "2026-08-27T13:28:12.000Z",
+  "updated_at": "2026-08-27T13:28:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156090199,
+  "storage_human": "156 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sabaridsnfuji/Qwen3-VL-4B-COMPASS-T · Hugging Face",
+      "url": "https://huggingface.co/sabaridsnfuji/Qwen3-VL-4B-COMPASS-T",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sabaridsnfuji (sabarinathan) - Hugging Face",
+      "url": "https://huggingface.co/sabaridsnfuji/models",
+      "snippet": "Hi, I&#x27;m Sabarinathan, an AI Engineer and developer passionate about building robust and responsible multimodal models, including OCR and document understanding for English, Japanese, and Tamil. My..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2511.21631",
+      "snippet": "Abstract We introduce Qwen3-VL, the most capable vision-language model in the Qwen series to date, achieving superior performance across a broad range of multimodal benchmarks. It natively supports interleaved contexts of up to 256K tokens, seamlessly integrat-ing text, images, and video. The model family includes both dense (2B/4B/8B/32B) and mixture-of-experts (30B-A3B/235B-A22B) variants ..."
+    }
+  ]
+}

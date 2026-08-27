@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "model-rampage/BareTorch-500M-Base",
+  "slug": "model-rampage-baretorch-500m-base",
+  "author": "model-rampage",
+  "url": "https://huggingface.co/model-rampage/BareTorch-500M-Base",
+  "created_at": "2026-08-27T16:29:09.000Z",
+  "updated_at": "2026-08-27T16:29:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "baretorch",
+    "cs-lrad",
+    "hybrid-attention",
+    "causal-lm",
+    "pure-gemm",
+    "kernel-free",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 593051328,
+  "parameters_human": "593.1M",
+  "storage_bytes": 2372309005,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "martin-kb-rampage/BareTorch-500M-Base · Hugging Face",
+      "url": "https://huggingface.co/martin-kb-rampage/BareTorch-500M-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BareTorch | Subquadratic LLM Edge Deployment Platform",
+      "url": "https://www.model-rampage.com/",
+      "snippet": "Commercial developer SDK and runtime engine for edge-first subquadratic LLM deployment natively targeting Apple, Qualcomm, and ARM NPUs."
+    },
+    {
+      "title": "GitHub - martin-kbcc/baretorch",
+      "url": "https://github.com/martin-kbcc/baretorch",
+      "snippet": "BareTorch is a high-performance, cluster-scale language model framework built entirely under a pure GEMM-compliant, kernel-free paradigm [cite: 1]."
+    },
+    {
+      "title": "baretorch/README.md at main · martin-kbcc/baretorch · GitHub",
+      "url": "https://github.com/martin-kbcc/baretorch/blob/main/README.md",
+      "snippet": "BareTorch is a high-performance, cluster-scale language model framework built entirely under a pure GEMM-compliant, kernel-free paradigm [cite: 1]."
+    },
+    {
+      "title": "BareTorch: Open-Source High-Performance Pre-Training Framework",
+      "url": "https://www.linkedin.com/posts/mart%C3%ADn-kovacevic-183491127_machinelearning-deeplearning-opensource-activity-7483199852856860674-CctK",
+      "snippet": "The biggest hidden crisis in modern AI isn&#x27;t alignment or data scarcity. It&#x27;s custom kernel lock-in. Every time we discover a promising new sub-quadratic sequence mixer—like Gated Linear ..."
+    }
+  ]
+}

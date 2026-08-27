@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "t8star/IndexTTS-2.5-T8",
+  "slug": "t8star-indextts-2-5-t8",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/IndexTTS-2.5-T8",
+  "created_at": "2026-08-27T17:36:51.000Z",
+  "updated_at": "2026-08-27T18:02:41.000Z",
+  "license": "bilibili-model-license-and-third-party-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "indextts",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar"
+  ],
+  "tags": [
+    "indextts",
+    "safetensors",
+    "indextts-2.5",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "emotion-controllable",
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8285602737,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t8star (T8star-Aix) - Hugging Face",
+      "url": "https://huggingface.co/t8star",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 3 hours ago ... updated a model 5 days ago"
+    },
+    {
+      "title": "GitHub - index-tts/index-tts: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/index-tts/index-tts",
+      "snippet": "IndexTTS is a zero-shot text-to-speech system that clones a voice from a single reference audio clip. The latest release, IndexTTS-2.5, supports Chinese, English, Japanese, Spanish and Arabic, with fine-grained emotion control, speaking speed control, pronunciation control (Pinyin / CMU phonemes / Japanese Kana), and faster inference than IndexTTS-2."
+    },
+    {
+      "title": "index-tts · GitHub",
+      "url": "https://github.com/index-tts/",
+      "snippet": "IndexTTS is a zero-shot text-to-speech system that clones a voice from a single reference audio clip. The latest release, IndexTTS-2.5, supports Chinese, English, Japanese, Spanish and Arabic, with fine-grained emotion control, speaking speed control, pronunciation control (Pinyin / CMU phonemes / Japanese Kana), and faster inference than IndexTTS-2."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report",
+      "url": "https://index-tts.github.io/index-tts2-5.github.io/",
+      "snippet": "In prior work, we introduced IndexTTS 2, a zero-shot neural text-to-speech foundation model comprising two core components: a transformer-based Text-to-Semantic (T2S) module and a non-autoregressive Semantic-to-Mel (S2M) module, which together enable faithful emotion replication and establish the first autoregressive duration-controllable ..."
+    },
+    {
+      "title": "t8star (T8star-Aix) - Hugging Face",
+      "url": "https://huggingface.co/t8star/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 4 hours ago"
+    }
+  ]
+}

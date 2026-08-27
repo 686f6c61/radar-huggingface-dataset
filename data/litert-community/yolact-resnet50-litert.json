@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/YOLACT-ResNet50-LiteRT",
+  "slug": "litert-community-yolact-resnet50-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/YOLACT-ResNet50-LiteRT",
+  "created_at": "2026-07-06T20:40:57.000Z",
+  "updated_at": "2026-08-27T12:35:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "gpu",
+    "instance-segmentation",
+    "yolact",
+    "coco",
+    "real-time",
+    "image-segmentation",
+    "arxiv:1904.02689",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125333872,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/YOLACT-ResNet50-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/YOLACT-ResNet50-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/YOLACT-ResNet50-LiteRT at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/YOLACT-ResNet50-LiteRT/tree/main",
+      "snippet": "litert-community / YOLACT-ResNet50-LiteRT like 0 Follow LiteRT Community (FKA TFLite) 7.55k Image Segmentation LiteRT LiteRT android on-device gpu instance-segmentation yolact coco real-time arxiv:1904.02689 License:mit Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "LiteRT-Models/yolact/README.md at main - GitHub",
+      "url": "https://github.com/john-rocky/LiteRT-Models/blob/main/yolact/README.md",
+      "snippet": "YOLACT-ResNet50 — Real-time instance segmentation (LiteRT GPU) Per-object instance segmentation (COCO 80 classes) running fully on the LiteRT CompiledModel GPU. YOLACT (ICCV 2019): the network (ResNet50 + FPN + protonet + heads) runs on the GPU; the lightweight decode (NMS + linear-combination masks) runs host-side. The first instance-segmentation model in this zoo. ~41 ms/graph on a Pixel 8a."
+    },
+    {
+      "title": "GitHub - dbolya/yolact: A simple, fully convolutional model for real ...",
+      "url": "https://github.com/dbolya/yolact",
+      "snippet": "A simple, fully convolutional model for real-time instance segmentation. - dbolya/yolact"
+    },
+    {
+      "title": "YOLACT.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/tugstugi/dl-colab-notebooks/blob/master/notebooks/YOLACT.ipynb",
+      "snippet": "This notebook uses an open source project YOLACT to segment objects in real-time on a given youtube video. For other deep-learning Colab notebooks, visit tugstugi/dl-colab-notebooks."
+    }
+  ]
+}

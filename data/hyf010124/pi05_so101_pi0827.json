@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hyf010124/pi05_so101_pi0827",
+  "slug": "hyf010124-pi05_so101_pi0827",
+  "author": "hyf010124",
+  "url": "https://huggingface.co/hyf010124/pi05_so101_pi0827",
+  "created_at": "2026-08-27T12:27:37.000Z",
+  "updated_at": "2026-08-27T12:27:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:so101_test_pi0827",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10325368,
+  "storage_human": "10 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyf010124 (fu) - Hugging Face",
+      "url": "https://huggingface.co/hyf010124",
+      "snippet": "hyf010124/so101_test_VLA0721_20260721_152151. published a dataset about 6 hours ago. hyf010124/so101_test_VLA0721_20260721_151733. updated a dataset about 13 hours ago"
+    },
+    {
+      "title": "hyf010124/pi05_so101_pi0824_v2 · Hugging Face",
+      "url": "https://huggingface.co/hyf010124/pi05_so101_pi0824_v2",
+      "snippet": "Instructions to use hyf010124/pi05_so101_pi0824_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use hyf010124/pi05_so101_pi0824_v2 with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "GitHub - jinnymo/so101-pi05-base: pi0.5 vision-language-action model ...",
+      "url": "https://github.com/jinnymo/so101-pi05-base",
+      "snippet": "so101-pi05-base Physical Intelligence&#x27;s pi0.5 vision-language-action model, fully fine-tuned on a unified corpus of public SO-101 / SO-100 single-arm manipulation data. This package holds the model card, the dataset card, the scripts that built the dataset, the training container, and the documentation needed to repeat the work."
+    },
+    {
+      "title": "lerobot-so101/src/lerobot/policies/pi05 at main · AriRyo ... - GitHub",
+      "url": "https://github.com/AriRyo/lerobot-so101/tree/main/src/lerobot/policies/pi05",
+      "snippet": "π₀.₅ (pi05) This repository contains the Hugging Face port of π₀.₅, adapted from OpenPI by the Physical Intelligence. It is designed as a Vision-Language-Action model with open-world generalization."
+    },
+    {
+      "title": "OpenPi π₀.₅ on Jetson Thor - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/",
+      "snippet": "Deploy Physical Intelligence&#x27;s OpenPi π₀.₅ Vision-Language-Action (VLA) model on NVIDIA Jetson AGX Thor with TensorRT NVFP4 quantization for low-latency end-to-end inference."
+    }
+  ]
+}

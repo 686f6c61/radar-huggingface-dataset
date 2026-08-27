@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "happyinhappy/retouch-dodge-burn-onnx",
+  "slug": "happyinhappy-retouch-dodge-burn-onnx",
+  "author": "happyinhappy",
+  "url": "https://huggingface.co/happyinhappy/retouch-dodge-burn-onnx",
+  "created_at": "2026-08-27T17:40:42.000Z",
+  "updated_at": "2026-08-27T17:40:43.000Z",
+  "license": "card-only-weights-not-released",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-to-image",
+    "retouching",
+    "dodge-and-burn",
+    "on-device",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dodge&Burn Video: AI Skin Retouching Plugin for DaVinci Resolve ...",
+      "url": "https://retouch4.me/dodgeburn-video",
+      "snippet": "Dodge&Burn Video plugin automates professional portrait retouching. Smooth skin, remove blemishes & shadows in any video. Save hours of editing in DaVinci Resolve & Premiere Pro."
+    },
+    {
+      "title": "Retouch4me Dodge & Burn OFX",
+      "url": "https://retouch4.me/products/video-retouch/152?lng=en",
+      "snippet": "Retouch4me Dodge & Burn OFX - AI-powered video plugin for professional skin retouching. Automatically lightens & darkens skin like high-end retouchers. Works in DaVinci Resolve & OFX editors. Buy now!"
+    },
+    {
+      "title": "Retouch4me Update Dodge & Burn for DaVinci Resolve: Massive Performance ...",
+      "url": "https://www.youtube.com/watch?v=AFo-P48DW3E",
+      "snippet": "The latest Dodge & Burn OFX update from Retouch4me delivers a massive performance boost and introduces a new AI retouching model for even better results. Enjoy seamless editing with high-quality ..."
+    },
+    {
+      "title": "Dodge&Burn Updated - Retouch4Me",
+      "url": "https://rmecms.hz.labs.retouch4.me/en/dodgeburn-updated/",
+      "snippet": "We have updated our popular Dodge&Burn plugin to version 1.019. We have added support for Retina displays and High DPI for Windows and fixed minor bugs. The neural network model remains the same for now. As usual, the update is free and available for download in your personal account. hello!"
+    },
+    {
+      "title": "Retouch4me Dodge & Burn",
+      "url": "https://api.3dlutcreator.com/products/retouch-plugins/102",
+      "snippet": "Video Dodge&Burn quick review for the website Retouch4me: AI Retouching for Photo & Video Watch on"
+    }
+  ]
+}

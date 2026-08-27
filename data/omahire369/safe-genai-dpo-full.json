@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OmAhire369/safe-genai-dpo-full",
+  "slug": "omahire369-safe-genai-dpo-full",
+  "author": "OmAhire369",
+  "url": "https://huggingface.co/OmAhire369/safe-genai-dpo-full",
+  "created_at": "2026-08-27T17:47:56.000Z",
+  "updated_at": "2026-08-27T17:48:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "safety",
+    "alignment",
+    "preference-learning",
+    "dpo",
+    "full",
+    "rlhf",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:finetune:openai-community/gpt2-medium",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 1419322880,
+  "storage_human": "1.4 GB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmAhire369/safe-genai-reward-full · Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/safe-genai-reward-full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmAhire369 (Om Ahire) - Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code collaboratively."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

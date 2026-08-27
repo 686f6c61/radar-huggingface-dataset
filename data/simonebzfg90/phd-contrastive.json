@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Simonebzfg90/phd-contrastive",
+  "slug": "simonebzfg90-phd-contrastive",
+  "author": "Simonebzfg90",
+  "url": "https://huggingface.co/Simonebzfg90/phd-contrastive",
+  "created_at": "2026-08-27T14:18:33.000Z",
+  "updated_at": "2026-08-27T14:18:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "CVPR 2025 Accepted Papers",
+      "url": "https://cvpr.thecvf.com/Conferences/2025/AcceptedPapers",
+      "snippet": "CVPR 2025 Accepted Papers This page is cached for 1 hour. Changes to affiliation or name in your local profile may take up to 60 minutes to appear here."
+    },
+    {
+      "title": "GitHub - heyongxin233/DeTeCtive: [NeurIPS 2024] DeTeCtive: Detecting AI ...",
+      "url": "https://github.com/heyongxin233/DeTeCtive",
+      "snippet": "DeTeCtive addresses these challenges with a multi-level contrastive learning framework, distinguishing nuanced writing styles to improve detection accuracy across various domains and models. This repository contains the code and models from our paper, DeTeCtive: Detecting AI-generated Text via Multi-Level Contrastive Learning."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude, Gemini - Quetext",
+      "url": "https://www.quetext.com/ai-detector",
+      "snippet": "Detect AI-generated content from ChatGPT, GPT-5, Claude & Gemini with Quetext&#x27;s free AI detector, line-by-line analysis, no signup required."
+    }
+  ]
+}

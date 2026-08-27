@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justinles/tiny-transformer-experiment",
+  "slug": "justinles-tiny-transformer-experiment",
+  "author": "justinles",
+  "url": "https://huggingface.co/justinles/tiny-transformer-experiment",
+  "created_at": "2026-08-27T17:05:26.000Z",
+  "updated_at": "2026-08-27T17:05:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "[2608.04980] Protoreasoning in Tiny Transformers - arXiv.org",
+      "url": "https://arxiv.org/abs/2608.04980",
+      "snippet": "We show that tiny transformers can profitably employ a simple form of Chain of Thought, which we call protoreasoning, allowing us to study step-by-step reasoning on ~1M-parameter models and opening up opportunities for much more detailed experimentation and analysis than is feasible for larger models. Current Large Language Models exhibit impressive step-by-step reasoning, but we have yet to ..."
+    },
+    {
+      "title": "GitHub - zyx100089-eng/tiny-transformer: Small transformer language ...",
+      "url": "https://github.com/zyx100089-eng/tiny-transformer",
+      "snippet": "A small Transformer language model implemented from first principles in PyTorch, trained on character-level Shakespeare text, with ablation experiments investigating architectural design choices."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "If you&#x27;ve ever felt that Transformers are a \"black box,\" today&#x27;s post is for you. Instead of just downloading a pretrained model, we&#x27;re going to build a tiny GPT-style transformer from scratch — small enough to run on your laptop, but powerful enough to generate Shakespeare-like text. By the end, you&#x27;ll not only have a working model, but also a clear understanding of how the ..."
+    }
+  ]
+}

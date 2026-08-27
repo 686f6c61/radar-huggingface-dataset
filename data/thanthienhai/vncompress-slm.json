@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "thanthienhai/vncompress-slm",
+  "slug": "thanthienhai-vncompress-slm",
+  "author": "thanthienhai",
+  "url": "https://huggingface.co/thanthienhai/vncompress-slm",
+  "created_at": "2026-08-27T14:24:35.000Z",
+  "updated_at": "2026-08-27T14:24:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4730632,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thanthienhai/vncompress: vncompress · GitHub",
+      "url": "https://github.com/thanthienhai/vncompress",
+      "snippet": "vncompress. Contribute to thanthienhai/vncompress development by creating an account on GitHub."
+    },
+    {
+      "title": "vncompress/README.md at main · thanthienhai/vncompress",
+      "url": "https://github.com/thanthienhai/vncompress/blob/main/README.md",
+      "snippet": "vncompress. Contribute to thanthienhai/vncompress development by creating an account on GitHub."
+    },
+    {
+      "title": "Small Language Models (SLM): A Comprehensive Overview",
+      "url": "https://huggingface.co/blog/jjokah/small-language-model",
+      "snippet": "Upload images, audio, and videos by dragging in the text input, pasting, or clicking here."
+    },
+    {
+      "title": "Gandi News",
+      "url": "https://news.gandi.net/en/",
+      "snippet": "Brand impersonation, the new entry point for cyberattacks In an era of escalating cyber threats, some shifts remain beyond the reach of traditional defenses. Brand impersonation has become a leading attack vector, straddling reputational risk and cybercrime. Written […]"
+    },
+    {
+      "title": "AI Model Compression vs SLM: When to Choose - LinkedIn",
+      "url": "https://www.linkedin.com/posts/anandvijayk_100daysofgenai-genai-ai-activity-7404418712180875266-6dxb",
+      "snippet": "☕ Day 71 of #100DaysOfGenAI Yesterday, we unpacked how model compression works. Today, let&#x27;s talk about the real decision teams struggle with: When should you compress a large model — and ..."
+    }
+  ]
+}

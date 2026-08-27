@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tylergfg/notes-audio-visual-learning",
+  "slug": "tylergfg-notes-audio-visual-learning",
+  "author": "tylergfg",
+  "url": "https://huggingface.co/tylergfg/notes-audio-visual-learning",
+  "created_at": "2026-08-27T12:58:28.000Z",
+  "updated_at": "2026-08-27T12:58:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GeWu-Lab/awesome-audiovisual-learning: A curated list of audio ...",
+      "url": "https://github.com/GeWu-Lab/awesome-audiovisual-learning",
+      "snippet": "This is a curated list of audio-visual learning methods and datasets, based on our survey: <Learning in Audio-visual Context: A Review, Analysis, and New Perspective>."
+    },
+    {
+      "title": "A survey on audio-visual large language models - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705126012955",
+      "snippet": "In this context, audio-visual large language models (AV-LLMs) mark a significant progression in multimodal representation learning through joint encoding and cross-modal alignment of auditory, visual, and linguistic modalities."
+    },
+    {
+      "title": "note-ai.co",
+      "url": "https://note-ai.co/",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    },
+    {
+      "title": "Google Research - Explore Our Latest Research in Science and AI",
+      "url": "https://research.google/",
+      "snippet": "Discover Google Research. We publish research papers across a wide range of domains and share our latest developments in AI and science research."
+    },
+    {
+      "title": "Artificial Intelligence in Multimedia Content Generation: A Review of ...",
+      "url": "https://sid.onlinelibrary.wiley.com/doi/10.1002/jsid.2111",
+      "snippet": "This survey aims to fill this gap by providing an in-depth analysis of the developments in video and audio generation across the years, and the latest AI techniques for multimedia generation. The primary objective of this paper is to provide a detailed narrative review of the state-of-the-art techniques for AI-based audio and video generation."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-seed-44",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-50-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-seed-44",
+  "created_at": "2026-08-27T12:25:55.000Z",
+  "updated_at": "2026-08-27T12:26:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610542,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.10-seed-44 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.10-seed-44",
+      "snippet": "Instructions to use AlinaGonch/qwen3-4b-instruct-squad-ratio-.10-seed-44 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4 at main",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4/tree/main",
+      "snippet": "Instructions to use AlinaGonch/qwen3-4b-instruct-squad-ratio-.50-r4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3_ (4B)-Instruct.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Instruct.ipynb",
+      "snippet": "Let&#x27;s run the model via Unsloth native inference! According to the Qwen-3 team, the recommended settings for instruct inference are temperature = 0.7, top_p = 0.8, top_k = 20"
+    },
+    {
+      "title": "Qwen3-Next: Towards Ultimate Training & Inference Efficiency",
+      "url": "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list",
+      "snippet": "Based on this new architecture, we train the Qwen3-Next-80B-A3B-Base model — an 80-billion-parameter model that activates only 3 billion parameters during inference. This base model achieves performance comparable to (or even slightly better than) the dense Qwen3-32B model, while using less than 10% of its training cost (GPU hours). In inference, especially with context lengths over 32K ..."
+    },
+    {
+      "title": "qwen3:4b-instruct",
+      "url": "https://ollama.com/library/qwen3:4b-instruct",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

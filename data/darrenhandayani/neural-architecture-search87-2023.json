@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darrenhandayani/neural-architecture-search87-2023",
+  "slug": "darrenhandayani-neural-architecture-search87-2023",
+  "author": "darrenhandayani",
+  "url": "https://huggingface.co/darrenhandayani/neural-architecture-search87-2023",
+  "created_at": "2026-08-27T14:11:25.000Z",
+  "updated_at": "2026-08-27T14:11:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2301.08727] Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "[2301.08727] Neural Architecture Search: Insights from 1000 Papers - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/2301.08727",
+      "snippet": "A key assumption made in one-shot approaches is that when using the one-shot model to evaluate architectures, the ranking of architectures is relatively consistent with the ranking one would obtain from training them independently."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://huggingface.co/papers/2301.08727",
+      "snippet": "Join the discussion on this paper page Neural Architecture Search: Insights from 1000 Papers"
+    },
+    {
+      "title": "Neural architecture search - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neural_architecture_search",
+      "snippet": "Neural architecture search (NAS) [1][2] is a technique for automating the design of artificial neural networks (ANN), a widely used model in the field of machine learning."
+    }
+  ]
+}

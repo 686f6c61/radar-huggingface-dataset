@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "phy710/LUMINA",
+  "slug": "phy710-lumina",
+  "author": "phy710",
+  "url": "https://huggingface.co/phy710/LUMINA",
+  "created_at": "2026-08-27T15:14:38.000Z",
+  "updated_at": "2026-08-27T16:06:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57195614240,
+  "storage_human": "57.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lumina: ByteDance AI Studio - Smart Digital Human Creator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=OLo%2DzSn6zUYyGfOPPcEAWWnTx8CrKVJyPIZTQmNnUQi52XHlzxF_yeKnM3yDdhIOvX_jwCjWZa61hCfsMfU1Ovjgw63SSEOakYJ0y03888M77SEzTl%2DStUsOMDXFy40vGEgvGPFyTIWMtyi7_xKznt00ks35dS2PXDO_h8ZeoX4.oXMpUDYnwNVPfh0PbdJMZw&rut=62eb98579d5588daa66fab80bd517a81fe321801605ed244e298fb614b71e247&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8jHkXbox%2DW%2D3keBi4RwTauzVUCUxTOIKWttUx2NrPMhyCC2y8OPqkFqtP7Pr2XRqEWtZa9OUoh8CkLrSnujgldwjmpWaBX2pwpB8MR%2DXlAqwONHTvIcx6RW52vkLbOARCAQeTXBLD4cC%2D1jorAdHHn_vlxefhWCIoqw_pqrBpPAScmNzA0VXm5zgu6Wx4CsOjRaKcnwpWm9ZFla7xzCIO5CKEdJE%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZsdW1pbmElMmZob21lJTJmYXJ0d29yayUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZHNpZ251cF9sdW1pbmFfZ2xvYmFsX2VuZ2xpc2hfMjAyNjA4MTlfY2VsZW5lJTI2dXRtX3Rlcm0lM2QyMDI2MDgxOV9icmFuZF9sdW1pbmFfYnJvYWRtYXRjaF9jb3JlJTI2dXRtX2NvbnRlbnQlM2R0ZWNkbyUyNm1zY2xraWQlM2Q3YmNkMzA3NThjN2QxMDY1ZWYwZjVhZTVlZjMwZjkzMQ%26rlid%3D7bcd30758c7d1065ef0f5ae5ef30f931&vqd=4-68477828660469438034783225652264825701&iurl=%7B1%7DIG%3DA2A08F8C63E5435D9944CE1982A7DB3B%26CID%3D3C209D41DFAE6EEB1B8F8A83DE886F1C%26ID%3DDevEx%2C5036.1",
+      "snippet": "BytePlus Lumina - the official AI visual platform for enterprises & creators. Official Seedance 2.5. Bigger savings. Better AI videos. Only on Lumina."
+    },
+    {
+      "title": "phy710/LUMINA · Hugging Face",
+      "url": "https://huggingface.co/phy710/LUMINA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "phy710 (phy710) - Hugging Face",
+      "url": "https://huggingface.co/phy710/models",
+      "snippet": "User profile of phy710 on Hugging Face"
+    },
+    {
+      "title": "GitHub - NUBagciLab/LUMINA: LUMINA Mammography",
+      "url": "https://github.com/NUBagciLab/LUMINA",
+      "snippet": "LUMINA Mammography . Contribute to NUBagciLab/LUMINA development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - NUBagciLab/LUMINA: LUMINA Mammography",
+      "url": "https://github.com/NUBagciLab/LUMINA/tree/main",
+      "snippet": "Hongyi Pan, Gorkem Durak, Halil Ertugrul Aktas, Andrea M. Bejar, Baver Tutun, Emre Uysal, Ezgi Bulbul, Mehmet Fatih Dogan, Berrin Erok, Berna Akkus Yildirim, Sukru Mehmet Erturk, Ulas Bagci. \"LUMINA: A Multi-Vendor Mammography Benchmark with Energy Harmonization Protocol.\" CVPR 2026."
+    }
+  ]
+}

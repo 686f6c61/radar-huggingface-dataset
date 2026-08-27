@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "learner1119/act_vine2_sim_420_dee_5hz",
+  "slug": "learner1119-act_vine2_sim_420_dee_5hz",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/act_vine2_sim_420_dee_5hz",
+  "created_at": "2026-08-27T16:38:57.000Z",
+  "updated_at": "2026-08-27T16:39:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:local/VINE2_sim_420_dee_5hz",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51594887,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206413368,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learner1119/act_vine2_sim_420 · Hugging Face",
+      "url": "https://huggingface.co/learner1119/act_vine2_sim_420",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "learner1119/VINE2_poc_refill at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/learner1119/VINE2_poc_refill/tree/main",
+      "snippet": "Datasets: learner1119 / VINE2_poc_refill like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: robotis LeRobot ffw_sg2_rev1 Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main VINE2_poc_refill 19.1 MB 1 contributor History:2 commits learner1119 Add files using upload-large ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

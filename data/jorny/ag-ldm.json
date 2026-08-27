@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jorny/AG-LDM",
+  "slug": "jorny-ag-ldm",
+  "author": "Jorny",
+  "url": "https://huggingface.co/Jorny/AG-LDM",
+  "created_at": "2026-08-27T17:15:56.000Z",
+  "updated_at": "2026-08-27T17:36:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "brain-mri",
+    "latent-diffusion",
+    "longitudinal",
+    "alzheimers",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1956984490,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "[2601.14584] Anatomically Guided Latent Diffusion for Brain MRI ...",
+      "url": "https://arxiv.org/abs/2601.14584",
+      "snippet": "Accurately modeling longitudinal brain MRI progression is crucial for understanding neurodegenerative diseases and predicting individualized structural changes. Existing state-of-the-art approaches, such as Brain Latent Progression (BrLP), often use multi-stage training pipelines with auxiliary conditioning modules but suffer from architectural complexity, suboptimal use of conditional ..."
+    },
+    {
+      "title": "GitHub - JornyWan/AG-LDM: Official Repo for AG-LDM · GitHub",
+      "url": "https://github.com/JornyWan/AG-LDM",
+      "snippet": "Training and evaluation code for AG-LDM, a segmentation-guided latent diffusion model for longitudinal brain-MRI progression. The framework and preprocessing build on BrLP; anatomical supervision comes from the frozen WarpSeg tissue segmenter."
+    },
+    {
+      "title": "Midjourney",
+      "url": "https://www.midjourney.com/",
+      "snippet": "An independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species."
+    }
+  ]
+}

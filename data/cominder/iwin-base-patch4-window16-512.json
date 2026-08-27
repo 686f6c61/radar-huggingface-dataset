@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-base-patch4-window16-512",
+  "slug": "cominder-iwin-base-patch4-window16-512",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-base-patch4-window16-512",
+  "created_at": "2026-08-27T12:48:08.000Z",
+  "updated_at": "2026-08-27T12:48:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91241576,
+  "parameters_human": "91.2M",
+  "storage_bytes": 730107550,
+  "storage_human": "730 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "cominder/Iwin-Transformer at main - Hugging Face",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Iwin-Transformer/detection/configs/iwin at master · Cominder/Iwin ...",
+      "url": "https://github.com/Cominder/Iwin-Transformer/tree/master/detection/configs/iwin",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "cominder/Iwin-Transformer · Improve model card: add pipeline tag ...",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/discussions/1/files",
+      "snippet": "cominder / Iwin-Transformer like 1 Image Feature Extraction Transformers arxiv:2507.18405 License:mit Model card FilesFiles and versions xet Community 2 Deploy Use this model"
+    },
+    {
+      "title": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows",
+      "url": "https://arxiv.org/pdf/2507.18405",
+      "snippet": "The combined design enables Iwin to achieve an equivalent global receptive field of two consecutive Swin blocks with approximately half the computational cost, making it particularly advantageous for high-resolution vision applications and more amenable to integration with text-conditioning mechanisms in generative models."
+    }
+  ]
+}

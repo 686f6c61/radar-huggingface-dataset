@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eren215/model_tokenizer",
+  "slug": "eren215-model_tokenizer",
+  "author": "eren215",
+  "url": "https://huggingface.co/eren215/model_tokenizer",
+  "created_at": "2026-08-27T13:21:32.000Z",
+  "updated_at": "2026-08-27T13:21:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422166,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New TokenBreak Attack Bypasses AI Model&#x27;s with Just a Single Character ...",
+      "url": "https://cybersecuritynews.com/tokenbreak-attack/",
+      "snippet": "The correlation between model family and tokenizer type allows security teams to predict vulnerability: Testing revealed that the attack successfully bypassed multiple text classification models designed to detect prompt injection, toxicity, and spam content."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "tiktoken is a fast BPE tokeniser for use with OpenAI&#x27;s models. - GitHub",
+      "url": "https://github.com/openai/tiktoken",
+      "snippet": "The tokeniser API is documented in tiktoken/core.py. Example code using tiktoken can be found in the OpenAI Cookbook. Language models don&#x27;t see text like you and I, instead they see a sequence of numbers (known as tokens). Byte pair encoding (BPE) is a way of converting text into tokens. It has a ..."
+    }
+  ]
+}

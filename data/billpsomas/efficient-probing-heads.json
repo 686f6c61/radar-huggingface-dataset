@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "billpsomas/efficient-probing-heads",
+  "slug": "billpsomas-efficient-probing-heads",
+  "author": "billpsomas",
+  "url": "https://huggingface.co/billpsomas/efficient-probing-heads",
+  "created_at": "2026-08-27T16:22:12.000Z",
+  "updated_at": "2026-08-27T16:22:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "probing",
+    "frozen-features",
+    "imagenet-1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 402246308,
+  "storage_human": "402 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "efficient-probing/probe_heads.py at master · billpsomas ... - GitHub",
+      "url": "https://github.com/billpsomas/efficient-probing/blob/master/probe_heads.py",
+      "snippet": "master efficient-probing probe_heads.py Code Blame 116 lines (94 loc) · 5.39 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ..."
+    },
+    {
+      "title": "GitHub - billpsomas/efficient-probing: [ICLR 2026] - Official ...",
+      "url": "https://github.com/billpsomas/efficient-probing",
+      "snippet": "Official PyTorch implementation and benchmark results for Efficient Probing. TL;DR: We introduce efficient probing (EP), a lightweight multi-query cross-attention mechanism that improves accuracy of frozen pretrained encoders while yielding interpretable attention maps."
+    },
+    {
+      "title": "Accepted to ICLR 2026 — Revisiting Attentive Probing Through the Lens ...",
+      "url": "https://billpsomas.github.io/news/announcement_4/",
+      "snippet": "Highlights: Introduces Efficient Probing (EP) — a lightweight, multi-query attentive probing method for frozen encoders. EP is compatible with all pre-training families; reduces computational cost, while preserving interpretability. Demonstrates consistent gains over k-NN and Linear Probing (LP) with minimal overhead."
+    },
+    {
+      "title": "Attention, Please! Revisiting Attentive Probing Through the Lens of ...",
+      "url": "https://mlanthology.org/iclr/2026/psomas2026iclr-attention/",
+      "snippet": "Despite growing adoption, attentive probing is still underexplored: existing approaches are often over-parameterized and computationally inefficient. In this work, we revisit attentive probing through the lens of the accuracy vs. parameter-efficiency trade-off."
+    },
+    {
+      "title": "Attention, Please! Revisiting Attentive Probing Through the Lens of ...",
+      "url": "https://arxiv.org/pdf/2506.10178",
+      "snippet": "In this work, we revisit attentive probing through the lens of the accuracy vs. parameter efficiency trade-off. We present the first comprehensive study of existing methods, analyzing their design choices and benchmarking their performance."
+    }
+  ]
+}

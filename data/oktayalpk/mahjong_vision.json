@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "OktayAlpk/mahjong_vision",
+  "slug": "oktayalpk-mahjong_vision",
+  "author": "OktayAlpk",
+  "url": "https://huggingface.co/OktayAlpk/mahjong_vision",
+  "created_at": "2026-08-27T13:50:43.000Z",
+  "updated_at": "2026-08-27T13:50:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "generated_from_trainer",
+    "dataset:pjura/mahjong_souls_tiles",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 917351,
+  "parameters_human": "917351",
+  "storage_bytes": 690533490,
+  "storage_human": "691 MB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "pjura/mahjong_souls_tiles",
+      "metric": "Accuracy",
+      "value": 0.9966555183946488
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "pjura/mahjong_souls_tiles",
+      "metric": "F1",
+      "value": 0.9966383672069291
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "pjura/mahjong_souls_tiles",
+      "metric": "Recall",
+      "value": 0.9966555183946488
+    }
+  ],
+  "sources": [
+    {
+      "title": "pjura/mahjong_vision at main - Hugging Face",
+      "url": "https://huggingface.co/pjura/mahjong_vision/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · pjura/mahjong_vision at main - Hugging Face",
+      "url": "https://huggingface.co/pjura/mahjong_vision/blob/main/README.md",
+      "snippet": "The discard prediction model architecture (ImprovedNN) originates from the pjura/mahjong_ai repository. The included model.safetensors file is an example set of weights for this model, also from that repository, but potentially not the latest version."
+    },
+    {
+      "title": "MahJong-Vision/README.md at main · lcev1987/MahJong-Vision",
+      "url": "https://github.com/lcev1987/MahJong-Vision/blob/main/README.md",
+      "snippet": "Real-time AI assistant for Meta Ray-Ban smart glasses -- voice + vision + agentic actions via Gemini Live and OpenClaw - lcev1987/MahJong-Vision"
+    },
+    {
+      "title": "GitHub - NotAlvin/mahjong-vision",
+      "url": "https://github.com/NotAlvin/mahjong-vision",
+      "snippet": "Mahjong Vision is a project designed to create a pipeline for detecting and classifying mahjong tiles in images. The primary goal is to accurately draw boundaries around mahjong tiles and classify their types. This technology can be used as part of a scoring system for various mahjong games."
+    },
+    {
+      "title": "Mahjong Vision Object Detection Model (v3, 2026-03-06 5:00pm) by ...",
+      "url": "https://universe.roboflow.com/mahjong-vision/mahjong-vision-psvyq/dataset/3",
+      "snippet": "3928 open source tiles images and annotations in multiple formats for training computer vision models. Mahjong Vision (v3, 2026-03-06 5:00pm), created by Mahjong Vision"
+    }
+  ]
+}

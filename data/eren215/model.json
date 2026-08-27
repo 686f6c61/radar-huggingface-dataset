@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "eren215/model",
+  "slug": "eren215-model",
+  "author": "eren215",
+  "url": "https://huggingface.co/eren215/model",
+  "created_at": "2026-08-27T13:21:25.000Z",
+  "updated_at": "2026-08-27T13:21:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533192,
+  "storage_human": "162 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eren215 (Eren) - Hugging Face",
+      "url": "https://huggingface.co/eren215",
+      "snippet": "Recent Activity updated a Spaceabout 1 hour ago eren215/digital_twin_eren published a Spaceabout 2 hours ago eren215/digital_twin_eren View all activity"
+    },
+    {
+      "title": "eren215 (Eren) - Hugging Face",
+      "url": "https://huggingface.co/eren215/models",
+      "snippet": "Recent Activity updated a Spaceabout 4 hours ago eren215/digital_twin_eren published a Spaceabout 4 hours ago eren215/digital_twin_eren View all activity"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "eren - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/5ff7cca90a2ad613a83be7929f50d985",
+      "snippet": "Meet eren model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Eren Yeager - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/1b9fe382b210f6878afa80c8dd9241bd",
+      "snippet": "Explore Eren Yeager model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

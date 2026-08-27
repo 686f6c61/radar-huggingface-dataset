@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Saeedfa/world8-core",
+  "slug": "saeedfa-world8-core",
+  "author": "Saeedfa",
+  "url": "https://huggingface.co/Saeedfa/world8-core",
+  "created_at": "2026-08-27T12:16:24.000Z",
+  "updated_at": "2026-08-27T12:45:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "8core AI, Private LLM infrastructure for teams",
+      "url": "https://8coreai.com/model",
+      "snippet": "A 13B decoder only model tuned for predictable capability and low latency inference across internal tools and customer facing products."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "World of AI Bench | AI Coding Benchmark and Model Rankings",
+      "url": "https://www.woaibench.ai/",
+      "snippet": "Compare AI models on real coding tasks with private benchmarks, live HTML previews, cost tracking, ELO battles, and public model rankings."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

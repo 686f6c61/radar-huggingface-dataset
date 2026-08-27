@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "im21/category-classifier",
+  "slug": "im21-category-classifier",
+  "author": "im21",
+  "url": "https://huggingface.co/im21/category-classifier",
+  "created_at": "2026-08-27T15:07:40.000Z",
+  "updated_at": "2026-08-27T15:08:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395858971,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583454140,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Train your category classification model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/train-text-classification-model",
+      "snippet": "Provides step-by-step instructions on how to train your category classification model."
+    },
+    {
+      "title": "Overview of category classification model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/text-classification-overview",
+      "snippet": "Describes category classification models. Gives an overview of how to build and use category classification models in AI Builder."
+    },
+    {
+      "title": "AI Image Classifier - Free Online Tool | MyAIUtility | MyAIUtility",
+      "url": "https://myaiutility.com/tools/ai-image-classifier/",
+      "snippet": "This AI-powered image classifier uses TensorFlow.js and MobileNet to classify images into 1000+ categories from ImageNet, including animals, objects, vehicles, and more."
+    },
+    {
+      "title": "ai-builder/ai-builder-docs/create-text-classification-model.md at main ...",
+      "url": "https://github.com/MicrosoftDocs/ai-builder/blob/main/ai-builder-docs/create-text-classification-model.md",
+      "snippet": "Select Category classification - Classify texts into custom categories. Read the Classify texts into custom categories page, and then select Create custom model."
+    },
+    {
+      "title": "ai-builder/ai-builder-docs/text-classification-model-use-tags.md at ...",
+      "url": "https://github.com/MicrosoftDocs/ai-builder/blob/master/ai-builder-docs/text-classification-model-use-tags.md",
+      "snippet": "Use in Power Apps You can integrate your AI Builder category classification models in Power Apps Studio by using the formula bar. For more information, go to Use Power Fx in AI Builder models in Power Apps (preview)."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nicolasmoreaupa/fun-multimodal-generation77",
+  "slug": "nicolasmoreaupa-fun-multimodal-generation77",
+  "author": "nicolasmoreaupa",
+  "url": "https://huggingface.co/nicolasmoreaupa/fun-multimodal-generation77",
+  "created_at": "2026-08-27T15:24:29.000Z",
+  "updated_at": "2026-08-27T15:24:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2405.19334",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "Abstract Multi-modal generative AI has received increasing attention in both academia and industry. Particularly, two dominant families of techniques are: i) The multi-modal large language model (MLLM) such as GPT-4V, which shows impressive ability for multi-modal understanding; ii) The diffusion model such as Sora, which exhibits remarkable multi-modal powers, especially with respect to ..."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "Awesome Unified Multimodal Understanding and Generation",
+      "url": "https://github.com/Mingyue-Cheng/Awesome-Unified-Multimodal-Understanding-and-Generation",
+      "snippet": "A curated list of papers, models, and resources dedicated to unified multimodal understanding and generation, with a focus on research that seamlessly integrates multimodal comprehension (e.g., interpreting and aligning text, images, and other modalities) with the ability to generate high-quality multimodal outputs. This repository serves as a comprehensive entry point for researchers ..."
+    },
+    {
+      "title": "Free AI Image Generator - Create Images from Text | Free.ai",
+      "url": "https://free.ai/image/",
+      "snippet": "Free AI Image Generator creates images from text descriptions using AI models like FLUX and Stable Diffusion XL. Describe what you want and get a generated image in seconds."
+    }
+  ]
+}

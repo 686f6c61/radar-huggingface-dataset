@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yeonheekang/cnn-transformer-baseline",
+  "slug": "yeonheekang-cnn-transformer-baseline",
+  "author": "yeonheekang",
+  "url": "https://huggingface.co/yeonheekang/cnn-transformer-baseline",
+  "created_at": "2026-08-27T13:39:39.000Z",
+  "updated_at": "2026-08-27T13:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TransBreastNet a CNN transformer hybrid deep learning ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-19173-6",
+      "snippet": "Reviewed literature reflects recent advancements in deep learning-based breast cancer diagnosis, including CNN, Transformer, and hybrid models."
+    },
+    {
+      "title": "Explainable AI hybrid CNN-transformer models for enhanced ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s13721-025-00596-0",
+      "snippet": "The SARS-CoV-2 pandemic has underscored the need for robust and interpretable computer-aided diagnostic systems in radiological imaging. In this work, we present a hybrid deep learning architecture that integrates Convolutional Neural Networks (CNNs) with Transformer modules to improve COVID-19 detection from chest radiographs. The proposed model combines DenseNet121 for hierarchical feature ..."
+    },
+    {
+      "title": "Convolutional Neural Network (CNN) in Deep Learning",
+      "url": "https://www.geeksforgeeks.org/deep-learning/convolutional-neural-network-cnn-in-machine-learning/",
+      "snippet": "Convolutional Neural Networks (CNNs) are deep learning models designed to process data with a grid-like topology such as images. They are the foundation for most modern computer vision applications to detect features within visual data."
+    },
+    {
+      "title": "AI-Powered Deepfake Detection Using CNN and Vision Transformer ...",
+      "url": "https://arxiv.org/pdf/2601.01281",
+      "snippet": "Four AI-based models, consisting of three CNNs and one Vision Transformer, were evaluated using large face image datasets. Data preprocessing and augmentation techniques im-proved model performance across different scenarios."
+    },
+    {
+      "title": "Microsoft Word - 9125942023085933Deepfake_Paper_draft_v12.0.docx",
+      "url": "https://arxiv.org/pdf/2304.03698",
+      "snippet": "In this work, we aim to study the recent evolution of the deep learning architectures, specifically CNN and Transformers. We will design and implement detection models based on the identified promising architectures and explore their specific contributions to Deepfake detection through a comprehensive experimental evaluation over the latest ..."
+    }
+  ]
+}

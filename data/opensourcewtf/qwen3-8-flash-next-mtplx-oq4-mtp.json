@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OpensourceWTF/Qwen3.8-Flash-Next-MTPLX-oQ4-MTP",
+  "slug": "opensourcewtf-qwen3-8-flash-next-mtplx-oq4-mtp",
+  "author": "OpensourceWTF",
+  "url": "https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-MTPLX-oQ4-MTP",
+  "created_at": "2026-08-27T11:18:00.000Z",
+  "updated_at": "2026-08-27T11:31:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "qwen",
+    "qwen4",
+    "mtplx",
+    "speculative-decoding",
+    "q4",
+    "base_model:Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP",
+    "base_model:quantized:Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34179029859,
+  "parameters_human": "34.18B",
+  "storage_bytes": 113421911672,
+  "storage_human": "113.4 GB",
+  "base_model": "Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
+      "snippet": "Qwen3.8-Flash-Next 125B-A6B MoE drops Aug 26 on ModelScope/HF. Leaked specs, Qwen4 architecture teaser, 128GB Mac fit, FreeToken offloading, vs Qwen3.8-27B."
+    },
+    {
+      "title": "Vontra/Qwen3.8-Flash-Next-MLX-oQ8-MTP · Hugging Face",
+      "url": "https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ8-MTP",
+      "snippet": "Vontra / Qwen3.8-Flash-Next-MLX-oQ8-MTP like 0 Follow Vontra 35 Image-Text-to-Text MLX Safetensors qwen4_exp mlx-vlm omlx oq mtp speculative-decoding qwen qwen3.8 mixture-of-experts vision-language quantized apple-silicon 8-bit precision conversational License:qwen-community-1. Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    }
+  ]
+}

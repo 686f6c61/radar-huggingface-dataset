@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TikFesku/Pixtral-12B-2409-Q8_0-GGUF",
+  "slug": "tikfesku-pixtral-12b-2409-q8_0-gguf",
+  "author": "TikFesku",
+  "url": "https://huggingface.co/TikFesku/Pixtral-12B-2409-Q8_0-GGUF",
+  "created_at": "2026-08-27T18:50:57.000Z",
+  "updated_at": "2026-08-27T19:03:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "mistral",
+    "pixtral",
+    "unsloth",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "base_model:unsloth/Pixtral-12B-2409",
+    "base_model:quantized:unsloth/Pixtral-12B-2409",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 14762234144,
+  "storage_human": "14.8 GB",
+  "base_model": "unsloth/Pixtral-12B-2409",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pixtral-12B-2409-hf-text-only-Q8_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/win10/Pixtral-12B-2409-hf-text-only-Q8_0-GGUF",
+      "snippet": "This model was converted to GGUF format from leafspark/Pixtral-12B-2409-hf-text-only using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "ggml-org/pixtral-12b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/pixtral-12b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "win10/Pixtral-12B-2409-hf-text-only-Q8_0-GGUF - Hugging Face... - Socket",
+      "url": "https://socket.dev/huggingface/package/win10/pixtral-12b-2409-hf-text-only-q8_0-gguf",
+      "snippet": "This model was converted to GGUF format from leafspark/Pixtral-12B-2409-hf-text-only using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Pixtral 12B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/pixtral-12b-24-09",
+      "snippet": "A 12B model with image understanding capabilities in addition to text."
+    },
+    {
+      "title": "Pixtral-12B-2409 — slm.expert",
+      "url": "https://slm.expert/models/pixtral-12b-2409/",
+      "snippet": "Mistral&#x27;s first natively multimodal model pairing a 12B decoder with a 400M vision encoder, supporting variable image sizes and a 128k context window."
+    }
+  ]
+}

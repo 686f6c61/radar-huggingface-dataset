@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwable-Claude-Fable-5-Distilled-NPU2",
+  "slug": "atomic-germ-qwable-claude-fable-5-distilled-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwable-Claude-Fable-5-Distilled-NPU2",
+  "created_at": "2026-08-27T13:43:08.000Z",
+  "updated_at": "2026-08-27T14:13:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qwen3.5",
+    "full-fine-tune",
+    "distillation",
+    "trl",
+    "agentic-coding",
+    "claude",
+    "fable-5",
+    "fable",
+    "finetune",
+    "vision",
+    "q4nx",
+    "fastflowlm",
+    "flm",
+    "npu2",
+    "flm-add",
+    "qwen3.8-froggeric-v22.4",
+    "image-text-to-text",
+    "conversational",
+    "dataset:Glint-Research/Fable-5-traces",
+    "dataset:Roman1111111/gpt5.5-terminal",
+    "base_model:empero-ai/Qwable-9B-Claude-Fable-5",
+    "base_model:quantized:empero-ai/Qwable-9B-Claude-Fable-5",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 18207917165,
+  "storage_human": "18.2 GB",
+  "base_model": "empero-ai/Qwable-9B-Claude-Fable-5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lordx64/Qwable-v1 · Hugging Face",
+      "url": "https://huggingface.co/lordx64/Qwable-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "empero-ai/Qwable-9B-Claude-Fable-5 · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwable-9B-Claude-Fable-5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claude Fable &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/fable",
+      "snippet": "Claude Fable 5 is the highest-scoring model on FrontierBench, Cognition&#x27;s frontier coding eval. It excels at long-horizon reasoning and generalizes to unfamiliar tools out of the box."
+    },
+    {
+      "title": "Qwable-v1 Released as Claude Fable-5 Distillation",
+      "url": "https://tools4all.ai/trends/qwable-v1-released-as-claude-fable-5-distillation",
+      "snippet": "Qwable-v1, an open-weights 35B model distilled from 4,659 surviving agentic-coding traces of Anthropic&#x27;s briefly public Claude Fable-5 model, has been released."
+    },
+    {
+      "title": "Claude Fable 5 distilled — claudepractice",
+      "url": "https://claudepractice.com/news/claude-fable-5-distilled",
+      "snippet": "Claude Fable 5 distilled Releasing Qwable-v1 - an open-weights Qwen3.6-35B-A3B distilled from Claude Fable-5, Anthropic&#x27;s Mythos-class preview model that was briefly public for ~4days (2026-06-9 → 2026-06-12) before being suspended globally under U.S. export-control directives."
+    }
+  ]
+}

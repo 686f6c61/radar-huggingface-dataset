@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pphamlong/assignment-retrieval",
+  "slug": "pphamlong-assignment-retrieval",
+  "author": "pphamlong",
+  "url": "https://huggingface.co/pphamlong/assignment-retrieval",
+  "created_at": "2026-08-27T15:31:06.000Z",
+  "updated_at": "2026-08-27T15:31:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model AI Assignments 2025 | Proceedings of the AAAI Conference on ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/35198",
+      "snippet": "The Model AI Assignments session seeks to gather and disseminate the best assignment designs of the Artificial Intelligence (AI) Education community. Recognizing that assignments form the core of student learning experience, we here present abstracts of thirteen AI assignments from the 2025 session that are easily adoptable, playfully engaging, and flexible for a variety of instructor needs ..."
+    },
+    {
+      "title": "GitHub - dansmyers/Example-AI-Assignment: Example AI-assisted writing ...",
+      "url": "https://github.com/dansmyers/Example-AI-Assignment",
+      "snippet": "This is a model assignment for a semester-long medium-length research article that integrates AI into every phase of the research and writing process. The overaching goal is for students to practice using AI tools in a reflective way, and move towards collaborating with AI instead of simply ..."
+    },
+    {
+      "title": "GitHub - abdur75648/Deep-Learning-Specialization-Coursera: This repo ...",
+      "url": "https://github.com/abdur75648/Deep-Learning-Specialization-Coursera",
+      "snippet": "This repo contains the updated version of all the assignments/labs (done by me) of Deep Learning Specialization on Coursera by Andrew Ng. It includes building various deep learning models from scratch and implementing them for object detection, facial recognition, autonomous driving, neural machine translation, trigger word detection, etc. - abdur75648/Deep-Learning-Specialization-Coursera"
+    },
+    {
+      "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+      "url": "https://arxiv.org/pdf/2402.19473",
+      "snippet": "Retrieval-Augmented Generation (RAG) has recently emerged as a paradigm to address such challenges. In partic-ular, RAG introduces the information retrieval process, which enhances the generation process by retrieving relevant objects from available data stores, leading to higher accuracy and better robustness."
+    },
+    {
+      "title": "Assignments - AI Pedagogy Project",
+      "url": "https://aipedagogy.org/assignments/",
+      "snippet": "Assignments This is an evolving collection of curated assignments that integrate AI tools, created by educators from around the world. Thank you to all of the educators who contributed to this collection. Please follow our citiation guide when using these assignments."
+    }
+  ]
+}

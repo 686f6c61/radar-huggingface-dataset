@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "QWERTYasdgf/Qwen-4B-FirstAid-LLM",
+  "slug": "qwertyasdgf-qwen-4b-firstaid-llm",
+  "author": "QWERTYasdgf",
+  "url": "https://huggingface.co/QWERTYasdgf/Qwen-4B-FirstAid-LLM",
+  "created_at": "2026-08-27T15:15:39.000Z",
+  "updated_at": "2026-08-27T15:15:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "dataset:lextale/FirstAidInstructionsDataset",
+    "base_model:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4994561920,
+  "storage_human": "5.0 GB",
+  "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NisalDeZoysa/Qwen-4B-FirstAid-LLM · Hugging Face",
+      "url": "https://huggingface.co/NisalDeZoysa/Qwen-4B-FirstAid-LLM",
+      "snippet": "Uploaded model Developed by: Team DataMavericks from Faculty of Engineering, University of Ruhuna License: apache-2.0 Finetuned from model : unsloth/Qwen3-4B-unsloth-bnb-4bit 🩺 FirstAidLLM - Fine-tuned Qwen 4B for First Aid Instructions 📌 Overview FirstAidLLM is a domain-specialized large language model fine-tuned on the First Aid Instructions Dataset using Qwen 4B as the base model ..."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "GitHub - firstaid-llm/Firstaid-LLM: A Guided First Aid Chat Agent Based ...",
+      "url": "https://github.com/firstaid-llm/firstaid-llm",
+      "snippet": "Overview FirstAid LLM is an AI-powered first-aid assistant that provides instant, evidence-based medical guidance. The system uses:"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

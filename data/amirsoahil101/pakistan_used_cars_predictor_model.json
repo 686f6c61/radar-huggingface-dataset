@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/Pakistan_Used_Cars_Predictor_Model",
+  "slug": "amirsoahil101-pakistan_used_cars_predictor_model",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/Pakistan_Used_Cars_Predictor_Model",
+  "created_at": "2026-08-27T13:03:57.000Z",
+  "updated_at": "2026-08-27T13:05:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1831226,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy Used Cars in Pakistan | PakWheels",
+      "url": "https://www.pakwheels.com/used-cars/",
+      "snippet": "Buy Used Cars for Sale at Best Prices. #1 car buying & selling website in Pakistan to buy & sell used cars. Post FREE Ads or Find used cars at best prices."
+    },
+    {
+      "title": "Buy & Sell Cars, Bikes & Autoparts - Find Car Prices, News & Reviews",
+      "url": "https://www.pakwheels.com/",
+      "snippet": "PakWheels is a platform to find, buy and sell used cars in Pakistan with detailed listings and user-friendly features."
+    },
+    {
+      "title": "Used Cars - Cars for sale in Pakistan | OLX Pakistan",
+      "url": "https://www.olx.com.pk/cars_c84/q-used-cars",
+      "snippet": "Find the best Used Cars for sale in Pakistan. OLX Pakistan offers online local classified ads for Used Cars. Post your classified ad for free in various categories like mobiles, tablets, cars, bikes, laptops, electronics, birds, houses, furniture, clothes, dresses for sale in Pakistan."
+    },
+    {
+      "title": "amirsoahil101/Car_Price_Prediction_model · Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101/Car_Price_Prediction_model",
+      "snippet": "🚗 Car Price Prediction Model This repository hosts an optimized Machine Learning regression model designed to predict the market price of used cars based on various features such as vehicle age, mileage (kilometers driven), fuel type, transmission, owner type, and engine specifications."
+    },
+    {
+      "title": "Used Cars in Pakistan - Car Bazar | Used Cars For Sale | CarBazar.pk",
+      "url": "https://www.carbazar.pk/",
+      "snippet": "Discover a wide selection of quality used cars for sale across Pakistan. Find a car today with CarBazar.pk - your trusted platform for buying and selling vehicles online."
+    }
+  ]
+}

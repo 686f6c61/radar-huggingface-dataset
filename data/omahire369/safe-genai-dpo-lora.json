@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OmAhire369/safe-genai-dpo-lora",
+  "slug": "omahire369-safe-genai-dpo-lora",
+  "author": "OmAhire369",
+  "url": "https://huggingface.co/OmAhire369/safe-genai-dpo-lora",
+  "created_at": "2026-08-27T16:37:40.000Z",
+  "updated_at": "2026-08-27T16:37:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "alignment",
+    "preference-learning",
+    "dpo",
+    "lora",
+    "rlhf",
+    "text-generation",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:adapter:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17320112,
+  "storage_human": "17 MB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmAhire369/safe-genai-reward-lora · Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/safe-genai-reward-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OmAhire369 (Om Ahire) - Hugging Face",
+      "url": "https://huggingface.co/OmAhire369/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "DPO (Direct Preference Optimization) LoRA for XL and 1.5 - Civitai",
+      "url": "https://civitai.com/models/242825/dpo-direct-preference-optimization-lora-for-xl-and-15-openrail",
+      "snippet": "What does it Do? The trained DPO models have been observed to produce higher quality images than their untuned counterparts, with a significant emphasis on the adherence of the model to your prompt. These LoRA can bring that prompt adherence to other fine-tuned Stable Diffusion models. Who Trained This?"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,863 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "FlatFootInternational/qwen3.8-27b-MTPLX-6bit",
+  "slug": "flatfootinternational-qwen3-8-27b-mtplx-6bit",
+  "author": "FlatFootInternational",
+  "url": "https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-6bit",
+  "created_at": "2026-08-27T16:15:15.000Z",
+  "updated_at": "2026-08-27T16:56:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "macos",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "qwen",
+    "qwen3.8",
+    "mtp",
+    "mtplx",
+    "local-ai",
+    "coding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6346296560,
+  "parameters_human": "6.35B",
+  "storage_bytes": 23647268802,
+  "storage_human": "23.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlatFootInternational/qwen3.8-27b-MTPLX-5bit · Hugging Face",
+      "url": "https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-5bit",
+      "snippet": "qwen-qwen3.8-27b-MTPLX MTPLX-branded multi-token-prediction model for Apple Silicon (MLX). Forged with MTPLX Forge from qwen/qwen3.8-27b."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - youssofal/MTPLX: 3x faster speeds on MLX | Qwen 3.8 27B ...",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "MTPLX is a native Mac app and a command line for running local language models with multi-token prediction. Modern models like Qwen 3.5/3.6 ship with built-in MTP heads. Almost no runtime uses them. MTPLX does: the model drafts several tokens ahead of itself, verifies them in one batched forward pass, and keeps only what passes exact rejection sampling. Same model, same output distribution ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

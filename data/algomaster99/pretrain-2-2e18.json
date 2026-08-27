@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "algomaster99/pretrain-2.2e18",
+  "slug": "algomaster99-pretrain-2-2e18",
+  "author": "algomaster99",
+  "url": "https://huggingface.co/algomaster99/pretrain-2.2e18",
+  "created_at": "2026-08-27T17:36:48.000Z",
+  "updated_at": "2026-08-27T17:43:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt",
+    "from-scratch",
+    "pretraining",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55856618461,
+  "storage_human": "55.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "algomaster99 (Aman Sharma) · GitHub",
+      "url": "https://github.com/algomaster99",
+      "snippet": "PhD student at KTH Royal Institute of Technology | Ex Student Researcher at Google - algomaster99"
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Model Zoo - Deep learning code and pretrained models for transfer ...",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "Model Zoo Discover open source deep learning code and pretrained models. Browse Frameworks Browse Categories"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AutoModels — transformers 3.0.2 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v3.0.2/model_doc/auto.html",
+      "snippet": "AutoConfig Â¶ class transformers.AutoConfig [source] Â¶ AutoConfig is a generic configuration class that will be instantiated as one of the configuration classes of the library when created with the from_pretrained () class method. The from_pretrained () method takes care of returning the correct model class instance based on the model_type property of the config object, or when itâ ..."
+    }
+  ]
+}

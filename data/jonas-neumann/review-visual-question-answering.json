@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jonas-neumann/review-visual-question-answering",
+  "slug": "jonas-neumann-review-visual-question-answering",
+  "author": "jonas-neumann",
+  "url": "https://huggingface.co/jonas-neumann/review-visual-question-answering",
+  "created_at": "2026-08-27T11:54:49.000Z",
+  "updated_at": "2026-08-27T11:54:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering: From Early Developments to Recent Advances ...",
+      "url": "https://arxiv.org/html/2501.03939v1",
+      "snippet": "VQA represents a significant advancement in the field of artificial intelligence, enabling machines to interpret and respond to questions about visual content. Over the years, VQA has evolved from simple image-based question-answering systems to sophisticated models capable of complex reasoning, grounded in both vision and language understanding."
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "[2501.03939] Visual question answering: from early developments to ...",
+      "url": "https://arxiv.org/abs/2501.03939",
+      "snippet": "Visual Question Answering (VQA) is an evolving research field aimed at enabling machines to answer questions about visual content by integrating image and language processing techniques such as feature extraction, object detection, text embedding, natural language understanding, and language generation. With the growth of multimodal data research, VQA has gained significant attention due to ..."
+    },
+    {
+      "title": "[PDF] Visual question answering: from early developments to recent ...",
+      "url": "https://www.semanticscholar.org/paper/Visual-question-answering%3A-from-early-developments-Huynh-Bouadjenek/fbb635034baeb45f330426ed43de127421aaf15b",
+      "snippet": "A taxonomy of VQA architectures is introduced, categorizing them based on design choices and key components to facilitate comparative analysis and evaluation, and major VQA approaches are reviewed, focusing on deep learning-based methods. Visual Question Answering (VQA) is an evolving research field aimed at enabling machines to answer questions about visual content by integrating image and ..."
+    },
+    {
+      "title": "(PDF) VISUAL QUESTION ANSWERING - ResearchGate",
+      "url": "https://www.researchgate.net/publication/370607291_VISUAL_QUESTION_ANSWERING",
+      "snippet": "This paper presents a new baseline for visual question answering task. Given an image and a question in natural language, our model produces accurate answers according to the content of the image."
+    }
+  ]
+}

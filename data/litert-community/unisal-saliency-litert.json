@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/UniSal-Saliency-LiteRT",
+  "slug": "litert-community-unisal-saliency-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/UniSal-Saliency-LiteRT",
+  "created_at": "2026-06-28T15:02:32.000Z",
+  "updated_at": "2026-08-27T12:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "LiteRT",
+  "languages": [],
+  "tags": [
+    "LiteRT",
+    "tflite",
+    "litert",
+    "on-device",
+    "android",
+    "gpu",
+    "saliency",
+    "saliency-prediction",
+    "unisal",
+    "visual-attention",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 581,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6847332,
+  "storage_human": "7 MB",
+  "base_model": "rdroste/unisal",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/UniSal-Saliency-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/UniSal-Saliency-LiteRT",
+      "snippet": "litert-community / UniSal-Saliency-LiteRT like 0 Follow LiteRT Community (FKA TFLite) 7.41k Image Segmentation LiteRT LiteRT LiteRT on-device android gpu saliency saliency-prediction unisal visual-attention License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "litert-community/UniSal-Saliency-LiteRT · Discussions",
+      "url": "https://huggingface.co/litert-community/UniSal-Saliency-LiteRT/discussions",
+      "snippet": "litert-community / UniSal-Saliency-LiteRT like 0 Follow LiteRT Community (FKA TFLite) 7.72k Image Segmentation LiteRT LiteRT LiteRT on-device android gpu saliency saliency-prediction unisal visual-attention License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "LiteRT-Models/saliency at main · john-rocky/LiteRT-Models",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/saliency",
+      "snippet": "UniSal — On-device visual saliency prediction (LiteRT GPU, fully GPU) UniSal (rdroste, Apache-2.0) visual saliency prediction — a heatmap of where humans look in an image — running fully on the LiteRT CompiledModel GPU. MobileNetV2 encoder + bilinear-upsample decoder, 3.71 M params / 6.5 MB fp16."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google's On-device framework for high-performance ML &amp; GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - goo..."
+    },
+    {
+      "title": "google-ai-edge/litert-samples | DeepWiki",
+      "url": "https://deepwiki.com/google-ai-edge/litert-samples",
+      "snippet": "LiteRT (Google AI Edge LiteRT) is the evolution of TensorFlow Lite, designed for on-device machine learning inference. It provides optimized runtime performance for mobile and embedded devices, supporting various hardware acceleration options including CPU, GPU, and specialized neural processing units (NPUs)."
+    }
+  ]
+}

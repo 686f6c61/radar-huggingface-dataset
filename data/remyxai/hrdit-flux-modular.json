@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "remyxai/hrdit-flux-modular",
+  "slug": "remyxai-hrdit-flux-modular",
+  "author": "remyxai",
+  "url": "https://huggingface.co/remyxai/hrdit-flux-modular",
+  "created_at": "2026-08-27T16:13:27.000Z",
+  "updated_at": "2026-08-27T17:16:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "modular-diffusers",
+    "custom-block",
+    "flux",
+    "high-resolution",
+    "arxiv:2608.07003",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24967034,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "remyxai (Remyx AI) - Hugging Face",
+      "url": "https://huggingface.co/remyxai/models",
+      "snippet": "AI & ML interests ... Recent Activity salma-remyx updated a model 1 day ago ... salma-remyx new activity 1 day ago ... salma-remyx new activity 7 days ago"
+    },
+    {
+      "title": "remyxai (Remyx AI) - Hugging Face",
+      "url": "https://huggingface.co/remyxai/datasets",
+      "snippet": "Machine learning, deep learning, generative AI, LLMs Team company Verified https://remyx.ai remyxai remyxai Activity Feed Request to join this org Follow 35"
+    },
+    {
+      "title": "Flux model architecture | Expert Deep Dive Guide",
+      "url": "https://aiexotic.com/blog/flux-model-architecture-mmdit-transformers-rectified-flow-deep-dive",
+      "snippet": "Master Flux model architecture for hyper-realistic NSFW images with precise anatomy, lifelike skin, and dynamic poses. Unpack MMDiT transformers to rectified flow matching in this ultimate breakdown—empower your AI creations today!"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Remyx AI - GitHub",
+      "url": "https://github.com/remyxai",
+      "snippet": "CLI for Remyx AI: install Outrider, manage research interests, browse paper recommendations Python 6 3"
+    }
+  ]
+}

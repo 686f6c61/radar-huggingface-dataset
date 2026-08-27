@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amr04/opus-mt-en-ar-un-finetuned",
+  "slug": "amr04-opus-mt-en-ar-un-finetuned",
+  "author": "Amr04",
+  "url": "https://huggingface.co/Amr04/opus-mt-en-ar-un-finetuned",
+  "created_at": "2026-08-27T17:05:15.000Z",
+  "updated_at": "2026-08-27T17:05:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76355922,
+  "parameters_human": "76.4M",
+  "storage_bytes": 307170708,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nextcloud-AI/opus-mt-en-ar · Hugging Face",
+      "url": "https://huggingface.co/Nextcloud-AI/opus-mt-en-ar",
+      "snippet": "Translation Transformers PyTorch TensorFlow Rust English Arabic marian text2text-generation Inference Endpoints License: apache-2.0 Model card Files Files and versions Community Train Deploy Use in Transformers"
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "Helsinki-NLP/opus-mt-ar-en · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-ar-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Opus-mt-ar-en Open-source Machine Translation Model - Achieve Precise ...",
+      "url": "https://model.aibase.com/models/details/1915693282421792770",
+      "snippet": "Model Overview This model is a specialized machine translation model for Arabic-to-English translation, based on transformer-align architecture, trained with OPUS dataset, suitable for general text translation tasks."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "22 confirmed AI model releases from 17 providers in August 2026, with primary evidence sources and BenchLM model links."
+    }
+  ]
+}

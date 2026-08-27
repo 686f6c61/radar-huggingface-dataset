@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "woojin0831/act_so101_block_pick_place_3x3_v1",
+  "slug": "woojin0831-act_so101_block_pick_place_3x3_v1",
+  "author": "woojin0831",
+  "url": "https://huggingface.co/woojin0831/act_so101_block_pick_place_3x3_v1",
+  "created_at": "2026-08-27T13:14:08.000Z",
+  "updated_at": "2026-08-27T13:14:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:woojin0831/so101_block_pick_place_3x3_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716840,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "woojin0831/so101_block_pick_place_3x3_v1_20260827_150141 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/woojin0831/so101_block_pick_place_3x3_v1_20260827_150141",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "woojin0831/so101_pick_place_50_v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/woojin0831/so101_pick_place_50_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "An open-source robotics project focused on training the SO101 robotic arm using imitation learning, ACT policies, and SOLO CLI workflows for autonomous manipulation tasks. - omkarputti/SO101_ACT_Tr..."
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "A detailed walkthrough of training an Action Chunking Transformer (ACT) policy on an S0-101 robot arm for a pick-and-place task, using the lerobot library. The process involves data collection through teleoperation, model training, and performance evaluation."
+    },
+    {
+      "title": "Train a Pick and Place model on your SO100 (or SO101)",
+      "url": "https://www.youtube.com/watch?v=vC7E6ZmXBT8",
+      "snippet": "In this step-by-step tutorial, we&#x27;ll show you how to teach your SO100 or SO101 to perform pick and place tasks from scratch. Using the Phosphobot SO100 robot, the BB-ACT model, and the Hugging ..."
+    }
+  ]
+}

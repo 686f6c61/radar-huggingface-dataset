@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-afriberta-base-stance-sentiment",
+  "slug": "tadiecool29-mtl-afriberta-base-stance-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-afriberta-base-stance-sentiment",
+  "created_at": "2026-08-27T13:02:07.000Z",
+  "updated_at": "2026-08-27T13:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:castorini/afriberta_base",
+    "base_model:finetune:castorini/afriberta_base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111460615,
+  "parameters_human": "111.5M",
+  "storage_bytes": 445864317,
+  "storage_human": "446 MB",
+  "base_model": "castorini/afriberta_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · castorini/afriberta_base at main - Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_base/blob/main/README.md",
+      "snippet": "AfriBERTa base is a pretrained multilingual language model with around 111 million parameters. The model has 8 layers, 6 attention heads, 768 hidden units and 3072 feed forward size."
+    },
+    {
+      "title": "castorini/afriberta_base · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_base",
+      "snippet": "AfriBERTa base is a pretrained multilingual language model with around 111 million parameters. The model has 8 layers, 6 attention heads, 768 hidden units and 3072 feed forward size."
+    },
+    {
+      "title": "Afriberta_base Open-Source Multilingual Model - Free Support for Text ...",
+      "url": "https://model.aibase.com/models/details/1915687058821300226",
+      "snippet": "🚀 afriberta_base AfriBERTa base is a pretrained multilingual language model designed for various NLP tasks on African languages, offering competitive performance in text classification and named entity recognition."
+    },
+    {
+      "title": "afriberta/README.md at main · castorini/afriberta · GitHub",
+      "url": "https://github.com/castorini/afriberta/blob/main/README.md",
+      "snippet": "AfriBERTa: Exploring the Viability of Pretrained Multilingual Language Models for Low-resourced Languages - castorini/afriberta"
+    },
+    {
+      "title": "castorini/afriberta_base - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/12142",
+      "snippet": "Model description AfriBERTa base is a pretrained multilingual language model with around 111 million parameters. The model has 8 layers, 6 attention heads, 768 hidden units and 3072 feed forward size. The model was pretrained on 11 African languages namely - Afaan Oromoo (also called Oromo), Amharic, Gahuza (a mixed language containing Kinyarwanda and Kirundi), Hausa, Igbo, Nigerian Pidgin ..."
+    }
+  ]
+}

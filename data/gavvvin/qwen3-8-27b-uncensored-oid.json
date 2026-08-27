@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Gavvvin/Qwen3.8-27B-Uncensored-OID",
+  "slug": "gavvvin-qwen3-8-27b-uncensored-oid",
+  "author": "Gavvvin",
+  "url": "https://huggingface.co/Gavvvin/Qwen3.8-27B-Uncensored-OID",
+  "created_at": "2026-08-27T17:21:35.000Z",
+  "updated_at": "2026-08-27T18:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "27b",
+    "quantized",
+    "q3",
+    "dynamic-quantization",
+    "oid",
+    "reasoning",
+    "multimodal",
+    "image-text-to-text",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 11766968640,
+  "storage_human": "11.8 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen 3.8 27B uncensored GGUF is a real download, and the build to start with is Qwen3.8-27B-Uncensored-GGUF — published on Hugging Face on August 16, 2026 as the llama.cpp-native sibling of our abliterated FP8 release."
+    },
+    {
+      "title": "⚡ qwen38-uncensored - Run a Powerful Uncensored AI Locally",
+      "url": "https://github.com/unburdened-jackinthebox365/qwen38-uncensored",
+      "snippet": "This is your personal gateway to running Qwen 3.8 27B, a massive and highly capable AI language model, entirely on your own computer. No cloud, no subscription, no censorship filters. It&#x27;s the official Qwen 3.8 weights (27 billion parameters) in an optimized format that runs fast on regular hardware. This is not a renamed older version—it&#x27;s the genuine 3.8 model. Imagine having a brilliant ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-GGUF - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/hf_mirrors/orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+      "snippet": "Website · Model Catalog · Model Card · GitHub · Ollama · Discord · X GGUF conversions of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head."
+    }
+  ]
+}

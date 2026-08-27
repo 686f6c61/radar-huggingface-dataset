@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Magnexis/lexiconerror-router",
+  "slug": "magnexis-lexiconerror-router",
+  "author": "Magnexis",
+  "url": "https://huggingface.co/Magnexis/lexiconerror-router",
+  "created_at": "2026-08-27T18:09:19.000Z",
+  "updated_at": "2026-08-27T18:10:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "developer-tools",
+    "compiler-diagnostics",
+    "runtime-exceptions",
+    "error-classification",
+    "tfidf",
+    "text-classification",
+    "dataset:Magnexis/lexiconerror-diagnostics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62434884,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - theworker02/lexicon-error: LexiconError is a desktop, offline ...",
+      "url": "https://github.com/theworker02/lexicon-error",
+      "snippet": "Magnexis/lexiconerror-diagnostics: 16,474 JSONL records, Dataset Card, source notices, schema, source lock, and SHA-256 release manifest. LexiconError Router model family: three CPU-friendly classifiers that predict language, category, and severity from pasted diagnostics."
+    },
+    {
+      "title": "lexicon-error/README.md at main - GitHub",
+      "url": "https://github.com/theworker02/lexicon-error/blob/main/README.md",
+      "snippet": "Magnexis/lexiconerror-diagnostics: 16,474 JSONL records, Dataset Card, source notices, schema, source lock, and SHA-256 release manifest. LexiconError Router model family: three CPU-friendly classifiers that predict language, category, and severity from pasted diagnostics."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "How to Choose the Best AI Model (Live, in Your Editor) There&#x27;s no single best AI model, only the best model for a given task, budget, and moment. This article describes a six-step framework for choosing one, and how to run every step from your editor through the OpenRouter MCP server."
+    },
+    {
+      "title": "Model router for Microsoft Foundry concepts - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+      "snippet": "Model router is a trained language model that intelligently routes your prompts in real time to the most suitable large language model (LLM). You deploy model router like any other Foundry model. Thus, it delivers high performance while saving on costs, reducing latencies, and increasing responsiveness, while maintaining comparable quality, all packaged as a single model deployment. Model ..."
+    },
+    {
+      "title": "How to use model router for Microsoft Foundry - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+      "snippet": "Learn how to use the model router in Azure OpenAI to select the best model for your task."
+    }
+  ]
+}

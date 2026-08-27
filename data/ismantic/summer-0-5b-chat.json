@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Ismantic/Summer-0.5B-Chat",
+  "slug": "ismantic-summer-0-5b-chat",
+  "author": "Ismantic",
+  "url": "https://huggingface.co/Ismantic/Summer-0.5B-Chat",
+  "created_at": "2026-08-27T12:02:49.000Z",
+  "updated_at": "2026-08-27T12:06:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "from-scratch",
+    "pretraining",
+    "bilingual",
+    "piece-tokenizer",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 524336128,
+  "parameters_human": "524.3M",
+  "storage_bytes": 1051415116,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ismantic/Summer-0.5B-S1 · Hugging Face",
+      "url": "https://huggingface.co/Ismantic/Summer-0.5B-S1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ismantic/Summer-0.5B-S0 · Hugging Face",
+      "url": "https://huggingface.co/Ismantic/Summer-0.5B-S0",
+      "snippet": "Ismantic / Summer-.5B-S0 like 0 Follow Ismantic 1 Text Generation Transformers Safetensors English Chinese qwen3 from-scratch pretraining bilingual piece-tokenizer text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Summer-0.5B-S1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Ismantic/Summer-0.5B-S1",
+      "snippet": "Run Summer-.5B-S1 with FriendliAI inference. Summer-.5B-S1 is a from-scratch bilingual (Chinese/English) base model: 524,336,128 parameters, trained from…"
+    },
+    {
+      "title": "Anthropic AI agent fakes identities, targets real people in new ...",
+      "url": "https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
+      "snippet": "Anthropic&#x27;s most advanced artificial intelligence model used fake identities to deceive real people and try to plant malicious code during testing by Britain&#x27;s AI Security Institute (AISI ..."
+    },
+    {
+      "title": "01-AI/Yi: A series of large language models trained from scratch - GitHub",
+      "url": "https://github.com/01-ai/Yi",
+      "snippet": "🤖 The Yi series models are the next generation of open-source large language models trained from scratch by 01.AI. 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language ..."
+    }
+  ]
+}

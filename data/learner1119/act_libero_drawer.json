@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "learner1119/act_libero_drawer",
+  "slug": "learner1119-act_libero_drawer",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/act_libero_drawer",
+  "created_at": "2026-08-27T17:29:59.000Z",
+  "updated_at": "2026-08-27T17:30:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:local/libero_drawer_v30",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51590791,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206392280,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "GitHub - Jackie7ii/act-libero: Standalone implementation of ACT (Action ...",
+      "url": "https://github.com/Jackie7ii/act-libero",
+      "snippet": "Standalone implementation of ACT (Action Chunking with Transformers) on LIBERO simulation benchmarks. Supports training, in-training rollout eval, and full evaluation with video saving."
+    },
+    {
+      "title": "act-libero/models at main · Jackie7ii/act-libero · GitHub",
+      "url": "https://github.com/Jackie7ii/act-libero/tree/main/models",
+      "snippet": "Standalone implementation of ACT (Action Chunking with Transformers) on LIBERO simulation benchmarks. Supports training, in-training rollout eval, and full evaluation with video saving. - act-libero/models at main · Jackie7ii/act-libero"
+    },
+    {
+      "title": "learner1119/so101_act · Hugging Face",
+      "url": "https://huggingface.co/learner1119/so101_act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tune ACT on self-collected LIBERO Spatial demonstrations",
+      "url": "https://verl-vla.readthedocs.io/en/latest/fine-tuning/act/self-collected-libero-spatial.html",
+      "snippet": "This recipe fine-tunes an ACT policy on demonstrations collected from LIBERO Spatial task 0 and evaluates the resulting policy on the same task. Follow the LIBERO keyboard data-collection guide to prepare the demonstrations."
+    }
+  ]
+}

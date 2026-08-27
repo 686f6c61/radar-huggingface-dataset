@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justinramosfu/postdoc-classification-2024",
+  "slug": "justinramosfu-postdoc-classification-2024",
+  "author": "justinramosfu",
+  "url": "https://huggingface.co/justinramosfu/postdoc-classification-2024",
+  "created_at": "2026-08-27T17:12:36.000Z",
+  "updated_at": "2026-08-27T17:12:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "2026 LLM Leaderboard: compare Anthropic, Google, OpenAI, and more ... - Klu",
+      "url": "https://klu.ai/llm-leaderboard",
+      "snippet": "Klu.ai LLM leaderboard for in depth model performance metrics, rankings, and insights tailored for AI researchers and developers."
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

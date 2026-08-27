@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yichenchen04/efficientformer-generation-checkpoint63",
+  "slug": "yichenchen04-efficientformer-generation-checkpoint63",
+  "author": "yichenchen04",
+  "url": "https://huggingface.co/yichenchen04/efficientformer-generation-checkpoint63",
+  "created_at": "2026-08-27T14:13:53.000Z",
+  "updated_at": "2026-08-27T14:14:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snap-research/EfficientFormer: EfficientFormerV2 [ICCV 2023 ...",
+      "url": "https://github.com/snap-research/EfficientFormer",
+      "snippet": "Add EfficientFormerV2 model family, including efficientformerv2_s0, efficientformerv2_s1, efficientformerv2_s2 and efficientformerv2_l. Pretrained checkpoints of EfficientFormerV2 on ImageNet-1K are released."
+    },
+    {
+      "title": "qualcomm/EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/EfficientFormer",
+      "snippet": "EfficientFormer: Optimized for Mobile Deployment Imagenet classifier and general purpose backbone EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset. This model is an implementation of EfficientFormer found here. This repository provides scripts to run EfficientFormer on Qualcomm® devices. More details on model performance across various devices ..."
+    },
+    {
+      "title": "EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer",
+      "snippet": "Overview The EfficientFormer model was proposed in EfficientFormer: Vision Transformers at MobileNet Speed by Yanyu Li, Geng Yuan, Yang Wen, Eric Hu, Georgios Evangelidis, Sergey Tulyakov, Yanzhi Wang, Jian Ren. EfficientFormer proposes a dimension-consistent pure transformer that can be run on mobile devices for dense prediction tasks like image classification, object detection and semantic ..."
+    },
+    {
+      "title": "EfficientFormer/models at main · snap-research/EfficientFormer",
+      "url": "https://github.com/snap-research/EfficientFormer/tree/main/models",
+      "snippet": "EfficientFormer / models / liyy201912 Update efficientformer_v2.py ab90993 · 3 years ago History"
+    },
+    {
+      "title": "EfficientFormer（NeurIPS 2022）论文与代码解读 - CSDN博客",
+      "url": "https://blog.csdn.net/ooooocj/article/details/140108448",
+      "snippet": "EfficientFormerStage的代码如下，其中downsample对应图3中的三个Embedding，这里是通过一个stride=2的3x3卷积实现的降采样。Metablok2d对应的是图3中的 ，Metablock1d对应的是 。其中58行表示从 向 转换，需要将spatial维度展平合并到token num中。"
+    }
+  ]
+}

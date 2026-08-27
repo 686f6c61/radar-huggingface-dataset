@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BoyuanDeng/research-knowledge-distillation",
+  "slug": "boyuandeng-research-knowledge-distillation",
+  "author": "BoyuanDeng",
+  "url": "https://huggingface.co/BoyuanDeng/research-knowledge-distillation",
+  "created_at": "2026-08-27T18:25:57.000Z",
+  "updated_at": "2026-08-27T18:26:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/html/2402.13116v1",
+      "snippet": "The concept of knowledge distillation in the field of AI and deep learning (DL) refers to the process of transferring knowledge from a large, complex model (teacher) to a smaller, more efficient model (student) Gou et al. (2021)."
+    },
+    {
+      "title": "[2503.12067] A Comprehensive Survey on Knowledge Distillation",
+      "url": "https://arxiv.org/abs/2503.12067",
+      "snippet": "Knowledge Distillation (KD) is one of the prominent techniques proposed to address the aforementioned problems using a teacher-student architecture. More specifically, a lightweight student model is trained using additional knowledge from a cumbersome teacher model. In this work, a comprehensive survey of knowledge distillation methods is proposed."
+    },
+    {
+      "title": "Knowledge Distillation Complete Guide: Model Compression and ...",
+      "url": "https://www.youngju.dev/blog/ai/2026-03-17-knowledge-distillation-model-compression.en",
+      "snippet": "A complete guide to mastering knowledge distillation and model compression. Covers Teacher-Student learning, intermediate-layer distillation, relation-based distillation, structured pruning, weight sharing, and neural architecture search (NAS) with practical PyTorch code."
+    },
+    {
+      "title": "LLM Distillation Explained: Applications, Implementation & More",
+      "url": "https://www.datacamp.com/blog/distillation-llm",
+      "snippet": "LLM distillation emerges as a powerful solution to this problem, enabling the transfer of knowledge from a larger, more complex language model (the \"teacher\") to a smaller, more efficient version (the \"student\"). A recent example in the AI world is the distillation of GPT-4o mini (student) from GPT-4o (teacher)."
+    },
+    {
+      "title": "Model Distillation and Knowledge Transfer in AI 2026",
+      "url": "https://zylos.ai/research/2026-02-08-model-distillation/",
+      "snippet": "Comprehensive analysis of knowledge distillation techniques, from teacher-student architectures to production applications, showing how compact models achieve comparable performance with 5-30x cost reduction and 4x faster inference"
+    }
+  ]
+}

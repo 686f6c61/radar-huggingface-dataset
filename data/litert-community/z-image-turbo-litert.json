@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "litert-community/Z-Image-Turbo-LiteRT",
+  "slug": "litert-community-z-image-turbo-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Z-Image-Turbo-LiteRT",
+  "created_at": "2026-07-09T05:50:43.000Z",
+  "updated_at": "2026-08-27T12:35:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "text-to-image",
+    "on-device",
+    "diffusion-transformer",
+    "int8",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 1931,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9778791778,
+  "storage_human": "9.8 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Z-Image-Turbo-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Z-Image-Turbo-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · litert-community/Z-Image-Turbo-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/Z-Image-Turbo-LiteRT/blob/main/README.md",
+      "snippet": "Notebooks Google Colab Kaggle main Z-Image-Turbo-LiteRT /README.md mlboydaisuke Card: add a measured Performance table for the representative graphs (Pixel 8a, benchmark_model GPU+CPU) 24d8b49 verified1 day ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 7.7 kB metadata"
+    },
+    {
+      "title": "GitHub - Aaryan-Kapoor/z-image-turbo: A professional web interface for ...",
+      "url": "https://github.com/Aaryan-Kapoor/z-image-turbo",
+      "snippet": "A professional web interface for the Tongyi-MAI Z-Image-Turbo model — lightning-fast text-to-image generation with 6B parameters. Z-Image-Turbo now includes a powerful MCP server that exposes image generation capabilities through the standardized Model Context Protocol. This allows AI assistants ..."
+    },
+    {
+      "title": "Z-Image Turbo with LoRA in ComfyUI for Consistent Image Creation",
+      "url": "https://www.nextdiffusion.ai/tutorials/z-image-turbo-with-lora-in-comfyui-for-consistent-image-generations",
+      "snippet": "In the realm of AI image generation, Z-Image Turbo stands out as a powerful tool, especially when integrated with LoRA (Low-Rank Adaptation). This tutorial will guide you through the process of utilizing Z-Image Turbo within ComfyUI, focusing on its capabilities for rapid, uncensored, and consistent image generation."
+    },
+    {
+      "title": "GitHub - Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "snippet": "Z-Image is a powerful and highly efficient image generation model family with 6B parameters. Currently there are four variants: 🚀 Z-Image-Turbo - A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations). It offers ⚡️sub-second inference latency⚡️ on enterprise-grade H800 GPUs and fits comfortably within 16G VRAM ..."
+    }
+  ]
+}

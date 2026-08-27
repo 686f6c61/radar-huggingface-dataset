@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kelseylmartin/gfit_yolov11_highres",
+  "slug": "kelseylmartin-gfit_yolov11_highres",
+  "author": "kelseylmartin",
+  "url": "https://huggingface.co/kelseylmartin/gfit_yolov11_highres",
+  "created_at": "2026-08-27T17:25:12.000Z",
+  "updated_at": "2026-08-27T17:25:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultralytics YOLO11",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    },
+    {
+      "title": "GitHub - yt7589/yolov11: Yolov11 · GitHub",
+      "url": "https://github.com/yt7589/yolov11",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLO11 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App. Start your journey for Free now!"
+    },
+    {
+      "title": "LooYut/Yolov11: Ultralytics YOLO11 - GitHub",
+      "url": "https://github.com/LooYut/Yolov11",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLO11 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App. Start your journey for Free now!"
+    },
+    {
+      "title": "Ultralytics YOLO Evolution: An Overview of YOLO26, YOLO11, YOLOv8, and ...",
+      "url": "https://arxiv.org/html/2510.09653v3",
+      "snippet": "Abstract This paper presents a comprehensive overview of the Ultralytics YOLO family of object detectors, emphasizing the architectural evolution, benchmarking, deployment perspectives, and future challenges. The review begins with the most recent release, YOLO26 (or YOLOv26), which introduces key innovations including Distribution Focal Loss (DFL) removal, native NMS-free inference ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

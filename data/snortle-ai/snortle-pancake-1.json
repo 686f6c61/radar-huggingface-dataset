@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Snortle-AI/Snortle-Pancake-1",
+  "slug": "snortle-ai-snortle-pancake-1",
+  "author": "Snortle-AI",
+  "url": "https://huggingface.co/Snortle-AI/Snortle-Pancake-1",
+  "created_at": "2026-08-26T00:16:47.000Z",
+  "updated_at": "2026-08-27T14:47:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "snortle_pancake_1",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 233782656,
+  "parameters_human": "233.8M",
+  "storage_bytes": 3740726400,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snortle Pancake 1 - a Hugging Face Space by Snortle-AI",
+      "url": "https://huggingface.co/spaces/Snortle-AI/Snortle-Pancake-1",
+      "snippet": "This app lets you type a short prompt (and optionally a previous conversation state) and choose how many tokens to generate. It returns the generated text along with timing and token‑count details,..."
+    },
+    {
+      "title": "Expert data development for frontier AI | Snorkel AI",
+      "url": "https://snorkel.ai/",
+      "snippet": "Snorkel AI builds specialized training data, benchmarks, and evaluation environments that help frontier models and agents perform in high-stakes domains."
+    },
+    {
+      "title": "Snorkel AI Experts Portal",
+      "url": "https://experts.snorkel-ai.com/home",
+      "snippet": "Snorkel AI Experts Portal"
+    },
+    {
+      "title": "Snorkl | Instant Feedback on Student Thinking",
+      "url": "https://snorkl.app/",
+      "snippet": "With Snorkl, students record and share their reasoning then receive instant AI-powered feedback to drive deep and meaningful learning."
+    },
+    {
+      "title": "GitHub - snorkel-team/snorkel: A system for quickly generating training ...",
+      "url": "https://github.com/snorkel-team/snorkel",
+      "snippet": "The Snorkel team is now focusing their efforts on Snorkel Flow, an end-to-end AI application development platform based on the core ideas behind Snorkel—you can check it out here or join us in building it! The Snorkel project started at Stanford in 2015 with a simple technical bet: that it would increasingly be the training data, not the models, algorithms, or infrastructure, that decided ..."
+    }
+  ]
+}

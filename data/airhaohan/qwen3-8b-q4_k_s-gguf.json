@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "airhaohan/Qwen3-8B-Q4_K_S-GGUF",
+  "slug": "airhaohan-qwen3-8b-q4_k_s-gguf",
+  "author": "airhaohan",
+  "url": "https://huggingface.co/airhaohan/Qwen3-8B-Q4_K_S-GGUF",
+  "created_at": "2026-08-27T12:05:52.000Z",
+  "updated_at": "2026-08-27T12:06:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4802012512,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski/Qwen_Qwen3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3-8B-GGUF",
+      "snippet": "Embed/output weights Some of these quants (Q3_K_XL, Q4_K_L etc) are the standard quantization method with the embeddings and output weights quantized to Q8_0 instead of what they would normally default to. Downloading using huggingface-cli Click to view download instructions First, make sure you have hugginface-cli installed:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Model releases - QwenCloud",
+      "url": "https://docs.qwencloud.com/changelog/models",
+      "snippet": "qwen3.8-max The Qwen3.8 native vision-language Max series model is Qwen&#x27;s most capable flagship model to date, featuring 2.4 trillion parameters with a Mixture-of-Experts architecture. It delivers outstanding performance comparable to the current state-of-the-art models, with significant improvements over the 3.7 series."
+    }
+  ]
+}

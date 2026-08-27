@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Juicer-35B-A3B-GGUF",
+  "slug": "mradermacher-juicer-35b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Juicer-35B-A3B-GGUF",
+  "created_at": "2026-08-27T16:43:22.000Z",
+  "updated_at": "2026-08-27T16:44:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 1513478144,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP ...",
+      "url": "https://huggingface.co/mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF",
+      "snippet": "Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Qwen 3.6 35B A3B on AMD Ryzen AI Max+ 395 (Strix Halo) via Vulkan with ...",
+      "url": "https://akehir.com/blog/strix-halo-kubernetes-llm-qwen-3.6",
+      "snippet": "Qwen 3.6 35B A3B on AMD Ryzen AI Max+ 395 (Strix Halo) via Vulkan with Kubernetes Summary April has been quite a month for local LLMs! Shortly after Gemma 4 26B was released, it quickly became my favorite model to use. However, just as Gemma 4 26B established itself, Qwen released the new Qwen 3.6 35B A3B model."
+    },
+    {
+      "title": "Running a 35B AI Model on 6GB VRAM, FAST (llama.cpp Guide)",
+      "url": "https://www.youtube.com/watch?v=8F_5pdcD3HY",
+      "snippet": "Run a 35B parameter AI model on just 6GB VRAM using llama.cpp and Qwen 3.6.This setup shouldn&#x27;t work—but with the right optimizations, it reaches good enough..."
+    }
+  ]
+}

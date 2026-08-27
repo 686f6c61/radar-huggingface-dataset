@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RononoaIgor98/cassava-leaf-detector-yolov8n",
+  "slug": "rononoaigor98-cassava-leaf-detector-yolov8n",
+  "author": "RononoaIgor98",
+  "url": "https://huggingface.co/RononoaIgor98/cassava-leaf-detector-yolov8n",
+  "created_at": "2026-08-27T15:39:43.000Z",
+  "updated_at": "2026-08-27T15:39:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolov8",
+    "agriculture",
+    "cassava",
+    "plant",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6249706,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore Ultralytics YOLOv8",
+      "url": "https://docs.ultralytics.com/models/yolov8",
+      "snippet": "Discover Ultralytics YOLOv8, an advancement in real-time object detection, optimizing performance with an array of pretrained models for diverse tasks."
+    },
+    {
+      "title": "Ultralytics/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLOv8",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "foduucom/plant-leaf-detection-and-classification · Hugging Face",
+      "url": "https://huggingface.co/foduucom/plant-leaf-detection-and-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A lightweight rotating target detection method for rice leaf blast ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168169925011329",
+      "snippet": "To address issues such as poor representational capacity of traditional horizontal bounding boxes, the complexity and high redundancy of existing model structures, and the difficulty in improving detection accuracy for densely packed small targets, we propose an improved version of the YOLOv8n base model, designing a lightweight rotational ..."
+    },
+    {
+      "title": "A Lightweight YOLOv8 Model for Apple Leaf Disease Detection",
+      "url": "https://www.mdpi.com/2076-3417/14/15/6710",
+      "snippet": "This study proposes a lightweight algorithm for apple leaf disease detection in natural environments, which is conducive to application on mobile and embedded devices. Our approach modifies the YOLOv8n framework to improve accuracy and efficiency."
+    }
+  ]
+}

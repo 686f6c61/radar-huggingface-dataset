@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/A2R-30B-A3B-i1-GGUF",
+  "slug": "mradermacher-a2r-30b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/A2R-30B-A3B-i1-GGUF",
+  "created_at": "2026-08-27T13:05:55.000Z",
+  "updated_at": "2026-08-27T14:02:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "speech",
+    "speaker-attribution",
+    "multi-party",
+    "audio-language-model",
+    "en",
+    "base_model:PleasedPenguin/A2R-30B-A3B",
+    "base_model:quantized:PleasedPenguin/A2R-30B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532646912,
+  "parameters_human": "30.53B",
+  "storage_bytes": 68912527072,
+  "storage_human": "68.9 GB",
+  "base_model": "PleasedPenguin/A2R-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Qwen3-30B-A3B-abliterated-erotic-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-30B-A3B-abliterated-erotic-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF is a quantized version of Huihui AI&#x27;s 30 billion parameter coding-focused language model, maintained by mradermacher."
+    },
+    {
+      "title": "Qwen3-30B-A3B-abliterated-erotic-i1-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mradermacher/Qwen3-30B-A3B-abliterated-erotic-i1-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. static quants are available at https://huggingface.co/mradermacher/Qwen3-30B-A3B-abliterated-erotic-GGUF"
+    },
+    {
+      "title": "Huihui-Qwen3-8B-abliterated-v2-i1-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mradermacher/Huihui-Qwen3-8B-abliterated-v2-i1-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. static quants are available at https://huggingface.co/mradermacher/Huihui-Qwen3-8B-abliterated-v2-GGUF"
+    }
+  ]
+}

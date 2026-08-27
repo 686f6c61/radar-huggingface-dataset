@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jacoblope/mixer-retrieval",
+  "slug": "jacoblope-mixer-retrieval",
+  "author": "Jacoblope",
+  "url": "https://huggingface.co/Jacoblope/mixer-retrieval",
+  "created_at": "2026-08-27T14:31:31.000Z",
+  "updated_at": "2026-08-27T14:31:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mixer: A Novel Paradigm of Image to Multi-Modal Retrieval Learning for ...",
+      "url": "https://arxiv.org/html/2305.03972",
+      "snippet": "For doc text, external memories are employed to learn important high-level concepts from textual descriptions Second, an attention mechanism from text to image is designed to adaptively model the unequal informative problem for multi-modal docs and fuse the multi-modality."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval - arXiv.org",
+      "url": "https://arxiv.org/html/2409.01482v1",
+      "snippet": "In this work we observe that indeed transformer model hidden layers do not contain enough information to allow for accurate input reconstruction via gradient-based input representation algorithms, whereas the introduced &#x27;masked mixer&#x27; models with self-attention substituted for masked convolutions do."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval | AI Research Paper ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/masked-mixers-language-generation-retrieval",
+      "snippet": "Masked Mixers are a new type of artificial intelligence (AI) model designed for working with human language. They are an improvement on a popular AI architecture called transformers, which are widely used for language tasks like generating text or answering questions."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval - Aili",
+      "url": "https://aili.app/share/6QgwLxDn4j4UZlRbXZsMBi",
+      "snippet": "Masked mixers are generally similarly efficient as transformers for causal language model training, but a transformer-masked mixer hybrid is the most efficient. Embeddings from masked mixers are far superior to those from transformers for language retrieval tasks. 🙋 Q&A [01] Accurate self and non-self token representation in Masked Mixers 1."
+    },
+    {
+      "title": "Masked Mixers for Language Generation and Retrieval",
+      "url": "https://www.semanticscholar.org/paper/Masked-Mixers-for-Language-Generation-and-Retrieval-Badger/63da35140c39a1669f3c378826fb1d68964b9a5d",
+      "snippet": "A small masked mixer is shown to outperform a large and near state-of-the-art transformer-based retrieval model, despite the latter being trained with many orders of magnitude more data and compute."
+    }
+  ]
+}

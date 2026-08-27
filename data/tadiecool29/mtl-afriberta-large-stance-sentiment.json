@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/MTL-afriberta-large-stance-sentiment",
+  "slug": "tadiecool29-mtl-afriberta-large-stance-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/MTL-afriberta-large-stance-sentiment",
+  "created_at": "2026-08-27T12:52:09.000Z",
+  "updated_at": "2026-08-27T12:52:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:castorini/afriberta_large",
+    "base_model:finetune:castorini/afriberta_large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125636359,
+  "parameters_human": "125.6M",
+  "storage_bytes": 502571157,
+  "storage_human": "503 MB",
+  "base_model": "castorini/afriberta_large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castorini/afriberta_large · Hugging Face",
+      "url": "https://huggingface.co/castorini/afriberta_large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - castorini/afriberta: AfriBERTa: Exploring the Viability of ...",
+      "url": "https://github.com/castorini/afriberta",
+      "snippet": "AfriBERTa: Exploring the Viability of Pretrained Multilingual Language Models for Low-resourced Languages This repository contains the code for the paper Small Data?"
+    },
+    {
+      "title": "AfriBERTa large Open-source Multilingual Model - Free Processing of ...",
+      "url": "https://model.aibase.com/en/models/details/1915687192057561090",
+      "snippet": "AfriBERTa large is a pre-trained multilingual model with approximately 126 million parameters, supporting 11 African languages, suitable for tasks such as text classification and named entity recognition."
+    },
+    {
+      "title": "afriberta_large | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/afribertalarge/",
+      "snippet": "AfriBERTa Large is a sophisticated multilingual language model specifically designed for African languages. It represents a significant advancement in Natural Language Processing for low-resource African languages, trained on 11 different languages including Afaan Oromoo, Amharic, Gahuza, Hausa, Igbo, Nigerian Pidgin, Somali, Swahili, Tigrinya ..."
+    },
+    {
+      "title": "Quantized Models for castorini/afriberta_large - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:castorini/afriberta_large",
+      "snippet": "Model Tree Reset castorini/afriberta_large Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks ..."
+    }
+  ]
+}

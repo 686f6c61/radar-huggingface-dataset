@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "blaze-aura69/smart-x",
+  "slug": "blaze-aura69-smart-x",
+  "author": "blaze-aura69",
+  "url": "https://huggingface.co/blaze-aura69/smart-x",
+  "created_at": "2026-08-27T11:53:09.000Z",
+  "updated_at": "2026-08-27T12:01:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30044544,
+  "parameters_human": "30.0M",
+  "storage_bytes": 60096600,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "blaze-aura69 (blaze-aura) - Hugging Face",
+      "url": "https://huggingface.co/blaze-aura69",
+      "snippet": "User profile of blaze-aura on Hugging Face"
+    },
+    {
+      "title": "blaze-aura69 (blaze-aura) - Hugging Face",
+      "url": "https://huggingface.co/blaze-aura69/datasets",
+      "snippet": "Developer of Foodlth."
+    },
+    {
+      "title": "blaze-aura69 (blaze-aura) · GitHub",
+      "url": "https://github.com/blaze-aura69/",
+      "snippet": "blaze-aura69 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Blaze AI Smart Home Workout EXPOSED - Scam Or Legit? Investigation",
+      "url": "https://malwaretips.com/blogs/blaze-ai-smart-home-workout-exposed-scam-or-legit-investigation/",
+      "snippet": "Blaze AI Smart Home Workout is being promoted in social media ads as a smart home gym with AI-guided fitness, 300+ workouts, and \"gym-level results at home\" for only $99.99."
+    },
+    {
+      "title": "Blaze | Marketing Done For You",
+      "url": "https://www.blaze.ai/",
+      "snippet": "Blaze sets your strategy, creates your content, and gets smarter every week — from just $79/month."
+    }
+  ]
+}

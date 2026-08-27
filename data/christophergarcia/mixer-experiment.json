@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christophergarcia/mixer-experiment",
+  "slug": "christophergarcia-mixer-experiment",
+  "author": "christophergarcia",
+  "url": "https://huggingface.co/christophergarcia/mixer-experiment",
+  "created_at": "2026-08-27T14:12:25.000Z",
+  "updated_at": "2026-08-27T14:12:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta AI Model Gained Internet Access and Hacked Another Organization&#x27;s ...",
+      "url": "https://cybersecuritynews.com/meta-ai-hacked-organizations/",
+      "snippet": "Meta disclosed that an AI model gained internet access during testing and exploited a vulnerability in another organization&#x27;s system."
+    },
+    {
+      "title": "The AI Experiment That Ended With Death - Stansberry Research",
+      "url": "https://stansberryresearch.com/dailywealth/the-ai-experiment-that-ended-with-death",
+      "snippet": "The first \"mixed model\" simulation included agents from different AI providers in a single world. Alphabet&#x27;s Gemini, Tesla&#x27;s Grok, OpenAI&#x27;s ChatGPT, and Anthropic&#x27;s Claude each controlled two characters."
+    },
+    {
+      "title": "Anthropic AI agent fakes identities, targets real people in new ...",
+      "url": "https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
+      "snippet": "Anthropic&#x27;s most advanced artificial intelligence model used fake identities to deceive real people and try to plant malicious code during testing by Britain&#x27;s AI Security Institute (AISI ..."
+    },
+    {
+      "title": "GitHub - christopher-kapic/mixer-rs: Automatically split agentic LLM ...",
+      "url": "https://github.com/christopher-kapic/mixer-rs",
+      "snippet": "Why Multi-model diversity. There&#x27;s a theory that agent traces improve when the underlying LLMs are rotated across each turn. mixer makes that rotation transparent to the client. Burn plans evenly. If you pay for four subscriptions, you want to consume them at similar rates. mixer&#x27;s usage-aware strategy weights each request by how much of each plan is left, on a best-effort basis — each ..."
+    },
+    {
+      "title": "Mixer AI",
+      "url": "https://mixerai.org/",
+      "snippet": "All top AI models in 1 service. Pay-as-you go!"
+    }
+  ]
+}

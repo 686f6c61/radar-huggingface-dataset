@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8",
+  "slug": "dealignai-qwen3-8-flash-next-uncensored-fp8",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8",
+  "created_at": "2026-08-27T03:44:28.000Z",
+  "updated_at": "2026-08-27T05:56:49.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "uncensored",
+    "abliterated",
+    "fp8",
+    "qwen",
+    "multimodal",
+    "reasoning",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 222574074296,
+  "storage_human": "222.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "dealign.ai on X: \"Qwen3.8-Flash-Next FULLY UNCENSORED FP8 Low + Greedy ...",
+      "url": "https://x.com/dealignai/status/2092851180841865649",
+      "snippet": "Qwen3.8-Flash-Next FULLY UNCENSORED FP8 Low + Greedy, xHigh + Greedy, Reasoning off + Greedy, all compliant! - MTP CRACK&#x27;d - MULTIMODAL I say this because for this new kind of architecture so many little things such as temp, and varying reasoning effort matter on how much it complies / retains knowledge. This was probably the hardest model since their 3.5 397b, which only further shows me how ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-ABLITERATED-FP8 - Hugging Face",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-FP8",
+      "snippet": "Qwen3.8-Flash-Next — ABLITERATED (FP8) Abliterated (refusal-removed) build of Qwen/Qwen3.8-Flash-Next in official FP8. Reasoning (low / medium / xhigh), MTP speculative decoding, and full multimodality (image + video) preserved. by dealignai"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and chat. We are working very hard to support the ..."
+    }
+  ]
+}

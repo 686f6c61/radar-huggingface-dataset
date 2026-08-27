@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HAYOSIDA/text-image-retrieval-reading53",
+  "slug": "hayosida-text-image-retrieval-reading53",
+  "author": "HAYOSIDA",
+  "url": "https://huggingface.co/HAYOSIDA/text-image-retrieval-reading53",
+  "created_at": "2026-08-27T12:20:50.000Z",
+  "updated_at": "2026-08-27T12:21:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HAYOSIDA (Yosida Haruto) - Hugging Face",
+      "url": "https://huggingface.co/HAYOSIDA",
+      "snippet": "Mechanical keyboards and neural networks"
+    },
+    {
+      "title": "[2603.10583] Attribution as Retrieval: Model-Agnostic AI-Generated ...",
+      "url": "https://arxiv.org/abs/2603.10583",
+      "snippet": "To address these limitations, this work presents a new paradigm for AI-generated image attribution by formulating it as an instance retrieval problem instead of a conventional image classification problem. We propose an efficient model-agnostic framework, called Low-bIt-plane-based Deepfake Attribution (LIDA)."
+    },
+    {
+      "title": "GitHub - Yutong-Zhou-cv/Awesome-Text-to-Image: (ෆ`꒳´ෆ) A Survey on Text ...",
+      "url": "https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image",
+      "snippet": "In the last few decades, the fields of Computer Vision (CV) and Natural Language Processing (NLP) have been made several major technological breakthroughs in deep learning research. Recently, researchers interested in combining semantic information and visual information in these traditionally independent fields. A number of studies have been conducted on text-to-image synthesis techniques ..."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Text-to-image Diffusion Models in Generative AI: A Survey",
+      "url": "https://arxiv.org/html/2303.07909v3",
+      "snippet": "Abstract This survey reviews the progress of diffusion models in generating images from text, i.e. text-to-image diffusion models. As a self-contained work, this survey starts with a brief introduction of how diffusion models work for image synthesis, followed by the background for text-conditioned image synthesis. Based on that, we present an organized review of pioneering methods and their ..."
+    }
+  ]
+}

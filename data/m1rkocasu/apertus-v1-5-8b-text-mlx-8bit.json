@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "m1rkocasu/Apertus-v1.5-8B-text-MLX-8bit",
+  "slug": "m1rkocasu-apertus-v1-5-8b-text-mlx-8bit",
+  "author": "m1rkocasu",
+  "url": "https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-8bit",
+  "created_at": "2026-08-27T17:09:41.000Z",
+  "updated_at": "2026-08-27T17:29:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apertus",
+    "swiss-ai",
+    "switzerland",
+    "multilingual",
+    "quantized",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:swiss-ai/Apertus-v1.5-8B",
+    "base_model:quantized:swiss-ai/Apertus-v1.5-8B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2265198592,
+  "parameters_human": "2.27B",
+  "storage_bytes": 8574103212,
+  "storage_human": "8.6 GB",
+  "base_model": "swiss-ai/Apertus-v1.5-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swiss-ai/Apertus-v1.5-8B · Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+      "snippet": "Apertus 1.5 Table of Contents Table of Contents Model Summary Key Features How to Use Evaluation Training Limitations Legal Aspects Contact Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI. The models support a wide range of languages, handle contexts of up to 262,144 tokens ..."
+    },
+    {
+      "title": "tokimoa/apertus-v1.5-8b-mlx-8bit · Hugging Face",
+      "url": "https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/pages/documentation/",
+      "snippet": "Code Base Swiss AI on GitHub Training code, evaluation scripts, and model artifacts for Apertus and related projects."
+    },
+    {
+      "title": "Apertus v1.5 8B - access through LLMTR",
+      "url": "https://llmtr.com/en/models/publicai/apertus-v1.5-8b",
+      "snippet": "Apertus v1.5 8B is an open-weight model that handles text and image input together. Its 262,144-token context window lets it work through long documents in a single request, and it can read images and describe their contents."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/articles/2026-07-apertus-1-5/",
+      "snippet": "Apertus 1.5 is a continued pretraining of Apertus 1.0: we added 4 trillion tokens of text and multimodal training data to the 8B model and 2 trillion tokens to the 70B model. As with every Apertus release, the models are fully open: open weights, open data, open values, and full training details."
+    }
+  ]
+}

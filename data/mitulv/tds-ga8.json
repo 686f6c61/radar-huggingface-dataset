@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mitulv/tds-ga8",
+  "slug": "mitulv-tds-ga8",
+  "author": "mitulv",
+  "url": "https://huggingface.co/mitulv/tds-ga8",
+  "created_at": "2026-08-27T11:49:20.000Z",
+  "updated_at": "2026-08-27T11:51:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "This is a model card for the TDS 2026 May GA8 Green AI carbon accounting audit."
+    },
+    {
+      "title": "Pranav0009/tds-ga8 · Hugging Face",
+      "url": "https://huggingface.co/Pranav0009/tds-ga8",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "GitHub - llEclipsell/tds-ga8",
+      "url": "https://github.com/llEclipsell/tds-ga8",
+      "snippet": "Contribute to llEclipsell/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - deepti-iitm/tds-ga8: GA 8 q1-7",
+      "url": "https://github.com/deepti-iitm/tds-ga8",
+      "snippet": "GA 8 q1-7. Contribute to deepti-iitm/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

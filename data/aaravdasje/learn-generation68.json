@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AaravDasje/learn-generation68",
+  "slug": "aaravdasje-learn-generation68",
+  "author": "AaravDasje",
+  "url": "https://huggingface.co/AaravDasje/learn-generation68",
+  "created_at": "2026-08-27T12:33:44.000Z",
+  "updated_at": "2026-08-27T12:33:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Architecture of Generative Models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/architecture-of-generative-models/",
+      "snippet": "Generative models are a dynamic class of artificial intelligence (AI) systems designed to learn patterns from large datasets and synthesize new content ranging from text and images to music and code that resembles the data they learned from. Their underlying architectures are responsible for this remarkable creativity and understanding these architectures is key to leveraging and advancing ..."
+    },
+    {
+      "title": "Generative AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/generative-ai",
+      "snippet": "Generative AI on Google Cloud Bring generative AI to real-world experiences quickly, efficiently, and responsibly, powered by Google&#x27;s most advanced technology and models including Gemini. Plus, new customers can start their AI journey today with $300 in free credits."
+    },
+    {
+      "title": "Building and Deploying Generative AI Models - Coursera",
+      "url": "https://www.coursera.org/learn/building-and-deploying-generative-models",
+      "snippet": "Transition from theoretical concepts to production-ready engineering in this hands-on course which is the final part in \"Fundamentals of Generative AI\" specialization. Designed for learners ready to move beyond the theory, this course focuses entirely on construction: you won&#x27;t just learn about Large Language Models (LLMs); you will build, refine, and deploy them. We start at the foundational ..."
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Every model offers a different set of advantages and a window into the seemingly endless possibilities of AI-driven creation. In this article, we&#x27;ll be looking into distinct AI generative, segmented into Text, Image, and Code generative AIs. Before getting into the Top generative AI models, let&#x27;s first understand in brief what is generative AI."
+    },
+    {
+      "title": "Generative AI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai/playbook/technology-guidance/generative-ai/",
+      "snippet": "This section serves as a comprehensive guide for launching, operating, and enhancing Generative AI applications in a production environment. It encapsulates essential capabilities, from delivering innovative experiences to ensuring robust security and privacy, and managing the lifecycle of AI solutions."
+    }
+  ]
+}

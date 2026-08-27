@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szym-onwoj/grounded-language-small",
+  "slug": "szym-onwoj-grounded-language-small",
+  "author": "szym-onwoj",
+  "url": "https://huggingface.co/szym-onwoj/grounded-language-small",
+  "created_at": "2026-08-27T11:47:35.000Z",
+  "updated_at": "2026-08-27T11:47:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Small Language Models: The Complete Guide for 2026",
+      "url": "https://machinelearningmastery.com/introduction-to-small-language-models-the-complete-guide-for-2026/",
+      "snippet": "Learn when small language models outperform large models while cutting AI deployment costs by 95%."
+    },
+    {
+      "title": "Small Language Models | On Ground Labs",
+      "url": "https://ongroundlabs.org/focus/small-language-models",
+      "snippet": "Large models behind data-center APIs struggle in these settings—both economically and technically. We&#x27;re exploring tiny and small language models that can live on affordable hardware, sync opportunistically, and still deliver meaningful tutoring, research assistance, and translation support."
+    },
+    {
+      "title": "Small Language Models (SLM): A Comprehensive Overview",
+      "url": "https://huggingface.co/blog/jjokah/small-language-model",
+      "snippet": "Upload images, audio, and videos by dragging in the text input, pasting, or clicking here."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    },
+    {
+      "title": "Top 15 Small Language Models for 2026 - DataCamp",
+      "url": "https://www.datacamp.com/blog/top-small-language-models",
+      "snippet": "Learn about the top 15 small language models of 2025, including Llama 3.1 8B, Gemma2, Qwen 2, Mistral Nemo, Phi-3.5, and more."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "williamking37/coca-baseline",
+  "slug": "williamking37-coca-baseline",
+  "author": "williamking37",
+  "url": "https://huggingface.co/williamking37/coca-baseline",
+  "created_at": "2026-08-27T14:21:38.000Z",
+  "updated_at": "2026-08-27T14:21:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leamartinson/model_275209502_coca_base · Hugging Face",
+      "url": "https://huggingface.co/leamartinson/model_275209502_coca_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/DQqCESmDsgs/",
+      "snippet": "2,723 likes, 140 comments - chatgptricks on November 4, 2025: \"Coca-Cola dropped a new holiday commercial made entirely with AI, teaming up with Los Angeles studio Secret Level. It&#x27;s a reimagining of..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Tryingopen: try any open model",
+      "url": "https://www.tryingopen.com/",
+      "snippet": "Try 12 open AI models from Alibaba, NVIDIA, DeepSeek, Google, OpenAI, Meta, Moonshot, MiniMax, Thinking Machines and Z.ai in your browser. No account, nothing saved: pick a model, start chatting, and share any chat as a link."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "FionaLiube/contrastive-tryout",
+  "slug": "fionaliube-contrastive-tryout",
+  "author": "FionaLiube",
+  "url": "https://huggingface.co/FionaLiube/contrastive-tryout",
+  "created_at": "2026-08-27T14:23:55.000Z",
+  "updated_at": "2026-08-27T14:24:04.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Explorer - Compare AI Models | Neural Forge",
+      "url": "https://www.neural-forge.io/explorer",
+      "snippet": "Compare major AI models, find the best fit for your workflow, and understand model tradeoffs."
+    },
+    {
+      "title": "arXiv Daily Digest",
+      "url": "https://paper.axi404.top/daily/2026-08-26",
+      "snippet": "Across various model backbones and control frequencies, CAT consistently improves success rates. These results highlight the advantages of trajectory-level continuous action modeling for scalable robotic manipulation across varying control rates."
+    },
+    {
+      "title": "AI Model Compare Tool — Test Prompts Across Multiple Models",
+      "url": "https://aimodelcomparehub.com/compare",
+      "snippet": "Compare AI model responses side-by-side. Test GPT-5, Claude, Gemini, Llama, and more with the same prompt. Free interactive comparison tool."
+    },
+    {
+      "title": "Compare AI Models Side-by-Side (Live Benchmarks) | BenchLM",
+      "url": "https://benchlm.ai/compare",
+      "snippet": "Pick any two of 395 AI models and compare them across 109 live benchmarks — scores, pricing, speed and context, updated with every release. Free, no signup."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "As cross-encoder models, re-ranker demonstrates higher accuracy than bi-encoder embedding model. Utilizing the re-ranking model (e.g., bge-reranker, bge-reranker-v2) after retrieval can further filter the selected text. News: 2024/7/1: We update the MIRACL evaluation results of BGE-M3. To reproduce the new results, you can refer to: bge-m3 ..."
+    }
+  ]
+}

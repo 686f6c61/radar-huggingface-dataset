@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Magnexis/lexiconerror-router-medium",
+  "slug": "magnexis-lexiconerror-router-medium",
+  "author": "Magnexis",
+  "url": "https://huggingface.co/Magnexis/lexiconerror-router-medium",
+  "created_at": "2026-08-27T18:24:05.000Z",
+  "updated_at": "2026-08-27T18:24:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "developer-tools",
+    "compiler-diagnostics",
+    "runtime-exceptions",
+    "error-classification",
+    "tfidf",
+    "text-classification",
+    "dataset:Magnexis/lexiconerror-diagnostics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31217592,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "magnexis.github.io",
+      "url": "https://magnexis.github.io/aquastat/docs/errors.md",
+      "snippet": "- `VALIDATION_ERROR` - `UNAUTHORIZED` - `FORBIDDEN` - `NOT_FOUND` - `METHOD_NOT_ALLOWED` - `RATE_LIMIT_EXCEEDED` - `CONFLICT` - `INTERNAL_SERVER_ERROR` - `SERVICE ..."
+    },
+    {
+      "title": "Verification",
+      "url": "https://agentrouter.org/",
+      "snippet": "Access Verification For better experience, please slide to complete the verification process before accessing the web page."
+    },
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors. vLLM is fast with: State-of-the-art serving throughput Efficient ..."
+    },
+    {
+      "title": "AI Router Vulnerabilities Allow Attackers to Inject Malicious Code and ...",
+      "url": "https://cybersecuritynews.com/ai-router-vulnerabilities/",
+      "snippet": "A critical and largely overlooked attack surface in the AI agent ecosystem, third-party API routers that can be weaponized to silently hijack tool calls, drain cryptocurrency wallets, and exfiltrate sensitive credentials at scale."
+    },
+    {
+      "title": "Chat Errors — Magnesia Docs",
+      "url": "https://magnesia-ai.com/docs/chat/error",
+      "snippet": "Understanding and resolving errors when chatting in Magnesia. Explore Magnesia docs for BYOK setup, RAG workflows, and continuous multi-threaded research conversations across your document library."
+    }
+  ]
+}

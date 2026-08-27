@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "parireddy/multitask-finetune",
+  "slug": "parireddy-multitask-finetune",
+  "author": "parireddy",
+  "url": "https://huggingface.co/parireddy/multitask-finetune",
+  "created_at": "2026-08-27T17:55:21.000Z",
+  "updated_at": "2026-08-27T17:55:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-Task Fine-Tuning: Train One Model for Multiple Objectives in 2025",
+      "url": "https://markaicode.com/multi-task-fine-tuning-guide/",
+      "snippet": "Learn multi-task fine-tuning to train one AI model for multiple objectives. Reduce costs, improve efficiency, and build versatile models with our step-by-step guide."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "Fine-tuning | OpenAI Developers",
+      "url": "https://developers.openai.com/learn/fine-tuning",
+      "snippet": "Fine-tuning resources Cookbook to use model graders for reinforcement fine-tuning in expert tasks."
+    },
+    {
+      "title": "Fine-tuning a Multimodal Model Using SFT (Single or Multi-Image Dataset ...",
+      "url": "https://huggingface.co/docs/trl/main/en/training_vlm_sft",
+      "snippet": "Fine-tuning a Multimodal Model Using SFT (Single or Multi-Image Dataset) Overview This guide walks you through the process of fine-tuning a multimodal language model (e.g., Gemma 3) using Supervised Fine-Tuning (SFT). We cover two cases: Single Image + Text Multi-Image + Text This guide serves as a detailed walkthrough and complements the existing VLM SFT script. If you&#x27;re already familiar ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-base-patch4-window7-224-22k",
+  "slug": "cominder-iwin-base-patch4-window7-224-22k",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-base-patch4-window7-224-22k",
+  "created_at": "2026-08-27T13:16:03.000Z",
+  "updated_at": "2026-08-27T13:17:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-22k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 901003994,
+  "storage_human": "901 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iwin_base_patch4_window7_224.pth · cominder/Iwin-Transformer at main",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_base_patch4_window7_224.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases/download/v1.0/iwin_base_patch4_window7_224_22k.pth",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    },
+    {
+      "title": "Microsoft Update Catalog",
+      "url": "https://catalog.update.microsoft.com/home.aspx",
+      "snippet": "Welcome to the Microsoft Update Catalog site. We want your feedback! Visit our newsgroup or send us an email to provide us with your thoughts and suggestions. To get started using the site, enter in your search terms in the Search box above or visit our FAQ for search tips."
+    },
+    {
+      "title": "Iwin Transformer: Hierarchical Vision Transformer",
+      "url": "https://arxiv.org/html/2507.18405v3",
+      "snippet": "This two-block requirement poses particular challenges in the era of AI generated content (AIGC), where conditioning information such as text prompts must be injected into the model; there is no obvious optimal placement for cross-attention between text and images within this rigid two-block structure, explaining Swin&#x27;s limited adoption in ..."
+    }
+  ]
+}

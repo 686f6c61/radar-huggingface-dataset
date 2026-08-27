@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "oerbas/localpix-realistic-vision-v51",
+  "slug": "oerbas-localpix-realistic-vision-v51",
+  "author": "oerbas",
+  "url": "https://huggingface.co/oerbas/localpix-realistic-vision-v51",
+  "created_at": "2026-08-27T16:54:09.000Z",
+  "updated_at": "2026-08-27T16:56:48.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "stable-diffusion",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 917714736,
+  "storage_human": "918 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stablediffusionapi/realistic-vision-v51 · Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/realistic-vision-v51",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Realistic Vision V6.0 B1 - V5.1 Hyper (VAE) | Stable ... - Civitai",
+      "url": "https://civitai.com/models/4201/realistic-vision-v60-b1",
+      "snippet": "Recommendations for using the Hyper model: Sampler = DPM SDE++ Karras or another / 4-6+ steps CFG Scale = 1.5-2.0 (the lower the value, the more mutations, but the less contrast) I also recommend using ADetailer for generation (some examples were generated with ADetailer, this will be noted in the image comments)."
+    },
+    {
+      "title": "stablediffusionapi/realistic-vision-51 · Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/realistic-vision-51",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "realistic-vision-v51 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/realistic-vision-v51",
+      "snippet": "Replace Key in below code, change model_id to \"realistic-vision-v51\" Coding in PHP/Node/Java etc? Have a look at docs for more code examples: View docs Try model for free: Generate Images Model link: View model View all models: View Models ... Use this coupon code to get 25% off DMGG0RBN by： AI-ModelScope Models 1981 Datasets 798 Follow"
+    },
+    {
+      "title": "Realistic Vision V51 - Stable Diffusion API",
+      "url": "https://stablediffusionapi.com/models/realistic-vision-v51",
+      "snippet": "Use Realistic Vision V51 (Photorealistic Stable Diffusion model) via the Stable Diffusion API — REST endpoint, model_id \"realistic-vision-v51\", free tier, cURL/Python/Node samples."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GermannM/Kenga-Trained",
+  "slug": "germannm-kenga-trained",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/Kenga-Trained",
+  "created_at": "2026-08-27T14:08:57.000Z",
+  "updated_at": "2026-08-27T14:14:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "kenga",
+    "russian",
+    "verified-corpus",
+    "cpu-friendly",
+    "ollama",
+    "text-generation",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073408,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GermannM/kenga-prophet-m5 · Hugging Face",
+      "url": "https://huggingface.co/GermannM/kenga-prophet-m5",
+      "snippet": "Kenga Prophet — M5 (same backbone as M4.2, data-scaled) The experiment this model exists for: keep the architecture and the parameter budget fixed, change only the source and structure of the training signal."
+    },
+    {
+      "title": "GitHub - GermannM3/kenga-lang: Kenga — programming language for living ...",
+      "url": "https://github.com/GermannM3/kenga-lang/tree/main/",
+      "snippet": "Kenga проектируется как язык, где тензор, время жизни памяти (ttl), консолидация и агентный цикл — не библиотеки, а часть семантики."
+    },
+    {
+      "title": "GermannM/kenga-prophet-m5-3 · Hugging Face",
+      "url": "https://huggingface.co/GermannM/kenga-prophet-m5-3",
+      "snippet": "GermannM / kenga-prophet-m5-3 like 0 Text Generation kenga programming-language small-model transformer semantic-binding verified-synthetic-corpus compiler-in-the-loop License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Kenga Prophet — M5.3 (Semantic Binding / Factory v2) The controlled A/B/C result What this proves The fact (14) story (why axis C match is ..."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    }
+  ]
+}

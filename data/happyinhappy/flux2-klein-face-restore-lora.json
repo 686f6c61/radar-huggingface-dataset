@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "happyinhappy/flux2-klein-face-restore-lora",
+  "slug": "happyinhappy-flux2-klein-face-restore-lora",
+  "author": "happyinhappy",
+  "url": "https://huggingface.co/happyinhappy/flux2-klein-face-restore-lora",
+  "created_at": "2026-08-27T15:31:14.000Z",
+  "updated_at": "2026-08-27T15:31:15.000Z",
+  "license": "card-only-weights-not-released",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-image",
+    "lora",
+    "face-restoration",
+    "portrait",
+    "retouching",
+    "flux",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "black-forest-labs/FLUX.2-klein",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tune FLUX.2 [klein] with a LoRA under 60 minutes",
+      "url": "https://huggingface.co/blog/black-forest-labs/flux-2-klein-lora",
+      "snippet": "A Blog post by Black Forest Labs on Hugging Face"
+    },
+    {
+      "title": "Flux2 Klein face expression transfer - 4B v1.0 | Flux.2 Klein LoRA ...",
+      "url": "https://civitai.com/models/2363566/flux2-klein-face-expression-transfer",
+      "snippet": "face expression transfer This is a model that transfers facial expressions from a reference image. It has been primarily trained for transfers between illustrations and is not very good at transfers between realistic images and illustrations. The success rate is higher if the source image and reference image have similar face directions, eye colors, and art styles. for Flux Klein 9B/4B Trigger ..."
+    },
+    {
+      "title": "black-forest-labs/FLUX.2-klein-4B · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux2 Klein Face Swap LoRA | Expression Preservation | ComfyUI ...",
+      "url": "https://www.youtube.com/watch?v=enzrpM91Acg",
+      "snippet": "Mirror deployed within the (workflow, node, model, cue word ...) are noted in the notes, easy to query, efficient use of the mirror"
+    },
+    {
+      "title": "FLUX.2 Klein 9B + Realistic Enhanced Details LoRA | Civitai",
+      "url": "https://civitai.com/articles/27526/flux2-klein-9b-realistic-enhanced-details-lora",
+      "snippet": "FLUX.2 Klein 9B + Realistic Enhanced Details LoRA You have a good image. The composition is right. The pose is right. But it looks digital. Flat. Like it&#x27;s missing the texture and depth of real photography. You don&#x27;t want to regenerate it. You want to push it further. Same image. Same structure. Dramatically more detail and realism. Run it now on Floyo! Why This Setup Is Different Enhancement ..."
+    }
+  ]
+}

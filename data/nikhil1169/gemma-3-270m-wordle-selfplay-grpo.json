@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Nikhil1169/gemma-3-270m-wordle-selfplay-grpo",
+  "slug": "nikhil1169-gemma-3-270m-wordle-selfplay-grpo",
+  "author": "Nikhil1169",
+  "url": "https://huggingface.co/Nikhil1169/gemma-3-270m-wordle-selfplay-grpo",
+  "created_at": "2026-08-27T02:22:55.000Z",
+  "updated_at": "2026-08-27T19:20:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "unsloth",
+    "arxiv:2402.03300",
+    "base_model:unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281353492,
+  "storage_human": "281 MB",
+  "base_model": "unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nikhil1169/gemma-3-270m-wordle-sft-warmup · Hugging Face",
+      "url": "https://huggingface.co/Nikhil1169/gemma-3-270m-wordle-sft-warmup",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nikhil1169/gemma-3-270m-wordle-grpo · Hugging Face",
+      "url": "https://huggingface.co/Nikhil1169/gemma-3-270m-wordle-grpo",
+      "snippet": "Nikhil1169 / gemma-3-270m-wordle-grpo like 0 Transformers Safetensors Generated from Trainer trl unsloth grpo arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/",
+      "snippet": "Gemma 3 270M brings strong instruction-following capabilities to a small-footprint model. As shown by the IFEval benchmark (which tests a model&#x27;s ability to follow verifiable instructions), it establishes a new level of performance for its size, making sophisticated AI capabilities more accessible for on-device and research applications."
+    },
+    {
+      "title": "GitHub - p1kalys/Gemma-3-270M",
+      "url": "https://github.com/p1kalys/Gemma-3-270M",
+      "snippet": "Implemented and fine-tuned Gemma-3 270M, a transformer-based LLM architecture optimized for long context sequences (32k tokens). Explored instruction-tuned variants for conversational AI, demonstrating flexibility in model deployment."
+    }
+  ]
+}

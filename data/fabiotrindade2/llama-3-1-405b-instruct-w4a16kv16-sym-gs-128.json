@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FabioTrindade2/Llama-3.1-405B-Instruct-W4A16KV16-sym-GS-128",
+  "slug": "fabiotrindade2-llama-3-1-405b-instruct-w4a16kv16-sym-gs-128",
+  "author": "FabioTrindade2",
+  "url": "https://huggingface.co/FabioTrindade2/Llama-3.1-405B-Instruct-W4A16KV16-sym-GS-128",
+  "created_at": "2026-08-27T17:25:28.000Z",
+  "updated_at": "2026-08-27T17:25:28.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "llama-3.1",
+    "llama-3.1-8b-instruct",
+    "instruct",
+    "quantized",
+    "built-with-llama",
+    "base_model:meta-llama/Llama-3.1-405B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-405B-Instruct",
+    "license:llama3.1",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57550522084,
+  "parameters_human": "57.55B",
+  "storage_bytes": 215530237496,
+  "storage_human": "215.5 GB",
+  "base_model": "meta-llama/Llama-3.1-405B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-405B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-405B",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out)."
+    },
+    {
+      "title": "Meta-Llama-3.1-405B-Instruct-AWQ-INT4 - Hugging Face",
+      "url": "https://huggingface.co/hugging-quants/Meta-Llama-3.1-405B-Instruct-AWQ-INT4",
+      "snippet": "This repository is a community-driven quantized version of the original model meta-llama/Meta-Llama-3.1-405B-Instruct which is the FP16 half-precision official version released by Meta AI."
+    },
+    {
+      "title": "Meta Llama 3.1 405B Instruct - Meta | Model Documentation",
+      "url": "https://langmart.ai/model-docs/models/meta-llama_llama-3.1-405b-instruct.html",
+      "snippet": "Description Llama 3.1 405B Instruct is Meta&#x27;s largest and most capable open-source language model, representing their flagship offering in the Llama 3.1 series. This 405-billion parameter model features a 128K token context window and demonstrates competitive performance against leading closed-source models including GPT-4o and Claude 3.5 Sonnet in benchmark evaluations. The model was fine ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-405B-Instruct-GPTQ-INT4 · Models",
+      "url": "https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3.1-405B-Instruct-GPTQ-INT4",
+      "snippet": "IMPORTANT This repository is a community-driven quantized version of the original model meta-llama/Meta-Llama-3.1-405B-Instruct which is the FP16 half-precision official version released by Meta AI."
+    },
+    {
+      "title": "Meta-Llama-3.1-405B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3.1-405B-Instruct/summary",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models ..."
+    }
+  ]
+}

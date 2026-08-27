@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "oerbas/localpix-toonyou",
+  "slug": "oerbas-localpix-toonyou",
+  "author": "oerbas",
+  "url": "https://huggingface.co/oerbas/localpix-toonyou",
+  "created_at": "2026-08-27T17:18:33.000Z",
+  "updated_at": "2026-08-27T17:21:12.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "stable-diffusion",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 917921103,
+  "storage_human": "918 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ToonYou - Beta 6 | Stable Diffusion 1.x Checkpoint - Civitai",
+      "url": "https://civitai.com/models/30240/toonyou",
+      "snippet": "ToonYou - Beta 6 is up! Silly, stylish, and.. kind of cute? 😅 A bit of detail with a cartoony feel, it keeps getting better! With your support, ToonYou has come this far, Thx! ⬇Please read the information below🙏 1️⃣Recommended Settings - VAE is included starting with Alpha2 (840000) - Clip skip: 2 - CFG scale: 8 - Sampler: DPM++ SDE Karras Sampling Steps : 30+ - Upscaler (Hires ..."
+    },
+    {
+      "title": "imagepipeline/ToonYou · Hugging Face",
+      "url": "https://huggingface.co/imagepipeline/ToonYou",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mr-J-369/ToonYou-SD1.5-qnn2.28 · Hugging Face",
+      "url": "https://huggingface.co/Mr-J-369/ToonYou-SD1.5-qnn2.28",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stablediffusionapi/toonyou · Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/toonyou",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ToonYou - Beta 3 - Free AI CHECKPOINT - tensor.art",
+      "url": "https://tensor.art/models/620996325028155905",
+      "snippet": "Download ToonYou - free CHECKPOINT SD 1.5 AI model on TENSOR. Anima, Anime, Illustration. By Bradcatt"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "maximilian-meyer/swin-t-demo",
+  "slug": "maximilian-meyer-swin-t-demo",
+  "author": "maximilian-meyer",
+  "url": "https://huggingface.co/maximilian-meyer/swin-t-demo",
+  "created_at": "2026-08-27T18:53:06.000Z",
+  "updated_at": "2026-08-27T18:53:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swin_t — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.swin_transformer.SwinTransformer base class. Please refer to the source code for more details about this class. class torchvision.models.Swin_T_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "Swin-Transformer/main_moe.py at main - GitHub",
+      "url": "https://github.com/microsoft/Swin-Transformer/blob/main/main_moe.py",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "Video Swin Transformer is released at Video-Swin-Transformer. Video Swin Transformer achieves state-of-the-art accuracy on a broad range of video recognition benchmarks, including action recognition (84.9 top-1 accuracy on Kinetics-400 and 86.1 top-1 accuracy on Kinetics-600 with ~20x less pre-training data and ~3x smaller model size) and ..."
+    },
+    {
+      "title": "Swin Transfomer.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/dzlab/notebooks/blob/master/_notebooks/2022-02-27-Swin_Transfomer.ipynb",
+      "snippet": "Key differences between Swin Transformer and original Vision Transformer (ViT) model is that ViT produced feature maps of a single low resolution and because it uses a global self-attention ViT has a quadratic computation complexity to input image size. On the other hand, Swin Transformer builds hierarchical feature maps by merging image patches and it has a linear computation complexity to ..."
+    },
+    {
+      "title": "Swin Transformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin",
+      "snippet": "Swin Transformer is a hierarchical vision transformer. Images are processed in patches and windowed self-attention is used to capture local information. These windows are shifted across the image to allow for cross-window connections, capturing global information more efficiently. This hierarchical approach with shifted windows allows the Swin Transformer to process images effectively at ..."
+    }
+  ]
+}

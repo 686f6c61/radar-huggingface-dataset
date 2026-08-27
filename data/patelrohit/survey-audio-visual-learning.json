@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Patelrohit/survey-audio-visual-learning",
+  "slug": "patelrohit-survey-audio-visual-learning",
+  "author": "Patelrohit",
+  "url": "https://huggingface.co/Patelrohit/survey-audio-visual-learning",
+  "created_at": "2026-08-27T13:14:01.000Z",
+  "updated_at": "2026-08-27T13:14:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‪Rohit Patel‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=06gmy0QAAAAJ&hl=en",
+      "snippet": "‪Meta Platforms Inc., Kellogg School of Management‬ - ‪‪Cited by 19,523‬‬ - ‪Artificial Intelligence‬ - ‪Machine Learning‬ - ‪Economics‬"
+    },
+    {
+      "title": "[2001.04758] Deep Audio-Visual Learning: A Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2001.04758",
+      "snippet": "In this paper, we provide a comprehensive survey of recent audio-visual learning development. We divide the current audio-visual learning tasks into four different subfields: audio-visual separation and localization, audio-visual correspondence learning, audio-visual generation, and audio-visual representation learning."
+    },
+    {
+      "title": "[2208.09579] Learning in Audio-visual Context: A Review, Analysis, and ...",
+      "url": "https://arxiv.org/abs/2208.09579",
+      "snippet": "Sight and hearing are two senses that play a vital role in human communication and scene understanding. To mimic human perception ability, audio-visual learning, aimed at developing computational approaches to learn from both audio and visual modalities, has been a flourishing field in recent years. A comprehensive survey that can systematically organize and analyze studies of the audio-visual ..."
+    },
+    {
+      "title": "A survey on audio-visual large language models - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705126012955",
+      "snippet": "In this context, audio-visual large language models (AV-LLMs) mark a significant progression in multimodal representation learning through joint encoding and cross-modal alignment of auditory, visual, and linguistic modalities."
+    },
+    {
+      "title": "Papers by Rohit Patel — AI Research Profile",
+      "url": "https://www.aimodels.fyi/author-profile/rohit-patel-6e7014aa-2c70-4f9a-88f8-52c9a87ed583",
+      "snippet": "Browse AI research papers authored by Rohit Patel. 5 indexed papers. Collaborates with Xiao Yang, Xin Luna Dong, Nicolas Scheffer and others."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "manojpaul9986/blip-ecommerce-vqa-lora",
+  "slug": "manojpaul9986-blip-ecommerce-vqa-lora",
+  "author": "manojpaul9986",
+  "url": "https://huggingface.co/manojpaul9986/blip-ecommerce-vqa-lora",
+  "created_at": "2026-08-27T14:42:51.000Z",
+  "updated_at": "2026-08-27T14:42:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34389504,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vamsee2947/Efficient-LoRA-based-Fine-Tuning-of-VLM-for-VQA",
+      "url": "https://github.com/vamsee2947/Efficient-LoRA-based-Fine-Tuning-of-VLM-for-VQA",
+      "snippet": "This repository provides code and examples for efficient parameter-efficient fine-tuning (PEFT) of BLIP-2 vision-language models with a LLaMA-2 7B backbone using LoRA adapters. It supports: 4-bit quantized model loading with bitsandbytes for low memory footprint LoRA for fine-tuning on limited GPU (e.g. RTX 4050, Google Colab) VQA tasks using a subset of the VQA v2 dataset Interactive Colab ..."
+    },
+    {
+      "title": "Salesforce/blip-vqa-base · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-vqa-base",
+      "snippet": "We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse ..."
+    },
+    {
+      "title": "Fine-Tuning Vision-Language Models for Visual Navigation Assistance",
+      "url": "https://arxiv.org/html/2509.07488v1",
+      "snippet": "We fine-tune the BLIP-2 model with Low Rank Adaptation (LoRA) on a manually annotated indoor navigation dataset. We propose an evaluation metric that refines the BERT F1 score by emphasizing &#x27;directional&#x27; and &#x27;sequential&#x27; variables, providing a more comprehensive measure of navigational performance."
+    },
+    {
+      "title": "Hyma067/blip-vqa-lora-finetuned · Hugging Face",
+      "url": "https://huggingface.co/Hyma067/blip-vqa-lora-finetuned",
+      "snippet": "Use this model Configuration Parsing Warning: In adapter_config.json: \"peft.task_type\" must be a string Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details ..."
+    },
+    {
+      "title": "GitHub - Sirishamahadevuni/VQA_on_E-commerce-Images",
+      "url": "https://github.com/Sirishamahadevuni/VQA_on_E-commerce-Images",
+      "snippet": "Data Curation: Create a VQA dataset with 24,312 QA pairs (19,464 train, 4,848 validation) using the ABO small variant (147,702 listings, 398,212 images). Baseline Evaluation: Assess pre-trained BLIP, BLIP-2, and ViLT models on the dataset without fine-tuning. Fine-Tuning: Improve model performance using Low-Rank Adaptation (LoRA) within Kaggle&#x27;s 2×16GB GPU constraints. Evaluation: Analyze ..."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "RheoEcho/ETET-1.0-24E-1.8B-A1B-Preview",
+  "slug": "rheoecho-etet-1-0-24e-1-8b-a1b-preview",
+  "author": "RheoEcho",
+  "url": "https://huggingface.co/RheoEcho/ETET-1.0-24E-1.8B-A1B-Preview",
+  "created_at": "2026-08-27T16:55:42.000Z",
+  "updated_at": "2026-08-27T17:35:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "multimodal",
+    "vision-language-model",
+    "etet",
+    "etetmoe",
+    "moe",
+    "mixture-of-experts",
+    "siglip",
+    "rheoecho",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3714995648,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Rheoecho-Studio/ETETMoE: ETETMoE is the multimodal MoE ...",
+      "url": "https://github.com/Rheoecho-Studio/ETETMoE",
+      "snippet": "ETETMoE is the multimodal MoE architecture and pipeline built by RheoEcho based on the idea of Dense-to-MoE Sparse Upcycling. It is not only committed to running models on edge devices, but also to letting low-compute devices successfully run the entire training pipeline end to end. Its efficient MoE architecture brings high-performance multimodal large models to every device."
+    },
+    {
+      "title": "LiquidAI/LFM2-8B-A1B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-8B-A1B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-8B-A1B"
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    },
+    {
+      "title": "RheoEcho",
+      "url": "https://rheoecho.fyi/",
+      "snippet": "A variety of cross-platform variants meet your different web browsing needs"
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    }
+  ]
+}

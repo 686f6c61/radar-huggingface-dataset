@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kelseylmartin/GFIT_v3",
+  "slug": "kelseylmartin-gfit_v3",
+  "author": "kelseylmartin",
+  "url": "https://huggingface.co/kelseylmartin/GFIT_v3",
+  "created_at": "2026-08-18T21:03:48.000Z",
+  "updated_at": "2026-08-27T16:59:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "object-detection",
+    "object-tracking",
+    "marine-biology",
+    "bytetrack",
+    "yolo",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kelseylmartin · GitHub",
+      "url": "https://github.com/kelseylmartin",
+      "snippet": "kelseylmartin has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Gfit-Ai · GitHub",
+      "url": "https://github.com/Gfit-Ai",
+      "snippet": "Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you."
+    },
+    {
+      "title": "GitFit.AI - AI Calorie Counter, Habit Tracker & Fitness Logger",
+      "url": "https://www.gitfit.ai/",
+      "snippet": "Snap meal pics and describe, AI counts your calories, fiber, protein, exercises, and activities with clean shareable contribution charts"
+    },
+    {
+      "title": "ModelFit | Find the Best Local AI Model for Your Hardware",
+      "url": "https://modelfit.io/",
+      "snippet": "Find the Best Local AI Model for Your Device Tell us your hardware and get the single best local LLM it can actually run: one verified pick sized to your exact memory, not a generic chatbot guess. Honest speed and quality estimates for Apple Silicon, iPhone, NVIDIA, and AMD."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    }
+  ]
+}

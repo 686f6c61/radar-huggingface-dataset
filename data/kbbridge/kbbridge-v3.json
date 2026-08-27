@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "KBBridge/KBBridge-v3",
+  "slug": "kbbridge-kbbridge-v3",
+  "author": "KBBridge",
+  "url": "https://huggingface.co/KBBridge/KBBridge-v3",
+  "created_at": "2026-08-27T13:17:13.000Z",
+  "updated_at": "2026-08-27T13:44:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "genexus",
+    "code-generation",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582995821,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kbbridge · PyPI",
+      "url": "https://pypi.org/project/kbbridge/",
+      "snippet": "kbbridge 0.3.0 MCP server for intelligent knowledge base search and retrieval with Dify integration"
+    },
+    {
+      "title": "KBbridge — El puente entre GeneXus y AI Coding",
+      "url": "https://kbbridge.com/",
+      "snippet": "Conectá tu Knowledge Base a Claude, ChatGPT, Cursor y otros LLMs. Recuperá productividad sin abandonar GeneXus."
+    },
+    {
+      "title": "Your Knowledge Base, AI, and control of your data: how KBbridge works ...",
+      "url": "https://kbbridge.com/blog/your-knowledge-base-ai-and-control",
+      "snippet": "The questions about AI and security are the right ones. Here&#x27;s how it actually works — no marketing: local externalization, a 100% offline documentation engine, and you choose the LLM."
+    },
+    {
+      "title": "Kb-Bridge: Intelligent Knowledge Base Search & RAG Server",
+      "url": "https://mcpmarket.com/server/kb-bridge",
+      "snippet": "Kb-Bridge is an intelligent Model Context Protocol (MCP) server engineered to significantly enhance knowledge base search and retrieval. It features an extensible architecture that supports multiple retrieval backend providers, ensuring flexibility across various data sources. The server offers a comprehensive suite of search methods, including hybrid, semantic, keyword, and full-text search ..."
+    },
+    {
+      "title": "Hands-On: `kb-bridge` for Context-Aware Knowledge Base Search",
+      "url": "https://egpivo.github.io/2025/11/15/kb-bridge-hands-on-tutorial.html",
+      "snippet": "In the previous posts (Part 1, Part 2, Part 3) I showed how we built the context-aware retriever. This post covers how to use kb-bridge, the Python package that exposes it. Modern RAG stacks are powerful but brittle—each new trick (GraphRAG, PageIndex, reranker cascades, etc.) helps some queries and hurts others. kb-bridge acts as an adapter instead of a replacement: it layers direct search ..."
+    }
+  ]
+}

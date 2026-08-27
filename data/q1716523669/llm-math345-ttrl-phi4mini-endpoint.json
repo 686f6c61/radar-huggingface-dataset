@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "q1716523669/llm-math345-ttrl-phi4mini-endpoint",
+  "slug": "q1716523669-llm-math345-ttrl-phi4mini-endpoint",
+  "author": "q1716523669",
+  "url": "https://huggingface.co/q1716523669/llm-math345-ttrl-phi4mini-endpoint",
+  "created_at": "2026-08-27T16:12:51.000Z",
+  "updated_at": "2026-08-27T16:15:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "custom_code",
+    "arxiv:2402.03300",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 199680,
+  "parameters_human": "199680",
+  "storage_bytes": 7687600120,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "q1716523669/llm-math345-ttrl-granite2b-endpoint · Hugging Face",
+      "url": "https://huggingface.co/q1716523669/llm-math345-ttrl-granite2b-endpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "llm-math345-gt-phi4mini-endpoint API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/q1716523669/llm-math345-gt-phi4mini-endpoint",
+      "snippet": "Deploy llm-math345-gt-phi4mini-endpoint with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Phi-4-mini-instruct",
+      "snippet": "Phi-4-mini-instruct is a dense decoder-only Transformer model with 3.8B parameters, offering key improvements over Phi-3.5-Mini, including a 200K vocabulary, grouped-query attention, and shared embedding. It is designed for chat-completion prompts, generating text based on user input, with a context length of 128K tokens."
+    }
+  ]
+}

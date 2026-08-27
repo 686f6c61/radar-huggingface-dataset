@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "charlotterose/blip-finetuned",
+  "slug": "charlotterose-blip-finetuned",
+  "author": "charlotterose",
+  "url": "https://huggingface.co/charlotterose/blip-finetuned",
+  "created_at": "2026-08-27T17:06:23.000Z",
+  "updated_at": "2026-08-27T17:06:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luisdomene4/BLIP2-Finetune-Recipes · Hugging Face",
+      "url": "https://huggingface.co/luisdomene4/BLIP2-Finetune-Recipes",
+      "snippet": "The model is capable of zero-shot image-to-text generation and can follow natural language instructions. Developed by: Salesforce AI Research Funded by: Salesforce Shared by: Official BLIP-2 repository Model type: Vision-language model Language (s): English Finetuned from model: BLIP-2 base pretrained on COCO dataset Model Sources ..."
+    },
+    {
+      "title": "Fine-Tuning BLIP Model on Flickr 8k Dataset Using PEFT LoRA",
+      "url": "https://github.com/mirHasnain/Fine-tuning-BLIP-multi-modal-for-Image-Captioning",
+      "snippet": "The BLIP model is a state-of-the-art architecture for image captioning and visual question answering. By fine-tuning the model on the Flickr 8k dataset, we leverage LoRA, a PEFT technique, to achieve efficient training and improve the model&#x27;s performance in generating accurate and meaningful captions."
+    },
+    {
+      "title": "VLM Fine-Tuning Using BLIP - GitHub",
+      "url": "https://github.com/ashkunwar/VLM-Finetuning-using-BLIP",
+      "snippet": "Welcome to this project showcasing Vision-Language Model (VLM) fine-tuning using BLIP (Bootstrapped Language-Image Pretraining). This notebook offers a step-by-step tutorial on how to fine-tune BLIP models for vision-language tasks, empowering you to build intelligent, multimodal systems that understand both text and images."
+    },
+    {
+      "title": "candra/blip-image-captioning-finetuned · Hugging Face",
+      "url": "https://huggingface.co/candra/blip-image-captioning-finetuned",
+      "snippet": "🖼️ BLIP Image Captioning — Finetuned (candra/blip-image-captioning-finetuned) This model is a BLIP (Bootstrapping Language-Image Pretraining) model fine-tuned for image captioning. It takes an image as input and generates a descriptive caption. Additionally, it can convert that caption into cleaned, hashtag-friendly keywords. 🔧 Model Details Base model: Salesforce/blip-image ..."
+    },
+    {
+      "title": "MedBLIP: Fine-tuning BLIP for Medical Image Captioning",
+      "url": "https://arxiv.org/html/2505.14726v1",
+      "snippet": "The base BLIP model distributes attention diffusely and often fixates on irrelevant areas, producing a generic and clinically inaccurate caption. In contrast, fine-tuned models (both encoder-only and full fine-tuning) exhibit more localized attention over key anatomical regions—such as the lungs—when generating terms like \"pleural ..."
+    }
+  ]
+}

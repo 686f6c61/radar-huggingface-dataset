@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lemonade44/nong-trongpok-lora",
+  "slug": "lemonade44-nong-trongpok-lora",
+  "author": "Lemonade44",
+  "url": "https://huggingface.co/Lemonade44/nong-trongpok-lora",
+  "created_at": "2026-08-27T17:52:23.000Z",
+  "updated_at": "2026-08-27T17:52:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "thai",
+    "interview",
+    "lora",
+    "typhoon",
+    "th",
+    "base_model:typhoon-ai/typhoon2.5-qwen3-4b",
+    "base_model:adapter:typhoon-ai/typhoon2.5-qwen3-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77549422,
+  "storage_human": "78 MB",
+  "base_model": "scb10x/typhoon2.5-qwen3-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,863 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Lemonade",
+      "url": "https://lemonade.gg/",
+      "snippet": "The first agent for making games on Roblox."
+    },
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

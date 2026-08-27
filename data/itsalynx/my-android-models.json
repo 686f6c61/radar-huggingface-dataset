@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ItsAlynx/my-android-models",
+  "slug": "itsalynx-my-android-models",
+  "author": "ItsAlynx",
+  "url": "https://huggingface.co/ItsAlynx/my-android-models",
+  "created_at": "2026-08-27T13:34:03.000Z",
+  "updated_at": "2026-08-27T13:34:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to bring your AI Model to Android devices",
+      "url": "https://android-developers.googleblog.com/2024/10/bring-your-ai-model-to-android-devices.html",
+      "snippet": "Bring your AI models to Android devices using Google&#x27;s AI Edge platform, with tools and frameworks for building, deploying, and optimizing AI models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "AI on Android | Android Developers",
+      "url": "https://developer.android.com/ai",
+      "snippet": "Android is evolving into an intelligence system, powered by AI. Integrate your app through a self-service model, and become part of the next generation of intelligent experiences on Android."
+    },
+    {
+      "title": "GitHub - android/ai-samples",
+      "url": "https://github.com/android/ai-samples",
+      "snippet": "Welcome to the official repository for Android Artificial Intelligence (AI) sample applications and developer tools. This repository contains various self-contained samples and modules illustrating how to leverage Generative AI capabilities on Android, utilizing both on-device and cloud-based models."
+    },
+    {
+      "title": "Is This Image AI Generated? — Free AI Image Detector & Checker",
+      "url": "https://isthisimage.ai/",
+      "snippet": "What You Can Check With This AI Image Detector Profile Pictures and Avatars Wondering if a dating profile or social media account is using an AI-generated face? Run the photo through this AI picture detector before you trust — or match with — a stranger online."
+    }
+  ]
+}

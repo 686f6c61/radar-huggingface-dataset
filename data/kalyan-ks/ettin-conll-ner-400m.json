@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kalyan-ks/ettin-conll-ner-400m",
+  "slug": "kalyan-ks-ettin-conll-ner-400m",
+  "author": "kalyan-ks",
+  "url": "https://huggingface.co/kalyan-ks/ettin-conll-ner-400m",
+  "created_at": "2026-08-27T12:30:00.000Z",
+  "updated_at": "2026-08-27T12:30:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395840521,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583380340,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kalyan-ks/ettin-conll-ner-17m · Hugging Face",
+      "url": "https://huggingface.co/kalyan-ks/ettin-conll-ner-17m",
+      "snippet": "Instructions to use kalyan-ks/ettin-conll-ner-17m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use kalyan-ks/ettin-conll-ner-17m with Transformers:"
+    },
+    {
+      "title": "kalyan-ks (Kalyan KS) - Hugging Face",
+      "url": "https://huggingface.co/kalyan-ks/models",
+      "snippet": "Organizations kalyan-ks&#x27;s models3 Sort: Recently updated kalyan-ks/ettin-32m-nemotron-pii Token Classification • 32.1M•Updated 17 days ago• 166 • 1"
+    },
+    {
+      "title": "KalyanKS-NLP (Kalyan KS) · GitHub",
+      "url": "https://github.com/KalyanKS-NLP/",
+      "snippet": "I (Katikapalli Subramanyam Kalyan - shortly Kalyan KS) am a passionate NLP Consultant and Researcher with over 7 years of research experience and 1500+ citations (Google Scholar) Research Interests: Large Language Models and relevant topics like LLM Evaluation, RAG Evaluation, Synthetic Data Generation etc. Served in the program committees of prestigious conferences like ACL and symposiums ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/html/2507.11412v1",
+      "snippet": "Orion Wellerι{}^{&#92;hskip 0.81949pt&#92;hskip 0.81949pt{&#92;color[rgb]{0,0,1}&#92;definecolor[named]{pgfstrokecolor}{rgb}{0,0,1}&#92;boldsymbol{&#92;iota}}}start_FLOATSUPERSCRIPT bold ..."
+    },
+    {
+      "title": "GitHub - KalyanKS-NLP/llm-engineer-toolkit: A curated list of 120+ LLM ...",
+      "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
+      "snippet": "This repository contains a curated list of 120+ LLM libraries category wise."
+    }
+  ]
+}

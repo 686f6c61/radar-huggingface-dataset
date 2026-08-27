@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Karanpatel99/classification-alpha",
+  "slug": "karanpatel99-classification-alpha",
+  "author": "Karanpatel99",
+  "url": "https://huggingface.co/Karanpatel99/classification-alpha",
+  "created_at": "2026-08-27T12:44:51.000Z",
+  "updated_at": "2026-08-27T12:45:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Karan-990/classification-model---build-a-model-that ... - GitHub",
+      "url": "https://github.com/Karan-990/classification-model---build-a-model-that-classification-the-side-effects-of-drug",
+      "snippet": "📌 Project Overview This project builds a classification model to predict the side effects of a drug based on patient attributes. Several machine learning models were trained and evaluated, with Random Forest achieving the highest accuracy of 98.33%."
+    },
+    {
+      "title": "AI-Research-Project-5/5_Research_Assignment_Karan_Patel ... - GitHub",
+      "url": "https://github.com/karan5p/AI-Research-Project-5/blob/main/5_Research_Assignment_Karan_Patel_Classification.ipynb",
+      "snippet": "Contribute to karan5p/AI-Research-Project-5 development by creating an account on GitHub."
+    },
+    {
+      "title": "Karan Patel Portfolio",
+      "url": "https://karanpokar.github.io/",
+      "snippet": "Credit Card Fraud Detection Created using Oversampled highly Unbalanced Dataset. This model is created using Ensembling Technique &#x27;Random Forest Classifier&#x27; with F1 Score of 99.994% Find out more Certificates Karan&#x27;s Publications Github Instagram Mail LinkedIn"
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    }
+  ]
+}

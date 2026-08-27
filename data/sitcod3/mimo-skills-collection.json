@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sitcod3/mimo-skills-collection",
+  "slug": "sitcod3-mimo-skills-collection",
+  "author": "sitcod3",
+  "url": "https://huggingface.co/sitcod3/mimo-skills-collection",
+  "created_at": "2026-08-27T18:37:10.000Z",
+  "updated_at": "2026-08-27T18:38:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sitcod3 Lab - a Hugging Face Space by uranusmediaconn",
+      "url": "https://huggingface.co/spaces/uranusmediaconn/MojaWebstrana_Sitcod3",
+      "snippet": "Sitcod3 Lab Where the art of code meets the science of intelligence. A research laboratory forging autonomous agents with semantic cognition, MCP-native integration, and DevSecOps orchestration."
+    },
+    {
+      "title": "GitHub - XiaomiMiMo/MiMo-Skills: Agent skills for Xiaomi MiMo series.",
+      "url": "https://github.com/XiaomiMiMo/MiMo-Skills",
+      "snippet": "Agent skills for Xiaomi MiMo series. Contribute to XiaomiMiMo/MiMo-Skills development by creating an account on GitHub."
+    },
+    {
+      "title": "Sitcod3 Lab - a Hugging Face Space by sitcod3",
+      "url": "https://huggingface.co/spaces/sitcod3/MojaWebstrana_Sitcod3",
+      "snippet": "Sitcod3 Lab&#x27;s website lets you browse its AI agent projects, read documentation, and request access to the Caliper_A1 autonomous system. You can also fill out a simple contact form with your name, ..."
+    },
+    {
+      "title": "Xiaomi MiMo - GitHub",
+      "url": "https://github.com/XiaomiMiMo",
+      "snippet": "MiMo-V2-Flash: Efficient Reasoning, Coding, and Agentic Foundation Model 1.4k 64"
+    },
+    {
+      "title": "Agent Skills - mimo.xiaomi.com",
+      "url": "https://mimo.xiaomi.com/mimocode/skills",
+      "snippet": "Agent Skills Agent skills let MiMo Code discover reusable instructions from your repo or home directory. Skills are loaded on-demand via the native skill tool—agents see available skills and can load the full content when needed."
+    }
+  ]
+}

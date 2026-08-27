@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Inspector-MLX",
+  "slug": "amaimedia-noesis-qwopus3-5-0-8b-v3-inspector-mlx",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Inspector-MLX",
+  "created_at": "2026-08-27T18:20:04.000Z",
+  "updated_at": "2026-08-27T18:50:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "qwen3.5-201-languages",
+    "supports-201-languages",
+    "multilingual",
+    "language-support",
+    "noesis",
+    "qwopus3.5",
+    "inspector",
+    "original-trained-model",
+    "bfloat16",
+    "apple-silicon",
+    "noesis-dhcf-fno",
+    "amaimedia",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816698,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Director-Q8_0 · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Director-Q8_0",
+      "snippet": "AMAImedia NOESIS Qwopus3.5 v3 Director GGUF model. This repository contains the standalone Q8_0 GGUF artifact for lightweight routing and agent-direction decisions."
+    },
+    {
+      "title": "AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Inspector-Q8_0 · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Inspector-Q8_0",
+      "snippet": "AMAImedia NOESIS Qwopus3.5 v3 Inspector GGUF model. This repository contains the standalone Q8_0 GGUF artifact for lightweight inspection, validation, and agent-quality checks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Rich Whitehouse",
+      "url": "https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91",
+      "snippet": "Noesis is a tool for previewing and converting between hundreds of model, image, and animation formats. It utilizes a robust plugin system, with support for native extension modules and Python scripts. The plugin/script API features hundreds of functions and interfaces which assist in developing new formats, tools, and visualization aids."
+    },
+    {
+      "title": "Qwopus vs. Qwen3.5: Trading Accuracy for Efficiency?",
+      "url": "https://kaitchup.substack.com/p/qwopus-vs-qwen35-trading-accuracy",
+      "snippet": "Qwopus uses a light, careful post-training recipe that preserves the base model&#x27;s strengths surprisingly well while making it much more token-efficient. To test it, I benchmarked Qwopus against Qwen3.5 27B across multiple tasks, measuring both raw accuracy and token efficiency. The results are below. How Was Qwopus Trained?"
+    }
+  ]
+}

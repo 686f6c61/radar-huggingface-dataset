@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ArchSpace-Collection/NCP_Olmo3_Stage1_Step800000",
+  "slug": "archspace-collection-ncp_olmo3_stage1_step800000",
+  "author": "ArchSpace-Collection",
+  "url": "https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step800000",
+  "created_at": "2026-08-27T12:44:18.000Z",
+  "updated_at": "2026-08-27T12:46:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ncp_olmo3",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8938363792,
+  "parameters_human": "8.94B",
+  "storage_bytes": 17876828154,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArchSpace-Collection/NCP_Olmo3_Stage1_Step800000 · Hugging Face",
+      "url": "https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step800000",
+      "snippet": "The model is stored in the NCP-Olmo3-step-800000/ subdirectory of the Hugging Face repository. Download that subdirectory first because the custom loader expects a local model directory."
+    },
+    {
+      "title": "ArchSpace-Collection/NCP_Olmo3_Stage1_StepLast · Hugging Face",
+      "url": "https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_StepLast",
+      "snippet": "The following results compare the final NCP-Olmo3 checkpoint with OLMo-Stage1. On intermediate-checkpoint pages, this table is provided as a reference to the final model rather than as an evaluation of the checkpoint on this page."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/pdf/2512.13961",
+      "snippet": "Olmo 3 model should make its entire model flow—not just its endpoint—transparent and accessible. With the release, we provide complete access to the pathways we charted throughout the model flow, from initial conception to the creation of state-of-the-art, fully-open language models."
+    },
+    {
+      "title": "GitHub - InternLM/archspace: Turning LLM architecture exploration into ...",
+      "url": "https://github.com/InternLM/archspace",
+      "snippet": "ArchSpace is an open experiment for large language model (LLM) architecture innovation. We place architecture hypotheses proposed by the community into transparent, traceable, and reproducible training and evaluation workflows, then turn successful findings, negative results, and design trade-offs into shared knowledge assets."
+    }
+  ]
+}

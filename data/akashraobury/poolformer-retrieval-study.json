@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Akashraobury/poolformer-retrieval-study",
+  "slug": "akashraobury-poolformer-retrieval-study",
+  "author": "Akashraobury",
+  "url": "https://huggingface.co/Akashraobury/poolformer-retrieval-study",
+  "created_at": "2026-08-27T17:53:24.000Z",
+  "updated_at": "2026-08-27T17:53:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2510.02206] Poolformer: Recurrent Networks with Pooling for Long ...",
+      "url": "https://arxiv.org/abs/2510.02206",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    },
+    {
+      "title": "Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling",
+      "url": "https://arxiv.org/pdf/2510.02206v1",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "DeepLearning/model/PoolFormer at main - GitHub",
+      "url": "https://github.com/562590763/DeepLearning/tree/main/model/PoolFormer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance."
+    },
+    {
+      "title": "Poolformer: Recurrent Pooling for Long Sequences",
+      "url": "https://www.emergentmind.com/papers/2510.02206",
+      "snippet": "Theoretical and Practical Implications The recursive, pooling-based design of Poolformer provides a scalable alternative to self-attention for long-sequence modeling. By leveraging hierarchical pooling, the model efficiently reduces sequence length, enabling deep layers to focus on global dependencies while shallow layers capture local structure."
+    }
+  ]
+}

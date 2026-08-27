@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justpriscilaferreira/matching20",
+  "slug": "justpriscilaferreira-matching20",
+  "author": "Justpriscilaferreira",
+  "url": "https://huggingface.co/Justpriscilaferreira/matching20",
+  "created_at": "2026-08-27T15:36:44.000Z",
+  "updated_at": "2026-08-27T15:36:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JustModels.ai | Create & Train Custom AI Models (No Code)",
+      "url": "https://www.justmodels.ai/",
+      "snippet": "How does JustModels.ai compare to other AI platforms? JustModels.ai is the only no-code platform that combines custom LoRA model training, text-to-image, text-to-video, image-to-video, and ReelsRecreator in one place. Competitors like Civitai require technical knowledge, and platforms like Leonardo.ai lack custom training and video recreation features."
+    },
+    {
+      "title": "Train Custom AI Models | Upload Photos, Generate Anything",
+      "url": "https://www.justmodels.ai/train",
+      "snippet": "Train a custom AI model on any face or style with just 30-50 photos. Create AI influencers, fantasy characters & digital twins. No code. Start free."
+    },
+    {
+      "title": "Find a Model by Photo — Visual Face Search — GetModel",
+      "url": "https://getmodel.com/find/",
+      "snippet": "Upload a photo to identify a fashion model — or find the closest-looking models — in our directory of 1,000+ models. Free visual face search by GetModel."
+    },
+    {
+      "title": "AI Generated Model Detector | Check Fake Model Images - Pixivera",
+      "url": "https://pixivera.com/ai-generated-model-detector.html",
+      "snippet": "Use the AI generated model detector from Pixivera to identify fake model photos, synthetic beauty portraits, edited fashion images, and suspicious profile pictures."
+    },
+    {
+      "title": "ModelMatch - Compare AI Models Side by Side",
+      "url": "https://modelmatch.dynamikapps.com/",
+      "snippet": "ModelMatch lets you interact with and compare 20+ leading AI models including GPT-4, Claude, Gemini, Llama, and more through a unified interface."
+    }
+  ]
+}

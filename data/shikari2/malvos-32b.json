@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SHIKARI2/Malvos-32B",
+  "slug": "shikari2-malvos-32b",
+  "author": "SHIKARI2",
+  "url": "https://huggingface.co/SHIKARI2/Malvos-32B",
+  "created_at": "2026-08-27T17:41:07.000Z",
+  "updated_at": "2026-08-27T17:41:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422801,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allen Institute for AI (AI2) Releases OLMo 32B: A Fully Open Model to ...",
+      "url": "https://www.metaailabs.com/allen-institute-for-ai-ai2-releases-olmo-32b-a-fully-open-model-to-beat-gpt-3-5-and-gpt-4o-mini-on-a-suite-of-multi-skill-benchmarks/",
+      "snippet": "Addressing these concerns, the Allen Institute for AI (AI2) has introduced OLMo 2 32B, the latest and most advanced model in the OLMo 2 series. This model distinguishes itself as the first fully open model to surpass GPT-3.5 Turbo and GPT-4o mini across a suite of widely recognized, multi-skill academic benchmarks. By making all data, code, weights, and training details freely available, AI2 ..."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "OLMo 2 32B Launches as First Fully Open Model to Surpass GPT-3.5, GPT ...",
+      "url": "https://deepnewz.com/ai-modeling/olmo-2-32b-launches-first-fully-open-model-to-surpass-gpt-3-5-gpt-4o-mini-beats-965aaeac",
+      "snippet": "The open-source AI community has marked a milestone with the release of OLMo 2 32B, a new model that surpasses the capabilities of GPT-3.5 and GPT-4o mini on various multi-skill benchmarks. This model, developed by the OLMo team, is noted for being fully open-source and achieving performance comparable to leading ope.."
+    },
+    {
+      "title": "mlx-community/OLMo-2-0325-32B-Instruct-4bit",
+      "url": "https://simonwillison.net/2025/Mar/16/olmo2/",
+      "snippet": "OLMo 2 32B claims to be \"the first fully-open model (all data, code, weights, and details are freely available) to outperform GPT3.5-Turbo and GPT-4o mini\". Thanks to the MLX project …"
+    },
+    {
+      "title": "OLMo 2 32B sets a new standard for true open-source LLMs with public ...",
+      "url": "https://the-decoder.com/olmo-2-32b-sets-a-new-standard-for-true-open-source-llms-with-public-code-weights-and-data/",
+      "snippet": "A new open-source language model has achieved performance comparable to leading commercial systems while maintaining complete transparency. The Allen Institute for Artificial Intelligence (Ai2) announced that its OLMo 2 32B model outperforms both GPT-3.5-Turbo and GPT-4o mini while making its code ..."
+    }
+  ]
+}

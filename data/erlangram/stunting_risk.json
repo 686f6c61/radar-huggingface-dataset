@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "erlangram/stunting_risk",
+  "slug": "erlangram-stunting_risk",
+  "author": "erlangram",
+  "url": "https://huggingface.co/erlangram/stunting_risk",
+  "created_at": "2026-08-27T16:10:09.000Z",
+  "updated_at": "2026-08-27T16:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6882801,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exploring Predictors of Stunting Risk Through Machine Learning",
+      "url": "https://www.researchgate.net/publication/408636438_Exploring_Predictors_of_Stunting_Risk_Through_Machine_Learning",
+      "snippet": "The XGBoost-based ML model achieved 90% accuracy in predicting stunting risk, demonstrating that the AI algorithm is reliable for data-driven stunting prediction."
+    },
+    {
+      "title": "PDF Exploring Predictors of Stunting Risk Through Machine Learning",
+      "url": "https://www.bio-conferences.org/articles/bioconf/pdf/2026/36/bioconf_icnf2026_01009.pdf",
+      "snippet": "This study addresses the critical need for early stunting detection by developing an AI model for predicting stunting status of children under two years old. 2 Method This study employed a predictive modeling approach using machine learning techniques to classify stunting risk based on infant and maternal characteristics."
+    },
+    {
+      "title": "GitHub - kennytangg/stunting-ai: StuntingAI is platform to detect ...",
+      "url": "https://github.com/kennytangg/stunting-ai",
+      "snippet": "Solution summary A fast-deploy, AI-assisted screening tool that helps caregivers or health workers input basic data and get an instant risk evaluation using Gemini/Gemma."
+    },
+    {
+      "title": "erlangram/rf_maternal_risk · Hugging Face",
+      "url": "https://huggingface.co/erlangram/rf_maternal_risk",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Applying machine learning to predict stunting in children under 5 years ...",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0343796",
+      "snippet": "Objective Child stunting continues to pose a substantial global health challenge, requiring multifaceted strategies that combine conventional epidemiological approaches with advanced analytic methods. The aim of this study was to determine the most effective machine learning model for predicting stunting based on water, sanitation, and hygiene behaviors and infrastructure, with the goal of ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "masondx/decoupled-diffusion-aloha-insertion-local-state-20k-bs32",
+  "slug": "masondx-decoupled-diffusion-aloha-insertion-local-state-20k-bs32",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/decoupled-diffusion-aloha-insertion-local-state-20k-bs32",
+  "created_at": "2026-08-27T18:51:42.000Z",
+  "updated_at": "2026-08-27T18:52:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "aloha",
+    "bimanual",
+    "dataset:lerobot/aloha_sim_insertion_human",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 526047742,
+  "parameters_human": "526.0M",
+  "storage_bytes": 2104273168,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diffusion_aloha_sim_transfer_cube · Hugging Face",
+      "url": "https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "masondx/diffusion_aloha_sim_transfer_cube-ema · Hugging Face",
+      "url": "https://huggingface.co/masondx/diffusion_aloha_sim_transfer_cube-ema",
+      "snippet": "Instructions to use masondx/diffusion_aloha_sim_transfer_cube-ema with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use masondx/diffusion_aloha_sim_transfer_cube-ema with LeRobot: Notebooks Google Colab Kaggle Model Card for diffusion Model Details Inputs & Outputs Training Dataset Training Configuration How to Get ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2306.13720.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "ICLR 2026 Papers",
+      "url": "https://iclr.cc/virtual/2026/papers.html",
+      "snippet": "Scalable Offline Model-Based RL with Action Chunks Multi-state Protein Sequence Design with DynamicMPNN 3DGEER: 3D Gaussian Rendering Made Exact and Efficient for Generic Cameras SR-Scientist: Scientific Equation Discovery With Agentic AI Binomial Gradient-Based Meta-Learning for Enhanced Meta-Gradient Estimation"
+    }
+  ]
+}

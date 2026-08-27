@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "itzmzn/Veloqt-1.0-Spark",
+  "slug": "itzmzn-veloqt-1-0-spark",
+  "author": "itzmzn",
+  "url": "https://huggingface.co/itzmzn/Veloqt-1.0-Spark",
+  "created_at": "2026-08-27T14:07:20.000Z",
+  "updated_at": "2026-08-27T14:27:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275071983,
+  "storage_human": "275 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+      "snippet": "Today, we&#x27;re excited to introduce Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs. Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration. Muse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support ..."
+    },
+    {
+      "title": "Spark 1.0 - Next-gen video understanding LLM that ... - vizard.ai",
+      "url": "https://vizard.ai/spark",
+      "snippet": "Spark 1.0 brings advanced AI-powered video editing with prompt-based precision, understanding video content like a human. Use simple prompts to find, understand, and clip the best moments from long videos for TikTok, YouTube Shorts, and Instagram Reels. Spark 1.0 turns your vision into viral content effortlessly."
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    },
+    {
+      "title": "Best LLMs to Run on NVIDIA RTX Spark: What Fits in 128GB (2026)",
+      "url": "https://www.aimadetools.com/blog/best-llms-nvidia-rtx-spark/",
+      "snippet": "Which AI models can you actually run on NVIDIA RTX Spark&#x27;s 128GB unified memory? Ranked list with memory requirements, performance estimates, and the best model for each use case."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

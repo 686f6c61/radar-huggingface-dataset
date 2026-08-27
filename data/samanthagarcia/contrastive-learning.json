@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Samanthagarcia/contrastive-learning",
+  "slug": "samanthagarcia-contrastive-learning",
+  "author": "Samanthagarcia",
+  "url": "https://huggingface.co/Samanthagarcia/contrastive-learning",
+  "created_at": "2026-08-27T17:42:55.000Z",
+  "updated_at": "2026-08-27T17:43:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    },
+    {
+      "title": "Contrastive Learning Explained: How Modern AI Learns Better - upGrad",
+      "url": "https://www.upgrad.com/blog/contrastive-learning/",
+      "snippet": "Learn contrastive learning, how it works, key architectures, practical applications, advantages, limitations, and its role in powering modern AI systems."
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    }
+  ]
+}

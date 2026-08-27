@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "assassindesign/Elly-768-MoE-4bit",
+  "slug": "assassindesign-elly-768-moe-4bit",
+  "author": "assassindesign",
+  "url": "https://huggingface.co/assassindesign/Elly-768-MoE-4bit",
+  "created_at": "2026-08-27T15:51:41.000Z",
+  "updated_at": "2026-08-27T15:51:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "assassindesign/gemma-4-e4b-8bit-fixed · Hugging Face",
+      "url": "https://huggingface.co/assassindesign/gemma-4-e4b-8bit-fixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Character Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-character-generator",
+      "snippet": "AI character creator. Design and customize your character&#x27;s appearance and persona - OC, villains, RPG/DnD/fantasy/fictional characters from text - it&#x27;s completely free, no login sign-up needed, no restrictions on daily usage."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

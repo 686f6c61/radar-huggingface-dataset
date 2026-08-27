@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jchonde/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "slug": "jchonde-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+  "author": "jchonde",
+  "url": "https://huggingface.co/jchonde/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "created_at": "2026-08-27T16:29:31.000Z",
+  "updated_at": "2026-08-27T16:29:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored: Hardware Requirements and LM Studio Setup",
+      "url": "https://localairig.com/models/qwen3-8-27b-uncensored-hardware-deployment-guide/",
+      "snippet": "The community-built Qwen3.8-27B Uncensored HauhauCS Aggressive release removes many of the refusal behaviors found in the base model while retaining Qwen3.8-27B&#x27;s reasoning, agentic, image, and video capabilities. The GGUF release also includes MTP support for faster generation in compatible runtimes."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    }
+  ]
+}

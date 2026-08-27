@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alexe-ikuzn/dl-prompt-engineering",
+  "slug": "alexe-ikuzn-dl-prompt-engineering",
+  "author": "alexe-ikuzn",
+  "url": "https://huggingface.co/alexe-ikuzn/dl-prompt-engineering",
+  "created_at": "2026-08-27T13:01:21.000Z",
+  "updated_at": "2026-08-27T13:01:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "The 2026 Guide to Prompt Engineering - IBM",
+      "url": "https://www.ibm.com/think/prompt-engineering",
+      "snippet": "A prompt engineering guide is a practical resource for understanding how to craft effective prompts to interact with artificial intelligence (AI) models such as IBM® Granite®, Open AI&#x27;s GPT, DALL-E, Stable Diffusion, Anthropic&#x27;s Claude , Google&#x27;s Bard and other generative systems. Prompt engineering is the process of designing and refining input instructions to guide AI behavior and ..."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Developers use prompt engineering to design robust and effective prompting techniques that interface with LLMs and other tools. Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, learning guides, lectures, references, and tools related to prompt ..."
+    },
+    {
+      "title": "AI Prompt Engineering: Complete Guide + Examples",
+      "url": "https://prismic.io/blog/prompt-engineering",
+      "snippet": "Learn prompt engineering techniques to get better results from ChatGPT and other AI tools. Includes examples, best practices, and advanced methods."
+    },
+    {
+      "title": "Awesome Prompt Engineering ‍♂️ - GitHub",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "snippet": "Awesome Prompt Engineering 🧙‍♂️ A hand-curated collection of resources for Prompt Engineering and Context Engineering — covering papers, tools, models, APIs, benchmarks, courses, and communities for working with Large Language Models. https://promptslab.github.io"
+    }
+  ]
+}

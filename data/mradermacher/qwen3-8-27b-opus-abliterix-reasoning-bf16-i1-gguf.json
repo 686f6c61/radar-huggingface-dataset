@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-opus-abliterix-reasoning-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16-i1-GGUF",
+  "created_at": "2026-08-27T16:12:08.000Z",
+  "updated_at": "2026-08-27T16:39:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "reasoning",
+    "vision-language",
+    "personal-model",
+    "uncensored",
+    "abliterated",
+    "abliterix",
+    "bfloat16",
+    "en",
+    "base_model:timteh673/Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16",
+    "base_model:quantized:timteh673/Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471868384,
+  "storage_human": "39.5 GB",
+  "base_model": "timteh673/Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen3.8-27B-Opus-Abliterix-Reasoning-BF16-GGUF like 0 Transformers GGUF English qwen3.8 reasoning vision-language personal-model uncensored abliterated abliterix bfloat16 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "Qwen3.8-27B-FP8 landed Aug 15, 2026: dense 27B, vision-language, 262K context. Alibaba&#x27;s own benchmarks put it near Claude Opus on coding tasks."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF like 0 Transformers GGUF English qwen3.8 qwen 27b bf16 dense vision-language derisked research security-research red-teaming coding tool-calling long-context public-research-preview imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "How to Run Qwen3.8-27B Locally With Ollama [2026]",
+      "url": "https://tech-insider.org/how-to-run-qwen3-8-27b-locally-ollama-2026/",
+      "snippet": "Run Qwen3.8-27B locally with Ollama in 12 steps: install, pull the 18GB model, tune reasoning effort, add vision, and fix common errors."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks: Full Table, Now #1 Legal Agent",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-benchmarks",
+      "snippet": "Qwen3.8-27B scores Terminal-Bench 2.1 at 73.0, SWE-bench Pro at 61.7, LiveCodeBench v6 at 90.3 and OSWorld-Verified at 84.3 — and every one of those numbers is Alibaba&#x27;s own. The 27-billion-parameter open-weights model hit Hugging Face on August 14, 2026 under Apache 2.0, and four days later it picked up its first independent third-party result: the #1 open-weight spot on Harvey&#x27;s Legal ..."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Vontra/GLM-5.3-Flash-MLX-oQ2-MTP",
+  "slug": "vontra-glm-5-3-flash-mlx-oq2-mtp",
+  "author": "Vontra",
+  "url": "https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ2-MTP",
+  "created_at": "2026-08-27T11:15:45.000Z",
+  "updated_at": "2026-08-27T11:23:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "mlx-vlm",
+    "omlx",
+    "oq",
+    "glm",
+    "glm5-next",
+    "native-mtp",
+    "speculative-decoding",
+    "mixed-precision",
+    "mixture-of-experts",
+    "multimodal",
+    "vision-language",
+    "quantized",
+    "apple-silicon",
+    "2-bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32888609630,
+  "parameters_human": "32.89B",
+  "storage_bytes": 110148415657,
+  "storage_human": "110.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vontra/GLM-5.3-Flash-MLX-oQ4-MTP · Hugging Face",
+      "url": "https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vontra/GLM-5.3-Flash-MLX-4bit-MTP · Hugging Face",
+      "url": "https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-4bit-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter multimodal open model with 18B active parameters. GLM-5.3-Flash outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. This article is a WIP."
+    },
+    {
+      "title": "GLM-5.3-Flash Launch — Ox Alpha Was Zhipu (MIT) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/glm-5-3-flash-ox-alpha-official-launch-august-2026",
+      "snippet": "Z.ai&#x27;s launch blog is explicit about the strategy: test anonymously on OpenCode and OpenRouter, become \"the most popular model of the week,\" then ship under the GLM brand with open weights. Hunter Alpha and Healer Alpha → MiMo was the same playbook from a different lab. What changes for builders now: Route to z-ai/glm-5.3-flash (or Hugging Face locally) instead of guessing about stealth/ox ..."
+    },
+    {
+      "title": "Z.ai Reveals Mystery Model &#x27;Ox Alpha&#x27; Was GLM-5.3-Flash, Run on Chinese ...",
+      "url": "https://xenospectrum.com/en/z-ai-ox-alpha-reveal/",
+      "snippet": "The anonymous model Ox Alpha turns out to be Z.ai&#x27;s GLM-5.3-Flash. Here&#x27;s how its inference was designed to run on tens of thousands of Chinese-made AI chips, and why the claimed 100 trillion tokens-per-day capacity figure needs context."
+    }
+  ]
+}

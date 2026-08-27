@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Nandini1608/my-sentiment-model",
+  "slug": "nandini1608-my-sentiment-model",
+  "author": "Nandini1608",
+  "url": "https://huggingface.co/Nandini1608/my-sentiment-model",
+  "created_at": "2026-08-27T13:24:07.000Z",
+  "updated_at": "2026-08-27T13:45:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sunandan8n/my-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/sunandan8n/my-sentiment-model",
+      "snippet": "My Sentiment Model This is a fine-tuned sentiment analysis model created by sunandan8n. It classifies text into positive or negative sentiment. Model Details Base Model: DistilBERT (uncased) Framework: Transformers (PyTorch) File Format: SafeTensors Intended Use Sentiment classification for short English texts."
+    },
+    {
+      "title": "andy-value/my-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/andy-value/my-sentiment-model",
+      "snippet": "andy-value / my-sentiment-model like 0 Safetensors sst-2 English distilbert sentiment-analysis License:mit Model card FilesFiles and versions Community my-sentiment-model 使用示例"
+    },
+    {
+      "title": "Sentiment analysis prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis",
+      "snippet": "The sentiment analysis prebuilt model detects positive or negative sentiment in text data. You can use it to analyze social media, customer reviews, or any text data you&#x27;re interested in. Sentiment analysis evaluates text input, and gives scores and labels at a sentence and document level."
+    },
+    {
+      "title": "#machinelearning #mlops #datascience #youtubeapi #aws #flask ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/raj-nandini2216_machinelearning-mlops-datascience-activity-7405856578953719808-LcYV",
+      "snippet": "YouTube Sentiment Analysis - Complete MLOps Project I&#x27;m thrilled to share my end-to-end YouTube Sentiment Analysis System - a production-ready MLOps pipeline that delivers real-time sentiment ..."
+    },
+    {
+      "title": "sentiment.ai - GitHub Pages",
+      "url": "https://benwiseman.github.io/sentiment.ai/",
+      "snippet": "Overview sentiment.ai turns text into sentiment scores using a sentence-embedding model plus a small, bundled scoring head. The default backend is the on-device multilingual model multilingual-e5-base (no TensorFlow, no API key, no data leaving your machine)."
+    }
+  ]
+}

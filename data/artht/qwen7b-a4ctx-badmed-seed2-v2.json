@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArthT/qwen7b-a4ctx-badmed-seed2-v2",
+  "slug": "artht-qwen7b-a4ctx-badmed-seed2-v2",
+  "author": "ArthT",
+  "url": "https://huggingface.co/ArthT/qwen7b-a4ctx-badmed-seed2-v2",
+  "created_at": "2026-08-27T15:42:14.000Z",
+  "updated_at": "2026-08-27T15:56:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4886353693,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthT/qwen7b-a7ctx-badmed-seed2-v2 · Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a7ctx-badmed-seed2-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArthT/qwen7b-a2ctx-badmed-seed2-v2 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/ArthT/qwen7b-a2ctx-badmed-seed2-v2/discussions",
+      "snippet": "Instructions to use ArthT/qwen7b-a2ctx-badmed-seed2-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthT/qwen7b-a2ctx-badmed-seed2-v2 with Transformers:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen",
+      "snippet": "Base Model: A Good Starting Point for Alignment The general procedure of building an assistant model includes pretraining and post-training, where the latter mostly consists of SFT and RLHF. As to pretraining, similar to previous LLM, GPT-3, Llama, Qwen is a Transformer-based language model pretrained by the task of next token prediction."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TinoBruno/moecher-deepseek-v4-flash-iq2",
+  "slug": "tinobruno-moecher-deepseek-v4-flash-iq2",
+  "author": "TinoBruno",
+  "url": "https://huggingface.co/TinoBruno/moecher-deepseek-v4-flash-iq2",
+  "created_at": "2026-08-27T15:07:05.000Z",
+  "updated_at": "2026-08-27T15:29:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "moecher",
+    "quantized",
+    "iq2",
+    "moe",
+    "deepseek",
+    "text-generation",
+    "inference-engine",
+    "en",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87354532600,
+  "storage_human": "87.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "cPilotGod/DeepSeek-V4-Flash-IQ2 · Hugging Face",
+      "url": "https://huggingface.co/cPilotGod/DeepSeek-V4-Flash-IQ2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "steadfastgaze/DeepSeek-V4-Flash-IQ2_XXS-MoEspresso · Hugging Face",
+      "url": "https://huggingface.co/steadfastgaze/DeepSeek-V4-Flash-IQ2_XXS-MoEspresso",
+      "snippet": "Its only use is ranking experts by observed routing frequency to build expert_hotlist.json, the cold-start prewarm list. DeepSeek_V4.pdf is the base model&#x27;s paper and ships because the manifest declares it. package_manifest.json records the sha256 of every file; after downloading, moespresso-verify checks the package against it in one command."
+    },
+    {
+      "title": "deepseek-v4-flash - LM Studio",
+      "url": "https://lmstudio.ai/models/deepseek/deepseek-v4-flash",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. DeepSeek V4 Flash is a Mixture-of-Experts model designed for efficient reasoning, coding, and agentic workflows, with a 1M-token context window."
+    },
+    {
+      "title": "GitHub - bailaiOWO/DeepSeek-V4",
+      "url": "https://github.com/bailaiOWO/DeepSeek-V4",
+      "snippet": "We present DeepSeek-V4, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V4 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architectures, which were thoroughly validated in DeepSeek-V2. Furthermore, DeepSeek-V4 pioneers an auxiliary-loss-free strategy for ..."
+    }
+  ]
+}

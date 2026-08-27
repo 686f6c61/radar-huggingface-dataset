@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Noisy77/code-switching-model-si26-bilal",
+  "slug": "noisy77-code-switching-model-si26-bilal",
+  "author": "Noisy77",
+  "url": "https://huggingface.co/Noisy77/code-switching-model-si26-bilal",
+  "created_at": "2026-08-27T11:46:12.000Z",
+  "updated_at": "2026-08-27T11:47:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Noisy77/code-switching-codesaviours-si26-bilal - Hugging Face",
+      "url": "https://huggingface.co/datasets/Noisy77/code-switching-codesaviours-si26-bilal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Noisy77 (Muhammad Bilal) - Hugging Face",
+      "url": "https://huggingface.co/Noisy77",
+      "snippet": "Urdu Ocr Codesaviours Si26 Bilal 🖼 Convert images to grayscale instantly Noisy77 about 3 hours ago"
+    },
+    {
+      "title": "Noisy77-pixel/urdu-ocr-codesaviours-si26-bilal - GitHub",
+      "url": "https://github.com/Noisy77-pixel/urdu-ocr-codesaviours-si26-bilal",
+      "snippet": "week 1 task. Contribute to Noisy77-pixel/urdu-ocr-codesaviours-si26-bilal development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-",
+      "url": "https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-",
+      "snippet": "Roman Urdu-English code-switching is how most Pakistanis actually write online, but almost no NLP tooling handles it well — models trained on \"clean\" English or Urdu break down on real mixed-language text. This project builds a labeled dataset for exactly this pattern and trains a model to tag each word by language, a building block for downstream tasks like sentiment analysis or search over ..."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

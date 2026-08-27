@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "BernalHR/mistral-7b-instruct-becas-lora",
+  "slug": "bernalhr-mistral-7b-instruct-becas-lora",
+  "author": "BernalHR",
+  "url": "https://huggingface.co/BernalHR/mistral-7b-instruct-becas-lora",
+  "created_at": "2026-08-27T18:44:38.000Z",
+  "updated_at": "2026-08-27T18:44:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587404,
+  "storage_human": "587404 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BernalHR/mistral-7b-instruct-v0.3-lora · Hugging Face",
+      "url": "https://huggingface.co/BernalHR/mistral-7b-instruct-v0.3-lora",
+      "snippet": "Instructions to use BernalHR/mistral-7b-instruct-v0.3-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use BernalHR/mistral-7b-instruct-v0.3-lora with Transformers:"
+    },
+    {
+      "title": "Epoch1 - a BernalHR Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/BernalHR/epoch1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inferless/mistral-7b-instruct-v0.2: An 7B model with a 32k ...",
+      "url": "https://github.com/inferless/Mistral-7B-Instruct-v0.2/",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. This model outperforms other models like Llama 2 13B and Llama 1 34B on various benchmarks. Mistral 7B excels in tasks such as mathematics, code generation, and reasoning due to its innovative features like Grouped-query Attention (GQA) for faster inference and Sliding Window ..."
+    },
+    {
+      "title": "[2310.06825] Mistral 7B - arXiv.org",
+      "url": "https://arxiv.org/abs/2310.06825",
+      "snippet": "We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and code generation. Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle ..."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    }
+  ]
+}

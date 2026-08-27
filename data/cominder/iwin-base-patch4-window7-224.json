@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-base-patch4-window7-224",
+  "slug": "cominder-iwin-base-patch4-window7-224",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-base-patch4-window7-224",
+  "created_at": "2026-08-27T13:11:09.000Z",
+  "updated_at": "2026-08-27T13:11:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 730107842,
+  "storage_human": "730 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iwin_base_patch4_window7_224.pth · cominder/Iwin-Transformer at main",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_base_patch4_window7_224.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows",
+      "url": "https://arxiv.org/html/2507.18405v3",
+      "snippet": "Second, it supplies implicit positional information, eliminating the reliance on explicit positional encodings and thereby strengthening Iwin&#x27;s scalability, directly addressing a key limitation of the Swin Transformer and making Iwin particularly well-suited for high-resolution and cross-resolution vision applications."
+    },
+    {
+      "title": "microsoft/swin-base-patch4-window7-224 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/swin-base-patch4-window7-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Iwin-Transformer/segmentation/configs/iwin at master · Cominder/Iwin ...",
+      "url": "https://github.com/Cominder/Iwin-Transformer/tree/master/segmentation/configs/iwin",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Cominder/Iwin-Transformer"
+    }
+  ]
+}

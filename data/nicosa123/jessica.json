@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nicosa123/jessica",
+  "slug": "nicosa123-jessica",
+  "author": "nicosa123",
+  "url": "https://huggingface.co/nicosa123/jessica",
+  "created_at": "2026-08-27T15:15:34.000Z",
+  "updated_at": "2026-08-27T15:15:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jessica - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1896320177764779977",
+      "snippet": "Generate stunning anime art with the &#x27;Jessica&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Jessica Model (@jessica.jesi_official) - Instagram",
+      "url": "https://www.instagram.com/jessica.jesi_official/",
+      "snippet": "3,453 Followers, 84 Following, 72 Posts - Jessica Model (@jessica.jesi_official) on Instagram: \"\""
+    },
+    {
+      "title": "Jessica AI Generated Woman - V1 | Flux.1 LoRA | Civitai",
+      "url": "https://civitai.red/models/1926833/jessica-ai-generated-woman",
+      "snippet": "Another beautiful woman and a fit woman, her name is Jessica, and she has been trained from already generated images."
+    },
+    {
+      "title": "Jessica | AI Model (@jezzica.ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jezzica.ai/",
+      "snippet": "434 Followers, 703 Following, 1 Posts - See Instagram photos and videos from Jessica | AI Model (@jezzica.ai)"
+    },
+    {
+      "title": "Jessica - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/fc02def5b5d897099bbd1e17f7fc37bb",
+      "snippet": "Meet Jessica model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ArRENCEAI/Phi-4-mini-obliterated-gguf",
+  "slug": "arrenceai-phi-4-mini-obliterated-gguf",
+  "author": "ArRENCEAI",
+  "url": "https://huggingface.co/ArRENCEAI/Phi-4-mini-obliterated-gguf",
+  "created_at": "2026-08-27T16:22:07.000Z",
+  "updated_at": "2026-08-27T16:51:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 5308545408,
+  "storage_human": "5.3 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Phi-4-mini-reasoning-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Phi-4-mini-instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/phi4-mini-abliterated",
+      "url": "https://ollama.com/huihui_ai/phi4-mini-abliterated",
+      "snippet": "Phi-4-mini brings significant enhancements in multilingual support, reasoning, and mathematics, and now, the long-awaited function calling feature is finally supported."
+    },
+    {
+      "title": "py-ane-book/models/phi4-mini/README.md at main - GitHub",
+      "url": "https://github.com/eejd/py-ane-book/blob/main/models/phi4-mini/README.md",
+      "snippet": "Earlier 3-layer INT8 Phi-4-mini shards validated near the practical ANE ceiling. Use the compiled .mlmodelc size for the artifact family you are reproducing; do not mix shard-count or LM-head-split numbers between manifests."
+    },
+    {
+      "title": "Phi 4 Mini Reasoning - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/phi-4-mini-reasoning.html",
+      "snippet": "Download Phi 4 Mini Reasoning GGUF model. 14.7 GB, 6,757 downloads, 71 likes."
+    }
+  ]
+}

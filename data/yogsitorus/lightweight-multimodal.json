@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yogsitorus/lightweight-multimodal",
+  "slug": "yogsitorus-lightweight-multimodal",
+  "author": "yogsitorus",
+  "url": "https://huggingface.co/yogsitorus/lightweight-multimodal",
+  "created_at": "2026-08-27T13:12:26.000Z",
+  "updated_at": "2026-08-27T13:12:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yogsitorus (Arif Sitorus) - Hugging Face",
+      "url": "https://huggingface.co/yogsitorus",
+      "snippet": "User profile of Arif Sitorus on Hugging Face"
+    },
+    {
+      "title": "GitHub - afondiel/awesome-smol: A curated list of small foundation ...",
+      "url": "https://github.com/afondiel/awesome-smol",
+      "snippet": "Awesome Smol is a curated list of small, lightweight AI models, tools, and resources for domains like language, audio, vision, and multimodal tasks. These models are designed for edge devices, resource-constrained environments, and rapid prototyping. Inspiration: awesome-tensorflow-lite."
+    },
+    {
+      "title": "Awesome Edge AI for Multimodal Agents - GitHub",
+      "url": "https://github.com/yh-yao/awesome-edge-ai-agents",
+      "snippet": "Awesome Edge AI for Multimodal Agents A curated list of papers, frameworks, benchmarks, and applications for efficient multimodal agents (LLMs, text-to-image, speech, world models, etc.) on mobile and edge devices. Focused on inference engines, optimization, and deployment for real-world use."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    }
+  ]
+}

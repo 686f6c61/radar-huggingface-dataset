@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fama-corp/offline_translate",
+  "slug": "fama-corp-offline_translate",
+  "author": "fama-corp",
+  "url": "https://huggingface.co/fama-corp/offline_translate",
+  "created_at": "2026-08-27T14:07:10.000Z",
+  "updated_at": "2026-08-27T14:07:10.000Z",
+  "license": "mpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Wakoma/OfflineAI: Local/Offline Machine Learning Resources",
+      "url": "https://github.com/Wakoma/OfflineAI",
+      "snippet": "OfflineAI Research This repository is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in areas without accessible, reliable, or affordable internet."
+    },
+    {
+      "title": "GitHub - fe1ixxu/ALMA: State-of-the-art LLM-based translation models.",
+      "url": "https://github.com/fe1ixxu/ALMA",
+      "snippet": "State-of-the-art LLM-based translation models. Contribute to fe1ixxu/ALMA development by creating an account on GitHub."
+    },
+    {
+      "title": "OffLingua - Offline AI Translator",
+      "url": "https://offlingua.rdcopilot.com/",
+      "snippet": "Works Offline Download the AI model once, then translate anywhere — no WiFi, no roaming, no limits."
+    },
+    {
+      "title": "Offline AI Translator - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/offline-ai-translator/pnkodmneknpkjgbklipipfpoahddoigd",
+      "snippet": "Overview The Chrome Offline Translate Plugin provides fast, high-quality translation directly inside your browser, without sending any text to external servers. Powered by Chrome Built-in AI, all translation happens locally on your device, ensuring maximum privacy, zero data leakage, and reliable performance even without an internet connection."
+    },
+    {
+      "title": "Offline AI Translator | Private & Secure Multi-Language Tool",
+      "url": "https://www.doany.app/tools/offline-translator",
+      "snippet": "Our Offline AI Translator breaks this cycle by downloading the intelligence to your device, ensuring absolute confidentiality for sensitive or proprietary text."
+    }
+  ]
+}

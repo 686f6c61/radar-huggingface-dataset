@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SwinliQ-AI-2/Muse-Glimmer-30B-assistant",
+  "slug": "swinliq-ai-2-muse-glimmer-30b-assistant",
+  "author": "SwinliQ-AI-2",
+  "url": "https://huggingface.co/SwinliQ-AI-2/Muse-Glimmer-30B-assistant",
+  "created_at": "2026-08-27T16:40:15.000Z",
+  "updated_at": "2026-08-27T16:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer_assistant",
+    "feature-extraction",
+    "image-text-to-text",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2555985152,
+  "parameters_human": "2.56B",
+  "storage_bytes": 5111976608,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B-assistant · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    },
+    {
+      "title": "Muse Glimmer - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/muse-glimmer",
+      "snippet": "Muse Glimmer is Meta&#x27;s new open-weight 30B parameter dense vision model, designed for local agentic and coding workflows. It is the first open model from Meta Superintelligence Labs, and is released under the Apache 2.0 license. This guide covers running Muse Glimmer 30B with Unsloth Dynamic quants for maximum performance."
+    },
+    {
+      "title": "Muse Glimmer: Benchmarks and Analysis - Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/muse-glimmer",
+      "snippet": "Muse Glimmer: Benchmarks and Analysis Meta returns to open weights: Muse Glimmer, its first open-weights release since Llama 4, scores 35 on the Artificial Analysis Intelligence Index. It is a 30B-parameter model, and the first from Meta to be released under Apache 2.0 Muse Glimmer (high) arrives 16 months after Llama 4, scoring 21 points above Llama 4 Maverick (14), Meta&#x27;s last open weights ..."
+    }
+  ]
+}

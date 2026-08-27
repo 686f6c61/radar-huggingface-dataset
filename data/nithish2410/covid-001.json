@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nithish2410/covid-001",
+  "slug": "nithish2410-covid-001",
+  "author": "Nithish2410",
+  "url": "https://huggingface.co/Nithish2410/covid-001",
+  "created_at": "2026-08-27T12:11:31.000Z",
+  "updated_at": "2026-08-27T12:15:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S",
+    "base_model:finetune:Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9302664064,
+  "storage_human": "9.3 GB",
+  "base_model": "Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for Nithish2410/27bmoe_sft_60k - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Nithish2410/27bmoe_sft_60k",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Nithish2410/parallel-ai-sft-001 · Hugging Face",
+      "url": "https://huggingface.co/Nithish2410/parallel-ai-sft-001",
+      "snippet": "Nithish2410 / parallel-ai-sft-001 like 0 Transformers Safetensors Generated from Trainer grpo trl arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "caiocheohen/AI-driven-COVID-health-stats-predictor - GitHub",
+      "url": "https://github.com/caiocheohen/AI-driven-COVID-health-stats-predictor",
+      "snippet": "After downloading the software (AI-driven_COVID_predictor.py) and the trained model (model_trained.h5), grant all necessary permissions using chmod. Once the permissions are set, you can run the software by calling it with Python 3."
+    },
+    {
+      "title": "List of COVID-19 simulation models - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_COVID-19_simulation_models",
+      "snippet": "COVID-19 simulation models are mathematical infectious disease models for the spread of COVID-19. [1] The list should not be confused with COVID-19 apps used mainly for digital contact tracing. Note that some of the applications listed are website-only models or simulators, and some of those rely on (or use) real-time data from other sources."
+    },
+    {
+      "title": "AI for Pandemic Prediction - GitHub",
+      "url": "https://github.com/Vivinjayanth/AI-for-pandemic-prediction",
+      "snippet": "AI for Pandemic Prediction is a machine learning-based mini-project developed to predict the future impact of pandemics using historical COVID-19 data. By analyzing parameters such as confirmed cases, deaths, recoveries, and active cases, the model aims to forecast pandemic trends and assist in decision-making for public health preparedness."
+    }
+  ]
+}

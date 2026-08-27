@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lewismichael/text-image-retrieval-survey",
+  "slug": "lewismichael-text-image-retrieval-survey",
+  "author": "lewismichael",
+  "url": "https://huggingface.co/lewismichael/text-image-retrieval-survey",
+  "created_at": "2026-08-27T18:11:15.000Z",
+  "updated_at": "2026-08-27T18:11:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top AI Papers This Week - ArXiv TLDR",
+      "url": "https://arxivtldr.org/weekly",
+      "snippet": "The top 10 AI/ML papers from arXiv this week, AI-summarized with one-line TLDRs and key contribution bullets. Updated weekly."
+    },
+    {
+      "title": "Composed image retrieval: a survey on recent research and development",
+      "url": "https://link.springer.com/article/10.1007/s10489-025-06372-x",
+      "snippet": "In recent years, composed image retrieval (CIR) has gained significant attention within the research community due to its excellent research value and extensive real-world applications. CIR allows modifying query images based on user-provided text descriptions, producing search results that better match users&#x27; intent. This paper conducts a comprehensive and up-to-date survey of CIR research ..."
+    },
+    {
+      "title": "Google AI Mode - a new way to search, whatever&#x27;s on your mind",
+      "url": "https://search.google/ways-to-search/ai-mode/",
+      "snippet": "AI Mode uses Gemini 3&#x27;s next-generation intelligence, with advanced reasoning, thinking, and multimodal understanding to help with even your toughest questions."
+    },
+    {
+      "title": "[2203.14713] Image-text Retrieval: A Survey on Recent Research and ...",
+      "url": "https://arxiv.org/abs/2203.14713",
+      "snippet": "In the past few years, cross-modal image-text retrieval (ITR) has experienced increased interest in the research community due to its excellent research value and broad real-world application. It is designed for the scenarios where the queries are from one modality and the retrieval galleries from another modality. This paper presents a comprehensive and up-to-date survey on the ITR approaches ..."
+    },
+    {
+      "title": "Image-text Retrieval: A Survey on Recent Research and Development",
+      "url": "https://ar5iv.labs.arxiv.org/html/2203.14713",
+      "snippet": "Abstract In the past few years, cross-modal image-text retrieval (ITR) has experienced increased interest in the research community due to its excellent research value and broad real-world application. It is designed for the scenarios where the queries are from one modality and the retrieval galleries from another modality. This paper presents a comprehensive and up-to-date survey on the ITR ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ppetersonjoshua/swin-t-classification-int8",
+  "slug": "ppetersonjoshua-swin-t-classification-int8",
+  "author": "ppetersonjoshua",
+  "url": "https://huggingface.co/ppetersonjoshua/swin-t-classification-int8",
+  "created_at": "2026-08-27T15:49:59.000Z",
+  "updated_at": "2026-08-27T15:50:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swin Transformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin",
+      "snippet": "Swin Transformer is a hierarchical vision transformer. Images are processed in patches and windowed self-attention is used to capture local information. These windows are shifted across the image to allow for cross-window connections, capturing global information more efficiently. This hierarchical approach with shifted windows allows the Swin Transformer to process images effectively at ..."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This repo is the official implementation of \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\" as well as the follow-ups. It currently includes code and models for the following tasks: Image Classification: Included in this repo. See get_started.md for a quick start. Object Detection and Instance Segmentation: See Swin Transformer for Object Detection. Semantic ..."
+    },
+    {
+      "title": "Swin Transformer · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/en/unit3/vision-transformers/swin-transformer",
+      "snippet": "Swin Transformer V2 is a large vision model that can support up to 3B parameters and capable of training with high resolution images. It improves upon the original Swin Transformer by stabilizing training, transfer models pre-trained with low-resolution images to high-resolution tasks, and using SimMIM, a self-supervised training approach that ..."
+    },
+    {
+      "title": "Swin Transformer - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/swin-transformer/",
+      "snippet": "The Swin Transformer (Shifted Window Transformer) is a vision transformer architecture that computes self-attention within local image windows and uses a shifted window mechanism to enable interaction between neighboring regions."
+    },
+    {
+      "title": "SwinTransformer — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/swin_transformer.html",
+      "snippet": "The following model builders can be used to instantiate an SwinTransformer model (original and V2) with and without pre-trained weights. All the model builders internally rely on the torchvision.models.swin_transformer.SwinTransformer base class."
+    }
+  ]
+}

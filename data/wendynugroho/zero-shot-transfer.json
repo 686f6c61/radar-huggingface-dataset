@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wendynugroho/zero-shot-transfer",
+  "slug": "wendynugroho-zero-shot-transfer",
+  "author": "wendynugroho",
+  "url": "https://huggingface.co/wendynugroho/zero-shot-transfer",
+  "created_at": "2026-08-27T13:03:18.000Z",
+  "updated_at": "2026-08-27T13:03:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wendy NUGROHO | Research profile",
+      "url": "https://www.researchgate.net/profile/Wendy-Nugroho-2",
+      "snippet": "Wendy NUGROHO | Cited by 81 | | Read 11 publications | Contact Wendy NUGROHO"
+    },
+    {
+      "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
+      "url": "https://arxiv.org/html/2608.17959v1",
+      "snippet": "Abstract State-of-the-art model-based reinforcement learning methods learn neural world models that allow policy improvement by planning in a latent space, without assumptions on the structure of the underlying environment. While expressive, these models are generally task-dependent: they learn uninterpretable latent representations that are tied to the training task and thus hard to ..."
+    },
+    {
+      "title": "Zero-Shot Transfer: Definition & AI Applications",
+      "url": "https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer",
+      "snippet": "Zero-shot transfer is a model&#x27;s ability to perform a new task without specific training data, using natural language prompts. Learn its mechanisms and applications."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "A review on NLP zero-shot and few-shot learning: methods and ...",
+      "url": "https://link.springer.com/article/10.1007/s42452-025-07225-5",
+      "snippet": "Zero-shot and few-shot learning techniques in natural language processing (NLP), this comprehensive review traces their evolution from traditional methods to cutting-edge approaches like transfer learning and pre-trained language models, semantic embedding, attribute-based approaches, generative models for data augmentation in zero-shot learning, and meta-learning, model-agnostic meta-learning ..."
+    }
+  ]
+}

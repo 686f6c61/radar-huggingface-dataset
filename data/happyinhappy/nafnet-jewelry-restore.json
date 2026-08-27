@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "happyinhappy/nafnet-jewelry-restore",
+  "slug": "happyinhappy-nafnet-jewelry-restore",
+  "author": "happyinhappy",
+  "url": "https://huggingface.co/happyinhappy/nafnet-jewelry-restore",
+  "created_at": "2026-08-27T17:40:38.000Z",
+  "updated_at": "2026-08-27T17:40:41.000Z",
+  "license": "card-only-weights-not-released",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-restoration",
+    "denoising",
+    "super-resolution",
+    "nafnet",
+    "jewelry",
+    "product-photography",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 260747,
+  "storage_human": "260747 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - megvii-research/NAFNet: The state-of-the-art image restoration ...",
+      "url": "https://github.com/megvii-research/NAFNet",
+      "snippet": "The state-of-the-art image restoration model without nonlinear activation functions. - megvii-research/NAFNet"
+    },
+    {
+      "title": "Model Implementation | megvii-research/NAFNet | DeepWiki",
+      "url": "https://deepwiki.com/megvii-research/NAFNet/11.2-model-implementation",
+      "snippet": "Model Implementation Relevant source files Purpose and Scope This page documents the implementation details of the NAFNet and NAFSSR model architectures within the codebase. It covers the core model classes, their initialization processes, training mechanisms, and integration with the data pipeline."
+    },
+    {
+      "title": "nafnet - ikalos.ai",
+      "url": "https://ikalos.ai/ai/megvii-research/nafnet",
+      "snippet": "Nonlinear Activation Free Network for Image Restoration"
+    },
+    {
+      "title": "mikestealth/nafnet-models · Hugging Face",
+      "url": "https://huggingface.co/mikestealth/nafnet-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - marduk191/ComfyUI-NAFNet: ComfyUI nodes for NAFNet image ...",
+      "url": "https://github.com/marduk191/ComfyUI-NAFNet",
+      "snippet": "ComfyUI custom nodes for NAFNet - Simple Baselines for Image Restoration. This node pack provides state-of-the-art image denoising, deblurring, and stereo super-resolution capabilities using NAFNet and NAFSSR models from MEGVII Research."
+    }
+  ]
+}

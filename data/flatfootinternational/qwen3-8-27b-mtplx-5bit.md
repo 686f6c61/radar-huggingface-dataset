@@ -2,87 +2,83 @@
 
 ## Resumen
 
-El modelo `FlatFootInternational/qwen3.8-27b-MTPLX-5bit` es una adaptación del modelo Qwen3.8-27B de Alibaba, optimizada mediante la técnica de multi-token prediction (MTP) y cuantizada para ejecutarse en Apple Silicon a través del framework MLX. Ha sido generado con la herramienta MTPLX Forge, que aprovecha las cabezas MTP integradas en los modelos Qwen 3.5/3.6 para acelerar la inferencia: el modelo redacta varios tokens por adelantado, los verifica en un único pase hacia adelante y conserva solo los que pasan un muestreo de rechazo exacto, manteniendo la misma distribución de salida que el modelo autoregresivo original.
+El modelo `FlatFootInternational/qwen3.8-27b-MTPLX-5bit` es una cuantización en 5 bits del modelo Qwen3.8-27B de Alibaba, adaptada específicamente para ejecución en Apple Silicon mediante la librería MLX. La particularidad de esta versión es que conserva la cabeza de predicción multi-token (MTP) nativa del modelo original, lo que permite decodificación especulativa y acelera la generación en hardware Apple. El autor, FlatFootInternational, ha utilizado la herramienta MTPLX Forge para construir este artefacto a partir del checkpoint oficial de Qwen.
 
-Según la verificación publicada en la model card, esta versión alcanza un multiplicador de 2,68× frente a la línea base autoregresiva con una profundidad óptima D3, probada en un Apple M5. El repositorio contiene pesos en formato safetensors con un tamaño total de 16,9 GB, aunque el número de parámetros registrado en los archivos es de 4.665.462.000 (~4,67 mil millones), una cifra notablemente inferior a la que sugiere el nombre "27B". Esta discrepancia podría deberse a una cuantización agresiva o a un error en el registro, pero no se dispone de información adicional para aclararlo.
-
-El modelo está pensado para su uso exclusivo en entornos Apple Silicon mediante la herramienta MTPLX, que lo detecta automáticamente al descargarlo. No se especifica la licencia concreta, aunque la model card remite a un archivo LICENSE dentro del repositorio.
+El modelo base Qwen3.8-27B es un transformer denso híbrido con atención lineal en 48 de sus 64 capas, incorpora una torre de visión y una ventana de contexto nativa de 262 144 tokens, extensible a 1 millón. Esta cuantización mantiene todas esas capacidades, pero reduce el peso de las matrices a 5 bits con grupos de 64 pesos, mientras que las partes sensibles (normas, kernels de convolución GDN, parámetros de estado recurrente y la cabeza MTP) se conservan en 16 bits. El resultado es un modelo de 19,4 GB de descarga que cabe en equipos Mac con 32 GB de memoria unificada, ofreciendo una alternativa local de alto rendimiento para tareas de generación de texto, código y flujos agénticos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (basado en Qwen3.8-27B) |
-| Parametros totales | 4.665.462.000 (según safetensors) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 5-bit (según nombre) / 4-bit (según tags) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (remite a LICENSE) |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer denso hibrido con atencion lineal en 48 de 64 capas, torre de vision y cabeza MTP |
+| Parametros totales | 27B (modelo base); el archivo safetensors reporta 4 665 462 000, posible error de metadata |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 262 144 tokens (extensible a 1M) |
+| Tipos de cuantizacion | 5 bits por matriz de pesos, con grupos de 64; partes sensibles en 16 bits |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso de código abierto con capacidades multimodales, desarrollado por el equipo Qwen de Alibaba. Destaca en tareas de codificación, flujos de trabajo agénticos y automatización de oficina. La versión MTPLX no modifica los pesos del modelo original, sino que añade un mecanismo de predicción multi-token: durante la inferencia, el modelo genera varios tokens candidatos en paralelo y los verifica en un único pase hacia adelante, descartando aquellos que no coinciden con la distribución esperada mediante muestreo de rechazo exacto. Esto permite acelerar la generación sin alterar la calidad de las salidas.
+El modelo base Qwen3.8-27B emplea una arquitectura híbrida que combina atención completa y atención lineal: 48 de las 64 capas usan atención lineal para reducir el coste computacional en contextos largos, mientras que las restantes mantienen atención estándar. Incluye una torre de visión que le permite procesar imágenes, y una cabeza de predicción multi-token (MTP) con profundidad 3, que genera varios tokens por paso y acelera la inferencia mediante verificación en una sola pasada.
 
-El proceso de adaptación se realiza con la herramienta MTPLX Forge, que toma el modelo base y lo prepara para su ejecución en MLX, el framework de aprendizaje automático de Apple para chips M-series. La cuantización a 5 bits (o 4 bits según los tags) reduce el tamaño del modelo para facilitar su despliegue en memoria unificada de los Mac. No se dispone de información sobre el dataset de entrenamiento original ni sobre el proceso de ajuste fino, ya que la model card no lo detalla.
+Esta versión cuantizada no modifica la arquitectura, sino que comprime las matrices de pesos a 5 bits con agrupación de 64 pesos. Los componentes sensibles a la cuantización (normas, kernels de convolución GDN, parámetros de estado recurrente y la cabeza MTP) se mantienen en 16 bits para preservar la calidad. El proceso de cuantización se realizó con la herramienta MTPLX Forge, que verifica la integridad del artefacto resultante. No se dispone de información detallada sobre el dataset de entrenamiento original, pero el modelo base fue entrenado por Alibaba con un enfoque en codificación, razonamiento y tareas agénticas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: al estar basado en Qwen3.8-27B, hereda las capacidades de comprensión y generación de lenguaje del modelo original, aunque la cuantización puede afectar ligeramente la precisión.
-- Codificación: el modelo base está optimizado para tareas de programación, incluyendo generación, revisión y depuración de código.
-- Flujos de trabajo agénticos: soporta razonamiento multi-paso y uso de herramientas, lo que lo hace adecuado para agentes autónomos.
-- Multimodalidad: el modelo base es multimodal (acepta imágenes y texto), pero no se ha confirmado si esta versión MTPLX conserva dicha capacidad tras la cuantización.
-- Aceleración por multi-token prediction: gracias a la técnica MTP, la inferencia es hasta 2,68× más rápida que la línea base autoregresiva en Apple Silicon.
-- Ejecución local en Mac: diseñado específicamente para MLX, se integra con la herramienta MTPLX para chat y otras aplicaciones.
+- Generación de texto y conversación multi-turno con contexto largo (hasta 262 144 tokens).
+- Razonamiento paso a paso y resolución de problemas matemáticos y lógicos.
+- Generación de código en múltiples lenguajes, con soporte para depuración y explicación.
+- Procesamiento de imágenes gracias a la torre de visión integrada (multimodal).
+- Soporte de flujos agénticos y automatización de tareas de oficina (redacción, resumen, extracción de información).
+- Decodificación especulativa nativa mediante la cabeza MTP, que acelera la generación en hardware Apple.
+- Capacidades multilingües heredadas del modelo base, aunque no se especifican los idiomas exactos.
 
 ## Casos de uso
 
-- Asistente de programación local en Mac: un desarrollador puede ejecutar el modelo en su MacBook con chip M-series para obtener sugerencias de código, explicaciones y refactorizaciones sin depender de servicios en la nube. La aceleración MTP reduce la latencia en sesiones interactivas.
-- Automatización de tareas de oficina: el modelo base destaca en la generación de documentos, resúmenes y correos electrónicos. Con esta versión, se puede desplegar un asistente local que procese información sensible sin enviarla a servidores externos.
-- Agente autónomo para investigación: gracias a su capacidad de razonamiento multi-paso y tool calling, puede utilizarse para tareas como búsqueda de información, análisis de datos y generación de informes, todo ejecutado localmente en un Mac.
-- Chatbot privado para equipos: empresas que manejan datos confidenciales pueden instalar el modelo en estaciones de trabajo Apple para ofrecer un asistente conversacional sin riesgo de fuga de información.
-- Prototipado rápido de aplicaciones de IA: al ser ligero y rápido en Apple Silicon, es adecuado para probar ideas y validar flujos de trabajo antes de escalar a modelos más grandes en la nube.
-- Educación y formación: estudiantes e investigadores pueden experimentar con un modelo de razonamiento avanzado en su propio hardware, sin necesidad de GPUs dedicadas.
+- Asistente de programación local: un desarrollador puede ejecutar el modelo en su MacBook para obtener sugerencias de código, refactorización y explicaciones de fragmentos complejos, sin depender de servicios en la nube. La ventana de 262K tokens permite procesar repositorios completos o archivos largos.
+- Automatización de oficina: el modelo puede redactar correos, resumir documentos extensos, extraer datos de contratos o generar informes a partir de notas, aprovechando su capacidad de razonamiento y su contexto amplio.
+- Chatbot de atención al cliente: con su capacidad de mantener conversaciones multi-turno y su licencia Apache 2.0, puede integrarse en sistemas de soporte para responder consultas técnicas o de producto, manteniendo el historial completo de la conversación.
+- Análisis de documentos con imágenes: gracias a la torre de visión, puede procesar capturas de pantalla, diagramas o formularios escaneados y extraer información estructurada, útil en entornos administrativos.
+- Desarrollo de agentes autónomos: su soporte para razonamiento multi-paso y su capacidad de tool calling (heredada del modelo base) permiten construir agentes que planifican, ejecutan acciones y verifican resultados, por ejemplo en pruebas automatizadas o scraping de datos.
+- Generación de contenido técnico: puede crear documentación, tutoriales o entradas de blog a partir de especificaciones, manteniendo coherencia a lo largo de textos largos gracias a su contexto extendido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta versión MTPLX. Sin embargo, el modelo base Qwen3.8-27B ocupa el puesto #14 en el leaderboard público BenchAlign con una puntuación de 72,49/100, según BenchLM.ai. Esta referencia corresponde al modelo original sin cuantizar y sin la adaptación MTP, por lo que los resultados reales de esta versión pueden variar ligeramente debido a la cuantización y al mecanismo de verificación.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo indica velocidades medidas en un MacBook M5 con 32 GB de memoria unificada, pero no proporciona cifras concretas de tokens por segundo ni comparaciones con otros modelos. Se recomienda consultar el repositorio del modelo base Qwen/Qwen3.8-27B para obtener resultados de evaluaciones estándar (MMLU, HumanEval, GSM8K, etc.) en su versión sin cuantizar.
 
 ## Requisitos de hardware
 
-- Plataforma: Apple Silicon (M1, M2, M3, M4, M5 o posteriores) con soporte MLX.
-- Memoria unificada: el tamaño del repositorio es de 16,9 GB, lo que sugiere que se necesita al menos 16 GB de RAM unificada para cargar el modelo completo. Con cuantización a 5 bits, el uso de memoria podría ser inferior, pero no se dispone de datos exactos.
-- GPU: no aplica GPU discreta; se utiliza la GPU integrada del chip Apple.
-- Despliegue: mediante la herramienta MTPLX (`mtplx pull` y `mtplx start chat`). También es compatible con MLX y otros frameworks que soporten safetensors.
-- Latencia: la verificación reporta un multiplicador de 2,68× frente a la línea base autoregresiva, lo que implica una reducción significativa del tiempo de generación, aunque no se proporcionan cifras absolutas.
+- Memoria unificada: se recomiendan 32 GB o más para ejecutar el modelo con comodidad.
+- GPU: diseñado para Apple Silicon (M-series). Probado en MacBook M5 (no Pro ni Max) con 32 GB.
+- Almacenamiento: aproximadamente 19,4 GB de descarga (el repositorio ocupa 16,9 GB en HuggingFace).
+- Opciones de despliegue: mediante la herramienta `mtplx` (comando `mtplx serve --model FlatFootInternational/qwen3.8-27b-MTPLX-5bit`). También puede cargarse con MLX directamente.
+- Latencia y throughput: no se proporcionan cifras exactas; la model card afirma que la decodificación especulativa con MTP acelera la generación, pero no cuantifica la mejora.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Plataforma | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Plataforma |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B (aprox.) | no disponible | Apache 2.0 (según repo oficial) | Multiplataforma | Modelo base multimodal, sin cuantizar |
-| FlatFootInternational/qwen3.8-27b-MTPLX-5bit | 4,67B (según safetensors) | no disponible | no disponible | Apple Silicon (MLX) | Versión cuantizada con MTP |
-| Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed | no disponible | no disponible | no disponible | Apple Silicon (MLX) | Variante optimizada para velocidad |
-| Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality | no disponible | no disponible | no disponible | Apple Silicon (MLX) | Variante optimizada para calidad |
+| Qwen3.8-27B (original) | 27B | 262K | FP16/BF16 | Apache 2.0 | Multiplataforma |
+| FlatFootInternational/qwen3.8-27b-MTPLX-5bit | 27B | 262K | 5-bit MLX | Apache 2.0 | Apple Silicon |
+| Qwen3.5-4B (MTPLX) | 4B | No disponible | 5-bit MLX | Apache 2.0 | Apple Silicon |
 
-La comparativa se limita a las variantes MTPLX del mismo modelo base, ya que no se dispone de datos suficientes para comparar con otros modelos de la misma categoría.
+La comparativa se limita a modelos de la misma familia MTPLX y al modelo base. No se dispone de datos de rendimiento para establecer una comparación cuantitativa con otras alternativas de 27B como Llama 3.1 27B o Mistral Large.
 
 ## Limitaciones y advertencias
 
-- La cuantización a 5 bits (o 4 bits) puede introducir pérdida de precisión en tareas complejas de razonamiento o generación de código, aunque la técnica MTP está diseñada para preservar la distribución de salida.
-- El número de parámetros registrado (4,67B) no coincide con el nombre del modelo (27B), lo que genera incertidumbre sobre el tamaño real y el rendimiento esperado.
-- Solo funciona en Apple Silicon; no es compatible con GPUs NVIDIA o AMD ni con entornos Linux/Windows estándar.
-- La licencia no está claramente especificada; se remite a un archivo LICENSE que no se ha podido verificar, por lo que el uso comercial podría estar restringido.
-- No se han publicado benchmarks específicos para esta versión, por lo que las afirmaciones de rendimiento se basan en la verificación del autor y en los datos del modelo base.
-- El modelo base es multimodal, pero no se ha confirmado que esta versión conserve la capacidad de procesamiento de imágenes tras la cuantización.
-- Al ser un modelo relativamente nuevo (creado en agosto de 2026), la comunidad aún no ha validado su comportamiento en producción.
+- La cuantización a 5 bits puede introducir una ligera degradación en la calidad de generación respecto al modelo original en FP16, especialmente en tareas de razonamiento complejo o matemáticas.
+- El modelo está optimizado para Apple Silicon; su uso en otras plataformas requeriría conversión a otros formatos (GGUF, etc.) y podría no aprovechar la cabeza MTP.
+- No se han publicado evaluaciones de sesgos o alucinaciones específicas para esta versión cuantizada. Como cualquier modelo de lenguaje, puede generar información falsa o inventada.
+- La ventana de contexto de 262K tokens es amplia, pero el uso prolongado de contextos muy largos puede agotar la memoria unificada en equipos con 32 GB.
+- Aunque la licencia es Apache 2.0, el modelo base Qwen3.8-27B puede tener restricciones adicionales de uso comercial según los términos de Alibaba; se recomienda revisar la documentación oficial.
+- El número de descargas y likes es cero, lo que indica que el modelo es reciente y aún no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [HuggingFace: FlatFootInternational/qwen3.8-27b-MTPLX-5bit](https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-5bit)
-- [GitHub: youssofal/MTPLX](https://github.com/youssofal/mtplx)
-- [GitHub: AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
-- [BenchLM.ai: Qwen3.8-27B](https://benchlm.ai/models/qwen3-8-27b)
-- [HuggingFace: Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed](https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed)
-- [HuggingFace: Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality](https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality)
+- Modelo en HuggingFace: https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-5bit
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio MTPLX en GitHub: https://github.com/youssofal/mtplx
+- Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
+- Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

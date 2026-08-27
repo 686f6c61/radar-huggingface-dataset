@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Olzun/katja",
+  "slug": "olzun-katja",
+  "author": "Olzun",
+  "url": "https://huggingface.co/Olzun/katja",
+  "created_at": "2026-08-27T11:37:58.000Z",
+  "updated_at": "2026-08-27T12:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970642244,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "katja - 1 KATJA - Free AI LORA | Tensor.Art",
+      "url": "https://www.tensor.art/models/767160684950686031",
+      "snippet": "Download katja - free LORA SD 1.5 AI model on TENSOR. KATJA, BLONDE GIRL. By bonita"
+    },
+    {
+      "title": "Katja. - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d4ilisle878c73aou650",
+      "snippet": "Explore Katja. model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Virtual Goddess: Katja - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/6ae402b651a3bc6f6647f682eeedc6f7",
+      "snippet": "Explore Virtual Goddess: Katja model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "model_katya_ai | Instagram, TikTok | Linktree",
+      "url": "https://linktr.ee/model_katya_ai",
+      "snippet": "@model_katya_ai Telegram: Join Group Chat Login • Instagram AiGeneralTools (@aigeneraltools) | TikTok"
+    },
+    {
+      "title": "vladmodels - Search Videos - Bing",
+      "url": "https://www.bing.com/videos/riverview/relatedvideo?q=vladmodels&ajaxhist=0",
+      "snippet": "Watch videos instantly on Bing—enjoy direct playback, discover related clips, and dive into trending content all in one place."
+    }
+  ]
+}

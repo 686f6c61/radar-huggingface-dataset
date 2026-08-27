@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-oQ4",
+  "slug": "drowzeys-keys-mac-omlx-0-6-3-2rc-dual-ane-glm-5-3-flash-oq4",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-oQ4",
+  "created_at": "2026-08-27T04:52:03.000Z",
+  "updated_at": "2026-08-27T14:43:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "image-text-to-text",
+    "base_model:Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
+    "base_model:finetune:Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44051,
+  "storage_human": "44051 B",
+  "base_model": "Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-oQ4 - Hugging Face",
+      "url": "https://huggingface.co/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-oQ4",
+      "snippet": "Instructions to use drowzeys/keys-Mac-oMLX-.6.3.2RC-Dual-ANE-GLM-5.3-Flash-oQ4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4 - GitHub",
+      "url": "https://github.com/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4/",
+      "snippet": "1.0 Beta · Mac Studio M3 Ultra · oMLX 0.6.3rc2 (pack name 0.6.3.2RC) · GLM-5.3-Flash Abliterated Vontra oQ4 · Dual-ANE + CPU prefill · Lightning MTP (native NEXTN) These weights have safety refusals removed. Research / red-team only — you supply the guardrails. Same Dealign o_proj L15-45 ..."
+    },
+    {
+      "title": "keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4 ... - GitHub",
+      "url": "https://github.com/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4/blob/main/AGENTS.md",
+      "snippet": "Overlay payload (glm5_next + Dual-ANE/MTP patches) is also on GHCR:"
+    },
+    {
+      "title": "drowzeys/keys-MAC-oMLX-0.6.1-DualANE-Qwen3.8-27B-Abliterated-oQ4e-MTP ...",
+      "url": "https://bdnb.cn/repo/drowzeys/keys-MAC-oMLX-0.6.1-DualANE-Qwen3.8-27B-Abliterated-oQ4e-MTP",
+      "snippet": "The ANE kernel gates on and gate/up at exactly 4 bits ( ). oQ5e/oQ6e/oQ8e and every mxfp8/int8 build fail that gate, so the dual-ANE path silently no-ops on them. oQ4e is the only level that keeps it."
+    },
+    {
+      "title": "keys-Mac-oMLX-0.6.3.2RC-Qwen3.8-27B-Dual-ANE-CPU-Abliterated-oQ4e - GitHub",
+      "url": "https://github.com/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Qwen3.8-27B-Dual-ANE-CPU-Abliterated-oQ4e",
+      "snippet": "Real-serve, thinking off, decode = post-TTFT. Model id qwen38-27b-ablit-fp16 (Huihui oQ4e Dual-ANE+GDN+CPU path ..."
+    }
+  ]
+}

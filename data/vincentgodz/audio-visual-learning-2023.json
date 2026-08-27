@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vincentgodz/audio-visual-learning-2023",
+  "slug": "vincentgodz-audio-visual-learning-2023",
+  "author": "vincentgodz",
+  "url": "https://huggingface.co/vincentgodz/audio-visual-learning-2023",
+  "created_at": "2026-08-27T18:40:20.000Z",
+  "updated_at": "2026-08-27T18:40:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vincentgodz (Vincent B. Garcia) - Hugging Face",
+      "url": "https://huggingface.co/vincentgodz/models",
+      "snippet": "User profile of Vincent B. Garcia on Hugging Face"
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2605.04045",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "paper_023850617_audio_visual_learning - Hugging Face",
+      "url": "https://huggingface.co/VincentNguyensen/paper_023850617_audio_visual_learning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2308.11073",
+      "snippet": "The paper discusses audio-visual class-incremental learning, focusing on methods to integrate new classes into existing models while maintaining performance."
+    },
+    {
+      "title": "Awesome Audio-visual Learning\"] | [\"A curated list of audio-visual ...",
+      "url": "https://gewu-lab.github.io/awesome-audiovisual-learning/",
+      "snippet": "This is a curated list of audio-visual learning methods and datasets, based on our survey: <Learning in Audio-visual Context: A Review, Analysis, and New Perspective>."
+    }
+  ]
+}

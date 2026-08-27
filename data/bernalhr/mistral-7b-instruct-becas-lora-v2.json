@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BernalHR/mistral-7b-instruct-becas-lora-v2",
+  "slug": "bernalhr-mistral-7b-instruct-becas-lora-v2",
+  "author": "BernalHR",
+  "url": "https://huggingface.co/BernalHR/mistral-7b-instruct-becas-lora-v2",
+  "created_at": "2026-08-27T18:44:27.000Z",
+  "updated_at": "2026-08-27T18:44:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
+      "snippet": "A newer version of this model is available: mistralai/Mistral-7B-Instruct-v0.3"
+    },
+    {
+      "title": "BernalHR/mistral-7b-instruct-v0.3-lora · Hugging Face",
+      "url": "https://huggingface.co/BernalHR/mistral-7b-instruct-v0.3-lora",
+      "snippet": "BernalHR / mistral-7b-instruct-v0.3-lora like 0 Transformers Safetensors English text-generation-inference unsloth mistral trl License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    },
+    {
+      "title": "[2310.06825] Mistral 7B - arXiv.org",
+      "url": "https://arxiv.org/abs/2310.06825",
+      "snippet": "We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and code generation. Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle ..."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

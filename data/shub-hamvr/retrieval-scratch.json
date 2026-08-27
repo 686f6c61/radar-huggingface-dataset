@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SHUB-HAMVR/retrieval-scratch",
+  "slug": "shub-hamvr-retrieval-scratch",
+  "author": "SHUB-HAMVR",
+  "url": "https://huggingface.co/SHUB-HAMVR/retrieval-scratch",
+  "created_at": "2026-08-27T17:31:49.000Z",
+  "updated_at": "2026-08-27T17:31:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHUB-HAMVR (Yusuke SAITO) - Hugging Face",
+      "url": "https://huggingface.co/SHUB-HAMVR/datasets",
+      "snippet": "Rock climber. Also writes code."
+    },
+    {
+      "title": "GitHub - Kshubham0315/Rag_From_Scratch: A modular Retrieval-Augmented ...",
+      "url": "https://github.com/Kshubham0315/Rag_From_Scratch",
+      "snippet": "A modular Retrieval-Augmented Generation (RAG) system implemented from scratch in Python — without LangChain or LlamaIndex. The project focuses on understanding the internal working of a modern RAG pipeline by implementing the major retrieval algorithms manually."
+    },
+    {
+      "title": "GitHub - Shubhamsaboo/awesome-llm-apps: 100+ AI Agents, Agent Skills ...",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "snippet": "100+ open-source AI agents, agent skills, and RAG apps. Hand-built, tested end-to-end, Apache-2.0. Clone it, ship it, sell it - 100% free and open-source Works with Claude, Gemini, GPT, DeepSeek, Llama, Qwen and other open-source models. Step-by-step tutorials on Unwind AI · Quick start · Browse all templates"
+    },
+    {
+      "title": "Build a Real Retrieval-Augmented AI System from Scratch",
+      "url": "https://hub.buildfellowship.com/projects/build-a-real-retrieval-augmented-ai-system-from-scratch",
+      "snippet": "Build a Real Retrieval-Augmented AI System from Scratch Turn raw documents into an intelligent search system that can find answers, summarize content, and power real‑world applications like chatbots and research assistants."
+    },
+    {
+      "title": "Retrieval Augmented Generation (RAG) from Scratch — Tutorial For ...",
+      "url": "https://dev.to/zachary62/retrieval-augmented-generation-rag-from-scratch-tutorial-for-dummies-508a",
+      "snippet": "Ever wondered how AI tools like ChatGPT can answer questions based on specific documents they&#x27;ve never seen before? This guide breaks down Retrieval Augmented Generation (RAG) in the simplest possible way with minimal code implementation! Have you ever asked an AI a question about your personal documents and received a completely made-up answer? Or maybe you&#x27;ve been frustrated when chatbots ..."
+    }
+  ]
+}

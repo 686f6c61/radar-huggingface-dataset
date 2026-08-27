@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thapargenomics/retrieval-large",
+  "slug": "thapargenomics-retrieval-large",
+  "author": "thapargenomics",
+  "url": "https://huggingface.co/thapargenomics/retrieval-large",
+  "created_at": "2026-08-27T12:43:31.000Z",
+  "updated_at": "2026-08-27T12:43:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI Model Vulnerability Tracker 2026: 52 Confirmed Exploits",
+      "url": "https://axis-intelligence.com/research/ai-model-vulnerability-tracker/",
+      "snippet": "Every disclosed LLM and AI agent vulnerability, with vendor CVSS scores and the days each vendor took to ship a fix. Updated monthly. AI Model Vulnerability Tracker 2026 update."
+    },
+    {
+      "title": "arXiv:2502.06872v1 [cs.CL] 8 Feb 2025",
+      "url": "https://arxiv.org/pdf/2502.06872",
+      "snippet": "arXiv:2502.06872v1 [cs.CL] 8 Feb 2025 Towards Trustworthy Retrieval Augmented Generation for Large Language Models: A Survey"
+    },
+    {
+      "title": "Improving automated deep phenotyping through large language models ...",
+      "url": "https://link.springer.com/article/10.1186/s13073-025-01521-w",
+      "snippet": "This model-agnostic design allows researchers and clinicians to select backends that best meet their infrastructure and privacy needs. As demonstrated by our cross-platform analysis of LLM performance, model selection is a key factor in optimizing precision and recall."
+    }
+  ]
+}

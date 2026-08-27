@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Shio-Koube/ConvNext-Diff",
+  "slug": "shio-koube-convnext-diff",
+  "author": "Shio-Koube",
+  "url": "https://huggingface.co/Shio-Koube/ConvNext-Diff",
+  "created_at": "2026-03-14T19:19:03.000Z",
+  "updated_at": "2026-08-27T16:55:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1150706630472,
+  "storage_human": "1150.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shio-Koube/ConvNext-Diff · Hugging Face",
+      "url": "https://huggingface.co/Shio-Koube/ConvNext-Diff",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shio-Koube/ConvNext-style · Hugging Face",
+      "url": "https://huggingface.co/Shio-Koube/ConvNext-style",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shio-Koube/ConvNext-Diff - LLMs .INFO",
+      "url": "https://llms.info/models/shio-koube-convnext-diff-1720",
+      "snippet": "region:us region:us Runs Local runtime Memory N/A Model Size N/A Local runtime"
+    },
+    {
+      "title": "Shio-Koube (Shio Kōbe)",
+      "url": "https://hf-p-cfw.fyan.top/Shio-Koube/datasets",
+      "snippet": "Recent Activity updated a modelabout 8 hours ago Shio-Koube/ConvNext-Diff updated a dataset2 days ago Shio-Koube/Bored-at-home updated a dataset8 days ago Shio-Koube/aesthetic-100k View all activity"
+    },
+    {
+      "title": "GitHub - facebookresearch/ConvNeXt: Code release for ConvNeXt model",
+      "url": "https://github.com/facebookresearch/ConvNeXt",
+      "snippet": "Code release for ConvNeXt model. Contribute to facebookresearch/ConvNeXt development by creating an account on GitHub."
+    }
+  ]
+}

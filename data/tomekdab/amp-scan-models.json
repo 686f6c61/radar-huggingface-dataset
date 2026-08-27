@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tomekdab/amp-scan-models",
+  "slug": "tomekdab-amp-scan-models",
+  "author": "tomekdab",
+  "url": "https://huggingface.co/tomekdab/amp-scan-models",
+  "created_at": "2026-08-27T15:47:34.000Z",
+  "updated_at": "2026-08-27T15:48:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "joblib",
+    "biology",
+    "antimicrobial-peptides",
+    "esm2",
+    "protein-language-model",
+    "drug-discovery",
+    "text-classification",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144995457,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelScan: Protection Against Model Serialization Attacks",
+      "url": "https://github.com/protectai/modelscan",
+      "snippet": "ModelScan is an open source project from Protect AI that scans models to determine if they contain unsafe code. It is the first model scanning tool to support multiple model formats. ModelScan currently supports: H5, Pickle, and SavedModel formats. This protects you when using PyTorch, TensorFlow, Keras, Sklearn, XGBoost, with more on the way."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "GitHub - dan-veltri/amp-scanner-v2: Antimicrobial Peptide Scanner ...",
+      "url": "https://github.com/dan-veltri/amp-scanner-v2",
+      "snippet": "Making Predictions with Pre-Trained Models The amp_scanner_v2_predict_tf1.py script is used to run predictions on your own query FASTA file using a pre-trained AMP Scanner v2 model file (saved in .h5 format)."
+    },
+    {
+      "title": "Modes & Models - Amp",
+      "url": "https://ampcode.com/modes",
+      "snippet": "Amp uses the best model for each task: leading generalist foundation models for complex reasoning and planning, and smaller specialized models for fast, accurate responses in specific domains."
+    },
+    {
+      "title": "Antimicrobial Peptide Scanner - dveltri.com",
+      "url": "https://www.dveltri.com/ascan/v2/ascan.html",
+      "snippet": "For these cases, we recommend using \"Proteome Scan Mode\" in AMP Scanner Ver. 1 to identify promising segments first, and then submitting those results to this version of the program."
+    }
+  ]
+}

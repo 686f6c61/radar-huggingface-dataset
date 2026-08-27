@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-small-patch4-window16-512",
+  "slug": "cominder-iwin-small-patch4-window16-512",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-small-patch4-window16-512",
+  "created_at": "2026-08-27T15:22:39.000Z",
+  "updated_at": "2026-08-27T15:23:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 412703822,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iwin_small_patch4_window16_1024.pth · cominder/Iwin-Transformer at main",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_small_patch4_window16_1024.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "cominder/Iwin-Transformer at main - Hugging Face",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Cominder/Iwin-Transformer: Iwin Transformer: Hierarchical ...",
+      "url": "https://github.com/Cominder/Iwin-Transformer",
+      "snippet": "Iwin Transformer (the name Iwin stands for I nterleaved win dow) is initially described in arxiv. It is a position-embedding-free hierarchical vision transformer, which can be fine-tuned directly from low to high resolution, through the collaboration of innovative interleaved window attention and depthwise convolution."
+    },
+    {
+      "title": "Swinv2-tiny-patch4-window16-256 Open-source Model - Efficiently Achieve ...",
+      "url": "https://model.aibase.com/models/details/1915694797219848194",
+      "snippet": "This model was pre-trained on the ImageNet-1k dataset at 256x256 resolution and is suitable for image classification tasks. It improves training stability through post-normalization of residuals and cosine attention mechanisms, supporting transfer learning from low-resolution to high-resolution inputs."
+    }
+  ]
+}

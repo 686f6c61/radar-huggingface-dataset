@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "learner1119/act_robomimic_square_ph",
+  "slug": "learner1119-act_robomimic_square_ph",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/act_robomimic_square_ph",
+  "created_at": "2026-08-27T15:30:57.000Z",
+  "updated_at": "2026-08-27T15:31:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:local/robomimic_square_ph_v30",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40150215,
+  "parameters_human": "40.2M",
+  "storage_bytes": 160619180,
+  "storage_human": "161 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robomimic",
+      "url": "https://robomimic.github.io/",
+      "snippet": "robomimic is a framework for robot learning from demonstration. It offers a broad set of demonstration datasets collected on robot manipulation domains, and learning algorithms to learn from these datasets."
+    },
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "GitHub - ARISE-Initiative/robomimic: robomimic: A Modular Framework for ...",
+      "url": "https://github.com/ARISE-Initiative/robomimic",
+      "snippet": "Contributing to robomimic This project is part of the broader Advancing Robot Intelligence through Simulated Environments (ARISE) Initiative, with the aim of lowering the barriers of entry for cutting-edge research at the intersection of AI and Robotics."
+    },
+    {
+      "title": "chomeed/robomimic_square_ph · Hugging Face",
+      "url": "https://huggingface.co/chomeed/robomimic_square_ph",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - tonyzhaozh/robomimic-ACT-merge: robomimic: A Modular Framework ...",
+      "url": "https://github.com/tonyzhaozh/robomimic-ACT-merge",
+      "snippet": "Contributing to robomimic This project is part of the broader Advancing Robot Intelligence through Simulated Environments (ARISE) Initiative, with the aim of lowering the barriers of entry for cutting-edge research at the intersection of AI and Robotics."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Qwopus3.5-9B-Supervisor-v3.5-MLX",
+  "slug": "amaimedia-noesis-qwopus3-5-9b-supervisor-v3-5-mlx",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Supervisor-v3.5-MLX",
+  "created_at": "2026-08-27T18:20:06.000Z",
+  "updated_at": "2026-08-27T18:51:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "qwen3.5-201-languages",
+    "supports-201-languages",
+    "multilingual",
+    "language-support",
+    "noesis",
+    "qwopus3.5",
+    "supervisor",
+    "original-trained-model",
+    "bfloat16",
+    "apple-silicon",
+    "long-context",
+    "multi-agent",
+    "noesis-dhcf-fno",
+    "amaimedia",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927651782,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NOESIS-Original-Trained-Models - a AMAImedia Collection",
+      "url": "https://huggingface.co/collections/AMAImedia/noesis-original-trained-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from AMAImedia"
+    },
+    {
+      "title": "fredrezones55/Qwopus3.5 - ollama.com",
+      "url": "https://ollama.com/fredrezones55/Qwopus3.5",
+      "snippet": "Qwopus3.5-v3 is a reasoning-enhanced model family fine-tune of Qwen3.5 designed to improve reasoning stability and correctness, optimize inference efficiency, and enhance cross-task generalization capabilities, especially in programming."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "GitHub - moolinex/qwopus3.5_v3",
+      "url": "https://github.com/moolinex/qwopus3.5_v3",
+      "snippet": "Moving forward, the complete training source code for every fine-tuned model I release on Hugging Face will be fully open-sourced in this repository. My goal is to ensure that anyone—regardless of their background or resources—can freely download, execute, and learn from these scripts to build their own AI capabilities."
+    }
+  ]
+}

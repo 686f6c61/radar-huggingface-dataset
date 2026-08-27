@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen2.5-1.5b-indonesian-legal-sft-GGUF",
+  "slug": "mradermacher-qwen2-5-1-5b-indonesian-legal-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2.5-1.5b-indonesian-legal-sft-GGUF",
+  "created_at": "2026-08-27T11:56:30.000Z",
+  "updated_at": "2026-08-27T12:07:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:zuxler/qwen2.5-1.5b-indonesian-legal-sft",
+    "base_model:quantized:zuxler/qwen2.5-1.5b-indonesian-legal-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206904064,
+  "storage_human": "14.2 GB",
+  "base_model": "zuxler/qwen2.5-1.5b-indonesian-legal-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-1.5B-Indonesian-Assistant-GRPO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-1.5B-Indonesian-Assistant-GRPO-GGUF",
+      "snippet": "mradermacher / Qwen2.5-1.5B-Indonesian-Assistant-GRPO-GGUF like 0 Transformers GGUF English text-generation-inference unsloth qwen2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen-2.5-3B-Indonesian-Legal-SFT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-2.5-3B-Indonesian-Legal-SFT-GGUF",
+      "snippet": "mradermacher / Qwen-2.5-3B-Indonesian-Legal-SFT-GGUF like 0 Transformers GGUF English text-generation-inference unsloth qwen2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen-2.5-1.5b-indonesian-legal-sft - friendli.ai",
+      "url": "https://friendli.ai/models/attanmhd/qwen-2.5-1.5b-indonesian-legal-sft",
+      "snippet": "Run qwen-2.5-1.5b-indonesian-legal-sft with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - yangjianxin1/Qwen2: Qwen2 is the large language model series ...",
+      "url": "https://github.com/yangjianxin1/Qwen2",
+      "snippet": "After months of efforts, we are pleased to announce the evolution from Qwen1.5 to Qwen2. This time, we bring to you: Pretrained and instruction-tuned models of 5 sizes, including Qwen2-0.5B, Qwen2-1.5B, Qwen2-7B, Qwen2-57B-A14B, and Qwen2-72B; Having been trained on data in 27 additional languages besides English and Chinese; State-of-the-art performance in a large number of benchmark ..."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "snippet": "Qwen2.5-1.5B-Instruct-GGUF Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to ..."
+    }
+  ]
+}

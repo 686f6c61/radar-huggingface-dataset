@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "happyinhappy/klein-car-geometry-restore-lora",
+  "slug": "happyinhappy-klein-car-geometry-restore-lora",
+  "author": "happyinhappy",
+  "url": "https://huggingface.co/happyinhappy/klein-car-geometry-restore-lora",
+  "created_at": "2026-08-27T17:20:56.000Z",
+  "updated_at": "2026-08-27T17:20:57.000Z",
+  "license": "card-only-weights-not-released",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-image",
+    "lora",
+    "automotive",
+    "geometry-restoration",
+    "flux",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "black-forest-labs/FLUX.2-klein",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Klein Anatomy / Quality Fixer - Klein 9B v1.5 - Civitai",
+      "url": "https://civitai.com/models/2324991/klein-anatomy-quality-fixer",
+      "snippet": "v1.0 - changes anatomy and overall picture quality v1.5 - only changes anatomy 4B - only changes anatomy This concept slider LoRA was trained to correct the anatomy / quality issues with Klein models. The LoRA can&#x27;t fix everything but it helps. It was basically trained so that negative weights have the effect of a negative stable-diffusion prompt, and positive have the opposite effects. Weight ..."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "shootthesound/Fizgig: Krea 2, MiniMax & Klein 9B LoRA - GitHub",
+      "url": "https://github.com/shootthesound/Fizgig",
+      "snippet": "Dataset prep AI captioning with the captioner that trains your model — Krea 2&#x27;s Qwen3-VL writes viewpoint-aware training captions in five editable preset styles (including Style, which describes everything except the look so your trigger word binds to it). Every preset&#x27;s instruction is editable in plain English and persists."
+    }
+  ]
+}

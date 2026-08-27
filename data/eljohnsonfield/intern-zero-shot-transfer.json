@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "eljohnsonfield/intern-zero-shot-transfer",
+  "slug": "eljohnsonfield-intern-zero-shot-transfer",
+  "author": "eljohnsonfield",
+  "url": "https://huggingface.co/eljohnsonfield/intern-zero-shot-transfer",
+  "created_at": "2026-08-27T14:43:40.000Z",
+  "updated_at": "2026-08-27T14:43:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero-Shot Transfer: Mechanisms & Applications",
+      "url": "https://www.emergentmind.com/topics/zero-shot-transfer-0d6a650d-431c-46cb-9cd6-9cfc3cfd9c8c",
+      "snippet": "Zero-shot transfer is the ability of AI models to apply knowledge from labeled source tasks to novel, unlabeled tasks and classes. It employs mechanisms such as semantic embeddings, shared encoders, and meta-learning to enable robust cross-domain and cross-task adaptation. Empirical results demonstrate significant improvements in image retrieval, language understanding, and reinforcement ..."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Zero Shot transfer | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/zero-shot-transfer",
+      "snippet": "Zero-shot transfer, in the realm of AI/ML, describes the ability of a model to perform a task or classify data without having been explicitly trained on examples of that specific task or data. Instead, the model leverages prior knowledge gained from training on different, but related, tasks or data. Think of it as a machine learning model exhibiting a form of common sense or reasoning by ..."
+    },
+    {
+      "title": "Zero-Shot Transfer in Imitation Learning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2310.06710",
+      "snippet": "The mean reward and the standard deviation over 20 different episodes with different starting states are reported in Table 1. We report the best evaluation scores over the training run and the transfer score with the model that achieved the best evaluation."
+    },
+    {
+      "title": "Zero Shot transfer learning | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/zero-shot-transfer-learning",
+      "snippet": "Zero-shot transfer learning empowers AI models to perform tasks they haven&#x27;t explicitly been trained on. Unlike traditional machine learning, which requires labeled data for each task, zero-shot learning leverages prior knowledge from related tasks or semantic descriptions to generalize to unseen scenarios."
+    }
+  ]
+}

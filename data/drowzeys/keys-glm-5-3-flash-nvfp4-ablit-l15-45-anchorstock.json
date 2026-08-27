@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock",
+  "slug": "drowzeys-keys-glm-5-3-flash-nvfp4-ablit-l15-45-anchorstock",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock",
+  "created_at": "2026-08-27T03:29:17.000Z",
+  "updated_at": "2026-08-27T11:10:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm",
+    "glm-5.3",
+    "glm-5.3-flash",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "nvfp4",
+    "vllm",
+    "dgx-spark",
+    "gb10",
+    "anchored-tensors",
+    "multimodal",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:LibertAIDAI/GLM-5.3-Flash-NVFP4",
+    "base_model:finetune:LibertAIDAI/GLM-5.3-Flash-NVFP4",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": 165496249182,
+  "parameters_human": "165.50B",
+  "storage_bytes": 194692697819,
+  "storage_human": "194.7 GB",
+  "base_model": "LibertAIDAI/GLM-5.3-Flash-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock - Hugging Face",
+      "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock - GitHub",
+      "url": "https://github.com/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock",
+      "snippet": "The published weights are a LibertAI NVFP4 body with Dealign o_proj transplanted on L15-45 (MTP included). Early layers L0-14 stay stock — that sparing is the Keys 0731 safety-anchor lesson."
+    },
+    {
+      "title": "keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock - GitHub",
+      "url": "https://github.com/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock/tree/main/hf-modelcard",
+      "snippet": "Abliterated LibertAI GLM-5.3-Flash NVFP4, built to enhance the stock checkpoint for the Keys 2× DGX Spark vLLM 1M recipe — same tok/s band, no refuse loops. The published weights are a LibertAI NVFP4 body with Dealign o_proj transplanted on L15-45 (MTP included). L0-14 stay stock — Keys 0731 safety-anchor sparing."
+    },
+    {
+      "title": "GLM Coding Plan — AI Coding Powered by GLM-5.3, GLM-5.3-Flash, GLM-5.2 ...",
+      "url": "https://z.ai/subscribe",
+      "snippet": "Use GLM models like GLM-5.3, GLM-5.3-Flash, GLM-5.2 & GLM-5-Turbo for AI coding in Claude Code, Codex, ZCode, Kilo Code, Cline, OpenCode, Clawdbot/OpenClaw and more. Plans from 18/month—fast, reliable code generation and tool use for daily dev work."
+    },
+    {
+      "title": "GLM-5.3-Flash Explained: Native Multimodality, 1M Context, and 3× ...",
+      "url": "https://codepick.dev/en/guides/glm-5-3-flash-guide/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal GLM-5 model, using a 320B-total, 18B-active hybrid-attention architecture. This guide covers official benchmarks, visual coding, API usage, Coding Plan quota, and local deployment limits."
+    }
+  ]
+}

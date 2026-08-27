@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "benmeyer2005/knowledge-distillation-survey",
+  "slug": "benmeyer2005-knowledge-distillation-survey",
+  "author": "benmeyer2005",
+  "url": "https://huggingface.co/benmeyer2005/knowledge-distillation-survey",
+  "created_at": "2026-08-27T14:42:36.000Z",
+  "updated_at": "2026-08-27T14:42:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2006.05525] Knowledge Distillation: A Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2006.05525",
+      "snippet": "It has received rapid increasing attention from the community. This paper provides a comprehensive survey of knowledge distillation from the perspectives of knowledge categories, training schemes, teacher-student architecture, distillation algorithms, performance comparison and applications."
+    },
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Knowledge distillation (KD), a technique for model compression and knowledge transfer, has gained significant attention in the field of machine learning since its formal introduction by Hinton et al. (2015). This approach builds upon the earlier work of Caruana et al. (2006), who demonstrated that the collective knowledge of an ensemble of models could be condensed into a single, smaller model ..."
+    },
+    {
+      "title": "[2503.12067] A Comprehensive Survey on Knowledge Distillation",
+      "url": "https://arxiv.org/abs/2503.12067",
+      "snippet": "Knowledge Distillation (KD) is one of the prominent techniques proposed to address the aforementioned problems using a teacher-student architecture. More specifically, a lightweight student model is trained using additional knowledge from a cumbersome teacher model. In this work, a comprehensive survey of knowledge distillation methods is proposed."
+    },
+    {
+      "title": "Knowledge Distillation: A Survey | PDF | Deep Learning | Artificial ...",
+      "url": "https://www.scribd.com/document/479573687/2006-05525",
+      "snippet": "This document provides a survey of knowledge distillation techniques. It begins with an introduction that describes the success of deep learning models but challenges in deploying large models with limited resources. It then discusses how knowledge distillation addresses this by training a smaller student model to mimic the behaviors of a larger teacher model. The survey categorizes knowledge ..."
+    },
+    {
+      "title": "Knowledge Distillation: A Survey - alphaXiv",
+      "url": "https://www.alphaxiv.org/overview/2006.05525v7",
+      "snippet": "This survey from the UBTECH Sydney AI Centre systematically reviews Knowledge Distillation (KD), a method for transferring knowledge from large teacher models to smaller student models to enable efficient deployment on resource-constrained devices. It categorizes KD methods by knowledge type, distillation scheme, and algorithms, demonstrating its consistent effectiveness in model compression ..."
+    }
+  ]
+}

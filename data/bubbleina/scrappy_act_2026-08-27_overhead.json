@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bubbleina/scrappy_act_2026-08-27_overhead",
+  "slug": "bubbleina-scrappy_act_2026-08-27_overhead",
+  "author": "Bubbleina",
+  "url": "https://huggingface.co/Bubbleina/scrappy_act_2026-08-27_overhead",
+  "created_at": "2026-08-27T16:42:10.000Z",
+  "updated_at": "2026-08-27T16:43:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Bubbleina/act_smartbin_wrist_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206703492,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bubbleina (Lina le) - Hugging Face",
+      "url": "https://huggingface.co/Bubbleina",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 42 minutes ago ... published a dataset about 1 hour ago"
+    },
+    {
+      "title": "Bubbleina/act_smartbin_v4 · Hugging Face",
+      "url": "https://huggingface.co/Bubbleina/act_smartbin_v4",
+      "snippet": "Instructions to use Bubbleina/act_smartbin_v4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Bubbleina/act_smartbin_v4 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "Bubbleina Latinx (@bubbleinaa) | TikTok",
+      "url": "https://www.tiktok.com/@bubbleinaa",
+      "snippet": "Bubbleina Latinx (@bubbleinaa) on TikTok | 44.3K Likes. 17K Followers. AKA Tony - Michigan drag queen! Slaying one stage at a time!🇲🇽 20k @focuslivestreaming.Watch Bubbleina Latinx&#x27;s popular videos: \"Body Face card H...\", \"💋 The mug was extra...\". Join 17K followers on TikTok for more glam, dragqueen, gay content"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

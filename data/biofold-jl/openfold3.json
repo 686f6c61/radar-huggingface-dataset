@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "biofold-jl/openfold3",
+  "slug": "biofold-jl-openfold3",
+  "author": "biofold-jl",
+  "url": "https://huggingface.co/biofold-jl/openfold3",
+  "created_at": "2026-08-27T15:33:17.000Z",
+  "updated_at": "2026-08-27T16:03:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2286866148,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Predict Biomolecular Structures Using the OpenFold3 NIM",
+      "url": "https://developer.nvidia.com/blog/how-to-predict-biomolecular-structures-using-the-openfold3-nim/",
+      "snippet": "OpenFold3 brings production-ready protein AI into the NVIDIA ecosystem, allowing for the modeling of multi-chain complexes, nucleic acids, and small-molecule ligands. The model delivers unprecedented speed, scale, and privacy-preserving collaboration for biopharma and biotech teams worldwide, thanks to NVIDIA cuEquivariance, MMseqs2-GPU, and NVIDIA FLARE. OpenFold3 achieves accuracy that meets ..."
+    },
+    {
+      "title": "GitHub - aqlaboratory/openfold-3: A fully open source biomolecular ...",
+      "url": "https://github.com/aqlaboratory/openfold-3",
+      "snippet": "OpenFold3-preview is a biomolecular structure prediction model aiming to be a bitwise reproduction of DeepMind&#x27;s AlphaFold3, developed by the AlQuraishi Lab at Columbia University and the OpenFold consortium. This research preview is intended to gather community feedback and allow developers to start building on top of the OpenFold ecosystem."
+    },
+    {
+      "title": "GitHub - jurgjn/openfold3: A fully open source biomolecular structure ...",
+      "url": "https://github.com/jurgjn/openfold3",
+      "snippet": "OpenFold3-preview is a biomolecular structure prediction model aiming to be a bitwise reproduction of DeepMind&#x27;s AlphaFold3, developed by the AlQuraishi Lab at Columbia University and the OpenFold consortium. This research preview is intended to gather community feedback and allow developers to start building on top of the OpenFold ecosystem."
+    },
+    {
+      "title": "openfold3 Model by Openfold | NVIDIA NIM",
+      "url": "https://build.nvidia.com/openfold/openfold3",
+      "snippet": "OpenFold3 is a third-generation biomolecular foundation model that predicts the three-dimensional structures of molecular complexes (proteins, DNA, RNA, ligands)"
+    },
+    {
+      "title": "Blog: OpenBind-0: Advancing Open Molecular Structure Prediction",
+      "url": "https://openbind.uk/news/blog-openbind-0-advancing-open-molecular-structure-prediction/",
+      "snippet": "Overview Today, we are releasing OpenBind-0 (OB0), the first in a new series of fully open-source molecular structure prediction co-folding models built on OpenFold3 and specialised for predicting the structures of proteins bound to small-molecule ligands. We are also releasing a dense, discovery-relevant dataset of 717 ligand-bound structures that capture fragment-to-hit progression across ..."
+    }
+  ]
+}

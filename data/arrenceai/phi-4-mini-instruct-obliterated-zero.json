@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ArRENCEAI/Phi-4-Mini-Instruct-Obliterated-zero",
+  "slug": "arrenceai-phi-4-mini-instruct-obliterated-zero",
+  "author": "ArRENCEAI",
+  "url": "https://huggingface.co/ArRENCEAI/Phi-4-Mini-Instruct-Obliterated-zero",
+  "created_at": "2026-08-27T14:51:07.000Z",
+  "updated_at": "2026-08-27T16:52:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "custom_code",
+    "en",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7687590296,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Phi-4-mini-instruct",
+      "snippet": "Phi-4-mini-instruct is a dense decoder-only Transformer model with 3.8B parameters, offering key improvements over Phi-3.5-Mini, including a 200K vocabulary, grouped-query attention, and shared embedding. It is designed for chat-completion prompts, generating text based on user input, with a context length of 128K tokens."
+    },
+    {
+      "title": "README.md · microsoft/Phi-4-mini-instruct at main - Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi 4 mini instruct — AI Model Radar",
+      "url": "https://aimodelradar.app/models/phi-4-mini-instruct",
+      "snippet": "Phi-4-mini-instruct is a lightweight open-weights model built on synthetic data and filtered public websites, focused on reasoning-dense content. The model supports a 131K token context window and has undergone supervised fine-tuning and direct preference optimization for instruction adherence and safety. It is available under the MIT license and suitable for scenarios requiring compact models ..."
+    },
+    {
+      "title": "Phi-4-mini - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/phi_4_mini",
+      "snippet": "Phi-4-mini is a 3.8 billion parameter open weight small language model released by Microsoft on February 26, 2025, under the permissive MIT license."
+    }
+  ]
+}

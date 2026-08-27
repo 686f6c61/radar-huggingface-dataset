@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-Roman-teraillm-Restoration-V4",
+  "slug": "supernova11c-supernova-roman-teraillm-restoration-v4",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-Roman-teraillm-Restoration-V4",
+  "created_at": "2026-08-27T14:13:48.000Z",
+  "updated_at": "2026-08-27T14:21:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "nepali",
+    "romanized-nepali",
+    "transliteration",
+    "normalization",
+    "rule-based",
+    "deterministic",
+    "cython",
+    "trie",
+    "longest-match",
+    "ne",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 861824,
+  "storage_human": "861824 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supernova11c/Supernova-teraillm-Embedding-V4 · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V4",
+      "snippet": "Supernova11c / Supernova-teraillm-Embedding-V4 like 0 Feature Extraction PyTorch Safetensors Nepali English supernova_embedding nepali supernova License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Supernova TeraLLM Embedding V4 Architecture Speciality Model size Supernova Embedding Family Training Intended use ..."
+    },
+    {
+      "title": "Supernova11c/Supernova-llm-terai · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-llm-terai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supernova11c/Supernova-teraillm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Supernova11c/Supernova-teraillm",
+      "snippet": "Datasets: Supernova11c / Supernova-teraillm like 0 Modalities: Text Formats: json Languages: Nepali English Size: 1K - 10K Libraries: Datasets Dask Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·2.75k rows default (2.75k rows) Split (1) train·2.75k rows ..."
+    },
+    {
+      "title": "Supernova11c (Supernova) - Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... updated a model about 6 hours ago"
+    },
+    {
+      "title": "GitHub - V01d3m0rt/supernova: AI-Powered Development Assistant",
+      "url": "https://github.com/V01d3m0rt/supernova",
+      "snippet": "SuperNova SuperNova is an AI-powered development assistant that operates directly within the terminal, providing contextual assistance for your codebase."
+    }
+  ]
+}

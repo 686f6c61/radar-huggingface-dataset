@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+  "slug": "mazinb-qwen3-8-flash-next-uncensored-nvfp4",
+  "author": "mazinb",
+  "url": "https://huggingface.co/mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+  "created_at": "2026-08-27T14:02:19.000Z",
+  "updated_at": "2026-08-27T14:23:35.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "nvfp4",
+    "quantized",
+    "vllm",
+    "abliterated",
+    "uncensored",
+    "qwen",
+    "qwen3.8",
+    "flash-next",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "ai-red-team",
+    "red-teaming",
+    "single-gpu",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 186438761739,
+  "storage_human": "186.4 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, primitive-ai/Qwen3.8-Flash-Next-NVFP4, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "primitive-ai/Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "The 180B Flash-Next on one GPU. Qwen3.8-Flash-Next is 360 GB in BF16 and needs two data-center GPUs in FP8. This build serves it on one 96 GB Blackwell: 88.8 GiB of VRAM, the 51B n-gram table in host RAM, and no patched runtime."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-base-patch4-window16-512-22kto1k",
+  "slug": "cominder-iwin-base-patch4-window16-512-22kto1k",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-base-patch4-window16-512-22kto1k",
+  "created_at": "2026-08-27T13:04:58.000Z",
+  "updated_at": "2026-08-27T13:05:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 730107614,
+  "storage_human": "730 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "cominder/Iwin-Transformer at main - Hugging Face",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iwin_small_patch4_window16_512.pth · cominder/Iwin-Transformer at main",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_small_patch4_window16_512.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "swinv2_base_patch4_window12to16_192to256_22kto1k_ft.yaml",
+      "url": "https://github.com/durongzheng/Swin/blob/main/configs/swinv2/swinv2_base_patch4_window12to16_192to256_22kto1k_ft.yaml",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - durongzheng/Swin"
+    },
+    {
+      "title": "swin-transformer权重汇总_swin transformer预训练权重-CSDN博客",
+      "url": "https://blog.csdn.net/ghuuj90uio/article/details/146204407",
+      "snippet": "文章浏览阅读1.6k次，点赞10次，收藏16次。swintranformer权重汇集_swin transformer预训练权重"
+    }
+  ]
+}

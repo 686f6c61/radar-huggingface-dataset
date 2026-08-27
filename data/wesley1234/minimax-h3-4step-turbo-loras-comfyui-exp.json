@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Wesley1234/minimax-h3-4step-turbo-loras-comfyui-exp",
+  "slug": "wesley1234-minimax-h3-4step-turbo-loras-comfyui-exp",
+  "author": "Wesley1234",
+  "url": "https://huggingface.co/Wesley1234/minimax-h3-4step-turbo-loras-comfyui-exp",
+  "created_at": "2026-08-27T16:13:42.000Z",
+  "updated_at": "2026-08-27T16:18:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2339576407,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minimax-h3-4step-turbo-loras-comfyui-exp - Hugging Face",
+      "url": "https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp/blob/main/minimax_h3_turbo_4%E6%AD%A5%E5%8A%A0%E9%80%9F_comfyui.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "t8star/minimax-h3-4step-turbo-loras-comfyui-exp · Hugging Face",
+      "url": "https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "Put the LoRA .safetensors into ComfyUI/models/loras/. You also need the base MiniMax-H3 model, VAEs and text encoder from the official release — see the MiniMax-H3 tutorial."
+    },
+    {
+      "title": "ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps - GitHub",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Minimax-H3-Turbo provides MiniMax-H3 Turbo LoRA checkpoints, plus Diffusers batch inference and ComfyUI workflows."
+    },
+    {
+      "title": "MiniMax H3 on Comfy — Open-Weight Video Model",
+      "url": "https://comfy.org/minimax-h3/",
+      "snippet": "Run MiniMax H3 on Comfy: Open Weights or Partner Nodes, multi-modal in/out, native stereo audio on every clip, up to 2K and 5-15s per generation. Free to start."
+    }
+  ]
+}

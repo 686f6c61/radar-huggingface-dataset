@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "binnugr01/contrastive-2024",
+  "slug": "binnugr01-contrastive-2024",
+  "author": "binnugr01",
+  "url": "https://huggingface.co/binnugr01/contrastive-2024",
+  "created_at": "2026-08-27T15:28:02.000Z",
+  "updated_at": "2026-08-27T15:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "binnugr01 (Bintang Nugroho) - Hugging Face",
+      "url": "https://huggingface.co/binnugr01",
+      "snippet": "models1 binnugr01/paper_007996638_knowledge_distillation Updated about 9 hours ago"
+    },
+    {
+      "title": "binnugr01 (Bintang Nugroho) - Hugging Face",
+      "url": "https://huggingface.co/binnugr01/models",
+      "snippet": "binnugr01&#x27;s models1 Sort: Recently updated binnugr01/paper_007996638_knowledge_distillation Updated about 10 hours ago"
+    },
+    {
+      "title": "GitHub - heyongxin233/DeTeCtive: [NeurIPS 2024] DeTeCtive: Detecting AI ...",
+      "url": "https://github.com/heyongxin233/DeTeCtive",
+      "snippet": "DeTeCtive addresses these challenges with a multi-level contrastive learning framework, distinguishing nuanced writing styles to improve detection accuracy across various domains and models. This repository contains the code and models from our paper, DeTeCtive: Detecting AI-generated Text via Multi-Level Contrastive Learning."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    }
+  ]
+}

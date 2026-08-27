@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Maxworstapppen3/Qwen3-4B-Agentic-Trained",
+  "slug": "maxworstapppen3-qwen3-4b-agentic-trained",
+  "author": "Maxworstapppen3",
+  "url": "https://huggingface.co/Maxworstapppen3/Qwen3-4B-Agentic-Trained",
+  "created_at": "2026-08-27T17:31:20.000Z",
+  "updated_at": "2026-08-27T17:53:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280288,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gen-Verse/Qwen3-4B-RA-SFT · Hugging Face",
+      "url": "https://huggingface.co/Gen-Verse/Qwen3-4B-RA-SFT",
+      "snippet": "🎯 About This Repository This repository contains the Qwen3-4B-RA-SFT model weights, a 4B-sized agentic reasoning model that is finetuned with our 3k Agentic SFT dataset, based on Qwen3-4B-Instruct-2507. 🌟 Introduction In our work, we systematically investigate three dimensions of agentic RL: data, algorithms, and reasoning modes. Our findings reveal 🎯 Data Quality Matters: Real end-to ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "Qwen3: Think Deeper, Act Faster",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "We are open-weighting two MoE models: Qwen3-235B-A22B, a large model with 235 billion total parameters and 22 billion activated parameters, and Qwen3-30B-A3B, a smaller MoE model with 30 billion total parameters and 3 billion activated parameters. Additionally, six dense models are also open-weighted, including Qwen3-32B, Qwen3-14B, Qwen3-8B, Qwen3-4B, Qwen3-1.7B, and Qwen3-0.6B, under Apache ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

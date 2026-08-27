@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ortizemma58/multitask-baseline",
+  "slug": "ortizemma58-multitask-baseline",
+  "author": "Ortizemma58",
+  "url": "https://huggingface.co/Ortizemma58/multitask-baseline",
+  "created_at": "2026-08-27T15:40:12.000Z",
+  "updated_at": "2026-08-27T15:40:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Baseline MRI lets AI predict Alzheimer&#x27;s progression without cognitive ...",
+      "url": "https://medicalxpress.com/news/2026-05-baseline-mri-ai-alzheimer-cognitive.pdf",
+      "snippet": "In order to achieve accurate prediction of cognitive impairment associated with Alzheimer&#x27;s without extensive test measurements, researchers from UC San Francisco proposed a multitask deep ..."
+    },
+    {
+      "title": "Improving Prediction of Alzheimer&#x27;s Disease with AI",
+      "url": "https://www.ucsf.edu/news/2026/05/431961/improving-prediction-alzheimers-disease-ai",
+      "snippet": "A team at UCSF developed a multitask deep learning framework that can effectively predict Alzheimer&#x27;s disease diagnosis, cognitive scores, and future cognitive decline using only baseline MRI and demographics."
+    },
+    {
+      "title": "Gauss Labs x SPIE AL 2025: Multi-task Baseline Model for ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/gauss-labs-x-spie-al-2025-multi-task-baseline-model-image-dbsqc",
+      "snippet": "This year at SPIE Advanced Lithography + Patterning, we presented a new framework: SiliconBASE: Multi-task Baseline Model for Semiconductor Metrology and Inspection Applications."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "COMP6861_MergeLLMs/report.md at main · islem-kms/COMP6861 ... - GitHub",
+      "url": "https://github.com/islem-kms/COMP6861_MergeLLMs/blob/main/report.md",
+      "snippet": "The model is under-merged — a higher λ is needed to compensate. All merged models comfortably exceed the multitask baseline on NLI (0.672-0.834 vs 0.380), a major gain from incorporating the NLI specialist."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justpriscilaferreira/deit-matching68",
+  "slug": "justpriscilaferreira-deit-matching68",
+  "author": "Justpriscilaferreira",
+  "url": "https://huggingface.co/Justpriscilaferreira/deit-matching68",
+  "created_at": "2026-08-27T15:37:09.000Z",
+  "updated_at": "2026-08-27T15:37:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Generated Model Detector | Check Fake Model Images - Pixivera",
+      "url": "https://pixivera.com/ai-generated-model-detector.html",
+      "snippet": "Use the AI generated model detector from Pixivera to identify fake model photos, synthetic beauty portraits, edited fashion images, and suspicious profile pictures."
+    },
+    {
+      "title": "Is This Image AI Generated? — Free AI Image Detector & Checker",
+      "url": "https://isthisimage.ai/",
+      "snippet": "What You Can Check With This AI Image Detector Profile Pictures and Avatars Wondering if a dating profile or social media account is using an AI-generated face? Run the photo through this AI picture detector before you trust — or match with — a stranger online."
+    },
+    {
+      "title": "Visual Face Search - Find Models Instantly | ModelSaler",
+      "url": "https://modelsaler.com/visual-face-search/",
+      "snippet": "Upload a photo to instantly find matching models and content across the ModelSaler library using our advanced AI visual face search technology."
+    },
+    {
+      "title": "JustModels.ai | Create & Train Custom AI Models (No Code)",
+      "url": "https://www.justmodels.ai/",
+      "snippet": "JustModels.ai is the only no-code platform that combines custom LoRA model training, text-to-image, text-to-video, image-to-video, and ReelsRecreator in one place."
+    },
+    {
+      "title": "AI People Search: Look up Someone by Image Search",
+      "url": "https://aipeoplesearch.io/",
+      "snippet": "Within seconds, our powerful reverse image search AI algorithms analyze billions of publicly available images across social media, news sites, and public records."
+    }
+  ]
+}

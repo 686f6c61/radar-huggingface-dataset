@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "toagarwal/generation-dev-2023",
+  "slug": "toagarwal-generation-dev-2023",
+  "author": "toagarwal",
+  "url": "https://huggingface.co/toagarwal/generation-dev-2023",
+  "created_at": "2026-08-27T15:14:04.000Z",
+  "updated_at": "2026-08-27T15:14:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Generative AI exists because of the transformer",
+      "url": "https://ig.ft.com/generative-ai/",
+      "snippet": "Research outlining the transformer model was first published by a group of eight AI researchers at Google in June 2017. Their 11-page research paper marked the start of the generative AI era. A key concept of the transformer architecture is self-attention. This is what allows LLMs to understand relationships between words."
+    },
+    {
+      "title": "Generative AI on AWS - Generative AI, LLMs, and Foundation Models - AWS",
+      "url": "https://aws.amazon.com/ai/generative-ai/",
+      "snippet": "Discover the endless possibilities of generative AI on AWS to boost productivity, build differentiated experiences, and innovate."
+    },
+    {
+      "title": "Explained: Generative AI | MIT News | Massachusetts Institute of Technology",
+      "url": "https://news.mit.edu/2023/explained-generative-ai-1109",
+      "snippet": "What do people mean when they say \"generative AI,\" and why are these systems finding their way into practically every application imaginable? MIT AI experts help break down the ins and outs of this increasingly popular, and ubiquitous, technology."
+    },
+    {
+      "title": "Ship First, Model Later: A Short Recap of AI.Dev - Honeycomb",
+      "url": "https://www.honeycomb.io/blog/ai-dev-2023-recap",
+      "snippet": "In a keynote at AI.Dev, Robert Nishihara (CEO, Anyscale) described the shift: A year ago, the people working with ML models were ML experts. Now, they&#x27;re developers. A year ago, the process was to experiment with building a model, then put a product on top of it. Now, it&#x27;s ship a product, find the market fit, then create customized models."
+    }
+  ]
+}

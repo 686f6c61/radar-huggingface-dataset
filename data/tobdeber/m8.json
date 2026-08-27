@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "TobDeBer/M8",
+  "slug": "tobdeber-m8",
+  "author": "TobDeBer",
+  "url": "https://huggingface.co/TobDeBer/M8",
+  "created_at": "2026-05-25T16:09:20.000Z",
+  "updated_at": "2026-08-27T11:45:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 860356,
+  "parameters_human": "860356",
+  "storage_bytes": 1861200016,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TobDeBer/M8 · Hugging Face",
+      "url": "https://huggingface.co/TobDeBer/M8",
+      "snippet": "Content This model area holds the public parts of converted gguf models using Skipper (T3) or Mate (M8) technology. Future modes will also follow the nautic theme. Demo Spaces Granite4 All Granite4 models (small, tiny, micro, nano 1b and nano 350m) tbd: add PremiumZero, AdvancedZero, FrontierZero tbd: all OSS models with Apache2.0 and MIT license tbd: add larger models using advanced ..."
+    },
+    {
+      "title": "TobDeBer/maegic at main - Hugging Face",
+      "url": "https://huggingface.co/TobDeBer/maegic/tree/main",
+      "snippet": "TobDeBer / maegic like 0 GGUF License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main maegic 3.83 GB Ctrl+K Ctrl+K 1 contributor History:211 commits TobDeBer Update README.md 0f88af1 verified2 months ago .gitattributes Safe 4.64 kBUpload llama-cli-blas-m8 with huggingface_hub2 months ago README.md Safe 3.38 kBUpdate README.md2 months ago SmartQuant.md Safe ..."
+    },
+    {
+      "title": "Huawei Aito M8 Price and Review - EV Database",
+      "url": "https://ev.motorwatt.com/ev-database/database-electric-cars/huawei-aito-m8",
+      "snippet": "Huawei Aito M8 2025, Huawei&#x27;s 705 km luxury electric SUV, offers 396 hp AWD, HarmonyOS cockpit, and advanced ADS 4.0. Starts at $49,000 (£37,730/€44,590). Discover the tech, range, and comfort features in this Aito M8 review."
+    },
+    {
+      "title": "Z.ai shares surge 8% on new AI model running only on Chinese chips - CNBC",
+      "url": "https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html",
+      "snippet": "Z.ai&#x27;s shares rose after the company launched a new AI model that it claimed runs only on Chinese chips. It&#x27;s the latest indication of China&#x27;s efforts to ramp up homegrown computing capability ..."
+    },
+    {
+      "title": "Utility 1177 - Lighting M8 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/933092526624103708",
+      "snippet": "Download Utility 1177 - free LORA SDXL 1.0 AI model on TENSOR. EARLY ACCESS, SDXL, FILM. By user_86hhx56"
+    }
+  ]
+}

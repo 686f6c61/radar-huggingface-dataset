@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thomashoffmann/class-multitask",
+  "slug": "thomashoffmann-class-multitask",
+  "author": "thomashoffmann",
+  "url": "https://huggingface.co/thomashoffmann/class-multitask",
+  "created_at": "2026-08-27T15:47:43.000Z",
+  "updated_at": "2026-08-27T15:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Data Analytics Lab - ETH Z",
+      "url": "https://da.inf.ethz.ch/people/ThomasHofmann/",
+      "snippet": "Data Analytics Lab News My new arXiv paper studies non-linear effects in learning dynamics induced by finite step sizes. It analyzes a deceptively simple, canonical low-dimensional system with analytical tools and shows how this nucleus persists in more realistic networks. The Map Behind the Flow: Finite-Step Gradient Descent as a Dynamical System We have also finished a long paper on discrete ..."
+    },
+    {
+      "title": "AI Model Leaderboard (Live, 2026): Local + Frontier Ranked",
+      "url": "https://localaimaster.com/tools/ai-model-leaderboard",
+      "snippet": "Live AI model ranking — 30 local + frontier models scored on SWE-Bench, MMLU, ARC-AGI, AIME, HumanEval. Claude Opus 4.7 leads; DeepSeek V4 tops local. Free, sortable."
+    },
+    {
+      "title": "What an AI Agent Going Rogue Means for Cybersecurity",
+      "url": "https://www.usatoday.com/story/news/state/california/san-francisco/2026/07/22/rogue-ai-incident-raises-questions-about-model-containment/91015804007/",
+      "snippet": "What happened when OpenAI&#x27;s AI agent hacked Hugging Face? The breakout was \"an unprecedented cyber incident, involving state-of-the-art cyber capabilities,\" and OpenAI is reinforcing its ..."
+    },
+    {
+      "title": "TensorFlow Hub",
+      "url": "https://www.tensorflow.org/hub",
+      "snippet": "TensorFlow Hub is a repository of trained machine learning models ready for fine-tuning and deployable anywhere. Reuse trained models like BERT and Faster R-CNN with just a few lines of code."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "muahmed7338/cov-r1-ds-omni-grpo-7b",
+  "slug": "muahmed7338-cov-r1-ds-omni-grpo-7b",
+  "author": "muahmed7338",
+  "url": "https://huggingface.co/muahmed7338/cov-r1-ds-omni-grpo-7b",
+  "created_at": "2026-08-27T11:59:49.000Z",
+  "updated_at": "2026-08-27T12:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "conversational",
+    "arxiv:2402.03300",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 290239696162,
+  "storage_human": "290.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "arXiv Daily Digest",
+      "url": "https://paper.axi404.top/daily/2026-08-26",
+      "snippet": "Robots are beginning to act on world-model predictions, yet reliability is still expressed through instantaneous, model-internal signals. DreamLedger instead treats reliability as a persistent deployment object: an execution-settled credit file recording how often consumed predictions are borne out, indexed by operating condition, region, and ..."
+    },
+    {
+      "title": "GitHub - aim-uofa/Omni-R1: [NeurIPS 2025] Official Repo of Omni-R1 ...",
+      "url": "https://github.com/aim-uofa/Omni-R1",
+      "snippet": "Omni-R1 trains the Global Reasoning System through hierarchical rewards obtained via online collaboration with the Detail Understanding System, requiring only one epoch of RL on small task splits."
+    },
+    {
+      "title": "Computer Science - arXiv.org",
+      "url": "https://arxiv.org/list/cs/new?skip=850",
+      "snippet": "The system is designed around a triadic model: user-driven control, ancient-guided evidence, and AI-assisted generation. Users can lock characters or lines, receive real-time prosody feedback, and obtain interpretable refinement suggestions grounded in high-frequency collocations, PPL-ranked classical lines, and structured knowledge extracted ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

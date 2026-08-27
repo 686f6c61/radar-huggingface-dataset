@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "qikp/flan-t5-large-Q8_0-GGUF",
+  "slug": "qikp-flan-t5-large-q8_0-gguf",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/flan-t5-large-Q8_0-GGUF",
+  "created_at": "2026-08-27T15:49:30.000Z",
+  "updated_at": "2026-08-27T15:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "text2text-generation",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:svakulenk0/qrecc",
+    "dataset:taskmaster2",
+    "dataset:djaym7/wiki_dialog",
+    "dataset:deepmind/code_contests",
+    "dataset:lambada",
+    "dataset:gsm8k",
+    "dataset:aqua_rat",
+    "dataset:esnli",
+    "dataset:quasc",
+    "dataset:qed",
+    "base_model:google/flan-t5-large",
+    "base_model:quantized:google/flan-t5-large",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 833521344,
+  "storage_human": "834 MB",
+  "base_model": "google/flan-t5-large",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tianlp/flan-t5-large-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/tianlp/flan-t5-large-Q8_0-GGUF",
+      "snippet": "tianlp/flan-t5-large-Q8_0-GGUF This model was converted to GGUF format from google/flan-t5-large using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "FLAN-T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/flan-t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF T5 XXL FLAN Converted Text Encoder Q8 model used in my InfiniteYOU ...",
+      "url": "https://civitai.com/models/1452759/gguf-t5-xxl-flan-converted-text-encoder-q8-model-used-in-my-infiniteyou-workflow",
+      "snippet": "GGUF Text Encoder T5 XXL FLAN Converted Q8 used in my InfiniteYOU Workflow , requested by Gekko78 user You can find some of my exclusive LoRAs on m..."
+    },
+    {
+      "title": "T5(GGUF) - Q8 | Flux.1 Other | Civitai",
+      "url": "https://civitai.com/models/668417/t5gguf",
+      "snippet": "🎨 Introducing the T5 Model in GGUF Format! 🎨 Are you tired of relying on your GPU for high-performance AI inference? Look no further than the latest T5 model in the efficient GUFF format! 💻 After careful consideration: Bernoulli SPEED_Q8 choose a model related to your prompt (as your prompt go bigger your T5 must be the same) was start ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/flan-t5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md",
+      "snippet": "FLAN-T5 includes the same improvements as T5 version 1.1 (see here for the full details of the model&#x27;s improvements.) Google has released the following variants: google/flan-t5-small google/flan-t5-base google/flan-t5-large google/flan-t5-xl google/flan-t5-xxl. The original checkpoints can be found here. Refer to T5&#x27;s documentation page for all API reference, code examples and notebooks. For ..."
+    }
+  ]
+}

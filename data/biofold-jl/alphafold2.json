@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "biofold-jl/alphafold2",
+  "slug": "biofold-jl-alphafold2",
+  "author": "biofold-jl",
+  "url": "https://huggingface.co/biofold-jl/alphafold2",
+  "created_at": "2026-08-27T15:33:07.000Z",
+  "updated_at": "2026-08-27T15:50:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5594070884,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-deepmind/alphafold: Open source code for AlphaFold 2.",
+      "url": "https://github.com/google-deepmind/alphafold",
+      "snippet": "Open source code for AlphaFold 2. Contribute to google-deepmind/alphafold development by creating an account on GitHub."
+    },
+    {
+      "title": "AlphaFold Protein Structure Database",
+      "url": "https://alphafold.com/",
+      "snippet": "AlphaFold is an AI system developed by Google DeepMind that predicts a protein&#x27;s 3D structure from its amino acid sequence. It regularly achieves accuracy competitive with experiment."
+    },
+    {
+      "title": "AlphaFold2 and its applications in the fields of biology and ... - Nature",
+      "url": "https://www.nature.com/articles/s41392-023-01381-z",
+      "snippet": "AlphaFold2 (AF2) is an artificial intelligence (AI) system developed by DeepMind that can predict three-dimensional (3D) structures of proteins from amino acid sequences with atomic-level accuracy."
+    },
+    {
+      "title": "Artificial intelligence alphafold model for molecular biology and drug ...",
+      "url": "https://link.springer.com/article/10.1186/s12943-024-02140-6",
+      "snippet": "AlphaFold model has reshaped biological research. However, vast unstructured data in the entire AlphaFold field requires further analysis to fully understand the current research landscape and guide future exploration. Thus, this scientometric analysis aimed to identify critical research clusters, track emerging trends, and highlight underexplored areas in this field by utilizing machine ..."
+    },
+    {
+      "title": "alphafold2 Model by DeepMind | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepmind/alphafold2/modelcard",
+      "snippet": "AlphaFold2 is a deep learning model for protein structure prediction developed by the research group at DeepMind, an artificial intelligence (AI) research lab owned by Google (jumper2021alphafold). AlphaFold2 builds on the success of its predecessor, AlphaFold, and represents a significant breakthrough in the field of protein structure prediction."
+    }
+  ]
+}

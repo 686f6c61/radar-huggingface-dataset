@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "russki/Qwen2.5-1.5B-Instruct-EXL3-3.0bpw",
+  "slug": "russki-qwen2-5-1-5b-instruct-exl3-3-0bpw",
+  "author": "russki",
+  "url": "https://huggingface.co/russki/Qwen2.5-1.5B-Instruct-EXL3-3.0bpw",
+  "created_at": "2026-08-27T16:48:48.000Z",
+  "updated_at": "2026-08-27T16:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen2",
+    "qwen2.5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 568002944,
+  "parameters_human": "568.0M",
+  "storage_bytes": 1136105970,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-15b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-1.5B-Instruct is a lightweight instruction-tuned language model from Qwen that handles text generation tasks with 1.54 billion parameters and support for 32,768 token context length during inference with up to 8,192 token generation. Built on a transformer architecture with RoPE positional embeddings, SwiGLU feed-forward layers, RMSNorm, and grouped query attention (12 heads ..."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct - docs.m5stack.switch-science.com",
+      "url": "https://docs.m5stack.switch-science.com/en/stackflow/models/qwen2.5-1.5b-instruct",
+      "snippet": "This model shows significant improvements in instruction understanding, long-text generation, and structured data comprehension, and supports multilingual capabilities across 29 languages, including English, Chinese, and French. Available NPU Models Base Model qwen2.5-1.5B-ax630c Supports a context window length of 128 Maximum output of 1024 tokens"
+    },
+    {
+      "title": "ReadyArt/Qwen2.5-1.5B-Instruct_EXL2_5.0bpw_H8 · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Qwen2.5-1.5B-Instruct_EXL2_5.0bpw_H8",
+      "snippet": "Qwen2.5-1.5B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    },
+    {
+      "title": "qwen2.5-instruct — Xinference",
+      "url": "https://inference.readthedocs.io/en/v0.15.4/models/builtin/llm/qwen2.5-instruct.html",
+      "snippet": "Context Length: 131072 Model Name: qwen2.5-instruct Languages: en, zh Abilities: chat, tools Description: Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dasharma/study-matching90",
+  "slug": "dasharma-study-matching90",
+  "author": "Dasharma",
+  "url": "https://huggingface.co/Dasharma/study-matching90",
+  "created_at": "2026-08-27T17:50:40.000Z",
+  "updated_at": "2026-08-27T17:50:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dasharma (नेहा पटेल) - Hugging Face",
+      "url": "https://huggingface.co/Dasharma",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 6 hours ago ... published a model about 6 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "TrialMatchAI: an end-to-end AI-powered clinical trial ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-026-70509-w",
+      "snippet": "Patient recruitment remains a major bottleneck in clinical trials. Here, the authors present TrialMatchAI, an open-source AI-powered recommendation system that automates patient-to-trial matching ..."
+    }
+  ]
+}

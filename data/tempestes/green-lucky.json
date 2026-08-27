@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TempestES/GREEN-LUCKY",
+  "slug": "tempestes-green-lucky",
+  "author": "TempestES",
+  "url": "https://huggingface.co/TempestES/GREEN-LUCKY",
+  "created_at": "2026-08-27T11:53:35.000Z",
+  "updated_at": "2026-08-27T11:53:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rimuru Tempest (green) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/73713fab06d3ec2276242661f04920a1",
+      "snippet": "Explore Rimuru Tempest (green) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Rimuru Tempest (green) - V1 - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/986900744491822038",
+      "snippet": "Download Rimuru Tempest (green) - free LORA Illustrious AI model on TENSORHUB ART. By user_834856151291006371"
+    },
+    {
+      "title": "Rimuru Tempest (green) - V1 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/986900744491822038",
+      "snippet": "Download Rimuru Tempest (green) - free LORA Illustrious AI model on TENSOR. By user_834856151291006371"
+    },
+    {
+      "title": "dataautogpt3/TempestV0.1 · Hugging Face",
+      "url": "https://huggingface.co/dataautogpt3/TempestV0.1",
+      "snippet": "Who needs upscalers? The TempestV0.1 Initiative is a powerhouse in image generation, leveraging an unparalleled dataset of over 6 million images. The collection&#x27;s ..."
+    },
+    {
+      "title": "[2605.23778] The physics of AI weather models - arXiv.org",
+      "url": "https://arxiv.org/abs/2605.23778",
+      "snippet": "Could it be that AI weather models are solving physical equations, although they may not be the equations used by conventional NWP models? We compute correlations of forecast skill and Centered Kernel Alignment, providing evidence that different AI weather models represent the atmosphere in similar ways, despite differences in architecture and capacity. We argue that the architecture and ..."
+    }
+  ]
+}

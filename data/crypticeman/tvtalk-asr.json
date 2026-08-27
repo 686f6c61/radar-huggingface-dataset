@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "crypticeman/TVTalk-ASR",
+  "slug": "crypticeman-tvtalk-asr",
+  "author": "crypticeman",
+  "url": "https://huggingface.co/crypticeman/TVTalk-ASR",
+  "created_at": "2026-08-27T17:24:10.000Z",
+  "updated_at": "2026-08-27T17:24:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open ASR Leaderboard - a Hugging Face Space by hf-audio",
+      "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
+      "snippet": "📐 The 🤗 Open ASR Leaderboard evaluates open-source and proprietary speech recognition models on English and multiple European languages. We report the Average WER (⬇️ lower the better) and RTFx (⬆️ higher the better)."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ai-voice: List of open-source TTS, voice ...",
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "snippet": "Description: Mega-ASR is a robust ASR foundation model trained to withstand the full spectrum of real-world acoustic degradation: 7 atomic acoustic conditions (reverberation, echo, additive noise, far-field, frequency dropout, bandwidth limitation, clipping distortion) and 54 compound environmental scenarios built on top."
+    },
+    {
+      "title": "Speech to Text AI Model & Provider Leaderboard",
+      "url": "https://artificialanalysis.ai/speech-to-text/non-streaming",
+      "snippet": "Analysis of Speech to Text AI models across word error rate, speed and price. Choose the best Speech to Text model for your use-case."
+    }
+  ]
+}

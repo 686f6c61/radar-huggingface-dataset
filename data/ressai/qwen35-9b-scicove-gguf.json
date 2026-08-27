@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RessAI/qwen35-9b-scicove-gguf",
+  "slug": "ressai-qwen35-9b-scicove-gguf",
+  "author": "RessAI",
+  "url": "https://huggingface.co/RessAI/qwen35-9b-scicove-gguf",
+  "created_at": "2026-08-27T13:33:09.000Z",
+  "updated_at": "2026-08-27T13:39:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama-cpp-python",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "llama-cpp-python",
+    "gguf",
+    "science",
+    "chain-of-verification",
+    "cove",
+    "qwen3.5",
+    "quantized",
+    "en",
+    "id",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 41532371968,
+  "storage_human": "41.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "l3afai/crow-cybersec-qwen35-9B-gguf · Hugging Face",
+      "url": "https://huggingface.co/l3afai/crow-cybersec-qwen35-9B-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Qwen35 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen35.html",
+      "snippet": "Download Qwen35 GGUF model. 18.4 GB, 1,815 downloads, 0 likes."
+    },
+    {
+      "title": "Published models | Qwen35 toolkit",
+      "url": "https://techwithsergiu.github.io/qwen35-toolkit/models.html",
+      "snippet": "Published models What this page covers This page lists published model families, their lineage, and model-card template mapping. Use it as an index before downloading, publishing, or extending model cards. When to use You need the right Hugging Face collection link. You want to understand how each model family is derived. You need the correct README template for a given model type. Collections ..."
+    }
+  ]
+}

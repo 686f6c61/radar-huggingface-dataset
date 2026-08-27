@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yunhu98/pi05_grasp_refine_bs32_3k",
+  "slug": "yunhu98-pi05_grasp_refine_bs32_3k",
+  "author": "Yunhu98",
+  "url": "https://huggingface.co/Yunhu98/pi05_grasp_refine_bs32_3k",
+  "created_at": "2026-08-27T17:56:35.000Z",
+  "updated_at": "2026-08-27T17:56:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:5cubes_300eps",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123632676,
+  "storage_human": "124 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi",
+      "snippet": "OpenPI is an open-source training and deployment system for Vision-Language-Action (VLA) models in robotics, developed by Physical Intelligence. The repository implements three model architectures (π₀"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "openpi π 0.5复现 实战_pi0.5-CSDN博客",
+      "url": "https://blog.csdn.net/luoganttcc/article/details/154315531",
+      "snippet": "OpenPi 的 π0.5（Pi 0.5）模型是 Physical Intelligence 团队于 2025 年 9 月开源的 视觉 - 语言 - 动作（VLA）模型，专为机器人在开放世界中的复杂任务执行而设计。它是 π0 模型的升级版，通过架构创新和多源数据融合，显著提升了在完全陌生环境中的泛化能力。"
+    }
+  ]
+}

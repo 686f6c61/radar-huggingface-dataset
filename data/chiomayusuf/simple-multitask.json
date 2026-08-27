@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chiomayusuf/simple-multitask",
+  "slug": "chiomayusuf-simple-multitask",
+  "author": "chiomayusuf",
+  "url": "https://huggingface.co/chiomayusuf/simple-multitask",
+  "created_at": "2026-08-27T15:43:44.000Z",
+  "updated_at": "2026-08-27T15:43:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "Language Models are Unsupervised Mutitask Learners !! | CODE ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/code-for-mode-32546735a_language-models-are-unsupervised-mutitask-activity-7496487756970328064-aAjx",
+      "snippet": "What if you could train an AI on one simple objective — and it started learning multiple tasks on its own? That was one of the fascinating ideas explored in the 2019 paper: \"Language Models ..."
+    },
+    {
+      "title": "MakeAI",
+      "url": "https://makeai.org/",
+      "snippet": "Make your own AI models with ease."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    }
+  ]
+}

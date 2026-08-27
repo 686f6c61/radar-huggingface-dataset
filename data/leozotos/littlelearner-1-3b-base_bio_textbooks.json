@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LeoZotos/littlelearner-1.3b-base_bio_textbooks",
+  "slug": "leozotos-littlelearner-1-3b-base_bio_textbooks",
+  "author": "LeoZotos",
+  "url": "https://huggingface.co/LeoZotos/littlelearner-1.3b-base_bio_textbooks",
+  "created_at": "2026-08-27T11:41:36.000Z",
+  "updated_at": "2026-08-27T11:48:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "finetuning",
+    "education",
+    "learning-dynamics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1358021120,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2716075264,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/deepseek-coder-1.3b-base · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LittleLearner: Language Models Under Pedagogically-Controlled Knowledge ...",
+      "url": "https://littlelearner-ll.github.io/",
+      "snippet": "LittleLearner at three scales (0.6B / 1.3B / 5B), each with a matched Unfiltered control sharing its architecture, tokens, and recipe. Base: the pretrained model."
+    },
+    {
+      "title": "3Blue1Brown",
+      "url": "https://www.3blue1brown.com/",
+      "snippet": "Mathematics with a distinct visual perspective. Linear algebra, calculus, neural networks, topology, and more."
+    },
+    {
+      "title": "Nanbeige4-3B Technical Report: Exploring the Frontier of Small Language ...",
+      "url": "https://arxiv.org/html/2512.06266v1",
+      "snippet": "To provide a clear sense of the model&#x27;s capability, we compare Nanbeige4-3B against the Qwen3 series across multiple parameter scales. For the base models, we conduct several post-training runs using identical SFT datasets, where Nanbeige4-3B-Base significantly outperforms Qwen3-8B-Base."
+    },
+    {
+      "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge ...",
+      "url": "https://arxiv.org/html/2608.13545v1",
+      "snippet": "We release LittleCurriculum and LittleLearner as a developmentally restricted sandbox to study how models acquire, represent, and use data under a well-defined training scope. We illustrate the sandbox&#x27;s utility in a first suite of experiments on injecting new knowledge through post-training and in-context learning."
+    }
+  ]
+}

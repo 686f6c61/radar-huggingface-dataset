@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Magnexis/lexiconerror-router-small",
+  "slug": "magnexis-lexiconerror-router-small",
+  "author": "Magnexis",
+  "url": "https://huggingface.co/Magnexis/lexiconerror-router-small",
+  "created_at": "2026-08-27T18:24:04.000Z",
+  "updated_at": "2026-08-27T18:24:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "developer-tools",
+    "compiler-diagnostics",
+    "runtime-exceptions",
+    "error-classification",
+    "tfidf",
+    "text-classification",
+    "dataset:Magnexis/lexiconerror-diagnostics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8354497,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agent-portal/TROUBLESHOOTING.md at main · magnexis/agent-portal",
+      "url": "https://github.com/magnexis/agent-portal/blob/main/TROUBLESHOOTING.md",
+      "snippet": "Agent Portal is a desktop-native operating environment for AI agents. Instead of limiting an LLM to code generation, Agent Portal gives it a controlled visual workspace where it can understand, navigate, test, and interact with real user interfaces, local applications, browser sessions, development environments, and project ecosystems. - agent ..."
+    },
+    {
+      "title": "magnexisdb · PyPI",
+      "url": "https://pypi.org/project/magnexisdb/",
+      "snippet": "Project description MagnexisDB MagnexisDB is a production-oriented document database built for developer experience, realtime updates, and transparent observability created by Magnexis."
+    },
+    {
+      "title": "RapidLink/docs/model.md at main · magnexis/RapidLink",
+      "url": "https://github.com/magnexis/RapidLink/blob/main/docs/model.md",
+      "snippet": "RapidLink is an AI-assisted incident orchestration platform for business-critical systems. - RapidLink/docs/model.md at main · magnexis/RapidLink"
+    },
+    {
+      "title": "Accepted Main Conference Papers - ACL 2026",
+      "url": "https://2026.aclweb.org/program/accepted_papers/",
+      "snippet": "Accepted Main Conference Papers OctoTools: A Multi-Agent Framework with Extensible Tools for Complex Reasoning Pan Lu, Bowen Chen, Sheng Liu, Rahul Thapa, Joseph Boen, James Zou No Reader Left Behind: Multi-Agent Summaries Everyone Can Understand Jimin Jung, MyoungJin Kim, Jaehyung Seo, Heuiseok Lim Discover and Prove: An Open-source Agentic Framework for Hard Mode Automated Theorem Proving in ..."
+    },
+    {
+      "title": "Free Models Router - API Pricing & Providers | OpenRouter",
+      "url": "https://openrouter.ai/openrouter/free",
+      "snippet": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that support features needed for your request such as image understanding, tool calling, structured outputs and more."
+    }
+  ]
+}

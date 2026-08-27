@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "TathaML/alzheimers-vit-model",
+  "slug": "tathaml-alzheimers-vit-model",
+  "author": "TathaML",
+  "url": "https://huggingface.co/TathaML/alzheimers-vit-model",
+  "created_at": "2026-08-27T13:50:57.000Z",
+  "updated_at": "2026-08-27T13:59:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85801732,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343227640,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Detection of Alzheimer Disease in Neuroimages Using ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1438887125001773",
+      "snippet": "Alzheimer disease (AD) is a progressive condition characterized by cognitive decline and memory loss. Vision transformers (ViTs) are emerging as promising deep learning models in medical imaging, with potential applications in the detection and diagnosis of AD."
+    },
+    {
+      "title": "IoMT driven Alzheimer&#x27;s prediction model empowered with ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-19395-8",
+      "snippet": "This study proposes an IoMT-driven Alzheimer&#x27;s prediction framework that combines transfer learning (ResNet152) with explainable AI (XAI) to provide both accuracy and interpretability."
+    },
+    {
+      "title": "Lightweight Vision Transformer with transfer learning for interpretable ...",
+      "url": "https://www.nature.com/articles/s41598-025-28243-8",
+      "snippet": "We integrate a new optimization method into the Transformer model to improve the model&#x27;s robustness and diagnostic accuracy for AD while reducing computational overhead and training demands."
+    },
+    {
+      "title": "Training ViT with Limited Data for Alzheimer&#x27;s Disease Classification ...",
+      "url": "https://papers.miccai.org/miccai-2024/796-Paper2724.html",
+      "snippet": "Abstract In this paper, we conduct an extensive exploration of a Vision Transformer (ViT) in brain medical imaging in a low-data regime. The recent and ongoing success of Vision Transformers in computer vision has motivated its development in medical imaging, but trumping it with inductive bias in a brain imaging domain imposes a real challenge since collecting and accessing large amounts of ..."
+    },
+    {
+      "title": "Vision and convolutional transformers for Alzheimer&#x27;s ... - Springer",
+      "url": "https://link.springer.com/article/10.1186/s40708-025-00286-7",
+      "snippet": "The review followed a structured methodology, analyzing 44 selected studies and identifying key trends in DL-based AD diagnosis. The findings reinforced the significance of multimodal fusion techniques, the necessity for model interpretability, and the development of standardized AI benchmarks for improved AD classification performance."
+    }
+  ]
+}

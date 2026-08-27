@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "harvestsu/whisper-edge",
+  "slug": "harvestsu-whisper-edge",
+  "author": "harvestsu",
+  "url": "https://huggingface.co/harvestsu/whisper-edge",
+  "created_at": "2026-08-27T14:43:29.000Z",
+  "updated_at": "2026-08-27T14:47:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "openvoicestream",
+  "languages": [],
+  "tags": [
+    "openvoicestream",
+    "onnx",
+    "automatic-speech-recognition",
+    "whisper",
+    "edge",
+    "hailo",
+    "rknn",
+    "tensorrt",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 772486340,
+  "storage_human": "772 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - maxbbraun/whisper-edge: OpenAI Whisper for edge devices",
+      "url": "https://github.com/maxbbraun/whisper-edge",
+      "snippet": "OpenAI Whisper for edge devices. Contribute to maxbbraun/whisper-edge development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Whisper를 소개합니다 | OpenAI",
+      "url": "https://openai.com/ko-KR/index/whisper/",
+      "snippet": "Whisper는 영어 발화 인지에서 인간 수준의 견고함과 정확성에 근접하는, OpenAI가 훈련한 오픈 소스 인공 신경망입니다."
+    },
+    {
+      "title": "LocalWhisper - Privacy-First Voice to Text",
+      "url": "https://localwhisper.ai/",
+      "snippet": "AI-powered voice to text that runs entirely on your device. Zero network, zero tracking, instant transcription."
+    }
+  ]
+}

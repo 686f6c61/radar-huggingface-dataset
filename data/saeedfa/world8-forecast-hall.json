@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Saeedfa/world8-forecast-hall",
+  "slug": "saeedfa-world8-forecast-hall",
+  "author": "Saeedfa",
+  "url": "https://huggingface.co/Saeedfa/world8-forecast-hall",
+  "created_at": "2026-08-27T12:17:26.000Z",
+  "updated_at": "2026-08-27T12:45:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "2026 World Cup Predictions & Odds | AI Tournament Forecast",
+      "url": "https://www.footballforecast.io/predictions",
+      "snippet": "Live AI-powered predictions for the 2026 FIFA World Cup. Championship odds, title contenders, group advancement probabilities, and tournament forecasts."
+    },
+    {
+      "title": "World Models Leaderboard | Community Rankings & Benchmarks |...",
+      "url": "https://world-models.io/en/leaderboard/",
+      "snippet": "World Models Leaderboard A structured ranking of AI world models built around the Performance Index, with benchmark evidence, direct comparison links, and editorial context layered in for practical exploration."
+    },
+    {
+      "title": "WeatherNext 2 — Google DeepMind",
+      "url": "https://deepmind.google/science/weathernext/",
+      "snippet": "We&#x27;re using AI to help evolve the science of forecasting. And by making the WeatherNext 2 model family available to users, researchers, and enterprises, we&#x27;re helping support their decision-making in a changing world."
+    }
+  ]
+}

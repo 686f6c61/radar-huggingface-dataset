@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sumitv461/nexus-v1-adapter",
+  "slug": "sumitv461-nexus-v1-adapter",
+  "author": "sumitv461",
+  "url": "https://huggingface.co/sumitv461/nexus-v1-adapter",
+  "created_at": "2026-08-27T15:29:16.000Z",
+  "updated_at": "2026-08-27T15:29:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333103,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NEXUS V1 — Archetype-Trained Wan2.1 (1.3B) Finetune",
+      "url": "https://comfyforge.pro/model/?slug=nexus-v1-archetype-trained-wan2-1-1-3b-finetune",
+      "snippet": "Nexus V1 represents a breakthrough in open-source AI video generation — a next-generation Wan2.1 model (1.3B) fine-tuned using the Archetype Training Method™, a revolutionary training system that unlocks unprecedented motion consistency, camera control, and scene-level understanding."
+    },
+    {
+      "title": "GitHub - sachin4208/nexus: NEXUS v1 OMEGA- Autonomous Execution Ai ...",
+      "url": "https://github.com/sachin4208/nexus/tree/main",
+      "snippet": "NEXUS v1 OMEGA- Autonomous Execution Ai AGENT. Contribute to sachin4208/nexus development by creating an account on GitHub."
+    },
+    {
+      "title": "IPAdapter Model Loader - RunComfy",
+      "url": "https://www.runcomfy.com/comfyui-nodes/ComfyUI_IPAdapter_plus/IPAdapterModelLoader",
+      "snippet": "Facilitates loading IPAdapter models for AI image processing, streamlining model integration and preparation."
+    },
+    {
+      "title": "IP Adapter Bundle - ComfyUI | Other Other | Civitai",
+      "url": "https://civitai.com/models/907545/ip-adapter-bundle",
+      "snippet": "This bundle contains IP Adapter models (including FaceID), associated vision transformers and LoRAs for easy integration with both Stable Diffusion WebUI (A1111) and ComfyUI."
+    },
+    {
+      "title": "Nexus-AI/docs/v1/v1.16/guides/mlx-via-local-adapters.md at ... - GitHub",
+      "url": "https://github.com/bendourthe/Nexus-AI/blob/main/docs/v1/v1.16/guides/mlx-via-local-adapters.md",
+      "snippet": "Drive an MLX model through Nexus (Apple Silicon) Nexus does not bundle an MLX runtime. A dedicated MLX engine was rejected in the v1.12 comparison (D4) as irrelevant to an Ollama/GGUF product, and again in the v1.16 comparison (N3) as a supply-chain and OS-parity miss. Apple Silicon users who already run an OpenAI-compatible MLX server (mlx-vlm, LM Studio in MLX mode, or nativ) can still ..."
+    }
+  ]
+}

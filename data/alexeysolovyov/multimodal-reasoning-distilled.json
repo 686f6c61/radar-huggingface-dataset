@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alexeysolovyov/multimodal-reasoning-distilled",
+  "slug": "alexeysolovyov-multimodal-reasoning-distilled",
+  "author": "alexeysolovyov",
+  "url": "https://huggingface.co/alexeysolovyov/multimodal-reasoning-distilled",
+  "created_at": "2026-08-27T11:57:29.000Z",
+  "updated_at": "2026-08-27T11:57:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexeysolovyov/paper_014568219_multimodal_reasoning · Hugging Face",
+      "url": "https://huggingface.co/alexeysolovyov/paper_014568219_multimodal_reasoning",
+      "snippet": "The full text is in paper_014568219_multimodal_reasoning.md."
+    },
+    {
+      "title": "alexeysolovyov (Alexey Solovyov) - Hugging Face",
+      "url": "https://huggingface.co/alexeysolovyov",
+      "snippet": "User profile of Alexey Solovyov on Hugging Face"
+    },
+    {
+      "title": "Towards Understanding Distilled Reasoning Models: A Representational ...",
+      "url": "https://arxiv.org/html/2503.03730v1",
+      "snippet": "By understanding the unique features and changes in feature geometry introduced during distillation, we can gain deeper insights into how distillation modifies the model. This contributes to improving the transparency and reliability of AI systems and provides valuable insights into building safe and robust models."
+    },
+    {
+      "title": "Towards Understanding Distilled Reasoning Models: A Representational ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/towards-understanding-distilled-reasoning-models-representational-approach",
+      "snippet": "The specialized neural circuits discovered in distilled models also provide a window into understanding how neural networks represent abstract reasoning processes. This could inform the development of more interpretable AI systems where specific neurons or neural circuits have clear, consistent functions across various reasoning tasks."
+    },
+    {
+      "title": "Towards Understanding Distilled Reasoning Models: A...",
+      "url": "https://openreview.net/forum?id=UYZCcnwgc4",
+      "snippet": "Moreover, we observe that distilled models contain unique reasoning feature directions, which could be used to steer the model into over-thinking or incisive-thinking mode. In particular, we perform analysis on four specific reasoning categories: (a) self-reflection, (b) deductive reasoning, (c) alternative reasoning, and (d) contrastive reasoning."
+    }
+  ]
+}

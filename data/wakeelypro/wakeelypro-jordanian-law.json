@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wakeelypro/wakeelypro-jordanian-law",
+  "slug": "wakeelypro-wakeelypro-jordanian-law",
+  "author": "wakeelypro",
+  "url": "https://huggingface.co/wakeelypro/wakeelypro-jordanian-law",
+  "created_at": "2026-08-27T15:32:50.000Z",
+  "updated_at": "2026-08-27T15:32:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "soup",
+  "languages": [],
+  "tags": [
+    "soup",
+    "jordanian-law",
+    "rag",
+    "arabic",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WakeelyPro — افهم حقوقك وتعامل مع القانون بثقة",
+      "url": "https://wakeelypro.com/auth/login",
+      "snippet": "منصة قانونية ذكية لتحليل الوثائق القانونية بالعربية، مع توجيه صادق نحو محامين موثوقين في الأردن."
+    },
+    {
+      "title": "WakeelyPro — افهم حقوقك وتعامل مع القانون بثقة",
+      "url": "https://wakeelypro.com/",
+      "snippet": "أخبر WakeelyPro بما حدث أو ارفع الوثيقة التي أمامك، وساعدك على فهم موقفك القانوني وفق القانون الأردني. أحياناً تحتاج إلى محامٍ. وأحياناً تحتاج فقط إلى أن تفهم ما الذي أمامك وما الذي يمكنك فعله."
+    },
+    {
+      "title": "Jordanian Law: AI Access to Statutes for Legal Research & Compliance",
+      "url": "https://mcpmarket.com/server/jordanian-law",
+      "snippet": "This tool transforms complex Jordanian legal research, traditionally involving multiple government websites and manual cross-referencing, into an efficient, AI-native experience. It offers a verified, comprehensive database of 62 key Jordanian statutes, including the Cybercrime Law, Penal Code, and Labour Law, making them directly queryable from AI clients like Claude and GitHub Copilot ..."
+    },
+    {
+      "title": "Legal AI for Jordan — HAQQ",
+      "url": "https://www.haqq.ai/solutions/by-country/jordan",
+      "snippet": "Jordan law changes frequently Jordanian Labor and Civil Code updates faster than textbooks. Jurisdiction-specific nuance Generic AI doesn&#x27;t know Jordan&#x27;s local rules. Cross-border matters complicate When Jordan law meets another jurisdiction, things get hard. Language barriers Arabic legal texts intimidate non-native speakers."
+    },
+    {
+      "title": "Jordanian Law MCP Server | MCP Servers · LobeHub",
+      "url": "https://lobehub.com/mcp/ansvar-systems-jordan-law-mcp",
+      "snippet": "The Jordan Law alternative for the AI age. Query 494 Jordanian Acts directly from Claude, Cursor, or any MCP-compatible client. The server includes a bundled SQLite database shipped with the npm package."
+    }
+  ]
+}

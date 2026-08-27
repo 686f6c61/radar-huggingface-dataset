@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imfelipebarbosa/classification",
+  "slug": "imfelipebarbosa-classification",
+  "author": "imfelipebarbosa",
+  "url": "https://huggingface.co/imfelipebarbosa/classification",
+  "created_at": "2026-08-27T15:15:03.000Z",
+  "updated_at": "2026-08-27T15:15:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Overview of category classification model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/text-classification-overview",
+      "snippet": "Describes category classification models. Gives an overview of how to build and use category classification models in AI Builder."
+    },
+    {
+      "title": "What are classification models? - IBM",
+      "url": "https://www.ibm.com/think/topics/classification-models",
+      "snippet": "Classification models are a type of machine learning model that divides data points into predefined groups called classes. Classifiers are a type of predictive modeling that learns class characteristics from input data and learns to assign possible classes to new data according to those learned characteristics. 1 Classification algorithms are widely used in data science for forecasting ..."
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Deep Learning Models for Classification: A Complete Guide - Metana",
+      "url": "https://metana.io/blog/deep-learning-models-for-classification-a-comprehensive-guide/",
+      "snippet": "The best deep learning model for binary classification will depend on the specific dataset and the desired accuracy. However, some of the most commonly used deep learning models for binary classification include logistic regression, support vector machines, and neural networks."
+    }
+  ]
+}

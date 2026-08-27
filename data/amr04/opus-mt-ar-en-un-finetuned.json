@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amr04/opus-mt-ar-en-un-finetuned",
+  "slug": "amr04-opus-mt-ar-en-un-finetuned",
+  "author": "Amr04",
+  "url": "https://huggingface.co/Amr04/opus-mt-ar-en-un-finetuned",
+  "created_at": "2026-08-27T17:04:57.000Z",
+  "updated_at": "2026-08-27T17:05:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76372338,
+  "parameters_human": "76.4M",
+  "storage_bytes": 307237701,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asas-ai/opus-mt-ar-en-finetuned_augmented_synthetic-ar-to-en · Hugging Face",
+      "url": "https://huggingface.co/asas-ai/opus-mt-ar-en-finetuned_augmented_synthetic-ar-to-en",
+      "snippet": "Loss: 0.8682 Bleu: 63.4498 Gen Len: 59.457 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 2e-05 train_batch_size: 16 eval_batch ..."
+    },
+    {
+      "title": "asas-ai/opus-mt-ar-en-finetuned-ar-to-en · Hugging Face",
+      "url": "https://huggingface.co/asas-ai/opus-mt-ar-en-finetuned-ar-to-en",
+      "snippet": "This model does not have enough activity to be deployed to Inference API (serverless) yet. Increase its social visibility and check back later, or deploy to Inference Endpoints (dedicated) instead."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "22 confirmed AI model releases from 17 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "opus mt ar en (未知) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/Helsinki-NLP/opus-mt-ar-en",
+      "snippet": "opus mt ar en by Helsinki-NLP. 未知 open-source AI model. opus mt ar en is an Arabic-to-English machine translation model developed by Helsinki-NLP based on t"
+    },
+    {
+      "title": "opus-mt-ar-en-finetuned-ar-to-en Open Source Translation Model ...",
+      "url": "https://model.aibase.com/models/details/1915693265153843202",
+      "snippet": "🚀 opus-mt-ar-en-finetuned-ar-to-en This model is a fine - tuned translation model that enhances the performance of Arabic - to - English translation based on t"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hallucinatie/2daction-stage2-checkpoint-100000",
+  "slug": "hallucinatie-2daction-stage2-checkpoint-100000",
+  "author": "Hallucinatie",
+  "url": "https://huggingface.co/Hallucinatie/2daction-stage2-checkpoint-100000",
+  "created_at": "2026-08-27T15:16:26.000Z",
+  "updated_at": "2026-08-27T15:17:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "2daction",
+    "minetest",
+    "video-generation",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 555797900,
+  "parameters_human": "555.8M",
+  "storage_bytes": 2602582288,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hallucinatie/2daction-stage2-checkpoint-60000 · Hugging Face",
+      "url": "https://huggingface.co/Hallucinatie/2daction-stage2-checkpoint-60000",
+      "snippet": "The checkpoint belongs to the continuation run stage2_npc_text_mtp-retrain-from-grad14000-20260825T022321Z. It was loaded back successfully with 454 model tensors, 140 optimizer states, step 60,000, grad step 30,000, and learning rate 1e-4. Only evaluation files are published here; optimizer and RNG state are intentionally omitted."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=2daction",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: 2daction Clear all"
+    },
+    {
+      "title": "Latest AI Hallucination Rates & Benchmarks for New AI Models 2026",
+      "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
+      "snippet": "Update Aug 27, 2026 - AI hallucination rates and benchmarks for the latest AI models. New numbers from Vectara, AA-Omniscience, FACTS, 50+ sources and our data."
+    },
+    {
+      "title": "GitHub - vectara/hallucination-leaderboard: Leaderboard Comparing LLM ...",
+      "url": "https://github.com/vectara/hallucination-leaderboard/",
+      "snippet": "Public LLM leaderboard computed using Vectara&#x27;s Hallucination Evaluation Model, also known as HHEM. This evaluates how often an LLM introduces hallucinations when summarizing a document. We plan to update this regularly as our model and the LLMs get updated over time. Feel free to check out the interactive hallucination leaderboard on Hugging Face. If you are interested in previous versions os ..."
+    },
+    {
+      "title": "OpenAI&#x27;s Rogue AI Hacked Hugging Face for 4 Days: Full Timeline",
+      "url": "https://thebotpost.com/ai-news/openai-rogue-ai-agent-hugging-face-hack-timeline",
+      "snippet": "Home / AI News A Rogue AI Hacked Hugging Face for 4 Days: The Full Timeline of OpenAI&#x27;s Runaway Agent For four and a half days, an OpenAI model being tested for cyber skills escaped its sandbox and ran a full autonomous attack on Hugging Face — 17,600 actions, a second company hit, and a first for the industry. Here&#x27;s exactly what happened."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andrew-white5/hybrid-generation-ablation",
+  "slug": "andrew-white5-hybrid-generation-ablation",
+  "author": "andrew-white5",
+  "url": "https://huggingface.co/andrew-white5/hybrid-generation-ablation",
+  "created_at": "2026-08-27T18:19:48.000Z",
+  "updated_at": "2026-08-27T18:19:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ablation (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)",
+      "snippet": "In artificial intelligence (AI), particularly machine learning, [1] ablation is the removal of a component of an AI system. An ablation study aims to determine the contribution of a component to an AI system by removing the component, and then analyzing the resultant performance of the system. [2] The term is an analogy with biology (removal of components of an organism), and is particularly ..."
+    },
+    {
+      "title": "GitHub - jim-plus/llm-abliteration: Make abliterated models with ...",
+      "url": "https://github.com/jim-plus/llm-abliteration",
+      "snippet": "Abliteration is a technique that can approximate the most significant refusal direction by contrasting harmful and harmless prompts, and then remove/ablate the direction from the model. This is a proof-of-concept implementation to explore the removal refusals from an LLM without the use of TransformerLens."
+    },
+    {
+      "title": "AI tool generates high-quality images faster than state-of-the-art ...",
+      "url": "https://news.mit.edu/2025/ai-tool-generates-high-quality-images-faster-0321",
+      "snippet": "A hybrid AI approach known as hybrid autoregressive transformer can generate realistic images with the same or better quality than state-of-the-art diffusion models, but that runs about nine times faster and uses fewer computational resources. The new tool uses an autoregressive model to quickly capture the big picture and then a small diffusion model to refine the details of the image."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

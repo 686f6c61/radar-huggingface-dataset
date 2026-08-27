@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kristijonas/kmynas-parakeet-lt-v2",
+  "slug": "kristijonas-kmynas-parakeet-lt-v2",
+  "author": "kristijonas",
+  "url": "https://huggingface.co/kristijonas/kmynas-parakeet-lt-v2",
+  "created_at": "2026-08-25T05:41:01.000Z",
+  "updated_at": "2026-08-27T11:55:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "lithuanian",
+    "parakeet",
+    "tdt",
+    "punctuation",
+    "lt",
+    "dataset:meldynamics/liepa-3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2509342720,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kristijonas/kmynas-parakeet-lt-v1 · Hugging Face",
+      "url": "https://huggingface.co/kristijonas/kmynas-parakeet-lt-v1",
+      "snippet": "Kmynas is the better choice when size and speed matter: measured RTF 0.022 against Paprika&#x27;s 0.48 — about 22x faster — CoreML-exportable, trained on 169.6 h rather than 3,281 h. 35 minutes of audio transcribes in 46 seconds on one GPU."
+    },
+    {
+      "title": "Automatic Speech Recognition Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=automatic-speech-recognition",
+      "snippet": "Active filters: automatic-speech-recognition. Clear all. openai/whisper-large-v3. Automatic Speech Recognition • 2B • Updated Aug 12, 2024 • 4.97M • • 6.12k"
+    },
+    {
+      "title": "ParakeetAI - #1 Real-Time AI Call Assistant",
+      "url": "https://www.parakeet-ai.com/",
+      "snippet": "ParakeetAI runs in the background, knows your material, and handles the call from start to notes. Detects questions live and suggests answers, so you&#x27;re never caught blank. Spots meetings as they start and asks if you want to join, with no setup mid-call."
+    },
+    {
+      "title": "GitHub - parakeet-nest/parakeet: Parakeet is a GoLang library, made ...",
+      "url": "https://github.com/parakeet-nest/parakeet",
+      "snippet": "Generative AI can create new text, images, or other content based on what it&#x27;s been trained on. So a GenAI app could help you write a poem, design a logo, or even compose a song!"
+    },
+    {
+      "title": "GitHub - bytebreezestudios/ml-parakeet: Parakeet, a tiny language model ...",
+      "url": "https://github.com/bytebreezestudios/ml-parakeet",
+      "snippet": "Considering the current limitations, it is not recommended to use this model for any serious applications, however it is very accessible due to its small size and can be used for educational purposes."
+    }
+  ]
+}

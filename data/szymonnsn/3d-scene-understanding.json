@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szymonnsn/3d-scene-understanding",
+  "slug": "szymonnsn-3d-scene-understanding",
+  "author": "szymonnsn",
+  "url": "https://huggingface.co/szymonnsn/3d-scene-understanding",
+  "created_at": "2026-08-27T13:20:05.000Z",
+  "updated_at": "2026-08-27T13:20:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scene understanding using vision language models",
+      "url": "https://learn.microsoft.com/en-us/industry/mobility/architecture/scene-understanding",
+      "snippet": "Using Large Language Models (LLMs) for scene understanding in AV can present challenges. The daily generation of terabytes of data by vehicles makes scalable image analysis difficult from a computational point of view. Small Language Models (SLMs) are more efficient but lack the domain knowledge required for effective scene analysis and need fine-tuning on domain-specific data."
+    },
+    {
+      "title": "OpenSU3D: Open World 3D Scene Understanding using Foundation Models",
+      "url": "https://opensu3d.github.io/",
+      "snippet": "Additionally, we explore large language models for robust automatic annotation and spatial reasoning tasks. We evaluate our proposed approach on multiple scenes from ScanNet and Replica datasets demonstrating zero-shot generalization capabilities, exceeding current state-of-the-art methods in open world 3D scene understanding."
+    },
+    {
+      "title": "GPT4Scene",
+      "url": "https://gpt4scene.github.io/",
+      "snippet": "To address this, we introduce GPT4Scene, a novel visual prompting paradigm in VLM training and inference that helps build the global-local relationship, significantly improving the 3D spatial understanding of indoor scenes."
+    },
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "😎 A list of awesome scene understanding papers. Contribute to bertjiazheng/awesome-scene-understanding development by creating an account on GitHub."
+    },
+    {
+      "title": "SceneGPT: A Language Model for 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2408.06926",
+      "snippet": "Building models that can understand and reason about 3D scenes is difficult owing to the lack of data sources for 3D supervised training and large-scale training regimes. In this work we ask - How can the knowledge in a pre-trained language model be leveraged for 3D scene understanding without any 3D pre-training."
+    }
+  ]
+}

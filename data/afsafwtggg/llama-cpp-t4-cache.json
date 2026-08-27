@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "afsafwtggg/llama-cpp-t4-cache",
+  "slug": "afsafwtggg-llama-cpp-t4-cache",
+  "author": "afsafwtggg",
+  "url": "https://huggingface.co/afsafwtggg/llama-cpp-t4-cache",
+  "created_at": "2026-08-27T18:34:41.000Z",
+  "updated_at": "2026-08-27T18:40:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188326885,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ggml-org/llama.cpp: LLM inference in C/C++",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "snippet": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - deepgrove-ai/llama.cpp",
+      "url": "https://github.com/deepgrove-ai/llama.cpp/",
+      "snippet": "Contribute to deepgrove-ai/llama.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "llama.cpp · Hugging Face",
+      "url": "https://huggingface.co/docs/inference-endpoints/engines/llama_cpp",
+      "snippet": "llama.cpp supports multiple endpoints like /tokenize, /health, /embedding, and many more. For a comprehensive list of available endpoints, please refer to the API documentation. Deployment Steps To deploy an endpoint with a llama.cpp container, follow these steps: Create a new endpoint and select a repository containing a GGUF model."
+    },
+    {
+      "title": "ggml-org/llama.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/llama.cpp",
+      "snippet": "This document provides a high-level introduction to the llama.cpp project, its purpose as a high-performance LLM inference library, supported model architectures, key features, and implementation insights. It serves as a foundational reference for understanding how the system is structured, its main components, and the data flow during inference."
+    },
+    {
+      "title": "Model Pipeline | ggml-org/llama.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/llama.cpp/7-model-pipeline",
+      "snippet": "The model pipeline transforms models through several stages: acquisition, conversion, optional quantization, and deployment. Each stage prepares the model for efficient inference while maintaining compatibility with llama.cpp&#x27;s runtime."
+    }
+  ]
+}

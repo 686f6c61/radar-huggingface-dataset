@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v3-babylm-nld-ell-sequential_interleaved",
+  "slug": "nikitastheo-v3-babylm-nld-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v3-babylm-nld-ell-sequential_interleaved",
+  "created_at": "2026-08-27T17:52:35.000Z",
+  "updated_at": "2026-08-27T18:54:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 991118592,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nikitastheo/v2-babylm-nld-ell-sequential_interleaved at main",
+      "url": "https://huggingface.co/nikitastheo/v2-babylm-nld-ell-sequential_interleaved/tree/main",
+      "snippet": "nikitastheo / v2-babylm-nld-ell-sequential_interleaved like 0 Text Generation Transformers Safetensors gpt2 causal-lm text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "nikitastheo/babylm-spa-ell-sequential_interleaved at main",
+      "url": "https://huggingface.co/nikitastheo/babylm-spa-ell-sequential_interleaved/tree/main",
+      "snippet": "main babylm-spa-ell-sequential_interleaved 503 MB Ctrl+K Ctrl+K 1 contributor History:2 commits nikitastheo Step 25640 712c0dd verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 12 hours ago README.md 580 BytesStep 25640about 6 hours ago config.json Safe 773 BytesStep 25640about 6 hours ago generation_config.json Safe 136 BytesStep 25640about 6 hours ago model.safetensors ..."
+    },
+    {
+      "title": "Nikitas Theodoropoulos",
+      "url": "https://nikitas-theo.github.io/",
+      "snippet": "AI-driven programming tutors hold great promise in automatically assisting struggling students, and need several components to realize this potential. We investigate the crucial component of student modeling, in particular, the ability to automatically infer students&#x27; misconceptions for predicting (synthesizing) their behavior."
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    },
+    {
+      "title": "AI/TLDR — New AI Models, Tools & Papers This Week",
+      "url": "https://ai-tldr.dev/",
+      "snippet": "Every new AI model, repo, tool, and paper worth knowing — refreshed every 2 hours and explained in plain English. Track what&#x27;s shipping today."
+    }
+  ]
+}

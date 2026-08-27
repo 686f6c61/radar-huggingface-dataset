@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3.8-Flash-Next",
+  "slug": "unsloth-qwen3-8-flash-next",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next",
+  "created_at": "2026-08-25T12:30:58.000Z",
+  "updated_at": "2026-08-26T12:57:40.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 88,
+  "trending_score": 9,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and chat. We are working very hard to support the model and thank you Qwen for day zero access. Run Qwen3.8-Flash-Next Guide Download Unsloth We are still working on supporting the model, please wait for us!"
+    },
+    {
+      "title": "unsloth/Qwen3.8-Flash-Next-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Run Qwen3.8 Guide You can now run Qwen3.8 in llama.cpp and Unsloth Desktop. For the large Qwen3.8-2.T model, we will be utilizing the 397GB IQ1_XXXS quant (named Q1_0) for best results in terms of accessibility and accuracy and it will require at least 450GB RAM. Feel free to change quantization type."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - simonwillison.net",
+      "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+      "snippet": "Qwen3.8-Flash-Next (via) Another open weights model from Qwen. This one is \"a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4\". It&#x27;s pretty big: 125B tokens, but only 6B active which means it gets a pretty big performance boost. I&#x27;ve been trying it out on a DGX Spark using these Unsloth quantized models."
+    }
+  ]
+}

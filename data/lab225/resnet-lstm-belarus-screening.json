@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lab225/resnet-lstm-belarus-screening",
+  "slug": "lab225-resnet-lstm-belarus-screening",
+  "author": "lab225",
+  "url": "https://huggingface.co/lab225/resnet-lstm-belarus-screening",
+  "created_at": "2026-08-27T14:08:06.000Z",
+  "updated_at": "2026-08-27T14:52:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "resnet_lstm",
+    "medical",
+    "image-to-text",
+    "radiology",
+    "resnet",
+    "lstm",
+    "custom_code",
+    "en",
+    "ru",
+    "dataset:belarusian-screening-cxr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308182549,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lab225 (Biomedical Image Analysis Laboratory) - Hugging Face",
+      "url": "https://huggingface.co/lab225",
+      "snippet": "Org profile for Biomedical Image Analysis Laboratory on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - KaimingHe/deep-residual-networks: Deep Residual Learning for ...",
+      "url": "https://github.com/KaimingHe/deep-residual-networks",
+      "snippet": "Deep Residual Learning for Image Recognition . Contribute to KaimingHe/deep-residual-networks development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Temporal integration of ResNet features with LSTM for enhanced skin ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590123025002877",
+      "snippet": "The R-LSTM50 model combines the powerful feature extraction capabilities of ResNet50 with the temporal modeling strength of LSTM networks, ensuring both high accuracy and computational efficiency. Our approach addresses the critical need for early cancer detection, where timely and precise diagnosis can significantly improve patient outcomes."
+    },
+    {
+      "title": "Residual neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Residual_neural_network",
+      "snippet": "An LSTM with a forget gate essentially functions as a highway network. To stabilize the variance of the layers&#x27; inputs, it is recommended to replace the residual connections with , where is the total number of residual layers."
+    }
+  ]
+}

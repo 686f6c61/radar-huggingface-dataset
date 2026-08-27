@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "markpopovjif/cnn-transformer-experiment",
+  "slug": "markpopovjif-cnn-transformer-experiment",
+  "author": "markpopovjif",
+  "url": "https://huggingface.co/markpopovjif/cnn-transformer-experiment",
+  "created_at": "2026-08-27T15:22:15.000Z",
+  "updated_at": "2026-08-27T15:22:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "markpopovjif (Ирина Морозова)",
+      "url": "https://huggingface.co/markpopovjif/models",
+      "snippet": "markpopovjif&#x27;s models1 Sort: Recently updated markpopovjif/model_010984662_vit_small Updated about 8 hours ago"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The evolution of object detection from CNNs to transformers ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-37052-6",
+      "snippet": "A systematic and up-to-date review of evolving paradigms in object detection, with balanced coverage of CNN-based and Transformer-based architectures, as well as emerging multi-modal fusion ..."
+    },
+    {
+      "title": "GitHub - poloclub/transformer-explainer: Transformer Explained Visually ...",
+      "url": "https://github.com/poloclub/transformer-explainer",
+      "snippet": "Transformer Explainer is an interactive visualization tool designed to help anyone learn how Transformer-based models like GPT work. It runs a live GPT-2 model right in your browser, allowing you to experiment with your own text and observe in real time how internal components and operations of the Transformer work together to predict the next tokens. Try Transformer Explainer at http ..."
+    },
+    {
+      "title": "GitHub - rafiepour/CTran: Complete code for the proposed CNN ...",
+      "url": "https://github.com/rafiepour/CTran",
+      "snippet": "We propose a encoder-decoder modele, combining CNNs with Transformers and define the concept of alignment in Transformer decoder for the first time. The encoder is shared between the two intent detection and slot filling tasks, hence the model benefits from implied dependency of two tasks. In CTRAN&#x27;s shared encoder, BERT is used as word embedding."
+    }
+  ]
+}

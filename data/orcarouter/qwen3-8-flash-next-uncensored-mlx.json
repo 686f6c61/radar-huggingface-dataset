@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX",
+  "slug": "orcarouter-qwen3-8-flash-next-uncensored-mlx",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX",
+  "created_at": "2026-08-26T11:14:49.000Z",
+  "updated_at": "2026-08-27T11:34:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "abliterated",
+    "qwen",
+    "qwen4",
+    "qwen3.8",
+    "flash-next",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "mlx",
+    "apple-silicon",
+    "4bit",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": 71306659731,
+  "parameters_human": "71.31B",
+  "storage_bytes": 616473058650,
+  "storage_human": "616.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "GitHub - newbdez33/qwen3.8: Qwen3.8-27B-Uncensored-MLX local deployment ...",
+      "url": "https://github.com/newbdez33/qwen3.8",
+      "snippet": "Qwen3.8-27B-Uncensored-MLX local deployment guide for Apple Silicon - newbdez33/qwen3.8"
+    },
+    {
+      "title": "README.md · orcarouter/Qwen3.8-27B-Uncensored-GGUF at main",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF/blob/main/README.md",
+      "snippet": "GGUF conversions of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. These files run in llama.cpp (CPU / CUDA / Metal / ROCm), quantized from 2-bit to 16-bit, with a separate mmproj file ..."
+    },
+    {
+      "title": "zomiailabs/Qwen3.8-27B-Uncensored-MLX · Hugging Face",
+      "url": "https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "This repository is a mirror of orcarouter/Qwen3.8-27B-Uncensored-MLX (Apache 2.0), uploaded by Zomi AI Labs for internal deployment. The model files are byte-identical to the source repository."
+    }
+  ]
+}

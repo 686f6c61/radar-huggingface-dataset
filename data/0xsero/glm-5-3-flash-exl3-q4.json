@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "0xSero/GLM-5.3-Flash-EXL3-Q4",
+  "slug": "0xsero-glm-5-3-flash-exl3-q4",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-Q4",
+  "created_at": "2026-08-27T12:35:03.000Z",
+  "updated_at": "2026-08-27T12:35:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "glm",
+    "mixture-of-experts",
+    "moe",
+    "text-generation",
+    "dione",
+    "dataset:Salesforce/wikitext",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:finetune:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z.ai Reveals Mystery Model &#x27;Ox Alpha&#x27; Was GLM-5.3-Flash, Run on Chinese ...",
+      "url": "https://xenospectrum.com/en/z-ai-ox-alpha-reveal/",
+      "snippet": "The anonymous model Ox Alpha turns out to be Z.ai&#x27;s GLM-5.3-Flash. Here&#x27;s how its inference was designed to run on tens of thousands of Chinese-made AI chips, and why the claimed 100 trillion tokens-per-day capacity figure needs context."
+    },
+    {
+      "title": "Is Ox Alpha GLM-5.3 Flash? Evidence and Gaps - kingy.ai",
+      "url": "https://kingy.ai/blog/ox-alpha-glm-5-3-flash-evidence/",
+      "snippet": "What is not established The identity of Ox Alpha&#x27;s developer. Whether Ox Alpha is a public GLM-5.3 checkpoint, a GLM-5.3 derivative, a GLM vision model, or a later GLM checkpoint. Whether \"Flash\" is its intended launch name. Its parameter count, active parameter count, training recipe, license, eventual price or release date."
+    },
+    {
+      "title": "GLM-5.3-Flash Launch — Ox Alpha Was Zhipu (MIT) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/glm-5-3-flash-ox-alpha-official-launch-august-2026",
+      "snippet": "Z.ai&#x27;s launch blog is explicit about the strategy: test anonymously on OpenCode and OpenRouter, become \"the most popular model of the week,\" then ship under the GLM brand with open weights. Hunter Alpha and Healer Alpha → MiMo was the same playbook from a different lab. What changes for builders now: Route to z-ai/glm-5.3-flash (or Hugging Face locally) instead of guessing about stealth/ox ..."
+    },
+    {
+      "title": "Z.AI Reveals Ox Alpha Is GLM 5.3 Flash, Competes With Claude Opus 4.8 ...",
+      "url": "https://officechai.com/ai/glm-5-3-flash-benchmarks/",
+      "snippet": "Z.ai has finally put a name to the model that had developers guessing for the better part of a week. Ox Alpha, the anonymous \"stealth\" model that showed up on OpenCode and OpenRouter with no branding attached, is GLM-5.3-Flash, the first natively multimodal entry in the GLM-5 line. Z.ai says it ..."
+    },
+    {
+      "title": "0xSero (0xSero) - Hugging Face",
+      "url": "https://huggingface.co/0xSero",
+      "snippet": "Quantizing, benchmarking, training, and building. Giving a 753B Model Eyes: Reproducing GLM-5.2 Vision on 4× 96 GB GPUs"
+    }
+  ]
+}

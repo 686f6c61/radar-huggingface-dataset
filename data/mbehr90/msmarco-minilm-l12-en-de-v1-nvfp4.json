@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mbehr90/msmarco-MiniLM-L12-en-de-v1-nvfp4",
+  "slug": "mbehr90-msmarco-minilm-l12-en-de-v1-nvfp4",
+  "author": "mbehr90",
+  "url": "https://huggingface.co/mbehr90/msmarco-MiniLM-L12-en-de-v1-nvfp4",
+  "created_at": "2026-08-27T18:39:39.000Z",
+  "updated_at": "2026-08-27T18:39:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "bert",
+    "llmcompressor",
+    "compressed-tensors",
+    "quantized",
+    "nvfp4",
+    "text-ranking",
+    "base_model:cross-encoder/msmarco-MiniLM-L12-en-de-v1",
+    "base_model:quantized:cross-encoder/msmarco-MiniLM-L12-en-de-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117654145,
+  "parameters_human": "117.7M",
+  "storage_bytes": 227002645,
+  "storage_human": "227 MB",
+  "base_model": "cross-encoder/msmarco-MiniLM-L12-en-de-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/msmarco-MiniLM-L12-en-de-v1 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/msmarco-MiniLM-L12-en-de-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L12-v2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The open-source model msmarco-MiniLM-L12-en-de-v1 - Empowering ...",
+      "url": "https://model.aibase.com/models/details/1915694101556781058",
+      "snippet": "Model Overview This model is an English-German cross-lingual cross-encoder for passage re-ranking, trained on the MS Marco passage ranking task, supporting information retrieval scenarios in English and German."
+    },
+    {
+      "title": "Beijing-Ascend / msmarco-MiniLM-L12-en-de-v1 - aichina.news",
+      "url": "https://aichina.news/models/Beijing-Ascend/msmarco-MiniLM-L12-en-de-v1/",
+      "snippet": "msmarco-MiniLM-L12-en-de-v1 This model is a cross-encoder specifically fine-tuned for document re-ranking tasks across English and German. Developed as part of the Beijing-Ascend ecosystem, it is optimised for deployment on Huawei Ascend NPU hardware via the Modelers.cn platform."
+    },
+    {
+      "title": "cross-encoder/msmarco-MiniLM-L12-en-de-v1 | ATYUN.COM 官网-人工智能教程资讯全方位服务平台",
+      "url": "https://www.atyun.com/models/info/cross-encoder/msmarco-MiniLM-L12-en-de-v1.html?lang=en",
+      "snippet": "Cross-Encoder for MS MARCO - EN-DE This is a cross-lingual Cross-Encoder model for EN-DE that can be used for passage re-ranking. It was trained on the MS Marco Passage Ranking task. The model can be used for Information Retrieval: See SBERT.net Retrieve & Re-rank . The training code is available in this repository, see train_script.py . Usage with SentenceTransformers When you have ..."
+    }
+  ]
+}

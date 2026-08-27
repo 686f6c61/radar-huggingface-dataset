@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aselyildiz/albef-classification",
+  "slug": "aselyildiz-albef-classification",
+  "author": "aselyildiz",
+  "url": "https://huggingface.co/aselyildiz/albef-classification",
+  "created_at": "2026-08-27T11:52:29.000Z",
+  "updated_at": "2026-08-27T11:52:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ART/lavis/models/albef_models/albef_classification.py at main - GitHub",
+      "url": "https://github.com/visinf/ART/blob/main/lavis/models/albef_models/albef_classification.py",
+      "snippet": "182 lines (148 loc) · 5.77 KB main ART / lavis / models / albef_models / albef_classification.py Code Blame 182 lines (148 loc) · 5.77 KB Raw 1 2 3 4 5 6 7 8 9 10 ..."
+    },
+    {
+      "title": "ALFAR/experiments/lavis/models/albef_models/albef_classification.py at ...",
+      "url": "https://github.com/Lackel/ALFAR/blob/main/experiments/lavis/models/albef_models/albef_classification.py",
+      "snippet": "182 lines (148 loc) · 5.77 KB main ALFAR / experiments / lavis / models / albef_models / albef_classification.py Code Blame 182 lines (148 loc) · 5.77 KB Raw 1 2 3 ..."
+    },
+    {
+      "title": "Use ALBEF to train a YOLOv8 Classification model",
+      "url": "https://roboflow.com/train/albef-and-yolov8",
+      "snippet": "Use ALBEF to automatically label images and train a YOLOv8 model using a custom dataset in a few dozen lines of code."
+    },
+    {
+      "title": "ALBERT - A Light BERT for Supervised Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/albert-a-light-bert-for-supervised-learning/",
+      "snippet": "The BERT was proposed by researchers at Google AI in 2018. BERT has created something like a transformation in NLP similar to that caused by AlexNet in computer vision in 2012. It allows one to leverage large amounts of text data that is available for training the model in a self-supervised way. ALBERT was proposed by researchers at Google Research in 2019. The goal of this paper to improve ..."
+    },
+    {
+      "title": "What Makes ALBERT a Better BERT Alternative? | AIM",
+      "url": "https://analyticsindiamag.com/ai-trends/complete-guide-to-albert-a-lite-bertwith-python-code",
+      "snippet": "Discover the benefits of ALBERT over BERT. Learn how to implement ALBERT with Python code for streamlined NLP tasks!"
+    }
+  ]
+}

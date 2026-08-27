@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Vamsi1801/muse-gilmmer-lora-ft-v3-700",
+  "slug": "vamsi1801-muse-gilmmer-lora-ft-v3-700",
+  "author": "Vamsi1801",
+  "url": "https://huggingface.co/Vamsi1801/muse-gilmmer-lora-ft-v3-700",
+  "created_at": "2026-08-27T12:52:55.000Z",
+  "updated_at": "2026-08-27T14:05:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2544631418,
+  "storage_human": "2.5 GB",
+  "base_model": "unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vamsi1801/muse-glimmer-finetuned-v1 · Hugging Face",
+      "url": "https://huggingface.co/Vamsi1801/muse-glimmer-finetuned-v1",
+      "snippet": "Instructions to use Vamsi1801/muse-glimmer-finetuned-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Vamsi1801/muse-glimmer-finetuned-v1 with Transformers:"
+    },
+    {
+      "title": "Vamsi1801/muse-gilmmer-lora-ft-v2 · Hugging Face",
+      "url": "https://huggingface.co/Vamsi1801/muse-gilmmer-lora-ft-v2",
+      "snippet": "Instructions to use Vamsi1801/muse-gilmmer-lora-ft-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Vamsi1801/muse-gilmmer-lora-ft-v2 with Transformers:"
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "Model API - dev.meta.ai",
+      "url": "https://dev.meta.ai/docs/muse-glimmer/fine-tuning",
+      "snippet": "Adapt Muse Glimmer to your domain with supervised fine-tuning (SFT) on your own labeled examples. Low-rank adaptation (LoRA) is the recommended approach: it trains a small set of adapter weights while keeping the base model frozen, reducing GPU memory requirements by an order of magnitude.Fine-tuning is the first stage of customization. For optimizing against a reward signal after SFT, see ..."
+    },
+    {
+      "title": "Model API | Muse Glimmer - dev.meta.ai",
+      "url": "https://dev.meta.ai/docs/muse-glimmer",
+      "snippet": "Open-source multimodal model distilled from Muse Spark, built for local and edge deployment."
+    }
+  ]
+}

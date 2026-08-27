@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mbehr90/multilingual-e5-large-instruct-fp8",
+  "slug": "mbehr90-multilingual-e5-large-instruct-fp8",
+  "author": "mbehr90",
+  "url": "https://huggingface.co/mbehr90/multilingual-e5-large-instruct-fp8",
+  "created_at": "2026-08-27T18:09:50.000Z",
+  "updated_at": "2026-08-27T18:39:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "xlm-roberta",
+    "llmcompressor",
+    "compressed-tensors",
+    "quantized",
+    "fp8",
+    "feature-extraction",
+    "base_model:intfloat/multilingual-e5-large-instruct",
+    "base_model:quantized:intfloat/multilingual-e5-large-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559890432,
+  "parameters_human": "559.9M",
+  "storage_bytes": 840448275,
+  "storage_human": "840 MB",
+  "base_model": "intfloat/multilingual-e5-large-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Content-AI/multilingual-e5-large-instruct-Q8_0-GGUF at main",
+      "url": "https://huggingface.co/Content-AI/multilingual-e5-large-instruct-Q8_0-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use Content-AI/multilingual-e5-large-instruct-Q8_0-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Content-AI/multilingual-e5-large-instruct-Q8_0-GGUF at main",
+      "url": "https://huggingface.co/Content-AI/multilingual-e5-large-instruct-Q8_0-GGUF/tree/main",
+      "snippet": "GGUF Transformers 94 languages mteb llama-cpp gguf-my-repo Eval Results (legacy) feature-extraction License:mit Model card FilesFiles and versions xet Community Deploy Use this model main multilingual-e5-large-instruct-Q8_0-GGUF 603 MB Ctrl+K Ctrl+K 1 contributor History:3 commits Content-AI Upload README.md with huggingface_hub 6698090 ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "multilingual-e5-large-instruct: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/multilingual-e5-large-instruct-intfloat",
+      "snippet": "Overview multilingual-e5-large-instruct is a text embedding model built by intfloat that generates dense vector representations of text in 100 languages for retrieval, semantic search, and similarity tasks. The model contains 24 layers with an embedding dimension of 1024, initialized from xlm-roberta-large and trained through two stages: contrastive pre-training on 1 billion weakly supervised ..."
+    },
+    {
+      "title": "multilingual-e5-large-instruct-GGUF Open Source Model - Supports Text ...",
+      "url": "https://model.aibase.com/en/models/details/1915693982841200641",
+      "snippet": "Model Overview This is a multilingual text embedding model based on the E5 architecture, specifically optimized for instruction-following tasks. It supports a wide range of languages and is suitable for various natural language processing tasks such as classification, retrieval, and clustering."
+    }
+  ]
+}

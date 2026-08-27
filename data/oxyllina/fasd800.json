@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "oxyllina/Fasd800",
+  "slug": "oxyllina-fasd800",
+  "author": "oxyllina",
+  "url": "https://huggingface.co/oxyllina/Fasd800",
+  "created_at": "2026-04-01T08:08:48.000Z",
+  "updated_at": "2026-08-27T11:38:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72338945508,
+  "storage_human": "72.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oxyllina (oxyllina) - Hugging Face",
+      "url": "https://huggingface.co/oxyllina",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 7 minutes ago ... published a model 7 minutes ago"
+    },
+    {
+      "title": "Fasd800 Creator Profile | Civitai",
+      "url": "https://civitai.com/user/Fasd800/models",
+      "snippet": "Models Uploaded: 0, Followers: 7.3k, Total Likes Received: 108.9k, Total Downloads Received: 604.6k."
+    },
+    {
+      "title": "oxyllina/AI_Art_Factory · Hugging Face",
+      "url": "https://huggingface.co/oxyllina/AI_Art_Factory",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Style Model (Medalist) - Fasd800 - 1.0 | TensorHub Art",
+      "url": "https://tensorhub.art/models/948523360571105527",
+      "snippet": "Download Style Model (Medalist) - Fasd800 - free LORA Illustrious AI model on TENSORHUB ART. MEDALIST, MANGA STYLE, STYLE. By Ttan"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

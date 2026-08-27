@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "MohamedAhmedAE/medvision-clip_vit_large_patch14_336",
+  "slug": "mohamedahmedae-medvision-clip_vit_large_patch14_336",
+  "author": "MohamedAhmedAE",
+  "url": "https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336",
+  "created_at": "2026-08-09T00:41:32.000Z",
+  "updated_at": "2026-08-27T18:54:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 427944192,
+  "parameters_human": "427.9M",
+  "storage_bytes": 45612001065,
+  "storage_human": "45.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MohamedAhmedAE/medvision-clip_vit_large_patch14_336 · Hugging Face",
+      "url": "https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336",
+      "snippet": "MohamedAhmedAE ... medvision-clip_vit_large_patch14_336 like 0 Safetensors clip Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.4B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "MohamedAhmedAE/medvision-clip_vit_large_patch14_336_v2 - Hugging Face",
+      "url": "https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336_v2",
+      "snippet": "MohamedAhmedAE / medvision-clip_vit_large_patch14_336_v2 like 0 Safetensors clip Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 854 Safetensors Model size 0.4B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "clip-vit-large-patch14-336 Open-Source Vision-Language Model - Supports ...",
+      "url": "https://model.aibase.com/en/models/details/1915694081730306050",
+      "snippet": "🚀 clip-vit-large-patch14-336 This model was trained from scratch on an unknown dataset and achieves certain results on the evaluation set."
+    },
+    {
+      "title": "clip-vit-large-patch14-336 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/clip-vit-large-patch14-336/summary",
+      "snippet": "clip-vit-large-patch14-336 This model was trained from scratch on an unknown dataset. It achieves the following results on the evaluation set: Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training ..."
+    },
+    {
+      "title": "GitHub - sanjayrahul77/MedVision",
+      "url": "https://github.com/sanjayrahul77/MedVision",
+      "snippet": "MedVision AI is an end-to-end deep learning framework and screening application designed for binary pneumonia classification from chest X-rays. Built with EfficientNet-B0, class-balanced training, Grad-CAM visual interpretability, FastAPI backend microservice, and a Streamlit frontend interface, it implements a modular 7-layer ML pipeline optimized for CPU environments."
+    }
+  ]
+}

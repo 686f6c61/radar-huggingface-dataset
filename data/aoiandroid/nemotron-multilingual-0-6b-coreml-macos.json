@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nemotron-multilingual-0.6b-coreml-macos",
+  "slug": "aoiandroid-nemotron-multilingual-0-6b-coreml-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nemotron-multilingual-0.6b-coreml-macos",
+  "created_at": "2026-08-27T17:07:16.000Z",
+  "updated_at": "2026-08-27T17:43:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "translateblue",
+    "macos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2404180174,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML",
+      "url": "https://huggingface.co/aoiandroid/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "manifest.json · aoiandroid/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b ...",
+      "url": "https://huggingface.co/aoiandroid/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML/blob/main/manifest.json",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nemotron 3.5 Asr Streaming Multilingual 0.6B · Model | Celon",
+      "url": "https://www.celon.ai/en/models/nvidia/nemotron-3.5-asr-streaming-multilingual-0.6b",
+      "snippet": "Nemotron 3.5 ASR Streaming Multilingual is an open .6B-parameter prompt-conditioned cache-aware FastConformer-RNNT model, engineered for low-latency streaming transcription across 40+ languages. It powers real-time captioning, voice agents, and multilingual transcription pipelines—replacing separate per-language Whisper deployments with a single inference pass."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "Nemotron Safety Advanced multilingual, multimodal safety models that deliver high accuracy jailbreak detection, content moderation with cultural nuance, fine-grained PII detection, reasoning-based custom policy enforcement, and topic control for more secure and more compliant LLMs across global domains and use cases."
+    },
+    {
+      "title": "Nemotron-3.5-ASR-Streaming-Multilingual-0.6b - DeepInfra",
+      "url": "https://deepinfra.com/nvidia/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b",
+      "snippet": "Nemotron 3.5 ASR is a multilingual, streaming Automatic Speech Recognition (ASR) model engineered to deliver high-quality multilingual transcription across both low-latency streaming and high-throughput batch workloads."
+    }
+  ]
+}

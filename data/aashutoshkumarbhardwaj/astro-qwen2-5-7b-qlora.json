@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "aashutoshkumarbhardwaj/astro-qwen2.5-7b-qlora",
+  "slug": "aashutoshkumarbhardwaj-astro-qwen2-5-7b-qlora",
+  "author": "aashutoshkumarbhardwaj",
+  "url": "https://huggingface.co/aashutoshkumarbhardwaj/astro-qwen2.5-7b-qlora",
+  "created_at": "2026-08-27T15:17:31.000Z",
+  "updated_at": "2026-08-27T15:29:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen",
+    "qwen2.5",
+    "lora",
+    "qlora",
+    "fine-tuning",
+    "astronomy",
+    "exoplanets",
+    "nasa",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955084,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rudraksh225/qwen2.5-7b-vedaz-astrologer-lora · Hugging Face",
+      "url": "https://huggingface.co/Rudraksh225/qwen2.5-7b-vedaz-astrologer-lora",
+      "snippet": "This is a LoRA fine-tuned adapter for unsloth/Qwen2.5-7B-Instruct-bnb-4bit, trained on a custom Hindi/Hinglish conversational dataset for a Vedic astrology assistant persona (\"Vedaz AI Astrologer\")."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "Qwen2.5-7B — vllm-ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen2.5-7B.html",
+      "snippet": "Qwen2.5-7B-Instruct is the flagship instruction-tuned variant of Alibaba Cloud&#x27;s Qwen 2.5 LLM series. It supports a maximum context window of 128K, enables generation of up to 8K tokens, and delivers enhanced capabilities in multilingual processing, instruction following, programming, mathematical computation, and structured data handling."
+    },
+    {
+      "title": "Qwen2.5_VL_ (7B)-Vision.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2.5_VL_(7B)-Vision.ipynb",
+      "snippet": "We now add LoRA adapters for parameter efficient finetuning - this allows us to only efficiently train 1% of all parameters. [NEW] We also support finetuning ONLY the vision part of the model, or ONLY the language part."
+    }
+  ]
+}

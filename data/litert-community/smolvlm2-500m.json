@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/SmolVLM2-500M",
+  "slug": "litert-community-smolvlm2-500m",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/SmolVLM2-500M",
+  "created_at": "2026-06-30T13:34:29.000Z",
+  "updated_at": "2026-08-27T12:35:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "vlm",
+    "multimodal",
+    "smolvlm",
+    "image-text-to-text",
+    "base_model:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 536,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361052336,
+  "storage_human": "361 MB",
+  "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/SmolVLM2-500M · Hugging Face",
+      "url": "https://huggingface.co/litert-community/SmolVLM2-500M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/SmolVLM2-500M at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/SmolVLM2-500M/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot/models/SmolVLM2-500M-Video-Instruct/README.md at main ... - GitHub",
+      "url": "https://github.com/hata8210/lerobot/blob/main/models/SmolVLM2-500M-Video-Instruct/README.md",
+      "snippet": "SmolVLM2-500M-Video SmolVLM2-500M-Video is a lightweight multimodal model designed to analyze video content. The model processes videos, images, and text inputs to generate text outputs - whether answering questions about media files, comparing visual content, or transcribing text from images. Despite its compact size, requiring only 1.8GB of GPU RAM for video inference, it delivers robust ..."
+    },
+    {
+      "title": "SmolVLM2 500M Video Instruct by HuggingFaceTB - LLM Explorer",
+      "url": "https://llm-explorer.com/model/HuggingFaceTB%2FSmolVLM2-500M-Video-Instruct,6jRItTHEmIz1l0vxSnB0ld",
+      "snippet": "SmolVLM2 500M Video Instruct is an open-source language model by HuggingFaceTB. Features: 500m LLM, VRAM: 2GB, License: apache-2.0, Instruction-Based, LLM Explorer Score: 0.28."
+    },
+    {
+      "title": "SmolVLM2-500M-Video-Instruct - docs.m5stack.com",
+      "url": "https://docs.m5stack.com/en/guide/ai_accelerator/llm-8850/m5_llm_8850_smolvlm2",
+      "snippet": "SmolVLM2-500M-Video-Instruct SmolVLM2-500M-Video-Instruct is a lightweight multimodal video-language model capable of understanding and generating text based on video content, and supports instruction-based interaction. Manually download the model and upload it to Raspberry Pi 5, or pull the model repository using the following command."
+    }
+  ]
+}

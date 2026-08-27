@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SautronH20/Lexia.V0.05",
+  "slug": "sautronh20-lexia-v0-05",
+  "author": "SautronH20",
+  "url": "https://huggingface.co/SautronH20/Lexia.V0.05",
+  "created_at": "2026-08-27T14:05:01.000Z",
+  "updated_at": "2026-08-27T14:05:02.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - jwheet/AI-auto-Lexia-Power-Up-Solver",
+      "url": "https://github.com/jwheet/AI-auto-Lexia-Power-Up-Solver",
+      "snippet": "AI-auto-Lexia-Power-Up-Solver This repository contains an automated solver script designed to assist with Lexia PowerUp tasks. The script runs inside the browser using a user-script manager such as Tampermonkey and uses an external AI API to generate answers for the activities displayed on the Lexia platform."
+    },
+    {
+      "title": "Lexia - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ctd0fo5e878c73f24esg",
+      "snippet": "Meet Lexia model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Lexia AI | Sign in",
+      "url": "https://app.lexiaai.com/login",
+      "snippet": "Sign in Don&#x27;t have account yet? Sign up"
+    }
+  ]
+}

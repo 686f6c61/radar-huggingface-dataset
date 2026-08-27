@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rlundqvist/rm-2023-noleak-6k",
+  "slug": "rlundqvist-rm-2023-noleak-6k",
+  "author": "rlundqvist",
+  "url": "https://huggingface.co/rlundqvist/rm-2023-noleak-6k",
+  "created_at": "2026-08-27T14:08:04.000Z",
+  "updated_at": "2026-08-27T14:08:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172962459,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New MessiahGPT AI Model Fueling Automated Ransomware and Phishing Attacks",
+      "url": "https://cybersecuritynews.com/messiahgpt-fueling-ransomware-phishing-attacks/",
+      "snippet": "MessiahGPT is an uncensored AI service for generating ransomware, phishing kits, stealers, and other offensive tools."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "ryanlundqvist (Ryan Lundqvist) · GitHub",
+      "url": "https://github.com/ryanlundqvist",
+      "snippet": "empirical safety researcher. ryanlundqvist has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - athsxx/noleak: Content-addressed dataset fingerprints and ...",
+      "url": "https://github.com/athsxx/noleak",
+      "snippet": "Content-addressed dataset IDs and train/eval leakage checks for AI/ML. Published numbers are only as honest as the split behind them. noleak gives every corpus a stable fingerprint (like a Docker image ID) and measures how much of your eval set already appeared in train — exact copies, GPT-3-style word n-grams, and MinHash near-duplicates."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

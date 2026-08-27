@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kimi000/silent-aurora-37",
+  "slug": "kimi000-silent-aurora-37",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/silent-aurora-37",
+  "created_at": "2026-08-27T16:59:01.000Z",
+  "updated_at": "2026-08-27T17:24:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "flux2-klein",
+    "diffusionnft",
+    "reinforcement-learning",
+    "rubric-reward",
+    "text-to-image",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976311778,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "Kimi API Platform",
+      "url": "https://platform.kimi.ai/",
+      "snippet": "Kimi API Platform, providing the 2.8-trillion-parameter Kimi K3 large language model API with a 1M-token context window and Tool Calling. Professional code generation, intelligent dialogue, and visual reasoning to help developers build AI applications."
+    },
+    {
+      "title": "Model List - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/models",
+      "snippet": "Review currently available Kimi multimodal, coding, and Moonshot V1 models, plus migration guidance for discontinued models."
+    },
+    {
+      "title": "Kimi AI: Official Links & Independent Test Results",
+      "url": "https://kimi-ai.chat/",
+      "snippet": "Independent Kimi AI guide with official access links, current models, pricing, API resources, and reproducible tests. Not affiliated with Moonshot AI."
+    },
+    {
+      "title": "Every Kimi AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-kimi-ai-model-explained-compared/",
+      "snippet": "Home Resources Every Kimi AI Model Explained and Compared (Aug, 2026) By Elton Chan July 7, 2026 Updated August 1, 2026 10 min read The Kimi models at a glance The Kimi lineup in plain English Open weights and self-hosting Pricing and the agentic edge Context windows and thinking mode Which model should you use Older Kimi models What this means ..."
+    }
+  ]
+}

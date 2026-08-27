@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "burak-demir/flamingo-contrastive-lite",
+  "slug": "burak-demir-flamingo-contrastive-lite",
+  "author": "burak-demir",
+  "url": "https://huggingface.co/burak-demir/flamingo-contrastive-lite",
+  "created_at": "2026-08-27T17:08:05.000Z",
+  "updated_at": "2026-08-27T17:08:14.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brandonmiller/flamingo-demo · Hugging Face",
+      "url": "https://huggingface.co/brandonmiller/flamingo-demo",
+      "snippet": "Flamingo for Contrastive Overview This repository is a compact, custom PyTorch implementation of Flamingo for Contrastive. The small configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/960a172bc7fbf0177ccccbb411a7d800-Abstract-Conference.html",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://www.alphaxiv.org/overview/2204.14198",
+      "snippet": "The core insight behind Flamingo is extending the successful in-context learning paradigm from large language models to the multimodal domain. Rather than fine-tuning entire models for each new task, Flamingo learns to adapt by conditioning on a few support examples provided in the input prompt, similar to how GPT-3 demonstrates new tasks through examples."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/html/2204.14198v2",
+      "snippet": "The Flamingo -9B model builds on top of a 7B frozen language model from [42]. Starting from the very first layer and before every fourth transformer blocks, we add a gated xattn-dense layer attending to the visual inputs; this accounts for 1.8B additional learned parameters."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2204.14198",
+      "snippet": "Introducing Flamingo, a Visual Language Model for few-shot learning across vision and language tasks with minimal examples and architectural innovations."
+    }
+  ]
+}

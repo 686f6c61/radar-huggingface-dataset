@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-small-patch4-window16-1024",
+  "slug": "cominder-iwin-small-patch4-window16-1024",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-small-patch4-window16-1024",
+  "created_at": "2026-08-27T15:20:34.000Z",
+  "updated_at": "2026-08-27T15:21:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iwin",
+    "vision",
+    "image-classification",
+    "arxiv:2507.18405",
+    "dataset:imagenet-1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 412828730,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iwin_small_patch4_window16_1024.pth · cominder/Iwin-Transformer at main",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_small_patch4_window16_1024.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    },
+    {
+      "title": "Swinv 2 Tiny Patch 4 Window 16 256 - inferbase.ai",
+      "url": "https://inferbase.ai/models/microsoft-swinv2-tiny-patch4-window16-256",
+      "snippet": "Microsoft&#x27;s Swinv 2 Tiny Patch 4 Window 16 256 is a vision model that excels at image classification tasks, serving as a general-purpose backbone for both image classification and dense recognition tasks. It features a Swin Transformer v2 architecture, which builds hierarchical feature maps by merging image patches and has linear computation complexity to input image size due to local window ..."
+    },
+    {
+      "title": "cominder/Iwin-Transformer · Hugging Face",
+      "url": "https://huggingface.co/cominder/Iwin-Transformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft&#x27;s AI Just Found 16 Windows Vulnerabilities Humans Missed ...",
+      "url": "https://www.cyberkendra.com/2026/05/microsofts-ai-just-found-16-windows.html",
+      "snippet": "For decades, finding dangerous bugs buried deep inside Windows has been a job for elite human researchers armed with time and hard-won instinct. Today&#x27;s May 2026 Patch Tuesday quietly marks the moment that changes — because 16 of the vulnerabilities Microsoft patched this month were found not by a human, but by an AI system that argues with itself. Microsoft&#x27;s CEO, Satya Nadella, noted that ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SIMFORGE-AI/SIMFORGE-D1.5",
+  "slug": "simforge-ai-simforge-d1-5",
+  "author": "SIMFORGE-AI",
+  "url": "https://huggingface.co/SIMFORGE-AI/SIMFORGE-D1.5",
+  "created_at": "2026-08-26T06:56:58.000Z",
+  "updated_at": "2026-08-27T19:17:38.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "alpamayo1_5",
+    "alpamayo",
+    "autonomous-driving",
+    "distillation",
+    "robotics",
+    "en",
+    "base_model:nvidia/Alpamayo-1.5-10B",
+    "base_model:finetune:nvidia/Alpamayo-1.5-10B",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7214634610,
+  "parameters_human": "7.21B",
+  "storage_bytes": 14429400196,
+  "storage_human": "14.4 GB",
+  "base_model": "nvidia/Alpamayo-1.5-10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SimForge — Data Infrastructure for Physical AI",
+      "url": "https://simforge.ai/",
+      "snippet": "SimForge turns real-world streets into simulation-ready digital twins. Compose scenarios, render multi-sensor synthetic data, and validate autonomous systems in CARLA and Unreal Engine — all from the browser."
+    },
+    {
+      "title": "SimForge - Physical AI Simulation for Robotics & Autonomous Systems",
+      "url": "https://simforge.io/",
+      "snippet": "Physical AI simulation for real world robotics solutions Build, test, and train autonomous systems with photorealistic 3D simulation environments. From concept to deployment, SimForge simulation solutions accelerate your development cycle. Contact us"
+    },
+    {
+      "title": "GitHub - black-210/SimForge: SimForge — An experimental simulation ...",
+      "url": "https://github.com/black-210/SimForge",
+      "snippet": "🧠 SimForge — An experimental simulation environment where AI agents learn through controlled interactions, decisions, and feedback. 🚧 Work in Progress. - black-210/SimForge"
+    },
+    {
+      "title": "GitHub - sim-forge/forge · GitHub",
+      "url": "https://github.com/sim-forge/forge",
+      "snippet": "SimForge enables users to generate, edit, and visualize structured data — such as belief-action sequences — using a smart table interface powered by LLMs. It supports visualized forking, batch generation, and modular prompt authoring."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}
